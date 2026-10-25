@@ -33,7 +33,7 @@ export function checkStamPLCTerminals(model){
 }
 
 if(process.argv[1]&&pathToFileURL(process.argv[1]).href===import.meta.url){
- const noop=()=>{},ctx=new Proxy({createLinearGradient:()=>({addColorStop:noop}),measureText:()=>({width:20})},{get:(o,k)=>o[k]??noop});globalThis.document={createElement:()=>({getContext:()=>ctx})};
+ const noop=()=>{},ctx=new Proxy({createLinearGradient:()=>({addColorStop:noop}),createRadialGradient:()=>({addColorStop:noop}),measureText:()=>({width:20})},{get:(o,k)=>o[k]??noop});globalThis.document={createElement:()=>({getContext:()=>ctx})};
  const {StamPLC}=await import('../src/devices/stamplc/index.js');const model=new StamPLC();
  console.log('PASS StamPLC terminal detail:',JSON.stringify(checkStamPLCTerminals(model)));model.dispose();
 }

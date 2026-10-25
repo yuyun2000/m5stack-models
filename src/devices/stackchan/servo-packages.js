@@ -11,7 +11,14 @@ export function servoPackage(parent,{name,position,basis}){
  slab(group,23.3,11,16.8,.5,[5.8,0,-25.25],black,[],.06).name=`${name} motor case`;
  slab(group,23.3,11,.17,.5,[5.8,0,-8.48],seam,[],.02).name=`${name} case seam`;
  slab(group,23.3,11,4.65,.5,[5.8,0,-8.45],black,[],.06).name=`${name} gearbox shoulder`;
- const cap=new THREE.Shape();cap.absarc(0,0,5.5,Math.PI/2,Math.PI*1.5,false);cap.lineTo(5.7,-5.5);cap.absarc(5.7,0,5.5,Math.PI*1.5,Math.PI*2.5,false);cap.closePath();
+ // PDF p6 shows a large output-gear end tapering to a smaller idler end,
+ // not two equal semicircles. The 5.7 mm centre spacing is annotated;
+ // the small radius (~2.8 mm) is traced from that drawing, not dimensioned.
+ // Cap depth/hidden steps remain appearance approximations.
+ const largeRadius=5.5,smallRadius=2.8,centres=5.7,tangent=Math.acos((largeRadius-smallRadius)/centres),cap=new THREE.Shape();
+ cap.absarc(0,0,largeRadius,tangent,Math.PI*2-tangent,false);
+ cap.lineTo(centres+smallRadius*Math.cos(tangent),-smallRadius*Math.sin(tangent));
+ cap.absarc(centres,0,smallRadius,Math.PI*2-tangent,Math.PI*2+tangent,false);cap.closePath();
  mesh(group,new THREE.ExtrudeGeometry(cap,{depth:3.8,bevelEnabled:false,curveSegments:36}),black,[0,0,-3.8],`${name} rounded gearbox cap`);
  // The 32.5 x 12.1 measurement is the two-ear envelope, not a full-width
  // rectangular plate across the 23.3 x 11 case. PDF p6 puts the ear holes at
@@ -30,6 +37,6 @@ export function servoPackage(parent,{name,position,basis}){
  const white=materials.plastic(0xc4ccc0,{roughness:.7});
  slab(socket,7.8,3.2,1.1,.2,[0,0,0],white,[{w:6.8,h:2.2,r:.1}],.03).name=`${name} cable socket shroud`;
  const contacts=[];for(let i=0;i<3;i++)contacts.push(mesh(socket,new THREE.BoxGeometry(.4,.4,.65),metal,[(i-1)*2.54,0,.68],`${name} cable contact ${i+1}`));
- group.userData={role:'visual-servo-package',model:'SCS0009',caseMm:[23.3,11,25.25],earWidthMm:12.1,shaftLengthMm:3.2,source:'Official linked SCS0009.pdf p6; K151 placement inferred; no servo behavior'};
+ group.userData={role:'visual-servo-package',model:'SCS0009',caseMm:[23.3,11,25.25],earWidthMm:12.1,shaftLengthMm:3.2,capOutline:{centreSpacingMm:centres,radiiMm:[largeRadius,smallRadius],smallRadiusEvidence:'Approximate trace of the unequal-radius top-view outline in SCS0009.pdf p6, not an annotated radius'},source:'Official linked SCS0009.pdf p6; K151 placement inferred; no servo behavior'};
  return {group,contacts,socket,output};
 }

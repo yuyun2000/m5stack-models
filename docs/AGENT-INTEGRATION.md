@@ -154,7 +154,9 @@ host.get('grove/rgb-1').set({on: false});
 
 灯光的 kind 为 `led`，用 `host.list('led')` 枚举。`Led.set({color,brightness})` 或 `handle({type:'led',target,…})` 更新外观，亮度范围0…1；`getState()` 返回颜色和亮度。它不会产生输入事件或与按键自动联动。demo的“灯光外观”面板使用相同公开API。
 
-StackChan 顶部 `touch-1`、`touch-2`、`touch-3` 为前／中／后三个零行程电容输入区，仍用 Button 的 `press/release/cancel`；左右各有 `rgb-left-1`…`rgb-left-6` 与 `rgb-right-1`…`rgb-right-6`。灯号表示从前向后的外观分段，不声明电气链顺序；边界、分段间距和光扩散为推导。全部随头部 pitch/yaw，触摸不会自动点灯。整机采样仍有 pitch90° 时中区被旧盖座挡住的已知限制，不能把组件命中或随动检查当成全姿态输入可达验收。
+Cardputer-ADV 与 StamPLC 各有一颗 Stamp-S3A RGB，统一 ID 为 `stamp-rgb`，默认熄灭，例如 `host.handle({type:'led',target:'stamp-rgb',color:'#22b477',brightness:.65})`。StamPLC 文档中的红色下载指示是同一颗 RGB 的一种状态，模型不额外添加第二颗红灯；颜色／亮度由调用方给定，不实现下载启动顺序、GPIO38 供电门控或按键自动点灯。封装深度与光扩散仍是外观估计，原盖板的遮挡边缘保留。
+
+StackChan 顶部 `touch-1`、`touch-2`、`touch-3` 为前／中／后三个零行程电容输入区，仍用 Button 的 `press/release/cancel`；左右各有 `rgb-left-1`…`rgb-left-6` 与 `rgb-right-1`…`rgb-right-6`。灯号表示从前向后的外观分段，不声明电气链顺序；边界、分段间距和光扩散为推导。全部随头部 pitch/yaw，触摸不会自动点灯。原来 pitch90° 中区被盖板挡住的问题已按源螺孔轴配准盖座修正，默认检查要求30姿态／90条整机顶面法向接近全部命中触区。该有限方向采样不保证任意相机角度可达，也不证明全局头颈datum、隐藏舵机或制造配合。
 
 ## 渲染与生命周期
 

@@ -1,6 +1,6 @@
 {
   "preparedAt": "2026-10-25T13:20:33.030Z",
-  "sourceCommit": "d74ae04fb822c2dcf414834eae8e51ffd1496876",
+  "sourceCommit": "a8832250b7e09abdfc5120756642b7a84c4ed97e",
   "scope": "Factual provenance only; no official reference binaries or MCP source text are included.",
   "upstreams": {
     "sticks3": {
@@ -252,8 +252,77 @@
         {
           "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1150/S007-V033_07.webp",
           "sha256": "dc70861f499aff13322523157ba22038fbc07eaed10567ed8209af7c9d66761b"
+        },
+        {
+          "url": "https://docs.m5stack.com/en/core/Stamp-S3A",
+          "sha256": "63be4497485cc3c3436788357cf54911a9e423d92e4f56c673d200b9805017b7"
         }
-      ]
+      ],
+      "visibleLedReview": {
+        "sources": [
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1150/S007-V033_01.webp",
+            "sha256": "29121b8efb07ad5dc08e036e96061ae08d4719f2d915b93f687bde742c77ff73",
+            "bytes": 177658
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1150/S007-V033_07.webp",
+            "sha256": "dc70861f499aff13322523157ba22038fbc07eaed10567ed8209af7c9d66761b",
+            "bytes": 77950
+          },
+          {
+            "url": "https://docs.m5stack.com/en/core/Stamp-S3A",
+            "sha256": "63be4497485cc3c3436788357cf54911a9e423d92e4f56c673d200b9805017b7",
+            "kind": "existing official MCP reference; Stamp-S3A HMI specification one WS2812B-2020 RGB"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/K132-Adv_Cardputer-Adv/Structures/Cardputer-Adv.stl",
+            "sha256": "50c2b2a72694dd7461125489d99a2f863630bb0c224f86f98f95dda15ae45c00",
+            "bytes": 6775684,
+            "gitBlob": "a0c3f6964b471dceefee917edcbd194f52c80833"
+          }
+        ],
+        "facts": [
+          {
+            "source": "https://docs.m5stack.com/en/core/Stamp-S3A",
+            "anchor": "Specifications / HMI",
+            "fact": "One programmable WS2812B-2020 RGB LED is specified for Stamp-S3A."
+          },
+          {
+            "lines": "119-120",
+            "fact": "Cardputer-ADV uses Stamp-S3A and lists RGB LED control as a product capability.",
+            "source": "https://docs.m5stack.com/en/core/Cardputer-ADV"
+          }
+        ],
+        "implementation": {
+          "id": "stamp-rgb",
+          "count": 1,
+          "positionMm": [
+            35.25,
+            10.45,
+            7.8
+          ],
+          "packageMm": [
+            1.5,
+            1.5,
+            0.55
+          ],
+          "defaultBrightness": 0,
+          "placementEvidence": "Existing physical RGB package retained at its original position and geometry; only component ownership/emission state was added.",
+          "coverUnchanged": true,
+          "physicalBehavior": false,
+          "automaticButtonLink": false
+        },
+        "validation": {
+          "script": "scripts/check-host-visible-leds.mjs",
+          "scope": "Actual original-aperture rays including cover-lip occlusion, independent color/brightness, geometry hashes and frames, input independence and owned resource disposal. Browser pixels remain a separate root review."
+        },
+        "limitations": [
+          "Package dimensions, concealed depth and optical glow/diffusion are appearance estimates, not mechanical tolerances or an LED intensity model.",
+          "No GPIO38/backlight power gate, boot/download sequence, firmware/electrical state or automatic key-to-light response is implemented."
+        ],
+        "scope": "One independently externally driven visible Stamp-S3A RGB; geometry appearance only"
+      }
     },
     {
       "id": "cardputer-zero",
@@ -747,6 +816,26 @@
         {
           "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/K151_StackChan/Structures/StackChan-ServoSideCover.stl",
           "sha256": "b4e7906d2f4c5b4d5950c9421b8eadc9ba74b6073f5cee0a67835207d55135ce"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/StackChan/eff0d6b5109663faec8f1d98848b4b0e5246bbfc/firmware/main/hal/hal_head_touch.cpp",
+          "sha256": "427bc408a8cf639665aa2de1071df8ba0af91896105afa433a2e8c9d7ae6acc6"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/StackChan-BSP/fb5e9f5697803ca64e45fe7ad8eaea3e4100f766/src/utils/touch_sensor/touch_sensor.h",
+          "sha256": "caa199c56fb011aa20ff09268ad65c817307cc73bcad67778f59c24da266fb91"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/StackChan-BSP/fb5e9f5697803ca64e45fe7ad8eaea3e4100f766/src/utils/touch_sensor/touch_sensor.cpp",
+          "sha256": "571a8f18229541a8e16a152a03b26a39f095d62b5f4068b63fd204747be29c90"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/StackChan-BSP/fb5e9f5697803ca64e45fe7ad8eaea3e4100f766/examples/TouchSensor/TouchSensor.ino",
+          "sha256": "ffcd51f6170459e5ce34bda930effb63c3a0004d52942c49f725d2370835123b"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/StackChan-BSP/fb5e9f5697803ca64e45fe7ad8eaea3e4100f766/examples/RGB_LED/RGB_LED.ino",
+          "sha256": "97227a70131bb8a96f930cd2e83cbb3c77378f5670e883c45948eeb3c44398d0"
         }
       ],
       "movingAssembly": {
@@ -774,10 +863,10 @@
         ],
         "limitations": [
           "No assembled PCB STEP, motor-placement assembly or cable CAD was available in the official structure directory. Hidden PCB contours/components, battery envelope, connector bodies, loom slack and servo lead routes are appearance reconstructions.",
-          "Stock pitch servo case/gear cap partially overlaps the previously photo-positioned neck/cradle rear-cover interior. This is an acknowledged concealed fit uncertainty, not a passed manufacturing or complete interference check. Official enclosure meshes and original axes were not cut or shifted to mask it.",
+          "Current finite servo-package diagnostic remains fit-unresolved despite the source-bore cover registration; relative source cover seats do not prove the concealed motor installation or manufacturing fit.",
           "95-pose checks include actual wire tube endpoints and sampled PCB/connector volume containment, not continuous collision proof, electrical behavior, hardware motion, cable physics or physical-device validation."
         ],
-        "scope": "Front Power PCB follows pitch, lower Adapter follows yaw; seven physical visual wires cross pitch; rear mechanism remains open, base USB stays fixed. Hidden servo package/routing are appearance approximations."
+        "scope": "Power PCB follows pitch, lower Adapter and registered original covers follow yaw; seven physical visual wires cross pitch, base USB is fixed and the rear stays open. Hidden packaging and routing remain appearance reconstructions."
       },
       "servoPackageReview": {
         "sources": [
@@ -853,53 +942,60 @@
           "cover Z seating conflicts with inferred battery envelope",
           "motor axial shift opens unconfirmed shaft/arm gap"
         ],
-        "scope": "ear-only runtime correction; incomplete hidden fit diagnosis"
+        "scope": "Historical pre-seat candidate review. Current relative cover registration and global remaining fit are recorded in the explicitly named currentReviewFields.",
+        "historical": true,
+        "historicalSnapshotSourceCommit": "d74ae04fb822c2dcf414834eae8e51ffd1496876",
+        "currentReviewFields": [
+          "coverSeatReview",
+          "servoOutlineReview",
+          "currentServoFit"
+        ]
       },
       "touchLedReview": {
         "sources": [
           {
             "url": "https://raw.githubusercontent.com/m5stack/StackChan/eff0d6b5109663faec8f1d98848b4b0e5246bbfc/firmware/main/hal/hal_head_touch.cpp",
+            "sha256": "427bc408a8cf639665aa2de1071df8ba0af91896105afa433a2e8c9d7ae6acc6",
+            "bytes": 4890,
             "repository": "m5stack/StackChan",
             "commit": "eff0d6b5109663faec8f1d98848b4b0e5246bbfc",
             "gitBlob": "3847d9ec7023154e9d0115d246bbd00c35ef313b",
-            "sha256": "427bc408a8cf639665aa2de1071df8ba0af91896105afa433a2e8c9d7ae6acc6",
-            "bytes": 4890,
             "kind": "official-software-reference-only"
           },
           {
             "url": "https://raw.githubusercontent.com/m5stack/StackChan-BSP/fb5e9f5697803ca64e45fe7ad8eaea3e4100f766/src/utils/touch_sensor/touch_sensor.h",
+            "sha256": "caa199c56fb011aa20ff09268ad65c817307cc73bcad67778f59c24da266fb91",
+            "bytes": 3656,
             "repository": "m5stack/StackChan-BSP",
             "commit": "fb5e9f5697803ca64e45fe7ad8eaea3e4100f766",
             "gitBlob": "a4a224519deadafd1333edb21e4df70335ca6a26",
-            "sha256": "caa199c56fb011aa20ff09268ad65c817307cc73bcad67778f59c24da266fb91",
-            "bytes": 3656,
             "kind": "official-software-reference-only"
           },
           {
             "url": "https://raw.githubusercontent.com/m5stack/StackChan-BSP/fb5e9f5697803ca64e45fe7ad8eaea3e4100f766/src/utils/touch_sensor/touch_sensor.cpp",
+            "sha256": "571a8f18229541a8e16a152a03b26a39f095d62b5f4068b63fd204747be29c90",
+            "bytes": 5781,
             "repository": "m5stack/StackChan-BSP",
             "commit": "fb5e9f5697803ca64e45fe7ad8eaea3e4100f766",
             "gitBlob": "28c854d6260d5a525b04379a32474bb83d768d41",
-            "sha256": "571a8f18229541a8e16a152a03b26a39f095d62b5f4068b63fd204747be29c90",
-            "bytes": 5781,
             "kind": "official-software-reference-only"
           },
           {
             "url": "https://raw.githubusercontent.com/m5stack/StackChan-BSP/fb5e9f5697803ca64e45fe7ad8eaea3e4100f766/examples/TouchSensor/TouchSensor.ino",
+            "sha256": "ffcd51f6170459e5ce34bda930effb63c3a0004d52942c49f725d2370835123b",
+            "bytes": 974,
             "repository": "m5stack/StackChan-BSP",
             "commit": "fb5e9f5697803ca64e45fe7ad8eaea3e4100f766",
             "gitBlob": "ca7f07bd36dde7b219195b4265a2ba7f9493716f",
-            "sha256": "ffcd51f6170459e5ce34bda930effb63c3a0004d52942c49f725d2370835123b",
-            "bytes": 974,
             "kind": "official-software-reference-only"
           },
           {
             "url": "https://raw.githubusercontent.com/m5stack/StackChan-BSP/fb5e9f5697803ca64e45fe7ad8eaea3e4100f766/examples/RGB_LED/RGB_LED.ino",
+            "sha256": "97227a70131bb8a96f930cd2e83cbb3c77378f5670e883c45948eeb3c44398d0",
+            "bytes": 925,
             "repository": "m5stack/StackChan-BSP",
             "commit": "fb5e9f5697803ca64e45fe7ad8eaea3e4100f766",
             "gitBlob": "dd8ddbefc22e98682cbc417530829947e3265041",
-            "sha256": "97227a70131bb8a96f930cd2e83cbb3c77378f5670e883c45948eeb3c44398d0",
-            "bytes": 925,
             "kind": "official-software-reference-only"
           },
           {
@@ -957,11 +1053,557 @@
         "limitations": [
           "Exact capacitive electrode outline/spacing is unavailable. Three compact top-plane hit regions are inferred, have zero visual cap/travel and do not enlarge the assembled bounding box.",
           "Per-side LED electrical sequence, actual emitter positions and optical diffusion are unconfirmed. Physical IDs deliberately do not claim U1-U12 chain mapping.",
-          "Whole-device normal-ray touch access remains partial: 85/90 sampled probes are unobstructed. At pitch90 the original servo-side-cover precedes touch-2 by approximately 0.130 mm at all five sampled yaw angles. Full per-pose coordinates and distances are recorded in touch-led-check.json sceneAccess.blocked. No cover/target shift masks this unresolved fit.",
           "The 90 self-target hits prove raycast frame/hierarchy only. They do not replace assembled scene accessibility or physical-device touch validation.",
-          "No capacitance/intensity values, gesture recognition, touch-to-light behavior, electrical/firmware simulation, mechanical fit approval or physical hardware validation."
+          "No capacitance/intensity values, gesture recognition, touch-to-light behavior, electrical/firmware simulation, mechanical fit approval or physical hardware validation.",
+          "Source covers now register to the cradle mounting bores; the explicitly sampled 30 poses/90 normal approaches are clear. Absolute cradle/head datums and hidden motor seating remain separately unconfirmed."
         ],
-        "scope": "Three Front/Middle/Back capacitive zones and twelve externally driven guide cells; pitch90 middle-zone access remains partial due to retained cover"
+        "sourceCoverRegistration": "coverSeatReview",
+        "registeredSourceGeometry": {
+          "geometry": "src/devices/stackchan/geometry-data.js",
+          "map": "src/devices/stackchan/cad-map.json",
+          "change": "Original two covers translated by paired source bore registration; no source shell cut or scale. Separate servo cap outline correction does not alter source CAD."
+        },
+        "sceneAccess": {
+          "status": "pass",
+          "probeCount": 90,
+          "unblocked": 90,
+          "blocked": [],
+          "scope": "Complete assembled-scene approach along local roof normal, 2 mm start offset, for the listed 30 poses. This is finite directional sampling, not arbitrary camera accessibility."
+        },
+        "scope": "Three Front/Middle/Back capacitive zones and twelve externally driven guide cells; 90/90 explicitly sampled assembled-scene normal approaches are unobstructed. This does not establish arbitrary camera access, hidden servo fit or physical touch validation."
+      },
+      "coverSeatReview": {
+        "checkedAt": "2026-10-25T16:56:14.930530+00:00",
+        "sources": [
+          {
+            "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/K151_StackChan/Structures/StackChan-BearingFixture.stl",
+            "sha256": "04f511c46afb82db49657daa8ec624e91d4d26d29712290e26d32084af6bc2f7",
+            "bytes": 58284,
+            "kind": "official-structure-source"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/K151_StackChan/Structures/StackChan-MainBody.stl",
+            "sha256": "5495cd313847c2c135fa0309ee64747b93794e3d464a08e76d518b73b13a3107",
+            "bytes": 824784,
+            "kind": "official-structure-source"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/K151_StackChan/Structures/StackChan-ServoArm.stl",
+            "sha256": "e530ade0873df01ed5b8bf9275358ccf9ffddb494025f64465bf5efde886c9db",
+            "bytes": 187284,
+            "kind": "official-structure-source"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/K151_StackChan/Structures/StackChan-ServoBody.stl",
+            "sha256": "c21e35ad812b71aa44933055d3873090ae8c184479edf8e66e1fe595df598e1b",
+            "bytes": 323984,
+            "kind": "official-structure-source"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/K151_StackChan/Structures/StackChan-ServoCover.stl",
+            "sha256": "f79ff641201fdbde78767cd08b29381ebb0146fa929bdd5e1aa41406e5c6280c",
+            "bytes": 64084,
+            "kind": "official-structure-source"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/K151_StackChan/Structures/StackChan-ServoSideCover.stl",
+            "sha256": "b4e7906d2f4c5b4d5950c9421b8eadc9ba74b6073f5cee0a67835207d55135ce",
+            "bytes": 60884,
+            "kind": "official-structure-source"
+          }
+        ],
+        "scope": "Unchanged official CAD rigid registration, no physical/manufacturing fit claim",
+        "method": "Planar triangle-boundary loops, least-squares circle fit to actual source vertices. Two parallel bore axes and opposing mating planes constrain rigid cover translations without using the inferred Adapter or battery. No geometry scale/cut/axis change.",
+        "sourceNormalizedPreSeatSha256": "9cae418a9f71eb76c4f57e24a9d1be5550e536497b0078df3629060c6e7e4eff",
+        "white": {
+          "translationFromPreSeatMm": [
+            0,
+            1.45,
+            6.7
+          ],
+          "rotationQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "oldCadMapOrigin": [
+            229.481,
+            -329.2632,
+            16.1
+          ],
+          "correctedCadMapOrigin": [
+            229.481,
+            -322.5632,
+            14.65
+          ],
+          "pairs": [
+            {
+              "label": "front",
+              "cover": {
+                "part": "servo-rear-cover",
+                "centreMm": [
+                  10.350787162780762,
+                  5.200001,
+                  -0.099999
+                ],
+                "radiusMm": 1.099933,
+                "axisUnit": [
+                  1,
+                  0,
+                  0
+                ],
+                "matingFaceNormal": [
+                  -1,
+                  0,
+                  0
+                ],
+                "circleFitRmsMm": 0.00005
+              },
+              "cradle": {
+                "part": "neck-cradle",
+                "centreMm": [
+                  10.350787162780762,
+                  6.649999,
+                  6.600006
+                ],
+                "radiusMm": 0.915377,
+                "axisUnit": [
+                  1,
+                  0,
+                  0
+                ],
+                "matingFaceNormal": [
+                  1,
+                  0,
+                  0
+                ],
+                "circleFitRmsMm": 0.000097
+              },
+              "transformedCoverCentreMm": [
+                10.350787162780762,
+                6.6500010000000005,
+                6.600001
+              ],
+              "coaxialPerpendicularResidualMm": 0.000005385164807062579,
+              "axialPlaneOffsetMm": 0,
+              "note": "Opposite planar normals define the mating face."
+            },
+            {
+              "label": "rear",
+              "cover": {
+                "part": "servo-rear-cover",
+                "centreMm": [
+                  10.350787162780762,
+                  5.200001,
+                  -28.6
+                ],
+                "radiusMm": 1.049935,
+                "axisUnit": [
+                  1,
+                  0,
+                  0
+                ],
+                "matingFaceNormal": [
+                  -1,
+                  0,
+                  0
+                ],
+                "circleFitRmsMm": 0.000048
+              },
+              "cradle": {
+                "part": "neck-cradle",
+                "centreMm": [
+                  10.250781059265137,
+                  6.650001,
+                  -21.899994
+                ],
+                "radiusMm": 0.849886,
+                "axisUnit": [
+                  1,
+                  0,
+                  0
+                ],
+                "matingFaceNormal": [
+                  1,
+                  0,
+                  0
+                ],
+                "circleFitRmsMm": 0.000092
+              },
+              "transformedCoverCentreMm": [
+                10.350787162780762,
+                6.6500010000000005,
+                -21.900000000000002
+              ],
+              "coaxialPerpendicularResidualMm": 0.000006000000002615025,
+              "axialPlaneOffsetMm": 0.100006103515625,
+              "note": "Rear pair has an approximately 0.1 mm axial face gap; do not shift X to close it and break the front seat."
+            }
+          ]
+        },
+        "gray": {
+          "translationFromPreSeatMm": [
+            0,
+            -3.75,
+            6.7
+          ],
+          "rotationQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "oldCadMapOrigin": [
+            229.481,
+            -329.2632,
+            -1.1
+          ],
+          "correctedCadMapOrigin": [
+            229.481,
+            -322.5632,
+            2.65
+          ],
+          "pairs": [
+            {
+              "label": "left",
+              "cover": {
+                "part": "servo-side-cover",
+                "centreMm": [
+                  -10.749219,
+                  -18,
+                  -27.74998664855957
+                ],
+                "radiusMm": 1.099933,
+                "axisUnit": [
+                  0,
+                  0,
+                  1
+                ],
+                "matingFaceNormal": [
+                  0,
+                  0,
+                  1
+                ],
+                "circleFitRmsMm": 0.000052
+              },
+              "cradle": {
+                "part": "neck-cradle",
+                "centreMm": [
+                  -10.749219,
+                  -21.749999,
+                  -21.049985885620117
+                ],
+                "radiusMm": 0.849887,
+                "axisUnit": [
+                  0,
+                  0,
+                  1
+                ],
+                "matingFaceNormal": [
+                  0,
+                  0,
+                  -1
+                ],
+                "circleFitRmsMm": 0.000091
+              },
+              "transformedCoverCentreMm": [
+                -10.749219,
+                -21.75,
+                -21.04998664855957
+              ],
+              "coaxialPerpendicularResidualMm": 0.0000010000000010279564,
+              "axialPlaneOffsetMm": -7.629394538355427e-7
+            },
+            {
+              "label": "right",
+              "cover": {
+                "part": "servo-side-cover",
+                "centreMm": [
+                  11.250781,
+                  -18,
+                  -27.74998664855957
+                ],
+                "radiusMm": 1.099933,
+                "axisUnit": [
+                  0,
+                  0,
+                  1
+                ],
+                "matingFaceNormal": [
+                  0,
+                  0,
+                  1
+                ],
+                "circleFitRmsMm": 0.000052
+              },
+              "cradle": {
+                "part": "neck-cradle",
+                "centreMm": [
+                  11.250781,
+                  -21.749999,
+                  -21.049985885620117
+                ],
+                "radiusMm": 0.849887,
+                "axisUnit": [
+                  0,
+                  0,
+                  1
+                ],
+                "matingFaceNormal": [
+                  0,
+                  0,
+                  -1
+                ],
+                "circleFitRmsMm": 0.000091
+              },
+              "transformedCoverCentreMm": [
+                11.250781,
+                -21.75,
+                -21.04998664855957
+              ],
+              "coaxialPerpendicularResidualMm": 0.0000010000000010279564,
+              "axialPlaneOffsetMm": -7.629394538355427e-7
+            }
+          ]
+        },
+        "kinematicParent": "Both covers register to the unchanged cradle; keep them rigid in the yaw neck, not on the pitching head.",
+        "samplingScope": {
+          "pitchCount": 19,
+          "yawCount": 5,
+          "wholeSceneTouchRays": 285,
+          "touchFirstHitClear": 285,
+          "voxelStepMm": 0.5,
+          "whiteMaterialPoints": 9573,
+          "grayMaterialPoints": 5890,
+          "coverVsCradleAndEachOther": "0 occupied sample points in every direction",
+          "coverVsHeadShellOverPitch": "0 occupied sample points in every sampled pitch"
+        },
+        "rejectedFormerCandidates": [
+          {
+            "candidate": "white XY[-.25,+3.1], gray XY[-.25,-2.1]",
+            "reason": "Matches global projected cover silhouette but does not preserve direct bore coaxiality to retained cradle; cannot apply to covers alone."
+          },
+          {
+            "candidate": "gray Z+3.7 with PDF XY",
+            "reason": "A volume-clearance guess with non-coincident original bore seats; actual circle/plane pairing is stronger."
+          }
+        ],
+        "integration": {
+          "sourceVertices": "Both cover index buffers retained; 1388 and 1302 vertex positions translated only, maximum float32 residual 7.63e-7 mm; other four source parts byte-identical",
+          "adapterBoard": "Appearance reconstruction front Y13.0, 0.12 mm above source white-cover maximum Y12.85; headers raised by the same 0.4 mm; lower 7P connector remains unchanged",
+          "yawWires": "Appearance route over board front edge and down the original open right-hand cover region; no source cut",
+          "fittings": {
+            "screwCentersMm": [
+              [
+                -10.749219,
+                -21.75,
+                -22.06
+              ],
+              [
+                11.250781,
+                -21.75,
+                -22.06
+              ]
+            ],
+            "orangeWindowInsertMm": [
+              0.250781,
+              -21.75,
+              -24.94
+            ],
+            "windowEmissive": false
+          },
+          "currentValidation": {
+            "movingAssembly": "scripts/check-stackchan-moving-assembly.mjs",
+            "poseCount": 95,
+            "insertSolidContainmentSamples": 326952,
+            "servoLeadClearanceSamples": 6390,
+            "coverSeats": "scripts/check-stackchan-cover-seats.mjs",
+            "touchSceneSampledApproaches": 90
+          },
+          "scope": "Current relative source-cover placement and sampled reconstructed insert clearance only; hidden motor fit remains unresolved. Independent research snapshots below predate final fitting/lead integration."
+        },
+        "limitations": [
+          "Clear sampled source cover seats do not repair the current inferred servo package, Adapter, battery, cable or total manufacturing fit.",
+          "Approximately 0.1 mm rear-white axial offset is preserved rather than forced away.",
+          "Possible global cradle Y/Z registration and right-bearing-fixture axial seat require separate evidence before changing joint axes.",
+          "PDF silhouette-based global X/Y offsets are not applied to these relative registrations."
+        ]
+      },
+      "servoOutlineReview": {
+        "checkedAt": "2026-10-25T16:50:54.293864+00:00",
+        "sources": [
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1205/SCS0009.pdf",
+            "sha256": "b8ce3f28a8c12d2ad9dee697087eae03eb716219016b48be9a7e1856755213c6",
+            "bytes": 451290,
+            "page": 6,
+            "scope": "Official M5Stack-linked manufacturer drawing; raw PDF not redistributed"
+          }
+        ],
+        "facts": [
+          {
+            "id": "gearbox-cap-outline",
+            "source": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1205/SCS0009.pdf",
+            "page": 6,
+            "annotatedCentreSpacingMm": 5.7,
+            "fullWidthMm": 11,
+            "largeRadiusMm": 5.5,
+            "smallRadiusMm": {
+              "value": 2.8,
+              "status": "Approximate trace of top-view smaller end, roughly 2.7..2.9; not an annotated radius"
+            },
+            "profile": "Unequal circles with their external common tangents; old equal-radius stadium extended too far toward the small gear",
+            "limits": "Side-view 2.9 is an axial dimension and is not used as a radius. Cap depth and concealed steps are still appearance approximations."
+          }
+        ],
+        "validation": {
+          "script": "scripts/check-stackchan-servo-outline.mjs",
+          "profileProbes": 22,
+          "defaultRequiresRawPdf": false,
+          "scope": "Native cap silhouette probes only; the source-profile comparison is separate from current complete installation fit"
+        },
+        "limitations": [
+          "Physical case dimensions and output shaft are retained; installation seat is not proved by this silhouette check.",
+          "Small radius, axial layers and hidden mounting retain explicit appearance uncertainty."
+        ],
+        "scope": "Native SCS0009 visual gearbox-cap silhouette correction; original case/shaft and assembly fit remain distinct"
+      },
+      "currentServoFit": {
+        "status": "fit-unresolved",
+        "fixture": "current runtime; source-hole cover seats and unequal-radius servo caps",
+        "stepMm": 1,
+        "voxelMethod": "centre occupancy inside actual mesh and unchanged source plastic; per-mesh approximate volume, not union volume or continuous proof",
+        "sampledServoVoxels": 6234,
+        "residuals": [
+          {
+            "part": "Pitch servo body motor case",
+            "plastic": "servo-rear-cover",
+            "occupiedVoxelSamples": 92,
+            "estimatedOverlapMm3": 92,
+            "worldSampleBounds": {
+              "min": [
+                -9.25000000134111,
+                11.65,
+                -18.650000381469727
+              ],
+              "max": [
+                -6.250000001341103,
+                11.65,
+                3.349999618530272
+              ]
+            }
+          },
+          {
+            "part": "Pitch servo body gearbox shoulder",
+            "plastic": "servo-rear-cover",
+            "occupiedVoxelSamples": 115,
+            "estimatedOverlapMm3": 115,
+            "worldSampleBounds": {
+              "min": [
+                -14.050000001341111,
+                11.65,
+                -18.650000381469727
+              ],
+              "max": [
+                -10.050000001341104,
+                11.65,
+                3.3499996185302736
+              ]
+            }
+          },
+          {
+            "part": "Pitch servo body rounded gearbox cap",
+            "plastic": "neck-cradle",
+            "occupiedVoxelSamples": 78,
+            "estimatedOverlapMm3": 78,
+            "worldSampleBounds": {
+              "min": [
+                -17.700000000000003,
+                1.6485957145690922,
+                -10
+              ],
+              "max": [
+                -17.7,
+                7.648595714569092,
+                3
+              ]
+            }
+          },
+          {
+            "part": "Pitch servo body rounded gearbox cap",
+            "plastic": "servo-rear-cover",
+            "occupiedVoxelSamples": 52,
+            "estimatedOverlapMm3": 52,
+            "worldSampleBounds": {
+              "min": [
+                -17.700000000000003,
+                8.648595714569092,
+                -9
+              ],
+              "max": [
+                -14.7,
+                11.648595714569092,
+                3
+              ]
+            }
+          },
+          {
+            "part": "Pitch servo body front mounting ear",
+            "plastic": "servo-rear-cover",
+            "occupiedVoxelSamples": 10,
+            "estimatedOverlapMm3": 10,
+            "worldSampleBounds": {
+              "min": [
+                -11.050000000670552,
+                12.200000190734864,
+                4.049999904632566
+              ],
+              "max": [
+                -10.05000000067055,
+                12.200000190734864,
+                8.049999904632566
+              ]
+            }
+          },
+          {
+            "part": "Pitch servo body rear mounting ear",
+            "plastic": "neck-cradle",
+            "occupiedVoxelSamples": 18,
+            "estimatedOverlapMm3": 18,
+            "worldSampleBounds": {
+              "min": [
+                -11.050000000670558,
+                1.2000001907348636,
+                -22.950000000000003
+              ],
+              "max": [
+                -10.050000000670558,
+                9.200000190734864,
+                -22.950000000000003
+              ]
+            }
+          },
+          {
+            "part": "Pitch servo body rear mounting ear",
+            "plastic": "servo-rear-cover",
+            "occupiedVoxelSamples": 22,
+            "estimatedOverlapMm3": 22,
+            "worldSampleBounds": {
+              "min": [
+                -11.050000000670556,
+                7.200000190734864,
+                -21.950000000000003
+              ],
+              "max": [
+                -10.050000000670556,
+                12.200000190734864,
+                -19.950000000000003
+              ]
+            }
+          }
+        ],
+        "scope": "Current finite diagnostic retains fit-unresolved; per-part occupancy is not a continuous union-volume or manufacturing-fit result"
       }
     },
     {
@@ -1193,8 +1835,87 @@
         {
           "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1129/K141_09.webp",
           "sha256": "0a898ae44bd723d28ca4462b3b37f257777640a22d3c6cb6e6380853ca2f4c4f"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1150/S007-V033_01.webp",
+          "sha256": "29121b8efb07ad5dc08e036e96061ae08d4719f2d915b93f687bde742c77ff73"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1150/S007-V033_07.webp",
+          "sha256": "dc70861f499aff13322523157ba22038fbc07eaed10567ed8209af7c9d66761b"
+        },
+        {
+          "url": "https://docs.m5stack.com/en/core/Stamp-S3A",
+          "sha256": "63be4497485cc3c3436788357cf54911a9e423d92e4f56c673d200b9805017b7"
         }
-      ]
+      ],
+      "visibleLedReview": {
+        "sources": [
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1150/S007-V033_01.webp",
+            "sha256": "29121b8efb07ad5dc08e036e96061ae08d4719f2d915b93f687bde742c77ff73",
+            "bytes": 177658
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1150/S007-V033_07.webp",
+            "sha256": "dc70861f499aff13322523157ba22038fbc07eaed10567ed8209af7c9d66761b",
+            "bytes": 77950
+          },
+          {
+            "url": "https://docs.m5stack.com/en/core/Stamp-S3A",
+            "sha256": "63be4497485cc3c3436788357cf54911a9e423d92e4f56c673d200b9805017b7",
+            "kind": "existing official MCP reference; Stamp-S3A HMI specification one WS2812B-2020 RGB"
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1129/K141_04.webp",
+            "sha256": "1a0cc7edc429a5bc36971c929caa7f10c1b565df6220f34e066fd2809b1f9966"
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1129/K141_06.webp",
+            "sha256": "cdd2d19021d1f8abdd5620216976e2c3ec40b29e00d808e67c872536a12d6d4c"
+          }
+        ],
+        "facts": [
+          {
+            "source": "https://docs.m5stack.com/en/core/Stamp-S3A",
+            "anchor": "Specifications / HMI",
+            "fact": "One programmable WS2812B-2020 RGB LED is specified for Stamp-S3A."
+          },
+          {
+            "lines": "106-110",
+            "fact": "Official download-mode red indication and independently gated Stamp-S3A RGB are documented; no second monochrome emitter is inferred.",
+            "source": "https://docs.m5stack.com/en/core/StamPLC"
+          }
+        ],
+        "implementation": {
+          "id": "stamp-rgb",
+          "count": 1,
+          "positionMm": [
+            29.25,
+            6.48,
+            12.9
+          ],
+          "packageMm": [
+            1.5,
+            1.5,
+            0.55
+          ],
+          "defaultBrightness": 0,
+          "placementEvidence": "One new package is seated above the existing physical board in the native cover USB-side aperture. XY follows source-slot registration and photographs; local depth is an appearance estimate. The two native covers share a 24 x 18 x 4.7 mm envelope but have different triangulations; no complete vertex identity is claimed.",
+          "coverUnchanged": true,
+          "physicalBehavior": false,
+          "automaticButtonLink": false
+        },
+        "validation": {
+          "script": "scripts/check-host-visible-leds.mjs",
+          "scope": "Actual original-aperture rays including cover-lip occlusion, independent color/brightness, geometry hashes and frames, input independence and owned resource disposal. Browser pixels remain a separate root review."
+        },
+        "limitations": [
+          "Package dimensions, concealed depth and optical glow/diffusion are appearance estimates, not mechanical tolerances or an LED intensity model.",
+          "No GPIO38/backlight power gate, boot/download sequence, firmware/electrical state or automatic key-to-light response is implemented."
+        ],
+        "scope": "One independently externally driven visible Stamp-S3A RGB; geometry appearance only"
+      }
     },
     {
       "id": "env-iii",
@@ -2539,6 +3260,6 @@
       }
     ]
   },
-  "updatedAt": "2026-10-25T16:28:44.985Z",
+  "updatedAt": "2026-10-25T17:12:10.817Z",
   "syncedAt": "2026-10-25T14:15:24.398Z"
 }

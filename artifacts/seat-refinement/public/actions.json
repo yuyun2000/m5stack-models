@@ -1,0 +1,136 @@
+[
+  {
+    "case": "stackchan seven rendered views",
+    "pass": true
+  },
+  {
+    "case": "cardputer-adv seven rendered views",
+    "pass": true
+  },
+  {
+    "case": "stamplc seven rendered views",
+    "pass": true
+  },
+  {
+    "case": "cardputer-adv stamp-rgb independent on/off",
+    "pass": true,
+    "initial": {
+      "color": "#ff2020",
+      "brightness": 0
+    },
+    "lit": {
+      "color": "#22b477",
+      "brightness": 0.65
+    },
+    "off": {
+      "color": "#22b477",
+      "brightness": 0
+    }
+  },
+  {
+    "case": "stamplc stamp-rgb independent on/off",
+    "pass": true,
+    "initial": {
+      "color": "#ff2020",
+      "brightness": 0
+    },
+    "lit": {
+      "color": "#22b477",
+      "brightness": 0.65
+    },
+    "off": {
+      "color": "#22b477",
+      "brightness": 0
+    }
+  },
+  {
+    "case": "StackChan pitch90 direct canvas touch-1",
+    "pass": true,
+    "down": {
+      "pressed": true
+    },
+    "up": {
+      "pressed": false
+    },
+    "client": [
+      877.5,
+      220.203125
+    ],
+    "inputs": "touch-1 · click · pointer:1\ntouch-1 · up · pointer:1\ntouch-1 · down · pointer:1"
+  },
+  {
+    "case": "StackChan pitch90 direct canvas touch-2",
+    "pass": true,
+    "down": {
+      "pressed": true
+    },
+    "up": {
+      "pressed": false
+    },
+    "client": [
+      877.5,
+      278.203125
+    ],
+    "inputs": "touch-2 · click · pointer:1\ntouch-2 · up · pointer:1\ntouch-2 · down · pointer:1\ntouch-1 · click · pointer:1\ntouch-1 · up · pointer:1"
+  },
+  {
+    "case": "StackChan pitch90 direct canvas touch-3",
+    "pass": true,
+    "down": {
+      "pressed": true
+    },
+    "up": {
+      "pressed": false
+    },
+    "client": [
+      877.5,
+      337.203125
+    ],
+    "inputs": "touch-3 · click · pointer:1\ntouch-3 · up · pointer:1\ntouch-3 · down · pointer:1\ntouch-2 · click · pointer:1\ntouch-2 · up · pointer:1"
+  },
+  {
+    "case": "StackChan external pose neutral",
+    "pass": true,
+    "yaw": 0,
+    "pitch": 0
+  },
+  {
+    "case": "StackChan external pose mid",
+    "pass": true,
+    "yaw": 35,
+    "pitch": 35
+  },
+  {
+    "case": "StackChan external pose turned",
+    "pass": true,
+    "yaw": 90,
+    "pitch": 60
+  },
+  {
+    "case": "StackChan external pose up",
+    "pass": true,
+    "yaw": 0,
+    "pitch": 90
+  },
+  {
+    "case": "StackChan visible side power press/release",
+    "pass": true
+  },
+  {
+    "case": "StackChan articulated Grove assembly",
+    "pass": true,
+    "state": "grove → Unit · ENV III"
+  },
+  {
+    "case": "StackChan pitch90 middle-zone touch pointer",
+    "pass": true,
+    "down": {
+      "pressed": true
+    },
+    "released": {
+      "pressed": false
+    },
+    "inputs": "touch-2 · click · pointer:2\ntouch-2 · up · pointer:2\ntouch-2 · down · pointer:2\ngrove · detach\ngrove · attach",
+    "scope": "Chrome synthetic touch input only"
+  }
+]

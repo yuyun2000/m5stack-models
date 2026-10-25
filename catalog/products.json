@@ -205,7 +205,8 @@
       "limitations": [
         "原官方CAD装配配合真实USB-C、microSD、Grove、音频、IR与喇叭开口；内藏包装/接缝唇口及StampS3A天线尺寸仍部分为照片推导。",
         "60控件=58瞬时键帽+电源与Grove供电方向两稳定滑块；Grove方向只记录视觉档位，无电气行为。",
-        "LCD有效区仍需面板机械图；贴纸等待用户原文件。"
+        "LCD有效区仍需面板机械图；贴纸等待用户原文件。",
+        "Stamp-S3A单颗RGB支持外驱颜色/亮度，默认熄灭；封装深度与光扩散为外观估计，不模拟启动/下载、GPIO38门控或按键联动。"
       ],
       "nextAction": "接口深腔、StampS3A、接缝搭接和60控件已检查；继续核对推导包装及LCD有效区，贴纸等待原文件",
       "cadEnvelopeMm": [
@@ -228,6 +229,9 @@
           "maxDistance": 11,
           "purpose": "Official CAD recessed Stamp button face stays visible at Z=9.175803 mm; detailed board/antenna closure checked separately"
         }
+      ],
+      "externalLeds": [
+        "stamp-rgb"
       ]
     },
     {
@@ -564,9 +568,9 @@
         "采用官方壳体/舵机盖板，前侧Power板归pitch、下端Adapter归yaw，七线跨关节，底座USB保持固定；后部为真实开放机构。",
         "隐藏pitch舵机包装与旧照片重建颈座/盖内腔仍有局部体积交叠；保留官方壳/轴，不宣称完整干涉或制造配合通过。线束路线和接头局部尺寸为外观近似。",
         "yaw/pitch为外部驱动的视觉关节；pitch以当前正视为0、正角抬头，绝对硬件零位未校准；贴纸等待原文件。",
-        "Touch boundaries and RGB segment order/spacing are visual inferences; no electrical chain mapping or touch-to-light behavior. Full scene access remains partial: middle touch zone is occluded by the retained servo-side-cover at pitch90 degrees."
+        "两源盖按四对原螺孔轴与cradle相对注册，95姿态保持孔轴配准；30姿态/90条顶面法向接近采样可达。全局颈架/头壳datum与隐藏舵机配合仍未确认，不声明任意视角可达或制造配合。"
       ],
-      "nextAction": "继续校准隐藏舵机包装、线束真实走向和硬件零位；保留真实开放机构，贴纸等待原文件。",
+      "nextAction": "相对盖座孔轴与顶面触区采样已校正；继续核准全局头颈datum、右轴承轴向座与隐藏舵机/线束真实安装，贴纸等待原文件。",
       "cadEnvelopeMm": [
         54,
         70.5,
@@ -944,7 +948,8 @@
       },
       "limitations": [
         "已补红3+蓝8+四组灰3实体端子、进线孔、金属夹、槽螺钉及DC5521",
-        "内层夹具/端子座深度依据照片构造；LCD有效区仍需面板图，贴纸等待原文件"
+        "内层夹具/端子座深度依据照片构造；LCD有效区仍需面板图，贴纸等待原文件",
+        "Stamp-S3A单颗RGB支持外驱颜色/亮度，默认熄灭；封装深度与光扩散为外观估计，不模拟启动/下载、GPIO38门控或按键联动。"
       ],
       "nextAction": "当前装配细化与专用检查已复核；继续核对照片推导细节，贴纸等待原文件",
       "cadEnvelopeMm": [
@@ -967,6 +972,9 @@
           "maxDistance": 16.5,
           "purpose": "StampS3A module fills its frame"
         }
+      ],
+      "externalLeds": [
+        "stamp-rgb"
       ]
     },
     {

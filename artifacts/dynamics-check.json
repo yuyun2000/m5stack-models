@@ -1,11 +1,292 @@
 {
-  "checkedAt": "2026-10-25T16:31:09.134Z",
+  "checkedAt": "2026-10-25T17:14:28.947Z",
   "scope": "Actual control movement and externally driven visual kinematics; no hardware/runtime validation",
   "checks": [
     {
+      "script": "scripts/check-stackchan-cover-seats.mjs",
+      "status": "pass",
+      "holePairs": 4,
+      "extractedCircularRims": 12,
+      "pairs": [
+        {
+          "label": "white front",
+          "coverRims": [
+            {
+              "part": "servo-rear-cover",
+              "axis": 0,
+              "planeMm": 10.350787162780762,
+              "centerMm": [
+                10.350787162780762,
+                6.6500008106609245,
+                6.600001006033899
+              ],
+              "radiusMm": 1.0999327618864128,
+              "vertices": 50,
+              "maxCircleErrorMm": 0.0001106893088804739
+            },
+            {
+              "part": "servo-rear-cover",
+              "axis": 0,
+              "planeMm": 11.350787162780762,
+              "centerMm": [
+                11.350787162780762,
+                6.649998867253366,
+                6.6000009073360575
+              ],
+              "radiusMm": 1.0999327618863148,
+              "vertices": 50,
+              "maxCircleErrorMm": 0.00011026397061275617
+            }
+          ],
+          "cradleRim": {
+            "part": "neck-cradle",
+            "axis": 0,
+            "planeMm": 10.350787162780762,
+            "centerMm": [
+              10.350787162780762,
+              6.6499992483623025,
+              6.600005927344493
+            ],
+            "radiusMm": 0.9153766504126832,
+            "vertices": 42,
+            "maxCircleErrorMm": 0.00024006005731780355
+          },
+          "matingPlaneGapMm": 0
+        },
+        {
+          "label": "white rear",
+          "coverRims": [
+            {
+              "part": "servo-rear-cover",
+              "axis": 0,
+              "planeMm": 10.350787162780762,
+              "centerMm": [
+                10.350787162780762,
+                6.650000522064657,
+                -21.899998986633697
+              ],
+              "radiusMm": 1.0499354146675126,
+              "vertices": 50,
+              "maxCircleErrorMm": 0.0001221482485012082
+            },
+            {
+              "part": "servo-rear-cover",
+              "axis": 0,
+              "planeMm": 11.350787162780762,
+              "centerMm": [
+                11.350787162780762,
+                6.649999306307885,
+                -21.899998979583486
+              ],
+              "radiusMm": 1.0499354146674875,
+              "vertices": 50,
+              "maxCircleErrorMm": 0.00012227604370962375
+            }
+          ],
+          "cradleRim": {
+            "part": "neck-cradle",
+            "axis": 0,
+            "planeMm": 10.250781059265137,
+            "centerMm": [
+              10.250781059265137,
+              6.6500009674486344,
+              -21.899994298414065
+            ],
+            "radiusMm": 0.8498859618540364,
+            "vertices": 42,
+            "maxCircleErrorMm": 0.00021411564005680006
+          },
+          "matingPlaneGapMm": 0.1
+        },
+        {
+          "label": "gray left",
+          "coverRims": [
+            {
+              "part": "servo-side-cover",
+              "axis": 2,
+              "planeMm": -22.049985885620117,
+              "centerMm": [
+                -10.749218911019918,
+                -21.749999615175902,
+                -22.049985885620117
+              ],
+              "radiusMm": 1.0999327513515649,
+              "vertices": 52,
+              "maxCircleErrorMm": 0.00010154421250052614
+            },
+            {
+              "part": "servo-side-cover",
+              "axis": 2,
+              "planeMm": -21.049985885620117,
+              "centerMm": [
+                -10.749218970449803,
+                -21.7499996151759,
+                -21.049985885620117
+              ],
+              "radiusMm": 1.0999327513515649,
+              "vertices": 52,
+              "maxCircleErrorMm": 0.00010154421249675138
+            }
+          ],
+          "cradleRim": {
+            "part": "neck-cradle",
+            "axis": 2,
+            "planeMm": -21.049985885620117,
+            "centerMm": [
+              -10.749218799649295,
+              -21.749999471145784,
+              -21.049985885620117
+            ],
+            "radiusMm": 0.8498871343004369,
+            "vertices": 42,
+            "maxCircleErrorMm": 0.00021307703446449278
+          },
+          "matingPlaneGapMm": 0
+        },
+        {
+          "label": "gray right",
+          "coverRims": [
+            {
+              "part": "servo-side-cover",
+              "axis": 2,
+              "planeMm": -22.049985885620117,
+              "centerMm": [
+                11.250781088980078,
+                -21.749999615175895,
+                -22.049985885620117
+              ],
+              "radiusMm": 1.0999327513515649,
+              "vertices": 52,
+              "maxCircleErrorMm": 0.00010154421249963796
+            },
+            {
+              "part": "servo-side-cover",
+              "axis": 2,
+              "planeMm": -21.049985885620117,
+              "centerMm": [
+                11.250781029550195,
+                -21.749999615175902,
+                -21.049985885620117
+              ],
+              "radiusMm": 1.0999327513515649,
+              "vertices": 52,
+              "maxCircleErrorMm": 0.00010154421249719547
+            }
+          ],
+          "cradleRim": {
+            "part": "neck-cradle",
+            "axis": 2,
+            "planeMm": -21.049985885620117,
+            "centerMm": [
+              11.250781200350708,
+              -21.74999947114578,
+              -21.049985885620117
+            ],
+            "radiusMm": 0.8498871343004369,
+            "vertices": 42,
+            "maxCircleErrorMm": 0.0002130770344676014
+          },
+          "matingPlaneGapMm": 0
+        }
+      ],
+      "poseCount": 95,
+      "axisChecks": 760,
+      "maxAxisErrorMm": 0.000005163339515553404,
+      "grayEarSeatRays": 4,
+      "sourceWindowRays": 9,
+      "screwHeads": 2,
+      "scope": "Relative cover/cradle registration from closed planar boundary loops and circle fits of actual runtime meshes, original unequal bore radii and local fittings. No private files, position-delta assertions, dense volume sampling, global cradle/head datum, hidden servo/board fit, tolerances or manufacturing/physics acceptance."
+    },
+    {
+      "script": "scripts/check-host-visible-leds.mjs",
+      "status": "pass",
+      "cases": [
+        {
+          "id": "cardputer-adv",
+          "led": "stamp-rgb",
+          "emitterCount": 1,
+          "apertureRays": 7,
+          "positionMm": [
+            35.25,
+            10.45,
+            7.8
+          ],
+          "geometryMeshes": 257,
+          "scope": "External RGB state and source-slot appearance; package dimensions/depth remain photo-derived"
+        },
+        {
+          "id": "stamplc",
+          "led": "stamp-rgb",
+          "emitterCount": 1,
+          "apertureRays": 7,
+          "positionMm": [
+            29.25,
+            6.48,
+            12.9
+          ],
+          "geometryMeshes": 336,
+          "scope": "External RGB state and source-slot appearance; package dimensions/depth remain photo-derived"
+        }
+      ],
+      "ownedEmitterResources": 6,
+      "resourceDisposal": "Owned emitter geometry and materials exactly once; core shared glow texture lifecycle is outside this product check",
+      "scope": "Actual Cardputer-ADV/StamPLC external LED API, original aperture rays, unchanged geometry, transformed frames and independent resource ownership. Canvas boundary stub only; no GPIO38 gating, firmware, boot sequence, physical optical/diffusion or hardware proof"
+    },
+    {
+      "script": "scripts/check-stackchan-servo-outline.mjs",
+      "status": "pass",
+      "source": "Official linked SCS0009.pdf p6 top-view unequal-radius outline",
+      "servoCaps": 2,
+      "profileProbes": 22,
+      "caps": [
+        {
+          "name": "Pitch",
+          "profileMm": [
+            14,
+            10.997191429138184,
+            3.799999952316284
+          ],
+          "bounds": {
+            "min": [
+              -5.5,
+              -5.498595714569092,
+              0
+            ],
+            "max": [
+              8.5,
+              5.498595714569092,
+              3.799999952316284
+            ]
+          }
+        },
+        {
+          "name": "Yaw",
+          "profileMm": [
+            14,
+            10.997191429138184,
+            3.799999952316284
+          ],
+          "bounds": {
+            "min": [
+              -5.5,
+              -5.498595714569092,
+              0
+            ],
+            "max": [
+              8.5,
+              5.498595714569092,
+              3.799999952316284
+            ]
+          }
+        }
+      ],
+      "physicalCaseDimensionsUnchanged": true,
+      "scope": "Source-supported silhouette correction only; small radius and depth/hidden steps inferred. Existing complete installation/servo fit remains unconfirmed."
+    },
+    {
       "script": "scripts/check-stackchan-touch-led.mjs",
       "status": "pass",
-      "passScope": "API, independent material drive, source roof apertures and head hierarchy only; scene access is separately partial",
+      "passScope": "API, independent material drive, source roof apertures, head hierarchy and the explicitly sampled assembled-scene roof approaches",
       "touchZones": 3,
       "touchOrder": [
         "front",
@@ -20,132 +301,16 @@
       "actualApertureRays": 5100,
       "articulatedTargetSelfRays": 90,
       "sceneAccess": {
-        "status": "partial",
+        "status": "pass",
         "probeCount": 90,
-        "unblocked": 85,
-        "blocked": [
-          {
-            "yaw": 0,
-            "pitch": 90,
-            "target": "touch-2",
-            "firstHit": "servo-side-cover",
-            "firstDistanceMm": 1.8700133514404342,
-            "targetDistanceMm": 2,
-            "touchPointLocal": [
-              0,
-              35.27,
-              -10.000000000000002
-            ],
-            "touchPointWorld": [
-              0,
-              -1.349999999999996,
-              -30.620000000000005
-            ],
-            "firstHitPointWorld": [
-              0,
-              -1.349999999999996,
-              -30.74998664855957
-            ]
-          },
-          {
-            "yaw": 35,
-            "pitch": 90,
-            "target": "touch-2",
-            "firstHit": "servo-side-cover",
-            "firstDistanceMm": 1.8700133514404393,
-            "targetDistanceMm": 2.0000000000000027,
-            "touchPointLocal": [
-              -1.1102230246251565e-15,
-              35.27000000000002,
-              -10
-            ],
-            "touchPointWorld": [
-              -16.415757608366942,
-              -1.349999999999996,
-              -25.444131507550953
-            ],
-            "firstHitPointWorld": [
-              -16.49031488702095,
-              -1.349999999999996,
-              -25.550610336448795
-            ]
-          },
-          {
-            "yaw": 90,
-            "pitch": 90,
-            "target": "touch-2",
-            "firstHit": "servo-side-cover",
-            "firstDistanceMm": 1.8700133514404342,
-            "targetDistanceMm": 2,
-            "touchPointLocal": [
-              -2.220446049250313e-16,
-              35.27,
-              -10.000000000000002
-            ],
-            "touchPointWorld": [
-              -28.620000000000005,
-              -1.349999999999996,
-              -2.000000000000006
-            ],
-            "firstHitPointWorld": [
-              -28.74998664855957,
-              -1.349999999999996,
-              -2.000000000000006
-            ]
-          },
-          {
-            "yaw": 180,
-            "pitch": 90,
-            "target": "touch-2",
-            "firstHit": "servo-side-cover",
-            "firstDistanceMm": 1.8700133514404342,
-            "targetDistanceMm": 2,
-            "touchPointLocal": [
-              9.860761315262648e-32,
-              35.27,
-              -10
-            ],
-            "touchPointWorld": [
-              -3.5049391391597254e-15,
-              -1.349999999999996,
-              26.620000000000005
-            ],
-            "firstHitPointWorld": [
-              -3.5208579124687617e-15,
-              -1.349999999999996,
-              26.74998664855957
-            ]
-          },
-          {
-            "yaw": 270,
-            "pitch": 90,
-            "target": "touch-2",
-            "firstHit": "servo-side-cover",
-            "firstDistanceMm": 1.8700133514404342,
-            "targetDistanceMm": 2,
-            "touchPointLocal": [
-              -2.220446049250313e-16,
-              35.27,
-              -10.000000000000002
-            ],
-            "touchPointWorld": [
-              28.620000000000005,
-              -1.349999999999996,
-              -1.9999999999999936
-            ],
-            "firstHitPointWorld": [
-              28.74998664855957,
-              -1.349999999999996,
-              -1.9999999999999936
-            ]
-          }
-        ],
-        "scope": "Complete assembled-scene approach along local roof normal, 2 mm start offset. Self-target hits do not imply whole-device accessibility."
+        "unblocked": 90,
+        "blocked": [],
+        "scope": "Complete assembled-scene approach along local roof normal, 2 mm start offset, for the listed 30 poses. This is finite directional sampling, not arbitrary camera accessibility."
       },
       "ownedMeshResources": 34,
       "targetEnvelopeExpansion": false,
-      "sourceScope": "Si12T three zones, WS2812C x12, official BSP front/middle/back and left6/right6; source roof slots",
-      "limits": "Exact electrode boundaries and per-side emitter order/spacing/diffusion remain inferred. Pitch90 touch-middle normal-ray occlusion by the original servo-side-cover remains unresolved; whole-device touch access is not fully accepted. No electrical chain mapping, gestures, capacitance, firmware, cable physics or hidden servo fit claim.",
+      "sourceScope": "Si12T three zones, WS2812C x12, official BSP front/middle/back and left6/right6; source roof slots and paired cover/cradle mounting bores",
+      "limits": "Exact electrode boundaries and per-side emitter order/spacing/diffusion remain inferred. Source cover mounting is registered to the current cradle; absolute cradle/head datums and hidden servo packaging remain unconfirmed. No electrical chain mapping, gestures, capacitance, firmware, cable physics or manufacturing fit claim.",
       "resourceDisposal": "all new mesh resources exactly once"
     },
     {
@@ -271,7 +436,7 @@
     },
     {
       "script": "scripts/check-viewer-lifecycle.mjs",
-      "checkedAt": "2026-10-25T16:30:19.033Z",
+      "checkedAt": "2026-10-25T17:13:37.711Z",
       "status": "pass",
       "checks": [
         "same Viewer mount idempotence",
@@ -686,7 +851,7 @@
     },
     {
       "script": "scripts/check-8encoder.mjs",
-      "checkedAt": "2026-10-25T16:31:05.042Z",
+      "checkedAt": "2026-10-25T17:14:24.872Z",
       "status": "pass",
       "scope": "Appearance/geometry/input intent only; no encoder count, electrical or firmware simulation",
       "sku": "U153",

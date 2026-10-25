@@ -31,8 +31,12 @@ export class StackChan extends Device{
    headParts.push(connector,this.port(id).object3d);
   }
   const rearFittings=new THREE.Group();rearFittings.name='Neck lower rear fittings';this.body.add(rearFittings);
-  for(const x of [-10.8,10.8])screw(rearFittings,[x,-21.8,-30.76],'back',1.5);
-  slab(rearFittings,1.5,3,.3,.25,[0,-21.1,-30.75],materials.glossy(0x843b1c,{roughness:.2}),[],.04);
+  // Original gray-cover ears seat on the cradle's two coaxial M2 bores.
+  // Their recessed back faces are Z-22.05, not the outer plate's Z-24.05.
+  for(const x of [-10.749219,11.250781])screw(rearFittings,[x,-21.75,-22.06],'back',1.5);
+  // This small appearance insert belongs to the cradle's genuine central
+  // opening; it does not follow a guessed gray-cover plane or emit light.
+  slab(rearFittings,1.5,3,.3,.25,[.250781,-21.75,-24.94],materials.glossy(0x843b1c,{roughness:.2}),[],.04).name='Cradle central window appearance insert';
   const touchLed=addTouchLed(this);headParts.push(touchLed.group);
   const mechanics=addMotionMechanics(this),adapter=addNeckAdapter(this,mechanics);
   headParts.push(...mechanics.headParts);

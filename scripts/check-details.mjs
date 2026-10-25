@@ -28,6 +28,12 @@ for(const [script,id,exportName]of [
  try{const result=test(model);checks.push({script:`scripts/${script}`,product:id,...result});console.log(`PASS ${id} assembly:`,JSON.stringify(result));}finally{model.dispose();}
 }
 const dynamics=[];
+const {checkStackChanCoverSeats}=await import('./check-stackchan-cover-seats.mjs');
+dynamics.push({script:'scripts/check-stackchan-cover-seats.mjs',...await checkStackChanCoverSeats()});
+const {checkHostVisibleLeds}=await import('./check-host-visible-leds.mjs');
+dynamics.push({script:'scripts/check-host-visible-leds.mjs',...await checkHostVisibleLeds()});
+const {checkStackChanServoOutline}=await import('./check-stackchan-servo-outline.mjs');
+dynamics.push({script:'scripts/check-stackchan-servo-outline.mjs',...await checkStackChanServoOutline()});
 const {checkStackChanTouchLed}=await import('./check-stackchan-touch-led.mjs');
 dynamics.push({script:'scripts/check-stackchan-touch-led.mjs',...await checkStackChanTouchLed()});
 const {checkDisplayTouch}=await import('./check-display-touch.mjs');
