@@ -28,6 +28,12 @@ for(const [script,id,exportName]of [
  try{const result=test(model);checks.push({script:`scripts/${script}`,product:id,...result});console.log(`PASS ${id} assembly:`,JSON.stringify(result));}finally{model.dispose();}
 }
 const dynamics=[];
+const {checkPortLifecycle}=await import('./check-port-lifecycle.mjs');
+dynamics.push({script:'scripts/check-port-lifecycle.mjs',...await checkPortLifecycle()});
+const {checkViewerLifecycle}=await import('./check-viewer-lifecycle.mjs');
+dynamics.push({script:'scripts/check-viewer-lifecycle.mjs',...await checkViewerLifecycle()});
+const {checkDemoLifecycle}=await import('./check-demo-lifecycle.mjs');
+dynamics.push({script:'scripts/check-demo-lifecycle.mjs',...await checkDemoLifecycle()});
 const {checkHostGroveAssembly}=await import('./check-host-grove-assembly.mjs');
 const hostGroveReport=await checkHostGroveAssembly();
 await fs.writeFile(new URL('../artifacts/host-grove-assembly-check.json',import.meta.url),JSON.stringify({checkedAt:new Date().toISOString(),...hostGroveReport},null,2)+'\n');

@@ -1,7 +1,72 @@
 {
-  "checkedAt": "2026-10-25T15:10:03.111Z",
+  "checkedAt": "2026-10-25T15:45:31.695Z",
   "scope": "Actual control movement and externally driven visual kinematics; no hardware/runtime validation",
   "checks": [
+    {
+      "script": "scripts/check-port-lifecycle.mjs",
+      "status": "pass",
+      "cases": [
+        "same-port idempotence",
+        "same-host transfer",
+        "cross-host transfer",
+        "destination replacement",
+        "descendant promotion before former-parent disposal",
+        "validation before mutation",
+        "self and descendant cycle rejection",
+        "old-path synchronous cancellation",
+        "nested actual HUB event bubbling",
+        "reentrant detach protection",
+        "transaction rejects will-detach and post-detach reattachment",
+        "pending destination disposal cannot revive its module",
+        "ancestry revalidated after source and destination detach callbacks",
+        "scene-only cycle rejection",
+        "single-tick rpm after transfer",
+        "real HUB/Fan rigid transfer retains four-wire buffers",
+        "retained then exactly-once resource disposal"
+      ],
+      "probeResources": 108,
+      "realCableBuffers": 8,
+      "scope": "Public Module/Port ownership, lifecycle events and visual state only; no electrical, firmware or private source dependency"
+    },
+    {
+      "script": "scripts/check-viewer-lifecycle.mjs",
+      "checkedAt": "2026-10-25T15:44:40.665Z",
+      "status": "pass",
+      "checks": [
+        "same Viewer mount idempotence",
+        "nested held key plus pointer cancels at old path before detach",
+        "unrelated host key and sibling pointer remain held",
+        "reuse after nested cancellation",
+        "window blur and hidden document cancel owned sources",
+        "external input source remains owned by its caller",
+        "cross Viewer transfer cancels old owned input and removes subscriptions",
+        "one update owner for continuous rpm",
+        "unmount pauses and remount resumes existing rpm",
+        "synchronous cancelled-up consumer can safely transfer or remount a device",
+        "third Viewer chosen during cancellation wins over the stale outer mount",
+        "cross host module transfer routes cancellation only through old host",
+        "disposing Viewer cannot be revived by cancelled-up and disposal is idempotent"
+      ],
+      "ownedResources": 18,
+      "rendererInstances": 7,
+      "oldNestedCancellationPath": "left/next/press",
+      "singleTickDegreesPer100msAt60Rpm": 36,
+      "scope": "Actual DeviceViewer lifecycle/input/RAF code with an isolated no-GPU renderer and DOM fixture; no browser pixels, private research, network, firmware or hardware simulation"
+    },
+    {
+      "script": "scripts/check-demo-lifecycle.mjs",
+      "status": "pass",
+      "cases": [
+        "port-selection",
+        "unit-selection",
+        "model-switch",
+        "stale-error",
+        "failed-attachment-disposal",
+        "successful-ownership",
+        "reentrant-hold-cancellation"
+      ],
+      "scope": "Actual demo async controller with real host/port/module ownership; browser selection and focus remain separately verified"
+    },
     {
       "script": "scripts/check-host-grove-assembly.mjs",
       "status": "pass",
@@ -362,7 +427,7 @@
     },
     {
       "script": "scripts/check-8encoder.mjs",
-      "checkedAt": "2026-10-25T15:09:59.211Z",
+      "checkedAt": "2026-10-25T15:45:27.748Z",
       "status": "pass",
       "scope": "Appearance/geometry/input intent only; no encoder count, electrical or firmware simulation",
       "sku": "U153",

@@ -4,7 +4,17 @@
 
 模型提供外观、实体按键行程、稳定开关、旋转/倾斜关节、Grove 插头线缆与外部灯光。屏幕接收外部帧缓冲，控件输出输入意图；固件、电气、协议、传感器数值及设备物理行为由下游系统提供。
 
-![当前新增与机械细化](artifacts/motion-refinement/overview.jpg)
+![当前装配视图](artifacts/lifecycle-refinement/stackchan-overview.jpg)
+
+本轮修复接口装卸和输入生命周期：同实例原口挂载幂等、跨口转移不重复更新；拆卸前能在旧路径收到取消弹起。Viewer重复/跨实例挂载与销毁清理已回归，demo保留有效按键检查/LED选位，并释放过期异步加载结果。正常检查包含17类Port、13类Viewer和7类异步场景；浏览器证据见 `artifacts/lifecycle-refinement/`。
+
+StackChan修正两端独立安装耳，保留真实舵机尺寸与关节轴。隐藏机械配合仍为 `fit-unresolved`，严格诊断以2退出；盖板/电机/Adapter候选没有进入运行模型。详情见 [数值诊断](artifacts/stackchan-servo-fit-check.json) 和 [视觉运动边界](docs/VISUAL-MOTION.md)。
+
+[当前姿态与Grove接线](artifacts/lifecycle-refinement/stackchan-env-posed.png) · [连接后选位保持](artifacts/lifecycle-refinement/8encoder-selection.png) · [拆卸取消](artifacts/lifecycle-refinement/cores3-key-detached.png)
+
+前一批新增与机械细化快照：
+
+![前一批新增与机械细化](artifacts/motion-refinement/overview.jpg)
 
 [主机与新 Unit 接线](artifacts/motion-refinement/connections.jpg) · [Key 按压回位](artifacts/motion-refinement/key-press.gif) · [StackChan 组合姿态](artifacts/motion-refinement/stackchan-motion.gif)
 

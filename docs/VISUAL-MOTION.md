@@ -98,3 +98,5 @@ node scripts/check-stackchan-assembly.mjs
 ```
 
 检查覆盖按需渲染终帧、显式转速/停止、转轴层级、固定底座、真实帽压放、倾斜后的局部压轴、部件与端口刚性跟随、Module嵌套调用和销毁。浏览器动态视图、实物机械限位和实机行为须分别验证；本层只提供几何。
+
+StackChan 隐藏舵机配合另用 `node scripts/check-stackchan-servo-fit.mjs` 输出数值诊断。当前结果为 `fit-unresolved`，加 `--strict` 时以2退出；正常运动检查通过不代表该机械配合通过。`--candidate-xy` 只临时评估未合并的盖板定位，结束后恢复运行变换；该候选会与当前推导的 Adapter 板冲突。运行模型仅修正尺寸图明确的两端独立安装耳，未缩小电机、切削原壳或移动关节轴来掩盖干涉。数值结果见 `artifacts/stackchan-servo-fit-check.json`，制造配合与隐藏安装面继续待确认。

@@ -1,0 +1,285 @@
+{
+  "checkedAt": "2026-10-25T15:40:51.032017+00:00",
+  "kind": "sampled-fit-diagnostic",
+  "mergedChange": "two independent servo end tabs; unchanged runtime cover transforms",
+  "servoPackagesSha256": "3832a2a82a782e4262058ace8b82b83f9dfd78e14a546f7a713e5e46fd5f2cf9",
+  "checkerSha256": "c5435e6096d84c0125817cca3aab3e489fc6a5bb9eb690ec7532b81dc766425a",
+  "currentRuntime": {
+    "status": "fit-unresolved",
+    "stepMm": 1,
+    "sampledServoVoxels": 6406,
+    "earTopologyAssertions": "pass",
+    "residuals": [
+      {
+        "part": "Pitch servo body motor case",
+        "plastic": "servo-rear-cover",
+        "occupiedVoxelSamples": 182,
+        "estimatedOverlapMm3": 182,
+        "worldSampleBounds": {
+          "min": [
+            -9.25000000134111,
+            7.65,
+            -18.650000381469727
+          ],
+          "max": [
+            6.749999998658898,
+            10.65,
+            3.349999618530272
+          ]
+        }
+      },
+      {
+        "part": "Pitch servo body gearbox shoulder",
+        "plastic": "servo-rear-cover",
+        "occupiedVoxelSamples": 120,
+        "estimatedOverlapMm3": 120,
+        "worldSampleBounds": {
+          "min": [
+            -14.050000001341111,
+            7.65,
+            -18.650000381469727
+          ],
+          "max": [
+            -10.050000001341104,
+            10.65,
+            3.3499996185302736
+          ]
+        }
+      },
+      {
+        "part": "Pitch servo body rounded gearbox cap",
+        "plastic": "neck-cradle",
+        "occupiedVoxelSamples": 104,
+        "estimatedOverlapMm3": 104,
+        "worldSampleBounds": {
+          "min": [
+            -17.700000000000003,
+            1.6500000000000004,
+            -13
+          ],
+          "max": [
+            -17.7,
+            7.65,
+            3
+          ]
+        }
+      },
+      {
+        "part": "Pitch servo body rounded gearbox cap",
+        "plastic": "servo-rear-cover",
+        "occupiedVoxelSamples": 115,
+        "estimatedOverlapMm3": 115,
+        "worldSampleBounds": {
+          "min": [
+            -17.700000000000003,
+            7.65,
+            -13
+          ],
+          "max": [
+            -14.699999999999998,
+            10.65,
+            3
+          ]
+        }
+      },
+      {
+        "part": "Pitch servo body front mounting ear",
+        "plastic": "servo-rear-cover",
+        "occupiedVoxelSamples": 2,
+        "estimatedOverlapMm3": 2,
+        "worldSampleBounds": {
+          "min": [
+            -11.050000000670552,
+            8.200000190734864,
+            4.049999904632566
+          ],
+          "max": [
+            -10.050000000670552,
+            8.200000190734864,
+            4.049999904632566
+          ]
+        }
+      },
+      {
+        "part": "Pitch servo body rear mounting ear",
+        "plastic": "neck-cradle",
+        "occupiedVoxelSamples": 18,
+        "estimatedOverlapMm3": 18,
+        "worldSampleBounds": {
+          "min": [
+            -11.050000000670558,
+            1.2000001907348636,
+            -22.950000000000003
+          ],
+          "max": [
+            -10.050000000670558,
+            9.200000190734864,
+            -22.950000000000003
+          ]
+        }
+      },
+      {
+        "part": "Pitch servo body rear mounting ear",
+        "plastic": "servo-rear-cover",
+        "occupiedVoxelSamples": 16,
+        "estimatedOverlapMm3": 16,
+        "worldSampleBounds": {
+          "min": [
+            -11.050000000670558,
+            10.200000190734864,
+            -22.950000000000003
+          ],
+          "max": [
+            -10.050000000670556,
+            11.200000190734864,
+            -19.950000000000003
+          ]
+        }
+      }
+    ],
+    "adapterCover": {
+      "sampleCount": 1500,
+      "containedSamples": 0,
+      "firstWorldPoint": null
+    }
+  },
+  "unmergedCoverXYCandidate": {
+    "status": "fit-unresolved",
+    "stepMm": 1,
+    "sampledServoVoxels": 6406,
+    "earTopologyAssertions": "pass",
+    "residuals": [
+      {
+        "part": "Pitch servo body motor case",
+        "plastic": "servo-rear-cover",
+        "occupiedVoxelSamples": 36,
+        "estimatedOverlapMm3": 36,
+        "worldSampleBounds": {
+          "min": [
+            -9.250000001341103,
+            10.65,
+            -1.6500003814697317
+          ],
+          "max": [
+            6.749999998658898,
+            11.65,
+            3.349999618530272
+          ]
+        }
+      },
+      {
+        "part": "Pitch servo body gearbox shoulder",
+        "plastic": "servo-rear-cover",
+        "occupiedVoxelSamples": 10,
+        "estimatedOverlapMm3": 10,
+        "worldSampleBounds": {
+          "min": [
+            -14.050000001341104,
+            10.65,
+            3.349999618530272
+          ],
+          "max": [
+            -10.050000001341104,
+            11.65,
+            3.3499996185302736
+          ]
+        }
+      },
+      {
+        "part": "Pitch servo body rounded gearbox cap",
+        "plastic": "neck-cradle",
+        "occupiedVoxelSamples": 104,
+        "estimatedOverlapMm3": 104,
+        "worldSampleBounds": {
+          "min": [
+            -17.700000000000003,
+            1.6500000000000004,
+            -13
+          ],
+          "max": [
+            -17.7,
+            7.65,
+            3
+          ]
+        }
+      },
+      {
+        "part": "Pitch servo body rounded gearbox cap",
+        "plastic": "servo-rear-cover",
+        "occupiedVoxelSamples": 23,
+        "estimatedOverlapMm3": 23,
+        "worldSampleBounds": {
+          "min": [
+            -17.700000000000003,
+            10.65,
+            -11
+          ],
+          "max": [
+            -17.7,
+            11.65,
+            1
+          ]
+        }
+      },
+      {
+        "part": "Pitch servo body front mounting ear",
+        "plastic": "servo-rear-cover",
+        "occupiedVoxelSamples": 2,
+        "estimatedOverlapMm3": 2,
+        "worldSampleBounds": {
+          "min": [
+            -11.050000000670552,
+            11.200000190734864,
+            4.049999904632566
+          ],
+          "max": [
+            -10.050000000670552,
+            11.200000190734864,
+            4.049999904632566
+          ]
+        }
+      },
+      {
+        "part": "Pitch servo body rear mounting ear",
+        "plastic": "neck-cradle",
+        "occupiedVoxelSamples": 18,
+        "estimatedOverlapMm3": 18,
+        "worldSampleBounds": {
+          "min": [
+            -11.050000000670558,
+            1.2000001907348636,
+            -22.950000000000003
+          ],
+          "max": [
+            -10.050000000670558,
+            9.200000190734864,
+            -22.950000000000003
+          ]
+        }
+      }
+    ],
+    "adapterCover": {
+      "sampleCount": 1500,
+      "containedSamples": 500,
+      "firstWorldPoint": [
+        -11.199999809265137,
+        13.14999996423721,
+        -8.329999732971192
+      ]
+    }
+  },
+  "acceptedMovementCheck": {
+    "status": "pass",
+    "poseCount": 95,
+    "insertSolidContainmentSamples": 326952
+  },
+  "manufacturingFit": "unresolved",
+  "volumeMethod": {
+    "voxelSideMm": 1,
+    "cellVolumeMm3": 1,
+    "point": "voxel centre inside both meshes",
+    "separateComponentVolumes": true,
+    "unionVolume": false,
+    "continuousProof": false
+  }
+}

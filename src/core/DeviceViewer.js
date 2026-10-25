@@ -122,11 +122,31 @@ export class DeviceViewer extends EventEmitter {
   #tweens = [];
   #keysDown = new Map(); // code → button
   #listeners = [];
+  #deviceOff = new Map(); // device → subscriptions owned by this viewer
+  #disposing = false;
+  #disposed = false;
 
   // ───────────────────────────── devices ─────────────────────────────
 
   /** Add a device to the scene. The first mounted device is the primary one. */
   mount(device, { position, fit = true } = {}) {
+    if (this.#disposing) return device; // cancelled-up cannot revive a dying viewer
+    if (this.#disposed) throw new Error('Cannot mount a device on a disposed DeviceViewer');
+    // A scene Object3D has one parent; its update loop and input subscriptions
+    // must have the same single owner. Unmount first while old paths still work.
+    if (device.viewer && device.viewer !== this) {
+      device.viewer.unmount(device);
+      // A cancelled-up consumer may have chosen a new owner synchronously.
+      // The outer, older mount request must not steal it back and double-tick.
+      if (device.viewer && device.viewer !== this && device.viewer.devices?.has(device)) return device;
+    }
+    if (this.devices.has(device)) {
+      if (position) device.root.position.fromArray(position);
+      if (fit) this.fit();
+      this.#layoutGround();
+      this.requestRender();
+      return device;
+    }
     device.viewer = this;
     if (position) device.root.position.fromArray(position);
     this.scene.add(device.root);
@@ -135,12 +155,12 @@ export class DeviceViewer extends EventEmitter {
       if (o.isMesh && !o.material?.transparent) { o.castShadow = true; }
     });
     const refresh = () => { this.#updateShadowCasters(device); this.#layoutGround(); };
-    device.__viewerOff = [device.on('input', event => {
-      // Input paths bubble through nested modules; module:* events are local.
+    this.#deviceOff.set(device, [device.on('input', event => {
+      // Input paths bubble through nested modules. Port propagates the separate
+      // will-detach lifecycle before removing the old parent/path ownership.
       if (event.kind !== 'port' || !['attach', 'detach'].includes(event.action)) return;
-      if (event.action === 'detach') this.#cancelInputs();
       refresh();
-    })];
+    }), device.on('module:will-detach', ({module}) => this.#cancelInputs(module))]);
     if (fit) this.fit();
     this.#layoutGround();
     this.requestRender();
@@ -148,13 +168,23 @@ export class DeviceViewer extends EventEmitter {
   }
 
   unmount(device) {
+    const primary = device === this.device;
     if (!this.devices.delete(device)) return;
-    this.#cancelInputs(device);
     // A focus/fit animation for the old scene must not override the next mount.
     this.#tweens = [];
-    device.__viewerOff?.forEach((off) => off());
-    device.root.removeFromParent();
-    device.viewer = null;
+    if (primary) {
+      this.#angularVel.set(0, 0, 0);
+      this.#pinch = null;
+    }
+    this.#deviceOff.get(device)?.forEach((off) => off());
+    this.#deviceOff.delete(device);
+    this.#cancelInputs(device);
+    // An input consumer may synchronously mount the device during cancelled up.
+    // Do not unlink the new scene owner or clear its newly installed listeners.
+    if (device.viewer === this && !this.devices.has(device)) {
+      device.root.removeFromParent();
+      device.viewer = null;
+    }
     this.requestRender();
   }
 
@@ -383,21 +413,29 @@ export class DeviceViewer extends EventEmitter {
   /** Release captured input before a device disappears or its canvas loses focus. */
   #cancelInputs(device = null) {
     const belongs = component => !device || isDescendant(component.object3d, device.root);
-    for (const [code, button] of this.#keysDown) {
+    for (const [code, button] of [...this.#keysDown]) {
       if (!belongs(button)) continue;
-      if (button.cancel) button.cancel(`key:${code}`); else button.release(`key:${code}`);
       this.#keysDown.delete(code);
+      if (button.cancel) button.cancel(`key:${code}`); else button.release(`key:${code}`);
     }
-    for (const [id, capture] of this.#captures) {
+    for (const [id, capture] of [...this.#captures]) {
       if (!belongs(capture.component)) continue;
       this.#captures.delete(id);
       capture.component.onPointerCancel({pointerId: id, intersection: null});
       if (this.renderer.domElement.hasPointerCapture(id)) this.renderer.domElement.releasePointerCapture(id);
     }
-    this.#drags.clear();
-    this.#pinch = null;
-    this.#angularVel.set(0, 0, 0);
-    this.#setHover(null);
+    let removedDrag = false;
+    for (const [id, drag] of this.#drags) {
+      if (device && drag.device !== device && !isDescendant(drag.hit?.intersection?.object, device.root)) continue;
+      this.#drags.delete(id);
+      removedDrag = true;
+      if (this.renderer.domElement.hasPointerCapture(id)) this.renderer.domElement.releasePointerCapture(id);
+    }
+    if (!device || removedDrag || device === this.device) {
+      this.#pinch = null;
+      this.#angularVel.set(0, 0, 0);
+    }
+    if (!device || (this.#hover && belongs(this.#hover))) this.#setHover(null);
     this.requestRender();
   }
 
@@ -546,14 +584,21 @@ export class DeviceViewer extends EventEmitter {
   }
 
   dispose() {
-    cancelAnimationFrame(this.#raf);
-    this.#resizeObserver.disconnect();
-    for (const off of this.#listeners) off();
-    for (const d of [...this.devices]) this.unmount(d);
-    this.scene.environment?.dispose();
-    this.renderer.dispose();
-    this.renderer.domElement.remove();
-    this.removeAllListeners();
+    if (this.#disposing || this.#disposed) return;
+    this.#disposing = true;
+    try {
+      cancelAnimationFrame(this.#raf);
+      this.#resizeObserver.disconnect();
+      for (const off of this.#listeners) off();
+      for (const d of [...this.devices]) this.unmount(d);
+      this.scene.environment?.dispose();
+      this.renderer.dispose();
+      this.renderer.domElement.remove();
+      this.removeAllListeners();
+    } finally {
+      this.#disposing = false;
+      this.#disposed = true;
+    }
   }
 }
 

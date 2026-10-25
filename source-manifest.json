@@ -1,6 +1,6 @@
 {
   "preparedAt": "2026-10-25T13:20:33.030Z",
-  "sourceCommit": "32ac318eb59bb13f313eaaeda3ed235fdae1c2bc",
+  "sourceCommit": "6e6d5e925de80508499c5680897e7084de5a7ee8",
   "scope": "Factual provenance only; no official reference binaries or MCP source text are included.",
   "upstreams": {
     "sticks3": {
@@ -778,6 +778,82 @@
           "95-pose checks include actual wire tube endpoints and sampled PCB/connector volume containment, not continuous collision proof, electrical behavior, hardware motion, cable physics or physical-device validation."
         ],
         "scope": "Front Power PCB follows pitch, lower Adapter follows yaw; seven physical visual wires cross pitch; rear mechanism remains open, base USB stays fixed. Hidden servo package/routing are appearance approximations."
+      },
+      "servoPackageReview": {
+        "sources": [
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1205/SCS0009.pdf",
+            "sha256": "b8ce3f28a8c12d2ad9dee697087eae03eb716219016b48be9a7e1856755213c6",
+            "bytes": 451290
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1255/A180_StackChanBody_model_size.pdf",
+            "sha256": "51f4f1b9cdc4290f8dc43fed005911f2da10b384305b73775d465aef2cfb26ee",
+            "bytes": 372982
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1255/A180_StackChan_Body_main_pictures_11.webp",
+            "sha256": "9079972d385ef1fb3e0f750fe6dfdf29797d805856a5cf66f4ba7fa1be237439",
+            "bytes": 34206
+          }
+        ],
+        "facts": [
+          {
+            "id": "official-servo-dimensions",
+            "source": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1205/SCS0009.pdf",
+            "page": 6,
+            "caseMm": [
+              23.3,
+              11,
+              25.25
+            ],
+            "overallEarEnvelopeMm": [
+              32.5,
+              12.1
+            ],
+            "shaftLengthMm": 3.2,
+            "gearCentreDistanceMm": 5.7,
+            "bodyCentreOffsetXmm": {
+              "value": 5.8,
+              "status": "drawing-derived, not an annotated dimension"
+            }
+          },
+          {
+            "id": "ear-topology",
+            "source": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1205/SCS0009.pdf",
+            "page": 6,
+            "fact": "The width 32.5 describes the envelope of two end tabs, not a 32.5 x 12.1 plate across the 23.3 x 11 case. Runtime now has independent front/rear tabs and open diameter-2 mounting holes.",
+            "holeXmm": [
+              -8.55,
+              19.95
+            ],
+            "nominalEarXEndsMm": [
+              -10.55,
+              21.95
+            ]
+          },
+          {
+            "id": "adapter-position-evidence",
+            "sources": [
+              "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1255/A180_StackChan_Body_main_pictures_05.webp",
+              "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1255/A180_StackChan_Body_main_pictures_09.webp",
+              "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1255/A180_StackChan_Body_main_pictures_11.webp",
+              "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1205/K151_stack_chan_main_pictures_09.webp"
+            ],
+            "status": "unconfirmed",
+            "fact": "Photos establish front Power PCB and a rear loom but conceal the Adapter installation plane, fasteners and board centre. The current horizontal seat remains a visual reconstruction."
+          }
+        ],
+        "limitations": [
+          "Strict motor-fit diagnostic remains unresolved; no manufacturing or complete interference claim.",
+          "Existing board/connector motion checks apply to the retained provisional cover and Adapter seats. A passed local check does not prove those seats match the physical assembly."
+        ],
+        "unmergedCandidates": [
+          "cover XY alignment exposes current Adapter conflict",
+          "cover Z seating conflicts with inferred battery envelope",
+          "motor axial shift opens unconfirmed shaft/arm gap"
+        ],
+        "scope": "ear-only runtime correction; incomplete hidden fit diagnosis"
       }
     },
     {
@@ -2269,6 +2345,6 @@
       }
     ]
   },
-  "updatedAt": "2026-10-25T15:07:49.738Z",
+  "updatedAt": "2026-10-25T15:43:10.485Z",
   "syncedAt": "2026-10-25T14:15:24.398Z"
 }

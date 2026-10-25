@@ -11,11 +11,12 @@ const node = (tag, text, className) => {
 
 /** The panel uses the same public component APIs as an external renderer. */
 export class DynamicsPanel {
-  constructor(container, {viewer, catalog, onGeometryChange}) {
+  constructor(container, {viewer, catalog, onGeometryChange, moduleLoader = loadGroveModule}) {
     this.container = container;
     this.viewer = viewer;
     this.catalog = catalog;
     this.onGeometryChange = onGeometryChange;
+    this.loadModule = moduleLoader;
     this.held = new Map();
     this.generation = 0;
     this.cleanups = [];
@@ -42,28 +43,27 @@ export class DynamicsPanel {
     this.$('#grove-connect').onclick = () => this.connect();
     this.$('#grove-disconnect').onclick = () => this.disconnect();
     this.$('#grove-port').onchange = () => { this.generation++; this.refreshConnection(); };
+    this.$('#grove-unit').onchange = () => { this.generation++; this.refreshConnection(); };
     this.$('#hold-button').onclick = () => {
       const button = this.model?.find(this.$('#inspect-button').value, 'button');
       if (button) { const key = `inspect:${button.path}`; this.held.set(key, button); button.press(key); }
     };
     this.$('#release-button').onclick = () => {
       const button = this.model?.find(this.$('#inspect-button').value, 'button');
-      if (button) { const key = `inspect:${button.path}`; button.release(key); this.held.delete(key); }
+      if (button) { const key = `inspect:${button.path}`; this.held.delete(key); button.release(key); }
     };
     this.$('#focus-button').onclick = () => this.viewer.focus(this.$('#inspect-button').value, {distance: 50});
     this.$('#inspect-button').onchange = () => { this.releaseAll(); this.refreshState(); };
     this.$('#led-target').onchange = () => this.refreshLedControls();
     this.$('#led-color').oninput = event => { this.led()?.set({color:event.target.value}); this.refreshState(); };
     this.$('#led-off').onclick = () => { this.led()?.set({brightness:0}); this.refreshState(); };
-    this.releaseAll = () => {
-      for (const [key, button] of this.held) (button.cancel ?? button.release).call(button, key);
-      this.held.clear();
-    };
+    this.releaseAll = () => this.releaseHeld(() => true);
+    this.onVisibilityChange = () => { if (document.hidden) this.releaseAll(); };
     window.addEventListener('blur', this.releaseAll);
-    document.addEventListener('visibilitychange', () => { if (document.hidden) this.releaseAll(); });
+    document.addEventListener('visibilitychange', this.onVisibilityChange);
     // Include the terminal frame: throttling only on render can leave a stale
     // nonzero readout forever once an on-demand viewer becomes idle.
-    viewer.on('render', () => this.refreshState());
+    this.offRender = viewer.on('render', () => this.refreshState());
   }
 
   bind(model, product) {
@@ -72,6 +72,12 @@ export class DynamicsPanel {
     this.product = product;
     this.events = [];
     this.$('#input-events').textContent = '等待操作…';
+    this.cleanups.push(model.on('module:will-detach', ({module}) => {
+      this.releaseHeld((key, button) => {
+        for (let object = button.object3d; object; object = object.parent) if (object === module.root) return true;
+        return false;
+      });
+    }));
     this.cleanups.push(model.on('input', event => {
       if (event.kind === 'port' && ['attach', 'detach'].includes(event.action)) {
         this.refreshConnection();
@@ -80,7 +86,7 @@ export class DynamicsPanel {
       }
       this.record(event);
     }));
-    this.refreshComponents();
+    this.refreshComponents({preserveSelection: false});
     const ports = [...model.components.values()].filter(c => c.kind === 'port' && c.connector === 'grove');
     this.$('#grove-port').replaceChildren(...ports.map(p => new Option(p.label + ' / ' + p.id, p.id)));
     this.$('#grove-connect').disabled = !ports.length;
@@ -106,12 +112,35 @@ export class DynamicsPanel {
     this.readouts = [];
   }
 
+  releaseHeld(matches) {
+    for (const [key, button] of [...this.held]) if (this.held.get(key) === button && matches(key, button)) {
+      // Clear ownership before cancel emits input: callbacks may rebuild the
+      // controls or detach a module synchronously.
+      this.held.delete(key);
+      (button.cancel ?? button.release).call(button, key);
+    }
+  }
+
+  dispose() {
+    this.unbind();
+    window.removeEventListener('blur', this.releaseAll);
+    document.removeEventListener('visibilitychange', this.onVisibilityChange);
+    this.offRender?.();
+    this.offRender = null;
+    this.container.replaceChildren();
+  }
+
   port() { return this.model?.find(this.$('#grove-port').value, 'port'); }
   led() { return this.model?.find(this.$('#led-target').value, 'led'); }
 
   refreshLedControls() {
     const led = this.led();
-    if (!led) return;
+    if (!led) {
+      const output = this.$('#led-state');
+      output.textContent = '';
+      delete output.dataset.state;
+      return;
+    }
     const state = led.getState(), percentage = Math.round(state.brightness * 100);
     this.$('#led-color').value = state.color;
     const brightness = this.$('#led-brightness');
@@ -124,32 +153,34 @@ export class DynamicsPanel {
   async connect() {
     const port = this.port();
     if (!port) return;
+    const model = this.model;
     const generation = ++this.generation;
+    let module = null;
     this.$('#grove-connect').disabled = true;
     this.$('#grove-status').textContent = '正在连接…';
     try {
       const id = this.$('#grove-unit').value;
-      const module = await loadGroveModule(id, {
+      module = await this.loadModule(id, {
         cableLength: 85, cable: {slack: 16, bend: [0, 0, -1]},
         ...(id === 'fan' ? {propeller: true} : {}),
       });
-      if (generation !== this.generation || !this.model) { module.dispose(); return; }
-      this.releaseAll();
+      if (generation !== this.generation || model !== this.model || port !== this.port()) return;
       port.attach(module);
+      module = null; // The port now owns disposal.
       this.refreshConnection();
       this.refreshComponents();
       this.onGeometryChange();
       this.viewer.fit({padding: 1.25});
     } catch (error) {
-      this.$('#grove-status').textContent = `连接失败：${error.message}`;
+      if (generation === this.generation && model === this.model) this.$('#grove-status').textContent = `连接失败：${error.message}`;
     } finally {
+      if (module && !module.attachedTo) module.dispose();
       if (generation === this.generation) this.$('#grove-connect').disabled = false;
     }
   }
 
   disconnect() {
     this.generation++;
-    this.releaseAll();
     this.port()?.detach();
     this.refreshConnection();
     this.refreshComponents();
@@ -192,8 +223,13 @@ export class DynamicsPanel {
     controls.append(fit);
   }
 
-  refreshComponents() {
-    this.releaseAll?.();
+  refreshComponents({preserveSelection = true} = {}) {
+    const previousInspection = preserveSelection ? this.$('#inspect-button').value : '';
+    const previousLed = preserveSelection ? this.$('#led-target').value : '';
+    const liveButtons = new Set(this.model.list('button'));
+    // Replaced DOM controls lose their pointer/key capture. A deliberate
+    // inspection hold stays down while its original button remains selected.
+    this.releaseHeld((key, button) => !liveButtons.has(button) || !key.startsWith('inspect:') || button.path !== previousInspection);
     this.readouts = [];
     const buttons = this.$('#button-controls'), joints = this.$('#joint-controls');
     buttons.replaceChildren(); joints.replaceChildren();
@@ -205,7 +241,7 @@ export class DynamicsPanel {
         el.onclick = () => { button.press('panel-switch'); button.release('panel-switch'); };
       } else {
         const begin = key => { this.held.set(key, button); button.press(key); el.setAttribute('aria-pressed', 'true'); };
-        const end = (key, cancelled = false) => { (cancelled ? button.cancel : button.release).call(button, key); this.held.delete(key); el.setAttribute('aria-pressed', 'false'); };
+        const end = (key, cancelled = false) => { this.held.delete(key); (cancelled ? button.cancel : button.release).call(button, key); el.setAttribute('aria-pressed', 'false'); };
         el.onpointerdown = event => {
           if (event.button !== 0) return;
           event.preventDefault(); el.setPointerCapture(event.pointerId);
@@ -233,6 +269,7 @@ export class DynamicsPanel {
     const pressButtons = this.model.list('button').filter(b => !b.latching && b.travel > 0);
     this.$('#button-inspection').hidden = !pressButtons.length;
     this.$('#inspect-button').replaceChildren(...pressButtons.map(b => new Option(`${b.label} / ${b.path}`, b.path)));
+    if (pressButtons.some(button => button.path === previousInspection)) this.$('#inspect-button').value = previousInspection;
     const allJoints = this.model.list('joint');
     this.$('#joint-section').hidden = !allJoints.length;
     for (const joint of allJoints) {
@@ -264,6 +301,7 @@ export class DynamicsPanel {
     const leds = this.model.list('led');
     this.$('#led-section').hidden = !leds.length;
     this.$('#led-target').replaceChildren(...leds.map(led => new Option(`${led.label} / ${led.path}`, led.path)));
+    if (leds.some(led => led.path === previousLed)) this.$('#led-target').value = previousLed;
     const brightness = this.$('#led-brightness-control');
     brightness.replaceChildren();
     if (leds.length) this.range(brightness, {id:'led-brightness',label:'亮度',min:0,max:100,step:1,value:leds[0].getState().brightness * 100,unit:'%',oninput:value=>this.led()?.set({brightness:value / 100})});

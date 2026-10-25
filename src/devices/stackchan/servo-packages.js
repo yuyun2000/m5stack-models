@@ -13,7 +13,15 @@ export function servoPackage(parent,{name,position,basis}){
  slab(group,23.3,11,4.65,.5,[5.8,0,-8.45],black,[],.06).name=`${name} gearbox shoulder`;
  const cap=new THREE.Shape();cap.absarc(0,0,5.5,Math.PI/2,Math.PI*1.5,false);cap.lineTo(5.7,-5.5);cap.absarc(5.7,0,5.5,Math.PI*1.5,Math.PI*2.5,false);cap.closePath();
  mesh(group,new THREE.ExtrudeGeometry(cap,{depth:3.8,bevelEnabled:false,curveSegments:36}),black,[0,0,-3.8],`${name} rounded gearbox cap`);
- slab(group,32.5,12.1,1.6,.6,[5.55,0,-8.45],black,[-8.55,19.8].map(cx=>({w:2,h:2,r:1,cx:cx-5.55})),.03).name=`${name} mounting ears`;
+ // The 32.5 x 12.1 measurement is the two-ear envelope, not a full-width
+ // rectangular plate across the 23.3 x 11 case. PDF p6 puts the ear holes at
+ // -8.55 and 5.7+14.25 relative to the output centre. The body-centre offset
+ // 5.8 remains drawing-derived rather than an annotated dimension.
+ for(const [side,min,max,hole]of [['front',-10.55,-5.85,-8.55],['rear',17.45,21.95,19.95]]){
+  const center=(min+max)/2;
+  const ear=slab(group,max-min,12.1,1.6,.6,[center,0,-8.45],black,[{w:2,h:2,r:1,cx:hole-center}],.03);ear.name=`${name} ${side} mounting ear`;
+  ear.userData={role:'servo-mounting-ear',envelopeMm:[32.5,12.1],holeXmm:hole,source:'SCS0009.pdf p6; end tabs, not a rectangular plate across the case'};
+ }
  const output=new THREE.Group();output.name=`${name} rotary output`;output.userData.role='rotary-output';group.add(output);
  mesh(output,new THREE.CylinderGeometry(1.975,1.975,3.2,40).rotateX(Math.PI/2),metal,[0,0,1.6],`${name} splined output`);
  for(let i=0;i<20;i++){const a=i*Math.PI/10;const tooth=mesh(output,new THREE.BoxGeometry(.12,.22,2.6),metal,[1.98*Math.cos(a),1.98*Math.sin(a),1.6],`${name} output spline`);tooth.rotation.z=a;}

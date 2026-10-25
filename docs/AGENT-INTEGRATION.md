@@ -140,8 +140,18 @@ host.dispose();      // 最终清理 geometry/material/timer。
 viewer.dispose();
 ```
 
+同一 Module 实例再次 `attach` 到原接口是幂等操作；挂到另一兼容接口时会从旧口安全转移，保留实例状态和资源。兼容性与循环挂载检查发生在装配变更前。同步生命周期回调不能重挂正在装卸的同一实例或正在挂载的目标口，应等当前调用结束后再发起下一次装配。默认 `detach()` 销毁实例；需要缓存时使用 `detach({dispose:false})`，最终由调用方销毁。
+
+拆卸前会沿原宿主链同步发出 `module:will-detach`，事件载荷为 `{port,module}`。此时旧路径和父子关系仍有效，适合取消将被移除子树中的外部输入；它是生命周期事件，不是新的 `input` action。查看器与 demo 只取消各自持有的输入，无关按钮继续保持。外部框架创建的 hold 应由该框架取消，并在更改父链前完成配对；取消使用 `button.cancel(source)`，不会产生 click。
+
+同一 Viewer 重复 `mount(host)` 不重复订阅或更新；跨 Viewer 挂载会先解除旧 Viewer 的归属。`unmount` 取消旧 Viewer 持有的键盘/指针输入，但不销毁模型。若下游缓存带有持续运动的模型，需自行决定卸载时是否 `set({rpm:0})`；demo 切换模型时会停止连续轴，返回缓存时保持停止。
+
+demo 的异步 Unit 加载在切换模型、接口或 Unit 后会作废旧请求，未挂载的过期实例会释放。连接刷新保留仍有效的按键检查位置和 LED 选位；DOM 控件被替换时取消其输入，明确的“保持按下”只在目标仍存在且仍被选中时保留。
+
 ## 修改后验证
 
 从仓库根目录运行 `npm run check`、`npm run build`、`./manage.sh status`。专项测试覆盖真实帽位移/方向/回位、固定根部弯曲、刚性杠杆、多键与多旋钮、稳定档位、多来源取消、关节父子装配、静止与终帧、目录内Unit线缆端点与默认姿态穿壳。另检查所有真实主机Grove口、CoreS3 DinBase及StackChan组合姿态中的插头坐标与渲染线管表面轨迹；覆盖数以当前生成报告为准。
+
+生命周期专项为 `scripts/check-port-lifecycle.mjs`、`scripts/check-viewer-lifecycle.mjs`、`scripts/check-demo-lifecycle.mjs`，已接入正常检查。Viewer 专项运行真实查看器与输入路由，以无 GPU renderer 和 DOM 边界替身检查所有权和取消顺序；这些替身不提供浏览器视觉证据。
 
 还需打开 demo，实际操作按键按住/回弹、模型快捷键与表单焦点、连接/断开、端点旋转、风叶转动、摇杆倾斜与按压、StackChan 组合姿态。Node 几何测试不能替代浏览器画面，也不能证明下游模拟器、真实硬件、机械配合或硬件限位正确。
