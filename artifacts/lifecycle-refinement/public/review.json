@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-10-25T15:47:49.071130+00:00",
+  "checkedAt": "2026-10-25T15:48:22.564372+00:00",
   "status": "pass",
   "scope": "Independent public source/attribution audit, normal check/build and browser lifecycle/StackChan review; hidden fit remains unresolved",
   "sourceCommit": "6e6d5e925de80508499c5680897e7084de5a7ee8",
-  "basePublicCommit": "20aff562ba203e1961800fff7e8a715b03990078",
+  "basePublicCommit": "37043b54451cbccb9f9e304c9f00a51796c1692c",
   "runtimeHashes": {
     "demo/dynamics.js": "8594ed220cff882e9605d9a273c10a1b747323dcd9341db475a1675299d5e88b",
     "demo/index.html": "595befce3c41879941862fc8dabb80f89f6aaadf09e3126b579f50bac1e029bf",
@@ -282,7 +282,12 @@
   "commands": {
     "npm run check": 0,
     "npm run build": 0,
-    "./manage.sh status": 0
+    "./manage.sh status": 0,
+    "strict servo diagnostic": {
+      "exitCode": 2,
+      "expected": "fit-unresolved",
+      "comparison": "all recorded numeric fields match independent public output"
+    }
   },
   "browserActions": "artifacts/lifecycle-refinement/public/actions.json",
   "browserLogs": [],

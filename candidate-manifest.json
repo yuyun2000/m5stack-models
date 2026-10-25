@@ -437,13 +437,26 @@
     }
   ],
   "originalEvidence": [
-    "artifacts/refinement/overview.jpg",
-    "artifacts/refinement/connections.jpg",
-    "artifacts/refinement/limit-press.gif",
-    "artifacts/motion-refinement/overview.jpg",
+    "artifacts/lifecycle-refinement/8encoder-selection.png",
+    "artifacts/lifecycle-refinement/cores3-key-detached.png",
+    "artifacts/lifecycle-refinement/fan-return-stopped.png",
+    "artifacts/lifecycle-refinement/public/8encoder-selection.png",
+    "artifacts/lifecycle-refinement/public/cores3-key-detached.png",
+    "artifacts/lifecycle-refinement/public/fan-return-stopped.png",
+    "artifacts/lifecycle-refinement/public/stackchan-back.png",
+    "artifacts/lifecycle-refinement/public/stackchan-bottom.png",
+    "artifacts/lifecycle-refinement/public/stackchan-env-posed.png",
+    "artifacts/lifecycle-refinement/public/stackchan-front.png",
+    "artifacts/lifecycle-refinement/public/stackchan-iso.png",
+    "artifacts/lifecycle-refinement/public/stackchan-left.png",
+    "artifacts/lifecycle-refinement/public/stackchan-rear-pitch90.png",
+    "artifacts/lifecycle-refinement/public/stackchan-right.png",
+    "artifacts/lifecycle-refinement/public/stackchan-top.png",
+    "artifacts/lifecycle-refinement/stackchan-env-posed.png",
+    "artifacts/lifecycle-refinement/stackchan-overview.jpg",
     "artifacts/motion-refinement/connections.jpg",
     "artifacts/motion-refinement/key-press.gif",
-    "artifacts/motion-refinement/stackchan-motion.gif",
+    "artifacts/motion-refinement/overview.jpg",
     "artifacts/motion-refinement/public/8encoder-back.png",
     "artifacts/motion-refinement/public/8encoder-bottom.png",
     "artifacts/motion-refinement/public/8encoder-external-state.png",
@@ -486,14 +499,13 @@
     "artifacts/motion-refinement/public/stackchan-right.png",
     "artifacts/motion-refinement/public/stackchan-top.png",
     "artifacts/motion-refinement/public/stackchan-yaw35-pitch35.png",
-    "artifacts/lifecycle-refinement/stackchan-overview.jpg",
-    "artifacts/lifecycle-refinement/8encoder-selection.png",
-    "artifacts/lifecycle-refinement/cores3-key-detached.png",
-    "artifacts/lifecycle-refinement/fan-return-stopped.png",
-    "artifacts/lifecycle-refinement/stackchan-env-posed.png",
+    "artifacts/motion-refinement/stackchan-motion.gif",
+    "artifacts/refinement/connections.jpg",
+    "artifacts/refinement/limit-press.gif",
+    "artifacts/refinement/overview.jpg",
     "artifacts/stackchan-servo-fit-check.json"
   ],
-  "verification": "artifacts/motion-refinement/public/review.json",
+  "verification": "artifacts/lifecycle-refinement/public/review.json",
   "published": true,
   "synchronizations": [
     {
@@ -661,7 +673,7 @@
       }
     }
   },
-  "previousVerification": "artifacts/candidate-verification.json",
+  "previousVerification": "artifacts/motion-refinement/public/review.json",
   "incrementalLifecycle": {
     "sourceCommit": "6e6d5e925de80508499c5680897e7084de5a7ee8",
     "changedFiles": [
