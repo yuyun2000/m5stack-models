@@ -19,32 +19,37 @@ export async function checkVisualMotion(){
  assert.throws(()=>joint.set({angleDeg:91}),RangeError);assert.throws(()=>joint.set({angleDeg:NaN}),TypeError);assert.throws(()=>joint.set({rpm:1}),RangeError);assert.throws(()=>joint.update(-1),RangeError);
  const before=joint.getState();assert.throws(()=>joint.set({angleDeg:10,durationMs:-1}));assert.deepEqual(joint.getState(),before,'invalid commands are atomic');unitHost.dispose();
 
- const {StackChan}=await import('../src/devices/stackchan/index.js');const stack=new StackChan();stack.root.updateMatrixWorld(true);
+ const {StackChan}=await import('../src/devices/stackchan/index.js');const stack=new StackChan();stack.update(0);stack.root.updateMatrixWorld(true);
  let headDisposals=0;stack.parts['head-shell'].geometry.addEventListener('dispose',()=>headDisposals++);
  const baseBefore=stack.parts.base.matrixWorld.clone(),usbBefore=stack.port('base-usb').object3d.matrixWorld.clone(),lcdBefore=stack.display('lcd').object3d.matrixWorld.clone();
  const neck=stack.parts['neck-cradle'],fittings=stack.root.getObjectByName('Neck lower rear fittings'),fittingsFrame=neck.matrixWorld.clone().invert().multiply(fittings.matrixWorld),fittingsBefore=fittings.matrixWorld.clone();
  const arm=stack.parts['pitch-servo-arm'],axisRay=new THREE.Raycaster(new THREE.Vector3(40,6.65,-2),new THREE.Vector3(-1,0,0));
  assert.equal(axisRay.intersectObject(arm,true).length,0,'official servo arm bore is coaxial with the selected pitch axis');
  assert.ok(new THREE.Raycaster(new THREE.Vector3(40,8.65,-2),new THREE.Vector3(-1,0,0)).intersectObject(arm,true).length>0,'official arm material surrounds the real bore');
+ const actual=stack.stackchanAssembly,powerFrame=stack.parts['head-shell'].matrixWorld.clone().invert().multiply(actual.rear.matrixWorld),adapterFrame=neck.matrixWorld.clone().invert().multiply(actual.adapter.matrixWorld);
  const pitch=stack.get('pitch'),yaw=stack.get('yaw');assert.equal(stack.update(.5),false,'StackChan does not move by itself');
  near(pitch.object3d.position.y,30.8,'pitch pivot relative to yaw preserves official Y6.65 axis');assert.ok(pitch.object3d.parent===yaw.object3d,'pitch is nested under horizontal yaw');
- stack.handle({type:'joint',target:'pitch',angleDeg:90});stack.root.updateMatrixWorld(true);assert.ok(direction(stack.display('lcd').object3d).distanceTo(new THREE.Vector3(0,1,0))<1e-6,'pitch lifts the screen towards +Y');
+ stack.handle({type:'joint',target:'pitch',angleDeg:90});stack.update(0);stack.root.updateMatrixWorld(true);assert.ok(direction(stack.display('lcd').object3d).distanceTo(new THREE.Vector3(0,1,0))<1e-6,'pitch lifts the screen towards +Y');
  assert.ok(stack.parts.base.matrixWorld.equals(baseBefore)&&stack.port('base-usb').object3d.matrixWorld.equals(usbBefore),'pitch leaves foot and base USB fixed');
- stack.handle({type:'joint',target:'pitch',angleDeg:30});stack.handle({type:'joint',target:'yaw',angleDeg:70});stack.root.updateMatrixWorld(true);
+ stack.handle({type:'joint',target:'pitch',angleDeg:30});stack.handle({type:'joint',target:'yaw',angleDeg:70});stack.update(0);stack.root.updateMatrixWorld(true);
  assert.ok(stack.parts.base.matrixWorld.equals(baseBefore)&&stack.port('base-usb').object3d.matrixWorld.equals(usbBefore),'yaw leaves foot and base USB fixed');
  assert.ok(!stack.display('lcd').object3d.matrixWorld.equals(lcdBefore),'head framebuffer moves with its housing');
  const headFrame=stack.parts['head-shell'].matrixWorld.clone().invert().multiply(stack.display('lcd').object3d.matrixWorld);
  const groveFrame=stack.parts['head-shell'].matrixWorld.clone().invert().multiply(stack.port('port-b').object3d.matrixWorld);
- stack.handle({type:'joint',target:'yaw',angleDeg:-130});stack.handle({type:'joint',target:'pitch',angleDeg:60});stack.root.updateMatrixWorld(true);
+ stack.handle({type:'joint',target:'yaw',angleDeg:-130});stack.handle({type:'joint',target:'pitch',angleDeg:60});stack.update(0);stack.root.updateMatrixWorld(true);
  const matrixNear=(a,b,why)=>assert.ok(a.elements.every((v,i)=>Math.abs(v-b.elements[i])<1e-6),why);
  matrixNear(neck.matrixWorld.clone().invert().multiply(fittings.matrixWorld),fittingsFrame,'lower rear fittings stay on the neck, independently of pitch');
+ matrixNear(stack.parts['head-shell'].matrixWorld.clone().invert().multiply(actual.rear.matrixWorld),powerFrame,'actual front Power PCB follows the pitching head');
+ matrixNear(neck.matrixWorld.clone().invert().multiply(actual.adapter.matrixWorld),adapterFrame,'Adapter and servo connectors stay on yaw neck');
+ for(let i=0;i<7;i++){const wire=actual.harness.wires[i],curve=wire.geometry.parameters.path;assert.ok(wire.localToWorld(curve.getPoint(0)).distanceTo(actual.rear.upperHarness.contacts[i].getWorldPosition(new THREE.Vector3()))<1e-6,'moving Power terminal holds upper loom end');assert.ok(wire.localToWorld(curve.getPoint(1)).distanceTo(actual.adapter.lowerHarness.contacts[i].getWorldPosition(new THREE.Vector3()))<1e-6,'yaw Adapter terminal holds lower loom end');}
+
  assert.ok(!fittings.matrixWorld.equals(fittingsBefore),'neck fittings move with horizontal yaw');
  matrixNear(stack.parts['head-shell'].matrixWorld.clone().invert().multiply(stack.display('lcd').object3d.matrixWorld),headFrame,'LCD remains rigidly mounted to head through combined yaw/pitch');
  matrixNear(stack.parts['head-shell'].matrixWorld.clone().invert().multiply(stack.port('port-b').object3d.matrixWorld),groveFrame,'Grove hit target follows its physical head socket');
  yaw.set({rpm:10});const oldYaw=yaw.angleDeg;stack.update(.25);near(yaw.angleDeg-oldYaw,15,'external yaw rpm integrates only the visual pose');yaw.set({rpm:0});
  for(const id of ['power','reset']){
   const button=stack.button(id),cap=button.cap.children[0];assert.ok(cap&&cap.name!=='hit-only','StackChan inherits the actual CoreS3 key cap');
-  const before=point(cap),axis=button.axis.clone().transformDirection(button.object3d.matrixWorld);button.press('motion-check');stack.update(1);stack.root.updateMatrixWorld(true);near(point(cap).sub(before).dot(axis),button.travel,'StackChan real key presses along the transformed head-local axis');button.release('motion-check');stack.update(1);stack.root.updateMatrixWorld(true);assert.ok(point(cap).distanceTo(before)<1e-6,'StackChan real key returns to its tilted rest position');
+  const before=point(cap),axis=button.axis.clone().transformDirection(button.object3d.matrixWorld);button.press('motion-check');stack.update(1);stack.update(0);stack.root.updateMatrixWorld(true);near(point(cap).sub(before).dot(axis),button.travel,'StackChan real key presses along the transformed head-local axis');button.release('motion-check');stack.update(1);stack.update(0);stack.root.updateMatrixWorld(true);assert.ok(point(cap).distanceTo(before)<1e-6,'StackChan real key returns to its tilted rest position');
  }stack.dispose();assert.equal(headDisposals,1,'Nested visual joints dispose the head shell exactly once');
 
  const results={};

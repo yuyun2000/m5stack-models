@@ -1,6 +1,6 @@
 # Grove cable and Unit pose API
 
-The same connection interface works with all 23 current Unit models. It adds appearance geometry and pose controls: two fitted HY2.0-4P cable plugs and four black/red/yellow/white wires. It does not add voltage, bus traffic, sensor readings or firmware behavior.
+The same connection interface works with every implemented Grove Unit in `catalog/products.json`. It adds appearance geometry and pose controls: two fitted HY2.0-4P cable plugs and four black/red/yellow/white wires. It does not add voltage, bus traffic, sensor readings or firmware behavior.
 
 ## Connect a Unit
 
@@ -59,6 +59,9 @@ The white plug has a controlled 1.2 mm mating nose, four open contact chambers, 
 
 ```sh
 node scripts/check-grove-cable.mjs
+node scripts/check-host-grove-assembly.mjs
 ```
 
-The script checks all 23 Units, actual rendered-wire endpoint rings, both plug frames, four-wire bend clearance, Unit pose/host rotation, insertion bounds, a real AtomS3R enclosure, nested rotated HUB attachment, preserved IDs/events, detach/reuse and cable-buffer disposal. It saves `artifacts/grove-cable-check.json`. Initial and moved configurations use physical rays against host/Unit geometry; the current result is 1164 endpoint checks and 6912 shell-clearance rays. Browser inspection and arbitrary downstream scene layouts remain separate checks.
+The first script enumerates every implemented Grove Unit and checks rendered-wire endpoint rings, both plug frames, four-wire bend clearance, Unit pose/host rotation, insertion bounds, real AtomS3R and Cardputer-ADV enclosures, nested rotated HUB attachment, preserved IDs/events, detach/reuse and cable-buffer disposal. Counts and results are saved in `artifacts/grove-cable-check.json`; its shell rays sample wire centerline segments.
+
+The second checks all actual source Grove interfaces on the requested hosts and CoreS3+DinBase, including StackChan at neutral, combined35-degree and pitch90-degree poses. Each case uses a real compact ENV III assembly. It samples eight rails on each rendered tube surface every two rings, prunes unrelated meshes with world-space boxes, then casts against actual mesh triangles in both directions. Its mating frames and sampled surface results are in `artifacts/host-grove-assembly-check.json`. This broadens real-enclosure coverage; it does not prove every target or arbitrary scene pose collision-free. Browser appearance and hardware fit remain separate checks.

@@ -31,6 +31,7 @@ export class DynamicsPanel {
         </section>
         <section><h4>按键与开关</h4><p class="control-note">按住查看行程，松开回弹；滑动开关保持档位。也可直接点击模型。</p><div id="button-controls" class="button-controls"></div><div id="button-inspection" class="button-inspection"><label>定格检查<select id="inspect-button"></select></label><div><button id="hold-button">保持按下</button><button id="release-button">弹起</button><button id="focus-button">近看</button></div><output id="button-travel"></output></div></section>
         <section id="joint-section" hidden><h4>可动部件</h4><p class="control-note">角度与转速由外部给定；这里的演示范围不代表硬件额定范围。</p><div id="joint-controls"></div></section>
+        <section id="led-section" hidden><h4>灯光外观</h4><p class="control-note">外部指定颜色和亮度，不与按键或设备状态自动联动。</p><div class="led-selects"><label>灯位<select id="led-target"></select></label><label>颜色<input id="led-color" type="color" aria-label="灯光颜色"></label></div><div id="led-brightness-control"></div><button id="led-off">熄灭</button><output id="led-state" class="led-state"></output></section>
         <section class="input-events"><h4>输入意图</h4><p class="control-note">点击模型后可用键盘；切换到表单会释放按键。</p><output id="input-events" aria-live="polite">等待操作…</output><details><summary>当前几何状态</summary><pre id="dynamic-state"></pre></details></section>
       </div>`;
     this.$ = selector => container.querySelector(selector);
@@ -51,6 +52,9 @@ export class DynamicsPanel {
     };
     this.$('#focus-button').onclick = () => this.viewer.focus(this.$('#inspect-button').value, {distance: 50});
     this.$('#inspect-button').onchange = () => { this.releaseAll(); this.refreshState(); };
+    this.$('#led-target').onchange = () => this.refreshLedControls();
+    this.$('#led-color').oninput = event => { this.led()?.set({color:event.target.value}); this.refreshState(); };
+    this.$('#led-off').onclick = () => { this.led()?.set({brightness:0}); this.refreshState(); };
     this.releaseAll = () => {
       for (const [key, button] of this.held) (button.cancel ?? button.release).call(button, key);
       this.held.clear();
@@ -103,6 +107,19 @@ export class DynamicsPanel {
   }
 
   port() { return this.model?.find(this.$('#grove-port').value, 'port'); }
+  led() { return this.model?.find(this.$('#led-target').value, 'led'); }
+
+  refreshLedControls() {
+    const led = this.led();
+    if (!led) return;
+    const state = led.getState(), percentage = Math.round(state.brightness * 100);
+    this.$('#led-color').value = state.color;
+    const brightness = this.$('#led-brightness');
+    if (brightness) { brightness.value = state.brightness * 100; brightness.nextElementSibling.textContent = `${percentage}%`; }
+    const output = this.$('#led-state');
+    output.textContent = `${state.color} · ${percentage}%`;
+    output.dataset.state = JSON.stringify(state);
+  }
 
   async connect() {
     const port = this.port();
@@ -244,6 +261,12 @@ export class DynamicsPanel {
       });
       group.append(reset, status); joints.append(group);
     }
+    const leds = this.model.list('led');
+    this.$('#led-section').hidden = !leds.length;
+    this.$('#led-target').replaceChildren(...leds.map(led => new Option(`${led.label} / ${led.path}`, led.path)));
+    const brightness = this.$('#led-brightness-control');
+    brightness.replaceChildren();
+    if (leds.length) this.range(brightness, {id:'led-brightness',label:'亮度',min:0,max:100,step:1,value:leds[0].getState().brightness * 100,unit:'%',oninput:value=>this.led()?.set({brightness:value / 100})});
     this.refreshState();
   }
 
@@ -271,13 +294,16 @@ export class DynamicsPanel {
   refreshState() {
     if (!this.model) return;
     for (const update of this.readouts) update();
+    this.refreshLedControls();
     const inspected = this.model.find(this.$('#inspect-button').value, 'button');
     if (inspected) {
       const output = this.$('#button-travel');
       const actuation = inspected.getActuationState();
+      const travel = Number(inspected.travel.toFixed(3));
+      const mechanism = {'flex-pad':'外壳弯曲',lever:'杠杆转动'}[inspected.meta.visualMotion] ?? '按压';
       output.textContent = inspected.meta.visualMotion
-        ? `视觉行程 ${actuation.depthMm.toFixed(3)} / ${inspected.travel} mm · ${inspected.meta.visualMotion}`
-        : `位移 ${inspected.cap.position.toArray().map(v => v.toFixed(3)).join(', ')} mm · 名义行程 ${inspected.travel} mm`;
+        ? `视觉行程 ${actuation.depthMm.toFixed(3)} / ${travel} mm · ${mechanism}`
+        : `位移 ${inspected.cap.position.toArray().map(v => v.toFixed(3)).join(', ')} mm · 名义行程 ${travel} mm`;
       output.dataset.settled = String(actuation.settled);
       output.dataset.pressed = String(inspected.pressed);
     }
@@ -285,6 +311,7 @@ export class DynamicsPanel {
     const state = {
       buttons: Object.fromEntries(this.model.list('button').map(b => [b.path, b.getState()])),
       joints: Object.fromEntries(this.model.list('joint').map(j => [j.path, j.getState()])),
+      leds: Object.fromEntries(this.model.list('led').map(led => [led.path, led.getState()])),
       ...(module ? {cable: module.get('cable').getState()} : {}),
     };
     this.$('#dynamic-state').textContent = JSON.stringify(state, null, 2);

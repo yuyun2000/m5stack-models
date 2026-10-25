@@ -1,7 +1,186 @@
 {
-  "checkedAt": "2026-10-25T14:13:55.529Z",
+  "checkedAt": "2026-10-25T15:10:03.111Z",
   "scope": "Actual control movement and externally driven visual kinematics; no hardware/runtime validation",
   "checks": [
+    {
+      "script": "scripts/check-host-grove-assembly.mjs",
+      "status": "pass",
+      "sourcePorts": 19,
+      "hostConfigurations": 15,
+      "cases": [
+        {
+          "host": "sticks3",
+          "port": "grove",
+          "unit": "env-iii",
+          "status": "pass"
+        },
+        {
+          "host": "cores3",
+          "port": "grove",
+          "unit": "env-iii",
+          "status": "pass"
+        },
+        {
+          "host": "stopwatch",
+          "port": "grove",
+          "unit": "env-iii",
+          "status": "pass"
+        },
+        {
+          "host": "cardputer-adv",
+          "port": "grove",
+          "unit": "env-iii",
+          "status": "pass"
+        },
+        {
+          "host": "cardputer-zero",
+          "port": "grove",
+          "unit": "env-iii",
+          "status": "pass"
+        },
+        {
+          "host": "core2",
+          "port": "grove",
+          "unit": "env-iii",
+          "status": "pass"
+        },
+        {
+          "host": "papercolor",
+          "port": "grove",
+          "unit": "env-iii",
+          "status": "pass"
+        },
+        {
+          "host": "nanoc6",
+          "port": "grove",
+          "unit": "env-iii",
+          "status": "pass"
+        },
+        {
+          "host": "stackchan",
+          "port": "grove",
+          "unit": "env-iii",
+          "yaw": 0,
+          "pitch": 0,
+          "status": "pass"
+        },
+        {
+          "host": "stackchan",
+          "port": "grove",
+          "unit": "env-iii",
+          "yaw": 35,
+          "pitch": 35,
+          "status": "pass"
+        },
+        {
+          "host": "stackchan",
+          "port": "grove",
+          "unit": "env-iii",
+          "yaw": 180,
+          "pitch": 90,
+          "status": "pass"
+        },
+        {
+          "host": "stackchan",
+          "port": "port-b",
+          "unit": "env-iii",
+          "yaw": 0,
+          "pitch": 0,
+          "status": "pass"
+        },
+        {
+          "host": "stackchan",
+          "port": "port-b",
+          "unit": "env-iii",
+          "yaw": 35,
+          "pitch": 35,
+          "status": "pass"
+        },
+        {
+          "host": "stackchan",
+          "port": "port-b",
+          "unit": "env-iii",
+          "yaw": 180,
+          "pitch": 90,
+          "status": "pass"
+        },
+        {
+          "host": "stackchan",
+          "port": "port-c",
+          "unit": "env-iii",
+          "yaw": 0,
+          "pitch": 0,
+          "status": "pass"
+        },
+        {
+          "host": "stackchan",
+          "port": "port-c",
+          "unit": "env-iii",
+          "yaw": 35,
+          "pitch": 35,
+          "status": "pass"
+        },
+        {
+          "host": "stackchan",
+          "port": "port-c",
+          "unit": "env-iii",
+          "yaw": 180,
+          "pitch": 90,
+          "status": "pass"
+        },
+        {
+          "host": "tab5",
+          "port": "grove",
+          "unit": "env-iii",
+          "status": "pass"
+        },
+        {
+          "host": "atoms3r",
+          "port": "grove",
+          "unit": "env-iii",
+          "status": "pass"
+        },
+        {
+          "host": "nesso-n1",
+          "port": "grove",
+          "unit": "env-iii",
+          "status": "pass"
+        },
+        {
+          "host": "stamplc",
+          "port": "port-a",
+          "unit": "env-iii",
+          "status": "pass"
+        },
+        {
+          "host": "stamplc",
+          "port": "port-c",
+          "unit": "env-iii",
+          "status": "pass"
+        },
+        {
+          "host": "cores3-din",
+          "port": "grove",
+          "unit": "env-iii",
+          "status": "pass"
+        },
+        {
+          "host": "cores3-din",
+          "port": "grove-c",
+          "unit": "env-iii",
+          "status": "pass"
+        },
+        {
+          "host": "cores3-din",
+          "port": "grove-b",
+          "unit": "env-iii",
+          "status": "pass"
+        }
+      ],
+      "matingChecks": 100,
+      "railSegments": 38400,
+      "scope": "All actual host Grove interfaces with a real compact Unit; sampled rendered tube-surface rails and mating transforms, including StackChan poses. Not an arbitrary-pose collision solver or hardware fit proof."
+    },
     {
       "script": "scripts/check-cardkb.mjs",
       "keys": 50,
@@ -29,6 +208,210 @@
       ],
       "groveTails": 4,
       "status": "pass"
+    },
+    {
+      "script": "scripts/check-key.mjs",
+      "status": "pass",
+      "sku": "U144",
+      "nativeShellMm": [
+        24,
+        40,
+        8
+      ],
+      "nominalMm": [
+        24,
+        40,
+        22.6
+      ],
+      "drawingMm": [
+        24,
+        40,
+        24.3
+      ],
+      "visibleMm": [
+        24,
+        40,
+        24.335
+      ],
+      "buttons": 1,
+      "travelMm": 1.6,
+      "travelEvidence": "visual estimate only",
+      "clearWallThicknessMm": 0.8,
+      "nativeClearance": [
+        {
+          "object": "Key circuit board with Grove clearance and physical bores",
+          "shell": "Key front shell",
+          "samples": 9450,
+          "insideByDirection": [
+            0,
+            0,
+            0
+          ],
+          "proof": "three-direction closed-shell parity"
+        },
+        {
+          "object": "Key circuit board with Grove clearance and physical bores",
+          "shell": "Key back shell",
+          "samples": 9450,
+          "insideByDirection": [
+            0,
+            0,
+            0
+          ],
+          "proof": "three-direction closed-shell parity"
+        },
+        {
+          "object": "Key fixed lower switch package with clear center",
+          "shell": "Key front shell",
+          "samples": 6000,
+          "insideByDirection": [
+            0,
+            0,
+            0
+          ],
+          "proof": "three-direction closed-shell parity"
+        },
+        {
+          "object": "Key fixed lower switch package with clear center",
+          "shell": "Key back shell",
+          "samples": 6000,
+          "insideByDirection": [
+            0,
+            0,
+            0
+          ],
+          "proof": "three-direction closed-shell parity"
+        },
+        {
+          "object": "Key fixed switch mounting flange",
+          "shell": "Key front shell",
+          "samples": 6000,
+          "insideByDirection": [
+            0,
+            0,
+            0
+          ],
+          "proof": "disjoint material-volume bounding boxes"
+        },
+        {
+          "object": "Key fixed switch mounting flange",
+          "shell": "Key back shell",
+          "samples": 6000,
+          "insideByDirection": [
+            0,
+            0,
+            0
+          ],
+          "proof": "disjoint material-volume bounding boxes"
+        },
+        {
+          "object": "Key clear switch enclosure with 0.8 mm walls",
+          "shell": "Key front shell",
+          "samples": 792,
+          "insideByDirection": [
+            0,
+            0,
+            0
+          ],
+          "proof": "disjoint material-volume bounding boxes"
+        },
+        {
+          "object": "Key clear switch enclosure with 0.8 mm walls",
+          "shell": "Key back shell",
+          "samples": 792,
+          "insideByDirection": [
+            0,
+            0,
+            0
+          ],
+          "proof": "disjoint material-volume bounding boxes"
+        },
+        {
+          "object": "Key fixed clear guide roof with real stem opening",
+          "shell": "Key front shell",
+          "samples": 6000,
+          "insideByDirection": [
+            0,
+            0,
+            0
+          ],
+          "proof": "disjoint material-volume bounding boxes"
+        },
+        {
+          "object": "Key fixed clear guide roof with real stem opening",
+          "shell": "Key back shell",
+          "samples": 6000,
+          "insideByDirection": [
+            0,
+            0,
+            0
+          ],
+          "proof": "disjoint material-volume bounding boxes"
+        }
+      ],
+      "actuator": {
+        "status": "pass",
+        "buttons": 1,
+        "momentary": 1,
+        "latching": 0,
+        "capacitive": 0,
+        "visibleSurfaceRays": 2,
+        "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
+      },
+      "scope": "Real runtime geometry/clearance, visible cap motion and independent external RGB; original-source, browser and hardware validation separate"
+    },
+    {
+      "script": "scripts/check-8encoder.mjs",
+      "checkedAt": "2026-10-25T15:09:59.211Z",
+      "status": "pass",
+      "scope": "Appearance/geometry/input intent only; no encoder count, electrical or firmware simulation",
+      "sku": "U153",
+      "meshes": 245,
+      "rays": 46,
+      "selectedNativeTriangles": 11508,
+      "visualEnvelopeMm": [
+        24,
+        128,
+        25.000000011920932
+      ],
+      "cadEnvelopeMm": [
+        24,
+        128,
+        10
+      ],
+      "pcbShellClearance": {
+        "closedNativeShells": 2,
+        "uniqueSurfaceAndVolumePoints": 29939,
+        "materialGridColumns": 9001,
+        "zPlanes": [
+          -2.5980000000000003,
+          -2.1999999940395356,
+          -1.8019999880790711
+        ],
+        "containmentChecks": 59878,
+        "sideNotchRadiusMm": 4.2,
+        "centralClearanceRadiusMm": 3.3,
+        "endY": 60,
+        "scope": "Sampled native-solid exclusion; concealed PCB outline and narrow bridges inferred for appearance, not manufacturing validation"
+      },
+      "channels": 8,
+      "pressControls": 8,
+      "continuousVisualJoints": 8,
+      "latchingSwitches": 1,
+      "externalRgb": 9,
+      "checks": [
+        "real shell pair and exact envelope",
+        "native light/Grove/LEGO/service apertures",
+        "closed-shell PCB surface and volume containment sampling",
+        "narrow PCB with valid open notches and shell clearance",
+        "independent press and rotation paths",
+        "outward cap normals",
+        "blind shaft cavities and press clearance",
+        "stable switch detents",
+        "externally driven RGB only",
+        "nested rotated Grove pose",
+        "exactly-once mesh geometry disposal"
+      ]
     },
     {
       "script": "scripts/check-unit-actuators.mjs",

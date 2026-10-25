@@ -42,3 +42,5 @@ export {Model as BuzzerUnit,GroveModule as BuzzerUnitModule} from './units/buzze
 export {Model as FanUnit,GroveModule as FanUnitModule} from './units/fan/index.js';
 export {Model as LimitUnit,GroveModule as LimitUnitModule} from './units/limit/index.js';
 export {Model as CardKBUnit,GroveModule as CardKBUnitModule} from './units/cardkb/index.js';
+export {Model as KeyUnit,GroveModule as KeyUnitModule} from './units/key/index.js';
+export {Model as EightEncoderUnit,GroveModule as EightEncoderUnitModule} from './units/8encoder/index.js';

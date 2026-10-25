@@ -58,6 +58,9 @@ type JointState = {
 | Encoder `rotation` | 整个带肋旋钮绕+Z转 | 连续轴；保留原 `press` 真帽压放；demo≤60rpm |
 | Angle `rotation` | 电位器旋钮绕+Z转，底座不动 | 仅绝对角度；viewer建议−150…150°；官方机械总转角/零位未确认 |
 | Joystick `tilt-x`, `tilt-y` | 真实摇杆/帽在座口附近分别绕X/Y倾斜 | viewer建议每轴−20…20°；实际机械限位未确认；原 `press` 沿倾斜后的杆轴压放 |
+| 8Encoder `rotation-1`…`rotation-8` | 八个独立带肋空心旋钮绕+Z转 | 连续外驱；各自 `press-1`…`press-8` 沿局部−Z压放0.35 mm，行程为外观估计 |
+
+StackChan前侧Power板属于pitch，下端Adapter属于yaw，七根实体线束的两端跟随各自装配坐标。后部真实开放，底座USB保持固定。隐藏舵机包装和线束路线为外观近似，不声明实物制造配合。
 
 旋钮/摇杆按压继续使用既有 Button API，例如 `button('press').press('framework')` 与对应 `release('framework')`。按钮记录的是输入意图和帽的位置，不生成编码器脉冲、摇杆ADC或按键寄存器。StackChan的 `power`/`reset` 保留原ID，继承CoreS3真正的可动帽并跟随头部姿态。
 
@@ -66,6 +69,8 @@ type JointState = {
 Button U027直接分离原CAD的10.2 mm按压片，保留U形开口和三条凹槽；固定根部不动，自由端向内弯曲0.35 mm。这个平滑形变只描述外观，不计算塑料刚度。Dual Button U025使用直径11.5 mm、3 mm高的闭合实体彩帽，两中心相隔14 mm；官方机械图区分8 mm基壳、12 mm白座、15 mm含帽总厚，0.35 mm按压行程为估计。
 
 Limit U145的16 mm金属柄绕固定Z铰链转动，并带动接触柱。静止8°到按下0°是照片推导的观察姿态，尚未获额定行程机械图确认。它是 `Button` 子类，调用 `button('press').press(source)` / `release(source)`；`getState().leverAngleDeg` 仅表示当前视觉角度。
+
+Key U144 的红色空心键帽与青色轴芯同属 `press`，沿−Z压放1.6 mm；透明固定轴壳保持不动。该行程为外观估计。8Encoder各帽在真实盲轴孔上独立压放，`switch` 是保持档位的滑块；两款RGB均由外部单独指定，不随按压改变。
 
 上述非直线组件继承多来源持有、取消和嵌套寻址。用 `getActuationState()` 读取 `{depthMm,targetDepthMm,settled}`：depth是供外观插值的标量，杠杆会把它换算成弧形姿态，因此不能把 `cap.position` 当成统一运动测量。检查见 `scripts/check-unit-actuators.mjs`、`scripts/check-limit-lever.mjs` 和 `scripts/check-cardkb.mjs`。
 
@@ -85,7 +90,7 @@ joint.adopt(capGroup); // mount之后，将中性姿态实体归到轴下；保�
 
 ## 依据与验证
 
-StackChan轴线/分组与联接件的事实来源见 `source-manifest.json` 的 `motionStructures`，变换记录为 `src/devices/stackchan/cad-map-motion.json`。Angle/Joystick的精确机械限位和硬件零位仍未确认；公开版不包含私有研究原文。
+StackChan轴线/分组与联接件的事实来源见 `source-manifest.json` 的 `motionStructures` 与 StackChan 产品的 `movingAssembly`，变换记录为 `src/devices/stackchan/cad-map-motion.json`。Angle/Joystick的精确机械限位和硬件零位仍未确认。
 
 ```sh
 node scripts/check-visual-motion.mjs

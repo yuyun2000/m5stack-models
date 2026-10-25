@@ -38,7 +38,9 @@ const bindings={
   "buzzer": {load:()=>import("./units/buzzer/index.js"),exportName:"Model",moduleExport:"GroveModule"},
   "fan": {load:()=>import("./units/fan/index.js"),exportName:"Model",moduleExport:"GroveModule"},
   "limit": {load:()=>import("./units/limit/index.js"),exportName:"Model",moduleExport:"GroveModule"},
-  "cardkb": {load:()=>import("./units/cardkb/index.js"),exportName:"Model",moduleExport:"GroveModule"}
+  "cardkb": {load:()=>import("./units/cardkb/index.js"),exportName:"Model",moduleExport:"GroveModule"},
+  "key": {load:()=>import("./units/key/index.js"),exportName:"Model",moduleExport:"GroveModule"},
+  "8encoder": {load:()=>import("./units/8encoder/index.js"),exportName:"Model",moduleExport:"GroveModule"}
 };
 export const implementedModelIds=Object.freeze(Object.keys(bindings));
 export async function loadModelClass(id){const b=bindings[id];if(!b)throw new Error('Visual model is not implemented: '+id);return (await b.load())[b.exportName];}

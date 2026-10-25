@@ -1,0 +1,38 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U144_Unit_Key/Structures/Unit_Key.stl",
+  "origin": [
+    14.100000381469727,
+    -1,
+    -20
+  ],
+  "axes": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      -1,
+      0
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "Key back shell",
+      "material": "shell"
+    },
+    {
+      "component": 2,
+      "name": "Key front shell",
+      "material": "shell"
+    }
+  ],
+  "notes": "Select the native assembled pair 0/2 only. Displaced duplicates 1/3 are excluded. Official STL contains no keycap, switch, PCB or Grove subassemblies; reconstruct those from the U144 mechanical drawing and photos."
+}

@@ -28,8 +28,16 @@ for(const [script,id,exportName]of [
  try{const result=test(model);checks.push({script:`scripts/${script}`,product:id,...result});console.log(`PASS ${id} assembly:`,JSON.stringify(result));}finally{model.dispose();}
 }
 const dynamics=[];
+const {checkHostGroveAssembly}=await import('./check-host-grove-assembly.mjs');
+const hostGroveReport=await checkHostGroveAssembly();
+await fs.writeFile(new URL('../artifacts/host-grove-assembly-check.json',import.meta.url),JSON.stringify({checkedAt:new Date().toISOString(),...hostGroveReport},null,2)+'\n');
+dynamics.push({script:'scripts/check-host-grove-assembly.mjs',...hostGroveReport});
 const {checkCardKB}=await import('./check-cardkb.mjs');
 dynamics.push({script:'scripts/check-cardkb.mjs',...await checkCardKB()});
+const {checkKey}=await import('./check-key.mjs');
+dynamics.push({script:'scripts/check-key.mjs',...await checkKey()});
+const {checkEightEncoder}=await import('./check-8encoder.mjs');
+dynamics.push({script:'scripts/check-8encoder.mjs',...await checkEightEncoder()});
 const {checkUnitActuators}=await import('./check-unit-actuators.mjs');
 dynamics.push({script:'scripts/check-unit-actuators.mjs',...await checkUnitActuators()});
 const {checkButtonActuation}=await import('./check-button-actuation.mjs');

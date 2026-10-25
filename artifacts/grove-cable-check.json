@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-10-25T14:13:46.218Z",
+  "checkedAt": "2026-10-25T15:09:08.074Z",
   "scope": "visual cable geometry and public assembly API; no electrical or bus simulation",
   "status": "pass",
-  "unitCount": 25,
-  "endpointChecks": 1284,
-  "collisionRays": 7680,
+  "unitCount": 27,
+  "endpointChecks": 1380,
+  "collisionRays": 8256,
   "reports": [
     {
       "id": "env-iii",
@@ -130,6 +130,16 @@
       "id": "cardkb",
       "status": "pass",
       "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "key",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "8encoder",
+      "status": "pass",
+      "initialFaceDistanceMm": 35.00000000000001
     }
   ],
   "additional": [

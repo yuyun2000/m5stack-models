@@ -1,0 +1,775 @@
+[
+  {
+    "model": "key",
+    "action": "rest",
+    "travel": "位移 0.000, 0.000, 0.000 mm · 名义行程 1.6 mm"
+  },
+  {
+    "model": "key",
+    "action": "pressed",
+    "travel": "位移 0.000, 0.000, -1.600 mm · 名义行程 1.6 mm"
+  },
+  {
+    "model": "key",
+    "action": "released",
+    "travel": "位移 0.000, 0.000, 0.000 mm · 名义行程 1.6 mm"
+  },
+  {
+    "model": "key",
+    "action": "external-led-and-motion",
+    "state": {
+      "buttons": {
+        "press": {
+          "pressed": false
+        }
+      },
+      "joints": {},
+      "leds": {
+        "rgb": {
+          "color": "#22b477",
+          "brightness": 0.4
+        }
+      }
+    }
+  },
+  {
+    "model": "8encoder",
+    "action": "rest",
+    "travel": "视觉行程 0.000 / 0.35 mm · 按压"
+  },
+  {
+    "model": "8encoder",
+    "action": "pressed",
+    "travel": "视觉行程 0.350 / 0.35 mm · 按压"
+  },
+  {
+    "model": "8encoder",
+    "action": "released",
+    "travel": "视觉行程 0.000 / 0.35 mm · 按压"
+  },
+  {
+    "model": "8encoder",
+    "action": "external-led-and-motion",
+    "state": {
+      "buttons": {
+        "press-1": {
+          "pressed": false
+        },
+        "press-2": {
+          "pressed": false
+        },
+        "press-3": {
+          "pressed": false
+        },
+        "press-4": {
+          "pressed": false
+        },
+        "press-5": {
+          "pressed": false
+        },
+        "press-6": {
+          "pressed": false
+        },
+        "press-7": {
+          "pressed": false
+        },
+        "press-8": {
+          "pressed": false
+        },
+        "switch": {
+          "pressed": false,
+          "position": 1,
+          "latching": true
+        }
+      },
+      "joints": {
+        "rotation-1": {
+          "angleDeg": 180,
+          "targetAngleDeg": 180,
+          "rpm": 0,
+          "transitioning": false,
+          "mode": "continuous",
+          "continuous": true,
+          "rangeDeg": null,
+          "visualRangeDeg": null,
+          "demoRpmMax": 60
+        },
+        "rotation-2": {
+          "angleDeg": 0,
+          "targetAngleDeg": 0,
+          "rpm": 0,
+          "transitioning": false,
+          "mode": "continuous",
+          "continuous": true,
+          "rangeDeg": null,
+          "visualRangeDeg": null,
+          "demoRpmMax": 60
+        },
+        "rotation-3": {
+          "angleDeg": 0,
+          "targetAngleDeg": 0,
+          "rpm": 0,
+          "transitioning": false,
+          "mode": "continuous",
+          "continuous": true,
+          "rangeDeg": null,
+          "visualRangeDeg": null,
+          "demoRpmMax": 60
+        },
+        "rotation-4": {
+          "angleDeg": 0,
+          "targetAngleDeg": 0,
+          "rpm": 0,
+          "transitioning": false,
+          "mode": "continuous",
+          "continuous": true,
+          "rangeDeg": null,
+          "visualRangeDeg": null,
+          "demoRpmMax": 60
+        },
+        "rotation-5": {
+          "angleDeg": 0,
+          "targetAngleDeg": 0,
+          "rpm": 0,
+          "transitioning": false,
+          "mode": "continuous",
+          "continuous": true,
+          "rangeDeg": null,
+          "visualRangeDeg": null,
+          "demoRpmMax": 60
+        },
+        "rotation-6": {
+          "angleDeg": 0,
+          "targetAngleDeg": 0,
+          "rpm": 0,
+          "transitioning": false,
+          "mode": "continuous",
+          "continuous": true,
+          "rangeDeg": null,
+          "visualRangeDeg": null,
+          "demoRpmMax": 60
+        },
+        "rotation-7": {
+          "angleDeg": 0,
+          "targetAngleDeg": 0,
+          "rpm": 0,
+          "transitioning": false,
+          "mode": "continuous",
+          "continuous": true,
+          "rangeDeg": null,
+          "visualRangeDeg": null,
+          "demoRpmMax": 60
+        },
+        "rotation-8": {
+          "angleDeg": 0,
+          "targetAngleDeg": 0,
+          "rpm": 0,
+          "transitioning": false,
+          "mode": "continuous",
+          "continuous": true,
+          "rangeDeg": null,
+          "visualRangeDeg": null,
+          "demoRpmMax": 60
+        }
+      },
+      "leds": {
+        "rgb-1": {
+          "color": "#ff2020",
+          "brightness": 0
+        },
+        "rgb-2": {
+          "color": "#ff2020",
+          "brightness": 0
+        },
+        "rgb-3": {
+          "color": "#ff2020",
+          "brightness": 0
+        },
+        "rgb-4": {
+          "color": "#ff2020",
+          "brightness": 0
+        },
+        "rgb-5": {
+          "color": "#ff2020",
+          "brightness": 0
+        },
+        "rgb-6": {
+          "color": "#ff2020",
+          "brightness": 0
+        },
+        "rgb-7": {
+          "color": "#ff2020",
+          "brightness": 0
+        },
+        "rgb-8": {
+          "color": "#ff2020",
+          "brightness": 0
+        },
+        "rgb-9": {
+          "color": "#22b477",
+          "brightness": 0.4
+        }
+      }
+    }
+  },
+  {
+    "model": "stackchan",
+    "action": "combined-pose",
+    "state": {
+      "buttons": {
+        "power": {
+          "pressed": false
+        },
+        "reset": {
+          "pressed": false
+        }
+      },
+      "joints": {
+        "pitch": {
+          "angleDeg": 35,
+          "targetAngleDeg": 35,
+          "rpm": 0,
+          "transitioning": false,
+          "mode": "position",
+          "continuous": false,
+          "rangeDeg": [
+            0,
+            90
+          ],
+          "visualRangeDeg": null,
+          "demoRpmMax": 0
+        },
+        "yaw": {
+          "angleDeg": 35,
+          "targetAngleDeg": 35,
+          "rpm": 0,
+          "transitioning": false,
+          "mode": "continuous",
+          "continuous": true,
+          "rangeDeg": null,
+          "visualRangeDeg": null,
+          "demoRpmMax": 20
+        }
+      },
+      "leds": {}
+    }
+  },
+  {
+    "model": "stackchan",
+    "action": "visible-side-power-rest",
+    "travel": "位移 0.000, 0.000, 0.000 mm · 名义行程 0.18 mm"
+  },
+  {
+    "model": "stackchan",
+    "action": "visible-side-power-pressed",
+    "travel": "位移 0.000, 0.000, -0.180 mm · 名义行程 0.18 mm"
+  },
+  {
+    "model": "stackchan",
+    "action": "visible-side-power-released",
+    "travel": "位移 0.000, 0.000, 0.000 mm · 名义行程 0.18 mm"
+  },
+  {
+    "host": "atoms3r",
+    "unit": "key",
+    "action": "nested-press",
+    "travel": "位移 0.000, 0.000, -1.600 mm · 名义行程 1.6 mm",
+    "events": "grove/press · down · inspect:grove/press\ngrove · attach"
+  },
+  {
+    "host": "atoms3r",
+    "unit": "key",
+    "action": "nested-external-state",
+    "state": {
+      "buttons": {
+        "grove/press": {
+          "pressed": false
+        },
+        "button": {
+          "pressed": false
+        },
+        "reset": {
+          "pressed": false
+        }
+      },
+      "joints": {},
+      "leds": {
+        "grove/rgb": {
+          "color": "#22b477",
+          "brightness": 0.4
+        }
+      },
+      "cable": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    }
+  },
+  {
+    "host": "atoms3r",
+    "unit": "key",
+    "action": "disconnect",
+    "status": "尚未连接"
+  },
+  {
+    "host": "cores3",
+    "unit": "8encoder",
+    "action": "nested-press",
+    "travel": "视觉行程 0.350 / 0.35 mm · 按压",
+    "events": "grove/press-8 · down · inspect:grove/press-8\ngrove · attach"
+  },
+  {
+    "host": "cores3",
+    "unit": "8encoder",
+    "action": "nested-external-state",
+    "state": {
+      "buttons": {
+        "grove/press-1": {
+          "pressed": false
+        },
+        "grove/press-2": {
+          "pressed": false
+        },
+        "grove/press-3": {
+          "pressed": false
+        },
+        "grove/press-4": {
+          "pressed": false
+        },
+        "grove/press-5": {
+          "pressed": false
+        },
+        "grove/press-6": {
+          "pressed": false
+        },
+        "grove/press-7": {
+          "pressed": false
+        },
+        "grove/press-8": {
+          "pressed": false
+        },
+        "grove/switch": {
+          "pressed": false,
+          "position": 1,
+          "latching": true
+        },
+        "power": {
+          "pressed": false
+        },
+        "reset": {
+          "pressed": false
+        }
+      },
+      "joints": {
+        "grove/rotation-1": {
+          "angleDeg": 0,
+          "targetAngleDeg": 0,
+          "rpm": 0,
+          "transitioning": false,
+          "mode": "continuous",
+          "continuous": true,
+          "rangeDeg": null,
+          "visualRangeDeg": null,
+          "demoRpmMax": 60
+        },
+        "grove/rotation-2": {
+          "angleDeg": 0,
+          "targetAngleDeg": 0,
+          "rpm": 0,
+          "transitioning": false,
+          "mode": "continuous",
+          "continuous": true,
+          "rangeDeg": null,
+          "visualRangeDeg": null,
+          "demoRpmMax": 60
+        },
+        "grove/rotation-3": {
+          "angleDeg": 0,
+          "targetAngleDeg": 0,
+          "rpm": 0,
+          "transitioning": false,
+          "mode": "continuous",
+          "continuous": true,
+          "rangeDeg": null,
+          "visualRangeDeg": null,
+          "demoRpmMax": 60
+        },
+        "grove/rotation-4": {
+          "angleDeg": 0,
+          "targetAngleDeg": 0,
+          "rpm": 0,
+          "transitioning": false,
+          "mode": "continuous",
+          "continuous": true,
+          "rangeDeg": null,
+          "visualRangeDeg": null,
+          "demoRpmMax": 60
+        },
+        "grove/rotation-5": {
+          "angleDeg": 0,
+          "targetAngleDeg": 0,
+          "rpm": 0,
+          "transitioning": false,
+          "mode": "continuous",
+          "continuous": true,
+          "rangeDeg": null,
+          "visualRangeDeg": null,
+          "demoRpmMax": 60
+        },
+        "grove/rotation-6": {
+          "angleDeg": 0,
+          "targetAngleDeg": 0,
+          "rpm": 0,
+          "transitioning": false,
+          "mode": "continuous",
+          "continuous": true,
+          "rangeDeg": null,
+          "visualRangeDeg": null,
+          "demoRpmMax": 60
+        },
+        "grove/rotation-7": {
+          "angleDeg": 0,
+          "targetAngleDeg": 0,
+          "rpm": 0,
+          "transitioning": false,
+          "mode": "continuous",
+          "continuous": true,
+          "rangeDeg": null,
+          "visualRangeDeg": null,
+          "demoRpmMax": 60
+        },
+        "grove/rotation-8": {
+          "angleDeg": 90,
+          "targetAngleDeg": 90,
+          "rpm": 0,
+          "transitioning": false,
+          "mode": "continuous",
+          "continuous": true,
+          "rangeDeg": null,
+          "visualRangeDeg": null,
+          "demoRpmMax": 60
+        }
+      },
+      "leds": {
+        "grove/rgb-1": {
+          "color": "#ff2020",
+          "brightness": 0
+        },
+        "grove/rgb-2": {
+          "color": "#ff2020",
+          "brightness": 0
+        },
+        "grove/rgb-3": {
+          "color": "#ff2020",
+          "brightness": 0
+        },
+        "grove/rgb-4": {
+          "color": "#ff2020",
+          "brightness": 0
+        },
+        "grove/rgb-5": {
+          "color": "#ff2020",
+          "brightness": 0
+        },
+        "grove/rgb-6": {
+          "color": "#ff2020",
+          "brightness": 0
+        },
+        "grove/rgb-7": {
+          "color": "#ff2020",
+          "brightness": 0
+        },
+        "grove/rgb-8": {
+          "color": "#ff2020",
+          "brightness": 0
+        },
+        "grove/rgb-9": {
+          "color": "#22b477",
+          "brightness": 0.4
+        }
+      },
+      "cable": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    }
+  },
+  {
+    "host": "cores3",
+    "unit": "8encoder",
+    "action": "disconnect",
+    "status": "尚未连接"
+  },
+  {
+    "model": "stackchan",
+    "action": "Grove-moving-pose",
+    "state": {
+      "buttons": {
+        "power": {
+          "pressed": false
+        },
+        "reset": {
+          "pressed": false
+        }
+      },
+      "joints": {
+        "pitch": {
+          "angleDeg": 35,
+          "targetAngleDeg": 35,
+          "rpm": 0,
+          "transitioning": false,
+          "mode": "position",
+          "continuous": false,
+          "rangeDeg": [
+            0,
+            90
+          ],
+          "visualRangeDeg": null,
+          "demoRpmMax": 0
+        },
+        "yaw": {
+          "angleDeg": 35,
+          "targetAngleDeg": 35,
+          "rpm": 0,
+          "transitioning": false,
+          "mode": "continuous",
+          "continuous": true,
+          "rangeDeg": null,
+          "visualRangeDeg": null,
+          "demoRpmMax": 20
+        }
+      },
+      "leds": {},
+      "cable": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    }
+  },
+  {
+    "model": "stackchan",
+    "action": "Grove-pitch90",
+    "state": {
+      "buttons": {
+        "power": {
+          "pressed": false
+        },
+        "reset": {
+          "pressed": false
+        }
+      },
+      "joints": {
+        "pitch": {
+          "angleDeg": 90,
+          "targetAngleDeg": 90,
+          "rpm": 0,
+          "transitioning": false,
+          "mode": "position",
+          "continuous": false,
+          "rangeDeg": [
+            0,
+            90
+          ],
+          "visualRangeDeg": null,
+          "demoRpmMax": 0
+        },
+        "yaw": {
+          "angleDeg": 35,
+          "targetAngleDeg": 35,
+          "rpm": 0,
+          "transitioning": false,
+          "mode": "continuous",
+          "continuous": true,
+          "rangeDeg": null,
+          "visualRangeDeg": null,
+          "demoRpmMax": 20
+        }
+      },
+      "leds": {},
+      "cable": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    }
+  }
+]

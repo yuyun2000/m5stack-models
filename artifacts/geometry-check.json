@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-25T14:13:35.560Z",
+  "checkedAt": "2026-10-25T15:08:13.036Z",
   "scope": "model geometry/API only; not hardware or external emulator proof",
   "products": [
     {
@@ -66,7 +66,7 @@
     },
     {
       "id": "stackchan",
-      "meshes": 346,
+      "meshes": 493,
       "closureRays": 0,
       "status": "pass"
     },
@@ -242,6 +242,18 @@
       "id": "cardkb",
       "meshes": 689,
       "closureRays": 10,
+      "status": "pass"
+    },
+    {
+      "id": "key",
+      "meshes": 44,
+      "closureRays": 1,
+      "status": "pass"
+    },
+    {
+      "id": "8encoder",
+      "meshes": 245,
+      "closureRays": 2,
       "status": "pass"
     }
   ]

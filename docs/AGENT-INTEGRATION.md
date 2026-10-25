@@ -47,6 +47,10 @@ host.handle({type: 'release', target: 'btnA'});
 
 CardKB v1.1（U035-B）有50个独立实体按钮，例如 `key-q`、`key-1`、`key-esc`、`key-up`；挂载后使用 `grove/key-q`。本层只发送各键按压意图，下游负责矩阵扫描、字符、组合键及I2C字节。它不是CardKB2。Cardputer-ADV新增 `grove-power` 两档滑块，只同步Grove供电方向选择器的外观，不切换任何电气状态。
 
+Unit Key U144 使用 `press` 和独立的 `rgb`。红色空心键帽与轴芯一起压放，1.6 mm 行程是外观估计。官方规格表总高22.6 mm与机械图24.3 mm冲突，两者均保留，当前可见外形依据机械图。
+
+Unit 8Encoder U153 使用 `rotation-1`…`rotation-8`、`press-1`…`press-8`、稳定档位 `switch` 及 `rgb-1`…`rgb-9`。CH1靠Grove端，CH8靠开关端。0.35 mm按压与2.2 mm开关档距为外观估计；灯位编号只对应几何位置，不能据此推定电气串链编号。
+
 `Button.latching=true` 的滑动开关在首次按下时切换稳定档位，松手不会回位。外部状态同步可用 `setPosition(0|1)` 或 `handle({action:'position', target, position:1})`，不会模拟电源逻辑。读取 `getState().position`。不要把所有带 `power` 的旧 ID 当成电源：Tab5 的 legacy `power` 指向电池卡扣，Nesso 的 legacy ID 也要结合 label/meta 确认含义。
 
 使用 `DeviceViewer({keyboard:'focused'})` 后仅聚焦 canvas 时处理设备快捷键。失焦、标签隐藏、卸载和 pointer capture 丢失会取消按住的输入；默认 `keyboard:true` 保留上游全局快捷键习惯。表单输入不会触发设备键。
@@ -76,10 +80,14 @@ joystick.button('press').click();
 | Encoder | `rotation` / `press` | 连续旋转及实体旋钮按压 |
 | Angle | `rotation` | 外部绝对角度定位 |
 | Joystick v1.1 | `tilt-x` / `tilt-y` / `press` | 两轴倾斜与倾斜后的局部按压 |
+| Key | `press` / `rgb` | 实体键帽压放，灯光独立外驱 |
+| 8Encoder | `rotation-1`…`rotation-8` / `press-1`…`press-8` / `switch` | 八路独立旋转/按压，开关保持档位 |
 
 挂到 `grove` 后上述 Unit 路径都加 `grove/` 前缀。进一步嵌套的 HUB 同样按 Port 递归，不硬编码场景树 child 索引。可通过 `host.list('joint')`、`host.list('button')` 与组件 `.path` 枚举。
 
 角度为度、`durationMs` 为毫秒、`rpm` 为视觉转速；传给关节的是它自身局部轴上的角度。StackChan 的 pitch 使用当前正视装配为 0，正角抬头，接受 `[0,90]`；这不是硬件舵机的校准零位。Angle/Joystick 的 demo 滑条范围只用于观察姿态，不能作为机械限位或传感器换算关系。轴线与范围依据见 [VISUAL-MOTION.md](VISUAL-MOTION.md)。
+
+StackChan 的前侧 Power 板跟随 pitch，下端 Adapter 跟随 yaw，七根可见线束跨两组端点更新；底座 USB 固定。官方后部为开放机构，不能用虚构后盖封住。线束路线及隐藏舵机包装为视觉近似，不模拟材料、电气或碰撞求解。
 
 `getState()` 提供 `angleDeg`、`targetAngleDeg`、`rpm`、`transitioning`、`continuous`、`rangeDeg`、`visualRangeDeg`、`demoRpmMax`。绝对角度命令停止原有 rpm；新的 rpm 命令取消原有角度插值。模型不自动运行点头、摆头、测量或固件逻辑。
 
@@ -98,6 +106,20 @@ const geometry = host.get('grove/cable').getState();
 ```
 
 线缆跟随端点和方向，不做碰撞求解。调用方要避免任意摆放引起模型互穿或线缆穿过其他物体。详见 [GROVE-CABLE.md](GROVE-CABLE.md)。
+
+## 外部灯光状态
+
+```js
+const keys = await loadGroveModule('8encoder');
+host.port('grove').attach(keys);
+host.get('grove/rotation-1').set({angleDeg: 135});
+host.button('grove/press-1').press('preview');
+host.button('grove/press-1').release('preview');
+host.get('grove/rgb-1').set({color: '#22b477', brightness: 0.4});
+host.get('grove/rgb-1').set({on: false});
+```
+
+灯光的 kind 为 `led`，用 `host.list('led')` 枚举。`Led.set({color,brightness})` 或 `handle({type:'led',target,…})` 更新外观，亮度范围0…1；`getState()` 返回颜色和亮度。它不会产生输入事件或与按键自动联动。demo的“灯光外观”面板使用相同公开API。
 
 ## 渲染与生命周期
 
@@ -120,6 +142,6 @@ viewer.dispose();
 
 ## 修改后验证
 
-从仓库根目录运行 `npm run check`、`npm run build`、`./manage.sh status`。专项测试覆盖真实帽位移/方向/回位、固定根部弯曲、刚性杠杆、50键CardKB、稳定档位、多来源取消、关节父子装配、静止与终帧、25款线缆端点与默认姿态穿壳。
+从仓库根目录运行 `npm run check`、`npm run build`、`./manage.sh status`。专项测试覆盖真实帽位移/方向/回位、固定根部弯曲、刚性杠杆、多键与多旋钮、稳定档位、多来源取消、关节父子装配、静止与终帧、目录内Unit线缆端点与默认姿态穿壳。另检查所有真实主机Grove口、CoreS3 DinBase及StackChan组合姿态中的插头坐标与渲染线管表面轨迹；覆盖数以当前生成报告为准。
 
 还需打开 demo，实际操作按键按住/回弹、模型快捷键与表单焦点、连接/断开、端点旋转、风叶转动、摇杆倾斜与按压、StackChan 组合姿态。Node 几何测试不能替代浏览器画面，也不能证明下游模拟器、真实硬件、机械配合或硬件限位正确。
