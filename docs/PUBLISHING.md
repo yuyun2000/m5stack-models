@@ -9,3 +9,7 @@
 `source-manifest.json` 只记录原 URL、SHA-256、Git blob 等来源事实和许可指针。sticks3.js 原 package 元数据逐字保留，其 SPDX MIT 是实际许可声明；固定快照无独立 LICENSE 或作者字段，该事实没有被解释为未许可。M5_Hardware CAD 衍生几何、Three.js、Vite 与 emulator 通知见 `THIRD_PARTY_NOTICES.md` 和 `licenses/`。
 
 `candidate-manifest.json` 保留源文件 SHA、转换和最终同步记录，`artifacts/candidate-verification.json` 保留检查结果。预览使用 5188 端口。维护时运行原几何/API专项、Grove/视觉运动专项及构建，并在浏览器检查动态按键、开关、关节和线缆姿态；检查通过不等同于每款产品的完整视觉验收。
+
+## 发布记录
+
+2026-10-25T13:41:09.161118+00:00：已创建并推送 [yuyun2000/m5stack-models](https://github.com/yuyun2000/m5stack-models)，GitHub确认为PUBLIC并识别MIT。初始公开提交 `ca4f561ee0493e0161bc0151827930f2afe71ae5`，来源研究检查点 `8aa90ed`。实际证据见 `artifacts/publication.json`。未发布npm包或部署公网模拟器。
