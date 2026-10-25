@@ -1,0 +1,49 @@
+{
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      -1,
+      0
+    ]
+  ],
+  "origin": [
+    0,
+    0,
+    0
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "pitch-servo-arm",
+      "material": "arm",
+      "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/K151_StackChan/Structures/StackChan-ServoArm.stl",
+      "origin": [
+        352.9318,
+        -445.6132,
+        2.65
+      ]
+    },
+    {
+      "component": 0,
+      "name": "pitch-bearing-fixture",
+      "material": "arm",
+      "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/K151_StackChan/Structures/StackChan-BearingFixture.stl",
+      "origin": [
+        306.9318,
+        -445.6132,
+        2.65
+      ]
+    }
+  ],
+  "notes": "Official arm and bearing fixture retain original geometry. Their circular centers are seated on the ServoBody pitch axis Y6.65/Z-2, arm at left and bearing fixture at right under the head cheeks. Lateral seats are photo-derived; an assembly STEP or measurement is needed to confirm exact axial offsets."
+}

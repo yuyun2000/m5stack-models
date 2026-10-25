@@ -1,0 +1,202 @@
+{
+  "checkedAt": "2026-10-25T13:30:15.569Z",
+  "scope": "Actual control movement and externally driven visual kinematics; no hardware/runtime validation",
+  "checks": [
+    {
+      "script": "scripts/check-button-actuation.mjs",
+      "status": "pass",
+      "inputRoutes": [
+        "pointer",
+        "keyboard source",
+        "handle"
+      ],
+      "cases": [
+        "combined holds",
+        "normal release",
+        "pointer cancel",
+        "overlap cancel",
+        "final-frame rendering",
+        "stable latching detents",
+        "external detent set",
+        "zero-travel capacitive target",
+        "timed-click ownership",
+        "dispose timer cleanup"
+      ],
+      "scope": "visual actuation and input events only; no hardware power behavior"
+    },
+    {
+      "product": "sticks3",
+      "status": "pass",
+      "buttons": 3,
+      "momentary": 3,
+      "latching": 0,
+      "capacitive": 0,
+      "visibleSurfaceRays": 6,
+      "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
+    },
+    {
+      "product": "cores3",
+      "status": "pass",
+      "buttons": 2,
+      "momentary": 2,
+      "latching": 0,
+      "capacitive": 0,
+      "visibleSurfaceRays": 4,
+      "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
+    },
+    {
+      "product": "stopwatch",
+      "status": "pass",
+      "buttons": 3,
+      "momentary": 3,
+      "latching": 0,
+      "capacitive": 0,
+      "visibleSurfaceRays": 6,
+      "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
+    },
+    {
+      "product": "cardputer-adv",
+      "status": "pass",
+      "buttons": 59,
+      "momentary": 58,
+      "latching": 1,
+      "capacitive": 0,
+      "visibleSurfaceRays": 116,
+      "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
+    },
+    {
+      "product": "cardputer-zero",
+      "status": "pass",
+      "buttons": 48,
+      "momentary": 47,
+      "latching": 1,
+      "capacitive": 0,
+      "visibleSurfaceRays": 94,
+      "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
+    },
+    {
+      "product": "papermono",
+      "status": "pass",
+      "buttons": 3,
+      "momentary": 3,
+      "latching": 0,
+      "capacitive": 0,
+      "visibleSurfaceRays": 6,
+      "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
+    },
+    {
+      "product": "core2",
+      "status": "pass",
+      "buttons": 5,
+      "momentary": 2,
+      "latching": 0,
+      "capacitive": 3,
+      "visibleSurfaceRays": 4,
+      "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
+    },
+    {
+      "product": "papercolor",
+      "status": "pass",
+      "buttons": 4,
+      "momentary": 4,
+      "latching": 0,
+      "capacitive": 0,
+      "visibleSurfaceRays": 8,
+      "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
+    },
+    {
+      "product": "nanoc6",
+      "status": "pass",
+      "buttons": 1,
+      "momentary": 1,
+      "latching": 0,
+      "capacitive": 0,
+      "visibleSurfaceRays": 2,
+      "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
+    },
+    {
+      "product": "stackchan",
+      "status": "pass",
+      "buttons": 2,
+      "momentary": 2,
+      "latching": 0,
+      "capacitive": 0,
+      "visibleSurfaceRays": 4,
+      "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
+    },
+    {
+      "product": "tab5",
+      "status": "pass",
+      "buttons": 2,
+      "momentary": 2,
+      "latching": 0,
+      "capacitive": 0,
+      "visibleSurfaceRays": 4,
+      "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
+    },
+    {
+      "product": "atoms3r",
+      "status": "pass",
+      "buttons": 2,
+      "momentary": 2,
+      "latching": 0,
+      "capacitive": 0,
+      "visibleSurfaceRays": 4,
+      "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
+    },
+    {
+      "product": "nesso-n1",
+      "status": "pass",
+      "buttons": 2,
+      "momentary": 2,
+      "latching": 0,
+      "capacitive": 0,
+      "visibleSurfaceRays": 4,
+      "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
+    },
+    {
+      "product": "stamplc",
+      "status": "pass",
+      "buttons": 4,
+      "momentary": 4,
+      "latching": 0,
+      "capacitive": 0,
+      "visibleSurfaceRays": 8,
+      "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
+    },
+    {
+      "product": "cores3-din",
+      "status": "pass",
+      "buttons": 3,
+      "momentary": 2,
+      "latching": 1,
+      "capacitive": 0,
+      "visibleSurfaceRays": 4,
+      "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
+    },
+    {
+      "script": "scripts/check-visual-motion.mjs",
+      "jointTransition": "terminal frame rendered",
+      "stackchan": [
+        "yaw",
+        "pitch"
+      ],
+      "units": {
+        "fan": [
+          "rotor"
+        ],
+        "encoder": [
+          "rotation"
+        ],
+        "angle": [
+          "rotation"
+        ],
+        "joystick-v11": [
+          "tilt-x",
+          "tilt-y"
+        ]
+      },
+      "status": "pass"
+    }
+  ]
+}

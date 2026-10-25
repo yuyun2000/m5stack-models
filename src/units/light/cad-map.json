@@ -1,0 +1,33 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/U021_Unit_Light/Structures/Unit_Light.stl",
+  "origin": [
+    -573.269,
+    225.223,
+    4
+  ],
+  "axes": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "housing",
+      "material": "shell"
+    }
+  ],
+  "notes": "Assembled component(s) only; displaced duplicate face/rear shells excluded. Front features are independent visible geometry; mounting holes are preserved from official CAD. This source models the front toward CAD -Z (front shell 0..6, rear 4.4..8); a proper 180-degree Y rotation preserves handedness."
+}

@@ -1,0 +1,1864 @@
+{
+  "capturedAt": "2026-10-25T13:31:36.812Z",
+  "controllers": [
+    {
+      "id": "sticks3",
+      "pressed": "artifacts/dynamics/sticks3-pressed-iso.png",
+      "released": "artifacts/dynamics/sticks3-released-iso.png",
+      "pressedTravel": "位移 0.000, 0.000, -0.350 mm · 名义行程 0.35 mm"
+    },
+    {
+      "id": "cores3",
+      "pressed": "artifacts/dynamics/cores3-pressed-iso.png",
+      "released": "artifacts/dynamics/cores3-released-iso.png",
+      "pressedTravel": "位移 0.000, 0.000, -0.180 mm · 名义行程 0.18 mm"
+    },
+    {
+      "id": "stopwatch",
+      "pressed": "artifacts/dynamics/stopwatch-pressed-iso.png",
+      "released": "artifacts/dynamics/stopwatch-released-iso.png",
+      "pressedTravel": "位移 0.156, -0.156, 0.000 mm · 名义行程 0.22 mm"
+    },
+    {
+      "id": "cardputer-adv",
+      "pressed": "artifacts/dynamics/cardputer-adv-pressed-iso.png",
+      "released": "artifacts/dynamics/cardputer-adv-released-iso.png",
+      "pressedTravel": "位移 0.000, 0.000, -0.250 mm · 名义行程 0.25 mm"
+    },
+    {
+      "id": "cardputer-zero",
+      "pressed": "artifacts/dynamics/cardputer-zero-pressed-iso.png",
+      "released": "artifacts/dynamics/cardputer-zero-released-iso.png",
+      "pressedTravel": "位移 0.000, 0.000, -0.250 mm · 名义行程 0.25 mm"
+    },
+    {
+      "id": "papermono",
+      "pressed": "artifacts/dynamics/papermono-pressed-iso.png",
+      "released": "artifacts/dynamics/papermono-released-iso.png",
+      "pressedTravel": "位移 0.200, 0.000, 0.000 mm · 名义行程 0.2 mm"
+    },
+    {
+      "id": "core2",
+      "pressed": "artifacts/dynamics/core2-pressed-iso.png",
+      "released": "artifacts/dynamics/core2-released-iso.png",
+      "pressedTravel": "位移 0.000, 0.000, -0.180 mm · 名义行程 0.18 mm"
+    },
+    {
+      "id": "papercolor",
+      "pressed": "artifacts/dynamics/papercolor-pressed-iso.png",
+      "released": "artifacts/dynamics/papercolor-released-iso.png",
+      "pressedTravel": "位移 0.180, 0.000, 0.000 mm · 名义行程 0.18 mm"
+    },
+    {
+      "id": "nanoc6",
+      "pressed": "artifacts/dynamics/nanoc6-pressed-iso.png",
+      "released": "artifacts/dynamics/nanoc6-released-iso.png",
+      "pressedTravel": "位移 0.000, 0.000, -0.160 mm · 名义行程 0.16 mm"
+    },
+    {
+      "id": "stackchan",
+      "pressed": "artifacts/dynamics/stackchan-pressed-iso.png",
+      "released": "artifacts/dynamics/stackchan-released-iso.png",
+      "pressedTravel": "位移 0.000, 0.000, -0.180 mm · 名义行程 0.18 mm"
+    },
+    {
+      "id": "tab5",
+      "pressed": "artifacts/dynamics/tab5-pressed-iso.png",
+      "released": "artifacts/dynamics/tab5-released-iso.png",
+      "pressedTravel": "位移 0.000, 0.000, 0.250 mm · 名义行程 0.25 mm"
+    },
+    {
+      "id": "atoms3r",
+      "pressed": "artifacts/dynamics/atoms3r-pressed-iso.png",
+      "released": "artifacts/dynamics/atoms3r-released-iso.png",
+      "pressedTravel": "位移 0.000, 0.000, -0.180 mm · 名义行程 0.18 mm"
+    },
+    {
+      "id": "nesso-n1",
+      "pressed": "artifacts/dynamics/nesso-n1-pressed-iso.png",
+      "released": "artifacts/dynamics/nesso-n1-released-iso.png",
+      "pressedTravel": "位移 0.000, 0.000, -0.180 mm · 名义行程 0.18 mm"
+    },
+    {
+      "id": "stamplc",
+      "pressed": "artifacts/dynamics/stamplc-pressed-iso.png",
+      "released": "artifacts/dynamics/stamplc-released-iso.png",
+      "pressedTravel": "位移 0.000, 0.000, -0.200 mm · 名义行程 0.2 mm"
+    }
+  ],
+  "cables": [
+    {
+      "id": "env-iii",
+      "status": "grove → Unit · ENV III",
+      "image": "artifacts/dynamics/atoms3r-connected-env-iii.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "id": "pir",
+      "status": "grove → Unit · PIR",
+      "image": "artifacts/dynamics/atoms3r-connected-pir.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "id": "ultrasonic-i2c",
+      "status": "grove → Unit · Ultrasonic-I2C",
+      "image": "artifacts/dynamics/atoms3r-connected-ultrasonic-i2c.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "id": "rgb",
+      "status": "grove → RGB LED",
+      "image": "artifacts/dynamics/atoms3r-connected-rgb.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "id": "angle",
+      "status": "grove → Angle",
+      "image": "artifacts/dynamics/atoms3r-connected-angle.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "id": "color",
+      "status": "grove → Color",
+      "image": "artifacts/dynamics/atoms3r-connected-color.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "id": "tof",
+      "status": "grove → ToF",
+      "image": "artifacts/dynamics/atoms3r-connected-tof.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "id": "light",
+      "status": "grove → Light",
+      "image": "artifacts/dynamics/atoms3r-connected-light.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "id": "relay",
+      "status": "grove → Relay",
+      "image": "artifacts/dynamics/atoms3r-connected-relay.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "id": "joystick-v11",
+      "status": "grove → Joystick v1.1",
+      "image": "artifacts/dynamics/atoms3r-connected-joystick-v11.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "id": "dual-button",
+      "status": "grove → Dual Button",
+      "image": "artifacts/dynamics/atoms3r-connected-dual-button.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "id": "button",
+      "status": "grove → Button",
+      "image": "artifacts/dynamics/atoms3r-connected-button.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "id": "ncir",
+      "status": "grove → NCIR",
+      "image": "artifacts/dynamics/atoms3r-connected-ncir.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "id": "heart",
+      "status": "grove → Heart Rate",
+      "image": "artifacts/dynamics/atoms3r-connected-heart.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "id": "encoder",
+      "status": "grove → Encoder",
+      "image": "artifacts/dynamics/atoms3r-connected-encoder.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "id": "thermal",
+      "status": "grove → Thermal",
+      "image": "artifacts/dynamics/atoms3r-connected-thermal.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "id": "tvoc",
+      "status": "grove → Mini TVOC/eCO2",
+      "image": "artifacts/dynamics/atoms3r-connected-tvoc.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "id": "ir",
+      "status": "grove → IR",
+      "image": "artifacts/dynamics/atoms3r-connected-ir.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "id": "hub",
+      "status": "grove → HUB",
+      "image": "artifacts/dynamics/atoms3r-connected-hub.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "id": "rfid2",
+      "status": "grove → RFID2",
+      "image": "artifacts/dynamics/atoms3r-connected-rfid2.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "id": "rs485",
+      "status": "grove → RS485",
+      "image": "artifacts/dynamics/atoms3r-connected-rs485.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "id": "buzzer",
+      "status": "grove → Buzzer",
+      "image": "artifacts/dynamics/atoms3r-connected-buzzer.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "id": "fan",
+      "status": "grove → Fan",
+      "image": "artifacts/dynamics/atoms3r-connected-fan.png",
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    }
+  ],
+  "movingUnits": [
+    {
+      "id": "encoder",
+      "image": "artifacts/dynamics/encoder-driven-connected.png",
+      "state": {
+        "buttons": {
+          "grove/press": {
+            "pressed": true
+          },
+          "button": {
+            "pressed": false
+          },
+          "reset": {
+            "pressed": false
+          }
+        },
+        "joints": {
+          "grove/rotation": {
+            "angleDeg": 60,
+            "targetAngleDeg": 60,
+            "rpm": 0,
+            "transitioning": false,
+            "mode": "continuous",
+            "continuous": true,
+            "rangeDeg": null,
+            "visualRangeDeg": null,
+            "demoRpmMax": 60
+          }
+        },
+        "cable": {
+          "slack": 16,
+          "bend": [
+            0,
+            0,
+            -1
+          ],
+          "faceDistanceMm": 85,
+          "curveLengthMm": 84.1920788423786,
+          "source": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "outward": [
+              0,
+              1,
+              0
+            ]
+          },
+          "target": {
+            "position": [
+              0,
+              85,
+              0
+            ],
+            "quaternion": [
+              0,
+              0,
+              1,
+              6.123233995736766e-17
+            ],
+            "outward": [
+              -1.2246467991473532e-16,
+              -1,
+              0
+            ]
+          },
+          "wireCount": 4,
+          "plugCount": 2,
+          "space": "module-port"
+        }
+      }
+    },
+    {
+      "id": "angle",
+      "image": "artifacts/dynamics/angle-driven-connected.png",
+      "state": {
+        "buttons": {
+          "button": {
+            "pressed": false
+          },
+          "reset": {
+            "pressed": false
+          }
+        },
+        "joints": {
+          "grove/rotation": {
+            "angleDeg": 60,
+            "targetAngleDeg": 60,
+            "rpm": 0,
+            "transitioning": false,
+            "mode": "position",
+            "continuous": false,
+            "rangeDeg": null,
+            "visualRangeDeg": [
+              -150,
+              150
+            ],
+            "demoRpmMax": 0
+          }
+        },
+        "cable": {
+          "slack": 16,
+          "bend": [
+            0,
+            0,
+            -1
+          ],
+          "faceDistanceMm": 85,
+          "curveLengthMm": 84.1920788423786,
+          "source": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "outward": [
+              0,
+              1,
+              0
+            ]
+          },
+          "target": {
+            "position": [
+              0,
+              85,
+              0
+            ],
+            "quaternion": [
+              0,
+              0,
+              1,
+              6.123233995736766e-17
+            ],
+            "outward": [
+              -1.2246467991473532e-16,
+              -1,
+              0
+            ]
+          },
+          "wireCount": 4,
+          "plugCount": 2,
+          "space": "module-port"
+        }
+      }
+    },
+    {
+      "id": "joystick-v11",
+      "image": "artifacts/dynamics/joystick-v11-driven-connected.png",
+      "state": {
+        "buttons": {
+          "grove/press": {
+            "pressed": true
+          },
+          "button": {
+            "pressed": false
+          },
+          "reset": {
+            "pressed": false
+          }
+        },
+        "joints": {
+          "grove/tilt-x": {
+            "angleDeg": 15,
+            "targetAngleDeg": 15,
+            "rpm": 0,
+            "transitioning": false,
+            "mode": "position",
+            "continuous": false,
+            "rangeDeg": null,
+            "visualRangeDeg": [
+              -20,
+              20
+            ],
+            "demoRpmMax": 0
+          },
+          "grove/tilt-y": {
+            "angleDeg": -12,
+            "targetAngleDeg": -12,
+            "rpm": 0,
+            "transitioning": false,
+            "mode": "position",
+            "continuous": false,
+            "rangeDeg": null,
+            "visualRangeDeg": [
+              -20,
+              20
+            ],
+            "demoRpmMax": 0
+          }
+        },
+        "cable": {
+          "slack": 16,
+          "bend": [
+            0,
+            0,
+            -1
+          ],
+          "faceDistanceMm": 85,
+          "curveLengthMm": 84.1920788423786,
+          "source": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "outward": [
+              0,
+              1,
+              0
+            ]
+          },
+          "target": {
+            "position": [
+              0,
+              85,
+              0
+            ],
+            "quaternion": [
+              0,
+              0,
+              1,
+              6.123233995736766e-17
+            ],
+            "outward": [
+              -1.2246467991473532e-16,
+              -1,
+              0
+            ]
+          },
+          "wireCount": 4,
+          "plugCount": 2,
+          "space": "module-port"
+        }
+      }
+    }
+  ],
+  "switches": [
+    {
+      "id": "cardputer-adv",
+      "image": "artifacts/dynamics/cardputer-adv-latched-on.png",
+      "state": "{\"pressed\":false,\"position\":1,\"latching\":true}"
+    },
+    {
+      "id": "cardputer-zero",
+      "image": "artifacts/dynamics/cardputer-zero-latched-on.png",
+      "state": "{\"pressed\":false,\"position\":1,\"latching\":true}"
+    },
+    {
+      "id": "cores3-din",
+      "image": "artifacts/dynamics/cores3-din-latched-on.png",
+      "state": "{\"pressed\":false,\"position\":1,\"latching\":true}"
+    }
+  ],
+  "keyboardEvent": "button · click · key:Space\nbutton · up · key:Space\nbutton · down · key:Space",
+  "formDidNotTrigger": true,
+  "pointerEvent": "button · click · pointer:1\nbutton · up · pointer:1\nbutton · down · pointer:1\nbutton · click · key:Space\nbutton · up · key:Space",
+  "fanStates": [
+    {
+      "image": "artifacts/dynamics/fan-motion-frame-0.png",
+      "state": {
+        "angleDeg": 298.72800000000103,
+        "targetAngleDeg": 298.72800000000103,
+        "rpm": 120,
+        "transitioning": false,
+        "mode": "continuous",
+        "continuous": true,
+        "rangeDeg": null,
+        "visualRangeDeg": null,
+        "demoRpmMax": 240
+      }
+    },
+    {
+      "image": "artifacts/dynamics/fan-motion-frame-1.png",
+      "state": {
+        "angleDeg": 347.32800000000105,
+        "targetAngleDeg": 347.32800000000105,
+        "rpm": 120,
+        "transitioning": false,
+        "mode": "continuous",
+        "continuous": true,
+        "rangeDeg": null,
+        "visualRangeDeg": null,
+        "demoRpmMax": 240
+      }
+    },
+    {
+      "image": "artifacts/dynamics/fan-motion-frame-2.png",
+      "state": {
+        "angleDeg": 407.88000000000005,
+        "targetAngleDeg": 407.88000000000005,
+        "rpm": 120,
+        "transitioning": false,
+        "mode": "continuous",
+        "continuous": true,
+        "rangeDeg": null,
+        "visualRangeDeg": null,
+        "demoRpmMax": 240
+      }
+    },
+    {
+      "image": "artifacts/dynamics/fan-motion-frame-3.png",
+      "state": {
+        "angleDeg": 443.88,
+        "targetAngleDeg": 443.88,
+        "rpm": 120,
+        "transitioning": false,
+        "mode": "continuous",
+        "continuous": true,
+        "rangeDeg": null,
+        "visualRangeDeg": null,
+        "demoRpmMax": 240
+      }
+    },
+    {
+      "image": "artifacts/dynamics/fan-motion-frame-4.png",
+      "state": {
+        "angleDeg": 485.71200000000425,
+        "targetAngleDeg": 485.71200000000425,
+        "rpm": 120,
+        "transitioning": false,
+        "mode": "continuous",
+        "continuous": true,
+        "rangeDeg": null,
+        "visualRangeDeg": null,
+        "demoRpmMax": 240
+      }
+    },
+    {
+      "image": "artifacts/dynamics/fan-motion-frame-5.png",
+      "state": {
+        "angleDeg": 563.9040000000028,
+        "targetAngleDeg": 563.9040000000028,
+        "rpm": 120,
+        "transitioning": false,
+        "mode": "continuous",
+        "continuous": true,
+        "rangeDeg": null,
+        "visualRangeDeg": null,
+        "demoRpmMax": 240
+      }
+    },
+    {
+      "image": "artifacts/dynamics/fan-motion-frame-6.png",
+      "state": {
+        "angleDeg": 628.6320000000038,
+        "targetAngleDeg": 628.6320000000038,
+        "rpm": 120,
+        "transitioning": false,
+        "mode": "continuous",
+        "continuous": true,
+        "rangeDeg": null,
+        "visualRangeDeg": null,
+        "demoRpmMax": 240
+      }
+    },
+    {
+      "image": "artifacts/dynamics/fan-motion-frame-7.png",
+      "state": {
+        "angleDeg": 712.7999999999995,
+        "targetAngleDeg": 712.7999999999995,
+        "rpm": 120,
+        "transitioning": false,
+        "mode": "continuous",
+        "continuous": true,
+        "rangeDeg": null,
+        "visualRangeDeg": null,
+        "demoRpmMax": 240
+      }
+    }
+  ],
+  "fanStopped": {
+    "angleDeg": 5.76,
+    "targetAngleDeg": 5.76,
+    "rpm": 0,
+    "transitioning": false,
+    "mode": "continuous",
+    "continuous": true,
+    "rangeDeg": null,
+    "visualRangeDeg": null,
+    "demoRpmMax": 240
+  },
+  "detached": {
+    "state": {
+      "buttons": {
+        "button": {
+          "pressed": false
+        },
+        "reset": {
+          "pressed": false
+        }
+      },
+      "joints": {}
+    },
+    "status": "尚未连接"
+  },
+  "stackchan": {
+    "stack35": "artifacts/dynamics/stackchan-yaw35-pitch35.png",
+    "stack90": "artifacts/dynamics/stackchan-yaw35-pitch90.png",
+    "stackConnected": "artifacts/dynamics/stackchan-connected-articulated.png"
+  },
+  "poseCache": {
+    "restoredControls": {
+      "distance": 85,
+      "tilt": 10,
+      "turn": 45,
+      "x": 20,
+      "z": 7
+    },
+    "poseBefore": {
+      "slack": 16,
+      "bend": [
+        0,
+        0,
+        -1
+      ],
+      "faceDistanceMm": 87.60136985230311,
+      "curveLengthMm": 91.08381970075372,
+      "source": {
+        "position": [
+          3.552713678800501e-15,
+          7.105427357601002e-15,
+          0
+        ],
+        "quaternion": [
+          0,
+          7.703719777548943e-34,
+          -7.80625564189563e-18,
+          1
+        ],
+        "outward": [
+          1.561251128379126e-17,
+          1,
+          -1.2027441195414878e-50
+        ]
+      },
+      "target": {
+        "position": [
+          20.000000000000018,
+          85,
+          7.0000000000000036
+        ],
+        "quaternion": [
+          -0.03335305878500264,
+          -0.08052140686538041,
+          0.9203638919632243,
+          -0.3812272063696535
+        ],
+        "outward": [
+          0.7071067811865475,
+          -0.696364240320019,
+          -0.12278780396897285
+        ]
+      },
+      "wireCount": 4,
+      "plugCount": 2,
+      "space": "module-port"
+    },
+    "poseAfter": {
+      "slack": 16,
+      "bend": [
+        0,
+        0,
+        -1
+      ],
+      "faceDistanceMm": 92.4608025057105,
+      "curveLengthMm": 95.62622571979318,
+      "source": {
+        "position": [
+          3.552713678800501e-15,
+          7.105427357601002e-15,
+          0
+        ],
+        "quaternion": [
+          0,
+          7.703719777548943e-34,
+          -7.80625564189563e-18,
+          1
+        ],
+        "outward": [
+          1.561251128379126e-17,
+          1,
+          -1.2027441195414878e-50
+        ]
+      },
+      "target": {
+        "position": [
+          20.000000000000036,
+          90,
+          7.000000000000007
+        ],
+        "quaternion": [
+          -0.03335305878500264,
+          -0.08052140686538041,
+          0.9203638919632243,
+          -0.3812272063696535
+        ],
+        "outward": [
+          0.7071067811865475,
+          -0.696364240320019,
+          -0.12278780396897285
+        ]
+      },
+      "wireCount": 4,
+      "plugCount": 2,
+      "space": "module-port"
+    },
+    "disconnectedJoints": [
+      "pitch",
+      "yaw"
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/U031-B_Unit_RFID2/Structures/Unit_RFID2_Face_Shell.stl",
+  "origin": [
+    43.99841022491455,
+    12.001625061035156,
+    -26
+  ],
+  "axes": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "front-shell",
+      "material": "shell"
+    },
+    {
+      "component": 0,
+      "name": "rear-shell",
+      "material": "shell",
+      "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/U031-B_Unit_RFID2/Structures/Unit_RFID2_Bottom_Shell.stl"
+    }
+  ],
+  "notes": "Selected assembled structure only; displaced duplicate shells excluded. Inner board, optics and connectors modeled separately from official product imagery."
+}

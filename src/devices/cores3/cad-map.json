@@ -1,0 +1,33 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/K128_CoreS3/Structures/CoreS3.stl",
+  "origin": [
+    248.389,
+    -14.451,
+    0
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "parts": [
+    {
+      "component": 2,
+      "name": "core-module-shell",
+      "material": "black"
+    }
+  ],
+  "notes": "The official STL includes a standalone core at displaced coordinates. Component 2 is exactly 54 × 15.5 × 54 mm in CAD axes. Normalize it separately from the DinBase kit; do not inherit the rejected legacy model."
+}

@@ -1,0 +1,48 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/C153_PaperMono/Structures/PaperMono.stl",
+  "origin": [
+    30.262,
+    50.5,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "paper-shell",
+      "material": "shell"
+    },
+    {
+      "component": 2,
+      "name": "key-up",
+      "material": "key"
+    },
+    {
+      "component": 4,
+      "name": "key-down",
+      "material": "key"
+    },
+    {
+      "component": 3,
+      "name": "power-key",
+      "material": "power"
+    }
+  ],
+  "notes": "Only the assembly near X=0..62 is used; all X>90 parts are exploded duplicates. Shell width is 61 mm; the left keys make the full width 62 mm."
+}

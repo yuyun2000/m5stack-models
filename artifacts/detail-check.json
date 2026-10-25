@@ -1,0 +1,144 @@
+{
+  "checkedAt": "2026-10-25T13:30:15.569Z",
+  "scope": "Assembled mechanical geometry and visual kinematics only; browser review and physical fit remain separate",
+  "checks": [
+    {
+      "script": "scripts/check-header-sockets.mjs",
+      "status": "pass"
+    },
+    {
+      "script": "scripts/check-stopwatch-assembly.mjs",
+      "status": "pass"
+    },
+    {
+      "script": "scripts/check-stackchan-assembly.mjs",
+      "status": "pass"
+    },
+    {
+      "script": "scripts/check-classic-unit-connectors.mjs",
+      "status": "pass"
+    },
+    {
+      "script": "scripts/check-tab5-connectors.mjs",
+      "status": "pass"
+    },
+    {
+      "script": "scripts/check-cardputer-zero-assembly.mjs",
+      "status": "pass"
+    },
+    {
+      "script": "scripts/check-ir-hub-rfid2.mjs",
+      "status": "pass"
+    },
+    {
+      "script": "scripts/check-rs485-buzzer-fan.mjs",
+      "status": "pass"
+    },
+    {
+      "script": "scripts/check-grove-cable.mjs",
+      "status": "pass"
+    },
+    {
+      "script": "scripts/check-stamplc-terminals.mjs",
+      "banks": 6,
+      "poles": 23,
+      "wireRays": 92,
+      "screwRays": 46,
+      "dcRays": 2,
+      "status": "pass"
+    },
+    {
+      "script": "scripts/check-nesso-assembly.mjs",
+      "antennaPoses": 1,
+      "hatSockets": 8,
+      "groveTails": 4,
+      "usbTabs": 2,
+      "ports": 4,
+      "intentionalSideSlotRays": 12,
+      "status": "pass"
+    },
+    {
+      "script": "scripts/check-atoms3r-closure.mjs",
+      "status": "pass",
+      "rearRays": 441,
+      "grovePlasticRays": 25,
+      "detailRays": 16,
+      "rearFirstZMm": [
+        -6.45010566711426,
+        -4.600000000745057
+      ],
+      "scope": "assembled surfaces; real port and mounting cavities retained; not fabrication or hardware validation"
+    },
+    {
+      "script": "scripts/check-sticks3-assembly.mjs",
+      "product": "sticks3",
+      "status": "pass",
+      "hatBores": 16,
+      "topApertureRays": 11,
+      "usbCornerRays": 4,
+      "sideCarrierRays": 8,
+      "rearMountAndFastenerRays": 6,
+      "shaftClearances": 2,
+      "scope": "assembled appearance geometry; exact shell and A183 active area, concealed packaging remains photo-derived"
+    },
+    {
+      "script": "scripts/check-paper-assembly.mjs",
+      "product": "papermono",
+      "status": "pass",
+      "displayRays": 9,
+      "portFreePathRays": 5,
+      "contactRays": 2,
+      "buttonDirections": 3,
+      "rgbApertureRays": 265,
+      "nfcPhysicalRearRays": 468,
+      "micRays": 1,
+      "scope": "assembled appearance and real cavity retention; inferred concealed dimensions, not fabrication proof"
+    },
+    {
+      "script": "scripts/check-paper-assembly.mjs",
+      "product": "papercolor",
+      "status": "pass",
+      "displayRays": 9,
+      "portFreePathRays": 5,
+      "contactRays": 2,
+      "buttonDirections": 4,
+      "bottomPhysicalInsertRays": 416,
+      "speakerOpenSlotRays": 9,
+      "sensorOpenSlotRays": 9,
+      "micRays": 1,
+      "groveFlankRays": 2,
+      "scope": "assembled appearance and real cavity retention; inferred concealed dimensions, not fabrication proof"
+    },
+    {
+      "script": "scripts/check-core2-assembly.mjs",
+      "product": "core2",
+      "ports": 3,
+      "groveTails": 4,
+      "grilleRays": 6,
+      "controls": 5,
+      "status": "pass"
+    },
+    {
+      "script": "scripts/check-nanoc6-assembly.mjs",
+      "product": "nanoc6",
+      "ports": 2,
+      "groveTails": 4,
+      "usbTabs": 2,
+      "rearSlotRays": 18,
+      "endSlotRays": 12,
+      "status": "pass"
+    },
+    {
+      "script": "scripts/check-button-actuation.mjs",
+      "status": "pass"
+    },
+    {
+      "script": "scripts/check-device-actuators.mjs",
+      "status": "pass"
+    },
+    {
+      "script": "scripts/check-visual-motion.mjs",
+      "status": "pass"
+    }
+  ]
+}

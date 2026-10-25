@@ -1,0 +1,48 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/DK001_Arduino_Nesso_N1/Structures/Arduino_Nesso_N1.stl",
+  "origin": [
+    12,
+    24,
+    -10.1
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 1,
+      "name": "upper-housing",
+      "material": "black"
+    },
+    {
+      "component": 2,
+      "name": "back-cover",
+      "material": "black"
+    },
+    {
+      "component": 5,
+      "name": "stowed-lora-antenna",
+      "material": "black"
+    },
+    {
+      "component": 11,
+      "name": "front-key",
+      "material": "key"
+    }
+  ],
+  "notes": "Default is the single LoRa antenna stored inside its rear holder. Component 5 is that stored antenna; component 4 is the same antenna in an alternate side-mounted pose and is deliberately excluded. Selected CAD envelope including the 0.9 mm raised front key is 24 × 48 × 22 mm; Arduino nominal casing including antenna storage is 24 × 48 × 21.1 mm. Other displaced duplicates are excluded. Additional inserts are independently photo-calibrated."
+}

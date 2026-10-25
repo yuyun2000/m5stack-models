@@ -1,0 +1,85 @@
+{
+  "checkedAt": "2026-10-25T13:32:35.867703+00:00",
+  "status": "pass",
+  "scope": "Filtered public distribution; full local validation complete, remote publication recorded separately",
+  "commands": [
+    {
+      "command": "npm run check",
+      "status": "pass",
+      "includes": "37 geometry/API models, original mechanical regressions, 144 header sockets, actuator motion, all 23 Grove modules"
+    },
+    {
+      "command": "node scripts/check-visual-motion.mjs",
+      "status": "pass",
+      "includes": "StackChan nested-joint exactly-once disposal regression"
+    },
+    {
+      "command": "npm run build",
+      "status": "pass",
+      "warning": "Large geometry chunks exceed the Vite 500 kB advisory threshold"
+    },
+    {
+      "command": "./manage.sh status",
+      "status": "healthy",
+      "port": 5188
+    }
+  ],
+  "browser": {
+    "origin": "http://127.0.0.1:5188",
+    "core2Inspector": [
+      "power",
+      "reset"
+    ],
+    "core2HeldDisplacementMm": [
+      0,
+      0,
+      -0.18
+    ],
+    "core2ReleasedDisplacementMm": [
+      0,
+      0,
+      0
+    ],
+    "readoutSettled": true,
+    "warningsOrErrors": [],
+    "connectionChecked": "StickS3 -> Fan; 85 mm gap, 14 mm lateral offset, 36 degrees end yaw; physical four-wire/two-plug render inspected"
+  },
+  "distributionAudit": {
+    "sourceFingerprints": 233,
+    "catalogProducts": 37,
+    "allReferencesOfficialHttps": true,
+    "excludedRawOfficialBinariesAndGitHistory": true,
+    "upstreamPackageMetadataAndLicensesPreserved": true,
+    "projectLicense": "MIT (user-approved); root LICENSE and package metadata agree"
+  },
+  "limitations": [
+    "Arbitrary downstream poses need their own collision check",
+    "All catalog stages remain modeled; zero verified",
+    "Original photographic stickers and research history are excluded",
+    "Project MIT does not relicense remote reference photographs or third-party trademarks"
+  ],
+  "postLicenseVerification": {
+    "checkedAt": "2026-10-25T13:37:28.164885+00:00",
+    "status": "pass",
+    "commands": [
+      "npm run build",
+      "./manage.sh status",
+      "node --check scripts/prepare-public-candidate.mjs (private preparation tool)",
+      "node scripts/prepare-public-candidate.mjs --plan (no mutation)"
+    ],
+    "checks": [
+      "MIT root license/package/lock consistency",
+      "private:true retained",
+      "UTF-8 and removed undecided-license wording",
+      "demo/dynamics.js source/public bytes and source fingerprint equal"
+    ],
+    "sourceTests": "Full geometry and motion results above remain applicable; no runtime or geometry source bytes changed during this license update.",
+    "pendingMainTask": "Copy approved artifacts/dynamics images into distribution before final publication."
+  },
+  "license": {
+    "project": "MIT",
+    "thirdPartyNotices": "preserved"
+  },
+  "dynamicEvidence": "artifacts/dynamics/review.json",
+  "publicBrowserEvidence": "artifacts/dynamics/review.json#publicBrowserEvidence"
+}

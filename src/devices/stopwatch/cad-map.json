@@ -1,0 +1,48 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/C152_StopWatch/Structures/StopWatch.stl",
+  "origin": [
+    7.5,
+    0,
+    0
+  ],
+  "axes": [
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "body-shell",
+      "material": "black"
+    },
+    {
+      "component": 2,
+      "name": "power-key",
+      "material": "red"
+    },
+    {
+      "component": 5,
+      "name": "key-a",
+      "material": "yellow"
+    },
+    {
+      "component": 7,
+      "name": "key-b",
+      "material": "blue"
+    }
+  ],
+  "notes": "Other components are displaced exploded duplicates. CAD X maps to front +Z; rotate the in-plane assembly so the rear speaker is at +Y. Component 2 is the smaller power key; 5 and 7 are the two programmable keys, matching official gallery-07/13. Display glass adds the remaining 0.5 mm of nominal 15.5 mm depth."
+}

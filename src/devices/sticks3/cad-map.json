@@ -1,0 +1,43 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/K150_StickS3/Structures/StickS3.stl",
+  "origin": [
+    12,
+    24.061,
+    -6.5773
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "rear-shell",
+      "material": "black"
+    },
+    {
+      "component": 2,
+      "name": "front-shell",
+      "material": "black"
+    },
+    {
+      "component": 5,
+      "name": "front-key",
+      "material": "blue"
+    }
+  ],
+  "notes": "Only assembled parts near X=0..24 are used; components 1/3/4 are exploded duplicates. Case depth is 14 mm. The front key reaches +1 mm beyond the case, giving the documented 15 mm total thickness. Visible front key flat area: CAD X 7.2..16.8, Y 8.961..12.161; center maps to Y=-13.5 mm."
+}

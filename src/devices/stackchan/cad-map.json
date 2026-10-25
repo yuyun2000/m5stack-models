@@ -1,0 +1,93 @@
+{
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      -1,
+      0
+    ]
+  ],
+  "origin": [
+    0,
+    0,
+    0
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "head-shell",
+      "material": "shell",
+      "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/K151_StackChan/Structures/StackChan-MainBody.stl",
+      "origin": [
+        475.7318,
+        -336.0632,
+        1.05
+      ]
+    },
+    {
+      "component": 0,
+      "name": "base",
+      "material": "dark",
+      "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/K151_StackChan/Structures/StackChan-Base.stl",
+      "origin": [
+        106.7318,
+        -327.0632,
+        2.65
+      ]
+    },
+    {
+      "component": 0,
+      "name": "base-bottom",
+      "material": "dark",
+      "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/K151_StackChan/Structures/StackChan-BaseCover.stl",
+      "origin": [
+        0,
+        11.3758,
+        -7.5388
+      ]
+    },
+    {
+      "component": 0,
+      "name": "neck-cradle",
+      "material": "dark",
+      "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/K151_StackChan/Structures/StackChan-ServoBody.stl",
+      "origin": [
+        229.481,
+        -322.5632,
+        2.65
+      ]
+    },
+    {
+      "component": 0,
+      "name": "servo-rear-cover",
+      "material": "white-cover",
+      "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/K151_StackChan/Structures/StackChan-ServoCover.stl",
+      "origin": [
+        229.481,
+        -329.2632,
+        16.1
+      ]
+    },
+    {
+      "component": 0,
+      "name": "servo-side-cover",
+      "material": "grey-cover",
+      "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/K151_StackChan/Structures/StackChan-ServoSideCover.stl",
+      "origin": [
+        229.481,
+        -329.2632,
+        -1.1
+      ]
+    }
+  ],
+  "notes": "Separate official STL parts are returned to the neutral assembled pose using official three-view dimensions and rear photos gallery-12/14. ServoCover uses its 8.8mm vertical thickness and 35.05mm depth; ServoSideCover is the visible 34.5×26×3mm lower rear plate. Exact fit still needs an assembly source or physical measurement."
+}

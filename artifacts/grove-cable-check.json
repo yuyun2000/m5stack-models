@@ -1,0 +1,131 @@
+{
+  "checkedAt": "2026-10-25T13:30:09.263Z",
+  "scope": "visual cable geometry and public assembly API; no electrical or bus simulation",
+  "status": "pass",
+  "unitCount": 23,
+  "endpointChecks": 1164,
+  "collisionRays": 6912,
+  "reports": [
+    {
+      "id": "env-iii",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "pir",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "ultrasonic-i2c",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "rgb",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "angle",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "color",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "tof",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "light",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "relay",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "joystick-v11",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "dual-button",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "button",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "ncir",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "heart",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "encoder",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "thermal",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "tvoc",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "ir",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "hub",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "rfid2",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "rs485",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "buzzer",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    },
+    {
+      "id": "fan",
+      "status": "pass",
+      "initialFaceDistanceMm": 35
+    }
+  ],
+  "additional": [
+    "real AtomS3R source enclosure",
+    "length and external anchor updates",
+    "nested rotated HUB attachment",
+    "detach reuse and exactly-once cable buffer disposal"
+  ]
+}
