@@ -1,14 +1,14 @@
 {
   "format": "m5stack-models-public-candidate-v1",
   "preparedAt": "2026-10-25T13:20:33.076Z",
-  "sourceCommit": "6e6d5e925de80508499c5680897e7084de5a7ee8",
+  "sourceCommit": "d74ae04fb822c2dcf414834eae8e51ffd1496876",
   "sourceFiles": {
-    "catalog/products.json": "eb198c186d466bb8f3eddf5de6f32d1cf3a6b7d6f1851813aa75390c2a28603e",
-    "demo/dynamics.js": "8594ed220cff882e9605d9a273c10a1b747323dcd9341db475a1675299d5e88b",
+    "catalog/products.json": "285dc2e36a9b75878961ee4a1fe1d4088fc98dbdf1cc1ae132ebea78d7a15d0d",
+    "demo/dynamics.js": "7b94d003dd355009b358969306c930be88377195ae6dc24bc87e9a17d130bda5",
     "demo/index.html": "595befce3c41879941862fc8dabb80f89f6aaadf09e3126b579f50bac1e029bf",
     "demo/main.js": "25d8b13773e154c47db357bb02b322c219512332baf997e147b63a80d4dc08e3",
     "demo/style.css": "4655c92bb6b570c92db089547777bb5678f981bdb630e61a02db18872789dcdb",
-    "docs/AGENT-INTEGRATION.md": "93474f6b397b7b5711558b7f8e1ccc2b3472f8d3a2d4e2e15a523d89ac87d2bb",
+    "docs/AGENT-INTEGRATION.md": "fe0608e25ddd90e7fd7f0a5532ec7f55f3cf43b71012d21c329345743a7a0655",
     "docs/GROVE-CABLE.md": "2a34d33f0c3933de6e7b44b81337382c9141d7b83df2c6066995e100f1079cbe",
     "docs/INTEGRATION.md": "4ab4a47db6c9a058dba35cb1504942b4f31b90bb35b31490105717c0333e6a3a",
     "manage.sh": "391d649ade85981a46d82b87316407b3c9f2a9a9f06ecfc37b0f434aa4c4ba90",
@@ -20,9 +20,9 @@
     "scripts/check-cardputer-zero-assembly.mjs": "33093ac3b3fa4822f7d9e270273d1e593dadbde604a3e335fbbb647b791d12d8",
     "scripts/check-classic-unit-connectors.mjs": "6e1309d8154f21164370c44cdbcf05c6fc2f83ed3ffbf5e465df225f01e31262",
     "scripts/check-core2-assembly.mjs": "43039438b750aa365ff40160a13d85444e177a86005570633214194c2afa13fa",
-    "scripts/check-details.mjs": "49845dd140551a109389055e791a443dfb9dee42471714f9543c54229732f32a",
-    "scripts/check-device-actuators.mjs": "7748552709f39fc413f8522c04a6551868db3caa62f61ddeebf7ff9e93e898c4",
-    "scripts/check-grove-cable.mjs": "af959ceb1c45167aa70172886b66d23ac611caf25069f11ddaff20b0984d69cd",
+    "scripts/check-details.mjs": "207c7dc543baa293aa9aa4cb6c9935823011eed129da920e32e616dc7a0d2d9f",
+    "scripts/check-device-actuators.mjs": "8d2ecd6ce9a29c65ad56878d884d562e9b4e2dd4fe5ccf5df0b4aefc86dd1894",
+    "scripts/check-grove-cable.mjs": "4d7b1a858de370731770acb46e2eba01a60ccf506a4bb732b0dbe29fc47236de",
     "scripts/check-header-sockets.mjs": "9e738a575426c4aa71b2bcad5315ccde84e0af4318c13ec72a7653fd9aab7e9a",
     "scripts/check-ir-hub-rfid2.mjs": "e86522c9e381d46f9c2b3a807237fe84a66e7a5f51fe8a9da724482fe0451bba",
     "scripts/check-nanoc6-assembly.mjs": "0b447f602aae6f3a3890244c32611a86334a67d4c5914f0130c514da28598f52",
@@ -45,7 +45,7 @@
     "src/core/Module.js": "e494d71fa9cd3c377ca0c65fc33cc4aad48faf6c872a7232fec0189ba4ed4178",
     "src/core/bridge.js": "8608d94b9545f315e3c78ea433fab68ae33350a5ca85e5ea946b4d63a98aa35e",
     "src/core/components/Button.js": "3592e37a7ff6bb2e87dd0cc831524ed5b143c4d334f525b6626e41aff04dc021",
-    "src/core/components/Display.js": "0019bea7df0cea6bd513a6fefee1eae4c73e1bcb7c36210174e199bc4ddcddb7",
+    "src/core/components/Display.js": "95e53629c0fd9456fd468b18e135d99d55017e940d8875ff9c5de813c53416ea",
     "src/core/components/Imu.js": "c7149efc62f1c42c4739af9a85361ce4dfcbd7a6b383f08b1f90ec1440fa7ce4",
     "src/core/components/Led.js": "c866edd3768f605adfb6e3295c3fdf9a6a92b633f944b4949096cbbd7214d404",
     "src/core/components/Port.js": "0afc0114ce1d320f2aa75ce094aa5702763b11da674f1609285782b20f19e5e8",
@@ -105,7 +105,7 @@
     "src/devices/stackchan/dimensions.js": "a6583eea8ceb18cf74a33d22260b8297e999dcebf730b73c6364a678625012fd",
     "src/devices/stackchan/geometry-data-motion.js": "9b3be4ae3477c1ad29c9b5807982f934892f452efac760f9a60234f40482ecab",
     "src/devices/stackchan/geometry-data.js": "9cae418a9f71eb76c4f57e24a9d1be5550e536497b0078df3629060c6e7e4eff",
-    "src/devices/stackchan/index.js": "f7655ec676efe2f77a360a89f61c6017707e17cd6351a3b099692692c29df9cc",
+    "src/devices/stackchan/index.js": "6f85865a69ca98c928eefaaa8c46fec499238bb3d5062c1e317138e9f2bf7f84",
     "src/devices/stackchan/motion-mechanics.js": "6fda87a9472758728817752ffe4def9c567ece7fc661fd1a754f6abe1168a466",
     "src/devices/stackchan/rear-assembly.js": "e087b37b2ffb73f3725263250b395ce2c6d08a7935561b730a7ff816b8718498",
     "src/devices/stamplc/cad-map.json": "893be8b42d69b128c266bdafd7a25f06a4ced5bd2471d9a7f2b1d44755d53c65",
@@ -130,8 +130,8 @@
     "src/devices/tab5/geometry-data.js": "4787cccc873706452f502f6333ba39743211d09885d8e20b6b618b43af51dbfb",
     "src/devices/tab5/index.js": "548fc65116f167e52bd7e78338151979bd6bb02882130ffdf0541a6257d28feb",
     "src/devices/tab5/main-board.js": "88d7209f717bd3c4844fd10c73adfde8a2aa30b8f7a9bc79321e3129980d88d0",
-    "src/index.js": "da31c08f66c8af24ae520e448dc5f45e291fefe39c597e61291dba04afc09645",
-    "src/loaders.js": "382f1094e5620ba55a01f2d0d20c8592adc29a2ed5e5e2a05334297ac914fc89",
+    "src/index.js": "ded777d151ced4e2ad4e5393c2003292bed9dd045c5f4ac37c17d1d2666d0bb0",
+    "src/loaders.js": "43f60b35f75b71e582ddb9758c36fece7276fd312078d8e3844e6856aed687ef",
     "src/modeling/PaperDisplay.js": "e65c23e41319a320f94f337a9efd49c5b0bbeed19fc5f1551a5f6fb299055542",
     "src/modeling/RoundDisplay.js": "0d5fde964a55d2082fae2ba6768229c470956712a652d96474dca75c0c046eff",
     "src/modeling/actuators.js": "114c7ad0c4db1c981af63bf5fc6028a4ae15a16ce68eb1b2c28e308990c2613c",
@@ -234,7 +234,7 @@
     "src/units/ultrasonic-i2c/index.js": "acfe37bc1f372a7100c3e8719c89b03a30fcdbd99cc126d5c5204923e1456f1a",
     "tokens.css": "80aac81f920541964c2ae22f4c3dac388f1c172cabd66495c9aa72f43bc42365",
     "vite.config.js": "6c133c2a30fbe83e4fb101914849efd75a8ce9f49a8659046068930237208936",
-    "docs/VISUAL-MOTION.md": "5c68a188683c4a1d2c6a0544b7a16c45e9f1c6ccce98b2d87e297c627b26b997",
+    "docs/VISUAL-MOTION.md": "4a032c748a0abafb5228c8b1075d85ada3e30b2c7238f1ca296b691ef806d507",
     "LICENSE": "bd6afb822b82b478e8b0165cd5fbd107a7e30a371f1276052d2cafdd1a8b440b",
     "src/devices/cardputer-adv/assembly.js": "4e1f8fc880b5469dc62031bd350ebcef2e0fef7d85d4bc3e4a41362d0b1e72b2",
     "src/units/button/FlexPadButton.js": "dab4803edde0b97b275a46e8792b87da7471f7229cd744dc3a1929c49c742f35",
@@ -266,12 +266,12 @@
     "scripts/check-8encoder.mjs": "d2fac20d57908664232a273a5d61d877e1812b37cf869c5d22d01322aa310a3a",
     "scripts/check-host-grove-assembly.mjs": "03ceb5543d8fda870a996a748a1691df6b6259cc2e490f02272da7eb50bd1cbc",
     "scripts/check-key.mjs": "db8197615100fd9ece4144ceeafbe4388a0f48df4f51f0df3df9bb8799f98d0b",
-    "scripts/check-stackchan-moving-assembly.mjs": "2ba2556b218e64d655f0d2c4f4260f7943fcb2bfe7b44861828541a1ee8510a2",
+    "scripts/check-stackchan-moving-assembly.mjs": "7bf10dcb9c6a3f882c80553402708cb2db29067a432eeb8fe28f4e9142208b05",
     "artifacts/motion-refinement/overview.jpg": "87359271301c95c7c4903ab014434208d818d82d5532222be20199c2b5591859",
     "artifacts/motion-refinement/connections.jpg": "704d1fd29e7e3ca335d916dd73bb88bdd30f223d3e0be93676019ed003517b16",
     "artifacts/motion-refinement/key-press.gif": "1090fc551b63c0696130625537b0907c38d4592f8e04a462ffb62a8f3be3cc5c",
     "artifacts/motion-refinement/stackchan-motion.gif": "3c76840dac57169a5a9a8fb15779e13b58ba0ea24408fb420e1a8f0d328c9d77",
-    "scripts/check-demo-lifecycle.mjs": "e9c4ae53e3b6bb9c83622ef8175596959159d832e0f3b174ce149a352e24f43b",
+    "scripts/check-demo-lifecycle.mjs": "f2dece40003445f85cbde271f069572dbfe8257a8c7f0307be5b720f4febe9ef",
     "scripts/check-port-lifecycle.mjs": "9ee7507fe818e2bff361cae620f354d565fcf29fb705b09e85274d780bb7cb14",
     "scripts/check-stackchan-servo-fit.mjs": "c5435e6096d84c0125817cca3aab3e489fc6a5bb9eb690ec7532b81dc766425a",
     "scripts/check-viewer-lifecycle.mjs": "4f3a0bd09a8de96699fa16b3a1f45488d20921977784178efccab3e2ab71c6d1",
@@ -280,7 +280,20 @@
     "artifacts/lifecycle-refinement/cores3-key-detached.png": "c8ceafe2711965aefd2b127c13abac1492b27cec5f2ce7c8320bc3812ccb5b08",
     "artifacts/lifecycle-refinement/fan-return-stopped.png": "467bfd7baf3fb8ac109df18abf391726d83e449e598550a624250be1e8373b6b",
     "artifacts/lifecycle-refinement/stackchan-env-posed.png": "d6b2b662ee2264d0a9856e1a15c36d8d2ee4072889d5894e974f92a53f154169",
-    "artifacts/stackchan-servo-fit-check.json": "c7a18989f28a4da957f871b63f236dbc07494ab064e2c7aa6ff48a02a51d6f9e"
+    "artifacts/stackchan-servo-fit-check.json": "c7a18989f28a4da957f871b63f236dbc07494ab064e2c7aa6ff48a02a51d6f9e",
+    "src/devices/stackchan/touch-led.js": "4aa634af4d85c6154efd03ecef3adde84749324bc88e4112c829bce1aec5be0d",
+    "src/units/scroll/cad-map.json": "64c8c9e16db2aa539cd21640a142d0560eaac9335fbdf77ee05aba1a980d1350",
+    "src/units/scroll/dimensions.js": "ebfd7e4404d038a3a5ee734adbe7951f50468819bc10c37a2372aca7b5e9d433",
+    "src/units/scroll/geometry-data.js": "c3de33d60850b70ca9e44bee319293c4421aba2f2fb8f4e3fb7bf9055efc2162",
+    "src/units/scroll/index.js": "0c5d110f2a388c8295811ec2213c73ce219b1ce47c5bf98de48d753a6d7f9129",
+    "scripts/check-display-touch.mjs": "4683855b4246b26fe4eeb9f98ccf379f3ebb4c8c93155528dc9aa4263f64257b",
+    "scripts/check-scroll.mjs": "793c04b06df470adc988910494f4a244cd7bd35ba232045f9fece0b6a1d8275c",
+    "scripts/check-stackchan-touch-led.mjs": "398211d19f5e1ca43d9c384602e0d3502a1b7a90bae8a5ab254cfde3afb8e3e3",
+    "artifacts/interaction-expansion/overview.jpg": "2013e0e1593618a871b3c39d0f06dbe614b9c487f69d33a50f37278835cecb2a",
+    "artifacts/interaction-expansion/scroll-press.gif": "72e907cea627a164decc529e3913c504db881c0d3d4d8af0eead059d2fcadb0c",
+    "artifacts/interaction-expansion/nested-hub.png": "400d0f9ebf8e00f50e7f0b155cb546f55d078a1a5ca7502a82354528790c1b5c",
+    "artifacts/interaction-expansion/stackchan-top-rgb.png": "cce93d6c9217718882e7e8de82edee2c367209faada350ae73c927b0d9fc81bd",
+    "artifacts/stackchan-touch-led-check.json": "27057c8e9d4edbd8a791aeebea6c45855e59f51cf2345581bbc9f27f7a401d70"
   },
   "transformations": [
     {
@@ -434,6 +447,10 @@
     {
       "file": "src/units/key/cad-map.json",
       "type": "official-structure-url-provenance"
+    },
+    {
+      "file": "src/units/scroll/cad-map.json",
+      "type": "official-structure-url-provenance"
     }
   ],
   "originalEvidence": [
@@ -503,9 +520,14 @@
     "artifacts/refinement/connections.jpg",
     "artifacts/refinement/limit-press.gif",
     "artifacts/refinement/overview.jpg",
-    "artifacts/stackchan-servo-fit-check.json"
+    "artifacts/stackchan-servo-fit-check.json",
+    "artifacts/interaction-expansion/overview.jpg",
+    "artifacts/interaction-expansion/scroll-press.gif",
+    "artifacts/interaction-expansion/nested-hub.png",
+    "artifacts/interaction-expansion/stackchan-top-rgb.png",
+    "artifacts/stackchan-touch-led-check.json"
   ],
-  "verification": "artifacts/lifecycle-refinement/public/review.json",
+  "verification": "artifacts/interaction-expansion/public/review.json",
   "published": true,
   "synchronizations": [
     {
@@ -569,7 +591,7 @@
     "docs/research/stackchan/moving-assembly-provenance.json": "7a914c18a393585315e760ea030dce1c8f59e1da1a1bdf232d9136e35d28e230"
   },
   "finalSynchronizedAt": "2026-10-25T13:36:59.071719+00:00",
-  "finalVerifiedAt": "2026-10-25T15:13:30.866580+00:00",
+  "finalVerifiedAt": "2026-10-25T16:32:43.372368+00:00",
   "projectLicense": {
     "spdx": "MIT",
     "file": "LICENSE",
@@ -579,7 +601,7 @@
   },
   "licenseVerifiedAt": "2026-10-25T13:37:28.164885+00:00",
   "publicationRecord": "artifacts/publication.json",
-  "syncedAt": "2026-10-25T15:43:10.480Z",
+  "syncedAt": "2026-10-25T16:28:44.980Z",
   "incrementalRefinement": {
     "sourceCommit": "b6d53bc3b40425a1f6b343d20240245588727397",
     "changedFiles": [
@@ -673,7 +695,7 @@
       }
     }
   },
-  "previousVerification": "artifacts/motion-refinement/public/review.json",
+  "previousVerification": "artifacts/lifecycle-refinement/public/review.json",
   "incrementalLifecycle": {
     "sourceCommit": "6e6d5e925de80508499c5680897e7084de5a7ee8",
     "changedFiles": [
@@ -697,5 +719,45 @@
       "artifacts/stackchan-servo-fit-check.json"
     ],
     "privateEvidenceReportSha256": "c94a2fe223e4b7c65f07bf05aa53d818e2af08e222e67e14836de784c1cc469a"
+  },
+  "incrementalInteractionExpansion": {
+    "sourceCommit": "d74ae04fb822c2dcf414834eae8e51ffd1496876",
+    "changedFiles": [
+      "src/core/components/Display.js",
+      "src/devices/stackchan/index.js",
+      "src/devices/stackchan/touch-led.js",
+      "src/index.js",
+      "src/loaders.js",
+      "src/units/scroll/cad-map.json",
+      "src/units/scroll/dimensions.js",
+      "src/units/scroll/geometry-data.js",
+      "src/units/scroll/index.js",
+      "demo/dynamics.js",
+      "scripts/check-demo-lifecycle.mjs",
+      "scripts/check-details.mjs",
+      "scripts/check-device-actuators.mjs",
+      "scripts/check-display-touch.mjs",
+      "scripts/check-grove-cable.mjs",
+      "scripts/check-scroll.mjs",
+      "scripts/check-stackchan-moving-assembly.mjs",
+      "scripts/check-stackchan-touch-led.mjs",
+      "docs/AGENT-INTEGRATION.md",
+      "docs/VISUAL-MOTION.md",
+      "catalog/products.json",
+      "artifacts/interaction-expansion/overview.jpg",
+      "artifacts/interaction-expansion/scroll-press.gif",
+      "artifacts/interaction-expansion/nested-hub.png",
+      "artifacts/interaction-expansion/stackchan-top-rgb.png",
+      "artifacts/stackchan-touch-led-check.json"
+    ],
+    "privateEvidenceReportSha256": "8bc48f4c44b2d9895ec5c47a2084963365a0f35f9a57f179d911ea48940e6fa9",
+    "publicVerification": {
+      "report": "artifacts/interaction-expansion/public/review.json",
+      "status": "pass",
+      "checkedAt": "2026-10-25T16:32:43.372368+00:00",
+      "models": 42,
+      "browserCases": 10,
+      "scope": "Independent public source audit, actual normal checks and browser actions; StackChan access partial and fit-unresolved"
+    }
   }
 }

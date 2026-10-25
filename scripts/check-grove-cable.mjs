@@ -11,7 +11,7 @@ globalThis.document={createElement:()=>({getContext:()=>ctx})};
 const root=path.resolve(import.meta.dirname,'..');
 const catalog=JSON.parse(await fs.readFile(path.join(root,'catalog/products.json'),'utf8'));
 const unitIds=catalog.products.filter(p=>p.category==='unit'&&p.integration?.moduleExport).map(p=>p.id);
-assert.equal(unitIds.length,27,'the complete current Unit family is covered');
+assert.equal(unitIds.length,catalog.products.filter(p=>p.category==='unit'&&p.entry).length,'every implemented Unit exposes a Grove visual module');
 const Y=new THREE.Vector3(0,1,0),rows=[-3,-1,1,3];let endpointChecks=0,collisionRays=0;
 const near=(a,b,message)=>assert.ok(a.distanceTo(b)<2e-5,`${message}: ${a.toArray()} / ${b.toArray()}`);
 function ringCenter(mesh,ring){

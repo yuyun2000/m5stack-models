@@ -1,0 +1,145 @@
+{
+  "status": "pass",
+  "passScope": "API, independent material drive, source roof apertures and head hierarchy only; scene access is separately partial",
+  "touchZones": 3,
+  "touchOrder": [
+    "front",
+    "middle",
+    "back"
+  ],
+  "capacitiveTravelMm": 0,
+  "independentRgbCells": 12,
+  "rows": 2,
+  "cellsPerRow": 6,
+  "poseCount": 30,
+  "actualApertureRays": 5100,
+  "articulatedTargetSelfRays": 90,
+  "sceneAccess": {
+    "status": "partial",
+    "probeCount": 90,
+    "unblocked": 85,
+    "blocked": [
+      {
+        "yaw": 0,
+        "pitch": 90,
+        "target": "touch-2",
+        "firstHit": "servo-side-cover",
+        "firstDistanceMm": 1.8700133514404342,
+        "targetDistanceMm": 2,
+        "touchPointLocal": [
+          0,
+          35.27,
+          -10.000000000000002
+        ],
+        "touchPointWorld": [
+          0,
+          -1.349999999999996,
+          -30.620000000000005
+        ],
+        "firstHitPointWorld": [
+          0,
+          -1.349999999999996,
+          -30.74998664855957
+        ]
+      },
+      {
+        "yaw": 35,
+        "pitch": 90,
+        "target": "touch-2",
+        "firstHit": "servo-side-cover",
+        "firstDistanceMm": 1.8700133514404393,
+        "targetDistanceMm": 2.0000000000000027,
+        "touchPointLocal": [
+          -1.1102230246251565e-15,
+          35.27000000000002,
+          -10
+        ],
+        "touchPointWorld": [
+          -16.415757608366942,
+          -1.349999999999996,
+          -25.444131507550953
+        ],
+        "firstHitPointWorld": [
+          -16.49031488702095,
+          -1.349999999999996,
+          -25.550610336448795
+        ]
+      },
+      {
+        "yaw": 90,
+        "pitch": 90,
+        "target": "touch-2",
+        "firstHit": "servo-side-cover",
+        "firstDistanceMm": 1.8700133514404342,
+        "targetDistanceMm": 2,
+        "touchPointLocal": [
+          -2.220446049250313e-16,
+          35.27,
+          -10.000000000000002
+        ],
+        "touchPointWorld": [
+          -28.620000000000005,
+          -1.349999999999996,
+          -2.000000000000006
+        ],
+        "firstHitPointWorld": [
+          -28.74998664855957,
+          -1.349999999999996,
+          -2.000000000000006
+        ]
+      },
+      {
+        "yaw": 180,
+        "pitch": 90,
+        "target": "touch-2",
+        "firstHit": "servo-side-cover",
+        "firstDistanceMm": 1.8700133514404342,
+        "targetDistanceMm": 2,
+        "touchPointLocal": [
+          9.860761315262648e-32,
+          35.27,
+          -10
+        ],
+        "touchPointWorld": [
+          -3.5049391391597254e-15,
+          -1.349999999999996,
+          26.620000000000005
+        ],
+        "firstHitPointWorld": [
+          -3.5208579124687617e-15,
+          -1.349999999999996,
+          26.74998664855957
+        ]
+      },
+      {
+        "yaw": 270,
+        "pitch": 90,
+        "target": "touch-2",
+        "firstHit": "servo-side-cover",
+        "firstDistanceMm": 1.8700133514404342,
+        "targetDistanceMm": 2,
+        "touchPointLocal": [
+          -2.220446049250313e-16,
+          35.27,
+          -10.000000000000002
+        ],
+        "touchPointWorld": [
+          28.620000000000005,
+          -1.349999999999996,
+          -1.9999999999999936
+        ],
+        "firstHitPointWorld": [
+          28.74998664855957,
+          -1.349999999999996,
+          -1.9999999999999936
+        ]
+      }
+    ],
+    "scope": "Complete assembled-scene approach along local roof normal, 2 mm start offset. Self-target hits do not imply whole-device accessibility."
+  },
+  "ownedMeshResources": 34,
+  "targetEnvelopeExpansion": false,
+  "sourceScope": "Si12T three zones, WS2812C x12, official BSP front/middle/back and left6/right6; source roof slots",
+  "limits": "Exact electrode boundaries and per-side emitter order/spacing/diffusion remain inferred. Pitch90 touch-middle normal-ray occlusion by the original servo-side-cover remains unresolved; whole-device touch access is not fully accepted. No electrical chain mapping, gestures, capacitance, firmware, cable physics or hidden servo fit claim.",
+  "resourceDisposal": "all new mesh resources exactly once"
+}

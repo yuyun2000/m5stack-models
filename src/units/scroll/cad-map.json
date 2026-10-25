@@ -1,0 +1,53 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U186_Unit_Scroll/Structures/Unit_Scroll.stl",
+  "origin": [
+    56.13665580749512,
+    16.953472554683685,
+    -19.17352294921875
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 3,
+      "name": "Scroll back shell",
+      "material": "shell"
+    },
+    {
+      "component": 5,
+      "name": "Scroll front shell",
+      "material": "shell"
+    },
+    {
+      "component": 0,
+      "name": "Scroll native wheel and axle",
+      "material": "wheel"
+    },
+    {
+      "component": 7,
+      "name": "Scroll native RGB light pipe",
+      "material": "lens"
+    },
+    {
+      "component": 9,
+      "name": "Scroll native encoder axle support",
+      "material": "support"
+    }
+  ],
+  "notes": "Five assembled components at the same X datum. Components 1/2/4/6/8 are displaced duplicates, not a second assembled product. Source wheel axis is +X; shell length is +Y. Original STL vertices are retained. PCB and connector internals are appearance reconstructions."
+}

@@ -107,6 +107,39 @@ const geometry = host.get('grove/cable').getState();
 
 线缆跟随端点和方向，不做碰撞求解。调用方要避免任意摆放引起模型互穿或线缆穿过其他物体。详见 [GROVE-CABLE.md](GROVE-CABLE.md)。
 
+HUB 可继续接 Unit，demo 的 Grove 接口菜单使用完整路径，例如 `grove/grove-1`，并排除已被上游线占用的 Module 输入口。连接/断开后保留有效选口；祖先模块拆卸后回到仍存在的祖先接口。
+
+```js
+const hub = await loadGroveModule('hub', {cableLength:70});
+host.port('grove').attach(hub);
+hub.port('grove-1').attach(await loadGroveModule('scroll', {cableLength:60}));
+host.get('grove/grove-1/rotation').set({rpm:30});
+host.button('grove/grove-1/press').press('external');
+host.button('grove/grove-1/press').cancel('external');
+host.get('grove/grove-1/rgb').set({color:'#22b477',brightness:.4});
+```
+
+Unit Scroll U186 的 `rotation` 沿自身 +X 转轴，`press` 使用独立输入来源，`rgb` 由外部控制。轮组、源 CAD 与隐藏支撑的视觉映射及按压估计见 [VISUAL-MOTION.md](VISUAL-MOTION.md)；不生成编码计数或 I2C 数据。
+
+## 屏幕触点
+
+```js
+host.on('input', event => {
+  if (event.kind === 'display' && event.id === 'lcd') {
+    // action: start / move / end；x/y: 左上原点的整数像素。
+    // pointerId 区分触点，points 为当前仍活动的点。
+    externalRuntime.sendInput(event);
+  }
+});
+const lcd = host.display('lcd');
+lcd.touch('start',10,20,1);
+lcd.touch('move',14,22,1);
+lcd.touch('end',14,22,1);
+lcd.setTouchEnabled(false);
+```
+
+指针取消和移出屏幕沿用 `end`，不增加新的输入 action。禁用会逐点结束活动触点；最终销毁静默清空并释放标记。`touch()` 是外部直接注入入口，仍可在指针触控禁用时使用；清理和销毁过程中不会重新创建触点。屏幕帧缓冲与触点输入相互独立，不自动执行设备页面或固件行为。
+
 ## 外部灯光状态
 
 ```js
@@ -120,6 +153,8 @@ host.get('grove/rgb-1').set({on: false});
 ```
 
 灯光的 kind 为 `led`，用 `host.list('led')` 枚举。`Led.set({color,brightness})` 或 `handle({type:'led',target,…})` 更新外观，亮度范围0…1；`getState()` 返回颜色和亮度。它不会产生输入事件或与按键自动联动。demo的“灯光外观”面板使用相同公开API。
+
+StackChan 顶部 `touch-1`、`touch-2`、`touch-3` 为前／中／后三个零行程电容输入区，仍用 Button 的 `press/release/cancel`；左右各有 `rgb-left-1`…`rgb-left-6` 与 `rgb-right-1`…`rgb-right-6`。灯号表示从前向后的外观分段，不声明电气链顺序；边界、分段间距和光扩散为推导。全部随头部 pitch/yaw，触摸不会自动点灯。整机采样仍有 pitch90° 时中区被旧盖座挡住的已知限制，不能把组件命中或随动检查当成全姿态输入可达验收。
 
 ## 渲染与生命周期
 

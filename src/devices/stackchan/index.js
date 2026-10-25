@@ -2,13 +2,14 @@ import * as THREE from 'three';
 import {CoreS3} from '../cores3/CoreS3.js';
 import {Device,materials} from '../../core/index.js';
 import {addCadParts} from '../../modeling/cad.js';
-import {grove,slab,FACE,screw} from '../../modeling/parts.js';
+import {grove,slab,screw} from '../../modeling/parts.js';
 import {DIM} from './dimensions.js';import data from './geometry-data.js';
 import {addRearAssembly,addTopBoard,addNeckAdapter} from './rear-assembly.js';
 import {VisualJoint} from '../../core/components/VisualJoint.js';
 import {addMotionMechanics} from './motion-mechanics.js';
 import {usbC} from '../../modeling/connectors.js';
 import {PitchHarness} from './PitchHarness.js';
+import {addTouchLed} from './touch-led.js';
 export class StackChan extends Device{
  static meta={id:'m5stack.stackchan',name:'StackChan',sku:'K151',vendor:'M5Stack',size:DIM.body,keymap:{KeyP:'power'}};
  build(){
@@ -32,7 +33,7 @@ export class StackChan extends Device{
   const rearFittings=new THREE.Group();rearFittings.name='Neck lower rear fittings';this.body.add(rearFittings);
   for(const x of [-10.8,10.8])screw(rearFittings,[x,-21.8,-30.76],'back',1.5);
   slab(rearFittings,1.5,3,.3,.25,[0,-21.1,-30.75],materials.glossy(0x843b1c,{roughness:.2}),[],.04);
-  for(const side of [-1,1]){const lens=slab(this.body,29,2.5,.2,1,[side*27.03,15.8,-9.3],materials.plastic(0x93aeb7,{roughness:.6,transparent:true,opacity:.65}),[],.04);lens.quaternion.copy(FACE[side<0?'left':'right']);headParts.push(lens);}
+  const touchLed=addTouchLed(this);headParts.push(touchLed.group);
   const mechanics=addMotionMechanics(this),adapter=addNeckAdapter(this,mechanics);
   headParts.push(...mechanics.headParts);
   // The base/USB stay fixed; the neck yaws, and only the head pitches above it.
@@ -45,7 +46,7 @@ export class StackChan extends Device{
   yaw.adopt(...original.filter(o=>!fixed.has(o)&&!headParts.includes(o)),pitch.object3d);
   const harness=this.add(new PitchHarness({id:'pitch-harness',label:'StackChan seven-wire visual loom',upper:rear.upperHarness,lower:adapter.lowerHarness,pitch,meta:{role:'visual-cross-joint-harness',source:'Official Power/Adapter CON4 and rear photo; hidden routing inferred'}}));
   yaw.adopt(harness.object3d);harness.update();
-  this.stackchanAssembly={rear,adapter,mechanics,harness,baseUsb};
+  this.stackchanAssembly={rear,adapter,mechanics,harness,baseUsb,touchLed};
  }
 }
 export default StackChan;

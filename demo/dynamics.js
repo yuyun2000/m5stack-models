@@ -25,7 +25,7 @@ export class DynamicsPanel {
       <div class="dynamics-heading"><div><p class="eyebrow">MOVE & CONNECT</p><h3>操作模型</h3></div><span>姿态演示 · 输入交给外部框架</span></div>
       <div class="dynamics-grid">
         <section class="connection-controls"><h4>连接 Unit</h4>
-          <div class="connection-selects"><label>主机接口<select id="grove-port"></select></label><label>Unit<select id="grove-unit"></select></label></div>
+          <div class="connection-selects"><label>Grove 接口<select id="grove-port"></select></label><label>Unit<select id="grove-unit"></select></label></div>
           <div class="connection-actions"><button id="grove-connect" class="action-primary">连接</button><button id="grove-disconnect" disabled>断开</button><output id="grove-status" aria-live="polite">选择一个 Grove 接口</output></div>
           <div id="cable-controls" hidden></div>
           <p id="connection-note" class="control-note"></p>
@@ -80,6 +80,7 @@ export class DynamicsPanel {
     }));
     this.cleanups.push(model.on('input', event => {
       if (event.kind === 'port' && ['attach', 'detach'].includes(event.action)) {
+        this.refreshPorts();
         this.refreshConnection();
         this.refreshComponents();
         this.onGeometryChange();
@@ -87,14 +88,7 @@ export class DynamicsPanel {
       this.record(event);
     }));
     this.refreshComponents({preserveSelection: false});
-    const ports = [...model.components.values()].filter(c => c.kind === 'port' && c.connector === 'grove');
-    this.$('#grove-port').replaceChildren(...ports.map(p => new Option(p.label + ' / ' + p.id, p.id)));
-    this.$('#grove-connect').disabled = !ports.length;
-    this.$('#grove-port').disabled = !ports.length;
-    this.$('#grove-unit').disabled = !ports.length;
-    this.$('#connection-note').textContent = ports.length
-      ? '四芯线与两端插头跟随接口位置。连接仅表示外观装配。'
-      : '此模型没有可供本演示挂接的 Grove 接口。';
+    this.refreshPorts({preserveSelection: false});
     this.refreshConnection();
     this.refreshState();
   }
@@ -109,6 +103,7 @@ export class DynamicsPanel {
       if (joint.getState().continuous) joint.set({rpm: 0});
     }
     this.model = null;
+    this.connectionPort = null;
     this.readouts = [];
   }
 
@@ -132,6 +127,31 @@ export class DynamicsPanel {
 
   port() { return this.model?.find(this.$('#grove-port').value, 'port'); }
   led() { return this.model?.find(this.$('#led-target').value, 'led'); }
+
+  refreshPorts({preserveSelection = true} = {}) {
+    const select = this.$('#grove-port'), previous = preserveSelection ? select.value : '';
+    const ports = this.model?.list('port').filter(port => {
+      if (port.connector !== 'grove') return false;
+      // Socket metadata describes the connector's appearance. The Unit frame
+      // identifies the actual input already occupied by the upstream cable;
+      // listing it would offer another attachment inside that same cable end.
+      const frame = port.host?.find('unitFrame', 'unit-frame');
+      return !(port.host?.attachedTo && frame?.inputPort === port);
+    }) ?? [];
+    select.replaceChildren(...ports.map(port => new Option(`${port.label} / ${port.path}`, port.path)));
+    let path = previous;
+    while (path && !ports.some(port => port.path === path)) path = path.slice(0, Math.max(0, path.lastIndexOf('/')));
+    if (path) select.value = path;
+    const selected = this.port();
+    if (this.connectionPort !== selected) this.generation++;
+    this.connectionPort = selected;
+    select.disabled = !ports.length;
+    this.$('#grove-unit').disabled = !ports.length;
+    this.$('#grove-connect').disabled = !selected;
+    this.$('#connection-note').textContent = ports.length
+      ? '四芯线与两端插头跟随接口位置；HUB 输出可继续挂接 Unit。连接仅表示外观装配。'
+      : '此模型没有可供本演示挂接的 Grove 接口。';
+  }
 
   refreshLedControls() {
     const led = this.led();
@@ -167,6 +187,7 @@ export class DynamicsPanel {
       if (generation !== this.generation || model !== this.model || port !== this.port()) return;
       port.attach(module);
       module = null; // The port now owns disposal.
+      this.refreshPorts();
       this.refreshConnection();
       this.refreshComponents();
       this.onGeometryChange();
@@ -182,6 +203,7 @@ export class DynamicsPanel {
   disconnect() {
     this.generation++;
     this.port()?.detach();
+    this.refreshPorts();
     this.refreshConnection();
     this.refreshComponents();
     this.viewer.fit({padding: 1.2});
@@ -191,7 +213,7 @@ export class DynamicsPanel {
     const port = this.port(), module = port?.module;
     this.$('#grove-connect').disabled = !port;
     this.$('#grove-disconnect').disabled = !module;
-    this.$('#grove-status').textContent = module ? `${port.id} → ${module.meta.name}` : port ? '尚未连接' : '无 Grove 接口';
+    this.$('#grove-status').textContent = module ? `${port.path} → ${module.meta.name}` : port ? '尚未连接' : '无 Grove 接口';
     const controls = this.$('#cable-controls');
     controls.replaceChildren();
     controls.hidden = !module;

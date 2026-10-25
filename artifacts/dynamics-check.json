@@ -1,7 +1,248 @@
 {
-  "checkedAt": "2026-10-25T15:45:31.695Z",
+  "checkedAt": "2026-10-25T16:31:09.134Z",
   "scope": "Actual control movement and externally driven visual kinematics; no hardware/runtime validation",
   "checks": [
+    {
+      "script": "scripts/check-stackchan-touch-led.mjs",
+      "status": "pass",
+      "passScope": "API, independent material drive, source roof apertures and head hierarchy only; scene access is separately partial",
+      "touchZones": 3,
+      "touchOrder": [
+        "front",
+        "middle",
+        "back"
+      ],
+      "capacitiveTravelMm": 0,
+      "independentRgbCells": 12,
+      "rows": 2,
+      "cellsPerRow": 6,
+      "poseCount": 30,
+      "actualApertureRays": 5100,
+      "articulatedTargetSelfRays": 90,
+      "sceneAccess": {
+        "status": "partial",
+        "probeCount": 90,
+        "unblocked": 85,
+        "blocked": [
+          {
+            "yaw": 0,
+            "pitch": 90,
+            "target": "touch-2",
+            "firstHit": "servo-side-cover",
+            "firstDistanceMm": 1.8700133514404342,
+            "targetDistanceMm": 2,
+            "touchPointLocal": [
+              0,
+              35.27,
+              -10.000000000000002
+            ],
+            "touchPointWorld": [
+              0,
+              -1.349999999999996,
+              -30.620000000000005
+            ],
+            "firstHitPointWorld": [
+              0,
+              -1.349999999999996,
+              -30.74998664855957
+            ]
+          },
+          {
+            "yaw": 35,
+            "pitch": 90,
+            "target": "touch-2",
+            "firstHit": "servo-side-cover",
+            "firstDistanceMm": 1.8700133514404393,
+            "targetDistanceMm": 2.0000000000000027,
+            "touchPointLocal": [
+              -1.1102230246251565e-15,
+              35.27000000000002,
+              -10
+            ],
+            "touchPointWorld": [
+              -16.415757608366942,
+              -1.349999999999996,
+              -25.444131507550953
+            ],
+            "firstHitPointWorld": [
+              -16.49031488702095,
+              -1.349999999999996,
+              -25.550610336448795
+            ]
+          },
+          {
+            "yaw": 90,
+            "pitch": 90,
+            "target": "touch-2",
+            "firstHit": "servo-side-cover",
+            "firstDistanceMm": 1.8700133514404342,
+            "targetDistanceMm": 2,
+            "touchPointLocal": [
+              -2.220446049250313e-16,
+              35.27,
+              -10.000000000000002
+            ],
+            "touchPointWorld": [
+              -28.620000000000005,
+              -1.349999999999996,
+              -2.000000000000006
+            ],
+            "firstHitPointWorld": [
+              -28.74998664855957,
+              -1.349999999999996,
+              -2.000000000000006
+            ]
+          },
+          {
+            "yaw": 180,
+            "pitch": 90,
+            "target": "touch-2",
+            "firstHit": "servo-side-cover",
+            "firstDistanceMm": 1.8700133514404342,
+            "targetDistanceMm": 2,
+            "touchPointLocal": [
+              9.860761315262648e-32,
+              35.27,
+              -10
+            ],
+            "touchPointWorld": [
+              -3.5049391391597254e-15,
+              -1.349999999999996,
+              26.620000000000005
+            ],
+            "firstHitPointWorld": [
+              -3.5208579124687617e-15,
+              -1.349999999999996,
+              26.74998664855957
+            ]
+          },
+          {
+            "yaw": 270,
+            "pitch": 90,
+            "target": "touch-2",
+            "firstHit": "servo-side-cover",
+            "firstDistanceMm": 1.8700133514404342,
+            "targetDistanceMm": 2,
+            "touchPointLocal": [
+              -2.220446049250313e-16,
+              35.27,
+              -10.000000000000002
+            ],
+            "touchPointWorld": [
+              28.620000000000005,
+              -1.349999999999996,
+              -1.9999999999999936
+            ],
+            "firstHitPointWorld": [
+              28.74998664855957,
+              -1.349999999999996,
+              -1.9999999999999936
+            ]
+          }
+        ],
+        "scope": "Complete assembled-scene approach along local roof normal, 2 mm start offset. Self-target hits do not imply whole-device accessibility."
+      },
+      "ownedMeshResources": 34,
+      "targetEnvelopeExpansion": false,
+      "sourceScope": "Si12T three zones, WS2812C x12, official BSP front/middle/back and left6/right6; source roof slots",
+      "limits": "Exact electrode boundaries and per-side emitter order/spacing/diffusion remain inferred. Pitch90 touch-middle normal-ray occlusion by the original servo-side-cover remains unresolved; whole-device touch access is not fully accepted. No electrical chain mapping, gestures, capacitance, firmware, cable physics or hidden servo fit claim.",
+      "resourceDisposal": "all new mesh resources exactly once"
+    },
+    {
+      "script": "scripts/check-display-touch.mjs",
+      "status": "pass",
+      "fixture": {
+        "markers": 9,
+        "markerResources": 18,
+        "textureDisposals": 1,
+        "events": 17
+      },
+      "hosts": [
+        {
+          "id": "cores3",
+          "width": 320,
+          "height": 240,
+          "markers": 6,
+          "markerResources": 12,
+          "textureDisposals": 1
+        },
+        {
+          "id": "stackchan",
+          "width": 320,
+          "height": 240,
+          "markers": 6,
+          "markerResources": 12,
+          "textureDisposals": 1
+        },
+        {
+          "id": "core2",
+          "width": 320,
+          "height": 240,
+          "markers": 6,
+          "markerResources": 12,
+          "textureDisposals": 1
+        },
+        {
+          "id": "tab5",
+          "width": 1280,
+          "height": 720,
+          "markers": 6,
+          "markerResources": 12,
+          "textureDisposals": 1
+        },
+        {
+          "id": "stopwatch",
+          "width": 466,
+          "height": 466,
+          "markers": 6,
+          "markerResources": 12,
+          "textureDisposals": 1
+        },
+        {
+          "id": "papermono",
+          "width": 480,
+          "height": 800,
+          "markers": 6,
+          "markerResources": 12,
+          "textureDisposals": 1
+        },
+        {
+          "id": "nesso-n1",
+          "width": 135,
+          "height": 240,
+          "markers": 6,
+          "markerResources": 12,
+          "textureDisposals": 1
+        }
+      ],
+      "markers": 51,
+      "scope": "Real Display and touch-host input, framebuffer and exact-once marker/texture disposal; Canvas boundary stub only, no browser or hardware validation"
+    },
+    {
+      "script": "scripts/check-scroll.mjs",
+      "status": "pass",
+      "sku": "U186",
+      "nativeParts": 5,
+      "nominalMm": [
+        24,
+        32,
+        18.9
+      ],
+      "pressTravelMm": 0.25,
+      "pressEvidence": "paired wheel/axle-insert appearance estimate; actual hidden support mechanism unconfirmed",
+      "sampledPcbContainment": 9996,
+      "actuatorShellClearance": {
+        "poses": 12,
+        "vertexContainmentSamples": 55080,
+        "scope": "Source wheel/axle insert versus original shell at sampled angles and rest/full visual press; no continuous or physical support-mechanism proof"
+      },
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "scope": "Original assembled wheel/shell geometry, real vertex motion/return, PCB containment, physical holes, nested cable and independent RGB; no encoder/bus/firmware/physics or manufacturing fit"
+    },
     {
       "script": "scripts/check-port-lifecycle.mjs",
       "status": "pass",
@@ -30,7 +271,7 @@
     },
     {
       "script": "scripts/check-viewer-lifecycle.mjs",
-      "checkedAt": "2026-10-25T15:44:40.665Z",
+      "checkedAt": "2026-10-25T16:30:19.033Z",
       "status": "pass",
       "checks": [
         "same Viewer mount idempotence",
@@ -65,7 +306,25 @@
         "successful-ownership",
         "reentrant-hold-cancellation"
       ],
-      "scope": "Actual demo async controller with real host/port/module ownership; browser selection and focus remain separately verified"
+      "nested": {
+        "status": "pass",
+        "cases": [
+          "recursive-HUB-outputs-without-upstream-input",
+          "nested-Key-button-LED-and-Fan-rpm-controls",
+          "two-level-paths-ancestor-fallback-and-pending-result-disposal",
+          "nested-selection-invalidates-async-load",
+          "nested-target-detach-cancels-old-path-without-stale-controls",
+          "ancestor-detach-prunes-menu-and-keeps-unrelated-host-hold"
+        ],
+        "rootOptions": [
+          "grove"
+        ],
+        "nestedKeyPath": "grove/grove-1/press",
+        "nestedFanPath": "grove/grove-2/rotor",
+        "deepestPortPath": "grove/grove-3/grove-1",
+        "scope": "Real StickS3/HUB/Key/Fan assemblies and panel; light DOM/renderer fixture only"
+      },
+      "scope": "Actual demo async controller, recursive connection menu and dynamic controls with real host/HUB/Key/Fan; renderer and DOM boundary are fixtures, browser pixels and focus remain separately verified"
     },
     {
       "script": "scripts/check-host-grove-assembly.mjs",
@@ -427,7 +686,7 @@
     },
     {
       "script": "scripts/check-8encoder.mjs",
-      "checkedAt": "2026-10-25T15:45:27.748Z",
+      "checkedAt": "2026-10-25T16:31:05.042Z",
       "status": "pass",
       "scope": "Appearance/geometry/input intent only; no encoder count, electrical or firmware simulation",
       "sku": "U153",
@@ -636,10 +895,10 @@
     {
       "product": "stackchan",
       "status": "pass",
-      "buttons": 2,
+      "buttons": 5,
       "momentary": 2,
       "latching": 0,
-      "capacitive": 0,
+      "capacitive": 3,
       "visibleSurfaceRays": 4,
       "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
     },

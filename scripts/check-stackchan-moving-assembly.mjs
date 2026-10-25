@@ -106,7 +106,7 @@ export function checkStackChanMovingAssembly(model){
  }
  const usbHit=localHit(model.root,a.baseUsb,0,.85);assert.equal(usbHit?.object.name,'USB-C dielectric backstop');assert.ok(Math.abs(usbHit.distance-11.5)<.02,'base USB has a real 6.5mm cavity');
  assert.equal(cast(model.root,[0,45,10.25],[0,-1,0])?.object.name,'Top IR receiver lens');assert.equal(cast(model.root,[0,45,14.5],[0,-1,0])?.object.name,'Top IR carrier PCB');
- assert.equal(model.list('button').length,2,'existing Core buttons remain available');assert.equal(model.display('lcd').width,320);assert.equal(model.display('lcd').height,240);
+ assert.equal(model.list('button').length,5,'Core keys and three capacitive zones remain available');assert.ok(model.button('power')&&model.button('reset'));for(const id of ['touch-1','touch-2','touch-3'])assert.ok(model.button(id).meta.capacitive);assert.equal(model.display('lcd').width,320);assert.equal(model.display('lcd').height,240);
  assert.equal(a.harness.update(),false,'stationary loom needs no continuing geometry work');
  model.root.traverse(o=>{if(o.isMesh)for(const n of o.geometry.attributes.position?.array??[])assert.ok(Number.isFinite(n),'finite geometry after sweep');});
  for(const o of Object.values(source))o.geometry.dispose(),o.material.dispose();

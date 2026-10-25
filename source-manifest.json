@@ -1,6 +1,6 @@
 {
   "preparedAt": "2026-10-25T13:20:33.030Z",
-  "sourceCommit": "6e6d5e925de80508499c5680897e7084de5a7ee8",
+  "sourceCommit": "d74ae04fb822c2dcf414834eae8e51ffd1496876",
   "scope": "Factual provenance only; no official reference binaries or MCP source text are included.",
   "upstreams": {
     "sticks3": {
@@ -854,6 +854,114 @@
           "motor axial shift opens unconfirmed shaft/arm gap"
         ],
         "scope": "ear-only runtime correction; incomplete hidden fit diagnosis"
+      },
+      "touchLedReview": {
+        "sources": [
+          {
+            "url": "https://raw.githubusercontent.com/m5stack/StackChan/eff0d6b5109663faec8f1d98848b4b0e5246bbfc/firmware/main/hal/hal_head_touch.cpp",
+            "repository": "m5stack/StackChan",
+            "commit": "eff0d6b5109663faec8f1d98848b4b0e5246bbfc",
+            "gitBlob": "3847d9ec7023154e9d0115d246bbd00c35ef313b",
+            "sha256": "427bc408a8cf639665aa2de1071df8ba0af91896105afa433a2e8c9d7ae6acc6",
+            "bytes": 4890,
+            "kind": "official-software-reference-only"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/m5stack/StackChan-BSP/fb5e9f5697803ca64e45fe7ad8eaea3e4100f766/src/utils/touch_sensor/touch_sensor.h",
+            "repository": "m5stack/StackChan-BSP",
+            "commit": "fb5e9f5697803ca64e45fe7ad8eaea3e4100f766",
+            "gitBlob": "a4a224519deadafd1333edb21e4df70335ca6a26",
+            "sha256": "caa199c56fb011aa20ff09268ad65c817307cc73bcad67778f59c24da266fb91",
+            "bytes": 3656,
+            "kind": "official-software-reference-only"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/m5stack/StackChan-BSP/fb5e9f5697803ca64e45fe7ad8eaea3e4100f766/src/utils/touch_sensor/touch_sensor.cpp",
+            "repository": "m5stack/StackChan-BSP",
+            "commit": "fb5e9f5697803ca64e45fe7ad8eaea3e4100f766",
+            "gitBlob": "28c854d6260d5a525b04379a32474bb83d768d41",
+            "sha256": "571a8f18229541a8e16a152a03b26a39f095d62b5f4068b63fd204747be29c90",
+            "bytes": 5781,
+            "kind": "official-software-reference-only"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/m5stack/StackChan-BSP/fb5e9f5697803ca64e45fe7ad8eaea3e4100f766/examples/TouchSensor/TouchSensor.ino",
+            "repository": "m5stack/StackChan-BSP",
+            "commit": "fb5e9f5697803ca64e45fe7ad8eaea3e4100f766",
+            "gitBlob": "ca7f07bd36dde7b219195b4265a2ba7f9493716f",
+            "sha256": "ffcd51f6170459e5ce34bda930effb63c3a0004d52942c49f725d2370835123b",
+            "bytes": 974,
+            "kind": "official-software-reference-only"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/m5stack/StackChan-BSP/fb5e9f5697803ca64e45fe7ad8eaea3e4100f766/examples/RGB_LED/RGB_LED.ino",
+            "repository": "m5stack/StackChan-BSP",
+            "commit": "fb5e9f5697803ca64e45fe7ad8eaea3e4100f766",
+            "gitBlob": "dd8ddbefc22e98682cbc417530829947e3265041",
+            "sha256": "97227a70131bb8a96f930cd2e83cbb3c77378f5670e883c45948eeb3c44398d0",
+            "bytes": 925,
+            "kind": "official-software-reference-only"
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1255/A180_StackChan_Body_main_pictures_06.webp",
+            "sha256": "45c5621fc74f8b9ccf3c70cc7526dd6a56d86e03fdf892b024961b0152b5b22c",
+            "bytes": 31968,
+            "kind": "official-reference-only"
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1255/A180_StackChan_Body_main_pictures_09.webp",
+            "sha256": "5f966319522d86fa8e0c4f52f63444fce677f14f1d50f1574e4e7bf152b5dbf9",
+            "bytes": 36238,
+            "kind": "official-reference-only"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/K151_StackChan/Structures/StackChan-LightGuideBar-A.stl",
+            "sha256": "05313220a4c3734dd0c412a9de04349e4f9b55024ff3a382ea0d85c1d297d2a3",
+            "bytes": 28884,
+            "kind": "official-structure-source"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/K151_StackChan/Structures/StackChan-LightGuideBar-B.stl",
+            "sha256": "ba640a41fde8b197a20579814fd8ca94eba44e7b4cbcae3096d6a1e556dd7db2",
+            "bytes": 35484,
+            "kind": "official-structure-source"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/K151_StackChan/Structures/StackChan-MainBody.stl",
+            "sha256": "5495cd313847c2c135fa0309ee64747b93794e3d464a08e76d518b73b13a3107",
+            "bytes": 824784,
+            "kind": "official-structure-source"
+          }
+        ],
+        "facts": [
+          {
+            "source": "https://raw.githubusercontent.com/m5stack/StackChan-BSP/fb5e9f5697803ca64e45fe7ad8eaea3e4100f766/src/utils/touch_sensor/touch_sensor.h",
+            "lines": "19-20",
+            "fact": "Touch index 0,1,2 correspond to Front,Middle,Back physical zones. This corrects a preliminary left/middle/right assumption."
+          },
+          {
+            "source": "https://raw.githubusercontent.com/m5stack/StackChan-BSP/fb5e9f5697803ca64e45fe7ad8eaea3e4100f766/examples/RGB_LED/RGB_LED.ino",
+            "line": 27,
+            "fact": "There are twelve RGB LEDs: indices 0-5 on left and 6-11 on right. No per-side front-to-back electrical ordering is asserted."
+          },
+          {
+            "source": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1205/SCH_Touch.png",
+            "sha256": "4599f61bb443685aa5844104a12c968188342db6a6f71fe4b4da9c428890638f",
+            "fact": "Official Touch schematic/MCP extraction identifies Si12T three TP1/TP2/TP3 channels and twelve WS2812C_4020 LEDs. Pad-to-front/middle/back electrical mapping is not inferred."
+          },
+          {
+            "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/K151_StackChan/Structures/StackChan-MainBody.stl",
+            "fact": "Unchanged roof edge is a 5 mm corner around X +/-22,Y30.25. Continuous guide apertures run approximately Z -18.5..10.75 around the 45-degree roof edge, corroborated by A180 top/side photographs."
+          }
+        ],
+        "limitations": [
+          "Exact capacitive electrode outline/spacing is unavailable. Three compact top-plane hit regions are inferred, have zero visual cap/travel and do not enlarge the assembled bounding box.",
+          "Per-side LED electrical sequence, actual emitter positions and optical diffusion are unconfirmed. Physical IDs deliberately do not claim U1-U12 chain mapping.",
+          "Whole-device normal-ray touch access remains partial: 85/90 sampled probes are unobstructed. At pitch90 the original servo-side-cover precedes touch-2 by approximately 0.130 mm at all five sampled yaw angles. Full per-pose coordinates and distances are recorded in touch-led-check.json sceneAccess.blocked. No cover/target shift masks this unresolved fit.",
+          "The 90 self-target hits prove raycast frame/hierarchy only. They do not replace assembled scene accessibility or physical-device touch validation.",
+          "No capacitance/intensity values, gesture recognition, touch-to-light behavior, electrical/firmware simulation, mechanical fit approval or physical hardware validation."
+        ],
+        "scope": "Three Front/Middle/Back capacitive zones and twelve externally driven guide cells; pitch90 middle-zone access remains partial due to retained cover"
       }
     },
     {
@@ -2305,6 +2413,92 @@
         "ledNumbering": "Physical positions only; no electrical chain mapping",
         "pcbEvidence": "Appearance reconstruction: radius 4.2 mm post clearances, radius 3.3 mm central relief, ends at Y +/-60 mm; narrow local bridges are not fabrication CAD"
       }
+    },
+    {
+      "id": "scroll",
+      "sku": "U186",
+      "officialDocs": "https://docs.m5stack.com/en/unit/UNIT-Scroll",
+      "reference": {
+        "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-Scroll/6.webp",
+        "sha256": "17b0b78284c423a990b21aea705fafd538d4477bb4465c65c4bc86ed721cf4e9"
+      },
+      "structures": [
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U186_Unit_Scroll/Structures/Unit_Scroll.stl",
+          "gitBlob": "9702207157b7bfb13c69e759981960f649cd7b18",
+          "sha256": "43977dff6e24378af5fc911b05c5402649f3026057bb1fe39fc6dea920d4061e",
+          "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109"
+        }
+      ],
+      "referenceSources": [
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-Scroll/4.webp",
+          "sha256": "dda04898b2a6f334a5e1b365a2c947a52689739646d2c1ef85820a35cd70e589"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-Scroll/6.webp",
+          "sha256": "17b0b78284c423a990b21aea705fafd538d4477bb4465c65c4bc86ed721cf4e9"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-Scroll/12.webp",
+          "sha256": "ecc78ced5eafbc80d1eaf7ac750de5b203378604f892888b3fa23bfcaa88226b"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-Scroll/3.webp",
+          "sha256": "543be0f3cd2292c294e70d16559138e62332c49b9b5dae73f37d4f526a42459a"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-Scroll/5.webp",
+          "sha256": "4c788518059b1fd3808a7817c0718849003d9eda1cff628bee38b6ee2cebb189"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-Scroll/7.webp",
+          "sha256": "a9ed72443f3279883b48a87f693b8e5c979ba7d72dc1a7c16e155097f3790d86"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-Scroll/8.webp",
+          "sha256": "b901c63281a06d22dcef4b385898d6e52c2e8f84975a13aa70e432d74d10aedd"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-Scroll/10.webp",
+          "sha256": "b43ad27e833b848467583170087b05f605995ab36b4d0290c5305c617f7da355"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-Scroll/11.webp",
+          "sha256": "f54dd307b594c872d36134119a235a86483f57d56c018da9b3fa524b1054d27c"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT-Scroll/img-4ec8cc89-5f89-401c-80a9-4e0c27c9f36e.jpg",
+          "sha256": "abc5f5ea99f9d9de25bd430a43f371c7bd2514c9ba31acf01dd7cf97ade7bce9"
+        }
+      ],
+      "mechanicalFacts": {
+        "sourceTableMm": [
+          32,
+          24,
+          18.9
+        ],
+        "modelAxesMm": [
+          24,
+          32,
+          18.9
+        ],
+        "selectedComponents": [
+          0,
+          3,
+          5,
+          7,
+          9
+        ],
+        "rotationAxis": [
+          1,
+          0,
+          0
+        ],
+        "pressTravelMm": 0.25,
+        "pressGroup": "Wheel plus axle insert; insert does not rotate. Appearance approximation, hidden pivot/switch support motion unconfirmed.",
+        "pcb": "Appearance board at Z -1.5..-0.7, actual-post and Grove relief; no original PCB/fabrication CAD"
+      }
     }
   ],
   "motionStructures": {
@@ -2345,6 +2539,6 @@
       }
     ]
   },
-  "updatedAt": "2026-10-25T15:43:10.485Z",
+  "updatedAt": "2026-10-25T16:28:44.985Z",
   "syncedAt": "2026-10-25T14:15:24.398Z"
 }

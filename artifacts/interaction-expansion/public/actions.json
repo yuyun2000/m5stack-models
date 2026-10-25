@@ -1,0 +1,1210 @@
+[
+  {
+    "case": "Scroll native wheel press / release",
+    "pass": true,
+    "down": {
+      "connection": "尚未连接",
+      "events": "press · down · inspect:press\npress · click · inspect:press\npress · up · inspect:press\npress · down · inspect:press",
+      "model": "scroll",
+      "selectedButton": "press",
+      "selectedLed": "rgb",
+      "state": {
+        "buttons": {
+          "press": {
+            "pressed": true
+          }
+        },
+        "joints": {
+          "rotation": {
+            "angleDeg": 0,
+            "continuous": true,
+            "demoRpmMax": 60,
+            "mode": "continuous",
+            "rangeDeg": null,
+            "rpm": 0,
+            "targetAngleDeg": 0,
+            "transitioning": false,
+            "visualRangeDeg": null
+          }
+        },
+        "leds": {
+          "rgb": {
+            "brightness": 0,
+            "color": "#ff2020"
+          }
+        }
+      },
+      "travel": {
+        "pressed": "true",
+        "settled": "true"
+      }
+    },
+    "up": {
+      "connection": "尚未连接",
+      "events": "press · click · inspect:press\npress · up · inspect:press\npress · down · inspect:press\npress · click · inspect:press\npress · up · inspect:press",
+      "model": "scroll",
+      "selectedButton": "press",
+      "selectedLed": "rgb",
+      "state": {
+        "buttons": {
+          "press": {
+            "pressed": false
+          }
+        },
+        "joints": {
+          "rotation": {
+            "angleDeg": 0,
+            "continuous": true,
+            "demoRpmMax": 60,
+            "mode": "continuous",
+            "rangeDeg": null,
+            "rpm": 0,
+            "targetAngleDeg": 0,
+            "transitioning": false,
+            "visualRangeDeg": null
+          }
+        },
+        "leds": {
+          "rgb": {
+            "brightness": 0,
+            "color": "#ff2020"
+          }
+        }
+      },
+      "travel": {
+        "pressed": "false",
+        "settled": "true"
+      }
+    }
+  },
+  {
+    "case": "Scroll rotation and independent RGB",
+    "pass": true,
+    "state": {
+      "connection": "尚未连接",
+      "events": "press · click · inspect:press\npress · up · inspect:press\npress · down · inspect:press\npress · click · inspect:press\npress · up · inspect:press",
+      "model": "scroll",
+      "selectedButton": "press",
+      "selectedLed": "rgb",
+      "state": {
+        "buttons": {
+          "press": {
+            "pressed": false
+          }
+        },
+        "joints": {
+          "rotation": {
+            "angleDeg": 17,
+            "continuous": true,
+            "demoRpmMax": 60,
+            "mode": "continuous",
+            "rangeDeg": null,
+            "rpm": 0,
+            "targetAngleDeg": 17,
+            "transitioning": false,
+            "visualRangeDeg": null
+          }
+        },
+        "leds": {
+          "rgb": {
+            "brightness": 0.8,
+            "color": "#00b9dc"
+          }
+        }
+      },
+      "travel": {
+        "pressed": "false",
+        "settled": "true"
+      }
+    }
+  },
+  {
+    "case": "StackChan twelve independently addressed top RGB cells",
+    "pass": true,
+    "state": {
+      "connection": "尚未连接",
+      "events": "等待操作…",
+      "model": "stackchan",
+      "selectedButton": "power",
+      "selectedLed": "rgb-right-6",
+      "state": {
+        "buttons": {
+          "power": {
+            "pressed": false
+          },
+          "reset": {
+            "pressed": false
+          },
+          "touch-1": {
+            "pressed": false
+          },
+          "touch-2": {
+            "pressed": false
+          },
+          "touch-3": {
+            "pressed": false
+          }
+        },
+        "joints": {
+          "pitch": {
+            "angleDeg": 0,
+            "continuous": false,
+            "demoRpmMax": 0,
+            "mode": "position",
+            "rangeDeg": [
+              0,
+              90
+            ],
+            "rpm": 0,
+            "targetAngleDeg": 0,
+            "transitioning": false,
+            "visualRangeDeg": null
+          },
+          "yaw": {
+            "angleDeg": 0,
+            "continuous": true,
+            "demoRpmMax": 20,
+            "mode": "continuous",
+            "rangeDeg": null,
+            "rpm": 0,
+            "targetAngleDeg": 0,
+            "transitioning": false,
+            "visualRangeDeg": null
+          }
+        },
+        "leds": {
+          "rgb-left-1": {
+            "brightness": 0.8,
+            "color": "#00c6ff"
+          },
+          "rgb-left-2": {
+            "brightness": 0.8,
+            "color": "#30dc90"
+          },
+          "rgb-left-3": {
+            "brightness": 0.8,
+            "color": "#ffe050"
+          },
+          "rgb-left-4": {
+            "brightness": 0.8,
+            "color": "#fc9040"
+          },
+          "rgb-left-5": {
+            "brightness": 0.8,
+            "color": "#ec5098"
+          },
+          "rgb-left-6": {
+            "brightness": 0.8,
+            "color": "#a868ff"
+          },
+          "rgb-right-1": {
+            "brightness": 0.8,
+            "color": "#00c6ff"
+          },
+          "rgb-right-2": {
+            "brightness": 0.8,
+            "color": "#30dc90"
+          },
+          "rgb-right-3": {
+            "brightness": 0.8,
+            "color": "#ffe050"
+          },
+          "rgb-right-4": {
+            "brightness": 0.8,
+            "color": "#fc9040"
+          },
+          "rgb-right-5": {
+            "brightness": 0.8,
+            "color": "#ec5098"
+          },
+          "rgb-right-6": {
+            "brightness": 0.8,
+            "color": "#a868ff"
+          }
+        }
+      },
+      "travel": {
+        "pressed": "false",
+        "settled": "true"
+      }
+    }
+  },
+  {
+    "case": "StackChan touch-1 capacitive input intent",
+    "pass": true,
+    "state": {
+      "connection": "尚未连接",
+      "events": "touch-1 · click · panel:touch-1:key:Enter\ntouch-1 · up · panel:touch-1:key:Enter\ntouch-1 · down · panel:touch-1:key:Enter",
+      "model": "stackchan",
+      "selectedButton": "power",
+      "selectedLed": "rgb-right-6",
+      "state": {
+        "buttons": {
+          "power": {
+            "pressed": false
+          },
+          "reset": {
+            "pressed": false
+          },
+          "touch-1": {
+            "pressed": false
+          },
+          "touch-2": {
+            "pressed": false
+          },
+          "touch-3": {
+            "pressed": false
+          }
+        },
+        "joints": {
+          "pitch": {
+            "angleDeg": 0,
+            "continuous": false,
+            "demoRpmMax": 0,
+            "mode": "position",
+            "rangeDeg": [
+              0,
+              90
+            ],
+            "rpm": 0,
+            "targetAngleDeg": 0,
+            "transitioning": false,
+            "visualRangeDeg": null
+          },
+          "yaw": {
+            "angleDeg": 0,
+            "continuous": true,
+            "demoRpmMax": 20,
+            "mode": "continuous",
+            "rangeDeg": null,
+            "rpm": 0,
+            "targetAngleDeg": 0,
+            "transitioning": false,
+            "visualRangeDeg": null
+          }
+        },
+        "leds": {
+          "rgb-left-1": {
+            "brightness": 0.8,
+            "color": "#00c6ff"
+          },
+          "rgb-left-2": {
+            "brightness": 0.8,
+            "color": "#30dc90"
+          },
+          "rgb-left-3": {
+            "brightness": 0.8,
+            "color": "#ffe050"
+          },
+          "rgb-left-4": {
+            "brightness": 0.8,
+            "color": "#fc9040"
+          },
+          "rgb-left-5": {
+            "brightness": 0.8,
+            "color": "#ec5098"
+          },
+          "rgb-left-6": {
+            "brightness": 0.8,
+            "color": "#a868ff"
+          },
+          "rgb-right-1": {
+            "brightness": 0.8,
+            "color": "#00c6ff"
+          },
+          "rgb-right-2": {
+            "brightness": 0.8,
+            "color": "#30dc90"
+          },
+          "rgb-right-3": {
+            "brightness": 0.8,
+            "color": "#ffe050"
+          },
+          "rgb-right-4": {
+            "brightness": 0.8,
+            "color": "#fc9040"
+          },
+          "rgb-right-5": {
+            "brightness": 0.8,
+            "color": "#ec5098"
+          },
+          "rgb-right-6": {
+            "brightness": 0.8,
+            "color": "#a868ff"
+          }
+        }
+      },
+      "travel": {
+        "pressed": "false",
+        "settled": "true"
+      }
+    }
+  },
+  {
+    "case": "StackChan touch-2 capacitive input intent",
+    "pass": true,
+    "state": {
+      "connection": "尚未连接",
+      "events": "touch-2 · click · panel:touch-2:key:Enter\ntouch-2 · up · panel:touch-2:key:Enter\ntouch-2 · down · panel:touch-2:key:Enter\ntouch-1 · click · panel:touch-1:key:Enter\ntouch-1 · up · panel:touch-1:key:Enter",
+      "model": "stackchan",
+      "selectedButton": "power",
+      "selectedLed": "rgb-right-6",
+      "state": {
+        "buttons": {
+          "power": {
+            "pressed": false
+          },
+          "reset": {
+            "pressed": false
+          },
+          "touch-1": {
+            "pressed": false
+          },
+          "touch-2": {
+            "pressed": false
+          },
+          "touch-3": {
+            "pressed": false
+          }
+        },
+        "joints": {
+          "pitch": {
+            "angleDeg": 0,
+            "continuous": false,
+            "demoRpmMax": 0,
+            "mode": "position",
+            "rangeDeg": [
+              0,
+              90
+            ],
+            "rpm": 0,
+            "targetAngleDeg": 0,
+            "transitioning": false,
+            "visualRangeDeg": null
+          },
+          "yaw": {
+            "angleDeg": 0,
+            "continuous": true,
+            "demoRpmMax": 20,
+            "mode": "continuous",
+            "rangeDeg": null,
+            "rpm": 0,
+            "targetAngleDeg": 0,
+            "transitioning": false,
+            "visualRangeDeg": null
+          }
+        },
+        "leds": {
+          "rgb-left-1": {
+            "brightness": 0.8,
+            "color": "#00c6ff"
+          },
+          "rgb-left-2": {
+            "brightness": 0.8,
+            "color": "#30dc90"
+          },
+          "rgb-left-3": {
+            "brightness": 0.8,
+            "color": "#ffe050"
+          },
+          "rgb-left-4": {
+            "brightness": 0.8,
+            "color": "#fc9040"
+          },
+          "rgb-left-5": {
+            "brightness": 0.8,
+            "color": "#ec5098"
+          },
+          "rgb-left-6": {
+            "brightness": 0.8,
+            "color": "#a868ff"
+          },
+          "rgb-right-1": {
+            "brightness": 0.8,
+            "color": "#00c6ff"
+          },
+          "rgb-right-2": {
+            "brightness": 0.8,
+            "color": "#30dc90"
+          },
+          "rgb-right-3": {
+            "brightness": 0.8,
+            "color": "#ffe050"
+          },
+          "rgb-right-4": {
+            "brightness": 0.8,
+            "color": "#fc9040"
+          },
+          "rgb-right-5": {
+            "brightness": 0.8,
+            "color": "#ec5098"
+          },
+          "rgb-right-6": {
+            "brightness": 0.8,
+            "color": "#a868ff"
+          }
+        }
+      },
+      "travel": {
+        "pressed": "false",
+        "settled": "true"
+      }
+    }
+  },
+  {
+    "case": "StackChan touch-3 capacitive input intent",
+    "pass": true,
+    "state": {
+      "connection": "尚未连接",
+      "events": "touch-3 · click · panel:touch-3:key:Enter\ntouch-3 · up · panel:touch-3:key:Enter\ntouch-3 · down · panel:touch-3:key:Enter\ntouch-2 · click · panel:touch-2:key:Enter\ntouch-2 · up · panel:touch-2:key:Enter",
+      "model": "stackchan",
+      "selectedButton": "power",
+      "selectedLed": "rgb-right-6",
+      "state": {
+        "buttons": {
+          "power": {
+            "pressed": false
+          },
+          "reset": {
+            "pressed": false
+          },
+          "touch-1": {
+            "pressed": false
+          },
+          "touch-2": {
+            "pressed": false
+          },
+          "touch-3": {
+            "pressed": false
+          }
+        },
+        "joints": {
+          "pitch": {
+            "angleDeg": 0,
+            "continuous": false,
+            "demoRpmMax": 0,
+            "mode": "position",
+            "rangeDeg": [
+              0,
+              90
+            ],
+            "rpm": 0,
+            "targetAngleDeg": 0,
+            "transitioning": false,
+            "visualRangeDeg": null
+          },
+          "yaw": {
+            "angleDeg": 0,
+            "continuous": true,
+            "demoRpmMax": 20,
+            "mode": "continuous",
+            "rangeDeg": null,
+            "rpm": 0,
+            "targetAngleDeg": 0,
+            "transitioning": false,
+            "visualRangeDeg": null
+          }
+        },
+        "leds": {
+          "rgb-left-1": {
+            "brightness": 0.8,
+            "color": "#00c6ff"
+          },
+          "rgb-left-2": {
+            "brightness": 0.8,
+            "color": "#30dc90"
+          },
+          "rgb-left-3": {
+            "brightness": 0.8,
+            "color": "#ffe050"
+          },
+          "rgb-left-4": {
+            "brightness": 0.8,
+            "color": "#fc9040"
+          },
+          "rgb-left-5": {
+            "brightness": 0.8,
+            "color": "#ec5098"
+          },
+          "rgb-left-6": {
+            "brightness": 0.8,
+            "color": "#a868ff"
+          },
+          "rgb-right-1": {
+            "brightness": 0.8,
+            "color": "#00c6ff"
+          },
+          "rgb-right-2": {
+            "brightness": 0.8,
+            "color": "#30dc90"
+          },
+          "rgb-right-3": {
+            "brightness": 0.8,
+            "color": "#ffe050"
+          },
+          "rgb-right-4": {
+            "brightness": 0.8,
+            "color": "#fc9040"
+          },
+          "rgb-right-5": {
+            "brightness": 0.8,
+            "color": "#ec5098"
+          },
+          "rgb-right-6": {
+            "brightness": 0.8,
+            "color": "#a868ff"
+          }
+        }
+      },
+      "travel": {
+        "pressed": "false",
+        "settled": "true"
+      }
+    }
+  },
+  {
+    "case": "StackChan external yaw / pitch with top IO following",
+    "pass": true,
+    "pose45": {
+      "connection": "尚未连接",
+      "events": "touch-3 · click · panel:touch-3:key:Enter\ntouch-3 · up · panel:touch-3:key:Enter\ntouch-3 · down · panel:touch-3:key:Enter\ntouch-2 · click · panel:touch-2:key:Enter\ntouch-2 · up · panel:touch-2:key:Enter",
+      "model": "stackchan",
+      "selectedButton": "power",
+      "selectedLed": "rgb-right-6",
+      "state": {
+        "buttons": {
+          "power": {
+            "pressed": false
+          },
+          "reset": {
+            "pressed": false
+          },
+          "touch-1": {
+            "pressed": false
+          },
+          "touch-2": {
+            "pressed": false
+          },
+          "touch-3": {
+            "pressed": false
+          }
+        },
+        "joints": {
+          "pitch": {
+            "angleDeg": 45,
+            "continuous": false,
+            "demoRpmMax": 0,
+            "mode": "position",
+            "rangeDeg": [
+              0,
+              90
+            ],
+            "rpm": 0,
+            "targetAngleDeg": 45,
+            "transitioning": false,
+            "visualRangeDeg": null
+          },
+          "yaw": {
+            "angleDeg": 35,
+            "continuous": true,
+            "demoRpmMax": 20,
+            "mode": "continuous",
+            "rangeDeg": null,
+            "rpm": 0,
+            "targetAngleDeg": 35,
+            "transitioning": false,
+            "visualRangeDeg": null
+          }
+        },
+        "leds": {
+          "rgb-left-1": {
+            "brightness": 0.8,
+            "color": "#00c6ff"
+          },
+          "rgb-left-2": {
+            "brightness": 0.8,
+            "color": "#30dc90"
+          },
+          "rgb-left-3": {
+            "brightness": 0.8,
+            "color": "#ffe050"
+          },
+          "rgb-left-4": {
+            "brightness": 0.8,
+            "color": "#fc9040"
+          },
+          "rgb-left-5": {
+            "brightness": 0.8,
+            "color": "#ec5098"
+          },
+          "rgb-left-6": {
+            "brightness": 0.8,
+            "color": "#a868ff"
+          },
+          "rgb-right-1": {
+            "brightness": 0.8,
+            "color": "#00c6ff"
+          },
+          "rgb-right-2": {
+            "brightness": 0.8,
+            "color": "#30dc90"
+          },
+          "rgb-right-3": {
+            "brightness": 0.8,
+            "color": "#ffe050"
+          },
+          "rgb-right-4": {
+            "brightness": 0.8,
+            "color": "#fc9040"
+          },
+          "rgb-right-5": {
+            "brightness": 0.8,
+            "color": "#ec5098"
+          },
+          "rgb-right-6": {
+            "brightness": 0.8,
+            "color": "#a868ff"
+          }
+        }
+      },
+      "travel": {
+        "pressed": "false",
+        "settled": "true"
+      }
+    },
+    "pose90": {
+      "connection": "尚未连接",
+      "events": "touch-3 · click · panel:touch-3:key:Enter\ntouch-3 · up · panel:touch-3:key:Enter\ntouch-3 · down · panel:touch-3:key:Enter\ntouch-2 · click · panel:touch-2:key:Enter\ntouch-2 · up · panel:touch-2:key:Enter",
+      "model": "stackchan",
+      "selectedButton": "power",
+      "selectedLed": "rgb-right-6",
+      "state": {
+        "buttons": {
+          "power": {
+            "pressed": false
+          },
+          "reset": {
+            "pressed": false
+          },
+          "touch-1": {
+            "pressed": false
+          },
+          "touch-2": {
+            "pressed": false
+          },
+          "touch-3": {
+            "pressed": false
+          }
+        },
+        "joints": {
+          "pitch": {
+            "angleDeg": 90,
+            "continuous": false,
+            "demoRpmMax": 0,
+            "mode": "position",
+            "rangeDeg": [
+              0,
+              90
+            ],
+            "rpm": 0,
+            "targetAngleDeg": 90,
+            "transitioning": false,
+            "visualRangeDeg": null
+          },
+          "yaw": {
+            "angleDeg": 35,
+            "continuous": true,
+            "demoRpmMax": 20,
+            "mode": "continuous",
+            "rangeDeg": null,
+            "rpm": 0,
+            "targetAngleDeg": 35,
+            "transitioning": false,
+            "visualRangeDeg": null
+          }
+        },
+        "leds": {
+          "rgb-left-1": {
+            "brightness": 0.8,
+            "color": "#00c6ff"
+          },
+          "rgb-left-2": {
+            "brightness": 0.8,
+            "color": "#30dc90"
+          },
+          "rgb-left-3": {
+            "brightness": 0.8,
+            "color": "#ffe050"
+          },
+          "rgb-left-4": {
+            "brightness": 0.8,
+            "color": "#fc9040"
+          },
+          "rgb-left-5": {
+            "brightness": 0.8,
+            "color": "#ec5098"
+          },
+          "rgb-left-6": {
+            "brightness": 0.8,
+            "color": "#a868ff"
+          },
+          "rgb-right-1": {
+            "brightness": 0.8,
+            "color": "#00c6ff"
+          },
+          "rgb-right-2": {
+            "brightness": 0.8,
+            "color": "#30dc90"
+          },
+          "rgb-right-3": {
+            "brightness": 0.8,
+            "color": "#ffe050"
+          },
+          "rgb-right-4": {
+            "brightness": 0.8,
+            "color": "#fc9040"
+          },
+          "rgb-right-5": {
+            "brightness": 0.8,
+            "color": "#ec5098"
+          },
+          "rgb-right-6": {
+            "brightness": 0.8,
+            "color": "#a868ff"
+          }
+        }
+      },
+      "travel": {
+        "pressed": "false",
+        "settled": "true"
+      }
+    },
+    "scope": "Panel and rendered motion only; whole-scene pitch90 middle-zone touch access remains partial"
+  },
+  {
+    "case": "Nested HUB routes Scroll and Fan using full port paths",
+    "pass": true,
+    "ports": [
+      "grove",
+      "grove/grove-1",
+      "grove/grove-2",
+      "grove/grove-3"
+    ],
+    "state": {
+      "connection": "grove/grove-2 → Fan",
+      "events": "grove/grove-2 · attach\ngrove/grove-1 · attach\ngrove · attach",
+      "model": "sticks3",
+      "selectedButton": "btnA",
+      "selectedLed": "grove/grove-1/rgb",
+      "state": {
+        "buttons": {
+          "btnA": {
+            "pressed": false
+          },
+          "btnB": {
+            "pressed": false
+          },
+          "btnPWR": {
+            "pressed": false
+          },
+          "grove/grove-1/press": {
+            "pressed": false
+          }
+        },
+        "cable": {
+          "bend": [
+            0,
+            0,
+            -1
+          ],
+          "curveLengthMm": 68.5254308599533,
+          "faceDistanceMm": 64.22616289332566,
+          "plugCount": 2,
+          "slack": 16,
+          "source": {
+            "outward": [
+              1.3877787807814457e-17,
+              1,
+              2.7755575615628914e-17
+            ],
+            "position": [
+              0,
+              1.0658141036401504e-14,
+              -7.105427357601002e-15
+            ],
+            "quaternion": [
+              1.3877787807814457e-17,
+              2.081668171172168e-17,
+              -6.938893903907228e-18,
+              1
+            ]
+          },
+          "space": "module-port",
+          "target": {
+            "outward": [
+              -1.2490009027033006e-16,
+              -1,
+              -2.775557561562891e-17
+            ],
+            "position": [
+              35,
+              50.00000000000002,
+              19.999999999999993
+            ],
+            "quaternion": [
+              6.9388939039072276e-18,
+              -1.3877787807814455e-17,
+              1,
+              6.245004513516503e-17
+            ]
+          },
+          "wireCount": 4
+        },
+        "joints": {
+          "grove/grove-1/rotation": {
+            "angleDeg": 17,
+            "continuous": true,
+            "demoRpmMax": 60,
+            "mode": "continuous",
+            "rangeDeg": null,
+            "rpm": 0,
+            "targetAngleDeg": 17,
+            "transitioning": false,
+            "visualRangeDeg": null
+          },
+          "grove/grove-2/rotor": {
+            "angleDeg": 25,
+            "continuous": true,
+            "demoRpmMax": 240,
+            "mode": "continuous",
+            "rangeDeg": null,
+            "rpm": 0,
+            "targetAngleDeg": 25,
+            "transitioning": false,
+            "visualRangeDeg": null
+          }
+        },
+        "leds": {
+          "grove/grove-1/rgb": {
+            "brightness": 0.8,
+            "color": "#00b9dc"
+          },
+          "irTx": {
+            "brightness": 0,
+            "color": "#ff2020"
+          }
+        }
+      },
+      "travel": {
+        "pressed": "false",
+        "settled": "true"
+      }
+    }
+  },
+  {
+    "case": "Nested HUB descendant detach emits old full-path cancelled up",
+    "pass": true,
+    "before": {
+      "connection": "grove/grove-1 → Unit Scroll",
+      "events": "grove/grove-1/press · down · inspect:grove/grove-1/press\ngrove/grove-2 · attach\ngrove/grove-1 · attach\ngrove · attach",
+      "model": "sticks3",
+      "selectedButton": "grove/grove-1/press",
+      "selectedLed": "grove/grove-1/rgb",
+      "state": {
+        "buttons": {
+          "btnA": {
+            "pressed": false
+          },
+          "btnB": {
+            "pressed": false
+          },
+          "btnPWR": {
+            "pressed": false
+          },
+          "grove/grove-1/press": {
+            "pressed": true
+          }
+        },
+        "cable": {
+          "bend": [
+            0,
+            0,
+            -1
+          ],
+          "curveLengthMm": 65.33248649115508,
+          "faceDistanceMm": 53.15072906367329,
+          "plugCount": 2,
+          "slack": 16,
+          "source": {
+            "outward": [
+              1.3877787807814457e-17,
+              1,
+              2.7755575615628914e-17
+            ],
+            "position": [
+              0,
+              -3.552713678800501e-15,
+              0
+            ],
+            "quaternion": [
+              1.3877787807814457e-17,
+              2.081668171172168e-17,
+              -6.938893903907228e-18,
+              1
+            ]
+          },
+          "space": "module-port",
+          "target": {
+            "outward": [
+              0.3420201433256691,
+              0.6644630243886744,
+              0.6644630243886748
+            ],
+            "position": [
+              -35.00000000000003,
+              40.00000000000003,
+              1.4210854715202004e-14
+            ],
+            "quaternion": [
+              0.3768696111424635,
+              0.06645228065352392,
+              -0.16042999720436066,
+              0.9098437264664094
+            ]
+          },
+          "wireCount": 4
+        },
+        "joints": {
+          "grove/grove-1/rotation": {
+            "angleDeg": 17,
+            "continuous": true,
+            "demoRpmMax": 60,
+            "mode": "continuous",
+            "rangeDeg": null,
+            "rpm": 0,
+            "targetAngleDeg": 17,
+            "transitioning": false,
+            "visualRangeDeg": null
+          },
+          "grove/grove-2/rotor": {
+            "angleDeg": 25,
+            "continuous": true,
+            "demoRpmMax": 240,
+            "mode": "continuous",
+            "rangeDeg": null,
+            "rpm": 0,
+            "targetAngleDeg": 25,
+            "transitioning": false,
+            "visualRangeDeg": null
+          }
+        },
+        "leds": {
+          "grove/grove-1/rgb": {
+            "brightness": 0.8,
+            "color": "#00b9dc"
+          },
+          "irTx": {
+            "brightness": 0,
+            "color": "#ff2020"
+          }
+        }
+      },
+      "travel": {
+        "pressed": "true",
+        "settled": "true"
+      }
+    },
+    "after": {
+      "connection": "尚未连接",
+      "events": "grove/grove-1 · detach\ngrove/grove-1/press · up · inspect:grove/grove-1/press\ngrove/grove-1/press · down · inspect:grove/grove-1/press\ngrove/grove-2 · attach\ngrove/grove-1 · attach",
+      "model": "sticks3",
+      "selectedButton": "btnA",
+      "selectedLed": "irTx",
+      "state": {
+        "buttons": {
+          "btnA": {
+            "pressed": false
+          },
+          "btnB": {
+            "pressed": false
+          },
+          "btnPWR": {
+            "pressed": false
+          }
+        },
+        "joints": {
+          "grove/grove-2/rotor": {
+            "angleDeg": 25,
+            "continuous": true,
+            "demoRpmMax": 240,
+            "mode": "continuous",
+            "rangeDeg": null,
+            "rpm": 0,
+            "targetAngleDeg": 25,
+            "transitioning": false,
+            "visualRangeDeg": null
+          }
+        },
+        "leds": {
+          "irTx": {
+            "brightness": 0,
+            "color": "#ff2020"
+          }
+        }
+      },
+      "travel": {
+        "pressed": "false",
+        "settled": "true"
+      }
+    },
+    "scope": "Old full path in DOM event log; cancellation payload independently covered by normal check-demo-lifecycle"
+  },
+  {
+    "case": "Nested HUB subtree detach prunes ports and preserves unrelated host hold",
+    "pass": true,
+    "before": {
+      "connection": "grove → HUB",
+      "events": "btnA · down · inspect:btnA\ngrove/grove-1 · attach\ngrove/grove-1 · detach\ngrove/grove-1/press · up · inspect:grove/grove-1/press\ngrove/grove-1/press · down · inspect:grove/grove-1/press",
+      "model": "sticks3",
+      "selectedButton": "btnA",
+      "selectedLed": "irTx",
+      "state": {
+        "buttons": {
+          "btnA": {
+            "pressed": true
+          },
+          "btnB": {
+            "pressed": false
+          },
+          "btnPWR": {
+            "pressed": false
+          },
+          "grove/grove-1/press": {
+            "pressed": false
+          }
+        },
+        "cable": {
+          "bend": [
+            0,
+            0,
+            -1
+          ],
+          "curveLengthMm": 84.1920788423786,
+          "faceDistanceMm": 85,
+          "plugCount": 2,
+          "slack": 16,
+          "source": {
+            "outward": [
+              0,
+              1,
+              0
+            ],
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "space": "module-port",
+          "target": {
+            "outward": [
+              -1.2246467991473532e-16,
+              -1,
+              0
+            ],
+            "position": [
+              0,
+              85,
+              0
+            ],
+            "quaternion": [
+              0,
+              0,
+              1,
+              6.123233995736766e-17
+            ]
+          },
+          "wireCount": 4
+        },
+        "joints": {
+          "grove/grove-1/rotation": {
+            "angleDeg": 0,
+            "continuous": true,
+            "demoRpmMax": 60,
+            "mode": "continuous",
+            "rangeDeg": null,
+            "rpm": 0,
+            "targetAngleDeg": 0,
+            "transitioning": false,
+            "visualRangeDeg": null
+          },
+          "grove/grove-2/rotor": {
+            "angleDeg": 25,
+            "continuous": true,
+            "demoRpmMax": 240,
+            "mode": "continuous",
+            "rangeDeg": null,
+            "rpm": 0,
+            "targetAngleDeg": 25,
+            "transitioning": false,
+            "visualRangeDeg": null
+          }
+        },
+        "leds": {
+          "grove/grove-1/rgb": {
+            "brightness": 0,
+            "color": "#ff2020"
+          },
+          "irTx": {
+            "brightness": 0,
+            "color": "#ff2020"
+          }
+        }
+      },
+      "travel": {
+        "pressed": "true",
+        "settled": "true"
+      }
+    },
+    "after": {
+      "connection": "尚未连接",
+      "events": "grove · detach\nbtnA · down · inspect:btnA\ngrove/grove-1 · attach\ngrove/grove-1 · detach\ngrove/grove-1/press · up · inspect:grove/grove-1/press",
+      "model": "sticks3",
+      "selectedButton": "btnA",
+      "selectedLed": "irTx",
+      "state": {
+        "buttons": {
+          "btnA": {
+            "pressed": true
+          },
+          "btnB": {
+            "pressed": false
+          },
+          "btnPWR": {
+            "pressed": false
+          }
+        },
+        "joints": {},
+        "leds": {
+          "irTx": {
+            "brightness": 0,
+            "color": "#ff2020"
+          }
+        }
+      },
+      "travel": {
+        "pressed": "true",
+        "settled": "true"
+      }
+    },
+    "ports": [
+      "grove"
+    ]
+  }
+]

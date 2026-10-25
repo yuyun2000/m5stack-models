@@ -1,12 +1,22 @@
 # m5stack-models.js
 
-基于 Three.js 与 [sticks3.js](https://github.com/MarsTechHAN/sticks3.js) 建模方法的 M5Stack 毫米尺度交互模型库。当前包含 **14 款主机、27 款 Unit，共 41 款模型**。目录状态全部为 `modeled`，尚未逐款完成最终精细外观验收。
+基于 Three.js 与 [sticks3.js](https://github.com/MarsTechHAN/sticks3.js) 建模方法的 M5Stack 毫米尺度交互模型库。当前包含 **14 款主机、28 款 Unit，共 42 款模型**。目录状态全部为 `modeled`，尚未逐款完成最终精细外观验收。
 
 模型提供外观、实体按键行程、稳定开关、旋转/倾斜关节、Grove 插头线缆与外部灯光。屏幕接收外部帧缓冲，控件输出输入意图；固件、电气、协议、传感器数值及设备物理行为由下游系统提供。
 
-![当前装配视图](artifacts/lifecycle-refinement/stackchan-overview.jpg)
+![当前交互扩展](artifacts/interaction-expansion/overview.jpg)
 
-本轮修复接口装卸和输入生命周期：同实例原口挂载幂等、跨口转移不重复更新；拆卸前能在旧路径收到取消弹起。Viewer重复/跨实例挂载与销毁清理已回归，demo保留有效按键检查/LED选位，并释放过期异步加载结果。正常检查包含17类Port、13类Viewer和7类异步场景；浏览器证据见 `artifacts/lifecycle-refinement/`。
+本批新增 Unit Scroll U186：原 CAD 滚轮可旋转、按下和回弹，RGB 独立外驱；补齐开口 Grove 座和重建 PCB。0.25 mm 压程与隐藏支撑动作是外观近似。HUB 输出现在可继续接 Scroll、Fan 等 Unit，菜单保留完整端口路径，拆除子树时清理下游输入。Display 触点和帧缓冲纹理释放也已修复。
+
+StackChan 顶部前／中／后三个电容触区和左右共十二路 RGB 均随头部关节，触摸不自动点灯。90° 抬头时中触区仍被现有盖座遮挡，整机可达性为 `partial`；隐藏舵机配合仍为 `fit-unresolved`。所有模型保持 `modeled`，贴纸继续等待原文件。
+
+[Scroll 按压回位](artifacts/interaction-expansion/scroll-press.gif) · [真实 HUB 接线](artifacts/interaction-expansion/nested-hub.png) · [顶部 RGB](artifacts/interaction-expansion/stackchan-top-rgb.png)
+
+公开版的本批独立验证记录见 [review.json](artifacts/interaction-expansion/public/review.json)；其中浏览器动作、日志、源码指纹和真实命令回执分别记录，有限采样不代表硬件或制造配合。
+
+上一轮装卸生命周期快照：
+
+上一轮修复接口装卸和输入生命周期：同实例原口挂载幂等、跨口转移不重复更新；拆卸前能在旧路径收到取消弹起。Viewer重复/跨实例挂载与销毁清理已回归，demo保留有效按键检查/LED选位，并释放过期异步加载结果。正常检查包含17类Port、13类Viewer和7类异步场景；浏览器证据见 `artifacts/lifecycle-refinement/`。
 
 StackChan修正两端独立安装耳，保留真实舵机尺寸与关节轴。隐藏机械配合仍为 `fit-unresolved`，严格诊断以2退出；盖板/电机/Adapter候选没有进入运行模型。详情见 [数值诊断](artifacts/stackchan-servo-fit-check.json) 和 [视觉运动边界](docs/VISUAL-MOTION.md)。
 

@@ -28,6 +28,12 @@ for(const [script,id,exportName]of [
  try{const result=test(model);checks.push({script:`scripts/${script}`,product:id,...result});console.log(`PASS ${id} assembly:`,JSON.stringify(result));}finally{model.dispose();}
 }
 const dynamics=[];
+const {checkStackChanTouchLed}=await import('./check-stackchan-touch-led.mjs');
+dynamics.push({script:'scripts/check-stackchan-touch-led.mjs',...await checkStackChanTouchLed()});
+const {checkDisplayTouch}=await import('./check-display-touch.mjs');
+dynamics.push({script:'scripts/check-display-touch.mjs',...await checkDisplayTouch()});
+const {checkScroll}=await import('./check-scroll.mjs');
+dynamics.push({script:'scripts/check-scroll.mjs',...await checkScroll()});
 const {checkPortLifecycle}=await import('./check-port-lifecycle.mjs');
 dynamics.push({script:'scripts/check-port-lifecycle.mjs',...await checkPortLifecycle()});
 const {checkViewerLifecycle}=await import('./check-viewer-lifecycle.mjs');

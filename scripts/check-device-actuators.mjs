@@ -3,7 +3,7 @@ import {pathToFileURL} from 'node:url';
 import * as THREE from 'three';
 import {loadModel} from '../src/loaders.js';
 
-export const DEVICE_BUTTON_COUNTS={sticks3:3,cores3:2,stopwatch:3,'cardputer-adv':60,'cardputer-zero':48,papermono:3,core2:5,papercolor:4,nanoc6:1,stackchan:2,tab5:2,atoms3r:2,'nesso-n1':2,stamplc:4};
+export const DEVICE_BUTTON_COUNTS={sticks3:3,cores3:2,stopwatch:3,'cardputer-adv':60,'cardputer-zero':48,papermono:3,core2:5,papercolor:4,nanoc6:1,stackchan:5,tab5:2,atoms3r:2,'nesso-n1':2,stamplc:4};
 const settle=model=>{for(let i=0;i<80;i++)model.update(1/60);model.root.updateMatrixWorld(true);};
 const physicalMeshes=button=>{const meshes=[];button.cap.traverse(o=>{if(o.isMesh&&(Array.isArray(o.material)?o.material:[o.material]).some(m=>m.opacity>.05))meshes.push(o);});return meshes;};
 function visiblePoint(meshes,out){

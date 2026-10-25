@@ -563,13 +563,54 @@
       "limitations": [
         "采用官方壳体/舵机盖板，前侧Power板归pitch、下端Adapter归yaw，七线跨关节，底座USB保持固定；后部为真实开放机构。",
         "隐藏pitch舵机包装与旧照片重建颈座/盖内腔仍有局部体积交叠；保留官方壳/轴，不宣称完整干涉或制造配合通过。线束路线和接头局部尺寸为外观近似。",
-        "yaw/pitch为外部驱动的视觉关节；pitch以当前正视为0、正角抬头，绝对硬件零位未校准；贴纸等待原文件。"
+        "yaw/pitch为外部驱动的视觉关节；pitch以当前正视为0、正角抬头，绝对硬件零位未校准；贴纸等待原文件。",
+        "Touch boundaries and RGB segment order/spacing are visual inferences; no electrical chain mapping or touch-to-light behavior. Full scene access remains partial: middle touch zone is occluded by the retained servo-side-cover at pitch90 degrees."
       ],
       "nextAction": "继续校准隐藏舵机包装、线束真实走向和硬件零位；保留真实开放机构，贴纸等待原文件。",
       "cadEnvelopeMm": [
         54,
         70.5,
         61.5
+      ],
+      "externalLeds": [
+        "rgb-left-1",
+        "rgb-left-2",
+        "rgb-left-3",
+        "rgb-left-4",
+        "rgb-left-5",
+        "rgb-left-6",
+        "rgb-right-1",
+        "rgb-right-2",
+        "rgb-right-3",
+        "rgb-right-4",
+        "rgb-right-5",
+        "rgb-right-6"
+      ],
+      "visualControls": [
+        {
+          "id": "touch-1",
+          "kind": "button",
+          "capacitive": true,
+          "travelMm": 0,
+          "physicalZone": "front",
+          "rangeEvidence": "BSP Front/Middle/Back; exact electrode boundaries inferred"
+        },
+        {
+          "id": "touch-2",
+          "kind": "button",
+          "capacitive": true,
+          "travelMm": 0,
+          "physicalZone": "middle",
+          "rangeEvidence": "BSP Front/Middle/Back; exact electrode boundaries inferred"
+        },
+        {
+          "id": "touch-3",
+          "kind": "button",
+          "capacitive": true,
+          "travelMm": 0,
+          "physicalZone": "back",
+          "rangeEvidence": "BSP Front/Middle/Back; exact electrode boundaries inferred"
+        }
       ]
     },
     {
@@ -2936,6 +2977,79 @@
         "Hidden PCB outline is an appearance reconstruction with full boss/central relief and narrow bridges, validated by sampled shell-material containment; not fabrication CAD or a tolerance/physical-fit result."
       ],
       "nextAction": "核准EC11A实际装配型号/额定压程与隐藏件尺寸；当前旋转、压放、稳定档位和RGB仅为外驱视觉状态。"
+    },
+    {
+      "id": "scroll",
+      "category": "unit",
+      "name": "Unit Scroll",
+      "sku": "U186",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        32,
+        18.9
+      ],
+      "cadEnvelopeMm": [
+        24,
+        32,
+        18.9
+      ],
+      "visualEnvelopeMm": [
+        24,
+        32,
+        18.935
+      ],
+      "stage": "modeled",
+      "entry": "src/units/scroll/index.js",
+      "export": "Model",
+      "reference": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-Scroll/6.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/UNIT-Scroll",
+      "research": "source-manifest.json",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": null,
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          -4
+        ],
+        [
+          8,
+          -4
+        ]
+      ],
+      "visualControls": [
+        {
+          "id": "rotation",
+          "kind": "joint",
+          "continuous": true,
+          "axis": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "press",
+          "kind": "button",
+          "travelMm": 0.25,
+          "rangeEvidence": "visual estimate"
+        }
+      ],
+      "externalLeds": [
+        "rgb"
+      ],
+      "limitations": [
+        "0.25 mm push stroke and the paired wheel/axle-insert press group are appearance approximations; the real concealed pivot/switch support motion is unconfirmed. PCB outline is reconstructed within measured source cavities, not fabrication CAD.",
+        "Official assembled STL wheel and axle rotate together; rotation generates no encoder counts, bus values, firmware or physics.",
+        "Source components 1/2/4/6/8 are displaced duplicates and are excluded. Original stickers remain deferred."
+      ],
+      "nextAction": "复核官方滚轮按压支撑/额定行程；核对七视图、旋转/回位与实际主机Grove连接。"
     }
   ],
   "artworkPolicy": "Photographic sticker crops disabled by default; awaiting user-supplied originals. Do not use artwork to conceal missing geometry."
