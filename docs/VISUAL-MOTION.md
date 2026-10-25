@@ -57,6 +57,7 @@ type JointState = {
 | Fan `rotor` | +Y轴上的实心输出轴；`propeller:true`时连同60mm双叶和轮毂 | 默认裸轴；只有外部给rpm后才转；demo≤240rpm |
 | Encoder `rotation` | 整个带肋旋钮绕+Z转 | 连续轴；保留原 `press` 真帽压放；demo≤60rpm |
 | Angle `rotation` | 电位器旋钮绕+Z转，底座不动 | 仅绝对角度；viewer建议−150…150°；官方机械总转角/零位未确认 |
+| Light U021 `trim` | 位置`[0,2.5,3.72]` mm上的金属微调头绕+Z转，蓝色座和光敏电阻固定 | 位置式，不接受非零rpm；viewer建议−135…135°，额定机械限位/旋向/电气零位未确认 |
 | Joystick `tilt-x`, `tilt-y` | 真实摇杆/帽在座口附近分别绕X/Y倾斜 | viewer建议每轴−20…20°；实际机械限位未确认；原 `press` 沿倾斜后的杆轴压放 |
 | 8Encoder `rotation-1`…`rotation-8` | 八个独立带肋空心旋钮绕+Z转 | 连续外驱；各自 `press-1`…`press-8` 沿局部−Z压放0.35 mm，行程为外观估计 |
 | Scroll `rotation` | 官方原始滚轮与轴绕+X转 | 连续外驱；`press` 将轮与轴端插入件作为共同按压组，沿机身−Z压0.25 mm，隐藏支撑机理未确认 |
@@ -64,6 +65,21 @@ type JointState = {
 StackChan前侧Power板属于pitch，下端Adapter属于yaw，七根实体线束的两端跟随各自装配坐标。后部真实开放，底座USB保持固定。隐藏舵机包装和线束路线为外观近似，不声明实物制造配合。
 
 旋钮/摇杆按压继续使用既有 Button API，例如 `button('press').press('framework')` 与对应 `release('framework')`。按钮记录的是输入意图和帽的位置，不生成编码器脉冲、摇杆ADC或按键寄存器。StackChan的 `power`/`reset` 保留原ID，继承CoreS3真正的可动帽并跟随头部姿态。
+
+## Light微调头
+
+U021官方原理图确认R3为10K可调电阻，正面照片可见蓝座中的金属工具槽。`trim`只驱动该实体头；半径1.5 mm、槽深0.32 mm、局部座位和蓝色座尺寸均为照片估计，工具槽保留真实凹腔。`visualRangeDeg=[-135,135]`是demo范围，`rangeDeg=null`，不声明270°额定转角、转数、端挡或电气零位，也不换算电阻/光强阈值/LM393输出。
+
+```js
+import {loadModel, loadGroveModule} from 'm5stack-models.js/loaders';
+
+const light = await loadModel('light');
+light.get('trim').set({angleDeg:45});
+
+const host = await loadModel('sticks3');
+host.port('grove').attach(await loadGroveModule('light', {cableLength:70}));
+host.handle({type:'joint',target:'grove/trim',angleDeg:-45});
+```
 
 ## 弯曲片与杠杆按压
 
@@ -91,7 +107,7 @@ joint.adopt(capGroup); // mount之后，将中性姿态实体归到轴下；保�
 
 ## 依据与验证
 
-StackChan轴线/分组、原孔盖座和舵机轮廓事实见 `source-manifest.json` 的 `motionStructures` 与 StackChan 产品的 `movingAssembly`、`coverSeatReview`、`servoOutlineReview`；原始变换记录见 `src/devices/stackchan/cad-map-motion.json`。Angle/Joystick的精确机械限位和硬件零位仍未确认。
+StackChan轴线/分组、原孔盖座和舵机轮廓/输出轴事实见 `source-manifest.json` 的 `motionStructures` 与 StackChan 产品的 `movingAssembly`、`coverSeatReview`、`servoOutlineReview`；原始变换记录见 `src/devices/stackchan/cad-map-motion.json`。Angle/Joystick/Light的精确机械限位和硬件零位仍未确认。
 
 ```sh
 node scripts/check-visual-motion.mjs

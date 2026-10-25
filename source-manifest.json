@@ -1,6 +1,6 @@
 {
   "preparedAt": "2026-10-25T13:20:33.030Z",
-  "sourceCommit": "a8832250b7e09abdfc5120756642b7a84c4ed97e",
+  "sourceCommit": "6c815811ebb2b5ba33724b2f1119d27d0447ae38",
   "scope": "Factual provenance only; no official reference binaries or MCP source text are included.",
   "upstreams": {
     "sticks3": {
@@ -1431,7 +1431,7 @@
         ]
       },
       "servoOutlineReview": {
-        "checkedAt": "2026-10-25T16:50:54.293864+00:00",
+        "checkedAt": "2026-10-25T17:26:13.402Z",
         "sources": [
           {
             "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1205/SCS0009.pdf",
@@ -1455,19 +1455,120 @@
             },
             "profile": "Unequal circles with their external common tangents; old equal-radius stadium extended too far toward the small gear",
             "limits": "Side-view 2.9 is an axial dimension and is not used as a radius. Cap depth and concealed steps are still appearance approximations."
+          },
+          {
+            "id": "output-spline-envelope",
+            "source": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1205/SCS0009.pdf",
+            "page": 6,
+            "annotated": {
+              "teeth": 20,
+              "outerDiameterMm": 3.95,
+              "lengthMm": 3.2
+            },
+            "interpretation": "OD3.95 is the tooth-tip envelope. A radius-1.975 solid cylinder with additional external teeth exceeds that envelope.",
+            "approximation": {
+              "rootRadiusMm": 1.75,
+              "profile": "Twenty repeated straight flanks with circular tooth-tip arcs; root radius and tooth flank geometry are appearance approximations, not dimensioned manufacturing data."
+            },
+            "unchanged": "Output axes, output face planes, motor placements, case/ears/caps and source cover seats are unchanged."
           }
         ],
         "validation": {
           "script": "scripts/check-stackchan-servo-outline.mjs",
           "profileProbes": 22,
           "defaultRequiresRawPdf": false,
-          "scope": "Native cap silhouette probes only; the source-profile comparison is separate from current complete installation fit"
+          "scope": "Actual output vertices retain OD3.95 and 3.2 mm length; both side-triangle profiles have twenty separated tooth-tip bands and 18-degree repetition. Root radius/flanks remain appearance estimates. This does not establish axial arm engagement, global registration or hidden complete installation fit.",
+          "servoCaps": 2,
+          "shafts": [
+            {
+              "name": "Pitch",
+              "maximumVertexRadiusMm": 1.9750000544152855,
+              "maximumVertexDiameterMm": 3.950000108830571,
+              "lengthMm": 3.200000047683716,
+              "axialBoundsMm": [
+                0,
+                3.200000047683716
+              ],
+              "radialSamples": 720,
+              "minimumSampledRadiusMm": 1.7499999739812797,
+              "maximumSampledRadiusMm": 1.9749999725213427,
+              "toothTipBands": 20,
+              "periodDeg": 18,
+              "scope": "Annotated external envelope and twenty-fold rendered relief; root radius/flanks are appearance approximations, not a spline-fit tolerance"
+            },
+            {
+              "name": "Yaw",
+              "maximumVertexRadiusMm": 1.9750000544152855,
+              "maximumVertexDiameterMm": 3.950000108830571,
+              "lengthMm": 3.200000047683716,
+              "axialBoundsMm": [
+                0,
+                3.200000047683716
+              ],
+              "radialSamples": 720,
+              "minimumSampledRadiusMm": 1.7499999739812797,
+              "maximumSampledRadiusMm": 1.9749999725213427,
+              "toothTipBands": 20,
+              "periodDeg": 18,
+              "scope": "Annotated external envelope and twenty-fold rendered relief; root radius/flanks are appearance approximations, not a spline-fit tolerance"
+            }
+          ],
+          "radialSamples": 1440,
+          "shaftEnvelopeCorrection": {
+            "checkedAt": "2026-10-25T17:26:13.402Z",
+            "script": "scripts/check-stackchan-servo-outline.mjs",
+            "before": {
+              "sourceSha256": "ddac91693ba0362f9a3e2e190cec1e8464b5bda7e407d6cd6b04e4692d4f074a",
+              "maximumVertexDiameterMm": 4.085927064643799
+            },
+            "after": {
+              "sourceSha256": "bb005356f53d826dcd8cd9a77a25b51a0b0c401ecd691cd396bfc36c3849b0d3",
+              "checkerSha256": "ac2d21d477221c6fa5f41c3288ea16bc6a4deb60a522e06b9cfb4c41ee9810a6",
+              "shafts": [
+                {
+                  "name": "Pitch",
+                  "maximumVertexRadiusMm": 1.9750000544152855,
+                  "maximumVertexDiameterMm": 3.950000108830571,
+                  "lengthMm": 3.200000047683716,
+                  "axialBoundsMm": [
+                    0,
+                    3.200000047683716
+                  ],
+                  "radialSamples": 720,
+                  "minimumSampledRadiusMm": 1.7499999739812797,
+                  "maximumSampledRadiusMm": 1.9749999725213427,
+                  "toothTipBands": 20,
+                  "periodDeg": 18,
+                  "scope": "Annotated external envelope and twenty-fold rendered relief; root radius/flanks are appearance approximations, not a spline-fit tolerance"
+                },
+                {
+                  "name": "Yaw",
+                  "maximumVertexRadiusMm": 1.9750000544152855,
+                  "maximumVertexDiameterMm": 3.950000108830571,
+                  "lengthMm": 3.200000047683716,
+                  "axialBoundsMm": [
+                    0,
+                    3.200000047683716
+                  ],
+                  "radialSamples": 720,
+                  "minimumSampledRadiusMm": 1.7499999739812797,
+                  "maximumSampledRadiusMm": 1.9749999725213427,
+                  "toothTipBands": 20,
+                  "periodDeg": 18,
+                  "scope": "Annotated external envelope and twenty-fold rendered relief; root radius/flanks are appearance approximations, not a spline-fit tolerance"
+                }
+              ]
+            },
+            "method": "Read every actual output mesh vertex in the rotary-output frame, measure radial/axial envelope; raycast actual side triangles at 720 radial directions per shaft, count 20 separated tip bands and verify 18-degree repetition.",
+            "scope": "External shaft envelope and visible twenty-fold relief only; no manufacturing spline profile, axial arm engagement or complete motor installation fit is asserted."
+          }
         },
         "limitations": [
-          "Physical case dimensions and output shaft are retained; installation seat is not proved by this silhouette check.",
-          "Small radius, axial layers and hidden mounting retain explicit appearance uncertainty."
+          "Annotated case dimensions and output-shaft length/axis are retained; installation seat is not proved by this silhouette and envelope check.",
+          "Small radius, axial layers and hidden mounting retain explicit appearance uncertainty.",
+          "The 20T shaft tooth-tip OD3.95 and 3.2 mm length are dimensioned; the 1.75 mm root radius and flanks are explicit appearance approximations. Correcting their visible envelope does not resolve hidden motor fit or the unconfirmed axial arm seat."
         ],
-        "scope": "Native SCS0009 visual gearbox-cap silhouette correction; original case/shaft and assembly fit remain distinct"
+        "scope": "Native SCS0009 visual gearbox-cap silhouette and annotated output-spline envelope correction; hidden complete installation fit remains distinct"
       },
       "currentServoFit": {
         "status": "fit-unresolved",
@@ -1603,6 +1704,13 @@
             }
           }
         ],
+        "sourceSnapshot": {
+          "sourceCommit": "6c815811ebb2b5ba33724b2f1119d27d0447ae38",
+          "report": "artifacts/stackchan-servo-fit-check.json",
+          "reportSha256": "44d00dfff4e12b56dcce6379f1c073ef26ccc9842e311b21a119d318575fbbd9",
+          "runtimeSha256": "bb005356f53d826dcd8cd9a77a25b51a0b0c401ecd691cd396bfc36c3849b0d3",
+          "scope": "Completed finite diagnostic from the frozen shaft-refined runtime; strict unresolved status is not manufacturing-fit acceptance."
+        },
         "scope": "Current finite diagnostic retains fit-unresolved; per-part occupancy is not a continuous union-volume or manufacturing-fit result"
       }
     },
@@ -2101,7 +2209,92 @@
           "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/COLOR/img-8a6ebbb4-f768-466a-b7d4-53ae5318f8ed.webp",
           "sha256": "502b4be2319e9706c27bd1c966dca914ab6df6650c4adce4f07cd97869f7808b"
         }
-      ]
+      ],
+      "visibleFunctionReview": {
+        "checkedAt": "2026-10-25T17:31:30.757167+00:00",
+        "scope": "Visual geometry and explicitly external appearance state only; no electrical, sensor, firmware or manufacturing-fit simulation",
+        "decision": "Expose the two physically white fill emitters as separately addressable visual locations, default white/off. Reflect their shared physical supply at the caller boundary.",
+        "sources": [
+          {
+            "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/COLOR/img-5e8f77b1-0a2d-4810-8b8d-c2374bd738fb.webp",
+            "sha256": "a08c039738baf820018bc360d7ca8bd111ef4af8ce57a376c97aebf32ec4e74c",
+            "kind": "official-photo"
+          }
+        ],
+        "schematic": {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/707/U009-UNIT_COLOR-SCHE.pdf",
+          "page": 1,
+          "evidenceMode": "Fresh official MCP schematic description, figure 01245e56e695, A1; no new local PDF hash is claimed"
+        },
+        "facts": [
+          "D1 and D2 are white 0603 fill LEDs.",
+          "Each LED is fed by VCC through its own 1K resistor R1/R2 and returns to GND.",
+          "The schematic does not show independent GPIO/I2C illumination control."
+        ],
+        "implementation": {
+          "entry": "src/units/color/index.js",
+          "sourceSha256": "7f77c52191376a725466ef45537231367336b982e4b65cfcdfaeacefbc1f6d40",
+          "kind": "led",
+          "ids": [
+            "fill-left",
+            "fill-right"
+          ],
+          "defaultColor": "#ffffff",
+          "defaultBrightness": 0,
+          "addressing": "Standalone led(id) / get(id), or host.get(\"grove/fill-left\") and host.get(\"grove/fill-right\") after mounting",
+          "powerGroup": "VCC fill pair",
+          "independentElectricalControl": false,
+          "colorParameter": "The shared Led color field is a rendering override, not evidence of RGB hardware. Use white for physical appearance.",
+          "automaticBehavior": false
+        },
+        "limitations": {
+          "explicitInferences": [
+            {
+              "field": "packageXYmm",
+              "value": {
+                "fill-left": [
+                  -3.4,
+                  8
+                ],
+                "fill-right": [
+                  3.4,
+                  8
+                ]
+              },
+              "basis": "Existing photo-fitted package XY retained; not annotated dimensions."
+            },
+            {
+              "field": "packageZmm",
+              "value": 3.72,
+              "basis": "Appearance seating estimate relative to the existing optical window."
+            },
+            {
+              "field": "packageSizeMm",
+              "value": [
+                1.2,
+                1.6,
+                0.3
+              ],
+              "basis": "Photo-derived visual package envelope; not a measured 0603 drawing."
+            },
+            {
+              "field": "glowSizeMm",
+              "value": 1.8,
+              "basis": "Rendered diffusion estimate; not photometric data."
+            },
+            {
+              "field": "physicalSideToSchematicDesignator",
+              "value": null,
+              "basis": "Left/right do not assert D1/D2 correspondence."
+            }
+          ],
+          "excludedBehavior": [
+            "No automatic supply/measurement response.",
+            "No color-sensor readings, RGBC conversion, I2C registers or electrical current simulation.",
+            "No claim that the physical pair is independently addressable or RGB."
+          ]
+        }
+      }
     },
     {
       "id": "tof",
@@ -2177,7 +2370,114 @@
           "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/LIGHT/img-884c70cd-7472-465e-b3f2-1e80c3470a8a.webp",
           "sha256": "f44b536da316c4601eca875e48c0233dc82cb4eefcf265152fe4ad0dc0994f81"
         }
-      ]
+      ],
+      "visibleFunctionReview": {
+        "checkedAt": "2026-10-25T17:31:30.757167+00:00",
+        "scope": "Visual geometry and explicitly external appearance state only; no electrical, sensor, firmware or manufacturing-fit simulation",
+        "decision": "Replace the star mark with a real slotted metal trimmer head in a fixed blue carrier, driven only by the external trim joint angle.",
+        "sources": [
+          {
+            "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/LIGHT/img-0b6d72e0-3533-4245-9c84-bfe6c24a50a6.webp",
+            "sha256": "e034667d1aa92f00cdd1546613fb121e4a606b5ad8e6422af88b38b379c931c3",
+            "kind": "official-photo"
+          }
+        ],
+        "schematic": {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/709/U201-UNIT_LIGHT_SCHE.pdf",
+          "page": 1,
+          "evidenceMode": "Fresh official MCP schematic description, figure 989a79e59186, B1-B2; no new local PDF hash is claimed"
+        },
+        "facts": [
+          "R3 is marked RPot 10K.",
+          "Its ends connect to +3.3V/GND and its wiper provides the LM393 comparator threshold.",
+          "The visible front photograph shows a slotted adjustment head in the blue trimmer carrier."
+        ],
+        "implementation": {
+          "entry": "src/units/light/index.js",
+          "sourceSha256": "643e2960b6eb7984d0d637d453a8da0b14ba69771e3fcfe6c42e0ff70e3c67ff",
+          "kind": "joint",
+          "id": "trim",
+          "positionMm": [
+            0,
+            2.5,
+            3.72
+          ],
+          "localAxis": [
+            0,
+            0,
+            1
+          ],
+          "mode": "position",
+          "continuous": false,
+          "rangeDeg": null,
+          "visualRangeDeg": [
+            -135,
+            135
+          ],
+          "defaultAngleDeg": 0,
+          "rpm": "Nonzero rpm is rejected; rpm=0 remains the generic stop command.",
+          "addressing": "Standalone get(\"trim\"), or host.get(\"grove/trim\") after mounting",
+          "rangeScope": "Viewer illustration only; manufacturer, mechanical stops, handedness and electrical zero remain unconfirmed."
+        },
+        "limitations": {
+          "explicitInferences": [
+            {
+              "field": "blueCarrierSizeMm",
+              "value": [
+                7,
+                6,
+                0.8
+              ],
+              "basis": "Photo-derived fixed housing envelope."
+            },
+            {
+              "field": "headRadiusMm",
+              "value": 1.5,
+              "basis": "Photo-derived cap radius; not a rated part dimension."
+            },
+            {
+              "field": "headDepthAndToolSlotDepthMm",
+              "value": 0.32,
+              "basis": "Appearance-only extrusion depth above the recessed floor."
+            },
+            {
+              "field": "toolSlotOpeningMm",
+              "value": [
+                2.36,
+                0.46
+              ],
+              "basis": "Appearance estimate with a real void and recessed floor."
+            },
+            {
+              "field": "headDatumMm",
+              "value": [
+                0,
+                2.5,
+                3.72
+              ],
+              "basis": "Fitted to the existing front opening; absolute mechanical datum unconfirmed."
+            },
+            {
+              "field": "positiveRotationAndNeutralPose",
+              "value": "+Z right-hand rotation, current rendered pose = 0",
+              "basis": "Visual coordinate convention; no electrical direction/zero calibration."
+            },
+            {
+              "field": "demoRangeDeg",
+              "value": [
+                -135,
+                135
+              ],
+              "basis": "Viewer convenience only; not a measured 270-degree mechanical range."
+            }
+          ],
+          "excludedBehavior": [
+            "No resistance/threshold/LM393 comparison/ADC conversion.",
+            "No light readings or automatic output state.",
+            "No claim of rated end stops, number of turns or potentiometer part number."
+          ]
+        }
+      }
     },
     {
       "id": "relay",
@@ -2214,8 +2514,84 @@
         {
           "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/relay/relay_06.webp",
           "sha256": "83e5d0d164339f93bab8708fb3e8e5fa782c1d3eaec41523fd498ea197037d10"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/577/UNIT-RELAY.pdf",
+          "sha256": "bf05690fbb30fc8395cc9c20c7815257ffee425b2af56eb2787805d8c59a9971"
         }
-      ]
+      ],
+      "visibleFunctionReview": {
+        "checkedAt": "2026-10-25T17:31:30.757167+00:00",
+        "scope": "Visual geometry and explicitly external appearance state only; no electrical, sensor, firmware or manufacturing-fit simulation",
+        "decision": "Do not add a guessed status LED to this selected U023 model. Retain the physical relay/terminal geometry and record the documentation conflict.",
+        "sources": [
+          {
+            "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/relay/relay_01.webp",
+            "sha256": "34077dc27afefa893545db945932f98b56b04e8b51a4bc9b7bd7c68b409997e6",
+            "kind": "official-photo"
+          },
+          {
+            "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/relay/relay_06.webp",
+            "sha256": "83e5d0d164339f93bab8708fb3e8e5fa782c1d3eaec41523fd498ea197037d10",
+            "kind": "official-photo"
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/577/UNIT-RELAY.pdf",
+            "sha256": "bf05690fbb30fc8395cc9c20c7815257ffee425b2af56eb2787805d8c59a9971",
+            "bytes": 60064,
+            "page": 1,
+            "kind": "official-schematic-pdf"
+          }
+        ],
+        "schematic": {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/577/UNIT-RELAY.pdf",
+          "page": 1,
+          "reviewMethods": [
+            "Root-agent pypdf text inspection",
+            "Root-agent pdftoppm render and visual inspection",
+            "Fresh official MCP schematic description, figure 53a2b49503f4"
+          ]
+        },
+        "facts": [
+          "K1 is Relay-SPDT, Q1 is SS8050 Y1, R1/R2 are driver/pulldown resistors.",
+          "D1 is 1N4148WS T4, the coil flyback diode; it is not an LED.",
+          "J1/J2 provide control/power and COM/NO/NC.",
+          "This exact official schematic does not contain a status LED."
+        ],
+        "implementation": {
+          "entry": "src/units/relay/index.js",
+          "sourceSha256": "3e409b855e08e3002f5e2d43bc5ab58dad0136f423d23a6a7c5c3aff77746c3d",
+          "kind": "none",
+          "ledIds": [],
+          "automaticBehavior": false
+        },
+        "limitations": {
+          "explicitInferences": [
+            {
+              "field": "indicatorLocation",
+              "value": null,
+              "basis": "No verified LED part or visible location for this selected source revision; no emitter invented."
+            }
+          ],
+          "excludedBehavior": [
+            "No guessed LED or indicator power behavior.",
+            "No electrical relay switching, coil physics or load simulation."
+          ]
+        },
+        "sourceConflict": {
+          "classification": "source-conflict-unconfirmed",
+          "overviewClaim": "The product overview/features state that a relay status indicator exists.",
+          "sourceSpecificConclusion": "The selected official PDF has no status LED; relay_06.webp does not locate a visible lamp.",
+          "scope": "This exact source/photographed revision only. Absence in this PDF is not a claim about every historical U023 hardware revision.",
+          "resolution": "Pending official clarification of the claimed LED, precise hardware revision/designator/PCB position or corrected overview. Legacy snapshots are preserved, not silently rewritten.",
+          "feedback": {
+            "id": "a3df6baaef22420dac639e23af0b302a",
+            "accepted": true,
+            "status": "accepted-for-human-review",
+            "qualification": "Acceptance confirms receipt only; it does not confirm a documentation correction or a physical LED."
+          }
+        }
+      }
     },
     {
       "id": "joystick-v11",
@@ -3260,6 +3636,6 @@
       }
     ]
   },
-  "updatedAt": "2026-10-25T17:12:10.817Z",
+  "updatedAt": "2026-10-25T17:47:45.575Z",
   "syncedAt": "2026-10-25T14:15:24.398Z"
 }

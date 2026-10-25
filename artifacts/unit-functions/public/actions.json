@@ -1,0 +1,143 @@
+[
+  {
+    "case": "color seven rendered views",
+    "pass": true
+  },
+  {
+    "case": "light seven rendered views",
+    "pass": true
+  },
+  {
+    "case": "stackchan seven rendered views",
+    "pass": true
+  },
+  {
+    "case": "Color one physical address leaves its peer unchanged",
+    "pass": true,
+    "state": {
+      "fill-left": {
+        "color": "#ffffff",
+        "brightness": 0.65
+      },
+      "fill-right": {
+        "color": "#ffffff",
+        "brightness": 0
+      }
+    }
+  },
+  {
+    "case": "Color white fill pair external on and off",
+    "pass": true,
+    "state": {
+      "fill-left": {
+        "color": "#ffffff",
+        "brightness": 0.65
+      },
+      "fill-right": {
+        "color": "#ffffff",
+        "brightness": 0.65
+      }
+    },
+    "scope": "Two addressable appearance cells; actual VCC is common and is not electrically emulated"
+  },
+  {
+    "case": "Light actual slotted head rotation and neutral return",
+    "pass": true,
+    "state": {
+      "angleDeg": 67,
+      "targetAngleDeg": 67,
+      "rpm": 0,
+      "transitioning": false,
+      "mode": "position",
+      "continuous": false,
+      "rangeDeg": null,
+      "visualRangeDeg": [
+        -135,
+        135
+      ],
+      "demoRpmMax": 0
+    }
+  },
+  {
+    "case": "Light position-only demo with unconfirmed rated stops",
+    "pass": true
+  },
+  {
+    "case": "Real StickS3 HUB Light pose uses the complete path",
+    "pass": true,
+    "port": "grove/grove-1 → Light",
+    "joint": {
+      "angleDeg": 47,
+      "targetAngleDeg": 47,
+      "rpm": 0,
+      "transitioning": false,
+      "mode": "position",
+      "continuous": false,
+      "rangeDeg": null,
+      "visualRangeDeg": [
+        -135,
+        135
+      ],
+      "demoRpmMax": 0
+    }
+  },
+  {
+    "case": "Real StickS3 HUB Color pair uses complete paths",
+    "pass": true,
+    "state": {
+      "grove/grove-2/fill-left": {
+        "color": "#ffffff",
+        "brightness": 0.4
+      },
+      "grove/grove-2/fill-right": {
+        "color": "#ffffff",
+        "brightness": 0.4
+      },
+      "irTx": {
+        "color": "#ff2020",
+        "brightness": 0
+      }
+    }
+  },
+  {
+    "case": "Detach trimmer subtree preserves sibling fill appearance",
+    "pass": true
+  },
+  {
+    "case": "StackChan source-size shaft follows articulated assembly",
+    "pass": true,
+    "state": {
+      "pitch": {
+        "angleDeg": 60,
+        "targetAngleDeg": 60,
+        "rpm": 0,
+        "transitioning": false,
+        "mode": "position",
+        "continuous": false,
+        "rangeDeg": [
+          0,
+          90
+        ],
+        "visualRangeDeg": null,
+        "demoRpmMax": 0
+      },
+      "yaw": {
+        "angleDeg": 35,
+        "targetAngleDeg": 35,
+        "rpm": 0,
+        "transitioning": false,
+        "mode": "continuous",
+        "continuous": true,
+        "rangeDeg": null,
+        "visualRangeDeg": null,
+        "demoRpmMax": 20
+      }
+    },
+    "scope": "Browser pose and source shaft geometry checked separately by actual vertex/radial-ray specialist test"
+  },
+  {
+    "case": "StackChan pitch90 middle touch remains directly reachable",
+    "pass": true,
+    "inputs": "touch-2 · click · pointer:1\ntouch-2 · up · pointer:1\ntouch-2 · down · pointer:1"
+  }
+]

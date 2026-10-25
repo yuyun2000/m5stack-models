@@ -1,7 +1,27 @@
 {
-  "checkedAt": "2026-10-25T17:14:28.947Z",
+  "checkedAt": "2026-10-25T17:49:58.806Z",
   "scope": "Actual control movement and externally driven visual kinematics; no hardware/runtime validation",
   "checks": [
+    {
+      "script": "scripts/check-unit-visible-functions.mjs",
+      "status": "pass",
+      "color": {
+        "physicalWhitePackages": 2,
+        "visiblePackageRays": 50,
+        "defaultOff": true,
+        "commonPhysicalPowerWithoutElectricalEmulation": true
+      },
+      "light": {
+        "actualHeadPoses": 7,
+        "toolSlotRays": 3,
+        "toolSlotDepthMm": 0.32,
+        "exactReturn": true,
+        "continuous": false,
+        "ratedLimitsConfirmed": false
+      },
+      "nestedCommands": 3,
+      "scope": "Actual visible mesh/ray and external API checks for U009 fill packages and U021 manual head; geometry depths and demo angle range are appearance estimates, no physical/electrical/sensor or manufacturing validation"
+    },
     {
       "script": "scripts/check-stackchan-cover-seats.mjs",
       "status": "pass",
@@ -235,7 +255,7 @@
     {
       "script": "scripts/check-stackchan-servo-outline.mjs",
       "status": "pass",
-      "source": "Official linked SCS0009.pdf p6 top-view unequal-radius outline",
+      "source": "Official linked SCS0009.pdf p6 cap outline and 20T OD3.95 / 3.2 mm output dimensions",
       "servoCaps": 2,
       "profileProbes": 22,
       "caps": [
@@ -280,8 +300,42 @@
           }
         }
       ],
+      "shafts": [
+        {
+          "name": "Pitch",
+          "maximumVertexRadiusMm": 1.9750000544152855,
+          "maximumVertexDiameterMm": 3.950000108830571,
+          "lengthMm": 3.200000047683716,
+          "axialBoundsMm": [
+            0,
+            3.200000047683716
+          ],
+          "radialSamples": 720,
+          "minimumSampledRadiusMm": 1.7499999739812797,
+          "maximumSampledRadiusMm": 1.9749999725213427,
+          "toothTipBands": 20,
+          "periodDeg": 18,
+          "scope": "Annotated external envelope and twenty-fold rendered relief; root radius/flanks are appearance approximations, not a spline-fit tolerance"
+        },
+        {
+          "name": "Yaw",
+          "maximumVertexRadiusMm": 1.9750000544152855,
+          "maximumVertexDiameterMm": 3.950000108830571,
+          "lengthMm": 3.200000047683716,
+          "axialBoundsMm": [
+            0,
+            3.200000047683716
+          ],
+          "radialSamples": 720,
+          "minimumSampledRadiusMm": 1.7499999739812797,
+          "maximumSampledRadiusMm": 1.9749999725213427,
+          "toothTipBands": 20,
+          "periodDeg": 18,
+          "scope": "Annotated external envelope and twenty-fold rendered relief; root radius/flanks are appearance approximations, not a spline-fit tolerance"
+        }
+      ],
       "physicalCaseDimensionsUnchanged": true,
-      "scope": "Source-supported silhouette correction only; small radius and depth/hidden steps inferred. Existing complete installation/servo fit remains unconfirmed."
+      "scope": "Source-supported silhouette and output-envelope correction only; small cap radius, spline root/flanks and hidden steps inferred. Existing complete installation/servo fit remains unconfirmed."
     },
     {
       "script": "scripts/check-stackchan-touch-led.mjs",
@@ -436,7 +490,7 @@
     },
     {
       "script": "scripts/check-viewer-lifecycle.mjs",
-      "checkedAt": "2026-10-25T17:13:37.711Z",
+      "checkedAt": "2026-10-25T17:49:11.114Z",
       "status": "pass",
       "checks": [
         "same Viewer mount idempotence",
@@ -851,7 +905,7 @@
     },
     {
       "script": "scripts/check-8encoder.mjs",
-      "checkedAt": "2026-10-25T17:14:24.872Z",
+      "checkedAt": "2026-10-25T17:49:55.013Z",
       "status": "pass",
       "scope": "Appearance/geometry/input intent only; no encoder count, electrical or firmware simulation",
       "sku": "U153",

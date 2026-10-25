@@ -9,7 +9,7 @@ export async function checkStackChanServoOutline(){
  let model;
  try{
   const {StackChan}=await import('../src/devices/stackchan/index.js');model=new StackChan();model.root.updateMatrixWorld(true);
-  let probes=0;const caps=[];
+  let probes=0;const caps=[],shafts=[];
   for(const name of ['Pitch','Yaw']){
    const group=model.root.getObjectByName(`${name} servo body`),cap=group.getObjectByName(`${name} servo body rounded gearbox cap`),body=group.getObjectByName(`${name} servo body motor case`);
    assert.ok(cap&&body);cap.geometry.computeBoundingBox();const box=cap.geometry.boundingBox,size=box.getSize(new THREE.Vector3());
@@ -25,8 +25,26 @@ export async function checkStackChanServoOutline(){
    assert.ok(Math.abs(bodySize.x-23.3)<.001&&Math.abs(bodySize.y-11)<.001&&Math.abs(bodySize.z-16.8)<.001,'main physical case dimensions unchanged');
    assert.ok(group.getObjectByName(`${name} servo body front mounting ear`)&&group.getObjectByName(`${name} servo body rear mounting ear`));
    assert.ok(cap.scale.equals(new THREE.Vector3(1,1,1)),'profile is constructed, not scaled to clear another part');caps.push({name,profileMm:size.toArray(),bounds:{min:box.min.toArray(),max:box.max.toArray()}});
+   const output=model.stackchanAssembly.mechanics[name==='Pitch'?'pitchServo':'yawServo'].output,shaft=output.getObjectByName(`${name} servo body splined output`),outputInverse=output.matrixWorld.clone().invert(),points=[];
+   assert.ok(shaft,'rendered output shaft exists');
+   output.traverse(part=>{if(!part.isMesh)return;const ps=part.geometry.attributes.position;for(let i=0;i<ps.count;i++)points.push(part.localToWorld(new THREE.Vector3().fromBufferAttribute(ps,i)).applyMatrix4(outputInverse));});
+   const radii=points.map(p=>Math.hypot(p.x,p.y)),maxRadius=Math.max(...radii),bounds=new THREE.Box3().setFromPoints(points),length=bounds.max.z-bounds.min.z;
+   assert.ok(Math.abs(maxRadius-1.975)<1e-5,`${name}: all rendered tooth vertices stay within the annotated OD3.95`);
+   assert.ok(Math.abs(length-3.2)<1e-5&&Math.abs(bounds.min.z)<1e-5&&Math.abs(bounds.max.z-3.2)<1e-5,`${name}: real vertices retain the 3.2 mm shaft from the output face`);
+   const radialReference=new THREE.Mesh(shaft.geometry,new THREE.MeshBasicMaterial({side:THREE.DoubleSide}));radialReference.updateMatrixWorld(true);const radial=[];
+   // Sample actual side triangles, then count separated high-radius bands.
+   // This detects a cylinder, missing teeth and a wrong tooth period without
+   // depending on the implementation's constants or userData tooth count.
+   for(let i=0;i<720;i++){const angle=i*Math.PI/360,hit=new THREE.Raycaster(new THREE.Vector3(0,0,1.6),new THREE.Vector3(Math.cos(angle),Math.sin(angle),0)).intersectObject(radialReference)[0];assert.ok(hit,`${name}: output profile encloses each sampled radial direction`);radial.push(hit.distance);}
+   radialReference.material.dispose();const minimumRadius=Math.min(...radial),maximumRadius=Math.max(...radial),threshold=(minimumRadius+maximumRadius)/2,high=radial.map(r=>r>threshold),toothStarts=[];
+   assert.ok(maximumRadius-minimumRadius>.1&&maximumRadius-minimumRadius<.35,`${name}: visible spline relief remains a bounded appearance approximation`);
+   for(let i=0;i<high.length;i++)if(high[i]&&!high[(i+high.length-1)%high.length])toothStarts.push(i);
+   assert.equal(toothStarts.length,20,`${name}: actual radial profile has twenty separate tooth-tip bands`);
+   const periods=toothStarts.map((start,i)=>(toothStarts[(i+1)%toothStarts.length]+(i===toothStarts.length-1?720:0)-start)*.5);
+   for(const period of periods)assert.ok(Math.abs(period-18)<.51,`${name}: tooth-tip bands repeat every 18 degrees`);
+   shafts.push({name,maximumVertexRadiusMm:maxRadius,maximumVertexDiameterMm:maxRadius*2,lengthMm:length,axialBoundsMm:[bounds.min.z,bounds.max.z],radialSamples:radial.length,minimumSampledRadiusMm:minimumRadius,maximumSampledRadiusMm:maximumRadius,toothTipBands:toothStarts.length,periodDeg:periods[0],scope:'Annotated external envelope and twenty-fold rendered relief; root radius/flanks are appearance approximations, not a spline-fit tolerance'});
   }
-  return {status:'pass',source:'Official linked SCS0009.pdf p6 top-view unequal-radius outline',servoCaps:2,profileProbes:probes,caps,physicalCaseDimensionsUnchanged:true,scope:'Source-supported silhouette correction only; small radius and depth/hidden steps inferred. Existing complete installation/servo fit remains unconfirmed.'};
+  return {status:'pass',source:'Official linked SCS0009.pdf p6 cap outline and 20T OD3.95 / 3.2 mm output dimensions',servoCaps:2,profileProbes:probes,caps,shafts,physicalCaseDimensionsUnchanged:true,scope:'Source-supported silhouette and output-envelope correction only; small cap radius, spline root/flanks and hidden steps inferred. Existing complete installation/servo fit remains unconfirmed.'};
  }finally{model?.dispose();if(installed)delete globalThis.document;}
 }
 if(process.argv[1]&&pathToFileURL(process.argv[1]).href===import.meta.url)console.log(JSON.stringify(await checkStackChanServoOutline(),null,2));

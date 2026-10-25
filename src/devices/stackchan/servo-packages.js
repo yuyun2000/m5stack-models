@@ -30,8 +30,18 @@ export function servoPackage(parent,{name,position,basis}){
   ear.userData={role:'servo-mounting-ear',envelopeMm:[32.5,12.1],holeXmm:hole,source:'SCS0009.pdf p6; end tabs, not a rectangular plate across the case'};
  }
  const output=new THREE.Group();output.name=`${name} rotary output`;output.userData.role='rotary-output';group.add(output);
- mesh(output,new THREE.CylinderGeometry(1.975,1.975,3.2,40).rotateX(Math.PI/2),metal,[0,0,1.6],`${name} splined output`);
- for(let i=0;i<20;i++){const a=i*Math.PI/10;const tooth=mesh(output,new THREE.BoxGeometry(.12,.22,2.6),metal,[1.98*Math.cos(a),1.98*Math.sin(a),1.6],`${name} output spline`);tooth.rotation.z=a;}
+ // 20T (OD3.95 mm) and the 3.2 mm length are annotated in PDF p6.
+ // OD is the tooth-tip envelope, not a root cylinder to add teeth outside.
+ // The 1.75 mm root radius and straight flanks are visual approximations;
+ // the drawing does not dimension a manufacturing spline tooth profile.
+ const shaftRadius=1.975,rootRadius=1.75,pitch=Math.PI*2/20,spline=new THREE.Shape();spline.moveTo(rootRadius,0);
+ for(let i=0;i<20;i++){
+  const start=(i+.3)*pitch,end=(i+.7)*pitch;
+  spline.lineTo(shaftRadius*Math.cos(start),shaftRadius*Math.sin(start));spline.absarc(0,0,shaftRadius,start,end,false);
+  spline.lineTo(rootRadius*Math.cos((i+1)*pitch),rootRadius*Math.sin((i+1)*pitch));
+ }
+ spline.closePath();mesh(output,new THREE.ExtrudeGeometry(spline,{depth:3.2,bevelEnabled:false,curveSegments:4}),metal,[0,0,0],`${name} splined output`);
+ output.userData.spline={teeth:20,outerDiameterMm:3.95,lengthMm:3.2,rootRadiusMm:rootRadius,toothProfileEvidence:'20T, OD3.95 and length3.2 from SCS0009.pdf p6; root radius and straight flanks are appearance approximations, not manufacturing data'};
  for(const x of [-4.2,15.8])for(const y of [-4.1,4.1])mesh(group,new THREE.CylinderGeometry(.55,.55,.2,20).rotateX(Math.PI/2),materials.metal(0xa0aaa0,{roughness:.6}),[x,y,-25.3],`${name} back case screw`);
  const socket=new THREE.Group();socket.name=`${name} cable socket`;socket.position.set(5.8,0,-25.3);socket.quaternion.copy(FACE.back);group.add(socket);
  const white=materials.plastic(0xc4ccc0,{roughness:.7});

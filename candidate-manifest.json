@@ -1,14 +1,14 @@
 {
   "format": "m5stack-models-public-candidate-v1",
   "preparedAt": "2026-10-25T13:20:33.076Z",
-  "sourceCommit": "a8832250b7e09abdfc5120756642b7a84c4ed97e",
+  "sourceCommit": "6c815811ebb2b5ba33724b2f1119d27d0447ae38",
   "sourceFiles": {
-    "catalog/products.json": "7cbc849e9906af4187e95fca685a2e56b2945164c6be995bf08a298ad224d800",
+    "catalog/products.json": "d34b0723b514bba0b0268ea653b4e10097b613f7192ceb2f780b32a0bcc64b09",
     "demo/dynamics.js": "7b94d003dd355009b358969306c930be88377195ae6dc24bc87e9a17d130bda5",
     "demo/index.html": "595befce3c41879941862fc8dabb80f89f6aaadf09e3126b579f50bac1e029bf",
     "demo/main.js": "25d8b13773e154c47db357bb02b322c219512332baf997e147b63a80d4dc08e3",
     "demo/style.css": "4655c92bb6b570c92db089547777bb5678f981bdb630e61a02db18872789dcdb",
-    "docs/AGENT-INTEGRATION.md": "c50f4a42acd996c0dd18f1e37f9090759b6aabfe84f03c2902df4bac2c3d3e30",
+    "docs/AGENT-INTEGRATION.md": "e570958b3323abcd022252de735078c0a139f00ffb80caa587931137e32eed09",
     "docs/GROVE-CABLE.md": "2a34d33f0c3933de6e7b44b81337382c9141d7b83df2c6066995e100f1079cbe",
     "docs/INTEGRATION.md": "4ab4a47db6c9a058dba35cb1504942b4f31b90bb35b31490105717c0333e6a3a",
     "manage.sh": "391d649ade85981a46d82b87316407b3c9f2a9a9f06ecfc37b0f434aa4c4ba90",
@@ -20,7 +20,7 @@
     "scripts/check-cardputer-zero-assembly.mjs": "33093ac3b3fa4822f7d9e270273d1e593dadbde604a3e335fbbb647b791d12d8",
     "scripts/check-classic-unit-connectors.mjs": "6e1309d8154f21164370c44cdbcf05c6fc2f83ed3ffbf5e465df225f01e31262",
     "scripts/check-core2-assembly.mjs": "43039438b750aa365ff40160a13d85444e177a86005570633214194c2afa13fa",
-    "scripts/check-details.mjs": "b659dd8e3d6d0e9ea3df8c047f9d4ec74808f49a55035a7fe5f27463af0d420c",
+    "scripts/check-details.mjs": "69318a26c1b048e0fcda5d26f2575a494550bb0545f3e1e575982bb5ef5db154",
     "scripts/check-device-actuators.mjs": "8d2ecd6ce9a29c65ad56878d884d562e9b4e2dd4fe5ccf5df0b4aefc86dd1894",
     "scripts/check-grove-cable.mjs": "4d7b1a858de370731770acb46e2eba01a60ccf506a4bb732b0dbe29fc47236de",
     "scripts/check-header-sockets.mjs": "9e738a575426c4aa71b2bcad5315ccde84e0af4318c13ec72a7653fd9aab7e9a",
@@ -156,7 +156,7 @@
     "src/units/color/cad-map.json": "7f2afc3f9525183d705d424a81d6c324dd98c5234b089e9197a35969f501eb36",
     "src/units/color/dimensions.js": "494fa4b3efb4de541e0ac9168321ddabfc7293b60f0f3fce6a1c29acd1b11762",
     "src/units/color/geometry-data.js": "245321cfe66030419563ff7d2503f8ea3b2fb035e5f402b7c3aae67474d286ee",
-    "src/units/color/index.js": "d11f464d69314e1e66aba2cb1724e10721221e7326d6311c653caa0a530da228",
+    "src/units/color/index.js": "7f77c52191376a725466ef45537231367336b982e4b65cfcdfaeacefbc1f6d40",
     "src/units/dual-button/cad-map.json": "19d42b634b28b2718c1871bc280330f62adaf1cde8ef85aece4b23f15b9b7c24",
     "src/units/dual-button/dimensions.js": "f278c37f87e5f433378c5f32fb65c568afe2439f1dc1778423a5102a4d9953dc",
     "src/units/dual-button/geometry-data.js": "24a4d2107926ab86d94301687d0202ee08b16c6dc623d983213eb767909f22e9",
@@ -191,7 +191,7 @@
     "src/units/light/cad-map.json": "ff857613815078807d8bb2394ff836c18d2d37ddc09c56ec09cf170172ffdec6",
     "src/units/light/dimensions.js": "7222da9d2796ffbf187a49fe93573d5ffdc2add3db2699dc9eb5f7ae693584cd",
     "src/units/light/geometry-data.js": "646da8089f524fdf17e4f1302e7e0b180bdc92998410b802680974cb53c99c86",
-    "src/units/light/index.js": "199f1979e0515384018a8b8c55072fe66655d641476775abf7c99ffd43c8e5d8",
+    "src/units/light/index.js": "643e2960b6eb7984d0d637d453a8da0b14ba69771e3fcfe6c42e0ff70e3c67ff",
     "src/units/ncir/cad-map.json": "eb515618bee0bdc14fd2305c38cab0cd103b6b074d604d57376b36bf53442dcf",
     "src/units/ncir/dimensions.js": "5d205eb0a423b3395ec67d427ad37999add37314cd9ed022bcb96727ece9f7a8",
     "src/units/ncir/geometry-data.js": "9a30f0e0ef0000e9a9354c7605d9951512acab1d06856ae8417d7d22bd367fd6",
@@ -234,7 +234,7 @@
     "src/units/ultrasonic-i2c/index.js": "acfe37bc1f372a7100c3e8719c89b03a30fcdbd99cc126d5c5204923e1456f1a",
     "tokens.css": "80aac81f920541964c2ae22f4c3dac388f1c172cabd66495c9aa72f43bc42365",
     "vite.config.js": "6c133c2a30fbe83e4fb101914849efd75a8ce9f49a8659046068930237208936",
-    "docs/VISUAL-MOTION.md": "41b49e0fb74842a8f489a018841a5879de0d24b482f239acbfbd4ba74b586d5f",
+    "docs/VISUAL-MOTION.md": "8d1987f20993cc41e84d836a376b916ba29c95f7e362222e4a9677ae9748fe41",
     "LICENSE": "bd6afb822b82b478e8b0165cd5fbd107a7e30a371f1276052d2cafdd1a8b440b",
     "src/devices/cardputer-adv/assembly.js": "bc7da4058b5017017861e41844a79c0069f8d2b991a1651b364bb0020b799f1b",
     "src/units/button/FlexPadButton.js": "dab4803edde0b97b275a46e8792b87da7471f7229cd744dc3a1929c49c742f35",
@@ -253,7 +253,7 @@
     "artifacts/refinement/connections.jpg": "7f63f905486629af8be03afd91cc1afc3281c88e02e9136e2f05fe1f2cdc445f",
     "artifacts/refinement/limit-press.gif": "56084b8334f11466def65ee064f53d9c8699afbd7243e063b392fb59e314bcec",
     "src/devices/stackchan/PitchHarness.js": "cd76bcd959268284fde600a665f1ce62fd3656697658bcf9085ad8bb3fb6a826",
-    "src/devices/stackchan/servo-packages.js": "ddac91693ba0362f9a3e2e190cec1e8464b5bda7e407d6cd6b04e4692d4f074a",
+    "src/devices/stackchan/servo-packages.js": "bb005356f53d826dcd8cd9a77a25b51a0b0c401ecd691cd396bfc36c3849b0d3",
     "src/units/8encoder/cad-map.json": "4fa3821346a85c041ea00c91a4f2b3c22f9eb964d0a2a907848bafb88e57bd51",
     "src/units/8encoder/dimensions.js": "074ee4673891d12ac06f56e0ef140ea9656e3b3f319820916138cfd1d81f77a7",
     "src/units/8encoder/geometry-data.js": "ae6f4be66238263bd5f0c36838ec54f8a64a3be56c0b90f5aa4b5ec852525915",
@@ -296,12 +296,18 @@
     "artifacts/stackchan-touch-led-check.json": "cd197a51e0dd841c656605fdec26e601df1f5f20e604660d872cd2e2a058ead7",
     "scripts/check-host-visible-leds.mjs": "c60625883ad95473fb4d93ace3d6aebe77ba343ec5e8603e0c989a62218f2a9d",
     "scripts/check-stackchan-cover-seats.mjs": "8c7370a6ec6517a13b98992b189cce4f9aab4a7053e9ef99e72a7e7b1eb5a1a3",
-    "scripts/check-stackchan-servo-outline.mjs": "920d493933c310cee7564a478d0f3f2ea8ab925cbd8f27c11c16b4e9b935bf94",
+    "scripts/check-stackchan-servo-outline.mjs": "ac2d21d477221c6fa5f41c3288ea16bc6a4deb60a522e06b9cfb4c41ee9810a6",
     "artifacts/seat-refinement/overview.jpg": "2f9128dbba12a2a899f926ccc40724b953a6ff5ad675cb60354384dad387605c",
     "artifacts/seat-refinement/stackchan-motion.gif": "430dfa97811afda2be7f22d9d910a05e9c48fe2f8ce09b64f6059952e0d85749",
     "artifacts/seat-refinement/cardputer-adv-rgb.gif": "0ef4f3b7833fa2d5af720166e2eee3436095ef75cabb4fc724b4783d857713ac",
     "artifacts/seat-refinement/stamplc-rgb.gif": "dd48e1f41f1eebe8918c81c7b784cf4a4885eea44d1d9116a1ec12aa8b05d30e",
-    "artifacts/seat-refinement/stackchan-posed-grove.png": "589a974658bb6b7621fac3a875738793155fb779b143239db2b7a8d2e4b685ba"
+    "artifacts/seat-refinement/stackchan-posed-grove.png": "589a974658bb6b7621fac3a875738793155fb779b143239db2b7a8d2e4b685ba",
+    "scripts/check-unit-visible-functions.mjs": "553b326b7722e535bd4c321dbaca9a3c78d48441b4ad55a9f462b553272421d5",
+    "artifacts/unit-functions/overview.jpg": "e08546fcff4b2817d692c691100d0f0a79222ffe6ad56729acff08ce8c7b7128",
+    "artifacts/unit-functions/light-trim.gif": "c16ced91c04bdf3e56ef71b16dad56377b8afeb53a7899bc69e75122b5365397",
+    "artifacts/unit-functions/color-fill.gif": "c58226355f2e0a11a6da1d6ad923c836fe7524f314088ecc92300e7772121f6b",
+    "artifacts/unit-functions/shaft-output.png": "ee2d0983156ce357e6cf7a9815df9bc8c65658e250e655477ca3c1be0c12da3c",
+    "artifacts/unit-functions/stick-hub-light.png": "e045232821a4ec4f499cd1effee021e38007bf641d544f4d0c6036af373591e6"
   },
   "transformations": [
     {
@@ -468,6 +474,16 @@
       "file": "src/devices/stamplc/index.js",
       "type": "remove-raster-artwork-bindings",
       "edits": 4
+    },
+    {
+      "file": "src/units/color/index.js",
+      "type": "remove-raster-artwork-bindings",
+      "edits": 1
+    },
+    {
+      "file": "src/units/light/index.js",
+      "type": "remove-raster-artwork-bindings",
+      "edits": 1
     }
   ],
   "originalEvidence": [
@@ -547,7 +563,12 @@
     "artifacts/seat-refinement/stackchan-motion.gif",
     "artifacts/seat-refinement/cardputer-adv-rgb.gif",
     "artifacts/seat-refinement/stamplc-rgb.gif",
-    "artifacts/seat-refinement/stackchan-posed-grove.png"
+    "artifacts/seat-refinement/stackchan-posed-grove.png",
+    "artifacts/unit-functions/overview.jpg",
+    "artifacts/unit-functions/light-trim.gif",
+    "artifacts/unit-functions/color-fill.gif",
+    "artifacts/unit-functions/shaft-output.png",
+    "artifacts/unit-functions/stick-hub-light.png"
   ],
   "verification": "artifacts/interaction-expansion/public/review.json",
   "published": true,
@@ -623,7 +644,7 @@
   },
   "licenseVerifiedAt": "2026-10-25T13:37:28.164885+00:00",
   "publicationRecord": "artifacts/publication.json",
-  "syncedAt": "2026-10-25T17:12:10.814Z",
+  "syncedAt": "2026-10-25T17:47:45.575Z",
   "incrementalRefinement": {
     "sourceCommit": "b6d53bc3b40425a1f6b343d20240245588727397",
     "changedFiles": [
@@ -821,5 +842,100 @@
       "appRuntimeErrors": []
     },
     "scope": "Original-bore cover registration, bounded servo silhouette correction and two externally driven host RGB emitters; global installation remains fit-unresolved"
+  },
+  "incrementalUnitFunctions": {
+    "sourceCommit": "6c815811ebb2b5ba33724b2f1119d27d0447ae38",
+    "basePublicCommit": "ef5a15c1eed7613b4ace5209c33964014bc58d8d",
+    "changedFiles": [
+      "src/devices/stackchan/servo-packages.js",
+      "src/units/color/index.js",
+      "src/units/light/index.js",
+      "scripts/check-details.mjs",
+      "scripts/check-stackchan-servo-outline.mjs",
+      "scripts/check-unit-visible-functions.mjs",
+      "docs/AGENT-INTEGRATION.md",
+      "docs/VISUAL-MOTION.md",
+      "catalog/products.json",
+      "artifacts/stackchan-servo-fit-check.json",
+      "artifacts/unit-functions/overview.jpg",
+      "artifacts/unit-functions/light-trim.gif",
+      "artifacts/unit-functions/color-fill.gif",
+      "artifacts/unit-functions/shaft-output.png",
+      "artifacts/unit-functions/stick-hub-light.png"
+    ],
+    "privateEvidenceReportSha256": "4308b63512766be8bd9054b9ce2d0442d947290dbdcd36fcd450bfaf29d3a88e",
+    "privateEvidenceStatus": "pass-with-recorded-limits",
+    "originalEvidence": [
+      "artifacts/unit-functions/overview.jpg",
+      "artifacts/unit-functions/light-trim.gif",
+      "artifacts/unit-functions/color-fill.gif",
+      "artifacts/unit-functions/shaft-output.png",
+      "artifacts/unit-functions/stick-hub-light.png"
+    ],
+    "visibleFunctionProducts": [
+      "color",
+      "light",
+      "relay"
+    ],
+    "outputShaftReview": {
+      "annotatedOuterDiameterMm": 3.95,
+      "teeth": 20,
+      "radialSamples": 1440
+    },
+    "preservedStackChan": [
+      "coverSeatReview",
+      "touchLedReview",
+      "movingAssembly",
+      "servoPackageReview"
+    ],
+    "globalServoFit": "fit-unresolved",
+    "publicVerification": {
+      "status": "pass-with-recorded-limits",
+      "report": "artifacts/unit-functions/public/review.json",
+      "reportSha256": "b6b6d611aafd35f74e0b0572d997c0202fb599a20182bca74b08b6c4c91478b7",
+      "sourceCommit": "6c815811ebb2b5ba33724b2f1119d27d0447ae38",
+      "runtimeHashes": 269,
+      "originalImages": 35,
+      "browserCases": 12,
+      "commands": {
+        "npm run check": 0,
+        "npm run build": 0,
+        "./manage.sh status": 0
+      },
+      "consoleClassification": {
+        "softwareDriverReadPixelsWarnings": 4,
+        "implicitFavicon404": true,
+        "modelOrAppRequestFailures": [],
+        "appRuntimeErrors": []
+      },
+      "pixelChecks": {
+        "color": {
+          "changedBoundingBox": [
+            516,
+            156,
+            622,
+            179
+          ],
+          "restReleasedRgbIdentical": true
+        },
+        "light": {
+          "changedBoundingBox": [
+            551,
+            214,
+            589,
+            253
+          ],
+          "restReleasedRgbIdentical": true
+        }
+      },
+      "sourceAudit": {
+        "report": "artifacts/unit-functions/public/source-audit.json",
+        "sha256": "95c1227d2b453b46973bea0f7c2beb122d9b825790049b7a409a039b115941c0",
+        "files": 602,
+        "checkScriptsIdentical": 40,
+        "rawAssetMatches": 0
+      }
+    },
+    "scope": "White fill appearance and physical trimmer-head angle under external control; Relay source conflict retained without a guessed LED; annotated SCS0009 tooth-tip envelope corrected. Relative covers/top IO stay unchanged and no global-registration candidate is merged."
   }
 }

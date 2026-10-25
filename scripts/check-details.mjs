@@ -28,6 +28,8 @@ for(const [script,id,exportName]of [
  try{const result=test(model);checks.push({script:`scripts/${script}`,product:id,...result});console.log(`PASS ${id} assembly:`,JSON.stringify(result));}finally{model.dispose();}
 }
 const dynamics=[];
+const {checkUnitVisibleFunctions}=await import('./check-unit-visible-functions.mjs');
+dynamics.push({script:'scripts/check-unit-visible-functions.mjs',...await checkUnitVisibleFunctions()});
 const {checkStackChanCoverSeats}=await import('./check-stackchan-cover-seats.mjs');
 dynamics.push({script:'scripts/check-stackchan-cover-seats.mjs',...await checkStackChanCoverSeats()});
 const {checkHostVisibleLeds}=await import('./check-host-visible-leds.mjs');

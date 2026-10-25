@@ -79,6 +79,7 @@ joystick.button('press').click();
 | Fan | `rotor` | 裸轴或可选风叶一起旋转 |
 | Encoder | `rotation` / `press` | 连续旋转及实体旋钮按压 |
 | Angle | `rotation` | 外部绝对角度定位 |
+| Light U021 | `trim` | 金属微调头绕局部+Z定位，蓝色座固定 |
 | Joystick v1.1 | `tilt-x` / `tilt-y` / `press` | 两轴倾斜与倾斜后的局部按压 |
 | Key | `press` / `rgb` | 实体键帽压放，灯光独立外驱 |
 | 8Encoder | `rotation-1`…`rotation-8` / `press-1`…`press-8` / `switch` | 八路独立旋转/按压，开关保持档位 |
@@ -86,6 +87,17 @@ joystick.button('press').click();
 挂到 `grove` 后上述 Unit 路径都加 `grove/` 前缀。进一步嵌套的 HUB 同样按 Port 递归，不硬编码场景树 child 索引。可通过 `host.list('joint')`、`host.list('button')` 与组件 `.path` 枚举。
 
 角度为度、`durationMs` 为毫秒、`rpm` 为视觉转速；传给关节的是它自身局部轴上的角度。StackChan 的 pitch 使用当前正视装配为 0，正角抬头，接受 `[0,90]`；这不是硬件舵机的校准零位。Angle/Joystick 的 demo 滑条范围只用于观察姿态，不能作为机械限位或传感器换算关系。轴线与范围依据见 [VISUAL-MOTION.md](VISUAL-MOTION.md)。
+
+Light U021 的 `trim` 只旋转有厚度、带真实工具槽的金属头，位置为`[0,2.5,3.72]` mm，局部轴为`+Z`。它是位置式关节，拒绝非零rpm；`visualRangeDeg=[-135,135]`仅供demo观察，`rangeDeg=null`，额定机械限位、旋向和电气零位未确认。头半径1.5 mm、槽深0.32 mm及蓝色座尺寸均为照片估计。调用方直接指定外观角度，不在本层换算电阻、光强阈值、比较器结果或ADC值。
+
+```js
+const light = await loadModel('light');
+light.get('trim').set({angleDeg:45});
+
+const lightHost = await loadModel('sticks3');
+lightHost.port('grove').attach(await loadGroveModule('light', {cableLength:70}));
+lightHost.handle({type:'joint',target:'grove/trim',angleDeg:-45});
+```
 
 StackChan 的前侧 Power 板跟随 pitch，下端 Adapter 跟随 yaw，七根可见线束跨两组端点更新；底座 USB 固定。官方后部为开放机构，不能用虚构后盖封住。线束路线及隐藏舵机包装为视觉近似，不模拟材料、电气或碰撞求解。
 
@@ -153,6 +165,22 @@ host.get('grove/rgb-1').set({on: false});
 ```
 
 灯光的 kind 为 `led`，用 `host.list('led')` 枚举。`Led.set({color,brightness})` 或 `handle({type:'led',target,…})` 更新外观，亮度范围0…1；`getState()` 返回颜色和亮度。它不会产生输入事件或与按键自动联动。demo的“灯光外观”面板使用相同公开API。
+
+Color U009 的两颗白色补光使用`fill-left`、`fill-right`，默认颜色`#ffffff`、亮度0。两个路径标识左右可见封装，D1/D2与左右的对应尚未确认。官方原理图中两灯各经1K电阻接同一VCC，没有独立GPIO控制；按实际供电状态展示时，由调用方给两灯相同亮度。统一`Led`接口的`color`只是绘图参数，硬件仍为白灯，不据此声明RGB能力。本库不随挂接、上电或测量自动点灯；封装深度和光扩散为外观估计。
+
+```js
+const color = await loadModel('color');
+for (const id of ['fill-left','fill-right']) color.led(id).set({brightness:.4});
+
+const colorHost = await loadModel('sticks3');
+colorHost.port('grove').attach(await loadGroveModule('color', {cableLength:70}));
+colorHost.handle([
+  {type:'led',target:'grove/fill-left',brightness:.4},
+  {type:'led',target:'grove/fill-right',brightness:.4},
+]);
+```
+
+所选旧版Relay U023保持无外驱灯组件。其[官方原理图](https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/577/UNIT-RELAY.pdf)中的D1为1N4148WS续流二极管，图中未含状态LED，对应正面照片也未定位可见灯。产品概述的“状态指示灯”表述与该来源冲突，反馈回执为`a3df6baaef22420dac639e23af0b302a`，仅代表接收待评估；在版本、物料位号和实际灯位得到确认前，不添加猜测灯或电气联动。
 
 Cardputer-ADV 与 StamPLC 各有一颗 Stamp-S3A RGB，统一 ID 为 `stamp-rgb`，默认熄灭，例如 `host.handle({type:'led',target:'stamp-rgb',color:'#22b477',brightness:.65})`。StamPLC 文档中的红色下载指示是同一颗 RGB 的一种状态，模型不额外添加第二颗红灯；颜色／亮度由调用方给定，不实现下载启动顺序、GPIO38 供电门控或按键自动点灯。封装深度与光扩散仍是外观估计，原盖板的遮挡边缘保留。
 
