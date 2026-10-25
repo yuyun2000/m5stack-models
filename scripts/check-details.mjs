@@ -28,6 +28,8 @@ for(const [script,id,exportName]of [
  try{const result=test(model);checks.push({script:`scripts/${script}`,product:id,...result});console.log(`PASS ${id} assembly:`,JSON.stringify(result));}finally{model.dispose();}
 }
 const dynamics=[];
+const {checkOpenTopGrove}=await import('./check-open-top-grove.mjs');
+dynamics.push({script:'scripts/check-open-top-grove.mjs',...await checkOpenTopGrove()});
 const {checkHeartOptics}=await import('./check-heart-optics.mjs');
 dynamics.push({script:'scripts/check-heart-optics.mjs',...await checkHeartOptics()});
 const {checkRs485Terminal}=await import('./check-rs485-terminal.mjs');

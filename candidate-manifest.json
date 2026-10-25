@@ -1,14 +1,14 @@
 {
   "format": "m5stack-models-public-candidate-v1",
   "preparedAt": "2026-10-25T13:20:33.076Z",
-  "sourceCommit": "f76d4579f59c3ba5995d8d8eafd59b965af41173",
+  "sourceCommit": "6817da7fb8e0afd17d3ca17e036a9dfa4384fb00",
   "sourceFiles": {
     "catalog/products.json": "3c24efda5e953f8180639065b9a140414f7a20e79f535836dcb669e0f087be55",
     "demo/dynamics.js": "b330fff877189c4faef9605a19a3860470c76ad86e200b37a102752db6d39f43",
     "demo/index.html": "64609124d4571e28a71244a0ca52708c21a8c1e53ed0681f0412b63e5ae336f8",
     "demo/main.js": "5944d3b12ef01ca144dee27c5f338a4a112d01ab216392c7851a481084a5c415",
     "demo/style.css": "fd4b9a97a2f36a59833dcb36cda44cebbd3f3cacb00e8cc38d489b57e689da0b",
-    "docs/AGENT-INTEGRATION.md": "ec26271d1b168c95872ee654f87e5cb19d751c5ab4fbc9013a5931eeec4e148a",
+    "docs/AGENT-INTEGRATION.md": "5da3896f95920e029ebc29b1833ca0ba3a098823bef04247217f71d18b8712c7",
     "docs/GROVE-CABLE.md": "c7e7b06df4e89a47da3615656d79e0efb1505970991a1e60faaee8d05a71f181",
     "docs/INTEGRATION.md": "4ab4a47db6c9a058dba35cb1504942b4f31b90bb35b31490105717c0333e6a3a",
     "manage.sh": "391d649ade85981a46d82b87316407b3c9f2a9a9f06ecfc37b0f434aa4c4ba90",
@@ -20,7 +20,7 @@
     "scripts/check-cardputer-zero-assembly.mjs": "33093ac3b3fa4822f7d9e270273d1e593dadbde604a3e335fbbb647b791d12d8",
     "scripts/check-classic-unit-connectors.mjs": "6e1309d8154f21164370c44cdbcf05c6fc2f83ed3ffbf5e465df225f01e31262",
     "scripts/check-core2-assembly.mjs": "43039438b750aa365ff40160a13d85444e177a86005570633214194c2afa13fa",
-    "scripts/check-details.mjs": "1d08c98c07b345330deddc37bc9a5edaf03f065d2cad77a389cc815796d4eef4",
+    "scripts/check-details.mjs": "c120e2ff1a27e84e8688fd468e744cfa319ba71c4cc7a4a7da4d640384218089",
     "scripts/check-device-actuators.mjs": "19525b59f813602802729ec885f15f74d058031d8c1348cb6bd2dad5e7d02feb",
     "scripts/check-grove-cable.mjs": "662840b87b83d1242ce1aef34517c83d3fa4a7b3fa12229ee46bf28fd02451fd",
     "scripts/check-header-sockets.mjs": "9e738a575426c4aa71b2bcad5315ccde84e0af4318c13ec72a7653fd9aab7e9a",
@@ -28,7 +28,7 @@
     "scripts/check-nanoc6-assembly.mjs": "0b447f602aae6f3a3890244c32611a86334a67d4c5914f0130c514da28598f52",
     "scripts/check-nesso-assembly.mjs": "76e885aa08eb2aa86a810a569a267df7ab9a9e018468565318c120a10fa43248",
     "scripts/check-paper-assembly.mjs": "aba64c0830a982e45ed75c4fa720227a7a779c452434805f14ddc33cb0361543",
-    "scripts/check-rs485-buzzer-fan.mjs": "66dc6cffd98752b45ad1794206e74a84b85bf08211433df0528c30e411c49b4c",
+    "scripts/check-rs485-buzzer-fan.mjs": "7d367f5e679a7448283453c27dddcd9e2e7a1a0c38c92acb6ac6a5cb6846e275",
     "scripts/check-stackchan-assembly.mjs": "9723e9c85dd8b8641bb4b85e43cfae9c8813cf10f5897a3152b92c5df239753c",
     "scripts/check-stamplc-terminals.mjs": "277b2bd04ac5d33cf939c1925b570da5704b81579c380f0d45555eb5db2c26cd",
     "scripts/check-sticks3-assembly.mjs": "ded606ac21249f2f08ecaf508eb5adab3b5d4d20d96ad9ab9bc50127da24bc65",
@@ -173,9 +173,9 @@
     "src/units/fan/geometry-data.js": "ea441ee20cf21dc2cf055b6739dabe5a515c3b7db5ae5219214970bde03379d6",
     "src/units/fan/index.js": "d18324b77a9143e0317c0873b4340b88388398730c9db41bbc3875a85e4d9d16",
     "src/units/heart/cad-map.json": "4e36095a272b3178c1c358986860867384422d6326f9547b898f15e698139a5d",
-    "src/units/heart/dimensions.js": "da2a83a0a2f1f5440d31e5fa9ae52f3605079bab8df7b2e20a88c34dfce8c99d",
+    "src/units/heart/dimensions.js": "0824dd3237007a8b35e099c71e5c8bad531f1aebae7dace9aa09b95c2f66798f",
     "src/units/heart/geometry-data.js": "40754b98725af24e21a6d17b719acba1b39442b912fff909632453d2864a1165",
-    "src/units/heart/index.js": "60fc0fb0a136f1a4bccfd07224a0bc7b4a5710797663089c0514a83324e853cb",
+    "src/units/heart/index.js": "5af99c31adc30e7da5880866e5ee99829cf704a08129151b426ab019554cda3a",
     "src/units/hub/cad-map.json": "7fa4a931687d15f0be591c36c88c6cf70e9f59f738325e94066476ced0670a01",
     "src/units/hub/dimensions.js": "500f221ba1119f3f6303e8bf1db09b00e5d032adf51b0f5282506e7f26f96b16",
     "src/units/hub/geometry-data.js": "2254f452380bed1254cb1734932e77dae2a07a362207edacca30ad5c761f97f8",
@@ -214,7 +214,7 @@
     "src/units/rs485/cad-map.json": "ca1c1407fb6f76a09e2de45306ea5d2363539c9db2c24261c555c14f3e05bf21",
     "src/units/rs485/dimensions.js": "071e6890c8d2f7e26e4b4d6d56bf5c5e26b42f9daa58cd7e65ab942961f9e154",
     "src/units/rs485/geometry-data.js": "06db1bd6fa841ed5bfe4531cac25a17d5279f8dfa837737c55ed7c5ee450dae8",
-    "src/units/rs485/index.js": "cf470351b3628db25839ffb45159e94a7110406637a9d4afa1a6e4c153ab0c5c",
+    "src/units/rs485/index.js": "18a4763ba9874a2bd13bf800a8aba9a04515ea588e9dba0e311dc9dd9fda6560",
     "src/units/shared/CADUnit.js": "da529ab383652dcf9f48b70fafd613b6515a383087f6d1d4c64c144344722ca0",
     "src/units/shared/ClassicUnit.js": "84fe43abe71c1e9b7a2d9d42ee9d8f08c256ef9448847f98f84f9486db6464e3",
     "src/units/shared/parts.js": "e9f8ea00706c398082dd2334337b32df4ab0600474692669365313d21433e37d",
@@ -422,7 +422,10 @@
     "artifacts/heart-rs485-detail/sticks3-hub-heart-on.png": "098c626996fcbb150f2275c2ce234aa4826069a9371c9a73734ca3069eafeeb5",
     "artifacts/heart-rs485-detail/sticks3-rs485-back.png": "d01aeb0a2dcf120bacec4c4489bc0238fbf0bdb82d8a9037e27b20aa377e88b2",
     "artifacts/heart-rs485-detail/sticks3-rs485-before-pose.png": "29472caae36b961d3b62a9c1e4083f56b968d21eaf37de74c7bc00be18f6d111",
-    "artifacts/heart-rs485-detail/sticks3-rs485-iso.png": "73f0430bbf171020f1c132139c8d92522df09b1ecc7c7f7e56c1c79c8b044879"
+    "artifacts/heart-rs485-detail/sticks3-rs485-iso.png": "73f0430bbf171020f1c132139c8d92522df09b1ecc7c7f7e56c1c79c8b044879",
+    "src/units/shared/open-top-grove.js": "35c74ff108d738543d68b960ccc5f8515fc0dde059e1ce3a3d06f467a115cfa2",
+    "src/units/heart/grove-assembly.js": "7472d361d95da609f72fca5e1cdb6ffbfbe8b741342ec06e1302c7b200e709b6",
+    "scripts/check-open-top-grove.mjs": "aee15d5e0f0904bfbc95b9ec68e7af7ed70144b7ae239b0f3a08cda7340dc6e1"
   },
   "transformations": [
     {
@@ -734,6 +737,18 @@
       "newTextSha256": "d2169e89dd2ecae5ff56c8f22625d38d449a76278403b785043727281bc53c5c",
       "inputSha256": "b5f2c6c5062a40038def2f0e4bea4b6a932107a1e4e71c2f5784d35c0e7af035",
       "outputSha256": "e204781cf9543bc31595f6aa6adcf3b1d69c51b2a1dd142bbcfc11aafcb4a163"
+    },
+    {
+      "file": "src/units/heart/index.js",
+      "type": "preserve-public-baseline-Heart-artwork-AST-void0",
+      "privateBaselineCommit": "8520795304a1d95eec2e1324638f8e9d3475eca0",
+      "basePublicCommit": "d920714f970b7c585292851373b7e4b8ed83bef2",
+      "baselineInputSha256": "60fc0fb0a136f1a4bccfd07224a0bc7b4a5710797663089c0514a83324e853cb",
+      "publicBaseSha256": "507d8116e35b909538f5c34f5e7dc8158299908040d61e5bbc506cb774f11959",
+      "expressionSha256": "e2ab9dc8cf632a59e29b241f4c18ce5f27dea02e9a528217a9a85e6e4a5f2abb",
+      "inputSha256": "5af99c31adc30e7da5880866e5ee99829cf704a08129151b426ab019554cda3a",
+      "outputSha256": "e85b367803e1ea0409a26f609019ddd1699a197682ea3173469615b8ffc8ce13",
+      "edits": 1
     }
   ],
   "originalEvidence": [
@@ -919,7 +934,66 @@
     "artifacts/heart-rs485-detail/sticks3-hub-heart-on.png",
     "artifacts/heart-rs485-detail/sticks3-rs485-back.png",
     "artifacts/heart-rs485-detail/sticks3-rs485-before-pose.png",
-    "artifacts/heart-rs485-detail/sticks3-rs485-iso.png"
+    "artifacts/heart-rs485-detail/sticks3-rs485-iso.png",
+    "artifacts/grove-open-top/heart-front.png",
+    "artifacts/grove-open-top/heart-back.png",
+    "artifacts/grove-open-top/heart-left.png",
+    "artifacts/grove-open-top/heart-right.png",
+    "artifacts/grove-open-top/heart-top.png",
+    "artifacts/grove-open-top/heart-bottom.png",
+    "artifacts/grove-open-top/heart-iso.png",
+    "artifacts/grove-open-top/heart-grove-front-close.png",
+    "artifacts/grove-open-top/heart-grove-bottom-close.png",
+    "artifacts/grove-open-top/heart-front-off.png",
+    "artifacts/grove-open-top/heart-front-on.png",
+    "artifacts/grove-open-top/heart-front-reset.png",
+    "artifacts/grove-open-top/heart-iso-off.png",
+    "artifacts/grove-open-top/heart-iso-on.png",
+    "artifacts/grove-open-top/heart-iso-reset.png",
+    "artifacts/grove-open-top/heart-back-off.png",
+    "artifacts/grove-open-top/heart-back-on.png",
+    "artifacts/grove-open-top/heart-back-reset.png",
+    "artifacts/grove-open-top/heart-close-off.png",
+    "artifacts/grove-open-top/heart-close-on.png",
+    "artifacts/grove-open-top/heart-close-reset.png",
+    "artifacts/grove-open-top/sticks3-hub-heart-on.png",
+    "artifacts/grove-open-top/sticks3-hub-heart-off.png",
+    "artifacts/grove-open-top/sticks3-hub-heart-visible-on.png",
+    "artifacts/grove-open-top/sticks3-hub-heart-visible-off.png",
+    "artifacts/grove-open-top/rs485-socket-front.png",
+    "artifacts/grove-open-top/rs485-socket-back.png",
+    "artifacts/grove-open-top/rs485-socket-left.png",
+    "artifacts/grove-open-top/rs485-socket-right.png",
+    "artifacts/grove-open-top/rs485-socket-top.png",
+    "artifacts/grove-open-top/rs485-socket-bottom.png",
+    "artifacts/grove-open-top/rs485-socket-iso.png",
+    "artifacts/grove-open-top/rs485-socket-grove-front-close.png",
+    "artifacts/grove-open-top/rs485-socket-grove-bottom-close.png",
+    "artifacts/grove-open-top/rs485-plugged-front.png",
+    "artifacts/grove-open-top/rs485-plugged-back.png",
+    "artifacts/grove-open-top/rs485-plugged-left.png",
+    "artifacts/grove-open-top/rs485-plugged-right.png",
+    "artifacts/grove-open-top/rs485-plugged-top.png",
+    "artifacts/grove-open-top/rs485-plugged-bottom.png",
+    "artifacts/grove-open-top/rs485-plugged-iso.png",
+    "artifacts/grove-open-top/rs485-plugged-grove-front-close.png",
+    "artifacts/grove-open-top/rs485-plugged-grove-bottom-close.png",
+    "artifacts/grove-open-top/screw-1-rest.png",
+    "artifacts/grove-open-top/screw-1-45.png",
+    "artifacts/grove-open-top/screw-1-reset.png",
+    "artifacts/grove-open-top/screw-2-rest.png",
+    "artifacts/grove-open-top/screw-2-45.png",
+    "artifacts/grove-open-top/screw-2-reset.png",
+    "artifacts/grove-open-top/screw-3-rest.png",
+    "artifacts/grove-open-top/screw-3-45.png",
+    "artifacts/grove-open-top/screw-3-reset.png",
+    "artifacts/grove-open-top/screw-4-rest.png",
+    "artifacts/grove-open-top/screw-4-45.png",
+    "artifacts/grove-open-top/screw-4-reset.png",
+    "artifacts/grove-open-top/rs485-socket-restored.png",
+    "artifacts/grove-open-top/sticks3-rs485-before-pose.png",
+    "artifacts/grove-open-top/sticks3-rs485-iso.png",
+    "artifacts/grove-open-top/sticks3-rs485-back.png"
   ],
   "verification": "artifacts/interaction-expansion/public/review.json",
   "published": true,
@@ -2204,5 +2278,481 @@
       "Appearance reconstruction only; no firmware, electrical/optical sensor behavior, manufacturing tolerance or physical-device proof."
     ],
     "historicalBoundary": "All 43 product identities, all prior source-manifest rows/fields and all earlier candidate batches remain historical. Only the explicit Heart/RS485 detail delta and two curated records are appended."
+  },
+  "incrementalGroveOpenTop": {
+    "sourceCommit": "6817da7fb8e0afd17d3ca17e036a9dfa4384fb00",
+    "privateBaselineCommit": "8520795304a1d95eec2e1324638f8e9d3475eca0",
+    "basePublicCommit": "d920714f970b7c585292851373b7e4b8ed83bef2",
+    "preparedAt": "2026-10-25T22:08:04.880Z",
+    "changedFiles": [
+      "src/units/shared/open-top-grove.js",
+      "src/units/heart/grove-assembly.js",
+      "src/units/heart/dimensions.js",
+      "src/units/heart/index.js",
+      "src/units/rs485/index.js",
+      "scripts/check-open-top-grove.mjs",
+      "scripts/check-details.mjs",
+      "scripts/check-rs485-buzzer-fan.mjs",
+      "docs/AGENT-INTEGRATION.md",
+      "catalog/products.json",
+      "artifacts/grove-open-top/heart-front.png",
+      "artifacts/grove-open-top/heart-back.png",
+      "artifacts/grove-open-top/heart-left.png",
+      "artifacts/grove-open-top/heart-right.png",
+      "artifacts/grove-open-top/heart-top.png",
+      "artifacts/grove-open-top/heart-bottom.png",
+      "artifacts/grove-open-top/heart-iso.png",
+      "artifacts/grove-open-top/heart-grove-front-close.png",
+      "artifacts/grove-open-top/heart-grove-bottom-close.png",
+      "artifacts/grove-open-top/heart-front-off.png",
+      "artifacts/grove-open-top/heart-front-on.png",
+      "artifacts/grove-open-top/heart-front-reset.png",
+      "artifacts/grove-open-top/heart-iso-off.png",
+      "artifacts/grove-open-top/heart-iso-on.png",
+      "artifacts/grove-open-top/heart-iso-reset.png",
+      "artifacts/grove-open-top/heart-back-off.png",
+      "artifacts/grove-open-top/heart-back-on.png",
+      "artifacts/grove-open-top/heart-back-reset.png",
+      "artifacts/grove-open-top/heart-close-off.png",
+      "artifacts/grove-open-top/heart-close-on.png",
+      "artifacts/grove-open-top/heart-close-reset.png",
+      "artifacts/grove-open-top/sticks3-hub-heart-on.png",
+      "artifacts/grove-open-top/sticks3-hub-heart-off.png",
+      "artifacts/grove-open-top/sticks3-hub-heart-visible-on.png",
+      "artifacts/grove-open-top/sticks3-hub-heart-visible-off.png",
+      "artifacts/grove-open-top/rs485-socket-front.png",
+      "artifacts/grove-open-top/rs485-socket-back.png",
+      "artifacts/grove-open-top/rs485-socket-left.png",
+      "artifacts/grove-open-top/rs485-socket-right.png",
+      "artifacts/grove-open-top/rs485-socket-top.png",
+      "artifacts/grove-open-top/rs485-socket-bottom.png",
+      "artifacts/grove-open-top/rs485-socket-iso.png",
+      "artifacts/grove-open-top/rs485-socket-grove-front-close.png",
+      "artifacts/grove-open-top/rs485-socket-grove-bottom-close.png",
+      "artifacts/grove-open-top/rs485-plugged-front.png",
+      "artifacts/grove-open-top/rs485-plugged-back.png",
+      "artifacts/grove-open-top/rs485-plugged-left.png",
+      "artifacts/grove-open-top/rs485-plugged-right.png",
+      "artifacts/grove-open-top/rs485-plugged-top.png",
+      "artifacts/grove-open-top/rs485-plugged-bottom.png",
+      "artifacts/grove-open-top/rs485-plugged-iso.png",
+      "artifacts/grove-open-top/rs485-plugged-grove-front-close.png",
+      "artifacts/grove-open-top/rs485-plugged-grove-bottom-close.png",
+      "artifacts/grove-open-top/screw-1-rest.png",
+      "artifacts/grove-open-top/screw-1-45.png",
+      "artifacts/grove-open-top/screw-1-reset.png",
+      "artifacts/grove-open-top/screw-2-rest.png",
+      "artifacts/grove-open-top/screw-2-45.png",
+      "artifacts/grove-open-top/screw-2-reset.png",
+      "artifacts/grove-open-top/screw-3-rest.png",
+      "artifacts/grove-open-top/screw-3-45.png",
+      "artifacts/grove-open-top/screw-3-reset.png",
+      "artifacts/grove-open-top/screw-4-rest.png",
+      "artifacts/grove-open-top/screw-4-45.png",
+      "artifacts/grove-open-top/screw-4-reset.png",
+      "artifacts/grove-open-top/rs485-socket-restored.png",
+      "artifacts/grove-open-top/sticks3-rs485-before-pose.png",
+      "artifacts/grove-open-top/sticks3-rs485-iso.png",
+      "artifacts/grove-open-top/sticks3-rs485-back.png",
+      "source-manifest.json",
+      "candidate-manifest.json"
+    ],
+    "privateReviewSha256": "ad506d59b718cd1a233b1f0bf838709072be55e87f1d462f904647a657d788e7",
+    "privateProvenanceSha256": {
+      "heart": "e8b4bac841fe37a52f14097364030ede2af007d4c11bb33512d5156901ce6847",
+      "rs485": "b955489c3a81798e10e8c33713d6a639670425848727397dd5edfb22cad77ab9"
+    },
+    "sourceHashes": {
+      "src/units/shared/open-top-grove.js": "35c74ff108d738543d68b960ccc5f8515fc0dde059e1ce3a3d06f467a115cfa2",
+      "src/units/heart/grove-assembly.js": "7472d361d95da609f72fca5e1cdb6ffbfbe8b741342ec06e1302c7b200e709b6",
+      "src/units/heart/dimensions.js": "0824dd3237007a8b35e099c71e5c8bad531f1aebae7dace9aa09b95c2f66798f",
+      "src/units/heart/index.js": "5af99c31adc30e7da5880866e5ee99829cf704a08129151b426ab019554cda3a",
+      "src/units/rs485/index.js": "18a4763ba9874a2bd13bf800a8aba9a04515ea588e9dba0e311dc9dd9fda6560",
+      "scripts/check-open-top-grove.mjs": "aee15d5e0f0904bfbc95b9ec68e7af7ed70144b7ae239b0f3a08cda7340dc6e1",
+      "scripts/check-details.mjs": "c120e2ff1a27e84e8688fd468e744cfa319ba71c4cc7a4a7da4d640384218089",
+      "scripts/check-rs485-buzzer-fan.mjs": "7d367f5e679a7448283453c27dddcd9e2e7a1a0c38c92acb6ac6a5cb6846e275",
+      "docs/AGENT-INTEGRATION.md": "5da3896f95920e029ebc29b1833ca0ba3a098823bef04247217f71d18b8712c7"
+    },
+    "sourceCatalogSha256": "2425c08ea6057718a9ba78e2d3f8475960c37fd508e1f04a9a2a7a34feeda782",
+    "originalEvidence": [
+      {
+        "path": "artifacts/grove-open-top/heart-front.png",
+        "sha256": "09f58f0b4cbe8721b54e0d5a4fd541d83854b811185cfa674f6515f97cdc7ffe",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/heart-back.png",
+        "sha256": "099f4b844f1130f2f3471b06c58f52fb4e427377a5287e46a2b8ce6ea2a45b6e",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/heart-left.png",
+        "sha256": "874e5e8647d6dde28cbc35ae14bb4b5776dc1350acd0376dc89ab7a77a27c30f",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/heart-right.png",
+        "sha256": "db308c912bda238d6e7d83cf2e32082249866e56861bbbcc3c12ce4fa394ae4c",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/heart-top.png",
+        "sha256": "9713e5a5760d4884366099fbfb6fe7dc4b3aa20afd831b889bd6cb480786e126",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/heart-bottom.png",
+        "sha256": "56151d3ec8462b9303a0cf458c7207c140a635244a83bf625e3600120aa266db",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/heart-iso.png",
+        "sha256": "3f6395356b6924690ac37eb6c68a6fa913495e1f4272bc7fb149dcc0c8132810",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/heart-grove-front-close.png",
+        "sha256": "0e6591bcb57946d9a8a8db0fb3f2c6b31cffcd4f40d5fc374d45addd54fe2f39",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/heart-grove-bottom-close.png",
+        "sha256": "bc88d88ff06cf395a01e1504c26d99f3a39a42c2572d5cf6ef8ebec326e142d5",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/heart-front-off.png",
+        "sha256": "09f58f0b4cbe8721b54e0d5a4fd541d83854b811185cfa674f6515f97cdc7ffe",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/heart-front-on.png",
+        "sha256": "0bf1ff5e9cd2483f6834847069a4669fc7de987afb4ecb68afe6797aed7c6811",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/heart-front-reset.png",
+        "sha256": "09f58f0b4cbe8721b54e0d5a4fd541d83854b811185cfa674f6515f97cdc7ffe",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/heart-iso-off.png",
+        "sha256": "3f6395356b6924690ac37eb6c68a6fa913495e1f4272bc7fb149dcc0c8132810",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/heart-iso-on.png",
+        "sha256": "b02b796eca423eb50273a46ab3cb63e02136d90ea1094de88766cd4b5dd854ab",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/heart-iso-reset.png",
+        "sha256": "3f6395356b6924690ac37eb6c68a6fa913495e1f4272bc7fb149dcc0c8132810",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/heart-back-off.png",
+        "sha256": "099f4b844f1130f2f3471b06c58f52fb4e427377a5287e46a2b8ce6ea2a45b6e",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/heart-back-on.png",
+        "sha256": "099f4b844f1130f2f3471b06c58f52fb4e427377a5287e46a2b8ce6ea2a45b6e",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/heart-back-reset.png",
+        "sha256": "099f4b844f1130f2f3471b06c58f52fb4e427377a5287e46a2b8ce6ea2a45b6e",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/heart-close-off.png",
+        "sha256": "8006ef129d9bef4582db521622feea3b30e40a731a0a409b0c58b4c319b46433",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/heart-close-on.png",
+        "sha256": "73a0d768f1b5fda5c48f9cf54b27c85a6281d28576f67c02ac8fceedf74a06a6",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/heart-close-reset.png",
+        "sha256": "8006ef129d9bef4582db521622feea3b30e40a731a0a409b0c58b4c319b46433",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/sticks3-hub-heart-on.png",
+        "sha256": "9283ce7ea6ee39c8fd7be87ae57614ba3c2e232398034c9cdb1a0055ef085c29",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/sticks3-hub-heart-off.png",
+        "sha256": "9283ce7ea6ee39c8fd7be87ae57614ba3c2e232398034c9cdb1a0055ef085c29",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/sticks3-hub-heart-visible-on.png",
+        "sha256": "ee0411f23113e6baee1440e8212ef9728472c60809bb42e0402b5314c345be2a",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/sticks3-hub-heart-visible-off.png",
+        "sha256": "a65d6e77d6331f1257cec534b4016efd8b87a0c3baf87bd3b25fd7ee9b8e6f4e",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/rs485-socket-front.png",
+        "sha256": "714577c248abade242f501389b8543aed7946504a74ed342f568d383bf3ffe8a",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/rs485-socket-back.png",
+        "sha256": "c4b2c8c9c25df7d1d3c802bcaad095ce1757448a96f4befcab04eae737f0e80a",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/rs485-socket-left.png",
+        "sha256": "b036555c818ebdb1554396ead7b45af07aebc3141875d1ce1afee56ca58c4a59",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/rs485-socket-right.png",
+        "sha256": "0ab918a7fb92cd38257d83cf843b90b0b0f8d341a71d06b55578e241d906c216",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/rs485-socket-top.png",
+        "sha256": "d97dfd674be137672da210bfa5b68cdbe09174285055eb7455384ffb45fc7f8f",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/rs485-socket-bottom.png",
+        "sha256": "37db15b2159fbdbc0164d0040c57ee669608bdc916b68da25ba04dab27672ee4",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/rs485-socket-iso.png",
+        "sha256": "ac32910407f412c083fbf3f46e0efa4a22711de24a2e3be0cbce724b233e4803",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/rs485-socket-grove-front-close.png",
+        "sha256": "1a4559f8848f183eaec5cc2673312e9900164242cad000ddf0a0fe06a4bbe5e2",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/rs485-socket-grove-bottom-close.png",
+        "sha256": "976affae23e7c87a4a02c5bc70eafa9a44361c6b14de98bf07e46b544ec5e531",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/rs485-plugged-front.png",
+        "sha256": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/rs485-plugged-back.png",
+        "sha256": "1d3f3510b8594d17e364a7744f2f88883129d86814e578ade4beb29965a72749",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/rs485-plugged-left.png",
+        "sha256": "54b9c49c4f19ca9aabddc22423461f97ead60c840b986130ed22ac63d316ee7e",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/rs485-plugged-right.png",
+        "sha256": "d87029a0a36d0b378dcb66a4b771cee152eadca8f87808464321b9d5e229b531",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/rs485-plugged-top.png",
+        "sha256": "89b17aa005b8395983647fb44a49faced92bde33144779ca30a747ddcf9d2c02",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/rs485-plugged-bottom.png",
+        "sha256": "d2a1126b394a6d937a4ffe0597540dc878ab888e0c1392fe6630a48bfb9e5b4a",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/rs485-plugged-iso.png",
+        "sha256": "7411b6c685a7e04ec0751aac3797487ac695e015e33e77b1082ed3b6f5c7eef7",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/rs485-plugged-grove-front-close.png",
+        "sha256": "785d8c086e4bd68fcc951b9ad280416dad2a112a19ad9240b01fc5ad6fc3b5ab",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/rs485-plugged-grove-bottom-close.png",
+        "sha256": "f8a3421fcca5d3e736c4890af124852c473e6723c9ff2a7aae561ee19534846b",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/screw-1-rest.png",
+        "sha256": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/screw-1-45.png",
+        "sha256": "8782a63e3c8a409f29a60f55eeadc1c4589830b964b0169a0f96a6abfbd64271",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/screw-1-reset.png",
+        "sha256": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/screw-2-rest.png",
+        "sha256": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/screw-2-45.png",
+        "sha256": "b5023dca817ecc0d27e877449c37da0442b0e5e5cc184f42faf3df22eabcee36",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/screw-2-reset.png",
+        "sha256": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/screw-3-rest.png",
+        "sha256": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/screw-3-45.png",
+        "sha256": "3710d330fe2726f36fa5f8b03fc23b9ae32ef6fe94fd0b5856e1b0a7e43c25ad",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/screw-3-reset.png",
+        "sha256": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/screw-4-rest.png",
+        "sha256": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/screw-4-45.png",
+        "sha256": "bfe161c38014755ef5bf2dfea0bb6037a7a7f9753267767669cc3295d772596d",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/screw-4-reset.png",
+        "sha256": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/rs485-socket-restored.png",
+        "sha256": "ac32910407f412c083fbf3f46e0efa4a22711de24a2e3be0cbce724b233e4803",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/sticks3-rs485-before-pose.png",
+        "sha256": "13b77a3f58fc06d7586f4baa70a9ae43e8ca46a9633903a2ecf789e9c73e4aa5",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/sticks3-rs485-iso.png",
+        "sha256": "3204b18c323ff91db592cdcdf7cb27bde5a487cd19bea3f93ebd8e03f80a3f90",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/grove-open-top/sticks3-rs485-back.png",
+        "sha256": "a6d07d6d42b0942e3e4146fa29eb40531945976e9ca0af0ae8d25888bbb9c799",
+        "origin": "original-native-model-render"
+      }
+    ],
+    "transformedOutputHashes": {
+      "src/units/shared/open-top-grove.js": "35c74ff108d738543d68b960ccc5f8515fc0dde059e1ce3a3d06f467a115cfa2",
+      "src/units/heart/grove-assembly.js": "7472d361d95da609f72fca5e1cdb6ffbfbe8b741342ec06e1302c7b200e709b6",
+      "src/units/heart/dimensions.js": "0824dd3237007a8b35e099c71e5c8bad531f1aebae7dace9aa09b95c2f66798f",
+      "src/units/heart/index.js": "e85b367803e1ea0409a26f609019ddd1699a197682ea3173469615b8ffc8ce13",
+      "src/units/rs485/index.js": "18a4763ba9874a2bd13bf800a8aba9a04515ea588e9dba0e311dc9dd9fda6560",
+      "scripts/check-open-top-grove.mjs": "aee15d5e0f0904bfbc95b9ec68e7af7ed70144b7ae239b0f3a08cda7340dc6e1",
+      "scripts/check-details.mjs": "c120e2ff1a27e84e8688fd468e744cfa319ba71c4cc7a4a7da4d640384218089",
+      "scripts/check-rs485-buzzer-fan.mjs": "7d367f5e679a7448283453c27dddcd9e2e7a1a0c38c92acb6ac6a5cb6846e275",
+      "docs/AGENT-INTEGRATION.md": "5da3896f95920e029ebc29b1833ca0ba3a098823bef04247217f71d18b8712c7",
+      "catalog/products.json": "b7a9b28abc89aa6f4fa701e98a91e61afb1627bab6168a5c84ca8fe099155fea",
+      "artifacts/grove-open-top/heart-front.png": "09f58f0b4cbe8721b54e0d5a4fd541d83854b811185cfa674f6515f97cdc7ffe",
+      "artifacts/grove-open-top/heart-back.png": "099f4b844f1130f2f3471b06c58f52fb4e427377a5287e46a2b8ce6ea2a45b6e",
+      "artifacts/grove-open-top/heart-left.png": "874e5e8647d6dde28cbc35ae14bb4b5776dc1350acd0376dc89ab7a77a27c30f",
+      "artifacts/grove-open-top/heart-right.png": "db308c912bda238d6e7d83cf2e32082249866e56861bbbcc3c12ce4fa394ae4c",
+      "artifacts/grove-open-top/heart-top.png": "9713e5a5760d4884366099fbfb6fe7dc4b3aa20afd831b889bd6cb480786e126",
+      "artifacts/grove-open-top/heart-bottom.png": "56151d3ec8462b9303a0cf458c7207c140a635244a83bf625e3600120aa266db",
+      "artifacts/grove-open-top/heart-iso.png": "3f6395356b6924690ac37eb6c68a6fa913495e1f4272bc7fb149dcc0c8132810",
+      "artifacts/grove-open-top/heart-grove-front-close.png": "0e6591bcb57946d9a8a8db0fb3f2c6b31cffcd4f40d5fc374d45addd54fe2f39",
+      "artifacts/grove-open-top/heart-grove-bottom-close.png": "bc88d88ff06cf395a01e1504c26d99f3a39a42c2572d5cf6ef8ebec326e142d5",
+      "artifacts/grove-open-top/heart-front-off.png": "09f58f0b4cbe8721b54e0d5a4fd541d83854b811185cfa674f6515f97cdc7ffe",
+      "artifacts/grove-open-top/heart-front-on.png": "0bf1ff5e9cd2483f6834847069a4669fc7de987afb4ecb68afe6797aed7c6811",
+      "artifacts/grove-open-top/heart-front-reset.png": "09f58f0b4cbe8721b54e0d5a4fd541d83854b811185cfa674f6515f97cdc7ffe",
+      "artifacts/grove-open-top/heart-iso-off.png": "3f6395356b6924690ac37eb6c68a6fa913495e1f4272bc7fb149dcc0c8132810",
+      "artifacts/grove-open-top/heart-iso-on.png": "b02b796eca423eb50273a46ab3cb63e02136d90ea1094de88766cd4b5dd854ab",
+      "artifacts/grove-open-top/heart-iso-reset.png": "3f6395356b6924690ac37eb6c68a6fa913495e1f4272bc7fb149dcc0c8132810",
+      "artifacts/grove-open-top/heart-back-off.png": "099f4b844f1130f2f3471b06c58f52fb4e427377a5287e46a2b8ce6ea2a45b6e",
+      "artifacts/grove-open-top/heart-back-on.png": "099f4b844f1130f2f3471b06c58f52fb4e427377a5287e46a2b8ce6ea2a45b6e",
+      "artifacts/grove-open-top/heart-back-reset.png": "099f4b844f1130f2f3471b06c58f52fb4e427377a5287e46a2b8ce6ea2a45b6e",
+      "artifacts/grove-open-top/heart-close-off.png": "8006ef129d9bef4582db521622feea3b30e40a731a0a409b0c58b4c319b46433",
+      "artifacts/grove-open-top/heart-close-on.png": "73a0d768f1b5fda5c48f9cf54b27c85a6281d28576f67c02ac8fceedf74a06a6",
+      "artifacts/grove-open-top/heart-close-reset.png": "8006ef129d9bef4582db521622feea3b30e40a731a0a409b0c58b4c319b46433",
+      "artifacts/grove-open-top/sticks3-hub-heart-on.png": "9283ce7ea6ee39c8fd7be87ae57614ba3c2e232398034c9cdb1a0055ef085c29",
+      "artifacts/grove-open-top/sticks3-hub-heart-off.png": "9283ce7ea6ee39c8fd7be87ae57614ba3c2e232398034c9cdb1a0055ef085c29",
+      "artifacts/grove-open-top/sticks3-hub-heart-visible-on.png": "ee0411f23113e6baee1440e8212ef9728472c60809bb42e0402b5314c345be2a",
+      "artifacts/grove-open-top/sticks3-hub-heart-visible-off.png": "a65d6e77d6331f1257cec534b4016efd8b87a0c3baf87bd3b25fd7ee9b8e6f4e",
+      "artifacts/grove-open-top/rs485-socket-front.png": "714577c248abade242f501389b8543aed7946504a74ed342f568d383bf3ffe8a",
+      "artifacts/grove-open-top/rs485-socket-back.png": "c4b2c8c9c25df7d1d3c802bcaad095ce1757448a96f4befcab04eae737f0e80a",
+      "artifacts/grove-open-top/rs485-socket-left.png": "b036555c818ebdb1554396ead7b45af07aebc3141875d1ce1afee56ca58c4a59",
+      "artifacts/grove-open-top/rs485-socket-right.png": "0ab918a7fb92cd38257d83cf843b90b0b0f8d341a71d06b55578e241d906c216",
+      "artifacts/grove-open-top/rs485-socket-top.png": "d97dfd674be137672da210bfa5b68cdbe09174285055eb7455384ffb45fc7f8f",
+      "artifacts/grove-open-top/rs485-socket-bottom.png": "37db15b2159fbdbc0164d0040c57ee669608bdc916b68da25ba04dab27672ee4",
+      "artifacts/grove-open-top/rs485-socket-iso.png": "ac32910407f412c083fbf3f46e0efa4a22711de24a2e3be0cbce724b233e4803",
+      "artifacts/grove-open-top/rs485-socket-grove-front-close.png": "1a4559f8848f183eaec5cc2673312e9900164242cad000ddf0a0fe06a4bbe5e2",
+      "artifacts/grove-open-top/rs485-socket-grove-bottom-close.png": "976affae23e7c87a4a02c5bc70eafa9a44361c6b14de98bf07e46b544ec5e531",
+      "artifacts/grove-open-top/rs485-plugged-front.png": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+      "artifacts/grove-open-top/rs485-plugged-back.png": "1d3f3510b8594d17e364a7744f2f88883129d86814e578ade4beb29965a72749",
+      "artifacts/grove-open-top/rs485-plugged-left.png": "54b9c49c4f19ca9aabddc22423461f97ead60c840b986130ed22ac63d316ee7e",
+      "artifacts/grove-open-top/rs485-plugged-right.png": "d87029a0a36d0b378dcb66a4b771cee152eadca8f87808464321b9d5e229b531",
+      "artifacts/grove-open-top/rs485-plugged-top.png": "89b17aa005b8395983647fb44a49faced92bde33144779ca30a747ddcf9d2c02",
+      "artifacts/grove-open-top/rs485-plugged-bottom.png": "d2a1126b394a6d937a4ffe0597540dc878ab888e0c1392fe6630a48bfb9e5b4a",
+      "artifacts/grove-open-top/rs485-plugged-iso.png": "7411b6c685a7e04ec0751aac3797487ac695e015e33e77b1082ed3b6f5c7eef7",
+      "artifacts/grove-open-top/rs485-plugged-grove-front-close.png": "785d8c086e4bd68fcc951b9ad280416dad2a112a19ad9240b01fc5ad6fc3b5ab",
+      "artifacts/grove-open-top/rs485-plugged-grove-bottom-close.png": "f8a3421fcca5d3e736c4890af124852c473e6723c9ff2a7aae561ee19534846b",
+      "artifacts/grove-open-top/screw-1-rest.png": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+      "artifacts/grove-open-top/screw-1-45.png": "8782a63e3c8a409f29a60f55eeadc1c4589830b964b0169a0f96a6abfbd64271",
+      "artifacts/grove-open-top/screw-1-reset.png": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+      "artifacts/grove-open-top/screw-2-rest.png": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+      "artifacts/grove-open-top/screw-2-45.png": "b5023dca817ecc0d27e877449c37da0442b0e5e5cc184f42faf3df22eabcee36",
+      "artifacts/grove-open-top/screw-2-reset.png": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+      "artifacts/grove-open-top/screw-3-rest.png": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+      "artifacts/grove-open-top/screw-3-45.png": "3710d330fe2726f36fa5f8b03fc23b9ae32ef6fe94fd0b5856e1b0a7e43c25ad",
+      "artifacts/grove-open-top/screw-3-reset.png": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+      "artifacts/grove-open-top/screw-4-rest.png": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+      "artifacts/grove-open-top/screw-4-45.png": "bfe161c38014755ef5bf2dfea0bb6037a7a7f9753267767669cc3295d772596d",
+      "artifacts/grove-open-top/screw-4-reset.png": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+      "artifacts/grove-open-top/rs485-socket-restored.png": "ac32910407f412c083fbf3f46e0efa4a22711de24a2e3be0cbce724b233e4803",
+      "artifacts/grove-open-top/sticks3-rs485-before-pose.png": "13b77a3f58fc06d7586f4baa70a9ae43e8ca46a9633903a2ecf789e9c73e4aa5",
+      "artifacts/grove-open-top/sticks3-rs485-iso.png": "3204b18c323ff91db592cdcdf7cb27bde5a487cd19bea3f93ebd8e03f80a3f90",
+      "artifacts/grove-open-top/sticks3-rs485-back.png": "a6d07d6d42b0942e3e4146fa29eb40531945976e9ca0af0ae8d25888bbb9c799",
+      "source-manifest.json": "9c9922aad6a627dad9e9f0a1c51d7939167dfdb4ee10e96d3f32886f5c429285"
+    },
+    "publicVerification": {
+      "status": "pass-with-recorded-limits",
+      "report": "artifacts/grove-open-top/public/review.json",
+      "reportSha256": "8dddcf1d84e8a4efe2fe52bf7c3a07d7a0948fa18c9f1f1f77d4dc60c80b8978"
+    },
+    "scope": "Heart U029 and RS485 U034 product-local open-top Grove socket refinement, official bay-height alignment and Heart PCB edge clearance; no global plug, cable, electrical or firmware changes.",
+    "limits": [
+      "All 43 products remain modeled; zero verified.",
+      "Original artwork remains deferred. Official photographs, HTML, CAD probes and MCP responses remain private.",
+      "Hidden PCB/case baseline overlaps remain recorded; finite samples and native renders do not prove manufacturing fit."
+    ]
   }
 }

@@ -1,7 +1,71 @@
 {
-  "checkedAt": "2026-10-25T21:20:18.346Z",
+  "checkedAt": "2026-10-25T22:18:25.568Z",
   "scope": "Actual control movement and externally driven visual kinematics; no hardware/runtime validation",
   "checks": [
+    {
+      "script": "scripts/check-open-top-grove.mjs",
+      "status": "pass",
+      "products": [
+        "heart",
+        "rs485"
+      ],
+      "configurations": 3,
+      "rays": 66,
+      "regressionPoints": 9,
+      "poses": 6,
+      "ownedResources": 172,
+      "rows": [
+        {
+          "id": "heart",
+          "terminalPlug": false,
+          "assembly": {
+            "pairs": 18,
+            "surfaceSamples": 294,
+            "volumeSamples": 1152,
+            "directions": 3
+          },
+          "matedPlug": {
+            "pairs": 14,
+            "surfaceSamples": 1204,
+            "volumeSamples": 896,
+            "directions": 3
+          }
+        },
+        {
+          "id": "rs485",
+          "terminalPlug": false,
+          "assembly": {
+            "pairs": 18,
+            "surfaceSamples": 294,
+            "volumeSamples": 1152,
+            "directions": 3
+          },
+          "matedPlug": {
+            "pairs": 14,
+            "surfaceSamples": 1220,
+            "volumeSamples": 896,
+            "directions": 3
+          }
+        },
+        {
+          "id": "rs485",
+          "terminalPlug": true,
+          "assembly": {
+            "pairs": 18,
+            "surfaceSamples": 294,
+            "volumeSamples": 1152,
+            "directions": 3
+          },
+          "matedPlug": {
+            "pairs": 14,
+            "surfaceSamples": 1220,
+            "volumeSamples": 896,
+            "directions": 3
+          }
+        }
+      ],
+      "scope": "Physical open mouth, finite bidirectional/volume material samples, real cable nose/latch/retainer, frames and API only; inferred clearances are not manufacturing fit. Baseline PCB outer-edge/source-wall overlaps elsewhere are not resolved by this socket check."
+    },
     {
       "script": "scripts/check-heart-optics.mjs",
       "status": "pass",
@@ -689,7 +753,7 @@
     },
     {
       "script": "scripts/check-roller485.mjs",
-      "checkedAt": "2026-10-25T21:18:46.562Z",
+      "checkedAt": "2026-10-25T22:16:52.025Z",
       "status": "pass",
       "sku": "U182",
       "variant": "standard-slip-ring",
@@ -949,7 +1013,7 @@
     },
     {
       "script": "scripts/check-viewer-lifecycle.mjs",
-      "checkedAt": "2026-10-25T21:19:25.335Z",
+      "checkedAt": "2026-10-25T22:17:31.868Z",
       "status": "pass",
       "checks": [
         "same Viewer mount idempotence",
@@ -1553,7 +1617,7 @@
     },
     {
       "script": "scripts/check-8encoder.mjs",
-      "checkedAt": "2026-10-25T21:20:12.542Z",
+      "checkedAt": "2026-10-25T22:18:19.723Z",
       "status": "pass",
       "scope": "Appearance/geometry/input intent only; no encoder count, electrical or firmware simulation",
       "sku": "U153",

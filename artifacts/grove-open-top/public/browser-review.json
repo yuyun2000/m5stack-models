@@ -1,0 +1,810 @@
+{
+  "checkedAt": "2026-10-25T22:19:40.017630+00:00",
+  "browserCases": 45,
+  "actions": [
+    {
+      "product": "heart",
+      "case": "heart 1: Heart exposes one default-off fixed-red emitter",
+      "pass": true,
+      "sourceCase": "Heart exposes one default-off fixed-red emitter"
+    },
+    {
+      "product": "heart",
+      "case": "heart 2: Seven native assembled Heart views rendered",
+      "pass": true,
+      "sourceCase": "Seven native assembled Heart views rendered"
+    },
+    {
+      "product": "heart",
+      "case": "heart 3: heart front Grove close-up uses real pan and wheel",
+      "pass": true,
+      "file": "views/heart-grove-front-close.png",
+      "view": "front",
+      "cameraInput": {
+        "panButton": "right",
+        "panFractionOfCanvasHeight": -0.28,
+        "panStartFraction": [
+          0.78,
+          0.65
+        ],
+        "wheelDelta": [
+          0,
+          -650
+        ]
+      },
+      "scope": "Full native canvas camera inspection; rendered opening/bridge/contact fidelity requires visual review and separate physical geometry checks.",
+      "sourceCase": "heart front Grove close-up uses real pan and wheel"
+    },
+    {
+      "product": "heart",
+      "case": "heart 4: heart bottom Grove close-up uses real pan and wheel",
+      "pass": true,
+      "file": "views/heart-grove-bottom-close.png",
+      "view": "bottom",
+      "cameraInput": {
+        "panButton": "right",
+        "panFractionOfCanvasHeight": 0.032,
+        "panStartFraction": [
+          0.78,
+          0.65
+        ],
+        "wheelDelta": [
+          0,
+          -850
+        ]
+      },
+      "scope": "Full native canvas camera inspection; rendered opening/bridge/contact fidelity requires visual review and separate physical geometry checks.",
+      "sourceCase": "heart bottom Grove close-up uses real pan and wheel"
+    },
+    {
+      "product": "heart",
+      "case": "heart 5: Actual Heart front red appearance",
+      "pass": true,
+      "state": {
+        "color": "#ff2820",
+        "brightness": 0.65
+      },
+      "pixelDifference": {
+        "changedPixels": 224,
+        "maxChannelDifference": 227,
+        "bbox": [
+          561,
+          183,
+          577,
+          199
+        ]
+      },
+      "sourceCase": "Actual Heart front red appearance"
+    },
+    {
+      "product": "heart",
+      "case": "heart 6: Heart front off returns exact RGB",
+      "pass": true,
+      "pixelDifference": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      },
+      "sourceCase": "Heart front off returns exact RGB"
+    },
+    {
+      "product": "heart",
+      "case": "heart 7: Actual Heart iso red appearance",
+      "pass": true,
+      "state": {
+        "color": "#ff2820",
+        "brightness": 0.65
+      },
+      "pixelDifference": {
+        "changedPixels": 92,
+        "maxChannelDifference": 226,
+        "bbox": [
+          529,
+          226,
+          538,
+          237
+        ]
+      },
+      "sourceCase": "Actual Heart iso red appearance"
+    },
+    {
+      "product": "heart",
+      "case": "heart 8: Heart iso off returns exact RGB",
+      "pass": true,
+      "pixelDifference": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      },
+      "sourceCase": "Heart iso off returns exact RGB"
+    },
+    {
+      "product": "heart",
+      "case": "heart 9: Actual Heart back red appearance",
+      "pass": true,
+      "state": {
+        "color": "#ff2820",
+        "brightness": 0.65
+      },
+      "pixelDifference": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      },
+      "sourceCase": "Actual Heart back red appearance"
+    },
+    {
+      "product": "heart",
+      "case": "heart 10: Heart back off returns exact RGB",
+      "pass": true,
+      "pixelDifference": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      },
+      "sourceCase": "Heart back off returns exact RGB"
+    },
+    {
+      "product": "heart",
+      "case": "heart 11: Real wheel close-up shows aperture red output",
+      "pass": true,
+      "pixelDifference": {
+        "changedPixels": 673,
+        "maxChannelDifference": 227,
+        "bbox": [
+          555,
+          119,
+          583,
+          148
+        ]
+      },
+      "sourceCase": "Real wheel close-up shows aperture red output"
+    },
+    {
+      "product": "heart",
+      "case": "heart 12: Close-up off restores exact RGB",
+      "pass": true,
+      "sourceCase": "Close-up off restores exact RGB"
+    },
+    {
+      "product": "heart",
+      "case": "heart 13: Real StickS3 HUB Heart nested LED path works",
+      "pass": true,
+      "state": {
+        "buttons": {
+          "btnA": {
+            "pressed": false
+          },
+          "btnB": {
+            "pressed": false
+          },
+          "btnPWR": {
+            "pressed": false
+          }
+        },
+        "joints": {},
+        "leds": {
+          "grove/grove-1/red-led": {
+            "color": "#ff2820",
+            "brightness": 0.4
+          },
+          "irTx": {
+            "color": "#ff2020",
+            "brightness": 0
+          }
+        },
+        "cable": {
+          "slack": 16,
+          "bend": [
+            0,
+            0,
+            -1
+          ],
+          "faceDistanceMm": 85,
+          "curveLengthMm": 84.1920788423786,
+          "source": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "outward": [
+              0,
+              1,
+              0
+            ]
+          },
+          "target": {
+            "position": [
+              0,
+              85,
+              0
+            ],
+            "quaternion": [
+              0,
+              0,
+              1,
+              6.123233995736766e-17
+            ],
+            "outward": [
+              -1.2246467991473532e-16,
+              -1,
+              0
+            ]
+          },
+          "wireCount": 4,
+          "plugCount": 2,
+          "space": "module-port"
+        }
+      },
+      "sourceCase": "Real StickS3 HUB Heart nested LED path works"
+    },
+    {
+      "product": "heart",
+      "case": "heart 14: Nested emitter externally switches off",
+      "pass": true,
+      "sourceCase": "Nested emitter externally switches off"
+    },
+    {
+      "product": "heart",
+      "case": "heart 15: Nested Heart emitter produces actual visible native pixels",
+      "pass": true,
+      "view": "left",
+      "pixelDifference": {
+        "changedPixels": 12,
+        "maxChannelDifference": 191,
+        "bbox": [
+          708,
+          430,
+          711,
+          433
+        ]
+      },
+      "target": "grove/grove-1/red-led",
+      "sourceCase": "Nested Heart emitter produces actual visible native pixels"
+    },
+    {
+      "product": "heart",
+      "case": "heart 16: Selective detach removes Heart and retains HUB",
+      "pass": true,
+      "sourceCase": "Selective detach removes Heart and retains HUB"
+    },
+    {
+      "product": "heart",
+      "case": "heart 17: Frozen built runtime unchanged during captures",
+      "pass": true,
+      "sourceCase": "Frozen built runtime unchanged during captures"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 1: U034 socket configuration is selected",
+      "pass": true,
+      "configuration": {
+        "id": "socket",
+        "name": "固定4P座",
+        "options": {}
+      },
+      "sourceCase": "U034 socket configuration is selected"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 2: U034 socket exposes only its actual screw joints",
+      "pass": true,
+      "joints": [],
+      "sourceCase": "U034 socket exposes only its actual screw joints"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 3: U034 socket seven native views contain rendered geometry",
+      "pass": true,
+      "sourceCase": "U034 socket seven native views contain rendered geometry"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 4: rs485-socket front Grove close-up uses real pan and wheel",
+      "pass": true,
+      "file": "views/rs485-socket-grove-front-close.png",
+      "view": "front",
+      "cameraInput": {
+        "panButton": "right",
+        "panFractionOfCanvasHeight": -0.28,
+        "panStartFraction": [
+          0.78,
+          0.65
+        ],
+        "wheelDelta": [
+          0,
+          -650
+        ]
+      },
+      "scope": "Full native canvas camera inspection; rendered opening/bridge/contact fidelity requires visual review and separate physical geometry checks.",
+      "sourceCase": "rs485-socket front Grove close-up uses real pan and wheel"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 5: rs485-socket bottom Grove close-up uses real pan and wheel",
+      "pass": true,
+      "file": "views/rs485-socket-grove-bottom-close.png",
+      "view": "bottom",
+      "cameraInput": {
+        "panButton": "right",
+        "panFractionOfCanvasHeight": 0.032,
+        "panStartFraction": [
+          0.78,
+          0.65
+        ],
+        "wheelDelta": [
+          0,
+          -850
+        ]
+      },
+      "scope": "Full native canvas camera inspection; rendered opening/bridge/contact fidelity requires visual review and separate physical geometry checks.",
+      "sourceCase": "rs485-socket bottom Grove close-up uses real pan and wheel"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 6: U034 terminal is excluded from socket Grove targets",
+      "pass": true,
+      "ports": [
+        "grove"
+      ],
+      "sourceCase": "U034 terminal is excluded from socket Grove targets"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 7: U034 plugged configuration is selected",
+      "pass": true,
+      "configuration": {
+        "id": "plug",
+        "name": "安装4P螺钉插头",
+        "options": {
+          "terminalPlug": true
+        }
+      },
+      "sourceCase": "U034 plugged configuration is selected"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 8: U034 plugged exposes only its actual screw joints",
+      "pass": true,
+      "joints": [
+        "terminal/screw-1",
+        "terminal/screw-2",
+        "terminal/screw-3",
+        "terminal/screw-4"
+      ],
+      "sourceCase": "U034 plugged exposes only its actual screw joints"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 9: U034 plugged seven native views contain rendered geometry",
+      "pass": true,
+      "sourceCase": "U034 plugged seven native views contain rendered geometry"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 10: rs485-plugged front Grove close-up uses real pan and wheel",
+      "pass": true,
+      "file": "views/rs485-plugged-grove-front-close.png",
+      "view": "front",
+      "cameraInput": {
+        "panButton": "right",
+        "panFractionOfCanvasHeight": -0.28,
+        "panStartFraction": [
+          0.78,
+          0.65
+        ],
+        "wheelDelta": [
+          0,
+          -650
+        ]
+      },
+      "scope": "Full native canvas camera inspection; rendered opening/bridge/contact fidelity requires visual review and separate physical geometry checks.",
+      "sourceCase": "rs485-plugged front Grove close-up uses real pan and wheel"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 11: rs485-plugged bottom Grove close-up uses real pan and wheel",
+      "pass": true,
+      "file": "views/rs485-plugged-grove-bottom-close.png",
+      "view": "bottom",
+      "cameraInput": {
+        "panButton": "right",
+        "panFractionOfCanvasHeight": 0.032,
+        "panStartFraction": [
+          0.78,
+          0.65
+        ],
+        "wheelDelta": [
+          0,
+          -850
+        ]
+      },
+      "scope": "Full native canvas camera inspection; rendered opening/bridge/contact fidelity requires visual review and separate physical geometry checks.",
+      "sourceCase": "rs485-plugged bottom Grove close-up uses real pan and wheel"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 12: Screw 1 visible native tool slot rotates 45 degrees",
+      "pass": true,
+      "joint": "terminal/screw-1",
+      "state": {
+        "angleDeg": 45,
+        "targetAngleDeg": 45,
+        "rpm": 0,
+        "transitioning": false,
+        "mode": "position",
+        "continuous": false,
+        "rangeDeg": null,
+        "visualRangeDeg": [
+          -180,
+          180
+        ],
+        "demoRpmMax": 0
+      },
+      "pixelDifference": {
+        "changedPixels": 113,
+        "maxChannelDifference": 122,
+        "bbox": [
+          501,
+          100,
+          518,
+          117
+        ]
+      },
+      "sourceCase": "Screw 1 visible native tool slot rotates 45 degrees"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 13: Screw 1 restores exactly and has no rpm control",
+      "pass": true,
+      "joint": "terminal/screw-1",
+      "pixelDifference": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      },
+      "sourceCase": "Screw 1 restores exactly and has no rpm control"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 14: Screw 2 visible native tool slot rotates 45 degrees",
+      "pass": true,
+      "joint": "terminal/screw-2",
+      "state": {
+        "angleDeg": 45,
+        "targetAngleDeg": 45,
+        "rpm": 0,
+        "transitioning": false,
+        "mode": "position",
+        "continuous": false,
+        "rangeDeg": null,
+        "visualRangeDeg": [
+          -180,
+          180
+        ],
+        "demoRpmMax": 0
+      },
+      "pixelDifference": {
+        "changedPixels": 110,
+        "maxChannelDifference": 121,
+        "bbox": [
+          541,
+          104,
+          558,
+          113
+        ]
+      },
+      "sourceCase": "Screw 2 visible native tool slot rotates 45 degrees"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 15: Screw 2 restores exactly and has no rpm control",
+      "pass": true,
+      "joint": "terminal/screw-2",
+      "pixelDifference": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      },
+      "sourceCase": "Screw 2 restores exactly and has no rpm control"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 16: Screw 3 visible native tool slot rotates 45 degrees",
+      "pass": true,
+      "joint": "terminal/screw-3",
+      "state": {
+        "angleDeg": 45,
+        "targetAngleDeg": 45,
+        "rpm": 0,
+        "transitioning": false,
+        "mode": "position",
+        "continuous": false,
+        "rangeDeg": null,
+        "visualRangeDeg": [
+          -180,
+          180
+        ],
+        "demoRpmMax": 0
+      },
+      "pixelDifference": {
+        "changedPixels": 109,
+        "maxChannelDifference": 119,
+        "bbox": [
+          581,
+          100,
+          597,
+          117
+        ]
+      },
+      "sourceCase": "Screw 3 visible native tool slot rotates 45 degrees"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 17: Screw 3 restores exactly and has no rpm control",
+      "pass": true,
+      "joint": "terminal/screw-3",
+      "pixelDifference": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      },
+      "sourceCase": "Screw 3 restores exactly and has no rpm control"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 18: Screw 4 visible native tool slot rotates 45 degrees",
+      "pass": true,
+      "joint": "terminal/screw-4",
+      "state": {
+        "angleDeg": 45,
+        "targetAngleDeg": 45,
+        "rpm": 0,
+        "transitioning": false,
+        "mode": "position",
+        "continuous": false,
+        "rangeDeg": null,
+        "visualRangeDeg": [
+          -180,
+          180
+        ],
+        "demoRpmMax": 0
+      },
+      "pixelDifference": {
+        "changedPixels": 110,
+        "maxChannelDifference": 121,
+        "bbox": [
+          620,
+          103,
+          637,
+          115
+        ]
+      },
+      "sourceCase": "Screw 4 visible native tool slot rotates 45 degrees"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 19: Screw 4 restores exactly and has no rpm control",
+      "pass": true,
+      "joint": "terminal/screw-4",
+      "pixelDifference": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      },
+      "sourceCase": "Screw 4 restores exactly and has no rpm control"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 20: U034 terminal is excluded from plugged Grove targets",
+      "pass": true,
+      "ports": [
+        "grove"
+      ],
+      "sourceCase": "U034 terminal is excluded from plugged Grove targets"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 21: Real configuration selector switches socket",
+      "pass": true,
+      "joints": [],
+      "sourceCase": "Real configuration selector switches socket"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 22: Real configuration selector switches plug",
+      "pass": true,
+      "joints": [
+        "terminal/screw-1",
+        "terminal/screw-2",
+        "terminal/screw-3",
+        "terminal/screw-4"
+      ],
+      "sourceCase": "Real configuration selector switches plug"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 23: Real configuration selector switches socket",
+      "pass": true,
+      "joints": [],
+      "sourceCase": "Real configuration selector switches socket"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 24: Real StickS3 connection renders U034 with a native four-wire cable",
+      "pass": true,
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      },
+      "sourceCase": "Real StickS3 connection renders U034 with a native four-wire cable"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 25: Attached U034 upstream and terminal remain excluded from Grove targets",
+      "pass": true,
+      "ports": [
+        "grove"
+      ],
+      "sourceCase": "Attached U034 upstream and terminal remain excluded from Grove targets"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 26: Real cable pose controls move the U034 target",
+      "pass": true,
+      "before": {
+        "position": [
+          0,
+          85,
+          0
+        ],
+        "quaternion": [
+          0,
+          0,
+          1,
+          6.123233995736766e-17
+        ],
+        "outward": [
+          -1.2246467991473532e-16,
+          -1,
+          0
+        ]
+      },
+      "after": {
+        "position": [
+          50,
+          84.99999999999999,
+          7.993605777301127e-15
+        ],
+        "quaternion": [
+          -4.1992616075243437e-17,
+          0.13052619222005157,
+          0.9914448613738105,
+          5.599015476699124e-17
+        ],
+        "outward": [
+          -1.2198457501783575e-16,
+          -0.9659258262890686,
+          0.25881904510252074
+        ]
+      },
+      "afterFaceDistanceMm": 98.61541461658008,
+      "sourceCase": "Real cable pose controls move the U034 target"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 27: Real disconnect removes U034 and its cable",
+      "pass": true,
+      "sourceCase": "Real disconnect removes U034 and its cable"
+    },
+    {
+      "product": "rs485",
+      "case": "rs485 28: Runtime has no page errors or application request failures",
+      "pass": true,
+      "faviconFailures": [],
+      "renderWarningCount": 4,
+      "otherWarnings": [],
+      "sourceCase": "Runtime has no page errors or application request failures"
+    }
+  ],
+  "logs": [
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x12c000cfc00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x12c000cfc00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x12c000cfc00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x12c000cfc00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x13c000d0e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x13c000d0e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x13c000d0e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x13c000d0e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
+    }
+  ],
+  "applicationRequestFailures": [],
+  "sourceReports": [
+    "artifacts/grove-open-top/public/heart-browser-review.json",
+    "artifacts/grove-open-top/public/rs485-browser-review.json"
+  ],
+  "scope": "Actual independent public browser records, preserving original action results and sourceCase; product and row prefixes make case names unique."
+}

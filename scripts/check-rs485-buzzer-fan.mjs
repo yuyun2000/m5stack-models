@@ -15,7 +15,9 @@ for(const id of ['rs485','buzzer','fan']){
  spec.cadEnvelopeMm.forEach((n,i)=>assert.ok(Math.abs(n-cadSize.getComponent(i))<.01,`${id}: selected official assembly axis ${i}`));
  const hit=(origin,direction,object=model.root,invisible=false)=>new THREE.Raycaster(new THREE.Vector3(...origin),new THREE.Vector3(...direction)).intersectObject(object,true).filter(h=>h.object.isMesh&&(invisible||h.object.material?.opacity!==0));
  for(const x of [-8,8])for(const [dx,dy]of [[0,0],[1.5,0],[-1.5,0],[0,1.5],[0,-1.5]]){assert.equal(hit([x+dx,spec.mountY+dy,30],[0,0,-1],model.root,true).length,0,`${id}: mounting bore clear through all layers`);rays++;}
- const mouth=hit([0,-spec.size[1]/2-3,.5],[0,1,0])[0];assert.ok(mouth?.distance>8&&mouth.distance<9.2&&mouth.object.parent.name==='HY2.0-4P',`${id}: Grove insertion path clears PCB`);rays++;
+ const mouth=hit([0,-spec.size[1]/2-3,.5],[0,1,0])[0];
+ if(id==='rs485')assert.ok(mouth?.object.name==='RS485 Grove recessed contact support'&&Math.abs(mouth.distance-5.2)<2e-5,'RS485: open socket reaches recessed physical contact support, clear of PCB');
+ else assert.ok(mouth?.distance>8&&mouth.distance<9.2&&mouth.object.parent.name==='HY2.0-4P',`${id}: Grove insertion path clears PCB`);rays++;
  assert.equal(model.list('port').length,id==='rs485'?2:1,`${id}: connector count`);
  for(const p of model.list('port')){const expected=p.id==='terminal'?[0,1,0]:[0,-1,0];assert.ok(new THREE.Vector3(0,1,0).applyQuaternion(p.object3d.quaternion).distanceTo(new THREE.Vector3(...expected))<1e-6,`${id}: ${p.id} outward mating frame`);}
  if(id==='rs485'){

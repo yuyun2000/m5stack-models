@@ -1,6 +1,6 @@
 {
   "preparedAt": "2026-10-25T13:20:33.030Z",
-  "sourceCommit": "f76d4579f59c3ba5995d8d8eafd59b965af41173",
+  "sourceCommit": "6817da7fb8e0afd17d3ca17e036a9dfa4384fb00",
   "scope": "Factual provenance only; no official reference binaries or MCP source text are included.",
   "upstreams": {
     "sticks3": {
@@ -3372,6 +3372,158 @@
         "privateProvenanceSha256": "410e6bc70d628eaf5efa6996700f662d4d52b5aaec938ac1cd6fde398841b5c4",
         "privateEvidenceReportSha256": "48ea5a4c83aeee0f2e96a6c03b3738fc0b97edba19f210637149580665ec7bf9",
         "scope": "Heart U029 optical assembly and RS485 U034 removable terminal detail, with external visual controls only. Preserve all 43 product identities and all historical public evidence."
+      },
+      "incrementalGroveOpenTop": {
+        "checkedAt": "2026-10-25T22:04:57.345343+00:00",
+        "sourceCommit": "6817da7fb8e0afd17d3ca17e036a9dfa4384fb00",
+        "sources": [
+          {
+            "url": "https://docs.m5stack.com/en/unit/heart",
+            "sha256": "034777170ce487b8f7c154e1a318c333c402645f0ff6a5f9b3232ff00329a89d",
+            "bytes": 130049,
+            "fetchedAt": "2026-10-25T21:38:38.252237+00:00",
+            "role": "original-official-product-page"
+          },
+          {
+            "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/heart/heart_05.webp",
+            "sha256": "2dd17090cb599df4a393df7795fb303c9c8499dcde30e16440b92c4f8352cbdd",
+            "bytes": 53616,
+            "fetchedAt": "2026-10-25T21:38:39.418899+00:00",
+            "role": "original-official-product-image"
+          },
+          {
+            "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/heart/heart_01.webp",
+            "sha256": "77e7d027377c40f7a838b5c59ce0df832853ae753def241a9926072583924d94",
+            "bytes": 89424,
+            "fetchedAt": "2026-10-25T21:38:41.167316+00:00",
+            "role": "original-official-product-image"
+          },
+          {
+            "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/heart/heart_06.webp",
+            "sha256": "31caca6ebb5c5d22fd6040280f40295061527cd4104fb9a8bb4aecafdcfa9c59",
+            "bytes": 32978,
+            "fetchedAt": "2026-10-25T21:38:41.427227+00:00",
+            "role": "original-official-product-image"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/heart/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+            "sha256": "d15518e7ffed66d2fc517e3de208ce30670bddc401b7a41e591ab4d9cfaf43c8",
+            "bytes": 476647,
+            "fetchedAt": "2026-10-25T21:38:43.034087+00:00",
+            "role": "original-official-mechanical-drawing"
+          }
+        ],
+        "facts": {
+          "name": "Unit Heart",
+          "connectorName": "HY2.0-4P",
+          "shellMm": [
+            24,
+            32,
+            8
+          ],
+          "drawingMouthWidthMm": 10,
+          "drawingMouthHeightMm": 5.2
+        },
+        "implementation": {
+          "helper": "src/units/shared/open-top-grove.js",
+          "mouthCenter": [
+            0,
+            -15.65,
+            1.4
+          ],
+          "visibleSizeMm": [
+            10,
+            6.8,
+            5.2
+          ],
+          "bodyDepthMm": 6.5,
+          "innerWidthMm": 8.6,
+          "wallMm": 0.7,
+          "lockingTongue": {
+            "size": [
+              3.4,
+              0.65,
+              3
+            ],
+            "position": [
+              0,
+              1.2,
+              -4.95
+            ]
+          },
+          "heartPcbNotch": {
+            "edgeHalfWidth": 5.3,
+            "endY": -8.85,
+            "thickness": 0.8,
+            "seatZ": 0.2
+          },
+          "inferences": [
+            "Internal width/depth/walls/tongue/contact placement, visual mating clearance and hidden PCB outline are reconstruction estimates, not manufacturing CAD."
+          ],
+          "preserved": [
+            "Original native shell geometry and transform",
+            "Global parts/grove-cable/core implementation",
+            "Port IDs/quaternions/hitSize and recursive API",
+            "Heart MAX30100 assembly and RS485 terminal accessory"
+          ],
+          "upperOpeningWidthMm": 6.8,
+          "upperLipSizeMm": [
+            0.9,
+            0.8,
+            6.5
+          ],
+          "visibleContact": {
+            "depthMm": 1.2,
+            "mouthSetbackMm": 0.65,
+            "note": "Photo-inferred short visible ends; tip position retains the prior visual connector basis, not an official measurement."
+          },
+          "recessedContactSupport": {
+            "topLocalY": 0.1,
+            "frontLocalZ": -1.85,
+            "depth": 4.65,
+            "height": 2.7,
+            "scope": "Same-color inner-floor reconstruction seen behind pins; not a separately specified official part."
+          },
+          "visualRefinement": "Native first capture compared to official images found thin lips and long exposed outer pins. Prior native images/review are retained in work as before-refinement only."
+        },
+        "explicitInferences": [
+          "Internal width/depth/walls/tongue/contact placement, visual mating clearance and hidden PCB outline are reconstruction estimates, not manufacturing CAD."
+        ],
+        "limits": [
+          "Finite probes do not prove manufacturing fit or physical-device behavior.",
+          "Prior PCB outer-edge overlaps with source wall at [plus/minus11.3,0,.6] remain outside the local Grove clearance change.",
+          "Stickers deferred; no official image used as model surface."
+        ],
+        "runtime": [
+          {
+            "path": "src/units/shared/open-top-grove.js",
+            "sourceSha256": "35c74ff108d738543d68b960ccc5f8515fc0dde059e1ce3a3d06f467a115cfa2",
+            "publicSha256": "35c74ff108d738543d68b960ccc5f8515fc0dde059e1ce3a3d06f467a115cfa2"
+          },
+          {
+            "path": "src/units/heart/grove-assembly.js",
+            "sourceSha256": "7472d361d95da609f72fca5e1cdb6ffbfbe8b741342ec06e1302c7b200e709b6",
+            "publicSha256": "7472d361d95da609f72fca5e1cdb6ffbfbe8b741342ec06e1302c7b200e709b6"
+          },
+          {
+            "path": "src/units/heart/dimensions.js",
+            "sourceSha256": "0824dd3237007a8b35e099c71e5c8bad531f1aebae7dace9aa09b95c2f66798f",
+            "publicSha256": "0824dd3237007a8b35e099c71e5c8bad531f1aebae7dace9aa09b95c2f66798f"
+          },
+          {
+            "path": "src/units/heart/index.js",
+            "sourceSha256": "5af99c31adc30e7da5880866e5ee99829cf704a08129151b426ab019554cda3a",
+            "publicSha256": "e85b367803e1ea0409a26f609019ddd1699a197682ea3173469615b8ffc8ce13"
+          },
+          {
+            "path": "scripts/check-open-top-grove.mjs",
+            "sourceSha256": "aee15d5e0f0904bfbc95b9ec68e7af7ed70144b7ae239b0f3a08cda7340dc6e1",
+            "publicSha256": "aee15d5e0f0904bfbc95b9ec68e7af7ed70144b7ae239b0f3a08cda7340dc6e1"
+          }
+        ],
+        "privateProvenanceSha256": "e8b4bac841fe37a52f14097364030ede2af007d4c11bb33512d5156901ce6847",
+        "privateReviewSha256": "ad506d59b718cd1a233b1f0bf838709072be55e87f1d462f904647a657d788e7",
+        "scope": "Heart U029 and RS485 U034 product-local open-top Grove socket refinement, official bay-height alignment and Heart PCB edge clearance; no global plug, cable, electrical or firmware changes."
       }
     },
     {
@@ -3678,6 +3830,10 @@
         {
           "url": "https://docs.m5stack.com/en/unit/iso485",
           "sha256": "3de0d5cab2c36ebb167e4cc8dbab53e0532a7973c1384ba84f605018d68074c7"
+        },
+        {
+          "url": "https://docs.m5stack.com/en/unit/Unit_RS485",
+          "sha256": "af2eea5281e2fb69eeab76d9c5214072630f002896cc3579c536314c20da4311"
         }
       ],
       "incrementalHeartRs485Detail": {
@@ -3777,6 +3933,154 @@
         "privateProvenanceSha256": "2e47a9b80e0802085fb48d595d2e37313ba1f7d4820dc44d406a6a475448a778",
         "privateEvidenceReportSha256": "48ea5a4c83aeee0f2e96a6c03b3738fc0b97edba19f210637149580665ec7bf9",
         "scope": "Heart U029 optical assembly and RS485 U034 removable terminal detail, with external visual controls only. Preserve all 43 product identities and all historical public evidence."
+      },
+      "incrementalGroveOpenTop": {
+        "checkedAt": "2026-10-25T22:04:57.345343+00:00",
+        "sourceCommit": "6817da7fb8e0afd17d3ca17e036a9dfa4384fb00",
+        "sources": [
+          {
+            "url": "https://docs.m5stack.com/en/unit/Unit_RS485",
+            "sha256": "af2eea5281e2fb69eeab76d9c5214072630f002896cc3579c536314c20da4311",
+            "bytes": 128665,
+            "fetchedAt": "2026-10-25T21:38:43.781753+00:00",
+            "role": "original-official-product-page"
+          },
+          {
+            "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rs485/rs485_06.webp",
+            "sha256": "f27ea4b3d17c7160c580fa4b67aab1de23bee45bccfdec9eb74cfe4dcb5089b9",
+            "bytes": 47014,
+            "fetchedAt": "2026-10-25T21:38:44.423308+00:00",
+            "role": "original-official-product-image"
+          },
+          {
+            "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rs485/rs485_01.webp",
+            "sha256": "332f1be343aec646f54d873bbc543f6c14cc084504f33d1deb906c83b7c9366b",
+            "bytes": 113498,
+            "fetchedAt": "2026-10-25T21:38:46.012227+00:00",
+            "role": "original-official-product-image"
+          },
+          {
+            "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rs485/rs485_05.webp",
+            "sha256": "0c3ca4f8aabfd6a77ade5e2c9de1b8b98d67c6811919b75539bd8745a73d7351",
+            "bytes": 30940,
+            "fetchedAt": "2026-10-25T21:38:46.280990+00:00",
+            "role": "original-official-product-image"
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/797/U020_Model_Size.png",
+            "sha256": "8df10079b8eb0e13ac672facbc1d969b0630373a9af1d8dd8fb298b97e0caf9b",
+            "bytes": 227674,
+            "fetchedAt": "2026-10-25T21:38:46.536550+00:00",
+            "role": "original-official-mechanical-drawing"
+          }
+        ],
+        "facts": {
+          "name": "Unit RS485",
+          "connectorName": "HY2.0-4P",
+          "shellMm": [
+            24,
+            32,
+            8
+          ],
+          "productNominalMm": [
+            24,
+            32,
+            10.2
+          ],
+          "drawingMouthHeightMm": 5.2,
+          "drawingMouthWidthMm": null,
+          "drawingNameCaution": "Linked official U034 page uses U020_Model_Size.png. SKU established by product page/appearance and four-pole terminal, not filename."
+        },
+        "implementation": {
+          "helper": "src/units/shared/open-top-grove.js",
+          "mouthCenter": [
+            0,
+            -15.65,
+            1.4
+          ],
+          "visibleSizeMm": [
+            10,
+            6.8,
+            5.2
+          ],
+          "bodyDepthMm": 6.5,
+          "innerWidthMm": 8.6,
+          "wallMm": 0.7,
+          "lockingTongue": {
+            "size": [
+              3.4,
+              0.65,
+              3
+            ],
+            "position": [
+              0,
+              1.2,
+              -4.95
+            ]
+          },
+          "heartPcbNotch": null,
+          "inferences": [
+            "Internal width/depth/walls/tongue/contact placement, visual mating clearance and hidden PCB outline are reconstruction estimates, not manufacturing CAD."
+          ],
+          "preserved": [
+            "Original native shell geometry and transform",
+            "Global parts/grove-cable/core implementation",
+            "Port IDs/quaternions/hitSize and recursive API",
+            "Heart MAX30100 assembly and RS485 terminal accessory"
+          ],
+          "upperOpeningWidthMm": 6.8,
+          "upperLipSizeMm": [
+            0.9,
+            0.8,
+            6.5
+          ],
+          "visibleContact": {
+            "depthMm": 1.2,
+            "mouthSetbackMm": 0.65,
+            "note": "Photo-inferred short visible ends; tip position retains the prior visual connector basis, not an official measurement."
+          },
+          "recessedContactSupport": {
+            "topLocalY": 0.1,
+            "frontLocalZ": -1.85,
+            "depth": 4.65,
+            "height": 2.7,
+            "scope": "Same-color inner-floor reconstruction seen behind pins; not a separately specified official part."
+          },
+          "visualRefinement": "Native first capture compared to official images found thin lips and long exposed outer pins. Prior native images/review are retained in work as before-refinement only."
+        },
+        "explicitInferences": [
+          "Internal width/depth/walls/tongue/contact placement, visual mating clearance and hidden PCB outline are reconstruction estimates, not manufacturing CAD."
+        ],
+        "limits": [
+          "Finite probes do not prove manufacturing fit or physical-device behavior.",
+          "Prior PCB outer-edge overlaps with source wall at [plus/minus11.3,0,.6] remain outside the local Grove clearance change.",
+          "Stickers deferred; no official image used as model surface."
+        ],
+        "runtime": [
+          {
+            "path": "src/units/shared/open-top-grove.js",
+            "sourceSha256": "35c74ff108d738543d68b960ccc5f8515fc0dde059e1ce3a3d06f467a115cfa2",
+            "publicSha256": "35c74ff108d738543d68b960ccc5f8515fc0dde059e1ce3a3d06f467a115cfa2"
+          },
+          {
+            "path": "src/units/rs485/index.js",
+            "sourceSha256": "18a4763ba9874a2bd13bf800a8aba9a04515ea588e9dba0e311dc9dd9fda6560",
+            "publicSha256": "18a4763ba9874a2bd13bf800a8aba9a04515ea588e9dba0e311dc9dd9fda6560"
+          },
+          {
+            "path": "scripts/check-open-top-grove.mjs",
+            "sourceSha256": "aee15d5e0f0904bfbc95b9ec68e7af7ed70144b7ae239b0f3a08cda7340dc6e1",
+            "publicSha256": "aee15d5e0f0904bfbc95b9ec68e7af7ed70144b7ae239b0f3a08cda7340dc6e1"
+          },
+          {
+            "path": "scripts/check-rs485-buzzer-fan.mjs",
+            "sourceSha256": "7d367f5e679a7448283453c27dddcd9e2e7a1a0c38c92acb6ac6a5cb6846e275",
+            "publicSha256": "7d367f5e679a7448283453c27dddcd9e2e7a1a0c38c92acb6ac6a5cb6846e275"
+          }
+        ],
+        "privateProvenanceSha256": "b955489c3a81798e10e8c33713d6a639670425848727397dd5edfb22cad77ab9",
+        "privateReviewSha256": "ad506d59b718cd1a233b1f0bf838709072be55e87f1d462f904647a657d788e7",
+        "scope": "Heart U029 and RS485 U034 product-local open-top Grove socket refinement, official bay-height alignment and Heart PCB edge clearance; no global plug, cable, electrical or firmware changes."
       }
     },
     {

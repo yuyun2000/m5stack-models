@@ -140,6 +140,10 @@ const geometry = host.get('grove/cable').getState();
 
 线缆跟随端点和方向，不做碰撞求解。调用方要避免任意摆放引起模型互穿或线缆穿过其他物体。详见 [GROVE-CABLE.md](GROVE-CABLE.md)。
 
+Heart U029 的工程坐标修正：依据其自身官方10×5.2 mm口图和原壳Z=−1.2…4的开口，`grove`口面中心由历史`[0,-15.65,0]`更正为`[0,-15.65,1.4]` mm。RS485 U034的中心仍是`[0,-15.65,1.4]`。两款现为真实开放顶槽、短锁定舌、四触点及5.2 mm外部座高；下部8.6 mm通道、6.8 mm上槽、短针及凹入内底、深度／壁厚和Heart PCB切口仍为外观推导，不声明实物公差。
+
+`loadGroveModule('heart',{cableLength:70})`会从实际输入口重新对齐，默认目标口仍为宿主Port局部`[0,70,0]`，调用方法和递归路径保持。直接使用旧Heart Port工程坐标的布局应重新读取`heart.port('grove').object3d.position`；显式`unitPose.position`仍表示装配原点，不会静默加减1.4 mm。要按输入口定位，应在设旋转后调用`unitFrame.setDistance(...)`或读取真实Port世界变换。
+
 HUB 可继续接 Unit，demo 的 Grove 接口菜单使用完整路径，例如 `grove/grove-1`，并排除已被上游线占用的 Module 输入口。连接/断开后保留有效选口；祖先模块拆卸后回到仍存在的祖先接口。
 
 ```js

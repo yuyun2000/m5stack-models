@@ -1,0 +1,1112 @@
+{
+  "checkedAt": "2026-10-25T22:18:58.464Z",
+  "product": "rs485",
+  "sku": "U034",
+  "baseUrl": "http://127.0.0.1:5188",
+  "actions": [
+    {
+      "case": "U034 socket configuration is selected",
+      "pass": true,
+      "configuration": {
+        "id": "socket",
+        "name": "固定4P座",
+        "options": {}
+      }
+    },
+    {
+      "case": "U034 socket exposes only its actual screw joints",
+      "pass": true,
+      "joints": []
+    },
+    {
+      "case": "U034 socket seven native views contain rendered geometry",
+      "pass": true
+    },
+    {
+      "case": "rs485-socket front Grove close-up uses real pan and wheel",
+      "pass": true,
+      "file": "views/rs485-socket-grove-front-close.png",
+      "view": "front",
+      "cameraInput": {
+        "panButton": "right",
+        "panFractionOfCanvasHeight": -0.28,
+        "panStartFraction": [
+          0.78,
+          0.65
+        ],
+        "wheelDelta": [
+          0,
+          -650
+        ]
+      },
+      "scope": "Full native canvas camera inspection; rendered opening/bridge/contact fidelity requires visual review and separate physical geometry checks."
+    },
+    {
+      "case": "rs485-socket bottom Grove close-up uses real pan and wheel",
+      "pass": true,
+      "file": "views/rs485-socket-grove-bottom-close.png",
+      "view": "bottom",
+      "cameraInput": {
+        "panButton": "right",
+        "panFractionOfCanvasHeight": 0.032,
+        "panStartFraction": [
+          0.78,
+          0.65
+        ],
+        "wheelDelta": [
+          0,
+          -850
+        ]
+      },
+      "scope": "Full native canvas camera inspection; rendered opening/bridge/contact fidelity requires visual review and separate physical geometry checks."
+    },
+    {
+      "case": "U034 terminal is excluded from socket Grove targets",
+      "pass": true,
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "case": "U034 plugged configuration is selected",
+      "pass": true,
+      "configuration": {
+        "id": "plug",
+        "name": "安装4P螺钉插头",
+        "options": {
+          "terminalPlug": true
+        }
+      }
+    },
+    {
+      "case": "U034 plugged exposes only its actual screw joints",
+      "pass": true,
+      "joints": [
+        "terminal/screw-1",
+        "terminal/screw-2",
+        "terminal/screw-3",
+        "terminal/screw-4"
+      ]
+    },
+    {
+      "case": "U034 plugged seven native views contain rendered geometry",
+      "pass": true
+    },
+    {
+      "case": "rs485-plugged front Grove close-up uses real pan and wheel",
+      "pass": true,
+      "file": "views/rs485-plugged-grove-front-close.png",
+      "view": "front",
+      "cameraInput": {
+        "panButton": "right",
+        "panFractionOfCanvasHeight": -0.28,
+        "panStartFraction": [
+          0.78,
+          0.65
+        ],
+        "wheelDelta": [
+          0,
+          -650
+        ]
+      },
+      "scope": "Full native canvas camera inspection; rendered opening/bridge/contact fidelity requires visual review and separate physical geometry checks."
+    },
+    {
+      "case": "rs485-plugged bottom Grove close-up uses real pan and wheel",
+      "pass": true,
+      "file": "views/rs485-plugged-grove-bottom-close.png",
+      "view": "bottom",
+      "cameraInput": {
+        "panButton": "right",
+        "panFractionOfCanvasHeight": 0.032,
+        "panStartFraction": [
+          0.78,
+          0.65
+        ],
+        "wheelDelta": [
+          0,
+          -850
+        ]
+      },
+      "scope": "Full native canvas camera inspection; rendered opening/bridge/contact fidelity requires visual review and separate physical geometry checks."
+    },
+    {
+      "case": "Screw 1 visible native tool slot rotates 45 degrees",
+      "pass": true,
+      "joint": "terminal/screw-1",
+      "state": {
+        "angleDeg": 45,
+        "targetAngleDeg": 45,
+        "rpm": 0,
+        "transitioning": false,
+        "mode": "position",
+        "continuous": false,
+        "rangeDeg": null,
+        "visualRangeDeg": [
+          -180,
+          180
+        ],
+        "demoRpmMax": 0
+      },
+      "pixelDifference": {
+        "changedPixels": 113,
+        "maxChannelDifference": 122,
+        "bbox": [
+          501,
+          100,
+          518,
+          117
+        ]
+      }
+    },
+    {
+      "case": "Screw 1 restores exactly and has no rpm control",
+      "pass": true,
+      "joint": "terminal/screw-1",
+      "pixelDifference": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Screw 2 visible native tool slot rotates 45 degrees",
+      "pass": true,
+      "joint": "terminal/screw-2",
+      "state": {
+        "angleDeg": 45,
+        "targetAngleDeg": 45,
+        "rpm": 0,
+        "transitioning": false,
+        "mode": "position",
+        "continuous": false,
+        "rangeDeg": null,
+        "visualRangeDeg": [
+          -180,
+          180
+        ],
+        "demoRpmMax": 0
+      },
+      "pixelDifference": {
+        "changedPixels": 110,
+        "maxChannelDifference": 121,
+        "bbox": [
+          541,
+          104,
+          558,
+          113
+        ]
+      }
+    },
+    {
+      "case": "Screw 2 restores exactly and has no rpm control",
+      "pass": true,
+      "joint": "terminal/screw-2",
+      "pixelDifference": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Screw 3 visible native tool slot rotates 45 degrees",
+      "pass": true,
+      "joint": "terminal/screw-3",
+      "state": {
+        "angleDeg": 45,
+        "targetAngleDeg": 45,
+        "rpm": 0,
+        "transitioning": false,
+        "mode": "position",
+        "continuous": false,
+        "rangeDeg": null,
+        "visualRangeDeg": [
+          -180,
+          180
+        ],
+        "demoRpmMax": 0
+      },
+      "pixelDifference": {
+        "changedPixels": 109,
+        "maxChannelDifference": 119,
+        "bbox": [
+          581,
+          100,
+          597,
+          117
+        ]
+      }
+    },
+    {
+      "case": "Screw 3 restores exactly and has no rpm control",
+      "pass": true,
+      "joint": "terminal/screw-3",
+      "pixelDifference": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Screw 4 visible native tool slot rotates 45 degrees",
+      "pass": true,
+      "joint": "terminal/screw-4",
+      "state": {
+        "angleDeg": 45,
+        "targetAngleDeg": 45,
+        "rpm": 0,
+        "transitioning": false,
+        "mode": "position",
+        "continuous": false,
+        "rangeDeg": null,
+        "visualRangeDeg": [
+          -180,
+          180
+        ],
+        "demoRpmMax": 0
+      },
+      "pixelDifference": {
+        "changedPixels": 110,
+        "maxChannelDifference": 121,
+        "bbox": [
+          620,
+          103,
+          637,
+          115
+        ]
+      }
+    },
+    {
+      "case": "Screw 4 restores exactly and has no rpm control",
+      "pass": true,
+      "joint": "terminal/screw-4",
+      "pixelDifference": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "U034 terminal is excluded from plugged Grove targets",
+      "pass": true,
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "case": "Real configuration selector switches socket",
+      "pass": true,
+      "joints": []
+    },
+    {
+      "case": "Real configuration selector switches plug",
+      "pass": true,
+      "joints": [
+        "terminal/screw-1",
+        "terminal/screw-2",
+        "terminal/screw-3",
+        "terminal/screw-4"
+      ]
+    },
+    {
+      "case": "Real configuration selector switches socket",
+      "pass": true,
+      "joints": []
+    },
+    {
+      "case": "Real StickS3 connection renders U034 with a native four-wire cable",
+      "pass": true,
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 85,
+        "curveLengthMm": 84.1920788423786,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            85,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            1,
+            6.123233995736766e-17
+          ],
+          "outward": [
+            -1.2246467991473532e-16,
+            -1,
+            0
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "case": "Attached U034 upstream and terminal remain excluded from Grove targets",
+      "pass": true,
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "case": "Real cable pose controls move the U034 target",
+      "pass": true,
+      "before": {
+        "position": [
+          0,
+          85,
+          0
+        ],
+        "quaternion": [
+          0,
+          0,
+          1,
+          6.123233995736766e-17
+        ],
+        "outward": [
+          -1.2246467991473532e-16,
+          -1,
+          0
+        ]
+      },
+      "after": {
+        "position": [
+          50,
+          84.99999999999999,
+          7.993605777301127e-15
+        ],
+        "quaternion": [
+          -4.1992616075243437e-17,
+          0.13052619222005157,
+          0.9914448613738105,
+          5.599015476699124e-17
+        ],
+        "outward": [
+          -1.2198457501783575e-16,
+          -0.9659258262890686,
+          0.25881904510252074
+        ]
+      },
+      "afterFaceDistanceMm": 98.61541461658008
+    },
+    {
+      "case": "Real disconnect removes U034 and its cable",
+      "pass": true
+    },
+    {
+      "case": "Runtime has no page errors or application request failures",
+      "pass": true,
+      "faviconFailures": [],
+      "renderWarningCount": 4,
+      "otherWarnings": []
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "views/rs485-socket-front.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 38109,
+      "range": 219,
+      "rgbSha256": "8e57a74ac52bddb2ccb57d291114f32b13ae2a8f22ad95d26e202b20cb75a8f1",
+      "pngSha256": "714577c248abade242f501389b8543aed7946504a74ed342f568d383bf3ffe8a",
+      "pass": true
+    },
+    {
+      "file": "views/rs485-socket-back.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 7307,
+      "range": 240,
+      "rgbSha256": "de00fafab4aa2056873b50df07315274c0450e9f2d1c9a31b20c2f5cde62fb34",
+      "pngSha256": "c4b2c8c9c25df7d1d3c802bcaad095ce1757448a96f4befcab04eae737f0e80a",
+      "pass": true
+    },
+    {
+      "file": "views/rs485-socket-left.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 11393,
+      "range": 224,
+      "rgbSha256": "c7c3abcbbe2f745c5f3a1e9a846cbf992c7ceb35045b85a85a89c51076f29801",
+      "pngSha256": "b036555c818ebdb1554396ead7b45af07aebc3141875d1ce1afee56ca58c4a59",
+      "pass": true
+    },
+    {
+      "file": "views/rs485-socket-right.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 11279,
+      "range": 224,
+      "rgbSha256": "e017129ac144bb8e1c5fc922815038bb7157661b4c46e2ce78f66af99eb34fbc",
+      "pngSha256": "0ab918a7fb92cd38257d83cf843b90b0b0f8d341a71d06b55578e241d906c216",
+      "pass": true
+    },
+    {
+      "file": "views/rs485-socket-top.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 26070,
+      "range": 218,
+      "rgbSha256": "cd168a33aec795da245fadb23dbe90022944ff09dec520ddef290e7075a4524a",
+      "pngSha256": "d97dfd674be137672da210bfa5b68cdbe09174285055eb7455384ffb45fc7f8f",
+      "pass": true
+    },
+    {
+      "file": "views/rs485-socket-bottom.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 19276,
+      "range": 217,
+      "rgbSha256": "cb36bd9cf60117e68803520914e867fbeb248d770310c30786cf2c5fd7b2a8e1",
+      "pngSha256": "37db15b2159fbdbc0164d0040c57ee669608bdc916b68da25ba04dab27672ee4",
+      "pass": true
+    },
+    {
+      "file": "views/rs485-socket-iso.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 48602,
+      "range": 245,
+      "rgbSha256": "fe7c914c76a26f4606e073055e2e442ef627553e94255db3028464cf6ad27947",
+      "pngSha256": "ac32910407f412c083fbf3f46e0efa4a22711de24a2e3be0cbce724b233e4803",
+      "pass": true
+    },
+    {
+      "file": "views/rs485-socket-grove-front-close.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 67846,
+      "range": 222,
+      "rgbSha256": "dd4b758f3e6d88c69e0b28199a0d7b8f4d31db156a9d9e44600aafcc2f34b5f4",
+      "pngSha256": "1a4559f8848f183eaec5cc2673312e9900164242cad000ddf0a0fe06a4bbe5e2",
+      "pass": true
+    },
+    {
+      "file": "views/rs485-socket-grove-bottom-close.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 183659,
+      "range": 230,
+      "rgbSha256": "26db8804bd398455a4d2e4fdaaeab21d6da6132a12b01d91bfd4e310e71b14c9",
+      "pngSha256": "976affae23e7c87a4a02c5bc70eafa9a44361c6b14de98bf07e46b544ec5e531",
+      "pass": true
+    },
+    {
+      "file": "views/rs485-plugged-front.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 42961,
+      "range": 225,
+      "rgbSha256": "e1efc209b1b577195763e6a71a65e820b02d07002aab76d502f3700922103375",
+      "pngSha256": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+      "pass": true
+    },
+    {
+      "file": "views/rs485-plugged-back.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 21402,
+      "range": 240,
+      "rgbSha256": "a35231e8f64ee1b6cfa9843e075aaed53efcbbc75b6e0d5ffa2792ab3c6b95ea",
+      "pngSha256": "1d3f3510b8594d17e364a7744f2f88883129d86814e578ade4beb29965a72749",
+      "pass": true
+    },
+    {
+      "file": "views/rs485-plugged-left.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 15793,
+      "range": 226,
+      "rgbSha256": "06e50b9db753da2a063a2c4bc2d3b3afed0841d5a5394f4d6097828f548a1c84",
+      "pngSha256": "54b9c49c4f19ca9aabddc22423461f97ead60c840b986130ed22ac63d316ee7e",
+      "pass": true
+    },
+    {
+      "file": "views/rs485-plugged-right.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 15501,
+      "range": 228,
+      "rgbSha256": "30800e5f3459f0620129bc7fdec3129916506a6e445100339b153e6864a460b6",
+      "pngSha256": "d87029a0a36d0b378dcb66a4b771cee152eadca8f87808464321b9d5e229b531",
+      "pass": true
+    },
+    {
+      "file": "views/rs485-plugged-top.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 18460,
+      "range": 215,
+      "rgbSha256": "bf26a46f1b2c803e4deaac451ba67de698967eb0ab985d49e0051fc902b3967b",
+      "pngSha256": "89b17aa005b8395983647fb44a49faced92bde33144779ca30a747ddcf9d2c02",
+      "pass": true
+    },
+    {
+      "file": "views/rs485-plugged-bottom.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 13806,
+      "range": 212,
+      "rgbSha256": "e0fadc7efb7b326b480a7411cc40902d0f1cf0ddf333fcdc431ff0a73ca64cf2",
+      "pngSha256": "d2a1126b394a6d937a4ffe0597540dc878ab888e0c1392fe6630a48bfb9e5b4a",
+      "pass": true
+    },
+    {
+      "file": "views/rs485-plugged-iso.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 48451,
+      "range": 245,
+      "rgbSha256": "4f8eaa1b8b7059c8efd17e8e86c0a406956433d8385658c66a513933af26942c",
+      "pngSha256": "7411b6c685a7e04ec0751aac3797487ac695e015e33e77b1082ed3b6f5c7eef7",
+      "pass": true
+    },
+    {
+      "file": "views/rs485-plugged-grove-front-close.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 47949,
+      "range": 218,
+      "rgbSha256": "96ea66618f580f733c7866d110ce874f63cda754dcce8f0bb91b35685181bdea",
+      "pngSha256": "785d8c086e4bd68fcc951b9ad280416dad2a112a19ad9240b01fc5ad6fc3b5ab",
+      "pass": true
+    },
+    {
+      "file": "views/rs485-plugged-grove-bottom-close.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 121707,
+      "range": 225,
+      "rgbSha256": "8d121612eb862bd899e8a4be1c2ea0fa52eeca824b7b4327e2f72e3ffa6a5b8e",
+      "pngSha256": "f8a3421fcca5d3e736c4890af124852c473e6723c9ff2a7aae561ee19534846b",
+      "pass": true
+    },
+    {
+      "file": "views/screw-1-rest.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 42961,
+      "range": 225,
+      "rgbSha256": "e1efc209b1b577195763e6a71a65e820b02d07002aab76d502f3700922103375",
+      "pngSha256": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+      "pass": true
+    },
+    {
+      "file": "views/screw-1-45.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 42963,
+      "range": 225,
+      "rgbSha256": "10ab24fd6a2e458de5f82c746fd8a66020310987ecf2bb5a972a00300ebbb64d",
+      "pngSha256": "8782a63e3c8a409f29a60f55eeadc1c4589830b964b0169a0f96a6abfbd64271",
+      "pass": true
+    },
+    {
+      "file": "views/screw-1-reset.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 42961,
+      "range": 225,
+      "rgbSha256": "e1efc209b1b577195763e6a71a65e820b02d07002aab76d502f3700922103375",
+      "pngSha256": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+      "pass": true
+    },
+    {
+      "file": "views/screw-2-rest.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 42961,
+      "range": 225,
+      "rgbSha256": "e1efc209b1b577195763e6a71a65e820b02d07002aab76d502f3700922103375",
+      "pngSha256": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+      "pass": true
+    },
+    {
+      "file": "views/screw-2-45.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 42961,
+      "range": 225,
+      "rgbSha256": "7fd4392e097a845f70f93ed7522a9d19d22b7fc1ea62ea86b10fe0231bf92157",
+      "pngSha256": "b5023dca817ecc0d27e877449c37da0442b0e5e5cc184f42faf3df22eabcee36",
+      "pass": true
+    },
+    {
+      "file": "views/screw-2-reset.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 42961,
+      "range": 225,
+      "rgbSha256": "e1efc209b1b577195763e6a71a65e820b02d07002aab76d502f3700922103375",
+      "pngSha256": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+      "pass": true
+    },
+    {
+      "file": "views/screw-3-rest.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 42961,
+      "range": 225,
+      "rgbSha256": "e1efc209b1b577195763e6a71a65e820b02d07002aab76d502f3700922103375",
+      "pngSha256": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+      "pass": true
+    },
+    {
+      "file": "views/screw-3-45.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 42962,
+      "range": 225,
+      "rgbSha256": "fd90ac7c540eb7ac8b8389cbc4d47ee520463024bd215d7778d14275f252b592",
+      "pngSha256": "3710d330fe2726f36fa5f8b03fc23b9ae32ef6fe94fd0b5856e1b0a7e43c25ad",
+      "pass": true
+    },
+    {
+      "file": "views/screw-3-reset.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 42961,
+      "range": 225,
+      "rgbSha256": "e1efc209b1b577195763e6a71a65e820b02d07002aab76d502f3700922103375",
+      "pngSha256": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+      "pass": true
+    },
+    {
+      "file": "views/screw-4-rest.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 42961,
+      "range": 225,
+      "rgbSha256": "e1efc209b1b577195763e6a71a65e820b02d07002aab76d502f3700922103375",
+      "pngSha256": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+      "pass": true
+    },
+    {
+      "file": "views/screw-4-45.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 42958,
+      "range": 225,
+      "rgbSha256": "682d7d74c85fa8cb19d964d9c143c58f6d1dfcacbad30e3277d7e0f144a99940",
+      "pngSha256": "bfe161c38014755ef5bf2dfea0bb6037a7a7f9753267767669cc3295d772596d",
+      "pass": true
+    },
+    {
+      "file": "views/screw-4-reset.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 42961,
+      "range": 225,
+      "rgbSha256": "e1efc209b1b577195763e6a71a65e820b02d07002aab76d502f3700922103375",
+      "pngSha256": "f0e9f79de66c6a44205523f941d8a4c5bc6f523f93f2a10b3effe42a684e74a7",
+      "pass": true
+    },
+    {
+      "file": "views/rs485-socket-restored.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 48602,
+      "range": 245,
+      "rgbSha256": "fe7c914c76a26f4606e073055e2e442ef627553e94255db3028464cf6ad27947",
+      "pngSha256": "ac32910407f412c083fbf3f46e0efa4a22711de24a2e3be0cbce724b233e4803",
+      "pass": true
+    },
+    {
+      "file": "views/sticks3-rs485-before-pose.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 16727,
+      "range": 249,
+      "rgbSha256": "42bda24fb3342821cde113ee82a3198a52357d0032b4aa9ce267e19f05bbb455",
+      "pngSha256": "13b77a3f58fc06d7586f4baa70a9ae43e8ca46a9633903a2ecf789e9c73e4aa5",
+      "pass": true
+    },
+    {
+      "file": "views/sticks3-rs485-iso.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 13504,
+      "range": 249,
+      "rgbSha256": "6e8cad7720dfac57b944de251e55e2da9b4d4d251971e584824b85b7465e58fd",
+      "pngSha256": "3204b18c323ff91db592cdcdf7cb27bde5a487cd19bea3f93ebd8e03f80a3f90",
+      "pass": true
+    },
+    {
+      "file": "views/sticks3-rs485-back.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 9495,
+      "range": 248,
+      "rgbSha256": "aeb2cd62272af12e936f5650f63726d80d2855c700d164cc044febacd15404b9",
+      "pngSha256": "a6d07d6d42b0942e3e4146fa29eb40531945976e9ca0af0ae8d25888bbb9c799",
+      "pass": true
+    }
+  ],
+  "logs": [
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x13c000d0e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x13c000d0e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x13c000d0e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x13c000d0e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
+    }
+  ],
+  "httpFailures": [],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:5188/assets/index-DUfIhopB.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/index-C3B6hv1L.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/rs485-T6hV_4jR.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/grove-cable-yY8hABwG.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/VisualJoint-Ch4YT_LV.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/parts-DOc2lkiJ.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/core-BNixFhO5.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/cad-2zMxDun2.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/artwork-CbIusNyQ.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/CADUnit-haXXC-ps.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/open-top-grove-BuhwGZgr.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/index-DUfIhopB.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/index-C3B6hv1L.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/core-BNixFhO5.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/rs485-T6hV_4jR.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/parts-DOc2lkiJ.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/grove-cable-yY8hABwG.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/VisualJoint-Ch4YT_LV.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/artwork-CbIusNyQ.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/CADUnit-haXXC-ps.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/cad-2zMxDun2.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/open-top-grove-BuhwGZgr.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/index-DUfIhopB.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/index-C3B6hv1L.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/cad-2zMxDun2.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/core-BNixFhO5.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/parts-DOc2lkiJ.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/Led-B-5U7T7H.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/actuators-C23Bsiiu.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/connectors-CFGU3pj_.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/sticks3-lPHdFrbn.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/CADUnit-haXXC-ps.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/grove-cable-yY8hABwG.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/VisualJoint-Ch4YT_LV.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/artwork-CbIusNyQ.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/rs485-T6hV_4jR.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/open-top-grove-BuhwGZgr.js",
+      "status": 200
+    }
+  ],
+  "requestFailures": [],
+  "sourceHashes": {
+    "src/units/rs485/index.js": "18a4763ba9874a2bd13bf800a8aba9a04515ea588e9dba0e311dc9dd9fda6560",
+    "src/units/rs485/TerminalPlug.js": "c88893747b391bcffcd6c23141c682417de711d2342f844f9d582d579ecb0f1b",
+    "src/units/rs485/assembly.js": "7e05e29ee3effcf1ec595ca2420ca56cd07e9fe0d0a548ca2eb710d9fe5fc213",
+    "src/units/rs485/dimensions.js": "071e6890c8d2f7e26e4b4d6d56bf5c5e26b42f9daa58cd7e65ab942961f9e154",
+    "src/units/rs485/geometry-data.js": "54b3d7755199c7f77431ef4935950d2f7978edafbc2bff650c571678930c2903",
+    "src/units/shared/open-top-grove.js": "35c74ff108d738543d68b960ccc5f8515fc0dde059e1ce3a3d06f467a115cfa2",
+    "src/units/shared/CADUnit.js": "eb337eaff2c267ebae8fe46921cbc289cbb5b49b3bcf548e84f1fc6d89b89c94",
+    "src/modeling/parts.js": "387cddaf0ab614a783a024ad4e38918cd47ad8a887041bd22b12908064564fd3",
+    "src/modeling/grove-cable.js": "854e33e5e00545c0c907df1b166d27fdc1480b4b3c02fbd4cda04caee6f5e649",
+    "catalog/products.json": "b7a9b28abc89aa6f4fa701e98a91e61afb1627bab6168a5c84ca8fe099155fea",
+    "demo/dynamics.js": "b330fff877189c4faef9605a19a3860470c76ad86e200b37a102752db6d39f43",
+    "demo/main.js": "5944d3b12ef01ca144dee27c5f338a4a112d01ab216392c7851a481084a5c415"
+  },
+  "runtimeHashesBefore": {
+    "dist/assets/8encoder-DLjELqB5.js": "dacab17333f18e5152a10ca54c8de31ab390ad752b61da6d3a0f27a27a0244e8",
+    "dist/assets/CADUnit-haXXC-ps.js": "db75dab216de6875656630477d3d7b13fd64b8e5bdd76c95e90701fab987ffec",
+    "dist/assets/ClassicUnit-CJcZiK0i.js": "2ff9867f896fe04f42746ef7845a1aabd76ad18a318889d316d537b5e538a6df",
+    "dist/assets/CoreS3-BpC2ZRpV.js": "9f083af824db9b62d2d296d2ebfcebd6e1e13c4a4eec305b94bff1c28d217b99",
+    "dist/assets/Led-B-5U7T7H.js": "fa911fc2a6c0872f311bc5541632d9b047a04e3c07cf0f5d29f74947aed2730c",
+    "dist/assets/PaperDisplay-CWcuPbPR.js": "49bd988ccaaff658ac96a2b54868e988727b42a9ea3a8a4044e3996abc90f8ea",
+    "dist/assets/VisualJoint-Ch4YT_LV.js": "5a97a6383c8072947e5c39bc38548cea3875a406201f09896b72039c38e858af",
+    "dist/assets/actuators-C23Bsiiu.js": "2750ebafd745e5747aa3459cc3a8fc202e1915863c3990f5bf9cf7af86450530",
+    "dist/assets/angle-JnBAYVmg.js": "447dbc9b09d65b1308bbba4d612724530c16fa05598889e343ca57e361341517",
+    "dist/assets/artwork-CbIusNyQ.js": "3e04f4ddebc8f3cdd0ee15143460334650dc128afa613648959ce189d3cc15ad",
+    "dist/assets/atoms3r-Di-C4kW7.js": "fc2ebd6e799229bb7acb97f36f802bd18b3d022a8c8eb4b618da5e2a84d800d2",
+    "dist/assets/button-DfXlCOmq.js": "892730ae26c8031f8b6a28dbdde24b02740ac4fc45bcb4d2629821721003cf47",
+    "dist/assets/buzzer-1IY6IPmd.js": "686ba17013cece2a5389846b9a886dcb05f8f66d83fbe872665b17377eca6495",
+    "dist/assets/cad-2zMxDun2.js": "54e079b0ed230976fe2b569927271bae9543f09a9260765bb731ff80ed17d3dd",
+    "dist/assets/cardkb-BhYazcD0.js": "61265fb46d4e857ee0756939c34b71dd4bc116d0ad12253be40ecb6446000a37",
+    "dist/assets/cardputer-adv-3gGTGNA-.js": "60f66f469292651dc7a612bf5154e0174ccbc9fcf2bd3da43b7fc428993d5e44",
+    "dist/assets/cardputer-zero-Bry-5FJ8.js": "0c665453a22d3adebe0205bc18d0a43c573543b8a8e2c127c34912e9ff1a86f9",
+    "dist/assets/color-BNMVYBCI.js": "5a909931e608ddaf8c89f1bd60e0795662278ba6dd9a551468cc93449d28766f",
+    "dist/assets/connectors-CFGU3pj_.js": "428e95adeb7f2a5478722d82e1b66a9ad54b40beb638b02582616b2a0b3e892b",
+    "dist/assets/core-BNixFhO5.js": "1efae3b8c50b644439008a1bb03170b7273361bcf6d22754af6d108776c0fbee",
+    "dist/assets/core2-EL6I2ufD.js": "7d527c16e8ef76489ed1934df617b607c5c1af16b65ec885bc7c7ba097641098",
+    "dist/assets/cores3-CEFShKcy.js": "865d8536bf6d68c871dd10ec66aa21f40cfa675045ee86ea9d9af90eaf967ec6",
+    "dist/assets/dual-button-DtGTa-7f.js": "df6bd1aa8bb000bab5ab70b294e236c99e6e0536161e48e307385e6c574f9b2d",
+    "dist/assets/encoder-DJ45RbPV.js": "38b0e9a4695b4e3fd5928fc07712afe93b399bb854ce8a4be1760c026d2604d9",
+    "dist/assets/env-iii-BSJZeLX6.js": "c3eb980f00ba837297a366d65cfccb212610feb3d93301f9de6eb36ab1481021",
+    "dist/assets/fan-DcFyTmaI.js": "b32b0930bac63ab0591f2c513061d7c5836a65e45cce6375b42e442daf8400ed",
+    "dist/assets/grove-cable-yY8hABwG.js": "3c59ace1b73614426a67f3efc8d55a936fd48a732fc5c721e2bd9de5a9338139",
+    "dist/assets/heart-D_X_NGEz.js": "c5926850f162f0238e2ccebd082d1d8186f6af3e1f9716e41868949ffcb3cb40",
+    "dist/assets/hub-DO_8BxZL.js": "c6592a26522ccef56bf56769a7f0f6462db5eb3d7e3b680ce8f5875f17c245fd",
+    "dist/assets/index-C3B6hv1L.js": "a73dfde80d677e4eb0de979fa717d55f9418936bd477cf3c2818e5a83c1fa590",
+    "dist/assets/index-DUfIhopB.css": "60ba438373a62e53f96fc2321990239236fc203cea8b3a8d305a78dc7fff29e5",
+    "dist/assets/ir-CJayWbWz.js": "f8d31a84b5eead4b19f6294a37451c0b16dd803f4058960539af0e95640b115b",
+    "dist/assets/joystick-v11-DBmHfICj.js": "a5222edabeae7dd06a021c84722a25832fc188a5d68e953503b57a3d2da900dc",
+    "dist/assets/key-Df9Ac1SK.js": "709dda227129df24480bb9957c3d7f7b92d9ad0699169407ee8f9b3b76bdd92b",
+    "dist/assets/light-Bl3FZ81A.js": "3a07f262712d03d2c275af03a8e7e7525410e6981ed17bfe8e5ea601a00bd8a2",
+    "dist/assets/limit-CCEjmXWk.js": "011695185ac2000e92c44f5094ada61ecea058d33fe20bbb5128caa30393ead3",
+    "dist/assets/nanoc6-BwEfSKUM.js": "ff829e881f8b608c9b3ce2e50041e758d9ce9d1e4beece8a5ea2d4264ce9651c",
+    "dist/assets/ncir-CHlUdPyq.js": "a9a3f22305b986875caf7dc7aa861517fa290f87c64e62b6e01a1c60eb6158e0",
+    "dist/assets/nesso-n1-BigEEDbM.js": "fe6094953f97443e6e579191aa24dd2639110b9ee273a88238dff23e6ea5be3e",
+    "dist/assets/open-top-grove-BuhwGZgr.js": "4083b0a03c11e352a373ec042653712dc96f7e18976d440dfbabb161d8152459",
+    "dist/assets/papercolor-BsaivVXq.js": "bd6e7877e0d9fd1bace76eb479e24e14d16d62365f3d3b48dbdc3967d9437ba9",
+    "dist/assets/papermono-CJPDlnsd.js": "935224c85d06378d4c88465bf8f1c50fe7b755f63dccbfbec3c143418c1ca63b",
+    "dist/assets/parts-D0FFx_25.js": "c8835e51f79d3eefa04b3933757f5512a6ed9a83519f3f9552dfca9adc9d77b4",
+    "dist/assets/parts-DOc2lkiJ.js": "d055b6502f6121dca62c33ce958a9f6d15dc7aee2c754a94da78d448774d877c",
+    "dist/assets/pir-B9EuMiXA.js": "30ee8982b627f3aadfcf861adf763fad39a1e63cd06920662b4e61270c6c1ba2",
+    "dist/assets/relay-BPrBfmxO.js": "a697d64779e07d1578eda35a4ffee59a03f0bea44db9bda2450521f0f2c248cb",
+    "dist/assets/rfid2-ro63Oehu.js": "39d36114d25c04173a35826f7879c894d5fd214c27f93f8d1a495004be936093",
+    "dist/assets/rgb-CBk8jyie.js": "d162de7d061bfb3f7ae2eb0ee35339829680c84ba619109794b541277e9a5281",
+    "dist/assets/roller485-C3fGddfO.js": "e749ba3331ec5de3322cced00e8463bca2720d31f294545c0ec7a5cd20704da6",
+    "dist/assets/rs485-T6hV_4jR.js": "243a1000af87f1bcb12b61a5db22d30bfbb6db69cc61fa437a7ba4b47db57e0b",
+    "dist/assets/scroll-CAgU9ArM.js": "03be1cf9a14ab5d4205aa0b7df4ed885bc20411a68f9ea25ec930107878d324c",
+    "dist/assets/stackchan-CO4Th7vF.js": "af4c884457991e2ba14b60ab7895aff36e61f6428166c9dc6fca4c3ea2b6e43e",
+    "dist/assets/stamplc-CY-lrbXr.js": "7ef0c54699197a60b81d8d8a853f88c6e84a7f10bc984bd81af310d0140dde3a",
+    "dist/assets/sticks3-lPHdFrbn.js": "50265ced0c20df462c3a0da8695aa818053fdeeef9ad689e780f7699debd4d20",
+    "dist/assets/stopwatch-Cr57Rsaq.js": "20f20d6547004a7adcdb9210e71d02b80704364f170bf987f72f28dcd56fa4d1",
+    "dist/assets/tab5-OZpX3eZ_.js": "372dce05d4f6af2c0e85725c21ad7bc055f3093e0254bca1e8b9773c42c9c9dd",
+    "dist/assets/thermal-B6k-2u-e.js": "3b16b5d1cc413890d0be962f40ec873964e0a968c437c3f0d801a2925983ca9a",
+    "dist/assets/tof-uImIrrZV.js": "066fd061c37d7d007fb9eb5811780a43b677c730bed45c99e0c10ff64a911c59",
+    "dist/assets/tvoc-CpnXKXO_.js": "e00a7d7675cbc5869df6c4eb0375caa7575397349f4db2b232d5d126e14cf8cc",
+    "dist/assets/ultrasonic-i2c-BHWPtmkL.js": "cce949bf117418e7f50f4619c9f3033dbd311005e2846750435cf9641505c3fe",
+    "dist/data/catalog.json": "b7a9b28abc89aa6f4fa701e98a91e61afb1627bab6168a5c84ca8fe099155fea",
+    "dist/index.html": "27ca38b4f8477f387ece07b90fc270b35a767f7b2d7af53db513d58ca0bba156"
+  },
+  "mediaScope": "Original native WebGL canvas only; scene header/footer hidden in screenshots, no official reference-image pixels.",
+  "scope": "Real browser configuration / joint controls and StickS3 four-wire Grove connection, pose and disconnect; physical mesh geometry and electrical behavior are separate.",
+  "applicationRequestFailures": [],
+  "faviconFailures": [],
+  "renderWarnings": [
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x13c000d0e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x13c000d0e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x13c000d0e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x13c000d0e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    }
+  ],
+  "otherWarnings": [],
+  "runtimeHashesAfter": {
+    "dist/assets/8encoder-DLjELqB5.js": "dacab17333f18e5152a10ca54c8de31ab390ad752b61da6d3a0f27a27a0244e8",
+    "dist/assets/CADUnit-haXXC-ps.js": "db75dab216de6875656630477d3d7b13fd64b8e5bdd76c95e90701fab987ffec",
+    "dist/assets/ClassicUnit-CJcZiK0i.js": "2ff9867f896fe04f42746ef7845a1aabd76ad18a318889d316d537b5e538a6df",
+    "dist/assets/CoreS3-BpC2ZRpV.js": "9f083af824db9b62d2d296d2ebfcebd6e1e13c4a4eec305b94bff1c28d217b99",
+    "dist/assets/Led-B-5U7T7H.js": "fa911fc2a6c0872f311bc5541632d9b047a04e3c07cf0f5d29f74947aed2730c",
+    "dist/assets/PaperDisplay-CWcuPbPR.js": "49bd988ccaaff658ac96a2b54868e988727b42a9ea3a8a4044e3996abc90f8ea",
+    "dist/assets/VisualJoint-Ch4YT_LV.js": "5a97a6383c8072947e5c39bc38548cea3875a406201f09896b72039c38e858af",
+    "dist/assets/actuators-C23Bsiiu.js": "2750ebafd745e5747aa3459cc3a8fc202e1915863c3990f5bf9cf7af86450530",
+    "dist/assets/angle-JnBAYVmg.js": "447dbc9b09d65b1308bbba4d612724530c16fa05598889e343ca57e361341517",
+    "dist/assets/artwork-CbIusNyQ.js": "3e04f4ddebc8f3cdd0ee15143460334650dc128afa613648959ce189d3cc15ad",
+    "dist/assets/atoms3r-Di-C4kW7.js": "fc2ebd6e799229bb7acb97f36f802bd18b3d022a8c8eb4b618da5e2a84d800d2",
+    "dist/assets/button-DfXlCOmq.js": "892730ae26c8031f8b6a28dbdde24b02740ac4fc45bcb4d2629821721003cf47",
+    "dist/assets/buzzer-1IY6IPmd.js": "686ba17013cece2a5389846b9a886dcb05f8f66d83fbe872665b17377eca6495",
+    "dist/assets/cad-2zMxDun2.js": "54e079b0ed230976fe2b569927271bae9543f09a9260765bb731ff80ed17d3dd",
+    "dist/assets/cardkb-BhYazcD0.js": "61265fb46d4e857ee0756939c34b71dd4bc116d0ad12253be40ecb6446000a37",
+    "dist/assets/cardputer-adv-3gGTGNA-.js": "60f66f469292651dc7a612bf5154e0174ccbc9fcf2bd3da43b7fc428993d5e44",
+    "dist/assets/cardputer-zero-Bry-5FJ8.js": "0c665453a22d3adebe0205bc18d0a43c573543b8a8e2c127c34912e9ff1a86f9",
+    "dist/assets/color-BNMVYBCI.js": "5a909931e608ddaf8c89f1bd60e0795662278ba6dd9a551468cc93449d28766f",
+    "dist/assets/connectors-CFGU3pj_.js": "428e95adeb7f2a5478722d82e1b66a9ad54b40beb638b02582616b2a0b3e892b",
+    "dist/assets/core-BNixFhO5.js": "1efae3b8c50b644439008a1bb03170b7273361bcf6d22754af6d108776c0fbee",
+    "dist/assets/core2-EL6I2ufD.js": "7d527c16e8ef76489ed1934df617b607c5c1af16b65ec885bc7c7ba097641098",
+    "dist/assets/cores3-CEFShKcy.js": "865d8536bf6d68c871dd10ec66aa21f40cfa675045ee86ea9d9af90eaf967ec6",
+    "dist/assets/dual-button-DtGTa-7f.js": "df6bd1aa8bb000bab5ab70b294e236c99e6e0536161e48e307385e6c574f9b2d",
+    "dist/assets/encoder-DJ45RbPV.js": "38b0e9a4695b4e3fd5928fc07712afe93b399bb854ce8a4be1760c026d2604d9",
+    "dist/assets/env-iii-BSJZeLX6.js": "c3eb980f00ba837297a366d65cfccb212610feb3d93301f9de6eb36ab1481021",
+    "dist/assets/fan-DcFyTmaI.js": "b32b0930bac63ab0591f2c513061d7c5836a65e45cce6375b42e442daf8400ed",
+    "dist/assets/grove-cable-yY8hABwG.js": "3c59ace1b73614426a67f3efc8d55a936fd48a732fc5c721e2bd9de5a9338139",
+    "dist/assets/heart-D_X_NGEz.js": "c5926850f162f0238e2ccebd082d1d8186f6af3e1f9716e41868949ffcb3cb40",
+    "dist/assets/hub-DO_8BxZL.js": "c6592a26522ccef56bf56769a7f0f6462db5eb3d7e3b680ce8f5875f17c245fd",
+    "dist/assets/index-C3B6hv1L.js": "a73dfde80d677e4eb0de979fa717d55f9418936bd477cf3c2818e5a83c1fa590",
+    "dist/assets/index-DUfIhopB.css": "60ba438373a62e53f96fc2321990239236fc203cea8b3a8d305a78dc7fff29e5",
+    "dist/assets/ir-CJayWbWz.js": "f8d31a84b5eead4b19f6294a37451c0b16dd803f4058960539af0e95640b115b",
+    "dist/assets/joystick-v11-DBmHfICj.js": "a5222edabeae7dd06a021c84722a25832fc188a5d68e953503b57a3d2da900dc",
+    "dist/assets/key-Df9Ac1SK.js": "709dda227129df24480bb9957c3d7f7b92d9ad0699169407ee8f9b3b76bdd92b",
+    "dist/assets/light-Bl3FZ81A.js": "3a07f262712d03d2c275af03a8e7e7525410e6981ed17bfe8e5ea601a00bd8a2",
+    "dist/assets/limit-CCEjmXWk.js": "011695185ac2000e92c44f5094ada61ecea058d33fe20bbb5128caa30393ead3",
+    "dist/assets/nanoc6-BwEfSKUM.js": "ff829e881f8b608c9b3ce2e50041e758d9ce9d1e4beece8a5ea2d4264ce9651c",
+    "dist/assets/ncir-CHlUdPyq.js": "a9a3f22305b986875caf7dc7aa861517fa290f87c64e62b6e01a1c60eb6158e0",
+    "dist/assets/nesso-n1-BigEEDbM.js": "fe6094953f97443e6e579191aa24dd2639110b9ee273a88238dff23e6ea5be3e",
+    "dist/assets/open-top-grove-BuhwGZgr.js": "4083b0a03c11e352a373ec042653712dc96f7e18976d440dfbabb161d8152459",
+    "dist/assets/papercolor-BsaivVXq.js": "bd6e7877e0d9fd1bace76eb479e24e14d16d62365f3d3b48dbdc3967d9437ba9",
+    "dist/assets/papermono-CJPDlnsd.js": "935224c85d06378d4c88465bf8f1c50fe7b755f63dccbfbec3c143418c1ca63b",
+    "dist/assets/parts-D0FFx_25.js": "c8835e51f79d3eefa04b3933757f5512a6ed9a83519f3f9552dfca9adc9d77b4",
+    "dist/assets/parts-DOc2lkiJ.js": "d055b6502f6121dca62c33ce958a9f6d15dc7aee2c754a94da78d448774d877c",
+    "dist/assets/pir-B9EuMiXA.js": "30ee8982b627f3aadfcf861adf763fad39a1e63cd06920662b4e61270c6c1ba2",
+    "dist/assets/relay-BPrBfmxO.js": "a697d64779e07d1578eda35a4ffee59a03f0bea44db9bda2450521f0f2c248cb",
+    "dist/assets/rfid2-ro63Oehu.js": "39d36114d25c04173a35826f7879c894d5fd214c27f93f8d1a495004be936093",
+    "dist/assets/rgb-CBk8jyie.js": "d162de7d061bfb3f7ae2eb0ee35339829680c84ba619109794b541277e9a5281",
+    "dist/assets/roller485-C3fGddfO.js": "e749ba3331ec5de3322cced00e8463bca2720d31f294545c0ec7a5cd20704da6",
+    "dist/assets/rs485-T6hV_4jR.js": "243a1000af87f1bcb12b61a5db22d30bfbb6db69cc61fa437a7ba4b47db57e0b",
+    "dist/assets/scroll-CAgU9ArM.js": "03be1cf9a14ab5d4205aa0b7df4ed885bc20411a68f9ea25ec930107878d324c",
+    "dist/assets/stackchan-CO4Th7vF.js": "af4c884457991e2ba14b60ab7895aff36e61f6428166c9dc6fca4c3ea2b6e43e",
+    "dist/assets/stamplc-CY-lrbXr.js": "7ef0c54699197a60b81d8d8a853f88c6e84a7f10bc984bd81af310d0140dde3a",
+    "dist/assets/sticks3-lPHdFrbn.js": "50265ced0c20df462c3a0da8695aa818053fdeeef9ad689e780f7699debd4d20",
+    "dist/assets/stopwatch-Cr57Rsaq.js": "20f20d6547004a7adcdb9210e71d02b80704364f170bf987f72f28dcd56fa4d1",
+    "dist/assets/tab5-OZpX3eZ_.js": "372dce05d4f6af2c0e85725c21ad7bc055f3093e0254bca1e8b9773c42c9c9dd",
+    "dist/assets/thermal-B6k-2u-e.js": "3b16b5d1cc413890d0be962f40ec873964e0a968c437c3f0d801a2925983ca9a",
+    "dist/assets/tof-uImIrrZV.js": "066fd061c37d7d007fb9eb5811780a43b677c730bed45c99e0c10ff64a911c59",
+    "dist/assets/tvoc-CpnXKXO_.js": "e00a7d7675cbc5869df6c4eb0375caa7575397349f4db2b232d5d126e14cf8cc",
+    "dist/assets/ultrasonic-i2c-BHWPtmkL.js": "cce949bf117418e7f50f4619c9f3033dbd311005e2846750435cf9641505c3fe",
+    "dist/data/catalog.json": "b7a9b28abc89aa6f4fa701e98a91e61afb1627bab6168a5c84ca8fe099155fea",
+    "dist/index.html": "27ca38b4f8477f387ece07b90fc270b35a767f7b2d7af53db513d58ca0bba156"
+  },
+  "runtimeUnchanged": true,
+  "completedAt": "2026-10-25T22:19:23.226Z"
+}

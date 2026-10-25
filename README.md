@@ -1,22 +1,22 @@
 # m5stack-models.js
 
-基于 Three.js 与 [sticks3.js](https://github.com/MarsTechHAN/sticks3.js) 建模方法的 M5Stack 毫米尺度交互模型库。当前包含 **14款主机、29款Unit，共43款模型**；全部保持`modeled`，逐款精细外观验收继续进行。
+基于 Three.js 与 sticks3.js 建模方法的 M5Stack 毫米尺度交互模型库。目前包含 **14款主机、29款Unit，共43款模型**，全部保持 `modeled`，逐款精细外观验收继续进行。
 
-模型提供实体按键压放、稳定开关、旋转／倾斜关节、Grove插头与四芯线缆、外部指定的灯光与帧缓冲。控件输出输入意图，固件、电气、协议和传感数据由下游系统提供。
+模型提供实体按键压放、稳定开关、旋转和倾斜关节、Grove插头与四芯线缆，以及外部指定的灯光和帧缓冲。控件输出输入意图，固件、电气、协议和传感数据由下游系统提供。
 
-![Heart光学封装、RS485端子与Grove接线](artifacts/heart-rs485-detail/overview.jpg)
+![Heart开顶Grove插座近照](artifacts/grove-open-top/heart-grove-front-close.png)
 
-本轮细化 **Heart U029**：按MAX30100原厂封装补齐窗口内实体、两光窗及中央特征，保留原壳孔位。`red-led`提供默认关闭的固定可见红光，只接受外部明暗；远Grove的SENSOR圆窗保持被动，IR不绘成人眼可见光，不自动模拟心率闪烁。光晕固定于真实光窗平面，保留壳壁遮挡，避免斜视越过壳面。
+本批重建 **Heart U029 和 RS485 U034 的开顶Grove插座**，补齐厚上唇、中央短锁定舌、四个短接触端和凹入底部支承。Heart依据自身官方开口图和壳体基准将工程接口中心Z从0调整为1.4mm，并为PCB增加开放边切口，清除接口通道堵塞。
 
-同时补 **RS485 U034** 包装随附的可拆4P端子。默认空座与`terminalPlug:true`两配置可切换；产品入口导出`TerminalPlug`，四颗真实工具槽螺钉由`terminal/screw-1`…`screw-4`独立外驱。接触孔、线入口和夹笼保留实体深度；附件可单独拆下并保留Unit和Grove四芯线。
+![RS485开顶插座与外壳](artifacts/grove-open-top/rs485-socket-iso.png)
 
-当前公开构建已独立通过`npm run check`、`npm run build`与预览健康检查。新build后39场景全部通过：Heart15项及RS48524项，覆盖三种装配的七视图、red off/on/off、四螺钉45°和复位、真实StickS3→HUB→Heart与StickS3→RS485接线／姿态／拆卸。关闭／复位RGB逐像素一致，Heart背面点灯无像素变化；51张配对公开原生截图与私有对应图RGB完全一致，另两张原生图直接验证HUB嵌套路径下的可见点亮差异。
+公开构建已独立通过 `npm run check`、`npm run build` 和预览健康检查。实际浏览器45场景、59张独立原生截图通过，覆盖三种装配各七视图及接口近照、Heart红灯off/on/off、RS485四螺钉45°和复位，以及StickS3→HUB→Heart、StickS3→RS485接线、姿态和拆卸。59张公开截图与原始最终截图逐张RGB一致；原生console中的软件GL warning与favicon404保留，应用请求失败和pageerror为0。
 
-[当前独立验证](artifacts/heart-rs485-detail/public/review.json) · [来源审计](artifacts/heart-rs485-detail/public/source-audit.json) · [下游Agent接入](docs/AGENT-INTEGRATION.md)
+[本批独立验证](artifacts/grove-open-top/public/review.json) · [来源审计](artifacts/grove-open-top/public/source-audit.json) · [下游Agent接入](docs/AGENT-INTEGRATION.md)
 
-原始console保留软件GL ReadPixels warning和隐式favicon 404；应用运行与模型请求失败为0。Heart绝对Z座位、透镜剖面、材质和亮度，及RS485附件局部尺寸／夹笼仍含推导；有限数字采样和浏览器效果不证明制造配合或实物光学。螺钉不模拟螺纹升降、夹线、RS485/UART或供电，光窗不提供测量数据。
+默认GroveModule会自动按新接口对齐；显式unitPose仍指装配原点，调用者应读取实际Port变换。原Port实例、名称、方向、hitSize、嵌套路径和全局插头/线缆保持兼容。
 
-**贴纸继续等待原文件，不用照片裁图遮缺件。** StackChan隐藏舵机交叠与全局装配基准仍待解决。上一批147项主机控件与Relay19场景及其他历史证据保留各自快照；本轮来源见[source-manifest.json](source-manifest.json)。
+**贴纸继续等待原文件，不用照片裁图遮缺件。** 插座内腔、唇部、短针、底部支承和PCB缺口仍含照片推导；Heart旧PCB外边缘与源壳壁局部交叠、StackChan隐藏舵机交叠和生产装配基准仍待解决。有限数字采样和浏览器渲染不证明制造配合或实物功能。
 
 ## 本地运行
 
