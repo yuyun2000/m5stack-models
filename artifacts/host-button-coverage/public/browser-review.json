@@ -1,0 +1,5215 @@
+{
+  "checkedAt": "2026-10-25T20:40:27.615173+00:00",
+  "browserCases": 166,
+  "actions": [
+    {
+      "case": "Host sticks3/default/btnA",
+      "pass": true,
+      "travel": 0.35,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 9214,
+        "maxChannelDifference": 178,
+        "bbox": [
+          0,
+          50,
+          179,
+          110
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host sticks3/default/btnB",
+      "pass": true,
+      "travel": 0.18,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 6069,
+        "maxChannelDifference": 20,
+        "bbox": [
+          15,
+          0,
+          149,
+          179
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host sticks3/default/btnPWR",
+      "pass": true,
+      "travel": 0.18,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 2358,
+        "maxChannelDifference": 20,
+        "bbox": [
+          24,
+          47,
+          154,
+          133
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cores3/module/power",
+      "pass": true,
+      "travel": 0.18,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 5039,
+        "maxChannelDifference": 27,
+        "bbox": [
+          20,
+          24,
+          179,
+          154
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cores3/module/reset",
+      "pass": true,
+      "travel": 0.18,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3769,
+        "maxChannelDifference": 27,
+        "bbox": [
+          47,
+          26,
+          179,
+          158
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host stopwatch/default/a",
+      "pass": true,
+      "travel": 0.22,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 13570,
+        "maxChannelDifference": 196,
+        "bbox": [
+          12,
+          43,
+          168,
+          179
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host stopwatch/default/b",
+      "pass": true,
+      "travel": 0.22,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 15055,
+        "maxChannelDifference": 181,
+        "bbox": [
+          13,
+          43,
+          169,
+          179
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host stopwatch/default/power",
+      "pass": true,
+      "travel": 0.22,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 10241,
+        "maxChannelDifference": 154,
+        "bbox": [
+          43,
+          0,
+          138,
+          139
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/grove-power",
+      "pass": true,
+      "travel": 1.4,
+      "latching": true,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false,
+          "position": 0,
+          "latching": true
+        },
+        "down": {
+          "pressed": true,
+          "position": 1,
+          "latching": true
+        },
+        "up": {
+          "pressed": false,
+          "position": 1,
+          "latching": true
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 1150,
+        "maxChannelDifference": 207,
+        "bbox": [
+          80,
+          43,
+          100,
+          102
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 1150,
+        "maxChannelDifference": 207,
+        "bbox": [
+          80,
+          43,
+          100,
+          102
+        ]
+      },
+      "restVsReset": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Escape",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3214,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Digit1",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3243,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Digit2",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3247,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Digit3",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3243,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Digit4",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3260,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Digit5",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3260,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Digit6",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3251,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Digit7",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3169,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Digit8",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3243,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Digit9",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3247,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Digit0",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3243,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Minus",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3247,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Equal",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3247,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Backspace",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3247,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Tab",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3150,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyQ",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3170,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyW",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3169,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyE",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3186,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyR",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3173,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyT",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3192,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyY",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3184,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyU",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3197,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyI",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3243,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyO",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3249,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyP",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3243,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-BracketLeft",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3243,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-BracketRight",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3251,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Backslash",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3197,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Fn",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3200,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-CapsLock",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3108,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyA",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3246,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyS",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3168,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyD",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3242,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyF",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3242,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyG",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3196,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyH",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3196,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyJ",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3196,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyK",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3168,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyL",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3259,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Semicolon",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3158,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Quote",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3149,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Enter",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3200,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-ControlLeft",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3260,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-AltLeft",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3251,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-AltRight",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3243,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyZ",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3169,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyX",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3263,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyC",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3186,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyV",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3188,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyB",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3260,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyN",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3260,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-KeyM",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3173,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Comma",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3188,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Period",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3169,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Slash",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3260,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/key-Space",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3201,
+        "maxChannelDifference": 190,
+        "bbox": [
+          56,
+          52,
+          143,
+          113
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/power",
+      "pass": true,
+      "travel": 1.3,
+      "latching": true,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false,
+          "position": 0,
+          "latching": true
+        },
+        "down": {
+          "pressed": true,
+          "position": 1,
+          "latching": true
+        },
+        "up": {
+          "pressed": false,
+          "position": 1,
+          "latching": true
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 6463,
+        "maxChannelDifference": 228,
+        "bbox": [
+          0,
+          52,
+          154,
+          127
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 6463,
+        "maxChannelDifference": 228,
+        "bbox": [
+          0,
+          52,
+          154,
+          127
+        ]
+      },
+      "restVsReset": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/boot",
+      "pass": true,
+      "travel": 0.2,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 900,
+        "maxChannelDifference": 109,
+        "bbox": [
+          24,
+          34,
+          154,
+          179
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-adv/default/reset",
+      "pass": true,
+      "travel": 0.2,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 687,
+        "maxChannelDifference": 110,
+        "bbox": [
+          25,
+          47,
+          155,
+          179
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-F1",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 191,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-F2",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-F3",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-F4",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-F5",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-F6",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-F7",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-F8",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-F9",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-F10",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-Delete",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-Symbol",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 191,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyQ",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyW",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyE",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyR",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyT",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyY",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyU",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyI",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyO",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyP",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-ShiftLeft",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 191,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyA",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyS",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyD",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyF",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyG",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyH",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyJ",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyK",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyL",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-Backspace",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-Fn",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 190,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-ControlLeft",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 188,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-AltLeft",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 188,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyZ",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 188,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyX",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 188,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyC",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 188,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyV",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 187,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyB",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 188,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyN",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 188,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-KeyM",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 188,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-Space",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3323,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-Escape",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 191,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/key-Tab",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3333,
+        "maxChannelDifference": 184,
+        "bbox": [
+          44,
+          43,
+          159,
+          120
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/boot",
+      "pass": true,
+      "travel": 0.16,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 2148,
+        "maxChannelDifference": 177,
+        "bbox": [
+          27,
+          9,
+          141,
+          175
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cardputer-zero/default/power",
+      "pass": true,
+      "travel": 1.4,
+      "latching": true,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false,
+          "position": 0,
+          "latching": true
+        },
+        "down": {
+          "pressed": true,
+          "position": 1,
+          "latching": true
+        },
+        "up": {
+          "pressed": false,
+          "position": 1,
+          "latching": true
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 6240,
+        "maxChannelDifference": 209,
+        "bbox": [
+          52,
+          36,
+          169,
+          128
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 6240,
+        "maxChannelDifference": 209,
+        "bbox": [
+          52,
+          36,
+          169,
+          128
+        ]
+      },
+      "restVsReset": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host papermono/default/key1",
+      "pass": true,
+      "travel": 0.2,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3439,
+        "maxChannelDifference": 32,
+        "bbox": [
+          57,
+          0,
+          122,
+          179
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host papermono/default/key2",
+      "pass": true,
+      "travel": 0.2,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3439,
+        "maxChannelDifference": 32,
+        "bbox": [
+          57,
+          0,
+          122,
+          179
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host papermono/default/power",
+      "pass": true,
+      "travel": 0.2,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3263,
+        "maxChannelDifference": 38,
+        "bbox": [
+          57,
+          0,
+          122,
+          179
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host core2/default/a",
+      "pass": true,
+      "travel": 0,
+      "latching": false,
+      "capacitive": true,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host core2/default/b",
+      "pass": true,
+      "travel": 0,
+      "latching": false,
+      "capacitive": true,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host core2/default/c",
+      "pass": true,
+      "travel": 0,
+      "latching": false,
+      "capacitive": true,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host core2/default/power",
+      "pass": true,
+      "travel": 0.18,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 1357,
+        "maxChannelDifference": 97,
+        "bbox": [
+          21,
+          22,
+          179,
+          156
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host core2/default/reset",
+      "pass": true,
+      "travel": 0.18,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 875,
+        "maxChannelDifference": 96,
+        "bbox": [
+          35,
+          29,
+          179,
+          155
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host papercolor/default/key1",
+      "pass": true,
+      "travel": 0.18,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 4578,
+        "maxChannelDifference": 91,
+        "bbox": [
+          56,
+          0,
+          124,
+          179
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host papercolor/default/key2",
+      "pass": true,
+      "travel": 0.18,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 4578,
+        "maxChannelDifference": 91,
+        "bbox": [
+          56,
+          0,
+          124,
+          179
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host papercolor/default/key3",
+      "pass": true,
+      "travel": 0.18,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 4237,
+        "maxChannelDifference": 16,
+        "bbox": [
+          0,
+          34,
+          179,
+          146
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host papercolor/default/power",
+      "pass": true,
+      "travel": 0.18,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 2717,
+        "maxChannelDifference": 17,
+        "bbox": [
+          57,
+          0,
+          125,
+          179
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host nanoc6/default/button",
+      "pass": true,
+      "travel": 0.16,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3771,
+        "maxChannelDifference": 240,
+        "bbox": [
+          3,
+          0,
+          179,
+          163
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host stackchan/default/power",
+      "pass": true,
+      "travel": 0.18,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 5039,
+        "maxChannelDifference": 27,
+        "bbox": [
+          20,
+          24,
+          179,
+          154
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host stackchan/default/reset",
+      "pass": true,
+      "travel": 0.18,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 10154,
+        "maxChannelDifference": 48,
+        "bbox": [
+          50,
+          10,
+          179,
+          145
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host stackchan/default/touch-1",
+      "pass": true,
+      "travel": 0,
+      "latching": false,
+      "capacitive": true,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host stackchan/default/touch-2",
+      "pass": true,
+      "travel": 0,
+      "latching": false,
+      "capacitive": true,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host stackchan/default/touch-3",
+      "pass": true,
+      "travel": 0,
+      "latching": false,
+      "capacitive": true,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host tab5/default/power",
+      "pass": true,
+      "travel": 0.25,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 6464,
+        "maxChannelDifference": 117,
+        "bbox": [
+          34,
+          1,
+          150,
+          179
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host tab5/default/reset",
+      "pass": true,
+      "travel": 0.2,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 583,
+        "maxChannelDifference": 96,
+        "bbox": [
+          31,
+          0,
+          179,
+          169
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host atoms3r/default/button",
+      "pass": true,
+      "travel": 0.18,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 2732,
+        "maxChannelDifference": 237,
+        "bbox": [
+          97,
+          82,
+          313,
+          291
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host atoms3r/default/reset",
+      "pass": true,
+      "travel": 0.16,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 676,
+        "maxChannelDifference": 103,
+        "bbox": [
+          0,
+          45,
+          115,
+          133
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host nesso-n1/default/a",
+      "pass": true,
+      "travel": 0.18,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 8737,
+        "maxChannelDifference": 169,
+        "bbox": [
+          0,
+          47,
+          179,
+          117
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host nesso-n1/default/power",
+      "pass": true,
+      "travel": 0.18,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 696,
+        "maxChannelDifference": 100,
+        "bbox": [
+          0,
+          39,
+          142,
+          141
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host stamplc/default/a",
+      "pass": true,
+      "travel": 0.2,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 8574,
+        "maxChannelDifference": 216,
+        "bbox": [
+          20,
+          34,
+          179,
+          126
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host stamplc/default/b",
+      "pass": true,
+      "travel": 0.2,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 8101,
+        "maxChannelDifference": 216,
+        "bbox": [
+          20,
+          34,
+          179,
+          126
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host stamplc/default/c",
+      "pass": true,
+      "travel": 0.2,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 7449,
+        "maxChannelDifference": 216,
+        "bbox": [
+          19,
+          34,
+          179,
+          126
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host stamplc/default/reset",
+      "pass": true,
+      "travel": 0.2,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 180,
+        "maxChannelDifference": 48,
+        "bbox": [
+          75,
+          52,
+          106,
+          107
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cores3/din/power",
+      "pass": true,
+      "travel": 0.18,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 5122,
+        "maxChannelDifference": 27,
+        "bbox": [
+          20,
+          24,
+          179,
+          154
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cores3/din/reset",
+      "pass": true,
+      "travel": 0.18,
+      "latching": false,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false
+        },
+        "down": {
+          "pressed": true
+        },
+        "up": {
+          "pressed": false
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 3764,
+        "maxChannelDifference": 29,
+        "bbox": [
+          47,
+          26,
+          179,
+          158
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Host cores3/din/din-power",
+      "pass": true,
+      "travel": 3,
+      "latching": true,
+      "capacitive": false,
+      "states": {
+        "initial": {
+          "pressed": false,
+          "position": 0,
+          "latching": true
+        },
+        "down": {
+          "pressed": true,
+          "position": 1,
+          "latching": true
+        },
+        "up": {
+          "pressed": false,
+          "position": 1,
+          "latching": true
+        }
+      },
+      "restVsDown": {
+        "changedPixels": 8921,
+        "maxChannelDifference": 36,
+        "bbox": [
+          42,
+          53,
+          179,
+          127
+        ]
+      },
+      "restVsUp": {
+        "changedPixels": 8921,
+        "maxChannelDifference": 36,
+        "bbox": [
+          42,
+          53,
+          179,
+          127
+        ]
+      },
+      "restVsReset": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Relay 1: Relay socket configuration is selected",
+      "pass": true,
+      "configuration": {
+        "id": "socket",
+        "name": "固定3P座",
+        "options": {}
+      },
+      "sourceCase": "Relay socket configuration is selected"
+    },
+    {
+      "case": "Relay 2: Relay socket seven rendered views",
+      "pass": true,
+      "sourceCase": "Relay socket seven rendered views"
+    },
+    {
+      "case": "Relay 3: Relay load terminal is not offered as a Grove socket",
+      "pass": true,
+      "ports": [
+        "grove"
+      ],
+      "sourceCase": "Relay load terminal is not offered as a Grove socket"
+    },
+    {
+      "case": "Relay 4: Relay plugged configuration is selected",
+      "pass": true,
+      "configuration": {
+        "id": "plug",
+        "name": "安装螺钉插头",
+        "options": {
+          "terminalPlug": true
+        }
+      },
+      "sourceCase": "Relay plugged configuration is selected"
+    },
+    {
+      "case": "Relay 5: Relay plugged seven rendered views",
+      "pass": true,
+      "sourceCase": "Relay plugged seven rendered views"
+    },
+    {
+      "case": "Relay 6: Real angle control rotates only visible screw 1",
+      "pass": true,
+      "state": {
+        "angleDeg": 45,
+        "targetAngleDeg": 45,
+        "rpm": 0,
+        "transitioning": false,
+        "mode": "position",
+        "continuous": false,
+        "rangeDeg": null,
+        "visualRangeDeg": [
+          -180,
+          180
+        ],
+        "demoRpmMax": 0
+      },
+      "sourceCase": "Real angle control rotates only visible screw 1"
+    },
+    {
+      "case": "Relay 7: Screw 1 reset and position-only control",
+      "pass": true,
+      "sourceCase": "Screw 1 reset and position-only control"
+    },
+    {
+      "case": "Relay 8: Real angle control rotates only visible screw 2",
+      "pass": true,
+      "state": {
+        "angleDeg": 45,
+        "targetAngleDeg": 45,
+        "rpm": 0,
+        "transitioning": false,
+        "mode": "position",
+        "continuous": false,
+        "rangeDeg": null,
+        "visualRangeDeg": [
+          -180,
+          180
+        ],
+        "demoRpmMax": 0
+      },
+      "sourceCase": "Real angle control rotates only visible screw 2"
+    },
+    {
+      "case": "Relay 9: Screw 2 reset and position-only control",
+      "pass": true,
+      "sourceCase": "Screw 2 reset and position-only control"
+    },
+    {
+      "case": "Relay 10: Real angle control rotates only visible screw 3",
+      "pass": true,
+      "state": {
+        "angleDeg": 45,
+        "targetAngleDeg": 45,
+        "rpm": 0,
+        "transitioning": false,
+        "mode": "position",
+        "continuous": false,
+        "rangeDeg": null,
+        "visualRangeDeg": [
+          -180,
+          180
+        ],
+        "demoRpmMax": 0
+      },
+      "sourceCase": "Real angle control rotates only visible screw 3"
+    },
+    {
+      "case": "Relay 11: Screw 3 reset and position-only control",
+      "pass": true,
+      "sourceCase": "Screw 3 reset and position-only control"
+    },
+    {
+      "case": "Relay 12: Relay load terminal is not offered as a Grove socket",
+      "pass": true,
+      "ports": [
+        "grove"
+      ],
+      "sourceCase": "Relay load terminal is not offered as a Grove socket"
+    },
+    {
+      "case": "Relay 13: Real configuration selector switches socket",
+      "pass": true,
+      "sourceCase": "Real configuration selector switches socket"
+    },
+    {
+      "case": "Relay 14: Real configuration selector switches plug",
+      "pass": true,
+      "sourceCase": "Real configuration selector switches plug"
+    },
+    {
+      "case": "Relay 15: Real configuration selector switches socket",
+      "pass": true,
+      "sourceCase": "Real configuration selector switches socket"
+    },
+    {
+      "case": "Relay 16: Real host connects Relay with native four-wire cable",
+      "pass": true,
+      "state": {
+        "buttons": {
+          "btnA": {
+            "pressed": false
+          },
+          "btnB": {
+            "pressed": false
+          },
+          "btnPWR": {
+            "pressed": false
+          }
+        },
+        "joints": {},
+        "leds": {
+          "irTx": {
+            "color": "#ff2020",
+            "brightness": 0
+          }
+        },
+        "cable": {
+          "slack": 16,
+          "bend": [
+            0,
+            0,
+            -1
+          ],
+          "faceDistanceMm": 85,
+          "curveLengthMm": 84.1920788423786,
+          "source": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "outward": [
+              0,
+              1,
+              0
+            ]
+          },
+          "target": {
+            "position": [
+              0,
+              85,
+              0
+            ],
+            "quaternion": [
+              0,
+              0,
+              1,
+              6.123233995736766e-17
+            ],
+            "outward": [
+              -1.2246467991473532e-16,
+              -1,
+              0
+            ]
+          },
+          "wireCount": 4,
+          "plugCount": 2,
+          "space": "module-port"
+        }
+      },
+      "sourceCase": "Real host connects Relay with native four-wire cable"
+    },
+    {
+      "case": "Relay 17: Attached Relay upstream and load terminal are excluded from Grove targets",
+      "pass": true,
+      "ports": [
+        "grove"
+      ],
+      "sourceCase": "Attached Relay upstream and load terminal are excluded from Grove targets"
+    },
+    {
+      "case": "Relay 18: External cable pose controls retain the connected Relay",
+      "pass": true,
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 98.61541461658007,
+        "curveLengthMm": 100.51112762807686,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            50.00000000000001,
+            84.99999999999996,
+            8.881784197001252e-16
+          ],
+          "quaternion": [
+            -4.1992616075243437e-17,
+            0.13052619222005157,
+            0.9914448613738105,
+            5.599015476699124e-17
+          ],
+          "outward": [
+            -1.2198457501783575e-16,
+            -0.9659258262890686,
+            0.25881904510252074
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      },
+      "sourceCase": "External cable pose controls retain the connected Relay"
+    },
+    {
+      "case": "Relay 19: Real disconnect removes Relay and cable",
+      "pass": true,
+      "sourceCase": "Real disconnect removes Relay and cable"
+    }
+  ],
+  "logs": [
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x12c000cea00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x12c000cea00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x12c000cea00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x12c000cea00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x124000d1400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x124000d1400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x124000d1400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x124000d1400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
+    }
+  ],
+  "applicationRequestFailures": [],
+  "sourceReports": [
+    "artifacts/host-button-coverage/public/host-browser-review.json",
+    "artifacts/host-button-coverage/public/relay-browser-review.json"
+  ],
+  "scope": "Detailed actions aggregated from the exact bound real browser reports; host rows retain original per-configuration control IDs, Relay names receive only a uniqueness prefix."
+}

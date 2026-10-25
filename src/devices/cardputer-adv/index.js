@@ -28,7 +28,7 @@ export class CardputerADV extends Device{
   // below the upper-shell seam. Official gallery-08/09; CAD aperture X ±9.4, Z −6.9…−0.8.
   header(this.body,{position:[0,26.8,-4],face:'top',cols:7,rows:2});
   // Official gallery-08 locates OFF/ON, G0 and RST on the +Y edge.
-  physicalButton(this,{id:'power',label:'Power slider · visual detents only',mesh:parts['side-switch'],axis:[1,0,0],travel:1.3,latching:true,meta:{surfaceCenter:[10.1,26.8,2.6],surfaceFace:'top',mechanism:'slide',electricalBehavior:false}});
+  physicalButton(this,{id:'power',label:'Power slider · visual detents only',mesh:parts['side-switch'],axis:[1,0,0],travel:1.3,latching:true,isolateMaterials:true,meta:{surfaceCenter:[10.1,26.8,2.6],surfaceFace:'top',mechanism:'slide',electricalBehavior:false}});
   cadButton(this,{source:parts['upper-housing'],id:'boot',label:'G0 / Boot button',position:[20.8,27,2.8],face:'top',w:5.6,h:7.5,r:.7,depth:1.4,travel:.2});
   cadButton(this,{source:parts['upper-housing'],id:'reset',label:'Reset button',position:[-26.5,27,2.8],face:'top',w:5.6,h:7.5,r:.7,depth:1.4,travel:.2});
  }

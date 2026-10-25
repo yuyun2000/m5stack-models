@@ -3,6 +3,7 @@ import {pathToFileURL} from 'node:url';
 import {DynamicsPanel} from '../demo/dynamics.js';
 import {Device,Module,Port} from '../src/core/index.js';
 import {loadModel,loadGroveModule} from '../src/loaders.js';
+import {DEVICE_BUTTON_COUNTS} from './check-device-actuators.mjs';
 
 class TestUnit extends Module {
  static meta={id:'lifecycle-unit',name:'Lifecycle Unit',connector:'grove'};
@@ -93,14 +94,14 @@ async function checkNestedGroveDemo(){
  for(const id of ['grove-port','grove-unit','grove-connect','grove-disconnect','grove-status','cable-controls','connection-note','button-controls','button-inspection','inspect-button','hold-button','release-button','focus-button','button-travel','joint-section','joint-controls','led-section','led-target','led-color','led-brightness-control','led-off','led-state','input-events','dynamic-state']){
   const element=new Element(['grove-port','grove-unit','inspect-button','led-target'].includes(id)?'select':id==='led-color'?'input':'div');element.id=id;ui[`#${id}`]=element;container.append(element);
  }
- let panel,host;const events=[],cases=[];
+ let panel,host;const events=[],cases=[],focusCalls=[];
  const selected=id=>ui[id].value,options=id=>ui[id].children.map(option=>option.value);
  const choose=(id,value)=>{ui[id].value=value;ui[id].onchange?.();};
  const hold=path=>{choose('#inspect-button',path);ui['#hold-button'].onclick();};
  const settle=()=>{for(let i=0;i<80;i++)host.update(1/60);};
  try{
   host=await loadModel('sticks3');host.on('input',event=>events.push(event));
-  panel=new DynamicsPanel(container,{catalog:{products:['hub','key','fan'].map(id=>({id,name:id,category:'unit',entry:true}))},viewer:{on:()=>()=>{},fit:noop,focus:noop,requestRender:noop},onGeometryChange:noop});
+  panel=new DynamicsPanel(container,{catalog:{products:['hub','key','fan'].map(id=>({id,name:id,category:'unit',entry:true}))},viewer:{on:()=>()=>{},fit:noop,focus:(path,options)=>focusCalls.push({path,options}),requestRender:noop},onGeometryChange:noop});
   panel.bind(host,{id:'sticks3'});assert.deepEqual(options('#grove-port'),['grove']);
   assert.equal(host.led('irTx').invisible,true);assert.ok(!options('#led-target').includes('irTx'),'Invisible IR stays addressable but is absent from visible-light controls');assert.equal(ui['#led-section'].hidden,true,'An IR-only host has no visible-light panel');cases.push('invisible-host-emitter-excluded-from-visible-light-controls');
   choose('#grove-unit','hub');await ui['#grove-connect'].onclick();
@@ -126,7 +127,25 @@ async function checkNestedGroveDemo(){
   const old=events.length;ui['#grove-disconnect'].onclick();const detached=events.slice(old),cancelled=detached.find(event=>event.id==='grove/grove-1/press'&&event.action==='up');
   assert.ok(cancelled?.cancelled,'Key is released through its full old path before detach');assert.ok(detached.indexOf(cancelled)<detached.findIndex(event=>event.id==='grove/grove-1'&&event.action==='detach'));assert.ok(!detached.some(event=>event.action==='click'));assert.equal(panel.held.size,0);assert.ok(!options('#inspect-button').includes('grove/grove-1/press'));assert.ok(!options('#led-target').includes('grove/grove-1/rgb'));assert.equal(fan.get('rotor').rpm,60,'unrelated Fan rpm survives targeted Key detach');cases.push('nested-target-detach-cancels-old-path-without-stale-controls');
   hold('btnA');choose('#grove-port','grove');ui['#grove-disconnect'].onclick();assert.deepEqual(options('#grove-port'),['grove']);assert.equal(host.button('btnA').pressed,true,'removing whole HUB subtree does not release a host inspection hold');settle();ui['#release-button'].onclick();settle();assert.equal(host.button('btnA').pressed,false);cases.push('ancestor-detach-prunes-menu-and-keeps-unrelated-host-hold');
-  return {status:'pass',cases,rootOptions:['grove'],nestedKeyPath:'grove/grove-1/press',nestedFanPath:'grove/grove-2/rotor',deepestPortPath:'grove/grove-3/grove-1',scope:'Real StickS3/HUB/Key/Fan assemblies and panel; light DOM/renderer fixture only'};
+  const inspection=[];
+  for(const [id,configuration]of [...Object.keys(DEVICE_BUTTON_COUNTS).map(id=>[id,{}]),['cores3',{dinBase:true}]]){
+   panel.unbind();host.dispose();host=await loadModel(id,configuration);panel.bind(host,{id});
+   const buttons=host.list('button');assert.deepEqual(options('#inspect-button'),buttons.map(button=>button.path),`${id}: every real Button is selectable for inspection`);assert.equal(ui['#button-inspection'].hidden,false);
+   for(const button of buttons){
+    choose('#inspect-button',button.path);assert.equal(ui['#hold-button'].disabled,button.latching);assert.equal(ui['#release-button'].disabled,button.latching);assert.equal(ui['#focus-button'].disabled,false);ui['#focus-button'].onclick();assert.equal(focusCalls.at(-1).path,button.path,'All real controls, including sliders/touches, have a working focus route');assert.equal(focusCalls.at(-1).options.distance,50);
+    const output=ui['#button-travel'];
+    if(button.latching){
+     const before=button.getState();ui['#hold-button'].onclick();ui['#release-button'].onclick();assert.deepEqual(button.getState(),before,'Disabled inspection callbacks cannot accidentally toggle or hold a slider');assert.equal(panel.held.size,0);assert.equal(output.dataset.actuation,'latching');assert.equal(output.dataset.position,'0');assert.match(output.textContent,/稳定档位 0.*松开保持档位/);
+     ui['#button-controls'].children.find(element=>element.dataset.button===button.path).onclick();settle();panel.refreshState();assert.equal(button.position,1);assert.equal(button.pressed,false);assert.equal(output.dataset.position,'1');assert.equal(output.dataset.settled,'true');assert.match(output.textContent,/稳定档位 1/);assert.equal(button.getActuationState().depthMm,button.travel,'Original independent switch click reaches the second stable detent');button.setPosition(0,{immediate:true});panel.refreshState();
+    }else if(button.travel===0){
+     assert.equal(output.dataset.actuation,'capacitive');assert.equal(output.dataset.position,undefined,'A previous stable detent cannot leak into touch readout');assert.match(output.textContent,/电容触摸.*已松开.*机械行程 0 mm/);ui['#hold-button'].onclick();settle();panel.refreshState();assert.equal(button.pressed,true);assert.equal(button.getActuationState().depthMm,0);assert.equal(output.dataset.pressed,'true');assert.match(output.textContent,/电容触摸.*已按下.*机械行程 0 mm/);assert.ok(panel.held.get(`inspect:${button.path}`)===button,'Zero-travel inspection preserves the normal hold owner');ui['#release-button'].onclick();settle();panel.refreshState();assert.equal(button.pressed,false);assert.equal(button.cap.position.length(),0);assert.equal(output.dataset.pressed,'false');assert.equal(panel.held.size,0);
+    }else{assert.equal(output.dataset.actuation,'momentary');assert.equal(output.dataset.position,undefined);assert.match(output.textContent,/行程/);}
+   }
+   inspection.push({id:configuration.dinBase?'cores3-din':id,buttons:buttons.length,latching:buttons.filter(button=>button.latching).length,capacitive:buttons.filter(button=>button.travel===0).length});
+  }
+  panel.unbind();host.dispose();host=await loadModel('fan');panel.bind(host,{id:'fan'});assert.deepEqual(options('#inspect-button'),[]);assert.equal(ui['#button-inspection'].hidden,true);for(const id of ['#hold-button','#release-button','#focus-button'])assert.equal(ui[id].disabled,true);const focusCount=focusCalls.length;ui['#focus-button'].onclick();assert.equal(focusCalls.length,focusCount,'An empty inspection cannot focus a stale control');assert.equal(ui['#button-travel'].textContent,'');assert.deepEqual(ui['#button-travel'].dataset,{},'Removing the final control clears stale inspection state');
+  cases.push('all-host-controls-including-stable-sliders-and-zero-travel-touch-selectable-and-focusable','stable-slider-inspection-disabled-while-independent-click-preserves-detents','capacitive-inspection-hold-release-with-zero-physical-travel','empty-inspection-disables-actions-and-clears-stale-readout');
+  return {status:'pass',cases,inspection,rootOptions:['grove'],nestedKeyPath:'grove/grove-1/press',nestedFanPath:'grove/grove-2/rotor',deepestPortPath:'grove/grove-3/grove-1',scope:'Real controller configurations, StickS3/HUB/Key/Fan assemblies and panel; light DOM/renderer fixture only'};
  }finally{
   panel?.dispose();host?.dispose();
   for(const [key,value]of Object.entries(previous)){if(value===undefined)delete globalThis[key];else globalThis[key]=value;}

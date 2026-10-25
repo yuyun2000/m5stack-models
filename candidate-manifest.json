@@ -1,14 +1,14 @@
 {
   "format": "m5stack-models-public-candidate-v1",
   "preparedAt": "2026-10-25T13:20:33.076Z",
-  "sourceCommit": "20ccf7577f875ac01b55f6a5eb20b83ae26a3a18",
+  "sourceCommit": "b8b4746102b8bc6e098cbff1c2fd7d36cc3b1b7e",
   "sourceFiles": {
-    "catalog/products.json": "d0c93298c4ee7e25271ef7af006799e5b16d12af6ece8ad22d3bc7725759b0d0",
-    "demo/dynamics.js": "86352df0242559904602cb41287df05970130fc7fb4df130313712075487110a",
+    "catalog/products.json": "beb4109d6cd84f1c9fd86a071ecc1e33eff3b23e8e43d76f671b2cf5d4b30f0a",
+    "demo/dynamics.js": "b330fff877189c4faef9605a19a3860470c76ad86e200b37a102752db6d39f43",
     "demo/index.html": "64609124d4571e28a71244a0ca52708c21a8c1e53ed0681f0412b63e5ae336f8",
     "demo/main.js": "5944d3b12ef01ca144dee27c5f338a4a112d01ab216392c7851a481084a5c415",
     "demo/style.css": "fd4b9a97a2f36a59833dcb36cda44cebbd3f3cacb00e8cc38d489b57e689da0b",
-    "docs/AGENT-INTEGRATION.md": "e1e95506f77c248d404c042603257ed7aea7c01a34c933e2d1b8df736d248dd3",
+    "docs/AGENT-INTEGRATION.md": "d71de511f8ffc0f1804a3d143c0231db4b9a50dbe9f1719aa533c8b4456d7909",
     "docs/GROVE-CABLE.md": "c7e7b06df4e89a47da3615656d79e0efb1505970991a1e60faaee8d05a71f181",
     "docs/INTEGRATION.md": "4ab4a47db6c9a058dba35cb1504942b4f31b90bb35b31490105717c0333e6a3a",
     "manage.sh": "391d649ade85981a46d82b87316407b3c9f2a9a9f06ecfc37b0f434aa4c4ba90",
@@ -20,8 +20,8 @@
     "scripts/check-cardputer-zero-assembly.mjs": "33093ac3b3fa4822f7d9e270273d1e593dadbde604a3e335fbbb647b791d12d8",
     "scripts/check-classic-unit-connectors.mjs": "6e1309d8154f21164370c44cdbcf05c6fc2f83ed3ffbf5e465df225f01e31262",
     "scripts/check-core2-assembly.mjs": "43039438b750aa365ff40160a13d85444e177a86005570633214194c2afa13fa",
-    "scripts/check-details.mjs": "bf0e0bdc3dd80a15f47648c72729e46646c59fac173ce7f421c4355ffb4cbaf1",
-    "scripts/check-device-actuators.mjs": "8d2ecd6ce9a29c65ad56878d884d562e9b4e2dd4fe5ccf5df0b4aefc86dd1894",
+    "scripts/check-details.mjs": "d0951b30cccb1507acff79c3abbfc5909424f8955a654eff17e2ad82771924c1",
+    "scripts/check-device-actuators.mjs": "19525b59f813602802729ec885f15f74d058031d8c1348cb6bd2dad5e7d02feb",
     "scripts/check-grove-cable.mjs": "662840b87b83d1242ce1aef34517c83d3fa4a7b3fa12229ee46bf28fd02451fd",
     "scripts/check-header-sockets.mjs": "9e738a575426c4aa71b2bcad5315ccde84e0af4318c13ec72a7653fd9aab7e9a",
     "scripts/check-ir-hub-rfid2.mjs": "e86522c9e381d46f9c2b3a807237fe84a66e7a5f51fe8a9da724482fe0451bba",
@@ -62,11 +62,11 @@
     "src/devices/cardputer-adv/cad-map.json": "8d73293554e5c9473115a770b6593d95b0da553fef78eb9ee3790276c1572ac6",
     "src/devices/cardputer-adv/dimensions.js": "f85e3b5b2b9e9fb942395cd3977ed5e87001a908ebc10afd4e614408dfce069a",
     "src/devices/cardputer-adv/geometry-data.js": "0ae28a6212b445aa1a3b2bc20ddd8f7973c0cbb398a9cb067dc68b04e7ae1866",
-    "src/devices/cardputer-adv/index.js": "b02238a68339234b04ecaf14018781a4f41ff1ad124b2b61f803f235436c2bd1",
+    "src/devices/cardputer-adv/index.js": "73079428751692a7238ade370e54dfcad363b7c7716adefe457d967e721b78bd",
     "src/devices/cardputer-zero/body.js": "0fd7d59a8314a839e91819b850e37e8e3a3df55edc4c81b33af54c9860ded2fc",
     "src/devices/cardputer-zero/dimensions.js": "b69584f5a875ed5f4aa45d8971bbfaad8bac98d38feab0d9e083ce84eacf54a2",
     "src/devices/cardputer-zero/index.js": "31428aa058a8c0fcc9e679017a9b5eedc26d520d965e3bf22934d94ef68ee2e0",
-    "src/devices/cardputer-zero/keyboard.js": "9a6997a136c0600dd54bfda56f20110a81f827ca9c3880beda979da0e7795070",
+    "src/devices/cardputer-zero/keyboard.js": "6fc17c6156d708e8c2973b01248fa2e500da8ee7e0cbcbfbec58341039ba5ed4",
     "src/devices/cardputer-zero/ports.js": "4b5cc9d899ad4430c33e299fc108022deaee4a6a22374424c864d5700ecee3e5",
     "src/devices/core2/assembly.js": "1eb2ec32a35a71bcc9db52c4572f5fb1563199cb2e9a9351622126f84edf46f8",
     "src/devices/core2/cad-map.json": "9ff72a46a88f53efa30b566613b5b156f360a0e5bc144e414c3b558cc2ab1c02",
@@ -94,12 +94,12 @@
     "src/devices/papercolor/cad-map.json": "9a59fdc1c59173a3e8de3a02b57d1355a667c340c2e8135a9de8bf92dd16cd77",
     "src/devices/papercolor/dimensions.js": "5443b5d347e90efb86e9f80ef96163afea91ac6689256fb2912ddc1aea89eb14",
     "src/devices/papercolor/geometry-data.js": "4d724ef560023583e567b2d3dde87f18976653c365f80e08688e7a2addb0f4d2",
-    "src/devices/papercolor/index.js": "81492fd6e83f898472f2579d240a50b0cbc213e9e6a9c98c4665f462fd27eaa2",
+    "src/devices/papercolor/index.js": "ed01e36ecd92f8e62a313b919c2cd9338eb05b64f895a2000e254d86fa832f4a",
     "src/devices/papermono/assembly.js": "8e785869ec24077f8c2aad8601c5cb93fe1a6f8f9433ba2cf18d6575a7b36111",
     "src/devices/papermono/cad-map.json": "6d95343bfdd274e49654e48ee5cf81eb8391497f90d0ac6834aab4ec83c81d90",
     "src/devices/papermono/dimensions.js": "3f7ef51d54f60884a8ec07d164c675a31e3adecf1d70be43b864c5a7a3ad7d42",
     "src/devices/papermono/geometry-data.js": "6ef4d158284d9ca3d7a0aaed7d323e0740a5e8d447d025df864c9cd6d0005230",
-    "src/devices/papermono/index.js": "77f285576359320e5ff475b54f873f63bb02e7f53d7961e9ea0a486e62078fe6",
+    "src/devices/papermono/index.js": "cce96c67ea3052609a683d85e999baa7c40f0dada20eadffbd44c96babb1f94f",
     "src/devices/stackchan/cad-map-motion.json": "bf1082856e24955023ccfaae7b985162385ef0326693e7ddbfd10ca6b9368a71",
     "src/devices/stackchan/cad-map.json": "fb0d860007d070b8467ca4ae662ee99701853dabce634bf620a6754103ec4696",
     "src/devices/stackchan/dimensions.js": "a6583eea8ceb18cf74a33d22260b8297e999dcebf730b73c6364a678625012fd",
@@ -111,7 +111,7 @@
     "src/devices/stamplc/cad-map.json": "893be8b42d69b128c266bdafd7a25f06a4ced5bd2471d9a7f2b1d44755d53c65",
     "src/devices/stamplc/dimensions.js": "a5e51938ff502591cddf2fad07b1eafc93a505f73a4c80e8ce2b1a0c590ff1b5",
     "src/devices/stamplc/geometry-data.js": "38bcca6e5d1e7736ebdbb267ec93ca23dc3f896a140ca13573fcd486f93c6caf",
-    "src/devices/stamplc/index.js": "46659cd3a499eb68e04cafd0494c36a5edab1aa5b367289ac06445513256f2e0",
+    "src/devices/stamplc/index.js": "17ad96e14d16480a11c70feef4fc90587a26585b8ef84a6e03250af888ab50aa",
     "src/devices/stamplc/terminals.js": "5dd9e8bc913351dbeaf53bfa7b081004fa8e222a3bb3966d6d19e27554615faf",
     "src/devices/sticks3/StickS3.js": "45c861641dd39680c3beced18fdde34c8cffbd66df48c5e192d12de0a541380a",
     "src/devices/sticks3/assembly.js": "ef74bc2e771bbc18a91be85e1733d84d905f2987ae59c5c3858f7a289461eba3",
@@ -134,7 +134,7 @@
     "src/loaders.js": "0e0156b693e954193bc1204e4ee3a434c69e2cffded16028a5c313fbbf807e5b",
     "src/modeling/PaperDisplay.js": "e65c23e41319a320f94f337a9efd49c5b0bbeed19fc5f1551a5f6fb299055542",
     "src/modeling/RoundDisplay.js": "0d5fde964a55d2082fae2ba6768229c470956712a652d96474dca75c0c046eff",
-    "src/modeling/actuators.js": "114c7ad0c4db1c981af63bf5fc6028a4ae15a16ce68eb1b2c28e308990c2613c",
+    "src/modeling/actuators.js": "c87e5723bc0351a42516084f7f4990633651b63913a6922383216567dc3787d8",
     "src/modeling/artwork.js": "c395bfefd9a1d5fb067251837bafe41060136b3cf6295d471df757115eb4851d",
     "src/modeling/cad.js": "83e8e600aa182b5a94bbccfcd26f0ab35d569c5828ee8ce7f11bc54d964a88fd",
     "src/modeling/connectors.js": "5aa32f504f5e8d8a047129963fd57840b9325009e64ffc87038ff8f47afdb80c",
@@ -199,9 +199,9 @@
     "src/units/pir/dimensions.js": "9eda33a9c42a6ac4354010a06b815653dbf4e15b94ecfc4315b5b70a6373d67d",
     "src/units/pir/index.js": "acfe37bc1f372a7100c3e8719c89b03a30fcdbd99cc126d5c5204923e1456f1a",
     "src/units/relay/cad-map.json": "00f0bf8f30e7767e2a74dfdeed6f496b886182fec95022b3ab6f2dda8c640f90",
-    "src/units/relay/dimensions.js": "264f2732e1404236c708eec52c1c59cb2d9793122cecf3c43fe7b4f599f774fb",
+    "src/units/relay/dimensions.js": "3cb033076499c67f08fa4ef84145ff836e08a954737f309def8851f7d59bc4fc",
     "src/units/relay/geometry-data.js": "041a062696ac4a7929b3a036f5e2e31dc2986f9954b7048b38608fe59ce3da3d",
-    "src/units/relay/index.js": "3e409b855e08e3002f5e2d43bc5ab58dad0136f423d23a6a7c5c3aff77746c3d",
+    "src/units/relay/index.js": "4e63b971bee7c5bf5321dc31c41b4ac44b2b951bd246e6eb02df399b3bb35c79",
     "src/units/rfid2/cad-map.json": "abca994afe621636eaf0502c37473cbb995d4660db429a0a0a889ac04df1f3e1",
     "src/units/rfid2/dimensions.js": "08bee5234cedf9bb253ea69bf7f84e0a8e9ecd6b038b3d747d846769a714f312",
     "src/units/rfid2/geometry-data.js": "635173ebea01ef300fbdc1eeca6b46f4c3ced535dcf84680922eb9cb35703cab",
@@ -234,7 +234,7 @@
     "src/units/ultrasonic-i2c/index.js": "acfe37bc1f372a7100c3e8719c89b03a30fcdbd99cc126d5c5204923e1456f1a",
     "tokens.css": "80aac81f920541964c2ae22f4c3dac388f1c172cabd66495c9aa72f43bc42365",
     "vite.config.js": "6c133c2a30fbe83e4fb101914849efd75a8ce9f49a8659046068930237208936",
-    "docs/VISUAL-MOTION.md": "4b5a1aad786faa68419546c0fd93700166c4034d54dcb11ba99b7fcfdfe19705",
+    "docs/VISUAL-MOTION.md": "5b4aed653a37025ba3f1f971417efdfb9550e0490a2424060956a89043c83eb6",
     "LICENSE": "bd6afb822b82b478e8b0165cd5fbd107a7e30a371f1276052d2cafdd1a8b440b",
     "src/devices/cardputer-adv/assembly.js": "bc7da4058b5017017861e41844a79c0069f8d2b991a1651b364bb0020b799f1b",
     "src/units/button/FlexPadButton.js": "dab4803edde0b97b275a46e8792b87da7471f7229cd744dc3a1929c49c742f35",
@@ -271,7 +271,7 @@
     "artifacts/motion-refinement/connections.jpg": "704d1fd29e7e3ca335d916dd73bb88bdd30f223d3e0be93676019ed003517b16",
     "artifacts/motion-refinement/key-press.gif": "1090fc551b63c0696130625537b0907c38d4592f8e04a462ffb62a8f3be3cc5c",
     "artifacts/motion-refinement/stackchan-motion.gif": "3c76840dac57169a5a9a8fb15779e13b58ba0ea24408fb420e1a8f0d328c9d77",
-    "scripts/check-demo-lifecycle.mjs": "a9ea2a1bf94b5b5fcbef4b65d623d163a8c89e223b27afbf221a0bd1d751e50f",
+    "scripts/check-demo-lifecycle.mjs": "b2e0c7a576c81bf23214eba138b3f0338a747a6f6da5b658c0e0c541e4e19acf",
     "scripts/check-port-lifecycle.mjs": "60c62750b89e908624bf3d64b045b909aa76be23d7867a2cb777c470281ff93a",
     "scripts/check-stackchan-servo-fit.mjs": "5fc62b124a000cf10aaddd52fbd351ec56f321ded77a5cc7b1032b6218d7c338",
     "scripts/check-viewer-lifecycle.mjs": "a471cf11d5e1dba09530138af461f2f7d1119b28090eeb4332774139bdfdfd26",
@@ -320,7 +320,53 @@
     "src/units/roller485/cad-map.json": "731fbb83c945ed9ecde4a167db610a4653d19545a7d4f8142c4b7e04de543c3d",
     "artifacts/function-expansion/overview.jpg": "7296f7171c11d57e4ffe01b71174b42b9c02bceef04d255f8a09e11ed893b709",
     "artifacts/function-expansion/roller-press.gif": "ec3f8988379db54d21d75045d55d4b0e5fb1a8abb24e83260c53d5b337c06983",
-    "artifacts/function-expansion/rotor.gif": "bbb4a0f844ab35e4c0bb3c192aa5a81de2dfb4c522f35bd04c09086c8570c606"
+    "artifacts/function-expansion/rotor.gif": "bbb4a0f844ab35e4c0bb3c192aa5a81de2dfb4c522f35bd04c09086c8570c606",
+    "scripts/check-actuator-materials.mjs": "780b4fb191471358a026760e79d54edd18acc7d7d3bc4ccd87da5db730e1eada",
+    "src/units/relay/assembly.js": "0fe8671ebd10eb8ae775559fd1e6e41d6f384f66cd73cfc8a6d3570c92d5c1c6",
+    "scripts/check-relay-assembly.mjs": "f21f892128097678c076f60cafc953be854d701c0bbe96c60058fe37b53e0061",
+    "artifacts/host-button-coverage/atoms3r-controls.png": "29a62c2ec8d75f39799e9ecee241b888f9f49592f7220072040a7fd0c7240a6e",
+    "artifacts/host-button-coverage/cardputer-adv-controls.png": "c10872e37dd8dfbbaa797f54eef06cddd9d067f67d9491840ca58c72a380de39",
+    "artifacts/host-button-coverage/cardputer-zero-controls.png": "9a7ba3ccbd818eb203109755fc4569a1bd0fff6811d4a67e8520fb79fd162f65",
+    "artifacts/host-button-coverage/core2-controls.png": "70acd2f8db201fa6047d3223065bf93c66ddcb431f5fa7d04bb62183885a8700",
+    "artifacts/host-button-coverage/cores3-controls.png": "f7f73d66d73eeb2cb69283412d4c812339bdba7e0122f5c598cbd9f23bc465eb",
+    "artifacts/host-button-coverage/cores3-din-controls.png": "620b8bd9d1872d978b5fdec5d89dcc1c459f3294ab0d81586f0434dc9aeac9c8",
+    "artifacts/host-button-coverage/host-press.gif": "d8f9038035679bc0e66138834db4ede2bb532d3adcf3e2704cae0469dcc3474e",
+    "artifacts/host-button-coverage/nanoc6-controls.png": "40c4d40ed4a704a2bf9b5799713adcc20c661755fffd872f286213f61ddd3e7e",
+    "artifacts/host-button-coverage/nesso-n1-controls.png": "7cdb2e7e0f1c25889d3545f7acc45116d74817465523e5afb67f2d458fac2c55",
+    "artifacts/host-button-coverage/overview.jpg": "88e99ee28c04c47db916de1a8da22ac177f5594debe8b8bafb2188b9d3a431eb",
+    "artifacts/host-button-coverage/papercolor-controls.png": "3467118dc206aeb3e0e814918d959ab362d31b3d7b65c70279f749356361f23d",
+    "artifacts/host-button-coverage/papermono-controls.png": "cc71a306d39846670df5e1b9895246ebe05b9d1e94cf7e27a618fecb52c84f1b",
+    "artifacts/host-button-coverage/relay-plugged-back.png": "766f433d8c6228f8c2d8664c2d88c6bc9673f8074b369cd1ca06ae787f642616",
+    "artifacts/host-button-coverage/relay-plugged-bottom.png": "42842ef034ec2d37e3d37970872fa4bd1e9835a6455be442bfd54d102737c571",
+    "artifacts/host-button-coverage/relay-plugged-front.png": "94a59cdbaf75ea18e0bccd50661a143967919df3468a3c98a29e6cba0df86f15",
+    "artifacts/host-button-coverage/relay-plugged-iso.png": "369948dfdbd73d0d8e68103f8e11a0e7eda019c22c8dae1fcb40f55b32668c74",
+    "artifacts/host-button-coverage/relay-plugged-left.png": "04916dac1c8209b2c9c009dc6cdd23421da0551ddc1b38983a54995d47766450",
+    "artifacts/host-button-coverage/relay-plugged-right.png": "5d0dc28d8e65403aabc1f1ef451d32da2aca0a2aada642fb5dc27f739bf7a042",
+    "artifacts/host-button-coverage/relay-plugged-top.png": "d98421cc8f684dd98568439f9949988fa29193fe53f1d04363b2d4eb23a78f5f",
+    "artifacts/host-button-coverage/relay-socket-back.png": "e85fb6473263659045fad63a3356f1efa4755313aa779ac4e11073b13d708dbe",
+    "artifacts/host-button-coverage/relay-socket-bottom.png": "42842ef034ec2d37e3d37970872fa4bd1e9835a6455be442bfd54d102737c571",
+    "artifacts/host-button-coverage/relay-socket-front.png": "c5676e54c7071225ad0b6b8e5b1d986832e189d4a4d87cc4c0aa3c409bae8059",
+    "artifacts/host-button-coverage/relay-socket-iso.png": "3d854f6a4192b4e894ca057ac205702dccc6cb80f1ff01c25c5a7d76d2aa5607",
+    "artifacts/host-button-coverage/relay-socket-left.png": "09fc15b8b2d56fa26fc735ce31c9c9eed0a06a45cb147f274bb529f786c2b152",
+    "artifacts/host-button-coverage/relay-socket-restored.png": "3d854f6a4192b4e894ca057ac205702dccc6cb80f1ff01c25c5a7d76d2aa5607",
+    "artifacts/host-button-coverage/relay-socket-right.png": "dfccfb54f5626c481b9710a286818c4859eff7fc9d5d331f14d157c63aa623c7",
+    "artifacts/host-button-coverage/relay-socket-top.png": "eb37dd0b23e4d141950471f60b8e0d424bc4e0efed19ca3ccaddc0d3e558a8ef",
+    "artifacts/host-button-coverage/screw-1-45.png": "09fcea908eea3744f79c07a11eeb9d1ef672b37ef28fac8eaa17d91080622990",
+    "artifacts/host-button-coverage/screw-1-reset.png": "94a59cdbaf75ea18e0bccd50661a143967919df3468a3c98a29e6cba0df86f15",
+    "artifacts/host-button-coverage/screw-1-rest.png": "94a59cdbaf75ea18e0bccd50661a143967919df3468a3c98a29e6cba0df86f15",
+    "artifacts/host-button-coverage/screw-2-45.png": "f05258a955c11681b55deba61531b49a76cfbc7e24912cd913a57cbba49a5dfa",
+    "artifacts/host-button-coverage/screw-2-reset.png": "94a59cdbaf75ea18e0bccd50661a143967919df3468a3c98a29e6cba0df86f15",
+    "artifacts/host-button-coverage/screw-2-rest.png": "94a59cdbaf75ea18e0bccd50661a143967919df3468a3c98a29e6cba0df86f15",
+    "artifacts/host-button-coverage/screw-3-45.png": "ba08f856bb36066e69436743e24e32ad3ea909857e9d0bf950e0f38a9ccf5630",
+    "artifacts/host-button-coverage/screw-3-reset.png": "94a59cdbaf75ea18e0bccd50661a143967919df3468a3c98a29e6cba0df86f15",
+    "artifacts/host-button-coverage/screw-3-rest.png": "94a59cdbaf75ea18e0bccd50661a143967919df3468a3c98a29e6cba0df86f15",
+    "artifacts/host-button-coverage/stackchan-controls.png": "664b24fa715af5204884bf067df99d8838d4d1552be86e93950cce15b0769d05",
+    "artifacts/host-button-coverage/stamplc-controls.png": "3f76671ade4846b774fd4c1960fff2e610a0f3f128473468e4541db2da75cd48",
+    "artifacts/host-button-coverage/sticks3-controls.png": "e7b3ad8ad0116c23652fc89e20668495dff4026927cf168df6b51e067b3080e2",
+    "artifacts/host-button-coverage/sticks3-relay-back.png": "c952eb86e68363f087a12bee503552fb306dcf9daa839f2f40710dca8ead23f7",
+    "artifacts/host-button-coverage/sticks3-relay-iso.png": "cfe6197af9628908d22dd75d9385b88edbf8852f28032eda3e0222cefe2857a7",
+    "artifacts/host-button-coverage/stopwatch-controls.png": "a136487ae8ecbfae76e013bdcff6fb6e77a32d40db9226101dfbf88868ac7ab9",
+    "artifacts/host-button-coverage/tab5-controls.png": "1967f6ad3a0eab88a1a65d260203d51165d95132282ad6a3e5e90dc1ef7ea23c"
   },
   "transformations": [
     {
@@ -537,6 +583,77 @@
       "sourceUrl": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U182_Unit_Roller485/Structures/Unit_Roller485.stl",
       "inputSha256": "731fbb83c945ed9ecde4a167db610a4653d19545a7d4f8142c4b7e04de543c3d",
       "outputSha256": "4e49e298b3a4acdd5824902486d4eb7e9d9e60f7b37775a5d4a383dc1856ab04"
+    },
+    {
+      "file": "src/devices/cardputer-adv/index.js",
+      "type": "preserve-public-base-deferred-artwork-nulls",
+      "callSites": 4,
+      "privateBaselineCommit": "c86130e14d685d05a35b1539782f86a9465f51bc",
+      "basePublicCommit": "6a3a194c21875a70ba7a2ddac1e5a937a1ffb82a",
+      "baselineInputSha256": "b02238a68339234b04ecaf14018781a4f41ff1ad124b2b61f803f235436c2bd1",
+      "publicBaseSha256": "6acdbc3cfb910c16a84a2f326a5f3ad4d5fe5b250a86881670ab75bab1c2f066",
+      "expressionSha256": [
+        "8c2a312a115087a4fca2ed51d6bb882173c0333a397a9c0d5af1ad701c393f6a",
+        "599c3a4c933765bbe1c5f816b620143aca98a903e1fabd15c2d3c04ed978ba58",
+        "c3238430987b7eb795a2bc825baa2c67c2366feb21202991878418effbb35f18",
+        "33c28b9fa34fd93e1669ebfca73bc5921585661b9bf8fe87a5623b186b62a33e"
+      ],
+      "inputSha256": "73079428751692a7238ade370e54dfcad363b7c7716adefe457d967e721b78bd",
+      "outputSha256": "de4460645821337e8bb83bd7f0a2254120c4273e3022217432497b494f2916b4"
+    },
+    {
+      "file": "src/devices/papermono/index.js",
+      "type": "preserve-public-base-deferred-artwork-nulls",
+      "callSites": 1,
+      "privateBaselineCommit": "c86130e14d685d05a35b1539782f86a9465f51bc",
+      "basePublicCommit": "6a3a194c21875a70ba7a2ddac1e5a937a1ffb82a",
+      "baselineInputSha256": "77f285576359320e5ff475b54f873f63bb02e7f53d7961e9ea0a486e62078fe6",
+      "publicBaseSha256": "c74f1f08119c72d615b917d033db9669791144c1b73a39f49bdf012ec5801aa4",
+      "expressionSha256": [
+        "3d558059cf8a219dc6b168239104ce7aca8e519519d39e08f81f7c90d242c173"
+      ],
+      "inputSha256": "cce96c67ea3052609a683d85e999baa7c40f0dada20eadffbd44c96babb1f94f",
+      "outputSha256": "30c387232637610460ef5d43c858267c431cdc62b9caf1c086084da45f249ca5"
+    },
+    {
+      "file": "src/devices/papercolor/index.js",
+      "type": "preserve-public-base-deferred-artwork-nulls",
+      "callSites": 2,
+      "privateBaselineCommit": "c86130e14d685d05a35b1539782f86a9465f51bc",
+      "basePublicCommit": "6a3a194c21875a70ba7a2ddac1e5a937a1ffb82a",
+      "baselineInputSha256": "81492fd6e83f898472f2579d240a50b0cbc213e9e6a9c98c4665f462fd27eaa2",
+      "publicBaseSha256": "949f7ffdfde956eda73a76e2bde7e35711d490d1e2d2ad92f47ab54cc2262771",
+      "expressionSha256": [
+        "d6688cd626aaffabed39acfbb5549f7bc6d38e6f4562134199c9387407cd8fe1",
+        "7edf42cab78462ff8c6b04371a12da1b299ea3c5f2a82a757dcc4107adb302f4"
+      ],
+      "inputSha256": "ed01e36ecd92f8e62a313b919c2cd9338eb05b64f895a2000e254d86fa832f4a",
+      "outputSha256": "15a0bf54f74a169042dd15e3b7eb36927161f52586929d8150962db29f2e7c31"
+    },
+    {
+      "file": "src/devices/stamplc/index.js",
+      "type": "preserve-public-base-deferred-artwork-nulls",
+      "callSites": 4,
+      "privateBaselineCommit": "c86130e14d685d05a35b1539782f86a9465f51bc",
+      "basePublicCommit": "6a3a194c21875a70ba7a2ddac1e5a937a1ffb82a",
+      "baselineInputSha256": "46659cd3a499eb68e04cafd0494c36a5edab1aa5b367289ac06445513256f2e0",
+      "publicBaseSha256": "e0a250366339f583931bc173c3864fad9df80ecd11b73548ee3fe102c5475d27",
+      "expressionSha256": [
+        "c5e269ba8d3bf42c53bcf483530490dab5770f0ef763b25c33dac6c7f1fe87ed",
+        "904be623aba074c9f249acf0b4b48850836559c5ccdd4643f97e1953d6d60322",
+        "78dfc1d3aca116b72bd7676ff3c66b344fdcb7a7fadf0daaad7d19ed875fe2ea",
+        "b3191aa60d83074b792f15b36cbb40206fd09fe832c347974bd8bc34fb843a64"
+      ],
+      "inputSha256": "17ad96e14d16480a11c70feef4fc90587a26585b8ef84a6e03250af888ab50aa",
+      "outputSha256": "7412281c85d2126acbfb5d60ed5a828a1765ad26fa9fc9b540177e1905a00d0d"
+    },
+    {
+      "file": "docs/VISUAL-MOTION.md",
+      "type": "exact-public-documentation-replacement",
+      "inputSha256": "5b4aed653a37025ba3f1f971417efdfb9550e0490a2424060956a89043c83eb6",
+      "outputSha256": "02de609cbe2068938def0b4bb6bc4f08be65fd714a19451b1ede41ae4fca8fa2",
+      "oldTextSha256": "d45b95beaafc88c14147fb3fbfb33cb22dd6d19ae62641f89a72bf4881b5fa59",
+      "newTextSha256": "d2169e89dd2ecae5ff56c8f22625d38d449a76278403b785043727281bc53c5c"
     }
   ],
   "originalEvidence": [
@@ -627,7 +744,50 @@
     "artifacts/atoms3r-ir/button-press.gif",
     "artifacts/function-expansion/overview.jpg",
     "artifacts/function-expansion/roller-press.gif",
-    "artifacts/function-expansion/rotor.gif"
+    "artifacts/function-expansion/rotor.gif",
+    "artifacts/host-button-coverage/atoms3r-controls.png",
+    "artifacts/host-button-coverage/cardputer-adv-controls.png",
+    "artifacts/host-button-coverage/cardputer-zero-controls.png",
+    "artifacts/host-button-coverage/core2-controls.png",
+    "artifacts/host-button-coverage/cores3-controls.png",
+    "artifacts/host-button-coverage/cores3-din-controls.png",
+    "artifacts/host-button-coverage/host-press.gif",
+    "artifacts/host-button-coverage/nanoc6-controls.png",
+    "artifacts/host-button-coverage/nesso-n1-controls.png",
+    "artifacts/host-button-coverage/overview.jpg",
+    "artifacts/host-button-coverage/papercolor-controls.png",
+    "artifacts/host-button-coverage/papermono-controls.png",
+    "artifacts/host-button-coverage/relay-plugged-back.png",
+    "artifacts/host-button-coverage/relay-plugged-bottom.png",
+    "artifacts/host-button-coverage/relay-plugged-front.png",
+    "artifacts/host-button-coverage/relay-plugged-iso.png",
+    "artifacts/host-button-coverage/relay-plugged-left.png",
+    "artifacts/host-button-coverage/relay-plugged-right.png",
+    "artifacts/host-button-coverage/relay-plugged-top.png",
+    "artifacts/host-button-coverage/relay-socket-back.png",
+    "artifacts/host-button-coverage/relay-socket-bottom.png",
+    "artifacts/host-button-coverage/relay-socket-front.png",
+    "artifacts/host-button-coverage/relay-socket-iso.png",
+    "artifacts/host-button-coverage/relay-socket-left.png",
+    "artifacts/host-button-coverage/relay-socket-restored.png",
+    "artifacts/host-button-coverage/relay-socket-right.png",
+    "artifacts/host-button-coverage/relay-socket-top.png",
+    "artifacts/host-button-coverage/screw-1-45.png",
+    "artifacts/host-button-coverage/screw-1-reset.png",
+    "artifacts/host-button-coverage/screw-1-rest.png",
+    "artifacts/host-button-coverage/screw-2-45.png",
+    "artifacts/host-button-coverage/screw-2-reset.png",
+    "artifacts/host-button-coverage/screw-2-rest.png",
+    "artifacts/host-button-coverage/screw-3-45.png",
+    "artifacts/host-button-coverage/screw-3-reset.png",
+    "artifacts/host-button-coverage/screw-3-rest.png",
+    "artifacts/host-button-coverage/stackchan-controls.png",
+    "artifacts/host-button-coverage/stamplc-controls.png",
+    "artifacts/host-button-coverage/sticks3-controls.png",
+    "artifacts/host-button-coverage/sticks3-relay-back.png",
+    "artifacts/host-button-coverage/sticks3-relay-iso.png",
+    "artifacts/host-button-coverage/stopwatch-controls.png",
+    "artifacts/host-button-coverage/tab5-controls.png"
   ],
   "verification": "artifacts/interaction-expansion/public/review.json",
   "published": true,
@@ -703,7 +863,7 @@
   },
   "licenseVerifiedAt": "2026-10-25T13:37:28.164885+00:00",
   "publicationRecord": "artifacts/publication.json",
-  "syncedAt": "2026-10-25T19:25:23.902Z",
+  "syncedAt": "2026-10-25T20:12:39.168Z",
   "incrementalRefinement": {
     "sourceCommit": "b6d53bc3b40425a1f6b343d20240245588727397",
     "changedFiles": [
@@ -1186,5 +1346,349 @@
       "43 products remain modeled and 0 formally verified; finite geometry/ray samples and browser pixels do not establish manufacturing fit or physical-device operation."
     ],
     "historicalBoundary": "All prior candidate fields/batches and the previous 42 product provenance rows remain historical. This sourceCommit binds this incremental batch; historical sourceFiles/reviews are preserved and do not assert current-runtime acceptance."
+  },
+  "incrementalHostButtonCoverage": {
+    "sourceCommit": "b8b4746102b8bc6e098cbff1c2fd7d36cc3b1b7e",
+    "privateBaselineCommit": "c86130e14d685d05a35b1539782f86a9465f51bc",
+    "basePublicCommit": "6a3a194c21875a70ba7a2ddac1e5a937a1ffb82a",
+    "preparedAt": "2026-10-25T20:12:39.168Z",
+    "changedFiles": [
+      "src/modeling/actuators.js",
+      "src/devices/cardputer-adv/index.js",
+      "src/devices/cardputer-zero/keyboard.js",
+      "src/devices/papermono/index.js",
+      "src/devices/papercolor/index.js",
+      "src/devices/stamplc/index.js",
+      "demo/dynamics.js",
+      "scripts/check-device-actuators.mjs",
+      "scripts/check-actuator-materials.mjs",
+      "scripts/check-details.mjs",
+      "scripts/check-demo-lifecycle.mjs",
+      "src/units/relay/index.js",
+      "src/units/relay/dimensions.js",
+      "src/units/relay/assembly.js",
+      "scripts/check-relay-assembly.mjs",
+      "docs/AGENT-INTEGRATION.md",
+      "docs/VISUAL-MOTION.md",
+      "catalog/products.json",
+      "artifacts/host-button-coverage/atoms3r-controls.png",
+      "artifacts/host-button-coverage/cardputer-adv-controls.png",
+      "artifacts/host-button-coverage/cardputer-zero-controls.png",
+      "artifacts/host-button-coverage/core2-controls.png",
+      "artifacts/host-button-coverage/cores3-controls.png",
+      "artifacts/host-button-coverage/cores3-din-controls.png",
+      "artifacts/host-button-coverage/host-press.gif",
+      "artifacts/host-button-coverage/nanoc6-controls.png",
+      "artifacts/host-button-coverage/nesso-n1-controls.png",
+      "artifacts/host-button-coverage/overview.jpg",
+      "artifacts/host-button-coverage/papercolor-controls.png",
+      "artifacts/host-button-coverage/papermono-controls.png",
+      "artifacts/host-button-coverage/relay-plugged-back.png",
+      "artifacts/host-button-coverage/relay-plugged-bottom.png",
+      "artifacts/host-button-coverage/relay-plugged-front.png",
+      "artifacts/host-button-coverage/relay-plugged-iso.png",
+      "artifacts/host-button-coverage/relay-plugged-left.png",
+      "artifacts/host-button-coverage/relay-plugged-right.png",
+      "artifacts/host-button-coverage/relay-plugged-top.png",
+      "artifacts/host-button-coverage/relay-socket-back.png",
+      "artifacts/host-button-coverage/relay-socket-bottom.png",
+      "artifacts/host-button-coverage/relay-socket-front.png",
+      "artifacts/host-button-coverage/relay-socket-iso.png",
+      "artifacts/host-button-coverage/relay-socket-left.png",
+      "artifacts/host-button-coverage/relay-socket-restored.png",
+      "artifacts/host-button-coverage/relay-socket-right.png",
+      "artifacts/host-button-coverage/relay-socket-top.png",
+      "artifacts/host-button-coverage/screw-1-45.png",
+      "artifacts/host-button-coverage/screw-1-reset.png",
+      "artifacts/host-button-coverage/screw-1-rest.png",
+      "artifacts/host-button-coverage/screw-2-45.png",
+      "artifacts/host-button-coverage/screw-2-reset.png",
+      "artifacts/host-button-coverage/screw-2-rest.png",
+      "artifacts/host-button-coverage/screw-3-45.png",
+      "artifacts/host-button-coverage/screw-3-reset.png",
+      "artifacts/host-button-coverage/screw-3-rest.png",
+      "artifacts/host-button-coverage/stackchan-controls.png",
+      "artifacts/host-button-coverage/stamplc-controls.png",
+      "artifacts/host-button-coverage/sticks3-controls.png",
+      "artifacts/host-button-coverage/sticks3-relay-back.png",
+      "artifacts/host-button-coverage/sticks3-relay-iso.png",
+      "artifacts/host-button-coverage/stopwatch-controls.png",
+      "artifacts/host-button-coverage/tab5-controls.png",
+      "source-manifest.json",
+      "candidate-manifest.json"
+    ],
+    "privateEvidenceReportSha256": "e5f14d82199df23ff245785acb94c81a76b5c732c3b8d866d4680dd1dc38000b",
+    "privateProvenanceSha256": "43d4d1a7e05afc5bcaeb9c1cd6d60950def82ae32da58f6da07a3ab9f4a21c47",
+    "privateEvidenceStatus": "pass-with-recorded-limits",
+    "sourceHashes": {
+      "src/modeling/actuators.js": "c87e5723bc0351a42516084f7f4990633651b63913a6922383216567dc3787d8",
+      "src/devices/cardputer-adv/index.js": "73079428751692a7238ade370e54dfcad363b7c7716adefe457d967e721b78bd",
+      "src/devices/cardputer-zero/keyboard.js": "6fc17c6156d708e8c2973b01248fa2e500da8ee7e0cbcbfbec58341039ba5ed4",
+      "src/devices/papermono/index.js": "cce96c67ea3052609a683d85e999baa7c40f0dada20eadffbd44c96babb1f94f",
+      "src/devices/papercolor/index.js": "ed01e36ecd92f8e62a313b919c2cd9338eb05b64f895a2000e254d86fa832f4a",
+      "src/devices/stamplc/index.js": "17ad96e14d16480a11c70feef4fc90587a26585b8ef84a6e03250af888ab50aa",
+      "demo/dynamics.js": "b330fff877189c4faef9605a19a3860470c76ad86e200b37a102752db6d39f43",
+      "scripts/check-device-actuators.mjs": "19525b59f813602802729ec885f15f74d058031d8c1348cb6bd2dad5e7d02feb",
+      "scripts/check-actuator-materials.mjs": "780b4fb191471358a026760e79d54edd18acc7d7d3bc4ccd87da5db730e1eada",
+      "scripts/check-details.mjs": "d0951b30cccb1507acff79c3abbfc5909424f8955a654eff17e2ad82771924c1",
+      "scripts/check-demo-lifecycle.mjs": "b2e0c7a576c81bf23214eba138b3f0338a747a6f6da5b658c0e0c541e4e19acf",
+      "src/units/relay/index.js": "4e63b971bee7c5bf5321dc31c41b4ac44b2b951bd246e6eb02df399b3bb35c79",
+      "src/units/relay/dimensions.js": "3cb033076499c67f08fa4ef84145ff836e08a954737f309def8851f7d59bc4fc",
+      "src/units/relay/assembly.js": "0fe8671ebd10eb8ae775559fd1e6e41d6f384f66cd73cfc8a6d3570c92d5c1c6",
+      "scripts/check-relay-assembly.mjs": "f21f892128097678c076f60cafc953be854d701c0bbe96c60058fe37b53e0061",
+      "docs/AGENT-INTEGRATION.md": "d71de511f8ffc0f1804a3d143c0231db4b9a50dbe9f1719aa533c8b4456d7909",
+      "docs/VISUAL-MOTION.md": "5b4aed653a37025ba3f1f971417efdfb9550e0490a2424060956a89043c83eb6"
+    },
+    "originalEvidence": [
+      {
+        "path": "artifacts/host-button-coverage/atoms3r-controls.png",
+        "origin": "original-native-montage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/cardputer-adv-controls.png",
+        "origin": "original-native-montage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/cardputer-zero-controls.png",
+        "origin": "original-native-montage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/core2-controls.png",
+        "origin": "original-native-montage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/cores3-controls.png",
+        "origin": "original-native-montage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/cores3-din-controls.png",
+        "origin": "original-native-montage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/host-press.gif",
+        "origin": "original-native-gif"
+      },
+      {
+        "path": "artifacts/host-button-coverage/nanoc6-controls.png",
+        "origin": "original-native-montage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/nesso-n1-controls.png",
+        "origin": "original-native-montage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/overview.jpg",
+        "origin": "original-native-montage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/papercolor-controls.png",
+        "origin": "original-native-montage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/papermono-controls.png",
+        "origin": "original-native-montage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/relay-plugged-back.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/relay-plugged-bottom.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/relay-plugged-front.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/relay-plugged-iso.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/relay-plugged-left.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/relay-plugged-right.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/relay-plugged-top.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/relay-socket-back.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/relay-socket-bottom.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/relay-socket-front.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/relay-socket-iso.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/relay-socket-left.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/relay-socket-restored.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/relay-socket-right.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/relay-socket-top.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/screw-1-45.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/screw-1-reset.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/screw-1-rest.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/screw-2-45.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/screw-2-reset.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/screw-2-rest.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/screw-3-45.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/screw-3-reset.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/screw-3-rest.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/stackchan-controls.png",
+        "origin": "original-native-montage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/stamplc-controls.png",
+        "origin": "original-native-montage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/sticks3-controls.png",
+        "origin": "original-native-montage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/sticks3-relay-back.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/sticks3-relay-iso.png",
+        "origin": "original-native-stage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/stopwatch-controls.png",
+        "origin": "original-native-montage"
+      },
+      {
+        "path": "artifacts/host-button-coverage/tab5-controls.png",
+        "origin": "original-native-montage"
+      }
+    ],
+    "transformedOutputHashes": {
+      "src/modeling/actuators.js": "c87e5723bc0351a42516084f7f4990633651b63913a6922383216567dc3787d8",
+      "src/devices/cardputer-adv/index.js": "de4460645821337e8bb83bd7f0a2254120c4273e3022217432497b494f2916b4",
+      "src/devices/cardputer-zero/keyboard.js": "6fc17c6156d708e8c2973b01248fa2e500da8ee7e0cbcbfbec58341039ba5ed4",
+      "src/devices/papermono/index.js": "30c387232637610460ef5d43c858267c431cdc62b9caf1c086084da45f249ca5",
+      "src/devices/papercolor/index.js": "15a0bf54f74a169042dd15e3b7eb36927161f52586929d8150962db29f2e7c31",
+      "src/devices/stamplc/index.js": "7412281c85d2126acbfb5d60ed5a828a1765ad26fa9fc9b540177e1905a00d0d",
+      "demo/dynamics.js": "b330fff877189c4faef9605a19a3860470c76ad86e200b37a102752db6d39f43",
+      "scripts/check-device-actuators.mjs": "19525b59f813602802729ec885f15f74d058031d8c1348cb6bd2dad5e7d02feb",
+      "scripts/check-actuator-materials.mjs": "780b4fb191471358a026760e79d54edd18acc7d7d3bc4ccd87da5db730e1eada",
+      "scripts/check-details.mjs": "d0951b30cccb1507acff79c3abbfc5909424f8955a654eff17e2ad82771924c1",
+      "scripts/check-demo-lifecycle.mjs": "b2e0c7a576c81bf23214eba138b3f0338a747a6f6da5b658c0e0c541e4e19acf",
+      "src/units/relay/index.js": "4e63b971bee7c5bf5321dc31c41b4ac44b2b951bd246e6eb02df399b3bb35c79",
+      "src/units/relay/dimensions.js": "3cb033076499c67f08fa4ef84145ff836e08a954737f309def8851f7d59bc4fc",
+      "src/units/relay/assembly.js": "0fe8671ebd10eb8ae775559fd1e6e41d6f384f66cd73cfc8a6d3570c92d5c1c6",
+      "scripts/check-relay-assembly.mjs": "f21f892128097678c076f60cafc953be854d701c0bbe96c60058fe37b53e0061",
+      "docs/AGENT-INTEGRATION.md": "d71de511f8ffc0f1804a3d143c0231db4b9a50dbe9f1719aa533c8b4456d7909",
+      "docs/VISUAL-MOTION.md": "02de609cbe2068938def0b4bb6bc4f08be65fd714a19451b1ede41ae4fca8fa2",
+      "catalog/products.json": "7a7c3c5cba6657f7aefeba23b5fa4af245e61ec7ab8e6a57eb22dda0243afa7f",
+      "artifacts/host-button-coverage/atoms3r-controls.png": "29a62c2ec8d75f39799e9ecee241b888f9f49592f7220072040a7fd0c7240a6e",
+      "artifacts/host-button-coverage/cardputer-adv-controls.png": "c10872e37dd8dfbbaa797f54eef06cddd9d067f67d9491840ca58c72a380de39",
+      "artifacts/host-button-coverage/cardputer-zero-controls.png": "9a7ba3ccbd818eb203109755fc4569a1bd0fff6811d4a67e8520fb79fd162f65",
+      "artifacts/host-button-coverage/core2-controls.png": "70acd2f8db201fa6047d3223065bf93c66ddcb431f5fa7d04bb62183885a8700",
+      "artifacts/host-button-coverage/cores3-controls.png": "f7f73d66d73eeb2cb69283412d4c812339bdba7e0122f5c598cbd9f23bc465eb",
+      "artifacts/host-button-coverage/cores3-din-controls.png": "620b8bd9d1872d978b5fdec5d89dcc1c459f3294ab0d81586f0434dc9aeac9c8",
+      "artifacts/host-button-coverage/host-press.gif": "d8f9038035679bc0e66138834db4ede2bb532d3adcf3e2704cae0469dcc3474e",
+      "artifacts/host-button-coverage/nanoc6-controls.png": "40c4d40ed4a704a2bf9b5799713adcc20c661755fffd872f286213f61ddd3e7e",
+      "artifacts/host-button-coverage/nesso-n1-controls.png": "7cdb2e7e0f1c25889d3545f7acc45116d74817465523e5afb67f2d458fac2c55",
+      "artifacts/host-button-coverage/overview.jpg": "88e99ee28c04c47db916de1a8da22ac177f5594debe8b8bafb2188b9d3a431eb",
+      "artifacts/host-button-coverage/papercolor-controls.png": "3467118dc206aeb3e0e814918d959ab362d31b3d7b65c70279f749356361f23d",
+      "artifacts/host-button-coverage/papermono-controls.png": "cc71a306d39846670df5e1b9895246ebe05b9d1e94cf7e27a618fecb52c84f1b",
+      "artifacts/host-button-coverage/relay-plugged-back.png": "766f433d8c6228f8c2d8664c2d88c6bc9673f8074b369cd1ca06ae787f642616",
+      "artifacts/host-button-coverage/relay-plugged-bottom.png": "42842ef034ec2d37e3d37970872fa4bd1e9835a6455be442bfd54d102737c571",
+      "artifacts/host-button-coverage/relay-plugged-front.png": "94a59cdbaf75ea18e0bccd50661a143967919df3468a3c98a29e6cba0df86f15",
+      "artifacts/host-button-coverage/relay-plugged-iso.png": "369948dfdbd73d0d8e68103f8e11a0e7eda019c22c8dae1fcb40f55b32668c74",
+      "artifacts/host-button-coverage/relay-plugged-left.png": "04916dac1c8209b2c9c009dc6cdd23421da0551ddc1b38983a54995d47766450",
+      "artifacts/host-button-coverage/relay-plugged-right.png": "5d0dc28d8e65403aabc1f1ef451d32da2aca0a2aada642fb5dc27f739bf7a042",
+      "artifacts/host-button-coverage/relay-plugged-top.png": "d98421cc8f684dd98568439f9949988fa29193fe53f1d04363b2d4eb23a78f5f",
+      "artifacts/host-button-coverage/relay-socket-back.png": "e85fb6473263659045fad63a3356f1efa4755313aa779ac4e11073b13d708dbe",
+      "artifacts/host-button-coverage/relay-socket-bottom.png": "42842ef034ec2d37e3d37970872fa4bd1e9835a6455be442bfd54d102737c571",
+      "artifacts/host-button-coverage/relay-socket-front.png": "c5676e54c7071225ad0b6b8e5b1d986832e189d4a4d87cc4c0aa3c409bae8059",
+      "artifacts/host-button-coverage/relay-socket-iso.png": "3d854f6a4192b4e894ca057ac205702dccc6cb80f1ff01c25c5a7d76d2aa5607",
+      "artifacts/host-button-coverage/relay-socket-left.png": "09fc15b8b2d56fa26fc735ce31c9c9eed0a06a45cb147f274bb529f786c2b152",
+      "artifacts/host-button-coverage/relay-socket-restored.png": "3d854f6a4192b4e894ca057ac205702dccc6cb80f1ff01c25c5a7d76d2aa5607",
+      "artifacts/host-button-coverage/relay-socket-right.png": "dfccfb54f5626c481b9710a286818c4859eff7fc9d5d331f14d157c63aa623c7",
+      "artifacts/host-button-coverage/relay-socket-top.png": "eb37dd0b23e4d141950471f60b8e0d424bc4e0efed19ca3ccaddc0d3e558a8ef",
+      "artifacts/host-button-coverage/screw-1-45.png": "09fcea908eea3744f79c07a11eeb9d1ef672b37ef28fac8eaa17d91080622990",
+      "artifacts/host-button-coverage/screw-1-reset.png": "94a59cdbaf75ea18e0bccd50661a143967919df3468a3c98a29e6cba0df86f15",
+      "artifacts/host-button-coverage/screw-1-rest.png": "94a59cdbaf75ea18e0bccd50661a143967919df3468a3c98a29e6cba0df86f15",
+      "artifacts/host-button-coverage/screw-2-45.png": "f05258a955c11681b55deba61531b49a76cfbc7e24912cd913a57cbba49a5dfa",
+      "artifacts/host-button-coverage/screw-2-reset.png": "94a59cdbaf75ea18e0bccd50661a143967919df3468a3c98a29e6cba0df86f15",
+      "artifacts/host-button-coverage/screw-2-rest.png": "94a59cdbaf75ea18e0bccd50661a143967919df3468a3c98a29e6cba0df86f15",
+      "artifacts/host-button-coverage/screw-3-45.png": "ba08f856bb36066e69436743e24e32ad3ea909857e9d0bf950e0f38a9ccf5630",
+      "artifacts/host-button-coverage/screw-3-reset.png": "94a59cdbaf75ea18e0bccd50661a143967919df3468a3c98a29e6cba0df86f15",
+      "artifacts/host-button-coverage/screw-3-rest.png": "94a59cdbaf75ea18e0bccd50661a143967919df3468a3c98a29e6cba0df86f15",
+      "artifacts/host-button-coverage/stackchan-controls.png": "664b24fa715af5204884bf067df99d8838d4d1552be86e93950cce15b0769d05",
+      "artifacts/host-button-coverage/stamplc-controls.png": "3f76671ade4846b774fd4c1960fff2e610a0f3f128473468e4541db2da75cd48",
+      "artifacts/host-button-coverage/sticks3-controls.png": "e7b3ad8ad0116c23652fc89e20668495dff4026927cf168df6b51e067b3080e2",
+      "artifacts/host-button-coverage/sticks3-relay-back.png": "c952eb86e68363f087a12bee503552fb306dcf9daa839f2f40710dca8ead23f7",
+      "artifacts/host-button-coverage/sticks3-relay-iso.png": "cfe6197af9628908d22dd75d9385b88edbf8852f28032eda3e0222cefe2857a7",
+      "artifacts/host-button-coverage/stopwatch-controls.png": "a136487ae8ecbfae76e013bdcff6fb6e77a32d40db9226101dfbf88868ac7ab9",
+      "artifacts/host-button-coverage/tab5-controls.png": "1967f6ad3a0eab88a1a65d260203d51165d95132282ad6a3e5e90dc1ef7ea23c",
+      "source-manifest.json": "111c5ed61cfc2f0235d7486658f32662713a58344633957f9b8ff005ba4b13f4"
+    },
+    "publicVerification": {
+      "status": "pass-with-recorded-limits",
+      "report": "artifacts/host-button-coverage/public/review.json",
+      "reportSha256": "eb604a601b4f2b228547da2540df322a2597ba45741df88034e85e7e660b0f1c"
+    },
+    "scope": "Five-host hover material isolation, detailed controller input inspection and old U023 Relay exposed assembly with detachable 3P terminal and externally driven screw angles. Current original native stage evidence and exact matching checkers only.",
+    "limits": [
+      "Stickers and printing remain deferred until original artwork is supplied. Official photos/PDF pixels and download material remain private.",
+      "No relay contact switching, GPIO, load circuit, coil actuation, sound, electrical compatibility, firmware, thread/clamp physics or automatic state response is implemented.",
+      "Existing selected-revision LED conflict and feedback remain historical and unresolved; no new feedback or documentation correction is claimed.",
+      "Finite ray/material samples, API checks and browser views do not establish manufacturing fit, force/tolerance, optical behavior or physical-device execution. All 43 products remain modeled."
+    ],
+    "historicalBoundary": "43 existing products and all prior candidate batches remain historical. Only this explicit source delta and the new Relay assembly review are appended; prior LED source conflict is preserved."
   }
 }

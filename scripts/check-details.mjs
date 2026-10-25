@@ -44,6 +44,8 @@ const {checkScroll}=await import('./check-scroll.mjs');
 dynamics.push({script:'scripts/check-scroll.mjs',...await checkScroll()});
 const {checkRoller485}=await import('./check-roller485.mjs');
 dynamics.push({script:'scripts/check-roller485.mjs',...await checkRoller485()});
+const {checkRelayAssembly}=await import('./check-relay-assembly.mjs');
+dynamics.push({script:'scripts/check-relay-assembly.mjs',...await checkRelayAssembly()});
 const {checkPortLifecycle}=await import('./check-port-lifecycle.mjs');
 dynamics.push({script:'scripts/check-port-lifecycle.mjs',...await checkPortLifecycle()});
 const {checkViewerLifecycle}=await import('./check-viewer-lifecycle.mjs');
@@ -66,6 +68,8 @@ const {checkUnitActuators}=await import('./check-unit-actuators.mjs');
 dynamics.push({script:'scripts/check-unit-actuators.mjs',...await checkUnitActuators()});
 const {checkButtonActuation}=await import('./check-button-actuation.mjs');
 dynamics.push({script:'scripts/check-button-actuation.mjs',...await checkButtonActuation()});
+const {checkActuatorMaterials}=await import('./check-actuator-materials.mjs');
+dynamics.push({script:'scripts/check-actuator-materials.mjs',...await checkActuatorMaterials()});
 const {checkDeviceActuators,DEVICE_BUTTON_COUNTS}=await import('./check-device-actuators.mjs');
 for(const id of Object.keys(DEVICE_BUTTON_COUNTS)){
  const model=await loadModel(id);

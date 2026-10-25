@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import {pathToFileURL} from 'node:url';
 import * as THREE from 'three';
 import {loadModel} from '../src/loaders.js';
+import {FACE} from '../src/modeling/parts.js';
 
 export const DEVICE_BUTTON_COUNTS={sticks3:3,cores3:2,stopwatch:3,'cardputer-adv':60,'cardputer-zero':48,papermono:3,core2:5,papercolor:4,nanoc6:1,stackchan:5,tab5:2,atoms3r:2,'nesso-n1':2,stamplc:4};
 const settle=model=>{for(let i=0;i<80;i++)model.update(1/60);model.root.updateMatrixWorld(true);};
@@ -30,8 +31,17 @@ export function checkDeviceActuators(model,{id=model.meta.id.split('.').at(-1),e
   const meshes=physicalMeshes(button);assert.ok(meshes.length,`${id}/${button.id}: no movement may be credited to a transparent hit plane`);
   const sample=meshes[0],vertex=new THREE.Vector3().fromBufferAttribute(sample.geometry.attributes.position,0),before=sample.localToWorld(vertex.clone()),axis=button.axis.clone().transformDirection(button.object3d.matrixWorld),expectedDelta=axis.clone().multiplyScalar(button.travel),out=axis.clone().negate();
   let rayBefore,point;if(!button.latching){point=visiblePoint(meshes,out);rayBefore=cast(point,out);assert.ok(rayBefore&&belongs(rayBefore.object,button),`${id}/${button.id}: physical cap is externally visible, found ${rayBefore?.object.name}`);assert.ok(axis.dot(new THREE.Box3().setFromObject(model.root).getCenter(new THREE.Vector3()).sub(point))>0,`${id}/${button.id}: travel points inward`);}
+  else{
+   const face=FACE[button.meta.surfaceFace];assert.ok(face,`${id}/${button.id}: a sliding actuator declares its outward surface independently of its tangential travel`);
+   out.set(0,0,1).applyQuaternion(face).transformDirection(button.host.body.matrixWorld);
+   point=visiblePoint(meshes,out);rayBefore=cast(point,out);assert.ok(rayBefore&&belongs(rayBefore.object,button),`${id}/${button.id}: first detent exposes the actual slider cap, found ${rayBefore?.object.name}`);
+  }
   button.press('actuator-check');settle(model);const after=sample.localToWorld(vertex.clone());assert.ok(after.clone().sub(before).distanceTo(expectedDelta)<2e-5,`${id}/${button.id}: actual visible mesh moves by its full physical travel`);
-  if(button.latching){assert.equal(button.position,1);button.release('actuator-check');settle(model);assert.ok(sample.localToWorld(vertex.clone()).distanceTo(after)<1e-6,`${id}/${button.id}: detent must remain stable after release`);button.setPosition(0);settle(model);latching++;}
+  if(button.latching){
+   assert.equal(button.position,1);
+   const otherPoint=point.clone().add(expectedDelta),rayAfter=cast(otherPoint,out);assert.ok(rayAfter&&belongs(rayAfter.object,button),`${id}/${button.id}: second detent exposes the actual slider cap, found ${rayAfter?.object.name}`);assert.ok(rayAfter.point.clone().sub(rayBefore.point).distanceTo(expectedDelta)<2e-4,`${id}/${button.id}: visible slider surface follows its full detent travel`);visibleRays+=2;
+   button.release('actuator-check');settle(model);assert.ok(sample.localToWorld(vertex.clone()).distanceTo(after)<1e-6,`${id}/${button.id}: detent must remain stable after release`);assert.ok(cast(otherPoint,out)?.object===rayAfter.object,`${id}/${button.id}: released slider keeps its visible second detent`);button.setPosition(0);settle(model);latching++;
+  }
   else{const rayAfter=cast(point,out);assert.ok(rayAfter&&belongs(rayAfter.object,button),`${id}/${button.id}: moving cap must remain in front of its recessed backing; found ${rayAfter?.object.name}`);assert.ok(rayAfter.point.clone().sub(rayBefore.point).distanceTo(expectedDelta)<2e-4,`${id}/${button.id}: fixed duplicate geometry must not cover the depressed native face`);visibleRays+=2;button.release('actuator-check');settle(model);momentary++;}
   assert.ok(sample.localToWorld(vertex.clone()).distanceTo(before)<1e-6,`${id}/${button.id}: exact visible rest position restored`);
   for(const [part,matrix]of fixed)assert.deepEqual(part.matrixWorld.elements,matrix.elements,`${id}: pressing ${button.id} cannot move the fixed enclosure`);

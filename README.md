@@ -1,22 +1,24 @@
 # m5stack-models.js
 
-基于 Three.js 与 [sticks3.js](https://github.com/MarsTechHAN/sticks3.js) 建模方法的 M5Stack 毫米尺度交互模型库。当前包含 **14 款主机、29 款 Unit，共 43 款模型**；全部保持 `modeled`，逐款精细外观验收尚未完成。
+基于 Three.js 与 [sticks3.js](https://github.com/MarsTechHAN/sticks3.js) 建模方法的 M5Stack 毫米尺度交互模型库。当前包含 **14款主机、29款Unit，共43款模型**；全部保持`modeled`，逐款精细外观验收尚未完成。
 
-模型提供实体按键按下／回弹、稳定开关、旋转／倾斜关节、Grove 插头与四芯线缆，以及由外部指定的灯光。屏幕接收外部帧缓冲，控件输出输入意图；固件、电气、协议和传感器行为由下游系统提供。
+模型提供实体按键压放、稳定开关、旋转／倾斜关节、Grove插头与四芯线缆，以及外部指定的灯光。屏幕接收外部帧缓冲，控件输出输入意图；固件、电气、协议与传感器行为由下游系统提供。
 
-![Roller485实体、OLED与递归Grove接线](artifacts/function-expansion/overview.jpg)
+![Relay实体、端子附件与Grove接线](artifacts/host-button-coverage/overview.jpg)
 
-本轮新增标准滑环版 **Unit Roller485 U182**：保留官方装配壳，补齐电机桶、PCB、OLED深度与真实连接器。转盘、外转子、顶端 Grove 与红灯沿 `rotor` 一起转动，底部 OLED、弹舌按键和固定接口保持原位。顶端可以继续接 Unit，线缆端点跟随移动接口。
+本轮补齐旧版 **Relay U023** 的外露继电器、真实开放3P座、COM／NO／NC触点和可拆螺钉插头。默认空座与`terminalPlug:true`两种配置都能查看；`TerminalPlug`附件挂接`terminal`，三颗螺钉沿`terminal/screw-1`…`screw-3`独立接收外驱转角。主机可通过真实Grove插头与四芯线连接Relay。基壳24×48×8 mm口径保留，官方完整外露深度14.6 mm，后螺钉另突出约0.055 mm。
 
-[转盘动效](artifacts/function-expansion/rotor.gif) · [原生弹舌按压／回弹](artifacts/function-expansion/roller-press.gif) · [当前独立验证](artifacts/function-expansion/public/review.json)
+同时修复Cardputer-ADV、CardputerZero、PaperMono、PaperColor、StamPLC的部分帽体共享材质悬停串色。核心Button接口与AtomS3R显示／帧缓冲引用保持；demo定格检查现包含瞬时按键、稳定滑块和零行程电容区。
 
-本轮还修复首次 `getState()` 的懒构建、CardKB 显式 Sym／AltLeft 输入，以及 StickS3 红外透镜误发可见红光。demo 可按完整路径选择主机和嵌套 Unit 屏幕，分别写外部校准帧；连接、拆卸和同名组件替换不会清空其他屏已有像素。
+当前公开构建已独立通过`npm run check`、`npm run build`与预览健康检查。新构建后，15配置／147项真实canvas鼠标检查全部通过：137项瞬时实体压放、4项滑块两档、6项电容输入。按配置累计，CoreS3两键也在DinBase配置中受检，不能称147个不重复物理控件。实体释放与滑块再次复位的RGB像素精确回位；电容只变输入状态，图像和机械行程保持不变。
 
-当前公开构建通过 `npm run check`、`npm run build` 与预览健康检查；新构建后的七视图及 21 项实际浏览器场景通过。证据包含真实 canvas 鼠标压放、转盘角度／rpm停止、独立灯光、双屏帧缓冲与递归接线。截图隐藏工具栏，屏幕变化来自实际显示区域；按键与灯光释放后 RGB 像素精确回位。原始记录保留软件 GL ReadPixels warning 和隐式 favicon 404，应用运行及模型请求错误为0。
+Relay两种装配各七视图与19项实际浏览器场景通过，包括三螺钉可见45°旋转／精确复位、配置切换、Grove连接／姿态／断开。截图来自原生WebGL画布并隐藏工具栏，悬停状态通过真实鼠标移动归一。原始记录保留软件GL ReadPixels warning及隐式favicon 404；应用运行和模型请求错误为0。
 
-隐藏 PCB、显示支撑与部分连接器尺寸为外观推导；0.25 mm 弹舌自由端行程是视觉估计。任意姿态需调用方选择安全线缆弯向，模型不做碰撞求解。StackChan 的隐藏装配交叠与全局基准仍未解决。有限数字采样和浏览器效果不证明制造配合或实物运行。
+[主机压放动效](artifacts/host-button-coverage/host-press.gif) · [当前独立验证](artifacts/host-button-coverage/public/review.json) · [来源审计](artifacts/host-button-coverage/public/source-audit.json)
 
-**贴纸继续等待原文件，不用照片裁图遮缺件。** 既有 AtomS3R 实体补件与前期证据保留各自历史快照，本轮原始来源见 [source-manifest.json](source-manifest.json)。
+Relay隐藏PCB、端子壁厚／接触深度与夹线结构含照片推导；螺钉不模拟螺纹升降、夹紧或电气通断，旧LED文案冲突保持。StackChan隐藏舵机交叠与全局装配基准仍未解决。有限数字采样和浏览器效果不证明制造配合或实物运行。
+
+**贴纸继续等待原文件，不用照片裁图遮缺件。** Roller485、AtomS3R和其他前期证据保留各自历史快照；本轮原始来源见[source-manifest.json](source-manifest.json)。
 
 ## 本地运行
 

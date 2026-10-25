@@ -57,6 +57,8 @@ Unit 8Encoder U153 使用 `rotation-1`…`rotation-8`、`press-1`…`press-8`、
 
 `Button.latching=true` 的滑动开关在首次按下时切换稳定档位，松手不会回位。外部状态同步可用 `setPosition(0|1)` 或 `handle({action:'position', target, position:1})`，不会模拟电源逻辑。读取 `getState().position`。不要把所有带 `power` 的旧 ID 当成电源：Tab5 的 legacy `power` 指向电池卡扣，Nesso 的 legacy ID 也要结合 label/meta 确认含义。
 
+demo 的“定格检查”列出所有 Button，包括稳定滑块与零行程电容区，均可选择后近看。瞬时键与电容区支持保持／弹起；滑块通过上方独立开关切档，保持／弹起按钮禁用。悬停只提供外观高亮，按下／释放不自动点灯；验证压程时应比较同一悬停状态，并以真实帽体运动为准。电容区只改变输入状态，机械行程保持0。
+
 使用 `DeviceViewer({keyboard:'focused'})` 后仅聚焦 canvas 时处理设备快捷键。失焦、标签隐藏、卸载和 pointer capture 丢失会取消按住的输入；默认 `keyboard:true` 保留上游全局快捷键习惯。表单输入不会触发设备键。
 
 ## 关节命令与寻址
@@ -212,6 +214,28 @@ colorHost.handle([
 Cardputer-ADV 与 StamPLC 各有一颗 Stamp-S3A RGB，统一 ID 为 `stamp-rgb`，默认熄灭，例如 `host.handle({type:'led',target:'stamp-rgb',color:'#22b477',brightness:.65})`。StamPLC 文档中的红色下载指示是同一颗 RGB 的一种状态，模型不额外添加第二颗红灯；颜色／亮度由调用方给定，不实现下载启动顺序、GPIO38 供电门控或按键自动点灯。封装深度与光扩散仍是外观估计，原盖板的遮挡边缘保留。
 
 StackChan 顶部 `touch-1`、`touch-2`、`touch-3` 为前／中／后三个零行程电容输入区，仍用 Button 的 `press/release/cancel`；左右各有 `rgb-left-1`…`rgb-left-6` 与 `rgb-right-1`…`rgb-right-6`。灯号表示从前向后的外观分段，不声明电气链顺序；边界、分段间距和光扩散为推导。全部随头部 pitch/yaw，触摸不会自动点灯。原来 pitch90° 中区被盖板挡住的问题已按源螺孔轴配准盖座修正，默认检查要求30姿态／90条整机顶面法向接近全部命中触区。该有限方向采样不保证任意相机角度可达，也不证明全局头颈datum、隐藏舵机或制造配合。
+
+## Relay U023 的负载端子附件
+
+默认 Relay 带开放的固定 3P 座。`terminal` 是独立的 `ht3.96-3p` 外观接口，三列从左到右为 COM、NO、NC，节距3.96 mm；它不会出现在 Grove 挂接目标中。`TerminalPlug` 是可拆附件，随附件出现的三颗工具槽螺钉可分别接收位置式转角：
+
+```js
+import {TerminalPlug} from 'm5stack-models.js/units/relay';
+
+const relay = await loadModel('relay');
+relay.port('terminal').attach(new TerminalPlug());
+relay.handle({type:'joint', target:'terminal/screw-2', angleDeg:45});
+relay.handle({type:'detach', target:'terminal'});
+
+// 与真实 Grove 外观装配组合，路径按层级寻址。
+host.port('grove').attach(await loadGroveModule('relay', {terminalPlug:true}));
+host.handle({type:'joint', target:'grove/terminal/screw-1', angleDeg:-60});
+host.handle({type:'detach', target:'grove/terminal'}); // 保留 Relay 与 Grove 线缆
+```
+
+`loadModel('relay', {terminalPlug:true})` 也可直接显示已插状态。demo 的“固定3P座／安装螺钉插头”配置可切换两种装配；已插状态显示三个螺钉角度控件。`screw-1`…`screw-3` 对应 COM／NO／NC，只转螺钉头，不接受非零 rpm，不实现螺纹升降、夹紧力、负载线路或触点通断。±180° 是查看范围，额定机械范围未确认。
+
+`nominalMm` 保留官方规格表的24×48×8 mm基壳口径；`visualEnvelopeMm` 为官方机械图的24×48×14.6 mm外露装配，后螺钉另突出约0.055 mm。PCB、端子壁厚、内部接触深度和插头夹线结构为照片推导，接口类型名只用于本库几何配对，不证明不同厂家的实物通配。
 
 ## 渲染与生命周期
 

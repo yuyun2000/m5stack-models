@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-25T19:30:01.771Z",
+  "checkedAt": "2026-10-25T20:29:55.151Z",
   "scope": "Actual control movement and externally driven visual kinematics; no hardware/runtime validation",
   "checks": [
     {
@@ -627,7 +627,7 @@
     },
     {
       "script": "scripts/check-roller485.mjs",
-      "checkedAt": "2026-10-25T19:29:12.638Z",
+      "checkedAt": "2026-10-25T20:28:21.657Z",
       "status": "pass",
       "sku": "U182",
       "variant": "standard-slip-ring",
@@ -706,6 +706,136 @@
       ]
     },
     {
+      "script": "scripts/check-relay-assembly.mjs",
+      "status": "pass",
+      "sku": "U023",
+      "nativeTriangles": 3508,
+      "nativeEnvelopeMm": [
+        24,
+        48,
+        7.999999761581421
+      ],
+      "defaultVisibleEnvelopeMm": [
+        24,
+        48,
+        14.655
+      ],
+      "drawingAssembledMm": [
+        24,
+        48,
+        14.6
+      ],
+      "accessoryDepthMm": 12.9,
+      "rays": 43,
+      "screwPoses": 18,
+      "defaultTerminalPlug": false,
+      "detachableAccessory": true,
+      "pinPitchMm": 3.96,
+      "pinOrder": [
+        "COM",
+        "NO",
+        "NC"
+      ],
+      "material": {
+        "nativeClosedSolids": [
+          1620,
+          1888
+        ],
+        "objects": 75,
+        "uniqueSurfaceAndVolumePoints": 76491,
+        "boardGridPoints": 7671,
+        "containmentChecks": 458946,
+        "scope": "Three-direction sampled exclusion against each closed native solid; inferred hidden geometry is not manufacturing CAD"
+      },
+      "plugDeck": {
+        "status": "pass",
+        "metalParts": 30,
+        "regressionChecks": 18,
+        "positiveControls": 18,
+        "sampledChecks": 23544,
+        "disjointBoundingPairs": 21,
+        "metalTopZ": 7.51,
+        "moldedDeckBottomZ": 7.6,
+        "minimumClampDeckGapMm": 0.09,
+        "topBands": [
+          {
+            "part": "Relay plug clamp cage side",
+            "metalTopZ": 7.510000007152558,
+            "deckBottomZ": 7.60000000089407,
+            "gapMm": 0.08999999374151191
+          },
+          {
+            "part": "Relay plug clamp cage side",
+            "metalTopZ": 7.510000007152558,
+            "deckBottomZ": 7.60000000089407,
+            "gapMm": 0.08999999374151191
+          },
+          {
+            "part": "Relay plug clamp rear web",
+            "metalTopZ": 7.510000007152558,
+            "deckBottomZ": 7.60000000089407,
+            "gapMm": 0.08999999374151191
+          },
+          {
+            "part": "Relay plug pressure plate",
+            "metalTopZ": 7.5099999973177916,
+            "deckBottomZ": 7.60000000089407,
+            "gapMm": 0.09000000357627869
+          },
+          {
+            "part": "Relay plug clamp cage side",
+            "metalTopZ": 7.510000007152558,
+            "deckBottomZ": 7.60000000089407,
+            "gapMm": 0.08999999374151191
+          },
+          {
+            "part": "Relay plug clamp cage side",
+            "metalTopZ": 7.510000007152558,
+            "deckBottomZ": 7.60000000089407,
+            "gapMm": 0.08999999374151191
+          },
+          {
+            "part": "Relay plug clamp rear web",
+            "metalTopZ": 7.510000007152558,
+            "deckBottomZ": 7.60000000089407,
+            "gapMm": 0.08999999374151191
+          },
+          {
+            "part": "Relay plug pressure plate",
+            "metalTopZ": 7.5099999973177916,
+            "deckBottomZ": 7.60000000089407,
+            "gapMm": 0.09000000357627869
+          },
+          {
+            "part": "Relay plug clamp cage side",
+            "metalTopZ": 7.510000007152558,
+            "deckBottomZ": 7.60000000089407,
+            "gapMm": 0.08999999374151191
+          },
+          {
+            "part": "Relay plug clamp cage side",
+            "metalTopZ": 7.510000007152558,
+            "deckBottomZ": 7.60000000089407,
+            "gapMm": 0.08999999374151191
+          },
+          {
+            "part": "Relay plug clamp rear web",
+            "metalTopZ": 7.510000007152558,
+            "deckBottomZ": 7.60000000089407,
+            "gapMm": 0.08999999374151191
+          },
+          {
+            "part": "Relay plug pressure plate",
+            "metalTopZ": 7.5099999973177916,
+            "deckBottomZ": 7.60000000089407,
+            "gapMm": 0.09000000357627869
+          }
+        ],
+        "scope": "Actual deck/metal solids, three-direction regression and bidirectional material samples; hidden gap is an appearance estimate, not a manufacturing tolerance"
+      },
+      "scope": "Actual mesh/API, sampled native-solid exclusion and added deck/metal separation only; concealed dimensions estimated, no electrical, relay physics, clamp mechanics, production fit or browser proof"
+    },
+    {
       "script": "scripts/check-port-lifecycle.mjs",
       "status": "pass",
       "freshSnapshots": [
@@ -757,7 +887,7 @@
     },
     {
       "script": "scripts/check-viewer-lifecycle.mjs",
-      "checkedAt": "2026-10-25T19:29:12.876Z",
+      "checkedAt": "2026-10-25T20:29:01.666Z",
       "status": "pass",
       "checks": [
         "same Viewer mount idempotence",
@@ -878,7 +1008,103 @@
           "two-level-paths-ancestor-fallback-and-pending-result-disposal",
           "nested-selection-invalidates-async-load",
           "nested-target-detach-cancels-old-path-without-stale-controls",
-          "ancestor-detach-prunes-menu-and-keeps-unrelated-host-hold"
+          "ancestor-detach-prunes-menu-and-keeps-unrelated-host-hold",
+          "all-host-controls-including-stable-sliders-and-zero-travel-touch-selectable-and-focusable",
+          "stable-slider-inspection-disabled-while-independent-click-preserves-detents",
+          "capacitive-inspection-hold-release-with-zero-physical-travel",
+          "empty-inspection-disables-actions-and-clears-stale-readout"
+        ],
+        "inspection": [
+          {
+            "id": "sticks3",
+            "buttons": 3,
+            "latching": 0,
+            "capacitive": 0
+          },
+          {
+            "id": "cores3",
+            "buttons": 2,
+            "latching": 0,
+            "capacitive": 0
+          },
+          {
+            "id": "stopwatch",
+            "buttons": 3,
+            "latching": 0,
+            "capacitive": 0
+          },
+          {
+            "id": "cardputer-adv",
+            "buttons": 60,
+            "latching": 2,
+            "capacitive": 0
+          },
+          {
+            "id": "cardputer-zero",
+            "buttons": 48,
+            "latching": 1,
+            "capacitive": 0
+          },
+          {
+            "id": "papermono",
+            "buttons": 3,
+            "latching": 0,
+            "capacitive": 0
+          },
+          {
+            "id": "core2",
+            "buttons": 5,
+            "latching": 0,
+            "capacitive": 3
+          },
+          {
+            "id": "papercolor",
+            "buttons": 4,
+            "latching": 0,
+            "capacitive": 0
+          },
+          {
+            "id": "nanoc6",
+            "buttons": 1,
+            "latching": 0,
+            "capacitive": 0
+          },
+          {
+            "id": "stackchan",
+            "buttons": 5,
+            "latching": 0,
+            "capacitive": 3
+          },
+          {
+            "id": "tab5",
+            "buttons": 2,
+            "latching": 0,
+            "capacitive": 0
+          },
+          {
+            "id": "atoms3r",
+            "buttons": 2,
+            "latching": 0,
+            "capacitive": 0
+          },
+          {
+            "id": "nesso-n1",
+            "buttons": 2,
+            "latching": 0,
+            "capacitive": 0
+          },
+          {
+            "id": "stamplc",
+            "buttons": 4,
+            "latching": 0,
+            "capacitive": 0
+          },
+          {
+            "id": "cores3-din",
+            "buttons": 3,
+            "latching": 1,
+            "capacitive": 0
+          }
         ],
         "rootOptions": [
           "grove"
@@ -886,7 +1112,7 @@
         "nestedKeyPath": "grove/grove-1/press",
         "nestedFanPath": "grove/grove-2/rotor",
         "deepestPortPath": "grove/grove-3/grove-1",
-        "scope": "Real StickS3/HUB/Key/Fan assemblies and panel; light DOM/renderer fixture only"
+        "scope": "Real controller configurations, StickS3/HUB/Key/Fan assemblies and panel; light DOM/renderer fixture only"
       },
       "scope": "Actual demo async controller, recursive connection menu and dynamic controls with real host/HUB/Key/Fan; renderer and DOM boundary are fixtures, browser pixels and focus remain separately verified"
     },
@@ -1265,7 +1491,7 @@
     },
     {
       "script": "scripts/check-8encoder.mjs",
-      "checkedAt": "2026-10-25T19:29:58.018Z",
+      "checkedAt": "2026-10-25T20:29:49.402Z",
       "status": "pass",
       "scope": "Appearance/geometry/input intent only; no encoder count, electrical or firmware simulation",
       "sku": "U153",
@@ -1382,6 +1608,99 @@
       "scope": "visual actuation and input events only; no hardware power behavior"
     },
     {
+      "script": "scripts/check-actuator-materials.mjs",
+      "status": "pass",
+      "products": [
+        {
+          "id": "sticks3",
+          "controls": 3,
+          "hoverMaterials": 3
+        },
+        {
+          "id": "cores3",
+          "controls": 2,
+          "hoverMaterials": 2
+        },
+        {
+          "id": "stopwatch",
+          "controls": 3,
+          "hoverMaterials": 3
+        },
+        {
+          "id": "cardputer-adv",
+          "controls": 60,
+          "hoverMaterials": 60
+        },
+        {
+          "id": "cardputer-zero",
+          "controls": 48,
+          "hoverMaterials": 48
+        },
+        {
+          "id": "papermono",
+          "controls": 3,
+          "hoverMaterials": 3
+        },
+        {
+          "id": "core2",
+          "controls": 5,
+          "hoverMaterials": 2
+        },
+        {
+          "id": "papercolor",
+          "controls": 4,
+          "hoverMaterials": 4
+        },
+        {
+          "id": "nanoc6",
+          "controls": 1,
+          "hoverMaterials": 1
+        },
+        {
+          "id": "stackchan",
+          "controls": 5,
+          "hoverMaterials": 2
+        },
+        {
+          "id": "tab5",
+          "controls": 2,
+          "hoverMaterials": 2
+        },
+        {
+          "id": "atoms3r",
+          "controls": 2,
+          "hoverMaterials": 4
+        },
+        {
+          "id": "nesso-n1",
+          "controls": 2,
+          "hoverMaterials": 2
+        },
+        {
+          "id": "stamplc",
+          "controls": 4,
+          "hoverMaterials": 4
+        },
+        {
+          "id": "cores3-din",
+          "controls": 3,
+          "hoverMaterials": 8
+        }
+      ],
+      "controls": 147,
+      "hoverMaterials": 148,
+      "disposedCapMaterials": 148,
+      "cases": [
+        "opt-in material ownership",
+        "same-cap sharing",
+        "unchanged inactive render properties",
+        "texture and shader reference preservation",
+        "default caller-owned material preservation",
+        "Actual AtomS3R external framebuffer/backlight during hover and held/released cap"
+      ],
+      "scope": "Real controller models plus CoreS3 DinBase: independent cap hover, exact emission restoration, fixed/neighbour material stability, stable detents, caller-owned output references and disposal. Canvas drawing boundary is stubbed; browser pixels remain separate."
+    },
+    {
       "product": "sticks3",
       "status": "pass",
       "buttons": 3,
@@ -1418,7 +1737,7 @@
       "momentary": 58,
       "latching": 2,
       "capacitive": 0,
-      "visibleSurfaceRays": 116,
+      "visibleSurfaceRays": 120,
       "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
     },
     {
@@ -1428,7 +1747,7 @@
       "momentary": 47,
       "latching": 1,
       "capacitive": 0,
-      "visibleSurfaceRays": 94,
+      "visibleSurfaceRays": 96,
       "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
     },
     {
@@ -1528,7 +1847,7 @@
       "momentary": 2,
       "latching": 1,
       "capacitive": 0,
-      "visibleSurfaceRays": 4,
+      "visibleSurfaceRays": 6,
       "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
     },
     {

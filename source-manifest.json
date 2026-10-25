@@ -1,6 +1,6 @@
 {
   "preparedAt": "2026-10-25T13:20:33.030Z",
-  "sourceCommit": "20ccf7577f875ac01b55f6a5eb20b83ae26a3a18",
+  "sourceCommit": "b8b4746102b8bc6e098cbff1c2fd7d36cc3b1b7e",
   "scope": "Factual provenance only; no official reference binaries or MCP source text are included.",
   "upstreams": {
     "sticks3": {
@@ -2700,6 +2700,14 @@
         {
           "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/577/UNIT-RELAY.pdf",
           "sha256": "bf05690fbb30fc8395cc9c20c7815257ffee425b2af56eb2787805d8c59a9971"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/relay/model%20size.png",
+          "sha256": "6cd191a82515b185efbc6ffe4588db860936b853f37f4bb5ac5280af2bc2fcc4"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/4relay/Datasheet-Realy-HK4100F-DC5V-SHG(1).pdf",
+          "sha256": "437eae58d7f14110bf384f834ec279c17cb714739f6d0698118d31b3f4f00370"
         }
       ],
       "visibleFunctionReview": {
@@ -2773,6 +2781,210 @@
             "qualification": "Acceptance confirms receipt only; it does not confirm a documentation correction or a physical LED."
           }
         }
+      },
+      "exposedAssemblyReview": {
+        "checkedAt": "2026-10-25T20:11:30.045381+00:00",
+        "sourceCommit": "b8b4746102b8bc6e098cbff1c2fd7d36cc3b1b7e",
+        "sources": [
+          {
+            "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/relay/relay_01.webp",
+            "sha256": "34077dc27afefa893545db945932f98b56b04e8b51a4bc9b7bd7c68b409997e6",
+            "bytes": 122262,
+            "role": "original-official-photograph"
+          },
+          {
+            "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/relay/relay_02.webp",
+            "sha256": "50ba5b597aac9451328b0820c3cf77a86f167bdfbe7eed8bebae049891bbd54f",
+            "bytes": 39748,
+            "role": "original-official-photograph"
+          },
+          {
+            "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/relay/relay_05.webp",
+            "sha256": "31063ab5a4ac1851d3f4e81e1031c047c2c983d7234d1aecc0d1578fb20de34b",
+            "bytes": 42854,
+            "role": "original-official-photograph"
+          },
+          {
+            "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/relay/relay_06.webp",
+            "sha256": "83e5d0d164339f93bab8708fb3e8e5fa782c1d3eaec41523fd498ea197037d10",
+            "bytes": 60192,
+            "role": "original-official-photograph"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/relay/model%20size.png",
+            "sha256": "6cd191a82515b185efbc6ffe4588db860936b853f37f4bb5ac5280af2bc2fcc4",
+            "bytes": 56305,
+            "role": "original-official-dimension-image"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/4relay/Datasheet-Realy-HK4100F-DC5V-SHG(1).pdf",
+            "sha256": "437eae58d7f14110bf384f834ec279c17cb714739f6d0698118d31b3f4f00370",
+            "bytes": 449035,
+            "role": "original-official-component-datasheet-pdf"
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/577/UNIT-RELAY.pdf",
+            "sha256": "bf05690fbb30fc8395cc9c20c7815257ffee425b2af56eb2787805d8c59a9971",
+            "bytes": 60064,
+            "role": "original-official-schematic-pdf"
+          }
+        ],
+        "facts": [
+          "This is the old single-channel Unit Relay U023; U131/Relay2/4Relay product assemblies are excluded. The linked HK4100F datasheet is component evidence, not selection of the 4Relay product.",
+          "The product table and original STL describe a 24 x 48 x 8 mm chassis. The official model-size drawing gives 14.6 mm assembled depth and 12.9 mm terminal accessory depth, both measured from the chassis rear.",
+          "The official linked HK4100F package drawing p7 gives 15.5 x 10.5 x 11.8 mm. The modeled package XY is constrained by the original shell aperture.",
+          "The selected official U023 schematic labels J2 Socket_3.96x3p with 1 COM, 2 NO, 3 NC; the front photo establishes their left-to-right placement. The library connector identifier does not claim universal cross-vendor physical compatibility.",
+          "All 3508 original assembled CAD triangles, neutral vertices, normals and placement remain unchanged. The added visible assembly is separate geometry.",
+          "The previous status-indicator documentation conflict remains unresolved. No guessed LED or automatic relay/electrical behavior is introduced."
+        ],
+        "implementation": {
+          "exports": [
+            "Model",
+            "GroveModule",
+            "TerminalPlug"
+          ],
+          "configurations": [
+            {
+              "id": "socket",
+              "options": {},
+              "appearance": "Open fixed 3P socket; no removable plug or screw joints"
+            },
+            {
+              "id": "plug",
+              "options": {
+                "terminalPlug": true
+              },
+              "appearance": "The same Relay body plus detachable screw terminal accessory"
+            }
+          ],
+          "constructorExamples": [
+            "new Model()",
+            "new Model({terminalPlug:true})",
+            "new GroveModule({cableLength:80,terminalPlug:true})"
+          ],
+          "attachment": {
+            "port": "terminal",
+            "connector": "ht3.96-3p",
+            "outwardFace": "+Z",
+            "moduleLocalOutwardAxis": "+Y",
+            "pins": [
+              "COM",
+              "NO",
+              "NC"
+            ],
+            "pitchMm": 3.96,
+            "attachExample": "relay.port('terminal').attach(new TerminalPlug())",
+            "detachExample": "relay.handle({type:'detach',target:'terminal'})",
+            "detachPreserves": [
+              "Relay body",
+              "grove",
+              "sensor"
+            ]
+          },
+          "joints": [
+            {
+              "path": "terminal/screw-1",
+              "pin": "COM",
+              "kind": "joint",
+              "continuous": false,
+              "nonzeroRpm": "rejected",
+              "ratedLimitsDeg": null,
+              "demoVisualRangeDeg": [
+                -180,
+                180
+              ],
+              "effect": "Only the actual slotted screw head rotates; no axial screw/clamp/electrical movement"
+            },
+            {
+              "path": "terminal/screw-2",
+              "pin": "NO",
+              "kind": "joint",
+              "continuous": false,
+              "nonzeroRpm": "rejected",
+              "ratedLimitsDeg": null,
+              "demoVisualRangeDeg": [
+                -180,
+                180
+              ],
+              "effect": "Only the actual slotted screw head rotates; no axial screw/clamp/electrical movement"
+            },
+            {
+              "path": "terminal/screw-3",
+              "pin": "NC",
+              "kind": "joint",
+              "continuous": false,
+              "nonzeroRpm": "rejected",
+              "ratedLimitsDeg": null,
+              "demoVisualRangeDeg": [
+                -180,
+                180
+              ],
+              "effect": "Only the actual slotted screw head rotates; no axial screw/clamp/electrical movement"
+            }
+          ],
+          "nestedJointExample": "host.handle({type:'joint',target:'grove/terminal/screw-2',angleDeg:45})",
+          "geometry": [
+            "Added relay package, relieved PCB, black Grove body, open fixed 3P socket, real pins, detachable bored plug and recessed slotted screw heads.",
+            "The specialised checker uses the two separately closed native shell solids rather than treating the original fourfold contact edges as one parity volume.",
+            "The specialised checker additionally tests the actual molded screw deck against 30 distinct metal solids in both directions; 18 regression probes and 18 positive controls retain material while excluding the prior hidden overlap."
+          ],
+          "validationScope": "Source-native equality, real opening/solid samples, separate native-shell containment, added molded-deck/metal material exclusion, joint exact return, attachment lifecycle and nested Grove routes are finite geometry/API checks. Actual browser images are separately recorded and must be refreshed after the concealed clamp refinement.",
+          "internalClearance": {
+            "moldedDeckBottomZ": 7.6,
+            "concealedClampTopZ": 7.51,
+            "minimumGapMm": 0.09,
+            "changedParts": [
+              "three pressure plates",
+              "six cage sides",
+              "three cage rear webs"
+            ],
+            "preserved": [
+              "original CAD",
+              "Grove and terminal frames",
+              "fixed socket",
+              "molded screw deck",
+              "screw exterior placement"
+            ],
+            "scope": "Appearance-only exclusion of the prior 0.10 mm hidden metal/deck overlap; no manufacturing tolerance or rated clamp travel claim"
+          }
+        },
+        "explicitInferences": [
+          "PCB outline/height, shortened relay leads, connector wall/partition shapes, plug cavities/contact depth and clamp cages are photo-constrained appearance reconstructions without production CAD or tolerances.",
+          "Screw depth/tool-slot dimensions are visual estimates. The +/-180 degree demo interval is a viewing range; thread pitch, tightening limits, clamp force and axial displacement are unconfirmed.",
+          "The full visible bounding box includes an additional 0.055 mm rear screw projection beyond the nominal 14.6 mm drawing depth; native shells are not scaled to conceal the difference.",
+          "Concealed clamp metal is capped at z7.51 beneath the molded screw deck bottom z7.60, leaving a 0.09 mm appearance gap. This corrects a prior 0.10 mm geometric overlap without moving the original shells, ports, molded deck or screw exterior; no manufacturer tolerance is inferred."
+        ],
+        "limits": [
+          "Stickers and printing remain deferred until original artwork is supplied. Official photos/PDF pixels and download material remain private.",
+          "No relay contact switching, GPIO, load circuit, coil actuation, sound, electrical compatibility, firmware, thread/clamp physics or automatic state response is implemented.",
+          "Existing selected-revision LED conflict and feedback remain historical and unresolved; no new feedback or documentation correction is claimed.",
+          "Finite ray/material samples, API checks and browser views do not establish manufacturing fit, force/tolerance, optical behavior or physical-device execution. All 43 products remain modeled."
+        ],
+        "runtime": [
+          {
+            "path": "src/units/relay/index.js",
+            "sourceSha256": "4e63b971bee7c5bf5321dc31c41b4ac44b2b951bd246e6eb02df399b3bb35c79",
+            "publicSha256": "4e63b971bee7c5bf5321dc31c41b4ac44b2b951bd246e6eb02df399b3bb35c79"
+          },
+          {
+            "path": "src/units/relay/dimensions.js",
+            "sourceSha256": "3cb033076499c67f08fa4ef84145ff836e08a954737f309def8851f7d59bc4fc",
+            "publicSha256": "3cb033076499c67f08fa4ef84145ff836e08a954737f309def8851f7d59bc4fc"
+          },
+          {
+            "path": "src/units/relay/assembly.js",
+            "sourceSha256": "0fe8671ebd10eb8ae775559fd1e6e41d6f384f66cd73cfc8a6d3570c92d5c1c6",
+            "publicSha256": "0fe8671ebd10eb8ae775559fd1e6e41d6f384f66cd73cfc8a6d3570c92d5c1c6"
+          },
+          {
+            "path": "scripts/check-relay-assembly.mjs",
+            "sourceSha256": "f21f892128097678c076f60cafc953be854d701c0bbe96c60058fe37b53e0061",
+            "publicSha256": "f21f892128097678c076f60cafc953be854d701c0bbe96c60058fe37b53e0061"
+          }
+        ],
+        "privateProvenanceSha256": "43d4d1a7e05afc5bcaeb9c1cd6d60950def82ae32da58f6da07a3ab9f4a21c47",
+        "privateEvidenceReportSha256": "e5f14d82199df23ff245785acb94c81a76b5c732c3b8d866d4680dd1dc38000b",
+        "scope": "Five-host hover material isolation, detailed controller input inspection and old U023 Relay exposed assembly with detachable 3P terminal and externally driven screw angles. Current original native stage evidence and exact matching checkers only."
       }
     },
     {
@@ -4137,6 +4349,6 @@
       }
     ]
   },
-  "updatedAt": "2026-10-25T19:25:23.902Z",
+  "updatedAt": "2026-10-25T20:12:39.168Z",
   "syncedAt": "2026-10-25T14:15:24.398Z"
 }

@@ -1346,7 +1346,7 @@
       "visualEnvelopeMm": [
         24,
         48,
-        8
+        14.6
       ],
       "cadEnvelopeMm": [
         24,
@@ -1361,7 +1361,10 @@
       "research": "source-manifest.json",
       "integration": {
         "moduleExport": "GroveModule",
-        "externalRuntime": "m5agent/m5stack-esp-emulator"
+        "externalRuntime": "m5agent/m5stack-esp-emulator",
+        "accessoryExports": [
+          "TerminalPlug"
+        ]
       },
       "verification": {
         "geometry": null,
@@ -1378,10 +1381,26 @@
         ]
       ],
       "limitations": [
-        "官方 CAD 装配壳体；局部器件、旋钮、按键表面依据官方照片构造，尚待逐面视觉检查",
-        "这里只提供视觉几何和接口，不实现电气、传感器数据或协议行为"
+        "对应旧单路Unit Relay U023，保留24×48×8 mm原壳；规格表的8 mm为基壳口径，官方机械图的完整装配为14.6 mm，继电器15.5×10.5×11.8 mm依据链接HK4100F封装图。",
+        "固定3.96 mm三针座和可拆螺钉插头为真实有腔实体，COM/NO/NC按官方J2和前面图排列；PCB、端子壁厚、插头接触深度/线孔和截短引脚为照片推导，不是制造CAD。",
+        "默认固定座无插头；terminalPlug:true或terminal.attach(new TerminalPlug())可显示插头，terminal/screw-1..3只接受外驱可见转角，不推导轴向螺纹运动、夹线、电气或继电器状态。",
+        "状态灯描述与旧官方原理图/照片仍矛盾，保留无猜测灯；全部印刷/贴纸等待用户原文件。"
       ],
-      "nextAction": "优先逐面检查装配闭合与真实开口；贴纸等待用户原文件"
+      "nextAction": "复核固定座/可拆插头的照片推导局部和可靠装配参数；逐面官方参考验收，贴纸等待原文件。",
+      "configurations": [
+        {
+          "id": "socket",
+          "name": "固定3P座",
+          "options": {}
+        },
+        {
+          "id": "plug",
+          "name": "安装螺钉插头",
+          "options": {
+            "terminalPlug": true
+          }
+        }
+      ]
     },
     {
       "id": "joystick-v11",

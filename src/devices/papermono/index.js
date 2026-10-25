@@ -1,6 +1,7 @@
 import {Device,Button,Led,materials} from '../../core/index.js';
 import {PaperDisplay} from '../../modeling/PaperDisplay.js';
 import {addCadParts} from '../../modeling/cad.js';
+import {isolateActuatorMaterials} from '../../modeling/actuators.js';
 import {slab,mark,FACE} from '../../modeling/parts.js';
 import {usbC,microSD} from '../../modeling/connectors.js';
 import {addAssembly,rgbGuide} from './assembly.js';
@@ -11,7 +12,7 @@ export class PaperMono extends Device {
  static meta={id:'m5stack.papermono',name:'PaperMono',sku:'C153',vendor:'M5Stack',size:DIM.body,keymap:{ArrowUp:'key1',ArrowDown:'key2',KeyP:'power'}};
  build(){
   const parts=addCadParts(this,data,{shell:materials.plastic(0xcfd2cf,{roughness:.78,clearcoat:.015}),key:materials.plastic(0x444b4d,{roughness:.65}),power:materials.plastic(0xb24b3c,{roughness:.65})});
-  for(const [part,id,label] of [['key-up','key1','Up key'],['key-down','key2','Down key'],['power-key','power','Power key']])this.add(new Button({id,label,mesh:parts[part],travel:.2,axis:[1,0,0],meta:{role:'visual-control'}}));
+  for(const [part,id,label] of [['key-up','key1','Up key'],['key-down','key2','Down key'],['power-key','power','Power key']])this.add(new Button({id,label,mesh:isolateActuatorMaterials(parts[part]),travel:.2,axis:[1,0,0],meta:{role:'visual-control'}}));
   const d=DIM.display;
   // Official STL contains the chassis, not the thin front cover. The photo-calibrated
   // cover closes the exposed electronics while retaining an actual screen opening.

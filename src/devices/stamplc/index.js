@@ -30,7 +30,7 @@ export class StamPLC extends Device{
   stamplcTerminals(this.body);
   stamplcDC(this);
   socket(this,{position:[36.02,11,3],face:'right',w:8.7,h:3.1});
-  physicalButton(this,{id:'reset',label:'Reset/boot key',mesh:parts['reset-key'],axis:[0,-1,0],travel:.2,meta:{surfaceCenter:[-24,37.5,8.5],surfaceFace:'top'}});
+  physicalButton(this,{id:'reset',label:'Reset/boot key',mesh:parts['reset-key'],axis:[0,-1,0],travel:.2,isolateMaterials:true,meta:{surfaceCenter:[-24,37.5,8.5],surfaceFace:'top'}});
  }
 }
 export default StamPLC;

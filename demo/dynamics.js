@@ -46,13 +46,16 @@ export class DynamicsPanel {
     this.$('#grove-unit').onchange = () => { this.generation++; this.refreshConnection(); };
     this.$('#hold-button').onclick = () => {
       const button = this.model?.find(this.$('#inspect-button').value, 'button');
-      if (button) { const key = `inspect:${button.path}`; this.held.set(key, button); button.press(key); }
+      if (button && !button.latching) { const key = `inspect:${button.path}`; this.held.set(key, button); button.press(key); }
     };
     this.$('#release-button').onclick = () => {
       const button = this.model?.find(this.$('#inspect-button').value, 'button');
-      if (button) { const key = `inspect:${button.path}`; this.held.delete(key); button.release(key); }
+      if (button && !button.latching) { const key = `inspect:${button.path}`; this.held.delete(key); button.release(key); }
     };
-    this.$('#focus-button').onclick = () => this.viewer.focus(this.$('#inspect-button').value, {distance: 50});
+    this.$('#focus-button').onclick = () => {
+      const button = this.model?.find(this.$('#inspect-button').value, 'button');
+      if (button) this.viewer.focus(button.path, {distance: 50});
+    };
     this.$('#inspect-button').onchange = () => { this.releaseAll(); this.refreshState(); };
     this.$('#led-target').onchange = () => this.refreshLedControls();
     this.$('#led-color').oninput = event => { this.led()?.set({color:event.target.value}); this.refreshState(); };
@@ -290,10 +293,10 @@ export class DynamicsPanel {
       buttons.append(el);
     }
     if (!buttons.childElementCount) buttons.append(node('span', '无机械按键', 'control-note'));
-    const pressButtons = this.model.list('button').filter(b => !b.latching && b.travel > 0);
-    this.$('#button-inspection').hidden = !pressButtons.length;
-    this.$('#inspect-button').replaceChildren(...pressButtons.map(b => new Option(`${b.label} / ${b.path}`, b.path)));
-    if (pressButtons.some(button => button.path === previousInspection)) this.$('#inspect-button').value = previousInspection;
+    const inspectButtons = this.model.list('button');
+    this.$('#button-inspection').hidden = !inspectButtons.length;
+    this.$('#inspect-button').replaceChildren(...inspectButtons.map(b => new Option(`${b.label} / ${b.path}`, b.path)));
+    if (inspectButtons.some(button => button.path === previousInspection)) this.$('#inspect-button').value = previousInspection;
     const allJoints = this.model.list('joint');
     this.$('#joint-section').hidden = !allJoints.length;
     for (const joint of allJoints) {
@@ -358,16 +361,29 @@ export class DynamicsPanel {
     for (const update of this.readouts) update();
     this.refreshLedControls();
     const inspected = this.model.find(this.$('#inspect-button').value, 'button');
+    this.$('#hold-button').disabled = !inspected || inspected.latching;
+    this.$('#release-button').disabled = !inspected || inspected.latching;
+    this.$('#focus-button').disabled = !inspected;
+    const output = this.$('#button-travel');
     if (inspected) {
-      const output = this.$('#button-travel');
       const actuation = inspected.getActuationState();
       const travel = Number(inspected.travel.toFixed(3));
       const mechanism = {'flex-pad':'外壳弯曲',lever:'杠杆转动'}[inspected.meta.visualMotion] ?? '按压';
-      output.textContent = inspected.meta.visualMotion
+      output.textContent = inspected.latching
+        ? `稳定档位 ${inspected.position} · 位移 ${inspected.cap.position.toArray().map(v => v.toFixed(3)).join(', ')} mm · 点击上方开关切换，松开保持档位`
+        : inspected.travel === 0
+        ? `电容触摸 · ${inspected.pressed ? '已按下' : '已松开'} · 机械行程 0 mm`
+        : inspected.meta.visualMotion
         ? `视觉行程 ${actuation.depthMm.toFixed(3)} / ${travel} mm · ${mechanism}`
         : `位移 ${inspected.cap.position.toArray().map(v => v.toFixed(3)).join(', ')} mm · 名义行程 ${travel} mm`;
       output.dataset.settled = String(actuation.settled);
       output.dataset.pressed = String(inspected.pressed);
+      output.dataset.actuation = inspected.latching ? 'latching' : inspected.travel === 0 ? 'capacitive' : 'momentary';
+      if (inspected.latching) output.dataset.position = String(inspected.position);
+      else delete output.dataset.position;
+    } else {
+      output.textContent = '';
+      for (const key of ['settled','pressed','actuation','position']) delete output.dataset[key];
     }
     const module = this.port()?.module;
     const state = {

@@ -1,0 +1,402 @@
+{
+  "checkedAt": "2026-10-25T20:30:38.849Z",
+  "baseUrl": "http://127.0.0.1:5188",
+  "actions": [
+    {
+      "case": "Relay socket configuration is selected",
+      "pass": true,
+      "configuration": {
+        "id": "socket",
+        "name": "固定3P座",
+        "options": {}
+      }
+    },
+    {
+      "case": "Relay socket seven rendered views",
+      "pass": true
+    },
+    {
+      "case": "Relay load terminal is not offered as a Grove socket",
+      "pass": true,
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "case": "Relay plugged configuration is selected",
+      "pass": true,
+      "configuration": {
+        "id": "plug",
+        "name": "安装螺钉插头",
+        "options": {
+          "terminalPlug": true
+        }
+      }
+    },
+    {
+      "case": "Relay plugged seven rendered views",
+      "pass": true
+    },
+    {
+      "case": "Real angle control rotates only visible screw 1",
+      "pass": true,
+      "state": {
+        "angleDeg": 45,
+        "targetAngleDeg": 45,
+        "rpm": 0,
+        "transitioning": false,
+        "mode": "position",
+        "continuous": false,
+        "rangeDeg": null,
+        "visualRangeDeg": [
+          -180,
+          180
+        ],
+        "demoRpmMax": 0
+      }
+    },
+    {
+      "case": "Screw 1 reset and position-only control",
+      "pass": true
+    },
+    {
+      "case": "Real angle control rotates only visible screw 2",
+      "pass": true,
+      "state": {
+        "angleDeg": 45,
+        "targetAngleDeg": 45,
+        "rpm": 0,
+        "transitioning": false,
+        "mode": "position",
+        "continuous": false,
+        "rangeDeg": null,
+        "visualRangeDeg": [
+          -180,
+          180
+        ],
+        "demoRpmMax": 0
+      }
+    },
+    {
+      "case": "Screw 2 reset and position-only control",
+      "pass": true
+    },
+    {
+      "case": "Real angle control rotates only visible screw 3",
+      "pass": true,
+      "state": {
+        "angleDeg": 45,
+        "targetAngleDeg": 45,
+        "rpm": 0,
+        "transitioning": false,
+        "mode": "position",
+        "continuous": false,
+        "rangeDeg": null,
+        "visualRangeDeg": [
+          -180,
+          180
+        ],
+        "demoRpmMax": 0
+      }
+    },
+    {
+      "case": "Screw 3 reset and position-only control",
+      "pass": true
+    },
+    {
+      "case": "Relay load terminal is not offered as a Grove socket",
+      "pass": true,
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "case": "Real configuration selector switches socket",
+      "pass": true
+    },
+    {
+      "case": "Real configuration selector switches plug",
+      "pass": true
+    },
+    {
+      "case": "Real configuration selector switches socket",
+      "pass": true
+    },
+    {
+      "case": "Real host connects Relay with native four-wire cable",
+      "pass": true,
+      "state": {
+        "buttons": {
+          "btnA": {
+            "pressed": false
+          },
+          "btnB": {
+            "pressed": false
+          },
+          "btnPWR": {
+            "pressed": false
+          }
+        },
+        "joints": {},
+        "leds": {
+          "irTx": {
+            "color": "#ff2020",
+            "brightness": 0
+          }
+        },
+        "cable": {
+          "slack": 16,
+          "bend": [
+            0,
+            0,
+            -1
+          ],
+          "faceDistanceMm": 85,
+          "curveLengthMm": 84.1920788423786,
+          "source": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "outward": [
+              0,
+              1,
+              0
+            ]
+          },
+          "target": {
+            "position": [
+              0,
+              85,
+              0
+            ],
+            "quaternion": [
+              0,
+              0,
+              1,
+              6.123233995736766e-17
+            ],
+            "outward": [
+              -1.2246467991473532e-16,
+              -1,
+              0
+            ]
+          },
+          "wireCount": 4,
+          "plugCount": 2,
+          "space": "module-port"
+        }
+      }
+    },
+    {
+      "case": "Attached Relay upstream and load terminal are excluded from Grove targets",
+      "pass": true,
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "case": "External cable pose controls retain the connected Relay",
+      "pass": true,
+      "state": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 98.61541461658007,
+        "curveLengthMm": 100.51112762807686,
+        "source": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            50.00000000000001,
+            84.99999999999996,
+            8.881784197001252e-16
+          ],
+          "quaternion": [
+            -4.1992616075243437e-17,
+            0.13052619222005157,
+            0.9914448613738105,
+            5.599015476699124e-17
+          ],
+          "outward": [
+            -1.2198457501783575e-16,
+            -0.9659258262890686,
+            0.25881904510252074
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "case": "Real disconnect removes Relay and cable",
+      "pass": true
+    }
+  ],
+  "logs": [
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x124000d1400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x124000d1400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x124000d1400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x124000d1400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
+    }
+  ],
+  "httpFailures": [],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:5188/assets/index-DUfIhopB.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/index-BgTFVJYT.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/relay-Bx_gxOwG.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/parts-Def9mImJ.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/core-DkjUc86l.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/grove-cable-uIXa_gGs.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/VisualJoint-CzQ0DrHw.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/cad-OLQD3dFP.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/index-DUfIhopB.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/index-BgTFVJYT.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/relay-Bx_gxOwG.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/grove-cable-uIXa_gGs.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/core-DkjUc86l.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/parts-Def9mImJ.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/cad-OLQD3dFP.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/VisualJoint-CzQ0DrHw.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/index-DUfIhopB.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/index-BgTFVJYT.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/core-DkjUc86l.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/parts-Def9mImJ.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/cad-OLQD3dFP.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/Led-BlGwPQL5.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/actuators-Cx-vyxOJ.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/connectors-COlSGWQx.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/sticks3-dwb9pCBE.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/grove-cable-uIXa_gGs.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/VisualJoint-CzQ0DrHw.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/relay-Bx_gxOwG.js",
+      "status": 200
+    }
+  ],
+  "mediaScope": "Original native WebGL canvas only; no official reference-image pixels.",
+  "applicationRequestFailures": []
+}

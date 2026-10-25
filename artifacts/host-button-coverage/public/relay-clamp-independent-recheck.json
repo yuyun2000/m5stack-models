@@ -1,0 +1,130 @@
+{
+  "checkedAt": "2026-10-25T20:16:36.427Z",
+  "status": "pass",
+  "sourceCommit": "b8b4746102b8bc6e098cbff1c2fd7d36cc3b1b7e",
+  "scope": "Independent recheck of the two previously confirmed overlap points and two positive metal-volume controls using the original three oblique double-sided parity rays; no full checker/build/browser run.",
+  "tests": [
+    {
+      "point": [
+        0.2,
+        7.05,
+        7.65
+      ],
+      "metal": "Relay plug pressure plate",
+      "deckInside": [
+        true,
+        true,
+        true
+      ],
+      "metalInside": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "point": [
+        1.35,
+        7.05,
+        7.65
+      ],
+      "metal": "Relay plug clamp cage side",
+      "deckInside": [
+        true,
+        true,
+        true
+      ],
+      "metalInside": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "point": [
+        0.2,
+        7.05,
+        7.4
+      ],
+      "metal": "Relay plug pressure plate",
+      "deckInside": [
+        false,
+        false,
+        false
+      ],
+      "metalInside": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "point": [
+        1.35,
+        7.05,
+        6.75
+      ],
+      "metal": "Relay plug clamp cage side",
+      "deckInside": [
+        false,
+        false,
+        false
+      ],
+      "metalInside": [
+        true,
+        true,
+        true
+      ]
+    }
+  ],
+  "deckBottom": 7.60000000089407,
+  "metalParts": 12,
+  "metalTopMin": 7.5099999973177916,
+  "metalTopMax": 7.510000007152558,
+  "gapMin": 0.08999999374151191,
+  "gapMax": 0.09000000357627869,
+  "unchanged": {
+    "nativeSourceGeometry": true,
+    "nativeWorldMatrix": true,
+    "grovePortPose": true,
+    "terminalPortPose": true,
+    "screws": [
+      {
+        "id": "screw-1",
+        "center": [
+          -3.96,
+          9.05,
+          7.880000000000001
+        ],
+        "headMinZ": 7.880000001341105,
+        "headMaxZ": 8.300000011920929
+      },
+      {
+        "id": "screw-2",
+        "center": [
+          0,
+          9.05,
+          7.880000000000001
+        ],
+        "headMinZ": 7.880000001341105,
+        "headMaxZ": 8.300000011920929
+      },
+      {
+        "id": "screw-3",
+        "center": [
+          3.96,
+          9.05,
+          7.880000000000001
+        ],
+        "headMinZ": 7.880000001341105,
+        "headMaxZ": 8.300000011920929
+      }
+    ]
+  },
+  "sourceHashes": {
+    "src/units/relay/assembly.js": "0fe8671ebd10eb8ae775559fd1e6e41d6f384f66cd73cfc8a6d3570c92d5c1c6",
+    "src/units/relay/index.js": "4e63b971bee7c5bf5321dc31c41b4ac44b2b951bd246e6eb02df399b3bb35c79",
+    "src/units/relay/dimensions.js": "3cb033076499c67f08fa4ef84145ff836e08a954737f309def8851f7d59bc4fc",
+    "scripts/check-relay-assembly.mjs": "f21f892128097678c076f60cafc953be854d701c0bbe96c60058fe37b53e0061"
+  }
+}
