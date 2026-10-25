@@ -29,6 +29,8 @@ const off = host.on('input', event => runtime.sendInput(event));
 
 `runtime` 是下游提供的对象。示例没有实现它，也没有向真实设备发送命令。Three.js 应由下游 bundler 去重，避免模型与 Viewer 各用一个 Three.js 实例。仓库导出源码，使用 ESM bundler 接入；不要把所有模型一次打进首屏。
 
+`loadModel()` 返回的模型按需构建。首次直接调用 `getState()` 也会建立真实组件并返回当前快照，不需要先访问 `root`、`get()` 或 `list()`。挂接模块仍在对应端口的 `module.state` 下递归返回；它不读取硬件或执行固件。
+
 ## 输入、按压与稳定开关
 
 ```js
@@ -46,6 +48,8 @@ host.handle({type: 'release', target: 'btnA'});
 `button.getActuationState()` 返回只读的 `{depthMm, targetDepthMm, settled}`，用于观察视觉插值是否到达终点；`getState()` 保持原输入状态结构。不要通过 `cap.position` 判断所有按键的行程：Button U027 的原壳片绕固定根部弯曲，Limit U145 的金属柄绕固定铰链转动。二者继续使用相同的 `press/release/cancel` 和输入路径，`meta.visualMotion` 分别为 `flex-pad` / `lever`。行程和角度中未获机械图确认的值均为外观估计。
 
 CardKB v1.1（U035-B）有50个独立实体按钮，例如 `key-q`、`key-1`、`key-esc`、`key-up`；挂载后使用 `grove/key-q`。本层只发送各键按压意图，下游负责矩阵扫描、字符、组合键及I2C字节。它不是CardKB2。Cardputer-ADV新增 `grove-power` 两档滑块，只同步Grove供电方向选择器的外观，不切换任何电气状态。
+
+CardKB 的 `AltLeft` 显式映射到 Sym 实体键，仅在模型画布聚焦时处理该 Alt 键自身。Alt 与其他键的组合、未映射的修饰键和表单输入继续留给浏览器；失焦或键释放会清除已有的模型按压来源。
 
 Unit Key U144 使用 `press` 和独立的 `rgb`。红色空心键帽与轴芯一起压放，1.6 mm 行程是外观估计。官方规格表总高22.6 mm与机械图24.3 mm冲突，两者均保留，当前可见外形依据机械图。
 
@@ -77,6 +81,7 @@ joystick.button('press').click();
 | --- | --- | --- |
 | StackChan | `yaw` / `pitch` | 底座不动；颈部水平旋转；头部俯仰 |
 | Fan | `rotor` | 裸轴或可选风叶一起旋转 |
+| Roller485 U182 | `rotor` / `press` | 标准滑环版转盘与顶端 Grove 随转，底部实体弹舌压放 |
 | Encoder | `rotation` / `press` | 连续旋转及实体旋钮按压 |
 | Angle | `rotation` | 外部绝对角度定位 |
 | Light U021 | `trim` | 金属微调头绕局部+Z定位，蓝色座固定 |
@@ -85,6 +90,20 @@ joystick.button('press').click();
 | 8Encoder | `rotation-1`…`rotation-8` / `press-1`…`press-8` / `switch` | 八路独立旋转/按压，开关保持档位 |
 
 挂到 `grove` 后上述 Unit 路径都加 `grove/` 前缀。进一步嵌套的 HUB 同样按 Port 递归，不硬编码场景树 child 索引。可通过 `host.list('joint')`、`host.list('button')` 与组件 `.path` 枚举。
+
+Roller485 为 U182 标准滑环版，`rotor` 绕模型 `+Y`，接受外部角度或连续视觉转速。转盘、外转子、顶端 `grove-top` 和 `top-led` 一起转；基座的 `lcd`、`press`、双 RGB、`grove`、`pwr485` 和 `debug` 固定。`lcd` 在底面 `-Y`，为 64×48 白色单色 OLED，外部 RGB 帧仅在产品局部着色器中按亮度显示为白光。`press` 的 0.25 mm 自由端压程与隐藏支撑为外观推导。
+
+```js
+const roller = await loadGroveModule('roller485', {cableLength:85});
+host.port('grove').attach(roller);
+host.get('grove/rotor').set({angleDeg:90});
+host.get('grove/rotor').set({rpm:20});
+host.get('grove/rotor').set({rpm:0});
+host.display('grove/lcd').fill('#ffffff');
+roller.port('grove-top').attach(await loadGroveModule('env-iii'));
+```
+
+顶端挂接后的组件路径为 `grove/grove-top/…`，装配姿态相对该转动端口；线缆/子组件随接口坐标变换，调用方可另设 `unitFrame` 姿态。接口显示不传播供电或 I2C/RS485 信号。`rgb-1/rgb-2` 是空间位置编号，不推定电气链序；`top-led` 是固定红色，只接受亮度/开关的外观效果，不因挂接或电机状态自动点亮。`pwr485/debug` 保留真实连接器外形与元数据，不属于 Grove 连接菜单。
 
 角度为度、`durationMs` 为毫秒、`rpm` 为视觉转速；传给关节的是它自身局部轴上的角度。StackChan 的 pitch 使用当前正视装配为 0，正角抬头，接受 `[0,90]`；这不是硬件舵机的校准零位。Angle/Joystick 的 demo 滑条范围只用于观察姿态，不能作为机械限位或传感器换算关系。轴线与范围依据见 [VISUAL-MOTION.md](VISUAL-MOTION.md)。
 
@@ -133,6 +152,12 @@ host.get('grove/grove-1/rgb').set({color:'#22b477',brightness:.4});
 
 Unit Scroll U186 的 `rotation` 沿自身 +X 转轴，`press` 使用独立输入来源，`rgb` 由外部控制。轮组、源 CAD 与隐藏支撑的视觉映射及按压估计见 [VISUAL-MOTION.md](VISUAL-MOTION.md)；不生成编码计数或 I2C 数据。
 
+## 屏幕帧缓冲与目标选择
+
+`host.list('display')` 返回包括挂接模块的屏幕，使用各组件的完整 `.path` 定位，例如 `lcd`、`grove/lcd` 或 `grove/grove-1/lcd`。通过 `host.display(targetPath).writeRGBA(rgba)`、`writeRGB565()` 或 `fill()` 写入外部像素；目标路径、像素内容和驱动协议由调用者提供。
+
+demo 的“屏幕校准图”仅写当前所选屏幕。多屏时显示目标选择框；没有主机屏幕但接入带屏 Unit 时同样可用。选择、连接或拆卸只刷新目标，不清除其他屏已有的帧；同名路径替换后使用新的组件身份与校准状态。单色标记的 OLED 使用灰阶校准图，电子纸关闭校准时恢复纸色底。校准不是固件页面，也不模拟显示器驱动或刷新过程。
+
 ## 屏幕触点
 
 ```js
@@ -165,6 +190,8 @@ host.get('grove/rgb-1').set({on: false});
 ```
 
 灯光的 kind 为 `led`，用 `host.list('led')` 枚举。`Led.set({color,brightness})` 或 `handle({type:'led',target,…})` 更新外观，亮度范围0…1；`getState()` 返回颜色和亮度。它不会产生输入事件或与按键自动联动。demo的“灯光外观”面板使用相同公开API。
+
+`invisible:true` 保留器件透镜及外部状态接口，但不产生人眼可见的 emissive 或 glow；demo 灯位菜单只列可见光器件。StickS3 的 `irTx` 继续接受原路径命令和状态查询，标记为不可见红外，不再渲染成红色指示灯。本库不模拟红外传输、波束或手机相机效果。
 
 Color U009 的两颗白色补光使用`fill-left`、`fill-right`，默认颜色`#ffffff`、亮度0。两个路径标识左右可见封装，D1/D2与左右的对应尚未确认。官方原理图中两灯各经1K电阻接同一VCC，没有独立GPIO控制；按实际供电状态展示时，由调用方给两灯相同亮度。统一`Led`接口的`color`只是绘图参数，硬件仍为白灯，不据此声明RGB能力。本库不随挂接、上电或测量自动点灯；封装深度和光扩散为外观估计。
 

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "scope": "visual-only",
   "products": [
     {
@@ -3061,6 +3061,81 @@
         "Source components 1/2/4/6/8 are displaced duplicates and are excluded. Original stickers remain deferred."
       ],
       "nextAction": "复核官方滚轮按压支撑/额定行程；核对七视图、旋转/回位与实际主机Grove连接。"
+    },
+    {
+      "id": "roller485",
+      "category": "unit",
+      "name": "Unit Roller485",
+      "sku": "U182",
+      "variant": "standard-slip-ring",
+      "scope": "visual-only",
+      "nominalMm": [
+        40,
+        40,
+        40
+      ],
+      "visualEnvelopeMm": [
+        41,
+        40,
+        41
+      ],
+      "mountingHolesMm": [],
+      "mountingHoleCheck": "scripts/check-roller485.mjs: actual +Y/-Y axial bores and original countersinks; not the generic flat-Unit +Z hole layout",
+      "stage": "modeled",
+      "entry": "src/units/roller485/index.js",
+      "export": "Model",
+      "reference": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/4.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_Roller485",
+      "research": "source-manifest.json",
+      "display": {
+        "type": "oled-monochrome",
+        "width": 64,
+        "height": 48,
+        "diagonal_in": 0.66,
+        "effective_mm": [
+          13.4112,
+          10.0584
+        ],
+        "activeAreaSource": "derived from diagonal and pixel aspect; panel drawing unconfirmed"
+      },
+      "integration": {
+        "moduleExport": "GroveModule",
+        "displayTarget": "lcd",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": null,
+        "visual": null
+      },
+      "visualControls": [
+        {
+          "id": "rotor",
+          "kind": "joint",
+          "continuous": true,
+          "axis": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "id": "press",
+          "kind": "button",
+          "travelMm": 0.25,
+          "rangeEvidence": "visual estimate; native flexible tongue"
+        }
+      ],
+      "externalLeds": [
+        "rgb-1",
+        "rgb-2",
+        "top-led"
+      ],
+      "limitations": [
+        "标准滑环版U182；名义40 mm立方体，官方电机图标Ø41，含真实电机的可见包围为41×40×41 mm；不混用Lite或CAN。",
+        "显示有效区由0.66英寸和64:48像素比推导；PCB、隐藏包体、接头局部尺寸及0.25 mm弹舌按程为外观推导。单色OLED只显示外部帧，红色顶灯与双RGB独立外驱，不自动响应供电/电机状态。",
+        "顶部转盘、外转子、顶端Grove和顶灯随外部rotor角度/转速；底部OLED、按键、固定Grove、PWR485/debug保持固定。不模拟电机、编码器、滑环电气或协议，贴纸等待原文件。"
+      ],
+      "nextAction": "持续核对隐藏PCB/显示支撑、额定按程与生产装配依据；贴纸等待原文件，制造配合与硬件运行另行验证。"
     }
   ],
   "artworkPolicy": "Photographic sticker crops disabled by default; awaiting user-supplied originals. Do not use artwork to conceal missing geometry."

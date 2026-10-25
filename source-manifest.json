@@ -1,6 +1,6 @@
 {
   "preparedAt": "2026-10-25T13:20:33.030Z",
-  "sourceCommit": "069b1a684f2fa374cc3c6f0adb04c80b23c85aee",
+  "sourceCommit": "20ccf7577f875ac01b55f6a5eb20b83ae26a3a18",
   "scope": "Factual provenance only; no official reference binaries or MCP source text are included.",
   "upstreams": {
     "sticks3": {
@@ -3778,6 +3778,325 @@
         "pressGroup": "Wheel plus axle insert; insert does not rotate. Appearance approximation, hidden pivot/switch support motion unconfirmed.",
         "pcb": "Appearance board at Z -1.5..-0.7, actual-post and Grove relief; no original PCB/fabrication CAD"
       }
+    },
+    {
+      "id": "roller485",
+      "sku": "U182",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_Roller485",
+      "reference": {
+        "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/4.webp",
+        "sha256": "bf028890736dde471ee56c04bfc6dc4a4b2f31c52052b462c8954bc6bdbf0a08"
+      },
+      "referenceSources": [
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U182_Unit_Roller485/Structures/Unit_Roller485.stl",
+          "sha256": "39ea7e2b356fea865bb33ca2a6c99486baac972f2a165611b1193d25c6a6d135"
+        },
+        {
+          "url": "https://docs.m5stack.com/zh_CN/unit/Unit_Roller485.md",
+          "sha256": "07f88ae29f064967f42fa11057389212ddfc8a369b03fe5190fe2720622bf8e1"
+        },
+        {
+          "url": "https://docs.m5stack.com/zh_CN/guide/unit_roller485/usage.md",
+          "sha256": "3b1eaf089a2fe8b5b6a99f3e6462dcf39319a67c286fdcb409aa5f2c66c38ea8"
+        },
+        {
+          "url": "https://docs.m5stack.com/zh_CN/unit/Unit-Roller485",
+          "sha256": "a9d54d2616f1692af1b39d0b26316a2864eae29ccd67381b1b9e465958aab973"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+          "sha256": "443997d6d9d6a1d303edfb7892531c9c838962f692c3085604b63a9115d34873"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/%E5%B0%BA%E5%AF%B8%E5%9B%BE2.jpg",
+          "sha256": "b9410bc2bcbb79cf438222af9b2138fb11db22e055ac36b25be42585793095a9"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/%E5%B0%BA%E5%AF%B8%E5%9B%BE3.jpg",
+          "sha256": "7c3cabf5f5de0fd772d98d51b86b09f51022ee27d2350fd31a6a1eb26cd794e7"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/776/modelsize_01.png",
+          "sha256": "e3f8ee409fc06d487e4ae316b9270aeb7252c9c15a32a3a341f1d9552c5a22d6"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/static/assets/img/guide/motor_ctl/roller485/roller485_i2c_port_01.jpg",
+          "sha256": "7aee368a4233a2cc0cdae111097d086a7486bc52bacc94b921a7755b0306dc48"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/static/assets/img/guide/motor_ctl/roller485/roller485_setting_01.jpg",
+          "sha256": "cab19bd785ab8298c4f362d4c957333f797feb0010d7eed38ee08b6b37443d5e"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/4.webp",
+          "sha256": "bf028890736dde471ee56c04bfc6dc4a4b2f31c52052b462c8954bc6bdbf0a08"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/8.webp",
+          "sha256": "903452e3273722ffe2aaa1b677f6aefc89ba63e89e5c7297cba04ea4c337a5e6"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/776/U182-zheng-package.jpg",
+          "sha256": "effc9577ab447c41aea46769d49f5e2eb64eba6b9d516a644509c087fa2e9a91"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/776/U182-fan-package.jpg",
+          "sha256": "22903122c02386258a0c1ea9fccfb3b4338e7b0fc6250fd0a486d6e00238d015"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/6.webp",
+          "sha256": "6eec3bac5c360ee62c838f625e34830540973e0303267e4366e0cdc159b27fe5"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/7.webp",
+          "sha256": "e80267d96846d50d0d381faa5482442c8361fb304664e536ba440d4eef524bdd"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/5.webp",
+          "sha256": "bcb7cf66ad4ee761a2b7623f73da6b106e06c14dfd46b0372953b57895af135e"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/10.webp",
+          "sha256": "122e832efc0912867606881091144b653a647537f68b4651522fabb792bb9135"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/13.webp",
+          "sha256": "3562fb4059141ffd8a838db8a9b3b5954f3ef7521b56d0d7f8880e8aaf35e1a8"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/14.webp",
+          "sha256": "5c145972a42c29f57898d0a61bedd6eb3886b0788997b041b632ad04ea53ea9f"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/15.webp",
+          "sha256": "7a184eebcd1721a7f3f43f54ae7fc269c46bf1ccc4c996a86e6f30aff2fd0f74"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/static/assets/img/guide/motor_ctl/roller485/roller485_rs485_port_01.jpg",
+          "sha256": "94eb4ae3465ac83c722fbb0669abb0d427cdaeb739b223be1cd0e3a75b491c3b"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/776/sch_Unit-Roller485_V1.0_page_01.png",
+          "sha256": "41bebec48ae362d7309b836adf0ce660991d74780b2363e1a4abc7f78e83125a"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/776/sch_bldc_top_v1.0_page_01.png",
+          "sha256": "b7c854e49da35b3b58efe63eea041493ea580ea8fff6a89cc2bd043f483a9015"
+        }
+      ],
+      "functionExpansion": {
+        "checkedAt": "2026-10-25T19:24:25.683986+00:00",
+        "sourceCommit": "20ccf7577f875ac01b55f6a5eb20b83ae26a3a18",
+        "sources": [
+          {
+            "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U182_Unit_Roller485/Structures/Unit_Roller485.stl",
+            "sha256": "39ea7e2b356fea865bb33ca2a6c99486baac972f2a165611b1193d25c6a6d135",
+            "bytes": 1600884,
+            "role": "original-official-raw-stl"
+          },
+          {
+            "url": "https://docs.m5stack.com/zh_CN/unit/Unit_Roller485.md",
+            "sha256": "07f88ae29f064967f42fa11057389212ddfc8a369b03fe5190fe2720622bf8e1",
+            "bytes": 13438,
+            "role": "original-official-raw-markdown"
+          },
+          {
+            "url": "https://docs.m5stack.com/zh_CN/guide/unit_roller485/usage.md",
+            "sha256": "3b1eaf089a2fe8b5b6a99f3e6462dcf39319a67c286fdcb409aa5f2c66c38ea8",
+            "bytes": 6458,
+            "role": "original-official-raw-markdown"
+          },
+          {
+            "url": "https://docs.m5stack.com/zh_CN/unit/Unit-Roller485",
+            "sha256": "a9d54d2616f1692af1b39d0b26316a2864eae29ccd67381b1b9e465958aab973",
+            "bytes": 143202,
+            "role": "original-official-fetched-html"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+            "sha256": "443997d6d9d6a1d303edfb7892531c9c838962f692c3085604b63a9115d34873",
+            "bytes": 736022,
+            "role": "original-official-original-image"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/%E5%B0%BA%E5%AF%B8%E5%9B%BE2.jpg",
+            "sha256": "b9410bc2bcbb79cf438222af9b2138fb11db22e055ac36b25be42585793095a9",
+            "bytes": 445188,
+            "role": "original-official-original-image"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/%E5%B0%BA%E5%AF%B8%E5%9B%BE3.jpg",
+            "sha256": "7c3cabf5f5de0fd772d98d51b86b09f51022ee27d2350fd31a6a1eb26cd794e7",
+            "bytes": 560587,
+            "role": "original-official-original-image"
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/776/modelsize_01.png",
+            "sha256": "e3f8ee409fc06d487e4ae316b9270aeb7252c9c15a32a3a341f1d9552c5a22d6",
+            "bytes": 592740,
+            "role": "original-official-original-image"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/static/assets/img/guide/motor_ctl/roller485/roller485_i2c_port_01.jpg",
+            "sha256": "7aee368a4233a2cc0cdae111097d086a7486bc52bacc94b921a7755b0306dc48",
+            "bytes": 880060,
+            "role": "original-official-original-image"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/static/assets/img/guide/motor_ctl/roller485/roller485_setting_01.jpg",
+            "sha256": "cab19bd785ab8298c4f362d4c957333f797feb0010d7eed38ee08b6b37443d5e",
+            "bytes": 1163040,
+            "role": "original-official-original-image"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/4.webp",
+            "sha256": "bf028890736dde471ee56c04bfc6dc4a4b2f31c52052b462c8954bc6bdbf0a08",
+            "bytes": 93444,
+            "role": "original-official-original-image"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/8.webp",
+            "sha256": "903452e3273722ffe2aaa1b677f6aefc89ba63e89e5c7297cba04ea4c337a5e6",
+            "bytes": 29168,
+            "role": "original-official-original-image"
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/776/U182-zheng-package.jpg",
+            "sha256": "effc9577ab447c41aea46769d49f5e2eb64eba6b9d516a644509c087fa2e9a91",
+            "bytes": 505016,
+            "role": "original-official-original-image"
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/776/U182-fan-package.jpg",
+            "sha256": "22903122c02386258a0c1ea9fccfb3b4338e7b0fc6250fd0a486d6e00238d015",
+            "bytes": 512550,
+            "role": "original-official-original-image"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/6.webp",
+            "sha256": "6eec3bac5c360ee62c838f625e34830540973e0303267e4366e0cdc159b27fe5",
+            "bytes": 27570,
+            "role": "original-official-original-image"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/7.webp",
+            "sha256": "e80267d96846d50d0d381faa5482442c8361fb304664e536ba440d4eef524bdd",
+            "bytes": 31486,
+            "role": "original-official-original-image"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/5.webp",
+            "sha256": "bcb7cf66ad4ee761a2b7623f73da6b106e06c14dfd46b0372953b57895af135e",
+            "bytes": 28974,
+            "role": "original-official-original-image"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/10.webp",
+            "sha256": "122e832efc0912867606881091144b653a647537f68b4651522fabb792bb9135",
+            "bytes": 25386,
+            "role": "original-official-original-image"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/13.webp",
+            "sha256": "3562fb4059141ffd8a838db8a9b3b5954f3ef7521b56d0d7f8880e8aaf35e1a8",
+            "bytes": 26134,
+            "role": "original-official-original-image"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/14.webp",
+            "sha256": "5c145972a42c29f57898d0a61bedd6eb3886b0788997b041b632ad04ea53ea9f",
+            "bytes": 34382,
+            "role": "original-official-original-image"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/15.webp",
+            "sha256": "7a184eebcd1721a7f3f43f54ae7fc269c46bf1ccc4c996a86e6f30aff2fd0f74",
+            "bytes": 37676,
+            "role": "original-official-original-image"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/static/assets/img/guide/motor_ctl/roller485/roller485_rs485_port_01.jpg",
+            "sha256": "94eb4ae3465ac83c722fbb0669abb0d427cdaeb739b223be1cd0e3a75b491c3b",
+            "bytes": 977865,
+            "role": "original-official-original-image"
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/776/sch_Unit-Roller485_V1.0_page_01.png",
+            "sha256": "41bebec48ae362d7309b836adf0ce660991d74780b2363e1a4abc7f78e83125a",
+            "bytes": 1640123,
+            "role": "original-official-original-image"
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/776/sch_bldc_top_v1.0_page_01.png",
+            "sha256": "b7c854e49da35b3b58efe63eea041493ea580ea8fff6a89cc2bd043f483a9015",
+            "bytes": 370464,
+            "role": "original-official-original-image"
+          }
+        ],
+        "facts": [
+          "U182 is the standard slip-ring Roller485 with a rotating top expansion plate/Grove and a fixed control base. U182-Lite and CAN variants are excluded.",
+          "The product table states 40 x 40 x 40 mm. The official assembly/motor drawings separately specify a 41 mm motor diameter, 14.8 mm barrel height, 16 mm fixed boss, 2.5 mm boss projection and 12.6 mm shaft bore.",
+          "The rotating plate and OLED control face are opposite coaxial end faces. The official tutorial explicitly calls A the bottom button.",
+          "The product specification gives a 0.66 inch 64x48 OLED. The official powered roller485_setting_01.jpg shows white monochrome emission.",
+          "The main schematic has two WS2812C-2020 RGB devices. The separate top-ring schematic has one RED indicator and four direct slip-ring pass-through paths.",
+          "The pinned official STL contains five assembled parts and five translated flat duplicates. Assembled indices 1,2,4,6,9 retain 16008 original triangles."
+        ],
+        "implementation": [
+          "Right-handed millimetres: +Y physical rotating top, +Z fixed Grove side, -Y OLED bottom. X=sourceY, Y=sourceZ+22.25, Z=sourceX+1.0872135162353516. Nominal XYZ [40,40,40]; complete visible XYZ [41,40,41].",
+          "The native expansion plate, fixed OLED face shell, fixed motor seat, rotating power guide and fixed RGB guide retain their source neutral dimensions. No native shell or motor is scaled to hide an intersection.",
+          "Model and GroveModule use the shared Device/Module and Grove cable assembly. Fixed grove is [0,-15.15,19.8], face front, normal +Z. grove-top is initially [0,15.65,19.8] and is adopted by rotor.",
+          "rotor is a continuous +Y VisualJoint accepting external angleDeg/rpm. The expansion plate, outer bell, top-ring PCB, grove-top and top-led move together; the base, OLED/press and fixed ports/RGB remain fixed.",
+          "lcd is an external 64x48 OLED framebuffer. A product-local shader emits white according to received colour luminance; core Display is unchanged.",
+          "press bends actual native U-shaped tongue vertices with zero hinge displacement. Release restores original position and creased-normal arrays exactly. The invisible input plane stays 0.02 mm outside the neutral face through the entire actuation.",
+          "First-hit input assertions follow Viewer.pick effectively-visible semantics, including opacity-zero input surfaces, across three A-area rays during 24 press and 24 release frames plus both endpoints.",
+          "rgb-1/rgb-2 drive separate fixed packages behind the native guide. top-led is fixed red with an independently cloned material; actual emissive/colour isolation and exactly-once clone disposal are asserted.",
+          "Added motor, PCB, display stack and connector solids close missing subassemblies. PCB pillar/edge reliefs are valid open outlines, including merged circular reliefs; only genuine interior holes use hole contours.",
+          "The default specialised checker does not require research source files. Explicit --verify-source verifies original STL bytes, Git blob and SHA-256. It otherwise retains identical runtime geometry, aperture, picking, movement, nested connection and disposal assertions.",
+          "Held/tween normal updates are confined to vertices of source triangles containing displaced tongue vertices. Unit incident-face normals determine a local rotation of each original creased normal; no global computeVertexNormals call rewrites the surrounding shell. The specialised checker independently derives affected triangles from actual displacement across 51 snapshots (48 tween frames), protecting at least 5219 source normal vertices and changing at most 284 local normal vertices. Release still restores the full original normal array exactly."
+        ],
+        "explicitInferences": [
+          "Hidden PCB outlines, circuit packages, OLED carrier/glass thickness, connector details and motor grooves are appearance estimates constrained by original cavities, product photos and primary official dimensions; they are not production CAD.",
+          "Active OLED area [13.4112,10.0584] mm is derived from a 0.66 inch diagonal and 64:48 aspect ratio; no panel manufacturing drawing was located.",
+          "Button free-end travel 0.25 mm and weighted bending are visual estimates, not switch-force or material-stress models.",
+          "The outer bell follows the output based on the motor structure drawing, assembled photos and rotation indication. Internal rotor/stator, bearings and slip-ring mechanical fits are not independently certified.",
+          "RGB numbering indicates spatial placement, not U4/U5 chain order. PWR485 pin names document schematic logical numbering without an unverified physical pin-picking grid.",
+          "Colours/roughness are neutral estimates. The native STL defines a neutral rotor phase; photographs can show arbitrary phases."
+        ],
+        "limits": [
+          "Stickers are deferred until original artwork is supplied; photographic crops and planar product photos do not conceal missing geometry.",
+          "The model owns appearance, input intent, external framebuffers and externally driven visual kinematics. It does not simulate firmware, menus, measurements, motor control, buses, electrical supply or hardware physics.",
+          "Finite material samples and fixed views do not prove all-angle nonintersection, dimensional tolerances, manufacturing fit, optical transmission or physical-device function.",
+          "RPM is a visual integration input, not a claim about safe or achievable hardware speed, torque, load or lifetime.",
+          "Official images, drawings, schematics and documentation retain original rights; provenance URLs/hashes do not relicense or authorize redistribution of pixels.",
+          "Auxiliary research-viewer inspection is distinct from integrated application acceptance. The main task verifies the actual demo and saves its own screenshots/receipts."
+        ],
+        "runtime": [
+          {
+            "path": "src/units/roller485/index.js",
+            "sourceSha256": "821ef89719edc981e818e57dee8e3b9dbea4fb534bbb0532401518c3a9d1b702",
+            "publicSha256": "821ef89719edc981e818e57dee8e3b9dbea4fb534bbb0532401518c3a9d1b702"
+          },
+          {
+            "path": "src/units/roller485/dimensions.js",
+            "sourceSha256": "d67d18995d47499676e93c008a5c2096b572305bdfbe9a8979f2bce2376023e9",
+            "publicSha256": "d67d18995d47499676e93c008a5c2096b572305bdfbe9a8979f2bce2376023e9"
+          },
+          {
+            "path": "src/units/roller485/geometry-data.js",
+            "sourceSha256": "f246c7ca8ff77d83bd9788d5827615e83cfee24d02dbe06d1caf5a9e167e98d6",
+            "publicSha256": "f246c7ca8ff77d83bd9788d5827615e83cfee24d02dbe06d1caf5a9e167e98d6"
+          },
+          {
+            "path": "src/units/roller485/cad-map.json",
+            "sourceSha256": "731fbb83c945ed9ecde4a167db610a4653d19545a7d4f8142c4b7e04de543c3d",
+            "publicSha256": "4e49e298b3a4acdd5824902486d4eb7e9d9e60f7b37775a5d4a383dc1856ab04"
+          }
+        ],
+        "privateProvenanceSha256": "f1652c3669d7efddc4f8d71642c9de8a67900b40b0d91d32fb566bf4f8fea9ff",
+        "privateEvidenceReportSha256": "ca299240f2ac67f1e681f22ca48af8811148fa991cf909373702bf30ec07a716",
+        "scope": "Roller485 U182 appearance, original-shell flexure and visible rotation; recursive display targeting, fresh state reads, focused Sym input and invisible IR correction. Public source, original stage media and independent validation only."
+      }
     }
   ],
   "motionStructures": {
@@ -3818,6 +4137,6 @@
       }
     ]
   },
-  "updatedAt": "2026-10-25T18:26:34.377Z",
+  "updatedAt": "2026-10-25T19:25:23.902Z",
   "syncedAt": "2026-10-25T14:15:24.398Z"
 }

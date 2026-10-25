@@ -39,6 +39,34 @@ function resources(module){
 
 /** No filesystem or private source reads; only the CLI below writes a report. */
 export async function checkPortLifecycle(){
+  const {loadModel,loadGroveModule}=await import('../src/loaders.js');
+  const freshSnapshots=[];
+  for(const id of ['atoms3r','hub']){
+    const fresh=await loadModel(id);
+    try{
+      assert.equal(fresh.components.size,0,'Factory models stay lazy until their first public access');
+      const snapshot=fresh.getState(),components=[...fresh.components.values()];
+      assert.ok(Object.keys(snapshot).length>0,`${id}: first getState builds real components without viewer/list/root access`);
+      assert.deepEqual(Object.keys(snapshot),components.map(component=>component.id));
+      assert.deepEqual(fresh.getState(),snapshot,'Repeated state reads preserve state');
+      assert.deepEqual([...fresh.components.values()],components,'State reads do not rebuild components');
+      freshSnapshots.push({id,components:Object.keys(snapshot)});
+    }finally{fresh.dispose();}
+  }
+  const freshHub=await loadGroveModule('hub'),freshLeaf=await loadGroveModule('hub');
+  class FreshAssembly extends Device{
+    builds=0;
+    build(){this.builds++;this.add(new Port({id:'hub',connector:'grove'})).attach(freshHub);freshHub.port('grove-1').attach(freshLeaf);}
+  }
+  const freshAssembly=new FreshAssembly();
+  try{
+    const snapshot=freshAssembly.getState();
+    assert.equal(freshAssembly.builds,1);assert.equal(snapshot.hub.module.id,freshHub.meta.id);
+    assert.equal(snapshot.hub.module.state['grove-1'].module.id,freshLeaf.meta.id);
+    assert.deepEqual(snapshot.hub.module.state['grove-1'].module.state.sensor,{});
+    assert.ok(snapshot.hub.module.state['grove-1'].module.state.grove,'First state recursively includes real nested Unit components');
+    assert.deepEqual(freshAssembly.getState(),snapshot);assert.equal(freshAssembly.builds,1);
+  }finally{freshAssembly.dispose();}
   const first=new Device(),second=new Device();
   const a=makePort(first,'a'),b=makePort(first,'b'),destination=makePort(second,'destination');
   const module=new ProbeModule(),owned=resources(module),events=[];
@@ -239,7 +267,7 @@ export async function checkPortLifecycle(){
   assert.equal(unhosted.module,null);assert.equal(detached.attachedTo,null);detachedResources.retained();
   unhosted.dispose();detached.dispose();detachedResources.disposed();
 
-  return {status:'pass',cases:['same-port idempotence','same-host transfer','cross-host transfer','destination replacement','descendant promotion before former-parent disposal','validation before mutation','self and descendant cycle rejection','old-path synchronous cancellation','nested actual HUB event bubbling','reentrant detach protection','transaction rejects will-detach and post-detach reattachment','pending destination disposal cannot revive its module','ancestry revalidated after source and destination detach callbacks','scene-only cycle rejection','single-tick rpm after transfer','real HUB/Fan rigid transfer retains four-wire buffers','retained then exactly-once resource disposal'],probeResources:owned.size+replacedResources.size+hatResources.size+nestedResources.size+guardResources.size+leafResources.size+detachedResources.size+formerParentResources.size+promotedResources.size+transferringResources.size+incumbentResources.size+intruderResources.size+callbackAncestryResources,realCableBuffers:cableBuffers.length,scope:'Public Module/Port ownership, lifecycle events and visual state only; no electrical, firmware or private source dependency'};
+  return {status:'pass',freshSnapshots,nestedFreshSnapshot:'hub/grove-1/sensor',cases:['fresh public state and recursive real module snapshots','same-port idempotence','same-host transfer','cross-host transfer','destination replacement','descendant promotion before former-parent disposal','validation before mutation','self and descendant cycle rejection','old-path synchronous cancellation','nested actual HUB event bubbling','reentrant detach protection','transaction rejects will-detach and post-detach reattachment','pending destination disposal cannot revive its module','ancestry revalidated after source and destination detach callbacks','scene-only cycle rejection','single-tick rpm after transfer','real HUB/Fan rigid transfer retains four-wire buffers','retained then exactly-once resource disposal'],probeResources:owned.size+replacedResources.size+hatResources.size+nestedResources.size+guardResources.size+leafResources.size+detachedResources.size+formerParentResources.size+promotedResources.size+transferringResources.size+incumbentResources.size+intruderResources.size+callbackAncestryResources,realCableBuffers:cableBuffers.length,scope:'Public Module/Port ownership, lifecycle events and visual state only; no electrical, firmware or private source dependency'};
 }
 
 if(process.argv[1]&&pathToFileURL(process.argv[1]).href===import.meta.url){

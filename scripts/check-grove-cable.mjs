@@ -69,7 +69,11 @@ for(const id of unitIds){
   checkShellClearance(host,module);
   const oldGeometry=module.get('cable').wires[0].geometry;let oldDisposals=0;oldGeometry.addEventListener('dispose',()=>oldDisposals++);
   host.handle({type:'pose',target:'unit/unitFrame',position:[18,75,-2],rotation:[.13,-.28,.32]});
-  host.handle({type:'cable',target:'unit/cable',slack:18,bend:[0,0,-1]});
+  // The bulky Roller body extends below its front input. Route this moved
+  // fixture outward in +Z; the flat-Unit -Z bow crosses its bottom shell.
+  // Poses and all endpoint/wire/shell assertions remain identical.
+  const motionBend=id==='roller485'?[0,0,1]:[0,0,-1];
+  host.handle({type:'cable',target:'unit/cable',slack:18,bend:motionBend});
   checkEndpoints(host,port,module);checkShellClearance(host,module);assert.equal(oldDisposals,1,'replaced wire buffers are freed');
   host.root.rotation.set(.4,-.6,.8);host.root.position.set(22,-11,7);host.update(1/60,1);
   checkEndpoints(host,port,module);checkShellClearance(host,module);
@@ -79,7 +83,7 @@ for(const id of unitIds){
   const second=host.add(new Port({id:'rotated',connector:'grove',position:[-25,5,3],rotation:[.2,.3,-.8]}));second.attach(module);host.update(1/60,2);
   checkEndpoints(host,second,module);assert.equal(host.get('rotated/sensor').path,'rotated/sensor');
   host.dispose();assert.equal(disposals,1,'final attached cable buffer is freed exactly once');assert.equal(module.components.size,0,'attached module is fully disposed with host');
-  reports.push({id,status:'pass',initialFaceDistanceMm:initial.faceDistanceMm});
+  reports.push({id,status:'pass',initialFaceDistanceMm:initial.faceDistanceMm,motionBend});
   console.log(`PASS ${id}: two plugs/four wires, moving Unit, rotated host, reuse and disposal`);
 }
 

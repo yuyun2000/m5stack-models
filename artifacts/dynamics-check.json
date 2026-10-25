@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-25T18:29:04.219Z",
+  "checkedAt": "2026-10-25T19:30:01.771Z",
   "scope": "Actual control movement and externally driven visual kinematics; no hardware/runtime validation",
   "checks": [
     {
@@ -248,9 +248,172 @@
           "scope": "External RGB state and source-slot appearance; package dimensions/depth remain photo-derived"
         }
       ],
+      "invisibleState": {
+        "id": "sticks3/irTx",
+        "commandedState": {
+          "color": "#bb3344",
+          "brightness": 0.75
+        },
+        "humanVisibleEmission": false,
+        "lensPreserved": true
+      },
+      "defaultVisibleEmitters": [
+        {
+          "id": "cardputer-adv",
+          "led": "stamp-rgb"
+        },
+        {
+          "id": "papermono",
+          "led": "rgb"
+        },
+        {
+          "id": "nanoc6",
+          "led": "rgb"
+        },
+        {
+          "id": "stackchan",
+          "led": "rgb-left-1"
+        },
+        {
+          "id": "stackchan",
+          "led": "rgb-left-2"
+        },
+        {
+          "id": "stackchan",
+          "led": "rgb-left-3"
+        },
+        {
+          "id": "stackchan",
+          "led": "rgb-left-4"
+        },
+        {
+          "id": "stackchan",
+          "led": "rgb-left-5"
+        },
+        {
+          "id": "stackchan",
+          "led": "rgb-left-6"
+        },
+        {
+          "id": "stackchan",
+          "led": "rgb-right-1"
+        },
+        {
+          "id": "stackchan",
+          "led": "rgb-right-2"
+        },
+        {
+          "id": "stackchan",
+          "led": "rgb-right-3"
+        },
+        {
+          "id": "stackchan",
+          "led": "rgb-right-4"
+        },
+        {
+          "id": "stackchan",
+          "led": "rgb-right-5"
+        },
+        {
+          "id": "stackchan",
+          "led": "rgb-right-6"
+        },
+        {
+          "id": "stamplc",
+          "led": "stamp-rgb"
+        },
+        {
+          "id": "rgb",
+          "led": "led0"
+        },
+        {
+          "id": "rgb",
+          "led": "led1"
+        },
+        {
+          "id": "rgb",
+          "led": "led2"
+        },
+        {
+          "id": "color",
+          "led": "fill-left"
+        },
+        {
+          "id": "color",
+          "led": "fill-right"
+        },
+        {
+          "id": "encoder",
+          "led": "led0"
+        },
+        {
+          "id": "encoder",
+          "led": "led1"
+        },
+        {
+          "id": "cardkb",
+          "led": "rgb"
+        },
+        {
+          "id": "key",
+          "led": "rgb"
+        },
+        {
+          "id": "8encoder",
+          "led": "rgb-1"
+        },
+        {
+          "id": "8encoder",
+          "led": "rgb-2"
+        },
+        {
+          "id": "8encoder",
+          "led": "rgb-3"
+        },
+        {
+          "id": "8encoder",
+          "led": "rgb-4"
+        },
+        {
+          "id": "8encoder",
+          "led": "rgb-5"
+        },
+        {
+          "id": "8encoder",
+          "led": "rgb-6"
+        },
+        {
+          "id": "8encoder",
+          "led": "rgb-7"
+        },
+        {
+          "id": "8encoder",
+          "led": "rgb-8"
+        },
+        {
+          "id": "8encoder",
+          "led": "rgb-9"
+        },
+        {
+          "id": "scroll",
+          "led": "rgb"
+        },
+        {
+          "id": "roller485",
+          "led": "rgb-1"
+        },
+        {
+          "id": "roller485",
+          "led": "rgb-2"
+        },
+        {
+          "id": "roller485",
+          "led": "top-led"
+        }
+      ],
       "ownedEmitterResources": 6,
       "resourceDisposal": "Owned emitter geometry and materials exactly once; core shared glow texture lifecycle is outside this product check",
-      "scope": "Actual Cardputer-ADV/StamPLC external LED API, original aperture rays, unchanged geometry, transformed frames and independent resource ownership. Canvas boundary stub only; no GPIO38 gating, firmware, boot sequence, physical optical/diffusion or hardware proof"
+      "scope": "Actual external LED API, invisible IR state without human-visible emission, default visible emitters, original aperture rays, unchanged geometry, transformed frames and independent resource ownership. Canvas boundary stub only; no camera/IR optics, GPIO38 gating, firmware, boot sequence, physical optical/diffusion or hardware proof"
     },
     {
       "script": "scripts/check-stackchan-servo-outline.mjs",
@@ -463,9 +626,113 @@
       "scope": "Original assembled wheel/shell geometry, real vertex motion/return, PCB containment, physical holes, nested cable and independent RGB; no encoder/bus/firmware/physics or manufacturing fit"
     },
     {
+      "script": "scripts/check-roller485.mjs",
+      "checkedAt": "2026-10-25T19:29:12.638Z",
+      "status": "pass",
+      "sku": "U182",
+      "variant": "standard-slip-ring",
+      "scope": "Appearance, external framebuffer/input and visible kinematics only; no electrical/firmware/physics simulation",
+      "sourceVerified": false,
+      "meshes": 85,
+      "rays": 71,
+      "selectedNativeTriangles": 16008,
+      "nominalMm": [
+        40,
+        40,
+        40
+      ],
+      "visualEnvelopeMm": [
+        41,
+        40,
+        41
+      ],
+      "nativeSolidExclusion": {
+        "closedNativeSolids": 5,
+        "addedMeshes": 45,
+        "surfaceAndVolumeSamples": 47264,
+        "containmentChecks": 42332,
+        "numericalBoundaryContacts": 248,
+        "boundaryToleranceMm": 0.0001,
+        "failures": [],
+        "scope": "Vertices, triangle centroids and dense PCB material layers; appearance exclusion, not manufacturing fit certification"
+      },
+      "nativeFlexureNormals": {
+        "checkedFrames": 51,
+        "tweenFrames": 48,
+        "minimumProtectedVertices": 5219,
+        "maximumChangedNormalVertices": 284,
+        "unaffectedNormalsUnchangedAtHeldAndTween": true
+      },
+      "rotorAxis": [
+        0,
+        1,
+        0
+      ],
+      "fixedGrove": {
+        "position": [
+          0,
+          -15.15,
+          19.8
+        ],
+        "face": "front",
+        "outward": [
+          0,
+          0,
+          1
+        ]
+      },
+      "display": {
+        "target": "lcd",
+        "resolution": [
+          64,
+          48
+        ],
+        "style": "oled",
+        "monochrome": true,
+        "face": "bottom"
+      },
+      "checks": [
+        "exact assembled selection",
+        "unmodified source neutral vertices",
+        "closed-native-solid exclusion including dense board layers",
+        "real OLED, Grove, PWR485 and debug aperture depth",
+        "open fixed and rotating mounting paths",
+        "continuous external rotor angle and rpm",
+        "fixed versus moving connector ownership",
+        "native flexure local held/tween normals and exact position/normal restoration",
+        "two independent RGB plus fixed red top indicator",
+        "nested rotated Grove attachment and cable update",
+        "exactly-once geometry disposal"
+      ]
+    },
+    {
       "script": "scripts/check-port-lifecycle.mjs",
       "status": "pass",
+      "freshSnapshots": [
+        {
+          "id": "atoms3r",
+          "components": [
+            "lcd",
+            "usb",
+            "grove",
+            "button",
+            "reset"
+          ]
+        },
+        {
+          "id": "hub",
+          "components": [
+            "grove",
+            "grove-1",
+            "grove-2",
+            "grove-3",
+            "sensor"
+          ]
+        }
+      ],
+      "nestedFreshSnapshot": "hub/grove-1/sensor",
       "cases": [
+        "fresh public state and recursive real module snapshots",
         "same-port idempotence",
         "same-host transfer",
         "cross-host transfer",
@@ -490,7 +757,7 @@
     },
     {
       "script": "scripts/check-viewer-lifecycle.mjs",
-      "checkedAt": "2026-10-25T18:28:14.158Z",
+      "checkedAt": "2026-10-25T19:29:12.876Z",
       "status": "pass",
       "checks": [
         "same Viewer mount idempotence",
@@ -505,13 +772,90 @@
         "synchronous cancelled-up consumer can safely transfer or remount a device",
         "third Viewer chosen during cancellation wins over the stale outer mount",
         "cross host module transfer routes cancellation only through old host",
-        "disposing Viewer cannot be revived by cancelled-up and disposal is idempotent"
+        "disposing Viewer cannot be revived by cancelled-up and disposal is idempotent",
+        "actual CardKB AltLeft Sym keyboard stroke and exact release",
+        "standalone mapped Alt requires focused canvas and a real button",
+        "modifier chords and editable/unfocused targets preserve browser defaults",
+        "Alt hold cancels without click on blur or unmount"
       ],
       "ownedResources": 18,
-      "rendererInstances": 7,
+      "rendererInstances": 9,
       "oldNestedCancellationPath": "left/next/press",
       "singleTickDegreesPer100msAt60Rpm": 36,
-      "scope": "Actual DeviceViewer lifecycle/input/RAF code with an isolated no-GPU renderer and DOM fixture; no browser pixels, private research, network, firmware or hardware simulation"
+      "cardkbKeyboard": {
+        "sku": "U035-B",
+        "positiveShortcuts": [
+          {
+            "code": "AltLeft",
+            "target": "key-sym",
+            "travelMm": 0.2,
+            "exactReturn": true
+          },
+          {
+            "code": "KeyQ",
+            "target": "key-q",
+            "travelMm": 0.2,
+            "exactReturn": true
+          },
+          {
+            "code": "F1",
+            "target": "key-fn",
+            "travelMm": 0.2,
+            "exactReturn": true
+          },
+          {
+            "code": "ShiftLeft",
+            "target": "key-shift",
+            "travelMm": 0.2,
+            "exactReturn": true
+          }
+        ],
+        "blockedCases": [
+          "unmapped standalone AltLeft",
+          "AltLeft mapped to a non-button",
+          "unmapped standalone AltRight",
+          "Alt+Q chord",
+          "Meta+Q chord",
+          "Ctrl+Q chord",
+          "Meta+AltLeft chord",
+          "Ctrl+AltLeft chord",
+          "AltLeft in INPUT",
+          "AltLeft in TEXTAREA",
+          "AltLeft in SELECT",
+          "AltLeft in contenteditable",
+          "AltLeft outside focused canvas",
+          "Q outside focused canvas",
+          "unheld AltLeft keyup",
+          "AltLeft with unfocused global-keyboard viewer"
+        ],
+        "cancelActions": {
+          "blur": [
+            {
+              "id": "key-sym",
+              "action": "down",
+              "cancelled": false
+            },
+            {
+              "id": "key-sym",
+              "action": "up",
+              "cancelled": true
+            }
+          ],
+          "unmount": [
+            {
+              "id": "key-sym",
+              "action": "down",
+              "cancelled": false
+            },
+            {
+              "id": "key-sym",
+              "action": "up",
+              "cancelled": true
+            }
+          ]
+        }
+      },
+      "scope": "Actual DeviceViewer lifecycle/input/RAF code and CardKB shortcuts with an isolated no-GPU renderer and DOM fixture; no browser pixels, private research, network, firmware or hardware simulation"
     },
     {
       "script": "scripts/check-demo-lifecycle.mjs",
@@ -528,6 +872,7 @@
       "nested": {
         "status": "pass",
         "cases": [
+          "invisible-host-emitter-excluded-from-visible-light-controls",
           "recursive-HUB-outputs-without-upstream-input",
           "nested-Key-button-LED-and-Fan-rpm-controls",
           "two-level-paths-ancestor-fallback-and-pending-result-disposal",
@@ -544,6 +889,21 @@
         "scope": "Real StickS3/HUB/Key/Fan assemblies and panel; light DOM/renderer fixture only"
       },
       "scope": "Actual demo async controller, recursive connection menu and dynamic controls with real host/HUB/Key/Fan; renderer and DOM boundary are fixtures, browser pixels and focus remain separately verified"
+    },
+    {
+      "script": "scripts/check-demo-framebuffers.mjs",
+      "status": "pass",
+      "cases": [
+        "single-root calibration and dark rest",
+        "nested target-only write and grayscale OLED pattern",
+        "selected subtree removal falls back without a write",
+        "same-path replacement uses current component identity",
+        "stale local display replacement click does not overwrite pixels",
+        "screenless host discovers and releases module-only display",
+        "reflective rest color and model-switch cleanup"
+      ],
+      "caseCount": 7,
+      "scope": "Real recursive component routing and framebuffer ownership; form controls only are stubbed. Actual browser rendering is separate."
     },
     {
       "script": "scripts/check-host-grove-assembly.mjs",
@@ -905,7 +1265,7 @@
     },
     {
       "script": "scripts/check-8encoder.mjs",
-      "checkedAt": "2026-10-25T18:29:00.393Z",
+      "checkedAt": "2026-10-25T19:29:58.018Z",
       "status": "pass",
       "scope": "Appearance/geometry/input intent only; no encoder count, electrical or firmware simulation",
       "sku": "U153",

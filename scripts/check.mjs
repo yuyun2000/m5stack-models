@@ -19,8 +19,17 @@ for(const p of catalog.products.filter(p=>p.entry)){
  if(p.display){const lcd=d.display('lcd');assert.equal(lcd.width,p.display.width);assert.equal(lcd.height,p.display.height);const bytes=new Uint8Array([0xf8,0x00]);lcd.writeRGB565(bytes,{x:0,y:0,w:1,h:1},{swapBytes:true});assert.equal(lcd.buffer[0],255);assert.equal(lcd.buffer[1],0);lcd.fill('#808080',{x:0,y:0,w:1,h:1});assert.ok(Math.abs(lcd.buffer[0]-128)<=1,'CSS color fills must store sRGB bytes');}
  const cadBox=new THREE.Box3();let cadCount=0;d.root.traverse(o=>{if(o.isMesh&&o.userData.source==='official-structure'){cadBox.expandByObject(o);cadCount++;}});
  if(cadCount){const size=cadBox.getSize(new THREE.Vector3()),expected=p.cadEnvelopeMm??p.nominalMm;expected.forEach((v,i)=>assert.ok(Math.abs(size.getComponent(i)-v)<.3,`${p.id}: official selected assembly axis ${i}, ${size.getComponent(i)} vs ${v}`));}
- if(p.display){const lcd=d.display('lcd');const origin=lcd.object3d.getWorldPosition(new THREE.Vector3()).add(new THREE.Vector3(0,0,100));const ray=new THREE.Raycaster(origin,new THREE.Vector3(0,0,-1));const visible=ray.intersectObject(d.root,true).filter(h=>h.object.isMesh&&h.object.material?.opacity!==0);assert.ok(visible[0]?.object===lcd.panel,`${p.id}: framebuffer center obscured by ${visible[0]?.object.name}`);}
- if(p.display){const lcd=d.display('lcd'),origin=lcd.object3d.getWorldPosition(new THREE.Vector3());const [w,h]=lcd.size;const points=p.display.shape==='circle'?[[0,0],[.45,0],[-.45,0],[0,.45],[0,-.45]]:[[-.48,-.48],[.48,-.48],[-.48,.48],[.48,.48]];for(const [x,y]of points){const ray=new THREE.Raycaster(lcd.object3d.localToWorld(new THREE.Vector3(w*x,h*y,100)),new THREE.Vector3(0,0,-1));const visible=ray.intersectObject(d.root,true).filter(h=>h.object.isMesh&&h.object.material?.opacity!==0);assert.ok(visible[0]?.object===lcd.panel,`${p.id}: display edge ${x},${y} obscured by ${visible[0]?.object.name}`);}}
+ if(p.display){
+  const lcd=d.display('lcd'),[w,h]=lcd.size;
+  const direction=new THREE.Vector3(0,0,-1).transformDirection(lcd.object3d.matrixWorld);
+  const points=p.display.shape==='circle'?[[0,0],[.45,0],[-.45,0],[0,.45],[0,-.45]]:[[0,0],[-.48,-.48],[.48,-.48],[-.48,.48],[.48,.48]];
+  for(const [x,y]of points){
+   // Screens may face any side; cast along the actual display's local normal.
+   const origin=lcd.object3d.localToWorld(new THREE.Vector3(w*x,h*y,100));
+   const visible=new THREE.Raycaster(origin,direction).intersectObject(d.root,true).filter(h=>h.object.isMesh&&h.object.material?.opacity!==0);
+   assert.ok(visible[0]?.object===lcd.panel,`${p.id}: display ${x},${y} obscured by ${visible[0]?.object.name}`);
+  }
+ }
  if(p.category==='unit'){
   const box=new THREE.Box3();d.root.traverse(o=>{if(o.isMesh&&o.material?.opacity!==0)box.expandByObject(o);});const size=box.getSize(new THREE.Vector3());(p.visualEnvelopeMm??p.nominalMm).forEach((n,i)=>assert.ok(Math.abs(size.getComponent(i)-n)<.3,`${p.id}: envelope ${i}, actual ${size.getComponent(i)} vs ${n}`));
   const hy=-p.nominalMm[1]/2+12;

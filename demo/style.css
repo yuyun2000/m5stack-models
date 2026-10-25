@@ -6,6 +6,8 @@
 .dynamics-heading{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:18px}
 .dynamics-heading .eyebrow{margin-bottom:7px}.dynamics h3{font-size:20px;color:var(--m5-blue);margin:0}.dynamics-heading>span{color:#707070;font-size:11px}
 .dynamics-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px 32px}.dynamics h4{font-size:14px;font-weight:600;margin:0 0 10px;color:#434343}
+.tools{flex-wrap:wrap;align-items:center}
+#display-target{max-width:190px;padding:5px 7px;border:1px solid #e5e5e5;border-radius:6px;background:#fff;color:#555;font:inherit;font-size:10px}
 .control-note{font-size:11px;color:#707070;line-height:1.7;margin:8px 0 12px}.connection-selects{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .connection-selects label{font-size:11px;color:#707070}.connection-selects select{display:block;width:100%;padding:8px;margin-top:5px;border:1px solid #e5e5e5;border-radius:6px;background:#fff;color:#434343;font:inherit}
 .connection-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:12px}.dynamics button{font-size:11px;border:1px solid #e5e5e5;color:#555;padding:8px 12px;background:#fff}.dynamics button:disabled{opacity:.45;cursor:default}.dynamics button:hover:not(:disabled){color:var(--m5-blue);background:#f5f7f6}.dynamics .action-primary{background:var(--m5-blue);color:#fff;border-color:var(--m5-blue)}.dynamics .action-primary:hover:not(:disabled){background:#0295e9;color:#fff}.connection-actions output{font-size:11px;color:#707070}

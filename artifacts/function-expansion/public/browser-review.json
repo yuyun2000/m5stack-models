@@ -1,0 +1,353 @@
+{
+  "checkedAt": "2026-10-25T19:30:32.110Z",
+  "baseUrl": "http://127.0.0.1:5188",
+  "browserCases": 21,
+  "actions": [
+    {
+      "case": "Current-build Roller485 seven rendered views",
+      "pass": true
+    },
+    {
+      "case": "Actual canvas mouse presses and releases the native bottom flexure",
+      "pass": true,
+      "down": {
+        "pressed": true
+      },
+      "up": {
+        "pressed": false
+      }
+    },
+    {
+      "case": "Native bottom flexure press/release through public demo controls",
+      "pass": true,
+      "down": {
+        "pressed": true
+      },
+      "up": {
+        "pressed": false
+      }
+    },
+    {
+      "case": "Actual output rotor angle control",
+      "pass": true,
+      "state": {
+        "angleDeg": 90,
+        "targetAngleDeg": 90,
+        "rpm": 0,
+        "transitioning": false,
+        "mode": "continuous",
+        "continuous": true,
+        "rangeDeg": null,
+        "visualRangeDeg": null,
+        "demoRpmMax": 60
+      }
+    },
+    {
+      "case": "Explicit continuous rpm and stationary stop",
+      "pass": true,
+      "state": {
+        "angleDeg": 102,
+        "targetAngleDeg": 102,
+        "rpm": 0,
+        "transitioning": false,
+        "mode": "continuous",
+        "continuous": true,
+        "rangeDeg": null,
+        "visualRangeDeg": null,
+        "demoRpmMax": 60
+      }
+    },
+    {
+      "case": "Independent rgb-1 visual light",
+      "pass": true,
+      "state": {
+        "color": "#22b477",
+        "brightness": 0.7
+      }
+    },
+    {
+      "case": "Independent rgb-2 visual light",
+      "pass": true,
+      "state": {
+        "color": "#4488ff",
+        "brightness": 0.7
+      }
+    },
+    {
+      "case": "Single red indicator has a fixed-color control",
+      "pass": true
+    },
+    {
+      "case": "Standalone bottom OLED receives external calibration",
+      "pass": true
+    },
+    {
+      "case": "IR is excluded from visible LED controls",
+      "pass": true
+    },
+    {
+      "case": "Host connects actual Roller485 with rendered cable",
+      "pass": true
+    },
+    {
+      "case": "Recursive display selector lists host and Unit",
+      "pass": true,
+      "options": [
+        "lcd",
+        "grove/lcd"
+      ]
+    },
+    {
+      "case": "Nested OLED selected by full path",
+      "pass": true
+    },
+    {
+      "case": "Target switch preserves independent host calibration state",
+      "pass": true
+    },
+    {
+      "case": "Both real screens can hold independent calibration frames",
+      "pass": true
+    },
+    {
+      "case": "Rotating slip-ring Grove supports real nested ENV III",
+      "pass": true,
+      "state": {
+        "angleDeg": 90,
+        "targetAngleDeg": 90,
+        "rpm": 0,
+        "transitioning": false,
+        "mode": "continuous",
+        "continuous": true,
+        "rangeDeg": null,
+        "visualRangeDeg": null,
+        "demoRpmMax": 60
+      }
+    },
+    {
+      "case": "Selected screen subtree removal falls back to live host",
+      "pass": true
+    },
+    {
+      "case": "Screenless host starts without calibration target",
+      "pass": true
+    },
+    {
+      "case": "Screenless host can select its attached OLED",
+      "pass": true
+    },
+    {
+      "case": "Last display removal disables calibration",
+      "pass": true
+    },
+    {
+      "case": "Actual Chrome AltLeft drives CardKB Sym press/release",
+      "pass": true,
+      "down": {
+        "pressed": true
+      },
+      "up": {
+        "pressed": false
+      }
+    }
+  ],
+  "logs": [
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x114000cea00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x114000cea00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x114000cea00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x114000cea00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
+    }
+  ],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:5188/assets/index-DUfIhopB.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/index-CxyKz0IJ.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/parts-BJf3DJM_.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/grove-cable-CYpHiiK9.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/VisualJoint-BTEhdSlI.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/core-D93Q0znA.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/Led-Bkj7Ufyg.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/roller485-DO-VJrw5.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/cad-BqO0oqsA.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/index-DUfIhopB.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/index-CxyKz0IJ.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/core-D93Q0znA.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/parts-BJf3DJM_.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/Led-Bkj7Ufyg.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/cad-BqO0oqsA.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/actuators-DHmr_bie.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/connectors-De4remPm.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/sticks3-DY7XIteA.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/grove-cable-CYpHiiK9.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/VisualJoint-BTEhdSlI.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/roller485-DO-VJrw5.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/parts-BS_Z3H4o.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/env-iii-DJwGdUeV.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/ClassicUnit-D61DGZ7d.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/index-DUfIhopB.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/index-CxyKz0IJ.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/core-D93Q0znA.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/parts-BJf3DJM_.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/Led-Bkj7Ufyg.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/nanoc6-DzX7KyI3.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/cad-BqO0oqsA.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/connectors-De4remPm.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/actuators-DHmr_bie.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/VisualJoint-BTEhdSlI.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/grove-cable-CYpHiiK9.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/roller485-DO-VJrw5.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/index-DUfIhopB.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/index-CxyKz0IJ.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/Led-Bkj7Ufyg.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/core-D93Q0znA.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/grove-cable-CYpHiiK9.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/parts-BJf3DJM_.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/cardkb-Q0cmJZt7.js",
+      "status": 200
+    }
+  ],
+  "httpFailures": [],
+  "applicationRequestFailures": [],
+  "mediaScope": "Native stage canvas screenshots only; no downloaded official photo pixels or reference-comparison captures."
+}

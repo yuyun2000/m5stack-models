@@ -2,7 +2,8 @@ import assert from 'node:assert/strict';
 import crypto from 'node:crypto';
 import {pathToFileURL} from 'node:url';
 import * as THREE from 'three';
-import {loadModel} from '../src/loaders.js';
+import {loadModel,implementedModelIds} from '../src/loaders.js';
+import {Led} from '../src/core/components/Led.js';
 
 const SPECS={
  'cardputer-adv':{position:[35.25,10.45,7.8],package:'StampS3A RGB package'},
@@ -16,7 +17,8 @@ const energy=color=>color.r*color.r+color.g*color.g+color.b*color.b;
 export async function checkHostVisibleLeds(){
  const previousDocument=globalThis.document;
  if(!previousDocument){const noop=()=>{},ctx=new Proxy({measureText:()=>({width:20}),createLinearGradient:()=>({addColorStop:noop}),createRadialGradient:()=>({addColorStop:noop})},{get:(o,k)=>o[k]??noop,set:(o,k,v)=>(o[k]=v,true)});globalThis.document={createElement:()=>({getContext:()=>ctx})};}
- const models=[],cases=[],owned=new Map();
+ const models=[],cases=[],owned=new Map(),visibleDefaults=[];
+ let invisibleState;
  try{
   for(const [id,spec]of Object.entries(SPECS)){
    const model=await loadModel(id);models.push(model);model.root.updateMatrixWorld(true);
@@ -49,12 +51,45 @@ export async function checkHostVisibleLeds(){
    cases.push({id,led:'stamp-rgb',emitterCount:1,apertureRays:7,positionMm:spec.position,geometryMeshes:transforms.size,scope:'External RGB state and source-slot appearance; package dimensions/depth remain photo-derived'});
   }
   const first=models[0].led('stamp-rgb'),second=models[1].led('stamp-rgb');assert.ok(first.lens.material!==second.lens.material);first.set({color:'#44bb88',brightness:.8});assert.equal(second.brightness,0,'Independent products do not share emitting state');
+  // IR keeps its public ID/commands and physical lens, without inventing
+  // visible emission or a camera/infrared optical simulation.
+  const fixture=new Led({id:'invisible-probe',invisible:true,mesh:new THREE.Mesh(new THREE.BoxGeometry(1,1,1),new THREE.MeshStandardMaterial({emissive:0x884422}))});
+  try{
+   assert.equal(energy(fixture.lensMaterial.emissive),0,'Invisible custom lenses suppress pre-existing emission immediately');
+   for(const state of [true,'#22b477',{color:'#ff2020',brightness:1},{brightness:.25},false]){
+    fixture.set(state);assert.equal(energy(fixture.lensMaterial.emissive),0);assert.equal(fixture.glow.visible,false);assert.equal(fixture.glow.material.opacity,0);assert.equal(fixture.lens.visible,true);
+   }
+  }finally{fixture.dispose();}
+  const stick=await loadModel('sticks3');models.push(stick);
+  const ir=stick.led('irTx'),irGeometry=hash(ir.lens.geometry),irPosition=ir.object3d.position.toArray(),irEvents=[];stick.on('input',event=>irEvents.push(event));
+  assert.equal(ir.invisible,true);assert.ok(stick.list('led').includes(ir),'Legacy IR component remains addressable');
+  stick.handle({type:'led',target:'irTx',color:'#bb3344',brightness:.75});
+  assert.deepEqual(ir.getState(),{color:'#bb3344',brightness:.75});assert.equal(energy(ir.lensMaterial.emissive),0);assert.equal(ir.glow.visible,false);assert.equal(ir.glow.material.opacity,0);assert.equal(ir.lens.visible,true);
+  assert.equal(hash(ir.lens.geometry),irGeometry);assert.deepEqual(ir.object3d.position.toArray(),irPosition);assert.equal(irEvents.length,0);
+  invisibleState={id:'sticks3/irTx',commandedState:ir.getState(),humanVisibleEmission:false,lensPreserved:true};
+  // Every default visible emitter in the current lazy-loader inventory keeps
+  // its existing set/handle/on/off behavior; this is not a geometry suite.
+  for(const id of implementedModelIds){
+   const model=await loadModel(id);
+   try{
+    const leds=model.list('led').filter(led=>!led.invisible),events=[];model.on('input',event=>events.push(event));
+    for(const led of leds){
+     assert.equal(led.brightness,0,`${id}/${led.path}: default off remains unchanged`);
+     model.handle({type:'led',target:led.path,color:'#22b477',brightness:.4});
+     const expectedColor=led.meta.colorMode==='fixed-red'?'#ff2820':'#22b477';
+     assert.deepEqual(led.getState(),{color:expectedColor,brightness:.4});assert.ok(energy(led.lensMaterial.emissive)>0);assert.equal(led.glow.visible,true);assert.ok(led.glow.material.opacity>0);
+     model.handle({type:'led',target:led.path,on:false});assert.equal(led.brightness,0);assert.equal(energy(led.lensMaterial.emissive),0);assert.equal(led.glow.visible,false);
+     visibleDefaults.push({id,led:led.path});
+    }
+    assert.equal(events.length,0,'External visible light commands remain output-only');
+   }finally{model.dispose();}
+  }
  }finally{
   for(const model of models)model.dispose();
   if(!previousDocument)delete globalThis.document;
  }
  assert.ok([...owned.values()].every(count=>count===1),'Each owned emitter geometry/lens material/glow material is released exactly once');
- return {status:'pass',cases,ownedEmitterResources:owned.size,resourceDisposal:'Owned emitter geometry and materials exactly once; core shared glow texture lifecycle is outside this product check',scope:'Actual Cardputer-ADV/StamPLC external LED API, original aperture rays, unchanged geometry, transformed frames and independent resource ownership. Canvas boundary stub only; no GPIO38 gating, firmware, boot sequence, physical optical/diffusion or hardware proof'};
+ return {status:'pass',cases,invisibleState,defaultVisibleEmitters:visibleDefaults,ownedEmitterResources:owned.size,resourceDisposal:'Owned emitter geometry and materials exactly once; core shared glow texture lifecycle is outside this product check',scope:'Actual external LED API, invisible IR state without human-visible emission, default visible emitters, original aperture rays, unchanged geometry, transformed frames and independent resource ownership. Canvas boundary stub only; no camera/IR optics, GPIO38 gating, firmware, boot sequence, physical optical/diffusion or hardware proof'};
 }
 
 if(process.argv[1]&&pathToFileURL(process.argv[1]).href===import.meta.url)console.log('PASS visible host LEDs:',JSON.stringify(await checkHostVisibleLeds()));

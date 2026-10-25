@@ -1,0 +1,53 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U182_Unit_Roller485/Structures/Unit_Roller485.stl",
+  "origin": [
+    -1.0872135162353516,
+    0,
+    -22.25
+  ],
+  "axes": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ],
+  "parts": [
+    {
+      "component": 1,
+      "name": "Roller485 native rotating expansion plate",
+      "material": "shell"
+    },
+    {
+      "component": 2,
+      "name": "Roller485 native fixed OLED face shell",
+      "material": "shell"
+    },
+    {
+      "component": 4,
+      "name": "Roller485 native fixed motor seat shell",
+      "material": "shell"
+    },
+    {
+      "component": 6,
+      "name": "Roller485 native rotating power light guide",
+      "material": "lens"
+    },
+    {
+      "component": 9,
+      "name": "Roller485 native fixed RGB diffuser",
+      "material": "lens"
+    }
+  ],
+  "coordinateConvention": "Millimetres; +Y physical rotating top, fixed Grove faces +Z; OLED is the opposite bottom (-Y)"
+}

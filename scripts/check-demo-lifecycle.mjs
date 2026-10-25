@@ -102,6 +102,7 @@ async function checkNestedGroveDemo(){
   host=await loadModel('sticks3');host.on('input',event=>events.push(event));
   panel=new DynamicsPanel(container,{catalog:{products:['hub','key','fan'].map(id=>({id,name:id,category:'unit',entry:true}))},viewer:{on:()=>()=>{},fit:noop,focus:noop,requestRender:noop},onGeometryChange:noop});
   panel.bind(host,{id:'sticks3'});assert.deepEqual(options('#grove-port'),['grove']);
+  assert.equal(host.led('irTx').invisible,true);assert.ok(!options('#led-target').includes('irTx'),'Invisible IR stays addressable but is absent from visible-light controls');assert.equal(ui['#led-section'].hidden,true,'An IR-only host has no visible-light panel');cases.push('invisible-host-emitter-excluded-from-visible-light-controls');
   choose('#grove-unit','hub');await ui['#grove-connect'].onclick();
   assert.deepEqual(options('#grove-port'),['grove','grove/grove-1','grove/grove-2','grove/grove-3'],'all HUB outputs become selectable, excluding the occupied upstream input');
   assert.equal(selected('#grove-port'),'grove','attaching preserves a still valid selected host socket');

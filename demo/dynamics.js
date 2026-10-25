@@ -163,6 +163,8 @@ export class DynamicsPanel {
     }
     const state = led.getState(), percentage = Math.round(state.brightness * 100);
     this.$('#led-color').value = state.color;
+    this.$('#led-color').disabled = led.meta.colorMode === 'fixed-red';
+    this.$('#led-color').title = led.meta.colorMode === 'fixed-red' ? '此器件为固定红光' : '';
     const brightness = this.$('#led-brightness');
     if (brightness) { brightness.value = state.brightness * 100; brightness.nextElementSibling.textContent = `${percentage}%`; }
     const output = this.$('#led-state');
@@ -320,7 +322,7 @@ export class DynamicsPanel {
       });
       group.append(reset, status); joints.append(group);
     }
-    const leds = this.model.list('led');
+    const leds = this.model.list('led').filter(led => !led.invisible);
     this.$('#led-section').hidden = !leds.length;
     this.$('#led-target').replaceChildren(...leds.map(led => new Option(`${led.label} / ${led.path}`, led.path)));
     if (leds.some(led => led.path === previousLed)) this.$('#led-target').value = previousLed;

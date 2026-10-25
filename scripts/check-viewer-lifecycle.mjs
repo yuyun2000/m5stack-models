@@ -29,6 +29,8 @@ async function fixture(){
   listenerCount(){return [...this.listeners.values()].reduce((sum,set)=>sum+set.size,0);}
  }
  const document=new Target();document.hidden=false;document.activeElement=null;
+ const noop=()=>{},context=new Proxy({createRadialGradient:()=>({addColorStop:noop}),measureText:()=>({width:20})},{get:(object,key)=>object[key]??noop});
+ document.createElement=()=>({getContext:()=>context});
  class Canvas extends Target{
   constructor(){super();this.tagName='CANVAS';this.captures=new Set();this.clientHeight=400;}
   focus(){const old=document.activeElement;if(old!==this){document.activeElement=this;old?.dispatch('blur');}}
@@ -100,8 +102,48 @@ async function fixture(){
  const finalHost=new Board();finalHost.ensureBuilt();const finalSubscriptions=monitorSubscriptions(finalHost),dying=makeViewer();dying.mount(finalHost,{fit:false});key(dying,'KeyH');finalHost.on('input',event=>{if(event.id==='host'&&event.action==='up'&&event.cancelled)dying.mount(finalHost,{fit:false});});dying.dispose();
  assert.equal(dying.devices.size,0);assert.equal(finalHost.viewer,null);assert.equal(finalHost.root.parent,null);assert.equal(finalHost.button('host').pressed,false);assert.deepEqual(finalSubscriptions,{input:1,will:0},'Only the external consumer remains; the disposed Viewer has no subscriptions');dying.dispose();assert.throws(()=>dying.mount(finalHost),/disposed DeviceViewer/);finalHost.dispose();
  checks.push('disposing Viewer cannot be revived by cancelled-up and disposal is idempotent');
+
+ // Use the real U035-B model/keymap: direct Button calls do not exercise a
+ // browser's altKey flag on the documented AltLeft -> Sym shortcut.
+ const {Model:CardKB}=await import('../src/units/cardkb/index.js');
+ const card=new CardKB(),cardViewer=makeViewer(),keyboardEvents=[];
+ cardViewer.mount(card,{fit:false});card.on('input',event=>keyboardEvents.push(event));
+ const sym=card.button('key-sym'),cardCanvas=cardViewer.renderer.domElement;
+ const keyboard={sku:'U035-B',positiveShortcuts:[],blockedCases:[],cancelActions:{}};
+ const dispatchKey=(type,code,flags={})=>window.dispatch(type,{code,key:code.startsWith('Alt')?'Alt':code,target:cardCanvas,repeat:false,altKey:false,metaKey:false,ctrlKey:false,...flags});
+ const shortcut=(code,target,flags={})=>{
+  cardCanvas.focus();const start=keyboardEvents.length,button=card.button(target),down=dispatchKey('keydown',code,flags);
+  assert.equal(down.defaultPrevented,true,`${code}: mapped focused shortcut consumes keydown`);assert.equal(button.pressed,true,`${code}: real keyboard route presses its target`);
+  card.update(1);assert.equal(button.getActuationState().depthMm,.2,`${code}: actual CardKB cap reaches its full visual stroke`);
+  const up=dispatchKey('keyup',code);card.update(1);
+  assert.equal(up.defaultPrevented,undefined,`${code}: paired keyup uses the existing release route without consuming default`);assert.equal(button.pressed,false);assert.equal(button.getActuationState().depthMm,0,`${code}: cap returns exactly`);
+  assert.deepEqual(keyboardEvents.slice(start).map(event=>event.action),['down','up','click']);keyboard.positiveShortcuts.push({code,target,travelMm:.2,exactReturn:true});
+ };
+ shortcut('AltLeft','key-sym',{altKey:true});shortcut('KeyQ','key-q');shortcut('F1','key-fn');shortcut('ShiftLeft','key-shift',{shiftKey:true});
+ const blocked=(label,code,flags={})=>{
+  const start=keyboardEvents.length,down=dispatchKey('keydown',code,flags),up=dispatchKey('keyup',code,flags);
+  assert.equal(down.defaultPrevented,undefined,`${label}: ignored keydown preserves browser default`);assert.equal(up.defaultPrevented,undefined,`${label}: ignored keyup preserves browser default`);assert.equal(keyboardEvents.length,start,`${label}: no physical input intent`);assert.equal(sym.pressed,false,`${label}: Sym stays released`);keyboard.blockedCases.push(label);
+ };
+ cardCanvas.focus();const altMapping=card.keymap.AltLeft;delete card.keymap.AltLeft;
+ blocked('unmapped standalone AltLeft','AltLeft',{altKey:true});card.keymap.AltLeft='sensor';blocked('AltLeft mapped to a non-button','AltLeft',{altKey:true});card.keymap.AltLeft=altMapping;
+ blocked('unmapped standalone AltRight','AltRight',{altKey:true});blocked('Alt+Q chord','KeyQ',{altKey:true});blocked('Meta+Q chord','KeyQ',{metaKey:true});blocked('Ctrl+Q chord','KeyQ',{ctrlKey:true});blocked('Meta+AltLeft chord','AltLeft',{metaKey:true,altKey:true});blocked('Ctrl+AltLeft chord','AltLeft',{ctrlKey:true,altKey:true});
+ for(const tagName of ['INPUT','TEXTAREA','SELECT']){const editable=new Target();editable.tagName=tagName;document.activeElement=editable;blocked(`AltLeft in ${tagName}`,'AltLeft',{altKey:true,target:editable});}
+ const editable=new Target();editable.isContentEditable=true;document.activeElement=editable;blocked('AltLeft in contenteditable','AltLeft',{altKey:true,target:editable});
+ document.activeElement=new Target();blocked('AltLeft outside focused canvas','AltLeft',{altKey:true});blocked('Q outside focused canvas','KeyQ');
+ cardCanvas.focus();const unmatchedStart=keyboardEvents.length,unmatched=dispatchKey('keyup','AltLeft');assert.equal(unmatched.defaultPrevented,undefined,'Unheld Alt keyup does not consume default');assert.equal(keyboardEvents.length,unmatchedStart);keyboard.blockedCases.push('unheld AltLeft keyup');
+ const cancelAlt=(label,cancel)=>{
+  cardCanvas.focus();const start=keyboardEvents.length;dispatchKey('keydown','AltLeft',{altKey:true});card.update(1);assert.equal(sym.pressed,true);assert.equal(sym.getActuationState().depthMm,.2);
+  cancel();card.update(1);const actions=keyboardEvents.slice(start);
+  assert.equal(sym.pressed,false);assert.equal(sym.getActuationState().depthMm,0,`${label}: cancelled cap returns exactly`);assert.deepEqual(actions.map(event=>event.action),['down','up'],`${label}: cancellation cannot become click`);assert.equal(actions[1].cancelled,true);assert.equal(actions[1].id,'key-sym');
+  const lateUp=dispatchKey('keyup','AltLeft');assert.equal(lateUp.defaultPrevented,undefined,`${label}: late unheld keyup preserves default`);assert.equal(keyboardEvents.length,start+2);keyboard.cancelActions[label]=actions.map(event=>({id:event.id,action:event.action,cancelled:!!event.cancelled}));
+ };
+ cancelAlt('blur',()=>window.dispatch('blur'));cancelAlt('unmount',()=>cardViewer.unmount(card));cardViewer.dispose();
+ // Global keyboard mode keeps its historical behavior, but cannot claim a
+ // standalone Alt shortcut unless this viewer's canvas is actually focused.
+ const globalViewer=new DeviceViewer({clientWidth:500,clientHeight:400,appendChild(){}},{environment:false,shadows:false,ground:false,keyboard:true});globalViewer.mount(card,{fit:false});document.activeElement=new Target();blocked('AltLeft with unfocused global-keyboard viewer','AltLeft',{altKey:true,target:document.activeElement});globalViewer.dispose();card.dispose();
+ checks.push('actual CardKB AltLeft Sym keyboard stroke and exact release','standalone mapped Alt requires focused canvas and a real button','modifier chords and editable/unfocused targets preserve browser defaults','Alt hold cancels without click on blur or unmount');
  assert.ok([...owned.values()].every(count=>count===1),'all fixture-owned geometry/material released exactly once');assert.ok(renderers.every(r=>r.disposals===1&&r.domElement.removed&&r.domElement.listenerCount()===0),'all renderer/canvas/listener lifetimes end exactly once');assert.ok(observers.every(o=>o.disconnected));assert.equal(window.listenerCount(),0);assert.equal(document.listenerCount(),0);assert.equal(frames.size,0,'all Viewer RAF callbacks cancelled');
- return {checkedAt:new Date().toISOString(),status:'pass',checks,ownedResources:owned.size,rendererInstances:renderers.length,oldNestedCancellationPath:'left/next/press',singleTickDegreesPer100msAt60Rpm:36,scope:'Actual DeviceViewer lifecycle/input/RAF code with an isolated no-GPU renderer and DOM fixture; no browser pixels, private research, network, firmware or hardware simulation'};
+ return {checkedAt:new Date().toISOString(),status:'pass',checks,ownedResources:owned.size,rendererInstances:renderers.length,oldNestedCancellationPath:'left/next/press',singleTickDegreesPer100msAt60Rpm:36,cardkbKeyboard:keyboard,scope:'Actual DeviceViewer lifecycle/input/RAF code and CardKB shortcuts with an isolated no-GPU renderer and DOM fixture; no browser pixels, private research, network, firmware or hardware simulation'};
 }
 
 if(process.argv[1]&&pathToFileURL(process.argv[1]).href===import.meta.url){

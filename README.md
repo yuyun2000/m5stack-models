@@ -1,20 +1,22 @@
 # m5stack-models.js
 
-基于 Three.js 与 [sticks3.js](https://github.com/MarsTechHAN/sticks3.js) 建模方法的 M5Stack 毫米尺度交互模型库。当前包含 **14 款主机、28 款 Unit，共 42 款模型**；全部保持 `modeled`，逐款精细外观验收尚未完成。
+基于 Three.js 与 [sticks3.js](https://github.com/MarsTechHAN/sticks3.js) 建模方法的 M5Stack 毫米尺度交互模型库。当前包含 **14 款主机、29 款 Unit，共 43 款模型**；全部保持 `modeled`，逐款精细外观验收尚未完成。
 
 模型提供实体按键按下／回弹、稳定开关、旋转／倾斜关节、Grove 插头与四芯线缆，以及由外部指定的灯光。屏幕接收外部帧缓冲，控件输出输入意图；固件、电气、协议和传感器行为由下游系统提供。
 
-![本轮 AtomS3R 实体补件](artifacts/atoms3r-ir/overview.jpg)
+![Roller485实体、OLED与递归Grove接线](artifacts/function-expansion/overview.jpg)
 
-本轮补上 AtomS3R 顶部 IR 开口后的真实光学封装、端子与局部 PCB 支承，保留官方壳体与开孔。此前此处可穿过整机看到对侧内壁；现在原窗口首先命中凹入的暗色光学实体。推导封装经原壳三角面避让复核，双键、LCD 与 Grove 接口保持原有 API。
+本轮新增标准滑环版 **Unit Roller485 U182**：保留官方装配壳，补齐电机桶、PCB、OLED深度与真实连接器。转盘、外转子、顶端 Grove 与红灯沿 `rotor` 一起转动，底部 OLED、弹舌按键和固定接口保持原位。顶端可以继续接 Unit，线缆端点跟随移动接口。
 
-[顶窗近照](artifacts/atoms3r-ir/atoms3r-top.png) · [实体按键压放](artifacts/atoms3r-ir/button-press.gif) · [当前独立验证](artifacts/atoms3r-ir/public/review.json)
+[转盘动效](artifacts/function-expansion/rotor.gif) · [原生弹舌按压／回弹](artifacts/function-expansion/roller-press.gif) · [当前独立验证](artifacts/function-expansion/public/review.json)
 
-IR 封装、引脚、支承尺寸和安装深度包含照片推导。模型不增加可见红灯，也不模拟 IR 信号。内部绿色下载灯的外部光学位置和另一顶边窄槽用途仍待确认，保留原槽；**贴纸继续等待原文件，不用照片裁图遮缺件。**
+本轮还修复首次 `getState()` 的懒构建、CardKB 显式 Sym／AltLeft 输入，以及 StickS3 红外透镜误发可见红光。demo 可按完整路径选择主机和嵌套 Unit 屏幕，分别写外部校准帧；连接、拆卸和同名组件替换不会清空其他屏已有像素。
 
-当前私有和公开构建均通过，公开浏览器覆盖七视图、实际 IR 顶窗近照、两键控件与真实 canvas 按下/释放、外部 LCD 帧缓冲、Grove 接线和完整输入路径。两键释放后 RGB 像素精确回位；帧缓冲比较限定在 LCD 区域。源码、命令、截图、动作和来源审计见上述独立验证记录。光学/电气/制造配合与有限数字采样分别判断，产品阶段仍为 `modeled`。
+当前公开构建通过 `npm run check`、`npm run build` 与预览健康检查；新构建后的七视图及 21 项实际浏览器场景通过。证据包含真实 canvas 鼠标压放、转盘角度／rpm停止、独立灯光、双屏帧缓冲与递归接线。截图隐藏工具栏，屏幕变化来自实际显示区域；按键与灯光释放后 RGB 像素精确回位。原始记录保留软件 GL ReadPixels warning 和隐式 favicon 404，应用运行及模型请求错误为0。
 
-StackChan 的隐藏实体交叠和全局装配基准仍未解决。本轮不改变其壳、轴或安装位置。前一轮 Color/Light 可见功能与轴形证据保存在 `artifacts/unit-functions/`，更早结果保留其各自快照。
+隐藏 PCB、显示支撑与部分连接器尺寸为外观推导；0.25 mm 弹舌自由端行程是视觉估计。任意姿态需调用方选择安全线缆弯向，模型不做碰撞求解。StackChan 的隐藏装配交叠与全局基准仍未解决。有限数字采样和浏览器效果不证明制造配合或实物运行。
+
+**贴纸继续等待原文件，不用照片裁图遮缺件。** 既有 AtomS3R 实体补件与前期证据保留各自历史快照，本轮原始来源见 [source-manifest.json](source-manifest.json)。
 
 ## 本地运行
 
