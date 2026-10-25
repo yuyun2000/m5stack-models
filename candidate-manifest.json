@@ -1,9 +1,9 @@
 {
   "format": "m5stack-models-public-candidate-v1",
   "preparedAt": "2026-10-25T13:20:33.076Z",
-  "sourceCommit": "6c815811ebb2b5ba33724b2f1119d27d0447ae38",
+  "sourceCommit": "069b1a684f2fa374cc3c6f0adb04c80b23c85aee",
   "sourceFiles": {
-    "catalog/products.json": "d34b0723b514bba0b0268ea653b4e10097b613f7192ceb2f780b32a0bcc64b09",
+    "catalog/products.json": "d806d632025a2f55d6f9121fb259bb15592a241ab6dbd45e6d42d022726870f7",
     "demo/dynamics.js": "7b94d003dd355009b358969306c930be88377195ae6dc24bc87e9a17d130bda5",
     "demo/index.html": "595befce3c41879941862fc8dabb80f89f6aaadf09e3126b579f50bac1e029bf",
     "demo/main.js": "25d8b13773e154c47db357bb02b322c219512332baf997e147b63a80d4dc08e3",
@@ -15,7 +15,7 @@
     "package-lock.json": "41f333290927c81ec95f505dbb3e70cee3890c00be5caaf7a28284658f93dacb",
     "package.json": "93de57b07e67edd603e98c34fbe345946161c44909ab12ba1535c7fefe18cf3d",
     "scripts/catalog.mjs": "07256b426f864067c701a29303470556867d7db6c616ab02afbd30885b29b4c5",
-    "scripts/check-atoms3r-closure.mjs": "3b887b3ec43c6f68c1d2f0bdbbe38d5ab578b6e54fcde86ee6ff9aa873b83503",
+    "scripts/check-atoms3r-closure.mjs": "d13681f1541082fdf137ffc7a806fd3706c8d22c6e71451ba7aa172c0c495edd",
     "scripts/check-button-actuation.mjs": "f5ca09f3d24ddb3e95ad3732ff5b1bd4a9936c1a6dd3e5afd7f52516f00f7986",
     "scripts/check-cardputer-zero-assembly.mjs": "33093ac3b3fa4822f7d9e270273d1e593dadbde604a3e335fbbb647b791d12d8",
     "scripts/check-classic-unit-connectors.mjs": "6e1309d8154f21164370c44cdbcf05c6fc2f83ed3ffbf5e465df225f01e31262",
@@ -58,7 +58,7 @@
     "src/devices/atoms3r/cad-map.json": "745237c8f5132f4d08ec5ef86245ddba9743b22a227a3cffe2336c8b26077433",
     "src/devices/atoms3r/dimensions.js": "0a2051f45fd5301785245e2fd51e8f63bc5f5b6e8fa39d22d3b0cc3e44619dd4",
     "src/devices/atoms3r/geometry-data.js": "022a09518501c28d3e54458434e69c68ae25373cb1a91c6c60e06a9e225232f9",
-    "src/devices/atoms3r/index.js": "ef5dacc2e12893273af100a638a2b8bce5865e2ff24cc0f0435f2e09c3e6b28c",
+    "src/devices/atoms3r/index.js": "c3bd85b9bcaf0ca1558ce9e912a338ed1505648c306257f487453e944275598d",
     "src/devices/cardputer-adv/cad-map.json": "8d73293554e5c9473115a770b6593d95b0da553fef78eb9ee3790276c1572ac6",
     "src/devices/cardputer-adv/dimensions.js": "f85e3b5b2b9e9fb942395cd3977ed5e87001a908ebc10afd4e614408dfce069a",
     "src/devices/cardputer-adv/geometry-data.js": "0ae28a6212b445aa1a3b2bc20ddd8f7973c0cbb398a9cb067dc68b04e7ae1866",
@@ -307,7 +307,10 @@
     "artifacts/unit-functions/light-trim.gif": "c16ced91c04bdf3e56ef71b16dad56377b8afeb53a7899bc69e75122b5365397",
     "artifacts/unit-functions/color-fill.gif": "c58226355f2e0a11a6da1d6ad923c836fe7524f314088ecc92300e7772121f6b",
     "artifacts/unit-functions/shaft-output.png": "ee2d0983156ce357e6cf7a9815df9bc8c65658e250e655477ca3c1be0c12da3c",
-    "artifacts/unit-functions/stick-hub-light.png": "e045232821a4ec4f499cd1effee021e38007bf641d544f4d0c6036af373591e6"
+    "artifacts/unit-functions/stick-hub-light.png": "e045232821a4ec4f499cd1effee021e38007bf641d544f4d0c6036af373591e6",
+    "artifacts/atoms3r-ir/overview.jpg": "0ffaffe343be04ae93d7bc25de9e0b32808370b055783f45211147b3a05755b9",
+    "artifacts/atoms3r-ir/atoms3r-top.png": "9182667fb3c85f29dfa676cfa5897d0f8aae084e57d77d84dca5cc72ff6f4342",
+    "artifacts/atoms3r-ir/button-press.gif": "ef556737ee79b92b48448bde7cf40e62f22a15210bbdcd7170dedc2c3859b61d"
   },
   "transformations": [
     {
@@ -568,7 +571,10 @@
     "artifacts/unit-functions/light-trim.gif",
     "artifacts/unit-functions/color-fill.gif",
     "artifacts/unit-functions/shaft-output.png",
-    "artifacts/unit-functions/stick-hub-light.png"
+    "artifacts/unit-functions/stick-hub-light.png",
+    "artifacts/atoms3r-ir/overview.jpg",
+    "artifacts/atoms3r-ir/atoms3r-top.png",
+    "artifacts/atoms3r-ir/button-press.gif"
   ],
   "verification": "artifacts/interaction-expansion/public/review.json",
   "published": true,
@@ -644,7 +650,7 @@
   },
   "licenseVerifiedAt": "2026-10-25T13:37:28.164885+00:00",
   "publicationRecord": "artifacts/publication.json",
-  "syncedAt": "2026-10-25T17:47:45.575Z",
+  "syncedAt": "2026-10-25T18:26:34.377Z",
   "incrementalRefinement": {
     "sourceCommit": "b6d53bc3b40425a1f6b343d20240245588727397",
     "changedFiles": [
@@ -937,5 +943,57 @@
       }
     },
     "scope": "White fill appearance and physical trimmer-head angle under external control; Relay source conflict retained without a guessed LED; annotated SCS0009 tooth-tip envelope corrected. Relative covers/top IO stay unchanged and no global-registration candidate is merged."
+  },
+  "incrementalAtomIr": {
+    "sourceCommit": "069b1a684f2fa374cc3c6f0adb04c80b23c85aee",
+    "basePublicCommit": "41a9b96715e433402e259bcf316acc9ef92eba13",
+    "preparedAt": "2026-10-25T18:26:34.377Z",
+    "changedFiles": [
+      "src/devices/atoms3r/index.js",
+      "scripts/check-atoms3r-closure.mjs",
+      "catalog/products.json",
+      "artifacts/atoms3r-ir/overview.jpg",
+      "artifacts/atoms3r-ir/atoms3r-top.png",
+      "artifacts/atoms3r-ir/button-press.gif",
+      "source-manifest.json",
+      "candidate-manifest.json"
+    ],
+    "privateEvidenceReportSha256": "1b11d20b2104e035cd41b7e1d470dc7a783639c4a897a61b3abfa04aa7b3dae0",
+    "privateProvenanceSha256": "1da801f2e3751f02ec2205174fc5397ef05810bddc1f54a2d9eb99a33cae2241",
+    "privateEvidenceStatus": "pass-with-recorded-limits",
+    "sourceHashes": {
+      "src/devices/atoms3r/index.js": "c3bd85b9bcaf0ca1558ce9e912a338ed1505648c306257f487453e944275598d",
+      "scripts/check-atoms3r-closure.mjs": "d13681f1541082fdf137ffc7a806fd3706c8d22c6e71451ba7aa172c0c495edd"
+    },
+    "originalEvidence": [
+      "artifacts/atoms3r-ir/overview.jpg",
+      "artifacts/atoms3r-ir/atoms3r-top.png",
+      "artifacts/atoms3r-ir/button-press.gif"
+    ],
+    "transformedOutputHashes": {
+      "src/devices/atoms3r/index.js": "c3bd85b9bcaf0ca1558ce9e912a338ed1505648c306257f487453e944275598d",
+      "scripts/check-atoms3r-closure.mjs": "d13681f1541082fdf137ffc7a806fd3706c8d22c6e71451ba7aa172c0c495edd",
+      "catalog/products.json": "77afc7ed23d94c3b21648ddcc25bd1fb9a21f1c667fc9a9ca778ffcfc8fda832",
+      "artifacts/atoms3r-ir/overview.jpg": "0ffaffe343be04ae93d7bc25de9e0b32808370b055783f45211147b3a05755b9",
+      "artifacts/atoms3r-ir/atoms3r-top.png": "9182667fb3c85f29dfa676cfa5897d0f8aae084e57d77d84dca5cc72ff6f4342",
+      "artifacts/atoms3r-ir/button-press.gif": "ef556737ee79b92b48448bde7cf40e62f22a15210bbdcd7170dedc2c3859b61d",
+      "source-manifest.json": "3916a98fa8512a9c48e7ec706f0d7dd86aea325c21c6c19cef12b8383950ec9f"
+    },
+    "publicVerification": {
+      "status": "pass-with-recorded-limits",
+      "report": "artifacts/atoms3r-ir/public/review.json",
+      "reportSha256": "85d77e106657ec6e166066d512ee77456f817f10d903f9e1a76c129013f2786a",
+      "sourceHashes": 269,
+      "nativeImages": 25,
+      "imageOrigins": {
+        "independentPublicBrowser": 22,
+        "frozenOriginalStageMedia": 3
+      },
+      "browserCases": 11,
+      "sourceAudit": "artifacts/atoms3r-ir/public/source-audit.json",
+      "limits": "Scope-limited digital model checks; all products remain modeled. Physical/manufacturing and optical/electrical behavior are separate.",
+      "evidenceHashes": 6
+    },
+    "scope": "Only AtomS3R IR closure runtime/checker, Atom limitations/nextAction, three original stage renders and curated source facts. All 42 remain modeled. Source commit identifies this incremental batch; unchanged sourceFiles and prior reviews retain their recorded historical provenance and are not revalidated by this sync."
   }
 }

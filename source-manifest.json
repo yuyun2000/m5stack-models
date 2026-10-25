@@ -1,6 +1,6 @@
 {
   "preparedAt": "2026-10-25T13:20:33.030Z",
-  "sourceCommit": "6c815811ebb2b5ba33724b2f1119d27d0447ae38",
+  "sourceCommit": "069b1a684f2fa374cc3c6f0adb04c80b23c85aee",
   "scope": "Factual provenance only; no official reference binaries or MCP source text are included.",
   "upstreams": {
     "sticks3": {
@@ -1827,8 +1827,190 @@
         {
           "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/680/C126_AtomS3R_main_pictures_01.jpg",
           "sha256": "c689eaddc7a906354d5947e2a3cd3315bb39467d5370345fb6783900c1d872c3"
+        },
+        {
+          "url": "https://docs.m5stack.com/en/core/AtomS3R.md",
+          "sha256": "1721eb10ae0c369cd5736da8e7a2b87f8b910f1c5ed86ff13c5ebb87c8a47e6a"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/680/Sch_M5_AtomS3R_v0.4.1.pdf",
+          "sha256": "d1a2b292411174fadf8305c57678fbe232cbb51d9a07868251e5984017a814e6"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3R/download%20mode.gif",
+          "sha256": "1f47f0f1610c64be71427be412dc2a1d1ee7c8d74e0847089baa13d09b2faa04"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/680/C126_AtomS3R_main_pictures_03.jpg",
+          "sha256": "b99ee2e29b98cfeed5f7ddb1db5ca91a7d40e131012ea52cd33da4bc7efc45e3"
         }
-      ]
+      ],
+      "irClosureReview": {
+        "checkedAt": "2026-10-25T18:05:06.960926+00:00",
+        "sourceCommit": "069b1a684f2fa374cc3c6f0adb04c80b23c85aee",
+        "scope": "AtomS3R D2 IR optical-package/lead/support appearance closes the official top window. No visible LED registration, optical/electrical behavior, firmware, physical or manufacturing-fit claim.",
+        "sources": [
+          {
+            "url": "https://docs.m5stack.com/en/core/AtomS3R.md",
+            "sha256": "1721eb10ae0c369cd5736da8e7a2b87f8b910f1c5ed86ff13c5ebb87c8a47e6a",
+            "bytes": 14265,
+            "role": "original-official-product-markdown"
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/680/Sch_M5_AtomS3R_v0.4.1.pdf",
+            "sha256": "d1a2b292411174fadf8305c57678fbe232cbb51d9a07868251e5984017a814e6",
+            "bytes": 445185,
+            "role": "original-official-schematic-pdf"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3R/download%20mode.gif",
+            "sha256": "1f47f0f1610c64be71427be412dc2a1d1ee7c8d74e0847089baa13d09b2faa04",
+            "bytes": 3646369,
+            "role": "original-official-download-demo-gif"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3R/12.webp",
+            "sha256": "46247a9cf25b26ff0ab8e7d9370325687bdfed7f5f7231429ec99fa232e7bd40",
+            "bytes": 12920,
+            "role": "original-official-photograph"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3R/15.webp",
+            "sha256": "957eb81be9b2bee728beb95b21dc2d1c156cb44e8f5bd1492917fcb8e24a5a45",
+            "bytes": 19928,
+            "role": "original-official-photograph"
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/680/C126_AtomS3R_main_pictures_02.jpg",
+            "sha256": "e4cf29d7c8509ba264fb7cf6de558fb827b8b8b9542ebd5046b95c4b9c448991",
+            "bytes": 117765,
+            "role": "original-official-photograph"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3R/7.webp",
+            "sha256": "f444f7c194ad61ab08df9a562f03755d03dda590992e703d0e82f07473074b05",
+            "bytes": 17194,
+            "role": "original-official-photograph"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3R/8.webp",
+            "sha256": "4ee36ac7f1ab4a10bce93d151c4b3e3745971240cf263f16497edd55fffe9818",
+            "bytes": 18186,
+            "role": "original-official-photograph"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3R/10.webp",
+            "sha256": "35521168d5c625ce33c51e874bb539bd1c11e734206f8ac535461e6230e729c0",
+            "bytes": 16926,
+            "role": "original-official-photograph"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3R/11.webp",
+            "sha256": "3b9adb398c4399d692e48eaf8b7712c9d0e9230fc078c72fbcccf60da6913204",
+            "bytes": 8270,
+            "role": "original-official-photograph"
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/680/C126_AtomS3R_main_pictures_01.jpg",
+            "sha256": "c689eaddc7a906354d5947e2a3cd3315bb39467d5370345fb6783900c1d872c3",
+            "bytes": 387274,
+            "role": "original-official-photograph"
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/680/C126_AtomS3R_main_pictures_03.jpg",
+            "sha256": "b99ee2e29b98cfeed5f7ddb1db5ca91a7d40e131012ea52cd33da4bc7efc45e3",
+            "bytes": 264182,
+            "role": "original-official-photograph"
+          }
+        ],
+        "facts": [
+          "D2 is MEIHUA/MHS153IRCT infrared emitter.",
+          "D2 is driven by the GPIO47 IR_LED_DRV/FET2 circuit.",
+          "D1 is an internal green status LED; its external optical location is not established by the schematic.",
+          "Current official main photograph locates the IR emitter at the small top-edge aperture.",
+          "All nine existing official photographs exactly match fresh remote GET bytes."
+        ],
+        "implementation": {
+          "path": "src/devices/atoms3r/index.js",
+          "sha256": "c3bd85b9bcaf0ca1558ce9e912a338ed1505648c306257f487453e944275598d",
+          "assembly": "IR emitter assembly",
+          "positionMm": [
+            7.05,
+            8.95,
+            -2.05
+          ],
+          "face": "top",
+          "physicalMeshes": [
+            "IR emitter support PCB",
+            "IR emitter terminal",
+            "IR emitter ceramic package",
+            "IR emitter dark resin optic"
+          ],
+          "opticFirstHitYMm": 10.2,
+          "ledComponentRegistered": false,
+          "automaticBehavior": false,
+          "opticCrossSectionMm": [
+            1.7,
+            1.8
+          ],
+          "opticDepthMm": 0.45,
+          "opticEnvelopeRefinement": {
+            "initialCrossSectionMm": [
+              1.9,
+              2.5
+            ],
+            "initialFinding": "18 inset optic edge samples classified inside native rear shell by all three independent directions; top-window rays alone had passed.",
+            "correction": "Only inferred resin optic cross section reduced to 1.7 by 1.8 mm; source shells and package position/depth remain unchanged.",
+            "validation": {
+              "surfaceSamples": 669,
+              "actualShells": 2,
+              "independentTriangleDirections": 3,
+              "pointShellDirections": 4014,
+              "occupiedDirections": 0,
+              "ambiguousPoints": 0,
+              "windowRays": 20
+            },
+            "scope": "Finite sampling against actual native mesh; not complete tolerance or manufacturing fit."
+          }
+        },
+        "runtime": [
+          {
+            "path": "src/devices/atoms3r/index.js",
+            "sourceSha256": "c3bd85b9bcaf0ca1558ce9e912a338ed1505648c306257f487453e944275598d",
+            "publicSha256": "c3bd85b9bcaf0ca1558ce9e912a338ed1505648c306257f487453e944275598d"
+          },
+          {
+            "path": "scripts/check-atoms3r-closure.mjs",
+            "sourceSha256": "d13681f1541082fdf137ffc7a806fd3706c8d22c6e71451ba7aa172c0c495edd",
+            "publicSha256": "d13681f1541082fdf137ffc7a806fd3706c8d22c6e71451ba7aa172c0c495edd"
+          },
+          {
+            "path": "src/devices/atoms3r/dimensions.js",
+            "sourceSha256": "0a2051f45fd5301785245e2fd51e8f63bc5f5b6e8fa39d22d3b0cc3e44619dd4",
+            "publicSha256": "0a2051f45fd5301785245e2fd51e8f63bc5f5b6e8fa39d22d3b0cc3e44619dd4"
+          },
+          {
+            "path": "src/devices/atoms3r/geometry-data.js",
+            "sourceSha256": "022a09518501c28d3e54458434e69c68ae25373cb1a91c6c60e06a9e225232f9",
+            "publicSha256": "ec1b477ac3c00a47ea2b9e83729655ed816b829b6a3bae02d25262952f250f96"
+          }
+        ],
+        "explicitInferences": [
+          "Package dimensions, resin/ceramic appearance, support PCB, terminals and internal depth are inferred appearance details, not a confirmed component mechanical drawing or board layout.",
+          "The optic is recessed about 1.8 mm behind the nominal top shell plane.",
+          "Internal green download/status LED location is not clear in the selected photographs or the official demonstration GIF; no guessed external green lamp is added."
+        ],
+        "limits": [
+          "The separate narrow native top seam near X=-7,Z=0 retains its original geometry until its intended assembly use is confirmed.",
+          "Stickers are deferred until original user artwork; no photo crop or planar substitute closes a hole.",
+          "Visible red IR glow",
+          "IR signal transmission or receiver behavior",
+          "Electrical, firmware, sensor or download-mode emulation",
+          "Manufacturing fit or optical beam verification"
+        ],
+        "privateProvenanceSha256": "1da801f2e3751f02ec2205174fc5397ef05810bddc1f54a2d9eb99a33cae2241",
+        "privateEvidenceReportSha256": "1b11d20b2104e035cd41b7e1d470dc7a783639c4a897a61b3abfa04aa7b3dae0"
+      }
     },
     {
       "id": "nesso-n1",
@@ -3636,6 +3818,6 @@
       }
     ]
   },
-  "updatedAt": "2026-10-25T17:47:45.575Z",
+  "updatedAt": "2026-10-25T18:26:34.377Z",
   "syncedAt": "2026-10-25T14:15:24.398Z"
 }

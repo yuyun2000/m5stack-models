@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-25T17:49:58.807Z",
+  "checkedAt": "2026-10-25T18:29:04.220Z",
   "scope": "Assembled mechanical geometry and visual kinematics only; browser review and physical fit remain separate",
   "checks": [
     {
@@ -67,11 +67,14 @@
       "rearRays": 441,
       "grovePlasticRays": 25,
       "detailRays": 16,
+      "irEmitterRays": 20,
+      "irSurfaceSamples": 669,
+      "irShellContainmentDirections": 4014,
       "rearFirstZMm": [
         -6.45010566711426,
         -4.600000000745057
       ],
-      "scope": "assembled surfaces; real port and mounting cavities retained; not fabrication or hardware validation"
+      "scope": "assembled surfaces; real port, mounting and IR cavities retained; finite IR/native-shell containment sampling; IR package/support dimensions inferred; not fabrication, optical or hardware validation"
     },
     {
       "script": "scripts/check-sticks3-assembly.mjs",

@@ -1,0 +1,249 @@
+{
+  "checkedAt": "2026-10-25T18:29:26.183Z",
+  "url": "http://127.0.0.1:5188/?model=atoms3r",
+  "baseUrl": "http://127.0.0.1:5188",
+  "browserCases": 11,
+  "referenceScope": "Official remote reference load checked; no official image pixels saved",
+  "actions": [
+    {
+      "case": "Seven current-build rendered views",
+      "pass": true,
+      "views": [
+        "front",
+        "back",
+        "left",
+        "right",
+        "top",
+        "bottom",
+        "iso"
+      ]
+    },
+    {
+      "case": "Actual IR top window detail rendered after real canvas wheel zoom",
+      "pass": true,
+      "wheelDeltas": [
+        -300
+      ],
+      "screenshot": "views/atoms3r-ir-detail.png",
+      "scope": "Actual current renderer; final visual and triangle-ray inspection are recorded separately"
+    },
+    {
+      "case": "Official reference is available in actual demo",
+      "pass": true,
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3R/12.webp",
+      "pixelsSaved": false
+    },
+    {
+      "case": "button settled press and release",
+      "pass": true,
+      "stateDown": {
+        "pressed": true
+      },
+      "stateUp": {
+        "pressed": false
+      },
+      "travel": "位移 0.000, 0.000, -0.180 mm · 名义行程 0.18 mm",
+      "events": "button · click · inspect:button\nbutton · up · inspect:button\nbutton · down · inspect:button"
+    },
+    {
+      "case": "reset settled press and release",
+      "pass": true,
+      "stateDown": {
+        "pressed": true
+      },
+      "stateUp": {
+        "pressed": false
+      },
+      "travel": "位移 0.000, 0.000, -0.160 mm · 名义行程 0.16 mm",
+      "events": "reset · click · inspect:reset\nreset · up · inspect:reset\nreset · down · inspect:reset\nbutton · click · inspect:button\nbutton · up · inspect:button"
+    },
+    {
+      "case": "Front LCD assembly receives real canvas pointer input",
+      "pass": true,
+      "stateDown": {
+        "pressed": true
+      },
+      "stateUp": {
+        "pressed": false
+      },
+      "events": "button · click · pointer:1\nbutton · up · pointer:1\nbutton · down · pointer:1\nreset · click · inspect:reset\nreset · up · inspect:reset"
+    },
+    {
+      "case": "Native side reset cap receives real canvas pointer input",
+      "pass": true,
+      "stateDown": {
+        "pressed": true
+      },
+      "stateUp": {
+        "pressed": false
+      },
+      "events": "reset · click · pointer:1\nreset · up · pointer:1\nreset · down · pointer:1\nbutton · click · pointer:1\nbutton · up · pointer:1"
+    },
+    {
+      "case": "Externally supplied LCD calibration framebuffer renders",
+      "pass": true,
+      "scope": "Pixel change checked separately; does not emulate firmware or controller IC"
+    },
+    {
+      "case": "Real AtomS3R Grove connects and poses actual ENV III",
+      "pass": true,
+      "status": "grove → Unit · ENV III",
+      "cable": {
+        "slack": 16,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 84.99999999999999,
+        "curveLengthMm": 85.69196298960242,
+        "source": {
+          "position": [
+            -6.661338147750939e-16,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            3.774758283725532e-15,
+            84.99999999999999,
+            4.440892098500626e-15
+          ],
+          "quaternion": [
+            -0.05601869420181801,
+            -0.209064612934849,
+            0.9430295273800398,
+            -0.2526840003001849
+          ],
+          "outward": [
+            0.4999999999999999,
+            -0.7848855672213959,
+            -0.3659981507706669
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      }
+    },
+    {
+      "case": "Disconnect releases module while preserving host controls",
+      "pass": true,
+      "state": {
+        "buttons": {
+          "button": {
+            "pressed": false
+          },
+          "reset": {
+            "pressed": false
+          }
+        },
+        "joints": {},
+        "leds": {}
+      }
+    },
+    {
+      "case": "Real AtomS3R Grove Unit input keeps complete nested path",
+      "pass": true,
+      "events": "grove/press · down · inspect:grove/press\ngrove · attach\ngrove · detach\ngrove · attach\nreset · click · pointer:1"
+    }
+  ],
+  "logs": [
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x11c000cea00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x11c000cea00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x11c000cea00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x11c000cea00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
+    }
+  ],
+  "requests": [
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:5188/assets/index-BsqOojE9.css"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:5188/assets/index-gXdR8ip6.js"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:5188/assets/atoms3r-DPTsIf_w.js"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:5188/assets/core-DihrIc0i.js"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:5188/assets/parts-CBSN7Nta.js"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:5188/assets/cad-DNCAoA3e.js"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:5188/assets/actuators-BEyaAb59.js"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:5188/assets/connectors-BxJYrYHU.js"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:5188/assets/env-iii-DumPhYD6.js"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:5188/assets/ClassicUnit-DbknxhJG.js"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:5188/assets/grove-cable-jhOK9WU3.js"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:5188/assets/parts-O9Qub9gy.js"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:5188/assets/artwork-ClFgZXNk.js"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:5188/assets/CADUnit-DsmrMEZL.js"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:5188/assets/button-C8GtLbMn.js"
+    }
+  ],
+  "httpFailures": [],
+  "applicationRequestFailures": []
+}

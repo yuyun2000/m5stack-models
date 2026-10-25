@@ -4,17 +4,17 @@
 
 模型提供实体按键按下／回弹、稳定开关、旋转／倾斜关节、Grove 插头与四芯线缆，以及由外部指定的灯光。屏幕接收外部帧缓冲，控件输出输入意图；固件、电气、协议和传感器行为由下游系统提供。
 
-![本轮 Unit 可见功能与轴形](artifacts/unit-functions/overview.jpg)
+![本轮 AtomS3R 实体补件](artifacts/atoms3r-ir/overview.jpg)
 
-本轮补齐 Color U009 的两颗白补光实体封装与外驱亮度，Light U021 则有带真实工具槽和槽底的金属微调头，可由外部指定角度。StackChan 输出轴改为齿顶外径 Ø3.95 mm、轴长 3.2 mm 的 20 齿截面，保持原装配位置与关节轴。
+本轮补上 AtomS3R 顶部 IR 开口后的真实光学封装、端子与局部 PCB 支承，保留官方壳体与开孔。此前此处可穿过整机看到对侧内壁；现在原窗口首先命中凹入的暗色光学实体。推导封装经原壳三角面避让复核，双键、LCD 与 Grove 接口保持原有 API。
 
-[Color 白补光](artifacts/unit-functions/color-fill.gif) · [Light 微调头](artifacts/unit-functions/light-trim.gif) · [StickS3 → HUB → Light 连接](artifacts/unit-functions/stick-hub-light.png) · [输出轴细节](artifacts/unit-functions/shaft-output.png)
+[顶窗近照](artifacts/atoms3r-ir/atoms3r-top.png) · [实体按键压放](artifacts/atoms3r-ir/button-press.gif) · [当前独立验证](artifacts/atoms3r-ir/public/review.json)
 
-Color 的两颗灯实际共用 VCC；独立外观地址不表示独立 GPIO 或 RGB 器件，调用方负责反映供电状态。Light 的头部尺寸、槽深和演示角度范围包含照片推导，额定端挡、旋向和电气零位尚未确认；不模拟电阻、阈值或传感器逻辑。Relay U023 的灯光文案与原理图／照片存在冲突，保持待核准，不添加未确认灯具。
+IR 封装、引脚、支承尺寸和安装深度包含照片推导。模型不增加可见红灯，也不模拟 IR 信号。内部绿色下载灯的外部光学位置和另一顶边窄槽用途仍待确认，保留原槽；**贴纸继续等待原文件，不用照片裁图遮缺件。**
 
-隐藏舵机仍为 `fit-unresolved`，当前有限采样仍检出隐藏实体交叠；全局头颈基准、右侧轴承座及部分隐藏结构继续待核准。本轮轴径修正不代表完整装配配合通过。有限几何采样和浏览器操作不代表连续碰撞、实物配合或硬件验证。**贴纸继续等待原文件，不用照片裁图遮缺件。**
+当前私有和公开构建均通过，公开浏览器覆盖七视图、实际 IR 顶窗近照、两键控件与真实 canvas 按下/释放、外部 LCD 帧缓冲、Grove 接线和完整输入路径。两键释放后 RGB 像素精确回位；帧缓冲比较限定在 LCD 区域。源码、命令、截图、动作和来源审计见上述独立验证记录。光学/电气/制造配合与有限数字采样分别判断，产品阶段仍为 `modeled`。
 
-本轮公开独立验证记录见 [review.json](artifacts/unit-functions/public/review.json)，包含当前源码指纹、三款七视图、12 项浏览器场景、回位像素比较、日志与真实命令回执。盖座、布线与主机 RGB 的历史证据保存在 `artifacts/seat-refinement/`，更早结果保留其各自快照。
+StackChan 的隐藏实体交叠和全局装配基准仍未解决。本轮不改变其壳、轴或安装位置。前一轮 Color/Light 可见功能与轴形证据保存在 `artifacts/unit-functions/`，更早结果保留其各自快照。
 
 ## 本地运行
 

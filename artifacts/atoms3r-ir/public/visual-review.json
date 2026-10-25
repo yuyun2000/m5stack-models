@@ -1,0 +1,136 @@
+{
+  "checkedAt": "2026-10-25T18:32:05.678974+00:00",
+  "status": "pass-with-recorded-limits",
+  "reviewerScope": {
+    "method": "对七个固定视图及 IR 近照逐张视觉查看，并与已保存的九张官方原图只读对照。",
+    "imageCount": 8,
+    "officialReferenceCount": 9,
+    "browserExecutionPerformedByThisReviewer": false,
+    "networkRequestsPerformedByThisReviewer": false,
+    "officialPixelsRedistributed": false
+  },
+  "sourceSha256": "c3bd85b9bcaf0ca1558ce9e912a338ed1505648c306257f487453e944275598d",
+  "reviewedImages": [
+    {
+      "image": "views/atoms3r-front.png",
+      "sha256": "a778c21d1f52f67ec3b41db38c7ca326743ca3f10414a0351fcf6b0b348b5da3",
+      "width": 1138,
+      "height": 534,
+      "result": "pass",
+      "observation": "完整圆角白壳、黑色 LCD 与边框连贯；未见大片缺件导致的透空。"
+    },
+    {
+      "image": "views/atoms3r-back.png",
+      "sha256": "997d64cd1a705aeb0d56ba92524251b1d2e0ffb42c41e7de52b894fd604e2f2d",
+      "width": 1138,
+      "height": 534,
+      "result": "pass",
+      "observation": "5+4 排母的真实孔与内接触、M2 孔、后板及底部 Grove 塑料层可见；大块浅色部分表现为实体中性面与连接器。"
+    },
+    {
+      "image": "views/atoms3r-top.png",
+      "sha256": "9182667fb3c85f29dfa676cfa5897d0f8aae084e57d77d84dca5cc72ff6f4342",
+      "width": 1138,
+      "height": 534,
+      "result": "pass",
+      "observation": "右侧原小窗中可见后缩的黑色 IR 树脂面；左侧未明窄槽保留。"
+    },
+    {
+      "image": "views/atoms3r-bottom.png",
+      "sha256": "5550b8714a7a7a0ab2d1fbf87ad6b842be861d29a8a11a45d746e992fc433326",
+      "width": 1138,
+      "height": 534,
+      "result": "pass",
+      "observation": "天线体、USB-C 真实开口、Grove 四针及两侧保持结构可见，接口未被平面封死。"
+    },
+    {
+      "image": "views/atoms3r-left.png",
+      "sha256": "362e5c13f39213978c80fa69f73f64c7a96b353ff4fad389adc444ac5c2fe372",
+      "width": 1138,
+      "height": 534,
+      "result": "pass",
+      "observation": "侧 reset 帽与壳口周围的真实间隙保留。"
+    },
+    {
+      "image": "views/atoms3r-right.png",
+      "sha256": "f3dc66533daef55b6f6dd77104f1c1833f9928855c202b18928e1d63aef418aa",
+      "width": 1138,
+      "height": 534,
+      "result": "pass",
+      "observation": "侧壳、原浮雕与局部线条连续，未见新增 IR 件穿出壳面。"
+    },
+    {
+      "image": "views/atoms3r-iso.png",
+      "sha256": "5604fb8923a231402894cef6020eec95ba5f30e2f7d6cb398f3893c6f4d6b504",
+      "width": 1138,
+      "height": 534,
+      "result": "pass",
+      "observation": "壳体、显示区域深度、边框与接缝连贯，未见新增明显悬浮件或大片缺件空洞。"
+    },
+    {
+      "image": "views/atoms3r-ir-detail.png",
+      "sha256": "350b12e0624de942239dbde70b65cec2f240771b854e17a974592645f3637048",
+      "width": 1138,
+      "height": 534,
+      "result": "pass",
+      "observation": "原开窗口内可见黑色 IR 封装的后缩暗表面，无虚构可见红光；周边壳体保持完整。"
+    }
+  ],
+  "officialReferences": [
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3R/12.webp",
+      "sha256": "46247a9cf25b26ff0ab8e7d9370325687bdfed7f5f7231429ec99fa232e7bd40",
+      "comparisonScope": "正面显示器与壳体"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3R/15.webp",
+      "sha256": "957eb81be9b2bee728beb95b21dc2d1c156cb44e8f5bd1492917fcb8e24a5a45",
+      "comparisonScope": "包装内实物辅助外形；不作具体尺寸依据"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/680/C126_AtomS3R_main_pictures_02.jpg",
+      "sha256": "e4cf29d7c8509ba264fb7cf6de558fb827b8b8b9542ebd5046b95c4b9c448991",
+      "comparisonScope": "背部斜视、5+4 排母、Grove、USB 与天线位置"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3R/7.webp",
+      "sha256": "f444f7c194ad61ab08df9a562f03755d03dda590992e703d0e82f07473074b05",
+      "comparisonScope": "斜视、顶部边缘小窗与接缝"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3R/8.webp",
+      "sha256": "4ee36ac7f1ab4a10bce93d151c4b3e3745971240cf263f16497edd55fffe9818",
+      "comparisonScope": "端口正视、天线、USB 与 Grove"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3R/10.webp",
+      "sha256": "35521168d5c625ce33c51e874bb539bd1c11e734206f8ac535461e6230e729c0",
+      "comparisonScope": "IR 所在侧与贴纸右侧黑色小窗"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3R/11.webp",
+      "sha256": "3b9adb398c4399d692e48eaf8b7712c9d0e9230fc078c72fbcccf60da6913204",
+      "comparisonScope": "reset 帽侧视"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/680/C126_AtomS3R_main_pictures_01.jpg",
+      "sha256": "c689eaddc7a906354d5947e2a3cd3315bb39467d5370345fb6783900c1d872c3",
+      "comparisonScope": "正背面、5+4 排母、M2 与 Grove"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/680/C126_AtomS3R_main_pictures_03.jpg",
+      "sha256": "b99ee2e29b98cfeed5f7ddb1db5ca91a7d40e131012ea52cd33da4bc7efc45e3",
+      "comparisonScope": "官方箭头总览、IR LED 小窗、Reset、LCD 与接口位置"
+    }
+  ],
+  "conclusion": "本次实际查看的八张图中，AtomS3R 外壳和内部可见结构连续，未发现大片缺件透空或新增 IR 穿壳；真实连接器孔、reset 周边间隙与未知窄槽保持。IR 小窗内的黑色后缩表面与官方可见外观方向一致。",
+  "findings": [],
+  "limits": [
+    "复核仅覆盖记录的八张固定图；不能由此证明任意视角都无交叠或遮挡。",
+    "中性材质、灯光与官方照片不同；浅色实体不等同于透空。",
+    "贴纸按用户要求延期，本次不验收贴纸、纹理或印刷内容。",
+    "官方照片支持外形与位置对照，不能独立证明内部封装深度、制造配合、光学性能或实物功能。",
+    "本复核没有执行浏览器交互或完整应用测试；这些结果须以各自执行回执为准。",
+    "官方原图仅供只读对照；本报告只记录其 URL 与 SHA-256，不包含或分发官方像素。"
+  ]
+}

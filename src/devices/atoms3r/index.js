@@ -20,6 +20,15 @@ export class AtomS3R extends Device {
   const mountFloor=disc(this.body,1.08,[0,0,-5.45],materials.cavity());mountFloor.quaternion.copy(FACE.back);mountFloor.name='M2 mounting blind-hole floor';
   slab(this.body,12.3,15.2,.15,.2,[0,4.4,-6.44],materials.plastic(0xc9cec8,{roughness:.87}),[{w:2.2,h:2.2,r:1.1,cx:0,cy:-4.4}],.025).name='Rear PCB retaining plate';
   const antenna=slab(this.body,18.2,2.3,.7,.2,[0,-11.3,4.15],materials.plastic(0x21272a,{roughness:.79}),[],.04);antenna.quaternion.copy(FACE.bottom);antenna.name='3D antenna body';
+  // Official C126 main photo locates IR at the small top-edge notch; the
+  // v0.4.1 schematic identifies D2 as MEIHUA/MHS153IRCT. Its package and short
+  // board support are appearance estimates, recessed behind the untouched
+  // source opening. Infrared is not a visible red lamp or a signal emulator.
+  const ir=new THREE.Group();ir.name='IR emitter assembly';ir.position.set(7.05,8.95,-2.05);ir.quaternion.copy(FACE.top);ir.userData={role:'infrared-emitter-package',source:'official C126 main photo and v0.4.1 schematic D2',dimensions:'photo-inferred; no optical or manufacturing model'};this.body.add(ir);
+  slab(ir,2.5,3.0,.35,.12,[0,0,0],materials.plastic(0x304936,{roughness:.9}),[],.03).name='IR emitter support PCB';
+  for(const x of [-.95,.95])mesh(ir,new THREE.BoxGeometry(.35,1.5,.16),materials.metal(0xb5b8ae,{roughness:.5}),[x,0,.4],'IR emitter terminal');
+  slab(ir,2.1,2.7,.45,.2,[0,0,.35],materials.plastic(0xbabbb0,{roughness:.7}),[],.035).name='IR emitter ceramic package';
+  slab(ir,1.7,1.8,.45,.3,[0,0,.8],materials.glossy(0x12171b,{roughness:.28}),[],.05).name='IR emitter dark resin optic';
   const edge=slab(this.body,10.2,.9,.6,.1,[0,-11.4,-.9],materials.plastic(0x304936,{roughness:.9}),[],.03);edge.quaternion.copy(FACE.bottom);
   const lcdBezel=slab(this.body,17.2,17.2,.15,.6,[-.0,0,6.02],materials.cavity(),[],.03);
   const lcd=this.add(new Display({id:'lcd',label:'0.85-inch 128×128 LCD',width:128,height:128,size:[DIM.lcd.active,DIM.lcd.active],position:DIM.lcd.position,pixelEffect:true,touch:false,glass:{size:[16.3,16.3],offset:.02,intensity:.2,roughness:.14},meta:{role:'external-framebuffer'}}));
