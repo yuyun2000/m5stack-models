@@ -61,6 +61,14 @@ type JointState = {
 
 旋钮/摇杆按压继续使用既有 Button API，例如 `button('press').press('framework')` 与对应 `release('framework')`。按钮记录的是输入意图和帽的位置，不生成编码器脉冲、摇杆ADC或按键寄存器。StackChan的 `power`/`reset` 保留原ID，继承CoreS3真正的可动帽并跟随头部姿态。
 
+## 弯曲片与杠杆按压
+
+Button U027直接分离原CAD的10.2 mm按压片，保留U形开口和三条凹槽；固定根部不动，自由端向内弯曲0.35 mm。这个平滑形变只描述外观，不计算塑料刚度。Dual Button U025使用直径11.5 mm、3 mm高的闭合实体彩帽，两中心相隔14 mm；官方机械图区分8 mm基壳、12 mm白座、15 mm含帽总厚，0.35 mm按压行程为估计。
+
+Limit U145的16 mm金属柄绕固定Z铰链转动，并带动接触柱。静止8°到按下0°是照片推导的观察姿态，尚未获额定行程机械图确认。它是 `Button` 子类，调用 `button('press').press(source)` / `release(source)`；`getState().leverAngleDeg` 仅表示当前视觉角度。
+
+上述非直线组件继承多来源持有、取消和嵌套寻址。用 `getActuationState()` 读取 `{depthMm,targetDepthMm,settled}`：depth是供外观插值的标量，杠杆会把它换算成弧形姿态，因此不能把 `cap.position` 当成统一运动测量。检查见 `scripts/check-unit-actuators.mjs`、`scripts/check-limit-lever.mjs` 和 `scripts/check-cardkb.mjs`。
+
 ## 创建新的关节
 
 ```js
@@ -77,7 +85,7 @@ joint.adopt(capGroup); // mount之后，将中性姿态实体归到轴下；保�
 
 ## 依据与验证
 
-StackChan轴线/分组与联接件的事实来源见 `source-manifest.json` 的 `motionStructures`，变换记录为 `src/devices/stackchan/cad-map-motion.json`。Angle/Joystick的精确机械限位和硬件零位仍未确认；候选不包含私有研究原文。
+StackChan轴线/分组与联接件的事实来源见 `source-manifest.json` 的 `motionStructures`，变换记录为 `src/devices/stackchan/cad-map-motion.json`。Angle/Joystick的精确机械限位和硬件零位仍未确认；公开版不包含私有研究原文。
 
 ```sh
 node scripts/check-visual-motion.mjs

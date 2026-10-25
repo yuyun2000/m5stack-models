@@ -8,7 +8,7 @@ const models=makeUnit(spec,data,host=>{
  slab(host.body,18,18,4,1.7,[0,9,4],materials.plastic(0x1e2427),[],.4);
  const stick=new THREE.Group();stick.name='Joystick moving stick';
  cylinder(stick,3,14,[0,0,7],materials.plastic(0x202629));
- const profile=[[0,28],[7,27.7],[9.5,27],[10.4,25.6],[10.5,23.5],[9.5,21.6],[5,20.8],[0,20.8]].map(p=>new THREE.Vector2(...p));
+ const profile=[[0,28],[7,27.7],[9.5,27],[10.4,25.6],[10.5,23.5],[9.5,21.6],[5,20.8],[0,20.8]].reverse().map(p=>new THREE.Vector2(...p));
  mesh(stick,new THREE.LatheGeometry(profile,64).rotateX(Math.PI/2),materials.plastic(0x151a1d,{roughness:.88}),[0,0,-8],'Joystick thumb cap');
  const press=host.add(new Button({id:'press',label:'Stick press',mesh:stick,position:[0,9,8],travel:.45,meta:{role:'visual-control',travelSource:'Visual approximation; no Z-input emulation'}}));
  const range={visualRangeDeg:[-20,20],rangeEvidence:'Viewer range only; official tilt limits not supplied',axisEvidence:'Official U024-C X/Y tilt and Z push; pivot near the photo-visible stick seat'};

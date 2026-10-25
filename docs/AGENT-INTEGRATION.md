@@ -43,6 +43,10 @@ host.handle({type: 'release', target: 'btnA'});
 
 同一个来源必须成对释放。多来源同时按住时，最后一个来源释放才回弹。`press` / `release` 会产生输入意图，适合交互注入；不要用它们反馈固件自己的键状态，避免回声循环。电容区 `travel=0`，有输入意图但不伪造机械位移。
 
+`button.getActuationState()` 返回只读的 `{depthMm, targetDepthMm, settled}`，用于观察视觉插值是否到达终点；`getState()` 保持原输入状态结构。不要通过 `cap.position` 判断所有按键的行程：Button U027 的原壳片绕固定根部弯曲，Limit U145 的金属柄绕固定铰链转动。二者继续使用相同的 `press/release/cancel` 和输入路径，`meta.visualMotion` 分别为 `flex-pad` / `lever`。行程和角度中未获机械图确认的值均为外观估计。
+
+CardKB v1.1（U035-B）有50个独立实体按钮，例如 `key-q`、`key-1`、`key-esc`、`key-up`；挂载后使用 `grove/key-q`。本层只发送各键按压意图，下游负责矩阵扫描、字符、组合键及I2C字节。它不是CardKB2。Cardputer-ADV新增 `grove-power` 两档滑块，只同步Grove供电方向选择器的外观，不切换任何电气状态。
+
 `Button.latching=true` 的滑动开关在首次按下时切换稳定档位，松手不会回位。外部状态同步可用 `setPosition(0|1)` 或 `handle({action:'position', target, position:1})`，不会模拟电源逻辑。读取 `getState().position`。不要把所有带 `power` 的旧 ID 当成电源：Tab5 的 legacy `power` 指向电池卡扣，Nesso 的 legacy ID 也要结合 label/meta 确认含义。
 
 使用 `DeviceViewer({keyboard:'focused'})` 后仅聚焦 canvas 时处理设备快捷键。失焦、标签隐藏、卸载和 pointer capture 丢失会取消按住的输入；默认 `keyboard:true` 保留上游全局快捷键习惯。表单输入不会触发设备键。
@@ -116,6 +120,6 @@ viewer.dispose();
 
 ## 修改后验证
 
-从仓库根目录运行 `npm run check`、`npm run build`、`./manage.sh status`。专项测试覆盖真实帽位移/方向/回位、稳定档位、多来源取消、关节父子装配、静止与终帧、23款线缆端点与默认姿态穿壳。
+从仓库根目录运行 `npm run check`、`npm run build`、`./manage.sh status`。专项测试覆盖真实帽位移/方向/回位、固定根部弯曲、刚性杠杆、50键CardKB、稳定档位、多来源取消、关节父子装配、静止与终帧、25款线缆端点与默认姿态穿壳。
 
 还需打开 demo，实际操作按键按住/回弹、模型快捷键与表单焦点、连接/断开、端点旋转、风叶转动、摇杆倾斜与按压、StackChan 组合姿态。Node 几何测试不能替代浏览器画面，也不能证明下游模拟器、真实硬件、机械配合或硬件限位正确。

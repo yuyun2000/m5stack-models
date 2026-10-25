@@ -203,10 +203,11 @@
         "visual": null
       },
       "limitations": [
-        "选取官方 CAD 装配零件，排除散放重复件；贴图/接口插入件仍有局部照片推导",
-        "尚未完成逐面视觉验收；LCD 有效区需要对应面板尺寸图"
+        "原官方CAD装配配合真实USB-C、microSD、Grove、音频、IR与喇叭开口；内藏包装/接缝唇口及StampS3A天线尺寸仍部分为照片推导。",
+        "60控件=58瞬时键帽+电源与Grove供电方向两稳定滑块；Grove方向只记录视觉档位，无电气行为。",
+        "LCD有效区仍需面板机械图；贴纸等待用户原文件。"
       ],
-      "nextAction": "当前装配细化与专用检查已复核；继续核对照片推导细节，贴纸等待原文件",
+      "nextAction": "接口深腔、StampS3A、接缝搭接和60控件已检查；继续核对推导包装及LCD有效区，贴纸等待原文件",
       "cadEnvelopeMm": [
         84.07,
         54,
@@ -224,8 +225,8 @@
             0,
             -1
           ],
-          "maxDistance": 10.6,
-          "purpose": "StampS3A is a physical board/package, not a sticker over an empty frame"
+          "maxDistance": 11,
+          "purpose": "Official CAD recessed Stamp button face stays visible at Z=9.175803 mm; detailed board/antenna closure checked separately"
         }
       ]
     },
@@ -1385,7 +1386,7 @@
         "这里只提供视觉几何和接口，不实现电气、传感器数据或协议行为",
         "视觉角度由外部给定；demo滑条范围不是官方机械限位，不提供传感器换算"
       ],
-      "nextAction": "优先逐面检查装配闭合与真实开口；贴纸等待用户原文件"
+      "nextAction": "帽面法线、压放和七视图已检查；继续校准帽形与未确认倾斜限位，贴纸等待原文件"
     },
     {
       "id": "dual-button",
@@ -1401,7 +1402,7 @@
       "visualEnvelopeMm": [
         24,
         48,
-        12
+        15
       ],
       "cadEnvelopeMm": [
         24,
@@ -1433,11 +1434,10 @@
         ]
       ],
       "limitations": [
-        "官方 CAD 装配壳体；局部器件、旋钮、按键表面依据官方照片构造，尚待逐面视觉检查",
-        "这里只提供视觉几何和接口，不实现电气、传感器数据或协议行为",
-        "官方名义厚度 8 mm，选中 CAD 含按钮外形总厚 12 mm；分别保留两项，待实物复核"
+        "官方机械图区分8 mm基壳、12 mm白色按钮座及含帽15 mm总厚；原CAD只含白色按钮座，新增闭合实体彩帽直径11.5 mm、键距14 mm。",
+        "按压行程0.35 mm及内藏开关包装为视觉估计，不实现电气或协议；贴纸等待原文件。"
       ],
-      "nextAction": "优先逐面检查装配闭合与真实开口；贴纸等待用户原文件"
+      "nextAction": "完整彩帽尺寸、压放和七视图已检查；后续校准真实按压行程，贴纸等待原文件"
     },
     {
       "id": "button",
@@ -1485,10 +1485,10 @@
         ]
       ],
       "limitations": [
-        "官方 CAD 装配壳体；局部器件、旋钮、按键表面依据官方照片构造，尚待逐面视觉检查",
-        "这里只提供视觉几何和接口，不实现电气、传感器数据或协议行为"
+        "原CAD的U形开口和三条凹槽完整保留，10.2 mm原生按压片按固定根部和自由端弯曲。",
+        "0.35 mm自由端行程与隐藏开关包装为视觉估计，不是塑料材料/电气模型；贴纸等待原文件。"
       ],
-      "nextAction": "优先逐面检查装配闭合与真实开口；贴纸等待用户原文件"
+      "nextAction": "原生按压片弯曲、精确回位及七视图已检查；后续校准未确认行程和隐藏包装，贴纸等待原文件"
     },
     {
       "id": "ncir",
@@ -2326,6 +2326,295 @@
           }
         }
       ]
+    },
+    {
+      "id": "limit",
+      "category": "unit",
+      "name": "Unit Limit",
+      "sku": "U145",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        32,
+        9.5
+      ],
+      "cadEnvelopeMm": [
+        24,
+        31.947620391845703,
+        9.5
+      ],
+      "visualEnvelopeMm": [
+        24,
+        35,
+        9.5
+      ],
+      "stage": "modeled",
+      "entry": "src/units/limit/index.js",
+      "export": "Model",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit%20Limit/img-7da470fe-12b4-4694-bcd7-62077c1cce2e.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_Limit",
+      "research": "source-manifest.json",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": null,
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          -4
+        ],
+        [
+          8,
+          -4
+        ]
+      ],
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            22,
+            0
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 7,
+          "purpose": "Actual KW4A switch package closes native top shell opening"
+        },
+        {
+          "origin": [
+            9,
+            22,
+            2
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 7,
+          "purpose": "Visible switch side supports the genuine lever opening"
+        }
+      ],
+      "visualControls": [
+        {
+          "id": "press",
+          "kind": "button",
+          "visualMotion": "lever",
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "restAngleDeg": 8,
+          "pressedAngleDeg": 0,
+          "rangeEvidence": "Photo-derived visual estimate; rated travel unconfirmed"
+        }
+      ],
+      "limitations": [
+        "官方壳体CAD装配包围为24×31.9476×9.5 mm，与产品名义32 mm壳长的0.0524 mm差异保留原结构；含柄静止可见高度按官方图35 mm。",
+        "柄长16 mm是官方规格；静止8度、按压0度、转轴位置/厚度/宽度及开关隐藏包装为照片推导，未确认额定预行程或超行程。",
+        "Grove连接器使用公共实体插口，并按U145正面图改成开放上盖/短锁扣；PCB绕开Grove与安装孔。",
+        "只输出通用按下/松开/取消输入并驱动外观；不推导开关电平、LED、固件或电气状态，贴纸等待原文件。"
+      ],
+      "nextAction": "原始壳体、七视图与压放动作已检查；等待量产KW4A(S)机械图校准限位与隐藏细节，贴纸等待用户原文件。"
+    },
+    {
+      "id": "cardkb",
+      "category": "unit",
+      "name": "CardKB v1.1",
+      "sku": "U035-B",
+      "scope": "visual-only",
+      "nominalMm": [
+        88,
+        54,
+        5
+      ],
+      "drawingEnvelopeMm": [
+        84,
+        54,
+        6.3
+      ],
+      "visualEnvelopeMm": [
+        84.35,
+        54,
+        6.301
+      ],
+      "stage": "modeled",
+      "entry": "src/units/cardkb/index.js",
+      "export": "Model",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/cardkb_1.1/cardkb_1.1_02.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_CardKB_v1.1",
+      "research": "source-manifest.json",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": null,
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -37,
+          22
+        ]
+      ],
+      "closureChecks": [
+        {
+          "origin": [
+            -27,
+            16,
+            4
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 4.5,
+          "purpose": "Real moving tactile cap with complete fixed switch body behind it"
+        },
+        {
+          "origin": [
+            39,
+            16,
+            4
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 4.5,
+          "purpose": "Real moving tactile cap with complete fixed switch body behind it"
+        },
+        {
+          "origin": [
+            -27,
+            4,
+            4
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 4.5,
+          "purpose": "Real moving tactile cap with complete fixed switch body behind it"
+        },
+        {
+          "origin": [
+            39,
+            4,
+            4
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 4.5,
+          "purpose": "Real moving tactile cap with complete fixed switch body behind it"
+        },
+        {
+          "origin": [
+            -21,
+            -8,
+            4
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 4.5,
+          "purpose": "Real moving tactile cap with complete fixed switch body behind it"
+        },
+        {
+          "origin": [
+            39,
+            -8,
+            4
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 4.5,
+          "purpose": "Real moving tactile cap with complete fixed switch body behind it"
+        },
+        {
+          "origin": [
+            -21,
+            -20,
+            4
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 4.5,
+          "purpose": "Real moving tactile cap with complete fixed switch body behind it"
+        },
+        {
+          "origin": [
+            39,
+            -20,
+            4
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 4.5,
+          "purpose": "Real moving tactile cap with complete fixed switch body behind it"
+        },
+        {
+          "origin": [
+            -33,
+            -11.5,
+            4
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 4.5,
+          "purpose": "Real moving tactile cap with complete fixed switch body behind it"
+        },
+        {
+          "origin": [
+            -38.3,
+            -16.5,
+            4
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 4.5,
+          "purpose": "Real moving tactile cap with complete fixed switch body behind it"
+        }
+      ],
+      "limitations": [
+        "准确对应Unit CardKB v1.1 U035-B，50键；不是42键的CardKB2 U215。",
+        "官方规格表88×54×5 mm与机械图84×54 mm、连接器总厚6.3 mm不同，模型按机械图重建，两种口径分别保留。",
+        "没有使用官方STL/STEP；PCB轮廓和键距依据机械图，开关/连接器封装及0.2 mm按压行程为照片估计，不是生产CAD。",
+        "丝印/贴纸等待原文件；各键仅输出实体按压意图，RGB由外部驱动，不扫描矩阵、不生成字符或I2C数据。"
+      ],
+      "nextAction": "当前七视图、50键压放与Grove挂载已检查；继续核对封装细节和官方尺寸冲突，丝印等待原文件"
     }
   ],
   "artworkPolicy": "Photographic sticker crops disabled by default; awaiting user-supplied originals. Do not use artwork to conceal missing geometry."

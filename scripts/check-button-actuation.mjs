@@ -9,8 +9,10 @@ const settle=b=>{for(let i=0;i<80;i++)b.update(1/60);};
 export async function checkButtonActuation(){
  const b=fixture({position:[2,3,4],axis:[1,0,0],travel:.3}),events=[];for(const action of ['down','up','click'])b.on(action,e=>events.push(e));
  assert.deepEqual(b.object3d.position.toArray(),[2,3,4],'Existing array component placement stays compatible');
+ assert.deepEqual(b.getActuationState(),{depthMm:0,targetDepthMm:0,settled:true});
  b.onPointerDown({pointerId:7});b.press('key:Space');b.handle({action:'press',source:'remote'});settle(b);
  assert.equal(events.filter(e=>e.action==='down').length,1,'Pointer, keyboard and handle sources share one physical depression');assert.equal(b.cap.position.x,.3);
+ assert.deepEqual(b.getActuationState(),{depthMm:.3,targetDepthMm:.3,settled:true});
  b.onPointerUp({pointerId:7});b.release('key:Space');settle(b);assert.equal(b.pressed,true,'A remaining remote hold prevents a premature spring return');assert.equal(b.cap.position.x,.3);
  b.handle({action:'release',source:'remote'});assert.equal(b.update(1),true,'The exact release endpoint must request its final rendered frame');assert.equal(b.cap.position.length(),0);assert.equal(b.update(1/60),false,'Only an unchanged tick goes idle');assert.equal(events.filter(e=>e.action==='click').length,1);
  const beforeClicks=events.filter(e=>e.action==='click').length;b.onPointerDown({pointerId:8});settle(b);b.onPointerCancel({pointerId:8});settle(b);assert.equal(b.pressed,false);assert.equal(b.cap.position.length(),0);assert.equal(events.filter(e=>e.action==='click').length,beforeClicks,'Pointer cancellation returns the real cap without a click');assert.equal(events.filter(e=>e.action==='up').at(-1).cancelled,true);

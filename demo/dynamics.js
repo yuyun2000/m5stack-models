@@ -274,8 +274,11 @@ export class DynamicsPanel {
     const inspected = this.model.find(this.$('#inspect-button').value, 'button');
     if (inspected) {
       const output = this.$('#button-travel');
-      output.textContent = `位移 ${inspected.cap.position.toArray().map(v => v.toFixed(3)).join(', ')} mm · 名义行程 ${inspected.travel} mm`;
-      output.dataset.settled = String(Math.abs(inspected.cap.position.length() - (inspected.pressed ? inspected.travel : 0)) < 1e-7);
+      const actuation = inspected.getActuationState();
+      output.textContent = inspected.meta.visualMotion
+        ? `视觉行程 ${actuation.depthMm.toFixed(3)} / ${inspected.travel} mm · ${inspected.meta.visualMotion}`
+        : `位移 ${inspected.cap.position.toArray().map(v => v.toFixed(3)).join(', ')} mm · 名义行程 ${inspected.travel} mm`;
+      output.dataset.settled = String(actuation.settled);
       output.dataset.pressed = String(inspected.pressed);
     }
     const module = this.port()?.module;

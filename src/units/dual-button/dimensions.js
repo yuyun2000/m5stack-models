@@ -5,7 +5,7 @@ export const spec={
   "size": [
     24,
     48,
-    12
+    15
   ],
   "nominalMm": [
     24,
@@ -13,6 +13,7 @@ export const spec={
     8
   ],
   "mountY": -12.0,
+  "keymap": {"KeyB":"blue","KeyR":"red"},
   "grove": {
     "position": [
       0,

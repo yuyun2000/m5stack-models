@@ -81,5 +81,20 @@
     "thirdPartyNotices": "preserved"
   },
   "dynamicEvidence": "artifacts/dynamics/review.json",
-  "publicBrowserEvidence": "artifacts/dynamics/review.json#publicBrowserEvidence"
+  "publicBrowserEvidence": "artifacts/dynamics/review.json#publicBrowserEvidence",
+  "refinement": {
+    "checkedAt": "2026-10-25T14:16:54.748Z",
+    "status": "pass",
+    "sourceCommit": "b6d53bc3b40425a1f6b343d20240245588727397",
+    "report": "artifacts/refinement/public/review.json",
+    "models": 39,
+    "units": 25,
+    "hostControls": 141,
+    "browserWarningsOrErrors": [],
+    "checks": [
+      "npm run check",
+      "npm run build",
+      "./manage.sh status"
+    ]
+  }
 }

@@ -1,7 +1,78 @@
 {
-  "checkedAt": "2026-10-25T13:30:15.569Z",
+  "checkedAt": "2026-10-25T14:13:55.529Z",
   "scope": "Actual control movement and externally driven visual kinematics; no hardware/runtime validation",
   "checks": [
+    {
+      "script": "scripts/check-cardkb.mjs",
+      "keys": 50,
+      "rowCounts": [
+        12,
+        12,
+        11,
+        11,
+        4
+      ],
+      "nominalMm": [
+        88,
+        54,
+        5
+      ],
+      "drawingMm": [
+        84,
+        54,
+        6.3
+      ],
+      "visibleMm": [
+        84.34999998807908,
+        54,
+        6.301000095367431
+      ],
+      "groveTails": 4,
+      "status": "pass"
+    },
+    {
+      "script": "scripts/check-unit-actuators.mjs",
+      "status": "pass",
+      "flexPad": {
+        "nativeGrooves": 3,
+        "openSlotSamples": 3,
+        "travelMm": 0.35,
+        "fixedHinge": true,
+        "exactVertexReturn": true
+      },
+      "dualButton": {
+        "status": "pass",
+        "buttons": 2,
+        "momentary": 2,
+        "latching": 0,
+        "capacitive": 0,
+        "visibleSurfaceRays": 4,
+        "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
+      },
+      "legacy": [
+        {
+          "id": "encoder",
+          "status": "pass",
+          "buttons": 1,
+          "momentary": 1,
+          "latching": 0,
+          "capacitive": 0,
+          "visibleSurfaceRays": 2,
+          "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
+        },
+        {
+          "id": "joystick-v11",
+          "status": "pass",
+          "buttons": 1,
+          "momentary": 1,
+          "latching": 0,
+          "capacitive": 0,
+          "visibleSurfaceRays": 2,
+          "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"
+        }
+      ],
+      "scope": "Actual Unit faces, physical cap thickness, nonlinear deformation, input cancellation and nested mounting; no hardware validation"
+    },
     {
       "script": "scripts/check-button-actuation.mjs",
       "status": "pass",
@@ -57,9 +128,9 @@
     {
       "product": "cardputer-adv",
       "status": "pass",
-      "buttons": 59,
+      "buttons": 60,
       "momentary": 58,
-      "latching": 1,
+      "latching": 2,
       "capacitive": 0,
       "visibleSurfaceRays": 116,
       "scope": "actual cap vertices and visible press/release surfaces; geometry-only travel estimates"

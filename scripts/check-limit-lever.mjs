@@ -1,0 +1,44 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import * as THREE from 'three';
+import {Device,Port,Button} from '../src/core/index.js';
+import {Model,GroveModule,LeverButton} from '../src/units/limit/index.js';
+import {spec} from '../src/units/limit/dimensions.js';
+import data from '../src/units/limit/geometry-data.js';
+const root=path.resolve(import.meta.dirname,'..'),EPS=1e-5;
+const vec=a=>new THREE.Vector3(...a),near=(a,b,why,tol=EPS)=>assert.ok(Math.abs(a-b)<tol,`${why}: ${a} vs ${b}`);
+const visible=o=>o.isMesh&&o.material?.opacity!==0;
+const boxOf=object=>{const box=new THREE.Box3();object.traverse(o=>{if(visible(o))box.expandByObject(o);});return box;};
+const ray=(object,origin,direction)=>new THREE.Raycaster(vec(origin),vec(direction)).intersectObject(object,true).filter(h=>visible(h.object));
+const model=new Model();model.root.updateMatrixWorld(true);let meshes=0,rays=0;
+model.root.traverse(o=>{if(!o.isMesh)return;meshes++;for(const n of o.geometry.attributes.position?.array??[])assert.ok(Number.isFinite(n),'Limit finite geometry');assert.ok(!o.material?.map,'Limit has no photographic stickers');});
+const envelope=boxOf(model.root).getSize(new THREE.Vector3());spec.visualEnvelopeMm.forEach((n,i)=>near(envelope.getComponent(i),n,'rest envelope',.002));
+assert.equal(data.length,2,'Only the official assembled pair; displaced duplicate shells excluded');assert.equal(data.reduce((n,p)=>n+p.triangles,0),4942,'All native shell triangles retained');
+const official=new THREE.Box3();model.root.traverse(o=>{if(o.userData.source==='official-structure')official.expandByObject(o);});spec.cadEnvelopeMm.forEach((n,i)=>near(official.getSize(new THREE.Vector3()).getComponent(i),n,'CAD envelope',.002));
+for(const x of [-8,8])for(const[dx,dy]of [[0,0],[1.6,0],[-1.6,0],[0,1.6],[0,-1.6]]){assert.equal(ray(model.root,[x+dx,spec.mountY+dy,25],[0,0,-1]).length,0,'Mounting bores pass through shell and PCB');rays++;}
+for(const x of [-9,-5,0,5,9])for(const z of [-2,0,2]){const hits=ray(model.root,[x,23,z],[0,-1,0]);assert.ok(hits.some(h=>h.object.name==='KW4A microswitch body'&&h.point.y>15.7),'Top native opening has the physical switch package');rays++;}
+const pcb=model.root.getObjectByName('Limit circuit board with open mounting bores');assert.equal(ray(pcb,[0,-13,15],[0,0,-1]).length,0,'PCB clears Grove connector insertion');rays++;
+const cavity=ray(model.root,[0,-24,.3],[0,1,0])[0];assert.ok(cavity&&cavity.point.y> -11&&cavity.point.y< -9,'Grove has a real recessed insertion cavity');rays++;
+const port=model.get('grove','port');assert.ok(vec([0,1,0]).applyQuaternion(port.object3d.quaternion).distanceTo(vec([0,-1,0]))<EPS,'Grove outward frame');
+const c=model.get('press','button');assert.ok(c instanceof LeverButton&&c instanceof Button,'Lever uses common Button input class');assert.equal(c.meta.visualMotion,'lever');
+const events=[];model.on('input',e=>events.push({id:e.id,action:e.action,source:e.source,cancelled:e.cancelled}));
+const settle=host=>{let ticks=0;for(;ticks<120;ticks++)if(!host.update(1/60,ticks/60))break;assert.ok(ticks<120,'Mechanism settles to exact endpoint');return ticks;};
+const pivot0=c.object3d.getWorldPosition(new THREE.Vector3()),tip=()=>c.cap.localToWorld(vec([16,0,0]));
+const restTip=tip(),restPlunger=model.limitMechanism.plunger.position.y,blade=c.cap.getObjectByName('Limit metal lever blade');
+const checkHinge=()=>{model.root.updateMatrixWorld(true);assert.ok(c.object3d.getWorldPosition(new THREE.Vector3()).distanceTo(pivot0)<EPS,'Fixed hinge never translates');assert.deepEqual(c.cap.position.toArray(),[0,0,0],'Metal lever is not displaced as a rigid straight push');near(tip().distanceTo(pivot0),16,'Rigid 16mm radius');near(tip().z,restTip.z,'Lever stays in the official hinge plane');};
+model.handle({target:'press',type:'button',action:'press',source:'sim'});model.update(.006,0);checkHinge();assert.ok(c.getState().leverAngleDeg>0&&c.getState().leverAngleDeg<8,'Intermediate pose rotates continuously');
+settle(model);checkHinge();near(c.getState().leverAngleDeg,0,'Fully pressed lever angle');const heldTip=tip();assert.ok(heldTip.y<restTip.y-2,'Tip follows a visible downward arc');assert.ok(heldTip.x>restTip.x+.1,'Tip has the horizontal arc component');near(restPlunger-model.limitMechanism.plunger.position.y,spec.lever.contactTravelMm,'Plunger follows the lever contact arc');
+near(blade.geometry.parameters.width,16,'Metal blade length');near(blade.geometry.parameters.height,.25,'Metal blade has physical thickness');
+const heldEnvelope=boxOf(model.root).getSize(new THREE.Vector3());
+c.onPointerDown({pointerId:77});model.handle({target:'press',action:'release',source:'sim'});settle(model);near(c.angleDeg,0,'Pointer source keeps lever down after simulator source releases');
+c.onPointerCancel({pointerId:77});settle(model);checkHinge();near(c.angleDeg,8,'Pointer cancellation returns physical lever');near(model.limitMechanism.plunger.position.y,restPlunger,'Plunger returns to rest');
+assert.deepEqual(events.map(e=>e.action),['down','up'],'Cancelled multi-source press emits down/up intent only');assert.equal(events[1].cancelled,true);
+assert.throws(()=>model.handle({target:'sensor',type:'sensor',values:{value:1}}),'No electrical/sensor model');
+// Same lever class must remain correct after external cable/Unit pose changes.
+const host=new Device(),hostPort=host.add(new Port({id:'unit',connector:'grove',position:[9,-3,4],rotation:[.2,.1,-.5]}));const module=new GroveModule({cableLength:65});hostPort.attach(module);
+module.get('unitFrame').setPose({position:[8,80,-9],rotation:[.1,-.3,.55]});host.root.updateMatrixWorld(true);const child=host.get('unit/press','button'),childPivot=child.object3d.getWorldPosition(new THREE.Vector3());const routed=[];host.on('input',e=>routed.push(e.id));
+host.handle({target:'unit/press',action:'press',source:'test'});settle(host);host.root.updateMatrixWorld(true);near(child.angleDeg,0,'Attached and rotated lever presses');assert.ok(child.object3d.getWorldPosition(new THREE.Vector3()).distanceTo(childPivot)<EPS,'Attached lever hinge fixed in external pose');assert.equal(routed.at(-1),'unit/press','Grove inputs use common nested path');assert.equal(module.get('cable').getState().wireCount,4,'Shared four-wire cable');
+host.handle({target:'unit/press',action:'release',source:'test'});settle(host);near(child.angleDeg,8,'Attached lever releases');hostPort.detach();host.dispose();module.dispose();model.dispose();
+const report={checkedAt:new Date().toISOString(),status:'pass',scope:'Geometry, articulated visual motion, common input routing and Grove assembly; no electrical/hardware simulation',id:'limit',sku:'U145',meshes,rays,restEnvelopeMm:envelope.toArray(),pressedEnvelopeMm:heldEnvelope.toArray(),cadEnvelopeMm:official.getSize(new THREE.Vector3()).toArray(),lever:{lengthMm:16,restAngleDeg:8,pressedAngleDeg:0,angleEvidence:'Photo-derived visual estimate; rated switch travel unconfirmed'},checks:['official assembled shell pair','physical switch body closes top aperture','clear PCB and mounting/Grove bores','fixed hinge and rigid rotating lever','contact-following plunger','multi-source press and pointer cancellation','nested Grove input routing under rotated Unit pose','no photographic labels or electrical simulation']};
+await fs.mkdir(path.join(root,'docs/research/limit'),{recursive:true});await fs.writeFile(path.join(root,'docs/research/limit/geometry-check.json'),JSON.stringify(report,null,2)+'\n');console.log(`PASS limit: ${meshes} meshes, ${rays} rays; rigid 16mm lever arc, plunger and standalone/Grove multi-source inputs`);

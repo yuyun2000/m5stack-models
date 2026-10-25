@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-10-25T14:16:28.726Z",
+  "origin": "http://127.0.0.1:5188",
+  "models": 39,
+  "actions": [
+    {
+      "id": "cardkb",
+      "pressed": true,
+      "readout": "位移 0.000, 0.000, -0.200 mm · 名义行程 0.2 mm"
+    },
+    {
+      "id": "cardkb",
+      "pressed": false,
+      "readout": "位移 0.000, 0.000, 0.000 mm · 名义行程 0.2 mm"
+    },
+    {
+      "id": "limit",
+      "pressed": true,
+      "readout": "视觉行程 0.557 / 0.5566924038402618 mm · lever"
+    },
+    {
+      "id": "limit",
+      "pressed": false,
+      "readout": "视觉行程 0.000 / 0.5566924038402618 mm · lever"
+    },
+    {
+      "id": "button",
+      "pressed": true,
+      "readout": "视觉行程 0.350 / 0.35 mm · flex-pad"
+    },
+    {
+      "id": "button",
+      "pressed": false,
+      "readout": "视觉行程 0.000 / 0.35 mm · flex-pad"
+    }
+  ],
+  "connections": [
+    {
+      "unit": "limit",
+      "status": "grove → Unit Limit"
+    },
+    {
+      "unit": "cardkb",
+      "status": "grove → CardKB v1.1"
+    }
+  ],
+  "stableGroveDirectionSelector": {
+    "pressed": false,
+    "position": 1,
+    "latching": true
+  },
+  "warningsOrErrors": [],
+  "scope": "Actual public distribution rendered in browser; photos/stickers disabled; standalone and connected visual inputs only"
+}

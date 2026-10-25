@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-10-25T14:13:46.243Z",
+  "status": "pass",
+  "scope": "Geometry, articulated visual motion, common input routing and Grove assembly; no electrical/hardware simulation",
+  "id": "limit",
+  "sku": "U145",
+  "meshes": 32,
+  "rays": 27,
+  "restEnvelopeMm": [
+    24,
+    35,
+    9.5
+  ],
+  "pressedEnvelopeMm": [
+    24,
+    33.005663356724725,
+    9.5
+  ],
+  "cadEnvelopeMm": [
+    24,
+    31.947620391845703,
+    9.5
+  ],
+  "lever": {
+    "lengthMm": 16,
+    "restAngleDeg": 8,
+    "pressedAngleDeg": 0,
+    "angleEvidence": "Photo-derived visual estimate; rated switch travel unconfirmed"
+  },
+  "checks": [
+    "official assembled shell pair",
+    "physical switch body closes top aperture",
+    "clear PCB and mounting/Grove bores",
+    "fixed hinge and rigid rotating lever",
+    "contact-following plunger",
+    "multi-source press and pointer cancellation",
+    "nested Grove input routing under rotated Unit pose",
+    "no photographic labels or electrical simulation"
+  ]
+}

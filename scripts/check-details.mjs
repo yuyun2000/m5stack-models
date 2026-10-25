@@ -3,7 +3,7 @@ import {loadModel} from '../src/loaders.js';
 
 // Keep product-specific mechanical regressions in the normal check command.
 const checks=[];
-for(const script of ['check-header-sockets.mjs','check-stopwatch-assembly.mjs','check-stackchan-assembly.mjs','check-classic-unit-connectors.mjs','check-tab5-connectors.mjs','check-cardputer-zero-assembly.mjs','check-ir-hub-rfid2.mjs','check-rs485-buzzer-fan.mjs','check-grove-cable.mjs']){
+for(const script of ['check-header-sockets.mjs','check-stopwatch-assembly.mjs','check-stackchan-assembly.mjs','check-classic-unit-connectors.mjs','check-tab5-connectors.mjs','check-cardputer-zero-assembly.mjs','check-ir-hub-rfid2.mjs','check-rs485-buzzer-fan.mjs','check-grove-cable.mjs','check-limit-lever.mjs']){
  await import(new URL(script,import.meta.url));
  checks.push({script:`scripts/${script}`,status:'pass'});
 }
@@ -21,12 +21,17 @@ for(const [script,id,exportName]of [
  ['check-paper-assembly.mjs','papermono','checkPaperMonoAssembly'],
  ['check-paper-assembly.mjs','papercolor','checkPaperColorAssembly'],
  ['check-core2-assembly.mjs','core2','checkCore2Assembly'],
- ['check-nanoc6-assembly.mjs','nanoc6','checkNanoC6Assembly']
+ ['check-nanoc6-assembly.mjs','nanoc6','checkNanoC6Assembly'],
+ ['check-cardputer-adv-assembly.mjs','cardputer-adv','checkCardputerADVAssembly']
 ]){
  const test=(await import(new URL(script,import.meta.url)))[exportName],model=await loadModel(id);
  try{const result=test(model);checks.push({script:`scripts/${script}`,product:id,...result});console.log(`PASS ${id} assembly:`,JSON.stringify(result));}finally{model.dispose();}
 }
 const dynamics=[];
+const {checkCardKB}=await import('./check-cardkb.mjs');
+dynamics.push({script:'scripts/check-cardkb.mjs',...await checkCardKB()});
+const {checkUnitActuators}=await import('./check-unit-actuators.mjs');
+dynamics.push({script:'scripts/check-unit-actuators.mjs',...await checkUnitActuators()});
 const {checkButtonActuation}=await import('./check-button-actuation.mjs');
 dynamics.push({script:'scripts/check-button-actuation.mjs',...await checkButtonActuation()});
 const {checkDeviceActuators,DEVICE_BUTTON_COUNTS}=await import('./check-device-actuators.mjs');

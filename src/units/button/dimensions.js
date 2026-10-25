@@ -13,6 +13,7 @@ export const spec={
     8
   ],
   "mountY": -4.0,
+  "keymap": {"Space":"press","Enter":"press"},
   "grove": {
     "position": [
       0,

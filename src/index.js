@@ -40,3 +40,5 @@ export {Model as Rfid2Unit,GroveModule as Rfid2UnitModule} from './units/rfid2/i
 export {Model as Rs485Unit,GroveModule as Rs485UnitModule} from './units/rs485/index.js';
 export {Model as BuzzerUnit,GroveModule as BuzzerUnitModule} from './units/buzzer/index.js';
 export {Model as FanUnit,GroveModule as FanUnitModule} from './units/fan/index.js';
+export {Model as LimitUnit,GroveModule as LimitUnitModule} from './units/limit/index.js';
+export {Model as CardKBUnit,GroveModule as CardKBUnitModule} from './units/cardkb/index.js';

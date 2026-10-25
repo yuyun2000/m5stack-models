@@ -3,13 +3,16 @@ import {pathToFileURL} from 'node:url';
 import * as THREE from 'three';
 import {loadModel} from '../src/loaders.js';
 
-export const DEVICE_BUTTON_COUNTS={sticks3:3,cores3:2,stopwatch:3,'cardputer-adv':59,'cardputer-zero':48,papermono:3,core2:5,papercolor:4,nanoc6:1,stackchan:2,tab5:2,atoms3r:2,'nesso-n1':2,stamplc:4};
+export const DEVICE_BUTTON_COUNTS={sticks3:3,cores3:2,stopwatch:3,'cardputer-adv':60,'cardputer-zero':48,papermono:3,core2:5,papercolor:4,nanoc6:1,stackchan:2,tab5:2,atoms3r:2,'nesso-n1':2,stamplc:4};
 const settle=model=>{for(let i=0;i<80;i++)model.update(1/60);model.root.updateMatrixWorld(true);};
 const physicalMeshes=button=>{const meshes=[];button.cap.traverse(o=>{if(o.isMesh&&(Array.isArray(o.material)?o.material:[o.material]).some(m=>m.opacity>.05))meshes.push(o);});return meshes;};
 function visiblePoint(meshes,out){
- let max=-Infinity;for(const mesh of meshes){const ps=mesh.geometry.attributes.position;for(let i=0;i<ps.count;i++)max=Math.max(max,new THREE.Vector3().fromBufferAttribute(ps,i).applyMatrix4(mesh.matrixWorld).dot(out));}
+ // Use the outward triangle envelope. On a curved cap, the highest single
+ // vertex may be farther than .12 mm from every surface triangle centroid.
+ const faces=[];let max=-Infinity;
+ for(const mesh of meshes){const ps=mesh.geometry.attributes.position,index=mesh.geometry.index;for(let i=0;i<(index?.count??ps.count);i+=3){const p=Array.from({length:3},(_,k)=>new THREE.Vector3().fromBufferAttribute(ps,index?index.getX(i+k):i+k).applyMatrix4(mesh.matrixWorld)),normal=p[1].clone().sub(p[0]).cross(p[2].clone().sub(p[0])),area=normal.length();if(!area||normal.normalize().dot(out)<.5)continue;const center=p[0].add(p[1]).add(p[2]).multiplyScalar(1/3);faces.push({center,area});max=Math.max(max,center.dot(out));}}
  const sum=new THREE.Vector3();let weight=0;
- for(const mesh of meshes){const ps=mesh.geometry.attributes.position,index=mesh.geometry.index;for(let i=0;i<(index?.count??ps.count);i+=3){const p=Array.from({length:3},(_,k)=>new THREE.Vector3().fromBufferAttribute(ps,index?index.getX(i+k):i+k).applyMatrix4(mesh.matrixWorld)),normal=p[1].clone().sub(p[0]).cross(p[2].clone().sub(p[0])),area=normal.length();if(!area||normal.normalize().dot(out)<.5)continue;const center=p[0].add(p[1]).add(p[2]).multiplyScalar(1/3);if(center.dot(out)<max-.12)continue;sum.addScaledVector(center,area);weight+=area;}}
+ for(const {center,area}of faces){if(center.dot(out)<max-.12)continue;sum.addScaledVector(center,area);weight+=area;}
  assert.ok(weight>0,'A physical actuator has an outward visible surface');return sum.multiplyScalar(1/weight);
 }
 function belongs(object,button){for(let o=object;o;o=o.parent)if(o===button.cap)return true;return false;}

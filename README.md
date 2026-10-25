@@ -1,6 +1,6 @@
 # m5stack-models.js
 
-基于 Three.js 与 sticks3.js 建模方法的 M5Stack 毫米尺度交互模型库。当前包含 **14 款主机、23 款 Unit，共 37 款模型**。目录状态全部为 `modeled`，尚未逐款完成全部视角与官方参考图的视觉验收。
+基于 Three.js 与 sticks3.js 建模方法的 M5Stack 毫米尺度交互模型库。当前包含 **14 款主机、25 款 Unit，共 39 款模型**。目录状态全部为 `modeled`，尚未逐款完成全部视角与官方参考图的视觉验收。
 
 模型提供外观、实体按键行程、稳定开关、旋转/倾斜关节和 Grove 插头线缆的视觉运动。屏幕接收外部帧缓冲，控件输出输入意图；固件、电气、协议、传感器数值及设备物理行为由下游系统提供。
 
@@ -9,6 +9,12 @@
 ![外部驱动风扇](artifacts/dynamics/fan-motion.gif)
 
 [主机外壳展示](artifacts/dynamics/controllers-overview.jpg) · [Unit 连接展示](artifacts/dynamics/connections-overview.jpg)
+
+本轮新增 Limit U145 和 CardKB v1.1 U035-B，并精修 Cardputer-ADV 接口/接缝、Button 原壳柔性按压、Dual Button 实体彩帽与 Joystick 表面。新增代码采用用户确认的 MIT。
+
+![当前六款机械细化](artifacts/refinement/overview.jpg)
+
+[两款新 Unit 接线](artifacts/refinement/connections.jpg) · [Limit 实际按压回位](artifacts/refinement/limit-press.gif)
 
 ## 本地运行
 

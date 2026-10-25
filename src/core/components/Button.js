@@ -156,6 +156,12 @@ export class Button extends Component {
     return this.latching ? { pressed: this.pressed, position: this.position, latching: true } : { pressed: this.pressed };
   }
 
+  /** Visual travel shared by linear, flexing and lever-shaped actuators. */
+  getActuationState() {
+    const targetDepthMm = this.latching ? this.position * this.travel : this.pressed ? this.travel : 0;
+    return { depthMm: this.#depth, targetDepthMm, settled: this.#depth === targetDepthMm };
+  }
+
   dispose() {
     clearTimeout(this.#longTimer);
     for (const timer of this.#clickTimers) clearTimeout(timer);

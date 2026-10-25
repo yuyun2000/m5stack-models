@@ -11,7 +11,7 @@ globalThis.document={createElement:()=>({getContext:()=>ctx})};
 const root=path.resolve(import.meta.dirname,'..');
 const catalog=JSON.parse(await fs.readFile(path.join(root,'catalog/products.json'),'utf8'));
 const unitIds=catalog.products.filter(p=>p.category==='unit'&&p.integration?.moduleExport).map(p=>p.id);
-assert.equal(unitIds.length,23,'the complete current Unit family is covered');
+assert.equal(unitIds.length,25,'the complete current Unit family is covered');
 const Y=new THREE.Vector3(0,1,0),rows=[-3,-1,1,3];let endpointChecks=0,collisionRays=0;
 const near=(a,b,message)=>assert.ok(a.distanceTo(b)<2e-5,`${message}: ${a.toArray()} / ${b.toArray()}`);
 function ringCenter(mesh,ring){
@@ -92,11 +92,18 @@ frame.object3d.position.x+=8;frame.object3d.rotation.z+=.2;atom.update(1/60,3);c
 const before=frame.getState();assert.throws(()=>frame.setDistance(2),RangeError);assert.deepEqual(frame.getState(),before,'invalid length leaves the Unit pose intact');
 assert.throws(()=>buzzer.get('cable').setOptions({bend:[0,0,0]}),RangeError);atom.dispose();
 
+// Corrected ADV socket and the large left-input keyboard need real-host
+// checks as well as the synthetic mating frame used above.
+for(const id of ['limit','cardkb']){
+ const adv=await loadModel('cardputer-adv'),port=adv.get('grove'),unit=await loadGroveModule(id,{cableLength:85,cable:{slack:16}});
+ port.attach(unit);checkEndpoints(adv,port,unit);checkShellClearance(adv,unit);adv.dispose();
+}
+
 // Nested passive-HUB output ports keep their original transform and path.
 const host=new Device(),port=host.add(new Port({id:'grove',connector:'grove',rotation:[.25,.4,-.3]})),hub=await loadGroveModule('hub',{cableLength:55}),leaf=await loadGroveModule('env-iii',{cableLength:70});
 port.attach(hub);const output=hub.get('grove-1');output.attach(leaf);hub.get('unitFrame').setPose({position:[20,80,0],rotation:[.2,-.1,.5]});host.root.rotation.set(.2,.3,-.4);host.update(1/60,4);
 checkEndpoints(host,port,hub);checkEndpoints(host,output,leaf);assert.equal(host.get('grove/grove-1/sensor').path,'grove/grove-1/sensor');
 host.dispose();assert.equal(leaf.components.size,0,'nested leaf is disposed');
 
-await fs.writeFile(path.join(root,'artifacts/grove-cable-check.json'),JSON.stringify({checkedAt:new Date().toISOString(),scope:'visual cable geometry and public assembly API; no electrical or bus simulation',status:'pass',unitCount:unitIds.length,endpointChecks,collisionRays,reports,additional:['real AtomS3R source enclosure','length and external anchor updates','nested rotated HUB attachment','detach reuse and exactly-once cable buffer disposal']},null,2)+'\n');
+await fs.writeFile(path.join(root,'artifacts/grove-cable-check.json'),JSON.stringify({checkedAt:new Date().toISOString(),scope:'visual cable geometry and public assembly API; no electrical or bus simulation',status:'pass',unitCount:unitIds.length,endpointChecks,collisionRays,reports,additional:['real AtomS3R source enclosure','real Cardputer-ADV source with Limit and left-input CardKB','length and external anchor updates','nested rotated HUB attachment','detach reuse and exactly-once cable buffer disposal']},null,2)+'\n');
 console.log(`PASS Grove cable: ${unitIds.length} Units, ${endpointChecks} endpoint checks, ${collisionRays} physical shell-clearance rays`);

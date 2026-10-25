@@ -36,7 +36,9 @@ const bindings={
   "rfid2": {load:()=>import("./units/rfid2/index.js"),exportName:"Model",moduleExport:"GroveModule"},
   "rs485": {load:()=>import("./units/rs485/index.js"),exportName:"Model",moduleExport:"GroveModule"},
   "buzzer": {load:()=>import("./units/buzzer/index.js"),exportName:"Model",moduleExport:"GroveModule"},
-  "fan": {load:()=>import("./units/fan/index.js"),exportName:"Model",moduleExport:"GroveModule"}
+  "fan": {load:()=>import("./units/fan/index.js"),exportName:"Model",moduleExport:"GroveModule"},
+  "limit": {load:()=>import("./units/limit/index.js"),exportName:"Model",moduleExport:"GroveModule"},
+  "cardkb": {load:()=>import("./units/cardkb/index.js"),exportName:"Model",moduleExport:"GroveModule"}
 };
 export const implementedModelIds=Object.freeze(Object.keys(bindings));
 export async function loadModelClass(id){const b=bindings[id];if(!b)throw new Error('Visual model is not implemented: '+id);return (await b.load())[b.exportName];}
