@@ -1,22 +1,22 @@
 # m5stack-models.js
 
-基于 Three.js 与 sticks3.js 建模方法的 M5Stack 毫米尺度交互模型库。目前包含 **14款主机、29款Unit，共43款模型**，全部保持 `modeled`，逐款精细外观验收继续进行。
+基于 Three.js 与 sticks3.js 建模方法的 M5Stack 毫米尺度交互模型库。目前包含 **14款主机、29款Unit，共43款模型**，全部保持 `modeled`，`verified` 为0，逐款精细外观验收继续进行。
 
-模型提供实体按键压放、稳定开关、旋转和倾斜关节、Grove插头与四芯线缆，以及外部指定的灯光和帧缓冲。控件输出输入意图，固件、电气、协议和传感数据由下游系统提供。
+![Encoder U135实体装配](artifacts/encoder-detail/public/encoder-iso.png)
 
-![Heart开顶Grove插座近照](artifacts/grove-open-top/heart-grove-front-close.png)
+本批细化 **Encoder U135**：保留官方外壳位置与拓扑，围绕原始轴线补齐直径10mm旋钮、封闭盲帽、PCB、编码器主体和折弯焊腿，补齐下端两颗RGB封装与白壳漫透外观。按下行程为0.35mm，支持旋转、按压和两路外部灯光输入。
 
-本批重建 **Heart U029 和 RS485 U034 的开顶Grove插座**，补齐厚上唇、中央短锁定舌、四个短接触端和凹入底部支承。Heart依据自身官方开口图和壳体基准将工程接口中心Z从0调整为1.4mm，并为PCB增加开放边切口，清除接口通道堵塞。
+![两路RGB外观](artifacts/encoder-detail/public/encoder-leds-both.png)
 
-![RS485开顶插座与外壳](artifacts/grove-open-top/rs485-socket-iso.png)
+公开构建已独立通过 `npm run check`、`npm run build` 和预览健康检查。实际浏览器30场景、40张独立原生截图通过，覆盖七视图、双RGB独立点亮与复位、角度和按压、连续18rpm旋转、画布指针与双来源按压，以及StickS3经HUB连接、姿态、可见LED和拆卸。38张静止图与冻结原始截图逐张RGB一致；两张连续旋转图保留实时相位和差异。原始console、请求、运行时哈希及截图字段完整保存，应用请求失败与阻断错误为0。
 
-公开构建已独立通过 `npm run check`、`npm run build` 和预览健康检查。实际浏览器45场景、59张独立原生截图通过，覆盖三种装配各七视图及接口近照、Heart红灯off/on/off、RS485四螺钉45°和复位，以及StickS3→HUB→Heart、StickS3→RS485接线、姿态和拆卸。59张公开截图与原始最终截图逐张RGB一致；原生console中的软件GL warning与favicon404保留，应用请求失败和pageerror为0。
+![接线后可见LED](artifacts/encoder-detail/public/sticks3-hub-encoder-visible-led0-on.png)
 
-[本批独立验证](artifacts/grove-open-top/public/review.json) · [来源审计](artifacts/grove-open-top/public/source-audit.json) · [下游Agent接入](docs/AGENT-INTEGRATION.md)
+[本批独立验证](artifacts/encoder-detail/public/review.json) · [来源审计](artifacts/encoder-detail/public/source-audit.json) · [下游Agent接入](docs/AGENT-INTEGRATION.md)
 
-默认GroveModule会自动按新接口对齐；显式unitPose仍指装配原点，调用者应读取实际Port变换。原Port实例、名称、方向、hitSize、嵌套路径和全局插头/线缆保持兼容。
+Encoder自身Grove接口中心Z从0迁移至−0.6mm，默认GroveModule自动对齐；显式unitPose仍表示装配原点。Port挂接回调、父子装配和已有接口保持兼容，调用约束见Agent接入文档。
 
-**贴纸继续等待原文件，不用照片裁图遮缺件。** 插座内腔、唇部、短针、底部支承和PCB缺口仍含照片推导；Heart旧PCB外边缘与源壳壁局部交叠、StackChan隐藏舵机交叠和生产装配基准仍待解决。有限数字采样和浏览器渲染不证明制造配合或实物功能。
+**贴纸继续等待原文件。** 隐藏PCB与封装尺寸、折腿、0.35mm行程和漫透效果仍含外观推导，左右灯的视觉地址不代表原理图LED编号。有限几何采样与浏览器渲染不证明制造配合、固件行为、正交脉冲、电气或光学性能。StackChan生产基准与隐藏交叠、Heart既有PCB边缘交叠继续记录为待解决项。
 
 ## 本地运行
 

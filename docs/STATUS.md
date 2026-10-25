@@ -36,7 +36,7 @@
 | Unit | Button | modeled | 24 × 32 × 8 | 原生按压片弯曲、精确回位及七视图已检查；后续校准未确认行程和隐藏包装，贴纸等待原文件 |
 | Unit | NCIR | modeled | 24 × 32 × 8.6 | 优先逐面检查装配闭合与真实开口；贴纸等待用户原文件 |
 | Unit | Heart Rate | modeled | 24 × 32 × 8 | 继续收敛隐藏PCB外边缘／安装柱避让及照片推导的座内结构，保持真实口面与线缆配合；贴纸等待原文件。 |
-| Unit | Encoder | modeled | 24 × 32 × 25.4 | 优先逐面检查装配闭合与真实开口；贴纸等待用户原文件 |
+| Unit | Encoder | modeled | 24 × 32 × 25.4 | 继续核准隐藏件尺寸、额定按程与壳体透光外观；本批数字模型专项证据见artifacts/encoder-detail/public/review.json，贴纸等待原文件。 |
 | Unit | Thermal | modeled | 24 × 32 × 8.6 | 优先逐面检查装配闭合与真实开口；贴纸等待用户原文件 |
 | Unit | Mini TVOC/eCO2 | modeled | 24 × 24 × 8 | 优先逐面检查装配闭合与真实开口；贴纸等待用户原文件 |
 | Unit | IR | modeled | 24 × 32 × 8 | 七视图与双光学封装/接口腔体已复核；精修照片推导透镜尺寸，贴纸等待原文件 |

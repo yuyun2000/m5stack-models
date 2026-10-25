@@ -1,7 +1,23 @@
 {
-  "checkedAt": "2026-10-25T22:18:25.568Z",
+  "checkedAt": "2026-10-25T23:19:17.900Z",
   "scope": "Actual control movement and externally driven visual kinematics; no hardware/runtime validation",
   "checks": [
+    {
+      "script": "scripts/check-encoder-assembly.mjs",
+      "status": "pass",
+      "sku": "U135",
+      "motionCases": 4,
+      "rays": 12,
+      "pcbMaterialSamples": 2994,
+      "trackedResources": 426,
+      "axisMm": [
+        -0.0130000268,
+        7.9499998353,
+        6
+      ],
+      "movingCapDiameterMm": 10.000000230135939,
+      "scope": "Native geometry, retained holes, product-local board/controls/cable and material state; optical spread/hidden shapes/press travel inferred, not manufacturing or electrical verification"
+    },
     {
       "script": "scripts/check-open-top-grove.mjs",
       "status": "pass",
@@ -753,7 +769,7 @@
     },
     {
       "script": "scripts/check-roller485.mjs",
-      "checkedAt": "2026-10-25T22:16:52.025Z",
+      "checkedAt": "2026-10-25T23:17:46.148Z",
       "status": "pass",
       "sku": "U182",
       "variant": "standard-slip-ring",
@@ -987,6 +1003,76 @@
         }
       ],
       "nestedFreshSnapshot": "hub/grove-1/sensor",
+      "attachmentNotificationCases": [
+        {
+          "phase": "onAttach",
+          "rejected": [
+            "detach-dispose",
+            "detach-retain",
+            "replacement",
+            "transfer"
+          ],
+          "events": [
+            "input:detach",
+            "input:attach",
+            "module:attach"
+          ],
+          "resourcesDisposedOnce": true
+        },
+        {
+          "phase": "input-attach",
+          "rejected": [
+            "detach-dispose",
+            "detach-retain",
+            "replacement",
+            "transfer"
+          ],
+          "events": [
+            "input:detach",
+            "input:attach",
+            "module:attach"
+          ],
+          "resourcesDisposedOnce": true
+        },
+        {
+          "phase": "module-attach",
+          "rejected": [
+            "detach-dispose",
+            "detach-retain",
+            "replacement",
+            "transfer"
+          ],
+          "events": [
+            "input:detach",
+            "input:attach",
+            "module:attach"
+          ],
+          "resourcesDisposedOnce": true
+        },
+        {
+          "phase": "onAttach",
+          "uncaughtDetach": "rejected",
+          "events": [],
+          "resourcesDisposedOnce": true
+        },
+        {
+          "phase": "input-attach",
+          "uncaughtDetach": "rejected",
+          "events": [
+            "input:attach"
+          ],
+          "resourcesDisposedOnce": true
+        },
+        {
+          "phase": "module-attach",
+          "uncaughtDetach": "rejected",
+          "events": [
+            "input:attach",
+            "module:attach"
+          ],
+          "resourcesDisposedOnce": true
+        }
+      ],
       "cases": [
         "fresh public state and recursive real module snapshots",
         "same-port idempotence",
@@ -1000,6 +1086,8 @@
         "nested actual HUB event bubbling",
         "reentrant detach protection",
         "transaction rejects will-detach and post-detach reattachment",
+        "attach callbacks cannot detach, dispose, replace or transfer the candidate",
+        "uncaught attach callback detach retains ownership without stale notifications",
         "pending destination disposal cannot revive its module",
         "ancestry revalidated after source and destination detach callbacks",
         "scene-only cycle rejection",
@@ -1007,13 +1095,13 @@
         "real HUB/Fan rigid transfer retains four-wire buffers",
         "retained then exactly-once resource disposal"
       ],
-      "probeResources": 108,
+      "probeResources": 180,
       "realCableBuffers": 8,
       "scope": "Public Module/Port ownership, lifecycle events and visual state only; no electrical, firmware or private source dependency"
     },
     {
       "script": "scripts/check-viewer-lifecycle.mjs",
-      "checkedAt": "2026-10-25T22:17:31.868Z",
+      "checkedAt": "2026-10-25T23:18:25.237Z",
       "status": "pass",
       "checks": [
         "same Viewer mount idempotence",
@@ -1617,7 +1705,7 @@
     },
     {
       "script": "scripts/check-8encoder.mjs",
-      "checkedAt": "2026-10-25T22:18:19.723Z",
+      "checkedAt": "2026-10-25T23:19:12.116Z",
       "status": "pass",
       "scope": "Appearance/geometry/input intent only; no encoder count, electrical or firmware simulation",
       "sku": "U153",

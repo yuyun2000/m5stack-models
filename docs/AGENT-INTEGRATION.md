@@ -124,6 +124,24 @@ StackChan 的前侧 Power 板跟随 pitch，下端 Adapter 跟随 yaw，七根�
 
 `getState()` 提供 `angleDeg`、`targetAngleDeg`、`rpm`、`transitioning`、`continuous`、`rangeDeg`、`visualRangeDeg`、`demoRpmMax`。绝对角度命令停止原有 rpm；新的 rpm 命令取消原有角度插值。模型不自动运行点头、摆头、测量或固件逻辑。
 
+## Encoder U135
+
+`rotation`、`press` 与独立的 `led0/led1` 保留原寻址，挂到主机后使用 `grove/rotation`、`grove/press`、`grove/led0` 等递归路径。实际Ø10黑帽和轴绕原CAD collar拟合轴 `[-0.0130000268,7.9499998353,6]` mm旋转；0.35 mm按压仅为外观行程估计。固定支撑、PCB和Grove座保持静止，不生成编码计数、脉冲、I2C或固件行为。
+
+两RGB位于Grove两侧下端，`led0/led1`分别表示正视左/右，尚未确认对应原理图LED1/LED2的电气顺序。官方视频显示白壳下端漫透；外部颜色/亮度驱动原前壳自身的局部emissive外观，默认熄灭，按压/转动不自动改变灯色。这不声明光学材料或光线输运模拟。
+
+```js
+const encoder = await loadGroveModule('encoder', {cableLength:70});
+host.port('grove').attach(encoder);
+host.get('grove/rotation').set({angleDeg:90});
+host.button('grove/press').press('preview');
+host.button('grove/press').release('preview');
+host.handle({type:'led',target:'grove/led0',color:'#22b477',brightness:.4});
+host.handle({type:'led',target:'grove/led1',on:false});
+```
+
+U135实际 `grove` 口面原点由旧 `[0,-15.65,0]` 更正为 `[0,-15.65,-0.6]` mm，Z取自该产品原壳 `-3.2…2` mm开口中点。`loadGroveModule`和`unitFrame.setDistance`按真实口面重新对齐；直接使用旧Port工程坐标的布局应读取当前Port变换，显式`unitPose.position`仍为装配原点。隐藏PCB/包体/焊腿、帽轴深度、口内尺寸和漫透亮斑范围仍为推导。公开来源与推导见[Encoder来源记录](../source-manifest.json)，专项审查见[Encoder审查记录](../artifacts/encoder-detail/public/review.json)，当前stage保持`modeled`。
+
 ## Grove 装配坐标
 
 `Port` 原点在口面，局部 +Y 向外、+Z 朝宿主正面，1 单位 = 1 mm。`cableLength` 兼容旧入口，表示初始口面间距，曲线实际长度请读 `cable.getState().curveLengthMm`。
@@ -290,7 +308,7 @@ host.dispose();      // 最终清理 geometry/material/timer。
 viewer.dispose();
 ```
 
-同一 Module 实例再次 `attach` 到原接口是幂等操作；挂到另一兼容接口时会从旧口安全转移，保留实例状态和资源。兼容性与循环挂载检查发生在装配变更前。同步生命周期回调不能重挂正在装卸的同一实例或正在挂载的目标口，应等当前调用结束后再发起下一次装配。默认 `detach()` 销毁实例；需要缓存时使用 `detach({dispose:false})`，最终由调用方销毁。
+同一 Module 实例再次 `attach` 到原接口是幂等操作；挂到另一兼容接口时会从旧口安全转移，保留实例状态和资源。兼容性与循环挂载检查发生在装配变更前。同步生命周期回调不能重挂正在装卸的同一实例或正在挂载的目标口，也不能拆卸正在挂接的新实例；这些操作会抛错，应等当前调用结束后再发起下一次装配（例如使用 `queueMicrotask`）。替换目标口旧实例时的正常拆卸不受影响。默认 `detach()` 销毁实例；需要缓存时使用 `detach({dispose:false})`，最终由调用方销毁。
 
 拆卸前会沿原宿主链同步发出 `module:will-detach`，事件载荷为 `{port,module}`。此时旧路径和父子关系仍有效，适合取消将被移除子树中的外部输入；它是生命周期事件，不是新的 `input` action。查看器与 demo 只取消各自持有的输入，无关按钮继续保持。外部框架创建的 hold 应由该框架取消，并在更改父链前完成配对；取消使用 `button.cancel(source)`，不会产生 click。
 

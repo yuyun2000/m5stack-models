@@ -199,6 +199,65 @@ export async function checkPortLifecycle(){
   other.attach(transferring);assert.equal(target.module,null);intruderResources.disposed();transferringResources.retained();
   transactionHost.dispose();transferringResources.disposed();
 
+  let attachmentCallbackResources=0;
+  const attachmentNotificationCases=[];
+  for(const phase of ['onAttach','input-attach','module-attach']){
+    const host=new Device(),port=makePort(host,'target'),otherPort=makePort(host,'other');
+    const candidate=new ProbeModule(),candidateResources=resources(candidate),previous=new ProbeModule(),previousResources=resources(previous),replacement=new ProbeModule(),replacementResources=resources(replacement);
+    port.attach(previous);otherPort.attach(replacement);
+    const events=[];let calls=0;
+    const checkOwned=()=>{
+      assert.ok(port.module===candidate,'Attachment callbacks retain the candidate owner');
+      assert.ok(candidate.attachedTo===port&&candidate.parentHost===host,'Attachment callbacks retain the candidate parent chain');
+      assert.ok(candidate.root.parent===port.object3d,'Attachment callbacks retain the candidate scene root');
+      candidateResources.retained();replacementResources.retained();
+    };
+    const attemptChanges=()=>{
+      calls++;checkOwned();
+      assert.throws(()=>port.detach(),/attaching/,'An attach callback cannot dispose the candidate');
+      assert.throws(()=>port.detach({dispose:false}),/attaching/,'An attach callback cannot unlink the candidate');
+      assert.throws(()=>port.attach(replacement),/attaching/,'An attach callback cannot replace the candidate');
+      assert.throws(()=>otherPort.attach(candidate),/transaction/,'An attach callback cannot transfer the candidate');
+      checkOwned();assert.ok(otherPort.module===replacement,'Rejected replacement keeps its old owner');
+    };
+    const offWill=host.on('module:will-detach',({port:leavingPort,module:leaving})=>{
+      if(leavingPort===port&&leaving===previous)assert.ok(port.detach({dispose:false})===previous,'Internal replacement retains reentrant detach idempotence');
+    });
+    const offInput=host.on('input',event=>{
+      if(event.id!=='target')return;
+      events.push('input:'+event.action);
+      if(event.action==='attach'){checkOwned();if(phase==='input-attach')attemptChanges();}
+    });
+    const offAttach=host.on('module:attach',({port:attachedPort,module:attached})=>{
+      if(attachedPort!==port)return;
+      assert.ok(attached===candidate,'A successful attachment event names the live candidate');checkOwned();events.push('module:attach');
+      if(phase==='module-attach')attemptChanges();
+    });
+    if(phase==='onAttach')candidate.onAttach=attemptChanges;
+    const returned=port.attach(candidate);
+    assert.ok(returned===candidate,'A successful attach returns its live candidate');checkOwned();
+    assert.equal(calls,1);assert.deepEqual(events,['input:detach','input:attach','module:attach']);previousResources.disposed();
+    offWill();offInput();offAttach();candidate.onAttach=()=>{};
+    const saved=port.detach({dispose:false});assert.ok(saved===candidate,'Normal detach is available once attach has returned');candidateResources.retained();
+    port.attach(saved);host.dispose();candidateResources.disposed();replacementResources.disposed();previousResources.disposed();
+    attachmentNotificationCases.push({phase,rejected:['detach-dispose','detach-retain','replacement','transfer'],events,resourcesDisposedOnce:true});
+    attachmentCallbackResources+=candidateResources.size+previousResources.size+replacementResources.size;
+  }
+
+  // Uncaught forbidden operations propagate without returning a disposed
+  // candidate or emitting a later success notification for a missing owner.
+  for(const phase of ['onAttach','input-attach','module-attach']){
+    const host=new Device(),port=makePort(host,'target'),candidate=new ProbeModule(),candidateResources=resources(candidate),events=[];
+    host.on('input',event=>{if(event.action==='attach'){events.push('input:attach');if(phase==='input-attach')port.detach();}});
+    host.on('module:attach',({module:attached})=>{assert.ok(attached===candidate&&port.module===candidate&&candidate.attached,'An observed success event always has a live owner');events.push('module:attach');if(phase==='module-attach')port.detach();});
+    if(phase==='onAttach')candidate.onAttach=()=>port.detach();
+    assert.throws(()=>port.attach(candidate),/attaching/,'An uncaught forbidden detach is reported to the caller');
+    assert.ok(port.module===candidate&&candidate.attachedTo===port&&candidate.root.parent===port.object3d,'A rejected detach leaves the installed candidate intact');candidateResources.retained();
+    assert.deepEqual(events,phase==='onAttach'?[]:phase==='input-attach'?['input:attach']:['input:attach','module:attach']);
+    candidate.onAttach=()=>{};host.dispose();candidateResources.disposed();
+    attachmentNotificationCases.push({phase,uncaughtDetach:'rejected',events,resourcesDisposedOnce:true});attachmentCallbackResources+=candidateResources.size;
+  }
+
   let callbackAncestryResources=0;
   for(const phase of ['source-will','target-post']){
     const host=new Device(),oldPort=makePort(host,'old'),branchPort=makePort(host,'branch');
@@ -267,7 +326,7 @@ export async function checkPortLifecycle(){
   assert.equal(unhosted.module,null);assert.equal(detached.attachedTo,null);detachedResources.retained();
   unhosted.dispose();detached.dispose();detachedResources.disposed();
 
-  return {status:'pass',freshSnapshots,nestedFreshSnapshot:'hub/grove-1/sensor',cases:['fresh public state and recursive real module snapshots','same-port idempotence','same-host transfer','cross-host transfer','destination replacement','descendant promotion before former-parent disposal','validation before mutation','self and descendant cycle rejection','old-path synchronous cancellation','nested actual HUB event bubbling','reentrant detach protection','transaction rejects will-detach and post-detach reattachment','pending destination disposal cannot revive its module','ancestry revalidated after source and destination detach callbacks','scene-only cycle rejection','single-tick rpm after transfer','real HUB/Fan rigid transfer retains four-wire buffers','retained then exactly-once resource disposal'],probeResources:owned.size+replacedResources.size+hatResources.size+nestedResources.size+guardResources.size+leafResources.size+detachedResources.size+formerParentResources.size+promotedResources.size+transferringResources.size+incumbentResources.size+intruderResources.size+callbackAncestryResources,realCableBuffers:cableBuffers.length,scope:'Public Module/Port ownership, lifecycle events and visual state only; no electrical, firmware or private source dependency'};
+  return {status:'pass',freshSnapshots,nestedFreshSnapshot:'hub/grove-1/sensor',attachmentNotificationCases,cases:['fresh public state and recursive real module snapshots','same-port idempotence','same-host transfer','cross-host transfer','destination replacement','descendant promotion before former-parent disposal','validation before mutation','self and descendant cycle rejection','old-path synchronous cancellation','nested actual HUB event bubbling','reentrant detach protection','transaction rejects will-detach and post-detach reattachment','attach callbacks cannot detach, dispose, replace or transfer the candidate','uncaught attach callback detach retains ownership without stale notifications','pending destination disposal cannot revive its module','ancestry revalidated after source and destination detach callbacks','scene-only cycle rejection','single-tick rpm after transfer','real HUB/Fan rigid transfer retains four-wire buffers','retained then exactly-once resource disposal'],probeResources:owned.size+replacedResources.size+hatResources.size+nestedResources.size+guardResources.size+leafResources.size+detachedResources.size+formerParentResources.size+promotedResources.size+transferringResources.size+incumbentResources.size+intruderResources.size+callbackAncestryResources+attachmentCallbackResources,realCableBuffers:cableBuffers.length,scope:'Public Module/Port ownership, lifecycle events and visual state only; no electrical, firmware or private source dependency'};
 }
 
 if(process.argv[1]&&pathToFileURL(process.argv[1]).href===import.meta.url){

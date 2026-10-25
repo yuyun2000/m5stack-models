@@ -1,0 +1,742 @@
+{
+  "checkedAt": "2026-10-25T23:20:48.200872+00:00",
+  "status": "pass-with-recorded-limits",
+  "images": 40,
+  "requiredSettledImages": 38,
+  "requiredSettledRgbIdenticalImages": 38,
+  "continuousRpmLiveImages": 2,
+  "rgbIdenticalImages": 38,
+  "scope": "Independent public native PNGs compared with frozen original stage PNGs in RGB. All 38 settled scenes require exact equality; two continuous 18rpm frames retain their actual phases and before/after states, with differences recorded.",
+  "rows": [
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-front.png",
+      "originalImage": "artifacts/encoder-detail/encoder-front.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "originalPngSha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "publicRgbSha256": "b5650b4a00ef93402b4196c859c1d5a941e83fcac312762f2d998dea2603b3c3",
+      "originalRgbSha256": "b5650b4a00ef93402b4196c859c1d5a941e83fcac312762f2d998dea2603b3c3"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-back.png",
+      "originalImage": "artifacts/encoder-detail/encoder-back.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "c02dd05561c858992a4e78f85d8988e3c82b2b2bb88d73c845202f5e70a8fd3b",
+      "originalPngSha256": "c02dd05561c858992a4e78f85d8988e3c82b2b2bb88d73c845202f5e70a8fd3b",
+      "publicRgbSha256": "c5d90c704ca6e9ba8d5cf8a9ebabca7aa8867d2789d8940ce325c5d7c3ccb0c4",
+      "originalRgbSha256": "c5d90c704ca6e9ba8d5cf8a9ebabca7aa8867d2789d8940ce325c5d7c3ccb0c4"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-left.png",
+      "originalImage": "artifacts/encoder-detail/encoder-left.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "f9cfc2ba952eb1449960fc2ccb987ff2851c3d74493d2f8891f08a68df70066c",
+      "originalPngSha256": "f9cfc2ba952eb1449960fc2ccb987ff2851c3d74493d2f8891f08a68df70066c",
+      "publicRgbSha256": "e0e812dc8b34d69f22fb818a75f2de8c39ff0b2465dec079ffda0cc83598cd74",
+      "originalRgbSha256": "e0e812dc8b34d69f22fb818a75f2de8c39ff0b2465dec079ffda0cc83598cd74"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-right.png",
+      "originalImage": "artifacts/encoder-detail/encoder-right.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "5c56b1e42574f925e0ea169ed732686c277dfc4bc789bb6ede5e706bd835647e",
+      "originalPngSha256": "5c56b1e42574f925e0ea169ed732686c277dfc4bc789bb6ede5e706bd835647e",
+      "publicRgbSha256": "a5099e2869ae1fb49d736316840bc6b74448cab6393744ad5b32eed48381fcd2",
+      "originalRgbSha256": "a5099e2869ae1fb49d736316840bc6b74448cab6393744ad5b32eed48381fcd2"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-top.png",
+      "originalImage": "artifacts/encoder-detail/encoder-top.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "3709f08cb9ae1229d7ce27aee56ea48fc1f4b83263d483ba28f3d6d76767eac5",
+      "originalPngSha256": "3709f08cb9ae1229d7ce27aee56ea48fc1f4b83263d483ba28f3d6d76767eac5",
+      "publicRgbSha256": "3c3c6d9512244f634311a673c371d0011914a9d40eca1d21d3ea749319c2b45a",
+      "originalRgbSha256": "3c3c6d9512244f634311a673c371d0011914a9d40eca1d21d3ea749319c2b45a"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-bottom.png",
+      "originalImage": "artifacts/encoder-detail/encoder-bottom.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "2cad6e893074e76cb6d89deb883e87cc0e0d45298173a0745888729318254088",
+      "originalPngSha256": "2cad6e893074e76cb6d89deb883e87cc0e0d45298173a0745888729318254088",
+      "publicRgbSha256": "cc174985d35ee355d5c0043549865a522db222f3f2d52dfd1ab05fc8a63f9976",
+      "originalRgbSha256": "cc174985d35ee355d5c0043549865a522db222f3f2d52dfd1ab05fc8a63f9976"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-iso.png",
+      "originalImage": "artifacts/encoder-detail/encoder-iso.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "9f7e8dc21065895ede17043c3486d7c3f9080a04e3a386723d0c33aadacb7792",
+      "originalPngSha256": "9f7e8dc21065895ede17043c3486d7c3f9080a04e3a386723d0c33aadacb7792",
+      "publicRgbSha256": "c2bee02c9c6122b89fe70ad9fdef9a11ba43b67571bcbb3a78fac7e75973e214",
+      "originalRgbSha256": "c2bee02c9c6122b89fe70ad9fdef9a11ba43b67571bcbb3a78fac7e75973e214"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-leds-off.png",
+      "originalImage": "artifacts/encoder-detail/encoder-leds-off.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "originalPngSha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "publicRgbSha256": "b5650b4a00ef93402b4196c859c1d5a941e83fcac312762f2d998dea2603b3c3",
+      "originalRgbSha256": "b5650b4a00ef93402b4196c859c1d5a941e83fcac312762f2d998dea2603b3c3"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-led0-only.png",
+      "originalImage": "artifacts/encoder-detail/encoder-led0-only.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "235633ff40d4a722a3511e0d3cf1cb8a56fbf6fbd16304d1671194b9d62830e9",
+      "originalPngSha256": "235633ff40d4a722a3511e0d3cf1cb8a56fbf6fbd16304d1671194b9d62830e9",
+      "publicRgbSha256": "e977df8e566416a41a4c1303eac466773cbe0697fd2a1a8613a64c938a8dd9e7",
+      "originalRgbSha256": "e977df8e566416a41a4c1303eac466773cbe0697fd2a1a8613a64c938a8dd9e7"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-led0-reset.png",
+      "originalImage": "artifacts/encoder-detail/encoder-led0-reset.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "originalPngSha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "publicRgbSha256": "b5650b4a00ef93402b4196c859c1d5a941e83fcac312762f2d998dea2603b3c3",
+      "originalRgbSha256": "b5650b4a00ef93402b4196c859c1d5a941e83fcac312762f2d998dea2603b3c3"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-led1-only.png",
+      "originalImage": "artifacts/encoder-detail/encoder-led1-only.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "4d66b94ea45937ce0688856df5ceae86e70391116bc71ceeff785c2b95b5958e",
+      "originalPngSha256": "4d66b94ea45937ce0688856df5ceae86e70391116bc71ceeff785c2b95b5958e",
+      "publicRgbSha256": "1a6470dd8192cedbcc740396763ab73127496cd54d02a277682b68174ce3519f",
+      "originalRgbSha256": "1a6470dd8192cedbcc740396763ab73127496cd54d02a277682b68174ce3519f"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-led1-reset.png",
+      "originalImage": "artifacts/encoder-detail/encoder-led1-reset.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "originalPngSha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "publicRgbSha256": "b5650b4a00ef93402b4196c859c1d5a941e83fcac312762f2d998dea2603b3c3",
+      "originalRgbSha256": "b5650b4a00ef93402b4196c859c1d5a941e83fcac312762f2d998dea2603b3c3"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-leds-both.png",
+      "originalImage": "artifacts/encoder-detail/encoder-leds-both.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "b914fec74816c4b2f7d59b2b51f64651afb0cc9271848c3403c3280fad3b70cd",
+      "originalPngSha256": "b914fec74816c4b2f7d59b2b51f64651afb0cc9271848c3403c3280fad3b70cd",
+      "publicRgbSha256": "dc4afeb6f38a7e41ff51b454ff0a2b07d1481d6dd570e69d37c616e20dcdad50",
+      "originalRgbSha256": "dc4afeb6f38a7e41ff51b454ff0a2b07d1481d6dd570e69d37c616e20dcdad50"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-leds-both-reset.png",
+      "originalImage": "artifacts/encoder-detail/encoder-leds-both-reset.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "originalPngSha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "publicRgbSha256": "b5650b4a00ef93402b4196c859c1d5a941e83fcac312762f2d998dea2603b3c3",
+      "originalRgbSha256": "b5650b4a00ef93402b4196c859c1d5a941e83fcac312762f2d998dea2603b3c3"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-angle-0.png",
+      "originalImage": "artifacts/encoder-detail/encoder-angle-0.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "185f5dd6badd5236d3a6bbf5feac96cd7aca341b91c54792d92043669d563b8f",
+      "originalPngSha256": "185f5dd6badd5236d3a6bbf5feac96cd7aca341b91c54792d92043669d563b8f",
+      "publicRgbSha256": "1b5f32c9aa9d023e1af52e6363dc560f5f9406b8689cab84680950eef413b80d",
+      "originalRgbSha256": "1b5f32c9aa9d023e1af52e6363dc560f5f9406b8689cab84680950eef413b80d"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-angle-37.png",
+      "originalImage": "artifacts/encoder-detail/encoder-angle-37.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "f3787f70dffe0a2322d3e4c1e148465def8a7c91a2c6295f8d4afca4fb20b39c",
+      "originalPngSha256": "f3787f70dffe0a2322d3e4c1e148465def8a7c91a2c6295f8d4afca4fb20b39c",
+      "publicRgbSha256": "8ae59529b8f92ba5b3277c298bc38e6b5922981b295f631336169f48aa682b80",
+      "originalRgbSha256": "8ae59529b8f92ba5b3277c298bc38e6b5922981b295f631336169f48aa682b80"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-angle-180.png",
+      "originalImage": "artifacts/encoder-detail/encoder-angle-180.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "633b80816537278a074caee624c75b889b34ed2ba7b33d50bd9d24a697b15271",
+      "originalPngSha256": "633b80816537278a074caee624c75b889b34ed2ba7b33d50bd9d24a697b15271",
+      "publicRgbSha256": "287593331725bcfb6b6ebf0c83eed2dd1dfde3b6ae83805b581a73596a20304c",
+      "originalRgbSha256": "287593331725bcfb6b6ebf0c83eed2dd1dfde3b6ae83805b581a73596a20304c"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-angle-reset.png",
+      "originalImage": "artifacts/encoder-detail/encoder-angle-reset.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "185f5dd6badd5236d3a6bbf5feac96cd7aca341b91c54792d92043669d563b8f",
+      "originalPngSha256": "185f5dd6badd5236d3a6bbf5feac96cd7aca341b91c54792d92043669d563b8f",
+      "publicRgbSha256": "1b5f32c9aa9d023e1af52e6363dc560f5f9406b8689cab84680950eef413b80d",
+      "originalRgbSha256": "1b5f32c9aa9d023e1af52e6363dc560f5f9406b8689cab84680950eef413b80d"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-press-rest.png",
+      "originalImage": "artifacts/encoder-detail/encoder-press-rest.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "e92bd96dc54e4a556ea6852f6d0493bcd1543a84b7bd4736058cd5d5e5fc0d3d",
+      "originalPngSha256": "e92bd96dc54e4a556ea6852f6d0493bcd1543a84b7bd4736058cd5d5e5fc0d3d",
+      "publicRgbSha256": "c7abec12058397420d89f8026adf953d3007ad2657007e004aa2df7caabf31e9",
+      "originalRgbSha256": "c7abec12058397420d89f8026adf953d3007ad2657007e004aa2df7caabf31e9"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-press-down.png",
+      "originalImage": "artifacts/encoder-detail/encoder-press-down.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "c7e1ebc92f69cb45593b464065491ab2ccc5621cc679fe171ca2ff9706c1da43",
+      "originalPngSha256": "c7e1ebc92f69cb45593b464065491ab2ccc5621cc679fe171ca2ff9706c1da43",
+      "publicRgbSha256": "67bb160cd6b49ec59f20fbf6d9a493f5c6ccc9f884d605a604e9e65c0b248d4f",
+      "originalRgbSha256": "67bb160cd6b49ec59f20fbf6d9a493f5c6ccc9f884d605a604e9e65c0b248d4f"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-press-released.png",
+      "originalImage": "artifacts/encoder-detail/encoder-press-released.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "e92bd96dc54e4a556ea6852f6d0493bcd1543a84b7bd4736058cd5d5e5fc0d3d",
+      "originalPngSha256": "e92bd96dc54e4a556ea6852f6d0493bcd1543a84b7bd4736058cd5d5e5fc0d3d",
+      "publicRgbSha256": "c7abec12058397420d89f8026adf953d3007ad2657007e004aa2df7caabf31e9",
+      "originalRgbSha256": "c7abec12058397420d89f8026adf953d3007ad2657007e004aa2df7caabf31e9"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-spinning-pressed.png",
+      "originalImage": "artifacts/encoder-detail/encoder-spinning-pressed.png",
+      "temporalScope": "continuous-rpm-live",
+      "requiresRgbIdentity": false,
+      "rgbIdentical": false,
+      "differenceBoundingBox": [
+        432,
+        192,
+        558,
+        307
+      ],
+      "publicPngSha256": "deddc4cc0d9b804c79fa1b277d40d79f62b04c7ec968e9d45b3b0498bd5151db",
+      "originalPngSha256": "604ccffc7d3f373f5cbb984b5f93b19e3ed652fd2c4ecf999065006d53b0334b",
+      "publicRgbSha256": "da664778e4709034f199111ccd873d31d56a44a8d8dca76d48bb2f22142d4e97",
+      "originalRgbSha256": "2cf26ddb8986615db223606b00e05b4dba9affd08b4b56d7b50a8ece8b3f46bd",
+      "publicStateBefore": {
+        "buttons": {
+          "press": {
+            "pressed": true
+          }
+        },
+        "joints": {
+          "rotation": {
+            "angleDeg": 116.19639999999994,
+            "targetAngleDeg": 116.19639999999994,
+            "rpm": 18,
+            "transitioning": false,
+            "mode": "continuous",
+            "continuous": true,
+            "rangeDeg": null,
+            "visualRangeDeg": null,
+            "demoRpmMax": 60
+          }
+        },
+        "leds": {
+          "led0": {
+            "color": "#20ff50",
+            "brightness": 0
+          },
+          "led1": {
+            "color": "#ff8020",
+            "brightness": 0
+          }
+        }
+      },
+      "publicStateAfter": {
+        "buttons": {
+          "press": {
+            "pressed": true
+          }
+        },
+        "joints": {
+          "rotation": {
+            "angleDeg": 162.99280000000007,
+            "targetAngleDeg": 162.99280000000007,
+            "rpm": 18,
+            "transitioning": false,
+            "mode": "continuous",
+            "continuous": true,
+            "rangeDeg": null,
+            "visualRangeDeg": null,
+            "demoRpmMax": 60
+          }
+        },
+        "leds": {
+          "led0": {
+            "color": "#20ff50",
+            "brightness": 0
+          },
+          "led1": {
+            "color": "#ff8020",
+            "brightness": 0
+          }
+        }
+      },
+      "originalStateBefore": {
+        "buttons": {
+          "press": {
+            "pressed": true
+          }
+        },
+        "joints": {
+          "rotation": {
+            "angleDeg": 116.19639999999993,
+            "targetAngleDeg": 116.19639999999993,
+            "rpm": 18,
+            "transitioning": false,
+            "mode": "continuous",
+            "continuous": true,
+            "rangeDeg": null,
+            "visualRangeDeg": null,
+            "demoRpmMax": 60
+          }
+        },
+        "leds": {
+          "led0": {
+            "color": "#20ff50",
+            "brightness": 0
+          },
+          "led1": {
+            "color": "#ff8020",
+            "brightness": 0
+          }
+        }
+      },
+      "originalStateAfter": {
+        "buttons": {
+          "press": {
+            "pressed": true
+          }
+        },
+        "joints": {
+          "rotation": {
+            "angleDeg": 159.39639999999994,
+            "targetAngleDeg": 159.39639999999994,
+            "rpm": 18,
+            "transitioning": false,
+            "mode": "continuous",
+            "continuous": true,
+            "rangeDeg": null,
+            "visualRangeDeg": null,
+            "demoRpmMax": 60
+          }
+        },
+        "leds": {
+          "led0": {
+            "color": "#20ff50",
+            "brightness": 0
+          },
+          "led1": {
+            "color": "#ff8020",
+            "brightness": 0
+          }
+        }
+      }
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-spinning-released.png",
+      "originalImage": "artifacts/encoder-detail/encoder-spinning-released.png",
+      "temporalScope": "continuous-rpm-live",
+      "requiresRgbIdentity": false,
+      "rgbIdentical": false,
+      "differenceBoundingBox": [
+        430,
+        193,
+        556,
+        309
+      ],
+      "publicPngSha256": "427e7322cb5ba815373dd223193c0bd0eaf8bc097b46caf870b4222c90039431",
+      "originalPngSha256": "318ec322a4e9e2c5f91fa8274c3bcd9d5bf7237f222ddd2f1adae920b4b13f25",
+      "publicRgbSha256": "a321dadfcc293e1cefee93e21cfcd7518d44c138e2e70602a6cbddf2c5792f65",
+      "originalRgbSha256": "c94aa0fea44a59469bea5c901e53ad96e9a20ec2120cc7bf303e21609e4d6f58",
+      "publicStateBefore": {
+        "buttons": {
+          "press": {
+            "pressed": false
+          }
+        },
+        "joints": {
+          "rotation": {
+            "angleDeg": 229.58560000000017,
+            "targetAngleDeg": 229.58560000000017,
+            "rpm": 18,
+            "transitioning": false,
+            "mode": "continuous",
+            "continuous": true,
+            "rangeDeg": null,
+            "visualRangeDeg": null,
+            "demoRpmMax": 60
+          }
+        },
+        "leds": {
+          "led0": {
+            "color": "#20ff50",
+            "brightness": 0
+          },
+          "led1": {
+            "color": "#ff8020",
+            "brightness": 0
+          }
+        }
+      },
+      "publicStateAfter": {
+        "buttons": {
+          "press": {
+            "pressed": false
+          }
+        },
+        "joints": {
+          "rotation": {
+            "angleDeg": 278.1856000000002,
+            "targetAngleDeg": 278.1856000000002,
+            "rpm": 18,
+            "transitioning": false,
+            "mode": "continuous",
+            "continuous": true,
+            "rangeDeg": null,
+            "visualRangeDeg": null,
+            "demoRpmMax": 60
+          }
+        },
+        "leds": {
+          "led0": {
+            "color": "#20ff50",
+            "brightness": 0
+          },
+          "led1": {
+            "color": "#ff8020",
+            "brightness": 0
+          }
+        }
+      },
+      "originalStateBefore": {
+        "buttons": {
+          "press": {
+            "pressed": false
+          }
+        },
+        "joints": {
+          "rotation": {
+            "angleDeg": 224.18560000000014,
+            "targetAngleDeg": 224.18560000000014,
+            "rpm": 18,
+            "transitioning": false,
+            "mode": "continuous",
+            "continuous": true,
+            "rangeDeg": null,
+            "visualRangeDeg": null,
+            "demoRpmMax": 60
+          }
+        },
+        "leds": {
+          "led0": {
+            "color": "#20ff50",
+            "brightness": 0
+          },
+          "led1": {
+            "color": "#ff8020",
+            "brightness": 0
+          }
+        }
+      },
+      "originalStateAfter": {
+        "buttons": {
+          "press": {
+            "pressed": false
+          }
+        },
+        "joints": {
+          "rotation": {
+            "angleDeg": 265.59280000000007,
+            "targetAngleDeg": 265.59280000000007,
+            "rpm": 18,
+            "transitioning": false,
+            "mode": "continuous",
+            "continuous": true,
+            "rangeDeg": null,
+            "visualRangeDeg": null,
+            "demoRpmMax": 60
+          }
+        },
+        "leds": {
+          "led0": {
+            "color": "#20ff50",
+            "brightness": 0
+          },
+          "led1": {
+            "color": "#ff8020",
+            "brightness": 0
+          }
+        }
+      }
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-spinning-stopped.png",
+      "originalImage": "artifacts/encoder-detail/encoder-spinning-stopped.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "1f566f88329ee60cc8d2cde42e04db26c7a17bba897cb27a48b77015937802ab",
+      "originalPngSha256": "1f566f88329ee60cc8d2cde42e04db26c7a17bba897cb27a48b77015937802ab",
+      "publicRgbSha256": "44b62ec7fcbb7b958b755c3cd1331a5e2ba35b0acc978cd2374432ce6e371694",
+      "originalRgbSha256": "44b62ec7fcbb7b958b755c3cd1331a5e2ba35b0acc978cd2374432ce6e371694"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-canvas-cap-hover-rest.png",
+      "originalImage": "artifacts/encoder-detail/encoder-canvas-cap-hover-rest.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "2ac7b0610437f610a334e71b69d23b0ab40ab5c48fafd7f1cfd36feb09615387",
+      "originalPngSha256": "2ac7b0610437f610a334e71b69d23b0ab40ab5c48fafd7f1cfd36feb09615387",
+      "publicRgbSha256": "0349ff9ab30dca940d7ad29a5e3c7551409ec5acc57221452a0396d81e778a4d",
+      "originalRgbSha256": "0349ff9ab30dca940d7ad29a5e3c7551409ec5acc57221452a0396d81e778a4d"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-canvas-cap-pointer-down.png",
+      "originalImage": "artifacts/encoder-detail/encoder-canvas-cap-pointer-down.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "c0fdbd5771e4f1d5b494414bcf41fdeada0c9d47e55e4e574c75a42c7bf83c20",
+      "originalPngSha256": "c0fdbd5771e4f1d5b494414bcf41fdeada0c9d47e55e4e574c75a42c7bf83c20",
+      "publicRgbSha256": "1ef61ca19faa26c0ccd44e8c6e6494284d825829c9413e8b64f9ba47830262da",
+      "originalRgbSha256": "1ef61ca19faa26c0ccd44e8c6e6494284d825829c9413e8b64f9ba47830262da"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-canvas-cap-pointer-released.png",
+      "originalImage": "artifacts/encoder-detail/encoder-canvas-cap-pointer-released.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "2ac7b0610437f610a334e71b69d23b0ab40ab5c48fafd7f1cfd36feb09615387",
+      "originalPngSha256": "2ac7b0610437f610a334e71b69d23b0ab40ab5c48fafd7f1cfd36feb09615387",
+      "publicRgbSha256": "0349ff9ab30dca940d7ad29a5e3c7551409ec5acc57221452a0396d81e778a4d",
+      "originalRgbSha256": "0349ff9ab30dca940d7ad29a5e3c7551409ec5acc57221452a0396d81e778a4d"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-panel-two-sources-held.png",
+      "originalImage": "artifacts/encoder-detail/encoder-panel-two-sources-held.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "e696dd30375cc99062bbcb4128f2cd48233673bc74211e5d188c9bef2edc4adc",
+      "originalPngSha256": "e696dd30375cc99062bbcb4128f2cd48233673bc74211e5d188c9bef2edc4adc",
+      "publicRgbSha256": "127539f6078a19ee011ad0c8d88a0b921400debd27b21007b68dc0f03bddbf70",
+      "originalRgbSha256": "127539f6078a19ee011ad0c8d88a0b921400debd27b21007b68dc0f03bddbf70"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-panel-inspection-released-pointer-held.png",
+      "originalImage": "artifacts/encoder-detail/encoder-panel-inspection-released-pointer-held.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "e696dd30375cc99062bbcb4128f2cd48233673bc74211e5d188c9bef2edc4adc",
+      "originalPngSha256": "e696dd30375cc99062bbcb4128f2cd48233673bc74211e5d188c9bef2edc4adc",
+      "publicRgbSha256": "127539f6078a19ee011ad0c8d88a0b921400debd27b21007b68dc0f03bddbf70",
+      "originalRgbSha256": "127539f6078a19ee011ad0c8d88a0b921400debd27b21007b68dc0f03bddbf70"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/encoder-panel-two-sources-released.png",
+      "originalImage": "artifacts/encoder-detail/encoder-panel-two-sources-released.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "originalPngSha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "publicRgbSha256": "b5650b4a00ef93402b4196c859c1d5a941e83fcac312762f2d998dea2603b3c3",
+      "originalRgbSha256": "b5650b4a00ef93402b4196c859c1d5a941e83fcac312762f2d998dea2603b3c3"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/sticks3-hub-encoder-default.png",
+      "originalImage": "artifacts/encoder-detail/sticks3-hub-encoder-default.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "4e0776e9bbc569496aa90f95a3bc5098f5e1681a78197fc37be7febdffd0606b",
+      "originalPngSha256": "4e0776e9bbc569496aa90f95a3bc5098f5e1681a78197fc37be7febdffd0606b",
+      "publicRgbSha256": "f0f5f543dfdf505123c51c1c442576f3ea45c64387de7d2791c720dedff5c0b5",
+      "originalRgbSha256": "f0f5f543dfdf505123c51c1c442576f3ea45c64387de7d2791c720dedff5c0b5"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/sticks3-hub-encoder-angle-37.png",
+      "originalImage": "artifacts/encoder-detail/sticks3-hub-encoder-angle-37.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "4f6ba83203448538007c8a27a4c0b8aa9dadbd4451b12b8f008a983a781b0e94",
+      "originalPngSha256": "4f6ba83203448538007c8a27a4c0b8aa9dadbd4451b12b8f008a983a781b0e94",
+      "publicRgbSha256": "8a5cb38b5c51d17fd71467e163442b03794a42bb6679b9d49d5cd9958b2ea578",
+      "originalRgbSha256": "8a5cb38b5c51d17fd71467e163442b03794a42bb6679b9d49d5cd9958b2ea578"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/sticks3-hub-encoder-angle-180.png",
+      "originalImage": "artifacts/encoder-detail/sticks3-hub-encoder-angle-180.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "c2613a27ef28f47688d46ef020a4fde2f1205a9c4885feb6506bce6eeabafe46",
+      "originalPngSha256": "c2613a27ef28f47688d46ef020a4fde2f1205a9c4885feb6506bce6eeabafe46",
+      "publicRgbSha256": "8bbc70786850c378fb3dcbdbc9a32b3c8f952c241626da02a67044b28883422c",
+      "originalRgbSha256": "8bbc70786850c378fb3dcbdbc9a32b3c8f952c241626da02a67044b28883422c"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/sticks3-hub-encoder-led0.png",
+      "originalImage": "artifacts/encoder-detail/sticks3-hub-encoder-led0.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "8376e07bdb383f27343af357077644424de8b49b7310ca7179b8e99a24616aef",
+      "originalPngSha256": "8376e07bdb383f27343af357077644424de8b49b7310ca7179b8e99a24616aef",
+      "publicRgbSha256": "33a5d77e5ade51590b1b1b0cacde4c37abd0caf64737d64017988188dd2ab516",
+      "originalRgbSha256": "33a5d77e5ade51590b1b1b0cacde4c37abd0caf64737d64017988188dd2ab516"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/sticks3-hub-encoder-led0-off.png",
+      "originalImage": "artifacts/encoder-detail/sticks3-hub-encoder-led0-off.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "c2613a27ef28f47688d46ef020a4fde2f1205a9c4885feb6506bce6eeabafe46",
+      "originalPngSha256": "c2613a27ef28f47688d46ef020a4fde2f1205a9c4885feb6506bce6eeabafe46",
+      "publicRgbSha256": "8bbc70786850c378fb3dcbdbc9a32b3c8f952c241626da02a67044b28883422c",
+      "originalRgbSha256": "8bbc70786850c378fb3dcbdbc9a32b3c8f952c241626da02a67044b28883422c"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/sticks3-hub-encoder-visible-led0-on.png",
+      "originalImage": "artifacts/encoder-detail/sticks3-hub-encoder-visible-led0-on.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "cb163193c2a487e60cad22054993cf94fab7894db2ea34f7843ed48b8b95ac07",
+      "originalPngSha256": "cb163193c2a487e60cad22054993cf94fab7894db2ea34f7843ed48b8b95ac07",
+      "publicRgbSha256": "6bfe46e3759ce58d76f8d8af8bfa3478e575c871e16029732d31bffdf324538c",
+      "originalRgbSha256": "6bfe46e3759ce58d76f8d8af8bfa3478e575c871e16029732d31bffdf324538c"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/sticks3-hub-encoder-visible-led0-off.png",
+      "originalImage": "artifacts/encoder-detail/sticks3-hub-encoder-visible-led0-off.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "1ab1f3cf54116f41280f6916611f8c53dc80ab24ec5595fd64cbd69d84b5d6cb",
+      "originalPngSha256": "1ab1f3cf54116f41280f6916611f8c53dc80ab24ec5595fd64cbd69d84b5d6cb",
+      "publicRgbSha256": "33713a1c2a20d02813ab10c72ca13e2d5fa50f0a1771fbef22a3683f3f2160bd",
+      "originalRgbSha256": "33713a1c2a20d02813ab10c72ca13e2d5fa50f0a1771fbef22a3683f3f2160bd"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/sticks3-hub-encoder-posed.png",
+      "originalImage": "artifacts/encoder-detail/sticks3-hub-encoder-posed.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "54e019cc2ea34f4a9927a70ee5766f49d4ce71907f305a1aea3ef350d271eee6",
+      "originalPngSha256": "54e019cc2ea34f4a9927a70ee5766f49d4ce71907f305a1aea3ef350d271eee6",
+      "publicRgbSha256": "8d7a48ca7fb4d804eda1708cf2830c64e468770d2a3df06f571cbc4f10d5a724",
+      "originalRgbSha256": "8d7a48ca7fb4d804eda1708cf2830c64e468770d2a3df06f571cbc4f10d5a724"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/sticks3-hub-encoder-pressed.png",
+      "originalImage": "artifacts/encoder-detail/sticks3-hub-encoder-pressed.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "bb6b2da4451c7470cd4c7d39379ff08548fc5feb9ac20beab55d457ec37711ef",
+      "originalPngSha256": "bb6b2da4451c7470cd4c7d39379ff08548fc5feb9ac20beab55d457ec37711ef",
+      "publicRgbSha256": "8a3b28f7bba7dd9ef38604882c3d7e754d40acf3350a6d105de08d3d0b33299d",
+      "originalRgbSha256": "8a3b28f7bba7dd9ef38604882c3d7e754d40acf3350a6d105de08d3d0b33299d"
+    },
+    {
+      "publicImage": "artifacts/encoder-detail/public/sticks3-hub-after-encoder-detach.png",
+      "originalImage": "artifacts/encoder-detail/sticks3-hub-after-encoder-detach.png",
+      "temporalScope": "settled",
+      "requiresRgbIdentity": true,
+      "rgbIdentical": true,
+      "differenceBoundingBox": null,
+      "publicPngSha256": "e18fa25658e0e1f718a3a8235bba23034ec99aa03311906b6f45f600276b2b0b",
+      "originalPngSha256": "e18fa25658e0e1f718a3a8235bba23034ec99aa03311906b6f45f600276b2b0b",
+      "publicRgbSha256": "5f1876c3741884338b79dceb2775f66f4f79d2eab62cc8d7f699085bcd677c67",
+      "originalRgbSha256": "5f1876c3741884338b79dceb2775f66f4f79d2eab62cc8d7f699085bcd677c67"
+    }
+  ]
+}

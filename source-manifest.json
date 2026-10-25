@@ -1,6 +1,6 @@
 {
   "preparedAt": "2026-10-25T13:20:33.030Z",
-  "sourceCommit": "6817da7fb8e0afd17d3ca17e036a9dfa4384fb00",
+  "sourceCommit": "3aaeb1b076092994e77d6df0500e8e027019d3be",
   "scope": "Factual provenance only; no official reference binaries or MCP source text are included.",
   "upstreams": {
     "sticks3": {
@@ -3561,8 +3561,194 @@
         {
           "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/encoder/encoder_05.webp",
           "sha256": "27086f1922c83d006101dd3e8b16d07699835f4ff5671977fab870b026dcc5ad"
+        },
+        {
+          "url": "https://docs.m5stack.com/en/unit/encoder",
+          "sha256": "a4844beb398e871cd4c97e8dbbcde00984aad5ba9ea804ce2b61bbfb561f23f5"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/encoder/encoder_06.webp",
+          "sha256": "31706f925db73ed7c2f549503ec26b9b6461c604c89f11d55b7fb24e4fc251b9"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/801/U135_Model_Size_page_01.png",
+          "sha256": "49e0f3c8a04b8765b9d745b405d81581b42afa11a9207aa8ba723f8a78b168d2"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/encoder/encoder_sch_01.webp",
+          "sha256": "49167f49ddc25e9dd166220d9c814e821b605754808cd1f851ce7d034e816c49"
         }
-      ]
+      ],
+      "incrementalEncoderDetail": {
+        "checkedAt": "2026-10-25T23:11:48.829436+00:00",
+        "sourceCommit": "3aaeb1b076092994e77d6df0500e8e027019d3be",
+        "sources": [
+          {
+            "url": "https://docs.m5stack.com/en/unit/encoder",
+            "sha256": "a4844beb398e871cd4c97e8dbbcde00984aad5ba9ea804ce2b61bbfb561f23f5",
+            "bytes": 129512,
+            "fetchedAt": "2026-10-25T22:33:49.264595+00:00",
+            "role": "original-official-product-page"
+          },
+          {
+            "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/encoder/encoder_01.webp",
+            "sha256": "0c08f0f3a5bb7f529898b55e899961637c58262083f572e7b5af32f891a6a68b",
+            "bytes": 110780,
+            "fetchedAt": "2026-10-25T22:33:50.053711+00:00",
+            "role": "original-official-product-image"
+          },
+          {
+            "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/encoder/encoder_02.webp",
+            "sha256": "d6dbc4e054ad30e9329f2e9a93e31235b4d9e11eb34bf78912f3965e95975696",
+            "bytes": 45082,
+            "fetchedAt": "2026-10-25T22:33:49.689781+00:00",
+            "role": "original-official-product-image"
+          },
+          {
+            "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/encoder/encoder_03.webp",
+            "sha256": "5cd35fa7e4f8b3955b10ecb252d03bcbd290935f723ccf86281ffe8a46d685b1",
+            "bytes": 87890,
+            "fetchedAt": "2026-10-25T22:33:49.728698+00:00",
+            "role": "original-official-product-image"
+          },
+          {
+            "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/encoder/encoder_05.webp",
+            "sha256": "27086f1922c83d006101dd3e8b16d07699835f4ff5671977fab870b026dcc5ad",
+            "bytes": 41842,
+            "fetchedAt": "2026-10-25T22:33:50.886181+00:00",
+            "role": "original-official-product-image"
+          },
+          {
+            "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/encoder/encoder_06.webp",
+            "sha256": "31706f925db73ed7c2f549503ec26b9b6461c604c89f11d55b7fb24e4fc251b9",
+            "bytes": 41842,
+            "fetchedAt": "2026-10-25T22:33:51.322529+00:00",
+            "role": "original-official-product-image"
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/801/U135_Model_Size_page_01.png",
+            "sha256": "49e0f3c8a04b8765b9d745b405d81581b42afa11a9207aa8ba723f8a78b168d2",
+            "bytes": 405667,
+            "fetchedAt": "2026-10-25T22:33:50.548016+00:00",
+            "role": "original-official-mechanical-drawing"
+          },
+          {
+            "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/encoder/encoder_sch_01.webp",
+            "sha256": "49167f49ddc25e9dd166220d9c814e821b605754808cd1f851ce7d034e816c49",
+            "bytes": 117670,
+            "fetchedAt": "2026-10-25T22:33:52.490761+00:00",
+            "role": "original-official-electrical-schematic"
+          }
+        ],
+        "facts": {
+          "officialDimensions": {
+            "nominalXyzMm": [
+              24,
+              32,
+              25.4
+            ],
+            "flatBodyThicknessMm": 8,
+            "knobMaxDiameterMm": 10,
+            "mountBoreDiameterMm": 4.85,
+            "mountBoreCentersMm": [
+              [
+                -8,
+                -4
+              ],
+              [
+                8,
+                -4
+              ]
+            ]
+          },
+          "nativeBasis": {
+            "collarAxisMm": [
+              -0.0130000268,
+              7.9499998353,
+              6
+            ],
+            "groveFloorFrontZMm": [
+              -3.2,
+              2
+            ],
+            "groveMouthMm": [
+              0,
+              -15.65,
+              -0.6
+            ],
+            "originalNativePositionsAndTopologyRetained": true
+          },
+          "officialVideo": {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/video/Product_example_video/Unit/UNIT_ENCODER_VIDEO.mp4",
+            "sha256": "65e5c7ea19f6d1dd51b4486035a80e9b8a2faf85826a006bd4eca0083b9fa7cc",
+            "bytes": 19515924,
+            "retrievedAt": "2026-10-25T22:36:25.445326+00:00",
+            "durationSeconds": 15.449999
+          },
+          "videoObservation": "Both lower white-shell corners beside Grove diffuse green/pink light in the official demonstration; no exposed front LED holes."
+        },
+        "implementation": {
+          "movingCapDiameterMm": 10,
+          "gripRidges": 24,
+          "shaftBore": "Real blind cavity; inferred shaft and roof clearance",
+          "controls": [
+            "rotation",
+            "press",
+            "led0",
+            "led1"
+          ],
+          "externalOnly": true,
+          "ledVisualAddresses": "led0 is front-left, led1 front-right; schematic LED1/LED2 order unconfirmed",
+          "nestedTargets": [
+            "grove/grove-1/press",
+            "grove/grove-1/rotation",
+            "grove/grove-1/led0",
+            "grove/grove-1/led1"
+          ],
+          "grove": "Product opt-in to physical open-top socket plus four folded tails, drillings and solder fillets; existing global plugs/four-core cable unchanged",
+          "portGuard": "Synchronous attach notifications cannot detach the currently attaching candidate; queued changes after return are supported; uncaught callbacks propagate without implicit rollback"
+        },
+        "explicitInferences": [
+          "Photo-registered LED centres ±6.8,-10.4 and concealed 3.2mm packages; board outline/thickness and hidden supports/tails.",
+          "0.35mm press travel, cap local detail and shaft/roof seating are appearance estimates, not rated actuation.",
+          "Emission on the unchanged native front material reproduces visible diffuse light only; no optical transport, electric behavior or automatic rotary-to-light mapping."
+        ],
+        "limits": [
+          "All43modeled/zeroverified; goalactive.",
+          "Finite geometry sampling and browser UI do not prove manufacturing fit, optical performance, quadrature counts or physical-device execution.",
+          "Stickers deferred; StackChan hidden production-datum and Heart prior PCB-edge issues remain."
+        ],
+        "runtime": [
+          {
+            "path": "src/units/encoder/assembly.js",
+            "sourceSha256": "cbc2125aeebf18989e4add89178e422d728704bebdb0260f0bcb3ca22a62d027",
+            "publicSha256": "cbc2125aeebf18989e4add89178e422d728704bebdb0260f0bcb3ca22a62d027"
+          },
+          {
+            "path": "src/units/encoder/dimensions.js",
+            "sourceSha256": "948c7ba8c5fcc5929814172b045dfc19e9ca977fbfae963034137996b94deac5",
+            "publicSha256": "948c7ba8c5fcc5929814172b045dfc19e9ca977fbfae963034137996b94deac5"
+          },
+          {
+            "path": "src/units/encoder/index.js",
+            "sourceSha256": "2d558cb6b64d9e6c54565c218713c3030148edd69aa233ba1036edeceef788a6",
+            "publicSha256": "3bd67b6086dd13a39e7e5c110c49fabb938881ca9910fa8a13abc63f34aaa6c1"
+          },
+          {
+            "path": "src/units/shared/open-top-grove.js",
+            "sourceSha256": "07364ba732ff38bf83ce9a2025a7ea89f9abf7b95aff65e406fc873e8f94456d",
+            "publicSha256": "07364ba732ff38bf83ce9a2025a7ea89f9abf7b95aff65e406fc873e8f94456d"
+          },
+          {
+            "path": "scripts/check-encoder-assembly.mjs",
+            "sourceSha256": "af84ca67d22d0bdaedcf59c33098589a719c828daaae80a07fdbbae858838f07",
+            "publicSha256": "af84ca67d22d0bdaedcf59c33098589a719c828daaae80a07fdbbae858838f07"
+          }
+        ],
+        "privateProvenanceSha256": "d543b42a04a52e8670af7034abc16776b545f3e8286e2fd422ccb6e478026826",
+        "privateReviewSha256": "9208dcba18843651c385cf86e67b7d1760dd3bccf5e60885e36ac024614896bd",
+        "scope": "Encoder U135 native-solid rotary/push assembly, original solid white-shell diffuse lower light, product-local open-top Grove and Port attach-callback reentrancy reliability."
+      }
     },
     {
       "id": "thermal",

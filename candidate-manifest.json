@@ -1,14 +1,14 @@
 {
   "format": "m5stack-models-public-candidate-v1",
   "preparedAt": "2026-10-25T13:20:33.076Z",
-  "sourceCommit": "6817da7fb8e0afd17d3ca17e036a9dfa4384fb00",
+  "sourceCommit": "3aaeb1b076092994e77d6df0500e8e027019d3be",
   "sourceFiles": {
     "catalog/products.json": "3c24efda5e953f8180639065b9a140414f7a20e79f535836dcb669e0f087be55",
     "demo/dynamics.js": "b330fff877189c4faef9605a19a3860470c76ad86e200b37a102752db6d39f43",
     "demo/index.html": "64609124d4571e28a71244a0ca52708c21a8c1e53ed0681f0412b63e5ae336f8",
     "demo/main.js": "5944d3b12ef01ca144dee27c5f338a4a112d01ab216392c7851a481084a5c415",
     "demo/style.css": "fd4b9a97a2f36a59833dcb36cda44cebbd3f3cacb00e8cc38d489b57e689da0b",
-    "docs/AGENT-INTEGRATION.md": "5da3896f95920e029ebc29b1833ca0ba3a098823bef04247217f71d18b8712c7",
+    "docs/AGENT-INTEGRATION.md": "2270616e9991ae753c3a263acac195f8955c9598325f3a8372107c65249113b2",
     "docs/GROVE-CABLE.md": "c7e7b06df4e89a47da3615656d79e0efb1505970991a1e60faaee8d05a71f181",
     "docs/INTEGRATION.md": "4ab4a47db6c9a058dba35cb1504942b4f31b90bb35b31490105717c0333e6a3a",
     "manage.sh": "391d649ade85981a46d82b87316407b3c9f2a9a9f06ecfc37b0f434aa4c4ba90",
@@ -20,7 +20,7 @@
     "scripts/check-cardputer-zero-assembly.mjs": "33093ac3b3fa4822f7d9e270273d1e593dadbde604a3e335fbbb647b791d12d8",
     "scripts/check-classic-unit-connectors.mjs": "6e1309d8154f21164370c44cdbcf05c6fc2f83ed3ffbf5e465df225f01e31262",
     "scripts/check-core2-assembly.mjs": "43039438b750aa365ff40160a13d85444e177a86005570633214194c2afa13fa",
-    "scripts/check-details.mjs": "c120e2ff1a27e84e8688fd468e744cfa319ba71c4cc7a4a7da4d640384218089",
+    "scripts/check-details.mjs": "27088f3b1ad2f8c9355292ec2ddaed71873bae87d27e5427628fbf2d86ee9d5c",
     "scripts/check-device-actuators.mjs": "19525b59f813602802729ec885f15f74d058031d8c1348cb6bd2dad5e7d02feb",
     "scripts/check-grove-cable.mjs": "662840b87b83d1242ce1aef34517c83d3fa4a7b3fa12229ee46bf28fd02451fd",
     "scripts/check-header-sockets.mjs": "9e738a575426c4aa71b2bcad5315ccde84e0af4318c13ec72a7653fd9aab7e9a",
@@ -48,7 +48,7 @@
     "src/core/components/Display.js": "95e53629c0fd9456fd468b18e135d99d55017e940d8875ff9c5de813c53416ea",
     "src/core/components/Imu.js": "c7149efc62f1c42c4739af9a85361ce4dfcbd7a6b383f08b1f90ec1440fa7ce4",
     "src/core/components/Led.js": "806317901b59c84246fbf176756b789427bbff0995fb2d52b1f76593629c8fc4",
-    "src/core/components/Port.js": "0afc0114ce1d320f2aa75ce094aa5702763b11da674f1609285782b20f19e5e8",
+    "src/core/components/Port.js": "9b888b81e43b7397ac5eee82cb25e7b1abfd5c9f30d29a8ba967f8f5080208dc",
     "src/core/components/Speaker.js": "881f8ac18b13381831e43407091746f4cf80419548633a054a88ef3bc217feb1",
     "src/core/components/VisualJoint.js": "654fe92b14931824362b5c6f7fb24be509c7e1be1ff4a77d6903bcc51581e84c",
     "src/core/geometry.js": "3c698e539f334a7e5d831a0004124403d558155c8ea98e82a93cf6cb7218be6b",
@@ -162,9 +162,9 @@
     "src/units/dual-button/geometry-data.js": "24a4d2107926ab86d94301687d0202ee08b16c6dc623d983213eb767909f22e9",
     "src/units/dual-button/index.js": "4f1897d8204fb89b101813ae148cb8d61a5255c8f7ebbb1cc7fe04bc8cff3032",
     "src/units/encoder/cad-map.json": "077906772435c63e8f61276d268f0338b7c215fe9fe27c87f6309e9eef6f0846",
-    "src/units/encoder/dimensions.js": "9e482d2f6529a892d554b47968107c6f050d7dbf2b60a14df277be95511d0b0b",
+    "src/units/encoder/dimensions.js": "948c7ba8c5fcc5929814172b045dfc19e9ca977fbfae963034137996b94deac5",
     "src/units/encoder/geometry-data.js": "9014aed6c81f5af893320e66f0011f8ab755ca7de337cf90b5a093e946f07fdc",
-    "src/units/encoder/index.js": "cf0350ed83bec8843018f8a1e29cc7bb23a4bc97527e461cdc3dcc40f7eabeb1",
+    "src/units/encoder/index.js": "2d558cb6b64d9e6c54565c218713c3030148edd69aa233ba1036edeceef788a6",
     "src/units/env-iii/dimensions.js": "5695f199938621b1098b9778c3ad48871b96096c405ee1813a32969d2980f747",
     "src/units/env-iii/index.js": "acfe37bc1f372a7100c3e8719c89b03a30fcdbd99cc126d5c5204923e1456f1a",
     "src/units/fan/assembly.js": "f016ffc067e4628f6f717ae9943d236e600c82fa26c4fd7b874cf91d6f26f213",
@@ -272,7 +272,7 @@
     "artifacts/motion-refinement/key-press.gif": "1090fc551b63c0696130625537b0907c38d4592f8e04a462ffb62a8f3be3cc5c",
     "artifacts/motion-refinement/stackchan-motion.gif": "3c76840dac57169a5a9a8fb15779e13b58ba0ea24408fb420e1a8f0d328c9d77",
     "scripts/check-demo-lifecycle.mjs": "b2e0c7a576c81bf23214eba138b3f0338a747a6f6da5b658c0e0c541e4e19acf",
-    "scripts/check-port-lifecycle.mjs": "60c62750b89e908624bf3d64b045b909aa76be23d7867a2cb777c470281ff93a",
+    "scripts/check-port-lifecycle.mjs": "8e789f965f227e02d47a86bac067d3072218a3359d2e794f4feea7cc06c38533",
     "scripts/check-stackchan-servo-fit.mjs": "5fc62b124a000cf10aaddd52fbd351ec56f321ded77a5cc7b1032b6218d7c338",
     "scripts/check-viewer-lifecycle.mjs": "a471cf11d5e1dba09530138af461f2f7d1119b28090eeb4332774139bdfdfd26",
     "artifacts/lifecycle-refinement/stackchan-overview.jpg": "cbcfbe91b1feec07cfdfd1f4b8b3e63e90f73a16f1ca03315d24207d3163f73f",
@@ -423,9 +423,11 @@
     "artifacts/heart-rs485-detail/sticks3-rs485-back.png": "d01aeb0a2dcf120bacec4c4489bc0238fbf0bdb82d8a9037e27b20aa377e88b2",
     "artifacts/heart-rs485-detail/sticks3-rs485-before-pose.png": "29472caae36b961d3b62a9c1e4083f56b968d21eaf37de74c7bc00be18f6d111",
     "artifacts/heart-rs485-detail/sticks3-rs485-iso.png": "73f0430bbf171020f1c132139c8d92522df09b1ecc7c7f7e56c1c79c8b044879",
-    "src/units/shared/open-top-grove.js": "35c74ff108d738543d68b960ccc5f8515fc0dde059e1ce3a3d06f467a115cfa2",
+    "src/units/shared/open-top-grove.js": "07364ba732ff38bf83ce9a2025a7ea89f9abf7b95aff65e406fc873e8f94456d",
     "src/units/heart/grove-assembly.js": "7472d361d95da609f72fca5e1cdb6ffbfbe8b741342ec06e1302c7b200e709b6",
-    "scripts/check-open-top-grove.mjs": "aee15d5e0f0904bfbc95b9ec68e7af7ed70144b7ae239b0f3a08cda7340dc6e1"
+    "scripts/check-open-top-grove.mjs": "aee15d5e0f0904bfbc95b9ec68e7af7ed70144b7ae239b0f3a08cda7340dc6e1",
+    "src/units/encoder/assembly.js": "cbc2125aeebf18989e4add89178e422d728704bebdb0260f0bcb3ca22a62d027",
+    "scripts/check-encoder-assembly.mjs": "af84ca67d22d0bdaedcf59c33098589a719c828daaae80a07fdbbae858838f07"
   },
   "transformations": [
     {
@@ -749,6 +751,57 @@
       "inputSha256": "5af99c31adc30e7da5880866e5ee99829cf704a08129151b426ab019554cda3a",
       "outputSha256": "e85b367803e1ea0409a26f609019ddd1699a197682ea3173469615b8ffc8ce13",
       "edits": 1
+    },
+    {
+      "file": "src/units/encoder/index.js",
+      "type": "preserve-public-baseline-Encoder-artwork-AST-void0",
+      "privateBaselineCommit": "f27832dc3c1637f488b9aa647c32e2713356263a",
+      "basePublicCommit": "14c4006bda4db89d895ccbfcb66f489432ab3198",
+      "baselineInputSha256": "cf0350ed83bec8843018f8a1e29cc7bb23a4bc97527e461cdc3dcc40f7eabeb1",
+      "publicBaseSha256": "1ea2c60b005976d6643903ac4012671ab231b863f03c989e95072ba09e033f95",
+      "expressionSha256": "e2ab9dc8cf632a59e29b241f4c18ce5f27dea02e9a528217a9a85e6e4a5f2abb",
+      "inputSha256": "2d558cb6b64d9e6c54565c218713c3030148edd69aa233ba1036edeceef788a6",
+      "outputSha256": "3bd67b6086dd13a39e7e5c110c49fabb938881ca9910fa8a13abc63f34aaa6c1",
+      "edits": 1
+    },
+    {
+      "file": "docs/AGENT-INTEGRATION.md",
+      "type": "exact-reviewed-Encoder-private-note-to-public-provenance-links",
+      "privateBaselineCommit": "f27832dc3c1637f488b9aa647c32e2713356263a",
+      "basePublicCommit": "14c4006bda4db89d895ccbfcb66f489432ab3198",
+      "baselineInputSha256": "5da3896f95920e029ebc29b1833ca0ba3a098823bef04247217f71d18b8712c7",
+      "publicBaseSha256": "5da3896f95920e029ebc29b1833ca0ba3a098823bef04247217f71d18b8712c7",
+      "inputSha256": "2270616e9991ae753c3a263acac195f8955c9598325f3a8372107c65249113b2",
+      "outputSha256": "2aac24a516f1f3f7cec558fafad2f87f93040339fd3c461c57fd8c4c978f4ca9",
+      "fromSha256": "eb3740543d4165f837e53a52ccbe7b7705a146d0a4cb62a74727b4293f1fc823",
+      "toSha256": "fc1c49136d8d70fda77f3ea820ce7c430cbcac88e7a005890570f71025990b34",
+      "edits": 1
+    },
+    {
+      "file": "catalog/products.json",
+      "type": "explicit-six-Encoder-fields-with-two-exact-public-review-link-conversions",
+      "basePublicCommit": "14c4006bda4db89d895ccbfcb66f489432ab3198",
+      "inputSha256": "7b189f5bf2386130cfdd93300ba7f2c492e350ebfd356dff0f4bc114f92a586e",
+      "publicBaseSha256": "b7a9b28abc89aa6f4fa701e98a91e61afb1627bab6168a5c84ca8fe099155fea",
+      "outputSha256": "bd56dfd86e34461b8b1ba8e9172ee33e3ef3d61f79849456392d5ea197135389",
+      "fields": [
+        "visualEnvelopeMm",
+        "integration",
+        "visualControls",
+        "externalLeds",
+        "limitations",
+        "nextAction"
+      ],
+      "edits": [
+        {
+          "pointer": "/limitations/4",
+          "count": 1
+        },
+        {
+          "pointer": "/nextAction",
+          "count": 1
+        }
+      ]
     }
   ],
   "originalEvidence": [
@@ -993,7 +1046,47 @@
     "artifacts/grove-open-top/rs485-socket-restored.png",
     "artifacts/grove-open-top/sticks3-rs485-before-pose.png",
     "artifacts/grove-open-top/sticks3-rs485-iso.png",
-    "artifacts/grove-open-top/sticks3-rs485-back.png"
+    "artifacts/grove-open-top/sticks3-rs485-back.png",
+    "artifacts/encoder-detail/encoder-front.png",
+    "artifacts/encoder-detail/encoder-back.png",
+    "artifacts/encoder-detail/encoder-left.png",
+    "artifacts/encoder-detail/encoder-right.png",
+    "artifacts/encoder-detail/encoder-top.png",
+    "artifacts/encoder-detail/encoder-bottom.png",
+    "artifacts/encoder-detail/encoder-iso.png",
+    "artifacts/encoder-detail/encoder-leds-off.png",
+    "artifacts/encoder-detail/encoder-led0-only.png",
+    "artifacts/encoder-detail/encoder-led0-reset.png",
+    "artifacts/encoder-detail/encoder-led1-only.png",
+    "artifacts/encoder-detail/encoder-led1-reset.png",
+    "artifacts/encoder-detail/encoder-leds-both.png",
+    "artifacts/encoder-detail/encoder-leds-both-reset.png",
+    "artifacts/encoder-detail/encoder-angle-0.png",
+    "artifacts/encoder-detail/encoder-angle-37.png",
+    "artifacts/encoder-detail/encoder-angle-180.png",
+    "artifacts/encoder-detail/encoder-angle-reset.png",
+    "artifacts/encoder-detail/encoder-press-rest.png",
+    "artifacts/encoder-detail/encoder-press-down.png",
+    "artifacts/encoder-detail/encoder-press-released.png",
+    "artifacts/encoder-detail/encoder-spinning-pressed.png",
+    "artifacts/encoder-detail/encoder-spinning-released.png",
+    "artifacts/encoder-detail/encoder-spinning-stopped.png",
+    "artifacts/encoder-detail/encoder-canvas-cap-hover-rest.png",
+    "artifacts/encoder-detail/encoder-canvas-cap-pointer-down.png",
+    "artifacts/encoder-detail/encoder-canvas-cap-pointer-released.png",
+    "artifacts/encoder-detail/encoder-panel-two-sources-held.png",
+    "artifacts/encoder-detail/encoder-panel-inspection-released-pointer-held.png",
+    "artifacts/encoder-detail/encoder-panel-two-sources-released.png",
+    "artifacts/encoder-detail/sticks3-hub-encoder-default.png",
+    "artifacts/encoder-detail/sticks3-hub-encoder-angle-37.png",
+    "artifacts/encoder-detail/sticks3-hub-encoder-angle-180.png",
+    "artifacts/encoder-detail/sticks3-hub-encoder-led0.png",
+    "artifacts/encoder-detail/sticks3-hub-encoder-led0-off.png",
+    "artifacts/encoder-detail/sticks3-hub-encoder-visible-led0-on.png",
+    "artifacts/encoder-detail/sticks3-hub-encoder-visible-led0-off.png",
+    "artifacts/encoder-detail/sticks3-hub-encoder-posed.png",
+    "artifacts/encoder-detail/sticks3-hub-encoder-pressed.png",
+    "artifacts/encoder-detail/sticks3-hub-after-encoder-detach.png"
   ],
   "verification": "artifacts/interaction-expansion/public/review.json",
   "published": true,
@@ -2753,6 +2846,389 @@
       "All 43 products remain modeled; zero verified.",
       "Original artwork remains deferred. Official photographs, HTML, CAD probes and MCP responses remain private.",
       "Hidden PCB/case baseline overlaps remain recorded; finite samples and native renders do not prove manufacturing fit."
+    ]
+  },
+  "incrementalEncoderDetail": {
+    "sourceCommit": "3aaeb1b076092994e77d6df0500e8e027019d3be",
+    "privateBaselineCommit": "f27832dc3c1637f488b9aa647c32e2713356263a",
+    "basePublicCommit": "14c4006bda4db89d895ccbfcb66f489432ab3198",
+    "preparedAt": "2026-10-25T23:13:54.911Z",
+    "changedFiles": [
+      "src/units/encoder/assembly.js",
+      "src/units/encoder/dimensions.js",
+      "src/units/encoder/index.js",
+      "src/units/shared/open-top-grove.js",
+      "src/core/components/Port.js",
+      "scripts/check-encoder-assembly.mjs",
+      "scripts/check-details.mjs",
+      "scripts/check-port-lifecycle.mjs",
+      "docs/AGENT-INTEGRATION.md",
+      "catalog/products.json",
+      "artifacts/encoder-detail/encoder-front.png",
+      "artifacts/encoder-detail/encoder-back.png",
+      "artifacts/encoder-detail/encoder-left.png",
+      "artifacts/encoder-detail/encoder-right.png",
+      "artifacts/encoder-detail/encoder-top.png",
+      "artifacts/encoder-detail/encoder-bottom.png",
+      "artifacts/encoder-detail/encoder-iso.png",
+      "artifacts/encoder-detail/encoder-leds-off.png",
+      "artifacts/encoder-detail/encoder-led0-only.png",
+      "artifacts/encoder-detail/encoder-led0-reset.png",
+      "artifacts/encoder-detail/encoder-led1-only.png",
+      "artifacts/encoder-detail/encoder-led1-reset.png",
+      "artifacts/encoder-detail/encoder-leds-both.png",
+      "artifacts/encoder-detail/encoder-leds-both-reset.png",
+      "artifacts/encoder-detail/encoder-angle-0.png",
+      "artifacts/encoder-detail/encoder-angle-37.png",
+      "artifacts/encoder-detail/encoder-angle-180.png",
+      "artifacts/encoder-detail/encoder-angle-reset.png",
+      "artifacts/encoder-detail/encoder-press-rest.png",
+      "artifacts/encoder-detail/encoder-press-down.png",
+      "artifacts/encoder-detail/encoder-press-released.png",
+      "artifacts/encoder-detail/encoder-spinning-pressed.png",
+      "artifacts/encoder-detail/encoder-spinning-released.png",
+      "artifacts/encoder-detail/encoder-spinning-stopped.png",
+      "artifacts/encoder-detail/encoder-canvas-cap-hover-rest.png",
+      "artifacts/encoder-detail/encoder-canvas-cap-pointer-down.png",
+      "artifacts/encoder-detail/encoder-canvas-cap-pointer-released.png",
+      "artifacts/encoder-detail/encoder-panel-two-sources-held.png",
+      "artifacts/encoder-detail/encoder-panel-inspection-released-pointer-held.png",
+      "artifacts/encoder-detail/encoder-panel-two-sources-released.png",
+      "artifacts/encoder-detail/sticks3-hub-encoder-default.png",
+      "artifacts/encoder-detail/sticks3-hub-encoder-angle-37.png",
+      "artifacts/encoder-detail/sticks3-hub-encoder-angle-180.png",
+      "artifacts/encoder-detail/sticks3-hub-encoder-led0.png",
+      "artifacts/encoder-detail/sticks3-hub-encoder-led0-off.png",
+      "artifacts/encoder-detail/sticks3-hub-encoder-visible-led0-on.png",
+      "artifacts/encoder-detail/sticks3-hub-encoder-visible-led0-off.png",
+      "artifacts/encoder-detail/sticks3-hub-encoder-posed.png",
+      "artifacts/encoder-detail/sticks3-hub-encoder-pressed.png",
+      "artifacts/encoder-detail/sticks3-hub-after-encoder-detach.png",
+      "source-manifest.json",
+      "candidate-manifest.json"
+    ],
+    "privateReviewSha256": "9208dcba18843651c385cf86e67b7d1760dd3bccf5e60885e36ac024614896bd",
+    "privateProvenanceSha256": {
+      "encoder": "d543b42a04a52e8670af7034abc16776b545f3e8286e2fd422ccb6e478026826"
+    },
+    "sourceHashes": {
+      "src/units/encoder/assembly.js": "cbc2125aeebf18989e4add89178e422d728704bebdb0260f0bcb3ca22a62d027",
+      "src/units/encoder/dimensions.js": "948c7ba8c5fcc5929814172b045dfc19e9ca977fbfae963034137996b94deac5",
+      "src/units/encoder/index.js": "2d558cb6b64d9e6c54565c218713c3030148edd69aa233ba1036edeceef788a6",
+      "src/units/shared/open-top-grove.js": "07364ba732ff38bf83ce9a2025a7ea89f9abf7b95aff65e406fc873e8f94456d",
+      "src/core/components/Port.js": "9b888b81e43b7397ac5eee82cb25e7b1abfd5c9f30d29a8ba967f8f5080208dc",
+      "scripts/check-encoder-assembly.mjs": "af84ca67d22d0bdaedcf59c33098589a719c828daaae80a07fdbbae858838f07",
+      "scripts/check-details.mjs": "27088f3b1ad2f8c9355292ec2ddaed71873bae87d27e5427628fbf2d86ee9d5c",
+      "scripts/check-port-lifecycle.mjs": "8e789f965f227e02d47a86bac067d3072218a3359d2e794f4feea7cc06c38533",
+      "docs/AGENT-INTEGRATION.md": "2270616e9991ae753c3a263acac195f8955c9598325f3a8372107c65249113b2"
+    },
+    "sourceCatalogSha256": "7b189f5bf2386130cfdd93300ba7f2c492e350ebfd356dff0f4bc114f92a586e",
+    "originalEvidence": [
+      {
+        "path": "artifacts/encoder-detail/encoder-front.png",
+        "sha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-back.png",
+        "sha256": "c02dd05561c858992a4e78f85d8988e3c82b2b2bb88d73c845202f5e70a8fd3b",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-left.png",
+        "sha256": "f9cfc2ba952eb1449960fc2ccb987ff2851c3d74493d2f8891f08a68df70066c",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-right.png",
+        "sha256": "5c56b1e42574f925e0ea169ed732686c277dfc4bc789bb6ede5e706bd835647e",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-top.png",
+        "sha256": "3709f08cb9ae1229d7ce27aee56ea48fc1f4b83263d483ba28f3d6d76767eac5",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-bottom.png",
+        "sha256": "2cad6e893074e76cb6d89deb883e87cc0e0d45298173a0745888729318254088",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-iso.png",
+        "sha256": "9f7e8dc21065895ede17043c3486d7c3f9080a04e3a386723d0c33aadacb7792",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-leds-off.png",
+        "sha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-led0-only.png",
+        "sha256": "235633ff40d4a722a3511e0d3cf1cb8a56fbf6fbd16304d1671194b9d62830e9",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-led0-reset.png",
+        "sha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-led1-only.png",
+        "sha256": "4d66b94ea45937ce0688856df5ceae86e70391116bc71ceeff785c2b95b5958e",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-led1-reset.png",
+        "sha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-leds-both.png",
+        "sha256": "b914fec74816c4b2f7d59b2b51f64651afb0cc9271848c3403c3280fad3b70cd",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-leds-both-reset.png",
+        "sha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-angle-0.png",
+        "sha256": "185f5dd6badd5236d3a6bbf5feac96cd7aca341b91c54792d92043669d563b8f",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-angle-37.png",
+        "sha256": "f3787f70dffe0a2322d3e4c1e148465def8a7c91a2c6295f8d4afca4fb20b39c",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-angle-180.png",
+        "sha256": "633b80816537278a074caee624c75b889b34ed2ba7b33d50bd9d24a697b15271",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-angle-reset.png",
+        "sha256": "185f5dd6badd5236d3a6bbf5feac96cd7aca341b91c54792d92043669d563b8f",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-press-rest.png",
+        "sha256": "e92bd96dc54e4a556ea6852f6d0493bcd1543a84b7bd4736058cd5d5e5fc0d3d",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-press-down.png",
+        "sha256": "c7e1ebc92f69cb45593b464065491ab2ccc5621cc679fe171ca2ff9706c1da43",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-press-released.png",
+        "sha256": "e92bd96dc54e4a556ea6852f6d0493bcd1543a84b7bd4736058cd5d5e5fc0d3d",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-spinning-pressed.png",
+        "sha256": "604ccffc7d3f373f5cbb984b5f93b19e3ed652fd2c4ecf999065006d53b0334b",
+        "origin": "original-native-model-render",
+        "temporalScope": "continuous-rpm-live"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-spinning-released.png",
+        "sha256": "318ec322a4e9e2c5f91fa8274c3bcd9d5bf7237f222ddd2f1adae920b4b13f25",
+        "origin": "original-native-model-render",
+        "temporalScope": "continuous-rpm-live"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-spinning-stopped.png",
+        "sha256": "1f566f88329ee60cc8d2cde42e04db26c7a17bba897cb27a48b77015937802ab",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-canvas-cap-hover-rest.png",
+        "sha256": "2ac7b0610437f610a334e71b69d23b0ab40ab5c48fafd7f1cfd36feb09615387",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-canvas-cap-pointer-down.png",
+        "sha256": "c0fdbd5771e4f1d5b494414bcf41fdeada0c9d47e55e4e574c75a42c7bf83c20",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-canvas-cap-pointer-released.png",
+        "sha256": "2ac7b0610437f610a334e71b69d23b0ab40ab5c48fafd7f1cfd36feb09615387",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-panel-two-sources-held.png",
+        "sha256": "e696dd30375cc99062bbcb4128f2cd48233673bc74211e5d188c9bef2edc4adc",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-panel-inspection-released-pointer-held.png",
+        "sha256": "e696dd30375cc99062bbcb4128f2cd48233673bc74211e5d188c9bef2edc4adc",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/encoder-panel-two-sources-released.png",
+        "sha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/sticks3-hub-encoder-default.png",
+        "sha256": "4e0776e9bbc569496aa90f95a3bc5098f5e1681a78197fc37be7febdffd0606b",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/sticks3-hub-encoder-angle-37.png",
+        "sha256": "4f6ba83203448538007c8a27a4c0b8aa9dadbd4451b12b8f008a983a781b0e94",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/sticks3-hub-encoder-angle-180.png",
+        "sha256": "c2613a27ef28f47688d46ef020a4fde2f1205a9c4885feb6506bce6eeabafe46",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/sticks3-hub-encoder-led0.png",
+        "sha256": "8376e07bdb383f27343af357077644424de8b49b7310ca7179b8e99a24616aef",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/sticks3-hub-encoder-led0-off.png",
+        "sha256": "c2613a27ef28f47688d46ef020a4fde2f1205a9c4885feb6506bce6eeabafe46",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/sticks3-hub-encoder-visible-led0-on.png",
+        "sha256": "cb163193c2a487e60cad22054993cf94fab7894db2ea34f7843ed48b8b95ac07",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/sticks3-hub-encoder-visible-led0-off.png",
+        "sha256": "1ab1f3cf54116f41280f6916611f8c53dc80ab24ec5595fd64cbd69d84b5d6cb",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/sticks3-hub-encoder-posed.png",
+        "sha256": "54e019cc2ea34f4a9927a70ee5766f49d4ce71907f305a1aea3ef350d271eee6",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/sticks3-hub-encoder-pressed.png",
+        "sha256": "bb6b2da4451c7470cd4c7d39379ff08548fc5feb9ac20beab55d457ec37711ef",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      },
+      {
+        "path": "artifacts/encoder-detail/sticks3-hub-after-encoder-detach.png",
+        "sha256": "e18fa25658e0e1f718a3a8235bba23034ec99aa03311906b6f45f600276b2b0b",
+        "origin": "original-native-model-render",
+        "temporalScope": "settled"
+      }
+    ],
+    "transformedOutputHashes": {
+      "src/units/encoder/assembly.js": "cbc2125aeebf18989e4add89178e422d728704bebdb0260f0bcb3ca22a62d027",
+      "src/units/encoder/dimensions.js": "948c7ba8c5fcc5929814172b045dfc19e9ca977fbfae963034137996b94deac5",
+      "src/units/encoder/index.js": "3bd67b6086dd13a39e7e5c110c49fabb938881ca9910fa8a13abc63f34aaa6c1",
+      "src/units/shared/open-top-grove.js": "07364ba732ff38bf83ce9a2025a7ea89f9abf7b95aff65e406fc873e8f94456d",
+      "src/core/components/Port.js": "9b888b81e43b7397ac5eee82cb25e7b1abfd5c9f30d29a8ba967f8f5080208dc",
+      "scripts/check-encoder-assembly.mjs": "af84ca67d22d0bdaedcf59c33098589a719c828daaae80a07fdbbae858838f07",
+      "scripts/check-details.mjs": "27088f3b1ad2f8c9355292ec2ddaed71873bae87d27e5427628fbf2d86ee9d5c",
+      "scripts/check-port-lifecycle.mjs": "8e789f965f227e02d47a86bac067d3072218a3359d2e794f4feea7cc06c38533",
+      "docs/AGENT-INTEGRATION.md": "2aac24a516f1f3f7cec558fafad2f87f93040339fd3c461c57fd8c4c978f4ca9",
+      "catalog/products.json": "bd56dfd86e34461b8b1ba8e9172ee33e3ef3d61f79849456392d5ea197135389",
+      "artifacts/encoder-detail/encoder-front.png": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "artifacts/encoder-detail/encoder-back.png": "c02dd05561c858992a4e78f85d8988e3c82b2b2bb88d73c845202f5e70a8fd3b",
+      "artifacts/encoder-detail/encoder-left.png": "f9cfc2ba952eb1449960fc2ccb987ff2851c3d74493d2f8891f08a68df70066c",
+      "artifacts/encoder-detail/encoder-right.png": "5c56b1e42574f925e0ea169ed732686c277dfc4bc789bb6ede5e706bd835647e",
+      "artifacts/encoder-detail/encoder-top.png": "3709f08cb9ae1229d7ce27aee56ea48fc1f4b83263d483ba28f3d6d76767eac5",
+      "artifacts/encoder-detail/encoder-bottom.png": "2cad6e893074e76cb6d89deb883e87cc0e0d45298173a0745888729318254088",
+      "artifacts/encoder-detail/encoder-iso.png": "9f7e8dc21065895ede17043c3486d7c3f9080a04e3a386723d0c33aadacb7792",
+      "artifacts/encoder-detail/encoder-leds-off.png": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "artifacts/encoder-detail/encoder-led0-only.png": "235633ff40d4a722a3511e0d3cf1cb8a56fbf6fbd16304d1671194b9d62830e9",
+      "artifacts/encoder-detail/encoder-led0-reset.png": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "artifacts/encoder-detail/encoder-led1-only.png": "4d66b94ea45937ce0688856df5ceae86e70391116bc71ceeff785c2b95b5958e",
+      "artifacts/encoder-detail/encoder-led1-reset.png": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "artifacts/encoder-detail/encoder-leds-both.png": "b914fec74816c4b2f7d59b2b51f64651afb0cc9271848c3403c3280fad3b70cd",
+      "artifacts/encoder-detail/encoder-leds-both-reset.png": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "artifacts/encoder-detail/encoder-angle-0.png": "185f5dd6badd5236d3a6bbf5feac96cd7aca341b91c54792d92043669d563b8f",
+      "artifacts/encoder-detail/encoder-angle-37.png": "f3787f70dffe0a2322d3e4c1e148465def8a7c91a2c6295f8d4afca4fb20b39c",
+      "artifacts/encoder-detail/encoder-angle-180.png": "633b80816537278a074caee624c75b889b34ed2ba7b33d50bd9d24a697b15271",
+      "artifacts/encoder-detail/encoder-angle-reset.png": "185f5dd6badd5236d3a6bbf5feac96cd7aca341b91c54792d92043669d563b8f",
+      "artifacts/encoder-detail/encoder-press-rest.png": "e92bd96dc54e4a556ea6852f6d0493bcd1543a84b7bd4736058cd5d5e5fc0d3d",
+      "artifacts/encoder-detail/encoder-press-down.png": "c7e1ebc92f69cb45593b464065491ab2ccc5621cc679fe171ca2ff9706c1da43",
+      "artifacts/encoder-detail/encoder-press-released.png": "e92bd96dc54e4a556ea6852f6d0493bcd1543a84b7bd4736058cd5d5e5fc0d3d",
+      "artifacts/encoder-detail/encoder-spinning-pressed.png": "604ccffc7d3f373f5cbb984b5f93b19e3ed652fd2c4ecf999065006d53b0334b",
+      "artifacts/encoder-detail/encoder-spinning-released.png": "318ec322a4e9e2c5f91fa8274c3bcd9d5bf7237f222ddd2f1adae920b4b13f25",
+      "artifacts/encoder-detail/encoder-spinning-stopped.png": "1f566f88329ee60cc8d2cde42e04db26c7a17bba897cb27a48b77015937802ab",
+      "artifacts/encoder-detail/encoder-canvas-cap-hover-rest.png": "2ac7b0610437f610a334e71b69d23b0ab40ab5c48fafd7f1cfd36feb09615387",
+      "artifacts/encoder-detail/encoder-canvas-cap-pointer-down.png": "c0fdbd5771e4f1d5b494414bcf41fdeada0c9d47e55e4e574c75a42c7bf83c20",
+      "artifacts/encoder-detail/encoder-canvas-cap-pointer-released.png": "2ac7b0610437f610a334e71b69d23b0ab40ab5c48fafd7f1cfd36feb09615387",
+      "artifacts/encoder-detail/encoder-panel-two-sources-held.png": "e696dd30375cc99062bbcb4128f2cd48233673bc74211e5d188c9bef2edc4adc",
+      "artifacts/encoder-detail/encoder-panel-inspection-released-pointer-held.png": "e696dd30375cc99062bbcb4128f2cd48233673bc74211e5d188c9bef2edc4adc",
+      "artifacts/encoder-detail/encoder-panel-two-sources-released.png": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "artifacts/encoder-detail/sticks3-hub-encoder-default.png": "4e0776e9bbc569496aa90f95a3bc5098f5e1681a78197fc37be7febdffd0606b",
+      "artifacts/encoder-detail/sticks3-hub-encoder-angle-37.png": "4f6ba83203448538007c8a27a4c0b8aa9dadbd4451b12b8f008a983a781b0e94",
+      "artifacts/encoder-detail/sticks3-hub-encoder-angle-180.png": "c2613a27ef28f47688d46ef020a4fde2f1205a9c4885feb6506bce6eeabafe46",
+      "artifacts/encoder-detail/sticks3-hub-encoder-led0.png": "8376e07bdb383f27343af357077644424de8b49b7310ca7179b8e99a24616aef",
+      "artifacts/encoder-detail/sticks3-hub-encoder-led0-off.png": "c2613a27ef28f47688d46ef020a4fde2f1205a9c4885feb6506bce6eeabafe46",
+      "artifacts/encoder-detail/sticks3-hub-encoder-visible-led0-on.png": "cb163193c2a487e60cad22054993cf94fab7894db2ea34f7843ed48b8b95ac07",
+      "artifacts/encoder-detail/sticks3-hub-encoder-visible-led0-off.png": "1ab1f3cf54116f41280f6916611f8c53dc80ab24ec5595fd64cbd69d84b5d6cb",
+      "artifacts/encoder-detail/sticks3-hub-encoder-posed.png": "54e019cc2ea34f4a9927a70ee5766f49d4ce71907f305a1aea3ef350d271eee6",
+      "artifacts/encoder-detail/sticks3-hub-encoder-pressed.png": "bb6b2da4451c7470cd4c7d39379ff08548fc5feb9ac20beab55d457ec37711ef",
+      "artifacts/encoder-detail/sticks3-hub-after-encoder-detach.png": "e18fa25658e0e1f718a3a8235bba23034ec99aa03311906b6f45f600276b2b0b",
+      "source-manifest.json": "fb6b06698bfa899cfd5e84177221df1eb84610b1692b6ac5f7084ce3b8408545"
+    },
+    "publicVerification": {
+      "status": "pass-with-recorded-limits",
+      "report": "artifacts/encoder-detail/public/review.json",
+      "reportSha256": "e6af596349f060564803b7601a68bd151a07623c4bab26c348d86e6c946d2ce9"
+    },
+    "scope": "Encoder U135 native-solid rotary/push assembly, original solid white-shell diffuse lower light, product-local open-top Grove and Port attach-callback reentrancy reliability.",
+    "limits": [
+      "All 43 products remain modeled; zero verified.",
+      "Original artwork remains deferred. Official photographs, HTML, video, CAD probes and MCP responses remain private.",
+      "Finite native geometry samples and browser renders do not prove manufacturing fit, firmware behavior, quadrature pulse emulation or electrical/optical performance.",
+      "Two continuous-rpm screenshots capture live phases; exact independent-run RGB identity is required only where a settled comparison is meaningful."
     ]
   }
 }

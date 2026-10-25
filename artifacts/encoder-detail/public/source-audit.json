@@ -1,0 +1,3137 @@
+{
+  "checkedAt": "2026-10-25T23:30:38.067Z",
+  "status": "pass-with-recorded-limits",
+  "scope": "Read-only complete-distribution Grove open-top audit against fixed public14c/privatef278 and this batch approved plan. Actual public check/build/status/browser evidence is frozen separately; all 43 products remain modeled.",
+  "sourceCommit": "3aaeb1b076092994e77d6df0500e8e027019d3be",
+  "basePublicCommit": "14c4006bda4db89d895ccbfcb66f489432ab3198",
+  "publicHead": "14c4006bda4db89d895ccbfcb66f489432ab3198",
+  "planSha256": "4220ddf2a8190be84468bfaa0fcdb54f60ccb120f3ca8361c1694638809d6769",
+  "configSha256": "0c80de2cc38413f66ed2dc13c22ac4536326b617d154c7adf24b947791e2c8fe",
+  "privateReviewSha256": "9208dcba18843651c385cf86e67b7d1760dd3bccf5e60885e36ac024614896bd",
+  "privateProvenanceSha256": {
+    "encoder": "d543b42a04a52e8670af7034abc16776b545f3e8286e2fd422ccb6e478026826"
+  },
+  "publicReviewSha256": "e6af596349f060564803b7601a68bd151a07623c4bab26c348d86e6c946d2ce9",
+  "auditVersion": 2,
+  "originalToolFreezeProof": {
+    "sha256": "813f34262241eda3a0d474dbe6b5acc9262e3e7e27e81a601c3969e48582ce6b",
+    "files": 14,
+    "planSha256": "4220ddf2a8190be84468bfaa0fcdb54f60ccb120f3ca8361c1694638809d6769",
+    "configSha256": "0c80de2cc38413f66ed2dc13c22ac4536326b617d154c7adf24b947791e2c8fe",
+    "priorFailureSha256": "46fa5971d68ecc656ff4976af04600a404f8ad37e89d35b985c0da6094d9e5be",
+    "allOriginalBytesPreserved": true
+  },
+  "revisionFreezeProof": {
+    "sha256": "71fc3430773f2347af9d3062b21230d9e49290901f64fe086d8541878cd571dc",
+    "auditVersion": 2,
+    "originalToolFreezeSha256": "813f34262241eda3a0d474dbe6b5acc9262e3e7e27e81a601c3969e48582ce6b",
+    "planSha256": "4220ddf2a8190be84468bfaa0fcdb54f60ccb120f3ca8361c1694638809d6769",
+    "publicReviewSha256": "e6af596349f060564803b7601a68bd151a07623c4bab26c348d86e6c946d2ce9",
+    "files": {
+      "audit-v2.mjs": "7bd863de058f872d06bb336124d94e6f966bea6fbdef099fb6a599d3e3657c19",
+      "serializer-policy.mjs": "c80abd6005177aa7b14f0fc6d46f52b7d45503ceda90ba7c235347f2f32e8b63",
+      "check-guards.mjs": "51be22d4a4afcbd5bf264a4dd7084ceb5867c70e4e486036f15e56ffa1ef62a8",
+      "README.md": "6dd0690c6ff879d523115eaeffccefdee3e26e4ca907d3125942f93b0742a590",
+      "guard-check-prepared.json": "e03000969b2bdfb2559a2243b29fee5579dc9537eae48f600334b7f635f97888",
+      "guard-independent.json": "3bd6ee4e3fa96491621ee25f87e9cf94b26a446a0e17a65874fbe337130cdc1f"
+    },
+    "guards": {
+      "guard-check-prepared.json": {
+        "tests": 40,
+        "sha256": "e03000969b2bdfb2559a2243b29fee5579dc9537eae48f600334b7f635f97888"
+      },
+      "guard-independent.json": {
+        "tests": 70,
+        "sha256": "3bd6ee4e3fa96491621ee25f87e9cf94b26a446a0e17a65874fbe337130cdc1f"
+      }
+    },
+    "scope": "Only one exact private review input key is omitted after its SHA is proved equal to the retained privateReviewSha256; the complete input manifest remains intact."
+  },
+  "auditToolSha256": "7bd863de058f872d06bb336124d94e6f966bea6fbdef099fb6a599d3e3657c19",
+  "authorizationPolicySha256": "ea98d19e30098649e171d7071afa7e677d01e4d3a3adeff2922a1d174fa7ace0",
+  "toolHashManifest": {
+    "common.mjs": "b14294dfabe45e6b8c760511876c199e6a4394f2d131edb84354a9327e8946ab",
+    "stage.mjs": "833ece0aeca5f68738da0f1e2065cdba1280ce62e34e9aa68273d2c19e86e357",
+    "plan.mjs": "48ae2b18f4c5e22a12485b98c525939d31ee4b01d71bd98e95e1117f61e9ce48",
+    "prepare.mjs": "d023c6f62b3376a53d147dc384ab662643cec1a96efcced8aca9095a617e5d0a",
+    "apply.mjs": "7faefa9187778a02010707089e90effe8d767cfb6b2dcc9ec47d97889fa79657",
+    "audit.mjs": "18d3b70b5b15f178469326d2514d5329afcabd0d8ab72a3b085737a54824fedd",
+    "audit-policy.mjs": "5d2c014c9512d0267d4addfadd8c7e6172dfebf4463065e54a436de69c7266d6",
+    "authorized-baseline.mjs": "ea98d19e30098649e171d7071afa7e677d01e4d3a3adeff2922a1d174fa7ace0",
+    "check-guards.mjs": "e102529891c89190e4ee3702530d44721b2599f5bed9f3bf49c7e786d9c041ec",
+    "historical-policy.mjs": "886e3d256d669b1e6bb6458c988fe3ce25e639e9820f8979411e51be15ddbf7f",
+    "historical-media-allowlist.json": "09a1967a9ea64b3156fbd53e1228f239b34ed10d1e7520e003f2b9e197f77e7c",
+    "config.template.json": "1d05daa96acb73393cb18081f818f93e87c88646ecb4901cf3247ae45dd13ee8",
+    "README.md": "2613709a9b89cfcfdc26eaa36061b225a9d8925f415321725867663b551eccf6",
+    "PLAN.md": "60087ea6637616756c98fc6292b3afd8564ee2e44d843b93625f04a0bb7c8582"
+  },
+  "privateBaselineCommit": "f27832dc3c1637f488b9aa647c32e2713356263a",
+  "readmeProof": {
+    "sha256": "0181dbdf5569446662e3b2cb17fbb304c88f6ddc1864f3023e6baed5f73a8dea",
+    "prefixSha256": "4d7d5e36f4faf34a24606518e76f142115ad32e39b02d9d04c3484c9de962386",
+    "unchangedSuffixSha256": "00b41831f8d7693e72c0f599c44836e2ec269917441ccd5286d7f4346d5d1338",
+    "links": [
+      "artifacts/encoder-detail/public/encoder-iso.png",
+      "artifacts/encoder-detail/public/encoder-leds-both.png",
+      "artifacts/encoder-detail/public/sticks3-hub-encoder-visible-led0-on.png",
+      "artifacts/encoder-detail/public/review.json",
+      "artifacts/encoder-detail/public/source-audit.json",
+      "docs/AGENT-INTEGRATION.md"
+    ]
+  },
+  "inheritedGroveProof": {
+    "groveAuditSha256": "46488589560fc1210175482449b872dcbe4b33b9071c59bb4a63cd9c98071c93",
+    "groveReviewSha256": "8dddcf1d84e8a4efe2fe52bf7c3a07d7a0948fa18c9f1f1f77d4dc60c80b8978",
+    "rs485Historical40to42Preserved": true,
+    "rs485SourceReportSha256": "76a719c7581b05dfdc075ca1775602e2829b0f172e587f7884d58e021982b943",
+    "rs485CheckerSha256": "7d367f5e679a7448283453c27dddcd9e2e7a1a0c38c92acb6ac6a5cb6846e275",
+    "policy": "All seven inherited generated geometry reports permit only valid timestamp changes relative to this batch fixed public14c. No new semantic exception."
+  },
+  "historicalMediaFormatProof": {
+    "historicalPublicCommit": "d920714f970b7c585292851373b7e4b8ed83bef2",
+    "allowlistSha256": "09a1967a9ea64b3156fbd53e1228f239b34ed10d1e7520e003f2b9e197f77e7c",
+    "exactEntries": 162,
+    "exactHistoricalMatches": 162,
+    "strictMediaMatches": 554,
+    "strictCurrentBatchPngs": 80,
+    "matches": [
+      {
+        "path": "artifacts/dynamics/angle-driven-connected.png",
+        "sha256": "7998c058e548c91d583a1f7767f158dadfc2bc0d8e05b10338e62f23428310c6",
+        "bytes": 12073,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-back.png",
+        "sha256": "cccb7a2c85d9fcaa64431eff9caed95c646dbb9d631a0260694b9f3c224178a5",
+        "bytes": 13987,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-bottom.png",
+        "sha256": "36f43125f1d4b7b953a58da33818a7eb30af25e59e707a9eef2f10c41b2467f1",
+        "bytes": 14575,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-angle.png",
+        "sha256": "7bd5df594f7d633d7797cb6f344ea84a91817effb03897521bc7027821aede96",
+        "bytes": 12295,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-button.png",
+        "sha256": "fb864e771d8280c9fd4300ba38c2a8bd8102e42c8d5341df632f27e5366c72c4",
+        "bytes": 11922,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-buzzer.png",
+        "sha256": "2c324788ab3ccf8a1e2cd04e9271910d3f0925b70197896a9ab8034ca16e699e",
+        "bytes": 11761,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-color.png",
+        "sha256": "10f797ccd952117e59e4a65c3b116dc8a8a4fedd7fa3be8a4c4e226b8640d4d8",
+        "bytes": 11929,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-dual-button.png",
+        "sha256": "5cdd7990ea6664fcab8eb7ee80dbffd0c5b572dfe3607c048fc8372722de7fcb",
+        "bytes": 12094,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-encoder.png",
+        "sha256": "86ba1efe6ab200ed5101ffe04e0a021a635be1e0be3cbfea01772029c98116d6",
+        "bytes": 12196,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-env-iii.png",
+        "sha256": "e7069fdea20452d1e93ffe796763323caec0df4529de40e4148e96ec9a7d2992",
+        "bytes": 11661,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-fan.png",
+        "sha256": "28131cea62c5096756db92579884a0442696ba73618d4bf13a2be594448ff78c",
+        "bytes": 11851,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-heart.png",
+        "sha256": "24f7780460bae7eed18502474b13c87e3b8244425b58e22cce0c4d64a4505ff8",
+        "bytes": 11774,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-hub.png",
+        "sha256": "86dc8c88276c757d52c9776e55e81e0b2a685743d3e61d9f08087ea2b15ae055",
+        "bytes": 11624,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-ir.png",
+        "sha256": "419dddf2fb3f7af57c9287599b068e882a0ae31167cc6b4519dc3a439ec0fcc2",
+        "bytes": 11723,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-joystick-v11.png",
+        "sha256": "47d7ed2a8cff72f9e5026c919ce6ccb243132eca32ab9b61b5590b52058536cd",
+        "bytes": 12209,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-light.png",
+        "sha256": "164739e1ad03f062af2acfa689a8ee0e58ffc0554ab83b91871ab1305e7d9f15",
+        "bytes": 12017,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-ncir.png",
+        "sha256": "76c4f62cdcd23c37dcdce1b7f327a75ee057e966fedf6bfd4cdbee12250177ef",
+        "bytes": 11911,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-pir.png",
+        "sha256": "91871052a311ab7bc51ea21da9762303ca0057cdc646cf24f4dc5d29ac727f3d",
+        "bytes": 11598,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-relay.png",
+        "sha256": "f81a2dfa7fee2839180073fa2e82469509083d27db3036ebf32ca8aba4f4f9ff",
+        "bytes": 11999,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-rfid2.png",
+        "sha256": "f8862222942dee5b3fb658a1bdf064674cf6500edacfd46d712ff3c36d7f951d",
+        "bytes": 11325,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-rgb.png",
+        "sha256": "126a9b8241123945a1d3d2db9098c60ac8f2f7acafcb8eb4fb83918456a879ba",
+        "bytes": 11979,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-rs485.png",
+        "sha256": "a840ba8c85efd9ac3a6450bab2d202059254035746cac0af88ce91cb15993595",
+        "bytes": 11719,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-thermal.png",
+        "sha256": "08cc4431799cd12bf9bffa993df4d77ec210ef90dd099fe9d75721d15b4fc1f7",
+        "bytes": 11891,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-tof.png",
+        "sha256": "62fdbf9b97f35e34c9c7b0c7b7a628169bf3154ebe1d52e1e18a8f7572c382a6",
+        "bytes": 11840,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-tvoc.png",
+        "sha256": "71036238f8df510f01ba59dd9be147c88f8088a706f563a83b82a0ee0f9e39cd",
+        "bytes": 11848,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-connected-ultrasonic-i2c.png",
+        "sha256": "b1f012d733926e3c720ca872e5304d1c3ea26d16bd9357631929a3298f6bfcff",
+        "bytes": 11936,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-fan-running.png",
+        "sha256": "b405116b84bdb1c1831fa26ca6ddf8f2251f66aae92c9d7bbdabd5f0922ebd7a",
+        "bytes": 12094,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-pressed-iso.png",
+        "sha256": "3858da2b84ec07af742a59348a84495dd20ec0c721dfdda7403e09e7905f3862",
+        "bytes": 16463,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/atoms3r-released-iso.png",
+        "sha256": "5bdb829f65140ef083803b0fcc3ae96af6c984027644a82119a97315c1ce7cc5",
+        "bytes": 16353,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/cardputer-adv-latched-on.png",
+        "sha256": "fd3a2243735d69026953c81f9ec807efd31f21fa8e2b5434f486d61d2d899e78",
+        "bytes": 29353,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/cardputer-adv-pressed-iso.png",
+        "sha256": "0c37d549c0f8ebaa4e2d79d6476850b10f576027c44fbd5c38dab84b4f5724c9",
+        "bytes": 29350,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/cardputer-adv-released-iso.png",
+        "sha256": "59c1ad45fd077fcd3c86a14d47a878ad7fd3c4c0f4099ce44fffc0826fc7830a",
+        "bytes": 29344,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/cardputer-zero-latched-on.png",
+        "sha256": "d7ba8bb8e7f009339bc404bd35ba915f14df4f33b37b4da6bf304355bc77774c",
+        "bytes": 27921,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/cardputer-zero-pressed-iso.png",
+        "sha256": "f5205cd76c2847ed4ddec99a1172c7a4262732a91258f2fcb1dc3704ad34a787",
+        "bytes": 27916,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/cardputer-zero-released-iso.png",
+        "sha256": "e0c003e4a08aeebab6f52f0642f5550e9818187677cd6117a7bbd8cc825258f9",
+        "bytes": 27930,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/core2-pressed-iso.png",
+        "sha256": "c1d7fc6ca09f937f51c6130a041c9da4543593123d3efb8c78a1202375f29d54",
+        "bytes": 14712,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/core2-released-iso.png",
+        "sha256": "c1d7fc6ca09f937f51c6130a041c9da4543593123d3efb8c78a1202375f29d54",
+        "bytes": 14712,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/cores3-din-latched-on.png",
+        "sha256": "63260f090f0e787f5c714a53c749761caf3d1a75803849a338fe49b6346035e8",
+        "bytes": 17049,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/cores3-pressed-iso.png",
+        "sha256": "dcfb977a9d38b39a2879eb36ede227dc4ee7c0863d3b812eb46f9bacea1d53f8",
+        "bytes": 15487,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/cores3-released-iso.png",
+        "sha256": "dcfb977a9d38b39a2879eb36ede227dc4ee7c0863d3b812eb46f9bacea1d53f8",
+        "bytes": 15487,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/encoder-driven-connected.png",
+        "sha256": "c0e08912577851b2d750a7b88ef74d084e3428f592c684394746db696806b3e3",
+        "bytes": 11972,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/fan-motion-frame-0.png",
+        "sha256": "8d63ce33e9b602314346750cfdd16e84eefa4b6aa2b81a0a8af0fe3ee8a8b15a",
+        "bytes": 12140,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/fan-motion-frame-1.png",
+        "sha256": "58fed0df974a4e3bfd681888614fc2e37c5e830ae3f45359e52b5e391e36485a",
+        "bytes": 12527,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/fan-motion-frame-2.png",
+        "sha256": "cc7d987d88cdd907b059cdf56c2625e723e6e4e67276e941380e377cdf7afa3d",
+        "bytes": 12493,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/fan-motion-frame-3.png",
+        "sha256": "4592fe37483218c8abcadd2799008b36b2aac4ae363c7cbe8d38e32ea1086eb3",
+        "bytes": 12216,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/fan-motion-frame-4.png",
+        "sha256": "d7c9158824055923655de83b0d29564f3a272a6652ac1d8dbb814a9f45bb6bc3",
+        "bytes": 12173,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/fan-motion-frame-5.png",
+        "sha256": "18a94521cdd46d85deb06322d9bbc1ba2a0215f1a59664a8252eefd9c51bfb21",
+        "bytes": 12584,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/fan-motion-frame-6.png",
+        "sha256": "96d7dc45caad756ac0b63e82ed9682553973571b99fdeaebb5b6170a20dd7e51",
+        "bytes": 12096,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/fan-motion-frame-7.png",
+        "sha256": "69a9e4987c72f143b6557c45d8e9b7681e7f6b456a280e6075c4953bc20f9efd",
+        "bytes": 12146,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/focus-switch-to-atom.png",
+        "sha256": "d7ab77a7ab1a570db3de47ebdbdb6ff21ce4b0bdec56e54738c421792c3fd794",
+        "bytes": 12833,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/joystick-v11-driven-connected.png",
+        "sha256": "f701358329665b0db0aa4df5e49a1b693ac8551c9dc025446ff3e4c06df2348e",
+        "bytes": 11978,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/nanoc6-pressed-iso.png",
+        "sha256": "4962ea17b4e49a6dcc9e84a91259f369c9492651ca770abb17cf6543dd1f9ffa",
+        "bytes": 18832,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/nanoc6-released-iso.png",
+        "sha256": "e54061ca4966ee9816a7c39a30f111f39fb3e04b58b918b3cee9df6b2b1c9dde",
+        "bytes": 18634,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/nesso-n1-pressed-iso.png",
+        "sha256": "d43697d7fa66afa3ce44ff7760e115af4c5dbce439d134d5fc554dc108d0895d",
+        "bytes": 16893,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/nesso-n1-released-iso.png",
+        "sha256": "d195222863939a59219d41f477d7a5e187183051bdc3eee9e91f76da9e18ebe3",
+        "bytes": 16922,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/papercolor-pressed-iso.png",
+        "sha256": "8dedced65db070b3079fb1b833367a5b75e3fef43d3f0ab12b8304a910862917",
+        "bytes": 10798,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/papercolor-released-iso.png",
+        "sha256": "8dedced65db070b3079fb1b833367a5b75e3fef43d3f0ab12b8304a910862917",
+        "bytes": 10798,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/papermono-pressed-iso.png",
+        "sha256": "9dd42d22761703e3b5ac623037e1f504b7c2f2ee1b06dcfde91e22ae5837d19d",
+        "bytes": 11655,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/papermono-released-iso.png",
+        "sha256": "9dd42d22761703e3b5ac623037e1f504b7c2f2ee1b06dcfde91e22ae5837d19d",
+        "bytes": 11655,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/public-atoms3r-fan.png",
+        "sha256": "c33f1b053041f0ed533ed8cff89df25c7fffe999c92cc720ffd0d357e2e20692",
+        "bytes": 11722,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/public-atoms3r-pressed.png",
+        "sha256": "3858da2b84ec07af742a59348a84495dd20ec0c721dfdda7403e09e7905f3862",
+        "bytes": 16463,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/public-stackchan-pitch90.png",
+        "sha256": "f4d6955817428bc78319a2227b350c170c0e94b33dd63b9876d7293bae613332",
+        "bytes": 16212,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/stackchan-connected-articulated.png",
+        "sha256": "3f56f31200d3cda971839abc7e09d70287f7ed1af909f9daadd225b348fa2753",
+        "bytes": 14252,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/stackchan-pressed-iso.png",
+        "sha256": "255f8934d48bc0827c161ebfdd38eab441f6b7401f5397780d93a89753b3a6e9",
+        "bytes": 18548,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/stackchan-released-iso.png",
+        "sha256": "255f8934d48bc0827c161ebfdd38eab441f6b7401f5397780d93a89753b3a6e9",
+        "bytes": 18548,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/stackchan-yaw35-pitch35.png",
+        "sha256": "7dbf8351025052d3a5a242b74e30ec9fb38a4e36f711748bbb9abc64e729492c",
+        "bytes": 14563,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/stackchan-yaw35-pitch90.png",
+        "sha256": "f4d6955817428bc78319a2227b350c170c0e94b33dd63b9876d7293bae613332",
+        "bytes": 16212,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/stamplc-pressed-iso.png",
+        "sha256": "305b8f77bf102af53e31c4f5bac230510ce9c8d61751bca2ddf0fecd8479a184",
+        "bytes": 24257,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/stamplc-released-iso.png",
+        "sha256": "7b1b7118b81175614cbd2112dcaaf0f6293d8b4eab6ab3d1dc74c9c38ba5874b",
+        "bytes": 24263,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/sticks3-pressed-iso.png",
+        "sha256": "ab2664e7cb816ec1ae971027ca25033b60f85fa624fbd47d81407c762542c14e",
+        "bytes": 16089,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/sticks3-released-iso.png",
+        "sha256": "01f55b37c66c84e2808abdd42b51b2f6340a74a2f734089f7abfcadf69783476",
+        "bytes": 16100,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/stopwatch-pressed-iso.png",
+        "sha256": "fd782fb77cbb6f8fa8e01c25e3a729e2521ca5e2e1fc09822c21caa01f061568",
+        "bytes": 11797,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/stopwatch-released-iso.png",
+        "sha256": "adc3c132bd6999e02e843954a59bb200f22cf77aeec5b9301cec27d1ab1ee7e0",
+        "bytes": 11801,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/tab5-pressed-iso.png",
+        "sha256": "bf13b9a0265ba004fdf9b8d58ed9f7d451d55c3cb858257f0dea375940be88b5",
+        "bytes": 12903,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/dynamics/tab5-released-iso.png",
+        "sha256": "bf13b9a0265ba004fdf9b8d58ed9f7d451d55c3cb858257f0dea375940be88b5",
+        "bytes": 12903,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/interaction-expansion/nested-hub.png",
+        "sha256": "400d0f9ebf8e00f50e7f0b155cb546f55d078a1a5ca7502a82354528790c1b5c",
+        "bytes": 12670,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/interaction-expansion/public/nested-hub-detached.png",
+        "sha256": "bae18e025c91b433d824e7222dd7270af4e3da9f285938c0ae3d1257284180a3",
+        "bytes": 13527,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/interaction-expansion/public/nested-hub.png",
+        "sha256": "8da343cf6dd058900a8e37c2f95ec3c1257e3b29f96da7f47da3179e43a00f0b",
+        "bytes": 12109,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/interaction-expansion/public/scroll-iso.png",
+        "sha256": "039a9868759d0a4d6932fdbd1fceeb677f1549630f9cc0bbc9fb1c6ec223dd27",
+        "bytes": 12104,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/interaction-expansion/public/scroll-pressed.png",
+        "sha256": "c042cef69bc139eed908b4a768d45f2529ae72f7548200d66de82f640667a1d5",
+        "bytes": 19801,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/interaction-expansion/public/scroll-released.png",
+        "sha256": "b41ae67c3bd8e661ba122b810ec30c2eab5f282a3e874b7b98348bd60a1ae027",
+        "bytes": 19921,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/interaction-expansion/public/scroll-rest.png",
+        "sha256": "b41ae67c3bd8e661ba122b810ec30c2eab5f282a3e874b7b98348bd60a1ae027",
+        "bytes": 19921,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/interaction-expansion/public/scroll-rotation-rgb.png",
+        "sha256": "2effc87c0270fc8e323c9bb593bf77ae295d43adead3f31d3837ac00fe6bf8f2",
+        "bytes": 12478,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/interaction-expansion/public/stackchan-iso.png",
+        "sha256": "40803e15870cfea75675599e3644a21c62b3e57a1a4993dd9df15b42709a7d5f",
+        "bytes": 13329,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/interaction-expansion/public/stackchan-pose45.png",
+        "sha256": "6dd1048f2cb1bfa846a316e83cf5feb963b7269395035791c34cc0f5d9e0d2c2",
+        "bytes": 15254,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/interaction-expansion/public/stackchan-pose90.png",
+        "sha256": "d734eb1256fabb2e5ebabe2c86fa02876a341bb000d471589d9119416d2cc3f5",
+        "bytes": 16404,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/interaction-expansion/public/stackchan-top-rgb.png",
+        "sha256": "cce93d6c9217718882e7e8de82edee2c367209faada350ae73c927b0d9fc81bd",
+        "bytes": 11839,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/interaction-expansion/stackchan-top-rgb.png",
+        "sha256": "cce93d6c9217718882e7e8de82edee2c367209faada350ae73c927b0d9fc81bd",
+        "bytes": 11839,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/lifecycle-refinement/8encoder-selection.png",
+        "sha256": "c22aa3376542465e54d77cddaf3f026e4479eb4cfee35c5136ba9df4e80cdab4",
+        "bytes": 176642,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          847,
+          3457
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/lifecycle-refinement/cores3-key-detached.png",
+        "sha256": "c8ceafe2711965aefd2b127c13abac1492b27cec5f2ce7c8320bc3812ccb5b08",
+        "bytes": 97063,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          847,
+          1702
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/lifecycle-refinement/fan-return-stopped.png",
+        "sha256": "467bfd7baf3fb8ac109df18abf391726d83e449e598550a624250be1e8373b6b",
+        "bytes": 98147,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          847,
+          1728
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/lifecycle-refinement/public/8encoder-selection.png",
+        "sha256": "6c12b9540c768589219aa90d8a82f6d843475d3b194907771096fdb7f32cf08e",
+        "bytes": 176734,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          847,
+          3451
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/lifecycle-refinement/public/cores3-key-detached.png",
+        "sha256": "c8ceafe2711965aefd2b127c13abac1492b27cec5f2ce7c8320bc3812ccb5b08",
+        "bytes": 97063,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          847,
+          1702
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/lifecycle-refinement/public/fan-return-stopped.png",
+        "sha256": "08b376db27532b1c33dd9af9b1482fc17e79e41a5cc139d90de4959861104aef",
+        "bytes": 98140,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          847,
+          1728
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/lifecycle-refinement/public/stackchan-back.png",
+        "sha256": "46beb9e0a42e1095716c0d1ecb1888c55351b2e8f6efdb8290e68456810f6367",
+        "bytes": 19776,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/lifecycle-refinement/public/stackchan-bottom.png",
+        "sha256": "81dc7a636eedcae1e38288f567b6283fe4db1eb02e3b857d05cd119ce5ee279e",
+        "bytes": 12205,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/lifecycle-refinement/public/stackchan-env-posed.png",
+        "sha256": "d6b2b662ee2264d0a9856e1a15c36d8d2ee4072889d5894e974f92a53f154169",
+        "bytes": 13674,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/lifecycle-refinement/public/stackchan-front.png",
+        "sha256": "a03b0b76df2d024b5e919c1f7dbddf11bab6644bcdb5efa27ee58acd5be3b173",
+        "bytes": 13509,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/lifecycle-refinement/public/stackchan-iso.png",
+        "sha256": "5b2b5cbe9dcda5e7bf04c10d8ad73f3671e5867ae9df2309a09b4095c45ae5d0",
+        "bytes": 13392,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/lifecycle-refinement/public/stackchan-left.png",
+        "sha256": "d86b24e048b5b1a264d76b455499f5eae9fef446674e12bd3fb1c8f8cbb39bca",
+        "bytes": 14650,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/lifecycle-refinement/public/stackchan-rear-pitch90.png",
+        "sha256": "108522123674b4b2fe1c7255179fd6f4187a202fef81e3d57d2a2221ed3d0e17",
+        "bytes": 14485,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/lifecycle-refinement/public/stackchan-right.png",
+        "sha256": "701a7eabf301337708adf70d2c248eac7dde31c74a99d7ff25ee9b0e5b1a1cfd",
+        "bytes": 14438,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/lifecycle-refinement/public/stackchan-top.png",
+        "sha256": "bb17153fecb4cb164688242b16e60e68527bec57f4a0d050e0e23bc8baddeb4d",
+        "bytes": 11489,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/lifecycle-refinement/stackchan-env-posed.png",
+        "sha256": "d6b2b662ee2264d0a9856e1a15c36d8d2ee4072889d5894e974f92a53f154169",
+        "bytes": 13674,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/8encoder-back.png",
+        "sha256": "85130b3dff1c45c7bfc0469ff0100bb509cdf63191a8f7bd68d69b0e7fc3df53",
+        "bytes": 14361,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/8encoder-bottom.png",
+        "sha256": "1b0089d2f364afb03a27fd72f988badab3a0c6de4a8a6266b90f4c8ff10a28dd",
+        "bytes": 13123,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/8encoder-external-state.png",
+        "sha256": "f3f645a370d3b5e5ebbf03e27b6d86dc4df237c3fd9c7c23aefe21a8078cfc7d",
+        "bytes": 20445,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/8encoder-front.png",
+        "sha256": "013f90d3a7db30a0d2bf3deda63b6cbab1502ec2178e054f70781b77f810b1ab",
+        "bytes": 20301,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/8encoder-iso.png",
+        "sha256": "fcb43e393285b1aaf5bdebca305f78c73a6d50a8793835ac57f004dc4b318cc6",
+        "bytes": 20231,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/8encoder-left.png",
+        "sha256": "c03a90b9cdf4aaffc0be35761b834c2c25ba0bc094b3d29b7cf26c9ac471d24d",
+        "bytes": 18302,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/8encoder-pressed.png",
+        "sha256": "0de2719cbd661c057448a046295e1b6e53fd78763271a93ec2ca50bd6453cddf",
+        "bytes": 20227,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/8encoder-released.png",
+        "sha256": "fcb43e393285b1aaf5bdebca305f78c73a6d50a8793835ac57f004dc4b318cc6",
+        "bytes": 20231,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/8encoder-rest.png",
+        "sha256": "fcb43e393285b1aaf5bdebca305f78c73a6d50a8793835ac57f004dc4b318cc6",
+        "bytes": 20231,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/8encoder-right.png",
+        "sha256": "807727e5146c2a5f4c871979e1c69cd043778a4bd133ded504f32fe3e707033a",
+        "bytes": 18555,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/8encoder-top.png",
+        "sha256": "303cde01e68549fa10b0d110b2320f009860f8a62273b2ed519d410d85a4357b",
+        "bytes": 12730,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/atoms3r-key-external-state.png",
+        "sha256": "b365c9d5cddf7b38e87fa7fb85e5cf6f8f23a117770cc9c6cbe6c451c3ad80f4",
+        "bytes": 16819,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/atoms3r-key-pressed.png",
+        "sha256": "c87c4a898c9858a106c9f7e866673611d298918d19a6cd62aa43c24446fcc3a2",
+        "bytes": 16748,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/atoms3r-key.png",
+        "sha256": "aef46c6f0d3e4a2b32a92540f4c311bb7f03ccdd5d5cbe5f5c4ec49f81cdb6fc",
+        "bytes": 16538,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/cores3-8encoder-external-state.png",
+        "sha256": "ff9b27d3f3f6dc2683603bd76aef0bd97aeb33f22d93968f35d7e34072784a73",
+        "bytes": 16491,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/cores3-8encoder-pressed.png",
+        "sha256": "fb611b82e485199d93a97a055ce5160b60bf93f3302599110c5280704f045acf",
+        "bytes": 16672,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/cores3-8encoder.png",
+        "sha256": "3b19b44f7bd21c216afea0a3993c0881f654ec0c2f6c9c08d0d5e7375cff9afd",
+        "bytes": 16342,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/key-back.png",
+        "sha256": "d56fe6a4fec083da6165f015119fd928a1a6bc04ce2214b803d9078a4372e28e",
+        "bytes": 14608,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/key-bottom.png",
+        "sha256": "335548bd9c392fccdfc9e53c59abb8fb726a73a60fb9f146767f22d528c315b7",
+        "bytes": 15932,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/key-external-state.png",
+        "sha256": "efd246adf8f0cccad8b658321667ef290f95d94455b8a738cca59e96a20f0c2a",
+        "bytes": 16958,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/key-front.png",
+        "sha256": "013e3f322c9b03ac9148eeb8858cfc59f1c0e4d39fb0893dcb197dcecf04dff8",
+        "bytes": 16935,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/key-iso.png",
+        "sha256": "b99e6e10ebb4034404af27e035bae6b430d314fb45ab042c069baa1bb02f28fb",
+        "bytes": 17290,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/key-left.png",
+        "sha256": "ddbe4dbcf9dc244999ded393604efb5196678abd0ad2ee1c15abd4fddf7d9b14",
+        "bytes": 16133,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/key-pressed.png",
+        "sha256": "82489418e55b21766b5fb4e07aff10819d33c0d9b93edf269e44f7bf440bcfad",
+        "bytes": 16981,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/key-released.png",
+        "sha256": "b99e6e10ebb4034404af27e035bae6b430d314fb45ab042c069baa1bb02f28fb",
+        "bytes": 17290,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/key-rest.png",
+        "sha256": "b99e6e10ebb4034404af27e035bae6b430d314fb45ab042c069baa1bb02f28fb",
+        "bytes": 17290,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/key-right.png",
+        "sha256": "746a73cccca2ceb22e751d3ee0bec48981cfcfd0697adb4805f37c24717683f4",
+        "bytes": 16061,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/key-top.png",
+        "sha256": "7f6b2cffb210dd9abab42b0534a6b5163ee08b316501db5d28d47bbc2c9760cd",
+        "bytes": 15670,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/stackchan-back.png",
+        "sha256": "6ee4274f86d42b428e35eff18890f801cabdfd1ae61deca02be7555946315fe9",
+        "bytes": 25854,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/stackchan-bottom.png",
+        "sha256": "cf15544f53ea63e22755f93853371b7737f5d8afa8103f22e7c2546483e41c75",
+        "bytes": 17359,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/stackchan-env-pitch90.png",
+        "sha256": "b4cf751520de10b2e2349d2e9e2cd35c940b31655cf1937746a043d8e93cea56",
+        "bytes": 18089,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/stackchan-env-posed.png",
+        "sha256": "d9b8e946a9c0de01f9775f7ca8bdfa880d9b0b0c2e3425bc8b6acd258845037a",
+        "bytes": 18312,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/stackchan-front.png",
+        "sha256": "53659b65af9470a6608e67f589f73f35e38803cf6fda49a3fd4109eae7372459",
+        "bytes": 19074,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/stackchan-iso.png",
+        "sha256": "154092547871304ffb790626f7eb232859bbc1f47823d344de886d45ea27fe51",
+        "bytes": 18171,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/stackchan-left.png",
+        "sha256": "719b220ac054fb7a040c318a05f4ee7db7fdbe3d201bf9714bfe56b0886d7bf0",
+        "bytes": 20038,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/stackchan-pitch90.png",
+        "sha256": "e3da9921a2a0ffb8bcc22aa0150843c20d2163fd27c10aac2dc9087744405bb7",
+        "bytes": 21795,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/stackchan-power-pressed.png",
+        "sha256": "0a3c66b020a209b564aba1cc1cd8d0ea5769a94a0655f7d707a4d3503ff076fc",
+        "bytes": 28804,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/stackchan-power-released.png",
+        "sha256": "469eb5165853cb67099bba2ddf021433d158b8dccdb31bded1ea14731db51f0f",
+        "bytes": 28707,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/stackchan-power-rest.png",
+        "sha256": "469eb5165853cb67099bba2ddf021433d158b8dccdb31bded1ea14731db51f0f",
+        "bytes": 28707,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/stackchan-right.png",
+        "sha256": "c915258b6fb9960d0eb23b389753ee18ae78137cc620b1417958fc22f2684753",
+        "bytes": 19613,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/stackchan-top.png",
+        "sha256": "c6dfa28e8bd801c1db9885eb376707fb5439bab71310b6d2cc0d4ef5fc76480b",
+        "bytes": 15995,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/motion-refinement/public/stackchan-yaw35-pitch35.png",
+        "sha256": "499cf4c246ed3bf058581742da6734a8733fd5a1daaecc5254390669a954c31a",
+        "bytes": 19169,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          934,
+          590
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/refinement/public/adv-connected-cardkb.png",
+        "sha256": "ea489dac75b608eff53e273f53f6dc9ccbf6192b20ee7aa4888d4b936a28dd41",
+        "bytes": 15785,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/refinement/public/adv-connected-limit.png",
+        "sha256": "6e1aee8285c6726ed90e400b468cc087cf2f74b9b4b5fdfb432debe61c7f20c9",
+        "bytes": 15775,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/refinement/public/adv-grove-selector.png",
+        "sha256": "d42fca41f786929f689edea00f87277caca1a4cc08db3b27a33d7f62b4c2bfdc",
+        "bytes": 10155,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/refinement/public/adv-interfaces-right.png",
+        "sha256": "3daf24a5ae47964c75569fa7365eae8a6940fc56b4d3ed0b468d3b87bca18d6e",
+        "bytes": 10700,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/refinement/public/button-iso.png",
+        "sha256": "72a2c1e8bffbcbd6c88e8df8b072b3790263f3cd0ee0f52795105205118eb64d",
+        "bytes": 14375,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/refinement/public/button-pressed.png",
+        "sha256": "73f85a9ce69b5f4c6242cc19a154a721e06ea67e879649ffcd0ad3e58f3142fc",
+        "bytes": 14293,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/refinement/public/button-released.png",
+        "sha256": "72a2c1e8bffbcbd6c88e8df8b072b3790263f3cd0ee0f52795105205118eb64d",
+        "bytes": 14375,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/refinement/public/cardkb-iso.png",
+        "sha256": "87d8d297c140f3177384375eda4d8db084be74c89a2ab096ea127d219afb6712",
+        "bytes": 26138,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/refinement/public/cardkb-pressed.png",
+        "sha256": "389ec4157771842bcc11f28abc6e63b692a3fe4485baf7a2459b716ba6dfb578",
+        "bytes": 26134,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/refinement/public/cardkb-released.png",
+        "sha256": "87d8d297c140f3177384375eda4d8db084be74c89a2ab096ea127d219afb6712",
+        "bytes": 26138,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/refinement/public/cardputer-adv-iso.png",
+        "sha256": "a73505667f1f40db1fd4edb829b9415a48928a76821e8726f74ef51a3a28d312",
+        "bytes": 28739,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/refinement/public/dual-button-iso.png",
+        "sha256": "b2a3df01a018a41b58461ca2c1c811ce9a2be82a29782f1001bc769ceafb4a43",
+        "bytes": 16123,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/refinement/public/joystick-v11-iso.png",
+        "sha256": "58841d3e0624bcf9d316368549e331d233f2d10af96f211650a416c67a1196e6",
+        "bytes": 15415,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/refinement/public/limit-iso.png",
+        "sha256": "c92f51f45c4f67e8d1280d5f41182f1c3c1ad91979ea88bbc30ab892ea55c068",
+        "bytes": 16100,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/refinement/public/limit-pressed.png",
+        "sha256": "6be9a5746b2862b9a9a93dfea104e59ddc37b53eeba0d261e08e90d9f9a4bf47",
+        "bytes": 15778,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      },
+      {
+        "path": "artifacts/refinement/public/limit-released.png",
+        "sha256": "c92f51f45c4f67e8d1280d5f41182f1c3c1ad91979ea88bbc30ab892ea55c068",
+        "bytes": 16100,
+        "actualFormat": "JPEG",
+        "decodedSize": [
+          567,
+          540
+        ],
+        "unchangedFromHistoricalD920": true
+      }
+    ]
+  },
+  "currentRuntimeProof": {
+    "files": 62,
+    "sha256": "1a832ed4e8d95829278c47571dd6ba60888843b4d973a6dde163014083ca1954",
+    "matchesActualBrowserBuild": true,
+    "scope": "Current task-local ignored dist bytes independently checked; full distribution inventory continues to skip only its approved ignored runtime directory."
+  },
+  "fileCount": 1122,
+  "textFiles": 378,
+  "derivedGeometry": 40,
+  "rawInputFingerprints": 1046,
+  "rawByteMatches": 3,
+  "authorizedBaselineByteMatches": 3,
+  "unauthorizedRawByteMatches": 0,
+  "matchDetails": [
+    {
+      "file": "licenses/emulator-MIT.txt",
+      "sha256": "46e054dd27254243fa431abe8b3aa5a28e353e0ee71d5633833723afee83e5cb",
+      "bytes": 1077,
+      "category": "required-third-party-license",
+      "privateSourcePathSha256": "cea93847d05fc8d95fcb4d670d5f47368937421db65b943e83d06c818987402f",
+      "basePublicCommit": "14c4006bda4db89d895ccbfcb66f489432ab3198",
+      "sourceCommit": "3aaeb1b076092994e77d6df0500e8e027019d3be",
+      "privateBaselineCommit": "f27832dc3c1637f488b9aa647c32e2713356263a",
+      "currentEqualsPublicBase": true,
+      "privateCanonicalEqualsPublicBase": true,
+      "privateRawEqualsPublicBase": true,
+      "privateBaselineCanonicalEqualsPublicBase": true,
+      "privateBaselineRawEqualsPublicBase": true,
+      "outsidePlannedOutputs": true,
+      "historicalBinding": "immutable-license-notices-and-upstream-manifest",
+      "authorized": true
+    },
+    {
+      "file": "licenses/sticks3-upstream-package.json",
+      "sha256": "d71cad3e987e79d38d8cda73c813dfb2bcd7fb039cf8233188410886407157a9",
+      "bytes": 917,
+      "category": "upstream-license-declaration-metadata",
+      "privateSourcePathSha256": "e34c81ce41693473450f3220e52c4411a9e752c1f9dad9ee8993560e2fcb156b",
+      "basePublicCommit": "14c4006bda4db89d895ccbfcb66f489432ab3198",
+      "sourceCommit": "3aaeb1b076092994e77d6df0500e8e027019d3be",
+      "privateBaselineCommit": "f27832dc3c1637f488b9aa647c32e2713356263a",
+      "currentEqualsPublicBase": true,
+      "privateCanonicalEqualsPublicBase": true,
+      "privateRawEqualsPublicBase": true,
+      "privateBaselineCanonicalEqualsPublicBase": true,
+      "privateBaselineRawEqualsPublicBase": true,
+      "outsidePlannedOutputs": true,
+      "historicalBinding": "immutable-license-notices-and-upstream-manifest",
+      "authorized": true
+    },
+    {
+      "file": "artifacts/stackchan-touch-led-check.json",
+      "sha256": "cd197a51e0dd841c656605fdec26e601df1f5f20e604660d872cd2e2a058ead7",
+      "bytes": 1348,
+      "category": "historical-generated-visual-check-report",
+      "privateSourcePathSha256": "3bb4888465709d1045dac21ee20fe8590d9e361bd3380dc4ceb1c52a184d24bb",
+      "basePublicCommit": "14c4006bda4db89d895ccbfcb66f489432ab3198",
+      "sourceCommit": "3aaeb1b076092994e77d6df0500e8e027019d3be",
+      "privateBaselineCommit": "f27832dc3c1637f488b9aa647c32e2713356263a",
+      "currentEqualsPublicBase": true,
+      "privateCanonicalEqualsPublicBase": true,
+      "privateRawEqualsPublicBase": true,
+      "privateBaselineCanonicalEqualsPublicBase": true,
+      "privateBaselineRawEqualsPublicBase": true,
+      "outsidePlannedOutputs": true,
+      "historicalBinding": "immutable-candidate-sourceFiles-originalEvidence-and-prior-batches",
+      "authorized": true
+    }
+  ],
+  "authorizedBaselineScope": "Exactly three pinned pre-existing license/metadata/generated-report tuples; all original raw fingerprints remain scanned. No other public path, private source path, digest, alias or new planned output is authorized.",
+  "changedPaths": [
+    "README.md",
+    "artifacts/detail-check.json",
+    "artifacts/dynamics-check.json",
+    "artifacts/geometry-check.json",
+    "artifacts/grove-cable-check.json",
+    "artifacts/host-grove-assembly-check.json",
+    "candidate-manifest.json",
+    "catalog/products.json",
+    "docs/AGENT-INTEGRATION.md",
+    "docs/STATUS.md",
+    "scripts/check-details.mjs",
+    "scripts/check-port-lifecycle.mjs",
+    "source-manifest.json",
+    "src/core/components/Port.js",
+    "src/units/encoder/dimensions.js",
+    "src/units/encoder/index.js",
+    "src/units/shared/open-top-grove.js",
+    "artifacts/encoder-detail/encoder-angle-0.png",
+    "artifacts/encoder-detail/encoder-angle-180.png",
+    "artifacts/encoder-detail/encoder-angle-37.png",
+    "artifacts/encoder-detail/encoder-angle-reset.png",
+    "artifacts/encoder-detail/encoder-back.png",
+    "artifacts/encoder-detail/encoder-bottom.png",
+    "artifacts/encoder-detail/encoder-canvas-cap-hover-rest.png",
+    "artifacts/encoder-detail/encoder-canvas-cap-pointer-down.png",
+    "artifacts/encoder-detail/encoder-canvas-cap-pointer-released.png",
+    "artifacts/encoder-detail/encoder-front.png",
+    "artifacts/encoder-detail/encoder-iso.png",
+    "artifacts/encoder-detail/encoder-led0-only.png",
+    "artifacts/encoder-detail/encoder-led0-reset.png",
+    "artifacts/encoder-detail/encoder-led1-only.png",
+    "artifacts/encoder-detail/encoder-led1-reset.png",
+    "artifacts/encoder-detail/encoder-leds-both-reset.png",
+    "artifacts/encoder-detail/encoder-leds-both.png",
+    "artifacts/encoder-detail/encoder-leds-off.png",
+    "artifacts/encoder-detail/encoder-left.png",
+    "artifacts/encoder-detail/encoder-panel-inspection-released-pointer-held.png",
+    "artifacts/encoder-detail/encoder-panel-two-sources-held.png",
+    "artifacts/encoder-detail/encoder-panel-two-sources-released.png",
+    "artifacts/encoder-detail/encoder-press-down.png",
+    "artifacts/encoder-detail/encoder-press-released.png",
+    "artifacts/encoder-detail/encoder-press-rest.png",
+    "artifacts/encoder-detail/encoder-right.png",
+    "artifacts/encoder-detail/encoder-spinning-pressed.png",
+    "artifacts/encoder-detail/encoder-spinning-released.png",
+    "artifacts/encoder-detail/encoder-spinning-stopped.png",
+    "artifacts/encoder-detail/encoder-top.png",
+    "artifacts/encoder-detail/public/browser-review.json",
+    "artifacts/encoder-detail/public/commands/build.log",
+    "artifacts/encoder-detail/public/commands/check.log",
+    "artifacts/encoder-detail/public/commands/status.log",
+    "artifacts/encoder-detail/public/encoder-angle-0.png",
+    "artifacts/encoder-detail/public/encoder-angle-180.png",
+    "artifacts/encoder-detail/public/encoder-angle-37.png",
+    "artifacts/encoder-detail/public/encoder-angle-reset.png",
+    "artifacts/encoder-detail/public/encoder-back.png",
+    "artifacts/encoder-detail/public/encoder-bottom.png",
+    "artifacts/encoder-detail/public/encoder-canvas-cap-hover-rest.png",
+    "artifacts/encoder-detail/public/encoder-canvas-cap-pointer-down.png",
+    "artifacts/encoder-detail/public/encoder-canvas-cap-pointer-released.png",
+    "artifacts/encoder-detail/public/encoder-front.png",
+    "artifacts/encoder-detail/public/encoder-iso.png",
+    "artifacts/encoder-detail/public/encoder-led0-only.png",
+    "artifacts/encoder-detail/public/encoder-led0-reset.png",
+    "artifacts/encoder-detail/public/encoder-led1-only.png",
+    "artifacts/encoder-detail/public/encoder-led1-reset.png",
+    "artifacts/encoder-detail/public/encoder-leds-both-reset.png",
+    "artifacts/encoder-detail/public/encoder-leds-both.png",
+    "artifacts/encoder-detail/public/encoder-leds-off.png",
+    "artifacts/encoder-detail/public/encoder-left.png",
+    "artifacts/encoder-detail/public/encoder-panel-inspection-released-pointer-held.png",
+    "artifacts/encoder-detail/public/encoder-panel-two-sources-held.png",
+    "artifacts/encoder-detail/public/encoder-panel-two-sources-released.png",
+    "artifacts/encoder-detail/public/encoder-press-down.png",
+    "artifacts/encoder-detail/public/encoder-press-released.png",
+    "artifacts/encoder-detail/public/encoder-press-rest.png",
+    "artifacts/encoder-detail/public/encoder-right.png",
+    "artifacts/encoder-detail/public/encoder-spinning-pressed.png",
+    "artifacts/encoder-detail/public/encoder-spinning-released.png",
+    "artifacts/encoder-detail/public/encoder-spinning-stopped.png",
+    "artifacts/encoder-detail/public/encoder-top.png",
+    "artifacts/encoder-detail/public/pixel-equivalence.json",
+    "artifacts/encoder-detail/public/review.json",
+    "artifacts/encoder-detail/public/sticks3-hub-after-encoder-detach.png",
+    "artifacts/encoder-detail/public/sticks3-hub-encoder-angle-180.png",
+    "artifacts/encoder-detail/public/sticks3-hub-encoder-angle-37.png",
+    "artifacts/encoder-detail/public/sticks3-hub-encoder-default.png",
+    "artifacts/encoder-detail/public/sticks3-hub-encoder-led0-off.png",
+    "artifacts/encoder-detail/public/sticks3-hub-encoder-led0.png",
+    "artifacts/encoder-detail/public/sticks3-hub-encoder-posed.png",
+    "artifacts/encoder-detail/public/sticks3-hub-encoder-pressed.png",
+    "artifacts/encoder-detail/public/sticks3-hub-encoder-visible-led0-off.png",
+    "artifacts/encoder-detail/public/sticks3-hub-encoder-visible-led0-on.png",
+    "artifacts/encoder-detail/sticks3-hub-after-encoder-detach.png",
+    "artifacts/encoder-detail/sticks3-hub-encoder-angle-180.png",
+    "artifacts/encoder-detail/sticks3-hub-encoder-angle-37.png",
+    "artifacts/encoder-detail/sticks3-hub-encoder-default.png",
+    "artifacts/encoder-detail/sticks3-hub-encoder-led0-off.png",
+    "artifacts/encoder-detail/sticks3-hub-encoder-led0.png",
+    "artifacts/encoder-detail/sticks3-hub-encoder-posed.png",
+    "artifacts/encoder-detail/sticks3-hub-encoder-pressed.png",
+    "artifacts/encoder-detail/sticks3-hub-encoder-visible-led0-off.png",
+    "artifacts/encoder-detail/sticks3-hub-encoder-visible-led0-on.png",
+    "public/data/catalog.json",
+    "scripts/check-encoder-assembly.mjs",
+    "src/units/encoder/assembly.js"
+  ],
+  "timestampOnlyLegacyReports": [
+    {
+      "publicPathSha256": "8b91915f158c6543ca563f5d9e3ea5bd3ff553986d2ccd262bef236df1aec620",
+      "category": "inherited-generated-geometry-report"
+    },
+    {
+      "publicPathSha256": "09c209b38cb4e8905e7bf31022a183eda5c243862d45a144dccb8ff50dfdadc1",
+      "category": "inherited-generated-geometry-report"
+    },
+    {
+      "publicPathSha256": "c56e88448771fb3fc62366c9ef5b36858840cd552b213dc04d85eb42d8a83e12",
+      "category": "inherited-generated-geometry-report"
+    },
+    {
+      "publicPathSha256": "8be423fc1d260367b805e84a0c9b9ca74cd0995f10066f1657d19ac3481abd9f",
+      "category": "inherited-generated-geometry-report"
+    },
+    {
+      "publicPathSha256": "ccc7ef3024b66479658c32076227028afc33bf61e0824d9741d279d6cf273829",
+      "category": "inherited-generated-geometry-report"
+    },
+    {
+      "publicPathSha256": "ebc7d2e84e53d0ab9d5db34166676923b1a36ae6573e73340d0728ac6b74bbef",
+      "category": "inherited-generated-geometry-report"
+    },
+    {
+      "publicPathSha256": "e54357e5219e4bad47204e126be2153243d828960d84f9b5910585185a9b0201",
+      "category": "inherited-rs485-generated-geometry-report"
+    }
+  ],
+  "configuredMedia": [
+    {
+      "path": "artifacts/encoder-detail/encoder-front.png",
+      "sha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-back.png",
+      "sha256": "c02dd05561c858992a4e78f85d8988e3c82b2b2bb88d73c845202f5e70a8fd3b",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-left.png",
+      "sha256": "f9cfc2ba952eb1449960fc2ccb987ff2851c3d74493d2f8891f08a68df70066c",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-right.png",
+      "sha256": "5c56b1e42574f925e0ea169ed732686c277dfc4bc789bb6ede5e706bd835647e",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-top.png",
+      "sha256": "3709f08cb9ae1229d7ce27aee56ea48fc1f4b83263d483ba28f3d6d76767eac5",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-bottom.png",
+      "sha256": "2cad6e893074e76cb6d89deb883e87cc0e0d45298173a0745888729318254088",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-iso.png",
+      "sha256": "9f7e8dc21065895ede17043c3486d7c3f9080a04e3a386723d0c33aadacb7792",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-leds-off.png",
+      "sha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-led0-only.png",
+      "sha256": "235633ff40d4a722a3511e0d3cf1cb8a56fbf6fbd16304d1671194b9d62830e9",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-led0-reset.png",
+      "sha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-led1-only.png",
+      "sha256": "4d66b94ea45937ce0688856df5ceae86e70391116bc71ceeff785c2b95b5958e",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-led1-reset.png",
+      "sha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-leds-both.png",
+      "sha256": "b914fec74816c4b2f7d59b2b51f64651afb0cc9271848c3403c3280fad3b70cd",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-leds-both-reset.png",
+      "sha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-angle-0.png",
+      "sha256": "185f5dd6badd5236d3a6bbf5feac96cd7aca341b91c54792d92043669d563b8f",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-angle-37.png",
+      "sha256": "f3787f70dffe0a2322d3e4c1e148465def8a7c91a2c6295f8d4afca4fb20b39c",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-angle-180.png",
+      "sha256": "633b80816537278a074caee624c75b889b34ed2ba7b33d50bd9d24a697b15271",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-angle-reset.png",
+      "sha256": "185f5dd6badd5236d3a6bbf5feac96cd7aca341b91c54792d92043669d563b8f",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-press-rest.png",
+      "sha256": "e92bd96dc54e4a556ea6852f6d0493bcd1543a84b7bd4736058cd5d5e5fc0d3d",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-press-down.png",
+      "sha256": "c7e1ebc92f69cb45593b464065491ab2ccc5621cc679fe171ca2ff9706c1da43",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-press-released.png",
+      "sha256": "e92bd96dc54e4a556ea6852f6d0493bcd1543a84b7bd4736058cd5d5e5fc0d3d",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-spinning-pressed.png",
+      "sha256": "604ccffc7d3f373f5cbb984b5f93b19e3ed652fd2c4ecf999065006d53b0334b",
+      "origin": "original-native-model-render",
+      "temporalScope": "continuous-rpm-live"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-spinning-released.png",
+      "sha256": "318ec322a4e9e2c5f91fa8274c3bcd9d5bf7237f222ddd2f1adae920b4b13f25",
+      "origin": "original-native-model-render",
+      "temporalScope": "continuous-rpm-live"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-spinning-stopped.png",
+      "sha256": "1f566f88329ee60cc8d2cde42e04db26c7a17bba897cb27a48b77015937802ab",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-canvas-cap-hover-rest.png",
+      "sha256": "2ac7b0610437f610a334e71b69d23b0ab40ab5c48fafd7f1cfd36feb09615387",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-canvas-cap-pointer-down.png",
+      "sha256": "c0fdbd5771e4f1d5b494414bcf41fdeada0c9d47e55e4e574c75a42c7bf83c20",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-canvas-cap-pointer-released.png",
+      "sha256": "2ac7b0610437f610a334e71b69d23b0ab40ab5c48fafd7f1cfd36feb09615387",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-panel-two-sources-held.png",
+      "sha256": "e696dd30375cc99062bbcb4128f2cd48233673bc74211e5d188c9bef2edc4adc",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-panel-inspection-released-pointer-held.png",
+      "sha256": "e696dd30375cc99062bbcb4128f2cd48233673bc74211e5d188c9bef2edc4adc",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/encoder-panel-two-sources-released.png",
+      "sha256": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/sticks3-hub-encoder-default.png",
+      "sha256": "4e0776e9bbc569496aa90f95a3bc5098f5e1681a78197fc37be7febdffd0606b",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/sticks3-hub-encoder-angle-37.png",
+      "sha256": "4f6ba83203448538007c8a27a4c0b8aa9dadbd4451b12b8f008a983a781b0e94",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/sticks3-hub-encoder-angle-180.png",
+      "sha256": "c2613a27ef28f47688d46ef020a4fde2f1205a9c4885feb6506bce6eeabafe46",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/sticks3-hub-encoder-led0.png",
+      "sha256": "8376e07bdb383f27343af357077644424de8b49b7310ca7179b8e99a24616aef",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/sticks3-hub-encoder-led0-off.png",
+      "sha256": "c2613a27ef28f47688d46ef020a4fde2f1205a9c4885feb6506bce6eeabafe46",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/sticks3-hub-encoder-visible-led0-on.png",
+      "sha256": "cb163193c2a487e60cad22054993cf94fab7894db2ea34f7843ed48b8b95ac07",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/sticks3-hub-encoder-visible-led0-off.png",
+      "sha256": "1ab1f3cf54116f41280f6916611f8c53dc80ab24ec5595fd64cbd69d84b5d6cb",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/sticks3-hub-encoder-posed.png",
+      "sha256": "54e019cc2ea34f4a9927a70ee5766f49d4ce71907f305a1aea3ef350d271eee6",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/sticks3-hub-encoder-pressed.png",
+      "sha256": "bb6b2da4451c7470cd4c7d39379ff08548fc5feb9ac20beab55d457ec37711ef",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    },
+    {
+      "path": "artifacts/encoder-detail/sticks3-hub-after-encoder-detach.png",
+      "sha256": "e18fa25658e0e1f718a3a8235bba23034ec99aa03311906b6f45f600276b2b0b",
+      "origin": "original-native-model-render",
+      "temporalScope": "settled"
+    }
+  ],
+  "runtimeHashes": {
+    "demo/dynamics.js": "b330fff877189c4faef9605a19a3860470c76ad86e200b37a102752db6d39f43",
+    "demo/framebuffers.js": "676e2079a6e7c9fd47a33a1447681b63ce3ce1a907394062d12f0e7ac1c6c349",
+    "demo/index.html": "64609124d4571e28a71244a0ca52708c21a8c1e53ed0681f0412b63e5ae336f8",
+    "demo/main.js": "5944d3b12ef01ca144dee27c5f338a4a112d01ab216392c7851a481084a5c415",
+    "demo/style.css": "fd4b9a97a2f36a59833dcb36cda44cebbd3f3cacb00e8cc38d489b57e689da0b",
+    "scripts/catalog.mjs": "07256b426f864067c701a29303470556867d7db6c616ab02afbd30885b29b4c5",
+    "scripts/check-8encoder.mjs": "d2fac20d57908664232a273a5d61d877e1812b37cf869c5d22d01322aa310a3a",
+    "scripts/check-actuator-materials.mjs": "780b4fb191471358a026760e79d54edd18acc7d7d3bc4ccd87da5db730e1eada",
+    "scripts/check-atoms3r-closure.mjs": "d13681f1541082fdf137ffc7a806fd3706c8d22c6e71451ba7aa172c0c495edd",
+    "scripts/check-button-actuation.mjs": "f5ca09f3d24ddb3e95ad3732ff5b1bd4a9936c1a6dd3e5afd7f52516f00f7986",
+    "scripts/check-cardkb.mjs": "2bcdadf32ab930a9df38c5b17d6c916dedb106a393a186e55c8d034054e6cf25",
+    "scripts/check-cardputer-adv-assembly.mjs": "f7e0ba84c6716abaa8a27969bcc80bb7ed9d0ef3479f52445320e6e29eca3754",
+    "scripts/check-cardputer-zero-assembly.mjs": "33093ac3b3fa4822f7d9e270273d1e593dadbde604a3e335fbbb647b791d12d8",
+    "scripts/check-classic-unit-connectors.mjs": "6e1309d8154f21164370c44cdbcf05c6fc2f83ed3ffbf5e465df225f01e31262",
+    "scripts/check-core2-assembly.mjs": "43039438b750aa365ff40160a13d85444e177a86005570633214194c2afa13fa",
+    "scripts/check-demo-framebuffers.mjs": "883d8dc95166402e8de56f9899c89a5250585e21c35eb3cca9c2fbc37de9a337",
+    "scripts/check-demo-lifecycle.mjs": "b2e0c7a576c81bf23214eba138b3f0338a747a6f6da5b658c0e0c541e4e19acf",
+    "scripts/check-details.mjs": "27088f3b1ad2f8c9355292ec2ddaed71873bae87d27e5427628fbf2d86ee9d5c",
+    "scripts/check-device-actuators.mjs": "19525b59f813602802729ec885f15f74d058031d8c1348cb6bd2dad5e7d02feb",
+    "scripts/check-display-touch.mjs": "4683855b4246b26fe4eeb9f98ccf379f3ebb4c8c93155528dc9aa4263f64257b",
+    "scripts/check-encoder-assembly.mjs": "af84ca67d22d0bdaedcf59c33098589a719c828daaae80a07fdbbae858838f07",
+    "scripts/check-grove-cable.mjs": "662840b87b83d1242ce1aef34517c83d3fa4a7b3fa12229ee46bf28fd02451fd",
+    "scripts/check-header-sockets.mjs": "9e738a575426c4aa71b2bcad5315ccde84e0af4318c13ec72a7653fd9aab7e9a",
+    "scripts/check-heart-optics.mjs": "33276ba68bfe8339e8d6f2052edcfcf390d5c79bf4aea6062143457f1782e472",
+    "scripts/check-host-grove-assembly.mjs": "03ceb5543d8fda870a996a748a1691df6b6259cc2e490f02272da7eb50bd1cbc",
+    "scripts/check-host-visible-leds.mjs": "b73aaa06155d7d3de84f895c376ffd9970f24c4fbf97c192f521e641ddf82938",
+    "scripts/check-ir-hub-rfid2.mjs": "e86522c9e381d46f9c2b3a807237fe84a66e7a5f51fe8a9da724482fe0451bba",
+    "scripts/check-key.mjs": "db8197615100fd9ece4144ceeafbe4388a0f48df4f51f0df3df9bb8799f98d0b",
+    "scripts/check-limit-lever.mjs": "0776def4d40fa88c050abf9a7f253ccd051b9d6ce5e896b25de9927e39328908",
+    "scripts/check-nanoc6-assembly.mjs": "0b447f602aae6f3a3890244c32611a86334a67d4c5914f0130c514da28598f52",
+    "scripts/check-nesso-assembly.mjs": "76e885aa08eb2aa86a810a569a267df7ab9a9e018468565318c120a10fa43248",
+    "scripts/check-open-top-grove.mjs": "aee15d5e0f0904bfbc95b9ec68e7af7ed70144b7ae239b0f3a08cda7340dc6e1",
+    "scripts/check-paper-assembly.mjs": "aba64c0830a982e45ed75c4fa720227a7a779c452434805f14ddc33cb0361543",
+    "scripts/check-port-lifecycle.mjs": "8e789f965f227e02d47a86bac067d3072218a3359d2e794f4feea7cc06c38533",
+    "scripts/check-relay-assembly.mjs": "f21f892128097678c076f60cafc953be854d701c0bbe96c60058fe37b53e0061",
+    "scripts/check-roller485.mjs": "8eabc902845f28ffd513f590d923577bcb773f92ac8300a1b58ceecd8f7d5fa8",
+    "scripts/check-rs485-buzzer-fan.mjs": "7d367f5e679a7448283453c27dddcd9e2e7a1a0c38c92acb6ac6a5cb6846e275",
+    "scripts/check-rs485-terminal.mjs": "9a25f8610b401e7b5b7a6ec31dc665fe3879a01f6d34c603873fa2d3f80bcdd4",
+    "scripts/check-scroll.mjs": "793c04b06df470adc988910494f4a244cd7bd35ba232045f9fece0b6a1d8275c",
+    "scripts/check-stackchan-assembly.mjs": "9723e9c85dd8b8641bb4b85e43cfae9c8813cf10f5897a3152b92c5df239753c",
+    "scripts/check-stackchan-cover-seats.mjs": "8c7370a6ec6517a13b98992b189cce4f9aab4a7053e9ef99e72a7e7b1eb5a1a3",
+    "scripts/check-stackchan-moving-assembly.mjs": "7bf10dcb9c6a3f882c80553402708cb2db29067a432eeb8fe28f4e9142208b05",
+    "scripts/check-stackchan-servo-fit.mjs": "5fc62b124a000cf10aaddd52fbd351ec56f321ded77a5cc7b1032b6218d7c338",
+    "scripts/check-stackchan-servo-outline.mjs": "ac2d21d477221c6fa5f41c3288ea16bc6a4deb60a522e06b9cfb4c41ee9810a6",
+    "scripts/check-stackchan-touch-led.mjs": "a0ecd384c536ffb22b4bea73f8bf92eb88461d1c4e9fdd5f7a86fba944733b46",
+    "scripts/check-stamplc-terminals.mjs": "277b2bd04ac5d33cf939c1925b570da5704b81579c380f0d45555eb5db2c26cd",
+    "scripts/check-sticks3-assembly.mjs": "ded606ac21249f2f08ecaf508eb5adab3b5d4d20d96ad9ab9bc50127da24bc65",
+    "scripts/check-stopwatch-assembly.mjs": "691a76820c8d06d12c3cfb854e735f29084d68b1bdbbf5b4475c4e0ad1634530",
+    "scripts/check-tab5-connectors.mjs": "a6f632c0de4b80d16694bcd373bf38cd94abc9a94798d1d1e924dc051a14afeb",
+    "scripts/check-unit-actuators.mjs": "30eef8cc34367e034fec071052bdfaa0dd43d340fe4cdfc138d4926b3cb7823f",
+    "scripts/check-unit-visible-functions.mjs": "553b326b7722e535bd4c321dbaca9a3c78d48441b4ad55a9f462b553272421d5",
+    "scripts/check-viewer-lifecycle.mjs": "a471cf11d5e1dba09530138af461f2f7d1119b28090eeb4332774139bdfdfd26",
+    "scripts/check-visual-motion.mjs": "4211db1c25643977bebed8e10c182c5369ae6cd8824d090cd5201791eab205ac",
+    "scripts/check.mjs": "d453a9e4729ef2c136dd874bcbb7fdb38431a084bc20a4e44f0b7918b74c3973",
+    "scripts/serve.py": "632c8376d49b9c6c74160fffe6a3d49cf282d88b04711749d47e6f34186a3fbb",
+    "src/core/Component.js": "61e2d39fcb97890ecdbdf1abfb51ab331ad85770c6b2d165e25ff5f0b9766bcc",
+    "src/core/ComponentHost.js": "019f32dd28489a4fe7cb60263285b358662ba65dab7ba7c7d2767a01a98f7e40",
+    "src/core/Device.js": "0c788fb4f0ef0b490ab640221f246d2d23a44649c0f9c4ba6aadfabb865b4543",
+    "src/core/DeviceViewer.js": "b4fba212018e15268499ba3c6658fbf290273a9fb461b2ae43569b837d52c995",
+    "src/core/EventEmitter.js": "aadc64147ea1c4dcb8e18cb06c76ec41d6c4936ae684b1186a397b6a63e22c1c",
+    "src/core/Module.js": "20fbae04c35e0693fe3dd688807a7f9bae2754d5d7b914c8aeb958ec26795203",
+    "src/core/bridge.js": "e073d0538a972439594c18846b305603edf91eb41b3c0b832e02e69cd19f6abe",
+    "src/core/components/Button.js": "c2b99313190d4ecf26f2522530360e0aeec687a8a6abd1a5120eb53809414b9e",
+    "src/core/components/Display.js": "fa984c28ba73fce747a63fb33326dab19009e3bdf40cfddb4b9589b167f255a9",
+    "src/core/components/Imu.js": "903d39e7a1d5248c30529b152b42325cf8c35061c75a12575ec28aa2bfe3934f",
+    "src/core/components/Led.js": "220f32c62ad83b41a86ba6f3d280697fe47008e81bde074c4c9542120f47a0cb",
+    "src/core/components/Port.js": "9b888b81e43b7397ac5eee82cb25e7b1abfd5c9f30d29a8ba967f8f5080208dc",
+    "src/core/components/Speaker.js": "4f50645b9bfb71ab5266bb45809a5d6780c90abc5e1b22d8b19030ccd4d6f8f9",
+    "src/core/components/VisualJoint.js": "654fe92b14931824362b5c6f7fb24be509c7e1be1ff4a77d6903bcc51581e84c",
+    "src/core/geometry.js": "2bb560fe5cb934e3ad18f5ac8370e57ace42aa28bf4421d62e8fa132c906b94e",
+    "src/core/index.js": "8a890c229810e93fa576cd2c9c5915a7238fd964ea23468d18c426c2a7863358",
+    "src/core/materials.js": "9f5250b54644c5d746ed37791289a99650be4e286e266ecd57aefddf562f3717",
+    "src/core/registry.js": "07388515318616b183a88bb7f23593b2137900547f3f3e61e300b1f753309bb8",
+    "src/devices/atoms3r/cad-map.json": "a9b9e744dfdfd640414cfbc281419e0869077a4c18ca37661d902e85f906c0b6",
+    "src/devices/atoms3r/dimensions.js": "0a2051f45fd5301785245e2fd51e8f63bc5f5b6e8fa39d22d3b0cc3e44619dd4",
+    "src/devices/atoms3r/geometry-data.js": "ec1b477ac3c00a47ea2b9e83729655ed816b829b6a3bae02d25262952f250f96",
+    "src/devices/atoms3r/index.js": "c3bd85b9bcaf0ca1558ce9e912a338ed1505648c306257f487453e944275598d",
+    "src/devices/cardputer-adv/assembly.js": "bc7da4058b5017017861e41844a79c0069f8d2b991a1651b364bb0020b799f1b",
+    "src/devices/cardputer-adv/cad-map.json": "6430693b23657517127b074e8d1a9a59b971edf98e09177aa25375db725e03fe",
+    "src/devices/cardputer-adv/dimensions.js": "f85e3b5b2b9e9fb942395cd3977ed5e87001a908ebc10afd4e614408dfce069a",
+    "src/devices/cardputer-adv/geometry-data.js": "224241be078f232ad14e8d5703066df25bdca4f6b7cf49735c59b4dfe5bca1c4",
+    "src/devices/cardputer-adv/index.js": "de4460645821337e8bb83bd7f0a2254120c4273e3022217432497b494f2916b4",
+    "src/devices/cardputer-zero/body.js": "0fd7d59a8314a839e91819b850e37e8e3a3df55edc4c81b33af54c9860ded2fc",
+    "src/devices/cardputer-zero/dimensions.js": "b69584f5a875ed5f4aa45d8971bbfaad8bac98d38feab0d9e083ce84eacf54a2",
+    "src/devices/cardputer-zero/index.js": "07deabcd82e30661dc8ba5d3ce684a6edeb9375962d65af6f9291eb6c7c89929",
+    "src/devices/cardputer-zero/keyboard.js": "6fc17c6156d708e8c2973b01248fa2e500da8ee7e0cbcbfbec58341039ba5ed4",
+    "src/devices/cardputer-zero/ports.js": "4b5cc9d899ad4430c33e299fc108022deaee4a6a22374424c864d5700ecee3e5",
+    "src/devices/core2/assembly.js": "1eb2ec32a35a71bcc9db52c4572f5fb1563199cb2e9a9351622126f84edf46f8",
+    "src/devices/core2/cad-map.json": "33cca2e6433a99fa1b40c6215bb2f7cba014d310e8542759e56b528fc5ca9424",
+    "src/devices/core2/dimensions.js": "a18e72e730a385a30f97757966883769bd07a1ce6c9a985e95c3f63e20406913",
+    "src/devices/core2/geometry-data.js": "13237abd2dd4e5b667bb98e7f997ff6dd280449523290d273c30f10ed4303bfe",
+    "src/devices/core2/index.js": "8bb70a22a75b952e333ee40fb533877ca0d1fb270cbca29781d6bbf058eec9ea",
+    "src/devices/cores3/CoreS3.js": "cbf80413a6ec982b920de5d316b19c64ab9b9f6aec1836a35f927ffe7f3ebe42",
+    "src/devices/cores3/cad-map-din.json": "b2771524ee38b2da3cd84a8c6bd31cf2abbe92256769378f124116cc983ed696",
+    "src/devices/cores3/cad-map.json": "cc8f4726fecd6c39c44057d626e51f5bdaaaf00e99f13f4eabee0c2988fa5652",
+    "src/devices/cores3/dimensions.js": "6b8286fc8bc8fbe4f728060a835632442ad686b206b8468764400e744ec9d067",
+    "src/devices/cores3/geometry-data-din.js": "be7ff625e27c38fcfb55e09bcdede3c6bc655808614d0e6249f7d0860ec2d63f",
+    "src/devices/cores3/geometry-data.js": "f5ae63bd7aba8bd799934e4e55d7c2e8adbb3e5d806340017ba358778c9cb517",
+    "src/devices/cores3/index.js": "c92c0678fcde424aaa7c4677cf21bcf127bbd2835f6492cdab4dbba6097a5796",
+    "src/devices/nanoc6/assembly.js": "1075fb701eb8357035fa80fbcab68cab7068eaa378faf7452f3b5705cad70a70",
+    "src/devices/nanoc6/cad-map.json": "e0f050d713feb9424d871aa3479b2610531f00e96b8c1f963fa2de47619d211b",
+    "src/devices/nanoc6/dimensions.js": "a727847892bafd9481b39917dc529955de591c2750d36123ca68a1f22bca01f6",
+    "src/devices/nanoc6/geometry-data.js": "dd84cc062400e8765ae8ca34492c5ba39671277a04356233067b0d78eecaad08",
+    "src/devices/nanoc6/index.js": "cddca725f170c6cc236e371d33990ee26b369a0208755c3e161fe04fc67aaf48",
+    "src/devices/nesso-n1/assembly.js": "c7b41a6feef78f4766b989cfeaf2720321466f45bb79fd1d7a0e6bc60cb81d42",
+    "src/devices/nesso-n1/cad-map.json": "0cecfcf00d6caa6dcd779b76736a6ac228e843b774a955944f5e3ec50adbd3f9",
+    "src/devices/nesso-n1/dimensions.js": "27acf1d75306cd3740e8e185b85932908d67f663c7725d7ec86928426b184d28",
+    "src/devices/nesso-n1/geometry-data.js": "68e82d56d71d336ea6db79643610e24570e2b2cf0cee28f3331f46cca71cb8b3",
+    "src/devices/nesso-n1/index.js": "ad9a3bed3b56ca7ca3a9069b7b1b278aaff965fa7692f7e05a0da2cad856b105",
+    "src/devices/papercolor/assembly.js": "274628ffaeff2b9dc3ec7b2df6d34a9871967b1e5e077326eac6c3e9fff0b9a1",
+    "src/devices/papercolor/cad-map.json": "81c80f8f5b191abd47b5333089694374e28974b6e079d18bcd95b4c97c9b7d30",
+    "src/devices/papercolor/dimensions.js": "5443b5d347e90efb86e9f80ef96163afea91ac6689256fb2912ddc1aea89eb14",
+    "src/devices/papercolor/geometry-data.js": "a0b763dcf8b6155131bfaf0f67667a02b576d988bb85c9359d711c25903579f6",
+    "src/devices/papercolor/index.js": "15a0bf54f74a169042dd15e3b7eb36927161f52586929d8150962db29f2e7c31",
+    "src/devices/papermono/assembly.js": "8e785869ec24077f8c2aad8601c5cb93fe1a6f8f9433ba2cf18d6575a7b36111",
+    "src/devices/papermono/cad-map.json": "30de56ad2fd0c6f69e6b97725c0600d5ea6efc6681be737feb4e24b81cb913cb",
+    "src/devices/papermono/dimensions.js": "3f7ef51d54f60884a8ec07d164c675a31e3adecf1d70be43b864c5a7a3ad7d42",
+    "src/devices/papermono/geometry-data.js": "582b6ac698e615643518eb87dc76294388744a624d5ea23696ff287a49a17df1",
+    "src/devices/papermono/index.js": "30c387232637610460ef5d43c858267c431cdc62b9caf1c086084da45f249ca5",
+    "src/devices/stackchan/PitchHarness.js": "cd76bcd959268284fde600a665f1ce62fd3656697658bcf9085ad8bb3fb6a826",
+    "src/devices/stackchan/cad-map-motion.json": "a2a45ed6e1e05008899fd8c277843be6cb0a8f093c0fabcb1ce4783a4219d17e",
+    "src/devices/stackchan/cad-map.json": "62fdbc9a410396126216de8c38ab259bd99da361580a74beefdcf2e8e6b78f7a",
+    "src/devices/stackchan/dimensions.js": "a6583eea8ceb18cf74a33d22260b8297e999dcebf730b73c6364a678625012fd",
+    "src/devices/stackchan/geometry-data-motion.js": "938358b1fddc1a9defc59e1a299c7f2ad2be6db41fbc4eecb3ab18a63747e195",
+    "src/devices/stackchan/geometry-data.js": "af43e3820a01f8c038f85b21621d6560bb172df55ab53d04361f2135f70d51ae",
+    "src/devices/stackchan/index.js": "1b98883e8b6caf9d0c0e7b05bdaf4181e1a6dff75accf8acfb214b3cbcc29498",
+    "src/devices/stackchan/motion-mechanics.js": "6fda87a9472758728817752ffe4def9c567ece7fc661fd1a754f6abe1168a466",
+    "src/devices/stackchan/rear-assembly.js": "76e32f0af1885cd332430657b649a29a4201d3535a1c0f63d9039d494cbae0cd",
+    "src/devices/stackchan/servo-packages.js": "bb005356f53d826dcd8cd9a77a25b51a0b0c401ecd691cd396bfc36c3849b0d3",
+    "src/devices/stackchan/touch-led.js": "4aa634af4d85c6154efd03ecef3adde84749324bc88e4112c829bce1aec5be0d",
+    "src/devices/stamplc/cad-map.json": "470ec4e2cb96bafd8861f5ac3b222eaf64e989ce862d904e1ffc56924a68dc3e",
+    "src/devices/stamplc/dimensions.js": "a5e51938ff502591cddf2fad07b1eafc93a505f73a4c80e8ce2b1a0c590ff1b5",
+    "src/devices/stamplc/geometry-data.js": "3568ec5408207a6bcf5f97f2cbc412a500af00474ecc145c01c87c9a986a7130",
+    "src/devices/stamplc/index.js": "7412281c85d2126acbfb5d60ed5a828a1765ad26fa9fc9b540177e1905a00d0d",
+    "src/devices/stamplc/terminals.js": "5dd9e8bc913351dbeaf53bfa7b081004fa8e222a3bb3966d6d19e27554615faf",
+    "src/devices/sticks3/StickS3.js": "bb196c164413556040c0f904833ab25486e5e4d65cec3bd7c670557deffd9071",
+    "src/devices/sticks3/assembly.js": "ef74bc2e771bbc18a91be85e1733d84d905f2987ae59c5c3858f7a289461eba3",
+    "src/devices/sticks3/cad-map.json": "5c98ef9b112f6689da0c40768dc201c641a4e9e6a1cf73864e0ef82d2c23ce6f",
+    "src/devices/sticks3/dimensions.js": "bd2e9f0aa607e13cbee8497b2505ff4fc44f77fd503eb09fa8ec544f35af45b6",
+    "src/devices/sticks3/geometry-data.js": "55eaa76fc305ee883a166d4af3c097c633b1f25d06c1cd1cd1461bd66c440cd7",
+    "src/devices/sticks3/index.js": "d187fcef16d19813b50d849b72b270b669d89baf2b087142eb99382c0507231d",
+    "src/devices/sticks3/labels.js": "10f4c8bce0fb42bed362d27435bebfb3de22627b8b3dfa81bd85ddf21fbd6114",
+    "src/devices/stopwatch/cad-map.json": "b56cba6451e5109bed1f5a94b7a4b72da9b1230f4943413ef3f7b05108f6ba1f",
+    "src/devices/stopwatch/dimensions.js": "1395a2a2d792587d88c02f1bd28841a5f257ff1e1d7c4a57be7ad219c9be3b33",
+    "src/devices/stopwatch/geometry-data.js": "1408d728f45726fff69ba77b137861f40b3e4d3d9590499623c20a416278a5e2",
+    "src/devices/stopwatch/index.js": "1a393032d7f4e2717c7b051bff0507df5c07781999a7b85e570972111d02a7b2",
+    "src/devices/tab5/cad-map.json": "9940c6048830de17eb613709521d0d0a076f74b0ce612b2f524e39843d4ef61e",
+    "src/devices/tab5/dimensions.js": "89fbbf9efc31b413f401fc5364dec5b5b7cfed15eb8afd2d260bde9e4279d478",
+    "src/devices/tab5/edge-details.js": "68b6685435444ed9173e6be559dda3b38002547167783e6d838a97ecb1522946",
+    "src/devices/tab5/geometry-data.js": "520dc0c2c6edce396aa86cd233241a46e6ad1553228c9a75ec102f2af977adc7",
+    "src/devices/tab5/index.js": "26f3fba628c5af9f5050aad6c176dc2bb6f1c69b5a94e3b39a2cec0bb0c94658",
+    "src/devices/tab5/main-board.js": "88d7209f717bd3c4844fd10c73adfde8a2aa30b8f7a9bc79321e3129980d88d0",
+    "src/index.js": "5c3d20d689515a950fb238eb7b3d4c3614f5382c580d3b44690ac0a64d6c44aa",
+    "src/loaders.js": "0e0156b693e954193bc1204e4ee3a434c69e2cffded16028a5c313fbbf807e5b",
+    "src/modeling/PaperDisplay.js": "e65c23e41319a320f94f337a9efd49c5b0bbeed19fc5f1551a5f6fb299055542",
+    "src/modeling/RoundDisplay.js": "0d5fde964a55d2082fae2ba6768229c470956712a652d96474dca75c0c046eff",
+    "src/modeling/actuators.js": "c87e5723bc0351a42516084f7f4990633651b63913a6922383216567dc3787d8",
+    "src/modeling/artwork.js": "c395bfefd9a1d5fb067251837bafe41060136b3cf6295d471df757115eb4851d",
+    "src/modeling/cad.js": "83e8e600aa182b5a94bbccfcd26f0ab35d569c5828ee8ce7f11bc54d964a88fd",
+    "src/modeling/connectors.js": "5aa32f504f5e8d8a047129963fd57840b9325009e64ffc87038ff8f47afdb80c",
+    "src/modeling/grove-cable.js": "854e33e5e00545c0c907df1b166d27fdc1480b4b3c02fbd4cda04caee6f5e649",
+    "src/modeling/parts.js": "387cddaf0ab614a783a024ad4e38918cd47ad8a887041bd22b12908064564fd3",
+    "src/modeling/subassemblies.js": "b173fc663a0ec92aae084830cbf674ffc1dcf521a368f3cd333eec39c68f7c0e",
+    "src/units/8encoder/cad-map.json": "f534307d7937e74fa14ee154a8651eff27e1341cff72291202505f44f92b2c31",
+    "src/units/8encoder/dimensions.js": "074ee4673891d12ac06f56e0ef140ea9656e3b3f319820916138cfd1d81f77a7",
+    "src/units/8encoder/geometry-data.js": "ae6f4be66238263bd5f0c36838ec54f8a64a3be56c0b90f5aa4b5ec852525915",
+    "src/units/8encoder/index.js": "dbb970f29ebf9bb1e785460faa4655f9c9764558506da353185cd40bee17a642",
+    "src/units/angle/cad-map.json": "09adf1783353faaec91c47a1a9d38eb2e74499192039d08f574d2c3af4f8f39e",
+    "src/units/angle/dimensions.js": "0b831cc5de33fa3c53dfc0ad7c0c06e3230410a6623e60718e3a8d6f1f8d538a",
+    "src/units/angle/geometry-data.js": "7e714507fe2a959085c2f77bf3b5cc859da156c7907bc2f1a31ebd32e3be60cb",
+    "src/units/angle/index.js": "68d009accbd671b59de13ab5be24e82dfe145e454f4bdb3f9b33d3f8b8aad7cd",
+    "src/units/button/FlexPadButton.js": "dab4803edde0b97b275a46e8792b87da7471f7229cd744dc3a1929c49c742f35",
+    "src/units/button/cad-map.json": "64a44e596196121332835faf08da5b17ba88fe2706f49f53d61782eba356f295",
+    "src/units/button/dimensions.js": "715514bfaa7aa1275594b5dfbbffb1b21e92d86fbd453e5b1965ea4466f5cabf",
+    "src/units/button/geometry-data.js": "f6c263a78d73692afc031cd8979b33d2a45af6302d3857b4c86b8b111704bec0",
+    "src/units/button/index.js": "62dee8910cceda66b5345483e2b41cfc7d2ddfa906137e39ff9c92e108f22c51",
+    "src/units/buzzer/cad-map.json": "5b671e39e0960216e93d57981fac4d989b176cd25025f0f0791ea412ff99f156",
+    "src/units/buzzer/dimensions.js": "4cd1e0f55593f99bc5cfb40a4176c27a7df5a8a125f9478002b7f725dd6e16fb",
+    "src/units/buzzer/geometry-data.js": "dd3f074bf89bce8f32479971a8d826f5c09e7ecd73ce7864a5875ec82c9d25c1",
+    "src/units/buzzer/index.js": "c7f6c90bf3f9ad8bd792f26826b778b5b7c186fa51fb9d48bf1fe59879e01be2",
+    "src/units/cardkb/dimensions.js": "4e7812359ec925a0b97f1aeec1ab8207acd97d94b077790c4d98fc72468fd1cb",
+    "src/units/cardkb/index.js": "664bc25db9cd2d960509dccffc2bba8f356643b8fc286ccba8e15eb91a16b872",
+    "src/units/color/cad-map.json": "4644bf0c52767c2e3e72fbdd1145e21b7aafa05fa0b39f1476029fc07ba0d8b3",
+    "src/units/color/dimensions.js": "494fa4b3efb4de541e0ac9168321ddabfc7293b60f0f3fce6a1c29acd1b11762",
+    "src/units/color/geometry-data.js": "c9233b403f06ade334ff566ddd7010359e723260f8cf34a8f769bd2a4aa05355",
+    "src/units/color/index.js": "d743ecfd8df8407a607ff60a7002112516ba4639e2fd21b4d166ea4813608d35",
+    "src/units/dual-button/cad-map.json": "3e18e97d3820ac34886aa2d865729d3895594d153b0ad538e1618a70cfea32b0",
+    "src/units/dual-button/dimensions.js": "f278c37f87e5f433378c5f32fb65c568afe2439f1dc1778423a5102a4d9953dc",
+    "src/units/dual-button/geometry-data.js": "4ac042dc016244ce68c1f21aecf50e1bc16df8b1d68167b8d77e3d7e8c294ac9",
+    "src/units/dual-button/index.js": "d12fda74465d94e5660560623ceab299df7aa07acf16fee834bfbe46817eb912",
+    "src/units/encoder/assembly.js": "cbc2125aeebf18989e4add89178e422d728704bebdb0260f0bcb3ca22a62d027",
+    "src/units/encoder/cad-map.json": "11a929295292e4ba10d6fe25cc0a5a9d2b9a3b11a329a96c9fc28d3dba69b965",
+    "src/units/encoder/dimensions.js": "948c7ba8c5fcc5929814172b045dfc19e9ca977fbfae963034137996b94deac5",
+    "src/units/encoder/geometry-data.js": "7722c5e5e3fffa66b7c747fd00008fe412d3392fc1d1ba4a46250150bc52023a",
+    "src/units/encoder/index.js": "3bd67b6086dd13a39e7e5c110c49fabb938881ca9910fa8a13abc63f34aaa6c1",
+    "src/units/env-iii/dimensions.js": "5695f199938621b1098b9778c3ad48871b96096c405ee1813a32969d2980f747",
+    "src/units/env-iii/index.js": "acfe37bc1f372a7100c3e8719c89b03a30fcdbd99cc126d5c5204923e1456f1a",
+    "src/units/fan/assembly.js": "f016ffc067e4628f6f717ae9943d236e600c82fa26c4fd7b874cf91d6f26f213",
+    "src/units/fan/cad-map.json": "6096ca0046def0e90b2f3ec1654e7ab25005e836d558ef3582d5f4aae19943f9",
+    "src/units/fan/dimensions.js": "1fbb98bbe848dff04abcb6e8bf546aa77696a4aafd47bc3dee657629807c56b9",
+    "src/units/fan/geometry-data.js": "212034bb3adc37b4408efdc9231d0452884ab1012f06b620ff126fc86cdc85a7",
+    "src/units/fan/index.js": "d18324b77a9143e0317c0873b4340b88388398730c9db41bbc3875a85e4d9d16",
+    "src/units/heart/cad-map.json": "2d8b1526f9c484cd34e201f79957d7961ef71305bdd9344b340853a5abd467b6",
+    "src/units/heart/dimensions.js": "0824dd3237007a8b35e099c71e5c8bad531f1aebae7dace9aa09b95c2f66798f",
+    "src/units/heart/geometry-data.js": "9a27726220a67e2a43c230e082ec4039973f2d5260f396e3788a0a5fdf964dfe",
+    "src/units/heart/grove-assembly.js": "7472d361d95da609f72fca5e1cdb6ffbfbe8b741342ec06e1302c7b200e709b6",
+    "src/units/heart/index.js": "e85b367803e1ea0409a26f609019ddd1699a197682ea3173469615b8ffc8ce13",
+    "src/units/heart/optical-assembly.js": "cbdfb7080074f0d4e357a4d9a358be345b93fbc88c283ac4b1685afcacf9f82b",
+    "src/units/hub/cad-map.json": "0dd37465c44d9d2202e519f48112fae3a3c92aa14569d8750a15877b32193e57",
+    "src/units/hub/dimensions.js": "500f221ba1119f3f6303e8bf1db09b00e5d032adf51b0f5282506e7f26f96b16",
+    "src/units/hub/geometry-data.js": "7cb3298b9f36fed6f1ec4a61eba8409949413550e7b7415a413621d2670fbd3c",
+    "src/units/hub/index.js": "2878447a3e1216dd89531430a4727de201f264dcfbffa290e68a5cd32c56b14b",
+    "src/units/ir/cad-map.json": "a747afbee32f374ebde8e05eb22d89ba76ad9099f1477d67967d526e5a4d4385",
+    "src/units/ir/dimensions.js": "1ac64782dc53cec5f331fba8e38f1fd7b5e10cdb841b2f1886fc321ed9bf59cb",
+    "src/units/ir/geometry-data.js": "1c0ed64dd84f60b62779ee8e908349e629daba5088022b29d37ee9914f4d0435",
+    "src/units/ir/index.js": "bf8063ade509cbe5967244269a3676bcd8d88469813722100a7501a580beb167",
+    "src/units/joystick-v11/cad-map.json": "b3a07ff9e6208515874dcd4055ea4e5602e4e7308d22c17414e6b6509e57051d",
+    "src/units/joystick-v11/dimensions.js": "679a55a60da1a00746d89b326bedfc1fc5a717fbd1330e34616a07862fc1db18",
+    "src/units/joystick-v11/geometry-data.js": "0a28db0304f9069b65abf960308a16348a6791d63540c8d94d34837147833812",
+    "src/units/joystick-v11/index.js": "8350ed5725c608a0ef657b12597325e24762245151a0c3023a8c7290bedc48c2",
+    "src/units/key/cad-map.json": "446498c91b5169992c1ae4a59a27d7e0e1dc6cd3b148ac1188de57222aa908b9",
+    "src/units/key/dimensions.js": "fbf63cd99442de90af64e4feee254df63365cd913015ab7facf0e63a6d1aa6b7",
+    "src/units/key/geometry-data.js": "76fa1f0407188b585cd2c054015f8b73b8276644f097911d0449cdb052400aef",
+    "src/units/key/index.js": "41382014efc3a2307444a1833e66ab11cfcb6cc3142000a8b95ce186fdc3ccc7",
+    "src/units/key/key-geometry.js": "6ae50a907cc41518b4af773a8b0685e1bb9668321d32b4e8c0fa4a11c368e63c",
+    "src/units/light/cad-map.json": "c24a7c5d5dc2730c9d7b1cf4b77f2dedd8a49f8e739be41649ffeea7c5b3aa49",
+    "src/units/light/dimensions.js": "7222da9d2796ffbf187a49fe93573d5ffdc2add3db2699dc9eb5f7ae693584cd",
+    "src/units/light/geometry-data.js": "f0258371317d05014a247075f69bac6723cf1593b075000e53e0ba3995509687",
+    "src/units/light/index.js": "4abd1ee0bc8fba357b515418b719968d2c8b0b9fe647935cef563f88fda2259d",
+    "src/units/limit/LeverButton.js": "7441fd2336e92eb6b9f18f3996c6a84e8ab1061782c0819fa82349ff9639beb9",
+    "src/units/limit/cad-map.json": "b2bfb89dfbe34e7d26c04617737dcac898f62e7d51c634fdd1a9a3a30dabd10a",
+    "src/units/limit/dimensions.js": "dbbf417d3667c5b38e52a8b96a6a6fb87efb3ee6ca8ab6339e40d6fdd1cbcc39",
+    "src/units/limit/geometry-data.js": "bd074334bed80ae901ff559e408e64fa5228fe9f39b6e2e946f71ccdd15c4518",
+    "src/units/limit/index.js": "fe7b8d9b0d1e49ce7a4d9175bc79ef19c70bd74f4b9ec62c48e942020e019052",
+    "src/units/ncir/cad-map.json": "e5a79a039db0ed3bd24475be36f6339efd578eefca73b0790010198f9309daea",
+    "src/units/ncir/dimensions.js": "5d205eb0a423b3395ec67d427ad37999add37314cd9ed022bcb96727ece9f7a8",
+    "src/units/ncir/geometry-data.js": "380cd829a765aa3eb784d50942782c8322fd13bc7de355d50b96d641ecb5fa73",
+    "src/units/ncir/index.js": "7bf97e4b1f5429ac3a4f81340756c30f5ff89dda6311cee088436e70ffeccc0c",
+    "src/units/pir/dimensions.js": "9eda33a9c42a6ac4354010a06b815653dbf4e15b94ecfc4315b5b70a6373d67d",
+    "src/units/pir/index.js": "acfe37bc1f372a7100c3e8719c89b03a30fcdbd99cc126d5c5204923e1456f1a",
+    "src/units/relay/assembly.js": "0fe8671ebd10eb8ae775559fd1e6e41d6f384f66cd73cfc8a6d3570c92d5c1c6",
+    "src/units/relay/cad-map.json": "821e09c46a85e8f968b92da2acfde8cce53b0b082e6dbafdab0b55e56a8ed3b2",
+    "src/units/relay/dimensions.js": "3cb033076499c67f08fa4ef84145ff836e08a954737f309def8851f7d59bc4fc",
+    "src/units/relay/geometry-data.js": "f595eec71fea6f7a33d1f2800112f11262ce030119bd225f08082174f8d937ae",
+    "src/units/relay/index.js": "4e63b971bee7c5bf5321dc31c41b4ac44b2b951bd246e6eb02df399b3bb35c79",
+    "src/units/rfid2/cad-map.json": "b176c0a11eef3952bd7169fe564b0105592a61cfcc409416f2ea49d6c7803f6e",
+    "src/units/rfid2/dimensions.js": "08bee5234cedf9bb253ea69bf7f84e0a8e9ecd6b038b3d747d846769a714f312",
+    "src/units/rfid2/geometry-data.js": "0a97d304a17e328f53decb0ddbd86d54759a1ddc2cd09adc1ce40cb73dd778d4",
+    "src/units/rfid2/index.js": "24433f230cf7b191e9ffd515cb67382a987b2ee010ebfcbd5099cf48727ac146",
+    "src/units/rgb/cad-map.json": "348cdeb436471c9bd2992da27b946897e14f7a767a82eff59ed1b840cbb0e439",
+    "src/units/rgb/dimensions.js": "76ac677124336dfc534088a086ad8a9614dcac767f56ec41bef2938912c7295f",
+    "src/units/rgb/geometry-data.js": "b88e3ed25d625f79109a7124cb70ed8ef77442cd244cb9df71b90e6634bf79c2",
+    "src/units/rgb/index.js": "655e8b57959c01a93b20ea44553d735b7437fbe08f08120b6b9f510cc57a9471",
+    "src/units/roller485/cad-map.json": "4e49e298b3a4acdd5824902486d4eb7e9d9e60f7b37775a5d4a383dc1856ab04",
+    "src/units/roller485/dimensions.js": "d67d18995d47499676e93c008a5c2096b572305bdfbe9a8979f2bce2376023e9",
+    "src/units/roller485/geometry-data.js": "f246c7ca8ff77d83bd9788d5827615e83cfee24d02dbe06d1caf5a9e167e98d6",
+    "src/units/roller485/index.js": "821ef89719edc981e818e57dee8e3b9dbea4fb534bbb0532401518c3a9d1b702",
+    "src/units/rs485/TerminalPlug.js": "c88893747b391bcffcd6c23141c682417de711d2342f844f9d582d579ecb0f1b",
+    "src/units/rs485/assembly.js": "7e05e29ee3effcf1ec595ca2420ca56cd07e9fe0d0a548ca2eb710d9fe5fc213",
+    "src/units/rs485/cad-map.json": "d51267db022195e3c8b8ace5425ca1adf9c5e5d5e0b41e4287d32e12f584df09",
+    "src/units/rs485/dimensions.js": "071e6890c8d2f7e26e4b4d6d56bf5c5e26b42f9daa58cd7e65ab942961f9e154",
+    "src/units/rs485/geometry-data.js": "54b3d7755199c7f77431ef4935950d2f7978edafbc2bff650c571678930c2903",
+    "src/units/rs485/index.js": "18a4763ba9874a2bd13bf800a8aba9a04515ea588e9dba0e311dc9dd9fda6560",
+    "src/units/scroll/cad-map.json": "0875349b44ad91023dcfba0dc74afec78a4af7288916b18b8d87d69c093c20f9",
+    "src/units/scroll/dimensions.js": "ebfd7e4404d038a3a5ee734adbe7951f50468819bc10c37a2372aca7b5e9d433",
+    "src/units/scroll/geometry-data.js": "2a756a0c740cf97c96a334aaa1397b85ec7accddbfceead2319ec1cda0778157",
+    "src/units/scroll/index.js": "0c5d110f2a388c8295811ec2213c73ce219b1ce47c5bf98de48d753a6d7f9129",
+    "src/units/shared/CADUnit.js": "eb337eaff2c267ebae8fe46921cbc289cbb5b49b3bcf548e84f1fc6d89b89c94",
+    "src/units/shared/ClassicUnit.js": "84fe43abe71c1e9b7a2d9d42ee9d8f08c256ef9448847f98f84f9486db6464e3",
+    "src/units/shared/open-top-grove.js": "07364ba732ff38bf83ce9a2025a7ea89f9abf7b95aff65e406fc873e8f94456d",
+    "src/units/shared/parts.js": "e9f8ea00706c398082dd2334337b32df4ab0600474692669365313d21433e37d",
+    "src/units/thermal/cad-map.json": "7333d269dfd49f0ae16d21fc570be40180f0cd97942a7c550b8feb5da76f18df",
+    "src/units/thermal/dimensions.js": "081031b313debdf908f1d1a358a11a2349ab87256754f79fa17056a21e7c946d",
+    "src/units/thermal/geometry-data.js": "f8196386f5bbcd44274faa8fcdf2bb5617596a73fe295acd5fccdf1ccf2bc0a4",
+    "src/units/thermal/index.js": "b00044934dc3257cdd9d80c0c4ff62cff7aef5c9d2578c3d272254b7a4da6ad6",
+    "src/units/tof/cad-map.json": "ac26554774709568ecb3517b3ba386835e21a1466cd30c37979055df38437d87",
+    "src/units/tof/dimensions.js": "d99b73220152919f848a594bda4b4f656d44bb2a10efbec9778476c39c6f30e1",
+    "src/units/tof/geometry-data.js": "9c1a6c3bbe0ce39ed6bd89e90a2d5ddf64934051289e219e3919eece8c819827",
+    "src/units/tof/index.js": "90060670376607463459862ab2c3a2c90f2cc250f01e2367117e0e14cb5509f2",
+    "src/units/tvoc/cad-map.json": "e80b71bed2e84eeb042297948948bbcf6c8b7e73649a71209bcb16c7027b9a64",
+    "src/units/tvoc/dimensions.js": "51a03dddc458da30f1ba0084ff64d98bcb36a7761edfe299f2fbd3fd29d06168",
+    "src/units/tvoc/geometry-data.js": "0df202af4cd624148f821bd11d60adc10a0d409637d426ddfd2ac63db3487ea8",
+    "src/units/tvoc/index.js": "c9a7954aeff66ed32e5fc83e9ba0e347d7e91ddff2fb0c3be226ab985cc475e3",
+    "src/units/ultrasonic-i2c/dimensions.js": "1eec86b78e1cf810d8e1b52b39a10e223a94fe9d0c93f218c2e5c248e3f2f17c",
+    "src/units/ultrasonic-i2c/index.js": "acfe37bc1f372a7100c3e8719c89b03a30fcdbd99cc126d5c5204923e1456f1a"
+  },
+  "checkerHashes": {
+    "scripts/check-8encoder.mjs": "d2fac20d57908664232a273a5d61d877e1812b37cf869c5d22d01322aa310a3a",
+    "scripts/check-actuator-materials.mjs": "780b4fb191471358a026760e79d54edd18acc7d7d3bc4ccd87da5db730e1eada",
+    "scripts/check-atoms3r-closure.mjs": "d13681f1541082fdf137ffc7a806fd3706c8d22c6e71451ba7aa172c0c495edd",
+    "scripts/check-button-actuation.mjs": "f5ca09f3d24ddb3e95ad3732ff5b1bd4a9936c1a6dd3e5afd7f52516f00f7986",
+    "scripts/check-cardkb.mjs": "2bcdadf32ab930a9df38c5b17d6c916dedb106a393a186e55c8d034054e6cf25",
+    "scripts/check-cardputer-adv-assembly.mjs": "f7e0ba84c6716abaa8a27969bcc80bb7ed9d0ef3479f52445320e6e29eca3754",
+    "scripts/check-cardputer-zero-assembly.mjs": "33093ac3b3fa4822f7d9e270273d1e593dadbde604a3e335fbbb647b791d12d8",
+    "scripts/check-classic-unit-connectors.mjs": "6e1309d8154f21164370c44cdbcf05c6fc2f83ed3ffbf5e465df225f01e31262",
+    "scripts/check-core2-assembly.mjs": "43039438b750aa365ff40160a13d85444e177a86005570633214194c2afa13fa",
+    "scripts/check-demo-framebuffers.mjs": "883d8dc95166402e8de56f9899c89a5250585e21c35eb3cca9c2fbc37de9a337",
+    "scripts/check-demo-lifecycle.mjs": "b2e0c7a576c81bf23214eba138b3f0338a747a6f6da5b658c0e0c541e4e19acf",
+    "scripts/check-details.mjs": "27088f3b1ad2f8c9355292ec2ddaed71873bae87d27e5427628fbf2d86ee9d5c",
+    "scripts/check-device-actuators.mjs": "19525b59f813602802729ec885f15f74d058031d8c1348cb6bd2dad5e7d02feb",
+    "scripts/check-display-touch.mjs": "4683855b4246b26fe4eeb9f98ccf379f3ebb4c8c93155528dc9aa4263f64257b",
+    "scripts/check-encoder-assembly.mjs": "af84ca67d22d0bdaedcf59c33098589a719c828daaae80a07fdbbae858838f07",
+    "scripts/check-grove-cable.mjs": "662840b87b83d1242ce1aef34517c83d3fa4a7b3fa12229ee46bf28fd02451fd",
+    "scripts/check-header-sockets.mjs": "9e738a575426c4aa71b2bcad5315ccde84e0af4318c13ec72a7653fd9aab7e9a",
+    "scripts/check-heart-optics.mjs": "33276ba68bfe8339e8d6f2052edcfcf390d5c79bf4aea6062143457f1782e472",
+    "scripts/check-host-grove-assembly.mjs": "03ceb5543d8fda870a996a748a1691df6b6259cc2e490f02272da7eb50bd1cbc",
+    "scripts/check-host-visible-leds.mjs": "b73aaa06155d7d3de84f895c376ffd9970f24c4fbf97c192f521e641ddf82938",
+    "scripts/check-ir-hub-rfid2.mjs": "e86522c9e381d46f9c2b3a807237fe84a66e7a5f51fe8a9da724482fe0451bba",
+    "scripts/check-key.mjs": "db8197615100fd9ece4144ceeafbe4388a0f48df4f51f0df3df9bb8799f98d0b",
+    "scripts/check-limit-lever.mjs": "0776def4d40fa88c050abf9a7f253ccd051b9d6ce5e896b25de9927e39328908",
+    "scripts/check-nanoc6-assembly.mjs": "0b447f602aae6f3a3890244c32611a86334a67d4c5914f0130c514da28598f52",
+    "scripts/check-nesso-assembly.mjs": "76e885aa08eb2aa86a810a569a267df7ab9a9e018468565318c120a10fa43248",
+    "scripts/check-open-top-grove.mjs": "aee15d5e0f0904bfbc95b9ec68e7af7ed70144b7ae239b0f3a08cda7340dc6e1",
+    "scripts/check-paper-assembly.mjs": "aba64c0830a982e45ed75c4fa720227a7a779c452434805f14ddc33cb0361543",
+    "scripts/check-port-lifecycle.mjs": "8e789f965f227e02d47a86bac067d3072218a3359d2e794f4feea7cc06c38533",
+    "scripts/check-relay-assembly.mjs": "f21f892128097678c076f60cafc953be854d701c0bbe96c60058fe37b53e0061",
+    "scripts/check-roller485.mjs": "8eabc902845f28ffd513f590d923577bcb773f92ac8300a1b58ceecd8f7d5fa8",
+    "scripts/check-rs485-buzzer-fan.mjs": "7d367f5e679a7448283453c27dddcd9e2e7a1a0c38c92acb6ac6a5cb6846e275",
+    "scripts/check-rs485-terminal.mjs": "9a25f8610b401e7b5b7a6ec31dc665fe3879a01f6d34c603873fa2d3f80bcdd4",
+    "scripts/check-scroll.mjs": "793c04b06df470adc988910494f4a244cd7bd35ba232045f9fece0b6a1d8275c",
+    "scripts/check-stackchan-assembly.mjs": "9723e9c85dd8b8641bb4b85e43cfae9c8813cf10f5897a3152b92c5df239753c",
+    "scripts/check-stackchan-cover-seats.mjs": "8c7370a6ec6517a13b98992b189cce4f9aab4a7053e9ef99e72a7e7b1eb5a1a3",
+    "scripts/check-stackchan-moving-assembly.mjs": "7bf10dcb9c6a3f882c80553402708cb2db29067a432eeb8fe28f4e9142208b05",
+    "scripts/check-stackchan-servo-fit.mjs": "5fc62b124a000cf10aaddd52fbd351ec56f321ded77a5cc7b1032b6218d7c338",
+    "scripts/check-stackchan-servo-outline.mjs": "ac2d21d477221c6fa5f41c3288ea16bc6a4deb60a522e06b9cfb4c41ee9810a6",
+    "scripts/check-stackchan-touch-led.mjs": "a0ecd384c536ffb22b4bea73f8bf92eb88461d1c4e9fdd5f7a86fba944733b46",
+    "scripts/check-stamplc-terminals.mjs": "277b2bd04ac5d33cf939c1925b570da5704b81579c380f0d45555eb5db2c26cd",
+    "scripts/check-sticks3-assembly.mjs": "ded606ac21249f2f08ecaf508eb5adab3b5d4d20d96ad9ab9bc50127da24bc65",
+    "scripts/check-stopwatch-assembly.mjs": "691a76820c8d06d12c3cfb854e735f29084d68b1bdbbf5b4475c4e0ad1634530",
+    "scripts/check-tab5-connectors.mjs": "a6f632c0de4b80d16694bcd373bf38cd94abc9a94798d1d1e924dc051a14afeb",
+    "scripts/check-unit-actuators.mjs": "30eef8cc34367e034fec071052bdfaa0dd43d340fe4cdfc138d4926b3cb7823f",
+    "scripts/check-unit-visible-functions.mjs": "553b326b7722e535bd4c321dbaca9a3c78d48441b4ad55a9f462b553272421d5",
+    "scripts/check-viewer-lifecycle.mjs": "a471cf11d5e1dba09530138af461f2f7d1119b28090eeb4332774139bdfdfd26",
+    "scripts/check-visual-motion.mjs": "4211db1c25643977bebed8e10c182c5369ae6cd8824d090cd5201791eab205ac",
+    "scripts/check.mjs": "d453a9e4729ef2c136dd874bcbb7fdb38431a084bc20a4e44f0b7918b74c3973"
+  },
+  "licenseHashes": {
+    "LICENSE": "bd6afb822b82b478e8b0165cd5fbd107a7e30a371f1276052d2cafdd1a8b440b",
+    "THIRD_PARTY_NOTICES.md": "d2c31ef2e5773435d501d473d8a83c3506de1ddb93487efb17c429640c747b57",
+    "licenses/M5_Hardware-MIT.txt": "44611d917bece311f5c8eeffce83d8bf9e9ca3f815d262f694ff4a7996af50ea",
+    "licenses/sticks3-MIT.txt": "c8da71129b391d080a5bfdd4f192378b4289c82d463a173267af20eb800ef56a",
+    "licenses/three-MIT.txt": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+    "licenses/vite-LICENSE.md": "a22152baa1aef74402443008e767e7c689a524c0909d19b0431d97f5ab066a13",
+    "licenses/emulator-MIT.txt": "46e054dd27254243fa431abe8b3aa5a28e353e0ee71d5633833723afee83e5cb",
+    "licenses/sticks3-upstream-package.json": "d71cad3e987e79d38d8cda73c813dfb2bcd7fb039cf8233188410886407157a9"
+  },
+  "frozenSourceReadHashes": {
+    "catalog/products.json": "7b189f5bf2386130cfdd93300ba7f2c492e350ebfd356dff0f4bc114f92a586e",
+    "demo/dynamics.js": "b330fff877189c4faef9605a19a3860470c76ad86e200b37a102752db6d39f43",
+    "demo/framebuffers.js": "676e2079a6e7c9fd47a33a1447681b63ce3ce1a907394062d12f0e7ac1c6c349",
+    "demo/index.html": "64609124d4571e28a71244a0ca52708c21a8c1e53ed0681f0412b63e5ae336f8",
+    "demo/main.js": "5944d3b12ef01ca144dee27c5f338a4a112d01ab216392c7851a481084a5c415",
+    "demo/style.css": "fd4b9a97a2f36a59833dcb36cda44cebbd3f3cacb00e8cc38d489b57e689da0b",
+    "docs/AGENT-INTEGRATION.md": "2270616e9991ae753c3a263acac195f8955c9598325f3a8372107c65249113b2",
+    "docs/GROVE-CABLE.md": "c7e7b06df4e89a47da3615656d79e0efb1505970991a1e60faaee8d05a71f181",
+    "docs/VISUAL-MOTION.md": "b5f2c6c5062a40038def2f0e4bea4b6a932107a1e4e71c2f5784d35c0e7af035",
+    "manage.sh": "391d649ade85981a46d82b87316407b3c9f2a9a9f06ecfc37b0f434aa4c4ba90",
+    "package.json": "93de57b07e67edd603e98c34fbe345946161c44909ab12ba1535c7fefe18cf3d",
+    "scripts/catalog.mjs": "07256b426f864067c701a29303470556867d7db6c616ab02afbd30885b29b4c5",
+    "scripts/check-8encoder.mjs": "d2fac20d57908664232a273a5d61d877e1812b37cf869c5d22d01322aa310a3a",
+    "scripts/check-actuator-materials.mjs": "780b4fb191471358a026760e79d54edd18acc7d7d3bc4ccd87da5db730e1eada",
+    "scripts/check-atoms3r-closure.mjs": "d13681f1541082fdf137ffc7a806fd3706c8d22c6e71451ba7aa172c0c495edd",
+    "scripts/check-button-actuation.mjs": "f5ca09f3d24ddb3e95ad3732ff5b1bd4a9936c1a6dd3e5afd7f52516f00f7986",
+    "scripts/check-cardkb.mjs": "2bcdadf32ab930a9df38c5b17d6c916dedb106a393a186e55c8d034054e6cf25",
+    "scripts/check-cardputer-adv-assembly.mjs": "f7e0ba84c6716abaa8a27969bcc80bb7ed9d0ef3479f52445320e6e29eca3754",
+    "scripts/check-cardputer-zero-assembly.mjs": "33093ac3b3fa4822f7d9e270273d1e593dadbde604a3e335fbbb647b791d12d8",
+    "scripts/check-classic-unit-connectors.mjs": "6e1309d8154f21164370c44cdbcf05c6fc2f83ed3ffbf5e465df225f01e31262",
+    "scripts/check-core2-assembly.mjs": "43039438b750aa365ff40160a13d85444e177a86005570633214194c2afa13fa",
+    "scripts/check-demo-framebuffers.mjs": "883d8dc95166402e8de56f9899c89a5250585e21c35eb3cca9c2fbc37de9a337",
+    "scripts/check-demo-lifecycle.mjs": "b2e0c7a576c81bf23214eba138b3f0338a747a6f6da5b658c0e0c541e4e19acf",
+    "scripts/check-details.mjs": "27088f3b1ad2f8c9355292ec2ddaed71873bae87d27e5427628fbf2d86ee9d5c",
+    "scripts/check-device-actuators.mjs": "19525b59f813602802729ec885f15f74d058031d8c1348cb6bd2dad5e7d02feb",
+    "scripts/check-display-touch.mjs": "4683855b4246b26fe4eeb9f98ccf379f3ebb4c8c93155528dc9aa4263f64257b",
+    "scripts/check-encoder-assembly.mjs": "af84ca67d22d0bdaedcf59c33098589a719c828daaae80a07fdbbae858838f07",
+    "scripts/check-grove-cable.mjs": "662840b87b83d1242ce1aef34517c83d3fa4a7b3fa12229ee46bf28fd02451fd",
+    "scripts/check-header-sockets.mjs": "9e738a575426c4aa71b2bcad5315ccde84e0af4318c13ec72a7653fd9aab7e9a",
+    "scripts/check-heart-optics.mjs": "33276ba68bfe8339e8d6f2052edcfcf390d5c79bf4aea6062143457f1782e472",
+    "scripts/check-host-grove-assembly.mjs": "03ceb5543d8fda870a996a748a1691df6b6259cc2e490f02272da7eb50bd1cbc",
+    "scripts/check-host-visible-leds.mjs": "b73aaa06155d7d3de84f895c376ffd9970f24c4fbf97c192f521e641ddf82938",
+    "scripts/check-ir-hub-rfid2.mjs": "e86522c9e381d46f9c2b3a807237fe84a66e7a5f51fe8a9da724482fe0451bba",
+    "scripts/check-key.mjs": "db8197615100fd9ece4144ceeafbe4388a0f48df4f51f0df3df9bb8799f98d0b",
+    "scripts/check-limit-lever.mjs": "0776def4d40fa88c050abf9a7f253ccd051b9d6ce5e896b25de9927e39328908",
+    "scripts/check-nanoc6-assembly.mjs": "0b447f602aae6f3a3890244c32611a86334a67d4c5914f0130c514da28598f52",
+    "scripts/check-nesso-assembly.mjs": "76e885aa08eb2aa86a810a569a267df7ab9a9e018468565318c120a10fa43248",
+    "scripts/check-open-top-grove.mjs": "aee15d5e0f0904bfbc95b9ec68e7af7ed70144b7ae239b0f3a08cda7340dc6e1",
+    "scripts/check-paper-assembly.mjs": "aba64c0830a982e45ed75c4fa720227a7a779c452434805f14ddc33cb0361543",
+    "scripts/check-port-lifecycle.mjs": "8e789f965f227e02d47a86bac067d3072218a3359d2e794f4feea7cc06c38533",
+    "scripts/check-relay-assembly.mjs": "f21f892128097678c076f60cafc953be854d701c0bbe96c60058fe37b53e0061",
+    "scripts/check-roller485.mjs": "8eabc902845f28ffd513f590d923577bcb773f92ac8300a1b58ceecd8f7d5fa8",
+    "scripts/check-rs485-buzzer-fan.mjs": "7d367f5e679a7448283453c27dddcd9e2e7a1a0c38c92acb6ac6a5cb6846e275",
+    "scripts/check-rs485-terminal.mjs": "9a25f8610b401e7b5b7a6ec31dc665fe3879a01f6d34c603873fa2d3f80bcdd4",
+    "scripts/check-scroll.mjs": "793c04b06df470adc988910494f4a244cd7bd35ba232045f9fece0b6a1d8275c",
+    "scripts/check-stackchan-assembly.mjs": "9723e9c85dd8b8641bb4b85e43cfae9c8813cf10f5897a3152b92c5df239753c",
+    "scripts/check-stackchan-cover-seats.mjs": "8c7370a6ec6517a13b98992b189cce4f9aab4a7053e9ef99e72a7e7b1eb5a1a3",
+    "scripts/check-stackchan-moving-assembly.mjs": "7bf10dcb9c6a3f882c80553402708cb2db29067a432eeb8fe28f4e9142208b05",
+    "scripts/check-stackchan-servo-fit.mjs": "5fc62b124a000cf10aaddd52fbd351ec56f321ded77a5cc7b1032b6218d7c338",
+    "scripts/check-stackchan-servo-outline.mjs": "ac2d21d477221c6fa5f41c3288ea16bc6a4deb60a522e06b9cfb4c41ee9810a6",
+    "scripts/check-stackchan-touch-led.mjs": "a0ecd384c536ffb22b4bea73f8bf92eb88461d1c4e9fdd5f7a86fba944733b46",
+    "scripts/check-stamplc-terminals.mjs": "277b2bd04ac5d33cf939c1925b570da5704b81579c380f0d45555eb5db2c26cd",
+    "scripts/check-sticks3-assembly.mjs": "ded606ac21249f2f08ecaf508eb5adab3b5d4d20d96ad9ab9bc50127da24bc65",
+    "scripts/check-stopwatch-assembly.mjs": "691a76820c8d06d12c3cfb854e735f29084d68b1bdbbf5b4475c4e0ad1634530",
+    "scripts/check-tab5-connectors.mjs": "a6f632c0de4b80d16694bcd373bf38cd94abc9a94798d1d1e924dc051a14afeb",
+    "scripts/check-unit-actuators.mjs": "30eef8cc34367e034fec071052bdfaa0dd43d340fe4cdfc138d4926b3cb7823f",
+    "scripts/check-unit-visible-functions.mjs": "553b326b7722e535bd4c321dbaca9a3c78d48441b4ad55a9f462b553272421d5",
+    "scripts/check-viewer-lifecycle.mjs": "a471cf11d5e1dba09530138af461f2f7d1119b28090eeb4332774139bdfdfd26",
+    "scripts/check-visual-motion.mjs": "4211db1c25643977bebed8e10c182c5369ae6cd8824d090cd5201791eab205ac",
+    "scripts/check.mjs": "d453a9e4729ef2c136dd874bcbb7fdb38431a084bc20a4e44f0b7918b74c3973",
+    "scripts/fetch-reference-images.py": "80f05c1dc644f9c09638f428eefba6428d2b7e6d2567aa8d779728732dc7f859",
+    "scripts/inspect-structures.mjs": "aedde73ce9d8dea9219ac67e0000dfc89273843dbebf73bfa8e5fabb04838338",
+    "scripts/prepare-artwork.py": "08abb8af0d0ed76e41c5ca58ea3208b75e5a69b6821fa7e3656473911677ca83",
+    "scripts/prepare-geometry.mjs": "f5a41dae528f38ab68ab920b4a3f1b0b0763b87c2770c3a474140c8d79c24933",
+    "scripts/prepare-public-candidate.mjs": "88d25159ca7526395229635e8d6f0dac53e6f403493b9d75ed95444e831d99f2",
+    "scripts/probe-model-apertures.mjs": "720c20f063f18cab88bb7d3ae79b62dec5feb607854c39b727f8ad5681b0f774",
+    "scripts/probe-side-apertures.mjs": "b9314f38cebf20ade924f603b1ee78ca45621572aafe6e53f8f22d3cac4954e6",
+    "scripts/serve.py": "632c8376d49b9c6c74160fffe6a3d49cf282d88b04711749d47e6f34186a3fbb",
+    "scripts/source-feedback.mjs": "3e325eda513742a8cb6e447c119c4e1deab23182bd759201dc179713ca121ff4",
+    "scripts/structure-tools.mjs": "3862acfe2857af01e8ea22842ce0553849be23030a843527c6123f4df3d2d206",
+    "src/core/Component.js": "32435fa40ebd219ef51b249548e05c8f770e5abaed2b2698dd8e36f8e61af839",
+    "src/core/ComponentHost.js": "e996d0d158889a6c19bf15fcc0a33902392709c9232d1af6159e9e5c234be5fd",
+    "src/core/Device.js": "05e9272fd507b6c3086b05269cf9eca42341d43fef68bd1d5a5f8222f5543511",
+    "src/core/DeviceViewer.js": "fc7f9af29cb191ab78b1444bd8fc49e743198d8b3cdf0504b2679bc0096d9b28",
+    "src/core/EventEmitter.js": "f37cee287e542c9d47d436847cdbbc28e835f86dcec53cb553a5a25c76d99384",
+    "src/core/Module.js": "e494d71fa9cd3c377ca0c65fc33cc4aad48faf6c872a7232fec0189ba4ed4178",
+    "src/core/bridge.js": "8608d94b9545f315e3c78ea433fab68ae33350a5ca85e5ea946b4d63a98aa35e",
+    "src/core/components/Button.js": "3592e37a7ff6bb2e87dd0cc831524ed5b143c4d334f525b6626e41aff04dc021",
+    "src/core/components/Display.js": "95e53629c0fd9456fd468b18e135d99d55017e940d8875ff9c5de813c53416ea",
+    "src/core/components/Imu.js": "c7149efc62f1c42c4739af9a85361ce4dfcbd7a6b383f08b1f90ec1440fa7ce4",
+    "src/core/components/Led.js": "806317901b59c84246fbf176756b789427bbff0995fb2d52b1f76593629c8fc4",
+    "src/core/components/Port.js": "9b888b81e43b7397ac5eee82cb25e7b1abfd5c9f30d29a8ba967f8f5080208dc",
+    "src/core/components/Speaker.js": "881f8ac18b13381831e43407091746f4cf80419548633a054a88ef3bc217feb1",
+    "src/core/components/VisualJoint.js": "654fe92b14931824362b5c6f7fb24be509c7e1be1ff4a77d6903bcc51581e84c",
+    "src/core/geometry.js": "3c698e539f334a7e5d831a0004124403d558155c8ea98e82a93cf6cb7218be6b",
+    "src/core/index.js": "d9520c89b01560ce306c98e0bfdcae510b3a283602eed20eb1f68fc57ba22693",
+    "src/core/materials.js": "7fcfd4c66cd1e96edcb24048d8a78b9d5eddc2eae85065770920dc02732ac06f",
+    "src/core/registry.js": "035a5ed72d41ebfb2356bcb5e5bf0726541708a219429660171d6057583c47e0",
+    "src/devices/atoms3r/cad-map.json": "745237c8f5132f4d08ec5ef86245ddba9743b22a227a3cffe2336c8b26077433",
+    "src/devices/atoms3r/dimensions.js": "0a2051f45fd5301785245e2fd51e8f63bc5f5b6e8fa39d22d3b0cc3e44619dd4",
+    "src/devices/atoms3r/geometry-data.js": "022a09518501c28d3e54458434e69c68ae25373cb1a91c6c60e06a9e225232f9",
+    "src/devices/atoms3r/index.js": "c3bd85b9bcaf0ca1558ce9e912a338ed1505648c306257f487453e944275598d",
+    "src/devices/cardputer-adv/assembly.js": "bc7da4058b5017017861e41844a79c0069f8d2b991a1651b364bb0020b799f1b",
+    "src/devices/cardputer-adv/back-label.webp": "053f9ade36bf8d7b4790bba4da0e7684c37707da16c56b1a05d570c1bae6f73e",
+    "src/devices/cardputer-adv/cad-map.json": "8d73293554e5c9473115a770b6593d95b0da553fef78eb9ee3790276c1572ac6",
+    "src/devices/cardputer-adv/dimensions.js": "f85e3b5b2b9e9fb942395cd3977ed5e87001a908ebc10afd4e614408dfce069a",
+    "src/devices/cardputer-adv/front-name.webp": "df64b0ebc8130df08dfc8b397821e11a3037cae89001fa6953bea6d485c73d44",
+    "src/devices/cardputer-adv/geometry-data.js": "0ae28a6212b445aa1a3b2bc20ddd8f7973c0cbb398a9cb067dc68b04e7ae1866",
+    "src/devices/cardputer-adv/index.js": "73079428751692a7238ade370e54dfcad363b7c7716adefe457d967e721b78bd",
+    "src/devices/cardputer-adv/keyboard-row-0.webp": "edb4b40cc1c7987e7dbe47512e8b5e77a1c0b6b0300967b3a2c08f0e03b1b0f4",
+    "src/devices/cardputer-adv/keyboard-row-1.webp": "ede500e4b1f676754ef83abf7d469d6ee05c50b984d6d1d0f2824f3a579b1425",
+    "src/devices/cardputer-adv/keyboard-row-2.webp": "8a47c10c8bf04c4dd5659d1a7b952bc27f04a4277d04c7343a2315eb212cb394",
+    "src/devices/cardputer-adv/keyboard-row-3.webp": "42ee8e122f7a9f8df6b85b2c9cda0236c2ea60fc3546b582d43ab23e83c23eb6",
+    "src/devices/cardputer-adv/stamp-label.webp": "a52a941a003bfc529d1b24af9b0016919fcd9f3c0e1e7a37891c716a21d102fc",
+    "src/devices/cardputer-zero/back-label.webp": "b6b4d20435b3aa7159e8896631e7ba64cec2d9ab996a7ce040d7b36fad6b996f",
+    "src/devices/cardputer-zero/body.js": "0fd7d59a8314a839e91819b850e37e8e3a3df55edc4c81b33af54c9860ded2fc",
+    "src/devices/cardputer-zero/dimensions.js": "b69584f5a875ed5f4aa45d8971bbfaad8bac98d38feab0d9e083ce84eacf54a2",
+    "src/devices/cardputer-zero/front-left.webp": "f0d8aa3fec505083a21f0aed98055daa240e35bca51c4ab575eb2aa364ff590e",
+    "src/devices/cardputer-zero/front-right.webp": "8ea83630fcf6b7127d1e8eb416642c11f28ff2d7532bb3e55f9d6ee43de8030d",
+    "src/devices/cardputer-zero/index.js": "31428aa058a8c0fcc9e679017a9b5eedc26d520d965e3bf22934d94ef68ee2e0",
+    "src/devices/cardputer-zero/keyboard-row-0.webp": "33044e45c69f93eb205a7b87b411e2295323e68069a73252fbe09685f5a9ecd7",
+    "src/devices/cardputer-zero/keyboard-row-1.webp": "780991c3641f49e81474bb06518fead7a5bbb5c32a75985a3fe0ae6c72b23adc",
+    "src/devices/cardputer-zero/keyboard-row-2.webp": "1b561e5d3a7c3ade5c8cd50b479bb50048eb7f1727b28845f1dae69a93a517a8",
+    "src/devices/cardputer-zero/keyboard-row-3.webp": "798884a68e2422d0a122ed58ea8429ab6dab8504d94d347a7bc6f86d83cc0558",
+    "src/devices/cardputer-zero/keyboard.js": "6fc17c6156d708e8c2973b01248fa2e500da8ee7e0cbcbfbec58341039ba5ed4",
+    "src/devices/cardputer-zero/ports.js": "4b5cc9d899ad4430c33e299fc108022deaee4a6a22374424c864d5700ecee3e5",
+    "src/devices/core2/assembly.js": "1eb2ec32a35a71bcc9db52c4572f5fb1563199cb2e9a9351622126f84edf46f8",
+    "src/devices/core2/back-label.webp": "385064802780dfeaff1d773946726e0a4001aa4c62ae50dc08c64ebd72ef3a26",
+    "src/devices/core2/cad-map.json": "9ff72a46a88f53efa30b566613b5b156f360a0e5bc144e414c3b558cc2ab1c02",
+    "src/devices/core2/dimensions.js": "a18e72e730a385a30f97757966883769bd07a1ce6c9a985e95c3f63e20406913",
+    "src/devices/core2/extension-label.webp": "de6ccbae9369db3b3747d5baafc7fd983b7131afd7b13f0dc7aef7544467c963",
+    "src/devices/core2/geometry-data.js": "5a50588433d2a897abaa6525bd3c52def9e2e7cff0f557962640dd09743c3c56",
+    "src/devices/core2/index.js": "58f2d9d220fa430cd188959289cc0d39a4130a1255a9f44c7b00ceb9c47b6fbf",
+    "src/devices/cores3/CoreS3.js": "1e5ecb2aac9d212883bf8ffd614de44728e3e24131032f4ca6d5a27aaea45558",
+    "src/devices/cores3/back-label.png": "7d9838f7521ce7834cb67df1610af64fdb7e1e36a09d54fd114bdbc8de56281c",
+    "src/devices/cores3/cad-map-din.json": "db8ef045ddd54db9643f9e0222ae3b6d574fbe2ebc98d475dd96b4e7ab4fdb49",
+    "src/devices/cores3/cad-map.json": "5a27e65b085c1aaedc8b5a19ce561e82e9cd8520d83f8ed88f81e5bc5a0f9ceb",
+    "src/devices/cores3/dimensions.js": "6b8286fc8bc8fbe4f728060a835632442ad686b206b8468764400e744ec9d067",
+    "src/devices/cores3/geometry-data-din.js": "c2caa060353caf45342c172a553457670a45115ab319bacbdbb0d01eaba9ac87",
+    "src/devices/cores3/geometry-data.js": "a88b324d1baaa658864014913c25161615b328fa6fc37814ad23dbd2d3ef88ac",
+    "src/devices/cores3/index.js": "c92c0678fcde424aaa7c4677cf21bcf127bbd2835f6492cdab4dbba6097a5796",
+    "src/devices/nanoc6/assembly.js": "1075fb701eb8357035fa80fbcab68cab7068eaa378faf7452f3b5705cad70a70",
+    "src/devices/nanoc6/cad-map.json": "3c0164d3a229bb053c32d374a2aeb04d94e87592adea1c513933894f8c6bcb2d",
+    "src/devices/nanoc6/dimensions.js": "a727847892bafd9481b39917dc529955de591c2750d36123ca68a1f22bca01f6",
+    "src/devices/nanoc6/geometry-data.js": "048069edf483cc875c02375c0ddc96d8d3fb69ac9fe712f5603a2285e8e233f3",
+    "src/devices/nanoc6/index.js": "cddca725f170c6cc236e371d33990ee26b369a0208755c3e161fe04fc67aaf48",
+    "src/devices/nesso-n1/assembly.js": "c7b41a6feef78f4766b989cfeaf2720321466f45bb79fd1d7a0e6bc60cb81d42",
+    "src/devices/nesso-n1/back-label.webp": "975bc8e503d2f0f7c48aed62402708357ad1a84c050d1c1da607d027efbc99e1",
+    "src/devices/nesso-n1/cad-map.json": "d19fd0a043f098fa7106fa894404905d9478bb17f6461b966dfeaa6c645a4437",
+    "src/devices/nesso-n1/dimensions.js": "27acf1d75306cd3740e8e185b85932908d67f663c7725d7ec86928426b184d28",
+    "src/devices/nesso-n1/geometry-data.js": "3bc3356a8e6db68613022a63961d2b50ca7f7ad8fe734c8ad1b8f51d7737f74a",
+    "src/devices/nesso-n1/index.js": "1e633b8e292dab05591f4743d1f2d88758baeaeade332f983da067a73ab59824",
+    "src/devices/papercolor/assembly.js": "274628ffaeff2b9dc3ec7b2df6d34a9871967b1e5e077326eac6c3e9fff0b9a1",
+    "src/devices/papercolor/back-bottom.webp": "93bab175ccb4fca3693e57794bec15003a1b47c927b8c9a754a18b50fbd732ec",
+    "src/devices/papercolor/back-top.webp": "8f90436539c1c8514be8190f2d8eb39a6448163dcbf8e51b81374ac8782cfd20",
+    "src/devices/papercolor/cad-map.json": "9a59fdc1c59173a3e8de3a02b57d1355a667c340c2e8135a9de8bf92dd16cd77",
+    "src/devices/papercolor/dimensions.js": "5443b5d347e90efb86e9f80ef96163afea91ac6689256fb2912ddc1aea89eb14",
+    "src/devices/papercolor/geometry-data.js": "4d724ef560023583e567b2d3dde87f18976653c365f80e08688e7a2addb0f4d2",
+    "src/devices/papercolor/index.js": "ed01e36ecd92f8e62a313b919c2cd9338eb05b64f895a2000e254d86fa832f4a",
+    "src/devices/papermono/assembly.js": "8e785869ec24077f8c2aad8601c5cb93fe1a6f8f9433ba2cf18d6575a7b36111",
+    "src/devices/papermono/back-label.webp": "71a4eeb52d0dd584653e9cc5ab0b4c1339f9799e4f88bc24550bd057be899f09",
+    "src/devices/papermono/cad-map.json": "6d95343bfdd274e49654e48ee5cf81eb8391497f90d0ac6834aab4ec83c81d90",
+    "src/devices/papermono/dimensions.js": "3f7ef51d54f60884a8ec07d164c675a31e3adecf1d70be43b864c5a7a3ad7d42",
+    "src/devices/papermono/geometry-data.js": "6ef4d158284d9ca3d7a0aaed7d323e0740a5e8d447d025df864c9cd6d0005230",
+    "src/devices/papermono/index.js": "cce96c67ea3052609a683d85e999baa7c40f0dada20eadffbd44c96babb1f94f",
+    "src/devices/stackchan/PitchHarness.js": "cd76bcd959268284fde600a665f1ce62fd3656697658bcf9085ad8bb3fb6a826",
+    "src/devices/stackchan/cad-map-motion.json": "bf1082856e24955023ccfaae7b985162385ef0326693e7ddbfd10ca6b9368a71",
+    "src/devices/stackchan/cad-map.json": "fb0d860007d070b8467ca4ae662ee99701853dabce634bf620a6754103ec4696",
+    "src/devices/stackchan/dimensions.js": "a6583eea8ceb18cf74a33d22260b8297e999dcebf730b73c6364a678625012fd",
+    "src/devices/stackchan/geometry-data-motion.js": "9b3be4ae3477c1ad29c9b5807982f934892f452efac760f9a60234f40482ecab",
+    "src/devices/stackchan/geometry-data.js": "89483aa49b4013ad8555282af03ebf18bea31845096c0a40bf1788873e10882d",
+    "src/devices/stackchan/index.js": "1b98883e8b6caf9d0c0e7b05bdaf4181e1a6dff75accf8acfb214b3cbcc29498",
+    "src/devices/stackchan/motion-mechanics.js": "6fda87a9472758728817752ffe4def9c567ece7fc661fd1a754f6abe1168a466",
+    "src/devices/stackchan/rear-assembly.js": "76e32f0af1885cd332430657b649a29a4201d3535a1c0f63d9039d494cbae0cd",
+    "src/devices/stackchan/servo-packages.js": "bb005356f53d826dcd8cd9a77a25b51a0b0c401ecd691cd396bfc36c3849b0d3",
+    "src/devices/stackchan/touch-led.js": "4aa634af4d85c6154efd03ecef3adde84749324bc88e4112c829bce1aec5be0d",
+    "src/devices/stamplc/cad-map.json": "893be8b42d69b128c266bdafd7a25f06a4ced5bd2471d9a7f2b1d44755d53c65",
+    "src/devices/stamplc/dimensions.js": "a5e51938ff502591cddf2fad07b1eafc93a505f73a4c80e8ce2b1a0c590ff1b5",
+    "src/devices/stamplc/front-bottom.webp": "e357e16272fda4733959cfbb0cd800defac1d7b3f7226c2ecffa8f66e134a3e0",
+    "src/devices/stamplc/geometry-data.js": "38bcca6e5d1e7736ebdbb267ec93ca23dc3f896a140ca13573fcd486f93c6caf",
+    "src/devices/stamplc/index.js": "17ad96e14d16480a11c70feef4fc90587a26585b8ef84a6e03250af888ab50aa",
+    "src/devices/stamplc/input-label.webp": "3544ee82540a7edf2cdf68c27556c63a9346d28cedd201a0239ec4a72b863787",
+    "src/devices/stamplc/relay-label.webp": "a6ab187e831a536af5e83cf0c4854736c9c4d8ebe1e7ef1840b1caeee16c5c9c",
+    "src/devices/stamplc/stamp-label.webp": "a4bfc6f1745700a3793af85f0ef1e26c0cb4d5876f56f7cfbc024c0d0c927d38",
+    "src/devices/stamplc/terminals.js": "5dd9e8bc913351dbeaf53bfa7b081004fa8e222a3bb3966d6d19e27554615faf",
+    "src/devices/sticks3/StickS3.js": "45c861641dd39680c3beced18fdde34c8cffbd66df48c5e192d12de0a541380a",
+    "src/devices/sticks3/assembly.js": "ef74bc2e771bbc18a91be85e1733d84d905f2987ae59c5c3858f7a289461eba3",
+    "src/devices/sticks3/cad-map.json": "3dba1b64b8e1bb328c5199be9a8c3fb4bfe6a12341c2d1769d67b419d32c7ebb",
+    "src/devices/sticks3/dimensions.js": "bd2e9f0aa607e13cbee8497b2505ff4fc44f77fd503eb09fa8ec544f35af45b6",
+    "src/devices/sticks3/geometry-data.js": "7f88e5a72db94f6f6f9046fc4275994092c259de5add163e58db38a0b89d7abc",
+    "src/devices/sticks3/index.js": "05f5a03b668dd82101b3ed8c8adec864f09e21b227bd986729fe6b1dc878beb2",
+    "src/devices/sticks3/labels.js": "cc27874b4760afcdf11d24edf804f14ae8ac8465fe2e85aeee22fd83a73675d2",
+    "src/devices/stopwatch/cad-map.json": "0fa9599de268be2067416e33e6b6c03303eb9745db6cf04a686fefd9dead3573",
+    "src/devices/stopwatch/dimensions.js": "1395a2a2d792587d88c02f1bd28841a5f257ff1e1d7c4a57be7ad219c9be3b33",
+    "src/devices/stopwatch/geometry-data.js": "c84d39b7cf1885177ebeed9b3fbefa769078e03c59aa51f72826bc2170936830",
+    "src/devices/stopwatch/index.js": "1a393032d7f4e2717c7b051bff0507df5c07781999a7b85e570972111d02a7b2",
+    "src/devices/tab5/back-label.webp": "efd0f8e7591540c537722488b63b16534eec8ddb176e939d7e3a028739bb5533",
+    "src/devices/tab5/cad-map.json": "dbcf533d8dac523f01d207d01ecee640411741bccc391ec30396935d5cf6f7a6",
+    "src/devices/tab5/dimensions.js": "89fbbf9efc31b413f401fc5364dec5b5b7cfed15eb8afd2d260bde9e4279d478",
+    "src/devices/tab5/edge-details.js": "68b6685435444ed9173e6be559dda3b38002547167783e6d838a97ecb1522946",
+    "src/devices/tab5/geometry-data.js": "4787cccc873706452f502f6333ba39743211d09885d8e20b6b618b43af51dbfb",
+    "src/devices/tab5/index.js": "548fc65116f167e52bd7e78338151979bd6bb02882130ffdf0541a6257d28feb",
+    "src/devices/tab5/main-board.js": "88d7209f717bd3c4844fd10c73adfde8a2aa30b8f7a9bc79321e3129980d88d0",
+    "src/index.js": "ed6b026295dec1135c8c7c2da00680d55d5a3fd26b2e975f8d566dac05896d3e",
+    "src/loaders.js": "0e0156b693e954193bc1204e4ee3a434c69e2cffded16028a5c313fbbf807e5b",
+    "src/modeling/PaperDisplay.js": "e65c23e41319a320f94f337a9efd49c5b0bbeed19fc5f1551a5f6fb299055542",
+    "src/modeling/RoundDisplay.js": "0d5fde964a55d2082fae2ba6768229c470956712a652d96474dca75c0c046eff",
+    "src/modeling/actuators.js": "c87e5723bc0351a42516084f7f4990633651b63913a6922383216567dc3787d8",
+    "src/modeling/artwork.js": "c395bfefd9a1d5fb067251837bafe41060136b3cf6295d471df757115eb4851d",
+    "src/modeling/cad.js": "83e8e600aa182b5a94bbccfcd26f0ab35d569c5828ee8ce7f11bc54d964a88fd",
+    "src/modeling/connectors.js": "5aa32f504f5e8d8a047129963fd57840b9325009e64ffc87038ff8f47afdb80c",
+    "src/modeling/grove-cable.js": "854e33e5e00545c0c907df1b166d27fdc1480b4b3c02fbd4cda04caee6f5e649",
+    "src/modeling/parts.js": "387cddaf0ab614a783a024ad4e38918cd47ad8a887041bd22b12908064564fd3",
+    "src/modeling/subassemblies.js": "b173fc663a0ec92aae084830cbf674ffc1dcf521a368f3cd333eec39c68f7c0e",
+    "src/units/8encoder/cad-map.json": "4fa3821346a85c041ea00c91a4f2b3c22f9eb964d0a2a907848bafb88e57bd51",
+    "src/units/8encoder/dimensions.js": "074ee4673891d12ac06f56e0ef140ea9656e3b3f319820916138cfd1d81f77a7",
+    "src/units/8encoder/geometry-data.js": "ae6f4be66238263bd5f0c36838ec54f8a64a3be56c0b90f5aa4b5ec852525915",
+    "src/units/8encoder/index.js": "dbb970f29ebf9bb1e785460faa4655f9c9764558506da353185cd40bee17a642",
+    "src/units/angle/back-label.webp": "4de76eb3396a42735c30a1520889789e8802fac444f3d6c4f4a318c9c5659d0e",
+    "src/units/angle/cad-map.json": "f49815a7ddf8bce975e0282e3015837d3484082cbadc3eb21d33542862fbf37e",
+    "src/units/angle/dimensions.js": "0b831cc5de33fa3c53dfc0ad7c0c06e3230410a6623e60718e3a8d6f1f8d538a",
+    "src/units/angle/geometry-data.js": "1baa6f0cae1532b83705834d004baef17ee36b4efa70d4cffb8851fef4053793",
+    "src/units/angle/index.js": "49e999e16df79db8695f3669a8573c6aeaa7f9f5105beeb8113c54adf98c0b2c",
+    "src/units/button/FlexPadButton.js": "dab4803edde0b97b275a46e8792b87da7471f7229cd744dc3a1929c49c742f35",
+    "src/units/button/back-label.webp": "537f5d6388d3acea5e5fc49c2662da5dc9f5ea04333cbdd5ec75afb7990107ab",
+    "src/units/button/cad-map.json": "6be00d518265d371ef5828fb4bb6b5a978277c3c197e4bc5e6c20dc86e967131",
+    "src/units/button/dimensions.js": "715514bfaa7aa1275594b5dfbbffb1b21e92d86fbd453e5b1965ea4466f5cabf",
+    "src/units/button/geometry-data.js": "349122e5369459ecdcc042f6a68a933b03b9761626f7f9bdbc20058b54e7817d",
+    "src/units/button/index.js": "b7053dc142760d040cf68df169da6aaaf302ec1a36d42999d8b8139a75182454",
+    "src/units/buzzer/cad-map.json": "525367bbfe1a713b2092f839b50587a2f6becd32ed4353721e1b1945243e73b0",
+    "src/units/buzzer/dimensions.js": "4cd1e0f55593f99bc5cfb40a4176c27a7df5a8a125f9478002b7f725dd6e16fb",
+    "src/units/buzzer/geometry-data.js": "99b6b605e3100c89ed121b2e6df196d6d599cf9a9ba9f058bcb4ea6028807636",
+    "src/units/buzzer/index.js": "c7f6c90bf3f9ad8bd792f26826b778b5b7c186fa51fb9d48bf1fe59879e01be2",
+    "src/units/cardkb/dimensions.js": "4e7812359ec925a0b97f1aeec1ab8207acd97d94b077790c4d98fc72468fd1cb",
+    "src/units/cardkb/index.js": "664bc25db9cd2d960509dccffc2bba8f356643b8fc286ccba8e15eb91a16b872",
+    "src/units/color/back-label.webp": "535386317321330ae30f45927ea93255bfad0887283c5e8ad2ecbdfeb3cdb3d6",
+    "src/units/color/cad-map.json": "7f2afc3f9525183d705d424a81d6c324dd98c5234b089e9197a35969f501eb36",
+    "src/units/color/dimensions.js": "494fa4b3efb4de541e0ac9168321ddabfc7293b60f0f3fce6a1c29acd1b11762",
+    "src/units/color/geometry-data.js": "245321cfe66030419563ff7d2503f8ea3b2fb035e5f402b7c3aae67474d286ee",
+    "src/units/color/index.js": "7f77c52191376a725466ef45537231367336b982e4b65cfcdfaeacefbc1f6d40",
+    "src/units/dual-button/back-label.webp": "c135902e12aee77970b2c9dd7cc4f12e9aabd3e7015e47da685e9ccf7e4d35bb",
+    "src/units/dual-button/cad-map.json": "19d42b634b28b2718c1871bc280330f62adaf1cde8ef85aece4b23f15b9b7c24",
+    "src/units/dual-button/dimensions.js": "f278c37f87e5f433378c5f32fb65c568afe2439f1dc1778423a5102a4d9953dc",
+    "src/units/dual-button/geometry-data.js": "24a4d2107926ab86d94301687d0202ee08b16c6dc623d983213eb767909f22e9",
+    "src/units/dual-button/index.js": "4f1897d8204fb89b101813ae148cb8d61a5255c8f7ebbb1cc7fe04bc8cff3032",
+    "src/units/encoder/assembly.js": "cbc2125aeebf18989e4add89178e422d728704bebdb0260f0bcb3ca22a62d027",
+    "src/units/encoder/back-label.webp": "235079627c9eb6954bdcb5f60c9c895857b0aedd4443288265bbc3346079aff5",
+    "src/units/encoder/cad-map.json": "077906772435c63e8f61276d268f0338b7c215fe9fe27c87f6309e9eef6f0846",
+    "src/units/encoder/dimensions.js": "948c7ba8c5fcc5929814172b045dfc19e9ca977fbfae963034137996b94deac5",
+    "src/units/encoder/geometry-data.js": "9014aed6c81f5af893320e66f0011f8ab755ca7de337cf90b5a093e946f07fdc",
+    "src/units/encoder/index.js": "2d558cb6b64d9e6c54565c218713c3030148edd69aa233ba1036edeceef788a6",
+    "src/units/env-iii/dimensions.js": "5695f199938621b1098b9778c3ad48871b96096c405ee1813a32969d2980f747",
+    "src/units/env-iii/index.js": "acfe37bc1f372a7100c3e8719c89b03a30fcdbd99cc126d5c5204923e1456f1a",
+    "src/units/fan/assembly.js": "f016ffc067e4628f6f717ae9943d236e600c82fa26c4fd7b874cf91d6f26f213",
+    "src/units/fan/cad-map.json": "12b1c4d05d23f646140848f309dede982702ac9d6f21f2af2c484b3fba18b910",
+    "src/units/fan/dimensions.js": "1fbb98bbe848dff04abcb6e8bf546aa77696a4aafd47bc3dee657629807c56b9",
+    "src/units/fan/geometry-data.js": "ea441ee20cf21dc2cf055b6739dabe5a515c3b7db5ae5219214970bde03379d6",
+    "src/units/fan/index.js": "d18324b77a9143e0317c0873b4340b88388398730c9db41bbc3875a85e4d9d16",
+    "src/units/heart/back-label.webp": "c70a6e94933f8a547c6054bd6569e953a4614b6daa67ca46d86a49976ab95799",
+    "src/units/heart/cad-map.json": "4e36095a272b3178c1c358986860867384422d6326f9547b898f15e698139a5d",
+    "src/units/heart/dimensions.js": "0824dd3237007a8b35e099c71e5c8bad531f1aebae7dace9aa09b95c2f66798f",
+    "src/units/heart/geometry-data.js": "40754b98725af24e21a6d17b719acba1b39442b912fff909632453d2864a1165",
+    "src/units/heart/grove-assembly.js": "7472d361d95da609f72fca5e1cdb6ffbfbe8b741342ec06e1302c7b200e709b6",
+    "src/units/heart/index.js": "5af99c31adc30e7da5880866e5ee99829cf704a08129151b426ab019554cda3a",
+    "src/units/heart/optical-assembly.js": "cbdfb7080074f0d4e357a4d9a358be345b93fbc88c283ac4b1685afcacf9f82b",
+    "src/units/hub/cad-map.json": "7fa4a931687d15f0be591c36c88c6cf70e9f59f738325e94066476ced0670a01",
+    "src/units/hub/dimensions.js": "500f221ba1119f3f6303e8bf1db09b00e5d032adf51b0f5282506e7f26f96b16",
+    "src/units/hub/geometry-data.js": "2254f452380bed1254cb1734932e77dae2a07a362207edacca30ad5c761f97f8",
+    "src/units/hub/index.js": "2878447a3e1216dd89531430a4727de201f264dcfbffa290e68a5cd32c56b14b",
+    "src/units/ir/cad-map.json": "3355ba0d772ab2fecc832c4e628aa2764a82dbb5420a848b2b889f0f2e2d782d",
+    "src/units/ir/dimensions.js": "1ac64782dc53cec5f331fba8e38f1fd7b5e10cdb841b2f1886fc321ed9bf59cb",
+    "src/units/ir/geometry-data.js": "50bc725a7fc406438410f8ad08c12cd916e24aec265a2e5a0fd2033917c636ac",
+    "src/units/ir/index.js": "bf8063ade509cbe5967244269a3676bcd8d88469813722100a7501a580beb167",
+    "src/units/joystick-v11/cad-map.json": "0c0bb0d6d71f5c3c506ff136092cfa95aee7a03208ad602dde36b16e7d498f78",
+    "src/units/joystick-v11/dimensions.js": "679a55a60da1a00746d89b326bedfc1fc5a717fbd1330e34616a07862fc1db18",
+    "src/units/joystick-v11/geometry-data.js": "726a2176c253f1e17f28accb0e406a92059a9fcfb66a422f84157d44f1464622",
+    "src/units/joystick-v11/index.js": "8350ed5725c608a0ef657b12597325e24762245151a0c3023a8c7290bedc48c2",
+    "src/units/key/cad-map.json": "f11b2ac62ed1751f248f5b73fa1a35367bb60ac036936f0560193a318f83d629",
+    "src/units/key/dimensions.js": "fbf63cd99442de90af64e4feee254df63365cd913015ab7facf0e63a6d1aa6b7",
+    "src/units/key/geometry-data.js": "f719379591022ebeb0f66a54f4aff8aaf5d3927d93752bec7fe7e884d4382c64",
+    "src/units/key/index.js": "41382014efc3a2307444a1833e66ab11cfcb6cc3142000a8b95ce186fdc3ccc7",
+    "src/units/key/key-geometry.js": "6ae50a907cc41518b4af773a8b0685e1bb9668321d32b4e8c0fa4a11c368e63c",
+    "src/units/light/back-label.webp": "b6f05fdd593035c18b4c3d45b37a7e9c4564f1e63b3f09f97134df61df090ca4",
+    "src/units/light/cad-map.json": "ff857613815078807d8bb2394ff836c18d2d37ddc09c56ec09cf170172ffdec6",
+    "src/units/light/dimensions.js": "7222da9d2796ffbf187a49fe93573d5ffdc2add3db2699dc9eb5f7ae693584cd",
+    "src/units/light/geometry-data.js": "646da8089f524fdf17e4f1302e7e0b180bdc92998410b802680974cb53c99c86",
+    "src/units/light/index.js": "643e2960b6eb7984d0d637d453a8da0b14ba69771e3fcfe6c42e0ff70e3c67ff",
+    "src/units/limit/LeverButton.js": "7441fd2336e92eb6b9f18f3996c6a84e8ab1061782c0819fa82349ff9639beb9",
+    "src/units/limit/cad-map.json": "f71c03a1c86e653eaeed6a8abaef37bb7714a486bea260fba00157670273b62e",
+    "src/units/limit/dimensions.js": "6c6192c286ec5af9d18d942cf8c1884be57035d586ae11a314d2cbf832f8a877",
+    "src/units/limit/geometry-data.js": "b463b1a1f133a0bea95ce7199c98dc7f1bee264f0b196275546c6c4e299fc60c",
+    "src/units/limit/index.js": "fe7b8d9b0d1e49ce7a4d9175bc79ef19c70bd74f4b9ec62c48e942020e019052",
+    "src/units/ncir/back-label.webp": "8e3c12aeada3c83a58ea118405056eaf3ff2cee5d62a5dfe97a8dd403b539edc",
+    "src/units/ncir/cad-map.json": "eb515618bee0bdc14fd2305c38cab0cd103b6b074d604d57376b36bf53442dcf",
+    "src/units/ncir/dimensions.js": "5d205eb0a423b3395ec67d427ad37999add37314cd9ed022bcb96727ece9f7a8",
+    "src/units/ncir/geometry-data.js": "9a30f0e0ef0000e9a9354c7605d9951512acab1d06856ae8417d7d22bd367fd6",
+    "src/units/ncir/index.js": "233fecb1f59592b736a01455b62254bb0a7a7be7e257dffbe3bc628cbd95afb2",
+    "src/units/pir/dimensions.js": "9eda33a9c42a6ac4354010a06b815653dbf4e15b94ecfc4315b5b70a6373d67d",
+    "src/units/pir/index.js": "acfe37bc1f372a7100c3e8719c89b03a30fcdbd99cc126d5c5204923e1456f1a",
+    "src/units/relay/assembly.js": "0fe8671ebd10eb8ae775559fd1e6e41d6f384f66cd73cfc8a6d3570c92d5c1c6",
+    "src/units/relay/back-label.webp": "f79e083e965fab22ee2dd526946ee15a5bb4a96443d862894775d01c35afe5f8",
+    "src/units/relay/cad-map.json": "00f0bf8f30e7767e2a74dfdeed6f496b886182fec95022b3ab6f2dda8c640f90",
+    "src/units/relay/dimensions.js": "3cb033076499c67f08fa4ef84145ff836e08a954737f309def8851f7d59bc4fc",
+    "src/units/relay/geometry-data.js": "041a062696ac4a7929b3a036f5e2e31dc2986f9954b7048b38608fe59ce3da3d",
+    "src/units/relay/index.js": "4e63b971bee7c5bf5321dc31c41b4ac44b2b951bd246e6eb02df399b3bb35c79",
+    "src/units/rfid2/cad-map.json": "abca994afe621636eaf0502c37473cbb995d4660db429a0a0a889ac04df1f3e1",
+    "src/units/rfid2/dimensions.js": "08bee5234cedf9bb253ea69bf7f84e0a8e9ecd6b038b3d747d846769a714f312",
+    "src/units/rfid2/geometry-data.js": "635173ebea01ef300fbdc1eeca6b46f4c3ced535dcf84680922eb9cb35703cab",
+    "src/units/rfid2/index.js": "24433f230cf7b191e9ffd515cb67382a987b2ee010ebfcbd5099cf48727ac146",
+    "src/units/rgb/back-label.webp": "81788ee964d4ac78d490eff680fbff11d62cb3f8c22907b38b075369d99b0fea",
+    "src/units/rgb/cad-map.json": "14fd9bb9395c09c4bf351e107d4df5794dacb691d52e4cd7dae3cda8b26bd45f",
+    "src/units/rgb/dimensions.js": "76ac677124336dfc534088a086ad8a9614dcac767f56ec41bef2938912c7295f",
+    "src/units/rgb/geometry-data.js": "e1a2777a1b191cdf83f171d41681a3d74aa75aeb57e8d89a33d28305f14b827b",
+    "src/units/rgb/index.js": "e721b11ad4e4689cef1f6e90f2a4d65445d8fb0d7e5db9341b1b1cb5e1d46d84",
+    "src/units/roller485/cad-map.json": "731fbb83c945ed9ecde4a167db610a4653d19545a7d4f8142c4b7e04de543c3d",
+    "src/units/roller485/dimensions.js": "d67d18995d47499676e93c008a5c2096b572305bdfbe9a8979f2bce2376023e9",
+    "src/units/roller485/geometry-data.js": "f246c7ca8ff77d83bd9788d5827615e83cfee24d02dbe06d1caf5a9e167e98d6",
+    "src/units/roller485/index.js": "821ef89719edc981e818e57dee8e3b9dbea4fb534bbb0532401518c3a9d1b702",
+    "src/units/rs485/TerminalPlug.js": "c88893747b391bcffcd6c23141c682417de711d2342f844f9d582d579ecb0f1b",
+    "src/units/rs485/assembly.js": "7e05e29ee3effcf1ec595ca2420ca56cd07e9fe0d0a548ca2eb710d9fe5fc213",
+    "src/units/rs485/cad-map.json": "ca1c1407fb6f76a09e2de45306ea5d2363539c9db2c24261c555c14f3e05bf21",
+    "src/units/rs485/dimensions.js": "071e6890c8d2f7e26e4b4d6d56bf5c5e26b42f9daa58cd7e65ab942961f9e154",
+    "src/units/rs485/geometry-data.js": "06db1bd6fa841ed5bfe4531cac25a17d5279f8dfa837737c55ed7c5ee450dae8",
+    "src/units/rs485/index.js": "18a4763ba9874a2bd13bf800a8aba9a04515ea588e9dba0e311dc9dd9fda6560",
+    "src/units/scroll/cad-map.json": "64c8c9e16db2aa539cd21640a142d0560eaac9335fbdf77ee05aba1a980d1350",
+    "src/units/scroll/dimensions.js": "ebfd7e4404d038a3a5ee734adbe7951f50468819bc10c37a2372aca7b5e9d433",
+    "src/units/scroll/geometry-data.js": "c3de33d60850b70ca9e44bee319293c4421aba2f2fb8f4e3fb7bf9055efc2162",
+    "src/units/scroll/index.js": "0c5d110f2a388c8295811ec2213c73ce219b1ce47c5bf98de48d753a6d7f9129",
+    "src/units/shared/CADUnit.js": "da529ab383652dcf9f48b70fafd613b6515a383087f6d1d4c64c144344722ca0",
+    "src/units/shared/ClassicUnit.js": "84fe43abe71c1e9b7a2d9d42ee9d8f08c256ef9448847f98f84f9486db6464e3",
+    "src/units/shared/open-top-grove.js": "07364ba732ff38bf83ce9a2025a7ea89f9abf7b95aff65e406fc873e8f94456d",
+    "src/units/shared/parts.js": "e9f8ea00706c398082dd2334337b32df4ab0600474692669365313d21433e37d",
+    "src/units/thermal/back-label.webp": "e1fc92c1fa89e4113e735b815f92c45eb9e9ff25019b512ed836eea594f7a185",
+    "src/units/thermal/cad-map.json": "bc5957d299a5dccf5165f7be3be0b769eaf8f7bbfcc955a7fbd72c881a4d995c",
+    "src/units/thermal/dimensions.js": "081031b313debdf908f1d1a358a11a2349ab87256754f79fa17056a21e7c946d",
+    "src/units/thermal/geometry-data.js": "ecf410355831434809b0c329128008fe17072bfb254756e917113a30815ae7aa",
+    "src/units/thermal/index.js": "4b16b08b3a7516d2e4e8d3bea2c03031ac309b653af05690e1dc1634ba2adb5b",
+    "src/units/tof/back-label.webp": "bb26a57f9344b3742e20624091ae6cae772386113e8afba062dfbcb4eff8e994",
+    "src/units/tof/cad-map.json": "8591b0caad03bc5dc0040efaa6526e6f422948745a9b73bfcc68296076322575",
+    "src/units/tof/dimensions.js": "d99b73220152919f848a594bda4b4f656d44bb2a10efbec9778476c39c6f30e1",
+    "src/units/tof/geometry-data.js": "ea7ee72e65452151f94967428ce3998b2ef81b7903edbdbdb7a7c6b53c40b33b",
+    "src/units/tof/index.js": "5815819860099b4ea3b3c6540c2ca6cd2fd40c626552cc3b062bb4da853a9989",
+    "src/units/tvoc/back-label.webp": "f8af5a471650080781c2c6e4ee7be27c36a97d8432c62e6e483a400f60011889",
+    "src/units/tvoc/cad-map.json": "5c94723637888305995621a29cf2742d1b0a301ca40dbe473ced2caca71cb14c",
+    "src/units/tvoc/dimensions.js": "51a03dddc458da30f1ba0084ff64d98bcb36a7761edfe299f2fbd3fd29d06168",
+    "src/units/tvoc/geometry-data.js": "57d74bd172b669160663f1549c22dd5797c7666fcecf201f38cce0d2726a0948",
+    "src/units/tvoc/index.js": "250a70355d06c0a10ce4fdd3b40b05d7b2c45f086331fe0d368d50d045bb053d",
+    "src/units/ultrasonic-i2c/dimensions.js": "1eec86b78e1cf810d8e1b52b39a10e223a94fe9d0c93f218c2e5c248e3f2f17c",
+    "src/units/ultrasonic-i2c/index.js": "acfe37bc1f372a7100c3e8719c89b03a30fcdbd99cc126d5c5204923e1456f1a",
+    "artifacts/encoder-detail/encoder-front.png": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+    "artifacts/encoder-detail/encoder-back.png": "c02dd05561c858992a4e78f85d8988e3c82b2b2bb88d73c845202f5e70a8fd3b",
+    "artifacts/encoder-detail/encoder-left.png": "f9cfc2ba952eb1449960fc2ccb987ff2851c3d74493d2f8891f08a68df70066c",
+    "artifacts/encoder-detail/encoder-right.png": "5c56b1e42574f925e0ea169ed732686c277dfc4bc789bb6ede5e706bd835647e",
+    "artifacts/encoder-detail/encoder-top.png": "3709f08cb9ae1229d7ce27aee56ea48fc1f4b83263d483ba28f3d6d76767eac5",
+    "artifacts/encoder-detail/encoder-bottom.png": "2cad6e893074e76cb6d89deb883e87cc0e0d45298173a0745888729318254088",
+    "artifacts/encoder-detail/encoder-iso.png": "9f7e8dc21065895ede17043c3486d7c3f9080a04e3a386723d0c33aadacb7792",
+    "artifacts/encoder-detail/encoder-leds-off.png": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+    "artifacts/encoder-detail/encoder-led0-only.png": "235633ff40d4a722a3511e0d3cf1cb8a56fbf6fbd16304d1671194b9d62830e9",
+    "artifacts/encoder-detail/encoder-led0-reset.png": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+    "artifacts/encoder-detail/encoder-led1-only.png": "4d66b94ea45937ce0688856df5ceae86e70391116bc71ceeff785c2b95b5958e",
+    "artifacts/encoder-detail/encoder-led1-reset.png": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+    "artifacts/encoder-detail/encoder-leds-both.png": "b914fec74816c4b2f7d59b2b51f64651afb0cc9271848c3403c3280fad3b70cd",
+    "artifacts/encoder-detail/encoder-leds-both-reset.png": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+    "artifacts/encoder-detail/encoder-angle-0.png": "185f5dd6badd5236d3a6bbf5feac96cd7aca341b91c54792d92043669d563b8f",
+    "artifacts/encoder-detail/encoder-angle-37.png": "f3787f70dffe0a2322d3e4c1e148465def8a7c91a2c6295f8d4afca4fb20b39c",
+    "artifacts/encoder-detail/encoder-angle-180.png": "633b80816537278a074caee624c75b889b34ed2ba7b33d50bd9d24a697b15271",
+    "artifacts/encoder-detail/encoder-angle-reset.png": "185f5dd6badd5236d3a6bbf5feac96cd7aca341b91c54792d92043669d563b8f",
+    "artifacts/encoder-detail/encoder-press-rest.png": "e92bd96dc54e4a556ea6852f6d0493bcd1543a84b7bd4736058cd5d5e5fc0d3d",
+    "artifacts/encoder-detail/encoder-press-down.png": "c7e1ebc92f69cb45593b464065491ab2ccc5621cc679fe171ca2ff9706c1da43",
+    "artifacts/encoder-detail/encoder-press-released.png": "e92bd96dc54e4a556ea6852f6d0493bcd1543a84b7bd4736058cd5d5e5fc0d3d",
+    "artifacts/encoder-detail/encoder-spinning-pressed.png": "604ccffc7d3f373f5cbb984b5f93b19e3ed652fd2c4ecf999065006d53b0334b",
+    "artifacts/encoder-detail/encoder-spinning-released.png": "318ec322a4e9e2c5f91fa8274c3bcd9d5bf7237f222ddd2f1adae920b4b13f25",
+    "artifacts/encoder-detail/encoder-spinning-stopped.png": "1f566f88329ee60cc8d2cde42e04db26c7a17bba897cb27a48b77015937802ab",
+    "artifacts/encoder-detail/encoder-canvas-cap-hover-rest.png": "2ac7b0610437f610a334e71b69d23b0ab40ab5c48fafd7f1cfd36feb09615387",
+    "artifacts/encoder-detail/encoder-canvas-cap-pointer-down.png": "c0fdbd5771e4f1d5b494414bcf41fdeada0c9d47e55e4e574c75a42c7bf83c20",
+    "artifacts/encoder-detail/encoder-canvas-cap-pointer-released.png": "2ac7b0610437f610a334e71b69d23b0ab40ab5c48fafd7f1cfd36feb09615387",
+    "artifacts/encoder-detail/encoder-panel-two-sources-held.png": "e696dd30375cc99062bbcb4128f2cd48233673bc74211e5d188c9bef2edc4adc",
+    "artifacts/encoder-detail/encoder-panel-inspection-released-pointer-held.png": "e696dd30375cc99062bbcb4128f2cd48233673bc74211e5d188c9bef2edc4adc",
+    "artifacts/encoder-detail/encoder-panel-two-sources-released.png": "a569235b8546d6a4deca9531bcc4c0fa905dc3e05428675b4de1ee4d2cc6e5ac",
+    "artifacts/encoder-detail/sticks3-hub-encoder-default.png": "4e0776e9bbc569496aa90f95a3bc5098f5e1681a78197fc37be7febdffd0606b",
+    "artifacts/encoder-detail/sticks3-hub-encoder-angle-37.png": "4f6ba83203448538007c8a27a4c0b8aa9dadbd4451b12b8f008a983a781b0e94",
+    "artifacts/encoder-detail/sticks3-hub-encoder-angle-180.png": "c2613a27ef28f47688d46ef020a4fde2f1205a9c4885feb6506bce6eeabafe46",
+    "artifacts/encoder-detail/sticks3-hub-encoder-led0.png": "8376e07bdb383f27343af357077644424de8b49b7310ca7179b8e99a24616aef",
+    "artifacts/encoder-detail/sticks3-hub-encoder-led0-off.png": "c2613a27ef28f47688d46ef020a4fde2f1205a9c4885feb6506bce6eeabafe46",
+    "artifacts/encoder-detail/sticks3-hub-encoder-visible-led0-on.png": "cb163193c2a487e60cad22054993cf94fab7894db2ea34f7843ed48b8b95ac07",
+    "artifacts/encoder-detail/sticks3-hub-encoder-visible-led0-off.png": "1ab1f3cf54116f41280f6916611f8c53dc80ab24ec5595fd64cbd69d84b5d6cb",
+    "artifacts/encoder-detail/sticks3-hub-encoder-posed.png": "54e019cc2ea34f4a9927a70ee5766f49d4ce71907f305a1aea3ef350d271eee6",
+    "artifacts/encoder-detail/sticks3-hub-encoder-pressed.png": "bb6b2da4451c7470cd4c7d39379ff08548fc5feb9ac20beab55d457ec37711ef",
+    "artifacts/encoder-detail/sticks3-hub-after-encoder-detach.png": "e18fa25658e0e1f718a3a8235bba23034ec99aa03311906b6f45f600276b2b0b",
+    "artifacts/geometry-check.json": "13a2d8c6cb7d58733ffd4e553e4daee6732b87bf211f209d878b7616a6b3db7a",
+    "artifacts/detail-check.json": "04867d01d64f3dfb28ca1e4a111d4ca06cbc41691a710dc5552e4b73b654edd5",
+    "artifacts/dynamics-check.json": "2d2add292f879535698725d8260dd16df1ee5b1b333c8ecc3aaddd6222e4ed19",
+    "artifacts/grove-cable-check.json": "2b6b8e2ac4ad43f9fdfdbdcf417945bb6c93fc93975a4ce9f4a5b31f35154e7c",
+    "artifacts/host-grove-assembly-check.json": "cef56e8bd14d27692e76aa34ae60b5edfa89829a19bc62df80402d8412597c2a",
+    "artifacts/encoder-detail/browser-review.json": "884f29183204c12ba91c6c850b0bc5de07ddd84e4478964276a69eb9f1863772",
+    "artifacts/encoder-detail/browser.cjs": "1a1d21ad83bbcd5da8282e0e61eb08d3452cc6c115ae1406cc15d35cd1cac392",
+    "artifacts/encoder-detail/BROWSER-HARNESS.md": "4f3827630b7eff3d2e06c1442b84be59c826682abd35f18375cfa9b984d4444e",
+    "artifacts/encoder-detail/visual-review.json": "32d315ea61d4716ae4fd14e12ae48a9fb4c5d9298ff71e16b27dcb72c5033ec0",
+    "artifacts/encoder-detail/code-review.json": "652d6230455219959b9a282c06d7145bbc30a576d4aaafb51ede62d5c172c1b5",
+    "artifacts/encoder-detail/browser-prepared-independent.json": "7fa005d88ca4b543f40368efaa72f7973e689055698ed75c221192be237206df",
+    "artifacts/encoder-detail/browser-tool-freeze.json": "947278d35c730a2acbfcbe23fb5e3882955bc601b67a32eadf5e40c565295598",
+    "artifacts/encoder-detail/source-freeze-v5.json": "72c8b251775a87f7ed8f98b5976a4414ee8b294bce08c8533cbf8f63b798aba2",
+    "artifacts/encoder-detail/commands-v5.json": "3bec0576fcf62584a53eb6d83a20b69397eb23cf8b57df4506779b777fd171fe",
+    "artifacts/encoder-detail/independent-native-review.json": "3b72158a6d93564c4a631be0ea47c219f0ca85da7ee9a5f82e77a75c0d777f5d",
+    "artifacts/encoder-detail/commands/final-check.log": "30c6fae3ecea9705a95d917f18f477e876a1354af0e3b976fa19548e0a6aa0ef",
+    "artifacts/encoder-detail/commands/final-v5-build.log": "b3dd06ef29b6b7250e85e76ee808bd165d871a38521de2949e70f4129c60fedf",
+    "artifacts/encoder-detail/commands/final-v5-status.log": "952a40921ab36041fcdb135009addb935996dd8e9da0540c2cdc2e95e2233bc6",
+    "LICENSE": "bd6afb822b82b478e8b0165cd5fbd107a7e30a371f1276052d2cafdd1a8b440b",
+    "THIRD_PARTY_NOTICES.md": "35c3eb6be0eb12e2657659a9183d390c28c29e153331723778f96679ec7bae0d",
+    "licenses/M5_Hardware-MIT.txt": "44611d917bece311f5c8eeffce83d8bf9e9ca3f815d262f694ff4a7996af50ea",
+    "licenses/sticks3-MIT.txt": "c8da71129b391d080a5bfdd4f192378b4289c82d463a173267af20eb800ef56a",
+    "licenses/three-MIT.txt": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+    "licenses/vite-LICENSE.md": "a22152baa1aef74402443008e767e7c689a524c0909d19b0431d97f5ab066a13",
+    "licenses/emulator-MIT.txt": "46e054dd27254243fa431abe8b3aa5a28e353e0ee71d5633833723afee83e5cb",
+    "licenses/sticks3-upstream-package.json": "d71cad3e987e79d38d8cda73c813dfb2bcd7fb039cf8233188410886407157a9",
+    "artifacts/stackchan-touch-led-check.json": "cd197a51e0dd841c656605fdec26e601df1f5f20e604660d872cd2e2a058ead7"
+  },
+  "privateFrozenInputManifest": {
+    "count": 1453,
+    "sha256": "32efc00469366f5e83907f6759e914e6ccc4fb91de255f0d86df28850fa128eb",
+    "scope": "Exact private input paths/hashes are hashed, not serialized; sourceCommit retains immutable originals."
+  },
+  "sourceAuditPublication": {
+    "path": "artifacts/encoder-detail/public/source-audit.json",
+    "requiredDuringAudit": false,
+    "presentDuringAudit": false,
+    "excludedFromReviewHashGroups": true,
+    "permittedBaseDiff": true,
+    "binding": "Audit binds frozen publicReviewSha256; publication separately binds frozen review SHA and copied audit SHA."
+  },
+  "issues": [],
+  "limits": [
+    "Three exact inherited license/metadata/generated-report byte matches are authorized only at their original fixed-baseline paths; the historical StackChan report is not new Encoder verification.",
+    "Raw byte exclusion cannot establish rights to every possible derivative; this batch allows only reviewed original native-stage media and curated canonical facts.",
+    "Historical fields in all 43 source-manifest product rows and all prior candidate batches remain unchanged; only the new Encoder Grove reviews and approved current source cursors change.",
+    "All 43 products remain modeled. No firmware execution, physical-device, electrical/optical or manufacturing-fit verification is implied."
+  ],
+  "changedInheritedGeneratedReports": [
+    {
+      "publicPathSha256": "8b91915f158c6543ca563f5d9e3ea5bd3ff553986d2ccd262bef236df1aec620",
+      "category": "inherited-generated-geometry-report"
+    },
+    {
+      "publicPathSha256": "09c209b38cb4e8905e7bf31022a183eda5c243862d45a144dccb8ff50dfdadc1",
+      "category": "inherited-generated-geometry-report"
+    },
+    {
+      "publicPathSha256": "c56e88448771fb3fc62366c9ef5b36858840cd552b213dc04d85eb42d8a83e12",
+      "category": "inherited-generated-geometry-report"
+    },
+    {
+      "publicPathSha256": "8be423fc1d260367b805e84a0c9b9ca74cd0995f10066f1657d19ac3481abd9f",
+      "category": "inherited-generated-geometry-report"
+    },
+    {
+      "publicPathSha256": "ccc7ef3024b66479658c32076227028afc33bf61e0824d9741d279d6cf273829",
+      "category": "inherited-generated-geometry-report"
+    },
+    {
+      "publicPathSha256": "ebc7d2e84e53d0ab9d5db34166676923b1a36ae6573e73340d0728ac6b74bbef",
+      "category": "inherited-generated-geometry-report"
+    },
+    {
+      "publicPathSha256": "e54357e5219e4bad47204e126be2153243d828960d84f9b5910585185a9b0201",
+      "category": "inherited-rs485-generated-geometry-report"
+    }
+  ]
+}

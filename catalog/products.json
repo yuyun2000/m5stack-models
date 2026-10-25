@@ -1680,7 +1680,7 @@
       "visualEnvelopeMm": [
         24,
         32,
-        25.4
+        25.38
       ],
       "cadEnvelopeMm": [
         24,
@@ -1698,7 +1698,9 @@
         "externalRuntime": "m5agent/m5stack-esp-emulator",
         "visualComponents": [
           "rotation",
-          "press"
+          "press",
+          "led0",
+          "led1"
         ]
       },
       "verification": {
@@ -1716,10 +1718,41 @@
         ]
       ],
       "limitations": [
-        "官方 CAD 装配壳体；局部器件、旋钮、按键表面依据官方照片构造，尚待逐面视觉检查",
-        "这里只提供视觉几何和接口，不实现电气、传感器数据或协议行为"
+        "官方CAD仅为选定的装配前/后壳；PCB、Ø10滚花帽、编码器支撑/盲孔、LED包体和Grove内部按照片/图纸重建。轴线按原collar环拟合，拟合精度不是实物公差。",
+        "grove原点由旧[0,-15.65,0]更正为[0,-15.65,-0.6] mm，Z为U135自身原生5.2 mm口高的中点；直接固定旧工程坐标的布局应重读真实Port变换。内槽、焊腿、板厚和隐藏尺寸仍为外观推导。",
+        "led0/led1是正视左/右的视觉地址，电气LED1/LED2顺序未确认。官方视频确认下端白壳漫透；局部emissive响应不代表光学/材料或电气仿真，按压和旋转不自动点灯。",
+        "0.35 mm按压、照片配准LED位置、隐藏PCB轮廓/支撑和帽轴深度是外观估计；独立03报告为指定源码快照的有限实体排除/支持验证，不证明制造配合、额定行程、硬件或光学性能。",
+        "stage保持modeled；本批源码/构建绑定的七视图、双灯、压放与接线专项证据见artifacts/encoder-detail/public/review.json，未作为整款verified晋级。贴纸等待用户原始文件。"
       ],
-      "nextAction": "优先逐面检查装配闭合与真实开口；贴纸等待用户原文件"
+      "nextAction": "继续核准隐藏件尺寸、额定按程与壳体透光外观；本批数字模型专项证据见artifacts/encoder-detail/public/review.json，贴纸等待原文件。",
+      "visualControls": [
+        {
+          "id": "rotation",
+          "kind": "joint",
+          "continuous": true,
+          "axis": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "id": "press",
+          "kind": "button",
+          "visualMotion": "rigid-knob-and-shaft",
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "travelMm": 0.35,
+          "rangeEvidence": "Photo-derived visual travel; fitted encoder subtype/rated pretravel/overtravel unconfirmed"
+        }
+      ],
+      "externalLeds": [
+        "led0",
+        "led1"
+      ]
     },
     {
       "id": "thermal",
