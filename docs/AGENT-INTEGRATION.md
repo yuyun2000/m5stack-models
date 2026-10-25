@@ -195,6 +195,18 @@ host.get('grove/rgb-1').set({on: false});
 
 `invisible:true` 保留器件透镜及外部状态接口，但不产生人眼可见的 emissive 或 glow；demo 灯位菜单只列可见光器件。StickS3 的 `irTx` 继续接受原路径命令和状态查询，标记为不可见红外，不再渲染成红色指示灯。本库不模拟红外传输、波束或手机相机效果。
 
+Heart U029 的 `red-led` 表示 MAX30100 靠 Grove 一端的可见红光孔，默认熄灭、颜色固定为`#ff2820`；任意`color`请求都保留红色，只接受外部开关／亮度。远 Grove 的圆窗是被动 SENSOR，不会跟着亮；IR 不绘为可见光。包体和两光心来自原厂p27，安装朝向由官方照片的非对称外形对应推导；绝对座深、透镜剖面、材质和视觉亮度仍为推导，不声明光学仿真。
+
+```js
+const heart = await loadModel('heart');
+heart.handle({type:'led', target:'red-led', brightness:.6});
+heart.handle({type:'led', target:'red-led', on:false});
+host.port('grove').attach(await loadGroveModule('heart', {cableLength:70}));
+host.handle({type:'led', target:'grove/red-led', brightness:.4});
+```
+
+demo会发现该灯位并禁用任意选色。调用方应明确给定亮度；本库不根据产品名、心率、测量模式、上电或挂接自动闪烁。原厂资料明确区分RED 660 nm与IR 880 nm，并说明纯心率模式的红灯关闭；不得从模型可见红光推断传感数据。
+
 Color U009 的两颗白色补光使用`fill-left`、`fill-right`，默认颜色`#ffffff`、亮度0。两个路径标识左右可见封装，D1/D2与左右的对应尚未确认。官方原理图中两灯各经1K电阻接同一VCC，没有独立GPIO控制；按实际供电状态展示时，由调用方给两灯相同亮度。统一`Led`接口的`color`只是绘图参数，硬件仍为白灯，不据此声明RGB能力。本库不随挂接、上电或测量自动点灯；封装深度和光扩散为外观估计。
 
 ```js
@@ -236,6 +248,24 @@ host.handle({type:'detach', target:'grove/terminal'}); // 保留 Relay 与 Grove
 `loadModel('relay', {terminalPlug:true})` 也可直接显示已插状态。demo 的“固定3P座／安装螺钉插头”配置可切换两种装配；已插状态显示三个螺钉角度控件。`screw-1`…`screw-3` 对应 COM／NO／NC，只转螺钉头，不接受非零 rpm，不实现螺纹升降、夹紧力、负载线路或触点通断。±180° 是查看范围，额定机械范围未确认。
 
 `nominalMm` 保留官方规格表的24×48×8 mm基壳口径；`visualEnvelopeMm` 为官方机械图的24×48×14.6 mm外露装配，后螺钉另突出约0.055 mm。PCB、端子壁厚、内部接触深度和插头夹线结构为照片推导，接口类型名只用于本库几何配对，不证明不同厂家的实物通配。
+
+## RS485 U034 的4P端子附件
+
+U034 默认仍为空固定座。官方包装中随附的可拆4P端子由该产品入口导出的`TerminalPlug`提供，类型为`ht3.96-4p`；从左到右物理标签是B、A、12V+、12V-。可用`terminalPlug:true`直接装上，或单独挂接。它与Relay的3P附件分别导入，按各自连接器类型匹配。
+
+```js
+import {TerminalPlug as Rs485TerminalPlug} from 'm5stack-models.js/units/rs485';
+const rs485 = await loadModel('rs485');
+rs485.port('terminal').attach(new Rs485TerminalPlug());
+rs485.handle({type:'joint',target:'terminal/screw-4',angleDeg:45});
+rs485.handle({type:'detach',target:'terminal'});
+
+host.port('grove').attach(await loadGroveModule('rs485', {terminalPlug:true}));
+host.handle({type:'joint',target:'grove/terminal/screw-2',angleDeg:-60});
+host.handle({type:'detach',target:'grove/terminal'}); // 保留Unit与Grove线缆
+```
+
+`screw-1`…`screw-4`随附件挂接出现，分别对应四个标签，只旋转真实工具槽螺钉头。固定座、接触孔、线入口和夹笼保持实体深度；不执行螺纹升降、夹线、RS485/UART、供电或电气连接。demo的固定4P座／安装4P螺钉插头配置可切换装配；±180°为查看范围，不是额定机械限位。官方未提供该附件工程图，局部尺寸与插入深度为照片推导，HT3.96-4P名称不证明厂牌通配。
 
 ## 渲染与生命周期
 

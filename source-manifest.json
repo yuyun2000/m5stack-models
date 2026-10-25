@@ -1,6 +1,6 @@
 {
   "preparedAt": "2026-10-25T13:20:33.030Z",
-  "sourceCommit": "b8b4746102b8bc6e098cbff1c2fd7d36cc3b1b7e",
+  "sourceCommit": "f76d4579f59c3ba5995d8d8eafd59b965af41173",
   "scope": "Factual provenance only; no official reference binaries or MCP source text are included.",
   "upstreams": {
     "sticks3": {
@@ -3205,8 +3205,174 @@
         {
           "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/heart/heart_06.webp",
           "sha256": "31caca6ebb5c5d22fd6040280f40295061527cd4104fb9a8bb4aecafdcfa9c59"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/MAX30100.pdf",
+          "sha256": "6ed78f87f53157870b1950a35ca1cc5263531cbb605ea6bee93d4e832abc556d"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/716/Unit_Heart.pdf",
+          "sha256": "ea1bba9cdd586454dea8581f34ed771c8c5fc274cb49dd5e6774c3b7f61b4329"
+        },
+        {
+          "url": "https://docs.m5stack.com/en/unit/heart",
+          "sha256": "034777170ce487b8f7c154e1a318c333c402645f0ff6a5f9b3232ff00329a89d"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/heart/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+          "sha256": "d15518e7ffed66d2fc517e3de208ce30670bddc401b7a41e591ab4d9cfaf43c8"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/1_5c160a63-f9e0-414b-92bc-64f2647bc0d5.jpg?v=1669171558",
+          "sha256": "9bf9b563b61840c19e9baaa2105a8cce125c02c3b9d2a2acf678e9cde09e5bd9"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/5_aae11303-6c44-4ea4-8f18-53e1f3d187aa.jpg?v=1669171558",
+          "sha256": "7f19fccd3664be5e04f965970070bce8d9309678a4ea80a7db148d09cb6f58d2"
         }
-      ]
+      ],
+      "incrementalHeartRs485Detail": {
+        "checkedAt": "2026-10-25T21:07:10.591360+00:00",
+        "sourceCommit": "f76d4579f59c3ba5995d8d8eafd59b965af41173",
+        "sources": [
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/MAX30100.pdf",
+            "sha256": "6ed78f87f53157870b1950a35ca1cc5263531cbb605ea6bee93d4e832abc556d",
+            "bytes": 895825,
+            "fetchedAt": "2026-10-25T20:41:39.704512+00:00",
+            "role": "original-official-package-datasheet"
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/716/Unit_Heart.pdf",
+            "sha256": "ea1bba9cdd586454dea8581f34ed771c8c5fc274cb49dd5e6774c3b7f61b4329",
+            "bytes": 131008,
+            "fetchedAt": "2026-10-25T20:41:40.529942+00:00",
+            "role": "original-official-unit-schematic"
+          },
+          {
+            "url": "https://docs.m5stack.com/en/unit/heart",
+            "sha256": "034777170ce487b8f7c154e1a318c333c402645f0ff6a5f9b3232ff00329a89d",
+            "bytes": 130049,
+            "fetchedAt": "2026-10-25T20:41:37.167607+00:00",
+            "role": "original-official-product-page"
+          },
+          {
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/heart/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+            "sha256": "d15518e7ffed66d2fc517e3de208ce30670bddc401b7a41e591ab4d9cfaf43c8",
+            "bytes": 476647,
+            "fetchedAt": "2026-10-25T20:47:12.193313+00:00",
+            "role": "original-official-dimension-image"
+          },
+          {
+            "url": "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/1_5c160a63-f9e0-414b-92bc-64f2647bc0d5.jpg?v=1669171558",
+            "sha256": "9bf9b563b61840c19e9baaa2105a8cce125c02c3b9d2a2acf678e9cde09e5bd9",
+            "bytes": 31543,
+            "fetchedAt": "2026-10-25T20:46:35.920475+00:00",
+            "role": "original-official-product-image"
+          },
+          {
+            "url": "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/5_aae11303-6c44-4ea4-8f18-53e1f3d187aa.jpg?v=1669171558",
+            "sha256": "7f19fccd3664be5e04f965970070bce8d9309678a4ea80a7db148d09cb6f58d2",
+            "bytes": 27885,
+            "fetchedAt": "2026-10-25T20:46:37.709948+00:00",
+            "role": "original-official-product-image"
+          }
+        ],
+        "facts": {
+          "source": "MAX30100.pdf page 27; drawing 21-0880 rev B; all dimensions mm",
+          "bodyNominal": [
+            2.8,
+            5.6,
+            1.2
+          ],
+          "bodyLimits": {
+            "width": [
+              2.7,
+              2.9
+            ],
+            "length": [
+              5.5,
+              5.7
+            ],
+            "height": [
+              1.1,
+              1.3
+            ]
+          },
+          "sensorCenterOffsetY": 1.7,
+          "emitterCenterOffsetY": -1.96,
+          "centerSeparation": 3.66,
+          "centerDatum": "The horizontal mid-length datum line of the complete 5.6 mm package outline, also visible in side/bottom view. The boxed 1.70 dimension runs from SENSOR circle center to this datum; boxed 1.96 runs from this datum to LED lens center. The drawing is marked not to scale, so dimensions, not raster measurement, define offsets.",
+          "sensorOpticalRingsDiameters": [
+            1.27,
+            0.95
+          ],
+          "emitterOuterRoundedBaseWidthHeight": [
+            1.32,
+            1
+          ],
+          "centralRoundedFeatureWidthHeight": [
+            2.14,
+            1.19
+          ],
+          "centralFeatureOffsetY": -0.51,
+          "limits": "The exact internal red/IR die geometry and individual positions are absent. These dimensions describe external optical/package contours."
+        },
+        "implementation": {
+          "entry": "src/units/heart/optical-assembly.js",
+          "sensorCenterY": 9.700472784,
+          "emitterCenterY": 6.040472784,
+          "seatZ": 2.76,
+          "lensSeatZ": 3.72,
+          "lensHeight": 0.24,
+          "color": "#ff2820",
+          "depthProfileMaterialsAndBrightness": "Visual inference; no observed powered state or manufacturing fit. Existing PCB and source shell unchanged.",
+          "defaultBrightness": 0,
+          "component": "red-led",
+          "noHumanVisibleIr": true,
+          "noHeartbeatOrMeasurementSimulation": true,
+          "centralFeature": {
+            "widthHeight": [
+              2.14,
+              1.19
+            ],
+            "offsetY": -0.51,
+            "reliefHeight": 0.03,
+            "reliefHeightAndMaterial": "visual inference"
+          },
+          "glow": "Product-local aperture-aligned additive disk at z3.962 with real depth test and FrontSide, replacing the default camera-facing Sprite which could cross the shell at grazing view; gradient texture retains core ownership.",
+          "materialRefinement": "Native GPU review found glossy dark package surfaces washed toward grey under the existing studio environment. Only body/central feature/LED foot use lower specular plastic; actual lenses retain gloss. Color/roughness/specular are inferred from official unpowered photos, not measured optical properties."
+        },
+        "explicitInferences": "Optical identity and longitudinal orientation are sufficiently established by the asymmetric package geometry in official U029 photographs matched to the original Maxim package top view and labeled pin configuration. Emitter is the near-Grove aperture (smaller local +Y); its present authored y=7.1 is not its correct geometric center. Use the existing canonical CAD opening center and documented package offsets.",
+        "limits": [
+          "Orientation is an image-geometry inference from two official photos plus manufacturer top-view identity; no board pin1 assembly CAD or powered red close-up was found.",
+          "The physical red die position inside the shared LED aperture remains unknown, so do not locate a guessed separate RED die within it.",
+          "Absolute installed package Z and lens protrusion heights/materials remain inferred.",
+          "No measured hardware intensity/pulse behavior or firmware mode is modeled. Default red off; brightness/on state must be externally requested.",
+          "No sensor, firmware, electrical, or IR-visible simulation is authorized by this research.",
+          "Sticker originals remain deferred; photographs are research references only and must not become model texture patches."
+        ],
+        "runtime": [
+          {
+            "path": "src/units/heart/index.js",
+            "sourceSha256": "60fc0fb0a136f1a4bccfd07224a0bc7b4a5710797663089c0514a83324e853cb",
+            "publicSha256": "507d8116e35b909538f5c34f5e7dc8158299908040d61e5bbc506cb774f11959"
+          },
+          {
+            "path": "src/units/heart/optical-assembly.js",
+            "sourceSha256": "cbdfb7080074f0d4e357a4d9a358be345b93fbc88c283ac4b1685afcacf9f82b",
+            "publicSha256": "cbdfb7080074f0d4e357a4d9a358be345b93fbc88c283ac4b1685afcacf9f82b"
+          },
+          {
+            "path": "scripts/check-heart-optics.mjs",
+            "sourceSha256": "33276ba68bfe8339e8d6f2052edcfcf390d5c79bf4aea6062143457f1782e472",
+            "publicSha256": "33276ba68bfe8339e8d6f2052edcfcf390d5c79bf4aea6062143457f1782e472"
+          }
+        ],
+        "privateProvenanceSha256": "410e6bc70d628eaf5efa6996700f662d4d52b5aaec938ac1cd6fde398841b5c4",
+        "privateEvidenceReportSha256": "48ea5a4c83aeee0f2e96a6c03b3738fc0b97edba19f210637149580665ec7bf9",
+        "scope": "Heart U029 optical assembly and RS485 U034 removable terminal detail, with external visual controls only. Preserve all 43 product identities and all historical public evidence."
+      }
     },
     {
       "id": "encoder",
@@ -3504,8 +3670,114 @@
         {
           "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rs485/rs485_06.webp",
           "sha256": "f27ea4b3d17c7160c580fa4b67aab1de23bee45bccfdec9eb74cfe4dcb5089b9"
+        },
+        {
+          "url": "https://docs.m5stack.com/en/unit/rs485",
+          "sha256": "af2eea5281e2fb69eeab76d9c5214072630f002896cc3579c536314c20da4311"
+        },
+        {
+          "url": "https://docs.m5stack.com/en/unit/iso485",
+          "sha256": "3de0d5cab2c36ebb167e4cc8dbab53e0532a7973c1384ba84f605018d68074c7"
         }
-      ]
+      ],
+      "incrementalHeartRs485Detail": {
+        "checkedAt": "2026-10-25T21:07:10.591360+00:00",
+        "sourceCommit": "f76d4579f59c3ba5995d8d8eafd59b965af41173",
+        "sources": [
+          {
+            "url": "https://docs.m5stack.com/en/unit/rs485",
+            "sha256": "af2eea5281e2fb69eeab76d9c5214072630f002896cc3579c536314c20da4311",
+            "bytes": 128665,
+            "fetchedAt": "2026-10-25T20:46:34.093810+00:00",
+            "role": "original-official-product-page"
+          },
+          {
+            "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rs485/rs485_01.webp",
+            "sha256": "332f1be343aec646f54d873bbc543f6c14cc084504f33d1deb906c83b7c9366b",
+            "bytes": 113498,
+            "fetchedAt": "2026-10-25T20:47:16.489096+00:00",
+            "role": "original-official-product-image"
+          },
+          {
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/837/U034-package.jpg",
+            "sha256": "95abe25ff753f4cc91138e5c50e8b178f5bac84d923967b57940f07b7f4a8e27",
+            "bytes": 103674,
+            "fetchedAt": "2026-10-25T20:47:17.087913+00:00",
+            "role": "original-official-package-image"
+          },
+          {
+            "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rs485/rs485_05.webp",
+            "sha256": "0c3ca4f8aabfd6a77ade5e2c9de1b8b98d67c6811919b75539bd8745a73d7351",
+            "bytes": 30940,
+            "fetchedAt": "2026-10-25T20:47:18.746274+00:00",
+            "role": "original-official-product-image"
+          },
+          {
+            "url": "https://docs.m5stack.com/en/unit/iso485",
+            "sha256": "3de0d5cab2c36ebb167e4cc8dbab53e0532a7973c1384ba84f605018d68074c7",
+            "bytes": 133896,
+            "fetchedAt": "2026-10-25T20:47:19.943329+00:00",
+            "role": "original-official-variant-boundary"
+          }
+        ],
+        "facts": {
+          "pageSKU": "U034",
+          "includedAccessory": "1 x HT3.96-4P Terminal",
+          "appearanceEvidence": "rs485_01.webp shows a separate orange four-screw plug; U034-package.jpg independently shows that plug packed beside the Unit and cable.",
+          "pitchEvidence": "HT3.96-4P official name, four equally spaced contacts in photographs and the source schematic J1 HDR_4P_3.96; existing pin centres -5.94/-1.98/1.98/5.94 mm retained.",
+          "fixedAssembly": "The page dimensions 32 x 24 x 10.2 mm and linked U020_Model_Size.png describe the fixed-socket product without the separate terminal plug. The filename is not used as SKU evidence.",
+          "variantBoundary": "U034 page itself lists MAX485/SP485EEN; these chip alternatives do not justify an unrelated housing. RS485-ISO resolves separately to SKU U094. Roller485 U182 is a separate catalogue model.",
+          "unknowns": [
+            "No manufacturer-specific 4P plug mechanical drawing or part number is confirmed beyond HT3.96-4P.",
+            "Plug wall/depth/clamp/screw dimensions, screw neutral phase, and assembled accessory envelope are visual estimates.",
+            "No thread pitch, tightening range, axial screw travel, clamping force or physical fit tolerance is asserted.",
+            "Connector-family equality is an appearance mating convention, not electrical compatibility."
+          ]
+        },
+        "implementation": "HT3.96-4P official name, four equally spaced contacts in photographs and the source schematic J1 HDR_4P_3.96; existing pin centres -5.94/-1.98/1.98/5.94 mm retained.",
+        "explicitInferences": [
+          "No manufacturer-specific 4P plug mechanical drawing or part number is confirmed beyond HT3.96-4P.",
+          "Plug wall/depth/clamp/screw dimensions, screw neutral phase, and assembled accessory envelope are visual estimates.",
+          "No thread pitch, tightening range, axial screw travel, clamping force or physical fit tolerance is asserted.",
+          "Connector-family equality is an appearance mating convention, not electrical compatibility."
+        ],
+        "limits": [
+          "No manufacturer-specific 4P plug mechanical drawing or part number is confirmed beyond HT3.96-4P.",
+          "Plug wall/depth/clamp/screw dimensions, screw neutral phase, and assembled accessory envelope are visual estimates.",
+          "No thread pitch, tightening range, axial screw travel, clamping force or physical fit tolerance is asserted.",
+          "Connector-family equality is an appearance mating convention, not electrical compatibility."
+        ],
+        "runtime": [
+          {
+            "path": "src/units/rs485/index.js",
+            "sourceSha256": "cf470351b3628db25839ffb45159e94a7110406637a9d4afa1a6e4c153ab0c5c",
+            "publicSha256": "cf470351b3628db25839ffb45159e94a7110406637a9d4afa1a6e4c153ab0c5c"
+          },
+          {
+            "path": "src/units/rs485/assembly.js",
+            "sourceSha256": "7e05e29ee3effcf1ec595ca2420ca56cd07e9fe0d0a548ca2eb710d9fe5fc213",
+            "publicSha256": "7e05e29ee3effcf1ec595ca2420ca56cd07e9fe0d0a548ca2eb710d9fe5fc213"
+          },
+          {
+            "path": "src/units/rs485/dimensions.js",
+            "sourceSha256": "071e6890c8d2f7e26e4b4d6d56bf5c5e26b42f9daa58cd7e65ab942961f9e154",
+            "publicSha256": "071e6890c8d2f7e26e4b4d6d56bf5c5e26b42f9daa58cd7e65ab942961f9e154"
+          },
+          {
+            "path": "src/units/rs485/TerminalPlug.js",
+            "sourceSha256": "c88893747b391bcffcd6c23141c682417de711d2342f844f9d582d579ecb0f1b",
+            "publicSha256": "c88893747b391bcffcd6c23141c682417de711d2342f844f9d582d579ecb0f1b"
+          },
+          {
+            "path": "scripts/check-rs485-terminal.mjs",
+            "sourceSha256": "9a25f8610b401e7b5b7a6ec31dc665fe3879a01f6d34c603873fa2d3f80bcdd4",
+            "publicSha256": "9a25f8610b401e7b5b7a6ec31dc665fe3879a01f6d34c603873fa2d3f80bcdd4"
+          }
+        ],
+        "privateProvenanceSha256": "2e47a9b80e0802085fb48d595d2e37313ba1f7d4820dc44d406a6a475448a778",
+        "privateEvidenceReportSha256": "48ea5a4c83aeee0f2e96a6c03b3738fc0b97edba19f210637149580665ec7bf9",
+        "scope": "Heart U029 optical assembly and RS485 U034 removable terminal detail, with external visual controls only. Preserve all 43 product identities and all historical public evidence."
+      }
     },
     {
       "id": "buzzer",

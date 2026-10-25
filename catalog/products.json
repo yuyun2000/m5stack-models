@@ -1658,10 +1658,11 @@
         ]
       ],
       "limitations": [
-        "官方 CAD 装配壳体；局部器件、旋钮、按键表面依据官方照片构造，尚待逐面视觉检查",
-        "这里只提供视觉几何和接口，不实现电气、传感器数据或协议行为"
+        "原厂MAX30100包体nominal2.8×5.6×1.2 mm、两光心偏移+1.70/−1.96 mm；朝向由官方照片的圆窗/方底非对称外形对应推导，未取得板级pin-1装配图或通电特写。",
+        "原CAD光学槽2.9×5.70 mm保持；官方尺寸图写5.75 mm高，两版差0.05 mm保留。绝对Z座位、分层透镜高度、材质与渲染亮度为外观推导。",
+        "red-led固定可见红光、默认关闭、只接受外部亮度；不模拟测量、心率、模式/寄存器、电流、IR可见效果。贴纸继续等用户原文件。"
       ],
-      "nextAction": "优先逐面检查装配闭合与真实开口；贴纸等待用户原文件"
+      "nextAction": "核对光学封装前后斜视及外驱off/on/off与嵌套Grove路径；继续确认绝对座深/光学剖面，贴纸等待原文件。"
     },
     {
       "id": "encoder",
@@ -2094,7 +2095,10 @@
       "research": "source-manifest.json",
       "integration": {
         "moduleExport": "GroveModule",
-        "externalRuntime": "m5agent/m5stack-esp-emulator"
+        "externalRuntime": "m5agent/m5stack-esp-emulator",
+        "accessoryExports": [
+          "TerminalPlug"
+        ]
       },
       "verification": {
         "geometry": null,
@@ -2169,11 +2173,25 @@
         }
       ],
       "limitations": [
-        "对应U034官方CAD仅为8 mm外壳，按官方图补HT3.96-4P固定座至10.2 mm总厚；未把可拆螺钉插头误当固定座",
-        "PCB具有上下接口避让；接插件内壁、针脚/引线尺寸依据官方照片推导，非制造CAD",
-        "UART/RS485与电源行为不在此实现；全部贴纸延期"
+        "对应U034官方8 mm原壳及HT3.96-4P固定座，默认空座与既有10.2 mm名义总厚保持；后螺钉另突出约0.045 mm。",
+        "官方包装明确随附可拆4P螺钉端子；terminalPlug:true或terminal.attach(new TerminalPlug())显示附件，terminal/screw-1..4仅接受外驱可见角度，B/A/12V+/12V-为物理标签。",
+        "附件局部舌深、壁厚、夹笼、螺钉与装配包围为照片推导，HT3.96-4P类型名不证明不同厂牌通配；不模拟螺纹升降、夹线、UART/RS485、供电或电气行为。全部贴纸延期。"
       ],
-      "nextAction": "七视图与4针固定端子深腔已复核；继续精修照片推导壁厚及针脚，贴纸等待原文件"
+      "nextAction": "核对空座/插头两配置七视图、四螺钉外驱转角/复位及Grove连接；继续校准附件照片推导尺寸。",
+      "configurations": [
+        {
+          "id": "socket",
+          "name": "固定4P座",
+          "options": {}
+        },
+        {
+          "id": "plug",
+          "name": "安装4P螺钉插头",
+          "options": {
+            "terminalPlug": true
+          }
+        }
+      ]
     },
     {
       "id": "buzzer",

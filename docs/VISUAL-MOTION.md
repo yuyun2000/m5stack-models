@@ -64,6 +64,7 @@ type JointState = {
 | 8Encoder `rotation-1`…`rotation-8` | 八个独立带肋空心旋钮绕+Z转 | 连续外驱；各自 `press-1`…`press-8` 沿局部−Z压放0.35 mm，行程为外观估计 |
 | Scroll `rotation` | 官方原始滚轮与轴绕+X转 | 连续外驱；`press` 将轮与轴端插入件作为共同按压组，沿机身−Z压0.25 mm，隐藏支撑机理未确认 |
 | Relay `terminal/screw-1`…`terminal/screw-3` | 可拆3P插头中各自带工具槽的螺钉头绕局部轴转 | 仅位置式角度；demo ±180°不代表额定限位，不模拟螺纹升降、夹紧或触点通断；拆除`terminal`后这些路径随附件移除 |
+| RS485 U034 `terminal/screw-1`…`terminal/screw-4` | 随附4P插头中B/A/12V+/12V-各螺钉头绕局部+Z转 | 默认空座，`terminalPlug:true`或产品`TerminalPlug`附件安装后出现；只外驱角度，不模拟螺纹、夹线或通信/供电 |
 
 StackChan前侧Power板属于pitch，下端Adapter属于yaw，七根实体线束的两端跟随各自装配坐标。后部真实开放，底座USB保持固定。隐藏舵机包装和线束路线为外观近似，不声明实物制造配合。
 

@@ -1,0 +1,707 @@
+{
+  "checkedAt": "2026-10-25T21:20:57.738Z",
+  "product": "heart",
+  "sku": "U029",
+  "baseUrl": "http://127.0.0.1:5188",
+  "actions": [
+    {
+      "case": "Heart exposes one default-off fixed-red emitter",
+      "pass": true
+    },
+    {
+      "case": "Seven native assembled Heart views rendered",
+      "pass": true
+    },
+    {
+      "case": "Actual Heart front red appearance",
+      "pass": true,
+      "state": {
+        "color": "#ff2820",
+        "brightness": 0.65
+      },
+      "pixelDifference": {
+        "changedPixels": 224,
+        "maxChannelDifference": 227,
+        "bbox": [
+          561,
+          183,
+          577,
+          199
+        ]
+      }
+    },
+    {
+      "case": "Heart front off returns exact RGB",
+      "pass": true,
+      "pixelDifference": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Actual Heart iso red appearance",
+      "pass": true,
+      "state": {
+        "color": "#ff2820",
+        "brightness": 0.65
+      },
+      "pixelDifference": {
+        "changedPixels": 92,
+        "maxChannelDifference": 226,
+        "bbox": [
+          529,
+          226,
+          538,
+          237
+        ]
+      }
+    },
+    {
+      "case": "Heart iso off returns exact RGB",
+      "pass": true,
+      "pixelDifference": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Actual Heart back red appearance",
+      "pass": true,
+      "state": {
+        "color": "#ff2820",
+        "brightness": 0.65
+      },
+      "pixelDifference": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Heart back off returns exact RGB",
+      "pass": true,
+      "pixelDifference": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0,
+        "bbox": null
+      }
+    },
+    {
+      "case": "Real wheel close-up shows aperture red output",
+      "pass": true,
+      "pixelDifference": {
+        "changedPixels": 673,
+        "maxChannelDifference": 227,
+        "bbox": [
+          555,
+          119,
+          583,
+          148
+        ]
+      }
+    },
+    {
+      "case": "Close-up off restores exact RGB",
+      "pass": true
+    },
+    {
+      "case": "Real StickS3 HUB Heart nested LED path works",
+      "pass": true,
+      "state": {
+        "buttons": {
+          "btnA": {
+            "pressed": false
+          },
+          "btnB": {
+            "pressed": false
+          },
+          "btnPWR": {
+            "pressed": false
+          }
+        },
+        "joints": {},
+        "leds": {
+          "grove/grove-1/red-led": {
+            "color": "#ff2820",
+            "brightness": 0.4
+          },
+          "irTx": {
+            "color": "#ff2020",
+            "brightness": 0
+          }
+        },
+        "cable": {
+          "slack": 16,
+          "bend": [
+            0,
+            0,
+            -1
+          ],
+          "faceDistanceMm": 85,
+          "curveLengthMm": 84.1920788423786,
+          "source": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "outward": [
+              0,
+              1,
+              0
+            ]
+          },
+          "target": {
+            "position": [
+              0,
+              85,
+              0
+            ],
+            "quaternion": [
+              0,
+              0,
+              1,
+              6.123233995736766e-17
+            ],
+            "outward": [
+              -1.2246467991473532e-16,
+              -1,
+              0
+            ]
+          },
+          "wireCount": 4,
+          "plugCount": 2,
+          "space": "module-port"
+        }
+      }
+    },
+    {
+      "case": "Nested emitter externally switches off",
+      "pass": true
+    },
+    {
+      "case": "Nested Heart emitter produces actual visible native pixels",
+      "pass": true,
+      "view": "left",
+      "pixelDifference": {
+        "changedPixels": 11,
+        "maxChannelDifference": 194,
+        "bbox": [
+          708,
+          430,
+          711,
+          433
+        ]
+      },
+      "target": "grove/grove-1/red-led"
+    },
+    {
+      "case": "Selective detach removes Heart and retains HUB",
+      "pass": true
+    },
+    {
+      "case": "Frozen built runtime unchanged during captures",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "views/heart-front.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 17628,
+      "range": 248,
+      "rgbSha256": "77a5c2c4e15fe4d0b47b2d0db081468cbce2c334005451c5210064b836e0f4b2",
+      "pngSha256": "98b96b8d12f43495d9be4ec26b91ce123da0527f755c4d43b2928fd718098afd",
+      "pass": true
+    },
+    {
+      "file": "views/heart-back.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 7721,
+      "range": 240,
+      "rgbSha256": "3b2fd4db2debb93bfa5c6cf8c574edd0f9f2848b188a95c71a317b7aa3c4d64f",
+      "pngSha256": "099f4b844f1130f2f3471b06c58f52fb4e427377a5287e46a2b8ce6ea2a45b6e",
+      "pass": true
+    },
+    {
+      "file": "views/heart-left.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 8506,
+      "range": 120,
+      "rgbSha256": "76353f124fe260a1b019591079086ff9df86461cc2d4f3e68e630af43a52c6b6",
+      "pngSha256": "72c3995a5d4c1c73b8a3ac5aabb8aaa482b9dc75eb901ace68ba96e476555d62",
+      "pass": true
+    },
+    {
+      "file": "views/heart-right.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 8225,
+      "range": 113,
+      "rgbSha256": "92fb8d5d43930e4410d48e02b7fe98823d6301e34b9603fc42f894dc9a962cf8",
+      "pngSha256": "03310dfd159009a1c0973699528e23ecff19b008f6ed0bed173af81640a16c5f",
+      "pass": true
+    },
+    {
+      "file": "views/heart-top.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 7570,
+      "range": 109,
+      "rgbSha256": "21fe31ce29973bbd3a7eb633862e7086e66e92b14185d50141328626bd39d37a",
+      "pngSha256": "9713e5a5760d4884366099fbfb6fe7dc4b3aa20afd831b889bd6cb480786e126",
+      "pass": true
+    },
+    {
+      "file": "views/heart-bottom.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 15219,
+      "range": 230,
+      "rgbSha256": "cdddb608227b1c6f956850d418938b86155a3b53c6fea23e89907710804fcbf9",
+      "pngSha256": "86fc5d54348d343ce70f454444c512a78842bc4d90f013570676d6008dc5430e",
+      "pass": true
+    },
+    {
+      "file": "views/heart-iso.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 46744,
+      "range": 254,
+      "rgbSha256": "516346b845849c80658abdd59e98d8084764f20136bab2cccd004e120f035395",
+      "pngSha256": "48eedfdfd02df24ff4aab45a42bb805729b9fc105d7228712edab6eb26804089",
+      "pass": true
+    },
+    {
+      "file": "views/heart-front-off.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 17628,
+      "range": 248,
+      "rgbSha256": "77a5c2c4e15fe4d0b47b2d0db081468cbce2c334005451c5210064b836e0f4b2",
+      "pngSha256": "98b96b8d12f43495d9be4ec26b91ce123da0527f755c4d43b2928fd718098afd",
+      "pass": true
+    },
+    {
+      "file": "views/heart-front-on.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 17630,
+      "range": 248,
+      "rgbSha256": "d7586c71f03fd89434546c3cb100d5999b70b045e040e3e25409006cb7bd9287",
+      "pngSha256": "1b3908c1a9cce7fb054eb8774b8eee409218200c99501e313fa9145dd304ed1e",
+      "pass": true
+    },
+    {
+      "file": "views/heart-front-reset.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 17628,
+      "range": 248,
+      "rgbSha256": "77a5c2c4e15fe4d0b47b2d0db081468cbce2c334005451c5210064b836e0f4b2",
+      "pngSha256": "98b96b8d12f43495d9be4ec26b91ce123da0527f755c4d43b2928fd718098afd",
+      "pass": true
+    },
+    {
+      "file": "views/heart-iso-off.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 46744,
+      "range": 254,
+      "rgbSha256": "516346b845849c80658abdd59e98d8084764f20136bab2cccd004e120f035395",
+      "pngSha256": "48eedfdfd02df24ff4aab45a42bb805729b9fc105d7228712edab6eb26804089",
+      "pass": true
+    },
+    {
+      "file": "views/heart-iso-on.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 46744,
+      "range": 254,
+      "rgbSha256": "41563e924af414c161f5aea06144b508a514c21eed770f6abd203a5b6567e29c",
+      "pngSha256": "b82250f96a30d01f9e3340313e9009459e2654ba9b78714c6f200d92d3654493",
+      "pass": true
+    },
+    {
+      "file": "views/heart-iso-reset.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 46744,
+      "range": 254,
+      "rgbSha256": "516346b845849c80658abdd59e98d8084764f20136bab2cccd004e120f035395",
+      "pngSha256": "48eedfdfd02df24ff4aab45a42bb805729b9fc105d7228712edab6eb26804089",
+      "pass": true
+    },
+    {
+      "file": "views/heart-back-off.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 7721,
+      "range": 240,
+      "rgbSha256": "3b2fd4db2debb93bfa5c6cf8c574edd0f9f2848b188a95c71a317b7aa3c4d64f",
+      "pngSha256": "099f4b844f1130f2f3471b06c58f52fb4e427377a5287e46a2b8ce6ea2a45b6e",
+      "pass": true
+    },
+    {
+      "file": "views/heart-back-on.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 7721,
+      "range": 240,
+      "rgbSha256": "3b2fd4db2debb93bfa5c6cf8c574edd0f9f2848b188a95c71a317b7aa3c4d64f",
+      "pngSha256": "099f4b844f1130f2f3471b06c58f52fb4e427377a5287e46a2b8ce6ea2a45b6e",
+      "pass": true
+    },
+    {
+      "file": "views/heart-back-reset.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 7721,
+      "range": 240,
+      "rgbSha256": "3b2fd4db2debb93bfa5c6cf8c574edd0f9f2848b188a95c71a317b7aa3c4d64f",
+      "pngSha256": "099f4b844f1130f2f3471b06c58f52fb4e427377a5287e46a2b8ce6ea2a45b6e",
+      "pass": true
+    },
+    {
+      "file": "views/heart-close-off.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 32370,
+      "range": 251,
+      "rgbSha256": "2dedd52ca61c68483ab624e0a935fc1227de09d9e4680d107247a3998424c803",
+      "pngSha256": "b554cf59f387212e1cfcbe67d749a4f553a2df693c05640b96f7018686424127",
+      "pass": true
+    },
+    {
+      "file": "views/heart-close-on.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 32379,
+      "range": 251,
+      "rgbSha256": "4506c7944d12903bc25f0bcf9e4e8c9c3e60c6da24352ea863bcf9abc73fe53e",
+      "pngSha256": "1e29b9645e335510db6cb4fc7e9bc3aed20078fb183828c10e006191fc3d1624",
+      "pass": true
+    },
+    {
+      "file": "views/heart-close-reset.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 32370,
+      "range": 251,
+      "rgbSha256": "2dedd52ca61c68483ab624e0a935fc1227de09d9e4680d107247a3998424c803",
+      "pngSha256": "b554cf59f387212e1cfcbe67d749a4f553a2df693c05640b96f7018686424127",
+      "pass": true
+    },
+    {
+      "file": "views/sticks3-hub-heart-on.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 13871,
+      "range": 249,
+      "rgbSha256": "2abb5be02b0f847bdf8c1e2d4e53178e948ad1feff56ca8554063e601c3f295a",
+      "pngSha256": "098c626996fcbb150f2275c2ce234aa4826069a9371c9a73734ca3069eafeeb5",
+      "pass": true
+    },
+    {
+      "file": "views/sticks3-hub-heart-off.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 13871,
+      "range": 249,
+      "rgbSha256": "2abb5be02b0f847bdf8c1e2d4e53178e948ad1feff56ca8554063e601c3f295a",
+      "pngSha256": "098c626996fcbb150f2275c2ce234aa4826069a9371c9a73734ca3069eafeeb5",
+      "pass": true
+    },
+    {
+      "file": "views/sticks3-hub-heart-visible-on.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 9319,
+      "range": 252,
+      "rgbSha256": "c5ace3b91ab7a0c71600a41359371957eaf2434ad01f28139f7c0fe39eacf1a1",
+      "pngSha256": "e24d380540f39a7628c070bf9b88565726219e75c25667a0074eb47af1ed0526",
+      "pass": true
+    },
+    {
+      "file": "views/sticks3-hub-heart-visible-off.png",
+      "width": 1138,
+      "height": 534,
+      "foregroundPixels": 9319,
+      "range": 252,
+      "rgbSha256": "0942dda07a05a0415bf7865cdc056dcf37e079e0062969a3d1f4787020f7ef10",
+      "pngSha256": "b5b65905826c6d5d2f3cecf5556871cb90cddb8fd17956b081ced3fe39f50b8c",
+      "pass": true
+    }
+  ],
+  "logs": [
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x114000cfc00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x114000cfc00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x114000cfc00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x114000cfc00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
+    }
+  ],
+  "httpFailures": [],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:5188/assets/index-DUfIhopB.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/index-BmzgznEX.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/heart-BU_M13OZ.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/core-DCCvToNd.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/Led-DqvleyO_.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/parts-CFZGcK5F.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/grove-cable-g4p79_jh.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/CADUnit-CCsyVOEY.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/cad-CxcoC9_V.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/artwork-BJ3M0TkN.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/index-DUfIhopB.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/index-BmzgznEX.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/core-DCCvToNd.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/sticks3-MtV15Fs9.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/Led-DqvleyO_.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/parts-CFZGcK5F.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/connectors-e9WSJw8i.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/cad-CxcoC9_V.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/actuators-nMA-PFv5.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/grove-cable-g4p79_jh.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/parts-BwSAKIG2.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/hub-B1WXr6qn.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/artwork-BJ3M0TkN.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/CADUnit-CCsyVOEY.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5188/assets/heart-BU_M13OZ.js",
+      "status": 200
+    }
+  ],
+  "runtimeHashesBefore": {
+    "dist/assets/8encoder-BwmECoH0.js": "e18aab509082b1117498c27b494ac6260da10716c8e2775f3c5399bfc280d379",
+    "dist/assets/CADUnit-CCsyVOEY.js": "89b31cb4ddfa7f8a189e4ac9ffe15be94401320098f7507458a8353f484f8aa9",
+    "dist/assets/ClassicUnit-DT3yVfHt.js": "58d44976a8144bebd0c803440668aeb5986a09fc3e4f6495515b917426bf7148",
+    "dist/assets/CoreS3-BHCkDmMz.js": "ac6877599351fe29425d4564d98ebf8ce5099e2236ba05aa0b7895b85955a9fb",
+    "dist/assets/Led-DqvleyO_.js": "f4796669b961a410f5d086ac375b601fda5cd83035ab213926346fcd0984751b",
+    "dist/assets/PaperDisplay-CX1uMnoP.js": "23a41c35e9efe6c15b2b0326997a55893ecfcc5dc42ec860c0e0e0a5e3863feb",
+    "dist/assets/VisualJoint-B5spUpwL.js": "5622ab093210b7df0aecfd7dde2615b4e248a0e6c93deaea7ac819a576c9c2e5",
+    "dist/assets/actuators-nMA-PFv5.js": "d4856100e4325d972be26a1843a3dba5967136597961a0d5f92d0e38faceffa6",
+    "dist/assets/angle-DKdgksse.js": "fdf737db8254793bda8ff442b6b28dfecdaa6769e0cbc4801476d002c81e2c9b",
+    "dist/assets/artwork-BJ3M0TkN.js": "65fa7bdce104ddb679a8f19cf773d62fa0b3f9c51383b50017db07696d788d34",
+    "dist/assets/atoms3r-BG78MWEh.js": "c0df3156f19957495ae65f835532121746caed50d39a74eb56567219845f777e",
+    "dist/assets/button-D1lPjJzL.js": "ec6e577de67e6da4720da5dfa649e8021e57a974081b247d2ee991431df6317c",
+    "dist/assets/buzzer-DqCUVfL8.js": "dd7f38e4a73b47bb326996a25970091fe8205e6d8047f545cf98727645ced588",
+    "dist/assets/cad-CxcoC9_V.js": "c721a74485ce727cf845c494a7c8d5bf6d3b78c74038be2d7eeace3033654a33",
+    "dist/assets/cardkb-CRfCn_x7.js": "b90677b64f3200553986a813452cbf382fb24cbbd1af8f228ac2400ba5a734f7",
+    "dist/assets/cardputer-adv-Bt2MxvVb.js": "7e160654da24ddd3ce56a783945f47d9c1dd5180df9ba5ded75771cc17677429",
+    "dist/assets/cardputer-zero-DdMUPI_t.js": "71849659bcd77daa294dfe839a420d3ea37b6159679f5a05c208833ad3b98f04",
+    "dist/assets/color-bjdu8NVH.js": "d4306a5f0687dea193bc947348f45a37b92338df26dab177a123e4ff41ce92f0",
+    "dist/assets/connectors-e9WSJw8i.js": "826943fba7e76e2235f9fd4361c1e857dd3c3ac74ecd01e77ec05432c91446c0",
+    "dist/assets/core-DCCvToNd.js": "44ddf6ed6038f2b89de87a405e225415ce44b7726a33a861f7751c74f56966de",
+    "dist/assets/core2-CraEPtuT.js": "8cd934fa58463afd00fa5d23c6bd0e21dd501e7de517a0865f5d907f445a520d",
+    "dist/assets/cores3-BY3tpL5o.js": "802c22a64655e57e1ea6195f5d047722e5b9145e5756bc4226853d6b76c97ce0",
+    "dist/assets/dual-button-BxSkNkyI.js": "8c9da07567538e593282812044584d04f4f386a0cee3bd2507c7985b99eff99a",
+    "dist/assets/encoder-BPexkQ8v.js": "01a690e424810b4242fff83292d103cef8e2ad67a15cc0f54bca256d75f4ac4d",
+    "dist/assets/env-iii-DnhPXhyt.js": "dbc5e83d6d80bd3469975ae08200adf6aa26d3121a975a00fb8d95bdcebaf528",
+    "dist/assets/fan-DA1Bgj5e.js": "d4bc7737c04a633777e8e9b0dc2b56586e624ecfdf94526033c72e96ff2f50d1",
+    "dist/assets/grove-cable-g4p79_jh.js": "e9704573fa682ce5a10d126b6eb6353b78d6d62ebdb923477a174ee362d997f0",
+    "dist/assets/heart-BU_M13OZ.js": "5e4abcf76757cda44f26336967fb151650085dfef7be1377d9b5d263a09c3bae",
+    "dist/assets/hub-B1WXr6qn.js": "e3e3617836bde0233e91606f211e8e76c9fb8bad3f5365743989d1877b485f2d",
+    "dist/assets/index-BmzgznEX.js": "7aead6add6e9528a012353d3bb23ff2b482ca568cb9d14b90de2ed6c797f0645",
+    "dist/assets/index-DUfIhopB.css": "60ba438373a62e53f96fc2321990239236fc203cea8b3a8d305a78dc7fff29e5",
+    "dist/assets/ir-BV_-91AT.js": "0a10c2dd21d6b9de65166ad458559a07c818408ff27098110daab36d63895f91",
+    "dist/assets/joystick-v11-DPQ6RSR9.js": "485cf6d7a6bbb83536bed14df1dd1e237dccccb3e58d569e9c8bd879aae86833",
+    "dist/assets/key-BQVPs-M2.js": "3e212aa60aafb44af36aa2022adc45fef86c5f8218271304b1fb1d6012b1b12d",
+    "dist/assets/light-CcFIo7bj.js": "d6b8706a7a57ca2a0d111249a339413ed1770e608ec0d4d2a58aba83d007f284",
+    "dist/assets/limit-BjOp7klj.js": "891617400c1d85bfbc3b663ead5a4c95a03ea51210ea9415d0e6164cdbdfc4ad",
+    "dist/assets/nanoc6-Dlihd-IT.js": "72f3c5e55a464370ebec45c46316bd9e31407f68d25149ba37e917adf4206624",
+    "dist/assets/ncir-DcdFCD-X.js": "982faeb7b7834fa7d0a2047cb64db6ad8902bfa295e1664bc6ac6182accd89c5",
+    "dist/assets/nesso-n1-iwG2QIXf.js": "d6a734027ac6980da3eb225a2af9fbe263bf5a3e1b0f99ba079db0a3fb91cc68",
+    "dist/assets/papercolor-3_ov6XHD.js": "7bb056999cf1bdaba6efb248dfce3ecd64ab76679b84e0ec166807fd1cc62fbf",
+    "dist/assets/papermono-CXE01ZxY.js": "a113af78ba1c1cb924a68782465f6f3e41b17bab39d8cb8a0e4395c2ef6d8472",
+    "dist/assets/parts-BwSAKIG2.js": "9f7d700b8478fb023bf17855d779a49e4a115b7a77f1886e8487a282298ef577",
+    "dist/assets/parts-CFZGcK5F.js": "62dd75558d68bd7d74ae67e86dacfc8dbfa8c809c4e869c5a1fa635bef68341b",
+    "dist/assets/pir-DUPx_fYG.js": "75efb933ec455de9cce50690ef8dfc38f347db8847165480d1f23158d4b203fa",
+    "dist/assets/relay-BhVqcFLo.js": "945f2b860074f1c0959b7e526a44fe7222328391b3c6cf28f7c9364a62710c2d",
+    "dist/assets/rfid2-yEU5qHvS.js": "3fd36f1e0ec4c7e9607d03d192cb47724ede31e468e1d086f96b42da0dbd5794",
+    "dist/assets/rgb-DeoWqKYV.js": "d538cc22048c6357d9ed744c216ce0b0d358beb700e0cece192fa0a9cd4f5f4f",
+    "dist/assets/roller485-Bi4-Ush-.js": "f48fc15bab86e217273e8d25649fa11e6467f66e17218726e8d08a39ffee1a0d",
+    "dist/assets/rs485-CD69-kAu.js": "0694efdc64bcfee5c0302802e455b5e41322fef0894dcd5d28f1fe3e1b163ffa",
+    "dist/assets/scroll-v_ar_MBY.js": "dbda28a32a50bf2b2a948ab56e0c7eab2db74c426e910d4f2b4ed22dc3ef7803",
+    "dist/assets/stackchan-B0EGCzMn.js": "02cf08b5f2d4d3ccce867fb128b7abb2905858ef86e23f936cf7305a6ffe7ac1",
+    "dist/assets/stamplc-CI5AGcB9.js": "d26236f157ffa82950d9848f45b72fbf37a7521429e9c250b362822e72330ef6",
+    "dist/assets/sticks3-MtV15Fs9.js": "9fbfa546f7cdb1161cab989b5876a3151f9f69af038e46dbc117184288b65238",
+    "dist/assets/stopwatch-B3I65HKq.js": "d0664ccc2e71e2f0fb8b34e8a203a6a8224a3ce293dbe0f648582dcf8228c99e",
+    "dist/assets/tab5-CYHcbkNv.js": "1a62261a1c64f12fc16efc14c2a06aeb26c0b76b6d793fe028d8c09149bc0d9c",
+    "dist/assets/thermal-C6bLH9os.js": "a4956b5fb1032716f16c951fab911971e9a31feccfc6720c29012b3577ec1bb5",
+    "dist/assets/tof-ZVk5hyLW.js": "14cbf5d1ba0e8f79589615f2b1aef55cce34d99a7a96e282432a604e4ccc0f10",
+    "dist/assets/tvoc-DQtv4HQ9.js": "6a00908ba3d1bac65f45f88167e2ef8f562830b8a24dc5a6b82c14d4646b2aff",
+    "dist/assets/ultrasonic-i2c-BVgUFit1.js": "a853b9239aeba6816b035f7b35b127361ebb55d4e913de1a386dd0d0b7fa5fa8",
+    "dist/data/catalog.json": "a824e35f5285967b1f3ab094245b7f34411b17fc5f2e848037eac18e9756bb38",
+    "dist/index.html": "6ec8c4ab5da81fe1c026980adfb5f890c2b6d82ce12e06464efe8c7fe698a2df"
+  },
+  "sourceHashes": {
+    "src/units/heart/index.js": "507d8116e35b909538f5c34f5e7dc8158299908040d61e5bbc506cb774f11959",
+    "src/units/heart/optical-assembly.js": "cbdfb7080074f0d4e357a4d9a358be345b93fbc88c283ac4b1685afcacf9f82b",
+    "src/units/heart/geometry-data.js": "9a27726220a67e2a43c230e082ec4039973f2d5260f396e3788a0a5fdf964dfe",
+    "demo/dynamics.js": "b330fff877189c4faef9605a19a3860470c76ad86e200b37a102752db6d39f43",
+    "catalog/products.json": "a824e35f5285967b1f3ab094245b7f34411b17fc5f2e848037eac18e9756bb38"
+  },
+  "mediaScope": "Native WebGL only. No official photograph pixels in captures.",
+  "applicationRequestFailures": [],
+  "runtimeHashesAfter": {
+    "dist/assets/8encoder-BwmECoH0.js": "e18aab509082b1117498c27b494ac6260da10716c8e2775f3c5399bfc280d379",
+    "dist/assets/CADUnit-CCsyVOEY.js": "89b31cb4ddfa7f8a189e4ac9ffe15be94401320098f7507458a8353f484f8aa9",
+    "dist/assets/ClassicUnit-DT3yVfHt.js": "58d44976a8144bebd0c803440668aeb5986a09fc3e4f6495515b917426bf7148",
+    "dist/assets/CoreS3-BHCkDmMz.js": "ac6877599351fe29425d4564d98ebf8ce5099e2236ba05aa0b7895b85955a9fb",
+    "dist/assets/Led-DqvleyO_.js": "f4796669b961a410f5d086ac375b601fda5cd83035ab213926346fcd0984751b",
+    "dist/assets/PaperDisplay-CX1uMnoP.js": "23a41c35e9efe6c15b2b0326997a55893ecfcc5dc42ec860c0e0e0a5e3863feb",
+    "dist/assets/VisualJoint-B5spUpwL.js": "5622ab093210b7df0aecfd7dde2615b4e248a0e6c93deaea7ac819a576c9c2e5",
+    "dist/assets/actuators-nMA-PFv5.js": "d4856100e4325d972be26a1843a3dba5967136597961a0d5f92d0e38faceffa6",
+    "dist/assets/angle-DKdgksse.js": "fdf737db8254793bda8ff442b6b28dfecdaa6769e0cbc4801476d002c81e2c9b",
+    "dist/assets/artwork-BJ3M0TkN.js": "65fa7bdce104ddb679a8f19cf773d62fa0b3f9c51383b50017db07696d788d34",
+    "dist/assets/atoms3r-BG78MWEh.js": "c0df3156f19957495ae65f835532121746caed50d39a74eb56567219845f777e",
+    "dist/assets/button-D1lPjJzL.js": "ec6e577de67e6da4720da5dfa649e8021e57a974081b247d2ee991431df6317c",
+    "dist/assets/buzzer-DqCUVfL8.js": "dd7f38e4a73b47bb326996a25970091fe8205e6d8047f545cf98727645ced588",
+    "dist/assets/cad-CxcoC9_V.js": "c721a74485ce727cf845c494a7c8d5bf6d3b78c74038be2d7eeace3033654a33",
+    "dist/assets/cardkb-CRfCn_x7.js": "b90677b64f3200553986a813452cbf382fb24cbbd1af8f228ac2400ba5a734f7",
+    "dist/assets/cardputer-adv-Bt2MxvVb.js": "7e160654da24ddd3ce56a783945f47d9c1dd5180df9ba5ded75771cc17677429",
+    "dist/assets/cardputer-zero-DdMUPI_t.js": "71849659bcd77daa294dfe839a420d3ea37b6159679f5a05c208833ad3b98f04",
+    "dist/assets/color-bjdu8NVH.js": "d4306a5f0687dea193bc947348f45a37b92338df26dab177a123e4ff41ce92f0",
+    "dist/assets/connectors-e9WSJw8i.js": "826943fba7e76e2235f9fd4361c1e857dd3c3ac74ecd01e77ec05432c91446c0",
+    "dist/assets/core-DCCvToNd.js": "44ddf6ed6038f2b89de87a405e225415ce44b7726a33a861f7751c74f56966de",
+    "dist/assets/core2-CraEPtuT.js": "8cd934fa58463afd00fa5d23c6bd0e21dd501e7de517a0865f5d907f445a520d",
+    "dist/assets/cores3-BY3tpL5o.js": "802c22a64655e57e1ea6195f5d047722e5b9145e5756bc4226853d6b76c97ce0",
+    "dist/assets/dual-button-BxSkNkyI.js": "8c9da07567538e593282812044584d04f4f386a0cee3bd2507c7985b99eff99a",
+    "dist/assets/encoder-BPexkQ8v.js": "01a690e424810b4242fff83292d103cef8e2ad67a15cc0f54bca256d75f4ac4d",
+    "dist/assets/env-iii-DnhPXhyt.js": "dbc5e83d6d80bd3469975ae08200adf6aa26d3121a975a00fb8d95bdcebaf528",
+    "dist/assets/fan-DA1Bgj5e.js": "d4bc7737c04a633777e8e9b0dc2b56586e624ecfdf94526033c72e96ff2f50d1",
+    "dist/assets/grove-cable-g4p79_jh.js": "e9704573fa682ce5a10d126b6eb6353b78d6d62ebdb923477a174ee362d997f0",
+    "dist/assets/heart-BU_M13OZ.js": "5e4abcf76757cda44f26336967fb151650085dfef7be1377d9b5d263a09c3bae",
+    "dist/assets/hub-B1WXr6qn.js": "e3e3617836bde0233e91606f211e8e76c9fb8bad3f5365743989d1877b485f2d",
+    "dist/assets/index-BmzgznEX.js": "7aead6add6e9528a012353d3bb23ff2b482ca568cb9d14b90de2ed6c797f0645",
+    "dist/assets/index-DUfIhopB.css": "60ba438373a62e53f96fc2321990239236fc203cea8b3a8d305a78dc7fff29e5",
+    "dist/assets/ir-BV_-91AT.js": "0a10c2dd21d6b9de65166ad458559a07c818408ff27098110daab36d63895f91",
+    "dist/assets/joystick-v11-DPQ6RSR9.js": "485cf6d7a6bbb83536bed14df1dd1e237dccccb3e58d569e9c8bd879aae86833",
+    "dist/assets/key-BQVPs-M2.js": "3e212aa60aafb44af36aa2022adc45fef86c5f8218271304b1fb1d6012b1b12d",
+    "dist/assets/light-CcFIo7bj.js": "d6b8706a7a57ca2a0d111249a339413ed1770e608ec0d4d2a58aba83d007f284",
+    "dist/assets/limit-BjOp7klj.js": "891617400c1d85bfbc3b663ead5a4c95a03ea51210ea9415d0e6164cdbdfc4ad",
+    "dist/assets/nanoc6-Dlihd-IT.js": "72f3c5e55a464370ebec45c46316bd9e31407f68d25149ba37e917adf4206624",
+    "dist/assets/ncir-DcdFCD-X.js": "982faeb7b7834fa7d0a2047cb64db6ad8902bfa295e1664bc6ac6182accd89c5",
+    "dist/assets/nesso-n1-iwG2QIXf.js": "d6a734027ac6980da3eb225a2af9fbe263bf5a3e1b0f99ba079db0a3fb91cc68",
+    "dist/assets/papercolor-3_ov6XHD.js": "7bb056999cf1bdaba6efb248dfce3ecd64ab76679b84e0ec166807fd1cc62fbf",
+    "dist/assets/papermono-CXE01ZxY.js": "a113af78ba1c1cb924a68782465f6f3e41b17bab39d8cb8a0e4395c2ef6d8472",
+    "dist/assets/parts-BwSAKIG2.js": "9f7d700b8478fb023bf17855d779a49e4a115b7a77f1886e8487a282298ef577",
+    "dist/assets/parts-CFZGcK5F.js": "62dd75558d68bd7d74ae67e86dacfc8dbfa8c809c4e869c5a1fa635bef68341b",
+    "dist/assets/pir-DUPx_fYG.js": "75efb933ec455de9cce50690ef8dfc38f347db8847165480d1f23158d4b203fa",
+    "dist/assets/relay-BhVqcFLo.js": "945f2b860074f1c0959b7e526a44fe7222328391b3c6cf28f7c9364a62710c2d",
+    "dist/assets/rfid2-yEU5qHvS.js": "3fd36f1e0ec4c7e9607d03d192cb47724ede31e468e1d086f96b42da0dbd5794",
+    "dist/assets/rgb-DeoWqKYV.js": "d538cc22048c6357d9ed744c216ce0b0d358beb700e0cece192fa0a9cd4f5f4f",
+    "dist/assets/roller485-Bi4-Ush-.js": "f48fc15bab86e217273e8d25649fa11e6467f66e17218726e8d08a39ffee1a0d",
+    "dist/assets/rs485-CD69-kAu.js": "0694efdc64bcfee5c0302802e455b5e41322fef0894dcd5d28f1fe3e1b163ffa",
+    "dist/assets/scroll-v_ar_MBY.js": "dbda28a32a50bf2b2a948ab56e0c7eab2db74c426e910d4f2b4ed22dc3ef7803",
+    "dist/assets/stackchan-B0EGCzMn.js": "02cf08b5f2d4d3ccce867fb128b7abb2905858ef86e23f936cf7305a6ffe7ac1",
+    "dist/assets/stamplc-CI5AGcB9.js": "d26236f157ffa82950d9848f45b72fbf37a7521429e9c250b362822e72330ef6",
+    "dist/assets/sticks3-MtV15Fs9.js": "9fbfa546f7cdb1161cab989b5876a3151f9f69af038e46dbc117184288b65238",
+    "dist/assets/stopwatch-B3I65HKq.js": "d0664ccc2e71e2f0fb8b34e8a203a6a8224a3ce293dbe0f648582dcf8228c99e",
+    "dist/assets/tab5-CYHcbkNv.js": "1a62261a1c64f12fc16efc14c2a06aeb26c0b76b6d793fe028d8c09149bc0d9c",
+    "dist/assets/thermal-C6bLH9os.js": "a4956b5fb1032716f16c951fab911971e9a31feccfc6720c29012b3577ec1bb5",
+    "dist/assets/tof-ZVk5hyLW.js": "14cbf5d1ba0e8f79589615f2b1aef55cce34d99a7a96e282432a604e4ccc0f10",
+    "dist/assets/tvoc-DQtv4HQ9.js": "6a00908ba3d1bac65f45f88167e2ef8f562830b8a24dc5a6b82c14d4646b2aff",
+    "dist/assets/ultrasonic-i2c-BVgUFit1.js": "a853b9239aeba6816b035f7b35b127361ebb55d4e913de1a386dd0d0b7fa5fa8",
+    "dist/data/catalog.json": "a824e35f5285967b1f3ab094245b7f34411b17fc5f2e848037eac18e9756bb38",
+    "dist/index.html": "6ec8c4ab5da81fe1c026980adfb5f890c2b6d82ce12e06464efe8c7fe698a2df"
+  }
+}

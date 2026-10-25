@@ -1,7 +1,65 @@
 {
-  "checkedAt": "2026-10-25T20:29:55.151Z",
+  "checkedAt": "2026-10-25T21:20:18.346Z",
   "scope": "Actual control movement and externally driven visual kinematics; no hardware/runtime validation",
   "checks": [
+    {
+      "script": "scripts/check-heart-optics.mjs",
+      "status": "pass",
+      "apertureRays": 40,
+      "emitterRays": 9,
+      "sourceClearanceSamples": 1839,
+      "nestedCommands": 2,
+      "defaultOff": true,
+      "exactPhysicalGeometry": true,
+      "colorMode": "fixed-red",
+      "scope": "Real U029 optical package, original slot visibility/finite source clearance, external red-only output and nested Grove path. Installed Z/profile/material and brightness remain visual inferences; no measurement, human-visible IR, physical optical or manufacturing proof."
+    },
+    {
+      "script": "scripts/check-rs485-terminal.mjs",
+      "status": "pass",
+      "sku": "U034",
+      "defaultTerminalPlug": false,
+      "defaultVisibleEnvelopeMm": [
+        24,
+        32.00000009536743,
+        10.24500009536743
+      ],
+      "plugVisibleEnvelopeMm": [
+        16.3,
+        18.799999905005098,
+        7.000000035911799
+      ],
+      "estimatedPlugBoundsMm": {
+        "min": [
+          -8.15,
+          8.44000009536743,
+          0.09999999985098848
+        ],
+        "max": [
+          8.15,
+          27.24000000037253,
+          7.100000035762787
+        ]
+      },
+      "pinPitchMm": 3.96,
+      "pinOrder": [
+        "B",
+        "A",
+        "12V+",
+        "12V-"
+      ],
+      "rays": 12,
+      "screwPoses": 20,
+      "clearance": {
+        "status": "pass",
+        "candidatePairs": 42,
+        "surfaceProbes": 13464,
+        "interiorGridProbes": 1134,
+        "directions": 3,
+        "scope": "Bidirectional vertex/triangle-centre samples and finite-volume overlap grids against actual fixed geometry plus added metal/plastic; no manufacturing fit or exhaustive CSG proof"
+      },
+      "scope": "Actual standalone / nested Module API and physical mesh checks only; accessory local dimensions inferred from official photographs, no RS485, UART, supply, wiring, thread pitch, clamp mechanics, firmware, hardware or browser proof"
+    },
     {
       "script": "scripts/check-unit-visible-functions.mjs",
       "status": "pass",
@@ -343,6 +401,10 @@
           "led": "fill-right"
         },
         {
+          "id": "heart",
+          "led": "red-led"
+        },
+        {
           "id": "encoder",
           "led": "led0"
         },
@@ -627,7 +689,7 @@
     },
     {
       "script": "scripts/check-roller485.mjs",
-      "checkedAt": "2026-10-25T20:28:21.657Z",
+      "checkedAt": "2026-10-25T21:18:46.562Z",
       "status": "pass",
       "sku": "U182",
       "variant": "standard-slip-ring",
@@ -887,7 +949,7 @@
     },
     {
       "script": "scripts/check-viewer-lifecycle.mjs",
-      "checkedAt": "2026-10-25T20:29:01.666Z",
+      "checkedAt": "2026-10-25T21:19:25.335Z",
       "status": "pass",
       "checks": [
         "same Viewer mount idempotence",
@@ -1491,7 +1553,7 @@
     },
     {
       "script": "scripts/check-8encoder.mjs",
-      "checkedAt": "2026-10-25T20:29:49.402Z",
+      "checkedAt": "2026-10-25T21:20:12.542Z",
       "status": "pass",
       "scope": "Appearance/geometry/input intent only; no encoder count, electrical or firmware simulation",
       "sku": "U153",

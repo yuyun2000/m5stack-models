@@ -1,14 +1,14 @@
 {
   "format": "m5stack-models-public-candidate-v1",
   "preparedAt": "2026-10-25T13:20:33.076Z",
-  "sourceCommit": "b8b4746102b8bc6e098cbff1c2fd7d36cc3b1b7e",
+  "sourceCommit": "f76d4579f59c3ba5995d8d8eafd59b965af41173",
   "sourceFiles": {
-    "catalog/products.json": "beb4109d6cd84f1c9fd86a071ecc1e33eff3b23e8e43d76f671b2cf5d4b30f0a",
+    "catalog/products.json": "3c24efda5e953f8180639065b9a140414f7a20e79f535836dcb669e0f087be55",
     "demo/dynamics.js": "b330fff877189c4faef9605a19a3860470c76ad86e200b37a102752db6d39f43",
     "demo/index.html": "64609124d4571e28a71244a0ca52708c21a8c1e53ed0681f0412b63e5ae336f8",
     "demo/main.js": "5944d3b12ef01ca144dee27c5f338a4a112d01ab216392c7851a481084a5c415",
     "demo/style.css": "fd4b9a97a2f36a59833dcb36cda44cebbd3f3cacb00e8cc38d489b57e689da0b",
-    "docs/AGENT-INTEGRATION.md": "d71de511f8ffc0f1804a3d143c0231db4b9a50dbe9f1719aa533c8b4456d7909",
+    "docs/AGENT-INTEGRATION.md": "ec26271d1b168c95872ee654f87e5cb19d751c5ab4fbc9013a5931eeec4e148a",
     "docs/GROVE-CABLE.md": "c7e7b06df4e89a47da3615656d79e0efb1505970991a1e60faaee8d05a71f181",
     "docs/INTEGRATION.md": "4ab4a47db6c9a058dba35cb1504942b4f31b90bb35b31490105717c0333e6a3a",
     "manage.sh": "391d649ade85981a46d82b87316407b3c9f2a9a9f06ecfc37b0f434aa4c4ba90",
@@ -20,7 +20,7 @@
     "scripts/check-cardputer-zero-assembly.mjs": "33093ac3b3fa4822f7d9e270273d1e593dadbde604a3e335fbbb647b791d12d8",
     "scripts/check-classic-unit-connectors.mjs": "6e1309d8154f21164370c44cdbcf05c6fc2f83ed3ffbf5e465df225f01e31262",
     "scripts/check-core2-assembly.mjs": "43039438b750aa365ff40160a13d85444e177a86005570633214194c2afa13fa",
-    "scripts/check-details.mjs": "d0951b30cccb1507acff79c3abbfc5909424f8955a654eff17e2ad82771924c1",
+    "scripts/check-details.mjs": "1d08c98c07b345330deddc37bc9a5edaf03f065d2cad77a389cc815796d4eef4",
     "scripts/check-device-actuators.mjs": "19525b59f813602802729ec885f15f74d058031d8c1348cb6bd2dad5e7d02feb",
     "scripts/check-grove-cable.mjs": "662840b87b83d1242ce1aef34517c83d3fa4a7b3fa12229ee46bf28fd02451fd",
     "scripts/check-header-sockets.mjs": "9e738a575426c4aa71b2bcad5315ccde84e0af4318c13ec72a7653fd9aab7e9a",
@@ -175,7 +175,7 @@
     "src/units/heart/cad-map.json": "4e36095a272b3178c1c358986860867384422d6326f9547b898f15e698139a5d",
     "src/units/heart/dimensions.js": "da2a83a0a2f1f5440d31e5fa9ae52f3605079bab8df7b2e20a88c34dfce8c99d",
     "src/units/heart/geometry-data.js": "40754b98725af24e21a6d17b719acba1b39442b912fff909632453d2864a1165",
-    "src/units/heart/index.js": "62912223ab62370cde7b396b0b83b552ceaaf97125b7648a541f5be8b308d3ad",
+    "src/units/heart/index.js": "60fc0fb0a136f1a4bccfd07224a0bc7b4a5710797663089c0514a83324e853cb",
     "src/units/hub/cad-map.json": "7fa4a931687d15f0be591c36c88c6cf70e9f59f738325e94066476ced0670a01",
     "src/units/hub/dimensions.js": "500f221ba1119f3f6303e8bf1db09b00e5d032adf51b0f5282506e7f26f96b16",
     "src/units/hub/geometry-data.js": "2254f452380bed1254cb1734932e77dae2a07a362207edacca30ad5c761f97f8",
@@ -210,11 +210,11 @@
     "src/units/rgb/dimensions.js": "76ac677124336dfc534088a086ad8a9614dcac767f56ec41bef2938912c7295f",
     "src/units/rgb/geometry-data.js": "e1a2777a1b191cdf83f171d41681a3d74aa75aeb57e8d89a33d28305f14b827b",
     "src/units/rgb/index.js": "e721b11ad4e4689cef1f6e90f2a4d65445d8fb0d7e5db9341b1b1cb5e1d46d84",
-    "src/units/rs485/assembly.js": "43d139972c01201185885e42a8118da7a503259261e8b9868b630df00a684b96",
+    "src/units/rs485/assembly.js": "7e05e29ee3effcf1ec595ca2420ca56cd07e9fe0d0a548ca2eb710d9fe5fc213",
     "src/units/rs485/cad-map.json": "ca1c1407fb6f76a09e2de45306ea5d2363539c9db2c24261c555c14f3e05bf21",
-    "src/units/rs485/dimensions.js": "a3c1b9820b29357ffb5af6e2cb9d6e9bc72d34211eb5a2cdcc329ceb526e7cf2",
+    "src/units/rs485/dimensions.js": "071e6890c8d2f7e26e4b4d6d56bf5c5e26b42f9daa58cd7e65ab942961f9e154",
     "src/units/rs485/geometry-data.js": "06db1bd6fa841ed5bfe4531cac25a17d5279f8dfa837737c55ed7c5ee450dae8",
-    "src/units/rs485/index.js": "f4751fad3bded4df84788e33019afcc1a1bbd463f1615bd2f9ea3bd0704d82c2",
+    "src/units/rs485/index.js": "cf470351b3628db25839ffb45159e94a7110406637a9d4afa1a6e4c153ab0c5c",
     "src/units/shared/CADUnit.js": "da529ab383652dcf9f48b70fafd613b6515a383087f6d1d4c64c144344722ca0",
     "src/units/shared/ClassicUnit.js": "84fe43abe71c1e9b7a2d9d42ee9d8f08c256ef9448847f98f84f9486db6464e3",
     "src/units/shared/parts.js": "e9f8ea00706c398082dd2334337b32df4ab0600474692669365313d21433e37d",
@@ -234,7 +234,7 @@
     "src/units/ultrasonic-i2c/index.js": "acfe37bc1f372a7100c3e8719c89b03a30fcdbd99cc126d5c5204923e1456f1a",
     "tokens.css": "80aac81f920541964c2ae22f4c3dac388f1c172cabd66495c9aa72f43bc42365",
     "vite.config.js": "6c133c2a30fbe83e4fb101914849efd75a8ce9f49a8659046068930237208936",
-    "docs/VISUAL-MOTION.md": "5b4aed653a37025ba3f1f971417efdfb9550e0490a2424060956a89043c83eb6",
+    "docs/VISUAL-MOTION.md": "b5f2c6c5062a40038def2f0e4bea4b6a932107a1e4e71c2f5784d35c0e7af035",
     "LICENSE": "bd6afb822b82b478e8b0165cd5fbd107a7e30a371f1276052d2cafdd1a8b440b",
     "src/devices/cardputer-adv/assembly.js": "bc7da4058b5017017861e41844a79c0069f8d2b991a1651b364bb0020b799f1b",
     "src/units/button/FlexPadButton.js": "dab4803edde0b97b275a46e8792b87da7471f7229cd744dc3a1929c49c742f35",
@@ -366,7 +366,63 @@
     "artifacts/host-button-coverage/sticks3-relay-back.png": "c952eb86e68363f087a12bee503552fb306dcf9daa839f2f40710dca8ead23f7",
     "artifacts/host-button-coverage/sticks3-relay-iso.png": "cfe6197af9628908d22dd75d9385b88edbf8852f28032eda3e0222cefe2857a7",
     "artifacts/host-button-coverage/stopwatch-controls.png": "a136487ae8ecbfae76e013bdcff6fb6e77a32d40db9226101dfbf88868ac7ab9",
-    "artifacts/host-button-coverage/tab5-controls.png": "1967f6ad3a0eab88a1a65d260203d51165d95132282ad6a3e5e90dc1ef7ea23c"
+    "artifacts/host-button-coverage/tab5-controls.png": "1967f6ad3a0eab88a1a65d260203d51165d95132282ad6a3e5e90dc1ef7ea23c",
+    "src/units/heart/optical-assembly.js": "cbdfb7080074f0d4e357a4d9a358be345b93fbc88c283ac4b1685afcacf9f82b",
+    "src/units/rs485/TerminalPlug.js": "c88893747b391bcffcd6c23141c682417de711d2342f844f9d582d579ecb0f1b",
+    "scripts/check-heart-optics.mjs": "33276ba68bfe8339e8d6f2052edcfcf390d5c79bf4aea6062143457f1782e472",
+    "scripts/check-rs485-terminal.mjs": "9a25f8610b401e7b5b7a6ec31dc665fe3879a01f6d34c603873fa2d3f80bcdd4",
+    "artifacts/heart-rs485-detail/heart-back-off.png": "099f4b844f1130f2f3471b06c58f52fb4e427377a5287e46a2b8ce6ea2a45b6e",
+    "artifacts/heart-rs485-detail/heart-back-on.png": "099f4b844f1130f2f3471b06c58f52fb4e427377a5287e46a2b8ce6ea2a45b6e",
+    "artifacts/heart-rs485-detail/heart-back-reset.png": "099f4b844f1130f2f3471b06c58f52fb4e427377a5287e46a2b8ce6ea2a45b6e",
+    "artifacts/heart-rs485-detail/heart-back.png": "099f4b844f1130f2f3471b06c58f52fb4e427377a5287e46a2b8ce6ea2a45b6e",
+    "artifacts/heart-rs485-detail/heart-bottom.png": "86fc5d54348d343ce70f454444c512a78842bc4d90f013570676d6008dc5430e",
+    "artifacts/heart-rs485-detail/heart-close-off.png": "b554cf59f387212e1cfcbe67d749a4f553a2df693c05640b96f7018686424127",
+    "artifacts/heart-rs485-detail/heart-close-on.png": "1e29b9645e335510db6cb4fc7e9bc3aed20078fb183828c10e006191fc3d1624",
+    "artifacts/heart-rs485-detail/heart-close-reset.png": "b554cf59f387212e1cfcbe67d749a4f553a2df693c05640b96f7018686424127",
+    "artifacts/heart-rs485-detail/heart-front-off.png": "98b96b8d12f43495d9be4ec26b91ce123da0527f755c4d43b2928fd718098afd",
+    "artifacts/heart-rs485-detail/heart-front-on.png": "1b3908c1a9cce7fb054eb8774b8eee409218200c99501e313fa9145dd304ed1e",
+    "artifacts/heart-rs485-detail/heart-front-reset.png": "98b96b8d12f43495d9be4ec26b91ce123da0527f755c4d43b2928fd718098afd",
+    "artifacts/heart-rs485-detail/heart-front.png": "98b96b8d12f43495d9be4ec26b91ce123da0527f755c4d43b2928fd718098afd",
+    "artifacts/heart-rs485-detail/heart-iso-off.png": "48eedfdfd02df24ff4aab45a42bb805729b9fc105d7228712edab6eb26804089",
+    "artifacts/heart-rs485-detail/heart-iso-on.png": "b82250f96a30d01f9e3340313e9009459e2654ba9b78714c6f200d92d3654493",
+    "artifacts/heart-rs485-detail/heart-iso-reset.png": "48eedfdfd02df24ff4aab45a42bb805729b9fc105d7228712edab6eb26804089",
+    "artifacts/heart-rs485-detail/heart-iso.png": "48eedfdfd02df24ff4aab45a42bb805729b9fc105d7228712edab6eb26804089",
+    "artifacts/heart-rs485-detail/heart-left.png": "72c3995a5d4c1c73b8a3ac5aabb8aaa482b9dc75eb901ace68ba96e476555d62",
+    "artifacts/heart-rs485-detail/heart-right.png": "03310dfd159009a1c0973699528e23ecff19b008f6ed0bed173af81640a16c5f",
+    "artifacts/heart-rs485-detail/heart-top.png": "9713e5a5760d4884366099fbfb6fe7dc4b3aa20afd831b889bd6cb480786e126",
+    "artifacts/heart-rs485-detail/overview.jpg": "e558d49ac5f91fee8a80aa5a0933197f1b9ff7d2a70d8112c680879b003ba121",
+    "artifacts/heart-rs485-detail/rs485-plugged-back.png": "1d3f3510b8594d17e364a7744f2f88883129d86814e578ade4beb29965a72749",
+    "artifacts/heart-rs485-detail/rs485-plugged-bottom.png": "9d0ccfe87c8152554f7a021494960140327e5b5673da2d299d6b250d8c68fb14",
+    "artifacts/heart-rs485-detail/rs485-plugged-front.png": "2069a90b05c202b993c7753693973868658ec65126a0eca54af59acce8c61815",
+    "artifacts/heart-rs485-detail/rs485-plugged-iso.png": "d82cc7e3914a04f160009cab418cb395028ffebbf0652fb85f378a43aea0a31a",
+    "artifacts/heart-rs485-detail/rs485-plugged-left.png": "142b2cab03208fe3bba3228f1cac224b168c8dbd9b1c830b1cbecebfd665651c",
+    "artifacts/heart-rs485-detail/rs485-plugged-right.png": "a2648571b71a37869608d19a13bd0c2ce8dad08a58669f740cd3afe0ee1b72bf",
+    "artifacts/heart-rs485-detail/rs485-plugged-top.png": "89b17aa005b8395983647fb44a49faced92bde33144779ca30a747ddcf9d2c02",
+    "artifacts/heart-rs485-detail/rs485-socket-back.png": "c4b2c8c9c25df7d1d3c802bcaad095ce1757448a96f4befcab04eae737f0e80a",
+    "artifacts/heart-rs485-detail/rs485-socket-bottom.png": "ca84f3df0c64eb296126f98729c7877bd6eea99a50e400b327fdcfdd7ef64d95",
+    "artifacts/heart-rs485-detail/rs485-socket-front.png": "78fe8aaa90736647204e2d2d84f6dcbd3047d21599a0fd7d3c6ee9a7b1053274",
+    "artifacts/heart-rs485-detail/rs485-socket-iso.png": "c878844fbd9ecdf3496945278b54351ddde48013fe4f9766a620042d130e550c",
+    "artifacts/heart-rs485-detail/rs485-socket-left.png": "531d02d25b11e4b9ead1d526f52f3189bed6eb1c64cc70a8926ff56d327ad9bc",
+    "artifacts/heart-rs485-detail/rs485-socket-restored.png": "c878844fbd9ecdf3496945278b54351ddde48013fe4f9766a620042d130e550c",
+    "artifacts/heart-rs485-detail/rs485-socket-right.png": "c95209a8d855758c5771c48bf5f843c2db16b183dfd48def0f3be2743f8bc22c",
+    "artifacts/heart-rs485-detail/rs485-socket-top.png": "d97dfd674be137672da210bfa5b68cdbe09174285055eb7455384ffb45fc7f8f",
+    "artifacts/heart-rs485-detail/screw-1-45.png": "c1df539d709807f35ae5ad2db161ef32a81d0c627eb3b5fd1e6da439563e83a2",
+    "artifacts/heart-rs485-detail/screw-1-reset.png": "2069a90b05c202b993c7753693973868658ec65126a0eca54af59acce8c61815",
+    "artifacts/heart-rs485-detail/screw-1-rest.png": "2069a90b05c202b993c7753693973868658ec65126a0eca54af59acce8c61815",
+    "artifacts/heart-rs485-detail/screw-2-45.png": "5a49abfb9042b17a256e1a814766bb9e41197d677fe0cfa46019817a5e22e45f",
+    "artifacts/heart-rs485-detail/screw-2-reset.png": "2069a90b05c202b993c7753693973868658ec65126a0eca54af59acce8c61815",
+    "artifacts/heart-rs485-detail/screw-2-rest.png": "2069a90b05c202b993c7753693973868658ec65126a0eca54af59acce8c61815",
+    "artifacts/heart-rs485-detail/screw-3-45.png": "e7185952955545523a4a575c7731618c7c1ecb5425ad71853737dd9e3645f161",
+    "artifacts/heart-rs485-detail/screw-3-reset.png": "2069a90b05c202b993c7753693973868658ec65126a0eca54af59acce8c61815",
+    "artifacts/heart-rs485-detail/screw-3-rest.png": "2069a90b05c202b993c7753693973868658ec65126a0eca54af59acce8c61815",
+    "artifacts/heart-rs485-detail/screw-4-45.png": "dea9bbf6542dacabbc34edc32a5473c16063fa7e4edd7f70f9a2031ef5e62ea0",
+    "artifacts/heart-rs485-detail/screw-4-reset.png": "2069a90b05c202b993c7753693973868658ec65126a0eca54af59acce8c61815",
+    "artifacts/heart-rs485-detail/screw-4-rest.png": "2069a90b05c202b993c7753693973868658ec65126a0eca54af59acce8c61815",
+    "artifacts/heart-rs485-detail/sticks3-hub-heart-off.png": "098c626996fcbb150f2275c2ce234aa4826069a9371c9a73734ca3069eafeeb5",
+    "artifacts/heart-rs485-detail/sticks3-hub-heart-on.png": "098c626996fcbb150f2275c2ce234aa4826069a9371c9a73734ca3069eafeeb5",
+    "artifacts/heart-rs485-detail/sticks3-rs485-back.png": "d01aeb0a2dcf120bacec4c4489bc0238fbf0bdb82d8a9037e27b20aa377e88b2",
+    "artifacts/heart-rs485-detail/sticks3-rs485-before-pose.png": "29472caae36b961d3b62a9c1e4083f56b968d21eaf37de74c7bc00be18f6d111",
+    "artifacts/heart-rs485-detail/sticks3-rs485-iso.png": "73f0430bbf171020f1c132139c8d92522df09b1ecc7c7f7e56c1c79c8b044879"
   },
   "transformations": [
     {
@@ -654,6 +710,30 @@
       "outputSha256": "02de609cbe2068938def0b4bb6bc4f08be65fd714a19451b1ede41ae4fca8fa2",
       "oldTextSha256": "d45b95beaafc88c14147fb3fbfb33cb22dd6d19ae62641f89a72bf4881b5fa59",
       "newTextSha256": "d2169e89dd2ecae5ff56c8f22625d38d449a76278403b785043727281bc53c5c"
+    },
+    {
+      "file": "src/units/heart/index.js",
+      "type": "preserve-public-base-heart-artwork-void0",
+      "edits": 1,
+      "privateBaselineCommit": "b318e69ddcd47809d85e793893de5cb94d571bb4",
+      "basePublicCommit": "234ace1718b2d4a36244c2b61b80f0f1e3b2542c",
+      "baselineInputSha256": "62912223ab62370cde7b396b0b83b552ceaaf97125b7648a541f5be8b308d3ad",
+      "publicBaseSha256": "c28fb3496d8ae2be49a0ab2e728ffa628bc25174e7b4b45dddeea7d28700d203",
+      "expressionSha256": "e2ab9dc8cf632a59e29b241f4c18ce5f27dea02e9a528217a9a85e6e4a5f2abb",
+      "inputSha256": "60fc0fb0a136f1a4bccfd07224a0bc7b4a5710797663089c0514a83324e853cb",
+      "outputSha256": "507d8116e35b909538f5c34f5e7dc8158299908040d61e5bbc506cb774f11959"
+    },
+    {
+      "file": "docs/VISUAL-MOTION.md",
+      "type": "preserve-public-base-documentation-paragraph",
+      "privateBaselineCommit": "b318e69ddcd47809d85e793893de5cb94d571bb4",
+      "basePublicCommit": "234ace1718b2d4a36244c2b61b80f0f1e3b2542c",
+      "baselineInputSha256": "5b4aed653a37025ba3f1f971417efdfb9550e0490a2424060956a89043c83eb6",
+      "publicBaseSha256": "02de609cbe2068938def0b4bb6bc4f08be65fd714a19451b1ede41ae4fca8fa2",
+      "oldTextSha256": "d45b95beaafc88c14147fb3fbfb33cb22dd6d19ae62641f89a72bf4881b5fa59",
+      "newTextSha256": "d2169e89dd2ecae5ff56c8f22625d38d449a76278403b785043727281bc53c5c",
+      "inputSha256": "b5f2c6c5062a40038def2f0e4bea4b6a932107a1e4e71c2f5784d35c0e7af035",
+      "outputSha256": "e204781cf9543bc31595f6aa6adcf3b1d69c51b2a1dd142bbcfc11aafcb4a163"
     }
   ],
   "originalEvidence": [
@@ -787,7 +867,59 @@
     "artifacts/host-button-coverage/sticks3-relay-back.png",
     "artifacts/host-button-coverage/sticks3-relay-iso.png",
     "artifacts/host-button-coverage/stopwatch-controls.png",
-    "artifacts/host-button-coverage/tab5-controls.png"
+    "artifacts/host-button-coverage/tab5-controls.png",
+    "artifacts/heart-rs485-detail/heart-back-off.png",
+    "artifacts/heart-rs485-detail/heart-back-on.png",
+    "artifacts/heart-rs485-detail/heart-back-reset.png",
+    "artifacts/heart-rs485-detail/heart-back.png",
+    "artifacts/heart-rs485-detail/heart-bottom.png",
+    "artifacts/heart-rs485-detail/heart-close-off.png",
+    "artifacts/heart-rs485-detail/heart-close-on.png",
+    "artifacts/heart-rs485-detail/heart-close-reset.png",
+    "artifacts/heart-rs485-detail/heart-front-off.png",
+    "artifacts/heart-rs485-detail/heart-front-on.png",
+    "artifacts/heart-rs485-detail/heart-front-reset.png",
+    "artifacts/heart-rs485-detail/heart-front.png",
+    "artifacts/heart-rs485-detail/heart-iso-off.png",
+    "artifacts/heart-rs485-detail/heart-iso-on.png",
+    "artifacts/heart-rs485-detail/heart-iso-reset.png",
+    "artifacts/heart-rs485-detail/heart-iso.png",
+    "artifacts/heart-rs485-detail/heart-left.png",
+    "artifacts/heart-rs485-detail/heart-right.png",
+    "artifacts/heart-rs485-detail/heart-top.png",
+    "artifacts/heart-rs485-detail/overview.jpg",
+    "artifacts/heart-rs485-detail/rs485-plugged-back.png",
+    "artifacts/heart-rs485-detail/rs485-plugged-bottom.png",
+    "artifacts/heart-rs485-detail/rs485-plugged-front.png",
+    "artifacts/heart-rs485-detail/rs485-plugged-iso.png",
+    "artifacts/heart-rs485-detail/rs485-plugged-left.png",
+    "artifacts/heart-rs485-detail/rs485-plugged-right.png",
+    "artifacts/heart-rs485-detail/rs485-plugged-top.png",
+    "artifacts/heart-rs485-detail/rs485-socket-back.png",
+    "artifacts/heart-rs485-detail/rs485-socket-bottom.png",
+    "artifacts/heart-rs485-detail/rs485-socket-front.png",
+    "artifacts/heart-rs485-detail/rs485-socket-iso.png",
+    "artifacts/heart-rs485-detail/rs485-socket-left.png",
+    "artifacts/heart-rs485-detail/rs485-socket-restored.png",
+    "artifacts/heart-rs485-detail/rs485-socket-right.png",
+    "artifacts/heart-rs485-detail/rs485-socket-top.png",
+    "artifacts/heart-rs485-detail/screw-1-45.png",
+    "artifacts/heart-rs485-detail/screw-1-reset.png",
+    "artifacts/heart-rs485-detail/screw-1-rest.png",
+    "artifacts/heart-rs485-detail/screw-2-45.png",
+    "artifacts/heart-rs485-detail/screw-2-reset.png",
+    "artifacts/heart-rs485-detail/screw-2-rest.png",
+    "artifacts/heart-rs485-detail/screw-3-45.png",
+    "artifacts/heart-rs485-detail/screw-3-reset.png",
+    "artifacts/heart-rs485-detail/screw-3-rest.png",
+    "artifacts/heart-rs485-detail/screw-4-45.png",
+    "artifacts/heart-rs485-detail/screw-4-reset.png",
+    "artifacts/heart-rs485-detail/screw-4-rest.png",
+    "artifacts/heart-rs485-detail/sticks3-hub-heart-off.png",
+    "artifacts/heart-rs485-detail/sticks3-hub-heart-on.png",
+    "artifacts/heart-rs485-detail/sticks3-rs485-back.png",
+    "artifacts/heart-rs485-detail/sticks3-rs485-before-pose.png",
+    "artifacts/heart-rs485-detail/sticks3-rs485-iso.png"
   ],
   "verification": "artifacts/interaction-expansion/public/review.json",
   "published": true,
@@ -863,7 +995,7 @@
   },
   "licenseVerifiedAt": "2026-10-25T13:37:28.164885+00:00",
   "publicationRecord": "artifacts/publication.json",
-  "syncedAt": "2026-10-25T20:12:39.168Z",
+  "syncedAt": "2026-10-25T21:12:18.690Z",
   "incrementalRefinement": {
     "sourceCommit": "b6d53bc3b40425a1f6b343d20240245588727397",
     "changedFiles": [
@@ -1690,5 +1822,387 @@
       "Finite ray/material samples, API checks and browser views do not establish manufacturing fit, force/tolerance, optical behavior or physical-device execution. All 43 products remain modeled."
     ],
     "historicalBoundary": "43 existing products and all prior candidate batches remain historical. Only this explicit source delta and the new Relay assembly review are appended; prior LED source conflict is preserved."
+  },
+  "incrementalHeartRs485Detail": {
+    "sourceCommit": "f76d4579f59c3ba5995d8d8eafd59b965af41173",
+    "privateBaselineCommit": "b318e69ddcd47809d85e793893de5cb94d571bb4",
+    "basePublicCommit": "234ace1718b2d4a36244c2b61b80f0f1e3b2542c",
+    "preparedAt": "2026-10-25T21:12:18.690Z",
+    "changedFiles": [
+      "src/units/heart/index.js",
+      "src/units/heart/optical-assembly.js",
+      "src/units/rs485/index.js",
+      "src/units/rs485/assembly.js",
+      "src/units/rs485/dimensions.js",
+      "src/units/rs485/TerminalPlug.js",
+      "scripts/check-heart-optics.mjs",
+      "scripts/check-rs485-terminal.mjs",
+      "scripts/check-details.mjs",
+      "docs/AGENT-INTEGRATION.md",
+      "docs/VISUAL-MOTION.md",
+      "catalog/products.json",
+      "artifacts/heart-rs485-detail/heart-back-off.png",
+      "artifacts/heart-rs485-detail/heart-back-on.png",
+      "artifacts/heart-rs485-detail/heart-back-reset.png",
+      "artifacts/heart-rs485-detail/heart-back.png",
+      "artifacts/heart-rs485-detail/heart-bottom.png",
+      "artifacts/heart-rs485-detail/heart-close-off.png",
+      "artifacts/heart-rs485-detail/heart-close-on.png",
+      "artifacts/heart-rs485-detail/heart-close-reset.png",
+      "artifacts/heart-rs485-detail/heart-front-off.png",
+      "artifacts/heart-rs485-detail/heart-front-on.png",
+      "artifacts/heart-rs485-detail/heart-front-reset.png",
+      "artifacts/heart-rs485-detail/heart-front.png",
+      "artifacts/heart-rs485-detail/heart-iso-off.png",
+      "artifacts/heart-rs485-detail/heart-iso-on.png",
+      "artifacts/heart-rs485-detail/heart-iso-reset.png",
+      "artifacts/heart-rs485-detail/heart-iso.png",
+      "artifacts/heart-rs485-detail/heart-left.png",
+      "artifacts/heart-rs485-detail/heart-right.png",
+      "artifacts/heart-rs485-detail/heart-top.png",
+      "artifacts/heart-rs485-detail/overview.jpg",
+      "artifacts/heart-rs485-detail/rs485-plugged-back.png",
+      "artifacts/heart-rs485-detail/rs485-plugged-bottom.png",
+      "artifacts/heart-rs485-detail/rs485-plugged-front.png",
+      "artifacts/heart-rs485-detail/rs485-plugged-iso.png",
+      "artifacts/heart-rs485-detail/rs485-plugged-left.png",
+      "artifacts/heart-rs485-detail/rs485-plugged-right.png",
+      "artifacts/heart-rs485-detail/rs485-plugged-top.png",
+      "artifacts/heart-rs485-detail/rs485-socket-back.png",
+      "artifacts/heart-rs485-detail/rs485-socket-bottom.png",
+      "artifacts/heart-rs485-detail/rs485-socket-front.png",
+      "artifacts/heart-rs485-detail/rs485-socket-iso.png",
+      "artifacts/heart-rs485-detail/rs485-socket-left.png",
+      "artifacts/heart-rs485-detail/rs485-socket-restored.png",
+      "artifacts/heart-rs485-detail/rs485-socket-right.png",
+      "artifacts/heart-rs485-detail/rs485-socket-top.png",
+      "artifacts/heart-rs485-detail/screw-1-45.png",
+      "artifacts/heart-rs485-detail/screw-1-reset.png",
+      "artifacts/heart-rs485-detail/screw-1-rest.png",
+      "artifacts/heart-rs485-detail/screw-2-45.png",
+      "artifacts/heart-rs485-detail/screw-2-reset.png",
+      "artifacts/heart-rs485-detail/screw-2-rest.png",
+      "artifacts/heart-rs485-detail/screw-3-45.png",
+      "artifacts/heart-rs485-detail/screw-3-reset.png",
+      "artifacts/heart-rs485-detail/screw-3-rest.png",
+      "artifacts/heart-rs485-detail/screw-4-45.png",
+      "artifacts/heart-rs485-detail/screw-4-reset.png",
+      "artifacts/heart-rs485-detail/screw-4-rest.png",
+      "artifacts/heart-rs485-detail/sticks3-hub-heart-off.png",
+      "artifacts/heart-rs485-detail/sticks3-hub-heart-on.png",
+      "artifacts/heart-rs485-detail/sticks3-rs485-back.png",
+      "artifacts/heart-rs485-detail/sticks3-rs485-before-pose.png",
+      "artifacts/heart-rs485-detail/sticks3-rs485-iso.png",
+      "source-manifest.json",
+      "candidate-manifest.json"
+    ],
+    "privateEvidenceReportSha256": "48ea5a4c83aeee0f2e96a6c03b3738fc0b97edba19f210637149580665ec7bf9",
+    "privateProvenanceSha256": {
+      "heart": "410e6bc70d628eaf5efa6996700f662d4d52b5aaec938ac1cd6fde398841b5c4",
+      "rs485": "2e47a9b80e0802085fb48d595d2e37313ba1f7d4820dc44d406a6a475448a778"
+    },
+    "privateEvidenceStatus": "pass-with-recorded-limits",
+    "sourceHashes": {
+      "src/units/heart/index.js": "60fc0fb0a136f1a4bccfd07224a0bc7b4a5710797663089c0514a83324e853cb",
+      "src/units/heart/optical-assembly.js": "cbdfb7080074f0d4e357a4d9a358be345b93fbc88c283ac4b1685afcacf9f82b",
+      "src/units/rs485/index.js": "cf470351b3628db25839ffb45159e94a7110406637a9d4afa1a6e4c153ab0c5c",
+      "src/units/rs485/assembly.js": "7e05e29ee3effcf1ec595ca2420ca56cd07e9fe0d0a548ca2eb710d9fe5fc213",
+      "src/units/rs485/dimensions.js": "071e6890c8d2f7e26e4b4d6d56bf5c5e26b42f9daa58cd7e65ab942961f9e154",
+      "src/units/rs485/TerminalPlug.js": "c88893747b391bcffcd6c23141c682417de711d2342f844f9d582d579ecb0f1b",
+      "scripts/check-heart-optics.mjs": "33276ba68bfe8339e8d6f2052edcfcf390d5c79bf4aea6062143457f1782e472",
+      "scripts/check-rs485-terminal.mjs": "9a25f8610b401e7b5b7a6ec31dc665fe3879a01f6d34c603873fa2d3f80bcdd4",
+      "scripts/check-details.mjs": "1d08c98c07b345330deddc37bc9a5edaf03f065d2cad77a389cc815796d4eef4",
+      "docs/AGENT-INTEGRATION.md": "ec26271d1b168c95872ee654f87e5cb19d751c5ab4fbc9013a5931eeec4e148a",
+      "docs/VISUAL-MOTION.md": "b5f2c6c5062a40038def2f0e4bea4b6a932107a1e4e71c2f5784d35c0e7af035"
+    },
+    "originalEvidence": [
+      {
+        "path": "artifacts/heart-rs485-detail/heart-back-off.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/heart-back-on.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/heart-back-reset.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/heart-back.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/heart-bottom.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/heart-close-off.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/heart-close-on.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/heart-close-reset.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/heart-front-off.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/heart-front-on.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/heart-front-reset.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/heart-front.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/heart-iso-off.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/heart-iso-on.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/heart-iso-reset.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/heart-iso.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/heart-left.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/heart-right.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/heart-top.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/overview.jpg",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/rs485-plugged-back.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/rs485-plugged-bottom.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/rs485-plugged-front.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/rs485-plugged-iso.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/rs485-plugged-left.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/rs485-plugged-right.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/rs485-plugged-top.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/rs485-socket-back.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/rs485-socket-bottom.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/rs485-socket-front.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/rs485-socket-iso.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/rs485-socket-left.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/rs485-socket-restored.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/rs485-socket-right.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/rs485-socket-top.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/screw-1-45.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/screw-1-reset.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/screw-1-rest.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/screw-2-45.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/screw-2-reset.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/screw-2-rest.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/screw-3-45.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/screw-3-reset.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/screw-3-rest.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/screw-4-45.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/screw-4-reset.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/screw-4-rest.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/sticks3-hub-heart-off.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/sticks3-hub-heart-on.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/sticks3-rs485-back.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/sticks3-rs485-before-pose.png",
+        "origin": "original-native-model-render"
+      },
+      {
+        "path": "artifacts/heart-rs485-detail/sticks3-rs485-iso.png",
+        "origin": "original-native-model-render"
+      }
+    ],
+    "transformedOutputHashes": {
+      "src/units/heart/index.js": "507d8116e35b909538f5c34f5e7dc8158299908040d61e5bbc506cb774f11959",
+      "src/units/heart/optical-assembly.js": "cbdfb7080074f0d4e357a4d9a358be345b93fbc88c283ac4b1685afcacf9f82b",
+      "src/units/rs485/index.js": "cf470351b3628db25839ffb45159e94a7110406637a9d4afa1a6e4c153ab0c5c",
+      "src/units/rs485/assembly.js": "7e05e29ee3effcf1ec595ca2420ca56cd07e9fe0d0a548ca2eb710d9fe5fc213",
+      "src/units/rs485/dimensions.js": "071e6890c8d2f7e26e4b4d6d56bf5c5e26b42f9daa58cd7e65ab942961f9e154",
+      "src/units/rs485/TerminalPlug.js": "c88893747b391bcffcd6c23141c682417de711d2342f844f9d582d579ecb0f1b",
+      "scripts/check-heart-optics.mjs": "33276ba68bfe8339e8d6f2052edcfcf390d5c79bf4aea6062143457f1782e472",
+      "scripts/check-rs485-terminal.mjs": "9a25f8610b401e7b5b7a6ec31dc665fe3879a01f6d34c603873fa2d3f80bcdd4",
+      "scripts/check-details.mjs": "1d08c98c07b345330deddc37bc9a5edaf03f065d2cad77a389cc815796d4eef4",
+      "docs/AGENT-INTEGRATION.md": "ec26271d1b168c95872ee654f87e5cb19d751c5ab4fbc9013a5931eeec4e148a",
+      "docs/VISUAL-MOTION.md": "e204781cf9543bc31595f6aa6adcf3b1d69c51b2a1dd142bbcfc11aafcb4a163",
+      "catalog/products.json": "a824e35f5285967b1f3ab094245b7f34411b17fc5f2e848037eac18e9756bb38",
+      "artifacts/heart-rs485-detail/heart-back-off.png": "099f4b844f1130f2f3471b06c58f52fb4e427377a5287e46a2b8ce6ea2a45b6e",
+      "artifacts/heart-rs485-detail/heart-back-on.png": "099f4b844f1130f2f3471b06c58f52fb4e427377a5287e46a2b8ce6ea2a45b6e",
+      "artifacts/heart-rs485-detail/heart-back-reset.png": "099f4b844f1130f2f3471b06c58f52fb4e427377a5287e46a2b8ce6ea2a45b6e",
+      "artifacts/heart-rs485-detail/heart-back.png": "099f4b844f1130f2f3471b06c58f52fb4e427377a5287e46a2b8ce6ea2a45b6e",
+      "artifacts/heart-rs485-detail/heart-bottom.png": "86fc5d54348d343ce70f454444c512a78842bc4d90f013570676d6008dc5430e",
+      "artifacts/heart-rs485-detail/heart-close-off.png": "b554cf59f387212e1cfcbe67d749a4f553a2df693c05640b96f7018686424127",
+      "artifacts/heart-rs485-detail/heart-close-on.png": "1e29b9645e335510db6cb4fc7e9bc3aed20078fb183828c10e006191fc3d1624",
+      "artifacts/heart-rs485-detail/heart-close-reset.png": "b554cf59f387212e1cfcbe67d749a4f553a2df693c05640b96f7018686424127",
+      "artifacts/heart-rs485-detail/heart-front-off.png": "98b96b8d12f43495d9be4ec26b91ce123da0527f755c4d43b2928fd718098afd",
+      "artifacts/heart-rs485-detail/heart-front-on.png": "1b3908c1a9cce7fb054eb8774b8eee409218200c99501e313fa9145dd304ed1e",
+      "artifacts/heart-rs485-detail/heart-front-reset.png": "98b96b8d12f43495d9be4ec26b91ce123da0527f755c4d43b2928fd718098afd",
+      "artifacts/heart-rs485-detail/heart-front.png": "98b96b8d12f43495d9be4ec26b91ce123da0527f755c4d43b2928fd718098afd",
+      "artifacts/heart-rs485-detail/heart-iso-off.png": "48eedfdfd02df24ff4aab45a42bb805729b9fc105d7228712edab6eb26804089",
+      "artifacts/heart-rs485-detail/heart-iso-on.png": "b82250f96a30d01f9e3340313e9009459e2654ba9b78714c6f200d92d3654493",
+      "artifacts/heart-rs485-detail/heart-iso-reset.png": "48eedfdfd02df24ff4aab45a42bb805729b9fc105d7228712edab6eb26804089",
+      "artifacts/heart-rs485-detail/heart-iso.png": "48eedfdfd02df24ff4aab45a42bb805729b9fc105d7228712edab6eb26804089",
+      "artifacts/heart-rs485-detail/heart-left.png": "72c3995a5d4c1c73b8a3ac5aabb8aaa482b9dc75eb901ace68ba96e476555d62",
+      "artifacts/heart-rs485-detail/heart-right.png": "03310dfd159009a1c0973699528e23ecff19b008f6ed0bed173af81640a16c5f",
+      "artifacts/heart-rs485-detail/heart-top.png": "9713e5a5760d4884366099fbfb6fe7dc4b3aa20afd831b889bd6cb480786e126",
+      "artifacts/heart-rs485-detail/overview.jpg": "e558d49ac5f91fee8a80aa5a0933197f1b9ff7d2a70d8112c680879b003ba121",
+      "artifacts/heart-rs485-detail/rs485-plugged-back.png": "1d3f3510b8594d17e364a7744f2f88883129d86814e578ade4beb29965a72749",
+      "artifacts/heart-rs485-detail/rs485-plugged-bottom.png": "9d0ccfe87c8152554f7a021494960140327e5b5673da2d299d6b250d8c68fb14",
+      "artifacts/heart-rs485-detail/rs485-plugged-front.png": "2069a90b05c202b993c7753693973868658ec65126a0eca54af59acce8c61815",
+      "artifacts/heart-rs485-detail/rs485-plugged-iso.png": "d82cc7e3914a04f160009cab418cb395028ffebbf0652fb85f378a43aea0a31a",
+      "artifacts/heart-rs485-detail/rs485-plugged-left.png": "142b2cab03208fe3bba3228f1cac224b168c8dbd9b1c830b1cbecebfd665651c",
+      "artifacts/heart-rs485-detail/rs485-plugged-right.png": "a2648571b71a37869608d19a13bd0c2ce8dad08a58669f740cd3afe0ee1b72bf",
+      "artifacts/heart-rs485-detail/rs485-plugged-top.png": "89b17aa005b8395983647fb44a49faced92bde33144779ca30a747ddcf9d2c02",
+      "artifacts/heart-rs485-detail/rs485-socket-back.png": "c4b2c8c9c25df7d1d3c802bcaad095ce1757448a96f4befcab04eae737f0e80a",
+      "artifacts/heart-rs485-detail/rs485-socket-bottom.png": "ca84f3df0c64eb296126f98729c7877bd6eea99a50e400b327fdcfdd7ef64d95",
+      "artifacts/heart-rs485-detail/rs485-socket-front.png": "78fe8aaa90736647204e2d2d84f6dcbd3047d21599a0fd7d3c6ee9a7b1053274",
+      "artifacts/heart-rs485-detail/rs485-socket-iso.png": "c878844fbd9ecdf3496945278b54351ddde48013fe4f9766a620042d130e550c",
+      "artifacts/heart-rs485-detail/rs485-socket-left.png": "531d02d25b11e4b9ead1d526f52f3189bed6eb1c64cc70a8926ff56d327ad9bc",
+      "artifacts/heart-rs485-detail/rs485-socket-restored.png": "c878844fbd9ecdf3496945278b54351ddde48013fe4f9766a620042d130e550c",
+      "artifacts/heart-rs485-detail/rs485-socket-right.png": "c95209a8d855758c5771c48bf5f843c2db16b183dfd48def0f3be2743f8bc22c",
+      "artifacts/heart-rs485-detail/rs485-socket-top.png": "d97dfd674be137672da210bfa5b68cdbe09174285055eb7455384ffb45fc7f8f",
+      "artifacts/heart-rs485-detail/screw-1-45.png": "c1df539d709807f35ae5ad2db161ef32a81d0c627eb3b5fd1e6da439563e83a2",
+      "artifacts/heart-rs485-detail/screw-1-reset.png": "2069a90b05c202b993c7753693973868658ec65126a0eca54af59acce8c61815",
+      "artifacts/heart-rs485-detail/screw-1-rest.png": "2069a90b05c202b993c7753693973868658ec65126a0eca54af59acce8c61815",
+      "artifacts/heart-rs485-detail/screw-2-45.png": "5a49abfb9042b17a256e1a814766bb9e41197d677fe0cfa46019817a5e22e45f",
+      "artifacts/heart-rs485-detail/screw-2-reset.png": "2069a90b05c202b993c7753693973868658ec65126a0eca54af59acce8c61815",
+      "artifacts/heart-rs485-detail/screw-2-rest.png": "2069a90b05c202b993c7753693973868658ec65126a0eca54af59acce8c61815",
+      "artifacts/heart-rs485-detail/screw-3-45.png": "e7185952955545523a4a575c7731618c7c1ecb5425ad71853737dd9e3645f161",
+      "artifacts/heart-rs485-detail/screw-3-reset.png": "2069a90b05c202b993c7753693973868658ec65126a0eca54af59acce8c61815",
+      "artifacts/heart-rs485-detail/screw-3-rest.png": "2069a90b05c202b993c7753693973868658ec65126a0eca54af59acce8c61815",
+      "artifacts/heart-rs485-detail/screw-4-45.png": "dea9bbf6542dacabbc34edc32a5473c16063fa7e4edd7f70f9a2031ef5e62ea0",
+      "artifacts/heart-rs485-detail/screw-4-reset.png": "2069a90b05c202b993c7753693973868658ec65126a0eca54af59acce8c61815",
+      "artifacts/heart-rs485-detail/screw-4-rest.png": "2069a90b05c202b993c7753693973868658ec65126a0eca54af59acce8c61815",
+      "artifacts/heart-rs485-detail/sticks3-hub-heart-off.png": "098c626996fcbb150f2275c2ce234aa4826069a9371c9a73734ca3069eafeeb5",
+      "artifacts/heart-rs485-detail/sticks3-hub-heart-on.png": "098c626996fcbb150f2275c2ce234aa4826069a9371c9a73734ca3069eafeeb5",
+      "artifacts/heart-rs485-detail/sticks3-rs485-back.png": "d01aeb0a2dcf120bacec4c4489bc0238fbf0bdb82d8a9037e27b20aa377e88b2",
+      "artifacts/heart-rs485-detail/sticks3-rs485-before-pose.png": "29472caae36b961d3b62a9c1e4083f56b968d21eaf37de74c7bc00be18f6d111",
+      "artifacts/heart-rs485-detail/sticks3-rs485-iso.png": "73f0430bbf171020f1c132139c8d92522df09b1ecc7c7f7e56c1c79c8b044879",
+      "source-manifest.json": "2d39e6d658b27d925f02c8685c688577537e279230799d68c24f9b6ad7cac065"
+    },
+    "publicVerification": {
+      "status": "pass-with-recorded-limits",
+      "report": "artifacts/heart-rs485-detail/public/review.json",
+      "reportSha256": "7c5e08800f5e17ad004b1915a8b800d32fdc13292c252f8f6a0e42f980ae9a7e"
+    },
+    "scope": "Heart U029 optical assembly and RS485 U034 removable terminal detail, with external visual controls only. Preserve all 43 product identities and all historical public evidence.",
+    "limits": [
+      "All 43 products remain modeled; zero verified.",
+      "Original stickers remain deferred. Raw official images, PDF/STL inputs and MCP source responses remain private.",
+      "Appearance reconstruction only; no firmware, electrical/optical sensor behavior, manufacturing tolerance or physical-device proof."
+    ],
+    "historicalBoundary": "All 43 product identities, all prior source-manifest rows/fields and all earlier candidate batches remain historical. Only the explicit Heart/RS485 detail delta and two curated records are appended."
   }
 }

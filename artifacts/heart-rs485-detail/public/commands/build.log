@@ -1,0 +1,81 @@
+
+> m5stack-models.js@0.1.0 build
+> npm run catalog && vite build demo --config vite.config.js --outDir ../dist --emptyOutDir --base ./
+
+
+> m5stack-models.js@0.1.0 catalog
+> node scripts/catalog.mjs
+
+Catalog valid: 43 products; {"modeled":43}
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 199 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                             3.41 kB │ gzip:   1.71 kB
+dist/assets/index-DUfIhopB.css             17.15 kB │ gzip:   4.93 kB
+dist/assets/artwork-BJ3M0TkN.js             0.02 kB │ gzip:   0.04 kB
+dist/assets/cores3-BY3tpL5o.js              0.06 kB │ gzip:   0.07 kB
+dist/assets/pir-DUPx_fYG.js                 0.31 kB │ gzip:   0.28 kB
+dist/assets/env-iii-DnhPXhyt.js             0.33 kB │ gzip:   0.30 kB
+dist/assets/ultrasonic-i2c-BVgUFit1.js      0.33 kB │ gzip:   0.30 kB
+dist/assets/PaperDisplay-CX1uMnoP.js        0.48 kB │ gzip:   0.31 kB
+dist/assets/cad-CxcoC9_V.js                 0.76 kB │ gzip:   0.50 kB
+dist/assets/CADUnit-CCsyVOEY.js             1.83 kB │ gzip:   1.06 kB
+dist/assets/Led-DqvleyO_.js                 1.84 kB │ gzip:   0.93 kB
+dist/assets/ClassicUnit-DT3yVfHt.js         2.57 kB │ gzip:   1.40 kB
+dist/assets/VisualJoint-B5spUpwL.js         3.25 kB │ gzip:   1.35 kB
+dist/assets/connectors-e9WSJw8i.js          3.58 kB │ gzip:   1.56 kB
+dist/assets/actuators-nMA-PFv5.js           4.75 kB │ gzip:   2.23 kB
+dist/assets/cardkb-CRfCn_x7.js              6.15 kB │ gzip:   2.92 kB
+dist/assets/parts-BwSAKIG2.js               6.77 kB │ gzip:   2.88 kB
+dist/assets/grove-cable-g4p79_jh.js         7.56 kB │ gzip:   3.06 kB
+dist/assets/parts-CFZGcK5F.js               8.02 kB │ gzip:   3.41 kB
+dist/assets/cardputer-zero-DdMUPI_t.js     12.36 kB │ gzip:   5.13 kB
+dist/assets/core-DCCvToNd.js               17.43 kB │ gzip:   6.53 kB
+dist/assets/angle-DKdgksse.js             156.39 kB │ gzip:  52.34 kB
+dist/assets/hub-B1WXr6qn.js               159.14 kB │ gzip:  52.34 kB
+dist/assets/heart-BU_M13OZ.js             160.05 kB │ gzip:  56.00 kB
+dist/assets/ncir-DcdFCD-X.js              160.34 kB │ gzip:  55.61 kB
+dist/assets/thermal-C6bLH9os.js           160.92 kB │ gzip:  54.48 kB
+dist/assets/ir-BV_-91AT.js                161.04 kB │ gzip:  53.80 kB
+dist/assets/light-CcFIo7bj.js             161.87 kB │ gzip:  56.42 kB
+dist/assets/rs485-CD69-kAu.js             166.34 kB │ gzip:  57.49 kB
+dist/assets/nanoc6-Dlihd-IT.js            168.63 kB │ gzip:  56.93 kB
+dist/assets/color-bjdu8NVH.js             169.12 kB │ gzip:  57.10 kB
+dist/assets/joystick-v11-DPQ6RSR9.js      169.90 kB │ gzip:  56.49 kB
+dist/assets/tof-ZVk5hyLW.js               173.93 kB │ gzip:  61.15 kB
+dist/assets/relay-BhVqcFLo.js             177.09 kB │ gzip:  58.00 kB
+dist/assets/papermono-CXE01ZxY.js         179.87 kB │ gzip:  59.40 kB
+dist/assets/fan-DA1Bgj5e.js               183.31 kB │ gzip:  65.59 kB
+dist/assets/button-D1lPjJzL.js            188.40 kB │ gzip:  66.28 kB
+dist/assets/encoder-BPexkQ8v.js           199.10 kB │ gzip:  70.87 kB
+dist/assets/atoms3r-BG78MWEh.js           199.89 kB │ gzip:  73.62 kB
+dist/assets/dual-button-BxSkNkyI.js       202.26 kB │ gzip:  68.46 kB
+dist/assets/rgb-DeoWqKYV.js               214.05 kB │ gzip:  71.54 kB
+dist/assets/tvoc-DQtv4HQ9.js              219.78 kB │ gzip:  69.96 kB
+dist/assets/buzzer-DqCUVfL8.js            220.32 kB │ gzip:  70.31 kB
+dist/assets/key-BQVPs-M2.js               237.03 kB │ gzip:  76.64 kB
+dist/assets/limit-BjOp7klj.js             249.27 kB │ gzip:  79.95 kB
+dist/assets/sticks3-MtV15Fs9.js           374.55 kB │ gzip: 132.39 kB
+dist/assets/stopwatch-B3I65HKq.js         410.54 kB │ gzip: 150.55 kB
+dist/assets/nesso-n1-iwG2QIXf.js          428.90 kB │ gzip: 149.38 kB
+dist/assets/scroll-v_ar_MBY.js            490.21 kB │ gzip: 191.51 kB
+dist/assets/papercolor-3_ov6XHD.js        522.65 kB │ gzip: 180.22 kB
+dist/assets/core2-CraEPtuT.js             536.42 kB │ gzip: 158.65 kB
+dist/assets/8encoder-BwmECoH0.js          574.08 kB │ gzip: 173.66 kB
+dist/assets/rfid2-yEU5qHvS.js             586.96 kB │ gzip: 215.54 kB
+dist/assets/index-BmzgznEX.js             641.59 kB │ gzip: 165.99 kB
+dist/assets/roller485-Bi4-Ush-.js         801.59 kB │ gzip: 278.11 kB
+dist/assets/tab5-CYHcbkNv.js              841.01 kB │ gzip: 266.31 kB
+dist/assets/stamplc-CI5AGcB9.js         1,150.17 kB │ gzip: 348.54 kB
+dist/assets/CoreS3-BHCkDmMz.js          1,362.51 kB │ gzip: 423.59 kB
+dist/assets/stackchan-B0EGCzMn.js       2,518.84 kB │ gzip: 914.35 kB
+dist/assets/cardputer-adv-Bt2MxvVb.js   3,031.19 kB │ gzip: 845.90 kB
+
+✓ built in 219ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
