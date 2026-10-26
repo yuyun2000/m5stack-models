@@ -1,0 +1,201 @@
+{
+  "id": "dcssr",
+  "sku": "U140",
+  "officialDocs": "https://docs.m5stack.com/en/unit/DCSSR%20Unit",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "queries": [
+      "Unit DCSSR U140 dimensions connectors button LED hardware",
+      "Unit DCSSR U140 schematic ESP32C3 SK6812 red LED S1 SP3485 dimensions complete kit CDG1-1DD"
+    ],
+    "rawResponseDistributed": false,
+    "result": "Exact U140:DC-DC SSR kit plus ESP32-C3 controller,central button,SK6812 RGB,two supplied3.96-4P plugs,Grove and red SSR indicator. Own gallery shows CDG1-1DD/10A DC relay,four terminal screws,guards,flange/forks and rear PWR indicator. Own45x30.7x11.5mm drawing covers controller including fork lugs only; full-kit outline/datum absent. Search also returns U139 schematic material; not treated as confirmed U140 BOM."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/DCSSR Unit/img-24d0cf2a-24c0-4930-8c51-c20df8575e19.webp",
+    "sha256": "7c7edcdecad61e88615db0d9988382dec4d16452ebb833a95e27b5c981afd3b3"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U140_Unit_DCSSR/Structures/Unit_DCSSR.stl",
+      "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+      "gitBlob": "31f129577fba098c07f6f2b1c5d550ae0f546b51",
+      "sha256": "7f1ddd4aca945b9f7088e40dff520884e70299f138f63b43e679dac4886b3d36",
+      "license": "MIT; preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/DCSSR Unit/img-5e00db88-b5c7-4dd9-9061-b4700dc60c6e.webp",
+      "sha256": "188ebd777aa149ff0763858f910f19fe0d97c99e91cfa46d3fb2703f9a160c7d"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/DCSSR Unit/img-67321bb8-624a-419c-83f0-d43210d86914.webp",
+      "sha256": "ec2873ae99bd86e568fb71e2781bc116190c09075c9cf7085090ea9e9d2c7425"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/DCSSR Unit/img-384ea9c6-9bd0-4f33-a6ca-08dd90de1bf2.webp",
+      "sha256": "6d6c94106336d3a41e0eee39cfaed7459bcd5f7808a85fc251bf159037123d55"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/DCSSR Unit/img-95afa67a-03b9-417a-8f4f-69e6016791fe.webp",
+      "sha256": "d988928e78a25ae26612800a1bbfcbfa246f99e799627e523d1d5be45543ffa9"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/DCSSR Unit/img-2695703c-0ba4-4b53-8798-09fe0b0fb8a5.webp",
+      "sha256": "ec2873ae99bd86e568fb71e2781bc116190c09075c9cf7085090ea9e9d2c7425"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/DCSSR Unit/img-302ddfdb-8315-41a7-b26d-51d5c46aab4a.webp",
+      "sha256": "ee7367c20227eb189798eeb2255f10f30fc4a9ea801447d00e64315a2d7c6ce9"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/DCSSR Unit/img-7e125e3f-e1f6-444f-961f-4ab32dfa04d7.webp",
+      "sha256": "ae3fdad116dcaf30bbfc4e73b3e17ea937ab3588cecf54613da5a67d91abd84e"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/DCSSR Unit/img-cbc38a33-3ef5-4f3d-a09c-00b1c771d4b9.webp",
+      "sha256": "dacbaa9f079238f93619ed620b7d4b73b6ec8713cf6cf3fa8ebb2cdf78677fc8"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/DCSSR Unit/img-24d0cf2a-24c0-4930-8c51-c20df8575e19.webp",
+      "sha256": "7c7edcdecad61e88615db0d9988382dec4d16452ebb833a95e27b5c981afd3b3"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/DCSSR Unit/img-b2a53bb8-4cbb-49bd-9daa-b5ed0f490271.png",
+      "sha256": "73c94732b217e29d79280cc83eda480def5f822602a28b55839dcfffa3600a63"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "triangles": 2654,
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      8.93600082397461,
+      0,
+      9.600000381469727
+    ],
+    "axes": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "notes": "Component 0 is the complete assembled native controller shell (2654 triangles = displaced components 1+2). One rigid -90 degree Z rotation and translation; no scaling/cuts/fills. This exact U140 path resolves to the same source blob as the U139 controller shell. The U140 drawing 45 x 30.7 x 11.5 mm includes the external fork lugs, while the closed shell alone is 44.94 x 18.74 x 11.5 mm. Full DC SSR case/guards/installed transform are reconstructed from U140 photographs; the approximately 45 x 80 x 31 mm kit envelope is an appearance estimate, not an official U140 dimension. Original integral tongue flexes only during external button actuation; rest vertices/normals restored exactly."
+  },
+  "dimensions": {
+    "nominalMm": [
+      45,
+      80,
+      31
+    ],
+    "nominalScope": "Approximate full-kit appearance envelope inferred from same-model photographs; not vendor full-kit dimensions",
+    "vendorDimensionOrderMm": [
+      45,
+      30.7,
+      11.5
+    ],
+    "vendorDimensionScope": "Controller including two fork lugs only",
+    "controllerCadEnvelopeMm": [
+      44.939388275146484,
+      18.73927879333496,
+      11.500001907348633
+    ],
+    "controllerWithLugsMm": [
+      44.939388275146484,
+      30.699999809265137,
+      11.508001804351807
+    ],
+    "visualEnvelopeMm": [
+      45.00000002384186,
+      80,
+      31.000001906454564
+    ],
+    "evidence": "Exact U140 drawing gives45mm width,18.7mm shell height,30.7mm controller with lugs and11.5mm depth. Full-kit placement/relay size remains photo-constrained inference."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 2,
+    "sourceDetails": "docs/research/dcssr/artwork.json",
+    "originalsDistributed": false
+  },
+  "scope": "Complete controller shell with native flexure button,PCB/concealed population envelopes,forks,physical Grove and two fixed/removable4P terminals;sealed DCSSR body,thermal flange,clamps/guards,independent three lamps and visible screw-head angles only.No relay state,electrical/protocol/firmware implementation.",
+  "inferred": [
+    "Full DCSSR package outline and controller-to-relay installation datum",
+    "PCB outline/installed plane and concealed component package envelopes;not a confirmed U140 BOM",
+    "Terminal socket/plug fits,cages/pressure plates and fork installed depth",
+    "Rear PWR optical route and lens depths",
+    "Native tongue free-end travel0.22mm",
+    "Logo/icon/typography and final artwork registration"
+  ],
+  "notes": [
+    "U140 exact source STL and U139 controller source are byte-identical; full native shell is independently attributed to U140 path.",
+    "DC relay nameplate is CDG1-1DD/10A / DC-12:10A220VDC,never ACSSR1DA/AC480V artwork.",
+    "No external download port,automatic indicators,mode state machine,relay continuity,current,voltage,Modbus,I2C,RF or firmware behavior."
+  ],
+  "feedback": {
+    "id": "a1da7ba30adb4fd5ba6dfc708e8aed1f",
+    "status": "accepted",
+    "category": "missing_documentation",
+    "issue": "Exact U140 full-kit mechanical outline,DC relay outline,installed datum,guard/plug dimensions and actual native-tongue travel missing; own drawing is controller-with-lugs only."
+  },
+  "runtimeFiles": [
+    {
+      "path": "src/units/dcssr/NativeFlexureButton.js",
+      "sha256": "34613061bbcef47144a5485630e2e4f16969500a0f257c88b84378b5eb6c0ede"
+    },
+    {
+      "path": "src/units/dcssr/TerminalPlug.js",
+      "sha256": "dc4035dc539423e87eebf6cd470985190e2afa9797449769a460f97917035863"
+    },
+    {
+      "path": "src/units/dcssr/assembly.js",
+      "sha256": "478d8256929a75339c1df517b95dc4e9adca18a778cfb6689c56139498db05b3"
+    },
+    {
+      "path": "src/units/dcssr/cad-map.json",
+      "sha256": "64c03d36baee50887b7d2c8416392dec252eb6fd79f99ddee7cde4a3cb15956d"
+    },
+    {
+      "path": "src/units/dcssr/dimensions.js",
+      "sha256": "b0bb5329aa7fe73a2b4d44f3b4a29a090fdb05a7c80a0561987145427e206608"
+    },
+    {
+      "path": "src/units/dcssr/geometry-data.js",
+      "sha256": "60aa9e103ff4bd3848d0f2ab4dd135eff8c63a74c7f2e47e31f642519804b83b"
+    },
+    {
+      "path": "src/units/dcssr/index.js",
+      "sha256": "bfcd7d68f73a632ab77dc942dd5c3312fe63654c081818654b896175f0d651f5"
+    },
+    {
+      "path": "src/units/dcssr/reference-redraw-controller-back.png",
+      "sha256": "a29480edd372d7aafa9f04429d7b0f6f0ff1bfb6e2bde6958a5b3dd8e6bb87fc"
+    },
+    {
+      "path": "src/units/dcssr/reference-redraw-ssr.png",
+      "sha256": "fa0d16b028df121517767b41d2adac4001c7d499148a5f61b236bf8450421432"
+    },
+    {
+      "path": "src/units/dcssr/stickers.js",
+      "sha256": "dc88b56a88f7a5cda30faf74afc64c53bb8d0a66d2f3cbd583a93728018748d6"
+    }
+  ]
+}

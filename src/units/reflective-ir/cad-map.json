@@ -1,0 +1,60 @@
+{
+  "sku": "U175",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/d3ae864f161167af3f9698214012e1d135adc357/Products/U175_Unit_Reflective_IR/Structures/Unit_Reflective_IR.stl",
+  "commit": "d3ae864f161167af3f9698214012e1d135adc357",
+  "gitBlob": "389dfa04f7d2a425db8e7911582a5a38ebbe00fc",
+  "sha256": "16656fbc01fa42b4d395c05fabc0e96b8aa796e5e690907bfab8b045d74ad6f1",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/d3ae864f161167af3f9698214012e1d135adc357/LICENSE",
+  "origin": [
+    441.2688293457031,
+    269.2234802246094,
+    2
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "Reflective IR complete native shell with documented trimmer access bore",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 3302,
+  "localModification": {
+    "reason": "Official own rear photo and dimension drawing show a real screwdriver-access hole at[0,8]; source shell omits it.",
+    "centreMm": [
+      0,
+      8
+    ],
+    "diameterMm": 1.6,
+    "diameterEvidence": "Photo-inferred; drawing establishes location,not access diameter.",
+    "rearWallMm": [
+      -3.8,
+      -2.9
+    ],
+    "alteredOriginalTriangles": 3,
+    "boreSegments": 48,
+    "outputTriangles": 3546
+  },
+  "notes": "Native assembly0 retained at scale1 with one common translation; displaced duplicate shells1/2 excluded. Only documented trimmer screwdriver access bore locally cut; no other shell openings patched. PCB,packages,IR lenses and internals,Grove,screws,trimmer and label registration are reconstructed appearance."
+}

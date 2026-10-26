@@ -1,5 +1,102 @@
 # 动态外壳接入：给下游 Agent
 
+本地最新新增 `rs485-iso`（U094）、`ain4-20ma`（U162）、`ac-measure`（U164），同步6张PNG：前两款各2张 `reference-redraw`，AC Measure正背2张 `source-vector-raster`。三款均导出 `Model` / `GroveModule` / `TerminalPlug` / `spec`，提供真实四芯 `grove` 与本款固定端子。当前本地112款（14主机、98Unit），全部 `modeled`、`verified` 为0；公开Git仍85款 `ad5d062`，随后二十七款本地增量未自动再次推送。完整API、配置、来源和三分支四芯例见[RS485-ISO/AIN4-20mA/AC Measure](ISOLATED-INTERFACE-UNITS.md)。
+
+RS485-ISO严格本款U094隔离本体，`terminal` 为 `vh3.96-4p`；`terminalPlug:true`装随附四螺钉插头。`terminator:true`须同时装插头，120Ω电阻及引线位于同一插头B/A入口并随其拆装，不增加假插口。`power-led`默认off，只接受独立外驱开关/亮度；固定白色是预览估计，`meta.colorConfirmed:false`，不是官方确认灯色或RGB规格，不随UART/端子/电源联动。
+
+AIN4-20mA是单通道U162，保留STM32G030/HCNR200/SGM321、真实六针P2/P3及五个可拆帽位；`terminal` 为 `ht3.96-4p`。`jumpers`接受默认 `'three-horizontal'`、`'two-vertical'` 或 `false`；每个 `Shunt`独立装拆，五口为 `pin-header-2.54-2p`，`port.meta.physicalPins` / `port.physicalPins`记录占针，冲突在修改附件前拒绝。只防止两帽占同一实体针，不执行供电选择。帽位经真实开口外露，`covers:false`只作开盖检查；无sensor/LED/button/本体joint。
+
+AC Measure U164保留本款STM32G030/HLW8032/B0505ST16-W5/EL357、PCB与 `ht3.96-4p`固定座，前视L2/N2/L1/N1只记录实体标记，不是接线建议。无sensor/LED/button/本体joint。AC正背原稿恢复保留原色，仅修正转换造成的 `evenodd`→`nonzero`字腔填充，标 `source-vector-raster`，包装贴纸排除；另两款按自身官图代码重绘，不裁照片、不编不可辨字、不借贴纸遮缺件。
+
+三款插头均有 `terminal/screw-1`…`screw-4`，只外驱可见头角 `angleDeg` / `durationMs`、拒非零RPM，不代表轴向压线/扭矩/电气。总入口别名 `Rs485IsoUnit` / `Rs485IsoUnitModule` / `Rs485IsoTerminalPlug`、`Ain420maUnit` / `Ain420maUnitModule` / `Ain420maTerminalPlug` / `Ain420maShunt`、`AcMeasureUnit` / `AcMeasureUnitModule` / `AcMeasureTerminalPlug`；loader ID为三款slug。实例 `artwork:false`保留对应盖/插头/电阻/跳帽配置的全部物理attributes/index和世界矩阵。内部UART/RS485、供电、ADC、数值、隔离、协议及电气由外部框架实现。必要专项 `node scripts/check-isolated-interface-units.mjs`；综合范围以[本批进度](../artifacts/isolated-interface-expansion/progress.json)为准，不新增逐面浏览器、全量历史或实物验收结论。私表、私有链接/原稿名、矢量、官图CAD原件、生成器与中间件只留仓库外，公开最终普通PNG及安全来源说明。
+
+## 此前：BLDC Driver / RCA / Puzzle
+
+前批新增 `bldc-driver`（U181）、`rca`（U155）、`puzzle`（U193），同步6张本款官图代码重绘 `reference-redraw` PNG。三款均导出 `Model` / `GroveModule` / `spec`，提供实际四芯 `grove`；均为输出/连接装配，没有虚构的 `sensor`。该批完成时本地109款（14主机、95Unit），全部 `modeled`、`verified` 为0；公开Git仍85款 `ad5d062`，随后二十四款本地增量未自动再次推送。完整API、配置、来源与三分支/级联例见[BLDC Driver/RCA/Puzzle](BLDC-RCA-PUZZLE-UNITS.md)。
+
+BLDC Driver严格本款STM32G030/DRV11873与U/V/W/COM固定4P座；`terminal` 为 `ht3.96-4p`，默认裸座，`terminalPlug:true` 装随附 `TerminalPlug`。附件有四个 `screw-1`…`screw-4`，仅外驱头角/时长、拒非零RPM。无随附电机/转子/按钮/旋钮，隐藏SYS_LED无确证光路则不注册穿壳灯。固定座、PCB/封装、Grove和真实背衬齐备，不执行PWM、转速、方向、保护或电气。
+
+RCA保留真实单母插孔的金属筒/绝缘环/中心触点/开放腔，`rca` Port拒Grove；没有随附RCA插头/线。`channel` 是壳内单枚SW-SPDT双通道稳定滑钮，默认闭壳禁pointer，`covers:false`开盖才可看/操作，贴层随真实盖隐藏，固定I1/I2不随滑块移动。0/1只表示外观档位，外驱不回声，取消不click，不切换音视频或模拟电路。壳24×32×8与含座24×36.4×14.7分记，官网表8mm不能替代总厚尺寸图；无LED/joint/sensor。
+
+Puzzle为24×24×15的真实64颗WS2812E-1313和原生8×8隔光栅格。`pixel-0`…`pixel-63` 是正视行优先外观布局索引，不宣称厂家串行线序；默认全off，可逐灯外驱。`matrix` 接 `{type:'matrix',colors:[64色],brightness:0…1}` 或 `{type:'matrix',rgba:[256字节],brightness:0…1}`，alpha仅乘外观亮度，整帧先验证后更新。主输入 `grove` 对应J2，输出 `out` 对应J1，可接第二真实GroveModule，继续渲染四芯线与下级形状；上游帧不自动转发下游像素/电源/协议。不造MCU、按键、显示屏、自动动画或电气行为。随附桥接件独立导出 `Bridge` / 总入口 `PuzzleBridge`，仅外形/实体PCB插座/背标，无装配Port或命令，刚性成品配合缺基准，不能视为已核准装配。
+
+总入口模型别名 `BldcDriverUnit` / `BldcDriverUnitModule` / `BldcDriverTerminalPlug`、`RcaUnit` / `RcaUnitModule`、`PuzzleUnit` / `PuzzleUnitModule` / `PuzzleBridge`；按需loader ID为三款slug。各实例 `artwork:false` 保持当前插头/闭壳/开盖配置的全部物理attributes/index和世界矩阵。三款私表无精确原稿，重绘不裁照片/不编不可读小字/不遮缺件；私表、私有链接/原稿名、矢量、官图CAD原件、生成器和中间件只在仓库外。必要专项 `node scripts/check-bldc-rca-puzzle-units.mjs`，综合范围见[本批进度](../artifacts/bldc-rca-puzzle-expansion/progress.json)，不增加逐面浏览器、全量历史或实物验收结论。
+
+## 此前：Thermal2 / FlashLight / GPS SMA
+
+前批新增 `thermal2`（U149）、`flashlight`（U152）、`gps-sma`（U190），同步7张本款官图代码重绘 `reference-redraw` PNG。三款均导出 `Model` / `GroveModule` / `spec`，提供真实四芯 `grove`；Thermal2/GPS SMA另有被动 `sensor`，FlashLight仅实际 `mode` / `light` 输出组件，没有传感器锚点。该批完成时本地106款（14主机、92Unit），全部 `modeled`、`verified` 为0；公开Git仍85款 `ad5d062`，后续二十一款本地增量未自动再次推送。完整API、配置、来源和三分支四芯例见[Thermal2/FlashLight/GPS SMA](THERMAL2-FLASHLIGHT-GPS-UNITS.md)。
+
+Thermal2严格使用本款黑色下凹MLX90640采集头、ESP32-PICO-D4、实际PCB/蜂鸣器和两原壳舌，`button` / `reset` 压放/取消后原顶点精确回位；`rgb` 只独立外驱。没有显示、内生热成像、测温、报警、声音或MCU复位逻辑。相同外壳来源不表示可套NCIR2器件/贴纸。
+
+FlashLight的 `light` 是固定白光外驱灯，接受 `on` / `brightness`，拒绝重设RGB颜色；内部 `mode` 是两档稳定Button，默认闭壳不接pointer，`covers:false`开盖配置才可看/操作，仍保留真实壳数据与固定PCB丝印。`setPosition(0|1)` 或 `type:'button',action:'position'`只改变实体档位且不回送输入，不生成Flash/Torch脉冲、功率、电气或热行为。正文/原理图/背贴5000…5700K与规格表6000…6500K存在冲突，固定预览色不是校准色温，详见单品来源/反馈。
+
+GPS SMA的 `sma` 接真实可拆 `Antenna`，默认 `antenna:false`，`antenna:true`装入完整有源带线puck；不是LoRa胶棒，不造铰链。`sma/shape` 接毫米局部中心线points，更新同轴与末端puck，保持固定SMA/Grove和本体；点集限制/名义1m与当前曲线长见专门指南和组件状态。壳24×64×8与含SMA24×71.4×8分别记录。蓝1PPS未证实外露光路，不注册外露LED，不生成GNSS/RF/定位/NMEA或线缆物理行为。
+
+总入口别名 `Thermal2Unit` / `Thermal2UnitModule`、`FlashlightUnit` / `FlashlightUnitModule`、`GpsSmaUnit` / `GpsSmaUnitModule` / `GpsSmaAntenna`；按需loader ID为三款slug。各模型/模块分别传 `artwork:false`，保留对应闭壳/开盖/天线配置的全部物理attributes/index和世界矩阵。本批私表无精确原稿，重绘不是照片裁片，字体/颜色/注册与不可辨小字限制按单品来源保留。私表、私有链接/原稿名、矢量、官图/CAD原件、生成器和中间件仅留仓库外。必要专项 `node scripts/check-thermal2-flashlight-gps-units.mjs`，综合结果见[本批进度](../artifacts/thermal2-flashlight-gps-expansion/progress.json)，不增加逐面浏览器、全量历史或实物验收结论。
+
+## 此前：DCSSR / NCIR2 / Reflective IR
+
+前批新增 `dcssr`（U140）、`ncir2`（U150）、`reflective-ir`（U175），同步6张 `reference-redraw` PNG。三款均提供 `Model` / `GroveModule` / `spec`、四芯 `grove` 和被动 `sensor`。该批完成时本地103款（14主机、89Unit），全部保持 `modeled`、`verified` 为0；公开Git基线仍为85款 `ad5d062`，随后十八款本地增量尚未再次推送。完整接口、配置和三分支四芯示例见[DCSSR/NCIR2/Reflective IR](DCSSR-NCIR2-REFLECTIVE-IR-UNITS.md)。
+
+DCSSR为完整直流SSR套件，控制板和整机包络分别记录；中央 `button`、`rgb`、`power-led`、`ssr-led` 独立，四个 `ssr-screw-1`…`ssr-screw-4` 只改变螺钉头角度。`terminal-1` / `terminal-2` 各为 `ht3.96-4p`，`terminalPlug:true` 安装两只独立 `TerminalPlug`，各含四枚 `screw-1`…`screw-4`。按钮只发输入意图，灯和头角必须由调用方驱动，不实现继电/模式/Modbus或电气。
+
+NCIR2保留真实TO39测温头、正面原壳舌 `button`、侧面原生一体壳舌 `reset`、`rgb` 和蜂鸣器实体；复位按键只发输入意图，不执行MCU复位，不虚构显示屏或声音输出。Reflective IR保留两颗真实IR收发封装、背面 `threshold` 电位器和固定红 `status-led`（实际壳内PCB灯，无新增外窗或穿壳halo）；电位器只外驱有限角/时长并拒非零RPM，不驱动检测距离、比较器或可见IR光束。总入口别名为 `DcssrUnit` / `DcssrUnitModule` / `DcssrTerminalPlug`、`Ncir2Unit` / `Ncir2UnitModule`、`ReflectiveIrUnit` / `ReflectiveIrUnitModule`。
+
+三款原稿在私表中均无精确匹配，按已授权本款官图代码重绘，标 `reference-redraw`，不是照片裁片；字体/颜色、不可辨小字及贴图注册限制见单品研究。每个独立模型/模块传 `artwork:false` 关闭印刷，保留对应配置的全部物理attributes/index与世界矩阵。私表、私有链接、原稿名、矢量、官图/CAD原件、生成器和中间件仅留本地。必要专项为 `node scripts/check-dcssr-ncir2-reflective-ir-units.mjs`，综合检查范围以[本批进度](../artifacts/dcssr-ncir2-reflective-ir-expansion/progress.json)为准，没有逐面浏览器、全量历史或实物验收结论。
+
+## 此前：Watering / HBridge v1.1 / DLight
+
+前批新增 `watering`（U101）、`dlight`（U136）、`hbridge-v11`（U160-V11），均导出 `Model` / `GroveModule` / `spec`，提供四芯 `grove` 与被动 `sensor`。该批完成时本地100款（14款主机、86款Unit），全部保持 `modeled`、`verified` 为0；GitHub `main` 仍为85款 `ad5d062`，随后十五款本地增量未自动再次推送。完整调用、配置和三分支四芯线见[Watering/DLight/HBridge](WATERING-LIGHT-HBRIDGE-UNITS.md)。
+
+Watering的 `inlet` / `outlet` 是两只真实 `silicone-tube-4mm` 机械口，拒绝Grove。产品 `Hose` 的总入口别名为 `WateringHose`；默认构造不装管，`hoses:true` 装入双管，配置菜单先列 `supplied-hoses` 再列裸本体。嵌套 `inlet/shape` / `outlet/shape` 接受 `{type:'shape',points:[[0,0,0],…]}`，点的单位为mm，管口局部首段沿+Y且至少6mm，起点必须 `[0,0,0]`；总计3…16个有限点，每轴范围±500mm，相邻点至少相距1mm。管道仅改变外观形状，没有水流、压力、泵驱动、液位或土壤数值。整机没有确证外露LED、按钮或可见转子，内部电机不注册虚构旋转关节。
+
+DLight严格对应U136 BH1750FVI-TR，原壳24×32×8 mm，真实2.9×5.7 mm光学开窗后方有独立透明封装、被动暗色感测die和白PCB背衬。只有 `grove` 和被动 `sensor`，没有灯、按钮、关节、光束、lux/ADC/光学或I2C行为；P1/P2仅为隐藏未装配制造焊盘，不造用户插口。
+
+HBridge的 `source`、`address-1`…`address-4` 是PCB上的五枚稳定 `Button`，实际位于壳内；默认闭壳，控件不接受画布pointer。`covers:false` 是开盖检查配置，可看/操作这些真实滑块；不是在闭壳表面新增开关。外驱 `position` 只移动实体，不执行电源选择、电压或地址运算。`terminal` 类型为 `ht3.96-4p`；产品入口另导出 `TerminalPlug`，模型以 `terminalPlug:true` 安装，并提供四个独立 `screw-1`…`screw-4` 外驱螺钉。`capacitor:true` 必须同时 `terminalPlug:true`，电容跨同一插头的前两槽，不新增插口，也不执行电机/供电行为。配置菜单保留闭壳三种附件组合和开盖检查配置，无LED API。
+
+总入口模型别名为 `WateringUnit` / `WateringUnitModule`、`DlightUnit` / `DlightUnitModule`、`HbridgeV11Unit` / `HbridgeV11UnitModule`；附件别名为 `WateringHose` / `HbridgeV11TerminalPlug`。按需加载ID为 `watering`、`dlight`、`hbridge-v11`。
+
+本批同步5张PNG：Watering机背1张 `source-vector-raster` 为精确原稿轮廓恢复，电机铭牌1张 `reference-redraw`；DLight背贴1张、HBridge正背2张同为 `reference-redraw`。源恢复不宣称未经修改的原稿直接导出。每个模型/模块分别传 `artwork:false`，在对应软管、端子、电容和盖配置下保留完整物理attributes/index与 `matrixWorld`。私表、私有链接、原稿名、矢量、原始官图/CAD、生成器与中间件不分发。必要专项入口为 `node scripts/check-watering-light-hbridge-units.mjs`；这里只登记入口，构建、接线、在线资源与隐私结果以本批进度报告为准，不预先声称综合通过，不新增逐面浏览器、全量历史或实物验收结论。
+
+## 此前：Tube Pressure / MQ / LoRaE220-920
+
+前批新增 `tube-pressure`（U130）、`mq`（U199）、`lora-e220-920`（U170），均导出 `Model` / `GroveModule` / `spec`，提供四芯 `grove` 和被动 `sensor`。该批完成时本地97款（14款主机、83款Unit），全部保持 `modeled`、`verified` 为0；GitHub `main` 仍是 `ad5d062` 的85款快照，随后十二款本地增量未自动再次推送。完整调用、配置菜单与三分支四芯线见[Tube Pressure/MQ/LoRa](RADIO-GAS-PRESSURE-UNITS.md)。
+
+Tube Pressure的 `tube` 是前向单气嘴机械口 `tube-3mm`，无电气pin，拒绝Grove。真实Ø3mm气嘴、贯通管腔与独立感测背衬保留；原壳24×32×8 mm与含气嘴24×32×12.5 mm分别记录，没有第二气嘴、灯、按钮或旋转关节，不运行压力、气流、导管网络或电压逻辑。
+
+MQ默认装入真实圆脚MQ-5感测封装，`mq5Cartridge:false`仅拆下圆罐，固定六孔座和内部适配板保留。`mq5`类型为 `mq5-six-pin`，产品入口导出 `MQ5Cartridge`，总入口别名 `Mq5Cartridge`；可经 `port('mq5').detach({dispose:false})` 和 `.attach(cartridge)`独立拆装。名义/原CAD24×64×25 mm保留厂家壳体口径；默认含圆罐实际包络约24×80.31×25 mm，拆罐后约24×64.4×25 mm，属于安装/照片推导，不能把厂家64mm标注套到含罐整机或缩壳凑数。无确证外露LED；隐藏D1封装不提供灯API，不执行加热、气敏电阻、ADC、报警或电气逻辑。
+
+LoRa严格对应U170 E220-900T22S/920版。`mode-0` / `mode-1`为两枚稳定DIP：`press`切换、`release`保留档位，`cancel`结束本来源输入而不发送click；外部 `{type:'button', target:'mode-0', action:'position', position:1}`设置档位不回送输入。档位不改变串口、M0/M1电气网络或RF状态。`sma`是 `sma-female`；产品 `Antenna` 的总入口别名为 `LoraE220920Antenna`，`Antenna.meta.physicalConnector === 'sma-male'`记录真实公针，`meta.connector === 'sma-female'`表示可接入的主端口类型。默认 `antenna:false`显示本体，`antenna:true`装入随附110mm天线，`antennaAngleDeg`指定初始角。嵌套 `sma/tilt`接受 `angleDeg` / `durationMs`，范围0…90°，拒绝越界角和非零RPM；形状插值不产生RF、扫描或制造限位保证。本体名义24×71.4×8 mm包含SMA，不包含天线。配置菜单的首项为带天线、次项裸本体；MQ另列正常安装/拆罐配置，菜单默认展示与构造器默认选项分别记录。
+
+本批同步8张PNG：Tube背贴1张 `reference-redraw`；MQ精确背标1张 `source-vector-raster`，标题、空白识别贴与MQ-5银圈印字3张 `reference-redraw`；LoRa正背与固定DIP的ON/1/2字样3张 `reference-redraw`。固定DIP字样不随滑块移动，MQ银圈字样属于可拆圆罐。各模型/模块分别传 `artwork:false`，关闭印刷保留各配置的完整实体attributes/index及物理世界姿态。私表、私有链接、原稿名、矢量、原始官图/CAD、生成器与中间件不分发。必要专项入口为 `node scripts/check-radio-gas-pressure-units.mjs`；这里只登记入口，两构建、接线、在线资源与隐私结果以本批进度报告为准，不预先声称综合通过，不新增逐面浏览器、全量历史或实物验收结论。
+
+## 此前：ADC v1.1 / AMeter / VMeter
+
+前批新增 `adc-v11`（U013-V11）、`ameter`（U086）、`vmeter`（U087），均导出 `Model` / `GroveModule` / `TerminalPlug` / `spec`，提供 `grove`、`terminal` 和被动 `sensor`。该批完成时本地94款（14款主机、80款Unit），全部保持 `modeled`、`verified` 为0；GitHub `main` 仍是 `ad5d062` 的85款快照，随后九款本地增量未自动再次推送。完整调用、三分支四芯线与附件边界见[ADC/AMeter/VMeter](ADC-METER-UNITS.md)。
+
+ADC v1.1 的 `terminal` 是 `ht3.96-2p`，随附插头提供 `screw-1`…`screw-2`；AMeter与VMeter的 `terminal` 是 `ht3.96-4p`，随附插头各提供 `screw-1`…`screw-4`。三款均以 `terminalPlug:true` 安装，或通过 `port('terminal').attach(new TerminalPlug())` 独立装入/拆下。总入口别名分别为 `AdcV11TerminalPlug`、`AmeterTerminalPlug`、`VmeterTerminalPlug`。`terminal/screw-N` 接受 `angleDeg` / `durationMs`，只转对应螺钉头，非零RPM被拒绝；无轴向紧固、压线、扭矩或电气连接行为。端子机械类型拒绝Grove。
+
+AMeter的 `power` 与VMeter的 `power-led` 各自默认关闭、接受外部亮度，不与Grove、螺钉或测量值自动联动。当前官方资料未确认发光色，固定预览色仅是外观估计；元数据保留 `colorConfirmed:false`，不能当成官方白灯规格或RGB能力。ADC v1.1没有灯、按钮或旋钮。三款 `sensor` 都是被动视觉锚点，不运行ADC采样、电流/电压、寄存器、校准、隔离、熔断、保护或固件逻辑。两款电表的名义壳体24×56×8 mm与含固定端子的24×56×10.2 mm视觉包络分别记录；ADC v1.1为24×32×10.2 mm，不缩掉真实端子来凑壳厚。
+
+本批三款各2张PNG，共6张，全部按自身型号官图代码重绘并标记 `reference-redraw`，不裁产品照片。每个独立模型或Grove模块分别传 `artwork:false`；原壳、孔、PCB、触点、插头、螺钉及物理世界姿态保持。私表、私有下载链接、原稿名、矢量、原始官图、生成器与中间件不分发。必要专项入口为 `node scripts/check-adc-meter-units.mjs`；这里只登记入口，构建、接线与在线资源结果以本批进度报告为准，不预先声称综合验证通过，也不新增逐面浏览器、全量历史或实物验收结论。
+
+前批 `timerpwr`（U189）、`extencoder`（U161）、`nfc`（U216）均提供 `Model` / `GroveModule`、`grove` 及被动 `sensor`。该批完成时为本地91款（14款主机、77款Unit），对应当时的六款Git同步后增量；调用、四芯线、附件和来源边界见[TimerPWR/ExtEncoder/NFC](TIMER-ENCODER-NFC-UNITS.md)。
+
+TimerPWR的 `lcd` 是64×48白单色OLED，接受外部RGBA framebuffer后按亮度显示，不自动画计时器或电池状态。`button-a` / `button-b`沿真实原生侧弹舌压下/弹起，`press` / `release` / `cancel` 按各自来源处理；`power-led`为独立固定红灯，屏幕、按键与灯不自动联动。`usb`是 `usb-c-charge-only`，`battery`是 `mx1.25-2p`，仅提供机械配对与视觉元数据，不运行充电/供电状态机。
+
+ExtEncoder的 `encoder` 为 `vh2.54-5p` 五芯机械接口；本体没有旋钮、按钮、LED或转子。`terminalPlug:true`安装随附插头；产品入口导出 `TerminalPlug`，总入口别名为 `ExtEncoderTerminalPlug`。`encoder/screw-1`…`screw-5`分别接受 `angleDeg` / `durationMs`，只转真实螺钉头、拒绝非零RPM；不产生ABZ、计数、压线、电压或轴向紧固。NFC严格对应U216 ST25R3916，只有 `grove` 与被动 `sensor`，没有扫描、标签、读写、卡模拟、RF场或灯/按钮命令；隐藏天线布线与安装为已标明的外观推导。
+
+本批同步8张PNG：TimerPWR4张、ExtEncoder2张标记 `reference-redraw`；NFC正背2张标记 `source-vector-raster`，恢复转换器复合字形填充规则后保留原轮廓与填色，不宣称原稿未经修改直接导出。各模型/模块分别传 `artwork:false`；私表、下载链接、原稿名、矢量、生成器和中间件不分发。必要专项入口为 `node scripts/check-timer-encoder-nfc-units.mjs`；这里只登记入口，构建、接线与在线资源结果以本批进度报告为准，不新增逐面浏览器、全量历史或实物验收结论。
+
+本地后续新增 `dac2`（U012-B）、`dds`（U105）、`kmeter-iso-v11`（U133-V11），均提供 `Model` / `GroveModule`、`grove` 及被动 `sensor`，没有新增可见LED或按钮。三款接口、可拆附件、四芯线和外部职责见[DAC2/DDS/KMeter](DAC-DDS-KMETER-UNITS.md)；这批属于 `ad5d062` 的85款Git同步之后的本地增量。
+
+DAC2的 `terminal` 为 `ht3.96-4p`，`terminalPlug:true` 安装随附插头；产品入口的 `TerminalPlug` 全局别名为 `Dac2TerminalPlug`。`terminal/screw-1`…`screw-4` 独立接受 `angleDeg` / `durationMs`，只转螺钉头，拒绝非零RPM；固定座、PCB、其他螺钉和Grove线保持。A0/A1/A2保留真实固定焊盘/跳线，不生成外露DIP开关。模型不处理DAC值、电压、电流或短路保护。
+
+DDS的 `sma` 机械类型为 `sma-female`；模型轴总包络24×71.4×8 mm包含SMA，原壳24×64×8 mm单独保留。壳上波形曲线属于固定印刷，不是外驱信号波形。KMeter的 `thermocouple` 机械类型为 `thermocouple-k-mini-flat`，保留真实K型扁槽与触点；没有猜测尺寸的热电偶 `Probe` 模块或温度/冷端补偿命令。两口都拒绝Grove，接口类型只约束机械配对。
+
+本批同步7张PNG：DAC2正背2张为 `source-vector-raster`，原稿复合字形的填充规则从 `evenodd` 恢复为 `nonzero`；DDS正背2张为同型号官图 `reference-redraw`；KMeter正背2张为对应v1.1原稿栅格，前图导出透明度为0的圆环依对应预览恢复为半透明，K座印字另有1张 `reference-redraw`。这些恢复不宣称未经修改的原稿导出。每个模型/模块单独传 `artwork:false`，固定物理实体保持；私有表、源链接、矢量及生成中间件不分发。专项入口为 `node scripts/check-dac-dds-kmeter-units.mjs`，运行结果以对应报告为准，不新增逐面浏览器或实物验收结论。
+
+
 `laser-tx`（U066）提供独立固定红色 `emitter`，默认关闭，只表现自身650nm印字对应的发射孔/透镜外观；`laser-rx`（U065）仅有 `grove` 和被动 `sensor`，深色接收头不注册为灯。两款没有按钮、关节、光束、光斑、通信或TX/RX状态联动。`midi`（U187）提供稳定 `mode`（0=左Bypass，1=右Separate）、独立固定绿 `power-led`（默认关闭）、`grove` 与被动 `sensor`。型号、命令、三分支四芯线和边界见[Laser/MIDI](LASER-MIDI-UNITS.md)。
 
 MIDI 的 `midi-in-din` / `midi-out-din` 使用 `din-5pin-female`；`midi-in-trs` / `midi-out-trs` / `audio` 共享 `audio-3.5mm-trs` 机械配对类型，各自 `meta` 保留输入、输出和音频用途。机械配对不证明引脚、电平、光学或MIDI/音频电气兼容，改档不路由信号或产生声音。模型轴40×48×25 mm，厂商尺寸顺序48×40×25 mm。

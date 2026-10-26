@@ -1,0 +1,70 @@
+{
+  "id": "rca",
+  "sku": "U155",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Readable exact-model rear label and internal I1/I2 PCB silk newly code-drawn and rasterized as final ordinary PNGs;official photographs are references only.No photo crop or preview enlargement.",
+  "sources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/RCA/img-366b7aa4-2cef-4656-9ef6-c84cb29a3d96.webp",
+      "sha256": "43fe6660eb8adb4b76252e4d66801744c6ef3be034f5b5c62970427dc635c342"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/RCA/img-79e486a0-6319-4dcb-b902-0bca703b1581.webp",
+      "sha256": "5753581253d3fd58010b5bd12af2032020a8f6e79688afa4f9a7138e5d621406"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/rca/reference-redraw-back.png",
+      "sha256": "ada3b554f965eacd075c1a7f3d18c433c21a3dddc930c215239320a1acb440fe",
+      "pixels": [
+        2592,
+        1952
+      ],
+      "sizeMm": [
+        16.2,
+        12.2
+      ],
+      "positionMm": [
+        0,
+        7,
+        -3.8
+      ],
+      "face": "back",
+      "target": "RCA complete native assembled front and rear shell",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/rca/reference-redraw-pcb.png",
+      "sha256": "9185b1c2d2381d2a8004021cc5dee79b08172276830dc8baad330ba6a9a6b5d2",
+      "pixels": [
+        1560,
+        440
+      ],
+      "sizeMm": [
+        7.8,
+        2.2
+      ],
+      "positionMm": [
+        0,
+        -0.8,
+        -0.35
+      ],
+      "face": "front",
+      "target": "RCA fixed green PCB with genuine mounting reliefs and retaining bore",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    }
+  ],
+  "limitations": [
+    "Typography,color,small strokes and physical print registration are reconstructed appearance.",
+    "Default closed shell occludes internal PCB silk;covers:false hides rear-cover label and keeps real PCB silk in place.",
+    "No unreadable identifiers,QR,serial numbers,private sources,vector files,generators or intermediates distributed."
+  ],
+  "rights": "Product names,original printed designs and trademarks retain respective rights."
+}

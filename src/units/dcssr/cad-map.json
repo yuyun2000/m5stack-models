@@ -1,0 +1,43 @@
+{
+  "sku": "U140",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U140_Unit_DCSSR/Structures/Unit_DCSSR.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "31f129577fba098c07f6f2b1c5d550ae0f546b51",
+  "sha256": "7f1ddd4aca945b9f7088e40dff520884e70299f138f63b43e679dac4886b3d36",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/LICENSE",
+  "origin": [
+    8.93600082397461,
+    0,
+    9.600000381469727
+  ],
+  "axes": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "DCSSR complete native controller shell with integral button tongue",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "notes": "Component 0 is the complete assembled native controller shell (2654 triangles = displaced components 1+2). One rigid -90 degree Z rotation and translation; no scaling/cuts/fills. This exact U140 path resolves to the same source blob as the U139 controller shell. The U140 drawing 45 x 30.7 x 11.5 mm includes the external fork lugs, while the closed shell alone is 44.94 x 18.74 x 11.5 mm. Full DC SSR case/guards/installed transform are reconstructed from U140 photographs; the approximately 45 x 80 x 31 mm kit envelope is an appearance estimate, not an official U140 dimension. Original integral tongue flexes only during external button actuation; rest vertices/normals restored exactly."
+}

@@ -1,16 +1,16 @@
 # m5stack-models.js
 
-本库提供 M5Stack 主机与 Unit 的毫米尺度交互模型，支持实体按键压放、旋钮/推子/稳定开关、外驱灯光、屏幕 framebuffer 和 Grove 多级接线。最新增加 Laser TX、Laser RX 与 MIDI，并同步6张正背参考重绘贴纸。TX 的固定红色 `emitter` 只改变真实发射孔外观；RX 保留非发光接收头；MIDI 提供稳定 `mode` 滑块、独立固定绿 `power-led`、双 DIN 与三个 TRS 机械接口。接入、四芯线和职责见[Laser/MIDI](docs/LASER-MIDI-UNITS.md)。前批[Earth/Hall/QRCode](docs/EARTH-HALL-QRCODE-UNITS.md)、[Step16/ASR/UHF](docs/STEP-ASR-UHF-UNITS.md)与[Mini IMU/EXT.IO2/ACSSR](docs/IMU-EXTIO-ACSSR-UNITS.md)继续保留。各款保持 `modeled`，检查范围以对应报告为准。
+本库提供M5Stack主机与Unit的毫米尺度交互模型，支持实体按键压放、旋钮/推子/稳定开关、外驱灯光、屏幕framebuffer和Grove多级接线。本地最新增加RS485-ISO、AIN4-20mA、AC Measure，同步6张PNG：前两款各2张参考重绘，AC正背2张原稿恢复栅格。三款保留真实固定端子与可拆四螺钉插头；RS485-ISO有随插头装拆的终端电阻和独立外驱灯，AIN4-20mA有六根真实针及五个可拆跳帽位置，AC Measure保留本款隔离/采集封装。内部协议、供电、数值、测量和电气由外部框架实现。[本批接入](docs/ISOLATED-INTERFACE-UNITS.md)与此前[BLDC Driver/RCA/Puzzle](docs/BLDC-RCA-PUZZLE-UNITS.md)等记录保留，全部 `modeled`；必要专项为 `node scripts/check-isolated-interface-units.mjs`，综合范围以[本批进度](artifacts/isolated-interface-expansion/progress.json)为准。
 
 [本地增量批次索引](docs/LOCAL-EXPANSION.md)汇总当前工作区的模型、API与检查点，供查阅模型、API和各批检查范围。
 
-[2026-10-26源码同步范围](docs/GIT-SYNC-2026-10-26.md)说明本次85款增量、素材边界与尚未完成的视觉/装配验收。
+本次Git同步包含 **112款：14款主机、98款Unit**，从85款基线新增27款Unit及59张对应贴纸PNG；范围、必要检查与保留事项见[112款源码同步记录](docs/GIT-SYNC-112-2026-10-26.md)。此前[85款同步记录](docs/GIT-SYNC-2026-10-26.md)保留为历史快照，当前提交与远端状态以Git日志及GitHub main为准。
 
 Weight-I2C 与8Servos现可选择随附的可拔插4P螺钉端子，四个螺钉角度独立外驱；默认空座、固定几何与Grove连接保留。用法见[可拆端子接入](docs/UNIT-TERMINALS.md)。
 
 此前43款的贴纸批次保留：每款默认外观至少有一处印刷，部分面仍缺；50张参考重绘PNG尚未完成全批复核。原稿栅格、参考重绘和7款可选中文教学版的准确范围见[贴纸覆盖记录](docs/STICKER-COVERAGE.md)。
 
-基于 Three.js 与 sticks3.js 建模方法的 M5Stack 毫米尺度交互模型库。目前包含 **14款主机、71款Unit，共85款模型**，全部保持 `modeled`，`verified` 为0。此前各批验收记录均对应各自源码快照。
+基于 Three.js 与 sticks3.js 建模方法的 M5Stack 毫米尺度交互模型库。当前本地包含 **14款主机、98款Unit，共112款模型**，全部保持 `modeled`，`verified` 为0。此前各批验收记录均对应各自源码快照。
 
 近期校正 **Thermal／Angle／Encoder PCB孔内壁**：保留原孔位与实体曲面，修正默认FrontSide下不可见的内壁；旋转、按压回弹及Grove接线接口保持。新的回归覆盖真实孔内壁法线与定向闭合，历史单品验收仍对应各自源码快照。
 

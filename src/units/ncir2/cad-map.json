@@ -1,0 +1,48 @@
+{
+  "sku": "U150",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/d3ae864f161167af3f9698214012e1d135adc357/Products/U150_Unit_NCIR2/Structures/Unit_NCIR2.stl",
+  "commit": "d3ae864f161167af3f9698214012e1d135adc357",
+  "gitBlob": "28161543d5830a53dbfabab1962d12f960e7d35e",
+  "sha256": "ef35cc3e33cf111ce6048a2c59c4f9fb9602be809a2244889f708e150428ed81",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/d3ae864f161167af3f9698214012e1d135adc357/LICENSE",
+  "origin": [
+    12.3197518,
+    24,
+    -4.5
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "NCIR2 complete native front shell and integral flexure tongue",
+      "material": "shell"
+    },
+    {
+      "component": 3,
+      "name": "NCIR2 complete native rear cover",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "notes": "All14066 native assembled front/rear triangles retained at scale1 under one common translation only. Components1/2 are displaced duplicate front/rear shells. Integral U-shaped front tongue and true side reset tongue, optical lip, real acoustic and RGB holes, mounting bores, side reset opening, Grove cutout, rear recess and M5 relief remain intact. PCB, MLX90614, buzzer, controls, population, Grove interior and fastener installation are appearance reconstruction. The original front tongue flexes locally under input; no source triangle is removed."
+}

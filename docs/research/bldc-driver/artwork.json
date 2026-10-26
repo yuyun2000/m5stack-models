@@ -1,0 +1,70 @@
+{
+  "id": "bldc-driver",
+  "sku": "U181",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Readable own-model front U/V/W/COM and BLDC DRIVER/GVDC label and rear STM32G030/DRV11873/PORT.A.I2C/pin marks newly code-drawn and rasterized as final ordinary PNGs.Official photos are references only.No photographic crop or preview enlargement.",
+  "sources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-BLDC%20Driver/img-5cb8951d-04a1-4685-a209-402bd3d4d350.webp",
+      "sha256": "8e4ebb9117c74b21382c2280f05606aad9fc36f28a774e50370625ce221fb611"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-BLDC%20Driver/img-f04bc991-460e-4f62-985d-f1e9e174b415.webp",
+      "sha256": "cf861e2e1015fa96a205b53637c6161ce7f9ef4813267bd83342fc10bd0dc2f6"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/bldc-driver/reference-redraw-front.png",
+      "sha256": "2d8b71ffad16d93553d2e1c0c7c071e06c7853853def448ff3798ae5aff4c5a5",
+      "pixels": [
+        2528,
+        2320
+      ],
+      "sizeMm": [
+        15.8,
+        14.5
+      ],
+      "positionMm": [
+        0,
+        -1.25,
+        3.8
+      ],
+      "face": "front",
+      "target": "BLDC Driver complete native assembled front and rear shell",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/bldc-driver/reference-redraw-back.png",
+      "sha256": "db4482f68e1d85d4866f44e0442a9157ea104c04c75f0c96f44112415983b0fc",
+      "pixels": [
+        2592,
+        1952
+      ],
+      "sizeMm": [
+        16.2,
+        12.2
+      ],
+      "positionMm": [
+        0,
+        7,
+        -4
+      ],
+      "face": "back",
+      "target": "BLDC Driver physical rear adhesive label substrate over native label recess",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    }
+  ],
+  "limitations": [
+    "Typography,colors,small strokes and print registration are reconstructed appearance.",
+    "Physical rear adhesive substrate remains with artwork:false;PCB backs native rear label recess independently of texture.",
+    "Native front shell projection preserves real mounting/connector openings.No QR,serial,unreadable identifiers,vector originals,private mappings or intermediates distributed."
+  ],
+  "rights": "Product names,original printed designs and trademarks retain respective rights."
+}

@@ -10,6 +10,68 @@
 
 清单依据：`catalog/products.json`、下表所列公开源码，以及 `src/modeling/artwork.js`。原表行、原始下载地址、原素材文件名、矢量及私有素材索引不在本文中记录。
 
+## RS485-ISO / AIN4-20mA / AC Measure 同步印刷
+
+2026-10-26。本批三款同步6张PNG，每款2张。RS485-ISO和AIN4-20mA采用自身官图代码重绘 `reference-redraw`；AC Measure采用精确机身正背原稿恢复栅格 `source-vector-raster`，保留原色，恢复转换中的 `evenodd`→`nonzero`字腔填充，包装排除。承载实体、真实端子/孔口、电阻/六针/跳帽与PCB/采集封装独立存在，不裁产品照片、不编不可辨字、不借贴纸遮缺件。字体、颜色、安装与配准推导见各款来源记录。
+
+[新增Unit表](UNIT-STICKER-ADDITIONS.md)现列69款，当前catalog112款（14主机、98Unit），全部 `modeled`、`verified` 为0。公开Git仍85款 `ad5d062`，随后二十七款本地增量未自动再次推送。各实例 `artwork:false`保持对应盖/插头/电阻/跳帽配置全部物理attributes/index及世界矩阵。必要专项 `node scripts/check-isolated-interface-units.mjs`与[本批指南](ISOLATED-INTERFACE-UNITS.md)对应，综合范围以[本批进度](../artifacts/isolated-interface-expansion/progress.json)为准；未新增逐面浏览器、全量历史或实物验收。私表、私有链接/原稿名、矢量、官图CAD原件、生成器和中间件仅留仓库外。
+
+## BLDC Driver / RCA / Puzzle 同步印刷
+
+2026-10-26。本批三款同步6张 `reference-redraw` PNG（BLDC Driver 2、RCA 2、Puzzle 2），私表无精确原稿，按已授权本型号官图代码重绘。BLDC Driver正背、RCA背壳与PCB固定标、Puzzle背面双Grove方向标分别归属真实承载件；正面矩阵不是贴纸。不裁产品照片、编造不可读字或借印刷盖缺件；字体/颜色和配准推导见单品研究。
+
+该批完成时[新增Unit表](UNIT-STICKER-ADDITIONS.md)列66款，当时catalog109款（14主机、95Unit），全部 `modeled`、`verified` 为0。公开Git仍85款 `ad5d062`，后续二十四款本地增量未自动再次推送。各实例 `artwork:false` 保持插头/闭壳/开盖配置全部物理attributes/index和世界矩阵，包含实际64灯/隔光栅格/插座/壳内滑钮。必要专项 `node scripts/check-bldc-rca-puzzle-units.mjs` 与[本批指南](BLDC-RCA-PUZZLE-UNITS.md)对应，综合结果以本批进度为准；未增加逐面浏览器、全量历史或实物验收。原表、私有链接/原稿名、矢量、官图CAD原件、生成器/中间件仅留仓库外。
+
+## Thermal2 / FlashLight / GPS SMA 同步印刷
+
+2026-10-26。本批新增三款同步7张 `reference-redraw` PNG（Thermal2 2、FlashLight 2、GPS SMA 3）；私表无精确原稿，按已授权本型号官图代码重绘。Thermal2不套NCIR2标签，FlashLight背壳与PCB固定模式标分层，GPS本体和随附puck分别印刷，不裁产品照片或用贴纸遮缺件。字体、颜色、可辨小字与配准推导保留在单品研究。
+
+该批完成时[新增Unit表](UNIT-STICKER-ADDITIONS.md)列63款；当时catalog106款（14主机、92Unit），全部 `modeled`、`verified` 为0。公开Git仍85款 `ad5d062`，后续二十一款本地增量未自动再次推送。各配置 `artwork:false` 保持完整物理attributes/index及世界矩阵，包含真实原壳舌、开盖模式开关与天线装拆。必要专项 `node scripts/check-thermal2-flashlight-gps-units.mjs` 与[本批指南](THERMAL2-FLASHLIGHT-GPS-UNITS.md)对应，综合范围以本批进度为准；未增加逐面浏览器、全量历史或实物验收。原表、私有链接/原稿名、矢量、官图CAD原件、生成器和中间件留仓库外，公开最终普通PNG及安全配准/来源。
+
+## DCSSR / NCIR2 / Reflective IR 同步印刷
+
+2026-10-26。本批新增三款同步6张 `reference-redraw` PNG（DCSSR 2、NCIR2 2、Reflective IR 2），私表无精确原稿，按已授权同型号官图代码重绘。公开最终普通PNG和配准，不公开原表、私有链接/原稿名、矢量、原始官图/CAD、生成器或中间件；不裁产品照片、不用贴纸遮缺件。具体可辨范围、字体/颜色和注册推导见单品研究。
+
+该批完成时[新增Unit表](UNIT-STICKER-ADDITIONS.md)列60款，当时catalog103款（14主机、89Unit），全部 `modeled`、`verified` 为0。Git基线仍85款 `ad5d062`，后十八款本地增量未自动再次推送。`artwork:false` 保持完整物理attributes/index及世界矩阵，包含真实收发管/感测头、电位器孔和可拆端子配置；必要专项 `node scripts/check-dcssr-ncir2-reflective-ir-units.mjs` 与[本批指南](DCSSR-NCIR2-REFLECTIVE-IR-UNITS.md)对应。本批检查不代表逐面浏览器、全量历史或实物验收。
+
+## Watering / DLight / HBridge 同步印刷
+
+2026-10-26本地新增三款同步接入5张PNG：Watering精确机背原稿轮廓恢复1张 `source-vector-raster`，电机铭牌1张 `reference-redraw`；DLight背贴1张、HBridge正背2张均为同型号官图代码重绘 `reference-redraw`。不裁产品照片，不套用相近型号，不用贴纸掩盖缺件；DLight前面无贴纸，真实光学窗后有透明感测封装与白PCB背衬。Watering机背的源恢复不宣称原稿未经修改直接导出，恢复范围与字体/颜色/物理配准推导见各款记录。
+
+该批完成时[新增Unit表](UNIT-STICKER-ADDITIONS.md)列57款，保留此前54款与以下原43款及各批验收快照。当时本地100款（14主机、86Unit），全部保持 `modeled`、`verified` 为0；GitHub `main` 仍为85款 `ad5d062`，随后十五款本地增量未自动再次推送。
+
+各模型/模块分别传 `artwork:false`，对应配置的完整物理attributes/index和 `matrixWorld` 保持。Watering默认不装双管、`hoses:true` 安装，双软管是外驱形状而非水流；HBridge五枚真实稳定滑块在壳内，默认闭壳不接受pointer，`covers:false`开盖检查才可看/操作。HBridge端子可单独插拔，电容附件必须配插头并跨同一插头的前两槽，无新增接口或电气逻辑。API、配置与必要专项入口见[本批指南](WATERING-LIGHT-HBRIDGE-UNITS.md)和 `node scripts/check-watering-light-hbridge-units.mjs`；两构建、接线、在线资源和隐私结果以对应进度报告为准，不预先声称综合验证、逐面浏览器、全量历史或实物验收通过。私表、私有链接、原稿名、矢量、原始官图/CAD、生成器与中间材料留仓库外，公开仅最终普通PNG、配准及安全来源说明。
+
+## Tube Pressure / MQ / LoRaE220-920 同步印刷
+
+2026-10-26本地新增三款同步接入8张PNG：Tube Pressure背贴1张 `reference-redraw`；MQ精确机身背标1张 `source-vector-raster`，机名标题、空白识别贴与MQ-5银圈字样3张 `reference-redraw`；LoRa正背及固定DIP的ON/1/2共3张 `reference-redraw`。不裁产品照片当贴纸，不把重绘称原稿，不借印刷遮盖缺件。Tube气嘴正面无贴纸，背面贴纸下方的原生M5浮雕保留；MQ空白标不补造气体名称，银圈字样归属可拆感测圆罐；LoRa固定DIP字样不随两枚滑块移动。可辨范围、原稿转换/恢复、字体/颜色及配准推导以单品记录为准。
+
+该批完成时[新增Unit表](UNIT-STICKER-ADDITIONS.md)列54款，保留此前51款与以下原43款及各批验收快照。当时本地97款（14主机、83Unit），全部保持 `modeled`、`verified` 为0；GitHub `main` 仍为85款 `ad5d062`，随后十二款本地增量未自动再次推送。
+
+各模型/模块分别传 `artwork:false`，保留当前配置的物理attributes/index和世界姿态，包括真实管嘴、感测背衬、固定六孔座、内部适配板、可拆MQ-5、两DIP及可折叠天线。MQ名义/CAD24×64×25 mm与默认含罐约24×80.31×25 mm、无罐约24×64.4×25 mm分别记录；LoRa默认构造不装天线，配置菜单先列带天线再列裸本体。API、配置、三分支四芯线和必要专项入口见[本批指南](RADIO-GAS-PRESSURE-UNITS.md)与 `node scripts/check-radio-gas-pressure-units.mjs`。两构建、接线、在线资源和隐私结果以对应进度报告为准，不预先声称综合验证、逐面浏览器、全量历史或实物验收通过。私表、私有链接、原稿名、矢量、原始官图/CAD、生成器与中间素材留仓库外，公开仅最终普通PNG、配准及安全来源说明。
+
+## ADC v1.1 / AMeter / VMeter 同步印刷
+
+2026-10-26本地新增三款同步接入6张PNG，三款各2张，全部按自身型号官方照片代码重绘，标记 `reference-redraw`。所提供表格无这三款精确原稿，不裁产品照片，不套相似型号。ADC v1.1固定2P座正负标与后侧ADS1110/I2C标严格对应U013-V11；AMeter、VMeter各自正背印刷按对应研究记录保留，可辨范围、字体/颜色和物理注册仍含照片推导。
+
+该批完成时[新增Unit表](UNIT-STICKER-ADDITIONS.md)列51款，保留此前48款及其他历史快照，不合并以下原43款或既有回补验收。当时本地94款（14主机、80Unit）均保持 `modeled`、`verified` 为0，对应GitHub85款 `ad5d062` 之后的九款本地增量。
+
+各模型/模块分别传 `artwork:false` 关闭印刷，真实壳体、原孔、PCB、触点、可拆插头、螺钉和物理世界姿态保持。AMeter的 `power` 与VMeter的 `power-led` 是独立外驱亮度光路，固定预览色仅为外观估计，发光色未确认、`colorConfirmed:false`，不作为官方白灯或RGB规格。两款电表名义8mm壳厚与含固定端子10.2mm总厚分别记录。调用与必要专项入口见[ADC/AMeter/VMeter](ADC-METER-UNITS.md)和 `node scripts/check-adc-meter-units.mjs`；构建、接线与在线资源结果以本批进度报告为准，不预先声称综合验证、逐面浏览器、全量历史或实物验收通过。私表、私有下载链接、原稿名、矢量、原始官图、生成器与中间材料留仓库外，公开仅最终普通PNG、配准及安全来源说明。
+
+## TimerPWR / ExtEncoder / NFC 同步印刷
+
+2026-10-26本地新增三款同步接入8张PNG，单独计数。TimerPWR4张（正面机名、按键提示、顶侧接口、背贴）与ExtEncoder2张（固定五芯座接口标、背贴）为自身型号官图代码重绘，标记 `reference-redraw`；TimerPWR不把屏幕内容当贴纸，ExtEncoder不套用带旋钮的Encoder。NFC正背2张使用U216 ST25R3916精确原稿，复合字形填充由 `evenodd` 恢复 `nonzero` 后保留原轮廓及填色，标记 `source-vector-raster`，不宣称未经修改直接导出。
+
+该批完成时[新增Unit表](UNIT-STICKER-ADDITIONS.md)列48款，保留此前45款和其他历史快照；此处不并入下列原43款或既有回补验收。当时本地91款（14主机、77Unit）均保持 `modeled`、`verified` 为0；对应GitHub85款 `ad5d062` 之后的六款本地增量。
+
+各模型/模块分别传 `artwork:false` 关闭印刷，真实壳体、原孔、按键/显示/插座和天线实体保持。API、三分支四芯线和检查入口见[TimerPWR/ExtEncoder/NFC](TIMER-ENCODER-NFC-UNITS.md)，必要专项为 `node scripts/check-timer-encoder-nfc-units.mjs`；运行、构建与在线字节结果以本批进度报告为准，不在此预先宣称通过或增加逐面浏览器、全量历史、实物验收结论。私表、私有下载链接、原稿名、矢量、生成器与中间材料继续留在仓库外，仅最终普通PNG、配准与来源说明进入公开目录。
+
+## DAC2 / DDS / KMeter-ISO v1.1 同步印刷
+
+2026-10-26本地后续新增三款，同步接入7张PNG并独立计数。DAC2正背2张优先使用精确原稿，标记 `source-vector-raster`；恢复范围是复合字形填充规则 `evenodd`→`nonzero`，保留原轮廓、填色及可见面。DDS正背2张按同型号官方照片代码重绘，标记 `reference-redraw`，印刷曲线/框图不生成信号。KMeter使用U133-V11对应正背原稿2张，前图导出为alpha0的圆环依对应预览恢复半透明；K座可辨印字另有1张参考重绘。源恢复不宣称原稿未经修改直接导出，原稿层与重绘层按单品记录分别标识。
+
+DAC2可拆4P插头和独立螺钉、DDS完整SMA母口及KMeter实际K型扁槽的用法见[DAC2/DDS/KMeter](DAC-DDS-KMETER-UNITS.md)。每个实例分别传 `artwork:false` 关闭本批贴层，真实实体和原孔保持。私表、下载URL、原稿名、矢量、生成器与中间素材继续留在仓库外，公开仅普通PNG、配准及来源说明。本批不合并以下历史43款、此前30款回补或36/39/42款新增快照；必要专项与构建/在线资源结果以对应记录为准，没有逐面浏览器或实物验收结论。
+
 ## Laser TX / Laser RX / MIDI 同步印刷
 
 2026-10-26新增三款同步接入6张正背 `reference-redraw` PNG，各款2张，独立计数。所提供表格未检索到对应精确型号原稿，按用户已授权的同型号官方图代码重绘方式补齐；不裁产品照片，不分发原图或矢量。TX自身650nm/OUT、RX的IN及MIDI的接口/模式印字作为外观保留；不据此执行光学、GPIO、MIDI路由或音频行为。不可辨文字及配准推导见各款记录。

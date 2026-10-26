@@ -1,0 +1,218 @@
+{
+  "id": "thermal2",
+  "sku": "U149",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Thermal2",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "query": "Unit Thermal2 U149 dimensions hardware buttons RGB MLX90640",
+    "rawResponseDistributed": false,
+    "result": "Own U149:ESP32-PICO-D4,MLX90640 32x24/110x75,SK6812 RGB,LS1 buzzer,S2 functional switch,S1 EN reset,6-pin DownloadSocket,4-pin extension,red HY2.0-4P Grove;no display documented."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Thermal2 Unit/img-71205bff-6de0-4b79-88f3-1756a52c3cf9.webp",
+    "sha256": "d4614e93e9b6dcbe98bdac20b7774508348ea032f9b2ea54d9119d9b919de7b3"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/d3ae864f161167af3f9698214012e1d135adc357/Products/U149_Unit_Thermal2/Structures/Unit_Thermal2.stl",
+      "commit": "d3ae864f161167af3f9698214012e1d135adc357",
+      "gitBlob": "28161543d5830a53dbfabab1962d12f960e7d35e",
+      "sha256": "ef35cc3e33cf111ce6048a2c59c4f9fb9602be809a2244889f708e150428ed81",
+      "license": "MIT; preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Thermal2 Unit/img-af8390fb-5df9-4811-867f-25a5fade4809.webp",
+      "sha256": "e9b59aa2efe5bef65f96988dd41c3fd52e13045dbc1f2dcf9ef64a0a98ab5d44"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Thermal2 Unit/img-71205bff-6de0-4b79-88f3-1756a52c3cf9.webp",
+      "sha256": "d4614e93e9b6dcbe98bdac20b7774508348ea032f9b2ea54d9119d9b919de7b3"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/738/U149-package.jpg",
+      "sha256": "5905586c186a9054169a9d3de40c7c72b947436a2a240d58a24fd4362caa00d0"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Thermal2 Unit/img-a08584df-9aff-4fcd-8422-1c36401986dd.webp",
+      "sha256": "4b45423e2e9d43af86ce7ec8f8f17f79bcbcebe0d7657080e5b55f0b36bf3833"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Thermal2 Unit/img-64cdbff8-eec2-4584-aa72-41f689143603.webp",
+      "sha256": "7c6f310de28e720d4e639056685b3a1cc7fb6e08e740a1ac297b9cc5fedb605a"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Thermal2 Unit/img-5ab96af1-cf9e-4ceb-a3fe-5107f9f3ef38.webp",
+      "sha256": "e832e552c57728129a8846e02c16d996f805830d4a616fe25313f33d3794eb00"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Thermal2 Unit/img-0f585676-503c-4d71-9f0c-18217edff1af.webp",
+      "sha256": "4f8fa0dfdc24d2191c2b5a1356d805012d1dc1799b6c003f9897802e90596ae3"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Thermal2 Unit/img-e4586e43-44fa-48fb-a034-47cd8578cc0f.webp",
+      "sha256": "b515c113d7652a845f9142c2c965d6f98fef66683a90c2b52219612b3fc1fbbd"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Thermal2 Unit/img-6f7f04da-d235-4214-be3b-4ac5b702a426.webp",
+      "sha256": "25ec3e75a6f44ddf10894d94f23562431797343611c65f99760ba773de31a12e"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/603/SCH_UNIT-THERMAL2.pdf",
+      "sha256": "02185a965d8d8877dc4f6eb6cf674d2fac859d5e2dc253db13b307003def249b"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/603/SCH_UNIT-THERMAL2_sch_01.png",
+      "sha256": "3fe925cd9795eb9759a2bbb0e9469bb56750d7c3c7ab766c5751bc364b91ed6f"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0,
+      3
+    ],
+    "triangles": 14066,
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      12.3197518,
+      24,
+      -4.5
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "notes": "All14066 native assembled front/rear triangles retained at scale1 under one common translation only. Components1/2 are displaced duplicate front/rear shells. Integral U-shaped front tongue, optical lip, real acoustic and RGB holes, mounting bores, side reset opening, Grove cutout, rear recess and M5 relief remain intact. PCB, MLX90640, buzzer, controls, population, Grove interior and fastener installation are appearance reconstruction. The original front tongue flexes locally under input; no source triangle is removed."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      48,
+      8
+    ],
+    "vendorDimensionOrderMm": [
+      48,
+      24,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24.00003147125244,
+      48.00349426269531,
+      8.550000190734863
+    ],
+    "visualEnvelopeMm": [
+      24.00003147125244,
+      48.00349426269531,
+      8.550000190734863
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -12
+      ],
+      [
+        8,
+        -12
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "sensorCentreMm": [
+      0,
+      16
+    ],
+    "photoInferredSensorPackageMm": {
+      "bodyDiameter": 8.9,
+      "headerDiameter": 9.12,
+      "filterDiameter": 2.3,
+      "installedTop": 4.5
+    },
+    "dimensionEvidence": "Own U149 product specification48x24x8mm;native original assembly retained atscale1 with raised optical lip giving8.55mm source envelope.Optic diameter/profile/installed Z and concealed assembly details are exact-model photo-based appearance reconstruction,not manufacturing dimensions."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 2,
+    "sourceDetails": "docs/research/thermal2/artwork.json",
+    "originalsDistributed": false
+  },
+  "scope": "Physical shell,PCB,black concave MLX90640 optic,passive acoustic structure,real original integral front/side tongues,external RGB,four-contact Grove and passive sensor anchor.No thermal image/framebuffer,temperature,threshold,alarm,sound/audio,IR beam,calibration,MCU reset,electrical,register,I2C or firmware simulation.",
+  "inferred": [
+    "PCB outline/plane and concealed ESP32/passive population placement",
+    "Black concave optic profile/diameters/installed Z,header/lead installation",
+    "Buzzer chamber/diaphragm dimensions and installed plane",
+    "Both native tongue flexure masks/travel and tactile switch installation",
+    "RGB physical light pipe and installed lens plane",
+    "Grove cavity/contact dimensions,screw installation and artwork registration"
+  ],
+  "conflicts": [
+    {
+      "id": "rgb-pin-print",
+      "observed": "Own annotated official image and rear photograph read RGB G37;own schematic LED1 DIN is GPIO27.",
+      "modelDecision": "Reproduce visible G37 surface print as appearance only;no electrical semantics.",
+      "feedback_id": "2cfdbc5a135e4a09a808058ec8d42954",
+      "status": "unresolved"
+    }
+  ],
+  "notes": [
+    "Own U149 structure has same gitBlob as U150 but no NCIR2 sensor,electronics or artwork is substituted.",
+    "Two original integral native shell tongues deform independently,retain every source triangle and restore exact source buffers.",
+    "Front button travel0.25mm andside reset0.2mm are visual estimates;input-only reset does not change external RGB.",
+    "Six download andfour extension pads remain drilled solder pads,not public connector ports.",
+    "Two reference-redraw PNGs;full browser visual review deferred."
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/thermal2/assembly.js",
+      "sha256": "3ea221e447934bb4079570e64b07ae620147fd62658684b184d684855b26f2d1"
+    },
+    {
+      "path": "src/units/thermal2/buttons.js",
+      "sha256": "ca0a1b0debc50beacfc77dd51b1b40f41138f4efc62d995d931f4be0c03c57df"
+    },
+    {
+      "path": "src/units/thermal2/cad-map.json",
+      "sha256": "a7b7efbb7d20ef6116c19823ed62f7eaf7c36fcb3fc4bc46ed0f0720ea25c536"
+    },
+    {
+      "path": "src/units/thermal2/dimensions.js",
+      "sha256": "c3e9e8bb2f731768e82c88aabf04ee682372545d68128385e1660b0e81b3cbaf"
+    },
+    {
+      "path": "src/units/thermal2/geometry-data.js",
+      "sha256": "407b4cc41735784929434275c24b41af428ba8a12850ccc0fd6c5a8626d49f08"
+    },
+    {
+      "path": "src/units/thermal2/index.js",
+      "sha256": "9d426cff358d792ff9fbeeb33e58d182b7925c85fa5d313636cefff117178e73"
+    },
+    {
+      "path": "src/units/thermal2/reference-redraw-back.png",
+      "sha256": "416519019c82e838d8fef427a093435ae335201391dff285de2878659b09b8b8"
+    },
+    {
+      "path": "src/units/thermal2/reference-redraw-front.png",
+      "sha256": "397991f5c79dda53f8bf5966bf9a6770d31663267ca2ffc49aca352cc3ddd183"
+    },
+    {
+      "path": "src/units/thermal2/stickers.js",
+      "sha256": "c04a1b58e4226ab5cd601188a5bd6c5ea780b3c039a1f119c8c25cf0f343304c"
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "checkedAt": "2026-10-26T11:51:34.999Z",
+  "status": "pass",
+  "scope": "Necessary local U190 exact CAD and true mounting/SMA bore FrontSide walls,complete fixed assembly,actual male active cabled puck,external cable/puck pose and invalid-state preservation,independent attach/refit,per-configuration artwork physical-buffer/world-pose invariance,nested four-wire Grove pose and resource release.No browser/full suite,production-fit,cable physics,GNSS,NMEA,RF,positioning,electrical,firmware or physical hardware verification.",
+  "meshes": 123,
+  "triangles": 65258,
+  "nativeTriangles": 6592,
+  "cadEnvelopeMm": [
+    24,
+    64,
+    8
+  ],
+  "visualEnvelopeMm": [
+    24,
+    71.40000019073486,
+    8
+  ],
+  "suppliedAntennaEnvelopeMm": [
+    199.6231766871023,
+    154.14515686035156,
+    18.699999809265137
+  ],
+  "boreRays": 10,
+  "boreWalls": 16,
+  "smaWalls": 8,
+  "maleWalls": 4,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        -38,
+        0.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 13,
+      "purpose": "Grove real recessed dielectric rear wall"
+    },
+    {
+      "origin": [
+        -3,
+        -38,
+        0.8
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 9,
+      "purpose": "Grove separate metal contact1"
+    },
+    {
+      "origin": [
+        -1,
+        -38,
+        0.8
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 9,
+      "purpose": "Grove separate metal contact2"
+    },
+    {
+      "origin": [
+        1,
+        -38,
+        0.8
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 9,
+      "purpose": "Grove separate metal contact3"
+    },
+    {
+      "origin": [
+        3,
+        -38,
+        0.8
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 9,
+      "purpose": "Grove separate metal contact4"
+    },
+    {
+      "origin": [
+        0,
+        45,
+        0
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Female SMA true recessed contact backing"
+    },
+    {
+      "origin": [
+        0,
+        28,
+        10
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 8,
+      "purpose": "Native front retention window reveals actual SMA hex body"
+    },
+    {
+      "origin": [
+        0,
+        28,
+        -10
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 8,
+      "purpose": "Native rear retention window reveals same SMA hex body"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Grove real recessed dielectric rear wall",
+      "hit": "GPS SMA Grove rear wall",
+      "distanceMm": 12.300000011920929
+    },
+    {
+      "purpose": "Grove separate metal contact1",
+      "hit": "GPS SMA Grove contact 1",
+      "distanceMm": 7.700000095367432
+    },
+    {
+      "purpose": "Grove separate metal contact2",
+      "hit": "GPS SMA Grove contact 2",
+      "distanceMm": 7.700000095367432
+    },
+    {
+      "purpose": "Grove separate metal contact3",
+      "hit": "GPS SMA Grove contact 3",
+      "distanceMm": 7.700000095367432
+    },
+    {
+      "purpose": "Grove separate metal contact4",
+      "hit": "GPS SMA Grove contact 4",
+      "distanceMm": 7.700000095367432
+    },
+    {
+      "purpose": "Female SMA true recessed contact backing",
+      "hit": "GPS SMA SMA recessed centre contact blind end",
+      "distanceMm": 10.100000001341108
+    },
+    {
+      "purpose": "Native front retention window reveals actual SMA hex body",
+      "hit": "GPS SMA SMA retained internal hex body visible through both native windows",
+      "distanceMm": 6.869999885559085
+    },
+    {
+      "purpose": "Native rear retention window reveals same SMA hex body",
+      "hit": "GPS SMA SMA retained internal hex body visible through both native windows",
+      "distanceMm": 6.86999988555908
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove",
+      "sma"
+    ],
+    "anchors": [
+      "sensor"
+    ],
+    "controls": [],
+    "joints": [],
+    "leds": [],
+    "accessoryExports": [
+      "Antenna"
+    ],
+    "accessoryComponents": [
+      "sma/shape"
+    ],
+    "options": {
+      "antenna": false,
+      "antennaPoints": "optional3–32 xyz points in SMA module-port frame"
+    },
+    "shape": {
+      "pointCount": [
+        3,
+        32
+      ],
+      "axisBoundMm": 1500,
+      "firstPoint": [
+        0,
+        0,
+        0
+      ],
+      "firstSegment": "along+Y,atleast18mm",
+      "minAdjacentDistanceMm": 2,
+      "command": {
+        "type": "shape",
+        "target": "sma/shape",
+        "points": "xyz millimetre arrays"
+      },
+      "state": {
+        "points": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            20,
+            0
+          ],
+          [
+            25,
+            40,
+            0
+          ],
+          [
+            75,
+            20,
+            0
+          ],
+          [
+            80,
+            -40,
+            0
+          ],
+          [
+            35,
+            -65,
+            0
+          ],
+          [
+            15,
+            -25,
+            0
+          ],
+          [
+            35,
+            20,
+            0
+          ],
+          [
+            80,
+            10,
+            4
+          ],
+          [
+            90,
+            -40,
+            4
+          ],
+          [
+            35,
+            -85,
+            4
+          ],
+          [
+            5,
+            -35,
+            4
+          ],
+          [
+            30,
+            35,
+            8
+          ],
+          [
+            100,
+            25,
+            8
+          ],
+          [
+            110,
+            -45,
+            8
+          ],
+          [
+            65,
+            -110,
+            8
+          ],
+          [
+            20,
+            -95,
+            8
+          ],
+          [
+            -10,
+            -50,
+            8
+          ],
+          [
+            -45,
+            -35,
+            8
+          ]
+        ],
+        "space": "module-port",
+        "nominalCableLengthMm": 1000,
+        "curveLengthMm": 994.7867586044886,
+        "cableOuterDiameterMm": 2.8,
+        "cableStartMm": [
+          0,
+          10,
+          0
+        ],
+        "puckMm": [
+          38,
+          36,
+          13
+        ],
+        "puckCableEntryPositionMm": [
+          -45,
+          -35,
+          8
+        ],
+        "puckQuaternion": [
+          0,
+          0,
+          0.5507137633572748,
+          0.8346941660565669
+        ],
+        "dimensionsInferred": true
+      }
+    }
+  },
+  "artwork": {
+    "pngCount": 3,
+    "bodyPanels": 2,
+    "antennaPanels": 1,
+    "kind": "reference-redraw",
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "coaxAndPuckExternalPose": "pass",
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 212
+}

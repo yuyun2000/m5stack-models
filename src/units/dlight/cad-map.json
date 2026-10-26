@@ -1,0 +1,43 @@
+{
+  "sku": "U136",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/d3ae864f161167af3f9698214012e1d135adc357/Products/U136_Unit_DLight/Structures/Unit_DLight.stl",
+  "commit": "d3ae864f161167af3f9698214012e1d135adc357",
+  "gitBlob": "a4e50dab7010e94e854abd240c733785519fa48d",
+  "sha256": "3867628ca9c342e7d7030c020ddddea05c1ab94aef6f7ad8a3eda4ebfb98f18a",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/d3ae864f161167af3f9698214012e1d135adc357/LICENSE",
+  "origin": [
+    -397.2688293457031,
+    225.22348022460938,
+    4
+  ],
+  "axes": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "DLight complete native assembled front and rear shell",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "notes": "All3216 native assembled front/rear triangles retained at scale1 under one common translation and proper180-degree Y rotation only. Components1/2 are displaced duplicate rear/front shells. Front optical window, mounting bores, Grove cutout, rear label recess and M5 relief remain unchanged. PCB, BH1750FVI package and optical backing, HT7533 and passive population, concealed P1/P2 solder pads, Grove interior and fastener installation are visual reconstruction."
+}

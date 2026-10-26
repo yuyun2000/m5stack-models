@@ -1,0 +1,191 @@
+{
+  "id": "ameter",
+  "sku": "U086",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Ameter%20Unit",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "query": "Unit AMeter U086 dimensions connector hardware ADS1115; Unit AMeter U086",
+    "rawResponseDistributed": false,
+    "result": "Own U086 product confirms ADS1115, CA-IS3020S, isolated DC-DC, EEPROM0x51/ADC0x48,4A fuse and LED power indication, Grove and suppliedHT3.96-4P. Search VMeter/Color schematic hits excluded."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Ameter%20Unit/img-3cbee12f-6812-4276-8c4c-7d77f24af99a.webp",
+    "sha256": "f7fa0af1d8bb963457080520c5c70d678362306f1f148dc3e2d6136f543212d3"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U086_Unit_AMeter/Structures/Unit_AMeter.stl",
+      "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+      "gitBlob": "32cdeaa6f6712770ecec08b67b8916bf0d5d047a",
+      "sha256": "1eb88e10b91bae6fde8b541aa76c3c25770e0cdf4a9da5992bc5f298d969a405",
+      "license": "MIT; preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Ameter%20Unit/img-c6537146-ee26-435c-96e7-4726cc9cfb7c.webp",
+      "sha256": "4d761d226cbc8bae15f10396e402d956eeab59fe3b36cb68583d42c0ad421568"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Ameter%20Unit/img-deb01365-ce11-48d3-a572-d7efefe804c6.webp",
+      "sha256": "9fcaaa7ca5ec583115f00f2721a3d007c7637ff091031502fea212a39cc34bf4"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Ameter%20Unit/img-fadd1196-34ca-4efc-883c-91dc7291a793.webp",
+      "sha256": "ad7301d021adfbe3ec39cf03d74b06289773dd9be1863dba6518aded7991d393"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Ameter%20Unit/img-939ef304-a995-4fc9-9bfc-6cde1034d198.webp",
+      "sha256": "09ba89c28d271d00c68fce1b417068e03a97faa025cf983b64a9aef9a6334f36"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Ameter%20Unit/img-3cbee12f-6812-4276-8c4c-7d77f24af99a.webp",
+      "sha256": "f7fa0af1d8bb963457080520c5c70d678362306f1f148dc3e2d6136f543212d3"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Ameter%20Unit/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+      "sha256": "9a9f09918d22d8ea79572ddc396b9fb4d3c6d6a4d4b0acc5fa64ea3cf9d06993"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0,
+      2
+    ],
+    "triangles": 5630,
+    "excludedComponents": [
+      1,
+      3
+    ],
+    "origin": [
+      0,
+      28,
+      -4
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "notes": "All native 3032 rear and2598 front triangles retained at scale1 under one common translation. Components1/3 are displaced duplicate shells. Native mounting bores, LED slot and connector apertures remain unchanged. Concealed PCB population and physical connectors are separate appearance reconstruction."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      56,
+      8
+    ],
+    "vendorDimensionOrderMm": [
+      56,
+      24,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      56,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24.000062942504883,
+      56.00003252029419,
+      10.200000005960465
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -16
+      ],
+      [
+        8,
+        -16
+      ]
+    ],
+    "mountingHoleDiameterMm": 4.85,
+    "dimensionEvidence": "Own U086 dimension drawing explicitly8mm shell/10.2mm complete fixed-terminal depth,4.85mm minimum bore. Native faceted geometry retained."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 2,
+    "sourceDetails": "docs/research/ameter/artwork.json",
+    "originalsDistributed": false
+  },
+  "externalLeds": [
+    {
+      "id": "power",
+      "colorMode": "fixed-white",
+      "color": "#fff6d5",
+      "colorConfirmed": false,
+      "colorEvidence": "Own official LED callout, real slot and yellow phosphor-like bare-board package; warm-white appearance estimate, exact emitted colour unspecified.",
+      "default": "off",
+      "scope": "Independent external on/brightness only; no RGB or automatic power/measurement behavior"
+    }
+  ],
+  "scope": "Physical shell, connectors, external plug screw angles, fixed indicator appearance and passive anchor only. No values, ADC,current, fuse melting, protection, calibration, isolation, I2C, electrical or firmware behavior.",
+  "inferred": [
+    "PCB outline, installed plane and concealed package placement",
+    "Toroidal winding/package dimensions and hidden converter installation",
+    "Connector cavity internals, accessory mating clearance and screw details",
+    "Lens depth and colour-unconfirmed white appearance estimate",
+    "Printed artwork registration"
+  ],
+  "feedback": {
+    "feedback_id": "50ef770e4de548bf891c91e00ed8fe2f",
+    "accepted": true,
+    "summary": "Own table8mm versus drawing10.2mm full depth; hero0.15626mA versus body0.3mA; exact LED emitted colour and own schematic missing."
+  },
+  "notes": [
+    "Terminal n is spatial left-to-right slot index; own plus-left/minus-right groups are appearance labels, not schematic numbering or electrical connectivity.",
+    "Official productHT3.96-4P and packageVH3.96-4P both identify3.96mm pitch; noVH2.54 asset used."
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/ameter/TerminalPlug.js",
+      "sha256": "a20c3c51d796f3e089e7b8ccb1d933da56f65cf4d8b75075023e4022f4f59a4d"
+    },
+    {
+      "path": "src/units/ameter/assembly.js",
+      "sha256": "1e987716f7afe1e72f035a70ac0c084a182b534ff3d19467b3bab075818c1ab4"
+    },
+    {
+      "path": "src/units/ameter/cad-map.json",
+      "sha256": "f187c49b262b0027828a6ea082121839d7b6a7297ca91fe5710bb8a83d96a483"
+    },
+    {
+      "path": "src/units/ameter/dimensions.js",
+      "sha256": "3672abb34b87e4b33c03dc1a8682e4b344bd243f4faacaa2c4bbaa21f7929ec1"
+    },
+    {
+      "path": "src/units/ameter/geometry-data.js",
+      "sha256": "c1ad71ad5f611128362f11329367f6e1c78f28edaf8ed0c6aaa97288c83e4a7c"
+    },
+    {
+      "path": "src/units/ameter/index.js",
+      "sha256": "143465330798bc528429c6548cdb02732ac88c6c5d3e342170b04c29030c4222"
+    },
+    {
+      "path": "src/units/ameter/reference-redraw-back.png",
+      "sha256": "c439116b32463ae4ba824d378279eb3618de2b234c411989d3a2338940b4581b"
+    },
+    {
+      "path": "src/units/ameter/reference-redraw-front.png",
+      "sha256": "40ecff6d0ac72cf1181d37684108a2a1ef12c0e18f21b8d0ba23155ab850d125"
+    },
+    {
+      "path": "src/units/ameter/stickers.js",
+      "sha256": "1bd2e1401c228765d0c2b731cd71b9db37a232dc05f23159b0a9300be6427151"
+    }
+  ]
+}

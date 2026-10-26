@@ -1,0 +1,183 @@
+{
+  "id": "tube-pressure",
+  "sku": "U130",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_Tube_Pressure",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "query": "Unit Tube Pressure U130 dimensions pressure connectors hardware",
+    "rawResponseDistributed": false,
+    "result": "Exact U130: MCP-H10-B200KPPN, HT7533 and five capacitors, single tube nozzle, black HY2.0-4P direct analog output; no MCU/I2C, external LED/button or rotary mechanism. Drawing explicitly separates8mm shell and4.5mm nozzle extension, total12.5mm."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/tube_pressure/tube_pressure_02.webp",
+    "sha256": "7734095fc2a5564c76435ce086add994a95e632f1cf3a23ab1895f8c5e091b64"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/d3ae864f161167af3f9698214012e1d135adc357/Products/U130_Unit_Tube_Pressure/Structures/Unit_Tube_Pressure.stl",
+      "commit": "d3ae864f161167af3f9698214012e1d135adc357",
+      "gitBlob": "d0236a8cea3d896c97244dfbf1bac5b9838b2966",
+      "sha256": "670112101ca3287fb1f1063ba43e2a6c3149e55cb89ac6fed8f08a14d4fc2848",
+      "license": "MIT; preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/tube_pressure/tube_pressure_01.webp",
+      "sha256": "3ce7470a25ecc093f7149eca919de9d4319085b64468a4eff37f85edd2e7758a"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/tube_pressure/tube_pressure_02.webp",
+      "sha256": "7734095fc2a5564c76435ce086add994a95e632f1cf3a23ab1895f8c5e091b64"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/tube_pressure/tube_pressure_03.webp",
+      "sha256": "1ac117f85c43b6198afb98c46d9d5c6b5b661c77f1c4473c69b986c5e77ff1ab"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/tube_pressure/tube_pressure_04.webp",
+      "sha256": "21cf8e008c6a9d0b0a51aef77b96872886b545e8a50f5fa8726bc0bdfce462c2"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/tube_pressure/tube_pressure_05.webp",
+      "sha256": "2d11d81287746369ab3dc3acf3315ce12d722db6adb95c79a2baa9cc2ab75b4d"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/tube_pressure/tube_pressure_06.webp",
+      "sha256": "72a95593bbbcde61b3aeffedc9d204d40e18785265922739b8295c0801afc441"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/tube_pressure/tube_pressure_07.webp",
+      "sha256": "842b89c9f5cfd62465c165c98dde99c8e5f5273e0c3ad0321a6658af6779c39e"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/tube_pressure/tube_pressure_08.webp",
+      "sha256": "f23e36ccff0c8ec28084c93d99274d2b31332298c19fb8b3b67a3094ac17905c"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/tube_pressure/tube_pressure_sch_01.webp",
+      "sha256": "a7fbec77b8955dc32bb560c807371e29141b9496b46b8c5d587551cd4e66c4c5"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/tube_pressure/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+      "sha256": "b832473286455f634b94598e7271a3447015e0c8f0ee4e9531bf6eb667234169"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      1,
+      2
+    ],
+    "triangles": 3388,
+    "excludedComponents": [
+      0,
+      3
+    ],
+    "origin": [
+      0.013,
+      4,
+      1.2
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "notes": "All 3388 native front/rear triangles retained at scale1 under one common translation only. Components0 and3 are displaced duplicates. Front sensor opening, mounting bores, Grove cutout, recessed label panel and M5 relief remain unchanged. PCB, regulator, sensor package with single real open tube nozzle, mounting screw and Grove interior are visual reconstruction."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      32,
+      12.5
+    ],
+    "vendorDimensionOrderMm": [
+      32,
+      24,
+      12.5
+    ],
+    "cadEnvelopeMm": [
+      24,
+      32,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24.000008583068848,
+      32.00000476837158,
+      12.500000095367431
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -4
+      ],
+      [
+        8,
+        -4
+      ]
+    ],
+    "mountingHoleDiameterMm": 4.85,
+    "dimensionEvidence": "Exact U130 drawing:24mm width,32mm height,8mm shell with4.5mm Ø3mm nozzle extension. Native faceted mounting bores retained, labelled minimumØ4.85mm."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 1,
+    "sourceDetails": "docs/research/tube-pressure/artwork.json",
+    "originalsDistributed": false
+  },
+  "scope": "Physical shell, PCB, packages, single genuine open tube nozzle with recessed sensing backing, Grove connector and passive anchor only. No pressure/air/flow/voltage/I2C, electrical, sensor-value or firmware simulation.",
+  "inferred": [
+    "PCB outline and installed plane",
+    "Concealed package envelopes, lead geometry and component placement",
+    "Nozzle bore diameter/depth, internal diaphragm and tiny molded recesses",
+    "Grove cavity internals, contacts, screw installation and artwork registration"
+  ],
+  "notes": [
+    "Single tube connector has no electrical pins and rejects Grove. No second differential-pressure nozzle is invented.",
+    "No external LED, button or rotary part is documented or registered.",
+    "One rear PNG only; front molded detail remains CAD geometry."
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/tube-pressure/assembly.js",
+      "sha256": "3bda230442154febbfd874a48b5950bef6fe3e2f249ec8bdbd463e2e28263098"
+    },
+    {
+      "path": "src/units/tube-pressure/cad-map.json",
+      "sha256": "a7ef25a5c42f86372116d9bf313d901c50536ba3c4395a24c527dbace86e4f9e"
+    },
+    {
+      "path": "src/units/tube-pressure/dimensions.js",
+      "sha256": "8886ca347b84ea97d784622ce2cb07e3578fee562fa86262869d640789107603"
+    },
+    {
+      "path": "src/units/tube-pressure/geometry-data.js",
+      "sha256": "88d3f44f6d92ded6d366dea11f15aba97d20995955c1cc8e77bd7f3a3c0021bf"
+    },
+    {
+      "path": "src/units/tube-pressure/index.js",
+      "sha256": "7d0d4434d767ad555922f345bece59d99d450dfefeff3c09877846776b1f9ff3"
+    },
+    {
+      "path": "src/units/tube-pressure/reference-redraw-back.png",
+      "sha256": "537b3b19c8cd09bcff8878442bb62e7aca45ff84e69a37e49c5640cf94698215"
+    },
+    {
+      "path": "src/units/tube-pressure/stickers.js",
+      "sha256": "d63b18394f79ffd3c8feb5d13fe978d4ede19766f97646aba08e5274f605e851"
+    }
+  ]
+}

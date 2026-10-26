@@ -1,0 +1,110 @@
+{
+  "id": "gps-sma",
+  "sku": "U190",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 3,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Exact-model readable front GPS/SMA mark,rear model/UART print and supplied active puck label newly code-drawn and rasterized as final ordinary PNGs. Official photos are references only;no photo pixels or enlarged previews reused.",
+  "sources": [
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-GPS%20SMA/4.webp",
+      "sha256": "004659019d971851c42f85e78aaabce2df24c1bbb9532d090ce586e6bcbfc838"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-GPS%20SMA/8.webp",
+      "sha256": "706436d86135b6ee564e5e066a878547048312bda197ccace76618435bb0a277"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-GPS%20SMA/9.webp",
+      "sha256": "78ea802691f2dc5324a3a08b6df27476b0c792d7a1ba305cd8c9007c71bf04c5"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/gps-sma/reference-redraw-front.png",
+      "sha256": "f278c41bf9bed1adeb5b49c2d0a15728e6ccdacbcc29b8bfc0acc1d305da2c44",
+      "pixels": [
+        1600,
+        3600
+      ],
+      "sizeMm": [
+        16,
+        36
+      ],
+      "positionMm": [
+        0,
+        3.2,
+        3.8
+      ],
+      "face": "front",
+      "target": "GPS SMA complete native assembled shell",
+      "kind": "reference-redraw",
+      "method": "printedArtwork",
+      "source": {
+        "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-GPS%20SMA/9.webp",
+        "sha256": "78ea802691f2dc5324a3a08b6df27476b0c792d7a1ba305cd8c9007c71bf04c5"
+      },
+      "space": "unit-body"
+    },
+    {
+      "path": "src/units/gps-sma/reference-redraw-back.png",
+      "sha256": "d85895567b329b44889335d67593f8033cea4c269fb03f6780094c29be2ce779",
+      "pixels": [
+        1600,
+        3600
+      ],
+      "sizeMm": [
+        16,
+        36
+      ],
+      "positionMm": [
+        0,
+        3.2,
+        -3.8
+      ],
+      "face": "back",
+      "target": "GPS SMA complete native assembled shell",
+      "kind": "reference-redraw",
+      "method": "printedArtwork",
+      "source": {
+        "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-GPS%20SMA/8.webp",
+        "sha256": "706436d86135b6ee564e5e066a878547048312bda197ccace76618435bb0a277"
+      },
+      "space": "unit-body"
+    },
+    {
+      "path": "src/units/gps-sma/reference-redraw-antenna.png",
+      "sha256": "719a1170a38c517cc98fc50699c57698c2d891c1763aaad0449a1841e66e48e5",
+      "pixels": [
+        3100,
+        2900
+      ],
+      "sizeMm": [
+        36.4,
+        34.4
+      ],
+      "positionMm": [
+        0,
+        18,
+        6.5
+      ],
+      "face": "front",
+      "target": "GPS SMA active antenna puck closed rounded radome",
+      "kind": "reference-redraw",
+      "method": "printedArtwork",
+      "source": {
+        "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-GPS%20SMA/4.webp",
+        "sha256": "004659019d971851c42f85e78aaabce2df24c1bbb9532d090ce586e6bcbfc838"
+      },
+      "space": "antenna-unposed-puck-frame"
+    }
+  ],
+  "limitations": [
+    "Typeface,color,physical registration and reconstructed location icon are visual estimates.",
+    "Only readable exact-model text reproduced;no private source,vector,generator,serial identifier or intermediate distributed.",
+    "Puck label follows the closed physical radome and complete external cable pose."
+  ],
+  "rights": "Original product names,printed designs and trademarks retain respective rights."
+}

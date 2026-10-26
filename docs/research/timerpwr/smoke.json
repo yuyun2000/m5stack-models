@@ -1,0 +1,132 @@
+{
+  "checkedAt": "2026-10-26T10:39:04.210Z",
+  "status": "pass",
+  "scope": "Necessary local original shell/native holes, real OLED/USB/battery/Grove backing, two native tongue press/release/cancel and exact restore, external framebuffer/LED independence, connector type rejection, four-wire Grove pose/attach/detach/disposal, artwork physical invariant. No browser/full historical/production-fit/electrical/hardware validation.",
+  "meshes": 144,
+  "triangles": 9932,
+  "cadEnvelopeMm": [
+    24,
+    40.01131820678711,
+    11
+  ],
+  "visualEnvelopeMm": [
+    24,
+    40.01131820678711,
+    11
+  ],
+  "boreRays": 10,
+  "boreWalls": 8,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        9.68,
+        10
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 7,
+      "purpose": "Screen aperture backed by real black glass volume"
+    },
+    {
+      "origin": [
+        4,
+        25,
+        -0.65
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 13,
+      "purpose": "USB mouth contains true tongue and rear insulator"
+    },
+    {
+      "origin": [
+        -5.45,
+        25,
+        -0.65
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 13,
+      "purpose": "Battery connector cavity ends on rear insulator"
+    },
+    {
+      "origin": [
+        0,
+        -25,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Grove cavity has actual rear wall"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Screen aperture backed by real black glass volume",
+      "hit": "display-panel",
+      "distanceMm": 5.01
+    },
+    {
+      "purpose": "USB mouth contains true tongue and rear insulator",
+      "hit": "TimerPWR USB-C real insulating tongue",
+      "distanceMm": 5.830000000000002
+    },
+    {
+      "purpose": "Battery connector cavity ends on rear insulator",
+      "hit": "TimerPWR battery connector rear insulator",
+      "distanceMm": 8.52
+    },
+    {
+      "purpose": "Grove cavity has actual rear wall",
+      "hit": "Grove rear wall",
+      "distanceMm": 10.95000001192093
+    }
+  ],
+  "nativeButtonVertices": [
+    165,
+    167
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove",
+      "usb",
+      "battery"
+    ],
+    "buttons": [
+      "button-a",
+      "button-b"
+    ],
+    "displays": [
+      "lcd"
+    ],
+    "leds": [
+      "power-led"
+    ],
+    "anchors": [
+      "sensor"
+    ]
+  },
+  "artwork": {
+    "panels": 4,
+    "kind": "reference-redraw",
+    "physicalGeometryInvariant": true
+  },
+  "nativeButtons": "press/release/cancel exact position/normal restore",
+  "externalFramebuffer": "RGBA preserved; white monochrome shader mapping only",
+  "grove": "four-wire pose/attach/detach/disposal",
+  "disposedResources": 235
+}

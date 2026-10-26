@@ -1,0 +1,86 @@
+{
+  "id": "ameter",
+  "sku": "U086",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "New code-drawn same-model text/shapes and current block diagram rasterized to final ordinary PNG. No photo crop, preview bitmap or enlargement is a runtime texture.",
+  "sources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Ameter%20Unit/img-c6537146-ee26-435c-96e7-4726cc9cfb7c.webp",
+      "sha256": "4d761d226cbc8bae15f10396e402d956eeab59fe3b36cb68583d42c0ad421568"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Ameter%20Unit/img-deb01365-ce11-48d3-a572-d7efefe804c6.webp",
+      "sha256": "9fcaaa7ca5ec583115f00f2721a3d007c7637ff091031502fea212a39cc34bf4"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Ameter%20Unit/img-fadd1196-34ca-4efc-883c-91dc7291a793.webp",
+      "sha256": "ad7301d021adfbe3ec39cf03d74b06289773dd9be1863dba6518aded7991d393"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Ameter%20Unit/img-939ef304-a995-4fc9-9bfc-6cde1034d198.webp",
+      "sha256": "09ba89c28d271d00c68fce1b417068e03a97faa025cf983b64a9aef9a6334f36"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Ameter%20Unit/img-3cbee12f-6812-4276-8c4c-7d77f24af99a.webp",
+      "sha256": "f7fa0af1d8bb963457080520c5c70d678362306f1f148dc3e2d6136f543212d3"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Ameter%20Unit/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+      "sha256": "9a9f09918d22d8ea79572ddc396b9fb4d3c6d6a4d4b0acc5fa64ea3cf9d06993"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/ameter/reference-redraw-front.png",
+      "sha256": "40ecff6d0ac72cf1181d37684108a2a1ef12c0e18f21b8d0ba23155ab850d125",
+      "pixels": [
+        1920,
+        3168
+      ],
+      "sizeMm": [
+        16,
+        26.4
+      ],
+      "positionMm": [
+        0,
+        1.95,
+        3.8
+      ],
+      "face": "front",
+      "target": "AMeter native front shell",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/ameter/reference-redraw-back.png",
+      "sha256": "c439116b32463ae4ba824d378279eb3618de2b234c411989d3a2338940b4581b",
+      "pixels": [
+        1920,
+        4080
+      ],
+      "sizeMm": [
+        16,
+        35.2
+      ],
+      "positionMm": [
+        0,
+        6.25,
+        -3.8
+      ],
+      "face": "back",
+      "target": "AMeter native rear shell",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    }
+  ],
+  "limitations": [
+    "Typography, colour, diagram arrangement and physical registration are reconstructed visual details.",
+    "Fixed print is not simulated current, isolation, calibration or ADC behavior.",
+    "No unreadable identifiers, serial numbers or QR patterns are invented. Original vectors, private tables/links, source filenames, photographs, generators and intermediate assets are not distributed."
+  ],
+  "rights": "Product names, original printed designs and trademarks retain respective rights."
+}

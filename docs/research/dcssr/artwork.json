@@ -1,0 +1,71 @@
+{
+  "id": "dcssr",
+  "sku": "U140",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Readable exact-U140 rear controller labels and DELIXI CDG1-1DD/10A DC SSR nameplate newly code-drawn then rasterized as ordinary PNGs. Official photographs are visual references only; no photographic sticker crop or preview enlargement.",
+  "sources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/DCSSR Unit/img-24d0cf2a-24c0-4930-8c51-c20df8575e19.webp",
+      "sha256": "7c7edcdecad61e88615db0d9988382dec4d16452ebb833a95e27b5c981afd3b3"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/DCSSR Unit/img-302ddfdb-8315-41a7-b26d-51d5c46aab4a.webp",
+      "sha256": "ee7367c20227eb189798eeb2255f10f30fc4a9ea801447d00e64315a2d7c6ce9"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/dcssr/reference-redraw-controller-back.png",
+      "sha256": "a29480edd372d7aafa9f04429d7b0f6f0ff1bfb6e2bde6958a5b3dd8e6bb87fc",
+      "pixels": [
+        2250,
+        900
+      ],
+      "sizeMm": [
+        41.4,
+        15.6
+      ],
+      "positionMm": [
+        0,
+        -30.63036,
+        4
+      ],
+      "face": "back",
+      "target": "Complete native controller rear shell",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/dcssr/reference-redraw-ssr.png",
+      "sha256": "fa0d16b028df121517767b41d2adac4001c7d499148a5f61b236bf8450421432",
+      "pixels": [
+        2150,
+        1450
+      ],
+      "sizeMm": [
+        43,
+        29
+      ],
+      "positionMm": [
+        0,
+        9.4,
+        13.4
+      ],
+      "face": "front",
+      "target": "Physical DC SSR nameplate support with real independent indicator opening",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    }
+  ],
+  "limitations": [
+    "Typography,color,logo/certification/bulb outlines and physical registration are reconstructed visual detail.",
+    "Unreadable SSR QR payload and serial are omitted rather than invented.",
+    "No private table,source mapping,vector,original filename or intermediate is distributed.",
+    "Product marks and reconstructed certification graphic do not establish electrical ratings or certification."
+  ],
+  "rights": "Final ordinary PNG redistribution authorized by user; product names,original printed designs and trademarks retain their respective rights."
+}

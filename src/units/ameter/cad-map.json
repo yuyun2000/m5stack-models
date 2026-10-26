@@ -1,0 +1,51 @@
+{
+  "sku": "U086",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U086_Unit_AMeter/Structures/Unit_AMeter.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "32cdeaa6f6712770ecec08b67b8916bf0d5d047a",
+  "sha256": "1eb88e10b91bae6fde8b541aa76c3c25770e0cdf4a9da5992bc5f298d969a405",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/LICENSE",
+  "origin": [
+    0,
+    28,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 0,
+      "name": "AMeter native rear shell",
+      "material": "shell",
+      "triangles": 3032
+    },
+    {
+      "component": 2,
+      "name": "AMeter native front shell",
+      "material": "shell",
+      "triangles": 2598
+    }
+  ],
+  "excludedComponents": [
+    1,
+    3
+  ],
+  "notes": "All native 3032 rear and2598 front triangles retained at scale1 under one common translation. Components1/3 are displaced duplicate shells. Native mounting bores, LED slot and connector apertures remain unchanged. Concealed PCB population and physical connectors are separate appearance reconstruction."
+}

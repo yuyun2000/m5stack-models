@@ -1,0 +1,44 @@
+{
+  "sku": "U170",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U170_Unit_LoRaE220-920/Structures/Unit_LoRaE220-920.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "2182cdc5ddb7da6b5ba7d0bcbc5b8fbae3d8ea78",
+  "sha256": "37b77c23f6301a335c4614c002d0672c8171eb6eedcc1e062c6e6312803ab1dd",
+  "license": "MIT",
+  "origin": [
+    12,
+    32,
+    0.4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 0,
+      "name": "LoRaE220-920 complete native assembled shell",
+      "material": "shell",
+      "triangles": 6614
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "notes": "All 6614 native assembled-shell triangles retained at scale1 under one common translation. Components1/2 are displaced separate rear/front copies. Native mounting bores, DIP window, SMA retention windows and Grove opening unchanged. PCB, shielded E220-900T22S(JP), coax/SMA, DIP package/sliders and accessory antenna are separately reconstructed appearance geometry."
+}

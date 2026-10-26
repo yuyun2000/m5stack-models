@@ -1,0 +1,196 @@
+{
+  "id": "dlight",
+  "sku": "U136",
+  "officialDocs": "https://docs.m5stack.com/en/unit/DLight%20Unit",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "query": "Unit DLight U136 dimensions BH1750FVI sensor hardware",
+    "rawResponseDistributed": false,
+    "result": "Exact U136:BH1750FVI-TR optical sensor,HT7533,three resistors,four capacitors,red HY2.0-4P and hidden P1/P2 unpopulated4-pad rows.No user-operated mechanism or external LED documented."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/DLight Unit/img-dbcf35a7-cc4e-4376-92c9-5a4fe5ad75aa.webp",
+    "sha256": "a593502e209680188714898e169f8ab1f833d8a50ac3f490d71f4ce1f9817706"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/d3ae864f161167af3f9698214012e1d135adc357/Products/U136_Unit_DLight/Structures/Unit_DLight.stl",
+      "commit": "d3ae864f161167af3f9698214012e1d135adc357",
+      "gitBlob": "a4e50dab7010e94e854abd240c733785519fa48d",
+      "sha256": "3867628ca9c342e7d7030c020ddddea05c1ab94aef6f7ad8a3eda4ebfb98f18a",
+      "license": "MIT; preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/DLight Unit/img-0f153f02-a61e-4071-85a9-b6af7795684f.webp",
+      "sha256": "011c2d65065d73a91593d48587a68cf37ce50052f072cef7631d1b6986e2955d"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/DLight Unit/img-dbcf35a7-cc4e-4376-92c9-5a4fe5ad75aa.webp",
+      "sha256": "a593502e209680188714898e169f8ab1f833d8a50ac3f490d71f4ce1f9817706"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/710/U136-package.jpg",
+      "sha256": "f59642dc34c2e611de74bb50967668ebbf10d6f769b3a5ef7ef1528479c7da4f"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/DLight Unit/img-532176d9-4697-40a6-ad33-1315800859b8.webp",
+      "sha256": "b49f490a3d837bd560967896615cc84bba3dbfcc8549b93b5bc4ab44ebbf94c6"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/DLight Unit/img-d10b78e0-ab82-459d-973a-a55410331462.webp",
+      "sha256": "18c6d677a45c83ca34df43e62c1d6fd81f40a8b276ff6d365d3bd40ee262685d"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/DLight Unit/img-9a2ab6a9-46e1-4236-ac22-09cb2485b086.webp",
+      "sha256": "31b5ded8a0b13bb21241f2e8efd701d80ee1c07153e2c5caa99a9f941026a204"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/710/U136_Unit_DLight_weight.jpg",
+      "sha256": "6ff9de0c37aa624d33ec312a3e042fd25c982189f6b48c8e2ec23f20d12f118c"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/DLight Unit/img-36ddf1b9-94ea-41d7-9162-0e31ee8f8130.webp",
+      "sha256": "ea8db8f9b3de0579c82a612e6210f5859f063ca11fbd11a26bc4ba4d7eb6b326"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/DLight%20Unit/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+      "sha256": "ecf30b8214bd4ccdff6d1cfa9463d6682c9d2785c2cec7320d1a9e2274a35bf4"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/hat/BH1750FVI.pdf",
+      "sha256": "a24bbf9d71afa6f66d88cbb6da6ce418d7d8762d17c3caca1137d9161936e8db"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "triangles": 3216,
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      -397.2688293457031,
+      225.22348022460938,
+      4
+    ],
+    "axes": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "scale": 1,
+    "notes": "All3216 native assembled front/rear triangles retained at scale1 under one common translation and proper180-degree Y rotation only. Components1/2 are displaced duplicate rear/front shells. Front optical window, mounting bores, Grove cutout, rear label recess and M5 relief remain unchanged. PCB, BH1750FVI package and optical backing, HT7533 and passive population, concealed P1/P2 solder pads, Grove interior and fastener installation are visual reconstruction."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      32,
+      8
+    ],
+    "vendorDimensionOrderMm": [
+      32,
+      24,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      32,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24,
+      32,
+      8.00000009536743
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -4
+      ],
+      [
+        8,
+        -4
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "opticalWindowMm": [
+      2.9,
+      5.7
+    ],
+    "sensorPackageMm": [
+      1.6,
+      3,
+      0.75
+    ],
+    "dimensionEvidence": "Exact U136 drawing:24mm width,32mm height,8mm native shell,16mm mounting pitch,nominalØ5mm mounting holes and2.9×5.7mm optical opening.ROHM WSOF6I body1.6×3mm and0.75mm maximum height.Native faceted mounting bores remain unchanged."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 1,
+    "sourceDetails": "docs/research/dlight/artwork.json",
+    "originalsDistributed": false
+  },
+  "scope": "Physical shell,PCB,non-emissive transparent BH1750FVI package with actual passive die/backing,HT7533/passives,concealed unpopulated pads,Grove and passive anchor only.No light emission,beam,lux/ADC/optical/electrical/I2C or firmware simulation.",
+  "inferred": [
+    "PCB outline and installed plane",
+    "Concealed population placement and regulator/component envelopes",
+    "Optical resin/internal die rendering and lead shape",
+    "Grove cavity/contact dimensions,screw installation and artwork registration"
+  ],
+  "notes": [
+    "P1/P2 are only concealed unpopulated drilled solder pads,no public connector is registered.",
+    "No external LED,button or rotary part is documented or registered.",
+    "One rear PNG only; front optical opening remains physical native geometry."
+  ],
+  "feedback": {
+    "id": "da4b7c91844c46b89ae2a29951908a79",
+    "status": "accepted",
+    "issue": "Own schematic EP-to-GND symbol versus linked ROHM Rev.D page16 instruction to leave exposed central pad unsoldered/unconnected; actual production footprint behavior not inferred."
+  },
+  "runtimeFiles": [
+    {
+      "path": "src/units/dlight/assembly.js",
+      "sha256": "5fde505974e33894bb9203b6e9587100d44d3b12650ecaced967b5531ac6be82"
+    },
+    {
+      "path": "src/units/dlight/cad-map.json",
+      "sha256": "79321dce29685c9d7ed31cd1cbff947064f0069040f111c78cf84909f1e9f579"
+    },
+    {
+      "path": "src/units/dlight/dimensions.js",
+      "sha256": "4aa9c121106875a6b6e5b032049f79f49c4c2f2a48512a528922f0b1ad108e48"
+    },
+    {
+      "path": "src/units/dlight/geometry-data.js",
+      "sha256": "60c669784e64614d376354b901c3753178bb038272949c6e4464f70c21ef877d"
+    },
+    {
+      "path": "src/units/dlight/index.js",
+      "sha256": "f2f048375b277e5762d138429331fbfd298a9b0089df13a9bffd716beefdf1e6"
+    },
+    {
+      "path": "src/units/dlight/reference-redraw-back.png",
+      "sha256": "e8fe607350a122b91bc972216f1e2b155e4d54429a00dd6cfe32d21efab010d6"
+    },
+    {
+      "path": "src/units/dlight/stickers.js",
+      "sha256": "d25a487a72808bb365ea3c2e4b440ceffb9d3ba7d5624f64895a216ae24b4402"
+    }
+  ]
+}

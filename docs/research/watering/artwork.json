@@ -1,0 +1,73 @@
+{
+  "id": "watering",
+  "sku": "U101",
+  "kind": "mixed-source-vector-raster-reference-redraw",
+  "status": "source-vector-raster-and-reference-redraw",
+  "originalsDistributed": false,
+  "pngCount": 2,
+  "defaultPanels": 2,
+  "files": [
+    {
+      "path": "src/units/watering/source-vector-back.png",
+      "sha256": "9c1d2bbeab2f6a6d0e9cdde9b726162d237d823608f4ce5bd89798b9aa293fab",
+      "pixels": [
+        2400,
+        3000
+      ],
+      "sizeMm": [
+        16,
+        20
+      ],
+      "positionMm": [
+        0,
+        -21,
+        -3.8
+      ],
+      "face": "back",
+      "projectionDepthMm": 0.2,
+      "target": "Watering complete native assembled shell and pump saddle",
+      "method": "printedArtwork",
+      "artworkKind": "source-vector-raster",
+      "reference": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/watering/watering_07.webp",
+        "sha256": "f02d6bcb6c178c0585bf515a197b9e39fe3221757c431f1677da14fff4f90924"
+      }
+    },
+    {
+      "path": "src/units/watering/reference-redraw-motor.png",
+      "sha256": "98caad348c74685123f36d903ce9df0dd603fc48510e8eb9cdafba73f5655371",
+      "pixels": [
+        2600,
+        1600
+      ],
+      "sizeMm": [
+        18,
+        16
+      ],
+      "positionMm": [
+        0,
+        -22.5,
+        27.3
+      ],
+      "face": "front",
+      "projectionDepthMm": 4.4,
+      "target": "Watering physical stationary EDLP600-D12B motor can",
+      "method": "printedArtwork",
+      "artworkKind": "reference-redraw",
+      "reference": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/watering/watering_04.webp",
+        "sha256": "47299e216232e3dbefc923f903623ae185aff75b31c5784dbea36aaed918c64f"
+      }
+    }
+  ],
+  "restoration": {
+    "rear": "Original standard-English source contour shapes retained; exporter fill:none loss restored using corresponding preview and exact-model official photos; nonzero compound winding; alternative Chinese educational title omitted to match standard photographed Unit.",
+    "motor": "New high-resolution code-drawn maker/model/CE text from exact U101 official motor photo; unreadable numeric/production lines and barcode omitted."
+  },
+  "limitations": [
+    "No product photograph pixels cropped, sampled, projected or enlarged into a sticker.",
+    "Rear registration and cylindrical motor registration are appearance estimates.",
+    "All configurations preserve physical attributes/index/matrixWorld when artwork:false.",
+    "Only final ordinary PNGs distributed; private tables, source URLs/filenames, vectors, originals, references, generators and intermediates excluded. Product names, printed designs and trademarks retain respective rights."
+  ]
+}

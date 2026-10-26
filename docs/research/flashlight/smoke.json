@@ -1,0 +1,240 @@
+{
+  "checkedAt": "2026-10-26T11:50:37.333Z",
+  "status": "pass",
+  "scope": "Necessary own U152 complete3422-triangle CAD,real LED/backing/PCB/Grove closure,FrontSide native/PCB bores,internal retained mode press/release/cancel/closed-pointer boundary,fixed-white independent external brightness/no-input echo,all Model/GroveModule closed/inspection artwork physical invariance,nested four-wire Grove pose/independent detach/disposal.No full historical suite,browser visual acceptance,production fit,flash protocol,thermal,power,electrical,firmware or hardware validation.",
+  "meshes": 68,
+  "triangles": 57236,
+  "nativeTriangles": 3422,
+  "sourceAssemblyTriangles": 3422,
+  "visualEnvelopeMm": [
+    24,
+    32,
+    8
+  ],
+  "cadEnvelopeMm": [
+    24,
+    32,
+    8
+  ],
+  "boreRays": 10,
+  "boreWalls": 20,
+  "opticalHits": [
+    [
+      0,
+      8,
+      0.47000000074505804
+    ],
+    [
+      0.5,
+      8,
+      0.47000000074505627
+    ],
+    [
+      -0.5,
+      8,
+      0.47000000074505627
+    ],
+    [
+      0,
+      8.4,
+      0.47000000074505627
+    ],
+    [
+      0,
+      7.6,
+      0.47000000074505804
+    ]
+  ],
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        8,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 15,
+      "purpose": "Real recessed white LED phosphor closes optical centre"
+    },
+    {
+      "origin": [
+        -2,
+        8,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 16,
+      "purpose": "Real PCB soldermask backing inside open optical well"
+    },
+    {
+      "origin": [
+        0,
+        -24,
+        0.7
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Grove insertion cavity has recessed physical rear wall"
+    },
+    {
+      "origin": [
+        -3,
+        -24,
+        0.9
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove physical contact1"
+    },
+    {
+      "origin": [
+        -1,
+        -24,
+        0.9
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove physical contact2"
+    },
+    {
+      "origin": [
+        1,
+        -24,
+        0.9
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove physical contact3"
+    },
+    {
+      "origin": [
+        3,
+        -24,
+        0.9
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove physical contact4"
+    },
+    {
+      "origin": [
+        0,
+        -4,
+        -12
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 9,
+      "purpose": "Rear retaining recess has genuine fixed screw"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Real recessed white LED phosphor closes optical centre",
+      "hit": "FlashLight D1 actual single phosphor optical surface",
+      "distanceMm": 14.529999999254942
+    },
+    {
+      "purpose": "Real PCB soldermask backing inside open optical well",
+      "hit": "FlashLight real PCB soldermask behind optical window",
+      "distanceMm": 15.430000000223515
+    },
+    {
+      "purpose": "Grove insertion cavity has recessed physical rear wall",
+      "hit": "FlashLight Grove rear wall",
+      "distanceMm": 13.85000001192093
+    },
+    {
+      "purpose": "Grove physical contact1",
+      "hit": "FlashLight Grove contact 1",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Grove physical contact2",
+      "hit": "FlashLight Grove contact 2",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Grove physical contact3",
+      "hit": "FlashLight Grove contact 3",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Grove physical contact4",
+      "hit": "FlashLight Grove contact 4",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Rear retaining recess has genuine fixed screw",
+      "hit": "",
+      "distanceMm": 8.2
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove"
+    ],
+    "anchors": [],
+    "controls": [
+      "mode"
+    ],
+    "leds": [
+      "light"
+    ],
+    "joints": [],
+    "latching": {
+      "mode": true
+    },
+    "modePositions": [
+      "flash-side",
+      "torch-side"
+    ],
+    "inspectionOption": "covers:false",
+    "fixedColors": {
+      "light": "#fffaf0"
+    }
+  },
+  "artwork": {
+    "panels": 2,
+    "kind": "reference-redraw",
+    "configurationChecks": 4,
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true,
+    "shellLabelHiddenWithCover": true,
+    "pcbSilkRemainsInInspection": true
+  },
+  "inspectionInputs": 10,
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 123
+}

@@ -1,0 +1,88 @@
+{
+  "id": "vmeter",
+  "sku": "U087",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "pngCount": 2,
+  "defaultPanels": 2,
+  "method": "Code-drawn RGBA text, lines and color blocks at150px/mm from exact U087 own official photographs. No photograph crop, photograph pixels, preview enlargement or invented unreadable marks.",
+  "sources": [
+    {
+      "kind": "official-own-product-photograph",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/vmeter/vmeter_02.webp",
+      "sha256": "4ddfba826bc74a3a28ddf02cfdfdaf5e5709f8748f27707f9411a591fd956ba0"
+    },
+    {
+      "kind": "official-own-product-photograph",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/vmeter/vmeter_06.webp",
+      "sha256": "cfde2f1806e86af7fed0112f8ec7677565f577f4ef9f40a59dfaca9271ad2925"
+    },
+    {
+      "kind": "official-own-product-photograph",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/vmeter/vmeter_07.webp",
+      "sha256": "b0e672c0a8f93784c48f2300a616eafca4115bfb49754b514ef59946aeddc644"
+    },
+    {
+      "kind": "official-own-product-photograph",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/vmeter/vmeter_sch_01.webp",
+      "sha256": "f001298a771ac9643dd618b5cde918eca1706b35311f05b65c08fb02be79db7c"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/vmeter/reference-redraw-front.png",
+      "sha256": "725dc427bf79661c68882c191a312343dd3a9eba155e7534936795bdcdf964aa",
+      "pixels": [
+        2355,
+        4005
+      ],
+      "sizeMm": [
+        15.7,
+        26.7
+      ],
+      "positionMm": [
+        0,
+        2.3,
+        3.82
+      ],
+      "face": "front",
+      "kind": "reference-redraw",
+      "method": "printedFilm",
+      "target": "Native central front recess; actual adhesive label bridges moulded clip slots"
+    },
+    {
+      "path": "src/units/vmeter/reference-redraw-back.png",
+      "sha256": "43391ff71d8e8639676533b06cdf2af84ddbd49692b3f32f6702d00d999965cc",
+      "pixels": [
+        2400,
+        5700
+      ],
+      "sizeMm": [
+        16,
+        38
+      ],
+      "positionMm": [
+        0,
+        4,
+        -3.8
+      ],
+      "face": "back",
+      "kind": "reference-redraw",
+      "method": "printedArtwork",
+      "target": "VMeter complete native rear shell"
+    }
+  ],
+  "content": {
+    "front": "+ / −; ±36V; V; Meter; ISOLATION",
+    "back": "− / +; ISOLATED; 11K / 680K; BIAS; ADS1115 16bit ADC Addr0x49; CA IS3020S; ISO DC-DC; E²PROM Addr0x53; PORT. A. I2C; SCL / SDA / 5V / GND"
+  },
+  "limitations": [
+    "Reference redraw; font metrics, exact colorimetry, tiny trace layout and registration are appearance estimates, not production artwork.",
+    "Rear illustration is static printed content, not an electrical/firmware simulation.",
+    "Front adhesive film bridges actual native clip slots; the slots and physical PCB remain present. Labels do not conceal missing subassemblies.",
+    "PNG decoded and inspected; browser and exhaustive visual acceptance deferred."
+  ],
+  "rights": "Product print, names and trademarks retain their respective rights."
+}

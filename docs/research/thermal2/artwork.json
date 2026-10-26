@@ -1,0 +1,71 @@
+{
+  "id": "thermal2",
+  "sku": "U149",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Exact-model readable front rainbow THERMAL2 label and rear sensor/button/RGB/buzzer/debug/Grove diagram newly code-drawn and rasterized as final ordinary PNGs. Official photographs serve only as references; no photo pixels or enlarged previews reused.",
+  "sources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Thermal2 Unit/img-71205bff-6de0-4b79-88f3-1756a52c3cf9.webp",
+      "sha256": "d4614e93e9b6dcbe98bdac20b7774508348ea032f9b2ea54d9119d9b919de7b3"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Thermal2 Unit/img-5ab96af1-cf9e-4ceb-a3fe-5107f9f3ef38.webp",
+      "sha256": "e832e552c57728129a8846e02c16d996f805830d4a616fe25313f33d3794eb00"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/thermal2/reference-redraw-front.png",
+      "sha256": "397991f5c79dda53f8bf5966bf9a6770d31663267ca2ffc49aca352cc3ddd183",
+      "pixels": [
+        2366,
+        689
+      ],
+      "sizeMm": [
+        18.2,
+        5.3
+      ],
+      "positionMm": [
+        0,
+        -4.4,
+        3.8
+      ],
+      "face": "front",
+      "target": "Thermal2 complete native front shell and integral flexure tongue",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/thermal2/reference-redraw-back.png",
+      "sha256": "416519019c82e838d8fef427a093435ae335201391dff285de2878659b09b8b8",
+      "pixels": [
+        2106,
+        3536
+      ],
+      "sizeMm": [
+        16.2,
+        27.2
+      ],
+      "positionMm": [
+        0,
+        6.4,
+        -3.8
+      ],
+      "face": "back",
+      "target": "Thermal2 complete native rear cover",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    }
+  ],
+  "limitations": [
+    "Typeface,color and physical registration are reconstructed visual detail.",
+    "Tiny ambiguous bottom pin annotations omitted; only clearly readable label content reproduced.",
+    "Observed rear RGB G37 print is preserved as appearance only despite own schematic GPIO27; feedback2cfdbc5a135e4a09a808058ec8d42954.",
+    "No private source,vector,generator or intermediate distributed."
+  ],
+  "rights": "Product names,original printed designs and trademarks retain respective rights."
+}

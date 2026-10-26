@@ -1,0 +1,256 @@
+{
+  "checkedAt": "2026-10-26T11:20:53.807Z",
+  "status": "pass",
+  "scope": "Necessary local exactU101 physical source/assembly, true pipe and mounting bores/FrontSide walls, actual probe/boards/packages, external hollow-hose poses/invalid rollback/independent remove/refit, per-configuration artwork physical buffer and world-pose invariance, four-core Grove attach/pose/independent detach/resource release. No browser/full suite, production fit, water/pumping/moisture/ADC/electrical/firmware or physical hardware verification.",
+  "meshes": 107,
+  "triangles": 30452,
+  "nativeTriangles": 9930,
+  "visualEnvelopeMm": [
+    26.5,
+    192.8000030517578,
+    33
+  ],
+  "cadEnvelopeMm": [
+    24,
+    111.99475860595703,
+    32.973106384277344
+  ],
+  "suppliedHosesEnvelopeMm": [
+    112.94283294677734,
+    192.8000030517578,
+    35.29768524169922
+  ],
+  "boreRays": 20,
+  "boreWalls": 32,
+  "waterRays": 6,
+  "waterWalls": 16,
+  "hoseWalls": 4,
+  "waterEndHits": [
+    {
+      "id": "inlet",
+      "distanceMm": 21.69999999403954,
+      "pointMm": [
+        -0.8,
+        23.30000000596046,
+        21.15
+      ]
+    },
+    {
+      "id": "inlet",
+      "distanceMm": 21.699999994039537,
+      "pointMm": [
+        0,
+        23.300000005960463,
+        21.15
+      ]
+    },
+    {
+      "id": "inlet",
+      "distanceMm": 21.69999999403954,
+      "pointMm": [
+        0.8,
+        23.30000000596046,
+        21.15
+      ]
+    },
+    {
+      "id": "outlet",
+      "distanceMm": 21.699999994039533,
+      "pointMm": [
+        -0.8,
+        23.300000005960467,
+        10.35
+      ]
+    },
+    {
+      "id": "outlet",
+      "distanceMm": 21.699999994039537,
+      "pointMm": [
+        0,
+        23.300000005960463,
+        10.35
+      ]
+    },
+    {
+      "id": "outlet",
+      "distanceMm": 21.699999994039533,
+      "pointMm": [
+        0.8,
+        23.300000005960467,
+        10.35
+      ]
+    }
+  ],
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        -66,
+        0.65
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 18,
+      "purpose": "Grove cavity terminates at physical recessed dielectric backing"
+    },
+    {
+      "origin": [
+        -3,
+        -66,
+        0.85
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Grove contact1 exists as separate metal"
+    },
+    {
+      "origin": [
+        -1,
+        -66,
+        0.85
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Grove contact2 exists as separate metal"
+    },
+    {
+      "origin": [
+        1,
+        -66,
+        0.85
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Grove contact3 exists as separate metal"
+    },
+    {
+      "origin": [
+        3,
+        -66,
+        0.85
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Grove contact4 exists as separate metal"
+    },
+    {
+      "origin": [
+        0,
+        45,
+        21.15
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 24,
+      "purpose": "Inlet is real deep lumen with fixed diaphragm backing"
+    },
+    {
+      "origin": [
+        0,
+        45,
+        10.35
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 24,
+      "purpose": "Outlet is separately bored with physical backing"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Grove cavity terminates at physical recessed dielectric backing",
+      "hit": "Watering Grove rear dielectric backing",
+      "distanceMm": 15.700000011920928
+    },
+    {
+      "purpose": "Grove contact1 exists as separate metal",
+      "hit": "Watering Grove contact1",
+      "distanceMm": 11.599999904632568
+    },
+    {
+      "purpose": "Grove contact2 exists as separate metal",
+      "hit": "Watering Grove contact2",
+      "distanceMm": 11.599999904632568
+    },
+    {
+      "purpose": "Grove contact3 exists as separate metal",
+      "hit": "Watering Grove contact3",
+      "distanceMm": 11.599999904632568
+    },
+    {
+      "purpose": "Grove contact4 exists as separate metal",
+      "hit": "Watering Grove contact4",
+      "distanceMm": 11.599999904632568
+    },
+    {
+      "purpose": "Inlet is real deep lumen with fixed diaphragm backing",
+      "hit": "Watering recessed concealed diaphragm backing beyond both open pipe lumens",
+      "distanceMm": 21.699999994039537
+    },
+    {
+      "purpose": "Outlet is separately bored with physical backing",
+      "hit": "Watering recessed concealed diaphragm backing beyond both open pipe lumens",
+      "distanceMm": 21.699999994039537
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove",
+      "inlet",
+      "outlet"
+    ],
+    "anchors": [
+      "sensor"
+    ],
+    "controls": [],
+    "joints": [],
+    "leds": [],
+    "accessoryExports": [
+      "Hose"
+    ],
+    "accessoryComponents": [
+      "inlet/shape",
+      "outlet/shape"
+    ],
+    "options": {
+      "hoses": false
+    }
+  },
+  "artwork": {
+    "panels": 2,
+    "kinds": [
+      "source-vector-raster",
+      "reference-redraw"
+    ],
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "hollowHoseGeometryAndIndependentPose": "pass",
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 177
+}

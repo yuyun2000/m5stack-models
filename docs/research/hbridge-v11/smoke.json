@@ -1,0 +1,216 @@
+{
+  "checkedAt": "2026-10-26T11:25:02.789Z",
+  "status": "pass",
+  "scope": "Necessary own native5592 shell triangles/bores/FrontSide PCB holes, v1.1 population, fixed4P contacts/backing, removable plug4 screw angles/noRPM/noecho/reset, same-plug capacitor2 real leads,5 stable PCB actuators press/release/cancel/externaldetents with closed-shell hit gating/open assembly access,4 configurations both Model/GroveModule artwork physical buffers/index/matrixWorld invariance,4-core connection/pose/detach and disposal. No browser/full-history/hardware/electrical/production-fit validation.",
+  "meshes": 165,
+  "triangles": 109426,
+  "nominalMm": [
+    24,
+    56,
+    10.2
+  ],
+  "cadEnvelopeMm": [
+    24.000062942504883,
+    56.00003242492676,
+    8
+  ],
+  "visualEnvelopeMm": [
+    24.000062942504883,
+    56.00003252029419,
+    10.200000005960465
+  ],
+  "envelopes": [
+    {
+      "id": "capacitor",
+      "visualEnvelopeMm": [
+        24.000062942504883,
+        92.35253242511303,
+        11.100000035762786
+      ]
+    },
+    {
+      "id": "plug",
+      "visualEnvelopeMm": [
+        24.000062942504883,
+        67.2000324252993,
+        11.100000035762786
+      ]
+    },
+    {
+      "id": "socket",
+      "visualEnvelopeMm": [
+        24.000062942504883,
+        56.00003252029419,
+        10.200000005960465
+      ]
+    },
+    {
+      "id": "inspection",
+      "visualEnvelopeMm": [
+        20.600000381469727,
+        92.3025000121072,
+        11.100000035762786
+      ]
+    }
+  ],
+  "boreRays": 10,
+  "boreWalls": 8,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        -35,
+        0.7
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 16,
+      "purpose": "Grove has actual recessed carrier/backing"
+    },
+    {
+      "origin": [
+        -5.94,
+        35,
+        2.3
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 13,
+      "purpose": "Fixed4P slot1 contains actual recessed metal contact"
+    },
+    {
+      "origin": [
+        -1.98,
+        35,
+        2.3
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 13,
+      "purpose": "Fixed4P slot2 contains actual recessed metal contact"
+    },
+    {
+      "origin": [
+        1.98,
+        35,
+        2.3
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 13,
+      "purpose": "Fixed4P slot3 contains actual recessed metal contact"
+    },
+    {
+      "origin": [
+        5.94,
+        35,
+        2.3
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 13,
+      "purpose": "Fixed4P slot4 contains actual recessed metal contact"
+    },
+    {
+      "origin": [
+        0.8,
+        35,
+        3.5
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 20,
+      "purpose": "Fixed terminal cavity ends at real rear support"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Grove has actual recessed carrier/backing",
+      "hit": "HBridge v1.1 Grove recessed contact carrier",
+      "distanceMm": 10.250000047683717
+    },
+    {
+      "purpose": "Fixed4P slot1 contains actual recessed metal contact",
+      "hit": "HBridge v1.1 fixed terminal recessed contact pin",
+      "distanceMm": 8.000000095367433
+    },
+    {
+      "purpose": "Fixed4P slot2 contains actual recessed metal contact",
+      "hit": "HBridge v1.1 fixed terminal recessed contact pin",
+      "distanceMm": 8.000000095367433
+    },
+    {
+      "purpose": "Fixed4P slot3 contains actual recessed metal contact",
+      "hit": "HBridge v1.1 fixed terminal recessed contact pin",
+      "distanceMm": 8.000000095367433
+    },
+    {
+      "purpose": "Fixed4P slot4 contains actual recessed metal contact",
+      "hit": "HBridge v1.1 fixed terminal recessed contact pin",
+      "distanceMm": 8.000000095367433
+    },
+    {
+      "purpose": "Fixed terminal cavity ends at real rear support",
+      "hit": "HBridge v1.1 fixed terminal rear support",
+      "distanceMm": 16.300000005960463
+    }
+  ],
+  "plugWireRays": 4,
+  "plugWireWalls": 4,
+  "publicAPI": {
+    "ports": [
+      "grove",
+      "terminal"
+    ],
+    "anchors": [
+      "sensor"
+    ],
+    "controls": [
+      "source",
+      "address-1",
+      "address-2",
+      "address-3",
+      "address-4"
+    ],
+    "leds": [],
+    "accessoryJoints": [
+      "screw-1",
+      "screw-2",
+      "screw-3",
+      "screw-4"
+    ]
+  },
+  "artwork": {
+    "panels": 2,
+    "pngCount": 2,
+    "kind": "reference-redraw",
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true,
+    "configClassCases": 8,
+    "inspectionAllPrintedLayersHidden": true,
+    "closedPrintedLayersVisible": true
+  },
+  "screwAnimation": "pass",
+  "closedHitGating": "pass",
+  "inspectionActuators": "pass",
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 2014
+}

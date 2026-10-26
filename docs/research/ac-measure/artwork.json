@@ -1,0 +1,71 @@
+{
+  "id": "ac-measure",
+  "sku": "U164",
+  "kind": "source-vector-raster",
+  "status": "source-vector-raster",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Two exact-model original outlined product labels rasterized to ordinary high-resolution PNGs.Original vector fills,colors,letterforms and layout retained;compound-path evenodd fill rule normalized to nonzero to restore counters.No source filename,mapping,private URL,vector,conversion script or intermediate distributed.",
+  "recoveryScope": "Compound-path winding normalization and alpha-bounded original device label outlines only;no fill recolor,retyped text,preview enlargement or photographic crop.",
+  "referenceCorrespondence": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/AC%20Measure%20Unit/img-11424b2a-bb96-434f-88dd-bac95dcd0f32.webp",
+      "sha256": "1eedd49ed5bdb1cf43fb18e7940e3c781e5e5d4d5c287ccbea5a73674bf74000"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/AC%20Measure%20Unit/img-b5431cb2-ce5a-425e-b4b3-f18096b3c896.webp",
+      "sha256": "9640d71a7690393e1e7bda7335f9925fafd450142c0a55125d48c3450c7fc418"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/ac-measure/source-vector-front.png",
+      "sha256": "ec26295b907359185df0dfb65775b99796275469f7ff3c8bf199097fb1fcd765",
+      "pixels": [
+        1600,
+        2650
+      ],
+      "sizeMm": [
+        16,
+        26.5
+      ],
+      "positionMm": [
+        0,
+        2.75,
+        3.855
+      ],
+      "face": "front",
+      "target": "AC Measure physical front adhesive label substrate over native printed recess",
+      "kind": "source-vector-raster",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/ac-measure/source-vector-back.png",
+      "sha256": "e81f1ccc7c0aca041d337863e50e80fd127e555787e18cffec0ae1ba41e03815",
+      "pixels": [
+        1600,
+        3600
+      ],
+      "sizeMm": [
+        16,
+        36
+      ],
+      "positionMm": [
+        0,
+        6,
+        -3.855
+      ],
+      "face": "back",
+      "target": "AC Measure physical rear adhesive label substrate over native printed recess",
+      "kind": "source-vector-raster",
+      "method": "printedArtwork"
+    }
+  ],
+  "limitations": [
+    "Adhesive thickness and print registration are inferred from own-model photos.",
+    "Both physical adhesive substrates remain with artwork:false;native shell and PCB back the printed areas independently of texture loading.",
+    "Packaging name labels excluded;only own device front/back labels used."
+  ],
+  "rights": "Product names,original printed designs and trademarks retain respective rights.Only approved final ordinary rasters distributed."
+}

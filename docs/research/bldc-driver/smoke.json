@@ -1,0 +1,264 @@
+{
+  "checkedAt": "2026-10-26T12:01:54.511Z",
+  "status": "pass",
+  "scope": "Necessary own U181 complete native shell,physical PCB/hidden packages/J3/SYS_LED,fixed four-pole socket and detachable plug,open FrontSide native/PCB/mating bores,external screw angle/duration/no-RPM/no-echo,all bare/plug artwork geometry invariance,nested four-core Grove pose/independence/detach/disposal.No browser acceptance,production fit,electrical,motor,firmware or hardware validation.",
+  "meshes": 136,
+  "triangles": 14034,
+  "nativeTriangles": 3216,
+  "sourceAssemblyTriangles": 3216,
+  "visualEnvelopeMm": [
+    24,
+    32.00000010728836,
+    11.300000005960465
+  ],
+  "cadEnvelopeMm": [
+    24,
+    32,
+    8
+  ],
+  "boreRays": 10,
+  "boreWalls": 20,
+  "matingBores": 16,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        7,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Real rear adhesive substrate and PCB back the original native label recess"
+    },
+    {
+      "origin": [
+        0,
+        -24,
+        1.2
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Grove cavity has recessed physical rear carrier"
+    },
+    {
+      "origin": [
+        -3,
+        -24,
+        1.05
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove physical contact1"
+    },
+    {
+      "origin": [
+        -1,
+        -24,
+        1.05
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove physical contact2"
+    },
+    {
+      "origin": [
+        1,
+        -24,
+        1.05
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove physical contact3"
+    },
+    {
+      "origin": [
+        3,
+        -24,
+        1.05
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove physical contact4"
+    },
+    {
+      "origin": [
+        -5.94,
+        26,
+        5.05
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Bare phase socket recessed real contact1"
+    },
+    {
+      "origin": [
+        -1.98,
+        26,
+        5.05
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Bare phase socket recessed real contact2"
+    },
+    {
+      "origin": [
+        1.98,
+        26,
+        5.05
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Bare phase socket recessed real contact3"
+    },
+    {
+      "origin": [
+        5.94,
+        26,
+        5.05
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Bare phase socket recessed real contact4"
+    },
+    {
+      "origin": [
+        0,
+        -4,
+        -12
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 10,
+      "purpose": "Actual central retaining recess has fixed screw"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Real rear adhesive substrate and PCB back the original native label recess",
+      "hit": "BLDC Driver physical rear adhesive label substrate over native label recess",
+      "distanceMm": 11.00000000011176
+    },
+    {
+      "purpose": "Grove cavity has recessed physical rear carrier",
+      "hit": "BLDC Driver complete native assembled front and rear shell",
+      "distanceMm": 8.000000006660146
+    },
+    {
+      "purpose": "Grove physical contact1",
+      "hit": "BLDC Driver Grove contact 1",
+      "distanceMm": 9.5
+    },
+    {
+      "purpose": "Grove physical contact2",
+      "hit": "BLDC Driver Grove contact 2",
+      "distanceMm": 9.5
+    },
+    {
+      "purpose": "Grove physical contact3",
+      "hit": "BLDC Driver Grove contact 3",
+      "distanceMm": 9.5
+    },
+    {
+      "purpose": "Grove physical contact4",
+      "hit": "BLDC Driver Grove contact 4",
+      "distanceMm": 9.5
+    },
+    {
+      "purpose": "Bare phase socket recessed real contact1",
+      "hit": "BLDC Driver fixed terminal recessed phase contact",
+      "distanceMm": 11.000000095367431
+    },
+    {
+      "purpose": "Bare phase socket recessed real contact2",
+      "hit": "BLDC Driver fixed terminal recessed phase contact",
+      "distanceMm": 11.000000095367431
+    },
+    {
+      "purpose": "Bare phase socket recessed real contact3",
+      "hit": "BLDC Driver fixed terminal recessed phase contact",
+      "distanceMm": 11.000000095367431
+    },
+    {
+      "purpose": "Bare phase socket recessed real contact4",
+      "hit": "BLDC Driver fixed terminal recessed phase contact",
+      "distanceMm": 11.000000095367431
+    },
+    {
+      "purpose": "Actual central retaining recess has fixed screw",
+      "hit": "BLDC Driver complete native assembled front and rear shell",
+      "distanceMm": 8
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove",
+      "terminal"
+    ],
+    "anchors": [],
+    "controls": [],
+    "leds": [],
+    "joints": [],
+    "accessoryExport": "TerminalPlug",
+    "accessoryJoints": [
+      "screw-1",
+      "screw-2",
+      "screw-3",
+      "screw-4"
+    ],
+    "accessoryOption": "terminalPlug:true",
+    "nestedJointExample": "terminal/screw-1",
+    "SYS_LED": "Physical concealed non-emissive package only;no external light path"
+  },
+  "artwork": {
+    "panels": 2,
+    "kind": "reference-redraw",
+    "configurationChecks": 4,
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 243
+}

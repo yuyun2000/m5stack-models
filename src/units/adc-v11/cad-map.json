@@ -1,0 +1,43 @@
+{
+  "sku": "U013-V11",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U013-V11_Unit_ADC_v1.1/Structures/Unit_ADC%20v1.1.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "6c440be04106fbdec1744a909b9ac15867697000",
+  "sha256": "0f0c09a4e2df68763c81c021438ba684c70de61cd9d6b88f1cbd707c8a415f4d",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/LICENSE",
+  "origin": [
+    -485.2688293457031,
+    225.22348022460938,
+    4
+  ],
+  "axes": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "ADC v1.1 complete native assembled shell",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "notes": "All 3710 triangles of the complete assembled native shell retained with one common rigid half turn about Y and translation, scale 1. Components 1/2 are displaced copies, 2026 + 1684 triangles. No hole fills, cuts, scales or separate shell registration. PCB, fixed terminals, metal contacts, Grove internals and removable plug reconstructed separately from exact U013-V11 official photographs and schematic; concealed positions are inferred."
+}

@@ -1,0 +1,74 @@
+{
+  "id": "rs485-iso",
+  "sku": "U094",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Own U094 readable front485/BUS/ISOLATION/B/A/crossed NC/G label and rear ISOLATED/CA IS3082W/ISO DC-DC/PORT.C.UART/TXD/RXD/5V/GND marks newly code-drawn and rasterized as final ordinary PNGs. Diagram strokes are label appearance,not a simulation or authoritative circuit. Official photos are references only.No photographic crop,preview enlargement or extracted photo pixels.",
+  "sources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/iso485/iso485_02.webp",
+      "sha256": "b14c727940ce8dc98b2d638fb7c47a5a56685f8171e704f56023315a2e037107"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/iso485/iso485_08.webp",
+      "sha256": "41ae6cc10da1f2563438d81816cfcd8462c4e4bc13b2cf8a15c471079767093f"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/iso485/iso485_09.webp",
+      "sha256": "1e2077cdb91608e21386ba32a0991688f38c868154410cd4e9c8bb0ff1a15bcd"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/rs485-iso/reference-redraw-front.png",
+      "sha256": "0852e4efa68ec93cc4151b675b385b8345023652c6de6f7183de046bb5ffea95",
+      "pixels": [
+        2370,
+        4005
+      ],
+      "sizeMm": [
+        15.8,
+        26.7
+      ],
+      "positionMm": [
+        0,
+        2.3,
+        3.8
+      ],
+      "face": "front",
+      "target": "RS485-ISO real front adhesive label substrate",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/rs485-iso/reference-redraw-back.png",
+      "sha256": "4f5636ec582d8b08bc96fa47579d282f394df47272239fb0b1f080e5daa7e2c6",
+      "pixels": [
+        2400,
+        5400
+      ],
+      "sizeMm": [
+        16,
+        36
+      ],
+      "positionMm": [
+        0,
+        7,
+        -3.9
+      ],
+      "face": "back",
+      "target": "RS485-ISO real rear adhesive label substrate",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    }
+  ],
+  "limitations": [
+    "Typography,colors,small diagram strokes and print registration are reconstructed appearance.Unclear tiny details are omitted rather than invented.",
+    "Real front/rear adhesive substrates and actual PCB/packages remain with artwork:false independently of image loading;artwork does not hide missing assembly components.",
+    "No source vectors,generators,private mappings,raw photos,serial/QR marks or intermediate assets distributed."
+  ],
+  "rights": "Product names,original printed designs and trademarks retain respective rights."
+}

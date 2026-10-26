@@ -1,0 +1,180 @@
+{
+  "id": "nfc",
+  "sku": "U216",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_NFC",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "query": "Unit NFC U216 结构 芯片 按键 灯 接口 尺寸 原理图",
+    "rawResponseDistributed": false,
+    "result": "Exact U216 current Unit NFC, ST25R3916-AQWT, own schematic ANT1 and matching network, own current model-size drawing and official photos. No visible LED/button/joint confirmed; older PN532 NFC and RFID2 MFRC522 excluded."
+  },
+  "reference": {
+    "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1229/U216_Unit-NFC-main-pictures_07.webp",
+    "sha256": "04085ec95f55d440db8c77cbf449f22584ddb2cb5743808f8322adb356a0f189"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/2a547f4cb53263c7c263c2fdc7c80f54cfb93fdc/Products/U216_Unit_NFC/Structures/Unit_NFC.stl",
+      "commit": "2a547f4cb53263c7c263c2fdc7c80f54cfb93fdc",
+      "gitBlob": "b9c26de1a2e80c7dbb3e247d1c2c1522dfd81a03",
+      "sha256": "ae5f36bd73a11eec6306ff2251060455e79f0198a06814b79d3e4e2a92aa3a66",
+      "license": "MIT; retain licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1229/U216_Unit-NFC-main-pictures_02.webp",
+      "sha256": "afb60a419366fea9d1faf389bb086b5907980b77c3918d2b83cfdd4c9a28f91a"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1229/U216_Unit-NFC-main-pictures_04.webp",
+      "sha256": "c362eec5bfaf9a4b61d35b9b949b307bec7aa9bdfb945bc2da1507b6e3686557"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1229/U216_Unit-NFC-main-pictures_07.webp",
+      "sha256": "04085ec95f55d440db8c77cbf449f22584ddb2cb5743808f8322adb356a0f189"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1229/U216_Unit-NFC-main-pictures_08.webp",
+      "sha256": "b583e5851ed129b00bdae975e4523c9a9dd87f37c27532ebb4b225dd1806fd4b"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1229/U216_Unit-NFC-main-pictures_09.webp",
+      "sha256": "037ca0dbeb581d15151e2970f38eb797d7346bd7a7f0cb9132a785e7d92d4a99"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1229/U216_Unit-NFC-main-pictures_10.webp",
+      "sha256": "29d6dceb1256bf18d0d4ae64ec3d20b4933beca5dfb33de533a30ea1efda8032"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1229/U216_Unit-NFC-main-pictures_11.webp",
+      "sha256": "c53e5f7f4d13d8a3ffd4b63b1b20e5cbddb0a799636a749f902e97036548554f"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1229/U216_Unit-NFC-main-pictures_12.webp",
+      "sha256": "6230dc883d97ca7d819793f241dc1729678728d0554c9b69ca47364e068bf71d"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1229/SCH_Unit_NFC_V0.1_2025_11_28_12_15_35_page_01.png",
+      "sha256": "653fd96aeca26bcf340c4f8aed60a290bda122da875673aa4e4c87e153e59741"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1229/u216unitnfc-model-size_page_01.png",
+      "sha256": "a0ffa01c425d557682201cd2a86577f3f0c5e70c04105aa9447b9fc0c13956c1"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "triangles": 3616,
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      0,
+      0,
+      1.2
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "notes": "All 3616 triangles of the complete assembled native shell retained at scale 1 with one common translation of Z -1.2 mm. Components 1/2 are displaced separate shell copies (1888/1728 triangles). Native mounting bores, rear screw recess, front Grove cutout and top pry notch retained; no fills, cuts, scale or independent shell registration. PCB, ST25R3916, planar copper winding, matching passives, fastening metal and Grove interior reconstructed separately. Concealed board/component/antenna dimensions, turns and registration are visual inferences, not a production assembly or measured RF design."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      48,
+      8
+    ],
+    "vendorDimensionOrderMm": [
+      48,
+      24,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      48,
+      8
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -12
+      ],
+      [
+        8,
+        -12
+      ]
+    ],
+    "mountingHoleNominalMm": 5,
+    "mountingHoleFacetSpanMm": [
+      4.8753,
+      5
+    ]
+  },
+  "artwork": {
+    "kind": "source-vector-raster",
+    "pngCount": 2,
+    "sourceDetails": "docs/research/nfc/artwork.json",
+    "sourceRetainedPrivately": true,
+    "originalsDistributed": false
+  },
+  "scope": "Physical body, fixed reconstructed circuit/antenna, Grove cable/attachment frame and passive package anchor only; no NFC/RFID, RF field, tag/card, recognition, reading/writing/emulation, I2C/electrical/firmware behavior.",
+  "inferred": [
+    "Concealed PCB outline/Z/thickness and package registration/envelopes",
+    "Planar antenna three-turn copper route, trace dimensions/via return and matching passive placement; own schematic confirms ANT1 type, not measured RF layout",
+    "Grove interior/contact depths, fastening metal geometry and physical artwork registration"
+  ],
+  "feedback": null,
+  "runtimeFiles": [
+    {
+      "path": "src/units/nfc/assembly.js",
+      "sha256": "bdc8aacbcc13e5df687cd5780ee8f5ddfd0c3babb49813f27c9966dade3dc7e0"
+    },
+    {
+      "path": "src/units/nfc/cad-map.json",
+      "sha256": "b4265184805234685ee13d3296d2ab9307d1791040b3b270fd7ee60e6596930f"
+    },
+    {
+      "path": "src/units/nfc/dimensions.js",
+      "sha256": "7035a7090b49801c7c712d8e2a6637eadb1139c3f8baf9e0d33ab76af3673a2b"
+    },
+    {
+      "path": "src/units/nfc/geometry-data.js",
+      "sha256": "e28ee8dc93388b180b8dce74a29cdef46d3c702edd91205aa45cb1c7a2fab862"
+    },
+    {
+      "path": "src/units/nfc/index.js",
+      "sha256": "9c96d18121d4cddcfde7189ca097e02c99ef6b19833b73606aad72a3969038d7"
+    },
+    {
+      "path": "src/units/nfc/source-vector-back.png",
+      "sha256": "c25adfa93762e9acd2f771f16437e0909c16ea39b90b5e93a0c9ba2bda796d1e"
+    },
+    {
+      "path": "src/units/nfc/source-vector-front.png",
+      "sha256": "0c9feb4d338d1c4109e154216a7fe3e7b447960527b5ca986e2cdf152e931192"
+    },
+    {
+      "path": "src/units/nfc/stickers.js",
+      "sha256": "5949bcef51e6515375177fa6504ff2c03fa0f59678d6ee2ddd4dfa3008009501"
+    }
+  ]
+}

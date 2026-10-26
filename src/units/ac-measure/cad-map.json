@@ -1,0 +1,52 @@
+{
+  "sku": "U164",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/d3ae864f161167af3f9698214012e1d135adc357/Products/U164_Unit_AC_Measure/Structures/Unit_AC_Measure.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/db5ba325a3184380c9a2fcd7f4ed61ddb7bd7c26",
+  "commit": "d3ae864f161167af3f9698214012e1d135adc357",
+  "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/d3ae864f161167af3f9698214012e1d135adc357/Products/U164_Unit_AC_Measure/Structures/Unit_AC_Measure.stl",
+  "gitBlob": "db5ba325a3184380c9a2fcd7f4ed61ddb7bd7c26",
+  "sha256": "afe09d25cd5bb93cb5d13fbf5b2b2813741f36cd41d95915a65835efc21a3f02",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/d3ae864f161167af3f9698214012e1d135adc357/LICENSE",
+  "origin": [
+    0,
+    28,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 1,
+      "name": "AC Measure complete native rear shell",
+      "material": "shell"
+    },
+    {
+      "component": 2,
+      "name": "AC Measure complete native front shell",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    0,
+    3
+  ],
+  "originalAssemblyTriangles": 5592,
+  "localModification": null,
+  "notes": "Complete native assembled front and rear components1/2 retained together at scale1 with one translation;displaced duplicate rear/front0/3 excluded.No shell triangles patched,filled or removed.PCB,fuse,shunt,HLW8032,STM32,B0505ST16-W5,EL357NB,Grove,terminal,screw and physical sticker carrier reconstructed from own U164 references;concealed layout and connector mating are appearance estimates."
+}

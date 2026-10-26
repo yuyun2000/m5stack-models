@@ -1,0 +1,196 @@
+{
+  "id": "vmeter",
+  "sku": "U087",
+  "officialDocs": "https://docs.m5stack.com/en/unit/vmeter",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "query": "Unit VMeter U087 dimensions connector hardware ADS1115; follow-up own power LED color",
+    "rawResponseDistributed": false,
+    "result": "Exact U087 product: ADS1115, CA-IS3020S, isolated DC-DC, EEPROM, Grove I2C0x49, supplied HT3.96-4P plug, two mounting holes and power LED. Own dimension drawing separately marks8mm shell and10.2mm including fixed terminal. Own linked circuit illustration is a block diagram with no LED hue/circuit."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/vmeter/vmeter_07.webp",
+    "sha256": "b0e672c0a8f93784c48f2300a616eafca4115bfb49754b514ef59946aeddc644"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/d3ae864f161167af3f9698214012e1d135adc357/Products/U087_Unit_VMeter/Structures/Unit_VMeter.stl",
+      "commit": "d3ae864f161167af3f9698214012e1d135adc357",
+      "gitBlob": "32cdeaa6f6712770ecec08b67b8916bf0d5d047a",
+      "sha256": "1eb88e10b91bae6fde8b541aa76c3c25770e0cdf4a9da5992bc5f298d969a405",
+      "license": "MIT; retain licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/vmeter/vmeter_01.webp",
+      "sha256": "726e3ca60cb6fa0164125a2b69ab78d04a844fc6db73144d9d527b18b6d5f990"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/vmeter/vmeter_02.webp",
+      "sha256": "4ddfba826bc74a3a28ddf02cfdfdaf5e5709f8748f27707f9411a591fd956ba0"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/vmeter/vmeter_06.webp",
+      "sha256": "cfde2f1806e86af7fed0112f8ec7677565f577f4ef9f40a59dfaca9271ad2925"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/vmeter/vmeter_07.webp",
+      "sha256": "b0e672c0a8f93784c48f2300a616eafca4115bfb49754b514ef59946aeddc644"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/vmeter/vmeter_08.webp",
+      "sha256": "44ef2bed9cf4884e43cda809c039529a1860ac313dd12b29ab7cbd813bdb9add"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/vmeter/vmeter_cover_01.webp",
+      "sha256": "e1a95495fe3fda6f0311f2ddf381fc1d6439a10b780eb158d22b843acafddbd5"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/713/U087-package.jpg",
+      "sha256": "8ca6f6027e8cd2e590e54c7af0e40a60e47b0969ca379f6169ac73fa9c769fd4"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/vmeter/vmeter_sch_01.webp",
+      "sha256": "f001298a771ac9643dd618b5cde918eca1706b35311f05b65c08fb02be79db7c"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/vmeter/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+      "sha256": "9a9f09918d22d8ea79572ddc396b9fb4d3c6d6a4d4b0acc5fa64ea3cf9d06993"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0,
+      2
+    ],
+    "triangles": 5630,
+    "excludedComponents": [
+      1,
+      3
+    ],
+    "origin": [
+      0,
+      28,
+      -4
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "notes": "Complete original front and rear halves components 0 and 2 retained at scale1 using one common translation only. Components1 and3 are displaced duplicates. Native mounting bores, LED slot, connector cutouts, central front recess and side seam remain unmodified. PCB/electronics, connector interiors, panel carrier and supplied removable plug are reconstructed visual geometry."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      56,
+      8
+    ],
+    "vendorDimensionOrderMm": [
+      56,
+      24,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      56,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24,
+      56,
+      10.2
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -16
+      ],
+      [
+        8,
+        -16
+      ]
+    ],
+    "mountingHoleNominalMm": 4.85,
+    "mountingHoleFacetSpanMm": [
+      4.84756,
+      4.85001
+    ],
+    "mountingHoleRearBoreMm": [
+      4.99781,
+      5
+    ]
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 2,
+    "sourceDetails": "docs/research/vmeter/artwork.json",
+    "originalsDistributed": false
+  },
+  "scope": "Appearance, physical connector/cable pose and independent plug screw-head angles plus externally driven single-indicator brightness only. No voltage/current, calibration, ADC, EEPROM, isolation, continuity, power, I2C, electrical or firmware behavior.",
+  "inferred": [
+    "PCB contour/Z, concealed package placement and lead dimensions",
+    "Transformer bobbin/winding dimensions and unshown fixed connector/Grove interiors",
+    "Detachable plug mating profile, bores, clamp cages, insertion clearance and screw recesses",
+    "Neutral-white preview LED hue is unconfirmed; not an official white specification or RGB hardware",
+    "Redraw font metrics/colorimetry/trace layout and label registration"
+  ],
+  "feedback": {
+    "status": "accepted",
+    "feedback_id": "db890e93c7aa4c54bec426740de78d1c",
+    "category": "missing_documentation",
+    "summary": "Own LED emission color/circuit missing from linked block diagram; distinguish8mm shell nominal from10.2mm including fixed terminal."
+  },
+  "runtimeFiles": [
+    {
+      "path": "src/units/vmeter/TerminalPlug.js",
+      "sha256": "fd7acf2ffac4da451a6c361147046a68c05f2fd42301e9cd72a0eb359f90564f"
+    },
+    {
+      "path": "src/units/vmeter/assembly.js",
+      "sha256": "5c866a3f9c7e96ecb0e086aa12deae9cac8e0e55b662fd50ea07d4dc4dcb623f"
+    },
+    {
+      "path": "src/units/vmeter/cad-map.json",
+      "sha256": "7a259343daa52ecfd67d4565fa32aa88b0c8516e7a5a2b93aa97e39b1c31dcb0"
+    },
+    {
+      "path": "src/units/vmeter/dimensions.js",
+      "sha256": "1b17035f080c6ee5a60b5f60ff9e901da0ce2bc10e08347f9c02da20cbbbf9ae"
+    },
+    {
+      "path": "src/units/vmeter/geometry-data.js",
+      "sha256": "765efacad0c9790f5408b5dfb63f412cdfc6b81041722428ecc6fc5f88149de3"
+    },
+    {
+      "path": "src/units/vmeter/index.js",
+      "sha256": "2e2d83cc7dbce0bd60e43e36d22f9da7ca49d46f80dd40ba7f813b3e8bd6d4ac"
+    },
+    {
+      "path": "src/units/vmeter/reference-redraw-back.png",
+      "sha256": "43391ff71d8e8639676533b06cdf2af84ddbd49692b3f32f6702d00d999965cc"
+    },
+    {
+      "path": "src/units/vmeter/reference-redraw-front.png",
+      "sha256": "725dc427bf79661c68882c191a312343dd3a9eba155e7534936795bdcdf964aa"
+    },
+    {
+      "path": "src/units/vmeter/stickers.js",
+      "sha256": "eca670c70fdb6122996a06fd4093bb183153f771a1533de2d4641c7caa4b17e3"
+    }
+  ]
+}

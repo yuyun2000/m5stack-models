@@ -1,0 +1,44 @@
+{
+  "sku": "U101",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U101_Unit_Watering/Structures/Unit_Watering.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "953f97c18f07bb94deb4b4f6fedd6471da70759f",
+  "sha256": "5e66ee5fb02d901e48bd92d6931ba0da58daeea00d15f3a01164f640bb48677f",
+  "license": "MIT",
+  "origin": [
+    0,
+    44,
+    4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 0,
+      "name": "Watering complete native assembled shell and pump saddle",
+      "material": "shell",
+      "triangles": 9930
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "notes": "All9930 native assembled-shell and pump-saddle triangles retained at scale1 under one common translation. Displaced rear/front copies5068+4862 triangles excluded. Native bores, Grove opening, pump saddle, probe throat and rear label recess unchanged. Actual pump, two hollow nozzles, retaining ties, sensing probe, hidden circuit boards and connector internals reconstructed separately."
+}

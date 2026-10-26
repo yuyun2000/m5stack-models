@@ -1,0 +1,69 @@
+{
+  "id": "nfc",
+  "sku": "U216",
+  "kind": "source-vector-raster",
+  "status": "source-vector-raster",
+  "retrievedAt": "2026-10-26",
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "pngCount": 2,
+  "defaultPanels": 2,
+  "method": "Exact supplied U216 body-label vector glyph/shape contours rasterized to high-resolution final PNG. Converter compound winding restored from evenodd to nonzero; original contours and fills preserved. No product-photo crop, preview upscaling, replacement font or invented microtext.",
+  "sources": [
+    {
+      "kind": "user-supplied-exact-product-artwork",
+      "sourceRetainedPrivately": true,
+      "note": "Front blue NFC and rear ST25R3916/I2C panels match exact U216 official photos. Packaging label excluded. Original source names, vectors, private links, spreadsheet and generation intermediates are not distributed."
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/nfc/source-vector-front.png",
+      "sha256": "0c9feb4d338d1c4109e154216a7fe3e7b447960527b5ca986e2cdf152e931192",
+      "pixels": [
+        2200,
+        3443
+      ],
+      "sizeMm": [
+        17.7,
+        27.7
+      ],
+      "positionMm": [
+        0,
+        6.5,
+        3.8
+      ],
+      "face": "front",
+      "kind": "source-vector-raster",
+      "method": "printedArtwork",
+      "target": "NFC U216 complete native assembled shell"
+    },
+    {
+      "path": "src/units/nfc/source-vector-back.png",
+      "sha256": "c25adfa93762e9acd2f771f16437e0909c16ea39b90b5e93a0c9ba2bda796d1e",
+      "pixels": [
+        2000,
+        3509
+      ],
+      "sizeMm": [
+        15.9,
+        27.9
+      ],
+      "positionMm": [
+        0,
+        6.5,
+        -3.8
+      ],
+      "face": "back",
+      "kind": "source-vector-raster",
+      "method": "printedArtwork",
+      "target": "NFC U216 complete native assembled shell"
+    }
+  ],
+  "remainingKnownPrintedFaces": [],
+  "limitations": [
+    "Physical registration follows own shell recess and exact official U216 photos; not a production-print datum.",
+    "Raster decoding/contact-sheet inspection and physical artwork invariance checked; exhaustive browser pixel acceptance deferred."
+  ],
+  "rights": "Printed designs, product names and trademarks retain their respective rights."
+}

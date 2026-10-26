@@ -1,0 +1,222 @@
+{
+  "id": "gps-sma",
+  "sku": "U190",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit-GPS%20SMA",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "query": "Unit GPS SMA U190 dimensions SMA antenna buttons indicator hardware",
+    "rawResponseDistributed": false,
+    "result": "Exact U190:ATGM336H/AT6668,MAX2659,UART Grove,SMA active cabled puck38×36×13mm and nominal1m cable.Schematic adds backup cell and concealed blue1PPS package;no photographed external LED optical path or hinge."
+  },
+  "reference": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-GPS%20SMA/4.webp",
+    "sha256": "004659019d971851c42f85e78aaabce2df24c1bbb9532d090ce586e6bcbfc838"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U190_Unit_GPS_SMA/Structures/Unit_GPS_SMA.stl",
+      "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+      "gitBlob": "cd451d15e2d03f37e80e7db05bf7f82fa56a78ba",
+      "sha256": "6d93ea1962caf38864027accc041acb990a61e3360581aad16edf30ec294b17f",
+      "license": "MIT;preserve licenses/M5_Hardware-MIT.txt",
+      "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/LICENSE"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-GPS%20SMA/4.webp",
+      "sha256": "004659019d971851c42f85e78aaabce2df24c1bbb9532d090ce586e6bcbfc838"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-GPS%20SMA/8.webp",
+      "sha256": "706436d86135b6ee564e5e066a878547048312bda197ccace76618435bb0a277"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-GPS%20SMA/11.webp",
+      "sha256": "a65a9ac8ef2a656947306ef098773dae8c11ae613c524b2a8f45b23125cb0b6b"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-GPS%20SMA/5.webp",
+      "sha256": "3515feda669f3cc5b7d252f665b38df5a633e4bdf7bb66ca64399a77a99becc3"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-GPS%20SMA/9.webp",
+      "sha256": "78ea802691f2dc5324a3a08b6df27476b0c792d7a1ba305cd8c9007c71bf04c5"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-GPS%20SMA/10.webp",
+      "sha256": "e9a7c62fae60c0aacde01f59e4ec0a957966db290ddc1486f5233647af477881"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/850/U190-weight.jpg",
+      "sha256": "683f0c677e56239361ce49fcadc07da86fa95f8c8b2261f65de61d063f3ec47b"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-GPS%20SMA/schematic.png",
+      "sha256": "6588f9e0561ad784479575666af9ae02f392fbf77890dd9aa261bbabd84d9f37"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-GPS%20SMA/MODULE_SIZE.jpg",
+      "sha256": "9371a9193e6fb8704621c2df12abbfb104ea388c3a1ba808529702f662f22337"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-GPS%20v1.1/ATGM336H-6N.pdf",
+      "sha256": "7b1c10193709d7600e0234445a1c15603bf3443e14780ecde4818091ec2eda32"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/MAX2659_en.pdf",
+      "sha256": "712b014de1bb33410c7b1a6e994b129e73e6fcdee04e7fbf343c16734e7e8edd"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1173/CASIC_Multi-mode_Satellite_Navigation_Receiver_Protocol_Specification.pdf",
+      "sha256": "61e2567dcf04b0d8e4d5ec6c9c841f8ac0caa846f5b54645a64b7704d800fe04"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "triangles": 6592,
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      0,
+      32,
+      -4
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "notes": "All 6592 native assembled-shell triangles retained at scale1 under one common translation. Components1/2 are displaced separate rear/front copies. Native mounting bores, SMA retention windows and Grove opening unchanged. PCB, shielded ATGM336H, MAX2659, backup cell, hidden 1PPS package, internal coax/SMA and active cabled puck accessory are separately reconstructed appearance geometry."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      71.4,
+      8
+    ],
+    "vendorDimensionOrderMm": [
+      71.4,
+      24,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      64,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24,
+      71.40000019073486,
+      8
+    ],
+    "suppliedAntennaEnvelopeMm": [
+      199.6231766871023,
+      154.14515686035156,
+      18.699999809265137
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -20
+      ],
+      [
+        8,
+        -20
+      ]
+    ],
+    "mountingHoleDiameterMm": 4.85,
+    "puckMm": [
+      38,
+      36,
+      13
+    ],
+    "nominalCableLengthMm": 1000,
+    "appearanceCableOuterDiameterMm": 2.8,
+    "defaultAppearanceCurveLengthMm": 994.7867586044886,
+    "dimensionEvidence": "Own U190 drawing:64mm shell,71.4mm includingSMA,24mm width,8mm thickness,16mm mounting pitch,Ø4.85mm bores.Product specifies38×36×13mm active antenna and1m cable;installed coupling/puck profile/OD/curve are visual reconstruction."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 3,
+    "sourceDetails": "docs/research/gps-sma/artwork.json",
+    "originalsDistributed": false
+  },
+  "scope": "Exact complete shell,physical PCB/shield/cell/population,SMA/Grove cavity/contact/thread/backs,passive sensor anchor and removable actual male-SMA cabled active puck with externally posed coax and terminal puck.No GNSS,RF,position,fix,satellites,NMEA,PPS,time,UART,electrical,cable physics or firmware behavior.",
+  "inferred": [
+    "Concealed PCB outline/plane/thickness,population layout and dimensions",
+    "Installed SMA seating/thread/contact/dielectric depths and inferred internal coax/IPEX adapter route",
+    "Backup cell installation,GNSS shield/castellations,MAX2659 and passive packages",
+    "SMA male coupling/crimp/straight relief installation and puck rounded profile/cable entry",
+    "Cable OD2.8mm,default visual curve and cable-entry-tangent puck orientation",
+    "Grove socket internals,fastening and artwork registration"
+  ],
+  "notes": [
+    "Native6592-triangle assembled shell retained at scale1;displaced duplicates excluded.",
+    "Externally threaded female SMA and internally threaded male antenna with pin confirmed from exact U190 photographs.",
+    "Schematic E1 says IPEX while outside SMA is photographed;internal adapter topology remains inferred without production assembly/BOM.",
+    "Blue1PPS package is concealed;no visible LED or invented window/glow.",
+    "shape points are3–32 finite xyz within±1500mm;origin0,first segment+Y≥18mm,adjacent distance≥2mm;invalid state preserved.",
+    "Nominal1m cable specification distinguished from approximately994.79mm default visual curve from fixed relief exit.",
+    "Three reference-redraw PNGs;full browser acceptance deferred."
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/gps-sma/Antenna.js",
+      "sha256": "f30453ebca6b49cf92aaeba48f680dcd5f3b6a0ba2c6f324a05425d925f446e3"
+    },
+    {
+      "path": "src/units/gps-sma/assembly.js",
+      "sha256": "a0ebe1988ee98499f7c4366f8c97bd9be1bbf0cd24a35d19d491a49026bff5e5"
+    },
+    {
+      "path": "src/units/gps-sma/cad-map.json",
+      "sha256": "f8beb130c4908d1b41593aa390e73d4e811eb0680c1dc123fda1d612e0eb67d9"
+    },
+    {
+      "path": "src/units/gps-sma/dimensions.js",
+      "sha256": "b70069b5cf0c6f4902da5f3a6626d4a7500379ebbeadb7a57a39769f0603b919"
+    },
+    {
+      "path": "src/units/gps-sma/geometry-data.js",
+      "sha256": "4f38f62d0b11ae12d4dedd889a3c9b226447b5b6431817a72f8cf1b3427e3025"
+    },
+    {
+      "path": "src/units/gps-sma/index.js",
+      "sha256": "a8e226f1fdab549d6a96212c226bccdced8fe62e1a653e1c27a8e0f08de4715c"
+    },
+    {
+      "path": "src/units/gps-sma/reference-redraw-antenna.png",
+      "sha256": "719a1170a38c517cc98fc50699c57698c2d891c1763aaad0449a1841e66e48e5"
+    },
+    {
+      "path": "src/units/gps-sma/reference-redraw-back.png",
+      "sha256": "d85895567b329b44889335d67593f8033cea4c269fb03f6780094c29be2ce779"
+    },
+    {
+      "path": "src/units/gps-sma/reference-redraw-front.png",
+      "sha256": "f278c41bf9bed1adeb5b49c2d0a15728e6ccdacbcc29b8bfc0acc1d305da2c44"
+    },
+    {
+      "path": "src/units/gps-sma/stickers.js",
+      "sha256": "249a8af96beff2568d4edefb9291267d5d962a66e904aff66b13676a6663931a"
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "checkedAt": "2026-10-26T12:19:15.268Z",
+  "status": "pass",
+  "scope": "Necessary own U164 complete native shell,physical PCB/fuse/shunt/STM32/HLW8032/B0505ST16-W5/EL357NB/hidden D1,fixed four-pole socket and detachable plug,open FrontSide native/PCB/mating bores,external screw angle/duration/no-RPM/no-echo,all bare/plug artwork geometry invariance,nested four-core Grove pose/independence/detach/disposal.No browser acceptance,production fit,electrical,mains,metering,firmware or hardware validation.",
+  "meshes": 152,
+  "triangles": 26510,
+  "nativeTriangles": 5592,
+  "sourceAssemblyTriangles": 5592,
+  "visualEnvelopeMm": [
+    24.000062942504883,
+    56.00003252029419,
+    10.300000005960465
+  ],
+  "cadEnvelopeMm": [
+    24.000062942504883,
+    56.00003242492676,
+    8
+  ],
+  "boreRays": 10,
+  "boreWalls": 20,
+  "matingBores": 16,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        6,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Physical front adhesive substrate closes actual print recess without texture"
+    },
+    {
+      "origin": [
+        0,
+        6,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Real rear adhesive substrate and PCB back the original native label recess"
+    },
+    {
+      "origin": [
+        0,
+        -36,
+        1.2
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Grove cavity has recessed physical rear carrier"
+    },
+    {
+      "origin": [
+        -3,
+        -36,
+        1.05
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove physical contact1"
+    },
+    {
+      "origin": [
+        -1,
+        -36,
+        1.05
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove physical contact2"
+    },
+    {
+      "origin": [
+        1,
+        -36,
+        1.05
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove physical contact3"
+    },
+    {
+      "origin": [
+        3,
+        -36,
+        1.05
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove physical contact4"
+    },
+    {
+      "origin": [
+        -5.94,
+        38,
+        2.05
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Bare terminal socket recessed real contact1"
+    },
+    {
+      "origin": [
+        -1.98,
+        38,
+        2.05
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Bare terminal socket recessed real contact2"
+    },
+    {
+      "origin": [
+        1.98,
+        38,
+        2.05
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Bare terminal socket recessed real contact3"
+    },
+    {
+      "origin": [
+        5.94,
+        38,
+        2.05
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Bare terminal socket recessed real contact4"
+    },
+    {
+      "origin": [
+        0,
+        -16,
+        -12
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 10,
+      "purpose": "Actual central retaining recess has fixed screw"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Physical front adhesive substrate closes actual print recess without texture",
+      "hit": "AC Measure physical front adhesive label substrate over native printed recess",
+      "distanceMm": 11.15000000193715
+    },
+    {
+      "purpose": "Real rear adhesive substrate and PCB back the original native label recess",
+      "hit": "AC Measure physical rear adhesive label substrate over native printed recess",
+      "distanceMm": 11.15000000011176
+    },
+    {
+      "purpose": "Grove cavity has recessed physical rear carrier",
+      "hit": "AC Measure Grove contact carrier",
+      "distanceMm": 11.20000004768372
+    },
+    {
+      "purpose": "Grove physical contact1",
+      "hit": "AC Measure Grove contact 1",
+      "distanceMm": 9.5
+    },
+    {
+      "purpose": "Grove physical contact2",
+      "hit": "AC Measure Grove contact 2",
+      "distanceMm": 9.5
+    },
+    {
+      "purpose": "Grove physical contact3",
+      "hit": "AC Measure Grove contact 3",
+      "distanceMm": 9.5
+    },
+    {
+      "purpose": "Grove physical contact4",
+      "hit": "AC Measure Grove contact 4",
+      "distanceMm": 9.5
+    },
+    {
+      "purpose": "Bare terminal socket recessed real contact1",
+      "hit": "AC Measure fixed terminal recessed physical contact",
+      "distanceMm": 11.000000095367433
+    },
+    {
+      "purpose": "Bare terminal socket recessed real contact2",
+      "hit": "AC Measure fixed terminal recessed physical contact",
+      "distanceMm": 11.000000095367433
+    },
+    {
+      "purpose": "Bare terminal socket recessed real contact3",
+      "hit": "AC Measure fixed terminal recessed physical contact",
+      "distanceMm": 11.000000095367433
+    },
+    {
+      "purpose": "Bare terminal socket recessed real contact4",
+      "hit": "AC Measure fixed terminal recessed physical contact",
+      "distanceMm": 11.000000095367433
+    },
+    {
+      "purpose": "Actual central retaining recess has fixed screw",
+      "hit": "AC Measure fixed hex retaining screw face",
+      "distanceMm": 8.97
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove",
+      "terminal"
+    ],
+    "anchors": [],
+    "controls": [],
+    "leds": [],
+    "joints": [],
+    "accessoryExport": "TerminalPlug",
+    "accessoryJoints": [
+      "screw-1",
+      "screw-2",
+      "screw-3",
+      "screw-4"
+    ],
+    "accessoryOption": "terminalPlug:true",
+    "nestedJointExample": "terminal/screw-1",
+    "D1": "Physical concealed red D1 package only;no exterior light path"
+  },
+  "artwork": {
+    "panels": 2,
+    "kind": "source-vector-raster",
+    "configurationChecks": 4,
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "fixedSocketAndPlugFrames": "pass",
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 260
+}

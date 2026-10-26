@@ -1,0 +1,51 @@
+{
+  "sku": "U160-V11",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U160-V11_Unit_HBridge_v1.1/Structures/Unit_HBridge_v1.1.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "653b0c9a5ea8565089f589aa1a377fe80cab0e5f",
+  "sha256": "c852b7f4834dc9fa8a2ccb702c0e782fa56bd50006cc3cfef44b2c5667c7b527",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/LICENSE",
+  "origin": [
+    0,
+    28,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 1,
+      "name": "HBridge v1.1 native rear shell",
+      "material": "shell",
+      "triangles": 3032
+    },
+    {
+      "component": 2,
+      "name": "HBridge v1.1 native front shell",
+      "material": "shell",
+      "triangles": 2560
+    }
+  ],
+  "excludedComponents": [
+    0,
+    3
+  ],
+  "notes": "All native3032 rear and2560 front triangles retained at scale1 with one common translation. Components0/3 are displaced duplicate shells. Native mounting bores, connector mouths, rear source-selector slit and front film recess retained. Added electronics/connectors/accessories are separate photo reconstruction."
+}

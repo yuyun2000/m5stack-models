@@ -1,0 +1,57 @@
+{
+  "checkedAt": "2026-10-26T10:45:51.970562+00:00",
+  "scope": "Bounded conditional refresh of official K151/A180/A181 pages and latest K151 hardware-path commit; not a full source/video/assembly audit",
+  "results": [
+    {
+      "id": "page-k151",
+      "url": "https://docs.m5stack.com/en/StackChan",
+      "checkedAt": "2026-10-26T10:45:50.027544+00:00",
+      "httpStatus": 304,
+      "sameEtagAsPrior": true,
+      "priorSha256": "0582f88e179bce7f970e3541d123fab58dcd97c87acfda3deaf5bdf66e712fb0",
+      "mechanicalLinksStatus": "Unchanged resource according to server ETag; prior finite link inventory retained"
+    },
+    {
+      "id": "page-a180",
+      "url": "https://docs.m5stack.com/en/base/StackChan_Body",
+      "checkedAt": "2026-10-26T10:45:50.027923+00:00",
+      "httpStatus": 304,
+      "sameEtagAsPrior": true,
+      "priorSha256": "69abf336ce4a8c59949948c365c5ed1256065ef5cfe2aab47bffffb19ea76956",
+      "mechanicalLinksStatus": "Unchanged resource according to server ETag; prior finite link inventory retained"
+    },
+    {
+      "id": "page-a181",
+      "url": "https://docs.m5stack.com/en/accessory/StackChan_Repair_Kit",
+      "checkedAt": "2026-10-26T10:45:50.028058+00:00",
+      "httpStatus": 304,
+      "sameEtagAsPrior": true,
+      "priorSha256": "2e1a6b51b08293a985ab2800724133423332f68c093773622c866901ce92744d",
+      "mechanicalLinksStatus": "Unchanged resource according to server ETag; prior finite link inventory retained"
+    },
+    {
+      "id": "k151-latest-path-commit",
+      "url": "https://api.github.com/repos/m5stack/M5_Hardware/commits?path=Products/K151_StackChan&per_page=1",
+      "checkedAt": "2026-10-26T10:45:50.847584+00:00",
+      "httpStatus": 200,
+      "etag": "W/\"dac5d3bdaf69cd7e97c2f13dab9eb006bbc9fbd250646ff066b2e21e58893c6e\"",
+      "serverDate": "Mon, 26 Oct 2026 10:45:51 GMT",
+      "bytes": 3380,
+      "sha256": "b2135ff584d35e75d4a3126e60eb6df170e27f1d6d0447c99111fa7d6ec4eb4a",
+      "latestPathCommit": [
+        {
+          "sha": "70fb127275ef0e2da21218d1f01cd305754d35fa",
+          "date": "2026-05-25T03:03:19Z",
+          "message": "add stackchan structures"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "An unchanged official page or path commit does not prove the absence of other public material",
+    "No manufacturing fit, new servo variant, assembly transform or bearing datum inferred from HTTP metadata"
+  ],
+  "runtimeChanged": false,
+  "sameLatestPathCommitAsPrior": true,
+  "outcome": "Checked K151/A180/A181 resources unchanged by server ETag and K151 hardware-path latest commit unchanged. No new production mechanical datum from this bounded refresh; retain fit-unresolved."
+}

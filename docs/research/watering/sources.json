@@ -1,0 +1,250 @@
+{
+  "id": "watering",
+  "sku": "U101",
+  "officialDocs": "https://docs.m5stack.com/en/unit/watering",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "query": "Unit Watering U101 dimensions pump connector electrodes hardware",
+    "rawResponseDistributed": false,
+    "result": "Exact U101 product/photos/drawing and own two-page schematic:192.8×26.5×33mm complete Unit,1.6mm probe, two supplied hoses, black four-contact Grove, SI2302 pump-driver PCB and TLC555I/XC6206 capacitive board. No MCU or evidenced external light/control/visible impeller."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/watering/watering_04.webp",
+    "sha256": "47299e216232e3dbefc923f903623ae185aff75b31c5784dbea36aaed918c64f"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U101_Unit_Watering/Structures/Unit_Watering.stl",
+      "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+      "gitBlob": "953f97c18f07bb94deb4b4f6fedd6471da70759f",
+      "sha256": "5e66ee5fb02d901e48bd92d6931ba0da58daeea00d15f3a01164f640bb48677f",
+      "license": "MIT; retain licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/watering/module_size.jpg",
+      "sha256": "d463f7a09c66c01969b9554d4c842dca9814876e7d01c19d4cdeb7496b864adf"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/729/U101_Unit-Watering_SCH.pdf",
+      "sha256": "fcd3df7679087b62c2bbd159ecd1094a8a4e328476ae243257a4c5f9103d24b4"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/watering/watering_01.webp",
+      "sha256": "1fcdacd589301e5c3325c697f331d9c302a737727c1a62eae8a3d2366a5faacb"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/watering/watering_02.webp",
+      "sha256": "22e9fec1b1196234a02684739a97a7e4da9ef75ce665aaf1bdcbfdac5159e3b8"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/watering/watering_03.webp",
+      "sha256": "1444de1c165a496c81464e65d51f1251b5b5dcc549f73e88619bf64ec6118f23"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/watering/watering_04.webp",
+      "sha256": "47299e216232e3dbefc923f903623ae185aff75b31c5784dbea36aaed918c64f"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/watering/watering_05.webp",
+      "sha256": "0551a30b2b3356ba8691e658de73cfac838378675be98402b45f9fa32a82707c"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/watering/watering_06.webp",
+      "sha256": "ce2592bb27be041393fe63639ac455b794745206daf3c1c70ef3369c1c6042e8"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/watering/watering_07.webp",
+      "sha256": "f02d6bcb6c178c0585bf515a197b9e39fe3221757c431f1677da14fff4f90924"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "triangles": 9930,
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      0,
+      44,
+      4
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "method": "One common translation only; no hole fills, cuts, scales or separate shell registration",
+    "notes": "All9930 native assembled-shell and pump-saddle triangles retained at scale1 under one common translation. Displaced rear/front copies5068+4862 triangles excluded. Native bores, Grove opening, pump saddle, probe throat and rear label recess unchanged. Actual pump, two hollow nozzles, retaining ties, sensing probe, hidden circuit boards and connector internals reconstructed separately."
+  },
+  "dimensions": {
+    "nominalMm": [
+      26.5,
+      192.8,
+      33
+    ],
+    "vendorDimensionOrderMm": [
+      192.8,
+      26.5,
+      33
+    ],
+    "cadEnvelopeMm": [
+      24,
+      111.99475860595703,
+      32.973106384277344
+    ],
+    "visualEnvelopeMm": [
+      26.5,
+      192.8000030517578,
+      33
+    ],
+    "suppliedHosesEnvelopeMm": [
+      112.94283294677734,
+      192.8000030517578,
+      35.29768524169922
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -44
+      ],
+      [
+        8,
+        -44
+      ],
+      [
+        -8,
+        52
+      ],
+      [
+        8,
+        52
+      ]
+    ],
+    "mountingHoleDiameterMm": 4.85
+  },
+  "artwork": {
+    "kind": "mixed-source-vector-raster-reference-redraw",
+    "pngCount": 2,
+    "originalsDistributed": false,
+    "sources": "docs/research/watering/artwork.json",
+    "files": [
+      {
+        "path": "src/units/watering/source-vector-back.png",
+        "sha256": "9c1d2bbeab2f6a6d0e9cdde9b726162d237d823608f4ce5bd89798b9aa293fab",
+        "pixels": [
+          2400,
+          3000
+        ],
+        "sizeMm": [
+          16,
+          20
+        ],
+        "positionMm": [
+          0,
+          -21,
+          -3.8
+        ],
+        "face": "back",
+        "projectionDepthMm": 0.2,
+        "target": "Watering complete native assembled shell and pump saddle",
+        "method": "printedArtwork",
+        "artworkKind": "source-vector-raster",
+        "reference": {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/watering/watering_07.webp",
+          "sha256": "f02d6bcb6c178c0585bf515a197b9e39fe3221757c431f1677da14fff4f90924"
+        }
+      },
+      {
+        "path": "src/units/watering/reference-redraw-motor.png",
+        "sha256": "98caad348c74685123f36d903ce9df0dd603fc48510e8eb9cdafba73f5655371",
+        "pixels": [
+          2600,
+          1600
+        ],
+        "sizeMm": [
+          18,
+          16
+        ],
+        "positionMm": [
+          0,
+          -22.5,
+          27.3
+        ],
+        "face": "front",
+        "projectionDepthMm": 4.4,
+        "target": "Watering physical stationary EDLP600-D12B motor can",
+        "method": "printedArtwork",
+        "artworkKind": "reference-redraw",
+        "reference": {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/watering/watering_04.webp",
+          "sha256": "47299e216232e3dbefc923f903623ae185aff75b31c5784dbea36aaed918c64f"
+        }
+      }
+    ]
+  },
+  "runtimeFiles": [
+    {
+      "path": "src/units/watering/Hose.js",
+      "sha256": "4c9b92f136c50047c4d06910aaff1233b6f820fc2e44c4380a35a9059efb9a04"
+    },
+    {
+      "path": "src/units/watering/assembly.js",
+      "sha256": "46835866e4d100464752a49807781be05eb4b89386bb4c76d81910aa0d8c97c0"
+    },
+    {
+      "path": "src/units/watering/cad-map.json",
+      "sha256": "1c5bc38f4233b6bce3dfbd5f4390af55cd0420d7b006214efd159838b2d0d91a"
+    },
+    {
+      "path": "src/units/watering/dimensions.js",
+      "sha256": "e811bf769c2d31b731e07940b7e3e0d539fc9ddc91fae58bfad0098c5d22255c"
+    },
+    {
+      "path": "src/units/watering/geometry-data.js",
+      "sha256": "81863d26245e33efdeac6f0204fe1059139b01f32e9f31002cf3649c8093b89e"
+    },
+    {
+      "path": "src/units/watering/index.js",
+      "sha256": "5f8a985df715f60f6b3d4ca31bd283a4e7032a2beb555398dcd20293d23a4cc5"
+    },
+    {
+      "path": "src/units/watering/reference-redraw-motor.png",
+      "sha256": "98caad348c74685123f36d903ce9df0dd603fc48510e8eb9cdafba73f5655371"
+    },
+    {
+      "path": "src/units/watering/source-vector-back.png",
+      "sha256": "9c1d2bbeab2f6a6d0e9cdde9b726162d237d823608f4ce5bd89798b9aa293fab"
+    },
+    {
+      "path": "src/units/watering/stickers.js",
+      "sha256": "65345d524357b07f9cbc13176d955890ca9809cfa0e8b05f7be54c46e6183df7"
+    }
+  ],
+  "inferred": [
+    "Concealed pump/sensor PCB layout, package placement and capacitive copper routing; electrode conductor is below real black protective mask.",
+    "Pump motor/head profile and installation, diaphragm/backing shape, separate nozzle depths and bore sizes, retaining ties, motor leads and connector internals.",
+    "Hose6mm outer/4mm inner,1mm wall,5.4mm insertion,4.5mm stretched seat and default curved paths are photo-derived visual estimates, not manufacturer or measured production hose dimensions/lengths.",
+    "Only externally requested hollow-hose geometry changes; no exposed rotor exists and no hidden rotary animation, wobble, water or light invented.",
+    "Rear source fills restored as documented; motor tiny unreadable numerical/barcode details omitted."
+  ],
+  "feedback": null,
+  "scope": "Appearance, real Grove four-core cable/pose, typed mechanical inlet/outlet attachments and externally shaped removable hollow hoses only. No water/pumping/moisture/ADC/timing/power/electrical/firmware behavior."
+}

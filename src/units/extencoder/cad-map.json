@@ -1,0 +1,43 @@
+{
+  "sku": "U161",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/d3ae864f161167af3f9698214012e1d135adc357/Products/U161_Unit_ExtEncoder/Structures/Unit_ExtEncoder.stl",
+  "commit": "d3ae864f161167af3f9698214012e1d135adc357",
+  "gitBlob": "779ba575c00fb777b5583bdca89bd72d0080bf19",
+  "sha256": "7806f721d6be49f13aab2faf6c2ea645db0ffd5dfe72bff9b351551f8aca86ac",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/d3ae864f161167af3f9698214012e1d135adc357/LICENSE",
+  "origin": [
+    -529.268798828125,
+    225.22348022460938,
+    4
+  ],
+  "axes": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "ExtEncoder complete native assembled shell",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "notes": "All 3286 triangles of the complete assembled native shell retained with one common rigid half turn about Y and translation, scale 1. Components 1/2 are displaced copies, 1712 + 1574 triangles. No hole fills, cuts, scales or separate shell registration. PCB, fixed terminals, metal contacts, Grove internals and removable plug reconstructed separately from exact U161 official photographs and schematic; concealed positions are inferred."
+}

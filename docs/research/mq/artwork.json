@@ -1,0 +1,137 @@
+{
+  "id": "mq",
+  "sku": "U199",
+  "kind": "source-vector-raster-and-reference-redraw",
+  "status": "source-vector-raster-and-reference-redraw",
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "pngCount": 4,
+  "defaultPanels": 4,
+  "barePanels": 3,
+  "method": "Exact-model rear vector converted with libcdr, then bounded at its actual label contour and rasterized to RGBA PNG; three own-product code redraws supply title, blank identification label and MQ-5 collar lettering. No photograph pixels/crops or source assets are distributed.",
+  "sources": [
+    {
+      "kind": "private-exact-model-original",
+      "distributed": false,
+      "scope": "Rear schematic/Grove print; private filename and source URL intentionally excluded"
+    },
+    {
+      "kind": "official-own-product-photograph",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1168/U199_Unit_MQ_02.webp",
+      "sha256": "d9eccdcc109b943c6d7d6320a319f4e05e7551a7073a4be48cf04087f18d434a"
+    },
+    {
+      "kind": "official-own-product-photograph",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1168/U199_Unit_MQ_05.webp",
+      "sha256": "365becc1510d2176ca22358310ac1b92ec711b6b896f4161f811f79dfbeaf768"
+    },
+    {
+      "kind": "official-own-product-photograph",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1168/U199_Unit_MQ_06.webp",
+      "sha256": "dfcbffec0524e3575a0235c77822efa06b8129a2869010c51b185a7fc335fed4"
+    },
+    {
+      "kind": "official-own-product-photograph",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1168/U199_Unit_MQ_08.webp",
+      "sha256": "72058eaed878b1fc50a042e7cb7e23abfda29ef5d271b88e61fd097ac35522f5"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/mq/source-vector-back.png",
+      "sha256": "e966af82aa43f7e2744140803b62447c762c141a7acd299148383bb7e6540776",
+      "pixels": [
+        1851,
+        3000
+      ],
+      "sizeMm": [
+        16.05625,
+        26.03125
+      ],
+      "positionMm": [
+        0,
+        -2.4,
+        -3.8
+      ],
+      "coordinateFrame": "Unit chassis",
+      "face": "back",
+      "target": "MQ complete native assembled shell",
+      "kind": "source-vector-raster",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/mq/reference-redraw-title.png",
+      "sha256": "e88ec9c3aec57dda723b04ea81a6d182229d0389a64b620361de2017d77bfdab",
+      "pixels": [
+        2560,
+        768
+      ],
+      "sizeMm": [
+        16,
+        4.8
+      ],
+      "positionMm": [
+        0,
+        -12.5,
+        3.8
+      ],
+      "coordinateFrame": "Unit chassis",
+      "face": "front",
+      "target": "MQ complete native assembled shell",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/mq/reference-redraw-blank.png",
+      "sha256": "7fb64be6c55cf35ccdf6ed47e4bf97018c15f5242b79669fc9ccf180aff62fd4",
+      "pixels": [
+        2080,
+        1168
+      ],
+      "sizeMm": [
+        13,
+        7.3
+      ],
+      "positionMm": [
+        0,
+        24.7,
+        20.5
+      ],
+      "coordinateFrame": "Unit chassis",
+      "face": "front",
+      "target": "MQ complete native assembled shell",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/mq/reference-redraw-mq5.png",
+      "sha256": "0567220bcddff88a5ee06324565e1695bce07497839d55cd043cb738b44a44d3",
+      "pixels": [
+        832,
+        176
+      ],
+      "sizeMm": [
+        5.2,
+        1.1
+      ],
+      "positionMm": [
+        0,
+        4.65,
+        9.2
+      ],
+      "coordinateFrame": "MQ5Cartridge",
+      "face": "front",
+      "target": "MQ-5 solid marked collar",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    }
+  ],
+  "limitations": [
+    "Private exact-model source retains rear artwork only; another candidate contains cutting lines and is not used as print. Front title and can marking are reference-redraw, not mislabeled originals.",
+    "Blank white identification sticker is present on own bare/installed hood photos. It carries no invented text.",
+    "No image/panel fills a sensor socket, shell bore or missing PCB/subassembly. All four panels project onto existing physical triangles.",
+    "Cartridge artwork follows mechanical attachment and honors artwork:false propagated from Model/GroveModule.",
+    "Redraw font/color/registration and tiny collar lettering are appearance estimates; browser/full visual acceptance deferred."
+  ],
+  "rights": "Product print, names and marks retain their respective rights."
+}

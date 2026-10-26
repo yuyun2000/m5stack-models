@@ -1,0 +1,70 @@
+{
+  "id": "flashlight",
+  "sku": "U152",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Readable exact-model rear label and internal TORCH/FLASH PCB silk newly code-drawn and rasterized as final ordinary PNGs;official photographs are references only.No photo crop or preview enlargement.",
+  "sources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/FlashLight/img-25533591-c9ad-457f-a6d9-6c2391829285.webp",
+      "sha256": "0cc5e47c6ea8848d12be4cac1c0571c7e52836826a970e0339813709132de94a"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/765/U152-mode-note.png",
+      "sha256": "2f12f0352f997cbe96348a76a45b63ef5c359312130979e6614545b403ea56af"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/flashlight/reference-redraw-back.png",
+      "sha256": "bd84d2a8f48cb0244dd55df945f71cb890950242dc677d83ca654a02058199d2",
+      "pixels": [
+        2592,
+        1952
+      ],
+      "sizeMm": [
+        16.2,
+        12.2
+      ],
+      "positionMm": [
+        0,
+        7,
+        -3.8
+      ],
+      "face": "back",
+      "target": "FlashLight complete native assembled front and rear shell",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/flashlight/reference-redraw-pcb.png",
+      "sha256": "1f0cc8b1d61ea2e28f4b72cb799c09ec3c1df21b38fcb9e8938c0f1a3b790d9e",
+      "pixels": [
+        800,
+        2440
+      ],
+      "sizeMm": [
+        4,
+        12.2
+      ],
+      "positionMm": [
+        -7.3,
+        5.6,
+        -0.45
+      ],
+      "face": "front",
+      "target": "FlashLight fixed PCB with native mounting reliefs and real retaining bore",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    }
+  ],
+  "limitations": [
+    "Typography,color,small strokes and physical print registration are reconstructed appearance.",
+    "Default closed shell occludes internal PCB silk;covers:false hides rear cover label and keeps real PCB silk in place.",
+    "No unreadable identifiers,QR,serial numbers,private sources,vector files or intermediates distributed."
+  ],
+  "rights": "Product names,original printed designs and trademarks retain respective rights."
+}

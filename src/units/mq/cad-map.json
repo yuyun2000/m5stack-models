@@ -1,0 +1,43 @@
+{
+  "sku": "U199",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/d3ae864f161167af3f9698214012e1d135adc357/Products/U199_Unit_MQ/Structures/Unit-MQ.stl",
+  "commit": "d3ae864f161167af3f9698214012e1d135adc357",
+  "gitBlob": "1da6b2c24e3f174bc4ff30db819f49c19f157c03",
+  "sha256": "96d09edb1a8bd35e09b4e232be682a60b0162ac7ffc01e6cf65cc24a9fa943c6",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/d3ae864f161167af3f9698214012e1d135adc357/LICENSE",
+  "origin": [
+    0,
+    32,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "MQ complete native assembled shell",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "notes": "Complete native assembled shell component0 preserved at scale1 with a common translation only. Displaced rear/front duplicate components1/2 excluded. Native circular socket opening, cylindrical hood, fin, rear screw seats, mounting bores, seam and Grove mouth are unmodified. PCB, actual socket contacts/adapter and removable MQ-5 mesh/ceramic/pins are reconstructed physical geometry."
+}

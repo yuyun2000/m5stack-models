@@ -1,0 +1,46 @@
+{
+  "sku": "U155",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/53d59bf42f8a5eba12e0003ef71d429d585ce43e/Products/U155_Unit_RCA/Structures/Unit_RCA.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/9ec405a4b6353ebad3f1423c90838e44873c2dce",
+  "commit": "53d59bf42f8a5eba12e0003ef71d429d585ce43e",
+  "gitBlob": "9ec405a4b6353ebad3f1423c90838e44873c2dce",
+  "sha256": "82616e77c8980f785fb69b6df22d0d99c9c78868d086c7907738042e2a97deef",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/53d59bf42f8a5eba12e0003ef71d429d585ce43e/LICENSE",
+  "origin": [
+    -529.268798828125,
+    225.22348022460938,
+    4
+  ],
+  "axes": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "RCA complete native assembled front and rear shell",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 3216,
+  "localModification": null,
+  "notes": "Native assembled component0 retained completely at scale1 with one common translation and proper180-degree Y-axis rotation; displaced duplicate front/rear shells1/2 excluded. No shell triangles patched,filled or removed. PCB,RCA socket,channel selector,Grove,screw and label registration are reconstructed appearance."
+}

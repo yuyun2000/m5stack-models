@@ -1,0 +1,209 @@
+{
+  "id": "reflective-ir",
+  "sku": "U175",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit-Reflective%20IR",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "query": "Unit Reflective IR U175 dimensions sensor adjustment LED",
+    "followupQuery": "Unit Reflective IR U175 阀值比较电压有效范围 0.3V 2.15V",
+    "rawResponseDistributed": false,
+    "result": "Exact U175:32×24×12mm,lens-inclusive depth12mm,shell depth8mm,IR D4 emitter/D3 receiver,R4 trimmer,LM393DR2G,HX6306P332MR,D1 red LED and PORT.B4-pin.No MCU,display,button or motor."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Reflective IR/img-82f72d4e-f956-4564-a421-121cce86a806.webp",
+    "sha256": "2d44b191b9ba78e2c1402bdb06a9033aac1b608094b5f3ca11e0a657173c2d5d"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/d3ae864f161167af3f9698214012e1d135adc357/Products/U175_Unit_Reflective_IR/Structures/Unit_Reflective_IR.stl",
+      "commit": "d3ae864f161167af3f9698214012e1d135adc357",
+      "gitBlob": "389dfa04f7d2a425db8e7911582a5a38ebbe00fc",
+      "sha256": "16656fbc01fa42b4d395c05fabc0e96b8aa796e5e690907bfab8b045d74ad6f1",
+      "license": "MIT; preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Reflective IR/img-c9762edb-419d-4e67-85ac-d0056667d97f.webp",
+      "sha256": "66e676dfb79f86dc0b65a5eeb0ff2459580b7d0ea33acf96a8d9f2e9f4a76a08"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Reflective IR/img-fecea8eb-3396-40cd-9312-20971fb55496.webp",
+      "sha256": "9bca8a53c706cfd4d26f64c07ce58737da4b9274449c2c9a262afe0164875d99"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Reflective IR/img-3953028a-4deb-4231-b909-752c420c5126.webp",
+      "sha256": "66ffd866e95601d69ce475de3a270c2c6dd3739d3b963d3100e3b14d13400fb1"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Reflective IR/img-98a85e73-cb56-4610-8c7e-5321537a9749.webp",
+      "sha256": "020a77b71923f5873964fdb3ab28d5c357bccc3ed4694918fa269d4f379f4ddd"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Reflective IR/img-7cffcff7-e1e6-4432-b644-ca791e4b1bc9.webp",
+      "sha256": "3af13e7cd5b94be8faf9d3d534d060246c46b6633af32fa1ec0b8f74dbb46a7a"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Reflective IR/img-82f72d4e-f956-4564-a421-121cce86a806.webp",
+      "sha256": "2d44b191b9ba78e2c1402bdb06a9033aac1b608094b5f3ca11e0a657173c2d5d"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/628/SCH_UNIT_Reflective_IR_V1.0.pdf",
+      "sha256": "3b22b82e316218aa1b6d0b392e643aa5c2ba34bb5872050708b006c260102d59"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Reflective IR/img-9dca38e0-16f9-4657-aecf-5c1c22cc1889.jpg",
+      "sha256": "209dd32dae1a4f5fc1f4e92ec80554bfdf87bf55f6e5a0ca6d326f1630145725"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "originalAssemblyTriangles": 3302,
+    "outputTriangles": 3546,
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      441.2688293457031,
+      269.2234802246094,
+      2
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "localModification": {
+      "reason": "Official own rear photo and dimension drawing show a real screwdriver-access hole at[0,8]; source shell omits it.",
+      "centreMm": [
+        0,
+        8
+      ],
+      "diameterMm": 1.6,
+      "diameterEvidence": "Photo-inferred; drawing establishes location,not access diameter.",
+      "rearWallMm": [
+        -3.8,
+        -2.9
+      ],
+      "alteredOriginalTriangles": 3,
+      "boreSegments": 48,
+      "outputTriangles": 3546
+    },
+    "notes": "Native assembly0 retained at scale1 with one common translation; displaced duplicate shells1/2 excluded. Only documented trimmer screwdriver access bore locally cut; no other shell openings patched. PCB,packages,IR lenses and internals,Grove,screws,trimmer and label registration are reconstructed appearance."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      32,
+      12
+    ],
+    "vendorDimensionOrderMm": [
+      32,
+      24,
+      12
+    ],
+    "cadEnvelopeMm": [
+      24,
+      32,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24,
+      32,
+      12
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -4
+      ],
+      [
+        8,
+        -4
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "opticalPitchMm": 10.2,
+    "trimmerAxisMm": [
+      0,
+      8,
+      -3.5
+    ],
+    "trimmerAccessDiameterMm": 1.6,
+    "dimensionEvidence": "Own official drawing:24×32mm shell,8mm shell depth,12mm optical-inclusive depth,10.2mm optical pitch,16mm mounting pitch,nominalØ5mm mounting bores.Rear trimmer centre8mm below shell top;access-hole diameter is inferred from own rear photographs."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 2,
+    "sourceDetails": "docs/research/reflective-ir/artwork.json",
+    "originalsDistributed": false
+  },
+  "scope": "Real shell,PCB,passive emitter/receiver packages and backing,actual rear trimmer head finite-angle motion,concealed fixed-red LED independent external appearance,own circuitry packages,Grove and passive anchors only.No IR beam,visible IR emission,sensor/distance/ADC/threshold voltage/comparator/electrical/firmware simulation.",
+  "inferred": [
+    "PCB outline and installed plane",
+    "Concealed component/pin/passive placement",
+    "IR resin/internal die/leadframe rendering and lead shape",
+    "R4 package/head/access-hole diameter and conservative angle limits",
+    "Grove cavity/contact dimensions,screw installation and artwork registration"
+  ],
+  "notes": [
+    "Source CAD lacks own-photo/documented rear trimmer screwdriver hole;only3 original wall triangles locally split and48-segment inner wall added.",
+    "D1 real red0603 is registered for independent external on/brightness but is concealed by assembled shell,no invented window or exterior halo.",
+    "Two final reference-redraw PNGs only;all mounting,optical,Grove and trimmer openings remain physical."
+  ],
+  "feedback": {
+    "id": "284ffb97bc824e248cc5aaf576c7e665",
+    "status": "accepted",
+    "issue": "Repeated official product notation0.3V≥1.65V≤2.15V is numerically contradictory;please verify/correct direction and keep factory datum separate from angle calibration."
+  },
+  "runtimeFiles": [
+    {
+      "path": "src/units/reflective-ir/assembly.js",
+      "sha256": "889c3071fd69c29fb1c6e4506542f4a0743684891f95f56aac081f95460f375f"
+    },
+    {
+      "path": "src/units/reflective-ir/cad-map.json",
+      "sha256": "472b943fcd8b6af192fbb8b92cedd0a9daa88ed38727f5b338decabe9c1b4df2"
+    },
+    {
+      "path": "src/units/reflective-ir/dimensions.js",
+      "sha256": "a0a3e35dbbe0767115b94df7b2c521a20ffbcef41c650eea13cf80160e3bf248"
+    },
+    {
+      "path": "src/units/reflective-ir/geometry-data.js",
+      "sha256": "d694fe6fa4221667fb038d11202d0212ff6b704ad79d65ad0583b71899ce4fbf"
+    },
+    {
+      "path": "src/units/reflective-ir/index.js",
+      "sha256": "6b06fc8079d1e70f91a84516ed57a323f8b88fa6b64eb90b619e63d98ba26be3"
+    },
+    {
+      "path": "src/units/reflective-ir/reference-redraw-back.png",
+      "sha256": "96dd782986249ec4ffc86d17c026bcd315653a6a7a8838fee7dc44d0900179eb"
+    },
+    {
+      "path": "src/units/reflective-ir/reference-redraw-front.png",
+      "sha256": "587be15c51e9ead3eddef5b15d8c866dadbed5a2006268626fb8ecbaf583aece"
+    },
+    {
+      "path": "src/units/reflective-ir/stickers.js",
+      "sha256": "53bf2f3df57b3ca7e786c217c3a73f020ca0ba3acb4224456fa0e6ac5e731536"
+    }
+  ]
+}

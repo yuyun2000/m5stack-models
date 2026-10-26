@@ -1,0 +1,239 @@
+{
+  "checkedAt": "2026-10-26T11:18:02.582Z",
+  "status": "pass",
+  "scope": "Necessary local U136 source-envelope,real optical window/non-emissive transparent sensor die/PCB backing,FrontSide mounting/PCB/pad bores,passive API,artwork physical invariance,four-wire Grove attachment/pose/independent detach/disposal.No historical suite,browser visual acceptance,lux/optical/electrical/firmware/hardware or production-fit validation.",
+  "meshes": 64,
+  "triangles": 23938,
+  "nativeTriangles": 3216,
+  "visualEnvelopeMm": [
+    24,
+    32,
+    8.00000009536743
+  ],
+  "cadEnvelopeMm": [
+    24,
+    32,
+    8
+  ],
+  "boreRays": 10,
+  "boreWalls": 20,
+  "fabricationHoleWalls": 16,
+  "opticalRays": 9,
+  "opticalHits": [
+    {
+      "pointMm": [
+        0,
+        8,
+        2.900000014305115
+      ],
+      "surface": "DLight non-emissive transparent BH1750FVI optical resin"
+    },
+    {
+      "pointMm": [
+        0.5,
+        8,
+        2.900000014305115
+      ],
+      "surface": "DLight non-emissive transparent BH1750FVI optical resin"
+    },
+    {
+      "pointMm": [
+        -0.5,
+        8,
+        2.900000014305115
+      ],
+      "surface": "DLight non-emissive transparent BH1750FVI optical resin"
+    },
+    {
+      "pointMm": [
+        0,
+        8.9,
+        2.900000014305115
+      ],
+      "surface": "DLight non-emissive transparent BH1750FVI optical resin"
+    },
+    {
+      "pointMm": [
+        0,
+        7.1,
+        2.900000014305115
+      ],
+      "surface": "DLight non-emissive transparent BH1750FVI optical resin"
+    }
+  ],
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        8,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 13,
+      "purpose": "Native optical opening has real transparent BH1750FVI package and physical die/PCB backing"
+    },
+    {
+      "origin": [
+        1.2,
+        8,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 13,
+      "purpose": "Window margin is backed by genuine white PCB, never filled by artwork"
+    },
+    {
+      "origin": [
+        0,
+        -24,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Grove insertion cavity has real recessed rear wall"
+    },
+    {
+      "origin": [
+        -3,
+        -24,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove contact1 is actual recessed metal"
+    },
+    {
+      "origin": [
+        -1,
+        -24,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove contact2 is actual recessed metal"
+    },
+    {
+      "origin": [
+        1,
+        -24,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove contact3 is actual recessed metal"
+    },
+    {
+      "origin": [
+        3,
+        -24,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove contact4 is actual recessed metal"
+    },
+    {
+      "origin": [
+        0,
+        -4,
+        -12
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 9,
+      "purpose": "Rear screw recess is backed by real fixed fastening hardware"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Native optical opening has real transparent BH1750FVI package and physical die/PCB backing",
+      "hit": "DLight non-emissive transparent BH1750FVI optical resin",
+      "distanceMm": 12.099999985694886
+    },
+    {
+      "purpose": "Window margin is backed by genuine white PCB, never filled by artwork",
+      "hit": "DLight fixed white PCB with open mounting edge reliefs and true central and fabrication holes",
+      "distanceMm": 12.84999998807907
+    },
+    {
+      "purpose": "Grove insertion cavity has real recessed rear wall",
+      "hit": "DLight Grove rear wall",
+      "distanceMm": 13.85000001192093
+    },
+    {
+      "purpose": "Grove contact1 is actual recessed metal",
+      "hit": "DLight Grove contact 1",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Grove contact2 is actual recessed metal",
+      "hit": "DLight Grove contact 2",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Grove contact3 is actual recessed metal",
+      "hit": "DLight Grove contact 3",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Grove contact4 is actual recessed metal",
+      "hit": "DLight Grove contact 4",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Rear screw recess is backed by real fixed fastening hardware",
+      "hit": "DLight fixed hex retaining screw face",
+      "distanceMm": 8.19
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove"
+    ],
+    "anchors": [
+      "sensor"
+    ],
+    "controls": [],
+    "leds": [],
+    "joints": []
+  },
+  "artwork": {
+    "panels": 1,
+    "kind": "reference-redraw",
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 108
+}

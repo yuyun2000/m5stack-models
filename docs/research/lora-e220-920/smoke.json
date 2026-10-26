@@ -1,0 +1,165 @@
+{
+  "checkedAt": "2026-10-26T11:05:01.403Z",
+  "status": "pass",
+  "scope": "Necessary local exact native shell/FrontSide bores and actual connector/deck closure, SMA female bore/male antenna pin and coupling, optional110mm hinged antenna degrees0–90, two independent retained DIP press/release/cancel/input and silent external detents, passive-only boundary,3 reference-redraw PNG registrations, all physical attribute/index/matrixWorld invariance, four-wire pose/nested attach/independent detach/disposal. No browser or full historical review, hardware/electrical/UART/RF/mode/production-fit acceptance.",
+  "meshes": 107,
+  "triangles": 45236,
+  "nativeTriangles": 6614,
+  "cadEnvelopeMm": [
+    24,
+    64,
+    8
+  ],
+  "visualEnvelopeMm": [
+    24,
+    71.40000019073486,
+    8
+  ],
+  "antennaInstalledStraightEnvelopeMm": [
+    24,
+    174.90000009536743,
+    9.670000005960464
+  ],
+  "mountingRays": 10,
+  "mountingFrontSideWalls": 8,
+  "groveContacts": 4,
+  "externalComponents": [
+    "sma",
+    "grove",
+    "mode-0",
+    "mode-1",
+    "sensor"
+  ],
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        45,
+        0
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Real SMA female centre bore backed by recessed contact end",
+      "firstSolid": "LoRaE220-920 SMA recessed centre contact blind end",
+      "distanceMm": 10.100000001341108
+    },
+    {
+      "origin": [
+        0,
+        28,
+        10
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 8,
+      "purpose": "Native front retention window backed by actual SMA nut",
+      "firstSolid": "LoRaE220-920 SMA retained internal hex body visible through both native windows",
+      "distanceMm": 6.869999885559085
+    },
+    {
+      "origin": [
+        0,
+        28,
+        -10
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 8,
+      "purpose": "Native rear retention window backed by actual SMA nut",
+      "firstSolid": "LoRaE220-920 SMA retained internal hex body visible through both native windows",
+      "distanceMm": 6.86999988555908
+    },
+    {
+      "origin": [
+        -4.5,
+        15,
+        10
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 7,
+      "purpose": "Native DIP window closed by actual fixed two-slot switch deck",
+      "firstSolid": "LoRaE220-920 S1 fixed deck with two genuine slider slots",
+      "distanceMm": 6.45
+    },
+    {
+      "origin": [
+        -5.75,
+        14.4,
+        10
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 7,
+      "purpose": "Actual retained white DIP thumb in slot",
+      "firstSolid": "LoRaE220-920 S1 mode-0 moving grip rib",
+      "distanceMm": 6.130000001341104
+    },
+    {
+      "origin": [
+        0,
+        -40,
+        0.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 17,
+      "purpose": "Grove actual cavity backed by real rear wall",
+      "firstSolid": "LoRaE220-920 Grove rear wall",
+      "distanceMm": 14.300000011920929
+    }
+  ],
+  "antenna": {
+    "defaultInstalled": false,
+    "totalLengthMm": 110,
+    "physicalConnector": "sma-male",
+    "portCompatibilityConnector": "sma-female",
+    "joint": "sma/tilt",
+    "limitsDeg": [
+      0,
+      90
+    ],
+    "fixedMatingFrameInvariant": true
+  },
+  "dip": {
+    "ids": [
+      "mode-0",
+      "mode-1"
+    ],
+    "detents": [
+      0,
+      1
+    ],
+    "travelMm": 1.2,
+    "independent": true,
+    "releaseRetainsDetent": true,
+    "cancelledNoClick": true,
+    "externalPositionNoInputEcho": true
+  },
+  "artwork": {
+    "panels": 3,
+    "kind": "reference-redraw",
+    "physicalGeometryInvariant": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 233
+}

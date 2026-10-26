@@ -2,9 +2,9 @@
 
 由 npm run catalog 生成；catalog/products.json 为权威状态。
 
-范围：精细外观建模，行为由下游模拟器负责。主机 14 款，Unit 71 款。
+范围：精细外观建模，行为由下游模拟器负责。主机 14 款，Unit 98 款。
 
-状态计数：{"modeled":85}。modeled 表示已有实现，不表示已完成视觉验收。
+状态计数：{"modeled":112}。modeled 表示已有实现，不表示已完成视觉验收。
 
 | 类别 | 产品 | 阶段 | 名义尺寸 X × Y × Z / mm | 下一步 |
 | --- | --- | --- | --- | --- |
@@ -93,3 +93,30 @@
 | Unit | Unit Laser TX | modeled | 24 × 32 × 8 | Continue Unit expansion with simultaneous matching labels; refine concealed laser/PCB placement only from exact populated-assembly evidence. |
 | Unit | Unit Laser RX | modeled | 24 × 32 × 8 | Continue new Unit expansion with matching stickers; refine concealed receiver package installation only when exact production evidence becomes available. |
 | Unit | Unit MIDI | modeled | 40 × 48 × 25 | Continue Unit expansion with matching labels; refine concealed installation only when production assembly evidence becomes available. |
+| Unit | Unit DAC2 | modeled | 24 × 32 × 10.2 | Continue Unit expansion with matching source artwork; refine concealed installation only with official assembly evidence. |
+| Unit | Unit DDS | modeled | 24 × 71.4 × 8 | Continue Unit expansion with labels; refine concealed installation only when production assembly evidence becomes available. |
+| Unit | Unit KMeter-ISO v1.1 | modeled | 24 × 56 × 8 | Continue new Unit expansion with matching stickers; refine hidden installed package and probe only with exact mechanical evidence. |
+| Unit | Unit TimerPWR | modeled | 24 × 40 × 11 | Continue Unit expansion and exact source-label replacement when supplied; production installation only with authoritative new assembly evidence. |
+| Unit | Unit ExtEncoder | modeled | 24 × 32 × 10.7 | Continue Unit expansion with matching artwork; refine concealed package placement and plug installation only with exact assembly evidence. |
+| Unit | Unit NFC | modeled | 24 × 48 × 8 | Continue Unit expansion with matching source artwork; improve concealed assembly only with official physical-layout evidence. |
+| Unit | Unit ADC v1.1 | modeled | 24 × 32 × 10.2 | Continue Unit expansion with matching artwork; refine concealed installation with exact assembly evidence. |
+| Unit | Unit AMeter | modeled | 24 × 56 × 8 | Continue Unit expansion with matching artwork; refine concealed installation only with official assembly evidence. |
+| Unit | Unit VMeter | modeled | 24 × 56 × 8 | Continue Unit expansion with matching artwork; refine LED color and concealed installation only when exact official assembly evidence becomes available. |
+| Unit | Unit Tube Pressure | modeled | 24 × 32 × 12.5 | Continue Unit expansion with matching artwork; refine concealed installation only with exact official assembly evidence. |
+| Unit | Unit MQ | modeled | 24 × 64 × 25 | Continue Unit expansion with corresponding artwork; refine concealed assembly and installed sensor dimensions only with exact official production drawings. |
+| Unit | Unit LoRaE220-920 | modeled | 24 × 71.4 × 8 | Continue adding exact-model Units with synchronized artwork; refine concealed and antenna installation datums if production assembly evidence becomes public. |
+| Unit | Unit Watering | modeled | 26.5 × 192.8 × 33 | Continue exact-model Unit expansion with synchronized artwork; refine concealed pump/hose installation only when production assembly dimensions are available. |
+| Unit | Unit HBridge v1.1 | modeled | 24 × 56 × 10.2 | Continue Unit expansion with matching artwork; refine hidden assembly with official manufacturing evidence. |
+| Unit | Unit DLight | modeled | 24 × 32 × 8 | Continue Unit expansion with matching artwork;refine concealed installation only with exact official assembly evidence. |
+| Unit | Unit DCSSR | modeled | 45 × 80 × 31 | Continue Unit expansion with matching artwork;refine inferred DC SSR assembly and native tongue travel when exact U140 production dimensions become available. |
+| Unit | Unit NCIR2 | modeled | 24 × 48 × 8 | Continue Unit expansion with matching artwork;refine concealed assembly only with exact official assembly evidence. |
+| Unit | Unit Reflective IR | modeled | 24 × 32 × 12 | Continue Unit expansion with matching artwork;refine hidden installation/trimmer travel only with exact official assembly evidence. |
+| Unit | Unit Thermal2 | modeled | 24 × 48 × 8 | Continue Unit expansion with matching artwork;refine concealed assembly only with exact official assembly evidence. |
+| Unit | Unit FlashLight | modeled | 24 × 32 × 8 | Continue Unit expansion with matching artwork;refine hidden selector/LED installation only with exact official assembly evidence. |
+| Unit | Unit GPS SMA | modeled | 24 × 71.4 × 8 | Continue exact-model Unit expansion with synchronized artwork;refine concealed SMA adapter and accessory installation if official production assembly evidence appears. |
+| Unit | Unit BLDC Driver | modeled | 24 × 32 × 11.3 | Continue Unit expansion with matching artwork;refine hidden terminal installation only with exact official assembly evidence. |
+| Unit | Unit RCA | modeled | 24 × 36.4 × 8 | Continue Unit expansion with matching artwork;refine hidden S1/socket installation only with exact official assembly evidence. |
+| Unit | Unit Puzzle | modeled | 24 × 24 × 15 | Continue exact-model Unit expansion with synchronized artwork;refine actual rigid Bridge fit if authoritative production assembly evidence appears. |
+| Unit | Unit RS485-ISO | modeled | 24 × 56 × 10.2 | Continue exact Unit expansion with matching artwork;refine LED emitted color,shared drawing attribution and accessory installation only when exact official evidence appears. |
+| Unit | Unit AIN4-20mA | modeled | 24 × 56 × 11.3 | Continue Unit expansion with matching artwork;refine hidden connector/header assembly only with exact official installed geometry. |
+| Unit | Unit AC Measure | modeled | 24 × 56 × 10.3 | Continue Unit expansion with matching artwork;refine hidden terminal installation only with exact official assembly evidence. |

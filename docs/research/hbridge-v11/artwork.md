@@ -1,0 +1,9 @@
+# U160-V11 label provenance
+
+Two final ordinary PNGs are **reference-redraw** assets, independently code-drawn from the exact Unit HBridge v1.1 official photographs: front HV/G/M−/M+ marks, optional470µF symbol, V1.1, blue H, BRIDGE and Current Measure; rear H-BRIDGE, V1.1, STM32F030/INA199 blocks, static bridge schematic and PORT.A I2C pin strip.
+
+Neither PNG is a product-photo crop, photographic perspective rectification or enlarged preview. Text, colour blocks and diagram strokes were newly drawn; font metrics, colours, diagram placement and registration remain visual reconstructions. No QR code or unreadable identity was invented. The rear print's literal `1mR` is preserved as photographed; it conflicts with schematic `10mR` and is not a model parameter. The accepted feedback is recorded in `sources.json`.
+
+The front label is a real adhesive film crossing the native narrow central recess; there is a physical populated PCB behind it. The rear print is projected only onto its actual original rear-cover surface. Both follow their cover in inspection mode; this product explicitly sets every printed layer invisible with `covers:false` while preserving objects, geometry and provenance. Artwork never substitutes for connector walls, PCB, backing or electronic packages. `{artwork:false}` removes only printed layers, preserving physical buffers, indices and world transforms for every accessory/inspection configuration.
+
+Private tables, original vectors, download mappings, private links, source filenames, image generators and intermediates are excluded. Only the final PNGs are distributed. Product names, original label design and trademarks retain their respective rights. Runtime PNG SHA-256, resolution, measured placement estimates and public official reference hashes are listed in `artwork.json`.

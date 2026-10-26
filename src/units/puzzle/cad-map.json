@@ -1,0 +1,71 @@
+{
+  "sku": "U193",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/deac1efb203a788204485c450a43a271f57092c0/Products/U193_Unit_Puzzle/Structures/Unit_Puzzle.stl",
+  "commit": "deac1efb203a788204485c450a43a271f57092c0",
+  "gitBlob": "ffe5bdfb9d44175da29d3baa3f4ad75a1399d28c",
+  "sha256": "bea892ad2b769680e28eb7cd0a35500a647007a758c1d913d4b20bc9218a64e9",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/deac1efb203a788204485c450a43a271f57092c0/LICENSE",
+  "origin": [
+    11.8999986,
+    11.9000036,
+    -5.7837484
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 1,
+      "name": "Puzzle complete native rear shell with real joining slots and mounting bores",
+      "material": "shell"
+    },
+    {
+      "component": 2,
+      "name": "Puzzle complete native eight by eight isolation grid cover",
+      "material": "grid"
+    }
+  ],
+  "excludedComponents": [
+    0,
+    3,
+    5,
+    7
+  ],
+  "originalAssemblyTriangles": 4538,
+  "notes": "Native assembled components1/2 retained completely at scale1 under one common translation.0/3 are displaced shell/grid duplicates;4/6 are the supplied rigid joining accessory,5/7 its displaced duplicates. Source shell holes,joining slots and64-cell isolation grid remain native;PCB,64WS2812E-1313 packages,thin translucent diffuser,Grove interiors and artwork registration are reconstructed appearance. Native accessory4/6 separately exported as Bridge;its original placement is evidence only,no fabricated attachment or fit claim.",
+  "accessory": {
+    "name": "single supplied rigid joining accessory",
+    "components": [
+      4,
+      6
+    ],
+    "triangles": 1024,
+    "origin": [
+      11.8999986,
+      -0.0999964,
+      -9.5337484
+    ],
+    "sourceAssemblyCentreInUnitMm": [
+      0,
+      -12,
+      -3.75
+    ],
+    "assemblyStatus": "source placement retained as evidence only;no mechanical fit/attachment claim",
+    "export": "Bridge"
+  }
+}

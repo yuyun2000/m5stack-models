@@ -1,0 +1,189 @@
+{
+  "checkedAt": "2026-10-26T10:35:55.080Z",
+  "status": "pass",
+  "scope": "Necessary local native-source envelope and hole/cavity geometry, independent accessory screw visual motion and reset, physical-buffer invariance, two own-photo PNG registration, Grove four-core attach/pose/detach/disposal. No browser/full historical, electrical, ABZ decoding, hardware or manufacturing-fit verification.",
+  "meshes": 131,
+  "triangles": 6992,
+  "visualEnvelopeMm": [
+    24,
+    32,
+    10.700000095367432
+  ],
+  "cadEnvelopeMm": [
+    24,
+    32,
+    8
+  ],
+  "nativeTriangles": 3286,
+  "boreRays": 10,
+  "boreWalls": 8,
+  "frontWindows": 5,
+  "frontWindowWalls": 5,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        -24,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Actual Grove mouth has recessed contact carrier and rear wall"
+    },
+    {
+      "origin": [
+        -5.08,
+        24,
+        1.2
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Encoder 1 actual recessed contact"
+    },
+    {
+      "origin": [
+        -2.54,
+        24,
+        1.2
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Encoder 2 actual recessed contact"
+    },
+    {
+      "origin": [
+        0,
+        24,
+        1.2
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Encoder 3 actual recessed contact"
+    },
+    {
+      "origin": [
+        2.54,
+        24,
+        1.2
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Encoder 4 actual recessed contact"
+    },
+    {
+      "origin": [
+        5.08,
+        24,
+        1.2
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Encoder 5 actual recessed contact"
+    },
+    {
+      "origin": [
+        1.27,
+        24,
+        2.8
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 19,
+      "purpose": "Between encoder pins the insertion cavity ends at real polymer rear wall"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Actual Grove mouth has recessed contact carrier and rear wall",
+      "hit": "ExtEncoder Grove recessed contact carrier",
+      "distanceMm": 11.250000047683718
+    },
+    {
+      "purpose": "Encoder 1 actual recessed contact",
+      "hit": "ExtEncoder GND P6 contact",
+      "distanceMm": 9.199999904632568
+    },
+    {
+      "purpose": "Encoder 2 actual recessed contact",
+      "hit": "ExtEncoder 5V P6 contact",
+      "distanceMm": 9.199999904632568
+    },
+    {
+      "purpose": "Encoder 3 actual recessed contact",
+      "hit": "ExtEncoder Z1 P6 contact",
+      "distanceMm": 9.199999904632568
+    },
+    {
+      "purpose": "Encoder 4 actual recessed contact",
+      "hit": "ExtEncoder B1 P6 contact",
+      "distanceMm": 9.199999904632568
+    },
+    {
+      "purpose": "Encoder 5 actual recessed contact",
+      "hit": "ExtEncoder A1 P6 contact",
+      "distanceMm": 9.199999904632568
+    },
+    {
+      "purpose": "Between encoder pins the insertion cavity ends at real polymer rear wall",
+      "hit": "ExtEncoder fixed encoder recessed rear wall",
+      "distanceMm": 17.55000001192093
+    }
+  ],
+  "wireEntryRays": 5,
+  "wireEntryWalls": 5,
+  "matingBoreWalls": 5,
+  "publicAPI": {
+    "ports": [
+      "grove",
+      "encoder"
+    ],
+    "anchors": [
+      "sensor"
+    ],
+    "controls": [],
+    "leds": [],
+    "accessoryJoints": [
+      "screw-1",
+      "screw-2",
+      "screw-3",
+      "screw-4",
+      "screw-5"
+    ]
+  },
+  "artwork": {
+    "panels": 2,
+    "kind": "reference-redraw",
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "screwAnimation": "pass",
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 245
+}

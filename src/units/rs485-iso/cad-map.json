@@ -1,0 +1,51 @@
+{
+  "sku": "U094",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/a9ac25ce7325a37b03b3f4457a6f45caf3b058dc/Products/U094_Unit_RS485-ISO/Structures/Unit_RS485-ISO.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/0eb07f39b2b571c6fbd37703f2bd778108dda048",
+  "commit": "a9ac25ce7325a37b03b3f4457a6f45caf3b058dc",
+  "gitBlob": "0eb07f39b2b571c6fbd37703f2bd778108dda048",
+  "sha256": "c61de23c40f45b9b2699a12d0fe1456b461d4fe1def9bfb9393486a0f2c81c62",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/a9ac25ce7325a37b03b3f4457a6f45caf3b058dc/LICENSE",
+  "origin": [
+    0,
+    28,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "RS485-ISO complete native rear shell",
+      "material": "shell"
+    },
+    {
+      "component": 2,
+      "name": "RS485-ISO complete native front shell",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    3
+  ],
+  "originalAssemblyTriangles": 5630,
+  "localModification": null,
+  "notes": "Own U094 path and most recent path-specific commit resolve to blob0eb07f39b2b571c6fbd37703f2bd778108dda048. Complete assembled rear0/front2 retained with one common translation,scale1. Displaced duplicate shells1/3 excluded. The official U094 and U085 native STL blobs are identical;electronics,labels,pins and controls remain exact U094 reconstruction,not CAN behavior. No native triangles patched,filled or removed."
+}

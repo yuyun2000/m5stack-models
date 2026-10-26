@@ -1,0 +1,196 @@
+{
+  "checkedAt": "2026-10-26T11:02:37.737Z",
+  "status": "pass",
+  "scope": "Necessary local geometry/API/attachment and physical weave/closure checks only. No browser/full historical, hardware, gas/electrical/firmware or production-fit acceptance.",
+  "meshes": 189,
+  "triangles": 78888,
+  "cadTriangles": 6718,
+  "visualEnvelopeMm": [
+    24,
+    80.31,
+    25
+  ],
+  "bareVisualEnvelopeMm": [
+    24,
+    64.4,
+    25
+  ],
+  "cadEnvelopeMm": [
+    24,
+    64.00000762939453,
+    25
+  ],
+  "boreRays": 10,
+  "boreWalls": 20,
+  "socketWalls": 6,
+  "meshAirRays": 94,
+  "meshWireRays": 21,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        -40,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 17,
+      "purpose": "Grove actual insertion mouth has four pins and fixed recessed rear carrier"
+    },
+    {
+      "origin": [
+        -2.5,
+        40,
+        13.330127000000001
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 16,
+      "purpose": "MQ six-pin socket channel1 has real recessed metal sleeves/springs and rear stop"
+    },
+    {
+      "origin": [
+        -5,
+        40,
+        9
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 16,
+      "purpose": "MQ six-pin socket channel2 has real recessed metal sleeves/springs and rear stop"
+    },
+    {
+      "origin": [
+        -2.5,
+        40,
+        4.669873
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 16,
+      "purpose": "MQ six-pin socket channel3 has real recessed metal sleeves/springs and rear stop"
+    },
+    {
+      "origin": [
+        2.5,
+        40,
+        4.669873
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 16,
+      "purpose": "MQ six-pin socket channel4 has real recessed metal sleeves/springs and rear stop"
+    },
+    {
+      "origin": [
+        5,
+        40,
+        9
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 16,
+      "purpose": "MQ six-pin socket channel5 has real recessed metal sleeves/springs and rear stop"
+    },
+    {
+      "origin": [
+        2.5,
+        40,
+        13.330127000000001
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 16,
+      "purpose": "MQ six-pin socket channel6 has real recessed metal sleeves/springs and rear stop"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Grove actual insertion mouth has four pins and fixed recessed rear carrier",
+      "hit": "Grove rear wall",
+      "distanceMm": 13.950000011920928
+    },
+    {
+      "purpose": "MQ six-pin socket channel1 has real recessed metal sleeves/springs and rear stop",
+      "hit": "MQ socket physical rear stop",
+      "distanceMm": 15.400000005960464
+    },
+    {
+      "purpose": "MQ six-pin socket channel2 has real recessed metal sleeves/springs and rear stop",
+      "hit": "MQ socket physical rear stop",
+      "distanceMm": 15.400000005960464
+    },
+    {
+      "purpose": "MQ six-pin socket channel3 has real recessed metal sleeves/springs and rear stop",
+      "hit": "MQ socket physical rear stop",
+      "distanceMm": 15.400000005960464
+    },
+    {
+      "purpose": "MQ six-pin socket channel4 has real recessed metal sleeves/springs and rear stop",
+      "hit": "MQ socket physical rear stop",
+      "distanceMm": 15.400000005960464
+    },
+    {
+      "purpose": "MQ six-pin socket channel5 has real recessed metal sleeves/springs and rear stop",
+      "hit": "MQ socket physical rear stop",
+      "distanceMm": 15.400000005960464
+    },
+    {
+      "purpose": "MQ six-pin socket channel6 has real recessed metal sleeves/springs and rear stop",
+      "hit": "MQ socket physical rear stop",
+      "distanceMm": 15.400000005960464
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove",
+      "mq5"
+    ],
+    "anchors": [
+      "sensor",
+      "mq5/appearance"
+    ],
+    "buttons": [],
+    "leds": [],
+    "joints": [],
+    "accessoryExport": "MQ5Cartridge",
+    "accessoryConnector": "mq5-six-pin",
+    "defaultInstalled": true,
+    "option": "mq5Cartridge:false"
+  },
+  "artwork": {
+    "panelsDefault": 4,
+    "panelsBare": 3,
+    "pngCount": 4,
+    "kinds": [
+      "source-vector-raster",
+      "reference-redraw"
+    ],
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "independentCartridgeAttachDetach": "pass",
+  "disposedResources": 250
+}

@@ -1,0 +1,221 @@
+{
+  "checkedAt": "2026-10-26T11:01:06.994Z",
+  "status": "pass",
+  "scope": "Necessary local U130 physical/source-envelope/true-lumen/backing/FrontSide mounting and PCB hole checks, passive API, artwork physical invariance, four-wire Grove attachment/pose/independent detach/disposal. No full historical suite, browser visual acceptance, pressure, pneumatic/electrical, firmware, hardware or production-fit verification.",
+  "meshes": 64,
+  "triangles": 18018,
+  "nativeTriangles": 3388,
+  "visualEnvelopeMm": [
+    24.000008583068848,
+    32.00000476837158,
+    12.500000095367431
+  ],
+  "cadEnvelopeMm": [
+    24.000008583068848,
+    32.00000476837158,
+    7.999999761581421
+  ],
+  "boreRays": 10,
+  "boreWalls": 20,
+  "tubeRays": 5,
+  "tubeWalls": 16,
+  "tubeEndHits": [
+    {
+      "pointMm": [
+        -0.013,
+        7.95,
+        0.3999999986588955
+      ],
+      "distanceMm": 10.100000001341105
+    },
+    {
+      "pointMm": [
+        0.387,
+        7.95,
+        0.3999999986588955
+      ],
+      "distanceMm": 10.100000001341105
+    },
+    {
+      "pointMm": [
+        -0.41300000000000003,
+        7.95,
+        0.3999999986588955
+      ],
+      "distanceMm": 10.100000001341105
+    },
+    {
+      "pointMm": [
+        -0.013,
+        8.35,
+        0.3999999986588955
+      ],
+      "distanceMm": 10.100000001341105
+    },
+    {
+      "pointMm": [
+        -0.013,
+        7.55,
+        0.39999999865889374
+      ],
+      "distanceMm": 10.100000001341106
+    }
+  ],
+  "closureChecks": [
+    {
+      "origin": [
+        -0.013,
+        7.95,
+        10.5
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 11,
+      "purpose": "Single tube nozzle has open deep lumen ending at real sensing diaphragm"
+    },
+    {
+      "origin": [
+        0,
+        -24,
+        1.35
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Grove insertion cavity has real recessed rear wall"
+    },
+    {
+      "origin": [
+        -3,
+        -24,
+        1.55
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove contact 1 is actual recessed metal"
+    },
+    {
+      "origin": [
+        -1,
+        -24,
+        1.55
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove contact 2 is actual recessed metal"
+    },
+    {
+      "origin": [
+        1,
+        -24,
+        1.55
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove contact 3 is actual recessed metal"
+    },
+    {
+      "origin": [
+        3,
+        -24,
+        1.55
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove contact 4 is actual recessed metal"
+    },
+    {
+      "origin": [
+        0,
+        -4,
+        -12
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 9,
+      "purpose": "Rear central screw recess is closed by real fixed fastening hardware"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Single tube nozzle has open deep lumen ending at real sensing diaphragm",
+      "hit": "Tube Pressure recessed fixed sensing diaphragm at blind end of tube",
+      "distanceMm": 10.100000001341105
+    },
+    {
+      "purpose": "Grove insertion cavity has real recessed rear wall",
+      "hit": "Tube Pressure Grove rear wall",
+      "distanceMm": 13.900000011920929
+    },
+    {
+      "purpose": "Grove contact 1 is actual recessed metal",
+      "hit": "Tube Pressure Grove contact 1",
+      "distanceMm": 9.6
+    },
+    {
+      "purpose": "Grove contact 2 is actual recessed metal",
+      "hit": "Tube Pressure Grove contact 2",
+      "distanceMm": 9.6
+    },
+    {
+      "purpose": "Grove contact 3 is actual recessed metal",
+      "hit": "Tube Pressure Grove contact 3",
+      "distanceMm": 9.6
+    },
+    {
+      "purpose": "Grove contact 4 is actual recessed metal",
+      "hit": "Tube Pressure Grove contact 4",
+      "distanceMm": 9.6
+    },
+    {
+      "purpose": "Rear central screw recess is closed by real fixed fastening hardware",
+      "hit": "Tube Pressure fixed hex retaining screw face",
+      "distanceMm": 8.19
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove",
+      "tube"
+    ],
+    "anchors": [
+      "sensor"
+    ],
+    "controls": [],
+    "leds": [],
+    "joints": []
+  },
+  "artwork": {
+    "panels": 1,
+    "kind": "reference-redraw",
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 109
+}

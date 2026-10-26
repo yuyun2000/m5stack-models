@@ -1,0 +1,48 @@
+{
+  "sku": "U130",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/d3ae864f161167af3f9698214012e1d135adc357/Products/U130_Unit_Tube_Pressure/Structures/Unit_Tube_Pressure.stl",
+  "commit": "d3ae864f161167af3f9698214012e1d135adc357",
+  "gitBlob": "d0236a8cea3d896c97244dfbf1bac5b9838b2966",
+  "sha256": "670112101ca3287fb1f1063ba43e2a6c3149e55cb89ac6fed8f08a14d4fc2848",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/d3ae864f161167af3f9698214012e1d135adc357/LICENSE",
+  "origin": [
+    0.013,
+    4,
+    1.2
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 1,
+      "name": "Tube Pressure complete native rear shell",
+      "material": "shell"
+    },
+    {
+      "component": 2,
+      "name": "Tube Pressure complete native front shell",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    0,
+    3
+  ],
+  "notes": "All 3388 native front/rear triangles retained at scale1 under one common translation only. Components0 and3 are displaced duplicates. Front sensor opening, mounting bores, Grove cutout, recessed label panel and M5 relief remain unchanged. PCB, regulator, sensor package with single real open tube nozzle, mounting screw and Grove interior are visual reconstruction."
+}

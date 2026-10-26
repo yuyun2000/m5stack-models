@@ -1,0 +1,46 @@
+{
+  "sku": "U181",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U181_Unit_BLDC_Driver/Structures/Unit_BLDC_Driver.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/28a3f3af4bca78df00ff45d69baf158b9021ecae",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "28a3f3af4bca78df00ff45d69baf158b9021ecae",
+  "sha256": "ea899d2990f0fed24a21d96c1914de163477f0b5e0ffe6e9a5aeab5484d0db72",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/LICENSE",
+  "origin": [
+    -529.268798828125,
+    225.22348022460938,
+    4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "BLDC Driver complete native assembled front and rear shell",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 3216,
+  "localModification": null,
+  "notes": "Native assembled component0 retained completely at scale1 with one common translation; displaced duplicate front/rear shells1/2 excluded. No shell triangles patched,filled or removed. PCB,hidden SYS_LED/package,fixed motor socket,Grove,screw and label registration are reconstructed appearance."
+}

@@ -1,0 +1,43 @@
+{
+  "sku": "U216",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/2a547f4cb53263c7c263c2fdc7c80f54cfb93fdc/Products/U216_Unit_NFC/Structures/Unit_NFC.stl",
+  "commit": "2a547f4cb53263c7c263c2fdc7c80f54cfb93fdc",
+  "gitBlob": "b9c26de1a2e80c7dbb3e247d1c2c1522dfd81a03",
+  "sha256": "ae5f36bd73a11eec6306ff2251060455e79f0198a06814b79d3e4e2a92aa3a66",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/2a547f4cb53263c7c263c2fdc7c80f54cfb93fdc/LICENSE",
+  "origin": [
+    0,
+    0,
+    1.2
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "NFC U216 complete native assembled shell",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "notes": "All 3616 triangles of the complete assembled native shell retained at scale 1 with one common translation of Z -1.2 mm. Components 1/2 are displaced separate shell copies (1888/1728 triangles). Native mounting bores, rear screw recess, front Grove cutout and top pry notch retained; no fills, cuts, scale or independent shell registration. PCB, ST25R3916, planar copper winding, matching passives, fastening metal and Grove interior reconstructed separately. Concealed board/component/antenna dimensions, turns and registration are visual inferences, not a production assembly or measured RF design."
+}

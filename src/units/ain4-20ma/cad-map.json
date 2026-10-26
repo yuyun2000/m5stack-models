@@ -1,0 +1,46 @@
+{
+  "sku": "U162",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/d3ae864f161167af3f9698214012e1d135adc357/Products/U162_Unit_AIN4-20mA/Structures/Unit_AIN4-20mA.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/908b7fa50ac477f857b0337bdeb56a233f68059a",
+  "commit": "d3ae864f161167af3f9698214012e1d135adc357",
+  "gitBlob": "908b7fa50ac477f857b0337bdeb56a233f68059a",
+  "sha256": "721a4b63f046277f5474a570411293e83c01cd1fb0b41324b04dce5faec902ae",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/d3ae864f161167af3f9698214012e1d135adc357/LICENSE",
+  "origin": [
+    12,
+    28,
+    0.4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": "1+2",
+      "name": "AIN4-20mA complete native assembled front and rear shell",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    0,
+    3
+  ],
+  "originalAssemblyTriangles": 5688,
+  "localModification": null,
+  "notes": "Native assembled components1/2 retained completely at scale1 with one common translation; displaced duplicate front/rear shells0/3 excluded. No shell triangles patched,filled or removed. PCB,concealed packages,fixed current terminal/socket,Grove,jumper headers/shunts,screw and label registration are reconstructed appearance."
+}

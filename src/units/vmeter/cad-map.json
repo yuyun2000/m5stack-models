@@ -1,0 +1,48 @@
+{
+  "sku": "U087",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/d3ae864f161167af3f9698214012e1d135adc357/Products/U087_Unit_VMeter/Structures/Unit_VMeter.stl",
+  "commit": "d3ae864f161167af3f9698214012e1d135adc357",
+  "gitBlob": "32cdeaa6f6712770ecec08b67b8916bf0d5d047a",
+  "sha256": "1eb88e10b91bae6fde8b541aa76c3c25770e0cdf4a9da5992bc5f298d969a405",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/d3ae864f161167af3f9698214012e1d135adc357/LICENSE",
+  "origin": [
+    0,
+    28,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "VMeter complete native rear shell",
+      "material": "shell"
+    },
+    {
+      "component": 2,
+      "name": "VMeter complete native front shell",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    3
+  ],
+  "notes": "Complete original front and rear halves components 0 and 2 retained at scale1 using one common translation only. Components1 and3 are displaced duplicates. Native mounting bores, LED slot, connector cutouts, central front recess and side seam remain unmodified. PCB/electronics, connector interiors, panel carrier and supplied removable plug are reconstructed visual geometry."
+}

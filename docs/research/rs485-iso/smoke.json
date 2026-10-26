@@ -1,0 +1,250 @@
+{
+  "checkedAt": "2026-10-26T12:21:23.693Z",
+  "status": "pass",
+  "scope": "Necessary local own U094 full native shell preservation,physical PCB/CA-IS3082W/toroidal isolation power module/protection packages,real FrontSide mounting and mating bores,four-contact Grove/output socket/indicator physical backing,external fixed-unconfirmed-preview LED brightness,no automatic state,no input echo,optional supplied four-screw plug and120Ω B/A resistor shape,all six artwork configurations and nested four-wire pose/selective detach/resource disposal.No browser acceptance,production fit,electrical/UART/RS485/isolation/firmware or hardware verification.",
+  "meshes": 150,
+  "triangles": 61132,
+  "nativeTriangles": 5630,
+  "cadEnvelopeMm": [
+    24.000062942504883,
+    56.00003242492676,
+    8
+  ],
+  "visualEnvelopeMm": [
+    24.000062942504883,
+    56.00003242492676,
+    10.200000005960465
+  ],
+  "boreRays": 10,
+  "boreWalls": 20,
+  "matingBores": 16,
+  "latchRays": 4,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        2.3,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Real front adhesive substrate backs own native print recess"
+    },
+    {
+      "origin": [
+        0,
+        7,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Real rear adhesive substrate closes own native print recess"
+    },
+    {
+      "origin": [
+        0,
+        -40,
+        0.3
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 21,
+      "purpose": "Open Grove mouth backed by actual dielectric rear wall"
+    },
+    {
+      "origin": [
+        -5.94,
+        40,
+        2.3
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 20,
+      "purpose": "Fixed output socket has physical recessed contact1"
+    },
+    {
+      "origin": [
+        -1.98,
+        40,
+        2.3
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 20,
+      "purpose": "Fixed output socket has physical recessed contact2"
+    },
+    {
+      "origin": [
+        1.98,
+        40,
+        2.3
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 20,
+      "purpose": "Fixed output socket has physical recessed contact3"
+    },
+    {
+      "origin": [
+        5.94,
+        40,
+        2.3
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 20,
+      "purpose": "Fixed output socket has physical recessed contact4"
+    },
+    {
+      "origin": [
+        -7.35,
+        -22.5,
+        10
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 7,
+      "purpose": "Own narrow indicator slot backed by real light guide"
+    },
+    {
+      "origin": [
+        0,
+        -16,
+        -12
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 9,
+      "purpose": "Real recessed rear retaining screw"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Real front adhesive substrate backs own native print recess",
+      "hit": "RS485-ISO real front adhesive label substrate",
+      "distanceMm": 11.199999998509885
+    },
+    {
+      "purpose": "Real rear adhesive substrate closes own native print recess",
+      "hit": "RS485-ISO real rear adhesive label substrate",
+      "distanceMm": 11.10000000011176
+    },
+    {
+      "purpose": "Open Grove mouth backed by actual dielectric rear wall",
+      "hit": "RS485-ISO Grove rear wall",
+      "distanceMm": 18.25000001192093
+    },
+    {
+      "purpose": "Fixed output socket has physical recessed contact1",
+      "hit": "RS485-ISO fixed terminal contact pin",
+      "distanceMm": 13.200000095367429
+    },
+    {
+      "purpose": "Fixed output socket has physical recessed contact2",
+      "hit": "RS485-ISO fixed terminal contact pin",
+      "distanceMm": 13.200000095367429
+    },
+    {
+      "purpose": "Fixed output socket has physical recessed contact3",
+      "hit": "RS485-ISO fixed terminal contact pin",
+      "distanceMm": 13.200000095367429
+    },
+    {
+      "purpose": "Fixed output socket has physical recessed contact4",
+      "hit": "RS485-ISO fixed terminal contact pin",
+      "distanceMm": 13.200000095367429
+    },
+    {
+      "purpose": "Own narrow indicator slot backed by real light guide",
+      "hit": "RS485-ISO physical indicator light guide behind native narrow slot",
+      "distanceMm": 6.399999809265137
+    },
+    {
+      "purpose": "Real recessed rear retaining screw",
+      "hit": "",
+      "distanceMm": 8.04
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove",
+      "terminal"
+    ],
+    "anchors": [],
+    "controls": [],
+    "leds": [
+      "power-led"
+    ],
+    "joints": [],
+    "terminalConnector": "vh3.96-4p",
+    "terminalPins": [
+      "RS485_B",
+      "RS485_A",
+      "NC",
+      "SHIELD"
+    ],
+    "grovePins": [
+      "GND",
+      "5V",
+      "UART_RX",
+      "UART_TX"
+    ],
+    "accessoryExport": "TerminalPlug",
+    "accessoryJoints": [
+      "screw-1",
+      "screw-2",
+      "screw-3",
+      "screw-4"
+    ],
+    "accessoryOption": "terminalPlug:true",
+    "terminatorOption": "terminator:true requires terminalPlug:true",
+    "terminatorTarget": "Same TerminalPlug assembly,B/A wire entries;no extra port",
+    "nestedJointExample": "terminal/screw-1",
+    "indicator": {
+      "id": "power-led",
+      "previewColor": "#ffffff",
+      "colorConfirmed": false,
+      "fixedColor": true,
+      "defaultOff": true,
+      "externalBrightnessOnly": true
+    }
+  },
+  "artwork": {
+    "pngCount": 2,
+    "kind": "reference-redraw",
+    "configurationChecks": 6,
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 269
+}

@@ -1,0 +1,44 @@
+{
+  "sku": "U189",
+  "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/66720a863658da9bab58a208d4ebf8a040c2d42c/Products/U189_Unit_TimerPWR/Structures/Unit_TimerPWR.stl",
+  "commit": "66720a863658da9bab58a208d4ebf8a040c2d42c",
+  "gitBlob": "679234502a722ce5438189414b70726323cc39ef",
+  "sha256": "95adc98187f92947a5abdf87b47f0417f4a62658a57f452d7812cf0f66de77c9",
+  "license": "MIT",
+  "origin": [
+    20,
+    14.459592819213867,
+    2.5
+  ],
+  "axes": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 0,
+      "name": "TimerPWR complete native assembled shell",
+      "material": "shell",
+      "triangles": 5604
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "notes": "Complete assembled component0 retained with all5604 triangles at scale1. Common rigid rotation/translation only. Components1/2 are displaced individual shells. Two native side flexure tongues deform at runtime; no retained fixed duplicate cap. Concealed board, panel stack and electronics are separately reconstructed visual solids."
+}

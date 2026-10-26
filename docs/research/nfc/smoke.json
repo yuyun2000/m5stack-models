@@ -1,0 +1,87 @@
+{
+  "checkedAt": "2026-10-26T10:35:08.123Z",
+  "status": "pass",
+  "scope": "Necessary local native geometry, physical PCB/antenna/package/backing, preserved native faceted holes and inward FrontSide walls, passive-only API, exact vector raster registration, physical artwork invariants and four-wire Grove pose/attach/detach/resource release. No browser/full historical, NFC/I2C/RF/electrical/hardware or production-fit verification.",
+  "meshes": 206,
+  "triangles": 11996,
+  "cadTriangles": 3616,
+  "visualEnvelopeMm": [
+    24,
+    48,
+    8.000000095367431
+  ],
+  "cadEnvelopeMm": [
+    24,
+    48,
+    7.999999761581421
+  ],
+  "boreRays": 10,
+  "boreWalls": 8,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        -30,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Open Grove insertion mouth has actual recessed plastic carrier/backing"
+    },
+    {
+      "origin": [
+        7,
+        30,
+        -0.4
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 10,
+      "purpose": "Native top pry slot keeps opening and reveals physical recessed PCB edge"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Open Grove insertion mouth has actual recessed plastic carrier/backing",
+      "hit": "Grove rear wall",
+      "distanceMm": 11.950000011920928
+    },
+    {
+      "purpose": "Native top pry slot keeps opening and reveals physical recessed PCB edge",
+      "hit": "NFC U216 physical scalloped PCB",
+      "distanceMm": 8
+    }
+  ],
+  "physicalAntenna": {
+    "type": "concealed planar copper winding",
+    "solidMeshes": 14,
+    "layout": "inferred appearance reconstruction",
+    "rfField": false
+  },
+  "publicAPI": {
+    "ports": [
+      "grove"
+    ],
+    "anchors": [
+      "sensor"
+    ],
+    "controls": [],
+    "leds": [],
+    "joints": []
+  },
+  "artwork": {
+    "panels": 2,
+    "kind": "source-vector-raster",
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 254
+}

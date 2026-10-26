@@ -1,0 +1,310 @@
+{
+  "checkedAt": "2026-10-26T11:37:40.072Z",
+  "status": "pass",
+  "scope": "Necessary own U175 physical source/local trimmer hole,real IR optical packages,FrontSide native/PCB/access bores,finite external trimmer angle/fixed-red independent LED/passive anchors,no-input echo,artwork physical invariance,four-wire nested Grove pose/independent detach/disposal.No full historical suite,browser visual acceptance,production fit,IR optics,sensor/distance/threshold voltage/electrical/firmware/hardware validation.",
+  "meshes": 85,
+  "triangles": 22032,
+  "nativeTriangles": 3546,
+  "sourceAssemblyTriangles": 3302,
+  "visualEnvelopeMm": [
+    24,
+    32,
+    12
+  ],
+  "cadEnvelopeMm": [
+    24,
+    32,
+    8
+  ],
+  "boreRays": 10,
+  "boreWalls": 20,
+  "accessWalls": 4,
+  "opticalHits": [
+    {
+      "id": "emitter",
+      "pointMm": [
+        -5.1,
+        8,
+        7.999999999999999
+      ]
+    },
+    {
+      "id": "emitter",
+      "pointMm": [
+        -4.3999999999999995,
+        8,
+        7.899466285276651
+      ]
+    },
+    {
+      "id": "emitter",
+      "pointMm": [
+        -5.8,
+        8,
+        7.899466285276649
+      ]
+    },
+    {
+      "id": "emitter",
+      "pointMm": [
+        -5.1,
+        8.7,
+        7.89946628527665
+      ]
+    },
+    {
+      "id": "emitter",
+      "pointMm": [
+        -5.1,
+        7.3,
+        7.899466285276649
+      ]
+    },
+    {
+      "id": "receiver",
+      "pointMm": [
+        5.1,
+        8,
+        7.999999999999999
+      ]
+    },
+    {
+      "id": "receiver",
+      "pointMm": [
+        5.8,
+        8,
+        7.899466285276651
+      ]
+    },
+    {
+      "id": "receiver",
+      "pointMm": [
+        4.3999999999999995,
+        8,
+        7.899466285276649
+      ]
+    },
+    {
+      "id": "receiver",
+      "pointMm": [
+        5.1,
+        8.7,
+        7.89946628527665
+      ]
+    },
+    {
+      "id": "receiver",
+      "pointMm": [
+        5.1,
+        7.3,
+        7.899466285276649
+      ]
+    }
+  ],
+  "closureChecks": [
+    {
+      "origin": [
+        -5.1,
+        8,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 8,
+      "purpose": "Emitter front aperture terminated by genuine clear passive dome"
+    },
+    {
+      "origin": [
+        5.1,
+        8,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 8,
+      "purpose": "Receiver front aperture terminated by genuine dark passive dome"
+    },
+    {
+      "origin": [
+        0,
+        8,
+        -12
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 9,
+      "purpose": "Real trimmer access reveals recessed slotted moving metal head"
+    },
+    {
+      "origin": [
+        0,
+        -24,
+        0.8
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Grove insertion cavity has actual recessed rear wall"
+    },
+    {
+      "origin": [
+        -3,
+        -24,
+        1
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove actual metal contact1"
+    },
+    {
+      "origin": [
+        -1,
+        -24,
+        1
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove actual metal contact2"
+    },
+    {
+      "origin": [
+        1,
+        -24,
+        1
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove actual metal contact3"
+    },
+    {
+      "origin": [
+        3,
+        -24,
+        1
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove actual metal contact4"
+    },
+    {
+      "origin": [
+        0,
+        -4,
+        -12
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 9,
+      "purpose": "Rear retaining recess has genuine fixed screw"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Emitter front aperture terminated by genuine clear passive dome",
+      "hit": "Reflective IR non-emissive emitter optical dome",
+      "distanceMm": 7.000000000000001
+    },
+    {
+      "purpose": "Receiver front aperture terminated by genuine dark passive dome",
+      "hit": "Reflective IR non-emissive receiver optical dome",
+      "distanceMm": 7.000000000000001
+    },
+    {
+      "purpose": "Real trimmer access reveals recessed slotted moving metal head",
+      "hit": "Reflective IR recessed trimmer slot floor and shaft",
+      "distanceMm": 8.445000002980233
+    },
+    {
+      "purpose": "Grove insertion cavity has actual recessed rear wall",
+      "hit": "Reflective IR Grove rear wall",
+      "distanceMm": 13.85000001192093
+    },
+    {
+      "purpose": "Grove actual metal contact1",
+      "hit": "Reflective IR Grove contact 1",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Grove actual metal contact2",
+      "hit": "Reflective IR Grove contact 2",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Grove actual metal contact3",
+      "hit": "Reflective IR Grove contact 3",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Grove actual metal contact4",
+      "hit": "Reflective IR Grove contact 4",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Rear retaining recess has genuine fixed screw",
+      "hit": "",
+      "distanceMm": 8
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove"
+    ],
+    "anchors": [
+      "sensor",
+      "emitter",
+      "receiver"
+    ],
+    "controls": [],
+    "leds": [
+      "status-led"
+    ],
+    "joints": [
+      "threshold"
+    ],
+    "limitsDeg": {
+      "threshold": [
+        -135,
+        135
+      ]
+    }
+  },
+  "artwork": {
+    "panels": 2,
+    "kind": "reference-redraw",
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 141
+}

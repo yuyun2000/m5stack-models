@@ -1,0 +1,172 @@
+{
+  "checkedAt": "2026-10-26T10:50:39.472Z",
+  "status": "pass",
+  "scope": "Necessary native shell/PCB holes and FrontSide walls, real toroidal isolated supply/shunt/fuse/packages, fixed connector backing/contacts, removable plug screw animation/exact reset/no echo, independent colour-unconfirmed fixed indicator, passive anchor, four-wire Grove attach/pose/detach/resource disposal, artwork geometry/world-matrix invariant. No browser/full historical/hardware/electrical/production-fit validation.",
+  "meshes": 131,
+  "triangles": 77904,
+  "nominalMm": [
+    24,
+    56,
+    8
+  ],
+  "cadEnvelopeMm": [
+    24.000062942504883,
+    56.00003242492676,
+    8
+  ],
+  "visualEnvelopeMm": [
+    24.000062942504883,
+    56.00003252029419,
+    10.200000005960465
+  ],
+  "boreRays": 10,
+  "boreWalls": 8,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        -35,
+        0.7
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 16,
+      "purpose": "Grove cavity has recessed carrier/backing"
+    },
+    {
+      "origin": [
+        -5.94,
+        35,
+        2.3
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 13,
+      "purpose": "Measurement socket 1 contains actual recessed metal contact"
+    },
+    {
+      "origin": [
+        -1.98,
+        35,
+        2.3
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 13,
+      "purpose": "Measurement socket 2 contains actual recessed metal contact"
+    },
+    {
+      "origin": [
+        1.98,
+        35,
+        2.3
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 13,
+      "purpose": "Measurement socket 3 contains actual recessed metal contact"
+    },
+    {
+      "origin": [
+        5.94,
+        35,
+        2.3
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 13,
+      "purpose": "Measurement socket 4 contains actual recessed metal contact"
+    },
+    {
+      "origin": [
+        0.8,
+        35,
+        3.5
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 20,
+      "purpose": "Fixed measurement socket cavity ends at actual rear support"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Grove cavity has recessed carrier/backing",
+      "hit": "AMeter Grove recessed contact carrier",
+      "distanceMm": 10.250000047683717
+    },
+    {
+      "purpose": "Measurement socket 1 contains actual recessed metal contact",
+      "hit": "AMeter fixed terminal recessed contact pin",
+      "distanceMm": 8.000000095367433
+    },
+    {
+      "purpose": "Measurement socket 2 contains actual recessed metal contact",
+      "hit": "AMeter fixed terminal recessed contact pin",
+      "distanceMm": 8.000000095367433
+    },
+    {
+      "purpose": "Measurement socket 3 contains actual recessed metal contact",
+      "hit": "AMeter fixed terminal recessed contact pin",
+      "distanceMm": 8.000000095367433
+    },
+    {
+      "purpose": "Measurement socket 4 contains actual recessed metal contact",
+      "hit": "AMeter fixed terminal recessed contact pin",
+      "distanceMm": 8.000000095367433
+    },
+    {
+      "purpose": "Fixed measurement socket cavity ends at actual rear support",
+      "hit": "AMeter fixed terminal rear support",
+      "distanceMm": 16.300000005960463
+    }
+  ],
+  "plugWireRays": 4,
+  "plugWireWalls": 4,
+  "publicAPI": {
+    "ports": [
+      "grove",
+      "terminal"
+    ],
+    "anchors": [
+      "sensor"
+    ],
+    "controls": [],
+    "leds": [
+      "power"
+    ],
+    "accessoryJoints": [
+      "screw-1",
+      "screw-2",
+      "screw-3",
+      "screw-4"
+    ]
+  },
+  "artwork": {
+    "panels": 2,
+    "kind": "reference-redraw",
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "screwAnimation": "pass",
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 234
+}

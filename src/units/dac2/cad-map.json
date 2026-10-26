@@ -1,0 +1,43 @@
+{
+  "sku": "U012-B",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U012-B_Unit_DAC2/Structures/Unit_DAC2.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "20b850b0aa5111d17d7c4d6821d344da54e2cfd0",
+  "sha256": "6685e3a9dfe3ee3c4c00b6264ec231b64299f5991400f991f2551712df551324",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/LICENSE",
+  "origin": [
+    -529.268798828125,
+    225.22348022460938,
+    4
+  ],
+  "axes": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "DAC2 complete native assembled shell",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "notes": "All 3286 triangles of the complete assembled native shell retained with one common rigid half turn about Y and translation, scale 1. Components 1/2 are displaced copies, 1712 + 1574 triangles. No hole fills, cuts, scales or separate shell registration. PCB, fixed terminals, metal contacts, Grove internals and removable plug reconstructed separately from exact U012-B official photographs and schematic; concealed positions are inferred."
+}

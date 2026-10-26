@@ -1,0 +1,227 @@
+{
+  "checkedAt": "2026-10-26T12:08:28.552Z",
+  "status": "pass",
+  "scope": "Necessary local exact U193 native shell/grid,64 physical LED packages and atomic external frames,no input echo,actual rear mounting bores/PCB termination/FrontSide walls,physical dual four-contact Grove,nested two-Puzzle four-wire attachment/recursive pose/independent detach,and standalone native supplied Bridge appearance.No browser/full suite,physical fit,electrical/WS2812/firmware or hardware verification.",
+  "meshes": 435,
+  "triangles": 21694,
+  "nativeTriangles": 4538,
+  "cadEnvelopeMm": [
+    24.000030517578125,
+    24.000030517578125,
+    15
+  ],
+  "visualEnvelopeMm": [
+    24.000030517578125,
+    24.000030517578125,
+    15
+  ],
+  "boreRays": 10,
+  "boreWalls": 16,
+  "gridCells": 64,
+  "bridgeGeometry": {
+    "meshes": 29,
+    "triangles": 22632,
+    "nativeTriangles": 1024,
+    "cadEnvelopeMm": [
+      10.000007629394531,
+      14.000036239624023,
+      7.500000953674316
+    ],
+    "visualEnvelopeMm": [
+      10.000007629394531,
+      14.000036239624023,
+      7.500000953674316
+    ]
+  },
+  "bridgeBoreWalls": 32,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        -20,
+        -2.9
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 14.1,
+      "purpose": "grove actual dielectric rear wall"
+    },
+    {
+      "origin": [
+        0,
+        20,
+        -2.9
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 14.1,
+      "purpose": "out actual dielectric rear wall"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "grove actual dielectric rear wall",
+      "hit": "Puzzle grove rear wall",
+      "distanceMm": 14.00000001192093
+    },
+    {
+      "purpose": "grove contact1",
+      "hit": "Puzzle grove real contact 1",
+      "distanceMm": 9.349999999999998
+    },
+    {
+      "purpose": "grove contact2",
+      "hit": "Puzzle grove real contact 2",
+      "distanceMm": 9.349999999999998
+    },
+    {
+      "purpose": "grove contact3",
+      "hit": "Puzzle grove real contact 3",
+      "distanceMm": 9.349999999999998
+    },
+    {
+      "purpose": "grove contact4",
+      "hit": "Puzzle grove real contact 4",
+      "distanceMm": 9.349999999999998
+    },
+    {
+      "purpose": "out actual dielectric rear wall",
+      "hit": "Puzzle out rear wall",
+      "distanceMm": 14.00000001192093
+    },
+    {
+      "purpose": "out contact1",
+      "hit": "Puzzle out real contact 1",
+      "distanceMm": 9.349999999999998
+    },
+    {
+      "purpose": "out contact2",
+      "hit": "Puzzle out real contact 2",
+      "distanceMm": 9.349999999999998
+    },
+    {
+      "purpose": "out contact3",
+      "hit": "Puzzle out real contact 3",
+      "distanceMm": 9.349999999999998
+    },
+    {
+      "purpose": "out contact4",
+      "hit": "Puzzle out real contact 4",
+      "distanceMm": 9.349999999999998
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove",
+      "out"
+    ],
+    "leds": [
+      "pixel-0",
+      "pixel-1",
+      "pixel-2",
+      "pixel-3",
+      "pixel-4",
+      "pixel-5",
+      "pixel-6",
+      "pixel-7",
+      "pixel-8",
+      "pixel-9",
+      "pixel-10",
+      "pixel-11",
+      "pixel-12",
+      "pixel-13",
+      "pixel-14",
+      "pixel-15",
+      "pixel-16",
+      "pixel-17",
+      "pixel-18",
+      "pixel-19",
+      "pixel-20",
+      "pixel-21",
+      "pixel-22",
+      "pixel-23",
+      "pixel-24",
+      "pixel-25",
+      "pixel-26",
+      "pixel-27",
+      "pixel-28",
+      "pixel-29",
+      "pixel-30",
+      "pixel-31",
+      "pixel-32",
+      "pixel-33",
+      "pixel-34",
+      "pixel-35",
+      "pixel-36",
+      "pixel-37",
+      "pixel-38",
+      "pixel-39",
+      "pixel-40",
+      "pixel-41",
+      "pixel-42",
+      "pixel-43",
+      "pixel-44",
+      "pixel-45",
+      "pixel-46",
+      "pixel-47",
+      "pixel-48",
+      "pixel-49",
+      "pixel-50",
+      "pixel-51",
+      "pixel-52",
+      "pixel-53",
+      "pixel-54",
+      "pixel-55",
+      "pixel-56",
+      "pixel-57",
+      "pixel-58",
+      "pixel-59",
+      "pixel-60",
+      "pixel-61",
+      "pixel-62",
+      "pixel-63"
+    ],
+    "controls": [],
+    "joints": [],
+    "anchors": [],
+    "matrix": {
+      "target": "matrix",
+      "command": {
+        "type": "matrix",
+        "colors": "exact64 RGB inputs;exactly one colors or rgba frame",
+        "rgba": "exact256 integer bytes,RGBA order",
+        "brightness": "optional normalized0..1,default1;RGBA alpha multiplies per-pixel appearance"
+      },
+      "state": {
+        "width": 8,
+        "height": 8,
+        "order": "row-major-top-left",
+        "pixels": "64 live Led snapshots:{color:#rrggbb,brightness:0..1}"
+      },
+      "atomicInvalidFrameRejection": true,
+      "directPixelStateReadback": true,
+      "layoutIsProtocolMapping": false
+    },
+    "accessoryExports": [
+      "Bridge"
+    ],
+    "accessoryPorts": [],
+    "accessoryAssembly": "standalone physical appearance only;native source relative centre[0,-12,-3.75]is evidence,no mechanical fit claim"
+  },
+  "artwork": {
+    "pngCount": 2,
+    "bodyPanels": 1,
+    "bridgePanels": 1,
+    "kind": "reference-redraw",
+    "physicalGeometryInvariant": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "matrixNoAutomaticForwarding": "pass",
+  "disposedResources": 1347
+}

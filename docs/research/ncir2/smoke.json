@@ -1,0 +1,287 @@
+{
+  "checkedAt": "2026-10-26T11:41:02.760Z",
+  "status": "pass",
+  "scope": "Necessary local U150 complete native shell retained at scale1,finite FrontSide geometry and mounting/PCB bore walls,real MLX90614/acoustic/RGB/slot backing,two independently restored real native flexure buttons and pointer press/release/cancel,input-only reset,externally-driven RGB without input echo,2PNG and artwork:false all physical attributes/index/matrixWorld invariance,four-wire Grove nested attachment/pose/independent detach/disposal.No browser review,temperature,alarm,audio,MCU/electrical/protocol,firmware,physical hardware or production-fit acceptance.",
+  "meshes": 113,
+  "triangles": 82308,
+  "nativeTriangles": 14066,
+  "visualEnvelopeMm": [
+    24.00003147125244,
+    48.00349426269531,
+    8.599999904632568
+  ],
+  "cadEnvelopeMm": [
+    24.00003147125244,
+    48.00349426269531,
+    8.550000190734863
+  ],
+  "boreRays": 10,
+  "boreWalls": 20,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        16,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 11,
+      "purpose": "Native optical lip has a real closed passive MLX90614 window"
+    },
+    {
+      "origin": [
+        7,
+        16,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 14,
+      "purpose": "Left real acoustic opening terminates inside physical buzzer chamber on diaphragm"
+    },
+    {
+      "origin": [
+        8.8,
+        16,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 14,
+      "purpose": "Right real acoustic opening terminates inside physical buzzer chamber on diaphragm"
+    },
+    {
+      "origin": [
+        0,
+        4.8,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Actual native tongue RGB slot exposes recessed real external RGB lens"
+    },
+    {
+      "origin": [
+        4.6,
+        5,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 15,
+      "purpose": "Native tongue slit has real PCB backing instead of empty rear cavity"
+    },
+    {
+      "origin": [
+        -20,
+        16,
+        -1.5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "maxDistance": 9,
+      "purpose": "True side RST opening contains complete native integral side tongue"
+    },
+    {
+      "origin": [
+        0,
+        -32,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Grove open insertion cavity terminates at actual recessed carrier"
+    },
+    {
+      "origin": [
+        -3,
+        -32,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Grove contact1 is physical recessed metal"
+    },
+    {
+      "origin": [
+        -1,
+        -32,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Grove contact2 is physical recessed metal"
+    },
+    {
+      "origin": [
+        1,
+        -32,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Grove contact3 is physical recessed metal"
+    },
+    {
+      "origin": [
+        3,
+        -32,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Grove contact4 is physical recessed metal"
+    },
+    {
+      "origin": [
+        0,
+        -12,
+        -12
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 9,
+      "purpose": "Native rear retaining recess contains actual fixed metal screw"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Native optical lip has a real closed passive MLX90614 window",
+      "hit": "NCIR2 closed passive infrared optical window",
+      "distanceMm": 10.600000001341105
+    },
+    {
+      "purpose": "Left real acoustic opening terminates inside physical buzzer chamber on diaphragm",
+      "hit": "NCIR2 passive buzzer diaphragm backing",
+      "distanceMm": 13.749999999254943
+    },
+    {
+      "purpose": "Right real acoustic opening terminates inside physical buzzer chamber on diaphragm",
+      "hit": "NCIR2 passive buzzer diaphragm backing",
+      "distanceMm": 13.749999999254944
+    },
+    {
+      "purpose": "Actual native tongue RGB slot exposes recessed real external RGB lens",
+      "hit": "NCIR2 RGB lens behind the real native tongue slot",
+      "distanceMm": 11.175000005960465
+    },
+    {
+      "purpose": "Native tongue slit has real PCB backing instead of empty rear cavity",
+      "hit": "NCIR2 fixed PCB with true TO39 and hidden SWD holes and open mechanical reliefs",
+      "distanceMm": 14.49999998807907
+    },
+    {
+      "purpose": "True side RST opening contains complete native integral side tongue",
+      "hit": "NCIR2 complete native front shell and integral flexure tongue",
+      "distanceMm": 7.999968528747559
+    },
+    {
+      "purpose": "Grove open insertion cavity terminates at actual recessed carrier",
+      "hit": "NCIR2 Grove rear wall",
+      "distanceMm": 13.850000011920926
+    },
+    {
+      "purpose": "Grove contact1 is physical recessed metal",
+      "hit": "NCIR2 Grove contact 1",
+      "distanceMm": 9.55
+    },
+    {
+      "purpose": "Grove contact2 is physical recessed metal",
+      "hit": "NCIR2 Grove contact 2",
+      "distanceMm": 9.55
+    },
+    {
+      "purpose": "Grove contact3 is physical recessed metal",
+      "hit": "NCIR2 Grove contact 3",
+      "distanceMm": 9.55
+    },
+    {
+      "purpose": "Grove contact4 is physical recessed metal",
+      "hit": "NCIR2 Grove contact 4",
+      "distanceMm": 9.55
+    },
+    {
+      "purpose": "Native rear retaining recess contains actual fixed metal screw",
+      "hit": "",
+      "distanceMm": 8.18
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove"
+    ],
+    "anchors": [
+      "sensor"
+    ],
+    "controls": [
+      "button",
+      "reset"
+    ],
+    "leds": [
+      "rgb"
+    ],
+    "joints": []
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 2,
+    "panels": 2,
+    "physicalGeometryInvariant": true
+  },
+  "nativeFlexures": {
+    "button": {
+      "travelMm": 0.25
+    },
+    "reset": {
+      "travelMm": 0.2
+    },
+    "independent": true,
+    "retainedTriangles": 14066,
+    "sourceRestored": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 170
+}

@@ -1,0 +1,99 @@
+{
+  "id": "hbridge-v11",
+  "sku": "U160-V11",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "New code-drawn own-model text, colour blocks and static schematic to final ordinary PNG. No photo crop, perspective rectification, preview raster or vector original used as runtime texture.",
+  "sources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/HBridge%20v1.1%20Unit/img-8b503691-1b66-49d7-b05d-5838eb4a6c36.webp",
+      "sha256": "a1aec7db59b65d87a3a561e85f9837129deb77fc71d4c817487172b493f45780"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/HBridge%20v1.1%20Unit/img-2ff69023-7888-4cbc-be2e-e0017d49cbdd.webp",
+      "sha256": "9bac5607f14fca4289d7133ca7f1005b250bf67655f894f362a5b9f205f59a11"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/HBridge%20v1.1%20Unit/img-a0001536-d6ad-4e8c-aa3a-1ea87d0464ed.webp",
+      "sha256": "0076fb396e990968fac4f6fa0a5f3272eaff17bdc899afa18fc05b8175b83419"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/HBridge%20v1.1%20Unit/img-9ac9a03f-0dd6-4458-8b1f-af435cae9b96.webp",
+      "sha256": "1c90e58f567659213f34245581d68980ea9f42850ca638e1bdab984a57090321"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/HBridge%20v1.1%20Unit/img-8906fc21-abd8-43ee-ba20-b523f5e879a1.webp",
+      "sha256": "d1427d9e947f930763f9343bc81a9bf4b11f658c41ada1ff7802d929ebe4972f"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/HBridge%20v1.1%20Unit/img-8f2dd08e-2857-4613-9d53-5e2c8f395984.webp",
+      "sha256": "0e9407b02225df4521bb1428608669877be5b78629b31d316995d21f84033e8e"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/HBridge%20v1.1%20Unit/img-5c8fbb96-801a-4743-b2d1-9ba28fc4c814.webp",
+      "sha256": "1ad22060026d9bbfc773b28742b73259108674524d26c337a80cf8eadffb5de6"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/HBridge%20v1.1%20Unit/img-573b5981-03f7-40ac-8365-04c212e91b02.webp",
+      "sha256": "873ea4ea2783c612c9a7e5a591e1132001c2b399269b137a329b69eeabcd9522"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/HBridge%20v1.1%20Unit/img-1ffb9b4e-83f3-42e6-9abb-1a47029514df.webp",
+      "sha256": "4fba7902445e923cb8dae57c514eda3f91aa2bacba250303718e5d4eefed5c2e"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/hbridge-v11/reference-redraw-front.png",
+      "sha256": "3b4a974c20cd7691e23aaec5153ac84c8a466972b53183c073720156b0f16077",
+      "pixels": [
+        1280,
+        2112
+      ],
+      "sizeMm": [
+        16,
+        26.4
+      ],
+      "positionMm": [
+        0,
+        1.95,
+        3.81
+      ],
+      "face": "front",
+      "target": "HBridge v1.1 native front shell",
+      "kind": "reference-redraw",
+      "method": "printedFilm"
+    },
+    {
+      "path": "src/units/hbridge-v11/reference-redraw-back.png",
+      "sha256": "6b8df63f1b8dba1264c1252cd42a1464004d5260b0804f98626f5a85a41abd83",
+      "pixels": [
+        1280,
+        2816
+      ],
+      "sizeMm": [
+        16,
+        35.2
+      ],
+      "positionMm": [
+        0,
+        6.25,
+        -3.8
+      ],
+      "face": "back",
+      "target": "HBridge v1.1 native rear shell",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    }
+  ],
+  "limitations": [
+    "Typefaces, colour, diagram layout and registration are visual reconstructions.",
+    "Literal rear1mR print is preserved despite schematic10mR; no electrical semantics.",
+    "Front adhesive film bridges real native label recess with populated physical PCB behind; rear projects only onto original rear shell.",
+    "No QR codes/unreadable identities invented. Private sources, vectors, filenames, generators and intermediates excluded."
+  ],
+  "rights": "Product names, original printed designs and trademarks retain respective rights."
+}

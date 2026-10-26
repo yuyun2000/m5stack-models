@@ -1,0 +1,268 @@
+{
+  "checkedAt": "2026-10-26T12:01:10.337Z",
+  "status": "pass",
+  "scope": "Necessary exact U155 own3216-triangle CAD,actual hollow RCA barrel/annular insulator/female centre contact/deep backing,PCB/Grove closure,FrontSide native/PCB/RCA bores,hidden retained S1 pointer/press/release/cancel/external no-echo,all Model/GroveModule closed/inspection artwork physical invariance,nested four-wire Grove attach/pose/independent detach/dispose.No full historical suite,browser visual acceptance,production fit,signal/audio/video/electrical/firmware/hardware validation.",
+  "meshes": 53,
+  "triangles": 21078,
+  "nativeTriangles": 3216,
+  "sourceAssemblyTriangles": 3216,
+  "visualEnvelopeMm": [
+    24,
+    36.39999961853027,
+    14.7
+  ],
+  "cadEnvelopeMm": [
+    24,
+    32,
+    8
+  ],
+  "boreRays": 10,
+  "boreWalls": 32,
+  "rcaChecks": [
+    {
+      "name": "RCA gold female outer barrel with open FrontSide wall",
+      "innerRadiusMm": 3.35,
+      "axiallyOpen": true,
+      "frontSideWalls": 4
+    },
+    {
+      "name": "RCA recessed yellow annular dielectric with open centre",
+      "innerRadiusMm": 1.35,
+      "axiallyOpen": true,
+      "frontSideWalls": 4
+    },
+    {
+      "name": "RCA recessed centre female contact open bore",
+      "innerRadiusMm": 0.85,
+      "axiallyOpen": true,
+      "frontSideWalls": 4
+    }
+  ],
+  "closureChecks": [
+    {
+      "origin": [
+        7,
+        9,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 21,
+      "purpose": "Original front cutout has genuine green PCB depth backing"
+    },
+    {
+      "origin": [
+        0,
+        7,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 20,
+      "purpose": "Original RCA opening reveals actual folded centre contact"
+    },
+    {
+      "origin": [
+        0,
+        27,
+        5.95
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 13,
+      "purpose": "RCA deep female contact cavity reaches real dielectric base"
+    },
+    {
+      "origin": [
+        2,
+        27,
+        5.95
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 8,
+      "purpose": "Recessed yellow RCA annular insulator"
+    },
+    {
+      "origin": [
+        0,
+        -24,
+        0.7
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Four-contact Grove real recessed rear wall"
+    },
+    {
+      "origin": [
+        -3,
+        -24,
+        0.9
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove physical contact1"
+    },
+    {
+      "origin": [
+        -1,
+        -24,
+        0.9
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove physical contact2"
+    },
+    {
+      "origin": [
+        1,
+        -24,
+        0.9
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove physical contact3"
+    },
+    {
+      "origin": [
+        3,
+        -24,
+        0.9
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove physical contact4"
+    },
+    {
+      "origin": [
+        0,
+        -4,
+        -12
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 9,
+      "purpose": "Real retaining screw closes rear fixing recess"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Original front cutout has genuine green PCB depth backing",
+      "name": "RCA fixed green PCB with genuine mounting reliefs and retaining bore",
+      "distanceMm": 20.349999976158145
+    },
+    {
+      "purpose": "Original RCA opening reveals actual folded centre contact",
+      "name": "RCA real folded centre solder contact",
+      "distanceMm": 19.075000002980232
+    },
+    {
+      "purpose": "RCA deep female contact cavity reaches real dielectric base",
+      "name": "RCA deep physical dielectric base behind female contact",
+      "distanceMm": 12.72500000298023
+    },
+    {
+      "purpose": "Recessed yellow RCA annular insulator",
+      "name": "RCA recessed yellow annular dielectric with open centre",
+      "distanceMm": 7.100000381469727
+    },
+    {
+      "purpose": "Four-contact Grove real recessed rear wall",
+      "name": "RCA Grove rear wall",
+      "distanceMm": 13.85000001192093
+    },
+    {
+      "purpose": "Grove physical contact1",
+      "name": "RCA Grove contact 1",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Grove physical contact2",
+      "name": "RCA Grove contact 2",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Grove physical contact3",
+      "name": "RCA Grove contact 3",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Grove physical contact4",
+      "name": "RCA Grove contact 4",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Real retaining screw closes rear fixing recess",
+      "name": "",
+      "distanceMm": 8.2
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove",
+      "rca"
+    ],
+    "anchors": [],
+    "controls": [
+      "channel"
+    ],
+    "leds": [],
+    "joints": [],
+    "latching": {
+      "channel": true
+    },
+    "channelPositions": [
+      "left-detent",
+      "right-detent"
+    ],
+    "inspectionOption": "covers:false",
+    "rcaAccessory": "No supplied RCA plug/cable;connector-compatible external Module may attach"
+  },
+  "artwork": {
+    "panels": 2,
+    "kind": "reference-redraw",
+    "configurationChecks": 4,
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true,
+    "shellLabelHiddenWithCover": true,
+    "pcbSilkRemainsInInspection": true
+  },
+  "inspectionInputs": 10,
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 105
+}

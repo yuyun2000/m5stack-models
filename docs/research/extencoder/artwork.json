@@ -1,0 +1,87 @@
+{
+  "id": "extencoder",
+  "sku": "U161",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "pngCount": 2,
+  "defaultPanels": 2,
+  "method": "Code-drawn high-resolution RGBA text and color blocks at150px/mm from exact U161 official product photographs. No photograph crop, photograph pixel sampling, preview upscaling, or fabricated unreadable marks.",
+  "sources": [
+    {
+      "kind": "official-own-product-photograph",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ExtEncoder Unit/img-ae5618c3-38aa-4048-a93d-f4ecbe5c0fee.webp",
+      "sha256": "dfac5e245a8bdda55e41409f385162b92f47874a61e2c74efeb29d70bb836de2"
+    },
+    {
+      "kind": "official-own-product-photograph",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ExtEncoder Unit/img-f2dd14da-aa18-47ee-a961-8b020a0e7dfd.webp",
+      "sha256": "be53365efd646f28d16ec15a74776ec15231af1a56dfe131a6e4487380919460"
+    },
+    {
+      "kind": "official-own-product-photograph",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ExtEncoder Unit/img-ba7871a4-e141-45fc-96c6-406aac6d1bcc.webp",
+      "sha256": "64cbe54b9919b574c2f4c98eb28c92656b6b530f6163c7a329553c557de8b3c2"
+    },
+    {
+      "kind": "official-own-product-photograph",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ExtEncoder Unit/img-f048fc71-2b2c-4c7a-b459-fb67b0abeb31.webp",
+      "sha256": "664478096c463be6de71df403a1e5a2d807adf4df66bab2c6c3851265d56ad12"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/extencoder/reference-redraw-front.png",
+      "sha256": "c6cf2986da7c2896564ea916f7ddb98d1b455726a3d229177e22fa152e9a77be",
+      "pixels": [
+        2055,
+        1395
+      ],
+      "sizeMm": [
+        13.7,
+        9.3
+      ],
+      "positionMm": [
+        0,
+        10.9,
+        6.7
+      ],
+      "face": "front",
+      "kind": "reference-redraw",
+      "method": "printedArtwork",
+      "target": "Fixed encoder connector label roof"
+    },
+    {
+      "path": "src/units/extencoder/reference-redraw-back.png",
+      "sha256": "fc99abfe3b64bc32e9e8f44bed11dbb9124d40b18fa7e59094d38bbb24bd72e2",
+      "pixels": [
+        2400,
+        1860
+      ],
+      "sizeMm": [
+        16,
+        12.4
+      ],
+      "positionMm": [
+        0,
+        7.5,
+        -3.8
+      ],
+      "face": "back",
+      "kind": "reference-redraw",
+      "method": "printedArtwork",
+      "target": "ExtEncoder complete native assembled shell"
+    }
+  ],
+  "content": {
+    "front": "G / 5V / Z / B / A; ENCODER; GND / 5V / SDA / SCL",
+    "back": "EXT-ENCODER; STM32F030; PORT. A. I2C; SCL / SDA / 5V / GND"
+  },
+  "limitations": [
+    "Reference redraw; font metrics, colorimetry and physical registration are visual estimates rather than supplied production artwork.",
+    "No additional loose packaging mark or floating infographic Grove legend was treated as an installed sticker.",
+    "PNG pixels were decoded and checked; browser and exhaustive visual acceptance are deferred."
+  ],
+  "rights": "Printed designs, product names and trademarks retain their respective rights."
+}

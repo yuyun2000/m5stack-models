@@ -2,7 +2,7 @@
 
 2026-10-26。本页整理当前公开工作副本中的本地增量，便于其他Agent接入、查阅各批证据和续作。
 
-当前catalog为14款主机、71款Unit，共85款；阶段计数`{"modeled": 85}`。生成本页时的提交基线为`48667b728736fbfd4365a06575473ce538d3c972`，该基线catalog有43款。此页描述当前源码快照；当前提交和远端状态以Git日志及GitHub main为准。各历史progress中的未提交/未推送字样只描述各自保存时点。
+当前catalog为14款主机、98款Unit，共112款；阶段计数`{"modeled": 112}`。生成本页时的提交基线为`ad5d0622518180d347ebe50a462d289771e1c6a3`，该基线catalog有85款。此页描述当前源码快照；当前提交和远端状态以Git日志及GitHub main为准。各历史progress中的未提交/未推送字样只描述各自保存时点。
 
 | 批次 | 产品ID | 检查点 |
 | --- | --- | --- |
@@ -22,12 +22,30 @@
 | Step16 / ASR / UHF-RFID | step16 / asr / uhf-rfid | [本地进度](../artifacts/step-asr-uhf-expansion/progress.json) |
 | Earth / Hall / QRCode | earth / hall / qrcode | [本地进度](../artifacts/earth-hall-qrcode-expansion/progress.json) |
 | Laser TX / Laser RX / MIDI | laser-tx / laser-rx / midi | [本地进度](../artifacts/laser-midi-expansion/progress.json) |
+| DAC2 / DDS / KMeter-ISO v1.1 | dac2 / dds / kmeter-iso-v11 | [本地进度](../artifacts/dac-dds-kmeter-expansion/progress.json) |
+| TimerPWR / ExtEncoder / NFC | timerpwr / extencoder / nfc | [本地进度](../artifacts/timer-encoder-nfc-expansion/progress.json) |
+| ADC v1.1 / AMeter / VMeter | adc-v11 / ameter / vmeter | [本地进度](../artifacts/adc-meter-expansion/progress.json) |
+| Tube Pressure / MQ / LoRaE220-920 | tube-pressure / mq / lora-e220-920 | [本地进度](../artifacts/radio-gas-pressure-expansion/progress.json) |
+| Watering / HBridge v1.1 / DLight | watering / hbridge-v11 / dlight | [本地进度](../artifacts/watering-light-hbridge-expansion/progress.json) |
+| DCSSR / NCIR2 / Reflective IR | dcssr / ncir2 / reflective-ir | [本地进度](../artifacts/dcssr-ncir2-reflective-ir-expansion/progress.json) |
+| Thermal2 / FlashLight / GPS SMA | thermal2 / flashlight / gps-sma | [本地进度](../artifacts/thermal2-flashlight-gps-expansion/progress.json) |
+| BLDC Driver / RCA / Puzzle | bldc-driver / rca / puzzle | [本地进度](../artifacts/bldc-rca-puzzle-expansion/progress.json) |
+| RS485-ISO / AIN4-20mA / AC Measure | rs485-iso / ain4-20ma / ac-measure | [本地进度](../artifacts/isolated-interface-expansion/progress.json) |
 
 各进度记录绑定相应批次的源码/检查范围。近期新增只执行必要局部结构、动作/API、接线夹具及构建；没有逐面浏览器复核或全量验收。`modeled`表示已有实现，不能视为完成视觉或实物配合验收。
 
 ## 接入入口
 
 - [Agent总指南](AGENT-INTEGRATION.md)：按需loader、输入/外驱状态、层级地址与生命周期。
+- [RS485-ISO/AIN4-20mA/AC Measure](ISOLATED-INTERFACE-UNITS.md)：真实隔离芯片/四位端子、可拆跳帽与原稿印刷。
+- [BLDC Driver/RCA/Puzzle](BLDC-RCA-PUZZLE-UNITS.md)：真实三相连接器、音视频插座/壳内双通道开关和64灯外驱/物理级联。
+- [Thermal2/FlashLight/GPS SMA](THERMAL2-FLASHLIGHT-GPS-UNITS.md)：热成像采集头/原壳舌、固定白灯/壳内选择器和可拆有源带线天线。
+- [DCSSR/NCIR2/Reflective IR](DCSSR-NCIR2-REFLECTIVE-IR-UNITS.md)：完整直流SSR、实际测温头/按钮和红外阈值调节头。
+- [Watering/HBridge v1.1/DLight](WATERING-LIGHT-HBRIDGE-UNITS.md)：真实泵/极板、驱动端子与稳定电源选择器、环境光感测实体。
+- [Tube Pressure/MQ/LoRaE220-920](RADIO-GAS-PRESSURE-UNITS.md)：真实气嘴、金属感测罩、可拆配件与无线模组DIP形状。
+- [ADC v1.1/AMeter/VMeter](ADC-METER-UNITS.md)：真实模拟输入/测量插座、可拆端子与外驱螺钉头。
+- [TimerPWR/ExtEncoder/NFC](TIMER-ENCODER-NFC-UNITS.md)：真实按键、外部屏幕、五芯插头与NFC实体。
+- [DAC2/DDS/KMeter-ISO](DAC-DDS-KMETER-UNITS.md)：可拆端子、SMA同轴与K型扁插座/附件。
 - [Laser TX/RX/MIDI](LASER-MIDI-UNITS.md)：发射/接收光学实体、DIN/TRS插座与真实稳定滑块。
 - [Earth/Hall/QRCode](EARTH-HALL-QRCODE-UNITS.md)：土壤探针、固定磁感实体、真实触发键/通讯滑块与独立灯。
 - [Step16/ASR/UHF](STEP-ASR-UHF-UNITS.md)：旋钮、原生七段/RGB外驱、固定声学与RF实体。

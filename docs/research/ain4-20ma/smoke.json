@@ -1,0 +1,300 @@
+{
+  "checkedAt": "2026-10-26T12:21:16.919Z",
+  "status": "pass",
+  "scope": "Necessary own U162 native shell/PCB/HCNR200/STM32/two SGM321,physical 4P socket/plug and all six exposed P2/P3 pins/five shunt positions with shared-pin reservation,FrontSide native/PCB/plug/shunt bores,external screw angle/duration/no-RPM/no-echo,48 artwork/cover/accessory combinations,nested four-core Grove pose/independence/detach/disposal.No browser,manufacturing fit,electrical,power-mode,sensor,firmware or hardware validation.",
+  "meshes": 164,
+  "triangles": 26762,
+  "nativeTriangles": 5688,
+  "sourceAssemblyTriangles": 5688,
+  "visualEnvelopeMm": [
+    24.0000638961792,
+    56.00003252029419,
+    11.300000005960465
+  ],
+  "cadEnvelopeMm": [
+    24.0000638961792,
+    56.00003242492676,
+    8
+  ],
+  "boreRays": 10,
+  "boreWalls": 20,
+  "matingBores": 16,
+  "exposedPins": 6,
+  "shuntPositions": 5,
+  "closureChecks": [
+    {
+      "origin": [
+        3,
+        0,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Physical adhesive substrate over original supporting shell/PCB"
+    },
+    {
+      "origin": [
+        0,
+        6.4,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Real rear adhesive substrate and retained native shell"
+    },
+    {
+      "origin": [
+        0,
+        -36,
+        1.2
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Grove recessed physical rear carrier"
+    },
+    {
+      "origin": [
+        -3,
+        -36,
+        1.05
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove real contact1"
+    },
+    {
+      "origin": [
+        -1,
+        -36,
+        1.05
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove real contact2"
+    },
+    {
+      "origin": [
+        1,
+        -36,
+        1.05
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove real contact3"
+    },
+    {
+      "origin": [
+        3,
+        -36,
+        1.05
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove real contact4"
+    },
+    {
+      "origin": [
+        -5.94,
+        38,
+        5.05
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Bare terminal real contact1"
+    },
+    {
+      "origin": [
+        -1.98,
+        38,
+        5.05
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Bare terminal real contact2"
+    },
+    {
+      "origin": [
+        1.98,
+        38,
+        5.05
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Bare terminal real contact3"
+    },
+    {
+      "origin": [
+        5.94,
+        38,
+        5.05
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Bare terminal real contact4"
+    },
+    {
+      "origin": [
+        0,
+        -16,
+        -12
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 10,
+      "purpose": "Original central retaining recess has physical screw"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Physical adhesive substrate over original supporting shell/PCB",
+      "hit": "AIN4-20mA physical front adhesive label substrate over native supporting rails",
+      "distanceMm": 11.099999998509883
+    },
+    {
+      "purpose": "Real rear adhesive substrate and retained native shell",
+      "hit": "AIN4-20mA physical rear adhesive label substrate",
+      "distanceMm": 11.000000000111758
+    },
+    {
+      "purpose": "Grove recessed physical rear carrier",
+      "hit": "AIN4-20mA Grove contact carrier",
+      "distanceMm": 11.20000004768372
+    },
+    {
+      "purpose": "Grove real contact1",
+      "hit": "AIN4-20mA Grove contact 1",
+      "distanceMm": 9.5
+    },
+    {
+      "purpose": "Grove real contact2",
+      "hit": "AIN4-20mA Grove contact 2",
+      "distanceMm": 9.5
+    },
+    {
+      "purpose": "Grove real contact3",
+      "hit": "AIN4-20mA Grove contact 3",
+      "distanceMm": 9.5
+    },
+    {
+      "purpose": "Grove real contact4",
+      "hit": "AIN4-20mA Grove contact 4",
+      "distanceMm": 9.5
+    },
+    {
+      "purpose": "Bare terminal real contact1",
+      "hit": "AIN4-20mA fixed terminal recessed field input contact",
+      "distanceMm": 11.000000095367433
+    },
+    {
+      "purpose": "Bare terminal real contact2",
+      "hit": "AIN4-20mA fixed terminal recessed field input contact",
+      "distanceMm": 11.000000095367433
+    },
+    {
+      "purpose": "Bare terminal real contact3",
+      "hit": "AIN4-20mA fixed terminal recessed field input contact",
+      "distanceMm": 11.000000095367433
+    },
+    {
+      "purpose": "Bare terminal real contact4",
+      "hit": "AIN4-20mA fixed terminal recessed field input contact",
+      "distanceMm": 11.000000095367433
+    },
+    {
+      "purpose": "Original central retaining recess has physical screw",
+      "hit": "AIN4-20mA fixed hex retaining screw face",
+      "distanceMm": 8.97
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove",
+      "terminal",
+      "jumper-p2-12",
+      "jumper-p2-34",
+      "jumper-p3-12",
+      "jumper-p2-2-p3-1",
+      "jumper-p2-3-p3-2"
+    ],
+    "anchors": [],
+    "controls": [],
+    "leds": [],
+    "joints": [],
+    "accessoryExports": [
+      "TerminalPlug",
+      "Shunt"
+    ],
+    "accessoryJoints": [
+      "screw-1",
+      "screw-2",
+      "screw-3",
+      "screw-4"
+    ],
+    "accessoryOption": "terminalPlug:true",
+    "jumperOptions": [
+      "three-horizontal",
+      "two-vertical",
+      false
+    ],
+    "defaultJumpers": "three-horizontal",
+    "coversOption": "covers:false",
+    "nestedJointExample": "terminal/screw-1",
+    "sharedPinReservation": "Same physical pin cannot hold two Shunt caps;this is geometry occupancy only"
+  },
+  "artwork": {
+    "panels": 2,
+    "kind": "reference-redraw",
+    "configurationChecks": 24,
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 309
+}

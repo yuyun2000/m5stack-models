@@ -1,0 +1,45 @@
+{
+  "sku": "U190",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U190_Unit_GPS_SMA/Structures/Unit_GPS_SMA.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "cd451d15e2d03f37e80e7db05bf7f82fa56a78ba",
+  "sha256": "6d93ea1962caf38864027accc041acb990a61e3360581aad16edf30ec294b17f",
+  "license": "MIT",
+  "origin": [
+    0,
+    32,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 0,
+      "name": "GPS SMA complete native assembled shell",
+      "material": "shell",
+      "triangles": 6592
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "notes": "All 6592 native assembled-shell triangles retained at scale1 under one common translation. Components1/2 are displaced separate rear/front copies. Native mounting bores, SMA retention windows and Grove opening unchanged. PCB, shielded ATGM336H, MAX2659, backup cell, hidden 1PPS package, internal coax/SMA and active cabled puck accessory are separately reconstructed appearance geometry.",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/LICENSE"
+}
