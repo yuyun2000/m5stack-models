@@ -35884,6 +35884,4812 @@
         "originalsDistributed": false,
         "sources": "docs/research/env-iv/artwork.json"
       }
+    },
+    {
+      "id": "cardkb2",
+      "category": "unit",
+      "name": "Unit CardKB2",
+      "sku": "U215",
+      "scope": "visual-only",
+      "stage": "modeled",
+      "entry": "src/units/cardkb2/index.js",
+      "export": "Model",
+      "nominalMm": [
+        84.7,
+        54.3,
+        6.15
+      ],
+      "vendorDimensionOrderMm": [
+        84.7,
+        54.3,
+        1
+      ],
+      "pcbMm": [
+        84,
+        54,
+        1
+      ],
+      "visualEnvelopeMm": [
+        84.70000009536744,
+        54.29999997615814,
+        6.1900000029802325
+      ],
+      "geometrySource": "own-dimensioned-parametric-no-CAD",
+      "cadEnvelopeMm": null,
+      "reference": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1225/U215_main-pictures_07.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_CardKB2",
+      "research": "docs/research/cardkb2/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/cardkb2/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -39,
+          -24
+        ],
+        [
+          -39,
+          24
+        ],
+        [
+          39,
+          -24
+        ],
+        [
+          39,
+          24
+        ]
+      ],
+      "mountingHoleDiameterMm": 2.2,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "left",
+          "positionMm": [
+            -42.7,
+            -14.3,
+            3.1
+          ],
+          "outward": [
+            -1,
+            0,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "G26",
+            "G25"
+          ]
+        },
+        {
+          "id": "usb",
+          "connector": "usb-c",
+          "face": "left",
+          "positionMm": [
+            -42.6,
+            0,
+            2.05
+          ],
+          "outward": [
+            -1,
+            0,
+            0
+          ],
+          "pins": []
+        }
+      ],
+      "controls": [
+        "key-1",
+        "key-2",
+        "key-3",
+        "key-4",
+        "key-5",
+        "key-6",
+        "key-7",
+        "key-8",
+        "key-9",
+        "key-10",
+        "key-11",
+        "key-12",
+        "key-13",
+        "key-14",
+        "key-15",
+        "key-16",
+        "key-17",
+        "key-18",
+        "key-19",
+        "key-20",
+        "key-21",
+        "key-22",
+        "key-23",
+        "key-24",
+        "key-25",
+        "key-26",
+        "key-27",
+        "key-28",
+        "key-29",
+        "key-30",
+        "key-31",
+        "key-32",
+        "key-33",
+        "key-34",
+        "key-35",
+        "key-36",
+        "key-37",
+        "key-38",
+        "key-39",
+        "key-40",
+        "key-41",
+        "key-42",
+        "reset",
+        "boot"
+      ],
+      "visualAnchors": [],
+      "externalLeds": [
+        "rgb"
+      ],
+      "defaultOptions": {},
+      "configurationSchema": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "Complete CardKB2 populated board",
+          "options": {}
+        }
+      ],
+      "accessories": [],
+      "visualMotion": {
+        "kind": "momentary-cap-only",
+        "count": 44,
+        "mainAxis": [
+          0,
+          0,
+          -1
+        ],
+        "mainTravelMm": 0.22,
+        "resetAxis": [
+          0,
+          -1,
+          0
+        ],
+        "bootAxis": [
+          0,
+          1,
+          0
+        ],
+        "sideTravelMm": 0.16,
+        "travelInferred": true,
+        "inputIntentOnly": true
+      },
+      "closureChecks": [
+        {
+          "origin": [
+            -55,
+            -14.3,
+            3.1
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "maxDistance": 23,
+          "purpose": "ActualGrove deepdielectric backing"
+        },
+        {
+          "origin": [
+            -55,
+            0,
+            2.05
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "maxDistance": 24,
+          "purpose": "ActualUSB tongue/deepdielectric backing"
+        }
+      ],
+      "artwork": {
+        "status": "mixed",
+        "kind": "mixed",
+        "kinds": [
+          "reference-redraw",
+          "source-vector-raster"
+        ],
+        "pngCount": 2,
+        "physicalFilms": 1,
+        "movingCapPanels": 0,
+        "originalsDistributed": false,
+        "sources": "docs/research/cardkb2/artwork.json"
+      },
+      "limitations": [
+        "OwnU215 dimensioned-parametricroute,no nativeCADtriangles andno oldCardKB structure.",
+        "OwnPCBcorner/notch/undimensionedslot/connector drill details,secondary package footprints/installation,6.55mm mainkeypitch/registration andhidden switchmechanics areappearanceinferences fromownphotos.",
+        "0.22mmmainZ travel/0.16mmside inwardY travel are inferred viewertravel,not measuredstop/tactileforce.",
+        "ESP32-C61HF4 QFN40 5×5 comesfromownlinked datasheet;secondary AW32901/LDO7343D envelopes/visiblepassives fromownPCB photos,not completeplacement/BOM.",
+        "USB-C24contact/tongue/bore andGrove4contact/through-PCBtail installation/fit inferred;fourreal mountingØ2.2bores/78×48grid retained.",
+        "Own frontPCB fontmetrics/spacing/registration reconstructed bycode fromclearownphoto,unreadable tinyreference/batchlettering omitted;redplungers have no ink.",
+        "Exact-own rearoriginal vector design rasterized with letterforms/colors retained;0.04mmphysicaladhesivefilm thickness/diecut/registration inferred. Bare drawing84.7×54.3×6.15 versusfilm-inclusivevisual6.19mm recordedseparately;vendor1mm denotesPCBthickness.",
+        "No keyboardcharacters/matrixscan/modifiercombo/capslockstate/USB-HID/UART/I2C/BLE/ESP-NOW/WiFi/electrical/firmwarebehavior orautomatickey-to-RGB mapping.",
+        "NecessaryscopedCPU geometry/API/rasterreadback only;noGPU/browser/physical/productionfit acceptance."
+      ],
+      "nextAction": "Continue ownUnit geometry andcorrespondingartwork together."
+    },
+    {
+      "id": "neco",
+      "category": "unit",
+      "name": "Unit Neco",
+      "sku": "U163",
+      "scope": "visual-only",
+      "nominalMm": [
+        44.6,
+        43,
+        10.1
+      ],
+      "vendorDimensionOrderMm": [
+        44.6,
+        43,
+        10.1
+      ],
+      "cadEnvelopeMm": null,
+      "visualEnvelopeMm": [
+        47.099998474121094,
+        44.599998474121094,
+        10.10000001192093
+      ],
+      "stage": "modeled",
+      "entry": "src/units/neco/index.js",
+      "export": "Model",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/Neco%20Unit/img-0829fc9e-df08-42df-9b0e-7bc4fe3f32d4.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_Neco",
+      "research": "docs/research/neco/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/neco/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -21.5,
+          -20.2
+        ],
+        [
+          21.5,
+          -20.2
+        ],
+        [
+          -14,
+          -17.6
+        ],
+        [
+          14,
+          -17.6
+        ]
+      ],
+      "mountingHoleRadiiMm": [
+        1.05,
+        1.05,
+        0.85,
+        0.85
+      ],
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "back",
+          "positionMm": [
+            3.5,
+            -7.7,
+            -8.75
+          ],
+          "outward": [
+            0,
+            0,
+            -1
+          ],
+          "pins": [
+            "BTN",
+            "RGB-IN",
+            "5V",
+            "GND"
+          ],
+          "physicalRole": "input"
+        },
+        {
+          "id": "out",
+          "connector": "grove",
+          "face": "back",
+          "positionMm": [
+            -3.5,
+            -7.7,
+            -8.75
+          ],
+          "outward": [
+            0,
+            0,
+            -1
+          ],
+          "pins": [
+            "NC (PCB print BTN)",
+            "RGB-OUT",
+            "5V",
+            "GND"
+          ],
+          "physicalRole": "output"
+        }
+      ],
+      "controls": [
+        {
+          "id": "button",
+          "kind": "momentary",
+          "type": "button",
+          "surfaceFace": "back",
+          "visualMotion": "actual-cap-only",
+          "positionMm": [
+            8.6,
+            12.7,
+            -1.42
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "travelMm": 0.15,
+          "travelSource": "Own photo appearance estimate; not rated mechanical stop",
+          "source": "Actual S1 SW-PB"
+        }
+      ],
+      "visualAnchors": [],
+      "externalLeds": [
+        {
+          "id": "led-1",
+          "kind": "led",
+          "packageIndex": 1,
+          "positionMm": [
+            -21.895093062605753,
+            -17.7,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-2",
+          "kind": "led",
+          "packageIndex": 2,
+          "positionMm": [
+            -21.150592216582062,
+            -15.229610829103212,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-3",
+          "kind": "led",
+          "packageIndex": 3,
+          "positionMm": [
+            -20.372250423011845,
+            -12.759221658206432,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-4",
+          "kind": "led",
+          "packageIndex": 4,
+          "positionMm": [
+            -19.593908629441625,
+            -10.288832487309644,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-5",
+          "kind": "led",
+          "packageIndex": 5,
+          "positionMm": [
+            -18.78172588832487,
+            -7.85228426395939,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-6",
+          "kind": "led",
+          "packageIndex": 6,
+          "positionMm": [
+            -17.901861252115058,
+            -5.415736040609136,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-7",
+          "kind": "led",
+          "packageIndex": 7,
+          "positionMm": [
+            -16.95431472081218,
+            -3.013028764805412,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-8",
+          "kind": "led",
+          "packageIndex": 8,
+          "positionMm": [
+            -15.972927241962774,
+            -0.6441624365482213,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-9",
+          "kind": "led",
+          "packageIndex": 9,
+          "positionMm": [
+            -14.856175972927241,
+            1.7247038917089696,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-10",
+          "kind": "led",
+          "packageIndex": 10,
+          "positionMm": [
+            -13.705583756345177,
+            4.059729272419627,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-11",
+          "kind": "led",
+          "packageIndex": 11,
+          "positionMm": [
+            -12.453468697123519,
+            6.394754653130288,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-12",
+          "kind": "led",
+          "packageIndex": 12,
+          "positionMm": [
+            -11.133671742808799,
+            8.662098138747886,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-13",
+          "kind": "led",
+          "packageIndex": 13,
+          "positionMm": [
+            -9.712351945854484,
+            10.861759729272421,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-14",
+          "kind": "led",
+          "packageIndex": 14,
+          "positionMm": [
+            -8.189509306260575,
+            12.993739424703893,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-15",
+          "kind": "led",
+          "packageIndex": 15,
+          "positionMm": [
+            -6.565143824027072,
+            15.058037225042302,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-16",
+          "kind": "led",
+          "packageIndex": 16,
+          "positionMm": [
+            -4.737732656514383,
+            17.08849407783418,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-17",
+          "kind": "led",
+          "packageIndex": 17,
+          "positionMm": [
+            -2.808798646362098,
+            18.983587140439933,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-18",
+          "kind": "led",
+          "packageIndex": 18,
+          "positionMm": [
+            0,
+            20.134179357022,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-19",
+          "kind": "led",
+          "packageIndex": 19,
+          "positionMm": [
+            2.808798646362098,
+            18.983587140439933,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-20",
+          "kind": "led",
+          "packageIndex": 20,
+          "positionMm": [
+            4.737732656514383,
+            17.08849407783418,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-21",
+          "kind": "led",
+          "packageIndex": 21,
+          "positionMm": [
+            6.565143824027072,
+            15.058037225042302,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-22",
+          "kind": "led",
+          "packageIndex": 22,
+          "positionMm": [
+            8.189509306260575,
+            12.993739424703893,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-23",
+          "kind": "led",
+          "packageIndex": 23,
+          "positionMm": [
+            9.712351945854484,
+            10.861759729272421,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-24",
+          "kind": "led",
+          "packageIndex": 24,
+          "positionMm": [
+            11.133671742808799,
+            8.662098138747886,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-25",
+          "kind": "led",
+          "packageIndex": 25,
+          "positionMm": [
+            12.453468697123519,
+            6.394754653130288,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-26",
+          "kind": "led",
+          "packageIndex": 26,
+          "positionMm": [
+            13.705583756345177,
+            4.059729272419627,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-27",
+          "kind": "led",
+          "packageIndex": 27,
+          "positionMm": [
+            14.856175972927241,
+            1.7247038917089696,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-28",
+          "kind": "led",
+          "packageIndex": 28,
+          "positionMm": [
+            15.972927241962774,
+            -0.6441624365482213,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-29",
+          "kind": "led",
+          "packageIndex": 29,
+          "positionMm": [
+            16.95431472081218,
+            -3.013028764805412,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-30",
+          "kind": "led",
+          "packageIndex": 30,
+          "positionMm": [
+            17.901861252115058,
+            -5.415736040609136,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-31",
+          "kind": "led",
+          "packageIndex": 31,
+          "positionMm": [
+            18.78172588832487,
+            -7.85228426395939,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-32",
+          "kind": "led",
+          "packageIndex": 32,
+          "positionMm": [
+            19.593908629441625,
+            -10.288832487309644,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-33",
+          "kind": "led",
+          "packageIndex": 33,
+          "positionMm": [
+            20.372250423011845,
+            -12.759221658206432,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-34",
+          "kind": "led",
+          "packageIndex": 34,
+          "positionMm": [
+            21.150592216582062,
+            -15.229610829103212,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        },
+        {
+          "id": "led-35",
+          "kind": "led",
+          "packageIndex": 35,
+          "positionMm": [
+            21.895093062605753,
+            -17.7,
+            1.175
+          ],
+          "colorMode": "RGB",
+          "default": "off",
+          "scope": "Independent external on/color/brightness; visual path index is not claimed schematic U or serial address"
+        }
+      ],
+      "defaults": {},
+      "defaultOptions": {},
+      "canonicalCableInput": "grove",
+      "configurationSchema": {},
+      "configurations": [
+        {
+          "id": "assembled",
+          "name": "完整猫耳灯板",
+          "options": {}
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "physicalFilms": 0,
+        "source": "docs/research/neco/artwork.json"
+      },
+      "nextAction": "Root integration/necessary branch fixture, actual raster build emission and private sync. Not GPU or manufacturing acceptance."
+    },
+    {
+      "id": "mini-oled",
+      "category": "unit",
+      "name": "Unit Mini OLED",
+      "sku": "U166",
+      "scope": "visual-only",
+      "nominalMm": [
+        25.8,
+        12,
+        6.8
+      ],
+      "vendorDimensionOrderMm": [
+        25.8,
+        12,
+        6.8
+      ],
+      "drawingEnvelopeMm": [
+        25.8,
+        12,
+        6.75
+      ],
+      "visualEnvelopeMm": [
+        25.8,
+        12.12,
+        6.75
+      ],
+      "sourceRoute": "own-dimensioned-parametric-no-CAD",
+      "stage": "modeled",
+      "entry": "src/units/mini-oled/index.js",
+      "export": "Model",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_Mini_OLED",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/MiniOLED%20Unit/img-41b7b812-ba0b-4fda-b62b-029c5c445ffd.webp",
+      "research": "docs/research/mini-oled/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/mini-oled/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "label": "Left Grove · documentary I2C",
+          "connector": "grove",
+          "face": "left",
+          "positionMm": [
+            -12.9,
+            0,
+            0.375
+          ],
+          "outward": [
+            -1,
+            0,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SDA",
+            "SCL"
+          ]
+        },
+        {
+          "id": "grove-right",
+          "label": "Right Grove · documentary I2C",
+          "connector": "grove",
+          "face": "right",
+          "positionMm": [
+            12.9,
+            0,
+            0.375
+          ],
+          "outward": [
+            1,
+            0,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SDA",
+            "SCL"
+          ]
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "visualAnchors": [],
+      "serviceVisualAnchors": [],
+      "visualMotion": {},
+      "displays": [
+        {
+          "id": "lcd",
+          "resolution": [
+            72,
+            40
+          ],
+          "sizeMm": [
+            9.196,
+            5.18
+          ],
+          "positionMm": [
+            0,
+            1.535,
+            3.375
+          ],
+          "style": "oled",
+          "touch": false,
+          "default": "blank black opaque",
+          "color": "white monochrome, luminance0.5threshold;sourceRGBpreserved",
+          "scope": "External framebuffer visual output only;noSSD1315registers/I2C/firmware."
+        }
+      ],
+      "defaults": {},
+      "configurations": [
+        {
+          "id": "assembled",
+          "name": "Complete Mini OLED with folded FPC",
+          "options": {}
+        }
+      ],
+      "configurationSchema": {},
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            1.535,
+            7
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 6,
+          "purpose": "Actual closed cap glass and panel under output surface"
+        },
+        {
+          "origin": [
+            -16,
+            0,
+            0.175
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "maxDistance": 12,
+          "purpose": "Actual recessed left Grove material backing"
+        }
+      ],
+      "limitations": [
+        "Own dimensional-parametric route;no native CAD triangle claim or borrowed OLED assembly.",
+        "Rigid drawing25.8×12×6.75;rounded producttable6.8thickness;inferred foldedflex extends actual Y to12.12mm.",
+        "FinePCB holes/installation/Grove internals/glass split/FPC fold/adhesive and lettering registration inferred.",
+        "No touch,sensors,buttons,LED,joints,servicepreset,SSD1315commands,electrical orfirmware behavior.",
+        "Fixed white OLED style and no touch are actual API rejections before invalid-command pixel writes.",
+        "Two own-photo code-redrawn ordinary PNGs on real PCB;nofilm orpermanentdisplayimage.",
+        "Necessary local smoke only;visualnull."
+      ],
+      "nextAction": "Continue exact-Unit expansion with matching labels; refine installed geometry when an official U166 assembly is available.",
+      "artwork": {
+        "status": "reference-redraw",
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "variants": [
+          "front",
+          "back"
+        ],
+        "originalsDistributed": false,
+        "sources": "docs/research/mini-oled/artwork.json"
+      }
+    },
+    {
+      "id": "mini-imu-pro",
+      "category": "unit",
+      "name": "Unit Mini IMU-Pro",
+      "sku": "U171",
+      "scope": "visual-only",
+      "stage": "modeled",
+      "entry": "src/units/mini-imu-pro/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "nominalMm": [
+        24,
+        24,
+        8
+      ],
+      "vendorDimensionOrderMm": [
+        24,
+        24,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24.000000047683717,
+        24.000000047683717,
+        8.07999999910593
+      ],
+      "geometrySource": "own-dimensioned-parametric-no-CAD",
+      "cadEnvelopeMm": null,
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/IMU%20Pro%20Mini%20Unit/img-98fe7ac4-6037-4e0d-a753-0967ba6ee4af.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_Mini_IMU-Pro",
+      "research": "docs/research/mini-imu-pro/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/mini-imu-pro/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          0
+        ],
+        [
+          8,
+          0
+        ]
+      ],
+      "mountingHoleDiameterMm": 5,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -11.96,
+            1.4
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SDA",
+            "SCL"
+          ]
+        }
+      ],
+      "controls": [],
+      "visualAnchors": [],
+      "externalLeds": [],
+      "externalDisplays": [],
+      "defaults": {},
+      "defaultOptions": {},
+      "configurationSchema": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "Complete Mini IMU-Pro assembled enclosure",
+          "options": {}
+        }
+      ],
+      "accessories": [],
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            -17,
+            1.4
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 14,
+          "purpose": "Actual Grove deep dielectric backing"
+        }
+      ],
+      "artwork": {
+        "status": "reference-redraw",
+        "kind": "reference-redraw",
+        "pngCount": 3,
+        "physicalFilms": 3,
+        "originalsDistributed": false,
+        "sources": "docs/research/mini-imu-pro/artwork.json"
+      },
+      "limitations": [
+        "Own U171 dimensioned parameterization;no native CAD consumption,triangle claim or borrowed U095 shell/artwork.",
+        "R4/24x24x8/two Ø5 through-bores/pitch16/Grove10x5.2 from own six-view;all undimensioned wall/recess/case seam/snap/boss/PCB and concealed installed package positions are documented appearance inferences.",
+        "Own linked datasheets establish BMI270 LGA14 2.5x3x.83,BMM150 WLCSP12 1.56x1.56x.6 and BMP280 metal LGA8 2x2.5x.95. Body/retained-terminal split and hidden placement are inferred,not board placement or assembly CAD.",
+        "Own schematic establishes HX6306P332MR,R1-R3,C1-C8 and SW1. Actual service opening PCB/fixed metal lands are shown;SW1 actuator location/shape/axis/travel remains unresolved and is not guessed or exposed as a control.",
+        "Grove cavity/contact/return/tail/through-PCB barrel installation and mating fit are visual inferences. Labels are documentary only,not electrical routing.",
+        "Three physical .04mm adhesive films and their diecuts/registration inferred from own clear photos;nominal24x24x8 versusfilm-inclusive24x24x8.08 kept distinct. Shallow M5 molded relief reconstructed by geometric strokes.",
+        "No sensor readings,orientation/heading/pressure,address switching,I2C,firmware,electrical or material/manufacturing-fit simulation.",
+        "Scoped CPU geometry/API/raster readback only;no GPU/browser/physical/production-fit acceptance."
+      ],
+      "nextAction": "Continue own Unit geometry and corresponding artwork together."
+    },
+    {
+      "id": "glass",
+      "category": "unit",
+      "name": "Unit Glass",
+      "sku": "U158",
+      "scope": "visual-only",
+      "nominalMm": [
+        53,
+        42,
+        6
+      ],
+      "vendorDimensionOrderMm": [
+        53,
+        42,
+        6
+      ],
+      "cadEnvelopeMm": null,
+      "visualEnvelopeMm": [
+        42.040000915527344,
+        53,
+        6.000000002980232
+      ],
+      "stage": "modeled",
+      "entry": "src/units/glass/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/Glass%20Unit/img-467f2a5f-e95c-4e39-b99a-baf0f1505c72.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_Glass",
+      "research": "docs/research/glass/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/glass/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -16,
+          -23.5
+        ],
+        [
+          16,
+          -23.5
+        ]
+      ],
+      "mountingHoleRadiiMm": [
+        1.5,
+        1.5
+      ],
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -19.5,
+            -0.25
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SDA",
+            "SCL"
+          ],
+          "physicalRole": "single-input"
+        }
+      ],
+      "controls": [
+        {
+          "id": "button-a",
+          "kind": "momentary",
+          "type": "button",
+          "surfaceFace": "right",
+          "visualMotion": "small-actuator-only",
+          "positionMm": [
+            20.62,
+            -10,
+            1.18
+          ],
+          "axis": [
+            -1,
+            0,
+            0
+          ],
+          "travelMm": 0.14,
+          "travelSource": "Own-photo appearance estimate;not rated mechanical stop"
+        },
+        {
+          "id": "button-b",
+          "kind": "momentary",
+          "type": "button",
+          "surfaceFace": "left",
+          "visualMotion": "small-actuator-only",
+          "positionMm": [
+            -20.62,
+            -10,
+            1.18
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "travelMm": 0.14,
+          "travelSource": "Own-photo appearance estimate;not rated mechanical stop"
+        }
+      ],
+      "visualAnchors": [],
+      "externalLeds": [],
+      "displays": [
+        {
+          "id": "screen",
+          "kind": "transparent-oled",
+          "resolution": [
+            128,
+            56
+          ],
+          "activeMm": [
+            35.05,
+            15.32
+          ],
+          "touch": false,
+          "color": "fixed light-blue",
+          "scope": "External visible pixels only;no controller row map"
+        }
+      ],
+      "defaults": {},
+      "defaultOptions": {},
+      "canonicalCableInput": "grove",
+      "configurationSchema": {},
+      "configurations": [
+        {
+          "id": "assembled",
+          "name": "完整透明 OLED 装配",
+          "options": {}
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "physicalFilms": 0,
+        "source": "docs/research/glass/artwork.json"
+      },
+      "nextAction": "Root integration/necessary branch fixture,actual raster build emission and private sync;not GPU or physical acceptance."
+    },
+    {
+      "id": "8servos2-chain",
+      "category": "unit",
+      "name": "Unit 8Servos2-Chain",
+      "sku": "U223",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        56,
+        11.5
+      ],
+      "vendorDimensionOrderMm": [
+        56,
+        24,
+        11.5
+      ],
+      "visualEnvelopeMm": [
+        24.000000023841856,
+        56.00000002384186,
+        11.500000005960464
+      ],
+      "cadEnvelopeMm": null,
+      "sourceRoute": "own-dimensioned-parametric-no-CAD",
+      "stage": "modeled",
+      "entry": "src/units/8servos2-chain/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_8Servos2-Chain",
+      "reference": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1280/U223_Unit_8Servos2-Chain_main_pictures_06.jpg",
+      "research": "docs/research/8servos2-chain/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator",
+        "accessoryExports": []
+      },
+      "verification": {
+        "geometry": "docs/research/8servos2-chain/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          -16
+        ],
+        [
+          8,
+          -16
+        ]
+      ],
+      "mountingHoleDiameterMm": 4.85,
+      "ports": [
+        {
+          "id": "grove",
+          "label": "Chain IN",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -27.95,
+            0.1
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "RX1",
+            "TX1"
+          ]
+        },
+        {
+          "id": "out",
+          "label": "Chain OUT",
+          "connector": "grove",
+          "face": "top",
+          "positionMm": [
+            0,
+            27.95,
+            0.1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "TX2",
+            "RX2"
+          ]
+        },
+        {
+          "id": "ch0",
+          "label": "CH0 · documentary G/V/S",
+          "connector": "servo-2.54-3",
+          "face": "front",
+          "positionMm": [
+            6,
+            9.37,
+            5.75
+          ],
+          "outward": [
+            0,
+            0,
+            1
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SIG"
+          ]
+        },
+        {
+          "id": "ch1",
+          "label": "CH1 · documentary G/V/S",
+          "connector": "servo-2.54-3",
+          "face": "front",
+          "positionMm": [
+            6,
+            6.83,
+            5.75
+          ],
+          "outward": [
+            0,
+            0,
+            1
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SIG"
+          ]
+        },
+        {
+          "id": "ch2",
+          "label": "CH2 · documentary G/V/S",
+          "connector": "servo-2.54-3",
+          "face": "front",
+          "positionMm": [
+            6,
+            3.77,
+            5.75
+          ],
+          "outward": [
+            0,
+            0,
+            1
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SIG"
+          ]
+        },
+        {
+          "id": "ch3",
+          "label": "CH3 · documentary G/V/S",
+          "connector": "servo-2.54-3",
+          "face": "front",
+          "positionMm": [
+            6,
+            1.23,
+            5.75
+          ],
+          "outward": [
+            0,
+            0,
+            1
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SIG"
+          ]
+        },
+        {
+          "id": "ch4",
+          "label": "CH4 · documentary G/V/S",
+          "connector": "servo-2.54-3",
+          "face": "front",
+          "positionMm": [
+            6,
+            -1.83,
+            5.75
+          ],
+          "outward": [
+            0,
+            0,
+            1
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SIG"
+          ]
+        },
+        {
+          "id": "ch5",
+          "label": "CH5 · documentary G/V/S",
+          "connector": "servo-2.54-3",
+          "face": "front",
+          "positionMm": [
+            6,
+            -4.37,
+            5.75
+          ],
+          "outward": [
+            0,
+            0,
+            1
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SIG"
+          ]
+        },
+        {
+          "id": "ch6",
+          "label": "CH6 · documentary G/V/S",
+          "connector": "servo-2.54-3",
+          "face": "front",
+          "positionMm": [
+            6,
+            -7.43,
+            5.75
+          ],
+          "outward": [
+            0,
+            0,
+            1
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SIG"
+          ]
+        },
+        {
+          "id": "ch7",
+          "label": "CH7 · documentary G/V/S",
+          "connector": "servo-2.54-3",
+          "face": "front",
+          "positionMm": [
+            6,
+            -9.97,
+            5.75
+          ],
+          "outward": [
+            0,
+            0,
+            1
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SIG"
+          ]
+        },
+        {
+          "id": "dc",
+          "label": "DC5.5×2.1 mechanical",
+          "connector": "dc-5.5x2.1",
+          "face": "right",
+          "positionMm": [
+            11.98,
+            -7.19,
+            -0.45
+          ],
+          "outward": [
+            1,
+            0,
+            0
+          ],
+          "pins": [
+            "center",
+            "sleeve"
+          ]
+        }
+      ],
+      "controls": [],
+      "visualAnchors": [],
+      "externalLeds": [],
+      "defaults": {},
+      "defaultOptions": {},
+      "canonicalCableInput": "grove",
+      "configurationSchema": {},
+      "configurations": [
+        {
+          "id": "assembled",
+          "name": "完整 Chain 舵机接口外壳",
+          "options": {}
+        }
+      ],
+      "artwork": {
+        "kind": "official-vector-raster",
+        "pngCount": 2,
+        "physicalFilms": 2,
+        "source": "docs/research/8servos2-chain/artwork.json"
+      },
+      "nextAction": "Root integration/necessary branch fixture, actual raster build emission and narrow sync. No GPU or manufacturing acceptance."
+    },
+    {
+      "id": "unitv2-usb",
+      "category": "unit",
+      "name": "UnitV2-USB",
+      "sku": "U078-USB",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        48,
+        24.2
+      ],
+      "vendorDimensionOrderMm": [
+        48,
+        24,
+        24.2
+      ],
+      "cadEnvelopeMm": [
+        24,
+        48,
+        23.67708969116211
+      ],
+      "visualEnvelopeMm": [
+        24,
+        48,
+        23.67708969116211
+      ],
+      "sourceRoute": "own-native-shells-plus-own-parametric-detail",
+      "stage": "modeled",
+      "entry": "src/units/unitv2-usb/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "officialDocs": "https://docs.m5stack.com/en/unit/UnitV2-USB",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/unitv2_usb/unitv2_usb_06.webp",
+      "research": "docs/research/unitv2-usb/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [
+          "Clip"
+        ],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/unitv2-usb/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "label": "HY2.0-4P · literal rear Tx/Rx/5V/G",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -23.96,
+            2.6
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "TX",
+            "RX",
+            "5V",
+            "GND"
+          ]
+        },
+        {
+          "id": "usb-a",
+          "label": "USB-A receiving · no camera installed",
+          "connector": "usb-a",
+          "face": "top",
+          "positionMm": [
+            0,
+            23.96,
+            9.6
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ],
+          "pins": [
+            "contact 1",
+            "contact 2",
+            "contact 3",
+            "contact 4"
+          ]
+        },
+        {
+          "id": "usb",
+          "label": "USB-C receiving",
+          "connector": "usb-c",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -23.98,
+            -2.8
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": []
+        },
+        {
+          "id": "sd",
+          "label": "microSD receiving · empty",
+          "connector": "microsd",
+          "face": "left",
+          "positionMm": [
+            -11.98,
+            8,
+            1.55
+          ],
+          "outward": [
+            -1,
+            0,
+            0
+          ],
+          "pins": [
+            "contact 1",
+            "contact 2",
+            "contact 3",
+            "contact 4",
+            "contact 5",
+            "contact 6",
+            "contact 7",
+            "contact 8"
+          ]
+        },
+        {
+          "id": "mount",
+          "label": "Own supplied static rear clip",
+          "connector": "m5.unitv2-usb.clip",
+          "face": "back",
+          "positionMm": [
+            0,
+            6,
+            -9.2
+          ],
+          "outward": [
+            0,
+            0,
+            -1
+          ],
+          "pins": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "user",
+          "kind": "momentary",
+          "type": "button",
+          "surfaceFace": "top",
+          "visualMotion": "native-flexure",
+          "positionMm": [
+            0,
+            24.015,
+            1.35
+          ],
+          "bodyAxis": [
+            0,
+            -1,
+            0
+          ],
+          "travelMm": 0.25,
+          "deformedNativeVertices": 165,
+          "source": "Exact own2550face native U-cut tongue;upper hinge retained;actual internal plunger follows"
+        }
+      ],
+      "visualAnchors": [],
+      "externalLeds": [],
+      "defaults": {
+        "clip": false
+      },
+      "defaultOptions": {
+        "clip": false
+      },
+      "canonicalCableInput": "grove",
+      "configurationSchema": {
+        "clip": {
+          "type": "boolean",
+          "default": false,
+          "description": "Install the exact native supplied static clip;no hinge or joint"
+        }
+      },
+      "configurations": [
+        {
+          "id": "bare",
+          "name": "本体 · 不装背夹",
+          "options": {
+            "clip": false
+          }
+        },
+        {
+          "id": "with-clip",
+          "name": "本体 · 原生静态背夹",
+          "options": {
+            "clip": true
+          }
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 1,
+        "physicalFilms": 1,
+        "source": "docs/research/unitv2-usb/artwork.json"
+      },
+      "accessories": {
+        "clip": {
+          "export": "Clip",
+          "port": "mount",
+          "connector": "m5.unitv2-usb.clip",
+          "static": true,
+          "nativeTriangles": 3316
+        }
+      },
+      "nextAction": "Root current-batch integration/build/resource/guide checks;no own fan rotor axis or production-fit acceptance."
+    },
+    {
+      "id": "unitv-m12",
+      "category": "unit",
+      "name": "UnitV-M12",
+      "sku": "U078-V-M12",
+      "scope": "visual-only",
+      "nominalMm": [
+        40,
+        24,
+        16.4
+      ],
+      "vendorDimensionOrderMm": [
+        40,
+        24,
+        16.4
+      ],
+      "cadEnvelopeMm": [
+        24.000003814697266,
+        40,
+        12.699999809265137
+      ],
+      "visualEnvelopeMm": [
+        24.000003814697266,
+        40.00000001192093,
+        16.44000019028783
+      ],
+      "stage": "modeled",
+      "entry": "src/units/unitv-m12/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT-V%20M12/img-eb4f374f-5811-4625-9f01-cce7705221fe.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/UnitV-M12",
+      "research": "docs/research/unitv-m12/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/unitv-m12/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          -8.2
+        ],
+        [
+          8,
+          -8.2
+        ]
+      ],
+      "mountingHoleRadiiMm": [
+        2.425,
+        2.425
+      ],
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -20,
+            -0.65
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "physicalContacts": 4
+        },
+        {
+          "id": "usb",
+          "connector": "usb-c",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -20,
+            -4.65
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "physicalContacts": 24
+        },
+        {
+          "id": "sd",
+          "connector": "microsd",
+          "face": "top",
+          "positionMm": [
+            -1,
+            20,
+            -0.9
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ],
+          "physicalContacts": 9
+        }
+      ],
+      "controls": [
+        {
+          "id": "buttonA",
+          "type": "button",
+          "kind": "momentary",
+          "visualMotion": "actual-native-cap-flexure",
+          "surfaceFace": "left",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "travelMm": 0.18,
+          "affectedNativeVertices": 172,
+          "travelSource": "Own native hinge and photo;visual estimate"
+        },
+        {
+          "id": "buttonB",
+          "type": "button",
+          "kind": "momentary",
+          "visualMotion": "actual-native-cap-flexure",
+          "surfaceFace": "right",
+          "axis": [
+            -1,
+            0,
+            0
+          ],
+          "travelMm": 0.18,
+          "affectedNativeVertices": 171,
+          "travelSource": "Own native hinge and photo;visual estimate"
+        }
+      ],
+      "visualAnchors": [
+        {
+          "id": "camera",
+          "role": "passive-optical",
+          "scope": "No image/frame/AI output"
+        }
+      ],
+      "externalLeds": [],
+      "displays": [],
+      "defaults": {},
+      "defaultOptions": {},
+      "canonicalCableInput": "grove",
+      "configurationSchema": {},
+      "configurations": [
+        {
+          "id": "assembled",
+          "name": "完整 M12 光学装配",
+          "options": {}
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "physicalFilms": 1,
+        "source": "docs/research/unitv-m12/artwork.json"
+      },
+      "nextAction": "Root necessary own native-motion fixture/integration/build/raster emission/private narrow sync;not GPU or physical acceptance"
+    },
+    {
+      "id": "timercamera-f",
+      "category": "unit",
+      "name": "TimerCamera-F",
+      "sku": "U082-F",
+      "scope": "visual-only",
+      "stage": "modeled",
+      "entry": "src/units/timercamera-f/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "nominalMm": [
+        24,
+        48,
+        23.3
+      ],
+      "vendorDimensionOrderMm": [
+        48,
+        24,
+        23.3
+      ],
+      "visualEnvelopeMm": [
+        24.00000001192093,
+        48,
+        23.30000001192093
+      ],
+      "geometrySource": "own-native-shells-plus-own-parametric-detail",
+      "cadEnvelopeMm": [
+        24,
+        48,
+        22.39441967010498
+      ],
+      "cadTriangles": 9496,
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/timercam_f/timercam_f_06.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/timercam_f",
+      "research": "docs/research/timercamera-f/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [
+          "Clip",
+          "Wall1515"
+        ],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/timercamera-f/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -23.99,
+            -6.2
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "G4",
+            "G13"
+          ]
+        },
+        {
+          "id": "usb",
+          "connector": "usb-c",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -23.99,
+            -0.6
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "mount",
+          "connector": "m5.timercamera.u082f.rear-mount",
+          "face": "back",
+          "positionMm": [
+            0,
+            0,
+            -10
+          ],
+          "outward": [
+            0,
+            0,
+            -1
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "id": "power",
+          "kind": "button",
+          "positionMm": [
+            -11.7,
+            -14.7,
+            -5.25
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "travelMm": 0.18,
+          "latching": false
+        },
+        {
+          "id": "reset",
+          "kind": "button",
+          "positionMm": [
+            9,
+            13.65,
+            -1.35
+          ],
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "travelMm": 0.14,
+          "latching": false
+        }
+      ],
+      "visualAnchors": [
+        {
+          "id": "camera",
+          "role": "visual-anchor",
+          "positionMm": [
+            0,
+            10,
+            10
+          ],
+          "sensor": "OV3660",
+          "documentaryFovDeg": 120,
+          "scope": "Passive frame only"
+        }
+      ],
+      "externalLeds": [
+        {
+          "id": "status",
+          "fixedColor": "#168aff",
+          "defaultBrightness": 0,
+          "fields": [
+            "on",
+            "brightness"
+          ]
+        }
+      ],
+      "externalDisplays": [],
+      "defaults": {
+        "mount": "none"
+      },
+      "defaultOptions": {
+        "mount": "none"
+      },
+      "configurationSchema": {
+        "mount": {
+          "values": [
+            "none",
+            "clip",
+            "wall1515"
+          ],
+          "default": "none",
+          "meaning": "One real static native mounting accessory at a time"
+        },
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "false removes ink alone;physical rear adhesive remains"
+        }
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "Complete TimerCamera-F",
+          "options": {
+            "mount": "none"
+          }
+        },
+        {
+          "id": "clip",
+          "name": "TimerCamera-F with supplied retaining clip",
+          "options": {
+            "mount": "clip"
+          }
+        },
+        {
+          "id": "wall1515",
+          "name": "TimerCamera-F with Wall1515 adapter",
+          "options": {
+            "mount": "wall1515"
+          }
+        }
+      ],
+      "accessories": [
+        {
+          "export": "Clip",
+          "family": "m5.timercamera.u082f.rear-mount",
+          "nativeFaces": 2150,
+          "static": true
+        },
+        {
+          "export": "Wall1515",
+          "family": "m5.timercamera.u082f.rear-mount",
+          "nativeFaces": 1966,
+          "static": true
+        }
+      ],
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            -30,
+            -6.2
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 15,
+          "purpose": "Actual Grove deep dielectric backing"
+        }
+      ],
+      "artwork": {
+        "status": "source-vector-raster",
+        "kind": "source-vector-raster",
+        "pngCount": 1,
+        "physicalFilms": 1,
+        "originalsDistributed": false,
+        "sources": "docs/research/timercamera-f/artwork.json"
+      },
+      "limitations": [
+        "Own U082-F native closed7912-front/1584-rear faces retained unchanged after exact source X assembly-datum restoration;actual2150clip/1966Wall1515 native faces retained separately;source combined touching-seam9496 and duplicate2150clip intentionally excluded.",
+        "Native front/dimension drawing contain24 dot-grid holes;actual own06/09 production photographs show a plain front. Separate same-material continuous13x12x2.1mm internal web and24 exact native mouth columns restore the photographed appearance inside shell thickness,with.2mm overlap and no broad coplanar overlay,no lens/upper-slot/reset-hole cover. This is appearance reconstruction,not manufacturer-certified revision geometry.",
+        "Nominal24x48x23.3mm,unaltered native shell24x48x22.3944197mm and reconstructed curved optical glass reachingZ13.3 kept distinct. Real rear-film substrateZ−9.84…−9.8 touches native supportZ−9.8000001907;film does not float over the recess.",
+        "Own schematic establishes ESP32,ESPSRAM64H,flash,CH552,BM8563,TP4057,S1/S2 and LED1BLUE;own photographs establish real fixed packages,PCB,HY2.0/USB-C,fixings,fisheye optics and270mAh battery. Hidden board/package/flex/terminal/wire installation,actual body envelopes and all undimensioned material thickness/positions are inferred.",
+        "Actual physical PWR cap-only +X travel.18mm and recessed RESET cap-only−Z travel.14mm,registration,LED package at actual upper slot and fixed solder supports are inferred. No native sidewall,connector,package or LED moves with a cap;real tiny reset aperture remains open.",
+        "Clip and Wall1515 are mutually exclusive static native alternatives at own rear mount;installation/mating fit is inferred,no articulated hinge/joint,load or electrical model.",
+        "Own rear vector raster and public PNG are separate from private originals. Adhesive thickness,registration and manufacturing fit are inferred. No front film,no source-photo pixel crops,no invented microtext/QR/MAC/SN.",
+        "Passive OV3660/120degree camera anchor,documentary GND/5V/G4/G13 pins and externally driven fixed-blue LED only. No image/video/AI,USB/UART/I2C/RTC,power/reset,wake or firmware/electrical effects.",
+        "Necessary CPU geometry/API/source-correspondence/raster readback only;no browser/GPU/physical-device/manufacturing-fit acceptance."
+      ],
+      "nextAction": "Continue Unit geometry and corresponding own artwork together."
+    },
+    {
+      "id": "m5camera-x",
+      "category": "unit",
+      "name": "M5Camera-X",
+      "sku": "U038",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        48,
+        13
+      ],
+      "vendorDimensionOrderMm": [
+        24,
+        48,
+        13
+      ],
+      "cadEnvelopeMm": [
+        24,
+        48,
+        13.199999809265137
+      ],
+      "visualEnvelopeMm": [
+        24,
+        48,
+        14.700000286102295
+      ],
+      "stage": "modeled",
+      "entry": "src/units/m5camera-x/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/m5camera_x/m5camera_x_03.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/M5Camera-X",
+      "research": "docs/research/m5camera-x/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [
+          "LegoClip",
+          "Wall1515"
+        ],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/m5camera-x/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -23.99,
+            -3
+          ],
+          "physicalContacts": 4
+        },
+        {
+          "id": "usb",
+          "connector": "usb-c",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -23.99,
+            3.1
+          ],
+          "physicalContacts": 24
+        },
+        {
+          "id": "mount",
+          "connector": "m5.m5camera-x.rear-mount",
+          "face": "back",
+          "positionMm": [
+            0,
+            0,
+            -6.6
+          ],
+          "physicalContacts": 0
+        }
+      ],
+      "controls": [
+        {
+          "id": "reset",
+          "type": "button",
+          "kind": "momentary",
+          "visualMotion": "own-native-cap-flexure",
+          "surfaceFace": "left",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "freeEdgeTravelMm": 0.18,
+          "affectedNativeVertices": 176,
+          "travelSource": "Own native tongue/hinge/photo;appearance estimate"
+        }
+      ],
+      "visualAnchors": [
+        {
+          "id": "camera",
+          "role": "passive-optical",
+          "scope": "No image/frame/AI output"
+        }
+      ],
+      "externalLeds": [],
+      "displays": [],
+      "accessories": {
+        "mount": {
+          "lego": {
+            "constructor": "LegoClip",
+            "metaId": "m5stack.unit.m5camera-x.lego",
+            "connector": "m5.m5camera-x.rear-mount",
+            "nativeFaces": 1966
+          },
+          "wall1515": {
+            "constructor": "Wall1515",
+            "metaId": "m5stack.unit.m5camera-x.wall1515",
+            "connector": "m5.m5camera-x.rear-mount",
+            "nativeFaces": 2150
+          }
+        }
+      },
+      "defaults": {
+        "mount": "none"
+      },
+      "defaultOptions": {
+        "mount": "none"
+      },
+      "canonicalCableInput": "grove",
+      "configurationSchema": {
+        "mount": {
+          "values": [
+            "none",
+            "lego",
+            "wall1515"
+          ],
+          "default": "none",
+          "meaning": "One actual own static mounting accessory at a time"
+        },
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "No ink is present;false keeps every physical attribute/index/world unchanged"
+        }
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整 M5Camera-X",
+          "options": {
+            "mount": "none"
+          }
+        },
+        {
+          "id": "lego",
+          "name": "M5Camera-X 与自身 LEGO 夹件",
+          "options": {
+            "mount": "lego"
+          }
+        },
+        {
+          "id": "wall1515",
+          "name": "M5Camera-X 与自身 Wall-1515",
+          "options": {
+            "mount": "wall1515"
+          }
+        }
+      ],
+      "artwork": {
+        "kind": "native-unpainted-relief",
+        "pngCount": 0,
+        "physicalFilms": 0,
+        "source": "docs/research/m5camera-x/artwork.json"
+      },
+      "nextAction": "Root actual final API integration and necessary native-flexure/accessory fixture;not GPU or manufacturing acceptance"
+    },
+    {
+      "id": "unitv2-m12",
+      "category": "unit",
+      "name": "UnitV2-M12",
+      "sku": "U078-M12",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        48,
+        32
+      ],
+      "vendorDimensionOrderMm": [
+        48,
+        24,
+        32
+      ],
+      "cadEnvelopeMm": [
+        24.00007152557373,
+        48,
+        25.999999046325684
+      ],
+      "visualEnvelopeMm": [
+        24.00007152557373,
+        48,
+        33.034999237060546
+      ],
+      "sourceRoute": "own-native-shells-plus-own-parametric-detail",
+      "stage": "modeled",
+      "entry": "src/units/unitv2-m12/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "officialDocs": "https://docs.m5stack.com/en/unit/UnitV2-M12",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/unitv2_m12/unitv2_m12_05.webp",
+      "research": "docs/research/unitv2-m12/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/unitv2-m12/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "label": "HY2.0-4P · literal rear Tx/Rx/5V/G",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -23.96,
+            2.6
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "TX",
+            "RX",
+            "5V",
+            "GND"
+          ]
+        },
+        {
+          "id": "usb",
+          "label": "USB-C receiving",
+          "connector": "usb-c",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -23.98,
+            -2.8
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": []
+        },
+        {
+          "id": "sd",
+          "label": "microSD receiving · empty",
+          "connector": "microsd",
+          "face": "left",
+          "positionMm": [
+            -11.98,
+            8,
+            1.55
+          ],
+          "outward": [
+            -1,
+            0,
+            0
+          ],
+          "pins": [
+            "contact 1",
+            "contact 2",
+            "contact 3",
+            "contact 4",
+            "contact 5",
+            "contact 6",
+            "contact 7",
+            "contact 8"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "id": "user",
+          "kind": "momentary",
+          "type": "button",
+          "surfaceFace": "top",
+          "visualMotion": "native-flexure",
+          "positionMm": [
+            0,
+            24.015,
+            2.45
+          ],
+          "bodyAxis": [
+            0,
+            -1,
+            0
+          ],
+          "travelMm": 0.25,
+          "deformedNativeVertices": 166,
+          "source": "Own3044-face native U-cut tongue;hinge retained;small physical plunger follows. Travel and mask appearance-derived."
+        }
+      ],
+      "joints": [
+        {
+          "id": "focus",
+          "kind": "joint",
+          "type": "VisualJoint",
+          "positionMm": [
+            0,
+            9.75,
+            16.8
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "continuous": false,
+          "limitsDeg": null,
+          "visualRangeDeg": [
+            -90,
+            90
+          ],
+          "angleDeg": 0,
+          "source": "Own documented manual focus and actual coaxial barrel;no verified physical stops,pitch or axial coupling",
+          "scope": "Only actual lens barrel/rim/glass externally rotated;no autofocus/RPM/motor/optical simulation"
+        }
+      ],
+      "visualJoints": [
+        {
+          "id": "focus",
+          "kind": "joint",
+          "type": "VisualJoint",
+          "positionMm": [
+            0,
+            9.75,
+            16.8
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "continuous": false,
+          "limitsDeg": null,
+          "visualRangeDeg": [
+            -90,
+            90
+          ],
+          "angleDeg": 0,
+          "source": "Own documented manual focus and actual coaxial barrel;no verified physical stops,pitch or axial coupling",
+          "scope": "Only actual lens barrel/rim/glass externally rotated;no autofocus/RPM/motor/optical simulation"
+        }
+      ],
+      "visualAnchors": [
+        {
+          "id": "camera",
+          "kind": "component",
+          "role": "passive-optical-anchor",
+          "positionMm": [
+            0,
+            9.75,
+            23.8
+          ],
+          "sensor": "GC2053",
+          "fovDeg": 85,
+          "scope": "Fixed optical axis only;no video/capture/AI/display"
+        }
+      ],
+      "externalLeds": [],
+      "defaults": {
+        "lens": "85"
+      },
+      "defaultOptions": {
+        "lens": "85"
+      },
+      "canonicalCableInput": "grove",
+      "configurationSchema": {
+        "lens": {
+          "type": "enum",
+          "values": [
+            "85"
+          ],
+          "default": "85",
+          "description": "Selected documentary85deg lens reconstruction at own33mm drawing height;150deg supplied lens lacks separate attributable geometry."
+        }
+      },
+      "configurations": [
+        {
+          "id": "regular-85",
+          "name": "常规85°镜头 · 本体",
+          "options": {
+            "lens": "85"
+          }
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 1,
+        "physicalFilms": 1,
+        "source": "docs/research/unitv2-m12/artwork.json"
+      },
+      "accessories": {},
+      "limitations": [
+        "Hidden main PCB/package/passive footprints and counts,internal optical mounting/ribbon/acoustic and fixed cooling carrier positions inferred.",
+        "Connector conventional fingers,terminal retention and PCB support geometry are appearance reconstruction;USB-C populated terminal count not asserted.",
+        "Native tongue smooth mask/visual travel and exact physical user switch hidden installation inferred.",
+        "85deg selected documentary identity/pictured shape registration and optical stack inferred;no150deg shape or optical simulation.",
+        "Focus axis follows real coaxial optics;no unverified thread pitch,axial response or physical range.",
+        "Fan rotor/indicator path/supplied bracket mating not established.",
+        "Label font,diecut/registration and0.035mm film thickness inferred;variable/unclear marks omitted."
+      ],
+      "nextAction": "Root actual-API integration/build/resource/guide checks;no physical lens-stop/pitch/150deg-shape or production-fit acceptance."
+    },
+    {
+      "id": "timercamera-x",
+      "category": "unit",
+      "name": "TimerCamera-X",
+      "sku": "U082-X",
+      "scope": "visual-only",
+      "stage": "modeled",
+      "entry": "src/units/timercamera-x/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "nominalMm": [
+        24,
+        48,
+        15
+      ],
+      "vendorDimensionOrderMm": [
+        48,
+        24,
+        15
+      ],
+      "visualEnvelopeMm": [
+        24.00000001192093,
+        48,
+        14.999999911785126
+      ],
+      "geometrySource": "own-native-halves-plus-own-parametric-detail",
+      "cadEnvelopeMm": [
+        24,
+        48,
+        13.199999809265137
+      ],
+      "cadTriangles": 4452,
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/timercam_x/timercam_x_02.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/TimerCamera-X",
+      "research": "docs/research/timercamera-x/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [
+          "TwoEarMount",
+          "TwinHoleMount"
+        ],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/timercamera-x/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -23.99,
+            -2.8
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "G4",
+            "G13"
+          ]
+        },
+        {
+          "id": "usb",
+          "connector": "usb-c",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -23.99,
+            2.8
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "mount",
+          "connector": "m5.timercamera.u082x.rear-mount",
+          "face": "back",
+          "positionMm": [
+            0,
+            0,
+            -6.6
+          ],
+          "outward": [
+            0,
+            0,
+            -1
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "id": "power",
+          "kind": "button",
+          "positionMm": [
+            -11.7,
+            -14.7,
+            -1.65
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "travelMm": 0.18,
+          "latching": false
+        },
+        {
+          "id": "reset",
+          "kind": "button",
+          "positionMm": [
+            8.59675,
+            13.72261,
+            1.7
+          ],
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "travelMm": 0.14,
+          "latching": false
+        }
+      ],
+      "visualAnchors": [
+        {
+          "id": "camera",
+          "role": "visual-anchor",
+          "positionMm": [
+            0,
+            10,
+            6.6
+          ],
+          "sensor": "OV3660",
+          "documentaryFovDeg": 66.5,
+          "scope": "Passive frame only"
+        }
+      ],
+      "externalLeds": [
+        {
+          "id": "status",
+          "fixedColor": "#168aff",
+          "defaultBrightness": 0,
+          "fields": [
+            "on",
+            "brightness"
+          ],
+          "singleEmitter": true,
+          "realWindowCount": 3
+        }
+      ],
+      "externalDisplays": [],
+      "defaults": {
+        "mount": "none"
+      },
+      "defaultOptions": {
+        "mount": "none"
+      },
+      "configurationSchema": {
+        "mount": {
+          "values": [
+            "none",
+            "two-ear",
+            "twin-hole"
+          ],
+          "default": "none",
+          "meaning": "One own static native rear support;neutral shape names avoid an unproved LEGO/Wall1515 identity mapping"
+        },
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Ink only;real adhesive substrate remains"
+        }
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "Complete TimerCamera-X",
+          "options": {
+            "mount": "none"
+          }
+        },
+        {
+          "id": "two-ear",
+          "name": "TimerCamera-X with native two-ear support",
+          "options": {
+            "mount": "two-ear"
+          }
+        },
+        {
+          "id": "twin-hole",
+          "name": "TimerCamera-X with native twin-hole support",
+          "options": {
+            "mount": "twin-hole"
+          }
+        }
+      ],
+      "accessories": [
+        {
+          "export": "TwoEarMount",
+          "shape": "two-ear",
+          "family": "m5.timercamera.u082x.rear-mount",
+          "nativeFaces": 1966,
+          "static": true,
+          "assembledEnvelopeMm": [
+            39.999996185302734,
+            48,
+            16.399999530315398
+          ]
+        },
+        {
+          "export": "TwinHoleMount",
+          "shape": "twin-hole",
+          "family": "m5.timercamera.u082x.rear-mount",
+          "nativeFaces": 2150,
+          "static": true,
+          "assembledEnvelopeMm": [
+            26.703895568847656,
+            48,
+            18.60000077009201
+          ]
+        }
+      ],
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            -30,
+            -2.8
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 15,
+          "purpose": "Actual Grove deep dielectric backing"
+        }
+      ],
+      "artwork": {
+        "status": "reference-redraw",
+        "kind": "reference-redraw",
+        "pngCount": 1,
+        "physicalFilms": 1,
+        "originalsDistributed": false,
+        "sources": "docs/research/timercamera-x/artwork.json"
+      },
+      "limitations": [
+        "Own U082-X M5_Hardware MIT complete3044front/1408rear source halves retained unchanged;equivalent closed4452combined assembly is excluded to preserve explicit part identity. Own1966two-ear/2150twin-hole accessories retained whole;all8568selected source faces match original STL vertex-for-vertex under recorded rigid translations/axis rotation.",
+        "Own normal66.5degree OV3660 and140mAh identity,own7mm optical barrel and13.2mm native shell/15mm lens-inclusive drawing;not F120degree/270mAh and no inherited F shell/dot-grid infill. Actual native engraved M5 relief and real three LED windows/reset pinhole/lower slots stay native.",
+        "Actual opaque barrel/carrier/curved glass/deep optical stop,mainPCB/4camera-support posts/sensor/flex/FPC24/retained package-terminals,HY2.0four-contact cavity/tails/platedPCB bores,USB-C24contact receiver and real rear fixings are physical. Hidden installed positions,undimensioned envelopes/clearances and material details are inferred,not manufacturer BOM/placement/manufacturing fit.",
+        "Own140mAh pouch inferred16x20x2.2mm;two physical foam seats meet native rear inner surface and pouch,actual insulated leads reach a real two-contact battery receiver. No charge/power/battery-value model.",
+        "Own raw rear receiving slot centresY66/86 define accessory tab-centre restoration:2150source low-tabY62.129514694 translated+3.870485306;1966source low-tabY64.129484177 translated+1.870515823,with own symmetric X axes restored to body. Own09supports static placement;fit is inferred and not production-certified.",
+        "Own photos01/09show both accessory shapes and packaged names LEGO Adapter/Wall-1515 are documentary;own photos do not independently map names to shapes. Neutral TwoEarMount(1966)/TwinHoleMount(2150) constructors/presets avoid unsupported name inheritance. No joint/hinge or automatic movement.",
+        "Own actual sidePWR cap-only+X.18mm and real recessedRESET cap/stem-only−Z.14mm are appearance inferences. Fixed yellow/reset packages,terminals,board,shell,ports,optics and light path remain fixed. Existing own side opening is clear;no native elastic-cap deformation is required.",
+        "Own03 shows actual single LED1XBLUE package and own10 shows blue through all three windows. A real continuous guide leg/rail installation is inferred,meeting actual emitter/rail and backed by solder supports. Fixed-blue externalon/brightness output only;no input/power/RTC/battery echo or animation.",
+        "One.04mm actual rear adhesive film directly touches native recessed supportZ−6.400000095;its exposedZ−6.44 stays inside rear-rimZ−6.6. Own02label code redraw has inferred typography/icons/spacing/color;no source photo pixels,private originals,generators or variable identifiers are distributed.",
+        "Passive camera anchor/documentary pins only;no video/images/AI/USB/UART/I2C/RTC/power-reset/wake/storage/electrical/firmware behavior. Necessary CPU checks only,no browser/GPU/device or manufacturing-fit acceptance."
+      ],
+      "nextAction": "Continue own Unit geometry and matching artwork together."
+    },
+    {
+      "id": "extio",
+      "category": "unit",
+      "name": "Unit EXT.IO",
+      "sku": "U011",
+      "chip": "PCA9554PW",
+      "scope": "visual-only",
+      "lifecycle": "EOL-original-version;historical Unit coverage,not a claim of currently sold/popular revision",
+      "stage": "modeled",
+      "nominalMm": [
+        24,
+        32,
+        11
+      ],
+      "vendorDimensionOrderMm": [
+        32,
+        24,
+        11
+      ],
+      "cadEnvelopeMm": null,
+      "visualEnvelopeMm": [
+        24,
+        32,
+        11.1
+      ],
+      "constructionRoute": "own-dimensional-parametric",
+      "sourceRoute": "own-dimensional-parametric",
+      "entry": "src/units/extio/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/extio/extio_06.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/extio",
+      "research": "docs/research/extio/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/extio/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -15.94,
+            1
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            "SCL",
+            "SDA",
+            "VCC",
+            "GND"
+          ],
+          "scope": "Own original J1 numbering and four-contact mechanics only;no electrical routing"
+        },
+        {
+          "id": "io",
+          "connector": "header-2x5-2.54mm-male",
+          "face": "top",
+          "positionMm": [
+            0,
+            15.82,
+            2.67
+          ],
+          "physicalContacts": 10,
+          "pitchMm": 2.54,
+          "rows": 2,
+          "columns": 5,
+          "scope": "Original fixed recessed right-angle male2x5;no supplied attachment,GPIO state or electrical compatibility claim"
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "displays": [],
+      "joints": [],
+      "visualAnchors": [],
+      "accessories": {},
+      "defaults": {},
+      "defaultOptions": {},
+      "canonicalCableInput": "grove",
+      "configurationSchema": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "原版 EXT.IO · 完整本体",
+          "options": {}
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 1,
+        "physicalFilmCarriers": 1,
+        "configurationCases": [
+          {
+            "id": "complete",
+            "options": {},
+            "panelCount": 1,
+            "pngCount": 1,
+            "panels": [
+              "rear"
+            ],
+            "kinds": [
+              "reference-redraw"
+            ],
+            "artworkKinds": [
+              "reference-redraw"
+            ]
+          }
+        ],
+        "source": "docs/research/extio/artwork.json"
+      },
+      "nextAction": "Root exact frozen API/current-batch integration;no browser,GPU or manufacturing acceptance"
+    },
+    {
+      "id": "adc",
+      "category": "unit",
+      "name": "Unit ADC",
+      "sku": "U013",
+      "chip": "ADS1100",
+      "scope": "visual-only",
+      "lifecycle": "EOL-original-version;historical Unit coverage,not a claim of currently sold/popular revision",
+      "nominalMm": [
+        24,
+        32,
+        10.2
+      ],
+      "vendorDimensionOrderMm": [
+        32,
+        24,
+        10.2
+      ],
+      "cadEnvelopeMm": null,
+      "visualEnvelopeMm": [
+        24,
+        32,
+        10.2
+      ],
+      "stage": "modeled",
+      "entry": "src/units/adc/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/adc/adc_06.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/adc",
+      "research": "docs/research/adc/modeling.md",
+      "constructionRoute": "own-dimensional-parametric",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [
+          "TerminalPlug"
+        ],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/adc/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -16,
+            1.4
+          ],
+          "physicalContacts": 4
+        },
+        {
+          "id": "terminal",
+          "connector": "m5.adc.u013.terminal-2p",
+          "face": "top",
+          "positionMm": [
+            0,
+            6.4,
+            1.1
+          ],
+          "physicalContacts": 2,
+          "pitchMm": 3.96,
+          "scope": "Own removable HT3.96-2P physical assembly only;not electrical compatibility"
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "displays": [],
+      "joints": [],
+      "visualAnchors": [],
+      "accessories": {
+        "terminal": {
+          "constructor": "TerminalPlug",
+          "metaId": "m5stack.unit.adc.terminal-plug",
+          "connector": "m5.adc.u013.terminal-2p",
+          "componentOrder": [],
+          "joints": [],
+          "physicalMeshes": 22,
+          "ownPngCount": 1,
+          "staticMechanicalOnly": true
+        }
+      },
+      "defaults": {
+        "terminal": "installed"
+      },
+      "defaultOptions": {
+        "terminal": "installed"
+      },
+      "canonicalCableInput": "grove",
+      "configurationSchema": {
+        "terminal": {
+          "values": [
+            "installed",
+            "removed"
+          ],
+          "default": "installed",
+          "meaning": "Own removable orange2P plug installed or independently absent"
+        },
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Remove ink only;retain shell,terminal and both physical film carriers"
+        }
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整 ADC U013",
+          "options": {
+            "terminal": "installed"
+          }
+        },
+        {
+          "id": "without-plug",
+          "name": "ADC U013 取下橙色端子",
+          "options": {
+            "terminal": "removed"
+          }
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "configurationCases": [
+          {
+            "options": {},
+            "kinds": [
+              "reference-redraw",
+              "reference-redraw"
+            ]
+          },
+          {
+            "options": {
+              "terminal": "installed"
+            },
+            "kinds": [
+              "reference-redraw",
+              "reference-redraw"
+            ]
+          },
+          {
+            "options": {
+              "terminal": "removed"
+            },
+            "kinds": [
+              "reference-redraw"
+            ]
+          }
+        ],
+        "source": "docs/research/adc/artwork.json"
+      },
+      "nextAction": "Root exact frozen API integration;no browser/GPU/manufacturing acceptance"
+    },
+    {
+      "id": "dac",
+      "category": "unit",
+      "name": "Unit DAC",
+      "sku": "U012",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        32,
+        10.2
+      ],
+      "vendorDimensionOrderMm": [
+        32,
+        24,
+        10.2
+      ],
+      "caseEnvelopeMm": [
+        24,
+        32,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        32,
+        10.2
+      ],
+      "sourceRoute": "own-dimensional-parametric",
+      "stage": "modeled",
+      "entry": "src/units/dac/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "officialDocs": "https://docs.m5stack.com/en/unit/dac",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/dac/dac_06.webp",
+      "research": "docs/research/dac/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [
+          "TerminalPlug"
+        ],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/dac/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -16,
+            1.4
+          ],
+          "physicalContacts": 4
+        },
+        {
+          "id": "terminal",
+          "connector": "m5.u012.2p-terminal",
+          "face": "top",
+          "positionMm": [
+            0,
+            6.4,
+            4.1
+          ],
+          "physicalContacts": 2
+        }
+      ],
+      "controls": [],
+      "joints": [],
+      "visualAnchors": [],
+      "externalLeds": [],
+      "displays": [],
+      "accessories": {
+        "terminal": {
+          "constructor": "TerminalPlug",
+          "metaId": "m5stack.unit.dac.terminal-plug",
+          "connector": "m5.u012.2p-terminal",
+          "defaultInstalled": true
+        }
+      },
+      "defaults": {
+        "terminalPlug": true
+      },
+      "defaultOptions": {
+        "terminalPlug": true
+      },
+      "canonicalCableInput": "grove",
+      "configurationSchema": {
+        "terminalPlug": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Actual original orange2P plug installed or detached"
+        },
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Ink only;real rear/polarity film,relief andcontacts remain"
+        }
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整原版 DAC",
+          "options": {
+            "terminalPlug": true
+          }
+        },
+        {
+          "id": "without-terminal-plug",
+          "name": "原版 DAC 拔下2P端子",
+          "options": {
+            "terminalPlug": false
+          }
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "physicalFilms": {
+          "body": 1,
+          "terminalPlug": 1
+        },
+        "source": "docs/research/dac/artwork.json"
+      },
+      "nextAction": "Root frozen API integration/current-batch fixture;0verified;not GPU or production fit acceptance"
+    },
+    {
+      "id": "m5-bit",
+      "category": "unit",
+      "name": "Unit M5Bit",
+      "sku": "A051",
+      "scope": "visual-only",
+      "nominalMm": [
+        57,
+        21,
+        11
+      ],
+      "vendorDimensionOrderMm": [
+        57,
+        21,
+        11
+      ],
+      "visualEnvelopeMm": [
+        57,
+        21,
+        11
+      ],
+      "sourceRoute": "own-dimensional-parametric",
+      "stage": "modeled",
+      "entry": "src/units/m5-bit/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "officialDocs": "https://docs.m5stack.com/en/unit/m5-bit",
+      "reference": "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/rB9kfl06aWGAX5EwAAgeSYrLZ90882.JPG?v=1766131264",
+      "research": "docs/research/m5-bit/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/m5-bit/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "microbit",
+          "connector": "m5.a051.microbit-edge",
+          "face": "top",
+          "positionMm": [
+            0,
+            10.5,
+            5.4
+          ],
+          "physicalContacts": 80
+        },
+        {
+          "id": "io",
+          "connector": "m5.a051.io-3x15",
+          "face": "front",
+          "positionMm": [
+            0,
+            -6.54,
+            8.5
+          ],
+          "physicalContacts": 45
+        },
+        {
+          "id": "aux",
+          "connector": "m5.a051.aux-2x4",
+          "face": "front",
+          "positionMm": [
+            24.64,
+            -5.27,
+            8.5
+          ],
+          "physicalContacts": 8
+        },
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "left",
+          "positionMm": [
+            -28.5,
+            -5.4,
+            3.6
+          ],
+          "physicalContacts": 4
+        }
+      ],
+      "controls": [],
+      "joints": [],
+      "visualAnchors": [],
+      "externalLeds": [],
+      "displays": [],
+      "accessories": {},
+      "defaults": {},
+      "defaultOptions": {},
+      "canonicalCableInput": "grove",
+      "configurationSchema": {
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Only ownPCB ink;allphysicalboard/packages/contacts retained"
+        }
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整原版 M5Bit 转接板",
+          "options": {}
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "physicalFilms": 0,
+        "source": "docs/research/m5-bit/artwork.json"
+      },
+      "nextAction": "Root frozenAPI integration/currentbatch fixture;notGPUorproductionfitacceptance"
+    },
+    {
+      "id": "bps",
+      "category": "unit",
+      "name": "Unit Mini BPS",
+      "sku": "U090",
+      "chip": "BMP280",
+      "scope": "visual-only",
+      "lifecycle": "Original exactSKU historical coverage;no claim of current popularity oravailability",
+      "nominalMm": [
+        24,
+        24,
+        13
+      ],
+      "vendorDimensionOrderMm": [
+        24,
+        24,
+        13
+      ],
+      "cadEnvelopeMm": null,
+      "visualEnvelopeMm": [
+        24,
+        24,
+        13
+      ],
+      "stage": "modeled",
+      "entry": "src/units/bps/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/bps/bps_08.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/bps",
+      "research": "docs/research/bps/modeling.md",
+      "constructionRoute": "own-dimensional-parametric",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/bps/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -12,
+            3.9
+          ],
+          "physicalContacts": 4,
+          "scope": "Mechanical four-core appearance only"
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "displays": [],
+      "joints": [],
+      "visualAnchors": [],
+      "accessories": {},
+      "defaults": {},
+      "defaultOptions": {},
+      "canonicalCableInput": "grove",
+      "configurationSchema": {
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Remove front/rear ink only;retain real films,vents,sensor,case and PCB"
+        }
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整原版 Mini BPS U090",
+          "options": {}
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "source": "docs/research/bps/artwork.json"
+      },
+      "nextAction": "Root exact frozen API integration;not GPU/manufacturing acceptance"
+    },
+    {
+      "id": "hex",
+      "category": "unit",
+      "name": "Unit HEX",
+      "sku": "A045",
+      "scope": "visual-only",
+      "stage": "modeled",
+      "nominalMm": [
+        36,
+        31.2,
+        7
+      ],
+      "vendorDimensionOrderMm": [
+        31.2,
+        36,
+        7
+      ],
+      "visualEnvelopeMm": [
+        36,
+        31.2,
+        6.95
+      ],
+      "sourceRoute": "own-dimensional-parametric",
+      "entry": "src/units/hex/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "officialDocs": "https://docs.m5stack.com/en/unit/hex",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/hex/hex_02.webp",
+      "research": "docs/research/hex/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/hex/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "right",
+          "positionMm": [
+            13.9,
+            0,
+            -3.125
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            "GND",
+            "VCC",
+            "DATA",
+            "unlabelled"
+          ],
+          "scope": "Mechanical only;documentary labels,no electrical routing"
+        },
+        {
+          "id": "out",
+          "connector": "grove",
+          "face": "left",
+          "positionMm": [
+            -13.9,
+            0,
+            -3.125
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            "GND",
+            "VCC",
+            "DATA",
+            "unlabelled"
+          ],
+          "scope": "Mechanical only;documentary labels,no electrical routing"
+        },
+        {
+          "id": "power",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -15.2,
+            -3.125
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            "GND",
+            "VCC",
+            "unlabelled",
+            "unlabelled"
+          ],
+          "scope": "Mechanical only;documentary labels,no electrical routing"
+        }
+      ],
+      "controls": [],
+      "joints": [],
+      "visualAnchors": [],
+      "externalLeds": [
+        {
+          "id": "led-1",
+          "kind": "led",
+          "reference": "SK6812 1",
+          "positionMm": [
+            -7.5,
+            12.99,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-2",
+          "kind": "led",
+          "reference": "SK6812 2",
+          "positionMm": [
+            -2.5,
+            12.99,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-3",
+          "kind": "led",
+          "reference": "SK6812 3",
+          "positionMm": [
+            2.5,
+            12.99,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-4",
+          "kind": "led",
+          "reference": "SK6812 4",
+          "positionMm": [
+            7.5,
+            12.99,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-5",
+          "kind": "led",
+          "reference": "SK6812 5",
+          "positionMm": [
+            -10,
+            8.66,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-6",
+          "kind": "led",
+          "reference": "SK6812 6",
+          "positionMm": [
+            -5,
+            8.66,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-7",
+          "kind": "led",
+          "reference": "SK6812 7",
+          "positionMm": [
+            0,
+            8.66,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-8",
+          "kind": "led",
+          "reference": "SK6812 8",
+          "positionMm": [
+            5,
+            8.66,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-9",
+          "kind": "led",
+          "reference": "SK6812 9",
+          "positionMm": [
+            10,
+            8.66,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-10",
+          "kind": "led",
+          "reference": "SK6812 10",
+          "positionMm": [
+            -12.5,
+            4.33,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-11",
+          "kind": "led",
+          "reference": "SK6812 11",
+          "positionMm": [
+            -7.5,
+            4.33,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-12",
+          "kind": "led",
+          "reference": "SK6812 12",
+          "positionMm": [
+            -2.5,
+            4.33,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-13",
+          "kind": "led",
+          "reference": "SK6812 13",
+          "positionMm": [
+            2.5,
+            4.33,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-14",
+          "kind": "led",
+          "reference": "SK6812 14",
+          "positionMm": [
+            7.5,
+            4.33,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-15",
+          "kind": "led",
+          "reference": "SK6812 15",
+          "positionMm": [
+            12.5,
+            4.33,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-16",
+          "kind": "led",
+          "reference": "SK6812 16",
+          "positionMm": [
+            -15,
+            0,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-17",
+          "kind": "led",
+          "reference": "SK6812 17",
+          "positionMm": [
+            -10,
+            0,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-18",
+          "kind": "led",
+          "reference": "SK6812 18",
+          "positionMm": [
+            -5,
+            0,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-19",
+          "kind": "led",
+          "reference": "SK6812 19",
+          "positionMm": [
+            0,
+            0,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-20",
+          "kind": "led",
+          "reference": "SK6812 20",
+          "positionMm": [
+            5,
+            0,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-21",
+          "kind": "led",
+          "reference": "SK6812 21",
+          "positionMm": [
+            10,
+            0,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-22",
+          "kind": "led",
+          "reference": "SK6812 22",
+          "positionMm": [
+            15,
+            0,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-23",
+          "kind": "led",
+          "reference": "SK6812 23",
+          "positionMm": [
+            -12.5,
+            -4.33,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-24",
+          "kind": "led",
+          "reference": "SK6812 24",
+          "positionMm": [
+            -7.5,
+            -4.33,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-25",
+          "kind": "led",
+          "reference": "SK6812 25",
+          "positionMm": [
+            -2.5,
+            -4.33,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-26",
+          "kind": "led",
+          "reference": "SK6812 26",
+          "positionMm": [
+            2.5,
+            -4.33,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-27",
+          "kind": "led",
+          "reference": "SK6812 27",
+          "positionMm": [
+            7.5,
+            -4.33,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-28",
+          "kind": "led",
+          "reference": "SK6812 28",
+          "positionMm": [
+            12.5,
+            -4.33,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-29",
+          "kind": "led",
+          "reference": "SK6812 29",
+          "positionMm": [
+            -10,
+            -8.66,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-30",
+          "kind": "led",
+          "reference": "SK6812 30",
+          "positionMm": [
+            -5,
+            -8.66,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-31",
+          "kind": "led",
+          "reference": "SK6812 31",
+          "positionMm": [
+            0,
+            -8.66,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-32",
+          "kind": "led",
+          "reference": "SK6812 32",
+          "positionMm": [
+            5,
+            -8.66,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-33",
+          "kind": "led",
+          "reference": "SK6812 33",
+          "positionMm": [
+            10,
+            -8.66,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-34",
+          "kind": "led",
+          "reference": "SK6812 34",
+          "positionMm": [
+            -7.5,
+            -12.99,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-35",
+          "kind": "led",
+          "reference": "SK6812 35",
+          "positionMm": [
+            -2.5,
+            -12.99,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-36",
+          "kind": "led",
+          "reference": "SK6812 36",
+          "positionMm": [
+            2.5,
+            -12.99,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        },
+        {
+          "id": "led-37",
+          "kind": "led",
+          "reference": "SK6812 37",
+          "positionMm": [
+            7.5,
+            -12.99,
+            0.94
+          ],
+          "scope": "Independent external on/color/brightness on actual window only;no cascade,protocol,power or firmware"
+        }
+      ],
+      "displays": [],
+      "accessories": {},
+      "defaults": {},
+      "defaultOptions": {},
+      "canonicalCableInput": "grove",
+      "configurationSchema": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "原版 HEX · 37灯完整灯板",
+          "options": {}
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 1,
+        "source": "docs/research/hex/artwork.json"
+      },
+      "nextAction": "Root frozen API integration/current-batch fixture;modeled,0verified;not GPU or manufacturing acceptance"
+    },
+    {
+      "id": "rgb-led-10cm",
+      "category": "unit",
+      "name": "Unit RGB LED 10cm / 15LED",
+      "sku": "A035",
+      "scope": "visual-only",
+      "nominalMm": null,
+      "nominalStripMm": [
+        10,
+        100
+      ],
+      "officialThicknessMm": null,
+      "visualEnvelopeMm": [
+        10,
+        137,
+        7.5
+      ],
+      "visualEnvelopeBasis": "Ownphoto-basedstraightcompleteassembly;official100×10only2Dstripdatum",
+      "sourceRoute": "own-dimensional-parametric",
+      "stage": "modeled",
+      "entry": "src/units/rgb-led-10cm/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "officialDocs": "https://docs.m5stack.com/en/unit/neopixel",
+      "reference": "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/rB9kfl1RM4mAN5KLAASZdiXil1w843.JPG?v=1769072195",
+      "research": "docs/research/rgb-led-10cm/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/rgb-led-10cm/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "colour": "whiteinput",
+          "positionMm": [
+            0,
+            -68.5,
+            -3.3
+          ],
+          "physicalContacts": 4,
+          "motion": "Followsactualinputrigidendunderflex"
+        },
+        {
+          "id": "extension",
+          "connector": "grove",
+          "face": "top",
+          "colour": "blackNEXT",
+          "positionMm": [
+            0,
+            68.5,
+            -3.3
+          ],
+          "physicalContacts": 4,
+          "motion": "Followsactualextensionrigidendunderflex"
+        }
+      ],
+      "controls": [],
+      "joints": [],
+      "visualAnchors": [],
+      "externalLeds": [
+        {
+          "id": "led-1",
+          "type": "RGB",
+          "scope": "Externalon/color/brightness only"
+        },
+        {
+          "id": "led-2",
+          "type": "RGB",
+          "scope": "Externalon/color/brightness only"
+        },
+        {
+          "id": "led-3",
+          "type": "RGB",
+          "scope": "Externalon/color/brightness only"
+        },
+        {
+          "id": "led-4",
+          "type": "RGB",
+          "scope": "Externalon/color/brightness only"
+        },
+        {
+          "id": "led-5",
+          "type": "RGB",
+          "scope": "Externalon/color/brightness only"
+        },
+        {
+          "id": "led-6",
+          "type": "RGB",
+          "scope": "Externalon/color/brightness only"
+        },
+        {
+          "id": "led-7",
+          "type": "RGB",
+          "scope": "Externalon/color/brightness only"
+        },
+        {
+          "id": "led-8",
+          "type": "RGB",
+          "scope": "Externalon/color/brightness only"
+        },
+        {
+          "id": "led-9",
+          "type": "RGB",
+          "scope": "Externalon/color/brightness only"
+        },
+        {
+          "id": "led-10",
+          "type": "RGB",
+          "scope": "Externalon/color/brightness only"
+        },
+        {
+          "id": "led-11",
+          "type": "RGB",
+          "scope": "Externalon/color/brightness only"
+        },
+        {
+          "id": "led-12",
+          "type": "RGB",
+          "scope": "Externalon/color/brightness only"
+        },
+        {
+          "id": "led-13",
+          "type": "RGB",
+          "scope": "Externalon/color/brightness only"
+        },
+        {
+          "id": "led-14",
+          "type": "RGB",
+          "scope": "Externalon/color/brightness only"
+        },
+        {
+          "id": "led-15",
+          "type": "RGB",
+          "scope": "Externalon/color/brightness only"
+        }
+      ],
+      "displays": [],
+      "flex": {
+        "constructor": "StripFlex",
+        "kind": "flexible-strip",
+        "id": "flex",
+        "commands": {
+          "type": "flex",
+          "target": "flex",
+          "fields": [
+            "bendDeg",
+            "durationMs"
+          ]
+        },
+        "stateFields": [
+          "bendDeg",
+          "targetBendDeg",
+          "transitioning",
+          "neutralAxisLengthMm",
+          "rangeDeg"
+        ],
+        "rangeDeg": [
+          -120,
+          120
+        ],
+        "rangeMeaning": "Viewerbound only;notratedhardwarelimit",
+        "neutralAxisLengthMm": 100,
+        "transition": "Synchronousupdate(dt),linearangleinterpolation,noasync/timer",
+        "geometry": "Actual3continuousclosedlayers/pads/silkpositionsandnormals deform;15rigidpackages/2rigidboards tangent;96retainedsolderbridges followbothsupportendpoints",
+        "allowedMovingPorts": [
+          "grove",
+          "extension"
+        ],
+        "ModuleCable": "unitFrame.inputLocal rebindsandactual4corecable synchronizes in sameapply",
+        "notElectrical": true
+      },
+      "accessories": {},
+      "defaults": {
+        "bendDeg": 0
+      },
+      "defaultOptions": {
+        "bendDeg": 0
+      },
+      "canonicalCableInput": "grove",
+      "configurationSchema": {
+        "bendDeg": {
+          "type": "number",
+          "min": -120,
+          "max": 120,
+          "default": 0,
+          "meaning": "Visualneutral-axis circulararc totalangle;notmaterial/ratedbendlimit"
+        },
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Onlyprintedink;allthickFPC/liner/packages/boards retained"
+        }
+      },
+      "configurations": [
+        {
+          "id": "straight",
+          "name": "15灯直条",
+          "options": {
+            "bendDeg": 0
+          }
+        },
+        {
+          "id": "arc",
+          "name": "15灯平滑弯曲",
+          "options": {
+            "bendDeg": 90
+          }
+        },
+        {
+          "id": "reverse",
+          "name": "15灯反向柔性弯曲",
+          "options": {
+            "bendDeg": -60
+          }
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 3,
+        "physicalFilms": 0,
+        "source": "docs/research/rgb-led-10cm/artwork.json"
+      },
+      "nextAction": "Rootcurrentbatchintegration;official100×10is2Dstripdatumonly,Z/137mmcompleteenvelopeareownreconstruction;notGPU/hardwarefitverified"
+    },
+    {
+      "id": "rfid",
+      "category": "unit",
+      "name": "Unit RFID",
+      "sku": "U031",
+      "part": "MFRC522",
+      "scope": "visual-only",
+      "lifecycle": "Official original U031 marked EOL; historical coverage, no current popularity claim.",
+      "stage": "modeled",
+      "nominalMm": [
+        24,
+        48,
+        8
+      ],
+      "vendorDimensionOrderMm": [
+        48,
+        24,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        48,
+        8
+      ],
+      "sourceRoute": "own-dimensional-parametric",
+      "entry": "src/units/rfid/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "officialDocs": "https://docs.m5stack.com/en/unit/rfid",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/rfid/rfid_06.webp",
+      "research": "docs/research/rfid/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/rfid/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -23.96,
+            1.2
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            "SCL",
+            "SDA",
+            "5V",
+            "GND"
+          ],
+          "scope": "Physical connector and literal original J1/rearlegend only,no electrical routing"
+        }
+      ],
+      "controls": [],
+      "joints": [],
+      "visualAnchors": [],
+      "externalLeds": [],
+      "displays": [],
+      "accessories": {},
+      "defaults": {},
+      "defaultOptions": {},
+      "canonicalCableInput": "grove",
+      "configurationSchema": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "原版 RFID · MFRC522 完整本体",
+          "options": {}
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "physicalFilms": 2,
+        "source": "docs/research/rfid/artwork.json"
+      },
+      "nextAction": "Root frozen API/current-batch integration;modeled,0verified,not GPU or manufacturing acceptance"
+    },
+    {
+      "id": "env",
+      "category": "unit",
+      "name": "Unit ENV (DHT12 + BMP280)",
+      "sku": "U001",
+      "chips": [
+        "DHT12",
+        "BMP280",
+        "HT7533"
+      ],
+      "scope": "visual-only",
+      "lifecycle": "Original U001 EOL historical coverage;no current popularity/availability claim",
+      "nominalMm": [
+        24.2,
+        32.2,
+        8.1
+      ],
+      "vendorDimensionOrderMm": [
+        24.2,
+        32.2,
+        8.1
+      ],
+      "cadEnvelopeMm": null,
+      "visualEnvelopeMm": [
+        24.2,
+        32.2,
+        8.1
+      ],
+      "stage": "modeled",
+      "entry": "src/units/env/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "reference": "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/rB9kfVz4ed-AYBdmAASrurGe21A902.JPG?v=1766128813",
+      "officialDocs": "https://docs.m5stack.com/en/unit/env",
+      "research": "docs/research/env/modeling.md",
+      "constructionRoute": "own-dimensional-parametric",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/env/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -16.1,
+            1.7
+          ],
+          "physicalContacts": 4,
+          "scope": "Mechanical four-core appearance only"
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "displays": [],
+      "joints": [],
+      "visualAnchors": [],
+      "accessories": {},
+      "defaults": {},
+      "defaultOptions": {},
+      "canonicalCableInput": "grove",
+      "configurationSchema": {
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Remove ink only; retain physical main/QC films, all 40 real vents, sensor packages, PCB and case"
+        }
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整原版 ENV U001",
+          "options": {}
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "source": "docs/research/env/artwork.json"
+      },
+      "nextAction": "Root exact frozen API integration;not GPU or manufacturing acceptance"
+    },
+    {
+      "id": "env-ii",
+      "category": "unit",
+      "name": "Unit ENV-II",
+      "sku": "U001-B",
+      "parts": [
+        "SHT30-DIS-B",
+        "BMP280",
+        "HT7533"
+      ],
+      "scope": "visual-only",
+      "lifecycle": "Official exactoriginal marked EOL;historical useful coverage,no current popularity/sales claim",
+      "stage": "modeled",
+      "nominalMm": [
+        24,
+        32,
+        8
+      ],
+      "vendorDimensionOrderMm": [
+        32,
+        24,
+        8
+      ],
+      "historicalNominalMm": [
+        24.2,
+        32.2,
+        8.1
+      ],
+      "visualEnvelopeMm": [
+        24,
+        32,
+        8
+      ],
+      "sourceRoute": "own-dimensional-parametric",
+      "entry": "src/units/env-ii/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "officialDocs": "https://docs.m5stack.com/en/unit/envII",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/envII/envII_05.webp",
+      "research": "docs/research/env-ii/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/env-ii/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -15.96,
+            1.2
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            "SCL",
+            "SDA",
+            "5V",
+            "GND"
+          ],
+          "scope": "Actual original J1mechanics/literallegend,noelectricalrouting"
+        }
+      ],
+      "controls": [],
+      "joints": [],
+      "visualAnchors": [],
+      "externalLeds": [],
+      "displays": [],
+      "accessories": {},
+      "defaults": {},
+      "defaultOptions": {},
+      "canonicalCableInput": "grove",
+      "configurationSchema": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "原版 ENV-II · SHT30 + BMP280 完整本体",
+          "options": {}
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 1,
+        "physicalFilms": 1,
+        "source": "docs/research/env-ii/artwork.json"
+      },
+      "nextAction": "Root frozenAPI/current-batch integration;modeled,0verified;not GPU/manufacturing acceptance"
+    },
+    {
+      "id": "joystick",
+      "category": "unit",
+      "name": "Unit Joystick (MEGA328P original)",
+      "sku": "U024",
+      "chips": [
+        "MEGA328P"
+      ],
+      "scope": "visual-only",
+      "lifecycle": "Official exactoriginal marked EOL;historical useful coverage,no current popularity/sales claim",
+      "nominalMm": [
+        24,
+        48,
+        32
+      ],
+      "vendorDimensionOrderMm": [
+        48,
+        24,
+        32
+      ],
+      "cadEnvelopeMm": null,
+      "visualEnvelopeMm": [
+        26.6,
+        48,
+        32
+      ],
+      "stage": "modeled",
+      "entry": "src/units/joystick/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/joystick/joystick_05.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/joystick",
+      "research": "docs/research/joystick/modeling.md",
+      "constructionRoute": "own-dimensional-parametric",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/joystick/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -24,
+            1.4
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            "SCL",
+            "SDA",
+            "5V",
+            "GND"
+          ],
+          "scope": "Visual four-contact connector only,no I2C/ADC electrical behavior"
+        }
+      ],
+      "controls": [
+        {
+          "id": "press",
+          "kind": "button",
+          "role": "actual-stick-Z-press",
+          "travelMm": 0.45
+        }
+      ],
+      "manualInputs": [
+        {
+          "id": "stick",
+          "kind": "joystick",
+          "role": "actual-XY-tilt-and-input-intent",
+          "visualRangeDeg": [
+            -16,
+            16
+          ],
+          "pivotMm": [
+            0,
+            8,
+            10.4
+          ]
+        }
+      ],
+      "externalLeds": [],
+      "displays": [],
+      "joints": [],
+      "visualAnchors": [],
+      "accessories": {},
+      "defaults": {
+        "xDeg": 0,
+        "yDeg": 0
+      },
+      "defaultOptions": {
+        "xDeg": 0,
+        "yDeg": 0
+      },
+      "keymap": {
+        "Space": "press"
+      },
+      "canonicalCableInput": "grove",
+      "configurationSchema": {
+        "xDeg": {
+          "type": "number",
+          "min": -16,
+          "max": 16,
+          "default": 0
+        },
+        "yDeg": {
+          "type": "number",
+          "min": -16,
+          "max": 16,
+          "default": 0
+        },
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Inkonly;actualfilm/M5/case/cup/cap/shaftretained"
+        }
+      },
+      "configurations": [
+        {
+          "id": "neutral",
+          "name": "原Joystick回中",
+          "options": {
+            "xDeg": 0,
+            "yDeg": 0
+          }
+        },
+        {
+          "id": "tilted",
+          "name": "原Joystick双轴倾斜",
+          "options": {
+            "xDeg": 10,
+            "yDeg": -8
+          }
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 1,
+        "source": "docs/research/joystick/artwork.json"
+      },
+      "nextAction": "Root exact frozen API integration,including joystick kind and explicit caller host keyboard mapping;not GPU/hardware/manufacturing acceptance"
+    },
+    {
+      "id": "gps",
+      "category": "unit",
+      "name": "Unit GPS (AT6558 + MAX2659)",
+      "sku": "U032",
+      "chips": [
+        "AT6558",
+        "MAX2659"
+      ],
+      "scope": "visual-only",
+      "lifecycle": "EOL original historical coverage;no live popularity/sales claim",
+      "nominalMm": [
+        24,
+        48,
+        8
+      ],
+      "vendorDimensionOrderMm": [
+        48,
+        24,
+        8
+      ],
+      "cadEnvelopeMm": null,
+      "visualEnvelopeMm": [
+        24,
+        48,
+        8
+      ],
+      "stage": "modeled",
+      "entry": "src/units/gps/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/gps/gps_06.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_GPS",
+      "research": "docs/research/gps/modeling.md",
+      "constructionRoute": "own-dimensional-parametric",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/gps/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -24,
+            1.4
+          ],
+          "physicalContacts": 4,
+          "scope": "Mechanical four-core appearance only"
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "displays": [],
+      "joints": [],
+      "visualAnchors": [],
+      "accessories": {},
+      "defaults": {},
+      "defaultOptions": {},
+      "canonicalCableInput": "grove",
+      "configurationSchema": {
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Remove front/rear ink only;retain physical films,complete shell,PCB,receiver/antenna and connector supports"
+        }
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整原版 GPS U032",
+          "options": {}
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "source": "docs/research/gps/artwork.json"
+      },
+      "nextAction": "Root exact frozen API integration;not GPU/manufacturing acceptance"
     }
   ],
   "artworkPolicy": "Only reviewed raster stickers are distributed. CSV, private source mappings, vector originals and vector intermediates remain outside the repository. Photographic sticker crops remain disabled. Official physical adhesive films may span factory recesses; artwork must not substitute for missing assembly geometry."

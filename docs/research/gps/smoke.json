@@ -1,0 +1,241 @@
+{
+  "status": "pass",
+  "scope": "Own original U032 necessary CPU geometry/API/ordinary raster readback and one bounded real Model/transformed StickS3-HUB probe;not browser/GPU/build/hardware/manufacturing acceptance",
+  "modelPhysical": {
+    "constructionRoute": "own-dimensional-parametric",
+    "nativeGeometry": false,
+    "nativeTriangles": null,
+    "nominalMm": [
+      24,
+      48,
+      8
+    ],
+    "actualPhysicalEnvelopeMm": [
+      24,
+      48,
+      8.000000001490116
+    ],
+    "physicalMeshes": 150,
+    "triangles": 42316,
+    "allClosedPositiveDirectedTwoEdges": true,
+    "frontSide": true,
+    "drawingFacts": {
+      "planRadiusMm": 4,
+      "edgeRadiusMm": 1,
+      "bores": 2,
+      "boreDiameterMm": 5,
+      "borePitchMm": 16,
+      "boreCentresAboveBottomMm": 12,
+      "groveMouthMm": [
+        10,
+        5.2
+      ]
+    },
+    "mountWallRays": 8,
+    "rolledEdgeRays": 4,
+    "closureRays": 12,
+    "pcbTubeClearanceMm": [
+      0.34999990463256836,
+      0.34999990463256836
+    ],
+    "pcbCentralBossClearanceMm": 0.5,
+    "passiveTopNotch": {
+      "blindStopY": 22,
+      "frontSideWallRays": 4,
+      "functionUnconfirmed": true
+    },
+    "hiddenAssembly": "PCB,AT6558/MAX2659 package/contact counts and antenna envelope/coordinates are explicit visual estimates,not exact BOM/manufacturing fit",
+    "actualPcbPosts": 4,
+    "grove": {
+      "contacts": 4,
+      "rightAngleReturns": 4,
+      "throughPcbTails": 4,
+      "platedBores": 4,
+      "annularPads": 8,
+      "frontSideWallRays": 4
+    },
+    "physicalFilms": 2,
+    "realUncoloredM5Geometry": true,
+    "controls": 0,
+    "leds": 0,
+    "joints": 0,
+    "sensorReadings": 0
+  },
+  "modelRuntime": {
+    "staticActualCasePcbReceiverAntennaContacts": true,
+    "noPositioningNmeaFixSatellitesUtcUartElectricalFirmware": true,
+    "noAutomaticGlowMotionOrInputEcho": true,
+    "allPhysicalAttributesIndicesWorldRetained": true,
+    "ownControls": 0,
+    "ownLeds": 0,
+    "ownJoints": 0,
+    "noSensorAnchor": true
+  },
+  "modelPeerInvariant": true,
+  "actualAPI": {
+    "exports": [
+      "GroveModule",
+      "Model",
+      "configurationSchema",
+      "configurations",
+      "defaults",
+      "spec"
+    ],
+    "defaultExport": "Model",
+    "bodyComponentOrder": [
+      "grove"
+    ],
+    "bodyComponentKinds": {
+      "grove": "port"
+    },
+    "keymap": {},
+    "defaults": {},
+    "configurationSchema": {
+      "artwork": {
+        "type": "boolean",
+        "default": true,
+        "meaning": "Remove front/rear ink only;retain physical films,complete shell,PCB,receiver/antenna and connector supports"
+      }
+    },
+    "configurations": [
+      {
+        "id": "complete",
+        "name": "完整原版 GPS U032",
+        "options": {}
+      }
+    ],
+    "moduleComponentOrder": [
+      "grove",
+      "unitFrame",
+      "cable"
+    ],
+    "moduleComponentKinds": {
+      "grove": "port",
+      "unitFrame": "unit-frame",
+      "cable": "cable"
+    }
+  },
+  "modelDisposedResources": 282,
+  "modulePhysical": {
+    "constructionRoute": "own-dimensional-parametric",
+    "nativeGeometry": false,
+    "nativeTriangles": null,
+    "nominalMm": [
+      24,
+      48,
+      8
+    ],
+    "actualPhysicalEnvelopeMm": [
+      24.000000000000025,
+      48.00000000000003,
+      8.000000001490122
+    ],
+    "physicalMeshes": 150,
+    "triangles": 42316,
+    "allClosedPositiveDirectedTwoEdges": true,
+    "frontSide": true,
+    "drawingFacts": {
+      "planRadiusMm": 4,
+      "edgeRadiusMm": 1,
+      "bores": 2,
+      "boreDiameterMm": 5,
+      "borePitchMm": 16,
+      "boreCentresAboveBottomMm": 12,
+      "groveMouthMm": [
+        10,
+        5.2
+      ]
+    },
+    "mountWallRays": 8,
+    "rolledEdgeRays": 4,
+    "closureRays": 12,
+    "pcbTubeClearanceMm": [
+      0.3499999046325968,
+      0.34999990463256836
+    ],
+    "pcbCentralBossClearanceMm": 0.5000000000000568,
+    "passiveTopNotch": {
+      "blindStopY": 22,
+      "frontSideWallRays": 4,
+      "functionUnconfirmed": true
+    },
+    "hiddenAssembly": "PCB,AT6558/MAX2659 package/contact counts and antenna envelope/coordinates are explicit visual estimates,not exact BOM/manufacturing fit",
+    "actualPcbPosts": 4,
+    "grove": {
+      "contacts": 4,
+      "rightAngleReturns": 4,
+      "throughPcbTails": 4,
+      "platedBores": 4,
+      "annularPads": 8,
+      "frontSideWallRays": 4
+    },
+    "physicalFilms": 2,
+    "realUncoloredM5Geometry": true,
+    "controls": 0,
+    "leds": 0,
+    "joints": 0,
+    "sensorReadings": 0
+  },
+  "moduleRuntime": {
+    "staticActualCasePcbReceiverAntennaContacts": true,
+    "noPositioningNmeaFixSatellitesUtcUartElectricalFirmware": true,
+    "noAutomaticGlowMotionOrInputEcho": true,
+    "allPhysicalAttributesIndicesWorldRetained": true,
+    "ownControls": 0,
+    "ownLeds": 0,
+    "ownJoints": 0,
+    "noSensorAnchor": true
+  },
+  "modulePeerInvariant": true,
+  "disposedResources": 952,
+  "configurations": [
+    {
+      "entry": "Model",
+      "options": {},
+      "panels": [
+        "reference-redraw",
+        "reference-redraw"
+      ],
+      "physicalMeshes": 150,
+      "gpselopeMm": [
+        24,
+        48,
+        8.000000001490116
+      ]
+    },
+    {
+      "entry": "GroveModule",
+      "options": {},
+      "panels": [
+        "reference-redraw",
+        "reference-redraw"
+      ],
+      "physicalMeshes": 150,
+      "gpselopeMm": [
+        24,
+        48,
+        8.000000001490116
+      ]
+    }
+  ],
+  "allEntriesAndPresetsPhysicalAttributesIndexWorldInvariant": true,
+  "actualFourCoreCables": 2,
+  "realAncestorAndUnitPoses": true,
+  "branch": "grove/grove-3",
+  "rasters": [
+    {
+      "name": "front",
+      "width": 1800,
+      "height": 2800,
+      "sha256": "8c5d9869a22ade9a5092791c11805f2c41839a5f95c84f7ad88526eb9f0e48dd",
+      "decodedNonempty": true
+    },
+    {
+      "name": "back",
+      "width": 1600,
+      "height": 2800,
+      "sha256": "8984d122965bd5a18709f70022e07a07f02bc173cdde73352af74647c32998e6",
+      "decodedNonempty": true
+    }
+  ]
+}

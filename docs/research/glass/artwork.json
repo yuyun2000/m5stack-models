@@ -1,0 +1,66 @@
+{
+  "id": "glass",
+  "sku": "U158",
+  "kind": "reference-redraw",
+  "method": "Readable own official front/rear print independently code-redrawn to ordinary transparent PNG;no photo crop or vector/source in distribution",
+  "referenceSources": [
+    {
+      "id": "glass-2",
+      "role": "own-front-photo",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Glass%20Unit/img-467f2a5f-e95c-4e39-b99a-baf0f1505c72.webp",
+      "sha256": "2767482ed63f5b2281ba97fe422de978135270c8712f2d14f624161d7950f02b"
+    },
+    {
+      "id": "glass-3",
+      "role": "own-rear-photo",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Glass%20Unit/img-fc5ff9fe-829a-4cda-9548-360f2425125b.webp",
+      "sha256": "52c2e0c58ff0727825619ca68361fedda1f114bc08074c6e9c34c1931597510c"
+    }
+  ],
+  "assets": [
+    {
+      "file": "src/units/glass/artwork/front.png",
+      "sizePixels": [
+        2100,
+        2650
+      ],
+      "pxPerMm": 50,
+      "sha256": "2a311fdc1f5dda36f64012c0b90ff60725c456391897044b792990ffc13c1065",
+      "carrier": "Actual front carrier PCB;projected only on existing front-directed triangles",
+      "marks": [
+        "GLASS",
+        "M5STACK",
+        "four L registration corners",
+        "side wedges",
+        "two round dots",
+        "lower white registration strips"
+      ]
+    },
+    {
+      "file": "src/units/glass/artwork/back.png",
+      "sizePixels": [
+        2100,
+        1050
+      ],
+      "pxPerMm": 50,
+      "sha256": "0e86b235536ea1670edd6eae8532832983f8ddec48b0a2fefb43414bc239d75b",
+      "carrier": "Actual fixed rear plate;projected only on existing back-directed triangles",
+      "marks": [
+        "M5STACK",
+        "A",
+        "B",
+        "G V D C",
+        "side bracket marks",
+        "Grove corner brackets"
+      ]
+    }
+  ],
+  "unresolved": "Font outlines,registration,color and undimensioned ink thickness inferred from readable own photos;not production artwork;unreadable batch/microtext omitted",
+  "originals": "No exact own source approved;no sibling artwork used",
+  "physicalFilm": false,
+  "noPermanentScreenImage": true,
+  "rights": "Ordinary raster allowed by user;product print and trademarks retain respective rights",
+  "rawSourcesDistributed": false,
+  "generatorsDistributed": false,
+  "privateDataDistributed": false
+}

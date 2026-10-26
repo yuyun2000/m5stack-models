@@ -1,0 +1,86 @@
+{
+  "id": "joystick",
+  "sku": "U024",
+  "kind": "reference-redraw",
+  "pngCount": 1,
+  "privateSourcesDistributed": false,
+  "photoCropPixels": 0,
+  "vectorSourcesDistributed": false,
+  "generatorsDistributed": false,
+  "rawOfficialSourcesDistributed": false,
+  "assets": [
+    {
+      "path": "src/units/joystick/reference-redraw-back.png",
+      "sha256": "700b2df3aaf2fef33283606124845354990b7619f498cc90ecc0830cac1951a7",
+      "size": [
+        1600,
+        2800
+      ],
+      "mode": "RGBA",
+      "kind": "reference-redraw",
+      "sourceKind": "reference-redraw",
+      "source": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/joystick/joystick_02.webp",
+        "sha256": "14032d7df87410c8ce9348577c0a6d0bb12687eaf3eeeed47b64a82ee234c2bf",
+        "bytes": 47108,
+        "role": "own-readable-rear-film-and-retainer",
+        "useBoundary": "JOYSTICK,A1/A0 arrows,ButtonPressA2,M328/8MHz,LED D2,I2C ADDR0x52,PORT.A.I2C and4pin labels as documentary ink"
+      },
+      "physicalTarget": "joystickAssembly.film",
+      "sizeMm": [
+        16,
+        28
+      ],
+      "printedContent": [
+        "JOYSTICK",
+        "A1/A0 axis arrows",
+        "Button Press A2",
+        "M328",
+        "8MHz",
+        "LED D2 documentary legend",
+        "I2C",
+        "ADDR=0x52",
+        "PORT. A . I2C",
+        "SCL SDA 5V GND"
+      ],
+      "decodedVisualInspection": "2026-10-27:full PNG decoded and viewed,legible labels and no clipping",
+      "limitations": "Reconstructed font/color/spacing;no individual codes or unknown microtext",
+      "permission": "User-approved accurate redraw as ordinary PNG;marks retain respective rights"
+    }
+  ],
+  "physicalInkOff": {
+    "actualFilmRetained": true,
+    "actualM5Retained": true,
+    "bothEntriesEachActualPreset": true,
+    "partialXYandZAndCancelledReturn": true,
+    "allPhysicalAttributesIndexWorldInvariant": true
+  },
+  "configurationCases": [
+    {
+      "options": {
+        "xDeg": 0,
+        "yDeg": 0
+      },
+      "kinds": [
+        "reference-redraw"
+      ],
+      "artworkKinds": [
+        "reference-redraw"
+      ],
+      "pngCount": 1
+    },
+    {
+      "options": {
+        "xDeg": 10,
+        "yDeg": -8
+      },
+      "kinds": [
+        "reference-redraw"
+      ],
+      "artworkKinds": [
+        "reference-redraw"
+      ],
+      "pngCount": 1
+    }
+  ]
+}

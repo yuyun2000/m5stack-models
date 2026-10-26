@@ -1,0 +1,279 @@
+{
+  "id": "rfid",
+  "sku": "U031",
+  "name": "Unit RFID (MFRC522 original)",
+  "part": "MFRC522",
+  "retrievedAt": "2026-10-27",
+  "lifecycle": "Official original U031 marked EOL; historical coverage, no current popularity claim.",
+  "officialDocs": "https://docs.m5stack.com/en/unit/rfid",
+  "constructionRoute": "own-dimensional-parametric",
+  "nativeGeometryAvailable": false,
+  "nativeFaceCount": 0,
+  "nativeSearch": {
+    "cachedHardwareCommit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "exactSkuStructures": [],
+    "noSiblingGeometryBorrowed": true
+  },
+  "immutableDocumentationSource": {
+    "id": "rfid",
+    "url": "https://raw.githubusercontent.com/m5stack/m5-docs/e5354c5dcc61d16fdc1dff9d92c2c760728d0b60/docs/en/unit/rfid.md",
+    "commit": "e5354c5dcc61d16fdc1dff9d92c2c760728d0b60",
+    "path": "docs/en/unit/rfid.md",
+    "gitBlob": "b7b6192131b062e3e9beb998ac9ccc23ab9d6d3c",
+    "sha256": "408ed0a6a10e442938f5d4644057fc878247d44bf07bab4841e60482889db7f9",
+    "bytes": 4553,
+    "verified": true,
+    "repository": "m5stack/m5-docs",
+    "gitBlobVerifiedAgainstBytes": true,
+    "notRuntimeSource": true
+  },
+  "officialMCP": {
+    "status": "success",
+    "rawResponseSha256": "da3ecbf15d18a8cf789c179430d88fa00606a8dc6ef41c27f09dd00b580b8fbc",
+    "decodedInfoSha256": "8da4d68979f02812a19504e3d10a51c7dc208e83a22186b09d14c4cd240da3b2",
+    "evidenceRole": "Narrow second search confirms original U031/MFRC522/EOL, distinct from RFID2 U031-B/WS1850S.",
+    "rawDistributed": false
+  },
+  "authorMCP": {
+    "broadQuerySha256": "b731723da41e89d90a0f4970621b1194737b42b1ba6aff50793e5b6efb93556f",
+    "exactQuery": "Unit RFID SKU U031 MFRC522 EOL",
+    "exactResponseSha256": "dc9bad34ae16db8714d5dcabc5a082e16f06426aeca77a40cc3ffa27461385c2",
+    "evidenceBoundary": "Use only original SKU U031 product/schematic segments;RFID2 U031-B/WS1850S mixed results excluded",
+    "rawDistributed": false
+  },
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rfid/rfid_01.webp",
+      "sha256": "dcb10e1eae4f3f45e283cf9d1ae9b6e698b11d27c4d8181558eee09e2e8725c9",
+      "bytes": 96314,
+      "role": "own-isolated-body-and-promotional-caption",
+      "useBoundary": "Own body only; promotional explanatory text is not a physical decal."
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rfid/rfid_02.webp",
+      "sha256": "bf019629ac9fb8fe6365326a12dfa65120c9620fc1d02d7adf05a316cda7557d",
+      "bytes": 48980,
+      "role": "own-readable-rear-artwork-and-retainer",
+      "useBoundary": "RFID/RC522/PORT. A . I2C/SCL SDA 5V GND; unpainted M5 relief and central retainer."
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rfid/rfid_03.webp",
+      "sha256": "5df2069c47d815e1c644268ab9623cdbe7487ee03b585ceacee4cfac1f056847",
+      "bytes": 39252,
+      "role": "excluded-packaging",
+      "useBoundary": "Packaging label is not body artwork."
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rfid/rfid_04.webp",
+      "sha256": "e425c7ff44b45ab16af811a647a97755c4d26c4ed972c3a883bac167ce99dc9f",
+      "bytes": 49334,
+      "role": "own-body-in-package-context",
+      "useBoundary": "Body shape only; package and cable are not included geometry."
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rfid/rfid_05.webp",
+      "sha256": "682a7a601631f17bf193ec3010bf27e8b54c9fb50171911a4ae889e8ff3dcb6c",
+      "bytes": 33848,
+      "role": "own-front-isometric-and-openings",
+      "useBoundary": "Red Grove, true mounting bores and small top side slot; slot function unconfirmed."
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rfid/rfid_06.webp",
+      "sha256": "c6c4d8c5e565bf1f672dc5816a20b36e27b128918dda41247115902323d96fbc",
+      "bytes": 55806,
+      "role": "own-clear-front-artwork",
+      "useBoundary": "Silver physical front film, red concentric RF mark and RFID text; coin is context."
+    }
+  ],
+  "dimensionBasis": {
+    "ownOfficialTableMm": [
+      48,
+      24,
+      8
+    ],
+    "basis": "Original immutable U031 table and exact official MCP; width/length model axis ordering is explicit. Own 01/02/05/06 show actual front/rear/cavity/bores. No own native CAD found.",
+    "differentFrom": "U031-B RFID2 WS1850S; do not borrow its shell, native faces, photos or labels."
+  },
+  "nominalMm": [
+    24,
+    48,
+    8
+  ],
+  "vendorTableOrderMm": [
+    48,
+    24,
+    8
+  ],
+  "actualPhysicalEnvelopeMm": [
+    24,
+    48.00000001192093,
+    8.000000002980233
+  ],
+  "inferred": [
+    "Nominal model axes24x48x8mm retain own vendor order48x24x8;there is no own nativeCAD/source-face retention or manufacturing fit claim.",
+    "Closed shell planes,corner/skin/wall splits,two4.8mm mounting bores/16mm pitch,central screw/supports and unpainted M5 relief are estimated from own01/02/05/06,not borrowed U031-B structure.",
+    "Front0.1mm silver film and rear0.08mm grey film sit on real white skins;film registration/fonts and print dimensions are reconstructed. Front film and rear relief define actual8mm full physical depth.",
+    "No own PCB image/CAD/full BOM establishes hidden placement. One reconstructed0.8mm PCB with scalloped boss reliefs,Grove notch,posts and real retained contact drills supports own MFRC522/HT7533 physical envelopes;MFRC522 QFN32 appearance/position and3RF loops are inferred,not a proven original antenna/board implementation.",
+    "Exact original MCP schematic segment confirms M1RC522 module,HT7533,tworesistors/threecapacitors,J1fourcontacts. Only that original segment is used;RFID2/WS1850S results are excluded. Hidden package sizes/locations/termination and 3D antennas are reconstructed.",
+    "Own05 small top-end side slot has true wall/depth/fixed backed carrier. Its function is unconfirmed and creates no LED/button/anchor.",
+    "Original static reader model exposes only one actual Grove port;no sensing result,UID,NFC read/write animation,protocol,address,firmware,light,control or joint."
+  ],
+  "privateAggregate": {
+    "id": "rfid",
+    "sku": "U031",
+    "exactSkuRows": 0,
+    "strictNameOnlyRows": 0,
+    "originalDownloads": 0,
+    "requiresExactVariantReview": false
+  },
+  "licenseBoundary": {
+    "newAuthoredCode": "MIT per user decision",
+    "nativeImported": false,
+    "officialDocsPhotosDrawings": "Reference only; do not blanket license as MIT or distribute raw sources.",
+    "ordinaryRasters": "User-authorized accurate own-product code-redrawn PNG; product marks retain respective rights.",
+    "privateOriginals": "CSV, URLs/rows/mappings and vector originals remain private; none exported."
+  },
+  "rawReferencesDistributed": false,
+  "generatorsDistributed": false,
+  "runtimeFiles": [
+    {
+      "path": "src/units/rfid/artwork/front.png",
+      "sha256": "f27e41868ddce0036feccd50b15d9a29af1d0e44c91df0080795ac07661cda6c"
+    },
+    {
+      "path": "src/units/rfid/artwork/rear.png",
+      "sha256": "dc5e2b611a4941c29c7f6367bf597f23df4855b1b8b704122e05b37e53342647"
+    },
+    {
+      "path": "src/units/rfid/assembly.js",
+      "sha256": "2ef179455ac990d0caf7e2da11fb4d572fefb7db6243ff9d7ba11b1327da0ea8"
+    },
+    {
+      "path": "src/units/rfid/connectors.js",
+      "sha256": "4f51f01f3a90ee1e7bff2bea75e1f3cd3f0b3463f6ef0c447e689af28aeef1e2"
+    },
+    {
+      "path": "src/units/rfid/dimensions.js",
+      "sha256": "0e2f8085cf97372a54a234efac71c9ca5e0bc8ae59a2be5a8ae140700f454066"
+    },
+    {
+      "path": "src/units/rfid/electronics.js",
+      "sha256": "99cc87a34f673d01ee6a4e8cb6e365d402af1489e0df44ee7aef00c0afc08c2f"
+    },
+    {
+      "path": "src/units/rfid/geometry.js",
+      "sha256": "7b696b50b72f96b8269751f6dda0411129949f5a60b5c21975a599a77e46d79f"
+    },
+    {
+      "path": "src/units/rfid/index.js",
+      "sha256": "5a775f03cf7744b24e3f8713bc7b509c462e55997028061a7bc65326e38ef383"
+    },
+    {
+      "path": "src/units/rfid/shell.js",
+      "sha256": "dc46f5641a4fc51996a240f08f184822e8dea7a4f1556fe0e22758df20aa39d4"
+    }
+  ],
+  "publicAPI": {
+    "exports": [
+      "Model",
+      "GroveModule",
+      "spec",
+      "defaults",
+      "configurations",
+      "configurationSchema"
+    ],
+    "assemblyProperty": "rfidAssembly",
+    "bodyComponentOrder": [
+      "grove"
+    ],
+    "moduleComponentOrder": [
+      "grove",
+      "unitFrame",
+      "cable"
+    ],
+    "moduleAdditionalComponents": [
+      "unitFrame",
+      "cable"
+    ],
+    "canonicalCableInput": "grove",
+    "ports": [
+      "grove"
+    ],
+    "controls": [],
+    "leds": [],
+    "displays": [],
+    "speakers": [],
+    "sensors": [],
+    "joints": [],
+    "anchors": [],
+    "passiveAnchors": [],
+    "keymap": {},
+    "accessories": {},
+    "accessoryExports": [],
+    "defaults": {},
+    "options": {
+      "artwork": "boolean;front/rear ink only,physical films retained"
+    },
+    "configurationSchema": {},
+    "configurations": [
+      {
+        "id": "complete",
+        "name": "原版 RFID · MFRC522 完整本体",
+        "options": {}
+      }
+    ],
+    "configurationCases": [
+      {
+        "id": "complete",
+        "options": {},
+        "panelCount": 2,
+        "pngCount": 2,
+        "panels": [
+          "front",
+          "rear"
+        ],
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "artworkKinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ]
+      }
+    ],
+    "artworkPngCount": 2,
+    "artworkSourceKind": "reference-redraw",
+    "physicalAdhesiveFilms": 2,
+    "allArtworkPhysicalAttributesIndexWorldInvariant": true,
+    "noServiceCovers": true,
+    "onlyRemovablePhysicalFields": [],
+    "portPins": {
+      "grove": [
+        "SCL",
+        "SDA",
+        "5V",
+        "GND"
+      ]
+    },
+    "commands": {
+      "unitFrame": {
+        "type": "pose",
+        "fields": [
+          "position",
+          "rotation",
+          "quaternion",
+          "distance"
+        ]
+      },
+      "cable": {
+        "type": "cable",
+        "fields": [
+          "slack",
+          "bend"
+        ]
+      }
+    },
+    "behaviorBoundary": "Static original U031 appearance and mechanical connector/cable/pose only;no card UID,NFC,RF animation,read/write,address,I2C,firmware,LED,button,joint or sensor anchor"
+  }
+}

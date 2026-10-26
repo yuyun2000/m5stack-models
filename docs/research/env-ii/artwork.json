@@ -1,0 +1,75 @@
+{
+  "id": "env-ii",
+  "sku": "U001-B",
+  "kind": "reference-redraw",
+  "pngCount": 1,
+  "assets": [
+    {
+      "id": "rear",
+      "path": "src/units/env-ii/artwork/rear.png",
+      "kind": "reference-redraw",
+      "pixels": [
+        1620,
+        1220
+      ],
+      "sha256": "92c5c39ed3aac3c7f3c2c718d12820ed33e8e408d05f88a9d39166ff2597aac5",
+      "source": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/envII/envII_02.webp",
+        "sha256": "b485753fef30ab06fbbf39c589f5760a80f1067712fb2b1a897be44680bf0cd8"
+      },
+      "actualText": [
+        "ENV. II",
+        "SENSOR",
+        "SHT30 | BMP280",
+        "°C",
+        "%",
+        "pa",
+        "PORT. A . I2C",
+        "SCL",
+        "SDA",
+        "5V",
+        "GND"
+      ],
+      "method": "Independent literal text/color block code redraw;transparent ink on actual rear physical film;no source photograph pixels",
+      "omitted": [
+        "QC film not evidenced",
+        "unknown microtext",
+        "individual codes",
+        "promotional/packaging wording",
+        "other ENV generation labels"
+      ]
+    }
+  ],
+  "configurationCases": [
+    {
+      "id": "complete",
+      "options": {},
+      "panelCount": 1,
+      "pngCount": 1,
+      "panels": [
+        "rear"
+      ],
+      "kinds": [
+        "reference-redraw"
+      ],
+      "artworkKinds": [
+        "reference-redraw"
+      ]
+    }
+  ],
+  "physicalFilms": 1,
+  "noQCFilm": true,
+  "artworkFalse": "Only ink absent;real rearfilm/M5,all shell/vent/sensor/PCB/contact attributes,indices andworld matrices identical inModel andGroveModule",
+  "privateAggregate": {
+    "id": "env-ii",
+    "sku": "U001-B",
+    "exactSkuRows": 0,
+    "strictNameOnlyRows": 0,
+    "originalDownloads": 0
+  },
+  "photographPixelsUsed": false,
+  "sourcePhotosDistributed": false,
+  "vectorOriginalsDistributed": false,
+  "generatorsDistributed": false,
+  "rights": "User-authorized accurate matching ordinary code-redrawn PNG with source attribution;official sources/productmarks retain respective rights"
+}

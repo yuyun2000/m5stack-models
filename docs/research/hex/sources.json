@@ -1,0 +1,475 @@
+{
+  "id": "hex",
+  "sku": "A045",
+  "name": "Unit HEX",
+  "part": "SK6812",
+  "retrievedAt": "2026-10-27",
+  "lifecycle": "Original exactSKU historical coverage;no claim of current popularity oravailability",
+  "officialDocs": "https://docs.m5stack.com/en/unit/hex",
+  "constructionRoute": "own-dimensional-parametric",
+  "nativeGeometryAvailable": false,
+  "nativeFaceCount": 0,
+  "nativeSearch": {
+    "cachedHardwareCommit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "exactSkuStructures": [],
+    "noSiblingGeometryBorrowed": true
+  },
+  "immutableDocumentationSource": {
+    "repository": "m5stack/m5-docs",
+    "commit": "e5354c5dcc61d16fdc1dff9d92c2c760728d0b60",
+    "path": "docs/en/unit/hex.md",
+    "url": "https://raw.githubusercontent.com/m5stack/m5-docs/e5354c5dcc61d16fdc1dff9d92c2c760728d0b60/docs/en/unit/hex.md",
+    "gitBlob": "a1dee41c2fcdcfab937537d44fb234102dd3e1ac",
+    "sha256": "81f25b57e0ac0e57e6b7b83c884416f1ee75e422ed261d332becb719b439b41a",
+    "bytes": 5065,
+    "gitBlobVerifiedAgainstBytes": true,
+    "notRuntimeSource": true
+  },
+  "officialMCP": {
+    "query": "Unit HEX A045 original RGB LED dimensions",
+    "status": "success",
+    "rawResponseSha256": "a3fb6914f0d003168cf8a390c95c3ad010f16194be4b4bcb2c606c3291d0d399",
+    "decodedInfoSha256": "b67901b26ec54f32ef71431b0320110cafa31383ce49dc3bbdb7762a3fc22cb8",
+    "exactOwnSkuOnly": true,
+    "rawDistributed": false
+  },
+  "authorMCP": {
+    "sha256": "6fa4337ce4afe8d9a12eb00bd4f1dd0f56c862e065d4b3d9d0cac279f7f4d8b5",
+    "rawDistributed": false
+  },
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/hex/hex_01.webp",
+      "sha256": "6315f24b002a3acb929c888019138da3910d3dec41c1f479b52ebe66d05b67fb",
+      "bytes": 82594,
+      "role": "own-isolated-front-rear-promotional-reference"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/hex/hex_02.webp",
+      "sha256": "d15f217b35305bf7bbf733e2492cad0417b89dfa6cf62feaa5eddf0872c5dd5d",
+      "bytes": 45196,
+      "role": "own-37large-SK6812-emitter-front"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/764/A045-PCB_main-pictures_01.jpg",
+      "sha256": "03fba35e242ac5b115b890a7d937bdf7a76bb9a3ed5b6ea675233459ed8f5c77",
+      "bytes": 126655,
+      "role": "own-rear3socket-PCB;individualQR-ID-excluded"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/hex/hex_05.webp",
+      "sha256": "d8bfd5e32a82328664957e0b80e0e4c6ed55bd3cd780a150f354c28904d4f339",
+      "bytes": 69964,
+      "role": "own37LED-index-layout"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/hex/hex_04.webp",
+      "sha256": "3a1f41bc6f54d3b8ac3a69f13186cc324fb246f26a9d1c26171c00fd2fbb12dc",
+      "bytes": 20228,
+      "role": "own-pin-layout-topology-not-real-wire-colours"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/764/A045_Model_Size_sch_01.png",
+      "sha256": "fff1ae11ad4db3f58f476b8286313e9000946dd5ff8dc7bc9007cb453e9f339b",
+      "bytes": 509214,
+      "role": "own-dimensioned-multiview"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/hex/hex_06.webp",
+      "sha256": "344582c696f571ea1cf31552d44144a2b2ed6bd54282c37b773e552207f914ed",
+      "bytes": 10444,
+      "role": "own-external-light-drive-example-not-runtime-firmware"
+    }
+  ],
+  "dimensionBasis": {
+    "vendorTableOrderMm": [
+      31.2,
+      36,
+      7
+    ],
+    "ownDrawingModelAxesMm": [
+      36,
+      31.2,
+      6.95
+    ],
+    "PCBThicknessMm": 1,
+    "LEDHorizontalPitchMm": 5,
+    "LEDVerticalPitchMm": 4.33,
+    "socketVisibleBodyWidthMm": 12,
+    "basis": "ExactA045dimensionedmultiview gives36point-to-point X,31.2flat-to-flat Y,6.95totaldepth,1PCB and5/4.33LEDspacing;currenttable7mm rounds6.95. Sourceaxis/order retained;not silentlymade36×31.2×7 verifiedmesh.",
+    "notNeoHEX": "A045-B37×WS2812C2020isalreadycovered;A045usesownlargeSK6812 packages anddifferentPCB/socketshape."
+  },
+  "nominalMm": [
+    36,
+    31.2,
+    7
+  ],
+  "vendorTableOrderMm": [
+    31.2,
+    36,
+    7
+  ],
+  "actualPhysicalEnvelopeMm": [
+    36,
+    31.200000762939453,
+    6.9499999964237205
+  ],
+  "inferred": [
+    "Own exact A04536x31.2x6.95 drawing,1mm PCB,5/4.33mm LED spacing and12mm receiving carrier width are dimensioned;table31.2x36x7 preserves vendor order and rounding.",
+    "No nativeCAD/source-face retention;not A045-B NeoHEX/2020 packages/mounting ears or diffuser.",
+    "SK6812 larger3.5mm package envelope,0.7mm front projection,resin/die/metal details,rear socket5.25mm allocation/internal bends and all concealed fits are own-photo/multiview appearance estimates.",
+    "Eighteen round edge-bore size/location,12retained contact drills/lands,17rear passive envelopes and placement,blank code-film thickness/registration are reconstructed;no complete BOM or manufacturing fit claim.",
+    "Own05 gives37row-major1..37 layout4/5/6/7/6/5/4;index-overlay numbers are not body print.",
+    "Own rear photograph/01/dimension drawing/04 show three actual4contact carriers;schematic-derived MCP text incorrectly calledPWR3pin. Feedback accepted a1f0dbba68584d2e9f5aab0d79e1140d;unknown PWR pins stay unlabelled.",
+    "Only37independently externally driven RGB/brightness materials;no control,joint,sensor,display framebuffer,power,protocol,cascade or automatic firmware."
+  ],
+  "feedback": {
+    "id": "a1f0dbba68584d2e9f5aab0d79e1140d",
+    "accepted": true,
+    "issue": "Derived MCP says3PWR contacts;own direct image evidence shows4. Unlabelled functions unknown.",
+    "receiptSha256": "bcb12bcc3086f1b7c9e3c7d0b56a1501bc6e41825324d23eba3337cb373a854d"
+  },
+  "privateAggregate": {
+    "sku": "A045",
+    "exactSkuRows": 0,
+    "strictNameOnlyRows": 0,
+    "originalDownloads": 0,
+    "requiresExactVariantReview": false
+  },
+  "licenseBoundary": {
+    "newAuthoredCode": "MIT per user decision",
+    "nativeImported": false,
+    "officialDocsPhotosDrawings": "Reference only;do not blanket license asMIT ordistribute rawsources",
+    "ordinaryRasters": "Authorized exact-model code-redrawn PNG only;product marks retain respective rights"
+  },
+  "rawReferencesDistributed": false,
+  "generatorsDistributed": false,
+  "runtimeFiles": [
+    {
+      "path": "src/units/hex/artwork/rear.png",
+      "sha256": "341abe326e6e7281c2b4d5708b94fa17ed367507c94faad1d4d35fc84696c938"
+    },
+    {
+      "path": "src/units/hex/assembly.js",
+      "sha256": "23bf9386e81e8574ee92358b9286b6038c6b4f51be2d526239805fa39e5615bb"
+    },
+    {
+      "path": "src/units/hex/connectors.js",
+      "sha256": "b09bb87d0d922ff5022cab79ec3020c3806d3e5149d8ec8dce9ad1415f90e0e8"
+    },
+    {
+      "path": "src/units/hex/dimensions.js",
+      "sha256": "eb7ae0e2eb5a4ce3d426ac7a930b47d962194e6546980180aa12326f7576d965"
+    },
+    {
+      "path": "src/units/hex/geometry.js",
+      "sha256": "79d6b1a820b4c691122611d3144a04c6312c4d8efb30473038e2ae28163404a3"
+    },
+    {
+      "path": "src/units/hex/index.js",
+      "sha256": "5122ced475f985b7e2bfd2cce960169fb85deef6037c5e415f7d5e8da34d3099"
+    },
+    {
+      "path": "src/units/hex/leds.js",
+      "sha256": "50298134e719a5bddd9234074d9ced61d65be287ec18ea992fceeca2551c4e3b"
+    }
+  ],
+  "publicAPI": {
+    "exports": [
+      "Model",
+      "GroveModule",
+      "spec",
+      "defaults",
+      "configurations",
+      "configurationSchema"
+    ],
+    "assemblyProperty": "hexAssembly",
+    "bodyComponentOrder": [
+      "grove",
+      "out",
+      "power",
+      "led-1",
+      "led-2",
+      "led-3",
+      "led-4",
+      "led-5",
+      "led-6",
+      "led-7",
+      "led-8",
+      "led-9",
+      "led-10",
+      "led-11",
+      "led-12",
+      "led-13",
+      "led-14",
+      "led-15",
+      "led-16",
+      "led-17",
+      "led-18",
+      "led-19",
+      "led-20",
+      "led-21",
+      "led-22",
+      "led-23",
+      "led-24",
+      "led-25",
+      "led-26",
+      "led-27",
+      "led-28",
+      "led-29",
+      "led-30",
+      "led-31",
+      "led-32",
+      "led-33",
+      "led-34",
+      "led-35",
+      "led-36",
+      "led-37"
+    ],
+    "moduleComponentOrder": [
+      "grove",
+      "out",
+      "power",
+      "led-1",
+      "led-2",
+      "led-3",
+      "led-4",
+      "led-5",
+      "led-6",
+      "led-7",
+      "led-8",
+      "led-9",
+      "led-10",
+      "led-11",
+      "led-12",
+      "led-13",
+      "led-14",
+      "led-15",
+      "led-16",
+      "led-17",
+      "led-18",
+      "led-19",
+      "led-20",
+      "led-21",
+      "led-22",
+      "led-23",
+      "led-24",
+      "led-25",
+      "led-26",
+      "led-27",
+      "led-28",
+      "led-29",
+      "led-30",
+      "led-31",
+      "led-32",
+      "led-33",
+      "led-34",
+      "led-35",
+      "led-36",
+      "led-37",
+      "unitFrame",
+      "cable"
+    ],
+    "moduleAdditionalComponents": [
+      "unitFrame",
+      "cable"
+    ],
+    "canonicalCableInput": "grove",
+    "ports": [
+      "grove",
+      "out",
+      "power"
+    ],
+    "controls": [],
+    "leds": [
+      "led-1",
+      "led-2",
+      "led-3",
+      "led-4",
+      "led-5",
+      "led-6",
+      "led-7",
+      "led-8",
+      "led-9",
+      "led-10",
+      "led-11",
+      "led-12",
+      "led-13",
+      "led-14",
+      "led-15",
+      "led-16",
+      "led-17",
+      "led-18",
+      "led-19",
+      "led-20",
+      "led-21",
+      "led-22",
+      "led-23",
+      "led-24",
+      "led-25",
+      "led-26",
+      "led-27",
+      "led-28",
+      "led-29",
+      "led-30",
+      "led-31",
+      "led-32",
+      "led-33",
+      "led-34",
+      "led-35",
+      "led-36",
+      "led-37"
+    ],
+    "displays": [],
+    "speakers": [],
+    "sensors": [],
+    "joints": [],
+    "anchors": [],
+    "passiveAnchors": [],
+    "keymap": {},
+    "accessories": {},
+    "accessoryExports": [],
+    "defaults": {},
+    "options": {
+      "artwork": "boolean;PCB ink only,blank individual-code film retained"
+    },
+    "configurationSchema": {},
+    "configurations": [
+      {
+        "id": "complete",
+        "name": "原版 HEX · 37灯完整灯板",
+        "options": {}
+      }
+    ],
+    "configurationCases": [
+      {
+        "id": "complete",
+        "options": {},
+        "panelCount": 1,
+        "pngCount": 1,
+        "panels": [
+          "rear"
+        ],
+        "kinds": [
+          "reference-redraw"
+        ],
+        "artworkKinds": [
+          "reference-redraw"
+        ]
+      }
+    ],
+    "artworkPngCount": 1,
+    "artworkSourceKind": "reference-redraw",
+    "physicalAdhesiveFilms": 1,
+    "physicalSilkscreenFilms": 0,
+    "allArtworkPhysicalAttributesIndexWorldInvariant": true,
+    "ledState": {
+      "fields": [
+        "color",
+        "brightness"
+      ],
+      "default": {
+        "color": "#ffffff",
+        "brightness": 0
+      },
+      "commands": {
+        "type": "led",
+        "fields": [
+          "on",
+          "color",
+          "brightness"
+        ]
+      },
+      "scope": "Independent actual window materials;no automatic RGB/cascade/protocol/power/framebuffer/firmware"
+    },
+    "portPins": {
+      "grove": [
+        "GND",
+        "VCC",
+        "DATA",
+        "unlabelled"
+      ],
+      "out": [
+        "GND",
+        "VCC",
+        "DATA",
+        "unlabelled"
+      ],
+      "power": [
+        "GND",
+        "VCC",
+        "unlabelled",
+        "unlabelled"
+      ]
+    },
+    "contactNumbering": "Mechanical local left-to-right;not electrical cable routing. Original PWR only GND/VCC are documented.",
+    "noServiceCovers": true,
+    "onlyRemovablePhysicalFields": [],
+    "commands": {
+      "leds": {
+        "type": "led",
+        "targets": [
+          "led-1",
+          "led-2",
+          "led-3",
+          "led-4",
+          "led-5",
+          "led-6",
+          "led-7",
+          "led-8",
+          "led-9",
+          "led-10",
+          "led-11",
+          "led-12",
+          "led-13",
+          "led-14",
+          "led-15",
+          "led-16",
+          "led-17",
+          "led-18",
+          "led-19",
+          "led-20",
+          "led-21",
+          "led-22",
+          "led-23",
+          "led-24",
+          "led-25",
+          "led-26",
+          "led-27",
+          "led-28",
+          "led-29",
+          "led-30",
+          "led-31",
+          "led-32",
+          "led-33",
+          "led-34",
+          "led-35",
+          "led-36",
+          "led-37"
+        ],
+        "fields": [
+          "on",
+          "color",
+          "brightness"
+        ],
+        "noEcho": true
+      },
+      "unitFrame": {
+        "type": "pose",
+        "fields": [
+          "position",
+          "rotation",
+          "quaternion",
+          "distance"
+        ]
+      },
+      "cable": {
+        "type": "cable",
+        "fields": [
+          "slack",
+          "bend"
+        ]
+      }
+    }
+  }
+}

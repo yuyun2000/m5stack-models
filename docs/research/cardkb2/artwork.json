@@ -1,0 +1,102 @@
+{
+  "id": "cardkb2",
+  "sku": "U215",
+  "kind": "mixed",
+  "kinds": [
+    "reference-redraw",
+    "source-vector-raster"
+  ],
+  "pngCount": 2,
+  "physicalFilms": 1,
+  "movingCapArtworkPanels": 0,
+  "fixedPcbArtworkPanels": 1,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Oneexact-own rearoriginalvector locallyconverted toordinary highresolutionPNG;onefixedfrontPCB CODEredraw fromreadableownofficialfrontphoto. No photographycrops,no oldCardKBink,nosingleflatimage hidingkeys.",
+  "intakeAggregate": {
+    "exactSkuCandidates": 3,
+    "selectedVectorDesigns": 1,
+    "companionRasterCandidates": 2,
+    "rejectedPackaging": 0
+  },
+  "sources": [
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1225/U215_main-pictures_05.webp",
+      "sha256": "b3b57e90346952727263c80f3c886cc1613279760670ae048c7142a06821dd07"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1225/U215_main-pictures_06.webp",
+      "sha256": "914c1a5f1846f4437407a82c2eac9e1d8085bc976fdd2b05d52dfcaf979997c2"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1225/U215_main-pictures_07.webp",
+      "sha256": "5382f1cf89f2fa0019b44e32a66486849df00bb3cb81d9e4f0546fa9abe05afe"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/cardkb2/artwork/front.png",
+      "face": "front",
+      "kind": "reference-redraw",
+      "sha256": "2ccacfd4c5765a8c2e43f850ce3d9e7b404c4e9d909cc4f9510d7359e4ecd5fc",
+      "pixels": [
+        5040,
+        3240
+      ],
+      "sizeMm": [
+        84,
+        54
+      ],
+      "positionMm": [
+        0,
+        0,
+        0.5
+      ],
+      "method": "printedArtwork",
+      "target": "FixedownPCB surface",
+      "metadata": "NoEXIF/ICC/text/private metadata;safe numericDPI onlyifpresent",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "pHYs"
+      ]
+    },
+    {
+      "path": "src/units/cardkb2/artwork/back.png",
+      "face": "back",
+      "kind": "source-vector-raster",
+      "sha256": "f34c35567a9dcae5fcae361a0c687628992657c851871bd40f63e5d40558064c",
+      "pixels": [
+        2400,
+        1523
+      ],
+      "sizeMm": [
+        82,
+        52
+      ],
+      "positionMm": [
+        0,
+        0,
+        -0.54
+      ],
+      "method": "printedArtwork",
+      "target": "Independentactualbackfilm withtrue mount/slot/USBreliefdiecuts",
+      "metadata": "NoEXIF/ICC/text/private metadata;safe numericDPI onlyifpresent",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "pHYs"
+      ]
+    }
+  ],
+  "physicalCarrierEvidence": "Ownfront/sidephotos showunmarkedred mainplungers,gray sideplungers,fixedmetal/yellowcovers andallkeyletters/symbols onfixedPCB. Exact-own backoriginal andownrearphoto showseparate actualrearlabel;noextrafrontfilm fabricated.",
+  "readabilityCheck": "BothfinalPNGopened. All42mainphysicalkey legends/symbols andRST/BOOT labels infrontfixedPCB gaps;sourcebackCardKB2/keymapdocumentarydiagram/USB-C/Grove/RST/BOOT/RGB/identifiers preserved.Registration/fonts onfront inferred,backglyphs retained.",
+  "invariance": "Bothentries/defaultcompleteconfiguration andkey-1/key-42/reset/boot intermediatemovement:artworkfalse preservesallphysicalattributes/index/world. Ink isneverparentedtomovingplungers.",
+  "limitations": [
+    "Own frontPCB fontmetrics/spacing/registration reconstructed bycode fromclearownphoto,unreadable tinyreference/batchlettering omitted;redplungers have no ink.",
+    "Exact-own rearoriginal vector design rasterized with letterforms/colors retained;0.04mmphysicaladhesivefilm thickness/diecut/registration inferred. Bare drawing84.7×54.3×6.15 versusfilm-inclusivevisual6.19mm recordedseparately;vendor1mm denotesPCBthickness."
+  ],
+  "rights": "NewcodederivativesMIT;productprintdesigns,certificationmarks/names/trademarks retainrespectiverights. Depictionisnotnewcertificationclaim."
+}

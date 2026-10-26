@@ -1,0 +1,81 @@
+{
+  "id": "neco",
+  "sku": "U163",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 2,
+  "physicalFilms": 0,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Accurate CODE redraw of readable exact U163 front capacitor silkscreen and rear logo/Grove marks from own official photographs; no photo pixels/crop, guessed microtext, wrong-product print or invented adhesive film.",
+  "sources": [
+    {
+      "id": "neco-rear",
+      "role": "own-rear-photo-controls-Grove-print",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Neco%20Unit/img-0829fc9e-df08-42df-9b0e-7bc4fe3f32d4.webp",
+      "sha256": "30cde08cbc646583c2691d5e82e6feaae65e9b87adc1b7ca152d2fbb2dfe777d"
+    },
+    {
+      "id": "neco-front",
+      "role": "own-front-35LED-photo",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Neco%20Unit/img-f441c430-5ab7-44e4-b5be-b1b878a0096c.webp",
+      "sha256": "a90ef03f5b37cae6ac6a99bc06f844d4542ce2e56b46f6194a169af894429c6b"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/neco/artwork/front.png",
+      "sha256": "1d1137af78f54cd72f6e5d2900d9c90953092a554d464cecd98d8356478a6852",
+      "face": "front",
+      "kind": "reference-redraw",
+      "pixels": [
+        2826,
+        2676
+      ],
+      "sizeMm": [
+        47.1,
+        44.6
+      ],
+      "positionMm": [
+        0,
+        0,
+        0.5
+      ],
+      "method": "printedArtwork",
+      "target": "necoAssembly.board.pcb fixed outward surface",
+      "physicalSubstrate": "Actual1mm PCB; no separate adhesive film",
+      "content": "17 readable capacitor footprint outlines, aligned with actual fixed capacitors"
+    },
+    {
+      "path": "src/units/neco/artwork/back.png",
+      "sha256": "490e5ad82f33cb71efbfa501bd694f432bf7cf645c5bfb1d4c7e3fcc7dfb88dc",
+      "face": "back",
+      "kind": "reference-redraw",
+      "pixels": [
+        2826,
+        2676
+      ],
+      "sizeMm": [
+        47.1,
+        44.6
+      ],
+      "positionMm": [
+        0,
+        0,
+        -0.5
+      ],
+      "method": "printedArtwork",
+      "target": "necoAssembly.board.pcb fixed outward surface",
+      "physicalSubstrate": "Actual1mm PCB; no separate adhesive film",
+      "content": "Readable M5STACK, BTN/RGB-IN/5V/GND, GND/5V/RGB-OUT/BTN, two arrows and locating dots"
+    }
+  ],
+  "limitations": [
+    "Font,color,spacing and registration are photo appearance reconstructions, not original vector conversion or calibrated printing.",
+    "OUT bottom BTN lettering is preserved as printed while schematic pin1 is documented NC; no invented signal forwarding.",
+    "Only actual outward PCB surface triangles receive ink; all true bores and perimeter remain geometric.",
+    "Both entries and sole actual assembled preset retain all physical attributes/index/matrixWorld with artwork:false.",
+    "Only ordinary final PNG, safe numeric pHYs; no EXIF,ICC,text/raw/generator/proof metadata or files distributed."
+  ],
+  "rights": "Product printed designs and trademarks retain respective rights."
+}

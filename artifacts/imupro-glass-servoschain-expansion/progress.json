@@ -1,0 +1,1217 @@
+{
+  "savedAt": "2026-10-26T20:14:24.584384+00:00",
+  "stage": "modeled",
+  "scope": "Own exact-SKU Mini IMU-Pro/Glass/8Servos2-Chain physical assemblies and final frozen controls/outputs/ports only, corresponding print and real three-branch four-core API fixture/builds; no browser or whole-catalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 155,
+    "modeled": 169,
+    "verified": 0
+  },
+  "localHead": "4fd5216dd2b310b6c92b366cb4c795f08dd15ff6",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "mini-imu-pro",
+      "status": "pass",
+      "report": "docs/research/mini-imu-pro/smoke.json",
+      "meshes": null,
+      "triangles": 65644
+    },
+    {
+      "id": "glass",
+      "status": "pass",
+      "report": "docs/research/glass/smoke.json",
+      "meshes": null,
+      "triangles": null
+    },
+    {
+      "id": "8servos2-chain",
+      "status": "pass",
+      "report": "docs/research/8servos2-chain/smoke.json",
+      "meshes": 270,
+      "triangles": 79164
+    }
+  ],
+  "pngCount": 7,
+  "rasters": [
+    {
+      "path": "src/units/mini-imu-pro/artwork/axis.png",
+      "pixels": [
+        1600,
+        1600
+      ],
+      "sha256": "c97e95f4a6f7db64dd2910f95c1502d82acf279709e5a858b3e54c77387fcbab"
+    },
+    {
+      "path": "src/units/mini-imu-pro/artwork/back.png",
+      "pixels": [
+        3260,
+        820
+      ],
+      "sha256": "f29910c1d40c46af190e8b5b9a7bcfb9d98dcf85dae85560c1ae077833029c98"
+    },
+    {
+      "path": "src/units/mini-imu-pro/artwork/front.png",
+      "pixels": [
+        3640,
+        800
+      ],
+      "sha256": "aa57e9074bc35b8727c302d79160aacb41c988b003b04f1d57a9145256f78a4a"
+    },
+    {
+      "path": "src/units/glass/artwork/back.png",
+      "pixels": [
+        2100,
+        1050
+      ],
+      "sha256": "0e86b235536ea1670edd6eae8532832983f8ddec48b0a2fefb43414bc239d75b"
+    },
+    {
+      "path": "src/units/glass/artwork/front.png",
+      "pixels": [
+        2100,
+        2650
+      ],
+      "sha256": "2a311fdc1f5dda36f64012c0b90ff60725c456391897044b792990ffc13c1065"
+    },
+    {
+      "path": "src/units/8servos2-chain/artwork/back.png",
+      "pixels": [
+        2208,
+        4308
+      ],
+      "sha256": "778ae5edf5998d74c9f4ef55fdc12e1d8537f13e6548396096ed4d187129b0be"
+    },
+    {
+      "path": "src/units/8servos2-chain/artwork/front.png",
+      "pixels": [
+        2364,
+        4308
+      ],
+      "sha256": "ab95b250fdee8b052ff70cdb7cca185c960bddedb6cde6605f60ec738d81d4c8"
+    }
+  ],
+  "frozenPublicAPI": {
+    "mini-imu-pro": {
+      "exports": [
+        "Model",
+        "GroveModule",
+        "spec"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [],
+      "leds": [],
+      "displays": [],
+      "ports": [
+        "grove"
+      ],
+      "defaults": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "Complete Mini IMU-Pro assembled enclosure",
+          "options": {}
+        }
+      ],
+      "pngCount": 3
+    },
+    "glass": {
+      "exports": [
+        "Model",
+        "GroveModule",
+        "spec",
+        "configurations",
+        "defaults",
+        "configurationSchema"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [
+        "button-a",
+        "button-b"
+      ],
+      "leds": [],
+      "displays": [
+        "screen"
+      ],
+      "ports": [
+        "grove"
+      ],
+      "defaults": {},
+      "configurations": [
+        {
+          "id": "assembled",
+          "name": "完整透明 OLED 装配",
+          "options": {}
+        }
+      ],
+      "pngCount": 2
+    },
+    "8servos2-chain": {
+      "exports": [
+        "Model",
+        "GroveModule",
+        "spec"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [],
+      "leds": [],
+      "displays": [],
+      "ports": [
+        "grove",
+        "out",
+        "ch0",
+        "ch1",
+        "ch2",
+        "ch3",
+        "ch4",
+        "ch5",
+        "ch6",
+        "ch7",
+        "dc"
+      ],
+      "defaults": {},
+      "configurations": [
+        {
+          "id": "assembled",
+          "name": "完整 Chain 舵机接口外壳",
+          "options": {}
+        }
+      ],
+      "pngCount": 2
+    }
+  },
+  "fixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "mini-imu-pro",
+        "body": [
+          "grove"
+        ],
+        "ports": [
+          "grove"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "physicalStructure": {
+          "geometrySource": "own-dimensioned-parametric-no-CAD",
+          "nominalMm": [
+            24,
+            24,
+            8
+          ],
+          "mountingBores": 2,
+          "mountingEmptyRays": 4,
+          "mountingWallRays": 8,
+          "ownPackages": [
+            "BMI270",
+            "BMM150",
+            "BMP280"
+          ],
+          "packageSupportRays": 3,
+          "physicalGroveContacts": 4,
+          "actualMetalContactRays": 4,
+          "platedPcbBores": 4,
+          "physicalFilms": 3,
+          "unresolvedSW1NotGuessed": true,
+          "allChecksInOwnBodyCoordinates": true
+        },
+        "transformedStructure": {
+          "geometrySource": "own-dimensioned-parametric-no-CAD",
+          "nominalMm": [
+            24,
+            24,
+            8
+          ],
+          "mountingBores": 2,
+          "mountingEmptyRays": 4,
+          "mountingWallRays": 8,
+          "ownPackages": [
+            "BMI270",
+            "BMM150",
+            "BMP280"
+          ],
+          "packageSupportRays": 3,
+          "physicalGroveContacts": 4,
+          "actualMetalContactRays": 4,
+          "platedPcbBores": 4,
+          "physicalFilms": 3,
+          "unresolvedSW1NotGuessed": true,
+          "allChecksInOwnBodyCoordinates": true
+        }
+      },
+      {
+        "id": "glass",
+        "body": [
+          "screen",
+          "grove",
+          "button-a",
+          "button-b"
+        ],
+        "ports": [
+          "grove"
+        ],
+        "controls": [
+          "button-a",
+          "button-b"
+        ],
+        "leds": [],
+        "displays": [
+          "screen"
+        ],
+        "physicalStructure": {
+          "physicalMeshes": 331,
+          "ownEnvelopeMm": [
+            42.040000915527344,
+            53,
+            6.000000002980233
+          ],
+          "ownPCBWindowMm": [
+            37,
+            19
+          ],
+          "earBores": 2,
+          "metalPosts": 4,
+          "physicalGlassLayers": 2,
+          "fpcContacts": 24,
+          "fpcTracks": 24,
+          "tssopLeads": 20,
+          "fixedBuzzer": 1,
+          "sockets": 1,
+          "actualContacts": 4,
+          "capOnlyButtons": 2,
+          "capTravelMm": 0.14,
+          "fixedYellowPackages": true,
+          "transparentVisiblePixels": [
+            128,
+            56
+          ],
+          "activeMm": [
+            35.05,
+            15.32
+          ],
+          "opposingEmissionNormals": true,
+          "sameWorldXYAndUvForTrueRearMirror": true,
+          "localToleranceMm": 1e-05
+        },
+        "transformedStructure": {
+          "physicalMeshes": 331,
+          "ownEnvelopeMm": [
+            42.04000091552737,
+            53.000000000000014,
+            6.0000000029802365
+          ],
+          "ownPCBWindowMm": [
+            37,
+            19
+          ],
+          "earBores": 2,
+          "metalPosts": 4,
+          "physicalGlassLayers": 2,
+          "fpcContacts": 24,
+          "fpcTracks": 24,
+          "tssopLeads": 20,
+          "fixedBuzzer": 1,
+          "sockets": 1,
+          "actualContacts": 4,
+          "capOnlyButtons": 2,
+          "capTravelMm": 0.14,
+          "fixedYellowPackages": true,
+          "transparentVisiblePixels": [
+            128,
+            56
+          ],
+          "activeMm": [
+            35.05,
+            15.32
+          ],
+          "opposingEmissionNormals": true,
+          "sameWorldXYAndUvForTrueRearMirror": true,
+          "localToleranceMm": 1e-05
+        }
+      },
+      {
+        "id": "8servos2-chain",
+        "body": [
+          "grove",
+          "out",
+          "ch0",
+          "ch1",
+          "ch2",
+          "ch3",
+          "ch4",
+          "ch5",
+          "ch6",
+          "ch7",
+          "dc"
+        ],
+        "ports": [
+          "grove",
+          "out",
+          "ch0",
+          "ch1",
+          "ch2",
+          "ch3",
+          "ch4",
+          "ch5",
+          "ch6",
+          "ch7",
+          "dc"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "physicalStructure": {
+          "physicalMalePosts": 24,
+          "physicalSocketContacts": 8,
+          "socketFacts": [
+            {
+              "id": "grove",
+              "contacts": 4,
+              "returns": 4,
+              "throughBoardTails": 4
+            },
+            {
+              "id": "out",
+              "contacts": 4,
+              "returns": 4,
+              "throughBoardTails": 4
+            }
+          ],
+          "emptyAxisRays": 2,
+          "frontSideRays": 3,
+          "pcbSupportRays": 6,
+          "fixedCapacitor": true,
+          "deepDcCavity": true,
+          "externalControls": 0,
+          "externalLeds": 0
+        },
+        "transformedStructure": {
+          "physicalMalePosts": 24,
+          "physicalSocketContacts": 8,
+          "socketFacts": [
+            {
+              "id": "grove",
+              "contacts": 4,
+              "returns": 4,
+              "throughBoardTails": 4
+            },
+            {
+              "id": "out",
+              "contacts": 4,
+              "returns": 4,
+              "throughBoardTails": 4
+            }
+          ],
+          "emptyAxisRays": 2,
+          "frontSideRays": 3,
+          "pcbSupportRays": 6,
+          "fixedCapacitor": true,
+          "deepDcCavity": true,
+          "externalControls": 0,
+          "externalLeds": 0
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "mini-imu-pro",
+        "panels": 3,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": []
+      },
+      {
+        "id": "glass",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "button-a",
+          "button-b"
+        ]
+      },
+      {
+        "id": "8servos2-chain",
+        "panels": 2,
+        "kinds": [
+          "official-vector-raster",
+          "official-vector-raster"
+        ],
+        "actualPartialMotionIds": []
+      }
+    ],
+    "configurations": [
+      {
+        "id": "mini-imu-pro",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual partial control motion"
+      },
+      {
+        "id": "glass",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual partial control motion"
+      },
+      {
+        "id": "8servos2-chain",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual partial control motion"
+      }
+    ],
+    "controls": [
+      {
+        "id": "glass",
+        "individual": [
+          {
+            "id": "button-a",
+            "travelMm": 0.14,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "button-b",
+            "travelMm": 0.14,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          }
+        ],
+        "simultaneous": {
+          "controls": 2,
+          "allHeldAndOneCancelled": "independent peers",
+          "completeNeutralPhysicalRestored": true
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "id": "screen",
+        "resolution": [
+          128,
+          56
+        ],
+        "actualVisibleMm": [
+          35.05,
+          15.32
+        ],
+        "sourceRgbAndAlphaPreserved": true,
+        "actualTextureAlias": true,
+        "formats": [
+          "rgba",
+          "rgb888",
+          "rgb565",
+          "clipped-fill"
+        ],
+        "externalNoEcho": true,
+        "touch": false,
+        "fixedStyle": "oled",
+        "materialTransparency": true,
+        "physicalAndPortsUnchanged": true,
+        "scope": "CPU framebuffer and actual material bindings;no GPU pixel,128x64 memory/register,I2C or firmware acceptance"
+      }
+    ],
+    "nested": [
+      {
+        "id": "8servos2-chain",
+        "port": "out",
+        "wireCount": 4,
+        "inputPath": "grove/grove-3/out/press",
+        "retainedPhysical": "identical",
+        "observedInputEvents": 5,
+        "protocolAndElectricalRouting": false
+      }
+    ],
+    "framebufferPanel": {
+      "actualDemoClass": "FramebufferPanel",
+      "nestedPath": "grove/grove-2/screen",
+      "calibrationTargetOnly": true,
+      "attachDetachRefreshWritesPixels": false,
+      "scope": "Actual demo controller with DOM stubs;CPU framebuffer only"
+    },
+    "disposedResources": 1304,
+    "cases": [
+      "three-real-four-core-branches",
+      "own-U171-shell-and-documented-internal-carriers",
+      "actual-Glass-side-plunger-fixed-package-separation-multi-source-cancel",
+      "128x56-external-transparent-blue-visible-framebuffer-no-touch",
+      "own-U223-24-posts-DC-IN-OUT-real-cavities-no-old-selector",
+      "both-entries-actual-presets-and-partial-motion-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-cancel-peer-isolation",
+      "real-Chain-OUT-nested-Key-input-intents-only",
+      "actual-demo-nested-framebuffer-selector",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own three physical assemblies,matching print and actual external controls/outputs;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/sensorvalues/128x64-registermapping/firmware/electrical/servo-PWM/whole-history acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "mini-imu-pro",
+        "body": [
+          "grove"
+        ],
+        "ports": [
+          "grove"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "physicalStructure": {
+          "geometrySource": "own-dimensioned-parametric-no-CAD",
+          "nominalMm": [
+            24,
+            24,
+            8
+          ],
+          "mountingBores": 2,
+          "mountingEmptyRays": 4,
+          "mountingWallRays": 8,
+          "ownPackages": [
+            "BMI270",
+            "BMM150",
+            "BMP280"
+          ],
+          "packageSupportRays": 3,
+          "physicalGroveContacts": 4,
+          "actualMetalContactRays": 4,
+          "platedPcbBores": 4,
+          "physicalFilms": 3,
+          "unresolvedSW1NotGuessed": true,
+          "allChecksInOwnBodyCoordinates": true
+        },
+        "transformedStructure": {
+          "geometrySource": "own-dimensioned-parametric-no-CAD",
+          "nominalMm": [
+            24,
+            24,
+            8
+          ],
+          "mountingBores": 2,
+          "mountingEmptyRays": 4,
+          "mountingWallRays": 8,
+          "ownPackages": [
+            "BMI270",
+            "BMM150",
+            "BMP280"
+          ],
+          "packageSupportRays": 3,
+          "physicalGroveContacts": 4,
+          "actualMetalContactRays": 4,
+          "platedPcbBores": 4,
+          "physicalFilms": 3,
+          "unresolvedSW1NotGuessed": true,
+          "allChecksInOwnBodyCoordinates": true
+        }
+      },
+      {
+        "id": "glass",
+        "body": [
+          "screen",
+          "grove",
+          "button-a",
+          "button-b"
+        ],
+        "ports": [
+          "grove"
+        ],
+        "controls": [
+          "button-a",
+          "button-b"
+        ],
+        "leds": [],
+        "displays": [
+          "screen"
+        ],
+        "physicalStructure": {
+          "physicalMeshes": 331,
+          "ownEnvelopeMm": [
+            42.040000915527344,
+            53,
+            6.000000002980233
+          ],
+          "ownPCBWindowMm": [
+            37,
+            19
+          ],
+          "earBores": 2,
+          "metalPosts": 4,
+          "physicalGlassLayers": 2,
+          "fpcContacts": 24,
+          "fpcTracks": 24,
+          "tssopLeads": 20,
+          "fixedBuzzer": 1,
+          "sockets": 1,
+          "actualContacts": 4,
+          "capOnlyButtons": 2,
+          "capTravelMm": 0.14,
+          "fixedYellowPackages": true,
+          "transparentVisiblePixels": [
+            128,
+            56
+          ],
+          "activeMm": [
+            35.05,
+            15.32
+          ],
+          "opposingEmissionNormals": true,
+          "sameWorldXYAndUvForTrueRearMirror": true,
+          "localToleranceMm": 1e-05
+        },
+        "transformedStructure": {
+          "physicalMeshes": 331,
+          "ownEnvelopeMm": [
+            42.04000091552737,
+            53.000000000000014,
+            6.0000000029802365
+          ],
+          "ownPCBWindowMm": [
+            37,
+            19
+          ],
+          "earBores": 2,
+          "metalPosts": 4,
+          "physicalGlassLayers": 2,
+          "fpcContacts": 24,
+          "fpcTracks": 24,
+          "tssopLeads": 20,
+          "fixedBuzzer": 1,
+          "sockets": 1,
+          "actualContacts": 4,
+          "capOnlyButtons": 2,
+          "capTravelMm": 0.14,
+          "fixedYellowPackages": true,
+          "transparentVisiblePixels": [
+            128,
+            56
+          ],
+          "activeMm": [
+            35.05,
+            15.32
+          ],
+          "opposingEmissionNormals": true,
+          "sameWorldXYAndUvForTrueRearMirror": true,
+          "localToleranceMm": 1e-05
+        }
+      },
+      {
+        "id": "8servos2-chain",
+        "body": [
+          "grove",
+          "out",
+          "ch0",
+          "ch1",
+          "ch2",
+          "ch3",
+          "ch4",
+          "ch5",
+          "ch6",
+          "ch7",
+          "dc"
+        ],
+        "ports": [
+          "grove",
+          "out",
+          "ch0",
+          "ch1",
+          "ch2",
+          "ch3",
+          "ch4",
+          "ch5",
+          "ch6",
+          "ch7",
+          "dc"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "physicalStructure": {
+          "physicalMalePosts": 24,
+          "physicalSocketContacts": 8,
+          "socketFacts": [
+            {
+              "id": "grove",
+              "contacts": 4,
+              "returns": 4,
+              "throughBoardTails": 4
+            },
+            {
+              "id": "out",
+              "contacts": 4,
+              "returns": 4,
+              "throughBoardTails": 4
+            }
+          ],
+          "emptyAxisRays": 2,
+          "frontSideRays": 3,
+          "pcbSupportRays": 6,
+          "fixedCapacitor": true,
+          "deepDcCavity": true,
+          "externalControls": 0,
+          "externalLeds": 0
+        },
+        "transformedStructure": {
+          "physicalMalePosts": 24,
+          "physicalSocketContacts": 8,
+          "socketFacts": [
+            {
+              "id": "grove",
+              "contacts": 4,
+              "returns": 4,
+              "throughBoardTails": 4
+            },
+            {
+              "id": "out",
+              "contacts": 4,
+              "returns": 4,
+              "throughBoardTails": 4
+            }
+          ],
+          "emptyAxisRays": 2,
+          "frontSideRays": 3,
+          "pcbSupportRays": 6,
+          "fixedCapacitor": true,
+          "deepDcCavity": true,
+          "externalControls": 0,
+          "externalLeds": 0
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "mini-imu-pro",
+        "panels": 3,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": []
+      },
+      {
+        "id": "glass",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "button-a",
+          "button-b"
+        ]
+      },
+      {
+        "id": "8servos2-chain",
+        "panels": 2,
+        "kinds": [
+          "official-vector-raster",
+          "official-vector-raster"
+        ],
+        "actualPartialMotionIds": []
+      }
+    ],
+    "configurations": [
+      {
+        "id": "mini-imu-pro",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual partial control motion"
+      },
+      {
+        "id": "glass",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual partial control motion"
+      },
+      {
+        "id": "8servos2-chain",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual partial control motion"
+      }
+    ],
+    "controls": [
+      {
+        "id": "glass",
+        "individual": [
+          {
+            "id": "button-a",
+            "travelMm": 0.14,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "button-b",
+            "travelMm": 0.14,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          }
+        ],
+        "simultaneous": {
+          "controls": 2,
+          "allHeldAndOneCancelled": "independent peers",
+          "completeNeutralPhysicalRestored": true
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "id": "screen",
+        "resolution": [
+          128,
+          56
+        ],
+        "actualVisibleMm": [
+          35.05,
+          15.32
+        ],
+        "sourceRgbAndAlphaPreserved": true,
+        "actualTextureAlias": true,
+        "formats": [
+          "rgba",
+          "rgb888",
+          "rgb565",
+          "clipped-fill"
+        ],
+        "externalNoEcho": true,
+        "touch": false,
+        "fixedStyle": "oled",
+        "materialTransparency": true,
+        "physicalAndPortsUnchanged": true,
+        "scope": "CPU framebuffer and actual material bindings;no GPU pixel,128x64 memory/register,I2C or firmware acceptance"
+      }
+    ],
+    "nested": [
+      {
+        "id": "8servos2-chain",
+        "port": "out",
+        "wireCount": 4,
+        "inputPath": "grove/grove-3/out/press",
+        "retainedPhysical": "identical",
+        "observedInputEvents": 5,
+        "protocolAndElectricalRouting": false
+      }
+    ],
+    "framebufferPanel": {
+      "actualDemoClass": "FramebufferPanel",
+      "nestedPath": "grove/grove-2/screen",
+      "calibrationTargetOnly": true,
+      "attachDetachRefreshWritesPixels": false,
+      "scope": "Actual demo controller with DOM stubs;CPU framebuffer only"
+    },
+    "disposedResources": 1304,
+    "cases": [
+      "three-real-four-core-branches",
+      "own-U171-shell-and-documented-internal-carriers",
+      "actual-Glass-side-plunger-fixed-package-separation-multi-source-cancel",
+      "128x56-external-transparent-blue-visible-framebuffer-no-touch",
+      "own-U223-24-posts-DC-IN-OUT-real-cavities-no-old-selector",
+      "both-entries-actual-presets-and-partial-motion-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-cancel-peer-isolation",
+      "real-Chain-OUT-nested-Key-input-intents-only",
+      "actual-demo-nested-framebuffer-selector",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own three physical assemblies,matching print and actual external controls/outputs;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/sensorvalues/128x64-registermapping/firmware/electrical/servo-PWM/whole-history acceptance"
+  },
+  "checks": {
+    "localProductSmoke": "all current batch products pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "mini-imu-pro",
+        "status": "frozen",
+        "checkedFiles": 12
+      },
+      {
+        "id": "glass",
+        "status": "frozen",
+        "checkedFiles": 12
+      },
+      {
+        "id": "8servos2-chain",
+        "status": "frozen",
+        "checkedFiles": 11
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "All physical attributes/index/world matrices preserved across actual entries/configurations",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "1d889ee402151fc1ca7eb9e4b29e58c286cf68a70f9abf1a84a1efde9a8c4e47",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "df62709d0b4a056935d4810daf70b2ba9af94c5c1b09954c40f8424b60f5a7c7",
+      "logDistributed": false
+    },
+    "exportCount": 6,
+    "catalogConfigurations": {
+      "status": "pass",
+      "products": [
+        {
+          "id": "mini-imu-pro",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "Complete Mini IMU-Pro assembled enclosure",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        },
+        {
+          "id": "glass",
+          "presets": [
+            {
+              "id": "assembled",
+              "name": "完整透明 OLED 装配",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        },
+        {
+          "id": "8servos2-chain",
+          "presets": [
+            {
+              "id": "assembled",
+              "name": "完整 Chain 舵机接口外壳",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        }
+      ],
+      "scope": "Batch 42: current frozen named presets, constructor defaults and existing demo contract"
+    },
+    "livePreview": "169-product catalog, 3 own runtime chunks and all corresponding source PNG bytes verified in live dist (ordinary or inlined assets)",
+    "newSourcePrivacy": "New JS/JSON/Markdown/PNG and all current added catalog/manifest records checked; private table/URLs/vectors/original names/mappings/raw material/intermediates excluded",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "Only new products/catalog entries/exports/guide/plan; protected old private/public bytes retained",
+    "existingPublicUnitFilesUnchanged": 1272,
+    "existingPrivateUnitFilesUnchanged": 1233,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "publicSharedProtectedFilesUnchanged": 2,
+    "privateSharedProtectedFilesUnchanged": 2,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [
+    {
+      "product": "glass",
+      "record": "docs/research/glass/sources.json",
+      "feedback_id": "5e9128a43e2c4de3bb6458dc80d16811",
+      "accepted": true
+    },
+    {
+      "product": "8servos2-chain",
+      "record": "docs/research/8servos2-chain/sources.json",
+      "feedback_id": "c5947604b04b4db3a1065769ee963269",
+      "accepted": true
+    }
+  ],
+  "previewAssets": [
+    {
+      "id": "mini-imu-pro",
+      "file": "assets/mini-imu-pro-L2S6u0PG.js",
+      "sha256": "5e6298c547e9bba1ce14e736e19fb311cf113bf20febb9bb24446b19f26edcf0"
+    },
+    {
+      "id": "glass",
+      "file": "assets/glass-CQtrYR9X.js",
+      "sha256": "51e926d4f9dd12335019efc058735a06e2d425c8e61059fedbcf583cd83522c7"
+    },
+    {
+      "id": "8servos2-chain",
+      "file": "assets/8servos2-chain-DnTXdi3k.js",
+      "sha256": "5f65915630e01b39c8ff2f1543cc0c4e136ae313be1f10901a7c9b37b07a380e"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/mini-imu-pro/artwork/axis.png",
+      "sha256": "c97e95f4a6f7db64dd2910f95c1502d82acf279709e5a858b3e54c77387fcbab"
+    },
+    {
+      "path": "src/units/mini-imu-pro/artwork/back.png",
+      "sha256": "f29910c1d40c46af190e8b5b9a7bcfb9d98dcf85dae85560c1ae077833029c98"
+    },
+    {
+      "path": "src/units/mini-imu-pro/artwork/front.png",
+      "sha256": "aa57e9074bc35b8727c302d79160aacb41c988b003b04f1d57a9145256f78a4a"
+    },
+    {
+      "path": "src/units/mini-imu-pro/assembly.js",
+      "sha256": "1e443a01bbc3f842c227f83a0a2621e32e17ad1d88a0401dd50cfbeeadf2cbca"
+    },
+    {
+      "path": "src/units/mini-imu-pro/dimensions.js",
+      "sha256": "28ec7f32ed652f21bfa0c843f0658fc3c3e1ffe545c09d4b88d944f8cc5a20e6"
+    },
+    {
+      "path": "src/units/mini-imu-pro/geometry.js",
+      "sha256": "3807849e3159a5413cfd62bc3cfcef24af32af2a1bd981af9d35b007ed5b5924"
+    },
+    {
+      "path": "src/units/mini-imu-pro/index.js",
+      "sha256": "0810bfecc3ee7e3699d97c397b68d3718747137724f7b7b0664c967e08637fb2"
+    },
+    {
+      "path": "src/units/mini-imu-pro/stickers.js",
+      "sha256": "63661065de98d4c48dff62ad81e999b61c28c5521e02add5538d2447ffc057b0"
+    },
+    {
+      "path": "docs/research/mini-imu-pro/artwork.json",
+      "sha256": "6220f06c5ef35e897cdf32ec908f7cec28f2f52c2fe248799da6cf0ab1d64b69"
+    },
+    {
+      "path": "docs/research/mini-imu-pro/modeling.md",
+      "sha256": "34f057e9c480c6a0fec9828aad4009fa02a4bcb0c8894ac219db753c244b6471"
+    },
+    {
+      "path": "docs/research/mini-imu-pro/smoke.json",
+      "sha256": "00bc784baba9d83ec8cf1721f8c2aadaf814c901fff0d6c1f77671aec9f0689b"
+    },
+    {
+      "path": "docs/research/mini-imu-pro/sources.json",
+      "sha256": "33f1e54b9fa16eb68f4e4c8284fd872bc2bf64bb9281fe219db6146b901c43cf"
+    },
+    {
+      "path": "src/units/glass/TransparentOled.js",
+      "sha256": "379b437dce9c2a0d902400cebb6c5d2166b4e094a9a45af2ca293b965efeb061"
+    },
+    {
+      "path": "src/units/glass/artwork/back.png",
+      "sha256": "0e86b235536ea1670edd6eae8532832983f8ddec48b0a2fefb43414bc239d75b"
+    },
+    {
+      "path": "src/units/glass/artwork/front.png",
+      "sha256": "2a311fdc1f5dda36f64012c0b90ff60725c456391897044b792990ffc13c1065"
+    },
+    {
+      "path": "src/units/glass/assembly.js",
+      "sha256": "f7e33015ea473589779bcd55655c5847a0d0ff27ef6be04369ecb007ccd4c7fa"
+    },
+    {
+      "path": "src/units/glass/dimensions.js",
+      "sha256": "195eb4240b0c21813a48dfbc1976b58abb3af7f2faa37a5df8c4b7fb755f3af2"
+    },
+    {
+      "path": "src/units/glass/geometry.js",
+      "sha256": "b07821a583a9230856727c8a0053231ea3221857612ead02a1722c065c56e95b"
+    },
+    {
+      "path": "src/units/glass/index.js",
+      "sha256": "c30779ab9567ceb569d9a07e527bb947a9404ae42b8588f4735ef5e94dcaae1e"
+    },
+    {
+      "path": "src/units/glass/stickers.js",
+      "sha256": "300ce070cdb16fb4476a86e249febf702463c6330c7c554151f6ceefb591ec58"
+    },
+    {
+      "path": "docs/research/glass/artwork.json",
+      "sha256": "7f585fae74c3651cea1a3b6475c9eecc483d8cb9822800daaee173c990425f1a"
+    },
+    {
+      "path": "docs/research/glass/modeling.md",
+      "sha256": "6320af742fbf50017e6af22255e8d327e2aed10c761ef585183f258973206863"
+    },
+    {
+      "path": "docs/research/glass/smoke.json",
+      "sha256": "bdab70dfcf6e2eef89025b647b0deaa56b27556537644a0eda239b752207a1d6"
+    },
+    {
+      "path": "docs/research/glass/sources.json",
+      "sha256": "7f72fbdcca3b598124b12e5f5f435f992448b5a6f1756172c7bdef4388a71472"
+    },
+    {
+      "path": "src/units/8servos2-chain/artwork/back.png",
+      "sha256": "778ae5edf5998d74c9f4ef55fdc12e1d8537f13e6548396096ed4d187129b0be"
+    },
+    {
+      "path": "src/units/8servos2-chain/artwork/front.png",
+      "sha256": "ab95b250fdee8b052ff70cdb7cca185c960bddedb6cde6605f60ec738d81d4c8"
+    },
+    {
+      "path": "src/units/8servos2-chain/assembly.js",
+      "sha256": "fa5e1f7fdeb859db7debaf05ac825d223d753e4e44e0e06b148362ee0f48f79a"
+    },
+    {
+      "path": "src/units/8servos2-chain/dimensions.js",
+      "sha256": "f9c129ca12879af1393b003399cd872593835cb41c62fc564aa67d9e2472c185"
+    },
+    {
+      "path": "src/units/8servos2-chain/geometry.js",
+      "sha256": "1d7c4a3346aa6512b69799f1277e76a9e25bdebb1c00354273fa18e41004005f"
+    },
+    {
+      "path": "src/units/8servos2-chain/index.js",
+      "sha256": "40f1f476f72930c0de3546c45a55a0b310ba37d86adb2d80812dca9707a24e43"
+    },
+    {
+      "path": "src/units/8servos2-chain/stickers.js",
+      "sha256": "01172c93d7e9b2cbdf3433d48d9cde0c40f31ee4286c1330bd2581510b945aad"
+    },
+    {
+      "path": "docs/research/8servos2-chain/artwork.json",
+      "sha256": "fc33283de3193a2172bff0dca4e7c3dc33a1c6134b519a2287afa2c3ea026731"
+    },
+    {
+      "path": "docs/research/8servos2-chain/modeling.md",
+      "sha256": "84142ce43265979543f78c6453c93b5e7cca8cb2d90213221e2f413e917535e6"
+    },
+    {
+      "path": "docs/research/8servos2-chain/smoke.json",
+      "sha256": "a71309e51c1d1ab6e6664d43ffe4d6bb9fc874c502b2dd18ad61c5d1d7546f1c"
+    },
+    {
+      "path": "docs/research/8servos2-chain/sources.json",
+      "sha256": "ef5bac7216dba29447acd4a92d457417edcf65dffa3239558e1aa554d01943e9"
+    }
+  ],
+  "limitations": [
+    "Official published exact-SKU dimensions plus own assembled photographs; no native CAD face claim or borrowed U095/Glass2/U222 assembly",
+    "U171 board address SW1 has no established outside actuator passage; no promised external control or address/electrical linkage",
+    "Glass U158 retains own two side momentary packages, transparent blue128x56 visible screen at own panelPDF35.05x15.32mm (not webpage18mm) and actual fixed buzzer carrier; API follows final freeze, no touch or invented sound synthesis",
+    "U223 published outline drawing also exists for U222 and is not independent internal-assembly evidence; retain published envelope/holes/windows/DC but build the actual internal100uF capacitor and carriers from own U223 photographs, not the old rotary sketch",
+    "U223 retains own IN/OUT HY2.0-4P sockets,24 servo posts/DC receiving cavity; no U222 address rotary, unsupported external indicator,servo/PWM motion or protocol simulation",
+    "Final control/LED/display/port IDs,presets and PNG counts come from actual author freezes; hidden installations/travel/fit remain documented appearance inferences",
+    "Prefer approved exact-own originals as ordinary PNG; otherwise code redraw readable own official marks, no photo crop/wrongSKU/illegible microtext/fake carriers/permanent screen image",
+    "Private table/originals/URLs/names/mapping/vectors/generators/intermediates excluded; earlier sticker/Scroll/StackChan/Puzzle/Catch limits preserved; overall goal active"
+  ]
+}

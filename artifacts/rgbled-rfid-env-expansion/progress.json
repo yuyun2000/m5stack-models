@@ -1,0 +1,1919 @@
+{
+  "savedAt": "2026-10-26T22:11:09.713601+00:00",
+  "stage": "modeled",
+  "scope": "Exact A03510cm15LED flexible strip,original U031 RFID and U001 ENV complete own-dimensional-parametric appearance,actual external light/flexible shapes and matching ordinary PNG,real three-branch four-core fixture/builds;no browser or whole-catalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 170,
+    "modeled": 184,
+    "verified": 0
+  },
+  "localHead": "4fd5216dd2b310b6c92b366cb4c795f08dd15ff6",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "rgb-led-10cm",
+      "status": "pass",
+      "report": "docs/research/rgb-led-10cm/smoke.json",
+      "meshes": null,
+      "triangles": null
+    },
+    {
+      "id": "rfid",
+      "status": "pass",
+      "report": "docs/research/rfid/smoke.json",
+      "meshes": null,
+      "triangles": null
+    },
+    {
+      "id": "env",
+      "status": "pass",
+      "report": "docs/research/env/smoke.json",
+      "meshes": null,
+      "triangles": null
+    }
+  ],
+  "pngCount": 7,
+  "rasters": [
+    {
+      "path": "src/units/rgb-led-10cm/reference-redraw-input.png",
+      "pixels": [
+        800,
+        1080
+      ],
+      "sha256": "73159e3f570eb770f46e3cf5bbef245f226a21aeb3fcec7dd301c9ad7578903b"
+    },
+    {
+      "path": "src/units/rgb-led-10cm/reference-redraw-next.png",
+      "pixels": [
+        800,
+        1080
+      ],
+      "sha256": "a59964f6c2fce1e2d6db6031d4f4fbf141fc04dcde73010584e7561792e2afd8"
+    },
+    {
+      "path": "src/units/rgb-led-10cm/reference-redraw-strip.png",
+      "pixels": [
+        600,
+        6000
+      ],
+      "sha256": "91fcc8bb35c7ff91f9616f4e80d2d77121fc0d614e874d66fcb88a125b500492"
+    },
+    {
+      "path": "src/units/rfid/artwork/front.png",
+      "pixels": [
+        1820,
+        2820
+      ],
+      "sha256": "f27e41868ddce0036feccd50b15d9a29af1d0e44c91df0080795ac07661cda6c"
+    },
+    {
+      "path": "src/units/rfid/artwork/rear.png",
+      "pixels": [
+        1620,
+        2820
+      ],
+      "sha256": "dc5e2b611a4941c29c7f6367bf597f23df4855b1b8b704122e05b37e53342647"
+    },
+    {
+      "path": "src/units/env/artwork/back.png",
+      "pixels": [
+        1630,
+        1215
+      ],
+      "sha256": "977bdd2afef4561e253d20e4696b74fdcc918328e4c6bdb8895d96fde6f8dd85"
+    },
+    {
+      "path": "src/units/env/artwork/qc.png",
+      "pixels": [
+        1024,
+        1024
+      ],
+      "sha256": "27dd05c7f1c5fefd1e29e9efbbd03f40b3cac087299f5ca0b5ccdc84a5e1323d"
+    }
+  ],
+  "frozenPublicAPI": {
+    "rgb-led-10cm": {
+      "exports": [
+        "Model",
+        "GroveModule",
+        "spec",
+        "defaults",
+        "configurationSchema",
+        "configurations"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [],
+      "leds": [
+        "led-1",
+        "led-2",
+        "led-3",
+        "led-4",
+        "led-5",
+        "led-6",
+        "led-7",
+        "led-8",
+        "led-9",
+        "led-10",
+        "led-11",
+        "led-12",
+        "led-13",
+        "led-14",
+        "led-15"
+      ],
+      "displays": [],
+      "ports": [
+        "grove",
+        "extension"
+      ],
+      "joints": [],
+      "anchors": [],
+      "accessoryExports": [],
+      "defaults": {
+        "bendDeg": 0
+      },
+      "configurations": [
+        {
+          "id": "straight",
+          "name": "15灯直条",
+          "options": {
+            "bendDeg": 0
+          }
+        },
+        {
+          "id": "arc",
+          "name": "15灯平滑弯曲",
+          "options": {
+            "bendDeg": 90
+          }
+        },
+        {
+          "id": "reverse",
+          "name": "15灯反向柔性弯曲",
+          "options": {
+            "bendDeg": -60
+          }
+        }
+      ],
+      "pngCount": 3,
+      "visualCommands": {
+        "led": {
+          "type": "led",
+          "targets": [
+            "led-1",
+            "led-2",
+            "led-3",
+            "led-4",
+            "led-5",
+            "led-6",
+            "led-7",
+            "led-8",
+            "led-9",
+            "led-10",
+            "led-11",
+            "led-12",
+            "led-13",
+            "led-14",
+            "led-15"
+          ],
+          "fields": [
+            "on",
+            "color",
+            "brightness"
+          ]
+        },
+        "flex": {
+          "type": "flex",
+          "target": "flex",
+          "fields": [
+            "bendDeg",
+            "durationMs"
+          ]
+        },
+        "unitFrame": {
+          "type": "pose",
+          "fields": [
+            "position",
+            "rotation",
+            "quaternion",
+            "distance"
+          ]
+        },
+        "cable": {
+          "type": "cable",
+          "fields": [
+            "slack",
+            "bend"
+          ]
+        }
+      }
+    },
+    "rfid": {
+      "exports": [
+        "Model",
+        "GroveModule",
+        "spec",
+        "defaults",
+        "configurations",
+        "configurationSchema"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [],
+      "leds": [],
+      "displays": [],
+      "ports": [
+        "grove"
+      ],
+      "joints": [],
+      "anchors": [],
+      "accessoryExports": [],
+      "defaults": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "原版 RFID · MFRC522 完整本体",
+          "options": {}
+        }
+      ],
+      "pngCount": 2,
+      "visualCommands": {
+        "unitFrame": {
+          "type": "pose",
+          "fields": [
+            "position",
+            "rotation",
+            "quaternion",
+            "distance"
+          ]
+        },
+        "cable": {
+          "type": "cable",
+          "fields": [
+            "slack",
+            "bend"
+          ]
+        }
+      }
+    },
+    "env": {
+      "exports": [
+        "GroveModule",
+        "Model",
+        "configurationSchema",
+        "configurations",
+        "defaults",
+        "spec"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [],
+      "leds": [],
+      "displays": [],
+      "ports": [
+        "grove"
+      ],
+      "joints": [],
+      "anchors": [],
+      "accessoryExports": [],
+      "defaults": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整原版 ENV U001",
+          "options": {}
+        }
+      ],
+      "pngCount": 2,
+      "visualCommands": {
+        "unitFrame": {
+          "type": "pose",
+          "target": "unitFrame",
+          "fields": [
+            "position",
+            "rotation",
+            "quaternion",
+            "distance"
+          ]
+        },
+        "cable": {
+          "type": "cable",
+          "target": "cable",
+          "fields": [
+            "slack",
+            "bend"
+          ]
+        }
+      }
+    }
+  },
+  "fixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "rgb-led-10cm",
+        "body": [
+          "flex",
+          "led-1",
+          "led-2",
+          "led-3",
+          "led-4",
+          "led-5",
+          "led-6",
+          "led-7",
+          "led-8",
+          "led-9",
+          "led-10",
+          "led-11",
+          "led-12",
+          "led-13",
+          "led-14",
+          "led-15",
+          "grove",
+          "extension"
+        ],
+        "ports": [
+          "grove",
+          "extension"
+        ],
+        "controls": [],
+        "leds": [
+          "led-1",
+          "led-2",
+          "led-3",
+          "led-4",
+          "led-5",
+          "led-6",
+          "led-7",
+          "led-8",
+          "led-9",
+          "led-10",
+          "led-11",
+          "led-12",
+          "led-13",
+          "led-14",
+          "led-15"
+        ],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "route": "own-dimensional-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 439,
+          "nominalFPCMm": [
+            10,
+            100
+          ],
+          "completeStraightEnvelopeMm": [
+            10,
+            137,
+            7.5
+          ],
+          "neutralAxisLengthMm": 100,
+          "sampledArcLengthMm": 100,
+          "bendDeg": 0,
+          "continuousThickLayers": 3,
+          "LEDs": 15,
+          "packageFirstMaterialRays": 15,
+          "actualSolderBridges": 96,
+          "actualCopperPads": 102,
+          "actualRigidEnds": 2,
+          "actualGroveContacts": 8,
+          "GrovesolderDrillWallRays": 32,
+          "externalOnly": true
+        },
+        "transformedStructure": {
+          "route": "own-dimensional-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 439,
+          "nominalFPCMm": [
+            10,
+            100
+          ],
+          "completeStraightEnvelopeMm": [
+            10,
+            137,
+            7.5
+          ],
+          "neutralAxisLengthMm": 100,
+          "sampledArcLengthMm": 100,
+          "bendDeg": 0,
+          "continuousThickLayers": 3,
+          "LEDs": 15,
+          "packageFirstMaterialRays": 15,
+          "actualSolderBridges": 96,
+          "actualCopperPads": 102,
+          "actualRigidEnds": 2,
+          "actualGroveContacts": 8,
+          "GrovesolderDrillWallRays": 32,
+          "externalOnly": true
+        }
+      },
+      {
+        "id": "rfid",
+        "body": [
+          "grove"
+        ],
+        "ports": [
+          "grove"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 111,
+          "triangles": 27008,
+          "actualEnvelopeMm": [
+            24,
+            48.00000001192093,
+            8.000000002980233
+          ],
+          "vendorTableOrderMm": [
+            48,
+            24,
+            8
+          ],
+          "closureRays": 14,
+          "trueMountingAxes": 2,
+          "mountBoreWallRays": 40,
+          "PCBScallopWallRays": 2,
+          "PCBLeadDrills": 4,
+          "PCBDrillWallRays": 16,
+          "realReceivingContacts": 4,
+          "realReturns": 4,
+          "realFeet": 4,
+          "realThroughPCBContacts": 4,
+          "realSideSlotWithBacking": true,
+          "sideSlotWallRays": 4,
+          "physicalFilms": 2,
+          "physicalM5Glyphs": 2,
+          "inferredAntennaLoops": 3,
+          "fixedOwnSchematicPassives": 5,
+          "scope": "Own original U031 appearance;all internal/package/antenna positions inferred,no native/GPU/manufacturing/electrical validation"
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 111,
+          "triangles": 27008,
+          "actualEnvelopeMm": [
+            24,
+            48.00000001192095,
+            8.00000000298023
+          ],
+          "vendorTableOrderMm": [
+            48,
+            24,
+            8
+          ],
+          "closureRays": 14,
+          "trueMountingAxes": 2,
+          "mountBoreWallRays": 40,
+          "PCBScallopWallRays": 2,
+          "PCBLeadDrills": 4,
+          "PCBDrillWallRays": 16,
+          "realReceivingContacts": 4,
+          "realReturns": 4,
+          "realFeet": 4,
+          "realThroughPCBContacts": 4,
+          "realSideSlotWithBacking": true,
+          "sideSlotWallRays": 4,
+          "physicalFilms": 2,
+          "physicalM5Glyphs": 2,
+          "inferredAntennaLoops": 3,
+          "fixedOwnSchematicPassives": 5,
+          "scope": "Own original U031 appearance;all internal/package/antenna positions inferred,no native/GPU/manufacturing/electrical validation"
+        }
+      },
+      {
+        "id": "env",
+        "body": [
+          "grove"
+        ],
+        "ports": [
+          "grove"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "nominalMm": [
+            24.2,
+            32.2,
+            8.1
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24.200000762939453,
+            32.20000076293945,
+            8.100000011473892
+          ],
+          "physicalMeshes": 108,
+          "triangles": 158704,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "allInternalPlanesAndPackagePositions": "Own photo-derived appearance reconstruction,not BOM/manufacturing datums",
+          "closureRays": 12,
+          "mountingBores": {
+            "count": 2,
+            "diameterMm": 5,
+            "centres": [
+              [
+                -8.15,
+                -4
+              ],
+              [
+                8.15,
+                -4
+              ]
+            ],
+            "frontSideWallRays": 8,
+            "inferred": true
+          },
+          "pcbTubeClearanceMm": [
+            0.3000000953674373,
+            0.3000000953674373
+          ],
+          "pcbCentralBossClearanceMm": 0.34999990463256836,
+          "ventRows": [
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4
+          ],
+          "ventCount": 40,
+          "ventWallRays": 320,
+          "ventBackingHits": {
+            "ENV DHT12 physical grille cap and 18 inferred package apertures": 32,
+            "ENV U001 own retained PCB with true bore reliefs and through solder holes": 5,
+            "ENV BMP280 actual metal cap and true pressure hole": 1,
+            "ENV own inferred fixed supporting passive": 1,
+            "ENV HT7533 actual solderland": 1
+          },
+          "dht12": {
+            "realGrilleApertures": 18,
+            "packageGrilleIsInferred": true,
+            "frontSideWallRays": 72,
+            "fixedSensingMedium": true,
+            "legs": 4
+          },
+          "bmp280": {
+            "retainedLgaContacts": 8,
+            "realPressureHoleRadiusMm": 0.16,
+            "frontSideWallRays": 4,
+            "fixedFloor": true
+          },
+          "grove": {
+            "contacts": 4,
+            "rightAngleReturns": 4,
+            "throughPcbTails": 4,
+            "platedBores": 4,
+            "annularPads": 8,
+            "frontSideWallRays": 4
+          },
+          "physicalFilms": 2,
+          "realUncoloredM5Geometry": true,
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "nominalMm": [
+            24.2,
+            32.2,
+            8.1
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24.20000076293948,
+            32.20000076293949,
+            8.100000011473888
+          ],
+          "physicalMeshes": 108,
+          "triangles": 158704,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "allInternalPlanesAndPackagePositions": "Own photo-derived appearance reconstruction,not BOM/manufacturing datums",
+          "closureRays": 12,
+          "mountingBores": {
+            "count": 2,
+            "diameterMm": 5,
+            "centres": [
+              [
+                -8.15,
+                -4
+              ],
+              [
+                8.15,
+                -4
+              ]
+            ],
+            "frontSideWallRays": 8,
+            "inferred": true
+          },
+          "pcbTubeClearanceMm": [
+            0.30000009536746575,
+            0.3000000953674089
+          ],
+          "pcbCentralBossClearanceMm": 0.34999990463253994,
+          "ventRows": [
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4
+          ],
+          "ventCount": 40,
+          "ventWallRays": 320,
+          "ventBackingHits": {
+            "ENV DHT12 physical grille cap and 18 inferred package apertures": 32,
+            "ENV U001 own retained PCB with true bore reliefs and through solder holes": 5,
+            "ENV BMP280 actual metal cap and true pressure hole": 1,
+            "ENV own inferred fixed supporting passive": 1,
+            "ENV HT7533 actual solderland": 1
+          },
+          "dht12": {
+            "realGrilleApertures": 18,
+            "packageGrilleIsInferred": true,
+            "frontSideWallRays": 72,
+            "fixedSensingMedium": true,
+            "legs": 4
+          },
+          "bmp280": {
+            "retainedLgaContacts": 8,
+            "realPressureHoleRadiusMm": 0.16,
+            "frontSideWallRays": 4,
+            "fixedFloor": true
+          },
+          "grove": {
+            "contacts": 4,
+            "rightAngleReturns": 4,
+            "throughPcbTails": 4,
+            "platedBores": 4,
+            "annularPads": 8,
+            "frontSideWallRays": 4
+          },
+          "physicalFilms": 2,
+          "realUncoloredM5Geometry": true,
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "rgb-led-10cm",
+        "panels": 3,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "actualFlexibleMotion": {
+          "presetBendDeg": 0,
+          "partialSamples": 3,
+          "allPhysicalAttributesIndicesWorldEqual": true,
+          "continuousThickStrip": true,
+          "all15PackagesAndSolderSupports": true,
+          "rigidEndboardInkRetained": true,
+          "stripInkHasNoFloatingGap": true,
+          "allowedPortsFollow": true,
+          "presetExactlyRestored": true
+        },
+        "physicalStructure": {
+          "route": "own-dimensional-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 439,
+          "nominalFPCMm": [
+            10,
+            100
+          ],
+          "completeStraightEnvelopeMm": [
+            10,
+            137,
+            7.5
+          ],
+          "neutralAxisLengthMm": 100,
+          "sampledArcLengthMm": 100,
+          "bendDeg": 0,
+          "continuousThickLayers": 3,
+          "LEDs": 15,
+          "packageFirstMaterialRays": 15,
+          "actualSolderBridges": 96,
+          "actualCopperPads": 102,
+          "actualRigidEnds": 2,
+          "actualGroveContacts": 8,
+          "GrovesolderDrillWallRays": 32,
+          "externalOnly": true
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "rfid",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "actualFlexibleMotion": null,
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 111,
+          "triangles": 27008,
+          "actualEnvelopeMm": [
+            24,
+            48.00000001192093,
+            8.000000002980233
+          ],
+          "vendorTableOrderMm": [
+            48,
+            24,
+            8
+          ],
+          "closureRays": 14,
+          "trueMountingAxes": 2,
+          "mountBoreWallRays": 40,
+          "PCBScallopWallRays": 2,
+          "PCBLeadDrills": 4,
+          "PCBDrillWallRays": 16,
+          "realReceivingContacts": 4,
+          "realReturns": 4,
+          "realFeet": 4,
+          "realThroughPCBContacts": 4,
+          "realSideSlotWithBacking": true,
+          "sideSlotWallRays": 4,
+          "physicalFilms": 2,
+          "physicalM5Glyphs": 2,
+          "inferredAntennaLoops": 3,
+          "fixedOwnSchematicPassives": 5,
+          "scope": "Own original U031 appearance;all internal/package/antenna positions inferred,no native/GPU/manufacturing/electrical validation"
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "env",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "actualFlexibleMotion": null,
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "nominalMm": [
+            24.2,
+            32.2,
+            8.1
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24.200000762939453,
+            32.20000076293945,
+            8.100000011473895
+          ],
+          "physicalMeshes": 108,
+          "triangles": 158704,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "allInternalPlanesAndPackagePositions": "Own photo-derived appearance reconstruction,not BOM/manufacturing datums",
+          "closureRays": 12,
+          "mountingBores": {
+            "count": 2,
+            "diameterMm": 5,
+            "centres": [
+              [
+                -8.15,
+                -4
+              ],
+              [
+                8.15,
+                -4
+              ]
+            ],
+            "frontSideWallRays": 8,
+            "inferred": true
+          },
+          "pcbTubeClearanceMm": [
+            0.300000095367432,
+            0.300000095367432
+          ],
+          "pcbCentralBossClearanceMm": 0.34999990463256836,
+          "ventRows": [
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4
+          ],
+          "ventCount": 40,
+          "ventWallRays": 320,
+          "ventBackingHits": {
+            "ENV DHT12 physical grille cap and 18 inferred package apertures": 32,
+            "ENV U001 own retained PCB with true bore reliefs and through solder holes": 5,
+            "ENV BMP280 actual metal cap and true pressure hole": 1,
+            "ENV own inferred fixed supporting passive": 1,
+            "ENV HT7533 actual solderland": 1
+          },
+          "dht12": {
+            "realGrilleApertures": 18,
+            "packageGrilleIsInferred": true,
+            "frontSideWallRays": 72,
+            "fixedSensingMedium": true,
+            "legs": 4
+          },
+          "bmp280": {
+            "retainedLgaContacts": 8,
+            "realPressureHoleRadiusMm": 0.16,
+            "frontSideWallRays": 4,
+            "fixedFloor": true
+          },
+          "grove": {
+            "contacts": 4,
+            "rightAngleReturns": 4,
+            "throughPcbTails": 4,
+            "platedBores": 4,
+            "annularPads": 8,
+            "frontSideWallRays": 4
+          },
+          "physicalFilms": 2,
+          "realUncoloredM5Geometry": true,
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        },
+        "staticMounting": []
+      }
+    ],
+    "configurations": [
+      {
+        "id": "rgb-led-10cm",
+        "optionCases": 4,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "rfid",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "env",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      }
+    ],
+    "behaviors": [
+      {
+        "id": "rgb-led-10cm",
+        "explicitCurrentParentCableSampling": true,
+        "independentPhysicalRGBOutputs": 15,
+        "onColorBrightnessExternalNoEcho": true,
+        "partialFlexTransition": true,
+        "actualFlexibleSurfacesRigidPackagesAndEnds": true,
+        "neutralAxisArcLengthPreserved": true,
+        "indicesPreserved": true,
+        "solderSupportsConnected": true,
+        "allowedPortsAndCableFollow": true,
+        "peerPhysicalLightsAndFramebuffersUnchanged": true,
+        "currentPresetExactlyRestored": true
+      },
+      {
+        "id": "rfid",
+        "noUIDNFCReadWriteRFSensingAddressI2CFirmware": true,
+        "rejectedCommandTypes": 16,
+        "noControlsOutputsJointsOrSensorAnchor": true,
+        "shapePortsPeersEventsInvariant": true,
+        "staticAfter1_25Seconds": true
+      },
+      {
+        "id": "env",
+        "staticActualCasePcbPackagesContacts": true,
+        "noEnvironmentalReadingsSamplingI2cRegistersPowerFirmware": true,
+        "noAutomaticLightsMotionOrInputEcho": true,
+        "allPhysicalAttributesIndicesWorldRetained": true,
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0,
+        "noSensorAnchor": true
+      }
+    ],
+    "accessories": [
+      {
+        "id": "rgb-led-10cm",
+        "mounting": []
+      },
+      {
+        "id": "rfid",
+        "mounting": []
+      },
+      {
+        "id": "env",
+        "mounting": []
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "rgb-led-10cm",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "rfid",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "env",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      }
+    ],
+    "disposedResources": 1252,
+    "cases": [
+      "three-real-four-core-branches",
+      "own-dimensional-parametric-exact-SKU-assemblies",
+      "real-strip-endboards-and-grove-receiving-assemblies",
+      "real40-vent-DHT12-BMP280-and15-external-RGB-materials",
+      "real-continuous-strip-external-flex-physical-invariance",
+      "own-readable-PCB-front-and-rear-print",
+      "both-entries-actual-presets-and-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-peer-isolation",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own three physical assemblies and actual matching ordinary print,actual evidenced physical interfaces and external15LED materials and real flexible shape;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/UID-environmental-values/electrical/firmware/whole-history acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "rgb-led-10cm",
+        "body": [
+          "flex",
+          "led-1",
+          "led-2",
+          "led-3",
+          "led-4",
+          "led-5",
+          "led-6",
+          "led-7",
+          "led-8",
+          "led-9",
+          "led-10",
+          "led-11",
+          "led-12",
+          "led-13",
+          "led-14",
+          "led-15",
+          "grove",
+          "extension"
+        ],
+        "ports": [
+          "grove",
+          "extension"
+        ],
+        "controls": [],
+        "leds": [
+          "led-1",
+          "led-2",
+          "led-3",
+          "led-4",
+          "led-5",
+          "led-6",
+          "led-7",
+          "led-8",
+          "led-9",
+          "led-10",
+          "led-11",
+          "led-12",
+          "led-13",
+          "led-14",
+          "led-15"
+        ],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "route": "own-dimensional-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 439,
+          "nominalFPCMm": [
+            10,
+            100
+          ],
+          "completeStraightEnvelopeMm": [
+            10,
+            137,
+            7.5
+          ],
+          "neutralAxisLengthMm": 100,
+          "sampledArcLengthMm": 100,
+          "bendDeg": 0,
+          "continuousThickLayers": 3,
+          "LEDs": 15,
+          "packageFirstMaterialRays": 15,
+          "actualSolderBridges": 96,
+          "actualCopperPads": 102,
+          "actualRigidEnds": 2,
+          "actualGroveContacts": 8,
+          "GrovesolderDrillWallRays": 32,
+          "externalOnly": true
+        },
+        "transformedStructure": {
+          "route": "own-dimensional-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 439,
+          "nominalFPCMm": [
+            10,
+            100
+          ],
+          "completeStraightEnvelopeMm": [
+            10,
+            137,
+            7.5
+          ],
+          "neutralAxisLengthMm": 100,
+          "sampledArcLengthMm": 100,
+          "bendDeg": 0,
+          "continuousThickLayers": 3,
+          "LEDs": 15,
+          "packageFirstMaterialRays": 15,
+          "actualSolderBridges": 96,
+          "actualCopperPads": 102,
+          "actualRigidEnds": 2,
+          "actualGroveContacts": 8,
+          "GrovesolderDrillWallRays": 32,
+          "externalOnly": true
+        }
+      },
+      {
+        "id": "rfid",
+        "body": [
+          "grove"
+        ],
+        "ports": [
+          "grove"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 111,
+          "triangles": 27008,
+          "actualEnvelopeMm": [
+            24,
+            48.00000001192093,
+            8.000000002980233
+          ],
+          "vendorTableOrderMm": [
+            48,
+            24,
+            8
+          ],
+          "closureRays": 14,
+          "trueMountingAxes": 2,
+          "mountBoreWallRays": 40,
+          "PCBScallopWallRays": 2,
+          "PCBLeadDrills": 4,
+          "PCBDrillWallRays": 16,
+          "realReceivingContacts": 4,
+          "realReturns": 4,
+          "realFeet": 4,
+          "realThroughPCBContacts": 4,
+          "realSideSlotWithBacking": true,
+          "sideSlotWallRays": 4,
+          "physicalFilms": 2,
+          "physicalM5Glyphs": 2,
+          "inferredAntennaLoops": 3,
+          "fixedOwnSchematicPassives": 5,
+          "scope": "Own original U031 appearance;all internal/package/antenna positions inferred,no native/GPU/manufacturing/electrical validation"
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 111,
+          "triangles": 27008,
+          "actualEnvelopeMm": [
+            24,
+            48.00000001192095,
+            8.00000000298023
+          ],
+          "vendorTableOrderMm": [
+            48,
+            24,
+            8
+          ],
+          "closureRays": 14,
+          "trueMountingAxes": 2,
+          "mountBoreWallRays": 40,
+          "PCBScallopWallRays": 2,
+          "PCBLeadDrills": 4,
+          "PCBDrillWallRays": 16,
+          "realReceivingContacts": 4,
+          "realReturns": 4,
+          "realFeet": 4,
+          "realThroughPCBContacts": 4,
+          "realSideSlotWithBacking": true,
+          "sideSlotWallRays": 4,
+          "physicalFilms": 2,
+          "physicalM5Glyphs": 2,
+          "inferredAntennaLoops": 3,
+          "fixedOwnSchematicPassives": 5,
+          "scope": "Own original U031 appearance;all internal/package/antenna positions inferred,no native/GPU/manufacturing/electrical validation"
+        }
+      },
+      {
+        "id": "env",
+        "body": [
+          "grove"
+        ],
+        "ports": [
+          "grove"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "nominalMm": [
+            24.2,
+            32.2,
+            8.1
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24.200000762939453,
+            32.20000076293945,
+            8.100000011473892
+          ],
+          "physicalMeshes": 108,
+          "triangles": 158704,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "allInternalPlanesAndPackagePositions": "Own photo-derived appearance reconstruction,not BOM/manufacturing datums",
+          "closureRays": 12,
+          "mountingBores": {
+            "count": 2,
+            "diameterMm": 5,
+            "centres": [
+              [
+                -8.15,
+                -4
+              ],
+              [
+                8.15,
+                -4
+              ]
+            ],
+            "frontSideWallRays": 8,
+            "inferred": true
+          },
+          "pcbTubeClearanceMm": [
+            0.3000000953674373,
+            0.3000000953674373
+          ],
+          "pcbCentralBossClearanceMm": 0.34999990463256836,
+          "ventRows": [
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4
+          ],
+          "ventCount": 40,
+          "ventWallRays": 320,
+          "ventBackingHits": {
+            "ENV DHT12 physical grille cap and 18 inferred package apertures": 32,
+            "ENV U001 own retained PCB with true bore reliefs and through solder holes": 5,
+            "ENV BMP280 actual metal cap and true pressure hole": 1,
+            "ENV own inferred fixed supporting passive": 1,
+            "ENV HT7533 actual solderland": 1
+          },
+          "dht12": {
+            "realGrilleApertures": 18,
+            "packageGrilleIsInferred": true,
+            "frontSideWallRays": 72,
+            "fixedSensingMedium": true,
+            "legs": 4
+          },
+          "bmp280": {
+            "retainedLgaContacts": 8,
+            "realPressureHoleRadiusMm": 0.16,
+            "frontSideWallRays": 4,
+            "fixedFloor": true
+          },
+          "grove": {
+            "contacts": 4,
+            "rightAngleReturns": 4,
+            "throughPcbTails": 4,
+            "platedBores": 4,
+            "annularPads": 8,
+            "frontSideWallRays": 4
+          },
+          "physicalFilms": 2,
+          "realUncoloredM5Geometry": true,
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "nominalMm": [
+            24.2,
+            32.2,
+            8.1
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24.20000076293948,
+            32.20000076293949,
+            8.100000011473888
+          ],
+          "physicalMeshes": 108,
+          "triangles": 158704,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "allInternalPlanesAndPackagePositions": "Own photo-derived appearance reconstruction,not BOM/manufacturing datums",
+          "closureRays": 12,
+          "mountingBores": {
+            "count": 2,
+            "diameterMm": 5,
+            "centres": [
+              [
+                -8.15,
+                -4
+              ],
+              [
+                8.15,
+                -4
+              ]
+            ],
+            "frontSideWallRays": 8,
+            "inferred": true
+          },
+          "pcbTubeClearanceMm": [
+            0.30000009536746575,
+            0.3000000953674089
+          ],
+          "pcbCentralBossClearanceMm": 0.34999990463253994,
+          "ventRows": [
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4
+          ],
+          "ventCount": 40,
+          "ventWallRays": 320,
+          "ventBackingHits": {
+            "ENV DHT12 physical grille cap and 18 inferred package apertures": 32,
+            "ENV U001 own retained PCB with true bore reliefs and through solder holes": 5,
+            "ENV BMP280 actual metal cap and true pressure hole": 1,
+            "ENV own inferred fixed supporting passive": 1,
+            "ENV HT7533 actual solderland": 1
+          },
+          "dht12": {
+            "realGrilleApertures": 18,
+            "packageGrilleIsInferred": true,
+            "frontSideWallRays": 72,
+            "fixedSensingMedium": true,
+            "legs": 4
+          },
+          "bmp280": {
+            "retainedLgaContacts": 8,
+            "realPressureHoleRadiusMm": 0.16,
+            "frontSideWallRays": 4,
+            "fixedFloor": true
+          },
+          "grove": {
+            "contacts": 4,
+            "rightAngleReturns": 4,
+            "throughPcbTails": 4,
+            "platedBores": 4,
+            "annularPads": 8,
+            "frontSideWallRays": 4
+          },
+          "physicalFilms": 2,
+          "realUncoloredM5Geometry": true,
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "rgb-led-10cm",
+        "panels": 3,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "actualFlexibleMotion": {
+          "presetBendDeg": 0,
+          "partialSamples": 3,
+          "allPhysicalAttributesIndicesWorldEqual": true,
+          "continuousThickStrip": true,
+          "all15PackagesAndSolderSupports": true,
+          "rigidEndboardInkRetained": true,
+          "stripInkHasNoFloatingGap": true,
+          "allowedPortsFollow": true,
+          "presetExactlyRestored": true
+        },
+        "physicalStructure": {
+          "route": "own-dimensional-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 439,
+          "nominalFPCMm": [
+            10,
+            100
+          ],
+          "completeStraightEnvelopeMm": [
+            10,
+            137,
+            7.5
+          ],
+          "neutralAxisLengthMm": 100,
+          "sampledArcLengthMm": 100,
+          "bendDeg": 0,
+          "continuousThickLayers": 3,
+          "LEDs": 15,
+          "packageFirstMaterialRays": 15,
+          "actualSolderBridges": 96,
+          "actualCopperPads": 102,
+          "actualRigidEnds": 2,
+          "actualGroveContacts": 8,
+          "GrovesolderDrillWallRays": 32,
+          "externalOnly": true
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "rfid",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "actualFlexibleMotion": null,
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 111,
+          "triangles": 27008,
+          "actualEnvelopeMm": [
+            24,
+            48.00000001192093,
+            8.000000002980233
+          ],
+          "vendorTableOrderMm": [
+            48,
+            24,
+            8
+          ],
+          "closureRays": 14,
+          "trueMountingAxes": 2,
+          "mountBoreWallRays": 40,
+          "PCBScallopWallRays": 2,
+          "PCBLeadDrills": 4,
+          "PCBDrillWallRays": 16,
+          "realReceivingContacts": 4,
+          "realReturns": 4,
+          "realFeet": 4,
+          "realThroughPCBContacts": 4,
+          "realSideSlotWithBacking": true,
+          "sideSlotWallRays": 4,
+          "physicalFilms": 2,
+          "physicalM5Glyphs": 2,
+          "inferredAntennaLoops": 3,
+          "fixedOwnSchematicPassives": 5,
+          "scope": "Own original U031 appearance;all internal/package/antenna positions inferred,no native/GPU/manufacturing/electrical validation"
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "env",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "actualFlexibleMotion": null,
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "nominalMm": [
+            24.2,
+            32.2,
+            8.1
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24.200000762939453,
+            32.20000076293945,
+            8.100000011473895
+          ],
+          "physicalMeshes": 108,
+          "triangles": 158704,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "allInternalPlanesAndPackagePositions": "Own photo-derived appearance reconstruction,not BOM/manufacturing datums",
+          "closureRays": 12,
+          "mountingBores": {
+            "count": 2,
+            "diameterMm": 5,
+            "centres": [
+              [
+                -8.15,
+                -4
+              ],
+              [
+                8.15,
+                -4
+              ]
+            ],
+            "frontSideWallRays": 8,
+            "inferred": true
+          },
+          "pcbTubeClearanceMm": [
+            0.300000095367432,
+            0.300000095367432
+          ],
+          "pcbCentralBossClearanceMm": 0.34999990463256836,
+          "ventRows": [
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4
+          ],
+          "ventCount": 40,
+          "ventWallRays": 320,
+          "ventBackingHits": {
+            "ENV DHT12 physical grille cap and 18 inferred package apertures": 32,
+            "ENV U001 own retained PCB with true bore reliefs and through solder holes": 5,
+            "ENV BMP280 actual metal cap and true pressure hole": 1,
+            "ENV own inferred fixed supporting passive": 1,
+            "ENV HT7533 actual solderland": 1
+          },
+          "dht12": {
+            "realGrilleApertures": 18,
+            "packageGrilleIsInferred": true,
+            "frontSideWallRays": 72,
+            "fixedSensingMedium": true,
+            "legs": 4
+          },
+          "bmp280": {
+            "retainedLgaContacts": 8,
+            "realPressureHoleRadiusMm": 0.16,
+            "frontSideWallRays": 4,
+            "fixedFloor": true
+          },
+          "grove": {
+            "contacts": 4,
+            "rightAngleReturns": 4,
+            "throughPcbTails": 4,
+            "platedBores": 4,
+            "annularPads": 8,
+            "frontSideWallRays": 4
+          },
+          "physicalFilms": 2,
+          "realUncoloredM5Geometry": true,
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        },
+        "staticMounting": []
+      }
+    ],
+    "configurations": [
+      {
+        "id": "rgb-led-10cm",
+        "optionCases": 4,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "rfid",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "env",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      }
+    ],
+    "behaviors": [
+      {
+        "id": "rgb-led-10cm",
+        "explicitCurrentParentCableSampling": true,
+        "independentPhysicalRGBOutputs": 15,
+        "onColorBrightnessExternalNoEcho": true,
+        "partialFlexTransition": true,
+        "actualFlexibleSurfacesRigidPackagesAndEnds": true,
+        "neutralAxisArcLengthPreserved": true,
+        "indicesPreserved": true,
+        "solderSupportsConnected": true,
+        "allowedPortsAndCableFollow": true,
+        "peerPhysicalLightsAndFramebuffersUnchanged": true,
+        "currentPresetExactlyRestored": true
+      },
+      {
+        "id": "rfid",
+        "noUIDNFCReadWriteRFSensingAddressI2CFirmware": true,
+        "rejectedCommandTypes": 16,
+        "noControlsOutputsJointsOrSensorAnchor": true,
+        "shapePortsPeersEventsInvariant": true,
+        "staticAfter1_25Seconds": true
+      },
+      {
+        "id": "env",
+        "staticActualCasePcbPackagesContacts": true,
+        "noEnvironmentalReadingsSamplingI2cRegistersPowerFirmware": true,
+        "noAutomaticLightsMotionOrInputEcho": true,
+        "allPhysicalAttributesIndicesWorldRetained": true,
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0,
+        "noSensorAnchor": true
+      }
+    ],
+    "accessories": [
+      {
+        "id": "rgb-led-10cm",
+        "mounting": []
+      },
+      {
+        "id": "rfid",
+        "mounting": []
+      },
+      {
+        "id": "env",
+        "mounting": []
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "rgb-led-10cm",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "rfid",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "env",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      }
+    ],
+    "disposedResources": 1252,
+    "cases": [
+      "three-real-four-core-branches",
+      "own-dimensional-parametric-exact-SKU-assemblies",
+      "real-strip-endboards-and-grove-receiving-assemblies",
+      "real40-vent-DHT12-BMP280-and15-external-RGB-materials",
+      "real-continuous-strip-external-flex-physical-invariance",
+      "own-readable-PCB-front-and-rear-print",
+      "both-entries-actual-presets-and-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-peer-isolation",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own three physical assemblies and actual matching ordinary print,actual evidenced physical interfaces and external15LED materials and real flexible shape;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/UID-environmental-values/electrical/firmware/whole-history acceptance"
+  },
+  "checks": {
+    "localProductSmoke": "all current batch products pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "rgb-led-10cm",
+        "status": "frozen",
+        "checkedFiles": 12
+      },
+      {
+        "id": "rfid",
+        "status": "frozen",
+        "checkedFiles": 13
+      },
+      {
+        "id": "env",
+        "status": "frozen",
+        "checkedFiles": 11
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "All physical attributes/index/world matrices preserved across actual entries/configurations",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "760c86dc21ea0db3be33c3aa786c6ea734173fdfebaee641f08c8f3e2ec915ba",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "5bb37c6673edef744de000892dd6e680561590a657d8f364fba58bf9f9194166",
+      "logDistributed": false
+    },
+    "exportCount": 6,
+    "catalogConfigurations": {
+      "status": "pass",
+      "products": [
+        {
+          "id": "rgb-led-10cm",
+          "presets": [
+            {
+              "id": "straight",
+              "name": "15灯直条",
+              "options": {
+                "bendDeg": 0
+              }
+            },
+            {
+              "id": "arc",
+              "name": "15灯平滑弯曲",
+              "options": {
+                "bendDeg": 90
+              }
+            },
+            {
+              "id": "reverse",
+              "name": "15灯反向柔性弯曲",
+              "options": {
+                "bendDeg": -60
+              }
+            }
+          ],
+          "defaults": {
+            "bendDeg": 0
+          }
+        },
+        {
+          "id": "rfid",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "原版 RFID · MFRC522 完整本体",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        },
+        {
+          "id": "env",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "完整原版 ENV U001",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        }
+      ],
+      "scope": "Batch 47: current frozen named presets, constructor defaults and existing demo contract"
+    },
+    "livePreview": "184-product catalog, 3 own runtime chunks and all corresponding source PNG bytes verified in live dist (ordinary or inlined assets)",
+    "newSourcePrivacy": "New JS/JSON/Markdown/PNG and all current added catalog/manifest records checked; private table/URLs/vectors/original names/mappings/raw material/intermediates excluded",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "Only new products/catalog entries/exports/guide/plan; protected old private/public bytes retained",
+    "existingPublicUnitFilesUnchanged": 1398,
+    "existingPrivateUnitFilesUnchanged": 1359,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "publicSharedProtectedFilesUnchanged": 2,
+    "privateSharedProtectedFilesUnchanged": 2,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [],
+  "previewAssets": [
+    {
+      "id": "rgb-led-10cm",
+      "file": "assets/rgb-led-10cm-Bpt_vOWZ.js",
+      "sha256": "91218dd2951cda9e7a89a9722946fb0758dcd01462623cc765b90e7d2c4eb25d"
+    },
+    {
+      "id": "rfid",
+      "file": "assets/rfid-CtROGRxk.js",
+      "sha256": "77f35bca2fac1bf06fc7edfb5ad8d467ed60faff48cb6f10beca93acff2e6844"
+    },
+    {
+      "id": "env",
+      "file": "assets/env-DacUpAlJ.js",
+      "sha256": "cbd87415536ae50e201bc85a54b92b64b30bb7c8a241799c7fa5b3f8ce9530da"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/rgb-led-10cm/StripFlex.js",
+      "sha256": "5e2122dad88381be0876e45a912c2ee1b0f58824d6f2b6096f15d0516c8750f7"
+    },
+    {
+      "path": "src/units/rgb-led-10cm/assembly.js",
+      "sha256": "529422d7b13574bfadd433345328415ca07d66c3fe45284fe775f5edcb968b35"
+    },
+    {
+      "path": "src/units/rgb-led-10cm/dimensions.js",
+      "sha256": "a0ac8e32b992a3773d2a50bcea66af76805665f1ddca90dfa58c89918e7a9cdb"
+    },
+    {
+      "path": "src/units/rgb-led-10cm/index.js",
+      "sha256": "a9ceca7d77ad6d8fb23f85576dc27af30946f484444344deec4f472328a2f3d7"
+    },
+    {
+      "path": "src/units/rgb-led-10cm/reference-redraw-input.png",
+      "sha256": "73159e3f570eb770f46e3cf5bbef245f226a21aeb3fcec7dd301c9ad7578903b"
+    },
+    {
+      "path": "src/units/rgb-led-10cm/reference-redraw-next.png",
+      "sha256": "a59964f6c2fce1e2d6db6031d4f4fbf141fc04dcde73010584e7561792e2afd8"
+    },
+    {
+      "path": "src/units/rgb-led-10cm/reference-redraw-strip.png",
+      "sha256": "91fcc8bb35c7ff91f9616f4e80d2d77121fc0d614e874d66fcb88a125b500492"
+    },
+    {
+      "path": "src/units/rgb-led-10cm/stickers.js",
+      "sha256": "9cdf1911c4ecad5e4d53b22d2b09ad68bfe456c9b0696c4fead8e39e58902131"
+    },
+    {
+      "path": "docs/research/rgb-led-10cm/artwork.json",
+      "sha256": "c5733f5e48426cd51e8acb62be52bcf2e80dd9159229bc0d6fd88b261dab584d"
+    },
+    {
+      "path": "docs/research/rgb-led-10cm/modeling.md",
+      "sha256": "13768a6041c14adf3a1c2d8fdce685d60715acf5f7b9fa7bfcae5eb454f96d76"
+    },
+    {
+      "path": "docs/research/rgb-led-10cm/smoke.json",
+      "sha256": "9c70a70711b28ec72efd9da25b0d64cf9fd2b61b9facf5328a3b787ef4e91230"
+    },
+    {
+      "path": "docs/research/rgb-led-10cm/sources.json",
+      "sha256": "23e6fab772880e3d45191e0c8cfccb9f6b87abfecbf559f073424ce28a0cd162"
+    },
+    {
+      "path": "src/units/rfid/artwork/front.png",
+      "sha256": "f27e41868ddce0036feccd50b15d9a29af1d0e44c91df0080795ac07661cda6c"
+    },
+    {
+      "path": "src/units/rfid/artwork/rear.png",
+      "sha256": "dc5e2b611a4941c29c7f6367bf597f23df4855b1b8b704122e05b37e53342647"
+    },
+    {
+      "path": "src/units/rfid/assembly.js",
+      "sha256": "2ef179455ac990d0caf7e2da11fb4d572fefb7db6243ff9d7ba11b1327da0ea8"
+    },
+    {
+      "path": "src/units/rfid/connectors.js",
+      "sha256": "4f51f01f3a90ee1e7bff2bea75e1f3cd3f0b3463f6ef0c447e689af28aeef1e2"
+    },
+    {
+      "path": "src/units/rfid/dimensions.js",
+      "sha256": "0e2f8085cf97372a54a234efac71c9ca5e0bc8ae59a2be5a8ae140700f454066"
+    },
+    {
+      "path": "src/units/rfid/electronics.js",
+      "sha256": "99cc87a34f673d01ee6a4e8cb6e365d402af1489e0df44ee7aef00c0afc08c2f"
+    },
+    {
+      "path": "src/units/rfid/geometry.js",
+      "sha256": "7b696b50b72f96b8269751f6dda0411129949f5a60b5c21975a599a77e46d79f"
+    },
+    {
+      "path": "src/units/rfid/index.js",
+      "sha256": "5a775f03cf7744b24e3f8713bc7b509c462e55997028061a7bc65326e38ef383"
+    },
+    {
+      "path": "src/units/rfid/shell.js",
+      "sha256": "dc46f5641a4fc51996a240f08f184822e8dea7a4f1556fe0e22758df20aa39d4"
+    },
+    {
+      "path": "docs/research/rfid/artwork.json",
+      "sha256": "dff252e2eaf0157680b781d3a3d0b1d4f83dbd7a98b9a1ab47f329a507497591"
+    },
+    {
+      "path": "docs/research/rfid/modeling.md",
+      "sha256": "63215679a08c8bfe4cdcff67d1538c6ac5bf30a660c0d4545fb153ea4c292e1b"
+    },
+    {
+      "path": "docs/research/rfid/smoke.json",
+      "sha256": "e061c2d53a2243e99481f744841cb784cc2bab61a4b855dd9b933948a1870f86"
+    },
+    {
+      "path": "docs/research/rfid/sources.json",
+      "sha256": "c555237d873880705e078901eb8a710a165cd7682d0c42153ecda014591be515"
+    },
+    {
+      "path": "src/units/env/artwork/back.png",
+      "sha256": "977bdd2afef4561e253d20e4696b74fdcc918328e4c6bdb8895d96fde6f8dd85"
+    },
+    {
+      "path": "src/units/env/artwork/qc.png",
+      "sha256": "27dd05c7f1c5fefd1e29e9efbbd03f40b3cac087299f5ca0b5ccdc84a5e1323d"
+    },
+    {
+      "path": "src/units/env/assembly.js",
+      "sha256": "46bf13ff0fd2e379b9bf2ce7a7e6183fbf039aeb957fe0687ba8c53fa33979c1"
+    },
+    {
+      "path": "src/units/env/dimensions.js",
+      "sha256": "b4f40021f8a34d227329bd326b60ab936ad07524e1168e33b53b0e85bfcf6ede"
+    },
+    {
+      "path": "src/units/env/geometry.js",
+      "sha256": "3de4bf153ca89aac969946c34bf58854435e67507efaad66a3ee24ca8c4442e3"
+    },
+    {
+      "path": "src/units/env/index.js",
+      "sha256": "15d742928b0c0a8393747423d85851aee86587f37c43c47c5d4e19a0d28da9a7"
+    },
+    {
+      "path": "src/units/env/stickers.js",
+      "sha256": "f061a8706355d0aa80bf1daadd6694474d0a7abc43fad7da14149c2b4689f072"
+    },
+    {
+      "path": "docs/research/env/artwork.json",
+      "sha256": "df15fff50f1171764d4aaa81ee9893399f4149c9c68e6dbbb8226491113c604f"
+    },
+    {
+      "path": "docs/research/env/modeling.md",
+      "sha256": "833f40fb59f66045129e279e41286a4e8a2bbe553d22bea2c4d7a11825524619"
+    },
+    {
+      "path": "docs/research/env/smoke.json",
+      "sha256": "2838e4c6efa76dafca25c331e1ce55b4f828274d8f16d34bd04cae44f78366e5"
+    },
+    {
+      "path": "docs/research/env/sources.json",
+      "sha256": "ff60b9e3b26b9fb19004d4f7066e9348438e887d64205ddd8b248b99b6fd800c"
+    }
+  ],
+  "limitations": [
+    "Own-dimensional-parametric reconstruction from exact SKU dimensions and own official photos;no native CAD/source-face claim or borrowed successor geometry",
+    "A035 is exact10cm15LED3535;100x10 nominal strip remains separate from inferred complete endboard/socket envelope;long29LED family image supplies endpoint detail only;no A093 waterproof5050 body",
+    "Actual flexible appearance is externally commanded geometry only;continuous strip/backing and rigid packages/contacts/boards retain real support and physical path;no elasticity,force,unproven hinge or rated minimum bend-radius claim",
+    "Exactly15 lights change actual independent materials only;no default rainbow,serial cascade,power/current or firmware simulation",
+    "OriginalRFID U031 MFRC52224x48x8 axis order is explicit;hidden antenna/package installation and small side-slot backing are reconstruction;no invented UID/read/write/LED/button",
+    "OriginalENV U001 DHT12/BMP28024.2x32.2x8.1 with own40staggered vents and actual supported packages;never stretch later ENV/BPS case or manufacture environmental readings",
+    "Hidden layers/PCB/connector/support/film fit are reconstruction,not full BOM/manufacturing/productionfit/hardware acceptance",
+    "Own legible silk/films accurately code-redrawn as ordinary PNG with sources;physical carriers/relief retained;no photo crop,wrong SKU,unknown microtext or individual code",
+    "Private CSV/originals/URLs/names/mappings/vectors/raw sources/generators/intermediates excluded;old50PNG/Scroll/StackChan/Puzzle/Catch boundaries remain;overall goal active"
+  ]
+}

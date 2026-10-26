@@ -1,0 +1,1940 @@
+{
+  "savedAt": "2026-10-26T21:50:31.753420+00:00",
+  "stage": "modeled",
+  "scope": "Own-dimensional-parametric exact original M5Bit A051,Mini BPS U090,HEX A045 complete appearance/real connectors and corresponding ordinary PNG,externally driven actual37LED materials and real three-branch four-core API fixture/builds;no browser or whole-catalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 167,
+    "modeled": 181,
+    "verified": 0
+  },
+  "localHead": "4fd5216dd2b310b6c92b366cb4c795f08dd15ff6",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "m5-bit",
+      "status": "pass",
+      "report": "docs/research/m5-bit/smoke.json",
+      "meshes": null,
+      "triangles": null
+    },
+    {
+      "id": "bps",
+      "status": "pass",
+      "report": "docs/research/bps/smoke.json",
+      "meshes": null,
+      "triangles": null
+    },
+    {
+      "id": "hex",
+      "status": "pass",
+      "report": "docs/research/hex/smoke.json",
+      "meshes": null,
+      "triangles": null
+    }
+  ],
+  "pngCount": 5,
+  "rasters": [
+    {
+      "path": "src/units/m5-bit/reference-redraw-back.png",
+      "pixels": [
+        3420,
+        1260
+      ],
+      "sha256": "4e1718846a0a3de4f6b3dba2f9fa0c29025df1f6a2c41d6feffe06ec3cee50fe"
+    },
+    {
+      "path": "src/units/m5-bit/reference-redraw-front.png",
+      "pixels": [
+        3420,
+        1260
+      ],
+      "sha256": "c7518fcf76156286e04506e206b424243b0bcd1dcac972c304a695beb5ced188"
+    },
+    {
+      "path": "src/units/bps/artwork/back.png",
+      "pixels": [
+        1296,
+        344
+      ],
+      "sha256": "053e9008e198ead9820d44c791e12235617ff15e50a6b3e423e65a6747522d3f"
+    },
+    {
+      "path": "src/units/bps/artwork/front.png",
+      "pixels": [
+        800,
+        800
+      ],
+      "sha256": "d974d7cff547fcc4d21f6961f201f81ee4c82ac820c3d54d56c6f5800233d755"
+    },
+    {
+      "path": "src/units/hex/artwork/rear.png",
+      "pixels": [
+        3600,
+        3120
+      ],
+      "sha256": "341abe326e6e7281c2b4d5708b94fa17ed367507c94faad1d4d35fc84696c938"
+    }
+  ],
+  "frozenPublicAPI": {
+    "m5-bit": {
+      "exports": [
+        "Model",
+        "GroveModule",
+        "spec",
+        "defaults",
+        "configurationSchema",
+        "configurations"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [],
+      "leds": [],
+      "displays": [],
+      "ports": [
+        "microbit",
+        "io",
+        "aux",
+        "grove"
+      ],
+      "joints": [],
+      "anchors": [],
+      "accessoryExports": [],
+      "defaults": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整原版 M5Bit 转接板",
+          "options": {}
+        }
+      ],
+      "pngCount": 2
+    },
+    "bps": {
+      "exports": [
+        "Model",
+        "GroveModule",
+        "spec",
+        "defaults",
+        "configurationSchema",
+        "configurations"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [],
+      "leds": [],
+      "displays": [],
+      "ports": [
+        "grove"
+      ],
+      "joints": [],
+      "anchors": [],
+      "accessoryExports": [],
+      "defaults": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整原版 Mini BPS U090",
+          "options": {}
+        }
+      ],
+      "pngCount": 2
+    },
+    "hex": {
+      "exports": [
+        "Model",
+        "GroveModule",
+        "spec",
+        "defaults",
+        "configurations",
+        "configurationSchema"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [],
+      "leds": [
+        "led-1",
+        "led-2",
+        "led-3",
+        "led-4",
+        "led-5",
+        "led-6",
+        "led-7",
+        "led-8",
+        "led-9",
+        "led-10",
+        "led-11",
+        "led-12",
+        "led-13",
+        "led-14",
+        "led-15",
+        "led-16",
+        "led-17",
+        "led-18",
+        "led-19",
+        "led-20",
+        "led-21",
+        "led-22",
+        "led-23",
+        "led-24",
+        "led-25",
+        "led-26",
+        "led-27",
+        "led-28",
+        "led-29",
+        "led-30",
+        "led-31",
+        "led-32",
+        "led-33",
+        "led-34",
+        "led-35",
+        "led-36",
+        "led-37"
+      ],
+      "displays": [],
+      "ports": [
+        "grove",
+        "out",
+        "power"
+      ],
+      "joints": [],
+      "anchors": [],
+      "accessoryExports": [],
+      "defaults": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "原版 HEX · 37灯完整灯板",
+          "options": {}
+        }
+      ],
+      "pngCount": 1
+    }
+  },
+  "fixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "m5-bit",
+        "body": [
+          "microbit",
+          "io",
+          "aux",
+          "grove"
+        ],
+        "ports": [
+          "microbit",
+          "io",
+          "aux",
+          "grove"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "route": "own-dimensional-parametric",
+          "nativeFaces": 0,
+          "actualEnvelopeMm": [
+            57,
+            21,
+            11.000000166893008
+          ],
+          "physicalMeshes": 654,
+          "PCBLeadDrills": 57,
+          "PCBLeadDrillWallRays": 228,
+          "PCBLocatorBores": 2,
+          "ioContacts": 45,
+          "ioColumns": 15,
+          "ioRows": 3,
+          "ioPrintedColumns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11,
+            13,
+            14,
+            15,
+            16
+          ],
+          "auxContacts": 8,
+          "cardContacts": 80,
+          "cardBanks": 2,
+          "cardColumns": 40,
+          "cardPitchMm": 1.27,
+          "slotAndContactRays": 83,
+          "actualSMTTails": 80,
+          "actualSMTLands": 80,
+          "groveContacts": 4,
+          "groveReturns": 4,
+          "groveTails": 4,
+          "realBackPackages": true,
+          "physicalFilms": 0,
+          "scope": "Physical appearance only;noelectricalnetlist ormanufacturingfit"
+        },
+        "transformedStructure": {
+          "route": "own-dimensional-parametric",
+          "nativeFaces": 0,
+          "actualEnvelopeMm": [
+            57.000000000000014,
+            21.00000000000003,
+            11.000000166893006
+          ],
+          "physicalMeshes": 654,
+          "PCBLeadDrills": 57,
+          "PCBLeadDrillWallRays": 228,
+          "PCBLocatorBores": 2,
+          "ioContacts": 45,
+          "ioColumns": 15,
+          "ioRows": 3,
+          "ioPrintedColumns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11,
+            13,
+            14,
+            15,
+            16
+          ],
+          "auxContacts": 8,
+          "cardContacts": 80,
+          "cardBanks": 2,
+          "cardColumns": 40,
+          "cardPitchMm": 1.27,
+          "slotAndContactRays": 83,
+          "actualSMTTails": 80,
+          "actualSMTLands": 80,
+          "groveContacts": 4,
+          "groveReturns": 4,
+          "groveTails": 4,
+          "realBackPackages": true,
+          "physicalFilms": 0,
+          "scope": "Physical appearance only;noelectricalnetlist ormanufacturingfit"
+        }
+      },
+      {
+        "id": "bps",
+        "body": [
+          "grove"
+        ],
+        "ports": [
+          "grove"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "nominalMm": [
+            24,
+            24,
+            13
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            24,
+            13
+          ],
+          "allInternalPlanesHolesAndDepths": "Own multiview appearance inferences,not official mechanical datums",
+          "physicalMeshes": 109,
+          "triangles": 42832,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "closureRays": 12,
+          "mountingBores": {
+            "diameterMm": 5,
+            "pitchMm": 16,
+            "source": "inferred",
+            "frontSideWallRays": 8
+          },
+          "pcbOpenEdgeTubeClearanceMm": [
+            0.2999999523162842,
+            0.2999999523162842
+          ],
+          "centralPcbBossClearanceMm": 0.39999985694885254,
+          "ventCount": 2,
+          "ventWallRays": 8,
+          "ventPaths": [
+            {
+              "xMm": -0.85,
+              "metalCanZMm": 2.380000005960464,
+              "innerFrontPlaneMm": 5.3,
+              "clearAirDepthMm": 2.919999994039536
+            },
+            {
+              "xMm": 0.85,
+              "metalCanZMm": 2.380000005960464,
+              "innerFrontPlaneMm": 5.3,
+              "clearAirDepthMm": 2.919999994039536
+            }
+          ],
+          "actualBmp280MetalCan": {
+            "lgaContacts": 8,
+            "pressurePortRadiusMm": 0.16,
+            "actualFrontSidePortWallRays": 4,
+            "deepFixedFloor": true,
+            "scope": "Fixed physical package only"
+          },
+          "actualPcbPosts": 4,
+          "grove": {
+            "contacts": 4,
+            "rightAngleReturns": 4,
+            "throughPcbTails": 4,
+            "platedBores": 4,
+            "annularPads": 8,
+            "frontSideWallRays": 4
+          },
+          "physicalFilms": 2,
+          "realUncoloredM5Geometry": true,
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "nominalMm": [
+            24,
+            24,
+            13
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24.000000000000057,
+            24.000000000000036,
+            13
+          ],
+          "allInternalPlanesHolesAndDepths": "Own multiview appearance inferences,not official mechanical datums",
+          "physicalMeshes": 109,
+          "triangles": 42832,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "closureRays": 12,
+          "mountingBores": {
+            "diameterMm": 5,
+            "pitchMm": 16,
+            "source": "inferred",
+            "frontSideWallRays": 8
+          },
+          "pcbOpenEdgeTubeClearanceMm": [
+            0.2999999523163126,
+            0.29999995231622734
+          ],
+          "centralPcbBossClearanceMm": 0.39999985694885254,
+          "ventCount": 2,
+          "ventWallRays": 8,
+          "ventPaths": [
+            {
+              "xMm": -0.85,
+              "metalCanZMm": 2.3800000059604614,
+              "innerFrontPlaneMm": 5.3,
+              "clearAirDepthMm": 2.9199999940395385
+            },
+            {
+              "xMm": 0.85,
+              "metalCanZMm": 2.3800000059604614,
+              "innerFrontPlaneMm": 5.3,
+              "clearAirDepthMm": 2.9199999940395385
+            }
+          ],
+          "actualBmp280MetalCan": {
+            "lgaContacts": 8,
+            "pressurePortRadiusMm": 0.16,
+            "actualFrontSidePortWallRays": 4,
+            "deepFixedFloor": true,
+            "scope": "Fixed physical package only"
+          },
+          "actualPcbPosts": 4,
+          "grove": {
+            "contacts": 4,
+            "rightAngleReturns": 4,
+            "throughPcbTails": 4,
+            "platedBores": 4,
+            "annularPads": 8,
+            "frontSideWallRays": 4
+          },
+          "physicalFilms": 2,
+          "realUncoloredM5Geometry": true,
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        }
+      },
+      {
+        "id": "hex",
+        "body": [
+          "grove",
+          "out",
+          "power",
+          "led-1",
+          "led-2",
+          "led-3",
+          "led-4",
+          "led-5",
+          "led-6",
+          "led-7",
+          "led-8",
+          "led-9",
+          "led-10",
+          "led-11",
+          "led-12",
+          "led-13",
+          "led-14",
+          "led-15",
+          "led-16",
+          "led-17",
+          "led-18",
+          "led-19",
+          "led-20",
+          "led-21",
+          "led-22",
+          "led-23",
+          "led-24",
+          "led-25",
+          "led-26",
+          "led-27",
+          "led-28",
+          "led-29",
+          "led-30",
+          "led-31",
+          "led-32",
+          "led-33",
+          "led-34",
+          "led-35",
+          "led-36",
+          "led-37"
+        ],
+        "ports": [
+          "grove",
+          "out",
+          "power"
+        ],
+        "controls": [],
+        "leds": [
+          "led-1",
+          "led-2",
+          "led-3",
+          "led-4",
+          "led-5",
+          "led-6",
+          "led-7",
+          "led-8",
+          "led-9",
+          "led-10",
+          "led-11",
+          "led-12",
+          "led-13",
+          "led-14",
+          "led-15",
+          "led-16",
+          "led-17",
+          "led-18",
+          "led-19",
+          "led-20",
+          "led-21",
+          "led-22",
+          "led-23",
+          "led-24",
+          "led-25",
+          "led-26",
+          "led-27",
+          "led-28",
+          "led-29",
+          "led-30",
+          "led-31",
+          "led-32",
+          "led-33",
+          "led-34",
+          "led-35",
+          "led-36",
+          "led-37"
+        ],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 699,
+          "triangles": 59300,
+          "actualEnvelopeMm": [
+            36,
+            31.200000762939453,
+            6.949999996423723
+          ],
+          "vendorTableOrderMm": [
+            31.2,
+            36,
+            7
+          ],
+          "PCBThicknessMm": 1,
+          "trueEdgeBores": 18,
+          "trueContactDrills": 12,
+          "PCBFrontSideWallRays": 120,
+          "realReceivingContacts": 12,
+          "receivingRays": 24,
+          "realRGBWindows": 37,
+          "windowRays": 37,
+          "realMetalTerminals": 148,
+          "realLEDSolderPads": 148,
+          "layoutRows": [
+            4,
+            5,
+            6,
+            7,
+            6,
+            5,
+            4
+          ],
+          "pitchMm": [
+            5,
+            4.33
+          ],
+          "fixedRearPassives": 17,
+          "blankIndividualFilm": 1,
+          "scope": "Own original A045 appearance only;internal fits inferred;no native/GPU/manufacturing/electrical validation"
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 699,
+          "triangles": 59300,
+          "actualEnvelopeMm": [
+            36,
+            31.20000076293946,
+            6.949999996423742
+          ],
+          "vendorTableOrderMm": [
+            31.2,
+            36,
+            7
+          ],
+          "PCBThicknessMm": 1,
+          "trueEdgeBores": 18,
+          "trueContactDrills": 12,
+          "PCBFrontSideWallRays": 120,
+          "realReceivingContacts": 12,
+          "receivingRays": 24,
+          "realRGBWindows": 37,
+          "windowRays": 37,
+          "realMetalTerminals": 148,
+          "realLEDSolderPads": 148,
+          "layoutRows": [
+            4,
+            5,
+            6,
+            7,
+            6,
+            5,
+            4
+          ],
+          "pitchMm": [
+            5,
+            4.33
+          ],
+          "fixedRearPassives": 17,
+          "blankIndividualFilm": 1,
+          "scope": "Own original A045 appearance only;internal fits inferred;no native/GPU/manufacturing/electrical validation"
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "m5-bit",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "physicalStructure": {
+          "route": "own-dimensional-parametric",
+          "nativeFaces": 0,
+          "actualEnvelopeMm": [
+            57,
+            21,
+            11.000000166893004
+          ],
+          "physicalMeshes": 654,
+          "PCBLeadDrills": 57,
+          "PCBLeadDrillWallRays": 228,
+          "PCBLocatorBores": 2,
+          "ioContacts": 45,
+          "ioColumns": 15,
+          "ioRows": 3,
+          "ioPrintedColumns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11,
+            13,
+            14,
+            15,
+            16
+          ],
+          "auxContacts": 8,
+          "cardContacts": 80,
+          "cardBanks": 2,
+          "cardColumns": 40,
+          "cardPitchMm": 1.27,
+          "slotAndContactRays": 83,
+          "actualSMTTails": 80,
+          "actualSMTLands": 80,
+          "groveContacts": 4,
+          "groveReturns": 4,
+          "groveTails": 4,
+          "realBackPackages": true,
+          "physicalFilms": 0,
+          "scope": "Physical appearance only;noelectricalnetlist ormanufacturingfit"
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "bps",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "nominalMm": [
+            24,
+            24,
+            13
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            24,
+            13
+          ],
+          "allInternalPlanesHolesAndDepths": "Own multiview appearance inferences,not official mechanical datums",
+          "physicalMeshes": 109,
+          "triangles": 42832,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "closureRays": 12,
+          "mountingBores": {
+            "diameterMm": 5,
+            "pitchMm": 16,
+            "source": "inferred",
+            "frontSideWallRays": 8
+          },
+          "pcbOpenEdgeTubeClearanceMm": [
+            0.2999999523162842,
+            0.2999999523162842
+          ],
+          "centralPcbBossClearanceMm": 0.39999985694885254,
+          "ventCount": 2,
+          "ventWallRays": 8,
+          "ventPaths": [
+            {
+              "xMm": -0.85,
+              "metalCanZMm": 2.3800000059604645,
+              "innerFrontPlaneMm": 5.3,
+              "clearAirDepthMm": 2.9199999940395354
+            },
+            {
+              "xMm": 0.85,
+              "metalCanZMm": 2.3800000059604645,
+              "innerFrontPlaneMm": 5.3,
+              "clearAirDepthMm": 2.9199999940395354
+            }
+          ],
+          "actualBmp280MetalCan": {
+            "lgaContacts": 8,
+            "pressurePortRadiusMm": 0.16,
+            "actualFrontSidePortWallRays": 4,
+            "deepFixedFloor": true,
+            "scope": "Fixed physical package only"
+          },
+          "actualPcbPosts": 4,
+          "grove": {
+            "contacts": 4,
+            "rightAngleReturns": 4,
+            "throughPcbTails": 4,
+            "platedBores": 4,
+            "annularPads": 8,
+            "frontSideWallRays": 4
+          },
+          "physicalFilms": 2,
+          "realUncoloredM5Geometry": true,
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "hex",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 699,
+          "triangles": 59300,
+          "actualEnvelopeMm": [
+            36,
+            31.200000762939453,
+            6.9499999964237205
+          ],
+          "vendorTableOrderMm": [
+            31.2,
+            36,
+            7
+          ],
+          "PCBThicknessMm": 1,
+          "trueEdgeBores": 18,
+          "trueContactDrills": 12,
+          "PCBFrontSideWallRays": 120,
+          "realReceivingContacts": 12,
+          "receivingRays": 24,
+          "realRGBWindows": 37,
+          "windowRays": 37,
+          "realMetalTerminals": 148,
+          "realLEDSolderPads": 148,
+          "layoutRows": [
+            4,
+            5,
+            6,
+            7,
+            6,
+            5,
+            4
+          ],
+          "pitchMm": [
+            5,
+            4.33
+          ],
+          "fixedRearPassives": 17,
+          "blankIndividualFilm": 1,
+          "scope": "Own original A045 appearance only;internal fits inferred;no native/GPU/manufacturing/electrical validation"
+        },
+        "staticMounting": []
+      }
+    ],
+    "configurations": [
+      {
+        "id": "m5-bit",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "bps",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "hex",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      }
+    ],
+    "behaviors": [
+      {
+        "id": "m5-bit",
+        "staticAppearance": true,
+        "noInventedInputOrOutput": true,
+        "allFourActualPorts": true,
+        "unsupportedElectricalCommandsRejected": 32,
+        "noAutomaticFirmware": true,
+        "allPCBContactsCarriersAndPeersUnchanged": true,
+        "noEcho": true
+      },
+      {
+        "id": "bps",
+        "staticActualPackageCasePcbPorts": true,
+        "noSensorAnchorOrReadings": true,
+        "noPressureTemperatureAltitudeSamplingI2cRegistersFirmware": true,
+        "noAutomaticGlowMotionOrInputEcho": true,
+        "allPhysicalAttributesIndicesWorldRetained": true,
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0
+      },
+      {
+        "id": "hex",
+        "outputs": {
+          "count": 37,
+          "externalNoEcho": true,
+          "independentRealMaterials": true,
+          "physicalAndPortsUnchanged": true
+        },
+        "all37ExternalMaterialsNoEcho": true,
+        "noAutomaticRainbowCascadePowerFramebufferOrFirmware": true,
+        "unsupportedPortAndLEDCommandsRejected": true,
+        "noControlsReadingsOrJoints": true,
+        "shapePortsPeersEventsInvariant": true,
+        "neutralRestored": true
+      }
+    ],
+    "accessories": [
+      {
+        "id": "m5-bit",
+        "mounting": []
+      },
+      {
+        "id": "bps",
+        "mounting": []
+      },
+      {
+        "id": "hex",
+        "mounting": []
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "m5-bit",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "bps",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "hex",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      }
+    ],
+    "disposedResources": 2251,
+    "cases": [
+      "three-real-four-core-branches",
+      "own-dimensional-parametric-exact-SKU-assemblies",
+      "real-card-header-and-grove-receiving-assemblies",
+      "real-BMP280-air-path-and-37-external-RGB-materials",
+      "own-readable-PCB-front-and-rear-print",
+      "both-entries-actual-presets-and-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-peer-isolation",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own three physical assemblies and actual matching ordinary print,actual evidenced physical interfaces and external37LED materials;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/UART-IO-pressure-temperature-altitude-values/electrical/firmware/whole-history acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "m5-bit",
+        "body": [
+          "microbit",
+          "io",
+          "aux",
+          "grove"
+        ],
+        "ports": [
+          "microbit",
+          "io",
+          "aux",
+          "grove"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "route": "own-dimensional-parametric",
+          "nativeFaces": 0,
+          "actualEnvelopeMm": [
+            57,
+            21,
+            11.000000166893008
+          ],
+          "physicalMeshes": 654,
+          "PCBLeadDrills": 57,
+          "PCBLeadDrillWallRays": 228,
+          "PCBLocatorBores": 2,
+          "ioContacts": 45,
+          "ioColumns": 15,
+          "ioRows": 3,
+          "ioPrintedColumns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11,
+            13,
+            14,
+            15,
+            16
+          ],
+          "auxContacts": 8,
+          "cardContacts": 80,
+          "cardBanks": 2,
+          "cardColumns": 40,
+          "cardPitchMm": 1.27,
+          "slotAndContactRays": 83,
+          "actualSMTTails": 80,
+          "actualSMTLands": 80,
+          "groveContacts": 4,
+          "groveReturns": 4,
+          "groveTails": 4,
+          "realBackPackages": true,
+          "physicalFilms": 0,
+          "scope": "Physical appearance only;noelectricalnetlist ormanufacturingfit"
+        },
+        "transformedStructure": {
+          "route": "own-dimensional-parametric",
+          "nativeFaces": 0,
+          "actualEnvelopeMm": [
+            57.000000000000014,
+            21.00000000000003,
+            11.000000166893006
+          ],
+          "physicalMeshes": 654,
+          "PCBLeadDrills": 57,
+          "PCBLeadDrillWallRays": 228,
+          "PCBLocatorBores": 2,
+          "ioContacts": 45,
+          "ioColumns": 15,
+          "ioRows": 3,
+          "ioPrintedColumns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11,
+            13,
+            14,
+            15,
+            16
+          ],
+          "auxContacts": 8,
+          "cardContacts": 80,
+          "cardBanks": 2,
+          "cardColumns": 40,
+          "cardPitchMm": 1.27,
+          "slotAndContactRays": 83,
+          "actualSMTTails": 80,
+          "actualSMTLands": 80,
+          "groveContacts": 4,
+          "groveReturns": 4,
+          "groveTails": 4,
+          "realBackPackages": true,
+          "physicalFilms": 0,
+          "scope": "Physical appearance only;noelectricalnetlist ormanufacturingfit"
+        }
+      },
+      {
+        "id": "bps",
+        "body": [
+          "grove"
+        ],
+        "ports": [
+          "grove"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "nominalMm": [
+            24,
+            24,
+            13
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            24,
+            13
+          ],
+          "allInternalPlanesHolesAndDepths": "Own multiview appearance inferences,not official mechanical datums",
+          "physicalMeshes": 109,
+          "triangles": 42832,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "closureRays": 12,
+          "mountingBores": {
+            "diameterMm": 5,
+            "pitchMm": 16,
+            "source": "inferred",
+            "frontSideWallRays": 8
+          },
+          "pcbOpenEdgeTubeClearanceMm": [
+            0.2999999523162842,
+            0.2999999523162842
+          ],
+          "centralPcbBossClearanceMm": 0.39999985694885254,
+          "ventCount": 2,
+          "ventWallRays": 8,
+          "ventPaths": [
+            {
+              "xMm": -0.85,
+              "metalCanZMm": 2.380000005960464,
+              "innerFrontPlaneMm": 5.3,
+              "clearAirDepthMm": 2.919999994039536
+            },
+            {
+              "xMm": 0.85,
+              "metalCanZMm": 2.380000005960464,
+              "innerFrontPlaneMm": 5.3,
+              "clearAirDepthMm": 2.919999994039536
+            }
+          ],
+          "actualBmp280MetalCan": {
+            "lgaContacts": 8,
+            "pressurePortRadiusMm": 0.16,
+            "actualFrontSidePortWallRays": 4,
+            "deepFixedFloor": true,
+            "scope": "Fixed physical package only"
+          },
+          "actualPcbPosts": 4,
+          "grove": {
+            "contacts": 4,
+            "rightAngleReturns": 4,
+            "throughPcbTails": 4,
+            "platedBores": 4,
+            "annularPads": 8,
+            "frontSideWallRays": 4
+          },
+          "physicalFilms": 2,
+          "realUncoloredM5Geometry": true,
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "nominalMm": [
+            24,
+            24,
+            13
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24.000000000000057,
+            24.000000000000036,
+            13
+          ],
+          "allInternalPlanesHolesAndDepths": "Own multiview appearance inferences,not official mechanical datums",
+          "physicalMeshes": 109,
+          "triangles": 42832,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "closureRays": 12,
+          "mountingBores": {
+            "diameterMm": 5,
+            "pitchMm": 16,
+            "source": "inferred",
+            "frontSideWallRays": 8
+          },
+          "pcbOpenEdgeTubeClearanceMm": [
+            0.2999999523163126,
+            0.29999995231622734
+          ],
+          "centralPcbBossClearanceMm": 0.39999985694885254,
+          "ventCount": 2,
+          "ventWallRays": 8,
+          "ventPaths": [
+            {
+              "xMm": -0.85,
+              "metalCanZMm": 2.3800000059604614,
+              "innerFrontPlaneMm": 5.3,
+              "clearAirDepthMm": 2.9199999940395385
+            },
+            {
+              "xMm": 0.85,
+              "metalCanZMm": 2.3800000059604614,
+              "innerFrontPlaneMm": 5.3,
+              "clearAirDepthMm": 2.9199999940395385
+            }
+          ],
+          "actualBmp280MetalCan": {
+            "lgaContacts": 8,
+            "pressurePortRadiusMm": 0.16,
+            "actualFrontSidePortWallRays": 4,
+            "deepFixedFloor": true,
+            "scope": "Fixed physical package only"
+          },
+          "actualPcbPosts": 4,
+          "grove": {
+            "contacts": 4,
+            "rightAngleReturns": 4,
+            "throughPcbTails": 4,
+            "platedBores": 4,
+            "annularPads": 8,
+            "frontSideWallRays": 4
+          },
+          "physicalFilms": 2,
+          "realUncoloredM5Geometry": true,
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        }
+      },
+      {
+        "id": "hex",
+        "body": [
+          "grove",
+          "out",
+          "power",
+          "led-1",
+          "led-2",
+          "led-3",
+          "led-4",
+          "led-5",
+          "led-6",
+          "led-7",
+          "led-8",
+          "led-9",
+          "led-10",
+          "led-11",
+          "led-12",
+          "led-13",
+          "led-14",
+          "led-15",
+          "led-16",
+          "led-17",
+          "led-18",
+          "led-19",
+          "led-20",
+          "led-21",
+          "led-22",
+          "led-23",
+          "led-24",
+          "led-25",
+          "led-26",
+          "led-27",
+          "led-28",
+          "led-29",
+          "led-30",
+          "led-31",
+          "led-32",
+          "led-33",
+          "led-34",
+          "led-35",
+          "led-36",
+          "led-37"
+        ],
+        "ports": [
+          "grove",
+          "out",
+          "power"
+        ],
+        "controls": [],
+        "leds": [
+          "led-1",
+          "led-2",
+          "led-3",
+          "led-4",
+          "led-5",
+          "led-6",
+          "led-7",
+          "led-8",
+          "led-9",
+          "led-10",
+          "led-11",
+          "led-12",
+          "led-13",
+          "led-14",
+          "led-15",
+          "led-16",
+          "led-17",
+          "led-18",
+          "led-19",
+          "led-20",
+          "led-21",
+          "led-22",
+          "led-23",
+          "led-24",
+          "led-25",
+          "led-26",
+          "led-27",
+          "led-28",
+          "led-29",
+          "led-30",
+          "led-31",
+          "led-32",
+          "led-33",
+          "led-34",
+          "led-35",
+          "led-36",
+          "led-37"
+        ],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 699,
+          "triangles": 59300,
+          "actualEnvelopeMm": [
+            36,
+            31.200000762939453,
+            6.949999996423723
+          ],
+          "vendorTableOrderMm": [
+            31.2,
+            36,
+            7
+          ],
+          "PCBThicknessMm": 1,
+          "trueEdgeBores": 18,
+          "trueContactDrills": 12,
+          "PCBFrontSideWallRays": 120,
+          "realReceivingContacts": 12,
+          "receivingRays": 24,
+          "realRGBWindows": 37,
+          "windowRays": 37,
+          "realMetalTerminals": 148,
+          "realLEDSolderPads": 148,
+          "layoutRows": [
+            4,
+            5,
+            6,
+            7,
+            6,
+            5,
+            4
+          ],
+          "pitchMm": [
+            5,
+            4.33
+          ],
+          "fixedRearPassives": 17,
+          "blankIndividualFilm": 1,
+          "scope": "Own original A045 appearance only;internal fits inferred;no native/GPU/manufacturing/electrical validation"
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 699,
+          "triangles": 59300,
+          "actualEnvelopeMm": [
+            36,
+            31.20000076293946,
+            6.949999996423742
+          ],
+          "vendorTableOrderMm": [
+            31.2,
+            36,
+            7
+          ],
+          "PCBThicknessMm": 1,
+          "trueEdgeBores": 18,
+          "trueContactDrills": 12,
+          "PCBFrontSideWallRays": 120,
+          "realReceivingContacts": 12,
+          "receivingRays": 24,
+          "realRGBWindows": 37,
+          "windowRays": 37,
+          "realMetalTerminals": 148,
+          "realLEDSolderPads": 148,
+          "layoutRows": [
+            4,
+            5,
+            6,
+            7,
+            6,
+            5,
+            4
+          ],
+          "pitchMm": [
+            5,
+            4.33
+          ],
+          "fixedRearPassives": 17,
+          "blankIndividualFilm": 1,
+          "scope": "Own original A045 appearance only;internal fits inferred;no native/GPU/manufacturing/electrical validation"
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "m5-bit",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "physicalStructure": {
+          "route": "own-dimensional-parametric",
+          "nativeFaces": 0,
+          "actualEnvelopeMm": [
+            57,
+            21,
+            11.000000166893004
+          ],
+          "physicalMeshes": 654,
+          "PCBLeadDrills": 57,
+          "PCBLeadDrillWallRays": 228,
+          "PCBLocatorBores": 2,
+          "ioContacts": 45,
+          "ioColumns": 15,
+          "ioRows": 3,
+          "ioPrintedColumns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11,
+            13,
+            14,
+            15,
+            16
+          ],
+          "auxContacts": 8,
+          "cardContacts": 80,
+          "cardBanks": 2,
+          "cardColumns": 40,
+          "cardPitchMm": 1.27,
+          "slotAndContactRays": 83,
+          "actualSMTTails": 80,
+          "actualSMTLands": 80,
+          "groveContacts": 4,
+          "groveReturns": 4,
+          "groveTails": 4,
+          "realBackPackages": true,
+          "physicalFilms": 0,
+          "scope": "Physical appearance only;noelectricalnetlist ormanufacturingfit"
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "bps",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "nominalMm": [
+            24,
+            24,
+            13
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            24,
+            13
+          ],
+          "allInternalPlanesHolesAndDepths": "Own multiview appearance inferences,not official mechanical datums",
+          "physicalMeshes": 109,
+          "triangles": 42832,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "closureRays": 12,
+          "mountingBores": {
+            "diameterMm": 5,
+            "pitchMm": 16,
+            "source": "inferred",
+            "frontSideWallRays": 8
+          },
+          "pcbOpenEdgeTubeClearanceMm": [
+            0.2999999523162842,
+            0.2999999523162842
+          ],
+          "centralPcbBossClearanceMm": 0.39999985694885254,
+          "ventCount": 2,
+          "ventWallRays": 8,
+          "ventPaths": [
+            {
+              "xMm": -0.85,
+              "metalCanZMm": 2.3800000059604645,
+              "innerFrontPlaneMm": 5.3,
+              "clearAirDepthMm": 2.9199999940395354
+            },
+            {
+              "xMm": 0.85,
+              "metalCanZMm": 2.3800000059604645,
+              "innerFrontPlaneMm": 5.3,
+              "clearAirDepthMm": 2.9199999940395354
+            }
+          ],
+          "actualBmp280MetalCan": {
+            "lgaContacts": 8,
+            "pressurePortRadiusMm": 0.16,
+            "actualFrontSidePortWallRays": 4,
+            "deepFixedFloor": true,
+            "scope": "Fixed physical package only"
+          },
+          "actualPcbPosts": 4,
+          "grove": {
+            "contacts": 4,
+            "rightAngleReturns": 4,
+            "throughPcbTails": 4,
+            "platedBores": 4,
+            "annularPads": 8,
+            "frontSideWallRays": 4
+          },
+          "physicalFilms": 2,
+          "realUncoloredM5Geometry": true,
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "hex",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 699,
+          "triangles": 59300,
+          "actualEnvelopeMm": [
+            36,
+            31.200000762939453,
+            6.9499999964237205
+          ],
+          "vendorTableOrderMm": [
+            31.2,
+            36,
+            7
+          ],
+          "PCBThicknessMm": 1,
+          "trueEdgeBores": 18,
+          "trueContactDrills": 12,
+          "PCBFrontSideWallRays": 120,
+          "realReceivingContacts": 12,
+          "receivingRays": 24,
+          "realRGBWindows": 37,
+          "windowRays": 37,
+          "realMetalTerminals": 148,
+          "realLEDSolderPads": 148,
+          "layoutRows": [
+            4,
+            5,
+            6,
+            7,
+            6,
+            5,
+            4
+          ],
+          "pitchMm": [
+            5,
+            4.33
+          ],
+          "fixedRearPassives": 17,
+          "blankIndividualFilm": 1,
+          "scope": "Own original A045 appearance only;internal fits inferred;no native/GPU/manufacturing/electrical validation"
+        },
+        "staticMounting": []
+      }
+    ],
+    "configurations": [
+      {
+        "id": "m5-bit",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "bps",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "hex",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      }
+    ],
+    "behaviors": [
+      {
+        "id": "m5-bit",
+        "staticAppearance": true,
+        "noInventedInputOrOutput": true,
+        "allFourActualPorts": true,
+        "unsupportedElectricalCommandsRejected": 32,
+        "noAutomaticFirmware": true,
+        "allPCBContactsCarriersAndPeersUnchanged": true,
+        "noEcho": true
+      },
+      {
+        "id": "bps",
+        "staticActualPackageCasePcbPorts": true,
+        "noSensorAnchorOrReadings": true,
+        "noPressureTemperatureAltitudeSamplingI2cRegistersFirmware": true,
+        "noAutomaticGlowMotionOrInputEcho": true,
+        "allPhysicalAttributesIndicesWorldRetained": true,
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0
+      },
+      {
+        "id": "hex",
+        "outputs": {
+          "count": 37,
+          "externalNoEcho": true,
+          "independentRealMaterials": true,
+          "physicalAndPortsUnchanged": true
+        },
+        "all37ExternalMaterialsNoEcho": true,
+        "noAutomaticRainbowCascadePowerFramebufferOrFirmware": true,
+        "unsupportedPortAndLEDCommandsRejected": true,
+        "noControlsReadingsOrJoints": true,
+        "shapePortsPeersEventsInvariant": true,
+        "neutralRestored": true
+      }
+    ],
+    "accessories": [
+      {
+        "id": "m5-bit",
+        "mounting": []
+      },
+      {
+        "id": "bps",
+        "mounting": []
+      },
+      {
+        "id": "hex",
+        "mounting": []
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "m5-bit",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "bps",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "hex",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      }
+    ],
+    "disposedResources": 2251,
+    "cases": [
+      "three-real-four-core-branches",
+      "own-dimensional-parametric-exact-SKU-assemblies",
+      "real-card-header-and-grove-receiving-assemblies",
+      "real-BMP280-air-path-and-37-external-RGB-materials",
+      "own-readable-PCB-front-and-rear-print",
+      "both-entries-actual-presets-and-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-peer-isolation",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own three physical assemblies and actual matching ordinary print,actual evidenced physical interfaces and external37LED materials;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/UART-IO-pressure-temperature-altitude-values/electrical/firmware/whole-history acceptance"
+  },
+  "checks": {
+    "localProductSmoke": "all current batch products pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "m5-bit",
+        "status": "frozen",
+        "checkedFiles": 11
+      },
+      {
+        "id": "bps",
+        "status": "frozen",
+        "checkedFiles": 11
+      },
+      {
+        "id": "hex",
+        "status": "frozen",
+        "checkedFiles": 11
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "All physical attributes/index/world matrices preserved across actual entries/configurations",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "5362a513f7114d2da4c7637bf3ec371eb3e38d6315b041ec11d419927d851429",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "0f3bd090a754062a57a5a583fb9a75e2fa3826841451422cb2351cb715531c14",
+      "logDistributed": false
+    },
+    "exportCount": 6,
+    "catalogConfigurations": {
+      "status": "pass",
+      "products": [
+        {
+          "id": "m5-bit",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "完整原版 M5Bit 转接板",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        },
+        {
+          "id": "bps",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "完整原版 Mini BPS U090",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        },
+        {
+          "id": "hex",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "原版 HEX · 37灯完整灯板",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        }
+      ],
+      "scope": "Batch 46: current frozen named presets, constructor defaults and existing demo contract"
+    },
+    "livePreview": "181-product catalog, 3 own runtime chunks and all corresponding source PNG bytes verified in live dist (ordinary or inlined assets)",
+    "newSourcePrivacy": "New JS/JSON/Markdown/PNG and all current added catalog/manifest records checked; private table/URLs/vectors/original names/mappings/raw material/intermediates excluded",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "Only new products/catalog entries/exports/guide/plan; protected old private/public bytes retained",
+    "existingPublicUnitFilesUnchanged": 1377,
+    "existingPrivateUnitFilesUnchanged": 1338,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "publicSharedProtectedFilesUnchanged": 2,
+    "privateSharedProtectedFilesUnchanged": 2,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [
+    {
+      "product": "hex",
+      "record": "docs/research/hex/sources.json",
+      "feedback_id": "a1f0dbba68584d2e9f5aab0d79e1140d",
+      "accepted": true
+    }
+  ],
+  "previewAssets": [
+    {
+      "id": "m5-bit",
+      "file": "assets/m5-bit-nvMV-9Cm.js",
+      "sha256": "c7720f4446477b08699c4992b3f6d0f3c82793e85853c8703dbecbd3706d4987"
+    },
+    {
+      "id": "bps",
+      "file": "assets/bps-CGR93L_y.js",
+      "sha256": "259303c7c139204e98bc70704d2f9b17ef6faa79a6d78c9703a5fe6aa4fbc5b7"
+    },
+    {
+      "id": "hex",
+      "file": "assets/hex-L8IxcmgO.js",
+      "sha256": "0323ae1396062d787df94ed7a4764ad0a36e70ea2782bfe037c654a45ad89d09"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/m5-bit/assembly.js",
+      "sha256": "4096eb0916fb103701bd20125ab8532fbce2dbefc6ff4abab0d0c363abded30d"
+    },
+    {
+      "path": "src/units/m5-bit/dimensions.js",
+      "sha256": "6b6fa66d9177a350237396a7bb5a9dc16769867a85dd1a14dd2722c14258560b"
+    },
+    {
+      "path": "src/units/m5-bit/geometry.js",
+      "sha256": "b9dcc16d693c19597014bd907f46d1b4e9c47236be78b466d7eb6acb17ada67f"
+    },
+    {
+      "path": "src/units/m5-bit/index.js",
+      "sha256": "50b5a70244653616436b98f93236dd4097b3aa3d8e96f64045e11291e8259f59"
+    },
+    {
+      "path": "src/units/m5-bit/reference-redraw-back.png",
+      "sha256": "4e1718846a0a3de4f6b3dba2f9fa0c29025df1f6a2c41d6feffe06ec3cee50fe"
+    },
+    {
+      "path": "src/units/m5-bit/reference-redraw-front.png",
+      "sha256": "c7518fcf76156286e04506e206b424243b0bcd1dcac972c304a695beb5ced188"
+    },
+    {
+      "path": "src/units/m5-bit/stickers.js",
+      "sha256": "019c1583365916d1c20ea3c680747976a847c6af89cd0914c87e3fe7ef6a36e8"
+    },
+    {
+      "path": "docs/research/m5-bit/artwork.json",
+      "sha256": "e49e78653eed1478a67c323d9963030f6811362fdccfee62314f40fdddbc91be"
+    },
+    {
+      "path": "docs/research/m5-bit/modeling.md",
+      "sha256": "9927ee914c55bd76a1c9d1e217eef585cdf6c9573fc13c0dc00e5b7fd978dd13"
+    },
+    {
+      "path": "docs/research/m5-bit/smoke.json",
+      "sha256": "76fe6aaa1c2ddc32ef045e3959d345802638996bd7288a9a3168d4fb4bfff6bb"
+    },
+    {
+      "path": "docs/research/m5-bit/sources.json",
+      "sha256": "43ccb1fed425b4b73826debffbee9998a7ee5e61ad99c51da3ff514c9843e248"
+    },
+    {
+      "path": "src/units/bps/artwork/back.png",
+      "sha256": "053e9008e198ead9820d44c791e12235617ff15e50a6b3e423e65a6747522d3f"
+    },
+    {
+      "path": "src/units/bps/artwork/front.png",
+      "sha256": "d974d7cff547fcc4d21f6961f201f81ee4c82ac820c3d54d56c6f5800233d755"
+    },
+    {
+      "path": "src/units/bps/assembly.js",
+      "sha256": "8b613587dff384f59e139604f8d206709b86758529d8993e754ad56a45331d12"
+    },
+    {
+      "path": "src/units/bps/dimensions.js",
+      "sha256": "938bddc5633e448f04a220a74695c5ec7434ea4b11d678269e7e580b87252ddc"
+    },
+    {
+      "path": "src/units/bps/geometry.js",
+      "sha256": "26c9dbc1220e9ed3a9619d1e2abc563076deaa84db323662b4a127a661b41c44"
+    },
+    {
+      "path": "src/units/bps/index.js",
+      "sha256": "23466ea058478d3b624f6e1bbd729dec6f85888e7f61fdf92541beb6bcbdaede"
+    },
+    {
+      "path": "src/units/bps/stickers.js",
+      "sha256": "f7194f486f1bd62fa3d009f39159583f8c3acc85360174aff1602f0cf790ec05"
+    },
+    {
+      "path": "docs/research/bps/artwork.json",
+      "sha256": "46beb097b831566ddffaa06cbb74441c9c9559e07819b66505755ff1a9138dda"
+    },
+    {
+      "path": "docs/research/bps/modeling.md",
+      "sha256": "7e9a50ffbf1eb9a42c3eb4571c44afec76b3de9952b43314fe3918590ad2da81"
+    },
+    {
+      "path": "docs/research/bps/smoke.json",
+      "sha256": "bebf87b9d5a9e3fa25dadfe2cb9e876b4b5426fa076651e7022555678c2393b3"
+    },
+    {
+      "path": "docs/research/bps/sources.json",
+      "sha256": "2471af0c1f1eb9dc48925ee971708e13260811ff9cde46fcf420c800775359df"
+    },
+    {
+      "path": "src/units/hex/artwork/rear.png",
+      "sha256": "341abe326e6e7281c2b4d5708b94fa17ed367507c94faad1d4d35fc84696c938"
+    },
+    {
+      "path": "src/units/hex/assembly.js",
+      "sha256": "23bf9386e81e8574ee92358b9286b6038c6b4f51be2d526239805fa39e5615bb"
+    },
+    {
+      "path": "src/units/hex/connectors.js",
+      "sha256": "b09bb87d0d922ff5022cab79ec3020c3806d3e5149d8ec8dce9ad1415f90e0e8"
+    },
+    {
+      "path": "src/units/hex/dimensions.js",
+      "sha256": "eb7ae0e2eb5a4ce3d426ac7a930b47d962194e6546980180aa12326f7576d965"
+    },
+    {
+      "path": "src/units/hex/geometry.js",
+      "sha256": "79d6b1a820b4c691122611d3144a04c6312c4d8efb30473038e2ae28163404a3"
+    },
+    {
+      "path": "src/units/hex/index.js",
+      "sha256": "5122ced475f985b7e2bfd2cce960169fb85deef6037c5e415f7d5e8da34d3099"
+    },
+    {
+      "path": "src/units/hex/leds.js",
+      "sha256": "50298134e719a5bddd9234074d9ced61d65be287ec18ea992fceeca2551c4e3b"
+    },
+    {
+      "path": "docs/research/hex/artwork.json",
+      "sha256": "27fae5e2d263d12e22833687c0ace8c019bb829a81fc8279061dc5e188b4bf4d"
+    },
+    {
+      "path": "docs/research/hex/modeling.md",
+      "sha256": "d84928976284a7230bd02a1416b16130a3a2badb36d8eaf5655010a8afbba393"
+    },
+    {
+      "path": "docs/research/hex/smoke.json",
+      "sha256": "2bb2a0b9bee354ef92852ce17b9b8ba78947623a0ad45ee8de1bd771dc223729"
+    },
+    {
+      "path": "docs/research/hex/sources.json",
+      "sha256": "814f9a0130ee13bf2e443b6032290f5bdbcd9e9dd26b414c185244c0c9081281"
+    }
+  ],
+  "limitations": [
+    "Own-dimensional-parametric reconstruction from each exact SKU dimensions and own multiview;no native CAD/source-face claim or borrowed revision geometry",
+    "M5Bit A051 nominal57x21x11 does not establish hidden connector planes;actual contact rows/counts and photo-derived placement follow frozen evidence;Microbit board is contextual and not included",
+    "Original Mini BPS U090 uses BMP280 and own24x24x13 nominal envelope with explicitly inferred hidden layers;never stretch U090-B/QMP6988 shell or invent readings",
+    "Original HEX A045 own drawing36x31.2x6.95 and1mm PCB remain distinct from vendor table31.2x36x7;37large SK6812 not NeoHEX2020 packages",
+    "All actual HEX light materials accept external visual states only;no automatic rainbow,cascade,protocol,supply,firmware or invented PWR pin behavior",
+    "Hidden wall/PCB/connector/contact/film fit and installed package positions are reconstruction,not full BOM,manufacturing,productionfit or hardware acceptance",
+    "Own legible PCB/case/rear print code-redrawn as ordinary PNG with sources;uncolored relief remains geometry;variable QR/individual IDs and promotional overlays omitted while actual carriers remain",
+    "Private CSV/originals/URLs/names/mappings/vectors/raw sources/generators/intermediates excluded;old sticker/Scroll/StackChan/Puzzle/Catch boundaries remain;overall goal active"
+  ]
+}

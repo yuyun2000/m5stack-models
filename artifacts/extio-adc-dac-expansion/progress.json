@@ -1,0 +1,1707 @@
+{
+  "savedAt": "2026-10-26T21:37:10.312026+00:00",
+  "stage": "modeled",
+  "scope": "Exact-SKU original/EOL EXT.IO U011,ADC U013,DAC U012 own-dimensional-parametric complete appearance,real connectors/assembly and corresponding ordinary PNG,actual visual mechanical API and real three-branch four-core fixture/builds;no browser or whole-catalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 164,
+    "modeled": 178,
+    "verified": 0
+  },
+  "localHead": "4fd5216dd2b310b6c92b366cb4c795f08dd15ff6",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "extio",
+      "status": "pass",
+      "report": "docs/research/extio/smoke.json",
+      "meshes": null,
+      "triangles": null
+    },
+    {
+      "id": "adc",
+      "status": "pass",
+      "report": "docs/research/adc/smoke.json",
+      "meshes": null,
+      "triangles": null
+    },
+    {
+      "id": "dac",
+      "status": "pass",
+      "report": "docs/research/dac/smoke.json",
+      "meshes": null,
+      "triangles": null
+    }
+  ],
+  "pngCount": 5,
+  "rasters": [
+    {
+      "path": "src/units/extio/artwork/rear.png",
+      "pixels": [
+        1610,
+        1180
+      ],
+      "sha256": "6645e73fbaf835e24a69ab9e4b6f56fd6dab7fb879653bc1cd419103dc62f200"
+    },
+    {
+      "path": "src/units/adc/artwork/back.png",
+      "pixels": [
+        1296,
+        960
+      ],
+      "sha256": "df1c239fc24c5899f2b97dc84c812685b874399763f146d095cf1ec506d05255"
+    },
+    {
+      "path": "src/units/adc/artwork/polarity.png",
+      "pixels": [
+        912,
+        480
+      ],
+      "sha256": "7879fd406e4aa517cd58eea9fb28b2b140db91ab9b670ee5289528043a4e2a0c"
+    },
+    {
+      "path": "src/units/dac/reference-redraw-back.png",
+      "pixels": [
+        1600,
+        1200
+      ],
+      "sha256": "46f959d8a3928af68ad5e2e4d4ff0c5c2ba1cbf15e7c1d16cfd86d9d35401831"
+    },
+    {
+      "path": "src/units/dac/reference-redraw-polarity.png",
+      "pixels": [
+        1530,
+        820
+      ],
+      "sha256": "3d6543686aedb7dedda293bf80a9cdd65ffd82808dcf55d1014931e5e5a33396"
+    }
+  ],
+  "frozenPublicAPI": {
+    "extio": {
+      "exports": [
+        "Model",
+        "GroveModule",
+        "spec",
+        "defaults",
+        "configurationSchema",
+        "configurations"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [],
+      "leds": [],
+      "displays": [],
+      "ports": [
+        "grove",
+        "io"
+      ],
+      "joints": [],
+      "anchors": [],
+      "accessoryExports": [],
+      "defaults": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "原版 EXT.IO · 完整本体",
+          "options": {}
+        }
+      ],
+      "pngCount": 1
+    },
+    "adc": {
+      "exports": [
+        "Model",
+        "GroveModule",
+        "TerminalPlug",
+        "spec",
+        "defaults",
+        "configurationSchema",
+        "configurations"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [],
+      "leds": [],
+      "displays": [],
+      "ports": [
+        "grove",
+        "terminal"
+      ],
+      "joints": [],
+      "anchors": [],
+      "accessoryExports": [
+        "TerminalPlug"
+      ],
+      "defaults": {
+        "terminal": "installed"
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整 ADC U013",
+          "options": {
+            "terminal": "installed"
+          }
+        },
+        {
+          "id": "without-plug",
+          "name": "ADC U013 取下橙色端子",
+          "options": {
+            "terminal": "removed"
+          }
+        }
+      ],
+      "pngCount": 2
+    },
+    "dac": {
+      "exports": [
+        "Model",
+        "GroveModule",
+        "TerminalPlug",
+        "spec",
+        "defaults",
+        "configurationSchema",
+        "configurations"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [],
+      "leds": [],
+      "displays": [],
+      "ports": [
+        "grove",
+        "terminal"
+      ],
+      "joints": [],
+      "anchors": [],
+      "accessoryExports": [
+        "TerminalPlug"
+      ],
+      "defaults": {
+        "terminalPlug": true
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整原版 DAC",
+          "options": {
+            "terminalPlug": true
+          }
+        },
+        {
+          "id": "without-terminal-plug",
+          "name": "原版 DAC 拔下2P端子",
+          "options": {
+            "terminalPlug": false
+          }
+        }
+      ],
+      "pngCount": 2
+    }
+  },
+  "fixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "extio",
+        "body": [
+          "grove",
+          "io"
+        ],
+        "ports": [
+          "grove",
+          "io"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 194,
+          "triangles": 32016,
+          "actualEnvelopeMm": [
+            24,
+            32.000000023841864,
+            11.100000001490116
+          ],
+          "nominalEnvelopeMm": [
+            24,
+            32,
+            11
+          ],
+          "closureRays": 12,
+          "trueMountingAxes": 2,
+          "boreWallRays": 40,
+          "PCBScallopWallRays": 2,
+          "PCBLeadDrills": 14,
+          "PCBDrillWallRays": 56,
+          "groveContacts": 4,
+          "groveReturns": 4,
+          "groveTails": 4,
+          "ioMaleContacts": 10,
+          "ioBentLegs": 10,
+          "ioPitchMm": 2.54,
+          "PCBPackages": [
+            "PCA9554PW:TSSOP16",
+            "HT7533:3-lead"
+          ],
+          "trueHexDrive": true,
+          "physicalFilms": 1,
+          "physicalM5Glyphs": 2,
+          "scope": "Own original/EOL appearance and necessary physical rays;estimated internal placement;no native,GPU,manufacturing fit or electrical validation"
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 194,
+          "triangles": 32016,
+          "actualEnvelopeMm": [
+            24.000000000000014,
+            32.000000023841864,
+            11.100000001490116
+          ],
+          "nominalEnvelopeMm": [
+            24,
+            32,
+            11
+          ],
+          "closureRays": 12,
+          "trueMountingAxes": 2,
+          "boreWallRays": 40,
+          "PCBScallopWallRays": 2,
+          "PCBLeadDrills": 14,
+          "PCBDrillWallRays": 56,
+          "groveContacts": 4,
+          "groveReturns": 4,
+          "groveTails": 4,
+          "ioMaleContacts": 10,
+          "ioBentLegs": 10,
+          "ioPitchMm": 2.54,
+          "PCBPackages": [
+            "PCA9554PW:TSSOP16",
+            "HT7533:3-lead"
+          ],
+          "trueHexDrive": true,
+          "physicalFilms": 1,
+          "physicalM5Glyphs": 2,
+          "scope": "Own original/EOL appearance and necessary physical rays;estimated internal placement;no native,GPU,manufacturing fit or electrical validation"
+        }
+      },
+      {
+        "id": "adc",
+        "body": [
+          "grove",
+          "terminal"
+        ],
+        "ports": [
+          "grove",
+          "terminal"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "bodyPhysicalMeshes": 132,
+          "totalPhysicalMeshes": 154,
+          "triangles": 44800,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nominalMm": [
+            24,
+            32,
+            10.2
+          ],
+          "baseCaseEnvelopeMm": [
+            24,
+            32.000000023841864,
+            7.999999999999999
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            32.0000002026558,
+            10.19999999910593
+          ],
+          "mountingBores": {
+            "diameterMm": 5,
+            "pitchMm": 16,
+            "frontSideWallRays": 8,
+            "truePcbOpenEdgeClearance": true
+          },
+          "closureRays": 12,
+          "realUncoloredFrontRelief": 4,
+          "realRearM5Recess": true,
+          "actualPcbSupportPosts": 4,
+          "contacts": {
+            "grove": 4,
+            "terminal": 2
+          },
+          "fourActualRightAngleGroveReturns": true,
+          "allContactTailsBarrelsPadsRetained": true,
+          "frontSideSocketWallRays": 8,
+          "physicalRearFilms": 1,
+          "staticAccessory": {
+            "id": "m5stack.unit.adc.terminal-plug",
+            "physicalMeshes": 22,
+            "contacts": 2,
+            "femaleSprings": 4,
+            "wireEntryBores": 2,
+            "positiveTongueReceivingClearanceMm": [
+              0.14999989271163372,
+              0.14999989271163372,
+              0.24999999403953588,
+              0.24999999701976727
+            ],
+            "physicalFilms": 1,
+            "joints": 0,
+            "mechanicalOnly": true
+          },
+          "controls": 0,
+          "externalLeds": 0,
+          "joints": 0,
+          "readings": 0
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "bodyPhysicalMeshes": 132,
+          "totalPhysicalMeshes": 154,
+          "triangles": 44800,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nominalMm": [
+            24,
+            32,
+            10.2
+          ],
+          "baseCaseEnvelopeMm": [
+            24.00000000000003,
+            32.000000023841864,
+            8.000000000000002
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24.00000000000003,
+            32.000000202655826,
+            10.199999999105927
+          ],
+          "mountingBores": {
+            "diameterMm": 5,
+            "pitchMm": 16,
+            "frontSideWallRays": 8,
+            "truePcbOpenEdgeClearance": true
+          },
+          "closureRays": 12,
+          "realUncoloredFrontRelief": 4,
+          "realRearM5Recess": true,
+          "actualPcbSupportPosts": 4,
+          "contacts": {
+            "grove": 4,
+            "terminal": 2
+          },
+          "fourActualRightAngleGroveReturns": true,
+          "allContactTailsBarrelsPadsRetained": true,
+          "frontSideSocketWallRays": 8,
+          "physicalRearFilms": 1,
+          "staticAccessory": {
+            "id": "m5stack.unit.adc.terminal-plug",
+            "physicalMeshes": 22,
+            "contacts": 2,
+            "femaleSprings": 4,
+            "wireEntryBores": 2,
+            "positiveTongueReceivingClearanceMm": [
+              0.14999989271163372,
+              0.14999989271166214,
+              0.2499999940395341,
+              0.2499999970197706
+            ],
+            "physicalFilms": 1,
+            "joints": 0,
+            "mechanicalOnly": true
+          },
+          "controls": 0,
+          "externalLeds": 0,
+          "joints": 0,
+          "readings": 0
+        }
+      },
+      {
+        "id": "dac",
+        "body": [
+          "grove",
+          "terminal"
+        ],
+        "ports": [
+          "grove",
+          "terminal"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 142,
+          "shellEnvelopeMm": [
+            24,
+            32,
+            7.999999999999998
+          ],
+          "closureRays": 14,
+          "boreWallRays": 40,
+          "trueMountingAxes": 2,
+          "PCBPackages": [
+            "MCP4725",
+            "LM321MFX"
+          ],
+          "groveContacts": 4,
+          "groveReturns": 4,
+          "groveTails": 4,
+          "terminalContacts": 2,
+          "PCBLeadDrills": 6,
+          "PCBDrillWallRays": 24,
+          "PCBSolderLands": 12,
+          "physicalReliefs": 2,
+          "realRearFilm": true,
+          "actualPlug": {
+            "removable": true,
+            "ownComponents": 0,
+            "wireEntries": 2,
+            "realSprings": 4,
+            "physicalFilm": true
+          },
+          "scope": "Own appearance solids/necessary rays only;no GPU,productionfit or electrical validation"
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 142,
+          "shellEnvelopeMm": [
+            24.000000000000057,
+            32.000000000000036,
+            8.000000000000002
+          ],
+          "closureRays": 14,
+          "boreWallRays": 40,
+          "trueMountingAxes": 2,
+          "PCBPackages": [
+            "MCP4725",
+            "LM321MFX"
+          ],
+          "groveContacts": 4,
+          "groveReturns": 4,
+          "groveTails": 4,
+          "terminalContacts": 2,
+          "PCBLeadDrills": 6,
+          "PCBDrillWallRays": 24,
+          "PCBSolderLands": 12,
+          "physicalReliefs": 2,
+          "realRearFilm": true,
+          "actualPlug": {
+            "removable": true,
+            "ownComponents": 0,
+            "wireEntries": 2,
+            "realSprings": 4,
+            "physicalFilm": true
+          },
+          "scope": "Own appearance solids/necessary rays only;no GPU,productionfit or electrical validation"
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "extio",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 194,
+          "triangles": 32016,
+          "actualEnvelopeMm": [
+            24,
+            32.00000002384186,
+            11.100000001490116
+          ],
+          "nominalEnvelopeMm": [
+            24,
+            32,
+            11
+          ],
+          "closureRays": 12,
+          "trueMountingAxes": 2,
+          "boreWallRays": 40,
+          "PCBScallopWallRays": 2,
+          "PCBLeadDrills": 14,
+          "PCBDrillWallRays": 56,
+          "groveContacts": 4,
+          "groveReturns": 4,
+          "groveTails": 4,
+          "ioMaleContacts": 10,
+          "ioBentLegs": 10,
+          "ioPitchMm": 2.54,
+          "PCBPackages": [
+            "PCA9554PW:TSSOP16",
+            "HT7533:3-lead"
+          ],
+          "trueHexDrive": true,
+          "physicalFilms": 1,
+          "physicalM5Glyphs": 2,
+          "scope": "Own original/EOL appearance and necessary physical rays;estimated internal placement;no native,GPU,manufacturing fit or electrical validation"
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "adc",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "bodyPhysicalMeshes": 132,
+          "totalPhysicalMeshes": 154,
+          "triangles": 44800,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nominalMm": [
+            24,
+            32,
+            10.2
+          ],
+          "baseCaseEnvelopeMm": [
+            24,
+            32.00000002384186,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            32.00000020265579,
+            10.19999999910593
+          ],
+          "mountingBores": {
+            "diameterMm": 5,
+            "pitchMm": 16,
+            "frontSideWallRays": 8,
+            "truePcbOpenEdgeClearance": true
+          },
+          "closureRays": 12,
+          "realUncoloredFrontRelief": 4,
+          "realRearM5Recess": true,
+          "actualPcbSupportPosts": 4,
+          "contacts": {
+            "grove": 4,
+            "terminal": 2
+          },
+          "fourActualRightAngleGroveReturns": true,
+          "allContactTailsBarrelsPadsRetained": true,
+          "frontSideSocketWallRays": 8,
+          "physicalRearFilms": 1,
+          "staticAccessory": {
+            "id": "m5stack.unit.adc.terminal-plug",
+            "physicalMeshes": 22,
+            "contacts": 2,
+            "femaleSprings": 4,
+            "wireEntryBores": 2,
+            "positiveTongueReceivingClearanceMm": [
+              0.1499998927116395,
+              0.1499998927116395,
+              0.24999999403953588,
+              0.24999999701976705
+            ],
+            "physicalFilms": 1,
+            "joints": 0,
+            "mechanicalOnly": true
+          },
+          "controls": 0,
+          "externalLeds": 0,
+          "joints": 0,
+          "readings": 0
+        },
+        "staticMounting": [
+          {
+            "port": "terminal",
+            "connector": "m5.adc.u013.terminal-2p",
+            "accessory": "TerminalPlug",
+            "ownPorts": [],
+            "staticDetachReattach": "pass"
+          }
+        ]
+      },
+      {
+        "id": "dac",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 142,
+          "shellEnvelopeMm": [
+            24,
+            32,
+            8
+          ],
+          "closureRays": 14,
+          "boreWallRays": 40,
+          "trueMountingAxes": 2,
+          "PCBPackages": [
+            "MCP4725",
+            "LM321MFX"
+          ],
+          "groveContacts": 4,
+          "groveReturns": 4,
+          "groveTails": 4,
+          "terminalContacts": 2,
+          "PCBLeadDrills": 6,
+          "PCBDrillWallRays": 24,
+          "PCBSolderLands": 12,
+          "physicalReliefs": 2,
+          "realRearFilm": true,
+          "actualPlug": {
+            "removable": true,
+            "ownComponents": 0,
+            "wireEntries": 2,
+            "realSprings": 4,
+            "physicalFilm": true
+          },
+          "scope": "Own appearance solids/necessary rays only;no GPU,productionfit or electrical validation"
+        },
+        "staticMounting": [
+          {
+            "port": "terminal",
+            "connector": "m5.u012.2p-terminal",
+            "accessory": "TerminalPlug",
+            "ownPorts": [],
+            "staticDetachReattach": "pass"
+          }
+        ]
+      }
+    ],
+    "configurations": [
+      {
+        "id": "extio",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "adc",
+        "optionCases": 3,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "dac",
+        "optionCases": 3,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      }
+    ],
+    "behaviors": [
+      {
+        "id": "extio",
+        "noControlsReadingsOutputsOrFirmware": true,
+        "rejectedTypesPerPort": 16,
+        "passivePorts": [
+          "grove",
+          "io"
+        ],
+        "wrongFamiliesRejected": true,
+        "shapePortsPeersEventsInvariant": true,
+        "staticAfter1_25Seconds": true
+      },
+      {
+        "id": "adc",
+        "actualRemovablePlug": true,
+        "staticMechanicalRoundtrip": "pass",
+        "fixedCasePcbGroveReceiverDuringAttachment": true,
+        "noScrewAngleApiWithoutVisibleHeadEvidence": true,
+        "noSensorVoltageWaveformI2cFirmware": true,
+        "noAutomaticMotionOrEcho": true,
+        "allPhysicalAttributesIndicesWorldRetained": true,
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0
+      },
+      {
+        "id": "dac",
+        "actualTerminalRoundtrip": true,
+        "noControlsOrOutputs": true,
+        "unsupportedElectricalCommandsRejected": true,
+        "fixedShellPCBContactsAndPeersUnchanged": true,
+        "noAutomaticFirmware": true,
+        "neutralRestored": true
+      }
+    ],
+    "accessories": [
+      {
+        "id": "extio",
+        "mounting": []
+      },
+      {
+        "id": "adc",
+        "mounting": [
+          {
+            "port": "terminal",
+            "connector": "m5.adc.u013.terminal-2p",
+            "accessory": "TerminalPlug",
+            "ownPorts": [],
+            "staticDetachReattach": "pass"
+          }
+        ]
+      },
+      {
+        "id": "dac",
+        "mounting": [
+          {
+            "port": "terminal",
+            "connector": "m5.u012.2p-terminal",
+            "accessory": "TerminalPlug",
+            "ownPorts": [],
+            "staticDetachReattach": "pass"
+          }
+        ]
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "extio",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "adc",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "dac",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      }
+    ],
+    "disposedResources": 1085,
+    "cases": [
+      "three-real-four-core-branches",
+      "own-dimensional-parametric-original-EOL-shells",
+      "real-front-terminal-receiving-assemblies-and-removable-plugs",
+      "actual-static-terminal-detach-reattach",
+      "own-readable-rear-and-polarity-print",
+      "both-entries-actual-presets-and-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-peer-isolation",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own three physical assemblies and actual matching ordinary print,actual evidenced mechanical interfaces;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/IO-ADC-DAC-values/electrical/firmware/whole-history acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "extio",
+        "body": [
+          "grove",
+          "io"
+        ],
+        "ports": [
+          "grove",
+          "io"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 194,
+          "triangles": 32016,
+          "actualEnvelopeMm": [
+            24,
+            32.000000023841864,
+            11.100000001490116
+          ],
+          "nominalEnvelopeMm": [
+            24,
+            32,
+            11
+          ],
+          "closureRays": 12,
+          "trueMountingAxes": 2,
+          "boreWallRays": 40,
+          "PCBScallopWallRays": 2,
+          "PCBLeadDrills": 14,
+          "PCBDrillWallRays": 56,
+          "groveContacts": 4,
+          "groveReturns": 4,
+          "groveTails": 4,
+          "ioMaleContacts": 10,
+          "ioBentLegs": 10,
+          "ioPitchMm": 2.54,
+          "PCBPackages": [
+            "PCA9554PW:TSSOP16",
+            "HT7533:3-lead"
+          ],
+          "trueHexDrive": true,
+          "physicalFilms": 1,
+          "physicalM5Glyphs": 2,
+          "scope": "Own original/EOL appearance and necessary physical rays;estimated internal placement;no native,GPU,manufacturing fit or electrical validation"
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 194,
+          "triangles": 32016,
+          "actualEnvelopeMm": [
+            24.000000000000014,
+            32.000000023841864,
+            11.100000001490116
+          ],
+          "nominalEnvelopeMm": [
+            24,
+            32,
+            11
+          ],
+          "closureRays": 12,
+          "trueMountingAxes": 2,
+          "boreWallRays": 40,
+          "PCBScallopWallRays": 2,
+          "PCBLeadDrills": 14,
+          "PCBDrillWallRays": 56,
+          "groveContacts": 4,
+          "groveReturns": 4,
+          "groveTails": 4,
+          "ioMaleContacts": 10,
+          "ioBentLegs": 10,
+          "ioPitchMm": 2.54,
+          "PCBPackages": [
+            "PCA9554PW:TSSOP16",
+            "HT7533:3-lead"
+          ],
+          "trueHexDrive": true,
+          "physicalFilms": 1,
+          "physicalM5Glyphs": 2,
+          "scope": "Own original/EOL appearance and necessary physical rays;estimated internal placement;no native,GPU,manufacturing fit or electrical validation"
+        }
+      },
+      {
+        "id": "adc",
+        "body": [
+          "grove",
+          "terminal"
+        ],
+        "ports": [
+          "grove",
+          "terminal"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "bodyPhysicalMeshes": 132,
+          "totalPhysicalMeshes": 154,
+          "triangles": 44800,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nominalMm": [
+            24,
+            32,
+            10.2
+          ],
+          "baseCaseEnvelopeMm": [
+            24,
+            32.000000023841864,
+            7.999999999999999
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            32.0000002026558,
+            10.19999999910593
+          ],
+          "mountingBores": {
+            "diameterMm": 5,
+            "pitchMm": 16,
+            "frontSideWallRays": 8,
+            "truePcbOpenEdgeClearance": true
+          },
+          "closureRays": 12,
+          "realUncoloredFrontRelief": 4,
+          "realRearM5Recess": true,
+          "actualPcbSupportPosts": 4,
+          "contacts": {
+            "grove": 4,
+            "terminal": 2
+          },
+          "fourActualRightAngleGroveReturns": true,
+          "allContactTailsBarrelsPadsRetained": true,
+          "frontSideSocketWallRays": 8,
+          "physicalRearFilms": 1,
+          "staticAccessory": {
+            "id": "m5stack.unit.adc.terminal-plug",
+            "physicalMeshes": 22,
+            "contacts": 2,
+            "femaleSprings": 4,
+            "wireEntryBores": 2,
+            "positiveTongueReceivingClearanceMm": [
+              0.14999989271163372,
+              0.14999989271163372,
+              0.24999999403953588,
+              0.24999999701976727
+            ],
+            "physicalFilms": 1,
+            "joints": 0,
+            "mechanicalOnly": true
+          },
+          "controls": 0,
+          "externalLeds": 0,
+          "joints": 0,
+          "readings": 0
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "bodyPhysicalMeshes": 132,
+          "totalPhysicalMeshes": 154,
+          "triangles": 44800,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nominalMm": [
+            24,
+            32,
+            10.2
+          ],
+          "baseCaseEnvelopeMm": [
+            24.00000000000003,
+            32.000000023841864,
+            8.000000000000002
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24.00000000000003,
+            32.000000202655826,
+            10.199999999105927
+          ],
+          "mountingBores": {
+            "diameterMm": 5,
+            "pitchMm": 16,
+            "frontSideWallRays": 8,
+            "truePcbOpenEdgeClearance": true
+          },
+          "closureRays": 12,
+          "realUncoloredFrontRelief": 4,
+          "realRearM5Recess": true,
+          "actualPcbSupportPosts": 4,
+          "contacts": {
+            "grove": 4,
+            "terminal": 2
+          },
+          "fourActualRightAngleGroveReturns": true,
+          "allContactTailsBarrelsPadsRetained": true,
+          "frontSideSocketWallRays": 8,
+          "physicalRearFilms": 1,
+          "staticAccessory": {
+            "id": "m5stack.unit.adc.terminal-plug",
+            "physicalMeshes": 22,
+            "contacts": 2,
+            "femaleSprings": 4,
+            "wireEntryBores": 2,
+            "positiveTongueReceivingClearanceMm": [
+              0.14999989271163372,
+              0.14999989271166214,
+              0.2499999940395341,
+              0.2499999970197706
+            ],
+            "physicalFilms": 1,
+            "joints": 0,
+            "mechanicalOnly": true
+          },
+          "controls": 0,
+          "externalLeds": 0,
+          "joints": 0,
+          "readings": 0
+        }
+      },
+      {
+        "id": "dac",
+        "body": [
+          "grove",
+          "terminal"
+        ],
+        "ports": [
+          "grove",
+          "terminal"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 142,
+          "shellEnvelopeMm": [
+            24,
+            32,
+            7.999999999999998
+          ],
+          "closureRays": 14,
+          "boreWallRays": 40,
+          "trueMountingAxes": 2,
+          "PCBPackages": [
+            "MCP4725",
+            "LM321MFX"
+          ],
+          "groveContacts": 4,
+          "groveReturns": 4,
+          "groveTails": 4,
+          "terminalContacts": 2,
+          "PCBLeadDrills": 6,
+          "PCBDrillWallRays": 24,
+          "PCBSolderLands": 12,
+          "physicalReliefs": 2,
+          "realRearFilm": true,
+          "actualPlug": {
+            "removable": true,
+            "ownComponents": 0,
+            "wireEntries": 2,
+            "realSprings": 4,
+            "physicalFilm": true
+          },
+          "scope": "Own appearance solids/necessary rays only;no GPU,productionfit or electrical validation"
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 142,
+          "shellEnvelopeMm": [
+            24.000000000000057,
+            32.000000000000036,
+            8.000000000000002
+          ],
+          "closureRays": 14,
+          "boreWallRays": 40,
+          "trueMountingAxes": 2,
+          "PCBPackages": [
+            "MCP4725",
+            "LM321MFX"
+          ],
+          "groveContacts": 4,
+          "groveReturns": 4,
+          "groveTails": 4,
+          "terminalContacts": 2,
+          "PCBLeadDrills": 6,
+          "PCBDrillWallRays": 24,
+          "PCBSolderLands": 12,
+          "physicalReliefs": 2,
+          "realRearFilm": true,
+          "actualPlug": {
+            "removable": true,
+            "ownComponents": 0,
+            "wireEntries": 2,
+            "realSprings": 4,
+            "physicalFilm": true
+          },
+          "scope": "Own appearance solids/necessary rays only;no GPU,productionfit or electrical validation"
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "extio",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 194,
+          "triangles": 32016,
+          "actualEnvelopeMm": [
+            24,
+            32.00000002384186,
+            11.100000001490116
+          ],
+          "nominalEnvelopeMm": [
+            24,
+            32,
+            11
+          ],
+          "closureRays": 12,
+          "trueMountingAxes": 2,
+          "boreWallRays": 40,
+          "PCBScallopWallRays": 2,
+          "PCBLeadDrills": 14,
+          "PCBDrillWallRays": 56,
+          "groveContacts": 4,
+          "groveReturns": 4,
+          "groveTails": 4,
+          "ioMaleContacts": 10,
+          "ioBentLegs": 10,
+          "ioPitchMm": 2.54,
+          "PCBPackages": [
+            "PCA9554PW:TSSOP16",
+            "HT7533:3-lead"
+          ],
+          "trueHexDrive": true,
+          "physicalFilms": 1,
+          "physicalM5Glyphs": 2,
+          "scope": "Own original/EOL appearance and necessary physical rays;estimated internal placement;no native,GPU,manufacturing fit or electrical validation"
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "adc",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "bodyPhysicalMeshes": 132,
+          "totalPhysicalMeshes": 154,
+          "triangles": 44800,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nominalMm": [
+            24,
+            32,
+            10.2
+          ],
+          "baseCaseEnvelopeMm": [
+            24,
+            32.00000002384186,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            32.00000020265579,
+            10.19999999910593
+          ],
+          "mountingBores": {
+            "diameterMm": 5,
+            "pitchMm": 16,
+            "frontSideWallRays": 8,
+            "truePcbOpenEdgeClearance": true
+          },
+          "closureRays": 12,
+          "realUncoloredFrontRelief": 4,
+          "realRearM5Recess": true,
+          "actualPcbSupportPosts": 4,
+          "contacts": {
+            "grove": 4,
+            "terminal": 2
+          },
+          "fourActualRightAngleGroveReturns": true,
+          "allContactTailsBarrelsPadsRetained": true,
+          "frontSideSocketWallRays": 8,
+          "physicalRearFilms": 1,
+          "staticAccessory": {
+            "id": "m5stack.unit.adc.terminal-plug",
+            "physicalMeshes": 22,
+            "contacts": 2,
+            "femaleSprings": 4,
+            "wireEntryBores": 2,
+            "positiveTongueReceivingClearanceMm": [
+              0.1499998927116395,
+              0.1499998927116395,
+              0.24999999403953588,
+              0.24999999701976705
+            ],
+            "physicalFilms": 1,
+            "joints": 0,
+            "mechanicalOnly": true
+          },
+          "controls": 0,
+          "externalLeds": 0,
+          "joints": 0,
+          "readings": 0
+        },
+        "staticMounting": [
+          {
+            "port": "terminal",
+            "connector": "m5.adc.u013.terminal-2p",
+            "accessory": "TerminalPlug",
+            "ownPorts": [],
+            "staticDetachReattach": "pass"
+          }
+        ]
+      },
+      {
+        "id": "dac",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 142,
+          "shellEnvelopeMm": [
+            24,
+            32,
+            8
+          ],
+          "closureRays": 14,
+          "boreWallRays": 40,
+          "trueMountingAxes": 2,
+          "PCBPackages": [
+            "MCP4725",
+            "LM321MFX"
+          ],
+          "groveContacts": 4,
+          "groveReturns": 4,
+          "groveTails": 4,
+          "terminalContacts": 2,
+          "PCBLeadDrills": 6,
+          "PCBDrillWallRays": 24,
+          "PCBSolderLands": 12,
+          "physicalReliefs": 2,
+          "realRearFilm": true,
+          "actualPlug": {
+            "removable": true,
+            "ownComponents": 0,
+            "wireEntries": 2,
+            "realSprings": 4,
+            "physicalFilm": true
+          },
+          "scope": "Own appearance solids/necessary rays only;no GPU,productionfit or electrical validation"
+        },
+        "staticMounting": [
+          {
+            "port": "terminal",
+            "connector": "m5.u012.2p-terminal",
+            "accessory": "TerminalPlug",
+            "ownPorts": [],
+            "staticDetachReattach": "pass"
+          }
+        ]
+      }
+    ],
+    "configurations": [
+      {
+        "id": "extio",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "adc",
+        "optionCases": 3,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "dac",
+        "optionCases": 3,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      }
+    ],
+    "behaviors": [
+      {
+        "id": "extio",
+        "noControlsReadingsOutputsOrFirmware": true,
+        "rejectedTypesPerPort": 16,
+        "passivePorts": [
+          "grove",
+          "io"
+        ],
+        "wrongFamiliesRejected": true,
+        "shapePortsPeersEventsInvariant": true,
+        "staticAfter1_25Seconds": true
+      },
+      {
+        "id": "adc",
+        "actualRemovablePlug": true,
+        "staticMechanicalRoundtrip": "pass",
+        "fixedCasePcbGroveReceiverDuringAttachment": true,
+        "noScrewAngleApiWithoutVisibleHeadEvidence": true,
+        "noSensorVoltageWaveformI2cFirmware": true,
+        "noAutomaticMotionOrEcho": true,
+        "allPhysicalAttributesIndicesWorldRetained": true,
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0
+      },
+      {
+        "id": "dac",
+        "actualTerminalRoundtrip": true,
+        "noControlsOrOutputs": true,
+        "unsupportedElectricalCommandsRejected": true,
+        "fixedShellPCBContactsAndPeersUnchanged": true,
+        "noAutomaticFirmware": true,
+        "neutralRestored": true
+      }
+    ],
+    "accessories": [
+      {
+        "id": "extio",
+        "mounting": []
+      },
+      {
+        "id": "adc",
+        "mounting": [
+          {
+            "port": "terminal",
+            "connector": "m5.adc.u013.terminal-2p",
+            "accessory": "TerminalPlug",
+            "ownPorts": [],
+            "staticDetachReattach": "pass"
+          }
+        ]
+      },
+      {
+        "id": "dac",
+        "mounting": [
+          {
+            "port": "terminal",
+            "connector": "m5.u012.2p-terminal",
+            "accessory": "TerminalPlug",
+            "ownPorts": [],
+            "staticDetachReattach": "pass"
+          }
+        ]
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "extio",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "adc",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "dac",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      }
+    ],
+    "disposedResources": 1085,
+    "cases": [
+      "three-real-four-core-branches",
+      "own-dimensional-parametric-original-EOL-shells",
+      "real-front-terminal-receiving-assemblies-and-removable-plugs",
+      "actual-static-terminal-detach-reattach",
+      "own-readable-rear-and-polarity-print",
+      "both-entries-actual-presets-and-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-peer-isolation",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own three physical assemblies and actual matching ordinary print,actual evidenced mechanical interfaces;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/IO-ADC-DAC-values/electrical/firmware/whole-history acceptance"
+  },
+  "checks": {
+    "localProductSmoke": "all current batch products pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "extio",
+        "status": "frozen",
+        "checkedFiles": 12
+      },
+      {
+        "id": "adc",
+        "status": "frozen",
+        "checkedFiles": 12
+      },
+      {
+        "id": "dac",
+        "status": "frozen",
+        "checkedFiles": 12
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "All physical attributes/index/world matrices preserved across actual entries/configurations",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "086d34e762f29a2e2ab260d53b01e072aa5300f339f79df26891898e6fd85451",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "d8b288cde6db4ea6ea84d351f355fe779c60d6722f5fb00dea0b30e0560306bf",
+      "logDistributed": false
+    },
+    "exportCount": 8,
+    "catalogConfigurations": {
+      "status": "pass",
+      "products": [
+        {
+          "id": "extio",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "原版 EXT.IO · 完整本体",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        },
+        {
+          "id": "adc",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "完整 ADC U013",
+              "options": {
+                "terminal": "installed"
+              }
+            },
+            {
+              "id": "without-plug",
+              "name": "ADC U013 取下橙色端子",
+              "options": {
+                "terminal": "removed"
+              }
+            }
+          ],
+          "defaults": {
+            "terminal": "installed"
+          }
+        },
+        {
+          "id": "dac",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "完整原版 DAC",
+              "options": {
+                "terminalPlug": true
+              }
+            },
+            {
+              "id": "without-terminal-plug",
+              "name": "原版 DAC 拔下2P端子",
+              "options": {
+                "terminalPlug": false
+              }
+            }
+          ],
+          "defaults": {
+            "terminalPlug": true
+          }
+        }
+      ],
+      "scope": "Batch 45: current frozen named presets, constructor defaults and existing demo contract"
+    },
+    "livePreview": "178-product catalog, 3 own runtime chunks and all corresponding source PNG bytes verified in live dist (ordinary or inlined assets)",
+    "newSourcePrivacy": "New JS/JSON/Markdown/PNG and all current added catalog/manifest records checked; private table/URLs/vectors/original names/mappings/raw material/intermediates excluded",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "Only new products/catalog entries/exports/guide/plan; protected old private/public bytes retained",
+    "existingPublicUnitFilesUnchanged": 1353,
+    "existingPrivateUnitFilesUnchanged": 1314,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "publicSharedProtectedFilesUnchanged": 2,
+    "privateSharedProtectedFilesUnchanged": 2,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [
+    {
+      "product": "dac",
+      "record": "docs/research/dac/sources.json",
+      "feedback_id": "62c7572dda704867bc1c2c85edc363b8",
+      "accepted": true
+    }
+  ],
+  "previewAssets": [
+    {
+      "id": "extio",
+      "file": "assets/extio-C8lTHxoZ.js",
+      "sha256": "86f3b89aac923f24596c5774e825dc8a143158df718d812581fb7bbc6cd7c021"
+    },
+    {
+      "id": "adc",
+      "file": "assets/adc-OIA78NQp.js",
+      "sha256": "7e740b96b1e68bd0d1256871812c8e05db3cda80411b2022503b88ee10115d95"
+    },
+    {
+      "id": "dac",
+      "file": "assets/dac-48SkZ6y3.js",
+      "sha256": "f148c07be2aa3ff920e262b1f5cea0bce46b2008fb4870bf1aeca6bba95dc539"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/extio/artwork/rear.png",
+      "sha256": "6645e73fbaf835e24a69ab9e4b6f56fd6dab7fb879653bc1cd419103dc62f200"
+    },
+    {
+      "path": "src/units/extio/assembly.js",
+      "sha256": "f3016cc3b124c97c8157cde5bb13b86c4cb9c9cd7a617edab3c0d0cae51400ed"
+    },
+    {
+      "path": "src/units/extio/connectors.js",
+      "sha256": "22cd56c84f7c887ce96577c38b9e6f90fe39dc7717862840b29b97faf4b1faaa"
+    },
+    {
+      "path": "src/units/extio/dimensions.js",
+      "sha256": "fcd723e8ae44f636634730055704af4b36158d4727eac00d8d2b86317e543799"
+    },
+    {
+      "path": "src/units/extio/electronics.js",
+      "sha256": "ffb76e0028696fc6851cc58c52952563190a614d30386d2679d45a5d6d457f1d"
+    },
+    {
+      "path": "src/units/extio/geometry.js",
+      "sha256": "4e910423254096842258e1f2060bc2f5704dadbd208619745892c6f911dd82ba"
+    },
+    {
+      "path": "src/units/extio/index.js",
+      "sha256": "7d1e119bfe31b9524c13b1c625b3544dee84333b6d472d79f5e989a36b2b9764"
+    },
+    {
+      "path": "src/units/extio/shell.js",
+      "sha256": "24828d07a590ab0976dce21056270eea8469b97b5e705a5f9d15935d1cf50b56"
+    },
+    {
+      "path": "docs/research/extio/artwork.json",
+      "sha256": "bf9a8915562824f343b5e86c015f175a1ed319683e8d9c3ea7d209aa4e4d2953"
+    },
+    {
+      "path": "docs/research/extio/modeling.md",
+      "sha256": "f7802617af670bd463aa25092c45bfc3584003f2be7dc2862f2f384859a4acd5"
+    },
+    {
+      "path": "docs/research/extio/smoke.json",
+      "sha256": "117f783cb0dcc6e135a0fd5c5512178bc5415bb6d2f46a1007b33c672761fe2f"
+    },
+    {
+      "path": "docs/research/extio/sources.json",
+      "sha256": "0a0b7fd34a9628c5910d46432f645dbc9e24264a841605cf241156f9debe12e8"
+    },
+    {
+      "path": "src/units/adc/TerminalPlug.js",
+      "sha256": "29581108b9991e209803b07267d5a3effb54c3fcf22fb77b2d63b029d0d68747"
+    },
+    {
+      "path": "src/units/adc/artwork/back.png",
+      "sha256": "df1c239fc24c5899f2b97dc84c812685b874399763f146d095cf1ec506d05255"
+    },
+    {
+      "path": "src/units/adc/artwork/polarity.png",
+      "sha256": "7879fd406e4aa517cd58eea9fb28b2b140db91ab9b670ee5289528043a4e2a0c"
+    },
+    {
+      "path": "src/units/adc/assembly.js",
+      "sha256": "516550527de0da1765fdaf2217038809bfb09c2e22542514d7bd229ae920153d"
+    },
+    {
+      "path": "src/units/adc/dimensions.js",
+      "sha256": "41ecc15a7055a6b9022e5bd03ce26badc143fe459b85f8bfdd425602c5bf0680"
+    },
+    {
+      "path": "src/units/adc/geometry.js",
+      "sha256": "91298ac224b29a8ecf38413b220b158401cb4522999311bffb6f905cbb13d4a7"
+    },
+    {
+      "path": "src/units/adc/index.js",
+      "sha256": "86ac471d578fdc2a0c62ce2b6949b494453086f0bf1c60057924cceb54f768a4"
+    },
+    {
+      "path": "src/units/adc/stickers.js",
+      "sha256": "04e0057e5b867d61333adc654309bc21ca0f3d203862551f21ba62f92348ccee"
+    },
+    {
+      "path": "docs/research/adc/artwork.json",
+      "sha256": "4835d02923f67fd02028306d94fec0fc33fdffc839d31875253c20415bf9eaa6"
+    },
+    {
+      "path": "docs/research/adc/modeling.md",
+      "sha256": "65ce05ceb244f8c55f0c227cbb3b9dd858b64fc15366f6cf16b3e5cf63c7b936"
+    },
+    {
+      "path": "docs/research/adc/smoke.json",
+      "sha256": "c5459d936e72df8a72712889b649e6f76f9c26968fe219359e27133df0d8dc83"
+    },
+    {
+      "path": "docs/research/adc/sources.json",
+      "sha256": "185e2ba63cdd65e9ddf4f86086727c88976c9b53fa58c7aaa19ab3241595399b"
+    },
+    {
+      "path": "src/units/dac/TerminalPlug.js",
+      "sha256": "b3457bcbbbe40a692e233b00a87b761544cdfa9ea396e0ef7dd682062e89c0a5"
+    },
+    {
+      "path": "src/units/dac/assembly.js",
+      "sha256": "91c7eb07f1dcffca0b08d134212a2a2ca78213a6c05f316741018a90d80dd83a"
+    },
+    {
+      "path": "src/units/dac/dimensions.js",
+      "sha256": "3935417cf7845c2c7121e9f0a05b630ba9983edfebc5d61637e0c55649d40569"
+    },
+    {
+      "path": "src/units/dac/geometry.js",
+      "sha256": "8c3b366973da0099ebca6c793e69f5fa8e174615d7df2da35c95b711373171b1"
+    },
+    {
+      "path": "src/units/dac/index.js",
+      "sha256": "74cab80b35fd60a6e4dc1bcafb982fc37579af5360f9254ea7a459058eb3ca79"
+    },
+    {
+      "path": "src/units/dac/reference-redraw-back.png",
+      "sha256": "46f959d8a3928af68ad5e2e4d4ff0c5c2ba1cbf15e7c1d16cfd86d9d35401831"
+    },
+    {
+      "path": "src/units/dac/reference-redraw-polarity.png",
+      "sha256": "3d6543686aedb7dedda293bf80a9cdd65ffd82808dcf55d1014931e5e5a33396"
+    },
+    {
+      "path": "src/units/dac/stickers.js",
+      "sha256": "9eb94e72e7ace1afe7a0d5cd7c0c015e2da5c07e8308e06f8972e76228bcdfaf"
+    },
+    {
+      "path": "docs/research/dac/artwork.json",
+      "sha256": "8a13bf0d5bd79458098984574a323de7ef8bc68dbae0da87d143089932105bb0"
+    },
+    {
+      "path": "docs/research/dac/modeling.md",
+      "sha256": "9c32e2a1fcde1103925baea8d794ceddbe48ee0d4a0bc48b108e0d53885e796d"
+    },
+    {
+      "path": "docs/research/dac/smoke.json",
+      "sha256": "f6b8fe32914df79b881897e869ebfa56ef459e70fc81ac6155259b04d9023bc4"
+    },
+    {
+      "path": "docs/research/dac/sources.json",
+      "sha256": "128cb3d4204069ffce706976adfc02a12a33214c06d5a45fbf3e9e616fdb50ea"
+    }
+  ],
+  "limitations": [
+    "Own-dimensional-parametric reconstruction from each exact original/EOL SKU official nominal dimensions and own multiview;no native CAD/source-face claim or borrowed revision shell",
+    "EXT.IO U011 PCA9554PW is not EXT.IO2 U011-B;11mm original nominal depth and revision-B10.2mm drawing conflict recorded and reported;B drawing excluded as precise original datum",
+    "ADC U013 ADS1100 and DAC U012 MCP4725 use own32x24x10.2 drawings and real front-mounted removable2P terminal assemblies;not ADC v1.1 or DAC2",
+    "Hidden wall/PCB/connector/film fits and any screw installation remain explicit reconstruction,not full BOM,thread pitch,clamping physics,manufacturing or productionfit acceptance",
+    "No IO register/address states,ADC readings/voltage/waveform,DAC voltage/EEPROM,electrical behavior or firmware;only actual appearance and evidenced external mechanical shapes",
+    "Own legible rear/terminal print code-redrawn as ordinary PNG with source;uncolored relief remains geometry;no photo crop,wrong SKU,microtext or variable codes",
+    "Private CSV/originals/URLs/names/mappings/vectors/raw sources/generators/intermediates excluded;old sticker/Scroll/StackChan/Puzzle/Catch boundaries remain;overall goal active"
+  ]
+}

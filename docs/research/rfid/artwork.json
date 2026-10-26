@@ -1,0 +1,104 @@
+{
+  "id": "rfid",
+  "sku": "U031",
+  "kind": "reference-redraw",
+  "pngCount": 2,
+  "assets": [
+    {
+      "id": "front",
+      "path": "src/units/rfid/artwork/front.png",
+      "kind": "reference-redraw",
+      "pixels": [
+        1820,
+        2820
+      ],
+      "sha256": "f27e41868ddce0036feccd50b15d9a29af1d0e44c91df0080795ac07661cda6c",
+      "source": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rfid/rfid_06.webp",
+        "sha256": "c6c4d8c5e565bf1f672dc5816a20b36e27b128918dda41247115902323d96fbc"
+      },
+      "method": "Independent literal text/arc redraw;transparent ink on existing physical silver/grey films;no photograph pixels",
+      "omitted": [
+        "Packaging/promotional captions",
+        "U031-B artwork",
+        "unknown microtext",
+        "individual codes"
+      ]
+    },
+    {
+      "id": "rear",
+      "path": "src/units/rfid/artwork/rear.png",
+      "kind": "reference-redraw",
+      "pixels": [
+        1620,
+        2820
+      ],
+      "sha256": "dc5e2b611a4941c29c7f6367bf597f23df4855b1b8b704122e05b37e53342647",
+      "source": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rfid/rfid_02.webp",
+        "sha256": "bf019629ac9fb8fe6365326a12dfa65120c9620fc1d02d7adf05a316cda7557d"
+      },
+      "method": "Independent literal text/arc redraw;transparent ink on existing physical silver/grey films;no photograph pixels",
+      "omitted": [
+        "Packaging/promotional captions",
+        "U031-B artwork",
+        "unknown microtext",
+        "individual codes"
+      ]
+    }
+  ],
+  "configurationCases": [
+    {
+      "id": "complete",
+      "options": {},
+      "panelCount": 2,
+      "pngCount": 2,
+      "panels": [
+        "front",
+        "rear"
+      ],
+      "kinds": [
+        "reference-redraw",
+        "reference-redraw"
+      ],
+      "artworkKinds": [
+        "reference-redraw",
+        "reference-redraw"
+      ]
+    }
+  ],
+  "physicalFilms": {
+    "front": 1,
+    "rear": 1
+  },
+  "physicalAdhesiveFilms": 2,
+  "artworkFalse": "Ink absent;both real films,shells,bores,slot/backing,M5,PCB and all connector/component attributes,indices,world matrices stay identical",
+  "actualText": {
+    "front": [
+      "RFID",
+      "original red RF arcs/dot"
+    ],
+    "rear": [
+      "RFID",
+      "RC522",
+      "PORT. A . I2C",
+      "SCL",
+      "SDA",
+      "5V",
+      "GND"
+    ]
+  },
+  "privateAggregate": {
+    "id": "rfid",
+    "sku": "U031",
+    "exactSkuRows": 0,
+    "strictNameOnlyRows": 0,
+    "originalDownloads": 0,
+    "requiresExactVariantReview": false
+  },
+  "photographPixelsUsed": false,
+  "sourcePhotosDistributed": false,
+  "vectorOriginalsDistributed": false,
+  "generatorsDistributed": false,
+  "rights": "User-authorized accurate ordinary code-redrawn PNGs with official attribution;source/product marks retain respective rights"
+}

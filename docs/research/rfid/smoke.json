@@ -1,0 +1,860 @@
+{
+  "id": "rfid",
+  "sku": "U031",
+  "date": "2026-10-27",
+  "status": "pass",
+  "stage": "modeled",
+  "constructionRoute": "own-dimensional-parametric",
+  "nativeFaces": 0,
+  "physicalTopology": {
+    "meshes": 111,
+    "triangles": 27008,
+    "allCoordinateWeldedClosed": true,
+    "allDirectedEdgesOppose": true,
+    "allPositiveSignedVolumes": true
+  },
+  "actualPhysicalEnvelopeMm": [
+    24,
+    48.00000001192093,
+    8.000000002980233
+  ],
+  "authorSmoke": {
+    "status": "pass",
+    "route": "own-dimensional-parametric",
+    "importedNativeFaces": 0,
+    "physicalTopology": [
+      {
+        "name": "U031 original closed rear skin with real2mount bores and screw opening",
+        "edges": 2724,
+        "invalidEdges": 0,
+        "volumeMm3": 1094.0978329037503
+      },
+      {
+        "name": "U031 original closed front skin;Grove notch is a true boundary opening",
+        "edges": 2358,
+        "invalidEdges": 0,
+        "volumeMm3": 1020.7573991500702
+      },
+      {
+        "name": "U031 real closed curved left perimeter wall",
+        "edges": 1566,
+        "invalidEdges": 0,
+        "volumeMm3": 342.52575107377316
+      },
+      {
+        "name": "U031 real closed curved right perimeter wall",
+        "edges": 3102,
+        "invalidEdges": 0,
+        "volumeMm3": 342.5309610148689
+      },
+      {
+        "name": "U031 top endwall with actual small slot and FrontSide walls",
+        "edges": 3120,
+        "invalidEdges": 0,
+        "volumeMm3": 103.4070868871896
+      },
+      {
+        "name": "U031 white bottom casing bridge supports Grove receiving floor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 16.995000683069236
+      },
+      {
+        "name": "U031 physical through bore support sleeve",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 81.5000806793609
+      },
+      {
+        "name": "U031 physical through bore support sleeve",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 81.5000806793609
+      },
+      {
+        "name": "U031 physical central fixed screw support",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 56.03130312823645
+      },
+      {
+        "name": "U031 own inferred rear-to-PCB support post",
+        "edges": 192,
+        "invalidEdges": 0,
+        "volumeMm3": 1.9719729224337141
+      },
+      {
+        "name": "U031 own inferred rear-to-PCB support post",
+        "edges": 192,
+        "invalidEdges": 0,
+        "volumeMm3": 1.9719729224337141
+      },
+      {
+        "name": "U031 own inferred rear-to-PCB support post",
+        "edges": 192,
+        "invalidEdges": 0,
+        "volumeMm3": 1.9719729224337141
+      },
+      {
+        "name": "U031 own inferred rear-to-PCB support post",
+        "edges": 192,
+        "invalidEdges": 0,
+        "volumeMm3": 1.9719729224337141
+      },
+      {
+        "name": "U031 fixed dark internal slot backing;function unconfirmed",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 4.283999933719633
+      },
+      {
+        "name": "U031 fixed small-slot carrier seated on actualPCB",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.7839999849796295
+      },
+      {
+        "name": "U031 moulded white M true material",
+        "edges": 66,
+        "invalidEdges": 0,
+        "volumeMm3": 0.6402499947585166
+      },
+      {
+        "name": "U031 moulded white 5 true material",
+        "edges": 102,
+        "invalidEdges": 0,
+        "volumeMm3": 0.7128749956768008
+      },
+      {
+        "name": "Original U031 own reconstructed1PCB with true boss edge reliefs/Grove notch/contact drills",
+        "edges": 2796,
+        "invalidEdges": 0,
+        "volumeMm3": 616.3027601622723
+      },
+      {
+        "name": "U031 actual J1 through-board annular pad",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.04107310362928115
+      },
+      {
+        "name": "U031 actual J1 solder retention collar",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13228080282658758
+      },
+      {
+        "name": "U031 actual J1 through-board annular pad",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.04107310362928115
+      },
+      {
+        "name": "U031 actual J1 solder retention collar",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13228080282658758
+      },
+      {
+        "name": "U031 actual J1 through-board annular pad",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.04107310362928115
+      },
+      {
+        "name": "U031 actual J1 solder retention collar",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13228080282658758
+      },
+      {
+        "name": "U031 actual J1 through-board annular pad",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.04107310362928115
+      },
+      {
+        "name": "U031 actual J1 solder retention collar",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13228080282658758
+      },
+      {
+        "name": "U031 documented MFRC522 hidden package appearance;outline and position inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 20.000000298023224
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 inferred MFRC522 QFN32 termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017499999962747093
+      },
+      {
+        "name": "U031 documentary HT7533 hidden envelope/install inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 5.0399997806549095
+      },
+      {
+        "name": "U031 HT7533 retained physical lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0540000015199184
+      },
+      {
+        "name": "U031 HT7533 retained physical lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0540000015199184
+      },
+      {
+        "name": "U031 HT7533 retained physical lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0540000015199184
+      },
+      {
+        "name": "U031 own schematic resistor hidden body;no invented value/layout",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4679999774098395
+      },
+      {
+        "name": "U031 retained passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "U031 retained passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "U031 own schematic resistor hidden body;no invented value/layout",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4679999774098395
+      },
+      {
+        "name": "U031 retained passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "U031 retained passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "U031 own schematic capacitor hidden body;no invented value/layout",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4679999774098395
+      },
+      {
+        "name": "U031 retained passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "U031 retained passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "U031 own schematic capacitor hidden body;no invented value/layout",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4679999774098395
+      },
+      {
+        "name": "U031 retained passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "U031 retained passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "U031 own schematic capacitor hidden body;no invented value/layout",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4679999774098395
+      },
+      {
+        "name": "U031 retained passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "U031 retained passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "U031 hidden RF loop appearance reconstruction 1;no measured original trace or electrical model",
+        "edges": 3120,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4605602241246394
+      },
+      {
+        "name": "U031 hidden RF loop appearance reconstruction 2;no measured original trace or electrical model",
+        "edges": 3120,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4343795236603296
+      },
+      {
+        "name": "U031 hidden RF loop appearance reconstruction 3;no measured original trace or electrical model",
+        "edges": 3120,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4082002042385545
+      },
+      {
+        "name": "U031 Grove real receiving sidewall",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 27.663998167038006
+      },
+      {
+        "name": "U031 Grove real upper retaining rail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 3.2109997241497106
+      },
+      {
+        "name": "U031 Grove real receiving sidewall",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 27.663998167038006
+      },
+      {
+        "name": "U031 Grove real upper retaining rail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 3.2109997241497106
+      },
+      {
+        "name": "U031 Grove real socket floor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 39.216002805709856
+      },
+      {
+        "name": "U031 Grove deep actual dielectric insertion stop",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 27.6920001826286
+      },
+      {
+        "name": "U031 Grove real internal retaining latch",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 2.469999878406526
+      },
+      {
+        "name": "U031 Grove deep carrier bridge rests on actualPCB",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 8.256000817298915
+      },
+      {
+        "name": "U031 Grove actual retained contact 1",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.0231199697589863
+      },
+      {
+        "name": "U031 Grove actual conductor return 1",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.5544000167369838
+      },
+      {
+        "name": "U031 Grove retained conductor foot 1",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2469599803733831
+      },
+      {
+        "name": "U031 Grove actual through-board solder tail 1",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.3175199717617043
+      },
+      {
+        "name": "U031 Grove actual retained contact 2",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.0231199697589863
+      },
+      {
+        "name": "U031 Grove actual conductor return 2",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.5544000167369838
+      },
+      {
+        "name": "U031 Grove retained conductor foot 2",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2469599803733831
+      },
+      {
+        "name": "U031 Grove actual through-board solder tail 2",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.3175199717617043
+      },
+      {
+        "name": "U031 Grove actual retained contact 3",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.0231199697589863
+      },
+      {
+        "name": "U031 Grove actual conductor return 3",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.5544000167369838
+      },
+      {
+        "name": "U031 Grove retained conductor foot 3",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2469599803733831
+      },
+      {
+        "name": "U031 Grove actual through-board solder tail 3",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.3175199717617043
+      },
+      {
+        "name": "U031 Grove actual retained contact 4",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.0231199697589863
+      },
+      {
+        "name": "U031 Grove actual conductor return 4",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.5544000167369838
+      },
+      {
+        "name": "U031 Grove retained conductor foot 4",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2469599803733831
+      },
+      {
+        "name": "U031 Grove actual through-board solder tail 4",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.3175199717617043
+      },
+      {
+        "name": "U031 actual fixed rear screw head with reconstructed hex well",
+        "edges": 420,
+        "invalidEdges": 0,
+        "volumeMm3": 3.093069306384902
+      },
+      {
+        "name": "U031 true recessed hex drive floor",
+        "edges": 192,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07553897592192514
+      },
+      {
+        "name": "U031 real bearing face at rear support",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 2.1007034136940583
+      },
+      {
+        "name": "U031 retained screw shank;static,no joint",
+        "edges": 192,
+        "invalidEdges": 0,
+        "volumeMm3": 8.71819641112303
+      },
+      {
+        "name": "Original U031 actual front manufacturer adhesive film",
+        "edges": 1554,
+        "invalidEdges": 0,
+        "volumeMm3": 51.32056935678947
+      },
+      {
+        "name": "Original U031 actual rear manufacturer adhesive film",
+        "edges": 1554,
+        "invalidEdges": 0,
+        "volumeMm3": 36.544453934122636
+      }
+    ],
+    "meshes": 111,
+    "triangles": 27008,
+    "assembledEnvelopeMm": [
+      24,
+      48.00000001192093,
+      8.000000002980233
+    ],
+    "physical": {
+      "constructionRoute": "own-dimensional-parametric",
+      "importedNativeFaces": 0,
+      "physicalBodyMeshes": 111,
+      "triangles": 27008,
+      "actualEnvelopeMm": [
+        24,
+        48.00000001192093,
+        8.000000002980233
+      ],
+      "vendorTableOrderMm": [
+        48,
+        24,
+        8
+      ],
+      "closureRays": 14,
+      "trueMountingAxes": 2,
+      "mountBoreWallRays": 40,
+      "PCBScallopWallRays": 2,
+      "PCBLeadDrills": 4,
+      "PCBDrillWallRays": 16,
+      "realReceivingContacts": 4,
+      "realReturns": 4,
+      "realFeet": 4,
+      "realThroughPCBContacts": 4,
+      "realSideSlotWithBacking": true,
+      "sideSlotWallRays": 4,
+      "physicalFilms": 2,
+      "physicalM5Glyphs": 2,
+      "inferredAntennaLoops": 3,
+      "fixedOwnSchematicPassives": 5,
+      "scope": "Own original U031 appearance;all internal/package/antenna positions inferred,no native/GPU/manufacturing/electrical validation"
+    },
+    "scope": "Own original U031 exact evidence route;all entities closed/oriented positive,necessary physical rays;no native,GPU or manufacturing acceptance"
+  },
+  "helperProbe": {
+    "status": "pass",
+    "scope": "One bounded original U031 Model and actual transformed StickS3-HUB branch,real four-core cables,necessary own physical/runtime fixture;no GPU/full history",
+    "model": {
+      "constructionRoute": "own-dimensional-parametric",
+      "importedNativeFaces": 0,
+      "physicalBodyMeshes": 111,
+      "triangles": 27008,
+      "actualEnvelopeMm": [
+        24,
+        48.00000001192093,
+        8.000000002980233
+      ],
+      "vendorTableOrderMm": [
+        48,
+        24,
+        8
+      ],
+      "closureRays": 14,
+      "trueMountingAxes": 2,
+      "mountBoreWallRays": 40,
+      "PCBScallopWallRays": 2,
+      "PCBLeadDrills": 4,
+      "PCBDrillWallRays": 16,
+      "realReceivingContacts": 4,
+      "realReturns": 4,
+      "realFeet": 4,
+      "realThroughPCBContacts": 4,
+      "realSideSlotWithBacking": true,
+      "sideSlotWallRays": 4,
+      "physicalFilms": 2,
+      "physicalM5Glyphs": 2,
+      "inferredAntennaLoops": 3,
+      "fixedOwnSchematicPassives": 5,
+      "scope": "Own original U031 appearance;all internal/package/antenna positions inferred,no native/GPU/manufacturing/electrical validation"
+    },
+    "modelRuntime": {
+      "noUIDNFCReadWriteRFSensingAddressI2CFirmware": true,
+      "rejectedCommandTypes": 16,
+      "noControlsOutputsJointsOrSensorAnchor": true,
+      "shapePortsPeersEventsInvariant": true,
+      "staticAfter1_25Seconds": true
+    },
+    "artworkCases": [
+      {
+        "entry": "Model",
+        "actualOptions": {},
+        "uniquePresets": 1,
+        "namedPresets": [
+          "complete"
+        ],
+        "onPngCount": 2,
+        "offPngCount": 0,
+        "allPhysicalAttributesIndexWorldInvariant": true
+      },
+      {
+        "entry": "GroveModule",
+        "actualOptions": {},
+        "uniquePresets": 1,
+        "namedPresets": [
+          "complete"
+        ],
+        "onPngCount": 2,
+        "offPngCount": 0,
+        "allPhysicalAttributesIndexWorldInvariant": true
+      }
+    ],
+    "module": {
+      "constructionRoute": "own-dimensional-parametric",
+      "importedNativeFaces": 0,
+      "physicalBodyMeshes": 111,
+      "triangles": 27008,
+      "actualEnvelopeMm": [
+        24.000000000000007,
+        48.00000001192096,
+        8.000000002980244
+      ],
+      "vendorTableOrderMm": [
+        48,
+        24,
+        8
+      ],
+      "closureRays": 14,
+      "trueMountingAxes": 2,
+      "mountBoreWallRays": 40,
+      "PCBScallopWallRays": 2,
+      "PCBLeadDrills": 4,
+      "PCBDrillWallRays": 16,
+      "realReceivingContacts": 4,
+      "realReturns": 4,
+      "realFeet": 4,
+      "realThroughPCBContacts": 4,
+      "realSideSlotWithBacking": true,
+      "sideSlotWallRays": 4,
+      "physicalFilms": 2,
+      "physicalM5Glyphs": 2,
+      "inferredAntennaLoops": 3,
+      "fixedOwnSchematicPassives": 5,
+      "scope": "Own original U031 appearance;all internal/package/antenna positions inferred,no native/GPU/manufacturing/electrical validation"
+    },
+    "moduleRuntime": {
+      "noUIDNFCReadWriteRFSensingAddressI2CFirmware": true,
+      "rejectedCommandTypes": 16,
+      "noControlsOutputsJointsOrSensorAnchor": true,
+      "shapePortsPeersEventsInvariant": true,
+      "staticAfter1_25Seconds": true
+    },
+    "realFourCoreCables": {
+      "testedPath": 2,
+      "peer": 1
+    },
+    "actualBranchDetachReattach": true,
+    "ancestorAndModulePose": true,
+    "peerAndFramebufferInvariant": true,
+    "disposedResources": 658
+  },
+  "evidenceSha256": {
+    "geometry": "b19aa4a58a9e9517385b908579198e7decc3d7d917938cae6cf9ab96ded6c40c",
+    "smoke": "1ff3171888614f04b55c8fcdb5328e20a6f88193e2e1a5ce026382e467b24594",
+    "probe": "01d2647917b3db90577fb9b1696c772c2ac172c8d1e66834be7c40b4d3a260d2",
+    "helper": "eb3c903156eb1ead83cafa8328fc3453d61fa0bf4b8b8ee88f025fce7fea15b3"
+  },
+  "visual": null,
+  "manufacturingFit": false,
+  "scope": "Necessary own Node geometry/API/canvas boundary fixture only;0native,0GPU/browser,0hardware,0manufacturing or whole-history acceptance"
+}

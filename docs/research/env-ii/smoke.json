@@ -1,0 +1,872 @@
+{
+  "id": "env-ii",
+  "sku": "U001-B",
+  "date": "2026-10-27",
+  "status": "pass",
+  "stage": "modeled",
+  "constructionRoute": "own-dimensional-parametric",
+  "nativeFaces": 0,
+  "physicalTopology": {
+    "meshes": 105,
+    "triangles": 58576,
+    "allCoordinateWeldedClosed": true,
+    "allDirectedEdgesOppose": true,
+    "allPositiveSignedVolumes": true
+  },
+  "actualPhysicalEnvelopeMm": [
+    24,
+    32.00000002384186,
+    8.000000001490116
+  ],
+  "authorSmoke": {
+    "status": "pass",
+    "route": "own-dimensional-parametric",
+    "importedNativeFaces": 0,
+    "physicalTopology": [
+      {
+        "name": "ENV-II own closed rear skin;true bores/retainer opening",
+        "edges": 2388,
+        "invalidEdges": 0,
+        "volumeMm3": 707.0457098173497
+      },
+      {
+        "name": "ENV-II own closed front skin with40real staggered air passages and actual Grove boundary notch",
+        "edges": 56550,
+        "invalidEdges": 0,
+        "volumeMm3": 586.3977684633617
+      },
+      {
+        "name": "ENV-II own rear half left curved perimeter",
+        "edges": 1374,
+        "invalidEdges": 0,
+        "volumeMm3": 122.2945833943578
+      },
+      {
+        "name": "ENV-II own front half left curved perimeter",
+        "edges": 1374,
+        "invalidEdges": 0,
+        "volumeMm3": 122.2945833943578
+      },
+      {
+        "name": "ENV-II own rear half right curved perimeter",
+        "edges": 3102,
+        "invalidEdges": 0,
+        "volumeMm3": 122.29831365498576
+      },
+      {
+        "name": "ENV-II own front half right curved perimeter",
+        "edges": 3102,
+        "invalidEdges": 0,
+        "volumeMm3": 122.29831365498576
+      },
+      {
+        "name": "ENV-II closed rear half top end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 51.92000196456911
+      },
+      {
+        "name": "ENV-II closed front half top end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 51.92000196456911
+      },
+      {
+        "name": "ENV-II actual lower white bridge supports receiving floor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 16.995000683069236
+      },
+      {
+        "name": "ENV-II true open mounting sleeve,closed half material",
+        "edges": 672,
+        "invalidEdges": 0,
+        "volumeMm3": 36.9005833092602
+      },
+      {
+        "name": "ENV-II true open mounting sleeve,closed half material",
+        "edges": 672,
+        "invalidEdges": 0,
+        "volumeMm3": 36.9005833092602
+      },
+      {
+        "name": "ENV-II true open mounting sleeve,closed half material",
+        "edges": 672,
+        "invalidEdges": 0,
+        "volumeMm3": 36.9005833092602
+      },
+      {
+        "name": "ENV-II true open mounting sleeve,closed half material",
+        "edges": 672,
+        "invalidEdges": 0,
+        "volumeMm3": 36.9005833092602
+      },
+      {
+        "name": "ENV-II fixed central screw support sleeve",
+        "edges": 672,
+        "invalidEdges": 0,
+        "volumeMm3": 56.969318723397436
+      },
+      {
+        "name": "ENV-II inferred physical rear-to-PCB support post",
+        "edges": 192,
+        "invalidEdges": 0,
+        "volumeMm3": 1.9719729224337141
+      },
+      {
+        "name": "ENV-II inferred physical rear-to-PCB support post",
+        "edges": 192,
+        "invalidEdges": 0,
+        "volumeMm3": 1.9719729224337141
+      },
+      {
+        "name": "ENV-II inferred physical rear-to-PCB support post",
+        "edges": 192,
+        "invalidEdges": 0,
+        "volumeMm3": 1.9719729224337141
+      },
+      {
+        "name": "ENV-II inferred physical rear-to-PCB support post",
+        "edges": 192,
+        "invalidEdges": 0,
+        "volumeMm3": 1.9719729224337141
+      },
+      {
+        "name": "U001-B actual white M relief material",
+        "edges": 66,
+        "invalidEdges": 0,
+        "volumeMm3": 0.6402499947585166
+      },
+      {
+        "name": "U001-B actual white 5 relief material",
+        "edges": 102,
+        "invalidEdges": 0,
+        "volumeMm3": 0.7128749956768008
+      },
+      {
+        "name": "ENV-II original own reconstructed PCB,actual boss reliefs/Grove notch/4retained contact drills",
+        "edges": 2460,
+        "invalidEdges": 0,
+        "volumeMm3": 344.1054017689758
+      },
+      {
+        "name": "ENV-II real annular through-board contact land",
+        "edges": 672,
+        "invalidEdges": 0,
+        "volumeMm3": 0.04105289484613782
+      },
+      {
+        "name": "ENV-II real through-board solder collar",
+        "edges": 672,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13221572409260246
+      },
+      {
+        "name": "ENV-II real annular through-board contact land",
+        "edges": 672,
+        "invalidEdges": 0,
+        "volumeMm3": 0.04105289484613782
+      },
+      {
+        "name": "ENV-II real through-board solder collar",
+        "edges": 672,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13221572409260246
+      },
+      {
+        "name": "ENV-II real annular through-board contact land",
+        "edges": 672,
+        "invalidEdges": 0,
+        "volumeMm3": 0.04105289484613782
+      },
+      {
+        "name": "ENV-II real through-board solder collar",
+        "edges": 672,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13221572409260246
+      },
+      {
+        "name": "ENV-II real annular through-board contact land",
+        "edges": 672,
+        "invalidEdges": 0,
+        "volumeMm3": 0.04105289484613782
+      },
+      {
+        "name": "ENV-II real through-board solder collar",
+        "edges": 672,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13221572409260246
+      },
+      {
+        "name": "ENV-II actual fixed SHT30 substrate restsPCB",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 2.7000001072883606
+      },
+      {
+        "name": "ENV-II real SHT30 metal cap and true sensing bore",
+        "edges": 1704,
+        "invalidEdges": 0,
+        "volumeMm3": 4.313964854501471
+      },
+      {
+        "name": "ENV-II fixed SHT30 internal dielectric medium;no glow/readings",
+        "edges": 192,
+        "invalidEdges": 0,
+        "volumeMm3": 0.04200216463810071
+      },
+      {
+        "name": "ENV-II fixed SHT30 eightLGA retention ends",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.00945000016540288
+      },
+      {
+        "name": "ENV-II fixed SHT30 eightLGA retention ends",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.00945000016540288
+      },
+      {
+        "name": "ENV-II fixed SHT30 eightLGA retention ends",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.00945000016540288
+      },
+      {
+        "name": "ENV-II fixed SHT30 eightLGA retention ends",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.00945000016540288
+      },
+      {
+        "name": "ENV-II fixed SHT30 eightLGA retention ends",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.00945000016540288
+      },
+      {
+        "name": "ENV-II fixed SHT30 eightLGA retention ends",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.00945000016540288
+      },
+      {
+        "name": "ENV-II fixed SHT30 eightLGA retention ends",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.00945000016540288
+      },
+      {
+        "name": "ENV-II fixed SHT30 eightLGA retention ends",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.00945000016540288
+      },
+      {
+        "name": "ENV-II fixed BMP280 substrate contactsPCB",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.25
+      },
+      {
+        "name": "ENV-II actual metal BMP280 pressure can with real open bore",
+        "edges": 1704,
+        "invalidEdges": 0,
+        "volumeMm3": 3.4351637461650215
+      },
+      {
+        "name": "ENV-II true blind pressure-port fixed backing;no moving diaphragm or sensor simulation",
+        "edges": 192,
+        "invalidEdges": 0,
+        "volumeMm3": 0.002447212952844107
+      },
+      {
+        "name": "ENV-II fixed BMP280 eightLGA retention ends",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.005879999793469906
+      },
+      {
+        "name": "ENV-II fixed BMP280 eightLGA retention ends",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.005879999793469906
+      },
+      {
+        "name": "ENV-II fixed BMP280 eightLGA retention ends",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.005879999793469906
+      },
+      {
+        "name": "ENV-II fixed BMP280 eightLGA retention ends",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.005879999793469906
+      },
+      {
+        "name": "ENV-II fixed BMP280 eightLGA retention ends",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.005879999793469906
+      },
+      {
+        "name": "ENV-II fixed BMP280 eightLGA retention ends",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.005879999793469906
+      },
+      {
+        "name": "ENV-II fixed BMP280 eightLGA retention ends",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.005879999793469906
+      },
+      {
+        "name": "ENV-II fixed BMP280 eightLGA retention ends",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.005879999793469906
+      },
+      {
+        "name": "ENV-II own schematic HT7533 fixed envelope;installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 6.554999781847002
+      },
+      {
+        "name": "ENV-II actual fixed regulator retention lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0540000015199184
+      },
+      {
+        "name": "ENV-II actual fixed regulator retention lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0540000015199184
+      },
+      {
+        "name": "ENV-II actual fixed regulator retention lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0540000015199184
+      },
+      {
+        "name": "ENV-II own schematic resistor inferred retained envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4679999774098395
+      },
+      {
+        "name": "ENV-II fixed passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "ENV-II fixed passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "ENV-II own schematic resistor inferred retained envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4679999774098395
+      },
+      {
+        "name": "ENV-II fixed passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "ENV-II fixed passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "ENV-II own schematic capacitor inferred retained envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4679999774098395
+      },
+      {
+        "name": "ENV-II fixed passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "ENV-II fixed passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "ENV-II own schematic capacitor inferred retained envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4679999774098395
+      },
+      {
+        "name": "ENV-II fixed passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "ENV-II fixed passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "ENV-II own schematic capacitor inferred retained envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4679999774098395
+      },
+      {
+        "name": "ENV-II fixed passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "ENV-II fixed passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "ENV-II own schematic capacitor inferred retained envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4679999774098395
+      },
+      {
+        "name": "ENV-II fixed passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "ENV-II fixed passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "ENV-II own schematic capacitor inferred retained envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4679999774098395
+      },
+      {
+        "name": "ENV-II fixed passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "ENV-II fixed passive metal end",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.08832000094413751
+      },
+      {
+        "name": "ENV-II Grove actual side receiving wall",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 27.663998167038006
+      },
+      {
+        "name": "ENV-II Grove actual upper retaining rail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 3.2109997241497106
+      },
+      {
+        "name": "ENV-II Grove actual side receiving wall",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 27.663998167038006
+      },
+      {
+        "name": "ENV-II Grove actual upper retaining rail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 3.2109997241497106
+      },
+      {
+        "name": "ENV-II Grove real dielectric floor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 39.216002805709856
+      },
+      {
+        "name": "ENV-II Grove actual deep dielectric insertion stop",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 27.6920001826286
+      },
+      {
+        "name": "ENV-II Grove physical retaining bridge",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 2.469999878406526
+      },
+      {
+        "name": "ENV-II Grove real deep carrier support meetsPCB",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 8.256000817298915
+      },
+      {
+        "name": "ENV-II Grove real retained contact 1",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.0231199697589863
+      },
+      {
+        "name": "ENV-II Grove real conductor return 1",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.5544000167369838
+      },
+      {
+        "name": "ENV-II Grove actual solder foot 1",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2469599803733831
+      },
+      {
+        "name": "ENV-II Grove actual through-board retained tail 1",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.3175199717617043
+      },
+      {
+        "name": "ENV-II Grove real retained contact 2",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.0231199697589863
+      },
+      {
+        "name": "ENV-II Grove real conductor return 2",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.5544000167369838
+      },
+      {
+        "name": "ENV-II Grove actual solder foot 2",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2469599803733831
+      },
+      {
+        "name": "ENV-II Grove actual through-board retained tail 2",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.3175199717617043
+      },
+      {
+        "name": "ENV-II Grove real retained contact 3",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.0231199697589863
+      },
+      {
+        "name": "ENV-II Grove real conductor return 3",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.5544000167369838
+      },
+      {
+        "name": "ENV-II Grove actual solder foot 3",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2469599803733831
+      },
+      {
+        "name": "ENV-II Grove actual through-board retained tail 3",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.3175199717617043
+      },
+      {
+        "name": "ENV-II Grove real retained contact 4",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.0231199697589863
+      },
+      {
+        "name": "ENV-II Grove real conductor return 4",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.5544000167369838
+      },
+      {
+        "name": "ENV-II Grove actual solder foot 4",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2469599803733831
+      },
+      {
+        "name": "ENV-II Grove actual through-board retained tail 4",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.3175199717617043
+      },
+      {
+        "name": "ENV-II actual fixed screw head with inferred true hex recess",
+        "edges": 372,
+        "invalidEdges": 0,
+        "volumeMm3": 3.091315020690536
+      },
+      {
+        "name": "ENV-II true recessed drive floor",
+        "edges": 192,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07553897592192514
+      },
+      {
+        "name": "ENV-II fixed rear screw bearing",
+        "edges": 672,
+        "invalidEdges": 0,
+        "volumeMm3": 2.099669906047651
+      },
+      {
+        "name": "ENV-II retained screw shaft;no dynamic joint",
+        "edges": 192,
+        "invalidEdges": 0,
+        "volumeMm3": 8.71819641112303
+      },
+      {
+        "name": "ENV-II actual manufacturer rear physical adhesive film",
+        "edges": 1362,
+        "invalidEdges": 0,
+        "volumeMm3": 15.808451907586301
+      }
+    ],
+    "meshes": 105,
+    "triangles": 58576,
+    "assembledEnvelopeMm": [
+      24,
+      32.00000002384186,
+      8.000000001490116
+    ],
+    "physical": {
+      "constructionRoute": "own-dimensional-parametric",
+      "importedNativeFaces": 0,
+      "physicalBodyMeshes": 105,
+      "triangles": 58576,
+      "actualEnvelopeMm": [
+        24,
+        32.00000002384186,
+        8.000000001490116
+      ],
+      "currentNominalMm": [
+        24,
+        32,
+        8
+      ],
+      "historicalNominalMm": [
+        24.2,
+        32.2,
+        8.1
+      ],
+      "closureRays": 12,
+      "trueMountingAxes": 2,
+      "mountBoreWallRays": 40,
+      "PCBScallopWallRays": 2,
+      "realCapsuleVents": 40,
+      "columnCounts": [
+        4,
+        5,
+        4,
+        5,
+        4,
+        5,
+        4,
+        5,
+        4
+      ],
+      "ventFrontSideWallRays": 160,
+      "backedVentRays": 40,
+      "trueSensorPackagePorts": 2,
+      "sensorPortWallRays": 8,
+      "trueSensorBackings": 2,
+      "realGroveContacts": 4,
+      "realThroughPCBContacts": 4,
+      "PCBDrillWallRays": 16,
+      "ownSchematicPassives": 7,
+      "physicalFilms": 1,
+      "physicalM5Glyphs": 2,
+      "scope": "Own U001-B appearance only;all hidden installation/fit inferred,0native/GPU/manufacturing/electrical validation"
+    },
+    "scope": "Own original U001-B exact evidence route;all entities closed/oriented positive,necessary physical rays;no native,GPU or manufacturing acceptance"
+  },
+  "helperProbe": {
+    "status": "pass",
+    "scope": "One bounded original U001-B Model and actual transformed StickS3-HUB branch,real four-core cables,necessary own physical/runtime fixture;no GPU/full history",
+    "model": {
+      "constructionRoute": "own-dimensional-parametric",
+      "importedNativeFaces": 0,
+      "physicalBodyMeshes": 105,
+      "triangles": 58576,
+      "actualEnvelopeMm": [
+        24,
+        32.00000002384186,
+        8.000000001490116
+      ],
+      "currentNominalMm": [
+        24,
+        32,
+        8
+      ],
+      "historicalNominalMm": [
+        24.2,
+        32.2,
+        8.1
+      ],
+      "closureRays": 12,
+      "trueMountingAxes": 2,
+      "mountBoreWallRays": 40,
+      "PCBScallopWallRays": 2,
+      "realCapsuleVents": 40,
+      "columnCounts": [
+        4,
+        5,
+        4,
+        5,
+        4,
+        5,
+        4,
+        5,
+        4
+      ],
+      "ventFrontSideWallRays": 160,
+      "backedVentRays": 40,
+      "trueSensorPackagePorts": 2,
+      "sensorPortWallRays": 8,
+      "trueSensorBackings": 2,
+      "realGroveContacts": 4,
+      "realThroughPCBContacts": 4,
+      "PCBDrillWallRays": 16,
+      "ownSchematicPassives": 7,
+      "physicalFilms": 1,
+      "physicalM5Glyphs": 2,
+      "scope": "Own U001-B appearance only;all hidden installation/fit inferred,0native/GPU/manufacturing/electrical validation"
+    },
+    "modelRuntime": {
+      "noReadingsSamplingI2CAddressRegistersFirmware": true,
+      "rejectedCommandTypes": 16,
+      "noControlsLightsJointsOrSensorAnchor": true,
+      "shapePortsPeersEventsInvariant": true,
+      "staticAfter1_25Seconds": true
+    },
+    "artworkCases": [
+      {
+        "entry": "Model",
+        "actualOptions": {},
+        "uniquePresets": 1,
+        "namedPresets": [
+          "complete"
+        ],
+        "onPngCount": 1,
+        "offPngCount": 0,
+        "allPhysicalAttributesIndexWorldInvariant": true
+      },
+      {
+        "entry": "GroveModule",
+        "actualOptions": {},
+        "uniquePresets": 1,
+        "namedPresets": [
+          "complete"
+        ],
+        "onPngCount": 1,
+        "offPngCount": 0,
+        "allPhysicalAttributesIndexWorldInvariant": true
+      }
+    ],
+    "module": {
+      "constructionRoute": "own-dimensional-parametric",
+      "importedNativeFaces": 0,
+      "physicalBodyMeshes": 105,
+      "triangles": 58576,
+      "actualEnvelopeMm": [
+        24.000000000000036,
+        32.000000023841864,
+        8.000000001490122
+      ],
+      "currentNominalMm": [
+        24,
+        32,
+        8
+      ],
+      "historicalNominalMm": [
+        24.2,
+        32.2,
+        8.1
+      ],
+      "closureRays": 12,
+      "trueMountingAxes": 2,
+      "mountBoreWallRays": 40,
+      "PCBScallopWallRays": 2,
+      "realCapsuleVents": 40,
+      "columnCounts": [
+        4,
+        5,
+        4,
+        5,
+        4,
+        5,
+        4,
+        5,
+        4
+      ],
+      "ventFrontSideWallRays": 160,
+      "backedVentRays": 40,
+      "trueSensorPackagePorts": 2,
+      "sensorPortWallRays": 8,
+      "trueSensorBackings": 2,
+      "realGroveContacts": 4,
+      "realThroughPCBContacts": 4,
+      "PCBDrillWallRays": 16,
+      "ownSchematicPassives": 7,
+      "physicalFilms": 1,
+      "physicalM5Glyphs": 2,
+      "scope": "Own U001-B appearance only;all hidden installation/fit inferred,0native/GPU/manufacturing/electrical validation"
+    },
+    "moduleRuntime": {
+      "noReadingsSamplingI2CAddressRegistersFirmware": true,
+      "rejectedCommandTypes": 16,
+      "noControlsLightsJointsOrSensorAnchor": true,
+      "shapePortsPeersEventsInvariant": true,
+      "staticAfter1_25Seconds": true
+    },
+    "realFourCoreCables": {
+      "testedPath": 2,
+      "peer": 1
+    },
+    "actualBranchDetachReattach": true,
+    "ancestorAndModulePose": true,
+    "peerAndFramebufferInvariant": true,
+    "disposedResources": 648
+  },
+  "evidenceSha256": {
+    "geometry": "7c5c3ccc51784d2d4f7753e8cbb6c10f3f4f9a5c5e7a7212ffda26082d00fee5",
+    "smoke": "340b1f75377c609da81d2ff50ce0a062fcd721403877668e944517243c9d1f76",
+    "probe": "f0dc920d653bc0564ff94e6971f5fa442ab6283eda691961448294b32fa05d6a",
+    "helper": "ff5f7114d3084f1d02bd5eb4dd7eb94ea92db061f2cc5320c5b42a76fbacee95"
+  },
+  "visual": null,
+  "manufacturingFit": false,
+  "scope": "Necessary own Node geometry/API/canvas-boundary fixture only;0native/GPU/browser/hardware/manufacturing orwhole-history acceptance"
+}

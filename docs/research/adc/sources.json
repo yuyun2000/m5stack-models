@@ -1,0 +1,300 @@
+{
+  "id": "adc",
+  "sku": "U013",
+  "name": "Unit ADC",
+  "chip": "ADS1100",
+  "lifecycle": "EOL-original-version;historical Unit coverage,not a claim of currently sold/popular revision",
+  "retrievedAt": "2026-10-27",
+  "officialDocs": "https://docs.m5stack.com/en/unit/adc",
+  "constructionRoute": "own-dimensional-parametric",
+  "nativeGeometryAvailable": false,
+  "nativeTriangles": null,
+  "immutableDocumentationSource": {
+    "repository": "m5stack/m5-docs",
+    "commit": "e5354c5dcc61d16fdc1dff9d92c2c760728d0b60",
+    "path": "docs/en/unit/adc.md",
+    "gitBlob": "0a54ec8b830a22f6989be56f243dc4f5fa9cdcc0",
+    "url": "https://raw.githubusercontent.com/m5stack/m5-docs/e5354c5dcc61d16fdc1dff9d92c2c760728d0b60/docs/en/unit/adc.md",
+    "sha256": "319ad5258299d138edf49b00105c1ded2c71d168aaccfc4d979be6c52bf0118c",
+    "bytes": 4763,
+    "gitBlobVerifiedAgainstBytes": true,
+    "sourceOnlyNotCopiedIntoRuntime": true
+  },
+  "officialMCP": {
+    "query": "Unit ADC U013 ADS1100 original dimensions pinmap",
+    "status": "success",
+    "rawResponseSha256": "8f7b9d03071ea595f15e94053cc817641f42dcaaf6eb5a3f290863b9d6c67e87",
+    "sourceOnlyNotDistributed": true
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/adc/adc_06.webp",
+    "sha256": "9a985509c14dc51c6056d591874ad9eb400b2c1c04316ed025e4b1abca8661e5",
+    "bytes": 65956,
+    "role": "own-assembled-front-and-connector-reference"
+  },
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/adc/adc_02.webp",
+      "sha256": "cbfd43bebd19e3f3ca2a2da537a0fb64c21feb2da1f190a6dd872587071eb276",
+      "bytes": 56152,
+      "role": "own-readable-rear-label"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/adc/adc_05.webp",
+      "sha256": "3766888ea77e0451a133d5c6866dab6b28e882ae46cc4e056f6804ac3baabdbc",
+      "bytes": 38560,
+      "role": "own-assembled-isometric"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/adc/adc_06.webp",
+      "sha256": "9a985509c14dc51c6056d591874ad9eb400b2c1c04316ed025e4b1abca8661e5",
+      "bytes": 65956,
+      "role": "own-assembled-front-and-connector-reference"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/adc/module_size.jpg",
+      "sha256": "c52b852e63c00eecc7e5e051582bd3665aa927bacf06e8cc1f97eef4fe952875",
+      "bytes": 520176,
+      "role": "own-product-dimensioned-multiview"
+    }
+  ],
+  "dimensionBasis": {
+    "ownDimensionedEnvelopeMm": [
+      24,
+      32,
+      10.2
+    ],
+    "ownBaseDepthMm": 8,
+    "ownExtraFrontTerminalHeightMm": 2.2,
+    "ownMountingHoleDiameterMm": 5,
+    "ownMountingHolePitchMm": 16,
+    "ownHoleCentreAboveBottomMm": 12,
+    "ownExternalCornerRadiusMm": 4,
+    "groveMouthWidthMm": 10,
+    "groveMouthHeightMm": 5.2,
+    "source": "Exact product linked ADC/DAC dimension image,visually inspected;source scalar dimensions plus own multiview are authoritative,details otherwise inferred.",
+    "terminalPitchBasis": "Original ADC documentation lists HT3.96 male2pin plug;DAC own similar2pole physical connector/contacts must be confirmed from own sources,not automatic electronic compatibility."
+  },
+  "nominalMm": [
+    24,
+    32,
+    10.2
+  ],
+  "actualPhysicalEnvelopeMm": [
+    24,
+    32.00000020265579,
+    10.19999999910593
+  ],
+  "inferred": [
+    "Own original U013 ADS1100 dimensional-parametric reconstruction from exact ADC24x32x10.2mm/base8mm drawing and own02/05/06;no native geometry/face count and no ADC v1.1 borrowed geometry.",
+    "Shell split thicknesses,notches,debossed/embossed mark depth,PCB outline/support/package placement,terminal internal carrier and retention,contacts,pads,films and clearances are explicit appearance inferences;not manufacturing fit or complete mechanical/electrical BOM.",
+    "Two5mm holes/16mm pitch/12mm above bottom are own dimensioned facts;PCB uses open-edge3.5mm clearance notches instead of invalid intersecting holes.",
+    "Front ADC/arrow actual uncolored raised material and rear M5 actual recessed material stay physical. Front relief inferred0.12mm means unplugged physical depth8.12mm;dimensioned base case remains8mm and assembled2P total10.2mm.",
+    "Two original documented HT3.96 pins at3.96mm pitch and orange removable plug are physical;fixed receiver/PCB pin bends/tails/barrels/pads/deep stops and wire-entry cages are real solids. Fitted tongue clearance inferred0.15mm sides/0.25mm top-bottom;not electrical compatibility or rated tolerances.",
+    "Original ADS1100,LM358DR2G,HT7533 package identity from own official MCP/schematic;installation and passives inferred. Grove4contacts have actual right-angle returns,tails,plated bores and annular PCB pads.",
+    "Own actual photos do not clearly establish externally driven terminal screw heads;supplied plug is static Module with0joint. Fixed rear screw has actual blind cross recess and retained shank;no thread/clamp/axial physics.",
+    "Ordinary rear ADS1100 label and removable plug+/- PNG accurately redrawn from own readable sources;fonts/spacing/color inferred,no photographic crop,private/vector/original/generator distribution.",
+    "Pure physical attachment/cable/pose only;no sensor samples,ADC conversion,voltage,waveform,I2C,electrical or firmware emulation."
+  ],
+  "license": {
+    "newAuthoredCode": "MIT",
+    "importedNativeGeometry": false,
+    "officialReferencePhotosDocs": "Reference only,no blanket MIT claim,raw bytes not distributed",
+    "ordinaryRedrawPng": "User-authorized ordinary rasters;product marks retain respective rights"
+  },
+  "privateAggregate": {
+    "sku": "U013",
+    "exactSkuRows": 0,
+    "exactPackagingRows": 0,
+    "exactModuleHatBaseConflictRows": 0,
+    "nonPackagingNonConflictCandidates": 0,
+    "strictNameOnlyRowsExcludingExact": 0,
+    "strictNameOnlyNonPackagingNonConflictCandidates": 0,
+    "originalDownloads": 0,
+    "originalsApproved": 0
+  },
+  "assetPolicy": {
+    "privateSourcesDistributed": false,
+    "rawReferencesDistributed": false,
+    "generatorsDistributed": false,
+    "pngCount": 2
+  },
+  "publicAPI": {
+    "exports": [
+      "Model",
+      "GroveModule",
+      "TerminalPlug",
+      "spec",
+      "defaults",
+      "configurationSchema",
+      "configurations"
+    ],
+    "assemblyProperty": "adcAssembly",
+    "bodyComponentOrder": [
+      "grove",
+      "terminal"
+    ],
+    "moduleComponentOrder": [
+      "grove",
+      "terminal",
+      "unitFrame",
+      "cable"
+    ],
+    "moduleAdditionalComponents": [
+      "unitFrame",
+      "cable"
+    ],
+    "canonicalCableInput": "grove",
+    "ports": [
+      "grove",
+      "terminal"
+    ],
+    "controls": [],
+    "leds": [],
+    "displays": [],
+    "speakers": [],
+    "sensors": [],
+    "joints": [],
+    "anchors": [],
+    "passiveAnchors": [],
+    "keymap": {},
+    "defaults": {
+      "terminal": "installed"
+    },
+    "options": {
+      "terminal": [
+        "installed",
+        "removed"
+      ],
+      "artwork": "boolean"
+    },
+    "configurationSchema": {
+      "terminal": {
+        "values": [
+          "installed",
+          "removed"
+        ],
+        "default": "installed",
+        "meaning": "Own removable orange2P plug installed or independently absent"
+      },
+      "artwork": {
+        "type": "boolean",
+        "default": true,
+        "meaning": "Remove ink only;retain shell,terminal and both physical film carriers"
+      }
+    },
+    "configurations": [
+      {
+        "id": "complete",
+        "name": "完整 ADC U013",
+        "options": {
+          "terminal": "installed"
+        }
+      },
+      {
+        "id": "without-plug",
+        "name": "ADC U013 取下橙色端子",
+        "options": {
+          "terminal": "removed"
+        }
+      }
+    ],
+    "configurationCases": [
+      {
+        "options": {},
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "artworkKinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "pngCount": 2
+      },
+      {
+        "options": {
+          "terminal": "installed"
+        },
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "artworkKinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "pngCount": 2
+      },
+      {
+        "options": {
+          "terminal": "removed"
+        },
+        "kinds": [
+          "reference-redraw"
+        ],
+        "artworkKinds": [
+          "reference-redraw"
+        ],
+        "pngCount": 1
+      }
+    ],
+    "accessoryExports": [
+      "TerminalPlug"
+    ],
+    "accessories": {
+      "terminal": {
+        "constructor": "TerminalPlug",
+        "metaId": "m5stack.unit.adc.terminal-plug",
+        "connector": "m5.adc.u013.terminal-2p",
+        "componentOrder": [],
+        "joints": [],
+        "physicalMeshes": 22,
+        "ownPngCount": 1,
+        "staticMechanicalOnly": true
+      }
+    },
+    "accessoryAssemblyProperty": "adcPlugAssembly",
+    "accessoryComponentOrder": [],
+    "noAccessoryJoints": true,
+    "screwFields": {
+      "actualRemovablePlugJointIds": [],
+      "fixedRearCrossRecessScrew": true,
+      "unconfirmedTerminalScrewHeadMotionNotExposed": true,
+      "threadPitchAxialTravelClampForce": "unconfirmed;not modeled"
+    },
+    "commands": {
+      "unitFrame": {
+        "type": "pose",
+        "target": "unitFrame",
+        "fields": [
+          "position",
+          "rotation",
+          "quaternion",
+          "distance"
+        ]
+      },
+      "cable": {
+        "type": "cable",
+        "target": "cable",
+        "fields": [
+          "slack",
+          "bend"
+        ]
+      }
+    },
+    "inputEvents": {
+      "ports": [
+        "attach",
+        "detach"
+      ]
+    },
+    "artworkPngCount": 2,
+    "artworkSourceKind": "reference-redraw",
+    "physicalAdhesiveFilms": 2,
+    "allArtworkPhysicalAttributesIndexWorldInvariant": true,
+    "onlyRemovablePhysicalFields": [
+      "terminal.module:own orange2P TerminalPlug"
+    ]
+  }
+}

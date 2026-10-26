@@ -1,0 +1,2422 @@
+{
+  "savedAt": "2026-10-26T21:18:14.703330+00:00",
+  "stage": "modeled",
+  "scope": "Own exact-SKU M5Camera-X/UnitV2-M12/TimerCamera-X complete native shell parts,real controls/connectors/optical and static mounting structures,externally driven actual focus angle,corresponding print or true uncolored native relief and real three-branch four-core API fixture/builds;no browser or whole-catalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 161,
+    "modeled": 175,
+    "verified": 0
+  },
+  "localHead": "4fd5216dd2b310b6c92b366cb4c795f08dd15ff6",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "m5camera-x",
+      "status": "pass",
+      "report": "docs/research/m5camera-x/smoke.json",
+      "meshes": null,
+      "triangles": null
+    },
+    {
+      "id": "unitv2-m12",
+      "status": "pass",
+      "report": "docs/research/unitv2-m12/smoke.json",
+      "meshes": 207,
+      "triangles": 20648
+    },
+    {
+      "id": "timercamera-x",
+      "status": "pass",
+      "report": "docs/research/timercamera-x/smoke.json",
+      "meshes": null,
+      "triangles": 114888
+    }
+  ],
+  "pngCount": 2,
+  "rasters": [
+    {
+      "path": "src/units/unitv2-m12/artwork/rear.png",
+      "pixels": [
+        2010,
+        2620
+      ],
+      "sha256": "78af0f014686286d39f54e3a8e3b0fc961ae7fc6c4efa2a047300cd930fbf1a9"
+    },
+    {
+      "path": "src/units/timercamera-x/artwork/back.png",
+      "pixels": [
+        2280,
+        4044
+      ],
+      "sha256": "34c199671e9a0a8958332ffe9248fc05a25e10b773b98a6e8f90e1ed4b9037d8"
+    }
+  ],
+  "frozenPublicAPI": {
+    "m5camera-x": {
+      "exports": [
+        "Model",
+        "GroveModule",
+        "LegoClip",
+        "Wall1515",
+        "spec",
+        "defaults",
+        "configurationSchema",
+        "configurations"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [
+        "reset"
+      ],
+      "leds": [],
+      "displays": [],
+      "ports": [
+        "grove",
+        "usb",
+        "mount"
+      ],
+      "joints": [],
+      "anchors": [
+        "camera"
+      ],
+      "accessoryExports": [
+        "LegoClip",
+        "Wall1515"
+      ],
+      "defaults": {
+        "mount": "none"
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整 M5Camera-X",
+          "options": {
+            "mount": "none"
+          }
+        },
+        {
+          "id": "lego",
+          "name": "M5Camera-X 与自身 LEGO 夹件",
+          "options": {
+            "mount": "lego"
+          }
+        },
+        {
+          "id": "wall1515",
+          "name": "M5Camera-X 与自身 Wall-1515",
+          "options": {
+            "mount": "wall1515"
+          }
+        }
+      ],
+      "pngCount": 0
+    },
+    "unitv2-m12": {
+      "exports": [
+        "Model",
+        "GroveModule",
+        "spec",
+        "defaults",
+        "configurations",
+        "configurationSchema"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [
+        "user"
+      ],
+      "leds": [],
+      "displays": [],
+      "ports": [
+        "grove",
+        "usb",
+        "sd"
+      ],
+      "joints": [
+        "focus"
+      ],
+      "anchors": [
+        "camera"
+      ],
+      "accessoryExports": [],
+      "defaults": {
+        "lens": "85"
+      },
+      "configurations": [
+        {
+          "id": "regular-85",
+          "name": "常规85°镜头 · 本体",
+          "options": {
+            "lens": "85"
+          }
+        }
+      ],
+      "pngCount": 1
+    },
+    "timercamera-x": {
+      "exports": [
+        "Model",
+        "GroveModule",
+        "spec",
+        "TwoEarMount",
+        "TwinHoleMount"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [
+        "power",
+        "reset"
+      ],
+      "leds": [
+        "status"
+      ],
+      "displays": [],
+      "ports": [
+        "grove",
+        "usb",
+        "mount"
+      ],
+      "joints": [],
+      "anchors": [
+        "camera"
+      ],
+      "accessoryExports": [
+        "TwoEarMount",
+        "TwinHoleMount"
+      ],
+      "defaults": {
+        "mount": "none"
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "Complete TimerCamera-X",
+          "options": {
+            "mount": "none"
+          }
+        },
+        {
+          "id": "two-ear",
+          "name": "TimerCamera-X with native two-ear support",
+          "options": {
+            "mount": "two-ear"
+          }
+        },
+        {
+          "id": "twin-hole",
+          "name": "TimerCamera-X with native twin-hole support",
+          "options": {
+            "mount": "twin-hole"
+          }
+        }
+      ],
+      "pngCount": 1
+    }
+  },
+  "fixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "m5camera-x",
+        "body": [
+          "grove",
+          "usb",
+          "reset",
+          "camera",
+          "mount"
+        ],
+        "ports": [
+          "grove",
+          "usb",
+          "mount"
+        ],
+        "controls": [
+          "reset"
+        ],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "physicalMeshes": 237,
+          "triangles": 17830,
+          "nativeFaces": 4778,
+          "nativeParts": [
+            3194,
+            1584
+          ],
+          "allSourceCornersNormalsIndicesExact": true,
+          "allOwnPhysicalSolidsClosedPositiveFrontSide": true,
+          "nativeCaseEnvelopeMm": [
+            24,
+            48,
+            13.199999809265137
+          ],
+          "nominalMm": [
+            24,
+            48,
+            13
+          ],
+          "opticInclusiveBodyEnvelopeMm": [
+            24,
+            48,
+            14.700000286102295
+          ],
+          "withActualMountEnvelopeMm": [
+            40,
+            48,
+            16.09999990463257
+          ],
+          "closureRays": 10,
+          "nativeOpticalAperture": {
+            "mouthRadiusMm": 4.7,
+            "throatRadiusMm": 4,
+            "sourceFacet": 2184,
+            "point": [
+              4.293843578326886,
+              10.070000000000007,
+              6.199999999999999
+            ],
+            "sourceVertexRadiiMm": [
+              4,
+              4.70001220703125,
+              4.699990010876344
+            ],
+            "actualFacetPlaneChecked": true
+          },
+          "opticalFit": {
+            "status": "pass",
+            "scope": "Own source-facet optical neck/lip fit only;not manufacturing tolerances or a complete collision audit",
+            "sourceThroatRadiusMm": 4,
+            "sourceMouthRadiusMm": 4.7,
+            "hiddenNeckRadiusMm": 3.85,
+            "hiddenNeckZMm": [
+              2.7,
+              6.600000095367432
+            ],
+            "frontLipZMm": [
+              6.6,
+              6.650000000745058
+            ],
+            "visibleLipTopAndKnobAndGlassUnchanged": true,
+            "sourceThroatFacets": 38,
+            "minimumThroatFacetRadiusMm": 3.938999615704036,
+            "maximumActualNeckVertexRadiusMm": 3.85000005839243,
+            "conservativeAllAngleClearanceMm": 0.08899955731160603,
+            "levelsMm": [
+              4.95,
+              5.25,
+              5.85,
+              6.05,
+              6.3,
+              6.55
+            ],
+            "angularSamples": 24,
+            "wallNeckSamples": 144,
+            "minimumRadialClearanceMm": 0.09246999125404809,
+            "maximumRadialClearanceMm": 0.7884108082762706,
+            "allRayOriginsInActualAir": true,
+            "actualSourceFacetPlanesChecked": true,
+            "frontLipSeatSamples": 24,
+            "maximumLipSeatGapMm": 9.536743217353205e-08,
+            "lipOutsideNativeMaterial": true,
+            "continuousSensorNeckLipKnobSupport": true
+          },
+          "opticalSupportPosts": 4,
+          "pcbSupportRays": 2,
+          "frontSideSocketWallRays": 6,
+          "contacts": {
+            "grove": 4,
+            "usb": 24,
+            "cameraFpc": 24
+          },
+          "physicalFilms": 0,
+          "pngs": 0,
+          "marking": "own uncolored native M5 relief;no missing-original postponement",
+          "staticAccessory": {
+            "kind": "lego",
+            "nativeFaces": 1966,
+            "physicalEnvelopeMm": [
+              40,
+              28,
+              8.399999529123306
+            ],
+            "static": true
+          }
+        },
+        "transformedStructure": {
+          "physicalMeshes": 237,
+          "triangles": 17830,
+          "nativeFaces": 4778,
+          "nativeParts": [
+            3194,
+            1584
+          ],
+          "allSourceCornersNormalsIndicesExact": true,
+          "allOwnPhysicalSolidsClosedPositiveFrontSide": true,
+          "nativeCaseEnvelopeMm": [
+            24,
+            48.000000000000014,
+            13.199999809265137
+          ],
+          "nominalMm": [
+            24,
+            48,
+            13
+          ],
+          "opticInclusiveBodyEnvelopeMm": [
+            24,
+            48.000000000000014,
+            14.700000286102293
+          ],
+          "withActualMountEnvelopeMm": [
+            40,
+            48.000000000000014,
+            16.09999990463257
+          ],
+          "closureRays": 10,
+          "nativeOpticalAperture": {
+            "mouthRadiusMm": 4.7,
+            "throatRadiusMm": 4,
+            "sourceFacet": 2184,
+            "point": [
+              4.293843578326872,
+              10.069999999999965,
+              6.199999999999989
+            ],
+            "sourceVertexRadiiMm": [
+              4,
+              4.70001220703125,
+              4.699990010876344
+            ],
+            "actualFacetPlaneChecked": true
+          },
+          "opticalFit": {
+            "status": "pass",
+            "scope": "Own source-facet optical neck/lip fit only;not manufacturing tolerances or a complete collision audit",
+            "sourceThroatRadiusMm": 4,
+            "sourceMouthRadiusMm": 4.7,
+            "hiddenNeckRadiusMm": 3.85,
+            "hiddenNeckZMm": [
+              2.6999999999999957,
+              6.600000095367427
+            ],
+            "frontLipZMm": [
+              6.599999999999994,
+              6.650000000745052
+            ],
+            "visibleLipTopAndKnobAndGlassUnchanged": true,
+            "sourceThroatFacets": 38,
+            "minimumThroatFacetRadiusMm": 3.938999615704036,
+            "maximumActualNeckVertexRadiusMm": 3.85000005839243,
+            "conservativeAllAngleClearanceMm": 0.08899955731160603,
+            "levelsMm": [
+              4.95,
+              5.25,
+              5.85,
+              6.05,
+              6.3,
+              6.55
+            ],
+            "angularSamples": 24,
+            "wallNeckSamples": 144,
+            "minimumRadialClearanceMm": 0.0924699912540552,
+            "maximumRadialClearanceMm": 0.7884108082762546,
+            "allRayOriginsInActualAir": true,
+            "actualSourceFacetPlanesChecked": true,
+            "frontLipSeatSamples": 24,
+            "maximumLipSeatGapMm": 9.536743306171047e-08,
+            "lipOutsideNativeMaterial": true,
+            "continuousSensorNeckLipKnobSupport": true
+          },
+          "opticalSupportPosts": 4,
+          "pcbSupportRays": 2,
+          "frontSideSocketWallRays": 6,
+          "contacts": {
+            "grove": 4,
+            "usb": 24,
+            "cameraFpc": 24
+          },
+          "physicalFilms": 0,
+          "pngs": 0,
+          "marking": "own uncolored native M5 relief;no missing-original postponement",
+          "staticAccessory": {
+            "kind": "lego",
+            "nativeFaces": 1966,
+            "physicalEnvelopeMm": [
+              40,
+              28.000000000000007,
+              8.399999529123306
+            ],
+            "static": true
+          }
+        }
+      },
+      {
+        "id": "unitv2-m12",
+        "body": [
+          "grove",
+          "usb",
+          "sd",
+          "user",
+          "focus",
+          "camera"
+        ],
+        "ports": [
+          "grove",
+          "usb",
+          "sd"
+        ],
+        "controls": [
+          "user"
+        ],
+        "leds": [],
+        "displays": [],
+        "joints": [
+          "focus"
+        ],
+        "physicalStructure": {
+          "physicalMeshes": 207,
+          "triangles": 20648,
+          "nativeFaces": 5456,
+          "nativeParts": [
+            3044,
+            2412
+          ],
+          "nativeCaseEnvelopeMm": [
+            24.00007152557373,
+            48,
+            25.999999046325684
+          ],
+          "physicalEnvelopeMm": [
+            24.00007152557373,
+            48,
+            33.034999237060546
+          ],
+          "cavityRays": 4,
+          "frontSideWallRays": 12,
+          "pcbSupportRays": 8,
+          "opticalSupportRays": 4,
+          "nativeApertureWallHits": [
+            {
+              "facet": 1637,
+              "point": [
+                7.484168001879141,
+                9.86,
+                15.699999999999996
+              ],
+              "sourceVertexRadiiMm": [
+                7.4998020669657555,
+                7.500000953674558,
+                7.500000953674558
+              ]
+            },
+            {
+              "facet": 1611,
+              "point": [
+                -7.484166668406644,
+                9.64,
+                15.699999999999998
+              ],
+              "sourceVertexRadiiMm": [
+                7.49980176961263,
+                7.499999046325925,
+                7.499999046325925
+              ]
+            }
+          ],
+          "contacts": {
+            "grove": 4,
+            "usb": 24,
+            "sd": 8
+          },
+          "rearFilms": 1,
+          "externalLeds": 0,
+          "fanRotor": "not-established;fixed carrier/native grille only",
+          "accessories": 0
+        },
+        "transformedStructure": {
+          "physicalMeshes": 207,
+          "triangles": 20648,
+          "nativeFaces": 5456,
+          "nativeParts": [
+            3044,
+            2412
+          ],
+          "nativeCaseEnvelopeMm": [
+            24.00007152557373,
+            48.000000000000014,
+            25.999999046325676
+          ],
+          "physicalEnvelopeMm": [
+            24.00007152557373,
+            48.000000000000014,
+            33.034999237060546
+          ],
+          "cavityRays": 4,
+          "frontSideWallRays": 12,
+          "pcbSupportRays": 8,
+          "opticalSupportRays": 4,
+          "nativeApertureWallHits": [
+            {
+              "facet": 1637,
+              "point": [
+                7.484168001879141,
+                9.859999999999985,
+                15.699999999999989
+              ],
+              "sourceVertexRadiiMm": [
+                7.4998020669657555,
+                7.500000953674558,
+                7.500000953674558
+              ]
+            },
+            {
+              "facet": 1611,
+              "point": [
+                -7.484166668406601,
+                9.639999999999958,
+                15.699999999999992
+              ],
+              "sourceVertexRadiiMm": [
+                7.49980176961263,
+                7.499999046325925,
+                7.499999046325925
+              ]
+            }
+          ],
+          "contacts": {
+            "grove": 4,
+            "usb": 24,
+            "sd": 8
+          },
+          "rearFilms": 1,
+          "externalLeds": 0,
+          "fanRotor": "not-established;fixed carrier/native grille only",
+          "accessories": 0
+        }
+      },
+      {
+        "id": "timercamera-x",
+        "body": [
+          "grove",
+          "usb",
+          "power",
+          "reset",
+          "status",
+          "camera",
+          "mount"
+        ],
+        "ports": [
+          "grove",
+          "usb",
+          "mount"
+        ],
+        "controls": [
+          "power",
+          "reset"
+        ],
+        "leds": [
+          "status"
+        ],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "physicalMeshes": 342,
+          "nativeBodyFaces": 4452,
+          "nativeParts": [
+            3044,
+            1408
+          ],
+          "shellEnvelopeMm": [
+            24,
+            48,
+            13.199999809265137
+          ],
+          "bodyEnvelopeMm": [
+            24.000000011920932,
+            48,
+            14.999999911785128
+          ],
+          "closureRays": 16,
+          "actualOptics": true,
+          "contacts": {
+            "grove": 4,
+            "usb": 24
+          },
+          "pcbBores": 4,
+          "cameraSupports": 4,
+          "batterySeats": 2,
+          "realRearFixings": 2,
+          "physicalFilms": 1,
+          "filmTouchesNativeRecess": true,
+          "actualCapOpenings": true,
+          "singleBlueEmitterContinuousGuideThreeWindows": true,
+          "passiveCamera": true,
+          "configuredAccessory": {
+            "shape": "twin-hole",
+            "sourceRole": "clip",
+            "nativeFaces": 2150,
+            "static": true,
+            "assembledEnvelopeMm": [
+              26.703895568847656,
+              48,
+              18.600000770092013
+            ]
+          },
+          "localToleranceMm": 1e-05
+        },
+        "transformedStructure": {
+          "physicalMeshes": 342,
+          "nativeBodyFaces": 4452,
+          "nativeParts": [
+            3044,
+            1408
+          ],
+          "shellEnvelopeMm": [
+            24,
+            48.000000000000014,
+            13.199999809265137
+          ],
+          "bodyEnvelopeMm": [
+            24.000000011920918,
+            48.000000000000014,
+            14.999999911785132
+          ],
+          "closureRays": 16,
+          "actualOptics": true,
+          "contacts": {
+            "grove": 4,
+            "usb": 24
+          },
+          "pcbBores": 4,
+          "cameraSupports": 4,
+          "batterySeats": 2,
+          "realRearFixings": 2,
+          "physicalFilms": 1,
+          "filmTouchesNativeRecess": true,
+          "actualCapOpenings": true,
+          "singleBlueEmitterContinuousGuideThreeWindows": true,
+          "passiveCamera": true,
+          "configuredAccessory": {
+            "shape": "twin-hole",
+            "sourceRole": "clip",
+            "nativeFaces": 2150,
+            "static": true,
+            "assembledEnvelopeMm": [
+              26.703895568847656,
+              48.000000000000014,
+              18.600000770092016
+            ]
+          },
+          "localToleranceMm": 1e-05
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "m5camera-x",
+        "panels": 0,
+        "kinds": [],
+        "actualPartialMotionIds": [
+          "reset"
+        ],
+        "physicalStructure": {
+          "physicalMeshes": 237,
+          "triangles": 17830,
+          "nativeFaces": 4778,
+          "nativeParts": [
+            3194,
+            1584
+          ],
+          "allSourceCornersNormalsIndicesExact": true,
+          "allOwnPhysicalSolidsClosedPositiveFrontSide": true,
+          "nativeCaseEnvelopeMm": [
+            24,
+            48,
+            13.199999809265137
+          ],
+          "nominalMm": [
+            24,
+            48,
+            13
+          ],
+          "opticInclusiveBodyEnvelopeMm": [
+            24,
+            48,
+            14.700000286102295
+          ],
+          "withActualMountEnvelopeMm": [
+            24,
+            48,
+            14.700000286102295
+          ],
+          "closureRays": 10,
+          "nativeOpticalAperture": {
+            "mouthRadiusMm": 4.7,
+            "throatRadiusMm": 4,
+            "sourceFacet": 2184,
+            "point": [
+              4.293843578326883,
+              10.07,
+              6.2
+            ],
+            "sourceVertexRadiiMm": [
+              4,
+              4.70001220703125,
+              4.699990010876344
+            ],
+            "actualFacetPlaneChecked": true
+          },
+          "opticalFit": {
+            "status": "pass",
+            "scope": "Own source-facet optical neck/lip fit only;not manufacturing tolerances or a complete collision audit",
+            "sourceThroatRadiusMm": 4,
+            "sourceMouthRadiusMm": 4.7,
+            "hiddenNeckRadiusMm": 3.85,
+            "hiddenNeckZMm": [
+              2.7,
+              6.600000095367432
+            ],
+            "frontLipZMm": [
+              6.6,
+              6.650000000745058
+            ],
+            "visibleLipTopAndKnobAndGlassUnchanged": true,
+            "sourceThroatFacets": 38,
+            "minimumThroatFacetRadiusMm": 3.938999615704036,
+            "maximumActualNeckVertexRadiusMm": 3.85000005839243,
+            "conservativeAllAngleClearanceMm": 0.08899955731160603,
+            "levelsMm": [
+              4.95,
+              5.25,
+              5.85,
+              6.05,
+              6.3,
+              6.55
+            ],
+            "angularSamples": 24,
+            "wallNeckSamples": 144,
+            "minimumRadialClearanceMm": 0.09246999125404898,
+            "maximumRadialClearanceMm": 0.7884108082762618,
+            "allRayOriginsInActualAir": true,
+            "actualSourceFacetPlanesChecked": true,
+            "frontLipSeatSamples": 24,
+            "maximumLipSeatGapMm": 9.536743217353205e-08,
+            "lipOutsideNativeMaterial": true,
+            "continuousSensorNeckLipKnobSupport": true
+          },
+          "opticalSupportPosts": 4,
+          "pcbSupportRays": 2,
+          "frontSideSocketWallRays": 6,
+          "contacts": {
+            "grove": 4,
+            "usb": 24,
+            "cameraFpc": 24
+          },
+          "physicalFilms": 0,
+          "pngs": 0,
+          "marking": "own uncolored native M5 relief;no missing-original postponement",
+          "staticAccessory": null
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "unitv2-m12",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "user",
+          "focus"
+        ],
+        "physicalStructure": {
+          "physicalMeshes": 207,
+          "triangles": 20648,
+          "nativeFaces": 5456,
+          "nativeParts": [
+            3044,
+            2412
+          ],
+          "nativeCaseEnvelopeMm": [
+            24.00007152557373,
+            48,
+            25.999999046325684
+          ],
+          "physicalEnvelopeMm": [
+            24.00007152557373,
+            48,
+            33.034999237060546
+          ],
+          "cavityRays": 4,
+          "frontSideWallRays": 12,
+          "pcbSupportRays": 8,
+          "opticalSupportRays": 4,
+          "nativeApertureWallHits": [
+            {
+              "facet": 1637,
+              "point": [
+                7.4841680018791505,
+                9.86,
+                15.7
+              ],
+              "sourceVertexRadiiMm": [
+                7.4998020669657555,
+                7.500000953674558,
+                7.500000953674558
+              ]
+            },
+            {
+              "facet": 1611,
+              "point": [
+                -7.484166668406634,
+                9.64,
+                15.7
+              ],
+              "sourceVertexRadiiMm": [
+                7.49980176961263,
+                7.499999046325925,
+                7.499999046325925
+              ]
+            }
+          ],
+          "contacts": {
+            "grove": 4,
+            "usb": 24,
+            "sd": 8
+          },
+          "rearFilms": 1,
+          "externalLeds": 0,
+          "fanRotor": "not-established;fixed carrier/native grille only",
+          "accessories": 0
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "timercamera-x",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "power",
+          "reset"
+        ],
+        "physicalStructure": {
+          "physicalMeshes": 342,
+          "nativeBodyFaces": 4452,
+          "nativeParts": [
+            3044,
+            1408
+          ],
+          "shellEnvelopeMm": [
+            24,
+            48,
+            13.199999809265137
+          ],
+          "bodyEnvelopeMm": [
+            24.00000001192093,
+            48,
+            14.999999911785126
+          ],
+          "closureRays": 16,
+          "actualOptics": true,
+          "contacts": {
+            "grove": 4,
+            "usb": 24
+          },
+          "pcbBores": 4,
+          "cameraSupports": 4,
+          "batterySeats": 2,
+          "realRearFixings": 2,
+          "physicalFilms": 1,
+          "filmTouchesNativeRecess": true,
+          "actualCapOpenings": true,
+          "singleBlueEmitterContinuousGuideThreeWindows": true,
+          "passiveCamera": true,
+          "configuredAccessory": null,
+          "localToleranceMm": 1e-05
+        },
+        "staticMounting": []
+      }
+    ],
+    "configurations": [
+      {
+        "id": "m5camera-x",
+        "optionCases": 4,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual partial native/cap/joint motion"
+      },
+      {
+        "id": "unitv2-m12",
+        "optionCases": 2,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual partial native/cap/joint motion"
+      },
+      {
+        "id": "timercamera-x",
+        "optionCases": 4,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual partial native/cap/joint motion"
+      }
+    ],
+    "behaviors": [
+      {
+        "id": "m5camera-x",
+        "nativeControl": "reset",
+        "nativeVertices": 176,
+        "nativeTriangles": 3194,
+        "completeSourceBodyFaces": 4778,
+        "travelMm": 0.18,
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "actualMaskWeightsAndSmoothNormalDerivativeExact": true,
+        "followerLocalWeight": 0.4618972728467857,
+        "fixedPackageBoardPortsOpticsOtherNativeVertices": true,
+        "invisibleInputProxyHasNoPhysicalCap": true,
+        "partialPressAndRelease": true,
+        "multiSourceHoldReleaseCancel": "last source;cancel suppresses click",
+        "neutralPositionsNormalsIndicesExact": true,
+        "pressedNativeTongueStillClosed": true,
+        "staticMount": "lego",
+        "passiveCameraNoBehavior": true,
+        "externalLeds": 0,
+        "automaticFirmwareMotion": false
+      },
+      {
+        "id": "unitv2-m12",
+        "nativeControl": "user",
+        "nativeVertices": 166,
+        "nativeTriangles": 3044,
+        "completeSourceFaces": 5456,
+        "travelMm": 0.25,
+        "weightedPositionsAndSourceFacetNormals": true,
+        "multiSourceCancel": "last cancel suppresses click",
+        "neutralPositionsNormalsIndicesExact": true,
+        "focus": "focus",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "defaultAngleDeg": 0,
+        "continuous": false,
+        "physicalLimitsDeg": null,
+        "demoVisualRangeDeg": [
+          -90,
+          90
+        ],
+        "actualBarrelRimGlassRotation": true,
+        "fixedSensorCarrierShellGrillePorts": true,
+        "partialTransitions": true,
+        "simultaneousNativeButtonAndFocus": true,
+        "noRPM": true,
+        "noAxialThreadLinkage": true,
+        "noAutoMotionOrInputEcho": true,
+        "passiveCameraNoBehavior": true
+      },
+      {
+        "id": "timercamera-x",
+        "individual": [
+          {
+            "id": "power",
+            "travelMm": 0.18,
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "actualMovingMeshes": 1,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "reset",
+            "travelMm": 0.14,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          }
+        ],
+        "simultaneous": {
+          "controls": 2,
+          "allHeldAndOneCancelled": "independent peers",
+          "completeNeutralPhysicalRestored": true
+        },
+        "capVisibility": [
+          {
+            "id": "power",
+            "fullPressVisible": true
+          },
+          {
+            "id": "reset",
+            "fullPressVisible": true
+          }
+        ],
+        "fixedNativePackagesPCBPorts": true,
+        "output": {
+          "id": "status",
+          "fixedColor": "#168aff",
+          "fields": [
+            "on",
+            "brightness"
+          ],
+          "actualMaterials": 2,
+          "actualWindowFirstHits": 3,
+          "guideContinuity": true,
+          "externalNoEcho": true,
+          "alienColourRejectedBeforeMutation": true,
+          "noAutomaticFirmwareLogic": true,
+          "peerPhysicalStateAndPortsUnchanged": true,
+          "neutralRestored": true
+        },
+        "passiveCamera": true
+      }
+    ],
+    "accessories": [
+      {
+        "id": "m5camera-x",
+        "mounting": [
+          {
+            "port": "mount",
+            "connector": "m5.m5camera-x.rear-mount",
+            "accessory": "LegoClip",
+            "ownPorts": [],
+            "staticDetachReattach": "pass"
+          }
+        ]
+      },
+      {
+        "id": "unitv2-m12",
+        "mounting": []
+      },
+      {
+        "id": "timercamera-x",
+        "mounting": [
+          {
+            "port": "mount",
+            "connector": "m5.timercamera.u082x.rear-mount",
+            "accessory": "TwinHoleMount",
+            "ownPorts": [],
+            "staticDetachReattach": "pass"
+          }
+        ]
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "m5camera-x",
+        "passiveAnchors": [
+          "camera"
+        ],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "unitv2-m12",
+        "passiveAnchors": [
+          "camera"
+        ],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "timercamera-x",
+        "passiveAnchors": [
+          "camera"
+        ],
+        "noFirmwareOrProtocolBehavior": true
+      }
+    ],
+    "disposedResources": 1584,
+    "cases": [
+      "three-real-four-core-branches",
+      "own-native-closed-halves-no-cropped-faces-or-stretched-replicas",
+      "own-real-native-flexure-side-buttons-fixed-switches",
+      "own-U038-white-native-uncolored-relief-zero-rasters",
+      "own-U078-M12-real-external-focus-angle-without-invented-thread-coupling",
+      "own-U082-X-66point5degree140mAh-optics",
+      "actual-static-mounting-accessories-detach-reattach",
+      "both-entries-actual-presets-and-partial-motion-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-cancel-peer-isolation",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own three physical assemblies,actual matching print or uncolored native relief and actual external controls/outputs/focus;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/sensorvalues/USB-UART-AI-camera-RTC-firmware/electrical/whole-history acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "m5camera-x",
+        "body": [
+          "grove",
+          "usb",
+          "reset",
+          "camera",
+          "mount"
+        ],
+        "ports": [
+          "grove",
+          "usb",
+          "mount"
+        ],
+        "controls": [
+          "reset"
+        ],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "physicalMeshes": 237,
+          "triangles": 17830,
+          "nativeFaces": 4778,
+          "nativeParts": [
+            3194,
+            1584
+          ],
+          "allSourceCornersNormalsIndicesExact": true,
+          "allOwnPhysicalSolidsClosedPositiveFrontSide": true,
+          "nativeCaseEnvelopeMm": [
+            24,
+            48,
+            13.199999809265137
+          ],
+          "nominalMm": [
+            24,
+            48,
+            13
+          ],
+          "opticInclusiveBodyEnvelopeMm": [
+            24,
+            48,
+            14.700000286102295
+          ],
+          "withActualMountEnvelopeMm": [
+            40,
+            48,
+            16.09999990463257
+          ],
+          "closureRays": 10,
+          "nativeOpticalAperture": {
+            "mouthRadiusMm": 4.7,
+            "throatRadiusMm": 4,
+            "sourceFacet": 2184,
+            "point": [
+              4.293843578326886,
+              10.070000000000007,
+              6.199999999999999
+            ],
+            "sourceVertexRadiiMm": [
+              4,
+              4.70001220703125,
+              4.699990010876344
+            ],
+            "actualFacetPlaneChecked": true
+          },
+          "opticalFit": {
+            "status": "pass",
+            "scope": "Own source-facet optical neck/lip fit only;not manufacturing tolerances or a complete collision audit",
+            "sourceThroatRadiusMm": 4,
+            "sourceMouthRadiusMm": 4.7,
+            "hiddenNeckRadiusMm": 3.85,
+            "hiddenNeckZMm": [
+              2.7,
+              6.600000095367432
+            ],
+            "frontLipZMm": [
+              6.6,
+              6.650000000745058
+            ],
+            "visibleLipTopAndKnobAndGlassUnchanged": true,
+            "sourceThroatFacets": 38,
+            "minimumThroatFacetRadiusMm": 3.938999615704036,
+            "maximumActualNeckVertexRadiusMm": 3.85000005839243,
+            "conservativeAllAngleClearanceMm": 0.08899955731160603,
+            "levelsMm": [
+              4.95,
+              5.25,
+              5.85,
+              6.05,
+              6.3,
+              6.55
+            ],
+            "angularSamples": 24,
+            "wallNeckSamples": 144,
+            "minimumRadialClearanceMm": 0.09246999125404809,
+            "maximumRadialClearanceMm": 0.7884108082762706,
+            "allRayOriginsInActualAir": true,
+            "actualSourceFacetPlanesChecked": true,
+            "frontLipSeatSamples": 24,
+            "maximumLipSeatGapMm": 9.536743217353205e-08,
+            "lipOutsideNativeMaterial": true,
+            "continuousSensorNeckLipKnobSupport": true
+          },
+          "opticalSupportPosts": 4,
+          "pcbSupportRays": 2,
+          "frontSideSocketWallRays": 6,
+          "contacts": {
+            "grove": 4,
+            "usb": 24,
+            "cameraFpc": 24
+          },
+          "physicalFilms": 0,
+          "pngs": 0,
+          "marking": "own uncolored native M5 relief;no missing-original postponement",
+          "staticAccessory": {
+            "kind": "lego",
+            "nativeFaces": 1966,
+            "physicalEnvelopeMm": [
+              40,
+              28,
+              8.399999529123306
+            ],
+            "static": true
+          }
+        },
+        "transformedStructure": {
+          "physicalMeshes": 237,
+          "triangles": 17830,
+          "nativeFaces": 4778,
+          "nativeParts": [
+            3194,
+            1584
+          ],
+          "allSourceCornersNormalsIndicesExact": true,
+          "allOwnPhysicalSolidsClosedPositiveFrontSide": true,
+          "nativeCaseEnvelopeMm": [
+            24,
+            48.000000000000014,
+            13.199999809265137
+          ],
+          "nominalMm": [
+            24,
+            48,
+            13
+          ],
+          "opticInclusiveBodyEnvelopeMm": [
+            24,
+            48.000000000000014,
+            14.700000286102293
+          ],
+          "withActualMountEnvelopeMm": [
+            40,
+            48.000000000000014,
+            16.09999990463257
+          ],
+          "closureRays": 10,
+          "nativeOpticalAperture": {
+            "mouthRadiusMm": 4.7,
+            "throatRadiusMm": 4,
+            "sourceFacet": 2184,
+            "point": [
+              4.293843578326872,
+              10.069999999999965,
+              6.199999999999989
+            ],
+            "sourceVertexRadiiMm": [
+              4,
+              4.70001220703125,
+              4.699990010876344
+            ],
+            "actualFacetPlaneChecked": true
+          },
+          "opticalFit": {
+            "status": "pass",
+            "scope": "Own source-facet optical neck/lip fit only;not manufacturing tolerances or a complete collision audit",
+            "sourceThroatRadiusMm": 4,
+            "sourceMouthRadiusMm": 4.7,
+            "hiddenNeckRadiusMm": 3.85,
+            "hiddenNeckZMm": [
+              2.6999999999999957,
+              6.600000095367427
+            ],
+            "frontLipZMm": [
+              6.599999999999994,
+              6.650000000745052
+            ],
+            "visibleLipTopAndKnobAndGlassUnchanged": true,
+            "sourceThroatFacets": 38,
+            "minimumThroatFacetRadiusMm": 3.938999615704036,
+            "maximumActualNeckVertexRadiusMm": 3.85000005839243,
+            "conservativeAllAngleClearanceMm": 0.08899955731160603,
+            "levelsMm": [
+              4.95,
+              5.25,
+              5.85,
+              6.05,
+              6.3,
+              6.55
+            ],
+            "angularSamples": 24,
+            "wallNeckSamples": 144,
+            "minimumRadialClearanceMm": 0.0924699912540552,
+            "maximumRadialClearanceMm": 0.7884108082762546,
+            "allRayOriginsInActualAir": true,
+            "actualSourceFacetPlanesChecked": true,
+            "frontLipSeatSamples": 24,
+            "maximumLipSeatGapMm": 9.536743306171047e-08,
+            "lipOutsideNativeMaterial": true,
+            "continuousSensorNeckLipKnobSupport": true
+          },
+          "opticalSupportPosts": 4,
+          "pcbSupportRays": 2,
+          "frontSideSocketWallRays": 6,
+          "contacts": {
+            "grove": 4,
+            "usb": 24,
+            "cameraFpc": 24
+          },
+          "physicalFilms": 0,
+          "pngs": 0,
+          "marking": "own uncolored native M5 relief;no missing-original postponement",
+          "staticAccessory": {
+            "kind": "lego",
+            "nativeFaces": 1966,
+            "physicalEnvelopeMm": [
+              40,
+              28.000000000000007,
+              8.399999529123306
+            ],
+            "static": true
+          }
+        }
+      },
+      {
+        "id": "unitv2-m12",
+        "body": [
+          "grove",
+          "usb",
+          "sd",
+          "user",
+          "focus",
+          "camera"
+        ],
+        "ports": [
+          "grove",
+          "usb",
+          "sd"
+        ],
+        "controls": [
+          "user"
+        ],
+        "leds": [],
+        "displays": [],
+        "joints": [
+          "focus"
+        ],
+        "physicalStructure": {
+          "physicalMeshes": 207,
+          "triangles": 20648,
+          "nativeFaces": 5456,
+          "nativeParts": [
+            3044,
+            2412
+          ],
+          "nativeCaseEnvelopeMm": [
+            24.00007152557373,
+            48,
+            25.999999046325684
+          ],
+          "physicalEnvelopeMm": [
+            24.00007152557373,
+            48,
+            33.034999237060546
+          ],
+          "cavityRays": 4,
+          "frontSideWallRays": 12,
+          "pcbSupportRays": 8,
+          "opticalSupportRays": 4,
+          "nativeApertureWallHits": [
+            {
+              "facet": 1637,
+              "point": [
+                7.484168001879141,
+                9.86,
+                15.699999999999996
+              ],
+              "sourceVertexRadiiMm": [
+                7.4998020669657555,
+                7.500000953674558,
+                7.500000953674558
+              ]
+            },
+            {
+              "facet": 1611,
+              "point": [
+                -7.484166668406644,
+                9.64,
+                15.699999999999998
+              ],
+              "sourceVertexRadiiMm": [
+                7.49980176961263,
+                7.499999046325925,
+                7.499999046325925
+              ]
+            }
+          ],
+          "contacts": {
+            "grove": 4,
+            "usb": 24,
+            "sd": 8
+          },
+          "rearFilms": 1,
+          "externalLeds": 0,
+          "fanRotor": "not-established;fixed carrier/native grille only",
+          "accessories": 0
+        },
+        "transformedStructure": {
+          "physicalMeshes": 207,
+          "triangles": 20648,
+          "nativeFaces": 5456,
+          "nativeParts": [
+            3044,
+            2412
+          ],
+          "nativeCaseEnvelopeMm": [
+            24.00007152557373,
+            48.000000000000014,
+            25.999999046325676
+          ],
+          "physicalEnvelopeMm": [
+            24.00007152557373,
+            48.000000000000014,
+            33.034999237060546
+          ],
+          "cavityRays": 4,
+          "frontSideWallRays": 12,
+          "pcbSupportRays": 8,
+          "opticalSupportRays": 4,
+          "nativeApertureWallHits": [
+            {
+              "facet": 1637,
+              "point": [
+                7.484168001879141,
+                9.859999999999985,
+                15.699999999999989
+              ],
+              "sourceVertexRadiiMm": [
+                7.4998020669657555,
+                7.500000953674558,
+                7.500000953674558
+              ]
+            },
+            {
+              "facet": 1611,
+              "point": [
+                -7.484166668406601,
+                9.639999999999958,
+                15.699999999999992
+              ],
+              "sourceVertexRadiiMm": [
+                7.49980176961263,
+                7.499999046325925,
+                7.499999046325925
+              ]
+            }
+          ],
+          "contacts": {
+            "grove": 4,
+            "usb": 24,
+            "sd": 8
+          },
+          "rearFilms": 1,
+          "externalLeds": 0,
+          "fanRotor": "not-established;fixed carrier/native grille only",
+          "accessories": 0
+        }
+      },
+      {
+        "id": "timercamera-x",
+        "body": [
+          "grove",
+          "usb",
+          "power",
+          "reset",
+          "status",
+          "camera",
+          "mount"
+        ],
+        "ports": [
+          "grove",
+          "usb",
+          "mount"
+        ],
+        "controls": [
+          "power",
+          "reset"
+        ],
+        "leds": [
+          "status"
+        ],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "physicalMeshes": 342,
+          "nativeBodyFaces": 4452,
+          "nativeParts": [
+            3044,
+            1408
+          ],
+          "shellEnvelopeMm": [
+            24,
+            48,
+            13.199999809265137
+          ],
+          "bodyEnvelopeMm": [
+            24.000000011920932,
+            48,
+            14.999999911785128
+          ],
+          "closureRays": 16,
+          "actualOptics": true,
+          "contacts": {
+            "grove": 4,
+            "usb": 24
+          },
+          "pcbBores": 4,
+          "cameraSupports": 4,
+          "batterySeats": 2,
+          "realRearFixings": 2,
+          "physicalFilms": 1,
+          "filmTouchesNativeRecess": true,
+          "actualCapOpenings": true,
+          "singleBlueEmitterContinuousGuideThreeWindows": true,
+          "passiveCamera": true,
+          "configuredAccessory": {
+            "shape": "twin-hole",
+            "sourceRole": "clip",
+            "nativeFaces": 2150,
+            "static": true,
+            "assembledEnvelopeMm": [
+              26.703895568847656,
+              48,
+              18.600000770092013
+            ]
+          },
+          "localToleranceMm": 1e-05
+        },
+        "transformedStructure": {
+          "physicalMeshes": 342,
+          "nativeBodyFaces": 4452,
+          "nativeParts": [
+            3044,
+            1408
+          ],
+          "shellEnvelopeMm": [
+            24,
+            48.000000000000014,
+            13.199999809265137
+          ],
+          "bodyEnvelopeMm": [
+            24.000000011920918,
+            48.000000000000014,
+            14.999999911785132
+          ],
+          "closureRays": 16,
+          "actualOptics": true,
+          "contacts": {
+            "grove": 4,
+            "usb": 24
+          },
+          "pcbBores": 4,
+          "cameraSupports": 4,
+          "batterySeats": 2,
+          "realRearFixings": 2,
+          "physicalFilms": 1,
+          "filmTouchesNativeRecess": true,
+          "actualCapOpenings": true,
+          "singleBlueEmitterContinuousGuideThreeWindows": true,
+          "passiveCamera": true,
+          "configuredAccessory": {
+            "shape": "twin-hole",
+            "sourceRole": "clip",
+            "nativeFaces": 2150,
+            "static": true,
+            "assembledEnvelopeMm": [
+              26.703895568847656,
+              48.000000000000014,
+              18.600000770092016
+            ]
+          },
+          "localToleranceMm": 1e-05
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "m5camera-x",
+        "panels": 0,
+        "kinds": [],
+        "actualPartialMotionIds": [
+          "reset"
+        ],
+        "physicalStructure": {
+          "physicalMeshes": 237,
+          "triangles": 17830,
+          "nativeFaces": 4778,
+          "nativeParts": [
+            3194,
+            1584
+          ],
+          "allSourceCornersNormalsIndicesExact": true,
+          "allOwnPhysicalSolidsClosedPositiveFrontSide": true,
+          "nativeCaseEnvelopeMm": [
+            24,
+            48,
+            13.199999809265137
+          ],
+          "nominalMm": [
+            24,
+            48,
+            13
+          ],
+          "opticInclusiveBodyEnvelopeMm": [
+            24,
+            48,
+            14.700000286102295
+          ],
+          "withActualMountEnvelopeMm": [
+            24,
+            48,
+            14.700000286102295
+          ],
+          "closureRays": 10,
+          "nativeOpticalAperture": {
+            "mouthRadiusMm": 4.7,
+            "throatRadiusMm": 4,
+            "sourceFacet": 2184,
+            "point": [
+              4.293843578326883,
+              10.07,
+              6.2
+            ],
+            "sourceVertexRadiiMm": [
+              4,
+              4.70001220703125,
+              4.699990010876344
+            ],
+            "actualFacetPlaneChecked": true
+          },
+          "opticalFit": {
+            "status": "pass",
+            "scope": "Own source-facet optical neck/lip fit only;not manufacturing tolerances or a complete collision audit",
+            "sourceThroatRadiusMm": 4,
+            "sourceMouthRadiusMm": 4.7,
+            "hiddenNeckRadiusMm": 3.85,
+            "hiddenNeckZMm": [
+              2.7,
+              6.600000095367432
+            ],
+            "frontLipZMm": [
+              6.6,
+              6.650000000745058
+            ],
+            "visibleLipTopAndKnobAndGlassUnchanged": true,
+            "sourceThroatFacets": 38,
+            "minimumThroatFacetRadiusMm": 3.938999615704036,
+            "maximumActualNeckVertexRadiusMm": 3.85000005839243,
+            "conservativeAllAngleClearanceMm": 0.08899955731160603,
+            "levelsMm": [
+              4.95,
+              5.25,
+              5.85,
+              6.05,
+              6.3,
+              6.55
+            ],
+            "angularSamples": 24,
+            "wallNeckSamples": 144,
+            "minimumRadialClearanceMm": 0.09246999125404898,
+            "maximumRadialClearanceMm": 0.7884108082762618,
+            "allRayOriginsInActualAir": true,
+            "actualSourceFacetPlanesChecked": true,
+            "frontLipSeatSamples": 24,
+            "maximumLipSeatGapMm": 9.536743217353205e-08,
+            "lipOutsideNativeMaterial": true,
+            "continuousSensorNeckLipKnobSupport": true
+          },
+          "opticalSupportPosts": 4,
+          "pcbSupportRays": 2,
+          "frontSideSocketWallRays": 6,
+          "contacts": {
+            "grove": 4,
+            "usb": 24,
+            "cameraFpc": 24
+          },
+          "physicalFilms": 0,
+          "pngs": 0,
+          "marking": "own uncolored native M5 relief;no missing-original postponement",
+          "staticAccessory": null
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "unitv2-m12",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "user",
+          "focus"
+        ],
+        "physicalStructure": {
+          "physicalMeshes": 207,
+          "triangles": 20648,
+          "nativeFaces": 5456,
+          "nativeParts": [
+            3044,
+            2412
+          ],
+          "nativeCaseEnvelopeMm": [
+            24.00007152557373,
+            48,
+            25.999999046325684
+          ],
+          "physicalEnvelopeMm": [
+            24.00007152557373,
+            48,
+            33.034999237060546
+          ],
+          "cavityRays": 4,
+          "frontSideWallRays": 12,
+          "pcbSupportRays": 8,
+          "opticalSupportRays": 4,
+          "nativeApertureWallHits": [
+            {
+              "facet": 1637,
+              "point": [
+                7.4841680018791505,
+                9.86,
+                15.7
+              ],
+              "sourceVertexRadiiMm": [
+                7.4998020669657555,
+                7.500000953674558,
+                7.500000953674558
+              ]
+            },
+            {
+              "facet": 1611,
+              "point": [
+                -7.484166668406634,
+                9.64,
+                15.7
+              ],
+              "sourceVertexRadiiMm": [
+                7.49980176961263,
+                7.499999046325925,
+                7.499999046325925
+              ]
+            }
+          ],
+          "contacts": {
+            "grove": 4,
+            "usb": 24,
+            "sd": 8
+          },
+          "rearFilms": 1,
+          "externalLeds": 0,
+          "fanRotor": "not-established;fixed carrier/native grille only",
+          "accessories": 0
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "timercamera-x",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "power",
+          "reset"
+        ],
+        "physicalStructure": {
+          "physicalMeshes": 342,
+          "nativeBodyFaces": 4452,
+          "nativeParts": [
+            3044,
+            1408
+          ],
+          "shellEnvelopeMm": [
+            24,
+            48,
+            13.199999809265137
+          ],
+          "bodyEnvelopeMm": [
+            24.00000001192093,
+            48,
+            14.999999911785126
+          ],
+          "closureRays": 16,
+          "actualOptics": true,
+          "contacts": {
+            "grove": 4,
+            "usb": 24
+          },
+          "pcbBores": 4,
+          "cameraSupports": 4,
+          "batterySeats": 2,
+          "realRearFixings": 2,
+          "physicalFilms": 1,
+          "filmTouchesNativeRecess": true,
+          "actualCapOpenings": true,
+          "singleBlueEmitterContinuousGuideThreeWindows": true,
+          "passiveCamera": true,
+          "configuredAccessory": null,
+          "localToleranceMm": 1e-05
+        },
+        "staticMounting": []
+      }
+    ],
+    "configurations": [
+      {
+        "id": "m5camera-x",
+        "optionCases": 4,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual partial native/cap/joint motion"
+      },
+      {
+        "id": "unitv2-m12",
+        "optionCases": 2,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual partial native/cap/joint motion"
+      },
+      {
+        "id": "timercamera-x",
+        "optionCases": 4,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual partial native/cap/joint motion"
+      }
+    ],
+    "behaviors": [
+      {
+        "id": "m5camera-x",
+        "nativeControl": "reset",
+        "nativeVertices": 176,
+        "nativeTriangles": 3194,
+        "completeSourceBodyFaces": 4778,
+        "travelMm": 0.18,
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "actualMaskWeightsAndSmoothNormalDerivativeExact": true,
+        "followerLocalWeight": 0.4618972728467857,
+        "fixedPackageBoardPortsOpticsOtherNativeVertices": true,
+        "invisibleInputProxyHasNoPhysicalCap": true,
+        "partialPressAndRelease": true,
+        "multiSourceHoldReleaseCancel": "last source;cancel suppresses click",
+        "neutralPositionsNormalsIndicesExact": true,
+        "pressedNativeTongueStillClosed": true,
+        "staticMount": "lego",
+        "passiveCameraNoBehavior": true,
+        "externalLeds": 0,
+        "automaticFirmwareMotion": false
+      },
+      {
+        "id": "unitv2-m12",
+        "nativeControl": "user",
+        "nativeVertices": 166,
+        "nativeTriangles": 3044,
+        "completeSourceFaces": 5456,
+        "travelMm": 0.25,
+        "weightedPositionsAndSourceFacetNormals": true,
+        "multiSourceCancel": "last cancel suppresses click",
+        "neutralPositionsNormalsIndicesExact": true,
+        "focus": "focus",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "defaultAngleDeg": 0,
+        "continuous": false,
+        "physicalLimitsDeg": null,
+        "demoVisualRangeDeg": [
+          -90,
+          90
+        ],
+        "actualBarrelRimGlassRotation": true,
+        "fixedSensorCarrierShellGrillePorts": true,
+        "partialTransitions": true,
+        "simultaneousNativeButtonAndFocus": true,
+        "noRPM": true,
+        "noAxialThreadLinkage": true,
+        "noAutoMotionOrInputEcho": true,
+        "passiveCameraNoBehavior": true
+      },
+      {
+        "id": "timercamera-x",
+        "individual": [
+          {
+            "id": "power",
+            "travelMm": 0.18,
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "actualMovingMeshes": 1,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "reset",
+            "travelMm": 0.14,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          }
+        ],
+        "simultaneous": {
+          "controls": 2,
+          "allHeldAndOneCancelled": "independent peers",
+          "completeNeutralPhysicalRestored": true
+        },
+        "capVisibility": [
+          {
+            "id": "power",
+            "fullPressVisible": true
+          },
+          {
+            "id": "reset",
+            "fullPressVisible": true
+          }
+        ],
+        "fixedNativePackagesPCBPorts": true,
+        "output": {
+          "id": "status",
+          "fixedColor": "#168aff",
+          "fields": [
+            "on",
+            "brightness"
+          ],
+          "actualMaterials": 2,
+          "actualWindowFirstHits": 3,
+          "guideContinuity": true,
+          "externalNoEcho": true,
+          "alienColourRejectedBeforeMutation": true,
+          "noAutomaticFirmwareLogic": true,
+          "peerPhysicalStateAndPortsUnchanged": true,
+          "neutralRestored": true
+        },
+        "passiveCamera": true
+      }
+    ],
+    "accessories": [
+      {
+        "id": "m5camera-x",
+        "mounting": [
+          {
+            "port": "mount",
+            "connector": "m5.m5camera-x.rear-mount",
+            "accessory": "LegoClip",
+            "ownPorts": [],
+            "staticDetachReattach": "pass"
+          }
+        ]
+      },
+      {
+        "id": "unitv2-m12",
+        "mounting": []
+      },
+      {
+        "id": "timercamera-x",
+        "mounting": [
+          {
+            "port": "mount",
+            "connector": "m5.timercamera.u082x.rear-mount",
+            "accessory": "TwinHoleMount",
+            "ownPorts": [],
+            "staticDetachReattach": "pass"
+          }
+        ]
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "m5camera-x",
+        "passiveAnchors": [
+          "camera"
+        ],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "unitv2-m12",
+        "passiveAnchors": [
+          "camera"
+        ],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "timercamera-x",
+        "passiveAnchors": [
+          "camera"
+        ],
+        "noFirmwareOrProtocolBehavior": true
+      }
+    ],
+    "disposedResources": 1584,
+    "cases": [
+      "three-real-four-core-branches",
+      "own-native-closed-halves-no-cropped-faces-or-stretched-replicas",
+      "own-real-native-flexure-side-buttons-fixed-switches",
+      "own-U038-white-native-uncolored-relief-zero-rasters",
+      "own-U078-M12-real-external-focus-angle-without-invented-thread-coupling",
+      "own-U082-X-66point5degree140mAh-optics",
+      "actual-static-mounting-accessories-detach-reattach",
+      "both-entries-actual-presets-and-partial-motion-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-cancel-peer-isolation",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own three physical assemblies,actual matching print or uncolored native relief and actual external controls/outputs/focus;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/sensorvalues/USB-UART-AI-camera-RTC-firmware/electrical/whole-history acceptance"
+  },
+  "checks": {
+    "localProductSmoke": "all current batch products pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "m5camera-x",
+        "status": "frozen",
+        "checkedFiles": 12
+      },
+      {
+        "id": "unitv2-m12",
+        "status": "frozen",
+        "checkedFiles": 13
+      },
+      {
+        "id": "timercamera-x",
+        "status": "frozen",
+        "checkedFiles": 14
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "All physical attributes/index/world matrices preserved across actual entries/configurations",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "e94baf0b00032d0972f8cd63825a7275c333cedd8023eb04302b837f667b0d71",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "38760ccbff4623a4ffc2f8f699d23bfceb46aa48943a5e47f6ce162a657ba412",
+      "logDistributed": false
+    },
+    "exportCount": 10,
+    "catalogConfigurations": {
+      "status": "pass",
+      "products": [
+        {
+          "id": "m5camera-x",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "完整 M5Camera-X",
+              "options": {
+                "mount": "none"
+              }
+            },
+            {
+              "id": "lego",
+              "name": "M5Camera-X 与自身 LEGO 夹件",
+              "options": {
+                "mount": "lego"
+              }
+            },
+            {
+              "id": "wall1515",
+              "name": "M5Camera-X 与自身 Wall-1515",
+              "options": {
+                "mount": "wall1515"
+              }
+            }
+          ],
+          "defaults": {
+            "mount": "none"
+          }
+        },
+        {
+          "id": "unitv2-m12",
+          "presets": [
+            {
+              "id": "regular-85",
+              "name": "常规85°镜头 · 本体",
+              "options": {
+                "lens": "85"
+              }
+            }
+          ],
+          "defaults": {
+            "lens": "85"
+          }
+        },
+        {
+          "id": "timercamera-x",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "Complete TimerCamera-X",
+              "options": {
+                "mount": "none"
+              }
+            },
+            {
+              "id": "two-ear",
+              "name": "TimerCamera-X with native two-ear support",
+              "options": {
+                "mount": "two-ear"
+              }
+            },
+            {
+              "id": "twin-hole",
+              "name": "TimerCamera-X with native twin-hole support",
+              "options": {
+                "mount": "twin-hole"
+              }
+            }
+          ],
+          "defaults": {
+            "mount": "none"
+          }
+        }
+      ],
+      "scope": "Batch 44: current frozen named presets, constructor defaults and existing demo contract"
+    },
+    "livePreview": "175-product catalog, 3 own runtime chunks and all corresponding source PNG bytes verified in live dist (ordinary or inlined assets)",
+    "newSourcePrivacy": "New JS/JSON/Markdown/PNG and all current added catalog/manifest records checked; private table/URLs/vectors/original names/mappings/raw material/intermediates excluded",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "Only new products/catalog entries/exports/guide/plan; protected old private/public bytes retained",
+    "existingPublicUnitFilesUnchanged": 1326,
+    "existingPrivateUnitFilesUnchanged": 1287,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "publicSharedProtectedFilesUnchanged": 2,
+    "privateSharedProtectedFilesUnchanged": 2,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [],
+  "constructionAmendments": [
+    {
+      "product": "m5camera-x",
+      "reason": "Inferred hidden barrel/shoulder initially intersected actual native stepped throat",
+      "neckRadiusMm": 3.85,
+      "neckZMm": [
+        2.7,
+        6.6
+      ],
+      "lipZMm": [
+        6.6,
+        6.65
+      ],
+      "nativeThroatFacets": 38,
+      "allAngleConservativeClearanceLowerBoundMm": 0.0889995573,
+      "sampledRays": 144,
+      "sampledMinimumClearanceMm": 0.0924699913,
+      "nativeFacesPreserved": 4778,
+      "modeledExternalDepthMm": 14.7,
+      "apiAndVisibleOpticsUnchanged": true,
+      "record": "docs/research/m5camera-x/smoke.json",
+      "scope": "Reconstructed hidden fit only;not manufacturing or hardware acceptance"
+    }
+  ],
+  "previewAssets": [
+    {
+      "id": "m5camera-x",
+      "file": "assets/m5camera-x-BN28vf5k.js",
+      "sha256": "7e0f8528a112213da3e464413c9cf9e52fa14ed11c221a36502bf5d785917f41"
+    },
+    {
+      "id": "unitv2-m12",
+      "file": "assets/unitv2-m12-NJUsYTsb.js",
+      "sha256": "10acf6736845fe5ca6dc49d5ee6c4130add8d7b05221a1324061eee74f9f0741"
+    },
+    {
+      "id": "timercamera-x",
+      "file": "assets/timercamera-x-wQoqw4v9.js",
+      "sha256": "570396ab9317935157b98d30e8880a63294f1b341c6b1d7d24683ebee1d9effb"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/m5camera-x/NativeReset.js",
+      "sha256": "e0f71ff6732fd7dbff2f01510ddcb7d17fb07e6160314d7905756c6e54a682f5"
+    },
+    {
+      "path": "src/units/m5camera-x/accessories.js",
+      "sha256": "294ac4b7ad2faafa4c199ff5a1eeceb2f262caec899784d70f916b6c8d9b13d3"
+    },
+    {
+      "path": "src/units/m5camera-x/assembly.js",
+      "sha256": "b2fa858ae79f3a3deb570c9103cd9b9ee6a8436f4cb628662562b13757a22bec"
+    },
+    {
+      "path": "src/units/m5camera-x/dimensions.js",
+      "sha256": "e234f9fc111dd9306e6eac7206cd96ba20a92af87f4eaa824f803523f772cebc"
+    },
+    {
+      "path": "src/units/m5camera-x/geometry-data.js",
+      "sha256": "05b450ad000420c12777989c8c6c156504c77294070c5f21efab35d0263434a9"
+    },
+    {
+      "path": "src/units/m5camera-x/geometry.js",
+      "sha256": "6614735dfa2ab069e251ba02eb8f89248f64d54bd6b7f91d8bce985e4dfae9a2"
+    },
+    {
+      "path": "src/units/m5camera-x/index.js",
+      "sha256": "d5c8d7d7e862781c08b65042c4321d89257a48266425fc5b9d2621feb469583c"
+    },
+    {
+      "path": "src/units/m5camera-x/native-map.json",
+      "sha256": "840f9694eba0f4df74d2e7fa12724f92e2265398e5143654dcc0c8527720e1de"
+    },
+    {
+      "path": "docs/research/m5camera-x/artwork.json",
+      "sha256": "21ac93c6146c7ae33b7bb73fd5f36539b6bfa0052f57455459e5e10111b6061f"
+    },
+    {
+      "path": "docs/research/m5camera-x/modeling.md",
+      "sha256": "55c0bcc483ffafd9c728f9f029226422cba5ce794881a690fa7e08edcaa8b2d9"
+    },
+    {
+      "path": "docs/research/m5camera-x/smoke.json",
+      "sha256": "5d036608baff9e5f9be97dd426d1b272707235906164028e3b6a680cadbf9998"
+    },
+    {
+      "path": "docs/research/m5camera-x/sources.json",
+      "sha256": "5b10a19d31d5c1af6ef44a966ecc865aac2b1b914fa64612bd2c5fd2ea7c14e7"
+    },
+    {
+      "path": "src/units/unitv2-m12/NativeButton.js",
+      "sha256": "1358ec1887dc4d117fe8ef6bae7e5673a10f3d7ae43e05ddb251b4760a5db66d"
+    },
+    {
+      "path": "src/units/unitv2-m12/artwork/rear.png",
+      "sha256": "78af0f014686286d39f54e3a8e3b0fc961ae7fc6c4efa2a047300cd930fbf1a9"
+    },
+    {
+      "path": "src/units/unitv2-m12/assembly.js",
+      "sha256": "5e0a0f4f4df32a9917409f9ddf53556b1c1d229a64f89db8273d25ba0f858388"
+    },
+    {
+      "path": "src/units/unitv2-m12/cad-map.json",
+      "sha256": "dfc68a02a8f27c0268ea28c2b843e5bc06d31fb410074f838d218ebf077dea5c"
+    },
+    {
+      "path": "src/units/unitv2-m12/connectors.js",
+      "sha256": "866fd8c3d1272cc0c59f0fa14051443f9919f8ab2c579ebe1a4192d53b07c190"
+    },
+    {
+      "path": "src/units/unitv2-m12/dimensions.js",
+      "sha256": "62b21cfdcc36cac0ddda844546e1759604f56ab9244730487f3a08ab93ddea1d"
+    },
+    {
+      "path": "src/units/unitv2-m12/geometry-data.js",
+      "sha256": "475110cea8ed7dec0011a2fefa0e0514fbfb168fceee5479c69cd17169ee05bb"
+    },
+    {
+      "path": "src/units/unitv2-m12/geometry.js",
+      "sha256": "af08f51dd83610ccfe12559517fa7008cf74f20af157c65c3dfed78a4a38236e"
+    },
+    {
+      "path": "src/units/unitv2-m12/index.js",
+      "sha256": "4fcf7b024a6883e19ff6fb42c92ddc30f7df5273c52faf0fffd83cdda5195436"
+    },
+    {
+      "path": "docs/research/unitv2-m12/artwork.json",
+      "sha256": "04ca016c9674f70cd97c2988ec8b7453f3ec4bede1e0022e4a9b1b8dd81e08ee"
+    },
+    {
+      "path": "docs/research/unitv2-m12/modeling.md",
+      "sha256": "99b4a1710481198142b16655ecef940e1ddd55af7181fe58ef9c3faf78492a86"
+    },
+    {
+      "path": "docs/research/unitv2-m12/smoke.json",
+      "sha256": "051499496c78f6a7aefeb6549747ab3433576cd25a5e5c1c996a8e382fddce1f"
+    },
+    {
+      "path": "docs/research/unitv2-m12/sources.json",
+      "sha256": "1aab2a371bc3207b0061cb49c81d42a2d6a2dfd523a6b3c32ef1ed8ca50001c3"
+    },
+    {
+      "path": "src/units/timercamera-x/StatusLed.js",
+      "sha256": "746abdbbba4df6098d0c60d92718cbf37740dc67b9833037c662329babe95fd7"
+    },
+    {
+      "path": "src/units/timercamera-x/accessories.js",
+      "sha256": "3fc722d3f66c32e2f4922dd4f9d510633a513c89a9f8115fa1df1a13acb4a707"
+    },
+    {
+      "path": "src/units/timercamera-x/artwork/back.png",
+      "sha256": "34c199671e9a0a8958332ffe9248fc05a25e10b773b98a6e8f90e1ed4b9037d8"
+    },
+    {
+      "path": "src/units/timercamera-x/assembly.js",
+      "sha256": "e0ecd0d8a3825cf837bfd693a09d8a8b2c3b59e276bb6f76ecdf9b82ca2be242"
+    },
+    {
+      "path": "src/units/timercamera-x/dimensions.js",
+      "sha256": "90e8d1963862fc52f19600f764cbb368b9c3fcd3e6ccde749b53d769f3520878"
+    },
+    {
+      "path": "src/units/timercamera-x/geometry-data.js",
+      "sha256": "2f71dc570543d6a08632434a20aab4199e7191fc5e05bb6b3935d79160e679ed"
+    },
+    {
+      "path": "src/units/timercamera-x/geometry.js",
+      "sha256": "806dcdd56d20624cbac39628427183210d8b8340ef0db2e7e94e2059d28b5365"
+    },
+    {
+      "path": "src/units/timercamera-x/index.js",
+      "sha256": "b62ce366247fbd4c5b987fb394ad3674f26c27b9da55b0f3e9fad1dfec9c6b5b"
+    },
+    {
+      "path": "src/units/timercamera-x/native-map.json",
+      "sha256": "6f13d41b06b2ed8c47fb824a8253ac06f836683062911903a76d5120e822240e"
+    },
+    {
+      "path": "src/units/timercamera-x/stickers.js",
+      "sha256": "0905369eb820a864cf4cfe2c4a1b217bcdb442061b0d483cf48763ba1e187343"
+    },
+    {
+      "path": "docs/research/timercamera-x/artwork.json",
+      "sha256": "83fb7da10f423c80e99084255e42b84293d28cd013075bb326825e9063ce9242"
+    },
+    {
+      "path": "docs/research/timercamera-x/modeling.md",
+      "sha256": "faad733b153aa90f9eb2432543a08e5a0eea8bbf7b71787fafd5293c6f37f9ec"
+    },
+    {
+      "path": "docs/research/timercamera-x/smoke.json",
+      "sha256": "fbafb1b1fe6f874aad2efa5c530d51032b150e689180b292fe1cd0b97db5b19f"
+    },
+    {
+      "path": "docs/research/timercamera-x/sources.json",
+      "sha256": "6e60d1d82cd88fa033dd88d47bbfe45ad1f447a5341d7c31ce36bdd9f0d41db5"
+    }
+  ],
+  "limitations": [
+    "Own official MIT native closed source parts retained in full;whole duplicated/exploded parts excluded by identity,never crop native faces or silently scale to nominal specs",
+    "M5Camera-X U038 uses own3194+1584 shell halves;wrong TimerCamera-X dimension image is excluded;native13.2mm versus nominal13mm depth recorded separately",
+    "M5Camera-X has only evidenced uncolored native M5 relief and no proven body label;zero PNG is deliberate actual-carrier modeling,not a placeholder or deferred crop",
+    "UnitV2-M12 U078-M12 uses own3044+2412 shell halves;native26mm case,32mm nominal and33mm own drawing optic envelope remain distinct;actual default lens identity is frozen per product",
+    "Real manual focus is externally requested appearance rotation only;no invented thread pitch,axial linkage,autofocus or motor/firmware;unsupported150degree geometry,fan impeller/axis and external light paths remain explicit limitations",
+    "TimerCamera-X U082-X uses own4452 native faces with actual66.5degree optics and140mAh identity;never borrow F120degree270mAh artwork or geometry",
+    "Actual native flexures or small caps and independent fixed-color light outputs follow final freeze;fixed packages/PCB/ports/sensor carriers stay fixed",
+    "Static accessory names/families/source geometry follow each exact-SKU frozen evidence;neutral shape names are used when the own photo cannot identify LEGO versus Wall1515",
+    "No USB/UART/electrical/AI,capture/video,RTC,power,battery readings or firmware logic;hidden installation/travel/optics/film and fit remain recorded reconstruction,not manufacturing or productionfit acceptance",
+    "Private CSV/originals/URLs/names/mappings/vectors/raw sources/generators/intermediates excluded;old sticker/Scroll/StackChan/Puzzle/Catch boundaries remain;overall goal active"
+  ]
+}

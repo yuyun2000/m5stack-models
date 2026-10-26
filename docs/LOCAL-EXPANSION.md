@@ -2,7 +2,7 @@
 
 2026-10-27。本页整理当前公开工作副本中的本地增量，便于其他Agent接入、查阅各批证据和续作。
 
-当前catalog为14款主机、149款Unit，共163款；全部modeled、0verified。本次Git同步收录批37–40共12款新增Unit及27PNG，详见[163款同步记录](GIT-SYNC-163-2026-10-27.md)。历史progress只描述各自保存时点；当前提交与远端状态以Git日志及GitHub main为准。
+当前catalog为14款主机、173款Unit，共187款；全部modeled、0verified。本次Git同步收录批41–48共24款新增Unit及40PNG，详见[187款同步记录](GIT-SYNC-187-2026-10-27.md)。历史progress只描述各自保存时点；当前提交与远端状态以Git日志及GitHub main为准。
 
 | 批次 | 产品ID | 检查点 |
 | --- | --- | --- |
@@ -48,12 +48,28 @@
 | DoF6 / DoF9 / BMM350 | dof6 / dof9 / bmm350 | [本地进度](../artifacts/dof6-dof9-bmm350-expansion/progress.json) |
 | UnitV-OV7740 / LoRaE220-433 / 8Servos2-I2C | unitv-ov7740 / lora-e220-433 / 8servos2-i2c | [本地进度](../artifacts/unitv-lora433-servos2-expansion/progress.json) |
 | CatM / NeoHEX / ENV-IV | catm / neohex / env-iv | [本地进度](../artifacts/catm-neohex-enviv-expansion/progress.json) |
+| CardKB2 / Neco / Mini OLED | cardkb2 / neco / mini-oled | [本地进度](../artifacts/cardkb2-neco-minioled-expansion/progress.json) |
+| Mini IMU-Pro / Glass / 8Servos2-Chain | mini-imu-pro / glass / 8servos2-chain | [本地进度](../artifacts/imupro-glass-servoschain-expansion/progress.json) |
+| UnitV2-USB / UnitV-M12 / TimerCamera-F | unitv2-usb / unitv-m12 / timercamera-f | [本地进度](../artifacts/unitvusb-m12-timercam-expansion/progress.json) |
+| M5Camera-X / UnitV2-M12 / TimerCamera-X | m5camera-x / unitv2-m12 / timercamera-x | [本地进度](../artifacts/m5camerax-v2m12-timercamx-expansion/progress.json) |
+| EXT.IO / ADC / DAC | extio / adc / dac | [本地进度](../artifacts/extio-adc-dac-expansion/progress.json) |
+| M5Bit / Mini BPS / HEX | m5-bit / bps / hex | [本地进度](../artifacts/m5bit-bps-hex-expansion/progress.json) |
+| RGB LED 10cm / RFID / ENV | rgb-led-10cm / rfid / env | [本地进度](../artifacts/rgbled-rfid-env-expansion/progress.json) |
+| ENV II / Joystick / GPS | env-ii / joystick / gps | [本地进度](../artifacts/envii-joystick-gps-expansion/progress.json) |
 
 各进度记录绑定相应批次的源码/检查范围。近期新增只执行必要局部结构、动作/API、接线夹具及构建；没有逐面浏览器复核或全量验收。`modeled`表示已有实现，不能视为完成视觉或实物配合验收。
 
 ## 接入入口
 
 - [Agent总指南](AGENT-INTEGRATION.md)：按需loader、输入/外驱状态、层级地址与生命周期。
+- [原ENV II/Joystick/GPS](ENVII-JOYSTICK-GPS-UNITS.md)：SHT30/BMP280真实通气壳、XY倾斜与Z按压回弹、原GPS完整接口及同步印刷。
+- [RGB LED 10cm/RFID/ENV原版](RGBLED-RFID-ENV-UNITS.md)：15灯外驱/真实柔性带形、原RFID实体与银膜、原ENV40交错通气槽/双封装及同步印刷。
+- [M5Bit/Mini BPS/HEX原版](M5BIT-BPS-HEX-UNITS.md)：真实卡槽/IO、BMP280双通气槽、37颗SK6812外驱与本款印刷；只外观与实际物理接口。
+- [EXT.IO/ADC/DAC原版](EXTIO-ADC-DAC-UNITS.md)：自身尺寸/多视图参数化壳、真实IO/可拆端子/Grove和本款重绘PNG；电气与固件由外部框架实现。
+- [M5Camera-X/UnitV2-M12/TimerCamera-X](M5CAMERAX-V2M12-TIMERCAMX-UNITS.md)：自身native壳/光学与真实接口控件、M12外驱焦环角、静态安装件及对应印刷/真实无色压纹；不模拟拍摄/AI/固件。
+- [UnitV2-USB/UnitV-M12/TimerCamera-F](UNITVUSB-M12-TIMERCAM-UNITS.md)：各自完整原生壳件/真实USB与四芯接口、顶部原生弹性舌/侧帽、光学或固定散热载体、实际静态安装附件与同步印刷；动作和输出依最终冻结API。
+- [Mini IMU-Pro/Glass/8Servos2-Chain](IMUPRO-GLASS-SERVOSCHAIN-UNITS.md)：本款内部地址拨片的可达边界、透明蓝屏/真实侧键与蜂鸣载体，以及Chain IN/OUT/24针/DC和同步印刷；实际API以冻结记录为准。
+- [CardKB2/Neco/Mini OLED](CARDKB2-NECO-MINIOLED-UNITS.md)：44真实按键与独立灯、猫耳板35RGB/轻触键、72×40白OLED外驱与自身多接口及同步印刷。
 - [CatM/NeoHEX/ENV-IV](CATM-NEOHEX-ENVIV-UNITS.md)：本款单SMA/NanoSIM蜂窝实体、37灯与独立均光片、真实双芯片通气壳及同步印刷。
 - [UnitV/LoRa433/8Servos2](UNITV-LORA433-SERVOS2-UNITS.md)：本款原生侧键/真实光路、433双拨片和静态天线，以及六视参数化控制器/16档旋钮/24实针与同步印刷。
 - [DoF6/DoF9/BMM350](DOF6-DOF9-BMM350-UNITS.md)：各自实际惯性/磁感封装、稳定滑片与空槽背衬、四芯Grove和同步印刷。
@@ -84,7 +100,7 @@
 - [Earth/Hall/QRCode](EARTH-HALL-QRCODE-UNITS.md)：土壤探针、固定磁感实体、真实触发键/通讯滑块与独立灯。
 - [Step16/ASR/UHF](STEP-ASR-UHF-UNITS.md)：旋钮、原生七段/RGB外驱、固定声学与RF实体。
 - [IMU/扩展IO/ACSSR](IMU-EXTIO-ACSSR-UNITS.md)：纯实体锚点、真实排针、按键/螺钉与独立外驱灯。
-- [近期Unit贴纸](UNIT-STICKER-ADDITIONS.md)：120款新增Unit的原稿栅格/官方平面栅格/参考重绘、来源、开关与必要局部检查。
+- [近期Unit贴纸](UNIT-STICKER-ADDITIONS.md)：144款新增Unit的原稿栅格/官方平面栅格/参考重绘、来源、开关与必要局部检查。
 - [网络/摄像/合成Unit](NETWORK-CAMERA-SYNTH-UNITS.md)：真实网口、固定镜头、内置喇叭与同步贴纸。
 - [旋转Unit](ROTATING-UNITS.md)：转子、真实弹舌和移动Grove输出。
 - [显示Unit](DISPLAY-UNITS.md)：独立与嵌套framebuffer。

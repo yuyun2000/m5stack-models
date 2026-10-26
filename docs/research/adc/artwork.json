@@ -1,0 +1,91 @@
+{
+  "id": "adc",
+  "sku": "U013",
+  "kind": "reference-redraw",
+  "assets": [
+    {
+      "path": "src/units/adc/artwork/back.png",
+      "sha256": "df1c239fc24c5899f2b97dc84c812685b874399763f146d095cf1ec506d05255",
+      "kind": "reference-redraw",
+      "width": 1296,
+      "height": 960,
+      "carrier": "adcAssembly.shell.film;real recessed rear adhesive carrier",
+      "source": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/adc/adc_02.webp",
+        "sha256": "cbfd43bebd19e3f3ca2a2da537a0fb64c21feb2da1f190a6dd872587071eb276",
+        "bytes": 56152,
+        "role": "own-readable-rear-label"
+      },
+      "method": "Independent exact-own readable-photo code redraw;ordinary PNG only,no copied source photo pixels",
+      "limitations": "Typography,spacing,colors and undimensioned film thickness reconstructed;no unknown microtext or individual codes"
+    },
+    {
+      "path": "src/units/adc/artwork/polarity.png",
+      "sha256": "7879fd406e4aa517cd58eea9fb28b2b140db91ab9b670ee5289528043a4e2a0c",
+      "kind": "reference-redraw",
+      "width": 912,
+      "height": 480,
+      "carrier": "TerminalPlug.adcPlugAssembly.film;real removable plug carrier",
+      "source": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/adc/adc_06.webp",
+        "sha256": "9a985509c14dc51c6056d591874ad9eb400b2c1c04316ed025e4b1abca8661e5",
+        "bytes": 65956,
+        "role": "own-assembled-front-and-connector-reference"
+      },
+      "method": "Independent exact-own readable-photo code redraw;ordinary PNG only,no copied source photo pixels",
+      "limitations": "Typography,spacing,colors and undimensioned film thickness reconstructed;no unknown microtext or individual codes"
+    }
+  ],
+  "pngCount": 2,
+  "defaultPanels": 2,
+  "physicalFilmCarriers": 2,
+  "configurationCases": [
+    {
+      "options": {},
+      "kinds": [
+        "reference-redraw",
+        "reference-redraw"
+      ]
+    },
+    {
+      "options": {
+        "terminal": "installed"
+      },
+      "kinds": [
+        "reference-redraw",
+        "reference-redraw"
+      ]
+    },
+    {
+      "options": {
+        "terminal": "removed"
+      },
+      "kinds": [
+        "reference-redraw"
+      ]
+    }
+  ],
+  "actualSourceTexts": {
+    "back": [
+      "ADC",
+      "0-12V",
+      "PORT. A . I2C",
+      "ADS1100",
+      "SCL",
+      "SDA",
+      "5V",
+      "GND"
+    ],
+    "polarity": [
+      "+",
+      "−"
+    ]
+  },
+  "uncoloredMarkings": "Front ADC/arrow positive geometry;rear M5 negative geometry;never raster substitutes",
+  "carrierPolicy": "Rear and plug films remain physical with artwork:false;removed plug removes its own film/ink together",
+  "rawSourcesAndGeneratorsDistributed": false,
+  "privateOriginalDownloads": 0,
+  "privateExactSkuCandidates": 0,
+  "privateStrictNameCandidates": 0,
+  "ordinaryPngPermission": "User authorized accurate matching official-photo redraw with source attribution"
+}

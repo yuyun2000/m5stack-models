@@ -1,0 +1,4165 @@
+{
+  "savedAt": "2026-10-26T19:46:15.551952+00:00",
+  "stage": "modeled",
+  "scope": "Own exact-SKU keyboard/cat-shaped35pixel/miniOLED physical assemblies,real momentary controls and externally driven lights/framebuffer, corresponding print and real three-branch four-core API fixture/builds; no browser or whole-catalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 152,
+    "modeled": 166,
+    "verified": 0
+  },
+  "localHead": "4fd5216dd2b310b6c92b366cb4c795f08dd15ff6",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "cardkb2",
+      "status": "pass",
+      "report": "docs/research/cardkb2/smoke.json",
+      "meshes": 565,
+      "triangles": 153552
+    },
+    {
+      "id": "neco",
+      "status": "pass",
+      "report": "docs/research/neco/smoke.json",
+      "meshes": 410,
+      "triangles": 74536
+    },
+    {
+      "id": "mini-oled",
+      "status": "pass",
+      "report": "docs/research/mini-oled/smoke.json",
+      "meshes": null,
+      "triangles": null
+    }
+  ],
+  "pngCount": 6,
+  "rasters": [
+    {
+      "path": "src/units/cardkb2/artwork/back.png",
+      "pixels": [
+        2400,
+        1523
+      ],
+      "sha256": "f34c35567a9dcae5fcae361a0c687628992657c851871bd40f63e5d40558064c"
+    },
+    {
+      "path": "src/units/cardkb2/artwork/front.png",
+      "pixels": [
+        5040,
+        3240
+      ],
+      "sha256": "2ccacfd4c5765a8c2e43f850ce3d9e7b404c4e9d909cc4f9510d7359e4ecd5fc"
+    },
+    {
+      "path": "src/units/neco/artwork/back.png",
+      "pixels": [
+        2826,
+        2676
+      ],
+      "sha256": "490e5ad82f33cb71efbfa501bd694f432bf7cf645c5bfb1d4c7e3fcc7dfb88dc"
+    },
+    {
+      "path": "src/units/neco/artwork/front.png",
+      "pixels": [
+        2826,
+        2676
+      ],
+      "sha256": "1d1137af78f54cd72f6e5d2900d9c90953092a554d464cecd98d8356478a6852"
+    },
+    {
+      "path": "src/units/mini-oled/artwork/back.png",
+      "pixels": [
+        2580,
+        1200
+      ],
+      "sha256": "3e4e40055763892d67dfdaa7b9624d5e82c9d03f14d9d7b188ba01a33a6d08ae"
+    },
+    {
+      "path": "src/units/mini-oled/artwork/front.png",
+      "pixels": [
+        2580,
+        1200
+      ],
+      "sha256": "814e6882a758116b51f82b1a3e075d4c7213cc78e59eb90af2e580d3bdd025c0"
+    }
+  ],
+  "fixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "cardkb2",
+        "body": [
+          "grove",
+          "usb",
+          "key-1",
+          "key-2",
+          "key-3",
+          "key-4",
+          "key-5",
+          "key-6",
+          "key-7",
+          "key-8",
+          "key-9",
+          "key-10",
+          "key-11",
+          "key-12",
+          "key-13",
+          "key-14",
+          "key-15",
+          "key-16",
+          "key-17",
+          "key-18",
+          "key-19",
+          "key-20",
+          "key-21",
+          "key-22",
+          "key-23",
+          "key-24",
+          "key-25",
+          "key-26",
+          "key-27",
+          "key-28",
+          "key-29",
+          "key-30",
+          "key-31",
+          "key-32",
+          "key-33",
+          "key-34",
+          "key-35",
+          "key-36",
+          "key-37",
+          "key-38",
+          "key-39",
+          "key-40",
+          "key-41",
+          "key-42",
+          "reset",
+          "boot",
+          "rgb"
+        ],
+        "ports": [
+          "grove",
+          "usb"
+        ],
+        "controls": [
+          "key-1",
+          "key-2",
+          "key-3",
+          "key-4",
+          "key-5",
+          "key-6",
+          "key-7",
+          "key-8",
+          "key-9",
+          "key-10",
+          "key-11",
+          "key-12",
+          "key-13",
+          "key-14",
+          "key-15",
+          "key-16",
+          "key-17",
+          "key-18",
+          "key-19",
+          "key-20",
+          "key-21",
+          "key-22",
+          "key-23",
+          "key-24",
+          "key-25",
+          "key-26",
+          "key-27",
+          "key-28",
+          "key-29",
+          "key-30",
+          "key-31",
+          "key-32",
+          "key-33",
+          "key-34",
+          "key-35",
+          "key-36",
+          "key-37",
+          "key-38",
+          "key-39",
+          "key-40",
+          "key-41",
+          "key-42",
+          "reset",
+          "boot"
+        ],
+        "leds": [
+          "rgb"
+        ],
+        "displays": [],
+        "physicalStructure": {
+          "geometrySource": "own-dimensioned-parametric-no-CAD",
+          "nativeCadFacesConsumed": false,
+          "physicalMeshes": 565,
+          "pcbMm": [
+            84,
+            54,
+            1
+          ],
+          "drawingPopulatedMm": [
+            84.7,
+            54.3,
+            6.15
+          ],
+          "restWithBackFilmMm": [
+            84.7,
+            54.3,
+            6.19
+          ],
+          "currentOwnEnvelopeMm": [
+            84.70000009536743,
+            54.29999997615815,
+            6.1900000029802325
+          ],
+          "realMountingBores": 4,
+          "mountingGridMm": [
+            78,
+            48
+          ],
+          "realConnectorDrills": 6,
+          "platedBarrels": 6,
+          "groveContacts": 4,
+          "groveThroughPcbTails": 4,
+          "usbContacts": 24,
+          "usbTails": 24,
+          "usbRetainingTabs": 4,
+          "actualMomentaryControls": 44,
+          "mainControls": [
+            {
+              "id": "key-1",
+              "row": 0,
+              "column": 0,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-2",
+              "row": 0,
+              "column": 1,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-3",
+              "row": 0,
+              "column": 2,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-4",
+              "row": 0,
+              "column": 3,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-5",
+              "row": 0,
+              "column": 4,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-6",
+              "row": 0,
+              "column": 5,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-7",
+              "row": 0,
+              "column": 6,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-8",
+              "row": 0,
+              "column": 7,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-9",
+              "row": 0,
+              "column": 8,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-10",
+              "row": 0,
+              "column": 9,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-11",
+              "row": 1,
+              "column": 0,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-12",
+              "row": 1,
+              "column": 1,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-13",
+              "row": 1,
+              "column": 2,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-14",
+              "row": 1,
+              "column": 3,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-15",
+              "row": 1,
+              "column": 4,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-16",
+              "row": 1,
+              "column": 5,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-17",
+              "row": 1,
+              "column": 6,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-18",
+              "row": 1,
+              "column": 7,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-19",
+              "row": 1,
+              "column": 8,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-20",
+              "row": 1,
+              "column": 9,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-21",
+              "row": 1,
+              "column": 10,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-22",
+              "row": 2,
+              "column": 0,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-23",
+              "row": 2,
+              "column": 1,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-24",
+              "row": 2,
+              "column": 2,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-25",
+              "row": 2,
+              "column": 3,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-26",
+              "row": 2,
+              "column": 4,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-27",
+              "row": 2,
+              "column": 5,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-28",
+              "row": 2,
+              "column": 6,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-29",
+              "row": 2,
+              "column": 7,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-30",
+              "row": 2,
+              "column": 8,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-31",
+              "row": 2,
+              "column": 9,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-32",
+              "row": 2,
+              "column": 10,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-33",
+              "row": 3,
+              "column": 0,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-34",
+              "row": 3,
+              "column": 1,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-35",
+              "row": 3,
+              "column": 2,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-36",
+              "row": 3,
+              "column": 3,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-37",
+              "row": 3,
+              "column": 4,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-38",
+              "row": 3,
+              "column": 5,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-39",
+              "row": 3,
+              "column": 6,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-40",
+              "row": 3,
+              "column": 7,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-41",
+              "row": 3,
+              "column": 8,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-42",
+              "row": 3,
+              "column": 9,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            }
+          ],
+          "sideControls": [
+            {
+              "id": "reset",
+              "axis": [
+                0,
+                -1,
+                0
+              ],
+              "inferredTravelMm": 0.16,
+              "unmarkedMovingMeshes": 2,
+              "fixedYellowCover": true,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "boot",
+              "axis": [
+                0,
+                1,
+                0
+              ],
+              "inferredTravelMm": 0.16,
+              "unmarkedMovingMeshes": 2,
+              "fixedYellowCover": true,
+              "fixedPackageMeshes": 7
+            }
+          ],
+          "mainMovingCapMeshes": 84,
+          "sideMovingCapMeshes": 4,
+          "fixedPackageMeshesPerControl": 7,
+          "unmarkedMovingCaps": true,
+          "fixedPcbLegends": true,
+          "qfnTerminations": 40,
+          "actualRgbOutputs": 1,
+          "physicalAdhesiveFilms": 1,
+          "emptyReceivingAndBoreRays": 23,
+          "frontSideWallRays": 26,
+          "realCapInteriorRays": 86,
+          "pcbAndFilmSupportRays": 216,
+          "localCoordinateToleranceMm": 1e-05
+        },
+        "transformedStructure": {
+          "geometrySource": "own-dimensioned-parametric-no-CAD",
+          "nativeCadFacesConsumed": false,
+          "physicalMeshes": 565,
+          "pcbMm": [
+            84,
+            54,
+            1
+          ],
+          "drawingPopulatedMm": [
+            84.7,
+            54.3,
+            6.15
+          ],
+          "restWithBackFilmMm": [
+            84.7,
+            54.3,
+            6.19
+          ],
+          "currentOwnEnvelopeMm": [
+            84.70000009536744,
+            54.29999997615815,
+            6.190000002980236
+          ],
+          "realMountingBores": 4,
+          "mountingGridMm": [
+            78,
+            48
+          ],
+          "realConnectorDrills": 6,
+          "platedBarrels": 6,
+          "groveContacts": 4,
+          "groveThroughPcbTails": 4,
+          "usbContacts": 24,
+          "usbTails": 24,
+          "usbRetainingTabs": 4,
+          "actualMomentaryControls": 44,
+          "mainControls": [
+            {
+              "id": "key-1",
+              "row": 0,
+              "column": 0,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-2",
+              "row": 0,
+              "column": 1,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-3",
+              "row": 0,
+              "column": 2,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-4",
+              "row": 0,
+              "column": 3,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-5",
+              "row": 0,
+              "column": 4,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-6",
+              "row": 0,
+              "column": 5,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-7",
+              "row": 0,
+              "column": 6,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-8",
+              "row": 0,
+              "column": 7,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-9",
+              "row": 0,
+              "column": 8,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-10",
+              "row": 0,
+              "column": 9,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-11",
+              "row": 1,
+              "column": 0,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-12",
+              "row": 1,
+              "column": 1,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-13",
+              "row": 1,
+              "column": 2,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-14",
+              "row": 1,
+              "column": 3,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-15",
+              "row": 1,
+              "column": 4,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-16",
+              "row": 1,
+              "column": 5,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-17",
+              "row": 1,
+              "column": 6,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-18",
+              "row": 1,
+              "column": 7,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-19",
+              "row": 1,
+              "column": 8,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-20",
+              "row": 1,
+              "column": 9,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-21",
+              "row": 1,
+              "column": 10,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-22",
+              "row": 2,
+              "column": 0,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-23",
+              "row": 2,
+              "column": 1,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-24",
+              "row": 2,
+              "column": 2,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-25",
+              "row": 2,
+              "column": 3,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-26",
+              "row": 2,
+              "column": 4,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-27",
+              "row": 2,
+              "column": 5,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-28",
+              "row": 2,
+              "column": 6,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-29",
+              "row": 2,
+              "column": 7,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-30",
+              "row": 2,
+              "column": 8,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-31",
+              "row": 2,
+              "column": 9,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-32",
+              "row": 2,
+              "column": 10,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-33",
+              "row": 3,
+              "column": 0,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-34",
+              "row": 3,
+              "column": 1,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-35",
+              "row": 3,
+              "column": 2,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-36",
+              "row": 3,
+              "column": 3,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-37",
+              "row": 3,
+              "column": 4,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-38",
+              "row": 3,
+              "column": 5,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-39",
+              "row": 3,
+              "column": 6,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-40",
+              "row": 3,
+              "column": 7,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-41",
+              "row": 3,
+              "column": 8,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-42",
+              "row": 3,
+              "column": 9,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            }
+          ],
+          "sideControls": [
+            {
+              "id": "reset",
+              "axis": [
+                0,
+                -1,
+                0
+              ],
+              "inferredTravelMm": 0.16,
+              "unmarkedMovingMeshes": 2,
+              "fixedYellowCover": true,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "boot",
+              "axis": [
+                0,
+                1,
+                0
+              ],
+              "inferredTravelMm": 0.16,
+              "unmarkedMovingMeshes": 2,
+              "fixedYellowCover": true,
+              "fixedPackageMeshes": 7
+            }
+          ],
+          "mainMovingCapMeshes": 84,
+          "sideMovingCapMeshes": 4,
+          "fixedPackageMeshesPerControl": 7,
+          "unmarkedMovingCaps": true,
+          "fixedPcbLegends": true,
+          "qfnTerminations": 40,
+          "actualRgbOutputs": 1,
+          "physicalAdhesiveFilms": 1,
+          "emptyReceivingAndBoreRays": 23,
+          "frontSideWallRays": 26,
+          "realCapInteriorRays": 86,
+          "pcbAndFilmSupportRays": 216,
+          "localCoordinateToleranceMm": 1e-05
+        }
+      },
+      {
+        "id": "neco",
+        "body": [
+          "grove",
+          "out",
+          "button",
+          "led-1",
+          "led-2",
+          "led-3",
+          "led-4",
+          "led-5",
+          "led-6",
+          "led-7",
+          "led-8",
+          "led-9",
+          "led-10",
+          "led-11",
+          "led-12",
+          "led-13",
+          "led-14",
+          "led-15",
+          "led-16",
+          "led-17",
+          "led-18",
+          "led-19",
+          "led-20",
+          "led-21",
+          "led-22",
+          "led-23",
+          "led-24",
+          "led-25",
+          "led-26",
+          "led-27",
+          "led-28",
+          "led-29",
+          "led-30",
+          "led-31",
+          "led-32",
+          "led-33",
+          "led-34",
+          "led-35"
+        ],
+        "ports": [
+          "grove",
+          "out"
+        ],
+        "controls": [
+          "button"
+        ],
+        "leds": [
+          "led-1",
+          "led-2",
+          "led-3",
+          "led-4",
+          "led-5",
+          "led-6",
+          "led-7",
+          "led-8",
+          "led-9",
+          "led-10",
+          "led-11",
+          "led-12",
+          "led-13",
+          "led-14",
+          "led-15",
+          "led-16",
+          "led-17",
+          "led-18",
+          "led-19",
+          "led-20",
+          "led-21",
+          "led-22",
+          "led-23",
+          "led-24",
+          "led-25",
+          "led-26",
+          "led-27",
+          "led-28",
+          "led-29",
+          "led-30",
+          "led-31",
+          "led-32",
+          "led-33",
+          "led-34",
+          "led-35"
+        ],
+        "displays": [],
+        "physicalStructure": {
+          "geometrySource": "own-dimensioned-parametric",
+          "nativeCadFacesConsumed": false,
+          "physicalMeshes": 410,
+          "pcbThicknessMm": 1,
+          "mountingBores": 4,
+          "outerHoleCentreSpanMm": 43,
+          "innerFixingCentreSpanMm": 28,
+          "metalFixingEyes": 2,
+          "physicalLeds": 35,
+          "sidePackageCounts": [
+            17,
+            1,
+            17
+          ],
+          "fixedPackageBaseAndLipMeshes": 70,
+          "actualPackageTerminations": 140,
+          "capacitors": 17,
+          "sockets": [
+            {
+              "id": "grove",
+              "face": "back",
+              "contacts": 4,
+              "smdTails": 4,
+              "smdPads": 4,
+              "fixedAnchors": 2,
+              "actualMaterialParts": 29
+            },
+            {
+              "id": "out",
+              "face": "back",
+              "contacts": 4,
+              "smdTails": 4,
+              "smdPads": 4,
+              "fixedAnchors": 2,
+              "actualMaterialParts": 29
+            }
+          ],
+          "actualRearMomentaryCaps": 1,
+          "capOnlyTravelMm": 0.15,
+          "fixedSwitchParts": 3,
+          "fixedSwitchTerminals": 4,
+          "physicalAdhesiveFilms": 0,
+          "emptyBoreRays": 20,
+          "frontSideBoreWallRays": 16,
+          "interiorLensTopRays": 70,
+          "pcbFootprintSupportRays": 175,
+          "localCoordinateToleranceMm": 1e-05,
+          "currentOwnEnvelopeMm": [
+            47.099998474121094,
+            44.599998474121094,
+            10.100000011920931
+          ]
+        },
+        "transformedStructure": {
+          "geometrySource": "own-dimensioned-parametric",
+          "nativeCadFacesConsumed": false,
+          "physicalMeshes": 410,
+          "pcbThicknessMm": 1,
+          "mountingBores": 4,
+          "outerHoleCentreSpanMm": 43,
+          "innerFixingCentreSpanMm": 28,
+          "metalFixingEyes": 2,
+          "physicalLeds": 35,
+          "sidePackageCounts": [
+            17,
+            1,
+            17
+          ],
+          "fixedPackageBaseAndLipMeshes": 70,
+          "actualPackageTerminations": 140,
+          "capacitors": 17,
+          "sockets": [
+            {
+              "id": "grove",
+              "face": "back",
+              "contacts": 4,
+              "smdTails": 4,
+              "smdPads": 4,
+              "fixedAnchors": 2,
+              "actualMaterialParts": 29
+            },
+            {
+              "id": "out",
+              "face": "back",
+              "contacts": 4,
+              "smdTails": 4,
+              "smdPads": 4,
+              "fixedAnchors": 2,
+              "actualMaterialParts": 29
+            }
+          ],
+          "actualRearMomentaryCaps": 1,
+          "capOnlyTravelMm": 0.15,
+          "fixedSwitchParts": 3,
+          "fixedSwitchTerminals": 4,
+          "physicalAdhesiveFilms": 0,
+          "emptyBoreRays": 20,
+          "frontSideBoreWallRays": 16,
+          "interiorLensTopRays": 70,
+          "pcbFootprintSupportRays": 175,
+          "localCoordinateToleranceMm": 1e-05,
+          "currentOwnEnvelopeMm": [
+            47.099998474121094,
+            44.5999984741211,
+            10.100000011920933
+          ]
+        }
+      },
+      {
+        "id": "mini-oled",
+        "body": [
+          "grove",
+          "grove-right",
+          "lcd"
+        ],
+        "ports": [
+          "grove",
+          "grove-right"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [
+          "lcd"
+        ],
+        "physicalStructure": {
+          "geometrySource": "own-dimensioned-parametric-no-CAD",
+          "nativeCadFacesConsumed": false,
+          "physicalMeshes": 192,
+          "closedDirectedCountTwoMeshes": 192,
+          "directedEdges": 11400,
+          "allPositiveVolume": true,
+          "allFrontSide": true,
+          "rigidDrawingMm": [
+            25.8,
+            12,
+            6.75
+          ],
+          "roundedProductThicknessMm": 6.8,
+          "currentOwnEnvelopeMm": [
+            25.800000095367437,
+            12.11999989151954,
+            6.750000005960463
+          ],
+          "inferredFoldedFlexEdgeExtensionMm": 0.12,
+          "pcbThicknessMm": 1,
+          "unmarkedPcbBores": 4,
+          "assertedWholeProductMountingFunction": false,
+          "pcbEmptyRays": 20,
+          "pcbWallRays": 16,
+          "ht7533Terminations": 3,
+          "capacitors": 11,
+          "resistors": 4,
+          "sockets": [
+            {
+              "id": "grove",
+              "contacts": 4,
+              "bentSmtReturns": 4,
+              "smtFeet": 4,
+              "solderLands": 4,
+              "materialMeshes": 27
+            },
+            {
+              "id": "grove-right",
+              "contacts": 4,
+              "bentSmtReturns": 4,
+              "smtFeet": 4,
+              "solderLands": 4,
+              "materialMeshes": 27
+            }
+          ],
+          "actualMetalContactRays": 8,
+          "actualCavityWallRays": 6,
+          "actualGlassSeatRays": 2,
+          "pcbSupportRays": 18,
+          "fpcPins": 16,
+          "fpcContactPitchMm": 0.65,
+          "fpcContactWidthMm": 0.35,
+          "actualFpcTailBores": 2,
+          "tailEmptyRays": 2,
+          "tailWallRays": 8,
+          "defaultFoldedFpc": true,
+          "outsideCornerVertices": 10,
+          "glassMm": [
+            12,
+            11,
+            1.25
+          ],
+          "protectionTapeMm": [
+            11,
+            8.5,
+            0.05
+          ],
+          "physicalAdhesiveFilms": 0,
+          "actualGlassSupportRays": 5,
+          "externalOutputPlaneIsNotMaterialSolid": true,
+          "localCoordinateToleranceMm": 1e-05
+        },
+        "transformedStructure": {
+          "geometrySource": "own-dimensioned-parametric-no-CAD",
+          "nativeCadFacesConsumed": false,
+          "physicalMeshes": 192,
+          "closedDirectedCountTwoMeshes": 192,
+          "directedEdges": 11400,
+          "allPositiveVolume": true,
+          "allFrontSide": true,
+          "rigidDrawingMm": [
+            25.8,
+            12,
+            6.75
+          ],
+          "roundedProductThicknessMm": 6.8,
+          "currentOwnEnvelopeMm": [
+            25.800000095367437,
+            12.1199998915196,
+            6.750000005960473
+          ],
+          "inferredFoldedFlexEdgeExtensionMm": 0.12,
+          "pcbThicknessMm": 1,
+          "unmarkedPcbBores": 4,
+          "assertedWholeProductMountingFunction": false,
+          "pcbEmptyRays": 20,
+          "pcbWallRays": 16,
+          "ht7533Terminations": 3,
+          "capacitors": 11,
+          "resistors": 4,
+          "sockets": [
+            {
+              "id": "grove",
+              "contacts": 4,
+              "bentSmtReturns": 4,
+              "smtFeet": 4,
+              "solderLands": 4,
+              "materialMeshes": 27
+            },
+            {
+              "id": "grove-right",
+              "contacts": 4,
+              "bentSmtReturns": 4,
+              "smtFeet": 4,
+              "solderLands": 4,
+              "materialMeshes": 27
+            }
+          ],
+          "actualMetalContactRays": 8,
+          "actualCavityWallRays": 6,
+          "actualGlassSeatRays": 2,
+          "pcbSupportRays": 18,
+          "fpcPins": 16,
+          "fpcContactPitchMm": 0.65,
+          "fpcContactWidthMm": 0.35,
+          "actualFpcTailBores": 2,
+          "tailEmptyRays": 2,
+          "tailWallRays": 8,
+          "defaultFoldedFpc": true,
+          "outsideCornerVertices": 10,
+          "glassMm": [
+            12,
+            11,
+            1.25
+          ],
+          "protectionTapeMm": [
+            11,
+            8.5,
+            0.05
+          ],
+          "physicalAdhesiveFilms": 0,
+          "actualGlassSupportRays": 5,
+          "externalOutputPlaneIsNotMaterialSolid": true,
+          "localCoordinateToleranceMm": 1e-05
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "cardkb2",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "source-vector-raster"
+        ],
+        "actualPartialPressIds": [
+          "key-1",
+          "key-42",
+          "reset",
+          "boot"
+        ]
+      },
+      {
+        "id": "neco",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialPressIds": [
+          "button"
+        ]
+      },
+      {
+        "id": "mini-oled",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialPressIds": []
+      }
+    ],
+    "configurations": [
+      {
+        "id": "cardkb2",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual representative partial presses"
+      },
+      {
+        "id": "neco",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual representative partial presses"
+      },
+      {
+        "id": "mini-oled",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual representative partial presses"
+      }
+    ],
+    "controls": [
+      {
+        "id": "cardkb2",
+        "individual": [
+          {
+            "id": "key-1",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-2",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-3",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-4",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-5",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-6",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-7",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-8",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-9",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-10",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-11",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-12",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-13",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-14",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-15",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-16",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-17",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-18",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-19",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-20",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-21",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-22",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-23",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-24",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-25",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-26",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-27",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-28",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-29",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-30",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-31",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-32",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-33",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-34",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-35",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-36",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-37",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-38",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-39",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-40",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-41",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-42",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "reset",
+            "travelMm": 0.16,
+            "axis": [
+              0,
+              -1,
+              0
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "boot",
+            "travelMm": 0.16,
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          }
+        ],
+        "simultaneous": {
+          "controls": 44,
+          "allHeldAndOneCancelled": "independent peers",
+          "completeNeutralPhysicalRestored": true
+        }
+      },
+      {
+        "id": "neco",
+        "individual": [
+          {
+            "id": "button",
+            "travelMm": 0.15,
+            "axis": [
+              0,
+              0,
+              1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          }
+        ],
+        "simultaneous": {
+          "controls": 1,
+          "allHeldAndOneCancelled": "independent peers",
+          "completeNeutralPhysicalRestored": true
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cardkb2",
+        "count": 1,
+        "externalNoEcho": true,
+        "independentRealMaterials": true,
+        "physicalAndPortsUnchanged": true
+      },
+      {
+        "id": "neco",
+        "count": 35,
+        "externalNoEcho": true,
+        "independentRealMaterials": true,
+        "physicalAndPortsUnchanged": true
+      },
+      {
+        "id": "lcd",
+        "resolution": [
+          72,
+          40
+        ],
+        "activeMm": [
+          9.196,
+          5.18
+        ],
+        "sourceBufferPreserved": true,
+        "actualTextureAlias": true,
+        "formats": [
+          "rgba",
+          "rgb888",
+          "rgb565",
+          "clipped-fill"
+        ],
+        "externalNoEcho": true,
+        "physicalAndPortsUnchanged": true,
+        "touch": false,
+        "unsupportedStyleAndTouch": "six actual rejected branches preserve pixels and physical state",
+        "scope": "CPU framebuffer and material binding/shader contract only;no GPU pixels or SSD1315/I2C emulation"
+      }
+    ],
+    "nested": [
+      {
+        "id": "neco",
+        "port": "out",
+        "wireCount": 4,
+        "inputPath": "grove/grove-2/out/press",
+        "retainedPhysical": "identical",
+        "observedInputEvents": 5,
+        "electricalCascade": false
+      },
+      {
+        "id": "mini-oled",
+        "port": "grove-right",
+        "wireCount": 4,
+        "inputPath": "grove/grove-3/grove-right/press",
+        "retainedPhysical": "identical",
+        "observedInputEvents": 5,
+        "electricalCascade": false
+      }
+    ],
+    "framebufferPanel": {
+      "actualDemoClass": "FramebufferPanel",
+      "nestedPath": "grove/grove-3/lcd",
+      "calibrationTargetOnly": true,
+      "attachDetachRefreshWritesPixels": false,
+      "scope": "Actual demo controller with DOM stubs;CPU framebuffer only"
+    },
+    "disposedResources": 2243,
+    "cases": [
+      "three-real-four-core-branches",
+      "44-key-and-one-rear-momentary-real-cap-fixed-package-separation",
+      "multi-source-cancel-independent-simultaneous-controls",
+      "36-independent-real-external-LED-materials-noecho",
+      "72x40-external-framebuffer-native-white-shader-touch-style-lock",
+      "both-entries-actual-presets-and-partial-press-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-cancel-peer-isolation",
+      "two-real-secondary-Grove-nested-Key-intents-no-electrical-cascade",
+      "actual-demo-nested-framebuffer-selector",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own three physical assemblies,matching print and actual external controls/outputs;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/keyboard-matrix/firmware/electrical/whole-history acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "cardkb2",
+        "body": [
+          "grove",
+          "usb",
+          "key-1",
+          "key-2",
+          "key-3",
+          "key-4",
+          "key-5",
+          "key-6",
+          "key-7",
+          "key-8",
+          "key-9",
+          "key-10",
+          "key-11",
+          "key-12",
+          "key-13",
+          "key-14",
+          "key-15",
+          "key-16",
+          "key-17",
+          "key-18",
+          "key-19",
+          "key-20",
+          "key-21",
+          "key-22",
+          "key-23",
+          "key-24",
+          "key-25",
+          "key-26",
+          "key-27",
+          "key-28",
+          "key-29",
+          "key-30",
+          "key-31",
+          "key-32",
+          "key-33",
+          "key-34",
+          "key-35",
+          "key-36",
+          "key-37",
+          "key-38",
+          "key-39",
+          "key-40",
+          "key-41",
+          "key-42",
+          "reset",
+          "boot",
+          "rgb"
+        ],
+        "ports": [
+          "grove",
+          "usb"
+        ],
+        "controls": [
+          "key-1",
+          "key-2",
+          "key-3",
+          "key-4",
+          "key-5",
+          "key-6",
+          "key-7",
+          "key-8",
+          "key-9",
+          "key-10",
+          "key-11",
+          "key-12",
+          "key-13",
+          "key-14",
+          "key-15",
+          "key-16",
+          "key-17",
+          "key-18",
+          "key-19",
+          "key-20",
+          "key-21",
+          "key-22",
+          "key-23",
+          "key-24",
+          "key-25",
+          "key-26",
+          "key-27",
+          "key-28",
+          "key-29",
+          "key-30",
+          "key-31",
+          "key-32",
+          "key-33",
+          "key-34",
+          "key-35",
+          "key-36",
+          "key-37",
+          "key-38",
+          "key-39",
+          "key-40",
+          "key-41",
+          "key-42",
+          "reset",
+          "boot"
+        ],
+        "leds": [
+          "rgb"
+        ],
+        "displays": [],
+        "physicalStructure": {
+          "geometrySource": "own-dimensioned-parametric-no-CAD",
+          "nativeCadFacesConsumed": false,
+          "physicalMeshes": 565,
+          "pcbMm": [
+            84,
+            54,
+            1
+          ],
+          "drawingPopulatedMm": [
+            84.7,
+            54.3,
+            6.15
+          ],
+          "restWithBackFilmMm": [
+            84.7,
+            54.3,
+            6.19
+          ],
+          "currentOwnEnvelopeMm": [
+            84.70000009536743,
+            54.29999997615815,
+            6.1900000029802325
+          ],
+          "realMountingBores": 4,
+          "mountingGridMm": [
+            78,
+            48
+          ],
+          "realConnectorDrills": 6,
+          "platedBarrels": 6,
+          "groveContacts": 4,
+          "groveThroughPcbTails": 4,
+          "usbContacts": 24,
+          "usbTails": 24,
+          "usbRetainingTabs": 4,
+          "actualMomentaryControls": 44,
+          "mainControls": [
+            {
+              "id": "key-1",
+              "row": 0,
+              "column": 0,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-2",
+              "row": 0,
+              "column": 1,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-3",
+              "row": 0,
+              "column": 2,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-4",
+              "row": 0,
+              "column": 3,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-5",
+              "row": 0,
+              "column": 4,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-6",
+              "row": 0,
+              "column": 5,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-7",
+              "row": 0,
+              "column": 6,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-8",
+              "row": 0,
+              "column": 7,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-9",
+              "row": 0,
+              "column": 8,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-10",
+              "row": 0,
+              "column": 9,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-11",
+              "row": 1,
+              "column": 0,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-12",
+              "row": 1,
+              "column": 1,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-13",
+              "row": 1,
+              "column": 2,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-14",
+              "row": 1,
+              "column": 3,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-15",
+              "row": 1,
+              "column": 4,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-16",
+              "row": 1,
+              "column": 5,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-17",
+              "row": 1,
+              "column": 6,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-18",
+              "row": 1,
+              "column": 7,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-19",
+              "row": 1,
+              "column": 8,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-20",
+              "row": 1,
+              "column": 9,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-21",
+              "row": 1,
+              "column": 10,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-22",
+              "row": 2,
+              "column": 0,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-23",
+              "row": 2,
+              "column": 1,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-24",
+              "row": 2,
+              "column": 2,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-25",
+              "row": 2,
+              "column": 3,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-26",
+              "row": 2,
+              "column": 4,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-27",
+              "row": 2,
+              "column": 5,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-28",
+              "row": 2,
+              "column": 6,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-29",
+              "row": 2,
+              "column": 7,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-30",
+              "row": 2,
+              "column": 8,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-31",
+              "row": 2,
+              "column": 9,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-32",
+              "row": 2,
+              "column": 10,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-33",
+              "row": 3,
+              "column": 0,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-34",
+              "row": 3,
+              "column": 1,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-35",
+              "row": 3,
+              "column": 2,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-36",
+              "row": 3,
+              "column": 3,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-37",
+              "row": 3,
+              "column": 4,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-38",
+              "row": 3,
+              "column": 5,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-39",
+              "row": 3,
+              "column": 6,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-40",
+              "row": 3,
+              "column": 7,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-41",
+              "row": 3,
+              "column": 8,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-42",
+              "row": 3,
+              "column": 9,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            }
+          ],
+          "sideControls": [
+            {
+              "id": "reset",
+              "axis": [
+                0,
+                -1,
+                0
+              ],
+              "inferredTravelMm": 0.16,
+              "unmarkedMovingMeshes": 2,
+              "fixedYellowCover": true,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "boot",
+              "axis": [
+                0,
+                1,
+                0
+              ],
+              "inferredTravelMm": 0.16,
+              "unmarkedMovingMeshes": 2,
+              "fixedYellowCover": true,
+              "fixedPackageMeshes": 7
+            }
+          ],
+          "mainMovingCapMeshes": 84,
+          "sideMovingCapMeshes": 4,
+          "fixedPackageMeshesPerControl": 7,
+          "unmarkedMovingCaps": true,
+          "fixedPcbLegends": true,
+          "qfnTerminations": 40,
+          "actualRgbOutputs": 1,
+          "physicalAdhesiveFilms": 1,
+          "emptyReceivingAndBoreRays": 23,
+          "frontSideWallRays": 26,
+          "realCapInteriorRays": 86,
+          "pcbAndFilmSupportRays": 216,
+          "localCoordinateToleranceMm": 1e-05
+        },
+        "transformedStructure": {
+          "geometrySource": "own-dimensioned-parametric-no-CAD",
+          "nativeCadFacesConsumed": false,
+          "physicalMeshes": 565,
+          "pcbMm": [
+            84,
+            54,
+            1
+          ],
+          "drawingPopulatedMm": [
+            84.7,
+            54.3,
+            6.15
+          ],
+          "restWithBackFilmMm": [
+            84.7,
+            54.3,
+            6.19
+          ],
+          "currentOwnEnvelopeMm": [
+            84.70000009536744,
+            54.29999997615815,
+            6.190000002980236
+          ],
+          "realMountingBores": 4,
+          "mountingGridMm": [
+            78,
+            48
+          ],
+          "realConnectorDrills": 6,
+          "platedBarrels": 6,
+          "groveContacts": 4,
+          "groveThroughPcbTails": 4,
+          "usbContacts": 24,
+          "usbTails": 24,
+          "usbRetainingTabs": 4,
+          "actualMomentaryControls": 44,
+          "mainControls": [
+            {
+              "id": "key-1",
+              "row": 0,
+              "column": 0,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-2",
+              "row": 0,
+              "column": 1,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-3",
+              "row": 0,
+              "column": 2,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-4",
+              "row": 0,
+              "column": 3,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-5",
+              "row": 0,
+              "column": 4,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-6",
+              "row": 0,
+              "column": 5,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-7",
+              "row": 0,
+              "column": 6,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-8",
+              "row": 0,
+              "column": 7,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-9",
+              "row": 0,
+              "column": 8,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-10",
+              "row": 0,
+              "column": 9,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-11",
+              "row": 1,
+              "column": 0,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-12",
+              "row": 1,
+              "column": 1,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-13",
+              "row": 1,
+              "column": 2,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-14",
+              "row": 1,
+              "column": 3,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-15",
+              "row": 1,
+              "column": 4,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-16",
+              "row": 1,
+              "column": 5,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-17",
+              "row": 1,
+              "column": 6,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-18",
+              "row": 1,
+              "column": 7,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-19",
+              "row": 1,
+              "column": 8,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-20",
+              "row": 1,
+              "column": 9,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-21",
+              "row": 1,
+              "column": 10,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-22",
+              "row": 2,
+              "column": 0,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-23",
+              "row": 2,
+              "column": 1,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-24",
+              "row": 2,
+              "column": 2,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-25",
+              "row": 2,
+              "column": 3,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-26",
+              "row": 2,
+              "column": 4,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-27",
+              "row": 2,
+              "column": 5,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-28",
+              "row": 2,
+              "column": 6,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-29",
+              "row": 2,
+              "column": 7,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-30",
+              "row": 2,
+              "column": 8,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-31",
+              "row": 2,
+              "column": 9,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-32",
+              "row": 2,
+              "column": 10,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-33",
+              "row": 3,
+              "column": 0,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-34",
+              "row": 3,
+              "column": 1,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-35",
+              "row": 3,
+              "column": 2,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-36",
+              "row": 3,
+              "column": 3,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-37",
+              "row": 3,
+              "column": 4,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-38",
+              "row": 3,
+              "column": 5,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-39",
+              "row": 3,
+              "column": 6,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-40",
+              "row": 3,
+              "column": 7,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-41",
+              "row": 3,
+              "column": 8,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "key-42",
+              "row": 3,
+              "column": 9,
+              "unmarkedMovingMeshes": 2,
+              "fixedPackageMeshes": 7
+            }
+          ],
+          "sideControls": [
+            {
+              "id": "reset",
+              "axis": [
+                0,
+                -1,
+                0
+              ],
+              "inferredTravelMm": 0.16,
+              "unmarkedMovingMeshes": 2,
+              "fixedYellowCover": true,
+              "fixedPackageMeshes": 7
+            },
+            {
+              "id": "boot",
+              "axis": [
+                0,
+                1,
+                0
+              ],
+              "inferredTravelMm": 0.16,
+              "unmarkedMovingMeshes": 2,
+              "fixedYellowCover": true,
+              "fixedPackageMeshes": 7
+            }
+          ],
+          "mainMovingCapMeshes": 84,
+          "sideMovingCapMeshes": 4,
+          "fixedPackageMeshesPerControl": 7,
+          "unmarkedMovingCaps": true,
+          "fixedPcbLegends": true,
+          "qfnTerminations": 40,
+          "actualRgbOutputs": 1,
+          "physicalAdhesiveFilms": 1,
+          "emptyReceivingAndBoreRays": 23,
+          "frontSideWallRays": 26,
+          "realCapInteriorRays": 86,
+          "pcbAndFilmSupportRays": 216,
+          "localCoordinateToleranceMm": 1e-05
+        }
+      },
+      {
+        "id": "neco",
+        "body": [
+          "grove",
+          "out",
+          "button",
+          "led-1",
+          "led-2",
+          "led-3",
+          "led-4",
+          "led-5",
+          "led-6",
+          "led-7",
+          "led-8",
+          "led-9",
+          "led-10",
+          "led-11",
+          "led-12",
+          "led-13",
+          "led-14",
+          "led-15",
+          "led-16",
+          "led-17",
+          "led-18",
+          "led-19",
+          "led-20",
+          "led-21",
+          "led-22",
+          "led-23",
+          "led-24",
+          "led-25",
+          "led-26",
+          "led-27",
+          "led-28",
+          "led-29",
+          "led-30",
+          "led-31",
+          "led-32",
+          "led-33",
+          "led-34",
+          "led-35"
+        ],
+        "ports": [
+          "grove",
+          "out"
+        ],
+        "controls": [
+          "button"
+        ],
+        "leds": [
+          "led-1",
+          "led-2",
+          "led-3",
+          "led-4",
+          "led-5",
+          "led-6",
+          "led-7",
+          "led-8",
+          "led-9",
+          "led-10",
+          "led-11",
+          "led-12",
+          "led-13",
+          "led-14",
+          "led-15",
+          "led-16",
+          "led-17",
+          "led-18",
+          "led-19",
+          "led-20",
+          "led-21",
+          "led-22",
+          "led-23",
+          "led-24",
+          "led-25",
+          "led-26",
+          "led-27",
+          "led-28",
+          "led-29",
+          "led-30",
+          "led-31",
+          "led-32",
+          "led-33",
+          "led-34",
+          "led-35"
+        ],
+        "displays": [],
+        "physicalStructure": {
+          "geometrySource": "own-dimensioned-parametric",
+          "nativeCadFacesConsumed": false,
+          "physicalMeshes": 410,
+          "pcbThicknessMm": 1,
+          "mountingBores": 4,
+          "outerHoleCentreSpanMm": 43,
+          "innerFixingCentreSpanMm": 28,
+          "metalFixingEyes": 2,
+          "physicalLeds": 35,
+          "sidePackageCounts": [
+            17,
+            1,
+            17
+          ],
+          "fixedPackageBaseAndLipMeshes": 70,
+          "actualPackageTerminations": 140,
+          "capacitors": 17,
+          "sockets": [
+            {
+              "id": "grove",
+              "face": "back",
+              "contacts": 4,
+              "smdTails": 4,
+              "smdPads": 4,
+              "fixedAnchors": 2,
+              "actualMaterialParts": 29
+            },
+            {
+              "id": "out",
+              "face": "back",
+              "contacts": 4,
+              "smdTails": 4,
+              "smdPads": 4,
+              "fixedAnchors": 2,
+              "actualMaterialParts": 29
+            }
+          ],
+          "actualRearMomentaryCaps": 1,
+          "capOnlyTravelMm": 0.15,
+          "fixedSwitchParts": 3,
+          "fixedSwitchTerminals": 4,
+          "physicalAdhesiveFilms": 0,
+          "emptyBoreRays": 20,
+          "frontSideBoreWallRays": 16,
+          "interiorLensTopRays": 70,
+          "pcbFootprintSupportRays": 175,
+          "localCoordinateToleranceMm": 1e-05,
+          "currentOwnEnvelopeMm": [
+            47.099998474121094,
+            44.599998474121094,
+            10.100000011920931
+          ]
+        },
+        "transformedStructure": {
+          "geometrySource": "own-dimensioned-parametric",
+          "nativeCadFacesConsumed": false,
+          "physicalMeshes": 410,
+          "pcbThicknessMm": 1,
+          "mountingBores": 4,
+          "outerHoleCentreSpanMm": 43,
+          "innerFixingCentreSpanMm": 28,
+          "metalFixingEyes": 2,
+          "physicalLeds": 35,
+          "sidePackageCounts": [
+            17,
+            1,
+            17
+          ],
+          "fixedPackageBaseAndLipMeshes": 70,
+          "actualPackageTerminations": 140,
+          "capacitors": 17,
+          "sockets": [
+            {
+              "id": "grove",
+              "face": "back",
+              "contacts": 4,
+              "smdTails": 4,
+              "smdPads": 4,
+              "fixedAnchors": 2,
+              "actualMaterialParts": 29
+            },
+            {
+              "id": "out",
+              "face": "back",
+              "contacts": 4,
+              "smdTails": 4,
+              "smdPads": 4,
+              "fixedAnchors": 2,
+              "actualMaterialParts": 29
+            }
+          ],
+          "actualRearMomentaryCaps": 1,
+          "capOnlyTravelMm": 0.15,
+          "fixedSwitchParts": 3,
+          "fixedSwitchTerminals": 4,
+          "physicalAdhesiveFilms": 0,
+          "emptyBoreRays": 20,
+          "frontSideBoreWallRays": 16,
+          "interiorLensTopRays": 70,
+          "pcbFootprintSupportRays": 175,
+          "localCoordinateToleranceMm": 1e-05,
+          "currentOwnEnvelopeMm": [
+            47.099998474121094,
+            44.5999984741211,
+            10.100000011920933
+          ]
+        }
+      },
+      {
+        "id": "mini-oled",
+        "body": [
+          "grove",
+          "grove-right",
+          "lcd"
+        ],
+        "ports": [
+          "grove",
+          "grove-right"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [
+          "lcd"
+        ],
+        "physicalStructure": {
+          "geometrySource": "own-dimensioned-parametric-no-CAD",
+          "nativeCadFacesConsumed": false,
+          "physicalMeshes": 192,
+          "closedDirectedCountTwoMeshes": 192,
+          "directedEdges": 11400,
+          "allPositiveVolume": true,
+          "allFrontSide": true,
+          "rigidDrawingMm": [
+            25.8,
+            12,
+            6.75
+          ],
+          "roundedProductThicknessMm": 6.8,
+          "currentOwnEnvelopeMm": [
+            25.800000095367437,
+            12.11999989151954,
+            6.750000005960463
+          ],
+          "inferredFoldedFlexEdgeExtensionMm": 0.12,
+          "pcbThicknessMm": 1,
+          "unmarkedPcbBores": 4,
+          "assertedWholeProductMountingFunction": false,
+          "pcbEmptyRays": 20,
+          "pcbWallRays": 16,
+          "ht7533Terminations": 3,
+          "capacitors": 11,
+          "resistors": 4,
+          "sockets": [
+            {
+              "id": "grove",
+              "contacts": 4,
+              "bentSmtReturns": 4,
+              "smtFeet": 4,
+              "solderLands": 4,
+              "materialMeshes": 27
+            },
+            {
+              "id": "grove-right",
+              "contacts": 4,
+              "bentSmtReturns": 4,
+              "smtFeet": 4,
+              "solderLands": 4,
+              "materialMeshes": 27
+            }
+          ],
+          "actualMetalContactRays": 8,
+          "actualCavityWallRays": 6,
+          "actualGlassSeatRays": 2,
+          "pcbSupportRays": 18,
+          "fpcPins": 16,
+          "fpcContactPitchMm": 0.65,
+          "fpcContactWidthMm": 0.35,
+          "actualFpcTailBores": 2,
+          "tailEmptyRays": 2,
+          "tailWallRays": 8,
+          "defaultFoldedFpc": true,
+          "outsideCornerVertices": 10,
+          "glassMm": [
+            12,
+            11,
+            1.25
+          ],
+          "protectionTapeMm": [
+            11,
+            8.5,
+            0.05
+          ],
+          "physicalAdhesiveFilms": 0,
+          "actualGlassSupportRays": 5,
+          "externalOutputPlaneIsNotMaterialSolid": true,
+          "localCoordinateToleranceMm": 1e-05
+        },
+        "transformedStructure": {
+          "geometrySource": "own-dimensioned-parametric-no-CAD",
+          "nativeCadFacesConsumed": false,
+          "physicalMeshes": 192,
+          "closedDirectedCountTwoMeshes": 192,
+          "directedEdges": 11400,
+          "allPositiveVolume": true,
+          "allFrontSide": true,
+          "rigidDrawingMm": [
+            25.8,
+            12,
+            6.75
+          ],
+          "roundedProductThicknessMm": 6.8,
+          "currentOwnEnvelopeMm": [
+            25.800000095367437,
+            12.1199998915196,
+            6.750000005960473
+          ],
+          "inferredFoldedFlexEdgeExtensionMm": 0.12,
+          "pcbThicknessMm": 1,
+          "unmarkedPcbBores": 4,
+          "assertedWholeProductMountingFunction": false,
+          "pcbEmptyRays": 20,
+          "pcbWallRays": 16,
+          "ht7533Terminations": 3,
+          "capacitors": 11,
+          "resistors": 4,
+          "sockets": [
+            {
+              "id": "grove",
+              "contacts": 4,
+              "bentSmtReturns": 4,
+              "smtFeet": 4,
+              "solderLands": 4,
+              "materialMeshes": 27
+            },
+            {
+              "id": "grove-right",
+              "contacts": 4,
+              "bentSmtReturns": 4,
+              "smtFeet": 4,
+              "solderLands": 4,
+              "materialMeshes": 27
+            }
+          ],
+          "actualMetalContactRays": 8,
+          "actualCavityWallRays": 6,
+          "actualGlassSeatRays": 2,
+          "pcbSupportRays": 18,
+          "fpcPins": 16,
+          "fpcContactPitchMm": 0.65,
+          "fpcContactWidthMm": 0.35,
+          "actualFpcTailBores": 2,
+          "tailEmptyRays": 2,
+          "tailWallRays": 8,
+          "defaultFoldedFpc": true,
+          "outsideCornerVertices": 10,
+          "glassMm": [
+            12,
+            11,
+            1.25
+          ],
+          "protectionTapeMm": [
+            11,
+            8.5,
+            0.05
+          ],
+          "physicalAdhesiveFilms": 0,
+          "actualGlassSupportRays": 5,
+          "externalOutputPlaneIsNotMaterialSolid": true,
+          "localCoordinateToleranceMm": 1e-05
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "cardkb2",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "source-vector-raster"
+        ],
+        "actualPartialPressIds": [
+          "key-1",
+          "key-42",
+          "reset",
+          "boot"
+        ]
+      },
+      {
+        "id": "neco",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialPressIds": [
+          "button"
+        ]
+      },
+      {
+        "id": "mini-oled",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialPressIds": []
+      }
+    ],
+    "configurations": [
+      {
+        "id": "cardkb2",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual representative partial presses"
+      },
+      {
+        "id": "neco",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual representative partial presses"
+      },
+      {
+        "id": "mini-oled",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual representative partial presses"
+      }
+    ],
+    "controls": [
+      {
+        "id": "cardkb2",
+        "individual": [
+          {
+            "id": "key-1",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-2",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-3",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-4",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-5",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-6",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-7",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-8",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-9",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-10",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-11",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-12",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-13",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-14",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-15",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-16",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-17",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-18",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-19",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-20",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-21",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-22",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-23",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-24",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-25",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-26",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-27",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-28",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-29",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-30",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-31",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-32",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-33",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-34",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-35",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-36",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-37",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-38",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-39",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-40",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-41",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-42",
+            "travelMm": 0.22,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "reset",
+            "travelMm": 0.16,
+            "axis": [
+              0,
+              -1,
+              0
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "boot",
+            "travelMm": 0.16,
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          }
+        ],
+        "simultaneous": {
+          "controls": 44,
+          "allHeldAndOneCancelled": "independent peers",
+          "completeNeutralPhysicalRestored": true
+        }
+      },
+      {
+        "id": "neco",
+        "individual": [
+          {
+            "id": "button",
+            "travelMm": 0.15,
+            "axis": [
+              0,
+              0,
+              1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          }
+        ],
+        "simultaneous": {
+          "controls": 1,
+          "allHeldAndOneCancelled": "independent peers",
+          "completeNeutralPhysicalRestored": true
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "id": "cardkb2",
+        "count": 1,
+        "externalNoEcho": true,
+        "independentRealMaterials": true,
+        "physicalAndPortsUnchanged": true
+      },
+      {
+        "id": "neco",
+        "count": 35,
+        "externalNoEcho": true,
+        "independentRealMaterials": true,
+        "physicalAndPortsUnchanged": true
+      },
+      {
+        "id": "lcd",
+        "resolution": [
+          72,
+          40
+        ],
+        "activeMm": [
+          9.196,
+          5.18
+        ],
+        "sourceBufferPreserved": true,
+        "actualTextureAlias": true,
+        "formats": [
+          "rgba",
+          "rgb888",
+          "rgb565",
+          "clipped-fill"
+        ],
+        "externalNoEcho": true,
+        "physicalAndPortsUnchanged": true,
+        "touch": false,
+        "unsupportedStyleAndTouch": "six actual rejected branches preserve pixels and physical state",
+        "scope": "CPU framebuffer and material binding/shader contract only;no GPU pixels or SSD1315/I2C emulation"
+      }
+    ],
+    "nested": [
+      {
+        "id": "neco",
+        "port": "out",
+        "wireCount": 4,
+        "inputPath": "grove/grove-2/out/press",
+        "retainedPhysical": "identical",
+        "observedInputEvents": 5,
+        "electricalCascade": false
+      },
+      {
+        "id": "mini-oled",
+        "port": "grove-right",
+        "wireCount": 4,
+        "inputPath": "grove/grove-3/grove-right/press",
+        "retainedPhysical": "identical",
+        "observedInputEvents": 5,
+        "electricalCascade": false
+      }
+    ],
+    "framebufferPanel": {
+      "actualDemoClass": "FramebufferPanel",
+      "nestedPath": "grove/grove-3/lcd",
+      "calibrationTargetOnly": true,
+      "attachDetachRefreshWritesPixels": false,
+      "scope": "Actual demo controller with DOM stubs;CPU framebuffer only"
+    },
+    "disposedResources": 2243,
+    "cases": [
+      "three-real-four-core-branches",
+      "44-key-and-one-rear-momentary-real-cap-fixed-package-separation",
+      "multi-source-cancel-independent-simultaneous-controls",
+      "36-independent-real-external-LED-materials-noecho",
+      "72x40-external-framebuffer-native-white-shader-touch-style-lock",
+      "both-entries-actual-presets-and-partial-press-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-cancel-peer-isolation",
+      "two-real-secondary-Grove-nested-Key-intents-no-electrical-cascade",
+      "actual-demo-nested-framebuffer-selector",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own three physical assemblies,matching print and actual external controls/outputs;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/keyboard-matrix/firmware/electrical/whole-history acceptance"
+  },
+  "checks": {
+    "localProductSmoke": "all current batch products pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "cardkb2",
+        "status": "frozen",
+        "checkedFiles": 11
+      },
+      {
+        "id": "neco",
+        "status": "frozen",
+        "checkedFiles": 11
+      },
+      {
+        "id": "mini-oled",
+        "status": "frozen",
+        "checkedFiles": 12
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "All physical attributes/index/world matrices preserved across actual entries/configurations",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "bbfd93908f310ba753e24440d21c955966fb8648bb1ba35d2905e618d9a503a9",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "b714f24b4c1c85dd4f650c7969b6a13eab7f2e2d30c20933654caad7af39bc87",
+      "logDistributed": false
+    },
+    "exportCount": 6,
+    "catalogConfigurations": {
+      "status": "pass",
+      "products": [
+        {
+          "id": "cardkb2",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "Complete CardKB2 populated board",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        },
+        {
+          "id": "neco",
+          "presets": [
+            {
+              "id": "assembled",
+              "name": "完整猫耳灯板",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        },
+        {
+          "id": "mini-oled",
+          "presets": [
+            {
+              "id": "assembled",
+              "name": "Complete Mini OLED with folded FPC",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        }
+      ],
+      "scope": "Batch 41: current frozen named presets, constructor defaults and existing demo contract"
+    },
+    "livePreview": "166-product catalog, 3 own runtime chunks and all corresponding source PNG bytes verified in live dist (ordinary or inlined assets)",
+    "newSourcePrivacy": "New JS/JSON/Markdown/PNG and all current added catalog/manifest records checked; private table/URLs/vectors/original names/mappings/raw material/intermediates excluded",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "Only new products/catalog entries/exports/guide/plan; protected old private/public bytes retained",
+    "existingPublicUnitFilesUnchanged": 1250,
+    "existingPrivateUnitFilesUnchanged": 1211,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "publicSharedProtectedFilesUnchanged": 2,
+    "privateSharedProtectedFilesUnchanged": 2,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [],
+  "previewAssets": [
+    {
+      "id": "cardkb2",
+      "file": "assets/cardkb2-BQ163VbR.js",
+      "sha256": "2c5d2614d3330aefc70ef0c26a57f1856edf564aa8927b69107054d2ad3e8a48"
+    },
+    {
+      "id": "neco",
+      "file": "assets/neco-Bm3-vRGP.js",
+      "sha256": "53d721096abb1fc0a580a34861491646c0dded6e40ad0a893e85d592a53ec7a6"
+    },
+    {
+      "id": "mini-oled",
+      "file": "assets/mini-oled-C86B8qvM.js",
+      "sha256": "da4f35770116ad76156252ec802b585a1335e6f621c83e54efcd6c04f6e2720c"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/cardkb2/artwork/back.png",
+      "sha256": "f34c35567a9dcae5fcae361a0c687628992657c851871bd40f63e5d40558064c"
+    },
+    {
+      "path": "src/units/cardkb2/artwork/front.png",
+      "sha256": "2ccacfd4c5765a8c2e43f850ce3d9e7b404c4e9d909cc4f9510d7359e4ecd5fc"
+    },
+    {
+      "path": "src/units/cardkb2/assembly.js",
+      "sha256": "ad7b68e742684fc9a6b659e567ed28204ccc15521e7b0f52a297af9025053910"
+    },
+    {
+      "path": "src/units/cardkb2/dimensions.js",
+      "sha256": "c775400ec6f4b0be7ee45b5d1805d66d8f330f0c87a2e2c79357ccc20e313433"
+    },
+    {
+      "path": "src/units/cardkb2/geometry.js",
+      "sha256": "999c468d38a46ce7a07262f3ad931e245447a798225a35d0aaafd322af52392a"
+    },
+    {
+      "path": "src/units/cardkb2/index.js",
+      "sha256": "fcce6e73f03094684b61a82c1de09559ad5a69dfd40d29ae63596b2ce9d6ff54"
+    },
+    {
+      "path": "src/units/cardkb2/stickers.js",
+      "sha256": "0146aa9fea519dee0c6d5ebf07ae44650ee1bf3dda6d97a8c08afc5f6eaf6b66"
+    },
+    {
+      "path": "docs/research/cardkb2/artwork.json",
+      "sha256": "f9f5343b5d6f6a55b0f6104074e7b62ae2edddae2b43d392ebfe38afeb25fdb0"
+    },
+    {
+      "path": "docs/research/cardkb2/modeling.md",
+      "sha256": "19a72cf53b9604f18097b1f300873a8b923f45140fff8d517849c50157f7d2b0"
+    },
+    {
+      "path": "docs/research/cardkb2/smoke.json",
+      "sha256": "d16d76c34bca2ceda6a79be60cb680bff141fe50ac3925bf206a9aa4a8160f4a"
+    },
+    {
+      "path": "docs/research/cardkb2/sources.json",
+      "sha256": "e880a9101a41698142a8b143e6632c0616112fcf9d4531fd1c44f5b0f1b5a1de"
+    },
+    {
+      "path": "src/units/neco/artwork/back.png",
+      "sha256": "490e5ad82f33cb71efbfa501bd694f432bf7cf645c5bfb1d4c7e3fcc7dfb88dc"
+    },
+    {
+      "path": "src/units/neco/artwork/front.png",
+      "sha256": "1d1137af78f54cd72f6e5d2900d9c90953092a554d464cecd98d8356478a6852"
+    },
+    {
+      "path": "src/units/neco/assembly.js",
+      "sha256": "fc23976a30cd4d1ed073d31c170c28e50e0fc974a85ccfe7503a2d46e91e933f"
+    },
+    {
+      "path": "src/units/neco/dimensions.js",
+      "sha256": "720391ca2ee089987ecb9d8084d18c60d32d3089a6a75cf4e4562fa9f279ff9b"
+    },
+    {
+      "path": "src/units/neco/geometry.js",
+      "sha256": "8041dd38a40cf2c9441a6cb58043ae750926dcf5f166eeeda21b15ab0b58041c"
+    },
+    {
+      "path": "src/units/neco/index.js",
+      "sha256": "bdcfc9aa909f1ae1dd7ad9ced54b270e6059399021d2afe1920f6cda27d1e982"
+    },
+    {
+      "path": "src/units/neco/stickers.js",
+      "sha256": "11653a5c2d4b5bb243f80cbae90788364dca41386c513e3df1de0a13a653f510"
+    },
+    {
+      "path": "docs/research/neco/artwork.json",
+      "sha256": "0a69c7062774f3e1aee3f7ecfd5cd446db5ea93f61f5cffe9ee8b5885fc93238"
+    },
+    {
+      "path": "docs/research/neco/modeling.md",
+      "sha256": "439c467e5fa14b8c6540a2ff84802392b8753a8b402bf1a79833288dd145ab41"
+    },
+    {
+      "path": "docs/research/neco/smoke.json",
+      "sha256": "b53f9d7409a8f2eded2370863258554b982eff04014180a004bc1fdc1f809eda"
+    },
+    {
+      "path": "docs/research/neco/sources.json",
+      "sha256": "8719f9649a9744fbbbeb728b4324e6823645bb38fe07bd9e420f182e43ea1f2f"
+    },
+    {
+      "path": "src/units/mini-oled/WhiteOledDisplay.js",
+      "sha256": "6a5eaea148c1f351bcc04909d478057c506ab9312533b1c0a578f475200f2041"
+    },
+    {
+      "path": "src/units/mini-oled/artwork/back.png",
+      "sha256": "3e4e40055763892d67dfdaa7b9624d5e82c9d03f14d9d7b188ba01a33a6d08ae"
+    },
+    {
+      "path": "src/units/mini-oled/artwork/front.png",
+      "sha256": "814e6882a758116b51f82b1a3e075d4c7213cc78e59eb90af2e580d3bdd025c0"
+    },
+    {
+      "path": "src/units/mini-oled/assembly.js",
+      "sha256": "4c282d54a3630d3df92f0ff43449fe039c755963ecbe261fb827dcc744f387a2"
+    },
+    {
+      "path": "src/units/mini-oled/dimensions.js",
+      "sha256": "a89c5d0b0d1dfa95f24d6a15186921a1b052fcdab3decae603350607f9495804"
+    },
+    {
+      "path": "src/units/mini-oled/geometry.js",
+      "sha256": "ac6652cf551e01648e97236a6dfca9b53dab258e9ac84b246c3b8e85dab0e4af"
+    },
+    {
+      "path": "src/units/mini-oled/index.js",
+      "sha256": "b23788c073f51cf10c50c3baecb663005edb9eb8ace7ddea221f4d4a01e00a30"
+    },
+    {
+      "path": "src/units/mini-oled/stickers.js",
+      "sha256": "cf3d5617de2f3fcb1369c4b987d11113609b500969307d7b96f8c2cca4cb1e28"
+    },
+    {
+      "path": "docs/research/mini-oled/artwork.json",
+      "sha256": "816320251b2f99e8995fd05bcbf763909b1935569925bf2c31204777ad71a51a"
+    },
+    {
+      "path": "docs/research/mini-oled/modeling.md",
+      "sha256": "c29d65adf31eecf0264b5061bfae103bc69cf6fdd98bff1603d803548935294d"
+    },
+    {
+      "path": "docs/research/mini-oled/smoke.json",
+      "sha256": "ad6de72b46443a0b48addcdcbba6e41a72196f346e371054b9df2dbc5d15ce83"
+    },
+    {
+      "path": "docs/research/mini-oled/sources.json",
+      "sha256": "e6bf614f0486be1c59a1dd959636f67eb3768eae9adc6dd994b164e88128a7c0"
+    }
+  ],
+  "limitations": [
+    "Allthree useowncleardimensionedmulti-view/photo parameterization;no nativeCAD face claim,noborrowedCardKB/NeoHEX/oldOLED assembly andnounconfirmedlicenserouteSTEPfaces",
+    "HiddenPCB/contact/connector/packageinstallation,keytravel/FPCbends/gluelayers/eyefixings remain documentedappearanceinferences,not completeBOM/manufacturing/productionfit",
+    "Onlyactual44CardKB2keys/Necotactilecap move andactualLEDs/OLED acceptexternalappearance;fixedswitchpackages/contacts/board/ports remainfixed",
+    "No keyboardcharacter/combomode,WS2812cascade,I2C/SSD1315register,electrical/sensorvalue/firmware behavior;pixelbuffer comesfromexternalframework",
+    "Artworkoriginsare perasset;onlyapprovedordinaryPNG,nophotographiccrop/wrongSKUprint/microtextinvention/fakePCBfilm/permanentscreencontent",
+    "Privatetable/originals/URLs/names/mapping/vectors/generators/intermediates excluded;earliersticker/Scroll/StackChan/Puzzle/Catchlimits preserved;overallgoalactive"
+  ]
+}

@@ -1,0 +1,415 @@
+{
+  "id": "joystick",
+  "sku": "U024",
+  "name": "Unit Joystick (MEGA328P original)",
+  "chips": [
+    "MEGA328P"
+  ],
+  "retrievedAt": "2026-10-27",
+  "officialDocs": "https://docs.m5stack.com/en/unit/joystick",
+  "officialPageSha256": "290004576563a780c387e30998fb0e6437c4fc023907b952e342297af8de0202",
+  "lifecycle": "Official exactoriginal marked EOL;historical useful coverage,no current popularity/sales claim",
+  "constructionRoute": "own-dimensional-parametric",
+  "nativeGeometryAvailable": false,
+  "nativeTriangles": null,
+  "immutableDocumentationSource": {
+    "id": "joystick",
+    "url": "https://raw.githubusercontent.com/m5stack/m5-docs/e5354c5dcc61d16fdc1dff9d92c2c760728d0b60/docs/en/unit/joystick.md",
+    "httpStatus": 200,
+    "sha256": "6374b9ea677596442b3485fa7f6f6a500aed75a30afb226d095f0c0de264421f",
+    "bytes": 5896,
+    "commit": "e5354c5dcc61d16fdc1dff9d92c2c760728d0b60",
+    "path": "docs/en/unit/joystick.md",
+    "gitBlob": "75512fa4ac2cba55bddd4e3f62c23e511f398529",
+    "gitBlobVerifiedAgainstBytes": true,
+    "repository": "m5stack/m5-docs",
+    "notRuntimeSource": true
+  },
+  "officialMCP": {
+    "rawResponseSha256": "d10fa1a82c3989daa10a4fd39b947a9e810ac2182701c2ff6fc50a16ef421eef",
+    "decodedInfoSha256": "dd3b7debe7b8a9c490b1728a4a269344887ddee8a617c5f12ecfcc34f1033f0b",
+    "status": "success",
+    "rawDistributed": false,
+    "scope": "Use only exactoriginal U024 product/schematic sections;later-generation search hits excluded"
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/joystick/joystick_05.webp",
+    "sha256": "b153bf282392d454149fc3462a397d160f14d3609c58bd7c179ac6861f0eb3a6",
+    "bytes": 36186,
+    "role": "own-front-isometric-cap-and-aperture",
+    "useBoundary": "Real round cap/stem/black cup and visible metal carrier in rectangular white opening;red receiving socket"
+  },
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/joystick/joystick_01.webp",
+      "sha256": "e89c530e10d51480ee3e904383cfe387730fa128e2e7c18e433073379acbcd98",
+      "bytes": 114122,
+      "role": "own-isolated-front-and-chip-identity",
+      "useBoundary": "Own MEGA328P original and cap/cage aperture;marketing caption not bodyink"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/joystick/joystick_02.webp",
+      "sha256": "14032d7df87410c8ce9348577c0a6d0bb12687eaf3eeeed47b64a82ee234c2bf",
+      "bytes": 47108,
+      "role": "own-readable-rear-film-and-retainer",
+      "useBoundary": "JOYSTICK,A1/A0 arrows,ButtonPressA2,M328/8MHz,LED D2,I2C ADDR0x52,PORT.A.I2C and4pin labels as documentary ink"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/joystick/joystick_05.webp",
+      "sha256": "b153bf282392d454149fc3462a397d160f14d3609c58bd7c179ac6861f0eb3a6",
+      "bytes": 36186,
+      "role": "own-front-isometric-cap-and-aperture",
+      "useBoundary": "Real round cap/stem/black cup and visible metal carrier in rectangular white opening;red receiving socket"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/joystick/joystick_06.webp",
+      "sha256": "7d546f66573d1cb4f98e220e13c20b20274f938e547a3ee0c2f6700cb7ee8c37",
+      "bytes": 60628,
+      "role": "own-clear-front-cap-overhang",
+      "useBoundary": "Front actual cap appears wider than24mm whitebase;author separates nominal table from estimated actual assembly envelope,coin excluded"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/joystick/joystick_sch_01.webp",
+      "sha256": "14dbfb9d33ff1332b9a92dc2a33aa4109bde9af9591947b66c367a7a640d79ca",
+      "bytes": 26098,
+      "role": "own-original-schematic",
+      "useBoundary": "Confirms documentary part identities/connections,not hidden3D placement or fullBOM"
+    }
+  ],
+  "nominalMm": [
+    24,
+    48,
+    32
+  ],
+  "vendorDimensionOrderMm": [
+    48,
+    24,
+    32
+  ],
+  "caseEnvelopeMm": [
+    24,
+    48,
+    8
+  ],
+  "neutralPhotoDerivedEnvelopeMm": [
+    26.6,
+    48,
+    32
+  ],
+  "actualNeutralPhysicalEnvelopeMm": [
+    26.600000381469727,
+    48.00000009536743,
+    32.00000038206577
+  ],
+  "dimensionBasis": {
+    "ownVendorTableOrderMm": [
+      48,
+      24,
+      32
+    ],
+    "basis": "Current exactU024 table and immutable MEGA328originalmd agree. Nominal24width/48length/32height are preserved;own06 cap visiblyoverhangs whitebase,so author must record actual modeled cap assemblyenvelope separately rather than compressing cap to nominal24.",
+    "noOwnCADOrDimensionedDrawing": true,
+    "notSibling": "U024-C MEGA8A v1.1 andU024-V2 joystick2 excluded"
+  },
+  "completeCupWidthBasis": "26.6mm own06photo estimate;24mm official nominal kept separately,not clamped",
+  "acceptedFinalPreflightBaseline": {
+    "publicCatalog": {
+      "path": "outputs/m5stack-models-public/catalog/products.json",
+      "sha256": "5ffe16a66be4c67378b8fa495d2fcd45bec16a6cb408ef2cb1cb8243801ed73c",
+      "count": 184
+    },
+    "publicSourceManifest": {
+      "path": "outputs/m5stack-models-public/source-manifest.json",
+      "sha256": "a9c8eaf45bb60b5fdb6f75c60e96646171a3bd9fed673ca609bc504d22e3c8b7",
+      "count": 184
+    },
+    "privateCatalog": {
+      "path": "outputs/m5stack-models.js/catalog/products.json",
+      "sha256": "ef2c72c4a34cf0579b82960a3777be42c77f5ca3be855d25df759eb897b17ee9",
+      "count": 184
+    }
+  },
+  "interiorPhotoOrAssemblyCadAvailable": false,
+  "schematicFetched": true,
+  "inferred": [
+    "Exact original U024/MEGA328P only;own current/immutable original table48×24×32mm. Model XYZ nominal24×48×32;white base24×48×8. Own06 visibly overhangs the white base:complete neutral cup envelope26.6×48×32mm has photo-estimated26.6width,not an official measured dimension. No U024-C/v1.1 or joystick2 geometry/source faces.",
+    "No original native assembledCAD or internal assemblyBOM. Case split/walls/rear film thickness/mounting bores andPCB scallops,PCB/subassembly installation,metal carrier/cup retainingears,shaft/bearing/ball/Zreceiving bore and supports are own-photo appearance estimates. Four32lead ATMEGA sides,6supportingpassives andconcealed0603D1 are fixed reconstructed visual parts;not exact physical BOM or manufacturing datum.",
+    "Schematic confirms actual fittedJ2four-pin receiving socket andJ3NotMount;no second fitted socket. Port has real deep dielectric floor/sidewalls/stop,4retainedcontacts,4bentreturns,4throughPCBtails,4platedbarrels and8annularpads. Localbends/depth/retention/clearance inferred;SCL/SDA/5V/GND are documentary labels only,no power/I2C/electrical simulation.",
+    "Fixed white case/PCB/Grove/metalcarrier/blackcup. Only actual ballseat/shaft/thumbcap/smallZplunger move together under physical Button cap and XY pivot. Normal pointer only XY;Shift-held-at-down adds ownZsource. Last updatedXYsource wins;last removedXYsource returns center. Independent Z sources release/cancel separately and last springs back;cancel suppressesclick. ExternalXYset/center are visual only,noecho,preserve heldsource map.",
+    "Pivot[0,8,10.4]mm,eachvisualangle[-16,16]deg,Ztravel0.45mm and100mscentering are Viewer/appearance reconstruction,not rated hardware hardstops/travel/forces. Conservative projected9-pose shaft/throat and2depth receivingrod clearance checks bound this reconstruction only,not hardwarephysics/manufacturing proof.",
+    "Own02rear JOYSTICK,A1/A0 arrows,ButtonPressA2,M328/8MHz,LED D2,I2C ADDR0x52,PORT.A.I2C and4pinlabels accurately code-redrawn as1600×2800ordinaryPNG,zero photographic pixels. Typography/spacing/colors inferred;no unknownmicrotext,individualcodes or packaging. LED D2 is documentaryink;concealedD1 has no verified external lens,so no LED API/emission or glowingcap.",
+    "All model surfaces are actual retained solids,including hollow cup/bearing/Zreceiver walls,positive-metal carrier-to-cup ears,real rear hexdrive opening andphysicalstop,PCB clearance/support andphysicalrearfilm/unpaintedM5. artwork:false removes inkonly,retaining every physical attributes/index/worldrecord during partialXY+Z andcancelledspringreturn for eachactualpreset/twoentries.",
+    "Model defaults Space→press. DeviceViewer traverses only top-level Device keymaps;GroveModule on StickS3/HUB does not auto-register Space. Caller may sethost.keymap.Space=grove/grove-2/press,or useShiftpointer/externalbuttoncommand. No core/demo/hostkeymap changes.",
+    "Necessary synchronous Model and actual transformedStickS3→HUBbranch2 probes cover owngeometry/input,allactualpresets/twoentries,peer/framebuffer,noecho,detachreattach anddisposal only. No ADC/I2C/register,potentiometer/sensorvalues,games,firmware,LED,joint,sensoranchor,display,protocolorautomaticbehavior. CPU not browser/GPU/hardware/manufacturingacceptance;stage remains modeled."
+  ],
+  "privateAggregate": {
+    "sku": "U024",
+    "exactSkuRows": 0,
+    "strictNameOnlyRows": 0,
+    "originalDownloads": 0
+  },
+  "license": {
+    "newAuthoredCode": "MIT",
+    "importedNativeGeometry": false,
+    "officialReferences": "Reference only;raw photos/docs/schematic not distributed,no blanket MIT",
+    "ordinaryPng": "User-authorized exact-model ordinary raster redraw;product marks retain respective rights"
+  },
+  "assetPolicy": {
+    "pngCount": 1,
+    "privateSourcesDistributed": false,
+    "rawSourcesDistributed": false,
+    "vectorsGeneratorsDistributed": false
+  },
+  "publicAPI": {
+    "exports": [
+      "GroveModule",
+      "Model",
+      "configurationSchema",
+      "configurations",
+      "defaults",
+      "spec"
+    ],
+    "defaultExport": "Model",
+    "bodyComponentOrder": [
+      "grove",
+      "stick",
+      "press"
+    ],
+    "bodyComponentKinds": {
+      "grove": "port",
+      "stick": "joystick",
+      "press": "button"
+    },
+    "moduleComponentOrder": [
+      "grove",
+      "stick",
+      "press",
+      "unitFrame",
+      "cable"
+    ],
+    "moduleComponentKinds": {
+      "grove": "port",
+      "stick": "joystick",
+      "press": "button",
+      "unitFrame": "unit-frame",
+      "cable": "cable"
+    },
+    "keymap": {
+      "Space": "press"
+    },
+    "defaults": {
+      "xDeg": 0,
+      "yDeg": 0
+    },
+    "configurationSchema": {
+      "xDeg": {
+        "type": "number",
+        "min": -16,
+        "max": 16,
+        "default": 0
+      },
+      "yDeg": {
+        "type": "number",
+        "min": -16,
+        "max": 16,
+        "default": 0
+      },
+      "artwork": {
+        "type": "boolean",
+        "default": true,
+        "meaning": "Inkonly;actualfilm/M5/case/cup/cap/shaftretained"
+      }
+    },
+    "configurations": [
+      {
+        "id": "neutral",
+        "name": "原Joystick回中",
+        "options": {
+          "xDeg": 0,
+          "yDeg": 0
+        }
+      },
+      {
+        "id": "tilted",
+        "name": "原Joystick双轴倾斜",
+        "options": {
+          "xDeg": 10,
+          "yDeg": -8
+        }
+      }
+    ],
+    "assemblyProperty": "joystickAssembly",
+    "moduleAdditionalComponents": [
+      "unitFrame",
+      "cable"
+    ],
+    "canonicalCableInput": "grove",
+    "ports": [
+      "grove"
+    ],
+    "controls": [
+      "press"
+    ],
+    "joysticks": [
+      "stick"
+    ],
+    "manualInputs": [
+      "stick",
+      "press"
+    ],
+    "leds": [],
+    "displays": [],
+    "speakers": [],
+    "sensors": [],
+    "joints": [],
+    "anchors": [],
+    "passiveAnchors": [],
+    "aliases": [],
+    "accessoryExports": [],
+    "accessories": {},
+    "options": {
+      "xDeg": "number [-16,16]",
+      "yDeg": "number [-16,16]",
+      "artwork": "boolean"
+    },
+    "configurationCases": [
+      {
+        "options": {
+          "xDeg": 0,
+          "yDeg": 0
+        },
+        "kinds": [
+          "reference-redraw"
+        ],
+        "artworkKinds": [
+          "reference-redraw"
+        ],
+        "pngCount": 1
+      },
+      {
+        "options": {
+          "xDeg": 10,
+          "yDeg": -8
+        },
+        "kinds": [
+          "reference-redraw"
+        ],
+        "artworkKinds": [
+          "reference-redraw"
+        ],
+        "pngCount": 1
+      }
+    ],
+    "commands": {
+      "stick": {
+        "type": "joystick",
+        "kind": "joystick",
+        "actions": [
+          "set",
+          "center",
+          "move",
+          "release",
+          "cancel",
+          "state"
+        ],
+        "setFields": [
+          "xDeg",
+          "yDeg",
+          "durationMs"
+        ],
+        "moveFields": [
+          "source",
+          "xDeg",
+          "yDeg"
+        ],
+        "stateFields": [
+          "xDeg",
+          "yDeg",
+          "targetXDeg",
+          "targetYDeg",
+          "transitioning",
+          "activeSources",
+          "visualRangeDeg"
+        ],
+        "externalSetCenterNoEcho": true,
+        "externalSetCenterPreservesInputSources": true,
+        "sourcePolicy": "last updated XY source wins;release/cancel removes only that source;last source returns to center in100ms"
+      },
+      "press": {
+        "type": "button",
+        "kind": "button",
+        "actions": [
+          "press",
+          "release",
+          "cancel",
+          "click",
+          "state"
+        ],
+        "travelMm": 0.45,
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "sourcePolicy": "all held sources independent;last source springs back;cancel suppresses click"
+      },
+      "unitFrame": {
+        "type": "pose",
+        "fields": [
+          "position",
+          "rotation",
+          "quaternion",
+          "distance"
+        ]
+      },
+      "cable": {
+        "type": "cable",
+        "fields": [
+          "slack",
+          "bend"
+        ]
+      }
+    },
+    "inputEvents": {
+      "stick": [
+        "start",
+        "change",
+        "end"
+      ],
+      "press": [
+        "down",
+        "up",
+        "click",
+        "longpress"
+      ],
+      "ports": [
+        "attach",
+        "detach"
+      ]
+    },
+    "pointerGestures": {
+      "normalLeftDrag": "XY only",
+      "shiftLeftDrag": "XY plus independent Z pointer source",
+      "releaseCancel": "withdraw own sources only"
+    },
+    "keyboard": {
+      "Model": {
+        "Space": "press"
+      },
+      "GroveModuleOnHost": "caller must explicitly map host.keymap.Space to grove/grove-2/press;not auto-registered"
+    },
+    "physicalMovingMeshes": 4,
+    "fixedParts": [
+      "white-case",
+      "PCB",
+      "red-Grove",
+      "metal-carrier",
+      "black-cup"
+    ],
+    "artworkPngCount": 1,
+    "artworkSourceKind": "reference-redraw",
+    "physicalAdhesiveFilms": 1,
+    "allArtworkPhysicalAttributesIndexWorldInvariant": true,
+    "noAccessoriesOrRemovableCovers": true
+  }
+}

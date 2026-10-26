@@ -1,0 +1,1609 @@
+{
+  "savedAt": "2026-10-26T20:47:39.189176+00:00",
+  "stage": "modeled",
+  "scope": "Own exact-SKU UnitV2-USB/UnitV-M12/TimerCamera-F complete native shell parts,real controls/connectors/optical or cooling structures and actual static mounting accessories, corresponding print and real three-branch four-core API fixture/builds; no browser or whole-catalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 158,
+    "modeled": 172,
+    "verified": 0
+  },
+  "localHead": "4fd5216dd2b310b6c92b366cb4c795f08dd15ff6",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "unitv2-usb",
+      "status": "pass",
+      "report": "docs/research/unitv2-usb/smoke.json",
+      "meshes": 203,
+      "triangles": 20126
+    },
+    {
+      "id": "unitv-m12",
+      "status": "pass",
+      "report": "docs/research/unitv-m12/smoke.json",
+      "meshes": null,
+      "triangles": null
+    },
+    {
+      "id": "timercamera-f",
+      "status": "pass",
+      "report": "docs/research/timercamera-f/smoke.json",
+      "meshes": null,
+      "triangles": 148984
+    }
+  ],
+  "pngCount": 4,
+  "rasters": [
+    {
+      "path": "src/units/unitv2-usb/artwork/rear.png",
+      "pixels": [
+        2412,
+        3144
+      ],
+      "sha256": "1de3d56f49580a61e0e0a1895440cd54ceea158e74d4e2e2cebff01020a5a1b7"
+    },
+    {
+      "path": "src/units/unitv-m12/artwork/front.png",
+      "pixels": [
+        1000,
+        600
+      ],
+      "sha256": "da12d3517e9846120aa720f6dd83d46975200419afbfbde6f487a327a04c0d4f"
+    },
+    {
+      "path": "src/units/unitv-m12/artwork/rear.png",
+      "pixels": [
+        1600,
+        2050
+      ],
+      "sha256": "c8addf92d886eff80f685de5d13c73008b22b3ca5e02ef319d1112024353c3d4"
+    },
+    {
+      "path": "src/units/timercamera-f/artwork/back.png",
+      "pixels": [
+        2280,
+        4044
+      ],
+      "sha256": "8518631db80ed3a9f4474f15ae5cc7ffd7058ecaf14062687b0d826abd88e12e"
+    }
+  ],
+  "frozenPublicAPI": {
+    "unitv2-usb": {
+      "exports": [
+        "Model",
+        "GroveModule",
+        "Clip",
+        "spec"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [
+        "user"
+      ],
+      "leds": [],
+      "displays": [],
+      "ports": [
+        "grove",
+        "usb-a",
+        "usb",
+        "sd",
+        "mount"
+      ],
+      "joints": [],
+      "anchors": [],
+      "accessoryExports": [
+        "Clip"
+      ],
+      "defaults": {
+        "clip": false
+      },
+      "configurations": [
+        {
+          "id": "bare",
+          "name": "本体 · 不装背夹",
+          "options": {
+            "clip": false
+          }
+        },
+        {
+          "id": "with-clip",
+          "name": "本体 · 原生静态背夹",
+          "options": {
+            "clip": true
+          }
+        }
+      ],
+      "pngCount": 1
+    },
+    "unitv-m12": {
+      "exports": [
+        "Model",
+        "GroveModule",
+        "spec",
+        "configurations",
+        "defaults",
+        "configurationSchema"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [
+        "buttonA",
+        "buttonB"
+      ],
+      "leds": [],
+      "displays": [],
+      "ports": [
+        "grove",
+        "usb",
+        "sd"
+      ],
+      "joints": [],
+      "anchors": [
+        "camera"
+      ],
+      "accessoryExports": [],
+      "defaults": {},
+      "configurations": [
+        {
+          "id": "assembled",
+          "name": "完整 M12 光学装配",
+          "options": {}
+        }
+      ],
+      "pngCount": 2
+    },
+    "timercamera-f": {
+      "exports": [
+        "Model",
+        "GroveModule",
+        "spec",
+        "Clip",
+        "Wall1515"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [
+        "power",
+        "reset"
+      ],
+      "leds": [
+        "status"
+      ],
+      "displays": [],
+      "ports": [
+        "grove",
+        "usb",
+        "mount"
+      ],
+      "joints": [],
+      "anchors": [
+        "camera"
+      ],
+      "accessoryExports": [
+        "Clip",
+        "Wall1515"
+      ],
+      "defaults": {
+        "mount": "none"
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "Complete TimerCamera-F",
+          "options": {
+            "mount": "none"
+          }
+        },
+        {
+          "id": "clip",
+          "name": "TimerCamera-F with supplied retaining clip",
+          "options": {
+            "mount": "clip"
+          }
+        },
+        {
+          "id": "wall1515",
+          "name": "TimerCamera-F with Wall1515 adapter",
+          "options": {
+            "mount": "wall1515"
+          }
+        }
+      ],
+      "pngCount": 1
+    }
+  },
+  "fixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "unitv2-usb",
+        "body": [
+          "grove",
+          "usb-a",
+          "usb",
+          "sd",
+          "user",
+          "mount"
+        ],
+        "ports": [
+          "grove",
+          "usb-a",
+          "usb",
+          "sd",
+          "mount"
+        ],
+        "controls": [
+          "user"
+        ],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "nativeShellTriangles": 4962,
+          "nativeClipTriangles": 3316,
+          "fixedUsbHood": true,
+          "actualHy2Contacts": 4,
+          "actualUsbAContacts": 4,
+          "usbCContactAppearance": 24,
+          "microSdContacts": 8,
+          "deepReceivingCavities": 4,
+          "pcbSupportRays": 2,
+          "clipEmptyAxisRays": 5,
+          "clipBoreWallRays": 5,
+          "fanRotorEvidence": "not-established;fixed grille/cooling carrier",
+          "externalLeds": 0,
+          "noBuiltInCamera": true
+        },
+        "transformedStructure": {
+          "nativeShellTriangles": 4962,
+          "nativeClipTriangles": 3316,
+          "fixedUsbHood": true,
+          "actualHy2Contacts": 4,
+          "actualUsbAContacts": 4,
+          "usbCContactAppearance": 24,
+          "microSdContacts": 8,
+          "deepReceivingCavities": 4,
+          "pcbSupportRays": 2,
+          "clipEmptyAxisRays": 5,
+          "clipBoreWallRays": 5,
+          "fanRotorEvidence": "not-established;fixed grille/cooling carrier",
+          "externalLeds": 0,
+          "noBuiltInCamera": true
+        }
+      },
+      {
+        "id": "unitv-m12",
+        "body": [
+          "grove",
+          "usb",
+          "sd",
+          "buttonA",
+          "buttonB",
+          "camera"
+        ],
+        "ports": [
+          "grove",
+          "usb",
+          "sd"
+        ],
+        "controls": [
+          "buttonA",
+          "buttonB"
+        ],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "physicalMeshes": 152,
+          "nativeFaces": 4510,
+          "nativeParts": [
+            2850,
+            1660
+          ],
+          "shellEnvelopeMm": [
+            24.000003814697266,
+            40,
+            12.699999809265137
+          ],
+          "physicalEnvelopeMm": [
+            24.000003814697266,
+            40.00000001192093,
+            16.44000019028783
+          ],
+          "trueMountingBores": 2,
+          "actualOptics": true,
+          "cameraSupports": 4,
+          "contacts": {
+            "grove": 4,
+            "usb": 24,
+            "sd": 9
+          },
+          "nativeSideCaps": 2,
+          "rearFilms": 1,
+          "cncFrontFilms": 0,
+          "passiveCamera": true,
+          "localToleranceMm": 1e-05
+        },
+        "transformedStructure": {
+          "physicalMeshes": 152,
+          "nativeFaces": 4510,
+          "nativeParts": [
+            2850,
+            1660
+          ],
+          "shellEnvelopeMm": [
+            24.000003814697266,
+            40.00000000000001,
+            12.699999809265137
+          ],
+          "physicalEnvelopeMm": [
+            24.000003814697266,
+            40.000000011920946,
+            16.440000190287826
+          ],
+          "trueMountingBores": 2,
+          "actualOptics": true,
+          "cameraSupports": 4,
+          "contacts": {
+            "grove": 4,
+            "usb": 24,
+            "sd": 9
+          },
+          "nativeSideCaps": 2,
+          "rearFilms": 1,
+          "cncFrontFilms": 0,
+          "passiveCamera": true,
+          "localToleranceMm": 1e-05
+        }
+      },
+      {
+        "id": "timercamera-f",
+        "body": [
+          "grove",
+          "usb",
+          "power",
+          "reset",
+          "status",
+          "camera",
+          "mount"
+        ],
+        "ports": [
+          "grove",
+          "usb",
+          "mount"
+        ],
+        "controls": [
+          "power",
+          "reset"
+        ],
+        "leds": [
+          "status"
+        ],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "physicalMeshes": 379,
+          "nativeBodyFaces": 9496,
+          "nativeParts": [
+            7912,
+            1584
+          ],
+          "shellEnvelopeMm": [
+            24,
+            48,
+            22.39441967010498
+          ],
+          "physicalEnvelopeMm": [
+            24.000000011920932,
+            48,
+            23.30000001192093
+          ],
+          "continuousMouthClosures": 24,
+          "overlapMm": 0.2,
+          "actualOptics": true,
+          "contacts": {
+            "grove": 4,
+            "usb": 24
+          },
+          "pcbBores": 4,
+          "actualFixings": 2,
+          "physicalFilms": 1,
+          "filmTouchesNativeRecess": true,
+          "actualControlOpenings": true,
+          "passiveCamera": true,
+          "configuredAccessory": {
+            "kind": "adapter",
+            "nativeFaces": 1966,
+            "static": true
+          },
+          "localToleranceMm": 1e-05
+        },
+        "transformedStructure": {
+          "physicalMeshes": 379,
+          "nativeBodyFaces": 9496,
+          "nativeParts": [
+            7912,
+            1584
+          ],
+          "shellEnvelopeMm": [
+            24,
+            48.000000000000014,
+            22.394419670104977
+          ],
+          "physicalEnvelopeMm": [
+            24.00000001192089,
+            48.000000000000014,
+            23.30000001192093
+          ],
+          "continuousMouthClosures": 24,
+          "overlapMm": 0.2,
+          "actualOptics": true,
+          "contacts": {
+            "grove": 4,
+            "usb": 24
+          },
+          "pcbBores": 4,
+          "actualFixings": 2,
+          "physicalFilms": 1,
+          "filmTouchesNativeRecess": true,
+          "actualControlOpenings": true,
+          "passiveCamera": true,
+          "configuredAccessory": {
+            "kind": "adapter",
+            "nativeFaces": 1966,
+            "static": true
+          },
+          "localToleranceMm": 1e-05
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "unitv2-usb",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "user"
+        ],
+        "physicalStructure": {
+          "nativeShellTriangles": 4962,
+          "nativeClipTriangles": 0,
+          "fixedUsbHood": true,
+          "actualHy2Contacts": 4,
+          "actualUsbAContacts": 4,
+          "usbCContactAppearance": 24,
+          "microSdContacts": 8,
+          "deepReceivingCavities": 4,
+          "pcbSupportRays": 2,
+          "clipEmptyAxisRays": 0,
+          "clipBoreWallRays": 0,
+          "fanRotorEvidence": "not-established;fixed grille/cooling carrier",
+          "externalLeds": 0,
+          "noBuiltInCamera": true
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "unitv-m12",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "buttonA",
+          "buttonB"
+        ],
+        "physicalStructure": {
+          "physicalMeshes": 152,
+          "nativeFaces": 4510,
+          "nativeParts": [
+            2850,
+            1660
+          ],
+          "shellEnvelopeMm": [
+            24.000003814697266,
+            40,
+            12.699999809265137
+          ],
+          "physicalEnvelopeMm": [
+            24.000003814697266,
+            40.00000001192093,
+            16.44000019028783
+          ],
+          "trueMountingBores": 2,
+          "actualOptics": true,
+          "cameraSupports": 4,
+          "contacts": {
+            "grove": 4,
+            "usb": 24,
+            "sd": 9
+          },
+          "nativeSideCaps": 2,
+          "rearFilms": 1,
+          "cncFrontFilms": 0,
+          "passiveCamera": true,
+          "localToleranceMm": 1e-05
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "timercamera-f",
+        "panels": 1,
+        "kinds": [
+          "source-vector-raster"
+        ],
+        "actualPartialMotionIds": [
+          "power",
+          "reset"
+        ],
+        "physicalStructure": {
+          "physicalMeshes": 379,
+          "nativeBodyFaces": 9496,
+          "nativeParts": [
+            7912,
+            1584
+          ],
+          "shellEnvelopeMm": [
+            24,
+            48,
+            22.39441967010498
+          ],
+          "physicalEnvelopeMm": [
+            24.00000001192093,
+            48,
+            23.30000001192093
+          ],
+          "continuousMouthClosures": 24,
+          "overlapMm": 0.2,
+          "actualOptics": true,
+          "contacts": {
+            "grove": 4,
+            "usb": 24
+          },
+          "pcbBores": 4,
+          "actualFixings": 2,
+          "physicalFilms": 1,
+          "filmTouchesNativeRecess": true,
+          "actualControlOpenings": true,
+          "passiveCamera": true,
+          "configuredAccessory": null,
+          "localToleranceMm": 1e-05
+        },
+        "staticMounting": []
+      }
+    ],
+    "configurations": [
+      {
+        "id": "unitv2-usb",
+        "optionCases": 3,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual partial native/cap motion"
+      },
+      {
+        "id": "unitv-m12",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual partial native/cap motion"
+      },
+      {
+        "id": "timercamera-f",
+        "optionCases": 4,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual partial native/cap motion"
+      }
+    ],
+    "controls": [
+      {
+        "id": "user",
+        "visualMotion": "native-flexure",
+        "deformedNativeVertices": 165,
+        "travelMm": 0.25,
+        "completeNativeTriangles": 2550,
+        "allFixedMaterial": "identical",
+        "multiSourceCancel": "last cancel suppresses click",
+        "restPositionsNormalsRoundtrip": "exact"
+      },
+      {
+        "id": "unitv-m12",
+        "nativeFaces": 4510,
+        "controls": [
+          {
+            "id": "buttonA",
+            "nativeVertices": 172,
+            "multiSource": true,
+            "cancelNoClick": true,
+            "neutralPositionsNormalsExact": true
+          },
+          {
+            "id": "buttonB",
+            "nativeVertices": 171,
+            "multiSource": true,
+            "cancelNoClick": true,
+            "neutralPositionsNormalsExact": true
+          }
+        ],
+        "disjointNativeVertices": 343,
+        "simultaneousReleaseCancelIndependent": true,
+        "fixedPackagesPortsAndOptics": true,
+        "peerIndependent": true,
+        "passiveCameraNoEcho": true,
+        "neutralPositionsNormalsAndIndicesExact": true
+      },
+      {
+        "id": "timercamera-f",
+        "individual": [
+          {
+            "id": "power",
+            "travelMm": 0.18,
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "actualMovingMeshes": 1,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "reset",
+            "travelMm": 0.14,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          }
+        ],
+        "simultaneous": {
+          "controls": 2,
+          "allHeldAndOneCancelled": "independent peers",
+          "completeNeutralPhysicalRestored": true
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "id": "timercamera-f",
+        "count": 1,
+        "fixedColor": "#168aff",
+        "fields": [
+          "on",
+          "brightness"
+        ],
+        "actualUpperSlotLightPath": true,
+        "externalNoEcho": true,
+        "realEmitterMaterial": true,
+        "noAutomaticFirmwareLogic": true,
+        "peerPhysicalAndPortsUnchanged": true,
+        "neutralRestored": true
+      }
+    ],
+    "accessories": [
+      {
+        "id": "unitv2-usb",
+        "mounting": [
+          {
+            "port": "mount",
+            "connector": "m5.unitv2-usb.clip",
+            "accessory": "Clip",
+            "ownPorts": [],
+            "staticDetachReattach": "pass"
+          }
+        ]
+      },
+      {
+        "id": "unitv-m12",
+        "mounting": []
+      },
+      {
+        "id": "timercamera-f",
+        "mounting": [
+          {
+            "port": "mount",
+            "connector": "m5.timercamera.u082f.rear-mount",
+            "accessory": "Wall1515",
+            "ownPorts": [],
+            "staticDetachReattach": "pass"
+          }
+        ]
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "unitv2-usb",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "unitv-m12",
+        "passiveAnchors": [
+          "camera"
+        ],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "timercamera-f",
+        "passiveAnchors": [
+          "camera"
+        ],
+        "noFirmwareOrProtocolBehavior": true
+      }
+    ],
+    "disposedResources": 1362,
+    "cases": [
+      "three-real-four-core-branches",
+      "own-native-closed-halves-no-cropped-faces-or-stretched-replicas",
+      "own-real-native-flexure-side-buttons-fixed-switches",
+      "own-USB-A-hood-no-invented-camera",
+      "own-M12-optics-and-TimerF-fisheye-carriers",
+      "actual-static-mounting-accessories-detach-reattach",
+      "both-entries-actual-presets-and-partial-motion-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-cancel-peer-isolation",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own three physical assemblies,matching print and actual external controls/outputs;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/sensorvalues/USB-UART-AI-camera-RTC-firmware/electrical/whole-history acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "unitv2-usb",
+        "body": [
+          "grove",
+          "usb-a",
+          "usb",
+          "sd",
+          "user",
+          "mount"
+        ],
+        "ports": [
+          "grove",
+          "usb-a",
+          "usb",
+          "sd",
+          "mount"
+        ],
+        "controls": [
+          "user"
+        ],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "nativeShellTriangles": 4962,
+          "nativeClipTriangles": 3316,
+          "fixedUsbHood": true,
+          "actualHy2Contacts": 4,
+          "actualUsbAContacts": 4,
+          "usbCContactAppearance": 24,
+          "microSdContacts": 8,
+          "deepReceivingCavities": 4,
+          "pcbSupportRays": 2,
+          "clipEmptyAxisRays": 5,
+          "clipBoreWallRays": 5,
+          "fanRotorEvidence": "not-established;fixed grille/cooling carrier",
+          "externalLeds": 0,
+          "noBuiltInCamera": true
+        },
+        "transformedStructure": {
+          "nativeShellTriangles": 4962,
+          "nativeClipTriangles": 3316,
+          "fixedUsbHood": true,
+          "actualHy2Contacts": 4,
+          "actualUsbAContacts": 4,
+          "usbCContactAppearance": 24,
+          "microSdContacts": 8,
+          "deepReceivingCavities": 4,
+          "pcbSupportRays": 2,
+          "clipEmptyAxisRays": 5,
+          "clipBoreWallRays": 5,
+          "fanRotorEvidence": "not-established;fixed grille/cooling carrier",
+          "externalLeds": 0,
+          "noBuiltInCamera": true
+        }
+      },
+      {
+        "id": "unitv-m12",
+        "body": [
+          "grove",
+          "usb",
+          "sd",
+          "buttonA",
+          "buttonB",
+          "camera"
+        ],
+        "ports": [
+          "grove",
+          "usb",
+          "sd"
+        ],
+        "controls": [
+          "buttonA",
+          "buttonB"
+        ],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "physicalMeshes": 152,
+          "nativeFaces": 4510,
+          "nativeParts": [
+            2850,
+            1660
+          ],
+          "shellEnvelopeMm": [
+            24.000003814697266,
+            40,
+            12.699999809265137
+          ],
+          "physicalEnvelopeMm": [
+            24.000003814697266,
+            40.00000001192093,
+            16.44000019028783
+          ],
+          "trueMountingBores": 2,
+          "actualOptics": true,
+          "cameraSupports": 4,
+          "contacts": {
+            "grove": 4,
+            "usb": 24,
+            "sd": 9
+          },
+          "nativeSideCaps": 2,
+          "rearFilms": 1,
+          "cncFrontFilms": 0,
+          "passiveCamera": true,
+          "localToleranceMm": 1e-05
+        },
+        "transformedStructure": {
+          "physicalMeshes": 152,
+          "nativeFaces": 4510,
+          "nativeParts": [
+            2850,
+            1660
+          ],
+          "shellEnvelopeMm": [
+            24.000003814697266,
+            40.00000000000001,
+            12.699999809265137
+          ],
+          "physicalEnvelopeMm": [
+            24.000003814697266,
+            40.000000011920946,
+            16.440000190287826
+          ],
+          "trueMountingBores": 2,
+          "actualOptics": true,
+          "cameraSupports": 4,
+          "contacts": {
+            "grove": 4,
+            "usb": 24,
+            "sd": 9
+          },
+          "nativeSideCaps": 2,
+          "rearFilms": 1,
+          "cncFrontFilms": 0,
+          "passiveCamera": true,
+          "localToleranceMm": 1e-05
+        }
+      },
+      {
+        "id": "timercamera-f",
+        "body": [
+          "grove",
+          "usb",
+          "power",
+          "reset",
+          "status",
+          "camera",
+          "mount"
+        ],
+        "ports": [
+          "grove",
+          "usb",
+          "mount"
+        ],
+        "controls": [
+          "power",
+          "reset"
+        ],
+        "leds": [
+          "status"
+        ],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "physicalMeshes": 379,
+          "nativeBodyFaces": 9496,
+          "nativeParts": [
+            7912,
+            1584
+          ],
+          "shellEnvelopeMm": [
+            24,
+            48,
+            22.39441967010498
+          ],
+          "physicalEnvelopeMm": [
+            24.000000011920932,
+            48,
+            23.30000001192093
+          ],
+          "continuousMouthClosures": 24,
+          "overlapMm": 0.2,
+          "actualOptics": true,
+          "contacts": {
+            "grove": 4,
+            "usb": 24
+          },
+          "pcbBores": 4,
+          "actualFixings": 2,
+          "physicalFilms": 1,
+          "filmTouchesNativeRecess": true,
+          "actualControlOpenings": true,
+          "passiveCamera": true,
+          "configuredAccessory": {
+            "kind": "adapter",
+            "nativeFaces": 1966,
+            "static": true
+          },
+          "localToleranceMm": 1e-05
+        },
+        "transformedStructure": {
+          "physicalMeshes": 379,
+          "nativeBodyFaces": 9496,
+          "nativeParts": [
+            7912,
+            1584
+          ],
+          "shellEnvelopeMm": [
+            24,
+            48.000000000000014,
+            22.394419670104977
+          ],
+          "physicalEnvelopeMm": [
+            24.00000001192089,
+            48.000000000000014,
+            23.30000001192093
+          ],
+          "continuousMouthClosures": 24,
+          "overlapMm": 0.2,
+          "actualOptics": true,
+          "contacts": {
+            "grove": 4,
+            "usb": 24
+          },
+          "pcbBores": 4,
+          "actualFixings": 2,
+          "physicalFilms": 1,
+          "filmTouchesNativeRecess": true,
+          "actualControlOpenings": true,
+          "passiveCamera": true,
+          "configuredAccessory": {
+            "kind": "adapter",
+            "nativeFaces": 1966,
+            "static": true
+          },
+          "localToleranceMm": 1e-05
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "unitv2-usb",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "user"
+        ],
+        "physicalStructure": {
+          "nativeShellTriangles": 4962,
+          "nativeClipTriangles": 0,
+          "fixedUsbHood": true,
+          "actualHy2Contacts": 4,
+          "actualUsbAContacts": 4,
+          "usbCContactAppearance": 24,
+          "microSdContacts": 8,
+          "deepReceivingCavities": 4,
+          "pcbSupportRays": 2,
+          "clipEmptyAxisRays": 0,
+          "clipBoreWallRays": 0,
+          "fanRotorEvidence": "not-established;fixed grille/cooling carrier",
+          "externalLeds": 0,
+          "noBuiltInCamera": true
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "unitv-m12",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "buttonA",
+          "buttonB"
+        ],
+        "physicalStructure": {
+          "physicalMeshes": 152,
+          "nativeFaces": 4510,
+          "nativeParts": [
+            2850,
+            1660
+          ],
+          "shellEnvelopeMm": [
+            24.000003814697266,
+            40,
+            12.699999809265137
+          ],
+          "physicalEnvelopeMm": [
+            24.000003814697266,
+            40.00000001192093,
+            16.44000019028783
+          ],
+          "trueMountingBores": 2,
+          "actualOptics": true,
+          "cameraSupports": 4,
+          "contacts": {
+            "grove": 4,
+            "usb": 24,
+            "sd": 9
+          },
+          "nativeSideCaps": 2,
+          "rearFilms": 1,
+          "cncFrontFilms": 0,
+          "passiveCamera": true,
+          "localToleranceMm": 1e-05
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "timercamera-f",
+        "panels": 1,
+        "kinds": [
+          "source-vector-raster"
+        ],
+        "actualPartialMotionIds": [
+          "power",
+          "reset"
+        ],
+        "physicalStructure": {
+          "physicalMeshes": 379,
+          "nativeBodyFaces": 9496,
+          "nativeParts": [
+            7912,
+            1584
+          ],
+          "shellEnvelopeMm": [
+            24,
+            48,
+            22.39441967010498
+          ],
+          "physicalEnvelopeMm": [
+            24.00000001192093,
+            48,
+            23.30000001192093
+          ],
+          "continuousMouthClosures": 24,
+          "overlapMm": 0.2,
+          "actualOptics": true,
+          "contacts": {
+            "grove": 4,
+            "usb": 24
+          },
+          "pcbBores": 4,
+          "actualFixings": 2,
+          "physicalFilms": 1,
+          "filmTouchesNativeRecess": true,
+          "actualControlOpenings": true,
+          "passiveCamera": true,
+          "configuredAccessory": null,
+          "localToleranceMm": 1e-05
+        },
+        "staticMounting": []
+      }
+    ],
+    "configurations": [
+      {
+        "id": "unitv2-usb",
+        "optionCases": 3,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual partial native/cap motion"
+      },
+      {
+        "id": "unitv-m12",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual partial native/cap motion"
+      },
+      {
+        "id": "timercamera-f",
+        "optionCases": 4,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual partial native/cap motion"
+      }
+    ],
+    "controls": [
+      {
+        "id": "user",
+        "visualMotion": "native-flexure",
+        "deformedNativeVertices": 165,
+        "travelMm": 0.25,
+        "completeNativeTriangles": 2550,
+        "allFixedMaterial": "identical",
+        "multiSourceCancel": "last cancel suppresses click",
+        "restPositionsNormalsRoundtrip": "exact"
+      },
+      {
+        "id": "unitv-m12",
+        "nativeFaces": 4510,
+        "controls": [
+          {
+            "id": "buttonA",
+            "nativeVertices": 172,
+            "multiSource": true,
+            "cancelNoClick": true,
+            "neutralPositionsNormalsExact": true
+          },
+          {
+            "id": "buttonB",
+            "nativeVertices": 171,
+            "multiSource": true,
+            "cancelNoClick": true,
+            "neutralPositionsNormalsExact": true
+          }
+        ],
+        "disjointNativeVertices": 343,
+        "simultaneousReleaseCancelIndependent": true,
+        "fixedPackagesPortsAndOptics": true,
+        "peerIndependent": true,
+        "passiveCameraNoEcho": true,
+        "neutralPositionsNormalsAndIndicesExact": true
+      },
+      {
+        "id": "timercamera-f",
+        "individual": [
+          {
+            "id": "power",
+            "travelMm": 0.18,
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "actualMovingMeshes": 1,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "reset",
+            "travelMm": 0.14,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          }
+        ],
+        "simultaneous": {
+          "controls": 2,
+          "allHeldAndOneCancelled": "independent peers",
+          "completeNeutralPhysicalRestored": true
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "id": "timercamera-f",
+        "count": 1,
+        "fixedColor": "#168aff",
+        "fields": [
+          "on",
+          "brightness"
+        ],
+        "actualUpperSlotLightPath": true,
+        "externalNoEcho": true,
+        "realEmitterMaterial": true,
+        "noAutomaticFirmwareLogic": true,
+        "peerPhysicalAndPortsUnchanged": true,
+        "neutralRestored": true
+      }
+    ],
+    "accessories": [
+      {
+        "id": "unitv2-usb",
+        "mounting": [
+          {
+            "port": "mount",
+            "connector": "m5.unitv2-usb.clip",
+            "accessory": "Clip",
+            "ownPorts": [],
+            "staticDetachReattach": "pass"
+          }
+        ]
+      },
+      {
+        "id": "unitv-m12",
+        "mounting": []
+      },
+      {
+        "id": "timercamera-f",
+        "mounting": [
+          {
+            "port": "mount",
+            "connector": "m5.timercamera.u082f.rear-mount",
+            "accessory": "Wall1515",
+            "ownPorts": [],
+            "staticDetachReattach": "pass"
+          }
+        ]
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "unitv2-usb",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "unitv-m12",
+        "passiveAnchors": [
+          "camera"
+        ],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "timercamera-f",
+        "passiveAnchors": [
+          "camera"
+        ],
+        "noFirmwareOrProtocolBehavior": true
+      }
+    ],
+    "disposedResources": 1362,
+    "cases": [
+      "three-real-four-core-branches",
+      "own-native-closed-halves-no-cropped-faces-or-stretched-replicas",
+      "own-real-native-flexure-side-buttons-fixed-switches",
+      "own-USB-A-hood-no-invented-camera",
+      "own-M12-optics-and-TimerF-fisheye-carriers",
+      "actual-static-mounting-accessories-detach-reattach",
+      "both-entries-actual-presets-and-partial-motion-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-cancel-peer-isolation",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own three physical assemblies,matching print and actual external controls/outputs;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/sensorvalues/USB-UART-AI-camera-RTC-firmware/electrical/whole-history acceptance"
+  },
+  "checks": {
+    "localProductSmoke": "all current batch products pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "unitv2-usb",
+        "status": "frozen",
+        "checkedFiles": 14
+      },
+      {
+        "id": "unitv-m12",
+        "status": "frozen",
+        "checkedFiles": 14
+      },
+      {
+        "id": "timercamera-f",
+        "status": "frozen",
+        "checkedFiles": 15
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "All physical attributes/index/world matrices preserved across actual entries/configurations",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "5a07b4ead0acdf31496942af31b2d22985767863310b75c0eed6785c5ec6ffa0",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "94c1bf644444cd50ee864122a133c88b38f9d18b40b436e58781f0c7e3e593e5",
+      "logDistributed": false
+    },
+    "exportCount": 9,
+    "catalogConfigurations": {
+      "status": "pass",
+      "products": [
+        {
+          "id": "unitv2-usb",
+          "presets": [
+            {
+              "id": "bare",
+              "name": "本体 · 不装背夹",
+              "options": {
+                "clip": false
+              }
+            },
+            {
+              "id": "with-clip",
+              "name": "本体 · 原生静态背夹",
+              "options": {
+                "clip": true
+              }
+            }
+          ],
+          "defaults": {
+            "clip": false
+          }
+        },
+        {
+          "id": "unitv-m12",
+          "presets": [
+            {
+              "id": "assembled",
+              "name": "完整 M12 光学装配",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        },
+        {
+          "id": "timercamera-f",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "Complete TimerCamera-F",
+              "options": {
+                "mount": "none"
+              }
+            },
+            {
+              "id": "clip",
+              "name": "TimerCamera-F with supplied retaining clip",
+              "options": {
+                "mount": "clip"
+              }
+            },
+            {
+              "id": "wall1515",
+              "name": "TimerCamera-F with Wall1515 adapter",
+              "options": {
+                "mount": "wall1515"
+              }
+            }
+          ],
+          "defaults": {
+            "mount": "none"
+          }
+        }
+      ],
+      "scope": "Batch 43: current frozen named presets, constructor defaults and existing demo contract"
+    },
+    "livePreview": "172-product catalog, 3 own runtime chunks and all corresponding source PNG bytes verified in live dist (ordinary or inlined assets)",
+    "newSourcePrivacy": "New JS/JSON/Markdown/PNG and all current added catalog/manifest records checked; private table/URLs/vectors/original names/mappings/raw material/intermediates excluded",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "Only new products/catalog entries/exports/guide/plan; protected old private/public bytes retained",
+    "existingPublicUnitFilesUnchanged": 1295,
+    "existingPrivateUnitFilesUnchanged": 1256,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "publicSharedProtectedFilesUnchanged": 2,
+    "privateSharedProtectedFilesUnchanged": 2,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [
+    {
+      "product": "unitv2-usb",
+      "record": "docs/research/unitv2-usb/sources.json",
+      "feedback_id": "78028847fe344233a2696298994d71a0",
+      "accepted": true
+    }
+  ],
+  "previewAssets": [
+    {
+      "id": "unitv2-usb",
+      "file": "assets/unitv2-usb-C8L6YDgV.js",
+      "sha256": "4bcefd471fc1d9d613a4db225ca0d1bc69415054f32cb6713568aced70dedc83"
+    },
+    {
+      "id": "unitv-m12",
+      "file": "assets/unitv-m12-BMG248zO.js",
+      "sha256": "6fccec9c681b9e680c03ad5b4569c749abe82beaf67318cc4c001edec533988c"
+    },
+    {
+      "id": "timercamera-f",
+      "file": "assets/timercamera-f-CV6B0CGH.js",
+      "sha256": "9a7d10713f25c44b661b8ab0c1ccecda654fec7cbb4516dd18148297f1a05f47"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/unitv2-usb/NativeButton.js",
+      "sha256": "220e43a0502d20c4a1b280bb44dbf4b9a51b6052c8334b66961e0b2beddfa46d"
+    },
+    {
+      "path": "src/units/unitv2-usb/accessories.js",
+      "sha256": "13485725668f89fb89babeb080cc09f20e6d3723f94ed8497ba2fe2bd1336220"
+    },
+    {
+      "path": "src/units/unitv2-usb/artwork/rear.png",
+      "sha256": "1de3d56f49580a61e0e0a1895440cd54ceea158e74d4e2e2cebff01020a5a1b7"
+    },
+    {
+      "path": "src/units/unitv2-usb/assembly.js",
+      "sha256": "8cf355b2655fd612ec8e80c709891f5dfd39d5f3eab8b7ede9dca41b33e118d5"
+    },
+    {
+      "path": "src/units/unitv2-usb/cad-map.json",
+      "sha256": "e7816885e084fcef5336363c31a43c84b3c84e4cf2bd34a8e2a523b015fbeda8"
+    },
+    {
+      "path": "src/units/unitv2-usb/connectors.js",
+      "sha256": "86ef2fadaa4609be3076efc31edae3469beb530e59bb4c4835c06121713f2866"
+    },
+    {
+      "path": "src/units/unitv2-usb/dimensions.js",
+      "sha256": "c401db85a0a0867f2656b00e828d94222b4b510680013155418942657efd213e"
+    },
+    {
+      "path": "src/units/unitv2-usb/geometry-data.js",
+      "sha256": "7c1587d032b0bd19700668ffc4997834b7f77705c837dbbb094afedd05896088"
+    },
+    {
+      "path": "src/units/unitv2-usb/geometry.js",
+      "sha256": "af08f51dd83610ccfe12559517fa7008cf74f20af157c65c3dfed78a4a38236e"
+    },
+    {
+      "path": "src/units/unitv2-usb/index.js",
+      "sha256": "ffd51247abecfac4ace95c0783569efb6bd4fbc359e1afe9fb8b8c6ef9d26322"
+    },
+    {
+      "path": "docs/research/unitv2-usb/artwork.json",
+      "sha256": "b0f453c6daecf72b00128112147093d9105c71309b836403aab026ee07d88e1c"
+    },
+    {
+      "path": "docs/research/unitv2-usb/modeling.md",
+      "sha256": "42fbbdb732213913c1a10e5f1a3ae5cecf5431374faba801b424391c3b970997"
+    },
+    {
+      "path": "docs/research/unitv2-usb/smoke.json",
+      "sha256": "3f415d5435a5879bd922b211b7e06efe662f934fce3568caec049b91a19f032c"
+    },
+    {
+      "path": "docs/research/unitv2-usb/sources.json",
+      "sha256": "f0ca5dcacf421aedda7da98ee5f188985392223aef278a3ef74e8ba3a905b2f3"
+    },
+    {
+      "path": "src/units/unitv-m12/NativeSideCap.js",
+      "sha256": "25fd014081740a5ba57dd5a7940245d828d68365dd985982175a66b6d9da5d2d"
+    },
+    {
+      "path": "src/units/unitv-m12/artwork/front.png",
+      "sha256": "da12d3517e9846120aa720f6dd83d46975200419afbfbde6f487a327a04c0d4f"
+    },
+    {
+      "path": "src/units/unitv-m12/artwork/rear.png",
+      "sha256": "c8addf92d886eff80f685de5d13c73008b22b3ca5e02ef319d1112024353c3d4"
+    },
+    {
+      "path": "src/units/unitv-m12/assembly.js",
+      "sha256": "4f07c30eff47353a0a522504e7623a5f8c982fedb3f4bd17dce581ad7a642fbf"
+    },
+    {
+      "path": "src/units/unitv-m12/dimensions.js",
+      "sha256": "1601c498f8145fc6e1f0d8d805146b504d1eb1ed1894bc537c83fc6c7340debc"
+    },
+    {
+      "path": "src/units/unitv-m12/geometry-data.js",
+      "sha256": "74a9770cbf3f0f1f573bfe357aaccbb23aace39c628dca9c7d455360c25d8058"
+    },
+    {
+      "path": "src/units/unitv-m12/geometry.js",
+      "sha256": "6614735dfa2ab069e251ba02eb8f89248f64d54bd6b7f91d8bce985e4dfae9a2"
+    },
+    {
+      "path": "src/units/unitv-m12/index.js",
+      "sha256": "e260902be246f62524f587dfdfdd7e1a412150fe351697db3c5c3e6ef85c8987"
+    },
+    {
+      "path": "src/units/unitv-m12/native-map.json",
+      "sha256": "2cd594b213681b92485d973c550ffb38301de39be587afd6c4fc38a19bb8a28c"
+    },
+    {
+      "path": "src/units/unitv-m12/stickers.js",
+      "sha256": "b66cb03312fe26e6e23e8815ae08a9b9a5b2ffec2b557ae376b90740329055a5"
+    },
+    {
+      "path": "docs/research/unitv-m12/artwork.json",
+      "sha256": "6edce19bae2635f320d1666ae2bb408408b42deb3d729876a71d20ead134bb7e"
+    },
+    {
+      "path": "docs/research/unitv-m12/modeling.md",
+      "sha256": "9e6b8117192c2df347426839ff1b31251f07991c8b98b30a8d536717bcbcf5c2"
+    },
+    {
+      "path": "docs/research/unitv-m12/smoke.json",
+      "sha256": "40b40378a5ba15cf438d0adcd245a86e80996ecd709017e6da72b7b2057d77b7"
+    },
+    {
+      "path": "docs/research/unitv-m12/sources.json",
+      "sha256": "d3488ff7b7a502f8cfc8480c8a33a273eb14693d02b0a43e2eeed4526756075e"
+    },
+    {
+      "path": "src/units/timercamera-f/StatusLed.js",
+      "sha256": "062c488a84ac36834f1ae8027523cab94de934ac9b8bdb2e2f6aaf2953a178ae"
+    },
+    {
+      "path": "src/units/timercamera-f/accessories.js",
+      "sha256": "adaee74750dbfa75099f4326184834886175c457ff5e9a3d7a1f44cd35df62cf"
+    },
+    {
+      "path": "src/units/timercamera-f/artwork/back.png",
+      "sha256": "8518631db80ed3a9f4474f15ae5cc7ffd7058ecaf14062687b0d826abd88e12e"
+    },
+    {
+      "path": "src/units/timercamera-f/assembly.js",
+      "sha256": "e570daea23723bfaec869e47a24257b69682929b9aed0b3a8aa7dc03795f781d"
+    },
+    {
+      "path": "src/units/timercamera-f/dimensions.js",
+      "sha256": "80fc9e69b2391039ef1b319f76f1c98e96c41325f0afcde2f76398d14cc44c20"
+    },
+    {
+      "path": "src/units/timercamera-f/geometry-data.js",
+      "sha256": "c2e19806dbc91f27c2ab27ff441c707a0942c348a270c30334c617195a52e3e0"
+    },
+    {
+      "path": "src/units/timercamera-f/geometry.js",
+      "sha256": "0e1c058a3c8a6c54cad8f6463493490eeba2b52d57ca9226143a5b19e330170c"
+    },
+    {
+      "path": "src/units/timercamera-f/index.js",
+      "sha256": "2d240f1a807dbebfb1e0409deefabcd62894030076126ef57b962d61858fb5c9"
+    },
+    {
+      "path": "src/units/timercamera-f/infill-data.js",
+      "sha256": "cea6ca49187b9f687c56672449157d2c0140a4ec6b56e68acc58d9564cd92e1a"
+    },
+    {
+      "path": "src/units/timercamera-f/native-map.json",
+      "sha256": "4143643debf88c7ed5584f697532810c4aebeef3b76d9ee57c8092b286b12f69"
+    },
+    {
+      "path": "src/units/timercamera-f/stickers.js",
+      "sha256": "812cdae86317bee938fb1cc895c2c6718ac7a41bc87067126f4ce1c6167c725d"
+    },
+    {
+      "path": "docs/research/timercamera-f/artwork.json",
+      "sha256": "1f437aa5321f83f871835ea926686aa51452a0a9a53bb25a5be8f89acfe77b45"
+    },
+    {
+      "path": "docs/research/timercamera-f/modeling.md",
+      "sha256": "12d31b9949459d0018fdb9718315ba9cc8d6ca765f1d1379b256cf9e32b36be9"
+    },
+    {
+      "path": "docs/research/timercamera-f/smoke.json",
+      "sha256": "1b4dedef294b9c1245029a43747341ba2c5cf01523693efbf3802a896708a5bb"
+    },
+    {
+      "path": "docs/research/timercamera-f/sources.json",
+      "sha256": "1bdf05a5252ee5e1b0d09d799e8ef6c68aac1a68d9c6dfe27287069f0f8321e6"
+    }
+  ],
+  "limitations": [
+    "Own official MIT native closed shell parts restored from mixed assembled/exploded sources; exclude complete duplicate parts by identity,never crop faces or silently scale cases",
+    "Native case/clip envelopes differ from nominal assembled optical/connector dimensions; per-product source and construction maps remain authoritative",
+    "U078-USB has fixed raised USB-A hood and supplied static clip,not an internal camera or removable lens cap;fixed cooling carrier only;own public impeller/axis installation is not established and no rotor joint is invented",
+    "U078-V-M12 uses own2850+1660 closed halves instead of the six-edge coincident assembled mesh; real CNC carrier/M12 optics/side actuators are exact-product reconstruction",
+    "U082-F uses own7912+1584 closed halves,120degree fisheye and270mAh product basis; legacy native/dimension dot grid differs from own actual photos; real solid plastic fill follows actual photos and source feedback is corrected",
+    "Real native-flexure or cap-only momentaries and externally requested appearance/kinematics follow final freeze; no automatic USB/UART/AI/capture/audio/RTC/power/temperature/firmware/electrical behavior or invented display",
+    "Actual own accessory families/configurations and safe print origins are perasset; unknown hidden installation/travel/optics/fan/package fit remains documented inference,not manufacturing or productionfit acceptance",
+    "Private CSV/originals/URLs/names/mappings/vectors/raw sources/generators/intermediates excluded; old sticker/Scroll/StackChan/Puzzle/Catch boundaries remain;overall goal active"
+  ]
+}

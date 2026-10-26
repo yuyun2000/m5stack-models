@@ -1,0 +1,1847 @@
+{
+  "savedAt": "2026-10-26T22:32:55.666043+00:00",
+  "stage": "modeled",
+  "scope": "Original U001-B ENVII,U024 MEGA328 Joystick and U032 AT6558 GPS complete own-dimensional-parametric appearance,actual manual XY/Z motion and matching ordinary PNG,real three-branch four-core fixture/builds;no browser or whole-catalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 173,
+    "modeled": 187,
+    "verified": 0
+  },
+  "localHead": "4fd5216dd2b310b6c92b366cb4c795f08dd15ff6",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "env-ii",
+      "status": "pass",
+      "report": "docs/research/env-ii/smoke.json",
+      "meshes": null,
+      "triangles": null
+    },
+    {
+      "id": "joystick",
+      "status": "pass",
+      "report": "docs/research/joystick/smoke.json",
+      "meshes": null,
+      "triangles": null
+    },
+    {
+      "id": "gps",
+      "status": "pass",
+      "report": "docs/research/gps/smoke.json",
+      "meshes": null,
+      "triangles": null
+    }
+  ],
+  "pngCount": 4,
+  "rasters": [
+    {
+      "path": "src/units/env-ii/artwork/rear.png",
+      "pixels": [
+        1620,
+        1220
+      ],
+      "sha256": "92c5c39ed3aac3c7f3c2c718d12820ed33e8e408d05f88a9d39166ff2597aac5"
+    },
+    {
+      "path": "src/units/joystick/reference-redraw-back.png",
+      "pixels": [
+        1600,
+        2800
+      ],
+      "sha256": "700b2df3aaf2fef33283606124845354990b7619f498cc90ecc0830cac1951a7"
+    },
+    {
+      "path": "src/units/gps/artwork/back.png",
+      "pixels": [
+        1600,
+        2800
+      ],
+      "sha256": "8984d122965bd5a18709f70022e07a07f02bc173cdde73352af74647c32998e6"
+    },
+    {
+      "path": "src/units/gps/artwork/front.png",
+      "pixels": [
+        1800,
+        2800
+      ],
+      "sha256": "8c5d9869a22ade9a5092791c11805f2c41839a5f95c84f7ad88526eb9f0e48dd"
+    }
+  ],
+  "frozenPublicAPI": {
+    "env-ii": {
+      "exports": [
+        "Model",
+        "GroveModule",
+        "spec",
+        "defaults",
+        "configurations",
+        "configurationSchema"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [],
+      "leds": [],
+      "joysticks": [],
+      "manualInputs": [],
+      "displays": [],
+      "ports": [
+        "grove"
+      ],
+      "joints": [],
+      "anchors": [],
+      "accessoryExports": [],
+      "defaults": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "原版 ENV-II · SHT30 + BMP280 完整本体",
+          "options": {}
+        }
+      ],
+      "pngCount": 1,
+      "visualCommands": {
+        "grove": {
+          "types": [
+            "attach",
+            "detach"
+          ],
+          "scope": "Mechanical family ownership only"
+        },
+        "unitFrame": {
+          "type": "pose",
+          "fields": [
+            "position",
+            "rotation",
+            "quaternion",
+            "distance"
+          ]
+        },
+        "cable": {
+          "type": "cable",
+          "fields": [
+            "slack",
+            "bend"
+          ]
+        }
+      }
+    },
+    "joystick": {
+      "exports": [
+        "GroveModule",
+        "Model",
+        "configurationSchema",
+        "configurations",
+        "defaults",
+        "spec"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [
+        "press"
+      ],
+      "leds": [],
+      "joysticks": [
+        "stick"
+      ],
+      "manualInputs": [
+        "stick",
+        "press"
+      ],
+      "displays": [],
+      "ports": [
+        "grove"
+      ],
+      "joints": [],
+      "anchors": [],
+      "accessoryExports": [],
+      "defaults": {
+        "xDeg": 0,
+        "yDeg": 0
+      },
+      "configurations": [
+        {
+          "id": "neutral",
+          "name": "原Joystick回中",
+          "options": {
+            "xDeg": 0,
+            "yDeg": 0
+          }
+        },
+        {
+          "id": "tilted",
+          "name": "原Joystick双轴倾斜",
+          "options": {
+            "xDeg": 10,
+            "yDeg": -8
+          }
+        }
+      ],
+      "pngCount": 1,
+      "visualCommands": {
+        "stick": {
+          "type": "joystick",
+          "kind": "joystick",
+          "actions": [
+            "set",
+            "center",
+            "move",
+            "release",
+            "cancel",
+            "state"
+          ],
+          "setFields": [
+            "xDeg",
+            "yDeg",
+            "durationMs"
+          ],
+          "moveFields": [
+            "source",
+            "xDeg",
+            "yDeg"
+          ],
+          "stateFields": [
+            "xDeg",
+            "yDeg",
+            "targetXDeg",
+            "targetYDeg",
+            "transitioning",
+            "activeSources",
+            "visualRangeDeg"
+          ],
+          "externalSetCenterNoEcho": true,
+          "externalSetCenterPreservesInputSources": true,
+          "sourcePolicy": "last updated XY source wins;release/cancel removes only that source;last source returns to center in100ms"
+        },
+        "press": {
+          "type": "button",
+          "kind": "button",
+          "actions": [
+            "press",
+            "release",
+            "cancel",
+            "click",
+            "state"
+          ],
+          "travelMm": 0.45,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "sourcePolicy": "all held sources independent;last source springs back;cancel suppresses click"
+        },
+        "unitFrame": {
+          "type": "pose",
+          "fields": [
+            "position",
+            "rotation",
+            "quaternion",
+            "distance"
+          ]
+        },
+        "cable": {
+          "type": "cable",
+          "fields": [
+            "slack",
+            "bend"
+          ]
+        }
+      }
+    },
+    "gps": {
+      "exports": [
+        "GroveModule",
+        "Model",
+        "configurationSchema",
+        "configurations",
+        "defaults",
+        "spec"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [],
+      "leds": [],
+      "joysticks": [],
+      "manualInputs": [],
+      "displays": [],
+      "ports": [
+        "grove"
+      ],
+      "joints": [],
+      "anchors": [],
+      "accessoryExports": [],
+      "defaults": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整原版 GPS U032",
+          "options": {}
+        }
+      ],
+      "pngCount": 2,
+      "visualCommands": {
+        "unitFrame": {
+          "type": "pose",
+          "target": "unitFrame",
+          "fields": [
+            "position",
+            "rotation",
+            "quaternion",
+            "distance"
+          ]
+        },
+        "cable": {
+          "type": "cable",
+          "target": "cable",
+          "fields": [
+            "slack",
+            "bend"
+          ]
+        }
+      }
+    }
+  },
+  "fixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "env-ii",
+        "body": [
+          "grove"
+        ],
+        "ports": [
+          "grove"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 105,
+          "triangles": 58576,
+          "actualEnvelopeMm": [
+            24,
+            32.000000023841864,
+            8.000000001490118
+          ],
+          "currentNominalMm": [
+            24,
+            32,
+            8
+          ],
+          "historicalNominalMm": [
+            24.2,
+            32.2,
+            8.1
+          ],
+          "closureRays": 12,
+          "trueMountingAxes": 2,
+          "mountBoreWallRays": 40,
+          "PCBScallopWallRays": 2,
+          "realCapsuleVents": 40,
+          "columnCounts": [
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4
+          ],
+          "ventFrontSideWallRays": 160,
+          "backedVentRays": 40,
+          "trueSensorPackagePorts": 2,
+          "sensorPortWallRays": 8,
+          "trueSensorBackings": 2,
+          "realGroveContacts": 4,
+          "realThroughPCBContacts": 4,
+          "PCBDrillWallRays": 16,
+          "ownSchematicPassives": 7,
+          "physicalFilms": 1,
+          "physicalM5Glyphs": 2,
+          "scope": "Own U001-B appearance only;all hidden installation/fit inferred,0native/GPU/manufacturing/electrical validation"
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 105,
+          "triangles": 58576,
+          "actualEnvelopeMm": [
+            24.000000000000014,
+            32.00000002384189,
+            8.000000001490118
+          ],
+          "currentNominalMm": [
+            24,
+            32,
+            8
+          ],
+          "historicalNominalMm": [
+            24.2,
+            32.2,
+            8.1
+          ],
+          "closureRays": 12,
+          "trueMountingAxes": 2,
+          "mountBoreWallRays": 40,
+          "PCBScallopWallRays": 2,
+          "realCapsuleVents": 40,
+          "columnCounts": [
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4
+          ],
+          "ventFrontSideWallRays": 160,
+          "backedVentRays": 40,
+          "trueSensorPackagePorts": 2,
+          "sensorPortWallRays": 8,
+          "trueSensorBackings": 2,
+          "realGroveContacts": 4,
+          "realThroughPCBContacts": 4,
+          "PCBDrillWallRays": 16,
+          "ownSchematicPassives": 7,
+          "physicalFilms": 1,
+          "physicalM5Glyphs": 2,
+          "scope": "Own U001-B appearance only;all hidden installation/fit inferred,0native/GPU/manufacturing/electrical validation"
+        }
+      },
+      {
+        "id": "joystick",
+        "body": [
+          "grove",
+          "stick",
+          "press"
+        ],
+        "ports": [
+          "grove"
+        ],
+        "controls": [
+          "press"
+        ],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 138,
+          "triangles": 32008,
+          "allClosedPositiveDirectedEdges": true,
+          "nominalMm": [
+            24,
+            48,
+            32
+          ],
+          "neutralPhotoDerivedEnvelopeMm": [
+            26.600000381469727,
+            48.000000095367426,
+            32.00000038206577
+          ],
+          "currentPoseEnvelopeMm": [
+            26.600000381469727,
+            48.000000095367426,
+            32.00000038206577
+          ],
+          "closureRays": 12,
+          "trueMountingAxes": 2,
+          "mountWallRays": 40,
+          "PCBScallopClearanceMm": 1.05,
+          "truePCBDrills": 4,
+          "pcbWallRays": 16,
+          "actualGroveContacts": 4,
+          "rightAngleReturns": 4,
+          "throughPCBTails": 4,
+          "platedBarrels": 4,
+          "annularLands": 8,
+          "cupRetainingEars": 2,
+          "mechanismWallRays": 12,
+          "minimumProjectedShaftThroatClearanceMm": 0.829268342259867,
+          "minimumProjectedPlungerReceiverClearanceMm": 0.1295382752513229,
+          "physicalFilms": 1,
+          "movingMeshes": 4,
+          "actualXYandZ": true,
+          "leds": 0,
+          "scope": "All hidden mechanism positions,travel,range,fit are own photo/viewer estimates;not rated limits or manufacturing/hardware validation"
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 138,
+          "triangles": 32008,
+          "allClosedPositiveDirectedEdges": true,
+          "nominalMm": [
+            24,
+            48,
+            32
+          ],
+          "neutralPhotoDerivedEnvelopeMm": [
+            26.600000381469727,
+            48.00000009536749,
+            32.00000038206577
+          ],
+          "currentPoseEnvelopeMm": [
+            26.600000381469727,
+            48.00000009536749,
+            32.000000382065764
+          ],
+          "closureRays": 12,
+          "trueMountingAxes": 2,
+          "mountWallRays": 40,
+          "PCBScallopClearanceMm": 1.05,
+          "truePCBDrills": 4,
+          "pcbWallRays": 16,
+          "actualGroveContacts": 4,
+          "rightAngleReturns": 4,
+          "throughPCBTails": 4,
+          "platedBarrels": 4,
+          "annularLands": 8,
+          "cupRetainingEars": 2,
+          "mechanismWallRays": 12,
+          "minimumProjectedShaftThroatClearanceMm": 0.829268342259867,
+          "minimumProjectedPlungerReceiverClearanceMm": 0.1295382752513229,
+          "physicalFilms": 1,
+          "movingMeshes": 4,
+          "actualXYandZ": true,
+          "leds": 0,
+          "scope": "All hidden mechanism positions,travel,range,fit are own photo/viewer estimates;not rated limits or manufacturing/hardware validation"
+        }
+      },
+      {
+        "id": "gps",
+        "body": [
+          "grove"
+        ],
+        "ports": [
+          "grove"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "nominalMm": [
+            24,
+            48,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            48,
+            8.000000001490115
+          ],
+          "physicalMeshes": 150,
+          "triangles": 42316,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "drawingFacts": {
+            "planRadiusMm": 4,
+            "edgeRadiusMm": 1,
+            "bores": 2,
+            "boreDiameterMm": 5,
+            "borePitchMm": 16,
+            "boreCentresAboveBottomMm": 12,
+            "groveMouthMm": [
+              10,
+              5.2
+            ]
+          },
+          "mountWallRays": 8,
+          "rolledEdgeRays": 4,
+          "closureRays": 12,
+          "pcbTubeClearanceMm": [
+            0.34999990463256836,
+            0.34999990463256836
+          ],
+          "pcbCentralBossClearanceMm": 0.5,
+          "passiveTopNotch": {
+            "blindStopY": 22,
+            "frontSideWallRays": 4,
+            "functionUnconfirmed": true
+          },
+          "hiddenAssembly": "PCB,AT6558/MAX2659 package/contact counts and antenna envelope/coordinates are explicit visual estimates,not exact BOM/manufacturing fit",
+          "actualPcbPosts": 4,
+          "grove": {
+            "contacts": 4,
+            "rightAngleReturns": 4,
+            "throughPcbTails": 4,
+            "platedBores": 4,
+            "annularPads": 8,
+            "frontSideWallRays": 4
+          },
+          "physicalFilms": 2,
+          "realUncoloredM5Geometry": true,
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "nominalMm": [
+            24,
+            48,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24.00000000000003,
+            48.00000000000004,
+            8.000000001490122
+          ],
+          "physicalMeshes": 150,
+          "triangles": 42316,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "drawingFacts": {
+            "planRadiusMm": 4,
+            "edgeRadiusMm": 1,
+            "bores": 2,
+            "boreDiameterMm": 5,
+            "borePitchMm": 16,
+            "boreCentresAboveBottomMm": 12,
+            "groveMouthMm": [
+              10,
+              5.2
+            ]
+          },
+          "mountWallRays": 8,
+          "rolledEdgeRays": 4,
+          "closureRays": 12,
+          "pcbTubeClearanceMm": [
+            0.34999990463256836,
+            0.3499999046325968
+          ],
+          "pcbCentralBossClearanceMm": 0.5,
+          "passiveTopNotch": {
+            "blindStopY": 22,
+            "frontSideWallRays": 4,
+            "functionUnconfirmed": true
+          },
+          "hiddenAssembly": "PCB,AT6558/MAX2659 package/contact counts and antenna envelope/coordinates are explicit visual estimates,not exact BOM/manufacturing fit",
+          "actualPcbPosts": 4,
+          "grove": {
+            "contacts": 4,
+            "rightAngleReturns": 4,
+            "throughPcbTails": 4,
+            "platedBores": 4,
+            "annularPads": 8,
+            "frontSideWallRays": 4
+          },
+          "physicalFilms": 2,
+          "realUncoloredM5Geometry": true,
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "env-ii",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "actualJoystickMotion": null,
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 105,
+          "triangles": 58576,
+          "actualEnvelopeMm": [
+            24,
+            32.00000002384186,
+            8.000000001490116
+          ],
+          "currentNominalMm": [
+            24,
+            32,
+            8
+          ],
+          "historicalNominalMm": [
+            24.2,
+            32.2,
+            8.1
+          ],
+          "closureRays": 12,
+          "trueMountingAxes": 2,
+          "mountBoreWallRays": 40,
+          "PCBScallopWallRays": 2,
+          "realCapsuleVents": 40,
+          "columnCounts": [
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4
+          ],
+          "ventFrontSideWallRays": 160,
+          "backedVentRays": 40,
+          "trueSensorPackagePorts": 2,
+          "sensorPortWallRays": 8,
+          "trueSensorBackings": 2,
+          "realGroveContacts": 4,
+          "realThroughPCBContacts": 4,
+          "PCBDrillWallRays": 16,
+          "ownSchematicPassives": 7,
+          "physicalFilms": 1,
+          "physicalM5Glyphs": 2,
+          "scope": "Own U001-B appearance only;all hidden installation/fit inferred,0native/GPU/manufacturing/electrical validation"
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "joystick",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "press"
+        ],
+        "actualJoystickMotion": {
+          "combinedPartialXYandZ": true,
+          "cancelPartialSpringReturn": true,
+          "allPhysicalAttributesIndexWorldInvariant": true,
+          "actualFilmAndM5Retained": true,
+          "exactCurrentPresetRestored": true
+        },
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 138,
+          "triangles": 32008,
+          "allClosedPositiveDirectedEdges": true,
+          "nominalMm": [
+            24,
+            48,
+            32
+          ],
+          "neutralPhotoDerivedEnvelopeMm": [
+            26.600000381469727,
+            48.00000009536743,
+            32.00000038206577
+          ],
+          "currentPoseEnvelopeMm": [
+            26.600000381469727,
+            48.00000009536743,
+            32.00000038206577
+          ],
+          "closureRays": 12,
+          "trueMountingAxes": 2,
+          "mountWallRays": 40,
+          "PCBScallopClearanceMm": 1.05,
+          "truePCBDrills": 4,
+          "pcbWallRays": 16,
+          "actualGroveContacts": 4,
+          "rightAngleReturns": 4,
+          "throughPCBTails": 4,
+          "platedBarrels": 4,
+          "annularLands": 8,
+          "cupRetainingEars": 2,
+          "mechanismWallRays": 12,
+          "minimumProjectedShaftThroatClearanceMm": 0.829268342259867,
+          "minimumProjectedPlungerReceiverClearanceMm": 0.1295382752513229,
+          "physicalFilms": 1,
+          "movingMeshes": 4,
+          "actualXYandZ": true,
+          "leds": 0,
+          "scope": "All hidden mechanism positions,travel,range,fit are own photo/viewer estimates;not rated limits or manufacturing/hardware validation"
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "gps",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "actualJoystickMotion": null,
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "nominalMm": [
+            24,
+            48,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            48,
+            8.000000001490116
+          ],
+          "physicalMeshes": 150,
+          "triangles": 42316,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "drawingFacts": {
+            "planRadiusMm": 4,
+            "edgeRadiusMm": 1,
+            "bores": 2,
+            "boreDiameterMm": 5,
+            "borePitchMm": 16,
+            "boreCentresAboveBottomMm": 12,
+            "groveMouthMm": [
+              10,
+              5.2
+            ]
+          },
+          "mountWallRays": 8,
+          "rolledEdgeRays": 4,
+          "closureRays": 12,
+          "pcbTubeClearanceMm": [
+            0.34999990463256836,
+            0.34999990463256836
+          ],
+          "pcbCentralBossClearanceMm": 0.5,
+          "passiveTopNotch": {
+            "blindStopY": 22,
+            "frontSideWallRays": 4,
+            "functionUnconfirmed": true
+          },
+          "hiddenAssembly": "PCB,AT6558/MAX2659 package/contact counts and antenna envelope/coordinates are explicit visual estimates,not exact BOM/manufacturing fit",
+          "actualPcbPosts": 4,
+          "grove": {
+            "contacts": 4,
+            "rightAngleReturns": 4,
+            "throughPcbTails": 4,
+            "platedBores": 4,
+            "annularPads": 8,
+            "frontSideWallRays": 4
+          },
+          "physicalFilms": 2,
+          "realUncoloredM5Geometry": true,
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        },
+        "staticMounting": []
+      }
+    ],
+    "configurations": [
+      {
+        "id": "env-ii",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "joystick",
+        "optionCases": 3,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "gps",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      }
+    ],
+    "behaviors": [
+      {
+        "id": "env-ii",
+        "noReadingsSamplingI2CAddressRegistersFirmware": true,
+        "rejectedCommandTypes": 16,
+        "noControlsLightsJointsOrSensorAnchor": true,
+        "shapePortsPeersEventsInvariant": true,
+        "staticAfter1_25Seconds": true
+      },
+      {
+        "id": "joystick",
+        "externalXYPartialNoEcho": true,
+        "normalPointerOnlyXY": true,
+        "shiftPointerXYandZ": true,
+        "independentSpaceAndExternalZ": true,
+        "multiSourceXYLastSourceThenCenter": true,
+        "multiSourceZLastSourceThenSpringReturn": true,
+        "cancelSuppressesClick": true,
+        "fixedAssemblyPortsPeersInvariant": true,
+        "allGeometryAttributesIndexAndPresetWorldRestored": true,
+        "noADC_I2CRegistersFirmwareOrFakeLED": true
+      },
+      {
+        "id": "gps",
+        "staticActualCasePcbReceiverAntennaContacts": true,
+        "noPositioningNmeaFixSatellitesUtcUartElectricalFirmware": true,
+        "noAutomaticGlowMotionOrInputEcho": true,
+        "allPhysicalAttributesIndicesWorldRetained": true,
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0,
+        "noSensorAnchor": true
+      }
+    ],
+    "accessories": [
+      {
+        "id": "env-ii",
+        "mounting": []
+      },
+      {
+        "id": "joystick",
+        "mounting": []
+      },
+      {
+        "id": "gps",
+        "mounting": []
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "env-ii",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "joystick",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "gps",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      }
+    ],
+    "disposedResources": 980,
+    "cases": [
+      "three-real-four-core-branches",
+      "own-dimensional-parametric-exact-SKU-assemblies",
+      "real-original-sensor-rocker-gps-supported-assemblies",
+      "real40-vent-SHT30-BMP280-and-XY-Z-control-shapes",
+      "actual-original-stick-partial-tilt-press-physical-invariance",
+      "own-readable-PCB-front-and-rear-print",
+      "both-entries-actual-presets-and-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-peer-isolation",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own three physical assemblies and actual matching ordinary print,actual evidenced physical interfaces and actual XYtilt/Zpress manual-input shapes;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/ADC-environmental-GPS-values/electrical/firmware/whole-history acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "env-ii",
+        "body": [
+          "grove"
+        ],
+        "ports": [
+          "grove"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 105,
+          "triangles": 58576,
+          "actualEnvelopeMm": [
+            24,
+            32.000000023841864,
+            8.000000001490118
+          ],
+          "currentNominalMm": [
+            24,
+            32,
+            8
+          ],
+          "historicalNominalMm": [
+            24.2,
+            32.2,
+            8.1
+          ],
+          "closureRays": 12,
+          "trueMountingAxes": 2,
+          "mountBoreWallRays": 40,
+          "PCBScallopWallRays": 2,
+          "realCapsuleVents": 40,
+          "columnCounts": [
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4
+          ],
+          "ventFrontSideWallRays": 160,
+          "backedVentRays": 40,
+          "trueSensorPackagePorts": 2,
+          "sensorPortWallRays": 8,
+          "trueSensorBackings": 2,
+          "realGroveContacts": 4,
+          "realThroughPCBContacts": 4,
+          "PCBDrillWallRays": 16,
+          "ownSchematicPassives": 7,
+          "physicalFilms": 1,
+          "physicalM5Glyphs": 2,
+          "scope": "Own U001-B appearance only;all hidden installation/fit inferred,0native/GPU/manufacturing/electrical validation"
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 105,
+          "triangles": 58576,
+          "actualEnvelopeMm": [
+            24.000000000000014,
+            32.00000002384189,
+            8.000000001490118
+          ],
+          "currentNominalMm": [
+            24,
+            32,
+            8
+          ],
+          "historicalNominalMm": [
+            24.2,
+            32.2,
+            8.1
+          ],
+          "closureRays": 12,
+          "trueMountingAxes": 2,
+          "mountBoreWallRays": 40,
+          "PCBScallopWallRays": 2,
+          "realCapsuleVents": 40,
+          "columnCounts": [
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4
+          ],
+          "ventFrontSideWallRays": 160,
+          "backedVentRays": 40,
+          "trueSensorPackagePorts": 2,
+          "sensorPortWallRays": 8,
+          "trueSensorBackings": 2,
+          "realGroveContacts": 4,
+          "realThroughPCBContacts": 4,
+          "PCBDrillWallRays": 16,
+          "ownSchematicPassives": 7,
+          "physicalFilms": 1,
+          "physicalM5Glyphs": 2,
+          "scope": "Own U001-B appearance only;all hidden installation/fit inferred,0native/GPU/manufacturing/electrical validation"
+        }
+      },
+      {
+        "id": "joystick",
+        "body": [
+          "grove",
+          "stick",
+          "press"
+        ],
+        "ports": [
+          "grove"
+        ],
+        "controls": [
+          "press"
+        ],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 138,
+          "triangles": 32008,
+          "allClosedPositiveDirectedEdges": true,
+          "nominalMm": [
+            24,
+            48,
+            32
+          ],
+          "neutralPhotoDerivedEnvelopeMm": [
+            26.600000381469727,
+            48.000000095367426,
+            32.00000038206577
+          ],
+          "currentPoseEnvelopeMm": [
+            26.600000381469727,
+            48.000000095367426,
+            32.00000038206577
+          ],
+          "closureRays": 12,
+          "trueMountingAxes": 2,
+          "mountWallRays": 40,
+          "PCBScallopClearanceMm": 1.05,
+          "truePCBDrills": 4,
+          "pcbWallRays": 16,
+          "actualGroveContacts": 4,
+          "rightAngleReturns": 4,
+          "throughPCBTails": 4,
+          "platedBarrels": 4,
+          "annularLands": 8,
+          "cupRetainingEars": 2,
+          "mechanismWallRays": 12,
+          "minimumProjectedShaftThroatClearanceMm": 0.829268342259867,
+          "minimumProjectedPlungerReceiverClearanceMm": 0.1295382752513229,
+          "physicalFilms": 1,
+          "movingMeshes": 4,
+          "actualXYandZ": true,
+          "leds": 0,
+          "scope": "All hidden mechanism positions,travel,range,fit are own photo/viewer estimates;not rated limits or manufacturing/hardware validation"
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 138,
+          "triangles": 32008,
+          "allClosedPositiveDirectedEdges": true,
+          "nominalMm": [
+            24,
+            48,
+            32
+          ],
+          "neutralPhotoDerivedEnvelopeMm": [
+            26.600000381469727,
+            48.00000009536749,
+            32.00000038206577
+          ],
+          "currentPoseEnvelopeMm": [
+            26.600000381469727,
+            48.00000009536749,
+            32.000000382065764
+          ],
+          "closureRays": 12,
+          "trueMountingAxes": 2,
+          "mountWallRays": 40,
+          "PCBScallopClearanceMm": 1.05,
+          "truePCBDrills": 4,
+          "pcbWallRays": 16,
+          "actualGroveContacts": 4,
+          "rightAngleReturns": 4,
+          "throughPCBTails": 4,
+          "platedBarrels": 4,
+          "annularLands": 8,
+          "cupRetainingEars": 2,
+          "mechanismWallRays": 12,
+          "minimumProjectedShaftThroatClearanceMm": 0.829268342259867,
+          "minimumProjectedPlungerReceiverClearanceMm": 0.1295382752513229,
+          "physicalFilms": 1,
+          "movingMeshes": 4,
+          "actualXYandZ": true,
+          "leds": 0,
+          "scope": "All hidden mechanism positions,travel,range,fit are own photo/viewer estimates;not rated limits or manufacturing/hardware validation"
+        }
+      },
+      {
+        "id": "gps",
+        "body": [
+          "grove"
+        ],
+        "ports": [
+          "grove"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "nominalMm": [
+            24,
+            48,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            48,
+            8.000000001490115
+          ],
+          "physicalMeshes": 150,
+          "triangles": 42316,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "drawingFacts": {
+            "planRadiusMm": 4,
+            "edgeRadiusMm": 1,
+            "bores": 2,
+            "boreDiameterMm": 5,
+            "borePitchMm": 16,
+            "boreCentresAboveBottomMm": 12,
+            "groveMouthMm": [
+              10,
+              5.2
+            ]
+          },
+          "mountWallRays": 8,
+          "rolledEdgeRays": 4,
+          "closureRays": 12,
+          "pcbTubeClearanceMm": [
+            0.34999990463256836,
+            0.34999990463256836
+          ],
+          "pcbCentralBossClearanceMm": 0.5,
+          "passiveTopNotch": {
+            "blindStopY": 22,
+            "frontSideWallRays": 4,
+            "functionUnconfirmed": true
+          },
+          "hiddenAssembly": "PCB,AT6558/MAX2659 package/contact counts and antenna envelope/coordinates are explicit visual estimates,not exact BOM/manufacturing fit",
+          "actualPcbPosts": 4,
+          "grove": {
+            "contacts": 4,
+            "rightAngleReturns": 4,
+            "throughPcbTails": 4,
+            "platedBores": 4,
+            "annularPads": 8,
+            "frontSideWallRays": 4
+          },
+          "physicalFilms": 2,
+          "realUncoloredM5Geometry": true,
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "nominalMm": [
+            24,
+            48,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24.00000000000003,
+            48.00000000000004,
+            8.000000001490122
+          ],
+          "physicalMeshes": 150,
+          "triangles": 42316,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "drawingFacts": {
+            "planRadiusMm": 4,
+            "edgeRadiusMm": 1,
+            "bores": 2,
+            "boreDiameterMm": 5,
+            "borePitchMm": 16,
+            "boreCentresAboveBottomMm": 12,
+            "groveMouthMm": [
+              10,
+              5.2
+            ]
+          },
+          "mountWallRays": 8,
+          "rolledEdgeRays": 4,
+          "closureRays": 12,
+          "pcbTubeClearanceMm": [
+            0.34999990463256836,
+            0.3499999046325968
+          ],
+          "pcbCentralBossClearanceMm": 0.5,
+          "passiveTopNotch": {
+            "blindStopY": 22,
+            "frontSideWallRays": 4,
+            "functionUnconfirmed": true
+          },
+          "hiddenAssembly": "PCB,AT6558/MAX2659 package/contact counts and antenna envelope/coordinates are explicit visual estimates,not exact BOM/manufacturing fit",
+          "actualPcbPosts": 4,
+          "grove": {
+            "contacts": 4,
+            "rightAngleReturns": 4,
+            "throughPcbTails": 4,
+            "platedBores": 4,
+            "annularPads": 8,
+            "frontSideWallRays": 4
+          },
+          "physicalFilms": 2,
+          "realUncoloredM5Geometry": true,
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "env-ii",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "actualJoystickMotion": null,
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 105,
+          "triangles": 58576,
+          "actualEnvelopeMm": [
+            24,
+            32.00000002384186,
+            8.000000001490116
+          ],
+          "currentNominalMm": [
+            24,
+            32,
+            8
+          ],
+          "historicalNominalMm": [
+            24.2,
+            32.2,
+            8.1
+          ],
+          "closureRays": 12,
+          "trueMountingAxes": 2,
+          "mountBoreWallRays": 40,
+          "PCBScallopWallRays": 2,
+          "realCapsuleVents": 40,
+          "columnCounts": [
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4,
+            5,
+            4
+          ],
+          "ventFrontSideWallRays": 160,
+          "backedVentRays": 40,
+          "trueSensorPackagePorts": 2,
+          "sensorPortWallRays": 8,
+          "trueSensorBackings": 2,
+          "realGroveContacts": 4,
+          "realThroughPCBContacts": 4,
+          "PCBDrillWallRays": 16,
+          "ownSchematicPassives": 7,
+          "physicalFilms": 1,
+          "physicalM5Glyphs": 2,
+          "scope": "Own U001-B appearance only;all hidden installation/fit inferred,0native/GPU/manufacturing/electrical validation"
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "joystick",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "press"
+        ],
+        "actualJoystickMotion": {
+          "combinedPartialXYandZ": true,
+          "cancelPartialSpringReturn": true,
+          "allPhysicalAttributesIndexWorldInvariant": true,
+          "actualFilmAndM5Retained": true,
+          "exactCurrentPresetRestored": true
+        },
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 138,
+          "triangles": 32008,
+          "allClosedPositiveDirectedEdges": true,
+          "nominalMm": [
+            24,
+            48,
+            32
+          ],
+          "neutralPhotoDerivedEnvelopeMm": [
+            26.600000381469727,
+            48.00000009536743,
+            32.00000038206577
+          ],
+          "currentPoseEnvelopeMm": [
+            26.600000381469727,
+            48.00000009536743,
+            32.00000038206577
+          ],
+          "closureRays": 12,
+          "trueMountingAxes": 2,
+          "mountWallRays": 40,
+          "PCBScallopClearanceMm": 1.05,
+          "truePCBDrills": 4,
+          "pcbWallRays": 16,
+          "actualGroveContacts": 4,
+          "rightAngleReturns": 4,
+          "throughPCBTails": 4,
+          "platedBarrels": 4,
+          "annularLands": 8,
+          "cupRetainingEars": 2,
+          "mechanismWallRays": 12,
+          "minimumProjectedShaftThroatClearanceMm": 0.829268342259867,
+          "minimumProjectedPlungerReceiverClearanceMm": 0.1295382752513229,
+          "physicalFilms": 1,
+          "movingMeshes": 4,
+          "actualXYandZ": true,
+          "leds": 0,
+          "scope": "All hidden mechanism positions,travel,range,fit are own photo/viewer estimates;not rated limits or manufacturing/hardware validation"
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "gps",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "actualJoystickMotion": null,
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "nativeGeometry": false,
+          "nativeTriangles": null,
+          "nominalMm": [
+            24,
+            48,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            48,
+            8.000000001490116
+          ],
+          "physicalMeshes": 150,
+          "triangles": 42316,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "drawingFacts": {
+            "planRadiusMm": 4,
+            "edgeRadiusMm": 1,
+            "bores": 2,
+            "boreDiameterMm": 5,
+            "borePitchMm": 16,
+            "boreCentresAboveBottomMm": 12,
+            "groveMouthMm": [
+              10,
+              5.2
+            ]
+          },
+          "mountWallRays": 8,
+          "rolledEdgeRays": 4,
+          "closureRays": 12,
+          "pcbTubeClearanceMm": [
+            0.34999990463256836,
+            0.34999990463256836
+          ],
+          "pcbCentralBossClearanceMm": 0.5,
+          "passiveTopNotch": {
+            "blindStopY": 22,
+            "frontSideWallRays": 4,
+            "functionUnconfirmed": true
+          },
+          "hiddenAssembly": "PCB,AT6558/MAX2659 package/contact counts and antenna envelope/coordinates are explicit visual estimates,not exact BOM/manufacturing fit",
+          "actualPcbPosts": 4,
+          "grove": {
+            "contacts": 4,
+            "rightAngleReturns": 4,
+            "throughPcbTails": 4,
+            "platedBores": 4,
+            "annularPads": 8,
+            "frontSideWallRays": 4
+          },
+          "physicalFilms": 2,
+          "realUncoloredM5Geometry": true,
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        },
+        "staticMounting": []
+      }
+    ],
+    "configurations": [
+      {
+        "id": "env-ii",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "joystick",
+        "optionCases": 3,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "gps",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      }
+    ],
+    "behaviors": [
+      {
+        "id": "env-ii",
+        "noReadingsSamplingI2CAddressRegistersFirmware": true,
+        "rejectedCommandTypes": 16,
+        "noControlsLightsJointsOrSensorAnchor": true,
+        "shapePortsPeersEventsInvariant": true,
+        "staticAfter1_25Seconds": true
+      },
+      {
+        "id": "joystick",
+        "externalXYPartialNoEcho": true,
+        "normalPointerOnlyXY": true,
+        "shiftPointerXYandZ": true,
+        "independentSpaceAndExternalZ": true,
+        "multiSourceXYLastSourceThenCenter": true,
+        "multiSourceZLastSourceThenSpringReturn": true,
+        "cancelSuppressesClick": true,
+        "fixedAssemblyPortsPeersInvariant": true,
+        "allGeometryAttributesIndexAndPresetWorldRestored": true,
+        "noADC_I2CRegistersFirmwareOrFakeLED": true
+      },
+      {
+        "id": "gps",
+        "staticActualCasePcbReceiverAntennaContacts": true,
+        "noPositioningNmeaFixSatellitesUtcUartElectricalFirmware": true,
+        "noAutomaticGlowMotionOrInputEcho": true,
+        "allPhysicalAttributesIndicesWorldRetained": true,
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0,
+        "noSensorAnchor": true
+      }
+    ],
+    "accessories": [
+      {
+        "id": "env-ii",
+        "mounting": []
+      },
+      {
+        "id": "joystick",
+        "mounting": []
+      },
+      {
+        "id": "gps",
+        "mounting": []
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "env-ii",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "joystick",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "gps",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      }
+    ],
+    "disposedResources": 980,
+    "cases": [
+      "three-real-four-core-branches",
+      "own-dimensional-parametric-exact-SKU-assemblies",
+      "real-original-sensor-rocker-gps-supported-assemblies",
+      "real40-vent-SHT30-BMP280-and-XY-Z-control-shapes",
+      "actual-original-stick-partial-tilt-press-physical-invariance",
+      "own-readable-PCB-front-and-rear-print",
+      "both-entries-actual-presets-and-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-peer-isolation",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own three physical assemblies and actual matching ordinary print,actual evidenced physical interfaces and actual XYtilt/Zpress manual-input shapes;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/ADC-environmental-GPS-values/electrical/firmware/whole-history acceptance"
+  },
+  "checks": {
+    "localProductSmoke": "all current batch products pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "env-ii",
+        "status": "frozen",
+        "checkedFiles": 12
+      },
+      {
+        "id": "joystick",
+        "status": "frozen",
+        "checkedFiles": 11
+      },
+      {
+        "id": "gps",
+        "status": "frozen",
+        "checkedFiles": 11
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "All physical attributes/index/world matrices preserved across actual entries/configurations",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "56008c04a00b136e6dfb33042920710ea9930a648ccdc6b2785dc5b6ebd2e544",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "498e07b87ce767a6bec81f6fea7f491de1527e9a69bfd46eb87c35541ec93109",
+      "logDistributed": false
+    },
+    "exportCount": 6,
+    "catalogConfigurations": {
+      "status": "pass",
+      "products": [
+        {
+          "id": "env-ii",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "原版 ENV-II · SHT30 + BMP280 完整本体",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        },
+        {
+          "id": "joystick",
+          "presets": [
+            {
+              "id": "neutral",
+              "name": "原Joystick回中",
+              "options": {
+                "xDeg": 0,
+                "yDeg": 0
+              }
+            },
+            {
+              "id": "tilted",
+              "name": "原Joystick双轴倾斜",
+              "options": {
+                "xDeg": 10,
+                "yDeg": -8
+              }
+            }
+          ],
+          "defaults": {
+            "xDeg": 0,
+            "yDeg": 0
+          }
+        },
+        {
+          "id": "gps",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "完整原版 GPS U032",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        }
+      ],
+      "scope": "Batch 48: current frozen named presets, constructor defaults and existing demo contract"
+    },
+    "livePreview": "187-product catalog, 3 own runtime chunks and all corresponding source PNG bytes verified in live dist (ordinary or inlined assets)",
+    "newSourcePrivacy": "New JS/JSON/Markdown/PNG and all current added catalog/manifest records checked; private table/URLs/vectors/original names/mappings/raw material/intermediates excluded",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "Only new products/catalog entries/exports/guide/plan; protected old private/public bytes retained",
+    "existingPublicUnitFilesUnchanged": 1422,
+    "existingPrivateUnitFilesUnchanged": 1383,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "publicSharedProtectedFilesUnchanged": 2,
+    "privateSharedProtectedFilesUnchanged": 2,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [],
+  "previewAssets": [
+    {
+      "id": "env-ii",
+      "file": "assets/env-ii-C4zmZ21I.js",
+      "sha256": "c22eada6b4a207003b115626d174bb138db07eb4d6e6869e932bd34277db0fba"
+    },
+    {
+      "id": "joystick",
+      "file": "assets/joystick-Cv6ofLL6.js",
+      "sha256": "e3bc0a7a5c69b8e76a82bb8e520f16638dc650ec38508fa2b9448577fceb516f"
+    },
+    {
+      "id": "gps",
+      "file": "assets/gps-BtevIGBX.js",
+      "sha256": "4021f580042df798d0e4c7298597859ef4431f96900316798f8aad35bf44c8ec"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/env-ii/artwork/rear.png",
+      "sha256": "92c5c39ed3aac3c7f3c2c718d12820ed33e8e408d05f88a9d39166ff2597aac5"
+    },
+    {
+      "path": "src/units/env-ii/assembly.js",
+      "sha256": "9cc31a86e5e9bfe1c67136f6ec884012b240f53d7408797319628d3d76cb208a"
+    },
+    {
+      "path": "src/units/env-ii/connectors.js",
+      "sha256": "d39b7734fbf319a2e482d3eb61487c16c1c4efcc3e456e3570b1e9f64894ed56"
+    },
+    {
+      "path": "src/units/env-ii/dimensions.js",
+      "sha256": "ff90c710acda685c413a19b988a40e81f1a84f1229fb461312f8a65db81ecd9a"
+    },
+    {
+      "path": "src/units/env-ii/electronics.js",
+      "sha256": "9308382e10f3b432cda3b6b002de88c7e77a1a9cf4dd16ef12fa2667f89fdae0"
+    },
+    {
+      "path": "src/units/env-ii/geometry.js",
+      "sha256": "6aea9c27e6e7eb50c676476eebb173fdf4da72a912e6cd3dd4867f9c78f4d800"
+    },
+    {
+      "path": "src/units/env-ii/index.js",
+      "sha256": "bbd7c48ed696f1031be41eaf7c2174a74a7981ec337bb971c432b58adbfc611d"
+    },
+    {
+      "path": "src/units/env-ii/shell.js",
+      "sha256": "adcf41d749af1edcaf23509727ec06387d6bff31e9473dd37923fb40486d59d0"
+    },
+    {
+      "path": "docs/research/env-ii/artwork.json",
+      "sha256": "5d68b47fc99a9c59c0ee1872a991f8967a85f3e5ea2fc54e4005aa0fb430562c"
+    },
+    {
+      "path": "docs/research/env-ii/modeling.md",
+      "sha256": "90f547f4bdc03515a11c424d51b1abc99e8ca6e89111e6f3bdf8ad2a38ba043f"
+    },
+    {
+      "path": "docs/research/env-ii/smoke.json",
+      "sha256": "22f9af1615e6b39534da5952683eaee5e09a1a8a49c6ee169270b784ebc09967"
+    },
+    {
+      "path": "docs/research/env-ii/sources.json",
+      "sha256": "431dcc4fba9c7d1b1f04f8d38a90b9d4432e34234d544fa22246e92526518ad9"
+    },
+    {
+      "path": "src/units/joystick/JoystickInput.js",
+      "sha256": "2ea463f76a62f4af4a429420e9eaf84db0387a6e446f4fceb0e1c2017ed41210"
+    },
+    {
+      "path": "src/units/joystick/assembly.js",
+      "sha256": "fc111cbae7019b2d08749308bb39e000d6a876eae3f39f0db6191ef62d9a95ff"
+    },
+    {
+      "path": "src/units/joystick/dimensions.js",
+      "sha256": "8f869a4a8cd2995a2e17c71fd8932f1ece6ba7c4e6cbf348f4fcc7582465f093"
+    },
+    {
+      "path": "src/units/joystick/geometry.js",
+      "sha256": "2f37846bdc6453bad5407d8268478042a73f74a116c1d124b90188fc72818dc5"
+    },
+    {
+      "path": "src/units/joystick/index.js",
+      "sha256": "a584400d668e41f29a2e0088f263f21430d891a7a49b4123635b38e2d9f60eff"
+    },
+    {
+      "path": "src/units/joystick/reference-redraw-back.png",
+      "sha256": "700b2df3aaf2fef33283606124845354990b7619f498cc90ecc0830cac1951a7"
+    },
+    {
+      "path": "src/units/joystick/stickers.js",
+      "sha256": "0e0bcb60f1c0c0383783d4f77b03e568b744e06325bfae0c8ec1357c8481d2ce"
+    },
+    {
+      "path": "docs/research/joystick/artwork.json",
+      "sha256": "934c723636c73272378bf93920a2c92a22e1752e908362ceba3600717be14dfc"
+    },
+    {
+      "path": "docs/research/joystick/modeling.md",
+      "sha256": "ae818db0b49c9dd9e158dd6e2dd19aa78c7ff70262790b7b3ab405f76834dca1"
+    },
+    {
+      "path": "docs/research/joystick/smoke.json",
+      "sha256": "03b6b0a0abdbb4baf117a63fa3a289b9f8e3a927eb877cd7614900e19feada79"
+    },
+    {
+      "path": "docs/research/joystick/sources.json",
+      "sha256": "e8c4dba591948b4af3c47a729367086de3146d47603fdda062279d2d0911a71d"
+    },
+    {
+      "path": "src/units/gps/artwork/back.png",
+      "sha256": "8984d122965bd5a18709f70022e07a07f02bc173cdde73352af74647c32998e6"
+    },
+    {
+      "path": "src/units/gps/artwork/front.png",
+      "sha256": "8c5d9869a22ade9a5092791c11805f2c41839a5f95c84f7ad88526eb9f0e48dd"
+    },
+    {
+      "path": "src/units/gps/assembly.js",
+      "sha256": "d3f3b8f2afb1f16158cec5bd45c00b2c0f35abb3f8c199bde72eb0415dd2d342"
+    },
+    {
+      "path": "src/units/gps/dimensions.js",
+      "sha256": "5bd60a4aab1c0892fae1742463728689587dc2acde099a568bca5f2e57177c9c"
+    },
+    {
+      "path": "src/units/gps/geometry.js",
+      "sha256": "c143eb8f93dc305c48acd6bdc2ff3e91829e192db988108ce86f1dd3a501e7f8"
+    },
+    {
+      "path": "src/units/gps/index.js",
+      "sha256": "de3503aba03b82709efc1348cb344b34b27963f21cd6357e94a584e77be41a11"
+    },
+    {
+      "path": "src/units/gps/stickers.js",
+      "sha256": "ad3587159e3ee2276df7640bf31c959e8746d792ce81474a4453fe48d4ef22ed"
+    },
+    {
+      "path": "docs/research/gps/artwork.json",
+      "sha256": "a381ffdf537a6131976d377f41267a0c71b293121e51584b7177da9bb7e933d3"
+    },
+    {
+      "path": "docs/research/gps/modeling.md",
+      "sha256": "af3fc21a154c197b5e0b95e320f71058b2cbb7054b5ebdad932e633bd0c4f1aa"
+    },
+    {
+      "path": "docs/research/gps/smoke.json",
+      "sha256": "0eb5b6ded2327545edb8c2ca0cff1d440e7d43af2702d39826613c8573f6a78e"
+    },
+    {
+      "path": "docs/research/gps/sources.json",
+      "sha256": "320023173059f399bbbb1a1cdc6495cee5cfdc543e844a4cfa063c3652508d4c"
+    }
+  ],
+  "limitations": [
+    "Own-dimensional-parametric exact-SKU reconstruction;no native CAD/source-face claim or borrowed successor geometry",
+    "ENVII U001-B current24x32x8 and historical24.2x32.2x8.1 retained separately;40real vents and SHT30/BMP280 support are appearance,not measurements or sampling",
+    "OriginalJoystick U024 MEGA328 physicalcap/cup/metalcarrier and actual XYrock/Zpress;nominal24x48x32 differs from inferred cap-inclusive complete envelope",
+    "Joystick pivot/travel/visual limits and hidden installation are reconstruction,not rated hardware stops or mechanical physics;J3NotMount is not a fitted extra socket,printedLED D2 is not an automatic external light",
+    "OriginalGPS U032 own24x48x8 dimensioned bore/socket datum retained;hiddenPCB/antenna/AT6558/MAX2659 placements are explicit inference,no satellite/NMEA/fix/UTC/UART simulation",
+    "Finalactual components,external messages,presets,visible outputs and PNGcounts come from frozen API,not product-purpose guesses",
+    "Hidden package/support/contact/film fit is reconstruction,not fullBOM/manufacturing/productionfit/hardware acceptance",
+    "Own legible labels accurately code-redrawn ordinaryPNG with source attribution;physical carriers/relief retained,no photo crop/wrongSKU/unknownmicrotext/individualcode",
+    "Private CSV/originals/URLs/names/mappings/vectors/raw sources/generators/intermediates excluded;old50PNG/Scroll/StackChan/Puzzle/Catch boundaries retained;overallgoal active"
+  ]
+}

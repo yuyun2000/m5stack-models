@@ -1,0 +1,111 @@
+{
+  "id": "timercamera-x",
+  "path": "Products/U082\u2011X_TimerCamera\u2011X/Structures/TimerCamera-X.stl",
+  "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U082%E2%80%91X_TimerCamera%E2%80%91X/Structures/TimerCamera-X.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "0f813fe792e7ef93204404e56e33691e45978219",
+  "sha256": "379dbbac01fab76b708a66a1f239f62461cf46b645c73c9688e9d13d9ad4dcde",
+  "bytes": 651084,
+  "triangles": 13020,
+  "gitBlobVerifiedAgainstBytes": true,
+  "license": "MIT",
+  "licenseSha256": "44611d917bece311f5c8eeffce83d8bf9e9ca3f815d262f694ff4a7996af50ea",
+  "axisRotation": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ]
+  ],
+  "assembledTranslationMm": [
+    -91.53147888183594,
+    -70,
+    0.9
+  ],
+  "bodyTriangles": 4452,
+  "accessoryTriangles": 4116,
+  "outputTriangles": 8568,
+  "parts": [
+    {
+      "role": "front",
+      "name": "TimerCamera-X own complete native front",
+      "material": "shell",
+      "component": 2,
+      "triangles": 3044,
+      "sourceFaceRanges": [
+        [
+          2816,
+          5859
+        ]
+      ],
+      "sourceXTranslationMm": -43.781429290771484,
+      "sourceYTranslationMm": 0,
+      "nativeVolumeMm3": 2530.4139478458496
+    },
+    {
+      "role": "rear",
+      "name": "TimerCamera-X own complete native rear",
+      "material": "shell",
+      "component": 1,
+      "triangles": 1408,
+      "sourceFaceRanges": [
+        [
+          1408,
+          2815
+        ]
+      ],
+      "sourceXTranslationMm": -91.53147888183594,
+      "sourceYTranslationMm": 0,
+      "nativeVolumeMm3": 2305.6167584749337
+    },
+    {
+      "role": "clip",
+      "name": "TimerCamera-X own complete native clip",
+      "material": "shell",
+      "component": 3,
+      "triangles": 2150,
+      "sourceFaceRanges": [
+        [
+          8904,
+          11053
+        ]
+      ],
+      "sourceXTranslationMm": -191.81697463989258,
+      "sourceYTranslationMm": 3.870485305786133,
+      "nativeVolumeMm3": 1134.4305066837449
+    },
+    {
+      "role": "adapter",
+      "name": "TimerCamera-X own complete native adapter",
+      "material": "shell",
+      "component": 4,
+      "triangles": 1966,
+      "sourceFaceRanges": [
+        [
+          11054,
+          13019
+        ]
+      ],
+      "sourceXTranslationMm": -143.54466438293457,
+      "sourceYTranslationMm": 1.8705158233642578,
+      "nativeVolumeMm3": 1235.352202637339
+    }
+  ],
+  "nativeShellEnvelopeMm": [
+    24,
+    48,
+    13.199999809265137
+  ],
+  "accessoryInstallation": "Own tab pairs centre rawY62.129514694/82.129514694 for2150 and64.129484177/84.129484177 for1966 restored onto own rear receiving slots66/86;own symmetric X axes centred on body;pose inferred from own09,not certified fit.",
+  "note": "All selected own source faces preserved unchanged. Equivalent complete4452 combined assembly excluded in favour of separate complete3044/1408 closed halves;no sibling geometry."
+}

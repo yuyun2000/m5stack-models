@@ -2,9 +2,9 @@
 
 由 npm run catalog 生成；catalog/products.json 为权威状态。
 
-范围：精细外观建模，行为由下游模拟器负责。主机 14 款，Unit 149 款。
+范围：精细外观建模，行为由下游模拟器负责。主机 14 款，Unit 173 款。
 
-状态计数：{"modeled":163}。modeled 表示已有实现，不表示已完成视觉验收。
+状态计数：{"modeled":187}。modeled 表示已有实现，不表示已完成视觉验收。
 
 | 类别 | 产品 | 阶段 | 名义尺寸 X × Y × Z / mm | 下一步 |
 | --- | --- | --- | --- | --- |
@@ -171,3 +171,27 @@
 | Unit | Unit CatM | modeled | 24 × 72 × 8 | Continue exact Unit expansion together with corresponding own artwork. |
 | Unit | Unit NeoHEX | modeled | 36 × 36 × 9.6 | Necessary root integration/threebranch fixture,actual PNG build-emission/private sync and preview checks;not GPU or production fit verification. |
 | Unit | Unit ENV-IV | modeled | 24 × 32 × 8 | ContinueUnitexpansionwithmatchinglabels;refineexactU001-Dinstallationwhenofficialassemblymaterialbecomespublic. |
+| Unit | Unit CardKB2 | modeled | 84.7 × 54.3 × 6.15 | Continue ownUnit geometry andcorrespondingartwork together. |
+| Unit | Unit Neco | modeled | 44.6 × 43 × 10.1 | Root integration/necessary branch fixture, actual raster build emission and private sync. Not GPU or manufacturing acceptance. |
+| Unit | Unit Mini OLED | modeled | 25.8 × 12 × 6.8 | Continue exact-Unit expansion with matching labels; refine installed geometry when an official U166 assembly is available. |
+| Unit | Unit Mini IMU-Pro | modeled | 24 × 24 × 8 | Continue own Unit geometry and corresponding artwork together. |
+| Unit | Unit Glass | modeled | 53 × 42 × 6 | Root integration/necessary branch fixture,actual raster build emission and private sync;not GPU or physical acceptance. |
+| Unit | Unit 8Servos2-Chain | modeled | 24 × 56 × 11.5 | Root integration/necessary branch fixture, actual raster build emission and narrow sync. No GPU or manufacturing acceptance. |
+| Unit | UnitV2-USB | modeled | 24 × 48 × 24.2 | Root current-batch integration/build/resource/guide checks;no own fan rotor axis or production-fit acceptance. |
+| Unit | UnitV-M12 | modeled | 40 × 24 × 16.4 | Root necessary own native-motion fixture/integration/build/raster emission/private narrow sync;not GPU or physical acceptance |
+| Unit | TimerCamera-F | modeled | 24 × 48 × 23.3 | Continue Unit geometry and corresponding own artwork together. |
+| Unit | M5Camera-X | modeled | 24 × 48 × 13 | Root actual final API integration and necessary native-flexure/accessory fixture;not GPU or manufacturing acceptance |
+| Unit | UnitV2-M12 | modeled | 24 × 48 × 32 | Root actual-API integration/build/resource/guide checks;no physical lens-stop/pitch/150deg-shape or production-fit acceptance. |
+| Unit | TimerCamera-X | modeled | 24 × 48 × 15 | Continue own Unit geometry and matching artwork together. |
+| Unit | Unit EXT.IO | modeled | 24 × 32 × 11 | Root exact frozen API/current-batch integration;no browser,GPU or manufacturing acceptance |
+| Unit | Unit ADC | modeled | 24 × 32 × 10.2 | Root exact frozen API integration;no browser/GPU/manufacturing acceptance |
+| Unit | Unit DAC | modeled | 24 × 32 × 10.2 | Root frozen API integration/current-batch fixture;0verified;not GPU or production fit acceptance |
+| Unit | Unit M5Bit | modeled | 57 × 21 × 11 | Root frozenAPI integration/currentbatch fixture;notGPUorproductionfitacceptance |
+| Unit | Unit Mini BPS | modeled | 24 × 24 × 13 | Root exact frozen API integration;not GPU/manufacturing acceptance |
+| Unit | Unit HEX | modeled | 36 × 31.2 × 7 | Root frozen API integration/current-batch fixture;modeled,0verified;not GPU or manufacturing acceptance |
+| Unit | Unit RGB LED 10cm / 15LED | modeled | 待确认 | Rootcurrentbatchintegration;official100×10is2Dstripdatumonly,Z/137mmcompleteenvelopeareownreconstruction;notGPU/hardwarefitverified |
+| Unit | Unit RFID | modeled | 24 × 48 × 8 | Root frozen API/current-batch integration;modeled,0verified,not GPU or manufacturing acceptance |
+| Unit | Unit ENV (DHT12 + BMP280) | modeled | 24.2 × 32.2 × 8.1 | Root exact frozen API integration;not GPU or manufacturing acceptance |
+| Unit | Unit ENV-II | modeled | 24 × 32 × 8 | Root frozenAPI/current-batch integration;modeled,0verified;not GPU/manufacturing acceptance |
+| Unit | Unit Joystick (MEGA328P original) | modeled | 24 × 48 × 32 | Root exact frozen API integration,including joystick kind and explicit caller host keyboard mapping;not GPU/hardware/manufacturing acceptance |
+| Unit | Unit GPS (AT6558 + MAX2659) | modeled | 24 × 48 × 8 | Root exact frozen API integration;not GPU/manufacturing acceptance |

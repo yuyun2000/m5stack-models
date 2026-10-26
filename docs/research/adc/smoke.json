@@ -1,0 +1,223 @@
+{
+  "status": "pass",
+  "scope": "Own U013 necessary CPU geometry/API/artwork and one bounded real Model/transformed StickS3-HUB probe;no GPU/browser/build/hardware/manufacturing acceptance",
+  "modelPhysical": {
+    "constructionRoute": "own-dimensional-parametric",
+    "nativeGeometry": false,
+    "nativeTriangles": null,
+    "bodyPhysicalMeshes": 132,
+    "totalPhysicalMeshes": 154,
+    "triangles": 44800,
+    "allClosedPositiveDirectedTwoEdges": true,
+    "frontSide": true,
+    "nominalMm": [
+      24,
+      32,
+      10.2
+    ],
+    "baseCaseEnvelopeMm": [
+      24,
+      32.00000002384186,
+      8
+    ],
+    "actualPhysicalEnvelopeMm": [
+      24,
+      32.00000020265579,
+      10.19999999910593
+    ],
+    "mountingBores": {
+      "diameterMm": 5,
+      "pitchMm": 16,
+      "frontSideWallRays": 8,
+      "truePcbOpenEdgeClearance": true
+    },
+    "closureRays": 12,
+    "realUncoloredFrontRelief": 4,
+    "realRearM5Recess": true,
+    "actualPcbSupportPosts": 4,
+    "contacts": {
+      "grove": 4,
+      "terminal": 2
+    },
+    "fourActualRightAngleGroveReturns": true,
+    "allContactTailsBarrelsPadsRetained": true,
+    "frontSideSocketWallRays": 8,
+    "physicalRearFilms": 1,
+    "staticAccessory": {
+      "id": "m5stack.unit.adc.terminal-plug",
+      "physicalMeshes": 22,
+      "contacts": 2,
+      "femaleSprings": 4,
+      "wireEntryBores": 2,
+      "positiveTongueReceivingClearanceMm": [
+        0.1499998927116395,
+        0.1499998927116395,
+        0.24999999403953588,
+        0.24999999701976705
+      ],
+      "physicalFilms": 1,
+      "joints": 0,
+      "mechanicalOnly": true
+    },
+    "controls": 0,
+    "externalLeds": 0,
+    "joints": 0,
+    "readings": 0
+  },
+  "modelRuntime": {
+    "actualRemovablePlug": true,
+    "staticMechanicalRoundtrip": "pass",
+    "fixedCasePcbGroveReceiverDuringAttachment": true,
+    "noScrewAngleApiWithoutVisibleHeadEvidence": true,
+    "noSensorVoltageWaveformI2cFirmware": true,
+    "noAutomaticMotionOrEcho": true,
+    "allPhysicalAttributesIndicesWorldRetained": true,
+    "ownControls": 0,
+    "ownLeds": 0,
+    "ownJoints": 0
+  },
+  "modulePhysical": {
+    "constructionRoute": "own-dimensional-parametric",
+    "nativeGeometry": false,
+    "nativeTriangles": null,
+    "bodyPhysicalMeshes": 132,
+    "totalPhysicalMeshes": 154,
+    "triangles": 44800,
+    "allClosedPositiveDirectedTwoEdges": true,
+    "frontSide": true,
+    "nominalMm": [
+      24,
+      32,
+      10.2
+    ],
+    "baseCaseEnvelopeMm": [
+      24.000000000000036,
+      32.000000023841864,
+      8
+    ],
+    "actualPhysicalEnvelopeMm": [
+      24.000000000000036,
+      32.000000202655826,
+      10.199999999105927
+    ],
+    "mountingBores": {
+      "diameterMm": 5,
+      "pitchMm": 16,
+      "frontSideWallRays": 8,
+      "truePcbOpenEdgeClearance": true
+    },
+    "closureRays": 12,
+    "realUncoloredFrontRelief": 4,
+    "realRearM5Recess": true,
+    "actualPcbSupportPosts": 4,
+    "contacts": {
+      "grove": 4,
+      "terminal": 2
+    },
+    "fourActualRightAngleGroveReturns": true,
+    "allContactTailsBarrelsPadsRetained": true,
+    "frontSideSocketWallRays": 8,
+    "physicalRearFilms": 1,
+    "staticAccessory": {
+      "id": "m5stack.unit.adc.terminal-plug",
+      "physicalMeshes": 22,
+      "contacts": 2,
+      "femaleSprings": 4,
+      "wireEntryBores": 2,
+      "positiveTongueReceivingClearanceMm": [
+        0.14999989271163372,
+        0.1499998927116053,
+        0.2499999940395412,
+        0.2499999970197564
+      ],
+      "physicalFilms": 1,
+      "joints": 0,
+      "mechanicalOnly": true
+    },
+    "controls": 0,
+    "externalLeds": 0,
+    "joints": 0,
+    "readings": 0
+  },
+  "moduleRuntime": {
+    "actualRemovablePlug": true,
+    "staticMechanicalRoundtrip": "pass",
+    "fixedCasePcbGroveReceiverDuringAttachment": true,
+    "noScrewAngleApiWithoutVisibleHeadEvidence": true,
+    "noSensorVoltageWaveformI2cFirmware": true,
+    "noAutomaticMotionOrEcho": true,
+    "allPhysicalAttributesIndicesWorldRetained": true,
+    "ownControls": 0,
+    "ownLeds": 0,
+    "ownJoints": 0
+  },
+  "disposedResources": 640,
+  "configurations": [
+    {
+      "entry": "Model",
+      "options": {
+        "terminal": "installed"
+      },
+      "panels": [
+        "reference-redraw",
+        "reference-redraw"
+      ],
+      "physicalMeshes": 154,
+      "envelopeMm": [
+        24,
+        32.00000020265579,
+        10.19999999910593
+      ]
+    },
+    {
+      "entry": "Model",
+      "options": {
+        "terminal": "removed"
+      },
+      "panels": [
+        "reference-redraw"
+      ],
+      "physicalMeshes": 132,
+      "envelopeMm": [
+        24,
+        32.00000002384186,
+        8.119999997317791
+      ]
+    },
+    {
+      "entry": "GroveModule",
+      "options": {
+        "terminal": "installed"
+      },
+      "panels": [
+        "reference-redraw",
+        "reference-redraw"
+      ],
+      "physicalMeshes": 154,
+      "envelopeMm": [
+        24,
+        32.00000020265579,
+        10.19999999910593
+      ]
+    },
+    {
+      "entry": "GroveModule",
+      "options": {
+        "terminal": "removed"
+      },
+      "panels": [
+        "reference-redraw"
+      ],
+      "physicalMeshes": 132,
+      "envelopeMm": [
+        24,
+        32.000000023841864,
+        8.119999997317791
+      ]
+    }
+  ],
+  "allEntriesAndPresetsPhysicalAttributesIndexWorldInvariant": true,
+  "actualFourCoreCables": 2,
+  "realParentAndUnitPoses": true,
+  "branch": "grove/grove-2"
+}

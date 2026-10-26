@@ -1,0 +1,1616 @@
+{
+  "status": "pass",
+  "scope": "Own U038 author CPU native/geometry/API/configuration checks;not GPU/manufacturing fit",
+  "physicalMeshes": 237,
+  "sourceNativeBodyFaces": 4778,
+  "sourceNativeBodyParts": [
+    3194,
+    1584
+  ],
+  "sourceNativeAccessoryParts": {
+    "lego": 1966,
+    "wall1515": 2150
+  },
+  "allSourceFacesAndCornersRetained": true,
+  "combinedAnomalousBodyExcluded": true,
+  "allClosedPositiveDirectedTwoEdges": true,
+  "frontSide": true,
+  "ownNativeShellEnvelopeMm": [
+    24,
+    48,
+    13.199999809265137
+  ],
+  "actualDefaultEnvelopeMm": [
+    24,
+    48,
+    14.700000286102295
+  ],
+  "nominalMm": [
+    24,
+    48,
+    13
+  ],
+  "optics": {
+    "actualNativeMouthRadiusMm": 4.7,
+    "actualNativeThroatRadiusMm": 4,
+    "opticalFit": {
+      "status": "pass",
+      "scope": "Own source-facet optical neck/lip fit only;not manufacturing tolerances or a complete collision audit",
+      "sourceThroatRadiusMm": 4,
+      "sourceMouthRadiusMm": 4.7,
+      "hiddenNeckRadiusMm": 3.85,
+      "hiddenNeckZMm": [
+        2.7,
+        6.600000095367432
+      ],
+      "frontLipZMm": [
+        6.6,
+        6.650000000745058
+      ],
+      "visibleLipTopAndKnobAndGlassUnchanged": true,
+      "sourceThroatFacets": 38,
+      "minimumThroatFacetRadiusMm": 3.938999615704036,
+      "maximumActualNeckVertexRadiusMm": 3.85000005839243,
+      "conservativeAllAngleClearanceMm": 0.08899955731160603,
+      "levelsMm": [
+        4.95,
+        5.25,
+        5.85,
+        6.05,
+        6.3,
+        6.55
+      ],
+      "angularSamples": 24,
+      "wallNeckSamples": 144,
+      "minimumRadialClearanceMm": 0.09246999125404898,
+      "maximumRadialClearanceMm": 0.7884108082762618,
+      "allRayOriginsInActualAir": true,
+      "actualSourceFacetPlanesChecked": true,
+      "frontLipSeatSamples": 24,
+      "maximumLipSeatGapMm": 9.536743217353205e-8,
+      "lipOutsideNativeMaterial": true,
+      "continuousSensorNeckLipKnobSupport": true,
+      "samples": [
+        {
+          "zMm": 4.95,
+          "angleRad": 0.137,
+          "sourceFacet": 2948,
+          "neckFacet": 388,
+          "wallRadiusMm": 3.941901159997187,
+          "neckRadiusMm": 3.8493028291029887,
+          "clearanceMm": 0.09259833089419844
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 0.3987993877991494,
+          "sourceFacet": 2950,
+          "neckFacet": 396,
+          "wallRadiusMm": 3.9702563561937914,
+          "neckRadiusMm": 3.849302958927463,
+          "clearanceMm": 0.12095339726632837
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 0.6605987755982988,
+          "sourceFacet": 2950,
+          "neckFacet": 404,
+          "wallRadiusMm": 3.976643924298626,
+          "neckRadiusMm": 3.8493029237810203,
+          "clearanceMm": 0.12734100051760544
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 0.9223981633974483,
+          "sourceFacet": 2951,
+          "neckFacet": 412,
+          "wallRadiusMm": 3.944122243792975,
+          "neckRadiusMm": 3.8493029292169063,
+          "clearanceMm": 0.09481931457606851
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 1.1841975511965976,
+          "sourceFacet": 2954,
+          "neckFacet": 420,
+          "wallRadiusMm": 3.9417781708970727,
+          "neckRadiusMm": 3.849302953933991,
+          "clearanceMm": 0.09247521696308159
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 1.4459969389957472,
+          "sourceFacet": 2956,
+          "neckFacet": 428,
+          "wallRadiusMm": 3.970182201020309,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.12087938262673248
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 1.7077963267948966,
+          "sourceFacet": 2956,
+          "neckFacet": 436,
+          "wallRadiusMm": 3.9769738320899046,
+          "neckRadiusMm": 3.8493028291029896,
+          "clearanceMm": 0.12767100298691503
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 1.969595714594046,
+          "sourceFacet": 2957,
+          "neckFacet": 444,
+          "wallRadiusMm": 3.9446754907895962,
+          "neckRadiusMm": 3.849302958927463,
+          "clearanceMm": 0.09537253186213324
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 2.2313951023931953,
+          "sourceFacet": 2959,
+          "neckFacet": 452,
+          "wallRadiusMm": 3.9419769909571167,
+          "neckRadiusMm": 3.849302923781021,
+          "clearanceMm": 0.09267406717609594
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 2.493194490192345,
+          "sourceFacet": 2961,
+          "neckFacet": 460,
+          "wallRadiusMm": 3.9688306207995137,
+          "neckRadiusMm": 3.8493029292169068,
+          "clearanceMm": 0.1195276915826069
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 2.7549938779914944,
+          "sourceFacet": 2961,
+          "neckFacet": 468,
+          "wallRadiusMm": 3.97762153019665,
+          "neckRadiusMm": 3.84930295393399,
+          "clearanceMm": 0.1283185762626604
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 3.0167932657906436,
+          "sourceFacet": 2927,
+          "neckFacet": 476,
+          "wallRadiusMm": 3.98733264547067,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.13802982707709344
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 3.278592653589793,
+          "sourceFacet": 2929,
+          "neckFacet": 484,
+          "wallRadiusMm": 3.9418952473960327,
+          "neckRadiusMm": 3.8493028291029887,
+          "clearanceMm": 0.09259241829304399
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 3.5403920413889427,
+          "sourceFacet": 2931,
+          "neckFacet": 492,
+          "wallRadiusMm": 3.9702437039899774,
+          "neckRadiusMm": 3.849302958927463,
+          "clearanceMm": 0.1209407450625144
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 3.802191429188092,
+          "sourceFacet": 2931,
+          "neckFacet": 500,
+          "wallRadiusMm": 3.976631251739246,
+          "neckRadiusMm": 3.8493029237810203,
+          "clearanceMm": 0.1273283279582258
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 4.063990816987241,
+          "sourceFacet": 2932,
+          "neckFacet": 508,
+          "wallRadiusMm": 3.944112913493729,
+          "neckRadiusMm": 3.8493029292169063,
+          "clearanceMm": 0.09480998427682286
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 4.32579020478639,
+          "sourceFacet": 2935,
+          "neckFacet": 516,
+          "wallRadiusMm": 3.941772945188039,
+          "neckRadiusMm": 3.84930295393399,
+          "clearanceMm": 0.09246999125404898
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 4.587589592585541,
+          "sourceFacet": 2937,
+          "neckFacet": 524,
+          "wallRadiusMm": 3.97018219557607,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.1208793771824932
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 4.84938898038469,
+          "sourceFacet": 2937,
+          "neckFacet": 532,
+          "wallRadiusMm": 3.9769738311444787,
+          "neckRadiusMm": 3.849302829102988,
+          "clearanceMm": 0.12767100204149084
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 5.111188368183839,
+          "sourceFacet": 2938,
+          "neckFacet": 540,
+          "wallRadiusMm": 3.944679111293287,
+          "neckRadiusMm": 3.849302958927464,
+          "clearanceMm": 0.09537615236582297
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 5.372987755982988,
+          "sourceFacet": 2940,
+          "neckFacet": 548,
+          "wallRadiusMm": 3.941986288129678,
+          "neckRadiusMm": 3.849302923781021,
+          "clearanceMm": 0.0926833643486571
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 5.6347871437821375,
+          "sourceFacet": 2942,
+          "neckFacet": 556,
+          "wallRadiusMm": 3.968841240176715,
+          "neckRadiusMm": 3.8493029292169068,
+          "clearanceMm": 0.11953831095980805
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 5.896586531581287,
+          "sourceFacet": 2942,
+          "neckFacet": 564,
+          "wallRadiusMm": 3.977622238573161,
+          "neckRadiusMm": 3.8493029539339902,
+          "clearanceMm": 0.12831928463917075
+        },
+        {
+          "zMm": 4.95,
+          "angleRad": 6.158385919380436,
+          "sourceFacet": 2946,
+          "neckFacet": 572,
+          "wallRadiusMm": 3.987343452122006,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.13804063372842945
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 0.137,
+          "sourceFacet": 2948,
+          "neckFacet": 388,
+          "wallRadiusMm": 3.941994933781537,
+          "neckRadiusMm": 3.8493028291029887,
+          "clearanceMm": 0.09269210467854849
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 0.3987993877991494,
+          "sourceFacet": 2947,
+          "neckFacet": 396,
+          "wallRadiusMm": 3.9702097230802798,
+          "neckRadiusMm": 3.849302958927463,
+          "clearanceMm": 0.12090676415281676
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 0.6605987755982988,
+          "sourceFacet": 2950,
+          "neckFacet": 404,
+          "wallRadiusMm": 3.9765954923991433,
+          "neckRadiusMm": 3.8493029237810203,
+          "clearanceMm": 0.127292568618123
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 0.9223981633974483,
+          "sourceFacet": 2951,
+          "neckFacet": 412,
+          "wallRadiusMm": 3.944142685444004,
+          "neckRadiusMm": 3.8493029292169063,
+          "clearanceMm": 0.09483975622709773
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 1.1841975511965976,
+          "sourceFacet": 2954,
+          "neckFacet": 420,
+          "wallRadiusMm": 3.941790527134428,
+          "neckRadiusMm": 3.849302953933991,
+          "clearanceMm": 0.09248757320043666
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 1.4459969389957472,
+          "sourceFacet": 2953,
+          "neckFacet": 428,
+          "wallRadiusMm": 3.970123757999652,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.12082093960607532
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 1.7077963267948966,
+          "sourceFacet": 2956,
+          "neckFacet": 436,
+          "wallRadiusMm": 3.976802452680965,
+          "neckRadiusMm": 3.8493028291029896,
+          "clearanceMm": 0.12749962357797529
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 1.969595714594046,
+          "sourceFacet": 2957,
+          "neckFacet": 444,
+          "wallRadiusMm": 3.9448581571212014,
+          "neckRadiusMm": 3.849302958927463,
+          "clearanceMm": 0.09555519819373837
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 2.2313951023931953,
+          "sourceFacet": 2959,
+          "neckFacet": 452,
+          "wallRadiusMm": 3.942396217001472,
+          "neckRadiusMm": 3.849302923781021,
+          "clearanceMm": 0.09309329322045112
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 2.493194490192345,
+          "sourceFacet": 2961,
+          "neckFacet": 460,
+          "wallRadiusMm": 3.969381184847275,
+          "neckRadiusMm": 3.8493029292169068,
+          "clearanceMm": 0.12007825563036834
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 2.7549938779914944,
+          "sourceFacet": 2960,
+          "neckFacet": 468,
+          "wallRadiusMm": 3.977379317854716,
+          "neckRadiusMm": 3.84930295393399,
+          "clearanceMm": 0.12807636392072608
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 3.0167932657906436,
+          "sourceFacet": 2926,
+          "neckFacet": 476,
+          "wallRadiusMm": 3.9836531494404577,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.134350331046881
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 3.278592653589793,
+          "sourceFacet": 2929,
+          "neckFacet": 484,
+          "wallRadiusMm": 3.9419890169930594,
+          "neckRadiusMm": 3.8493028291029887,
+          "clearanceMm": 0.09268618789007066
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 3.5403920413889427,
+          "sourceFacet": 2928,
+          "neckFacet": 492,
+          "wallRadiusMm": 3.970198317891886,
+          "neckRadiusMm": 3.849302958927463,
+          "clearanceMm": 0.12089535896442305
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 3.802191429188092,
+          "sourceFacet": 2931,
+          "neckFacet": 500,
+          "wallRadiusMm": 3.9765868217002183,
+          "neckRadiusMm": 3.8493029237810203,
+          "clearanceMm": 0.12728389791919792
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 4.063990816987241,
+          "sourceFacet": 2932,
+          "neckFacet": 508,
+          "wallRadiusMm": 3.9441363015547504,
+          "neckRadiusMm": 3.8493029292169063,
+          "clearanceMm": 0.09483337233784406
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 4.32579020478639,
+          "sourceFacet": 2935,
+          "neckFacet": 516,
+          "wallRadiusMm": 3.9417853014253925,
+          "neckRadiusMm": 3.84930295393399,
+          "clearanceMm": 0.09248234749140272
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 4.587589592585541,
+          "sourceFacet": 2934,
+          "neckFacet": 524,
+          "wallRadiusMm": 3.970123757999652,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.12082093960607532
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 4.84938898038469,
+          "sourceFacet": 2937,
+          "neckFacet": 532,
+          "wallRadiusMm": 3.97680244992452,
+          "neckRadiusMm": 3.849302829102988,
+          "clearanceMm": 0.1274996208215322
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 5.111188368183839,
+          "sourceFacet": 2938,
+          "neckFacet": 540,
+          "wallRadiusMm": 3.944863336014358,
+          "neckRadiusMm": 3.849302958927464,
+          "clearanceMm": 0.09556037708689402
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 5.372987755982988,
+          "sourceFacet": 2940,
+          "neckFacet": 548,
+          "wallRadiusMm": 3.9424025782250984,
+          "neckRadiusMm": 3.849302923781021,
+          "clearanceMm": 0.09309965444407764
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 5.6347871437821375,
+          "sourceFacet": 2942,
+          "neckFacet": 556,
+          "wallRadiusMm": 3.969387846099083,
+          "neckRadiusMm": 3.8493029292169068,
+          "clearanceMm": 0.12008491688217626
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 5.896586531581287,
+          "sourceFacet": 2941,
+          "neckFacet": 564,
+          "wallRadiusMm": 3.9773825851120064,
+          "neckRadiusMm": 3.8493029539339902,
+          "clearanceMm": 0.12807963117801613
+        },
+        {
+          "zMm": 5.25,
+          "angleRad": 6.158385919380436,
+          "sourceFacet": 2943,
+          "neckFacet": 572,
+          "wallRadiusMm": 3.9836633886292994,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.13436057023572268
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 0.137,
+          "sourceFacet": 2945,
+          "neckFacet": 388,
+          "wallRadiusMm": 3.9420085373702767,
+          "neckRadiusMm": 3.8493028291029887,
+          "clearanceMm": 0.09270570826728797
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 0.3987993877991494,
+          "sourceFacet": 2947,
+          "neckFacet": 396,
+          "wallRadiusMm": 3.9701180137255694,
+          "neckRadiusMm": 3.849302958927463,
+          "clearanceMm": 0.12081505479810639
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 0.6605987755982988,
+          "sourceFacet": 2947,
+          "neckFacet": 404,
+          "wallRadiusMm": 3.976499122389346,
+          "neckRadiusMm": 3.8493029237810203,
+          "clearanceMm": 0.12719619860832587
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 0.9223981633974483,
+          "sourceFacet": 2949,
+          "neckFacet": 412,
+          "wallRadiusMm": 3.9441119222969743,
+          "neckRadiusMm": 3.8493029292169063,
+          "clearanceMm": 0.09480899308006796
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 1.1841975511965976,
+          "sourceFacet": 2952,
+          "neckFacet": 420,
+          "wallRadiusMm": 3.9419912512996578,
+          "neckRadiusMm": 3.849302953933991,
+          "clearanceMm": 0.09268829736566664
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 1.4459969389957472,
+          "sourceFacet": 2953,
+          "neckFacet": 428,
+          "wallRadiusMm": 3.9701099174467895,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.12080709905321285
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 1.7077963267948966,
+          "sourceFacet": 2953,
+          "neckFacet": 436,
+          "wallRadiusMm": 3.976492075852653,
+          "neckRadiusMm": 3.8493028291029896,
+          "clearanceMm": 0.12718924674966336
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 1.969595714594046,
+          "sourceFacet": 2955,
+          "neckFacet": 444,
+          "wallRadiusMm": 3.9441661953489686,
+          "neckRadiusMm": 3.849302958927463,
+          "clearanceMm": 0.09486323642150563
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 2.2313951023931953,
+          "sourceFacet": 2958,
+          "neckFacet": 452,
+          "wallRadiusMm": 3.9421023361401657,
+          "neckRadiusMm": 3.849302923781021,
+          "clearanceMm": 0.0927994123591449
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 2.493194490192345,
+          "sourceFacet": 2960,
+          "neckFacet": 460,
+          "wallRadiusMm": 3.970176452984598,
+          "neckRadiusMm": 3.8493029292169068,
+          "clearanceMm": 0.12087352376769145
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 2.7549938779914944,
+          "sourceFacet": 2960,
+          "neckFacet": 468,
+          "wallRadiusMm": 3.976549820781541,
+          "neckRadiusMm": 3.84930295393399,
+          "clearanceMm": 0.12724686684755104
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 3.0167932657906436,
+          "sourceFacet": 2926,
+          "neckFacet": 476,
+          "wallRadiusMm": 3.9471457696797283,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.09784295128615161
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 3.278592653589793,
+          "sourceFacet": 2925,
+          "neckFacet": 484,
+          "wallRadiusMm": 3.9420026197897076,
+          "neckRadiusMm": 3.8493028291029887,
+          "clearanceMm": 0.09269979068671885
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 3.5403920413889427,
+          "sourceFacet": 2928,
+          "neckFacet": 492,
+          "wallRadiusMm": 3.9701066163016105,
+          "neckRadiusMm": 3.849302958927463,
+          "clearanceMm": 0.12080365737414756
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 3.802191429188092,
+          "sourceFacet": 2928,
+          "neckFacet": 500,
+          "wallRadiusMm": 3.9764976668333087,
+          "neckRadiusMm": 3.8493029237810203,
+          "clearanceMm": 0.1271947430522884
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 4.063990816987241,
+          "sourceFacet": 2930,
+          "neckFacet": 508,
+          "wallRadiusMm": 3.944111431280821,
+          "neckRadiusMm": 3.8493029292169063,
+          "clearanceMm": 0.09480850206391489
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 4.32579020478639,
+          "sourceFacet": 2933,
+          "neckFacet": 516,
+          "wallRadiusMm": 3.941988934826474,
+          "neckRadiusMm": 3.84930295393399,
+          "clearanceMm": 0.09268598089248403
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 4.587589592585541,
+          "sourceFacet": 2934,
+          "neckFacet": 524,
+          "wallRadiusMm": 3.9701099174467895,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.12080709905321285
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 4.84938898038469,
+          "sourceFacet": 2934,
+          "neckFacet": 532,
+          "wallRadiusMm": 3.976492075852653,
+          "neckRadiusMm": 3.849302829102988,
+          "clearanceMm": 0.12718924674966514
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 5.111188368183839,
+          "sourceFacet": 2936,
+          "neckFacet": 540,
+          "wallRadiusMm": 3.9441683303291684,
+          "neckRadiusMm": 3.849302958927464,
+          "clearanceMm": 0.09486537140170448
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 5.372987755982988,
+          "sourceFacet": 2939,
+          "neckFacet": 548,
+          "wallRadiusMm": 3.9421028268948253,
+          "neckRadiusMm": 3.849302923781021,
+          "clearanceMm": 0.09279990311380448
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 5.6347871437821375,
+          "sourceFacet": 2941,
+          "neckFacet": 556,
+          "wallRadiusMm": 3.970177712347504,
+          "neckRadiusMm": 3.8493029292169068,
+          "clearanceMm": 0.12087478313059741
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 5.896586531581287,
+          "sourceFacet": 2941,
+          "neckFacet": 564,
+          "wallRadiusMm": 3.9765610425107543,
+          "neckRadiusMm": 3.8493029539339902,
+          "clearanceMm": 0.12725808857676402
+        },
+        {
+          "zMm": 5.85,
+          "angleRad": 6.158385919380436,
+          "sourceFacet": 2943,
+          "neckFacet": 572,
+          "wallRadiusMm": 3.947151541196887,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.09784872280331047
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 0.137,
+          "sourceFacet": 2188,
+          "neckFacet": 388,
+          "wallRadiusMm": 4.105142285007033,
+          "neckRadiusMm": 3.8493028291029887,
+          "clearanceMm": 0.2558394559040442
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 0.3987993877991494,
+          "sourceFacet": 2192,
+          "neckFacet": 396,
+          "wallRadiusMm": 4.119286162547155,
+          "neckRadiusMm": 3.849302958927463,
+          "clearanceMm": 0.2699832036196921
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 0.6605987755982988,
+          "sourceFacet": 2190,
+          "neckFacet": 404,
+          "wallRadiusMm": 4.125624240230178,
+          "neckRadiusMm": 3.8493029237810203,
+          "clearanceMm": 0.2763213164491578
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 0.9223981633974483,
+          "sourceFacet": 2204,
+          "neckFacet": 412,
+          "wallRadiusMm": 4.092256856968048,
+          "neckRadiusMm": 3.8493029292169063,
+          "clearanceMm": 0.2429539277511421
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 1.1841975511965976,
+          "sourceFacet": 2211,
+          "neckFacet": 420,
+          "wallRadiusMm": 4.089846877629273,
+          "neckRadiusMm": 3.849302953933991,
+          "clearanceMm": 0.24054392369528177
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 1.4459969389957472,
+          "sourceFacet": 2209,
+          "neckFacet": 428,
+          "wallRadiusMm": 4.118982118612608,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.26967930021903097
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 1.7077963267948966,
+          "sourceFacet": 2220,
+          "neckFacet": 436,
+          "wallRadiusMm": 4.125618311537856,
+          "neckRadiusMm": 3.8493028291029896,
+          "clearanceMm": 0.2763154824348666
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 1.969595714594046,
+          "sourceFacet": 2226,
+          "neckFacet": 444,
+          "wallRadiusMm": 4.091838214007641,
+          "neckRadiusMm": 3.849302958927463,
+          "clearanceMm": 0.24253525508017804
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 2.2313951023931953,
+          "sourceFacet": 2227,
+          "neckFacet": 452,
+          "wallRadiusMm": 4.089942110076573,
+          "neckRadiusMm": 3.849302923781021,
+          "clearanceMm": 0.2406391862955526
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 2.493194490192345,
+          "sourceFacet": 2229,
+          "neckFacet": 460,
+          "wallRadiusMm": 4.119186818236949,
+          "neckRadiusMm": 3.8493029292169068,
+          "clearanceMm": 0.26988388902004257
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 2.7549938779914944,
+          "sourceFacet": 2228,
+          "neckFacet": 468,
+          "wallRadiusMm": 4.125687326406477,
+          "neckRadiusMm": 3.84930295393399,
+          "clearanceMm": 0.27638437247248726
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 3.0167932657906436,
+          "sourceFacet": 2232,
+          "neckFacet": 476,
+          "wallRadiusMm": 4.092006664270272,
+          "neckRadiusMm": 3.8493028183935762,
+          "clearanceMm": 0.2427038458766959
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 3.278592653589793,
+          "sourceFacet": 2234,
+          "neckFacet": 484,
+          "wallRadiusMm": 4.10513483351127,
+          "neckRadiusMm": 3.8493028291029887,
+          "clearanceMm": 0.2558320044082816
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 3.5403920413889427,
+          "sourceFacet": 2236,
+          "neckFacet": 492,
+          "wallRadiusMm": 4.119274819812301,
+          "neckRadiusMm": 3.849302958927463,
+          "clearanceMm": 0.2699718608848376
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 3.802191429188092,
+          "sourceFacet": 2235,
+          "neckFacet": 500,
+          "wallRadiusMm": 4.125622944256098,
+          "neckRadiusMm": 3.8493029237810203,
+          "clearanceMm": 0.27632002047507775
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 4.063990816987241,
+          "sourceFacet": 2238,
+          "neckFacet": 508,
+          "wallRadiusMm": 4.092256856968049,
+          "neckRadiusMm": 3.8493029292169063,
+          "clearanceMm": 0.242953927751143
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 4.32579020478639,
+          "sourceFacet": 2241,
+          "neckFacet": 516,
+          "wallRadiusMm": 4.089844940844642,
+          "neckRadiusMm": 3.84930295393399,
+          "clearanceMm": 0.24054198691065176
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 4.587589592585541,
+          "sourceFacet": 2240,
+          "neckFacet": 524,
+          "wallRadiusMm": 4.11898211723294,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.26967929883936304
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 4.84938898038469,
+          "sourceFacet": 2243,
+          "neckFacet": 532,
+          "wallRadiusMm": 4.125618311537855,
+          "neckRadiusMm": 3.849302829102988,
+          "clearanceMm": 0.2763154824348675
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 5.111188368183839,
+          "sourceFacet": 2245,
+          "neckFacet": 540,
+          "wallRadiusMm": 4.091841282143035,
+          "neckRadiusMm": 3.849302958927464,
+          "clearanceMm": 0.2425383232155709
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 5.372987755982988,
+          "sourceFacet": 2246,
+          "neckFacet": 548,
+          "wallRadiusMm": 4.08994421330605,
+          "neckRadiusMm": 3.849302923781021,
+          "clearanceMm": 0.2406412895250294
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 5.6347871437821375,
+          "sourceFacet": 2248,
+          "neckFacet": 556,
+          "wallRadiusMm": 4.1191916552408,
+          "neckRadiusMm": 3.8493029292169068,
+          "clearanceMm": 0.26988872602389335
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 5.896586531581287,
+          "sourceFacet": 2247,
+          "neckFacet": 564,
+          "wallRadiusMm": 4.125699098407897,
+          "neckRadiusMm": 3.8493029539339902,
+          "clearanceMm": 0.2763961444739067
+        },
+        {
+          "zMm": 6.05,
+          "angleRad": 6.158385919380436,
+          "sourceFacet": 2186,
+          "neckFacet": 572,
+          "wallRadiusMm": 4.092015490002162,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.24271267160858567
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 0.137,
+          "sourceFacet": 2188,
+          "neckFacet": 389,
+          "wallRadiusMm": 4.377032037264478,
+          "neckRadiusMm": 3.8493028291029887,
+          "clearanceMm": 0.5277292081614897
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 0.3987993877991494,
+          "sourceFacet": 2192,
+          "neckFacet": 397,
+          "wallRadiusMm": 4.367912639423594,
+          "neckRadiusMm": 3.849302958927463,
+          "clearanceMm": 0.5186096804961307
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 0.6605987755982988,
+          "sourceFacet": 2190,
+          "neckFacet": 405,
+          "wallRadiusMm": 4.373804701944713,
+          "neckRadiusMm": 3.8493029237810203,
+          "clearanceMm": 0.5245017781636925
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 0.9223981633974483,
+          "sourceFacet": 2194,
+          "neckFacet": 413,
+          "wallRadiusMm": 4.338785994296228,
+          "neckRadiusMm": 3.8493029292169063,
+          "clearanceMm": 0.4894830650793218
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 1.1841975511965976,
+          "sourceFacet": 2206,
+          "neckFacet": 421,
+          "wallRadiusMm": 4.336288279841626,
+          "neckRadiusMm": 3.849302953933991,
+          "clearanceMm": 0.4869853259076349
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 1.4459969389957472,
+          "sourceFacet": 2209,
+          "neckFacet": 429,
+          "wallRadiusMm": 4.367069921625326,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.5177671032317495
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 1.7077963267948966,
+          "sourceFacet": 2220,
+          "neckFacet": 437,
+          "wallRadiusMm": 4.374164121093905,
+          "neckRadiusMm": 3.8493028291029896,
+          "clearanceMm": 0.5248612919909155
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 1.969595714594046,
+          "sourceFacet": 2226,
+          "neckFacet": 445,
+          "wallRadiusMm": 4.33805584622334,
+          "neckRadiusMm": 3.849302958927463,
+          "clearanceMm": 0.48875288729587707
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 2.2313951023931953,
+          "sourceFacet": 2221,
+          "neckFacet": 453,
+          "wallRadiusMm": 4.3364947137636785,
+          "neckRadiusMm": 3.849302923781021,
+          "clearanceMm": 0.48719178998265766
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 2.493194490192345,
+          "sourceFacet": 2229,
+          "neckFacet": 461,
+          "wallRadiusMm": 4.3676526084592515,
+          "neckRadiusMm": 3.8493029292169068,
+          "clearanceMm": 0.5183496792423448
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 2.7549938779914944,
+          "sourceFacet": 2228,
+          "neckFacet": 469,
+          "wallRadiusMm": 4.374217474434692,
+          "neckRadiusMm": 3.84930295393399,
+          "clearanceMm": 0.5249145205007024
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 3.0167932657906436,
+          "sourceFacet": 2232,
+          "neckFacet": 477,
+          "wallRadiusMm": 4.338512124394162,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.48920930600058554
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 3.278592653589793,
+          "sourceFacet": 2234,
+          "neckFacet": 485,
+          "wallRadiusMm": 4.3770220292417665,
+          "neckRadiusMm": 3.8493028291029887,
+          "clearanceMm": 0.5277192001387778
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 3.5403920413889427,
+          "sourceFacet": 2236,
+          "neckFacet": 493,
+          "wallRadiusMm": 4.367901386758907,
+          "neckRadiusMm": 3.849302958927463,
+          "clearanceMm": 0.5185984278314444
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 3.802191429188092,
+          "sourceFacet": 2235,
+          "neckFacet": 501,
+          "wallRadiusMm": 4.373803310280745,
+          "neckRadiusMm": 3.8493029237810203,
+          "clearanceMm": 0.5245003864997244
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 4.063990816987241,
+          "sourceFacet": 2237,
+          "neckFacet": 509,
+          "wallRadiusMm": 4.338785994296228,
+          "neckRadiusMm": 3.8493029292169063,
+          "clearanceMm": 0.4894830650793218
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 4.32579020478639,
+          "sourceFacet": 2239,
+          "neckFacet": 517,
+          "wallRadiusMm": 4.3362863574334005,
+          "neckRadiusMm": 3.84930295393399,
+          "clearanceMm": 0.4869834034994107
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 4.587589592585541,
+          "sourceFacet": 2240,
+          "neckFacet": 525,
+          "wallRadiusMm": 4.367069920257973,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.5177671018643961
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 4.84938898038469,
+          "sourceFacet": 2243,
+          "neckFacet": 533,
+          "wallRadiusMm": 4.374164121093905,
+          "neckRadiusMm": 3.849302829102988,
+          "clearanceMm": 0.5248612919909172
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 5.111188368183839,
+          "sourceFacet": 2245,
+          "neckFacet": 541,
+          "wallRadiusMm": 4.3380609027390715,
+          "neckRadiusMm": 3.849302958927464,
+          "clearanceMm": 0.48875794381160764
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 5.372987755982988,
+          "sourceFacet": 2244,
+          "neckFacet": 549,
+          "wallRadiusMm": 4.33650032786784,
+          "neckRadiusMm": 3.849302923781021,
+          "clearanceMm": 0.4871974040868188
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 5.6347871437821375,
+          "sourceFacet": 2248,
+          "neckFacet": 557,
+          "wallRadiusMm": 4.367662304896571,
+          "neckRadiusMm": 3.8493029292169068,
+          "clearanceMm": 0.5183593756796645
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 5.896586531581287,
+          "sourceFacet": 2247,
+          "neckFacet": 565,
+          "wallRadiusMm": 4.37422455726367,
+          "neckRadiusMm": 3.8493029539339902,
+          "clearanceMm": 0.5249216033296795
+        },
+        {
+          "zMm": 6.3,
+          "angleRad": 6.158385919380436,
+          "sourceFacet": 2186,
+          "neckFacet": 573,
+          "wallRadiusMm": 4.338526660998708,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.4892238426051314
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 0.137,
+          "sourceFacet": 2184,
+          "neckFacet": 389,
+          "wallRadiusMm": 4.6377136373792505,
+          "neckRadiusMm": 3.8493028291029887,
+          "clearanceMm": 0.7884108082762618
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 0.3987993877991494,
+          "sourceFacet": 2190,
+          "neckFacet": 397,
+          "wallRadiusMm": 4.616353150869624,
+          "neckRadiusMm": 3.849302958927463,
+          "clearanceMm": 0.7670501919421606
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 0.6605987755982988,
+          "sourceFacet": 2190,
+          "neckFacet": 405,
+          "wallRadiusMm": 4.621985163659248,
+          "neckRadiusMm": 3.8493029237810203,
+          "clearanceMm": 0.772682239878228
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 0.9223981633974483,
+          "sourceFacet": 2194,
+          "neckFacet": 413,
+          "wallRadiusMm": 4.585145183633555,
+          "neckRadiusMm": 3.8493029292169063,
+          "clearanceMm": 0.735842254416649
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 1.1841975511965976,
+          "sourceFacet": 2206,
+          "neckFacet": 421,
+          "wallRadiusMm": 4.582759254281999,
+          "neckRadiusMm": 3.849302953933991,
+          "clearanceMm": 0.7334563003480081
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 1.4459969389957472,
+          "sourceFacet": 2209,
+          "neckFacet": 429,
+          "wallRadiusMm": 4.615157724638044,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.7658549062444671
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 1.7077963267948966,
+          "sourceFacet": 2209,
+          "neckFacet": 437,
+          "wallRadiusMm": 4.622701982355896,
+          "neckRadiusMm": 3.8493028291029896,
+          "clearanceMm": 0.7733991532529068
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 1.969595714594046,
+          "sourceFacet": 2212,
+          "neckFacet": 445,
+          "wallRadiusMm": 4.584490479277912,
+          "neckRadiusMm": 3.849302958927463,
+          "clearanceMm": 0.7351875203504492
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 2.2313951023931953,
+          "sourceFacet": 2221,
+          "neckFacet": 453,
+          "wallRadiusMm": 4.582628874946538,
+          "neckRadiusMm": 3.849302923781021,
+          "clearanceMm": 0.7333259511655172
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 2.493194490192345,
+          "sourceFacet": 2228,
+          "neckFacet": 461,
+          "wallRadiusMm": 4.616042975573098,
+          "neckRadiusMm": 3.8493029292169068,
+          "clearanceMm": 0.7667400463561913
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 2.7549938779914944,
+          "sourceFacet": 2228,
+          "neckFacet": 469,
+          "wallRadiusMm": 4.622747622462907,
+          "neckRadiusMm": 3.84930295393399,
+          "clearanceMm": 0.7734446685289176
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 3.0167932657906436,
+          "sourceFacet": 2230,
+          "neckFacet": 477,
+          "wallRadiusMm": 4.584963295192715,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.7356604767991382
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 3.278592653589793,
+          "sourceFacet": 2231,
+          "neckFacet": 485,
+          "wallRadiusMm": 4.637699505974019,
+          "neckRadiusMm": 3.8493028291029887,
+          "clearanceMm": 0.78839667687103
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 3.5403920413889427,
+          "sourceFacet": 2235,
+          "neckFacet": 493,
+          "wallRadiusMm": 4.616341818199246,
+          "neckRadiusMm": 3.849302958927463,
+          "clearanceMm": 0.7670388592717834
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 3.802191429188092,
+          "sourceFacet": 2235,
+          "neckFacet": 501,
+          "wallRadiusMm": 4.621983676305391,
+          "neckRadiusMm": 3.8493029237810203,
+          "clearanceMm": 0.7726807525243711
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 4.063990816987241,
+          "sourceFacet": 2237,
+          "neckFacet": 509,
+          "wallRadiusMm": 4.585145183633554,
+          "neckRadiusMm": 3.8493029292169063,
+          "clearanceMm": 0.7358422544166481
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 4.32579020478639,
+          "sourceFacet": 2239,
+          "neckFacet": 517,
+          "wallRadiusMm": 4.582757224985488,
+          "neckRadiusMm": 3.84930295393399,
+          "clearanceMm": 0.7334542710514982
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 4.587589592585541,
+          "sourceFacet": 2240,
+          "neckFacet": 525,
+          "wallRadiusMm": 4.615157723283008,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.765854904889431
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 4.84938898038469,
+          "sourceFacet": 2240,
+          "neckFacet": 533,
+          "wallRadiusMm": 4.622701982168476,
+          "neckRadiusMm": 3.849302829102988,
+          "clearanceMm": 0.7733991530654878
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 5.111188368183839,
+          "sourceFacet": 2242,
+          "neckFacet": 541,
+          "wallRadiusMm": 4.584494164155042,
+          "neckRadiusMm": 3.849302958927464,
+          "clearanceMm": 0.735191205227578
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 5.372987755982988,
+          "sourceFacet": 2244,
+          "neckFacet": 549,
+          "wallRadiusMm": 4.582637997866637,
+          "neckRadiusMm": 3.849302923781021,
+          "clearanceMm": 0.7333350740856166
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 5.6347871437821375,
+          "sourceFacet": 2247,
+          "neckFacet": 557,
+          "wallRadiusMm": 4.616055241775525,
+          "neckRadiusMm": 3.8493029292169068,
+          "clearanceMm": 0.7667523125586184
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 5.896586531581287,
+          "sourceFacet": 2247,
+          "neckFacet": 565,
+          "wallRadiusMm": 4.622750016119443,
+          "neckRadiusMm": 3.8493029539339902,
+          "clearanceMm": 0.7734470621854523
+        },
+        {
+          "zMm": 6.55,
+          "angleRad": 6.158385919380436,
+          "sourceFacet": 2185,
+          "neckFacet": 573,
+          "wallRadiusMm": 4.584973914700669,
+          "neckRadiusMm": 3.8493028183935767,
+          "clearanceMm": 0.735671096307092
+        }
+      ],
+      "seats": [
+        {
+          "angleRad": 0.137,
+          "sourceOuterZMm": 6.599999904632568,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743128535363e-8
+        },
+        {
+          "angleRad": 0.3987993877991494,
+          "sourceOuterZMm": 6.599999904632568,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743128535363e-8
+        },
+        {
+          "angleRad": 0.6605987755982988,
+          "sourceOuterZMm": 6.599999904632568,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743128535363e-8
+        },
+        {
+          "angleRad": 0.9223981633974483,
+          "sourceOuterZMm": 6.599999904632568,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743128535363e-8
+        },
+        {
+          "angleRad": 1.1841975511965976,
+          "sourceOuterZMm": 6.599999904632568,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743128535363e-8
+        },
+        {
+          "angleRad": 1.4459969389957472,
+          "sourceOuterZMm": 6.599999904632568,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743128535363e-8
+        },
+        {
+          "angleRad": 1.7077963267948966,
+          "sourceOuterZMm": 6.5999999046325675,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743217353205e-8
+        },
+        {
+          "angleRad": 1.969595714594046,
+          "sourceOuterZMm": 6.599999904632568,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743128535363e-8
+        },
+        {
+          "angleRad": 2.2313951023931953,
+          "sourceOuterZMm": 6.599999904632568,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743128535363e-8
+        },
+        {
+          "angleRad": 2.493194490192345,
+          "sourceOuterZMm": 6.599999904632568,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743128535363e-8
+        },
+        {
+          "angleRad": 2.7549938779914944,
+          "sourceOuterZMm": 6.599999904632568,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743128535363e-8
+        },
+        {
+          "angleRad": 3.0167932657906436,
+          "sourceOuterZMm": 6.599999904632568,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743128535363e-8
+        },
+        {
+          "angleRad": 3.278592653589793,
+          "sourceOuterZMm": 6.599999904632568,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743128535363e-8
+        },
+        {
+          "angleRad": 3.5403920413889427,
+          "sourceOuterZMm": 6.599999904632568,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743128535363e-8
+        },
+        {
+          "angleRad": 3.802191429188092,
+          "sourceOuterZMm": 6.599999904632569,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743039717521e-8
+        },
+        {
+          "angleRad": 4.063990816987241,
+          "sourceOuterZMm": 6.599999904632568,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743128535363e-8
+        },
+        {
+          "angleRad": 4.32579020478639,
+          "sourceOuterZMm": 6.599999904632568,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743128535363e-8
+        },
+        {
+          "angleRad": 4.587589592585541,
+          "sourceOuterZMm": 6.599999904632568,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743128535363e-8
+        },
+        {
+          "angleRad": 4.84938898038469,
+          "sourceOuterZMm": 6.599999904632568,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743128535363e-8
+        },
+        {
+          "angleRad": 5.111188368183839,
+          "sourceOuterZMm": 6.599999904632568,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743128535363e-8
+        },
+        {
+          "angleRad": 5.372987755982988,
+          "sourceOuterZMm": 6.599999904632568,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743128535363e-8
+        },
+        {
+          "angleRad": 5.6347871437821375,
+          "sourceOuterZMm": 6.599999904632568,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743128535363e-8
+        },
+        {
+          "angleRad": 5.896586531581287,
+          "sourceOuterZMm": 6.599999904632568,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743128535363e-8
+        },
+        {
+          "angleRad": 6.158385919380436,
+          "sourceOuterZMm": 6.599999904632568,
+          "lipBottomZMm": 6.6,
+          "seatGapMm": 9.536743128535363e-8
+        }
+      ]
+    },
+    "curvedGlass": true,
+    "deepStop": true,
+    "physicalSupports": 4,
+    "passiveAnchor": "camera"
+  },
+  "contacts": {
+    "grove": 4,
+    "usb": 24,
+    "cameraFpc": 24
+  },
+  "reset": {
+    "nativeCapVertices": 176,
+    "travelMm": 0.18,
+    "followerWeight": 0.4618972728467857,
+    "multiSourceHold": true,
+    "cancelNoClick": true,
+    "neutralPositionsNormalsIndicesExact": true,
+    "fixedPackageBoardPorts": true
+  },
+  "artwork": {
+    "pngCount": 0,
+    "assets": [],
+    "physicalFilms": 0,
+    "reason": "Actual own unpainted native M5 relief;not missing-original postponement",
+    "allEntriesAndPresetsPhysicalAttributesIndexWorldInvariant": true
+  },
+  "configurations": [
+    {
+      "entry": "Model",
+      "mount": "none",
+      "envelopeMm": [
+        24,
+        48,
+        14.700000286102295
+      ],
+      "nativeAccessoryFaces": 0
+    },
+    {
+      "entry": "Model",
+      "mount": "lego",
+      "envelopeMm": [
+        40,
+        48,
+        16.09999990463257
+      ],
+      "nativeAccessoryFaces": 1966
+    },
+    {
+      "entry": "Model",
+      "mount": "wall1515",
+      "envelopeMm": [
+        26.703895568847656,
+        48,
+        18.30000114440918
+      ],
+      "nativeAccessoryFaces": 2150
+    },
+    {
+      "entry": "GroveModule",
+      "mount": "none",
+      "envelopeMm": [
+        24,
+        84.18999992847442,
+        24.479093551635742
+      ],
+      "nativeAccessoryFaces": 0
+    },
+    {
+      "entry": "GroveModule",
+      "mount": "lego",
+      "envelopeMm": [
+        40,
+        84.18999992847442,
+        24.479093551635742
+      ],
+      "nativeAccessoryFaces": 1966
+    },
+    {
+      "entry": "GroveModule",
+      "mount": "wall1515",
+      "envelopeMm": [
+        26.703895568847656,
+        84.18999992847442,
+        24.479093551635742
+      ],
+      "nativeAccessoryFaces": 2150
+    }
+  ],
+  "module": {
+    "fourWire": true,
+    "transformedParentPose": true,
+    "nestedRoundtrip": true,
+    "peerIndependent": true,
+    "disposal": true
+  },
+  "browserTested": false,
+  "buildTested": false,
+  "physicalTested": false
+}

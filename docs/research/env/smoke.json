@@ -1,0 +1,291 @@
+{
+  "status": "pass",
+  "scope": "Own original U001 necessary CPU geometry/API/ordinary raster readback and one bounded real Model/transformed StickS3-HUB probe;not browser/GPU/build/hardware/manufacturing acceptance",
+  "modelPhysical": {
+    "constructionRoute": "own-dimensional-parametric",
+    "nativeGeometry": false,
+    "nativeTriangles": null,
+    "nominalMm": [
+      24.2,
+      32.2,
+      8.1
+    ],
+    "actualPhysicalEnvelopeMm": [
+      24.200000762939453,
+      32.20000076293945,
+      8.100000011473895
+    ],
+    "physicalMeshes": 108,
+    "triangles": 158704,
+    "allClosedPositiveDirectedTwoEdges": true,
+    "frontSide": true,
+    "allInternalPlanesAndPackagePositions": "Own photo-derived appearance reconstruction,not BOM/manufacturing datums",
+    "closureRays": 12,
+    "mountingBores": {
+      "count": 2,
+      "diameterMm": 5,
+      "centres": [
+        [
+          -8.15,
+          -4
+        ],
+        [
+          8.15,
+          -4
+        ]
+      ],
+      "frontSideWallRays": 8,
+      "inferred": true
+    },
+    "pcbTubeClearanceMm": [
+      0.300000095367432,
+      0.300000095367432
+    ],
+    "pcbCentralBossClearanceMm": 0.34999990463256836,
+    "ventRows": [
+      4,
+      5,
+      4,
+      5,
+      4,
+      5,
+      4,
+      5,
+      4
+    ],
+    "ventCount": 40,
+    "ventWallRays": 320,
+    "ventBackingHits": {
+      "ENV DHT12 physical grille cap and 18 inferred package apertures": 32,
+      "ENV U001 own retained PCB with true bore reliefs and through solder holes": 5,
+      "ENV BMP280 actual metal cap and true pressure hole": 1,
+      "ENV own inferred fixed supporting passive": 1,
+      "ENV HT7533 actual solderland": 1
+    },
+    "dht12": {
+      "realGrilleApertures": 18,
+      "packageGrilleIsInferred": true,
+      "frontSideWallRays": 72,
+      "fixedSensingMedium": true,
+      "legs": 4
+    },
+    "bmp280": {
+      "retainedLgaContacts": 8,
+      "realPressureHoleRadiusMm": 0.16,
+      "frontSideWallRays": 4,
+      "fixedFloor": true
+    },
+    "grove": {
+      "contacts": 4,
+      "rightAngleReturns": 4,
+      "throughPcbTails": 4,
+      "platedBores": 4,
+      "annularPads": 8,
+      "frontSideWallRays": 4
+    },
+    "physicalFilms": 2,
+    "realUncoloredM5Geometry": true,
+    "controls": 0,
+    "leds": 0,
+    "joints": 0,
+    "sensorReadings": 0
+  },
+  "modelRuntime": {
+    "staticActualCasePcbPackagesContacts": true,
+    "noEnvironmentalReadingsSamplingI2cRegistersPowerFirmware": true,
+    "noAutomaticLightsMotionOrInputEcho": true,
+    "allPhysicalAttributesIndicesWorldRetained": true,
+    "ownControls": 0,
+    "ownLeds": 0,
+    "ownJoints": 0,
+    "noSensorAnchor": true
+  },
+  "modelPeerInvariant": true,
+  "actualAPI": {
+    "exports": [
+      "GroveModule",
+      "Model",
+      "configurationSchema",
+      "configurations",
+      "defaults",
+      "spec"
+    ],
+    "defaultExport": "Model",
+    "bodyComponentOrder": [
+      "grove"
+    ],
+    "keymap": {},
+    "defaults": {},
+    "configurationSchema": {
+      "artwork": {
+        "type": "boolean",
+        "default": true,
+        "meaning": "Remove ink only; retain physical main/QC films, all 40 real vents, sensor packages, PCB and case"
+      }
+    },
+    "configurations": [
+      {
+        "id": "complete",
+        "name": "完整原版 ENV U001",
+        "options": {}
+      }
+    ],
+    "moduleComponentOrder": [
+      "grove",
+      "unitFrame",
+      "cable"
+    ]
+  },
+  "modelDisposedResources": 196,
+  "modulePhysical": {
+    "constructionRoute": "own-dimensional-parametric",
+    "nativeGeometry": false,
+    "nativeTriangles": null,
+    "nominalMm": [
+      24.2,
+      32.2,
+      8.1
+    ],
+    "actualPhysicalEnvelopeMm": [
+      24.200000762939478,
+      32.20000076293948,
+      8.100000011473895
+    ],
+    "physicalMeshes": 108,
+    "triangles": 158704,
+    "allClosedPositiveDirectedTwoEdges": true,
+    "frontSide": true,
+    "allInternalPlanesAndPackagePositions": "Own photo-derived appearance reconstruction,not BOM/manufacturing datums",
+    "closureRays": 12,
+    "mountingBores": {
+      "count": 2,
+      "diameterMm": 5,
+      "centres": [
+        [
+          -8.15,
+          -4
+        ],
+        [
+          8.15,
+          -4
+        ]
+      ],
+      "frontSideWallRays": 8,
+      "inferred": true
+    },
+    "pcbTubeClearanceMm": [
+      0.3000000953674373,
+      0.30000009536746575
+    ],
+    "pcbCentralBossClearanceMm": 0.34999990463253994,
+    "ventRows": [
+      4,
+      5,
+      4,
+      5,
+      4,
+      5,
+      4,
+      5,
+      4
+    ],
+    "ventCount": 40,
+    "ventWallRays": 320,
+    "ventBackingHits": {
+      "ENV DHT12 physical grille cap and 18 inferred package apertures": 32,
+      "ENV U001 own retained PCB with true bore reliefs and through solder holes": 5,
+      "ENV BMP280 actual metal cap and true pressure hole": 1,
+      "ENV own inferred fixed supporting passive": 1,
+      "ENV HT7533 actual solderland": 1
+    },
+    "dht12": {
+      "realGrilleApertures": 18,
+      "packageGrilleIsInferred": true,
+      "frontSideWallRays": 72,
+      "fixedSensingMedium": true,
+      "legs": 4
+    },
+    "bmp280": {
+      "retainedLgaContacts": 8,
+      "realPressureHoleRadiusMm": 0.16,
+      "frontSideWallRays": 4,
+      "fixedFloor": true
+    },
+    "grove": {
+      "contacts": 4,
+      "rightAngleReturns": 4,
+      "throughPcbTails": 4,
+      "platedBores": 4,
+      "annularPads": 8,
+      "frontSideWallRays": 4
+    },
+    "physicalFilms": 2,
+    "realUncoloredM5Geometry": true,
+    "controls": 0,
+    "leds": 0,
+    "joints": 0,
+    "sensorReadings": 0
+  },
+  "moduleRuntime": {
+    "staticActualCasePcbPackagesContacts": true,
+    "noEnvironmentalReadingsSamplingI2cRegistersPowerFirmware": true,
+    "noAutomaticLightsMotionOrInputEcho": true,
+    "allPhysicalAttributesIndicesWorldRetained": true,
+    "ownControls": 0,
+    "ownLeds": 0,
+    "ownJoints": 0,
+    "noSensorAnchor": true
+  },
+  "modulePeerInvariant": true,
+  "disposedResources": 780,
+  "configurations": [
+    {
+      "entry": "Model",
+      "options": {},
+      "panels": [
+        "reference-redraw",
+        "reference-redraw"
+      ],
+      "physicalMeshes": 108,
+      "envelopeMm": [
+        24.200000762939453,
+        32.20000076293945,
+        8.100000011473895
+      ]
+    },
+    {
+      "entry": "GroveModule",
+      "options": {},
+      "panels": [
+        "reference-redraw",
+        "reference-redraw"
+      ],
+      "physicalMeshes": 108,
+      "envelopeMm": [
+        24.200000762939453,
+        32.20000076293945,
+        8.100000011473895
+      ]
+    }
+  ],
+  "allEntriesAndPresetsPhysicalAttributesIndexWorldInvariant": true,
+  "actualFourCoreCables": 2,
+  "realAncestorAndUnitPoses": true,
+  "branch": "grove/grove-3",
+  "rasters": [
+    {
+      "name": "back",
+      "width": 1630,
+      "height": 1215,
+      "sha256": "977bdd2afef4561e253d20e4696b74fdcc918328e4c6bdb8895d96fde6f8dd85",
+      "decodedNonempty": true
+    },
+    {
+      "name": "qc",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "27dd05c7f1c5fefd1e29e9efbbd03f40b3cac087299f5ca0b5ccdc84a5e1323d",
+      "decodedNonempty": true
+    }
+  ]
+}

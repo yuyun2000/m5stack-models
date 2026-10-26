@@ -1,0 +1,222 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-10-26T19:42:25.450Z",
+  "sku": "U166",
+  "scope": "Bounded own dimensioned-parametric geometry/material topology/openPCB+FPCbores/dualGrove/panel seating/foldedfit/live framebuffer formats/noecho/fixed-white no-touch/ink-off/fourcore/peer/disposal smoke. No GPU/browser/device/productionPCBplacement/manufacturing-fit acceptance.",
+  "sourceRoute": "own-dimensioned-parametric-no-CAD",
+  "nativeTriangles": null,
+  "drawingEnvelopeMm": [
+    25.8,
+    12,
+    6.75
+  ],
+  "visualEnvelopeMm": [
+    25.800000095367434,
+    12.119999891519546,
+    6.750000005960464
+  ],
+  "defaultPhysicalMeshes": 192,
+  "directedCountTwo": true,
+  "positiveVolume": true,
+  "FrontSide": true,
+  "pcbAxes": 20,
+  "pcbWalls": 16,
+  "tailAxes": 2,
+  "tailWalls": 8,
+  "groveContacts": 8,
+  "groveWalls": 6,
+  "cornerVertices": 10,
+  "fit": {
+    "glassGroves": {
+      "status": "pass",
+      "candidatePairs": 0,
+      "surfaceProbes": 0,
+      "interiorGridProbes": 0,
+      "directions": 3,
+      "scope": "Bidirectional vertex/triangle-centre samples and finite-volume overlap grids against actual fixed geometry plus added metal/plastic; no manufacturing fit or exhaustive CSG proof"
+    },
+    "flexPcb": {
+      "status": "pass",
+      "candidatePairs": 1,
+      "surfaceProbes": 122,
+      "interiorGridProbes": 27,
+      "directions": 3,
+      "scope": "Bidirectional vertex/triangle-centre samples and finite-volume overlap grids against actual fixed geometry plus added metal/plastic; no manufacturing fit or exhaustive CSG proof"
+    },
+    "flexGlass": {
+      "status": "pass",
+      "candidatePairs": 1,
+      "surfaceProbes": 2,
+      "interiorGridProbes": 27,
+      "directions": 3,
+      "scope": "Bidirectional vertex/triangle-centre samples and finite-volume overlap grids against actual fixed geometry plus added metal/plastic; no manufacturing fit or exhaustive CSG proof"
+    }
+  },
+  "framebuffer": {
+    "resolution": [
+      72,
+      40
+    ],
+    "defaultBlankBlackRGBA": true,
+    "sameBufferAsTexture": true,
+    "actualRGBA_RGB888_RGB565_Swap_PartialFill_CanvasPresent": true,
+    "fixedWhiteShader": true,
+    "noTouchRealRejections": 10,
+    "externalNoInputEcho": true,
+    "allPhysicalAndOutputAttributesIndexWorldPreserved": true,
+    "portsPreserved": true,
+    "hostAndPeerBuffersPreserved": true
+  },
+  "artworkConfigurations": 2,
+  "allPhysicalAttributesIndexMatrixWorldInvariant": true,
+  "transformedParentFourCore": true,
+  "rightGroveRealAttachment": true,
+  "independentPeer": true,
+  "wholeUnitRoundtrip": true,
+  "wrongFamilyPreservesScene": true,
+  "disposedResources": 949,
+  "framebufferTexturesDisposedExactlyOnce": 5,
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 2,
+    "panels": 2,
+    "independentPhysicalFilm": false,
+    "originalsDistributed": false
+  },
+  "publicAPI": {
+    "exports": [
+      "Model",
+      "GroveModule",
+      "spec"
+    ],
+    "bodyComponentOrder": [
+      "grove",
+      "grove-right",
+      "lcd"
+    ],
+    "moduleComponentOrder": [
+      "grove",
+      "grove-right",
+      "lcd",
+      "unitFrame",
+      "cable"
+    ],
+    "ports": [
+      "grove",
+      "grove-right"
+    ],
+    "canonicalCableInput": "grove",
+    "controls": [],
+    "leds": [],
+    "displays": [
+      "lcd"
+    ],
+    "sensors": [],
+    "joints": [],
+    "anchors": [],
+    "defaults": {},
+    "configurations": [
+      {
+        "id": "assembled",
+        "name": "Complete Mini OLED with folded FPC",
+        "options": {}
+      }
+    ],
+    "configurationSchema": {},
+    "assemblyProperty": "miniOledAssembly",
+    "assemblyFields": [
+      "board",
+      "left",
+      "right",
+      "flex",
+      "glass",
+      "display"
+    ],
+    "boardFields": [
+      "pcb",
+      "ht",
+      "htPins",
+      "passives",
+      "terminations",
+      "lands"
+    ],
+    "groveFields": [
+      "frame",
+      "floor",
+      "walls",
+      "guides",
+      "roof",
+      "back",
+      "contacts",
+      "returns",
+      "feet",
+      "lands",
+      "port"
+    ],
+    "glassFields": [
+      "base",
+      "cap",
+      "seal",
+      "adhesive"
+    ],
+    "flexFields": [
+      "tail",
+      "pads",
+      "fanTraces",
+      "folded",
+      "foldTraces",
+      "bond",
+      "path"
+    ],
+    "commands": {
+      "lcd": {
+        "type": "display",
+        "formats": [
+          "rgba",
+          "rgba8888",
+          "rgb888",
+          "rgb",
+          "rgb565"
+        ],
+        "methods": [
+          "writeRGBA",
+          "writeRGB888",
+          "writeRGB565",
+          "fill",
+          "getContext2D",
+          "present",
+          "setPower",
+          "setBacklight",
+          "setPixelEffect",
+          "invalidate"
+        ],
+        "fixedStyle": "oled",
+        "touch": false,
+        "unsupported": "setStyle(non-oled),setTouchEnabled(non-false),touch(),display style/touch commands reject;invalid style/touch commands reject before pixel writes"
+      }
+    },
+    "inputEvents": [],
+    "physicalMotion": {
+      "moving": [],
+      "fixed": "All PCB/glass/adhesive/folded FPC/Grove bodies and contacts;external framebuffer modifies buffer/uniforms only"
+    },
+    "moduleExport": "GroveModule",
+    "groveModuleExtraComponents": [
+      "unitFrame",
+      "cable"
+    ],
+    "sourceRoute": "own-dimensioned-parametric-no-CAD",
+    "noNativeCadTriangleClaim": true,
+    "externalFramebufferOnly": true,
+    "defaultBlank": true,
+    "noElectricalOrFirmware": true
+  },
+  "inferred": "No exactassembledCAD.All PCBfineoutline/undimensionedboardbores,installedplanes,Grovebody/contact/SMTreturnconstruction,glasscap/base/COGsplit,adhesiveseating,foldradius/installedFPCrouting/coppertracepositions andhiddenpopulationplacement inferred fromownphotos/drawing.The flex edge is allowed its actual reconstructed thickness outside the12mm rigidPCB footprint;reported separately fromdrawing.NoI2C/SSD1315registers/electrical/firmware,touch,buttons,serviceorbendjoint.",
+  "closedMaterialSummary": {
+    "meshes": 192,
+    "allDirectedCountTwo": true,
+    "allPositiveVolume": true,
+    "allFrontSide": true,
+    "minimumVolumeMm3": 0.002898017372111146
+  }
+}

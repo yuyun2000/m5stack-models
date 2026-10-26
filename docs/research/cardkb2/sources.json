@@ -1,0 +1,509 @@
+{
+  "id": "cardkb2",
+  "sku": "U215",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_CardKB2",
+  "retrievedAt": "2026-10-27",
+  "sourceRoute": "own-dimensioned-parametric-no-CAD",
+  "nativeCadTriangleClaim": false,
+  "sources": [
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1225/U215-Unit_CardKB2_Dimension_Diagram_page_01.png",
+      "sha256": "13739352e9fdb47e194847cec8767d9236fb57b5c02fd4df1d9f5c23ad805f62",
+      "bytes": 684733
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1225/U215-Unit_CardKB2_Dimension_Diagram.pdf",
+      "sha256": "1c3a7435aadbb7cddfb49325fee66a398bb1db29202e3ee79031d3415264696a",
+      "bytes": 582609
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1225/U215_main-pictures_05.webp",
+      "sha256": "b3b57e90346952727263c80f3c886cc1613279760670ae048c7142a06821dd07",
+      "bytes": 109822
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1225/U215_main-pictures_06.webp",
+      "sha256": "914c1a5f1846f4437407a82c2eac9e1d8085bc976fdd2b05d52dfcaf979997c2",
+      "bytes": 80216
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1225/U215_main-pictures_07.webp",
+      "sha256": "5382f1cf89f2fa0019b44e32a66486849df00bb3cb81d9e4f0546fa9abe05afe",
+      "bytes": 125080
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1225/U215_main-pictures_08.webp",
+      "sha256": "f8ce706dd26ede1e928413e0ef304c34a1a6b0a70213577379938df2757f4d50",
+      "bytes": 24262
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1225/U215_main-pictures_09.webp",
+      "sha256": "512a5e9a80ea59ef1e08a88b01173aa12635aacab37c387cc7b1c021ac33278d",
+      "bytes": 26926
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1225/U215_main-pictures_10.webp",
+      "sha256": "551dccac9efa0a6b5d1d5254438c188073f144bd92b696680fd816a752e6213b",
+      "bytes": 23896
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1225/U215_main-pictures_11.webp",
+      "sha256": "cf50c9db9af849c14cec8db01d8c41db122846ce6ee29c2bf3c66ddff374c276",
+      "bytes": 23394
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1225/esp32-c61_datasheet_en.pdf",
+      "sha256": "1dd0dae28f1da224dba9f2c1c7ef4b9c2a4dd068aa1fbe522d76cc63b13bf67f",
+      "bytes": 723083
+    }
+  ],
+  "officialMCP": {
+    "query": "Unit CardKB2 U215 mechanical keys RGB USB Grove actual package",
+    "filter_type": "product",
+    "is_chip": false,
+    "rawInfoSha256": "9c060786721383e5abcfd8d35fe6e89ec3feb2dfb613d9c925c4ee7774bef721"
+  },
+  "dimensionBasis": {
+    "pcbMm": [
+      84,
+      54,
+      1
+    ],
+    "drawingAssembledMm": [
+      84.7,
+      54.3,
+      6.15
+    ],
+    "visualWithInferredBackFilmMm": [
+      84.70000009536744,
+      54.29999997615814,
+      6.1900000029802325
+    ],
+    "vendorNominalMm": [
+      84.7,
+      54.3,
+      1
+    ],
+    "fourBoreGridMm": [
+      78,
+      48
+    ],
+    "boreDiameterMm": 2.2,
+    "nominalClarification": "Vendor1mm isPCBthickness;do not flattenGrove/keys.0.04film explains6.19visual versus6.15drawingbareassembly."
+  },
+  "publicSourceFeedback": {
+    "feedback_id": "ff8e146d7d1a49608b4af75abdfd6004",
+    "scope": "Preflightreported vendor1mmPCB vsown6.15mmpopulatedenvelope ambiguity,no private sourceinfo."
+  },
+  "publicAPI": {
+    "exports": [
+      "Model",
+      "GroveModule",
+      "spec",
+      "KEYS"
+    ],
+    "assemblyProperty": "cardkb2Assembly",
+    "assemblyFields": [
+      "pcb",
+      "input",
+      "usb",
+      "keys",
+      "reset",
+      "boot",
+      "electronics",
+      "label"
+    ],
+    "bodyComponentOrder": [
+      "grove",
+      "usb",
+      "key-1",
+      "key-2",
+      "key-3",
+      "key-4",
+      "key-5",
+      "key-6",
+      "key-7",
+      "key-8",
+      "key-9",
+      "key-10",
+      "key-11",
+      "key-12",
+      "key-13",
+      "key-14",
+      "key-15",
+      "key-16",
+      "key-17",
+      "key-18",
+      "key-19",
+      "key-20",
+      "key-21",
+      "key-22",
+      "key-23",
+      "key-24",
+      "key-25",
+      "key-26",
+      "key-27",
+      "key-28",
+      "key-29",
+      "key-30",
+      "key-31",
+      "key-32",
+      "key-33",
+      "key-34",
+      "key-35",
+      "key-36",
+      "key-37",
+      "key-38",
+      "key-39",
+      "key-40",
+      "key-41",
+      "key-42",
+      "reset",
+      "boot",
+      "rgb"
+    ],
+    "moduleComponentOrder": [
+      "grove",
+      "usb",
+      "key-1",
+      "key-2",
+      "key-3",
+      "key-4",
+      "key-5",
+      "key-6",
+      "key-7",
+      "key-8",
+      "key-9",
+      "key-10",
+      "key-11",
+      "key-12",
+      "key-13",
+      "key-14",
+      "key-15",
+      "key-16",
+      "key-17",
+      "key-18",
+      "key-19",
+      "key-20",
+      "key-21",
+      "key-22",
+      "key-23",
+      "key-24",
+      "key-25",
+      "key-26",
+      "key-27",
+      "key-28",
+      "key-29",
+      "key-30",
+      "key-31",
+      "key-32",
+      "key-33",
+      "key-34",
+      "key-35",
+      "key-36",
+      "key-37",
+      "key-38",
+      "key-39",
+      "key-40",
+      "key-41",
+      "key-42",
+      "reset",
+      "boot",
+      "rgb",
+      "unitFrame",
+      "cable"
+    ],
+    "canonicalCableInput": "grove",
+    "defaults": {},
+    "ports": [
+      "grove",
+      "usb"
+    ],
+    "controls": [
+      "key-1",
+      "key-2",
+      "key-3",
+      "key-4",
+      "key-5",
+      "key-6",
+      "key-7",
+      "key-8",
+      "key-9",
+      "key-10",
+      "key-11",
+      "key-12",
+      "key-13",
+      "key-14",
+      "key-15",
+      "key-16",
+      "key-17",
+      "key-18",
+      "key-19",
+      "key-20",
+      "key-21",
+      "key-22",
+      "key-23",
+      "key-24",
+      "key-25",
+      "key-26",
+      "key-27",
+      "key-28",
+      "key-29",
+      "key-30",
+      "key-31",
+      "key-32",
+      "key-33",
+      "key-34",
+      "key-35",
+      "key-36",
+      "key-37",
+      "key-38",
+      "key-39",
+      "key-40",
+      "key-41",
+      "key-42",
+      "reset",
+      "boot"
+    ],
+    "leds": [
+      "rgb"
+    ],
+    "displays": [],
+    "anchors": [],
+    "sensors": [],
+    "joints": [],
+    "accessoryExports": [],
+    "configurations": [
+      {
+        "id": "complete",
+        "name": "Complete CardKB2 populated board",
+        "options": {}
+      }
+    ],
+    "configurationSchema": {},
+    "commands": [
+      {
+        "type": "button",
+        "target": "key-1",
+        "action": "press",
+        "source": "external"
+      },
+      {
+        "type": "button",
+        "target": "key-1",
+        "action": "release",
+        "source": "external"
+      },
+      {
+        "type": "button",
+        "target": "key-1",
+        "action": "cancel",
+        "source": "external"
+      },
+      {
+        "type": "led",
+        "target": "rgb",
+        "color": "#4090ff",
+        "brightness": 0.6
+      }
+    ],
+    "inputEvents": [
+      "down",
+      "up",
+      "click"
+    ],
+    "cancelContract": "Matchingmulti-sourcecancel keepscapheldwhileother sourceholds;finalupcancelled:true suppressesclick andactualcapreturns.",
+    "controlContract": {
+      "kind": "button",
+      "latching": false,
+      "longPressMs": 0,
+      "main": {
+        "ids": [
+          "key-1",
+          "key-2",
+          "key-3",
+          "key-4",
+          "key-5",
+          "key-6",
+          "key-7",
+          "key-8",
+          "key-9",
+          "key-10",
+          "key-11",
+          "key-12",
+          "key-13",
+          "key-14",
+          "key-15",
+          "key-16",
+          "key-17",
+          "key-18",
+          "key-19",
+          "key-20",
+          "key-21",
+          "key-22",
+          "key-23",
+          "key-24",
+          "key-25",
+          "key-26",
+          "key-27",
+          "key-28",
+          "key-29",
+          "key-30",
+          "key-31",
+          "key-32",
+          "key-33",
+          "key-34",
+          "key-35",
+          "key-36",
+          "key-37",
+          "key-38",
+          "key-39",
+          "key-40",
+          "key-41",
+          "key-42"
+        ],
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "travelMm": 0.22
+      },
+      "reset": {
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "travelMm": 0.16
+      },
+      "boot": {
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "travelMm": 0.16
+      },
+      "movingMeshesPerControl": 2,
+      "inputIntentOnly": true
+    },
+    "movingPhysicalFields": [
+      "cardkb2Assembly.keys[*].control.cap",
+      "cardkb2Assembly.keys[*].cap",
+      "cardkb2Assembly.keys[*].stem",
+      "cardkb2Assembly.reset.control.cap",
+      "cardkb2Assembly.reset.cap",
+      "cardkb2Assembly.reset.stem",
+      "cardkb2Assembly.boot.control.cap",
+      "cardkb2Assembly.boot.cap",
+      "cardkb2Assembly.boot.stem"
+    ],
+    "fixedPhysicalFields": [
+      "cardkb2Assembly.pcb.pcb/barrels/lands",
+      "cardkb2Assembly.input.frame/parts/contacts/tails",
+      "cardkb2Assembly.usb.frame/shell/back/tongue/contacts/tails/tabs",
+      "cardkb2Assembly.keys[*].fixed/body/floor/lid/pins",
+      "cardkb2Assembly.reset.fixed/body/cover/yellow/pins",
+      "cardkb2Assembly.boot.fixed/body/cover/yellow/pins",
+      "cardkb2Assembly.electronics.frame/chipFrame/mcu/mcuPins/passives/pins/rgbBase",
+      "cardkb2Assembly.electronics.rgb.lens",
+      "cardkb2Assembly.label"
+    ],
+    "printedCarrierContract": {
+      "front": "FixedPCB gaplegends only;all44actualcap/plunger assemblies unprinted",
+      "back": "Oneactualphysicalrearadhesivefilm,diecutleavesmounts/slot/USBrelief clear",
+      "pngCount": 2,
+      "kinds": [
+        "reference-redraw",
+        "source-vector-raster"
+      ],
+      "allPhysicalAttributesIndexWorldInvariant": true
+    },
+    "configurationCases": [
+      {
+        "id": "complete",
+        "options": {},
+        "ports": [
+          "grove",
+          "usb"
+        ],
+        "controls": [
+          "key-1",
+          "key-2",
+          "key-3",
+          "key-4",
+          "key-5",
+          "key-6",
+          "key-7",
+          "key-8",
+          "key-9",
+          "key-10",
+          "key-11",
+          "key-12",
+          "key-13",
+          "key-14",
+          "key-15",
+          "key-16",
+          "key-17",
+          "key-18",
+          "key-19",
+          "key-20",
+          "key-21",
+          "key-22",
+          "key-23",
+          "key-24",
+          "key-25",
+          "key-26",
+          "key-27",
+          "key-28",
+          "key-29",
+          "key-30",
+          "key-31",
+          "key-32",
+          "key-33",
+          "key-34",
+          "key-35",
+          "key-36",
+          "key-37",
+          "key-38",
+          "key-39",
+          "key-40",
+          "key-41",
+          "key-42",
+          "reset",
+          "boot"
+        ],
+        "leds": [
+          "rgb"
+        ],
+        "artworkPanels": 2
+      }
+    ],
+    "serviceConfigurations": [],
+    "serviceRemovals": [],
+    "noAutomaticKeyRgbMapping": true,
+    "externalOutputsNoEcho": true,
+    "physicalButtonsInputIntent": true
+  },
+  "artwork": {
+    "pngCount": 2,
+    "kinds": [
+      "reference-redraw",
+      "source-vector-raster"
+    ],
+    "sources": "docs/research/cardkb2/artwork.json",
+    "originalsDistributed": false
+  },
+  "inferred": [
+    "OwnU215 dimensioned-parametricroute,no nativeCADtriangles andno oldCardKB structure.",
+    "OwnPCBcorner/notch/undimensionedslot/connector drill details,secondary package footprints/installation,6.55mm mainkeypitch/registration andhidden switchmechanics areappearanceinferences fromownphotos.",
+    "0.22mmmainZ travel/0.16mmside inwardY travel are inferred viewertravel,not measuredstop/tactileforce.",
+    "ESP32-C61HF4 QFN40 5×5 comesfromownlinked datasheet;secondary AW32901/LDO7343D envelopes/visiblepassives fromownPCB photos,not completeplacement/BOM.",
+    "USB-C24contact/tongue/bore andGrove4contact/through-PCBtail installation/fit inferred;fourreal mountingØ2.2bores/78×48grid retained.",
+    "Own frontPCB fontmetrics/spacing/registration reconstructed bycode fromclearownphoto,unreadable tinyreference/batchlettering omitted;redplungers have no ink.",
+    "Exact-own rearoriginal vector design rasterized with letterforms/colors retained;0.04mmphysicaladhesivefilm thickness/diecut/registration inferred. Bare drawing84.7×54.3×6.15 versusfilm-inclusivevisual6.19mm recordedseparately;vendor1mm denotesPCBthickness.",
+    "No keyboardcharacters/matrixscan/modifiercombo/capslockstate/USB-HID/UART/I2C/BLE/ESP-NOW/WiFi/electrical/firmwarebehavior orautomatickey-to-RGB mapping.",
+    "NecessaryscopedCPU geometry/API/rasterreadback only;noGPU/browser/physical/productionfit acceptance."
+  ]
+}

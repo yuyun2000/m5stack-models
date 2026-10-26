@@ -1,0 +1,314 @@
+{
+  "id": "env-ii",
+  "sku": "U001-B",
+  "name": "Unit ENV-II (SHT30 + BMP280 original)",
+  "parts": [
+    "SHT30-DIS-B",
+    "BMP280",
+    "HT7533"
+  ],
+  "retrievedAt": "2026-10-27",
+  "lifecycle": "Official exactoriginal marked EOL;historical useful coverage,no current popularity/sales claim",
+  "officialDocs": "https://docs.m5stack.com/en/unit/envII",
+  "constructionRoute": "own-dimensional-parametric",
+  "nativeGeometryAvailable": false,
+  "nativeFaceCount": 0,
+  "nativeSearch": {
+    "cachedTree": "work/new-units-32/imu-pro/hardware-current-tree.json",
+    "indexCommit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "exactSkuStructures": [],
+    "noBorrowedSiblingGeometry": true
+  },
+  "immutableDocumentationSource": {
+    "url": "https://raw.githubusercontent.com/m5stack/m5-docs/e5354c5dcc61d16fdc1dff9d92c2c760728d0b60/docs/en/unit/envII.md",
+    "sha256": "ba8a8eee57cb0396bf7f91857d63baa901f7a60a48c77fbbc85a613b255d2fde",
+    "bytes": 7078,
+    "commit": "e5354c5dcc61d16fdc1dff9d92c2c760728d0b60",
+    "path": "docs/en/unit/envII.md",
+    "gitBlob": "c73fbbb0b98d8944ae2a9414c5a0270bf74744b7",
+    "gitBlobVerifiedAgainstBytes": true,
+    "repository": "m5stack/m5-docs",
+    "notRuntimeSource": true
+  },
+  "officialMCP": {
+    "rawResponseSha256": "14b358d5fb18a0d6081d76cf79890fde8d08808ace35c52d912eff5756aac725",
+    "decodedInfoSha256": "f3cdf1fe6350d04f41bfed72d19424b03983e6175a430ed156f45ce8059c5dd7",
+    "status": "success",
+    "rawDistributed": false,
+    "scope": "Use only exactoriginal U001-B product/schematic sections;later-generation search hits excluded"
+  },
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/envII/envII_01.webp",
+      "sha256": "7379ad2143fd85fffa0be8baa443e571fee6acea1f06db6faf1bfb846ce16274",
+      "bytes": 114416,
+      "role": "own-isolated-front-promotional",
+      "useBoundary": "Actual body only;no banner/caption/coin/cable printed on body"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/envII/envII_02.webp",
+      "sha256": "b485753fef30ab06fbbf39c589f5760a80f1067712fb2b1a897be44680bf0cd8",
+      "bytes": 49406,
+      "role": "own-readable-rear-film-and-retainer",
+      "useBoundary": "ENV.II/SENSOR/SHT30|BMP280/PORT.A.I2C/°C,% ,pa and4contact legend;actual unpaintedM5"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/envII/envII_05.webp",
+      "sha256": "e38cf01600cef66e9f167b9d92d91b403808e89dc5fafad94e669af97448ecae",
+      "bytes": 33370,
+      "role": "own-front-isometric-open-vents",
+      "useBoundary": "True capsule vents/two bore walls/red socket and case split"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/envII/envII_06.webp",
+      "sha256": "9fe14a734a7a04a5dcb7e298ecfce94d94dca387ab05883d82db4e221a769791",
+      "bytes": 52328,
+      "role": "own-clear-front-vent-layout",
+      "useBoundary": "Nine staggered columns4/5/4/5/4/5/4/5/4=40capsule openings;coin excluded"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/envII/envII_sch_01.webp",
+      "sha256": "13cfdf5a43da111e5e08be9024ea0461c76eced298c28f7974c3684517d501e5",
+      "bytes": 76458,
+      "role": "own-original-schematic",
+      "useBoundary": "Confirms documentary part identities/connections,not hidden3D placement or fullBOM"
+    }
+  ],
+  "dimensionBasis": {
+    "currentOfficialTableOrderMm": [
+      32,
+      24,
+      8
+    ],
+    "acceptedCurrentNominalModelAxesMm": [
+      24,
+      32,
+      8
+    ],
+    "historicalImmutableTableOrderMm": [
+      24.2,
+      32.2,
+      8.1
+    ],
+    "historicalModelAxesMm": [
+      24.2,
+      32.2,
+      8.1
+    ],
+    "basis": "Current exactU001-B page/MCP32x24x8 versus ownoldmd24.2x32.2x8.1;axis and0.2/0.1mm differences retained. Current nominal used,hiddenplanes inferred,not measured internal datum or stretched ENV/ENVIII.",
+    "sourceConflictFeedback": {
+      "accepted": true,
+      "id": "420dc9d72c594a1e9b84ef68e45fd5ab",
+      "receiptSha256": "497a6fe6a503272227400eaa06312394ec128e495b464e649471a7c4692fad03",
+      "correctedMechanicalDataReceived": false
+    }
+  },
+  "nominalMm": [
+    24,
+    32,
+    8
+  ],
+  "vendorTableOrderMm": [
+    32,
+    24,
+    8
+  ],
+  "historicalNominalMm": [
+    24.2,
+    32.2,
+    8.1
+  ],
+  "actualPhysicalEnvelopeMm": [
+    24,
+    32.00000002384186,
+    8.000000001490116
+  ],
+  "existingFeedback": {
+    "accepted": true,
+    "id": "420dc9d72c594a1e9b84ef68e45fd5ab",
+    "receiptSha256": "497a6fe6a503272227400eaa06312394ec128e495b464e649471a7c4692fad03",
+    "correctedMechanicalDataReceived": false
+  },
+  "feedbackRepeatedByAuthor": false,
+  "inferred": [
+    "Current own product table32x24x8 is modeled inXYZ24x32x8. Old own immutable table24.2x32.2x8.1 retained separately;accepted feedback420dc9d72c594a1e9b84ef68e45fd5ab does not establish corrected mechanical datum.",
+    "No ownCAD/source-face retention;no ENV/DHT12,ENVIII/IV shell ornative geometry borrowed. Skin/wall/corner/half split,bores,pitch,central fastener,relief and film thickness/registration are own-photo appearance estimates.",
+    "Own06 confirms40capsule openings in9columns4/5/4/5/4/5/4/5/4. Opening dimensions/pitches/registration are inferred;all40are actual hole walls/depth with realPCB or fixed package behind them.",
+    "Own schematic confirms SHT30-DIS-B,BMP280,HT7533,tworesistors/fivecapacitors and4P J1;not full3DBOM. Hidden PCB outline/thickness/supports and package/port positions/shapes are reconstructed,not measuredproduction layout.",
+    "SHT30 andBMP280 each have a real metal cap aperture,independent fixed substrate and retained internal medium/borefloor. Appearance ray paths do not simulate humidity/pressure/temperature or moving diaphragms.",
+    "Red Grove actual walls/floor/deepstop/latch,4squarecontacts/returns/feet/through-boardtails and annularPCB lands/solder collars are retained physical solids;internal fits/installation inferred.",
+    "Rear label is1ordinary transparent PNG independent text/color redraw from own02 on actual0.08mmfilm;no sourcepixels/QC/microtext/individualcodes/packaging/latergeneration label.",
+    "No external controls,LEDs,joints,sensorreadings oranchors,addresses,protocol,sampling orfirmware;no glow from ventilation."
+  ],
+  "privateAggregate": {
+    "id": "env-ii",
+    "sku": "U001-B",
+    "exactSkuRows": 0,
+    "strictNameOnlyRows": 0,
+    "originalDownloads": 0
+  },
+  "licenseBoundary": {
+    "newAuthoredCode": "MIT per existing user decision",
+    "nativeImported": false,
+    "officialDocsPhotosDrawings": "Reference only;raw bytes not public or blanket MIT",
+    "ordinaryRasters": "Authorized exact-model code redraw PNG with attribution;marks retain respective rights",
+    "privateOriginals": "CSV/rows/URL mapping/vector originals remain private outsideGit;0original download"
+  },
+  "rawReferencesDistributed": false,
+  "generatorsDistributed": false,
+  "runtimeFiles": [
+    {
+      "path": "src/units/env-ii/artwork/rear.png",
+      "sha256": "92c5c39ed3aac3c7f3c2c718d12820ed33e8e408d05f88a9d39166ff2597aac5"
+    },
+    {
+      "path": "src/units/env-ii/assembly.js",
+      "sha256": "9cc31a86e5e9bfe1c67136f6ec884012b240f53d7408797319628d3d76cb208a"
+    },
+    {
+      "path": "src/units/env-ii/connectors.js",
+      "sha256": "d39b7734fbf319a2e482d3eb61487c16c1c4efcc3e456e3570b1e9f64894ed56"
+    },
+    {
+      "path": "src/units/env-ii/dimensions.js",
+      "sha256": "ff90c710acda685c413a19b988a40e81f1a84f1229fb461312f8a65db81ecd9a"
+    },
+    {
+      "path": "src/units/env-ii/electronics.js",
+      "sha256": "9308382e10f3b432cda3b6b002de88c7e77a1a9cf4dd16ef12fa2667f89fdae0"
+    },
+    {
+      "path": "src/units/env-ii/geometry.js",
+      "sha256": "6aea9c27e6e7eb50c676476eebb173fdf4da72a912e6cd3dd4867f9c78f4d800"
+    },
+    {
+      "path": "src/units/env-ii/index.js",
+      "sha256": "bbd7c48ed696f1031be41eaf7c2174a74a7981ec337bb971c432b58adbfc611d"
+    },
+    {
+      "path": "src/units/env-ii/shell.js",
+      "sha256": "adcf41d749af1edcaf23509727ec06387d6bff31e9473dd37923fb40486d59d0"
+    }
+  ],
+  "publicAPI": {
+    "exports": [
+      "Model",
+      "GroveModule",
+      "spec",
+      "defaults",
+      "configurations",
+      "configurationSchema"
+    ],
+    "assemblyProperty": "enviiAssembly",
+    "bodyComponentOrder": [
+      "grove"
+    ],
+    "moduleComponentOrder": [
+      "grove",
+      "unitFrame",
+      "cable"
+    ],
+    "bodyKinds": [
+      "port"
+    ],
+    "moduleKinds": [
+      "port",
+      "unit-frame",
+      "cable"
+    ],
+    "componentKinds": {
+      "grove": "port",
+      "unitFrame": "unit-frame",
+      "cable": "cable"
+    },
+    "moduleAdditionalComponents": [
+      "unitFrame",
+      "cable"
+    ],
+    "canonicalCableInput": "grove",
+    "ports": [
+      "grove"
+    ],
+    "controls": [],
+    "leds": [],
+    "displays": [],
+    "speakers": [],
+    "sensors": [],
+    "joints": [],
+    "anchors": [],
+    "passiveAnchors": [],
+    "keymap": {},
+    "accessories": {},
+    "accessoryExports": [],
+    "defaults": {},
+    "options": {
+      "artwork": "boolean;rear ink only,actual physicalfilm/M5 and allstructure retained"
+    },
+    "configurationSchema": {},
+    "configurations": [
+      {
+        "id": "complete",
+        "name": "原版 ENV-II · SHT30 + BMP280 完整本体",
+        "options": {}
+      }
+    ],
+    "configurationCases": [
+      {
+        "id": "complete",
+        "options": {},
+        "panelCount": 1,
+        "pngCount": 1,
+        "panels": [
+          "rear"
+        ],
+        "kinds": [
+          "reference-redraw"
+        ],
+        "artworkKinds": [
+          "reference-redraw"
+        ]
+      }
+    ],
+    "artworkPngCount": 1,
+    "artworkSourceKind": "reference-redraw",
+    "physicalAdhesiveFilms": 1,
+    "allArtworkPhysicalAttributesIndexWorldInvariant": true,
+    "noQCFilm": true,
+    "noServiceCovers": true,
+    "onlyRemovablePhysicalFields": [],
+    "portPins": {
+      "grove": [
+        "SCL",
+        "SDA",
+        "5V",
+        "GND"
+      ]
+    },
+    "commands": {
+      "grove": {
+        "types": [
+          "attach",
+          "detach"
+        ],
+        "scope": "Mechanical family ownership only"
+      },
+      "unitFrame": {
+        "type": "pose",
+        "fields": [
+          "position",
+          "rotation",
+          "quaternion",
+          "distance"
+        ]
+      },
+      "cable": {
+        "type": "cable",
+        "fields": [
+          "slack",
+          "bend"
+        ]
+      }
+    },
+    "behaviorBoundary": "Static original U001-B geometry/mechanical Grove/cable/pose only;no readings,sampling,sensoranchor,address,I2C,firmware,LED,button orjoint"
+  }
+}

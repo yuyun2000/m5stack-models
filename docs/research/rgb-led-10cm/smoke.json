@@ -1,0 +1,429 @@
+{
+  "id": "rgb-led-10cm",
+  "sku": "A035",
+  "date": "2026-10-27",
+  "status": "pass",
+  "stage": "modeled",
+  "constructionRoute": "own-dimensional-parametric",
+  "nativeFaces": 0,
+  "physicalTopologyCases": [
+    {
+      "bendDeg": 0,
+      "physicalMeshes": 439,
+      "triangles": 52188,
+      "allClosedOppositeEdgesPositiveVolume": true,
+      "fullEndpointSeamChecks": 12,
+      "sampledNeutralAxisMm": 100
+    },
+    {
+      "bendDeg": 120,
+      "physicalMeshes": 439,
+      "triangles": 52188,
+      "allClosedOppositeEdgesPositiveVolume": true,
+      "fullEndpointSeamChecks": 12,
+      "sampledNeutralAxisMm": 99.99993027862031
+    },
+    {
+      "bendDeg": -120,
+      "physicalMeshes": 439,
+      "triangles": 52188,
+      "allClosedOppositeEdgesPositiveVolume": true,
+      "fullEndpointSeamChecks": 12,
+      "sampledNeutralAxisMm": 99.99993027862031
+    }
+  ],
+  "fit": {
+    "stripNominalMm": [
+      10,
+      100
+    ],
+    "completeStraightInferredMm": [
+      10,
+      137,
+      7.5
+    ],
+    "continuousFPCThicknessMm": 0.3,
+    "adhesiveThicknessMm": 0.06,
+    "linerThicknessMm": 0.12,
+    "LEDPackageMm": [
+      3.5,
+      3.5
+    ],
+    "realSupportLinks": 96,
+    "GrovetailSquareMm": 0.42,
+    "platedBoreInnerRadiusMm": 0.32,
+    "squareCornerRadiusMm": 0.2969848480983499,
+    "minimumTailRadialClearanceMm": 0.0230151519016501,
+    "neutralAxisFormula": "C(s)=(0,sin(ks)/k,(1-cos(ks))/k);k=bendRad/100;|dC/ds|=1;cross-sectionnormal=(0,-sin(ks),cos(ks))",
+    "viewerRangeNotHardwareRating": true
+  },
+  "actualPresetModelPhysicalRuntimeArtwork": [
+    {
+      "id": "straight",
+      "physical": {
+        "route": "own-dimensional-parametric",
+        "nativeFaces": 0,
+        "physicalMeshes": 439,
+        "nominalFPCMm": [
+          10,
+          100
+        ],
+        "completeStraightEnvelopeMm": [
+          10,
+          137,
+          7.5
+        ],
+        "neutralAxisLengthMm": 100,
+        "sampledArcLengthMm": 100,
+        "bendDeg": 0,
+        "continuousThickLayers": 3,
+        "LEDs": 15,
+        "packageFirstMaterialRays": 15,
+        "actualSolderBridges": 96,
+        "actualCopperPads": 102,
+        "actualRigidEnds": 2,
+        "actualGroveContacts": 8,
+        "GrovesolderDrillWallRays": 32,
+        "externalOnly": true
+      },
+      "runtime": {
+        "explicitCurrentParentCableSampling": false,
+        "independentPhysicalRGBOutputs": 15,
+        "onColorBrightnessExternalNoEcho": true,
+        "partialFlexTransition": true,
+        "actualFlexibleSurfacesRigidPackagesAndEnds": true,
+        "neutralAxisArcLengthPreserved": true,
+        "indicesPreserved": true,
+        "solderSupportsConnected": true,
+        "allowedPortsAndCableFollow": true,
+        "peerPhysicalLightsAndFramebuffersUnchanged": true,
+        "currentPresetExactlyRestored": true
+      },
+      "artwork": {
+        "presetBendDeg": 0,
+        "partialSamples": 3,
+        "allPhysicalAttributesIndicesWorldEqual": true,
+        "continuousThickStrip": true,
+        "all15PackagesAndSolderSupports": true,
+        "rigidEndboardInkRetained": true,
+        "stripInkHasNoFloatingGap": true,
+        "allowedPortsFollow": true,
+        "presetExactlyRestored": true
+      }
+    },
+    {
+      "id": "arc",
+      "physical": {
+        "route": "own-dimensional-parametric",
+        "nativeFaces": 0,
+        "physicalMeshes": 439,
+        "nominalFPCMm": [
+          10,
+          100
+        ],
+        "completeStraightEnvelopeMm": [
+          10,
+          137,
+          7.5
+        ],
+        "neutralAxisLengthMm": 100,
+        "sampledArcLengthMm": 99.99996078172036,
+        "bendDeg": 90,
+        "continuousThickLayers": 3,
+        "LEDs": 15,
+        "packageFirstMaterialRays": 15,
+        "actualSolderBridges": 96,
+        "actualCopperPads": 102,
+        "actualRigidEnds": 2,
+        "actualGroveContacts": 8,
+        "GrovesolderDrillWallRays": 32,
+        "externalOnly": true
+      },
+      "runtime": {
+        "explicitCurrentParentCableSampling": false,
+        "independentPhysicalRGBOutputs": 15,
+        "onColorBrightnessExternalNoEcho": true,
+        "partialFlexTransition": true,
+        "actualFlexibleSurfacesRigidPackagesAndEnds": true,
+        "neutralAxisArcLengthPreserved": true,
+        "indicesPreserved": true,
+        "solderSupportsConnected": true,
+        "allowedPortsAndCableFollow": true,
+        "peerPhysicalLightsAndFramebuffersUnchanged": true,
+        "currentPresetExactlyRestored": true
+      },
+      "artwork": {
+        "presetBendDeg": 90,
+        "partialSamples": 3,
+        "allPhysicalAttributesIndicesWorldEqual": true,
+        "continuousThickStrip": true,
+        "all15PackagesAndSolderSupports": true,
+        "rigidEndboardInkRetained": true,
+        "stripInkHasNoFloatingGap": true,
+        "allowedPortsFollow": true,
+        "presetExactlyRestored": true
+      }
+    },
+    {
+      "id": "reverse",
+      "physical": {
+        "route": "own-dimensional-parametric",
+        "nativeFaces": 0,
+        "physicalMeshes": 439,
+        "nominalFPCMm": [
+          10,
+          100
+        ],
+        "completeStraightEnvelopeMm": [
+          10,
+          137,
+          7.5
+        ],
+        "neutralAxisLengthMm": 100,
+        "sampledArcLengthMm": 99.99998256965218,
+        "bendDeg": -60,
+        "continuousThickLayers": 3,
+        "LEDs": 15,
+        "packageFirstMaterialRays": 15,
+        "actualSolderBridges": 96,
+        "actualCopperPads": 102,
+        "actualRigidEnds": 2,
+        "actualGroveContacts": 8,
+        "GrovesolderDrillWallRays": 32,
+        "externalOnly": true
+      },
+      "runtime": {
+        "explicitCurrentParentCableSampling": false,
+        "independentPhysicalRGBOutputs": 15,
+        "onColorBrightnessExternalNoEcho": true,
+        "partialFlexTransition": true,
+        "actualFlexibleSurfacesRigidPackagesAndEnds": true,
+        "neutralAxisArcLengthPreserved": true,
+        "indicesPreserved": true,
+        "solderSupportsConnected": true,
+        "allowedPortsAndCableFollow": true,
+        "peerPhysicalLightsAndFramebuffersUnchanged": true,
+        "currentPresetExactlyRestored": true
+      },
+      "artwork": {
+        "presetBendDeg": -60,
+        "partialSamples": 3,
+        "allPhysicalAttributesIndicesWorldEqual": true,
+        "continuousThickStrip": true,
+        "all15PackagesAndSolderSupports": true,
+        "rigidEndboardInkRetained": true,
+        "stripInkHasNoFloatingGap": true,
+        "allowedPortsFollow": true,
+        "presetExactlyRestored": true
+      }
+    }
+  ],
+  "actualPresetGroveModulePartialArtwork": [
+    {
+      "id": "straight",
+      "artwork": {
+        "presetBendDeg": 0,
+        "partialSamples": 3,
+        "allPhysicalAttributesIndicesWorldEqual": true,
+        "continuousThickStrip": true,
+        "all15PackagesAndSolderSupports": true,
+        "rigidEndboardInkRetained": true,
+        "stripInkHasNoFloatingGap": true,
+        "allowedPortsFollow": true,
+        "presetExactlyRestored": true
+      }
+    },
+    {
+      "id": "arc",
+      "artwork": {
+        "presetBendDeg": 90,
+        "partialSamples": 3,
+        "allPhysicalAttributesIndicesWorldEqual": true,
+        "continuousThickStrip": true,
+        "all15PackagesAndSolderSupports": true,
+        "rigidEndboardInkRetained": true,
+        "stripInkHasNoFloatingGap": true,
+        "allowedPortsFollow": true,
+        "presetExactlyRestored": true
+      }
+    },
+    {
+      "id": "reverse",
+      "artwork": {
+        "presetBendDeg": -60,
+        "partialSamples": 3,
+        "allPhysicalAttributesIndicesWorldEqual": true,
+        "continuousThickStrip": true,
+        "all15PackagesAndSolderSupports": true,
+        "rigidEndboardInkRetained": true,
+        "stripInkHasNoFloatingGap": true,
+        "allowedPortsFollow": true,
+        "presetExactlyRestored": true
+      }
+    }
+  ],
+  "transformedHUBPhysical": {
+    "route": "own-dimensional-parametric",
+    "nativeFaces": 0,
+    "physicalMeshes": 439,
+    "nominalFPCMm": [
+      10,
+      100
+    ],
+    "completeStraightEnvelopeMm": [
+      10,
+      137,
+      7.5
+    ],
+    "neutralAxisLengthMm": 100,
+    "sampledArcLengthMm": 99.99996078172036,
+    "bendDeg": 90,
+    "continuousThickLayers": 3,
+    "LEDs": 15,
+    "packageFirstMaterialRays": 15,
+    "actualSolderBridges": 96,
+    "actualCopperPads": 102,
+    "actualRigidEnds": 2,
+    "actualGroveContacts": 8,
+    "GrovesolderDrillWallRays": 32,
+    "externalOnly": true
+  },
+  "transformedHUBRuntime": {
+    "explicitCurrentParentCableSampling": true,
+    "independentPhysicalRGBOutputs": 15,
+    "onColorBrightnessExternalNoEcho": true,
+    "partialFlexTransition": true,
+    "actualFlexibleSurfacesRigidPackagesAndEnds": true,
+    "neutralAxisArcLengthPreserved": true,
+    "indicesPreserved": true,
+    "solderSupportsConnected": true,
+    "allowedPortsAndCableFollow": true,
+    "peerPhysicalLightsAndFramebuffersUnchanged": true,
+    "currentPresetExactlyRestored": true
+  },
+  "actualFourCoreCables": 2,
+  "helperCurrentParentSamplingDiagnosis": {
+    "scope": "Oneboundedactualcurrentthreebranchdiagnosis,firstRGBLED runtime restoring0degree",
+    "failure": "Exactphysicalhashdiff atrestrestore",
+    "beforeHash": "8c7870658d721977e51291bc05240917180c6f1b75c50fbeead0b838fdb6838e",
+    "afterHash": "06e6b359e88a3c99928db1331c919ca13e741b0f6a43dcfd4b27bf97634f509d",
+    "changedMeshFamilies": [
+      "Grove cableplugs",
+      "Grove wire3/4"
+    ],
+    "productBodyGeometryChanged": false,
+    "portFramesChanged": false,
+    "wireEvidence": [
+      {
+        "name": "Grove wire 3",
+        "changed": [
+          {
+            "k": "position",
+            "max": 0,
+            "count": 0
+          }
+        ]
+      },
+      {
+        "name": "Grove wire 4",
+        "changed": [
+          {
+            "k": "position",
+            "max": 0,
+            "count": 0
+          }
+        ]
+      }
+    ],
+    "wireInterpretation": "positionbytehashdifferswhileeveryFloat32numericvalueequal(maxabsdelta0,countNumericallyDifferent0);therefore+0/-0only",
+    "plugMatrixDeltas": [
+      {
+        "mesh": "Grove plug four-chamber housing",
+        "maximumAbsoluteMatrixElementDelta": 1.2154326714572542e-63
+      },
+      {
+        "mesh": "Grove plug wire retainer",
+        "maximumAbsoluteMatrixElementDelta": 1.2154326714572542e-63
+      },
+      {
+        "mesh": "Grove plug latch",
+        "maximumAbsoluteMatrixElementDelta": 1.2154326714572542e-63
+      },
+      {
+        "mesh": "Grove plug crimp contact",
+        "maximumAbsoluteMatrixElementDelta": 1.2154326714572542e-63
+      },
+      {
+        "mesh": "Grove plug crimp contact",
+        "maximumAbsoluteMatrixElementDelta": 1.2154326714572542e-63
+      },
+      {
+        "mesh": "Grove plug crimp contact",
+        "maximumAbsoluteMatrixElementDelta": 1.2154326714572542e-63
+      },
+      {
+        "mesh": "Grove plug crimp contact",
+        "maximumAbsoluteMatrixElementDelta": 1.2154326714572542e-63
+      },
+      {
+        "mesh": "Grove plug four-chamber housing",
+        "maximumAbsoluteMatrixElementDelta": 8.881784197001252e-16
+      },
+      {
+        "mesh": "Grove plug wire retainer",
+        "maximumAbsoluteMatrixElementDelta": 8.881784197001252e-16
+      },
+      {
+        "mesh": "Grove plug latch",
+        "maximumAbsoluteMatrixElementDelta": 8.881784197001252e-16
+      },
+      {
+        "mesh": "Grove plug crimp contact",
+        "maximumAbsoluteMatrixElementDelta": 1.7763568394002505e-15
+      },
+      {
+        "mesh": "Grove plug crimp contact",
+        "maximumAbsoluteMatrixElementDelta": 1.7763568394002505e-15
+      }
+    ],
+    "maximumPlugMatrixDelta": 1.7763568394002505e-15,
+    "cause": "Cablewasgeneratedbeforeattachment;rounded1e-8framesignatureacceptedinitialpostattachmentframe. Flexnecessarilychangesframeandregenerates;restrestorethenrecomputesfromactualparentmatrices,creatingequivalentfloating/signedzero bytes. Earlierownprobeexplicitlyposedandresampledcablebeforebaseline.",
+    "repairScope": "Helperonly;explicitcurrentparentcable.setOptions(sameSlackAndBend)beforestrictbaseline,unchangedexactattribute/index/world assertions. No product/core/shared change.",
+    "priorFreezeSha256": "c85734dc5b58dd81a9456f68c0a95e5948ecc6f96c7347c9ede0fc28014fba4b"
+  },
+  "currentInitialAndTransformedThreeBranchRuntime": {
+    "status": "pass",
+    "scope": "Oneboundedwork-only actualrootinitialthreebranch and subsequentposedRGB runtime,strictphysicalrestassertionsretained;no shared/build/Git/browser/private-sync",
+    "initial": {
+      "explicitCurrentParentCableSampling": true,
+      "independentPhysicalRGBOutputs": 15,
+      "onColorBrightnessExternalNoEcho": true,
+      "partialFlexTransition": true,
+      "actualFlexibleSurfacesRigidPackagesAndEnds": true,
+      "neutralAxisArcLengthPreserved": true,
+      "indicesPreserved": true,
+      "solderSupportsConnected": true,
+      "allowedPortsAndCableFollow": true,
+      "peerPhysicalLightsAndFramebuffersUnchanged": true,
+      "currentPresetExactlyRestored": true
+    },
+    "transformed": {
+      "explicitCurrentParentCableSampling": true,
+      "independentPhysicalRGBOutputs": 15,
+      "onColorBrightnessExternalNoEcho": true,
+      "partialFlexTransition": true,
+      "actualFlexibleSurfacesRigidPackagesAndEnds": true,
+      "neutralAxisArcLengthPreserved": true,
+      "indicesPreserved": true,
+      "solderSupportsConnected": true,
+      "allowedPortsAndCableFollow": true,
+      "peerPhysicalLightsAndFramebuffersUnchanged": true,
+      "currentPresetExactlyRestored": true
+    },
+    "strictPhysicalAttributesIndicesWorldAssertionsUnchanged": true,
+    "bothActualPeerPhysicalAndFramebufferUnchanged": true
+  },
+  "allArtworkPhysicalAttributesIndicesWorldInvariantDuringPartialBend": true,
+  "visual": null,
+  "manufacturingFit": false
+}

@@ -1,0 +1,222 @@
+{
+  "id": "bps",
+  "sku": "U090",
+  "name": "Unit Mini BPS",
+  "chip": "BMP280",
+  "lifecycle": "Original exactSKU historical coverage;no claim of current popularity oravailability",
+  "retrievedAt": "2026-10-27",
+  "officialDocs": "https://docs.m5stack.com/en/unit/bps",
+  "constructionRoute": "own-dimensional-parametric",
+  "nativeGeometryAvailable": false,
+  "nativeTriangles": null,
+  "immutableDocumentationSource": {
+    "repository": "m5stack/m5-docs",
+    "commit": "e5354c5dcc61d16fdc1dff9d92c2c760728d0b60",
+    "path": "docs/en/unit/bps.md",
+    "url": "https://raw.githubusercontent.com/m5stack/m5-docs/e5354c5dcc61d16fdc1dff9d92c2c760728d0b60/docs/en/unit/bps.md",
+    "gitBlob": "97f530101eb21ae4fee05b046451c0fb395eae79",
+    "sha256": "f16894acf1d5fb0187c3937a3c4c234126807b36c9f023dad8e812b8cd6f7246",
+    "bytes": 5292,
+    "gitBlobVerifiedAgainstBytes": true,
+    "notRuntimeSource": true
+  },
+  "officialMCP": {
+    "query": "Original Mini BPS U090 BMP280 dimensions connector",
+    "status": "success",
+    "rawResponseSha256": "8438b24930b32eda0a30e49c7b14230d75509250bc837881f9342e1833cc7b6a",
+    "rawDistributed": false
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/bps/bps_08.webp",
+    "sha256": "e818a66e264e2b0d60c90d83dd493dc678b8ecc711e414a402e534e3916a3017",
+    "bytes": 47934,
+    "role": "own-front-with-scale-reference"
+  },
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/bps/bps_04.webp",
+      "sha256": "31c0c8b238f26d7abfd10eb075b265c076b28a0771ae9c78fbf24b90659f4373",
+      "bytes": 45224,
+      "role": "own-PCB-rear-and-identifyingBMP280-silk"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/bps/bps_07.webp",
+      "sha256": "bd97768c3d3dc15a96f87109fa2f3c0500595aaafbf1aca4836e843b797ba13b",
+      "bytes": 27258,
+      "role": "own-front-isometric-slots-and-bore-walls"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/bps/bps_08.webp",
+      "sha256": "e818a66e264e2b0d60c90d83dd493dc678b8ecc711e414a402e534e3916a3017",
+      "bytes": 47934,
+      "role": "own-front-with-scale-reference"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/bps/bps_01.webp",
+      "sha256": "affbc2ccf22cd420cb55fdaa4f57c2844ebd12c76f8574764ea577547d5fe8f1",
+      "bytes": 95984,
+      "role": "own-front"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/bps/bps_02.webp",
+      "sha256": "676ba02828fac1fc2681641718fdff7a8d08560b82ecc3bf029fd6ad35a623fc",
+      "bytes": 31416,
+      "role": "own-readable-rear-film-and-unpaintedM5"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/bps/bps_03.webp",
+      "sha256": "31f76d8eb9c961681d514d29b42ee26e46f2f4d47e7156ecfaec24a0987d3c16",
+      "bytes": 54774,
+      "role": "own-populated-BMP280-PCB-and-redGrove"
+    }
+  ],
+  "nominalMm": [
+    24,
+    24,
+    13
+  ],
+  "dimensionBasis": {
+    "ownOfficialTableMm": [
+      24,
+      24,
+      13
+    ],
+    "basis": "Current exactU090 MCP and old ownEnglish table agree24×24×13. Own01/02/03/04/07/08 show front/rear/native-shaped PCB. No own dimensional drawing orCAD in cachedsources.",
+    "notCurrentSibling": "Do not import/stretch U090-B MiniBPSv1.1 QMP6988 24×24×8 native shell;13mm nominalenvelope does not establish hidden13mm planes."
+  },
+  "actualPhysicalEnvelopeMm": [
+    24,
+    24,
+    13
+  ],
+  "inferred": [
+    "Exact original U090 BMP280 own nominal24x24x13 reconstruction from own01/02/03/04/07/08;no native CAD/source faces and no stretched U090-B QMP6988 shell.",
+    "Only24x24x13 nominal envelope is confirmed by own table. Internal +/-6.5 placement,case splits/wall thicknesses,5mm bores/16mm pitch,counterbores,vent0.65x2.6 sizes/centres,PCB layers/supports and all fit values are own multiview appearance estimates,not manufacturer mechanical datums or manufacturing tolerances.",
+    "PCB own octagonal silhouette and open side reliefs/central hole follow own03/04;retained package placement,pads,plated bores and walls are reconstructed. Actual inferred tube-to-PCB side clearance0.3mm and front-boss clearance0.4mm remain positive.",
+    "Metal BMP280 can has8LGA contact supports,true small pressure-port hole and fixed deep base;package2.5x2 outline,cap/port size and installation layers are photo-derived appearance,not diaphragm or pressure physics. Two real shell vents lead through air to actual metallic package,never a black texture.",
+    "Own official MCP identifies HT7533 and2BSS138 withBMP280;hidden placement/passive detail inferred. Red Grove has4actual contacts/right-angle returns/throughPCB tails/plated barrels and annular solder pads;no I2C/address/electrical routing.",
+    "Front BPS round film and rearPortAfilm accurately code-redrawn ordinary PNG from own07/08 and02;typography/spacing/colors reconstructed. Rear unpainted M5 has true recessed floor. Actual film carriers remain with artwork:false.",
+    "Static physical model only:0sensor Component/anchor/button/LED/joint/display. No pressure/temperature/altitude/sampling/register/address/firmware behavior. Necessary CPU tests are not browser/GPU/hardware or manufacturing-fit acceptance."
+  ],
+  "privateAggregate": {
+    "sku": "U090",
+    "exactSkuRows": 0,
+    "strictNameOnlyRows": 0,
+    "originalDownloads": 0,
+    "requiresExactVariantReview": false
+  },
+  "license": {
+    "newAuthoredCode": "MIT",
+    "importedNativeGeometry": false,
+    "officialReferences": "Reference only;not blanket MIT,raw photos/docs not distributed",
+    "ordinaryPng": "User-authorized matching ordinary raster redraw;product marks retain respective rights"
+  },
+  "assetPolicy": {
+    "pngCount": 2,
+    "privateSourcesDistributed": false,
+    "rawSourcesDistributed": false,
+    "vectorsGeneratorsDistributed": false
+  },
+  "publicAPI": {
+    "exports": [
+      "Model",
+      "GroveModule",
+      "spec",
+      "defaults",
+      "configurationSchema",
+      "configurations"
+    ],
+    "assemblyProperty": "bpsAssembly",
+    "bodyComponentOrder": [
+      "grove"
+    ],
+    "moduleComponentOrder": [
+      "grove",
+      "unitFrame",
+      "cable"
+    ],
+    "moduleAdditionalComponents": [
+      "unitFrame",
+      "cable"
+    ],
+    "canonicalCableInput": "grove",
+    "ports": [
+      "grove"
+    ],
+    "controls": [],
+    "leds": [],
+    "displays": [],
+    "speakers": [],
+    "sensors": [],
+    "joints": [],
+    "anchors": [],
+    "passiveAnchors": [],
+    "keymap": {},
+    "defaults": {},
+    "options": {
+      "artwork": "boolean"
+    },
+    "configurationSchema": {
+      "artwork": {
+        "type": "boolean",
+        "default": true,
+        "meaning": "Remove front/rear ink only;retain real films,vents,sensor,case and PCB"
+      }
+    },
+    "configurations": [
+      {
+        "id": "complete",
+        "name": "完整原版 Mini BPS U090",
+        "options": {}
+      }
+    ],
+    "configurationCases": [
+      {
+        "options": {},
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "artworkKinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "pngCount": 2
+      }
+    ],
+    "accessoryExports": [],
+    "accessories": {},
+    "commands": {
+      "unitFrame": {
+        "type": "pose",
+        "target": "unitFrame",
+        "fields": [
+          "position",
+          "rotation",
+          "quaternion",
+          "distance"
+        ]
+      },
+      "cable": {
+        "type": "cable",
+        "target": "cable",
+        "fields": [
+          "slack",
+          "bend"
+        ]
+      }
+    },
+    "inputEvents": {
+      "ports": [
+        "attach",
+        "detach"
+      ]
+    },
+    "artworkPngCount": 2,
+    "artworkSourceKind": "reference-redraw",
+    "physicalAdhesiveFilms": 2,
+    "allArtworkPhysicalAttributesIndexWorldInvariant": true,
+    "physicalSensorDictionary": "bpsAssembly.sensor holds fixed can/base/contact/pressurePort geometry only;no Component or readings",
+    "noAccessoriesOrRemovableCovers": true
+  }
+}

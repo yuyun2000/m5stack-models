@@ -1,0 +1,86 @@
+{
+  "id": "rgb-led-10cm",
+  "sku": "A035",
+  "kind": "reference-redraw",
+  "pngCount": 3,
+  "physicalLabelFilms": 0,
+  "actualStripLayers": {
+    "FPC": 1,
+    "adhesive": 1,
+    "releasePaper": 1
+  },
+  "rasters": [
+    {
+      "file": "src/units/rgb-led-10cm/reference-redraw-strip.png",
+      "sha256": "91fcc8bb35c7ff91f9616f4e80d2d77121fc0d614e874d66fcb88a125b500492",
+      "pixels": [
+        600,
+        6000
+      ],
+      "kind": "reference-redraw",
+      "carrier": "actualthickflexibleFPC",
+      "source": {
+        "url": "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/rB9kfl1RM4mAN5KLAASZdiXil1w843.JPG?v=1769072195",
+        "sha256": "d550e861e8483c174a2415aeee562d739ee034937c53ee8c4804421f90c36137",
+        "role": "A035-family-clear-LED-and-pad-detail",
+        "useBoundary": "3535 LED package, actual legs/solder/copper pads, arrow/+/−/D marks and rear liner."
+      },
+      "photographPixelsUsed": false,
+      "privateOriginalUsed": false
+    },
+    {
+      "file": "src/units/rgb-led-10cm/reference-redraw-input.png",
+      "sha256": "73159e3f570eb770f46e3cf5bbef245f226a21aeb3fcec7dd301c9ad7578903b",
+      "pixels": [
+        800,
+        1080
+      ],
+      "kind": "reference-redraw",
+      "carrier": "actualwhiteinputPCB",
+      "source": {
+        "url": "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/rB9kfV1RM5CAJpnMAANpD--DgK8096.JPG?v=1769072195",
+        "sha256": "68c290e5b8b14098cdea628233cec17fefd575cc3481c96d7b21d9fac986039e",
+        "role": "A035-family-white-endboard-rear",
+        "useBoundary": "White board dark B/arrow/S + G silk, retained Grove contacts and through-PCB support."
+      },
+      "photographPixelsUsed": false,
+      "privateOriginalUsed": false
+    },
+    {
+      "file": "src/units/rgb-led-10cm/reference-redraw-next.png",
+      "sha256": "a59964f6c2fce1e2d6db6031d4f4fbf141fc04dcde73010584e7561792e2afd8",
+      "pixels": [
+        800,
+        1080
+      ],
+      "kind": "reference-redraw",
+      "carrier": "actualblackNEXTPCB",
+      "source": {
+        "url": "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/rB9kfl1RM4iARAE7AARC2Xs23bA828.JPG?v=1769072195",
+        "sha256": "e2c863ea34676cee04161e6c5f3a98005efbc7f783992074b494114615eebcfb",
+        "role": "A035-family-black-endboard-rear",
+        "useBoundary": "Black board white B/arrow/S + G silk, four retained Grove contacts and through-PCB solder support."
+      },
+      "photographPixelsUsed": false,
+      "privateOriginalUsed": false
+    }
+  ],
+  "privateIntakeAggregate": {
+    "exactSkuRows": 0,
+    "strictNameRows": 0,
+    "originalDownloads": 0
+  },
+  "actualInk": [
+    "Strip +/D/− anddirection arrows",
+    "WhiteinputPCB B/arrow/S+G;arrowtowardstrip",
+    "BlackNEXTPCB B/arrow/S+G;arrowtowardGrove"
+  ],
+  "omissions": [
+    "PromotionalSIGNALINPUT/NEXTcaptions",
+    "Unknownmicrotext",
+    "Releasepapertrademark",
+    "Packaginglabel"
+  ],
+  "artworkFalse": "AllFPC/backing/pads/solderbridges/15packages/rigidboards/receivingcontacts retained;only3inkpanelsremoved. FPCink geometry follows sameneutral-axiswarp;endboardinkinheritsactualrigidcarrier.",
+  "rights": "Userauthorizedordinaryaccuratereference-redrawnPNGdistribution;officialimages/referencebytesarenotredistributedorblanketMITlicensed;productmarksretainrespectiveownership."
+}

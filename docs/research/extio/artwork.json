@@ -1,0 +1,85 @@
+{
+  "id": "extio",
+  "sku": "U011",
+  "kind": "reference-redraw",
+  "pngCount": 1,
+  "defaultPanels": 1,
+  "physicalFilmCarriers": 1,
+  "assets": [
+    {
+      "path": "src/units/extio/artwork/rear.png",
+      "sha256": "6645e73fbaf835e24a69ab9e4b6f56fd6dab7fb879653bc1cd419103dc62f200",
+      "kind": "reference-redraw",
+      "width": 1610,
+      "height": 1180,
+      "pixels": [
+        1610,
+        1180
+      ],
+      "carrier": "extioAssembly.labels.film;fixed original rear physical manufacturer film",
+      "source": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/extio/extio_02.webp",
+        "sha256": "358bb01628b7803e87915819097540fa87bb799c07194f4f14f94113ef9b6c89",
+        "bytes": 51162,
+        "role": "own-readable-rear-label",
+        "notForBodyArtwork": false
+      },
+      "method": "Independent code redraw of exact original U011 readable rear label;no photograph pixels",
+      "limitations": "Fonts,spacing,color and undimensioned film thickness/registration reconstructed;no guessed microtext or individual codes"
+    }
+  ],
+  "configurationCases": [
+    {
+      "id": "complete",
+      "options": {},
+      "panelCount": 1,
+      "pngCount": 1,
+      "panels": [
+        "rear"
+      ],
+      "kinds": [
+        "reference-redraw"
+      ],
+      "artworkKinds": [
+        "reference-redraw"
+      ]
+    }
+  ],
+  "actualSourceTexts": {
+    "title": "EXTEND I/O",
+    "chip": "PCA9554PW",
+    "port": "PORT.A . I2C",
+    "rearViewTopRowLeftToRight": [
+      "5V",
+      "6",
+      "4",
+      "2",
+      "0"
+    ],
+    "rearViewBottomRowLeftToRight": [
+      "G",
+      "7",
+      "5",
+      "3",
+      "1"
+    ],
+    "groveLegend": [
+      "SCL",
+      "SDA",
+      "5V",
+      "GND"
+    ]
+  },
+  "uncoloredMarkings": "Raised blank front hood and moulded rear M5 are real white shell material;no raster stand-in",
+  "artworkFalse": "Ink absent;complete physical rear film,relief,shell,PCB,contacts,all geometry attributes/indices/world matrices retained",
+  "privateIntakeAggregate": {
+    "exactSkuRows": 0,
+    "strictNameRows": 0,
+    "originalDownloads": 0
+  },
+  "sourcePhotosDistributed": false,
+  "vectorOriginalsDistributed": false,
+  "generatorsDistributed": false,
+  "photographPixelsUsed": false,
+  "rights": "User authorized matching official-photo redraw as ordinary PNG with attribution;official references are not blanket MIT-licensed and product marks retain respective rights"
+}

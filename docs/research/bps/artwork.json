@@ -1,0 +1,73 @@
+{
+  "id": "bps",
+  "sku": "U090",
+  "kind": "reference-redraw",
+  "assets": [
+    {
+      "path": "src/units/bps/artwork/front.png",
+      "sha256": "d974d7cff547fcc4d21f6961f201f81ee4c82ac820c3d54d56c6f5800233d755",
+      "kind": "reference-redraw",
+      "width": 800,
+      "height": 800,
+      "carrier": "bpsAssembly.shell.frontFilm;actual round adhesive film on complete recessed support",
+      "source": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/bps/bps_08.webp",
+        "sha256": "e818a66e264e2b0d60c90d83dd493dc678b8ecc711e414a402e534e3916a3017",
+        "bytes": 47934,
+        "role": "own-front-with-scale-reference"
+      },
+      "method": "Accurate readable own-photo code redraw,ordinary PNG;no source photograph pixels",
+      "limitations": "Font/spacing/color and unmeasured film thickness reconstructed;no unknown microtext or individual identity"
+    },
+    {
+      "path": "src/units/bps/artwork/back.png",
+      "sha256": "053e9008e198ead9820d44c791e12235617ff15e50a6b3e423e65a6747522d3f",
+      "kind": "reference-redraw",
+      "width": 1296,
+      "height": 344,
+      "carrier": "bpsAssembly.shell.backFilm;actual rear information film on complete pan",
+      "source": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/bps/bps_02.webp",
+        "sha256": "676ba02828fac1fc2681641718fdff7a8d08560b82ecc3bf029fd6ad35a623fc",
+        "bytes": 31416,
+        "role": "own-readable-rear-film-and-unpaintedM5"
+      },
+      "method": "Accurate readable own-photo code redraw,ordinary PNG;no source photograph pixels",
+      "limitations": "Font/spacing/color and unmeasured film thickness reconstructed;no unknown microtext or individual identity"
+    }
+  ],
+  "pngCount": 2,
+  "physicalFilmCarriers": 2,
+  "configurationCases": [
+    {
+      "options": {},
+      "kinds": [
+        "reference-redraw",
+        "reference-redraw"
+      ]
+    }
+  ],
+  "texts": {
+    "front": [
+      "BPS"
+    ],
+    "back": [
+      "PORT. A . I2C",
+      "SCL",
+      "SDA",
+      "5V",
+      "GND"
+    ]
+  },
+  "uncoloredM5": "Actual recessed geometry,not an image",
+  "carrierPolicy": "artwork:false removes ink only;both real films and all physical assemblies remain",
+  "excluded": [
+    "Packaging BAROMETRIC PRESSURE SENSOR UNIT",
+    "U090-B/QMP6988 variant",
+    "photographic crops",
+    "unknown microtext",
+    "individual identifiers"
+  ],
+  "privateOriginalDownloads": 0,
+  "rawSourcesVectorsGeneratorsDistributed": false
+}

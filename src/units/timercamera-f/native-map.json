@@ -1,0 +1,122 @@
+{
+  "sku": "U082-F",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U082%E2%80%91F_TimerCamera%E2%80%91F/Structures/TimerCamera-F.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "ab7675f170593e2b9ec6feb44972d4c64bc7a5c3",
+  "sha256": "3c5c985e8d8949f21779e72840966eb3a1e081a6236d31ecb10b1ad2130f2ba3",
+  "license": "MIT",
+  "licenseUrl": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/LICENSE",
+  "licenseSha256": "44611d917bece311f5c8eeffce83d8bf9e9ca3f815d262f694ff4a7996af50ea",
+  "scale": 1,
+  "axisRotation": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ]
+  ],
+  "assembledTranslationMm": [
+    60,
+    -70,
+    -2.5
+  ],
+  "sourceTriangles": 25258,
+  "bodyTriangles": 9496,
+  "accessoryTriangles": 4116,
+  "outputTriangles": 13612,
+  "parts": [
+    {
+      "component": 1,
+      "role": "front",
+      "name": "TimerCamera-F complete own native front",
+      "material": "shell",
+      "triangles": 7912,
+      "sourceFaceRanges": [
+        [
+          7912,
+          15823
+        ]
+      ],
+      "sourceXTranslationMm": 215.6108856201172,
+      "nativeVolumeMm3": 4107.576126101734
+    },
+    {
+      "component": 2,
+      "role": "rear",
+      "name": "TimerCamera-F complete own native rear",
+      "material": "shell",
+      "triangles": 1584,
+      "sourceFaceRanges": [
+        [
+          15824,
+          17407
+        ]
+      ],
+      "sourceXTranslationMm": 165.6994171142578,
+      "nativeVolumeMm3": 2305.634212443346
+    },
+    {
+      "component": 4,
+      "role": "clip",
+      "name": "TimerCamera-F complete own native clip",
+      "material": "shell",
+      "triangles": 2150,
+      "sourceFaceRanges": [
+        [
+          20958,
+          23107
+        ]
+      ],
+      "sourceXTranslationMm": 0,
+      "nativeVolumeMm3": 1134.4314346280366
+    },
+    {
+      "component": 3,
+      "role": "adapter",
+      "name": "TimerCamera-F complete own native adapter",
+      "material": "shell",
+      "triangles": 1966,
+      "sourceFaceRanges": [
+        [
+          18992,
+          20957
+        ]
+      ],
+      "sourceXTranslationMm": 60,
+      "nativeVolumeMm3": 1235.3522926312821
+    }
+  ],
+  "excludedComponents": [
+    {
+      "sourceComponent": 0,
+      "triangles": 9496,
+      "reason": "Combined touching-seam assembly excluded;use complete closed halves"
+    },
+    {
+      "sourceComponent": 5,
+      "triangles": 2150,
+      "reason": "duplicate exploded clip"
+    }
+  ],
+  "nativeShellEnvelopeMm": [
+    24,
+    48,
+    22.39441967010498
+  ],
+  "vendorNominalMm": [
+    24,
+    48,
+    23.3
+  ],
+  "note": "Every selected source face retained without edits,deletion,scaling or native patch. Closed exploded halves restored by exact source X assembly datum. Independent continuous material infill restores actual photographed plain front,documented in modeling.md;missing glass/electronics/fixings/film are separately parameterized."
+}

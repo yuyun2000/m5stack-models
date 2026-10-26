@@ -1,0 +1,461 @@
+{
+  "id": "neco",
+  "sku": "U163",
+  "retrievedAt": "2026-10-27",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_Neco",
+  "sourceRoute": "own-dimensioned-parametric-no-CAD",
+  "officialMCP": {
+    "queries": [
+      "Unit Neco U163 35 RGB LEDs dimensions button Grove"
+    ],
+    "responseSha256": "38d3514079c6abcf9aad64858026ece6a80a20abf9f5f809d4b5abe4a1511977",
+    "rawResponseDistributed": false,
+    "result": "Exact U163 own 35 WS2812C-2020 packages, two HY2.0-4P SMD connectors, rear S1,17 capacitors and own multiview drawing confirmed."
+  },
+  "reference": {
+    "id": "neco-rear",
+    "role": "own-rear-photo-controls-Grove-print",
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Neco%20Unit/img-0829fc9e-df08-42df-9b0e-7bc4fe3f32d4.webp",
+    "sha256": "30cde08cbc646583c2691d5e82e6feaae65e9b87adc1b7ca152d2fbb2dfe777d"
+  },
+  "referenceSources": [
+    {
+      "id": "neco-dimension",
+      "role": "own-six-view-dimension-png",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/767/U163_Model_Size_sch_01.png",
+      "sha256": "477a757107ef3532bd46bcf4cdb791090027fc5cd0c3b09e1d65e394cf6d22be"
+    },
+    {
+      "id": "neco-rear",
+      "role": "own-rear-photo-controls-Grove-print",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Neco%20Unit/img-0829fc9e-df08-42df-9b0e-7bc4fe3f32d4.webp",
+      "sha256": "30cde08cbc646583c2691d5e82e6feaae65e9b87adc1b7ca152d2fbb2dfe777d"
+    },
+    {
+      "id": "neco-front",
+      "role": "own-front-35LED-photo",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Neco%20Unit/img-f441c430-5ab7-44e4-b5be-b1b878a0096c.webp",
+      "sha256": "a90ef03f5b37cae6ac6a99bc06f844d4542ce2e56b46f6194a169af894429c6b"
+    },
+    {
+      "id": "neco-schematic",
+      "role": "own-schematic-pdf",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/618/Sch_neco-unit.pdf",
+      "sha256": "9f3df7508654832aba7fc60db9b0151c8ac1f7aa321d5b2a9dccfffd926e79d9"
+    },
+    {
+      "id": "neco-page",
+      "role": "own-product-page",
+      "url": "https://docs.m5stack.com/en/unit/Unit_Neco",
+      "sha256": "6c296a23c31839bf4684e2ed65454e25aa86cd9ae411dcbec4bb0c413d8bdfb1"
+    }
+  ],
+  "structures": [],
+  "selectedAssembly": null,
+  "nativeTriangles": null,
+  "noNativeCadTriangleClaim": true,
+  "additionalCad": {
+    "exists": true,
+    "consumed": false,
+    "reason": "Official CDN STEP explicit license route was not confirmed; accepted own-dimension/photo parameterization does not consume its faces."
+  },
+  "drawingFacts": {
+    "assembledEnvelopeMm": [
+      47.1,
+      44.6,
+      10.1
+    ],
+    "pcbThicknessMm": 1,
+    "outerLowerHoleCentersMm": 43,
+    "innerFixingCentersMm": 28,
+    "innerAboveOuterCentersMm": 2.6,
+    "innerAboveBottomDatumMm": 4.7
+  },
+  "nominalMm": [
+    44.6,
+    43,
+    10.1
+  ],
+  "nominalClarification": "43mm is outer lower hole-centre span; 47.1mm is full width. Do not flatten or stretch the own drawing.",
+  "officialDimensionFeedback": {
+    "feedback_id": "ff8e146d7d1a49608b4af75abdfd6004",
+    "saved": true,
+    "issue": "Neco nominal 43mm versus own drawing full 47.1mm; preflight reported public source discrepancy."
+  },
+  "actualDefaultEnvelopeMm": [
+    47.099998474121094,
+    44.599998474121094,
+    10.10000001192093
+  ],
+  "physicalPlacement": {
+    "leds": [
+      {
+        "x": -21.895093062605753,
+        "y": -17.7,
+        "number": 1,
+        "angle": -0.2927130752239975
+      },
+      {
+        "x": -21.150592216582062,
+        "y": -15.229610829103212,
+        "number": 2,
+        "angle": -0.2989801635028324
+      },
+      {
+        "x": -20.372250423011845,
+        "y": -12.759221658206432,
+        "number": 3,
+        "angle": -0.3052231337939211
+      },
+      {
+        "x": -19.593908629441625,
+        "y": -10.288832487309644,
+        "number": 4,
+        "angle": -0.31345198971197297
+      },
+      {
+        "x": -18.78172588832487,
+        "y": -7.85228426395939,
+        "number": 5,
+        "angle": -0.3341980442655035
+      },
+      {
+        "x": -17.901861252115058,
+        "y": -5.415736040609136,
+        "number": 6,
+        "angle": -0.3610677565825111
+      },
+      {
+        "x": -16.95431472081218,
+        "y": -3.013028764805412,
+        "number": 7,
+        "angle": -0.3841693643925994
+      },
+      {
+        "x": -15.972927241962774,
+        "y": -0.6441624365482213,
+        "number": 8,
+        "angle": -0.4168980704098937
+      },
+      {
+        "x": -14.856175972927241,
+        "y": 1.7247038917089696,
+        "number": 9,
+        "angle": -0.449155869935306
+      },
+      {
+        "x": -13.705583756345177,
+        "y": 4.059729272419627,
+        "number": 10,
+        "angle": -0.47517447597548745
+      },
+      {
+        "x": -12.453468697123519,
+        "y": 6.394754653130288,
+        "number": 11,
+        "angle": -0.5095922648089255
+      },
+      {
+        "x": -11.133671742808799,
+        "y": 8.662098138747886,
+        "number": 12,
+        "angle": -0.5503859476767909
+      },
+      {
+        "x": -9.712351945854484,
+        "y": 10.861759729272421,
+        "number": 13,
+        "angle": -0.5969629372154015
+      },
+      {
+        "x": -8.189509306260575,
+        "y": 12.993739424703893,
+        "number": 14,
+        "angle": -0.6435011087932846
+      },
+      {
+        "x": -6.565143824027072,
+        "y": 15.058037225042302,
+        "number": 15,
+        "angle": -0.7004016460681195
+      },
+      {
+        "x": -4.737732656514383,
+        "y": 17.08849407783418,
+        "number": 16,
+        "angle": -0.7633752927844736
+      },
+      {
+        "x": -2.808798646362098,
+        "y": 18.983587140439933,
+        "number": 17,
+        "angle": -0.9994588469612696
+      },
+      {
+        "x": 0,
+        "y": 20.134179357022,
+        "number": 18,
+        "angle": 0
+      },
+      {
+        "x": 2.808798646362098,
+        "y": 18.983587140439933,
+        "number": 19,
+        "angle": -2.1421338066285234
+      },
+      {
+        "x": 4.737732656514383,
+        "y": 17.08849407783418,
+        "number": 20,
+        "angle": -2.3782173608053196
+      },
+      {
+        "x": 6.565143824027072,
+        "y": 15.058037225042302,
+        "number": 21,
+        "angle": -2.441191007521674
+      },
+      {
+        "x": 8.189509306260575,
+        "y": 12.993739424703893,
+        "number": 22,
+        "angle": -2.4980915447965084
+      },
+      {
+        "x": 9.712351945854484,
+        "y": 10.861759729272421,
+        "number": 23,
+        "angle": -2.5446297163743914
+      },
+      {
+        "x": 11.133671742808799,
+        "y": 8.662098138747886,
+        "number": 24,
+        "angle": -2.5912067059130024
+      },
+      {
+        "x": 12.453468697123519,
+        "y": 6.394754653130288,
+        "number": 25,
+        "angle": -2.6320003887808676
+      },
+      {
+        "x": 13.705583756345177,
+        "y": 4.059729272419627,
+        "number": 26,
+        "angle": -2.6664181776143057
+      },
+      {
+        "x": 14.856175972927241,
+        "y": 1.7247038917089696,
+        "number": 27,
+        "angle": -2.692436783654487
+      },
+      {
+        "x": 15.972927241962774,
+        "y": -0.6441624365482213,
+        "number": 28,
+        "angle": -2.7246945831798994
+      },
+      {
+        "x": 16.95431472081218,
+        "y": -3.013028764805412,
+        "number": 29,
+        "angle": -2.7574232891971935
+      },
+      {
+        "x": 17.901861252115058,
+        "y": -5.415736040609136,
+        "number": 30,
+        "angle": -2.780524897007282
+      },
+      {
+        "x": 18.78172588832487,
+        "y": -7.85228426395939,
+        "number": 31,
+        "angle": -2.8073946093242896
+      },
+      {
+        "x": 19.593908629441625,
+        "y": -10.288832487309644,
+        "number": 32,
+        "angle": -2.82814066387782
+      },
+      {
+        "x": 20.372250423011845,
+        "y": -12.759221658206432,
+        "number": 33,
+        "angle": -2.836369519795872
+      },
+      {
+        "x": 21.150592216582062,
+        "y": -15.229610829103212,
+        "number": 34,
+        "angle": -2.8426124900869607
+      },
+      {
+        "x": 21.895093062605753,
+        "y": -17.7,
+        "number": 35,
+        "angle": -2.8488795783657954
+      }
+    ],
+    "mountingCenters": [
+      [
+        -21.5,
+        -20.2
+      ],
+      [
+        21.5,
+        -20.2
+      ],
+      [
+        -14,
+        -17.6
+      ],
+      [
+        14,
+        -17.6
+      ]
+    ],
+    "mountingRadiiMm": [
+      1.05,
+      1.05,
+      0.85,
+      0.85
+    ],
+    "capacitors": [
+      {
+        "x": 0,
+        "y": 17.4,
+        "angle": 0
+      },
+      {
+        "x": 4.373273186007253,
+        "y": 14.31231517611375,
+        "angle": 3.904967946374267
+      },
+      {
+        "x": -4.373273186007253,
+        "y": 14.31231517611375,
+        "angle": -3.904967946374267
+      },
+      {
+        "x": 7.495173213865509,
+        "y": 10.28119497515149,
+        "angle": 3.785093762383078
+      },
+      {
+        "x": -7.495173213865509,
+        "y": 10.28119497515149,
+        "angle": -3.785093762383078
+      },
+      {
+        "x": 10.088208304126166,
+        "y": 6.064598148684771,
+        "angle": 3.6919786012665843
+      },
+      {
+        "x": -10.088208304126166,
+        "y": 6.064598148684771,
+        "angle": -3.6919786012665843
+      },
+      {
+        "x": 12.275005037397882,
+        "y": 1.6527717470579697,
+        "angle": 3.6167671295652806
+      },
+      {
+        "x": -12.275005037397882,
+        "y": 1.6527717470579697,
+        "angle": -3.6167671295652806
+      },
+      {
+        "x": 14.134884590379864,
+        "y": -2.7564122349769167,
+        "angle": 3.558490723999687
+      },
+      {
+        "x": -14.134884590379864,
+        "y": -2.7564122349769167,
+        "angle": -3.558490723999687
+      },
+      {
+        "x": 15.671338190431166,
+        "y": -7.108298261414126,
+        "angle": 3.5026604101723047
+      },
+      {
+        "x": -15.671338190431166,
+        "y": -7.108298261414126,
+        "angle": -3.5026604101723047
+      },
+      {
+        "x": 17.035370244474098,
+        "y": -11.426321534574612,
+        "angle": 3.4550446433017665
+      },
+      {
+        "x": -17.035370244474098,
+        "y": -11.426321534574612,
+        "angle": -3.4550446433017665
+      },
+      {
+        "x": 18.394048475286134,
+        "y": -15.72100334260159,
+        "angle": 3.440572817092626
+      },
+      {
+        "x": -18.394048475286134,
+        "y": -15.72100334260159,
+        "angle": -3.440572817092626
+      }
+    ],
+    "grove": {
+      "grove": {
+        "position": [
+          3.5,
+          -7.7,
+          -8.75
+        ],
+        "face": "back",
+        "role": "input"
+      },
+      "out": {
+        "position": [
+          -3.5,
+          -7.7,
+          -8.75
+        ],
+        "face": "back",
+        "role": "output"
+      }
+    },
+    "button": {
+      "id": "button",
+      "position": [
+        8.6,
+        12.7,
+        -1.42
+      ],
+      "rotationZ": -0.58,
+      "travelMm": 0.15
+    }
+  },
+  "appearanceInferences": [
+    "Own drawing outer-stroke-centre cubic fit max sampled difference0.033mm; image-fit residual is not manufacturing accuracy. Undimensioned top/bottom curves and hole/eye diameters inferred from own views.",
+    "LED height/encapsulant/contacts and 17 capacitor envelope/placement from own photos. Visual LED numbers are not claimed native U references or serial addresses.",
+    "Undimensioned Grove mouth/retainer/SMD tail detail, gold rear collars, switch package and 0.15mm cap-only visual travel inferred; no rated mechanical fit.",
+    "Readably documented ink only; font metrics/color/spacing/registration inferred. No guessed microtext, via array or copper routing."
+  ],
+  "noBorrowedModelOrCad": true,
+  "behaviorBoundary": "Visual geometry, physical input intent and independent external LED states only.",
+  "assetPolicy": {
+    "ordinaryRastersOnly": true,
+    "rawSourcesDistributed": false,
+    "privateSourcesDistributed": false,
+    "generatorsDistributed": false
+  },
+  "codeLicense": "MIT",
+  "rights": "Product printed design and trademarks retain respective rights."
+}

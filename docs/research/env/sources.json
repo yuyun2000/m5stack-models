@@ -1,0 +1,252 @@
+{
+  "id": "env",
+  "sku": "U001",
+  "name": "Unit ENV (DHT12 + BMP280)",
+  "chips": [
+    "DHT12",
+    "BMP280",
+    "HT7533"
+  ],
+  "lifecycle": "Original U001 EOL historical coverage;no current popularity/availability claim",
+  "retrievedAt": "2026-10-27",
+  "officialDocs": "https://docs.m5stack.com/en/unit/env",
+  "constructionRoute": "own-dimensional-parametric",
+  "nativeGeometryAvailable": false,
+  "nativeTriangles": null,
+  "immutableDocumentationSource": {
+    "url": "https://raw.githubusercontent.com/m5stack/m5-docs/e5354c5dcc61d16fdc1dff9d92c2c760728d0b60/docs/en/unit/env.md",
+    "commit": "e5354c5dcc61d16fdc1dff9d92c2c760728d0b60",
+    "path": "docs/en/unit/env.md",
+    "gitBlob": "8fea296e11523357cfd47e289f054a54ea95fd49",
+    "sha256": "a73b88c95eb01d7bbe9a8523e69eea1009219539032e591201b2e0b1b5e544b7",
+    "bytes": 5479,
+    "verified": true,
+    "repository": "m5stack/m5-docs",
+    "gitBlobVerifiedAgainstBytes": true,
+    "notRuntimeSource": true
+  },
+  "officialMCP": {
+    "status": "success",
+    "rawResponseSha256": "06fc72cde54290b8bdad895223947d6e4030ca6f689971b1d5694e7ff83a3219",
+    "decodedInfoSha256": "a93f0f638ffdfc54f70e89a59f0cf01003f690322150f654942e59c6fe31c95c",
+    "evidenceRole": "Only exact U001 schematic/product sections; exclude ENV-II/III/IV/Pro search hits.",
+    "rawDistributed": false
+  },
+  "exactVariantEvidence": {
+    "officialShopJson": "https://shop.m5stack.com/products/mini-env-sensor-unit.json",
+    "shopJsonSha256": "68dab27f1f7bda7e4236b4a1a389259a5c16cf51fdf86d50e2ac4613dfd1db67",
+    "title": "[EOL] ENV Unit with Temperature Humidity Pressure Sensor (DHT12+BMP280)",
+    "selectedVariant": {
+      "sku": "U001",
+      "title": "Default Title"
+    },
+    "onlyVariant": true
+  },
+  "reference": {
+    "url": "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/rB9kfVz4ed-AYBdmAASrurGe21A902.JPG?v=1766128813",
+    "sha256": "c3a18d90da31808b4a9c9b5152397ee091023b58384bceea64994a7ad777e18b",
+    "bytes": 60012,
+    "role": "exact-U001-clear-front"
+  },
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/env/env_01.webp",
+      "sha256": "876c0d679b0a5861e59c70cc914b6533a305cdb122af5076515a58a1635d3689",
+      "bytes": 95486,
+      "role": "own-promotional-front"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/env/env_cover_01.webp",
+      "sha256": "8f3bbf2200b22acac03d7483e008e9f88a9f100e5eba85a6dc81486222b6e3cf",
+      "bytes": 6450,
+      "role": "own-front-isometric"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/1_2968ce2c-13be-4e31-8b8a-7491978a5b2c.jpg?v=1652238676",
+      "sha256": "941b5379dd9155dc77d4b499571795cb046d39a94981982e4891ce3f987a533d",
+      "bytes": 35193,
+      "role": "exact-U001-shop-front-isometric"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/5_78efc32a-152b-497e-8723-704840e3e7e3.jpg?v=1766128813",
+      "sha256": "adbc75824011bbe4346fa8c54be2956b6b009b15cdbc1db0c9a4604827bd507a",
+      "bytes": 18637,
+      "role": "exact-U001-shop-second-front-isometric"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/rB9kfVz4ed-AYBdmAASrurGe21A902.JPG?v=1766128813",
+      "sha256": "c3a18d90da31808b4a9c9b5152397ee091023b58384bceea64994a7ad777e18b",
+      "bytes": 60012,
+      "role": "exact-U001-clear-front"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/6_69be0f76-42ae-463f-b27b-93e67f83f28d.jpg?v=1766128813",
+      "sha256": "bc97d03fc0efa642098b70f0c6787c341af36849054533fc3da7f025011ceeb3",
+      "bytes": 29280,
+      "role": "exact-U001-front-with-coin"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/rB9kflz4edqAXvkiAAWa5QVv35w057.JPG?v=1766128813",
+      "sha256": "e3a2ae99286a116dfeba6c1e9217e1213a1d7b2532fb94a58fdcbf9f7ac082c5",
+      "bytes": 91977,
+      "role": "exact-U001-clear-rear-artwork"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/20190809095814.jpg?v=1766128813",
+      "sha256": "daeee9096cf5c1b69b9ecfd966239f9f837837cde8d8c34ff0f62747d3951117",
+      "bytes": 16079,
+      "role": "exact-U001-rear-with-cable"
+    }
+  ],
+  "nominalMm": [
+    24.2,
+    32.2,
+    8.1
+  ],
+  "dimensionBasis": {
+    "ownOfficialTableMm": [
+      24.2,
+      32.2,
+      8.1
+    ],
+    "currentPageAndImmutableTableAgree": true,
+    "basis": "Own U001 current page and immutable table agree; exact U001 shop has original front/clear rear photos. Do not replace with generic 24×32×8 or later ENV III/IV shell."
+  },
+  "actualPhysicalEnvelopeMm": [
+    24.200000762939453,
+    32.20000076293945,
+    8.100000011473895
+  ],
+  "inferred": [
+    "Original U001 only. Current own official table and immutable docs agree24.2×32.2×8.1mm. No native CAD/source triangles;no stretched ENV-III/IV/BPS shell. Official shop has only original U001 SKU and DHT12+BMP280 title.",
+    "Exact own shop4 front was counted manually:9 staggered rows4/5/4/5/4/5/4/5/4=40 real vertical round-ended slots. Slot0.8×1.8mm,row1.55mm pitch,4.1mm within-row pitch,case radius4.6mm,splitplanes/wall levels,5mm bore diameter/16.3mm pitch/y−4,PCB/support positions and all manufacturing clearances are own-photo appearance estimates,not official mechanical datums.",
+    "Complete own scalloped raised front,lower skin,closed rear pan,continuous sides/bottom closure and two actual mounting tubes. All40 axial slot paths are empty through both front skins;320 outwardFrontSide wall rays hit material,then every path reaches retained DHT12/BMP280/passive/PCB material,not an image or empty case. Tube-to-PCB open-edge clearance0.3mm;central retained boss clearance0.35mm.",
+    "Original schematic confirms DHT12,BMP280,HT7533 and4pinGrove presence,not a complete BOM or hidden3D placement. DHT12 package outer body,18 internal grille apertures,4legs,pads and fixed medium/support layers are inferred visual reconstruction;its18 package slots must not be confused with40 source-counted shell slots. BMP280 metallic cap has true0.16mm-radius pressure hole,deep fixed floor,4canwalls and8retainedLGA contacts;all package and pressure-port local dimensions are appearance estimates,not pressure or diaphragm physics.",
+    "HT7533 retained physical package with3legs/lands and6supporting passive envelopes are reconstructed. RedGrove has actual receiving cavity,walls,stop,guides,4independent contacts,4right-angle returns,4throughPCBtails,4platedbarrels and8annularsolderlands;physical pin names are metadata only,not electrical or protocol behavior.",
+    "Exact own shop6 supplies ENV./SENSOR/°C/%/pa,redPORT.A.I2C,SCL/SDA/5V/GND and separate Q.C/PASS visible physical film print. Two accurately code-redrawn ordinary PNGs use no photographic pixels. Font/spacing/colors/filmthickness are reconstructed;QC wording is copied appearance and not an actual certification claim. Both complete films and actual uncolored recessed rearM5 remain with artwork:false.",
+    "Static physical model:bodycomponents[grove],GroveModule[grove,unitFrame,cable];0button/LED/joint/sensorComponent/anchor/display/speaker. No environmental values,sampling,I2Caddress/register,power,electrical,firmware or automaticglow. Necessary CPU Model+transformedStickS3-HUBbranch3,peer,artwork-invariance andresource-disposal proof is not browser/GPU/hardware/manufacturingfit acceptance."
+  ],
+  "privateAggregate": {
+    "sku": "U001",
+    "exactSkuRows": 0,
+    "strictNameOnlyRows": 0,
+    "originalDownloads": 0,
+    "requiresExactVariantReview": false
+  },
+  "license": {
+    "newAuthoredCode": "MIT",
+    "importedNativeGeometry": false,
+    "officialReferences": "Reference only;not blanket MIT,raw photos/docs not distributed",
+    "ordinaryPng": "User-authorized exact-model ordinary raster redraw;product marks retain respective rights"
+  },
+  "assetPolicy": {
+    "pngCount": 2,
+    "privateSourcesDistributed": false,
+    "rawSourcesDistributed": false,
+    "vectorsGeneratorsDistributed": false
+  },
+  "publicAPI": {
+    "exports": [
+      "GroveModule",
+      "Model",
+      "configurationSchema",
+      "configurations",
+      "defaults",
+      "spec"
+    ],
+    "defaultExport": "Model",
+    "bodyComponentOrder": [
+      "grove"
+    ],
+    "keymap": {},
+    "defaults": {},
+    "configurationSchema": {
+      "artwork": {
+        "type": "boolean",
+        "default": true,
+        "meaning": "Remove ink only; retain physical main/QC films, all 40 real vents, sensor packages, PCB and case"
+      }
+    },
+    "configurations": [
+      {
+        "id": "complete",
+        "name": "完整原版 ENV U001",
+        "options": {}
+      }
+    ],
+    "moduleComponentOrder": [
+      "grove",
+      "unitFrame",
+      "cable"
+    ],
+    "assemblyProperty": "envAssembly",
+    "moduleAdditionalComponents": [
+      "unitFrame",
+      "cable"
+    ],
+    "canonicalCableInput": "grove",
+    "ports": [
+      "grove"
+    ],
+    "controls": [],
+    "leds": [],
+    "displays": [],
+    "speakers": [],
+    "sensors": [],
+    "joints": [],
+    "anchors": [],
+    "passiveAnchors": [],
+    "aliases": [],
+    "options": {
+      "artwork": "boolean"
+    },
+    "configurationCases": [
+      {
+        "options": {},
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "artworkKinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "pngCount": 2
+      }
+    ],
+    "accessoryExports": [],
+    "accessories": {},
+    "commands": {
+      "unitFrame": {
+        "type": "pose",
+        "target": "unitFrame",
+        "fields": [
+          "position",
+          "rotation",
+          "quaternion",
+          "distance"
+        ]
+      },
+      "cable": {
+        "type": "cable",
+        "target": "cable",
+        "fields": [
+          "slack",
+          "bend"
+        ]
+      }
+    },
+    "inputEvents": {
+      "ports": [
+        "attach",
+        "detach"
+      ]
+    },
+    "artworkPngCount": 2,
+    "artworkSourceKind": "reference-redraw",
+    "physicalAdhesiveFilms": 2,
+    "allArtworkPhysicalAttributesIndexWorldInvariant": true,
+    "physicalSensorDictionary": "envAssembly.dht12/bmp280 contain fixed package/grille/medium/pressure-port geometry only;no Component,anchor or readings",
+    "noAccessoriesOrRemovableCovers": true
+  }
+}

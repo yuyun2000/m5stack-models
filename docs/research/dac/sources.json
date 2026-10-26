@@ -1,0 +1,135 @@
+{
+  "id": "dac",
+  "sku": "U012",
+  "retrievedAt": "2026-10-27",
+  "officialDocs": "https://docs.m5stack.com/en/unit/dac",
+  "constructionRoute": "own-dimensional-parametric",
+  "nativeGeometryAvailable": false,
+  "nativeFaceCount": 0,
+  "nativeCadSearch": {
+    "indexCommit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "exactSkuStructures": [],
+    "noBorrowedSiblingGeometry": true
+  },
+  "officialMCP": {
+    "query": "Unit DAC U012 MCP4725 dimensions",
+    "rawResponseSha256": "a1e59e3d353daf1d1d2775abc9ae7435761bd18574291e19f669e29c58a38a40",
+    "decodedInfoSha256": "236ae08b9d46f0928724f795cd7c2c0549f7af5b58216e4a16852f1a82a22635",
+    "status": "success",
+    "exactOwnSkuSectionsOnly": true,
+    "rawResponseDistributed": false
+  },
+  "immutableDocumentationSource": {
+    "repository": "m5stack/m5-docs",
+    "commit": "e5354c5dcc61d16fdc1dff9d92c2c760728d0b60",
+    "path": "docs/en/unit/dac.md",
+    "gitBlob": "593d5e88e87e03a95f58780f7eae1ad6dea26bac",
+    "url": "https://raw.githubusercontent.com/m5stack/m5-docs/e5354c5dcc61d16fdc1dff9d92c2c760728d0b60/docs/en/unit/dac.md",
+    "sha256": "87ef78c2ce89441cc5c0fc16eaabd5eb0eb137d603cbede8ceb729504d7f66ec",
+    "bytes": 3914,
+    "gitBlobVerifiedAgainstBytes": true,
+    "sourceOnlyNotCopiedIntoRuntime": true
+  },
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/dac/dac_02.webp",
+      "sha256": "b8e48ea85ad01183c8fd6535b45301000cab0d46ab9f5bf0aa72c204905a6190",
+      "bytes": 45300,
+      "role": "own-readable-rear-label",
+      "notForBodyArtwork": false
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/dac/dac_03.webp",
+      "sha256": "8a0a6298f0a940d56c4456bb716f68f93d2cf7ab3053e7049d55eb2c495d6bdb",
+      "bytes": 28854,
+      "role": "excluded-packaging-photo",
+      "notForBodyArtwork": true
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/dac/dac_05.webp",
+      "sha256": "b5b85e71c4b075d5c8ee24851163e657a6c2dfe9186efed4db835baba4451bf2",
+      "bytes": 33570,
+      "role": "own-assembled-isometric",
+      "notForBodyArtwork": false
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/dac/dac_06.webp",
+      "sha256": "9abe46690894abaac73b19d777cbae158360152ffdc3049700c280a57225c036",
+      "bytes": 50878,
+      "role": "own-assembled-front-and-connector-reference",
+      "notForBodyArtwork": false
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/dac/MODULE%20SIZE.jpg",
+      "sha256": "81924274754982fab26aef5ff3b0e8fc1c2ca7d483ac100c6399dd82eaee33c4",
+      "bytes": 460471,
+      "role": "own-product-dimensioned-multiview"
+    }
+  ],
+  "licenseBoundary": {
+    "newAuthoredCode": "MIT under existing user decision",
+    "importedNativeGeometry": false,
+    "sourceDocsPhotosDrawing": "Reference evidence only;no blanket MIT/photo reuse claim,raw source not distributed",
+    "ordinaryMatchingRasters": "Authorized code-redrawn ordinary PNG only,product marks retain respective rights"
+  },
+  "nominalMm": [
+    24,
+    32,
+    10.2
+  ],
+  "currentDimensionBasis": "Current exact U012 MCP segment32×24×10.2mm and its own dimensioned multiview24×32×10.2mm,8mm base,R4,Ø5mount bores16mm pitch,10×5.2 Grove mouth.",
+  "historicalDifference": {
+    "oldImmutableEnglishTableMm": [
+      32.2,
+      24.2,
+      10.3
+    ],
+    "notCurrentRuntimeDatum": true,
+    "feedbackAccepted": true,
+    "feedbackId": "62c7572dda704867bc1c2c85edc363b8",
+    "currentOwnDrawingAndMCPAgree": true
+  },
+  "hiddenPhysicalIdentity": "Own U012 schematic descriptions establish MCP4725+LM321MFX,R1/R2,C1/C2/C3;appearance only,concealed package positions/outline/supports inferred.",
+  "exclusions": [
+    "DAC2 U012-B GP8413 dual output",
+    "HAT DAC",
+    "packaging label",
+    "photograph crops",
+    "private source vectors",
+    "individual codes"
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/dac/TerminalPlug.js",
+      "sha256": "b3457bcbbbe40a692e233b00a87b761544cdfa9ea396e0ef7dd682062e89c0a5"
+    },
+    {
+      "path": "src/units/dac/assembly.js",
+      "sha256": "91c7eb07f1dcffca0b08d134212a2a2ca78213a6c05f316741018a90d80dd83a"
+    },
+    {
+      "path": "src/units/dac/dimensions.js",
+      "sha256": "3935417cf7845c2c7121e9f0a05b630ba9983edfebc5d61637e0c55649d40569"
+    },
+    {
+      "path": "src/units/dac/geometry.js",
+      "sha256": "8c3b366973da0099ebca6c793e69f5fa8e174615d7df2da35c95b711373171b1"
+    },
+    {
+      "path": "src/units/dac/index.js",
+      "sha256": "74cab80b35fd60a6e4dc1bcafb982fc37579af5360f9254ea7a459058eb3ca79"
+    },
+    {
+      "path": "src/units/dac/reference-redraw-back.png",
+      "sha256": "46f959d8a3928af68ad5e2e4d4ff0c5c2ba1cbf15e7c1d16cfd86d9d35401831"
+    },
+    {
+      "path": "src/units/dac/reference-redraw-polarity.png",
+      "sha256": "3d6543686aedb7dedda293bf80a9cdd65ffd82808dcf55d1014931e5e5a33396"
+    },
+    {
+      "path": "src/units/dac/stickers.js",
+      "sha256": "9eb94e72e7ace1afe7a0d5cd7c0c015e2da5c07e8308e06f8972e76228bcdfaf"
+    }
+  ]
+}

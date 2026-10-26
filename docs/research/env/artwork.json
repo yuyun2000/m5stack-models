@@ -1,0 +1,80 @@
+{
+  "id": "env",
+  "sku": "U001",
+  "kind": "reference-redraw",
+  "assets": [
+    {
+      "path": "src/units/env/artwork/back.png",
+      "sha256": "977bdd2afef4561e253d20e4696b74fdcc918328e4c6bdb8895d96fde6f8dd85",
+      "kind": "reference-redraw",
+      "width": 1630,
+      "height": 1215,
+      "carrier": "envAssembly.shell.backFilm",
+      "source": {
+        "url": "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/rB9kflz4edqAXvkiAAWa5QVv35w057.JPG?v=1766128813",
+        "sha256": "e3a2ae99286a116dfeba6c1e9217e1213a1d7b2532fb94a58fdcbf9f7ac082c5",
+        "bytes": 91977,
+        "role": "exact-U001-clear-rear-artwork"
+      },
+      "method": "Accurate code-redrawn clean ordinary PNG from clear exact U001 rear;zero source photograph pixels",
+      "limitations": "Typography/spacing/colors and physical film thickness reconstructed;no unknown microtext or individual data"
+    },
+    {
+      "path": "src/units/env/artwork/qc.png",
+      "sha256": "27dd05c7f1c5fefd1e29e9efbbd03f40b3cac087299f5ca0b5ccdc84a5e1323d",
+      "kind": "reference-redraw",
+      "width": 1024,
+      "height": 1024,
+      "carrier": "envAssembly.shell.qcFilm",
+      "source": {
+        "url": "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/rB9kflz4edqAXvkiAAWa5QVv35w057.JPG?v=1766128813",
+        "sha256": "e3a2ae99286a116dfeba6c1e9217e1213a1d7b2532fb94a58fdcbf9f7ac082c5",
+        "bytes": 91977,
+        "role": "exact-U001-clear-rear-artwork"
+      },
+      "method": "Accurate code-redrawn clean ordinary PNG from clear exact U001 rear;zero source photograph pixels",
+      "limitations": "Typography/spacing/colors and physical film thickness reconstructed;no unknown microtext or individual data"
+    }
+  ],
+  "pngCount": 2,
+  "physicalFilmCarriers": 2,
+  "configurationCases": [
+    {
+      "options": {},
+      "kinds": [
+        "reference-redraw",
+        "reference-redraw"
+      ]
+    }
+  ],
+  "texts": {
+    "back": [
+      "ENV.",
+      "SENSOR",
+      "°C",
+      "%",
+      "pa",
+      "PORT. A . I2C",
+      "SCL",
+      "SDA",
+      "5V",
+      "GND"
+    ],
+    "qc": [
+      "Q.C",
+      "PASS"
+    ]
+  },
+  "uncoloredM5": "Actual own recessed material geometry,not an image",
+  "qcBoundary": "Visible physical print only;no model certification claim",
+  "carrierPolicy": "artwork:false removes ink only;main and circular QC physical films and complete case/PCB/sensor/contact assemblies remain",
+  "excluded": [
+    "photographic crops",
+    "packaging labels",
+    "later ENV generation labels",
+    "unreadable microtext",
+    "individual identity codes"
+  ],
+  "privateOriginalDownloads": 0,
+  "rawSourcesVectorsGeneratorsDistributed": false
+}

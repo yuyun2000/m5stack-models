@@ -1,0 +1,281 @@
+{
+  "id": "gps",
+  "sku": "U032",
+  "name": "Unit GPS (AT6558 + MAX2659)",
+  "chips": [
+    "AT6558",
+    "MAX2659"
+  ],
+  "lifecycle": "EOL original historical coverage;no live popularity/sales claim",
+  "retrievedAt": "2026-10-27",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_GPS",
+  "constructionRoute": "own-dimensional-parametric",
+  "nativeGeometryAvailable": false,
+  "nativeTriangles": null,
+  "immutableDocumentationSource": {
+    "url": "https://raw.githubusercontent.com/m5stack/m5-docs/e5354c5dcc61d16fdc1dff9d92c2c760728d0b60/docs/en/unit/gps.md",
+    "bytes": 5713,
+    "sha256": "4154ac6458413a901585e6bc83a36b7b554cc81422ac2fa5adc8b7b041817a60",
+    "gitBlob": "2d416cb7068df8d8c8091ca8d0f8b21dbb679084",
+    "repository": "m5stack/m5-docs",
+    "commit": "e5354c5dcc61d16fdc1dff9d92c2c760728d0b60",
+    "path": "docs/en/unit/gps.md",
+    "cachedIndexExpectedGitBlob": "2d416cb7068df8d8c8091ca8d0f8b21dbb679084",
+    "gitBlobVerifiedAgainstBytes": true,
+    "sourceOnlyNotCopiedIntoRuntime": true
+  },
+  "officialMCP": {
+    "query": "Unit GPS U032 original AT6558 MAX2659 dimensions mounting holes Grove ceramic antenna LED schematic",
+    "filter_type": "product",
+    "is_chip": false,
+    "searchCalls": 1,
+    "status": "success",
+    "rawResponseSha256": "8a013a43009d8cf124a42b4996123422cc077ce980569de8a84611fcd3142a89",
+    "decodedSha256": "26b44a27c5faf8411952045333b6a8a377d0dcf00642b3369b9fd181e8232647",
+    "exactOwnSha256": "a3be1d6ac1077bf54d7bbd65baee1708f060a9c6f463544035e8e110caed8261",
+    "exactOwnSkuSections": 3,
+    "rawResponseDistributed": false,
+    "minorNonmodelingTextEncodingDamage": "MCP gross-weight heading contains replacement characters;dimension/chip/product identity verified independently against own current page and immutablemd."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/gps/gps_06.webp",
+    "role": "own-front-and-port",
+    "bytes": 47806,
+    "sha256": "6f3c7128a59d4263b3b0c99cf257bbbb69c6c1b0596ee2d08768a348405b5409"
+  },
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/gps/gps_01.webp",
+      "role": "own-assembled-primary",
+      "bytes": 48876,
+      "sha256": "017802ea68fafc65fc5eeeef41c14b271e94c8b6edab0ed1769122c05705d777"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/gps/gps_02.webp",
+      "role": "own-readable-rear-label",
+      "bytes": 48766,
+      "sha256": "4580011b022f7b0246fca14ade0c8c3a88a2cb967be7e0ff125b2188f87c3bf9"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/gps/gps_05.webp",
+      "role": "own-assembled-alternate",
+      "bytes": 32208,
+      "sha256": "188ce1ad7ae6447b72d811b260c5b47c143fe6427204cce926c614c3b8ae3cb3"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/gps/gps_06.webp",
+      "role": "own-front-and-port",
+      "bytes": 47806,
+      "sha256": "6f3c7128a59d4263b3b0c99cf257bbbb69c6c1b0596ee2d08768a348405b5409"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/gps/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+      "role": "own-dimensioned-multiview",
+      "bytes": 448154,
+      "sha256": "fdbc801b874ed401d6ce2f3b5d377a6b15dea13c99a685ec0bc787bb91136797"
+    }
+  ],
+  "nominalMm": [
+    24,
+    48,
+    8
+  ],
+  "dimensionBasis": {
+    "vendorOrderMm": [
+      48,
+      24,
+      8
+    ],
+    "modelXYZMm": [
+      24,
+      48,
+      8
+    ],
+    "acceptedBasis": "OriginalU032 current official table,own dimensioned multiview,and immutable AT6558gps.md all agree.",
+    "ownDrawingFacts": {
+      "planCornersRadiusMm": 4,
+      "sideEdgeRadiusMm": 1,
+      "mountBores": 2,
+      "mountBoreDiameterMm": 5,
+      "mountBorePitchMm": 16,
+      "boreCentersAboveBottomMm": 12,
+      "groveMouthMm": [
+        10,
+        5.2
+      ]
+    },
+    "notExactDrawingFacts": [
+      "shell split/wall thickness",
+      "PCB installation/thickness/shape",
+      "fastener shank/snap/receiver support",
+      "physical film thickness and registration",
+      "antenna/receiver package appearance and installation",
+      "contact bends/tails/retention and fit/tolerances"
+    ]
+  },
+  "actualPhysicalEnvelopeMm": [
+    24,
+    48,
+    8.000000001490116
+  ],
+  "acceptedFinalPreflightBaseline": {
+    "publicCatalog": {
+      "path": "outputs/m5stack-models-public/catalog/products.json",
+      "sha256": "5ffe16a66be4c67378b8fa495d2fcd45bec16a6cb408ef2cb1cb8243801ed73c",
+      "count": 184
+    },
+    "publicSourceManifest": {
+      "path": "outputs/m5stack-models-public/source-manifest.json",
+      "sha256": "a9c8eaf45bb60b5fdb6f75c60e96646171a3bd9fed673ca609bc504d22e3c8b7",
+      "count": 184
+    },
+    "privateCatalog": {
+      "path": "outputs/m5stack-models.js/catalog/products.json",
+      "sha256": "ef2c72c4a34cf0579b82960a3777be42c77f5ca3be855d25df759eb897b17ee9",
+      "count": 184
+    }
+  },
+  "subreportSnapshotRole": "Old source-candidate-gps snapshots are historical;final total preflight184 SHA is authoritative",
+  "interiorPhotoOrAssemblyCadAvailable": false,
+  "schematicFetched": false,
+  "inferred": [
+    "Original U032 AT6558/MAX2659 only. Own dimensioned multiview plus original current table/immutable docs agree24×48×8mm,R4plan corners,R1side edge,2Ø5bores at16mm pitch/12mmabovebottom,10×5.2mm blue Grove mouth. Model X/Y/Z=24/48/8 versus vendor48/24/8 order. No borrowed gps-v11/U032-V11 or gps-sma/U190 native geometry or source faces.",
+    "Own cap/rolled outer edge geometry keeps drawing R1 on exterior only and actual Ø5continuousborewalls. Front/rear scalloped mounting bands,film seats,case split/internal wall levels and shell thicknesses are own-photo reconstructions;they are not manufacturer mechanical datums or tolerance/fit evidence.",
+    "No original interior photograph or assembledCAD. PCB shape/thickness/levels,4rearposts,0.35mm tube relief and0.5mm central-boss clearance,retained screw and every hidden part position are appearance estimates. Source establishes AT6558/MAX2659 identities only,not exact package geometry/contactcounts/fullBOM. Own reconstructed24receivercontacts/6amplifiercontacts and8supporting passives are explicitly inferred visual support,not a precision electrical assembly.",
+    "Ceramic antenna envelope13×13×1.3,metal surface and2retainingfeet are generic inferred fixed appearance support;actual original antenna package and installation are unconfirmed. No detailed native antenna claim or RF behavior.",
+    "Topopposite-Grove notch at inferredx7,width1.6,height1.7 has real side/floor/roof walls and blindstopy22,2mm behindmouthy24. Own05/dimension show casing feature;function/lightidentity is unconfirmed. No LED/button/joint/sensoranchor is created.",
+    "BlueGrove mouth outerwidth10,height5.2 follows own drawing. Real receiving floor/walls/stop/guides,4independentcontacts,4right-angle returns,4throughPCBtails,4platedbarrels and8annularlands remain physical. Local bends/pins/depths are inferred appearance,not electrical or manufacturingfit.",
+    "Own06front location-pin/orbit/GPS and own02rearGPS/AT6558/(BDS/GPS)/+/MAX2659/PORT.C.UART/TXD/RXD/5V/GND accurately code-redrawn as2ordinaryPNG withzero photographpixels. Font/spacing/colors andfilmthickness are reconstructed;no unknownmicrotext/individualcode or packaging. Both real films and own uncolored M5 recessedmaterial remain withartwork:false.",
+    "Static visual-only model,body[grove],module[grove,unitFrame,cable]. No coordinates,NMEA,fix,satellite,UTC,UARTrouting/electrical,power,firmware,automaticanimation,sensorComponent/anchor,button/LED/joint. Necessary CPU Model/transformedStickS3-HUBbranch3,actualconfiguration inkoff/peer/framebuffer/disposal proof is not browser/GPU/hardware or manufacturingfit acceptance."
+  ],
+  "privateAggregate": {
+    "sku": "U032",
+    "exactSkuRows": 0,
+    "strictNameOnlyRows": 0,
+    "originalDownloads": 0
+  },
+  "license": {
+    "newAuthoredCode": "MIT",
+    "importedNativeGeometry": false,
+    "officialReferences": "Reference only;not blanket MIT,raw photos/docs/drawing not distributed",
+    "ordinaryPng": "User-authorized exact-model ordinary raster redraw;product marks retain respective rights"
+  },
+  "assetPolicy": {
+    "pngCount": 2,
+    "privateSourcesDistributed": false,
+    "rawSourcesDistributed": false,
+    "vectorsGeneratorsDistributed": false
+  },
+  "publicAPI": {
+    "exports": [
+      "GroveModule",
+      "Model",
+      "configurationSchema",
+      "configurations",
+      "defaults",
+      "spec"
+    ],
+    "defaultExport": "Model",
+    "bodyComponentOrder": [
+      "grove"
+    ],
+    "bodyComponentKinds": {
+      "grove": "port"
+    },
+    "keymap": {},
+    "defaults": {},
+    "configurationSchema": {
+      "artwork": {
+        "type": "boolean",
+        "default": true,
+        "meaning": "Remove front/rear ink only;retain physical films,complete shell,PCB,receiver/antenna and connector supports"
+      }
+    },
+    "configurations": [
+      {
+        "id": "complete",
+        "name": "完整原版 GPS U032",
+        "options": {}
+      }
+    ],
+    "moduleComponentOrder": [
+      "grove",
+      "unitFrame",
+      "cable"
+    ],
+    "moduleComponentKinds": {
+      "grove": "port",
+      "unitFrame": "unit-frame",
+      "cable": "cable"
+    },
+    "assemblyProperty": "gpsAssembly",
+    "moduleAdditionalComponents": [
+      "unitFrame",
+      "cable"
+    ],
+    "canonicalCableInput": "grove",
+    "ports": [
+      "grove"
+    ],
+    "controls": [],
+    "leds": [],
+    "displays": [],
+    "speakers": [],
+    "sensors": [],
+    "joints": [],
+    "anchors": [],
+    "passiveAnchors": [],
+    "aliases": [],
+    "options": {
+      "artwork": "boolean"
+    },
+    "configurationCases": [
+      {
+        "options": {},
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "artworkKinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "pngCount": 2
+      }
+    ],
+    "accessoryExports": [],
+    "accessories": {},
+    "commands": {
+      "unitFrame": {
+        "type": "pose",
+        "target": "unitFrame",
+        "fields": [
+          "position",
+          "rotation",
+          "quaternion",
+          "distance"
+        ]
+      },
+      "cable": {
+        "type": "cable",
+        "target": "cable",
+        "fields": [
+          "slack",
+          "bend"
+        ]
+      }
+    },
+    "inputEvents": {
+      "ports": [
+        "attach",
+        "detach"
+      ]
+    },
+    "artworkPngCount": 2,
+    "artworkSourceKind": "reference-redraw",
+    "physicalAdhesiveFilms": 2,
+    "allArtworkPhysicalAttributesIndexWorldInvariant": true,
+    "physicalReceiverDictionary": "gpsAssembly.receiver/antenna are fixed visual package/support geometry only;no Component,anchor or navigation/serial behavior",
+    "noAccessoriesOrRemovableCovers": true
+  }
+}

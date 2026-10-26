@@ -1,0 +1,76 @@
+{
+  "id": "dac",
+  "sku": "U012",
+  "kind": "reference-redraw",
+  "pngCount": 2,
+  "physicalFilms": {
+    "bodyRear": 1,
+    "removablePlug": 1
+  },
+  "privateIntakeAggregate": {
+    "exactSkuRows": 0,
+    "strictNameRows": 0,
+    "originalDownloads": 0
+  },
+  "rasters": [
+    {
+      "file": "src/units/dac/reference-redraw-back.png",
+      "sha256": "46f959d8a3928af68ad5e2e4d4ff0c5c2ba1cbf15e7c1d16cfd86d9d35401831",
+      "pixels": [
+        1600,
+        1200
+      ],
+      "kind": "reference-redraw",
+      "carrier": "fixed main rear physical film",
+      "source": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/dac/dac_02.webp",
+        "sha256": "b8e48ea85ad01183c8fd6535b45301000cab0d46ab9f5bf0aa72c204905a6190",
+        "role": "own-readable-rear-label"
+      },
+      "photographPixelsUsed": false,
+      "vectorOriginalDistributed": false,
+      "scope": "Legible exact-model text and blocks only;no guessed microtext or individual codes"
+    },
+    {
+      "file": "src/units/dac/reference-redraw-polarity.png",
+      "sha256": "3d6543686aedb7dedda293bf80a9cdd65ffd82808dcf55d1014931e5e5a33396",
+      "pixels": [
+        1530,
+        820
+      ],
+      "kind": "reference-redraw",
+      "carrier": "removable original2P plug physical film",
+      "source": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/dac/dac_06.webp",
+        "sha256": "9abe46690894abaac73b19d777cbae158360152ffdc3049700c280a57225c036",
+        "role": "own-assembled-front-and-connector-reference"
+      },
+      "photographPixelsUsed": false,
+      "vectorOriginalDistributed": false,
+      "scope": "Legible exact-model text and blocks only;no guessed microtext or individual codes"
+    }
+  ],
+  "configurationArtwork": [
+    {
+      "options": {
+        "terminalPlug": true
+      },
+      "panelCount": 2,
+      "panels": [
+        "rear",
+        "polarity"
+      ]
+    },
+    {
+      "options": {
+        "terminalPlug": false
+      },
+      "panelCount": 1,
+      "panels": [
+        "rear"
+      ]
+    }
+  ],
+  "artworkFalse": "Ink panels absent;all physical parts,films,relief,contacts,geometry attributes,indices andworld matrices preserved",
+  "rights": "User authorized ordinary exact-model redrawn PNG distribution;source photographs/drawings not redistributed or blanket MIT-licensed;product marks retain respective rights."
+}

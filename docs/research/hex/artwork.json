@@ -1,0 +1,79 @@
+{
+  "id": "hex",
+  "sku": "A045",
+  "kind": "reference-redraw",
+  "pngCount": 1,
+  "assets": [
+    {
+      "path": "src/units/hex/artwork/rear.png",
+      "sha256": "341abe326e6e7281c2b4d5708b94fa17ed367507c94faad1d4d35fc84696c938",
+      "pixels": [
+        3600,
+        3120
+      ],
+      "kind": "reference-redraw",
+      "source": {
+        "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/764/A045-PCB_main-pictures_01.jpg",
+        "sha256": "03fba35e242ac5b115b890a7d937bdf7a76bb9a3ed5b6ea675233459ed8f5c77"
+      },
+      "method": "Independent text/path drawing,no photograph pixels;shape/registration/fonts reconstructed",
+      "actualText": [
+        "HEX",
+        "V1.1",
+        "IN",
+        "OUT",
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "C9",
+        "C15",
+        "C16"
+      ],
+      "omitted": [
+        "QR",
+        "0005",
+        "unclear microtext/designators",
+        "promotional arrows",
+        "LED reference-index overlays"
+      ],
+      "surface": "Projected only onto actual rearPCB;no invented silkscreen film"
+    }
+  ],
+  "configurationCases": [
+    {
+      "id": "complete",
+      "options": {},
+      "panelCount": 1,
+      "pngCount": 1,
+      "panels": [
+        "rear"
+      ],
+      "kinds": [
+        "reference-redraw"
+      ],
+      "artworkKinds": [
+        "reference-redraw"
+      ]
+    }
+  ],
+  "blankIndividualFilmRetained": true,
+  "physicalFilms": 1,
+  "artworkFalse": "Ink absent;all PCB/package/window/contact/drill attributes,indices,world matrices and blank code film retained,including external LED drive.",
+  "privateAggregate": {
+    "sku": "A045",
+    "exactSkuRows": 0,
+    "strictNameOnlyRows": 0,
+    "originalDownloads": 0,
+    "requiresExactVariantReview": false
+  },
+  "photographPixelsUsed": false,
+  "sourcePhotosDistributed": false,
+  "vectorOriginalsDistributed": false,
+  "generatorsDistributed": false,
+  "rights": "Authorized matching ordinary code-redrawn PNG with source attribution;official source/product marks retain respective rights"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "mini-oled",
+  "sku": "U166",
+  "kind": "reference-redraw",
+  "pngCount": 2,
+  "sourceDetails": "Own exact U166 bare-PCB photos show 2323/V1.0 on populated face and Mini OLED/M5Stack.com/C-D-5-G boxes on reverse. Only clearly readable lettering was code redrawn. No source photo pixels or assembled advertising paper used.",
+  "inferred": [
+    "Typeface and lettering stroke weights",
+    "Fine label registration on the PCB"
+  ],
+  "scope": "Ordinary transparent PNG projected onto existing PCB triangles. No added physical adhesive film and no permanent display image. Front silkscreen may be concealed by actual installed glass. artwork:false removes ink alone.",
+  "metadata": "Numeric DPI only; no source-name, URL, EXIF, XMP, comment or generator metadata",
+  "originalsDistributed": false,
+  "generatorsDistributed": false,
+  "assets": [
+    {
+      "path": "src/units/mini-oled/artwork/front.png",
+      "sha256": "814e6882a758116b51f82b1a3e075d4c7213cc78e59eb90af2e580d3bdd025c0",
+      "face": "front",
+      "pixels": [
+        2580,
+        1200
+      ],
+      "sizeMm": [
+        25.8,
+        12
+      ],
+      "dpi": [
+        2540,
+        2540
+      ],
+      "kind": "reference-redraw",
+      "surface": "Actual fixed black PCB front face",
+      "physicalFilm": false,
+      "sourcePhoto": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/MiniOLED%20Unit/img-773703ef-7737-432c-b328-f55d429b4d74.webp",
+        "sha256": "21cc326de94243af566efe93d4a4d6b49ff8a98d8406a6ec030eb507d773c1d8"
+      }
+    },
+    {
+      "path": "src/units/mini-oled/artwork/back.png",
+      "sha256": "3e4e40055763892d67dfdaa7b9624d5e82c9d03f14d9d7b188ba01a33a6d08ae",
+      "face": "back",
+      "pixels": [
+        2580,
+        1200
+      ],
+      "sizeMm": [
+        25.8,
+        12
+      ],
+      "dpi": [
+        2540,
+        2540
+      ],
+      "kind": "reference-redraw",
+      "surface": "Actual fixed black PCB back face",
+      "physicalFilm": false,
+      "sourcePhoto": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/MiniOLED%20Unit/img-851eb5d5-258b-4d13-baf4-d938fd68701c.webp",
+        "sha256": "bb57da8f847964ad2f59106c4ca99234e55ab8ee3c2d8a49536767a0603ab272"
+      }
+    }
+  ]
+}

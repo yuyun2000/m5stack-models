@@ -1,0 +1,67 @@
+{
+  "status": "pass",
+  "scope": "Own U158 author smoke; CPU geometry/API/raster only, not GPU or physical fit",
+  "physicalMeshes": 331,
+  "actualPhysicalEnvelopeMm": [
+    42.040000915527344,
+    53,
+    6.000000002980232
+  ],
+  "closedPositiveOrientedSolids": true,
+  "frontSide": true,
+  "trueMountingBores": 2,
+  "truePCBWindowMm": [
+    37,
+    19
+  ],
+  "transparentGlassVolumes": 2,
+  "metalPosts": 4,
+  "fixedBuzzer": 1,
+  "tssopLeads": 20,
+  "fpcContacts": 24,
+  "foldedFpcTracks": 24,
+  "groveContacts": 4,
+  "controls": [
+    "button-a",
+    "button-b"
+  ],
+  "capOnlyTravelMm": 0.14,
+  "fixedYellowPackages": true,
+  "display": {
+    "resolution": [
+      128,
+      56
+    ],
+    "activeMm": [
+      35.05,
+      15.32
+    ],
+    "fixedTransparentBlue": true,
+    "offAlphaZeroByShader": true,
+    "rgbaAlphaPreserved": true,
+    "frontRearWorldUvSame": true,
+    "rearNormalReversed": true,
+    "formats": [
+      "RGBA",
+      "RGB888",
+      "RGB565",
+      "RGB565 swap"
+    ],
+    "touchRejected": true,
+    "invalidStyleTouchAtomic": true
+  },
+  "artwork": {
+    "pngCount": 2,
+    "allPhysicalAttributesIndicesWorldInvariant": true
+  },
+  "cable": {
+    "wireCount": 4,
+    "transformedParentPose": true,
+    "nestedAttachDetach": true,
+    "peerIndependent": true
+  },
+  "textureDisposeCount": 1,
+  "browserTested": false,
+  "buildTested": false,
+  "physicalTested": false
+}

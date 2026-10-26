@@ -1,0 +1,79 @@
+{
+  "id": "gps",
+  "sku": "U032",
+  "kind": "reference-redraw",
+  "assets": [
+    {
+      "path": "src/units/gps/artwork/front.png",
+      "sha256": "8c5d9869a22ade9a5092791c11805f2c41839a5f95c84f7ad88526eb9f0e48dd",
+      "kind": "reference-redraw",
+      "width": 1800,
+      "height": 2800,
+      "carrier": "gpsAssembly.shell.frontFilm",
+      "source": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/gps/gps_06.webp",
+        "role": "own-front-and-port",
+        "bytes": 47806,
+        "sha256": "6f3c7128a59d4263b3b0c99cf257bbbb69c6c1b0596ee2d08768a348405b5409"
+      },
+      "method": "Accurate clean code-redrawn ordinary PNG;zero source photograph pixels",
+      "limitations": "Typography/spacing/colors and physical film thickness reconstructed;no unknown microtext or individual data"
+    },
+    {
+      "path": "src/units/gps/artwork/back.png",
+      "sha256": "8984d122965bd5a18709f70022e07a07f02bc173cdde73352af74647c32998e6",
+      "kind": "reference-redraw",
+      "width": 1600,
+      "height": 2800,
+      "carrier": "gpsAssembly.shell.backFilm",
+      "source": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/gps/gps_02.webp",
+        "role": "own-readable-rear-label",
+        "bytes": 48766,
+        "sha256": "4580011b022f7b0246fca14ade0c8c3a88a2cb967be7e0ff125b2188f87c3bf9"
+      },
+      "method": "Accurate clean code-redrawn ordinary PNG;zero source photograph pixels",
+      "limitations": "Typography/spacing/colors and physical film thickness reconstructed;no unknown microtext or individual data"
+    }
+  ],
+  "pngCount": 2,
+  "physicalFilmCarriers": 2,
+  "configurationCases": [
+    {
+      "options": {},
+      "kinds": [
+        "reference-redraw",
+        "reference-redraw"
+      ]
+    }
+  ],
+  "texts": {
+    "front": [
+      "GPS"
+    ],
+    "back": [
+      "GPS",
+      "AT6558",
+      "(BDS/GPS)",
+      "+",
+      "MAX2659",
+      "PORT.C.UART",
+      "TXD",
+      "RXD",
+      "5V",
+      "GND"
+    ]
+  },
+  "frontGraphic": "Own06 blue location pin and cyan orbit,code drawn",
+  "uncoloredM5": "Actual own recessed material geometry,not an image",
+  "carrierPolicy": "artwork:false removes ink only;both real adhesive films and complete case/PCB/receiver/antenna/contact assemblies remain",
+  "excluded": [
+    "photographic crops",
+    "packaging/banner/coin/cable composition",
+    "later GPS generation labels",
+    "unreadable microtext",
+    "individual identity codes"
+  ],
+  "privateOriginalDownloads": 0,
+  "rawSourcesVectorsGeneratorsDistributed": false
+}

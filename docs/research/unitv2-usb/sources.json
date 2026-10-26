@@ -1,0 +1,219 @@
+{
+  "id": "unitv2-usb",
+  "sku": "U078-USB",
+  "retrievedAt": "2026-10-27",
+  "officialDocs": "https://docs.m5stack.com/en/unit/UnitV2-USB",
+  "officialPageSha256": "1aa8967199ca025415040d68a2e7306dd91dd6c2831c4fb61cebe547b50c5f86",
+  "sourceRoute": "own-native-shells-plus-own-parametric-detail",
+  "officialMCP": {
+    "queries": [
+      "UnitV2-USB U078-USB mechanical fan button dimensions USB no built-in camera",
+      "UnitV2-USB U078-USB own PCB photograph fan impeller shaft installation indicator optical path"
+    ],
+    "responseSha256": [
+      "17840e753f8e87d906d4bd4f678e63720329d1c61f52af10951e8e9c8c7d4bb2",
+      "800997d33f8bb060f96b1b59bc4637cb8af83c0c2c2304743528486ca5b1a362"
+    ],
+    "rawResponseDistributed": false
+  },
+  "referenceSources": [
+    {
+      "role": "v2usb-own-dimension",
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/unitv2_usb/1645b5504be9b9275baac9099d30c8c.png",
+      "sha256": "c912cad4c8e68fb2bbef8afca9036cad5a1646d54a7f57dafc0fff65bdbf7185",
+      "size": [
+        3508,
+        2480
+      ]
+    },
+    {
+      "role": "own-photo-02",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/unitv2_usb/unitv2_usb_02.webp",
+      "sha256": "70dc8181f88f348a25effc8598b0f24ff6d5f969e3ef892f1a160861cb99c31c",
+      "size": [
+        800,
+        800
+      ]
+    },
+    {
+      "role": "own-photo-03",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/unitv2_usb/unitv2_usb_03.webp",
+      "sha256": "cb5e8118c4f70973ddeb255e535783273860e7748ceb57f542c451d2d8537d80",
+      "size": [
+        800,
+        800
+      ]
+    },
+    {
+      "role": "own-photo-06",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/unitv2_usb/unitv2_usb_06.webp",
+      "sha256": "d7f7d765ca422fe0253f23f923a2878ca89e1de249a9eaba09793a0d801e870e",
+      "size": [
+        800,
+        800
+      ]
+    },
+    {
+      "role": "own-photo-05",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/unitv2_usb/unitv2_usb_05.webp",
+      "sha256": "84e02ce612437a70459689ac127a9a4392973c01a283027af5b08e20fc2d3c93",
+      "size": [
+        800,
+        800
+      ]
+    },
+    {
+      "role": "own-photo-07",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/unitv2_usb/unitv2_usb_07.webp",
+      "sha256": "bbda9844f7867630be0b3f8572fe87d8383f121804550b2bf68767ab1d278dfd",
+      "size": [
+        800,
+        800
+      ]
+    },
+    {
+      "role": "own-photo-09",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/unitv2_usb/unitv2_usb_09.webp",
+      "sha256": "491b480100dec54529403151764ceb57a232427a91e439482bc91bdaac051c84",
+      "size": [
+        800,
+        800
+      ]
+    },
+    {
+      "role": "own-additional-photo",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/unitv2_usb/3.webp",
+      "sha256": "491b480100dec54529403151764ceb57a232427a91e439482bc91bdaac051c84"
+    },
+    {
+      "role": "own-additional-photo",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/unitv2_usb/unitv2_usb_01.webp",
+      "sha256": "7143973e8257e0d85b967c88e65b698f9d8d3c0f2b0a0f0e4683e52af01399e4"
+    }
+  ],
+  "officialCad": {
+    "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U078-USB_UnitV2-USB/Structures/UnitV2-USB.stl",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "gitBlob": "6643f88cd3f0466b7963ea4f9642a0a9f29f2782",
+    "sha256": "e03849f33ffc26007be344ab8f86b21c66feeb5087a3ed5fda930d11a71a7ab1",
+    "license": "MIT",
+    "licensePath": "licenses/M5_Hardware-MIT.txt",
+    "licenseSha256": "44611d917bece311f5c8eeffce83d8bf9e9ca3f815d262f694ff4a7996af50ea",
+    "sourceTriangles": 16556,
+    "selectedShellTriangles": 4962,
+    "selectedClipTriangles": 3316,
+    "sourceToBodyMatrix": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      -4,
+      0,
+      1
+    ],
+    "scale": 1,
+    "nativeBodyEnvelopeMm": [
+      24,
+      48,
+      23.67708969116211
+    ]
+  },
+  "nativeMapping": "src/units/unitv2-usb/cad-map.json",
+  "selectedAssembly": {
+    "shellSourceComponents": [
+      3,
+      0
+    ],
+    "shellTriangles": 4962,
+    "clipSourceComponent": 4,
+    "clipTriangles": 3316,
+    "wholeExcludedDuplicateComponents": [
+      1,
+      2,
+      5
+    ],
+    "allSelectedSourceFacesRetained": true,
+    "originTranslationMm": [
+      0,
+      -4,
+      0
+    ],
+    "scale": 1
+  },
+  "nativeTriangles": 4962,
+  "nativeAccessoryTriangles": 3316,
+  "noBorrowedSiblingGeometry": true,
+  "nominalMm": [
+    24,
+    48,
+    24.2
+  ],
+  "actualBareEnvelopeMm": [
+    24,
+    48,
+    23.67708969116211
+  ],
+  "clipInstalledEnvelopeMm": [
+    26.961735725402832,
+    48,
+    31.677090644836426
+  ],
+  "nativeDepthDisagreement": "Nominal24.2mm versus unchanged native23.67708969mm;no scaling,spacer or nominal-fit claim.",
+  "nativeClipPose": "Original native clip has a small XY offset/rotation,retained exactly;not manufacturing fit acceptance.",
+  "actuation": {
+    "control": "user",
+    "kind": "momentary",
+    "geometry": "own native integral U-cut top-end tongue,not a separate rigid cap",
+    "bodyAxis": [
+      0,
+      -1,
+      0
+    ],
+    "visualTravelMm": 0.25,
+    "movingNativeVertices": 165,
+    "allNativeTrianglesRetained": true,
+    "restPositionsNormalsExactRoundtrip": true
+  },
+  "fanAndIndicatorEvidence": {
+    "ownSourcesInspected": [
+      "own-photo-02",
+      "own-photo-03",
+      "own-photo-05",
+      "own-photo-06",
+      "own-photo-07",
+      "own-photo-09",
+      "own-dimensional-drawing",
+      "own-complete-native-components"
+    ],
+    "confirmed": "Active cooling feature,actual native rear grille/central shell plate;two internal indicator documentary identities.",
+    "notConfirmed": "Own USB-SKU visible impeller/blade count/shaft installation or exterior LED optical path.",
+    "modelScope": "Fixed real native grille plus inferred fixed cooling carrier/backing/retaining spacers;no rotor joint,borrowed blades,external LED or invented aperture.",
+    "officialFeedbackId": "78028847fe344233a2696298994d71a0"
+  },
+  "uncertainties": [
+    "PCB outline and hidden package/passive installation/counts;not populated assembly CAD.",
+    "USB-A/C/HY2.0/SD terminal retention and contact appearance;USB-C exact populated terminal count not asserted.",
+    "Native tongue travel and local visual flexure are appearance estimates.",
+    "Actual fan rotor axis/blades and exterior indicator optical path not established.",
+    "Clip attachment datum and source pose not production fit.",
+    "Film thickness and print registration inferred;variable/small unreadable label marks omitted."
+  ],
+  "assetPolicy": {
+    "ordinaryRastersOnly": true,
+    "rawSourcesDistributed": false,
+    "privateSourcesDistributed": false,
+    "generatorsDistributed": false
+  },
+  "behaviorBoundary": "Own physical shapes,real momentary input intent,static clip and external wrapper pose/cable only. No built-in camera,display,AI,Linux,audio,USB/UVC/UART/network,power,readings or firmware behavior.",
+  "codeLicense": "MIT",
+  "rights": "Exact native M5_Hardware geometry MIT with existing notice;product marks retain respective rights."
+}

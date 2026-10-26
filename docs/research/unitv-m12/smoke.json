@@ -1,0 +1,75 @@
+{
+  "status": "pass",
+  "scope": "Exact own U078-V-M12 CPU geometry/API/native correspondence and raster decode only;not GPU/physical fit",
+  "physicalMeshes": 152,
+  "nativeSourceFaces": 4510,
+  "nativePartFaces": [
+    2850,
+    1660
+  ],
+  "eachRawTriangleAndCornerRetained": true,
+  "nativeSeparateClosedParts": true,
+  "nativeVolumes": {
+    "UnitV-M12 exact native front shell": 2166.829818420307,
+    "UnitV-M12 exact native rear shell": 1709.3177854481464
+  },
+  "actualNativeShellEnvelopeMm": [
+    24.000003814697266,
+    40,
+    12.699999809265137
+  ],
+  "actualPhysicalEnvelopeMm": [
+    24.000003814697266,
+    40.00000001192093,
+    16.44000019028783
+  ],
+  "nominalIncludingOpticsMm": [
+    40,
+    24,
+    16.4
+  ],
+  "labelAddsRearMm": 0.04,
+  "allClosedPositiveOrientedEdges": true,
+  "frontSide": true,
+  "emptyBoreRays": 4,
+  "physicalOpticalGlass": true,
+  "actualOpticalStopAndSupport": true,
+  "passiveCameraAnchor": "camera",
+  "noDisplayOrCapture": true,
+  "ports": {
+    "grove": 4,
+    "usb": 24,
+    "sd": 9
+  },
+  "nativeCapOnlyControls": {
+    "buttonA": {
+      "affectedNativeVertices": 172,
+      "travelMm": 0.18,
+      "sign": -1
+    },
+    "buttonB": {
+      "affectedNativeVertices": 171,
+      "travelMm": 0.18,
+      "sign": 1
+    }
+  },
+  "capHoldsMultipleSources": true,
+  "capCancelNeutralPositionsNormalsExact": true,
+  "fixedSwitchPackagesAndPorts": true,
+  "artwork": {
+    "pngCount": 2,
+    "physicalRearFilm": 1,
+    "frontCncFilm": 0,
+    "allPhysicalAttributesIndicesWorldInvariant": true
+  },
+  "module": {
+    "fourWire": true,
+    "parentPose": true,
+    "nestedRoundtrip": true,
+    "peerIndependent": true,
+    "disposal": true
+  },
+  "browserTested": false,
+  "buildTested": false,
+  "physicalTested": false
+}

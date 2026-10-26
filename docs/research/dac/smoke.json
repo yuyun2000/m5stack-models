@@ -1,0 +1,158 @@
+{
+  "id": "dac",
+  "sku": "U012",
+  "date": "2026-10-27",
+  "status": "pass",
+  "stage": "modeled",
+  "constructionRoute": "own-dimensional-parametric",
+  "nativeFaces": 0,
+  "physicalMeshTopology": {
+    "meshes": 142,
+    "allCoordinateWeldedClosed": true,
+    "allDirectedEdgesOppose": true,
+    "allPositiveSignedVolumes": true,
+    "allFrontSideMaterials": true
+  },
+  "assembledEnvelopeMm": [
+    24,
+    32,
+    10.20000000078231
+  ],
+  "terminalFit": {
+    "shellSlotHalfWidthMm": 4.3,
+    "fixedSocketOuterHalfWidthMm": 4.25,
+    "sideMaterialClearanceMm": 0.05,
+    "tongueHalfWidthMm": 3.8,
+    "receiverInsideHalfWidthMm": 4,
+    "hiddenTongueSideClearanceMm": 0.2,
+    "slotStartYMm": 5.25,
+    "fixedBackStartYMm": 5.3,
+    "bottomClearanceMm": 0.05,
+    "deepStopEndYMm": 5.55,
+    "tongueStartYMm": 5.65,
+    "stopClearanceMm": 0.1,
+    "estimatedNotManufacturingTolerance": true
+  },
+  "modelPhysical": {
+    "constructionRoute": "own-dimensional-parametric",
+    "importedNativeFaces": 0,
+    "physicalBodyMeshes": 142,
+    "shellEnvelopeMm": [
+      24,
+      32,
+      8
+    ],
+    "closureRays": 14,
+    "boreWallRays": 40,
+    "trueMountingAxes": 2,
+    "PCBPackages": [
+      "MCP4725",
+      "LM321MFX"
+    ],
+    "groveContacts": 4,
+    "groveReturns": 4,
+    "groveTails": 4,
+    "terminalContacts": 2,
+    "PCBLeadDrills": 6,
+    "PCBDrillWallRays": 24,
+    "PCBSolderLands": 12,
+    "physicalReliefs": 2,
+    "realRearFilm": true,
+    "actualPlug": {
+      "removable": true,
+      "ownComponents": 0,
+      "wireEntries": 2,
+      "realSprings": 4,
+      "physicalFilm": true
+    },
+    "scope": "Own appearance solids/necessary rays only;no GPU,productionfit or electrical validation"
+  },
+  "modelRuntime": {
+    "actualTerminalRoundtrip": true,
+    "noControlsOrOutputs": true,
+    "unsupportedElectricalCommandsRejected": true,
+    "fixedShellPCBContactsAndPeersUnchanged": true,
+    "noAutomaticFirmware": true,
+    "neutralRestored": true
+  },
+  "withoutPlugPhysical": {
+    "constructionRoute": "own-dimensional-parametric",
+    "importedNativeFaces": 0,
+    "physicalBodyMeshes": 122,
+    "shellEnvelopeMm": [
+      24,
+      32,
+      8
+    ],
+    "closureRays": 14,
+    "boreWallRays": 40,
+    "trueMountingAxes": 2,
+    "PCBPackages": [
+      "MCP4725",
+      "LM321MFX"
+    ],
+    "groveContacts": 4,
+    "groveReturns": 4,
+    "groveTails": 4,
+    "terminalContacts": 2,
+    "PCBLeadDrills": 6,
+    "PCBDrillWallRays": 24,
+    "PCBSolderLands": 12,
+    "physicalReliefs": 2,
+    "realRearFilm": true,
+    "actualPlug": null,
+    "scope": "Own appearance solids/necessary rays only;no GPU,productionfit or electrical validation"
+  },
+  "transformedHUBPhysical": {
+    "constructionRoute": "own-dimensional-parametric",
+    "importedNativeFaces": 0,
+    "physicalBodyMeshes": 142,
+    "shellEnvelopeMm": [
+      24.000000000000036,
+      32.00000000000003,
+      8.000000000000002
+    ],
+    "closureRays": 14,
+    "boreWallRays": 40,
+    "trueMountingAxes": 2,
+    "PCBPackages": [
+      "MCP4725",
+      "LM321MFX"
+    ],
+    "groveContacts": 4,
+    "groveReturns": 4,
+    "groveTails": 4,
+    "terminalContacts": 2,
+    "PCBLeadDrills": 6,
+    "PCBDrillWallRays": 24,
+    "PCBSolderLands": 12,
+    "physicalReliefs": 2,
+    "realRearFilm": true,
+    "actualPlug": {
+      "removable": true,
+      "ownComponents": 0,
+      "wireEntries": 2,
+      "realSprings": 4,
+      "physicalFilm": true
+    },
+    "scope": "Own appearance solids/necessary rays only;no GPU,productionfit or electrical validation"
+  },
+  "transformedHUBRuntime": {
+    "actualTerminalRoundtrip": true,
+    "noControlsOrOutputs": true,
+    "unsupportedElectricalCommandsRejected": true,
+    "fixedShellPCBContactsAndPeersUnchanged": true,
+    "noAutomaticFirmware": true,
+    "neutralRestored": true
+  },
+  "realFourCoreCables": 2,
+  "artworkPhysicalInvariance": true,
+  "namedConfigurationConstruction": true,
+  "visual": null,
+  "manufacturingFit": false,
+  "limitations": [
+    "No exhaustive browser inspection as requested;0 verified.",
+    "Hidden details are own inferred appearance geometry,not original CAD/BOM or production tolerances.",
+    "No voltage,waveform,EEPROM,I2C or firmware behavior."
+  ]
+}
