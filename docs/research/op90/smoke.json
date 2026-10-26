@@ -1,0 +1,281 @@
+{
+  "checkedAt": "2026-10-26T13:21:10.751Z",
+  "status": "pass",
+  "scope": "Necessary exact U057 native-envelope,real fixed opposing fork windows/5mm detection air slot/four leads/PCB,FrontSide mounting/PCB/optical-tunnel walls,coordinate-welded directed edges,passive API,Model/GroveModule artwork physical invariance,four-wire nested transformed-parent pose/independent detach/disposal.No browser acceptance,hardware/production fit,IR emission/detection,counting,GPIO,electrical or firmware simulation.",
+  "meshes": 57,
+  "triangles": 9468,
+  "nativeTriangles": 3254,
+  "visualEnvelopeMm": [
+    24,
+    32,
+    12.800000005960465
+  ],
+  "cadEnvelopeMm": [
+    24,
+    32,
+    8
+  ],
+  "boreRays": 10,
+  "boreWalls": 20,
+  "slotRays": 30,
+  "windowWalls": 8,
+  "windowHits": [
+    {
+      "side": -1,
+      "pointMm": [
+        -2.5700000017881393,
+        13,
+        6.2
+      ],
+      "surface": "OP90 ITR9606 passive emitter recessed dark resin window"
+    },
+    {
+      "side": 1,
+      "pointMm": [
+        2.5700000017881393,
+        13,
+        6.2
+      ],
+      "surface": "OP90 ITR9606 passive receiver recessed dark resin window"
+    }
+  ],
+  "directedEdgeChecks": [
+    {
+      "name": "OP90 physical fixed PCB with real central bore and mounting edge reliefs",
+      "edges": 1836,
+      "bad": 0
+    },
+    {
+      "name": "OP90 ITR9606 fixed transverse base closing native package opening",
+      "edges": 18,
+      "bad": 0
+    },
+    {
+      "name": "OP90 ITR9606 fixed left opaque bank with true opposing window tunnel",
+      "edges": 3120,
+      "bad": 0
+    },
+    {
+      "name": "OP90 ITR9606 fixed right opaque bank with true opposing window tunnel",
+      "edges": 3120,
+      "bad": 0
+    },
+    {
+      "name": "OP90 ITR9606 passive emitter recessed dark resin window",
+      "edges": 18,
+      "bad": 0
+    },
+    {
+      "name": "OP90 ITR9606 passive receiver recessed dark resin window",
+      "edges": 18,
+      "bad": 0
+    },
+    {
+      "name": "OP90 independent rear physical adhesive label film",
+      "edges": 18,
+      "bad": 0
+    }
+  ],
+  "closureChecks": [
+    {
+      "origin": [
+        -5,
+        13,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 7,
+      "purpose": "Opaque ITR9606 bank closes native fork opening"
+    },
+    {
+      "origin": [
+        5,
+        13,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 7,
+      "purpose": "Opaque ITR9606 bank closes native fork opening"
+    },
+    {
+      "origin": [
+        0,
+        13,
+        2.9
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 0.2,
+      "purpose": "Physical fork transverse base under real slot"
+    },
+    {
+      "origin": [
+        0,
+        -20,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Grove insertion cavity has recessed rear wall"
+    },
+    {
+      "origin": [
+        -3,
+        -20,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove contact1 is recessed physical metal"
+    },
+    {
+      "origin": [
+        -1,
+        -20,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove contact2 is recessed physical metal"
+    },
+    {
+      "origin": [
+        1,
+        -20,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove contact3 is recessed physical metal"
+    },
+    {
+      "origin": [
+        3,
+        -20,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove contact4 is recessed physical metal"
+    },
+    {
+      "origin": [
+        0,
+        -4,
+        -12
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 9,
+      "purpose": "Rear screw recess backed by real fastener"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Opaque ITR9606 bank closes native fork opening",
+      "hit": "OP90 ITR9606 fixed left opaque bank with true opposing window tunnel",
+      "distanceMm": 6.199999999999999
+    },
+    {
+      "purpose": "Opaque ITR9606 bank closes native fork opening",
+      "hit": "OP90 ITR9606 fixed right opaque bank with true opposing window tunnel",
+      "distanceMm": 6.199999999999999
+    },
+    {
+      "purpose": "Physical fork transverse base under real slot",
+      "hit": "OP90 ITR9606 fixed transverse base closing native package opening",
+      "distanceMm": 0.09999998807907096
+    },
+    {
+      "purpose": "Grove insertion cavity has recessed rear wall",
+      "hit": "OP90 Grove rear wall",
+      "distanceMm": 9.850000011920928
+    },
+    {
+      "purpose": "Grove contact1 is recessed physical metal",
+      "hit": "OP90 Grove contact 1",
+      "distanceMm": 5.549999999999999
+    },
+    {
+      "purpose": "Grove contact2 is recessed physical metal",
+      "hit": "OP90 Grove contact 2",
+      "distanceMm": 5.549999999999999
+    },
+    {
+      "purpose": "Grove contact3 is recessed physical metal",
+      "hit": "OP90 Grove contact 3",
+      "distanceMm": 5.549999999999999
+    },
+    {
+      "purpose": "Grove contact4 is recessed physical metal",
+      "hit": "OP90 Grove contact 4",
+      "distanceMm": 5.549999999999999
+    },
+    {
+      "purpose": "Rear screw recess backed by real fastener",
+      "hit": "OP90 fixed recessed hex retaining screw face",
+      "distanceMm": 8
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove"
+    ],
+    "anchors": [
+      "sensor"
+    ],
+    "controls": [],
+    "leds": [],
+    "joints": [],
+    "grovePins": [
+      "GND",
+      "5V",
+      "NC",
+      "Digital Output"
+    ],
+    "scope": "Fixed non-emissive fork appearance only"
+  },
+  "artwork": {
+    "panels": 1,
+    "kind": "reference-redraw",
+    "independentPhysicalFilms": 1,
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 101
+}

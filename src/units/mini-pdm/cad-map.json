@@ -1,0 +1,48 @@
+{
+  "sku": "U089",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/78baf68c49d623a7c8a9277c45d97c8e4ffbb80d/Products/U089_Unit_Mini_PDM/Structures/Unit_Mini_PDM.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/fb8c5852c5a4357cf0adc9e049cb8c1d0618c253",
+  "commit": "78baf68c49d623a7c8a9277c45d97c8e4ffbb80d",
+  "gitBlob": "fb8c5852c5a4357cf0adc9e049cb8c1d0618c253",
+  "sha256": "7741642f2391a3bba614e082abdf0091b496b1dbfaea1ba9ef3c657b5c1c2da5",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/78baf68c49d623a7c8a9277c45d97c8e4ffbb80d/LICENSE",
+  "origin": [
+    87.38400268554688,
+    12,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 0,
+      "name": "Mini PDM complete native assembled front and rear shell",
+      "material": "shell",
+      "triangles": 4162
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 4162,
+  "localModification": null,
+  "notes": "Exact own U089 path-specific commit and expected Git blob verified. Component0 is the complete4162-triangle assembled front/rear shell,24×24×8mm. Components1/2 are displaced duplicate shell halves. Full assembled part retained unscaled/unmodified with one common translation;no native faces removed,patched,filled or repositioned. Same-model dimension drawing explicitly labels8mm total thickness,contradicting the13mm product table;both recorded separately;MCP feedback dcd6f74080ea478f8745ce19d5542ab8. Shared exterior shape with another Mini Unit is not treated as an incorrect file."
+}

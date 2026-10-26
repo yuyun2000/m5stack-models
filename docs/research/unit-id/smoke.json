@@ -1,0 +1,255 @@
+{
+  "checkedAt": "2026-10-26T13:30:54.493Z",
+  "status": "pass",
+  "scope": "Necessary local U124 complete4178 native triangles,real PCB through-hole/reliefs/FrontSide walls/directed topology,eight-pad3×2×.55mm UDFN/paddle,HT7533/five passives,deep four-contact Grove,retaining screw/two seated physical films,native top slot with recessed actual package/PCB,Model/GroveModule all artwork attributes/index/matrixWorld invariance,pure single Grove API/internal-command rejection,nested four-core pose/independence/detach/disposal.No exhaustive browser,production fit,cryptographic,identity,key,certificate,electrical,firmware or hardware validation.",
+  "meshes": 53,
+  "triangles": 19344,
+  "nativeTriangles": 4178,
+  "sourceAssemblyTriangles": 4178,
+  "nominalMm": [
+    24,
+    24,
+    8
+  ],
+  "dimensionDrawingMm": [
+    24,
+    24,
+    8
+  ],
+  "cadEnvelopeMm": [
+    24,
+    24,
+    8
+  ],
+  "visualEnvelopeMm": [
+    24,
+    24,
+    8.00000009536743
+  ],
+  "boreRays": 10,
+  "boreWalls": 20,
+  "pcbTopology": {
+    "edges": 1812,
+    "invalidEdges": 0,
+    "signedVolumeMm3": 229.1820404307094
+  },
+  "secureElementPackageMm": [
+    3.0000000059604646,
+    2,
+    0.5499999994635582
+  ],
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        7.05,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Physical front film backed by complete unperforated native shell"
+    },
+    {
+      "origin": [
+        0,
+        7,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Physical back film backed by native recessed support"
+    },
+    {
+      "origin": [
+        0,
+        -30,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 25,
+      "purpose": "Grove open mouth has a deeply recessed physical dielectric rear carrier"
+    },
+    {
+      "origin": [
+        -3,
+        -30,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 22,
+      "purpose": "Grove physical contact 1"
+    },
+    {
+      "origin": [
+        -1,
+        -30,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 22,
+      "purpose": "Grove physical contact 2"
+    },
+    {
+      "origin": [
+        1,
+        -30,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 22,
+      "purpose": "Grove physical contact 3"
+    },
+    {
+      "origin": [
+        3,
+        -30,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 22,
+      "purpose": "Grove physical contact 4"
+    },
+    {
+      "origin": [
+        0,
+        0,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Native rear retaining recess contains a real fixed screw head"
+    },
+    {
+      "origin": [
+        0,
+        20,
+        0
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Native top slot looks into deeply recessed fixed UDFN package rather than sky"
+    },
+    {
+      "origin": [
+        0,
+        20,
+        -0.8
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Native top slot includes recessed physical PCB edge"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Physical front film backed by complete unperforated native shell",
+      "hit": "Unit ID physical front adhesive film seated on native label recess",
+      "distanceMm": 11.160000000894069
+    },
+    {
+      "purpose": "Physical back film backed by native recessed support",
+      "hit": "Unit ID physical back adhesive film seated on native label recess",
+      "distanceMm": 11.16
+    },
+    {
+      "purpose": "Grove open mouth has a deeply recessed physical dielectric rear carrier",
+      "hit": "Unit ID Grove deep dielectric rear wall",
+      "distanceMm": 23.650000011920927
+    },
+    {
+      "purpose": "Grove physical contact 1",
+      "hit": "Unit ID Grove real contact 1",
+      "distanceMm": 19.549999904632568
+    },
+    {
+      "purpose": "Grove physical contact 2",
+      "hit": "Unit ID Grove real contact 2",
+      "distanceMm": 19.549999904632568
+    },
+    {
+      "purpose": "Grove physical contact 3",
+      "hit": "Unit ID Grove real contact 3",
+      "distanceMm": 19.549999904632568
+    },
+    {
+      "purpose": "Grove physical contact 4",
+      "hit": "Unit ID Grove real contact 4",
+      "distanceMm": 19.549999904632568
+    },
+    {
+      "purpose": "Native rear retaining recess contains a real fixed screw head",
+      "hit": "Unit ID recessed screw drive",
+      "distanceMm": 11.39
+    },
+    {
+      "purpose": "Native top slot looks into deeply recessed fixed UDFN package rather than sky",
+      "hit": "Unit ID U2 ATECC608B-TNGTLSU-G closed UDFN package",
+      "distanceMm": 12.6
+    },
+    {
+      "purpose": "Native top slot includes recessed physical PCB edge",
+      "hit": "Unit ID fixed PCB with actual retaining bore and mounting-boss reliefs",
+      "distanceMm": 9.649999618530273
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove"
+    ],
+    "anchors": [],
+    "controls": [],
+    "leds": [],
+    "joints": [],
+    "scope": "Physical connector/whole-unit pose and cable only;no sensor,cryptographic,identity,key,certificate or internal commands"
+  },
+  "artwork": {
+    "panels": 2,
+    "kind": "reference-redraw",
+    "configurationChecks": 2,
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "noEcho": "pass",
+  "disposedResources": 97
+}

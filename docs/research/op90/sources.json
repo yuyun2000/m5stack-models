@@ -1,0 +1,183 @@
+{
+  "id": "op90",
+  "sku": "U057",
+  "officialDocs": "https://docs.m5stack.com/en/unit/OP.90",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "query": "Unit OP90 U057 产品 尺寸 结构图 接口",
+    "responseSha256": "a0e4551fe6036a1f58877c432d846cfe86d9f93894dc7a6d8a7db4882eabc3da",
+    "rawResponseDistributed": false,
+    "result": "Exact U057 product and schematic:ITR9606 fixed interrupter,32×24×12.8mm,black HY2.0-4P,PORT.B,GND/5V/NC/Digital Output,U1,R1/R2/R3,C4/C5.No MCU or visible indicator LED."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP.90/img-48d60ccd-42f8-4cf5-a590-e32dcd8054f3.webp",
+    "sha256": "d6e02fba7594bc9963d69efe945c97b687d9d55ef566b3b6042d5f35c1c71ee0"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/784c926812716110e9b76041bfa876514017f81a/Products/U057_Unit_OP90/Structures/Unit_OP90.stl",
+      "commit": "784c926812716110e9b76041bfa876514017f81a",
+      "gitBlob": "dc4c7e955272c24035b32cce033ca4ab86f52244",
+      "sha256": "bbbc76eb4a7531d632a29b9b96c8983ae8cc01e7370d3a463e3f9381bf486d1d",
+      "license": "MIT; preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP.90/img-103a3854-fbc1-43a3-9ebe-88cf6051e273.webp",
+      "sha256": "d9ae1843df4a7fb1811b22a89c022129c691ebc28dbde3a0083eb585d4df9b4e"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP.90/img-2c594846-92c5-4f3b-b8d0-30e3133beb5f.webp",
+      "sha256": "c0534c78aa692c01ea04321d7dcdba29ed065608a9f3676f986310e45084348b"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP.90/img-8dbd5909-296e-4a7a-86ce-28b1de7e2358.webp",
+      "sha256": "936268e38f8e6c74d7fd7bdd6656c7e5d42c6d5918216ffc83efc6e5f098756c"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP.90/img-48d60ccd-42f8-4cf5-a590-e32dcd8054f3.webp",
+      "sha256": "d6e02fba7594bc9963d69efe945c97b687d9d55ef566b3b6042d5f35c1c71ee0"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP.90/img-85cbfb24-3eab-49c6-a107-596e8573c359.webp",
+      "sha256": "160d856a2adf15c5055fea8c5470ea854bd208315adc3b90697d3399421e2f2a"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP.90/img-2e3ce6f3-673a-4a87-9d0f-e355656ec33f.webp",
+      "sha256": "dc417b1afd7c43d6a5ab8846c96ad7d9edee711617c034f23e2d103ad748dc2a"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/OP.90/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+      "sha256": "04ae713b1837cc20da6de6eef30257466bbc6b600904d0fc6a18f8955b2d07d4"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "originalAssemblyTriangles": 3254,
+    "outputTriangles": 3254,
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      221.26881408691406,
+      313.2234802246094,
+      -4
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "localModification": null,
+    "notes": "Exact own U057 path-specific commit and expected Git blob verified. Component0 is the complete3254-triangle assembled front/rear shell,24×32×8mm. Components1/2 are displaced duplicate rear/front shell halves. All native faces retained unscaled/unmodified under one common translation. Native14×6mm front opening receives the fixed upright ITR9606 package;real5mm optical slot remains air. Own dimension drawing gives12.8mm total package-inclusive depth;no OP180 package/installation substituted."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      32,
+      12.8
+    ],
+    "vendorDimensionOrderMm": [
+      32,
+      24,
+      12.8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      32,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24,
+      32,
+      12.800000005960465
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -4
+      ],
+      [
+        8,
+        -4
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "installedForkFootprintMm": [
+      14,
+      6
+    ],
+    "opticalSlotWidthMm": 5,
+    "dimensionEvidence": "Own U057 dimension drawing gives24mm width,32mm length,8mm shell depth,12.8mm total depth,14mm fork width,5mm optical slot,6mm footprint and16mm mounting pitch;native assembled shell retained unscaled."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 1,
+    "sourceDetails": "docs/research/op90/artwork.json",
+    "originalsDistributed": false
+  },
+  "scope": "Complete native shell,real fixed upright ITR9606 opposing opaque banks/recessed resin windows/5mm detection air slot/transverse base/four leads,PCB,R1/R2/R3,C4/C5,black four-contact Grove,fixed screw,independent adhesive film and passive appearance anchor.No sensor values,occlusion detection,counter,light beam,IR/electrical/protocol/firmware simulation.",
+  "inferred": [
+    "PCB outline/installed plane and concealed R/C population placement",
+    "ITR9606 installed base/window/tunnel/mold/internal details/four-lead routing and left-right emitter identity",
+    "Grove socket internals,fastener placement and adhesive-film thickness",
+    "Typography,colors and print registration"
+  ],
+  "notes": [
+    "All3254 native assembled triangles preserved atscale1 under one common translation;displaced duplicate shell halves excluded.",
+    "Fixed90° package installation stands in+Z at+Y;no OP180 package substitution or fabricated rotational joint.",
+    "Opposing resin windows face±X across a real5mm plastic-wall slot;emitter/receiver left-right identity inferred and annotated.",
+    "Slot remains genuine detection airspace;no gap-cover plane,label,IR glow/beam/cone or visible indicator invented.",
+    "Only grove and passive sensor appearance anchor;no button,LED,joint or screen.",
+    "Model/GroveModule artwork:false preserve every physical attribute,index and matrixWorld,including independent adhesive film.",
+    "One final ordinary reference-redraw PNG only;no raw CAD/photo/private vector/generator/intermediate distributed."
+  ],
+  "feedback": null,
+  "runtimeFiles": [
+    {
+      "path": "src/units/op90/assembly.js",
+      "sha256": "8ac2167302536ff29c34599bca3b76cc9bd6484655c6933d8785b802a537ba4e"
+    },
+    {
+      "path": "src/units/op90/cad-map.json",
+      "sha256": "99d0ea5e8518148e276a9a65dc8e02bda7795131b905e74eb3218dd31d7bbda4"
+    },
+    {
+      "path": "src/units/op90/dimensions.js",
+      "sha256": "0b5a068024e320ca12b9d4086a9d4eda56045762455d880fde15d8dcdf113b2a"
+    },
+    {
+      "path": "src/units/op90/geometry-data.js",
+      "sha256": "1eb6f18f953fababd1884c842f48685739b9634512e719a16affd576abfa471e"
+    },
+    {
+      "path": "src/units/op90/index.js",
+      "sha256": "61e5fe07f9b029d860bd2f686e55c9e13e75ed6b0c3167d918a412ea87f4d483"
+    },
+    {
+      "path": "src/units/op90/reference-redraw-back.png",
+      "sha256": "adc1f1dccaa4df4363ec8a8b22e8cd45f84d02e3db7d21ca88f7191d02f1957d"
+    },
+    {
+      "path": "src/units/op90/stickers.js",
+      "sha256": "00928887ea21d70e176e357d8b62aba2718ff465a947c6237a876270f80a502e"
+    }
+  ]
+}

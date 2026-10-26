@@ -1,0 +1,227 @@
+{
+  "id": "tmos-pir",
+  "sku": "U185",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_TMOS_PIR",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "query": "Unit TMOS PIR U185 dimensions hardware STHS34PF80 LED button optical",
+    "responseSha256": "7187c134c31e5f075dc634185a1dabe7145128c7808ecaeae4bc9bee3a66b205",
+    "rawResponseDistributed": false,
+    "result": "Exact U185 STHS34PF80TR,XC6228D332VR-G,SRV05-4,two populated I2C pull-up resistors,five capacitors,red HY2.0-4P.No user mechanism or indicator documented.R3 is NC.",
+    "chip": {
+      "query": "STHS34PF80 LGA package dimensions optical filter 3.2 4.2 metal cap",
+      "responseSha256": "11881c5b0eea002ff8a43d569aff3704c2739e269cb30e017f4a3b43e7dadc6a",
+      "result": "ST DS13916 Rev2:3.2×4.2×1.455mm maximum OLGA-10L,integrated silicon IR filter;direct ST PDF request timed out,package evidence is official chip knowledge_search text.",
+      "rawResponseDistributed": false
+    }
+  },
+  "reference": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-TMOS%20PIR/6.webp",
+    "sha256": "2513aaf37955adfa0b8187f31e5746ee17cf36b01bff7ea722db40c22c4d9090"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/d3ae864f161167af3f9698214012e1d135adc357/Products/U185_Unit_TMOS_PIR/Structures/Unit_TMOS_PIR.stl",
+      "commit": "d3ae864f161167af3f9698214012e1d135adc357",
+      "gitBlob": "7dac210351e336d3f43b9c2f3229d01f26b0c895",
+      "sha256": "8d6c5ab3715b9f86a2336716e05883988c2aea0f2df1b625b635aa4885d05b43",
+      "license": "MIT; preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-TMOS%20PIR/4.webp",
+      "sha256": "200a742d83304270c1b257cd83226be31ddae759854934146696fbaeb8814f76"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-TMOS%20PIR/6.webp",
+      "sha256": "2513aaf37955adfa0b8187f31e5746ee17cf36b01bff7ea722db40c22c4d9090"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-TMOS%20PIR/10.webp",
+      "sha256": "8b1833130906fe69ecdfb9ec1d329a0bf836581b05028b9bfc820df5b2b85724"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-TMOS%20PIR/5.webp",
+      "sha256": "c7fdfb1e7f647fcabfad294ccaec562c2c3c589becc355a0f3590b787ed67eb1"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-TMOS%20PIR/7.webp",
+      "sha256": "42dc08278819f01ef09e8d521cec6b3ada0c84a90985ef663e1744a0d1d2a53c"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-TMOS%20PIR/8.webp",
+      "sha256": "1313c09619517050d231afac868f788edbc7c3908d00556ddb027e1fb1b80ee4"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-TMOS%20PIR/img-296f83d1-ddc1-473e-9542-c157eb6c5b95.png",
+      "sha256": "31584bc04b292923310ffc64c6e51c2c3c5cb07b81eb1694eb047f63121761b5"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-TMOS%20PIR/%E5%B0%BA%E5%AF%B8%E5%9B%BE.png",
+      "sha256": "f8ed12e8cefedb13f50748d87afa45adb04e8466b9574920b0b8d2a7f00fbb8c"
+    }
+  ],
+  "manufacturerPackageReference": {
+    "url": "https://www.st.com/resource/en/datasheet/sths34pf80.pdf",
+    "evidence": "DS13916 Rev2 package dimensions and silicon filter confirmed via official M5Stack chip knowledge_search;direct PDF content not retrieved"
+  },
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "originalAssemblyTriangles": 3490,
+    "outputTriangles": 3490,
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      441.2688293457031,
+      269.2234802246094,
+      2.000001013278961
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "localModification": null,
+    "notes": "All3490 native assembled front/rear triangles retained at scale1 under one common translation only. Components1/2 are displaced duplicate rear/front shells. Front optical window, mounting bores, Grove cutout, rear label recess and M5 relief remain unchanged. PCB, STHS34PF80 LGA package and optical filter/internal backing, XC6228 regulator and passive population, Grove interior and fastener installation are visual reconstruction. Official table thickness5.2mm conflicts with own dimensional drawing and STL8mm; original shell remains scale1."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      32,
+      8
+    ],
+    "vendorDimensionOrderMm": [
+      32,
+      24,
+      5.2
+    ],
+    "drawingDimensionOrderMm": [
+      32,
+      24,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      32,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24,
+      32,
+      8.00000009536743
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -4
+      ],
+      [
+        8,
+        -4
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "opticalWindowMm": [
+      12,
+      6
+    ],
+    "sensorPackageMm": [
+      4.2,
+      3.2,
+      1.455
+    ],
+    "dimensionEvidence": "Exact U185 dimensional drawing and native shell agree24×32×8mm,16mm mounting pitch andØ5mm bores.Table5.2mm conflicts;own drawing uses5.2mm for connector-side height. Gross optical-window capsule inferred from native contours;filter subdimensions/placement are photo reconstruction.",
+    "conflict": {
+      "reportedTableMm": [
+        32,
+        24,
+        5.2
+      ],
+      "nativeAndDrawingMm": [
+        32,
+        24,
+        8
+      ],
+      "feedbackId": "052dc71fcd6b48e5a17651bb4f438896",
+      "decision": "Keep native complete shell at scale1;5.2mm in own drawing spans connector height,not overall8mm thickness. No production-fit claim."
+    }
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 2,
+    "sourceDetails": "docs/research/tmos-pir/artwork.json",
+    "originalsDistributed": false
+  },
+  "scope": "Complete native shell,dark PCB,physical layered non-emissive STHS34PF80 organic LGA package/silicon filter/lid aperture/internal support,XC6228/SRV05-4/passives,red Grove,fixed fastener and passive visual anchor only.No presence,motion,temperature,IR ray/visible emission/cone,register,I2C,electrical or firmware simulation.",
+  "inferred": [
+    "PCB outline/installed plane and concealed population placement",
+    "Package lid/rim/filter subdimensions,internal support and underside land rendering",
+    "Grove internals/contacts,mating dimensions and fixed fastener installation",
+    "Typography,colors,small label pictogram and print registration"
+  ],
+  "notes": [
+    "All3490 assembled native triangles retained at scale1 with one common translation only. Displaced duplicates excluded.",
+    "Integrated filter is physical non-emissive silicon appearance;no Fresnel hemisphere,glowing IR or detection visualization.",
+    "No LED,button or joint is registered. Sensor is passive and rejects numeric/firmware commands.",
+    "Model and GroveModule artwork:false retain all physical geometry attributes,index and matrixWorld.",
+    "Two final reference-redraw PNGs only;no raw CAD,photograph crop,private vector,generator or intermediate distributed."
+  ],
+  "feedback": {
+    "id": "052dc71fcd6b48e5a17651bb4f438896",
+    "status": "accepted",
+    "category": "incorrect_information",
+    "topic": "Official table5.2mm versus own dimensional drawing/native shell8mm overall thickness"
+  },
+  "runtimeFiles": [
+    {
+      "path": "src/units/tmos-pir/assembly.js",
+      "sha256": "2f8911584146dedae61c5e1fbc0a03494c57fe64cbe833c98fda546f37b3d785"
+    },
+    {
+      "path": "src/units/tmos-pir/cad-map.json",
+      "sha256": "b7827ccc281439dd00e21c08c2175746276c9e5e09314b63886c874db9a4cbfe"
+    },
+    {
+      "path": "src/units/tmos-pir/dimensions.js",
+      "sha256": "dfb689c58cddd6faf83840447a7252def2727ce3b1f931c9c0e5381ef8b594bd"
+    },
+    {
+      "path": "src/units/tmos-pir/geometry-data.js",
+      "sha256": "4ceed75f0b51add219a06cc3a7515f9af38de16766c0bb1a9549bc0fd7248072"
+    },
+    {
+      "path": "src/units/tmos-pir/index.js",
+      "sha256": "a4f0c4265f5f48fa2f1a416c7cf93932dbb4f91759ff74f8df98fc11910c02de"
+    },
+    {
+      "path": "src/units/tmos-pir/reference-redraw-back.png",
+      "sha256": "27db9848a3017b5d5e45318fb2a56ea4b311c013b04f614e256a9c027bab1dfc"
+    },
+    {
+      "path": "src/units/tmos-pir/reference-redraw-front.png",
+      "sha256": "beeb836e17ebaf46206ba4196512c954f41f79107eb4660c7ee87342f308627e"
+    },
+    {
+      "path": "src/units/tmos-pir/stickers.js",
+      "sha256": "72065ae1055acb9d57e114205d4eb58bc7137b47e1786b904400bac012c097f6"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "sku": "U200",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/784c926812716110e9b76041bfa876514017f81a/Products/U200_Unit_INA226-10A/Structures/Unit_INA226-10A.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/407677da165e92da74916f294e3c7e390418c823",
+  "path": "Products/U200_Unit_INA226-10A/Structures/Unit_INA226-10A.stl",
+  "commit": "784c926812716110e9b76041bfa876514017f81a",
+  "gitBlob": "407677da165e92da74916f294e3c7e390418c823",
+  "sha256": "55fd968745d61c007099e6719430f1968e0d612c7d6184db0a79d2789524aab0",
+  "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/784c926812716110e9b76041bfa876514017f81a/Products/U200_Unit_INA226-10A/Structures/Unit_INA226-10A.stl",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/784c926812716110e9b76041bfa876514017f81a/LICENSE",
+  "origin": [
+    0,
+    28,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 0,
+      "name": "INA226-10A complete native rear shell",
+      "material": "shell"
+    },
+    {
+      "component": 2,
+      "name": "INA226-10A complete native front shell",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    3
+  ],
+  "originalAssemblyTriangles": 5582,
+  "localModification": null,
+  "notes": "Complete native assembled front and rear components0/2 retained together at scale1 using one common translation;components1/3 are displaced duplicates.No shell triangles patched,filled or removed.PCB,INA226,isolation packages,fuse,5mΩ shunt,Grove,terminal,screw and physical label carriers are own-model appearance reconstruction;concealed layout and connector mating remain inferred."
+}

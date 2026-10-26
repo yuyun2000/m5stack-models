@@ -1,0 +1,71 @@
+{
+  "id": "ina226-10a",
+  "sku": "U200",
+  "kind": "source-vector-raster",
+  "status": "source-vector-raster",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Two exact U200 10A/5mR original outlined device labels rasterized to final ordinary high-resolution PNGs.Original palette,letterforms and layout retained;compound-path fill winding normalized to recover glyph counters.No source filenames,mappings,private URLs,vectors,generators or intermediates distributed.",
+  "recoveryScope": "Alpha-bounded own device-label outlines and compound-path winding normalization only;no retyped text,palette recolor,preview enlargement or photographic crop.",
+  "referenceCorrespondence": [
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1171/Unit_INA226-10A_02.webp",
+      "sha256": "7a61018a55a987e5b67929c1fa39c1d8145661f61174d5836c91246cebfddd11"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1171/Unit_INA226-10A_06.webp",
+      "sha256": "5622313a71eb4b6dff1d8860b7dac8b5e0388400d3a0fd8398a1b3db8877ba2c"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/ina226-10a/source-vector-front.png",
+      "sha256": "103784518f71cdecc8b9aa59b289d4a76c87d31ec17103ce8af8ba74e973c455",
+      "pixels": [
+        1580,
+        2690
+      ],
+      "sizeMm": [
+        15.8,
+        26.9
+      ],
+      "positionMm": [
+        0,
+        2.75,
+        3.855
+      ],
+      "face": "front",
+      "target": "INA226-10A physical front adhesive label substrate over native printed recess",
+      "kind": "source-vector-raster",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/ina226-10a/source-vector-back.png",
+      "sha256": "eb789c7ac8ca49d3139f09617e3fc82a7700574bc4379f64ab8f83c94150b992",
+      "pixels": [
+        1600,
+        3600
+      ],
+      "sizeMm": [
+        16,
+        36
+      ],
+      "positionMm": [
+        0,
+        6,
+        -3.855
+      ],
+      "face": "back",
+      "target": "INA226-10A physical back adhesive label substrate over native printed recess",
+      "kind": "source-vector-raster",
+      "method": "printedArtwork"
+    }
+  ],
+  "limitations": [
+    "Adhesive thickness and print registration are inferred from own-model photographs.",
+    "Both physical adhesive substrates and native shell/PCB/package geometry remain with artwork:false.",
+    "Only exact U200 10A/5mR device front/back labels are used;packaging and other current-range variants are excluded."
+  ],
+  "rights": "Product names,original printed designs and trademarks retain respective rights.Only approved final ordinary rasters distributed."
+}

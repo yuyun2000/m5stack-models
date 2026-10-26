@@ -2,7 +2,7 @@
 
 2026-10-26。本页整理当前公开工作副本中的本地增量，便于其他Agent接入、查阅各批证据和续作。
 
-当前catalog为14款主机、98款Unit，共112款；阶段计数`{"modeled": 112}`。生成本页时的提交基线为`ad5d0622518180d347ebe50a462d289771e1c6a3`，该基线catalog有85款。此页描述当前源码快照；当前提交和远端状态以Git日志及GitHub main为准。各历史progress中的未提交/未推送字样只描述各自保存时点。
+当前catalog为14款主机、113款Unit，共127款；阶段计数`{"modeled": 127}`。生成本页时的提交基线为`32c95e05ded1bb7f1ff6437f5bce0db9bf91eefd`，该基线catalog有112款。此页描述当前源码快照；当前提交和远端状态以Git日志及GitHub main为准。各历史progress中的未提交/未推送字样只描述各自保存时点。 本次[127款源码同步](GIT-SYNC-127-2026-10-26.md)包含这15款增量、28张PNG及三旧端子闭合修复。
 
 | 批次 | 产品ID | 检查点 |
 | --- | --- | --- |
@@ -31,12 +31,22 @@
 | Thermal2 / FlashLight / GPS SMA | thermal2 / flashlight / gps-sma | [本地进度](../artifacts/thermal2-flashlight-gps-expansion/progress.json) |
 | BLDC Driver / RCA / Puzzle | bldc-driver / rca / puzzle | [本地进度](../artifacts/bldc-rca-puzzle-expansion/progress.json) |
 | RS485-ISO / AIN4-20mA / AC Measure | rs485-iso / ain4-20ma / ac-measure | [本地进度](../artifacts/isolated-interface-expansion/progress.json) |
+| UWB / TMOS PIR / Mini ToF-90 | uwb / tmos-pir / mini-tof-90 | [本地进度](../artifacts/ranging-presence-expansion/progress.json) |
+| Roller485 Lite / Mini CAN / INA226-10A | roller485-lite / mini-can / ina226-10a | [本地进度](../artifacts/roller-mini-can-ina226-expansion/progress.json) |
+| Mini PDM / Mini BPS v1.1 / MIC | mini-pdm / mini-bps-v11 / mic | [本地进度](../artifacts/audio-pressure-expansion/progress.json) |
+| Accel / OP90 / OP180 | accel / op90 / op180 | [本地进度](../artifacts/accel-op90-op180-expansion/progress.json) |
+| Unit ID / RF433R / RF433T | unit-id / rf433r / rf433t | [本地进度](../artifacts/id-rf433-expansion/progress.json) |
 
 各进度记录绑定相应批次的源码/检查范围。近期新增只执行必要局部结构、动作/API、接线夹具及构建；没有逐面浏览器复核或全量验收。`modeled`表示已有实现，不能视为完成视觉或实物配合验收。
 
 ## 接入入口
 
 - [Agent总指南](AGENT-INTEGRATION.md)：按需loader、输入/外驱状态、层级地址与生命周期。
+- [Unit ID/RF433R/RF433T](ID-RF433-UNITS.md)：真实加密IC与接收/发射封装、固定PCB天线和同步贴纸。
+- [Accel/OP90/OP180](ACCEL-OP90-OP180-UNITS.md)：真实加速度封装、两种固定光电叉与检测空气槽及同步贴纸。
+- [Mini PDM/Mini BPS v1.1/MIC](AUDIO-PRESSURE-UNITS.md)：真实声学/气压封装、声孔与可调头及同步贴纸。
+- [Roller485 Lite/Mini CAN/INA226-10A](ROLLER-MINI-CAN-INA226-UNITS.md)：真实电机转子、非隔离CAN与隔离采集端子及同步贴纸。
+- [UWB/TMOS PIR/Mini ToF-90](RANGING-PRESENCE-UNITS.md)：内置天线、真实红外感测窗口与固定直角双板/原稿印刷。
 - [RS485-ISO/AIN4-20mA/AC Measure](ISOLATED-INTERFACE-UNITS.md)：真实隔离芯片/四位端子、可拆跳帽与原稿印刷。
 - [BLDC Driver/RCA/Puzzle](BLDC-RCA-PUZZLE-UNITS.md)：真实三相连接器、音视频插座/壳内双通道开关和64灯外驱/物理级联。
 - [Thermal2/FlashLight/GPS SMA](THERMAL2-FLASHLIGHT-GPS-UNITS.md)：热成像采集头/原壳舌、固定白灯/壳内选择器和可拆有源带线天线。
@@ -56,6 +66,10 @@
 - [显示Unit](DISPLAY-UNITS.md)：独立与嵌套framebuffer。
 - [可动输入Unit](INTERACTIVE-INPUT-UNITS.md)：稳定开关、瞬时键和双轴摇杆。
 - [Relay与DMX](RELAY-DMX-UNITS.md)、[CAN与环境/测距](CAN-ENV-TOF-UNITS.md)、[RTC/指纹/音频](RTC-FINGERPRINT-AUDIO-UNITS.md)。
+
+## 端子闭合修订
+
+AC Measure/AIN4-20mA/BLDC Driver插舌已补孔下壁；当前SHA/局部证据见[闭合修复](TERMINAL-TONGUE-CLOSURE.md)。原批22/23及批25的冻结/进度保留为历史快照，不能拿旧SHA当当前源。该修复不增加型号/PNG数。
 
 ## 保留的边界
 

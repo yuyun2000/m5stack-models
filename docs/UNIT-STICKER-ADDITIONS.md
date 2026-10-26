@@ -1,6 +1,6 @@
 # 新增 Unit 贴纸接入
 
-2026-10-26。下表保留此前66款新增Unit的印刷记录，本批新增RS485-ISO、AIN4-20mA、AC Measure三款及6张PNG，现列69款。RS485-ISO与AIN4-20mA各2张为本款官图代码重绘 `reference-redraw`；AC Measure正背2张为精确机身原稿恢复栅格 `source-vector-raster`，保留原色，仅修正转换的 `evenodd`→`nonzero`字腔填充，排除包装。此前30款回补及各批来源/验收快照分别保留，原先43款范围见[覆盖记录](STICKER-COVERAGE.md)。当前本地112款（14主机、98Unit），全部 `modeled`、`verified` 为0；公开Git仍85款 `ad5d062`，后续二十七款本地增量未自动再次推送。
+2026-10-26。下表保留此前81款新增Unit的印刷记录，本批新增ID、RF433R、RF433T三款及6张PNG，现列84款。三款正背各1张，均按本款官图代码重绘 `reference-redraw`，不裁照片、不借其他型号或编造不可辨文字。此前30款回补及各批来源/验收快照分别保留，原先43款范围见[覆盖记录](STICKER-COVERAGE.md)。当前本地127款（14主机、113Unit），全部 `modeled`、`verified` 为0。本次127款源码同步包含112款基线 `32c95e0` 后新增的15款Unit/28张对应PNG及三旧端子闭合修复，范围见[127款同步记录](GIT-SYNC-127-2026-10-26.md)。历史progress中的未提交/未推送字样仅描述其保存时点，远端状态以GitHub main及实际推送回执为准。30批记录见[本地增量索引](LOCAL-EXPANSION.md)。
 
 | 产品ID | SKU | 当前来源类型 | PNG数 | 具体面与限制 |
 | --- | --- | --- | --- | --- |
@@ -73,6 +73,21 @@
 | `rs485-iso` | U094 | 参考重绘 `reference-redraw` | 2 | 本款正背标；固定VH3.96座、随插头拆装的电阻及独立指示灯均保留实体；[接入与来源](ISOLATED-INTERFACE-UNITS.md) |
 | `ain4-20ma` | U162 | 参考重绘 `reference-redraw` | 2 | 本款正背标；真实六针和独立跳帽不靠印刷替代，无数值sensor/LED/button；[接入与来源](ISOLATED-INTERFACE-UNITS.md) |
 | `ac-measure` | U164 | 原稿恢复栅格 `source-vector-raster` | 2 | 精确机身正背标，保留原色，复合字腔 `evenodd`→`nonzero`恢复；包装排除；[接入与来源](ISOLATED-INTERFACE-UNITS.md) |
+| `uwb` | U100 | 原稿恢复栅格 `source-vector-raster` | 2 | 标准机身正背标，保留原色与轮廓，恢复复合字腔；包装/照片排除；内置天线与PCB实体独立；[接入与来源](RANGING-PRESENCE-UNITS.md) |
+| `tmos-pir` | U185 | 参考重绘 `reference-redraw` | 2 | 本款正背标保留光学开口；真实金属封装/硅滤光窗和PCB背衬，不套旧PIR半球；[接入与来源](RANGING-PRESENCE-UNITS.md) |
+| `mini-tof-90` | U196 | 参考重绘 `reference-redraw` | 2 | 本款正背标；固定直角双板/光窗/Grove侧实体嵌件独立，不以贴图替代；[接入与来源](RANGING-PRESENCE-UNITS.md) |
+| `roller485-lite` | U182-Lite | 参考重绘 `reference-redraw` | 3 | 本款PORT.A/PWR485/debug可读印字；OLED、柔性壳舌和电机转子独立实体；[接入与来源](ROLLER-MINI-CAN-INA226-UNITS.md) |
+| `mini-can` | U179 | 参考重绘 `reference-redraw` | 2 | 本款MINI CAN机身正背标；非隔离SO8/PCB、真实插座及胶贴基底独立；[接入与来源](ROLLER-MINI-CAN-INA226-UNITS.md) |
+| `ina226-10a` | U200 | 原稿恢复栅格 `source-vector-raster` | 2 | 精确10A/5mΩ正背机身原稿，恢复复合字腔；不混1A/包装；PCB/隔离封装/分流实体独立；[接入与来源](ROLLER-MINI-CAN-INA226-UNITS.md) |
+| `mini-pdm` | U089 | 参考重绘 `reference-redraw` | 2 | 本款前麦克风符号及背面CLK/DAT针序；MEMS声孔/PCB与胶片独立；表13mm/原图原壳8mm分别保留；[接入与来源](AUDIO-PRESSURE-UNITS.md) |
+| `mini-bps-v11` | U090-B | 参考重绘 `reference-redraw` | 2 | 精确QMP6988 v1.1前BPS与背PORT.A/I2C针序；不混U090 BMP280；金属气孔/PCB及胶片独立；[接入与来源](AUDIO-PRESSURE-UNITS.md) |
+| `mic` | U096 | 参考重绘 `reference-redraw` | 1 | 本款背面型号/接线标签；真实麦克风孔网/阈值头/PCB和胶片独立；[接入与来源](AUDIO-PRESSURE-UNITS.md) |
+| `accel` | U056 | 参考重绘 `reference-redraw` | 2 | 本款正背印刷；传感封装/PCB与胶贴基底独立，锚点不含加速度数值；[接入与来源](ACCEL-OP90-OP180-UNITS.md) |
+| `op90` | U057 | 参考重绘 `reference-redraw` | 1 | 本款背面型号/针序；固定光电封装、收发窗口及真空气槽独立，不混OP180；[接入与来源](ACCEL-OP90-OP180-UNITS.md) |
+| `op180` | U058 | 参考重绘 `reference-redraw` | 1 | 本款背面型号/针序；5mm真槽、相对光窗和固定顶部封装，胶贴基底独立，不混OP90；[接入与来源](ACCEL-OP90-OP180-UNITS.md) |
+| `unit-id` | U124 | 参考重绘 `reference-redraw` | 2 | 本款正背印刷；ATECC608B-TNGTLSU-G/PCB与胶贴基底独立，无身份值或加密/I2C模拟；[接入与来源](ID-RF433-UNITS.md) |
+| `rf433r` | U113 | 参考重绘 `reference-redraw` | 2 | 本款接收器正背印刷；固定内置PCB天线，不混发射版，不造外接天线或RF动效；[接入与来源](ID-RF433-UNITS.md) |
+| `rf433t` | U114 | 参考重绘 `reference-redraw` | 2 | 本款SYN115与OUT正背印刷；固定内置PCB天线、真实六脚封装，不混接收版；[接入与来源](ID-RF433-UNITS.md) |
 
 每款已接入的面和仍缺的小字以单品记录为准，不表示所有印刷面都已完整还原。2Relay部分正面小字缺原稿支持；Fingerprint2原稿中的指纹图形只有200×200像素，保持原生位图并与高清矢量文字分层，未放大冒充更高精度。营销图上的尺寸箭头、屏幕保护膜和外部注释不会作为永久印刷贴到屏幕或活动帽。相似Module/HAT、新旧Unit的贴纸不混用。
 
@@ -166,3 +181,38 @@ MQ背面精确机身原稿栅格1张标记 `source-vector-raster`，原稿转换
 本批6张PNG（每款2张）：RS485-ISO、AIN4-20mA均按自身官图代码重绘，标 `reference-redraw`；AC Measure精确机身原稿恢复为 `source-vector-raster`，原色和轮廓保留，只修正转换中的 `evenodd`→`nonzero`字腔填充，包装排除。重绘不裁照片、不编造不可辨文字。实际端子/电阻/六针/跳帽/PCB/封装均为物理几何，贴纸不补缺件。
 
 `artwork:false`保留对应盖/插头/电阻/跳帽配置全部物理attributes/index与世界矩阵。必要专项 `node scripts/check-isolated-interface-units.mjs`和[本批指南](ISOLATED-INTERFACE-UNITS.md)登记接线、配件、外驱动作及印刷开关范围；综合结果以[本批进度](../artifacts/isolated-interface-expansion/progress.json)为准，没有新增逐面浏览器、全量历史或实物验收。私表、私有链接/原稿名、矢量、官图CAD原件、生成器与中间件仅留仓库外，公开最终普通PNG及安全配准/来源。
+
+
+## UWB / TMOS PIR / Mini ToF-90 同批印刷
+
+本批6张PNG（每款2张）：UWB标准机身正背原稿恢复为 `source-vector-raster`，保留原色、轮廓，仅恢复转换中的 `evenodd`→`nonzero`复合字腔；包装/照片排除。TMOS PIR与Mini ToF-90按各自官图代码重绘，标 `reference-redraw`，不裁产品照片、不编造不可辨文字。完整原壳、真实PCB/内置天线、金属/光学封装与胶贴基底均独立建模，贴纸不掩盖缺件。
+
+`artwork:false`保持两入口全部物理attributes/index及最顶层更新后的世界矩阵。必要专项 `node scripts/check-ranging-presence-units.mjs` 和[本批指南](RANGING-PRESENCE-UNITS.md)登记四芯Grove、被动锚点与Mini ToF红灯独立外驱范围；综合结果以[本批进度](../artifacts/ranging-presence-expansion/progress.json)为准，没有新增逐面浏览器、全量历史或实物验收。私表、私有链接/原稿名、矢量、官图CAD原件、生成器与中间件仅留仓库外，公开最终普通PNG及安全配准/来源。
+
+
+## Roller485 Lite / Mini CAN / INA226-10A 同批印刷
+
+本批7张PNG：Roller485 Lite的PORT.A/PWR485/debug三张及Mini CAN正背两张为同型号官图代码重绘 `reference-redraw`；INA226-10A两张为精确U20010A/5mΩ机身原稿恢复栅格 `source-vector-raster`，保留颜色/轮廓并恢复复合字腔，排除1A版本与包装。没有产品照片裁切、预览放大或不可辨文字编造。完整原壳、真实PCB/封装、端子接触件和胶贴基底均独立建模，印刷不遮缺件。
+
+`artwork:false`保持两入口及裸座/带插头配置的全部物理attributes/index与世界矩阵。必要专项 `node scripts/check-roller-mini-can-ina226-units.mjs`、[本批指南](ROLLER-MINI-CAN-INA226-UNITS.md)登记真实Grove线、Roller转子/壳舌/OLED/RGB及三款四螺钉附件的外驱范围；综合结果以[本批进度](../artifacts/roller-mini-can-ina226-expansion/progress.json)为准，没有新增逐面浏览器、全量历史或实物验收。私表、私有链接/原稿名、矢量、官图CAD原件、生成器与中间件仅留仓库外，公开最终普通PNG及安全配准/来源。
+
+
+## Mini PDM / Mini BPS v1.1 / MIC 同批印刷
+
+本批5张 `reference-redraw` PNG：Mini PDM前符号/背针序、Mini BPS v1.1前BPS/背PORT.A针序各两张，MIC背面一张。每张依据本款官图可辨文字和图形代码重绘，没有照片裁片、预览放大或不可辨小字编造。BPS严格U090-B QMP6988，不混旧U090 BMP280；PDM官方13mm表与8mm尺寸图/原壳冲突继续记录，原壳不缩放并有真实反馈。各款PCB、金属封装、通气/声学孔网、Grove、独立胶贴基底和MIC调节头均为实体，贴纸不遮缺件。
+
+`artwork:false`保持两入口全部物理attributes/index与世界矩阵。必要专项 `node scripts/check-audio-pressure-units.mjs`、[本批指南](AUDIO-PRESSURE-UNITS.md)登记三款四芯线、被动锚点及MIC有限角 `threshold` 外驱范围；综合结果以[本批进度](../artifacts/audio-pressure-expansion/progress.json)为准，没有新增逐面浏览器、全量历史或实物验收。字体/颜色、隐藏安装和配准限制见各单品研究。私表、私有链接/原稿名、矢量、官图CAD原件、生成器和中间件只留仓库外，公开最终普通PNG及安全配准/来源。
+
+
+## Accel / OP90 / OP180 同批印刷
+
+本批4张 `reference-redraw` PNG：Accel正背2张，OP90和OP180各背面1张。每张依据精确本款官图可辨文字和图形代码重绘，没有照片裁片、预览放大、相近型号套用或不可辨小字编造。真实传感封装、固定光电遮光壳/收发窗/引脚、PCB、Grove和独立胶贴基底保留，检测真空气槽不填平，印刷不遮缺件。90/180不代表可动角，不造铰链、可见IR或虚拟检测锥。
+
+`artwork:false`保持两入口全部物理attributes/index与世界矩阵。必要专项 `node scripts/check-accel-opto-units.mjs`、[本批指南](ACCEL-OP90-OP180-UNITS.md)登记三款四芯线和被动锚点；综合结果以[本批进度](../artifacts/accel-op90-op180-expansion/progress.json)为准，没有新增逐面浏览器、全量历史或实物验收。三款均无按钮、关节、灯或显示；加速度、检测/遮挡/计数/电平、协议、电气和固件由外部实现。字体/颜色、隐藏安装和配准限制见单品研究。私表、私有链接/原稿名、矢量、官图CAD原件、生成器和中间件只留仓库外，公开最终普通PNG及安全配准/来源。
+
+
+## ID / RF433R / RF433T 同批印刷
+
+本批6张 `reference-redraw` PNG：ID、RF433R、RF433T每款正背各1张。每张依据精确本款官图可辨文字和图形代码重绘，没有照片裁片、预览放大、收发型号互借或不可辨小字编造。真实芯片封装/引脚、PCB、固定内置铜天线、Grove深腔/四触点和独立胶贴基底均有实体，不用印刷遮缺件。R/T共用外壳依各自CAD核源，不代表共用电子封装或印刷；天线不发光、不动，不造外接天线或观察窗。
+
+`artwork:false`保持两入口全部物理attributes/index与世界矩阵。必要专项 `node scripts/check-id-rf433-units.mjs`、[本批指南](ID-RF433-UNITS.md)登记三款四芯线和grove-only实际API；综合结果以[本批进度](../artifacts/id-rf433-expansion/progress.json)为准，没有新增逐面浏览器、全量历史或实物验收。三款均无sensor、按钮、关节、灯或显示；身份/密钥/证书/加密/I2C与RF/ASK/数据/强度/距离/通信、协议、电气和固件由外部实现。字体/颜色、隐藏安装和配准限制见单品研究。私表、私有链接/原稿名、矢量、官图CAD原件、生成器和中间件只留仓库外，公开最终普通PNG及安全配准/来源。

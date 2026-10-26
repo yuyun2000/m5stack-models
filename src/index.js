@@ -115,3 +115,18 @@ export {Model as PuzzleUnit,GroveModule as PuzzleUnitModule,Bridge as PuzzleBrid
 export {Model as Rs485IsoUnit,GroveModule as Rs485IsoUnitModule,TerminalPlug as Rs485IsoTerminalPlug} from './units/rs485-iso/index.js';
 export {Model as Ain420maUnit,GroveModule as Ain420maUnitModule,TerminalPlug as Ain420maTerminalPlug,Shunt as Ain420maShunt} from './units/ain4-20ma/index.js';
 export {Model as AcMeasureUnit,GroveModule as AcMeasureUnitModule,TerminalPlug as AcMeasureTerminalPlug} from './units/ac-measure/index.js';
+export {Model as UwbUnit,GroveModule as UwbUnitModule} from './units/uwb/index.js';
+export {Model as TmosPirUnit,GroveModule as TmosPirUnitModule} from './units/tmos-pir/index.js';
+export {Model as MiniTof90Unit,GroveModule as MiniTof90UnitModule} from './units/mini-tof-90/index.js';
+export {Model as Roller485LiteUnit,GroveModule as Roller485LiteUnitModule,TerminalPlug as Roller485LiteTerminalPlug} from './units/roller485-lite/index.js';
+export {Model as MiniCanUnit,GroveModule as MiniCanUnitModule,TerminalPlug as MiniCanTerminalPlug} from './units/mini-can/index.js';
+export {Model as Ina22610aUnit,GroveModule as Ina22610aUnitModule,TerminalPlug as Ina22610aTerminalPlug} from './units/ina226-10a/index.js';
+export {Model as MiniPdmUnit,GroveModule as MiniPdmUnitModule} from './units/mini-pdm/index.js';
+export {Model as MiniBpsV11Unit,GroveModule as MiniBpsV11UnitModule} from './units/mini-bps-v11/index.js';
+export {Model as MicUnit,GroveModule as MicUnitModule} from './units/mic/index.js';
+export {Model as AccelUnit,GroveModule as AccelUnitModule} from './units/accel/index.js';
+export {Model as Op90Unit,GroveModule as Op90UnitModule} from './units/op90/index.js';
+export {Model as Op180Unit,GroveModule as Op180UnitModule} from './units/op180/index.js';
+export {Model as IdUnit,GroveModule as IdUnitModule} from './units/unit-id/index.js';
+export {Model as Rf433rUnit,GroveModule as Rf433rUnitModule} from './units/rf433r/index.js';
+export {Model as Rf433tUnit,GroveModule as Rf433tUnitModule} from './units/rf433t/index.js';

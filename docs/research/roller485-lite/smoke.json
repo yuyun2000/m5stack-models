@@ -1,0 +1,243 @@
+{
+  "checkedAt": "2026-10-26T12:53:19.358Z",
+  "status": "pass",
+  "scope": "Necessary own U182-Lite complete native shell/FrontSide mounting passages,PCB notch/open edges,rotor real bores and fixed/moving separation,native flexure press/release/cancel and exact reset,independent RGB/white OLED,HT3.96 socket/removable plug/screw geometry,physical adhesive carriers with all artwork:false configurations,nested four-core Grove pose/cable/independence/detach/disposal.No exhaustive browser review,manufacturing fit,load,electrical,FOC,firmware or real-device execution.",
+  "meshes": 121,
+  "triangles": 42998,
+  "nativeTriangles": 8730,
+  "sourceAssemblyTriangles": 8730,
+  "visualEnvelopeMm": [
+    41,
+    30.000000000000004,
+    41
+  ],
+  "cadEnvelopeMm": [
+    40,
+    15.200000762939453,
+    40.024444580078125
+  ],
+  "boreRays": 24,
+  "boreWalls": 22,
+  "matingBoreWalls": 16,
+  "directedEdges": 15132,
+  "flexedVertices": 343,
+  "stableVertices": 5272,
+  "fixedFrameCount": 16,
+  "movingGroupCount": 4,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        -30,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 13,
+      "purpose": "OLED real glass and package back native opening"
+    },
+    {
+      "origin": [
+        0,
+        -15.15,
+        30
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 18,
+      "purpose": "Grove mouth has deep physical rear wall"
+    },
+    {
+      "origin": [
+        30,
+        -13.2,
+        0
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "maxDistance": 19,
+      "purpose": "PWR485 cavity has deep orange insulator"
+    },
+    {
+      "origin": [
+        30,
+        -13.4,
+        -5.94
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "maxDistance": 14,
+      "purpose": "Four real PWR485 contacts 1"
+    },
+    {
+      "origin": [
+        30,
+        -13.4,
+        -1.98
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "maxDistance": 14,
+      "purpose": "Four real PWR485 contacts 2"
+    },
+    {
+      "origin": [
+        30,
+        -13.4,
+        1.98
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "maxDistance": 14,
+      "purpose": "Four real PWR485 contacts 3"
+    },
+    {
+      "origin": [
+        30,
+        -13.4,
+        5.94
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "maxDistance": 14,
+      "purpose": "Four real PWR485 contacts 4"
+    },
+    {
+      "origin": [
+        0,
+        -14.1,
+        -30
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 16,
+      "purpose": "Debug real socket is open through U-shaped label to contacts/backstop"
+    },
+    {
+      "origin": [
+        14.85,
+        -30,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "PWR485 adhesive substrate exists with artwork:false"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "OLED real glass and package back native opening",
+      "hit": "display-panel",
+      "distanceMm": 10.8
+    },
+    {
+      "purpose": "Grove mouth has deep physical rear wall",
+      "hit": "",
+      "distanceMm": 16.18
+    },
+    {
+      "purpose": "PWR485 cavity has deep orange insulator",
+      "hit": "Roller485-Lite PWR485 rear wall",
+      "distanceMm": 16.950000011920928
+    },
+    {
+      "purpose": "Four real PWR485 contacts 1",
+      "hit": "Roller485-Lite PWR485 contact 1",
+      "distanceMm": 10.899999999999999
+    },
+    {
+      "purpose": "Four real PWR485 contacts 2",
+      "hit": "Roller485-Lite PWR485 contact 2",
+      "distanceMm": 10.899999999999999
+    },
+    {
+      "purpose": "Four real PWR485 contacts 3",
+      "hit": "Roller485-Lite PWR485 contact 3",
+      "distanceMm": 10.899999999999999
+    },
+    {
+      "purpose": "Four real PWR485 contacts 4",
+      "hit": "Roller485-Lite PWR485 contact 4",
+      "distanceMm": 10.899999999999999
+    },
+    {
+      "purpose": "Debug real socket is open through U-shaped label to contacts/backstop",
+      "hit": "Roller485-Lite debug contact 3",
+      "distanceMm": 11.2
+    },
+    {
+      "purpose": "PWR485 adhesive substrate exists with artwork:false",
+      "hit": "Roller485-Lite physical PWR485 adhesive substrate",
+      "distanceMm": 10.160000000894069
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove",
+      "pwr485",
+      "debug"
+    ],
+    "anchors": [],
+    "controls": [
+      "press"
+    ],
+    "leds": [
+      "rgb-1",
+      "rgb-2"
+    ],
+    "displays": [
+      "lcd"
+    ],
+    "joints": [
+      "rotor"
+    ],
+    "accessoryExport": "TerminalPlug",
+    "accessoryOption": "terminalPlug:true",
+    "accessoryJoints": [
+      "screw-1",
+      "screw-2",
+      "screw-3",
+      "screw-4"
+    ],
+    "nestedJointExample": "pwr485/screw-1",
+    "scope": "External rotor/screw angles,RPM,button input,RGB appearance and64x48 monochrome framebuffer only;no FOC,encoder,current,bus,electrical or firmware model"
+  },
+  "artwork": {
+    "panels": 3,
+    "kind": "reference-redraw",
+    "configurationChecks": 4,
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "externalPoseCableMotionNoEcho": "pass",
+  "disposedResources": 203
+}

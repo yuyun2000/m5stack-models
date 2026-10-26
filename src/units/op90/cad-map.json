@@ -1,0 +1,48 @@
+{
+  "sku": "U057",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/784c926812716110e9b76041bfa876514017f81a/Products/U057_Unit_OP90/Structures/Unit_OP90.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/dc4c7e955272c24035b32cce033ca4ab86f52244",
+  "commit": "784c926812716110e9b76041bfa876514017f81a",
+  "gitBlob": "dc4c7e955272c24035b32cce033ca4ab86f52244",
+  "sha256": "bbbc76eb4a7531d632a29b9b96c8983ae8cc01e7370d3a463e3f9381bf486d1d",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/784c926812716110e9b76041bfa876514017f81a/LICENSE",
+  "origin": [
+    221.26881408691406,
+    313.2234802246094,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 0,
+      "name": "OP90 complete native assembled front and rear shell",
+      "material": "shell",
+      "triangles": 3254
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 3254,
+  "localModification": null,
+  "notes": "Exact own U057 path-specific commit and expected Git blob verified. Component0 is the complete3254-triangle assembled front/rear shell,24×32×8mm. Components1/2 are displaced duplicate rear/front shell halves. All native faces retained unscaled/unmodified under one common translation. Native14×6mm front opening receives the fixed upright ITR9606 package;real5mm optical slot remains air. Own dimension drawing gives12.8mm total package-inclusive depth;no OP180 package/installation substituted."
+}

@@ -1,0 +1,193 @@
+{
+  "id": "mini-pdm",
+  "sku": "U089",
+  "officialDocs": "https://docs.m5stack.com/en/unit/pdm",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "queries": [
+      "Unit Mini PDM U089 产品 尺寸 麦克风 引脚 结构图",
+      "Unit Mini PDM U089 产品尺寸 24 24 13 尺寸图 8 SPM1423"
+    ],
+    "rawResponseDistributed": false,
+    "result": "Own U089 table24×24×13mm conflicts with own dimension drawing and full native assembled24×24×8mm shell.Keep both;no native scaling.Own schematic SPM1423HM4H-B/HT7333/C5-C7/CLK-DAT,and linked datasheet p5 package3.760×4.720×1.310mm/Ø.840 acoustic port.",
+    "feedbackId": "dcd6f74080ea478f8745ce19d5542ab8"
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pdm/pdm_05.webp",
+    "sha256": "8aa1ef2ebb1f7ea43c2e2cc3489007256765e1fad524fbed8a631c559a1df60d"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/78baf68c49d623a7c8a9277c45d97c8e4ffbb80d/Products/U089_Unit_Mini_PDM/Structures/Unit_Mini_PDM.stl",
+      "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/fb8c5852c5a4357cf0adc9e049cb8c1d0618c253",
+      "commit": "78baf68c49d623a7c8a9277c45d97c8e4ffbb80d",
+      "gitBlob": "fb8c5852c5a4357cf0adc9e049cb8c1d0618c253",
+      "sha256": "7741642f2391a3bba614e082abdf0091b496b1dbfaea1ba9ef3c657b5c1c2da5",
+      "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pdm/pdm_01.webp",
+      "sha256": "e5a746083127d2b9d9b5efaf8df61683594166840e00c41bfa2f411c53b96df8"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pdm/pdm_02.webp",
+      "sha256": "91caea71a31531b58fb39d1282255a23aa1d6a722ea014e600bb9cd490c15881"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pdm/pdm_05.webp",
+      "sha256": "8aa1ef2ebb1f7ea43c2e2cc3489007256765e1fad524fbed8a631c559a1df60d"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pdm/pdm_06.webp",
+      "sha256": "cbce31ee37f923cccae4609526d4fc753b363355c6a640f4c05422bb1d64fceb"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pdm/pdm_sch_01.webp",
+      "sha256": "23bc130350bc28c060e2f9dfda05405a6d02103782a569ef3978835eb6b78d28"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/pdm/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+      "sha256": "8e3fa006fc41a301446ea1605899e2504b37cc9531c6ae51630bac1ed2e73f97"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/core/SPM1423HM4H-B_datasheet_en.pdf",
+      "sha256": "85ecd7d7a42c7853a77a4dbc903606f7da82cf03abd496b75eb526147e1acbb0"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "originalAssemblyTriangles": 4162,
+    "outputTriangles": 4162,
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      87.38400268554688,
+      12,
+      -4
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "localModification": null,
+    "notes": "Exact own U089 path-specific commit and expected Git blob verified. Component0 is the complete4162-triangle assembled front/rear shell,24×24×8mm. Components1/2 are displaced duplicate shell halves. Full assembled part retained unscaled/unmodified with one common translation;no native faces removed,patched,filled or repositioned. Same-model dimension drawing explicitly labels8mm total thickness,contradicting the13mm product table;both recorded separately;MCP feedback dcd6f74080ea478f8745ce19d5542ab8. Shared exterior shape with another Mini Unit is not treated as an incorrect file."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      24,
+      13
+    ],
+    "vendorDimensionOrderMm": [
+      24,
+      24,
+      13
+    ],
+    "dimensionDrawingMm": [
+      24,
+      24,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      24,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24,
+      24,
+      8.05000000037253
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        0
+      ],
+      [
+        8,
+        0
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "grovePositionMm": [
+      0,
+      -11.8,
+      1.4
+    ],
+    "dimensionEvidence": "Own U089 dimension drawing labels8mm overall and5.2mm connector;own full native shell matches8mm.Table13mm retained as nominal with accepted discrepancy feedback.Microphone linked datasheet p5 verified from rendered mechanical table."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 2,
+    "sourceDetails": "docs/research/mini-pdm/artwork.json",
+    "originalsDistributed": false
+  },
+  "scope": "Complete own native shell,physical PCB/HT7333/three capacitors/6-land SPM1423 real acoustic bore/deep membrane/retaining screw/four-contact Grove/two adhesive films.Passive fixed acoustic anchor only;no audio/PDM/recording/internal behavior.",
+  "inferred": [
+    "PCB outline,plane,concealed components and microphone installation",
+    "Acoustic bore internal depth and passive membrane appearance",
+    "Grove contact/latch/carrier/tails and retaining installation",
+    "Adhesive dimensions,thickness,symbol curves,colors,typeface and print registration"
+  ],
+  "notes": [
+    "All4162 selected own native triangles retained unscaled/unmodified;only displaced duplicates excluded.",
+    "Own product table13mm and own CAD/drawing8mm are distinguished;no invented spacer,scaled shell or claim that feedback changed the official spec.",
+    "No LED,button,joint,display,waveform,audio or sampling behavior.",
+    "All physical attributes/index/matrixWorld invariant under artwork:false for both entry types.",
+    "Two final ordinary exact-model reference-redraw PNGs;raw photos,vector sources,generators and private mappings excluded."
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/mini-pdm/assembly.js",
+      "sha256": "11ca6cf6d67d771e9e7bc604a4dda168eb3928173edd468171b23ab5f8287034"
+    },
+    {
+      "path": "src/units/mini-pdm/cad-map.json",
+      "sha256": "637cf0bae58ade5504edfa4928e3b6c2dd9542d5554b057c29ff52bdcf4041a9"
+    },
+    {
+      "path": "src/units/mini-pdm/dimensions.js",
+      "sha256": "87c620fcbcc613122115c54c052188a0c254fd76278e1b58d1590586e93654cd"
+    },
+    {
+      "path": "src/units/mini-pdm/geometry-data.js",
+      "sha256": "ba5ede103956271d0937261ae7e967705466eb3875e61f2bebbcd5b5bf0ee0c2"
+    },
+    {
+      "path": "src/units/mini-pdm/index.js",
+      "sha256": "24259d6942aa266d6a407316c4a3c585a1320946ed4cb377cfe418d28c7e4cef"
+    },
+    {
+      "path": "src/units/mini-pdm/reference-redraw-back.png",
+      "sha256": "bd4dd60db64f757fbb4743e8ec14c79eacc9359e422e47b552f9506b4159fdd3"
+    },
+    {
+      "path": "src/units/mini-pdm/reference-redraw-front.png",
+      "sha256": "c3e7fd8c65480b65f22efed5f63fdb4575c5c015ec3d3f9493c1ffa81b23a22b"
+    },
+    {
+      "path": "src/units/mini-pdm/stickers.js",
+      "sha256": "042a2745dfdd05a0a5bbdd34cf49a2cf5189503da55984016e8a2c8cb04e88fc"
+    }
+  ]
+}

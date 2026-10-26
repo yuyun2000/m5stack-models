@@ -60,3 +60,7 @@ host.update(0.2);
 No exact Unit original was adopted. Two final ordinary PNGs were newly code-drawn from readable U162 front/back official marks, including pin colors, model, jumper diagrams, isolation flow and port labels. They are `reference-redraw`; no photograph is cropped. Typography, line weights, icon layout, colors and print placement remain reconstruction. Private mappings, source files, vectors, generators and intermediates are excluded.
 
 Necessary local checks cover all 5,688 native triangles and bounds, open mounting/PCB bores with FrontSide wall hits, physical label/PCB/connector backing, six exposed header pins, all five independently detachable shunt positions and blind-bore FrontSide walls, shared-pin rejection preserving old caps, detachable four-screw plug, 48 Model/GroveModule artwork/cover/accessory combinations with full geometry attributes/index/world matrices invariant, and nested Grove pose/independent detach/disposal. No browser face-by-face acceptance, hardware behavior, power-mode/electrical test or manufacturing-fit claim is made. Stage remains `modeled` and visual evidence remains null.
+
+## 端子插舌闭合修订
+
+2026-10-26。旧2.5mm剖面经坐标偏置/倒角后，下孔缘与端面外轮廓相切，留下20条单边界。仅将插舌高改为2.9mm，保留孔下材料；新15018坐标边均成对反向、正体积，四孔轴向畅通/FrontSide内壁有效。端口、四头外驱、包络、标签和其他几何保持。原smoke/freeze为保存时快照，本次新旧SHA及局部验证见[修订回执](terminal-tongue-closure.json)。不代表实物配合公差。

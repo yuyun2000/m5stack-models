@@ -2,9 +2,9 @@
 
 由 npm run catalog 生成；catalog/products.json 为权威状态。
 
-范围：精细外观建模，行为由下游模拟器负责。主机 14 款，Unit 98 款。
+范围：精细外观建模，行为由下游模拟器负责。主机 14 款，Unit 113 款。
 
-状态计数：{"modeled":112}。modeled 表示已有实现，不表示已完成视觉验收。
+状态计数：{"modeled":127}。modeled 表示已有实现，不表示已完成视觉验收。
 
 | 类别 | 产品 | 阶段 | 名义尺寸 X × Y × Z / mm | 下一步 |
 | --- | --- | --- | --- | --- |
@@ -120,3 +120,18 @@
 | Unit | Unit RS485-ISO | modeled | 24 × 56 × 10.2 | Continue exact Unit expansion with matching artwork;refine LED emitted color,shared drawing attribution and accessory installation only when exact official evidence appears. |
 | Unit | Unit AIN4-20mA | modeled | 24 × 56 × 11.3 | Continue Unit expansion with matching artwork;refine hidden connector/header assembly only with exact official installed geometry. |
 | Unit | Unit AC Measure | modeled | 24 × 56 × 10.3 | Continue Unit expansion with matching artwork;refine hidden terminal installation only with exact official assembly evidence. |
+| Unit | Unit UWB | modeled | 24 × 48 × 8 | Continue exact Unit expansion with matching artwork;refine concealed BU01 installation only with new exact-model evidence. |
+| Unit | Unit TMOS PIR | modeled | 24 × 32 × 8 | Continue Unit expansion with matching artwork;refine concealed installation or dimension attribution only when exact official assembly/revision evidence becomes available. |
+| Unit | Unit Mini ToF-90° | modeled | 24 × 24 × 8 | Continue exact Unit expansion with matching artwork;refine concealed planes,guide coupling and installation only when authoritative assembly data appears. |
+| Unit | Unit Roller485-Lite | modeled | 40 × 40 × 40 | Continue exact Unit expansion with artwork;refine motor assembly datum only on new Lite-specific dimensional evidence. |
+| Unit | Unit Mini CAN | modeled | 24 × 32 × 10.2 | Continue exact Unit expansion with matching artwork;refine concealed board/terminal installation only when authoritative assembly data appears. |
+| Unit | Unit INA226-10A | modeled | 24 × 58 × 10.2 | Continue exact Unit expansion with matching artwork;refine socket projection/installation only when official assembly clarification appears. |
+| Unit | Unit Mini PDM | modeled | 24 × 24 × 13 | Continue exact Unit expansion with matching artwork;resolve official13mm versus8mm dimension discrepancy if authoritative corrected data appears. |
+| Unit | Unit Mini BPS v1.1 | modeled | 24 × 24 × 8 | Continue Unit expansion with matching artwork;refine concealed installation only when exact official assembly/revision evidence becomes available. |
+| Unit | Unit MIC | modeled | 24 × 32 × 8 | Continue exact Unit expansion with matching artwork;refine concealed installation and mechanical head range only when authoritative own-model assembly data appears. |
+| Unit | Unit Accel | modeled | 32 × 24 × 8 | Continue exact Unit expansion with matching artwork;use authoritative production electronics assembly if later available to refine inferred hidden installation. |
+| Unit | Unit OP90 | modeled | 24 × 32 × 12.8 | Continue exact Unit expansion with corresponding artwork;refine concealed installed package details only if authoritative exact assembly evidence appears. |
+| Unit | Unit OP180 | modeled | 36 × 24 × 8.8 | Continue exact Unit expansion with matching artwork;refine concealed optical installation only when authoritative own-model assembly data appears. |
+| Unit | Unit ID | modeled | 24 × 24 × 8 | Continue exact Unit expansion with matching artwork;use authoritative production electronics assembly if later available to refine inferred hidden installation. |
+| Unit | Unit RF433R | modeled | 48 × 24 × 8 | Continue exact Unit expansion with matching artwork;refine inferred concealed installation if authoritative U113 production PCB/BOM becomes available. |
+| Unit | Unit RF433T | modeled | 24 × 48 × 8 | Continue exact Unit expansion with corresponding artwork;refine hidden installation/copper layout only if authoritative exact production assembly evidence appears. |

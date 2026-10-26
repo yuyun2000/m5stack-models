@@ -1,0 +1,259 @@
+{
+  "checkedAt": "2026-10-26T12:34:53.059Z",
+  "status": "pass",
+  "scope": "Necessary local U185 native-envelope,real recessed silicon filter/lid/package/PCB,FrontSide mounting/PCB/filter-aperture walls,passive API,Model/GroveModule artwork physical invariance,four-wire nested transformed-parent attachment/pose/independent detach/disposal. No browser acceptance,hardware/production fit,presence/motion/temperature/IR/electrical/I2C/firmware simulation.",
+  "meshes": 72,
+  "triangles": 12136,
+  "nativeTriangles": 3490,
+  "visualEnvelopeMm": [
+    24,
+    32,
+    8.00000009536743
+  ],
+  "cadEnvelopeMm": [
+    24,
+    32,
+    8
+  ],
+  "boreRays": 10,
+  "boreWalls": 24,
+  "opticalRays": 12,
+  "opticalHits": [
+    {
+      "pointMm": [
+        -0.7,
+        7.72,
+        3.0599999986588955
+      ],
+      "surface": "TMOS PIR non-emissive integrated silicon infrared filter"
+    },
+    {
+      "pointMm": [
+        -0.19999999999999996,
+        7.72,
+        3.0599999986588955
+      ],
+      "surface": "TMOS PIR non-emissive integrated silicon infrared filter"
+    },
+    {
+      "pointMm": [
+        -1.2,
+        7.72,
+        3.0599999986588955
+      ],
+      "surface": "TMOS PIR non-emissive integrated silicon infrared filter"
+    },
+    {
+      "pointMm": [
+        -0.7,
+        8.219999999999999,
+        3.0599999986588955
+      ],
+      "surface": "TMOS PIR non-emissive integrated silicon infrared filter"
+    },
+    {
+      "pointMm": [
+        -0.7,
+        7.22,
+        3.0599999986588955
+      ],
+      "surface": "TMOS PIR non-emissive integrated silicon infrared filter"
+    }
+  ],
+  "closureChecks": [
+    {
+      "origin": [
+        -0.7,
+        7.72,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Native optical opening has real recessed STHS34PF80 silicon filter/package"
+    },
+    {
+      "origin": [
+        3.7,
+        8,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 14,
+      "purpose": "Window margin has genuine dark PCB backing and depth"
+    },
+    {
+      "origin": [
+        0,
+        -24,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Grove insertion cavity has recessed rear wall"
+    },
+    {
+      "origin": [
+        -3,
+        -24,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove contact1 is recessed physical metal"
+    },
+    {
+      "origin": [
+        -1,
+        -24,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove contact2 is recessed physical metal"
+    },
+    {
+      "origin": [
+        1,
+        -24,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove contact3 is recessed physical metal"
+    },
+    {
+      "origin": [
+        3,
+        -24,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove contact4 is recessed physical metal"
+    },
+    {
+      "origin": [
+        0,
+        -4,
+        -12
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 9,
+      "purpose": "Rear screw recess backed by real fixed fastener"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Native optical opening has real recessed STHS34PF80 silicon filter/package",
+      "hit": "TMOS PIR non-emissive integrated silicon infrared filter",
+      "distanceMm": 11.940000001341105
+    },
+    {
+      "purpose": "Window margin has genuine dark PCB backing and depth",
+      "hit": "TMOS PIR physical dark PCB with true mounting reliefs and central hole",
+      "distanceMm": 13.349999988079071
+    },
+    {
+      "purpose": "Grove insertion cavity has recessed rear wall",
+      "hit": "TMOS PIR Grove rear wall",
+      "distanceMm": 13.85000001192093
+    },
+    {
+      "purpose": "Grove contact1 is recessed physical metal",
+      "hit": "TMOS PIR Grove contact 1",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Grove contact2 is recessed physical metal",
+      "hit": "TMOS PIR Grove contact 2",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Grove contact3 is recessed physical metal",
+      "hit": "TMOS PIR Grove contact 3",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Grove contact4 is recessed physical metal",
+      "hit": "TMOS PIR Grove contact 4",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Rear screw recess backed by real fixed fastener",
+      "hit": "TMOS PIR fixed hex retaining screw face",
+      "distanceMm": 8.19
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove"
+    ],
+    "anchors": [
+      "sensor"
+    ],
+    "controls": [],
+    "leds": [],
+    "joints": [],
+    "grovePins": [
+      "GND",
+      "5V",
+      "SDA",
+      "SCL"
+    ],
+    "scope": "Fixed non-emissive visual appearance only"
+  },
+  "artwork": {
+    "panels": 2,
+    "kind": "reference-redraw",
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "dimensionConflict": {
+    "reportedTableMm": [
+      32,
+      24,
+      5.2
+    ],
+    "nativeAndDrawingMm": [
+      32,
+      24,
+      8
+    ],
+    "feedbackId": "052dc71fcd6b48e5a17651bb4f438896",
+    "decision": "Keep native complete shell at scale1;5.2mm in own drawing spans connector height,not overall8mm thickness. No production-fit claim."
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 119
+}

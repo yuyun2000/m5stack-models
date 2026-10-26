@@ -1,16 +1,20 @@
 # m5stack-models.js
 
-本库提供M5Stack主机与Unit的毫米尺度交互模型，支持实体按键压放、旋钮/推子/稳定开关、外驱灯光、屏幕framebuffer和Grove多级接线。本地最新增加RS485-ISO、AIN4-20mA、AC Measure，同步6张PNG：前两款各2张参考重绘，AC正背2张原稿恢复栅格。三款保留真实固定端子与可拆四螺钉插头；RS485-ISO有随插头装拆的终端电阻和独立外驱灯，AIN4-20mA有六根真实针及五个可拆跳帽位置，AC Measure保留本款隔离/采集封装。内部协议、供电、数值、测量和电气由外部框架实现。[本批接入](docs/ISOLATED-INTERFACE-UNITS.md)与此前[BLDC Driver/RCA/Puzzle](docs/BLDC-RCA-PUZZLE-UNITS.md)等记录保留，全部 `modeled`；必要专项为 `node scripts/check-isolated-interface-units.mjs`，综合范围以[本批进度](artifacts/isolated-interface-expansion/progress.json)为准。
+已修复AC Measure、AIN4-20mA、BLDC Driver可拆端子四孔下缘的缺面；端口、四螺钉外驱、标签与外包络保持。两份构建/回归和预览资源检查通过，[修复范围](docs/TERMINAL-TONGUE-CLOSURE.md)与各历史检查点分别记录。该修复保存时118款；当时本地随后6款及该修复尚未再次推送，公开Git112基线为32c95e0。当前增量以本文最新批次记录为准。
+
+本库提供M5Stack主机与Unit的毫米尺度交互模型，支持实体按键压放、旋钮/推子/稳定开关、外驱灯光、屏幕framebuffer和Grove多级接线。本地最新增加ID、RF433R、RF433T，同步6张本款参考重绘PNG；真实芯片封装/引脚、PCB、Grove深腔/触点与胶贴基底均独立。三款本体均只有Grove，无sensor/按钮/关节/灯/显示；R/T内置PCB天线固定不发光，不造外接天线、观察窗或RF动效。身份/密钥/证书/加密/I2C与RF/ASK/数据/强度/距离/通信、电气和固件交外部框架。[本批接入](docs/ID-RF433-UNITS.md)与此前[Accel/OP90/OP180](docs/ACCEL-OP90-OP180-UNITS.md)等记录保留；全部 `modeled`，必要专项为 `node scripts/check-id-rf433-units.mjs`，综合范围以[本批进度](artifacts/id-rf433-expansion/progress.json)为准。
 
 [本地增量批次索引](docs/LOCAL-EXPANSION.md)汇总当前工作区的模型、API与检查点，供查阅模型、API和各批检查范围。
 
-本次Git同步包含 **112款：14款主机、98款Unit**，从85款基线新增27款Unit及59张对应贴纸PNG；范围、必要检查与保留事项见[112款源码同步记录](docs/GIT-SYNC-112-2026-10-26.md)。此前[85款同步记录](docs/GIT-SYNC-2026-10-26.md)保留为历史快照，当前提交与远端状态以Git日志及GitHub main为准。
+本次Git同步源码包含 **127款：14款主机、113款Unit**；从112款基线新增15款Unit及28张对应PNG，并纳入三旧端子闭合修复。范围、必要检查和保留事项见[127款源码同步记录](docs/GIT-SYNC-127-2026-10-26.md)。此前[112款同步记录](docs/GIT-SYNC-112-2026-10-26.md)与[85款同步记录](docs/GIT-SYNC-2026-10-26.md)保留为历史快照；远端状态以GitHub main及实际推送回执为准。
+
+本次15款增量为UWB、TMOS PIR、Mini ToF-90、Roller485 Lite、Mini CAN、INA226-10A、Mini PDM、Mini BPS v1.1、MIC、Accel、OP90、OP180、ID、RF433R、RF433T，均带对应贴纸。30批来源/API/必要检查范围见[增量索引](docs/LOCAL-EXPANSION.md)。历史progress中的未提交、未推送和本地HEAD字样只描述保存时点。
 
 Weight-I2C 与8Servos现可选择随附的可拔插4P螺钉端子，四个螺钉角度独立外驱；默认空座、固定几何与Grove连接保留。用法见[可拆端子接入](docs/UNIT-TERMINALS.md)。
 
 此前43款的贴纸批次保留：每款默认外观至少有一处印刷，部分面仍缺；50张参考重绘PNG尚未完成全批复核。原稿栅格、参考重绘和7款可选中文教学版的准确范围见[贴纸覆盖记录](docs/STICKER-COVERAGE.md)。
 
-基于 Three.js 与 sticks3.js 建模方法的 M5Stack 毫米尺度交互模型库。当前本地包含 **14款主机、98款Unit，共112款模型**，全部保持 `modeled`，`verified` 为0。此前各批验收记录均对应各自源码快照。
+基于 Three.js 与 sticks3.js 建模方法的 M5Stack 毫米尺度交互模型库。当前本地包含 **14款主机、113款Unit，共127款模型**，全部保持 `modeled`，`verified` 为0。此前各批验收记录均对应各自源码快照。
 
 近期校正 **Thermal／Angle／Encoder PCB孔内壁**：保留原孔位与实体曲面，修正默认FrontSide下不可见的内壁；旋转、按压回弹及Grove接线接口保持。新的回归覆盖真实孔内壁法线与定向闭合，历史单品验收仍对应各自源码快照。
 

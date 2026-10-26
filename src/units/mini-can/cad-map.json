@@ -1,0 +1,47 @@
+{
+  "sku": "U179",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/b4d8875bd504fed30242df78a1370703742941fb/Products/U179_Unit_Mini_CAN/Structures/Unit_Mini_CAN.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/3827ed04a34a72fd0a6db23c69faae09ee08fcd6",
+  "commit": "b4d8875bd504fed30242df78a1370703742941fb",
+  "gitBlob": "3827ed04a34a72fd0a6db23c69faae09ee08fcd6",
+  "sha256": "a33e6a7e48f27ca3deb499e3160e5eb5f121effd884d7740f096f27854e456ad",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/b4d8875bd504fed30242df78a1370703742941fb/LICENSE",
+  "origin": [
+    -529.268798828125,
+    225.22348022460938,
+    4
+  ],
+  "axes": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "Mini CAN complete native assembled front and rear shell",
+      "material": "shell",
+      "triangles": 3286
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 3286,
+  "localModification": null,
+  "notes": "Exact own U179 path-specific commit and expected Git blob verified. Component0 is the complete assembled front/rear shell,3286 triangles,24×32×8mm. Components1/2 are displaced duplicate front/rear shells. Complete assembled part retained at scale1 with one shared rigid180-degree Y rotation and translation;no native triangles cut,filled,patched or rearranged.Official10.2mm total depth includes orange HT3.96 socket protrusion;the native8mm shell is not flattened or expanded."
+}

@@ -1,0 +1,195 @@
+{
+  "id": "op180",
+  "sku": "U058",
+  "officialDocs": "https://docs.m5stack.com/en/unit/OP180",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "queries": [
+      "Unit OP180 U058 产品 尺寸 结构图 接口",
+      "ITR9606 OP180 尺寸 封装 datasheet 槽宽 5mm"
+    ],
+    "rawResponseDistributed": false,
+    "result": "Own U058 full36×24×8.8mm,24×32×8mm shell,5mm slot width and7.5mm package height;ITR9606/R1-R3/C4-C5/J1.No material contradiction requiring feedback.No visible status LED or moving control established."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP180/img-1519b910-0cde-4400-b894-dbd5cae2fe24.webp",
+    "sha256": "f1728ec7f1b7191b289fe277ed144a132472c1b2f7f7a8c216a1eefd2759a0e6"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/dbc93013098189c8c0995e7678347b75a369a366/Products/U058_Unit_OP180/Structures/Unit_OP180.stl",
+      "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/2cd2e347cc949685e384fba0dcda4adcd148cd83",
+      "commit": "dbc93013098189c8c0995e7678347b75a369a366",
+      "gitBlob": "2cd2e347cc949685e384fba0dcda4adcd148cd83",
+      "sha256": "42a94f15958f9a451ad37c2350ee81a6766e6665fedddaf92b7214ad36f185ee",
+      "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP180/img-a3e126ec-af40-4f42-a85e-880460d46f7d.webp",
+      "sha256": "be9f73fa2575392451d132a062fbe9ed59344fade557fc204e73a390beccb8ab"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP180/img-b7f9b68e-7baf-466f-b6e1-463b7da97bf9.webp",
+      "sha256": "a231dfd4a30351f9c87d1388a2ca7648383d30f2b97fe30e4a1e9e66f8010fad"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP180/img-311e1860-9fbd-44be-9b48-d1e06c54cec8.webp",
+      "sha256": "9083f01f1c4cee65b80a023f4cdb418fcbe644598a5d0ab2023bf6c61266bde5"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP180/img-1519b910-0cde-4400-b894-dbd5cae2fe24.webp",
+      "sha256": "f1728ec7f1b7191b289fe277ed144a132472c1b2f7f7a8c216a1eefd2759a0e6"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP180/img-a0bd8e9c-1a4d-4c43-86dc-ab6b07158a87.webp",
+      "sha256": "5169e17ea099dbcfba89b6ce725f286d80cc2720a9ff6462c0e4c62299212748"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP180/img-7b04670c-b70e-4218-8756-f223e11e328f.webp",
+      "sha256": "003c7e6a96c74982d4045332125d81841b305baccb9fe8892bbaa9dd81bd70b9"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP180/img-14df8888-5109-4b25-a399-e6b236e85a50.webp",
+      "sha256": "dc417b1afd7c43d6a5ab8846c96ad7d9edee711617c034f23e2d103ad748dc2a"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/OP180/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+      "sha256": "02a8f15444fe33fe5a7b13d73b93057177ca84bbdc632eab3b1a57ce52c03909"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "originalAssemblyTriangles": 3254,
+    "outputTriangles": 3254,
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      221.26881408691406,
+      315.2234802246094,
+      -4
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "localModification": null,
+    "notes": "Exact own U058 path-specific commit and expected Git blob verified.Component0 is the complete3254-triangle assembled24×32×8mm shell.Components1/2 are displaced duplicate shell halves.Native shell retained unscaled/unmodified with one common translation;no native faces removed,patched,filled or repositioned.U058 dimension drawing36mm length and8.8mm depth include the fixed protruding ITR9606 package;24×32×8mm is the shell only."
+  },
+  "dimensions": {
+    "nominalMm": [
+      36,
+      24,
+      8.8
+    ],
+    "vendorDimensionOrderMm": [
+      36,
+      24,
+      8.8
+    ],
+    "dimensionDrawingMm": [
+      24,
+      36,
+      8.8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      32,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24,
+      36,
+      8.8
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -6
+      ],
+      [
+        8,
+        -6
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "slotWidthMm": 5,
+    "slotDepthMm": 5.5,
+    "slotDepthInferred": true,
+    "grovePositionMm": [
+      0,
+      -17.8,
+      1.4
+    ],
+    "dimensionEvidence": "Own drawing distinguishes32mm shell and36mm full length,8mm shell and8.8mm full depth;fixed ITR9606 extends4mm above shell,no native scaling."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 1,
+    "sourceDetails": "docs/research/op180/artwork.json",
+    "originalsDistributed": false
+  },
+  "scope": "Complete own native shell;physical PCB,five schematic passives,four-lead fixed ITR9606 U-package with true5mm air gap/two recessed opposing passive windows,black Grove and adhesive substrate.Only passive sensor anchor and cable/pose;no optical/detection/internal behavior.",
+  "inferred": [
+    "PCB plane,concealed population,pin geometry and installation",
+    "Optical package width/depth/crossbar thickness/resulting5.5mm slot depth,windows/deep backings and emitter-receiver handedness from own drawing/photo proportions",
+    "Grove cavity/contact/latch details,screw installation and adhesive thickness/typeface/color/registration"
+  ],
+  "notes": [
+    "All3254 selected native triangles retained unscaled/unmodified;only displaced duplicates excluded.",
+    "Intentional open detection slot and mounting bores preserved;no sticker or flat filler closes the true slot.",
+    "180deg identifies fixed opposing optical geometry;no fabricated hinge,button,joint,visible LED/IR beam or detection cone.",
+    "Passive sensor anchor accepts no count,IR,occlusion,value,digital-level,electrical or firmware commands.",
+    "All physical geometry attributes,index and matrixWorld match artwork:false for both entry types.",
+    "One final ordinary exact-model reference-redraw PNG;no private source/vector/photo crop distributed."
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/op180/assembly.js",
+      "sha256": "485ddbe9fe8edf2fdbfe07a0ef9bfe29daa38da3eac4f51edb2764d93d4ee0f6"
+    },
+    {
+      "path": "src/units/op180/cad-map.json",
+      "sha256": "59db48e363d5c121911b7e4aab91b9d79c41c511ebda9953588fdaf371a5f712"
+    },
+    {
+      "path": "src/units/op180/dimensions.js",
+      "sha256": "1e395317c3404f851c30a9f1da87ab9b1dcfddf8ec114b78e98ceeb53b32ef2a"
+    },
+    {
+      "path": "src/units/op180/geometry-data.js",
+      "sha256": "ec2a84ef149f69a4aee102fd276a9a18c2adc7c969848f07b7f50cc28b3fcec2"
+    },
+    {
+      "path": "src/units/op180/index.js",
+      "sha256": "6ef1e5d4219954973985456b0747ccd690d76e0b454435d9647bd1933769c6a0"
+    },
+    {
+      "path": "src/units/op180/reference-redraw-back.png",
+      "sha256": "d13f03033cbdea6b3cfb1dff2cc62b0f790bc7292daa1b396651ba9842f4c045"
+    },
+    {
+      "path": "src/units/op180/stickers.js",
+      "sha256": "98b8e10e6ed48c6bc55f83c9cd0d8631f1792aabfc278904e79c87210b80bf8a"
+    }
+  ]
+}

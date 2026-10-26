@@ -1,0 +1,196 @@
+{
+  "id": "uwb",
+  "sku": "U100",
+  "officialDocs": "https://docs.m5stack.com/en/unit/uwb",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "query": "Unit UWB U100 dimensions antenna DWM1000 hardware buttons LED",
+    "rawResponseDistributed": false,
+    "result": "Exact U100:48×24×8mm,Ai-Thinker BU01 based on DW1000,STM32F103C8T6,blue HY2.0-4P PORT.C UART.No exterior control,light,external antenna or moving element confirmed."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_01.webp",
+    "sha256": "a207008bd6f4aebe2fdd44abd69dd2a64adb03b399f54385c4a48f48f6d9bbb5"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3/Products/U100_Unit_UWB/Structures/Unit_UWB.stl",
+      "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/332daf3f2fcbb6dd98e625e05a3c591d24565c9f",
+      "commit": "c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3",
+      "gitBlob": "332daf3f2fcbb6dd98e625e05a3c591d24565c9f",
+      "sha256": "97ac73e3be6eb5c5aa36cc6aa8307428465f502851e8aef2c4b1a938c8bb5caa",
+      "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_01.webp",
+      "sha256": "a207008bd6f4aebe2fdd44abd69dd2a64adb03b399f54385c4a48f48f6d9bbb5"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_02.webp",
+      "sha256": "abe3693e6ba669c7236b8a9c685b6924c0d542daa5979e65ea9c6ecede7e0e3e"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_03.webp",
+      "sha256": "316b847640911040db95926cd498dfd00271cde72781eb665ed2ee7488ed14fe"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_04.webp",
+      "sha256": "900e4cb21d7ec2cad642537875491bb896b0e16402979ae16cb8257a68b7fc29"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_05.webp",
+      "sha256": "ee99420a6447d2c819461cddc1905ac36c19a5b96f56d2c0bec82488a2aec40a"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_06.webp",
+      "sha256": "9137e3a9ba0de5c429b9cec778ca655fb701bec07bb1884ef79453013094ccd1"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_07.webp",
+      "sha256": "feac703daf65bf22ecfe21964816bceb0dcac8232bb92c3f8202c99591f3de52"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_08.webp",
+      "sha256": "706f3f6368a049e4cf55819b9818befd1cacf6cf5a77e6316e0b6437aa8e098f"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_09.webp",
+      "sha256": "879d034047783f2bfd11e7c8854063a5fcaf6cbb4a5dbafac5b1748589884326"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/uwb/model%20size.png",
+      "sha256": "6235e927705e96fb499300eabe21b7f30aacb49d9d69529bf6c93a64f6c59fb1"
+    }
+  ],
+  "selectedAssembly": {
+    "originalAssemblyTriangles": 3796,
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      0,
+      0,
+      1.2
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "localModification": null,
+    "notes": "Complete native assembled component0 retained at scale1 with one Z translation;the two displaced duplicate front/rear shell components are excluded.No shell triangle removed,patched or filled.Physical PCB,BU01 module including its integrated copper antenna,STM32,regulator,crystals,Grove,retaining screw and adhesive substrates reconstructed from own U100 references;concealed placement is appearance reconstruction."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      48,
+      8
+    ],
+    "vendorDimensionOrderMm": [
+      48,
+      24,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      48,
+      7.999999761581421
+    ],
+    "visualEnvelopeMm": [
+      24,
+      48,
+      7.999999761581421
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -12
+      ],
+      [
+        8,
+        -12
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "grovePositionMm": [
+      0,
+      -23.7,
+      1.2
+    ],
+    "dimensionEvidence": "Own U100 dimension drawing and complete assembled native component0 agree on24×48×8mm,Ø5 bores,16mm pitch and12mm bore datum from connector end."
+  },
+  "artwork": {
+    "kind": "source-vector-raster",
+    "pngCount": 2,
+    "sourceDetails": "docs/research/uwb/artwork.json",
+    "originalsDistributed": false
+  },
+  "scope": "Complete native assembled enclosure,actual black PCB/BU01 integrated copper antenna/STM32/DW1000 envelope/regulator/crystal/packages,Grove and retaining screw.Physical labels with separate PNG print layers.No button,LED,joint or artificial sensor state;external cable/assembly pose only.",
+  "inferred": [
+    "Carrier and module PCB planes,concealed package heights and installation positions",
+    "DW1000 concealed package envelope,not verified package placement from board imagery",
+    "Copper antenna thickness/edge radii,side pad profiles and connector mating geometry",
+    "Adhesive carrier thickness and label registration"
+  ],
+  "notes": [
+    "All3796 native assembled triangles retained unscaled/unmodified;two displaced duplicate shells excluded.",
+    "Integrated antenna is fixed planar copper inside its own native shell,no SMA/whip/cable or visible RF effect.",
+    "No exterior LED optical path or control established;none registered.",
+    "Artwork:false retains all physical geometry attributes,index and world transforms.",
+    "Two exact standard physical product-label PNGs only;no product photographs cropped.",
+    "Schematic images show controller/carrier network pages without fully expanded RF package layout;hidden geometry does not assert circuit correctness."
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/uwb/assembly.js",
+      "sha256": "7c6ab9e89c8d5bab69e3862dd9c6b9a7eb6a98ed14b63ee0d3efbf711cf7413c"
+    },
+    {
+      "path": "src/units/uwb/cad-map.json",
+      "sha256": "0fbd13e670d84d18d48fc419d7cd7a4c81543c664bac2788e021a65cb82f5e9d"
+    },
+    {
+      "path": "src/units/uwb/connectors.js",
+      "sha256": "1a201742607374a87ab6e2d383900bb548e9a5a48dea3383f4bb63429ad1449b"
+    },
+    {
+      "path": "src/units/uwb/dimensions.js",
+      "sha256": "8b692fe4da65fb00e0bdb84a47d91635cb37cef48aaaf5abb0689c33c44d3549"
+    },
+    {
+      "path": "src/units/uwb/geometry-data.js",
+      "sha256": "8150930c8cd338954b0f0d5b10a527c5db2a6dca9393ec61698562b921a30a69"
+    },
+    {
+      "path": "src/units/uwb/index.js",
+      "sha256": "f84c4cf3d13a8bd9090219b06dace259a3de900009349c47ef308261a1f5e047"
+    },
+    {
+      "path": "src/units/uwb/source-vector-back.png",
+      "sha256": "7b083871f4c838b70e4fc2be96d48690ff1ac928d2fcee10a0473fc6d54871df"
+    },
+    {
+      "path": "src/units/uwb/source-vector-front.png",
+      "sha256": "4b3d0dd0f375eb4cb70117549056818d7d41ad6db1607d3900d22a47eee9f904"
+    },
+    {
+      "path": "src/units/uwb/stickers.js",
+      "sha256": "ebe77de8dea457bee1fd6894f6d0970859161457891b1891be248d104db483a0"
+    }
+  ]
+}

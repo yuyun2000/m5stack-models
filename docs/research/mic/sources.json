@@ -1,0 +1,197 @@
+{
+  "id": "mic",
+  "sku": "U096",
+  "officialDocs": "https://docs.m5stack.com/en/unit/mic",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "queries": [
+      "Unit MIC U096 产品 尺寸 麦克风 接口 结构图"
+    ],
+    "rawResponseDistributed": false,
+    "result": "Own U09632×24×8mm,MAX4466/LM393DR2G/HT7533/10K R2 trimmer and electret MIC;Grove A.OUT/D.OUT;own drawing and full native shell agree.No material contradiction requiring feedback."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/mic/mic_08.webp",
+    "sha256": "0dee4db14214dabb47457db892387bfa052b2945fb83c8ee4605826d3fee9fc9"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/78baf68c49d623a7c8a9277c45d97c8e4ffbb80d/Products/U096_Unit_MIC/Structures/Unit_MIC.stl",
+      "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/64dc44f3ea9ab1f1492e23fa2d596242a4cdf3f3",
+      "commit": "78baf68c49d623a7c8a9277c45d97c8e4ffbb80d",
+      "gitBlob": "64dc44f3ea9ab1f1492e23fa2d596242a4cdf3f3",
+      "sha256": "3033adf31fcc14703821b396e5d205bb087fec94621d779fa632bb9d888f659e",
+      "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/mic/mic_01.webp",
+      "sha256": "8538fc688679b1b5389e44f8cdc85d71c17ff2dc32efeff7b4d912322fd13a1d"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/mic/mic_02.webp",
+      "sha256": "c605ff6be2652f183af523da853a3b64eea214614f293f30130fbed3d84a1376"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/mic/mic_03.webp",
+      "sha256": "61b8df887ddf283baee1ba163cc9c8fe112dfe6a863641c060a49b31400dfa76"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/mic/mic_04.webp",
+      "sha256": "4b0ac700bfde2a5535c644d007eb246271127c5d0c152bc6b485a1933184ff26"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/mic/mic_07.webp",
+      "sha256": "0d52276966de81b3c6b91e12f5279242a7c454bc97bd2857ffae7acb0ea71f45"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/mic/mic_08.webp",
+      "sha256": "0dee4db14214dabb47457db892387bfa052b2945fb83c8ee4605826d3fee9fc9"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/mic/mic_09.webp",
+      "sha256": "f2f1c2e5412a9fca010b8e6bccde84a4f73dd8c717175179d2c1cf54958595f6"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/mic/Module%20Size.jpg",
+      "sha256": "9a2bcd5727fcd65cf4f6a9715c316d7547e7c71794f31b924b4e0a5e873cd8a5"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/mic/mic_sch_01.webp",
+      "sha256": "d77f8f978e51d1eb65c9aafb1be66ad44c1fb45d151d04687fac52f16ceb9df1"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "originalAssemblyTriangles": 3284,
+    "outputTriangles": 3284,
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      -573.268798828125,
+      225.22348022460938,
+      4
+    ],
+    "axes": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "scale": 1,
+    "localModification": null,
+    "notes": "Exact own U096 path-specific commit and expected Git blob verified. Component0 is the complete assembled front/rear shell,3284 triangles,24×32×8mm. Components1/2 are displaced duplicate front/rear shells. Complete assembled part retained at scale1 with one shared rigid180-degree Y rotation and translation;no native triangles cut,filled,patched or rearranged.Official24×32×8mm overall envelope agrees with the full native shell;the microphone and adjustment head remain within its front openings."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      32,
+      8
+    ],
+    "vendorDimensionOrderMm": [
+      32,
+      24,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      32,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24,
+      32,
+      8
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -4
+      ],
+      [
+        8,
+        -4
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "microphoneApertureDiameterMm": 5.2,
+    "trimmerApertureMm": [
+      6.9,
+      7.1
+    ],
+    "grovePositionMm": [
+      0,
+      -15.8,
+      1.35
+    ],
+    "dimensionEvidence": "Own U096 official dimension drawing and complete native assembled shell agree;no shell scaling or local cuts."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 1,
+    "sourceDetails": "docs/research/mic/artwork.json",
+    "originalsDistributed": false
+  },
+  "scope": "Complete native assembled shell;physical PCB,MAX4466/LM393/HT7533,metal microphone can/chamber/perforated screen/diaphragm,blue trimmer/cross-slotted head/shaft,Grove and adhesive substrate.External finite head angle/duration only;no audio,electrical or firmware behavior.",
+  "inferred": [
+    "PCB plane,concealed population,package dimensions and installation",
+    "Microphone can/diaphragm/screen pattern/depth and concealed acoustic construction",
+    "Trimmer body/head installation,scale registration and conservative unconfirmed visual angular range",
+    "Grove cavity/contact/latch details,screw installation and adhesive thickness/typeface/color/registration"
+  ],
+  "notes": [
+    "All3284 selected native triangles retained unscaled/unmodified;only displaced duplicates excluded.",
+    "Microphone aperture has hollow metal can,55 physical screen holes and actual recessed diaphragm.",
+    "Threshold joint rotates only its visible silver head/shaft;fixed blue body/scale/PCB/connector remain stationary.",
+    "Conservative±135°visual range;no verified production stop,resistance or comparator mapping,no nonzeroRPM.",
+    "No LED/button/display or fabricated light window;passive sensor anchor accepts no audio/ADC/waveform state.",
+    "All physical geometry attributes,index and matrixWorld match artwork:false for both entry types at rest and moved head pose.",
+    "One final ordinary exact-model reference-redraw PNG;no private source/vector/photo crop distributed."
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/mic/assembly.js",
+      "sha256": "7cbb6e3f9ab1baaeb26bba1fbd82eb58deec34f114093906de38c71633e71e47"
+    },
+    {
+      "path": "src/units/mic/cad-map.json",
+      "sha256": "0f4e522e2353b71d70b5b0706e8dce72b7d74c6cbb7b159893575900bce7d48b"
+    },
+    {
+      "path": "src/units/mic/dimensions.js",
+      "sha256": "87e5284b0d9d96e204c56be6f407f0b39cf0b7bd4b15cac2c5bac673cc2d5c13"
+    },
+    {
+      "path": "src/units/mic/geometry-data.js",
+      "sha256": "bed9ca5e876306a82cc6970082e7e5e0abe72cb95a51c6719f7e4d15bdf415d2"
+    },
+    {
+      "path": "src/units/mic/index.js",
+      "sha256": "41aa7dc532e4b9e073a0f457da731d9aa6752cf5821c321e0dd9a6979bcf4755"
+    },
+    {
+      "path": "src/units/mic/reference-redraw-back.png",
+      "sha256": "439b5ac88998f36e15be873dab780ee40aee9105325df16c38fd842c508d582f"
+    },
+    {
+      "path": "src/units/mic/stickers.js",
+      "sha256": "672d317033c0f96a3df05969c64f7d5c251ae98aec0ee39fea9b8481ab19450b"
+    }
+  ]
+}

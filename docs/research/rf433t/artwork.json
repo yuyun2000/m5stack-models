@@ -1,0 +1,71 @@
+{
+  "id": "rf433t",
+  "sku": "U114",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Exact U114 front transmitter-symbol/RF433T and rear RF433T/SYN115/up-arrow/433.92MHz/PORT.B.I/O/OUT/5V/GND/gray crossed NC field newly code-drawn and rasterized from same-model official photographs.No product-photo crop,extracted photographic pixels,preview enlargement,receiving-variant print or guessed small text.",
+  "sources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_t/rf433_t_06.webp",
+      "sha256": "88faf731f543827e92146633aa1349d5f81438584c4e91434ffc91be476b82d2"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_t/rf433_t_02.webp",
+      "sha256": "4c13efc6a407c0e8751354e623c27336fbf59e32b90a9d451aa5f4e2c45aa59c"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/rf433t/reference-redraw-front.png",
+      "sha256": "a6a3e70495d773c5d317b9d7380cf1063d9242740c254b92812de38fd6e41a30",
+      "pixels": [
+        1780,
+        2780
+      ],
+      "sizeMm": [
+        17.8,
+        27.8
+      ],
+      "positionMm": [
+        0,
+        8,
+        3.9
+      ],
+      "face": "front",
+      "target": "RF433T independent physical front adhesive film",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/rf433t/reference-redraw-back.png",
+      "sha256": "ee26df00ff6bac58e24c4d5790d1086cbdb0ccd0c4d5adbe22b93e83b8142e11",
+      "pixels": [
+        1600,
+        2800
+      ],
+      "sizeMm": [
+        16,
+        28
+      ],
+      "positionMm": [
+        0,
+        8,
+        -3.9
+      ],
+      "face": "back",
+      "target": "RF433T independent physical back adhesive film",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    }
+  ],
+  "limitations": [
+    "Typeface,color,spacing and print registration are appearance reconstruction.",
+    "T is blue and OUT is reproduced from exact transmitter photograph;no RF433R name,chip or IN print borrowed.",
+    "Independent physical adhesive films and full PCB remain with artwork:false. Labels do not substitute PCB,Grove,antenna or native shell geometry.",
+    "Only final ordinary PNG distributed;raw photos,vectors,generator,private table,mappings and source links excluded."
+  ],
+  "rights": "Product names and original print marks belong to M5Stack;reference-redraw records reconstructed appearance and source."
+}

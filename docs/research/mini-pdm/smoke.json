@@ -1,0 +1,259 @@
+{
+  "checkedAt": "2026-10-26T13:09:44.298Z",
+  "status": "pass",
+  "scope": "Necessary local U089 own4162 native triangles,real PCB/regulator/microphone/twin-slot backing,open mounting holes/FrontSide cavity walls and coordinate-welded directed edges,deepØ.840 acoustic port,independent physical label substrates,all artwork attributes/index/matrixWorld invariance,passive microphone anchor,no audio/internal commands,nested four-core Grove pose/independence/detach/disposal.No browser acceptance,production fit,acoustic,electrical,recording,firmware or hardware validation.",
+  "meshes": 46,
+  "triangles": 21756,
+  "nativeTriangles": 4162,
+  "sourceAssemblyTriangles": 4162,
+  "nominalMm": [
+    24,
+    24,
+    13
+  ],
+  "dimensionDrawingMm": [
+    24,
+    24,
+    8
+  ],
+  "cadEnvelopeMm": [
+    24,
+    24,
+    8
+  ],
+  "visualEnvelopeMm": [
+    24,
+    24,
+    8.05000000037253
+  ],
+  "boreRays": 10,
+  "boreWalls": 20,
+  "acousticWalls": 4,
+  "nativeSlotWalls": 8,
+  "pcbTopology": {
+    "edges": 1812,
+    "invalidEdges": 0,
+    "signedVolumeMm3": 231.5380246424521
+  },
+  "microphoneTopology": {
+    "edges": 3864,
+    "invalidEdges": 0,
+    "signedVolumeMm3": 18.680266618620806
+  },
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        0,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Physical circular front adhesive film independent of texture"
+    },
+    {
+      "origin": [
+        0,
+        7.65,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Physical rear pin-label film seated on original recess"
+    },
+    {
+      "origin": [
+        -1,
+        8.5,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 15,
+      "purpose": "Native twin sound slot sees real recessed microphone can"
+    },
+    {
+      "origin": [
+        1,
+        8.5,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 15,
+      "purpose": "Native twin sound slot sees real recessed microphone can"
+    },
+    {
+      "origin": [
+        0,
+        -25,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 20,
+      "purpose": "Grove mouth has deep dielectric rear carrier"
+    },
+    {
+      "origin": [
+        -3,
+        -25,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 17,
+      "purpose": "Grove physical contact 1"
+    },
+    {
+      "origin": [
+        -1,
+        -25,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 17,
+      "purpose": "Grove physical contact 2"
+    },
+    {
+      "origin": [
+        1,
+        -25,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 17,
+      "purpose": "Grove physical contact 3"
+    },
+    {
+      "origin": [
+        3,
+        -25,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 17,
+      "purpose": "Grove physical contact 4"
+    },
+    {
+      "origin": [
+        0,
+        0,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Native rear retaining recess contains actual fixed screw"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Physical circular front adhesive film independent of texture",
+      "hit": "Mini PDM physical circular front adhesive substrate",
+      "distanceMm": 10.949999999627469
+    },
+    {
+      "purpose": "Physical rear pin-label film seated on original recess",
+      "hit": "Mini PDM physical rear pin-label adhesive substrate",
+      "distanceMm": 11.150000000111758
+    },
+    {
+      "purpose": "Native twin sound slot sees real recessed microphone can",
+      "hit": "Mini PDM metal MEMS can with true Ø0.840mm acoustic bore",
+      "distanceMm": 14.0899999666214
+    },
+    {
+      "purpose": "Native twin sound slot sees real recessed microphone can",
+      "hit": "Mini PDM metal MEMS can with true Ø0.840mm acoustic bore",
+      "distanceMm": 14.089999966621397
+    },
+    {
+      "purpose": "Grove mouth has deep dielectric rear carrier",
+      "hit": "Mini PDM Grove deep dielectric rear wall",
+      "distanceMm": 18.650000011920923
+    },
+    {
+      "purpose": "Grove physical contact 1",
+      "hit": "Mini PDM Grove real contact 1",
+      "distanceMm": 14.54999990463257
+    },
+    {
+      "purpose": "Grove physical contact 2",
+      "hit": "Mini PDM Grove real contact 2",
+      "distanceMm": 14.54999990463257
+    },
+    {
+      "purpose": "Grove physical contact 3",
+      "hit": "Mini PDM Grove real contact 3",
+      "distanceMm": 14.54999990463257
+    },
+    {
+      "purpose": "Grove physical contact 4",
+      "hit": "Mini PDM Grove real contact 4",
+      "distanceMm": 14.54999990463257
+    },
+    {
+      "purpose": "Native rear retaining recess contains actual fixed screw",
+      "hit": "",
+      "distanceMm": 11.14
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove"
+    ],
+    "anchors": [
+      "sensor"
+    ],
+    "controls": [],
+    "leds": [],
+    "joints": [],
+    "scope": "sensor is passive acoustic position only;no audio/PDM/clock/value commands"
+  },
+  "artwork": {
+    "panels": 2,
+    "kind": "reference-redraw",
+    "configurationChecks": 2,
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "noEcho": "pass",
+  "disposedResources": 99
+}

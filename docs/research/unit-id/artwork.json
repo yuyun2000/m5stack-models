@@ -1,0 +1,71 @@
+{
+  "id": "unit-id",
+  "sku": "U124",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Exact-model official front ID/ATECC608B-/TNGTLSU-G and rear PORT.A.I2C/SCL/SDA/5V/GND recreated in code and rasterized to final ordinary high-resolution PNGs.No product-photo crops,preview enlargement or extracted photographic pixels.",
+  "sources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/id/id_06.webp",
+      "sha256": "3131235a3c8ebe9a781abc0a2b1ebe7394dc3212c5b0eab01679744c79dd9fe7"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/id/id_02.webp",
+      "sha256": "7b786d1d4856c6071eacc4c524968bddbfce705435b1656a3af7bd3654dfdda5"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/unit-id/reference-redraw-front.png",
+      "sha256": "26470aa83f8bcc14b4712b74973cb04f768a16665544a722bad00d52a41f3168",
+      "pixels": [
+        1780,
+        380
+      ],
+      "sizeMm": [
+        17.8,
+        3.8
+      ],
+      "positionMm": [
+        0,
+        7.05,
+        3.84
+      ],
+      "face": "front",
+      "target": "Unit ID physical front adhesive film",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/unit-id/reference-redraw-back.png",
+      "sha256": "c998a3b56cdede56d080bbe3ca3c11a559fbe749ab5db46c13d3da1ec91c5f4a",
+      "pixels": [
+        1600,
+        400
+      ],
+      "sizeMm": [
+        16,
+        4
+      ],
+      "positionMm": [
+        0,
+        7,
+        -3.84
+      ],
+      "face": "back",
+      "target": "Unit ID physical back adhesive film",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    }
+  ],
+  "limitations": [
+    "Typeface,colors,film dimensions,rounding and registration are reconstructed from exact U124 product photos.Only readable physical label text is reproduced.",
+    "Two physical adhesive films remain with artwork:false and directly touch native closed shell recesses;no label fills a missing shell opening or blocks top slot,mounting holes or Grove.",
+    "Front text identifies the chip part only;the model contains no device serial number,keys,certificate or real identity.",
+    "Only final ordinary PNGs are distributed;source photos,vectors,generators,private table,private mappings and private links are excluded."
+  ],
+  "rights": "Product names,original printed designs and trademarks retain their respective rights."
+}

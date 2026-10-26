@@ -1,0 +1,46 @@
+{
+  "sku": "U100",
+  "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3/Products/U100_Unit_UWB/Structures/Unit_UWB.stl",
+  "commit": "c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3",
+  "gitBlob": "332daf3f2fcbb6dd98e625e05a3c591d24565c9f",
+  "sha256": "97ac73e3be6eb5c5aa36cc6aa8307428465f502851e8aef2c4b1a938c8bb5caa",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/332daf3f2fcbb6dd98e625e05a3c591d24565c9f",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3/LICENSE",
+  "origin": [
+    0,
+    0,
+    1.2
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "UWB complete native assembled front and rear shell",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 3796,
+  "localModification": null,
+  "notes": "Complete native assembled component0 retained at scale1 with one Z translation;the two displaced duplicate front/rear shell components are excluded.No shell triangle removed,patched or filled.Physical PCB,BU01 module including its integrated copper antenna,STM32,regulator,crystals,Grove,retaining screw and adhesive substrates reconstructed from own U100 references;concealed placement is appearance reconstruction."
+}

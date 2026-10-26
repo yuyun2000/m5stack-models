@@ -1,0 +1,13 @@
+# Unit OP90 U057
+
+Exact U057 official MCP, product photographs, dimensional drawing and immutable own M5_Hardware structure were inspected on 2026-10-26. This is the fixed upright OP90 interrupter, with its own 90° installation; OP180 geometry and print were not substituted.
+
+The complete 3,254 native assembled shell triangles remain at scale 1 under one translation. Displaced duplicates are excluded. Coordinates are millimetres: +X right, +Y away from Grove, +Z front. Shell depth is 8 mm; the actual fixed fork makes the total 24×32×12.8 mm envelope. The drawing establishes the 14×6 mm installed fork footprint, 5 mm detection slot, Ø5 mm mounting holes and 16 mm hole pitch.
+
+The package has two opaque banks, opposing recessed dark resin optical windows, real optical-tunnel cavity walls, a transverse base and four soldered leads. The 5 mm gap is intentional airspace for an object to enter. It stays open along +Y and +Z, while the package closes its native shell aperture. IR is non-visible; there is no glow, beam, cone, detection animation or fabricated indicator. PCB, three resistors, two capacitors, Grove cavity, four contacts and recessed fixed screw provide physical assembly depth. PCB plane, hidden installation, resin-window dimensions and left-right emitter identity are reconstructed and explicitly uncertain.
+
+`Model` and `GroveModule` expose only `grove` plus passive `sensor`. The anchor metadata gives reconstructed window positions and opposing directions. The fork is fixed: there is no button, LED, display or joint. Internal values, occlusion, counter, GPIO, voltage and electrical/firmware behavior belong to the external framework and are rejected here. GroveModule supports the existing four-wire cable, `unitFrame` pose and independent attachment/detachment.
+
+The same-model rear photograph supplies one code-redrawn ordinary PNG, with source and SHA in `artwork.json`: OP·90°, ITR9606, PORT.B.I/O, IN, 5V and GND; the gray NC field remains blank as photographed. The printed IN is appearance only; the documented Grove pin is Digital Output. No front sticker exists in the source reference. The independent physical label film remains when `artwork:false`; no print hides a missing part.
+
+`smoke.json` records necessary construction checks: native and complete envelopes, FrontSide mounting/PCB/optical-tunnel walls, coordinate-welded directed-edge closure, real slot air paths, two opposite resin windows, passive API rejection, artwork invariance for all physical attributes/index/world matrices, transformed-parent nested cable/pose and independent detach/disposal. It is not browser visual acceptance, physical-hardware evidence or production-fit validation. Status remains modeled with visual verification deferred.

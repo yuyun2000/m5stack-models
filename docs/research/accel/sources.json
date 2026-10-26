@@ -1,0 +1,195 @@
+{
+  "id": "accel",
+  "sku": "U056",
+  "officialDocs": "https://docs.m5stack.com/en/unit/accel",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "queries": [
+      "Unit Accel U056 产品 尺寸 结构图 接口 MMA7660"
+    ],
+    "rawResponseDistributed": false,
+    "result": "Own U056 official response identifies ADXL345,HT7533,AO3400A,32×24×8mm product and exact own structure path.Initial query candidate MMA7660 is not an accepted fact.Own linked datasheet p37 confirms3×5mm14-terminal LGA,.95mm nominal height.No source contradiction requiring feedback."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/accel/accel_06.webp",
+    "sha256": "0aa2607ed25b7e2dab45fadb41d0d76a467a5222559cc95f50874ad621308a75"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/802d26343594f6b8e3b8a9f111cb867613c93882/Products/U056_Unit_Accel/Structures/Unit_Accel.stl",
+      "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/7527140c2e924042ea350171c9976ce415a127e8",
+      "commit": "802d26343594f6b8e3b8a9f111cb867613c93882",
+      "gitBlob": "7527140c2e924042ea350171c9976ce415a127e8",
+      "sha256": "f026bee644e3136e7fe5533423ebbdbcfcb61d6ae8021def1976d45bd0ab721b",
+      "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/accel/accel_01.webp",
+      "sha256": "8640db187f7094d7a09c2234684540dd04e172f66127d945a3728c6c93089d8d"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/accel/accel_02.webp",
+      "sha256": "5b5f356424f53e1adfbb89f455b5c7ba1e6b9394479c8a2da50aa1496def788a"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/accel/accel_03.webp",
+      "sha256": "e0fbcbc5fe88cb409ebca292f0d8735f06d02e3e6f9618b5906e706297302ba6"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/accel/accel_05.webp",
+      "sha256": "c17a06675c27a5226684447e16e3f738be5499dab9ed0912bad801e5187f2003"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/accel/accel_06.webp",
+      "sha256": "0aa2607ed25b7e2dab45fadb41d0d76a467a5222559cc95f50874ad621308a75"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/accel/accel_sch_01.webp",
+      "sha256": "17fb043a577760d8da3d2ea4b19bf6702e27df7a5ed7cbb9fc5415344753c8ef"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/accel/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+      "sha256": "e749d4158272a2c050a2ead49ed72402b301bf7f259353fbbc39c81c3033a6be"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/ADXL345_en.pdf",
+      "sha256": "889e63f7503a0115054f9cbc5bdcdf175e549dabb629fa688167cb4dcbf80c74"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "originalAssemblyTriangles": 3490,
+    "outputTriangles": 3490,
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      441.2688293457031,
+      313.2234802246094,
+      -19
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "localModification": null,
+    "notes": "Exact own U056 path-specific commit and expected Git blob verified. Component0 is the complete3490-triangle assembled front/rear shell,24×32×8mm. Components1/2 are displaced duplicate shell halves. Full assembled part retained unscaled/unmodified with one common translation;no native faces removed,patched,filled or repositioned. Product table32×24×8mm is the same envelope in vendor length/width order."
+  },
+  "dimensions": {
+    "nominalMm": [
+      32,
+      24,
+      8
+    ],
+    "vendorDimensionOrderMm": [
+      32,
+      24,
+      8
+    ],
+    "dimensionDrawingMm": [
+      24,
+      32,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      32,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24,
+      32,
+      8.00000009536743
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -4
+      ],
+      [
+        8,
+        -4
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "grovePositionMm": [
+      0,
+      -15.8,
+      1.4
+    ],
+    "dimensionEvidence": "Own product length/width order32×24×8mm equals own drawing/native model X/Y/Z24×32×8mm.No resizing or dimensional conflict.ADXL345 own linked RevE datasheet p37 explicitly3×5mm14-terminal LGA,0.85–1.00mm height,modeled0.95mm nominal."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 2,
+    "sourceDetails": "docs/research/accel/artwork.json",
+    "originalsDistributed": false
+  },
+  "scope": "Complete own native closed shell,PCB/retaining through-bore/14-land ADXL345/HT7533/two AO3400A/eight passives/four-contact Grove/retaining screw/two adhesive films.Passive fixed package anchor only;no sensor or internal behavior.",
+  "inferred": [
+    "PCB outline,plane,concealed components and package installation",
+    "Non-ADXL regulator,MOSFET and passive envelope/placement",
+    "Grove contact/latch/carrier/tails and retaining installation",
+    "Adhesive dimensions,thickness,axis curves,colors,typeface and print registration"
+  ],
+  "notes": [
+    "All3490 selected own native triangles retained unscaled/unmodified;only displaced duplicates excluded.",
+    "Own nominal32×24×8mm and model24×32×8mm use different axis orders.",
+    "No sensor opening,LED,button,joint,display or acceleration behavior invented.",
+    "All physical attributes/index/matrixWorld invariant under artwork:false for both entry types.",
+    "Two final ordinary exact-model reference-redraw PNGs;raw photos,source vectors,generators and private mappings excluded."
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/accel/assembly.js",
+      "sha256": "58e164058397978a0e753cdfc963765353c873bcc720f8921673a5aab4a4c4e0"
+    },
+    {
+      "path": "src/units/accel/cad-map.json",
+      "sha256": "e3f63d1363773ce83bfbf3d898252d4650ee8f5d6f49b7983e4b5c4b6b9cf1e0"
+    },
+    {
+      "path": "src/units/accel/dimensions.js",
+      "sha256": "aa08d957f2549865170dd746aa947200488e8c3b970737b49c63683afbcff82f"
+    },
+    {
+      "path": "src/units/accel/geometry-data.js",
+      "sha256": "4d282927833d44a6772d41e688c363db857768a16cbc956be97a43d712065d70"
+    },
+    {
+      "path": "src/units/accel/index.js",
+      "sha256": "383902ac8bf21a1269989abb41c78726ee26377aec89ded7730b36020d5f6d03"
+    },
+    {
+      "path": "src/units/accel/reference-redraw-back.png",
+      "sha256": "372ce5b17abaf20b949b01fa0bb5f821aac0b485003ed2fe16914f7af9ce2b0b"
+    },
+    {
+      "path": "src/units/accel/reference-redraw-front.png",
+      "sha256": "2d6c7da1091427a71cabc588daacda9d88fbea3d0e37393bb600b6f04cd52de1"
+    },
+    {
+      "path": "src/units/accel/stickers.js",
+      "sha256": "ef7bcb78f1566b9e8455352ccdbf1fb4478997d516a178d0c3c06d39e63bb64b"
+    }
+  ]
+}

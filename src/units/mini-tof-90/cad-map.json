@@ -1,0 +1,60 @@
+{
+  "sku": "U196",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/d3ae864f161167af3f9698214012e1d135adc357/Products/U196_Unit_Mini_ToF-90%C2%B0/Structures/Unit_Mini_ToF-90%C2%B0.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/5cabc9b77493bde97465f65f7e462099be24e023",
+  "commit": "d3ae864f161167af3f9698214012e1d135adc357",
+  "gitBlob": "5cabc9b77493bde97465f65f7e462099be24e023",
+  "sha256": "17cb6c10397b1af3f112471b15715235da872a8596736dc5dc5d91f93a86e77f",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/d3ae864f161167af3f9698214012e1d135adc357/LICENSE",
+  "origin": [
+    89.7682876586914,
+    10.013,
+    -2.8
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 1,
+      "name": "Mini ToF-90 complete native rear shell",
+      "material": "shell",
+      "triangles": 2404
+    },
+    {
+      "component": 2,
+      "name": "Mini ToF-90 complete native front shell",
+      "material": "shell",
+      "triangles": 1890
+    },
+    {
+      "component": 4,
+      "name": "Mini ToF-90 complete native Grove-side insert",
+      "material": "insert",
+      "triangles": 256
+    }
+  ],
+  "excludedComponents": [
+    0,
+    3,
+    5
+  ],
+  "originalAssemblyTriangles": 4550,
+  "localModification": null,
+  "notes": "Own U196 exact Unicode degree-sign path verified at its path-specific commit and expected git blob. Complete native assembled rear1/front2/Grove-side insert4 retained at scale1 with one shared translation. Displaced duplicate components0/3/5 excluded. No native triangles cut,filled,patched or rearranged. The separate insert physically closes the narrow Grove-side slot;transparent light-guide material and D1 coupling are inferred from geometry/schematic rather than manufacturing material data."
+}

@@ -1,0 +1,219 @@
+{
+  "id": "rf433r",
+  "sku": "U113",
+  "officialDocs": "https://docs.m5stack.com/en/unit/rf433_r",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "queries": [
+      "Unit RF433R U113 产品 尺寸 天线 接口 原理图",
+      "Unit RF433R U113 E1 ANT_IPEX 实际PCB天线 量产装配 BOM"
+    ],
+    "rawResponseDistributed": false,
+    "result": "Own U113 product says48×24×8mm,SYN531R and built-in PCB antenna;own drawing/native model24×48×8mm.Linked datasheet p10 confirms SOP-8 nominal package4.92×6.00×1.50mm.E1 ANT_IPEX schematic name does not establish populated external connector;assembly evidence requested via accepted feedback."
+  },
+  "feedback": {
+    "category": "missing_documentation",
+    "feedback_id": "4b666d887ad44a0f88d5ebb78bfc73df",
+    "accepted": true,
+    "topic": "Clarify exact U113 E1 population/PCB antenna assembly and qualify external-connector interpretation until board/BOM evidence exists."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_r/rf433_r_06.webp",
+    "sha256": "9af12d243a12104cf5ce97b419fbabb1c2c3e03ea1c08c289a9e682a6410c2fe"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/07d8765bd52f32cc2705fc542ea608169a6c3c8c/Products/U113_Unit_RF433R/Structures/Unit_RF433R.stl",
+      "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/c711d25d74bd606fb0027ed6b197226c69d682f9",
+      "commit": "07d8765bd52f32cc2705fc542ea608169a6c3c8c",
+      "gitBlob": "c711d25d74bd606fb0027ed6b197226c69d682f9",
+      "sha256": "6ef92787614d8197559fa9f711a61b7c1f49df16db5d872e591d07e845297fc7",
+      "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_r/rf433_r_01.webp",
+      "sha256": "454463679e10eb29996cb8454d4b66fd63ccd6afffe6e116b8d7ef92249cbe60"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_r/rf433_r_02.webp",
+      "sha256": "53d0d89632e90c989054dd138aff83f1ff54ff4b535228bd6abaf50e52f36c25"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_r/rf433_r_03.webp",
+      "sha256": "b8e314c9bf42fb3d726302df0f919fbb5194e290c62cfeb7eefa47fb97a07063"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_r/rf433_r_05.webp",
+      "sha256": "1c8be1c631c07a3328753aedae7ef5e07993e51d2b86ab7fcd8492f039d06807"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_r/rf433_r_06.webp",
+      "sha256": "9af12d243a12104cf5ce97b419fbabb1c2c3e03ea1c08c289a9e682a6410c2fe"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_r/rf433_r_sch_01.webp",
+      "sha256": "fdb0b1f0cb57b34286c54e8c9e2388d218931466f1abe306540354129b13e7c9"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/835/U113_Model_Size.jpg",
+      "sha256": "fdbc801b874ed401d6ce2f3b5d377a6b15dea13c99a685ec0bc787bb91136797"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/rf433/C77785_SYN531R_2018-06-20.PDF",
+      "sha256": "3447e269954567b4a1366f5bbe256994847231ae1477a0ab0daf11a879bffa17"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "originalAssemblyTriangles": 3796,
+    "outputTriangles": 3796,
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      0,
+      0,
+      1.2
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "localModification": null,
+    "notes": "Exact own U113 path-specific commit and expected Git blob verified. Component0 is the complete3796-triangle assembled front/rear shell,24×48×8mm. Components1/2 are displaced duplicate shell halves. Full assembled part retained unscaled/unmodified with one common translation;no native faces removed,patched,filled or repositioned. Product table48×24×8mm is the same envelope in vendor length/width order."
+  },
+  "dimensions": {
+    "nominalMm": [
+      48,
+      24,
+      8
+    ],
+    "vendorDimensionOrderMm": [
+      48,
+      24,
+      8
+    ],
+    "dimensionDrawingMm": [
+      24,
+      48,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      48,
+      7.999999761581421
+    ],
+    "visualEnvelopeMm": [
+      24,
+      48,
+      8.00000009536743
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -12
+      ],
+      [
+        8,
+        -12
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "grovePositionMm": [
+      0,
+      -23.8,
+      1.4
+    ],
+    "receiverBodyMm": [
+      4.92,
+      3.95,
+      1.34
+    ],
+    "receiverPackageEnvelopeMm": [
+      4.92,
+      6,
+      1.5
+    ],
+    "receiverLeadPitchMm": 1.27,
+    "dimensionEvidence": "Own table48×24×8mm is length/width order;own drawing and complete native assembly use X/Y/Z24×48×8mm.No shell resizing.Own linked SYN531R datasheet p10 nominal SOP-8 body4.92×3.95,span6.00,height1.50,standoff.16,pitch1.27,lead width.40mm."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 2,
+    "sourceDetails": "docs/research/rf433r/artwork.json",
+    "originalsDistributed": false
+  },
+  "scope": "Complete own native shell,real PCB bore/reliefs,eight-lead SYN531R SOP-8,metal Y1,two inductors/six capacitors/two resistors,fixed concealed planar copper antenna,four-contact Grove,retaining screw and two real physical adhesive films.Only Grove attachment and cable appearance;no RF or internal behavior.",
+  "inferred": [
+    "Concealed PCB outline/plane and all component installation",
+    "Planar PCB copper route is an inferred appearance envelope,not production antenna geometry",
+    "Y1 and non-IC passive package envelopes/installation",
+    "Grove contact/latch/carrier/tails and retaining installation",
+    "Adhesive dimensions,thickness,typeface,symbol curves,colors and print registration"
+  ],
+  "notes": [
+    "All3796 own selected native triangles retained,scale1;only displaced duplicates excluded.",
+    "Product length/width order48×24×8mm equals model X/Y/Z24×48×8mm.",
+    "Existing front native aperture remains;physical adhesive film seats on original rim.Rear film touches original closed wall.",
+    "No external antenna socket,LED,button,display,sensor,RF anchor or joint invented.",
+    "All physical attributes/index/matrixWorld invariant under artwork:false for both entry types.",
+    "Two own U113 final ordinary reference-redraw PNGs;raw photos,vectors,generators and private mappings excluded."
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/rf433r/assembly.js",
+      "sha256": "83d11c9e0cb7fee1a530c87fe0dec077ae36cd937cd864130bef26df8db63585"
+    },
+    {
+      "path": "src/units/rf433r/cad-map.json",
+      "sha256": "8a97546185118ed3f971ce1ba1b1ebc3e5a1f7bdf42ff4efea93259cc911083f"
+    },
+    {
+      "path": "src/units/rf433r/connectors.js",
+      "sha256": "6b4b1c7cc1d3a9d23f93a495b2d2e31885ab6242c0612ddb9de66e5f5d0e5d04"
+    },
+    {
+      "path": "src/units/rf433r/dimensions.js",
+      "sha256": "4b90f87452158201d84eadb49e75b8e1008d56953549a48dbca396596b69e493"
+    },
+    {
+      "path": "src/units/rf433r/geometry-data.js",
+      "sha256": "69b3eb88e3ca3e186580961c14a396963a9881c07540e77be23ab0b9dc7fa252"
+    },
+    {
+      "path": "src/units/rf433r/index.js",
+      "sha256": "4dc4a1c573a09a655a1aec87eb2b8c5a63f31f51cd5c20eed3f46b8b1ca24647"
+    },
+    {
+      "path": "src/units/rf433r/reference-redraw-back.png",
+      "sha256": "f83ca4a5d544ea2b230a8dfc9e8af4d6557a649a910ada315826d4d676a9da7d"
+    },
+    {
+      "path": "src/units/rf433r/reference-redraw-front.png",
+      "sha256": "b92e0ba60edcfb53ab298b665e7b56305108a5c94c4ef6c4efde37d3928abba4"
+    },
+    {
+      "path": "src/units/rf433r/stickers.js",
+      "sha256": "aa75919c2168d49ef20951f8e08df95ec5b60d06b3a8b05e982a2630b282ffe4"
+    }
+  ]
+}

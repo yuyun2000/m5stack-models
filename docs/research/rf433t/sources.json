@@ -1,0 +1,197 @@
+{
+  "id": "rf433t",
+  "sku": "U114",
+  "officialDocs": "https://docs.m5stack.com/en/unit/rf433_t",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "query": "Unit RF433T U114 产品 尺寸 天线 接口 原理图",
+    "responseSha256": "f0305b556a2ca2ff08efce7cc73a8052f4624be4a8db65579a4c9ac4bebb4e7f",
+    "packageQuery": "Unit RF433T U114 SYN115 datasheet package SOT23-6 天线 PCB 图",
+    "packageResponseSha256": "e988dc60251dceafcde12aff328e2e059b648323333f0ef78fe94c55aa734699",
+    "rawResponseDistributed": false,
+    "result": "Exact U114 product and schematic:SYN115 transmitter,48×24×8mm,internal PCB antenna,Y1 13.560MHz,C1/C10,C2/C3/C4/C5,L1/L2,R1,black four-pin HY2.0_IO,GND/5V/RF_TX/NC.No MCU,exterior antenna,button,joint,visible indicator or sensor anchor."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_t/rf433_t_06.webp",
+    "sha256": "88faf731f543827e92146633aa1349d5f81438584c4e91434ffc91be476b82d2"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/07d8765bd52f32cc2705fc542ea608169a6c3c8c/Products/U114_Unit_RF433T/Structures/Unit_RF433T.stl",
+      "commit": "07d8765bd52f32cc2705fc542ea608169a6c3c8c",
+      "gitBlob": "c711d25d74bd606fb0027ed6b197226c69d682f9",
+      "sha256": "6ef92787614d8197559fa9f711a61b7c1f49df16db5d872e591d07e845297fc7",
+      "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_t/rf433_t_01.webp",
+      "sha256": "e17373f97d2fa24f88b8322a883110edaebc61af064436c5b2b3e6dc91fdb650"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_t/rf433_t_02.webp",
+      "sha256": "4c13efc6a407c0e8751354e623c27336fbf59e32b90a9d451aa5f4e2c45aa59c"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_t/rf433_t_05.webp",
+      "sha256": "a354aeb00e77ee119e1b14e7d97ea43c29296e852b2f26c3811385a23c613fb6"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_t/rf433_t_06.webp",
+      "sha256": "88faf731f543827e92146633aa1349d5f81438584c4e91434ffc91be476b82d2"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_t/rf433_t_sch_01.webp",
+      "sha256": "ca06d8335badeb3b72d95eb8533e0a1a9e22d10b3d47a8a6ff969dfdb754940a"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/835/U113_Model_Size.jpg",
+      "sha256": "fdbc801b874ed401d6ce2f3b5d377a6b15dea13c99a685ec0bc787bb91136797"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/rf433/C105184_SYN115_2019-08-28.PDF",
+      "sha256": "b21782d3f801381eecf981ca448857578be5b267d6436174f270e5d45735e1aa"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "originalAssemblyTriangles": 3796,
+    "outputTriangles": 3796,
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      0,
+      0,
+      1.1999999284744263
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "localModification": null,
+    "notes": "Exact own U114 path-specific commit and expected Git blob verified. Component0 is the complete3796-triangle assembled front/rear shell,24×48×8mm. Components1/2 are displaced duplicate halves. All native triangles retained under one common translation;no native faces removed,filled,scaled or repositioned. Own product page links U113-named common dimension drawing;geometry and own product table independently agree on24×48×8mm. Common shell also used by receiving variant is not treated as incorrect provenance. Fixed own SYN115 transmitter electronics and PCB antenna reconstructed separately;no RF433R electronics/print borrowed."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      48,
+      8
+    ],
+    "vendorDimensionOrderMm": [
+      48,
+      24,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      48,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24,
+      48,
+      8
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -12
+      ],
+      [
+        8,
+        -12
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "transmitterPackage": {
+      "part": "SYN115",
+      "package": "SOT23-6",
+      "bodyVisualMm": [
+        2.9,
+        1.6,
+        1.1
+      ],
+      "leadSpanMm": 2.8,
+      "leadPitchMm": 0.95,
+      "evidence": "Official product-linked Synoxo Version1.0 package drawing,printed p15/16 (PDF physical page17):body L2.90±.10mm,W1.50–1.75mm(1.60nom),body H.90–1.30mm;visualH1.10mm selected within range;lead span2.80±.20mm,pitch.950typical."
+    },
+    "dimensionEvidence": "Exact U114 complete native CAD agrees with48×24×8mm product table. Own product page links a common U113-named drawing with24mm width,48mm length,8mm depth,Ø5 bores,16mm pitch and12mm mounting datum from Grove end;shared shell is not a mistaken source."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 2,
+    "sourceDetails": "docs/research/rf433t/artwork.json",
+    "originalsDistributed": false
+  },
+  "scope": "Complete native assembled shell,full PCB with true bores/scallops,SYN115 actual six-lead SOT23-6 package,13.560MHz crystal,nine schematic R/C/L parts in total,including R1,fixed enclosed copper PCB antenna,black four-contact Grove with recessed cavity walls,fixed screw and independent physical adhesive films.Grove-only appearance;no sensor values,RF/ASK,transmission,data,signal,strength,distance,communication,power,electrical or firmware simulation.",
+  "inferred": [
+    "Concealed PCB outline/plane/color and population placement",
+    "Integrated PCB antenna copper path and installation;product confirms antenna type but exact hidden layout is unconfirmed",
+    "Crystal dimensions,passive placement and package lead detail within documented package envelope",
+    "Grove socket internals,fastener placement and adhesive-film thickness",
+    "Typography,colors and print registration"
+  ],
+  "notes": [
+    "All3796 own native assembled triangles retained atscale1 under one common translation;displaced duplicate halves excluded.",
+    "Only exact U114 transmitter references used;RF433R radio/print not substituted.",
+    "Actual six-lead SOT23-6 instead of fabricated large receiver package;metal crystal and matching/decoupling constituents reflect exact U114 schematic.",
+    "PCB antenna is fixed,enclosed,non-emissive;no SMA,IPEX,external spring/whip,antenna window,beam,RF animation or joint invented.",
+    "Only grove;no sensor,button,LED,joint or display.",
+    "Model/GroveModule artwork:false preserve every physical attribute,index and matrixWorld,including independent film and concealed PCB.",
+    "Two final ordinary reference-redraw PNG only;raw CAD/photos,private vector,generator and intermediates excluded."
+  ],
+  "feedback": null,
+  "runtimeFiles": [
+    {
+      "path": "src/units/rf433t/assembly.js",
+      "sha256": "a304e7fe466bef780afa92923c9f1fa3a6ec11fab7416a63fbc6639446de9ca1"
+    },
+    {
+      "path": "src/units/rf433t/cad-map.json",
+      "sha256": "f435dcb4aa61a961108219ce00c5ce57216f3281dd96080f88497b8207235291"
+    },
+    {
+      "path": "src/units/rf433t/dimensions.js",
+      "sha256": "d9ad51f4555a2bebea60a9b7174a568ad558a1e1afe82f063a5b2d30dcc05ddc"
+    },
+    {
+      "path": "src/units/rf433t/geometry-data.js",
+      "sha256": "76a97c5460fbba9b5e55866844df967185960584a66afc3519366078a85392d3"
+    },
+    {
+      "path": "src/units/rf433t/index.js",
+      "sha256": "a910ff18d046783481e47b571fbc71b0187f184953084acaa80f3f93b908b88e"
+    },
+    {
+      "path": "src/units/rf433t/reference-redraw-back.png",
+      "sha256": "ee26df00ff6bac58e24c4d5790d1086cbdb0ccd0c4d5adbe22b93e83b8142e11"
+    },
+    {
+      "path": "src/units/rf433t/reference-redraw-front.png",
+      "sha256": "a6a3e70495d773c5d317b9d7380cf1063d9242740c254b92812de38fd6e41a30"
+    },
+    {
+      "path": "src/units/rf433t/stickers.js",
+      "sha256": "0473092121336c6f0278adac7ce0177b7f4fa4b7c32d1fdeb130730cf70131d7"
+    }
+  ]
+}

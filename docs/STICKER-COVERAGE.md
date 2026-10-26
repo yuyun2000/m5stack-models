@@ -10,11 +10,41 @@
 
 清单依据：`catalog/products.json`、下表所列公开源码，以及 `src/modeling/artwork.js`。原表行、原始下载地址、原素材文件名、矢量及私有素材索引不在本文中记录。
 
+## ID / RF433R / RF433T 同步印刷
+
+2026-10-26。本批三款同步6张 `reference-redraw` PNG，每款正背各1张，均从精确本款官图可辨文字/符号代码重绘。没有裁产品照片、套相近型号、接收/发射版互借或编造不可辨小字。原壳、实际芯片/引脚、PCB、Grove深腔/触点和胶贴基底独立；RF433R/T内置PCB天线固定、不发光，没有外接天线、RF动效、假观察窗或关节。隐藏布局/安装和字体/颜色/配准是推导，实体不依赖贴纸遮挡。
+
+[新增Unit表](UNIT-STICKER-ADDITIONS.md)现列84款，当前catalog127款（14主机、113Unit），全部 `modeled`、`verified` 为0。本次127款源码同步包含112款基线 `32c95e0` 后新增的15款Unit/28张对应PNG及三旧端子闭合修复，范围见[127款同步记录](GIT-SYNC-127-2026-10-26.md)。历史progress中的未提交/未推送字样仅描述其保存时点，远端状态以GitHub main及实际推送回执为准。30批记录见[本地增量索引](LOCAL-EXPANSION.md)。各实例 `artwork:false`保持全部物理attributes/index与世界矩阵；必要专项 `node scripts/check-id-rf433-units.mjs`及[本批指南](ID-RF433-UNITS.md)对应，综合范围以[本批进度](../artifacts/id-rf433-expansion/progress.json)为准。三款本体均只有 `grove`，无sensor/按钮/关节/灯/显示或内部数值；身份/密钥/证书/加密/I2C与RF/ASK/数据/强度/距离/通信、协议、电气与固件由外部实现。没有新增逐面浏览器、全量历史或实物验收；私表、私有链接/原稿名、矢量、官图CAD原件、生成器和中间件留仓库外。
+
+## Accel / OP90 / OP180 同步印刷
+
+2026-10-26。本批三款同步4张 `reference-redraw` PNG：Accel正背2张，OP90/OP180各背贴1张，均从精确本款官图可辨文字/符号代码重绘。没有裁产品照片、套相近型号或编造不可辨小字。原壳、真实传感器、PCB、Grove和胶贴基底独立；光电封装有实际固定结构、收发窗口、引脚和真空气槽，不用印刷或平面填料遮槽。90/180是固定结构方向，不是旋转关节；IR不作可见发光或检测锥。
+
+该批完成时[新增Unit表](UNIT-STICKER-ADDITIONS.md)列81款，当时catalog124款（14主机、110Unit），全部 `modeled`、`verified` 为0。公开仓库112款提交基线为 `32c95e0`，该批保存时其后共12款及三旧端子局部修复为本地增量；当前未推送范围以本文最新批次记录为准；Git同步范围见[112款同步记录](GIT-SYNC-112-2026-10-26.md)。29批记录见[本地增量索引](LOCAL-EXPANSION.md)。各实例 `artwork:false`保持全部物理attributes/index与世界矩阵；必要专项 `node scripts/check-accel-opto-units.mjs`及[本批指南](ACCEL-OP90-OP180-UNITS.md)对应，综合范围以[本批进度](../artifacts/accel-op90-op180-expansion/progress.json)为准。三款本体均只有 `grove`和被动 `sensor`，无按钮/关节/灯/显示或内部数值；加速度、遮挡/检测/计数/电平、协议、电气与固件由外部实现。没有新增逐面浏览器、全量历史或实物验收；私表、私有链接/原稿名、矢量、官图CAD原件、生成器和中间件留仓库外。
+
+## Mini PDM / Mini BPS v1.1 / MIC 同步印刷
+
+2026-10-26。本批三款同步5张 `reference-redraw` PNG：Mini PDM和Mini BPS v1.1各正背2张，MIC背贴1张，均从本款官图可辨文字/符号代码重绘。没有裁产品照片、套相近型号或编造不可辨小字；BPS使用精确U090-B QMP6988 v1.1。PDM官方13mm表与自身8mm尺寸图/原壳分别记录并有反馈，原壳保持不缩放。金属MEMS/气压封装、真孔/孔网/深腔、PCB、MIC蓝座/旋转头、Grove和胶贴基底独立，印刷不遮缺件。
+
+该批完成时[新增Unit表](UNIT-STICKER-ADDITIONS.md)列78款，当时catalog121款（14主机、107Unit），全部 `modeled`、`verified` 为0。公开仓库112款提交基线为 `32c95e0`，该批保存时其后共9款为本地增量；当前未推送范围以本文最新批次记录为准；Git同步范围见[112款同步记录](GIT-SYNC-112-2026-10-26.md)。28批记录见[本地增量索引](LOCAL-EXPANSION.md)。各实例 `artwork:false`保持全部物理attributes/index与世界矩阵；必要专项 `node scripts/check-audio-pressure-units.mjs`及[本批指南](AUDIO-PRESSURE-UNITS.md)对应，综合范围以[本批进度](../artifacts/audio-pressure-expansion/progress.json)为准。三款都只有被动 `sensor`，MIC另有外驱有限角 `threshold` 调节头，无灯/按钮/显示或内部数值；音频、气压、电气与固件由外部实现。没有新增逐面浏览器、全量历史或实物验收；私表、私有链接/原稿名、矢量、官图CAD原件、生成器和中间件留仓库外。
+
+## Roller485 Lite / Mini CAN / INA226-10A 同步印刷
+
+2026-10-26。本批三款同步7张PNG：Roller485 Lite三张和Mini CAN两张为自身官图代码重绘 `reference-redraw`，INA226-10A精确10A/5mΩ正背两张为 `source-vector-raster`，保留原轮廓/颜色并恢复复合字腔，不混1A版本/包装。没有裁产品照片、套相近型号或编造不可辨小字。电机/PCB、非隔离SO8、隔离16脚封装、分流器、端子和胶贴基底有独立实体，印刷不遮缺件；字体/颜色/配准及原稿恢复限制见单品来源。
+
+该批完成时[新增Unit表](UNIT-STICKER-ADDITIONS.md)列75款，当时catalog118款（14主机、104Unit），全部 `modeled`、`verified` 为0。公开仓库112款提交基线为 `32c95e0`，该批保存时其后共6款为本地增量；当前未推送范围以本文最新批次记录为准；Git同步范围见[112款同步记录](GIT-SYNC-112-2026-10-26.md)。27批记录见[本地增量索引](LOCAL-EXPANSION.md)。各实例 `artwork:false`保持全部物理attributes/index与世界矩阵；必要专项 `node scripts/check-roller-mini-can-ina226-units.mjs`及[本批指南](ROLLER-MINI-CAN-INA226-UNITS.md)对应，综合范围以[本批进度](../artifacts/roller-mini-can-ina226-expansion/progress.json)为准。Roller转子/壳舌/OLED/RGB各按真实API外驱，三款四头插头只旋转可见螺钉；Mini/INA无数值锚点或外露LED。没有新增逐面浏览器、全量历史或实物验收；私表、私有链接/原稿名、矢量、官图CAD原件、生成器与中间件留仓库外。
+
+## UWB / TMOS PIR / Mini ToF-90 同步印刷
+
+2026-10-26。本批三款同步6张PNG，每款2张。UWB采用精确标准机身正背原稿恢复栅格 `source-vector-raster`，保留原色和轮廓，恢复转换中的 `evenodd`→`nonzero`复合字腔；包装/照片排除。TMOS PIR和Mini ToF-90使用自身官图代码重绘 `reference-redraw`，不裁照片、不编不可辨字、不套相近型号。内置天线/PCB、硅滤光窗、固定直角双板与光学深腔都有独立实体，印刷不遮缺件；原稿恢复及字体/颜色/配准推导见单品来源。
+
+该批完成时[新增Unit表](UNIT-STICKER-ADDITIONS.md)列72款，当时catalog115款（14主机、101Unit），全部 `modeled`、`verified` 为0。公开仓库112款提交基线为 `32c95e0`，该批保存时新增三款为本地增量；当前未推送范围以本文顶部批次记录为准；Git同步范围见[112款同步记录](GIT-SYNC-112-2026-10-26.md)。26批记录见[本地增量索引](LOCAL-EXPANSION.md)。各实例 `artwork:false`保持全部物理attributes/index与世界矩阵；必要专项 `node scripts/check-ranging-presence-units.mjs` 及[本批指南](RANGING-PRESENCE-UNITS.md)对应，综合范围以[本批进度](../artifacts/ranging-presence-expansion/progress.json)为准。Mini ToF红灯只独立外驱明暗，不随连接/测距联动；两光学锚点不含数值，不画可见IR或检测锥。没有新增逐面浏览器、全量历史或实物验收；私表、私有链接/原稿名、矢量、官图CAD原件、生成器与中间件留仓库外。
+
 ## RS485-ISO / AIN4-20mA / AC Measure 同步印刷
 
 2026-10-26。本批三款同步6张PNG，每款2张。RS485-ISO和AIN4-20mA采用自身官图代码重绘 `reference-redraw`；AC Measure采用精确机身正背原稿恢复栅格 `source-vector-raster`，保留原色，恢复转换中的 `evenodd`→`nonzero`字腔填充，包装排除。承载实体、真实端子/孔口、电阻/六针/跳帽与PCB/采集封装独立存在，不裁产品照片、不编不可辨字、不借贴纸遮缺件。字体、颜色、安装与配准推导见各款来源记录。
 
-[新增Unit表](UNIT-STICKER-ADDITIONS.md)现列69款，当前catalog112款（14主机、98Unit），全部 `modeled`、`verified` 为0。公开Git仍85款 `ad5d062`，随后二十七款本地增量未自动再次推送。各实例 `artwork:false`保持对应盖/插头/电阻/跳帽配置全部物理attributes/index及世界矩阵。必要专项 `node scripts/check-isolated-interface-units.mjs`与[本批指南](ISOLATED-INTERFACE-UNITS.md)对应，综合范围以[本批进度](../artifacts/isolated-interface-expansion/progress.json)为准；未新增逐面浏览器、全量历史或实物验收。私表、私有链接/原稿名、矢量、官图CAD原件、生成器和中间件仅留仓库外。
+该批完成时[新增Unit表](UNIT-STICKER-ADDITIONS.md)列69款，当时catalog112款（14主机、98Unit），全部 `modeled`、`verified` 为0。该批保存时公开Git为85款 `ad5d062`，当时随后二十七款尚未推送；当前同步以本文顶部记录为准。各实例 `artwork:false`保持对应盖/插头/电阻/跳帽配置全部物理attributes/index及世界矩阵。必要专项 `node scripts/check-isolated-interface-units.mjs`与[本批指南](ISOLATED-INTERFACE-UNITS.md)对应，综合范围以[本批进度](../artifacts/isolated-interface-expansion/progress.json)为准；未新增逐面浏览器、全量历史或实物验收。私表、私有链接/原稿名、矢量、官图CAD原件、生成器和中间件仅留仓库外。
 
 ## BLDC Driver / RCA / Puzzle 同步印刷
 

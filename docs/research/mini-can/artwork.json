@@ -1,0 +1,70 @@
+{
+  "id": "mini-can",
+  "sku": "U179",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Readable exact U179 front MINI/CAN/H/L/HV/G and G/V/T/R and rear MINI CAN/TJA1051T/3/PORT.CAN/GND/HV/L/H/RXD/TXD/5V/GND marks newly code-drawn and rasterized as ordinary final PNGs.Same-model official photographs are references only;no photographic crop,preview enlargement or extracted photo pixels.",
+  "sources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Mini%20CAN/img-2c2855ee-66df-4e53-bd5a-2c4f9f24364a.webp",
+      "sha256": "b5145565c92f62b3d6738f3e8ecbfda252ad85687dbd212c44cb1c1d4f2906dc"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Mini%20CAN/img-f9c7e55d-aa74-4c6f-95e2-00eae24db786.webp",
+      "sha256": "9c6241d55a4edc8f4cb5f413b5c4f16a90393f3882cc43d7496ef030f455ff4b"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/mini-can/reference-redraw-front.png",
+      "sha256": "1714b76519114035954d76b197814f0a148e6120750e20232cc354b4f42250b8",
+      "pixels": [
+        1600,
+        1485
+      ],
+      "sizeMm": [
+        16,
+        14.85
+      ],
+      "positionMm": [
+        0,
+        -1.175,
+        4.01
+      ],
+      "face": "front",
+      "target": "Mini CAN physical front adhesive substrate",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/mini-can/reference-redraw-back.png",
+      "sha256": "89e4868a89940dde6cd88a111464345f7e96acedd783723fe71271733f4b8b2c",
+      "pixels": [
+        1600,
+        1220
+      ],
+      "sizeMm": [
+        16,
+        12.2
+      ],
+      "positionMm": [
+        0,
+        7.35,
+        -3.85
+      ],
+      "face": "back",
+      "target": "Mini CAN physical back adhesive substrate",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    }
+  ],
+  "limitations": [
+    "Typeface,colors,die-cut edge and print registration are appearance reconstruction;unreadable tiny marks are omitted.",
+    "Physical die-cut front and recessed rear adhesive substrates remain with artwork:false;print does not replace missing shell/PCB/socket geometry.",
+    "No raw photos,source vectors,generators,private table or mappings distributed."
+  ],
+  "rights": "Product names,original printed designs and trademarks retain their respective rights."
+}

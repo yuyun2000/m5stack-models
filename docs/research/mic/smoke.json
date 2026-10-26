@@ -1,0 +1,294 @@
+{
+  "checkedAt": "2026-10-26T13:09:55.636Z",
+  "status": "pass",
+  "scope": "Necessary exact U096 native shell,PCB/MAX4466/LM393/HT7533,real microphone chamber/perforated acoustic screen/diaphragm,physical blue trimmer/head/Grove/label substrate.FrontSide bore walls and closed directed edges;finite threshold angle/duration/exact return/noRPM/noecho;both-entry artwork invariants including world matrices;nested four-core Grove pose/cable/independent detach/disposal.No browser acceptance,production fit,sound/sampling/recording,ADC,threshold electrical,firmware or hardware validation.",
+  "meshes": 123,
+  "triangles": 74162,
+  "nativeTriangles": 3284,
+  "sourceAssemblyTriangles": 3284,
+  "visualEnvelopeMm": [
+    24,
+    32,
+    8
+  ],
+  "cadEnvelopeMm": [
+    24,
+    32,
+    8
+  ],
+  "boreRays": 10,
+  "boreWalls": 24,
+  "screenAxialPaths": 55,
+  "screenWalls": 220,
+  "minimumScreenOuterMaterialMm": 0.19694679849480512,
+  "topology": {
+    "pcb": {
+      "edges": 1812,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 340.0779229456604
+    },
+    "microphoneCan": {
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 15.987140410835684
+    },
+    "screen": {
+      "edges": 32580,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 1.1296637654343882
+    },
+    "trimmerBody": {
+      "edges": 600,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 168.32285870847483
+    }
+  },
+  "thresholdExactReturn": "pass",
+  "fixedBodyPortScaleAndScreenFrames": "pass",
+  "closureChecks": [
+    {
+      "origin": [
+        0.25,
+        10,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Microphone opening has physical perforated acoustic screen"
+    },
+    {
+      "origin": [
+        0,
+        10,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Acoustic perforation terminates at physical recessed diaphragm"
+    },
+    {
+      "origin": [
+        0.65,
+        2.9,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Real front adjustment aperture has moving cross-slotted metal head"
+    },
+    {
+      "origin": [
+        2.7,
+        2.25,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Front square aperture has fixed physical blue trimmer body"
+    },
+    {
+      "origin": [
+        0,
+        7,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Rear printed label has independent physical adhesive substrate"
+    },
+    {
+      "origin": [
+        0,
+        -25,
+        1.35
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 17,
+      "purpose": "Grove cavity has recessed physical rear wall"
+    },
+    {
+      "origin": [
+        -3,
+        -25,
+        1.55
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Grove physical contact1"
+    },
+    {
+      "origin": [
+        -1,
+        -25,
+        1.55
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Grove physical contact2"
+    },
+    {
+      "origin": [
+        1,
+        -25,
+        1.55
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Grove physical contact3"
+    },
+    {
+      "origin": [
+        3,
+        -25,
+        1.55
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Grove physical contact4"
+    },
+    {
+      "origin": [
+        0,
+        -4,
+        -12
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 10,
+      "purpose": "Central rear retaining recess has real fixed hex screw"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Microphone opening has physical perforated acoustic screen",
+      "hit": "MIC physical perforated dark metal acoustic screen with positive bore clearance",
+      "distanceMm": 11.520000001788139
+    },
+    {
+      "purpose": "Acoustic perforation terminates at physical recessed diaphragm",
+      "hit": "MIC physical recessed acoustic diaphragm behind air space",
+      "distanceMm": 11.820000000894069
+    },
+    {
+      "purpose": "Real front adjustment aperture has moving cross-slotted metal head",
+      "hit": "MIC actual cross-head lobe 1",
+      "distanceMm": 11.330000001192094
+    },
+    {
+      "purpose": "Front square aperture has fixed physical blue trimmer body",
+      "hit": "MIC R2 fixed blue 10K threshold trimmer body with real spindle recess",
+      "distanceMm": 11.250000190734863
+    },
+    {
+      "purpose": "Rear printed label has independent physical adhesive substrate",
+      "hit": "MIC physical rear adhesive substrate independent of printing",
+      "distanceMm": 11.155000000111759
+    },
+    {
+      "purpose": "Grove cavity has recessed physical rear wall",
+      "hit": "MIC Grove rear wall",
+      "distanceMm": 14.85000001192093
+    },
+    {
+      "purpose": "Grove physical contact1",
+      "hit": "MIC Grove contact 1",
+      "distanceMm": 10.549999999999999
+    },
+    {
+      "purpose": "Grove physical contact2",
+      "hit": "MIC Grove contact 2",
+      "distanceMm": 10.549999999999999
+    },
+    {
+      "purpose": "Grove physical contact3",
+      "hit": "MIC Grove contact 3",
+      "distanceMm": 10.549999999999999
+    },
+    {
+      "purpose": "Grove physical contact4",
+      "hit": "MIC Grove contact 4",
+      "distanceMm": 10.549999999999999
+    },
+    {
+      "purpose": "Central rear retaining recess has real fixed hex screw",
+      "hit": "",
+      "distanceMm": 8.1
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove"
+    ],
+    "anchors": [
+      "sensor"
+    ],
+    "controls": [],
+    "leds": [],
+    "joints": [
+      "threshold"
+    ],
+    "jointLimitsDeg": [
+      -135,
+      135
+    ],
+    "jointAxis": [
+      0,
+      0,
+      1
+    ],
+    "continuous": false,
+    "scope": "Threshold external head angle/duration only;passive microphone anchor;no sound,ADC,recording,electrical threshold,button or LED"
+  },
+  "artwork": {
+    "panels": 1,
+    "kind": "reference-redraw",
+    "configurationChecks": 2,
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 173
+}

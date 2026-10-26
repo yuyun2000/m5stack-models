@@ -1,0 +1,324 @@
+{
+  "checkedAt": "2026-10-26T13:09:54.048Z",
+  "status": "pass",
+  "scope": "Necessary exact U090-B local native-envelope,real recessed vented QMP6988 LGA9 package/die/PCB,FrontSide mounting/PCB/package-port walls,coordinate-welded directed edges,passive API,Model/GroveModule artwork physical invariance,four-wire nested transformed-parent attachment/pose/independent detach/disposal. No browser acceptance,hardware/production fit,pressure/temperature/altitude/airflow/electrical/I2C/firmware simulation.",
+  "meshes": 71,
+  "triangles": 21844,
+  "nativeTriangles": 4162,
+  "visualEnvelopeMm": [
+    24,
+    24,
+    8.039999999552965
+  ],
+  "cadEnvelopeMm": [
+    24,
+    24,
+    8
+  ],
+  "boreRays": 10,
+  "boreWalls": 24,
+  "airRays": 9,
+  "airHits": [
+    {
+      "pointMm": [
+        -0.9999999999999999,
+        8.3,
+        2.500000001490116
+      ],
+      "surface": "Mini BPS v1.1 QMP6988 metal lid with true 0.20mm pressure vent"
+    },
+    {
+      "pointMm": [
+        -0.9999999999999999,
+        8.5,
+        2.5000000014901143
+      ],
+      "surface": "Mini BPS v1.1 QMP6988 metal lid with true 0.20mm pressure vent"
+    },
+    {
+      "pointMm": [
+        -1,
+        8.7,
+        2.5000000014901143
+      ],
+      "surface": "Mini BPS v1.1 QMP6988 metal lid with true 0.20mm pressure vent"
+    },
+    {
+      "pointMm": [
+        1,
+        8.3,
+        2.500000001490116
+      ],
+      "surface": "Mini BPS v1.1 QMP6988 metal lid with true 0.20mm pressure vent"
+    },
+    {
+      "pointMm": [
+        1,
+        8.5,
+        2.5000000014901143
+      ],
+      "surface": "Mini BPS v1.1 QMP6988 metal lid with true 0.20mm pressure vent"
+    },
+    {
+      "pointMm": [
+        1,
+        8.7,
+        2.500000001490116
+      ],
+      "surface": "Mini BPS v1.1 QMP6988 metal lid with true 0.20mm pressure vent"
+    }
+  ],
+  "directedEdgeChecks": [
+    {
+      "name": "Mini BPS v1.1 physical dark PCB with true mounting reliefs and central hole",
+      "edges": 2412,
+      "bad": 0
+    },
+    {
+      "name": "Mini BPS v1.1 QMP6988 physical LGA substrate",
+      "edges": 3090,
+      "bad": 0
+    },
+    {
+      "name": "Mini BPS v1.1 QMP6988 metal skirt enclosing real cavity",
+      "edges": 6192,
+      "bad": 0
+    },
+    {
+      "name": "Mini BPS v1.1 QMP6988 metal lid with true 0.20mm pressure vent",
+      "edges": 3864,
+      "bad": 0
+    },
+    {
+      "name": "Mini BPS v1.1 independent round front adhesive film",
+      "edges": 576,
+      "bad": 0
+    },
+    {
+      "name": "Mini BPS v1.1 independent rear adhesive film",
+      "edges": 18,
+      "bad": 0
+    }
+  ],
+  "closureChecks": [
+    {
+      "origin": [
+        -1,
+        8.5,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 13,
+      "purpose": "Left native air slot backed by recessed QMP6988 metal cap"
+    },
+    {
+      "origin": [
+        1,
+        8.5,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 13,
+      "purpose": "Right native air slot backed by recessed QMP6988 metal cap"
+    },
+    {
+      "origin": [
+        -0.71,
+        8.04,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 14,
+      "purpose": "Actual pressure port terminates on deeper physical package die"
+    },
+    {
+      "origin": [
+        1.32,
+        8.5,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 14,
+      "purpose": "Air-slot margin has physical dark PCB backing"
+    },
+    {
+      "origin": [
+        0,
+        -20,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Grove insertion cavity has recessed rear wall"
+    },
+    {
+      "origin": [
+        -3,
+        -20,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove contact1 is recessed physical metal"
+    },
+    {
+      "origin": [
+        -1,
+        -20,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove contact2 is recessed physical metal"
+    },
+    {
+      "origin": [
+        1,
+        -20,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove contact3 is recessed physical metal"
+    },
+    {
+      "origin": [
+        3,
+        -20,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove contact4 is recessed physical metal"
+    },
+    {
+      "origin": [
+        0,
+        0,
+        -12
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 9,
+      "purpose": "Rear screw recess backed by real fixed fastener"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Left native air slot backed by recessed QMP6988 metal cap",
+      "hit": "Mini BPS v1.1 QMP6988 metal lid with true 0.20mm pressure vent",
+      "distanceMm": 12.499999998509885
+    },
+    {
+      "purpose": "Right native air slot backed by recessed QMP6988 metal cap",
+      "hit": "Mini BPS v1.1 QMP6988 metal lid with true 0.20mm pressure vent",
+      "distanceMm": 12.499999998509885
+    },
+    {
+      "purpose": "Actual pressure port terminates on deeper physical package die",
+      "hit": "Mini BPS v1.1 recessed passive sensor die below air vent",
+      "distanceMm": 12.990000001341102
+    },
+    {
+      "purpose": "Air-slot margin has physical dark PCB backing",
+      "hit": "Mini BPS v1.1 physical dark PCB with true mounting reliefs and central hole",
+      "distanceMm": 13.349999988079071
+    },
+    {
+      "purpose": "Grove insertion cavity has recessed rear wall",
+      "hit": "Mini BPS v1.1 Grove rear wall",
+      "distanceMm": 13.85000001192093
+    },
+    {
+      "purpose": "Grove contact1 is recessed physical metal",
+      "hit": "Mini BPS v1.1 Grove contact 1",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Grove contact2 is recessed physical metal",
+      "hit": "Mini BPS v1.1 Grove contact 2",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Grove contact3 is recessed physical metal",
+      "hit": "Mini BPS v1.1 Grove contact 3",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Grove contact4 is recessed physical metal",
+      "hit": "Mini BPS v1.1 Grove contact 4",
+      "distanceMm": 9.549999999999999
+    },
+    {
+      "purpose": "Rear screw recess backed by real fixed fastener",
+      "hit": "Mini BPS v1.1 fixed hex retaining screw face",
+      "distanceMm": 8.19
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove"
+    ],
+    "anchors": [
+      "sensor"
+    ],
+    "controls": [],
+    "leds": [],
+    "joints": [],
+    "grovePins": [
+      "GND",
+      "5V",
+      "SDA",
+      "SCL"
+    ],
+    "scope": "Fixed non-emissive visual appearance only"
+  },
+  "artwork": {
+    "panels": 2,
+    "kind": "reference-redraw",
+    "independentPhysicalFilms": 2,
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 118
+}

@@ -1,0 +1,295 @@
+{
+  "checkedAt": "2026-10-26T12:54:45.758Z",
+  "status": "pass",
+  "scope": "Necessary own U179 complete native shell,physical PCB/non-isolated TJA1051T3 SO8/ME3116/MST5333/3012 inductor/hidden White LED1,fixed four-pole socket and detachable plug,open FrontSide native/PCB/mating bores,external screw angle/duration/no-RPM/no-echo,all bare/plug artwork geometry invariance,nested four-core Grove pose/independence/detach/disposal.No browser acceptance,production fit,CAN messages,electrical,power conversion,firmware or hardware validation.",
+  "meshes": 123,
+  "triangles": 52676,
+  "nativeTriangles": 3286,
+  "sourceAssemblyTriangles": 3286,
+  "visualEnvelopeMm": [
+    24,
+    32.00000010728836,
+    10.200000005960465
+  ],
+  "cadEnvelopeMm": [
+    24,
+    32,
+    8
+  ],
+  "boreRays": 10,
+  "boreWalls": 20,
+  "matingBores": 16,
+  "pcbTopology": {
+    "edges": 1812,
+    "invalidEdges": 0,
+    "signedVolumeMm3": 346.639164940349
+  },
+  "plugTongueTopology": {
+    "edges": 15018,
+    "invalidEdges": 0,
+    "signedVolumeMm3": 268.7926123179472
+  },
+  "fourHeadExactReturn": "pass",
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        -1,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Physical front die-cut adhesive substrate without texture"
+    },
+    {
+      "origin": [
+        0,
+        7,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Real rear adhesive substrate on original native recessed panel"
+    },
+    {
+      "origin": [
+        0,
+        -25,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 17,
+      "purpose": "Grove cavity has recessed physical rear carrier"
+    },
+    {
+      "origin": [
+        -3,
+        -25,
+        1.25
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Grove physical contact1"
+    },
+    {
+      "origin": [
+        -1,
+        -25,
+        1.25
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Grove physical contact2"
+    },
+    {
+      "origin": [
+        1,
+        -25,
+        1.25
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Grove physical contact3"
+    },
+    {
+      "origin": [
+        3,
+        -25,
+        1.25
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Grove physical contact4"
+    },
+    {
+      "origin": [
+        -5.94,
+        25,
+        1.95
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Bare terminal socket recessed real contact1"
+    },
+    {
+      "origin": [
+        -1.98,
+        25,
+        1.95
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Bare terminal socket recessed real contact2"
+    },
+    {
+      "origin": [
+        1.98,
+        25,
+        1.95
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Bare terminal socket recessed real contact3"
+    },
+    {
+      "origin": [
+        5.94,
+        25,
+        1.95
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Bare terminal socket recessed real contact4"
+    },
+    {
+      "origin": [
+        0,
+        -4,
+        -12
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 10,
+      "purpose": "Actual central retaining recess has fixed screw"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Physical front die-cut adhesive substrate without texture",
+      "hit": "Mini CAN physical die-cut front adhesive substrate",
+      "distanceMm": 10.989999999254941
+    },
+    {
+      "purpose": "Real rear adhesive substrate on original native recessed panel",
+      "hit": "Mini CAN physical rear adhesive substrate",
+      "distanceMm": 11.155000000111759
+    },
+    {
+      "purpose": "Grove cavity has recessed physical rear carrier",
+      "hit": "Mini CAN Grove contact carrier",
+      "distanceMm": 12.200000047683714
+    },
+    {
+      "purpose": "Grove physical contact1",
+      "hit": "Mini CAN Grove contact 1",
+      "distanceMm": 10.5
+    },
+    {
+      "purpose": "Grove physical contact2",
+      "hit": "Mini CAN Grove contact 2",
+      "distanceMm": 10.5
+    },
+    {
+      "purpose": "Grove physical contact3",
+      "hit": "Mini CAN Grove contact 3",
+      "distanceMm": 10.5
+    },
+    {
+      "purpose": "Grove physical contact4",
+      "hit": "Mini CAN Grove contact 4",
+      "distanceMm": 10.5
+    },
+    {
+      "purpose": "Bare terminal socket recessed real contact1",
+      "hit": "Mini CAN fixed terminal recessed physical contact",
+      "distanceMm": 10.000000095367431
+    },
+    {
+      "purpose": "Bare terminal socket recessed real contact2",
+      "hit": "Mini CAN fixed terminal recessed physical contact",
+      "distanceMm": 10.000000095367431
+    },
+    {
+      "purpose": "Bare terminal socket recessed real contact3",
+      "hit": "Mini CAN fixed terminal recessed physical contact",
+      "distanceMm": 10.000000095367431
+    },
+    {
+      "purpose": "Bare terminal socket recessed real contact4",
+      "hit": "Mini CAN fixed terminal recessed physical contact",
+      "distanceMm": 10.000000095367431
+    },
+    {
+      "purpose": "Actual central retaining recess has fixed screw",
+      "hit": "",
+      "distanceMm": 8.1
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove",
+      "terminal"
+    ],
+    "anchors": [],
+    "controls": [],
+    "leds": [],
+    "joints": [],
+    "accessoryExport": "TerminalPlug",
+    "accessoryJoints": [
+      "screw-1",
+      "screw-2",
+      "screw-3",
+      "screw-4"
+    ],
+    "accessoryOption": "terminalPlug:true",
+    "nestedJointExample": "terminal/screw-1",
+    "LED1": "Physical concealed White LED1 package only;no confirmed exterior light path"
+  },
+  "artwork": {
+    "panels": 2,
+    "kind": "reference-redraw",
+    "configurationChecks": 4,
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "fixedSocketAndPlugFrames": "pass",
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 227
+}

@@ -1,0 +1,220 @@
+{
+  "checkedAt": "2026-10-26T12:36:20.011Z",
+  "status": "pass",
+  "scope": "Necessary local own U196 native4550-triangle assembly,open FrontSide mounting/PCB/optical bore walls,fixed90-degree1F/2F boards/four continuous metal links,actual LGA12 separated passive optical windows and black backing,Grove narrow native insert and contacts,external fixed-red material-only power-led without halo,input echo or automatic state,both artwork configurations and nested four-core independent pose/attach/detach/disposal.No browser acceptance,manufacturing fit,range/IR optical/electrical/I2C/firmware or hardware verification.",
+  "meshes": 81,
+  "triangles": 12904,
+  "nativeTriangles": 4550,
+  "cadEnvelopeMm": [
+    24,
+    24.000000953674316,
+    8
+  ],
+  "visualEnvelopeMm": [
+    24,
+    24.000000953674316,
+    8.00000009536743
+  ],
+  "boreRays": 10,
+  "boreWalls": 20,
+  "opticalWalls": 8,
+  "closureChecks": [
+    {
+      "origin": [
+        -1.22,
+        20,
+        -1.2
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 9,
+      "purpose": "Emitter aperture backed by passive actual package window"
+    },
+    {
+      "origin": [
+        0.72,
+        20,
+        -1.2
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 9,
+      "purpose": "Receiver aperture backed by passive actual package window"
+    },
+    {
+      "origin": [
+        3,
+        20,
+        -1.2
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 9,
+      "purpose": "Large native side opening backed by real black optical surround"
+    },
+    {
+      "origin": [
+        0,
+        7.7,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Real front adhesive substrate bridges native label recess"
+    },
+    {
+      "origin": [
+        0,
+        7.7,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Real rear adhesive substrate bridges native label recess"
+    },
+    {
+      "origin": [
+        7.9,
+        -9,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Native narrow Grove-side slot retains actual native insert"
+    },
+    {
+      "origin": [
+        0,
+        -25,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 20,
+      "purpose": "Grove contact mouth has real dielectric back wall"
+    },
+    {
+      "origin": [
+        0,
+        0,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Central rear screw recess has actual retaining screw"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Emitter aperture backed by passive actual package window",
+      "hit": "Mini ToF-90 passive non-emissive emitter optical window",
+      "distanceMm": 8.260000000894069
+    },
+    {
+      "purpose": "Receiver aperture backed by passive actual package window",
+      "hit": "Mini ToF-90 passive non-emissive receiver optical window",
+      "distanceMm": 8.260000000894069
+    },
+    {
+      "purpose": "Large native side opening backed by real black optical surround",
+      "hit": "Mini ToF-90 fixed black optical opening surround and deep cavity backing",
+      "distanceMm": 8.290000011920927
+    },
+    {
+      "purpose": "Real front adhesive substrate bridges native label recess",
+      "hit": "Mini ToF-90 physical front adhesive substrate bridging native print recess",
+      "distanceMm": 11.109999995231629
+    },
+    {
+      "purpose": "Real rear adhesive substrate bridges native label recess",
+      "hit": "Mini ToF-90 physical back adhesive substrate bridging native print recess",
+      "distanceMm": 11.07000000011176
+    },
+    {
+      "purpose": "Native narrow Grove-side slot retains actual native insert",
+      "hit": "Mini ToF-90 complete native Grove-side insert",
+      "distanceMm": 11.049999952316284
+    },
+    {
+      "purpose": "Grove contact mouth has real dielectric back wall",
+      "hit": "Mini ToF-90 Grove deep dielectric rear wall",
+      "distanceMm": 18.650000011920923
+    },
+    {
+      "purpose": "Central rear screw recess has actual retaining screw",
+      "hit": "",
+      "distanceMm": 11.16
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove"
+    ],
+    "grovePins": [
+      "GND",
+      "5V",
+      "SDA",
+      "SCL"
+    ],
+    "anchors": [
+      "sensor"
+    ],
+    "controls": [],
+    "leds": [
+      "power-led"
+    ],
+    "joints": [],
+    "fixedSensorDirection": [
+      0,
+      1,
+      0
+    ],
+    "fixedBoardAngleDeg": 90,
+    "indicator": {
+      "id": "power-led",
+      "color": "#ff2020",
+      "fixedColor": true,
+      "defaultOff": true,
+      "externalBrightnessOnly": true,
+      "noHalo": true,
+      "guideMaterialAndCouplingInferred": true
+    }
+  },
+  "artwork": {
+    "pngCount": 2,
+    "kind": "reference-redraw",
+    "configurationChecks": 2,
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 131
+}

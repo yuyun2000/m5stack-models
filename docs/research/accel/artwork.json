@@ -1,0 +1,71 @@
+{
+  "id": "accel",
+  "sku": "U056",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Exact-model official front ACCEL/three-axis symbol and readable rear ACCEL/ADXL345/PORT.A.I2C/SCL/SDA/5V/GND recreated in code and rasterized to final ordinary high-resolution PNGs.No product-photo crops,preview enlargement or extracted photographic pixels.",
+  "sources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/accel/accel_06.webp",
+      "sha256": "0aa2607ed25b7e2dab45fadb41d0d76a467a5222559cc95f50874ad621308a75"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/accel/accel_02.webp",
+      "sha256": "5b5f356424f53e1adfbb89f455b5c7ba1e6b9394479c8a2da50aa1496def788a"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/accel/reference-redraw-front.png",
+      "sha256": "2d6c7da1091427a71cabc588daacda9d88fbea3d0e37393bb600b6f04cd52de1",
+      "pixels": [
+        1910,
+        1310
+      ],
+      "sizeMm": [
+        19.1,
+        13.1
+      ],
+      "positionMm": [
+        0,
+        7.05,
+        3.84
+      ],
+      "face": "front",
+      "target": "Accel physical front adhesive film",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/accel/reference-redraw-back.png",
+      "sha256": "372ce5b17abaf20b949b01fa0bb5f821aac0b485003ed2fe16914f7af9ce2b0b",
+      "pixels": [
+        1600,
+        1230
+      ],
+      "sizeMm": [
+        16,
+        12.3
+      ],
+      "positionMm": [
+        0,
+        7.15,
+        -3.84
+      ],
+      "face": "back",
+      "target": "Accel physical back adhesive film",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    }
+  ],
+  "limitations": [
+    "Typeface,colors,hatch pattern,arrow curves,film dimensions and registration are reconstructed from own U056 photos;unreadable microtext omitted.",
+    "Two physical adhesive films remain with artwork:false and directly touch existing native shell recesses;no label fills a missing shell opening.",
+    "Printed axis arrows reproduce physical ink only;they do not implement orientation,gravity,acceleration or internal measurement behavior.",
+    "Only final ordinary PNGs are distributed;source photos,vectors,generators,private table,private mappings and private links are excluded."
+  ],
+  "rights": "Product names,original printed designs and trademarks retain their respective rights."
+}

@@ -48,3 +48,7 @@ The default has a bare fixed socket. `terminalPlug:true` installs the supplied a
 ## Evidence boundary
 
 Local checks cover the native triangle count and dimensions, empty axial mounting paths, FrontSide native and PCB bore walls, physical label backing and contact depth, real plug mating bores, four external screw joints and fixed frames, all four Model/GroveModule bare/plug artwork-invariance configurations, nested four-core Grove pose/peer independence, detach and resource disposal. No exhaustive browser inspection, production connector-fit test, hardware behavior or electrical validation was performed. Status remains `modeled`, with no visual acceptance claim.
+
+## 端子插舌闭合修订
+
+2026-10-26。旧2.5mm剖面经坐标偏置/倒角后，下孔缘与端面外轮廓相切，留下20条单边界。仅将插舌高改为2.9mm，保留孔下材料；新15018坐标边均成对反向、正体积，四孔轴向畅通/FrontSide内壁有效。端口、四头外驱、包络、标签和其他几何保持。原smoke/freeze为保存时快照，本次新旧SHA及局部验证见[修订回执](terminal-tongue-closure.json)。不代表实物配合公差。

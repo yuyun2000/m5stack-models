@@ -1,0 +1,48 @@
+{
+  "sku": "U113",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/07d8765bd52f32cc2705fc542ea608169a6c3c8c/Products/U113_Unit_RF433R/Structures/Unit_RF433R.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/c711d25d74bd606fb0027ed6b197226c69d682f9",
+  "commit": "07d8765bd52f32cc2705fc542ea608169a6c3c8c",
+  "gitBlob": "c711d25d74bd606fb0027ed6b197226c69d682f9",
+  "sha256": "6ef92787614d8197559fa9f711a61b7c1f49df16db5d872e591d07e845297fc7",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/07d8765bd52f32cc2705fc542ea608169a6c3c8c/LICENSE",
+  "origin": [
+    0,
+    0,
+    1.2
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 0,
+      "name": "RF433R complete native assembled front and rear shell",
+      "material": "shell",
+      "triangles": 3796
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 3796,
+  "localModification": null,
+  "notes": "Exact own U113 path-specific commit and expected Git blob verified. Component0 is the complete3796-triangle assembled front/rear shell,24×48×8mm. Components1/2 are displaced duplicate shell halves. Full assembled part retained unscaled/unmodified with one common translation;no native faces removed,patched,filled or repositioned. Product table48×24×8mm is the same envelope in vendor length/width order."
+}

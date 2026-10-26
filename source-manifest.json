@@ -16931,7 +16931,7 @@
       "runtimeFiles": [
         {
           "path": "src/units/bldc-driver/TerminalPlug.js",
-          "sha256": "a9d43874f2aed3e9cde34684f0e97b5d654ac1ef6a496dde04be965853abbd8c"
+          "sha256": "b819870a6643962b56bed7c0e0f3910303bf41566270860ac99b677d99f6b784"
         },
         {
           "path": "src/units/bldc-driver/assembly.js",
@@ -16969,6 +16969,9 @@
           "path": "src/units/bldc-driver/stickers.js",
           "sha256": "500ab55a9d18f44afca0938645e5bbf379e8a6b4cf30d296093f7fc637f64dae"
         }
+      ],
+      "geometryAmendments": [
+        "docs/research/bldc-driver/terminal-tongue-closure.json"
       ]
     },
     {
@@ -17918,7 +17921,7 @@
         },
         {
           "path": "src/units/ain4-20ma/TerminalPlug.js",
-          "sha256": "cc03075a1fe8a566b2ccbdb853fbf30ddf29779b48e0bd61d42978870113439a"
+          "sha256": "8aaa624f0af2b3975655bb0fe0dfa4f303ce8b91df7808db4ad1abaeba363008"
         },
         {
           "path": "src/units/ain4-20ma/assembly.js",
@@ -17956,6 +17959,9 @@
           "path": "src/units/ain4-20ma/stickers.js",
           "sha256": "7ca03236b73291b9dfe053b005b860ec218f27d9f214044ddb08b09d811adce1"
         }
+      ],
+      "geometryAmendments": [
+        "docs/research/ain4-20ma/terminal-tongue-closure.json"
       ]
     },
     {
@@ -18193,7 +18199,7 @@
       "runtimeFiles": [
         {
           "path": "src/units/ac-measure/TerminalPlug.js",
-          "sha256": "abee537ba4accea61e302baf294e5e841edfb79cc592a0544483f0e29215dc30"
+          "sha256": "d1065585f2009bf8800b93847444db59e40fcbc8ea14dfb306662cc94ecd9f58"
         },
         {
           "path": "src/units/ac-measure/assembly.js",
@@ -18230,6 +18236,3202 @@
         {
           "path": "src/units/ac-measure/stickers.js",
           "sha256": "2e71f5d5f6ebe8b558281faf024f6838f1138930d5421c6294d1cce7fa2c8e90"
+        }
+      ],
+      "geometryAmendments": [
+        "docs/research/ac-measure/terminal-tongue-closure.json"
+      ]
+    },
+    {
+      "id": "uwb",
+      "sku": "U100",
+      "officialDocs": "https://docs.m5stack.com/en/unit/uwb",
+      "retrievedAt": "2026-10-26",
+      "officialMCP": {
+        "query": "Unit UWB U100 dimensions antenna DWM1000 hardware buttons LED",
+        "rawResponseDistributed": false,
+        "result": "Exact U100:48×24×8mm,Ai-Thinker BU01 based on DW1000,STM32F103C8T6,blue HY2.0-4P PORT.C UART.No exterior control,light,external antenna or moving element confirmed."
+      },
+      "reference": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_01.webp",
+        "sha256": "a207008bd6f4aebe2fdd44abd69dd2a64adb03b399f54385c4a48f48f6d9bbb5"
+      },
+      "structures": [
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3/Products/U100_Unit_UWB/Structures/Unit_UWB.stl",
+          "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/332daf3f2fcbb6dd98e625e05a3c591d24565c9f",
+          "commit": "c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3",
+          "gitBlob": "332daf3f2fcbb6dd98e625e05a3c591d24565c9f",
+          "sha256": "97ac73e3be6eb5c5aa36cc6aa8307428465f502851e8aef2c4b1a938c8bb5caa",
+          "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+        }
+      ],
+      "referenceSources": [
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_01.webp",
+          "sha256": "a207008bd6f4aebe2fdd44abd69dd2a64adb03b399f54385c4a48f48f6d9bbb5"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_02.webp",
+          "sha256": "abe3693e6ba669c7236b8a9c685b6924c0d542daa5979e65ea9c6ecede7e0e3e"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_03.webp",
+          "sha256": "316b847640911040db95926cd498dfd00271cde72781eb665ed2ee7488ed14fe"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_04.webp",
+          "sha256": "900e4cb21d7ec2cad642537875491bb896b0e16402979ae16cb8257a68b7fc29"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_05.webp",
+          "sha256": "ee99420a6447d2c819461cddc1905ac36c19a5b96f56d2c0bec82488a2aec40a"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_06.webp",
+          "sha256": "9137e3a9ba0de5c429b9cec778ca655fb701bec07bb1884ef79453013094ccd1"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_07.webp",
+          "sha256": "feac703daf65bf22ecfe21964816bceb0dcac8232bb92c3f8202c99591f3de52"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_08.webp",
+          "sha256": "706f3f6368a049e4cf55819b9818befd1cacf6cf5a77e6316e0b6437aa8e098f"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_09.webp",
+          "sha256": "879d034047783f2bfd11e7c8854063a5fcaf6cbb4a5dbafac5b1748589884326"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/uwb/model%20size.png",
+          "sha256": "6235e927705e96fb499300eabe21b7f30aacb49d9d69529bf6c93a64f6c59fb1"
+        }
+      ],
+      "selectedAssembly": {
+        "originalAssemblyTriangles": 3796,
+        "excludedComponents": [
+          1,
+          2
+        ],
+        "origin": [
+          0,
+          0,
+          1.2
+        ],
+        "axes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "localModification": null,
+        "notes": "Complete native assembled component0 retained at scale1 with one Z translation;the two displaced duplicate front/rear shell components are excluded.No shell triangle removed,patched or filled.Physical PCB,BU01 module including its integrated copper antenna,STM32,regulator,crystals,Grove,retaining screw and adhesive substrates reconstructed from own U100 references;concealed placement is appearance reconstruction."
+      },
+      "dimensions": {
+        "nominalMm": [
+          24,
+          48,
+          8
+        ],
+        "vendorDimensionOrderMm": [
+          48,
+          24,
+          8
+        ],
+        "cadEnvelopeMm": [
+          24,
+          48,
+          7.999999761581421
+        ],
+        "visualEnvelopeMm": [
+          24,
+          48,
+          7.999999761581421
+        ],
+        "mountingHolesMm": [
+          [
+            -8,
+            -12
+          ],
+          [
+            8,
+            -12
+          ]
+        ],
+        "mountingHoleDiameterMm": 5,
+        "grovePositionMm": [
+          0,
+          -23.7,
+          1.2
+        ],
+        "dimensionEvidence": "Own U100 dimension drawing and complete assembled native component0 agree on24×48×8mm,Ø5 bores,16mm pitch and12mm bore datum from connector end."
+      },
+      "artwork": {
+        "kind": "source-vector-raster",
+        "pngCount": 2,
+        "sourceDetails": "docs/research/uwb/artwork.json",
+        "originalsDistributed": false
+      },
+      "scope": "Complete native assembled enclosure,actual black PCB/BU01 integrated copper antenna/STM32/DW1000 envelope/regulator/crystal/packages,Grove and retaining screw.Physical labels with separate PNG print layers.No button,LED,joint or artificial sensor state;external cable/assembly pose only.",
+      "inferred": [
+        "Carrier and module PCB planes,concealed package heights and installation positions",
+        "DW1000 concealed package envelope,not verified package placement from board imagery",
+        "Copper antenna thickness/edge radii,side pad profiles and connector mating geometry",
+        "Adhesive carrier thickness and label registration"
+      ],
+      "notes": [
+        "All3796 native assembled triangles retained unscaled/unmodified;two displaced duplicate shells excluded.",
+        "Integrated antenna is fixed planar copper inside its own native shell,no SMA/whip/cable or visible RF effect.",
+        "No exterior LED optical path or control established;none registered.",
+        "Artwork:false retains all physical geometry attributes,index and world transforms.",
+        "Two exact standard physical product-label PNGs only;no product photographs cropped.",
+        "Schematic images show controller/carrier network pages without fully expanded RF package layout;hidden geometry does not assert circuit correctness."
+      ],
+      "runtimeFiles": [
+        {
+          "path": "src/units/uwb/assembly.js",
+          "sha256": "7c6ab9e89c8d5bab69e3862dd9c6b9a7eb6a98ed14b63ee0d3efbf711cf7413c"
+        },
+        {
+          "path": "src/units/uwb/cad-map.json",
+          "sha256": "0fbd13e670d84d18d48fc419d7cd7a4c81543c664bac2788e021a65cb82f5e9d"
+        },
+        {
+          "path": "src/units/uwb/connectors.js",
+          "sha256": "1a201742607374a87ab6e2d383900bb548e9a5a48dea3383f4bb63429ad1449b"
+        },
+        {
+          "path": "src/units/uwb/dimensions.js",
+          "sha256": "8b692fe4da65fb00e0bdb84a47d91635cb37cef48aaaf5abb0689c33c44d3549"
+        },
+        {
+          "path": "src/units/uwb/geometry-data.js",
+          "sha256": "8150930c8cd338954b0f0d5b10a527c5db2a6dca9393ec61698562b921a30a69"
+        },
+        {
+          "path": "src/units/uwb/index.js",
+          "sha256": "f84c4cf3d13a8bd9090219b06dace259a3de900009349c47ef308261a1f5e047"
+        },
+        {
+          "path": "src/units/uwb/source-vector-back.png",
+          "sha256": "7b083871f4c838b70e4fc2be96d48690ff1ac928d2fcee10a0473fc6d54871df"
+        },
+        {
+          "path": "src/units/uwb/source-vector-front.png",
+          "sha256": "4b3d0dd0f375eb4cb70117549056818d7d41ad6db1607d3900d22a47eee9f904"
+        },
+        {
+          "path": "src/units/uwb/stickers.js",
+          "sha256": "ebe77de8dea457bee1fd6894f6d0970859161457891b1891be248d104db483a0"
+        }
+      ]
+    },
+    {
+      "id": "tmos-pir",
+      "sku": "U185",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_TMOS_PIR",
+      "retrievedAt": "2026-10-26",
+      "officialMCP": {
+        "query": "Unit TMOS PIR U185 dimensions hardware STHS34PF80 LED button optical",
+        "responseSha256": "7187c134c31e5f075dc634185a1dabe7145128c7808ecaeae4bc9bee3a66b205",
+        "rawResponseDistributed": false,
+        "result": "Exact U185 STHS34PF80TR,XC6228D332VR-G,SRV05-4,two populated I2C pull-up resistors,five capacitors,red HY2.0-4P.No user mechanism or indicator documented.R3 is NC.",
+        "chip": {
+          "query": "STHS34PF80 LGA package dimensions optical filter 3.2 4.2 metal cap",
+          "responseSha256": "11881c5b0eea002ff8a43d569aff3704c2739e269cb30e017f4a3b43e7dadc6a",
+          "result": "ST DS13916 Rev2:3.2×4.2×1.455mm maximum OLGA-10L,integrated silicon IR filter;direct ST PDF request timed out,package evidence is official chip knowledge_search text.",
+          "rawResponseDistributed": false
+        }
+      },
+      "reference": {
+        "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-TMOS%20PIR/6.webp",
+        "sha256": "2513aaf37955adfa0b8187f31e5746ee17cf36b01bff7ea722db40c22c4d9090"
+      },
+      "structures": [
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/d3ae864f161167af3f9698214012e1d135adc357/Products/U185_Unit_TMOS_PIR/Structures/Unit_TMOS_PIR.stl",
+          "commit": "d3ae864f161167af3f9698214012e1d135adc357",
+          "gitBlob": "7dac210351e336d3f43b9c2f3229d01f26b0c895",
+          "sha256": "8d6c5ab3715b9f86a2336716e05883988c2aea0f2df1b625b635aa4885d05b43",
+          "license": "MIT; preserve licenses/M5_Hardware-MIT.txt"
+        }
+      ],
+      "referenceSources": [
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-TMOS%20PIR/4.webp",
+          "sha256": "200a742d83304270c1b257cd83226be31ddae759854934146696fbaeb8814f76"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-TMOS%20PIR/6.webp",
+          "sha256": "2513aaf37955adfa0b8187f31e5746ee17cf36b01bff7ea722db40c22c4d9090"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-TMOS%20PIR/10.webp",
+          "sha256": "8b1833130906fe69ecdfb9ec1d329a0bf836581b05028b9bfc820df5b2b85724"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-TMOS%20PIR/5.webp",
+          "sha256": "c7fdfb1e7f647fcabfad294ccaec562c2c3c589becc355a0f3590b787ed67eb1"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-TMOS%20PIR/7.webp",
+          "sha256": "42dc08278819f01ef09e8d521cec6b3ada0c84a90985ef663e1744a0d1d2a53c"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-TMOS%20PIR/8.webp",
+          "sha256": "1313c09619517050d231afac868f788edbc7c3908d00556ddb027e1fb1b80ee4"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-TMOS%20PIR/img-296f83d1-ddc1-473e-9542-c157eb6c5b95.png",
+          "sha256": "31584bc04b292923310ffc64c6e51c2c3c5cb07b81eb1694eb047f63121761b5"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-TMOS%20PIR/%E5%B0%BA%E5%AF%B8%E5%9B%BE.png",
+          "sha256": "f8ed12e8cefedb13f50748d87afa45adb04e8466b9574920b0b8d2a7f00fbb8c"
+        }
+      ],
+      "manufacturerPackageReference": {
+        "url": "https://www.st.com/resource/en/datasheet/sths34pf80.pdf",
+        "evidence": "DS13916 Rev2 package dimensions and silicon filter confirmed via official M5Stack chip knowledge_search;direct PDF content not retrieved"
+      },
+      "selectedAssembly": {
+        "components": [
+          0
+        ],
+        "originalAssemblyTriangles": 3490,
+        "outputTriangles": 3490,
+        "excludedComponents": [
+          1,
+          2
+        ],
+        "origin": [
+          441.2688293457031,
+          269.2234802246094,
+          2.000001013278961
+        ],
+        "axes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "scale": 1,
+        "localModification": null,
+        "notes": "All3490 native assembled front/rear triangles retained at scale1 under one common translation only. Components1/2 are displaced duplicate rear/front shells. Front optical window, mounting bores, Grove cutout, rear label recess and M5 relief remain unchanged. PCB, STHS34PF80 LGA package and optical filter/internal backing, XC6228 regulator and passive population, Grove interior and fastener installation are visual reconstruction. Official table thickness5.2mm conflicts with own dimensional drawing and STL8mm; original shell remains scale1."
+      },
+      "dimensions": {
+        "nominalMm": [
+          24,
+          32,
+          8
+        ],
+        "vendorDimensionOrderMm": [
+          32,
+          24,
+          5.2
+        ],
+        "drawingDimensionOrderMm": [
+          32,
+          24,
+          8
+        ],
+        "cadEnvelopeMm": [
+          24,
+          32,
+          8
+        ],
+        "visualEnvelopeMm": [
+          24,
+          32,
+          8.00000009536743
+        ],
+        "mountingHolesMm": [
+          [
+            -8,
+            -4
+          ],
+          [
+            8,
+            -4
+          ]
+        ],
+        "mountingHoleDiameterMm": 5,
+        "opticalWindowMm": [
+          12,
+          6
+        ],
+        "sensorPackageMm": [
+          4.2,
+          3.2,
+          1.455
+        ],
+        "dimensionEvidence": "Exact U185 dimensional drawing and native shell agree24×32×8mm,16mm mounting pitch andØ5mm bores.Table5.2mm conflicts;own drawing uses5.2mm for connector-side height. Gross optical-window capsule inferred from native contours;filter subdimensions/placement are photo reconstruction.",
+        "conflict": {
+          "reportedTableMm": [
+            32,
+            24,
+            5.2
+          ],
+          "nativeAndDrawingMm": [
+            32,
+            24,
+            8
+          ],
+          "feedbackId": "052dc71fcd6b48e5a17651bb4f438896",
+          "decision": "Keep native complete shell at scale1;5.2mm in own drawing spans connector height,not overall8mm thickness. No production-fit claim."
+        }
+      },
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "sourceDetails": "docs/research/tmos-pir/artwork.json",
+        "originalsDistributed": false
+      },
+      "scope": "Complete native shell,dark PCB,physical layered non-emissive STHS34PF80 organic LGA package/silicon filter/lid aperture/internal support,XC6228/SRV05-4/passives,red Grove,fixed fastener and passive visual anchor only.No presence,motion,temperature,IR ray/visible emission/cone,register,I2C,electrical or firmware simulation.",
+      "inferred": [
+        "PCB outline/installed plane and concealed population placement",
+        "Package lid/rim/filter subdimensions,internal support and underside land rendering",
+        "Grove internals/contacts,mating dimensions and fixed fastener installation",
+        "Typography,colors,small label pictogram and print registration"
+      ],
+      "notes": [
+        "All3490 assembled native triangles retained at scale1 with one common translation only. Displaced duplicates excluded.",
+        "Integrated filter is physical non-emissive silicon appearance;no Fresnel hemisphere,glowing IR or detection visualization.",
+        "No LED,button or joint is registered. Sensor is passive and rejects numeric/firmware commands.",
+        "Model and GroveModule artwork:false retain all physical geometry attributes,index and matrixWorld.",
+        "Two final reference-redraw PNGs only;no raw CAD,photograph crop,private vector,generator or intermediate distributed."
+      ],
+      "feedback": {
+        "id": "052dc71fcd6b48e5a17651bb4f438896",
+        "status": "accepted",
+        "category": "incorrect_information",
+        "topic": "Official table5.2mm versus own dimensional drawing/native shell8mm overall thickness"
+      },
+      "runtimeFiles": [
+        {
+          "path": "src/units/tmos-pir/assembly.js",
+          "sha256": "2f8911584146dedae61c5e1fbc0a03494c57fe64cbe833c98fda546f37b3d785"
+        },
+        {
+          "path": "src/units/tmos-pir/cad-map.json",
+          "sha256": "b7827ccc281439dd00e21c08c2175746276c9e5e09314b63886c874db9a4cbfe"
+        },
+        {
+          "path": "src/units/tmos-pir/dimensions.js",
+          "sha256": "dfb689c58cddd6faf83840447a7252def2727ce3b1f931c9c0e5381ef8b594bd"
+        },
+        {
+          "path": "src/units/tmos-pir/geometry-data.js",
+          "sha256": "4ceed75f0b51add219a06cc3a7515f9af38de16766c0bb1a9549bc0fd7248072"
+        },
+        {
+          "path": "src/units/tmos-pir/index.js",
+          "sha256": "a4f0c4265f5f48fa2f1a416c7cf93932dbb4f91759ff74f8df98fc11910c02de"
+        },
+        {
+          "path": "src/units/tmos-pir/reference-redraw-back.png",
+          "sha256": "27db9848a3017b5d5e45318fb2a56ea4b311c013b04f614e256a9c027bab1dfc"
+        },
+        {
+          "path": "src/units/tmos-pir/reference-redraw-front.png",
+          "sha256": "beeb836e17ebaf46206ba4196512c954f41f79107eb4660c7ee87342f308627e"
+        },
+        {
+          "path": "src/units/tmos-pir/stickers.js",
+          "sha256": "72065ae1055acb9d57e114205d4eb58bc7137b47e1786b904400bac012c097f6"
+        }
+      ]
+    },
+    {
+      "id": "mini-tof-90",
+      "sku": "U196",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_Mini_ToF-90",
+      "retrievedAt": "2026-10-26",
+      "officialMCP": {
+        "queries": [
+          "Unit Mini ToF-90 U196 原理图 90 degree PCB VL53L0CXV0DH/1 红灯 Grove 尺寸",
+          "Unit Mini ToF-90 U196 产品尺寸 包装内容 描述"
+        ],
+        "rawResponseDistributed": false,
+        "result": "Exact U19624×24×8mm;1F Grove/ME6206/D1 red and2F ToF/four-pin links.Official photo and dimension drawing confirm fixed90-degree optical package faces opposite Grove.ST Table17 resolves VL53L0CXV0DH/1 ordering code to product VL53L0X family."
+      },
+      "reference": {
+        "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1143/U196_02.webp",
+        "sha256": "d86eabdc7ba065656d4fbca0a67c80993df389080e24b23fd38462a354e36bd3"
+      },
+      "structures": [
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/d3ae864f161167af3f9698214012e1d135adc357/Products/U196_Unit_Mini_ToF-90%C2%B0/Structures/Unit_Mini_ToF-90%C2%B0.stl",
+          "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/5cabc9b77493bde97465f65f7e462099be24e023",
+          "commit": "d3ae864f161167af3f9698214012e1d135adc357",
+          "gitBlob": "5cabc9b77493bde97465f65f7e462099be24e023",
+          "sha256": "17cb6c10397b1af3f112471b15715235da872a8596736dc5dc5d91f93a86e77f",
+          "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+        }
+      ],
+      "referenceSources": [
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/d3ae864f161167af3f9698214012e1d135adc357/Products/U196_Unit_Mini_ToF-90%C2%B0/Structures/Unit_Mini_ToF-90%C2%B0.stl",
+          "sha256": "17cb6c10397b1af3f112471b15715235da872a8596736dc5dc5d91f93a86e77f"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1143/U196_01.webp",
+          "sha256": "37fe306c2d8aee3b5f249b8f1b538645de9f9b98e88884c228b3a9de18aeee0a"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1143/U196_02.webp",
+          "sha256": "d86eabdc7ba065656d4fbca0a67c80993df389080e24b23fd38462a354e36bd3"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1143/U196_03.webp",
+          "sha256": "2a6f75c781d42398f6058809a90df4066623a960aabb8336fa2a91a90c6b9ad8"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1143/U196_04.webp",
+          "sha256": "ebebc6ff51e28e4b99d3ae9f5bec386163a62438a0bf090689178f7f9fb4967c"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1143/U196_05.webp",
+          "sha256": "8826aaf8bce896fff1c96e8faafac533cc41a025d73cebffc12ff5d8534c62c5"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1143/U196_06.webp",
+          "sha256": "1f468c5346b440fc5b14bbd60486907bcc05f98c2fc48b98d46966ec80c60e3d"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1143/U196_07.webp",
+          "sha256": "e90257c20434bf346a338a135e1264d47002c6309bfcf2f6fd3229368593ac75"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1143/U196_08.webp",
+          "sha256": "5d0025aa3a2b96ac846e5c6b300cadc6b2d784d62e84cdd188a2e40188d6c73d"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1143/U196_09.webp",
+          "sha256": "f0502648b6e45abdcc38d42175579b6cbfda33392e311181c9cf55dd4f7474fc"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1143/U196_10.webp",
+          "sha256": "d35d185595b495920aacffbf0a9745c42ee0a357504316a01b3ad9ddb2a4d9f3"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1143/U196_11.webp",
+          "sha256": "f0502648b6e45abdcc38d42175579b6cbfda33392e311181c9cf55dd4f7474fc"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1143/U196_size.png",
+          "sha256": "74c8ab686aa7b57cd266b09a87cb566202f072269043e24ac0bb37835e4094ca"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1143/U196_SCH.png",
+          "sha256": "82039681f5a55c96648ce3c93b12f23b4628c2ce1c70ae6e55be4f3f0f3029ea"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/hat/VL53L0X_en.pdf",
+          "sha256": "371ed1aba742be3f4d035e0f9b9c4d6fff0b694b10fc05d137b5bc1728f10e4d"
+        }
+      ],
+      "selectedAssembly": {
+        "components": [
+          1,
+          2,
+          4
+        ],
+        "originalAssemblyTriangles": 4550,
+        "outputTriangles": 4550,
+        "excludedComponents": [
+          0,
+          3,
+          5
+        ],
+        "origin": [
+          89.7682876586914,
+          10.013,
+          -2.8
+        ],
+        "axes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "scale": 1,
+        "localModification": null,
+        "notes": "Own U196 exact Unicode degree-sign path verified at its path-specific commit and expected git blob. Complete native assembled rear1/front2/Grove-side insert4 retained at scale1 with one shared translation. Displaced duplicate components0/3/5 excluded. No native triangles cut,filled,patched or rearranged. The separate insert physically closes the narrow Grove-side slot;transparent light-guide material and D1 coupling are inferred from geometry/schematic rather than manufacturing material data."
+      },
+      "dimensions": {
+        "nominalMm": [
+          24,
+          24,
+          8
+        ],
+        "vendorDimensionOrderMm": [
+          24,
+          24,
+          8
+        ],
+        "cadEnvelopeMm": [
+          24,
+          24.000000953674316,
+          8
+        ],
+        "visualEnvelopeMm": [
+          24,
+          24.000000953674316,
+          8.00000009536743
+        ],
+        "mountingHolesMm": [
+          [
+            -8,
+            0
+          ],
+          [
+            8,
+            0
+          ]
+        ],
+        "mountingHoleDiameterMm": 4.85,
+        "grovePositionMm": [
+          0,
+          -11.8,
+          1.4
+        ],
+        "sensorPackageMm": [
+          4.4,
+          2.4,
+          1
+        ],
+        "sensorOutward": [
+          0,
+          1,
+          0
+        ],
+        "boardAngleDeg": 90,
+        "dimensionEvidence": "Own official U196 dimension drawing/native assembly and ST optical LGA12 outline;coarse native mounting facets remain unmodified."
+      },
+      "partNameResolution": {
+        "source": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/hat/VL53L0X_en.pdf",
+        "document": "ST DocID029104 Rev1",
+        "page": 37,
+        "table": 17,
+        "conclusion": "VL53L0CXV0DH/1 is listed as the VL53L0X sales type.No schematic/product contradiction inferred from different naming."
+      },
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "sourceDetails": "docs/research/mini-tof-90/artwork.json",
+        "originalsDistributed": false
+      },
+      "scope": "Full native assembled shells and insert;fixed90-degree dual PCBs and four-pin linkage;real passive LGA12 separated optical windows and backing;Grove and retaining screw;physical adhesive substrates;external fixed-red native-insert material brightness only.No optical beam,cone,range,tilt,I2C,electrical,power or firmware simulation.",
+      "inferred": [
+        "PCB outlines,planes and concealed regulator/passive locations",
+        "Four-pin board-link pitch/dielectric carrier and installed clearance",
+        "Optical baffle aperture positions/dimensions and internal window detail",
+        "Matte optical surround/Grove contacts and cavity details",
+        "Native Grove-side insert guide material and D1 coupling;no extra window or halo",
+        "Adhesive film thickness and print registration"
+      ],
+      "notes": [
+        "All4550 native assembled triangles retained unscaled/unmodified;only displaced duplicates excluded.",
+        "Sensor2F board is fixed perpendicular to1F;no joint or tilt API.",
+        "Own D1 red documented;power-led material-only visualization defaultoff,guide coupling inferred.",
+        "VL53L0CXV0DH/1 official ST ordering name resolves family name difference;no false conflict feedback.",
+        "All physical geometry attributes,index and matrixWorld match artwork:false for both Model and GroveModule.",
+        "Two final ordinary reference-redraw PNGs,no private original/vector/crop distributed."
+      ],
+      "runtimeFiles": [
+        {
+          "path": "src/units/mini-tof-90/assembly.js",
+          "sha256": "1f5d6638607c81ead191f7c26dd735f0353797913f189bbe8d6a528ab7a3e4c6"
+        },
+        {
+          "path": "src/units/mini-tof-90/cad-map.json",
+          "sha256": "1cc4c74932e7d9e6e891ce33d4f8be5b47f86e0597d61dd4ffd0ffef73979d5b"
+        },
+        {
+          "path": "src/units/mini-tof-90/dimensions.js",
+          "sha256": "8d4856fb24100b8360e1f314f24d52459d0d6a207935303cea61a0143965a158"
+        },
+        {
+          "path": "src/units/mini-tof-90/geometry-data.js",
+          "sha256": "50304ea656134c0eb7bf90940eddd315dd44b6988b97c25c99da6196d24ad859"
+        },
+        {
+          "path": "src/units/mini-tof-90/index.js",
+          "sha256": "59b1add8202cc0574aa766bbca55b8148448df49d9be047ef264432ffea204ca"
+        },
+        {
+          "path": "src/units/mini-tof-90/reference-redraw-back.png",
+          "sha256": "6465a0039e9dbab22c1de18e8ca8d22276b6b1786d0a6f0ce8ddbb7c3eb9a01e"
+        },
+        {
+          "path": "src/units/mini-tof-90/reference-redraw-front.png",
+          "sha256": "9c52025f331eded0f49c1f26828ed55290615243179fd62377ef603049720a60"
+        },
+        {
+          "path": "src/units/mini-tof-90/stickers.js",
+          "sha256": "4949516475ba464a75669822a20909d267103eb5e570b669271994e9a9f60141"
+        }
+      ]
+    },
+    {
+      "id": "roller485-lite",
+      "sku": "U182-Lite",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit-Roller485%20Lite",
+      "retrievedAt": "2026-10-26",
+      "officialMCP": {
+        "query": "Unit Roller485 Lite U182-Lite 产品 尺寸 外观 电机 结构图 Grove",
+        "rawResponseDistributed": false,
+        "rawResponseSha256": "43d092617ceb510d8053bc5ea559af12b5f3b661636ffa94a2441b17f8d67eb2",
+        "result": "Exact U182-Lite:40mm nominal cube,D3504/STM32G431/DRV8311/TLI5012,64x48 OLED,2RGB,A button,fixed I2C Grove and HT3.96.No slip-ring expansion Grove or rotating top LEGO enclosure."
+      },
+      "reference": {
+        "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485%20Lite/4.webp",
+        "sha256": "4710e90e440fb70f8cb6080b783a1b4edc3dfda7ee6932672103c90594a1f8cf"
+      },
+      "structures": [
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/2c92995fd54a04e59d123695881355a274d678ca/Products/U182-Lite_Unit_Roller485-Lite/Structures/Unit_Roller485-Lite.stl",
+          "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/6484387244c7ec1418910a03f286d4c4c26bed2a",
+          "commit": "2c92995fd54a04e59d123695881355a274d678ca",
+          "gitBlob": "6484387244c7ec1418910a03f286d4c4c26bed2a",
+          "sha256": "fcbfaa9800feed24908a74c915d4f3b8669ae00430231f7aace27be10f587185",
+          "license": "MIT;preserve licenses/M5_Hardware-MIT.txt",
+          "licenseUrl": "https://raw.githubusercontent.com/m5stack/M5_Hardware/2c92995fd54a04e59d123695881355a274d678ca/LICENSE",
+          "licenseSha256": "44611d917bece311f5c8eeffce83d8bf9e9ca3f815d262f694ff4a7996af50ea"
+        }
+      ],
+      "referenceSources": [
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485%20Lite/4.webp",
+          "sha256": "4710e90e440fb70f8cb6080b783a1b4edc3dfda7ee6932672103c90594a1f8cf",
+          "use": "Exact U182-Lite official photograph reference only;not distributed"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485%20Lite/5.webp",
+          "sha256": "c3d6b61a5fbdd03ee36220246783fc56ce6d3d416d5cd3ff782051d23626aa72",
+          "use": "Exact U182-Lite official photograph reference only;not distributed"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485%20Lite/6.webp",
+          "sha256": "d864d1fc9d5b7159fe8463ee1ba37db8473d18222e808b2d782019d73c305c63",
+          "use": "Exact U182-Lite official photograph reference only;not distributed"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485%20Lite/7.webp",
+          "sha256": "39a5c88455dd432a40b716f160dea43e1973b373fb6612edb3a71e487db4ed7b",
+          "use": "Exact U182-Lite official photograph reference only;not distributed"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485%20Lite/8.webp",
+          "sha256": "96807c5d2d08b9aff7bc909bd7cd2c8baec183817f397a7814dc2c6bb110a154",
+          "use": "Exact U182-Lite official photograph reference only;not distributed"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485%20Lite/9.webp",
+          "sha256": "dd6f6cf673d9fce8b51d48b4adcba64f488cd6b0cba4e7b829b4a7d227842e67",
+          "use": "Exact U182-Lite official photograph reference only;not distributed"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485%20Lite/10.webp",
+          "sha256": "c2ddb19d25fe493335f3faf52042a35013b3ecf95482ca547fa04edcf5a3df88",
+          "use": "Exact U182-Lite official photograph reference only;not distributed"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485%20Lite/11.webp",
+          "sha256": "fcb3d56cc899082a8720405c17b82071a03bd4a02d3c1f257c3a2584a522e34b",
+          "use": "Exact U182-Lite official photograph reference only;not distributed"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485%20Lite/12.webp",
+          "sha256": "27db9f8c16a6bad654612012b2cadc68090935f1e228a35806c913d3fe716bec",
+          "use": "Exact U182-Lite official photograph reference only;not distributed"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485%20Lite/13.webp",
+          "sha256": "8d72a41a6b455948238886924c96cf17ea9a75c285cb43df2afb003c45611f4d",
+          "use": "Exact U182-Lite official photograph reference only;not distributed"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485%20Lite/14.webp",
+          "sha256": "7eec4eef703868182c0fed1f33c0db8acaf85ab0fa6a22531ee3aeda04ba6090",
+          "use": "Exact U182-Lite official photograph reference only;not distributed"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485%20Lite/15.webp",
+          "sha256": "7a184eebcd1721a7f3f43f54ae7fc269c46bf1ccc4c996a86e6f30aff2fd0f74",
+          "use": "Exact U182-Lite official photograph reference only;not distributed"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485%20Lite/16.webp",
+          "sha256": "57bf7521f6614439a48b1959fa39c18ab3bb5dce96f7d3c8eb7b3eba4913cf91",
+          "use": "Exact U182-Lite official photograph reference only;not distributed"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/%E5%B0%BA%E5%AF%B8%E5%9B%BE2.jpg",
+          "sha256": "b9410bc2bcbb79cf438222af9b2138fb11db22e055ac36b25be42585793095a9",
+          "use": "Own product page linked source;motor/detail dimension and circuit evidence only,not a complete Lite assembly datum"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+          "sha256": "443997d6d9d6a1d303edfb7892531c9c838962f692c3085604b63a9115d34873",
+          "use": "Own product page linked source;motor/detail dimension and circuit evidence only,not a complete Lite assembly datum"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485/%E5%B0%BA%E5%AF%B8%E5%9B%BE3.jpg",
+          "sha256": "7c3cabf5f5de0fd772d98d51b86b09f51022ee27d2350fd31a6a1eb26cd794e7",
+          "use": "Own product page linked source;motor/detail dimension and circuit evidence only,not a complete Lite assembly datum"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/776/modelsize_01.png",
+          "sha256": "e3f8ee409fc06d487e4ae316b9270aeb7252c9c15a32a3a341f1d9552c5a22d6",
+          "use": "Own product page linked source;motor/detail dimension and circuit evidence only,not a complete Lite assembly datum"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/776/sch_Unit-Roller485_V1.0_page_01.png",
+          "sha256": "41bebec48ae362d7309b836adf0ce660991d74780b2363e1a4abc7f78e83125a",
+          "use": "Own product page linked source;motor/detail dimension and circuit evidence only,not a complete Lite assembly datum"
+        }
+      ],
+      "selectedAssembly": {
+        "components": [
+          0,
+          2,
+          5
+        ],
+        "originalAssemblyTriangles": 8730,
+        "excludedComponents": [
+          1,
+          3,
+          4
+        ],
+        "origin": [
+          -1.0872135162353516,
+          0,
+          -22.25
+        ],
+        "axes": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "scale": 1,
+        "localModification": null,
+        "notes": "All own-path assembled fixed shells and diffuser triangles retained.Common rigid transform only.Other components are displaced duplicates.The own U182-Lite fixed shell blob is also shared with U188-Lite;actual U182-Lite HT3.96 hardware rebuilt independently,no CAN sockets or standard rotating top grafted."
+      },
+      "dimensions": {
+        "nominalMm": [
+          40,
+          40,
+          40
+        ],
+        "vendorDimensionOrderMm": [
+          40,
+          40,
+          40
+        ],
+        "cadEnvelopeMm": [
+          40,
+          15.200000762939453,
+          40.024444580078125
+        ],
+        "visualEnvelopeMm": [
+          41,
+          30.000000000000004,
+          41
+        ],
+        "motorMm": {
+          "diameter": 41,
+          "height": 14.8
+        },
+        "motorMountingInferred": true,
+        "fixedPowerMatingPositionMm": [
+          19.8,
+          -13.2,
+          0
+        ],
+        "feedbackId": "b6a2e2bf5b174a788c7be66dab54c907",
+        "caution": "Nominal40mm does not supply the Lite-specific assembled axial datum.Current30mm height is source-derived appearance reconstruction,not measured manufacturing fit."
+      },
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 3,
+        "sourceDetails": "docs/research/roller485-lite/artwork.json",
+        "originalsDistributed": false
+      },
+      "scope": "Complete fixed enclosure and actual visible openings backed by physical circuits/connectors/OLED/adhesive carriers.Continuous external rotor angle/RPM,native A tongue press/release/cancel,independent RGB and64x48 white framebuffer,optional removable HT3.96 plug and screw-head visual angles.Four-core Grove pose/cable and nested attach/detach.No internal functional simulation.",
+      "inferred": [
+        "Motor axial seating and neutral phase,bearing/stator/magnet envelopes;no production datum or mechanical load claim.",
+        "Concealed PCB outline,package population/heights and placement,48 MCU leads and switch geometry.",
+        "Socket/plug cavities,contacts,clamps,screws and mating clearance are own-photo appearance estimates,not connector manufacturing CAD.",
+        "OLED active dimensions derive0.66inch and64:48 aspect,physical glass/module depth inferred.",
+        "Native tongue travel0.25mm and local flex weighting are visual estimates.",
+        "Adhesive film thickness,typeface,colors and registration reconstructed from legible own photos."
+      ],
+      "notes": [
+        "No slip-ring/top enclosure/top Grove/top indicator or synthetic sensor anchor.",
+        "Supplied turntable/flange/bracket lack exact geometry/fit datum and are not mounted or mechanically simulated.",
+        "Only final ordinary PNGs and safe derived geometry/code distributed;no private data,raw photos,vector source or generators.",
+        "M5Stack accepted variant assembly-dimension feedback b6a2e2bf5b174a788c7be66dab54c907.",
+        "No exhaustive browser,hardware,FOC,firmware,RS485/I2C,electrical,load or manufacturing validation."
+      ],
+      "runtimeFiles": [
+        {
+          "path": "src/units/roller485-lite/TerminalPlug.js",
+          "sha256": "5a99089500a9afbb760f9223746602638b9d5d5ed0e9979f92df621023dc84e6"
+        },
+        {
+          "path": "src/units/roller485-lite/cad-map.json",
+          "sha256": "9682fa1cbc52c098450ff83c276c43b6d24fd98dc15ca5a02f2e87a6cf01bbf1"
+        },
+        {
+          "path": "src/units/roller485-lite/dimensions.js",
+          "sha256": "4d62edd4cae23fd9c47581636d6973e0ee057cb8884594a37140e84c693636ea"
+        },
+        {
+          "path": "src/units/roller485-lite/geometry-data.js",
+          "sha256": "f44194d7237aff720f1638eff51e598386f9025917c96d59feae7c72eee29eec"
+        },
+        {
+          "path": "src/units/roller485-lite/index.js",
+          "sha256": "c0159dc978940d6b244fd535eadf3d48f700ee6c883e773eedb68936447bbfb7"
+        },
+        {
+          "path": "src/units/roller485-lite/reference-redraw-debug.png",
+          "sha256": "fc33203e371c0d60b00320aedd13fab497a349dfc90e76ec95b8d7793044ea2d"
+        },
+        {
+          "path": "src/units/roller485-lite/reference-redraw-port-a.png",
+          "sha256": "9087ece0bc43592d85288df0228857cbaa0ef8a5ec5983a767e91fd6fbb11a82"
+        },
+        {
+          "path": "src/units/roller485-lite/reference-redraw-pwr485.png",
+          "sha256": "0df2dbcf6a04685847a4044677509d3e8f038eb6efb3c60b0c887f1f1ad9da10"
+        },
+        {
+          "path": "src/units/roller485-lite/stickers.js",
+          "sha256": "b1383659d91c78d0872a1f5037e6ffaeec23701370845920870f1517b44035b8"
+        }
+      ]
+    },
+    {
+      "id": "mini-can",
+      "sku": "U179",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit-Mini%20CAN",
+      "retrievedAt": "2026-10-26",
+      "officialMCP": {
+        "queries": [
+          "Unit Mini CAN U179 产品 尺寸 结构图 接口 引脚"
+        ],
+        "rawResponseDistributed": false,
+        "result": "Own U17932×24×10.2mm,non-isolatedTJA1051T/3;ME3116/MST5333/36.8uH3012/WhiteLED1;Grove CAN_TX/CAN_RX;HT3.96-4P accessory.Dimensions/CAD agree when socket depth is distinguished from8mm shell.No material contradiction requiring feedback."
+      },
+      "reference": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Mini%20CAN/img-2c2855ee-66df-4e53-bd5a-2c4f9f24364a.webp",
+        "sha256": "b5145565c92f62b3d6738f3e8ecbfda252ad85687dbd212c44cb1c1d4f2906dc"
+      },
+      "structures": [
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/b4d8875bd504fed30242df78a1370703742941fb/Products/U179_Unit_Mini_CAN/Structures/Unit_Mini_CAN.stl",
+          "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/3827ed04a34a72fd0a6db23c69faae09ee08fcd6",
+          "commit": "b4d8875bd504fed30242df78a1370703742941fb",
+          "gitBlob": "3827ed04a34a72fd0a6db23c69faae09ee08fcd6",
+          "sha256": "a33e6a7e48f27ca3deb499e3160e5eb5f121effd884d7740f096f27854e456ad",
+          "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+        }
+      ],
+      "referenceSources": [
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/b4d8875bd504fed30242df78a1370703742941fb/Products/U179_Unit_Mini_CAN/Structures/Unit_Mini_CAN.stl",
+          "sha256": "a33e6a7e48f27ca3deb499e3160e5eb5f121effd884d7740f096f27854e456ad"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Mini%20CAN/img-027ca92c-9862-4be2-96d3-e88ca7d4ea77.webp",
+          "sha256": "91fb58807f6bddc0c9c4971ae0f43d35d4fb8a5358c4fe9e49a9867d704f121f"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Mini%20CAN/img-3b5e0bff-109f-4fd3-8c8b-1369a284f25f.webp",
+          "sha256": "31f06fc2dee59d9d12ede69362cf83b2502534ae1c23343643d5d813934a8f41"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Mini%20CAN/img-4e99b8e5-9b67-4381-8232-939f4d15514a.webp",
+          "sha256": "831632bbefffea351ced3980412f99b089ec1da9caea10c2363f9bc15039ba6b"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Mini%20CAN/img-2c2855ee-66df-4e53-bd5a-2c4f9f24364a.webp",
+          "sha256": "b5145565c92f62b3d6738f3e8ecbfda252ad85687dbd212c44cb1c1d4f2906dc"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Mini%20CAN/img-f9c7e55d-aa74-4c6f-95e2-00eae24db786.webp",
+          "sha256": "9c6241d55a4edc8f4cb5f413b5c4f16a90393f3882cc43d7496ef030f455ff4b"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Mini%20CAN/img-d8296edf-2e0f-4459-aa69-df57db939b39.webp",
+          "sha256": "8f287c099096a73a22d305896133645ca5e45b3aa4fb9a3307305aff0bbe5dee"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/631/SCH_UNIT_Mini_CAN_V1.0_sch_01.png",
+          "sha256": "848eb0125f177a254232fdf9c289d6e2841e04a0c4131c4e08d00754a4fc91a8"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Mini%20CAN/img-098a4216-2c39-44ba-836c-5565299c05d7.jpg",
+          "sha256": "8563bfd078212dfa3559a6c066e94060424b03671d072aa9d21db96be793698d"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Mini%20CAN/TJA1051T.pdf",
+          "sha256": "6637cd500dda3c1c951ce29bed7fe909f11f9a3bef64b096dbb486827add9f11"
+        }
+      ],
+      "selectedAssembly": {
+        "components": [
+          0
+        ],
+        "originalAssemblyTriangles": 3286,
+        "outputTriangles": 3286,
+        "excludedComponents": [
+          1,
+          2
+        ],
+        "origin": [
+          -529.268798828125,
+          225.22348022460938,
+          4
+        ],
+        "axes": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "scale": 1,
+        "localModification": null,
+        "notes": "Exact own U179 path-specific commit and expected Git blob verified. Component0 is the complete assembled front/rear shell,3286 triangles,24×32×8mm. Components1/2 are displaced duplicate front/rear shells. Complete assembled part retained at scale1 with one shared rigid180-degree Y rotation and translation;no native triangles cut,filled,patched or rearranged.Official10.2mm total depth includes orange HT3.96 socket protrusion;the native8mm shell is not flattened or expanded."
+      },
+      "dimensions": {
+        "nominalMm": [
+          24,
+          32,
+          10.2
+        ],
+        "vendorDimensionOrderMm": [
+          32,
+          24,
+          10.2
+        ],
+        "cadEnvelopeMm": [
+          24,
+          32,
+          8
+        ],
+        "visualEnvelopeMm": [
+          24,
+          32.00000010728836,
+          10.200000005960465
+        ],
+        "mountingHolesMm": [
+          [
+            -8,
+            -4
+          ],
+          [
+            8,
+            -4
+          ]
+        ],
+        "mountingHoleDiameterMm": 5,
+        "grovePositionMm": [
+          0,
+          -15.7,
+          1.4
+        ],
+        "terminalPositionMm": [
+          0,
+          16,
+          2.45
+        ],
+        "dimensionEvidence": "Own official U179 dimension drawing and full native assembled shell;10.2mm socket-inclusive depth distinguished from8mm native shell."
+      },
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "sourceDetails": "docs/research/mini-can/artwork.json",
+        "originalsDistributed": false
+      },
+      "scope": "Complete native assembled shell;physical PCB,non-isolatedSO8 and buck/regulator/inductor/passives;four-contact Grove;fixed four-pole socket;supplied detachable screw-terminal accessory with angle/duration-only four visible heads;physical adhesive films.No CAN/electrical/power/firmware behavior.",
+      "inferred": [
+        "PCB outline,plane,concealed component placement and package installation",
+        "HT3.96 cavities,contact tails,scalloped channel dimensions,plug internals and insertion depth",
+        "Grove cavity/contact/latch details and screw installation",
+        "Adhesive thickness,die-cut curves,color,typeface and print registration"
+      ],
+      "notes": [
+        "All3286 selected native triangles retained unscaled/unmodified;only displaced duplicates excluded.",
+        "U179 is explicitly non-isolated with no MCU;no Unit CAN U085 subassemblies imported.",
+        "White LED1 physical package concealed/non-emissive;no confirmed exterior light path or public LED API.",
+        "All four screw joints accept angle/duration and return exactly;no nonzeroRPM or automatic CAN/power response.",
+        "All physical geometry attributes,index and matrixWorld match artwork:false for both entry types and bare/plug states.",
+        "Two final ordinary exact-model reference-redraw PNGs;no private source/vector/crop distributed."
+      ],
+      "runtimeFiles": [
+        {
+          "path": "src/units/mini-can/TerminalPlug.js",
+          "sha256": "999fd13e4e2354b8bd498780d03a57c0e29fc47498d6132f9b185b385fde35c6"
+        },
+        {
+          "path": "src/units/mini-can/assembly.js",
+          "sha256": "80420be6558eb22696386ae504f06a035c24bd2146724948690d7e2993e1e039"
+        },
+        {
+          "path": "src/units/mini-can/cad-map.json",
+          "sha256": "c46aed8c7be8d469d75b292565a973d9c9390fedfd34f503e94c9cba46b8d700"
+        },
+        {
+          "path": "src/units/mini-can/connectors.js",
+          "sha256": "f36924805f5b559d72dea099bf07fedb5646bb1768ac4ea95f01b7f803813f66"
+        },
+        {
+          "path": "src/units/mini-can/dimensions.js",
+          "sha256": "387993d21c4cb8cc93c44fef42b56f18abe33367b812f3307be285c937e6a0f6"
+        },
+        {
+          "path": "src/units/mini-can/geometry-data.js",
+          "sha256": "ed4a7a948cd04e06766dc810272eea66fc9dc86a4be83015b895f7fd172ec5f9"
+        },
+        {
+          "path": "src/units/mini-can/index.js",
+          "sha256": "ec65b4f3f1631c0bb6fe9619472dc489969b30f7e252099c24ae3daa08433940"
+        },
+        {
+          "path": "src/units/mini-can/reference-redraw-back.png",
+          "sha256": "89e4868a89940dde6cd88a111464345f7e96acedd783723fe71271733f4b8b2c"
+        },
+        {
+          "path": "src/units/mini-can/reference-redraw-front.png",
+          "sha256": "1714b76519114035954d76b197814f0a148e6120750e20232cc354b4f42250b8"
+        },
+        {
+          "path": "src/units/mini-can/stickers.js",
+          "sha256": "f9c0b5abdac324a13643dcb651b09612565e2b2a8b770a3dfa09876b225713f9"
+        }
+      ]
+    },
+    {
+      "id": "ina226-10a",
+      "sku": "U200",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_INA226-10A",
+      "retrievedAt": "2026-10-26",
+      "officialMCP": {
+        "queries": [
+          "Unit INA226-10A U200 产品 尺寸 结构图 接口 引脚",
+          "Unit INA226-10A U200 尺寸图 58 56 10.2 产品尺寸 CAD Structure"
+        ],
+        "rawResponseDistributed": false,
+        "result": "Exact U200 ±10A/5mΩ;58×24×10.2mm nominal table versus56×24×8mm native shell and linked drawing;Grove,I2C0x41,HT3.96-4P,INA226AIDGSR,compatible isolation footprint,B0505ST16-W5,dual XC6228,fuse and internal BLUE0603 D2.No exterior D2 light path confirmed."
+      },
+      "reference": {
+        "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1171/Unit_INA226-10A_02.webp",
+        "sha256": "7a61018a55a987e5b67929c1fa39c1d8145661f61174d5836c91246cebfddd11"
+      },
+      "structures": [
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/784c926812716110e9b76041bfa876514017f81a/Products/U200_Unit_INA226-10A/Structures/Unit_INA226-10A.stl",
+          "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/407677da165e92da74916f294e3c7e390418c823",
+          "commit": "784c926812716110e9b76041bfa876514017f81a",
+          "gitBlob": "407677da165e92da74916f294e3c7e390418c823",
+          "sha256": "55fd968745d61c007099e6719430f1968e0d612c7d6184db0a79d2789524aab0",
+          "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+        }
+      ],
+      "referenceSources": [
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/784c926812716110e9b76041bfa876514017f81a/Products/U200_Unit_INA226-10A/Structures/Unit_INA226-10A.stl",
+          "sha256": "55fd968745d61c007099e6719430f1968e0d612c7d6184db0a79d2789524aab0"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1171/Unit_INA226-10A_01.webp",
+          "sha256": "a737b29a11cb1821e203bd2a82245004e70e5fb457a2e66a06aec1546e861bed"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1171/Unit_INA226-10A_02.webp",
+          "sha256": "7a61018a55a987e5b67929c1fa39c1d8145661f61174d5836c91246cebfddd11"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1171/Unit_INA226-10A_03.webp",
+          "sha256": "514fd52e7ae54db1f54c7a6aa7bd495edc11924bcd115a6f29111f9dd27dcf31"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1171/Unit_INA226-10A_04.webp",
+          "sha256": "6ec644bd4abe335ca1a489336a214dfce74d8f546fe564d2400d33cce553ba8d"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1171/Unit_INA226-10A_05.webp",
+          "sha256": "0687b678961d326bb018690d3abb0c1319680e1d88f08c843f8a7899fdd906c4"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1171/Unit_INA226-10A_06.webp",
+          "sha256": "5622313a71eb4b6dff1d8860b7dac8b5e0388400d3a0fd8398a1b3db8877ba2c"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1171/Unit_INA226-10A_07.webp",
+          "sha256": "d357192dec2cc311fdcb8cb93f20be84d883cdda9d35d330261b436d57cea2a3"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1171/Unit_INA226-10A_08.webp",
+          "sha256": "e398f8f35faf7691aa9e65b0509e4dd4f780e81e2c4968769b06c95443c12849"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1171/Unit_INA226-10A_09.webp",
+          "sha256": "f829512e195b00ae4ade973063606310374c38af835d3a0bffb4cc0602ea7a78"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1171/Unit_INA226-10A_10.webp",
+          "sha256": "9a3af2b028296c865835a29fbe8977843dd9f68057959592f948cd693a7cf9e3"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1171/Unit_INA226-10A_11.webp",
+          "sha256": "6d992970c2a6aa648bda2d4b601bae648b55fc4a24892eeff8631d4468585437"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1171/SCH_Unit_ina226-10A_SCH_Main_V0.3_20250625_2025_08_11_11_28_32_page_01.png",
+          "sha256": "9f0f4b7d428ddce47924456fb544bbb274fdbc79d8b2cfa093a36ae273ee8eed"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/839/U085_Model_Size.jpg",
+          "sha256": "9a9f09918d22d8ea79572ddc396b9fb4d3c6d6a4d4b0acc5fa64ea3cf9d06993"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1171/INA226.pdf",
+          "sha256": "927ab7fa7276a8c84023ae9bc718bad2167917b50e62de8fb4300864291d1ef7"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/AC%20Measure%20Unit/B0505ST16-W5.PDF",
+          "sha256": "3426feebf4a47af504089289a8cc318693ead115f62573dfdcecce705787f7e1"
+        }
+      ],
+      "selectedAssembly": {
+        "components": [
+          0,
+          2
+        ],
+        "originalAssemblyTriangles": 5582,
+        "outputTriangles": 5582,
+        "excludedComponents": [
+          1,
+          3
+        ],
+        "origin": [
+          0,
+          28,
+          -4
+        ],
+        "axes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "scale": 1,
+        "localModification": null,
+        "notes": "Complete native assembled front and rear components0/2 retained together at scale1 using one common translation;components1/3 are displaced duplicates.No shell triangles patched,filled or removed.PCB,INA226,isolation packages,fuse,5mΩ shunt,Grove,terminal,screw and physical label carriers are own-model appearance reconstruction;concealed layout and connector mating remain inferred."
+      },
+      "dimensions": {
+        "nominalMm": [
+          24,
+          58,
+          10.2
+        ],
+        "vendorDimensionOrderMm": [
+          58,
+          24,
+          10.2
+        ],
+        "cadEnvelopeMm": [
+          24.000062942504883,
+          56.00003242492676,
+          8
+        ],
+        "visualEnvelopeMm": [
+          24.000062942504883,
+          58.00003252029419,
+          10.200000005960465
+        ],
+        "mountingHolesMm": [
+          [
+            -8,
+            -16
+          ],
+          [
+            8,
+            -16
+          ]
+        ],
+        "mountingHoleDiameterMm": 4.85,
+        "rearNativeBoreDiameterMm": 5,
+        "grovePositionMm": [
+          0,
+          -27.7,
+          1.2
+        ],
+        "terminalPositionMm": [
+          0,
+          30,
+          2.45
+        ],
+        "terminalPitchMm": 3.96,
+        "dimensionEvidence": "Exact native shell remains24×56×8mm.Linked drawing gives56mm shell and10.2mm socket-inclusive depth.Nominal table gives58mm length.The2mm fixed-socket projection is appearance inference pending accepted official clarification;supplied plug envelope is separate."
+      },
+      "packageEvidence": {
+        "B0505ST16W5": {
+          "manufacturer": "MORNSUN",
+          "document": "2021.09.17-A/1",
+          "page": 4,
+          "bodyMm": [
+            7.5,
+            10.3,
+            2.5
+          ],
+          "leadCount": 16,
+          "leadPitchMm": 1.27
+        },
+        "INA226": {
+          "package": "MSOP10",
+          "bodyMm": [
+            3,
+            3,
+            1
+          ],
+          "leadPitchMm": 0.5
+        },
+        "isolation": {
+          "package": "SOIC8",
+          "populatedVariant": "Not established by schematic;original rear print names CA-IS3020S"
+        },
+        "regulators": {
+          "part": "XC6228D332VR-G",
+          "count": 2,
+          "package": "SOT25",
+          "physicalLeadCount": 5
+        }
+      },
+      "artwork": {
+        "kind": "source-vector-raster",
+        "pngCount": 2,
+        "sourceDetails": "docs/research/ina226-10a/artwork.json",
+        "originalsDistributed": false
+      },
+      "scope": "Complete exact U200 native shells,PCB/real packages,internal non-emissive D2,Grove and fixed four-pole socket,supplied detachable four-screw plug,physical adhesive substrates and external screw angle/duration only.No measurement,sensor value,electrical,I2C,isolation,fuse,power or firmware simulation.",
+      "inferred": [
+        "PCB outline/plane and concealed package positions",
+        "Socket2mm projection,mouth datum,cavities,hidden pin paths and insertion depth",
+        "Grove cavity/contacts and plug pressure-cage details",
+        "Screw profiles and viewer angular range",
+        "Adhesive thickness and print registration"
+      ],
+      "notes": [
+        "All5582 native assembled triangles retained unscaled/unmodified;only displaced duplicates excluded.",
+        "Nominal/native-shell/installed-socket dimensions are separate;socket projection remains appearance inference.",
+        "Internal D2 BLUE0603 is a non-emissive concealed package,no invented external LED.",
+        "INA226 MSOP10,isolator SOIC8,dual regulator SOT25 and16-lead B0505 physical packages;not an electrical model.",
+        "Four plug bores have actual material walls and coherent directed closure.",
+        "All physical geometry attributes,index and matrixWorld match artwork:false for both Model/GroveModule bare and plug configurations.",
+        "Two exact U200 original device-label ordinary PNGs;no private vector,mapping,photo crop or other range version distributed."
+      ],
+      "feedback": {
+        "feedback_id": "692e32ec722240559336c5c6fb24a03f",
+        "status": "received-for-official-review",
+        "issue": "Clarify58mm nominal length versus56mm native/linked-drawing shell and installed fixed-socket mouth/projection datum."
+      },
+      "runtimeFiles": [
+        {
+          "path": "src/units/ina226-10a/TerminalPlug.js",
+          "sha256": "f74f2f191774d4bc0e1c076d1b72ae0407e33203d0809af79e4ed06b4abf65b4"
+        },
+        {
+          "path": "src/units/ina226-10a/assembly.js",
+          "sha256": "9a810077999b718fec5696e41d3b4db02ae84b82fbdb145f2e87bf2c48474fa5"
+        },
+        {
+          "path": "src/units/ina226-10a/cad-map.json",
+          "sha256": "8a9317c13d551edd3328e3597f9b11ab67167ecd615eb5455b61a56448f15b12"
+        },
+        {
+          "path": "src/units/ina226-10a/connectors.js",
+          "sha256": "b6edc9f662bb468dbad1028f00554a4d34c2f4007b65c14c90580cf9547cb65c"
+        },
+        {
+          "path": "src/units/ina226-10a/dimensions.js",
+          "sha256": "5a359bd32989e151c30b666b780218f754567987afcf0650f028a68a114a6cfb"
+        },
+        {
+          "path": "src/units/ina226-10a/geometry-data.js",
+          "sha256": "2449f0a48f8502f56150861179448a9227d67d98eaeae700fbba358e759c4776"
+        },
+        {
+          "path": "src/units/ina226-10a/index.js",
+          "sha256": "ba61961d2c160f371b6dc2ca383d8c644ebe494757736e47af1ee66905ded7d1"
+        },
+        {
+          "path": "src/units/ina226-10a/source-vector-back.png",
+          "sha256": "eb789c7ac8ca49d3139f09617e3fc82a7700574bc4379f64ab8f83c94150b992"
+        },
+        {
+          "path": "src/units/ina226-10a/source-vector-front.png",
+          "sha256": "103784518f71cdecc8b9aa59b289d4a76c87d31ec17103ce8af8ba74e973c455"
+        },
+        {
+          "path": "src/units/ina226-10a/stickers.js",
+          "sha256": "4b91c7c24405b7d9569a31c560d7ed9a318a2951a9b60d6dacb6257f3e3d569b"
+        }
+      ]
+    },
+    {
+      "id": "mini-pdm",
+      "sku": "U089",
+      "officialDocs": "https://docs.m5stack.com/en/unit/pdm",
+      "retrievedAt": "2026-10-26",
+      "officialMCP": {
+        "queries": [
+          "Unit Mini PDM U089 产品 尺寸 麦克风 引脚 结构图",
+          "Unit Mini PDM U089 产品尺寸 24 24 13 尺寸图 8 SPM1423"
+        ],
+        "rawResponseDistributed": false,
+        "result": "Own U089 table24×24×13mm conflicts with own dimension drawing and full native assembled24×24×8mm shell.Keep both;no native scaling.Own schematic SPM1423HM4H-B/HT7333/C5-C7/CLK-DAT,and linked datasheet p5 package3.760×4.720×1.310mm/Ø.840 acoustic port.",
+        "feedbackId": "dcd6f74080ea478f8745ce19d5542ab8"
+      },
+      "reference": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pdm/pdm_05.webp",
+        "sha256": "8aa1ef2ebb1f7ea43c2e2cc3489007256765e1fad524fbed8a631c559a1df60d"
+      },
+      "structures": [
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/78baf68c49d623a7c8a9277c45d97c8e4ffbb80d/Products/U089_Unit_Mini_PDM/Structures/Unit_Mini_PDM.stl",
+          "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/fb8c5852c5a4357cf0adc9e049cb8c1d0618c253",
+          "commit": "78baf68c49d623a7c8a9277c45d97c8e4ffbb80d",
+          "gitBlob": "fb8c5852c5a4357cf0adc9e049cb8c1d0618c253",
+          "sha256": "7741642f2391a3bba614e082abdf0091b496b1dbfaea1ba9ef3c657b5c1c2da5",
+          "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+        }
+      ],
+      "referenceSources": [
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pdm/pdm_01.webp",
+          "sha256": "e5a746083127d2b9d9b5efaf8df61683594166840e00c41bfa2f411c53b96df8"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pdm/pdm_02.webp",
+          "sha256": "91caea71a31531b58fb39d1282255a23aa1d6a722ea014e600bb9cd490c15881"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pdm/pdm_05.webp",
+          "sha256": "8aa1ef2ebb1f7ea43c2e2cc3489007256765e1fad524fbed8a631c559a1df60d"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pdm/pdm_06.webp",
+          "sha256": "cbce31ee37f923cccae4609526d4fc753b363355c6a640f4c05422bb1d64fceb"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pdm/pdm_sch_01.webp",
+          "sha256": "23bc130350bc28c060e2f9dfda05405a6d02103782a569ef3978835eb6b78d28"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/pdm/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+          "sha256": "8e3fa006fc41a301446ea1605899e2504b37cc9531c6ae51630bac1ed2e73f97"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/core/SPM1423HM4H-B_datasheet_en.pdf",
+          "sha256": "85ecd7d7a42c7853a77a4dbc903606f7da82cf03abd496b75eb526147e1acbb0"
+        }
+      ],
+      "selectedAssembly": {
+        "components": [
+          0
+        ],
+        "originalAssemblyTriangles": 4162,
+        "outputTriangles": 4162,
+        "excludedComponents": [
+          1,
+          2
+        ],
+        "origin": [
+          87.38400268554688,
+          12,
+          -4
+        ],
+        "axes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "scale": 1,
+        "localModification": null,
+        "notes": "Exact own U089 path-specific commit and expected Git blob verified. Component0 is the complete4162-triangle assembled front/rear shell,24×24×8mm. Components1/2 are displaced duplicate shell halves. Full assembled part retained unscaled/unmodified with one common translation;no native faces removed,patched,filled or repositioned. Same-model dimension drawing explicitly labels8mm total thickness,contradicting the13mm product table;both recorded separately;MCP feedback dcd6f74080ea478f8745ce19d5542ab8. Shared exterior shape with another Mini Unit is not treated as an incorrect file."
+      },
+      "dimensions": {
+        "nominalMm": [
+          24,
+          24,
+          13
+        ],
+        "vendorDimensionOrderMm": [
+          24,
+          24,
+          13
+        ],
+        "dimensionDrawingMm": [
+          24,
+          24,
+          8
+        ],
+        "cadEnvelopeMm": [
+          24,
+          24,
+          8
+        ],
+        "visualEnvelopeMm": [
+          24,
+          24,
+          8.05000000037253
+        ],
+        "mountingHolesMm": [
+          [
+            -8,
+            0
+          ],
+          [
+            8,
+            0
+          ]
+        ],
+        "mountingHoleDiameterMm": 5,
+        "grovePositionMm": [
+          0,
+          -11.8,
+          1.4
+        ],
+        "dimensionEvidence": "Own U089 dimension drawing labels8mm overall and5.2mm connector;own full native shell matches8mm.Table13mm retained as nominal with accepted discrepancy feedback.Microphone linked datasheet p5 verified from rendered mechanical table."
+      },
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "sourceDetails": "docs/research/mini-pdm/artwork.json",
+        "originalsDistributed": false
+      },
+      "scope": "Complete own native shell,physical PCB/HT7333/three capacitors/6-land SPM1423 real acoustic bore/deep membrane/retaining screw/four-contact Grove/two adhesive films.Passive fixed acoustic anchor only;no audio/PDM/recording/internal behavior.",
+      "inferred": [
+        "PCB outline,plane,concealed components and microphone installation",
+        "Acoustic bore internal depth and passive membrane appearance",
+        "Grove contact/latch/carrier/tails and retaining installation",
+        "Adhesive dimensions,thickness,symbol curves,colors,typeface and print registration"
+      ],
+      "notes": [
+        "All4162 selected own native triangles retained unscaled/unmodified;only displaced duplicates excluded.",
+        "Own product table13mm and own CAD/drawing8mm are distinguished;no invented spacer,scaled shell or claim that feedback changed the official spec.",
+        "No LED,button,joint,display,waveform,audio or sampling behavior.",
+        "All physical attributes/index/matrixWorld invariant under artwork:false for both entry types.",
+        "Two final ordinary exact-model reference-redraw PNGs;raw photos,vector sources,generators and private mappings excluded."
+      ],
+      "runtimeFiles": [
+        {
+          "path": "src/units/mini-pdm/assembly.js",
+          "sha256": "11ca6cf6d67d771e9e7bc604a4dda168eb3928173edd468171b23ab5f8287034"
+        },
+        {
+          "path": "src/units/mini-pdm/cad-map.json",
+          "sha256": "637cf0bae58ade5504edfa4928e3b6c2dd9542d5554b057c29ff52bdcf4041a9"
+        },
+        {
+          "path": "src/units/mini-pdm/dimensions.js",
+          "sha256": "87c620fcbcc613122115c54c052188a0c254fd76278e1b58d1590586e93654cd"
+        },
+        {
+          "path": "src/units/mini-pdm/geometry-data.js",
+          "sha256": "ba5ede103956271d0937261ae7e967705466eb3875e61f2bebbcd5b5bf0ee0c2"
+        },
+        {
+          "path": "src/units/mini-pdm/index.js",
+          "sha256": "24259d6942aa266d6a407316c4a3c585a1320946ed4cb377cfe418d28c7e4cef"
+        },
+        {
+          "path": "src/units/mini-pdm/reference-redraw-back.png",
+          "sha256": "bd4dd60db64f757fbb4743e8ec14c79eacc9359e422e47b552f9506b4159fdd3"
+        },
+        {
+          "path": "src/units/mini-pdm/reference-redraw-front.png",
+          "sha256": "c3e7fd8c65480b65f22efed5f63fdb4575c5c015ec3d3f9493c1ffa81b23a22b"
+        },
+        {
+          "path": "src/units/mini-pdm/stickers.js",
+          "sha256": "042a2745dfdd05a0a5bbdd34cf49a2cf5189503da55984016e8a2c8cb04e88fc"
+        }
+      ]
+    },
+    {
+      "id": "mini-bps-v11",
+      "sku": "U090-B",
+      "officialDocs": "https://docs.m5stack.com/en/unit/BPS(QMP6988)",
+      "retrievedAt": "2026-10-26",
+      "officialMCP": {
+        "query": "Unit Mini BPS v1.1 U090-B 产品 尺寸 气压 结构图",
+        "responseSha256": "be82d568312fbe53f83ac6dad4ca48e6cc38fee8fea870aa601aa19d64422df1",
+        "rawResponseDistributed": false,
+        "result": "Exact U090-B product segments confirm QMP6988,HT7533,two BSS138,four4.7k pull-ups,C1/C2/C4,red HY2.0-4P,I2C0x56 and24×24×8mm. Later mixed EOL U090 BMP28013mm segments explicitly excluded.",
+        "chip": {
+          "query": "QMP6988 package dimensions 2.5 2.5 0.9 metal cap pressure hole datasheet",
+          "responseSha256": "bc43c1fcadf5dca1a3d5902bd21c19fdfed3e0ce32030659b4043a7ce91fe274",
+          "result": "QST13-52-13 RevC p11 gives LGA9,2.00×2.50×0.85mm,1.82×2.32mm cap,Ø0.20mm vent at package[-.46,.71];own official-linked PDF independently read.",
+          "rawResponseDistributed": false
+        }
+      },
+      "reference": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/BPS(QMP6988)/img-ad69b9ae-bcd5-430b-a1ad-3d7dee6de926.webp",
+        "sha256": "cf7d1297abd3e76908e425abf1487bc1bfabf3b30d562a4f840334aebe66d2ad"
+      },
+      "structures": [
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/78baf68c49d623a7c8a9277c45d97c8e4ffbb80d/Products/U090-B_Unit_Mini_BPS_v1.1/Structures/Unit_Mini_BPS_v1.1.stl",
+          "commit": "78baf68c49d623a7c8a9277c45d97c8e4ffbb80d",
+          "gitBlob": "fb8c5852c5a4357cf0adc9e049cb8c1d0618c253",
+          "sha256": "7741642f2391a3bba614e082abdf0091b496b1dbfaea1ba9ef3c657b5c1c2da5",
+          "license": "MIT; preserve licenses/M5_Hardware-MIT.txt"
+        }
+      ],
+      "referenceSources": [
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/BPS(QMP6988)/img-61abcaeb-6126-4445-ba9c-10599ee0411c.webp",
+          "sha256": "4b2498f2a1b1ce1cb0a723c6b1e1b326bd3afbc1a33b50122050d4230bae9463"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/BPS(QMP6988)/img-da0dfb96-fca7-4f3f-b665-9ed9c10b3598.webp",
+          "sha256": "e6aef3a1602bdac6d5a5b7b66bdd799c4ce96c951c8c768054b9835ab35a65e1"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/740/U090-B-package.jpg",
+          "sha256": "f430c3ac16211c01af01e42855d4eebf76a7b6ec47ab134fe1e98066c885baf2"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/BPS(QMP6988)/img-ad69b9ae-bcd5-430b-a1ad-3d7dee6de926.webp",
+          "sha256": "cf7d1297abd3e76908e425abf1487bc1bfabf3b30d562a4f840334aebe66d2ad"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/BPS(QMP6988)/img-d13305dc-f06c-485d-8c67-b4aa4ada24d9.webp",
+          "sha256": "6a6138a0ea32929a06832761520dcd4c376039ba3b332462f8d4264441d1c71b"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/BPS(QMP6988)/img-b6196263-bfef-48b8-b6bc-89213882d8e8.webp",
+          "sha256": "185f7da29089434d7bf8b96b8e882b6eb8acab1d7d7f02f1112a28ca0679e1ed"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/BPS(QMP6988)/img-4e77d8e1-09d6-43d6-a0da-d7e15d171c79.png",
+          "sha256": "ac8c812a1999404d0464121f62fbd7f91099f73feccffa05ab893348dc314f3e"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/BPS(QMP6988)/img-b2c73882-6358-4799-bec0-c5ca736dfc20.png",
+          "sha256": "90011a0615537782620fc9ab11835338a26f6686414e0352b448d4da58d54cf4"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/static/assets/img/uiflow2/uiflow2.0_banner_01.png",
+          "sha256": "8f6b8b724cae5a82ea474955f5f1b25724493e96cd1e8941391860852a4471e0"
+        }
+      ],
+      "manufacturerPackageReference": {
+        "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/enviii/QMP6988%20Datasheet.pdf",
+        "sha256": "05e7ec9a14d5a968c2ec156be092c22bc4f4dcd504cbc879b6f69cea513c8c59",
+        "page": 11,
+        "document": "QST13-52-13 RevC",
+        "rawSourceDistributed": false,
+        "evidence": "LGA9 package2.00×2.50×0.85mm;cap1.82×2.32mm;Ø0.20mm pressure hole and offsets;gold terminal surface"
+      },
+      "selectedAssembly": {
+        "components": [
+          0
+        ],
+        "originalAssemblyTriangles": 4162,
+        "outputTriangles": 4162,
+        "excludedComponents": [
+          1,
+          2
+        ],
+        "origin": [
+          87.38400268554688,
+          12,
+          -4
+        ],
+        "axes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "scale": 1,
+        "localModification": null,
+        "notes": "All4162 native assembled front/rear triangles retained at scale1 under one common translation only. Components1/2 are displaced duplicate rear/front shells. Own U090-B path and commit verified even though this enclosure is shared with other Mini Units. Front air slots,mounting bores,Grove cutout,rear label recess and M5 relief remain unchanged. PCB,QMP6988 vented metal package,HT7533,BSS138/passives,Grove interior and fixed fastener are appearance reconstruction. Exact U090-B QMP6988 v1.1;no old U090 BMP280/13mm geometry or artwork."
+      },
+      "dimensions": {
+        "nominalMm": [
+          24,
+          24,
+          8
+        ],
+        "vendorDimensionOrderMm": [
+          24,
+          24,
+          8
+        ],
+        "cadEnvelopeMm": [
+          24,
+          24,
+          8
+        ],
+        "visualEnvelopeMm": [
+          24,
+          24,
+          8.039999999552965
+        ],
+        "mountingHolesMm": [
+          [
+            -8,
+            0
+          ],
+          [
+            8,
+            0
+          ]
+        ],
+        "mountingHoleDiameterMm": 5,
+        "sensorPackageMm": [
+          2,
+          2.5,
+          0.85
+        ],
+        "pressurePortDiameterMm": 0.2,
+        "dimensionEvidence": "Exact U090-B table,own dimension drawing and native shell agree24×24×8mm. Shared shell origin translated only. Physical front adhesive film adds inferred0.04mm to visual thickness."
+      },
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "sourceDetails": "docs/research/mini-bps-v11/artwork.json",
+        "originalsDistributed": false
+      },
+      "scope": "Complete native shell,dark PCB,physical QMP6988 substrate/vented metal skirt/lid/internal cavity/die/LGA9 lands,HT7533,BSS138/passives,red Grove,fixed fastener,independent adhesive films and passive visual sensor anchor only.No pressure,temperature,altitude,airflow,register,I2C,electrical or firmware simulation.",
+      "inferred": [
+        "PCB outline/installed plane and concealed population placement",
+        "QMP6988 installed rotation under two air slots,metal skirt/lid thickness,internal die/cavity rendering",
+        "HT7533/BSS138/passive package installation,Grove internals and fixed fastener placement",
+        "Typography,colours,adhesive film thickness and print registration"
+      ],
+      "notes": [
+        "All4162 assembled native triangles retained at scale1 under one common translation only;displaced duplicates excluded.",
+        "Own U090-B CAD path/commit verified although identical shell is shared with other Mini Units;this is not a wrong-path substitution.",
+        "EOL U090 BMP28013mm variant and its artwork excluded.",
+        "Air-slot margin has real PCB backing;actualØ0.20mm pressure port has deeper cavity/die rather than flat gap-cover.",
+        "No LED,button,display or joint registered. Sensor is passive and rejects numeric/firmware commands.",
+        "Model/GroveModule artwork:false retain every physical attribute,index and world matrix,including two adhesive film substrates.",
+        "Two final reference-redraw PNGs only;no raw CAD,photos,private vector,generator or intermediate distributed."
+      ],
+      "feedback": null,
+      "runtimeFiles": [
+        {
+          "path": "src/units/mini-bps-v11/assembly.js",
+          "sha256": "6dfa101dad0304e33206f3012f7771a5accb68c6e4d4add8a57abb0528eebbcb"
+        },
+        {
+          "path": "src/units/mini-bps-v11/cad-map.json",
+          "sha256": "e5d027cd845180b397d34c92ae0c0eee067c66e7322af66ec0770ea9b4d9e6af"
+        },
+        {
+          "path": "src/units/mini-bps-v11/dimensions.js",
+          "sha256": "fa1686314914a6cb6e1aeca93717f8a59590a9f347fe58e36e74d2d100a1a5dd"
+        },
+        {
+          "path": "src/units/mini-bps-v11/geometry-data.js",
+          "sha256": "edba5da131d4f5c4d2246cbca9096fa9fe38c31d4715d691bd3ded2d39d7401b"
+        },
+        {
+          "path": "src/units/mini-bps-v11/index.js",
+          "sha256": "cc0a947abfa4a1c810a666e56b70fd28b58566f312e892196fc7d136dbe74fe5"
+        },
+        {
+          "path": "src/units/mini-bps-v11/reference-redraw-back.png",
+          "sha256": "bf490a396cac2cbe632f5019c2620d41f612ffcbed76add74f5833105560d3eb"
+        },
+        {
+          "path": "src/units/mini-bps-v11/reference-redraw-front.png",
+          "sha256": "aded45a708b82af9ba8e44d9c69bdc9323769f92ccbc14aaee313ac7d1443cad"
+        },
+        {
+          "path": "src/units/mini-bps-v11/stickers.js",
+          "sha256": "12dd4987bb63d3b20aaa4187b9df0ddd0a0b72ac545d2f4c3c472c301f918e71"
+        }
+      ]
+    },
+    {
+      "id": "mic",
+      "sku": "U096",
+      "officialDocs": "https://docs.m5stack.com/en/unit/mic",
+      "retrievedAt": "2026-10-26",
+      "officialMCP": {
+        "queries": [
+          "Unit MIC U096 产品 尺寸 麦克风 接口 结构图"
+        ],
+        "rawResponseDistributed": false,
+        "result": "Own U09632×24×8mm,MAX4466/LM393DR2G/HT7533/10K R2 trimmer and electret MIC;Grove A.OUT/D.OUT;own drawing and full native shell agree.No material contradiction requiring feedback."
+      },
+      "reference": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/mic/mic_08.webp",
+        "sha256": "0dee4db14214dabb47457db892387bfa052b2945fb83c8ee4605826d3fee9fc9"
+      },
+      "structures": [
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/78baf68c49d623a7c8a9277c45d97c8e4ffbb80d/Products/U096_Unit_MIC/Structures/Unit_MIC.stl",
+          "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/64dc44f3ea9ab1f1492e23fa2d596242a4cdf3f3",
+          "commit": "78baf68c49d623a7c8a9277c45d97c8e4ffbb80d",
+          "gitBlob": "64dc44f3ea9ab1f1492e23fa2d596242a4cdf3f3",
+          "sha256": "3033adf31fcc14703821b396e5d205bb087fec94621d779fa632bb9d888f659e",
+          "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+        }
+      ],
+      "referenceSources": [
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/mic/mic_01.webp",
+          "sha256": "8538fc688679b1b5389e44f8cdc85d71c17ff2dc32efeff7b4d912322fd13a1d"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/mic/mic_02.webp",
+          "sha256": "c605ff6be2652f183af523da853a3b64eea214614f293f30130fbed3d84a1376"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/mic/mic_03.webp",
+          "sha256": "61b8df887ddf283baee1ba163cc9c8fe112dfe6a863641c060a49b31400dfa76"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/mic/mic_04.webp",
+          "sha256": "4b0ac700bfde2a5535c644d007eb246271127c5d0c152bc6b485a1933184ff26"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/mic/mic_07.webp",
+          "sha256": "0d52276966de81b3c6b91e12f5279242a7c454bc97bd2857ffae7acb0ea71f45"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/mic/mic_08.webp",
+          "sha256": "0dee4db14214dabb47457db892387bfa052b2945fb83c8ee4605826d3fee9fc9"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/mic/mic_09.webp",
+          "sha256": "f2f1c2e5412a9fca010b8e6bccde84a4f73dd8c717175179d2c1cf54958595f6"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/mic/Module%20Size.jpg",
+          "sha256": "9a2bcd5727fcd65cf4f6a9715c316d7547e7c71794f31b924b4e0a5e873cd8a5"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/mic/mic_sch_01.webp",
+          "sha256": "d77f8f978e51d1eb65c9aafb1be66ad44c1fb45d151d04687fac52f16ceb9df1"
+        }
+      ],
+      "selectedAssembly": {
+        "components": [
+          0
+        ],
+        "originalAssemblyTriangles": 3284,
+        "outputTriangles": 3284,
+        "excludedComponents": [
+          1,
+          2
+        ],
+        "origin": [
+          -573.268798828125,
+          225.22348022460938,
+          4
+        ],
+        "axes": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "scale": 1,
+        "localModification": null,
+        "notes": "Exact own U096 path-specific commit and expected Git blob verified. Component0 is the complete assembled front/rear shell,3284 triangles,24×32×8mm. Components1/2 are displaced duplicate front/rear shells. Complete assembled part retained at scale1 with one shared rigid180-degree Y rotation and translation;no native triangles cut,filled,patched or rearranged.Official24×32×8mm overall envelope agrees with the full native shell;the microphone and adjustment head remain within its front openings."
+      },
+      "dimensions": {
+        "nominalMm": [
+          24,
+          32,
+          8
+        ],
+        "vendorDimensionOrderMm": [
+          32,
+          24,
+          8
+        ],
+        "cadEnvelopeMm": [
+          24,
+          32,
+          8
+        ],
+        "visualEnvelopeMm": [
+          24,
+          32,
+          8
+        ],
+        "mountingHolesMm": [
+          [
+            -8,
+            -4
+          ],
+          [
+            8,
+            -4
+          ]
+        ],
+        "mountingHoleDiameterMm": 5,
+        "microphoneApertureDiameterMm": 5.2,
+        "trimmerApertureMm": [
+          6.9,
+          7.1
+        ],
+        "grovePositionMm": [
+          0,
+          -15.8,
+          1.35
+        ],
+        "dimensionEvidence": "Own U096 official dimension drawing and complete native assembled shell agree;no shell scaling or local cuts."
+      },
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 1,
+        "sourceDetails": "docs/research/mic/artwork.json",
+        "originalsDistributed": false
+      },
+      "scope": "Complete native assembled shell;physical PCB,MAX4466/LM393/HT7533,metal microphone can/chamber/perforated screen/diaphragm,blue trimmer/cross-slotted head/shaft,Grove and adhesive substrate.External finite head angle/duration only;no audio,electrical or firmware behavior.",
+      "inferred": [
+        "PCB plane,concealed population,package dimensions and installation",
+        "Microphone can/diaphragm/screen pattern/depth and concealed acoustic construction",
+        "Trimmer body/head installation,scale registration and conservative unconfirmed visual angular range",
+        "Grove cavity/contact/latch details,screw installation and adhesive thickness/typeface/color/registration"
+      ],
+      "notes": [
+        "All3284 selected native triangles retained unscaled/unmodified;only displaced duplicates excluded.",
+        "Microphone aperture has hollow metal can,55 physical screen holes and actual recessed diaphragm.",
+        "Threshold joint rotates only its visible silver head/shaft;fixed blue body/scale/PCB/connector remain stationary.",
+        "Conservative±135°visual range;no verified production stop,resistance or comparator mapping,no nonzeroRPM.",
+        "No LED/button/display or fabricated light window;passive sensor anchor accepts no audio/ADC/waveform state.",
+        "All physical geometry attributes,index and matrixWorld match artwork:false for both entry types at rest and moved head pose.",
+        "One final ordinary exact-model reference-redraw PNG;no private source/vector/photo crop distributed."
+      ],
+      "runtimeFiles": [
+        {
+          "path": "src/units/mic/assembly.js",
+          "sha256": "7cbb6e3f9ab1baaeb26bba1fbd82eb58deec34f114093906de38c71633e71e47"
+        },
+        {
+          "path": "src/units/mic/cad-map.json",
+          "sha256": "0f4e522e2353b71d70b5b0706e8dce72b7d74c6cbb7b159893575900bce7d48b"
+        },
+        {
+          "path": "src/units/mic/dimensions.js",
+          "sha256": "87e5284b0d9d96e204c56be6f407f0b39cf0b7bd4b15cac2c5bac673cc2d5c13"
+        },
+        {
+          "path": "src/units/mic/geometry-data.js",
+          "sha256": "bed9ca5e876306a82cc6970082e7e5e0abe72cb95a51c6719f7e4d15bdf415d2"
+        },
+        {
+          "path": "src/units/mic/index.js",
+          "sha256": "41aa7dc532e4b9e073a0f457da731d9aa6752cf5821c321e0dd9a6979bcf4755"
+        },
+        {
+          "path": "src/units/mic/reference-redraw-back.png",
+          "sha256": "439b5ac88998f36e15be873dab780ee40aee9105325df16c38fd842c508d582f"
+        },
+        {
+          "path": "src/units/mic/stickers.js",
+          "sha256": "672d317033c0f96a3df05969c64f7d5c251ae98aec0ee39fea9b8481ab19450b"
+        }
+      ]
+    },
+    {
+      "id": "accel",
+      "sku": "U056",
+      "officialDocs": "https://docs.m5stack.com/en/unit/accel",
+      "retrievedAt": "2026-10-26",
+      "officialMCP": {
+        "queries": [
+          "Unit Accel U056 产品 尺寸 结构图 接口 MMA7660"
+        ],
+        "rawResponseDistributed": false,
+        "result": "Own U056 official response identifies ADXL345,HT7533,AO3400A,32×24×8mm product and exact own structure path.Initial query candidate MMA7660 is not an accepted fact.Own linked datasheet p37 confirms3×5mm14-terminal LGA,.95mm nominal height.No source contradiction requiring feedback."
+      },
+      "reference": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/accel/accel_06.webp",
+        "sha256": "0aa2607ed25b7e2dab45fadb41d0d76a467a5222559cc95f50874ad621308a75"
+      },
+      "structures": [
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/802d26343594f6b8e3b8a9f111cb867613c93882/Products/U056_Unit_Accel/Structures/Unit_Accel.stl",
+          "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/7527140c2e924042ea350171c9976ce415a127e8",
+          "commit": "802d26343594f6b8e3b8a9f111cb867613c93882",
+          "gitBlob": "7527140c2e924042ea350171c9976ce415a127e8",
+          "sha256": "f026bee644e3136e7fe5533423ebbdbcfcb61d6ae8021def1976d45bd0ab721b",
+          "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+        }
+      ],
+      "referenceSources": [
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/accel/accel_01.webp",
+          "sha256": "8640db187f7094d7a09c2234684540dd04e172f66127d945a3728c6c93089d8d"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/accel/accel_02.webp",
+          "sha256": "5b5f356424f53e1adfbb89f455b5c7ba1e6b9394479c8a2da50aa1496def788a"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/accel/accel_03.webp",
+          "sha256": "e0fbcbc5fe88cb409ebca292f0d8735f06d02e3e6f9618b5906e706297302ba6"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/accel/accel_05.webp",
+          "sha256": "c17a06675c27a5226684447e16e3f738be5499dab9ed0912bad801e5187f2003"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/accel/accel_06.webp",
+          "sha256": "0aa2607ed25b7e2dab45fadb41d0d76a467a5222559cc95f50874ad621308a75"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/accel/accel_sch_01.webp",
+          "sha256": "17fb043a577760d8da3d2ea4b19bf6702e27df7a5ed7cbb9fc5415344753c8ef"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/accel/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+          "sha256": "e749d4158272a2c050a2ead49ed72402b301bf7f259353fbbc39c81c3033a6be"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/ADXL345_en.pdf",
+          "sha256": "889e63f7503a0115054f9cbc5bdcdf175e549dabb629fa688167cb4dcbf80c74"
+        }
+      ],
+      "selectedAssembly": {
+        "components": [
+          0
+        ],
+        "originalAssemblyTriangles": 3490,
+        "outputTriangles": 3490,
+        "excludedComponents": [
+          1,
+          2
+        ],
+        "origin": [
+          441.2688293457031,
+          313.2234802246094,
+          -19
+        ],
+        "axes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "scale": 1,
+        "localModification": null,
+        "notes": "Exact own U056 path-specific commit and expected Git blob verified. Component0 is the complete3490-triangle assembled front/rear shell,24×32×8mm. Components1/2 are displaced duplicate shell halves. Full assembled part retained unscaled/unmodified with one common translation;no native faces removed,patched,filled or repositioned. Product table32×24×8mm is the same envelope in vendor length/width order."
+      },
+      "dimensions": {
+        "nominalMm": [
+          32,
+          24,
+          8
+        ],
+        "vendorDimensionOrderMm": [
+          32,
+          24,
+          8
+        ],
+        "dimensionDrawingMm": [
+          24,
+          32,
+          8
+        ],
+        "cadEnvelopeMm": [
+          24,
+          32,
+          8
+        ],
+        "visualEnvelopeMm": [
+          24,
+          32,
+          8.00000009536743
+        ],
+        "mountingHolesMm": [
+          [
+            -8,
+            -4
+          ],
+          [
+            8,
+            -4
+          ]
+        ],
+        "mountingHoleDiameterMm": 5,
+        "grovePositionMm": [
+          0,
+          -15.8,
+          1.4
+        ],
+        "dimensionEvidence": "Own product length/width order32×24×8mm equals own drawing/native model X/Y/Z24×32×8mm.No resizing or dimensional conflict.ADXL345 own linked RevE datasheet p37 explicitly3×5mm14-terminal LGA,0.85–1.00mm height,modeled0.95mm nominal."
+      },
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "sourceDetails": "docs/research/accel/artwork.json",
+        "originalsDistributed": false
+      },
+      "scope": "Complete own native closed shell,PCB/retaining through-bore/14-land ADXL345/HT7533/two AO3400A/eight passives/four-contact Grove/retaining screw/two adhesive films.Passive fixed package anchor only;no sensor or internal behavior.",
+      "inferred": [
+        "PCB outline,plane,concealed components and package installation",
+        "Non-ADXL regulator,MOSFET and passive envelope/placement",
+        "Grove contact/latch/carrier/tails and retaining installation",
+        "Adhesive dimensions,thickness,axis curves,colors,typeface and print registration"
+      ],
+      "notes": [
+        "All3490 selected own native triangles retained unscaled/unmodified;only displaced duplicates excluded.",
+        "Own nominal32×24×8mm and model24×32×8mm use different axis orders.",
+        "No sensor opening,LED,button,joint,display or acceleration behavior invented.",
+        "All physical attributes/index/matrixWorld invariant under artwork:false for both entry types.",
+        "Two final ordinary exact-model reference-redraw PNGs;raw photos,source vectors,generators and private mappings excluded."
+      ],
+      "runtimeFiles": [
+        {
+          "path": "src/units/accel/assembly.js",
+          "sha256": "58e164058397978a0e753cdfc963765353c873bcc720f8921673a5aab4a4c4e0"
+        },
+        {
+          "path": "src/units/accel/cad-map.json",
+          "sha256": "e3f63d1363773ce83bfbf3d898252d4650ee8f5d6f49b7983e4b5c4b6b9cf1e0"
+        },
+        {
+          "path": "src/units/accel/dimensions.js",
+          "sha256": "aa08d957f2549865170dd746aa947200488e8c3b970737b49c63683afbcff82f"
+        },
+        {
+          "path": "src/units/accel/geometry-data.js",
+          "sha256": "4d282927833d44a6772d41e688c363db857768a16cbc956be97a43d712065d70"
+        },
+        {
+          "path": "src/units/accel/index.js",
+          "sha256": "383902ac8bf21a1269989abb41c78726ee26377aec89ded7730b36020d5f6d03"
+        },
+        {
+          "path": "src/units/accel/reference-redraw-back.png",
+          "sha256": "372ce5b17abaf20b949b01fa0bb5f821aac0b485003ed2fe16914f7af9ce2b0b"
+        },
+        {
+          "path": "src/units/accel/reference-redraw-front.png",
+          "sha256": "2d6c7da1091427a71cabc588daacda9d88fbea3d0e37393bb600b6f04cd52de1"
+        },
+        {
+          "path": "src/units/accel/stickers.js",
+          "sha256": "ef7bcb78f1566b9e8455352ccdbf1fb4478997d516a178d0c3c06d39e63bb64b"
+        }
+      ]
+    },
+    {
+      "id": "op90",
+      "sku": "U057",
+      "officialDocs": "https://docs.m5stack.com/en/unit/OP.90",
+      "retrievedAt": "2026-10-26",
+      "officialMCP": {
+        "query": "Unit OP90 U057 产品 尺寸 结构图 接口",
+        "responseSha256": "a0e4551fe6036a1f58877c432d846cfe86d9f93894dc7a6d8a7db4882eabc3da",
+        "rawResponseDistributed": false,
+        "result": "Exact U057 product and schematic:ITR9606 fixed interrupter,32×24×12.8mm,black HY2.0-4P,PORT.B,GND/5V/NC/Digital Output,U1,R1/R2/R3,C4/C5.No MCU or visible indicator LED."
+      },
+      "reference": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP.90/img-48d60ccd-42f8-4cf5-a590-e32dcd8054f3.webp",
+        "sha256": "d6e02fba7594bc9963d69efe945c97b687d9d55ef566b3b6042d5f35c1c71ee0"
+      },
+      "structures": [
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/784c926812716110e9b76041bfa876514017f81a/Products/U057_Unit_OP90/Structures/Unit_OP90.stl",
+          "commit": "784c926812716110e9b76041bfa876514017f81a",
+          "gitBlob": "dc4c7e955272c24035b32cce033ca4ab86f52244",
+          "sha256": "bbbc76eb4a7531d632a29b9b96c8983ae8cc01e7370d3a463e3f9381bf486d1d",
+          "license": "MIT; preserve licenses/M5_Hardware-MIT.txt"
+        }
+      ],
+      "referenceSources": [
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP.90/img-103a3854-fbc1-43a3-9ebe-88cf6051e273.webp",
+          "sha256": "d9ae1843df4a7fb1811b22a89c022129c691ebc28dbde3a0083eb585d4df9b4e"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP.90/img-2c594846-92c5-4f3b-b8d0-30e3133beb5f.webp",
+          "sha256": "c0534c78aa692c01ea04321d7dcdba29ed065608a9f3676f986310e45084348b"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP.90/img-8dbd5909-296e-4a7a-86ce-28b1de7e2358.webp",
+          "sha256": "936268e38f8e6c74d7fd7bdd6656c7e5d42c6d5918216ffc83efc6e5f098756c"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP.90/img-48d60ccd-42f8-4cf5-a590-e32dcd8054f3.webp",
+          "sha256": "d6e02fba7594bc9963d69efe945c97b687d9d55ef566b3b6042d5f35c1c71ee0"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP.90/img-85cbfb24-3eab-49c6-a107-596e8573c359.webp",
+          "sha256": "160d856a2adf15c5055fea8c5470ea854bd208315adc3b90697d3399421e2f2a"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP.90/img-2e3ce6f3-673a-4a87-9d0f-e355656ec33f.webp",
+          "sha256": "dc417b1afd7c43d6a5ab8846c96ad7d9edee711617c034f23e2d103ad748dc2a"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/OP.90/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+          "sha256": "04ae713b1837cc20da6de6eef30257466bbc6b600904d0fc6a18f8955b2d07d4"
+        }
+      ],
+      "selectedAssembly": {
+        "components": [
+          0
+        ],
+        "originalAssemblyTriangles": 3254,
+        "outputTriangles": 3254,
+        "excludedComponents": [
+          1,
+          2
+        ],
+        "origin": [
+          221.26881408691406,
+          313.2234802246094,
+          -4
+        ],
+        "axes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "scale": 1,
+        "localModification": null,
+        "notes": "Exact own U057 path-specific commit and expected Git blob verified. Component0 is the complete3254-triangle assembled front/rear shell,24×32×8mm. Components1/2 are displaced duplicate rear/front shell halves. All native faces retained unscaled/unmodified under one common translation. Native14×6mm front opening receives the fixed upright ITR9606 package;real5mm optical slot remains air. Own dimension drawing gives12.8mm total package-inclusive depth;no OP180 package/installation substituted."
+      },
+      "dimensions": {
+        "nominalMm": [
+          24,
+          32,
+          12.8
+        ],
+        "vendorDimensionOrderMm": [
+          32,
+          24,
+          12.8
+        ],
+        "cadEnvelopeMm": [
+          24,
+          32,
+          8
+        ],
+        "visualEnvelopeMm": [
+          24,
+          32,
+          12.800000005960465
+        ],
+        "mountingHolesMm": [
+          [
+            -8,
+            -4
+          ],
+          [
+            8,
+            -4
+          ]
+        ],
+        "mountingHoleDiameterMm": 5,
+        "installedForkFootprintMm": [
+          14,
+          6
+        ],
+        "opticalSlotWidthMm": 5,
+        "dimensionEvidence": "Own U057 dimension drawing gives24mm width,32mm length,8mm shell depth,12.8mm total depth,14mm fork width,5mm optical slot,6mm footprint and16mm mounting pitch;native assembled shell retained unscaled."
+      },
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 1,
+        "sourceDetails": "docs/research/op90/artwork.json",
+        "originalsDistributed": false
+      },
+      "scope": "Complete native shell,real fixed upright ITR9606 opposing opaque banks/recessed resin windows/5mm detection air slot/transverse base/four leads,PCB,R1/R2/R3,C4/C5,black four-contact Grove,fixed screw,independent adhesive film and passive appearance anchor.No sensor values,occlusion detection,counter,light beam,IR/electrical/protocol/firmware simulation.",
+      "inferred": [
+        "PCB outline/installed plane and concealed R/C population placement",
+        "ITR9606 installed base/window/tunnel/mold/internal details/four-lead routing and left-right emitter identity",
+        "Grove socket internals,fastener placement and adhesive-film thickness",
+        "Typography,colors and print registration"
+      ],
+      "notes": [
+        "All3254 native assembled triangles preserved atscale1 under one common translation;displaced duplicate shell halves excluded.",
+        "Fixed90° package installation stands in+Z at+Y;no OP180 package substitution or fabricated rotational joint.",
+        "Opposing resin windows face±X across a real5mm plastic-wall slot;emitter/receiver left-right identity inferred and annotated.",
+        "Slot remains genuine detection airspace;no gap-cover plane,label,IR glow/beam/cone or visible indicator invented.",
+        "Only grove and passive sensor appearance anchor;no button,LED,joint or screen.",
+        "Model/GroveModule artwork:false preserve every physical attribute,index and matrixWorld,including independent adhesive film.",
+        "One final ordinary reference-redraw PNG only;no raw CAD/photo/private vector/generator/intermediate distributed."
+      ],
+      "feedback": null,
+      "runtimeFiles": [
+        {
+          "path": "src/units/op90/assembly.js",
+          "sha256": "8ac2167302536ff29c34599bca3b76cc9bd6484655c6933d8785b802a537ba4e"
+        },
+        {
+          "path": "src/units/op90/cad-map.json",
+          "sha256": "99d0ea5e8518148e276a9a65dc8e02bda7795131b905e74eb3218dd31d7bbda4"
+        },
+        {
+          "path": "src/units/op90/dimensions.js",
+          "sha256": "0b5a068024e320ca12b9d4086a9d4eda56045762455d880fde15d8dcdf113b2a"
+        },
+        {
+          "path": "src/units/op90/geometry-data.js",
+          "sha256": "1eb6f18f953fababd1884c842f48685739b9634512e719a16affd576abfa471e"
+        },
+        {
+          "path": "src/units/op90/index.js",
+          "sha256": "61e5fe07f9b029d860bd2f686e55c9e13e75ed6b0c3167d918a412ea87f4d483"
+        },
+        {
+          "path": "src/units/op90/reference-redraw-back.png",
+          "sha256": "adc1f1dccaa4df4363ec8a8b22e8cd45f84d02e3db7d21ca88f7191d02f1957d"
+        },
+        {
+          "path": "src/units/op90/stickers.js",
+          "sha256": "00928887ea21d70e176e357d8b62aba2718ff465a947c6237a876270f80a502e"
+        }
+      ]
+    },
+    {
+      "id": "op180",
+      "sku": "U058",
+      "officialDocs": "https://docs.m5stack.com/en/unit/OP180",
+      "retrievedAt": "2026-10-26",
+      "officialMCP": {
+        "queries": [
+          "Unit OP180 U058 产品 尺寸 结构图 接口",
+          "ITR9606 OP180 尺寸 封装 datasheet 槽宽 5mm"
+        ],
+        "rawResponseDistributed": false,
+        "result": "Own U058 full36×24×8.8mm,24×32×8mm shell,5mm slot width and7.5mm package height;ITR9606/R1-R3/C4-C5/J1.No material contradiction requiring feedback.No visible status LED or moving control established."
+      },
+      "reference": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP180/img-1519b910-0cde-4400-b894-dbd5cae2fe24.webp",
+        "sha256": "f1728ec7f1b7191b289fe277ed144a132472c1b2f7f7a8c216a1eefd2759a0e6"
+      },
+      "structures": [
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/dbc93013098189c8c0995e7678347b75a369a366/Products/U058_Unit_OP180/Structures/Unit_OP180.stl",
+          "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/2cd2e347cc949685e384fba0dcda4adcd148cd83",
+          "commit": "dbc93013098189c8c0995e7678347b75a369a366",
+          "gitBlob": "2cd2e347cc949685e384fba0dcda4adcd148cd83",
+          "sha256": "42a94f15958f9a451ad37c2350ee81a6766e6665fedddaf92b7214ad36f185ee",
+          "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+        }
+      ],
+      "referenceSources": [
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP180/img-a3e126ec-af40-4f42-a85e-880460d46f7d.webp",
+          "sha256": "be9f73fa2575392451d132a062fbe9ed59344fade557fc204e73a390beccb8ab"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP180/img-b7f9b68e-7baf-466f-b6e1-463b7da97bf9.webp",
+          "sha256": "a231dfd4a30351f9c87d1388a2ca7648383d30f2b97fe30e4a1e9e66f8010fad"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP180/img-311e1860-9fbd-44be-9b48-d1e06c54cec8.webp",
+          "sha256": "9083f01f1c4cee65b80a023f4cdb418fcbe644598a5d0ab2023bf6c61266bde5"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP180/img-1519b910-0cde-4400-b894-dbd5cae2fe24.webp",
+          "sha256": "f1728ec7f1b7191b289fe277ed144a132472c1b2f7f7a8c216a1eefd2759a0e6"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP180/img-a0bd8e9c-1a4d-4c43-86dc-ab6b07158a87.webp",
+          "sha256": "5169e17ea099dbcfba89b6ce725f286d80cc2720a9ff6462c0e4c62299212748"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP180/img-7b04670c-b70e-4218-8756-f223e11e328f.webp",
+          "sha256": "003c7e6a96c74982d4045332125d81841b305baccb9fe8892bbaa9dd81bd70b9"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP180/img-14df8888-5109-4b25-a399-e6b236e85a50.webp",
+          "sha256": "dc417b1afd7c43d6a5ab8846c96ad7d9edee711617c034f23e2d103ad748dc2a"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/OP180/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+          "sha256": "02a8f15444fe33fe5a7b13d73b93057177ca84bbdc632eab3b1a57ce52c03909"
+        }
+      ],
+      "selectedAssembly": {
+        "components": [
+          0
+        ],
+        "originalAssemblyTriangles": 3254,
+        "outputTriangles": 3254,
+        "excludedComponents": [
+          1,
+          2
+        ],
+        "origin": [
+          221.26881408691406,
+          315.2234802246094,
+          -4
+        ],
+        "axes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "scale": 1,
+        "localModification": null,
+        "notes": "Exact own U058 path-specific commit and expected Git blob verified.Component0 is the complete3254-triangle assembled24×32×8mm shell.Components1/2 are displaced duplicate shell halves.Native shell retained unscaled/unmodified with one common translation;no native faces removed,patched,filled or repositioned.U058 dimension drawing36mm length and8.8mm depth include the fixed protruding ITR9606 package;24×32×8mm is the shell only."
+      },
+      "dimensions": {
+        "nominalMm": [
+          36,
+          24,
+          8.8
+        ],
+        "vendorDimensionOrderMm": [
+          36,
+          24,
+          8.8
+        ],
+        "dimensionDrawingMm": [
+          24,
+          36,
+          8.8
+        ],
+        "cadEnvelopeMm": [
+          24,
+          32,
+          8
+        ],
+        "visualEnvelopeMm": [
+          24,
+          36,
+          8.8
+        ],
+        "mountingHolesMm": [
+          [
+            -8,
+            -6
+          ],
+          [
+            8,
+            -6
+          ]
+        ],
+        "mountingHoleDiameterMm": 5,
+        "slotWidthMm": 5,
+        "slotDepthMm": 5.5,
+        "slotDepthInferred": true,
+        "grovePositionMm": [
+          0,
+          -17.8,
+          1.4
+        ],
+        "dimensionEvidence": "Own drawing distinguishes32mm shell and36mm full length,8mm shell and8.8mm full depth;fixed ITR9606 extends4mm above shell,no native scaling."
+      },
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 1,
+        "sourceDetails": "docs/research/op180/artwork.json",
+        "originalsDistributed": false
+      },
+      "scope": "Complete own native shell;physical PCB,five schematic passives,four-lead fixed ITR9606 U-package with true5mm air gap/two recessed opposing passive windows,black Grove and adhesive substrate.Only passive sensor anchor and cable/pose;no optical/detection/internal behavior.",
+      "inferred": [
+        "PCB plane,concealed population,pin geometry and installation",
+        "Optical package width/depth/crossbar thickness/resulting5.5mm slot depth,windows/deep backings and emitter-receiver handedness from own drawing/photo proportions",
+        "Grove cavity/contact/latch details,screw installation and adhesive thickness/typeface/color/registration"
+      ],
+      "notes": [
+        "All3254 selected native triangles retained unscaled/unmodified;only displaced duplicates excluded.",
+        "Intentional open detection slot and mounting bores preserved;no sticker or flat filler closes the true slot.",
+        "180deg identifies fixed opposing optical geometry;no fabricated hinge,button,joint,visible LED/IR beam or detection cone.",
+        "Passive sensor anchor accepts no count,IR,occlusion,value,digital-level,electrical or firmware commands.",
+        "All physical geometry attributes,index and matrixWorld match artwork:false for both entry types.",
+        "One final ordinary exact-model reference-redraw PNG;no private source/vector/photo crop distributed."
+      ],
+      "runtimeFiles": [
+        {
+          "path": "src/units/op180/assembly.js",
+          "sha256": "485ddbe9fe8edf2fdbfe07a0ef9bfe29daa38da3eac4f51edb2764d93d4ee0f6"
+        },
+        {
+          "path": "src/units/op180/cad-map.json",
+          "sha256": "59db48e363d5c121911b7e4aab91b9d79c41c511ebda9953588fdaf371a5f712"
+        },
+        {
+          "path": "src/units/op180/dimensions.js",
+          "sha256": "1e395317c3404f851c30a9f1da87ab9b1dcfddf8ec114b78e98ceeb53b32ef2a"
+        },
+        {
+          "path": "src/units/op180/geometry-data.js",
+          "sha256": "ec2a84ef149f69a4aee102fd276a9a18c2adc7c969848f07b7f50cc28b3fcec2"
+        },
+        {
+          "path": "src/units/op180/index.js",
+          "sha256": "6ef1e5d4219954973985456b0747ccd690d76e0b454435d9647bd1933769c6a0"
+        },
+        {
+          "path": "src/units/op180/reference-redraw-back.png",
+          "sha256": "d13f03033cbdea6b3cfb1dff2cc62b0f790bc7292daa1b396651ba9842f4c045"
+        },
+        {
+          "path": "src/units/op180/stickers.js",
+          "sha256": "98b8e10e6ed48c6bc55f83c9cd0d8631f1792aabfc278904e79c87210b80bf8a"
+        }
+      ]
+    },
+    {
+      "id": "unit-id",
+      "sku": "U124",
+      "officialDocs": "https://docs.m5stack.com/en/unit/id",
+      "retrievedAt": "2026-10-26",
+      "officialMCP": {
+        "queries": [
+          "Unit ID U124 产品 规格 尺寸 接口 原理图",
+          "Unit ID U124 产品介绍 外观 图片",
+          "ATECC608B-TNGTLSU-G 封装 UDFN 2x3mm 8引脚",
+          "ATECC608B-TNGTLSU-G Package Options U 8-Pad UDFN Product Identification System"
+        ],
+        "rawResponseDistributed": false,
+        "result": "Own U124 official response and readable schematic identify ATECC608B-TNGTLSU-G,HT7533,two4.7K pull-ups,three capacitors and four-contact red Grove.24×24×8mm product/drawing/native shell agree.Linked Microchip ATECC608B DS40002239A p18–20 confirms2×3mm8-pad UDFN,.55mm nominal height and underside paddle.Package drawing rendered/read;concealed placement inferred.No material contradiction requiring feedback."
+      },
+      "reference": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/id/id_06.webp",
+        "sha256": "3131235a3c8ebe9a781abc0a2b1ebe7394dc3212c5b0eab01679744c79dd9fe7"
+      },
+      "structures": [
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/66720a863658da9bab58a208d4ebf8a040c2d42c/Products/U124_Unit_ID/Structures/Unit_ID.stl",
+          "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/48e92a95c14e29844db13856cc991e9d3f2f460f",
+          "commit": "66720a863658da9bab58a208d4ebf8a040c2d42c",
+          "gitBlob": "48e92a95c14e29844db13856cc991e9d3f2f460f",
+          "sha256": "29feff8f64d3d92a7de98b173eb7f0d663fc33e2401c34683ec34f9ea7dbbfd5",
+          "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+        }
+      ],
+      "referenceSources": [
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/id/id_01.webp",
+          "sha256": "46996e12dd2ad4c9c325913c91223a4342fee4820d8ae5492e2be074e78988b1"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/id/id_02.webp",
+          "sha256": "7b786d1d4856c6071eacc4c524968bddbfce705435b1656a3af7bd3654dfdda5"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/718/U124_01.webp",
+          "sha256": "4b7a87bd6eca04b6bf4ad319dd99c20060921651c24287a6a8a29770fbae5831"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/id/id_05.webp",
+          "sha256": "e568e1ac40b9827f515e619d1ee11782dd204fc24263baf4df9467949a103b31"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/id/id_06.webp",
+          "sha256": "3131235a3c8ebe9a781abc0a2b1ebe7394dc3212c5b0eab01679744c79dd9fe7"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/id/id_sch_01.webp",
+          "sha256": "1fc41dd9fea0f94a05a3af1d5d08e9acb6b20544b311f08d8c4c5b238d7e7459"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/id/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+          "sha256": "31b0ad365228504643b4378124707848a1ea0f38df3f58736c0cb262b2d9ec07"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/id/ATECC608B-CryptoAuthentication-Device-Summary-Data-Sheet-DS40002239A.pdf",
+          "sha256": "3d4cadb49a93109b15914f623c601d106b51654e127c34de78fd9af3a3b0a9d3"
+        }
+      ],
+      "selectedAssembly": {
+        "components": [
+          0
+        ],
+        "originalAssemblyTriangles": 4178,
+        "outputTriangles": 4178,
+        "excludedComponents": [
+          1,
+          2
+        ],
+        "origin": [
+          122.52239990234375,
+          12,
+          -4
+        ],
+        "axes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "scale": 1,
+        "localModification": null,
+        "notes": "Exact own U124 path-specific commit and expected Git blob verified. Component0 is the complete4178-triangle assembled front/rear shell,24×24×8mm. Components1/2 are displaced duplicate shell halves. Full assembled part retained unscaled/unmodified with one common translation;no native faces removed,patched,filled or repositioned. Own product table and dimension drawing are24×24×8mm."
+      },
+      "dimensions": {
+        "nominalMm": [
+          24,
+          24,
+          8
+        ],
+        "dimensionDrawingMm": [
+          24,
+          24,
+          8
+        ],
+        "cadEnvelopeMm": [
+          24,
+          24,
+          8
+        ],
+        "visualEnvelopeMm": [
+          24,
+          24,
+          8.00000009536743
+        ],
+        "mountingHolesMm": [
+          [
+            -8,
+            0
+          ],
+          [
+            8,
+            0
+          ]
+        ],
+        "mountingHoleDiameterMm": 5,
+        "grovePositionMm": [
+          0,
+          -11.8,
+          1.4
+        ],
+        "dimensionEvidence": "Exact own U124 product table,dimension drawing and unmodified complete assembled shell agree24×24×8mm.Linked Microchip ATECC608B DS40002239A p18–20 describes2×3mm8-pad UDFN with.50–.60mm height,.55mm nominal;model in-plane axes3×2mm."
+      },
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "sourceDetails": "docs/research/unit-id/artwork.json",
+        "originalsDistributed": false
+      },
+      "scope": "Complete own native shell/real top slot,PCB/retaining through-bore/eight-pad UDFN/paddle/HT7533/five passives/four-contact Grove/retaining screw/two adhesive films.Pure connector/appearance module;no sensor or internal security behavior.",
+      "inferred": [
+        "PCB outline,plane,concealed component placement and UDFN installation",
+        "Regulator/passive envelopes and installation",
+        "Grove contact/latch/carrier/tails and retaining installation",
+        "Adhesive dimensions,thickness,rounding,colors,typeface and print registration"
+      ],
+      "notes": [
+        "All4178 selected own native triangles retained unscaled/unmodified;only displaced duplicate shell halves excluded.",
+        "Real native top slot remains open with recessed actual package and PCB geometry,not a flat cap or false sensor window.",
+        "No sensor,button,LED,display,joint or internal security API invented.",
+        "All physical attributes/index/matrixWorld invariant under artwork:false for both entry types.",
+        "Two final ordinary exact-model reference-redraw PNGs;raw photos,source vectors,generators and private mappings excluded.",
+        "No actual keys,certificates,serial numbers,identity or cryptographic values generated or read."
+      ],
+      "runtimeFiles": [
+        {
+          "path": "src/units/unit-id/assembly.js",
+          "sha256": "defa1d5afec80946357d6227e88080fe215ff3ddeb975fe634206aa31d76b5b9"
+        },
+        {
+          "path": "src/units/unit-id/cad-map.json",
+          "sha256": "e28eb8a982da396d259735c7709b6430ad6c8f1bf7770e8ab387bfc07593cf34"
+        },
+        {
+          "path": "src/units/unit-id/dimensions.js",
+          "sha256": "fdfe42b14582c233405d0e33fe1fbdd8fed5c2de1ec6ecdd3364d110d1d137be"
+        },
+        {
+          "path": "src/units/unit-id/geometry-data.js",
+          "sha256": "5b373aec2ca1bc02a5ac615321bd1c52d82b8516a2e6347e14e54f2bdbea7d79"
+        },
+        {
+          "path": "src/units/unit-id/index.js",
+          "sha256": "3b248c6b241fd52746d1f8de26ff2a2877ca4e744a82aac701e534b899af51c4"
+        },
+        {
+          "path": "src/units/unit-id/reference-redraw-back.png",
+          "sha256": "c998a3b56cdede56d080bbe3ca3c11a559fbe749ab5db46c13d3da1ec91c5f4a"
+        },
+        {
+          "path": "src/units/unit-id/reference-redraw-front.png",
+          "sha256": "26470aa83f8bcc14b4712b74973cb04f768a16665544a722bad00d52a41f3168"
+        },
+        {
+          "path": "src/units/unit-id/stickers.js",
+          "sha256": "f2cd2383808010c1527497212ec27529caa84b42a1d2c8075f04e677f2c096e0"
+        }
+      ]
+    },
+    {
+      "id": "rf433r",
+      "sku": "U113",
+      "officialDocs": "https://docs.m5stack.com/en/unit/rf433_r",
+      "retrievedAt": "2026-10-26",
+      "officialMCP": {
+        "queries": [
+          "Unit RF433R U113 产品 尺寸 天线 接口 原理图",
+          "Unit RF433R U113 E1 ANT_IPEX 实际PCB天线 量产装配 BOM"
+        ],
+        "rawResponseDistributed": false,
+        "result": "Own U113 product says48×24×8mm,SYN531R and built-in PCB antenna;own drawing/native model24×48×8mm.Linked datasheet p10 confirms SOP-8 nominal package4.92×6.00×1.50mm.E1 ANT_IPEX schematic name does not establish populated external connector;assembly evidence requested via accepted feedback."
+      },
+      "feedback": {
+        "category": "missing_documentation",
+        "feedback_id": "4b666d887ad44a0f88d5ebb78bfc73df",
+        "accepted": true,
+        "topic": "Clarify exact U113 E1 population/PCB antenna assembly and qualify external-connector interpretation until board/BOM evidence exists."
+      },
+      "reference": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_r/rf433_r_06.webp",
+        "sha256": "9af12d243a12104cf5ce97b419fbabb1c2c3e03ea1c08c289a9e682a6410c2fe"
+      },
+      "structures": [
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/07d8765bd52f32cc2705fc542ea608169a6c3c8c/Products/U113_Unit_RF433R/Structures/Unit_RF433R.stl",
+          "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/c711d25d74bd606fb0027ed6b197226c69d682f9",
+          "commit": "07d8765bd52f32cc2705fc542ea608169a6c3c8c",
+          "gitBlob": "c711d25d74bd606fb0027ed6b197226c69d682f9",
+          "sha256": "6ef92787614d8197559fa9f711a61b7c1f49df16db5d872e591d07e845297fc7",
+          "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+        }
+      ],
+      "referenceSources": [
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_r/rf433_r_01.webp",
+          "sha256": "454463679e10eb29996cb8454d4b66fd63ccd6afffe6e116b8d7ef92249cbe60"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_r/rf433_r_02.webp",
+          "sha256": "53d0d89632e90c989054dd138aff83f1ff54ff4b535228bd6abaf50e52f36c25"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_r/rf433_r_03.webp",
+          "sha256": "b8e314c9bf42fb3d726302df0f919fbb5194e290c62cfeb7eefa47fb97a07063"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_r/rf433_r_05.webp",
+          "sha256": "1c8be1c631c07a3328753aedae7ef5e07993e51d2b86ab7fcd8492f039d06807"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_r/rf433_r_06.webp",
+          "sha256": "9af12d243a12104cf5ce97b419fbabb1c2c3e03ea1c08c289a9e682a6410c2fe"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_r/rf433_r_sch_01.webp",
+          "sha256": "fdb0b1f0cb57b34286c54e8c9e2388d218931466f1abe306540354129b13e7c9"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/835/U113_Model_Size.jpg",
+          "sha256": "fdbc801b874ed401d6ce2f3b5d377a6b15dea13c99a685ec0bc787bb91136797"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/rf433/C77785_SYN531R_2018-06-20.PDF",
+          "sha256": "3447e269954567b4a1366f5bbe256994847231ae1477a0ab0daf11a879bffa17"
+        }
+      ],
+      "selectedAssembly": {
+        "components": [
+          0
+        ],
+        "originalAssemblyTriangles": 3796,
+        "outputTriangles": 3796,
+        "excludedComponents": [
+          1,
+          2
+        ],
+        "origin": [
+          0,
+          0,
+          1.2
+        ],
+        "axes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "scale": 1,
+        "localModification": null,
+        "notes": "Exact own U113 path-specific commit and expected Git blob verified. Component0 is the complete3796-triangle assembled front/rear shell,24×48×8mm. Components1/2 are displaced duplicate shell halves. Full assembled part retained unscaled/unmodified with one common translation;no native faces removed,patched,filled or repositioned. Product table48×24×8mm is the same envelope in vendor length/width order."
+      },
+      "dimensions": {
+        "nominalMm": [
+          48,
+          24,
+          8
+        ],
+        "vendorDimensionOrderMm": [
+          48,
+          24,
+          8
+        ],
+        "dimensionDrawingMm": [
+          24,
+          48,
+          8
+        ],
+        "cadEnvelopeMm": [
+          24,
+          48,
+          7.999999761581421
+        ],
+        "visualEnvelopeMm": [
+          24,
+          48,
+          8.00000009536743
+        ],
+        "mountingHolesMm": [
+          [
+            -8,
+            -12
+          ],
+          [
+            8,
+            -12
+          ]
+        ],
+        "mountingHoleDiameterMm": 5,
+        "grovePositionMm": [
+          0,
+          -23.8,
+          1.4
+        ],
+        "receiverBodyMm": [
+          4.92,
+          3.95,
+          1.34
+        ],
+        "receiverPackageEnvelopeMm": [
+          4.92,
+          6,
+          1.5
+        ],
+        "receiverLeadPitchMm": 1.27,
+        "dimensionEvidence": "Own table48×24×8mm is length/width order;own drawing and complete native assembly use X/Y/Z24×48×8mm.No shell resizing.Own linked SYN531R datasheet p10 nominal SOP-8 body4.92×3.95,span6.00,height1.50,standoff.16,pitch1.27,lead width.40mm."
+      },
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "sourceDetails": "docs/research/rf433r/artwork.json",
+        "originalsDistributed": false
+      },
+      "scope": "Complete own native shell,real PCB bore/reliefs,eight-lead SYN531R SOP-8,metal Y1,two inductors/six capacitors/two resistors,fixed concealed planar copper antenna,four-contact Grove,retaining screw and two real physical adhesive films.Only Grove attachment and cable appearance;no RF or internal behavior.",
+      "inferred": [
+        "Concealed PCB outline/plane and all component installation",
+        "Planar PCB copper route is an inferred appearance envelope,not production antenna geometry",
+        "Y1 and non-IC passive package envelopes/installation",
+        "Grove contact/latch/carrier/tails and retaining installation",
+        "Adhesive dimensions,thickness,typeface,symbol curves,colors and print registration"
+      ],
+      "notes": [
+        "All3796 own selected native triangles retained,scale1;only displaced duplicates excluded.",
+        "Product length/width order48×24×8mm equals model X/Y/Z24×48×8mm.",
+        "Existing front native aperture remains;physical adhesive film seats on original rim.Rear film touches original closed wall.",
+        "No external antenna socket,LED,button,display,sensor,RF anchor or joint invented.",
+        "All physical attributes/index/matrixWorld invariant under artwork:false for both entry types.",
+        "Two own U113 final ordinary reference-redraw PNGs;raw photos,vectors,generators and private mappings excluded."
+      ],
+      "runtimeFiles": [
+        {
+          "path": "src/units/rf433r/assembly.js",
+          "sha256": "83d11c9e0cb7fee1a530c87fe0dec077ae36cd937cd864130bef26df8db63585"
+        },
+        {
+          "path": "src/units/rf433r/cad-map.json",
+          "sha256": "8a97546185118ed3f971ce1ba1b1ebc3e5a1f7bdf42ff4efea93259cc911083f"
+        },
+        {
+          "path": "src/units/rf433r/connectors.js",
+          "sha256": "6b4b1c7cc1d3a9d23f93a495b2d2e31885ab6242c0612ddb9de66e5f5d0e5d04"
+        },
+        {
+          "path": "src/units/rf433r/dimensions.js",
+          "sha256": "4b90f87452158201d84eadb49e75b8e1008d56953549a48dbca396596b69e493"
+        },
+        {
+          "path": "src/units/rf433r/geometry-data.js",
+          "sha256": "69b3eb88e3ca3e186580961c14a396963a9881c07540e77be23ab0b9dc7fa252"
+        },
+        {
+          "path": "src/units/rf433r/index.js",
+          "sha256": "4dc4a1c573a09a655a1aec87eb2b8c5a63f31f51cd5c20eed3f46b8b1ca24647"
+        },
+        {
+          "path": "src/units/rf433r/reference-redraw-back.png",
+          "sha256": "f83ca4a5d544ea2b230a8dfc9e8af4d6557a649a910ada315826d4d676a9da7d"
+        },
+        {
+          "path": "src/units/rf433r/reference-redraw-front.png",
+          "sha256": "b92e0ba60edcfb53ab298b665e7b56305108a5c94c4ef6c4efde37d3928abba4"
+        },
+        {
+          "path": "src/units/rf433r/stickers.js",
+          "sha256": "aa75919c2168d49ef20951f8e08df95ec5b60d06b3a8b05e982a2630b282ffe4"
+        }
+      ]
+    },
+    {
+      "id": "rf433t",
+      "sku": "U114",
+      "officialDocs": "https://docs.m5stack.com/en/unit/rf433_t",
+      "retrievedAt": "2026-10-26",
+      "officialMCP": {
+        "query": "Unit RF433T U114 产品 尺寸 天线 接口 原理图",
+        "responseSha256": "f0305b556a2ca2ff08efce7cc73a8052f4624be4a8db65579a4c9ac4bebb4e7f",
+        "packageQuery": "Unit RF433T U114 SYN115 datasheet package SOT23-6 天线 PCB 图",
+        "packageResponseSha256": "e988dc60251dceafcde12aff328e2e059b648323333f0ef78fe94c55aa734699",
+        "rawResponseDistributed": false,
+        "result": "Exact U114 product and schematic:SYN115 transmitter,48×24×8mm,internal PCB antenna,Y1 13.560MHz,C1/C10,C2/C3/C4/C5,L1/L2,R1,black four-pin HY2.0_IO,GND/5V/RF_TX/NC.No MCU,exterior antenna,button,joint,visible indicator or sensor anchor."
+      },
+      "reference": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_t/rf433_t_06.webp",
+        "sha256": "88faf731f543827e92146633aa1349d5f81438584c4e91434ffc91be476b82d2"
+      },
+      "structures": [
+        {
+          "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/07d8765bd52f32cc2705fc542ea608169a6c3c8c/Products/U114_Unit_RF433T/Structures/Unit_RF433T.stl",
+          "commit": "07d8765bd52f32cc2705fc542ea608169a6c3c8c",
+          "gitBlob": "c711d25d74bd606fb0027ed6b197226c69d682f9",
+          "sha256": "6ef92787614d8197559fa9f711a61b7c1f49df16db5d872e591d07e845297fc7",
+          "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+        }
+      ],
+      "referenceSources": [
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_t/rf433_t_01.webp",
+          "sha256": "e17373f97d2fa24f88b8322a883110edaebc61af064436c5b2b3e6dc91fdb650"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_t/rf433_t_02.webp",
+          "sha256": "4c13efc6a407c0e8751354e623c27336fbf59e32b90a9d451aa5f4e2c45aa59c"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_t/rf433_t_05.webp",
+          "sha256": "a354aeb00e77ee119e1b14e7d97ea43c29296e852b2f26c3811385a23c613fb6"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_t/rf433_t_06.webp",
+          "sha256": "88faf731f543827e92146633aa1349d5f81438584c4e91434ffc91be476b82d2"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_t/rf433_t_sch_01.webp",
+          "sha256": "ca06d8335badeb3b72d95eb8533e0a1a9e22d10b3d47a8a6ff969dfdb754940a"
+        },
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/835/U113_Model_Size.jpg",
+          "sha256": "fdbc801b874ed401d6ce2f3b5d377a6b15dea13c99a685ec0bc787bb91136797"
+        },
+        {
+          "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/rf433/C105184_SYN115_2019-08-28.PDF",
+          "sha256": "b21782d3f801381eecf981ca448857578be5b267d6436174f270e5d45735e1aa"
+        }
+      ],
+      "selectedAssembly": {
+        "components": [
+          0
+        ],
+        "originalAssemblyTriangles": 3796,
+        "outputTriangles": 3796,
+        "excludedComponents": [
+          1,
+          2
+        ],
+        "origin": [
+          0,
+          0,
+          1.1999999284744263
+        ],
+        "axes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "scale": 1,
+        "localModification": null,
+        "notes": "Exact own U114 path-specific commit and expected Git blob verified. Component0 is the complete3796-triangle assembled front/rear shell,24×48×8mm. Components1/2 are displaced duplicate halves. All native triangles retained under one common translation;no native faces removed,filled,scaled or repositioned. Own product page links U113-named common dimension drawing;geometry and own product table independently agree on24×48×8mm. Common shell also used by receiving variant is not treated as incorrect provenance. Fixed own SYN115 transmitter electronics and PCB antenna reconstructed separately;no RF433R electronics/print borrowed."
+      },
+      "dimensions": {
+        "nominalMm": [
+          24,
+          48,
+          8
+        ],
+        "vendorDimensionOrderMm": [
+          48,
+          24,
+          8
+        ],
+        "cadEnvelopeMm": [
+          24,
+          48,
+          8
+        ],
+        "visualEnvelopeMm": [
+          24,
+          48,
+          8
+        ],
+        "mountingHolesMm": [
+          [
+            -8,
+            -12
+          ],
+          [
+            8,
+            -12
+          ]
+        ],
+        "mountingHoleDiameterMm": 5,
+        "transmitterPackage": {
+          "part": "SYN115",
+          "package": "SOT23-6",
+          "bodyVisualMm": [
+            2.9,
+            1.6,
+            1.1
+          ],
+          "leadSpanMm": 2.8,
+          "leadPitchMm": 0.95,
+          "evidence": "Official product-linked Synoxo Version1.0 package drawing,printed p15/16 (PDF physical page17):body L2.90±.10mm,W1.50–1.75mm(1.60nom),body H.90–1.30mm;visualH1.10mm selected within range;lead span2.80±.20mm,pitch.950typical."
+        },
+        "dimensionEvidence": "Exact U114 complete native CAD agrees with48×24×8mm product table. Own product page links a common U113-named drawing with24mm width,48mm length,8mm depth,Ø5 bores,16mm pitch and12mm mounting datum from Grove end;shared shell is not a mistaken source."
+      },
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "sourceDetails": "docs/research/rf433t/artwork.json",
+        "originalsDistributed": false
+      },
+      "scope": "Complete native assembled shell,full PCB with true bores/scallops,SYN115 actual six-lead SOT23-6 package,13.560MHz crystal,nine schematic R/C/L parts in total,including R1,fixed enclosed copper PCB antenna,black four-contact Grove with recessed cavity walls,fixed screw and independent physical adhesive films.Grove-only appearance;no sensor values,RF/ASK,transmission,data,signal,strength,distance,communication,power,electrical or firmware simulation.",
+      "inferred": [
+        "Concealed PCB outline/plane/color and population placement",
+        "Integrated PCB antenna copper path and installation;product confirms antenna type but exact hidden layout is unconfirmed",
+        "Crystal dimensions,passive placement and package lead detail within documented package envelope",
+        "Grove socket internals,fastener placement and adhesive-film thickness",
+        "Typography,colors and print registration"
+      ],
+      "notes": [
+        "All3796 own native assembled triangles retained atscale1 under one common translation;displaced duplicate halves excluded.",
+        "Only exact U114 transmitter references used;RF433R radio/print not substituted.",
+        "Actual six-lead SOT23-6 instead of fabricated large receiver package;metal crystal and matching/decoupling constituents reflect exact U114 schematic.",
+        "PCB antenna is fixed,enclosed,non-emissive;no SMA,IPEX,external spring/whip,antenna window,beam,RF animation or joint invented.",
+        "Only grove;no sensor,button,LED,joint or display.",
+        "Model/GroveModule artwork:false preserve every physical attribute,index and matrixWorld,including independent film and concealed PCB.",
+        "Two final ordinary reference-redraw PNG only;raw CAD/photos,private vector,generator and intermediates excluded."
+      ],
+      "feedback": null,
+      "runtimeFiles": [
+        {
+          "path": "src/units/rf433t/assembly.js",
+          "sha256": "a304e7fe466bef780afa92923c9f1fa3a6ec11fab7416a63fbc6639446de9ca1"
+        },
+        {
+          "path": "src/units/rf433t/cad-map.json",
+          "sha256": "f435dcb4aa61a961108219ce00c5ce57216f3281dd96080f88497b8207235291"
+        },
+        {
+          "path": "src/units/rf433t/dimensions.js",
+          "sha256": "d9ad51f4555a2bebea60a9b7174a568ad558a1e1afe82f063a5b2d30dcc05ddc"
+        },
+        {
+          "path": "src/units/rf433t/geometry-data.js",
+          "sha256": "76a97c5460fbba9b5e55866844df967185960584a66afc3519366078a85392d3"
+        },
+        {
+          "path": "src/units/rf433t/index.js",
+          "sha256": "a910ff18d046783481e47b571fbc71b0187f184953084acaa80f3f93b908b88e"
+        },
+        {
+          "path": "src/units/rf433t/reference-redraw-back.png",
+          "sha256": "ee26df00ff6bac58e24c4d5790d1086cbdb0ccd0c4d5adbe22b93e83b8142e11"
+        },
+        {
+          "path": "src/units/rf433t/reference-redraw-front.png",
+          "sha256": "a6a3e70495d773c5d317b9d7380cf1063d9242740c254b92812de38fd6e41a30"
+        },
+        {
+          "path": "src/units/rf433t/stickers.js",
+          "sha256": "0473092121336c6f0278adac7ce0177b7f4fa4b7c32d1fdeb130730cf70131d7"
         }
       ]
     }
@@ -18272,6 +21474,6 @@
       }
     ]
   },
-  "updatedAt": "2026-10-26T12:24:02.061Z",
+  "updatedAt": "2026-10-26T13:35:51.326Z",
   "syncedAt": "2026-10-25T14:15:24.398Z"
 }

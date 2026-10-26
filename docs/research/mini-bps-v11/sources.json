@@ -1,0 +1,210 @@
+{
+  "id": "mini-bps-v11",
+  "sku": "U090-B",
+  "officialDocs": "https://docs.m5stack.com/en/unit/BPS(QMP6988)",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "query": "Unit Mini BPS v1.1 U090-B 产品 尺寸 气压 结构图",
+    "responseSha256": "be82d568312fbe53f83ac6dad4ca48e6cc38fee8fea870aa601aa19d64422df1",
+    "rawResponseDistributed": false,
+    "result": "Exact U090-B product segments confirm QMP6988,HT7533,two BSS138,four4.7k pull-ups,C1/C2/C4,red HY2.0-4P,I2C0x56 and24×24×8mm. Later mixed EOL U090 BMP28013mm segments explicitly excluded.",
+    "chip": {
+      "query": "QMP6988 package dimensions 2.5 2.5 0.9 metal cap pressure hole datasheet",
+      "responseSha256": "bc43c1fcadf5dca1a3d5902bd21c19fdfed3e0ce32030659b4043a7ce91fe274",
+      "result": "QST13-52-13 RevC p11 gives LGA9,2.00×2.50×0.85mm,1.82×2.32mm cap,Ø0.20mm vent at package[-.46,.71];own official-linked PDF independently read.",
+      "rawResponseDistributed": false
+    }
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/BPS(QMP6988)/img-ad69b9ae-bcd5-430b-a1ad-3d7dee6de926.webp",
+    "sha256": "cf7d1297abd3e76908e425abf1487bc1bfabf3b30d562a4f840334aebe66d2ad"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/78baf68c49d623a7c8a9277c45d97c8e4ffbb80d/Products/U090-B_Unit_Mini_BPS_v1.1/Structures/Unit_Mini_BPS_v1.1.stl",
+      "commit": "78baf68c49d623a7c8a9277c45d97c8e4ffbb80d",
+      "gitBlob": "fb8c5852c5a4357cf0adc9e049cb8c1d0618c253",
+      "sha256": "7741642f2391a3bba614e082abdf0091b496b1dbfaea1ba9ef3c657b5c1c2da5",
+      "license": "MIT; preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/BPS(QMP6988)/img-61abcaeb-6126-4445-ba9c-10599ee0411c.webp",
+      "sha256": "4b2498f2a1b1ce1cb0a723c6b1e1b326bd3afbc1a33b50122050d4230bae9463"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/BPS(QMP6988)/img-da0dfb96-fca7-4f3f-b665-9ed9c10b3598.webp",
+      "sha256": "e6aef3a1602bdac6d5a5b7b66bdd799c4ce96c951c8c768054b9835ab35a65e1"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/740/U090-B-package.jpg",
+      "sha256": "f430c3ac16211c01af01e42855d4eebf76a7b6ec47ab134fe1e98066c885baf2"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/BPS(QMP6988)/img-ad69b9ae-bcd5-430b-a1ad-3d7dee6de926.webp",
+      "sha256": "cf7d1297abd3e76908e425abf1487bc1bfabf3b30d562a4f840334aebe66d2ad"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/BPS(QMP6988)/img-d13305dc-f06c-485d-8c67-b4aa4ada24d9.webp",
+      "sha256": "6a6138a0ea32929a06832761520dcd4c376039ba3b332462f8d4264441d1c71b"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/BPS(QMP6988)/img-b6196263-bfef-48b8-b6bc-89213882d8e8.webp",
+      "sha256": "185f7da29089434d7bf8b96b8e882b6eb8acab1d7d7f02f1112a28ca0679e1ed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/BPS(QMP6988)/img-4e77d8e1-09d6-43d6-a0da-d7e15d171c79.png",
+      "sha256": "ac8c812a1999404d0464121f62fbd7f91099f73feccffa05ab893348dc314f3e"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/BPS(QMP6988)/img-b2c73882-6358-4799-bec0-c5ca736dfc20.png",
+      "sha256": "90011a0615537782620fc9ab11835338a26f6686414e0352b448d4da58d54cf4"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/static/assets/img/uiflow2/uiflow2.0_banner_01.png",
+      "sha256": "8f6b8b724cae5a82ea474955f5f1b25724493e96cd1e8941391860852a4471e0"
+    }
+  ],
+  "manufacturerPackageReference": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/enviii/QMP6988%20Datasheet.pdf",
+    "sha256": "05e7ec9a14d5a968c2ec156be092c22bc4f4dcd504cbc879b6f69cea513c8c59",
+    "page": 11,
+    "document": "QST13-52-13 RevC",
+    "rawSourceDistributed": false,
+    "evidence": "LGA9 package2.00×2.50×0.85mm;cap1.82×2.32mm;Ø0.20mm pressure hole and offsets;gold terminal surface"
+  },
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "originalAssemblyTriangles": 4162,
+    "outputTriangles": 4162,
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      87.38400268554688,
+      12,
+      -4
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "localModification": null,
+    "notes": "All4162 native assembled front/rear triangles retained at scale1 under one common translation only. Components1/2 are displaced duplicate rear/front shells. Own U090-B path and commit verified even though this enclosure is shared with other Mini Units. Front air slots,mounting bores,Grove cutout,rear label recess and M5 relief remain unchanged. PCB,QMP6988 vented metal package,HT7533,BSS138/passives,Grove interior and fixed fastener are appearance reconstruction. Exact U090-B QMP6988 v1.1;no old U090 BMP280/13mm geometry or artwork."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      24,
+      8
+    ],
+    "vendorDimensionOrderMm": [
+      24,
+      24,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      24,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24,
+      24,
+      8.039999999552965
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        0
+      ],
+      [
+        8,
+        0
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "sensorPackageMm": [
+      2,
+      2.5,
+      0.85
+    ],
+    "pressurePortDiameterMm": 0.2,
+    "dimensionEvidence": "Exact U090-B table,own dimension drawing and native shell agree24×24×8mm. Shared shell origin translated only. Physical front adhesive film adds inferred0.04mm to visual thickness."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 2,
+    "sourceDetails": "docs/research/mini-bps-v11/artwork.json",
+    "originalsDistributed": false
+  },
+  "scope": "Complete native shell,dark PCB,physical QMP6988 substrate/vented metal skirt/lid/internal cavity/die/LGA9 lands,HT7533,BSS138/passives,red Grove,fixed fastener,independent adhesive films and passive visual sensor anchor only.No pressure,temperature,altitude,airflow,register,I2C,electrical or firmware simulation.",
+  "inferred": [
+    "PCB outline/installed plane and concealed population placement",
+    "QMP6988 installed rotation under two air slots,metal skirt/lid thickness,internal die/cavity rendering",
+    "HT7533/BSS138/passive package installation,Grove internals and fixed fastener placement",
+    "Typography,colours,adhesive film thickness and print registration"
+  ],
+  "notes": [
+    "All4162 assembled native triangles retained at scale1 under one common translation only;displaced duplicates excluded.",
+    "Own U090-B CAD path/commit verified although identical shell is shared with other Mini Units;this is not a wrong-path substitution.",
+    "EOL U090 BMP28013mm variant and its artwork excluded.",
+    "Air-slot margin has real PCB backing;actualØ0.20mm pressure port has deeper cavity/die rather than flat gap-cover.",
+    "No LED,button,display or joint registered. Sensor is passive and rejects numeric/firmware commands.",
+    "Model/GroveModule artwork:false retain every physical attribute,index and world matrix,including two adhesive film substrates.",
+    "Two final reference-redraw PNGs only;no raw CAD,photos,private vector,generator or intermediate distributed."
+  ],
+  "feedback": null,
+  "runtimeFiles": [
+    {
+      "path": "src/units/mini-bps-v11/assembly.js",
+      "sha256": "6dfa101dad0304e33206f3012f7771a5accb68c6e4d4add8a57abb0528eebbcb"
+    },
+    {
+      "path": "src/units/mini-bps-v11/cad-map.json",
+      "sha256": "e5d027cd845180b397d34c92ae0c0eee067c66e7322af66ec0770ea9b4d9e6af"
+    },
+    {
+      "path": "src/units/mini-bps-v11/dimensions.js",
+      "sha256": "fa1686314914a6cb6e1aeca93717f8a59590a9f347fe58e36e74d2d100a1a5dd"
+    },
+    {
+      "path": "src/units/mini-bps-v11/geometry-data.js",
+      "sha256": "edba5da131d4f5c4d2246cbca9096fa9fe38c31d4715d691bd3ded2d39d7401b"
+    },
+    {
+      "path": "src/units/mini-bps-v11/index.js",
+      "sha256": "cc0a947abfa4a1c810a666e56b70fd28b58566f312e892196fc7d136dbe74fe5"
+    },
+    {
+      "path": "src/units/mini-bps-v11/reference-redraw-back.png",
+      "sha256": "bf490a396cac2cbe632f5019c2620d41f612ffcbed76add74f5833105560d3eb"
+    },
+    {
+      "path": "src/units/mini-bps-v11/reference-redraw-front.png",
+      "sha256": "aded45a708b82af9ba8e44d9c69bdc9323769f92ccbc14aaee313ac7d1443cad"
+    },
+    {
+      "path": "src/units/mini-bps-v11/stickers.js",
+      "sha256": "12dd4987bb63d3b20aaa4187b9df0ddd0a0b72ac545d2f4c3c472c301f918e71"
+    }
+  ]
+}

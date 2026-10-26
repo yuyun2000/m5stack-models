@@ -1,6 +1,64 @@
 # 动态外壳接入：给下游 Agent
 
-本地最新新增 `rs485-iso`（U094）、`ain4-20ma`（U162）、`ac-measure`（U164），同步6张PNG：前两款各2张 `reference-redraw`，AC Measure正背2张 `source-vector-raster`。三款均导出 `Model` / `GroveModule` / `TerminalPlug` / `spec`，提供真实四芯 `grove` 与本款固定端子。当前本地112款（14主机、98Unit），全部 `modeled`、`verified` 为0；公开Git仍85款 `ad5d062`，随后二十七款本地增量未自动再次推送。完整API、配置、来源和三分支四芯例见[RS485-ISO/AIN4-20mA/AC Measure](ISOLATED-INTERFACE-UNITS.md)。
+2026-10-26端子修订：AC Measure/AIN4-20mA/BLDC Driver只补齐插舌四孔下壁，`terminal/screw-1…4`、装拆和所有端口/输入接口保持。当前SHA及局部验证见[闭合修复](TERMINAL-TONGUE-CLOSURE.md)；旧freeze/smoke是历史快照，不能代替当前修订来源。
+
+本地最新新增 `unit-id`（U124）、`rf433r`（U113）、`rf433t`（U114），同步6张本款官图代码重绘 `reference-redraw` PNG，每款正背各1张；没有照片裁切、借用相近型号或不可辨小字编造。当前本地127款（14主机、113Unit），全部 `modeled`、`verified` 为0。本次127款源码同步包含112款基线 `32c95e0` 后新增的15款Unit/28张对应PNG及三旧端子闭合修复，范围见[127款同步记录](GIT-SYNC-127-2026-10-26.md)。历史progress中的未提交/未推送字样仅描述其保存时点，远端状态以GitHub main及实际推送回执为准。完整API、来源和三分支四芯例见[ID/RF433R/RF433T](ID-RF433-UNITS.md)，30批记录见[本地增量索引](LOCAL-EXPANSION.md)。
+
+三款分别保留本款原壳、真实芯片封装/引脚、PCB、Grove深腔/四触点和独立胶贴基底。ID为本款ATECC608B-TNGTLSU-G器件外观；RF433R与RF433T分别采用真实接收/发射器及晶体/外围，内置PCB天线固定、不发光，没有外接SMA、胶棒或弹簧天线，不挖假观察窗或造关节。共用壳只在本款自有CAD来源核对后保留，不套用另一型号的芯片或印刷。隐藏板位/铜天线布局/安装、字体颜色与印刷配准仍标明推导，不宣称生产配合。
+
+三款本体组件均只有 `grove`，没有 `sensor` / `button` / `joint` / `led` / display；均导出 `Model` / `GroveModule` / `spec`。总入口六个别名为 `IdUnit` / `IdUnitModule`、`Rf433rUnit` / `Rf433rUnitModule`、`Rf433tUnit` / `Rf433tUnitModule`；loader ID为三款slug。`unitFrame` / `cable`沿现有Grove接口外驱姿态和四芯线形，嵌套路径以前级实际Port ID作前缀，外驱不回送输入意图。外形只呈现真实连接和固定器件；没有身份值、数据帧、RF动画、读写/识别或收发功能。
+
+`artwork:false`保留两入口全部物理attributes/index与最顶层更新后的 `matrixWorld`，含独立胶贴基底；印刷不代替PCB、器件、原壳或插座。身份/密钥/证书/加密/I2C、RF/ASK/数据/强度/距离/通信、GPIO、供电/电气、物理和固件由外部框架实现。必要专项 `node scripts/check-id-rf433-units.mjs`，综合范围以[本批进度](../artifacts/id-rf433-expansion/progress.json)为准；没有新增逐面浏览器、全量历史或实物验收。私表、私有链接/原稿名、矢量、官图CAD原件、生成器和中间件留仓库外，仅公开最终普通PNG及安全配准/来源。
+
+## 此前：Accel / OP90 / OP180
+
+前批新增 `accel`（U056）、`op90`（U057）、`op180`（U058），同步4张本款官图代码重绘 `reference-redraw` PNG：Accel正背2张，OP90/OP180各背贴1张；没有照片裁切、借用相近型号或不可辨小字编造。该批完成时本地124款（14主机、110Unit），全部 `modeled`、`verified` 为0。公开仓库112款提交基线为 `32c95e0`，该批保存时其后共12款及三旧端子局部修复为本地增量；当前未推送范围以本文最新批次记录为准；Git同步范围见[112款同步记录](GIT-SYNC-112-2026-10-26.md)。完整API、来源和三分支四芯例见[Accel/OP90/OP180](ACCEL-OP90-OP180-UNITS.md)，29批记录见[本地增量索引](LOCAL-EXPANSION.md)。
+
+三款分别保留本款原壳、真实传感封装、PCB与器件、Grove插座和独立胶贴基底。OP90/OP180保留实际固定安装方向、槽型遮光壳、收发窗口、引脚与有意开放的检测空气隙；`90` / `180`是产品结构方向，不是可动角，不能为闭合填平真槽或造铰链。IR发射器不画可见灯、光束或检测锥。Accel没有真实可动机构，不以倾斜动画模拟内部加速度或数据；隐藏安装、内腔、图形字体/颜色和配准推导见单品研究。
+
+三款本体组件均只有 `grove`和被动 `sensor`，没有 `button` / `joint` / `led` / display；均导出 `Model` / `GroveModule` / `spec`。总入口六个别名为 `AccelUnit` / `AccelUnitModule`、`Op90Unit` / `Op90UnitModule`、`Op180Unit` / `Op180UnitModule`；loader ID为三款slug。`unitFrame` / `cable`沿现有Grove接口外驱姿态和四芯线形，嵌套路径以前级实际Port ID作前缀，外驱不回送输入意图。`sensor`只定位真实器件外观，不能写入数值、检测、计数或内部状态。
+
+`artwork:false`保留两入口全部物理attributes/index与最顶层更新后的 `matrixWorld`，含独立胶贴基底；印刷不代替PCB、光电封装、空气槽或插座。加速度/姿态数据、遮挡/检测/计数/电平、IR光学、I2C/GPIO、供电/电气、物理和固件由外部框架实现。必要专项 `node scripts/check-accel-opto-units.mjs`，综合范围以[本批进度](../artifacts/accel-op90-op180-expansion/progress.json)为准；没有新增逐面浏览器、全量历史或实物验收。私表、私有链接/原稿名、矢量、官图CAD原件、生成器和中间件留仓库外，仅公开最终普通PNG及安全配准/来源。
+
+## 此前：Mini PDM / Mini BPS v1.1 / MIC
+
+前批新增 `mini-pdm`（U089）、`mini-bps-v11`（U090-B）、`mic`（U096），同步5张本款官图代码重绘 `reference-redraw` PNG：前两款各正背2张，MIC背贴1张；没有照片裁切或不可辨小字编造。三款均导出 `Model` / `GroveModule` / `spec`，保留真实四芯 `grove` 和被动 `sensor`；MIC另有实际调节头的有限角关节。该批完成时本地121款（14主机、107Unit），全部 `modeled`、`verified` 为0。公开仓库112款提交基线为 `32c95e0`，该批保存时其后共9款为本地增量；当前未推送范围以本文最新批次记录为准；Git同步范围见[112款同步记录](GIT-SYNC-112-2026-10-26.md)。完整API、来源和三分支四芯例见[Mini PDM/Mini BPS v1.1/MIC](AUDIO-PRESSURE-UNITS.md)，28批记录见[本地增量索引](LOCAL-EXPANSION.md)。
+
+Mini PDM保留本款SPM1423HM4H-B金属MEMS封装、真实声孔/深腔、PCB、HT7333及Grove。官方表为24×24×13mm，自身尺寸图与完整4162三角原壳为24×24×8mm，两者分别记录，不缩放原壳；反馈 `dcd6f74080ea478f8745ce19d5542ab8` 已保存。Mini BPS严格U090-B QMP6988 v1.1，保留4162三角原壳24×24×8mm、LGA9金属封装、Ø0.20mm真气孔/深腔、PCB、HT7533及BSS138；不混EOL U090 BMP280或其13mm几何/贴纸。两款前部双槽都有真实封装或PCB背衬，胶贴基底独立；安装/内腔、隐藏器件与印刷配准仍标明推导。
+
+MIC保留本款电容麦克风金属筒、真实穿孔网/内凹振膜、蓝色10K阈值电位器、MAX4466/LM393/HT7533与Grove。`threshold`仅外驱可见调节头的 `angleDeg` / `durationMs`，非零RPM被拒绝；当前−135～135°是保守外观范围，机械止点和电气零点未确认。蓝色固定座、刻线、PCB与麦克风不随头旋转，不产生电阻、增益、ADC、Din/阈值或声音事件。三款均没有灯、按钮或显示屏；被动 `sensor`没有内部数值命令。
+
+总入口六个别名为 `MiniPdmUnit` / `MiniPdmUnitModule`、`MiniBpsV11Unit` / `MiniBpsV11UnitModule`、`MicUnit` / `MicUnitModule`；loader ID为三款slug。`unitFrame` / `cable`沿现有Grove接口外驱姿态和四芯线形，嵌套路径以前级实际Port ID作前缀，外驱不回送输入意图。三款的麦克风声学/音频/录音、PDM时钟/数据、气压/温度/海拔、I2C/ADC/GPIO、电气和固件由其他框架实现。
+
+`artwork:false`保留两入口全部物理attributes/index与最顶层更新后的 `matrixWorld`，含独立胶贴基底；印刷不代替真实PCB、器件、孔网或插座。必要专项 `node scripts/check-audio-pressure-units.mjs`，综合范围以[本批进度](../artifacts/audio-pressure-expansion/progress.json)为准；没有新增逐面浏览器、全量历史或实物验收。私表、私有链接/原稿名、矢量、官图CAD原件、生成器和中间件留仓库外，仅公开最终普通PNG及安全配准/来源。
+
+## 此前：Roller485 Lite / Mini CAN / INA226-10A
+
+前批新增 `roller485-lite`（U182-Lite）、`mini-can`（U179）、`ina226-10a`（U200），同步7张PNG：Roller485 Lite三张、Mini CAN正背两张为同款官图代码重绘 `reference-redraw`，INA226-10A精确10A机身正背两张为原稿恢复栅格 `source-vector-raster`。三款均导出 `Model` / `GroveModule` / `TerminalPlug` / `spec`，保留真实四芯 `grove`。该批完成时本地118款（14主机、104Unit），全部 `modeled`、`verified` 为0。公开仓库112款提交基线为 `32c95e0`，该批保存时其后共6款为本地增量；当前未推送范围以本文最新批次记录为准；Git同步范围见[112款同步记录](GIT-SYNC-112-2026-10-26.md)。完整API、来源和三分支四芯例见[Roller485 Lite/Mini CAN/INA226-10A](ROLLER-MINI-CAN-INA226-UNITS.md)，27批记录见[本地增量索引](LOCAL-EXPANSION.md)。
+
+Roller485 Lite保留本款3504电机/转子、固定壳体、PCB、白色单色64×48 OLED、两颗独立RGB、Grove、PWR485与debug实体。`rotor`接受外驱角度/时长或连续视觉RPM，`press`压放实际壳舌并回弹，`lcd`仅接外部framebuffer，`rgb-1` / `rgb-2`默认off独立外驱。它只有单PWR485端子，不套其他Roller型号的顶部扩展口或滑环输出；没有 `sensor` 或 `grove-top`，不生成FOC、编码器数值、扭矩、负载、电流/速度环或电机物理。
+
+Mini CAN为本款非隔离TJA1051T/3 SO8、ME3116/MST5333与3012电感实体，完整3286三角原壳8mm保留，含固定端子的裸机为24×32×10.2mm。不套Unit CAN U085隔离模块或MCU。INA226为U20010A/5mΩ版本，保留MSOP10、隔离SOIC8封装、16脚B0505ST16-W5、保险丝/分流器；不是1A版本。其官方58mm名义与56mm原壳分别记录，固定座安装外伸为已标明推导，官方尺寸图适用范围反馈见单品来源。两款本体只有 `grove` / `terminal`，隐藏LED无确认外露光路，不造灯窗、数值锚点或按钮。
+
+三款均有可拆四螺钉 `TerminalPlug`，可用 `terminalPlug:true`安装或通过真实固定Port单独装拆。Roller使用 `pwr485/screw-1`…`screw-4`，Mini CAN/INA使用 `terminal/screw-1`…`screw-4`；四头仅接受 `angleDeg` / `durationMs`并可精确回位，拒非零RPM，不模拟螺纹轴向、夹紧或电气连接。总入口九个别名为 `Roller485LiteUnit` / `Roller485LiteUnitModule` / `Roller485LiteTerminalPlug`、`MiniCanUnit` / `MiniCanUnitModule` / `MiniCanTerminalPlug`、`Ina22610aUnit` / `Ina22610aUnitModule` / `Ina22610aTerminalPlug`；loader ID为三款slug。
+
+`unitFrame` / `cable`沿现有Grove接口外驱姿态和四芯线形，嵌套路径以前级实际Port ID作前缀，外驱不回送输入意图。`artwork:false`保留各配置全部物理attributes/index与最顶层更新后的 `matrixWorld`，印刷不替代PCB、端子、触点或胶贴基底。电机控制/反馈、串口/CAN/I2C、电流电压功率、电气保护、供电与固件由其他框架实现。必要专项 `node scripts/check-roller-mini-can-ina226-units.mjs`，综合范围以[本批进度](../artifacts/roller-mini-can-ina226-expansion/progress.json)为准；没有新增逐面浏览器、全量历史或实物验收。私表、私有链接/原稿名、矢量、官图CAD原件、生成器和中间件留仓库外，仅公开最终普通PNG及安全配准/来源。
+
+## 此前：UWB / TMOS PIR / Mini ToF-90
+
+前批新增 `uwb`（U100）、`tmos-pir`（U185）、`mini-tof-90`（U196），同步6张PNG：UWB标准机身正背2张 `source-vector-raster`，另两款各2张本款官图代码重绘 `reference-redraw`。三款均导出 `Model` / `GroveModule` / `spec`，保留真实四芯 `grove`。该批完成时本地115款（14主机、101Unit），全部 `modeled`、`verified` 为0。公开仓库112款提交基线为 `32c95e0`，该批保存时新增三款为本地增量；当前未推送范围以本文顶部记录为准；Git同步范围见[112款同步记录](GIT-SYNC-112-2026-10-26.md)。完整API、来源与三分支四芯例见[UWB/TMOS PIR/Mini ToF-90](RANGING-PRESENCE-UNITS.md)，26批记录见[本地增量索引](LOCAL-EXPANSION.md)。
+
+UWB为本款Ai-Thinker BU01/DW1000及STM32F103C8T6实体，完整3796三角原壳、黑色PCB、内置固定平面铜天线、晶振/稳压器和蓝色Grove均保留。只有 `grove`，无sensor/button/LED/joint，不套外置SMA或胶棒天线。标准机身原稿恢复保留原色与轮廓，仅修正转换的 `evenodd`→`nonzero`复合字腔；包装、照片及跨SKU同名候选排除，原稿/映射仅留仓库外。
+
+TMOS PIR为本款STHS34PF80金属封装与凹入硅滤光窗、PCB背衬，只有被动 `sensor` 外观锚点及 `grove`。不套旧PIR半球菲涅耳，不画可见红外/检测锥，不提供人体存在、温度、运动或数值状态。官方规格表5.2mm与本款尺寸图/完整STL的8mm厚度冲突，保留24×32×8原始实体并已反馈，见单品来源。
+
+Mini ToF-90保留固定90°两块PCB、板间四针、VL53L0X分离收发窗和深腔实体，光学方向固定+Y，不造铰链或外驱转动。`sensor`仅被动外观锚点；`power-led`为独立固定红色D1外驱明暗，默认off，无光晕。原生Grove侧嵌件的导光材料与耦合属于已标明的外观推导，灯不随连接/供电/距离自动联动，IR窗保持不发可见光。
+
+总入口别名 `UwbUnit` / `UwbUnitModule`、`TmosPirUnit` / `TmosPirUnitModule`、`MiniTof90Unit` / `MiniTof90UnitModule`，loader ID为三款slug。`unitFrame` / `cable`沿现有Grove接口接受外驱姿态/线形；嵌套时以前级实际port ID作路径前缀，外驱不回送输入。`artwork:false`保留本款全部物理attributes/index及最顶层更新后的世界矩阵；印刷不代替PCB、光窗、胶贴基底或插口背衬。RF/AT/定位/测距、人体存在/温度、I2C、电气与固件由其他框架实现。必要专项 `node scripts/check-ranging-presence-units.mjs`，综合范围以[本批进度](../artifacts/ranging-presence-expansion/progress.json)为准，没有新增逐面浏览器、全量历史或实物验收。私表、私有链接/原稿名、矢量、官图CAD原件、生成器和中间件留仓库外，仅公开最终普通PNG及安全配准/来源。
+
+## 此前：RS485-ISO / AIN4-20mA / AC Measure
+
+前批新增 `rs485-iso`（U094）、`ain4-20ma`（U162）、`ac-measure`（U164），同步6张PNG：前两款各2张 `reference-redraw`，AC Measure正背2张 `source-vector-raster`。三款均导出 `Model` / `GroveModule` / `TerminalPlug` / `spec`，提供真实四芯 `grove` 与本款固定端子。该批完成时本地112款（14主机、98Unit），全部 `modeled`、`verified` 为0；该批保存时公开Git为85款 `ad5d062`，当时随后二十七款尚未推送；当前同步以本文顶部记录为准。完整API、配置、来源和三分支四芯例见[RS485-ISO/AIN4-20mA/AC Measure](ISOLATED-INTERFACE-UNITS.md)。
 
 RS485-ISO严格本款U094隔离本体，`terminal` 为 `vh3.96-4p`；`terminalPlug:true`装随附四螺钉插头。`terminator:true`须同时装插头，120Ω电阻及引线位于同一插头B/A入口并随其拆装，不增加假插口。`power-led`默认off，只接受独立外驱开关/亮度；固定白色是预览估计，`meta.colorConfirmed:false`，不是官方确认灯色或RGB规格，不随UART/端子/电源联动。
 

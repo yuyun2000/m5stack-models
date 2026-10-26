@@ -1,0 +1,95 @@
+{
+  "id": "roller485-lite",
+  "sku": "U182-Lite",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 3,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "New code-drawn high-resolution ordinary PNGs reproduce only clearly legible own U182-Lite 15.webp PORT.A.I2C/SCL/SDA/5V/GND and PWR485/G/6~16V/A/B,plus own12.webp O/D/C/G/V ISP field blocks.No photo crop,extracted image pixels or cross-variant label asset.",
+  "sources": [
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485%20Lite/15.webp",
+      "sha256": "7a184eebcd1721a7f3f43f54ae7fc269c46bf1ccc4c996a86e6f30aff2fd0f74"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485%20Lite/12.webp",
+      "sha256": "27db9f8c16a6bad654612012b2cadc68090935f1e228a35806c913d3fe716bec"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/roller485-lite/reference-redraw-port-a.png",
+      "sha256": "9087ece0bc43592d85288df0228857cbaa0ef8a5ec5983a767e91fd6fbb11a82",
+      "pixels": [
+        1440,
+        1840
+      ],
+      "sizeMm": [
+        7.2,
+        9.2
+      ],
+      "positionMm": [
+        0,
+        -19.8,
+        15.9
+      ],
+      "face": "bottom",
+      "kind": "reference-redraw",
+      "method": "printedArtwork",
+      "target": "Own physical port-a adhesive substrate",
+      "reference": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485%20Lite/15.webp"
+    },
+    {
+      "path": "src/units/roller485-lite/reference-redraw-pwr485.png",
+      "sha256": "0df2dbcf6a04685847a4044677509d3e8f038eb6efb3c60b0c887f1f1ad9da10",
+      "pixels": [
+        2400,
+        1380
+      ],
+      "sizeMm": [
+        16,
+        9.2
+      ],
+      "positionMm": [
+        14.85,
+        -19.8,
+        0
+      ],
+      "face": "bottom",
+      "kind": "reference-redraw",
+      "method": "printedArtwork",
+      "target": "Own physical pwr485 adhesive substrate",
+      "reference": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485%20Lite/15.webp"
+    },
+    {
+      "path": "src/units/roller485-lite/reference-redraw-debug.png",
+      "sha256": "fc33203e371c0d60b00320aedd13fab497a349dfc90e76ec95b8d7793044ea2d",
+      "pixels": [
+        2400,
+        870
+      ],
+      "sizeMm": [
+        16,
+        5.8
+      ],
+      "positionMm": [
+        0,
+        -13.35,
+        -19.825
+      ],
+      "face": "back",
+      "kind": "reference-redraw",
+      "method": "printedArtwork",
+      "target": "Own physical debug adhesive substrate",
+      "reference": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485%20Lite/12.webp"
+    }
+  ],
+  "limitations": [
+    "Fonts,colors,film thickness,edge radii and registration are appearance reconstruction rather than a print master.",
+    "Three physical adhesive substrates remain with artwork:false;the ISP substrate has a real open U notch around the debug mouth.",
+    "Only final ordinary PNGs distributed;no private table,link,mapping,source vector,generator,raw photograph or conversion intermediate.",
+    "No unreadable fine text,serial number or QR code invented."
+  ],
+  "rights": "Product names,printed designs and trademarks retain respective rights."
+}

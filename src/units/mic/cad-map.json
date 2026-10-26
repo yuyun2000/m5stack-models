@@ -1,0 +1,47 @@
+{
+  "sku": "U096",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/78baf68c49d623a7c8a9277c45d97c8e4ffbb80d/Products/U096_Unit_MIC/Structures/Unit_MIC.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/64dc44f3ea9ab1f1492e23fa2d596242a4cdf3f3",
+  "commit": "78baf68c49d623a7c8a9277c45d97c8e4ffbb80d",
+  "gitBlob": "64dc44f3ea9ab1f1492e23fa2d596242a4cdf3f3",
+  "sha256": "3033adf31fcc14703821b396e5d205bb087fec94621d779fa632bb9d888f659e",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/78baf68c49d623a7c8a9277c45d97c8e4ffbb80d/LICENSE",
+  "origin": [
+    -573.268798828125,
+    225.22348022460938,
+    4
+  ],
+  "axes": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "MIC complete native assembled front and rear shell",
+      "material": "shell",
+      "triangles": 3284
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 3284,
+  "localModification": null,
+  "notes": "Exact own U096 path-specific commit and expected Git blob verified. Component0 is the complete assembled front/rear shell,3284 triangles,24×32×8mm. Components1/2 are displaced duplicate front/rear shells. Complete assembled part retained at scale1 with one shared rigid180-degree Y rotation and translation;no native triangles cut,filled,patched or rearranged.Official24×32×8mm overall envelope agrees with the full native shell;the microphone and adjustment head remain within its front openings."
+}

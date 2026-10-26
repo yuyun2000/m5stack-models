@@ -1,0 +1,242 @@
+{
+  "checkedAt": "2026-10-26T13:19:43.417Z",
+  "status": "pass",
+  "scope": "Necessary own U0583254 native triangles,5mm open physical slot and opposing passive windows,closed package/PCB directed edges,open mount bores/FrontSide walls,4 actual package leads,5 schematic passives,four-contact Grove,rear physical film,all artwork attributes/index/matrixWorld invariance,passive sensor anchor,nested four-core Grove pose/independence/detach/disposal.No browser acceptance,production-fit,optical,electrical,counting,firmware or hardware validation.",
+  "meshes": 59,
+  "triangles": 21380,
+  "nativeTriangles": 3254,
+  "sourceAssemblyTriangles": 3254,
+  "nominalMm": [
+    36,
+    24,
+    8.8
+  ],
+  "dimensionDrawingMm": [
+    24,
+    36,
+    8.8
+  ],
+  "cadEnvelopeMm": [
+    24,
+    32,
+    8
+  ],
+  "visualEnvelopeMm": [
+    24,
+    36,
+    8.8
+  ],
+  "boreRays": 10,
+  "boreWalls": 20,
+  "openSlotRays": 9,
+  "slotWidthMm": 5,
+  "slotDepthMm": 5.5,
+  "slotDepthInferred": true,
+  "slotWindowHits": [
+    {
+      "side": -1,
+      "window": "OP180 recessed passive emitter window",
+      "distanceMm": 2.560000001341105
+    },
+    {
+      "side": 1,
+      "window": "OP180 recessed passive receiver window",
+      "distanceMm": 2.560000001341105
+    }
+  ],
+  "pcbTopology": {
+    "edges": 1812,
+    "invalidEdges": 0,
+    "signedVolumeMm3": 349.36603863795636
+  },
+  "armTopologies": [
+    {
+      "edges": 3120,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 129.80884729237997
+    },
+    {
+      "edges": 3120,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 129.80884729237997
+    }
+  ],
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        5,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Physical rear adhesive film seated on original label recess"
+    },
+    {
+      "origin": [
+        0,
+        4,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Native plain front closed by full native shell"
+    },
+    {
+      "origin": [
+        0,
+        -30,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 22,
+      "purpose": "Grove mouth has deep physical dielectric carrier"
+    },
+    {
+      "origin": [
+        -3,
+        -30,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 20,
+      "purpose": "Grove physical contact 1"
+    },
+    {
+      "origin": [
+        -1,
+        -30,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 20,
+      "purpose": "Grove physical contact 2"
+    },
+    {
+      "origin": [
+        1,
+        -30,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 20,
+      "purpose": "Grove physical contact 3"
+    },
+    {
+      "origin": [
+        3,
+        -30,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 20,
+      "purpose": "Grove physical contact 4"
+    },
+    {
+      "origin": [
+        0,
+        -6,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Native rear retaining recess contains actual fixed screw"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Physical rear adhesive film seated on original label recess",
+      "hit": "OP180 physical rear adhesive label substrate",
+      "distanceMm": 11.150000000111758
+    },
+    {
+      "purpose": "Native plain front closed by full native shell",
+      "hit": "OP180 complete native assembled front and rear shell",
+      "distanceMm": 11
+    },
+    {
+      "purpose": "Grove mouth has deep physical dielectric carrier",
+      "hit": "OP180 Grove deep dielectric rear wall",
+      "distanceMm": 17.650000011920923
+    },
+    {
+      "purpose": "Grove physical contact 1",
+      "hit": "OP180 Grove real contact 1",
+      "distanceMm": 13.549999904632571
+    },
+    {
+      "purpose": "Grove physical contact 2",
+      "hit": "OP180 Grove real contact 2",
+      "distanceMm": 13.549999904632571
+    },
+    {
+      "purpose": "Grove physical contact 3",
+      "hit": "OP180 Grove real contact 3",
+      "distanceMm": 13.549999904632571
+    },
+    {
+      "purpose": "Grove physical contact 4",
+      "hit": "OP180 Grove real contact 4",
+      "distanceMm": 13.549999904632571
+    },
+    {
+      "purpose": "Native rear retaining recess contains actual fixed screw",
+      "hit": "",
+      "distanceMm": 11.14
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove"
+    ],
+    "anchors": [
+      "sensor"
+    ],
+    "controls": [],
+    "leds": [],
+    "joints": [],
+    "scope": "sensor is passive fixed optical-slot position only;no count/value/IR/detection commands"
+  },
+  "artwork": {
+    "panels": 1,
+    "kind": "reference-redraw",
+    "configurationChecks": 2,
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "noEcho": "pass",
+  "disposedResources": 104
+}

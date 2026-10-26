@@ -1,0 +1,48 @@
+{
+  "sku": "U124",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/66720a863658da9bab58a208d4ebf8a040c2d42c/Products/U124_Unit_ID/Structures/Unit_ID.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/48e92a95c14e29844db13856cc991e9d3f2f460f",
+  "commit": "66720a863658da9bab58a208d4ebf8a040c2d42c",
+  "gitBlob": "48e92a95c14e29844db13856cc991e9d3f2f460f",
+  "sha256": "29feff8f64d3d92a7de98b173eb7f0d663fc33e2401c34683ec34f9ea7dbbfd5",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/66720a863658da9bab58a208d4ebf8a040c2d42c/LICENSE",
+  "origin": [
+    122.52239990234375,
+    12,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 0,
+      "name": "Unit ID complete native assembled front and rear shell",
+      "material": "shell",
+      "triangles": 4178
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 4178,
+  "localModification": null,
+  "notes": "Exact own U124 path-specific commit and expected Git blob verified. Component0 is the complete4178-triangle assembled front/rear shell,24×24×8mm. Components1/2 are displaced duplicate shell halves. Full assembled part retained unscaled/unmodified with one common translation;no native faces removed,patched,filled or repositioned. Own product table and dimension drawing are24×24×8mm."
+}

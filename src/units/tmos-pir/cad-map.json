@@ -1,0 +1,43 @@
+{
+  "sku": "U185",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/d3ae864f161167af3f9698214012e1d135adc357/Products/U185_Unit_TMOS_PIR/Structures/Unit_TMOS_PIR.stl",
+  "commit": "d3ae864f161167af3f9698214012e1d135adc357",
+  "gitBlob": "7dac210351e336d3f43b9c2f3229d01f26b0c895",
+  "sha256": "8d6c5ab3715b9f86a2336716e05883988c2aea0f2df1b625b635aa4885d05b43",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/d3ae864f161167af3f9698214012e1d135adc357/LICENSE",
+  "origin": [
+    441.2688293457031,
+    269.2234802246094,
+    2.000001013278961
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "TMOS PIR complete native assembled front and rear shell",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "notes": "All3490 native assembled front/rear triangles retained at scale1 under one common translation only. Components1/2 are displaced duplicate rear/front shells. Front optical window, mounting bores, Grove cutout, rear label recess and M5 relief remain unchanged. PCB, STHS34PF80 LGA package and optical filter/internal backing, XC6228 regulator and passive population, Grove interior and fastener installation are visual reconstruction. Official table thickness5.2mm conflicts with own dimensional drawing and STL8mm; original shell remains scale1."
+}

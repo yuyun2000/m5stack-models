@@ -1,0 +1,74 @@
+{
+  "id": "uwb",
+  "sku": "U100",
+  "kind": "source-vector-raster",
+  "status": "source-vector-raster",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Matching exact-model standard front and rear product-label outlines rasterized at100px/mm with original colors and vector geometry;only original compound-path glyph winding restored.No photo cropping,no text reconstruction,no invented fine print.",
+  "corroboratingReferences": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_01.webp",
+      "sha256": "a207008bd6f4aebe2fdd44abd69dd2a64adb03b399f54385c4a48f48f6d9bbb5"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_02.webp",
+      "sha256": "abe3693e6ba669c7236b8a9c685b6924c0d542daa5979e65ea9c6ecede7e0e3e"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_08.webp",
+      "sha256": "706f3f6368a049e4cf55819b9818befd1cacf6cf5a77e6316e0b6437aa8e098f"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/uwb/source-vector-front.png",
+      "sha256": "4b3d0dd0f375eb4cb70117549056818d7d41ad6db1607d3900d22a47eee9f904",
+      "pixels": [
+        1780,
+        2780
+      ],
+      "sizeMm": [
+        17.8,
+        27.8
+      ],
+      "positionMm": [
+        0,
+        8,
+        3.85
+      ],
+      "face": "front",
+      "target": "UWB physical front adhesive substrate spanning actual native recess",
+      "kind": "source-vector-raster",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/uwb/source-vector-back.png",
+      "sha256": "7b083871f4c838b70e4fc2be96d48690ff1ac928d2fcee10a0473fc6d54871df",
+      "pixels": [
+        1600,
+        2800
+      ],
+      "sizeMm": [
+        16,
+        28
+      ],
+      "positionMm": [
+        0,
+        8,
+        -3.9
+      ],
+      "face": "back",
+      "target": "UWB physical rear adhesive substrate on native recess",
+      "kind": "source-vector-raster",
+      "method": "printedArtwork"
+    }
+  ],
+  "limitations": [
+    "Only final ordinary PNGs distributed.Private originals,source names,table rows,private links,vectors,mappings and conversion intermediates excluded.",
+    "Physical adhesive substrates,complete native shell and internal boards/packages remain independent of PNG loading and artwork:false.",
+    "Standard device variant only;packaging and alternate-variant candidates are not applied."
+  ],
+  "rights": "Product names,original printed designs and trademarks retain respective rights."
+}

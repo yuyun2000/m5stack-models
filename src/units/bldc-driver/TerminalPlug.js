@@ -26,7 +26,7 @@ export class TerminalPlug extends Module{
   // depths are appearance reconstruction, not production connector CAD.
   // These are not rated fit tolerances.
   const bores=spec.terminal.pinX.map(cx=>({w:1.5,h:1,r:.12,cx,cy:-.5}));
-  const tongue=crossSection(frame,{w:14.1,h:2.5,depth:7.6,y:0,z:.225,holes:bores,name:'bored mating tongue',material:plastic});
+  const tongue=crossSection(frame,{w:14.1,h:2.9,depth:7.6,y:0,z:.225,holes:bores,name:'bored mating tongue',material:plastic});
   const rear=crossSection(frame,{w:16.3,h:5.75,depth:.8,y:.8,z:.875,holes:bores,name:'bored rear shoulder',material:plastic});
   const floor=slab(frame,16.3,10.5,.6,.22,[0,5.25,-2.6],plastic,[],.035);floor.name='BLDC Driver plug channel floor';
   const deck=slab(frame,16.3,9.7,.65,.22,[0,5.65,3.75],plastic,spec.terminal.pinX.map(cx=>({w:2.7,h:2.7,r:1.35,cx,cy:5.2-5.65})),.035);deck.name='BLDC Driver plug screw-access deck';

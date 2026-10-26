@@ -1,0 +1,48 @@
+{
+  "sku": "U058",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/dbc93013098189c8c0995e7678347b75a369a366/Products/U058_Unit_OP180/Structures/Unit_OP180.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/2cd2e347cc949685e384fba0dcda4adcd148cd83",
+  "commit": "dbc93013098189c8c0995e7678347b75a369a366",
+  "gitBlob": "2cd2e347cc949685e384fba0dcda4adcd148cd83",
+  "sha256": "42a94f15958f9a451ad37c2350ee81a6766e6665fedddaf92b7214ad36f185ee",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/dbc93013098189c8c0995e7678347b75a369a366/LICENSE",
+  "origin": [
+    221.26881408691406,
+    315.2234802246094,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 0,
+      "name": "OP180 complete native assembled front and rear shell",
+      "material": "shell",
+      "triangles": 3254
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 3254,
+  "localModification": null,
+  "notes": "Exact own U058 path-specific commit and expected Git blob verified.Component0 is the complete3254-triangle assembled24×32×8mm shell.Components1/2 are displaced duplicate shell halves.Native shell retained unscaled/unmodified with one common translation;no native faces removed,patched,filled or repositioned.U058 dimension drawing36mm length and8.8mm depth include the fixed protruding ITR9606 package;24×32×8mm is the shell only."
+}

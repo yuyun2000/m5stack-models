@@ -1,0 +1,219 @@
+{
+  "checkedAt": "2026-10-26T13:19:25.247Z",
+  "status": "pass",
+  "scope": "Necessary local U056 complete3490 native triangles,real PCB through-hole/reliefs/FrontSide walls/directed topology,14-land3×5×.95mm ADXL345,HT7533/two AO3400A/eight passives,deep four-contact Grove,screw/two seated physical films,Model/GroveModule all artwork attributes/index/matrixWorld invariance,passive fixed sensor anchor,internal-command rejection,nested four-core pose/independence/detach/disposal.No exhaustive browser,production fit,acceleration,electrical,firmware or hardware validation.",
+  "meshes": 75,
+  "triangles": 30440,
+  "nativeTriangles": 3490,
+  "sourceAssemblyTriangles": 3490,
+  "nominalMm": [
+    32,
+    24,
+    8
+  ],
+  "dimensionDrawingMm": [
+    24,
+    32,
+    8
+  ],
+  "cadEnvelopeMm": [
+    24,
+    32,
+    8
+  ],
+  "visualEnvelopeMm": [
+    24,
+    32,
+    8.00000009536743
+  ],
+  "boreRays": 10,
+  "boreWalls": 20,
+  "pcbTopology": {
+    "edges": 1812,
+    "invalidEdges": 0,
+    "signedVolumeMm3": 364.01803174272555
+  },
+  "accelerometerPackageMm": [
+    3,
+    5,
+    0.9500000245869159
+  ],
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        7.05,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Physical front film backed by complete unperforated native shell"
+    },
+    {
+      "origin": [
+        0,
+        7.15,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Physical back film backed by native recessed support"
+    },
+    {
+      "origin": [
+        0,
+        -30,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 21,
+      "purpose": "Grove open mouth has a deeply recessed physical dielectric rear carrier"
+    },
+    {
+      "origin": [
+        -3,
+        -30,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 18,
+      "purpose": "Grove physical contact 1"
+    },
+    {
+      "origin": [
+        -1,
+        -30,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 18,
+      "purpose": "Grove physical contact 2"
+    },
+    {
+      "origin": [
+        1,
+        -30,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 18,
+      "purpose": "Grove physical contact 3"
+    },
+    {
+      "origin": [
+        3,
+        -30,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 18,
+      "purpose": "Grove physical contact 4"
+    },
+    {
+      "origin": [
+        0,
+        -4,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Native rear retaining recess contains real fixed screw head"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Physical front film backed by complete unperforated native shell",
+      "hit": "Accel physical front adhesive film seated on native label recess",
+      "distanceMm": 11.160000000894069
+    },
+    {
+      "purpose": "Physical back film backed by native recessed support",
+      "hit": "Accel physical back adhesive film seated on native label recess",
+      "distanceMm": 11.159999999999998
+    },
+    {
+      "purpose": "Grove open mouth has a deeply recessed physical dielectric rear carrier",
+      "hit": "Accel Grove deep dielectric rear wall",
+      "distanceMm": 19.650000011920923
+    },
+    {
+      "purpose": "Grove physical contact 1",
+      "hit": "Accel Grove real contact 1",
+      "distanceMm": 15.54999990463257
+    },
+    {
+      "purpose": "Grove physical contact 2",
+      "hit": "Accel Grove real contact 2",
+      "distanceMm": 15.54999990463257
+    },
+    {
+      "purpose": "Grove physical contact 3",
+      "hit": "Accel Grove real contact 3",
+      "distanceMm": 15.54999990463257
+    },
+    {
+      "purpose": "Grove physical contact 4",
+      "hit": "Accel Grove real contact 4",
+      "distanceMm": 15.54999990463257
+    },
+    {
+      "purpose": "Native rear retaining recess contains real fixed screw head",
+      "hit": "Accel recessed screw drive",
+      "distanceMm": 11.39
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove"
+    ],
+    "anchors": [
+      "sensor"
+    ],
+    "controls": [],
+    "leds": [],
+    "joints": [],
+    "scope": "sensor is passive fixed package position only; no acceleration/orientation/gravity/value commands"
+  },
+  "artwork": {
+    "panels": 2,
+    "kind": "reference-redraw",
+    "configurationChecks": 2,
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "noEcho": "pass",
+  "disposedResources": 119
+}

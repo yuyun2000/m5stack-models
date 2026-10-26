@@ -1,0 +1,71 @@
+{
+  "id": "mini-pdm",
+  "sku": "U089",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Own U089 blue microphone/green step symbol and readable rear PORT.I2S/CLK/DAT/5V/GND marks newly code-drawn and rasterized to final ordinary PNGs from exact-model official photograph references.No product photo crop,preview enlargement or extracted photo pixels.",
+  "sources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pdm/pdm_05.webp",
+      "sha256": "8aa1ef2ebb1f7ea43c2e2cc3489007256765e1fad524fbed8a631c559a1df60d"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pdm/pdm_02.webp",
+      "sha256": "91caea71a31531b58fb39d1282255a23aa1d6a722ea014e600bb9cd490c15881"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/mini-pdm/reference-redraw-front.png",
+      "sha256": "c3e7fd8c65480b65f22efed5f63fdb4575c5c015ec3d3f9493c1ffa81b23a22b",
+      "pixels": [
+        1024,
+        1024
+      ],
+      "sizeMm": [
+        5,
+        5
+      ],
+      "positionMm": [
+        0,
+        0,
+        4.05
+      ],
+      "face": "front",
+      "target": "Mini PDM physical front adhesive substrate",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/mini-pdm/reference-redraw-back.png",
+      "sha256": "bd4dd60db64f757fbb4743e8ec14c79eacc9359e422e47b552f9506b4159fdd3",
+      "pixels": [
+        1600,
+        420
+      ],
+      "sizeMm": [
+        16,
+        4.2
+      ],
+      "positionMm": [
+        0,
+        7.65,
+        -3.85
+      ],
+      "face": "back",
+      "target": "Mini PDM physical back adhesive substrate",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    }
+  ],
+  "limitations": [
+    "Typeface,colors,symbol curves,hatch pattern and registration are appearance reconstruction;unreadable tiny marks omitted.",
+    "Circular front and recessed rear physical adhesive films remain with artwork:false;no sticker closes acoustic,PCB,Grove or shell gaps.",
+    "Printed PORT.I2S is reproduced from the exact U089 product photo;it does not add an I2S protocol or audio implementation.",
+    "Only ordinary final PNGs distributed;no raw photos,source vectors,generators,private table,mappings or source links."
+  ],
+  "rights": "Product names,original printed designs and trademarks retain their respective rights."
+}

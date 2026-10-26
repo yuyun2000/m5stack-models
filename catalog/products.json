@@ -16559,7 +16559,10 @@
       },
       "verification": {
         "geometry": "docs/research/bldc-driver/smoke.json",
-        "visual": null
+        "visual": null,
+        "geometryAmendments": [
+          "docs/research/bldc-driver/terminal-tongue-closure.json"
+        ]
       },
       "mountingHolesMm": [
         [
@@ -17721,7 +17724,10 @@
       },
       "verification": {
         "geometry": "docs/research/ain4-20ma/smoke.json",
-        "visual": null
+        "visual": null,
+        "geometryAmendments": [
+          "docs/research/ain4-20ma/terminal-tongue-closure.json"
+        ]
       },
       "mountingHolesMm": [
         [
@@ -18191,7 +18197,10 @@
       },
       "verification": {
         "geometry": "docs/research/ac-measure/smoke.json",
-        "visual": null
+        "visual": null,
+        "geometryAmendments": [
+          "docs/research/ac-measure/terminal-tongue-closure.json"
+        ]
       },
       "mountingHolesMm": [
         [
@@ -18469,6 +18478,3773 @@
           "back"
         ],
         "sources": "docs/research/ac-measure/artwork.json"
+      },
+      "export": "Model"
+    },
+    {
+      "id": "uwb",
+      "category": "unit",
+      "name": "Unit UWB",
+      "sku": "U100",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        48,
+        8
+      ],
+      "vendorDimensionOrderMm": [
+        48,
+        24,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        48,
+        7.999999761581421
+      ],
+      "cadEnvelopeMm": [
+        24,
+        48,
+        7.999999761581421
+      ],
+      "stage": "modeled",
+      "entry": "src/units/uwb/index.js",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/uwb/uwb_01.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/uwb",
+      "research": "docs/research/uwb/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/uwb/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          -12
+        ],
+        [
+          8,
+          -12
+        ]
+      ],
+      "mountingHoleDiameterMm": 5,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -23.7,
+            1.2
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "UART_RX",
+            "UART_TX"
+          ]
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "visualMotion": {},
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            8,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 12,
+          "purpose": "Physical front adhesive substrate and internal PCB close label recess independently of PNG"
+        },
+        {
+          "origin": [
+            0,
+            8,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 12,
+          "purpose": "Rear native recess has physical adhesive substrate and full shell floor"
+        },
+        {
+          "origin": [
+            0,
+            -34,
+            1.2
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 17,
+          "purpose": "Grove real deep cavity has recessed solid rear carrier"
+        },
+        {
+          "origin": [
+            -3,
+            -34,
+            1.4
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 13,
+          "purpose": "Four-core Grove physical contact 1"
+        },
+        {
+          "origin": [
+            -1,
+            -34,
+            1.4
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 13,
+          "purpose": "Four-core Grove physical contact 2"
+        },
+        {
+          "origin": [
+            1,
+            -34,
+            1.4
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 13,
+          "purpose": "Four-core Grove physical contact 3"
+        },
+        {
+          "origin": [
+            3,
+            -34,
+            1.4
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 13,
+          "purpose": "Four-core Grove physical contact 4"
+        },
+        {
+          "origin": [
+            0,
+            28,
+            -0.4
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 5,
+          "purpose": "Native antenna-end relief is backed by actual integrated BU01 PCB"
+        },
+        {
+          "origin": [
+            0,
+            -12,
+            -12
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 9,
+          "purpose": "Native central retaining recess has actual fixed screw"
+        }
+      ],
+      "limitations": [
+        "Complete own3796 native assembled CAD triangles retained at scale1;two displaced duplicates excluded.",
+        "Concealed board/module/IC positions,connector contacts and integrated antenna thickness are appearance reconstruction,not manufacturing fit or RF geometry.",
+        "No confirmed exterior button,LED light path,moving part or removable SMA antenna;none invented.No synthetic ranging sensor state.",
+        "Two exact standard product-label source-vector-raster PNGs;physical adhesive substrates and internal geometry remain with artwork:false.",
+        "No RF,ranging,positioning,AT,UART,electrical,firmware,hardware or exhaustive browser validation."
+      ],
+      "nextAction": "Continue exact Unit expansion with matching artwork;refine concealed BU01 installation only with new exact-model evidence.",
+      "artwork": {
+        "status": "source-vector-raster",
+        "kind": "source-vector-raster",
+        "originalsDistributed": false,
+        "pngCount": 2,
+        "variants": [
+          "front",
+          "back"
+        ],
+        "sources": "docs/research/uwb/artwork.json"
+      },
+      "export": "Model"
+    },
+    {
+      "id": "tmos-pir",
+      "category": "unit",
+      "name": "Unit TMOS PIR",
+      "sku": "U185",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        32,
+        8
+      ],
+      "vendorDimensionOrderMm": [
+        32,
+        24,
+        5.2
+      ],
+      "drawingDimensionOrderMm": [
+        32,
+        24,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        32,
+        8.00000009536743
+      ],
+      "cadEnvelopeMm": [
+        24,
+        32,
+        8
+      ],
+      "stage": "modeled",
+      "entry": "src/units/tmos-pir/index.js",
+      "reference": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT-TMOS%20PIR/6.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_TMOS_PIR",
+      "research": "docs/research/tmos-pir/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/tmos-pir/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          -4
+        ],
+        [
+          8,
+          -4
+        ]
+      ],
+      "mountingHoleDiameterMm": 5,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -15.8,
+            1.4
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SDA",
+            "SCL"
+          ]
+        }
+      ],
+      "visualMotion": {},
+      "closureChecks": [
+        {
+          "origin": [
+            -0.7,
+            7.72,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 12,
+          "purpose": "Native optical opening has real recessed STHS34PF80 silicon filter/package"
+        },
+        {
+          "origin": [
+            3.7,
+            8,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 14,
+          "purpose": "Window margin has genuine dark PCB backing and depth"
+        },
+        {
+          "origin": [
+            0,
+            -24,
+            1.4
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 15,
+          "purpose": "Grove insertion cavity has recessed rear wall"
+        },
+        {
+          "origin": [
+            -3,
+            -24,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 11,
+          "purpose": "Grove contact1 is recessed physical metal"
+        },
+        {
+          "origin": [
+            -1,
+            -24,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 11,
+          "purpose": "Grove contact2 is recessed physical metal"
+        },
+        {
+          "origin": [
+            1,
+            -24,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 11,
+          "purpose": "Grove contact3 is recessed physical metal"
+        },
+        {
+          "origin": [
+            3,
+            -24,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 11,
+          "purpose": "Grove contact4 is recessed physical metal"
+        },
+        {
+          "origin": [
+            0,
+            -4,
+            -12
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 9,
+          "purpose": "Rear screw recess backed by real fixed fastener"
+        }
+      ],
+      "limitations": [
+        "Complete3490-triangle exact native assembled shell at scale1;displaced duplicates excluded.",
+        "Official table5.2mm conflicts with own dimension drawing and STL8mm; native geometry preserved and feedback052dc71fcd6b48e5a17651bb4f438896 accepted.",
+        "PCB/package internals/population,Grove and fastener installation are appearance reconstruction,no production-fit claim.",
+        "Passive sensor anchor only;no presence/motion/temperature,IR emission/cone,register,I2C,electrical or firmware implementation.",
+        "Two reference-redraw PNGs;full browser visual acceptance deferred."
+      ],
+      "nextAction": "Continue Unit expansion with matching artwork;refine concealed installation or dimension attribution only when exact official assembly/revision evidence becomes available.",
+      "artwork": {
+        "status": "reference-redraw",
+        "kind": "reference-redraw",
+        "originalsDistributed": false,
+        "pngCount": 2,
+        "variants": [
+          "front",
+          "back"
+        ],
+        "sources": "docs/research/tmos-pir/artwork.json"
+      },
+      "export": "Model"
+    },
+    {
+      "id": "mini-tof-90",
+      "category": "unit",
+      "name": "Unit Mini ToF-90°",
+      "sku": "U196",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        24,
+        8
+      ],
+      "vendorDimensionOrderMm": [
+        24,
+        24,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        24.000000953674316,
+        8.00000009536743
+      ],
+      "cadEnvelopeMm": [
+        24,
+        24.000000953674316,
+        8
+      ],
+      "stage": "modeled",
+      "entry": "src/units/mini-tof-90/index.js",
+      "reference": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1143/U196_02.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_Mini_ToF-90",
+      "research": "docs/research/mini-tof-90/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/mini-tof-90/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          0
+        ],
+        [
+          8,
+          0
+        ]
+      ],
+      "mountingHoleDiameterMm": 4.85,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -11.8,
+            1.4
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SDA",
+            "SCL"
+          ]
+        }
+      ],
+      "controls": [],
+      "externalLeds": [
+        {
+          "id": "power-led",
+          "fixedColor": "#ff2020",
+          "defaultOff": true,
+          "noHalo": true,
+          "scope": "Own D1 red.Native Grove-side guide material/coupling inferred;external on/brightness changes material only,no automatic power/RGB behavior"
+        }
+      ],
+      "visualAnchors": [
+        {
+          "id": "sensor",
+          "kind": "component",
+          "role": "visual-anchor",
+          "positionMm": [
+            0,
+            11.96,
+            -1.2
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ],
+          "scope": "Passive fixed90-degree optical appearance only;rejects range/value/tilt commands"
+        }
+      ],
+      "visualMotion": {
+        "sensor": {
+          "kind": "fixed-installation",
+          "boardAngleDeg": 90,
+          "outward": [
+            0,
+            1,
+            0
+          ],
+          "joint": null,
+          "scope": "Fixed perpendicular dual-board optical package;no adjustable tilt,IR beam,visible cone or measured distance"
+        }
+      },
+      "closureChecks": [
+        {
+          "origin": [
+            -1.22,
+            20,
+            -1.2
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 9,
+          "purpose": "Emitter aperture backed by passive actual package window"
+        },
+        {
+          "origin": [
+            0.72,
+            20,
+            -1.2
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 9,
+          "purpose": "Receiver aperture backed by passive actual package window"
+        },
+        {
+          "origin": [
+            3,
+            20,
+            -1.2
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 9,
+          "purpose": "Large native side opening backed by real black optical surround"
+        },
+        {
+          "origin": [
+            0,
+            7.7,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 12,
+          "purpose": "Real front adhesive substrate bridges native label recess"
+        },
+        {
+          "origin": [
+            0,
+            7.7,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 12,
+          "purpose": "Real rear adhesive substrate bridges native label recess"
+        },
+        {
+          "origin": [
+            7.9,
+            -9,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 12,
+          "purpose": "Native narrow Grove-side slot retains actual native insert"
+        },
+        {
+          "origin": [
+            0,
+            -25,
+            1.4
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 20,
+          "purpose": "Grove contact mouth has real dielectric back wall"
+        },
+        {
+          "origin": [
+            0,
+            0,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 12,
+          "purpose": "Central rear screw recess has actual retaining screw"
+        }
+      ],
+      "limitations": [
+        "Complete4550 own native assembled shell/insert triangles retained,scale1,unmodified;coarse native bore facet inradii preserved.",
+        "PCB/package/board-link/Grove details and guide material/coupling are appearance reconstruction,not manufacturing tolerances.",
+        "Fixed90-degree optical installation is not a hinge or tilt motion;two passive actual package windows with FrontSide cavities.",
+        "D1 red documented;external power-led uses native insert emissive only,no extra window/halo or automatic power state.",
+        "Front/back adhesive substrates and complete physical geometry survive artwork:false;two final exact-model reference-redraw PNGs.",
+        "No range/optical FoV/IR light,register,I2C,electrical,voltage/power or firmware simulation.No browser/physical acceptance."
+      ],
+      "nextAction": "Continue exact Unit expansion with matching artwork;refine concealed planes,guide coupling and installation only when authoritative assembly data appears.",
+      "artwork": {
+        "status": "reference-redraw",
+        "kind": "reference-redraw",
+        "originalsDistributed": false,
+        "pngCount": 2,
+        "variants": [
+          "front",
+          "back"
+        ],
+        "sources": "docs/research/mini-tof-90/artwork.json"
+      },
+      "export": "Model"
+    },
+    {
+      "id": "roller485-lite",
+      "category": "unit",
+      "name": "Unit Roller485-Lite",
+      "sku": "U182-Lite",
+      "scope": "visual-only",
+      "nominalMm": [
+        40,
+        40,
+        40
+      ],
+      "vendorDimensionOrderMm": [
+        40,
+        40,
+        40
+      ],
+      "visualEnvelopeMm": [
+        41,
+        30.000000000000004,
+        41
+      ],
+      "cadEnvelopeMm": [
+        40,
+        15.200000762939453,
+        40.024444580078125
+      ],
+      "stage": "modeled",
+      "entry": "src/units/roller485-lite/index.js",
+      "export": "Model",
+      "reference": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-Roller485%20Lite/4.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit-Roller485%20Lite",
+      "research": "docs/research/roller485-lite/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExport": "TerminalPlug",
+        "accessoryOption": "terminalPlug:true",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/roller485-lite/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -16,
+          -16
+        ],
+        [
+          -16,
+          16
+        ],
+        [
+          16,
+          -16
+        ],
+        [
+          16,
+          16
+        ]
+      ],
+      "mountingHoleAxis": [
+        0,
+        1,
+        0
+      ],
+      "mountingHoleDiameterMm": 4.85,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "front",
+          "positionMm": [
+            0,
+            -15.15,
+            19.8
+          ],
+          "outward": [
+            0,
+            0,
+            1
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SDA",
+            "SCL"
+          ]
+        },
+        {
+          "id": "pwr485",
+          "connector": "ht3.96-4p",
+          "face": "right",
+          "positionMm": [
+            19.8,
+            -13.2,
+            0
+          ],
+          "outward": [
+            1,
+            0,
+            0
+          ],
+          "pins": [
+            "GND",
+            "PVIN",
+            "RS485_A",
+            "RS485_B"
+          ]
+        },
+        {
+          "id": "debug",
+          "connector": "mx1.25-5p",
+          "face": "back",
+          "positionMm": [
+            0,
+            -14.1,
+            -19.85
+          ],
+          "outward": [
+            0,
+            0,
+            -1
+          ],
+          "printedLabels": [
+            "O",
+            "D",
+            "C",
+            "G",
+            "V"
+          ]
+        }
+      ],
+      "controls": [
+        "press"
+      ],
+      "externalLeds": [
+        "rgb-1",
+        "rgb-2"
+      ],
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            -30,
+            0
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 13,
+          "purpose": "OLED real glass and package back native opening"
+        },
+        {
+          "origin": [
+            0,
+            -15.15,
+            30
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 18,
+          "purpose": "Grove mouth has deep physical rear wall"
+        },
+        {
+          "origin": [
+            30,
+            -13.2,
+            0
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "maxDistance": 19,
+          "purpose": "PWR485 cavity has deep orange insulator"
+        },
+        {
+          "origin": [
+            30,
+            -13.4,
+            -5.94
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "maxDistance": 14,
+          "purpose": "Four real PWR485 contacts 1"
+        },
+        {
+          "origin": [
+            30,
+            -13.4,
+            -1.98
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "maxDistance": 14,
+          "purpose": "Four real PWR485 contacts 2"
+        },
+        {
+          "origin": [
+            30,
+            -13.4,
+            1.98
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "maxDistance": 14,
+          "purpose": "Four real PWR485 contacts 3"
+        },
+        {
+          "origin": [
+            30,
+            -13.4,
+            5.94
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "maxDistance": 14,
+          "purpose": "Four real PWR485 contacts 4"
+        },
+        {
+          "origin": [
+            0,
+            -14.1,
+            -30
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 16,
+          "purpose": "Debug real socket is open through U-shaped label to contacts/backstop"
+        },
+        {
+          "origin": [
+            14.85,
+            -30,
+            0
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 11,
+          "purpose": "PWR485 adhesive substrate exists with artwork:false"
+        }
+      ],
+      "visualMotion": {
+        "joints": [
+          {
+            "id": "rotor",
+            "continuous": true,
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "demoRpmMax": 60
+          }
+        ],
+        "buttons": [
+          "press"
+        ],
+        "display": [
+          "lcd"
+        ],
+        "leds": [
+          "rgb-1",
+          "rgb-2"
+        ],
+        "accessoryJoints": [
+          {
+            "id": "pwr485/screw-1",
+            "continuous": false,
+            "axis": [
+              0,
+              0,
+              1
+            ],
+            "visualRangeDeg": [
+              -180,
+              180
+            ]
+          },
+          {
+            "id": "pwr485/screw-2",
+            "continuous": false,
+            "axis": [
+              0,
+              0,
+              1
+            ],
+            "visualRangeDeg": [
+              -180,
+              180
+            ]
+          },
+          {
+            "id": "pwr485/screw-3",
+            "continuous": false,
+            "axis": [
+              0,
+              0,
+              1
+            ],
+            "visualRangeDeg": [
+              -180,
+              180
+            ]
+          },
+          {
+            "id": "pwr485/screw-4",
+            "continuous": false,
+            "axis": [
+              0,
+              0,
+              1
+            ],
+            "visualRangeDeg": [
+              -180,
+              180
+            ]
+          }
+        ]
+      },
+      "limitations": [
+        "Exact U182-Lite native fixed shells/diffuser retained8730 triangles at scale1;bare motor variant,no top LEGO enclosure,slip-ring,rotating Grove or top indicator.",
+        "Official nominal40mm cube versus native15.2mm case and linkedØ41×14.8mm motor;current41×30×41mm assembly is inferred appearance,not production datum.M5Stack dimension feedback b6a2e2bf5b174a788c7be66dab54c907 accepted.",
+        "Real single HT3.96 socket and optional supplied plug;connector/package/motor axial mounting and hidden circuit placement inferred from own source references.",
+        "Continuous angle/RPM,native A flexure,external64×48 white OLED and2RGB,screw visual angle only;no FOC,current,encoder,bus,power,firmware,clamp-force or load simulation.",
+        "3 own-photo reference-redraw PNGs on real adhesive substrates;all physical geometry stays with artwork:false.",
+        "No exact turntable/flange/bracket fit geometry or exhaustive browser/physical-device acceptance;stage remains modeled."
+      ],
+      "nextAction": "Continue exact Unit expansion with artwork;refine motor assembly datum only on new Lite-specific dimensional evidence.",
+      "artwork": {
+        "status": "reference-redraw",
+        "kind": "reference-redraw",
+        "originalsDistributed": false,
+        "pngCount": 3,
+        "variants": [
+          "port-a",
+          "pwr485",
+          "debug"
+        ],
+        "sources": "docs/research/roller485-lite/artwork.json"
+      },
+      "configurations": [
+        {
+          "id": "socket",
+          "label": "Bare terminal socket",
+          "options": {}
+        },
+        {
+          "id": "plug",
+          "label": "Supplied HT3.96-4P plug",
+          "options": {
+            "terminalPlug": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "mini-can",
+      "category": "unit",
+      "name": "Unit Mini CAN",
+      "sku": "U179",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        32,
+        10.2
+      ],
+      "vendorDimensionOrderMm": [
+        32,
+        24,
+        10.2
+      ],
+      "visualEnvelopeMm": [
+        24,
+        32.00000010728836,
+        10.200000005960465
+      ],
+      "cadEnvelopeMm": [
+        24,
+        32,
+        8
+      ],
+      "stage": "modeled",
+      "entry": "src/units/mini-can/index.js",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Mini%20CAN/img-2c2855ee-66df-4e53-bd5a-2c4f9f24364a.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit-Mini%20CAN",
+      "research": "docs/research/mini-can/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/mini-can/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          -4
+        ],
+        [
+          8,
+          -4
+        ]
+      ],
+      "mountingHoleDiameterMm": 5,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -15.7,
+            1.4
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "CAN_TX",
+            "CAN_RX"
+          ]
+        },
+        {
+          "id": "terminal",
+          "connector": "ht3.96-4p",
+          "face": "top",
+          "positionMm": [
+            0,
+            16,
+            2.45
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ],
+          "pins": [
+            "H",
+            "L",
+            "HV",
+            "G"
+          ]
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "visualMotion": {
+        "terminal": {
+          "kind": "detachable-accessory",
+          "option": "terminalPlug:true",
+          "exportName": "TerminalPlug",
+          "joints": [
+            "screw-1",
+            "screw-2",
+            "screw-3",
+            "screw-4"
+          ],
+          "continuous": false,
+          "scope": "External angle/duration of four visible screw heads only;no tightening,axial travel,clamp force,CAN,wiring or electrical mapping"
+        }
+      },
+      "configurations": [
+        {
+          "id": "plug",
+          "label": "Supplied HT3.96-4P plug",
+          "options": {
+            "terminalPlug": true
+          }
+        },
+        {
+          "id": "socket",
+          "label": "Bare terminal socket",
+          "options": {}
+        }
+      ],
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            -1,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 12,
+          "purpose": "Physical front die-cut adhesive substrate without texture"
+        },
+        {
+          "origin": [
+            0,
+            7,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 12,
+          "purpose": "Real rear adhesive substrate on original native recessed panel"
+        },
+        {
+          "origin": [
+            0,
+            -25,
+            1.4
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 17,
+          "purpose": "Grove cavity has recessed physical rear carrier"
+        },
+        {
+          "origin": [
+            -3,
+            -25,
+            1.25
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 12,
+          "purpose": "Grove physical contact1"
+        },
+        {
+          "origin": [
+            -1,
+            -25,
+            1.25
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 12,
+          "purpose": "Grove physical contact2"
+        },
+        {
+          "origin": [
+            1,
+            -25,
+            1.25
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 12,
+          "purpose": "Grove physical contact3"
+        },
+        {
+          "origin": [
+            3,
+            -25,
+            1.25
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 12,
+          "purpose": "Grove physical contact4"
+        },
+        {
+          "origin": [
+            -5.94,
+            25,
+            1.95
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 12,
+          "purpose": "Bare terminal socket recessed real contact1"
+        },
+        {
+          "origin": [
+            -1.98,
+            25,
+            1.95
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 12,
+          "purpose": "Bare terminal socket recessed real contact2"
+        },
+        {
+          "origin": [
+            1.98,
+            25,
+            1.95
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 12,
+          "purpose": "Bare terminal socket recessed real contact3"
+        },
+        {
+          "origin": [
+            5.94,
+            25,
+            1.95
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 12,
+          "purpose": "Bare terminal socket recessed real contact4"
+        },
+        {
+          "origin": [
+            0,
+            -4,
+            -12
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 10,
+          "purpose": "Actual central retaining recess has fixed screw"
+        }
+      ],
+      "limitations": [
+        "Complete3286 own native assembled shell triangles retained,scale1,unmodified;8mm shell and10.2mm socket-inclusive nominal depth distinguished.",
+        "PCB/package locations,socket/plug internals,insertion and screw installation are appearance reconstruction,not manufacturing fit.",
+        "Own U179 non-isolatedTJA1051T/3SO8,ME3116/MST5333/3012 inductor;no isolated CAN U085 module or MCU.",
+        "Physical front die-cut/rear label substrates survive artwork:false;two exact-model reference-redraw PNGs.",
+        "Concealed White LED1 has no confirmed exterior optical path;no public LED,button,sensor or body joint.",
+        "Four accessory screws accept angle/duration,return exactly and reject nonzeroRPM.No thread/clamp/power behavior.",
+        "No CAN messages,registers,voltage/current conversion,electrical,firmware,hardware or full browser validation."
+      ],
+      "nextAction": "Continue exact Unit expansion with matching artwork;refine concealed board/terminal installation only when authoritative assembly data appears.",
+      "artwork": {
+        "status": "reference-redraw",
+        "kind": "reference-redraw",
+        "originalsDistributed": false,
+        "pngCount": 2,
+        "variants": [
+          "front",
+          "back"
+        ],
+        "sources": "docs/research/mini-can/artwork.json"
+      },
+      "export": "Model"
+    },
+    {
+      "id": "ina226-10a",
+      "category": "unit",
+      "name": "Unit INA226-10A",
+      "sku": "U200",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        58,
+        10.2
+      ],
+      "vendorDimensionOrderMm": [
+        58,
+        24,
+        10.2
+      ],
+      "visualEnvelopeMm": [
+        24.000062942504883,
+        58.00003252029419,
+        10.200000005960465
+      ],
+      "cadEnvelopeMm": [
+        24.000062942504883,
+        56.00003242492676,
+        8
+      ],
+      "stage": "modeled",
+      "entry": "src/units/ina226-10a/index.js",
+      "reference": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1171/Unit_INA226-10A_02.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_INA226-10A",
+      "research": "docs/research/ina226-10a/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExport": "TerminalPlug",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/ina226-10a/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          -16
+        ],
+        [
+          8,
+          -16
+        ]
+      ],
+      "mountingHoleDiameterMm": 4.85,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -27.7,
+            1.2
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SDA",
+            "SCL"
+          ]
+        },
+        {
+          "id": "terminal",
+          "connector": "ht3.96-4p",
+          "face": "top",
+          "positionMm": [
+            0,
+            30,
+            2.45
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ],
+          "pins": [
+            "IN+",
+            "IN-",
+            "OUT-",
+            "OUT+"
+          ]
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "visualAnchors": [],
+      "visualMotion": {
+        "terminalPlug": {
+          "kind": "detachable-accessory",
+          "exportName": "TerminalPlug",
+          "option": "terminalPlug:true",
+          "port": "terminal",
+          "connector": "ht3.96-4p",
+          "jointIds": [
+            "screw-1",
+            "screw-2",
+            "screw-3",
+            "screw-4"
+          ],
+          "nestedJointExample": "terminal/screw-1",
+          "visualRangeDeg": [
+            -180,
+            180
+          ],
+          "continuous": false,
+          "scope": "External visible head angle/duration and exact reset only;no axial travel,clamp,torque,electrical or fuse behavior"
+        }
+      },
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            6,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 12,
+          "purpose": "Physical front adhesive substrate closes actual print recess without texture"
+        },
+        {
+          "origin": [
+            0,
+            6,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 12,
+          "purpose": "Real rear adhesive substrate and PCB back the original native label recess"
+        },
+        {
+          "origin": [
+            0,
+            -36,
+            1.2
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 15,
+          "purpose": "Grove cavity has recessed physical rear carrier"
+        },
+        {
+          "origin": [
+            -3,
+            -36,
+            1.05
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 11,
+          "purpose": "Grove physical contact1"
+        },
+        {
+          "origin": [
+            -1,
+            -36,
+            1.05
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 11,
+          "purpose": "Grove physical contact2"
+        },
+        {
+          "origin": [
+            1,
+            -36,
+            1.05
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 11,
+          "purpose": "Grove physical contact3"
+        },
+        {
+          "origin": [
+            3,
+            -36,
+            1.05
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 11,
+          "purpose": "Grove physical contact4"
+        },
+        {
+          "origin": [
+            -5.94,
+            38,
+            2.05
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 12,
+          "purpose": "Bare terminal socket recessed real contact1"
+        },
+        {
+          "origin": [
+            -1.98,
+            38,
+            2.05
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 12,
+          "purpose": "Bare terminal socket recessed real contact2"
+        },
+        {
+          "origin": [
+            1.98,
+            38,
+            2.05
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 12,
+          "purpose": "Bare terminal socket recessed real contact3"
+        },
+        {
+          "origin": [
+            5.94,
+            38,
+            2.05
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 12,
+          "purpose": "Bare terminal socket recessed real contact4"
+        },
+        {
+          "origin": [
+            0,
+            -16,
+            -12
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 10,
+          "purpose": "Actual central retaining recess has fixed screw"
+        }
+      ],
+      "limitations": [
+        "Exact U20010A/5mΩ variant;all5582 native assembled shell triangles retained at scale1,unmodified.",
+        "Nominal24×58×10.2mm,native shell24×56×8mm and fixed-socket appearance envelope are separate;2mm socket projection awaits official clarification.",
+        "PCB/concealed package installation,connector/cage interiors and mating depth are appearance reconstruction,not manufacturing or isolation clearance evidence.",
+        "No external sensor/button/LED/adjustable body joint;internal blue D2 remains non-emissive.",
+        "Detachable four-screw plug uses external angle/duration only,noRPM or automatic clamping motion.",
+        "Physical label substrates and complete geometry survive artwork:false;two exact source-vector-raster PNGs.",
+        "No current/voltage/power,measurement,I2C,isolation,fuse,electrical or firmware simulation.No browser/physical acceptance."
+      ],
+      "nextAction": "Continue exact Unit expansion with matching artwork;refine socket projection/installation only when official assembly clarification appears.",
+      "artwork": {
+        "status": "source-vector-raster",
+        "kind": "source-vector-raster",
+        "originalsDistributed": false,
+        "pngCount": 2,
+        "variants": [
+          "front",
+          "back"
+        ],
+        "sources": "docs/research/ina226-10a/artwork.json"
+      },
+      "export": "Model",
+      "configurations": [
+        {
+          "id": "socket",
+          "label": "Bare terminal socket",
+          "options": {}
+        },
+        {
+          "id": "plug",
+          "label": "Supplied HT3.96-4P plug",
+          "options": {
+            "terminalPlug": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "mini-pdm",
+      "category": "unit",
+      "name": "Unit Mini PDM",
+      "sku": "U089",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        24,
+        13
+      ],
+      "vendorDimensionOrderMm": [
+        24,
+        24,
+        13
+      ],
+      "dimensionDrawingMm": [
+        24,
+        24,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        24,
+        8.05000000037253
+      ],
+      "cadEnvelopeMm": [
+        24,
+        24,
+        8
+      ],
+      "stage": "modeled",
+      "entry": "src/units/mini-pdm/index.js",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/pdm/pdm_05.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/pdm",
+      "research": "docs/research/mini-pdm/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/mini-pdm/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          0
+        ],
+        [
+          8,
+          0
+        ]
+      ],
+      "mountingHoleDiameterMm": 5,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -11.8,
+            1.4
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "DAT",
+            "CLK"
+          ]
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "visualMotion": {},
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            0,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 12,
+          "purpose": "Physical circular front adhesive film independent of texture"
+        },
+        {
+          "origin": [
+            0,
+            7.65,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 12,
+          "purpose": "Physical rear pin-label film seated on original recess"
+        },
+        {
+          "origin": [
+            -1,
+            8.5,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 15,
+          "purpose": "Native twin sound slot sees real recessed microphone can"
+        },
+        {
+          "origin": [
+            1,
+            8.5,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 15,
+          "purpose": "Native twin sound slot sees real recessed microphone can"
+        },
+        {
+          "origin": [
+            0,
+            -25,
+            1.4
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 20,
+          "purpose": "Grove mouth has deep dielectric rear carrier"
+        },
+        {
+          "origin": [
+            -3,
+            -25,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 17,
+          "purpose": "Grove physical contact 1"
+        },
+        {
+          "origin": [
+            -1,
+            -25,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 17,
+          "purpose": "Grove physical contact 2"
+        },
+        {
+          "origin": [
+            1,
+            -25,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 17,
+          "purpose": "Grove physical contact 3"
+        },
+        {
+          "origin": [
+            3,
+            -25,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 17,
+          "purpose": "Grove physical contact 4"
+        },
+        {
+          "origin": [
+            0,
+            0,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 12,
+          "purpose": "Native rear retaining recess contains actual fixed screw"
+        }
+      ],
+      "limitations": [
+        "Complete4162 own native assembled shell triangles retained,scale1,unmodified.",
+        "Table24×24×13mm differs from own drawing/CAD24×24×8mm;nominal and actual separated;feedback dcd6f74080ea478f8745ce19d5542ab8 accepted,not yet corrected by official source.",
+        "Visual24×24×8.05mm includes reconstructed.05mm front adhesive film;concealed PCB/package installation/internal acoustic depth inferred.",
+        "Own datasheet SPM1423HM4H-B3.760×4.720×1.310mm,Ø.840 acoustic bore and6 lands;not generic microphone geometry.",
+        "Both physical films remain with artwork:false;two exact-model reference-redraw final PNGs.",
+        "Only Grove and passive sensor appearance anchor;no fabricated LED,button,joint,audio waveform or recording state.",
+        "No sampling,clock,PDM/I2S,register,value,electrical,power,firmware,hardware,acoustic or full browser validation."
+      ],
+      "nextAction": "Continue exact Unit expansion with matching artwork;resolve official13mm versus8mm dimension discrepancy if authoritative corrected data appears.",
+      "artwork": {
+        "status": "reference-redraw",
+        "kind": "reference-redraw",
+        "originalsDistributed": false,
+        "pngCount": 2,
+        "variants": [
+          "front",
+          "back"
+        ],
+        "sources": "docs/research/mini-pdm/artwork.json"
+      },
+      "export": "Model"
+    },
+    {
+      "id": "mini-bps-v11",
+      "category": "unit",
+      "name": "Unit Mini BPS v1.1",
+      "sku": "U090-B",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        24,
+        8
+      ],
+      "vendorDimensionOrderMm": [
+        24,
+        24,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        24,
+        8.039999999552965
+      ],
+      "cadEnvelopeMm": [
+        24,
+        24,
+        8
+      ],
+      "stage": "modeled",
+      "entry": "src/units/mini-bps-v11/index.js",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/BPS(QMP6988)/img-ad69b9ae-bcd5-430b-a1ad-3d7dee6de926.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/BPS(QMP6988)",
+      "research": "docs/research/mini-bps-v11/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/mini-bps-v11/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          0
+        ],
+        [
+          8,
+          0
+        ]
+      ],
+      "mountingHoleDiameterMm": 5,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -11.8,
+            1.4
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SDA",
+            "SCL"
+          ]
+        }
+      ],
+      "visualMotion": {},
+      "closureChecks": [
+        {
+          "origin": [
+            -1,
+            8.5,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 13,
+          "purpose": "Left native air slot backed by recessed QMP6988 metal cap"
+        },
+        {
+          "origin": [
+            1,
+            8.5,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 13,
+          "purpose": "Right native air slot backed by recessed QMP6988 metal cap"
+        },
+        {
+          "origin": [
+            -0.71,
+            8.04,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 14,
+          "purpose": "Actual pressure port terminates on deeper physical package die"
+        },
+        {
+          "origin": [
+            1.32,
+            8.5,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 14,
+          "purpose": "Air-slot margin has physical dark PCB backing"
+        },
+        {
+          "origin": [
+            0,
+            -20,
+            1.4
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 15,
+          "purpose": "Grove insertion cavity has recessed rear wall"
+        },
+        {
+          "origin": [
+            -3,
+            -20,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 11,
+          "purpose": "Grove contact1 is recessed physical metal"
+        },
+        {
+          "origin": [
+            -1,
+            -20,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 11,
+          "purpose": "Grove contact2 is recessed physical metal"
+        },
+        {
+          "origin": [
+            1,
+            -20,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 11,
+          "purpose": "Grove contact3 is recessed physical metal"
+        },
+        {
+          "origin": [
+            3,
+            -20,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 11,
+          "purpose": "Grove contact4 is recessed physical metal"
+        },
+        {
+          "origin": [
+            0,
+            0,
+            -12
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 9,
+          "purpose": "Rear screw recess backed by real fixed fastener"
+        }
+      ],
+      "limitations": [
+        "Exact U090-B QMP6988 revision;EOL U090 BMP28013mm variant excluded.",
+        "Complete4162-triangle native assembled shell at scale1;displaced duplicates excluded.",
+        "PCB/package installation/concealed population,Grove/fastener and film thickness inferred;no production-fit claim.",
+        "Passive sensor anchor only;no pressure,temperature,altitude,airflow,register,I2C,electrical or firmware implementation.",
+        "Two reference-redraw PNGs;full browser visual acceptance deferred."
+      ],
+      "nextAction": "Continue Unit expansion with matching artwork;refine concealed installation only when exact official assembly/revision evidence becomes available.",
+      "artwork": {
+        "status": "reference-redraw",
+        "kind": "reference-redraw",
+        "originalsDistributed": false,
+        "pngCount": 2,
+        "variants": [
+          "front",
+          "back"
+        ],
+        "sources": "docs/research/mini-bps-v11/artwork.json"
+      },
+      "export": "Model"
+    },
+    {
+      "id": "mic",
+      "category": "unit",
+      "name": "Unit MIC",
+      "sku": "U096",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        32,
+        8
+      ],
+      "vendorDimensionOrderMm": [
+        32,
+        24,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        32,
+        8
+      ],
+      "cadEnvelopeMm": [
+        24,
+        32,
+        8
+      ],
+      "stage": "modeled",
+      "entry": "src/units/mic/index.js",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/mic/mic_08.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/mic",
+      "research": "docs/research/mic/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/mic/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          -4
+        ],
+        [
+          8,
+          -4
+        ]
+      ],
+      "mountingHoleDiameterMm": 5,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -15.8,
+            1.35
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "D.OUT",
+            "A.OUT"
+          ]
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "visualMotion": {
+        "threshold": {
+          "kind": "joint",
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "limitsDeg": [
+            -135,
+            135
+          ],
+          "continuous": false,
+          "scope": "Finite external screwdriver-head angle/duration only;conservative display range,no resistance,electrical threshold,sound or RPM mapping"
+        }
+      },
+      "closureChecks": [
+        {
+          "origin": [
+            0.25,
+            10,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 12,
+          "purpose": "Microphone opening has physical perforated acoustic screen"
+        },
+        {
+          "origin": [
+            0,
+            10,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 12,
+          "purpose": "Acoustic perforation terminates at physical recessed diaphragm"
+        },
+        {
+          "origin": [
+            0.65,
+            2.9,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 12,
+          "purpose": "Real front adjustment aperture has moving cross-slotted metal head"
+        },
+        {
+          "origin": [
+            2.7,
+            2.25,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 12,
+          "purpose": "Front square aperture has fixed physical blue trimmer body"
+        },
+        {
+          "origin": [
+            0,
+            7,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 12,
+          "purpose": "Rear printed label has independent physical adhesive substrate"
+        },
+        {
+          "origin": [
+            0,
+            -25,
+            1.35
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 17,
+          "purpose": "Grove cavity has recessed physical rear wall"
+        },
+        {
+          "origin": [
+            -3,
+            -25,
+            1.55
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 12,
+          "purpose": "Grove physical contact1"
+        },
+        {
+          "origin": [
+            -1,
+            -25,
+            1.55
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 12,
+          "purpose": "Grove physical contact2"
+        },
+        {
+          "origin": [
+            1,
+            -25,
+            1.55
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 12,
+          "purpose": "Grove physical contact3"
+        },
+        {
+          "origin": [
+            3,
+            -25,
+            1.55
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 12,
+          "purpose": "Grove physical contact4"
+        },
+        {
+          "origin": [
+            0,
+            -4,
+            -12
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 10,
+          "purpose": "Central rear retaining recess has real fixed hex screw"
+        }
+      ],
+      "limitations": [
+        "Complete3284 own native assembled shell triangles retained,scale1,unmodified;24×32×8mm CAD and assembled physical envelopes agree.",
+        "PCB/package installation,microphone internals/screen pattern,trimmer installation and Grove details are appearance reconstruction,not manufacturing fit or acoustic validation.",
+        "Real front microphone chamber,perforated screen/diaphragm and blue trimmer/cross-slotted silver head close documented openings.",
+        "Conservative±135°threshold-head visual range is not confirmed production stop,resistance or electrical threshold calibration.",
+        "One physical rear adhesive substrate and exact-model reference-redraw PNG;front has no invented case label.",
+        "No LED/button/display or audio/sampling/recording/waveform/ADC/digital-threshold/electrical/firmware behavior.",
+        "Passive sensor anchor and external head motion only;full browser/physical acceptance unverified."
+      ],
+      "nextAction": "Continue exact Unit expansion with matching artwork;refine concealed installation and mechanical head range only when authoritative own-model assembly data appears.",
+      "artwork": {
+        "status": "reference-redraw",
+        "kind": "reference-redraw",
+        "originalsDistributed": false,
+        "pngCount": 1,
+        "variants": [
+          "back"
+        ],
+        "sources": "docs/research/mic/artwork.json"
+      },
+      "export": "Model"
+    },
+    {
+      "id": "accel",
+      "category": "unit",
+      "name": "Unit Accel",
+      "sku": "U056",
+      "scope": "visual-only",
+      "nominalMm": [
+        32,
+        24,
+        8
+      ],
+      "vendorDimensionOrderMm": [
+        32,
+        24,
+        8
+      ],
+      "dimensionDrawingMm": [
+        24,
+        32,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        32,
+        8.00000009536743
+      ],
+      "cadEnvelopeMm": [
+        24,
+        32,
+        8
+      ],
+      "stage": "modeled",
+      "entry": "src/units/accel/index.js",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/accel/accel_06.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/accel",
+      "research": "docs/research/accel/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/accel/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          -4
+        ],
+        [
+          8,
+          -4
+        ]
+      ],
+      "mountingHoleDiameterMm": 5,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -15.8,
+            1.4
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SDA",
+            "SCL"
+          ]
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "visualMotion": {},
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            7.05,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 12,
+          "purpose": "Physical front film backed by complete unperforated native shell"
+        },
+        {
+          "origin": [
+            0,
+            7.15,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 12,
+          "purpose": "Physical back film backed by native recessed support"
+        },
+        {
+          "origin": [
+            0,
+            -30,
+            1.4
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 21,
+          "purpose": "Grove open mouth has a deeply recessed physical dielectric rear carrier"
+        },
+        {
+          "origin": [
+            -3,
+            -30,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 18,
+          "purpose": "Grove physical contact 1"
+        },
+        {
+          "origin": [
+            -1,
+            -30,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 18,
+          "purpose": "Grove physical contact 2"
+        },
+        {
+          "origin": [
+            1,
+            -30,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 18,
+          "purpose": "Grove physical contact 3"
+        },
+        {
+          "origin": [
+            3,
+            -30,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 18,
+          "purpose": "Grove physical contact 4"
+        },
+        {
+          "origin": [
+            0,
+            -4,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 12,
+          "purpose": "Native rear retaining recess contains real fixed screw head"
+        }
+      ],
+      "limitations": [
+        "Complete3490 own native assembled shell triangles retained,scale1,unmodified.",
+        "Product table32×24×8mm length/width order equals model X/Y/Z24×32×8mm.",
+        "Real ADXL3453×5×.95mm14-terminal LGA;PCB/hidden installation and other package envelopes inferred.",
+        "Closed native front/rear label areas retained;no invented sensor window.",
+        "Two seated physical films remain with artwork:false;two exact-model reference-redraw final PNGs.",
+        "Only Grove and passive sensor package anchor;no LED,button,joint,acceleration,orientation or sensor values.",
+        "No I2C,register,electrical,power,firmware,physical measurement,production-fit or full browser validation."
+      ],
+      "nextAction": "Continue exact Unit expansion with matching artwork;use authoritative production electronics assembly if later available to refine inferred hidden installation.",
+      "artwork": {
+        "status": "reference-redraw",
+        "kind": "reference-redraw",
+        "originalsDistributed": false,
+        "pngCount": 2,
+        "variants": [
+          "front",
+          "back"
+        ],
+        "sources": "docs/research/accel/artwork.json"
+      },
+      "export": "Model"
+    },
+    {
+      "id": "op90",
+      "category": "unit",
+      "name": "Unit OP90",
+      "sku": "U057",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        32,
+        12.8
+      ],
+      "vendorDimensionOrderMm": [
+        32,
+        24,
+        12.8
+      ],
+      "cadEnvelopeMm": [
+        24,
+        32,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        32,
+        12.800000005960465
+      ],
+      "stage": "modeled",
+      "entry": "src/units/op90/index.js",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP.90/img-48d60ccd-42f8-4cf5-a590-e32dcd8054f3.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/OP.90",
+      "research": "docs/research/op90/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/op90/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          -4
+        ],
+        [
+          8,
+          -4
+        ]
+      ],
+      "mountingHoleDiameterMm": 5,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -15.8,
+            1.4
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "NC",
+            "Digital Output"
+          ]
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "visualMotion": {},
+      "closureChecks": [
+        {
+          "origin": [
+            -5,
+            13,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 7,
+          "purpose": "Opaque ITR9606 bank closes native fork opening"
+        },
+        {
+          "origin": [
+            5,
+            13,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 7,
+          "purpose": "Opaque ITR9606 bank closes native fork opening"
+        },
+        {
+          "origin": [
+            0,
+            13,
+            2.9
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 0.2,
+          "purpose": "Physical fork transverse base under real slot"
+        },
+        {
+          "origin": [
+            0,
+            -20,
+            1.4
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 15,
+          "purpose": "Grove insertion cavity has recessed rear wall"
+        },
+        {
+          "origin": [
+            -3,
+            -20,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 11,
+          "purpose": "Grove contact1 is recessed physical metal"
+        },
+        {
+          "origin": [
+            -1,
+            -20,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 11,
+          "purpose": "Grove contact2 is recessed physical metal"
+        },
+        {
+          "origin": [
+            1,
+            -20,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 11,
+          "purpose": "Grove contact3 is recessed physical metal"
+        },
+        {
+          "origin": [
+            3,
+            -20,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 11,
+          "purpose": "Grove contact4 is recessed physical metal"
+        },
+        {
+          "origin": [
+            0,
+            -4,
+            -12
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 9,
+          "purpose": "Rear screw recess backed by real fastener"
+        }
+      ],
+      "limitations": [
+        "All3254 own native assembled shell triangles retained atscale1,unmodified.",
+        "Fixed upright OP90 fork with opposing windows and real5mm detection air slot;no OP180 substitution,joint,IR glow/beam/cone or fabricated visible indicator.",
+        "PCB plane/concealed population,installed package window/base/cavity/mold/four leads,left-right emitter identity,Grove internals and film thickness inferred;no production-fit claim.",
+        "Only Grove and passive sensor appearance anchor;no occlusion detection,counting,GPIO,electrical,protocol or firmware behavior.",
+        "One same-model rear reference-redraw PNG;full browser acceptance deferred."
+      ],
+      "nextAction": "Continue exact Unit expansion with corresponding artwork;refine concealed installed package details only if authoritative exact assembly evidence appears.",
+      "artwork": {
+        "status": "reference-redraw",
+        "kind": "reference-redraw",
+        "originalsDistributed": false,
+        "pngCount": 1,
+        "variants": [
+          "back"
+        ],
+        "sources": "docs/research/op90/artwork.json"
+      },
+      "export": "Model"
+    },
+    {
+      "id": "op180",
+      "category": "unit",
+      "name": "Unit OP180",
+      "sku": "U058",
+      "scope": "visual-only",
+      "nominalMm": [
+        36,
+        24,
+        8.8
+      ],
+      "vendorDimensionOrderMm": [
+        36,
+        24,
+        8.8
+      ],
+      "dimensionDrawingMm": [
+        24,
+        36,
+        8.8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        36,
+        8.8
+      ],
+      "cadEnvelopeMm": [
+        24,
+        32,
+        8
+      ],
+      "stage": "modeled",
+      "entry": "src/units/op180/index.js",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/OP180/img-1519b910-0cde-4400-b894-dbd5cae2fe24.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/OP180",
+      "research": "docs/research/op180/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/op180/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          -6
+        ],
+        [
+          8,
+          -6
+        ]
+      ],
+      "mountingHoleDiameterMm": 5,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -17.8,
+            1.4
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "NC",
+            "IN"
+          ]
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "visualMotion": {},
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            5,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 12,
+          "purpose": "Physical rear adhesive film seated on original label recess"
+        },
+        {
+          "origin": [
+            0,
+            4,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 12,
+          "purpose": "Native plain front closed by full native shell"
+        },
+        {
+          "origin": [
+            0,
+            -30,
+            1.4
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 22,
+          "purpose": "Grove mouth has deep physical dielectric carrier"
+        },
+        {
+          "origin": [
+            -3,
+            -30,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 20,
+          "purpose": "Grove physical contact 1"
+        },
+        {
+          "origin": [
+            -1,
+            -30,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 20,
+          "purpose": "Grove physical contact 2"
+        },
+        {
+          "origin": [
+            1,
+            -30,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 20,
+          "purpose": "Grove physical contact 3"
+        },
+        {
+          "origin": [
+            3,
+            -30,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 20,
+          "purpose": "Grove physical contact 4"
+        },
+        {
+          "origin": [
+            0,
+            -6,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 12,
+          "purpose": "Native rear retaining recess contains actual fixed screw"
+        }
+      ],
+      "limitations": [
+        "Complete3254 own native shell triangles retained,scale1,unmodified;24×32×8mm shell and24×36×8.8mm full assembled envelope distinguished.",
+        "Drawing5mm true slot width preserved;package width/depth/crossbar,5.5mm slot depth and optical window placement/handedness inferred.",
+        "PCB/package installation and Grove details are appearance reconstruction,not manufacturing fit or optical validation.",
+        "One physical rear adhesive substrate and exact-model reference-redraw PNG;plain front has no invented label.",
+        "No button,joint,visible LED,IR beam,detection cone,occlusion/count/digital-level/electrical/firmware simulation.",
+        "Passive sensor anchor and external Grove pose/cable only;full browser/physical acceptance unverified."
+      ],
+      "nextAction": "Continue exact Unit expansion with matching artwork;refine concealed optical installation only when authoritative own-model assembly data appears.",
+      "artwork": {
+        "status": "reference-redraw",
+        "kind": "reference-redraw",
+        "originalsDistributed": false,
+        "pngCount": 1,
+        "variants": [
+          "back"
+        ],
+        "sources": "docs/research/op180/artwork.json"
+      },
+      "export": "Model"
+    },
+    {
+      "id": "unit-id",
+      "category": "unit",
+      "name": "Unit ID",
+      "sku": "U124",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        24,
+        8
+      ],
+      "dimensionDrawingMm": [
+        24,
+        24,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        24,
+        8.00000009536743
+      ],
+      "cadEnvelopeMm": [
+        24,
+        24,
+        8
+      ],
+      "stage": "modeled",
+      "entry": "src/units/unit-id/index.js",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/id/id_06.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/id",
+      "research": "docs/research/unit-id/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/unit-id/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          0
+        ],
+        [
+          8,
+          0
+        ]
+      ],
+      "mountingHoleDiameterMm": 5,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -11.8,
+            1.4
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SDA",
+            "SCL"
+          ]
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "visualMotion": {},
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            7.05,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 12,
+          "purpose": "Physical front film backed by complete unperforated native shell"
+        },
+        {
+          "origin": [
+            0,
+            7,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 12,
+          "purpose": "Physical back film backed by native recessed support"
+        },
+        {
+          "origin": [
+            0,
+            -30,
+            1.4
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 25,
+          "purpose": "Grove open mouth has a deeply recessed physical dielectric rear carrier"
+        },
+        {
+          "origin": [
+            -3,
+            -30,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 22,
+          "purpose": "Grove physical contact 1"
+        },
+        {
+          "origin": [
+            -1,
+            -30,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 22,
+          "purpose": "Grove physical contact 2"
+        },
+        {
+          "origin": [
+            1,
+            -30,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 22,
+          "purpose": "Grove physical contact 3"
+        },
+        {
+          "origin": [
+            3,
+            -30,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 22,
+          "purpose": "Grove physical contact 4"
+        },
+        {
+          "origin": [
+            0,
+            0,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 12,
+          "purpose": "Native rear retaining recess contains a real fixed screw head"
+        },
+        {
+          "origin": [
+            0,
+            20,
+            0
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 15,
+          "purpose": "Native top slot looks into deeply recessed fixed UDFN package rather than sky"
+        },
+        {
+          "origin": [
+            0,
+            20,
+            -0.8
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 11,
+          "purpose": "Native top slot includes recessed physical PCB edge"
+        }
+      ],
+      "limitations": [
+        "Complete4178 own native assembled shell triangles retained at scale1,unmodified.",
+        "Real8-pad UDFN model3×2×.55mm with underside paddle;PCB/hidden installation,regulator/passive envelopes inferred.",
+        "Real native top slot retained with recessed PCB/package,not an invented sensor aperture or cap.",
+        "Two seated physical films remain with artwork:false;two exact-model reference-redraw final PNGs.",
+        "Only physical Grove component;no sensor,button,LED,display,joint or secure-element commands.",
+        "No keys,certificates,serial numbers,identity,cryptography,I2C,register,electrical,power,firmware,production-fit or full browser validation."
+      ],
+      "nextAction": "Continue exact Unit expansion with matching artwork;use authoritative production electronics assembly if later available to refine inferred hidden installation.",
+      "artwork": {
+        "status": "reference-redraw",
+        "kind": "reference-redraw",
+        "originalsDistributed": false,
+        "pngCount": 2,
+        "variants": [
+          "front",
+          "back"
+        ],
+        "sources": "docs/research/unit-id/artwork.json"
+      },
+      "export": "Model"
+    },
+    {
+      "id": "rf433r",
+      "category": "unit",
+      "name": "Unit RF433R",
+      "sku": "U113",
+      "scope": "visual-only",
+      "nominalMm": [
+        48,
+        24,
+        8
+      ],
+      "vendorDimensionOrderMm": [
+        48,
+        24,
+        8
+      ],
+      "dimensionDrawingMm": [
+        24,
+        48,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        48,
+        8.00000009536743
+      ],
+      "cadEnvelopeMm": [
+        24,
+        48,
+        7.999999761581421
+      ],
+      "stage": "modeled",
+      "entry": "src/units/rf433r/index.js",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_r/rf433_r_06.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/rf433_r",
+      "research": "docs/research/rf433r/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/rf433r/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          -12
+        ],
+        [
+          8,
+          -12
+        ]
+      ],
+      "mountingHoleDiameterMm": 5,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -23.8,
+            1.4
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "NC",
+            "RF_RX"
+          ]
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "visualMotion": {},
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            7.65,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 12,
+          "purpose": "Real front adhesive film covers original native front aperture"
+        },
+        {
+          "origin": [
+            0,
+            8,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 12,
+          "purpose": "Real back film seated on existing native rear wall"
+        },
+        {
+          "origin": [
+            0,
+            -34,
+            1.4
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 17,
+          "purpose": "Open Grove mouth deeply recessed dielectric rear carrier"
+        },
+        {
+          "origin": [
+            -3,
+            -34,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 14,
+          "purpose": "Grove physical contact 1"
+        },
+        {
+          "origin": [
+            -1,
+            -34,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 14,
+          "purpose": "Grove physical contact 2"
+        },
+        {
+          "origin": [
+            1,
+            -34,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 14,
+          "purpose": "Grove physical contact 3"
+        },
+        {
+          "origin": [
+            3,
+            -34,
+            1.6
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 14,
+          "purpose": "Grove physical contact 4"
+        },
+        {
+          "origin": [
+            0,
+            -12,
+            -12
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 9,
+          "purpose": "Native rear retaining recess contains fixed screw head"
+        }
+      ],
+      "limitations": [
+        "Complete3796 own native assembled triangles retained,scale1,unmodified.",
+        "Product48×24×8mm length/width order equals model X/Y/Z24×48×8mm.",
+        "Real SYN531R SOP-8 with eight gull-wing leads;concealed PCB/copper route/Y1/passive installation inferred.",
+        "Product says built-in PCB antenna.E1 ANT_IPEX symbol does not prove a populated exterior connector;accepted official feedback requests PCB/BOM evidence.",
+        "Front real film seats on native support rim and spans existing aperture;back film touches original native rear wall;both remain with artwork:false.",
+        "Two own U113 final ordinary reference-redraw PNGs;no transmitter print or photographic pixels.",
+        "Only Grove;no sensor,RF anchor,LED,button,display,joint,RF/data/strength/distance/protocol/electrical/firmware behavior.",
+        "No browser visual,production-fit,RF,antenna-performance or physical hardware acceptance."
+      ],
+      "nextAction": "Continue exact Unit expansion with matching artwork;refine inferred concealed installation if authoritative U113 production PCB/BOM becomes available.",
+      "artwork": {
+        "status": "reference-redraw",
+        "kind": "reference-redraw",
+        "originalsDistributed": false,
+        "pngCount": 2,
+        "variants": [
+          "front",
+          "back"
+        ],
+        "sources": "docs/research/rf433r/artwork.json"
+      },
+      "export": "Model"
+    },
+    {
+      "id": "rf433t",
+      "category": "unit",
+      "name": "Unit RF433T",
+      "sku": "U114",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        48,
+        8
+      ],
+      "vendorDimensionOrderMm": [
+        48,
+        24,
+        8
+      ],
+      "cadEnvelopeMm": [
+        24,
+        48,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        48,
+        8
+      ],
+      "stage": "modeled",
+      "entry": "src/units/rf433t/index.js",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/rf433_t/rf433_t_06.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/rf433_t",
+      "research": "docs/research/rf433t/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/rf433t/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          -12
+        ],
+        [
+          8,
+          -12
+        ]
+      ],
+      "mountingHoleDiameterMm": 5,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -23.7,
+            1.2
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "RF_TX",
+            "NC"
+          ]
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "visualMotion": {},
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            -28,
+            1.2
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 12,
+          "purpose": "Grove deep insertion cavity closes at recessed physical rear wall"
+        },
+        {
+          "origin": [
+            -3,
+            -28,
+            1.4
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 7,
+          "purpose": "Grove real recessed contact1"
+        },
+        {
+          "origin": [
+            -1,
+            -28,
+            1.4
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 7,
+          "purpose": "Grove real recessed contact2"
+        },
+        {
+          "origin": [
+            1,
+            -28,
+            1.4
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 7,
+          "purpose": "Grove real recessed contact3"
+        },
+        {
+          "origin": [
+            3,
+            -28,
+            1.4
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 7,
+          "purpose": "Grove real recessed contact4"
+        },
+        {
+          "origin": [
+            0,
+            -12,
+            -12
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 9,
+          "purpose": "Native rear screw recess has physical fastener"
+        }
+      ],
+      "limitations": [
+        "All3796 own native assembled shell triangles retained atscale1,unmodified.",
+        "Actual SYN115 six-lead SOT23-6,crystal,PCB and fixed enclosed copper antenna;hidden PCB layout,copper shape/population/installation and connector internals inferred.",
+        "No exterior spring/whip/SMA/IPEX,antenna viewing window,visible RF animation or invented control.",
+        "Only Grove appearance;no sensor,RF/ASK/transmission/data/strength/distance/communication,electrical,protocol or firmware behavior.",
+        "Two exact-model reference-redraw PNGs;physical films remain independent;full browser acceptance deferred."
+      ],
+      "nextAction": "Continue exact Unit expansion with corresponding artwork;refine hidden installation/copper layout only if authoritative exact production assembly evidence appears.",
+      "artwork": {
+        "status": "reference-redraw",
+        "kind": "reference-redraw",
+        "originalsDistributed": false,
+        "pngCount": 2,
+        "variants": [
+          "front",
+          "back"
+        ],
+        "sources": "docs/research/rf433t/artwork.json"
       },
       "export": "Model"
     }
