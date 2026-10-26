@@ -28,6 +28,8 @@ for(const [script,id,exportName]of [
  try{const result=test(model);checks.push({script:`scripts/${script}`,product:id,...result});console.log(`PASS ${id} assembly:`,JSON.stringify(result));}finally{model.dispose();}
 }
 const dynamics=[];
+const {checkNCIRAssembly}=await import('./check-ncir-assembly.mjs');
+dynamics.push({script:'scripts/check-ncir-assembly.mjs',...await checkNCIRAssembly()});
 const {checkThermalAssembly}=await import('./check-thermal-assembly.mjs');
 dynamics.push({script:'scripts/check-thermal-assembly.mjs',...await checkThermalAssembly()});
 const {checkAngleAssembly}=await import('./check-angle-assembly.mjs');

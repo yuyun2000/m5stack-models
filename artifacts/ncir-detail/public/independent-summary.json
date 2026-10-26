@@ -1,0 +1,432 @@
+{
+  "checkedAt": "2026-10-26T01:54:34.758873+00:00",
+  "product": "ncir",
+  "sku": "U028",
+  "assemblySha256": "8007d9457f61e664a0bea2d314d26f1bcbbd16cf1f5743891b8040341537bb25",
+  "independentReportSha256": "1fc7a0037941023a0ec66397c41d6021f9938c5a676fa1298872f4dadffa37b4",
+  "scope": "Independent finite actual-mesh, original closed-shell and mating-plug probes; no manufacturing or physical-device verification",
+  "topology": {
+    "meshCount": 50,
+    "allHaveZeroBoundaryNonManifoldDegenerateAndWindingConflictAt1eMinus6MmGrid": true,
+    "positiveSignedVolumeCount": 50,
+    "directedFrontSideHoleRays": 34,
+    "frontSideHoleDirectionFailures": 0,
+    "note": "Closed-at-grid and consistent winding are numerical audits. FrontSide rays and positive signed volumes separately verify outward material orientation; DoubleSide was not used to mask normals."
+  },
+  "shellAndBoard": {
+    "physicalMeshes": 50,
+    "shellPairs": 100,
+    "internalAabbPairs": 109,
+    "strictShellOverlapPairs": 0,
+    "shellUnknownPairs": 0,
+    "actualBoardStrictOverlapPairs": 0,
+    "sourceToBoardSectionInside": 0,
+    "sourceToBoardSectionUnknown": 0,
+    "actualBoardDrillsWithNonzeroAxialHit": 0
+  },
+  "sourceToBoardSections": [
+    {
+      "z": -0.2999,
+      "segments": 450,
+      "samples": 45450,
+      "inside": 0,
+      "boundary": 0,
+      "unknown": 0,
+      "examples": []
+    },
+    {
+      "z": 0.1,
+      "segments": 442,
+      "samples": 44642,
+      "inside": 0,
+      "boundary": 0,
+      "unknown": 0,
+      "examples": []
+    },
+    {
+      "z": 0.4999,
+      "segments": 435,
+      "samples": 43935,
+      "inside": 0,
+      "boundary": 0,
+      "unknown": 0,
+      "examples": []
+    }
+  ],
+  "bores": {
+    "pcbAndOpenAxes": 11,
+    "frontSideRays": 34
+  },
+  "internalInterfaces": {
+    "aabbPairsRetained": 109,
+    "strictOverlapPairsRetained": 22,
+    "unknownSamples": 0,
+    "classCounts": {
+      "coaxial seated window: finite circular facet overlap/gap": 1,
+      "coaxial glass feedthrough/conductor: finite circular facet overlap/gap": 4,
+      "same-pin solder/conductor: joined circular facet interface": 4,
+      "same-pin folded contact metal overlap": 4,
+      "contact conductor intentionally embedded in molded rear support": 4,
+      "Grove molded housing union: connected rail/ear/floor/support/rear/tongue": 5
+    },
+    "coaxialActualTriangleRayExtrema": [
+      {
+        "outer": "NCIR closed recessed infrared window",
+        "inner": "NCIR MLX90614 standard TO39 can with raised crown",
+        "type": "optical insert/can bore",
+        "centreXY": [
+          0,
+          8
+        ],
+        "zLevels": [
+          4.280010001341104,
+          4.34,
+          4.399989998658896
+        ],
+        "angles": 4377,
+        "tested": 13131,
+        "unknown": 0,
+        "maximumOverlapMm": 0.00046857194330973684,
+        "maximumGapMm": 0.0009370520024507556,
+        "overlapExample": {
+          "angleDeg": 277.50000008446966,
+          "z": 4.280010001341104,
+          "outerRadiusMm": 1.7499999982428718,
+          "innerRadiusMm": 1.749531426299562,
+          "outerFace": 4,
+          "innerFace": 46
+        },
+        "gapExample": {
+          "angleDeg": 298.12500007614005,
+          "z": 4.34,
+          "outerRadiusMm": 1.7490630028226817,
+          "innerRadiusMm": 1.7500000548251324,
+          "outerFace": 14,
+          "innerFace": 159
+        }
+      },
+      {
+        "outer": "NCIR SCL clipped TO39 lead",
+        "inner": "NCIR SCL glass feedthrough",
+        "type": "conductor/glass bore",
+        "centreXY": [
+          -1.796051224213831,
+          9.79605122421383
+        ],
+        "zLevels": [
+          0.50001,
+          0.75,
+          0.99999
+        ],
+        "angles": 3782,
+        "tested": 11346,
+        "unknown": 0,
+        "maximumOverlapMm": 0.0002409426670332837,
+        "maximumGapMm": 0.00012047189448455287,
+        "overlapExample": {
+          "angleDeg": 284.9999997140576,
+          "z": 0.50001,
+          "outerRadiusMm": 0.2250000057947638,
+          "innerRadiusMm": 0.22475906312773053,
+          "outerFace": 7,
+          "innerFace": 410
+        },
+        "gapExample": {
+          "angleDeg": 140.62499950730913,
+          "z": 0.50001,
+          "outerRadiusMm": 0.2248795294679719,
+          "innerRadiusMm": 0.22500000136245646,
+          "outerFace": 122,
+          "innerFace": 462
+        }
+      },
+      {
+        "outer": "NCIR SCL clipped TO39 lead",
+        "inner": "NCIR SCL annular solder fillet",
+        "type": "conductor/solder cylindrical bore",
+        "centreXY": [
+          -1.796051224213831,
+          9.79605122421383
+        ],
+        "zLevels": [
+          -0.7799899713897706,
+          -0.7549999952316284,
+          -0.7300100190734863
+        ],
+        "angles": 3788,
+        "tested": 11364,
+        "unknown": 0,
+        "maximumOverlapMm": 0.00048174872083525666,
+        "maximumGapMm": 5.551115123125783e-17,
+        "overlapExample": {
+          "angleDeg": 326.2499993253511,
+          "z": -0.7799899713897706,
+          "outerRadiusMm": 0.22500000616578877,
+          "innerRadiusMm": 0.22451825744495352,
+          "outerFace": 29,
+          "innerFace": 111
+        },
+        "gapExample": {
+          "angleDeg": 172.49999996641412,
+          "z": -0.7799899713897706,
+          "outerRadiusMm": 0.2249999980300917,
+          "innerRadiusMm": 0.22499999803009177,
+          "outerFace": 139,
+          "innerFace": 489
+        }
+      },
+      {
+        "outer": "NCIR SDA clipped TO39 lead",
+        "inner": "NCIR SDA glass feedthrough",
+        "type": "conductor/glass bore",
+        "centreXY": [
+          -1.796051224213831,
+          6.203948775786169
+        ],
+        "zLevels": [
+          0.50001,
+          0.75,
+          0.99999
+        ],
+        "angles": 3782,
+        "tested": 11346,
+        "unknown": 0,
+        "maximumOverlapMm": 0.0002409426670332837,
+        "maximumGapMm": 0.00012047189448455287,
+        "overlapExample": {
+          "angleDeg": 284.9999997140576,
+          "z": 0.50001,
+          "outerRadiusMm": 0.2250000057947638,
+          "innerRadiusMm": 0.22475906312773053,
+          "outerFace": 7,
+          "innerFace": 410
+        },
+        "gapExample": {
+          "angleDeg": 140.62499950730913,
+          "z": 0.50001,
+          "outerRadiusMm": 0.2248795294679719,
+          "innerRadiusMm": 0.22500000136245646,
+          "outerFace": 122,
+          "innerFace": 462
+        }
+      },
+      {
+        "outer": "NCIR SDA clipped TO39 lead",
+        "inner": "NCIR SDA annular solder fillet",
+        "type": "conductor/solder cylindrical bore",
+        "centreXY": [
+          -1.796051224213831,
+          6.203948775786169
+        ],
+        "zLevels": [
+          -0.7799899713897706,
+          -0.7549999952316284,
+          -0.7300100190734863
+        ],
+        "angles": 3788,
+        "tested": 11364,
+        "unknown": 0,
+        "maximumOverlapMm": 0.00048174872083525666,
+        "maximumGapMm": 5.551115123125783e-17,
+        "overlapExample": {
+          "angleDeg": 326.2499993253511,
+          "z": -0.7799899713897706,
+          "outerRadiusMm": 0.22500000616578877,
+          "innerRadiusMm": 0.22451825744495352,
+          "outerFace": 29,
+          "innerFace": 111
+        },
+        "gapExample": {
+          "angleDeg": 172.49999996641412,
+          "z": -0.7799899713897706,
+          "outerRadiusMm": 0.2249999980300917,
+          "innerRadiusMm": 0.22499999803009177,
+          "outerFace": 139,
+          "innerFace": 489
+        }
+      },
+      {
+        "outer": "NCIR VDD clipped TO39 lead",
+        "inner": "NCIR VDD glass feedthrough",
+        "type": "conductor/glass bore",
+        "centreXY": [
+          1.796051224213831,
+          6.203948775786169
+        ],
+        "zLevels": [
+          0.50001,
+          0.75,
+          0.99999
+        ],
+        "angles": 3783,
+        "tested": 11349,
+        "unknown": 0,
+        "maximumOverlapMm": 0.00024094266703325595,
+        "maximumGapMm": 0.00012047189448449735,
+        "overlapExample": {
+          "angleDeg": 345.00000028594246,
+          "z": 0.50001,
+          "outerRadiusMm": 0.2250000057947637,
+          "innerRadiusMm": 0.22475906312773045,
+          "outerFace": 39,
+          "innerFace": 388
+        },
+        "gapExample": {
+          "angleDeg": 320.62499950730916,
+          "z": 0.50001,
+          "outerRadiusMm": 0.22487952946797196,
+          "innerRadiusMm": 0.22500000136245646,
+          "outerFace": 26,
+          "innerFace": 398
+        }
+      },
+      {
+        "outer": "NCIR VDD clipped TO39 lead",
+        "inner": "NCIR VDD annular solder fillet",
+        "type": "conductor/solder cylindrical bore",
+        "centreXY": [
+          1.796051224213831,
+          6.203948775786169
+        ],
+        "zLevels": [
+          -0.7799899713897706,
+          -0.7549999952316284,
+          -0.7300100190734863
+        ],
+        "angles": 3785,
+        "tested": 11355,
+        "unknown": 0,
+        "maximumOverlapMm": 0.00048174872083525666,
+        "maximumGapMm": 8.326672684688674e-17,
+        "overlapExample": {
+          "angleDeg": 326.249999325351,
+          "z": -0.7799899713897706,
+          "outerRadiusMm": 0.2250000061657884,
+          "innerRadiusMm": 0.22451825744495316,
+          "outerFace": 30,
+          "innerFace": 111
+        },
+        "gapExample": {
+          "angleDeg": 284.9999997140574,
+          "z": -0.7799899713897706,
+          "outerRadiusMm": 0.2250000057947636,
+          "innerRadiusMm": 0.22500000579476367,
+          "outerFace": 7,
+          "innerFace": 27
+        }
+      },
+      {
+        "outer": "NCIR VSS clipped TO39 lead",
+        "inner": "NCIR VSS glass feedthrough",
+        "type": "conductor/glass bore",
+        "centreXY": [
+          1.796051224213831,
+          9.79605122421383
+        ],
+        "zLevels": [
+          0.50001,
+          0.75,
+          0.99999
+        ],
+        "angles": 3783,
+        "tested": 11349,
+        "unknown": 0,
+        "maximumOverlapMm": 0.00024094266703325595,
+        "maximumGapMm": 0.00012047189448449735,
+        "overlapExample": {
+          "angleDeg": 345.00000028594246,
+          "z": 0.50001,
+          "outerRadiusMm": 0.2250000057947637,
+          "innerRadiusMm": 0.22475906312773045,
+          "outerFace": 39,
+          "innerFace": 388
+        },
+        "gapExample": {
+          "angleDeg": 320.62499950730916,
+          "z": 0.50001,
+          "outerRadiusMm": 0.22487952946797196,
+          "innerRadiusMm": 0.22500000136245646,
+          "outerFace": 26,
+          "innerFace": 398
+        }
+      },
+      {
+        "outer": "NCIR VSS clipped TO39 lead",
+        "inner": "NCIR VSS annular solder fillet",
+        "type": "conductor/solder cylindrical bore",
+        "centreXY": [
+          1.796051224213831,
+          9.79605122421383
+        ],
+        "zLevels": [
+          -0.7799899713897706,
+          -0.7549999952316284,
+          -0.7300100190734863
+        ],
+        "angles": 3785,
+        "tested": 11355,
+        "unknown": 0,
+        "maximumOverlapMm": 0.00048174872083525666,
+        "maximumGapMm": 8.326672684688674e-17,
+        "overlapExample": {
+          "angleDeg": 326.249999325351,
+          "z": -0.7799899713897706,
+          "outerRadiusMm": 0.2250000061657884,
+          "innerRadiusMm": 0.22451825744495316,
+          "outerFace": 30,
+          "innerFace": 111
+        },
+        "gapExample": {
+          "angleDeg": 284.9999997140574,
+          "z": -0.7799899713897706,
+          "outerRadiusMm": 0.2250000057947636,
+          "innerRadiusMm": 0.22500000579476367,
+          "outerFace": 7,
+          "innerFace": 27
+        }
+      }
+    ],
+    "extremaMethod": "Actual triangle radial ray distances at three axial levels. Angles include0.1degree grid plus all actual vertex azimuths from both meshes. Positive outer-minus-inner means overlap, negative means gap. Values are sampled extrema on actual meshes, not nominal radius formulas. Plug material volume tests use actual paired triangle probes and AABB-centre grids; no declaration constants determine membership.",
+    "seamRaySamples": 103959,
+    "interpretation": "Finite overlap/gap at nominally equal-radius polygon surfaces is retained. Actual folded metal is connected by overlap, contact tails sit inside their molded carrier, and housing pieces join by intended union overlap. No internal measurements were forced to zero."
+  },
+  "groveInsertion": {
+    "surfaceSummary": {
+      "socketAabbPairs": 4,
+      "originalShellAabbPairs": 5,
+      "strictOrUnknownFindings": 0
+    },
+    "volumeSummary": {
+      "seams": 9,
+      "seamRaySamples": 103959,
+      "seamUnknown": 0,
+      "plugMeshCount": 7,
+      "allPlugTargetPairs": 119,
+      "plugPcbAabbIntersect": 0,
+      "plugVolumeSamples": 9247,
+      "plugStrictBothInside": 0,
+      "plugUnknown": 0
+    },
+    "pcbClearance": "All7 plug-mesh/PCB pairs have disjoint actual AABBs. Physical socket/plug and original shell surface checks plus9247 actual material volume points have0 strict overlap and0 unknown.",
+    "scopeLimit": "Default fitted35mm cable targetPlug only. This is visual mechanical clearance; it is not a manufacturing tolerance, insertion-force or electrical contact certification."
+  },
+  "historicalFailure": {
+    "assemblySha256": "a4755f5c1c926507b21bca861c3b941ee9f3f0d6be7ae494d638e9d576904d76",
+    "cause": "9 clockwise PCB holes with already-clockwise outer contour bypassed Three.js conditional hole reversal. Actual PCB had1152 orientation-inconsistent incidence-two edges.",
+    "preserved": {
+      "assemblySha256": "a4755f5c1c926507b21bca861c3b941ee9f3f0d6be7ae494d638e9d576904d76",
+      "originalUnknownSourceToBoardPoints": 96529,
+      "preservedReport": "actual-mesh-audit-a4755f5c.json",
+      "sha256": "e4cc44ec4d6bdb8251b885437e9c65b9ab51578076a6bdb796a62bd410721c06",
+      "oldBytesUnmodified": true
+    },
+    "unknownPointCount96529WasNotReclassified": true,
+    "newFix": "Runtime owner changed circleHole to counterclockwise; no runtime edit was performed by this auditor."
+  },
+  "limits": [
+    "Finite surface, section and volume sampling cannot prove the absence of every possible intersection.",
+    "Original independently closed STL duplicates are transformed only for numeric probes; native touching-shell assembly is not treated as a Boolean union.",
+    "All PCB/package axial seating, flange thickness/tab/yaw, lead trimming and solder remain the runtime documented appearance inferences.",
+    "Submicrometre polygon interface extrema are actual mesh measurements, not physical product tolerances."
+  ]
+}

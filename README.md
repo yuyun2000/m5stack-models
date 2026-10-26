@@ -2,21 +2,33 @@
 
 基于 Three.js 与 sticks3.js 建模方法的 M5Stack 毫米尺度交互模型库。目前包含 **14款主机、29款Unit，共43款模型**，全部保持 `modeled`，`verified` 为0，逐款精细外观验收继续进行。
 
+![NCIR U028实体装配](artifacts/ncir-detail/public/views/ncir-iso-close.png)
+
+本批细化 **NCIR U028**：保留官方原壳和真实环隙，补齐标准TO39金属筒、凸冠、Ø3.5凹入光窗、玻璃封接圈、四引脚、PCB真孔和开放Grove。封装肩高与最高点分开，插座按自身10×5.2 mm机械图对齐。
+
+七视图/近景、静态光学、StickS3→HUB→NCIR四芯接线/姿态/拆卸及专项几何证据见下列记录。隐藏PCB、安装yaw、法兰厚度与裁脚仍为外观推导；有限数字检查不代表制造配合或实物光学。全部43款继续modeled，贴纸延期。
+
+[NCIR验证](artifacts/ncir-detail/public/review.json) · [来源审计](artifacts/ncir-detail/public/source-audit.json) · [建模与坐标迁移](docs/NCIR-MODEL-NOTES.md) · [Agent接入](docs/AGENT-INTEGRATION.md)
+
+### 上一批：Thermal U016
+
+以下为已发布Thermal批次的历史证据与限制。
+
 ![Thermal U016实体装配](artifacts/thermal-detail/public/views/thermal-iso-close.png)
 
-本批细化 **Thermal U016**：保留官方CAD外壳，补齐110°黑色光学封装、浅漏斗、小光窗、金属header、节圆四脚、板体与开放Grove。包体完整高度与PCB位置共同校正，Grove按自身10×5.2 mm机械图和CAD入口对齐。
+此前细化 **Thermal U016**：保留官方CAD外壳，补齐110°黑色光学封装、浅漏斗、小光窗、金属header、节圆四脚、板体与开放Grove。包体完整高度与PCB位置共同校正，Grove按自身10×5.2 mm机械图和CAD入口对齐。
 
 公开构建独立check/build/status及实际浏览器8场景、15张原生PNG通过，覆盖七视图、静态光学稳定性、三个近景及StickS3→HUB→Thermal四芯接线/姿态/拆卸。15对独立公开图与冻结原图RGB一致。凹深、装后裁短脚、板形/高度和安装yaw仍含视觉推导；有限数字采样不代表制造配合或实物光学。全部43款仍为modeled。
 
 [Thermal验证](artifacts/thermal-detail/public/review.json) · [来源审计](artifacts/thermal-detail/public/source-audit.json) · [建模与坐标迁移](docs/THERMAL-MODEL-NOTES.md) · [Agent接入](docs/AGENT-INTEGRATION.md)
 
-### 上一批：Angle U005
+### 更早批次：Angle U005
 
 以下为已发布Angle批次的历史证据与限制。
 
 ![Angle U005实体装配](artifacts/angle-detail/public/views/angle-assembly-close.png)
 
-上一批细化 **Angle U005**：按自身机械图校正轴心Y8与含齿帽Ø9.5；补齐蓝色固定底板、银色金属框、盲孔和轴杆，重建PCB孔柱与Grove通道避让。原CAD壳保持；旋钮接受外部绝对角度，固定件保持不动。
+此前细化 **Angle U005**：按自身机械图校正轴心Y8与含齿帽Ø9.5；补齐蓝色固定底板、银色金属框、盲孔和轴杆，重建PCB孔柱与Grove通道避让。原CAD壳保持；旋钮接受外部绝对角度，固定件保持不动。
 
 公开构建独立check/build/status及实际浏览器13场景、18张原生PNG通过，覆盖七视图、37/−90/150°定位与精确复位、StickS3→HUB→Angle四芯接线/姿态/拆卸。18对独立公开图与冻结原图RGB一致。隐藏尺寸与机械限位仍未确认，有限数字采样不代表制造配合；全部43款仍为modeled。
 

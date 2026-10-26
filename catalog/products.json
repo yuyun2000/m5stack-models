@@ -1606,8 +1606,8 @@
       "entry": "src/units/ncir/index.js",
       "export": "Model",
       "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/ncir/ncir_01.webp",
-      "officialDocs": "https://docs.m5stack.com/en/unit/ncir",
-      "research": "source-manifest.json",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_NCIR",
+      "research": "docs/NCIR-MODEL-NOTES.md",
       "integration": {
         "moduleExport": "GroveModule",
         "externalRuntime": "m5agent/m5stack-esp-emulator"
@@ -1627,10 +1627,11 @@
         ]
       ],
       "limitations": [
-        "官方 CAD 装配壳体；局部器件、旋钮、按键表面依据官方照片构造，尚待逐面视觉检查",
-        "这里只提供视觉几何和接口，不实现电气、传感器数据或协议行为"
+        "U028标准TO39完整封装、Ø3.5凹入光窗、PCB真孔与开放Grove已建；原CAD和真实环隙保持",
+        "PCB平面/轮廓、法兰厚度、绕轴角、光窗凹深与裁脚仍为外观推导；有限数字检查不证明制造配合或实物光学",
+        "仅提供视觉几何与接口，不实现电气、传感器数据或协议行为；贴纸延期"
       ],
-      "nextAction": "优先逐面检查装配闭合与真实开口；贴纸等待用户原文件"
+      "nextAction": "本批数字证据见artifacts/ncir-detail/public/review.json；隐藏板形/安装yaw/裁脚仍待更精确依据，贴纸等用户原文件"
     },
     {
       "id": "heart",

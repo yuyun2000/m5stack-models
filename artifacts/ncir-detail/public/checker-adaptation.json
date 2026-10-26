@@ -1,0 +1,34 @@
+{
+  "preparedAt": "2026-10-26T02:06:20.125778+00:00",
+  "scope": "Two exact constant substitutions in the public checker to bind existing public provenance containers. Numeric geometry, cad-map registration, runtime, original26 plan and private source remain unchanged.",
+  "sourceCommit": "0986d3b97234ace2a9829798cd369fee38f40bdd",
+  "publicBaseline": "d7066c9c316965c6c5ba971c3a55f2320b3d607a",
+  "originalPlanSha256": "8023bb875d0eef3bc1772615bf49b0c31e241f554b3c2609f03e68e975385706",
+  "file": "scripts/check-ncir-assembly.mjs",
+  "sourceCheckerSha256": "add1cdbec467b1f60d47d4fe699a8b550a2a410a8a094d10a307775bae38bebf",
+  "publicCheckerSha256": "5749b66bff1249cd1dc27294ea043f31b42fc19faae3ae020a135f9b270cd240",
+  "substitutions": [
+    [
+      "9a30f0e0ef0000e9a9354c7605d9951512acab1d06856ae8417d7d22bd367fd6",
+      "380cd829a765aa3eb784d50942782c8322fd13bc7de355d50b96d641ecb5fa73"
+    ],
+    [
+      "eb515618bee0bdc14fd2305c38cab0cd103b6b074d604d57376b36bf53442dcf",
+      "e5a79a039db0ed3bd24475be36f6339efd578eefca73b0790010198f9309daea"
+    ]
+  ],
+  "containers": {
+    "src/units/ncir/geometry-data.js": {
+      "privateSha256": "9a30f0e0ef0000e9a9354c7605d9951512acab1d06856ae8417d7d22bd367fd6",
+      "publicBaselineSha256": "380cd829a765aa3eb784d50942782c8322fd13bc7de355d50b96d641ecb5fa73",
+      "publicGitBlob": "45e50f94e4a1eb56d830205c28830533e9b67749"
+    },
+    "src/units/ncir/cad-map.json": {
+      "privateSha256": "eb515618bee0bdc14fd2305c38cab0cd103b6b074d604d57376b36bf53442dcf",
+      "publicBaselineSha256": "e5a79a039db0ed3bd24475be36f6339efd578eefca73b0790010198f9309daea",
+      "publicGitBlob": "a2d168703e7dd37baa3fad8fe3f485da1f48a80b"
+    }
+  },
+  "dataProofSha256": "7c6a2139c5906680cd6d08ca168ace2975eb6f32036973c585b8e3e8db2b64ce",
+  "toolSha256": "68c3d476e99c4dfbdfc17244720ca27d60a9aa0c1b51b584e5420e3d9228fa16"
+}

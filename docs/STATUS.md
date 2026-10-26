@@ -34,7 +34,7 @@
 | Unit | Joystick v1.1 | modeled | 24 × 48 × 32 | 帽面法线、压放和七视图已检查；继续校准帽形与未确认倾斜限位，贴纸等待原文件 |
 | Unit | Dual Button | modeled | 24 × 48 × 8 | 完整彩帽尺寸、压放和七视图已检查；后续校准真实按压行程，贴纸等待原文件 |
 | Unit | Button | modeled | 24 × 32 × 8 | 原生按压片弯曲、精确回位及七视图已检查；后续校准未确认行程和隐藏包装，贴纸等待原文件 |
-| Unit | NCIR | modeled | 24 × 32 × 8.6 | 优先逐面检查装配闭合与真实开口；贴纸等待用户原文件 |
+| Unit | NCIR | modeled | 24 × 32 × 8.6 | 本批数字证据见artifacts/ncir-detail/public/review.json；隐藏板形/安装yaw/裁脚仍待更精确依据，贴纸等用户原文件 |
 | Unit | Heart Rate | modeled | 24 × 32 × 8 | 继续收敛隐藏PCB外边缘／安装柱避让及照片推导的座内结构，保持真实口面与线缆配合；贴纸等待原文件。 |
 | Unit | Encoder | modeled | 24 × 32 × 25.4 | 继续核准隐藏件尺寸、额定按程与壳体透光外观；本批数字模型专项证据见artifacts/encoder-detail/public/review.json，贴纸等待原文件。 |
 | Unit | Thermal | modeled | 24 × 32 × 8.6 | 本批数字证据见artifacts/thermal-detail/public/review.json；隐藏板形/包体yaw/装配细节仍待更精确依据，贴纸等用户原文件 |

@@ -146,6 +146,8 @@ Angle U005保持`rotation`绝对角度接口和递归路径，例如`host.handle
 
 U135实际 `grove` 口面原点由旧 `[0,-15.65,0]` 更正为 `[0,-15.65,-0.6]` mm，Z取自该产品原壳 `-3.2…2` mm开口中点。`loadGroveModule`和`unitFrame.setDistance`按真实口面重新对齐；直接使用旧Port工程坐标的布局应读取当前Port变换，显式`unitPose.position`仍为装配原点。隐藏PCB/包体/焊腿、帽轴深度、口内尺寸和漫透亮斑范围仍为推导。公开来源与推导见[Encoder来源记录](../source-manifest.json)，专项审查见[Encoder审查记录](../artifacts/encoder-detail/public/review.json)，当前stage保持`modeled`。
 
+NCIR U028保留`sensor`视觉anchor，不提供温度、热图、IR可见光或运动命令。真实`grove`口面由旧`[0,-15.65,0]`改为`[0,-15.65,1.4]` mm，座体10×5.2 mm和入口上下界有本款机械图／CAD依据。默认`loadGroveModule('ncir')`与`unitFrame.setDistance`按当前真实口对齐；显式`unitPose.position`仍是装配原点。依赖旧工程坐标的调用者读取当前Port变换，递归路径（如`grove/grove-1/sensor`）、插头与四芯线API保持。完整TO39的金属筒、凸冠、Ø3.5凹窗和真实环隙分开建模；PCB、安装yaw、脚裁长及局部台阶含推导，见[NCIR建模记录](NCIR-MODEL-NOTES.md)。
+
 ## Grove 装配坐标
 
 `Port` 原点在口面，局部 +Y 向外、+Z 朝宿主正面，1 单位 = 1 mm。`cableLength` 兼容旧入口，表示初始口面间距，曲线实际长度请读 `cable.getState().curveLengthMm`。
