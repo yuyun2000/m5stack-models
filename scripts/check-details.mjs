@@ -3,6 +3,10 @@ import {loadModel} from '../src/loaders.js';
 
 // Keep product-specific mechanical regressions in the normal check command.
 const checks=[];
+const {checkPrintedArtwork}=await import('./check-printed-artwork.mjs');
+checks.push({script:'scripts/check-printed-artwork.mjs',...checkPrintedArtwork()});
+const {checkStickerVariants}=await import('./check-sticker-variants.mjs');
+checks.push({script:'scripts/check-sticker-variants.mjs',...await checkStickerVariants()});
 for(const script of ['check-header-sockets.mjs','check-stopwatch-assembly.mjs','check-stackchan-assembly.mjs','check-classic-unit-connectors.mjs','check-tab5-connectors.mjs','check-cardputer-zero-assembly.mjs','check-ir-hub-rfid2.mjs','check-rs485-buzzer-fan.mjs','check-grove-cable.mjs','check-limit-lever.mjs']){
  await import(new URL(script,import.meta.url));
  checks.push({script:`scripts/${script}`,status:'pass'});

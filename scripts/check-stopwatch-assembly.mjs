@@ -22,7 +22,9 @@ for(const x of [-3,-1,1,3]){
 // The official rear grille is at the top, rather than next to a rear header.
 const pcb=model.root.getObjectByName('Rear main PCB');
 assert.ok(pcb,'StopWatch: rear main PCB exists independently of its label');
-const speakerHits=new THREE.Raycaster(new THREE.Vector3(0,16,-20),new THREE.Vector3(0,0,1)).intersectObject(model.parts['body-shell'],true);
+// This assertion checks the native shell mesh. The separate raster film uses
+// alpha for its U-shaped outer cutline and is reviewed with decoded pixels.
+const speakerHits=new THREE.Raycaster(new THREE.Vector3(0,16,-20),new THREE.Vector3(0,0,1)).intersectObject(model.parts['body-shell'],false);
 assert.equal(speakerHits.length,0,'StopWatch: top grille center stays a genuine shell aperture');
 assert.ok(cast(new THREE.Vector3(0,16,-20),new THREE.Vector3(0,0,1))[0]?.object.name==='Speaker acoustic backing','StopWatch: rear grille has nearby acoustic backing');
 model.dispose();console.log('PASS StopWatch: CAD orientation, button quadrants, 7+6 headers, actual USB/Grove apertures and rear backing.');

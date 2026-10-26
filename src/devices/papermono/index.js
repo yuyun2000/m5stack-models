@@ -2,10 +2,10 @@ import {Device,Button,Led,materials} from '../../core/index.js';
 import {PaperDisplay} from '../../modeling/PaperDisplay.js';
 import {addCadParts} from '../../modeling/cad.js';
 import {isolateActuatorMaterials} from '../../modeling/actuators.js';
-import {slab,mark,FACE} from '../../modeling/parts.js';
+import {slab,FACE} from '../../modeling/parts.js';
 import {usbC,microSD} from '../../modeling/connectors.js';
 import {addAssembly,rgbGuide} from './assembly.js';
-import {artwork} from '../../modeling/artwork.js';
+import {printedArtwork} from '../../modeling/artwork.js';
 import {DIM} from './dimensions.js';
 import data from './geometry-data.js';
 export class PaperMono extends Device {
@@ -23,9 +23,10 @@ export class PaperMono extends Device {
   usbC(this,{...DIM.usb,face:'bottom',depth:4.5});
   microSD(this,{...DIM.sd,face:'left',depth:6.5});
   this.add(new Led({id:'rgb',label:'RGB light guide',mesh:rgbGuide(),position:DIM.rgb.position,quaternion:FACE.left,radius:.45,glowSize:3,meta:{role:'externally-driven-visual'}}));
-  slab(this.body,59.6,39.1,.6,3.4,[.5,-29.5,-4.06],materials.glossy(0x151a1d,{roughness:.25,clearcoat:.25}),[],.035).name='NFC rear molded cover';
-  mark(this.body,22,13,[.5,-29,-4.08],(ctx,W,H,s)=>{ctx.strokeStyle='#667276';ctx.lineWidth=.25*s;for(const sign of [-1,1])for(const r of [3,5,7]){ctx.beginPath();ctx.arc(W/2,H/2,r*s,sign<0?Math.PI*.75:-Math.PI*.25,sign<0?Math.PI*1.25:Math.PI*.25);ctx.stroke();}ctx.font=`700 ${2*s}px Arial`;ctx.fillStyle='#667276';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('NFC',W/2,H/2);},'back');
-  null;
+  // Orthographic rear reference: the NFC cover starts below the complete
+  // circuit sticker. Keep its original lower edge and thickness.
+  slab(this.body,59.6,34.65,.6,3.4,[.5,-31.725,-4.06],materials.glossy(0x151a1d,{roughness:.25,clearcoat:.25}),[],.035).name='NFC rear molded cover';
+  printedArtwork(this,{target:parts['paper-shell'],url:new URL('./artwork/rear.png',import.meta.url).href,size:[57.5,62.9447],position:[.5,18.2,-3.8],face:'back',depth:.5,name:'PaperMono official rear circuit sticker'});
  }
 }
 export default PaperMono;

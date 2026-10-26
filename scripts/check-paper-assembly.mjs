@@ -28,7 +28,7 @@ function common(model,{usb,sd,display,buttons}){
  for(const nx of [-.499,0,.499])for(const ny of [-.499,0,.499]){const p=[display.cx+nx*lcd.size[0],display.cy+ny*lcd.size[1],20],h=cast(p,[0,0,-1]);assert.equal(h?.object,lcd.panel,`${model.meta.name}: front cover obstructs active paper at ${p}`);displayRays++;}
  const panel=model.root.getObjectByName('EPD module body');assert.ok(panel&&new THREE.Box3().setFromObject(panel).getSize(new THREE.Vector3()).z>.8,'Physical EPD module has depth');
  for(const [id,axis]of buttons){const b=model.get(id);assert.ok(b);b.press('assembly-check');b.update(1);assert.ok(b.cap.position.distanceTo(new THREE.Vector3(...axis).multiplyScalar(b.travel))<1e-6,`${model.meta.name}: ${id} moves into its own case`);b.release('assembly-check');b.update(1);assert.ok(b.cap.position.length()<1e-6);}
- let photos=0;model.root.traverse(o=>{if(o.userData.role==='printed-artwork')photos++;if(o.isMesh){for(const n of o.geometry.attributes.position.array)assert.ok(Number.isFinite(n),'Finite assembly vertex');}});assert.equal(photos,0,'Deferred photographic artwork does not hide assembly openings');
+ let photos=0;model.root.traverse(o=>{if(o.userData.role==='printed-artwork'&&!['official-raster','official-raster-film'].includes(o.userData.artworkKind))photos++;if(o.isMesh){for(const n of o.geometry.attributes.position.array)assert.ok(Number.isFinite(n),'Finite assembly vertex');}});assert.equal(photos,0,'Deferred photographic artwork does not hide assembly openings');
  return {displayRays,portFreePathRays:5,contactRays:2,buttonDirections:buttons.length};
 }
 
@@ -40,7 +40,10 @@ export function checkPaperMonoAssembly(model){
  assert.ok(rgbRays>200,'Exercise the long guide over its full CAD opening');
  expect([-45,18,0],[1,0,0],'MIC recessed diaphragm',0,[-28.4,-28.2]);
  const lens=model.get('rgb').lens;assert.equal(lens.name,'RGB long light guide');assert.ok(new THREE.Box3().setFromObject(lens).getSize(new THREE.Vector3()).y>8,'Existing rgb API controls the complete long guide');
- for(let x=-25;x<=25;x+=2)for(let y=-47;y<=-12;y+=2){const h=cast([x,y,-20],[0,0,1],model.root,true);assert.equal(h?.object.name,'NFC rear molded cover',`NFC rear physical cover missing at ${x},${y}`);assert.ok(h.point.z< -4&&h.point.z> -4.15);rearRays++;}
+ // Current orthographic rear reference places the NFC cover below Y=-14.4.
+ // Continue checking its complete lower field and the same retained bottom edge.
+ for(let x=-25;x<=25;x+=2)for(let y=-47;y<=-15;y+=2){const h=cast([x,y,-20],[0,0,1],model.root,true);assert.equal(h?.object.name,'NFC rear molded cover',`NFC rear physical cover missing at ${x},${y}`);assert.ok(h.point.z< -4&&h.point.z> -4.15);rearRays++;}
+ const nfcCover=model.root.getObjectByName('NFC rear molded cover');const nfcBounds=new THREE.Box3().setFromObject(nfcCover);assert.ok(Math.abs(nfcBounds.max.y+14.4)<.01&&Math.abs(nfcBounds.min.y+49.05)<.01,'NFC cover retains its lower edge and follows the documented upper seam');
  const nfc=model.root.getObjectByName('NFC rear molded cover');assert.ok(new THREE.Box3().setFromObject(nfc).getSize(new THREE.Vector3()).z>.55,'NFC cover is a volume, not a photo plane');
  return {status:'pass',...result,rgbApertureRays:rgbRays,nfcPhysicalRearRays:rearRays,micRays:1,scope:'assembled appearance and real cavity retention; inferred concealed dimensions, not fabrication proof'};
 }

@@ -6,7 +6,8 @@ export function checkCore2Assembly(model){
  model.root.updateMatrixWorld(true);
  const hits=(p,d)=>new THREE.Raycaster(new THREE.Vector3(...p),new THREE.Vector3(...d).normalize()).intersectObject(model.root,true).filter(h=>h.object.isMesh&&h.object.material?.opacity!==0);
  const local=(g,p)=>hits(g.localToWorld(new THREE.Vector3(...p)).toArray(),new THREE.Vector3(0,0,-1).transformDirection(g.matrixWorld).toArray())[0];
- const cad=new THREE.Box3();model.root.traverse(o=>{if(o.userData.source==='official-structure')cad.expandByObject(o);});
+ // Measure each native CAD mesh itself; its printed children are separate films.
+ const cad=new THREE.Box3();model.root.traverse(o=>{if(o.isMesh&&o.userData.source==='official-structure'){o.geometry.computeBoundingBox();cad.union(o.geometry.boundingBox.clone().applyMatrix4(o.matrixWorld));}});
  for(const [i,n]of [54,54,16.5].entries())assert.ok(Math.abs(cad.getSize(new THREE.Vector3()).getComponent(i)-n)<.01,'Core2: official CAD envelope is unchanged');
  assert.ok(model.parts['side-key'].position.length()===0&&model.parts['side-key'].rotation.z===0,'Core2: do not relocate the unspecified original internal key part');
  const usb=model.root.getObjectByName('USB-C receptacle'),sd=model.root.getObjectByName('microSD receptacle'),grove=model.root.getObjectByName('Core2 Grove socket');

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-26T03:20:06.210Z",
+  "checkedAt": "2026-10-26T05:03:56.680Z",
   "scope": "Actual control movement and externally driven visual kinematics; no hardware/runtime validation",
   "checks": [
     {
@@ -430,7 +430,7 @@
             10.45,
             7.8
           ],
-          "geometryMeshes": 257,
+          "geometryMeshes": 266,
           "scope": "External RGB state and source-slot appearance; package dimensions/depth remain photo-derived"
         },
         {
@@ -830,7 +830,7 @@
     },
     {
       "script": "scripts/check-roller485.mjs",
-      "checkedAt": "2026-10-26T03:18:30.134Z",
+      "checkedAt": "2026-10-26T05:02:27.946Z",
       "status": "pass",
       "sku": "U182",
       "variant": "standard-slip-ring",
@@ -1162,7 +1162,7 @@
     },
     {
       "script": "scripts/check-viewer-lifecycle.mjs",
-      "checkedAt": "2026-10-26T03:19:10.592Z",
+      "checkedAt": "2026-10-26T05:03:04.345Z",
       "status": "pass",
       "checks": [
         "same Viewer mount idempotence",
@@ -1766,7 +1766,7 @@
     },
     {
       "script": "scripts/check-8encoder.mjs",
-      "checkedAt": "2026-10-26T03:20:00.047Z",
+      "checkedAt": "2026-10-26T05:03:50.096Z",
       "status": "pass",
       "scope": "Appearance/geometry/input intent only; no encoder count, electrical or firmware simulation",
       "sku": "U153",
@@ -1889,82 +1889,98 @@
         {
           "id": "sticks3",
           "controls": 3,
-          "hoverMaterials": 3
+          "hoverMaterials": 3,
+          "passiveArtworkMaterials": 0
         },
         {
           "id": "cores3",
           "controls": 2,
-          "hoverMaterials": 2
+          "hoverMaterials": 2,
+          "passiveArtworkMaterials": 0
         },
         {
           "id": "stopwatch",
           "controls": 3,
-          "hoverMaterials": 3
+          "hoverMaterials": 3,
+          "passiveArtworkMaterials": 0
         },
         {
           "id": "cardputer-adv",
           "controls": 60,
-          "hoverMaterials": 60
+          "hoverMaterials": 60,
+          "passiveArtworkMaterials": 0
         },
         {
           "id": "cardputer-zero",
           "controls": 48,
-          "hoverMaterials": 48
+          "hoverMaterials": 48,
+          "passiveArtworkMaterials": 1
         },
         {
           "id": "papermono",
           "controls": 3,
-          "hoverMaterials": 3
+          "hoverMaterials": 3,
+          "passiveArtworkMaterials": 0
         },
         {
           "id": "core2",
           "controls": 5,
-          "hoverMaterials": 2
+          "hoverMaterials": 2,
+          "passiveArtworkMaterials": 0
         },
         {
           "id": "papercolor",
           "controls": 4,
-          "hoverMaterials": 4
+          "hoverMaterials": 4,
+          "passiveArtworkMaterials": 0
         },
         {
           "id": "nanoc6",
           "controls": 1,
-          "hoverMaterials": 1
+          "hoverMaterials": 1,
+          "passiveArtworkMaterials": 0
         },
         {
           "id": "stackchan",
           "controls": 5,
-          "hoverMaterials": 2
+          "hoverMaterials": 2,
+          "passiveArtworkMaterials": 0
         },
         {
           "id": "tab5",
           "controls": 2,
-          "hoverMaterials": 2
+          "hoverMaterials": 2,
+          "passiveArtworkMaterials": 0
         },
         {
           "id": "atoms3r",
           "controls": 2,
-          "hoverMaterials": 4
+          "hoverMaterials": 4,
+          "passiveArtworkMaterials": 0
         },
         {
           "id": "nesso-n1",
           "controls": 2,
-          "hoverMaterials": 2
+          "hoverMaterials": 2,
+          "passiveArtworkMaterials": 0
         },
         {
           "id": "stamplc",
           "controls": 4,
-          "hoverMaterials": 4
+          "hoverMaterials": 4,
+          "passiveArtworkMaterials": 0
         },
         {
           "id": "cores3-din",
           "controls": 3,
-          "hoverMaterials": 8
+          "hoverMaterials": 8,
+          "passiveArtworkMaterials": 0
         }
       ],
       "controls": 147,
       "hoverMaterials": 148,
-      "disposedCapMaterials": 148,
+      "passiveArtworkMaterials": 1,
+      "disposedCapMaterials": 149,
       "cases": [
         "opt-in material ownership",
         "same-cap sharing",
@@ -1973,7 +1989,7 @@
         "default caller-owned material preservation",
         "Actual AtomS3R external framebuffer/backlight during hover and held/released cap"
       ],
-      "scope": "Real controller models plus CoreS3 DinBase: independent cap hover, exact emission restoration, fixed/neighbour material stability, stable detents, caller-owned output references and disposal. Canvas drawing boundary is stubbed; browser pixels remain separate."
+      "scope": "Real controller models plus CoreS3 DinBase: independent cap hover, exact emission restoration, passive official cap artwork stability, fixed/neighbour material stability, stable detents, caller-owned output references and disposal. Canvas drawing boundary is stubbed; browser pixels remain separate."
     },
     {
       "product": "sticks3",

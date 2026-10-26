@@ -1,7 +1,298 @@
 {
-  "checkedAt": "2026-10-26T03:20:06.211Z",
+  "checkedAt": "2026-10-26T05:03:56.681Z",
   "scope": "Assembled mechanical geometry and visual kinematics only; browser review and physical fit remain separate",
   "checks": [
+    {
+      "script": "scripts/check-printed-artwork.mjs",
+      "status": "pass",
+      "projectedHole": true,
+      "filmHole": true,
+      "capTravelMm": 0.25,
+      "release": true,
+      "ancestorScale": true,
+      "outwardFacesOnly": true,
+      "explicitDisable": true,
+      "scope": "geometry and ownership; raster decoding and visual fit require browser review"
+    },
+    {
+      "script": "scripts/check-sticker-variants.mjs",
+      "status": "pass",
+      "cases": [
+        {
+          "product": "sticks3",
+          "configuration": "default",
+          "layers": 3,
+          "groveLayers": null,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "cores3",
+          "configuration": "module",
+          "layers": 2,
+          "groveLayers": null,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "cores3",
+          "configuration": "din",
+          "layers": 6,
+          "groveLayers": null,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "stopwatch",
+          "configuration": "default",
+          "layers": 1,
+          "groveLayers": null,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "cardputer-adv",
+          "configuration": "default",
+          "layers": 9,
+          "groveLayers": null,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "cardputer-zero",
+          "configuration": "default",
+          "layers": 8,
+          "groveLayers": null,
+          "movingLabels": 1,
+          "status": "pass"
+        },
+        {
+          "product": "papermono",
+          "configuration": "default",
+          "layers": 1,
+          "groveLayers": null,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "core2",
+          "configuration": "default",
+          "layers": 2,
+          "groveLayers": null,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "papercolor",
+          "configuration": "default",
+          "layers": 4,
+          "groveLayers": null,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "stackchan",
+          "configuration": "default",
+          "layers": 4,
+          "groveLayers": null,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "tab5",
+          "configuration": "default",
+          "layers": 9,
+          "groveLayers": null,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "atoms3r",
+          "configuration": "default",
+          "layers": 3,
+          "groveLayers": null,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "env-iii",
+          "configuration": "standard",
+          "layers": 0,
+          "groveLayers": 0,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "env-iii",
+          "configuration": "education-cn",
+          "layers": 1,
+          "groveLayers": 1,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "pir",
+          "configuration": "standard",
+          "layers": 0,
+          "groveLayers": 0,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "pir",
+          "configuration": "education-cn",
+          "layers": 1,
+          "groveLayers": 1,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "ultrasonic-i2c",
+          "configuration": "default",
+          "layers": 1,
+          "groveLayers": 1,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "rgb",
+          "configuration": "default",
+          "layers": 1,
+          "groveLayers": 1,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "angle",
+          "configuration": "standard",
+          "layers": 0,
+          "groveLayers": 0,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "angle",
+          "configuration": "education-cn",
+          "layers": 1,
+          "groveLayers": 1,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "light",
+          "configuration": "standard",
+          "layers": 0,
+          "groveLayers": 0,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "light",
+          "configuration": "education-cn",
+          "layers": 1,
+          "groveLayers": 1,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "dual-button",
+          "configuration": "default",
+          "layers": 1,
+          "groveLayers": 1,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "thermal",
+          "configuration": "standard",
+          "layers": 0,
+          "groveLayers": 0,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "thermal",
+          "configuration": "education-cn",
+          "layers": 1,
+          "groveLayers": 1,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "ir",
+          "configuration": "default",
+          "layers": 1,
+          "groveLayers": 1,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "hub",
+          "configuration": "default",
+          "layers": 1,
+          "groveLayers": 1,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "rfid2",
+          "configuration": "default",
+          "layers": 2,
+          "groveLayers": 2,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "fan",
+          "configuration": "bare",
+          "layers": 0,
+          "groveLayers": 0,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "fan",
+          "configuration": "propeller",
+          "layers": 0,
+          "groveLayers": 0,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "fan",
+          "configuration": "bare-education-cn",
+          "layers": 1,
+          "groveLayers": 1,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "fan",
+          "configuration": "propeller-education-cn",
+          "layers": 1,
+          "groveLayers": 1,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "scroll",
+          "configuration": "standard",
+          "layers": 0,
+          "groveLayers": 0,
+          "movingLabels": 0,
+          "status": "pass"
+        },
+        {
+          "product": "scroll",
+          "configuration": "education-cn",
+          "layers": 1,
+          "groveLayers": 1,
+          "movingLabels": 0,
+          "status": "pass"
+        }
+      ],
+      "scope": "Actual model/configuration/attached-module geometry, opt-out, addresses and cap ownership; browser pixel review is separate"
+    },
     {
       "script": "scripts/check-header-sockets.mjs",
       "status": "pass"
@@ -97,7 +388,7 @@
       "contactRays": 2,
       "buttonDirections": 3,
       "rgbApertureRays": 265,
-      "nfcPhysicalRearRays": 468,
+      "nfcPhysicalRearRays": 442,
       "micRays": 1,
       "scope": "assembled appearance and real cavity retention; inferred concealed dimensions, not fabrication proof"
     },
@@ -625,8 +916,8 @@
       },
       "visibleEnvelopeMm": [
         84.46999987363816,
-        54.00000000298023,
-        19.675804138183594
+        54.007999420166016,
+        19.718000564575195
       ],
       "scope": "independent CAD aperture rays, assembled cavities and actual moving meshes; concealed shapes remain inferred"
     },

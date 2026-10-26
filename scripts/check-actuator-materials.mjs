@@ -8,8 +8,9 @@ import {DEVICE_BUTTON_COUNTS} from './check-device-actuators.mjs';
 
 const materials=object=>Array.isArray(object.material)?object.material:object.material?[object.material]:[];
 const belongs=(object,parent)=>{for(;object;object=object.parent)if(object===parent)return true;return false;};
-const emissiveMaterials=root=>{const found=new Set();root.traverse(object=>{if(object.isMesh)for(const material of materials(object))if(material.emissive)found.add(material);});return found;};
-const snapshot=root=>new Map([...emissiveMaterials(root)].map(material=>[material,material.emissive.toArray()]));
+const isArtwork=object=>object.userData.role==='printed-artwork';
+const emissiveMaterials=(root,predicate=()=>true)=>{const found=new Set();root.traverse(object=>{if(object.isMesh&&predicate(object))for(const material of materials(object))if(material.emissive)found.add(material);});return found;};
+const snapshot=(root,predicate)=>new Map([...emissiveMaterials(root,predicate)].map(material=>[material,material.emissive.toArray()]));
 const unchanged=(values,why)=>{for(const [material,value]of values)assert.deepEqual(material.emissive.toArray(),value,why);};
 const renderProperties=material=>{const json=material.toJSON();delete json.uuid;return json;};
 
@@ -31,24 +32,29 @@ function checkOptInBoundary(){
 export async function checkActuatorMaterials(){
  const previousDocument=globalThis.document;
  if(!previousDocument){const noop=()=>{},ctx=new Proxy({measureText:()=>({width:20}),createRadialGradient:()=>({addColorStop:noop}),createLinearGradient:()=>({addColorStop:noop})},{get:(object,key)=>object[key]??noop,set:(object,key,value)=>(object[key]=value,true)});globalThis.document={createElement:()=>({getContext:()=>ctx})};}
- const cases=[],products=[];let controls=0,hoverMaterials=0,disposedCapMaterials=0;
+ const cases=[],products=[];let controls=0,hoverMaterials=0,passiveArtworkMaterials=0,disposedCapMaterials=0;
  try{
   cases.push(...checkOptInBoundary());
   for(const [id,options]of [...Object.keys(DEVICE_BUTTON_COUNTS).map(id=>[id,{}]),['cores3',{dinBase:true}]]){
-   const model=await loadModel(id,options),resources=new Map(),buttons=model.list('button'),label=options.dinBase?'cores3-din':id;
+   const model=await loadModel(id,options),resources=new Map(),artworkResources=new Set(),buttons=model.list('button'),label=options.dinBase?'cores3-din':id;
    try{
     for(const button of buttons){
-     const capMaterials=emissiveMaterials(button.cap),own=snapshot(button.cap),outside=new Map();
+     // Official graphics added after mounting follow the cap's motion while
+     // retaining their own passive ink material, outside Button's hover palette.
+     const capMaterials=emissiveMaterials(button.cap,object=>!isArtwork(object)),own=snapshot(button.cap,object=>!isArtwork(object)),artwork=snapshot(button.cap,isArtwork),outside=new Map();
      model.root.traverse(object=>{if(object.isMesh&&!belongs(object,button.cap))for(const material of materials(object))if(material.emissive)outside.set(material,material.emissive.toArray());});
-     for(const material of capMaterials){assert.ok(!outside.has(material),`${label}/${button.id}: a hover material cannot also color fixed geometry or a neighbouring control`);if(!resources.has(material)){resources.set(material,0);material.addEventListener('dispose',()=>resources.set(material,resources.get(material)+1));}}
+     for(const material of artwork.keys())artworkResources.add(material);
+     for(const material of new Set([...capMaterials,...artwork.keys()])){assert.ok(!outside.has(material),`${label}/${button.id}: a cap material cannot also color fixed geometry or a neighbouring control`);if(!resources.has(material)){resources.set(material,0);material.addEventListener('dispose',()=>resources.set(material,resources.get(material)+1));}}
      const initialState=button.getState(),position=button.cap.position.clone();
      button.setHover(true);
      unchanged(outside,`${label}/${button.id}: hover leaves every fixed/other-control emissive channel bit-for-bit unchanged`);
+     unchanged(artwork,`${label}/${button.id}: hover preserves passive official cap artwork emission`);
      for(const [material,base]of own){const expected=material.color.clone().multiplyScalar(.18).add(new THREE.Color(...base));assert.deepEqual(material.emissive.toArray(),expected.toArray(),`${label}/${button.id}: visible cap receives its normal hover feedback`);}
      assert.deepEqual(button.getState(),initialState,`${label}/${button.id}: hover cannot press or change a stable detent`);assert.ok(button.cap.position.equals(position),`${label}/${button.id}: hover cannot move the cap`);
-     button.setHover(false);unchanged(own,`${label}/${button.id}: hover off exactly restores cap emission`);unchanged(outside,`${label}/${button.id}: hover off leaves fixed/other-control emission unchanged`);
+     button.setHover(false);unchanged(own,`${label}/${button.id}: hover off exactly restores cap emission`);unchanged(artwork,`${label}/${button.id}: hover off preserves official cap artwork emission`);unchanged(outside,`${label}/${button.id}: hover off leaves fixed/other-control emission unchanged`);
      button.press('material-check');model.update(1);button.cancel('material-check');model.update(1);if(button.latching)button.setPosition(initialState.position,{immediate:true});unchanged(own,`${label}/${button.id}: held/released input cannot fabricate cap light`);unchanged(outside,`${label}/${button.id}: held/released input cannot fabricate other-component light`);assert.equal(button.pressed,false);
-     controls++;hoverMaterials+=capMaterials.size;
+     unchanged(artwork,`${label}/${button.id}: input and detent changes cannot fabricate official cap artwork light`);
+     controls++;hoverMaterials+=capMaterials.size;passiveArtworkMaterials+=artwork.size;
     }
     if(id==='cardputer-zero'){
      const cap=buttons.find(button=>button.id==='key-F1').cap,capMesh=cap.getObjectByName('Rubber key cap'),stem=cap.getObjectByName('Key membrane stem');assert.ok(capMesh.material===stem.material,'Real Zero key cap and membrane stem preserve their within-cap material sharing');
@@ -60,12 +66,12 @@ export async function checkActuatorMaterials(){
      button.setHover(true);button.press('framebuffer-check');model.update(1);model.handle({type:'display',target:'lcd',fill:'#bc3456',backlight:.73});model.update(1);assert.deepEqual(lcd.getPixel(17,29),[188,52,86]);assert.equal(lcd.panel.material.uniforms.brightness.value,.73);assert.ok(lcd.panel.material===shader&&lcd.glass.material===glass&&shader.uniforms.map.value===texture,'Framebuffer writes and cap motion preserve live shader/glass ownership');button.cancel('framebuffer-check');button.setHover(false);model.update(1);assert.equal(button.getActuationState().depthMm,0);
      cases.push('Actual AtomS3R external framebuffer/backlight during hover and held/released cap');
     }
-    products.push({id:label,controls:buttons.length,hoverMaterials:[...resources].length});
+    products.push({id:label,controls:buttons.length,hoverMaterials:resources.size-artworkResources.size,passiveArtworkMaterials:artworkResources.size});
    }finally{model.dispose();}
    assert.ok([...resources.values()].every(count=>count>0),`${label}: all conventional cap materials are disposed with their real model`);disposedCapMaterials+=resources.size;
   }
  }finally{if(!previousDocument)delete globalThis.document;}
- return {status:'pass',products,controls,hoverMaterials,disposedCapMaterials,cases,scope:'Real controller models plus CoreS3 DinBase: independent cap hover, exact emission restoration, fixed/neighbour material stability, stable detents, caller-owned output references and disposal. Canvas drawing boundary is stubbed; browser pixels remain separate.'};
+ return {status:'pass',products,controls,hoverMaterials,passiveArtworkMaterials,disposedCapMaterials,cases,scope:'Real controller models plus CoreS3 DinBase: independent cap hover, exact emission restoration, passive official cap artwork stability, fixed/neighbour material stability, stable detents, caller-owned output references and disposal. Canvas drawing boundary is stubbed; browser pixels remain separate.'};
 }
 
 if(process.argv[1]&&pathToFileURL(process.argv[1]).href===import.meta.url)console.log('PASS actuator material isolation:',JSON.stringify(await checkActuatorMaterials()));

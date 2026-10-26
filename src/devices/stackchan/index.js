@@ -10,13 +10,16 @@ import {addMotionMechanics} from './motion-mechanics.js';
 import {usbC} from '../../modeling/connectors.js';
 import {PitchHarness} from './PitchHarness.js';
 import {addTouchLed} from './touch-led.js';
+import {printedArtwork} from '../../modeling/artwork.js';
 export class StackChan extends Device{
  static meta={id:'m5stack.stackchan',name:'StackChan',sku:'K151',vendor:'M5Stack',size:DIM.body,keymap:{KeyP:'power'}};
  build(){
   addCadParts(this,data,{shell:materials.plastic(0xbfc3c1,{roughness:.76}),dark:materials.plastic(0x303638,{roughness:.83}),'white-cover':materials.plastic(0xbdc5bf,{roughness:.83}),'grey-cover':materials.plastic(0x6f7974,{roughness:.83})});
   const rear=addRearAssembly(this);
   const top=addTopBoard(this);
-  const core=new CoreS3();this.body.add(core.root);core.root.position.fromArray(DIM.corePosition);
+  // StackChan has its own exterior certification and side labels. The exposed
+  // rear assembly is distinct from a standalone CoreS3 shield sticker.
+  const core=new CoreS3({artwork:false});this.body.add(core.root);core.root.position.fromArray(DIM.corePosition);
   // Reuse the exact visual module, preserving public lcd/button/port IDs at the top level.
   for(const c of core.components.values())this.add(c,core.body);
   core.components.clear();
@@ -50,6 +53,9 @@ export class StackChan extends Device{
   yaw.adopt(...original.filter(o=>!fixed.has(o)&&!headParts.includes(o)),pitch.object3d);
   const harness=this.add(new PitchHarness({id:'pitch-harness',label:'StackChan seven-wire visual loom',upper:rear.upperHarness,lower:adapter.lowerHarness,pitch,meta:{role:'visual-cross-joint-harness',source:'Official Power/Adapter CON4 and rear photo; hidden routing inferred'}}));
   yaw.adopt(harness.object3d);harness.update();
+  for(const [x,face]of [[-27,'left'],[27,'right']])printedArtwork(this,{target:this.parts['head-shell'],url:new URL('./artwork/side.png',import.meta.url).href,size:[40.5,5.45],position:[x,8.25,11.2],face,depth:.45,name:`StackChan official ${face} head sticker`});
+  printedArtwork(this,{target:core.parts['core-module-shell'],url:new URL('./artwork/certification.png',import.meta.url).href,size:[16,12.28],position:[-7.5,34.95,23.2],face:'top',rotation:Math.PI,depth:.7,name:'StackChan official head certification sticker'});
+  printedArtwork(this,{target:this.parts['base-bottom'],url:new URL('./artwork/bottom.png',import.meta.url).href,size:[32.8,35.86],position:[0,-35,-2.5],face:'bottom',depth:.7,name:'StackChan official fixed base bottom sticker'});
   this.stackchanAssembly={rear,adapter,mechanics,harness,baseUsb,touchLed};
  }
 }

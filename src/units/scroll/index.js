@@ -5,6 +5,7 @@ import {mesh,grove,slab,screw} from '../../modeling/parts.js';
 import {buildGroveModuleAssembly} from '../../modeling/grove-cable.js';
 import data from './geometry-data.js';
 import {spec} from './dimensions.js';
+import {addStickers} from './stickers.js';
 
 function addBoard(host){
  const w=9.8,h=13,r=3.8,post=3.8,offset=w-8,dy=Math.sqrt(post*post-offset*offset),theta=Math.acos(offset/post),shape=new THREE.Shape();
@@ -39,6 +40,7 @@ function build(host){
  screw(host.body,[0,-4,-4.015],'back',1.2);
  host.add(new Component({id:'sensor',label:'Unit Scroll visual anchor',meta:{role:'visual-anchor',scope:'no encoder counts, I2C, firmware, electrical or sensor model'}}));
  host.scrollMechanism={wheel,support,joint,press,led};
+ addStickers(host);
 }
 export class Model extends Device{static meta={id:'m5stack.unit.scroll',name:spec.name,sku:spec.sku,vendor:'M5Stack',size:spec.size,nominalMm:spec.nominalMm,keymap:spec.keymap};build(){build(this);}}
 export class GroveModule extends Module{static meta={id:'m5stack.unit.scroll.grove',name:spec.name,sku:spec.sku,connector:'grove',keymap:spec.keymap};build(options={}){buildGroveModuleAssembly(this,build,options);}}

@@ -6,6 +6,7 @@ import {cadButton,physicalButton} from '../../modeling/actuators.js';
 import {usbC} from '../../modeling/connectors.js';
 import {DIM} from './dimensions.js';
 import data from './geometry-data.js';
+import {addStickers,REAR_LABEL_CENTER_Y} from './stickers.js';
 export class AtomS3R extends Device {
  static meta={id:'m5stack.atoms3r',name:'AtomS3R',sku:'C126',size:[24,24,12.9],vendor:'M5Stack',keymap:{Space:'button'}};
  build(){
@@ -18,7 +19,9 @@ export class AtomS3R extends Device {
   const headerClearances=[[7.65,-2.70,5],[-7.65,-3.97,4]].flatMap(([x,y,count])=>Array.from({length:count},(_,i)=>({w:1.85,h:1.85,r:.12,cx:x,cy:y+(i-(count-1)/2)*2.54-.1})));
   slab(this.body,20.5,21.8,.8,.8,[0,.1,-6.30],materials.plastic(0x314b40,{roughness:.9}),[{w:2.2,h:2.2,r:1.1,cx:0,cy:-.1},...headerClearances],.08).name='Rear main PCB';
   const mountFloor=disc(this.body,1.08,[0,0,-5.45],materials.cavity());mountFloor.quaternion.copy(FACE.back);mountFloor.name='M2 mounting blind-hole floor';
-  slab(this.body,12.3,15.2,.15,.2,[0,4.4,-6.44],materials.plastic(0xc9cec8,{roughness:.87}),[{w:2.2,h:2.2,r:1.1,cx:0,cy:-4.4}],.025).name='Rear PCB retaining plate';
+  // Register this inferred support against the rear label and the 2.54 mm
+  // socket rows, while keeping the actual mounting axis at world (0,0).
+  const retainingPlate=slab(this.body,12.3,15.2,.15,.2,[0,REAR_LABEL_CENTER_Y,-6.44],materials.plastic(0xc9cec8,{roughness:.87}),[{w:2.2,h:2.2,r:1.1,cx:0,cy:-REAR_LABEL_CENTER_Y}],.025);retainingPlate.name='Rear PCB retaining plate';
   const antenna=slab(this.body,18.2,2.3,.7,.2,[0,-11.3,4.15],materials.plastic(0x21272a,{roughness:.79}),[],.04);antenna.quaternion.copy(FACE.bottom);antenna.name='3D antenna body';
   // Official C126 main photo locates IR at the small top-edge notch; the
   // v0.4.1 schematic identifies D2 as MEIHUA/MHS153IRCT. Its package and short
@@ -48,6 +51,7 @@ export class AtomS3R extends Device {
   cadButton(this,{source:parts['rear-shell'],id:'reset',label:'Side reset key',position:[-12,5,-1],face:'left',w:4,h:7.4,r:.3,depth:1.8,travel:.16});
   header(this.body,{position:[7.65,-2.70,-6.2],cols:1,rows:5});
   header(this.body,{position:[-7.65,-3.97,-6.2],cols:1,rows:4});
+  addStickers(this,retainingPlate);
  }
 }
 export default AtomS3R;

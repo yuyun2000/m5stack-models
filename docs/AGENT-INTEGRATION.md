@@ -331,3 +331,7 @@ demo 的异步 Unit 加载在切换模型、接口或 Unit 后会作废旧请求
 生命周期专项为 `scripts/check-port-lifecycle.mjs`、`scripts/check-viewer-lifecycle.mjs`、`scripts/check-demo-lifecycle.mjs`，已接入正常检查。Viewer 专项运行真实查看器与输入路由，以无 GPU renderer 和 DOM 边界替身检查所有权和取消顺序；这些替身不提供浏览器视觉证据。
 
 还需打开 demo，实际操作按键按住/回弹、模型快捷键与表单焦点、连接/断开、端点旋转、风叶转动、摇杆倾斜与按压、StackChan 组合姿态。Node 几何测试不能替代浏览器画面，也不能证明下游模拟器、真实硬件、机械配合或硬件限位正确。
+
+## 正式栅格贴纸
+
+正式贴纸默认启用，`artwork: false`关闭本批栅格层。七款Unit另提供显式`stickerVariant: 'education-cn'`；独立模型与Grove模块分别传选项，父主机选项不自动传播。贴图固定于真实壳体、盖、帽或关节，外部框架无需逐帧重设贴纸坐标。覆盖、缺面、位图精度和许可边界见[贴纸记录](STICKER-COVERAGE.md)。旧照片裁切保持关闭。
