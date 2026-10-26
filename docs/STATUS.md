@@ -26,7 +26,7 @@
 | Unit | PIR | modeled | 24 × 32 × 12.5 | 当前装配细化与专用检查已复核；继续核对照片推导细节，贴纸等待原文件 |
 | Unit | Ultrasonic-I2C | modeled | 24 × 56 × 15.2 | 当前装配细化与专用检查已复核；继续核对照片推导细节，贴纸等待原文件 |
 | Unit | RGB LED | modeled | 24 × 32 × 8 | 优先逐面检查装配闭合与真实开口；贴纸等待用户原文件 |
-| Unit | Angle | modeled | 24 × 32 × 22 | 优先逐面检查装配闭合与真实开口；贴纸等待用户原文件 |
+| Unit | Angle | modeled | 24 × 32 × 22 | 继续核准隐藏包体与机械限位；本批实体/旋转/四芯接线专项证据见artifacts/angle-detail/public/review.json，stage仍modeled，贴纸等待原文件。 |
 | Unit | Color | modeled | 24 × 32 × 8 | 继续校准白色补光的封装深度、光扩散与窗口装配，D1/D2左右映射仍未确认；贴纸等待用户原文件。 |
 | Unit | ToF | modeled | 24 × 32 × 8 | 优先逐面检查装配闭合与真实开口；贴纸等待用户原文件 |
 | Unit | Light | modeled | 24 × 32 × 8 | 继续核准U021电位器具体型号、额定机械转角与微调头/蓝座局部尺寸；贴纸等待用户原文件。 |

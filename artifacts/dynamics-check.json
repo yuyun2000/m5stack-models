@@ -1,7 +1,28 @@
 {
-  "checkedAt": "2026-10-25T23:19:17.900Z",
+  "checkedAt": "2026-10-26T00:06:45.340Z",
   "scope": "Actual control movement and externally driven visual kinematics; no hardware/runtime validation",
   "checks": [
+    {
+      "script": "scripts/check-angle-assembly.mjs",
+      "status": "pass",
+      "sku": "U005",
+      "inputAssemblySha256": "476b27f2924e86a9ef3414bb78683362cc69e20382b370786d3b0948319a2f63",
+      "axisMm": [
+        0,
+        8,
+        4
+      ],
+      "movingDiameterMm": 9.500000313915383,
+      "nativeToCapEnvelopeMm": 22.299999046325684,
+      "motionCases": 4,
+      "grovePoseCases": 7,
+      "rays": 23,
+      "nativeSurfaceSamples": 6360,
+      "trackedResources": 753,
+      "retiredResourcesAtBuild": 107,
+      "scope": "Product-specific finite geometry, blind-bore rays, fixed support, external visual motion, native topology and actual standalone/Grove/HUB paths; no native closed-solid assumption, browser, hardware, potentiometer values or manufacturing-fit proof. Resource accounting covers Angle physical frames, wire resources and observed constructor-retired resources; generic shared plug materials and unrelated HUB resources remain outside this product check.",
+      "resourcesReleasedExactlyOnce": 753
+    },
     {
       "script": "scripts/check-encoder-assembly.mjs",
       "status": "pass",
@@ -769,7 +790,7 @@
     },
     {
       "script": "scripts/check-roller485.mjs",
-      "checkedAt": "2026-10-25T23:17:46.148Z",
+      "checkedAt": "2026-10-26T00:05:12.186Z",
       "status": "pass",
       "sku": "U182",
       "variant": "standard-slip-ring",
@@ -1101,7 +1122,7 @@
     },
     {
       "script": "scripts/check-viewer-lifecycle.mjs",
-      "checkedAt": "2026-10-25T23:18:25.237Z",
+      "checkedAt": "2026-10-26T00:05:51.525Z",
       "status": "pass",
       "checks": [
         "same Viewer mount idempotence",
@@ -1705,7 +1726,7 @@
     },
     {
       "script": "scripts/check-8encoder.mjs",
-      "checkedAt": "2026-10-25T23:19:12.116Z",
+      "checkedAt": "2026-10-26T00:06:39.661Z",
       "status": "pass",
       "scope": "Appearance/geometry/input intent only; no encoder count, electrical or firmware simulation",
       "sku": "U153",

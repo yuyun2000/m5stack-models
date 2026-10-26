@@ -1,0 +1,110 @@
+{
+  "checkedAt": "2026-10-26T00:07:29.605Z",
+  "status": "pass-with-recorded-limits",
+  "privateVisualReviewSha256": "b9390331f4de3d2b4d668aba4323f403599fc2d136933435f89c1250c8a2c107",
+  "sourceCommit": "9119903a48af04341fe1d17c6db0a2d0dccc5f51",
+  "publicNativeRgbPairs": [
+    {
+      "original": "artifacts/angle-detail/views/angle-assembly-close.png",
+      "independent": "artifacts/angle-detail/public/views/angle-assembly-close.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/angle-detail/views/angle-back.png",
+      "independent": "artifacts/angle-detail/public/views/angle-back.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/angle-detail/views/angle-bottom.png",
+      "independent": "artifacts/angle-detail/public/views/angle-bottom.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/angle-detail/views/angle-front-neutral.png",
+      "independent": "artifacts/angle-detail/public/views/angle-front-neutral.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/angle-detail/views/angle-front.png",
+      "independent": "artifacts/angle-detail/public/views/angle-front.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/angle-detail/views/angle-iso.png",
+      "independent": "artifacts/angle-detail/public/views/angle-iso.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/angle-detail/views/angle-left.png",
+      "independent": "artifacts/angle-detail/public/views/angle-left.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/angle-detail/views/angle-position-150.png",
+      "independent": "artifacts/angle-detail/public/views/angle-position-150.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/angle-detail/views/angle-position-37.png",
+      "independent": "artifacts/angle-detail/public/views/angle-position-37.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/angle-detail/views/angle-position-minus90.png",
+      "independent": "artifacts/angle-detail/public/views/angle-position-minus90.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/angle-detail/views/angle-position-reset.png",
+      "independent": "artifacts/angle-detail/public/views/angle-position-reset.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/angle-detail/views/angle-right.png",
+      "independent": "artifacts/angle-detail/public/views/angle-right.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/angle-detail/views/angle-top.png",
+      "independent": "artifacts/angle-detail/public/views/angle-top.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/angle-detail/views/sticks3-hub-angle-37.png",
+      "independent": "artifacts/angle-detail/public/views/sticks3-hub-angle-37.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/angle-detail/views/sticks3-hub-angle-default.png",
+      "independent": "artifacts/angle-detail/public/views/sticks3-hub-angle-default.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/angle-detail/views/sticks3-hub-angle-detached.png",
+      "independent": "artifacts/angle-detail/public/views/sticks3-hub-angle-detached.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/angle-detail/views/sticks3-hub-angle-posed.png",
+      "independent": "artifacts/angle-detail/public/views/sticks3-hub-angle-posed.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/angle-detail/views/sticks3-hub-angle-reset.png",
+      "independent": "artifacts/angle-detail/public/views/sticks3-hub-angle-reset.png",
+      "rgbIdentical": true
+    }
+  ],
+  "observations": [
+    "Seven neutral sides inspected: actual blue base/metal fixed frame close the rotary opening; no photographs or stickers; real mounting and Grove openings remain.",
+    "Solid cap has short edge notch, longitudinal grip and supported shaft; 37/-90/150 degree poses change the notch while fixed parts remain fixed.",
+    "Both standalone and nested reset return exact neutral RGB. Actual stick-host/HUB/Angle scene has physical four-core cables, and Angle remains visible under the explicit posed left view.",
+    "Detach uses the published left-view control to refit the remaining host/HUB before its final capture.",
+    "Final v3 first17 PNG hashes exactly match the already inspected v2 native PNGs; the new18th detach frame was separately opened and inspected."
+  ],
+  "scope": "Actual independent public native captures are RGB-identical to the18 individually inspected frozen original frames; real DOM controls, requests and compiled WebGL renderer are recorded in browser-review.json.",
+  "limits": [
+    "Concealed dimensions/materials and visual segmentation inferred; no physical travel/ADC/firmware/hardware behavior.",
+    "Finite native mapping/sampling does not prove manufacturing fit. All43 stay modeled/zero verified; stickers deferred."
+  ]
+}

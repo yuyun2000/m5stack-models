@@ -1,0 +1,126 @@
+
+> m5stack-models.js@0.1.0 check
+> node scripts/check.mjs && node scripts/check-details.mjs
+
+Catalog valid: 43 products; {"modeled":43}
+PASS sticks3: 172 meshes; geometry and visual bindings
+PASS cores3/dinBase: 92 meshes; kit assembly and 19 closure rays
+PASS cores3: 204 meshes; geometry and visual bindings
+PASS stopwatch: 102 meshes; geometry and visual bindings
+PASS cardputer-adv: 257 meshes; geometry and visual bindings
+PASS cardputer-zero: 413 meshes; geometry and visual bindings
+PASS papermono: 58 meshes; geometry and visual bindings
+PASS core2: 105 meshes; geometry and visual bindings
+PASS papercolor: 81 meshes; geometry and visual bindings
+PASS nanoc6: 72 meshes; geometry and visual bindings
+PASS stackchan: 470 meshes; geometry and visual bindings
+PASS tab5: 314 meshes; geometry and visual bindings
+PASS atoms3r: 110 meshes; geometry and visual bindings
+PASS nesso-n1: 134 meshes; geometry and visual bindings
+PASS stamplc: 336 meshes; geometry and visual bindings
+PASS env-iii: 39 meshes; geometry and visual bindings
+PASS pir: 46 meshes; geometry and visual bindings
+PASS ultrasonic-i2c: 49 meshes; geometry and visual bindings
+PASS rgb: 34 meshes; geometry and visual bindings
+PASS angle: 61 meshes; geometry and visual bindings
+PASS color: 21 meshes; geometry and visual bindings
+PASS tof: 21 meshes; geometry and visual bindings
+PASS light: 22 meshes; geometry and visual bindings
+PASS relay: 41 meshes; geometry and visual bindings
+PASS joystick-v11: 20 meshes; geometry and visual bindings
+PASS dual-button: 31 meshes; geometry and visual bindings
+PASS button: 21 meshes; geometry and visual bindings
+PASS ncir: 19 meshes; geometry and visual bindings
+PASS heart: 26 meshes; geometry and visual bindings
+PASS encoder: 71 meshes; geometry and visual bindings
+PASS thermal: 19 meshes; geometry and visual bindings
+PASS tvoc: 18 meshes; geometry and visual bindings
+PASS ir: 28 meshes; geometry and visual bindings
+PASS hub: 56 meshes; geometry and visual bindings
+PASS rfid2: 19 meshes; geometry and visual bindings
+PASS rs485: 42 meshes; geometry and visual bindings
+PASS buzzer: 21 meshes; geometry and visual bindings
+PASS fan: 20 meshes; geometry and visual bindings
+PASS limit: 32 meshes; geometry and visual bindings
+PASS cardkb: 689 meshes; geometry and visual bindings
+PASS key: 44 meshes; geometry and visual bindings
+PASS 8encoder: 245 meshes; geometry and visual bindings
+PASS scroll: 31 meshes; geometry and visual bindings
+PASS roller485: 85 meshes; geometry and visual bindings
+Checked 43 implemented models. Unimplemented catalog entries remain explicitly pending.
+PASS sticks3: 1 header bodies; recessed openings and metal contacts
+PASS atoms3r: 2 header bodies; recessed openings and metal contacts
+PASS cores3: 2 header bodies; recessed openings and metal contacts
+PASS stopwatch: 2 header bodies; recessed openings and metal contacts
+PASS tab5: 2 header bodies; recessed openings and metal contacts
+PASS cardputer-adv: 1 header bodies; recessed openings and metal contacts
+PASS nesso-n1: 1 header bodies; recessed openings and metal contacts
+PASS cardputer-zero: 1 header bodies; recessed openings and metal contacts
+Checked 144 actual expansion receptacles in assembled models.
+PASS StopWatch: CAD orientation, button quadrants, 7+6 headers, actual USB/Grove apertures and rear backing.
+PASS StackChan assembly: 95 yaw/pitch poses, 1330 actual tube-ring endpoints, 1710 Grove cavity/contact rays, 1710 board clearance rays, front-seated Power PCB, neck Adapter, fixed base USB 6.5mm cavity.
+PASS env-iii: four contacts, 2.0 mm pitch, 21 geometry rays, preserved bottom mating frame
+PASS pir: four contacts, 2.0 mm pitch, 20 geometry rays, preserved bottom mating frame
+PASS ultrasonic-i2c: four contacts, 2.0 mm pitch, 20 geometry rays, preserved bottom mating frame
+PASS Tab5 connectors: distinct USB-A/C geometry, real microSD slot, deep 3.5 mm jack, PCB clearances and contact visibility.
+PASS CardputerZero: 46 physical keys, LCD clearance, nine correct connector frames, real insertion depths, eight Ethernet contacts, 14 EXT bores, rear optics/blind sockets. Visible envelope 84.590 × 54.230 × 23.450 mm.
+PASS ir: 28 meshes; 13 rays; 1 physical ports; standalone and Grove module
+PASS hub: 56 meshes; 26 rays; 4 physical ports; standalone and Grove module
+PASS rfid2: 19 meshes; 1726 rays; 1 physical ports; standalone and Grove module
+PASS rs485: 42 meshes, 21 rays, physical openings and standalone/GroveModule bindings
+PASS buzzer: 21 meshes, 20 rays, physical openings and standalone/GroveModule bindings
+PASS fan: 20 meshes, 17 rays, physical openings and standalone/GroveModule bindings
+PASS env-iii: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS pir: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS ultrasonic-i2c: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS rgb: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS angle: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS color: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS tof: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS light: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS relay: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS joystick-v11: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS dual-button: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS button: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS ncir: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS heart: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS encoder: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS thermal: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS tvoc: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS ir: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS hub: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS rfid2: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS rs485: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS buzzer: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS fan: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS limit: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS cardkb: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS key: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS 8encoder: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS scroll: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS roller485: two plugs/four wires, moving Unit, rotated host, reuse and disposal
+PASS Grove cable: 29 Units, 1476 endpoint checks, 8832 physical shell-clearance rays
+PASS limit: 32 meshes, 27 rays; rigid 16mm lever arc, plunger and standalone/Grove multi-source inputs
+PASS StamPLC terminal detail: {"banks":6,"poles":23,"wireRays":92,"screwRays":46,"dcRays":2,"status":"pass"}
+PASS Nesso N1 assembly: {"antennaPoses":1,"hatSockets":8,"groveTails":4,"usbTabs":2,"ports":4,"intentionalSideSlotRays":12,"status":"pass"}
+PASS AtomS3R closure: {"status":"pass","rearRays":441,"grovePlasticRays":25,"detailRays":16,"irEmitterRays":20,"irSurfaceSamples":669,"irShellContainmentDirections":4014,"rearFirstZMm":[-6.45010566711426,-4.600000000745057],"scope":"assembled surfaces; real port, mounting and IR cavities retained; finite IR/native-shell containment sampling; IR package/support dimensions inferred; not fabrication, optical or hardware validation"}
+PASS sticks3 assembly: {"status":"pass","hatBores":16,"topApertureRays":11,"usbCornerRays":4,"sideCarrierRays":8,"rearMountAndFastenerRays":6,"shaftClearances":2,"scope":"assembled appearance geometry; exact shell and A183 active area, concealed packaging remains photo-derived"}
+PASS papermono assembly: {"status":"pass","displayRays":9,"portFreePathRays":5,"contactRays":2,"buttonDirections":3,"rgbApertureRays":265,"nfcPhysicalRearRays":468,"micRays":1,"scope":"assembled appearance and real cavity retention; inferred concealed dimensions, not fabrication proof"}
+PASS papercolor assembly: {"status":"pass","displayRays":9,"portFreePathRays":5,"contactRays":2,"buttonDirections":4,"bottomPhysicalInsertRays":416,"speakerOpenSlotRays":9,"sensorOpenSlotRays":9,"micRays":1,"groveFlankRays":2,"scope":"assembled appearance and real cavity retention; inferred concealed dimensions, not fabrication proof"}
+PASS core2 assembly: {"ports":3,"groveTails":4,"grilleRays":6,"controls":5,"status":"pass"}
+PASS nanoc6 assembly: {"ports":2,"groveTails":4,"usbTabs":2,"rearSlotRays":18,"endSlotRays":12,"status":"pass"}
+PASS cardputer-adv assembly: {"status":"pass","apertureEvidence":[{"name":"USB-C","origin":[60,16.47,7.85],"direction":[-1,0,0],"firstSourceHit":{"name":"stamp-frame","point":[16.599994659423828,16.47,7.85]}},{"name":"Grove","origin":[-60,19,1.7],"direction":[1,0,0],"firstSourceHit":{"name":"side-switch","point":[7.717454963976962,19,1.7]}},{"name":"microSD","origin":[-12.8,60,0],"direction":[0,-1,0],"firstSourceHit":{"name":"upper-housing","point":[-12.8,-25.182038459382497,0]}},{"name":"audio","origin":[60,16.6,-4],"direction":[-1,0,0],"firstSourceHit":{"name":"battery-base","point":[-40.46159880898408,16.6,-4]}},{"name":"IR","origin":[-32.4,60,0.45],"direction":[0,-1,0],"firstSourceHit":{"name":"upper-housing","point":[-32.4,-25.17418374947634,0.45]}},{"name":"SW2","origin":[-60,8,0],"direction":[1,0,0],"firstSourceHit":{"name":"upper-housing","point":[40.1820389884156,8,0]}}],"seamEvidence":[{"origin":[60,-20,-1],"direction":[-1,0,0],"sourceHit":null,"assembledHit":{"name":"Inner enclosure seam lap right lower","point":[41.24999998807907,-20,-1]}},{"origin":[60,0,-1],"direction":[-1,0,0],"sourceHit":null,"assembledHit":{"name":"Inner enclosure seam lap right lower","point":[41.24999998807907,0,-1]}},{"origin":[60,8,-1],"direction":[-1,0,0],"sourceHit":null,"assembledHit":{"name":"Inner enclosure seam lap right lower","point":[41.24999998807907,8,-1]}},{"origin":[-60,-20,-1],"direction":[1,0,0],"sourceHit":null,"assembledHit":{"name":"Inner enclosure seam lap left","point":[-41.24999998807907,-20,-1]}},{"origin":[-60,0,-1],"direction":[1,0,0],"sourceHit":null,"assembledHit":{"name":"Inner enclosure seam lap left","point":[-41.24999998807907,0,-1]}},{"origin":[-60,8,-1],"direction":[1,0,0],"sourceHit":null,"assembledHit":{"name":"Inner enclosure seam lap left","point":[-41.24999998807907,8,-1]}},{"origin":[-30,-60,-1],"direction":[0,1,0],"sourceHit":null,"assembledHit":{"name":"Inner enclosure seam lap bottom","point":[-30,-26.04999998807908,-1]}},{"origin":[-12,-60,-1],"direction":[0,1,0],"sourceHit":null,"assembledHit":{"name":"Inner enclosure seam lap bottom","point":[-12,-26.049999988079072,-1]}},{"origin":[0,-60,-1],"direction":[0,1,0],"sourceHit":null,"assembledHit":{"name":"Inner enclosure seam lap bottom","point":[0,-26.04999998807908,-1]}},{"origin":[30,-60,-1],"direction":[0,1,0],"sourceHit":null,"assembledHit":{"name":"Inner enclosure seam lap bottom","point":[30,-26.04999998807908,-1]}},{"origin":[-30,60,-1],"direction":[0,-1,0],"sourceHit":null,"assembledHit":{"name":"Inner enclosure seam lap top left","point":[-30,26.049999988079072,-1]}},{"origin":[-12,60,-1],"direction":[0,-1,0],"sourceHit":null,"assembledHit":{"name":"Inner enclosure seam lap top left","point":[-12,26.049999988079072,-1]}},{"origin":[0,60,-1],"direction":[0,-1,0],"sourceHit":null,"assembledHit":{"name":"Inner enclosure seam lap behind EXT roof","point":[0,24.674999988079072,-1]}},{"origin":[12,60,-1],"direction":[0,-1,0],"sourceHit":null,"assembledHit":{"name":"Inner enclosure seam lap top right","point":[12,26.049999988079072,-1]}},{"origin":[30,60,-1],"direction":[0,-1,0],"sourceHit":null,"assembledHit":{"name":"Inner enclosure seam lap top right","point":[30,26.049999988079072,-1]}}],"cavities":[{"name":"USB-C receptacle","depthMm":6.499999994039534,"firstHit":"USB-C dielectric backstop"},{"name":"microSD receptacle","depthMm":7.199999994039533,"firstHit":"microSD insulating backstop"},{"name":"3.5 mm audio jack","depthMm":8.499999994039534,"firstHit":"Audio jack deep backstop"},{"name":"HY2.0-4P","depthMm":5.18,"firstHit":"Grove deep insulating backstop"}],"usbContacts":24,"sdContacts":8,"groveContacts":4,"speakerApertures":13,"extBores":14,"rearBlindBores":4,"rearThreadedInserts":2,"rearScrews":2,"actuators":{"status":"pass","buttons":60,"momentary":58,"latching":2,"capacitive":0,"visibleSurfaceRays":120,"scope":"actual cap vertices and visible press/release surfaces; geometry-only travel estimates"},"visibleEnvelopeMm":[84.46999987363816,54.00000000298023,19.675804138183594],"scope":"independent CAD aperture rays, assembled cavities and actual moving meshes; concealed shapes remain inferred"}
+PASS sticks3 actual actuators: {"status":"pass","buttons":3,"momentary":3,"latching":0,"capacitive":0,"visibleSurfaceRays":6,"scope":"actual cap vertices and visible press/release surfaces; geometry-only travel estimates"}
+PASS cores3 actual actuators: {"status":"pass","buttons":2,"momentary":2,"latching":0,"capacitive":0,"visibleSurfaceRays":4,"scope":"actual cap vertices and visible press/release surfaces; geometry-only travel estimates"}
+PASS stopwatch actual actuators: {"status":"pass","buttons":3,"momentary":3,"latching":0,"capacitive":0,"visibleSurfaceRays":6,"scope":"actual cap vertices and visible press/release surfaces; geometry-only travel estimates"}
+PASS cardputer-adv actual actuators: {"status":"pass","buttons":60,"momentary":58,"latching":2,"capacitive":0,"visibleSurfaceRays":120,"scope":"actual cap vertices and visible press/release surfaces; geometry-only travel estimates"}
+PASS cardputer-zero actual actuators: {"status":"pass","buttons":48,"momentary":47,"latching":1,"capacitive":0,"visibleSurfaceRays":96,"scope":"actual cap vertices and visible press/release surfaces; geometry-only travel estimates"}
+PASS papermono actual actuators: {"status":"pass","buttons":3,"momentary":3,"latching":0,"capacitive":0,"visibleSurfaceRays":6,"scope":"actual cap vertices and visible press/release surfaces; geometry-only travel estimates"}
+PASS core2 actual actuators: {"status":"pass","buttons":5,"momentary":2,"latching":0,"capacitive":3,"visibleSurfaceRays":4,"scope":"actual cap vertices and visible press/release surfaces; geometry-only travel estimates"}
+PASS papercolor actual actuators: {"status":"pass","buttons":4,"momentary":4,"latching":0,"capacitive":0,"visibleSurfaceRays":8,"scope":"actual cap vertices and visible press/release surfaces; geometry-only travel estimates"}
+PASS nanoc6 actual actuators: {"status":"pass","buttons":1,"momentary":1,"latching":0,"capacitive":0,"visibleSurfaceRays":2,"scope":"actual cap vertices and visible press/release surfaces; geometry-only travel estimates"}
+PASS stackchan actual actuators: {"status":"pass","buttons":5,"momentary":2,"latching":0,"capacitive":3,"visibleSurfaceRays":4,"scope":"actual cap vertices and visible press/release surfaces; geometry-only travel estimates"}
+PASS tab5 actual actuators: {"status":"pass","buttons":2,"momentary":2,"latching":0,"capacitive":0,"visibleSurfaceRays":4,"scope":"actual cap vertices and visible press/release surfaces; geometry-only travel estimates"}
+PASS atoms3r actual actuators: {"status":"pass","buttons":2,"momentary":2,"latching":0,"capacitive":0,"visibleSurfaceRays":4,"scope":"actual cap vertices and visible press/release surfaces; geometry-only travel estimates"}
+PASS nesso-n1 actual actuators: {"status":"pass","buttons":2,"momentary":2,"latching":0,"capacitive":0,"visibleSurfaceRays":4,"scope":"actual cap vertices and visible press/release surfaces; geometry-only travel estimates"}
+PASS stamplc actual actuators: {"status":"pass","buttons":4,"momentary":4,"latching":0,"capacitive":0,"visibleSurfaceRays":8,"scope":"actual cap vertices and visible press/release surfaces; geometry-only travel estimates"}

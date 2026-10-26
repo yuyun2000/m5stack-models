@@ -2,9 +2,21 @@
 
 基于 Three.js 与 sticks3.js 建模方法的 M5Stack 毫米尺度交互模型库。目前包含 **14款主机、29款Unit，共43款模型**，全部保持 `modeled`，`verified` 为0，逐款精细外观验收继续进行。
 
+![Angle U005实体装配](artifacts/angle-detail/public/views/angle-assembly-close.png)
+
+本批细化 **Angle U005**：按自身机械图校正轴心Y8与含齿帽Ø9.5；补齐蓝色固定底板、银色金属框、盲孔和轴杆，重建PCB孔柱与Grove通道避让。原CAD壳保持；旋钮接受外部绝对角度，固定件保持不动。
+
+公开构建独立check/build/status及实际浏览器13场景、18张原生PNG通过，覆盖七视图、37/−90/150°定位与精确复位、StickS3→HUB→Angle四芯接线/姿态/拆卸。18对独立公开图与冻结原图RGB一致。隐藏尺寸与机械限位仍未确认，有限数字采样不代表制造配合；全部43款仍为modeled。
+
+[Angle验证](artifacts/angle-detail/public/review.json) · [来源审计](artifacts/angle-detail/public/source-audit.json) · [建模与坐标迁移](docs/ANGLE-MODEL-NOTES.md) · [Agent接入](docs/AGENT-INTEGRATION.md)
+
+### 上一批：Encoder U135
+
+以下为已发布Encoder批次的历史证据与限制。
+
 ![Encoder U135实体装配](artifacts/encoder-detail/public/encoder-iso.png)
 
-本批细化 **Encoder U135**：保留官方外壳位置与拓扑，围绕原始轴线补齐直径10mm旋钮、封闭盲帽、PCB、编码器主体和折弯焊腿，补齐下端两颗RGB封装与白壳漫透外观。按下行程为0.35mm，支持旋转、按压和两路外部灯光输入。
+上一批细化 **Encoder U135**：保留官方外壳位置与拓扑，围绕原始轴线补齐直径10mm旋钮、封闭盲帽、PCB、编码器主体和折弯焊腿，补齐下端两颗RGB封装与白壳漫透外观。按下行程为0.35mm，支持旋转、按压和两路外部灯光输入。
 
 ![两路RGB外观](artifacts/encoder-detail/public/encoder-leds-both.png)
 
@@ -12,7 +24,7 @@
 
 ![接线后可见LED](artifacts/encoder-detail/public/sticks3-hub-encoder-visible-led0-on.png)
 
-[本批独立验证](artifacts/encoder-detail/public/review.json) · [来源审计](artifacts/encoder-detail/public/source-audit.json) · [下游Agent接入](docs/AGENT-INTEGRATION.md)
+[Encoder独立验证](artifacts/encoder-detail/public/review.json) · [来源审计](artifacts/encoder-detail/public/source-audit.json) · [下游Agent接入](docs/AGENT-INTEGRATION.md)
 
 Encoder自身Grove接口中心Z从0迁移至−0.6mm，默认GroveModule自动对齐；显式unitPose仍表示装配原点。Port挂接回调、父子装配和已有接口保持兼容，调用约束见Agent接入文档。
 

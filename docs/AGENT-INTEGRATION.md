@@ -140,6 +140,8 @@ host.handle({type:'led',target:'grove/led0',color:'#22b477',brightness:.4});
 host.handle({type:'led',target:'grove/led1',on:false});
 ```
 
+Angle U005保持`rotation`绝对角度接口和递归路径，例如`host.handle({type:'joint',target:'grove/rotation',angleDeg:37})`。本批将旧轴心Y7校正为自身图纸Y8，含齿帽直径遵循Ø9.5；固定包体/板/金属框不随动。实际Grove工程原点从`[0,-15.65,0]`改为`[0,-15.65,1.4]` mm，5.2 mm高度来自自身CAD槽底−1.2到前面+4的包络推导，非官方标注口高。默认模块自动对齐，显式unitPose仍是装配原点；依赖旧坐标的布局读取当前Port变换。网页名义厚度22与机械图总高22.3分开记录。`rpm`仍拒绝，viewer范围不等于机械限位或传感器换算。见[Angle建模记录](ANGLE-MODEL-NOTES.md)。
+
 U135实际 `grove` 口面原点由旧 `[0,-15.65,0]` 更正为 `[0,-15.65,-0.6]` mm，Z取自该产品原壳 `-3.2…2` mm开口中点。`loadGroveModule`和`unitFrame.setDistance`按真实口面重新对齐；直接使用旧Port工程坐标的布局应读取当前Port变换，显式`unitPose.position`仍为装配原点。隐藏PCB/包体/焊腿、帽轴深度、口内尺寸和漫透亮斑范围仍为推导。公开来源与推导见[Encoder来源记录](../source-manifest.json)，专项审查见[Encoder审查记录](../artifacts/encoder-detail/public/review.json)，当前stage保持`modeled`。
 
 ## Grove 装配坐标

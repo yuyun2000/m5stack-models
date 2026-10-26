@@ -1,0 +1,216 @@
+{
+  "checkedAt": "2026-10-25T23:49:24.737Z",
+  "status": "pass-with-recorded-limits",
+  "assemblySha256": "476b27f2924e86a9ef3414bb78683362cc69e20382b370786d3b0948319a2f63",
+  "checkerSha256": "90dfb73a0385cdd1b13407241bad71291a59d85d7d16c4d451619f08806be40d",
+  "sourceStlSha256": "d032503d8c8604bca552cb28e18e6ca044276e572d544b40403952deffac5a12",
+  "selectedGeometrySha256": "1baa6f0cae1532b83705834d004baef17ee36b4efa70d4cffb8851fef4053793",
+  "closedSourcePartProofs": [
+    {
+      "name": "original-STL-rear-shell-displaced-copy",
+      "originalStlComponent": 1,
+      "triangles": 1660,
+      "translationToSelectedMm": [
+        -37.469635009765625,
+        0,
+        0
+      ],
+      "modelOriginMm": [
+        353.269,
+        269.223,
+        2
+      ],
+      "nonTwoValenceEdgesAt1e5": 0,
+      "inconsistentlyOrientedPairedEdges": 0,
+      "signedVolumeMm3": 977.2733115197963,
+      "maximumNearestSelectedVertexDistanceMm": 4.342408890893842e-05,
+      "meanNearestSelectedVertexDistanceMm": 1.741412940567118e-05
+    },
+    {
+      "name": "original-STL-front-shell-displaced-copy",
+      "originalStlComponent": 2,
+      "triangles": 1550,
+      "translationToSelectedMm": [
+        -75.23532104492188,
+        0,
+        0
+      ],
+      "modelOriginMm": [
+        353.269,
+        269.223,
+        2
+      ],
+      "nonTwoValenceEdgesAt1e5": 0,
+      "inconsistentlyOrientedPairedEdges": 0,
+      "signedVolumeMm3": 1215.6927064332722,
+      "maximumNearestSelectedVertexDistanceMm": 3.057401371672799e-05,
+      "meanNearestSelectedVertexDistanceMm": 1.2934827638898684e-05
+    }
+  ],
+  "selectedSourceTopology": "Original combined selected housing remains unchanged and nonmanifold; separate translated STL front/rear copies are independently closed and used only for this audit.",
+  "classification": {
+    "surfaceEpsilonMm": 0.0002,
+    "directions": [
+      [
+        0.7332020249906619,
+        0.31208599153763505,
+        0.6041664707972166
+      ],
+      [
+        -0.3810102874166423,
+        0.8520230049317039,
+        0.35900969339258415
+      ],
+      [
+        0.2572198883821071,
+        -0.6195296144300555,
+        0.741633997241795
+      ]
+    ],
+    "requireUnanimousThreeRayVotes": true,
+    "stepXYMm": 0.45,
+    "stepZMm": 0.18
+  },
+  "sampling": {
+    "fixedMeshes": 30,
+    "movingMeshes": 27,
+    "movingAngles": 5,
+    "partPoseChecks": 165,
+    "samples": 128323,
+    "strictInsideSourcePartSamples": 0,
+    "boundarySamples": 9,
+    "ambiguousTargetGridPoints": 0,
+    "ambiguousNativeClassifications": 0
+  },
+  "edgeSurfaceCrossings": 0,
+  "edgeFloorDatumContacts": 11,
+  "movingPoses": [
+    {
+      "angle": -150,
+      "axisPointErrorMm": 0,
+      "fixedMatricesUnchanged": true,
+      "capChanged": true,
+      "actualMovingVertices": 7140,
+      "movingBounds": {
+        "min": [
+          -4.75,
+          3.25,
+          0.9999999523162844
+        ],
+        "max": [
+          4.750000000000001,
+          12.75,
+          18.3
+        ]
+      },
+      "maxMovingRadiusMm": 4.750000156957692
+    },
+    {
+      "angle": -60,
+      "axisPointErrorMm": 0,
+      "fixedMatricesUnchanged": true,
+      "capChanged": true,
+      "actualMovingVertices": 7140,
+      "movingBounds": {
+        "min": [
+          -4.749999999999999,
+          3.25,
+          0.9999999523162844
+        ],
+        "max": [
+          4.75,
+          12.75,
+          18.3
+        ]
+      },
+      "maxMovingRadiusMm": 4.750000156957691
+    },
+    {
+      "angle": 0,
+      "axisPointErrorMm": 0,
+      "fixedMatricesUnchanged": true,
+      "capChanged": false,
+      "actualMovingVertices": 7140,
+      "movingBounds": {
+        "min": [
+          -4.75,
+          3.25,
+          0.9999999523162844
+        ],
+        "max": [
+          4.75,
+          12.75,
+          18.3
+        ]
+      },
+      "maxMovingRadiusMm": 4.750000156957692
+    },
+    {
+      "angle": 37,
+      "axisPointErrorMm": 0,
+      "fixedMatricesUnchanged": true,
+      "capChanged": true,
+      "actualMovingVertices": 7140,
+      "movingBounds": {
+        "min": [
+          -4.733182966007809,
+          3.266817033992192,
+          0.9999999523162844
+        ],
+        "max": [
+          4.733182966007808,
+          12.73318296600781,
+          18.3
+        ]
+      },
+      "maxMovingRadiusMm": 4.750000156957691
+    },
+    {
+      "angle": 150,
+      "axisPointErrorMm": 0,
+      "fixedMatricesUnchanged": true,
+      "capChanged": true,
+      "actualMovingVertices": 7140,
+      "movingBounds": {
+        "min": [
+          -4.750000000000001,
+          3.249999999999999,
+          0.9999999523162844
+        ],
+        "max": [
+          4.750000000000001,
+          12.75,
+          18.3
+        ]
+      },
+      "maxMovingRadiusMm": 4.750000156957691
+    }
+  ],
+  "checker": {
+    "status": "pass",
+    "sku": "U005",
+    "inputAssemblySha256": "476b27f2924e86a9ef3414bb78683362cc69e20382b370786d3b0948319a2f63",
+    "axisMm": [
+      0,
+      8,
+      4
+    ],
+    "movingDiameterMm": 9.500000313915383,
+    "nativeToCapEnvelopeMm": 22.299999046325684,
+    "motionCases": 4,
+    "grovePoseCases": 7,
+    "rays": 23,
+    "nativeSurfaceSamples": 6360,
+    "trackedResources": 753,
+    "retiredResourcesAtBuild": 107,
+    "scope": "Product-specific finite geometry, blind-bore rays, fixed support, external visual motion, native topology and actual standalone/Grove/HUB paths; no native closed-solid assumption, browser, hardware, potentiometer values or manufacturing-fit proof. Resource accounting covers Angle physical frames, wire resources and observed constructor-retired resources; generic shared plug materials and unrelated HUB resources remain outside this product check.",
+    "resourcesReleasedExactlyOnce": 753
+  },
+  "limits": [
+    "Native combined selected source remains nonmanifold; no source mesh is repaired or altered.",
+    "Separate original STL shell copies map to selected by documented translation with maximum measured vertex discrepancy under 0.0001mm; classification epsilon 0.0002mm exceeds that measured discrepancy.",
+    "Finite actual-mesh surface/interior samples and directed rays do not prove exhaustive manufacturing interference freedom.",
+    "Ambiguous target-grid and source classifications are explicitly unclassified and never silently counted clear.",
+    "Positive and clear controls test implementation assumptions, not physical hardware."
+  ]
+}

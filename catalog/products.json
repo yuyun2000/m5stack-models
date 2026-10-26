@@ -1136,7 +1136,7 @@
       "visualEnvelopeMm": [
         24,
         32,
-        22
+        22.3
       ],
       "cadEnvelopeMm": [
         24,
@@ -1148,7 +1148,7 @@
       "export": "Model",
       "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/angle/angle_01.webp",
       "officialDocs": "https://docs.m5stack.com/en/unit/angle",
-      "research": "source-manifest.json",
+      "research": "docs/ANGLE-MODEL-NOTES.md",
       "integration": {
         "moduleExport": "GroveModule",
         "externalRuntime": "m5agent/m5stack-esp-emulator",
@@ -1171,11 +1171,31 @@
         ]
       ],
       "limitations": [
-        "官方 CAD 装配壳体；局部器件、旋钮、按键表面依据官方照片构造，尚待逐面视觉检查",
-        "这里只提供视觉几何和接口，不实现电气、传感器数据或协议行为",
-        "视觉角度由外部给定；demo滑条范围不是官方机械限位，不提供传感器换算"
+        "官方U005机械图：轴Y8、帽含筋Ø9.5、总高22.3；网页名义高度22保留。固定蓝底/金属框依自身照片；隐藏件与帽分段推导。",
+        "原CAD壳不变；新PCB/孔柱/Grove避让为推导。源壳存在非流形边，有限采样不证明制造配合。",
+        "Grove中心Z1.4及高5.2取自自身CAD槽底−1.2到前面+4包络推导，并非图纸标注口高；旧工程坐标调用者应读取当前Port。",
+        "只提供外部视觉角度定位；viewer ±150°不是官方限位，不提供ADC/固件/电气行为。贴纸等待原文件。"
       ],
-      "nextAction": "优先逐面检查装配闭合与真实开口；贴纸等待用户原文件"
+      "nextAction": "继续核准隐藏包体与机械限位；本批实体/旋转/四芯接线专项证据见artifacts/angle-detail/public/review.json，stage仍modeled，贴纸等待原文件。",
+      "visualControls": [
+        {
+          "id": "rotation",
+          "kind": "joint",
+          "continuous": false,
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "positionMm": [
+            0,
+            8,
+            4
+          ],
+          "axisEvidence": "U005 own drawing: 8 mm from housing top; shell front Z4 is the library datum",
+          "rangeEvidence": "Viewer ±150° only; official travel and zero offset unconfirmed"
+        }
+      ]
     },
     {
       "id": "color",
