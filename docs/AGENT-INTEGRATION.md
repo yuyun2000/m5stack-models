@@ -148,6 +148,8 @@ U135实际 `grove` 口面原点由旧 `[0,-15.65,0]` 更正为 `[0,-15.65,-0.6]`
 
 NCIR U028保留`sensor`视觉anchor，不提供温度、热图、IR可见光或运动命令。真实`grove`口面由旧`[0,-15.65,0]`改为`[0,-15.65,1.4]` mm，座体10×5.2 mm和入口上下界有本款机械图／CAD依据。默认`loadGroveModule('ncir')`与`unitFrame.setDistance`按当前真实口对齐；显式`unitPose.position`仍是装配原点。依赖旧工程坐标的调用者读取当前Port变换，递归路径（如`grove/grove-1/sensor`）、插头与四芯线API保持。完整TO39的金属筒、凸冠、Ø3.5凹窗和真实环隙分开建模；PCB、安装yaw、脚裁长及局部台阶含推导，见[NCIR建模记录](NCIR-MODEL-NOTES.md)。
 
+PCB孔内壁现按实际FrontSide几何检查，Thermal／Angle／Encoder修复不改变公开组件、Port坐标或外驱状态；下游接法保持。相关拓扑回归与历史证据边界见[PCB孔内壁说明](PCB-HOLE-WINDING.md)。
+
 ## Grove 装配坐标
 
 `Port` 原点在口面，局部 +Y 向外、+Z 朝宿主正面，1 单位 = 1 mm。`cableLength` 兼容旧入口，表示初始口面间距，曲线实际长度请读 `cable.getState().curveLengthMm`。

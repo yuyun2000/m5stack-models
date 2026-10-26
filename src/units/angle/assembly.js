@@ -34,8 +34,9 @@ function replaceBoard(host){
  const shape=new THREE.Shape();shape.moveTo(-5.4,13.4);shape.lineTo(5.4,13.4);shape.lineTo(9.4,9.4);shape.lineTo(9.4,.2);shape.lineTo(8,.2);
  shape.absarc(8,-4,4.2,Math.PI/2,Math.PI*1.5,false);shape.lineTo(9.4,-8.2);shape.lineTo(9.4,-9.4);shape.lineTo(5.4,-13.4);shape.lineTo(5.1,-13.4);shape.lineTo(5.1,-8.85);shape.lineTo(-5.1,-8.85);shape.lineTo(-5.1,-13.4);shape.lineTo(-5.4,-13.4);shape.lineTo(-9.4,-9.4);shape.lineTo(-9.4,-8.2);shape.lineTo(-8,-8.2);
  shape.absarc(-8,-4,4.2,Math.PI*1.5,Math.PI*2.5,false);shape.lineTo(-9.4,.2);shape.lineTo(-9.4,9.4);shape.lineTo(-5.4,13.4);shape.closePath();
- shape.holes.push(roundedRect(4.4,4.4,2.2,{cx:0,cy:-4,path:new THREE.Path(),clockwise:true}));
- for(const cx of [-3,-1,1,3])shape.holes.push(roundedRect(.6,.6,.3,{cx,cy:-8.4,path:new THREE.Path(),clockwise:true}));
+ // Pair the clockwise PCB outline with counterclockwise inner walls.
+ shape.holes.push(roundedRect(4.4,4.4,2.2,{cx:0,cy:-4,path:new THREE.Path(),clockwise:false}));
+ for(const cx of [-3,-1,1,3])shape.holes.push(roundedRect(.6,.6,.3,{cx,cy:-8.4,path:new THREE.Path(),clockwise:false}));
  const material=old.material;old.removeFromParent();old.geometry.dispose();
  const board=mesh(host.body,new THREE.ExtrudeGeometry(shape,{depth:.8,bevelEnabled:false,curveSegments:32}),material,[0,0,.2],'Angle PCB with open boss and Grove relief');host.angleBoard=board;return board;
 }

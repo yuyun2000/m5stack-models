@@ -27,6 +27,8 @@ for(const [script,id,exportName]of [
  const test=(await import(new URL(script,import.meta.url)))[exportName],model=await loadModel(id);
  try{const result=test(model);checks.push({script:`scripts/${script}`,product:id,...result});console.log(`PASS ${id} assembly:`,JSON.stringify(result));}finally{model.dispose();}
 }
+const {checkPCBHoleWinding}=await import('./check-pcb-hole-winding.mjs');
+checks.push({script:'scripts/check-pcb-hole-winding.mjs',...await checkPCBHoleWinding()});
 const dynamics=[];
 const {checkNCIRAssembly}=await import('./check-ncir-assembly.mjs');
 dynamics.push({script:'scripts/check-ncir-assembly.mjs',...await checkNCIRAssembly()});

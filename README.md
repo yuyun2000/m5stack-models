@@ -2,6 +2,10 @@
 
 基于 Three.js 与 sticks3.js 建模方法的 M5Stack 毫米尺度交互模型库。目前包含 **14款主机、29款Unit，共43款模型**，全部保持 `modeled`，`verified` 为0，逐款精细外观验收继续进行。
 
+近期校正 **Thermal／Angle／Encoder PCB孔内壁**：保留原孔位与实体曲面，修正默认FrontSide下不可见的内壁；旋转、按压回弹及Grove接线接口保持。新的回归覆盖真实孔内壁法线与定向闭合，历史单品验收仍对应各自源码快照。
+
+[本批验证](artifacts/pcb-winding-repair/public/review.json) · [PCB孔内壁说明](docs/PCB-HOLE-WINDING.md)
+
 ![NCIR U028实体装配](artifacts/ncir-detail/public/views/ncir-iso-close.png)
 
 本批细化 **NCIR U028**：保留官方原壳和真实环隙，补齐标准TO39金属筒、凸冠、Ø3.5凹入光窗、玻璃封接圈、四引脚、PCB真孔和开放Grove。封装肩高与最高点分开，插座按自身10×5.2 mm机械图对齐。

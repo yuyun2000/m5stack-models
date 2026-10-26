@@ -1,0 +1,31 @@
+{
+  "startedAt": "2026-10-26T03:16:14.712764+00:00",
+  "scope": "Actual serial command execution; no inferred timings",
+  "commands": [
+    {
+      "command": "npm run check",
+      "startedAt": "2026-10-26T03:16:14.712893+00:00",
+      "log": "final-check.log",
+      "completedAt": "2026-10-26T03:20:06.235377+00:00",
+      "exitCode": 0,
+      "sha256": "2db6625a36542a0ba35ad97f3d83be4b6c22815cffcc6eb648a27cddfda172fa"
+    },
+    {
+      "command": "npm run build",
+      "startedAt": "2026-10-26T03:20:06.236074+00:00",
+      "log": "final-build.log",
+      "completedAt": "2026-10-26T03:20:06.963833+00:00",
+      "exitCode": 0,
+      "sha256": "5ab92a3594b9af11482ea93098c78fdde0326cb85fd5ade49a76d74b53af0740"
+    },
+    {
+      "command": "./manage.sh status",
+      "startedAt": "2026-10-26T03:20:06.964159+00:00",
+      "log": "final-status.log",
+      "completedAt": "2026-10-26T03:20:06.987308+00:00",
+      "exitCode": 0,
+      "sha256": "d3b8d2b8e5b8685a58b6f62413abe87a7664329e7caaac20c268eb08767cc260"
+    }
+  ],
+  "completedAt": "2026-10-26T03:20:06.987496+00:00"
+}

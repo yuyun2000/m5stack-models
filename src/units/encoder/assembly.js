@@ -15,8 +15,9 @@ function replaceBoard(host){
  const shape=new THREE.Shape();shape.moveTo(-1.5,16);shape.lineTo(1.5,16);shape.lineTo(1.5,13.8);shape.lineTo(7.7,13.8);shape.lineTo(8.2,13.3);shape.lineTo(8.2,12.4);shape.lineTo(9.4,11.7);shape.lineTo(9.4,.4);shape.lineTo(8,.4);
  shape.absarc(8,-4,4.4,Math.PI/2,Math.PI*1.5,false);shape.lineTo(9.4,-8.4);shape.lineTo(9.4,-11.7);shape.lineTo(8.2,-12.4);shape.lineTo(8.2,-13.3);shape.lineTo(7.7,-13.8);shape.lineTo(5.1,-13.8);shape.lineTo(5.1,-8.85);shape.lineTo(-5.1,-8.85);shape.lineTo(-5.1,-13.8);shape.lineTo(-7.7,-13.8);shape.lineTo(-8.2,-13.3);shape.lineTo(-8.2,-12.4);shape.lineTo(-9.4,-11.7);shape.lineTo(-9.4,-8.4);shape.lineTo(-8,-8.4);
  shape.absarc(-8,-4,4.4,Math.PI*1.5,Math.PI*2.5,false);shape.lineTo(-9.4,.4);shape.lineTo(-9.4,11.7);shape.lineTo(-8.2,12.4);shape.lineTo(-8.2,13.3);shape.lineTo(-7.7,13.8);shape.lineTo(-1.5,13.8);shape.closePath();
- shape.holes.push(roundedRect(5.8,5.8,2.9,{cx:0,cy:-4,path:new THREE.Path(),clockwise:true}));
- for(const cx of [-3,-1,1,3])shape.holes.push(roundedRect(.6,.6,.3,{cx,cy:-8.4,path:new THREE.Path(),clockwise:true}));
+ // Pair the clockwise PCB outline with counterclockwise inner walls.
+ shape.holes.push(roundedRect(5.8,5.8,2.9,{cx:0,cy:-4,path:new THREE.Path(),clockwise:false}));
+ for(const cx of [-3,-1,1,3])shape.holes.push(roundedRect(.6,.6,.3,{cx,cy:-8.4,path:new THREE.Path(),clockwise:false}));
  const material=old.material;old.removeFromParent();old.geometry.dispose();
  const board=mesh(host.body,new THREE.ExtrudeGeometry(shape,{depth:.8,bevelEnabled:false,curveSegments:32}),material,[0,0,-3.9],'Encoder PCB with open boss and Grove relief');
  host.encoderBoard=board;return board;

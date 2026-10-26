@@ -27,7 +27,7 @@ export const THERMAL_ASSEMBLY=Object.freeze({
 const metal=()=>materials.metal(0xada78a,{roughness:.46});
 const solder=()=>materials.metal(0xa9adad,{roughness:.4});
 const extrusion=shape=>new THREE.ExtrudeGeometry(shape,{depth:.8,bevelEnabled:false,curveSegments:32});
-function circleHole(shape,x,y,r){const hole=new THREE.Path();hole.absarc(x,y,r,0,Math.PI*2,true);shape.holes.push(hole);}
+function circleHole(shape,x,y,r,clockwise=true){const hole=new THREE.Path();hole.absarc(x,y,r,0,Math.PI*2,clockwise);shape.holes.push(hole);}
 function ring(outer,inner){const shape=new THREE.Shape();shape.absarc(0,0,outer,0,Math.PI*2,false);circleHole(shape,0,0,inner);return shape;}
 function extrude(parent,shape,depth,z,material,name,xy=[0,0]){
  const geometry=new THREE.ExtrudeGeometry(shape,{depth,bevelEnabled:false,curveSegments:32});
@@ -45,9 +45,10 @@ function replaceBoard(host){
  const shape=new THREE.Shape();shape.moveTo(-5.4,13.4);shape.lineTo(5.4,13.4);shape.lineTo(9.4,9.4);shape.lineTo(9.4,.2);shape.lineTo(8,.2);
  shape.absarc(8,-4,4.2,Math.PI/2,Math.PI*1.5,false);shape.lineTo(9.4,-8.2);shape.lineTo(9.4,-9.4);shape.lineTo(5.4,-13.4);shape.lineTo(5.3,-13.4);shape.lineTo(5.3,-8.85);shape.lineTo(-5.3,-8.85);shape.lineTo(-5.3,-13.4);shape.lineTo(-5.4,-13.4);shape.lineTo(-9.4,-9.4);shape.lineTo(-9.4,-8.2);shape.lineTo(-8,-8.2);
  shape.absarc(-8,-4,4.2,Math.PI*1.5,Math.PI*2.5,false);shape.lineTo(-9.4,.2);shape.lineTo(-9.4,9.4);shape.lineTo(-5.4,13.4);shape.closePath();
- circleHole(shape,0,-4,3);
- for(const pin of pins)circleHole(shape,...pin.position,.35);
- for(const x of [-3,-1,1,3])circleHole(shape,x,-8.4,.30);
+ // The existing outer contour is clockwise; PCB bores must face inward.
+ circleHole(shape,0,-4,3,false);
+ for(const pin of pins)circleHole(shape,...pin.position,.35,false);
+ for(const x of [-3,-1,1,3])circleHole(shape,x,-8.4,.30,false);
  const material=old.material;old.removeFromParent();old.geometry.dispose();
  const board=mesh(host.body,extrusion(shape),material,[0,0,THERMAL_ASSEMBLY.boardBottom],'Thermal PCB with open boss and Grove relief');
  board.userData={source:'Conservative U016 native-cavity reconstruction',zMm:[-1.9,-1.1],sideReliefRadiusMm:4.2,centreBoreRadiusMm:3,groveNotchHalfWidthMm:5.3,drillRadiusMm:{sensor:.35,grove:.30},inferred:'Board outline, thickness and placement are assembly inferences; header underside seats directly on board top.'};

@@ -1,0 +1,191 @@
+{
+  "checkedAt": "2026-10-26T02:50:45.195870+00:00",
+  "status": "pass-with-disclosed-triangulation-change",
+  "sourceBaseline": "2a0f85033fb8df04956c744b9f91b4abded2adf0",
+  "sourceHashes": {
+    "src/units/thermal/assembly.js": "51029a5ddcf5e5da046444b89c2d522098334c43d98997dca87c1dd025e068ec",
+    "src/units/angle/assembly.js": "71c407222504e9d83fb3d31b153be7928435d3bc43724d0d47f69dd1c16a9215",
+    "src/units/encoder/assembly.js": "6120c4e66937d8ca86112550cc9d380e332fabaec2a9283aab54a83d4674999f"
+  },
+  "checkerSha256": "e4514ed6931a5c68a296fec8500390c7eea1d5e875951fda1a3237c13d25eaf6",
+  "independentReportSha256": "eecff8a303cf2260731e73aa76562f6c5ff3632533d9bed2aa063b6e16c839a7",
+  "normalBufferReviewSha256": "25b17574dbcbe50849f92e14d5e0daf433ea4c4d4d41cdb2b019815ed3442bff",
+  "nonTargetGeometriesExactlyUnchanged": 185,
+  "strictTriangleConnectivityPreserved": false,
+  "physicalSurfaceEquivalenceVerified": true,
+  "products": [
+    {
+      "product": "thermal",
+      "invariants": {
+        "scene": true,
+        "materials": true,
+        "textures": true,
+        "components": true,
+        "hostOwn": true,
+        "meta": true
+      },
+      "untouchedGeometryCount": 54,
+      "totalGeometryCount": 55,
+      "targetGeometryChanges": [
+        "geometry:18"
+      ],
+      "targetVertexPositionSetSameAtWeldPrecision": true,
+      "maxActualVertexDeltaMm": 7.347880850813211e-16,
+      "capTrianglesExactAtWeldPrecision": true,
+      "verticalWallQuads": 722,
+      "wallQuadVertexSetsExactAtWeldPrecision": true,
+      "maxWallAreaDeltaMm2": 5.828670879282072e-16,
+      "triangleCountBefore": 2920,
+      "triangleCountAfter": 2920,
+      "unorientedTriangleMultisetExactlySame": false,
+      "oldOnlyTriangles": 1152,
+      "newOnlyTriangles": 1152,
+      "triangleDifference": "Only the two diagonal choices in the same existing coplanar hole-wall rectangles change with reversed contour order; caps and physical surfaces remain equal.",
+      "frozenLegacyNegativeFixture": {
+        "holes": 9,
+        "emptyAxes": 18,
+        "expectedAxes": 18,
+        "frontWalls": 0,
+        "inwardNormals": 0,
+        "backWalls": 144,
+        "expectedWalls": 144,
+        "positiveCaps": 6,
+        "faces": 2920,
+        "undirectedErrors": 0,
+        "directedErrors": 1152,
+        "pass": false
+      },
+      "repairedFixture": {
+        "holes": 9,
+        "emptyAxes": 18,
+        "expectedAxes": 18,
+        "frontWalls": 144,
+        "inwardNormals": 144,
+        "backWalls": 0,
+        "expectedWalls": 144,
+        "positiveCaps": 6,
+        "faces": 2920,
+        "undirectedErrors": 0,
+        "directedErrors": 0,
+        "pass": true
+      }
+    },
+    {
+      "product": "angle",
+      "invariants": {
+        "scene": true,
+        "materials": true,
+        "textures": true,
+        "components": true,
+        "hostOwn": true,
+        "meta": true
+      },
+      "untouchedGeometryCount": 60,
+      "totalGeometryCount": 61,
+      "targetGeometryChanges": [
+        "geometry:18"
+      ],
+      "targetVertexPositionSetSameAtWeldPrecision": true,
+      "maxActualVertexDeltaMm": 5.388446019025841e-16,
+      "capTrianglesExactAtWeldPrecision": true,
+      "verticalWallQuads": 1426,
+      "wallQuadVertexSetsExactAtWeldPrecision": true,
+      "maxWallAreaDeltaMm2": 4.2327252813834093e-16,
+      "triangleCountBefore": 5720,
+      "triangleCountAfter": 5720,
+      "unorientedTriangleMultisetExactlySame": false,
+      "oldOnlyTriangles": 2560,
+      "newOnlyTriangles": 2560,
+      "triangleDifference": "Only the two diagonal choices in the same existing coplanar hole-wall rectangles change with reversed contour order; caps and physical surfaces remain equal.",
+      "frozenLegacyNegativeFixture": {
+        "holes": 5,
+        "emptyAxes": 10,
+        "expectedAxes": 10,
+        "frontWalls": 0,
+        "inwardNormals": 0,
+        "backWalls": 80,
+        "expectedWalls": 80,
+        "positiveCaps": 6,
+        "faces": 5720,
+        "undirectedErrors": 0,
+        "directedErrors": 2560,
+        "pass": false
+      },
+      "repairedFixture": {
+        "holes": 5,
+        "emptyAxes": 10,
+        "expectedAxes": 10,
+        "frontWalls": 80,
+        "inwardNormals": 80,
+        "backWalls": 0,
+        "expectedWalls": 80,
+        "positiveCaps": 6,
+        "faces": 5720,
+        "undirectedErrors": 0,
+        "directedErrors": 0,
+        "pass": true
+      }
+    },
+    {
+      "product": "encoder",
+      "invariants": {
+        "scene": true,
+        "materials": true,
+        "textures": true,
+        "components": true,
+        "hostOwn": true,
+        "meta": true
+      },
+      "untouchedGeometryCount": 71,
+      "totalGeometryCount": 72,
+      "targetGeometryChanges": [
+        "geometry:19"
+      ],
+      "targetVertexPositionSetSameAtWeldPrecision": true,
+      "maxActualVertexDeltaMm": 7.102951480296178e-16,
+      "capTrianglesExactAtWeldPrecision": true,
+      "verticalWallQuads": 1438,
+      "wallQuadVertexSetsExactAtWeldPrecision": true,
+      "maxWallAreaDeltaMm2": 5.689893001203927e-16,
+      "triangleCountBefore": 5768,
+      "triangleCountAfter": 5768,
+      "unorientedTriangleMultisetExactlySame": false,
+      "oldOnlyTriangles": 2560,
+      "newOnlyTriangles": 2560,
+      "triangleDifference": "Only the two diagonal choices in the same existing coplanar hole-wall rectangles change with reversed contour order; caps and physical surfaces remain equal.",
+      "frozenLegacyNegativeFixture": {
+        "holes": 5,
+        "emptyAxes": 10,
+        "expectedAxes": 10,
+        "frontWalls": 0,
+        "inwardNormals": 0,
+        "backWalls": 80,
+        "expectedWalls": 80,
+        "positiveCaps": 6,
+        "faces": 5768,
+        "undirectedErrors": 0,
+        "directedErrors": 2560,
+        "pass": false
+      },
+      "repairedFixture": {
+        "holes": 5,
+        "emptyAxes": 10,
+        "expectedAxes": 10,
+        "frontWalls": 80,
+        "inwardNormals": 80,
+        "backWalls": 0,
+        "expectedWalls": 80,
+        "positiveCaps": 6,
+        "faces": 5768,
+        "undirectedErrors": 0,
+        "directedErrors": 0,
+        "pass": true
+      }
+    }
+  ],
+  "limits": [
+    "This is a geometry and API regression diagnostic, not browser visual or physical hardware proof.",
+    "Reversing source contour order makes Three.js choose the other diagonal inside each affected hole-wall quad; strict triangle connectivity identity is not claimed.",
+    "Only the three reproduced PCB bores are covered; unrelated shell openings and unconfirmed PCB candidates are out of this repair batch."
+  ]
+}

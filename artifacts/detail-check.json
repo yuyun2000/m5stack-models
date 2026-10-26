@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-26T02:13:14.443Z",
+  "checkedAt": "2026-10-26T03:20:06.211Z",
   "scope": "Assembled mechanical geometry and visual kinematics only; browser review and physical fit remain separate",
   "checks": [
     {
@@ -629,6 +629,73 @@
         19.675804138183594
       ],
       "scope": "independent CAD aperture rays, assembled cavities and actual moving meshes; concealed shapes remain inferred"
+    },
+    {
+      "script": "scripts/check-pcb-hole-winding.mjs",
+      "status": "pass",
+      "scope": "Four actual non-beveled PCBs: finite empty bore axes, FrontSide interior walls and inward normals, BackSide negative controls, positive caps and directed edge closure after 1e-5 mm seam welding; not fit or hardware proof.",
+      "results": [
+        {
+          "product": "thermal",
+          "holes": 9,
+          "emptyAxes": 18,
+          "expectedEmptyAxes": 18,
+          "wallHits": 144,
+          "inwardNormals": 144,
+          "expectedWallHits": 144,
+          "backsideHits": 0,
+          "positiveCaps": 6,
+          "expectedPositiveCaps": 6,
+          "faces": 2920,
+          "unpairedEdges": 0,
+          "directedErrors": 0
+        },
+        {
+          "product": "angle",
+          "holes": 5,
+          "emptyAxes": 10,
+          "expectedEmptyAxes": 10,
+          "wallHits": 80,
+          "inwardNormals": 80,
+          "expectedWallHits": 80,
+          "backsideHits": 0,
+          "positiveCaps": 6,
+          "expectedPositiveCaps": 6,
+          "faces": 5720,
+          "unpairedEdges": 0,
+          "directedErrors": 0
+        },
+        {
+          "product": "encoder",
+          "holes": 5,
+          "emptyAxes": 10,
+          "expectedEmptyAxes": 10,
+          "wallHits": 80,
+          "inwardNormals": 80,
+          "expectedWallHits": 80,
+          "backsideHits": 0,
+          "positiveCaps": 6,
+          "expectedPositiveCaps": 6,
+          "faces": 5768,
+          "unpairedEdges": 0,
+          "directedErrors": 0
+        },
+        {
+          "product": "ncir",
+          "holes": 9,
+          "emptyAxes": 18,
+          "expectedEmptyAxes": 18,
+          "wallHits": 144,
+          "inwardNormals": 144,
+          "expectedWallHits": 144,
+          "backsideHits": 0,
+          "positiveCaps": 6,
+          "expectedPositiveCaps": 6,
+          "faces": 2920,
+          "unpairedEdges": 0,
+          "directedErrors": 0
+        }
+      ]
     },
     {
       "script": "scripts/check-button-actuation.mjs",

@@ -1,0 +1,77 @@
+{
+  "status": "pass",
+  "scope": "Four actual non-beveled PCBs: finite empty bore axes, FrontSide interior walls and inward normals, BackSide negative controls, positive caps and directed edge closure after 1e-5 mm seam welding; not fit or hardware proof.",
+  "results": [
+    {
+      "product": "thermal",
+      "holes": 9,
+      "emptyAxes": 18,
+      "expectedEmptyAxes": 18,
+      "wallHits": 144,
+      "inwardNormals": 144,
+      "expectedWallHits": 144,
+      "backsideHits": 0,
+      "positiveCaps": 6,
+      "expectedPositiveCaps": 6,
+      "faces": 2920,
+      "unpairedEdges": 0,
+      "directedErrors": 0
+    },
+    {
+      "product": "angle",
+      "holes": 5,
+      "emptyAxes": 10,
+      "expectedEmptyAxes": 10,
+      "wallHits": 80,
+      "inwardNormals": 80,
+      "expectedWallHits": 80,
+      "backsideHits": 0,
+      "positiveCaps": 6,
+      "expectedPositiveCaps": 6,
+      "faces": 5720,
+      "unpairedEdges": 0,
+      "directedErrors": 0
+    },
+    {
+      "product": "encoder",
+      "holes": 5,
+      "emptyAxes": 10,
+      "expectedEmptyAxes": 10,
+      "wallHits": 80,
+      "inwardNormals": 80,
+      "expectedWallHits": 80,
+      "backsideHits": 0,
+      "positiveCaps": 6,
+      "expectedPositiveCaps": 6,
+      "faces": 5768,
+      "unpairedEdges": 0,
+      "directedErrors": 0
+    },
+    {
+      "product": "ncir",
+      "holes": 9,
+      "emptyAxes": 18,
+      "expectedEmptyAxes": 18,
+      "wallHits": 144,
+      "inwardNormals": 144,
+      "expectedWallHits": 144,
+      "backsideHits": 0,
+      "positiveCaps": 6,
+      "expectedPositiveCaps": 6,
+      "faces": 2920,
+      "unpairedEdges": 0,
+      "directedErrors": 0
+    }
+  ],
+  "startedAt": "2026-10-26T02:36:27.261033+00:00",
+  "completedAt": "2026-10-26T02:36:27.562651+00:00",
+  "command": "node scripts/check-pcb-hole-winding.mjs",
+  "exitCode": 0,
+  "checkerSha256": "e4514ed6931a5c68a296fec8500390c7eea1d5e875951fda1a3237c13d25eaf6",
+  "sourceHashes": {
+    "src/units/thermal/assembly.js": "51029a5ddcf5e5da046444b89c2d522098334c43d98997dca87c1dd025e068ec",
+    "src/units/angle/assembly.js": "71c407222504e9d83fb3d31b153be7928435d3bc43724d0d47f69dd1c16a9215",
+    "src/units/encoder/assembly.js": "6120c4e66937d8ca86112550cc9d380e332fabaec2a9283aab54a83d4674999f"
+  },
+  "logSha256": "d3fb40013da824e847f27c015b063bbf981f6336322b0cd414fba0a95ae1441e"
+}

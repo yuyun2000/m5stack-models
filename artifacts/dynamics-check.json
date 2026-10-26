@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-26T02:13:14.442Z",
+  "checkedAt": "2026-10-26T03:20:06.210Z",
   "scope": "Actual control movement and externally driven visual kinematics; no hardware/runtime validation",
   "checks": [
     {
@@ -23,7 +23,7 @@
       "script": "scripts/check-thermal-assembly.mjs",
       "status": "pass",
       "sku": "U016",
-      "inputAssemblySha256": "c91a55e70b19e17c115c2665b3cea393ecc45b8c7538bbfb420e70f25bfcc1a5",
+      "inputAssemblySha256": "51029a5ddcf5e5da046444b89c2d522098334c43d98997dca87c1dd025e068ec",
       "grovePoseCases": 7,
       "rays": 38,
       "apertureSamples": 3840,
@@ -46,7 +46,7 @@
       "script": "scripts/check-angle-assembly.mjs",
       "status": "pass",
       "sku": "U005",
-      "inputAssemblySha256": "476b27f2924e86a9ef3414bb78683362cc69e20382b370786d3b0948319a2f63",
+      "inputAssemblySha256": "71c407222504e9d83fb3d31b153be7928435d3bc43724d0d47f69dd1c16a9215",
       "axisMm": [
         0,
         8,
@@ -830,7 +830,7 @@
     },
     {
       "script": "scripts/check-roller485.mjs",
-      "checkedAt": "2026-10-26T02:11:38.830Z",
+      "checkedAt": "2026-10-26T03:18:30.134Z",
       "status": "pass",
       "sku": "U182",
       "variant": "standard-slip-ring",
@@ -1162,7 +1162,7 @@
     },
     {
       "script": "scripts/check-viewer-lifecycle.mjs",
-      "checkedAt": "2026-10-26T02:12:19.359Z",
+      "checkedAt": "2026-10-26T03:19:10.592Z",
       "status": "pass",
       "checks": [
         "same Viewer mount idempotence",
@@ -1766,7 +1766,7 @@
     },
     {
       "script": "scripts/check-8encoder.mjs",
-      "checkedAt": "2026-10-26T02:13:08.364Z",
+      "checkedAt": "2026-10-26T03:20:00.047Z",
       "status": "pass",
       "scope": "Appearance/geometry/input intent only; no encoder count, electrical or firmware simulation",
       "sku": "U153",
