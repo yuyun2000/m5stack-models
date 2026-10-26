@@ -1,0 +1,1135 @@
+{
+  "savedAt": "2026-10-26T18:50:23.189741+00:00",
+  "stage": "modeled",
+  "scope": "Own exact-SKU camera/radio/servo-controller Unit physical assemblies and actual external visual controls/accessories, corresponding print and real three-branch four-core API fixture/builds; no browser or whole-catalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 146,
+    "modeled": 160,
+    "verified": 0
+  },
+  "localHead": "a8198a58fad2c94550787fcb46426f7a7e6e8b6d",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "unitv-ov7740",
+      "status": "pass",
+      "report": "docs/research/unitv-ov7740/smoke.json",
+      "meshes": null,
+      "triangles": null
+    },
+    {
+      "id": "lora-e220-433",
+      "status": "pass",
+      "report": "docs/research/lora-e220-433/smoke.json",
+      "meshes": 102,
+      "triangles": 44886
+    },
+    {
+      "id": "8servos2-i2c",
+      "status": "pass",
+      "report": "docs/research/8servos2-i2c/smoke.json",
+      "meshes": null,
+      "triangles": null
+    }
+  ],
+  "pngCount": 7,
+  "rasters": [
+    {
+      "path": "src/units/unitv-ov7740/artwork/back.png",
+      "pixels": [
+        1164,
+        1561
+      ],
+      "sha256": "851e857ddb5afecc4c39b9ab21760e744ee5402cd5d1b14a22edba26e62aac08"
+    },
+    {
+      "path": "src/units/lora-e220-433/reference-redraw-back.png",
+      "pixels": [
+        1570,
+        3500
+      ],
+      "sha256": "25c318996af0fa5a6a38929a4849e987227684fd8ca31f84cc2777bea00f9f6c"
+    },
+    {
+      "path": "src/units/lora-e220-433/reference-redraw-dip.png",
+      "pixels": [
+        620,
+        590
+      ],
+      "sha256": "7e78807987e0405ac4536ff253a89314c1f267abf0e5eb0ffff811f09531754f"
+    },
+    {
+      "path": "src/units/lora-e220-433/reference-redraw-front.png",
+      "pixels": [
+        1570,
+        3500
+      ],
+      "sha256": "c783d1958dcdbf64b02c61fe97c8224a958642f6ecbf2b61ed02968bb95b7809"
+    },
+    {
+      "path": "src/units/8servos2-i2c/artwork/back.png",
+      "pixels": [
+        1843,
+        3593
+      ],
+      "sha256": "c3bbb3d20c137760b25c87922d2d7a45f81af536c2a318d1438456967bdb2a26"
+    },
+    {
+      "path": "src/units/8servos2-i2c/artwork/front.png",
+      "pixels": [
+        1976,
+        3593
+      ],
+      "sha256": "17abc0d5069ceba58e3f66322cc357376bf292a3218fd572b866876a38f6a7b8"
+    },
+    {
+      "path": "src/units/8servos2-i2c/artwork/selector-scale.png",
+      "pixels": [
+        1200,
+        1200
+      ],
+      "sha256": "ed50d47b6b7f06bcf9dd1f6571f43dce4d7a271f5bf1ce750e25566b264b61f6"
+    }
+  ],
+  "fixture": {
+    "status": "pass",
+    "artwork": [
+      {
+        "id": "unitv-ov7740",
+        "panels": 1,
+        "kinds": [
+          "official-flat-raster"
+        ]
+      },
+      {
+        "id": "lora-e220-433",
+        "panels": 3,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "8servos2-i2c",
+        "panels": 3,
+        "kinds": [
+          "official-photo-code-redraw",
+          "source-vector-raster",
+          "source-vector-raster"
+        ]
+      }
+    ],
+    "components": [
+      {
+        "id": "unitv-ov7740",
+        "components": [
+          "grove",
+          "usb",
+          "sd",
+          "buttonA",
+          "buttonB",
+          "camera",
+          "rgb"
+        ],
+        "ports": [
+          "grove",
+          "usb",
+          "sd"
+        ],
+        "passiveState": "no synthetic firmware state"
+      },
+      {
+        "id": "lora-e220-433",
+        "components": [
+          "grove",
+          "sma",
+          "m0",
+          "m1"
+        ],
+        "ports": [
+          "grove",
+          "sma"
+        ],
+        "passiveState": "no synthetic firmware state"
+      },
+      {
+        "id": "8servos2-i2c",
+        "components": [
+          "grove",
+          "grove-b",
+          "dc",
+          "ch0",
+          "ch1",
+          "ch2",
+          "ch3",
+          "ch4",
+          "ch5",
+          "ch6",
+          "ch7",
+          "selector"
+        ],
+        "ports": [
+          "grove",
+          "grove-b",
+          "dc",
+          "ch0",
+          "ch1",
+          "ch2",
+          "ch3",
+          "ch4",
+          "ch5",
+          "ch6",
+          "ch7"
+        ],
+        "passiveState": "no synthetic firmware state"
+      }
+    ],
+    "motions": [
+      {
+        "id": "unitv-ov7740",
+        "ownComponents": 7,
+        "ports": [
+          "grove",
+          "usb",
+          "sd"
+        ],
+        "nativeRestFaces": 7056,
+        "controls": [
+          {
+            "id": "buttonA",
+            "nativeVertices": 98,
+            "multiSourceRelease": "last source",
+            "pointerExternalCancel": "neutral/no click",
+            "indexAndOtherNativeVertices": "fixed",
+            "neutralPositionsAndNormals": "restored"
+          },
+          {
+            "id": "buttonB",
+            "nativeVertices": 98,
+            "multiSourceRelease": "last source",
+            "pointerExternalCancel": "neutral/no click",
+            "indexAndOtherNativeVertices": "fixed",
+            "neutralPositionsAndNormals": "restored"
+          }
+        ],
+        "disjointNativeVertices": 196,
+        "simultaneousReleaseCancel": "independent",
+        "rgb": "noecho/fixed physical",
+        "camera": "passive/empty state",
+        "rejectsGrove": [
+          "usb",
+          "sd"
+        ],
+        "initialAssemblyRestored": true
+      },
+      {
+        "id": "lora-e220-433",
+        "ports": [
+          "grove",
+          "sma"
+        ],
+        "controls": [
+          {
+            "id": "m0",
+            "movingMeshes": 1,
+            "multiSourceCancel": "retains detent",
+            "externalPosition": "noecho"
+          },
+          {
+            "id": "m1",
+            "movingMeshes": 1,
+            "multiSourceCancel": "retains detent",
+            "externalPosition": "noecho"
+          }
+        ],
+        "fixedSwitchMeshes": 6,
+        "antenna": {
+          "static": true,
+          "connector": "sma-female",
+          "physicalConnector": "sma-male",
+          "joints": [],
+          "independentDetach": "pass",
+          "rejects": [
+            "grove",
+            "rp-sma"
+          ]
+        },
+        "initialAssemblyRestored": true
+      },
+      {
+        "id": "8servos2-i2c",
+        "ports": [
+          "grove",
+          "grove-b",
+          "dc",
+          "ch0",
+          "ch1",
+          "ch2",
+          "ch3",
+          "ch4",
+          "ch5",
+          "ch6",
+          "ch7"
+        ],
+        "portCount": 11,
+        "selector": {
+          "kind": "rotary-selector",
+          "stableDetents": 16,
+          "movingMeshes": 4,
+          "fixedBodyAndPinsAndPorts": "unchanged",
+          "external": "noecho",
+          "invalid": "atomic",
+          "pointer": "worldray/atan2boundary/mod16",
+          "foreignPointer": "ignored",
+          "cancelAndRelease": "retains detent",
+          "externalDuringDrag": "clears capture;old move ignored",
+          "pointerChanges": 3
+        },
+        "wrongFamilyRejections": 11,
+        "initialAssemblyRestored": true
+      },
+      {
+        "id": "unitv-ov7740",
+        "ownComponents": 7,
+        "ports": [
+          "grove",
+          "usb",
+          "sd"
+        ],
+        "nativeRestFaces": 7056,
+        "controls": [
+          {
+            "id": "buttonA",
+            "nativeVertices": 98,
+            "multiSourceRelease": "last source",
+            "pointerExternalCancel": "neutral/no click",
+            "indexAndOtherNativeVertices": "fixed",
+            "neutralPositionsAndNormals": "restored"
+          },
+          {
+            "id": "buttonB",
+            "nativeVertices": 98,
+            "multiSourceRelease": "last source",
+            "pointerExternalCancel": "neutral/no click",
+            "indexAndOtherNativeVertices": "fixed",
+            "neutralPositionsAndNormals": "restored"
+          }
+        ],
+        "disjointNativeVertices": 196,
+        "simultaneousReleaseCancel": "independent",
+        "rgb": "noecho/fixed physical",
+        "camera": "passive/empty state",
+        "rejectsGrove": [
+          "usb",
+          "sd"
+        ],
+        "initialAssemblyRestored": true
+      },
+      {
+        "id": "lora-e220-433",
+        "ports": [
+          "grove",
+          "sma"
+        ],
+        "controls": [
+          {
+            "id": "m0",
+            "movingMeshes": 1,
+            "multiSourceCancel": "retains detent",
+            "externalPosition": "noecho"
+          },
+          {
+            "id": "m1",
+            "movingMeshes": 1,
+            "multiSourceCancel": "retains detent",
+            "externalPosition": "noecho"
+          }
+        ],
+        "fixedSwitchMeshes": 6,
+        "antenna": {
+          "static": true,
+          "connector": "sma-female",
+          "physicalConnector": "sma-male",
+          "joints": [],
+          "independentDetach": "pass",
+          "rejects": [
+            "grove",
+            "rp-sma"
+          ]
+        },
+        "initialAssemblyRestored": true
+      },
+      {
+        "id": "8servos2-i2c",
+        "ports": [
+          "grove",
+          "grove-b",
+          "dc",
+          "ch0",
+          "ch1",
+          "ch2",
+          "ch3",
+          "ch4",
+          "ch5",
+          "ch6",
+          "ch7"
+        ],
+        "portCount": 11,
+        "selector": {
+          "kind": "rotary-selector",
+          "stableDetents": 16,
+          "movingMeshes": 4,
+          "fixedBodyAndPinsAndPorts": "unchanged",
+          "external": "noecho",
+          "invalid": "atomic",
+          "pointer": "worldray/atan2boundary/mod16",
+          "foreignPointer": "ignored",
+          "cancelAndRelease": "retains detent",
+          "externalDuringDrag": "clears capture;old move ignored",
+          "pointerChanges": 3
+        },
+        "wrongFamilyRejections": 11,
+        "initialAssemblyRestored": true
+      }
+    ],
+    "configurations": [
+      {
+        "id": "unitv-ov7740",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalStateComparisons": 10
+      },
+      {
+        "id": "lora-e220-433",
+        "optionCases": 9,
+        "entries": 2,
+        "physicalStateComparisons": 18
+      },
+      {
+        "id": "8servos2-i2c",
+        "optionCases": 17,
+        "entries": 2,
+        "physicalStateComparisons": 34
+      }
+    ],
+    "disposedResources": 1319,
+    "cases": [
+      "three-real-four-core-Grove-branches",
+      "two-native-independent-flexures-A-AB-B-neutral-and-multi-source-release-cancel",
+      "two-real-stable-independent-DIP-sliders-and-static-ordinary-SMA-accessory",
+      "real-sixteen-detent-rotary-selector-ray-drag-and-external-noecho",
+      "all-actual-configurations-both-entries-and-pressed-states-artwork-physical-invariance",
+      "transformed-ancestors-peer-isolation-independent-detach",
+      "actual-second-Grove-four-core-Key-chain-routes-input-intent-only",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Current three own physical assemblies, print and visual kinematics only;Node canvas stub;no browser/GPU,manufacturing,production fit,physical hardware,camera/RF/PWM/electrical/firmware or whole-history acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "artwork": [
+      {
+        "id": "unitv-ov7740",
+        "panels": 1,
+        "kinds": [
+          "official-flat-raster"
+        ]
+      },
+      {
+        "id": "lora-e220-433",
+        "panels": 3,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "8servos2-i2c",
+        "panels": 3,
+        "kinds": [
+          "official-photo-code-redraw",
+          "source-vector-raster",
+          "source-vector-raster"
+        ]
+      }
+    ],
+    "components": [
+      {
+        "id": "unitv-ov7740",
+        "components": [
+          "grove",
+          "usb",
+          "sd",
+          "buttonA",
+          "buttonB",
+          "camera",
+          "rgb"
+        ],
+        "ports": [
+          "grove",
+          "usb",
+          "sd"
+        ],
+        "passiveState": "no synthetic firmware state"
+      },
+      {
+        "id": "lora-e220-433",
+        "components": [
+          "grove",
+          "sma",
+          "m0",
+          "m1"
+        ],
+        "ports": [
+          "grove",
+          "sma"
+        ],
+        "passiveState": "no synthetic firmware state"
+      },
+      {
+        "id": "8servos2-i2c",
+        "components": [
+          "grove",
+          "grove-b",
+          "dc",
+          "ch0",
+          "ch1",
+          "ch2",
+          "ch3",
+          "ch4",
+          "ch5",
+          "ch6",
+          "ch7",
+          "selector"
+        ],
+        "ports": [
+          "grove",
+          "grove-b",
+          "dc",
+          "ch0",
+          "ch1",
+          "ch2",
+          "ch3",
+          "ch4",
+          "ch5",
+          "ch6",
+          "ch7"
+        ],
+        "passiveState": "no synthetic firmware state"
+      }
+    ],
+    "motions": [
+      {
+        "id": "unitv-ov7740",
+        "ownComponents": 7,
+        "ports": [
+          "grove",
+          "usb",
+          "sd"
+        ],
+        "nativeRestFaces": 7056,
+        "controls": [
+          {
+            "id": "buttonA",
+            "nativeVertices": 98,
+            "multiSourceRelease": "last source",
+            "pointerExternalCancel": "neutral/no click",
+            "indexAndOtherNativeVertices": "fixed",
+            "neutralPositionsAndNormals": "restored"
+          },
+          {
+            "id": "buttonB",
+            "nativeVertices": 98,
+            "multiSourceRelease": "last source",
+            "pointerExternalCancel": "neutral/no click",
+            "indexAndOtherNativeVertices": "fixed",
+            "neutralPositionsAndNormals": "restored"
+          }
+        ],
+        "disjointNativeVertices": 196,
+        "simultaneousReleaseCancel": "independent",
+        "rgb": "noecho/fixed physical",
+        "camera": "passive/empty state",
+        "rejectsGrove": [
+          "usb",
+          "sd"
+        ],
+        "initialAssemblyRestored": true
+      },
+      {
+        "id": "lora-e220-433",
+        "ports": [
+          "grove",
+          "sma"
+        ],
+        "controls": [
+          {
+            "id": "m0",
+            "movingMeshes": 1,
+            "multiSourceCancel": "retains detent",
+            "externalPosition": "noecho"
+          },
+          {
+            "id": "m1",
+            "movingMeshes": 1,
+            "multiSourceCancel": "retains detent",
+            "externalPosition": "noecho"
+          }
+        ],
+        "fixedSwitchMeshes": 6,
+        "antenna": {
+          "static": true,
+          "connector": "sma-female",
+          "physicalConnector": "sma-male",
+          "joints": [],
+          "independentDetach": "pass",
+          "rejects": [
+            "grove",
+            "rp-sma"
+          ]
+        },
+        "initialAssemblyRestored": true
+      },
+      {
+        "id": "8servos2-i2c",
+        "ports": [
+          "grove",
+          "grove-b",
+          "dc",
+          "ch0",
+          "ch1",
+          "ch2",
+          "ch3",
+          "ch4",
+          "ch5",
+          "ch6",
+          "ch7"
+        ],
+        "portCount": 11,
+        "selector": {
+          "kind": "rotary-selector",
+          "stableDetents": 16,
+          "movingMeshes": 4,
+          "fixedBodyAndPinsAndPorts": "unchanged",
+          "external": "noecho",
+          "invalid": "atomic",
+          "pointer": "worldray/atan2boundary/mod16",
+          "foreignPointer": "ignored",
+          "cancelAndRelease": "retains detent",
+          "externalDuringDrag": "clears capture;old move ignored",
+          "pointerChanges": 3
+        },
+        "wrongFamilyRejections": 11,
+        "initialAssemblyRestored": true
+      },
+      {
+        "id": "unitv-ov7740",
+        "ownComponents": 7,
+        "ports": [
+          "grove",
+          "usb",
+          "sd"
+        ],
+        "nativeRestFaces": 7056,
+        "controls": [
+          {
+            "id": "buttonA",
+            "nativeVertices": 98,
+            "multiSourceRelease": "last source",
+            "pointerExternalCancel": "neutral/no click",
+            "indexAndOtherNativeVertices": "fixed",
+            "neutralPositionsAndNormals": "restored"
+          },
+          {
+            "id": "buttonB",
+            "nativeVertices": 98,
+            "multiSourceRelease": "last source",
+            "pointerExternalCancel": "neutral/no click",
+            "indexAndOtherNativeVertices": "fixed",
+            "neutralPositionsAndNormals": "restored"
+          }
+        ],
+        "disjointNativeVertices": 196,
+        "simultaneousReleaseCancel": "independent",
+        "rgb": "noecho/fixed physical",
+        "camera": "passive/empty state",
+        "rejectsGrove": [
+          "usb",
+          "sd"
+        ],
+        "initialAssemblyRestored": true
+      },
+      {
+        "id": "lora-e220-433",
+        "ports": [
+          "grove",
+          "sma"
+        ],
+        "controls": [
+          {
+            "id": "m0",
+            "movingMeshes": 1,
+            "multiSourceCancel": "retains detent",
+            "externalPosition": "noecho"
+          },
+          {
+            "id": "m1",
+            "movingMeshes": 1,
+            "multiSourceCancel": "retains detent",
+            "externalPosition": "noecho"
+          }
+        ],
+        "fixedSwitchMeshes": 6,
+        "antenna": {
+          "static": true,
+          "connector": "sma-female",
+          "physicalConnector": "sma-male",
+          "joints": [],
+          "independentDetach": "pass",
+          "rejects": [
+            "grove",
+            "rp-sma"
+          ]
+        },
+        "initialAssemblyRestored": true
+      },
+      {
+        "id": "8servos2-i2c",
+        "ports": [
+          "grove",
+          "grove-b",
+          "dc",
+          "ch0",
+          "ch1",
+          "ch2",
+          "ch3",
+          "ch4",
+          "ch5",
+          "ch6",
+          "ch7"
+        ],
+        "portCount": 11,
+        "selector": {
+          "kind": "rotary-selector",
+          "stableDetents": 16,
+          "movingMeshes": 4,
+          "fixedBodyAndPinsAndPorts": "unchanged",
+          "external": "noecho",
+          "invalid": "atomic",
+          "pointer": "worldray/atan2boundary/mod16",
+          "foreignPointer": "ignored",
+          "cancelAndRelease": "retains detent",
+          "externalDuringDrag": "clears capture;old move ignored",
+          "pointerChanges": 3
+        },
+        "wrongFamilyRejections": 11,
+        "initialAssemblyRestored": true
+      }
+    ],
+    "configurations": [
+      {
+        "id": "unitv-ov7740",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalStateComparisons": 10
+      },
+      {
+        "id": "lora-e220-433",
+        "optionCases": 9,
+        "entries": 2,
+        "physicalStateComparisons": 18
+      },
+      {
+        "id": "8servos2-i2c",
+        "optionCases": 17,
+        "entries": 2,
+        "physicalStateComparisons": 34
+      }
+    ],
+    "disposedResources": 1319,
+    "cases": [
+      "three-real-four-core-Grove-branches",
+      "two-native-independent-flexures-A-AB-B-neutral-and-multi-source-release-cancel",
+      "two-real-stable-independent-DIP-sliders-and-static-ordinary-SMA-accessory",
+      "real-sixteen-detent-rotary-selector-ray-drag-and-external-noecho",
+      "all-actual-configurations-both-entries-and-pressed-states-artwork-physical-invariance",
+      "transformed-ancestors-peer-isolation-independent-detach",
+      "actual-second-Grove-four-core-Key-chain-routes-input-intent-only",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Current three own physical assemblies, print and visual kinematics only;Node canvas stub;no browser/GPU,manufacturing,production fit,physical hardware,camera/RF/PWM/electrical/firmware or whole-history acceptance"
+  },
+  "selectorPanel": {
+    "status": "pass",
+    "cases": [
+      "actual-nested-Unit-selector-visible-in-real-DynamicsPanel",
+      "all16external-panel-detents-change-real-rotor-geometry-without-inputecho",
+      "external-state-terminal-render-syncs-hex-readout-and-dynamic-state",
+      "detach-prunes-controls-and-reattach-rebuilds-one-correct-bound-control",
+      "host-buttons-and-framebuffer-preserved"
+    ],
+    "scope": "Real current model/component/panel/host attachment;DOM and renderer boundary fixtures only,no browser pixels or GPU acceptance"
+  },
+  "privateSelectorPanel": {
+    "status": "pass",
+    "cases": [
+      "actual-nested-Unit-selector-visible-in-real-DynamicsPanel",
+      "all16external-panel-detents-change-real-rotor-geometry-without-inputecho",
+      "external-state-terminal-render-syncs-hex-readout-and-dynamic-state",
+      "detach-prunes-controls-and-reattach-rebuilds-one-correct-bound-control",
+      "host-buttons-and-framebuffer-preserved"
+    ],
+    "scope": "Real current model/component/panel/host attachment;DOM and renderer boundary fixtures only,no browser pixels or GPU acceptance"
+  },
+  "checks": {
+    "localProductSmoke": "all current batch products pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "unitv-ov7740",
+        "status": "frozen",
+        "checkedFiles": 12
+      },
+      {
+        "id": "lora-e220-433",
+        "status": "frozen",
+        "checkedFiles": 14
+      },
+      {
+        "id": "8servos2-i2c",
+        "status": "frozen",
+        "checkedFiles": 13
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "All physical attributes/index/world matrices preserved across actual entries/configurations",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "efe9dba0d1786a81f376a060f43f7e13b75975c383a8f07c77ad235220472faa",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "ad74d86ab06bf9016e47c451064caebef6f2243b8f791405ff8f20f5cd2631b8",
+      "logDistributed": false
+    },
+    "exportCount": 7,
+    "catalogConfigurations": {
+      "status": "pass",
+      "products": [
+        {
+          "id": "unitv-ov7740",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "完整 UnitV-OV7740",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        },
+        {
+          "id": "lora-e220-433",
+          "presets": [
+            {
+              "id": "socket-00",
+              "name": "Receiving SMA socket / physical sliders 00",
+              "options": {
+                "antenna": false,
+                "m0Position": 0,
+                "m1Position": 0
+              }
+            },
+            {
+              "id": "socket-01",
+              "name": "Receiving SMA socket / physical sliders 01",
+              "options": {
+                "antenna": false,
+                "m0Position": 0,
+                "m1Position": 1
+              }
+            },
+            {
+              "id": "socket-10",
+              "name": "Receiving SMA socket / physical sliders 10",
+              "options": {
+                "antenna": false,
+                "m0Position": 1,
+                "m1Position": 0
+              }
+            },
+            {
+              "id": "socket-11",
+              "name": "Receiving SMA socket / physical sliders 11",
+              "options": {
+                "antenna": false,
+                "m0Position": 1,
+                "m1Position": 1
+              }
+            },
+            {
+              "id": "with-antenna-00",
+              "name": "Supplied static folded antenna / physical sliders 00",
+              "options": {
+                "antenna": true,
+                "m0Position": 0,
+                "m1Position": 0
+              }
+            },
+            {
+              "id": "with-antenna-01",
+              "name": "Supplied static folded antenna / physical sliders 01",
+              "options": {
+                "antenna": true,
+                "m0Position": 0,
+                "m1Position": 1
+              }
+            },
+            {
+              "id": "with-antenna-10",
+              "name": "Supplied static folded antenna / physical sliders 10",
+              "options": {
+                "antenna": true,
+                "m0Position": 1,
+                "m1Position": 0
+              }
+            },
+            {
+              "id": "with-antenna-11",
+              "name": "Supplied static folded antenna / physical sliders 11",
+              "options": {
+                "antenna": true,
+                "m0Position": 1,
+                "m1Position": 1
+              }
+            }
+          ],
+          "defaults": {
+            "antenna": false,
+            "m0Position": 0,
+            "m1Position": 0
+          }
+        },
+        {
+          "id": "8servos2-i2c",
+          "presets": [
+            {
+              "id": "position-0",
+              "name": "Selector position 0",
+              "options": {
+                "selectorPosition": 0
+              }
+            },
+            {
+              "id": "position-f",
+              "name": "Selector position F",
+              "options": {
+                "selectorPosition": 15
+              }
+            }
+          ],
+          "defaults": {
+            "selectorPosition": 0
+          }
+        }
+      ],
+      "scope": "Three current frozen named configuration arrays, constructor defaults and existing demo preset contract"
+    },
+    "livePreview": "160-product catalog, 3 own runtime chunks and all corresponding source PNG bytes verified in live dist (ordinary or inlined assets)",
+    "newSourcePrivacy": "New JS/JSON/Markdown/PNG and all current added catalog/manifest records checked; private table/URLs/vectors/original names/mappings/raw material/intermediates excluded",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "Only new products/catalog entries/exports/guide/plan; protected old private/public bytes retained",
+    "existingPublicUnitFilesUnchanged": 1199,
+    "existingPrivateUnitFilesUnchanged": 1160,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [],
+  "previewAssets": [
+    {
+      "id": "unitv-ov7740",
+      "file": "assets/unitv-ov7740-AeEB7vms.js",
+      "sha256": "8563f2f7db02ded03ebd6cd368d25cfe051cc1af5a92df566ded67a8518dade7"
+    },
+    {
+      "id": "lora-e220-433",
+      "file": "assets/lora-e220-433-BlCnOYcz.js",
+      "sha256": "573bc1b7c5f8376344c5491e9e7684b3e02d60bfc7102405ad09957d17e4a981"
+    },
+    {
+      "id": "8servos2-i2c",
+      "file": "assets/8servos2-i2c-rcu1VjAW.js",
+      "sha256": "96fe21ddea288849d21c2f820ea5e29c493f7ae2b61edcb0f7e1e983b23a237d"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/unitv-ov7740/NativeFlexure.js",
+      "sha256": "9c532675a81fc7631e71d1267113d9f05afa738d49311f44f4dc0967d115fb3d"
+    },
+    {
+      "path": "src/units/unitv-ov7740/artwork/back.png",
+      "sha256": "851e857ddb5afecc4c39b9ab21760e744ee5402cd5d1b14a22edba26e62aac08"
+    },
+    {
+      "path": "src/units/unitv-ov7740/assembly.js",
+      "sha256": "4f0bd9facd070e4de2946ee4cf81be6bb944b41284ae42ddc6544fb7061e13f4"
+    },
+    {
+      "path": "src/units/unitv-ov7740/cad-map.json",
+      "sha256": "ba63ab463c56ebe21af24dca8a9b87828427ccf17f800ea7a726ddee852610c7"
+    },
+    {
+      "path": "src/units/unitv-ov7740/dimensions.js",
+      "sha256": "87aa44920b46dd9a83904fd8074d08a43b9e28ee2f4b11fa71de5561d7fefff2"
+    },
+    {
+      "path": "src/units/unitv-ov7740/geometry-data.js",
+      "sha256": "0edf6ade0df85d165dc618f3f0d20bab58843e67f65b2b9a992f5da202b96e38"
+    },
+    {
+      "path": "src/units/unitv-ov7740/index.js",
+      "sha256": "e7df388b1af08bf34659fc64fa679769db33e220458f1f1884eb34beb578766d"
+    },
+    {
+      "path": "src/units/unitv-ov7740/stickers.js",
+      "sha256": "d99a902e980577267f61fbb43f77b6d1ca614a5b152fbceae49f56ffe7bc00ba"
+    },
+    {
+      "path": "docs/research/unitv-ov7740/artwork.json",
+      "sha256": "2eef508c1f0e5dd65760b5a5ad3f19dced30d3420ef6b54b0c5b5950cca73875"
+    },
+    {
+      "path": "docs/research/unitv-ov7740/modeling.md",
+      "sha256": "caa228e108b3a2a0239b7f124cbeafed2dd8db5cb3adbb5f1f3089f02a870ac5"
+    },
+    {
+      "path": "docs/research/unitv-ov7740/smoke.json",
+      "sha256": "4baff1da5ed032b33d6a7bb6e09371e336b165abf081de0392bed317d9db95af"
+    },
+    {
+      "path": "docs/research/unitv-ov7740/sources.json",
+      "sha256": "ed597373c3fab2f9a08309af9f215899c21ab0218ca6f9b5d74a8f008b13e723"
+    },
+    {
+      "path": "src/units/lora-e220-433/Antenna.js",
+      "sha256": "c34bd47275a3ceb58605c2db2341c94d080cb40ea9c5d0fbcc86f361ac39858f"
+    },
+    {
+      "path": "src/units/lora-e220-433/assembly.js",
+      "sha256": "b6cd5d7602cace139a49df6ee3b16660f3a5c02950f41e4fac1cce36f5eda46c"
+    },
+    {
+      "path": "src/units/lora-e220-433/cad-map.json",
+      "sha256": "b3ad3adf948c9dc28bf7289931c7322a7c43634acfa07a9ea09ddb4017510b0d"
+    },
+    {
+      "path": "src/units/lora-e220-433/dimensions.js",
+      "sha256": "666d99a0a465e41a4615183a7c2027e71828be8a99e87b179ceb77de8e5143ff"
+    },
+    {
+      "path": "src/units/lora-e220-433/geometry-data.js",
+      "sha256": "ab5fde49fbeeb2dbf9bd77b05a8fbfb4b04d7aa10bc5c532fa94a7bdb9c6a7d0"
+    },
+    {
+      "path": "src/units/lora-e220-433/index.js",
+      "sha256": "a00be55b854f346aac3c6bc6be2acfa4b950264225d2ca174274c9f35daf2f1b"
+    },
+    {
+      "path": "src/units/lora-e220-433/reference-redraw-back.png",
+      "sha256": "25c318996af0fa5a6a38929a4849e987227684fd8ca31f84cc2777bea00f9f6c"
+    },
+    {
+      "path": "src/units/lora-e220-433/reference-redraw-dip.png",
+      "sha256": "7e78807987e0405ac4536ff253a89314c1f267abf0e5eb0ffff811f09531754f"
+    },
+    {
+      "path": "src/units/lora-e220-433/reference-redraw-front.png",
+      "sha256": "c783d1958dcdbf64b02c61fe97c8224a958642f6ecbf2b61ed02968bb95b7809"
+    },
+    {
+      "path": "src/units/lora-e220-433/stickers.js",
+      "sha256": "4bfbc336dda0a2a6834081a43c6b2890ea8bd067d183d19e75cb46d85d5b2ea6"
+    },
+    {
+      "path": "docs/research/lora-e220-433/artwork.json",
+      "sha256": "d9580a661ed503612873a75b6dcb6b9233f7da74639eb425b491080149646e1b"
+    },
+    {
+      "path": "docs/research/lora-e220-433/modeling.md",
+      "sha256": "fa8b0b133205d3c998d18380a298e709bc61b42248ecbe6410e9aa8109ded26c"
+    },
+    {
+      "path": "docs/research/lora-e220-433/smoke.json",
+      "sha256": "e69af5a3d4020d52babc81f458c65f970adb33e455d7e0571ba5390b3f572163"
+    },
+    {
+      "path": "docs/research/lora-e220-433/sources.json",
+      "sha256": "b04fcadea3e02264d562ef5b23e4d0134ec46a1f3c23d770f4b3d84dba568fc1"
+    },
+    {
+      "path": "src/units/8servos2-i2c/RotarySelector.js",
+      "sha256": "ee355d49b0644fc0046d327f00f5b600cc7ea7b57fbd78f7c3d90c29a1dffd4f"
+    },
+    {
+      "path": "src/units/8servos2-i2c/artwork/back.png",
+      "sha256": "c3bbb3d20c137760b25c87922d2d7a45f81af536c2a318d1438456967bdb2a26"
+    },
+    {
+      "path": "src/units/8servos2-i2c/artwork/front.png",
+      "sha256": "17abc0d5069ceba58e3f66322cc357376bf292a3218fd572b866876a38f6a7b8"
+    },
+    {
+      "path": "src/units/8servos2-i2c/artwork/selector-scale.png",
+      "sha256": "ed50d47b6b7f06bcf9dd1f6571f43dce4d7a271f5bf1ce750e25566b264b61f6"
+    },
+    {
+      "path": "src/units/8servos2-i2c/assembly.js",
+      "sha256": "f51784a8ac27916b53f95fe56407b52edf8ce8007e486da860046890f51ec80c"
+    },
+    {
+      "path": "src/units/8servos2-i2c/dimensions.js",
+      "sha256": "fcf6fa05a1f1cb28f29aea7a60089b3ee941243198325d234c3590e177d0f52b"
+    },
+    {
+      "path": "src/units/8servos2-i2c/geometry.js",
+      "sha256": "daeb472718bc5030fc9e13a28efa6af1b603b660cd51cacbbe9b6b6a31f27b12"
+    },
+    {
+      "path": "src/units/8servos2-i2c/index.js",
+      "sha256": "125cb776af4c9318672bffd4076a19d8c43a28907591e74c94bb800ff33a119b"
+    },
+    {
+      "path": "src/units/8servos2-i2c/stickers.js",
+      "sha256": "afd7b84674398413249af3ac572a0b4e338c7cc81e82041419206b713deca213"
+    },
+    {
+      "path": "docs/research/8servos2-i2c/artwork.json",
+      "sha256": "5e8bec20ddce988ff68c093bf291b83561e008bd15ecd36a9efa3764867785e8"
+    },
+    {
+      "path": "docs/research/8servos2-i2c/modeling.md",
+      "sha256": "85d01d2c7935be7c4c22364ee5850e9778fd14b431fcd582a746142155f27f7e"
+    },
+    {
+      "path": "docs/research/8servos2-i2c/smoke.json",
+      "sha256": "99e70c1e27d8b4e8d048201fe0c3a6804f023e98156f3e654c27d5448b23d6f0"
+    },
+    {
+      "path": "docs/research/8servos2-i2c/sources.json",
+      "sha256": "ed9497b4fe8c1cf4df87ca840262e0ee7b6bc329d5707006078346639d73f4d5"
+    }
+  ],
+  "limitations": [
+    "UnitV-OV7740 andLoRa433 use own complete native7056/6614source faces;8Servos2 has no nativeCAD receipt and uses own dimensioned six-view/clear-photo parameterized construction",
+    "Concealed installed PCB/contact/connector/package/lens geometry,wall/snaps in parametric U222 and real control travel remain documented appearance inferences,not completeBOM,manufacturing or production fit",
+    "Only actual UnitV caps/flexures/plungers,433DIP sliders and16-position U222rotor move;fixed shell regions/package/board/pins stay fixed;static433 antenna has no inferred unprovenhinge",
+    "Only supported visible light paths expose externalLEDs;no image capture,AI,SD/USB/UART,RF/mode,electrical,PWM,address algorithm,current/voltage or internalservo state",
+    "Artwork origins are recorded per asset:private exact-vector to ordinaryPNG,public own flat raster,or legible own-photo code redraw;no photographic crop,wrong-SKU print or microtext invention",
+    "Private table,originals,URLs,names,mapping,vectors,generators and intermediates stay excluded;earlier sticker/Scroll/StackChan/Puzzle/Catch limits preserved;overall goal active"
+  ]
+}

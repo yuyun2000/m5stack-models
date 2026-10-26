@@ -31464,6 +31464,4426 @@
         ],
         "sources": "docs/research/mini-proto/artwork.json"
       }
+    },
+    {
+      "id": "hbridge",
+      "category": "unit",
+      "name": "Unit HBridge",
+      "sku": "U160",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        56,
+        10.2
+      ],
+      "vendorDimensionOrderMm": [
+        56,
+        24,
+        10.2
+      ],
+      "cadEnvelopeMm": [
+        24.000062942504883,
+        56.00003242492676,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24.000062942504883,
+        56.00003242492676,
+        10.20000001192093
+      ],
+      "withTerminalPlugEnvelopeMm": [
+        24.000062942504883,
+        67.10003242529928,
+        10.400000035762787
+      ],
+      "stage": "modeled",
+      "entry": "src/units/hbridge/index.js",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/Hbridge%20Unit/img-3f610a3a-12be-4bd9-83b7-32f24b16b982.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_HBridge",
+      "research": "docs/research/hbridge/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [
+          "TerminalPlug"
+        ],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/hbridge/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          -16
+        ],
+        [
+          8,
+          -16
+        ]
+      ],
+      "mountingHoleDiameterMm": 4.85,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -27.9,
+            1.4
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SDA",
+            "SCL"
+          ]
+        },
+        {
+          "id": "terminal",
+          "connector": "ht3.96-4p",
+          "face": "top",
+          "positionMm": [
+            0,
+            27.9,
+            2
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ],
+          "pins": [
+            "HV",
+            "GND",
+            "M−",
+            "M+"
+          ]
+        }
+      ],
+      "controls": [
+        "source",
+        "address-1",
+        "address-2",
+        "address-3",
+        "address-4"
+      ],
+      "externalLeds": [],
+      "visualAnchors": [],
+      "defaultOptions": {
+        "frontCover": true,
+        "terminalPlug": false
+      },
+      "configurationSchema": {
+        "frontCover": {
+          "type": "boolean",
+          "default": true
+        },
+        "terminalPlug": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "configurations": [
+        {
+          "id": "assembled",
+          "name": "Assembled receiving sockets",
+          "options": {
+            "frontCover": true,
+            "terminalPlug": false
+          },
+          "ports": [
+            {
+              "id": "grove",
+              "connector": "grove",
+              "face": "bottom",
+              "positionMm": [
+                0,
+                -27.9,
+                1.4
+              ],
+              "outward": [
+                0,
+                -1,
+                0
+              ],
+              "pins": [
+                "GND",
+                "5V",
+                "SDA",
+                "SCL"
+              ]
+            },
+            {
+              "id": "terminal",
+              "connector": "ht3.96-4p",
+              "face": "top",
+              "positionMm": [
+                0,
+                27.9,
+                2
+              ],
+              "outward": [
+                0,
+                1,
+                0
+              ],
+              "pins": [
+                "HV",
+                "GND",
+                "M−",
+                "M+"
+              ]
+            }
+          ],
+          "controls": [
+            "source",
+            "address-1",
+            "address-2",
+            "address-3",
+            "address-4"
+          ],
+          "pointerAccessible": false,
+          "joints": [],
+          "anchors": [],
+          "artworkPanels": 2,
+          "nativeTriangles": 5592,
+          "rearFastenerPresent": true
+        },
+        {
+          "id": "assembled-with-terminal",
+          "name": "Assembled with supplied terminal plug",
+          "options": {
+            "frontCover": true,
+            "terminalPlug": true
+          },
+          "ports": [
+            {
+              "id": "grove",
+              "connector": "grove",
+              "face": "bottom",
+              "positionMm": [
+                0,
+                -27.9,
+                1.4
+              ],
+              "outward": [
+                0,
+                -1,
+                0
+              ],
+              "pins": [
+                "GND",
+                "5V",
+                "SDA",
+                "SCL"
+              ]
+            },
+            {
+              "id": "terminal",
+              "connector": "ht3.96-4p",
+              "face": "top",
+              "positionMm": [
+                0,
+                27.9,
+                2
+              ],
+              "outward": [
+                0,
+                1,
+                0
+              ],
+              "pins": [
+                "HV",
+                "GND",
+                "M−",
+                "M+"
+              ]
+            }
+          ],
+          "controls": [
+            "source",
+            "address-1",
+            "address-2",
+            "address-3",
+            "address-4"
+          ],
+          "pointerAccessible": false,
+          "joints": [
+            "terminal/screw-1",
+            "terminal/screw-2",
+            "terminal/screw-3",
+            "terminal/screw-4"
+          ],
+          "anchors": [],
+          "artworkPanels": 2,
+          "nativeTriangles": 5592,
+          "rearFastenerPresent": true
+        },
+        {
+          "id": "front-service",
+          "name": "Front service",
+          "options": {
+            "frontCover": false,
+            "terminalPlug": false
+          },
+          "ports": [
+            {
+              "id": "grove",
+              "connector": "grove",
+              "face": "bottom",
+              "positionMm": [
+                0,
+                -27.9,
+                1.4
+              ],
+              "outward": [
+                0,
+                -1,
+                0
+              ],
+              "pins": [
+                "GND",
+                "5V",
+                "SDA",
+                "SCL"
+              ]
+            },
+            {
+              "id": "terminal",
+              "connector": "ht3.96-4p",
+              "face": "top",
+              "positionMm": [
+                0,
+                27.9,
+                2
+              ],
+              "outward": [
+                0,
+                1,
+                0
+              ],
+              "pins": [
+                "HV",
+                "GND",
+                "M−",
+                "M+"
+              ]
+            }
+          ],
+          "controls": [
+            "source",
+            "address-1",
+            "address-2",
+            "address-3",
+            "address-4"
+          ],
+          "pointerAccessible": true,
+          "joints": [],
+          "anchors": [],
+          "artworkPanels": 1,
+          "nativeTriangles": 3032,
+          "rearFastenerPresent": false
+        },
+        {
+          "id": "front-service-with-terminal",
+          "name": "Front service with supplied terminal plug",
+          "options": {
+            "frontCover": false,
+            "terminalPlug": true
+          },
+          "ports": [
+            {
+              "id": "grove",
+              "connector": "grove",
+              "face": "bottom",
+              "positionMm": [
+                0,
+                -27.9,
+                1.4
+              ],
+              "outward": [
+                0,
+                -1,
+                0
+              ],
+              "pins": [
+                "GND",
+                "5V",
+                "SDA",
+                "SCL"
+              ]
+            },
+            {
+              "id": "terminal",
+              "connector": "ht3.96-4p",
+              "face": "top",
+              "positionMm": [
+                0,
+                27.9,
+                2
+              ],
+              "outward": [
+                0,
+                1,
+                0
+              ],
+              "pins": [
+                "HV",
+                "GND",
+                "M−",
+                "M+"
+              ]
+            }
+          ],
+          "controls": [
+            "source",
+            "address-1",
+            "address-2",
+            "address-3",
+            "address-4"
+          ],
+          "pointerAccessible": true,
+          "joints": [
+            "terminal/screw-1",
+            "terminal/screw-2",
+            "terminal/screw-3",
+            "terminal/screw-4"
+          ],
+          "anchors": [],
+          "artworkPanels": 1,
+          "nativeTriangles": 3032,
+          "rearFastenerPresent": false
+        }
+      ],
+      "accessories": [
+        {
+          "id": "terminal-plug",
+          "exportName": "TerminalPlug",
+          "port": "terminal",
+          "defaultInstalled": false,
+          "connector": "ht3.96-4p",
+          "joints": [
+            "screw-1",
+            "screw-2",
+            "screw-3",
+            "screw-4"
+          ]
+        }
+      ],
+      "visualMotion": {
+        "controls": {
+          "type": "button",
+          "targets": [
+            "source",
+            "address-1",
+            "address-2",
+            "address-3",
+            "address-4"
+          ],
+          "latching": true,
+          "positions": [
+            0,
+            1
+          ],
+          "pointerAccessibleWhen": {
+            "frontCover": false
+          },
+          "scope": "Real PCB slider caps only;no address or power mapping;cancel/release retains stable detent"
+        },
+        "screws": {
+          "targets": [
+            "terminal/screw-1",
+            "terminal/screw-2",
+            "terminal/screw-3",
+            "terminal/screw-4"
+          ],
+          "type": "joint",
+          "rangeDeg": null,
+          "visualRangeDeg": [
+            -180,
+            180
+          ],
+          "continuous": false,
+          "rangeEvidence": "Visual head angle only;unmeasured thread/axial/clamp stops"
+        }
+      },
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            20,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 9,
+          "purpose": "Actual installed orange terminal roof above native casing mouth"
+        },
+        {
+          "origin": [
+            0,
+            40,
+            3.2
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 21,
+          "purpose": "Actual deep receiving socket dielectric rear wall"
+        },
+        {
+          "origin": [
+            0,
+            -43,
+            1.2
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 23,
+          "purpose": "Actual open Grove deep rear wall"
+        },
+        {
+          "origin": [
+            0,
+            -16,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 12,
+          "purpose": "Actual fixed retaining screw blind hex floor"
+        },
+        {
+          "origin": [
+            -9,
+            21,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 11.1,
+          "purpose": "Actual intact native front-half retaining tongue behind real rear window"
+        },
+        {
+          "origin": [
+            9,
+            21,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 11.1,
+          "purpose": "Actual intact native front-half retaining tongue behind real rear window"
+        },
+        {
+          "origin": [
+            -9.8,
+            21,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 14,
+          "purpose": "Actual carrier PCB behind outer native rear window"
+        },
+        {
+          "origin": [
+            9.8,
+            21,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 14,
+          "purpose": "Actual carrier PCB behind outer native rear window"
+        },
+        {
+          "origin": [
+            0,
+            2.5,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 12,
+          "purpose": "Actual front body film on native support"
+        },
+        {
+          "origin": [
+            0,
+            7.9,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 12,
+          "purpose": "Actual back body film on native support"
+        }
+      ],
+      "limitations": [
+        "PCB outline,installed plane and hidden package/contact/solder dimensions from own board photo and schematic",
+        "Unmeasured source/DIP travel and detent-position mapping;documentary source labels only",
+        "HT3.96 plug/socket internal dimensions,clearances,clamp/shank poses and neutral head angles",
+        "Film size/registration,corner radius,font metrics and production colorimetry",
+        "Service view omits complete front cover/front film and rear retaining fastener;does not demonstrate a qualified disassembly procedure",
+        "Necessary construction/API smoke only;no GPU/browser/physical/electrical/firmware acceptance."
+      ],
+      "nextAction": "Continue exact Unit expansion with corresponding own artwork.",
+      "artwork": {
+        "status": "reference-redraw",
+        "kind": "reference-redraw",
+        "kinds": {
+          "front": "reference-redraw",
+          "back": "reference-redraw"
+        },
+        "originalsDistributed": false,
+        "pngCount": 2,
+        "variants": [
+          "front",
+          "back"
+        ],
+        "sources": "docs/research/hbridge/artwork.json"
+      },
+      "export": "Model"
+    },
+    {
+      "id": "catm-gnss",
+      "category": "unit",
+      "name": "Unit CatM GNSS",
+      "sku": "U137",
+      "scope": "visual-only",
+      "nominalMm": [
+        40,
+        61.6,
+        14.8
+      ],
+      "vendorDimensionOrderMm": [
+        61.6,
+        40,
+        14.8
+      ],
+      "visualEnvelopeMm": [
+        40,
+        61.6,
+        14.87000009536743
+      ],
+      "cadEnvelopeMm": [
+        40,
+        56,
+        14.800000190734863
+      ],
+      "stage": "modeled",
+      "entry": "src/units/catm-gnss/index.js",
+      "export": "Model",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_CatM_GNSS",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/catm_gnss/catm_gnss_06.webp",
+      "research": "docs/research/catm-gnss/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/catm-gnss/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "label": "PORT.C UART · G/5/R/T",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            -6,
+            -27.8,
+            0.1
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "UART_RX",
+            "UART_TX"
+          ]
+        },
+        {
+          "id": "dc",
+          "label": "DC9–24V · 5.5/2.1mm",
+          "connector": "dc-5.5-2.1",
+          "face": "bottom",
+          "positionMm": [
+            6.2,
+            -27.8,
+            1.1
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "gnss",
+          "label": "GNSS ordinary SMA female",
+          "connector": "sma-female",
+          "face": "top",
+          "positionMm": [
+            -7,
+            33.6,
+            4.2
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "id": "lte",
+          "label": "LTE ordinary SMA female",
+          "connector": "sma-female",
+          "face": "top",
+          "positionMm": [
+            7,
+            33.6,
+            4.2
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "visualAnchors": [
+        {
+          "id": "sim",
+          "positionMm": [
+            19.8,
+            4.5,
+            -4.1
+          ],
+          "scope": "Passive actual MicroSIMside socket,no suppliedcard/data."
+        }
+      ],
+      "serviceVisualAnchors": [],
+      "visualMotion": {
+        "lte": {
+          "componentPath": "lte/tilt",
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "limitsDeg": [
+            0,
+            90
+          ],
+          "rangeEvidence": "Own-photo visual estimate,not rated stop."
+        },
+        "gnss": {
+          "posePath": "gnss/puckPose",
+          "cablePath": "gnss/coax",
+          "coaxialCableCount": 1,
+          "automaticActualEndpoints": true,
+          "scope": "Externally driven physicalpuckpose/intermediatecoaxwaypoints only."
+        }
+      },
+      "mountingHolesMm": [
+        [
+          -16,
+          -24
+        ],
+        [
+          16,
+          -24
+        ],
+        [
+          -16,
+          24
+        ],
+        [
+          16,
+          24
+        ]
+      ],
+      "mountingHoleDiameterMm": 3.2,
+      "rearCounterboreDiameterMm": 4.85,
+      "defaults": {
+        "rearCover": true,
+        "lteAntenna": false,
+        "gnssAntenna": false,
+        "lteAngleDeg": 0
+      },
+      "configurations": [
+        {
+          "id": "body",
+          "name": "Closed body",
+          "options": {
+            "rearCover": true,
+            "lteAntenna": false,
+            "gnssAntenna": false
+          }
+        },
+        {
+          "id": "lte",
+          "name": "Body with supplied LTE rod",
+          "options": {
+            "rearCover": true,
+            "lteAntenna": true,
+            "gnssAntenna": false,
+            "lteAngleDeg": 0
+          }
+        },
+        {
+          "id": "gnss",
+          "name": "Body with supplied GNSS puck and1m coax",
+          "options": {
+            "rearCover": true,
+            "lteAntenna": false,
+            "gnssAntenna": true
+          }
+        },
+        {
+          "id": "both",
+          "name": "Both supplied antennas",
+          "options": {
+            "rearCover": true,
+            "lteAntenna": true,
+            "gnssAntenna": true,
+            "lteAngleDeg": 45
+          }
+        },
+        {
+          "id": "service",
+          "name": "Rear cover removed",
+          "options": {
+            "rearCover": false,
+            "lteAntenna": false,
+            "gnssAntenna": false
+          }
+        },
+        {
+          "id": "service-both",
+          "name": "Rear service with both antennas",
+          "options": {
+            "rearCover": false,
+            "lteAntenna": true,
+            "gnssAntenna": true,
+            "lteAngleDeg": 90
+          }
+        }
+      ],
+      "configurationSchema": {
+        "rearCover": {
+          "type": "boolean",
+          "default": true
+        },
+        "lteAntenna": {
+          "type": "boolean",
+          "default": false
+        },
+        "gnssAntenna": {
+          "type": "boolean",
+          "default": false
+        },
+        "lteAngleDeg": {
+          "type": "number",
+          "default": 0,
+          "range": [
+            0,
+            90
+          ]
+        },
+        "gnssPose": {
+          "type": "object",
+          "properties": [
+            "position",
+            "rotation",
+            "quaternion"
+          ],
+          "space": "accessory-port"
+        },
+        "gnssCable": {
+          "type": "object",
+          "properties": [
+            "points"
+          ],
+          "points": "1…24 intermediate finite xyz waypoints in accessory-port space"
+        }
+      },
+      "accessories": {
+        "lte": {
+          "export": "LTEAntenna",
+          "port": "lte",
+          "connector": "sma-female",
+          "physicalConnector": "sma-male",
+          "componentOrder": [
+            "tilt"
+          ],
+          "joints": [
+            "tilt"
+          ],
+          "jointPath": "lte/tilt",
+          "limitsDeg": [
+            0,
+            90
+          ],
+          "externallyDriven": true,
+          "inferredAxisAndLimits": true,
+          "fixed": [
+            "coupling",
+            "whiteband",
+            "neck",
+            "forkcheeks",
+            "axle"
+          ],
+          "moving": [
+            "knuckle",
+            "lowerbase",
+            "taperedrod",
+            "tipneck",
+            "closedtip"
+          ]
+        },
+        "gnss": {
+          "export": "GNSSAntenna",
+          "port": "gnss",
+          "connector": "sma-female",
+          "physicalConnector": "sma-male",
+          "componentOrder": [
+            "puckPose",
+            "coax"
+          ],
+          "joints": [],
+          "posePath": "gnss/puckPose",
+          "poseCommand": {
+            "type": "pose",
+            "position": [
+              100,
+              90,
+              -5
+            ],
+            "rotation": [
+              0.1,
+              0.2,
+              0.3
+            ]
+          },
+          "cablePath": "gnss/coax",
+          "cableCommand": {
+            "type": "cable",
+            "points": [
+              [
+                0,
+                25,
+                0
+              ],
+              [
+                -60,
+                80,
+                10
+              ],
+              [
+                -120,
+                20,
+                0
+              ],
+              [
+                -40,
+                -20,
+                0
+              ],
+              [
+                45,
+                50,
+                -8
+              ]
+            ]
+          },
+          "space": "accessory-port",
+          "coaxialCableCount": 1,
+          "nominalCableMm": 1000,
+          "displayedLengthIsInferred": true,
+          "cableWaypointsAreIntermediateOnly": true,
+          "automaticSourceEndpointMm": [
+            0,
+            5.5,
+            0
+          ],
+          "automaticPuckEntryLocalMm": [
+            -20,
+            0,
+            0
+          ],
+          "endpointBinding": "Bothendpoints generatedfromactual fixedSMAstrain/puckentry;posechangespuckandautomaticallyresyncscoax;pointscommandchangesonly1…24intermediatewaypoints.",
+          "fixed": [
+            "SMAcoupling",
+            "centrePin",
+            "connectorstrain"
+          ],
+          "poseMoving": [
+            "puckbase",
+            "pucklid",
+            "puckexitstrain",
+            "physicalgoldfilm",
+            "ink"
+          ],
+          "cableChanging": [
+            "singlecoaxjacket"
+          ],
+          "scope": "SingleRFcoax centre-and-shield geometry,permanentpuckcable.Externalpose/shapeonly,no geographiclocation/RF/network/electricalbehavior."
+        }
+      },
+      "closureChecks": [
+        {
+          "origin": [
+            -7,
+            22.8,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 10,
+          "purpose": "Real gold GNSS SMAinstallation body behind actual correctednativewindow"
+        },
+        {
+          "origin": [
+            7,
+            22.8,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 10,
+          "purpose": "RealgoldLTE SMAinstallation body behind nativewindow"
+        },
+        {
+          "origin": [
+            25,
+            4.5,
+            -4.1
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "maxDistance": 25,
+          "purpose": "ActualMicroSIMholder endstop behind realsideopening"
+        }
+      ],
+      "limitations": [
+        "Own5284originalfaces baseline;scopedleftSMAderivative runtime5248 with allrear2638 unchanged,exact provenance/faceIDs recorded.",
+        "HiddenPCB/BOMplacement/SMA/holdersecondarydetail andownantenna dimensions/axes remaininferred.",
+        "No LEDs/buttons/sensorvalues/GNSSlocation/network/RF/electrical/firmware orsuppliedSIMcard.",
+        "Nominal1mGNSS singlecoax;externalwaypoints are intermediateonly,bothactualends auto-bound;no physicslengthsolver.",
+        "Three finalordinarycode-redrawPNGs;illegibleGNSSmicrotext/LTEserial omitted.",
+        "Necessarylocalsmokeonly;visualnull."
+      ],
+      "nextAction": "ContinueUnitexpansionwithmatchinglabels;refineexactU137populatedassembly/accessorymechanics/printregistrationwhenofficialsourcesavailable.",
+      "artwork": {
+        "status": "reference-redraw",
+        "kind": "reference-redraw",
+        "pngCount": 3,
+        "variants": [
+          "front",
+          "back",
+          "gnss"
+        ],
+        "originalsDistributed": false,
+        "sources": "docs/research/catm-gnss/artwork.json"
+      }
+    },
+    {
+      "id": "ultrasonic-io",
+      "category": "unit",
+      "name": "Unit Ultrasonic-IO",
+      "sku": "U098-B2",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        56,
+        15.2
+      ],
+      "vendorDimensionOrderMm": [
+        56,
+        24,
+        15.2
+      ],
+      "visualEnvelopeMm": [
+        24.027936935424805,
+        56.02793884277344,
+        15.200000190734864
+      ],
+      "cadEnvelopeMm": [
+        24.027936935424805,
+        56.02793884277344,
+        9
+      ],
+      "stage": "modeled",
+      "entry": "src/units/ultrasonic-io/index.js",
+      "export": "Model",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT%20SONIC%20IO/img-4ba90df3-6a11-4870-b605-c55983992d76.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_Ultrasonic-IO",
+      "research": "docs/research/ultrasonic-io/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/ultrasonic-io/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          -16
+        ],
+        [
+          8,
+          -16
+        ]
+      ],
+      "mountingHoleDiameterMm": 4.85,
+      "ports": [
+        {
+          "id": "grove",
+          "label": "PORT.B I/O · GND/5V/TRIG/ECHO",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -27.9,
+            1.4
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "TRIG",
+            "ECHO"
+          ],
+          "scope": "Own GPIO photo labels andreal fourcontact attachment only.No pulse,distance,electrical orfirmware behavior."
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "visualAnchors": [],
+      "visualMotion": {},
+      "defaults": {
+        "rearCover": true
+      },
+      "configurations": [
+        {
+          "id": "closed",
+          "name": "完整后壳",
+          "options": {
+            "rearCover": true
+          }
+        },
+        {
+          "id": "rear-service",
+          "name": "移除后壳查看本款GPIO板",
+          "options": {
+            "rearCover": false
+          }
+        }
+      ],
+      "configurationSchema": {
+        "rearCover": {
+          "type": "boolean",
+          "default": true,
+          "description": "Actualrearcover/bodylabel/singlefixing present"
+        }
+      },
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            7,
+            -12
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 8,
+          "purpose": "Actual physicalrearlabelsubstrate atnative recess"
+        },
+        {
+          "origin": [
+            0,
+            -16,
+            -10
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 7,
+          "purpose": "Actual fixinghex cavity hasphysicalblindfloor"
+        }
+      ],
+      "limitations": [
+        "Exactown rear1+front2all5510faces,unscalednative24.02794×56.02794×9mm tolerance;no B1I2Cborrow.",
+        "Dual16mmblackcans with108actual open-gridribs,staticrecesseddiaphragms/supports/solidbottoms.0.55pitch/0.08ribs/internalinstallation inferred.",
+        "Own GPIOPCB/RCWL9620/blackGrove,actualcontacts andsolderparts.Hiddenboard/package/connectorfit inferred.",
+        "Native mountmiddepthØ4.85andlayeredmouth preserved,notuniformØ5manufacturingspec.",
+        "Onlygrove registered.No sensorreading,ultrasound/membranemotion,LED,button,joint ortrigger/echo/electrical/firmware behavior.",
+        "One exactown source-vector-rasterbackPNG.Frontneverartworkmask.Bothentries actualconfigs artworkfalse preserveallphysicalattributes/index/world.",
+        "Necessary construction/URL checks only;no GPU,acoustic,productionfit orphysicaldevice acceptance."
+      ],
+      "nextAction": "Continue exactUnit expansion withmatchinglabels;refineU098-B2 internalacoustic/PCB stack andfit when ownpopulatedproductionmechanicaldata isavailable.",
+      "artwork": {
+        "status": "source-vector-raster",
+        "kind": "source-vector-raster",
+        "originalsDistributed": false,
+        "pngCount": 1,
+        "variants": [
+          "back"
+        ],
+        "sources": "docs/research/ultrasonic-io/artwork.json"
+      }
+    },
+    {
+      "id": "dof6",
+      "category": "unit",
+      "name": "Unit DoF6",
+      "sku": "U228",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        24,
+        8
+      ],
+      "vendorDimensionOrderMm": [
+        24,
+        24,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        24,
+        8.04
+      ],
+      "cadEnvelopeMm": [
+        24,
+        24,
+        8
+      ],
+      "stage": "modeled",
+      "entry": "src/units/dof6/index.js",
+      "export": "Model",
+      "reference": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1289/U228_Unit_DoF6_main_pictures_02.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_DoF6",
+      "research": "docs/research/dof6/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/dof6/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          0
+        ],
+        [
+          8,
+          0
+        ]
+      ],
+      "mountingHoleDiameterMm": 5,
+      "ports": [
+        {
+          "id": "grove",
+          "label": "PORT.A · I2C documentarylabels",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -11.9,
+            1.1
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SDA",
+            "SCL"
+          ],
+          "scope": "Fouractualcontact mechanicalattachment andprintedlabels only.No I2C/address/power/electricalbehavior."
+        }
+      ],
+      "controls": [
+        {
+          "id": "address",
+          "kind": "button",
+          "label": "SW1 physicaltwo-detentslider",
+          "face": "top",
+          "positionMm": [
+            -0.9,
+            11.25,
+            0.1
+          ],
+          "latching": true,
+          "positions": [
+            0,
+            1
+          ],
+          "travelMm": 1.8,
+          "scope": "Stablephysicalposition/inputintent only;release/cancel retainposition.No BMI270 addresscalculation."
+        }
+      ],
+      "keymap": {
+        "Space": "address"
+      },
+      "externalLeds": [],
+      "visualAnchors": [
+        {
+          "id": "bmi270",
+          "kind": "component",
+          "positionMm": [
+            2.5,
+            4,
+            -0.92
+          ],
+          "scope": "PassiveBMI270physicalpackageframeonly"
+        }
+      ],
+      "visualMotion": {
+        "address": {
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "travelMm": 1.8,
+          "moving": "Actualthumb/stemonly;fixedretainer/body/terminals unchanged"
+        }
+      },
+      "defaults": {
+        "addressPosition": 0
+      },
+      "configurations": [
+        {
+          "id": "address-low",
+          "name": "SW1 位置 0",
+          "options": {
+            "addressPosition": 0
+          }
+        },
+        {
+          "id": "address-high",
+          "name": "SW1 位置 1",
+          "options": {
+            "addressPosition": 1
+          }
+        }
+      ],
+      "configurationSchema": {
+        "addressPosition": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ],
+          "default": 0
+        }
+      },
+      "closureChecks": [
+        {
+          "origin": [
+            2,
+            15,
+            0.1
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 6,
+          "purpose": "ActualSW1switchbodybacksremainderofnativeopening"
+        },
+        {
+          "origin": [
+            0,
+            0,
+            -10
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 7,
+          "purpose": "Actualretainingfixinghasblindhexfloor"
+        }
+      ],
+      "limitations": [
+        "OwnU228complete4188source0facesatonepropertranslation;laidout1/2onlyidentifyfront/reargroups.Nofacecut,patch,stretch orindependentmove.",
+        "BMI270only,ME6206,3R/5C;noBMM350/U4,U5/1V8oroptionalNCbranch.",
+        "ActualredGrovecontacts/continuouslegs sitonrealPCBmetalpads;concealedpopulation/fitinferred.",
+        "ActualtopSW1bothstablethumbpositionsreachable;1.8mmvisualthrowinferred.No address/sensor/electricalbehavior.",
+        "ThreeexactoriginalbodyPNGs;artworkfalsepreservesallphysicalattributes/index/worldacrossbothentriesandbothpresets.",
+        "No serviceAPI,no GPU/physicalhardware/productionfit acceptance."
+      ],
+      "nextAction": "Continue exact Unit expansion with matching body labels;refine hidden populatedboardfit when ownproductionassembly becomesavailable.",
+      "artwork": {
+        "status": "source-vector-raster",
+        "kind": "source-vector-raster",
+        "originalsDistributed": false,
+        "pngCount": 3,
+        "variants": [
+          "front",
+          "axis",
+          "back"
+        ],
+        "sources": "docs/research/dof6/artwork.json"
+      }
+    },
+    {
+      "id": "dof9",
+      "category": "unit",
+      "name": "Unit DoF9",
+      "sku": "U229",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        24,
+        8
+      ],
+      "vendorDimensionOrderMm": [
+        24,
+        24,
+        8
+      ],
+      "cadEnvelopeMm": [
+        24,
+        24,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        24,
+        8.03999999910593
+      ],
+      "stage": "modeled",
+      "entry": "src/units/dof9/index.js",
+      "reference": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1292/U229_Unit_DoF9_main_pictures_02.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_DoF9",
+      "research": "docs/research/dof9/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/dof9/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          0
+        ],
+        [
+          8,
+          0
+        ]
+      ],
+      "mountingHoleDiameterMm": 5,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -11.9,
+            1.1
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SDA",
+            "SCL"
+          ]
+        }
+      ],
+      "controls": [
+        "address"
+      ],
+      "visualAnchors": [
+        "sensor"
+      ],
+      "externalLeds": [],
+      "defaultOptions": {
+        "addressPosition": 0
+      },
+      "configurationSchema": {
+        "addressPosition": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ],
+          "default": 0
+        }
+      },
+      "configurations": [
+        {
+          "id": "assembled",
+          "name": "Assembled with stable slider at0",
+          "options": {
+            "addressPosition": 0
+          },
+          "ports": [
+            {
+              "id": "grove",
+              "connector": "grove",
+              "face": "bottom",
+              "positionMm": [
+                0,
+                -11.9,
+                1.1
+              ],
+              "outward": [
+                0,
+                -1,
+                0
+              ],
+              "pins": [
+                "GND",
+                "5V",
+                "SDA",
+                "SCL"
+              ]
+            }
+          ],
+          "controls": [
+            "address"
+          ],
+          "anchors": [
+            "sensor"
+          ],
+          "joints": [],
+          "artworkPanels": 3
+        },
+        {
+          "id": "alternate-detent",
+          "name": "Assembled with stable slider at1",
+          "options": {
+            "addressPosition": 1
+          },
+          "ports": [
+            {
+              "id": "grove",
+              "connector": "grove",
+              "face": "bottom",
+              "positionMm": [
+                0,
+                -11.9,
+                1.1
+              ],
+              "outward": [
+                0,
+                -1,
+                0
+              ],
+              "pins": [
+                "GND",
+                "5V",
+                "SDA",
+                "SCL"
+              ]
+            }
+          ],
+          "controls": [
+            "address"
+          ],
+          "anchors": [
+            "sensor"
+          ],
+          "joints": [],
+          "artworkPanels": 3
+        }
+      ],
+      "visualMotion": {
+        "address": {
+          "kind": "button",
+          "latching": true,
+          "stablePositions": [
+            0,
+            1
+          ],
+          "defaultPosition": 0,
+          "pointerAccessible": true,
+          "actualExposedTopSlot": true,
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "travelMm": 1.8,
+          "travelInferred": true,
+          "commands": [
+            {
+              "type": "button",
+              "target": "address",
+              "action": "press",
+              "source": "external"
+            },
+            {
+              "type": "button",
+              "target": "address",
+              "action": "cancel",
+              "source": "external"
+            },
+            {
+              "type": "button",
+              "target": "address",
+              "action": "position",
+              "position": 1,
+              "immediate": true
+            }
+          ],
+          "methods": [
+            "press",
+            "release",
+            "cancel",
+            "setPosition",
+            "getState",
+            "getActuationState"
+          ],
+          "cancelPreservesDetent": true,
+          "externalPositionNoEcho": true,
+          "movingCap": "get(\"address\").cap",
+          "movingObjects": [
+            "dof9Assembly.address.moving",
+            "dof9Assembly.address.thumb",
+            "dof9Assembly.address.stem"
+          ],
+          "fixedObjects": [
+            "dof9Assembly.address.base",
+            "dof9Assembly.address.retainer",
+            "dof9Assembly.address.terminals[*]"
+          ],
+          "fixedCollection": "dof9Assembly.address.fixed",
+          "noAddressBehavior": true
+        }
+      },
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            -20,
+            1.1
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 15,
+          "purpose": "Actual deep Grove dielectric backing"
+        },
+        {
+          "origin": [
+            0,
+            20,
+            0.1
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 12,
+          "purpose": "Actual fixed SW1 backing behind real source slot"
+        },
+        {
+          "origin": [
+            -0.9,
+            20,
+            0.1
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 9,
+          "purpose": "Actual stable0 thumb through native slot"
+        },
+        {
+          "origin": [
+            0,
+            0,
+            -10
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 7,
+          "purpose": "Actual blind rear hex floor"
+        },
+        {
+          "origin": [
+            0,
+            7.3,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 12,
+          "purpose": "Actual supported front body film"
+        },
+        {
+          "origin": [
+            0,
+            0,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 12,
+          "purpose": "Actual supported axis body film"
+        },
+        {
+          "origin": [
+            0,
+            7.3,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 12,
+          "purpose": "Actual supported back body film"
+        }
+      ],
+      "artwork": {
+        "status": "source-vector-raster",
+        "kind": "source-vector-raster",
+        "pngCount": 3,
+        "variants": [
+          "front",
+          "axis",
+          "back"
+        ],
+        "originalsDistributed": false,
+        "sources": "docs/research/dof9/artwork.json"
+      },
+      "limitations": [
+        "Concealed board outline,installed plane and package/passive/contact installation",
+        "C8 optional U4-branch fit not confirmed;left as empty lands,not a fabricated fitted capacitor",
+        "Switch fixed retainer/body/stem details and1.8mm stable throw",
+        "Grove hidden contact/solder/mating dimensions and positive bore clearances",
+        "Film adhesive thickness,die-cut corners and registration",
+        "Original assembled native mating coincidence retained;no source repairs orservice half-removal API.",
+        "Necessary scoped smoke only;no GPU/browser/physical/production fit/electrical/firmware acceptance."
+      ],
+      "nextAction": "Continue exact Unit expansion with own corresponding artwork.",
+      "export": "Model"
+    },
+    {
+      "id": "bmm350",
+      "category": "unit",
+      "name": "Unit BMM350",
+      "sku": "U231",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        24,
+        8
+      ],
+      "vendorDimensionOrderMm": [
+        24,
+        24,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        24,
+        8.03999999910593
+      ],
+      "cadEnvelopeMm": [
+        24,
+        24,
+        8
+      ],
+      "stage": "modeled",
+      "entry": "src/units/bmm350/index.js",
+      "export": "Model",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_BMM350",
+      "reference": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1293/U231_Unit_BMM350_main_pictures_02.webp",
+      "research": "docs/research/bmm350/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/bmm350/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          0
+        ],
+        [
+          8,
+          0
+        ]
+      ],
+      "mountingHoleDiameterMm": 5,
+      "ports": [
+        {
+          "id": "grove",
+          "label": "PORT.A · I2C documentary labels",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -11.9,
+            1.35
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SDA",
+            "SCL"
+          ]
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "visualAnchors": [
+        {
+          "id": "magnetometer",
+          "label": "BMM350 passive physical package frame",
+          "positionMm": [
+            -2.5,
+            4,
+            -0.8
+          ],
+          "scope": "Passive physicalpackageposition only,no magnetic/heading/calibration/posevalues."
+        }
+      ],
+      "serviceVisualAnchors": [],
+      "visualMotion": {},
+      "defaults": {
+        "rearCover": true
+      },
+      "configurations": [
+        {
+          "id": "closed",
+          "name": "Complete BMM350 body",
+          "options": {
+            "rearCover": true
+          }
+        },
+        {
+          "id": "rear-service",
+          "name": "Rear cover removed",
+          "options": {
+            "rearCover": false
+          }
+        }
+      ],
+      "configurationSchema": {
+        "rearCover": {
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            15,
+            0.1
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 6,
+          "purpose": "Actualfixedblackcarrierbacking behindoriginaltopslot"
+        },
+        {
+          "origin": [
+            0,
+            -15,
+            1.55
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 10,
+          "purpose": "ActualGrove recesseddielectricback"
+        }
+      ],
+      "limitations": [
+        "Own4188assembledsource0retained;1524front/2664rear partitiononly,no geometryrepair/borrow.",
+        "OnlyBMM350populatedsensor;U2/U4NCsitesemptylands,noSPA06/pressurepackage.",
+        "Exacttopslotblackpart/SW1actuatorpopulationunconfirmed;fixedgeometryonly,no inventedaddresscontrol.",
+        "HiddenPCB/passivepackage/placement/filmregistration inferred,notfullproductionBOM orfit.",
+        "rearCover:false removesonlyexact5rear/film/fixingmeshes,retainedphysicalpartsidentical.",
+        "Threefinalsourcevectorrasters only;raw/private/vector/generatorassetsexcluded.",
+        "Necessarylocalchecks only,visualnull."
+      ],
+      "nextAction": "ContinueUnitexpansionwithmatchinglabels;refineexactU231populatedcarrier/topslotidentitywhenofficialassemblyavailable.",
+      "artwork": {
+        "status": "source-vector-raster",
+        "kind": "source-vector-raster",
+        "pngCount": 3,
+        "variants": [
+          "front",
+          "axis",
+          "back"
+        ],
+        "originalsDistributed": false,
+        "sources": "docs/research/bmm350/artwork.json"
+      }
+    },
+    {
+      "id": "unitv-ov7740",
+      "category": "unit",
+      "name": "UnitV-OV7740",
+      "sku": "U078-C",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        40,
+        12.7
+      ],
+      "vendorDimensionOrderMm": [
+        40,
+        24,
+        12.7
+      ],
+      "cadEnvelopeMm": [
+        24.260510444641113,
+        40.0006217956543,
+        12.699999809265137
+      ],
+      "visualEnvelopeMm": [
+        24.260510444641113,
+        40.00062184333801,
+        12.699999809265137
+      ],
+      "stage": "modeled",
+      "entry": "src/units/unitv-ov7740/index.js",
+      "export": "Model",
+      "reference": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1055/U078-C_02.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/unitv_ov7740",
+      "research": "docs/research/unitv-ov7740/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/unitv-ov7740/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          -8
+        ],
+        [
+          8,
+          -8
+        ]
+      ],
+      "mountingHoleDiameterMm": 5,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -19.9,
+            -0.35
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "V",
+            "G35",
+            "G34"
+          ],
+          "scope": "Physicalfourcontactsocket/cable andownrearprintedlabels only;noUART/I2Croute."
+        },
+        {
+          "id": "usb",
+          "connector": "usb-c",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -19.8,
+            -4.65
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "scope": "Actualmetalsocket/tongue/24contacts;no USB/power behavior."
+        },
+        {
+          "id": "sd",
+          "connector": "microsd",
+          "face": "top",
+          "positionMm": [
+            -1,
+            19.4,
+            -0.65
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ],
+          "scope": "Actualemptyreceivingcarrier/9contacts;no card/storage behavior."
+        }
+      ],
+      "controls": [
+        {
+          "id": "buttonA",
+          "kind": "button",
+          "face": "left",
+          "gpio": 19,
+          "positionMm": [
+            -12.14,
+            -14.45,
+            -1.05
+          ],
+          "travelMm": 0.22,
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "mechanism": "native rear-shellflexure",
+          "scope": "Momentaryphysicalpress/release/cancelintent only."
+        },
+        {
+          "id": "buttonB",
+          "kind": "button",
+          "face": "right",
+          "gpio": 18,
+          "positionMm": [
+            12.14,
+            -14.45,
+            -1.05
+          ],
+          "travelMm": 0.22,
+          "axis": [
+            -1,
+            0,
+            0
+          ],
+          "mechanism": "native rear-shellflexure",
+          "scope": "Momentaryphysicalpress/release/cancelintent only."
+        }
+      ],
+      "keymap": {
+        "KeyA": "buttonA",
+        "KeyB": "buttonB"
+      },
+      "externalLeds": [
+        {
+          "id": "rgb",
+          "kind": "rgb",
+          "gpio": 8,
+          "positionMm": [
+            8.200107,
+            12.500118,
+            1.86
+          ],
+          "scope": "Externallysetcolor/brightness throughrealnativehole andsolidlightpipe only."
+        }
+      ],
+      "visualAnchors": [
+        {
+          "id": "camera",
+          "kind": "component",
+          "positionMm": [
+            0,
+            11.5,
+            0.55
+          ],
+          "scope": "PassiveOV7740physicalframe only"
+        }
+      ],
+      "visualMotion": {
+        "buttonA": {
+          "source": "Originalrear98vertexnativeflexure+ownplunger",
+          "travelMm": 0.22
+        },
+        "buttonB": {
+          "source": "Disjointoriginalrear98vertexnativeflexure+ownplunger",
+          "travelMm": 0.22
+        }
+      },
+      "defaults": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整 UnitV-OV7740",
+          "options": {}
+        }
+      ],
+      "configurationSchema": {},
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            11.5,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 9,
+          "purpose": "Actualglass/diaphragmbacksrealnativeopticbore"
+        },
+        {
+          "origin": [
+            8.2,
+            12.5,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 14,
+          "purpose": "ActualphysicalRGBpipefillsnative2x.8mmhole"
+        },
+        {
+          "origin": [
+            -1,
+            25,
+            -0.65
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 19,
+          "purpose": "ActualemptymicroSDcarrierhasdeeprearwall"
+        }
+      ],
+      "limitations": [
+        "Exact7056originalrestfaces/native24.26051mmwidth/40.00062mm tolerance preserved;onecommontranslation,no borrowedhousing.",
+        "NativeA/Btongueweightsand0.22mmtravelinferred;two independentcontrols onlyownvertices/plungers,originalindex/restnormals preserved.",
+        "Own publicschematicnotavailable;knownK210/16Mflash/OV7740/WS2812only,hiddeninstallationinferred.No invented completePCB/BOM.",
+        "ActualwhiteGrove/USB-C/emptymicroSD/optic/LEDpathhasrealmaterialsupport;noAI/cameraframes/storage/electrical/firmwarebehavior.",
+        "Oneexactofficial-flat-rasterrearPNG,completeunchangedbitmapglyphs.Nophotocrop orvariant/privatevectors.",
+        "Bothentriesneutral/A/AB/Bpressedstatesartworkfalsephysicalinvariancepassed.NoserviceAPI.NoGPU/physicaldevice/productionfitacceptance."
+      ],
+      "nextAction": "ContinueexactUnitcoveragewithmatchingprint;refineconcealedownPCB/opticalinstallationifpopulatedproductionassemblybecomesavailable.",
+      "artwork": {
+        "status": "official-flat-raster",
+        "kind": "official-flat-raster",
+        "originalsDistributed": false,
+        "pngCount": 1,
+        "variants": [
+          "back"
+        ],
+        "sources": "docs/research/unitv-ov7740/artwork.json"
+      }
+    },
+    {
+      "id": "lora-e220-433",
+      "category": "unit",
+      "name": "Unit LoRaE220-433",
+      "sku": "U170-433",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        71.4,
+        8
+      ],
+      "vendorDimensionOrderMm": [
+        71.4,
+        24,
+        8
+      ],
+      "cadEnvelopeMm": [
+        24,
+        64,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        71.40000009536743,
+        8.00000009536743
+      ],
+      "stage": "modeled",
+      "entry": "src/units/lora-e220-433/index.js",
+      "reference": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT_LoraE220(433MHz)/8.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_LoRaE220-433",
+      "research": "docs/research/lora-e220-433/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [
+          "Antenna"
+        ],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/lora-e220-433/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          -20
+        ],
+        [
+          8,
+          -20
+        ]
+      ],
+      "mountingHoleDiameterMm": 4.85,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -31.9,
+            1.4
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "RXD",
+            "TXD"
+          ]
+        },
+        {
+          "id": "sma",
+          "connector": "sma-female",
+          "face": "top",
+          "positionMm": [
+            0,
+            39.4,
+            0
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ],
+          "pins": []
+        }
+      ],
+      "controls": [
+        "m0",
+        "m1"
+      ],
+      "visualAnchors": [],
+      "externalLeds": [],
+      "defaultOptions": {
+        "antenna": false,
+        "m0Position": 0,
+        "m1Position": 0
+      },
+      "configurationSchema": {
+        "antenna": {
+          "type": "boolean",
+          "default": false
+        },
+        "m0Position": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ],
+          "default": 0
+        },
+        "m1Position": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ],
+          "default": 0
+        }
+      },
+      "configurations": [
+        {
+          "id": "socket-00",
+          "name": "Receiving SMA socket / physical sliders 00",
+          "options": {
+            "antenna": false,
+            "m0Position": 0,
+            "m1Position": 0
+          },
+          "ports": [
+            {
+              "id": "grove",
+              "connector": "grove",
+              "face": "bottom",
+              "positionMm": [
+                0,
+                -31.9,
+                1.4
+              ],
+              "outward": [
+                0,
+                -1,
+                0
+              ],
+              "pins": [
+                "GND",
+                "5V",
+                "RXD",
+                "TXD"
+              ]
+            },
+            {
+              "id": "sma",
+              "connector": "sma-female",
+              "face": "top",
+              "positionMm": [
+                0,
+                39.4,
+                0
+              ],
+              "outward": [
+                0,
+                1,
+                0
+              ],
+              "pins": []
+            }
+          ],
+          "controls": [
+            "m0",
+            "m1"
+          ],
+          "anchors": [],
+          "joints": [],
+          "artworkPanels": 3
+        },
+        {
+          "id": "socket-01",
+          "name": "Receiving SMA socket / physical sliders 01",
+          "options": {
+            "antenna": false,
+            "m0Position": 0,
+            "m1Position": 1
+          },
+          "ports": [
+            {
+              "id": "grove",
+              "connector": "grove",
+              "face": "bottom",
+              "positionMm": [
+                0,
+                -31.9,
+                1.4
+              ],
+              "outward": [
+                0,
+                -1,
+                0
+              ],
+              "pins": [
+                "GND",
+                "5V",
+                "RXD",
+                "TXD"
+              ]
+            },
+            {
+              "id": "sma",
+              "connector": "sma-female",
+              "face": "top",
+              "positionMm": [
+                0,
+                39.4,
+                0
+              ],
+              "outward": [
+                0,
+                1,
+                0
+              ],
+              "pins": []
+            }
+          ],
+          "controls": [
+            "m0",
+            "m1"
+          ],
+          "anchors": [],
+          "joints": [],
+          "artworkPanels": 3
+        },
+        {
+          "id": "socket-10",
+          "name": "Receiving SMA socket / physical sliders 10",
+          "options": {
+            "antenna": false,
+            "m0Position": 1,
+            "m1Position": 0
+          },
+          "ports": [
+            {
+              "id": "grove",
+              "connector": "grove",
+              "face": "bottom",
+              "positionMm": [
+                0,
+                -31.9,
+                1.4
+              ],
+              "outward": [
+                0,
+                -1,
+                0
+              ],
+              "pins": [
+                "GND",
+                "5V",
+                "RXD",
+                "TXD"
+              ]
+            },
+            {
+              "id": "sma",
+              "connector": "sma-female",
+              "face": "top",
+              "positionMm": [
+                0,
+                39.4,
+                0
+              ],
+              "outward": [
+                0,
+                1,
+                0
+              ],
+              "pins": []
+            }
+          ],
+          "controls": [
+            "m0",
+            "m1"
+          ],
+          "anchors": [],
+          "joints": [],
+          "artworkPanels": 3
+        },
+        {
+          "id": "socket-11",
+          "name": "Receiving SMA socket / physical sliders 11",
+          "options": {
+            "antenna": false,
+            "m0Position": 1,
+            "m1Position": 1
+          },
+          "ports": [
+            {
+              "id": "grove",
+              "connector": "grove",
+              "face": "bottom",
+              "positionMm": [
+                0,
+                -31.9,
+                1.4
+              ],
+              "outward": [
+                0,
+                -1,
+                0
+              ],
+              "pins": [
+                "GND",
+                "5V",
+                "RXD",
+                "TXD"
+              ]
+            },
+            {
+              "id": "sma",
+              "connector": "sma-female",
+              "face": "top",
+              "positionMm": [
+                0,
+                39.4,
+                0
+              ],
+              "outward": [
+                0,
+                1,
+                0
+              ],
+              "pins": []
+            }
+          ],
+          "controls": [
+            "m0",
+            "m1"
+          ],
+          "anchors": [],
+          "joints": [],
+          "artworkPanels": 3
+        },
+        {
+          "id": "with-antenna-00",
+          "name": "Supplied static folded antenna / physical sliders 00",
+          "options": {
+            "antenna": true,
+            "m0Position": 0,
+            "m1Position": 0
+          },
+          "ports": [
+            {
+              "id": "grove",
+              "connector": "grove",
+              "face": "bottom",
+              "positionMm": [
+                0,
+                -31.9,
+                1.4
+              ],
+              "outward": [
+                0,
+                -1,
+                0
+              ],
+              "pins": [
+                "GND",
+                "5V",
+                "RXD",
+                "TXD"
+              ]
+            },
+            {
+              "id": "sma",
+              "connector": "sma-female",
+              "face": "top",
+              "positionMm": [
+                0,
+                39.4,
+                0
+              ],
+              "outward": [
+                0,
+                1,
+                0
+              ],
+              "pins": []
+            }
+          ],
+          "controls": [
+            "m0",
+            "m1"
+          ],
+          "anchors": [],
+          "joints": [],
+          "artworkPanels": 3
+        },
+        {
+          "id": "with-antenna-01",
+          "name": "Supplied static folded antenna / physical sliders 01",
+          "options": {
+            "antenna": true,
+            "m0Position": 0,
+            "m1Position": 1
+          },
+          "ports": [
+            {
+              "id": "grove",
+              "connector": "grove",
+              "face": "bottom",
+              "positionMm": [
+                0,
+                -31.9,
+                1.4
+              ],
+              "outward": [
+                0,
+                -1,
+                0
+              ],
+              "pins": [
+                "GND",
+                "5V",
+                "RXD",
+                "TXD"
+              ]
+            },
+            {
+              "id": "sma",
+              "connector": "sma-female",
+              "face": "top",
+              "positionMm": [
+                0,
+                39.4,
+                0
+              ],
+              "outward": [
+                0,
+                1,
+                0
+              ],
+              "pins": []
+            }
+          ],
+          "controls": [
+            "m0",
+            "m1"
+          ],
+          "anchors": [],
+          "joints": [],
+          "artworkPanels": 3
+        },
+        {
+          "id": "with-antenna-10",
+          "name": "Supplied static folded antenna / physical sliders 10",
+          "options": {
+            "antenna": true,
+            "m0Position": 1,
+            "m1Position": 0
+          },
+          "ports": [
+            {
+              "id": "grove",
+              "connector": "grove",
+              "face": "bottom",
+              "positionMm": [
+                0,
+                -31.9,
+                1.4
+              ],
+              "outward": [
+                0,
+                -1,
+                0
+              ],
+              "pins": [
+                "GND",
+                "5V",
+                "RXD",
+                "TXD"
+              ]
+            },
+            {
+              "id": "sma",
+              "connector": "sma-female",
+              "face": "top",
+              "positionMm": [
+                0,
+                39.4,
+                0
+              ],
+              "outward": [
+                0,
+                1,
+                0
+              ],
+              "pins": []
+            }
+          ],
+          "controls": [
+            "m0",
+            "m1"
+          ],
+          "anchors": [],
+          "joints": [],
+          "artworkPanels": 3
+        },
+        {
+          "id": "with-antenna-11",
+          "name": "Supplied static folded antenna / physical sliders 11",
+          "options": {
+            "antenna": true,
+            "m0Position": 1,
+            "m1Position": 1
+          },
+          "ports": [
+            {
+              "id": "grove",
+              "connector": "grove",
+              "face": "bottom",
+              "positionMm": [
+                0,
+                -31.9,
+                1.4
+              ],
+              "outward": [
+                0,
+                -1,
+                0
+              ],
+              "pins": [
+                "GND",
+                "5V",
+                "RXD",
+                "TXD"
+              ]
+            },
+            {
+              "id": "sma",
+              "connector": "sma-female",
+              "face": "top",
+              "positionMm": [
+                0,
+                39.4,
+                0
+              ],
+              "outward": [
+                0,
+                1,
+                0
+              ],
+              "pins": []
+            }
+          ],
+          "controls": [
+            "m0",
+            "m1"
+          ],
+          "anchors": [],
+          "joints": [],
+          "artworkPanels": 3
+        }
+      ],
+      "accessories": [
+        {
+          "id": "antenna",
+          "exportName": "Antenna",
+          "connector": "sma-female",
+          "physicalConnector": "sma-male",
+          "port": "sma",
+          "defaultInstalled": false,
+          "static": true,
+          "joints": []
+        }
+      ],
+      "visualMotion": {
+        "m0": {
+          "kind": "button",
+          "latching": true,
+          "stablePositions": [
+            0,
+            1
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "travelMm": 1.1,
+          "travelInferred": true,
+          "pointerAccessible": true,
+          "fixedCollection": "lora433Assembly.controls.fixed",
+          "fixedCollectionLength": 6,
+          "movingMeshCountPerCap": 1,
+          "commands": [
+            {
+              "type": "button",
+              "target": "m0",
+              "action": "press",
+              "source": "external"
+            },
+            {
+              "type": "button",
+              "target": "m0",
+              "action": "release",
+              "source": "external"
+            },
+            {
+              "type": "button",
+              "target": "m0",
+              "action": "cancel",
+              "source": "external"
+            },
+            {
+              "type": "button",
+              "target": "m0",
+              "action": "position",
+              "position": 1,
+              "immediate": true
+            }
+          ],
+          "inputEvents": [
+            "down",
+            "up",
+            "click"
+          ],
+          "cancelledUp": {
+            "action": "up",
+            "cancelled": true
+          },
+          "multipleSources": "First press flips detent once;partial release stays held;cancel and final release preserve selected detent and suppress click",
+          "externalPositionNoEcho": true,
+          "noElectricalModeMapping": true
+        },
+        "m1": {
+          "kind": "button",
+          "latching": true,
+          "stablePositions": [
+            0,
+            1
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "travelMm": 1.1,
+          "travelInferred": true,
+          "pointerAccessible": true,
+          "fixedCollection": "lora433Assembly.controls.fixed",
+          "fixedCollectionLength": 6,
+          "movingMeshCountPerCap": 1,
+          "commands": [
+            {
+              "type": "button",
+              "target": "m0",
+              "action": "press",
+              "source": "external"
+            },
+            {
+              "type": "button",
+              "target": "m0",
+              "action": "release",
+              "source": "external"
+            },
+            {
+              "type": "button",
+              "target": "m0",
+              "action": "cancel",
+              "source": "external"
+            },
+            {
+              "type": "button",
+              "target": "m0",
+              "action": "position",
+              "position": 1,
+              "immediate": true
+            }
+          ],
+          "inputEvents": [
+            "down",
+            "up",
+            "click"
+          ],
+          "cancelledUp": {
+            "action": "up",
+            "cancelled": true
+          },
+          "multipleSources": "First press flips detent once;partial release stays held;cancel and final release preserve selected detent and suppress click",
+          "externalPositionNoEcho": true,
+          "noElectricalModeMapping": true
+        }
+      },
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            -45,
+            1.4
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 22,
+          "purpose": "Actual Grove deep dielectric backing"
+        },
+        {
+          "origin": [
+            -4.15,
+            16.1,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 12,
+          "purpose": "Actual DIP body backs real front cutout"
+        },
+        {
+          "origin": [
+            0,
+            28,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 12,
+          "purpose": "Actual captured gold SMA hex behind native front/rear window"
+        },
+        {
+          "origin": [
+            0,
+            28,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 12,
+          "purpose": "Actual captured gold SMA hex behind native front/rear window"
+        },
+        {
+          "origin": [
+            0,
+            -20,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 12,
+          "purpose": "Actual lower fixed rear hex blind floor"
+        }
+      ],
+      "artwork": {
+        "status": "reference-redraw",
+        "kind": "reference-redraw",
+        "pngCount": 3,
+        "bodyPanels": 2,
+        "dipMarkingPanels": 1,
+        "variants": [
+          "front",
+          "back",
+          "dip"
+        ],
+        "originalsDistributed": false,
+        "sources": "docs/research/lora-e220-433/artwork.json"
+      },
+      "limitations": [
+        "Hidden carrier/module/LLCC68 envelope and installation/contact dimensions",
+        "Internal coax physical route is inferred,not an asserted electrical net or routing drawing",
+        "SMA bore/thread/coupling/centre-pin dimensions and fit",
+        "Supplied antenna110mm nominal total versus inferred bent visual allocation;own hero has no reliable hinge-axis datum,so no joint",
+        "DIP package/retainer/thumb/1.1mm throw and support installation",
+        "Film die-cut,size,font/spacing/color/registration and three rear fixing installation poses",
+        "No guessed antenna hinge,no RF/UART/mode/electrical orfirmware behavior.",
+        "Necessary scoped smoke only;noGPU/browser/physical/production-fit acceptance."
+      ],
+      "nextAction": "Continue exact Unit expansion with corresponding own artwork.",
+      "export": "Model"
+    },
+    {
+      "id": "8servos2-i2c",
+      "category": "unit",
+      "name": "Unit 8Servos2-I2C",
+      "sku": "U222",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        56,
+        11.5
+      ],
+      "vendorDimensionOrderMm": [
+        56,
+        24,
+        11.5
+      ],
+      "visualEnvelopeMm": [
+        24.000000047683717,
+        56.00000004768371,
+        11.499999999105931
+      ],
+      "sourceRoute": "own-dimensioned-parametric-no-CAD",
+      "stage": "modeled",
+      "entry": "src/units/8servos2-i2c/index.js",
+      "export": "Model",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_8Servos2-I2C",
+      "reference": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1281/U222_Unit_8Servos2-I2C_main_pictures_06.jpg",
+      "research": "docs/research/8servos2-i2c/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/8servos2-i2c/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          -16
+        ],
+        [
+          8,
+          -16
+        ]
+      ],
+      "mountingHoleDiameterMm": 4.85,
+      "ports": [
+        {
+          "id": "grove",
+          "label": "PORT.A · I2C documentary",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -27.95,
+            0.1
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SDA",
+            "SCL"
+          ]
+        },
+        {
+          "id": "grove-b",
+          "label": "PORT.B · I2C documentary",
+          "connector": "grove",
+          "face": "top",
+          "positionMm": [
+            0,
+            27.95,
+            0.1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SDA",
+            "SCL"
+          ]
+        },
+        {
+          "id": "dc",
+          "label": "DC5.5×2.1 mechanical",
+          "connector": "dc-5.5x2.1",
+          "face": "right",
+          "positionMm": [
+            11.98,
+            -7.19,
+            -0.45
+          ],
+          "outward": [
+            1,
+            0,
+            0
+          ],
+          "pins": [
+            "center",
+            "sleeve"
+          ]
+        },
+        {
+          "id": "ch0",
+          "label": "CH0 · documentary G/V/S",
+          "connector": "servo-2.54-3",
+          "face": "front",
+          "positionMm": [
+            6,
+            9.37,
+            5.75
+          ],
+          "outward": [
+            0,
+            0,
+            1
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SIG"
+          ]
+        },
+        {
+          "id": "ch1",
+          "label": "CH1 · documentary G/V/S",
+          "connector": "servo-2.54-3",
+          "face": "front",
+          "positionMm": [
+            6,
+            6.83,
+            5.75
+          ],
+          "outward": [
+            0,
+            0,
+            1
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SIG"
+          ]
+        },
+        {
+          "id": "ch2",
+          "label": "CH2 · documentary G/V/S",
+          "connector": "servo-2.54-3",
+          "face": "front",
+          "positionMm": [
+            6,
+            3.77,
+            5.75
+          ],
+          "outward": [
+            0,
+            0,
+            1
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SIG"
+          ]
+        },
+        {
+          "id": "ch3",
+          "label": "CH3 · documentary G/V/S",
+          "connector": "servo-2.54-3",
+          "face": "front",
+          "positionMm": [
+            6,
+            1.23,
+            5.75
+          ],
+          "outward": [
+            0,
+            0,
+            1
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SIG"
+          ]
+        },
+        {
+          "id": "ch4",
+          "label": "CH4 · documentary G/V/S",
+          "connector": "servo-2.54-3",
+          "face": "front",
+          "positionMm": [
+            6,
+            -1.83,
+            5.75
+          ],
+          "outward": [
+            0,
+            0,
+            1
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SIG"
+          ]
+        },
+        {
+          "id": "ch5",
+          "label": "CH5 · documentary G/V/S",
+          "connector": "servo-2.54-3",
+          "face": "front",
+          "positionMm": [
+            6,
+            -4.37,
+            5.75
+          ],
+          "outward": [
+            0,
+            0,
+            1
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SIG"
+          ]
+        },
+        {
+          "id": "ch6",
+          "label": "CH6 · documentary G/V/S",
+          "connector": "servo-2.54-3",
+          "face": "front",
+          "positionMm": [
+            6,
+            -7.43,
+            5.75
+          ],
+          "outward": [
+            0,
+            0,
+            1
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SIG"
+          ]
+        },
+        {
+          "id": "ch7",
+          "label": "CH7 · documentary G/V/S",
+          "connector": "servo-2.54-3",
+          "face": "front",
+          "positionMm": [
+            6,
+            -9.97,
+            5.75
+          ],
+          "outward": [
+            0,
+            0,
+            1
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SIG"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "id": "selector",
+          "kind": "rotary-selector",
+          "label": "SKAR-16 · physical16detents",
+          "positionMm": [
+            6,
+            14.3,
+            4.45
+          ],
+          "positions": 16,
+          "initialPosition": 0,
+          "movingProperty": "eightServos2Assembly.rotary.rotor",
+          "scope": "Physicalstable detentonly,noaddressalgorithm orservofunction."
+        }
+      ],
+      "externalLeds": [],
+      "visualAnchors": [],
+      "serviceVisualAnchors": [],
+      "visualMotion": {
+        "selector": {
+          "kind": "rotary-selector",
+          "positions": 16,
+          "stepDegrees": 22.5,
+          "clockwisePositive": true
+        }
+      },
+      "defaults": {
+        "selectorPosition": 0
+      },
+      "configurations": [
+        {
+          "id": "position-0",
+          "name": "Selector position 0",
+          "options": {
+            "selectorPosition": 0
+          }
+        },
+        {
+          "id": "position-f",
+          "name": "Selector position F",
+          "options": {
+            "selectorPosition": 15
+          }
+        }
+      ],
+      "configurationSchema": {
+        "selectorPosition": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 15,
+          "default": 0
+        }
+      },
+      "closureChecks": [
+        {
+          "origin": [
+            11.98,
+            -5.49,
+            -0.45
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "maxDistance": 8,
+          "purpose": "ActualDCannularcavity recessedphysicalbacking"
+        },
+        {
+          "origin": [
+            0,
+            -31,
+            0.3
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 12,
+          "purpose": "ActualbottomGrove recesseddielectricbacking"
+        },
+        {
+          "origin": [
+            0,
+            31,
+            0.3
+          ],
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "maxDistance": 12,
+          "purpose": "ActualtopGrove recesseddielectricbacking"
+        }
+      ],
+      "limitations": [
+        "Own dimensional parametric route;no native CAD face claim or borrowed U165 assembly.",
+        "Hiddenwall/snap/PCB/connectorinstallation andpackages/envelopes inferred;notproductionplacement/fullBOM/manufacturingfit.",
+        "No resolved external LED lightpath;nonemissive internalcarriersonly.",
+        "Stable physicaldetents only;noI2Caddress/PWM/power/electrical/servo behavior.",
+        "ThreeordinaryPNGs;privateoriginals/mapping/generators excluded.",
+        "Necessarylocalchecks;visualnull."
+      ],
+      "nextAction": "ContinueUnitexpansionwithmatchinglabels;refineexactinstallationwhenU222assemblyCADbecomespublic.",
+      "artwork": {
+        "status": "source-vector-raster-and-official-photo-code-redraw",
+        "kind": "source-vector-raster-and-official-photo-code-redraw",
+        "pngCount": 3,
+        "sourceVectorRasterPngs": 2,
+        "officialPhotoCodeRedrawPngs": 1,
+        "variants": [
+          "front",
+          "back",
+          "selector-scale"
+        ],
+        "originalsDistributed": false,
+        "sources": "docs/research/8servos2-i2c/artwork.json"
+      }
+    },
+    {
+      "id": "catm",
+      "category": "unit",
+      "name": "Unit CatM",
+      "sku": "U128",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        72,
+        8
+      ],
+      "vendorDimensionOrderMm": [
+        72,
+        24,
+        8
+      ],
+      "cadEnvelopeMm": [
+        24,
+        64,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        72,
+        8.00000009536743
+      ],
+      "stage": "modeled",
+      "entry": "src/units/catm/index.js",
+      "export": "Model",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/cat_m/cat_m_08.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_CatM",
+      "research": "docs/research/catm/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [
+          "Antenna"
+        ],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/catm/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          -20
+        ],
+        [
+          8,
+          -20
+        ]
+      ],
+      "mountingHoleDiameterMm": 4.85,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -31.9,
+            1.4
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "RXD",
+            "TXD"
+          ]
+        },
+        {
+          "id": "sma",
+          "connector": "sma-female",
+          "physicalConnector": "sma-female",
+          "face": "top",
+          "positionMm": [
+            0,
+            40,
+            0
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ],
+          "pins": []
+        }
+      ],
+      "controls": [],
+      "visualAnchors": [],
+      "externalLeds": [],
+      "defaultOptions": {
+        "antenna": false
+      },
+      "configurationSchema": {
+        "antenna": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "Complete unit / receiving SMA socket",
+          "options": {
+            "antenna": false
+          }
+        },
+        {
+          "id": "with-antenna",
+          "name": "Supplied static straight antenna",
+          "options": {
+            "antenna": true
+          }
+        }
+      ],
+      "accessories": [
+        {
+          "id": "antenna",
+          "exportName": "Antenna",
+          "connector": "sma-female",
+          "physicalConnector": "sma-male",
+          "port": "sma",
+          "defaultInstalled": false,
+          "static": true,
+          "joints": []
+        }
+      ],
+      "visualMotion": {},
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            -45,
+            1.4
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 22,
+          "purpose": "Grove actual deep dielectric backing"
+        },
+        {
+          "origin": [
+            0,
+            28,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 12,
+          "purpose": "Own captured gold SMA hex behind true native window"
+        },
+        {
+          "origin": [
+            0,
+            28,
+            15
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 12,
+          "purpose": "Own captured gold SMA hex behind true native window"
+        },
+        {
+          "origin": [
+            0,
+            -20,
+            -15
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "maxDistance": 12,
+          "purpose": "Fixed rear retaining screw has blind recess floor"
+        }
+      ],
+      "artwork": {
+        "status": "source-vector-raster",
+        "kind": "source-vector-raster",
+        "pngCount": 2,
+        "bodyPanels": 2,
+        "variants": [
+          "front",
+          "back"
+        ],
+        "originalsDistributed": false,
+        "sources": "docs/research/catm/artwork.json"
+      },
+      "limitations": [
+        "Hidden carrier PCB outline/installation and secondary package dimensions/placement are inferred from this own populated-board photograph,not a manufacturing assembly or completeBOM.",
+        "SIM7080G package footprint follows documented17.6×15.7mm envelope;concealed NanoSIM six-contact floor/shield/spring details are appearance reconstruction.No supplied card or external SIM socket is exposed.",
+        "Ordinary SMA bulkhead bore/thread/coax/coupling/contact dimensions and fit are inferred;all are real closed material surfaces,not a certified connector model.",
+        "Supplied straight antenna111mm/9.4mm appearance estimates and internal pin/support allocation are inferred from this own photograph,no measured antenna drawing/hinge axis/stop/RF acceptance.",
+        "Film outline dimensions/thickness and registration in the native recesses are inferred;source vector letterforms/design retained asraster,newer own source rear design includescertification panel absent fromolder official photo.",
+        "No exterior LED light path was proved;actual concealed0603 NETLIGHT package remains nonemissive.No mechanical control,joint,service configuration,cellular/UART/AT/network/electrical/firmware behavior.",
+        "Scoped geometry/API smoke and final raster opening only;noGPU/browser/physical/production-fit acceptance."
+      ],
+      "nextAction": "Continue exact Unit expansion together with corresponding own artwork."
+    },
+    {
+      "id": "neohex",
+      "category": "unit",
+      "name": "Unit NeoHEX",
+      "sku": "A045-B",
+      "scope": "visual-only",
+      "nominalMm": [
+        36,
+        36,
+        9.6
+      ],
+      "vendorDimensionOrderMm": [
+        36,
+        36,
+        9.6
+      ],
+      "cadEnvelopeMm": null,
+      "visualEnvelopeMm": [
+        35.79571533203125,
+        40,
+        9.8499999165535
+      ],
+      "bareEnvelopeMm": [
+        35.79571533203125,
+        40,
+        9.549999916553498
+      ],
+      "stage": "modeled",
+      "entry": "src/units/neohex/index.js",
+      "export": "Model",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/neohex/neohex_06.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_NeoHEX",
+      "research": "docs/research/neohex/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [
+          "Diffuser"
+        ],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/neohex/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          15.588457268119896,
+          8.999999999999998
+        ],
+        [
+          1.102182119232618e-15,
+          18
+        ],
+        [
+          -15.588457268119896,
+          8.999999999999998
+        ],
+        [
+          -15.588457268119894,
+          -9.000000000000002
+        ],
+        [
+          -3.3065463576978533e-15,
+          -18
+        ],
+        [
+          15.58845726811989,
+          -9.000000000000007
+        ]
+      ],
+      "mountingHoleDiameterMm": 2,
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "right",
+          "positionMm": [
+            10.8,
+            0,
+            -3.05
+          ],
+          "outward": [
+            1,
+            0,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "S-IN",
+            "NC"
+          ],
+          "physicalRole": "input"
+        },
+        {
+          "id": "out",
+          "connector": "grove",
+          "face": "left",
+          "positionMm": [
+            -10.8,
+            0,
+            -3.05
+          ],
+          "outward": [
+            -1,
+            0,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "S-OUT",
+            "NC"
+          ],
+          "physicalRole": "output"
+        },
+        {
+          "id": "grove-in",
+          "connector": "grove",
+          "face": "back",
+          "positionMm": [
+            0,
+            -8.2,
+            -8.2
+          ],
+          "outward": [
+            0,
+            0,
+            -1
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "S-IN",
+            "NC"
+          ],
+          "physicalRole": "input"
+        },
+        {
+          "id": "diffuser",
+          "connector": "m5.neohex.diffuser",
+          "face": "front",
+          "positionMm": [
+            0,
+            0,
+            1.35
+          ],
+          "outward": [
+            0,
+            0,
+            1
+          ],
+          "pins": [],
+          "physicalRole": "removable-sheet-placement"
+        }
+      ],
+      "controls": [],
+      "visualAnchors": [],
+      "externalLeds": [
+        {
+          "id": "led-1",
+          "kind": "led",
+          "reference": "U1",
+          "positionMm": [
+            -7.3500000000000005,
+            12.75,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-2",
+          "kind": "led",
+          "reference": "U2",
+          "positionMm": [
+            -2.45,
+            12.75,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-3",
+          "kind": "led",
+          "reference": "U3",
+          "positionMm": [
+            2.45,
+            12.75,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-4",
+          "kind": "led",
+          "reference": "U4",
+          "positionMm": [
+            7.3500000000000005,
+            12.75,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-5",
+          "kind": "led",
+          "reference": "U5",
+          "positionMm": [
+            -9.8,
+            8.5,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-6",
+          "kind": "led",
+          "reference": "U6",
+          "positionMm": [
+            -4.9,
+            8.5,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-7",
+          "kind": "led",
+          "reference": "U7",
+          "positionMm": [
+            0,
+            8.5,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-8",
+          "kind": "led",
+          "reference": "U8",
+          "positionMm": [
+            4.9,
+            8.5,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-9",
+          "kind": "led",
+          "reference": "U9",
+          "positionMm": [
+            9.8,
+            8.5,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-10",
+          "kind": "led",
+          "reference": "U10",
+          "positionMm": [
+            -12.25,
+            4.25,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-11",
+          "kind": "led",
+          "reference": "U11",
+          "positionMm": [
+            -7.3500000000000005,
+            4.25,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-12",
+          "kind": "led",
+          "reference": "U12",
+          "positionMm": [
+            -2.45,
+            4.25,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-13",
+          "kind": "led",
+          "reference": "U13",
+          "positionMm": [
+            2.45,
+            4.25,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-14",
+          "kind": "led",
+          "reference": "U14",
+          "positionMm": [
+            7.3500000000000005,
+            4.25,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-15",
+          "kind": "led",
+          "reference": "U15",
+          "positionMm": [
+            12.25,
+            4.25,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-16",
+          "kind": "led",
+          "reference": "U16",
+          "positionMm": [
+            -14.700000000000001,
+            0,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-17",
+          "kind": "led",
+          "reference": "U17",
+          "positionMm": [
+            -9.8,
+            0,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-18",
+          "kind": "led",
+          "reference": "U18",
+          "positionMm": [
+            -4.9,
+            0,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-19",
+          "kind": "led",
+          "reference": "U19",
+          "positionMm": [
+            0,
+            0,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-20",
+          "kind": "led",
+          "reference": "U20",
+          "positionMm": [
+            4.9,
+            0,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-21",
+          "kind": "led",
+          "reference": "U21",
+          "positionMm": [
+            9.8,
+            0,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-22",
+          "kind": "led",
+          "reference": "U22",
+          "positionMm": [
+            14.700000000000001,
+            0,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-23",
+          "kind": "led",
+          "reference": "U23",
+          "positionMm": [
+            -12.25,
+            -4.25,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-24",
+          "kind": "led",
+          "reference": "U24",
+          "positionMm": [
+            -7.3500000000000005,
+            -4.25,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-25",
+          "kind": "led",
+          "reference": "U25",
+          "positionMm": [
+            -2.45,
+            -4.25,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-26",
+          "kind": "led",
+          "reference": "U26",
+          "positionMm": [
+            2.45,
+            -4.25,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-27",
+          "kind": "led",
+          "reference": "U27",
+          "positionMm": [
+            7.3500000000000005,
+            -4.25,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-28",
+          "kind": "led",
+          "reference": "U28",
+          "positionMm": [
+            12.25,
+            -4.25,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-29",
+          "kind": "led",
+          "reference": "U29",
+          "positionMm": [
+            -9.8,
+            -8.5,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-30",
+          "kind": "led",
+          "reference": "U30",
+          "positionMm": [
+            -4.9,
+            -8.5,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-31",
+          "kind": "led",
+          "reference": "U31",
+          "positionMm": [
+            0,
+            -8.5,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-32",
+          "kind": "led",
+          "reference": "U32",
+          "positionMm": [
+            4.9,
+            -8.5,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-33",
+          "kind": "led",
+          "reference": "U33",
+          "positionMm": [
+            9.8,
+            -8.5,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-34",
+          "kind": "led",
+          "reference": "U34",
+          "positionMm": [
+            -7.3500000000000005,
+            -12.75,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-35",
+          "kind": "led",
+          "reference": "U35",
+          "positionMm": [
+            -2.45,
+            -12.75,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-36",
+          "kind": "led",
+          "reference": "U36",
+          "positionMm": [
+            2.45,
+            -12.75,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        },
+        {
+          "id": "led-37",
+          "kind": "led",
+          "reference": "U37",
+          "positionMm": [
+            7.3500000000000005,
+            -12.75,
+            1.175
+          ],
+          "scope": "Ordinary independent externalon/color/brightness;noautomatic serial address orcascade"
+        }
+      ],
+      "defaults": {
+        "diffuser": true
+      },
+      "defaultOptions": {
+        "diffuser": true
+      },
+      "configurationSchema": {
+        "diffuser": {
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "configurations": [
+        {
+          "id": "with-diffuser",
+          "name": "完整灯板与均光片",
+          "options": {
+            "diffuser": true
+          }
+        },
+        {
+          "id": "bare-board",
+          "name": "移去独立均光片",
+          "options": {
+            "diffuser": false
+          }
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "physicalFilms": 0,
+        "source": "docs/research/neohex/artwork.json"
+      },
+      "nextAction": "Necessary root integration/threebranch fixture,actual PNG build-emission/private sync and preview checks;not GPU or production fit verification."
+    },
+    {
+      "id": "env-iv",
+      "category": "unit",
+      "name": "Unit ENV-IV",
+      "sku": "U001-D",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        32,
+        8
+      ],
+      "vendorDimensionOrderMm": [
+        32,
+        24,
+        8
+      ],
+      "caseEnvelopeMm": [
+        24,
+        32,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        32,
+        8.04
+      ],
+      "sourceRoute": "own-dimensioned-parametric-no-CAD",
+      "stage": "modeled",
+      "entry": "src/units/env-iv/index.js",
+      "export": "Model",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_ENV-IV",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/ENV%E2%85%A3%20Unit/img-c6f8993b-8df1-4327-aad8-44128f8ecace.webp",
+      "research": "docs/research/env-iv/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/env-iv/smoke.json",
+        "visual": null
+      },
+      "mountingHolesMm": [
+        [
+          -8,
+          -4
+        ],
+        [
+          8,
+          -4
+        ]
+      ],
+      "mountingHoleDiameterMm": 5,
+      "ports": [
+        {
+          "id": "grove",
+          "label": "PORT.A · documentary I2C",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -15.95,
+            1.3
+          ],
+          "outward": [
+            0,
+            -1,
+            0
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "SDA",
+            "SCL"
+          ]
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "visualAnchors": [
+        {
+          "id": "sht40",
+          "label": "SHT40-AD1B passive physical package",
+          "positionMm": [
+            0,
+            8.5,
+            -0.66
+          ],
+          "scope": "Physicalpackageframe only;noenvironmentalreadings."
+        },
+        {
+          "id": "bmp280",
+          "label": "BMP280 passive physical package",
+          "positionMm": [
+            7.3,
+            1,
+            -0.25
+          ],
+          "scope": "Physicalpackageframe only;noenvironmentalreadings."
+        }
+      ],
+      "serviceVisualAnchors": [],
+      "visualMotion": {},
+      "defaults": {
+        "rearCover": true
+      },
+      "configurations": [
+        {
+          "id": "closed",
+          "name": "Complete ENV-IV body",
+          "options": {
+            "rearCover": true
+          }
+        },
+        {
+          "id": "rear-service",
+          "name": "Rear cover removed",
+          "options": {
+            "rearCover": false
+          }
+        }
+      ],
+      "configurationSchema": {
+        "rearCover": {
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "closureChecks": [
+        {
+          "origin": [
+            0,
+            8.5,
+            7
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "maxDistance": 9,
+          "purpose": "Actualmaterialbacking beneath truefrontvent/SHT40island"
+        },
+        {
+          "origin": [
+            0,
+            -20,
+            1.5
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "maxDistance": 13,
+          "purpose": "ActualGrove recessedphysicaldielectricbacking"
+        }
+      ],
+      "limitations": [
+        "Own dimensional parametric route;no native CAD face count or ENV-III case borrow.",
+        "Hiddenwall/snaps/PCBinstallation andfinevent/thermalcut/package/connector/fixingdetails inferred;notproductionplacement/manufacturingfit.",
+        "SHT40/BMP280 passive physicalframes only;noenvironmental/address/electrical/firmware state.",
+        "RearCover:false removesonly35ownrear/film/M5/fixingmaterials;allretainedgeometryunchanged.",
+        "OnefinalsourcevectorrasterPNG;privateoriginals/generators/mappings excluded.",
+        "Necessarylocalchecks only;visualnull."
+      ],
+      "nextAction": "ContinueUnitexpansionwithmatchinglabels;refineexactU001-Dinstallationwhenofficialassemblymaterialbecomespublic.",
+      "artwork": {
+        "status": "source-vector-raster",
+        "kind": "source-vector-raster",
+        "pngCount": 1,
+        "variants": [
+          "back"
+        ],
+        "originalsDistributed": false,
+        "sources": "docs/research/env-iv/artwork.json"
+      }
     }
   ],
   "artworkPolicy": "Only reviewed raster stickers are distributed. CSV, private source mappings, vector originals and vector intermediates remain outside the repository. Photographic sticker crops remain disabled. Official physical adhesive films may span factory recesses; artwork must not substitute for missing assembly geometry."

@@ -154,3 +154,15 @@ export {Model as PoECamWV11Unit,GroveModule as PoECamWV11UnitModule,Stand as PoE
 export {Model as Nbiot2Unit,GroveModule as Nbiot2UnitModule,Antenna as Nbiot2Antenna} from './units/nbiot2/index.js';
 export {Model as NbiotCnUnit,GroveModule as NbiotCnUnitModule,Antenna as NbiotCnAntenna} from './units/nbiot-cn/index.js';
 export {Model as MiniProtoUnit,GroveModule as MiniProtoUnitModule} from './units/mini-proto/index.js';
+export {Model as HbridgeUnit,GroveModule as HbridgeUnitModule,TerminalPlug as HbridgeTerminalPlug} from './units/hbridge/index.js';
+export {Model as CatMGnssUnit,GroveModule as CatMGnssUnitModule,LTEAntenna as CatMLteAntenna,GNSSAntenna as CatMGnssAntenna} from './units/catm-gnss/index.js';
+export {Model as UltrasonicIoUnit,GroveModule as UltrasonicIoUnitModule} from './units/ultrasonic-io/index.js';
+export {Model as Dof6Unit,GroveModule as Dof6UnitModule} from './units/dof6/index.js';
+export {Model as Dof9Unit,GroveModule as Dof9UnitModule} from './units/dof9/index.js';
+export {Model as Bmm350Unit,GroveModule as Bmm350UnitModule} from './units/bmm350/index.js';
+export {Model as UnitVOv7740Unit,GroveModule as UnitVOv7740UnitModule} from './units/unitv-ov7740/index.js';
+export {Model as LoraE220433Unit,GroveModule as LoraE220433UnitModule,Antenna as LoraE220433Antenna} from './units/lora-e220-433/index.js';
+export {Model as EightServos2I2CUnit,GroveModule as EightServos2I2CUnitModule} from './units/8servos2-i2c/index.js';
+export {Model as CatMUnit,GroveModule as CatMUnitModule,Antenna as CatMAntenna} from './units/catm/index.js';
+export {Model as NeoHEXUnit,GroveModule as NeoHEXUnitModule,Diffuser as NeoHEXDiffuser} from './units/neohex/index.js';
+export {Model as EnvIVUnit,GroveModule as EnvIVUnitModule} from './units/env-iv/index.js';

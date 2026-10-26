@@ -2,9 +2,9 @@
 
 由 npm run catalog 生成；catalog/products.json 为权威状态。
 
-范围：精细外观建模，行为由下游模拟器负责。主机 14 款，Unit 137 款。
+范围：精细外观建模，行为由下游模拟器负责。主机 14 款，Unit 149 款。
 
-状态计数：{"modeled":151}。modeled 表示已有实现，不表示已完成视觉验收。
+状态计数：{"modeled":163}。modeled 表示已有实现，不表示已完成视觉验收。
 
 | 类别 | 产品 | 阶段 | 名义尺寸 X × Y × Z / mm | 下一步 |
 | --- | --- | --- | --- | --- |
@@ -159,3 +159,15 @@
 | Unit | Unit NBIoT2 | modeled | 71.5 × 24 × 8 | Continue exact Unit expansion with corresponding artwork;refine own installed PCB/NanoSIM/SMA/D1 optical path and supplied antenna mechanics when authoritative sources arrive. |
 | Unit | Unit NBIoT-CN | modeled | 24 × 71.5 × 8 | ContinueUnitexpansion withmatchinglabels;refineexactU112populatedcarrier/SIMholder/antennamechanics andprintregistration whenproductionassembly/originalsourcesbecomeavailable. |
 | Unit | Unit Mini Proto | modeled | 24 × 32 × 8 | Continue exactUnit expansion withmatchinglabels.RefineU064 bore/PCBplating/seating andmicrolegends when production mechanical/print data isavailable. |
+| Unit | Unit HBridge | modeled | 24 × 56 × 10.2 | Continue exact Unit expansion with corresponding own artwork. |
+| Unit | Unit CatM GNSS | modeled | 40 × 61.6 × 14.8 | ContinueUnitexpansionwithmatchinglabels;refineexactU137populatedassembly/accessorymechanics/printregistrationwhenofficialsourcesavailable. |
+| Unit | Unit Ultrasonic-IO | modeled | 24 × 56 × 15.2 | Continue exactUnit expansion withmatchinglabels;refineU098-B2 internalacoustic/PCB stack andfit when ownpopulatedproductionmechanicaldata isavailable. |
+| Unit | Unit DoF6 | modeled | 24 × 24 × 8 | Continue exact Unit expansion with matching body labels;refine hidden populatedboardfit when ownproductionassembly becomesavailable. |
+| Unit | Unit DoF9 | modeled | 24 × 24 × 8 | Continue exact Unit expansion with own corresponding artwork. |
+| Unit | Unit BMM350 | modeled | 24 × 24 × 8 | ContinueUnitexpansionwithmatchinglabels;refineexactU231populatedcarrier/topslotidentitywhenofficialassemblyavailable. |
+| Unit | UnitV-OV7740 | modeled | 24 × 40 × 12.7 | ContinueexactUnitcoveragewithmatchingprint;refineconcealedownPCB/opticalinstallationifpopulatedproductionassemblybecomesavailable. |
+| Unit | Unit LoRaE220-433 | modeled | 24 × 71.4 × 8 | Continue exact Unit expansion with corresponding own artwork. |
+| Unit | Unit 8Servos2-I2C | modeled | 24 × 56 × 11.5 | ContinueUnitexpansionwithmatchinglabels;refineexactinstallationwhenU222assemblyCADbecomespublic. |
+| Unit | Unit CatM | modeled | 24 × 72 × 8 | Continue exact Unit expansion together with corresponding own artwork. |
+| Unit | Unit NeoHEX | modeled | 36 × 36 × 9.6 | Necessary root integration/threebranch fixture,actual PNG build-emission/private sync and preview checks;not GPU or production fit verification. |
+| Unit | Unit ENV-IV | modeled | 24 × 32 × 8 | ContinueUnitexpansionwithmatchinglabels;refineexactU001-Dinstallationwhenofficialassemblymaterialbecomespublic. |

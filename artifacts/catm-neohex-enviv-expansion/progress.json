@@ -1,0 +1,1272 @@
+{
+  "savedAt": "2026-10-26T19:21:21.951323+00:00",
+  "stage": "modeled",
+  "scope": "Own exact-SKU cellular/37-pixel/temperature-pressure Unit physical assemblies and actual external visual outputs/accessories, corresponding print and real three-branch four-core API fixture/builds; no browser or whole-catalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 149,
+    "modeled": 163,
+    "verified": 0
+  },
+  "localHead": "a8198a58fad2c94550787fcb46426f7a7e6e8b6d",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "catm",
+      "status": "pass",
+      "report": "docs/research/catm/smoke.json",
+      "meshes": 115,
+      "triangles": 62156
+    },
+    {
+      "id": "neohex",
+      "status": "pass",
+      "report": "docs/research/neohex/smoke.json",
+      "meshes": 417,
+      "triangles": 96324
+    },
+    {
+      "id": "env-iv",
+      "status": "pass",
+      "report": "docs/research/env-iv/smoke.json",
+      "meshes": null,
+      "triangles": null
+    }
+  ],
+  "pngCount": 5,
+  "rasters": [
+    {
+      "path": "src/units/catm/artwork/back.png",
+      "pixels": [
+        1600,
+        3587
+      ],
+      "sha256": "ae85572c8f228e459afc455c0197861e690f6c2395a74b2f654371ba51f7843a"
+    },
+    {
+      "path": "src/units/catm/artwork/front.png",
+      "pixels": [
+        1600,
+        3662
+      ],
+      "sha256": "4bda3062fbab648d5074eea04e5120ead2f5b738c302ace2ab17a8b844859ba2"
+    },
+    {
+      "path": "src/units/neohex/artwork/back.png",
+      "pixels": [
+        2400,
+        2400
+      ],
+      "sha256": "187fd2d8183416338557d57ac01f88aaea926b808058d6dd68894a66192a04ea"
+    },
+    {
+      "path": "src/units/neohex/artwork/front.png",
+      "pixels": [
+        2400,
+        2400
+      ],
+      "sha256": "af95a87510acb7bec81522916082acba073f7eb7ddb51e0384b3dc15779cb696"
+    },
+    {
+      "path": "src/units/env-iv/artwork/back.png",
+      "pixels": [
+        1605,
+        1204
+      ],
+      "sha256": "27ffb2b26ab284155b85495d26f4a7dfe028e51ee55764438382f285c3d077f6"
+    }
+  ],
+  "fixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "catm",
+        "body": [
+          "grove",
+          "sma"
+        ],
+        "ports": [
+          "grove",
+          "sma"
+        ],
+        "leds": [],
+        "passive": [],
+        "native": {
+          "nativeFaces": 6592,
+          "ownSingleSourceAssembly": true,
+          "internalNanoSIMContacts": 6,
+          "noSuppliedCard": true,
+          "noExposedSIMPort": true,
+          "noExteriorLED": true
+        }
+      },
+      {
+        "id": "neohex",
+        "body": [
+          "grove",
+          "out",
+          "grove-in",
+          "diffuser",
+          "led-1",
+          "led-2",
+          "led-3",
+          "led-4",
+          "led-5",
+          "led-6",
+          "led-7",
+          "led-8",
+          "led-9",
+          "led-10",
+          "led-11",
+          "led-12",
+          "led-13",
+          "led-14",
+          "led-15",
+          "led-16",
+          "led-17",
+          "led-18",
+          "led-19",
+          "led-20",
+          "led-21",
+          "led-22",
+          "led-23",
+          "led-24",
+          "led-25",
+          "led-26",
+          "led-27",
+          "led-28",
+          "led-29",
+          "led-30",
+          "led-31",
+          "led-32",
+          "led-33",
+          "led-34",
+          "led-35",
+          "led-36",
+          "led-37"
+        ],
+        "ports": [
+          "grove",
+          "out",
+          "grove-in",
+          "diffuser"
+        ],
+        "leds": [
+          "led-1",
+          "led-2",
+          "led-3",
+          "led-4",
+          "led-5",
+          "led-6",
+          "led-7",
+          "led-8",
+          "led-9",
+          "led-10",
+          "led-11",
+          "led-12",
+          "led-13",
+          "led-14",
+          "led-15",
+          "led-16",
+          "led-17",
+          "led-18",
+          "led-19",
+          "led-20",
+          "led-21",
+          "led-22",
+          "led-23",
+          "led-24",
+          "led-25",
+          "led-26",
+          "led-27",
+          "led-28",
+          "led-29",
+          "led-30",
+          "led-31",
+          "led-32",
+          "led-33",
+          "led-34",
+          "led-35",
+          "led-36",
+          "led-37"
+        ],
+        "passive": [],
+        "physicalStructure": {
+          "geometrySource": "own-dimensioned-parametric",
+          "physicalLeds": 37,
+          "rows": [
+            4,
+            5,
+            6,
+            7,
+            6,
+            5,
+            4
+          ],
+          "packageBasesAndLips": 74,
+          "actualTerminations": 148,
+          "capacitors": 13,
+          "mountingBores": 6,
+          "mountingBoreMm": 2,
+          "opposedMountingCentersMm": 36,
+          "sockets": [
+            {
+              "id": "grove",
+              "face": "right",
+              "contacts": 4,
+              "actualMaterialParts": 21
+            },
+            {
+              "id": "out",
+              "face": "left",
+              "contacts": 4,
+              "actualMaterialParts": 21
+            },
+            {
+              "id": "grove-in",
+              "face": "back",
+              "contacts": 4,
+              "actualMaterialParts": 21
+            }
+          ],
+          "physicalAdhesiveFilms": 0,
+          "removableDiffuserInstalled": true,
+          "diffuserInterface": "static placement without invented socket/latch",
+          "bareEnvelopeMm": [
+            35.79571533203125,
+            40,
+            9.549999916553498
+          ],
+          "currentEnvelopeMm": [
+            35.79571533203125,
+            40,
+            9.8499999165535
+          ],
+          "nominalMm": [
+            36,
+            36,
+            9.6
+          ]
+        },
+        "transformedStructure": {
+          "geometrySource": "own-dimensioned-parametric",
+          "physicalLeds": 37,
+          "rows": [
+            4,
+            5,
+            6,
+            7,
+            6,
+            5,
+            4
+          ],
+          "packageBasesAndLips": 74,
+          "actualTerminations": 148,
+          "capacitors": 13,
+          "mountingBores": 6,
+          "mountingBoreMm": 2,
+          "opposedMountingCentersMm": 36,
+          "sockets": [
+            {
+              "id": "grove",
+              "face": "right",
+              "contacts": 4,
+              "actualMaterialParts": 21
+            },
+            {
+              "id": "out",
+              "face": "left",
+              "contacts": 4,
+              "actualMaterialParts": 21
+            },
+            {
+              "id": "grove-in",
+              "face": "back",
+              "contacts": 4,
+              "actualMaterialParts": 21
+            }
+          ],
+          "physicalAdhesiveFilms": 0,
+          "removableDiffuserInstalled": true,
+          "diffuserInterface": "static placement without invented socket/latch",
+          "bareEnvelopeMm": [
+            35.79571533203125,
+            40.00000000000003,
+            9.54999991655351
+          ],
+          "currentEnvelopeMm": [
+            35.79571533203125,
+            40.00000000000003,
+            9.849999916553497
+          ],
+          "nominalMm": [
+            36,
+            36,
+            9.6
+          ]
+        }
+      },
+      {
+        "id": "env-iv",
+        "body": [
+          "grove",
+          "sht40",
+          "bmp280"
+        ],
+        "ports": [
+          "grove"
+        ],
+        "leds": [],
+        "passive": [
+          "sht40",
+          "bmp280"
+        ]
+      }
+    ],
+    "artwork": [
+      {
+        "id": "catm",
+        "panels": 2,
+        "kinds": [
+          "source-vector-raster",
+          "source-vector-raster"
+        ]
+      },
+      {
+        "id": "neohex",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "env-iv",
+        "panels": 1,
+        "kinds": [
+          "source-vector-raster"
+        ]
+      }
+    ],
+    "configurations": [
+      {
+        "id": "catm",
+        "optionCases": 3,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical without ink"
+      },
+      {
+        "id": "neohex",
+        "optionCases": 3,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical without ink"
+      },
+      {
+        "id": "env-iv",
+        "optionCases": 3,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical without ink"
+      }
+    ],
+    "accessories": [
+      {
+        "port": "sma",
+        "connector": "sma-female",
+        "accessory": "m5stack.unit.catm.antenna",
+        "static": true,
+        "detachRetainedPhysical": "identical",
+        "reattach": "same identity and complete physical pose",
+        "wrongFamily": "atomic rejection"
+      },
+      {
+        "port": "diffuser",
+        "connector": "m5.neohex.diffuser",
+        "accessory": "m5stack.unit.neohex.diffuser",
+        "static": true,
+        "detachRetainedPhysical": "identical",
+        "reattach": "same identity and complete physical pose",
+        "wrongFamily": "atomic rejection"
+      },
+      {
+        "port": "sma",
+        "connector": "sma-female",
+        "accessory": "m5stack.unit.catm.antenna",
+        "static": true,
+        "detachRetainedPhysical": "identical",
+        "reattach": "same identity and complete physical pose",
+        "wrongFamily": "atomic rejection"
+      },
+      {
+        "port": "diffuser",
+        "connector": "m5.neohex.diffuser",
+        "accessory": "m5stack.unit.neohex.diffuser",
+        "static": true,
+        "detachRetainedPhysical": "identical",
+        "reattach": "same identity and complete physical pose",
+        "wrongFamily": "atomic rejection"
+      }
+    ],
+    "outputs": [
+      {
+        "count": 37,
+        "ids": [
+          "led-1",
+          "led-2",
+          "led-3",
+          "led-4",
+          "led-5",
+          "led-6",
+          "led-7",
+          "led-8",
+          "led-9",
+          "led-10",
+          "led-11",
+          "led-12",
+          "led-13",
+          "led-14",
+          "led-15",
+          "led-16",
+          "led-17",
+          "led-18",
+          "led-19",
+          "led-20",
+          "led-21",
+          "led-22",
+          "led-23",
+          "led-24",
+          "led-25",
+          "led-26",
+          "led-27",
+          "led-28",
+          "led-29",
+          "led-30",
+          "led-31",
+          "led-32",
+          "led-33",
+          "led-34",
+          "led-35",
+          "led-36",
+          "led-37"
+        ],
+        "independentRealEmitters": true,
+        "externalNoEcho": true,
+        "physicalAndPortsUnchanged": true,
+        "automaticState": "none"
+      },
+      {
+        "count": 37,
+        "ids": [
+          "led-1",
+          "led-2",
+          "led-3",
+          "led-4",
+          "led-5",
+          "led-6",
+          "led-7",
+          "led-8",
+          "led-9",
+          "led-10",
+          "led-11",
+          "led-12",
+          "led-13",
+          "led-14",
+          "led-15",
+          "led-16",
+          "led-17",
+          "led-18",
+          "led-19",
+          "led-20",
+          "led-21",
+          "led-22",
+          "led-23",
+          "led-24",
+          "led-25",
+          "led-26",
+          "led-27",
+          "led-28",
+          "led-29",
+          "led-30",
+          "led-31",
+          "led-32",
+          "led-33",
+          "led-34",
+          "led-35",
+          "led-36",
+          "led-37"
+        ],
+        "independentRealEmitters": true,
+        "externalNoEcho": true,
+        "physicalAndPortsUnchanged": true,
+        "automaticState": "none"
+      }
+    ],
+    "service": {
+      "removedPhysicalMeshes": 35,
+      "retainedPhysicalMeshes": 95,
+      "retainedMultiset": "identical",
+      "removalFields": [
+        "rear.plate",
+        "rear.walls[8]",
+        "rear.film",
+        "rear.logo[22]",
+        "rear.head",
+        "rear.floor",
+        "rear.shaft"
+      ]
+    },
+    "disposedResources": 1313,
+    "cases": [
+      "three-real-four-core-Grove-branches",
+      "own-native-CatM-static-ordinary-SMA-accessory",
+      "37-real-independent-externalLED-emitters-noecho-no-electrical-cascade",
+      "actual-removable-opal-diffuser-and-retained-body-identity",
+      "ENV-IV-real-rear-service-retained-full-physical-multiset",
+      "both-entries-all-actual-presets-artwork-physical-invariance",
+      "transformed-ancestors-wrong-family-atomicity-peer-isolation-independent-detach",
+      "NeoHEX-out-real-four-core-nested-Key-input-intent-only",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own current three physical assemblies,matching print and actual external visual outputs/accessories;Node canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/cellular/UART/network/electrical/cascade/sensorvalues/firmware/whole-history acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "catm",
+        "body": [
+          "grove",
+          "sma"
+        ],
+        "ports": [
+          "grove",
+          "sma"
+        ],
+        "leds": [],
+        "passive": [],
+        "native": {
+          "nativeFaces": 6592,
+          "ownSingleSourceAssembly": true,
+          "internalNanoSIMContacts": 6,
+          "noSuppliedCard": true,
+          "noExposedSIMPort": true,
+          "noExteriorLED": true
+        }
+      },
+      {
+        "id": "neohex",
+        "body": [
+          "grove",
+          "out",
+          "grove-in",
+          "diffuser",
+          "led-1",
+          "led-2",
+          "led-3",
+          "led-4",
+          "led-5",
+          "led-6",
+          "led-7",
+          "led-8",
+          "led-9",
+          "led-10",
+          "led-11",
+          "led-12",
+          "led-13",
+          "led-14",
+          "led-15",
+          "led-16",
+          "led-17",
+          "led-18",
+          "led-19",
+          "led-20",
+          "led-21",
+          "led-22",
+          "led-23",
+          "led-24",
+          "led-25",
+          "led-26",
+          "led-27",
+          "led-28",
+          "led-29",
+          "led-30",
+          "led-31",
+          "led-32",
+          "led-33",
+          "led-34",
+          "led-35",
+          "led-36",
+          "led-37"
+        ],
+        "ports": [
+          "grove",
+          "out",
+          "grove-in",
+          "diffuser"
+        ],
+        "leds": [
+          "led-1",
+          "led-2",
+          "led-3",
+          "led-4",
+          "led-5",
+          "led-6",
+          "led-7",
+          "led-8",
+          "led-9",
+          "led-10",
+          "led-11",
+          "led-12",
+          "led-13",
+          "led-14",
+          "led-15",
+          "led-16",
+          "led-17",
+          "led-18",
+          "led-19",
+          "led-20",
+          "led-21",
+          "led-22",
+          "led-23",
+          "led-24",
+          "led-25",
+          "led-26",
+          "led-27",
+          "led-28",
+          "led-29",
+          "led-30",
+          "led-31",
+          "led-32",
+          "led-33",
+          "led-34",
+          "led-35",
+          "led-36",
+          "led-37"
+        ],
+        "passive": [],
+        "physicalStructure": {
+          "geometrySource": "own-dimensioned-parametric",
+          "physicalLeds": 37,
+          "rows": [
+            4,
+            5,
+            6,
+            7,
+            6,
+            5,
+            4
+          ],
+          "packageBasesAndLips": 74,
+          "actualTerminations": 148,
+          "capacitors": 13,
+          "mountingBores": 6,
+          "mountingBoreMm": 2,
+          "opposedMountingCentersMm": 36,
+          "sockets": [
+            {
+              "id": "grove",
+              "face": "right",
+              "contacts": 4,
+              "actualMaterialParts": 21
+            },
+            {
+              "id": "out",
+              "face": "left",
+              "contacts": 4,
+              "actualMaterialParts": 21
+            },
+            {
+              "id": "grove-in",
+              "face": "back",
+              "contacts": 4,
+              "actualMaterialParts": 21
+            }
+          ],
+          "physicalAdhesiveFilms": 0,
+          "removableDiffuserInstalled": true,
+          "diffuserInterface": "static placement without invented socket/latch",
+          "bareEnvelopeMm": [
+            35.79571533203125,
+            40,
+            9.549999916553498
+          ],
+          "currentEnvelopeMm": [
+            35.79571533203125,
+            40,
+            9.8499999165535
+          ],
+          "nominalMm": [
+            36,
+            36,
+            9.6
+          ]
+        },
+        "transformedStructure": {
+          "geometrySource": "own-dimensioned-parametric",
+          "physicalLeds": 37,
+          "rows": [
+            4,
+            5,
+            6,
+            7,
+            6,
+            5,
+            4
+          ],
+          "packageBasesAndLips": 74,
+          "actualTerminations": 148,
+          "capacitors": 13,
+          "mountingBores": 6,
+          "mountingBoreMm": 2,
+          "opposedMountingCentersMm": 36,
+          "sockets": [
+            {
+              "id": "grove",
+              "face": "right",
+              "contacts": 4,
+              "actualMaterialParts": 21
+            },
+            {
+              "id": "out",
+              "face": "left",
+              "contacts": 4,
+              "actualMaterialParts": 21
+            },
+            {
+              "id": "grove-in",
+              "face": "back",
+              "contacts": 4,
+              "actualMaterialParts": 21
+            }
+          ],
+          "physicalAdhesiveFilms": 0,
+          "removableDiffuserInstalled": true,
+          "diffuserInterface": "static placement without invented socket/latch",
+          "bareEnvelopeMm": [
+            35.79571533203125,
+            40.00000000000003,
+            9.54999991655351
+          ],
+          "currentEnvelopeMm": [
+            35.79571533203125,
+            40.00000000000003,
+            9.849999916553497
+          ],
+          "nominalMm": [
+            36,
+            36,
+            9.6
+          ]
+        }
+      },
+      {
+        "id": "env-iv",
+        "body": [
+          "grove",
+          "sht40",
+          "bmp280"
+        ],
+        "ports": [
+          "grove"
+        ],
+        "leds": [],
+        "passive": [
+          "sht40",
+          "bmp280"
+        ]
+      }
+    ],
+    "artwork": [
+      {
+        "id": "catm",
+        "panels": 2,
+        "kinds": [
+          "source-vector-raster",
+          "source-vector-raster"
+        ]
+      },
+      {
+        "id": "neohex",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "env-iv",
+        "panels": 1,
+        "kinds": [
+          "source-vector-raster"
+        ]
+      }
+    ],
+    "configurations": [
+      {
+        "id": "catm",
+        "optionCases": 3,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical without ink"
+      },
+      {
+        "id": "neohex",
+        "optionCases": 3,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical without ink"
+      },
+      {
+        "id": "env-iv",
+        "optionCases": 3,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical without ink"
+      }
+    ],
+    "accessories": [
+      {
+        "port": "sma",
+        "connector": "sma-female",
+        "accessory": "m5stack.unit.catm.antenna",
+        "static": true,
+        "detachRetainedPhysical": "identical",
+        "reattach": "same identity and complete physical pose",
+        "wrongFamily": "atomic rejection"
+      },
+      {
+        "port": "diffuser",
+        "connector": "m5.neohex.diffuser",
+        "accessory": "m5stack.unit.neohex.diffuser",
+        "static": true,
+        "detachRetainedPhysical": "identical",
+        "reattach": "same identity and complete physical pose",
+        "wrongFamily": "atomic rejection"
+      },
+      {
+        "port": "sma",
+        "connector": "sma-female",
+        "accessory": "m5stack.unit.catm.antenna",
+        "static": true,
+        "detachRetainedPhysical": "identical",
+        "reattach": "same identity and complete physical pose",
+        "wrongFamily": "atomic rejection"
+      },
+      {
+        "port": "diffuser",
+        "connector": "m5.neohex.diffuser",
+        "accessory": "m5stack.unit.neohex.diffuser",
+        "static": true,
+        "detachRetainedPhysical": "identical",
+        "reattach": "same identity and complete physical pose",
+        "wrongFamily": "atomic rejection"
+      }
+    ],
+    "outputs": [
+      {
+        "count": 37,
+        "ids": [
+          "led-1",
+          "led-2",
+          "led-3",
+          "led-4",
+          "led-5",
+          "led-6",
+          "led-7",
+          "led-8",
+          "led-9",
+          "led-10",
+          "led-11",
+          "led-12",
+          "led-13",
+          "led-14",
+          "led-15",
+          "led-16",
+          "led-17",
+          "led-18",
+          "led-19",
+          "led-20",
+          "led-21",
+          "led-22",
+          "led-23",
+          "led-24",
+          "led-25",
+          "led-26",
+          "led-27",
+          "led-28",
+          "led-29",
+          "led-30",
+          "led-31",
+          "led-32",
+          "led-33",
+          "led-34",
+          "led-35",
+          "led-36",
+          "led-37"
+        ],
+        "independentRealEmitters": true,
+        "externalNoEcho": true,
+        "physicalAndPortsUnchanged": true,
+        "automaticState": "none"
+      },
+      {
+        "count": 37,
+        "ids": [
+          "led-1",
+          "led-2",
+          "led-3",
+          "led-4",
+          "led-5",
+          "led-6",
+          "led-7",
+          "led-8",
+          "led-9",
+          "led-10",
+          "led-11",
+          "led-12",
+          "led-13",
+          "led-14",
+          "led-15",
+          "led-16",
+          "led-17",
+          "led-18",
+          "led-19",
+          "led-20",
+          "led-21",
+          "led-22",
+          "led-23",
+          "led-24",
+          "led-25",
+          "led-26",
+          "led-27",
+          "led-28",
+          "led-29",
+          "led-30",
+          "led-31",
+          "led-32",
+          "led-33",
+          "led-34",
+          "led-35",
+          "led-36",
+          "led-37"
+        ],
+        "independentRealEmitters": true,
+        "externalNoEcho": true,
+        "physicalAndPortsUnchanged": true,
+        "automaticState": "none"
+      }
+    ],
+    "service": {
+      "removedPhysicalMeshes": 35,
+      "retainedPhysicalMeshes": 95,
+      "retainedMultiset": "identical",
+      "removalFields": [
+        "rear.plate",
+        "rear.walls[8]",
+        "rear.film",
+        "rear.logo[22]",
+        "rear.head",
+        "rear.floor",
+        "rear.shaft"
+      ]
+    },
+    "disposedResources": 1313,
+    "cases": [
+      "three-real-four-core-Grove-branches",
+      "own-native-CatM-static-ordinary-SMA-accessory",
+      "37-real-independent-externalLED-emitters-noecho-no-electrical-cascade",
+      "actual-removable-opal-diffuser-and-retained-body-identity",
+      "ENV-IV-real-rear-service-retained-full-physical-multiset",
+      "both-entries-all-actual-presets-artwork-physical-invariance",
+      "transformed-ancestors-wrong-family-atomicity-peer-isolation-independent-detach",
+      "NeoHEX-out-real-four-core-nested-Key-input-intent-only",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own current three physical assemblies,matching print and actual external visual outputs/accessories;Node canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/cellular/UART/network/electrical/cascade/sensorvalues/firmware/whole-history acceptance"
+  },
+  "checks": {
+    "localProductSmoke": "all current batch products pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "catm",
+        "status": "frozen",
+        "checkedFiles": 14
+      },
+      {
+        "id": "neohex",
+        "status": "frozen",
+        "checkedFiles": 12
+      },
+      {
+        "id": "env-iv",
+        "status": "frozen",
+        "checkedFiles": 10
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "All physical attributes/index/world matrices preserved across actual entries/configurations",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "a1fedac26b8521eae1ece9980b8bdf35135a609d5930f4ddc9cc13dc9944cf26",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "21566766adc53123376787ebf6f9dd193f74daec65113425b12d57c061654bf7",
+      "logDistributed": false
+    },
+    "exportCount": 8,
+    "catalogConfigurations": {
+      "status": "pass",
+      "products": [
+        {
+          "id": "catm",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "Complete unit / receiving SMA socket",
+              "options": {
+                "antenna": false
+              }
+            },
+            {
+              "id": "with-antenna",
+              "name": "Supplied static straight antenna",
+              "options": {
+                "antenna": true
+              }
+            }
+          ],
+          "defaults": {
+            "antenna": false
+          }
+        },
+        {
+          "id": "neohex",
+          "presets": [
+            {
+              "id": "with-diffuser",
+              "name": "完整灯板与均光片",
+              "options": {
+                "diffuser": true
+              }
+            },
+            {
+              "id": "bare-board",
+              "name": "移去独立均光片",
+              "options": {
+                "diffuser": false
+              }
+            }
+          ],
+          "defaults": {
+            "diffuser": true
+          }
+        },
+        {
+          "id": "env-iv",
+          "presets": [
+            {
+              "id": "closed",
+              "name": "Complete ENV-IV body",
+              "options": {
+                "rearCover": true
+              }
+            },
+            {
+              "id": "rear-service",
+              "name": "Rear cover removed",
+              "options": {
+                "rearCover": false
+              }
+            }
+          ],
+          "defaults": {
+            "rearCover": true
+          }
+        }
+      ],
+      "scope": "Batch 40: current frozen named presets, constructor defaults and existing demo contract"
+    },
+    "livePreview": "163-product catalog, 3 own runtime chunks and all corresponding source PNG bytes verified in live dist (ordinary or inlined assets)",
+    "newSourcePrivacy": "New JS/JSON/Markdown/PNG and all current added catalog/manifest records checked; private table/URLs/vectors/original names/mappings/raw material/intermediates excluded",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "Only new products/catalog entries/exports/guide/plan; protected old private/public bytes retained",
+    "existingPublicUnitFilesUnchanged": 1226,
+    "existingPrivateUnitFilesUnchanged": 1187,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "publicSharedProtectedFilesUnchanged": 2,
+    "privateSharedProtectedFilesUnchanged": 2,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [],
+  "previewAssets": [
+    {
+      "id": "catm",
+      "file": "assets/catm-93WOIb8o.js",
+      "sha256": "269e478789b7c1f2755c98b74d7636a0ac934255bb7ed1fd1cc99c3fddddb36e"
+    },
+    {
+      "id": "neohex",
+      "file": "assets/neohex-D5j9sKKB.js",
+      "sha256": "9a051b0bb0a50b00ea389d79b810fbd60ce6d54ea8ca162dce88df956d5587a4"
+    },
+    {
+      "id": "env-iv",
+      "file": "assets/env-iv-DC_PCZK1.js",
+      "sha256": "5837dea0c9fdb5a69e4496e24083aabfed313e47296361e9d6be4bbfc8a8c415"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/catm/Antenna.js",
+      "sha256": "ef8bb697b8e9b5e460d18ba02f9a4648c8f47e56626d8f3181a7720c6d3e911d"
+    },
+    {
+      "path": "src/units/catm/artwork/back.png",
+      "sha256": "ae85572c8f228e459afc455c0197861e690f6c2395a74b2f654371ba51f7843a"
+    },
+    {
+      "path": "src/units/catm/artwork/front.png",
+      "sha256": "4bda3062fbab648d5074eea04e5120ead2f5b738c302ace2ab17a8b844859ba2"
+    },
+    {
+      "path": "src/units/catm/assembly.js",
+      "sha256": "1cddd44222a0b0ed9883e9a37c934fce6fd6c63b202304c5081e0c992f330e91"
+    },
+    {
+      "path": "src/units/catm/cad-map.json",
+      "sha256": "7353545fde1136020dec0eb1c59c6be25489e9ffbb8a5834c1adc062154b5617"
+    },
+    {
+      "path": "src/units/catm/dimensions.js",
+      "sha256": "6d153aa632fa535d96e3a755f88498459de4f0c2fa1f19cad086146a8e6c1568"
+    },
+    {
+      "path": "src/units/catm/geometry-data.js",
+      "sha256": "58f3c628e8e2c3d4792ec34a578222ac74408ebcda3d92e15fbb31365ed7f9b2"
+    },
+    {
+      "path": "src/units/catm/geometry.js",
+      "sha256": "3bbf81b379ae76fae117a937d2d69c99d08b4a8e1e9f2b633efaec3fe7b4d6ad"
+    },
+    {
+      "path": "src/units/catm/index.js",
+      "sha256": "90df7949f3f6ca4beeb88ba41c58d8bb6711e7f4e852c23a0a7e04f88f37aaee"
+    },
+    {
+      "path": "src/units/catm/stickers.js",
+      "sha256": "b926e11fc43f0ca69b280a3047dc66fb7974250f873a52440c219ba98b75e072"
+    },
+    {
+      "path": "docs/research/catm/artwork.json",
+      "sha256": "70a7e7a315917cd15934473aa7a8fc44a4d403a72143c6f40321097f05f26260"
+    },
+    {
+      "path": "docs/research/catm/modeling.md",
+      "sha256": "516f5c2d6612126cc3b4b1c64fef1b9a58e17017abb17cc95854cf483042eeb6"
+    },
+    {
+      "path": "docs/research/catm/smoke.json",
+      "sha256": "f47943cde2e042f9db7ac332782131a91761a50ae8576046e778b8ad2b0574e5"
+    },
+    {
+      "path": "docs/research/catm/sources.json",
+      "sha256": "a1ee9f188d37474d58bc12403eec42e68b92b5d2773e8a4e849501e2cd694528"
+    },
+    {
+      "path": "src/units/neohex/Diffuser.js",
+      "sha256": "59c4b1b6e01f06991ddcbed41b68728ba6342f1189048aec3d7209daceabc992"
+    },
+    {
+      "path": "src/units/neohex/artwork/back.png",
+      "sha256": "187fd2d8183416338557d57ac01f88aaea926b808058d6dd68894a66192a04ea"
+    },
+    {
+      "path": "src/units/neohex/artwork/front.png",
+      "sha256": "af95a87510acb7bec81522916082acba073f7eb7ddb51e0384b3dc15779cb696"
+    },
+    {
+      "path": "src/units/neohex/assembly.js",
+      "sha256": "b2f2a7a792cc1fde783bbeddff0235f02f0b6468c8ad799624ba4bd43d353efd"
+    },
+    {
+      "path": "src/units/neohex/dimensions.js",
+      "sha256": "a5f47cf0aec5977d3f3657f7cb254c29b5d522c25b94098c667f92ef4e1e2199"
+    },
+    {
+      "path": "src/units/neohex/geometry.js",
+      "sha256": "cb53f92c923ccf70517c7644dd93a6c8ff6751112bf720960a62ef91467f8324"
+    },
+    {
+      "path": "src/units/neohex/index.js",
+      "sha256": "3ece4eea112a9b44eed5b7af1446945c4b201eb25943dc11ef4d2497008c4041"
+    },
+    {
+      "path": "src/units/neohex/stickers.js",
+      "sha256": "6bd54ebc788346e7dd4c1823f850fc6b9b6cd171a81c51e905d796ad3f648431"
+    },
+    {
+      "path": "docs/research/neohex/artwork.json",
+      "sha256": "527ede1da6fcfc3cfac7cab07a05f95dc6307d5e4c999a922b0d4a4d0fefc630"
+    },
+    {
+      "path": "docs/research/neohex/modeling.md",
+      "sha256": "8e39e56674aa29c9a658584d1579940d912d79d9350f0e6b3fdb3a5f184b354f"
+    },
+    {
+      "path": "docs/research/neohex/smoke.json",
+      "sha256": "10a8fce2de0b374e2b9bcbce49b954e73a848f33f2e1d6ddf986aa435a0e8e99"
+    },
+    {
+      "path": "docs/research/neohex/sources.json",
+      "sha256": "237999f62980e740d169bd4d106799c054132b6f53bff188a397f9ad4d34da1f"
+    },
+    {
+      "path": "src/units/env-iv/artwork/back.png",
+      "sha256": "27ffb2b26ab284155b85495d26f4a7dfe028e51ee55764438382f285c3d077f6"
+    },
+    {
+      "path": "src/units/env-iv/assembly.js",
+      "sha256": "8cb2371aeb91d358f0e7480df9952fbd553751f5b77e3b7b18f9e84aeebf7235"
+    },
+    {
+      "path": "src/units/env-iv/dimensions.js",
+      "sha256": "8f6ec7fd80930578c508873dfb483cbfac65cc989c37b8fcb84cb74b286b9c9c"
+    },
+    {
+      "path": "src/units/env-iv/geometry.js",
+      "sha256": "2b2a60208b36c4eb1339df56c6c80ed8e98482c4047d896ebdfe560594801d16"
+    },
+    {
+      "path": "src/units/env-iv/index.js",
+      "sha256": "64470742b3c781436ea067a2662f2e8628ab2bb83de211b2fda15f8eea73e753"
+    },
+    {
+      "path": "src/units/env-iv/stickers.js",
+      "sha256": "922443e605b4fdb0862907b94d0272a417e7720ae3beb8b82fbd8f16061bef94"
+    },
+    {
+      "path": "docs/research/env-iv/artwork.json",
+      "sha256": "c4af61a4a97d2955f915357a65ed431e8e553de20595934f030948d56df9b815"
+    },
+    {
+      "path": "docs/research/env-iv/modeling.md",
+      "sha256": "4975f15d3ff01a39ea2dfd4299897d2edddc6f4d0f19bc3345e3cd0b98a77477"
+    },
+    {
+      "path": "docs/research/env-iv/smoke.json",
+      "sha256": "032b6e7fd1dfc6f3d33ed2e161dace441be23a480ea045a3511266047a2d0560"
+    },
+    {
+      "path": "docs/research/env-iv/sources.json",
+      "sha256": "204b96043adf205185a7760774185d1fca5b26d3035f05df6d8dca03482caeca"
+    }
+  ],
+  "limitations": [
+    "CatM uses own complete6592nativeassembledsource faces;NeoHEX andENV-IV use own dimensioned multi-view/photo construction without nativeCAD claims",
+    "Concealed installedPCB/contact/connector/package geometry,parameterizedwalls/snaps/vents andaccessoryregistration remain documentedappearanceinferences,not completeBOM/manufacturing/productionfit",
+    "Only real suppliedaccessories/covers/diffuserandindependentvisibleLEDoutputs are exposed where documented;no inferredunprovenhinges/controls/lightpaths",
+    "No cellular/UART/network/electrical/WS2812cascade/sensorvalue/firmware state;pin labelsare documentary/mechanical only",
+    "Artwork originsare recorded perasset;only approvedordinaryPNG,nophotographiccrop/wrongSKUprint/microtextinvention/fakePCBfilm",
+    "Private table/originals/URLs/names/mapping/vectors/generators/intermediates excluded;earlier sticker/Scroll/StackChan/Puzzle/Catch limits preserved;overallgoalactive"
+  ]
+}

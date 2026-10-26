@@ -1,0 +1,636 @@
+{
+  "savedAt": "2026-10-26T18:19:26.405507+00:00",
+  "stage": "modeled",
+  "scope": "Own exact-SKU IMU/magnetometer Unit physical assemblies and actual external visual controls/accessories, corresponding print and real three-branch four-core API fixture/builds; no browser or whole-catalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 143,
+    "modeled": 157,
+    "verified": 0
+  },
+  "localHead": "a8198a58fad2c94550787fcb46426f7a7e6e8b6d",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "dof6",
+      "status": "pass",
+      "report": "docs/research/dof6/smoke.json",
+      "meshes": null,
+      "triangles": null
+    },
+    {
+      "id": "dof9",
+      "status": "pass",
+      "report": "docs/research/dof9/smoke.json",
+      "meshes": 133,
+      "triangles": 62916
+    },
+    {
+      "id": "bmm350",
+      "status": "pass",
+      "report": "docs/research/bmm350/smoke.json",
+      "meshes": null,
+      "triangles": null
+    }
+  ],
+  "pngCount": 9,
+  "rasters": [
+    {
+      "path": "src/units/dof6/artwork/axis.png",
+      "pixels": [
+        620,
+        620
+      ],
+      "sha256": "b77647ed7deac03ae58714e5ef210cdb7e951260c7fadf012d8bd27b79f487cf"
+    },
+    {
+      "path": "src/units/dof6/artwork/back.png",
+      "pixels": [
+        1600,
+        400
+      ],
+      "sha256": "ede90338928b000523436ad40d019726a69b11a4c3d7fd05550ac62f34969acd"
+    },
+    {
+      "path": "src/units/dof6/artwork/front.png",
+      "pixels": [
+        1780,
+        370
+      ],
+      "sha256": "5ced84ba6414986c18ff7f4c229abb9fef6e7dd3cdc5af40b51933efe6d820dd"
+    },
+    {
+      "path": "src/units/dof9/source-vector-axis.png",
+      "pixels": [
+        622,
+        626
+      ],
+      "sha256": "068c569b2820992fed535966334006a94a7348b44bcee7a5a12b639f3c6db264"
+    },
+    {
+      "path": "src/units/dof9/source-vector-back.png",
+      "pixels": [
+        1605,
+        401
+      ],
+      "sha256": "57a098b59bf0aacfe740d5c805ad31b386e83a706406c45a94bbaf933bfd663c"
+    },
+    {
+      "path": "src/units/dof9/source-vector-front.png",
+      "pixels": [
+        1786,
+        370
+      ],
+      "sha256": "8a60f413333e006f355e378e7683573fd4df32e937641424abad3aeef2103adb"
+    },
+    {
+      "path": "src/units/bmm350/artwork/axis.png",
+      "pixels": [
+        626,
+        626
+      ],
+      "sha256": "c1f93c2ca719b679042f128d878a09c9125ffbd8083a494a1f6dd3e7b088a93d"
+    },
+    {
+      "path": "src/units/bmm350/artwork/back.png",
+      "pixels": [
+        1605,
+        406
+      ],
+      "sha256": "35b13182fe8572504c186acc6a864a8c0f6f591d20aff82ed5855b5f1ff1d7d4"
+    },
+    {
+      "path": "src/units/bmm350/artwork/front.png",
+      "pixels": [
+        1782,
+        370
+      ],
+      "sha256": "0c8a50aed0d5b29ca5e5399d1b0ead4cf79786468a5f2d210a92aca8ad59ac2e"
+    }
+  ],
+  "fixture": {
+    "status": "pass",
+    "artwork": [
+      {
+        "id": "dof6",
+        "panels": 3,
+        "kinds": [
+          "source-vector-raster"
+        ]
+      },
+      {
+        "id": "dof9",
+        "panels": 3,
+        "kinds": [
+          "source-vector-raster"
+        ]
+      },
+      {
+        "id": "bmm350",
+        "panels": 3,
+        "kinds": [
+          "source-vector-raster"
+        ]
+      }
+    ],
+    "components": [
+      {
+        "id": "dof6",
+        "ports": [
+          "grove"
+        ],
+        "controls": [
+          "address"
+        ],
+        "passiveAnchors": [
+          "bmi270"
+        ]
+      },
+      {
+        "id": "dof9",
+        "ports": [
+          "grove"
+        ],
+        "controls": [
+          "address"
+        ],
+        "passiveAnchors": [
+          "sensor"
+        ]
+      },
+      {
+        "id": "bmm350",
+        "ports": [
+          "grove"
+        ],
+        "controls": [],
+        "passiveAnchors": [
+          "magnetometer"
+        ]
+      }
+    ],
+    "motions": [
+      {
+        "id": "address",
+        "movingMeshes": 2,
+        "multiSourceCancel": "retains detent",
+        "externalPosition": "noecho"
+      },
+      {
+        "id": "address",
+        "movingMeshes": 2,
+        "multiSourceCancel": "retains detent",
+        "externalPosition": "noecho"
+      }
+    ],
+    "configurations": [
+      {
+        "id": "dof6",
+        "optionCases": 3,
+        "entries": 2
+      },
+      {
+        "id": "dof9",
+        "optionCases": 3,
+        "entries": 2
+      },
+      {
+        "id": "bmm350",
+        "optionCases": 3,
+        "entries": 2
+      }
+    ],
+    "services": [
+      {
+        "id": "bmm350",
+        "removedPhysicalMeshes": 5,
+        "retainedPhysicalMeshes": 128
+      }
+    ],
+    "cases": [
+      "three-real-four-core-Grove-branches",
+      "two-own-exposed-real-SW1-detents-cap-only-multiple-source-release-cancel-retains-position",
+      "each-SKU-actual-populated-package-frames-empty-passive-state",
+      "BMM350-real-fixed-slot-backing-without-borrowed-slider",
+      "BMM350-real-rear-cover-service-exact-five-material-removals-full-retained-multiset-equality",
+      "both-entries-all-actual-presets-artwork-preserves-every-physical-attribute-index-world-matrix",
+      "external-position-pose-and-cable-no-inputecho-transformed-ancestors",
+      "independent-detach-peer-isolation-host-framebuffer-and-disposal"
+    ],
+    "scope": "Own exact-SKU three physical assemblies and externally driven real shape only;Node canvas stub;no browser/GPU,manufacturing,measured travel,production fit,physical hardware,firmware,electrical,I2C/address algorithm,IMU/magnetic readings or whole-history acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "artwork": [
+      {
+        "id": "dof6",
+        "panels": 3,
+        "kinds": [
+          "source-vector-raster"
+        ]
+      },
+      {
+        "id": "dof9",
+        "panels": 3,
+        "kinds": [
+          "source-vector-raster"
+        ]
+      },
+      {
+        "id": "bmm350",
+        "panels": 3,
+        "kinds": [
+          "source-vector-raster"
+        ]
+      }
+    ],
+    "components": [
+      {
+        "id": "dof6",
+        "ports": [
+          "grove"
+        ],
+        "controls": [
+          "address"
+        ],
+        "passiveAnchors": [
+          "bmi270"
+        ]
+      },
+      {
+        "id": "dof9",
+        "ports": [
+          "grove"
+        ],
+        "controls": [
+          "address"
+        ],
+        "passiveAnchors": [
+          "sensor"
+        ]
+      },
+      {
+        "id": "bmm350",
+        "ports": [
+          "grove"
+        ],
+        "controls": [],
+        "passiveAnchors": [
+          "magnetometer"
+        ]
+      }
+    ],
+    "motions": [
+      {
+        "id": "address",
+        "movingMeshes": 2,
+        "multiSourceCancel": "retains detent",
+        "externalPosition": "noecho"
+      },
+      {
+        "id": "address",
+        "movingMeshes": 2,
+        "multiSourceCancel": "retains detent",
+        "externalPosition": "noecho"
+      }
+    ],
+    "configurations": [
+      {
+        "id": "dof6",
+        "optionCases": 3,
+        "entries": 2
+      },
+      {
+        "id": "dof9",
+        "optionCases": 3,
+        "entries": 2
+      },
+      {
+        "id": "bmm350",
+        "optionCases": 3,
+        "entries": 2
+      }
+    ],
+    "services": [
+      {
+        "id": "bmm350",
+        "removedPhysicalMeshes": 5,
+        "retainedPhysicalMeshes": 128
+      }
+    ],
+    "cases": [
+      "three-real-four-core-Grove-branches",
+      "two-own-exposed-real-SW1-detents-cap-only-multiple-source-release-cancel-retains-position",
+      "each-SKU-actual-populated-package-frames-empty-passive-state",
+      "BMM350-real-fixed-slot-backing-without-borrowed-slider",
+      "BMM350-real-rear-cover-service-exact-five-material-removals-full-retained-multiset-equality",
+      "both-entries-all-actual-presets-artwork-preserves-every-physical-attribute-index-world-matrix",
+      "external-position-pose-and-cable-no-inputecho-transformed-ancestors",
+      "independent-detach-peer-isolation-host-framebuffer-and-disposal"
+    ],
+    "scope": "Own exact-SKU three physical assemblies and externally driven real shape only;Node canvas stub;no browser/GPU,manufacturing,measured travel,production fit,physical hardware,firmware,electrical,I2C/address algorithm,IMU/magnetic readings or whole-history acceptance"
+  },
+  "checks": {
+    "localProductSmoke": "all current batch products pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "dof6",
+        "status": "frozen",
+        "checkedFiles": 13
+      },
+      {
+        "id": "dof9",
+        "status": "frozen",
+        "checkedFiles": 13
+      },
+      {
+        "id": "bmm350",
+        "status": "frozen",
+        "checkedFiles": 14
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "All physical attributes/index/world matrices preserved across actual entries/configurations",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "d6baea88d0ee95a199c2ad755888b07dfb46988b61c3d97fbe59366389b25a3b",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "74fc5b133fbc8276d2c83e969ae6a73838b3fe2321a3f5ecbb32d12f012722d6",
+      "logDistributed": false
+    },
+    "exportCount": 6,
+    "catalogConfigurations": {
+      "status": "pass",
+      "products": [
+        {
+          "id": "dof6",
+          "presets": [
+            {
+              "id": "address-low",
+              "name": "SW1 位置 0",
+              "options": {
+                "addressPosition": 0
+              }
+            },
+            {
+              "id": "address-high",
+              "name": "SW1 位置 1",
+              "options": {
+                "addressPosition": 1
+              }
+            }
+          ],
+          "defaults": {
+            "addressPosition": 0
+          }
+        },
+        {
+          "id": "dof9",
+          "presets": [
+            {
+              "id": "assembled",
+              "name": "Assembled with stable slider at0",
+              "options": {
+                "addressPosition": 0
+              }
+            },
+            {
+              "id": "alternate-detent",
+              "name": "Assembled with stable slider at1",
+              "options": {
+                "addressPosition": 1
+              }
+            }
+          ],
+          "defaults": {
+            "addressPosition": 0
+          }
+        },
+        {
+          "id": "bmm350",
+          "presets": [
+            {
+              "id": "closed",
+              "name": "Complete BMM350 body",
+              "options": {
+                "rearCover": true
+              }
+            },
+            {
+              "id": "rear-service",
+              "name": "Rear cover removed",
+              "options": {
+                "rearCover": false
+              }
+            }
+          ],
+          "defaults": {
+            "rearCover": true
+          }
+        }
+      ],
+      "scope": "Three current frozen named configuration arrays, constructor defaults and existing demo preset contract"
+    },
+    "livePreview": "157-product catalog, 3 own runtime chunks and all corresponding source PNG bytes verified in live dist (ordinary or inlined assets)",
+    "newSourcePrivacy": "New JS/JSON/Markdown/PNG and all current added catalog/manifest records checked; private table/URLs/vectors/original names/mappings/raw material/intermediates excluded",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "Only new products/catalog entries/exports/guide/plan; protected old private/public bytes retained",
+    "existingPublicUnitFilesUnchanged": 1171,
+    "existingPrivateUnitFilesUnchanged": 1132,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [],
+  "previewAssets": [
+    {
+      "id": "dof6",
+      "file": "assets/dof6-DmFso6zW.js",
+      "sha256": "f640999dcef9bf59670cb0abbedcf67ed8c5bbc3bf6e6dc88130568e278bb847"
+    },
+    {
+      "id": "dof9",
+      "file": "assets/dof9-dQNEibGK.js",
+      "sha256": "ebf6b008f8ebe326411f9c8645137d3583e0111de1661c7cf5fc8df5c2aeee49"
+    },
+    {
+      "id": "bmm350",
+      "file": "assets/bmm350-BoN9qVEE.js",
+      "sha256": "40a92ca7279ae57b77f69d0bd23bfab4956b2a92b450807d4b1d02b6e1cb06ae"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/dof6/artwork/axis.png",
+      "sha256": "b77647ed7deac03ae58714e5ef210cdb7e951260c7fadf012d8bd27b79f487cf"
+    },
+    {
+      "path": "src/units/dof6/artwork/back.png",
+      "sha256": "ede90338928b000523436ad40d019726a69b11a4c3d7fd05550ac62f34969acd"
+    },
+    {
+      "path": "src/units/dof6/artwork/front.png",
+      "sha256": "5ced84ba6414986c18ff7f4c229abb9fef6e7dd3cdc5af40b51933efe6d820dd"
+    },
+    {
+      "path": "src/units/dof6/assembly.js",
+      "sha256": "70864343bf499073ff285b79721750af6ec425c879960cbd6ab91ff22f1f1268"
+    },
+    {
+      "path": "src/units/dof6/cad-map.json",
+      "sha256": "d9b05ca3818e3201cd306c6d3824af5257b2ea8c80b228001f194327e2c5d195"
+    },
+    {
+      "path": "src/units/dof6/dimensions.js",
+      "sha256": "39aad41efafe9be1834c557b325b9641bafd6f4ecdb6955f7dac2b1ac2535a6b"
+    },
+    {
+      "path": "src/units/dof6/geometry-data.js",
+      "sha256": "7ebeced96ba45a05fabdc951eff9baba775eb876948a6573cd6a1937a2cc1591"
+    },
+    {
+      "path": "src/units/dof6/index.js",
+      "sha256": "5c4ea9bdebfc2243c477a6a23d769f9b0309075511b0bca506569e88bd6a499c"
+    },
+    {
+      "path": "src/units/dof6/stickers.js",
+      "sha256": "3df958e528f055ac2e2e4d752f28d03fde2874622642ff8dad11e85c306080fe"
+    },
+    {
+      "path": "docs/research/dof6/artwork.json",
+      "sha256": "a178c9d951f343a5b1f7f0c7c1c29c6c6ce4e33c4492a0465c803a053b8fa5bc"
+    },
+    {
+      "path": "docs/research/dof6/modeling.md",
+      "sha256": "06cf37afebd195ce29928c6d37b47066efe9edc0a8a687fb087e526cfc9cafd1"
+    },
+    {
+      "path": "docs/research/dof6/smoke.json",
+      "sha256": "f1628c43752c97ebdb1ca689e0f1a3977893d82f517b0bb248edd7379844d414"
+    },
+    {
+      "path": "docs/research/dof6/sources.json",
+      "sha256": "1428a0fa1a9553393baf1c7ebfaf6d786dba2588bf2ec07545dd641368062ea9"
+    },
+    {
+      "path": "src/units/dof9/assembly.js",
+      "sha256": "b94147faad879243b42c8a1037f2a0b43a5501c28f5af1377e1ebc5dae196343"
+    },
+    {
+      "path": "src/units/dof9/cad-map.json",
+      "sha256": "065a54e95976c2039af2ed9276860d81bb7fdbd5d1722b8ded73545c4c1e85e8"
+    },
+    {
+      "path": "src/units/dof9/dimensions.js",
+      "sha256": "8796cd246fd6281be84f52407e0f9b92ff85e8ffadf4d9f4ee26e34437161f66"
+    },
+    {
+      "path": "src/units/dof9/geometry-data.js",
+      "sha256": "9507ecb64c8ab55d2b658189dde5d77cddd74c3ebe939cf86396888b315835e5"
+    },
+    {
+      "path": "src/units/dof9/index.js",
+      "sha256": "b65d45fb9947a553f75aada439dfb1ff79f7f76e331ebf0ac94c7f84cdea3ba1"
+    },
+    {
+      "path": "src/units/dof9/source-vector-axis.png",
+      "sha256": "068c569b2820992fed535966334006a94a7348b44bcee7a5a12b639f3c6db264"
+    },
+    {
+      "path": "src/units/dof9/source-vector-back.png",
+      "sha256": "57a098b59bf0aacfe740d5c805ad31b386e83a706406c45a94bbaf933bfd663c"
+    },
+    {
+      "path": "src/units/dof9/source-vector-front.png",
+      "sha256": "8a60f413333e006f355e378e7683573fd4df32e937641424abad3aeef2103adb"
+    },
+    {
+      "path": "src/units/dof9/stickers.js",
+      "sha256": "377366f415df93256a23e7c75a5036e9c77d2d3ab7d8686e9f480fc1d8ff1037"
+    },
+    {
+      "path": "docs/research/dof9/artwork.json",
+      "sha256": "4be06c92201aa502e3114f5edefe3742bcae3cfa821401ba4c85ef6ab2d9578f"
+    },
+    {
+      "path": "docs/research/dof9/modeling.md",
+      "sha256": "b5f018e502b85fd1c8fb1855e0727c4604205a6acaa2a722201ed8d01a2840aa"
+    },
+    {
+      "path": "docs/research/dof9/smoke.json",
+      "sha256": "2fd621b7b3a0c2a1245e79e2cfddbf80691371170b4714d6225b5e71c23bcb36"
+    },
+    {
+      "path": "docs/research/dof9/sources.json",
+      "sha256": "733fe04c795df4e5485d2f8f7b7f262b324c68c1bd907c52cdbc6ad8528eacb7"
+    },
+    {
+      "path": "src/units/bmm350/artwork/axis.png",
+      "sha256": "c1f93c2ca719b679042f128d878a09c9125ffbd8083a494a1f6dd3e7b088a93d"
+    },
+    {
+      "path": "src/units/bmm350/artwork/back.png",
+      "sha256": "35b13182fe8572504c186acc6a864a8c0f6f591d20aff82ed5855b5f1ff1d7d4"
+    },
+    {
+      "path": "src/units/bmm350/artwork/front.png",
+      "sha256": "0c8a50aed0d5b29ca5e5399d1b0ead4cf79786468a5f2d210a92aca8ad59ac2e"
+    },
+    {
+      "path": "src/units/bmm350/assembly.js",
+      "sha256": "2977b78823fac99ef0cac36fd11f9ee5b88d7bace6f5f9676cfe051c4242b72b"
+    },
+    {
+      "path": "src/units/bmm350/cad-map.json",
+      "sha256": "6a5fc8780cd92853851569f16492f99dc55cb7332b8c9190960184918df93686"
+    },
+    {
+      "path": "src/units/bmm350/dimensions.js",
+      "sha256": "d04413b93499292634f7bad849fc711c7fa7d067be273ae30c0695a1e7db99a6"
+    },
+    {
+      "path": "src/units/bmm350/geometry-data.js",
+      "sha256": "32db908f8cae879aad6602c77a751e671a7f06b21b5503fa339bf0c299e4694d"
+    },
+    {
+      "path": "src/units/bmm350/geometry.js",
+      "sha256": "34879ce3bd8fe268f1fbc943e92aa248d16927398a7acbd05db5117aa21b84c4"
+    },
+    {
+      "path": "src/units/bmm350/index.js",
+      "sha256": "8728bf504bdb5a14588e4ad85846918071f10fe258786ff408a0f8a489a8c032"
+    },
+    {
+      "path": "src/units/bmm350/stickers.js",
+      "sha256": "9ae8e346c89777b5d97e8cd5083af01d7ea60a2bd0b4eb909ac950e22775b66c"
+    },
+    {
+      "path": "docs/research/bmm350/artwork.json",
+      "sha256": "5cdb0dc0edfa8eeffbe53d42b73e990ff7d9e9e8e2f125048b54566c6e4cdfc8"
+    },
+    {
+      "path": "docs/research/bmm350/modeling.md",
+      "sha256": "c6e79dc90ffc66418c1d948c34af153192283f50cd98ce974616ff7773f0f34e"
+    },
+    {
+      "path": "docs/research/bmm350/smoke.json",
+      "sha256": "783156ff8750b182b01bebb4269b6569fd84926a13ebd09d624e2d834914c294"
+    },
+    {
+      "path": "docs/research/bmm350/sources.json",
+      "sha256": "bf81c81c73a98970ea03e9dcf36e37c7d5450ce7c3e3d054561dc867f9a4b898"
+    }
+  ],
+  "limitations": [
+    "Each exact SKU uses its independently published own mechanical source;shared STL bytes do not imply shared populated board,controls or print",
+    "Own4188 assembled native casing faces preserved after exact component selection;hidden board/component installation,connector registration and cap travel remain documented appearance inferences,not manufacturing or production fit",
+    "DoF6 has BMI270 only;DoF9 has BMI270+BMM350;BMM350 has no borrowed BMI270/optionalNC/DoF10 pressure carrier or fabricated active slider",
+    "Only actual stable controls and passive package anchors;no IMU/magnetic readings,address selection algorithm,orientation calculation,firmware or electrical behavior",
+    "Only final ordinary attributed PNGs distributed;private table,originals,URLs,names,mapping,vectors,generators and intermediates excluded",
+    "Earlier sticker checkpoints,private Scroll and unresolved StackChan production fit/Puzzle Bridge mating remain preserved;overall goal active"
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "sku": "U231",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/681b2cbd645bb27a3ff23f877c17b5804cf45444/Products/U231_Unit_BMM350/Structures/Unit_BMM350.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/cbb28004b34a94fbabaebe05148fa4e74c7cb65d",
+  "path": "Products/U231_Unit_BMM350/Structures/Unit_BMM350.stl",
+  "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/681b2cbd645bb27a3ff23f877c17b5804cf45444/Products/U231_Unit_BMM350/Structures/Unit_BMM350.stl",
+  "commit": "681b2cbd645bb27a3ff23f877c17b5804cf45444",
+  "gitBlob": "cbb28004b34a94fbabaebe05148fa4e74c7cb65d",
+  "sha256": "eb0ac3380c22da14add40ea3cec458f6b2827bb3edd8a25b9a1999b0c4f6d1dd",
+  "bytes": 418884,
+  "license": "MIT",
+  "licenseUrl": "https://raw.githubusercontent.com/m5stack/M5_Hardware/681b2cbd645bb27a3ff23f877c17b5804cf45444/LICENSE",
+  "licenseSha256": "44611d917bece311f5c8eeffce83d8bf9e9ca3f815d262f694ff4a7996af50ea",
+  "trianglesTotalIncludingDisplayCopies": 8376,
+  "connectedComponentSummaryByDescendingFaceCount": [
+    {
+      "triangles": 4188,
+      "min": [
+        110.52239990234375,
+        -1.7408297026122455e-13,
+        -8
+      ],
+      "max": [
+        134.52239990234375,
+        24,
+        0
+      ],
+      "sizeMm": [
+        24,
+        24.000000000000174,
+        8
+      ]
+    },
+    {
+      "triangles": 2664,
+      "min": [
+        44.26008605957031,
+        -1.7408297026122455e-13,
+        -8
+      ],
+      "max": [
+        68.26008605957031,
+        24,
+        -4.400000095367432
+      ],
+      "sizeMm": [
+        24,
+        24.000000000000174,
+        3.5999999046325684
+      ]
+    },
+    {
+      "triangles": 1524,
+      "min": [
+        78.88091278076172,
+        -5.684341886080802e-14,
+        -6
+      ],
+      "max": [
+        102.88091278076172,
+        24,
+        0
+      ],
+      "sizeMm": [
+        24,
+        24.000000000000057,
+        6
+      ]
+    }
+  ],
+  "componentNumberWarning": "These are sorted aggregate connectivity groups,not implementation indices.Implementation must read own STL order and choose own assembled component;do not borrow another Unit index.",
+  "origin": [
+    122.52239990234375,
+    12,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "sourceAssemblyComponents": [
+    0
+  ],
+  "excludedComponents": [
+    2,
+    1
+  ],
+  "originalAssemblyTriangles": 4188,
+  "outputTriangles": 4188,
+  "localModification": null,
+  "parts": [
+    {
+      "component": 0,
+      "correspondingLaidOutComponent": 2,
+      "role": "front",
+      "name": "BMM350 complete native front housing",
+      "material": "shell",
+      "triangles": 1524
+    },
+    {
+      "component": 0,
+      "correspondingLaidOutComponent": 1,
+      "role": "rear",
+      "name": "BMM350 complete native rear housing",
+      "material": "shell",
+      "triangles": 2664
+    }
+  ],
+  "notes": "Exact own U231 full assembled4188originalfaces retained,front1524/rear2664 partitiononlybydirectedcycliccorrespondencetodisplayedduplicates;noindependentlymovedparts/facepatch/deletion/stretch/othermodelassembly.Maxdirectedcorrespondence deviation 0.00000762939453125mm.Common identityaxes/translation scale1. SharedpublishedhousingbyteswithDoF6/9 provehousingonly,notpopulation/controls/labels."
+}

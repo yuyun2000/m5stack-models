@@ -1,0 +1,381 @@
+{
+  "id": "ultrasonic-io",
+  "sku": "U098-B2",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_Ultrasonic-IO",
+  "retrievedAt": "2026-10-27",
+  "officialMCP": {
+    "queries": [
+      "Unit Ultrasonic-IO U098-B2 RCWL-9620 physical dimensions structure GPIO transducer"
+    ],
+    "responseSha256": "45c0725f009d74ed34bf756b781895467c5ae65d23e822f7a1806891130270e4",
+    "rawResponseDistributed": false,
+    "result": "ExactU098-B2 GPIO RCWL-9620,two16mmtransducers,nominal56×24×15.2mm.Ownhero/rear labels PORT.B.I/O,GND5VTRIGECHO.Currentdoc tablePORT.A SDA/SCL conflicts andalready hasofficialfeedback.No sensor/acoustic/electrical implementationderived."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT%20SONIC%20IO/img-4ba90df3-6a11-4870-b605-c55983992d76.webp",
+    "sha256": "9502c5df21fd98cbf1f9e30f3a5b8579a3d2555457c990baf26a0ab2662774a9"
+  },
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT%20SONIC%20IO/img-4ba90df3-6a11-4870-b605-c55983992d76.webp",
+      "sha256": "9502c5df21fd98cbf1f9e30f3a5b8579a3d2555457c990baf26a0ab2662774a9"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT%20SONIC%20IO/img-a2699c07-ba13-43b2-a0ad-342cd284f2dc.webp",
+      "sha256": "11d50b297747de425e4539baee582fd3c05cd92e1f5870f64747c77ce585d078"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT%20SONIC%20IO/img-296b4dcc-1635-45e7-b1e1-503cb24cdb79.webp",
+      "sha256": "0be2c2ed63a12819586ae8225f73a5ca18bbf7bda21b3010c665252736fb154f"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT%20SONIC%20IO/img-ae43de81-b42d-4924-903b-ede2bf195831.webp",
+      "sha256": "d249828414169ef970fae27d3a8edef5bc2ab9dd6d186e8363f6869510782c30"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT%20SONIC%20IO/img-b6400e1d-1f68-4478-8959-73982ce70e9a.webp",
+      "sha256": "3dca14af4d2b7cc8ffdbea668f05f40f2178572753b98405ed2f5518a4bf8797"
+    }
+  ],
+  "officialExample": {
+    "url": "https://raw.githubusercontent.com/m5stack/M5Unit-Sonic/master/examples/Unit_SonicIO_M5Core2/Unit_SonicIO_M5Core2.ino",
+    "sha256": "81f3d2bd29e8fcd62e024986f289f0fc95ac76cafece05c331647ad16eb9600f"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/784c926812716110e9b76041bfa876514017f81a/Products/U098-B2_Unit_Ultrasonic-IO/Structures/Unit_Ultrasonic-IO.stl",
+      "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/23a2558de1ee46ddee2c2a8f82df60907934c158",
+      "commit": "784c926812716110e9b76041bfa876514017f81a",
+      "lastChangedCommit": "784c926812716110e9b76041bfa876514017f81a",
+      "gitBlob": "23a2558de1ee46ddee2c2a8f82df60907934c158",
+      "sha256": "d46c6964f9a9b45be2d103db6a338e61fe97ed7315dec1f661e4af78b9095ed2",
+      "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "cadLicense": {
+    "license": "MIT",
+    "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/784c926812716110e9b76041bfa876514017f81a/LICENSE",
+    "sha256": "44611d917bece311f5c8eeffce83d8bf9e9ca3f815d262f694ff4a7996af50ea"
+  },
+  "selectedAssembly": {
+    "components": [
+      1,
+      2
+    ],
+    "originalAssemblyTriangles": 5510,
+    "outputTriangles": 5510,
+    "parts": [
+      {
+        "component": 2,
+        "role": "front",
+        "name": "Ultrasonic-IO complete native front housing",
+        "material": "shell",
+        "triangles": 2466,
+        "bounds": {
+          "min": [
+            -11.986063003540039,
+            -27.98606300354004,
+            -4.309967517852783
+          ],
+          "max": [
+            11.986063003540039,
+            27.986064910888672,
+            4.5
+          ]
+        }
+      },
+      {
+        "component": 1,
+        "role": "rear",
+        "name": "Ultrasonic-IO complete native rear housing",
+        "material": "shell",
+        "triangles": 3044,
+        "bounds": {
+          "min": [
+            -12.013968467712402,
+            -28.01396942138672,
+            -4.5
+          ],
+          "max": [
+            12.013968467712402,
+            28.01396942138672,
+            3.430000066757202
+          ]
+        }
+      }
+    ],
+    "excludedDisplayComponents": [
+      0,
+      3
+    ],
+    "origin": [
+      0,
+      16,
+      1.7
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "localModification": null,
+    "notes": "Exact own U098-B2 same-location rear1(3044)+front2(2466),all5510original faces retained under one common translation,scale1.Native mould tolerance~24.028×56.028×9mm preserved.No borrow fromB1,I2Cgeometry/print,stretch,facecut/fill/removal orindependentpartrepositioning.Displaced copies0/3 excluded only."
+  },
+  "sourceCorrespondence": {
+    "status": "pass",
+    "sourceSha256": "d46c6964f9a9b45be2d103db6a338e61fe97ed7315dec1f661e4af78b9095ed2",
+    "gitBlob": "23a2558de1ee46ddee2c2a8f82df60907934c158",
+    "commonOrigin": [
+      0,
+      16,
+      1.7
+    ],
+    "scale": 1,
+    "reflection": false,
+    "sourceAssemblyComponents": [
+      1,
+      2
+    ],
+    "excludedDisplacedComponents": [
+      0,
+      3
+    ],
+    "originalTriangles": 5510,
+    "runtimeTriangles": 5510,
+    "unmatchedTriangles": 0,
+    "maxTransformedVertexErrorMm": 9.72560789828383e-07,
+    "parts": [
+      {
+        "component": 2,
+        "role": "front",
+        "originalTriangles": 2466,
+        "runtimeTriangles": 2466,
+        "completeOrderedDirectedVertexCorrespondence": true,
+        "maxErrorMm": 9.596903115349896e-07
+      },
+      {
+        "component": 1,
+        "role": "rear",
+        "originalTriangles": 3044,
+        "runtimeTriangles": 3044,
+        "completeOrderedDirectedVertexCorrespondence": true,
+        "maxErrorMm": 9.72560789828383e-07
+      }
+    ],
+    "note": "Every runtime indexed face retains the original selected STL face anddirected vertex order under one common translation.No source face removed,patched,stretched orindependently moved."
+  },
+  "runtimeTopology": {
+    "nativeFacesPreserved": 5510,
+    "nativeAndConstructedMaterialStrictDirectedCountTwo": true,
+    "positiveVolume": true,
+    "physicalMeshes": 226,
+    "uniqueDirectedGeometries": 226
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      56,
+      15.2
+    ],
+    "vendorDimensionOrderMm": [
+      56,
+      24,
+      15.2
+    ],
+    "cadEnvelopeMm": [
+      24.027936935424805,
+      56.02793884277344,
+      9
+    ],
+    "visualEnvelopeMm": [
+      24.027936935424805,
+      56.02793884277344,
+      15.200000190734864
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -16
+      ],
+      [
+        8,
+        -16
+      ]
+    ],
+    "nativeMidDepthMountingBoreDiameterMm": 4.85,
+    "mountingEvidence": "Own native FrontSide mid-depth radius2.425mm,counter-mouth/rear chamfer profile preserved.This isnot a uniform5mm manufacturing-bore claim.Front atz3.7isabove actual mountingmouth andmaysee fartransducerframe;rearoutsideedge outlet retained.",
+    "acousticCanOuterDiameterMm": 16,
+    "transducerCentersMm": [
+      [
+        0,
+        18.15
+      ],
+      [
+        0,
+        -3.85
+      ]
+    ],
+    "canTopZ": 10.7,
+    "caseZRangeMm": [
+      -4.5,
+      4.5
+    ],
+    "grovePositionMm": [
+      0,
+      -27.9,
+      1.4
+    ]
+  },
+  "hardware": {
+    "pcb": "Own GPIO green carrier,RCWL-9620 SOP16package/16leads,photo-visible passive/three-terminal support andGPIOconfigurationlands,four real transducer solder bores/platedlands,real mountreliefs/retainingbore.",
+    "acoustic": "Two16mm blackcans;each thick annular wall/rim,54solid guardribs,actual square openings/guarddepth,static recessed silverdiaphragm/boss,annularsupport/threeposts,closedcanfloor andtwo PCBmetalterminals.No animatedmembrane oracoustic simulation.",
+    "J1": "Own blackHY2.0-4P receivingsocket,fouractualmetalcontacts/retainedPCBterminalfeet andpads,locking/guide/deepcavitywalls.",
+    "pinLabels": [
+      "GND",
+      "5V",
+      "TRIG",
+      "ECHO"
+    ],
+    "bodyRegisteredComponents": [
+      "grove"
+    ],
+    "passiveAcousticMetadataGroups": [
+      "transmit",
+      "receive"
+    ],
+    "interactiveControls": [],
+    "LEDs": [],
+    "sensors": [],
+    "joints": [],
+    "noSensorReadingOrTriggerEchoBehavior": true
+  },
+  "publicAPI": {
+    "exports": [
+      "Model",
+      "GroveModule",
+      "spec"
+    ],
+    "assemblyProperty": "ultrasonicIOAssembly",
+    "bodyComponentOrder": [
+      "grove"
+    ],
+    "ports": [
+      "grove"
+    ],
+    "canonicalCableInput": "grove",
+    "controls": [],
+    "leds": [],
+    "sensors": [],
+    "joints": [],
+    "anchors": [],
+    "defaultRearCover": true,
+    "configurations": [
+      {
+        "options": {
+          "rearCover": true
+        },
+        "nativeTriangles": 5510,
+        "printPanels": 1
+      },
+      {
+        "options": {
+          "rearCover": false
+        },
+        "nativeTriangles": 2466,
+        "printPanels": 0,
+        "removes": [
+          "native rear housing",
+          "physicalrearlabel/ink",
+          "single actualrearfixing(3physicalmeshes)"
+        ],
+        "retains": [
+          "native front housing",
+          "GPIOcarrier/IC/passives",
+          "dualgriddedstaticacousticcarriers/supports/diaphragms",
+          "Grove/pins/pads"
+        ]
+      }
+    ],
+    "noAcousticDistanceOrElectricalBehavior": true,
+    "moduleExport": "GroveModule",
+    "groveModuleExtraComponents": [
+      "unitFrame",
+      "cable"
+    ],
+    "defaults": {
+      "rearCover": true
+    },
+    "noDirectModule": true
+  },
+  "artwork": {
+    "kind": "source-vector-raster",
+    "pngCount": 1,
+    "sourceDetails": "docs/research/ultrasonic-io/artwork.json",
+    "originalsDistributed": false
+  },
+  "scope": "Exact own U098-B2 nativehousing,GPIOcarrier/IC/passives,Grove/actualcontacts,dualgriddedstaticacousticcarriers andreal rearlabel.Defaultclosed orrearcover-serviceonly.No membrane/sonicwave animation,distance,sensorvalues,trigger/echotiming,network,power/electrical/firmware behavior.",
+  "inferred": [
+    "Installed PCBoutline/thickness/pose,RCWL-9620 SOP16/passive/solder package dimensions andhidden installation fromown gallery;no populatedproductionassembly supplied.",
+    "Can internalstack/support/diaphragm installation and0.55mm guardpitch/0.08mmribs;can top10.7mm followsown15.2mm nominaltotaldepth withunscaled9mmcase.",
+    "Grove internals/terminal fit andsingle fixing installation.",
+    "Actualphysicalfilm0.04mmthickness/material/registration;originalvectorink outlines preserved."
+  ],
+  "notes": [
+    "Distinct U098-B2 GPIO SKU;no B1I2Cassembly/PCB/print borrowed.",
+    "All5510selected originalSTL faces preserve originaldirectedvertexorder underone common propertranslation.Maxerror0.000000973mm;no facepatch/removal orindependentpartmove.",
+    "Native24.02794×56.02794×9mm shelltolerances preserved,not stretchedtovendor rounded24×56×15.2mm.",
+    "108solidgridribs/realopen cells and6.5–7.15mmcheckedrecessed backing mean no PNG masking orsee-throughmissingcanparts.",
+    "Rearservice removesexactly rearhousing,labelsubstrate andsinglefixing(threephysicalmeshes),retainingallothermaterialattributes/index/world.",
+    "Onlyrealgrove registered;transmit/receive arepassivephysicalmetadata groupswithno commands orstate.",
+    "One realbacklabel finalizedfromoriginalvector;front hasnoinventedadhesivepanel.Allfourinkcomparisons preservephysicalmaterial.",
+    "Only finalPNG/derivedgeometry/code/safeprovenance distributed;rawCAD/photos/PDF/MCP,vectors/private mappings/conversion/proofs/intermediates excluded."
+  ],
+  "feedback": {
+    "feedback_id": "588c2040ad754aab8e946edc4cbd033d",
+    "status": "received-for-official-review",
+    "issue": "CurrentU098-B2 PinMap table saysPORT.A SDA/SCL despite exactown GPIOhero/rear PORT.B.I/O GND5VTRIGECHO andSONIC_IOexample.Using ownappearance labels;existingfeedbacknotduplicated."
+  },
+  "runtimeFiles": [
+    {
+      "path": "src/units/ultrasonic-io/artwork/back.png",
+      "sha256": "067973ae36a0c3c6c6069ccc59613b0371530d795227b16a8835f4311fb95ce3"
+    },
+    {
+      "path": "src/units/ultrasonic-io/assembly.js",
+      "sha256": "f170378444905159a9df8c8e06b359187c46b3fe6256156db28040a12fd48d55"
+    },
+    {
+      "path": "src/units/ultrasonic-io/cad-map.json",
+      "sha256": "e0c1ef621b379e4cdcbff6668566288316406b060c4af4b852a803dfed38eb00"
+    },
+    {
+      "path": "src/units/ultrasonic-io/dimensions.js",
+      "sha256": "b4146f6dea54341636fee7ee712f2f9bdb22a41d64285a9b787774460db57456"
+    },
+    {
+      "path": "src/units/ultrasonic-io/geometry-data.js",
+      "sha256": "f1a766adf5de4eb973f664a280484b117180c332d578faa3be25692a58a11084"
+    },
+    {
+      "path": "src/units/ultrasonic-io/index.js",
+      "sha256": "b5e8188078265b297c26ddca0cfeea48dfb2235d09c2c2e66f133b14e9e7742c"
+    },
+    {
+      "path": "src/units/ultrasonic-io/stickers.js",
+      "sha256": "d435b7e5dc278f39bd93e3418e7d778b1947bc8e48b25de8de90241fcf9c9161"
+    }
+  ]
+}

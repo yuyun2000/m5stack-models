@@ -1,0 +1,84 @@
+{
+  "id": "neohex",
+  "sku": "A045-B",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 2,
+  "physicalFilms": 0,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Accurate CODE redraw of readable ownA045-B PCB numbering/markings from official photos and ownU1..U37 layout.No photo pixels,crop,oldHEX print,adhesive film or invented microtext.",
+  "sources": [
+    {
+      "id": "neohex-4",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/neohex/neohex_04.webp",
+      "sha256": "1bc9d2ea7f9025a5f107c4e1a526a5e79a9383a2e8305912e3a0fcf064d8de5e"
+    },
+    {
+      "id": "neohex-5",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/neohex/neohex_05.webp",
+      "sha256": "89a11e12903ffcebfa029a0c25584fbb313fcb37c7e40c1dfad45e181c2d4071"
+    },
+    {
+      "id": "neohex-led-layout",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/532/Sch_NeoHex_V1.1_sch_02.jpg",
+      "sha256": "5a335794b0fc4b2d6b1bf7021f26ba6fef4b425b5bcda1d39bf10064f1380e5a"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/neohex/artwork/front.png",
+      "sha256": "af95a87510acb7bec81522916082acba073f7eb7ddb51e0384b3dc15779cb696",
+      "face": "front",
+      "kind": "reference-redraw",
+      "pixels": [
+        2400,
+        2400
+      ],
+      "sizeMm": [
+        40,
+        40
+      ],
+      "positionMm": [
+        0,
+        0,
+        0.5
+      ],
+      "method": "printedArtwork",
+      "target": "neohexAssembly.board.pcb fixed outward surface",
+      "physicalSubstrate": "Real1mm PCB;no separate adhesive film",
+      "content": "Readable1..37 positions,confirmed by own physical U1..U37 layout"
+    },
+    {
+      "path": "src/units/neohex/artwork/back.png",
+      "sha256": "187fd2d8183416338557d57ac01f88aaea926b808058d6dd68894a66192a04ea",
+      "face": "back",
+      "kind": "reference-redraw",
+      "pixels": [
+        2400,
+        2400
+      ],
+      "sizeMm": [
+        40,
+        40
+      ],
+      "positionMm": [
+        0,
+        0,
+        -0.5
+      ],
+      "method": "printedArtwork",
+      "target": "neohexAssembly.board.pcb fixed outward surface",
+      "physicalSubstrate": "Real1mm PCB;no separate adhesive film",
+      "content": "Readable M5Stack,IN/OUT,G/5/S,V1.1 and actual direction marks;unreadable tiny batch text omitted"
+    }
+  ],
+  "limitations": [
+    "Font metrics,color,spacing/registration are appearance reconstructions,not original vector conversion or calibrated print.",
+    "Numbering is documentary physical placement,not implementedWS2812 serial-address/protocol.",
+    "Ink only on existing outward PCB triangles;bores/slots remain open.",
+    "All physical attributes/index/world preserved for both entries andboth actual diffuser configurations.",
+    "Only final ordinary PNGs distributed;noEXIF/ICC/text/private metadata,raw originals,generator or proof."
+  ],
+  "rights": "Product printed designs,names and trademarks retain their respective rights."
+}

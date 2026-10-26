@@ -1,0 +1,65 @@
+{
+  "sku": "U228",
+  "path": "Products/U228_Unit_DoF6/Structures/Unit_DoF6.stl",
+  "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/681b2cbd645bb27a3ff23f877c17b5804cf45444/Products/U228_Unit_DoF6/Structures/Unit_DoF6.stl",
+  "commit": "681b2cbd645bb27a3ff23f877c17b5804cf45444",
+  "gitBlob": "cbb28004b34a94fbabaebe05148fa4e74c7cb65d",
+  "sha256": "eb0ac3380c22da14add40ea3cec458f6b2827bb3edd8a25b9a1999b0c4f6d1dd",
+  "bytes": 418884,
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/681b2cbd645bb27a3ff23f877c17b5804cf45444/Products/U228_Unit_DoF6/Structures/Unit_DoF6.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/cbb28004b34a94fbabaebe05148fa4e74c7cb65d",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/681b2cbd645bb27a3ff23f877c17b5804cf45444/LICENSE",
+  "origin": [
+    122.52239990234375,
+    11.999999999999913,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "sourceAssemblyComponents": [
+    0
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "correspondingLaidOutComponent": 2,
+      "role": "front",
+      "name": "DoF6 complete native front housing",
+      "material": "shell",
+      "triangles": 1524
+    },
+    {
+      "component": 0,
+      "correspondingLaidOutComponent": 1,
+      "role": "rear",
+      "name": "DoF6 complete native rear housing",
+      "material": "shell",
+      "triangles": 2664
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 4188,
+  "outputTriangles": 4188,
+  "localModification": null,
+  "notes": "Retain all original source0 faces at exact assembled coordinates under one common translation;front/rear merely grouped by cyclic directed vertex correspondence to own laid-out duplicates1/2.No patch,stretch,face deletion or independent shell repositioning."
+}

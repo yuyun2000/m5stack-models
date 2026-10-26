@@ -1,0 +1,89 @@
+{
+  "sku": "U078-C",
+  "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/2a547f4cb53263c7c263c2fdc7c80f54cfb93fdc/Products/U078-C_UnitV-OV7740/Structures/UnitV-OV7740.stl",
+  "bytes": 705684,
+  "sha256": "ea1cdb69d68542501b3afdd878d0b960dd9812563db9c64954b861703f4b4ae6",
+  "gitBlob": "e0ee4d8f9c64da078da0a4d084d4b5aba303fceb",
+  "binarySTLTriangles": 14112,
+  "path": "Products/U078-C_UnitV-OV7740/Structures/UnitV-OV7740.stl",
+  "commit": "2a547f4cb53263c7c263c2fdc7c80f54cfb93fdc",
+  "license": "MIT",
+  "nativeAssemblyTriangles": 7056,
+  "sourceFaceGroupsDescending": [
+    7056,
+    4054,
+    3002
+  ],
+  "assembledRawBounds": {
+    "min": [
+      -12.130254745483398,
+      -20,
+      -3.200000047683716
+    ],
+    "max": [
+      12.130255699157715,
+      20.000621795654297,
+      9.5
+    ]
+  },
+  "nativeEnvelopeMm": [
+    24.260510444641113,
+    40.0006217956543,
+    12.700000047683716
+  ],
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/2a547f4cb53263c7c263c2fdc7c80f54cfb93fdc/Products/U078-C_UnitV-OV7740/Structures/UnitV-OV7740.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/e0ee4d8f9c64da078da0a4d084d4b5aba303fceb",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/2a547f4cb53263c7c263c2fdc7c80f54cfb93fdc/LICENSE",
+  "origin": [
+    0,
+    0,
+    3.15
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "sourceAssemblyComponents": [
+    0
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "correspondingLaidOutComponent": 2,
+      "role": "front",
+      "name": "UnitV-OV7740 complete native front housing",
+      "material": "shell",
+      "triangles": 3002
+    },
+    {
+      "component": 0,
+      "correspondingLaidOutComponent": 1,
+      "role": "rear",
+      "name": "UnitV-OV7740 complete native rear housing",
+      "material": "shell",
+      "triangles": 4054
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 7056,
+  "outputTriangles": 7056,
+  "localModification": null,
+  "notes": "Retain all original source0 faces at exact assembled coordinates under one common translation;front/rear merely grouped by cyclic directed vertex correspondence to own laid-out duplicates1/2.No patch,stretch,face deletion or independent shell repositioning."
+}

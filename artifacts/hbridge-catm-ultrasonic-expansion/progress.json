@@ -1,0 +1,754 @@
+{
+  "savedAt": "2026-10-26T18:00:53.178031+00:00",
+  "stage": "modeled",
+  "scope": "Own exact-SKU actuator/radio/ultrasonic Unit physical assemblies and actual external visual controls/accessories, corresponding print and real three-branch four-core API fixture/builds; no browser or whole-catalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 140,
+    "modeled": 154,
+    "verified": 0
+  },
+  "localHead": "a8198a58fad2c94550787fcb46426f7a7e6e8b6d",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "hbridge",
+      "status": "pass",
+      "report": "docs/research/hbridge/smoke.json",
+      "meshes": 230,
+      "triangles": 220896
+    },
+    {
+      "id": "catm-gnss",
+      "status": "pass",
+      "report": "docs/research/catm-gnss/smoke.json",
+      "meshes": null,
+      "triangles": null
+    },
+    {
+      "id": "ultrasonic-io",
+      "status": "pass",
+      "report": "docs/research/ultrasonic-io/smoke.json",
+      "meshes": null,
+      "triangles": null
+    }
+  ],
+  "pngCount": 6,
+  "rasters": [
+    {
+      "path": "src/units/hbridge/reference-redraw-back.png",
+      "pixels": [
+        1800,
+        4015
+      ],
+      "sha256": "d8bbf821ed5501eef3d770153786f20109b773214209dc4c106ebb199b3be87c"
+    },
+    {
+      "path": "src/units/hbridge/reference-redraw-front.png",
+      "pixels": [
+        1800,
+        3037
+      ],
+      "sha256": "77d492b23d620cbcc377a606b255f63740631cc6ae9fb16f3d1164f4c43f7c78"
+    },
+    {
+      "path": "src/units/catm-gnss/artwork/back.png",
+      "pixels": [
+        2180,
+        1410
+      ],
+      "sha256": "493c83499f75474ff1cb6475835119f5d88ea66e425def12db7ec4ffc369bd6b"
+    },
+    {
+      "path": "src/units/catm-gnss/artwork/front.png",
+      "pixels": [
+        3400,
+        4260
+      ],
+      "sha256": "f79225e791af6a93bd6d93ea3df328b99cbd2b3c6e7e323927399bd7115e2d60"
+    },
+    {
+      "path": "src/units/catm-gnss/artwork/gnss.png",
+      "pixels": [
+        3400,
+        3800
+      ],
+      "sha256": "0e30891eb144e4a48805c2971e581efa0d953d6930c7b56240dd5231dd8198a9"
+    },
+    {
+      "path": "src/units/ultrasonic-io/artwork/back.png",
+      "pixels": [
+        1600,
+        3600
+      ],
+      "sha256": "067973ae36a0c3c6c6069ccc59613b0371530d795227b16a8835f4311fb95ce3"
+    }
+  ],
+  "fixture": {
+    "status": "pass",
+    "artwork": [
+      {
+        "id": "hbridge",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "catm-gnss",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "ultrasonic-io",
+        "panels": 1,
+        "kinds": [
+          "source-vector-raster"
+        ]
+      }
+    ],
+    "services": [
+      {
+        "id": "hbridge",
+        "removedPhysicalMeshes": 5,
+        "retainedPhysicalMeshes": 227
+      },
+      {
+        "id": "catm-gnss",
+        "removedPhysicalMeshes": 8
+      },
+      {
+        "id": "ultrasonic-io",
+        "removedPhysicalMeshes": 5,
+        "retainedPhysicalMeshes": 222
+      }
+    ],
+    "motions": [
+      {
+        "id": "hbridge",
+        "service": true,
+        "controls": [
+          {
+            "id": "source",
+            "service": true,
+            "capMeshes": 5
+          },
+          {
+            "id": "address-1",
+            "service": true,
+            "capMeshes": 1
+          },
+          {
+            "id": "address-2",
+            "service": true,
+            "capMeshes": 1
+          },
+          {
+            "id": "address-3",
+            "service": true,
+            "capMeshes": 1
+          },
+          {
+            "id": "address-4",
+            "service": true,
+            "capMeshes": 1
+          }
+        ],
+        "heads": 4,
+        "accessory": true
+      },
+      {
+        "id": "catm-gnss",
+        "ports": [
+          "dc",
+          "gnss",
+          "grove",
+          "lte"
+        ],
+        "lte": "finite-real-hinge",
+        "coax": {
+          "fixedEndpoints": true,
+          "points": "intermediate-only",
+          "poseRebind": true
+        }
+      },
+      {
+        "id": "ultrasonic-io",
+        "ports": [
+          "grove"
+        ],
+        "passiveCarriers": 2
+      },
+      {
+        "id": "hbridge",
+        "service": false,
+        "controls": [
+          {
+            "id": "source",
+            "service": false,
+            "capMeshes": 5
+          },
+          {
+            "id": "address-1",
+            "service": false,
+            "capMeshes": 1
+          },
+          {
+            "id": "address-2",
+            "service": false,
+            "capMeshes": 1
+          },
+          {
+            "id": "address-3",
+            "service": false,
+            "capMeshes": 1
+          },
+          {
+            "id": "address-4",
+            "service": false,
+            "capMeshes": 1
+          }
+        ],
+        "heads": 0,
+        "accessory": false
+      }
+    ],
+    "cases": [
+      "three-real-four-core-Grove-branches-and-independent-detach",
+      "five-real-HBridge-detents-cap-only-multiple-source-cancel-covered-pointer-guard-and-external-position-noecho",
+      "four-independent-terminal-heads-with-fixed-shank-cage-socket-no-RPM",
+      "own-CatM-MicroSIM-two-SMA-LTE-real-hinge-and-GNSS-puck-pose-with-automatically-bound-single-coax-endpoints",
+      "incompatible-Grove-and-RP-SMA-rejected-preserving-installed-accessories",
+      "only-exact-service-material-removed-full-retained-physical-multisets-match",
+      "Ultrasonic-IO-only-Grove-two-static-real-acoustic-carriers-no-distance-state",
+      "both-entries-all-real-presets-and-accessory-pose-configs-artwork-toggle-physical-invariant",
+      "external-commands-noecho-transformed-parents-peer-isolation-framebuffer-and-disposal"
+    ],
+    "scope": "Current exact-SKU three physical assemblies and external appearance only;Node canvas stub;no browser/GPU,manufacturing stops,production fit,physical hardware,firmware,electrical,power,motor,RF/GNSS/network,acoustic timing or sensor values;no whole-history acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "artwork": [
+      {
+        "id": "hbridge",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "catm-gnss",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "ultrasonic-io",
+        "panels": 1,
+        "kinds": [
+          "source-vector-raster"
+        ]
+      }
+    ],
+    "services": [
+      {
+        "id": "hbridge",
+        "removedPhysicalMeshes": 5,
+        "retainedPhysicalMeshes": 227
+      },
+      {
+        "id": "catm-gnss",
+        "removedPhysicalMeshes": 8
+      },
+      {
+        "id": "ultrasonic-io",
+        "removedPhysicalMeshes": 5,
+        "retainedPhysicalMeshes": 222
+      }
+    ],
+    "motions": [
+      {
+        "id": "hbridge",
+        "service": true,
+        "controls": [
+          {
+            "id": "source",
+            "service": true,
+            "capMeshes": 5
+          },
+          {
+            "id": "address-1",
+            "service": true,
+            "capMeshes": 1
+          },
+          {
+            "id": "address-2",
+            "service": true,
+            "capMeshes": 1
+          },
+          {
+            "id": "address-3",
+            "service": true,
+            "capMeshes": 1
+          },
+          {
+            "id": "address-4",
+            "service": true,
+            "capMeshes": 1
+          }
+        ],
+        "heads": 4,
+        "accessory": true
+      },
+      {
+        "id": "catm-gnss",
+        "ports": [
+          "dc",
+          "gnss",
+          "grove",
+          "lte"
+        ],
+        "lte": "finite-real-hinge",
+        "coax": {
+          "fixedEndpoints": true,
+          "points": "intermediate-only",
+          "poseRebind": true
+        }
+      },
+      {
+        "id": "ultrasonic-io",
+        "ports": [
+          "grove"
+        ],
+        "passiveCarriers": 2
+      },
+      {
+        "id": "hbridge",
+        "service": false,
+        "controls": [
+          {
+            "id": "source",
+            "service": false,
+            "capMeshes": 5
+          },
+          {
+            "id": "address-1",
+            "service": false,
+            "capMeshes": 1
+          },
+          {
+            "id": "address-2",
+            "service": false,
+            "capMeshes": 1
+          },
+          {
+            "id": "address-3",
+            "service": false,
+            "capMeshes": 1
+          },
+          {
+            "id": "address-4",
+            "service": false,
+            "capMeshes": 1
+          }
+        ],
+        "heads": 0,
+        "accessory": false
+      }
+    ],
+    "cases": [
+      "three-real-four-core-Grove-branches-and-independent-detach",
+      "five-real-HBridge-detents-cap-only-multiple-source-cancel-covered-pointer-guard-and-external-position-noecho",
+      "four-independent-terminal-heads-with-fixed-shank-cage-socket-no-RPM",
+      "own-CatM-MicroSIM-two-SMA-LTE-real-hinge-and-GNSS-puck-pose-with-automatically-bound-single-coax-endpoints",
+      "incompatible-Grove-and-RP-SMA-rejected-preserving-installed-accessories",
+      "only-exact-service-material-removed-full-retained-physical-multisets-match",
+      "Ultrasonic-IO-only-Grove-two-static-real-acoustic-carriers-no-distance-state",
+      "both-entries-all-real-presets-and-accessory-pose-configs-artwork-toggle-physical-invariant",
+      "external-commands-noecho-transformed-parents-peer-isolation-framebuffer-and-disposal"
+    ],
+    "scope": "Current exact-SKU three physical assemblies and external appearance only;Node canvas stub;no browser/GPU,manufacturing stops,production fit,physical hardware,firmware,electrical,power,motor,RF/GNSS/network,acoustic timing or sensor values;no whole-history acceptance"
+  },
+  "checks": {
+    "localProductSmoke": "all current batch products pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "hbridge",
+        "status": "frozen",
+        "checkedFiles": 14
+      },
+      {
+        "id": "catm-gnss",
+        "status": "frozen",
+        "checkedFiles": 16
+      },
+      {
+        "id": "ultrasonic-io",
+        "status": "frozen",
+        "checkedFiles": 11
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "All physical attributes/index/world matrices preserved across actual entries/configurations",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "e98d22a3b68f55283fd3fb862496536d1c0eb783dc18f58634660410185ac088",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "f236fcd450842e860a7d2979cab5543c84afe21dfa36967e0d7d6690f16cf714",
+      "logDistributed": false
+    },
+    "exportCount": 9,
+    "catalogConfigurations": {
+      "status": "pass",
+      "products": [
+        {
+          "id": "hbridge",
+          "presets": [
+            {
+              "id": "assembled",
+              "name": "Assembled receiving sockets",
+              "options": {
+                "frontCover": true,
+                "terminalPlug": false
+              }
+            },
+            {
+              "id": "assembled-with-terminal",
+              "name": "Assembled with supplied terminal plug",
+              "options": {
+                "frontCover": true,
+                "terminalPlug": true
+              }
+            },
+            {
+              "id": "front-service",
+              "name": "Front service",
+              "options": {
+                "frontCover": false,
+                "terminalPlug": false
+              }
+            },
+            {
+              "id": "front-service-with-terminal",
+              "name": "Front service with supplied terminal plug",
+              "options": {
+                "frontCover": false,
+                "terminalPlug": true
+              }
+            }
+          ],
+          "defaults": {
+            "frontCover": true,
+            "terminalPlug": false
+          }
+        },
+        {
+          "id": "catm-gnss",
+          "presets": [
+            {
+              "id": "body",
+              "name": "Closed body",
+              "options": {
+                "rearCover": true,
+                "lteAntenna": false,
+                "gnssAntenna": false
+              }
+            },
+            {
+              "id": "lte",
+              "name": "Body with supplied LTE rod",
+              "options": {
+                "rearCover": true,
+                "lteAntenna": true,
+                "gnssAntenna": false,
+                "lteAngleDeg": 0
+              }
+            },
+            {
+              "id": "gnss",
+              "name": "Body with supplied GNSS puck and1m coax",
+              "options": {
+                "rearCover": true,
+                "lteAntenna": false,
+                "gnssAntenna": true
+              }
+            },
+            {
+              "id": "both",
+              "name": "Both supplied antennas",
+              "options": {
+                "rearCover": true,
+                "lteAntenna": true,
+                "gnssAntenna": true,
+                "lteAngleDeg": 45
+              }
+            },
+            {
+              "id": "service",
+              "name": "Rear cover removed",
+              "options": {
+                "rearCover": false,
+                "lteAntenna": false,
+                "gnssAntenna": false
+              }
+            },
+            {
+              "id": "service-both",
+              "name": "Rear service with both antennas",
+              "options": {
+                "rearCover": false,
+                "lteAntenna": true,
+                "gnssAntenna": true,
+                "lteAngleDeg": 90
+              }
+            }
+          ],
+          "defaults": {
+            "rearCover": true,
+            "lteAntenna": false,
+            "gnssAntenna": false,
+            "lteAngleDeg": 0
+          }
+        },
+        {
+          "id": "ultrasonic-io",
+          "presets": [
+            {
+              "id": "closed",
+              "name": "完整后壳",
+              "options": {
+                "rearCover": true
+              }
+            },
+            {
+              "id": "rear-service",
+              "name": "移除后壳查看本款GPIO板",
+              "options": {
+                "rearCover": false
+              }
+            }
+          ],
+          "defaults": {
+            "rearCover": true
+          }
+        }
+      ],
+      "scope": "Three current frozen named configuration arrays, constructor defaults and existing demo preset contract"
+    },
+    "livePreview": "154-product catalog, 3 own runtime chunks and all corresponding source PNG bytes verified in live dist (ordinary or inlined assets)",
+    "newSourcePrivacy": "New JS/JSON/Markdown/PNG and all current added catalog/manifest records checked; private table/URLs/vectors/original names/mappings/raw material/intermediates excluded",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "Only new products/catalog entries/exports/guide/plan; protected old private/public bytes retained",
+    "existingPublicUnitFilesUnchanged": 1142,
+    "existingPrivateUnitFilesUnchanged": 1103,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [
+    {
+      "product": "hbridge",
+      "record": "docs/research/hbridge/sources.json",
+      "feedback_id": "6c58540d051147ba9af562a88312b544",
+      "accepted": true
+    }
+  ],
+  "previewAssets": [
+    {
+      "id": "hbridge",
+      "file": "assets/hbridge-CsEjmGxa.js",
+      "sha256": "594686663d6f628cb7509e9f3da90519e7770b1d8878885a4ab4fd2eaa044914"
+    },
+    {
+      "id": "catm-gnss",
+      "file": "assets/catm-gnss-YUWNXS7n.js",
+      "sha256": "2902712d8cda8e8f376162d48d390be512c05ff4208b5ab3d54fdfd8bde16940"
+    },
+    {
+      "id": "ultrasonic-io",
+      "file": "assets/ultrasonic-io-CTofDATY.js",
+      "sha256": "5655c8c3d5b606c7dae3db0885089be04638a7ceb5ba23668a6b683d4ebf4262"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/hbridge/TerminalPlug.js",
+      "sha256": "1ac98206e9f36c534bab3e31ef454b0295dbfdad935ef6e845972081f6093352"
+    },
+    {
+      "path": "src/units/hbridge/assembly.js",
+      "sha256": "6c10119447f9915ee16b6140c950958abafaddb8578695527bbb4fc102141741"
+    },
+    {
+      "path": "src/units/hbridge/cad-map.json",
+      "sha256": "5aec1ce92e7f7ab4ec463286691773a0a5ccf7e2ac05b78303b1d5c1a7684603"
+    },
+    {
+      "path": "src/units/hbridge/connectors.js",
+      "sha256": "bc37ee3ded9d83d44cf9cbe863cc06fdab1ecd0946dc36558e05ee45d9de1f58"
+    },
+    {
+      "path": "src/units/hbridge/dimensions.js",
+      "sha256": "0214c8088ab454e52d2d02027444a71c6c38d6892d4957d84e347f3038bd17e0"
+    },
+    {
+      "path": "src/units/hbridge/geometry-data.js",
+      "sha256": "bbf6108bc6e87244a1568351066d80dbadb67d516258a8aa0df7f6adb41da631"
+    },
+    {
+      "path": "src/units/hbridge/index.js",
+      "sha256": "9420acffc22bdcea5bb4b903d409aa63783c858427952d43ba4cf43b39567bd2"
+    },
+    {
+      "path": "src/units/hbridge/reference-redraw-back.png",
+      "sha256": "d8bbf821ed5501eef3d770153786f20109b773214209dc4c106ebb199b3be87c"
+    },
+    {
+      "path": "src/units/hbridge/reference-redraw-front.png",
+      "sha256": "77d492b23d620cbcc377a606b255f63740631cc6ae9fb16f3d1164f4c43f7c78"
+    },
+    {
+      "path": "src/units/hbridge/stickers.js",
+      "sha256": "5f82c8d2c4da1f2a7395844b5de2c8f4fb1c745de150da2fc8f509bb7b367e69"
+    },
+    {
+      "path": "docs/research/hbridge/artwork.json",
+      "sha256": "cca3150722c5457ae6892e5f893095c68c0affd6e66d0674e87ab0fda6602b9d"
+    },
+    {
+      "path": "docs/research/hbridge/modeling.md",
+      "sha256": "5ce5387c13591b520055ce52f881b07d5155073b9e0d762eca8da7b5ac4b5b7d"
+    },
+    {
+      "path": "docs/research/hbridge/smoke.json",
+      "sha256": "e7ac6bec506de0090543cdac6cb7fcfa9fcc639825855c85badcd65f822fc0cc"
+    },
+    {
+      "path": "docs/research/hbridge/sources.json",
+      "sha256": "a954a65fe4dd8d4d4a1e6330b6c2063da260d54cb67dafec119e411083ef500a"
+    },
+    {
+      "path": "src/units/catm-gnss/Antenna.js",
+      "sha256": "6c5335f0e1ed1c874b9c0cdf24629ec9d0c2a082d750bb1335b6f30aec306609"
+    },
+    {
+      "path": "src/units/catm-gnss/artwork/back.png",
+      "sha256": "493c83499f75474ff1cb6475835119f5d88ea66e425def12db7ec4ffc369bd6b"
+    },
+    {
+      "path": "src/units/catm-gnss/artwork/front.png",
+      "sha256": "f79225e791af6a93bd6d93ea3df328b99cbd2b3c6e7e323927399bd7115e2d60"
+    },
+    {
+      "path": "src/units/catm-gnss/artwork/gnss.png",
+      "sha256": "0e30891eb144e4a48805c2971e581efa0d953d6930c7b56240dd5231dd8198a9"
+    },
+    {
+      "path": "src/units/catm-gnss/assembly.js",
+      "sha256": "8f032756adb6272680ed18faa8b7ed4474dd57ba19578f34c42881ba0733aa1a"
+    },
+    {
+      "path": "src/units/catm-gnss/cad-map.json",
+      "sha256": "1ff000cce7945b0298b14c08f774882efcd80b69f6a6a95b08e02e4d776c8653"
+    },
+    {
+      "path": "src/units/catm-gnss/connectors.js",
+      "sha256": "d444415a17241eac8b99106dca6ba31092bccf1085ea0cae8c7302833a212fe3"
+    },
+    {
+      "path": "src/units/catm-gnss/dimensions.js",
+      "sha256": "67f1a9e8620ce22224aa9e9c1064c8c4ac487623ead6ea20b50ae56405ad73d3"
+    },
+    {
+      "path": "src/units/catm-gnss/geometry-data.js",
+      "sha256": "5c0e02445755f71192a54816cd5dcc05c3879bb5897aebf5f9ab87ef96af3419"
+    },
+    {
+      "path": "src/units/catm-gnss/geometry.js",
+      "sha256": "34879ce3bd8fe268f1fbc943e92aa248d16927398a7acbd05db5117aa21b84c4"
+    },
+    {
+      "path": "src/units/catm-gnss/index.js",
+      "sha256": "caf876f50b699fc4b922b9e612fd85a26a448bea8c5e4e9665b5319a39822664"
+    },
+    {
+      "path": "src/units/catm-gnss/stickers.js",
+      "sha256": "a1b26dd097c38b6b2c42de08b5e488ffc6582414754cdbb42dfb7cbf3747f297"
+    },
+    {
+      "path": "docs/research/catm-gnss/artwork.json",
+      "sha256": "4eef43ac834a2e6960f608e59b493c6be70bec2fa41547cfc07876b1aeb6e200"
+    },
+    {
+      "path": "docs/research/catm-gnss/modeling.md",
+      "sha256": "cf24d6c63636053402938bbe9aa8a34c44eda76c9d5f2f6613705fbd90a6f263"
+    },
+    {
+      "path": "docs/research/catm-gnss/smoke.json",
+      "sha256": "279e7e13985de2284d494f8ead6025e480e869e48ca99d277739d078a5bd74d6"
+    },
+    {
+      "path": "docs/research/catm-gnss/sources.json",
+      "sha256": "4982ff202ac11ec80e5de3fb358c3c104aca681a268d92f3259c75e7a52d2dcb"
+    },
+    {
+      "path": "src/units/ultrasonic-io/artwork/back.png",
+      "sha256": "067973ae36a0c3c6c6069ccc59613b0371530d795227b16a8835f4311fb95ce3"
+    },
+    {
+      "path": "src/units/ultrasonic-io/assembly.js",
+      "sha256": "f170378444905159a9df8c8e06b359187c46b3fe6256156db28040a12fd48d55"
+    },
+    {
+      "path": "src/units/ultrasonic-io/cad-map.json",
+      "sha256": "e0c1ef621b379e4cdcbff6668566288316406b060c4af4b852a803dfed38eb00"
+    },
+    {
+      "path": "src/units/ultrasonic-io/dimensions.js",
+      "sha256": "b4146f6dea54341636fee7ee712f2f9bdb22a41d64285a9b787774460db57456"
+    },
+    {
+      "path": "src/units/ultrasonic-io/geometry-data.js",
+      "sha256": "f1a766adf5de4eb973f664a280484b117180c332d578faa3be25692a58a11084"
+    },
+    {
+      "path": "src/units/ultrasonic-io/index.js",
+      "sha256": "b5e8188078265b297c26ddca0cfeea48dfb2235d09c2c2e66f133b14e9e7742c"
+    },
+    {
+      "path": "src/units/ultrasonic-io/stickers.js",
+      "sha256": "d435b7e5dc278f39bd93e3418e7d778b1947bc8e48b25de8de90241fcf9c9161"
+    },
+    {
+      "path": "docs/research/ultrasonic-io/artwork.json",
+      "sha256": "cd30dc3fc3ff7fe30163c420b73cb4cc054734b45327c45ecbe368fbc8e5b3a8"
+    },
+    {
+      "path": "docs/research/ultrasonic-io/modeling.md",
+      "sha256": "cc6a38159ad91f9da581496ff6d32b0e7f7dbef3bdb8e23deee5669ef65e8c08"
+    },
+    {
+      "path": "docs/research/ultrasonic-io/smoke.json",
+      "sha256": "645a6f8fe47025633594c03f3cf4265de88829fff1a67daec1052541983e0953"
+    },
+    {
+      "path": "docs/research/ultrasonic-io/sources.json",
+      "sha256": "eb91d098af45e60d7343b4511cd8c28de3351f06e70400e3b4e4bd3577dfb458"
+    }
+  ],
+  "limitations": [
+    "Own exact-SKU CAD/gallery/schematic sources retained;HBridge5592/Ultrasonic-IO5510 native faces preserved;CatM source5284 has documented left-SMA scoped derivative runtime5248 with rear2638 unchanged;hidden installation/registration/accessory travel remain appearance inferences,not manufacturing,measured stops or production fit",
+    "Original HBridge U160 retains actual DIP/VM sliders and four-head terminal;covered controls have no through-shell pointer target while real external detent commands remain available;no v1.1-only capacitor or motor/electrical state is invented",
+    "CatM GNSS U137 uses its own wide case,MicroSIM/DC/Grove/two-SMA assembly,LTE rod and GNSS coax/puck;RF coax is separate from Grove four-core,no fabricated SIM card or unconfirmed exterior LED path",
+    "Ultrasonic-IO U098-B2 retains its own GPIO board,black Grove and grid-covered recessed transducers;no borrowed I2C label,sonic wave,membrane motion,range value or timing/protocol behavior",
+    "Only final ordinary attributed rasters are distributed;private table,originals,URLs,names,mappings,vectors,generators and intermediates remain outside distribution",
+    "Earlier sticker checkpoints,private Scroll and unresolved StackChan production fit/Puzzle Bridge mating remain preserved;overall goal active"
+  ]
+}

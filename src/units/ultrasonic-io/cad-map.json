@@ -1,0 +1,89 @@
+{
+  "sku": "U098-B2",
+  "path": "Products/U098-B2_Unit_Ultrasonic-IO/Structures/Unit_Ultrasonic-IO.stl",
+  "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/784c926812716110e9b76041bfa876514017f81a/Products/U098-B2_Unit_Ultrasonic-IO/Structures/Unit_Ultrasonic-IO.stl",
+  "commit": "784c926812716110e9b76041bfa876514017f81a",
+  "gitBlob": "23a2558de1ee46ddee2c2a8f82df60907934c158",
+  "sha256": "d46c6964f9a9b45be2d103db6a338e61fe97ed7315dec1f661e4af78b9095ed2",
+  "bytes": 551084,
+  "treeSha": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/784c926812716110e9b76041bfa876514017f81a/Products/U098-B2_Unit_Ultrasonic-IO/Structures/Unit_Ultrasonic-IO.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/23a2558de1ee46ddee2c2a8f82df60907934c158",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/784c926812716110e9b76041bfa876514017f81a/LICENSE",
+  "origin": [
+    0,
+    16,
+    1.7
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "sourceAssemblyComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 5510,
+  "outputTriangles": 5510,
+  "parts": [
+    {
+      "component": 2,
+      "role": "front",
+      "name": "Ultrasonic-IO complete native front housing",
+      "material": "shell",
+      "triangles": 2466,
+      "bounds": {
+        "min": [
+          -11.986063003540039,
+          -27.98606300354004,
+          -4.309967517852783
+        ],
+        "max": [
+          11.986063003540039,
+          27.986064910888672,
+          4.5
+        ]
+      }
+    },
+    {
+      "component": 1,
+      "role": "rear",
+      "name": "Ultrasonic-IO complete native rear housing",
+      "material": "shell",
+      "triangles": 3044,
+      "bounds": {
+        "min": [
+          -12.013968467712402,
+          -28.01396942138672,
+          -4.5
+        ],
+        "max": [
+          12.013968467712402,
+          28.01396942138672,
+          3.430000066757202
+        ]
+      }
+    }
+  ],
+  "excludedDisplayComponents": [
+    0,
+    3
+  ],
+  "localModification": null,
+  "notes": "Exact own U098-B2 same-location rear1(3044)+front2(2466),all5510original faces retained under one common translation,scale1.Native mould tolerance~24.028×56.028×9mm preserved.No borrow fromB1,I2Cgeometry/print,stretch,facecut/fill/removal orindependentpartrepositioning.Displaced copies0/3 excluded only."
+}

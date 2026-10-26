@@ -1,0 +1,104 @@
+{
+  "sku": "U137",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3/Products/U137_Unit_CatM_GNSS/Structures/Unit_CatM_GNSS.stl",
+  "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3/Products/U137_Unit_CatM_GNSS/Structures/Unit_CatM_GNSS.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/d7ec62df57c025163f6357031a389ae79ca0fd76",
+  "path": "Products/U137_Unit_CatM_GNSS/Structures/Unit_CatM_GNSS.stl",
+  "commit": "c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3",
+  "lastChangedCommit": "c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3",
+  "lastChangedAt": "2026-08-13T10:40:16Z",
+  "gitBlob": "d7ec62df57c025163f6357031a389ae79ca0fd76",
+  "sha256": "d9c2a8bcfa48a07a6ec69c3c05a2dfa8d9daa341ec78121dc70806099bf325d7",
+  "bytes": 528484,
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3/LICENSE",
+  "origin": [
+    0,
+    34,
+    2.4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "sourceAssemblyComponents": [
+    0,
+    3
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 5284,
+  "outputTriangles": 5248,
+  "localModification": {
+    "kind": "scoped-own-CAD-left-SMA-opening-derivative",
+    "sourceSha256": "d9c2a8bcfa48a07a6ec69c3c05a2dfa8d9daa341ec78121dc70806099bf325d7",
+    "nativeFrontTriangles": 2646,
+    "outputFrontTriangles": 2610,
+    "unchangedFrontTriangles": 2489,
+    "changedNativeFrontTriangles": 157,
+    "addedOrRetriangulatedFrontTriangles": 121,
+    "unchangedRearTriangles": 2638,
+    "operation": "Subtract bounded native left aperture gray bridge through native front depth only;close newly exposed cut planes with actual material walls;unaffected source triangles restored byte-for-byte with cyclic orientation.",
+    "scopeMm": {
+      "min": [
+        -10.1,
+        19.65,
+        -3.5
+      ],
+      "max": [
+        -3.9,
+        28.05,
+        7.45
+      ]
+    },
+    "changedNewTriangleBoundsMm": {
+      "min": [
+        -12.328495025634766,
+        18.66524887084961,
+        3.1999998092651367
+      ],
+      "max": [
+        0.007728099822998047,
+        27.050600051879883,
+        7.071218967437744
+      ]
+    },
+    "volumeBeforeMm3": 4404.241908802868,
+    "volumeAfterMm3": 4334.201127514513,
+    "evidence": "Exact own U137 official front photo catm_gnss_02.webp shows both square openings exposing gold SMA mounting bodies;original left aperture contains visible gray stem/vertical round hole absent fromphoto. No mirrored othermodel geometry or sticker mask.",
+    "limitations": "Cut region and seated gold SMA body installation are inferred from ownphoto/native aperture;not productionfit. All outside-region source topology andcomplete rear remain."
+  },
+  "parts": [
+    {
+      "component": 0,
+      "role": "front",
+      "name": "CatM GNSS complete native front housing",
+      "material": "shell",
+      "triangles": 2610
+    },
+    {
+      "component": 3,
+      "role": "rear",
+      "name": "CatM GNSS complete native rear housing",
+      "material": "shell",
+      "triangles": 2638
+    }
+  ],
+  "notes": "Exact own U137 components0+3 under one common identityaxes/translation,scale1.Rear2638 retained unchanged.Front leftSMAbridge conflicts with ownfrontphoto;see localModification for bounded closedderivative counts.Scopedregion andaffectedtrianglebounds in localModification.No othermodelgeometry orindependent nativepart repositioning.Displacedcopies1/2 excluded."
+}

@@ -1,0 +1,439 @@
+{
+  "id": "neohex",
+  "sku": "A045-B",
+  "retrievedAt": "2026-10-27",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_NeoHEX",
+  "sourceRoute": "own-dimensioned-parametric-no-CAD",
+  "officialMCP": {
+    "queries": [
+      "Unit NeoHEX A045-B dimensions37 WS2812C connectors diffuser"
+    ],
+    "responseSha256": "f6024732812f15f9ceae3f4a9e095ab94dca603b9f35e97e7a4b62cbb937b5f0",
+    "rawResponseDistributed": false,
+    "result": "ExactA045-B identity,own37WS2812C-2020-V1 packages,threephysical connectors,sixears,independent opal diffuser andown diagram/layout confirmed."
+  },
+  "reference": {
+    "id": "neohex-6",
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/neohex/neohex_06.webp",
+    "sha256": "fe50a9c5dd1c656ecab315488caf14500caea98a61a140154edb320d525773b1"
+  },
+  "referenceSources": [
+    {
+      "id": "neohex-1",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/neohex/neohex_01.webp",
+      "sha256": "621229844ad7768919051432f74c3fc302226a75112dea812265195dab320add"
+    },
+    {
+      "id": "neohex-2",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/neohex/neohex_02.webp",
+      "sha256": "92ad64e1ce87371653518f965371b04e78e31980c8e1c0c770eb6079df4612ae"
+    },
+    {
+      "id": "neohex-3",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/neohex/neohex_03.webp",
+      "sha256": "4b9e08fa9d8670bcc86f9478cbeda74b0458e38685256214130829d417e77690"
+    },
+    {
+      "id": "neohex-4",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/neohex/neohex_04.webp",
+      "sha256": "1bc9d2ea7f9025a5f107c4e1a526a5e79a9383a2e8305912e3a0fcf064d8de5e"
+    },
+    {
+      "id": "neohex-5",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/neohex/neohex_05.webp",
+      "sha256": "89a11e12903ffcebfa029a0c25584fbb313fcb37c7e40c1dfad45e181c2d4071"
+    },
+    {
+      "id": "neohex-6",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/neohex/neohex_06.webp",
+      "sha256": "fe50a9c5dd1c656ecab315488caf14500caea98a61a140154edb320d525773b1"
+    },
+    {
+      "id": "neohex-page",
+      "url": "https://docs.m5stack.com/en/unit/Unit_NeoHEX",
+      "sha256": "50656f97c997d8172dd8355a84c6a553647c99d6214acde474f22bb387f835b9"
+    },
+    {
+      "id": "neohex-dimension",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/532/A045_B_Model_Size_sch_01.png",
+      "sha256": "70ec6e7601ac7f5a58d88dd28097f89ae87ad167711b313a5965c3b92365fd36"
+    },
+    {
+      "id": "neohex-schematic",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/532/Sch_NeoHex_V1.1.pdf",
+      "sha256": "61b04df14606b953c275ea78587b051a9e6e98c00041766ab76e1d477e1f5d72"
+    },
+    {
+      "id": "neohex-led-layout",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/532/Sch_NeoHex_V1.1_sch_02.jpg",
+      "sha256": "5a335794b0fc4b2d6b1bf7021f26ba6fef4b425b5bcda1d39bf10064f1380e5a"
+    }
+  ],
+  "cadSearch": {
+    "officialHardwareTree": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "truncated": false,
+    "ownCadFound": false,
+    "scope": "Current officialM5_Hardware tree has noA045-B/NeoHEX mechanical route;not a claim about every possible source."
+  },
+  "structures": [],
+  "selectedAssembly": null,
+  "nativeTriangles": null,
+  "noNativeCadTriangleClaim": true,
+  "drawingFacts": {
+    "bodyFlatToFlatMm": 31,
+    "mountingOpposedCentersMm": 36,
+    "earOuterDiameterMm": 4,
+    "mountingBoreDiameterMm": 2,
+    "pcbThicknessMm": 1,
+    "bareAssemblyDepthMm": 9.55
+  },
+  "nominalMm": [
+    36,
+    36,
+    9.6
+  ],
+  "actualBareEnvelopeMm": [
+    35.79571533203125,
+    40,
+    9.549999916553498
+  ],
+  "actualDefaultEnvelopeMm": [
+    35.79571533203125,
+    40,
+    9.8499999165535
+  ],
+  "physicalPlacement": {
+    "leds": [
+      {
+        "number": 1,
+        "row": 0,
+        "col": 0,
+        "x": -7.3500000000000005,
+        "y": 12.75
+      },
+      {
+        "number": 2,
+        "row": 0,
+        "col": 1,
+        "x": -2.45,
+        "y": 12.75
+      },
+      {
+        "number": 3,
+        "row": 0,
+        "col": 2,
+        "x": 2.45,
+        "y": 12.75
+      },
+      {
+        "number": 4,
+        "row": 0,
+        "col": 3,
+        "x": 7.3500000000000005,
+        "y": 12.75
+      },
+      {
+        "number": 5,
+        "row": 1,
+        "col": 0,
+        "x": -9.8,
+        "y": 8.5
+      },
+      {
+        "number": 6,
+        "row": 1,
+        "col": 1,
+        "x": -4.9,
+        "y": 8.5
+      },
+      {
+        "number": 7,
+        "row": 1,
+        "col": 2,
+        "x": 0,
+        "y": 8.5
+      },
+      {
+        "number": 8,
+        "row": 1,
+        "col": 3,
+        "x": 4.9,
+        "y": 8.5
+      },
+      {
+        "number": 9,
+        "row": 1,
+        "col": 4,
+        "x": 9.8,
+        "y": 8.5
+      },
+      {
+        "number": 10,
+        "row": 2,
+        "col": 0,
+        "x": -12.25,
+        "y": 4.25
+      },
+      {
+        "number": 11,
+        "row": 2,
+        "col": 1,
+        "x": -7.3500000000000005,
+        "y": 4.25
+      },
+      {
+        "number": 12,
+        "row": 2,
+        "col": 2,
+        "x": -2.45,
+        "y": 4.25
+      },
+      {
+        "number": 13,
+        "row": 2,
+        "col": 3,
+        "x": 2.45,
+        "y": 4.25
+      },
+      {
+        "number": 14,
+        "row": 2,
+        "col": 4,
+        "x": 7.3500000000000005,
+        "y": 4.25
+      },
+      {
+        "number": 15,
+        "row": 2,
+        "col": 5,
+        "x": 12.25,
+        "y": 4.25
+      },
+      {
+        "number": 16,
+        "row": 3,
+        "col": 0,
+        "x": -14.700000000000001,
+        "y": 0
+      },
+      {
+        "number": 17,
+        "row": 3,
+        "col": 1,
+        "x": -9.8,
+        "y": 0
+      },
+      {
+        "number": 18,
+        "row": 3,
+        "col": 2,
+        "x": -4.9,
+        "y": 0
+      },
+      {
+        "number": 19,
+        "row": 3,
+        "col": 3,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "number": 20,
+        "row": 3,
+        "col": 4,
+        "x": 4.9,
+        "y": 0
+      },
+      {
+        "number": 21,
+        "row": 3,
+        "col": 5,
+        "x": 9.8,
+        "y": 0
+      },
+      {
+        "number": 22,
+        "row": 3,
+        "col": 6,
+        "x": 14.700000000000001,
+        "y": 0
+      },
+      {
+        "number": 23,
+        "row": 4,
+        "col": 0,
+        "x": -12.25,
+        "y": -4.25
+      },
+      {
+        "number": 24,
+        "row": 4,
+        "col": 1,
+        "x": -7.3500000000000005,
+        "y": -4.25
+      },
+      {
+        "number": 25,
+        "row": 4,
+        "col": 2,
+        "x": -2.45,
+        "y": -4.25
+      },
+      {
+        "number": 26,
+        "row": 4,
+        "col": 3,
+        "x": 2.45,
+        "y": -4.25
+      },
+      {
+        "number": 27,
+        "row": 4,
+        "col": 4,
+        "x": 7.3500000000000005,
+        "y": -4.25
+      },
+      {
+        "number": 28,
+        "row": 4,
+        "col": 5,
+        "x": 12.25,
+        "y": -4.25
+      },
+      {
+        "number": 29,
+        "row": 5,
+        "col": 0,
+        "x": -9.8,
+        "y": -8.5
+      },
+      {
+        "number": 30,
+        "row": 5,
+        "col": 1,
+        "x": -4.9,
+        "y": -8.5
+      },
+      {
+        "number": 31,
+        "row": 5,
+        "col": 2,
+        "x": 0,
+        "y": -8.5
+      },
+      {
+        "number": 32,
+        "row": 5,
+        "col": 3,
+        "x": 4.9,
+        "y": -8.5
+      },
+      {
+        "number": 33,
+        "row": 5,
+        "col": 4,
+        "x": 9.8,
+        "y": -8.5
+      },
+      {
+        "number": 34,
+        "row": 6,
+        "col": 0,
+        "x": -7.3500000000000005,
+        "y": -12.75
+      },
+      {
+        "number": 35,
+        "row": 6,
+        "col": 1,
+        "x": -2.45,
+        "y": -12.75
+      },
+      {
+        "number": 36,
+        "row": 6,
+        "col": 2,
+        "x": 2.45,
+        "y": -12.75
+      },
+      {
+        "number": 37,
+        "row": 6,
+        "col": 3,
+        "x": 7.3500000000000005,
+        "y": -12.75
+      }
+    ],
+    "mountingCenters": [
+      [
+        15.588457268119896,
+        8.999999999999998
+      ],
+      [
+        1.102182119232618e-15,
+        18
+      ],
+      [
+        -15.588457268119896,
+        8.999999999999998
+      ],
+      [
+        -15.588457268119894,
+        -9.000000000000002
+      ],
+      [
+        -3.3065463576978533e-15,
+        -18
+      ],
+      [
+        15.58845726811989,
+        -9.000000000000007
+      ]
+    ],
+    "grove": {
+      "grove": {
+        "position": [
+          10.8,
+          0,
+          -3.05
+        ],
+        "face": "right",
+        "role": "input"
+      },
+      "out": {
+        "position": [
+          -10.8,
+          0,
+          -3.05
+        ],
+        "face": "left",
+        "role": "output"
+      },
+      "grove-in": {
+        "position": [
+          0,
+          -8.2,
+          -8.2
+        ],
+        "face": "back",
+        "role": "input"
+      }
+    }
+  },
+  "appearanceInferences": [
+    "Exact LED pitch/installation,encapsulant/package/connector/passive envelopes andsolder shapes fromown multi-view photographs.",
+    "Unspecified breakaway slot geometry andplating thickness;retained positive mounting andsquare-pin clearances.",
+    "Diffuser thickness0.3mm/material andseat onactual37package tops;nooptical calibration ormanufacturing fit.",
+    "Clear glyph/font/color/registration reconstruction;unreadable batch print excluded."
+  ],
+  "noBorrowedHexOrCad": true,
+  "behaviorBoundary": "Physical ownA045-B structure and independently externally driven visible LEDs only;no WS2812,cascade,power,firmware or electrical behavior.",
+  "assetPolicy": {
+    "ordinaryRastersOnly": true,
+    "rawSourcesDistributed": false,
+    "privateSourcesDistributed": false,
+    "generatorsDistributed": false
+  },
+  "codeLicense": "MIT",
+  "rights": "Third-party product printed design/trademarks retain respective rights."
+}

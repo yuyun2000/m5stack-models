@@ -1,8 +1,48 @@
 # 新增 Unit 贴纸接入
 
-## 最新本地增量：NBIoT2 / NBIoT-CN / Mini Proto
+## 最新本地增量：CatM / NeoHEX / ENV-IV
 
-当前本地151款（14主机、137Unit），全部 `modeled`、`verified` 为0。本批新增`nbiot2` U111-B、`nbiot-cn` U112、`mini-proto` U064及5张本款普通PNG。本次Git同步包含这151款源码，新增八批共24款及48张PNG；提交与远端状态以Git日志为准，见[151款同步记录](GIT-SYNC-151-2026-10-27.md)。下方各前批检查点中的Git数量与未推送描述保留其历史时点。真实结构/配置/API见[本批接入指南](NBIOT-MINI-PROTO-UNITS.md)，38批范围见[增量索引](LOCAL-EXPANSION.md)。
+当前本地163款（14主机、149Unit），全部 `modeled`、`verified` 为0。本批新增CatM U128、NeoHEX A045-B、ENV-IV U001-D及5张本款普通PNG。本次Git同步收录全部163款及批37–40新增的12款/27PNG，见[163款同步记录](GIT-SYNC-163-2026-10-27.md)。历史检查点中的未推送描述保留其保存时点；当前提交与远端状态以Git日志及GitHub main为准。实际结构/API见[本批指南](CATM-NEOHEX-ENVIV-UNITS.md)，42批范围见[增量索引](LOCAL-EXPANSION.md)。
+
+CatM保本款6592完整原装面、单普通SMA/蓝Grove/NanoSIM与真实蜂窝封装，不借宽壳CatM GNSS；未证外灯光路/铰轴不造外灯或关节。NeoHEX无CAD，按自身尺寸图与照片参数化37真实灯、两斜一竖Grove形接口、六耳和独立均光片；36mm孔心基准/31mm主体/耳外包络及9.55图纸/9.6规格分记。ENV-IV无CAD，按自身尺寸与实板照片构建通气壳、红Grove和SHT40/BMP280，真实槽壁/安装背衬齐备。隐蔽壁/卡扣、安装和附件配准推导分别记录；真实配置/附件/可达组件依最终冻结API，不称制造或量产配合验收。
+
+贴纸随三款同步：Unit CatM 2张原稿栅格；Unit NeoHEX 2张参考重绘；Unit ENV-IV 1张原稿栅格。原稿/官方平面栅格/参考重绘按各自artwork记录，PCB印字不添胶膜；排包装/错版/照片裁切/不可辨微字，印刷不遮缺件。两入口实际配置artwork:false保全部物理attributes/index/world。必要检查包括三分支真实四芯、多接口/独立装拆、真实附件与外驱灯noecho、peer/framebuffer/disposal、8导出/两build/5188实际资源字节；执行记录见[本批进度](../artifacts/catm-neohex-enviv-expansion/progress.json)。没有蜂窝/UART/网络、电气/WS2812级联、环境读数或固件状态。未逐面浏览器/GPU、历史全量、制造或实物验收。私表/URL/原名/映射/矢量/生成器/中间材料继续只留分发树外。
+
+
+## 前批检查点：UnitV-OV7740 / LoRaE220-433 / 8Servos2-I2C
+
+该批保存时本地160款（14主机、146Unit），全部 `modeled`、`verified` 为0。本批新增UnitV-OV7740 U078-C、LoRaE220-433 U170-433、8Servos2-I2C U222及7张本款普通PNG。GitHub `main`的151款已同步于 `a8198a5`，见[151款同步记录](GIT-SYNC-151-2026-10-27.md)；随后三批共9款/22PNG仍是本地增量，未再次提交推送。真实结构/API见[本批接入指南](UNITV-LORA433-SERVOS2-UNITS.md)，41批范围见[增量索引](LOCAL-EXPANSION.md)。
+
+UnitV保本款7056原装源面、真实双原生弹片与plunger、镜头/板/USB/TF/Grove和RGB真实孔；按钮只改变对应原生弹片及真实压杆，具体可达组件以冻结API为准。LoRa433保自身6614原装面、两个真实稳定DIP与普通SMA，配套110mm天线独立可拆且静态，未证铰轴不猜关节或RPM。8Servos2无本款CAD，依据自身六视尺寸/清楚照片完整参数化；双Grove/DC/24个male针、固定刻度与16稳定档rotary-selector齐备，支持实际drag和外驱无回声；真实LED外部光路未证则不造外灯。隐藏安装、参数化壳壁/卡扣、控件行程与附件轮廓推导分记，不称制造或量产配合验收。
+
+贴纸同步按各自artwork.json分列：UnitV-OV7740 1张官方平面栅格；Unit LoRaE220-433 3张参考重绘；Unit 8Servos2-I2C 3张原稿栅格+参考重绘。UnitV使用整块官方平面位图，不称私矢量原稿或重绘；LoRa433的第三面是固定DIP cover印字，不添第三张物理膜；U222前背原稿与固定刻度重绘不统称原稿。排包装/错版/照片裁切/不可辨微字，印刷不遮缺件；所有入口实际配置artwork:false保全部物理attributes/index/world。必要检查包括三分支真实四芯、双键与固定件、稳定DIP/16档选择器drag和外驱无回声、实际配置/独立装拆/framebuffer、16档demo面板的两份专项报告及7导出/两build/5188实际资源字节，执行结果见[本批进度](../artifacts/unitv-lora433-servos2-expansion/progress.json)。没有摄像/AI/SD/USB/UART、RF/模式、电气/PWM/地址算法或内部舵机状态；未逐面浏览器/GPU、历史全量、制造或实物验收。私表/URL/原名/映射/矢量/生成器/中间件继续只留分发树外。
+
+
+## 前批检查点：DoF6 / DoF9 / BMM350
+
+该批保存时本地157款（14主机、143Unit），全部 `modeled`、`verified` 为0。本批新增DoF6 U228、DoF9 U229、BMM350 U231及9张本款普通PNG。GitHub `main`的151款已同步于 `a8198a5`，见[151款同步记录](GIT-SYNC-151-2026-10-27.md)；随后两批共6款/15PNG仍是本地增量，未再次提交推送。真实结构/API见[本批接入指南](DOF6-DOF9-BMM350-UNITS.md)，40批范围见[增量索引](LOCAL-EXPANSION.md)。
+
+三款分别保各自官方路径的完整4188原装壳面。发布壳源字节相同不推出板上器件、控件和印刷相同：DoF6仅BMI270，DoF9为BMI270+BMM350，BMM350只保本款磁感封装；共享原理图NC/选件和DoF10气压件不跨款装入。真实PCB/Grove/孔壁/背衬/标签薄膜齐备；DoF6/DoF9真实稳定SW1只移动滑片和杆，释放/取消保档，BMM350顶槽保本款固定黑色背衬且无虚构拨片。实际组件/服务配置及推导边界以冻结API与单品来源为准。
+
+每款同步从有效本体原稿栅格或可读本款官图代码重绘PNG，排包装/错版/照片裁切/不可辨微字，不能靠印刷遮缺件。两入口实际配置artwork:false保全部物理attributes/index/world。三分支真实四芯、稳定档位/多源取消和外驱无回声、实际配置与其余物理保持、独立装拆/framebuffer、6导出/两build/5188实际资源字节见[本批进度](../artifacts/dof6-dof9-bmm350-expansion/progress.json)。没有惯性/磁场读数、地址算法、固件或电气状态；未逐面浏览器/GPU、历史全量、制造或实物验收。私表/URL/原名/映射/矢量/生成器/中间件继续只留分发树外。
+
+
+## 前批检查点：HBridge / CatM GNSS / Ultrasonic-IO
+
+该批保存时本地154款（14主机、140Unit），全部 `modeled`、`verified` 为0。本批新增`hbridge` U160、`catm-gnss` U137、`ultrasonic-io` U098-B2及6张本款普通PNG。GitHub `main`的151款已同步于 `a8198a5`，见[151款同步记录](GIT-SYNC-151-2026-10-27.md)；本批3款/6张实际PNG仍是本地增量，未再次提交推送，当前待同步合计3款/6PNG。真实结构/配置/API见[本批接入指南](HBRIDGE-CATM-ULTRASONIC-UNITS.md)，39批范围见[增量索引](LOCAL-EXPANSION.md)。
+
+原HBridge U160保自身5592原装面和STM32/RZ7899/供电实体、Grove/4P座及本款可拆四头插头，区别已覆盖U160-V11。实际四位DIP/VM稳定滑选仅滑片/杆改变档位；被前盖挡住时没有穿壳pointer目标，外部真实档位API仍保留，去对应盖后才可指针交互。头角外驱不模拟轴向夹紧，不借v1.1的loose电容或造旋钮、马达状态。
+
+CatM GNSS U137以自身5284原装面为源；左SMA窗口限域派生后运行5248面（前2610/后2638），前2489原面保留、157原面在限域内替换为121新面，完整后壳保持。区域、保留/替换对应与材料闭合以最终sources/smoke为准，不把5284源面数当运行保留面数。宽壳/四安装孔、SIM7080G/实际板、MicroSIM/DC/Grove与双SMA齐备，不套窄NBIoT/NanoSIM。六种真实配置、LTE杆与GNSS同轴+puck独立装拆；只有真实可辨轴才给外驱展示角，同轴与Grove四芯分开。NET/STA标签不当外部光路证据，真实内部载体保留但光路未证不造外灯或网络/定位状态。
+
+Ultrasonic-IO U098-B2保自身5510原面/原公差、RCWL-9620 GPIO板、黑Grove、两个真实网罩/深膜片及支撑、后盖与本款IO背标，不借B1 I2C打印或拉壳。官方错PinMap已反馈，按自身清楚PORT.B I/O照片记外观；没有声波/膜片动画、读数、触发回声时序或电气/固件行为。
+
+贴纸同步本款原稿栅格或本款清楚官图代码重绘，逐款分列来源；不裁照片/借错型号/编小字/靠PNG填缺件。所有入口实际配置artwork:false保全部物理attributes/index/matrixWorld。必要专项 `node scripts/check-hbridge-catm-ultrasonic-units.mjs`，实际分支四芯/动作固定分离/独立装拆、9导出、两build及5188源PNG/运行chunk字节范围见[本批进度](../artifacts/hbridge-catm-ultrasonic-expansion/progress.json)。未逐面浏览器/GPU、全量历史、制造或实物验收；私表/URL/原稿名/矢量/映射/生成器/中间件继续分发树外。
+
+
+## 前批检查点：NBIoT2 / NBIoT-CN / Mini Proto
+
+该批保存时本地151款（14主机、137Unit），全部 `modeled`、`verified` 为0。本批新增`nbiot2` U111-B、`nbiot-cn` U112、`mini-proto` U064及5张本款普通PNG。本次Git同步包含这151款源码，新增八批共24款及48张PNG；提交与远端状态以Git日志为准，见[151款同步记录](GIT-SYNC-151-2026-10-27.md)。下方各前批检查点中的Git数量与未推送描述保留其历史时点。真实结构/配置/API见[本批接入指南](NBIOT-MINI-PROTO-UNITS.md)，38批范围见[增量索引](LOCAL-EXPANSION.md)。
 
 NBIoT2 U111-B与NBIoT-CN U112分别保SIM7028/SIM7020C本款通信载体、板/卡座、Grove/普通SMA及自身机身；各自官方CAD路径壳字节相同只说明发布壳源相同，不推出内部、标签或天线相同。默认不凭空附SIM卡，真实后盖服务配置才暴露原遮挡内部。天线按本款官图独立可拆，只有真实可辨结构才给外驱关节，尺寸/轴/展示角推导不称量产止挡。D1外光路未证不造外灯或把金色安装窗当按钮。
 
@@ -76,7 +116,7 @@ ZigBee保真实DRF1609H载板/SMA、可拆胶棒天线和外驱 `sma/tilt`；CO2
 6张PNG为ZigBee/CO2L各2张 `reference-redraw` 与INA226-1A本机1A/80mR两片原稿转 `source-vector-raster`；剔除包装和10A贴纸。`artwork:false`保留两入口/各配置全部物理attributes/index/matrixWorld、真实膜或壳面、PCB/封装/腔壁和接口。必要专项 `node scripts/check-zigbee-co2l-ina226-1a-units.mjs`，保存范围见[本批进度](../artifacts/zigbee-co2l-ina226-1a-expansion/progress.json)；没有新增逐面浏览器、全量历史或实物验收。表格、私有链接/原稿名、矢量、生成器和中间材料继续仓库外。
 
 
-2026-10-27。下表保留此前105款新增Unit，本批增加NBIoT2 / NBIoT-CN / Mini Proto及5张本款PNG，现列108款。原稿栅格与参考重绘按单品分列，不能混称来源。当前本地151款（14主机、137Unit），全部modeled/0verified；Git127main3681a64已同步，随后24款/48PNG未再push。38批范围见公开工作副本索引，旧43款/50PNG延期复核边界保持。
+2026-10-27。下表保留此前117款新增Unit，本批增加CatM / NeoHEX / ENV-IV及5张本款PNG，现列120款。原稿栅格、官方平面栅格与参考重绘按单品分列。当前本地163款（14主机、149Unit），全部modeled/0verified；本次同步163款；批37–40共12款/27PNG纳入Git。42批范围见公开工作副本索引；旧43款/50PNG延期复核边界保持。
 
 | 产品ID | SKU | 当前来源类型 | PNG数 | 具体面与限制 |
 | --- | --- | --- | --- | --- |
@@ -188,6 +228,18 @@ ZigBee保真实DRF1609H载板/SMA、可拆胶棒天线和外驱 `sma/tilt`；CO2
 | `nbiot2` | U111-B | 参考重绘 | 2 | [来源与配准](research/nbiot2/artwork.json)；本款前后机身标；不借U111全球版或U112印刷 |
 | `nbiot-cn` | U112 | 参考重绘 | 2 | [来源与配准](research/nbiot-cn/artwork.json)；本款CN机身标；不借U111/U111-B印刷 |
 | `mini-proto` | U064 | 参考重绘 | 1 | [来源与配准](research/mini-proto/artwork.json)；本款实际背标/PCB印刷；裸洞板不凭空加胶贴或用户电路 |
+| `hbridge` | U160 | 参考重绘 | 2 | [来源与配准](research/hbridge/artwork.json)；原U160机身标；不借U160-V11内容 |
+| `catm-gnss` | U137 | 参考重绘 | 3 | [来源与配准](research/catm-gnss/artwork.json)；本款机身/真实附件印刷；不借窄NBIoT |
+| `ultrasonic-io` | U098-B2 | 原稿栅格 | 1 | [来源与配准](research/ultrasonic-io/artwork.json)；本款PORT.B I/O背标；排包装/错I2C视图 |
+| `dof6` | U228 | 原稿栅格 | 3 | [来源与配准](research/dof6/artwork.json)；本款BMI270/真实稳定SW1；不装BMM350/可选NC件 |
+| `dof9` | U229 | 原稿栅格 | 3 | [来源与配准](research/dof9/artwork.json)；本款BMI270+BMM350及真实SW1；不借DoF10气压件 |
+| `bmm350` | U231 | 原稿栅格 | 3 | [来源与配准](research/bmm350/artwork.json)；本款BMM350与固定空槽背衬；不造address拨片 |
+| `unitv-ov7740` | U078-C | 官方平面栅格 | 1 | [来源与配准](research/unitv-ov7740/artwork.json)；本款7056原面/真实双原生弹片与plunger/RGB真实孔；背标为整块官方平面栅格，非私矢量或重绘 |
+| `lora-e220-433` | U170-433 | 参考重绘 | 3 | [来源与配准](research/lora-e220-433/artwork.json)；本款6614原面/两个稳定DIP/普通SMA静态110mm附件；正背膜与固定DIP cover印字共3参考重绘面，不添假膜或猜关节 |
+| `8servos2-i2c` | U222 | 原稿栅格+参考重绘 | 3 | [来源与配准](research/8servos2-i2c/artwork.json)；无CAD，按本款六视/照片完整参数化；双Grove/DC/24个male针/16稳定档rotary-selector，前背原稿与固定刻度重绘按本款记录分列 |
+| `catm` | U128 | 原稿栅格 | 2 | [来源与配准](research/catm/artwork.json)；本款6592完整原装面/单普通SMA与NanoSIM；本款膜与实际附件依冻结API，不借宽壳CatM GNSS |
+| `neohex` | A045-B | 参考重绘 | 2 | [来源与配准](research/neohex/artwork.json)；无CAD，依据本款尺寸/照片参数化37真实灯、三Grove座、六耳与独立均光片；印字在真实PCB，不添胶膜 |
+| `env-iv` | U001-D | 原稿栅格 | 1 | [来源与配准](research/env-iv/artwork.json)；无CAD，依据本款尺寸/裸板参数化通气壳、红Grove、SHT40/BMP280；不借ENV-III或造控件/外灯/读数 |
 
 每款已接入的面和仍缺的小字以单品记录为准，不表示所有印刷面都已完整还原。2Relay部分正面小字缺原稿支持；Fingerprint2原稿中的指纹图形只有200×200像素，保持原生位图并与高清矢量文字分层，未放大冒充更高精度。营销图上的尺寸箭头、屏幕保护膜和外部注释不会作为永久印刷贴到屏幕或活动帽。相似Module/HAT、新旧Unit的贴纸不混用。
 

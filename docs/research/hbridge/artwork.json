@@ -1,0 +1,73 @@
+{
+  "id": "hbridge",
+  "sku": "U160",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Two body-label layouts redrawn in code from readable exact original U160 official front/rear photographs. Recreated front HV/G/M−/M+ strip,blue H/BRIDGE/UNIT;rear H-BRIDGE,STM32F030,VM source schematic and PORT.A.I2C/SCL/SDA/5V/GND. No photographic pixels/cropping and no other revision artwork.",
+  "sources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Hbridge%20Unit/img-7d6f90c1-2a1d-4b5e-bcbf-167b1568007c.webp",
+      "sha256": "b3288ae94f3fa94e82b460328d961c0420d23e2ca7a6b72a11dee14d4ec8ba89"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Hbridge%20Unit/img-08e15ee0-02f7-4a5f-a73e-de5498e3bf79.webp",
+      "sha256": "2543a2d4326107bddf7071b319c6421181f755fe3b4db096989975f8e910563f"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/hbridge/reference-redraw-front.png",
+      "sha256": "77d492b23d620cbcc377a606b255f63740631cc6ae9fb16f3d1164f4c43f7c78",
+      "pixels": [
+        1800,
+        3037
+      ],
+      "sizeMm": [
+        16.05,
+        27.08
+      ],
+      "positionMm": [
+        0,
+        2.5,
+        3.8
+      ],
+      "face": "front",
+      "kind": "reference-redraw",
+      "method": "printedArtwork",
+      "metadata": "Only numeric physical pixel density;no EXIF/ICC/text/private source information"
+    },
+    {
+      "path": "src/units/hbridge/reference-redraw-back.png",
+      "sha256": "d8bbf821ed5501eef3d770153786f20109b773214209dc4c106ebb199b3be87c",
+      "pixels": [
+        1800,
+        4015
+      ],
+      "sizeMm": [
+        16.23,
+        36.2
+      ],
+      "positionMm": [
+        0,
+        7.9,
+        -3.84
+      ],
+      "face": "back",
+      "kind": "reference-redraw",
+      "method": "printedArtwork",
+      "metadata": "Only numeric physical pixel density;no EXIF/ICC/text/private source information"
+    }
+  ],
+  "readabilityCheck": "Both final PNGs opened in one contact proof;readable uncropped labels and thin circuit strokes.Font/color/line registration are photographic reconstructions,not original production artwork.",
+  "limitations": [
+    "Fonts,spacing,color and line registration inferred from photos;not exact vector exports or measured colorimetry.",
+    "Physical films rest on original native closed recess support and remain with artwork:false.",
+    "Front service view removes front film/ink together with entire front cover and released fastener;rear film stays.",
+    "All physical attributes,index and world matrices invariant with artwork:false across both entries,four actual cover/plug presets and stable cap/head poses.",
+    "Only final ordinary PNGs distributed;no vectors,raw evidence,generators,proofs,table,private source links or mappings."
+  ],
+  "rights": "Product printed designs,names and trademarks retain their respective rights."
+}

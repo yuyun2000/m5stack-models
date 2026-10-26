@@ -1,0 +1,300 @@
+{
+  "id": "catm",
+  "sku": "U128",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_CatM",
+  "retrievedAt": "2026-10-27",
+  "officialMCP": {
+    "query": "Unit CatM U128 SIM7080G structure dimensions Nano SIM antenna NETLIGHT",
+    "filter_type": "product",
+    "is_chip": false,
+    "result": "OwnU128 product andownschematic included alongside rejectedU137 sibling results;onlyexactU128 facts used."
+  },
+  "sourceFiles": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3/Products/U128_Unit_CatM/Structures/Unit_CatM.stl",
+      "sha256": "6d93ea1962caf38864027accc041acb990a61e3360581aad16edf30ec294b17f",
+      "bytes": 659284
+    },
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3/LICENSE",
+      "sha256": "44611d917bece311f5c8eeffce83d8bf9e9ca3f815d262f694ff4a7996af50ea",
+      "bytes": 1063
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/824/U128_main_pictures_01.jpg",
+      "sha256": "a3e4dd561341cd16aa8bc0fe638ec4f9559d13999cd52d0dc726331d1cee7d49",
+      "bytes": 106631
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/cat_m/cat_m_sch_01.webp",
+      "sha256": "dd379979d0031cf6f8baae204861f10734ec71b0aeab340c10e0b7fb89935a8e",
+      "bytes": 208616
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/cat_m/cat_m_01.webp",
+      "sha256": "02101d22b8f86cf2f3ac9421298b55d47e827f8d04524fd9672fb7f88b781586",
+      "bytes": 127146
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/cat_m/cat_m_02.webp",
+      "sha256": "30f2ae8fa51da78661fc22420aa2a0d3e6d217f686b8abec4818f677a18cef9e",
+      "bytes": 43928
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/cat_m/cat_m_03.webp",
+      "sha256": "51a86b73c07576ccc25b0e3443896da92281d77ef393df8d4e1194328d426d41",
+      "bytes": 80986
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/cat_m/cat_m_06.webp",
+      "sha256": "efb28428bc81b5d1321732050c55962ac89c5f578c79960ade2e804df5285bd7",
+      "bytes": 47064
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/cat_m/cat_m_07.webp",
+      "sha256": "35254f1f8799c9af7d4bb005d2d4385282504ce55529b04100506eaeaa94598c",
+      "bytes": 53144
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/cat_m/cat_m_08.webp",
+      "sha256": "721d77a5b7d5c5d7eb2b61584b43e9fea3f9be6fec95d9e4adf9d80abac0b7b5",
+      "bytes": 45252
+    }
+  ],
+  "cad": {
+    "sku": "U128",
+    "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3/Products/U128_Unit_CatM/Structures/Unit_CatM.stl",
+    "commit": "c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3",
+    "gitBlob": "cd451d15e2d03f37e80e7db05bf7f82fa56a78ba",
+    "sha256": "6d93ea1962caf38864027accc041acb990a61e3360581aad16edf30ec294b17f",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3/LICENSE",
+    "origin": [
+      0,
+      32,
+      -4
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "originalAssemblyTriangles": 6592,
+    "originalFaceRangesZeroBasedInclusive": [
+      [
+        0,
+        3857
+      ],
+      [
+        7716,
+        10449
+      ]
+    ],
+    "parts": [
+      {
+        "component": 0,
+        "name": "CatM U128 complete own native assembled front and rear housing",
+        "triangles": 6592
+      }
+    ],
+    "excludedDisplayComponents": [
+      1,
+      2
+    ],
+    "localModification": null,
+    "notes": "Exact U128 own assembled connected group0,all6592faces retained under one common translation andscale1.Separate displaced3858rear/2734front copies excluded.NoU137 geometry,noindependent halfmoves,nosource repair orface deletion.Original coincident mating seams retained,combined source notclaimed a single manifold.Native64mm housing notstretched to72mm SMA-inclusive nominal."
+  },
+  "publicAPI": {
+    "exports": [
+      "Model",
+      "GroveModule",
+      "Antenna",
+      "spec",
+      "default=Model"
+    ],
+    "assemblyProperty": "catmAssembly",
+    "bodyComponentOrder": [
+      "grove",
+      "sma"
+    ],
+    "moduleComponentOrder": [
+      "grove",
+      "sma",
+      "unitFrame",
+      "cable"
+    ],
+    "ports": [
+      "grove",
+      "sma"
+    ],
+    "canonicalGrove": "grove",
+    "controls": [],
+    "leds": [],
+    "anchors": [],
+    "joints": [],
+    "defaultOptions": {
+      "antenna": false
+    },
+    "configurationSchema": {
+      "antenna": {
+        "type": "boolean",
+        "default": false
+      }
+    },
+    "configurations": [
+      {
+        "id": "complete",
+        "name": "Complete unit / receiving SMA socket",
+        "options": {
+          "antenna": false
+        }
+      },
+      {
+        "id": "with-antenna",
+        "name": "Supplied static straight antenna",
+        "options": {
+          "antenna": true
+        }
+      }
+    ],
+    "configurationCases": [
+      {
+        "id": "complete",
+        "name": "Complete unit / receiving SMA socket",
+        "options": {
+          "antenna": false
+        },
+        "ports": [
+          "grove",
+          "sma"
+        ],
+        "controls": [],
+        "anchors": [],
+        "joints": [],
+        "nativeTriangles": 6592,
+        "artworkPanels": 2
+      },
+      {
+        "id": "with-antenna",
+        "name": "Supplied static straight antenna",
+        "options": {
+          "antenna": true
+        },
+        "ports": [
+          "grove",
+          "sma"
+        ],
+        "controls": [],
+        "anchors": [],
+        "joints": [],
+        "nativeTriangles": 6592,
+        "artworkPanels": 2
+      }
+    ],
+    "serviceConfigurations": [],
+    "serviceRemovals": [],
+    "moving": {},
+    "fixedPhysicalFields": [
+      "catmAssembly.parts[*]",
+      "catmAssembly.pcb.pcb",
+      "catmAssembly.pcb.pads[*]",
+      "catmAssembly.pcb.barrels[*]",
+      "catmAssembly.pcb.substrate",
+      "catmAssembly.pcb.module",
+      "catmAssembly.pcb.packages[*].body",
+      "catmAssembly.pcb.packages[*].pins[*]",
+      "catmAssembly.pcb.inductor",
+      "catmAssembly.pcb.capacitors[*]",
+      "catmAssembly.pcb.netlight",
+      "catmAssembly.pcb.ipexBase",
+      "catmAssembly.pcb.ipex",
+      "catmAssembly.pcb.ipexPin",
+      "catmAssembly.pcb.coax",
+      "catmAssembly.pcb.coaxPlug",
+      "catmAssembly.input.frame",
+      "catmAssembly.sma.frame",
+      "catmAssembly.sim.frame",
+      "catmAssembly.screws[*].head",
+      "catmAssembly.screws[*].floor",
+      "catmAssembly.screws[*].shank",
+      "catmAssembly.labels.front",
+      "catmAssembly.labels.back"
+    ],
+    "assemblyFields": [
+      "parts",
+      "pcb",
+      "input",
+      "sma",
+      "sim",
+      "screws",
+      "labels"
+    ],
+    "commands": [],
+    "inputEvents": [],
+    "portContract": "Actual Grove and ordinarySMA attachment/detachment via corePort API;GroveModule provides unitFrame pose/cable external commands.No sensor,RF,UART,AT,network,electrical orfirmware input command.",
+    "concealedNanoSIM": {
+      "assemblyField": "catmAssembly.sim",
+      "contacts": 6,
+      "concealed": true,
+      "cardIncluded": false,
+      "exposedPort": false
+    },
+    "accessoryExports": [
+      "Antenna"
+    ],
+    "accessory": {
+      "export": "Antenna",
+      "port": "sma",
+      "connector": "sma-female",
+      "physicalConnector": "sma-male",
+      "assemblyProperty": "antennaAssembly",
+      "components": [],
+      "joints": [],
+      "controls": [],
+      "static": true,
+      "observedPose": "straight",
+      "hingeAxisVerified": false,
+      "options": {},
+      "dimensionsInferred": true,
+      "scope": "Own supplied straight rubber-duck appearance withindependent mechanical attachment.No hinge/tilt/RPM/RF/electrical behavior."
+    }
+  },
+  "artwork": {
+    "kind": "source-vector-raster",
+    "pngCount": 2,
+    "sourceDetails": "docs/research/catm/artwork.json",
+    "originalsDistributed": false
+  },
+  "scope": "OwnU128 complete native housing plusactual own documented populated-board/ports/NanoSIM/pigtail/supplied static accessory appearance,real four-core attachment.NoRF/UART/AT/network/electrical orfirmware implementation.",
+  "inferred": [
+    "Hidden carrier PCB outline/installation and secondary package dimensions/placement are inferred from this own populated-board photograph,not a manufacturing assembly or completeBOM.",
+    "SIM7080G package footprint follows documented17.6×15.7mm envelope;concealed NanoSIM six-contact floor/shield/spring details are appearance reconstruction.No supplied card or external SIM socket is exposed.",
+    "Ordinary SMA bulkhead bore/thread/coax/coupling/contact dimensions and fit are inferred;all are real closed material surfaces,not a certified connector model.",
+    "Supplied straight antenna111mm/9.4mm appearance estimates and internal pin/support allocation are inferred from this own photograph,no measured antenna drawing/hinge axis/stop/RF acceptance.",
+    "Film outline dimensions/thickness and registration in the native recesses are inferred;source vector letterforms/design retained asraster,newer own source rear design includescertification panel absent fromolder official photo.",
+    "No exterior LED light path was proved;actual concealed0603 NETLIGHT package remains nonemissive.No mechanical control,joint,service configuration,cellular/UART/AT/network/electrical/firmware behavior.",
+    "Scoped geometry/API smoke and final raster opening only;noGPU/browser/physical/production-fit acceptance."
+  ],
+  "notes": [
+    "All6592own source0 directedfaces preserved atonecommon transform/scale1;the sourcegroup has noncontiguous zero-based inclusive face ranges[0,3857]and[7716,10449].No U137 borrowing orfirst6592-face shortcut.",
+    "Native64mmhousing and72mm SMA-inclusive length recorded separately;antenna independent.Optional supplied accessory static,no inferred hinge.",
+    "Original source mating-edge coincidences retained,combined source notclaimed asinglemanifold.Constructed materials independentlycoordinate-welded directedcount-two andpositive.",
+    "Native front/rear gold-window openings backed byactual captured hex,Grove bydielectric floor/rear andfour metalcontacts.Real mountbores stayempty.",
+    "NanoSIM remains concealed behindcomplete unchangedsource lateral walls;no externalport/fakecardslot.No externalNETLIGHT hole orLED API.",
+    "Exact source front/back artwork2ordinaryPNG,newer back certification panel retained transparently;physicalfilms remain withartwork:false.",
+    "Raw official CAD/photos/schematic/MCP andprivateCSV/vectors/names/URLs/mappings/generators/proofs/intermediates stayexcluded frompublictree."
+  ]
+}

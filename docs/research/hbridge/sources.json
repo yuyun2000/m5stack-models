@@ -1,0 +1,351 @@
+{
+  "id": "hbridge",
+  "sku": "U160",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_HBridge",
+  "retrievedAt": "2026-10-27",
+  "officialMCP": {
+    "lookup": "Exact original U160 current-product official MCP lookup and own schematic/photo evidence",
+    "rawResponseDistributed": false,
+    "result": "Original STM32F030F4P6/RZ7899/MP1584EN-LF-Z controller board,4-position DIP and stable VM selector,red Grove,orange HT3.96 4P socket with independent supplied four-screw plug. No synthetic motor or electrical behavior."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Hbridge%20Unit/img-3f610a3a-12be-4bd9-83b7-32f24b16b982.webp",
+    "sha256": "e97d015f9b6e1dcd04d5d42facb5b6f8d40546764cf730bcb55e10ec6e42701c"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/a9ac25ce7325a37b03b3f4457a6f45caf3b058dc/Products/U160_Unit_HBridge/Structures/Unit_HBridge.stl",
+      "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/653b0c9a5ea8565089f589aa1a377fe80cab0e5f",
+      "commit": "a9ac25ce7325a37b03b3f4457a6f45caf3b058dc",
+      "gitBlob": "653b0c9a5ea8565089f589aa1a377fe80cab0e5f",
+      "sha256": "c852b7f4834dc9fa8a2ccb702c0e782fa56bd50006cc3cfef44b2c5667c7b527",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/a9ac25ce7325a37b03b3f4457a6f45caf3b058dc/LICENSE"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Hbridge%20Unit/img-3f610a3a-12be-4bd9-83b7-32f24b16b982.webp",
+      "sha256": "e97d015f9b6e1dcd04d5d42facb5b6f8d40546764cf730bcb55e10ec6e42701c"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Hbridge%20Unit/img-d13af54d-b8fc-4731-a8e5-b22935be78b3.webp",
+      "sha256": "abe9c89f2c5b40aa456a97b66c016b589d1c43707d8fa32fdc0c7be51e7f5291"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Hbridge%20Unit/img-2c632802-aebd-468e-a364-3ac030a16234.webp",
+      "sha256": "54918293cd1252a20872e55cf7883829bf2d66488f8c4e44fe42dbd7ca9cb9f7"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Hbridge%20Unit/img-e97aacd0-3218-407d-89f2-58c7a6d734c9.webp",
+      "sha256": "850ca9d64d375b5598615fa5ff10ef3ee400b164e9c678a13c66ea9f9c112f3f"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Hbridge%20Unit/img-4877fe4a-c9f2-42ac-a437-134a02b6f642.webp",
+      "sha256": "d4f71315d66eb3eba7469d8ad0f9b4955a2e0a6617ef5d95c1db6fe4df09e63f"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Hbridge%20Unit/img-7d6f90c1-2a1d-4b5e-bcbf-167b1568007c.webp",
+      "sha256": "b3288ae94f3fa94e82b460328d961c0420d23e2ca7a6b72a11dee14d4ec8ba89"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Hbridge%20Unit/img-6009ced7-8cd6-4dec-a159-3b61b0330fd1.webp",
+      "sha256": "af84136eac253474175cf3db5efadace5dcbd3e4ad9d81d828ac03645db94953"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Hbridge%20Unit/img-08e15ee0-02f7-4a5f-a73e-de5498e3bf79.webp",
+      "sha256": "2543a2d4326107bddf7071b319c6421181f755fe3b4db096989975f8e910563f"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Hbridge%20Unit/img-b286be3e-fc45-4462-ab05-6849076bf46c.webp",
+      "sha256": "210dc4a072b9fd59bb21b7879dff4a5ad4cb05b2774aff13a86ec0620fe4751b"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Hbridge%20Unit/img-f4f40b0f-e9ef-47f0-9b5d-6378e00d3c0f.png",
+      "sha256": "1c0a851512f226d2d480ad8ad76998f65c63059d80dd66aca1f79d4f055432b7"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      1,
+      2
+    ],
+    "rearTriangles": 3032,
+    "frontTriangles": 2560,
+    "originalAssemblyTriangles": 5592,
+    "outputTriangles": 5592,
+    "excludedComponents": [
+      0,
+      3
+    ],
+    "origin": [
+      0,
+      28,
+      -4
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "localModification": null,
+    "notes": "Exact U160 own Structures path with pinned commit/validated Git blob.Component1rear3032+component2front2560 form original same-location assembled casing.Components0/3 are displaced duplicate halves.Original vertices/faces retained at scale1,identity axes and one common translation;no native repairs,cutting,patching,face removal or independent moves.Native24×56×8mm casing is not stretched to10.2mm connector-inclusive depth."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      56,
+      10.2
+    ],
+    "vendorDimensionOrderMm": [
+      56,
+      24,
+      10.2
+    ],
+    "cadEnvelopeMm": [
+      24.000062942504883,
+      56.00003242492676,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24.000062942504883,
+      56.00003242492676,
+      10.20000001192093
+    ],
+    "withTerminalPlugEnvelopeMm": [
+      24.000062942504883,
+      67.10003242529928,
+      10.400000035762787
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -16
+      ],
+      [
+        8,
+        -16
+      ]
+    ],
+    "mountingHoleDiameterMm": 4.85
+  },
+  "configurationCases": [
+    {
+      "id": "assembled",
+      "name": "Assembled receiving sockets",
+      "options": {
+        "frontCover": true,
+        "terminalPlug": false
+      },
+      "ports": [
+        "grove",
+        "terminal"
+      ],
+      "controls": [
+        "source",
+        "address-1",
+        "address-2",
+        "address-3",
+        "address-4"
+      ],
+      "pointerAccessible": false,
+      "joints": [],
+      "anchors": [],
+      "artworkPanels": 2,
+      "nativeTriangles": 5592,
+      "rearFastenerPresent": true
+    },
+    {
+      "id": "assembled-with-terminal",
+      "name": "Assembled with supplied terminal plug",
+      "options": {
+        "frontCover": true,
+        "terminalPlug": true
+      },
+      "ports": [
+        "grove",
+        "terminal"
+      ],
+      "controls": [
+        "source",
+        "address-1",
+        "address-2",
+        "address-3",
+        "address-4"
+      ],
+      "pointerAccessible": false,
+      "joints": [
+        "terminal/screw-1",
+        "terminal/screw-2",
+        "terminal/screw-3",
+        "terminal/screw-4"
+      ],
+      "anchors": [],
+      "artworkPanels": 2,
+      "nativeTriangles": 5592,
+      "rearFastenerPresent": true
+    },
+    {
+      "id": "front-service",
+      "name": "Front service",
+      "options": {
+        "frontCover": false,
+        "terminalPlug": false
+      },
+      "ports": [
+        "grove",
+        "terminal"
+      ],
+      "controls": [
+        "source",
+        "address-1",
+        "address-2",
+        "address-3",
+        "address-4"
+      ],
+      "pointerAccessible": true,
+      "joints": [],
+      "anchors": [],
+      "artworkPanels": 1,
+      "nativeTriangles": 3032,
+      "rearFastenerPresent": false
+    },
+    {
+      "id": "front-service-with-terminal",
+      "name": "Front service with supplied terminal plug",
+      "options": {
+        "frontCover": false,
+        "terminalPlug": true
+      },
+      "ports": [
+        "grove",
+        "terminal"
+      ],
+      "controls": [
+        "source",
+        "address-1",
+        "address-2",
+        "address-3",
+        "address-4"
+      ],
+      "pointerAccessible": true,
+      "joints": [
+        "terminal/screw-1",
+        "terminal/screw-2",
+        "terminal/screw-3",
+        "terminal/screw-4"
+      ],
+      "anchors": [],
+      "artworkPanels": 1,
+      "nativeTriangles": 3032,
+      "rearFastenerPresent": false
+    }
+  ],
+  "terminal": {
+    "poles": 4,
+    "pitchMm": 3.96,
+    "mechanicalFamily": "ht3.96-4p",
+    "labels": [
+      "HV",
+      "GND",
+      "M−",
+      "M+"
+    ],
+    "slotIndices": "Left-to-right front-view spatial indices;not schematic P5 numbering",
+    "headsOnly": true,
+    "continuous": false,
+    "rangeDeg": null,
+    "visualRangeDeg": [
+      -180,
+      180
+    ],
+    "productionStopsVerified": false
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "kinds": {
+      "front": "reference-redraw",
+      "back": "reference-redraw"
+    },
+    "pngCount": 2,
+    "sourceDetails": "docs/research/hbridge/artwork.json",
+    "originalsDistributed": false
+  },
+  "officialDocumentationFeedback": {
+    "feedback_id": "6c58540d051147ba9af562a88312b544",
+    "accepted": true,
+    "issue": "Original U160 page links cross-product U085 dimension image and v1.1 capacitor illustration;requested original own installed drawing/control/terminal datums and explicit original-versus-v1.1 accessory scope."
+  },
+  "scope": "Complete own original U160 case,physical populated carrier and connectors,retained PCB source/DIP visual sliders,and own removable plug with independent visible head angle only.No electrical,motor,address,PWM,firmware or production-fit acceptance.",
+  "inferred": [
+    "PCB outline,installed plane and hidden package/contact/solder dimensions from own board photo and schematic",
+    "Unmeasured source/DIP travel and detent-position mapping;documentary source labels only",
+    "HT3.96 plug/socket internal dimensions,clearances,clamp/shank poses and neutral head angles",
+    "Film size/registration,corner radius,font metrics and production colorimetry",
+    "Service view omits complete front cover/front film and rear retaining fastener;does not demonstrate a qualified disassembly procedure"
+  ],
+  "notes": [
+    "Complete native same-location rear1 plus front2;display duplicates0/3 excluded.No face removal,repair,stretch or independent shift.",
+    "Original MP1584EN-LF-Z architecture retained;no v1.1 INA199,SY8303,shunt or loose470uF content imported.",
+    "S1 and4DIP remain under original front case at actual internal board plane;closed controls interactive:false with no hit targets.External stable-position API works without echoed input.",
+    "frontCover:false exposes genuinely accessible retained caps;only caps move under actuation,not PCB/bases/case.",
+    "Cancel/releases end holds and preserve selected stable detent;no address or power-selection behavior.",
+    "Original native front tabs/real PCB close rear inspection windows;real connector backing closes actual mouths.No PNG fills missing structure.",
+    "Only final ordinary PNGs and safe source citations distributed;raw official evidence,source artwork,generators,proofs and private intake information remain excluded."
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/hbridge/TerminalPlug.js",
+      "sha256": "1ac98206e9f36c534bab3e31ef454b0295dbfdad935ef6e845972081f6093352"
+    },
+    {
+      "path": "src/units/hbridge/assembly.js",
+      "sha256": "6c10119447f9915ee16b6140c950958abafaddb8578695527bbb4fc102141741"
+    },
+    {
+      "path": "src/units/hbridge/cad-map.json",
+      "sha256": "5aec1ce92e7f7ab4ec463286691773a0a5ccf7e2ac05b78303b1d5c1a7684603"
+    },
+    {
+      "path": "src/units/hbridge/connectors.js",
+      "sha256": "bc37ee3ded9d83d44cf9cbe863cc06fdab1ecd0946dc36558e05ee45d9de1f58"
+    },
+    {
+      "path": "src/units/hbridge/dimensions.js",
+      "sha256": "0214c8088ab454e52d2d02027444a71c6c38d6892d4957d84e347f3038bd17e0"
+    },
+    {
+      "path": "src/units/hbridge/geometry-data.js",
+      "sha256": "bbf6108bc6e87244a1568351066d80dbadb67d516258a8aa0df7f6adb41da631"
+    },
+    {
+      "path": "src/units/hbridge/index.js",
+      "sha256": "9420acffc22bdcea5bb4b903d409aa63783c858427952d43ba4cf43b39567bd2"
+    },
+    {
+      "path": "src/units/hbridge/reference-redraw-back.png",
+      "sha256": "d8bbf821ed5501eef3d770153786f20109b773214209dc4c106ebb199b3be87c"
+    },
+    {
+      "path": "src/units/hbridge/reference-redraw-front.png",
+      "sha256": "77d492b23d620cbcc377a606b255f63740631cc6ae9fb16f3d1164f4c43f7c78"
+    },
+    {
+      "path": "src/units/hbridge/stickers.js",
+      "sha256": "5f82c8d2c4da1f2a7395844b5de2c8f4fb1c745de150da2fc8f509bb7b367e69"
+    }
+  ]
+}

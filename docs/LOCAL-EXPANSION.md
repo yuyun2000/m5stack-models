@@ -2,7 +2,7 @@
 
 2026-10-27。本页整理当前公开工作副本中的本地增量，便于其他Agent接入、查阅各批证据和续作。
 
-当前catalog为14款主机、137款Unit，共151款；阶段计数`{"modeled": 151}`。生成本页时的提交基线为`3681a6482aff96501d44659ba5a1603246f1fe1f`，该基线catalog有127款。此页描述当前源码快照；当前提交和远端状态以Git日志及GitHub main为准。各历史progress中的未提交/未推送字样只描述各自保存时点。[本次151款同步](GIT-SYNC-151-2026-10-27.md)包含批29–36的24款Unit与48张PNG，后续新增另行记录。
+当前catalog为14款主机、149款Unit，共163款；全部modeled、0verified。本次Git同步收录批37–40共12款新增Unit及27PNG，详见[163款同步记录](GIT-SYNC-163-2026-10-27.md)。历史progress只描述各自保存时点；当前提交与远端状态以Git日志及GitHub main为准。
 
 | 批次 | 产品ID | 检查点 |
 | --- | --- | --- |
@@ -44,12 +44,20 @@
 | UnitV2 / LoRaWAN-CN470 / Proto | unitv2 / lorawan-cn470 / proto | [本地进度](../artifacts/unitv2-lorawan-proto-expansion/progress.json) |
 | Weight / SSR / PoE CAM-W v1.1 | weight / ssr / poe-cam-w-v11 | [本地进度](../artifacts/weight-ssr-poecam-expansion/progress.json) |
 | NBIoT2 / NBIoT-CN / Mini Proto | nbiot2 / nbiot-cn / mini-proto | [本地进度](../artifacts/nbiot-mini-proto-expansion/progress.json) |
+| HBridge / CatM GNSS / Ultrasonic-IO | hbridge / catm-gnss / ultrasonic-io | [本地进度](../artifacts/hbridge-catm-ultrasonic-expansion/progress.json) |
+| DoF6 / DoF9 / BMM350 | dof6 / dof9 / bmm350 | [本地进度](../artifacts/dof6-dof9-bmm350-expansion/progress.json) |
+| UnitV-OV7740 / LoRaE220-433 / 8Servos2-I2C | unitv-ov7740 / lora-e220-433 / 8servos2-i2c | [本地进度](../artifacts/unitv-lora433-servos2-expansion/progress.json) |
+| CatM / NeoHEX / ENV-IV | catm / neohex / env-iv | [本地进度](../artifacts/catm-neohex-enviv-expansion/progress.json) |
 
 各进度记录绑定相应批次的源码/检查范围。近期新增只执行必要局部结构、动作/API、接线夹具及构建；没有逐面浏览器复核或全量验收。`modeled`表示已有实现，不能视为完成视觉或实物配合验收。
 
 ## 接入入口
 
 - [Agent总指南](AGENT-INTEGRATION.md)：按需loader、输入/外驱状态、层级地址与生命周期。
+- [CatM/NeoHEX/ENV-IV](CATM-NEOHEX-ENVIV-UNITS.md)：本款单SMA/NanoSIM蜂窝实体、37灯与独立均光片、真实双芯片通气壳及同步印刷。
+- [UnitV/LoRa433/8Servos2](UNITV-LORA433-SERVOS2-UNITS.md)：本款原生侧键/真实光路、433双拨片和静态天线，以及六视参数化控制器/16档旋钮/24实针与同步印刷。
+- [DoF6/DoF9/BMM350](DOF6-DOF9-BMM350-UNITS.md)：各自实际惯性/磁感封装、稳定滑片与空槽背衬、四芯Grove和同步印刷。
+- [HBridge/CatM GNSS/Ultrasonic-IO](HBRIDGE-CATM-ULTRASONIC-UNITS.md)：原款真实DIP/滑选与端子、宽壳MicroSIM/双射频附件和GPIO超声深网罩及同步贴纸。
 - [NBIoT2/NBIoT-CN/Mini Proto](NBIOT-MINI-PROTO-UNITS.md)：各自蜂窝模组/卡座/SMA与可拆天线、真实后盖服务和本款48孔洞板及同步印刷。
 - [Weight/SSR/PoE CAM-W v1.1](WEIGHT-SSR-POECAM-UNITS.md)：原款HX711/小型SSR的真实端子与外驱螺钉、OV3660/网口/实际控件和自身支架附件及同步印刷。
 - [UnitV2/LoRaWAN-CN470/Proto](UNITV2-LORAWAN-PROTO-UNITS.md)：本款摄像Unit实体/风扇与附属装配、CN470可拆天线及真实洞板与同步贴纸。
@@ -76,7 +84,7 @@
 - [Earth/Hall/QRCode](EARTH-HALL-QRCODE-UNITS.md)：土壤探针、固定磁感实体、真实触发键/通讯滑块与独立灯。
 - [Step16/ASR/UHF](STEP-ASR-UHF-UNITS.md)：旋钮、原生七段/RGB外驱、固定声学与RF实体。
 - [IMU/扩展IO/ACSSR](IMU-EXTIO-ACSSR-UNITS.md)：纯实体锚点、真实排针、按键/螺钉与独立外驱灯。
-- [近期Unit贴纸](UNIT-STICKER-ADDITIONS.md)：30款原稿/参考重绘、来源、开关与必要局部检查。
+- [近期Unit贴纸](UNIT-STICKER-ADDITIONS.md)：120款新增Unit的原稿栅格/官方平面栅格/参考重绘、来源、开关与必要局部检查。
 - [网络/摄像/合成Unit](NETWORK-CAMERA-SYNTH-UNITS.md)：真实网口、固定镜头、内置喇叭与同步贴纸。
 - [旋转Unit](ROTATING-UNITS.md)：转子、真实弹舌和移动Grove输出。
 - [显示Unit](DISPLAY-UNITS.md)：独立与嵌套framebuffer。

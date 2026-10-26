@@ -1,0 +1,99 @@
+{
+  "id": "lora-e220-433",
+  "sku": "U170-433",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 3,
+  "bodyPanels": 2,
+  "dipMarkingPanels": 1,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Accurate code redraw from readable exact433 own front/rear photographs.Two actual body-film layouts plus fixed DIP ON/1/2 package ink.Preserves own433/400T22S content and true front cutout;no photo pixels/crops,920/JP labels or invented microtext.",
+  "sources": [
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT_LoraE220(433MHz)/8.webp",
+      "sha256": "26a3a6ec20c71d32cf68f1137d01043f82dd6493ca5fc35a3365251806d5f12e"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT_LoraE220(433MHz)/5.webp",
+      "sha256": "87c650d898919aa5bbddcd418627fc994564afeef17c04678cf5310c1563e733"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/lora-e220-433/reference-redraw-front.png",
+      "sha256": "c783d1958dcdbf64b02c61fe97c8224a958642f6ecbf2b61ed02968bb95b7809",
+      "face": "front",
+      "pixels": [
+        1570,
+        3500
+      ],
+      "sizeMm": [
+        15.7,
+        35
+      ],
+      "positionMm": [
+        0,
+        3,
+        3.8
+      ],
+      "kind": "reference-redraw",
+      "method": "printedArtwork",
+      "target": "Independent actual front body adhesive film",
+      "metadata": "No EXIF/ICC/text/private metadata;numeric density only if present"
+    },
+    {
+      "path": "src/units/lora-e220-433/reference-redraw-back.png",
+      "sha256": "25c318996af0fa5a6a38929a4849e987227684fd8ca31f84cc2777bea00f9f6c",
+      "face": "back",
+      "pixels": [
+        1570,
+        3500
+      ],
+      "sizeMm": [
+        15.7,
+        35
+      ],
+      "positionMm": [
+        0,
+        3,
+        -3.84
+      ],
+      "kind": "reference-redraw",
+      "method": "printedArtwork",
+      "target": "Independent actual back body adhesive film",
+      "metadata": "No EXIF/ICC/text/private metadata;numeric density only if present"
+    },
+    {
+      "path": "src/units/lora-e220-433/reference-redraw-dip.png",
+      "sha256": "7e78807987e0405ac4536ff253a89314c1f267abf0e5eb0ffff811f09531754f",
+      "face": "dip",
+      "pixels": [
+        620,
+        590
+      ],
+      "sizeMm": [
+        6.2,
+        5.9
+      ],
+      "positionMm": [
+        -4.15,
+        16.1,
+        3.75
+      ],
+      "kind": "reference-redraw",
+      "method": "printedArtwork",
+      "target": "Actual fixed DIP cover;no adhesive substrate invented",
+      "metadata": "No EXIF/ICC/text/private metadata;numeric density only if present"
+    }
+  ],
+  "readabilityCheck": "All3 final ordinary PNGs opened in one proof:complete LoRa433 icon/title,M0M1,LoRaE220-433/433MHz,E220-400T22S,literal printed mode chart,PORT.C.UART/TXD/RXD/5V/GND and ON/1/2 markings;no clipped text.",
+  "limitations": [
+    "Photographic font metrics,colorimetry,spacing,film dimensions/registration are appearance reconstructions,not original vector outputs.",
+    "Front physical film has a true DIP die-cut;printedArtwork projects only onto existing support triangles,leaving actual slots open.",
+    "DIP marking is ink on fixed actual cover,no extra adhesive film ormoving cap printed plane.",
+    "All physical attributes/index/world matrices invariant for both entries,all8real antenna/DIP presets andintermediate motion withartwork:false.",
+    "PNG contains no EXIF/ICC/text/private metadata.Only final ordinary rasters distributed;raw vectors/generators/proofs andprivate/raw sources remain excluded."
+  ],
+  "rights": "Product printed designs,names and trademarks retain their respective rights."
+}

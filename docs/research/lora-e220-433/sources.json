@@ -1,0 +1,555 @@
+{
+  "id": "lora-e220-433",
+  "sku": "U170-433",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_LoRaE220-433",
+  "retrievedAt": "2026-10-27",
+  "officialMCP": {
+    "queries": [
+      "Unit LoRaE220-433 U170-433 E220-400T22S LLCC68 physical dimensions DIP switch antenna SMA"
+    ],
+    "responseSha256": "48bf847e6528e424583706b938779612f3f3c7331a6de18584e91f4c4f6da9ba",
+    "rawResponseDistributed": false,
+    "result": "Exact E220-400T22S/LLCC68,real DIP2,blue Grove/SMA female,110mm SMA-male supplied rubber duck.No920/JP content."
+  },
+  "reference": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT_LoraE220(433MHz)/8.webp",
+    "sha256": "26a3a6ec20c71d32cf68f1137d01043f82dd6493ca5fc35a3365251806d5f12e"
+  },
+  "referenceSources": [
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/624/SCH_UNIT_LoraE220_433MHz_sch_01.png",
+      "sha256": "830596faf5c40741d4b4a2d87cd92e55bad2d96ae7e3fc238df176620c98e951"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT_LoraE220(433MHz)/4.webp",
+      "sha256": "152ca937f4a481a754bacbcc038b752092d64794a6563c90cd59311b54404e86"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT_LoraE220(433MHz)/8.webp",
+      "sha256": "26a3a6ec20c71d32cf68f1137d01043f82dd6493ca5fc35a3365251806d5f12e"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT_LoraE220(433MHz)/5.webp",
+      "sha256": "87c650d898919aa5bbddcd418627fc994564afeef17c04678cf5310c1563e733"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT_LoraE220(433MHz)/6.webp",
+      "sha256": "f19200fad76c43521bce0fa76c841432abb6a037f598241e9c33c7c4f1fa4c99"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT_LoraE220(433MHz)/7.webp",
+      "sha256": "08575e3df879da1d949d55820868721a1468172ec8c8e7f024aa338d41a9b56d"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT_LoraE220(433MHz)/5.jpg",
+      "sha256": "b76e25a92b70718b0f6a0c48a6380b2f79810b8def89c76ca3ef4f65a25aa655"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/624/SCH_UNIT_LoraE220_433MHz_sch_01.png",
+      "sha256": "830596faf5c40741d4b4a2d87cd92e55bad2d96ae7e3fc238df176620c98e951"
+    }
+  ],
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/66720a863658da9bab58a208d4ebf8a040c2d42c/Products/U170_Unit_LoRaE220_433/Structures/Unit_LoRaE220-433.stl",
+      "commit": "66720a863658da9bab58a208d4ebf8a040c2d42c",
+      "gitBlob": "a489f827e1cf3b01cbdc99273a3af7f6a7b2e193",
+      "sha256": "471627f78815b35ef2a81563b9fb12acd47c658353fc599798907c0d432d5ff3",
+      "license": "MIT;preserve licenses/M5_Hardware-MIT.txt",
+      "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/66720a863658da9bab58a208d4ebf8a040c2d42c/LICENSE"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "originalAssemblyTriangles": 6614,
+    "outputTriangles": 6614,
+    "excludedDisplayComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      12,
+      32,
+      0.4
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "localModification": null,
+    "nativeTopology": {
+      "name": "LoRaE220-433 complete own native assembled front and rear housing",
+      "edges": 9891,
+      "invalidEdges": 0,
+      "originalCoincidentMatingEdges": 30,
+      "volumeMm3": 4526.417960672008
+    },
+    "notes": "Exact own433 source0=6614 original front/rear faces retained atscale1 under one shared translation.Sources1rear3858/2front2756 are displaced display duplicates.Native64mm casing not stretched to71.4mm SMA-inclusive product length.No source repair,face removal,independent half moves or920 whole-model reuse.Original coincident mating seams retained,combined shell not claimed a single manifold."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      71.4,
+      8
+    ],
+    "vendorDimensionOrderMm": [
+      71.4,
+      24,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      64,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24,
+      71.40000009536743,
+      8.00000009536743
+    ],
+    "antennaSeparateFoldedEnvelopeMm": [
+      93.70499990463257,
+      24.600000095367434,
+      9.41
+    ],
+    "nominalUnfoldedAntennaLengthMm": 110,
+    "mountingHolesMm": [
+      [
+        -8,
+        -20
+      ],
+      [
+        8,
+        -20
+      ]
+    ],
+    "mountingHoleDiameterMm": 4.85,
+    "nativeBoreProfile": "Native outer layersZ+/-3 retain radius2.425;midlayerZ0 radius3.25X/3.20058Y original contour retained,not uniform manufacturing bore claim"
+  },
+  "population": [
+    "Own E220-400T22S module PCB with22fixed castellated-contact envelopes",
+    "Documented LLCC68 internal package envelope under actual closed RF shield;hidden placement inferred",
+    "Own C1/C2 10uF packages",
+    "S1 actual two independent stable cream DIP sliders with fixed black body/cover/4 solder terminals",
+    "Blue4P Grove,SMA/coax/mechanical supports and3 rear retaining screws"
+  ],
+  "publicAPI": {
+    "exports": [
+      "Model",
+      "GroveModule",
+      "Antenna",
+      "spec"
+    ],
+    "ports": [
+      "grove",
+      "sma"
+    ],
+    "controls": [
+      "m0",
+      "m1"
+    ],
+    "anchors": [],
+    "leds": [],
+    "joints": [],
+    "bodyComponentOrder": [
+      "grove",
+      "sma",
+      "m0",
+      "m1"
+    ],
+    "moduleAdditionalComponents": [
+      "unitFrame",
+      "cable"
+    ],
+    "canonicalCableInput": "grove",
+    "assemblyProperty": "lora433Assembly",
+    "partsKeys": [
+      "LoRaE220-433 complete own native assembled front and rear housing"
+    ],
+    "options": {
+      "antenna": false,
+      "m0Position": 0,
+      "m1Position": 0
+    },
+    "configurationCases": [
+      {
+        "id": "socket-00",
+        "name": "Receiving SMA socket / physical sliders 00",
+        "options": {
+          "antenna": false,
+          "m0Position": 0,
+          "m1Position": 0
+        },
+        "ports": [
+          "grove",
+          "sma"
+        ],
+        "controls": [
+          "m0",
+          "m1"
+        ],
+        "anchors": [],
+        "joints": [],
+        "nativeTriangles": 6614,
+        "bodyArtworkPanels": 2,
+        "dipMarkingPanels": 1,
+        "artworkPanels": 3
+      },
+      {
+        "id": "socket-01",
+        "name": "Receiving SMA socket / physical sliders 01",
+        "options": {
+          "antenna": false,
+          "m0Position": 0,
+          "m1Position": 1
+        },
+        "ports": [
+          "grove",
+          "sma"
+        ],
+        "controls": [
+          "m0",
+          "m1"
+        ],
+        "anchors": [],
+        "joints": [],
+        "nativeTriangles": 6614,
+        "bodyArtworkPanels": 2,
+        "dipMarkingPanels": 1,
+        "artworkPanels": 3
+      },
+      {
+        "id": "socket-10",
+        "name": "Receiving SMA socket / physical sliders 10",
+        "options": {
+          "antenna": false,
+          "m0Position": 1,
+          "m1Position": 0
+        },
+        "ports": [
+          "grove",
+          "sma"
+        ],
+        "controls": [
+          "m0",
+          "m1"
+        ],
+        "anchors": [],
+        "joints": [],
+        "nativeTriangles": 6614,
+        "bodyArtworkPanels": 2,
+        "dipMarkingPanels": 1,
+        "artworkPanels": 3
+      },
+      {
+        "id": "socket-11",
+        "name": "Receiving SMA socket / physical sliders 11",
+        "options": {
+          "antenna": false,
+          "m0Position": 1,
+          "m1Position": 1
+        },
+        "ports": [
+          "grove",
+          "sma"
+        ],
+        "controls": [
+          "m0",
+          "m1"
+        ],
+        "anchors": [],
+        "joints": [],
+        "nativeTriangles": 6614,
+        "bodyArtworkPanels": 2,
+        "dipMarkingPanels": 1,
+        "artworkPanels": 3
+      },
+      {
+        "id": "with-antenna-00",
+        "name": "Supplied static folded antenna / physical sliders 00",
+        "options": {
+          "antenna": true,
+          "m0Position": 0,
+          "m1Position": 0
+        },
+        "ports": [
+          "grove",
+          "sma"
+        ],
+        "controls": [
+          "m0",
+          "m1"
+        ],
+        "anchors": [],
+        "joints": [],
+        "nativeTriangles": 6614,
+        "bodyArtworkPanels": 2,
+        "dipMarkingPanels": 1,
+        "artworkPanels": 3
+      },
+      {
+        "id": "with-antenna-01",
+        "name": "Supplied static folded antenna / physical sliders 01",
+        "options": {
+          "antenna": true,
+          "m0Position": 0,
+          "m1Position": 1
+        },
+        "ports": [
+          "grove",
+          "sma"
+        ],
+        "controls": [
+          "m0",
+          "m1"
+        ],
+        "anchors": [],
+        "joints": [],
+        "nativeTriangles": 6614,
+        "bodyArtworkPanels": 2,
+        "dipMarkingPanels": 1,
+        "artworkPanels": 3
+      },
+      {
+        "id": "with-antenna-10",
+        "name": "Supplied static folded antenna / physical sliders 10",
+        "options": {
+          "antenna": true,
+          "m0Position": 1,
+          "m1Position": 0
+        },
+        "ports": [
+          "grove",
+          "sma"
+        ],
+        "controls": [
+          "m0",
+          "m1"
+        ],
+        "anchors": [],
+        "joints": [],
+        "nativeTriangles": 6614,
+        "bodyArtworkPanels": 2,
+        "dipMarkingPanels": 1,
+        "artworkPanels": 3
+      },
+      {
+        "id": "with-antenna-11",
+        "name": "Supplied static folded antenna / physical sliders 11",
+        "options": {
+          "antenna": true,
+          "m0Position": 1,
+          "m1Position": 1
+        },
+        "ports": [
+          "grove",
+          "sma"
+        ],
+        "controls": [
+          "m0",
+          "m1"
+        ],
+        "anchors": [],
+        "joints": [],
+        "nativeTriangles": 6614,
+        "bodyArtworkPanels": 2,
+        "dipMarkingPanels": 1,
+        "artworkPanels": 3
+      }
+    ],
+    "serviceConfigurations": [],
+    "serviceRemovals": [],
+    "moving": {
+      "m0": {
+        "cap": "get(\"m0\").cap",
+        "assemblyComponent": "lora433Assembly.controls.sliders[0]"
+      },
+      "m1": {
+        "cap": "get(\"m1\").cap",
+        "assemblyComponent": "lora433Assembly.controls.sliders[1]"
+      }
+    },
+    "fixedPhysicalFields": [
+      "lora433Assembly.parts[*]",
+      "lora433Assembly.pcb.pcb",
+      "lora433Assembly.pcb.pads[*]",
+      "lora433Assembly.pcb.barrels[*]",
+      "lora433Assembly.pcb.modulePcb",
+      "lora433Assembly.pcb.contacts[*]",
+      "lora433Assembly.pcb.llcc",
+      "lora433Assembly.pcb.shield[*]",
+      "lora433Assembly.pcb.capacitors[*]",
+      "lora433Assembly.pcb.coax",
+      "lora433Assembly.input.frame",
+      "lora433Assembly.sma.frame",
+      "lora433Assembly.controls.fixed[*]",
+      "lora433Assembly.screws[*].head",
+      "lora433Assembly.screws[*].floor",
+      "lora433Assembly.screws[*].shank",
+      "lora433Assembly.labels.front",
+      "lora433Assembly.labels.back"
+    ],
+    "controlContract": {
+      "kind": "button",
+      "latching": true,
+      "stablePositions": [
+        0,
+        1
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "travelMm": 1.1,
+      "travelInferred": true,
+      "pointerAccessible": true,
+      "fixedCollection": "lora433Assembly.controls.fixed",
+      "fixedCollectionLength": 6,
+      "movingMeshCountPerCap": 1,
+      "commands": [
+        {
+          "type": "button",
+          "target": "m0",
+          "action": "press",
+          "source": "external"
+        },
+        {
+          "type": "button",
+          "target": "m0",
+          "action": "release",
+          "source": "external"
+        },
+        {
+          "type": "button",
+          "target": "m0",
+          "action": "cancel",
+          "source": "external"
+        },
+        {
+          "type": "button",
+          "target": "m0",
+          "action": "position",
+          "position": 1,
+          "immediate": true
+        }
+      ],
+      "inputEvents": [
+        "down",
+        "up",
+        "click"
+      ],
+      "cancelledUp": {
+        "action": "up",
+        "cancelled": true
+      },
+      "multipleSources": "First press flips detent once;partial release stays held;cancel and final release preserve selected detent and suppress click",
+      "externalPositionNoEcho": true,
+      "noElectricalModeMapping": true
+    },
+    "accessoryExports": [
+      "Antenna"
+    ],
+    "accessory": {
+      "export": "Antenna",
+      "port": "sma",
+      "connector": "sma-female",
+      "physicalConnector": "sma-male",
+      "assemblyProperty": "antennaAssembly",
+      "components": [],
+      "joints": [],
+      "static": true,
+      "observedFoldedPose": true,
+      "nominalUnfoldedLengthMm": 110,
+      "hingeAxisVerified": false,
+      "controls": [],
+      "options": {},
+      "scope": "Own433 supplied SMA-male rubber duck in observed bent outline;no inferred hinge,RF/electrical behavior or measured fit;independent attachment/detachment only"
+    }
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 3,
+    "bodyPanels": 2,
+    "dipMarkingPanels": 1,
+    "sourceDetails": "docs/research/lora-e220-433/artwork.json",
+    "originalsDistributed": false
+  },
+  "scope": "Exact own433 complete native housing and actual fixed/module/connector/control/accessory appearance,mechanical attachment and external stable visual input only.NoRF/UART/mode/electrical/firmware implementation.",
+  "inferred": [
+    "Hidden carrier/module/LLCC68 envelope and installation/contact dimensions",
+    "Internal coax physical route is inferred,not an asserted electrical net or routing drawing",
+    "SMA bore/thread/coupling/centre-pin dimensions and fit",
+    "Supplied antenna110mm nominal total versus inferred bent visual allocation;own hero has no reliable hinge-axis datum,so no joint",
+    "DIP package/retainer/thumb/1.1mm throw and support installation",
+    "Film die-cut,size,font/spacing/color/registration and three rear fixing installation poses"
+  ],
+  "notes": [
+    "All6614 own source0 directed faces preserved atone common transform/scale1,not a920 whole-model copy.",
+    "64mm native case and71.4mm SMA-inclusive unit length recorded separately;antenna is independent.",
+    "Original source mating-edge coincidence retained,combined shell not called a single manifold.Constructed solids independently closed and positive.",
+    "Actual front DIP window backed by physical switch/body;SMA windows by actual captured hex;real Grove deep backing andshield/PCB behind other openings.No ink fills missing structure.",
+    "Two stable sliders move only their actual caps;fixed body/cover/pins/board/case/ports/films stay fixed.Cancel/release retains detent;external position emits noinput.",
+    "Static SMA-male accessory independently detachable;rejects Grove/RP-SMA preserving existing occupant.No guessed hinge/RPM/tilt.",
+    "Own front LoRa433 and rear433/module/mode-chart/UART print plus actual fixed DIP ON/1/2 markings are explicit code redraw,not original vector exports.",
+    "Private table/links/names/mapping,vectors/generators/proofs/raw sources/intermediates are not distributed."
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/lora-e220-433/Antenna.js",
+      "sha256": "c34bd47275a3ceb58605c2db2341c94d080cb40ea9c5d0fbcc86f361ac39858f"
+    },
+    {
+      "path": "src/units/lora-e220-433/assembly.js",
+      "sha256": "b6cd5d7602cace139a49df6ee3b16660f3a5c02950f41e4fac1cce36f5eda46c"
+    },
+    {
+      "path": "src/units/lora-e220-433/cad-map.json",
+      "sha256": "b3ad3adf948c9dc28bf7289931c7322a7c43634acfa07a9ea09ddb4017510b0d"
+    },
+    {
+      "path": "src/units/lora-e220-433/dimensions.js",
+      "sha256": "666d99a0a465e41a4615183a7c2027e71828be8a99e87b179ceb77de8e5143ff"
+    },
+    {
+      "path": "src/units/lora-e220-433/geometry-data.js",
+      "sha256": "ab5fde49fbeeb2dbf9bd77b05a8fbfb4b04d7aa10bc5c532fa94a7bdb9c6a7d0"
+    },
+    {
+      "path": "src/units/lora-e220-433/index.js",
+      "sha256": "a00be55b854f346aac3c6bc6be2acfa4b950264225d2ca174274c9f35daf2f1b"
+    },
+    {
+      "path": "src/units/lora-e220-433/reference-redraw-back.png",
+      "sha256": "25c318996af0fa5a6a38929a4849e987227684fd8ca31f84cc2777bea00f9f6c"
+    },
+    {
+      "path": "src/units/lora-e220-433/reference-redraw-dip.png",
+      "sha256": "7e78807987e0405ac4536ff253a89314c1f267abf0e5eb0ffff811f09531754f"
+    },
+    {
+      "path": "src/units/lora-e220-433/reference-redraw-front.png",
+      "sha256": "c783d1958dcdbf64b02c61fe97c8224a958642f6ecbf2b61ed02968bb95b7809"
+    },
+    {
+      "path": "src/units/lora-e220-433/stickers.js",
+      "sha256": "4bfbc336dda0a2a6834081a43c6b2890ea8bd067d183d19e75cb46d85d5b2ea6"
+    }
+  ]
+}

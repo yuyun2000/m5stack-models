@@ -1,0 +1,104 @@
+{
+  "id": "dof6",
+  "sku": "U228",
+  "status": "source-vector-raster",
+  "kind": "source-vector-raster",
+  "pngCount": 3,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Exact U228 body-label original vector outlines rasterized directly to ordinary high-resolution PNG.Outlined glyphs and original color blocks retained;no photographic crop,font substitution,packaging,DoF9 orDoF10 print borrowed.Only final ordinary PNG distributed.",
+  "assets": [
+    {
+      "path": "src/units/dof6/artwork/front.png",
+      "sha256": "5ced84ba6414986c18ff7f4c229abb9fef6e7dd3cdc5af40b51933efe6d820dd",
+      "pixels": [
+        1780,
+        370
+      ],
+      "sizeMm": [
+        17.8,
+        3.7
+      ],
+      "positionMm": [
+        0,
+        7.3,
+        3.84
+      ],
+      "face": "front",
+      "kind": "source-vector-raster",
+      "method": "printedArtwork",
+      "target": "dof6Assembly.labels.front",
+      "referenceCorrespondence": [
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1289/U228_Unit_DoF6_main_pictures_06.webp",
+          "sha256": "87578f7900aab96ca410dc3ccfef1754f80b861a972dcc963544fd696406ab92"
+        }
+      ],
+      "printedIdentity": "DoF6 / BMI270"
+    },
+    {
+      "path": "src/units/dof6/artwork/axis.png",
+      "sha256": "b77647ed7deac03ae58714e5ef210cdb7e951260c7fadf012d8bd27b79f487cf",
+      "pixels": [
+        620,
+        620
+      ],
+      "sizeMm": [
+        6.2,
+        6.2
+      ],
+      "positionMm": [
+        0,
+        0,
+        4.04
+      ],
+      "face": "axis",
+      "kind": "source-vector-raster",
+      "method": "printedArtwork",
+      "target": "dof6Assembly.labels.axis",
+      "referenceCorrespondence": [
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1289/U228_Unit_DoF6_main_pictures_06.webp",
+          "sha256": "87578f7900aab96ca410dc3ccfef1754f80b861a972dcc963544fd696406ab92"
+        }
+      ],
+      "printedIdentity": "XYZ direction axes"
+    },
+    {
+      "path": "src/units/dof6/artwork/back.png",
+      "sha256": "ede90338928b000523436ad40d019726a69b11a4c3d7fd05550ac62f34969acd",
+      "pixels": [
+        1600,
+        400
+      ],
+      "sizeMm": [
+        16,
+        4
+      ],
+      "positionMm": [
+        0,
+        7.3,
+        -3.84
+      ],
+      "face": "back",
+      "kind": "source-vector-raster",
+      "method": "printedArtwork",
+      "target": "dof6Assembly.labels.back",
+      "referenceCorrespondence": [
+        {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1289/U228_Unit_DoF6_main_pictures_07.webp",
+          "sha256": "d32d967ef777a28dad8ca07baa6cda55d9aa4f468f798478f6050c359c29b33f"
+        }
+      ],
+      "printedIdentity": "PORT.A.I2C / SCL SDA 5V GND"
+    }
+  ],
+  "physicalFilms": "Three separate closed adhesive substrates:fronttitle,rear pin label andcircularXYZ film.All remain whenartwork:false.",
+  "limitations": [
+    "Physical adhesive0.04mm thickness/material andon-housingregistration inferred fromown photographs andnative recessed surfaces.",
+    "Original outlined typography retained;no GPU/productionprint/color acceptance.",
+    "Both entries andbothrealSW1presets artwork:false preserve everyphysicalattribute,index array andmatrixWorld.",
+    "Private vector/CSV/URLs/names/mapping,generators andconversionproofs remain outside distributable tree."
+  ],
+  "rights": "Product printed design andtrademarks retain respective rights;final ordinary rasteronly."
+}

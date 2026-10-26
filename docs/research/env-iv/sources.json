@@ -1,0 +1,341 @@
+{
+  "id": "env-iv",
+  "sku": "U001-D",
+  "retrievedAt": "2026-10-27",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_ENV-IV",
+  "sourceRoute": "own-dimensioned-parametric-no-CAD",
+  "officialMCP": {
+    "queries": [
+      "Unit ENV-IV U001-D SHT40-AD1B BMP280 dimensions schematic PCB mounting",
+      "ENV-IV U001-D SHT40-AD1B BMP280 SSP7615 schematic R1 R2 C1 C2 C3 C4 C5 package dimensions"
+    ],
+    "responseSha256": "3714469e14c768b5c47a02e96296df87a0293eca1e4284723bb722f0155ba702",
+    "schematicResponseSha256": "59e8075fff65003a15d2ddd95f2069a9978168459f3b0dcb852a362966841e88",
+    "rawResponseDistributed": false,
+    "result": "Exact U001-D SHT40-AD1B/BMP280 population. Own schematic and bare-PCB photo confirm U3 HT7533, not SSP7615, plus C1..C5 and R1/R2. No environmental-values implementation."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ENV%E2%85%A3%20Unit/img-c6f8993b-8df1-4327-aad8-44128f8ecace.webp",
+    "sha256": "553657ea4aac063c3830b1277f2a984ee3783b0d4c28e14801b0a86b90325e1b"
+  },
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ENV%E2%85%A3%20Unit/img-c6f8993b-8df1-4327-aad8-44128f8ecace.webp",
+      "sha256": "553657ea4aac063c3830b1277f2a984ee3783b0d4c28e14801b0a86b90325e1b"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ENV%E2%85%A3%20Unit/img-949651d3-241e-46c6-a355-833e97cecdb2.webp",
+      "sha256": "4dfda20c20c91d4bdabf8f554630acbe74eb4a684f9f61f61eab38b2698454b7"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ENV%E2%85%A3%20Unit/img-ed0922ec-08ec-429f-84b5-8ac064491556.webp",
+      "sha256": "64dc618881479c978039c3f50e40903d63998be5c1ed404bf701be25d860185d"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ENV%E2%85%A3%20Unit/img-7cfc7eaf-c497-4012-9b6c-2a6676e22e9e.webp",
+      "sha256": "09aff8edc0fa26531fadd8a0d448989c91b181abbfdc0589dc9291c380cc8eef"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ENV%E2%85%A3%20Unit/img-ab796899-2634-4e32-8cc5-03528cb76ffd.webp",
+      "sha256": "822ddf0817dda392e129e1bb455d006336970a1e37e904df637216c34809027e"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ENV%E2%85%A3%20Unit/img-f46cac07-2bb1-4abd-849e-16d935d8ada6.webp",
+      "sha256": "2669cec494331a80a32865958e943ff6b2eebffce04476185665548e68cac113"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ENV%E2%85%A3%20Unit/img-6694f5e2-d5d0-4276-bbd7-29e5f80fb81b.webp",
+      "sha256": "9b0ea334e9b60cff8d2352bf4c236aea2950a9ae1332ac0cb59e8891ff29fe22"
+    },
+    {
+      "url": "https://docs.m5stack.com/en/unit/Unit_ENV-IV",
+      "sha256": "4645ed9432b094fb50239ca6bec168b6e0699ae9974269de3dd5187921b313ee"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ENV%E2%85%A3%20Unit/img-3a3fce36-48d8-4335-a67f-ed93f11bedbb.jpg",
+      "sha256": "1fa43efb58c27cc402921d332a5a9002e8b977b9bfa4570db9124643aab8b2ea"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/573/Sch_UNIT_ENVIV.pdf",
+      "sha256": "baa429e1804fc673fab03a90ab500aa81a4e751b87ab1049765a4ec313d05cf6"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/ENV%E2%85%A3%20Unit/BMP280.pdf",
+      "sha256": "466666eefeb0a13b7ce3d9ba8fc73337407fc2e3f321c13c24ef422aebbf455e"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/ENV%E2%85%A3%20Unit/SHT40.pdf",
+      "sha256": "6b8b2edfa7587e0b5e8628a4d0d03bd96db6b8db8b315637c096b92341a75b62"
+    }
+  ],
+  "cadSearch": {
+    "officialHardwareTree": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "found": false,
+    "scope": "Nontruncated official M5_Hardware tree has U001-C ENV-III route, no exact U001-D assembly. No ENV-III shell or SHT30/QMP6988 geometry borrowed."
+  },
+  "structures": [],
+  "selectedAssembly": null,
+  "nativeTriangles": null,
+  "noNativeCadTriangleClaim": true,
+  "drawingFacts": {
+    "nominalModelMm": [
+      24,
+      32,
+      8
+    ],
+    "mountingBoreMm": 5,
+    "mountingBorePitchMm": 16,
+    "mountingBoreCenterAboveBottomMm": 12,
+    "frontPlanCornerRadiusMm": 4,
+    "sideCornerRadiusMm": 1,
+    "groveOpeningWidthMm": 10,
+    "groveOpeningUpperEdgeAboveBottomMm": 7,
+    "frontDepthSectionMm": 5.2
+  },
+  "caseEnvelopeMm": [
+    24,
+    32,
+    8
+  ],
+  "visualEnvelopeMm": [
+    24,
+    32,
+    8.04
+  ],
+  "orientationEvidence": {
+    "frame": "+Xright,+Yvent/top,+Zfront",
+    "front": "+Z front has40staggeredvents and lower GroveUopening;no M5 or film.",
+    "rear": "-Z rear has rectangular bodyfilm, central hexfixing and lower moldedM5 on the same face.",
+    "ownRearPhoto": {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ENV%E2%85%A3%20Unit/img-949651d3-241e-46c6-a355-833e97cecdb2.webp",
+      "sha256": "4dfda20c20c91d4bdabf8f554630acbe74eb4a684f9f61f61eab38b2698454b7"
+    },
+    "ownDrawing": {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ENV%E2%85%A3%20Unit/img-3a3fce36-48d8-4335-a67f-ed93f11bedbb.jpg",
+      "sha256": "1fa43efb58c27cc402921d332a5a9002e8b977b9bfa4570db9124643aab8b2ea"
+    },
+    "preflightCorrection": "The preflight phrase front moldedM5 is a direction-label error. Exact own rear photo and right-hand rear view of its own drawing place film/centralfixing/M5 together on rear. Current rear-service removes that actual half;front vent half stays."
+  },
+  "constructedAssembly": {
+    "properCommonAxes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "physicalSolids": 129,
+    "case": "Own front/rear dimensioned-parametric closed plates and separate material rims: R4 maximum plan outline and explicit R1 quarter-circle side profiles. True40capsulevent holes, two full Ø5 mounting axes/tubes, actual10mmGroveUopening, central blindfixing support and rear physicalhexsocket fixing. Hiddenwall/snap/split details inferred.",
+    "pcb": "Own bare-photo cutout outline, side mounting-boss reliefs, central fixing clearance and real U-shaped thermal-isolation slot surrounding SHT40 island with bottom retained neck. InstalledPCBthickness/depth and fine hole/neck contours inferred.",
+    "population": {
+      "sht40": "Actual SHT40-AD1B DFN4, linked own datasheet1.5×1.5×0.54mm/Ø0.6open topcavity;real base/floor/rim/four retained terminals.",
+      "bmp280": "Actual BMP280 eight-terminal LGA2.0×2.5×0.95mm, metalcap sidewalls/roof, true small pressureport and ceramicbacking;internal construction and portdiameter/registration inferred.",
+      "other": "HT7533 envelope/three functional terminations,C1..C5/R1/R2,realredGrove/fourcontacts/retainedreturns/tails/plating/lands. No SHT30,QMP6988,additional sensor or LED body."
+    },
+    "grove": "Actual receiving socket walls,floor,guide/lockingrails,recessed dielectricbacking,4metalcontacts/bentreturns/soldertails;one mechanical Port."
+  },
+  "topology": {
+    "allPhysicalDirectedCountTwo": true,
+    "coordinateWeldMm": 1e-05,
+    "allPositiveVolume": true,
+    "allFrontSide": true,
+    "physicalMeshes": 129,
+    "sourceRetention": "Not applicable to native faces;this is an explicit own dimensioned-parametric route."
+  },
+  "publicAPI": {
+    "exports": [
+      "Model",
+      "GroveModule",
+      "spec"
+    ],
+    "bodyComponentOrder": [
+      "grove",
+      "sht40",
+      "bmp280"
+    ],
+    "serviceComponentOrder": [
+      "grove",
+      "sht40",
+      "bmp280"
+    ],
+    "ports": [
+      "grove"
+    ],
+    "canonicalCableInput": "grove",
+    "controls": [],
+    "leds": [],
+    "displays": [],
+    "sensors": [],
+    "joints": [],
+    "anchors": [
+      "sht40",
+      "bmp280"
+    ],
+    "passiveAnchorState": {
+      "sht40": {},
+      "bmp280": {}
+    },
+    "defaults": {
+      "rearCover": true
+    },
+    "configurations": [
+      {
+        "id": "closed",
+        "name": "Complete ENV-IV body",
+        "options": {
+          "rearCover": true
+        }
+      },
+      {
+        "id": "rear-service",
+        "name": "Rear cover removed",
+        "options": {
+          "rearCover": false
+        }
+      }
+    ],
+    "configurationSchema": {
+      "rearCover": {
+        "type": "boolean",
+        "default": true
+      }
+    },
+    "assemblyProperty": "envIVAssembly",
+    "assemblyFields": [
+      "rearCover",
+      "front",
+      "rear",
+      "board",
+      "input",
+      "sht40",
+      "bmp280"
+    ],
+    "frontFields": [
+      "plate",
+      "walls",
+      "mounts",
+      "fixingTube",
+      "fixingFloor",
+      "snaps"
+    ],
+    "rearFields": [
+      "group",
+      "plate",
+      "walls",
+      "film",
+      "logo",
+      "head",
+      "floor",
+      "shaft"
+    ],
+    "boardFields": [
+      "pcb",
+      "lands",
+      "barrels",
+      "sht40",
+      "bmp280",
+      "ht",
+      "htPins",
+      "passives",
+      "terminations"
+    ],
+    "serviceRemoval": {
+      "options": {
+        "rearCover": false
+      },
+      "group": "envIVAssembly.rear.group",
+      "physicalMeshCount": 35,
+      "fieldCounts": {
+        "plate": 1,
+        "walls": 8,
+        "film": 1,
+        "logo": 22,
+        "head": 1,
+        "floor": 1,
+        "shaft": 1
+      },
+      "paths": [
+        "rear.plate",
+        "rear.walls[*]",
+        "rear.film",
+        "rear.logo[*]",
+        "rear.head",
+        "rear.floor",
+        "rear.shaft"
+      ],
+      "removed": "Only own rear plate/R1walls/physicalfilm/moldedM5/hexhead+floor+shaft",
+      "retained": "All frontventplate/R4-R1walls/mounts/centralboss/snaps/PCB/realSHT40/BMP280/HT7533/5C2R/redGrove/anchors retain every physicalattribute/index/world."
+    },
+    "moduleExport": "GroveModule",
+    "groveModuleExtraComponents": [
+      "unitFrame",
+      "cable"
+    ],
+    "sourceRoute": "own-dimensioned-parametric-no-CAD",
+    "noNativeCadTriangleClaim": true,
+    "noEnvironmentalValues": true,
+    "noExternalControlOrLed": true
+  },
+  "artwork": {
+    "kind": "source-vector-raster",
+    "pngCount": 1,
+    "sourceDetails": "docs/research/env-iv/artwork.json",
+    "originalsDistributed": false
+  },
+  "feedback": {
+    "feedback_id": "2b313d4d07154aaba4de5ca50c01c5b7",
+    "status": "received-for-official-review",
+    "issue": "Exact U001-D assembled CAD/PCB installation and vent/snap/fixing dimensions remain absent after own drawing/photos/schematic/linkedpackage review;requested exact mechanical material."
+  },
+  "inferred": [
+    "All wall thickness, hidden snaps, split/seam/lid installation and central fixing dimensions",
+    "Installed PCB plane/thickness and exact photographed polygon, relief/Uslot/island/neck dimensions",
+    "Vent slot width/radius/registration and frame construction between dimensioned R4/R1 limits",
+    "Package inner construction/terminations, BMPpressureport dimensions, HT7533 envelope, all installed population poses",
+    "Grove housing/contact/return/tail installation, film thickness/registration and physical moldedM5ridge trace"
+  ],
+  "notes": [
+    "Own U001-D sources only;no borrowed ENV-III case or obsolete SHT30/QMP6988 population.",
+    "Two package Components are passive frames with empty state;no environmental values, synthetic readings, heater, I2C/address,electrical orfirmware behavior.",
+    "RearCover:false removes exactly35rearcover/film/logo/fixing materialmeshes and preserves every retained physical attribute/index/world.",
+    "No raw vector,CSV,privateURL/name/mapping,generator/proof/PDF/photo is distributed.",
+    "Stage modeled/visual-only;necessary local smoke doesnot establish GPU/device/productionPCBplacement/manufacturingfit."
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/env-iv/artwork/back.png",
+      "sha256": "27ffb2b26ab284155b85495d26f4a7dfe028e51ee55764438382f285c3d077f6"
+    },
+    {
+      "path": "src/units/env-iv/assembly.js",
+      "sha256": "8cb2371aeb91d358f0e7480df9952fbd553751f5b77e3b7b18f9e84aeebf7235"
+    },
+    {
+      "path": "src/units/env-iv/dimensions.js",
+      "sha256": "8f6ec7fd80930578c508873dfb483cbfac65cc989c37b8fcb84cb74b286b9c9c"
+    },
+    {
+      "path": "src/units/env-iv/geometry.js",
+      "sha256": "2b2a60208b36c4eb1339df56c6c80ed8e98482c4047d896ebdfe560594801d16"
+    },
+    {
+      "path": "src/units/env-iv/index.js",
+      "sha256": "64470742b3c781436ea067a2662f2e8628ab2bb83de211b2fda15f8eea73e753"
+    },
+    {
+      "path": "src/units/env-iv/stickers.js",
+      "sha256": "922443e605b4fdb0862907b94d0272a417e7720ae3beb8b82fbd8f16061bef94"
+    }
+  ]
+}
