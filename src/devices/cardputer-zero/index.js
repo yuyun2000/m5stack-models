@@ -5,11 +5,13 @@ import {printedArtwork} from '../../modeling/artwork.js';
 import {DIM} from './dimensions.js';
 import {addBody} from './body.js';
 import {addPorts} from './ports.js';
+import {addPerimeterStickers} from './stickers.js';
 import {KEY_CODES,keyLayout,addKeyboard} from './keyboard.js';
 export class CardputerZero extends Device{
  static meta={id:'m5stack.cardputer-zero',name:'CardputerZero',sku:'C154',vendor:'M5Stack',size:DIM.body,keymap:Object.fromEntries([...KEY_CODES.flat(),'Escape','Tab'].map(k=>[k,`key-${k}`]))};
  build(){
   const keys=keyLayout();addBody(this,keys);addKeyboard(this,keys);addPorts(this);
+  addPerimeterStickers(this);
   const d=DIM.display;this.add(new Display({id:'lcd',width:320,height:170,size:[d.w,d.h],position:[d.cx,d.cy,d.z],glass:{intensity:.1,roughness:.21},meta:{role:'external-framebuffer',activeAreaSource:'1.9-inch diagonal derived; panel drawing pending'}}));
   const lid=this.body.getObjectByName('Drilled 46-key front lid');
   // The official four strip labels sit between the moving black keys.

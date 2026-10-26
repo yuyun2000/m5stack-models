@@ -26,13 +26,23 @@ for(const [x,y]of [[0,0],[-.48,-.48],[-.48,.48],[.48,-.48],[.48,.48]]){
 }
 
 // The following side positions and families are constrained by official side
-// photos 09/10: HDMI/audio/Grove on left, USB-A/RJ45 on right, two USB-C above.
-for(const [id,axis,sign]of [['hdmi','x',-1],['headset','x',-1],['grove','x',-1],['usb-c2','x',-1],['usb-a','x',1],['ethernet','x',1],['usb-c','x',1],['ext','y',1],['micro-sd','y',1]]){
+// photos 04/06 anchor the front X direction: HDMI/audio/Grove are on the
+// front-right, USB-A/RJ45 on the front-left; 09/10 confirm each side's order.
+for(const [id,axis,sign]of [['hdmi','x',1],['headset','x',1],['grove','x',1],['usb-c2','x',1],['usb-a','x',-1],['ethernet','x',-1],['usb-c','x',-1],['ext','y',1],['micro-sd','y',1]]){
  const port=model.get(id);assert.ok(port,`${id}: connector exists`);
  const position=port.object3d.getWorldPosition(new THREE.Vector3());assert.ok(position[axis]*sign>(axis==='x'?41.8:26.8),`${id}: correct outer face`);
  const normal=new THREE.Vector3(0,1,0).applyQuaternion(port.object3d.getWorldQuaternion(new THREE.Quaternion()));
  const expected=new THREE.Vector3();expected[axis]=sign;assert.ok(normal.distanceTo(expected)<1e-6,`${id}: module mating frame points out of the product`);
 }
+assert.ok(Math.abs(model.get('micro-sd').object3d.getWorldPosition(new THREE.Vector3()).x+18.1)<1e-6,'Top microSD sits on the front-left half confirmed by photo 06');
+for(const dx of [-1.3,1.3])assert.equal(cast([-30.4+dx,32,6.2],[0,-1,0])[0]?.object.name,'IR optical window','Top RX optics remain visible through their corrected white-lid aperture');
+assert.equal(cast([34.5,32,6.1],[0,-1,0])[0]?.object.name,'Top IR emitter lens','Top TX optic remains visible at the opposite end of the lid');
+const boot=model.button('boot'),bootAt=boot.cap.getWorldPosition(new THREE.Vector3());
+assert.ok(Math.abs(boot.object3d.getWorldPosition(new THREE.Vector3()).x+41.85)<1e-6,'Boot cap belongs to the USB-A/RJ45 side');
+boot.press('boot-registration');boot.update(1);model.root.updateMatrixWorld(true);
+assert.ok(boot.cap.getWorldPosition(new THREE.Vector3()).sub(bootAt).distanceTo(new THREE.Vector3(.16,0,0))<1e-6,'Corrected Boot cap still moves physically inward');
+boot.release('boot-registration');boot.update(1);model.root.updateMatrixWorld(true);
+assert.ok(boot.cap.getWorldPosition(new THREE.Vector3()).distanceTo(bootAt)<1e-6,'Boot cap returns to its original corrected face');
 assert.equal(model.get('hdmi').connector,'hdmi','the pictured display output is a full-size Type-A, not a mini-HDMI');
 for(const [name,xy,expected,minDepth]of [['USB-C receptacle',[0,.85],'USB-C dielectric backstop',4],['USB-A receptacle',[0,.8],'USB-A dielectric backstop',8],['HDMI Type-A display output',[0,1.6],'HDMI dielectric backstop',7],['10/100 Ethernet RJ45',[0,0],'RJ45 deep backstop',11],['3.5 mm audio jack',[0,0],'Audio jack deep backstop',6.5],['microSD receptacle',[0,.3],'microSD insulating backstop',4.5]]){
  const groups=[];model.root.traverse(o=>{if(o.name===name)groups.push(o);});assert.ok(groups.length>0,`${name}: physical body`);

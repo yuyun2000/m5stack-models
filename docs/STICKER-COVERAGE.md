@@ -16,7 +16,7 @@
 | CoreS3 | K128 | 主机上侧认证标；独立主机背面电路/屏蔽区标；DinBase 配置的右侧机名标、底侧 DC 和电源标、上侧 Port B/C 标 | `src/devices/cores3/CoreS3.js`；DinBase 的专属面仅在 `dinBase: true` 时接入，不与独立主机背标混用 |
 | StopWatch | C152 | 背面电路标 | `src/devices/stopwatch/index.js` |
 | Cardputer-ADV | K132-Adv | 前面四条固定键盘底板标；前机名标；StampS3A 电路覆膜；背面电路标；顶侧控制/接口标；Grove 侧面标 | `src/devices/cardputer-adv/stickers.js`；Stamp 覆膜保留独立螺丝/RGB 孔，键盘底板标不随键帽按压 |
-| CardputerZero | C154 | 前面四条固定键盘底板标；前机名标；固定电源/USB 区标；独立移动电源帽印刷；背面电路标 | `src/devices/cardputer-zero/index.js`；四侧接口贴纸暂缓，见缺面表 |
+| CardputerZero | C154 | 前面四条固定键盘底板标；前机名标；固定电源/USB 区标；独立移动电源帽印刷；背面电路标；右侧 DISPLAY/AUDIO/Grove 标；左侧 USB/BOOT/LAN 标；顶部 GPIO 和 microSD 标 | `src/devices/cardputer-zero/index.js`、`stickers.js`；外围端口及实体开孔的左右方向同步校正，位置迁移见接入文档 |
 | PaperMono | C153 | 背面上部电路标 | `src/devices/papermono/index.js`；下部 NFC 标未接入 |
 | Core2 v1.1 | K010-V11 | 背面电路覆膜；上侧认证标 | `src/devices/core2/stickers.js`；EXT 标未接入，不能视为全部外壳贴纸完成 |
 | PaperColor | C151 | 背面上、下两片电路标；底侧徽标 | `src/devices/papercolor/index.js` |
@@ -64,7 +64,6 @@
 | 型号 | 当前缺项 | 处理边界 |
 | --- | --- | --- |
 | Core2 v1.1 | EXT 标尚无正式来源 | 保留缺项，不凭相近版本补字或复刻引脚标；当前仅计背标和认证标接入 |
-| CardputerZero | 四侧接口贴纸尚未接入 | 现有左右侧几何/接口标识与贴纸配准存在冲突，待核对几何方向与标识后处理；不靠翻转整片图片掩盖冲突 |
 | PaperMono | NFC 图文尚无正式来源 | 当前保留 NFC 实体盖，正式 NFC 图文继续等待同型号来源 |
 | CoreS3 + DinBase | 后部 PCB 丝印尚无正式来源 | 保留真实后盖及结构，不把独立主机背标贴到 DinBase 外盖 |
 | 上述 7 款可选教育版 Unit | 标准版正式贴纸缺精确来源；教育版原生位图较小 | 不默认启用教育版，不承诺近景细字质量与高分辨率原稿一致 |
@@ -102,9 +101,13 @@ const envWithoutRaster = await loadGroveModule('env-iii', {
 
 ## 验证状态
 
-2026-10-26 在本地公开构建中重新查看 24 款的背面/立体视图，并补看 16 个侧面、顶面及底面，共 64 个静态视图。另保存 StackChan yaw 35° / pitch 45° 的四个视图、DinBase 电源滑块两档、CardputerZero 电源帽两档，以及真实 StickS3 → HUB → RFID2 连接，共 73 张浏览器截图。贴纸未出现加载空白或意外丢字；浏览器捕获的 warn/error 日志为空。教育版仍受上表原生像素限制，Tab5 仓底标按实际装配被电池盖遮挡。
+2026-10-26 首批公开快照 `664799e` 查看了 24 款的背面/立体视图，并补看 16 个侧面、顶面及底面，共 64 个静态视图。另保存 StackChan yaw 35° / pitch 45° 的四个视图、DinBase 电源滑块两档、CardputerZero 电源帽两档，以及真实 StickS3 → HUB → RFID2 连接，共 73 张浏览器截图。贴纸未出现加载空白或意外丢字；浏览器捕获的 warn/error 日志为空。教育版仍受上表原生像素限制，Tab5 仓底标按实际装配被电池盖遮挡。
 
 连续覆膜的选择依据实际贴膜形状：StopWatch 背标跨壳体圆槽且保留喇叭 U 口及排母缺口；Tab5 ST7123 背标跨四个圆槽且保留六针窗口；DinBase 电源字样固定在壳上，滑块在独立开窗中移动。StickS3 左贴跨前后两块真实壳面；Core2 认证贴位于 +Y 顶面，右侧喇叭孔保持敞开。验证索引与拼图见 `artifacts/stickers/review.json`。
+
+后续 CardputerZero 补缺批次加入四片侧面/顶部贴纸。官方正面、斜视及两侧图交叉确认外围 X 方向曾镜像，因此先修正接口、开孔、Boot 与顶部 microSD/IR 的实际方向，再按原 PNG 比例配准；GPIO 跨两块相邻真实壳面，microSD 标避开通风槽。旧真实模型独立回归有 21 项失败，修后 46/46 通过，1332 个源不透明采样点均首先命中正式贴纸；48 个控件动作不会带动固定贴层。
+
+该补缺批次另外保存 22 张当前浏览器图：七视图、三面近景、Boot/F1 压放、电源帽 0/1/0，以及 CardputerZero → HUB → RFID2 的连接、姿态和断开。三组按压/档位均有实际像素变化，复位图的模型区域逐像素相同；首次从前方近看未暴露 Boot 侧帽的截图已排除，最终改从实际左侧检查。当前索引为 `artifacts/cardputer-zero-stickers/review.json`，不回写首批冻结记录。
 
 构造检查、有限几何采样、mock 图片加载、资源释放检查和 build 通过，只能证明对应的数字检查范围。它们不能代替真实浏览器图片解码/渲染验收，也不能证明实物制造、电气、固件、传感器或光学行为。
 

@@ -1,0 +1,2628 @@
+{
+  "date": "2026-10-26T05:30:32.493181+00:00",
+  "baseline": "664799e4ec9fbdd7aea3783dfd9f71e82ec7ff81",
+  "scope": "CardputerZero peripheral registration and four formal raster labels only. Private table, vectors, mappings, conversion artifacts and paused Scroll geometry excluded. 43 modeled, 0 verified.",
+  "changes": [
+    "HDMI/audio/Grove group on front-right; USB-A/Ethernet/Boot on front-left",
+    "Top SD and IR positions/apertures corrected together",
+    "Four untouched raster labels retain original aspect; five projected surface meshes",
+    "Same IDs and connector families; two USB labels now describe visible sides without asserting electrical role",
+    "Port pose migration documented in docs/AGENT-INTEGRATION.md"
+  ],
+  "coverage": {
+    "standardModels": 17,
+    "optionalEducationCnModels": 7,
+    "modelsAwaitingExactSource": 19,
+    "totalRasterTextures": 65,
+    "cardputerZeroRasterLayers": 13,
+    "limits": "docs/STICKER-COVERAGE.md"
+  },
+  "commands": [
+    {
+      "command": "npm run check",
+      "exitCode": 0,
+      "logSha256": "3a662931f610f48155d5f48fda2ff9e36eee6689a6b37d6f12c978db4850f5d5"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "logSha256": "bff14d96f4c57707a720df643c657c9cc2895f12288ce3bb4cad7d47724bceea"
+    },
+    {
+      "command": "./manage.sh status",
+      "exitCode": 0,
+      "result": "Healthy: http://127.0.0.1:5188"
+    }
+  ],
+  "independentChecks": {
+    "before": {
+      "file": "artifacts/cardputer-zero-stickers/registration-before.json",
+      "failed": 21
+    },
+    "after": {
+      "file": "artifacts/cardputer-zero-stickers/registration-after.json",
+      "passed": 46,
+      "failed": 0
+    },
+    "reflection": "artifacts/cardputer-zero-stickers/reflection-check.json",
+    "artworkSamples": {
+      "file": "artifacts/cardputer-zero-stickers/artwork-sampling.json",
+      "passed": 1332,
+      "total": 1332,
+      "missingUV": 0,
+      "occluded": 0,
+      "fixedDuringControls": 48
+    }
+  },
+  "browser": {
+    "address": "http://127.0.0.1:5188/?model=cardputer-zero",
+    "captures": [
+      {
+        "file": "zero-back.jpg",
+        "sha256": "255274fa30eeac0c17921348c9bc7c86c3c60b2b5c62553068040dd94d2d3938"
+      },
+      {
+        "file": "zero-boot-pressed.jpg",
+        "sha256": "7b92428a2bad8fb12f0668e127f71f5b724880c1e296a650b49c1f45019174ec"
+      },
+      {
+        "file": "zero-boot-released.jpg",
+        "sha256": "aec8f69e8827987c0382a35569505781de9100b48dfefb61f2177142d2535b0d"
+      },
+      {
+        "file": "zero-boot-rest.jpg",
+        "sha256": "aec8f69e8827987c0382a35569505781de9100b48dfefb61f2177142d2535b0d"
+      },
+      {
+        "file": "zero-bottom.jpg",
+        "sha256": "b8bd5e4d06c6f6259aa4afb71563ddf03952fe9085a40fc793b4b850eadba31a"
+      },
+      {
+        "file": "zero-disconnected.jpg",
+        "sha256": "fc7555cd0c10b856333be448c0f2e8c3be61cc589d4cb8ad4d1a96a906dbcc96"
+      },
+      {
+        "file": "zero-f1-pressed.jpg",
+        "sha256": "eefef504114988e8e7a1968b5f4a0300efb947c3685c41c391e3c08fc5f88c0d"
+      },
+      {
+        "file": "zero-f1-released.jpg",
+        "sha256": "b55bb8b7e5b663be6eb6e5f7892b965ce6c029158543d4f8a20f75f69751284f"
+      },
+      {
+        "file": "zero-f1-rest.jpg",
+        "sha256": "8c6c3d499e2001b21cff592c50fcfc05139f737db69fc7334a5e3179306156cb"
+      },
+      {
+        "file": "zero-front.jpg",
+        "sha256": "8d42af3052618f134f50e1fd66d860920e4657102016e108b8a8e152ef4c52a8"
+      },
+      {
+        "file": "zero-hub-rfid2-posed.jpg",
+        "sha256": "cf35d248f47839f76a9f6c51722ddfd9a2e949ce59c6ec668539e10ecbd4fb3c"
+      },
+      {
+        "file": "zero-hub-rfid2.jpg",
+        "sha256": "5bbde13404eeb74f73ba1341d46473d12195eafec42411f1ad62a41f9d8a2039"
+      },
+      {
+        "file": "zero-iso.jpg",
+        "sha256": "3f4b86e6777a61abd87675d43a06a26f69732a4d07d77b4f6dfd28b2e8114b45"
+      },
+      {
+        "file": "zero-left-detail.jpg",
+        "sha256": "78e66edeef546dd0d8ffd6dfc8cd8a71ecd7a20ab06f601764af0fc621071d50"
+      },
+      {
+        "file": "zero-left.jpg",
+        "sha256": "9f67fa120d1afc9212bc00a897716e97ca541e88a91c886c51085ed70a32f7aa"
+      },
+      {
+        "file": "zero-power-0-returned.jpg",
+        "sha256": "3e752e38e56d6d16e27193b73d01c2aabb4640220d02762be684de0e700f551e"
+      },
+      {
+        "file": "zero-power-0.jpg",
+        "sha256": "3e752e38e56d6d16e27193b73d01c2aabb4640220d02762be684de0e700f551e"
+      },
+      {
+        "file": "zero-power-1.jpg",
+        "sha256": "c05592b49b2bfc441a7c65ad87c273a35fcbd3461e423eca9f44edb83c525e90"
+      },
+      {
+        "file": "zero-right-detail.jpg",
+        "sha256": "cf915c80b67c57c8639d2d6e70066330f3dc29d880d37c6e2a6d3c13719780a0"
+      },
+      {
+        "file": "zero-right.jpg",
+        "sha256": "b337735983ef7e33f96aa8ff1446167880c9c41181e9e804bea15aec32b3bfa6"
+      },
+      {
+        "file": "zero-top-detail.jpg",
+        "sha256": "5d7bd3877b8f616e5151c62f2de6959777875c60bc4309dce25319c281deba33"
+      },
+      {
+        "file": "zero-top.jpg",
+        "sha256": "f5f39da8c6238616be744c02883bf976bebabdba677b9e85a6ce6764093eaad6"
+      }
+    ],
+    "count": 22,
+    "cases": [
+      "seven canonical views",
+      "three side/top detail views",
+      "Boot and F1 rest/pressed/released",
+      "Power stable 0/1/0",
+      "Actual right Grove -> HUB -> RFID2 attachment, yaw 35 / tilt 20, root detach"
+    ],
+    "pixels": [
+      {
+        "control": "boot",
+        "comparisonRegionPx": {
+          "left": 305,
+          "top": 75,
+          "rightExclusive": 1230,
+          "bottomExclusive": 555
+        },
+        "channels": "decoded RGB",
+        "threshold": 0,
+        "pressedChangedPixels": 5384,
+        "releasedChangedPixels": 0,
+        "fullFramePressedChangedPixels": 5384,
+        "fullFrameReleasedChangedPixels": 0,
+        "fullFrameReleasedDifferenceBounds": null,
+        "scope": "Specified model stage region only; browser UI outside it is not required to match."
+      },
+      {
+        "control": "f1",
+        "comparisonRegionPx": {
+          "left": 305,
+          "top": 75,
+          "rightExclusive": 1230,
+          "bottomExclusive": 555
+        },
+        "channels": "decoded RGB",
+        "threshold": 0,
+        "pressedChangedPixels": 6790,
+        "releasedChangedPixels": 0,
+        "fullFramePressedChangedPixels": 6921,
+        "fullFrameReleasedChangedPixels": 262,
+        "fullFrameReleasedDifferenceBounds": [
+          1264,
+          72,
+          1280,
+          344
+        ],
+        "scope": "Specified model stage region only; browser UI outside it is not required to match."
+      },
+      {
+        "control": "power",
+        "comparisonRegionPx": {
+          "left": 305,
+          "top": 75,
+          "rightExclusive": 1230,
+          "bottomExclusive": 555
+        },
+        "channels": "decoded RGB",
+        "threshold": 0,
+        "pressedChangedPixels": 11679,
+        "releasedChangedPixels": 0,
+        "fullFramePressedChangedPixels": 11679,
+        "fullFrameReleasedChangedPixels": 0,
+        "fullFrameReleasedDifferenceBounds": null,
+        "scope": "Specified model stage region only; browser UI outside it is not required to match."
+      }
+    ],
+    "warnErrorLogs": [],
+    "excludedAttempt": "Initial Boot focus retained the front viewing angle and did not expose the side cap; excluded from final proof. Final Boot uses left view.",
+    "sheets": [
+      {
+        "file": "artifacts/cardputer-zero-stickers/zero-control-actions.jpg",
+        "sha256": "b6027a71ddc4063e0dc722d9b3133d59709655311dc5b9b6f16f466d4fbf1926"
+      },
+      {
+        "file": "artifacts/cardputer-zero-stickers/zero-perimeter-overview.jpg",
+        "sha256": "f4961680ff9fef0eee9a83819e6fddb67c0b6e5e34383fe30cddc728ae31f00e"
+      },
+      {
+        "file": "artifacts/cardputer-zero-stickers/zero-seven-views.jpg",
+        "sha256": "65d59563a4a5af1165310e8f119359005ed3e9e7b3ff64b8902c67271081fce8"
+      }
+    ],
+    "pixelComparisonScope": "Decoded RGB, zero threshold, ROI [305,75,1230,555) in the model stage. Whole browser frame is not asserted equal; F1 release has UI differences outside the stage."
+  },
+  "sourceFingerprint": "b676a4a5caa2d6cb5919e158c7ab9ae12154ff1d49edfa25bfdcdcf6559d0b07",
+  "source": [
+    {
+      "file": "LICENSE",
+      "sha256": "bd6afb822b82b478e8b0165cd5fbd107a7e30a371f1276052d2cafdd1a8b440b"
+    },
+    {
+      "file": "README.md",
+      "sha256": "e375ef04b4ff7fd3365ac3caf3f8c7bfcc27cea61cb24ae87490a5eb9af030b6"
+    },
+    {
+      "file": "THIRD_PARTY_NOTICES.md",
+      "sha256": "9b845c6a38033a03a338abd535e00e2031f75caee7b681c74b75b8f552ef1111"
+    },
+    {
+      "file": "catalog/products.json",
+      "sha256": "e18cc2fbcf1981e2450f3e5ddb564683723aaaedca446e28637b1335ab413538"
+    },
+    {
+      "file": "demo/dynamics.js",
+      "sha256": "b330fff877189c4faef9605a19a3860470c76ad86e200b37a102752db6d39f43"
+    },
+    {
+      "file": "demo/framebuffers.js",
+      "sha256": "676e2079a6e7c9fd47a33a1447681b63ce3ce1a907394062d12f0e7ac1c6c349"
+    },
+    {
+      "file": "demo/index.html",
+      "sha256": "64609124d4571e28a71244a0ca52708c21a8c1e53ed0681f0412b63e5ae336f8"
+    },
+    {
+      "file": "demo/main.js",
+      "sha256": "5944d3b12ef01ca144dee27c5f338a4a112d01ab216392c7851a481084a5c415"
+    },
+    {
+      "file": "demo/style.css",
+      "sha256": "fd4b9a97a2f36a59833dcb36cda44cebbd3f3cacb00e8cc38d489b57e689da0b"
+    },
+    {
+      "file": "docs/AGENT-INTEGRATION.md",
+      "sha256": "2b3f423ac0662d7c975e7553471303813913279ffdd5345566ad38aaad191685"
+    },
+    {
+      "file": "docs/STICKER-COVERAGE.md",
+      "sha256": "83240a4c009e7fe72859f94e768487b243448d1b317b53437705b492b31f0544"
+    },
+    {
+      "file": "docs/plans/cardputer-zero-stickers.md",
+      "sha256": "3f9b5a12d4bf5cf7eef63d8b891d83fd57096ca04bf3e5df526e0fa6e06d1cd1"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "41f333290927c81ec95f505dbb3e70cee3890c00be5caaf7a28284658f93dacb"
+    },
+    {
+      "file": "package.json",
+      "sha256": "d8235cc09316ceb6c6e046909ed2e33af773f6d397d893bbe13adb71ade1746e"
+    },
+    {
+      "file": "scripts/catalog.mjs",
+      "sha256": "07256b426f864067c701a29303470556867d7db6c616ab02afbd30885b29b4c5"
+    },
+    {
+      "file": "scripts/check-8encoder.mjs",
+      "sha256": "d2fac20d57908664232a273a5d61d877e1812b37cf869c5d22d01322aa310a3a"
+    },
+    {
+      "file": "scripts/check-actuator-materials.mjs",
+      "sha256": "c164bad98b6341d0362bfdf226628073b66956762cd9e6c0457d07fab9a6a590"
+    },
+    {
+      "file": "scripts/check-angle-assembly.mjs",
+      "sha256": "90dfb73a0385cdd1b13407241bad71291a59d85d7d16c4d451619f08806be40d"
+    },
+    {
+      "file": "scripts/check-atoms3r-closure.mjs",
+      "sha256": "6a6297270279cfcd507526635e16db3d39be0f27b5cb56a897c7e7036fed56ff"
+    },
+    {
+      "file": "scripts/check-button-actuation.mjs",
+      "sha256": "f5ca09f3d24ddb3e95ad3732ff5b1bd4a9936c1a6dd3e5afd7f52516f00f7986"
+    },
+    {
+      "file": "scripts/check-cardkb.mjs",
+      "sha256": "2bcdadf32ab930a9df38c5b17d6c916dedb106a393a186e55c8d034054e6cf25"
+    },
+    {
+      "file": "scripts/check-cardputer-adv-assembly.mjs",
+      "sha256": "f7e0ba84c6716abaa8a27969bcc80bb7ed9d0ef3479f52445320e6e29eca3754"
+    },
+    {
+      "file": "scripts/check-cardputer-zero-assembly.mjs",
+      "sha256": "9405a36e83eab60d0f44c05b47ab78644d18e4bd01c89a3443cdc91ee264f6e6"
+    },
+    {
+      "file": "scripts/check-classic-unit-connectors.mjs",
+      "sha256": "6e1309d8154f21164370c44cdbcf05c6fc2f83ed3ffbf5e465df225f01e31262"
+    },
+    {
+      "file": "scripts/check-core2-assembly.mjs",
+      "sha256": "de5c13ca446c0a25467700850d0c6071ad05e7fe29942fa48e7ca75d00bdffe6"
+    },
+    {
+      "file": "scripts/check-demo-framebuffers.mjs",
+      "sha256": "883d8dc95166402e8de56f9899c89a5250585e21c35eb3cca9c2fbc37de9a337"
+    },
+    {
+      "file": "scripts/check-demo-lifecycle.mjs",
+      "sha256": "b2e0c7a576c81bf23214eba138b3f0338a747a6f6da5b658c0e0c541e4e19acf"
+    },
+    {
+      "file": "scripts/check-details.mjs",
+      "sha256": "58217bc280a20014599ac561af99fc90f8cd9cdb8a3f8d92c699a4c8a5e56bd8"
+    },
+    {
+      "file": "scripts/check-device-actuators.mjs",
+      "sha256": "19525b59f813602802729ec885f15f74d058031d8c1348cb6bd2dad5e7d02feb"
+    },
+    {
+      "file": "scripts/check-display-touch.mjs",
+      "sha256": "4683855b4246b26fe4eeb9f98ccf379f3ebb4c8c93155528dc9aa4263f64257b"
+    },
+    {
+      "file": "scripts/check-encoder-assembly.mjs",
+      "sha256": "af84ca67d22d0bdaedcf59c33098589a719c828daaae80a07fdbbae858838f07"
+    },
+    {
+      "file": "scripts/check-grove-cable.mjs",
+      "sha256": "662840b87b83d1242ce1aef34517c83d3fa4a7b3fa12229ee46bf28fd02451fd"
+    },
+    {
+      "file": "scripts/check-header-sockets.mjs",
+      "sha256": "9e738a575426c4aa71b2bcad5315ccde84e0af4318c13ec72a7653fd9aab7e9a"
+    },
+    {
+      "file": "scripts/check-heart-optics.mjs",
+      "sha256": "33276ba68bfe8339e8d6f2052edcfcf390d5c79bf4aea6062143457f1782e472"
+    },
+    {
+      "file": "scripts/check-host-grove-assembly.mjs",
+      "sha256": "03ceb5543d8fda870a996a748a1691df6b6259cc2e490f02272da7eb50bd1cbc"
+    },
+    {
+      "file": "scripts/check-host-visible-leds.mjs",
+      "sha256": "b73aaa06155d7d3de84f895c376ffd9970f24c4fbf97c192f521e641ddf82938"
+    },
+    {
+      "file": "scripts/check-ir-hub-rfid2.mjs",
+      "sha256": "5f90718eed20ed72db20fa3a75a0840ba7c28d53f473ba1c1604b5482899918c"
+    },
+    {
+      "file": "scripts/check-key.mjs",
+      "sha256": "db8197615100fd9ece4144ceeafbe4388a0f48df4f51f0df3df9bb8799f98d0b"
+    },
+    {
+      "file": "scripts/check-limit-lever.mjs",
+      "sha256": "0776def4d40fa88c050abf9a7f253ccd051b9d6ce5e896b25de9927e39328908"
+    },
+    {
+      "file": "scripts/check-nanoc6-assembly.mjs",
+      "sha256": "0b447f602aae6f3a3890244c32611a86334a67d4c5914f0130c514da28598f52"
+    },
+    {
+      "file": "scripts/check-ncir-assembly.mjs",
+      "sha256": "5749b66bff1249cd1dc27294ea043f31b42fc19faae3ae020a135f9b270cd240"
+    },
+    {
+      "file": "scripts/check-nesso-assembly.mjs",
+      "sha256": "76e885aa08eb2aa86a810a569a267df7ab9a9e018468565318c120a10fa43248"
+    },
+    {
+      "file": "scripts/check-open-top-grove.mjs",
+      "sha256": "aee15d5e0f0904bfbc95b9ec68e7af7ed70144b7ae239b0f3a08cda7340dc6e1"
+    },
+    {
+      "file": "scripts/check-paper-assembly.mjs",
+      "sha256": "66fd69c7263317b0d9f50654c93e413d8ce7e34f8b36d609b947324b15e01325"
+    },
+    {
+      "file": "scripts/check-pcb-hole-winding.mjs",
+      "sha256": "e4514ed6931a5c68a296fec8500390c7eea1d5e875951fda1a3237c13d25eaf6"
+    },
+    {
+      "file": "scripts/check-port-lifecycle.mjs",
+      "sha256": "8e789f965f227e02d47a86bac067d3072218a3359d2e794f4feea7cc06c38533"
+    },
+    {
+      "file": "scripts/check-printed-artwork.mjs",
+      "sha256": "d13494cda8b051e2acc698afc9b66acdb7ec95848eba74928a165b289bec896e"
+    },
+    {
+      "file": "scripts/check-relay-assembly.mjs",
+      "sha256": "f21f892128097678c076f60cafc953be854d701c0bbe96c60058fe37b53e0061"
+    },
+    {
+      "file": "scripts/check-roller485.mjs",
+      "sha256": "8eabc902845f28ffd513f590d923577bcb773f92ac8300a1b58ceecd8f7d5fa8"
+    },
+    {
+      "file": "scripts/check-rs485-buzzer-fan.mjs",
+      "sha256": "7d367f5e679a7448283453c27dddcd9e2e7a1a0c38c92acb6ac6a5cb6846e275"
+    },
+    {
+      "file": "scripts/check-rs485-terminal.mjs",
+      "sha256": "9a25f8610b401e7b5b7a6ec31dc665fe3879a01f6d34c603873fa2d3f80bcdd4"
+    },
+    {
+      "file": "scripts/check-scroll.mjs",
+      "sha256": "793c04b06df470adc988910494f4a244cd7bd35ba232045f9fece0b6a1d8275c"
+    },
+    {
+      "file": "scripts/check-stackchan-assembly.mjs",
+      "sha256": "9723e9c85dd8b8641bb4b85e43cfae9c8813cf10f5897a3152b92c5df239753c"
+    },
+    {
+      "file": "scripts/check-stackchan-cover-seats.mjs",
+      "sha256": "8c7370a6ec6517a13b98992b189cce4f9aab4a7053e9ef99e72a7e7b1eb5a1a3"
+    },
+    {
+      "file": "scripts/check-stackchan-moving-assembly.mjs",
+      "sha256": "7bf10dcb9c6a3f882c80553402708cb2db29067a432eeb8fe28f4e9142208b05"
+    },
+    {
+      "file": "scripts/check-stackchan-servo-fit.mjs",
+      "sha256": "5fc62b124a000cf10aaddd52fbd351ec56f321ded77a5cc7b1032b6218d7c338"
+    },
+    {
+      "file": "scripts/check-stackchan-servo-outline.mjs",
+      "sha256": "ac2d21d477221c6fa5f41c3288ea16bc6a4deb60a522e06b9cfb4c41ee9810a6"
+    },
+    {
+      "file": "scripts/check-stackchan-touch-led.mjs",
+      "sha256": "a0ecd384c536ffb22b4bea73f8bf92eb88461d1c4e9fdd5f7a86fba944733b46"
+    },
+    {
+      "file": "scripts/check-stamplc-terminals.mjs",
+      "sha256": "277b2bd04ac5d33cf939c1925b570da5704b81579c380f0d45555eb5db2c26cd"
+    },
+    {
+      "file": "scripts/check-sticker-variants.mjs",
+      "sha256": "90a67eeac1ebca8507ddbfbb9b8e7703acffa35bf3470d32b1b615a122caebfc"
+    },
+    {
+      "file": "scripts/check-sticks3-assembly.mjs",
+      "sha256": "ded606ac21249f2f08ecaf508eb5adab3b5d4d20d96ad9ab9bc50127da24bc65"
+    },
+    {
+      "file": "scripts/check-stopwatch-assembly.mjs",
+      "sha256": "700b5f8ff30008aa4f1b40b110d739f4fc6c58c2b35029e621343c6ab6fa0b56"
+    },
+    {
+      "file": "scripts/check-tab5-connectors.mjs",
+      "sha256": "a6f632c0de4b80d16694bcd373bf38cd94abc9a94798d1d1e924dc051a14afeb"
+    },
+    {
+      "file": "scripts/check-thermal-assembly.mjs",
+      "sha256": "637076569a2f5e4648c08f6dae46d47b901c1f771bd58c20c41c8125a5be070f"
+    },
+    {
+      "file": "scripts/check-unit-actuators.mjs",
+      "sha256": "30eef8cc34367e034fec071052bdfaa0dd43d340fe4cdfc138d4926b3cb7823f"
+    },
+    {
+      "file": "scripts/check-unit-visible-functions.mjs",
+      "sha256": "553b326b7722e535bd4c321dbaca9a3c78d48441b4ad55a9f462b553272421d5"
+    },
+    {
+      "file": "scripts/check-viewer-lifecycle.mjs",
+      "sha256": "a471cf11d5e1dba09530138af461f2f7d1119b28090eeb4332774139bdfdfd26"
+    },
+    {
+      "file": "scripts/check-visual-motion.mjs",
+      "sha256": "4211db1c25643977bebed8e10c182c5369ae6cd8824d090cd5201791eab205ac"
+    },
+    {
+      "file": "scripts/check.mjs",
+      "sha256": "d453a9e4729ef2c136dd874bcbb7fdb38431a084bc20a4e44f0b7918b74c3973"
+    },
+    {
+      "file": "scripts/serve.py",
+      "sha256": "632c8376d49b9c6c74160fffe6a3d49cf282d88b04711749d47e6f34186a3fbb"
+    },
+    {
+      "file": "src/core/Component.js",
+      "sha256": "61e2d39fcb97890ecdbdf1abfb51ab331ad85770c6b2d165e25ff5f0b9766bcc"
+    },
+    {
+      "file": "src/core/ComponentHost.js",
+      "sha256": "019f32dd28489a4fe7cb60263285b358662ba65dab7ba7c7d2767a01a98f7e40"
+    },
+    {
+      "file": "src/core/Device.js",
+      "sha256": "0c788fb4f0ef0b490ab640221f246d2d23a44649c0f9c4ba6aadfabb865b4543"
+    },
+    {
+      "file": "src/core/DeviceViewer.js",
+      "sha256": "b4fba212018e15268499ba3c6658fbf290273a9fb461b2ae43569b837d52c995"
+    },
+    {
+      "file": "src/core/EventEmitter.js",
+      "sha256": "aadc64147ea1c4dcb8e18cb06c76ec41d6c4936ae684b1186a397b6a63e22c1c"
+    },
+    {
+      "file": "src/core/Module.js",
+      "sha256": "20fbae04c35e0693fe3dd688807a7f9bae2754d5d7b914c8aeb958ec26795203"
+    },
+    {
+      "file": "src/core/bridge.js",
+      "sha256": "e073d0538a972439594c18846b305603edf91eb41b3c0b832e02e69cd19f6abe"
+    },
+    {
+      "file": "src/core/components/Button.js",
+      "sha256": "c2b99313190d4ecf26f2522530360e0aeec687a8a6abd1a5120eb53809414b9e"
+    },
+    {
+      "file": "src/core/components/Display.js",
+      "sha256": "fa984c28ba73fce747a63fb33326dab19009e3bdf40cfddb4b9589b167f255a9"
+    },
+    {
+      "file": "src/core/components/Imu.js",
+      "sha256": "903d39e7a1d5248c30529b152b42325cf8c35061c75a12575ec28aa2bfe3934f"
+    },
+    {
+      "file": "src/core/components/Led.js",
+      "sha256": "220f32c62ad83b41a86ba6f3d280697fe47008e81bde074c4c9542120f47a0cb"
+    },
+    {
+      "file": "src/core/components/Port.js",
+      "sha256": "9b888b81e43b7397ac5eee82cb25e7b1abfd5c9f30d29a8ba967f8f5080208dc"
+    },
+    {
+      "file": "src/core/components/Speaker.js",
+      "sha256": "4f50645b9bfb71ab5266bb45809a5d6780c90abc5e1b22d8b19030ccd4d6f8f9"
+    },
+    {
+      "file": "src/core/components/VisualJoint.js",
+      "sha256": "654fe92b14931824362b5c6f7fb24be509c7e1be1ff4a77d6903bcc51581e84c"
+    },
+    {
+      "file": "src/core/geometry.js",
+      "sha256": "2bb560fe5cb934e3ad18f5ac8370e57ace42aa28bf4421d62e8fa132c906b94e"
+    },
+    {
+      "file": "src/core/index.js",
+      "sha256": "8a890c229810e93fa576cd2c9c5915a7238fd964ea23468d18c426c2a7863358"
+    },
+    {
+      "file": "src/core/materials.js",
+      "sha256": "9f5250b54644c5d746ed37791289a99650be4e286e266ecd57aefddf562f3717"
+    },
+    {
+      "file": "src/core/registry.js",
+      "sha256": "07388515318616b183a88bb7f23593b2137900547f3f3e61e300b1f753309bb8"
+    },
+    {
+      "file": "src/devices/atoms3r/artwork/certification.png",
+      "sha256": "a8c9adb7c4d0675c47584cbd6a9c3762fbf943bbc0366093a5c6f8ea348e1990"
+    },
+    {
+      "file": "src/devices/atoms3r/artwork/rear-main.png",
+      "sha256": "f4559ab19c552641a26ee56d96cb52700afe1a28af1e6dd5f75617fb15b0e463"
+    },
+    {
+      "file": "src/devices/atoms3r/cad-map.json",
+      "sha256": "a9b9e744dfdfd640414cfbc281419e0869077a4c18ca37661d902e85f906c0b6"
+    },
+    {
+      "file": "src/devices/atoms3r/dimensions.js",
+      "sha256": "0a2051f45fd5301785245e2fd51e8f63bc5f5b6e8fa39d22d3b0cc3e44619dd4"
+    },
+    {
+      "file": "src/devices/atoms3r/geometry-data.js",
+      "sha256": "ec1b477ac3c00a47ea2b9e83729655ed816b829b6a3bae02d25262952f250f96"
+    },
+    {
+      "file": "src/devices/atoms3r/index.js",
+      "sha256": "13c52da31baa0df06de500d9f5a04c94033217b5c83caf4c818b0fec2ec58840"
+    },
+    {
+      "file": "src/devices/atoms3r/stickers.js",
+      "sha256": "e6c52adb9e06b625f24909b6ffec0c546a35994e0e95dcfb53a94ac8beb9e57e"
+    },
+    {
+      "file": "src/devices/cardputer-adv/artwork/back.png",
+      "sha256": "d35128e9e158873df01d32d31bd230c20a5135fc6074ef3cfa4083e19f1db1ca"
+    },
+    {
+      "file": "src/devices/cardputer-adv/artwork/front-name.png",
+      "sha256": "05062fdb2753812e0e281fe0d8a5148ea2658f69d85548b9f46ac1bdd6dae431"
+    },
+    {
+      "file": "src/devices/cardputer-adv/artwork/grove-side.png",
+      "sha256": "b6f7df4b1aad2d7125b6fe9da21acbea329d8a766396bed9aff645ddf1da1f0a"
+    },
+    {
+      "file": "src/devices/cardputer-adv/artwork/keyboard-1.png",
+      "sha256": "07de8cebb19269bf8222dde0f7d15b285fcf7d6ca5fdd4c648f584dbbac10ef1"
+    },
+    {
+      "file": "src/devices/cardputer-adv/artwork/keyboard-2.png",
+      "sha256": "39404c232bd18847336309433d244d46976a02f274ade962656f9196896a35ed"
+    },
+    {
+      "file": "src/devices/cardputer-adv/artwork/keyboard-3.png",
+      "sha256": "7f31707a98c8ca7bd22aff847a6abbdea0e67ab6f880b7c0d96682281b33e385"
+    },
+    {
+      "file": "src/devices/cardputer-adv/artwork/keyboard-4.png",
+      "sha256": "7e526f3f1a75b66a6ae49490b256050b9d5041fbb5c4cfd23c423dd69e011cf3"
+    },
+    {
+      "file": "src/devices/cardputer-adv/artwork/stamp.png",
+      "sha256": "3bd22b202861c24d994cfe3e309a67d924dc7dddd5eec39883efbb7636bba2eb"
+    },
+    {
+      "file": "src/devices/cardputer-adv/artwork/top-edge.png",
+      "sha256": "79d221d5c1ea1092923d3a932c95ea420790d5842340194b435b6cc51da946c3"
+    },
+    {
+      "file": "src/devices/cardputer-adv/assembly.js",
+      "sha256": "bc7da4058b5017017861e41844a79c0069f8d2b991a1651b364bb0020b799f1b"
+    },
+    {
+      "file": "src/devices/cardputer-adv/cad-map.json",
+      "sha256": "6430693b23657517127b074e8d1a9a59b971edf98e09177aa25375db725e03fe"
+    },
+    {
+      "file": "src/devices/cardputer-adv/dimensions.js",
+      "sha256": "f85e3b5b2b9e9fb942395cd3977ed5e87001a908ebc10afd4e614408dfce069a"
+    },
+    {
+      "file": "src/devices/cardputer-adv/geometry-data.js",
+      "sha256": "224241be078f232ad14e8d5703066df25bdca4f6b7cf49735c59b4dfe5bca1c4"
+    },
+    {
+      "file": "src/devices/cardputer-adv/index.js",
+      "sha256": "70a3f40190794057268299d59592d54b8bdb99425395c8d362dcb8f61dec4138"
+    },
+    {
+      "file": "src/devices/cardputer-adv/stickers.js",
+      "sha256": "17f7a2c13da01808b217f1366bf0e67ca826f1e2805d25b85f615aaa7cbb8db6"
+    },
+    {
+      "file": "src/devices/cardputer-zero/artwork/front-power.png",
+      "sha256": "8b829e506d97828057147351adf83beed072f5d3b4ca5f7e6d03bafb88749af8"
+    },
+    {
+      "file": "src/devices/cardputer-zero/artwork/front-zero.png",
+      "sha256": "489c5c27f986d6d6e26cd3821b7c146636407ec5c9aea6cd670bfbd96d17ee0a"
+    },
+    {
+      "file": "src/devices/cardputer-zero/artwork/keyboard-row-1.png",
+      "sha256": "ff7e31185eaf49f1127a31338ed34725d761eddaeab9e692ba891a437fd97251"
+    },
+    {
+      "file": "src/devices/cardputer-zero/artwork/keyboard-row-2.png",
+      "sha256": "bf954658f1a22ac9fa95e3bd0e858359598d3a1480426276dd6b9d38e3f73704"
+    },
+    {
+      "file": "src/devices/cardputer-zero/artwork/keyboard-row-3.png",
+      "sha256": "cb993cb8b43154550afd63f2f21c875e2dfd1e9a76a340e29ca5f34ab653ec4a"
+    },
+    {
+      "file": "src/devices/cardputer-zero/artwork/keyboard-row-4.png",
+      "sha256": "732f15a185a099644c734d9990b74b51356161ded9029abc222e35b27d06938f"
+    },
+    {
+      "file": "src/devices/cardputer-zero/artwork/left-usb-network.png",
+      "sha256": "fcd3118034f9ee410f33a5f51caf9d7a5f3a1996dedff03e573058bae11fb5df"
+    },
+    {
+      "file": "src/devices/cardputer-zero/artwork/power-cap.png",
+      "sha256": "b6abc5f604c8dd3adf18905c5883c7727f925234ccb0c3812fcfc0fb67e35fd8"
+    },
+    {
+      "file": "src/devices/cardputer-zero/artwork/rear.png",
+      "sha256": "20236e5a18199ac9cee26a82efcd7ddf7f5e2786354642821ae8553b42141730"
+    },
+    {
+      "file": "src/devices/cardputer-zero/artwork/right-display-audio-grove.png",
+      "sha256": "0ce068068b7907f90cecb421d8b7975198fdd0988881b976e10b1b3700bb22d4"
+    },
+    {
+      "file": "src/devices/cardputer-zero/artwork/top-gpio.png",
+      "sha256": "fc31f3d3f4b4335209b9cba03a94eee00831ac52887608789359d1092359e4ca"
+    },
+    {
+      "file": "src/devices/cardputer-zero/artwork/top-sd.png",
+      "sha256": "673d71cafe58a14d8ee7a3a2f8ec9ae1e3bc84320b94e5a820c4b10feadd3fa9"
+    },
+    {
+      "file": "src/devices/cardputer-zero/body.js",
+      "sha256": "e8b5b5fc169c3c73286ce6d353da2aed6aeff3cef7ece354836b1aea39a694b4"
+    },
+    {
+      "file": "src/devices/cardputer-zero/dimensions.js",
+      "sha256": "9bbb02821ebbd6d85c78ea6d3be430994e45ac234c12f55791cac9463dae06c9"
+    },
+    {
+      "file": "src/devices/cardputer-zero/index.js",
+      "sha256": "fc1ebb015bf8c1dddf3f670cebd8c2c0bb83e2395f55eefe0415a3467c6cf744"
+    },
+    {
+      "file": "src/devices/cardputer-zero/keyboard.js",
+      "sha256": "6fc17c6156d708e8c2973b01248fa2e500da8ee7e0cbcbfbec58341039ba5ed4"
+    },
+    {
+      "file": "src/devices/cardputer-zero/ports.js",
+      "sha256": "aec19fdc527e90daf68844af0adbdfbf468edf1230f5df6d4d8e5c7b0f9cbccb"
+    },
+    {
+      "file": "src/devices/cardputer-zero/stickers.js",
+      "sha256": "95d1280e8de7c0c76b69acc3e677f34834cf094a5929405a2b4f4af23127a28c"
+    },
+    {
+      "file": "src/devices/core2/artwork/certification.png",
+      "sha256": "b3bf157041cedfd8efcf4b623b2b61033e6dd2542ce4d6d7882bb497f2fcdd81"
+    },
+    {
+      "file": "src/devices/core2/artwork/rear-main.png",
+      "sha256": "6861115ae897d09c28bdcfa66d0366e1a98b54d19daf2379d12e157369dc478d"
+    },
+    {
+      "file": "src/devices/core2/assembly.js",
+      "sha256": "1eb2ec32a35a71bcc9db52c4572f5fb1563199cb2e9a9351622126f84edf46f8"
+    },
+    {
+      "file": "src/devices/core2/cad-map.json",
+      "sha256": "33cca2e6433a99fa1b40c6215bb2f7cba014d310e8542759e56b528fc5ca9424"
+    },
+    {
+      "file": "src/devices/core2/dimensions.js",
+      "sha256": "a18e72e730a385a30f97757966883769bd07a1ce6c9a985e95c3f63e20406913"
+    },
+    {
+      "file": "src/devices/core2/geometry-data.js",
+      "sha256": "13237abd2dd4e5b667bb98e7f997ff6dd280449523290d273c30f10ed4303bfe"
+    },
+    {
+      "file": "src/devices/core2/index.js",
+      "sha256": "92d1bf1b840c142ed614233f5ead0758d8ee9f4770ed78e8f163891e8ecd4328"
+    },
+    {
+      "file": "src/devices/core2/stickers.js",
+      "sha256": "d2061b5302dbe549cd166f8dd71c9e6761a19defca39721e8aecc4d1c85f0723"
+    },
+    {
+      "file": "src/devices/cores3/CoreS3.js",
+      "sha256": "30bedc638421591ebfe2b8b70b5a28e355277a9833f2f5e67e38244667f72efb"
+    },
+    {
+      "file": "src/devices/cores3/artwork/certification.png",
+      "sha256": "964e5b906bc2e9d91c6ece331089bee131b1c662471234fe2260d0fa83d002c7"
+    },
+    {
+      "file": "src/devices/cores3/artwork/din-dc.png",
+      "sha256": "4e91a6d58842571519bed3cafcf25cea8c449c6d8b89e8f5eb3d8b6e353ef66c"
+    },
+    {
+      "file": "src/devices/cores3/artwork/din-name.png",
+      "sha256": "9e60e39962f93773f0da8e28e907912e35dc2ecc1801f0e4df4dc5499fec7e9c"
+    },
+    {
+      "file": "src/devices/cores3/artwork/din-power.png",
+      "sha256": "ed376ff64f00f504a442f0accf7c7b3378464deebf862cd85d5babc41b583c01"
+    },
+    {
+      "file": "src/devices/cores3/artwork/port-b.png",
+      "sha256": "f930e559e994c0e9488828c9831ac03bbcf9962279fa79582beec9a16d622ec8"
+    },
+    {
+      "file": "src/devices/cores3/artwork/port-c.png",
+      "sha256": "9244524465e35a8d870192641653c636f4c55237725e43a2ac21bd30c24f6154"
+    },
+    {
+      "file": "src/devices/cores3/artwork/rear.png",
+      "sha256": "8663eeb85a1b09d6564d8cc1ac60cce8ec7fd1a0f8de9e95103cc2e7da3e9d15"
+    },
+    {
+      "file": "src/devices/cores3/cad-map-din.json",
+      "sha256": "b2771524ee38b2da3cd84a8c6bd31cf2abbe92256769378f124116cc983ed696"
+    },
+    {
+      "file": "src/devices/cores3/cad-map.json",
+      "sha256": "cc8f4726fecd6c39c44057d626e51f5bdaaaf00e99f13f4eabee0c2988fa5652"
+    },
+    {
+      "file": "src/devices/cores3/dimensions.js",
+      "sha256": "6b8286fc8bc8fbe4f728060a835632442ad686b206b8468764400e744ec9d067"
+    },
+    {
+      "file": "src/devices/cores3/geometry-data-din.js",
+      "sha256": "be7ff625e27c38fcfb55e09bcdede3c6bc655808614d0e6249f7d0860ec2d63f"
+    },
+    {
+      "file": "src/devices/cores3/geometry-data.js",
+      "sha256": "f5ae63bd7aba8bd799934e4e55d7c2e8adbb3e5d806340017ba358778c9cb517"
+    },
+    {
+      "file": "src/devices/cores3/index.js",
+      "sha256": "c92c0678fcde424aaa7c4677cf21bcf127bbd2835f6492cdab4dbba6097a5796"
+    },
+    {
+      "file": "src/devices/nanoc6/assembly.js",
+      "sha256": "1075fb701eb8357035fa80fbcab68cab7068eaa378faf7452f3b5705cad70a70"
+    },
+    {
+      "file": "src/devices/nanoc6/cad-map.json",
+      "sha256": "e0f050d713feb9424d871aa3479b2610531f00e96b8c1f963fa2de47619d211b"
+    },
+    {
+      "file": "src/devices/nanoc6/dimensions.js",
+      "sha256": "a727847892bafd9481b39917dc529955de591c2750d36123ca68a1f22bca01f6"
+    },
+    {
+      "file": "src/devices/nanoc6/geometry-data.js",
+      "sha256": "dd84cc062400e8765ae8ca34492c5ba39671277a04356233067b0d78eecaad08"
+    },
+    {
+      "file": "src/devices/nanoc6/index.js",
+      "sha256": "cddca725f170c6cc236e371d33990ee26b369a0208755c3e161fe04fc67aaf48"
+    },
+    {
+      "file": "src/devices/nesso-n1/assembly.js",
+      "sha256": "c7b41a6feef78f4766b989cfeaf2720321466f45bb79fd1d7a0e6bc60cb81d42"
+    },
+    {
+      "file": "src/devices/nesso-n1/cad-map.json",
+      "sha256": "0cecfcf00d6caa6dcd779b76736a6ac228e843b774a955944f5e3ec50adbd3f9"
+    },
+    {
+      "file": "src/devices/nesso-n1/dimensions.js",
+      "sha256": "27acf1d75306cd3740e8e185b85932908d67f663c7725d7ec86928426b184d28"
+    },
+    {
+      "file": "src/devices/nesso-n1/geometry-data.js",
+      "sha256": "68e82d56d71d336ea6db79643610e24570e2b2cf0cee28f3331f46cca71cb8b3"
+    },
+    {
+      "file": "src/devices/nesso-n1/index.js",
+      "sha256": "ad9a3bed3b56ca7ca3a9069b7b1b278aaff965fa7692f7e05a0da2cad856b105"
+    },
+    {
+      "file": "src/devices/papercolor/artwork/bottom.png",
+      "sha256": "ea59298cba7f6222a42783f84de57a5dbef9b90c6ea47df768afe88f468c696c"
+    },
+    {
+      "file": "src/devices/papercolor/artwork/rear-lower.png",
+      "sha256": "b0839c0a100c3e67562a551aa372768047849a36c2a1e6f80871dbe437da6cae"
+    },
+    {
+      "file": "src/devices/papercolor/artwork/rear-upper.png",
+      "sha256": "02415ce1ccbc54770aa0159a43423cd4737893d2d6e53c1defe8f3855e780cc8"
+    },
+    {
+      "file": "src/devices/papercolor/assembly.js",
+      "sha256": "274628ffaeff2b9dc3ec7b2df6d34a9871967b1e5e077326eac6c3e9fff0b9a1"
+    },
+    {
+      "file": "src/devices/papercolor/cad-map.json",
+      "sha256": "81c80f8f5b191abd47b5333089694374e28974b6e079d18bcd95b4c97c9b7d30"
+    },
+    {
+      "file": "src/devices/papercolor/dimensions.js",
+      "sha256": "5443b5d347e90efb86e9f80ef96163afea91ac6689256fb2912ddc1aea89eb14"
+    },
+    {
+      "file": "src/devices/papercolor/geometry-data.js",
+      "sha256": "a0b763dcf8b6155131bfaf0f67667a02b576d988bb85c9359d711c25903579f6"
+    },
+    {
+      "file": "src/devices/papercolor/index.js",
+      "sha256": "5cf417dfb4e688a4ed2ce5660cb39ce4c5fa7ec26169af6f46d869d51433a3dd"
+    },
+    {
+      "file": "src/devices/papermono/artwork/rear.png",
+      "sha256": "0dca37738f5ef4cd826e61952079341c4aaf1faf0a231667eb3bcf4283626fcd"
+    },
+    {
+      "file": "src/devices/papermono/assembly.js",
+      "sha256": "8e785869ec24077f8c2aad8601c5cb93fe1a6f8f9433ba2cf18d6575a7b36111"
+    },
+    {
+      "file": "src/devices/papermono/cad-map.json",
+      "sha256": "30de56ad2fd0c6f69e6b97725c0600d5ea6efc6681be737feb4e24b81cb913cb"
+    },
+    {
+      "file": "src/devices/papermono/dimensions.js",
+      "sha256": "3f7ef51d54f60884a8ec07d164c675a31e3adecf1d70be43b864c5a7a3ad7d42"
+    },
+    {
+      "file": "src/devices/papermono/geometry-data.js",
+      "sha256": "582b6ac698e615643518eb87dc76294388744a624d5ea23696ff287a49a17df1"
+    },
+    {
+      "file": "src/devices/papermono/index.js",
+      "sha256": "5367366ee3b00f7db275c820d4173cbad31926504e72afbef931d4a6d6e42ff9"
+    },
+    {
+      "file": "src/devices/stackchan/PitchHarness.js",
+      "sha256": "cd76bcd959268284fde600a665f1ce62fd3656697658bcf9085ad8bb3fb6a826"
+    },
+    {
+      "file": "src/devices/stackchan/artwork/bottom.png",
+      "sha256": "0deafe45a2d1b4d7ee704e91386bad17e388fec103cbb5db0294f3745fac0a29"
+    },
+    {
+      "file": "src/devices/stackchan/artwork/certification.png",
+      "sha256": "a3ac70830eed4e5a018889519b67ee7d8c48b231de546c9b41fb38d6fc544635"
+    },
+    {
+      "file": "src/devices/stackchan/artwork/side.png",
+      "sha256": "1ddee7a66b1c6bbe9385013b49f07c3176914b23e2d52cbe3d5972b50e72cd17"
+    },
+    {
+      "file": "src/devices/stackchan/cad-map-motion.json",
+      "sha256": "a2a45ed6e1e05008899fd8c277843be6cb0a8f093c0fabcb1ce4783a4219d17e"
+    },
+    {
+      "file": "src/devices/stackchan/cad-map.json",
+      "sha256": "62fdbc9a410396126216de8c38ab259bd99da361580a74beefdcf2e8e6b78f7a"
+    },
+    {
+      "file": "src/devices/stackchan/dimensions.js",
+      "sha256": "a6583eea8ceb18cf74a33d22260b8297e999dcebf730b73c6364a678625012fd"
+    },
+    {
+      "file": "src/devices/stackchan/geometry-data-motion.js",
+      "sha256": "938358b1fddc1a9defc59e1a299c7f2ad2be6db41fbc4eecb3ab18a63747e195"
+    },
+    {
+      "file": "src/devices/stackchan/geometry-data.js",
+      "sha256": "af43e3820a01f8c038f85b21621d6560bb172df55ab53d04361f2135f70d51ae"
+    },
+    {
+      "file": "src/devices/stackchan/index.js",
+      "sha256": "b66aab09d768fe1404da65133accaae0b616b11ac22b8f4043dea7085d7ab2fa"
+    },
+    {
+      "file": "src/devices/stackchan/motion-mechanics.js",
+      "sha256": "6fda87a9472758728817752ffe4def9c567ece7fc661fd1a754f6abe1168a466"
+    },
+    {
+      "file": "src/devices/stackchan/rear-assembly.js",
+      "sha256": "76e32f0af1885cd332430657b649a29a4201d3535a1c0f63d9039d494cbae0cd"
+    },
+    {
+      "file": "src/devices/stackchan/servo-packages.js",
+      "sha256": "bb005356f53d826dcd8cd9a77a25b51a0b0c401ecd691cd396bfc36c3849b0d3"
+    },
+    {
+      "file": "src/devices/stackchan/touch-led.js",
+      "sha256": "4aa634af4d85c6154efd03ecef3adde84749324bc88e4112c829bce1aec5be0d"
+    },
+    {
+      "file": "src/devices/stamplc/cad-map.json",
+      "sha256": "470ec4e2cb96bafd8861f5ac3b222eaf64e989ce862d904e1ffc56924a68dc3e"
+    },
+    {
+      "file": "src/devices/stamplc/dimensions.js",
+      "sha256": "a5e51938ff502591cddf2fad07b1eafc93a505f73a4c80e8ce2b1a0c590ff1b5"
+    },
+    {
+      "file": "src/devices/stamplc/geometry-data.js",
+      "sha256": "3568ec5408207a6bcf5f97f2cbc412a500af00474ecc145c01c87c9a986a7130"
+    },
+    {
+      "file": "src/devices/stamplc/index.js",
+      "sha256": "7412281c85d2126acbfb5d60ed5a828a1765ad26fa9fc9b540177e1905a00d0d"
+    },
+    {
+      "file": "src/devices/stamplc/terminals.js",
+      "sha256": "5dd9e8bc913351dbeaf53bfa7b081004fa8e222a3bb3966d6d19e27554615faf"
+    },
+    {
+      "file": "src/devices/sticks3/StickS3.js",
+      "sha256": "a310766b7242f44c1e8f5db7141004667c24315bb9373beabf749cdb602287c2"
+    },
+    {
+      "file": "src/devices/sticks3/artwork/rear.png",
+      "sha256": "3355803393cf98bc6d8c07f173173c1228bd69c81320ba166710e5dc78cd7fe9"
+    },
+    {
+      "file": "src/devices/sticks3/artwork/side.png",
+      "sha256": "672ea111bf918e6f4bfda888a0d863fd494c4f01be58f99008aca31579637194"
+    },
+    {
+      "file": "src/devices/sticks3/assembly.js",
+      "sha256": "ef74bc2e771bbc18a91be85e1733d84d905f2987ae59c5c3858f7a289461eba3"
+    },
+    {
+      "file": "src/devices/sticks3/cad-map.json",
+      "sha256": "5c98ef9b112f6689da0c40768dc201c641a4e9e6a1cf73864e0ef82d2c23ce6f"
+    },
+    {
+      "file": "src/devices/sticks3/dimensions.js",
+      "sha256": "bd2e9f0aa607e13cbee8497b2505ff4fc44f77fd503eb09fa8ec544f35af45b6"
+    },
+    {
+      "file": "src/devices/sticks3/geometry-data.js",
+      "sha256": "55eaa76fc305ee883a166d4af3c097c633b1f25d06c1cd1cd1461bd66c440cd7"
+    },
+    {
+      "file": "src/devices/sticks3/index.js",
+      "sha256": "d187fcef16d19813b50d849b72b270b669d89baf2b087142eb99382c0507231d"
+    },
+    {
+      "file": "src/devices/sticks3/labels.js",
+      "sha256": "10f4c8bce0fb42bed362d27435bebfb3de22627b8b3dfa81bd85ddf21fbd6114"
+    },
+    {
+      "file": "src/devices/stopwatch/artwork/rear.png",
+      "sha256": "6904bb6fca8b8d3ca153a439ade9b58ec0c065c35b7ca4abc072227590602b39"
+    },
+    {
+      "file": "src/devices/stopwatch/cad-map.json",
+      "sha256": "b56cba6451e5109bed1f5a94b7a4b72da9b1230f4943413ef3f7b05108f6ba1f"
+    },
+    {
+      "file": "src/devices/stopwatch/dimensions.js",
+      "sha256": "1395a2a2d792587d88c02f1bd28841a5f257ff1e1d7c4a57be7ad219c9be3b33"
+    },
+    {
+      "file": "src/devices/stopwatch/geometry-data.js",
+      "sha256": "1408d728f45726fff69ba77b137861f40b3e4d3d9590499623c20a416278a5e2"
+    },
+    {
+      "file": "src/devices/stopwatch/index.js",
+      "sha256": "992eedebed13852d1f41189e1dd9eaf923ee97829321b337496a093bcbc379c3"
+    },
+    {
+      "file": "src/devices/tab5/artwork/battery-bay.png",
+      "sha256": "1a7be15037a0c871cc9472e64b910fb189e7767d8685620ebbe63b36f3d32dd7"
+    },
+    {
+      "file": "src/devices/tab5/artwork/certification.png",
+      "sha256": "6159d5d031fcda48680279d9f3c8277ee80a90d45852247eecf0cbe4cc570bc1"
+    },
+    {
+      "file": "src/devices/tab5/artwork/gpio.png",
+      "sha256": "61fb3b827d97cbb4c1728e9340f090d4c3cc5acb56ed5853810bd154a5cc8bba"
+    },
+    {
+      "file": "src/devices/tab5/artwork/headset.png",
+      "sha256": "a3d1a6f65a11a1794167018d54cb15baae25d22f47578fcfd6d657b579a86559"
+    },
+    {
+      "file": "src/devices/tab5/artwork/name.png",
+      "sha256": "52ab0b0a991bb6c2575d59c44bd2352373aa48731c348ebf21d754eb0b9f037f"
+    },
+    {
+      "file": "src/devices/tab5/artwork/port-a.png",
+      "sha256": "7c6d36e7cc17fc2957db62bf3320d9f0342d40f3fddec3dfd9e3ee75b9838f87"
+    },
+    {
+      "file": "src/devices/tab5/artwork/rear.png",
+      "sha256": "c3907cb82c894cd5c9101736fa4ca070443713ee5597745d8eecbef8a8d57a5e"
+    },
+    {
+      "file": "src/devices/tab5/artwork/usb-a.png",
+      "sha256": "a5d35fd52edb476111b4740e351a1224d1a7aafdd06304586265382d34f9e60e"
+    },
+    {
+      "file": "src/devices/tab5/artwork/usb-c.png",
+      "sha256": "a11451303712b7e4684f64639d3949a9858c5542e84bffe2b76da0325417d50c"
+    },
+    {
+      "file": "src/devices/tab5/cad-map.json",
+      "sha256": "9940c6048830de17eb613709521d0d0a076f74b0ce612b2f524e39843d4ef61e"
+    },
+    {
+      "file": "src/devices/tab5/dimensions.js",
+      "sha256": "89fbbf9efc31b413f401fc5364dec5b5b7cfed15eb8afd2d260bde9e4279d478"
+    },
+    {
+      "file": "src/devices/tab5/edge-details.js",
+      "sha256": "68b6685435444ed9173e6be559dda3b38002547167783e6d838a97ecb1522946"
+    },
+    {
+      "file": "src/devices/tab5/geometry-data.js",
+      "sha256": "520dc0c2c6edce396aa86cd233241a46e6ad1553228c9a75ec102f2af977adc7"
+    },
+    {
+      "file": "src/devices/tab5/index.js",
+      "sha256": "a15da8ebb120c7e49ea7fd1a4b119b0483a666ccd8458d012c4ef738f3fd6fcf"
+    },
+    {
+      "file": "src/devices/tab5/main-board.js",
+      "sha256": "88d7209f717bd3c4844fd10c73adfde8a2aa30b8f7a9bc79321e3129980d88d0"
+    },
+    {
+      "file": "src/index.js",
+      "sha256": "5c3d20d689515a950fb238eb7b3d4c3614f5382c580d3b44690ac0a64d6c44aa"
+    },
+    {
+      "file": "src/loaders.js",
+      "sha256": "0e0156b693e954193bc1204e4ee3a434c69e2cffded16028a5c313fbbf807e5b"
+    },
+    {
+      "file": "src/modeling/PaperDisplay.js",
+      "sha256": "e65c23e41319a320f94f337a9efd49c5b0bbeed19fc5f1551a5f6fb299055542"
+    },
+    {
+      "file": "src/modeling/RoundDisplay.js",
+      "sha256": "0d5fde964a55d2082fae2ba6768229c470956712a652d96474dca75c0c046eff"
+    },
+    {
+      "file": "src/modeling/actuators.js",
+      "sha256": "c87e5723bc0351a42516084f7f4990633651b63913a6922383216567dc3787d8"
+    },
+    {
+      "file": "src/modeling/artwork.js",
+      "sha256": "b277def66ecf9040b04f8e4defb349615badf1539da0f37aeb21301c2fcfda8a"
+    },
+    {
+      "file": "src/modeling/cad.js",
+      "sha256": "83e8e600aa182b5a94bbccfcd26f0ab35d569c5828ee8ce7f11bc54d964a88fd"
+    },
+    {
+      "file": "src/modeling/connectors.js",
+      "sha256": "5aa32f504f5e8d8a047129963fd57840b9325009e64ffc87038ff8f47afdb80c"
+    },
+    {
+      "file": "src/modeling/grove-cable.js",
+      "sha256": "854e33e5e00545c0c907df1b166d27fdc1480b4b3c02fbd4cda04caee6f5e649"
+    },
+    {
+      "file": "src/modeling/parts.js",
+      "sha256": "387cddaf0ab614a783a024ad4e38918cd47ad8a887041bd22b12908064564fd3"
+    },
+    {
+      "file": "src/modeling/subassemblies.js",
+      "sha256": "b173fc663a0ec92aae084830cbf674ffc1dcf521a368f3cd333eec39c68f7c0e"
+    },
+    {
+      "file": "src/units/8encoder/cad-map.json",
+      "sha256": "f534307d7937e74fa14ee154a8651eff27e1341cff72291202505f44f92b2c31"
+    },
+    {
+      "file": "src/units/8encoder/dimensions.js",
+      "sha256": "074ee4673891d12ac06f56e0ef140ea9656e3b3f319820916138cfd1d81f77a7"
+    },
+    {
+      "file": "src/units/8encoder/geometry-data.js",
+      "sha256": "ae6f4be66238263bd5f0c36838ec54f8a64a3be56c0b90f5aa4b5ec852525915"
+    },
+    {
+      "file": "src/units/8encoder/index.js",
+      "sha256": "dbb970f29ebf9bb1e785460faa4655f9c9764558506da353185cd40bee17a642"
+    },
+    {
+      "file": "src/units/angle/assembly.js",
+      "sha256": "71c407222504e9d83fb3d31b153be7928435d3bc43724d0d47f69dd1c16a9215"
+    },
+    {
+      "file": "src/units/angle/cad-map.json",
+      "sha256": "09adf1783353faaec91c47a1a9d38eb2e74499192039d08f574d2c3af4f8f39e"
+    },
+    {
+      "file": "src/units/angle/dimensions.js",
+      "sha256": "dce1457b3265040c4379e3753ca4857cac4c0caf75973aac05d9c2ce2967c6af"
+    },
+    {
+      "file": "src/units/angle/education-cn-back.png",
+      "sha256": "70d2d303f0f474a22cb344cc37854f6844b9e0d1a73986e31c43e54eac093756"
+    },
+    {
+      "file": "src/units/angle/geometry-data.js",
+      "sha256": "7e714507fe2a959085c2f77bf3b5cc859da156c7907bc2f1a31ebd32e3be60cb"
+    },
+    {
+      "file": "src/units/angle/index.js",
+      "sha256": "40b86f62d6d6d1136bbd09fb1227737b2be312f0aab38e6aaa2a69a2c2ca4ce4"
+    },
+    {
+      "file": "src/units/angle/stickers.js",
+      "sha256": "93c3e6cc4fcb937d2d488d77057e9bbb07a2f39e4170928b524bb572f9ff8951"
+    },
+    {
+      "file": "src/units/button/FlexPadButton.js",
+      "sha256": "dab4803edde0b97b275a46e8792b87da7471f7229cd744dc3a1929c49c742f35"
+    },
+    {
+      "file": "src/units/button/cad-map.json",
+      "sha256": "64a44e596196121332835faf08da5b17ba88fe2706f49f53d61782eba356f295"
+    },
+    {
+      "file": "src/units/button/dimensions.js",
+      "sha256": "715514bfaa7aa1275594b5dfbbffb1b21e92d86fbd453e5b1965ea4466f5cabf"
+    },
+    {
+      "file": "src/units/button/geometry-data.js",
+      "sha256": "f6c263a78d73692afc031cd8979b33d2a45af6302d3857b4c86b8b111704bec0"
+    },
+    {
+      "file": "src/units/button/index.js",
+      "sha256": "62dee8910cceda66b5345483e2b41cfc7d2ddfa906137e39ff9c92e108f22c51"
+    },
+    {
+      "file": "src/units/buzzer/cad-map.json",
+      "sha256": "5b671e39e0960216e93d57981fac4d989b176cd25025f0f0791ea412ff99f156"
+    },
+    {
+      "file": "src/units/buzzer/dimensions.js",
+      "sha256": "4cd1e0f55593f99bc5cfb40a4176c27a7df5a8a125f9478002b7f725dd6e16fb"
+    },
+    {
+      "file": "src/units/buzzer/geometry-data.js",
+      "sha256": "dd3f074bf89bce8f32479971a8d826f5c09e7ecd73ce7864a5875ec82c9d25c1"
+    },
+    {
+      "file": "src/units/buzzer/index.js",
+      "sha256": "c7f6c90bf3f9ad8bd792f26826b778b5b7c186fa51fb9d48bf1fe59879e01be2"
+    },
+    {
+      "file": "src/units/cardkb/dimensions.js",
+      "sha256": "4e7812359ec925a0b97f1aeec1ab8207acd97d94b077790c4d98fc72468fd1cb"
+    },
+    {
+      "file": "src/units/cardkb/index.js",
+      "sha256": "664bc25db9cd2d960509dccffc2bba8f356643b8fc286ccba8e15eb91a16b872"
+    },
+    {
+      "file": "src/units/color/cad-map.json",
+      "sha256": "4644bf0c52767c2e3e72fbdd1145e21b7aafa05fa0b39f1476029fc07ba0d8b3"
+    },
+    {
+      "file": "src/units/color/dimensions.js",
+      "sha256": "494fa4b3efb4de541e0ac9168321ddabfc7293b60f0f3fce6a1c29acd1b11762"
+    },
+    {
+      "file": "src/units/color/geometry-data.js",
+      "sha256": "c9233b403f06ade334ff566ddd7010359e723260f8cf34a8f769bd2a4aa05355"
+    },
+    {
+      "file": "src/units/color/index.js",
+      "sha256": "d743ecfd8df8407a607ff60a7002112516ba4639e2fd21b4d166ea4813608d35"
+    },
+    {
+      "file": "src/units/dual-button/cad-map.json",
+      "sha256": "3e18e97d3820ac34886aa2d865729d3895594d153b0ad538e1618a70cfea32b0"
+    },
+    {
+      "file": "src/units/dual-button/dimensions.js",
+      "sha256": "f278c37f87e5f433378c5f32fb65c568afe2439f1dc1778423a5102a4d9953dc"
+    },
+    {
+      "file": "src/units/dual-button/geometry-data.js",
+      "sha256": "4ac042dc016244ce68c1f21aecf50e1bc16df8b1d68167b8d77e3d7e8c294ac9"
+    },
+    {
+      "file": "src/units/dual-button/index.js",
+      "sha256": "70c769fc88bac94bfcc36a41d53e836a443b6d21aeb135f62f3b11a93c7a7f7e"
+    },
+    {
+      "file": "src/units/dual-button/official-back.png",
+      "sha256": "07efcda08c3cb06b69f84b56ea2ca6a4a4573bc0e75f458efef0ea00a764dadb"
+    },
+    {
+      "file": "src/units/dual-button/stickers.js",
+      "sha256": "e6463032cb7ea95ad25307decd7b1450bf620b7a644e38b9d96ca4a1b14a81d1"
+    },
+    {
+      "file": "src/units/encoder/assembly.js",
+      "sha256": "6120c4e66937d8ca86112550cc9d380e332fabaec2a9283aab54a83d4674999f"
+    },
+    {
+      "file": "src/units/encoder/cad-map.json",
+      "sha256": "11a929295292e4ba10d6fe25cc0a5a9d2b9a3b11a329a96c9fc28d3dba69b965"
+    },
+    {
+      "file": "src/units/encoder/dimensions.js",
+      "sha256": "948c7ba8c5fcc5929814172b045dfc19e9ca977fbfae963034137996b94deac5"
+    },
+    {
+      "file": "src/units/encoder/geometry-data.js",
+      "sha256": "7722c5e5e3fffa66b7c747fd00008fe412d3392fc1d1ba4a46250150bc52023a"
+    },
+    {
+      "file": "src/units/encoder/index.js",
+      "sha256": "3bd67b6086dd13a39e7e5c110c49fabb938881ca9910fa8a13abc63f34aaa6c1"
+    },
+    {
+      "file": "src/units/env-iii/dimensions.js",
+      "sha256": "5695f199938621b1098b9778c3ad48871b96096c405ee1813a32969d2980f747"
+    },
+    {
+      "file": "src/units/env-iii/education-cn-back.png",
+      "sha256": "4280ee9b608a15c256f43a44f8a7b840a121578be8453bbee904d6555a0e9e3e"
+    },
+    {
+      "file": "src/units/env-iii/index.js",
+      "sha256": "ff06c67a1599947db29964c5c14e77ef5e164853efa56a985dbf0845bd5762c5"
+    },
+    {
+      "file": "src/units/env-iii/stickers.js",
+      "sha256": "8156c1cce92067a5ddab419d6c0a9b05314de328205c555f4867230e57d05aff"
+    },
+    {
+      "file": "src/units/fan/assembly.js",
+      "sha256": "f016ffc067e4628f6f717ae9943d236e600c82fa26c4fd7b874cf91d6f26f213"
+    },
+    {
+      "file": "src/units/fan/cad-map.json",
+      "sha256": "6096ca0046def0e90b2f3ec1654e7ab25005e836d558ef3582d5f4aae19943f9"
+    },
+    {
+      "file": "src/units/fan/dimensions.js",
+      "sha256": "1fbb98bbe848dff04abcb6e8bf546aa77696a4aafd47bc3dee657629807c56b9"
+    },
+    {
+      "file": "src/units/fan/education-cn-back.png",
+      "sha256": "e4a51df5d1781e8bb8f4df08a736ba7339a2aee45bd7268dfa2d9a0fdde80712"
+    },
+    {
+      "file": "src/units/fan/geometry-data.js",
+      "sha256": "212034bb3adc37b4408efdc9231d0452884ab1012f06b620ff126fc86cdc85a7"
+    },
+    {
+      "file": "src/units/fan/index.js",
+      "sha256": "21794d2b53500449db1f8d530e7e2ed254e5fd0fe7ef109de92acacdb031d2b4"
+    },
+    {
+      "file": "src/units/fan/stickers.js",
+      "sha256": "704bfa7a382b402c5950f6a7eac82fa87e5180ed476325d552616b4a0b591125"
+    },
+    {
+      "file": "src/units/heart/cad-map.json",
+      "sha256": "2d8b1526f9c484cd34e201f79957d7961ef71305bdd9344b340853a5abd467b6"
+    },
+    {
+      "file": "src/units/heart/dimensions.js",
+      "sha256": "0824dd3237007a8b35e099c71e5c8bad531f1aebae7dace9aa09b95c2f66798f"
+    },
+    {
+      "file": "src/units/heart/geometry-data.js",
+      "sha256": "9a27726220a67e2a43c230e082ec4039973f2d5260f396e3788a0a5fdf964dfe"
+    },
+    {
+      "file": "src/units/heart/grove-assembly.js",
+      "sha256": "7472d361d95da609f72fca5e1cdb6ffbfbe8b741342ec06e1302c7b200e709b6"
+    },
+    {
+      "file": "src/units/heart/index.js",
+      "sha256": "e85b367803e1ea0409a26f609019ddd1699a197682ea3173469615b8ffc8ce13"
+    },
+    {
+      "file": "src/units/heart/optical-assembly.js",
+      "sha256": "cbdfb7080074f0d4e357a4d9a358be345b93fbc88c283ac4b1685afcacf9f82b"
+    },
+    {
+      "file": "src/units/hub/cad-map.json",
+      "sha256": "0dd37465c44d9d2202e519f48112fae3a3c92aa14569d8750a15877b32193e57"
+    },
+    {
+      "file": "src/units/hub/dimensions.js",
+      "sha256": "500f221ba1119f3f6303e8bf1db09b00e5d032adf51b0f5282506e7f26f96b16"
+    },
+    {
+      "file": "src/units/hub/geometry-data.js",
+      "sha256": "7cb3298b9f36fed6f1ec4a61eba8409949413550e7b7415a413621d2670fbd3c"
+    },
+    {
+      "file": "src/units/hub/index.js",
+      "sha256": "575ea802fc643c8d913fadfc5b3985eaf64e718b82fccf5e57f464beb9c2cb8a"
+    },
+    {
+      "file": "src/units/hub/official-back.png",
+      "sha256": "56243d519e2fc690b9b0cd5f55c57a5e942f8642114fd1bb8d4a1aede18bf0ce"
+    },
+    {
+      "file": "src/units/hub/stickers.js",
+      "sha256": "e31b21d0d61114f1d202d7039e05304c33d0694b7c76fdd456a97694cd64f608"
+    },
+    {
+      "file": "src/units/ir/cad-map.json",
+      "sha256": "a747afbee32f374ebde8e05eb22d89ba76ad9099f1477d67967d526e5a4d4385"
+    },
+    {
+      "file": "src/units/ir/dimensions.js",
+      "sha256": "1ac64782dc53cec5f331fba8e38f1fd7b5e10cdb841b2f1886fc321ed9bf59cb"
+    },
+    {
+      "file": "src/units/ir/geometry-data.js",
+      "sha256": "1c0ed64dd84f60b62779ee8e908349e629daba5088022b29d37ee9914f4d0435"
+    },
+    {
+      "file": "src/units/ir/index.js",
+      "sha256": "886d4698a89a2d42e546fb7c96d3db2ca9d106ad45242fb5d8ceb0478be46bef"
+    },
+    {
+      "file": "src/units/ir/official-back.png",
+      "sha256": "da1d2f124e020e74b29a624a4045a53c9cfff9311a4c59c3746e4b3a4a841017"
+    },
+    {
+      "file": "src/units/ir/stickers.js",
+      "sha256": "f22e307c2702e48dbc8c313de5959b8f31716383bac8d21c29c38c5acedfe374"
+    },
+    {
+      "file": "src/units/joystick-v11/cad-map.json",
+      "sha256": "b3a07ff9e6208515874dcd4055ea4e5602e4e7308d22c17414e6b6509e57051d"
+    },
+    {
+      "file": "src/units/joystick-v11/dimensions.js",
+      "sha256": "679a55a60da1a00746d89b326bedfc1fc5a717fbd1330e34616a07862fc1db18"
+    },
+    {
+      "file": "src/units/joystick-v11/geometry-data.js",
+      "sha256": "0a28db0304f9069b65abf960308a16348a6791d63540c8d94d34837147833812"
+    },
+    {
+      "file": "src/units/joystick-v11/index.js",
+      "sha256": "8350ed5725c608a0ef657b12597325e24762245151a0c3023a8c7290bedc48c2"
+    },
+    {
+      "file": "src/units/key/cad-map.json",
+      "sha256": "446498c91b5169992c1ae4a59a27d7e0e1dc6cd3b148ac1188de57222aa908b9"
+    },
+    {
+      "file": "src/units/key/dimensions.js",
+      "sha256": "fbf63cd99442de90af64e4feee254df63365cd913015ab7facf0e63a6d1aa6b7"
+    },
+    {
+      "file": "src/units/key/geometry-data.js",
+      "sha256": "76fa1f0407188b585cd2c054015f8b73b8276644f097911d0449cdb052400aef"
+    },
+    {
+      "file": "src/units/key/index.js",
+      "sha256": "41382014efc3a2307444a1833e66ab11cfcb6cc3142000a8b95ce186fdc3ccc7"
+    },
+    {
+      "file": "src/units/key/key-geometry.js",
+      "sha256": "6ae50a907cc41518b4af773a8b0685e1bb9668321d32b4e8c0fa4a11c368e63c"
+    },
+    {
+      "file": "src/units/light/cad-map.json",
+      "sha256": "c24a7c5d5dc2730c9d7b1cf4b77f2dedd8a49f8e739be41649ffeea7c5b3aa49"
+    },
+    {
+      "file": "src/units/light/dimensions.js",
+      "sha256": "7222da9d2796ffbf187a49fe93573d5ffdc2add3db2699dc9eb5f7ae693584cd"
+    },
+    {
+      "file": "src/units/light/education-cn-back.png",
+      "sha256": "5f8047883cb05d59c8577bd11edc91b0a70d88066b5335931c8d1bc2b49c824b"
+    },
+    {
+      "file": "src/units/light/geometry-data.js",
+      "sha256": "f0258371317d05014a247075f69bac6723cf1593b075000e53e0ba3995509687"
+    },
+    {
+      "file": "src/units/light/index.js",
+      "sha256": "4b68aefd22317a1122e95c030c1bca20fa6c08cc4a697fe74c858a01e5fa218e"
+    },
+    {
+      "file": "src/units/light/stickers.js",
+      "sha256": "57750d6998ec2e3d94ecedb5caa8964ad37176df11087d307ef40a961aaa0cfc"
+    },
+    {
+      "file": "src/units/limit/LeverButton.js",
+      "sha256": "7441fd2336e92eb6b9f18f3996c6a84e8ab1061782c0819fa82349ff9639beb9"
+    },
+    {
+      "file": "src/units/limit/cad-map.json",
+      "sha256": "b2bfb89dfbe34e7d26c04617737dcac898f62e7d51c634fdd1a9a3a30dabd10a"
+    },
+    {
+      "file": "src/units/limit/dimensions.js",
+      "sha256": "dbbf417d3667c5b38e52a8b96a6a6fb87efb3ee6ca8ab6339e40d6fdd1cbcc39"
+    },
+    {
+      "file": "src/units/limit/geometry-data.js",
+      "sha256": "bd074334bed80ae901ff559e408e64fa5228fe9f39b6e2e946f71ccdd15c4518"
+    },
+    {
+      "file": "src/units/limit/index.js",
+      "sha256": "fe7b8d9b0d1e49ce7a4d9175bc79ef19c70bd74f4b9ec62c48e942020e019052"
+    },
+    {
+      "file": "src/units/ncir/assembly.js",
+      "sha256": "8007d9457f61e664a0bea2d314d26f1bcbbd16cf1f5743891b8040341537bb25"
+    },
+    {
+      "file": "src/units/ncir/cad-map.json",
+      "sha256": "e5a79a039db0ed3bd24475be36f6339efd578eefca73b0790010198f9309daea"
+    },
+    {
+      "file": "src/units/ncir/dimensions.js",
+      "sha256": "ac6027b4fc233396c4076f1742977613fd39a9071f04f493203528af10083132"
+    },
+    {
+      "file": "src/units/ncir/geometry-data.js",
+      "sha256": "380cd829a765aa3eb784d50942782c8322fd13bc7de355d50b96d641ecb5fa73"
+    },
+    {
+      "file": "src/units/ncir/index.js",
+      "sha256": "9affcd9494ee63f2f82554b4d82e236e31d3f8ec1183a4db59f0265819d59fab"
+    },
+    {
+      "file": "src/units/pir/dimensions.js",
+      "sha256": "9eda33a9c42a6ac4354010a06b815653dbf4e15b94ecfc4315b5b70a6373d67d"
+    },
+    {
+      "file": "src/units/pir/education-cn-back.png",
+      "sha256": "734922c95c3c39b067da0d5a2e6016879da1d3595af5f319033457389fb55e5e"
+    },
+    {
+      "file": "src/units/pir/index.js",
+      "sha256": "ff06c67a1599947db29964c5c14e77ef5e164853efa56a985dbf0845bd5762c5"
+    },
+    {
+      "file": "src/units/pir/stickers.js",
+      "sha256": "93008426c9d6bc06145defe0f1b009f99863d2d141b740867ad7e6a55cd41424"
+    },
+    {
+      "file": "src/units/relay/assembly.js",
+      "sha256": "0fe8671ebd10eb8ae775559fd1e6e41d6f384f66cd73cfc8a6d3570c92d5c1c6"
+    },
+    {
+      "file": "src/units/relay/cad-map.json",
+      "sha256": "821e09c46a85e8f968b92da2acfde8cce53b0b082e6dbafdab0b55e56a8ed3b2"
+    },
+    {
+      "file": "src/units/relay/dimensions.js",
+      "sha256": "3cb033076499c67f08fa4ef84145ff836e08a954737f309def8851f7d59bc4fc"
+    },
+    {
+      "file": "src/units/relay/geometry-data.js",
+      "sha256": "f595eec71fea6f7a33d1f2800112f11262ce030119bd225f08082174f8d937ae"
+    },
+    {
+      "file": "src/units/relay/index.js",
+      "sha256": "4e63b971bee7c5bf5321dc31c41b4ac44b2b951bd246e6eb02df399b3bb35c79"
+    },
+    {
+      "file": "src/units/rfid2/cad-map.json",
+      "sha256": "b176c0a11eef3952bd7169fe564b0105592a61cfcc409416f2ea49d6c7803f6e"
+    },
+    {
+      "file": "src/units/rfid2/dimensions.js",
+      "sha256": "08bee5234cedf9bb253ea69bf7f84e0a8e9ecd6b038b3d747d846769a714f312"
+    },
+    {
+      "file": "src/units/rfid2/geometry-data.js",
+      "sha256": "0a97d304a17e328f53decb0ddbd86d54759a1ddc2cd09adc1ce40cb73dd778d4"
+    },
+    {
+      "file": "src/units/rfid2/index.js",
+      "sha256": "4fe724c9d17c7c50e0f2fc12178045f892a194d10a5499ccc79a982475ebfff8"
+    },
+    {
+      "file": "src/units/rfid2/official-back.png",
+      "sha256": "33c7e0d72c5fa71590a50c5c67b0cf60caf51b10a5d61adf7806b36d20c26959"
+    },
+    {
+      "file": "src/units/rfid2/official-front.png",
+      "sha256": "898330c070a6d71c99b6fae3f9ce91f26f77320b2ac6d517d8bf477a72f0b662"
+    },
+    {
+      "file": "src/units/rfid2/stickers.js",
+      "sha256": "dc26d02131c5b0772c595498634b982502854df77144d5fcadc6d20c22452b67"
+    },
+    {
+      "file": "src/units/rgb/cad-map.json",
+      "sha256": "348cdeb436471c9bd2992da27b946897e14f7a767a82eff59ed1b840cbb0e439"
+    },
+    {
+      "file": "src/units/rgb/dimensions.js",
+      "sha256": "76ac677124336dfc534088a086ad8a9614dcac767f56ec41bef2938912c7295f"
+    },
+    {
+      "file": "src/units/rgb/geometry-data.js",
+      "sha256": "b88e3ed25d625f79109a7124cb70ed8ef77442cd244cb9df71b90e6634bf79c2"
+    },
+    {
+      "file": "src/units/rgb/index.js",
+      "sha256": "9e2cf44386e3808214f005fb788993b683e8a422dccdf1cf19fd76a64aa24a74"
+    },
+    {
+      "file": "src/units/rgb/official-back.png",
+      "sha256": "f5f4d5e7f0924881b82764e6d44e40df0e594a6b2b4f96a46df7c8e9a83f538c"
+    },
+    {
+      "file": "src/units/rgb/stickers.js",
+      "sha256": "1c92647a3124d83fe2efaf5d9ac15ac5d07ae1078eb87fa2b69bedba134fa515"
+    },
+    {
+      "file": "src/units/roller485/cad-map.json",
+      "sha256": "4e49e298b3a4acdd5824902486d4eb7e9d9e60f7b37775a5d4a383dc1856ab04"
+    },
+    {
+      "file": "src/units/roller485/dimensions.js",
+      "sha256": "d67d18995d47499676e93c008a5c2096b572305bdfbe9a8979f2bce2376023e9"
+    },
+    {
+      "file": "src/units/roller485/geometry-data.js",
+      "sha256": "f246c7ca8ff77d83bd9788d5827615e83cfee24d02dbe06d1caf5a9e167e98d6"
+    },
+    {
+      "file": "src/units/roller485/index.js",
+      "sha256": "821ef89719edc981e818e57dee8e3b9dbea4fb534bbb0532401518c3a9d1b702"
+    },
+    {
+      "file": "src/units/rs485/TerminalPlug.js",
+      "sha256": "c88893747b391bcffcd6c23141c682417de711d2342f844f9d582d579ecb0f1b"
+    },
+    {
+      "file": "src/units/rs485/assembly.js",
+      "sha256": "7e05e29ee3effcf1ec595ca2420ca56cd07e9fe0d0a548ca2eb710d9fe5fc213"
+    },
+    {
+      "file": "src/units/rs485/cad-map.json",
+      "sha256": "d51267db022195e3c8b8ace5425ca1adf9c5e5d5e0b41e4287d32e12f584df09"
+    },
+    {
+      "file": "src/units/rs485/dimensions.js",
+      "sha256": "071e6890c8d2f7e26e4b4d6d56bf5c5e26b42f9daa58cd7e65ab942961f9e154"
+    },
+    {
+      "file": "src/units/rs485/geometry-data.js",
+      "sha256": "54b3d7755199c7f77431ef4935950d2f7978edafbc2bff650c571678930c2903"
+    },
+    {
+      "file": "src/units/rs485/index.js",
+      "sha256": "18a4763ba9874a2bd13bf800a8aba9a04515ea588e9dba0e311dc9dd9fda6560"
+    },
+    {
+      "file": "src/units/scroll/cad-map.json",
+      "sha256": "0875349b44ad91023dcfba0dc74afec78a4af7288916b18b8d87d69c093c20f9"
+    },
+    {
+      "file": "src/units/scroll/dimensions.js",
+      "sha256": "ebfd7e4404d038a3a5ee734adbe7951f50468819bc10c37a2372aca7b5e9d433"
+    },
+    {
+      "file": "src/units/scroll/education-cn-back.png",
+      "sha256": "9662ad9d9f949649dcdc49eb8124adb482d026c122d2c14d9430a83dc52b4598"
+    },
+    {
+      "file": "src/units/scroll/geometry-data.js",
+      "sha256": "2a756a0c740cf97c96a334aaa1397b85ec7accddbfceead2319ec1cda0778157"
+    },
+    {
+      "file": "src/units/scroll/index.js",
+      "sha256": "412c4887d3a34a2bff833d273fe4bc26df3be1be6b5377fc9195c090946d034c"
+    },
+    {
+      "file": "src/units/scroll/stickers.js",
+      "sha256": "494ba664009a002139b394b5367d3320e1294cbd32c04393ff8cb38a95c2506c"
+    },
+    {
+      "file": "src/units/shared/CADUnit.js",
+      "sha256": "eb337eaff2c267ebae8fe46921cbc289cbb5b49b3bcf548e84f1fc6d89b89c94"
+    },
+    {
+      "file": "src/units/shared/ClassicUnit.js",
+      "sha256": "84fe43abe71c1e9b7a2d9d42ee9d8f08c256ef9448847f98f84f9486db6464e3"
+    },
+    {
+      "file": "src/units/shared/open-top-grove.js",
+      "sha256": "8297174cf36da1569172809993922c093a5561ce041b293562a22020c124a9dc"
+    },
+    {
+      "file": "src/units/shared/parts.js",
+      "sha256": "e9f8ea00706c398082dd2334337b32df4ab0600474692669365313d21433e37d"
+    },
+    {
+      "file": "src/units/thermal/assembly.js",
+      "sha256": "51029a5ddcf5e5da046444b89c2d522098334c43d98997dca87c1dd025e068ec"
+    },
+    {
+      "file": "src/units/thermal/cad-map.json",
+      "sha256": "7333d269dfd49f0ae16d21fc570be40180f0cd97942a7c550b8feb5da76f18df"
+    },
+    {
+      "file": "src/units/thermal/dimensions.js",
+      "sha256": "8bc74035ee9ec009891c4c0533f3ecd42592097a15b187564426798c824515bd"
+    },
+    {
+      "file": "src/units/thermal/education-cn-back.png",
+      "sha256": "9f1e14950bd95fa15371c0f0f54ba4fc1c5b816d191d41430f178d7b78b59d35"
+    },
+    {
+      "file": "src/units/thermal/geometry-data.js",
+      "sha256": "f8196386f5bbcd44274faa8fcdf2bb5617596a73fe295acd5fccdf1ccf2bc0a4"
+    },
+    {
+      "file": "src/units/thermal/index.js",
+      "sha256": "4b5ebe4742db3596d3e2df8f286c6d0fa70cf821a2ea00e8015f4b751d60945d"
+    },
+    {
+      "file": "src/units/thermal/stickers.js",
+      "sha256": "ffda32addc297e53d8ef505821c68a7ca2cfe35ffdc3353b310e36583278b02f"
+    },
+    {
+      "file": "src/units/tof/cad-map.json",
+      "sha256": "ac26554774709568ecb3517b3ba386835e21a1466cd30c37979055df38437d87"
+    },
+    {
+      "file": "src/units/tof/dimensions.js",
+      "sha256": "d99b73220152919f848a594bda4b4f656d44bb2a10efbec9778476c39c6f30e1"
+    },
+    {
+      "file": "src/units/tof/geometry-data.js",
+      "sha256": "9c1a6c3bbe0ce39ed6bd89e90a2d5ddf64934051289e219e3919eece8c819827"
+    },
+    {
+      "file": "src/units/tof/index.js",
+      "sha256": "90060670376607463459862ab2c3a2c90f2cc250f01e2367117e0e14cb5509f2"
+    },
+    {
+      "file": "src/units/tvoc/cad-map.json",
+      "sha256": "e80b71bed2e84eeb042297948948bbcf6c8b7e73649a71209bcb16c7027b9a64"
+    },
+    {
+      "file": "src/units/tvoc/dimensions.js",
+      "sha256": "51a03dddc458da30f1ba0084ff64d98bcb36a7761edfe299f2fbd3fd29d06168"
+    },
+    {
+      "file": "src/units/tvoc/geometry-data.js",
+      "sha256": "0df202af4cd624148f821bd11d60adc10a0d409637d426ddfd2ac63db3487ea8"
+    },
+    {
+      "file": "src/units/tvoc/index.js",
+      "sha256": "c9a7954aeff66ed32e5fc83e9ba0e347d7e91ddff2fb0c3be226ab985cc475e3"
+    },
+    {
+      "file": "src/units/ultrasonic-i2c/dimensions.js",
+      "sha256": "1eec86b78e1cf810d8e1b52b39a10e223a94fe9d0c93f218c2e5c248e3f2f17c"
+    },
+    {
+      "file": "src/units/ultrasonic-i2c/index.js",
+      "sha256": "ff06c67a1599947db29964c5c14e77ef5e164853efa56a985dbf0845bd5762c5"
+    },
+    {
+      "file": "src/units/ultrasonic-i2c/official-back.png",
+      "sha256": "718b6c859a3ccbc166b4595ba44e4d63bbe503261f4c4258374b9b4dbd4962f0"
+    },
+    {
+      "file": "src/units/ultrasonic-i2c/stickers.js",
+      "sha256": "40aac656903fe7190305bc733e665a243e36ae697fe35e85b62769f60a84a22b"
+    },
+    {
+      "file": "vite.config.js",
+      "sha256": "a5e9cc034f004c2cbffe49e564235feeeb9f82e1b1e57526fe74939a0b3a59f9"
+    }
+  ],
+  "http": {
+    "files": 133,
+    "all200AndMatch": true,
+    "results": [
+      {
+        "file": "LICENSE",
+        "status": 200,
+        "sha256": "bd6afb822b82b478e8b0165cd5fbd107a7e30a371f1276052d2cafdd1a8b440b",
+        "match": true
+      },
+      {
+        "file": "THIRD_PARTY_NOTICES.md",
+        "status": 200,
+        "sha256": "9b845c6a38033a03a338abd535e00e2031f75caee7b681c74b75b8f552ef1111",
+        "match": true
+      },
+      {
+        "file": "assets/8encoder-CKJvk_KO.js",
+        "status": 200,
+        "sha256": "966027725c188596c7fd0a83b5d827c4ad20580458c4c17f79fb22925f1dda28",
+        "match": true
+      },
+      {
+        "file": "assets/CADUnit-D1_oguOL.js",
+        "status": 200,
+        "sha256": "edc4611bd4136a7de8da3ea9e0db217ee83f53d700a5c3451649af65d2c08e88",
+        "match": true
+      },
+      {
+        "file": "assets/ClassicUnit-BqVIM3dG.js",
+        "status": 200,
+        "sha256": "80108c467895945292862d38a25641c4a552dce36122dc9e8dd8a4bb6cb68c05",
+        "match": true
+      },
+      {
+        "file": "assets/CoreS3-vZTAj3gy.js",
+        "status": 200,
+        "sha256": "ec8cd897c93118538b09244872f9dbbbeb91f2bf62124b0e24da63556d318750",
+        "match": true
+      },
+      {
+        "file": "assets/Led-CQenwJ06.js",
+        "status": 200,
+        "sha256": "a5051a7436cdbd88e4bbb3195ff056d08bb112d5116eda4610cc835884b28fa2",
+        "match": true
+      },
+      {
+        "file": "assets/PaperDisplay-BpmuYyAY.js",
+        "status": 200,
+        "sha256": "ce05001de14a60170c6fc018a5dd50eb67ffca81ac524e30d9b0e504d377adc8",
+        "match": true
+      },
+      {
+        "file": "assets/VisualJoint-tGq5tYu6.js",
+        "status": 200,
+        "sha256": "4fb63e8245517c5e3154d97e5b0daf2a373c1d02e7b94526623c18f60af9bc8e",
+        "match": true
+      },
+      {
+        "file": "assets/actuators-DM7NzrUK.js",
+        "status": 200,
+        "sha256": "8795d4062d3e91e358ac026fdfa8e1dd09bb4bd325fb0b54ae8a66092b79d401",
+        "match": true
+      },
+      {
+        "file": "assets/angle-BNRcqGDX.js",
+        "status": 200,
+        "sha256": "6e70d9ce42f8025b6ff3da3870c1f37b9fbe170b379d9300af7261387beaaadd",
+        "match": true
+      },
+      {
+        "file": "assets/artwork-BTk-xV-6.js",
+        "status": 200,
+        "sha256": "b7f2b83f5c2960cdfe20e1a987315a256ee46a0306e920459b8df99167c44e4e",
+        "match": true
+      },
+      {
+        "file": "assets/atoms3r-CHeZLbHJ.js",
+        "status": 200,
+        "sha256": "37e7a50695674d0ad576d711d2f7fdc28875cc2532896d2658338124f6c92e97",
+        "match": true
+      },
+      {
+        "file": "assets/back-CJzcphB7.png",
+        "status": 200,
+        "sha256": "d35128e9e158873df01d32d31bd230c20a5135fc6074ef3cfa4083e19f1db1ca",
+        "match": true
+      },
+      {
+        "file": "assets/battery-bay-Ddp8T6fA.png",
+        "status": 200,
+        "sha256": "1a7be15037a0c871cc9472e64b910fb189e7767d8685620ebbe63b36f3d32dd7",
+        "match": true
+      },
+      {
+        "file": "assets/bottom-CmS8cJSn.png",
+        "status": 200,
+        "sha256": "ea59298cba7f6222a42783f84de57a5dbef9b90c6ea47df768afe88f468c696c",
+        "match": true
+      },
+      {
+        "file": "assets/bottom-Dv2jehCX.png",
+        "status": 200,
+        "sha256": "0deafe45a2d1b4d7ee704e91386bad17e388fec103cbb5db0294f3745fac0a29",
+        "match": true
+      },
+      {
+        "file": "assets/button-DJB4DR1R.js",
+        "status": 200,
+        "sha256": "98a1379727731fc18eb9152c98d0687000e1b2ecf132b3d1abcb7251446ea202",
+        "match": true
+      },
+      {
+        "file": "assets/buzzer-g7hNQrB-.js",
+        "status": 200,
+        "sha256": "c57d3aec8990fdd2d52ffc2a93abc533fcf2ebbfa63cc14274d71f04b66c91f1",
+        "match": true
+      },
+      {
+        "file": "assets/cad-CGp5Szph.js",
+        "status": 200,
+        "sha256": "f038c271789a8d8bb36c41c9500dde07c9371e952e8bd1cc70a62fc046486711",
+        "match": true
+      },
+      {
+        "file": "assets/cardkb-CybRtwdO.js",
+        "status": 200,
+        "sha256": "5be91060779d88007291092a125a03c2091a6d491c42c9be135a40583ea468db",
+        "match": true
+      },
+      {
+        "file": "assets/cardputer-adv-CEcvfH26.js",
+        "status": 200,
+        "sha256": "e1143ad20d842ef9e94db02651ca4a408408c1b5aa37082308a1002b61fac300",
+        "match": true
+      },
+      {
+        "file": "assets/cardputer-zero-CNXszGdL.js",
+        "status": 200,
+        "sha256": "ceb43883d7155d7787a82d567e95f4e8d95ab47ef2a3e00445986d9e0e4437d7",
+        "match": true
+      },
+      {
+        "file": "assets/certification-BZGW0u57.png",
+        "status": 200,
+        "sha256": "964e5b906bc2e9d91c6ece331089bee131b1c662471234fe2260d0fa83d002c7",
+        "match": true
+      },
+      {
+        "file": "assets/certification-Bopq65Jl.png",
+        "status": 200,
+        "sha256": "a3ac70830eed4e5a018889519b67ee7d8c48b231de546c9b41fb38d6fc544635",
+        "match": true
+      },
+      {
+        "file": "assets/certification-CkpxF6QD.png",
+        "status": 200,
+        "sha256": "6159d5d031fcda48680279d9f3c8277ee80a90d45852247eecf0cbe4cc570bc1",
+        "match": true
+      },
+      {
+        "file": "assets/certification-CwgnBkva.png",
+        "status": 200,
+        "sha256": "b3bf157041cedfd8efcf4b623b2b61033e6dd2542ce4d6d7882bb497f2fcdd81",
+        "match": true
+      },
+      {
+        "file": "assets/certification-DTyvzKbj.png",
+        "status": 200,
+        "sha256": "a8c9adb7c4d0675c47584cbd6a9c3762fbf943bbc0366093a5c6f8ea348e1990",
+        "match": true
+      },
+      {
+        "file": "assets/color-CD29KC_5.js",
+        "status": 200,
+        "sha256": "4ef6fa4ef0d2919bb7172707387c6cc119843c32540112ac45732a31093f7fa9",
+        "match": true
+      },
+      {
+        "file": "assets/connectors-DVha2peC.js",
+        "status": 200,
+        "sha256": "37c006df38cfbd5f99a1f6d3b8eb62944d4bab27fb14212e8743dc76bf5980cd",
+        "match": true
+      },
+      {
+        "file": "assets/core2-DtIcujbB.js",
+        "status": 200,
+        "sha256": "35b1097d5860a2c41594284a9879884a7efd73fee55a418bcf1f914a68e4a6bc",
+        "match": true
+      },
+      {
+        "file": "assets/cores3-Cz7EUXVs.js",
+        "status": 200,
+        "sha256": "fb6ebd214d2b9b7b5b7dfca473686b6d5652893c9adc8fc0b736b5e30c1f37ee",
+        "match": true
+      },
+      {
+        "file": "assets/din-dc-DjTK2La_.png",
+        "status": 200,
+        "sha256": "4e91a6d58842571519bed3cafcf25cea8c449c6d8b89e8f5eb3d8b6e353ef66c",
+        "match": true
+      },
+      {
+        "file": "assets/din-name-x8Y7ij_9.png",
+        "status": 200,
+        "sha256": "9e60e39962f93773f0da8e28e907912e35dc2ecc1801f0e4df4dc5499fec7e9c",
+        "match": true
+      },
+      {
+        "file": "assets/din-power-D_WVdkih.png",
+        "status": 200,
+        "sha256": "ed376ff64f00f504a442f0accf7c7b3378464deebf862cd85d5babc41b583c01",
+        "match": true
+      },
+      {
+        "file": "assets/dual-button-BPA-jRYa.js",
+        "status": 200,
+        "sha256": "3585dc7476f9a1ce9375aff12e54c30310c532e90c1302aab97a4217366b226f",
+        "match": true
+      },
+      {
+        "file": "assets/education-cn-back-BFNDhNSa.png",
+        "status": 200,
+        "sha256": "e4a51df5d1781e8bb8f4df08a736ba7339a2aee45bd7268dfa2d9a0fdde80712",
+        "match": true
+      },
+      {
+        "file": "assets/education-cn-back-B_7T9M-v.png",
+        "status": 200,
+        "sha256": "9662ad9d9f949649dcdc49eb8124adb482d026c122d2c14d9430a83dc52b4598",
+        "match": true
+      },
+      {
+        "file": "assets/education-cn-back-C6-L1tyL.png",
+        "status": 200,
+        "sha256": "9f1e14950bd95fa15371c0f0f54ba4fc1c5b816d191d41430f178d7b78b59d35",
+        "match": true
+      },
+      {
+        "file": "assets/education-cn-back-DNXeEYEk.png",
+        "status": 200,
+        "sha256": "5f8047883cb05d59c8577bd11edc91b0a70d88066b5335931c8d1bc2b49c824b",
+        "match": true
+      },
+      {
+        "file": "assets/education-cn-back-DRcrXWIW.png",
+        "status": 200,
+        "sha256": "734922c95c3c39b067da0d5a2e6016879da1d3595af5f319033457389fb55e5e",
+        "match": true
+      },
+      {
+        "file": "assets/education-cn-back-DRj-nawh.png",
+        "status": 200,
+        "sha256": "4280ee9b608a15c256f43a44f8a7b840a121578be8453bbee904d6555a0e9e3e",
+        "match": true
+      },
+      {
+        "file": "assets/education-cn-back-SA1_JJeO.png",
+        "status": 200,
+        "sha256": "70d2d303f0f474a22cb344cc37854f6844b9e0d1a73986e31c43e54eac093756",
+        "match": true
+      },
+      {
+        "file": "assets/encoder-BemmarIl.js",
+        "status": 200,
+        "sha256": "c9cbfeb89d5a694d4b48068dc72843737192cb8d3d9b29491cdab3ec767d949c",
+        "match": true
+      },
+      {
+        "file": "assets/env-iii-e0j_M7Qi.js",
+        "status": 200,
+        "sha256": "2fd7f2bbf75af15add6b33bfb931195cc647e22ee2951edff3fa324c9d926b9a",
+        "match": true
+      },
+      {
+        "file": "assets/fan-DGwH1zip.js",
+        "status": 200,
+        "sha256": "1c7e75baf9a465b08a588fbf3af89450620df6b0f1118ae329666c2bdba96ea5",
+        "match": true
+      },
+      {
+        "file": "assets/front-name-SFAJprcX.png",
+        "status": 200,
+        "sha256": "05062fdb2753812e0e281fe0d8a5148ea2658f69d85548b9f46ac1bdd6dae431",
+        "match": true
+      },
+      {
+        "file": "assets/front-power-Bx120jIK.png",
+        "status": 200,
+        "sha256": "8b829e506d97828057147351adf83beed072f5d3b4ca5f7e6d03bafb88749af8",
+        "match": true
+      },
+      {
+        "file": "assets/front-zero-DegcsFud.png",
+        "status": 200,
+        "sha256": "489c5c27f986d6d6e26cd3821b7c146636407ec5c9aea6cd670bfbd96d17ee0a",
+        "match": true
+      },
+      {
+        "file": "assets/gpio-YuxyNPC6.png",
+        "status": 200,
+        "sha256": "61fb3b827d97cbb4c1728e9340f090d4c3cc5acb56ed5853810bd154a5cc8bba",
+        "match": true
+      },
+      {
+        "file": "assets/grove-cable-BdOY-JnY.js",
+        "status": 200,
+        "sha256": "5ef1591a8443790ce9195622faccc64654e8896b0383fff7ccb3086cb73521d7",
+        "match": true
+      },
+      {
+        "file": "assets/grove-side-DfHlQuHS.png",
+        "status": 200,
+        "sha256": "b6f7df4b1aad2d7125b6fe9da21acbea329d8a766396bed9aff645ddf1da1f0a",
+        "match": true
+      },
+      {
+        "file": "assets/headset-Cp2IYiEB.png",
+        "status": 200,
+        "sha256": "a3d1a6f65a11a1794167018d54cb15baae25d22f47578fcfd6d657b579a86559",
+        "match": true
+      },
+      {
+        "file": "assets/heart-5M1bE22l.js",
+        "status": 200,
+        "sha256": "a95eb0f0773b2b4079507617c48c9b67dd4f9700b27b0fbbd95c5cc895def985",
+        "match": true
+      },
+      {
+        "file": "assets/hub-CfhqAj1R.js",
+        "status": 200,
+        "sha256": "e062f7d34ba869a9a41fbbd99802b536de6c80f6f1004d4f538174c402cafd38",
+        "match": true
+      },
+      {
+        "file": "assets/index-DPEeQrhk.js",
+        "status": 200,
+        "sha256": "0bf8a39a043fc60c283517ab5983ef53927f10cd363976e84c5b6d4df51c6301",
+        "match": true
+      },
+      {
+        "file": "assets/index-DUfIhopB.css",
+        "status": 200,
+        "sha256": "60ba438373a62e53f96fc2321990239236fc203cea8b3a8d305a78dc7fff29e5",
+        "match": true
+      },
+      {
+        "file": "assets/ir-voH-cpug.js",
+        "status": 200,
+        "sha256": "99e378551abd7c0f8e8f70080a462b9e64d596710d86ac8958edeb3f2cd4c185",
+        "match": true
+      },
+      {
+        "file": "assets/joystick-v11-VqcEtVlg.js",
+        "status": 200,
+        "sha256": "1030bf67ea206c8b8deae2d6caccd86548683ec0beafb07229aac248813bc52b",
+        "match": true
+      },
+      {
+        "file": "assets/key-CfHmGesT.js",
+        "status": 200,
+        "sha256": "8357452d9af9105285d6d4c31a93d48063f7cc10785329da0e7d998bcde1970d",
+        "match": true
+      },
+      {
+        "file": "assets/keyboard-1-iSWG59KD.png",
+        "status": 200,
+        "sha256": "07de8cebb19269bf8222dde0f7d15b285fcf7d6ca5fdd4c648f584dbbac10ef1",
+        "match": true
+      },
+      {
+        "file": "assets/keyboard-3-ENQXUV1B.png",
+        "status": 200,
+        "sha256": "7f31707a98c8ca7bd22aff847a6abbdea0e67ab6f880b7c0d96682281b33e385",
+        "match": true
+      },
+      {
+        "file": "assets/keyboard-4-Dn_uczMm.png",
+        "status": 200,
+        "sha256": "7e526f3f1a75b66a6ae49490b256050b9d5041fbb5c4cfd23c423dd69e011cf3",
+        "match": true
+      },
+      {
+        "file": "assets/keyboard-row-1-BEwLs4KQ.png",
+        "status": 200,
+        "sha256": "ff7e31185eaf49f1127a31338ed34725d761eddaeab9e692ba891a437fd97251",
+        "match": true
+      },
+      {
+        "file": "assets/keyboard-row-2-BTnsb2aJ.png",
+        "status": 200,
+        "sha256": "bf954658f1a22ac9fa95e3bd0e858359598d3a1480426276dd6b9d38e3f73704",
+        "match": true
+      },
+      {
+        "file": "assets/keyboard-row-3-BppGLOUc.png",
+        "status": 200,
+        "sha256": "cb993cb8b43154550afd63f2f21c875e2dfd1e9a76a340e29ca5f34ab653ec4a",
+        "match": true
+      },
+      {
+        "file": "assets/keyboard-row-4-Dx_Qr8TA.png",
+        "status": 200,
+        "sha256": "732f15a185a099644c734d9990b74b51356161ded9029abc222e35b27d06938f",
+        "match": true
+      },
+      {
+        "file": "assets/left-usb-network-BsJ1qp1U.png",
+        "status": 200,
+        "sha256": "fcd3118034f9ee410f33a5f51caf9d7a5f3a1996dedff03e573058bae11fb5df",
+        "match": true
+      },
+      {
+        "file": "assets/light-IsQ764cZ.js",
+        "status": 200,
+        "sha256": "698c19424f8abfccf8170ba1d83e0dcb813bc88e73109609de1eb7719727a8f8",
+        "match": true
+      },
+      {
+        "file": "assets/limit-B42uDDwf.js",
+        "status": 200,
+        "sha256": "8d2cfbb7d6c1b697570dead14ca2eec0c4622ea44532fd9fa86c539840a6cea4",
+        "match": true
+      },
+      {
+        "file": "assets/name-QDPP7czJ.png",
+        "status": 200,
+        "sha256": "52ab0b0a991bb6c2575d59c44bd2352373aa48731c348ebf21d754eb0b9f037f",
+        "match": true
+      },
+      {
+        "file": "assets/nanoc6-CQrWeY9i.js",
+        "status": 200,
+        "sha256": "8784f973e983ce939774331735b7304836c3a1e0788b099a754917b8e267fc01",
+        "match": true
+      },
+      {
+        "file": "assets/ncir-BPswE1VY.js",
+        "status": 200,
+        "sha256": "dd3580f4963c97b75544862be0422dbc17470dc77af1ee629308ee08b9afcbac",
+        "match": true
+      },
+      {
+        "file": "assets/nesso-n1-BW-pUMWr.js",
+        "status": 200,
+        "sha256": "5cf34f6a4f22aa38215a4547b5447e4e00d46471c87748726f8f663c10f8a769",
+        "match": true
+      },
+      {
+        "file": "assets/official-back-BtPuMdrI.png",
+        "status": 200,
+        "sha256": "33c7e0d72c5fa71590a50c5c67b0cf60caf51b10a5d61adf7806b36d20c26959",
+        "match": true
+      },
+      {
+        "file": "assets/official-back-C0RVQ2iU.png",
+        "status": 200,
+        "sha256": "56243d519e2fc690b9b0cd5f55c57a5e942f8642114fd1bb8d4a1aede18bf0ce",
+        "match": true
+      },
+      {
+        "file": "assets/official-back-CjPWnsS7.png",
+        "status": 200,
+        "sha256": "718b6c859a3ccbc166b4595ba44e4d63bbe503261f4c4258374b9b4dbd4962f0",
+        "match": true
+      },
+      {
+        "file": "assets/official-back-D6w2iaiO.png",
+        "status": 200,
+        "sha256": "da1d2f124e020e74b29a624a4045a53c9cfff9311a4c59c3746e4b3a4a841017",
+        "match": true
+      },
+      {
+        "file": "assets/official-back-DAK6Nt7p.png",
+        "status": 200,
+        "sha256": "07efcda08c3cb06b69f84b56ea2ca6a4a4573bc0e75f458efef0ea00a764dadb",
+        "match": true
+      },
+      {
+        "file": "assets/official-back-DZGbWas8.png",
+        "status": 200,
+        "sha256": "f5f4d5e7f0924881b82764e6d44e40df0e594a6b2b4f96a46df7c8e9a83f538c",
+        "match": true
+      },
+      {
+        "file": "assets/official-front-BNKzn-2j.png",
+        "status": 200,
+        "sha256": "898330c070a6d71c99b6fae3f9ce91f26f77320b2ac6d517d8bf477a72f0b662",
+        "match": true
+      },
+      {
+        "file": "assets/open-top-grove-B4yNnA7H.js",
+        "status": 200,
+        "sha256": "3c664f09a0b10d2fb75061dac98225a1a887de285ef03b6d166e6e100e98f423",
+        "match": true
+      },
+      {
+        "file": "assets/papercolor-DT1jRp-m.js",
+        "status": 200,
+        "sha256": "dffe82ec4c6bbed0745511653edce6eae2c34486834a96f62f4d4b17876dd3f7",
+        "match": true
+      },
+      {
+        "file": "assets/papermono-CKEADneR.js",
+        "status": 200,
+        "sha256": "f4061d533e1d9b3f42cb9da31bca7e5b41086b3bce6212b9c2f16b361599f159",
+        "match": true
+      },
+      {
+        "file": "assets/parts-Dy1NNiBu.js",
+        "status": 200,
+        "sha256": "79c1c6f283016aca659544b262b7edab7b06a8033a9f0935cf552f1c66d37c95",
+        "match": true
+      },
+      {
+        "file": "assets/parts-QZyB8FZi.js",
+        "status": 200,
+        "sha256": "0f8d2a783b5ef761559f3f2129d5d41bbef34e54d683f2dc0df958d2dbdceb8d",
+        "match": true
+      },
+      {
+        "file": "assets/pir-DkPs353N.js",
+        "status": 200,
+        "sha256": "7947eb7b0e6488fc1957f9d879b1fd3e242223990a996ed6234e9849cd7fb06c",
+        "match": true
+      },
+      {
+        "file": "assets/port-a-csuHlb4j.png",
+        "status": 200,
+        "sha256": "7c6d36e7cc17fc2957db62bf3320d9f0342d40f3fddec3dfd9e3ee75b9838f87",
+        "match": true
+      },
+      {
+        "file": "assets/port-b-By6rfI4O.png",
+        "status": 200,
+        "sha256": "f930e559e994c0e9488828c9831ac03bbcf9962279fa79582beec9a16d622ec8",
+        "match": true
+      },
+      {
+        "file": "assets/port-c-CkrL63NC.png",
+        "status": 200,
+        "sha256": "9244524465e35a8d870192641653c636f4c55237725e43a2ac21bd30c24f6154",
+        "match": true
+      },
+      {
+        "file": "assets/power-cap-BR3LW9PP.png",
+        "status": 200,
+        "sha256": "b6abc5f604c8dd3adf18905c5883c7727f925234ccb0c3812fcfc0fb67e35fd8",
+        "match": true
+      },
+      {
+        "file": "assets/rear-BFhALx3O.png",
+        "status": 200,
+        "sha256": "8663eeb85a1b09d6564d8cc1ac60cce8ec7fd1a0f8de9e95103cc2e7da3e9d15",
+        "match": true
+      },
+      {
+        "file": "assets/rear-Bv6B80f_.png",
+        "status": 200,
+        "sha256": "3355803393cf98bc6d8c07f173173c1228bd69c81320ba166710e5dc78cd7fe9",
+        "match": true
+      },
+      {
+        "file": "assets/rear-Bvewi6Ul.png",
+        "status": 200,
+        "sha256": "c3907cb82c894cd5c9101736fa4ca070443713ee5597745d8eecbef8a8d57a5e",
+        "match": true
+      },
+      {
+        "file": "assets/rear-CS9OhnpP.png",
+        "status": 200,
+        "sha256": "6904bb6fca8b8d3ca153a439ade9b58ec0c065c35b7ca4abc072227590602b39",
+        "match": true
+      },
+      {
+        "file": "assets/rear-DP5a9dfV.png",
+        "status": 200,
+        "sha256": "20236e5a18199ac9cee26a82efcd7ddf7f5e2786354642821ae8553b42141730",
+        "match": true
+      },
+      {
+        "file": "assets/rear-XD18t3ul.png",
+        "status": 200,
+        "sha256": "0dca37738f5ef4cd826e61952079341c4aaf1faf0a231667eb3bcf4283626fcd",
+        "match": true
+      },
+      {
+        "file": "assets/rear-lower-Cjgti6ZE.png",
+        "status": 200,
+        "sha256": "b0839c0a100c3e67562a551aa372768047849a36c2a1e6f80871dbe437da6cae",
+        "match": true
+      },
+      {
+        "file": "assets/rear-main-BIgBsbtP.png",
+        "status": 200,
+        "sha256": "f4559ab19c552641a26ee56d96cb52700afe1a28af1e6dd5f75617fb15b0e463",
+        "match": true
+      },
+      {
+        "file": "assets/rear-main-BKB44XkT.png",
+        "status": 200,
+        "sha256": "6861115ae897d09c28bdcfa66d0366e1a98b54d19daf2379d12e157369dc478d",
+        "match": true
+      },
+      {
+        "file": "assets/rear-upper-VvRQERvF.png",
+        "status": 200,
+        "sha256": "02415ce1ccbc54770aa0159a43423cd4737893d2d6e53c1defe8f3855e780cc8",
+        "match": true
+      },
+      {
+        "file": "assets/relay-CBY2papZ.js",
+        "status": 200,
+        "sha256": "58e55ffe5944dcf32bc44e2dcd7765f05013992ac017ca37a99fcdb3e3b75225",
+        "match": true
+      },
+      {
+        "file": "assets/rfid2-CnDcV1cK.js",
+        "status": 200,
+        "sha256": "8186d52d1b3bf5613ab7e180420c321dc59c963153564e58a548e2c36b2f04a8",
+        "match": true
+      },
+      {
+        "file": "assets/rgb-DHs8WhOB.js",
+        "status": 200,
+        "sha256": "34e788fa6e350a24df457ec9e2b24ab3e9571c7bb3d72d382ec60ac458bd306d",
+        "match": true
+      },
+      {
+        "file": "assets/right-display-audio-grove-Uj8v8bv5.png",
+        "status": 200,
+        "sha256": "0ce068068b7907f90cecb421d8b7975198fdd0988881b976e10b1b3700bb22d4",
+        "match": true
+      },
+      {
+        "file": "assets/roller485-BpqGvVe_.js",
+        "status": 200,
+        "sha256": "a8f5b443b324cb35b8d5a1f7f34c499b5ca586d1b7e9d448bffffdf01d65a178",
+        "match": true
+      },
+      {
+        "file": "assets/rs485-EEvCqiAn.js",
+        "status": 200,
+        "sha256": "b57c59b7c8faa789ffbd0e8c2ded23c1fada6ff895d5c88ff014de60da32eb85",
+        "match": true
+      },
+      {
+        "file": "assets/scroll-DF6bj83g.js",
+        "status": 200,
+        "sha256": "34718c4364a5c514cd214c9587160fc51a7b64f814bf8046e9b1b130cd1be6e4",
+        "match": true
+      },
+      {
+        "file": "assets/side-BFLxeIL8.png",
+        "status": 200,
+        "sha256": "1ddee7a66b1c6bbe9385013b49f07c3176914b23e2d52cbe3d5972b50e72cd17",
+        "match": true
+      },
+      {
+        "file": "assets/side-W9DFIkH9.png",
+        "status": 200,
+        "sha256": "672ea111bf918e6f4bfda888a0d863fd494c4f01be58f99008aca31579637194",
+        "match": true
+      },
+      {
+        "file": "assets/stackchan-C4sB5Fdr.js",
+        "status": 200,
+        "sha256": "6b122df86ddcb2fd1ea8b4719a0cc96174029c17333d71092f37079965bfe4f6",
+        "match": true
+      },
+      {
+        "file": "assets/stamp-BM7eI-_M.png",
+        "status": 200,
+        "sha256": "3bd22b202861c24d994cfe3e309a67d924dc7dddd5eec39883efbb7636bba2eb",
+        "match": true
+      },
+      {
+        "file": "assets/stamplc-CqdVpcoy.js",
+        "status": 200,
+        "sha256": "83cc726e2845f3210817cc28baf828983e0f9ffe40ccaa8057f417083530d0cd",
+        "match": true
+      },
+      {
+        "file": "assets/sticks3-DkjKtsjA.js",
+        "status": 200,
+        "sha256": "d4bb8d380b2fb06a86af901ba0be0a9736a5e303a125c89e568e04e348340fe6",
+        "match": true
+      },
+      {
+        "file": "assets/stopwatch-DoqYRQXj.js",
+        "status": 200,
+        "sha256": "03d7b137ab1cdc3654f8592d643a45f42a855e565c4b97f3507e1813ca2246a7",
+        "match": true
+      },
+      {
+        "file": "assets/tab5-BpCw-D_0.js",
+        "status": 200,
+        "sha256": "1f21c38cfa7107461006aabee07f921d31b02cc56e6aafe86a543be60b2aef1d",
+        "match": true
+      },
+      {
+        "file": "assets/thermal-D_Prlr5B.js",
+        "status": 200,
+        "sha256": "11a24c76969abdb10d7391d0137d717be59fef92d978688087772b3f3fd3782b",
+        "match": true
+      },
+      {
+        "file": "assets/tof-D2DDPB9L.js",
+        "status": 200,
+        "sha256": "862f1e99ea98691b47a8b0b5ab35213bb5cee1eb4fd94502afcfd0c08ddeed01",
+        "match": true
+      },
+      {
+        "file": "assets/top-edge-BSJOT14Y.png",
+        "status": 200,
+        "sha256": "79d221d5c1ea1092923d3a932c95ea420790d5842340194b435b6cc51da946c3",
+        "match": true
+      },
+      {
+        "file": "assets/top-gpio-CJI1RVTw.png",
+        "status": 200,
+        "sha256": "fc31f3d3f4b4335209b9cba03a94eee00831ac52887608789359d1092359e4ca",
+        "match": true
+      },
+      {
+        "file": "assets/top-sd-D-ghcQBj.png",
+        "status": 200,
+        "sha256": "673d71cafe58a14d8ee7a3a2f8ec9ae1e3bc84320b94e5a820c4b10feadd3fa9",
+        "match": true
+      },
+      {
+        "file": "assets/tvoc-B7AbIGsb.js",
+        "status": 200,
+        "sha256": "b311c86fe4ecbcf2665223651527ef2d2dce548d0faada72f7d72476d87b56bd",
+        "match": true
+      },
+      {
+        "file": "assets/ultrasonic-i2c-BOKpE-Xl.js",
+        "status": 200,
+        "sha256": "161ae8505569f622d24e2b3e95e91c26e37dddbcf7ffb7a428a4fe08d6afbe94",
+        "match": true
+      },
+      {
+        "file": "assets/usb-a-BlKADqIS.png",
+        "status": 200,
+        "sha256": "a5d35fd52edb476111b4740e351a1224d1a7aafdd06304586265382d34f9e60e",
+        "match": true
+      },
+      {
+        "file": "assets/usb-c-DXexrzL9.png",
+        "status": 200,
+        "sha256": "a11451303712b7e4684f64639d3949a9858c5542e84bffe2b76da0325417d50c",
+        "match": true
+      },
+      {
+        "file": "data/catalog.json",
+        "status": 200,
+        "sha256": "e18cc2fbcf1981e2450f3e5ddb564683723aaaedca446e28637b1335ab413538",
+        "match": true
+      },
+      {
+        "file": "index.html",
+        "status": 200,
+        "sha256": "4b14b1cd062fa1787213561ece8441c0462ee620f7b6ce071c4cf6b5bea906ce",
+        "match": true
+      },
+      {
+        "file": "licenses/M5_Hardware-MIT.txt",
+        "status": 200,
+        "sha256": "44611d917bece311f5c8eeffce83d8bf9e9ca3f815d262f694ff4a7996af50ea",
+        "match": true
+      },
+      {
+        "file": "licenses/emulator-MIT.txt",
+        "status": 200,
+        "sha256": "46e054dd27254243fa431abe8b3aa5a28e353e0ee71d5633833723afee83e5cb",
+        "match": true
+      },
+      {
+        "file": "licenses/sticks3-MIT.txt",
+        "status": 200,
+        "sha256": "c8da71129b391d080a5bfdd4f192378b4289c82d463a173267af20eb800ef56a",
+        "match": true
+      },
+      {
+        "file": "licenses/sticks3-upstream-package.json",
+        "status": 200,
+        "sha256": "d71cad3e987e79d38d8cda73c813dfb2bcd7fb039cf8233188410886407157a9",
+        "match": true
+      },
+      {
+        "file": "licenses/three-MIT.txt",
+        "status": 200,
+        "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+        "match": true
+      },
+      {
+        "file": "licenses/vite-LICENSE.md",
+        "status": 200,
+        "sha256": "a22152baa1aef74402443008e767e7c689a524c0909d19b0431d97f5ab066a13",
+        "match": true
+      }
+    ]
+  },
+  "licenseAssets": [
+    {
+      "file": "LICENSE",
+      "sha256": "bd6afb822b82b478e8b0165cd5fbd107a7e30a371f1276052d2cafdd1a8b440b"
+    },
+    {
+      "file": "THIRD_PARTY_NOTICES.md",
+      "sha256": "9b845c6a38033a03a338abd535e00e2031f75caee7b681c74b75b8f552ef1111"
+    },
+    {
+      "file": "licenses/M5_Hardware-MIT.txt",
+      "sha256": "44611d917bece311f5c8eeffce83d8bf9e9ca3f815d262f694ff4a7996af50ea"
+    },
+    {
+      "file": "licenses/emulator-MIT.txt",
+      "sha256": "46e054dd27254243fa431abe8b3aa5a28e353e0ee71d5633833723afee83e5cb"
+    },
+    {
+      "file": "licenses/sticks3-MIT.txt",
+      "sha256": "c8da71129b391d080a5bfdd4f192378b4289c82d463a173267af20eb800ef56a"
+    },
+    {
+      "file": "licenses/sticks3-upstream-package.json",
+      "sha256": "d71cad3e987e79d38d8cda73c813dfb2bcd7fb039cf8233188410886407157a9"
+    },
+    {
+      "file": "licenses/three-MIT.txt",
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "file": "licenses/vite-LICENSE.md",
+      "sha256": "a22152baa1aef74402443008e767e7c689a524c0909d19b0431d97f5ab066a13"
+    }
+  ],
+  "privacy": {
+    "prohibitedSourceFingerprints": 119,
+    "privateUrlCandidates": 1830,
+    "issues": []
+  },
+  "limits": [
+    "Photo-derived dimensions and work-in-progress C154 revision; no fabrication or electrical claim.",
+    "Other missing exact sources and missing faces remain tracked.",
+    "Prior 73-capture sticker evidence remains immutable at baseline 664799e."
+  ]
+}

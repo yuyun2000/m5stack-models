@@ -1,0 +1,350 @@
+{
+  "checkedAt": "2026-10-26T05:20:16.602Z",
+  "checkerSha256": "dc8dcf0be162f1f5e4953ce9fd7b82a6fe1af22df963b9aca42b2ee1ade9abfd",
+  "head": "664799e4ec9fbdd7aea3783dfd9f71e82ec7ff81",
+  "sourceBefore": {
+    "src/devices/cardputer-zero/index.js": "fc1ebb015bf8c1dddf3f670cebd8c2c0bb83e2395f55eefe0415a3467c6cf744",
+    "src/devices/cardputer-zero/body.js": "e8b5b5fc169c3c73286ce6d353da2aed6aeff3cef7ece354836b1aea39a694b4",
+    "src/devices/cardputer-zero/ports.js": "aec19fdc527e90daf68844af0adbdfbf468edf1230f5df6d4d8e5c7b0f9cbccb",
+    "src/devices/cardputer-zero/dimensions.js": "9bbb02821ebbd6d85c78ea6d3be430994e45ac234c12f55791cac9463dae06c9",
+    "src/devices/cardputer-zero/keyboard.js": "6fc17c6156d708e8c2973b01248fa2e500da8ee7e0cbcbfbec58341039ba5ed4"
+  },
+  "sourceAfter": {
+    "src/devices/cardputer-zero/index.js": "fc1ebb015bf8c1dddf3f670cebd8c2c0bb83e2395f55eefe0415a3467c6cf744",
+    "src/devices/cardputer-zero/body.js": "e8b5b5fc169c3c73286ce6d353da2aed6aeff3cef7ece354836b1aea39a694b4",
+    "src/devices/cardputer-zero/ports.js": "aec19fdc527e90daf68844af0adbdfbf468edf1230f5df6d4d8e5c7b0f9cbccb",
+    "src/devices/cardputer-zero/dimensions.js": "9bbb02821ebbd6d85c78ea6d3be430994e45ac234c12f55791cac9463dae06c9",
+    "src/devices/cardputer-zero/keyboard.js": "6fc17c6156d708e8c2973b01248fa2e500da8ee7e0cbcbfbec58341039ba5ed4"
+  },
+  "baselineContractCaptured": false,
+  "checks": 46,
+  "passed": 46,
+  "failed": 0,
+  "rows": [
+    {
+      "name": "port hdmi: fixed world registration",
+      "status": "pass",
+      "position": [
+        42.04,
+        -13.6,
+        0.5
+      ],
+      "outward": [
+        1,
+        0,
+        0
+      ],
+      "connector": "hdmi"
+    },
+    {
+      "name": "port hdmi: real shell opening",
+      "status": "pass",
+      "shellHitsBeforeInterior": 0
+    },
+    {
+      "name": "port hdmi: fixed-world insertion cavity",
+      "status": "pass",
+      "firstHit": "HDMI dielectric backstop",
+      "depthMm": 7.475000002980231
+    },
+    {
+      "name": "port headset: fixed world registration",
+      "status": "pass",
+      "position": [
+        42.04,
+        0.1,
+        1.1
+      ],
+      "outward": [
+        1,
+        0,
+        0
+      ],
+      "connector": "audio-3.5mm"
+    },
+    {
+      "name": "port headset: real shell opening",
+      "status": "pass",
+      "shellHitsBeforeInterior": 0
+    },
+    {
+      "name": "port headset: fixed-world insertion cavity",
+      "status": "pass",
+      "firstHit": "Audio jack deep backstop",
+      "depthMm": 6.999999994039534
+    },
+    {
+      "name": "port grove: fixed world registration",
+      "status": "pass",
+      "position": [
+        42.04,
+        13.1,
+        0.85
+      ],
+      "outward": [
+        1,
+        0,
+        0
+      ],
+      "connector": "grove"
+    },
+    {
+      "name": "port grove: real shell opening",
+      "status": "pass",
+      "shellHitsBeforeInterior": 0
+    },
+    {
+      "name": "port grove: fixed-world insertion cavity",
+      "status": "pass",
+      "firstHit": "",
+      "depthMm": 5.780000000000001
+    },
+    {
+      "name": "port usb-c2: fixed world registration",
+      "status": "pass",
+      "position": [
+        42.04,
+        13.1,
+        6.65
+      ],
+      "outward": [
+        1,
+        0,
+        0
+      ],
+      "connector": "usb-c"
+    },
+    {
+      "name": "port usb-c2: real shell opening",
+      "status": "pass",
+      "shellHitsBeforeInterior": 0
+    },
+    {
+      "name": "port usb-c2: fixed-world insertion cavity",
+      "status": "pass",
+      "firstHit": "USB-C dielectric backstop",
+      "depthMm": 4.499999994039534
+    },
+    {
+      "name": "port usb-a: fixed world registration",
+      "status": "pass",
+      "position": [
+        -42.04,
+        13.1,
+        -0.7
+      ],
+      "outward": [
+        -1,
+        0,
+        0
+      ],
+      "connector": "usb-a"
+    },
+    {
+      "name": "port usb-a: real shell opening",
+      "status": "pass",
+      "shellHitsBeforeInterior": 0
+    },
+    {
+      "name": "port usb-a: fixed-world insertion cavity",
+      "status": "pass",
+      "firstHit": "USB-A dielectric backstop",
+      "depthMm": 8.39999999403954
+    },
+    {
+      "name": "port ethernet: fixed world registration",
+      "status": "pass",
+      "position": [
+        -42.04,
+        -13.8,
+        -3.1
+      ],
+      "outward": [
+        -1,
+        0,
+        0
+      ],
+      "connector": "ethernet-rj45"
+    },
+    {
+      "name": "port ethernet: real shell opening",
+      "status": "pass",
+      "shellHitsBeforeInterior": 0
+    },
+    {
+      "name": "port ethernet: fixed-world insertion cavity",
+      "status": "pass",
+      "firstHit": "RJ45 deep backstop",
+      "depthMm": 11.799999997019768
+    },
+    {
+      "name": "port usb-c: fixed world registration",
+      "status": "pass",
+      "position": [
+        -42.04,
+        13.1,
+        6.65
+      ],
+      "outward": [
+        -1,
+        0,
+        0
+      ],
+      "connector": "usb-c"
+    },
+    {
+      "name": "port usb-c: real shell opening",
+      "status": "pass",
+      "shellHitsBeforeInterior": 0
+    },
+    {
+      "name": "port usb-c: fixed-world insertion cavity",
+      "status": "pass",
+      "firstHit": "USB-C dielectric backstop",
+      "depthMm": 4.499999994039534
+    },
+    {
+      "name": "port ext: fixed world registration",
+      "status": "pass",
+      "position": [
+        0,
+        27.03,
+        1.2
+      ],
+      "outward": [
+        0,
+        1,
+        0
+      ],
+      "connector": "2.54-14p"
+    },
+    {
+      "name": "port micro-sd: fixed world registration",
+      "status": "pass",
+      "position": [
+        -18.1,
+        27.03,
+        6
+      ],
+      "outward": [
+        0,
+        1,
+        0
+      ],
+      "connector": "micro-sd"
+    },
+    {
+      "name": "port micro-sd: real shell opening",
+      "status": "pass",
+      "shellHitsBeforeInterior": 0
+    },
+    {
+      "name": "port micro-sd: fixed-world insertion cavity",
+      "status": "pass",
+      "firstHit": "microSD insulating backstop",
+      "depthMm": 4.9999999940395305
+    },
+    {
+      "name": "EXT real bore 1/1",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 1/2",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 2/1",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 2/2",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 3/1",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 3/2",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 4/1",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 4/2",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 5/1",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 5/2",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 6/1",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 6/2",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 7/1",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 7/2",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "IR RX real opening -1.3",
+      "status": "pass",
+      "firstY": 27.19999997615814
+    },
+    {
+      "name": "IR RX real opening 1.3",
+      "status": "pass",
+      "firstY": 27.19999997615814
+    },
+    {
+      "name": "IR TX real opening",
+      "status": "pass",
+      "firstY": 27.010000014305113
+    },
+    {
+      "name": "boot: corrected side and physical inward travel",
+      "status": "pass"
+    },
+    {
+      "name": "46 original keyboard controls and 48 total controls",
+      "status": "pass"
+    },
+    {
+      "name": "old API, states, front deck, keys, power and rear preserved",
+      "status": "pass"
+    },
+    {
+      "name": "input source hashes stable during run",
+      "status": "pass"
+    }
+  ],
+  "scope": "Independent actual public model coordinate, physical aperture/cavity and old-control contract regression. USB electrical labels are intentionally excluded. Finite geometry evidence, no browser, electrical or manufacturing claim."
+}

@@ -1,0 +1,77 @@
+{
+  "checkedAt": "2026-10-26T05:21:15.886Z",
+  "baseline": "664799e4ec9fbdd7aea3783dfd9f71e82ec7ff81",
+  "checkerSha256": "4ccd998a2966702c803b2b2e6a0f40899170d0348d16b4fea8fb71fa366a0048",
+  "bodySha256": "e8b5b5fc169c3c73286ce6d353da2aed6aeff3cef7ece354836b1aea39a694b4",
+  "sharedHelpersComparedAgainstBaseline": [
+    {
+      "file": "src/core/geometry.js",
+      "unchanged": true
+    },
+    {
+      "file": "src/modeling/parts.js",
+      "unchanged": true
+    }
+  ],
+  "rows": [
+    {
+      "name": "Main PCB with Ethernet clearance",
+      "status": "pass",
+      "old": {
+        "triangles": 20,
+        "degenerate": 0,
+        "reverseNormals": 0,
+        "volumeMm3": 3533.1000509262085,
+        "areaMm2": 7319.000104904175,
+        "nonmanifoldEdges": 0,
+        "unbalancedEdges": 0,
+        "uniquePositions": 12,
+        "uniquePositionNormals": 36
+      },
+      "current": {
+        "triangles": 20,
+        "degenerate": 0,
+        "reverseNormals": 0,
+        "volumeMm3": 3533.1000509262085,
+        "areaMm2": 7319.000104904175,
+        "nonmanifoldEdges": 0,
+        "unbalancedEdges": 0,
+        "uniquePositions": 12,
+        "uniquePositionNormals": 36
+      },
+      "maxReflectedUnitNormalDistance": 0,
+      "localAttributesUnchanged": false,
+      "errors": []
+    },
+    {
+      "name": "1750 mAh battery body",
+      "status": "pass",
+      "old": {
+        "triangles": 1996,
+        "degenerate": 0,
+        "reverseNormals": 0,
+        "volumeMm3": 12630.75051966384,
+        "areaMm2": 5294.302902382084,
+        "nonmanifoldEdges": 0,
+        "unbalancedEdges": 0,
+        "uniquePositions": 1000,
+        "uniquePositionNormals": 4960
+      },
+      "current": {
+        "triangles": 1996,
+        "degenerate": 0,
+        "reverseNormals": 0,
+        "volumeMm3": 12630.75051966377,
+        "areaMm2": 5294.302902382084,
+        "nonmanifoldEdges": 0,
+        "unbalancedEdges": 0,
+        "uniquePositions": 1000,
+        "uniquePositionNormals": 4960
+      },
+      "maxReflectedUnitNormalDistance": 0.000037340398012977914,
+      "localAttributesUnchanged": true,
+      "errors": []
+    }
+  ],
+  "scope": "Exact baseline body reconstructed in memory. Checks world vertex/normal sets under X reflection, closed directed edges, degeneracy, area and signed volume. No source mutation, browser, manufacturing or electrical proof."
+}

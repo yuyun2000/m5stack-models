@@ -1,0 +1,265 @@
+{
+  "checkedAt": "2026-10-26T05:15:56.519Z",
+  "checkerSha256": "dc8dcf0be162f1f5e4953ce9fd7b82a6fe1af22df963b9aca42b2ee1ade9abfd",
+  "head": "664799e4ec9fbdd7aea3783dfd9f71e82ec7ff81",
+  "sourceBefore": {
+    "src/devices/cardputer-zero/index.js": "d084f210b5704fad7b0f724b7cc5808019407798c261633a226296949916399a",
+    "src/devices/cardputer-zero/body.js": "0fd7d59a8314a839e91819b850e37e8e3a3df55edc4c81b33af54c9860ded2fc",
+    "src/devices/cardputer-zero/ports.js": "4b5cc9d899ad4430c33e299fc108022deaee4a6a22374424c864d5700ecee3e5",
+    "src/devices/cardputer-zero/dimensions.js": "b69584f5a875ed5f4aa45d8971bbfaad8bac98d38feab0d9e083ce84eacf54a2",
+    "src/devices/cardputer-zero/keyboard.js": "6fc17c6156d708e8c2973b01248fa2e500da8ee7e0cbcbfbec58341039ba5ed4"
+  },
+  "sourceAfter": {
+    "src/devices/cardputer-zero/index.js": "d084f210b5704fad7b0f724b7cc5808019407798c261633a226296949916399a",
+    "src/devices/cardputer-zero/body.js": "0fd7d59a8314a839e91819b850e37e8e3a3df55edc4c81b33af54c9860ded2fc",
+    "src/devices/cardputer-zero/ports.js": "4b5cc9d899ad4430c33e299fc108022deaee4a6a22374424c864d5700ecee3e5",
+    "src/devices/cardputer-zero/dimensions.js": "b69584f5a875ed5f4aa45d8971bbfaad8bac98d38feab0d9e083ce84eacf54a2",
+    "src/devices/cardputer-zero/keyboard.js": "6fc17c6156d708e8c2973b01248fa2e500da8ee7e0cbcbfbec58341039ba5ed4"
+  },
+  "baselineContractCaptured": false,
+  "checks": 46,
+  "passed": 25,
+  "failed": 21,
+  "rows": [
+    {
+      "name": "port hdmi: fixed world registration",
+      "status": "fail",
+      "message": "port position; actual=-42.04,-13.6,0.5 expected=42.04,-13.6,0.5"
+    },
+    {
+      "name": "port hdmi: real shell opening",
+      "status": "pass",
+      "shellHitsBeforeInterior": 0
+    },
+    {
+      "name": "port hdmi: fixed-world insertion cavity",
+      "status": "fail",
+      "message": "first hit RJ45 metal shield, expected HDMI dielectric backstop"
+    },
+    {
+      "name": "port headset: fixed world registration",
+      "status": "fail",
+      "message": "port position; actual=-42.04,0.1,1.1 expected=42.04,0.1,1.1"
+    },
+    {
+      "name": "port headset: real shell opening",
+      "status": "fail",
+      "message": "native outer shell obstructs the connector axis: right lower shell at distance 5.040000095367432"
+    },
+    {
+      "name": "port headset: fixed-world insertion cavity",
+      "status": "fail",
+      "message": "first hit right lower shell, expected Audio jack deep backstop"
+    },
+    {
+      "name": "port grove: fixed world registration",
+      "status": "fail",
+      "message": "port position; actual=-42.04,13.1,0.85 expected=42.04,13.1,0.85"
+    },
+    {
+      "name": "port grove: real shell opening",
+      "status": "pass",
+      "shellHitsBeforeInterior": 0
+    },
+    {
+      "name": "port grove: fixed-world insertion cavity",
+      "status": "fail",
+      "message": "first hit USB-A dielectric backstop, expected HY2.0-4P"
+    },
+    {
+      "name": "port usb-c2: fixed world registration",
+      "status": "fail",
+      "message": "port position; actual=-42.04,13.1,6.65 expected=42.04,13.1,6.65"
+    },
+    {
+      "name": "port usb-c2: real shell opening",
+      "status": "pass",
+      "shellHitsBeforeInterior": 0
+    },
+    {
+      "name": "port usb-c2: fixed-world insertion cavity",
+      "status": "pass",
+      "firstHit": "USB-C dielectric backstop",
+      "depthMm": 4.499999994039534
+    },
+    {
+      "name": "port usb-a: fixed world registration",
+      "status": "fail",
+      "message": "port position; actual=42.04,13.1,-0.7 expected=-42.04,13.1,-0.7"
+    },
+    {
+      "name": "port usb-a: real shell opening",
+      "status": "pass",
+      "shellHitsBeforeInterior": 0
+    },
+    {
+      "name": "port usb-a: fixed-world insertion cavity",
+      "status": "fail",
+      "message": "first hit , expected USB-A dielectric backstop"
+    },
+    {
+      "name": "port ethernet: fixed world registration",
+      "status": "fail",
+      "message": "port position; actual=42.04,-13.8,-3.1 expected=-42.04,-13.8,-3.1"
+    },
+    {
+      "name": "port ethernet: real shell opening",
+      "status": "fail",
+      "message": "native outer shell obstructs the connector axis: left lower shell at distance 5.040000095367432"
+    },
+    {
+      "name": "port ethernet: fixed-world insertion cavity",
+      "status": "fail",
+      "message": "first hit left lower shell, expected RJ45 deep backstop"
+    },
+    {
+      "name": "port usb-c: fixed world registration",
+      "status": "fail",
+      "message": "port position; actual=42.04,13.1,6.65 expected=-42.04,13.1,6.65"
+    },
+    {
+      "name": "port usb-c: real shell opening",
+      "status": "pass",
+      "shellHitsBeforeInterior": 0
+    },
+    {
+      "name": "port usb-c: fixed-world insertion cavity",
+      "status": "pass",
+      "firstHit": "USB-C dielectric backstop",
+      "depthMm": 4.499999994039534
+    },
+    {
+      "name": "port ext: fixed world registration",
+      "status": "pass",
+      "position": [
+        0,
+        27.03,
+        1.2
+      ],
+      "outward": [
+        0,
+        1,
+        0
+      ],
+      "connector": "2.54-14p"
+    },
+    {
+      "name": "port micro-sd: fixed world registration",
+      "status": "fail",
+      "message": "port position; actual=18.1,27.03,6 expected=-18.1,27.03,6"
+    },
+    {
+      "name": "port micro-sd: real shell opening",
+      "status": "fail",
+      "message": "native outer shell obstructs the connector axis: Upper white lid edge at distance 5.030000095367434"
+    },
+    {
+      "name": "port micro-sd: fixed-world insertion cavity",
+      "status": "fail",
+      "message": "first hit Upper white lid edge, expected microSD insulating backstop"
+    },
+    {
+      "name": "EXT real bore 1/1",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 1/2",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 2/1",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 2/2",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 3/1",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 3/2",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 4/1",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 4/2",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 5/1",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 5/2",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 6/1",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 6/2",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 7/1",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "EXT real bore 7/2",
+      "status": "pass",
+      "firstY": 25.43000000074506
+    },
+    {
+      "name": "IR RX real opening -1.3",
+      "status": "fail",
+      "message": "RX opening must show its actual optic at negative X\n+ actual - expected\n\n+ 'Upper white lid edge'\n- 'IR optical window'\n"
+    },
+    {
+      "name": "IR RX real opening 1.3",
+      "status": "fail",
+      "message": "RX opening must show its actual optic at negative X\n+ actual - expected\n\n+ 'Upper white lid edge'\n- 'IR optical window'\n"
+    },
+    {
+      "name": "IR TX real opening",
+      "status": "fail",
+      "message": "TX opening must show actual optic at positive X\n+ actual - expected\n\n+ 'Upper white lid edge'\n- 'Top IR emitter lens'\n"
+    },
+    {
+      "name": "boot: corrected side and physical inward travel",
+      "status": "fail",
+      "message": "boot rest frame; actual=41.85,0.4,5.6 expected=-41.85,0.4,5.6"
+    },
+    {
+      "name": "46 original keyboard controls and 48 total controls",
+      "status": "pass"
+    },
+    {
+      "name": "old API, states, front deck, keys, power and rear preserved",
+      "status": "pass"
+    },
+    {
+      "name": "input source hashes stable during run",
+      "status": "pass"
+    }
+  ],
+  "scope": "Independent actual public model coordinate, physical aperture/cavity and old-control contract regression. USB electrical labels are intentionally excluded. Finite geometry evidence, no browser, electrical or manufacturing claim."
+}
