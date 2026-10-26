@@ -1,7 +1,30 @@
 {
-  "checkedAt": "2026-10-26T00:06:45.340Z",
+  "checkedAt": "2026-10-26T01:04:38.481Z",
   "scope": "Actual control movement and externally driven visual kinematics; no hardware/runtime validation",
   "checks": [
+    {
+      "script": "scripts/check-thermal-assembly.mjs",
+      "status": "pass",
+      "sku": "U016",
+      "inputAssemblySha256": "c91a55e70b19e17c115c2665b3cea393ecc45b8c7538bbfb420e70f25bfcc1a5",
+      "grovePoseCases": 7,
+      "rays": 38,
+      "apertureSamples": 3840,
+      "blackEnvelopeMm": [
+        9.199999809265137,
+        9.199999809265137,
+        4.849999904632568
+      ],
+      "packageHeightMm": 5.699999904632568,
+      "pcbZ": [
+        -1.9,
+        -1.099999988079071
+      ],
+      "trackedResources": 698,
+      "retiredResourcesAtBuild": 112,
+      "scope": "Product-specific actual aperture/support rays, official package dimensions, original native topology, standalone/Grove/HUB paths and product resource ownership. No temperature, firmware, visible IR, hardware or manufacturing-fit proof. Generic shared plug materials and unrelated HUB resources remain outside this product accounting.",
+      "resourcesReleasedExactlyOnce": 698
+    },
     {
       "script": "scripts/check-angle-assembly.mjs",
       "status": "pass",
@@ -790,7 +813,7 @@
     },
     {
       "script": "scripts/check-roller485.mjs",
-      "checkedAt": "2026-10-26T00:05:12.186Z",
+      "checkedAt": "2026-10-26T00:53:48.553Z",
       "status": "pass",
       "sku": "U182",
       "variant": "standard-slip-ring",
@@ -1122,7 +1145,7 @@
     },
     {
       "script": "scripts/check-viewer-lifecycle.mjs",
-      "checkedAt": "2026-10-26T00:05:51.525Z",
+      "checkedAt": "2026-10-26T01:03:41.765Z",
       "status": "pass",
       "checks": [
         "same Viewer mount idempotence",
@@ -1726,7 +1749,7 @@
     },
     {
       "script": "scripts/check-8encoder.mjs",
-      "checkedAt": "2026-10-26T00:06:39.661Z",
+      "checkedAt": "2026-10-26T01:04:32.582Z",
       "status": "pass",
       "scope": "Appearance/geometry/input intent only; no encoder count, electrical or firmware simulation",
       "sku": "U153",

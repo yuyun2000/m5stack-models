@@ -1,0 +1,2053 @@
+{
+  "format": "thermal-independent-material-summary-v1",
+  "checkedAt": "2026-10-26T00:42:40.254Z",
+  "product": {
+    "name": "Thermal",
+    "sku": "U016"
+  },
+  "status": "finite material observations with explicit numerical and sampling limits",
+  "bindings": {
+    "repoSourceSha256": {
+      "src/units/thermal/assembly.js": "c91a55e70b19e17c115c2665b3cea393ecc45b8c7538bbfb420e70f25bfcc1a5",
+      "src/units/thermal/index.js": "a61eec27d76e2f0139c27d1cbfed12b320b76d14bd541be64733ba482d0bd7cc",
+      "src/units/thermal/dimensions.js": "8bc74035ee9ec009891c4c0533f3ecd42592097a15b187564426798c824515bd",
+      "src/units/thermal/geometry-data.js": "ecf410355831434809b0c329128008fe17072bfb254756e917113a30815ae7aa",
+      "src/units/thermal/cad-map.json": "bc5957d299a5dccf5165f7be3be0b769eaf8f7bbfcc955a7fbd72c881a4d995c",
+      "src/units/shared/CADUnit.js": "da529ab383652dcf9f48b70fafd613b6515a383087f6d1d4c64c144344722ca0",
+      "src/units/shared/open-top-grove.js": "50c4f979c40423cf380c4de83092b47c6b6cc0d0e48ab44e8ad2d9a6100eeba7",
+      "src/modeling/parts.js": "387cddaf0ab614a783a024ad4e38918cd47ad8a887041bd22b12908064564fd3",
+      "docs/research/thermal/structures/Unit_Thermal.stl": "df58b3db5e61ec45f7f202071f00375d07be2d1dbdc57a23681231247d9f3b34"
+    },
+    "checkerSha256": "93c78433242e7834aeecc4a080b4edd395e5b0bdb06b005f9b280b2177df140f",
+    "probeSha256": "e960ab37cbf8ea1082b5eb7bea616a0aa727fe8f1bbd838061a61175e5281490",
+    "sourceConstructorSha256": "89dd2bdb30b1ef08e5fe2474cb45ade8c0475d2d332546fbee20d28a3b15b40d",
+    "sourceAuditScriptSha256": "85aefb61f4b27a191de19690e7194f489e821469ac7994f431776e3b718a4503",
+    "summaryGeneratorSha256": "4e0ed621dfe8fdb45e9436e0ae78526c7b4f63213a4e32510c7938dd106cc41e",
+    "actualBoreCheckerSha256": "dfa4f279d3001a5e2d660788f6df5467879507818a329eead0bf16621a1cfd76",
+    "solderSectionCheckerSha256": "2b2904df9f87b927aa546fd4e9e2c38040e664c27d34b7d173b5e2d0b47da8b3",
+    "nominalSeamCheckerSha256": "6bace9c3a48091bb7c7ea065f9165be72016aa5df97559b1f50d20122be91001",
+    "evidenceSha256": {
+      "finiteMaterialReport": "d2e89c9f8131a10218f07f158c91faa49c1b99a5214d28e65e73533d8056c6f3",
+      "sourceAuditReport": "47f938204c4dc9ed5c11499c46fa68445ae1ee33287f1c380c6679f90689fb2e",
+      "sourceTriangleMapping": "a3610a4020027ac72342d00a2a07ee0c416dbff8b1b3958157a8d325640311da",
+      "sourceConstructorFixtures": "97b3473c97ef6b36a347face854dd91dee7b5608cf7b3111f9821c531ce3cf42",
+      "probeFixtures": "38ebaeb5d36e4a98da23be6c0329de203c7e2d2b909c76f23b9c33ae877e71ba",
+      "actualBoreControls": "427934f8f7b196ccf9ef4ef0f12b29defa93b4485006614728b5459aa5423cec",
+      "groveSolderContact": "19d824a49a0781a9a749773bf403810827122936db81d3502dc6968e7b1ea011",
+      "nominalRadiusSeams": "fe253f52c5c5ac677c4a265b5e419b75ac05cedfb140c97e594bea36043941e5",
+      "supersededSignedReport": "c3e35efce30c9e4b1cc0941d68a396b005abc24354c7474d0cfb56975469e696",
+      "supersededSignedProbe": "9a32179b902c4705b0a4722b7fea8e0e643f3a2aa2048a4eb8d46106b6d9de17"
+    },
+    "allBoundRepoInputsUnchanged": true
+  },
+  "sourceEligibility": {
+    "officialStl": {
+      "bytes": 330684,
+      "sha256": "df58b3db5e61ec45f7f202071f00375d07be2d1dbdc57a23681231247d9f3b34",
+      "gitBlob": "39176eea8043d847393cea36df98d87828eb3b22",
+      "officialPinnedBlobBytesMatch": true,
+      "triangles": 6612
+    },
+    "independentClosedShellCopies": [
+      {
+        "classification": "independent rear shell copy",
+        "triangles": 1660,
+        "edges": 2490,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "edgeIncidenceHistogram": {
+          "2": 2490
+        }
+      },
+      {
+        "classification": "independent front shell copy",
+        "triangles": 1646,
+        "edges": 2469,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "edgeIncidenceHistogram": {
+          "2": 2469
+        }
+      }
+    ],
+    "assembledSourceBoundaryEdges": 0,
+    "assembledSourceNonManifoldEdges": 3,
+    "nativeExactTopology": {
+      "coordinateWeld": "exact float coordinates",
+      "gridQuantumMm": null,
+      "triangles": 3306,
+      "uniqueGeometricVertices": 1637,
+      "edges": 4960,
+      "edgeIncidenceHistogram": {
+        "1": 14,
+        "2": 4937,
+        "3": 6,
+        "4": 3
+      },
+      "boundaryEdges": 14,
+      "nonManifoldEdges": 9,
+      "inconsistentIncidence2EdgeDirections": 0,
+      "degenerateTrianglesAreaAtMost1eMinus12Mm2": 0,
+      "nearDegenerateTrianglesAreaAtMost1eMinus6Mm2": 0,
+      "minimumTriangleAreaMm2": 0.00001763366162776947,
+      "surfaceAreaMm2": 4510.951618029798,
+      "duplicateTriangleExtras": 0,
+      "hasNoBoundaryEdges": false,
+      "closedTwoManifoldAtThisWeld": false,
+      "boundaryEdgeSamplesMm": [
+        [
+          [
+            8.00018310546875,
+            -15.999519348144531,
+            -1.2000164985656738
+          ],
+          [
+            9.531890869140625,
+            -15.694587707519531,
+            -1.2000164985656738
+          ]
+        ],
+        [
+          [
+            -10.82818603515625,
+            -14.827903747558594,
+            -1.2000164985656738
+          ],
+          [
+            -9.531524658203125,
+            -15.694587707519531,
+            -1.2000164985656738
+          ]
+        ],
+        [
+          [
+            -10.828216552734375,
+            -14.827873229980469,
+            -1.2000164985656738
+          ],
+          [
+            -9.531524658203125,
+            -15.694587707519531,
+            -1.2000164985656738
+          ]
+        ],
+        [
+          [
+            -11.69488525390625,
+            -13.531242370605469,
+            -1.2000164985656738
+          ],
+          [
+            -10.82818603515625,
+            -14.827903747558594,
+            -1.2000164985656738
+          ]
+        ],
+        [
+          [
+            -11.99981689453125,
+            -11.999519348144531,
+            -1.2000164985656738
+          ],
+          [
+            -11.69488525390625,
+            -13.531242370605469,
+            -1.2000164985656738
+          ]
+        ],
+        [
+          [
+            -11.99981689453125,
+            12.000480651855469,
+            -1.2000164985656738
+          ],
+          [
+            -11.694915771484375,
+            13.532157897949219,
+            -1.2000164985656738
+          ]
+        ],
+        [
+          [
+            -11.694915771484375,
+            13.532157897949219,
+            -1.2000164985656738
+          ],
+          [
+            -10.828216552734375,
+            14.828819274902344,
+            -1.2000164985656738
+          ]
+        ],
+        [
+          [
+            -10.828216552734375,
+            14.828819274902344,
+            -1.2000164985656738
+          ],
+          [
+            -9.53155517578125,
+            15.695549011230469,
+            -1.2000164985656738
+          ]
+        ],
+        [
+          [
+            -10.82818603515625,
+            14.828849792480469,
+            -1.2000164985656738
+          ],
+          [
+            -9.53155517578125,
+            15.695549011230469,
+            -1.2000164985656738
+          ]
+        ],
+        [
+          [
+            8.00018310546875,
+            16.00048065185547,
+            -1.2000164985656738
+          ],
+          [
+            9.5318603515625,
+            15.695549011230469,
+            -1.2000164985656738
+          ]
+        ],
+        [
+          [
+            9.5318603515625,
+            15.695549011230469,
+            -1.2000164985656738
+          ],
+          [
+            10.828521728515625,
+            14.828849792480469,
+            -1.2000164985656738
+          ]
+        ],
+        [
+          [
+            9.531890869140625,
+            15.695549011230469,
+            -1.2000164985656738
+          ],
+          [
+            10.828521728515625,
+            14.828849792480469,
+            -1.2000164985656738
+          ]
+        ],
+        [
+          [
+            9.531890869140625,
+            -15.694587707519531,
+            -1.2000164985656738
+          ],
+          [
+            10.82855224609375,
+            -14.827873229980469,
+            -1.2000164985656738
+          ]
+        ],
+        [
+          [
+            9.5318603515625,
+            -15.694587707519531,
+            -1.2000164985656738
+          ],
+          [
+            10.82855224609375,
+            -14.827873229980469,
+            -1.2000164985656738
+          ]
+        ]
+      ]
+    },
+    "nativeMaterialTargetPolicy": "Only the two individually closed original STL shell copies are material targets; the touching assembled native mesh is retained for appearance and directed hole rays.",
+    "nativeMaximumCoordinateErrorMm": 0.00003094482423193767,
+    "independentCopiesMaximumCoordinateMappingErrorMm": 0.000030517578125,
+    "nativeGeometryBytesAndWorldMatrixPreserved": {
+      "position": true,
+      "normal": true,
+      "index": true,
+      "worldMatrixIdentity": true
+    }
+  },
+  "method": {
+    "classification": "Three oblique orientation-independent geometric crossing parities must all be odd. Near-zero actual hits classify boundary; bounding boxes only reject points outside. Signed balances are diagnostic because procedural hole wall winding can differ from cap winding.",
+    "epsilonMm": 0.00001,
+    "directions": [
+      [
+        0.7332020249906619,
+        0.31208599153763505,
+        0.6041664707972166
+      ],
+      [
+        -0.3810102874166423,
+        0.8520230049317039,
+        0.35900969339258415
+      ],
+      [
+        0.2129545390583486,
+        -0.5268875215199518,
+        0.8228243457512718
+      ]
+    ],
+    "samplingPolicy": {
+      "barycentricSurfacePointsPerTriangle": 7,
+      "inwardNormalOffsetsMm": [
+        0.0002,
+        0.01
+      ],
+      "perMeshInteriorGrid": 4,
+      "perOverlapVolumeGrid": 5,
+      "nativeMappingMaximumCoordinateErrorMm": 0.0000305176,
+      "scope": "Normal offsets and finite grids may miss overlaps narrower than their coverage. Actual boundary classifications use the probe epsilon; shared-surface counts are diagnostic, not a manufacturing contact-area estimate. Procedural source normals can differ around true bores; inward samples require independent actual-mesh material confirmation."
+    },
+    "uncertainPolicy": "Non-boundary disagreement is a distinct uncertain result, never an outside/clear result. Uncertain source points are excluded from strict interior samples and remain counted; uncertain target and grid queries remain explicit."
+  },
+  "sampleCoverage": {
+    "actualProductMeshes": 51,
+    "independentOriginalShellMeshes": 2,
+    "productInventorySummary": {
+      "meshes": 51,
+      "rawSurfaceSamples": 125005,
+      "strictInteriorSamples": 205306,
+      "rejectedInwardCandidates": 47332,
+      "ownMaterialClassificationCounts": {
+        "inside": 205514,
+        "outside": 15422,
+        "boundary": 31182,
+        "uncertain": 1156
+      }
+    },
+    "originalShellInventorySummary": {
+      "meshes": 2,
+      "rawSurfaceSamples": 21726,
+      "strictInteriorSamples": 40963,
+      "rejectedInwardCandidates": 1886,
+      "ownMaterialClassificationCounts": {
+        "inside": 41586,
+        "outside": 796,
+        "boundary": 1197,
+        "uncertain": 1
+      }
+    },
+    "sampleInventory": [
+      {
+        "name": "Thermal Grove side rail left",
+        "rawSurfaceSamples": 78,
+        "strictInteriorSamples": 172,
+        "rejectedInwardCandidates": 48,
+        "sourceClassificationCounts": {
+          "inside": 172,
+          "outside": 0,
+          "boundary": 48,
+          "uncertain": 0
+        }
+      },
+      {
+        "name": "Thermal Grove side rail right",
+        "rawSurfaceSamples": 78,
+        "strictInteriorSamples": 172,
+        "rejectedInwardCandidates": 48,
+        "sourceClassificationCounts": {
+          "inside": 172,
+          "outside": 0,
+          "boundary": 48,
+          "uncertain": 0
+        }
+      },
+      {
+        "name": "Thermal Grove upper lip left",
+        "rawSurfaceSamples": 78,
+        "strictInteriorSamples": 172,
+        "rejectedInwardCandidates": 48,
+        "sourceClassificationCounts": {
+          "inside": 172,
+          "outside": 6,
+          "boundary": 42,
+          "uncertain": 0
+        }
+      },
+      {
+        "name": "Thermal Grove upper lip right",
+        "rawSurfaceSamples": 78,
+        "strictInteriorSamples": 172,
+        "rejectedInwardCandidates": 48,
+        "sourceClassificationCounts": {
+          "inside": 172,
+          "outside": 6,
+          "boundary": 42,
+          "uncertain": 0
+        }
+      },
+      {
+        "name": "Thermal Grove floor",
+        "rawSurfaceSamples": 78,
+        "strictInteriorSamples": 176,
+        "rejectedInwardCandidates": 44,
+        "sourceClassificationCounts": {
+          "inside": 176,
+          "outside": 2,
+          "boundary": 42,
+          "uncertain": 0
+        }
+      },
+      {
+        "name": "Thermal Grove rear wall",
+        "rawSurfaceSamples": 78,
+        "strictInteriorSamples": 172,
+        "rejectedInwardCandidates": 48,
+        "sourceClassificationCounts": {
+          "inside": 172,
+          "outside": 0,
+          "boundary": 48,
+          "uncertain": 0
+        }
+      },
+      {
+        "name": "Thermal Grove recessed contact support",
+        "rawSurfaceSamples": 78,
+        "strictInteriorSamples": 172,
+        "rejectedInwardCandidates": 48,
+        "sourceClassificationCounts": {
+          "inside": 172,
+          "outside": 0,
+          "boundary": 48,
+          "uncertain": 0
+        }
+      },
+      {
+        "name": "Thermal Grove short locking tongue",
+        "rawSurfaceSamples": 78,
+        "strictInteriorSamples": 172,
+        "rejectedInwardCandidates": 48,
+        "sourceClassificationCounts": {
+          "inside": 172,
+          "outside": 0,
+          "boundary": 48,
+          "uncertain": 0
+        }
+      },
+      {
+        "name": "Thermal Grove mouth ear left",
+        "rawSurfaceSamples": 78,
+        "strictInteriorSamples": 172,
+        "rejectedInwardCandidates": 48,
+        "sourceClassificationCounts": {
+          "inside": 172,
+          "outside": 2,
+          "boundary": 46,
+          "uncertain": 0
+        }
+      },
+      {
+        "name": "Thermal Grove mouth ear right",
+        "rawSurfaceSamples": 78,
+        "strictInteriorSamples": 172,
+        "rejectedInwardCandidates": 48,
+        "sourceClassificationCounts": {
+          "inside": 172,
+          "outside": 2,
+          "boundary": 46,
+          "uncertain": 0
+        }
+      },
+      {
+        "name": "Thermal Grove contact 1",
+        "rawSurfaceSamples": 78,
+        "strictInteriorSamples": 172,
+        "rejectedInwardCandidates": 48,
+        "sourceClassificationCounts": {
+          "inside": 172,
+          "outside": 0,
+          "boundary": 48,
+          "uncertain": 0
+        }
+      },
+      {
+        "name": "Thermal Grove contact 2",
+        "rawSurfaceSamples": 78,
+        "strictInteriorSamples": 172,
+        "rejectedInwardCandidates": 48,
+        "sourceClassificationCounts": {
+          "inside": 172,
+          "outside": 0,
+          "boundary": 48,
+          "uncertain": 0
+        }
+      },
+      {
+        "name": "Thermal Grove contact 3",
+        "rawSurfaceSamples": 78,
+        "strictInteriorSamples": 172,
+        "rejectedInwardCandidates": 48,
+        "sourceClassificationCounts": {
+          "inside": 172,
+          "outside": 0,
+          "boundary": 48,
+          "uncertain": 0
+        }
+      },
+      {
+        "name": "Thermal Grove contact 4",
+        "rawSurfaceSamples": 78,
+        "strictInteriorSamples": 172,
+        "rejectedInwardCandidates": 48,
+        "sourceClassificationCounts": {
+          "inside": 172,
+          "outside": 0,
+          "boundary": 48,
+          "uncertain": 0
+        }
+      },
+      {
+        "name": "Thermal PCB with open boss and Grove relief",
+        "rawSurfaceSamples": 18226,
+        "strictInteriorSamples": 18028,
+        "rejectedInwardCandidates": 18472,
+        "sourceClassificationCounts": {
+          "inside": 18028,
+          "outside": 14992,
+          "boundary": 3250,
+          "uncertain": 246
+        }
+      },
+      {
+        "name": "Thermal MLX90640 black body with recessed cone",
+        "rawSurfaceSamples": 14536,
+        "strictInteriorSamples": 26940,
+        "rejectedInwardCandidates": 2048,
+        "sourceClassificationCounts": {
+          "inside": 27084,
+          "outside": 4,
+          "boundary": 1946,
+          "uncertain": 102
+        }
+      },
+      {
+        "name": "Thermal closed recessed optical window",
+        "rawSurfaceSamples": 2400,
+        "strictInteriorSamples": 4096,
+        "rejectedInwardCandidates": 768,
+        "sourceClassificationCounts": {
+          "inside": 4096,
+          "outside": 0,
+          "boundary": 742,
+          "uncertain": 26
+        }
+      },
+      {
+        "name": "Thermal TO39 drilled metal header and reference tab",
+        "rawSurfaceSamples": 8141,
+        "strictInteriorSamples": 13746,
+        "rejectedInwardCandidates": 2592,
+        "sourceClassificationCounts": {
+          "inside": 13746,
+          "outside": 8,
+          "boundary": 2476,
+          "uncertain": 116
+        }
+      },
+      {
+        "name": "Thermal TO39 drilled upper header seal",
+        "rawSurfaceSamples": 8066,
+        "strictInteriorSamples": 13620,
+        "rejectedInwardCandidates": 2560,
+        "sourceClassificationCounts": {
+          "inside": 13620,
+          "outside": 16,
+          "boundary": 2458,
+          "uncertain": 102
+        }
+      },
+      {
+        "name": "Thermal SCL insulating feedthrough",
+        "rawSurfaceSamples": 3200,
+        "strictInteriorSamples": 5424,
+        "rejectedInwardCandidates": 1024,
+        "sourceClassificationCounts": {
+          "inside": 5424,
+          "outside": 16,
+          "boundary": 994,
+          "uncertain": 30
+        }
+      },
+      {
+        "name": "Thermal SCL clipped TO39 lead",
+        "rawSurfaceSamples": 2400,
+        "strictInteriorSamples": 4096,
+        "rejectedInwardCandidates": 768,
+        "sourceClassificationCounts": {
+          "inside": 4096,
+          "outside": 0,
+          "boundary": 753,
+          "uncertain": 15
+        }
+      },
+      {
+        "name": "Thermal SCL annular solder pad",
+        "rawSurfaceSamples": 3200,
+        "strictInteriorSamples": 5424,
+        "rejectedInwardCandidates": 1024,
+        "sourceClassificationCounts": {
+          "inside": 5424,
+          "outside": 16,
+          "boundary": 989,
+          "uncertain": 35
+        }
+      },
+      {
+        "name": "Thermal SCL annular solder fillet",
+        "rawSurfaceSamples": 4280,
+        "strictInteriorSamples": 8000,
+        "rejectedInwardCandidates": 576,
+        "sourceClassificationCounts": {
+          "inside": 8016,
+          "outside": 32,
+          "boundary": 556,
+          "uncertain": 20
+        }
+      },
+      {
+        "name": "Thermal SDA insulating feedthrough",
+        "rawSurfaceSamples": 3200,
+        "strictInteriorSamples": 5424,
+        "rejectedInwardCandidates": 1024,
+        "sourceClassificationCounts": {
+          "inside": 5424,
+          "outside": 16,
+          "boundary": 994,
+          "uncertain": 30
+        }
+      },
+      {
+        "name": "Thermal SDA clipped TO39 lead",
+        "rawSurfaceSamples": 2400,
+        "strictInteriorSamples": 4096,
+        "rejectedInwardCandidates": 768,
+        "sourceClassificationCounts": {
+          "inside": 4096,
+          "outside": 0,
+          "boundary": 753,
+          "uncertain": 15
+        }
+      },
+      {
+        "name": "Thermal SDA annular solder pad",
+        "rawSurfaceSamples": 3200,
+        "strictInteriorSamples": 5424,
+        "rejectedInwardCandidates": 1024,
+        "sourceClassificationCounts": {
+          "inside": 5424,
+          "outside": 16,
+          "boundary": 989,
+          "uncertain": 35
+        }
+      },
+      {
+        "name": "Thermal SDA annular solder fillet",
+        "rawSurfaceSamples": 4280,
+        "strictInteriorSamples": 8000,
+        "rejectedInwardCandidates": 576,
+        "sourceClassificationCounts": {
+          "inside": 8016,
+          "outside": 32,
+          "boundary": 556,
+          "uncertain": 20
+        }
+      },
+      {
+        "name": "Thermal GND insulating feedthrough",
+        "rawSurfaceSamples": 3200,
+        "strictInteriorSamples": 5424,
+        "rejectedInwardCandidates": 1024,
+        "sourceClassificationCounts": {
+          "inside": 5424,
+          "outside": 16,
+          "boundary": 994,
+          "uncertain": 30
+        }
+      },
+      {
+        "name": "Thermal GND clipped TO39 lead",
+        "rawSurfaceSamples": 2400,
+        "strictInteriorSamples": 4096,
+        "rejectedInwardCandidates": 768,
+        "sourceClassificationCounts": {
+          "inside": 4096,
+          "outside": 0,
+          "boundary": 753,
+          "uncertain": 15
+        }
+      },
+      {
+        "name": "Thermal GND annular solder pad",
+        "rawSurfaceSamples": 3200,
+        "strictInteriorSamples": 5424,
+        "rejectedInwardCandidates": 1024,
+        "sourceClassificationCounts": {
+          "inside": 5424,
+          "outside": 16,
+          "boundary": 989,
+          "uncertain": 35
+        }
+      },
+      {
+        "name": "Thermal GND annular solder fillet",
+        "rawSurfaceSamples": 4280,
+        "strictInteriorSamples": 8000,
+        "rejectedInwardCandidates": 576,
+        "sourceClassificationCounts": {
+          "inside": 8016,
+          "outside": 32,
+          "boundary": 556,
+          "uncertain": 20
+        }
+      },
+      {
+        "name": "Thermal VDD insulating feedthrough",
+        "rawSurfaceSamples": 3200,
+        "strictInteriorSamples": 5424,
+        "rejectedInwardCandidates": 1024,
+        "sourceClassificationCounts": {
+          "inside": 5424,
+          "outside": 16,
+          "boundary": 994,
+          "uncertain": 30
+        }
+      },
+      {
+        "name": "Thermal VDD clipped TO39 lead",
+        "rawSurfaceSamples": 2400,
+        "strictInteriorSamples": 4096,
+        "rejectedInwardCandidates": 768,
+        "sourceClassificationCounts": {
+          "inside": 4096,
+          "outside": 0,
+          "boundary": 753,
+          "uncertain": 15
+        }
+      },
+      {
+        "name": "Thermal VDD annular solder pad",
+        "rawSurfaceSamples": 3200,
+        "strictInteriorSamples": 5424,
+        "rejectedInwardCandidates": 1024,
+        "sourceClassificationCounts": {
+          "inside": 5424,
+          "outside": 16,
+          "boundary": 989,
+          "uncertain": 35
+        }
+      },
+      {
+        "name": "Thermal VDD annular solder fillet",
+        "rawSurfaceSamples": 4280,
+        "strictInteriorSamples": 8000,
+        "rejectedInwardCandidates": 576,
+        "sourceClassificationCounts": {
+          "inside": 8016,
+          "outside": 32,
+          "boundary": 556,
+          "uncertain": 20
+        }
+      },
+      {
+        "name": "Thermal Grove concealed contact tail 1",
+        "rawSurfaceSamples": 78,
+        "strictInteriorSamples": 172,
+        "rejectedInwardCandidates": 48,
+        "sourceClassificationCounts": {
+          "inside": 172,
+          "outside": 0,
+          "boundary": 48,
+          "uncertain": 0
+        }
+      },
+      {
+        "name": "Thermal Grove folded board leg 1",
+        "rawSurfaceSamples": 78,
+        "strictInteriorSamples": 172,
+        "rejectedInwardCandidates": 48,
+        "sourceClassificationCounts": {
+          "inside": 172,
+          "outside": 0,
+          "boundary": 48,
+          "uncertain": 0
+        }
+      },
+      {
+        "name": "Thermal Grove annular solder pad 1",
+        "rawSurfaceSamples": 3200,
+        "strictInteriorSamples": 5424,
+        "rejectedInwardCandidates": 1024,
+        "sourceClassificationCounts": {
+          "inside": 5424,
+          "outside": 16,
+          "boundary": 999,
+          "uncertain": 25
+        }
+      },
+      {
+        "name": "Thermal Grove annular solder fillet 1",
+        "rawSurfaceSamples": 1700,
+        "strictInteriorSamples": 2904,
+        "rejectedInwardCandidates": 544,
+        "sourceClassificationCounts": {
+          "inside": 2904,
+          "outside": 16,
+          "boundary": 528,
+          "uncertain": 16
+        }
+      },
+      {
+        "name": "Thermal Grove concealed contact tail 2",
+        "rawSurfaceSamples": 78,
+        "strictInteriorSamples": 172,
+        "rejectedInwardCandidates": 48,
+        "sourceClassificationCounts": {
+          "inside": 172,
+          "outside": 0,
+          "boundary": 48,
+          "uncertain": 0
+        }
+      },
+      {
+        "name": "Thermal Grove folded board leg 2",
+        "rawSurfaceSamples": 78,
+        "strictInteriorSamples": 172,
+        "rejectedInwardCandidates": 48,
+        "sourceClassificationCounts": {
+          "inside": 172,
+          "outside": 0,
+          "boundary": 48,
+          "uncertain": 0
+        }
+      },
+      {
+        "name": "Thermal Grove annular solder pad 2",
+        "rawSurfaceSamples": 3200,
+        "strictInteriorSamples": 5424,
+        "rejectedInwardCandidates": 1024,
+        "sourceClassificationCounts": {
+          "inside": 5424,
+          "outside": 16,
+          "boundary": 999,
+          "uncertain": 25
+        }
+      },
+      {
+        "name": "Thermal Grove annular solder fillet 2",
+        "rawSurfaceSamples": 1700,
+        "strictInteriorSamples": 2904,
+        "rejectedInwardCandidates": 544,
+        "sourceClassificationCounts": {
+          "inside": 2904,
+          "outside": 16,
+          "boundary": 528,
+          "uncertain": 16
+        }
+      },
+      {
+        "name": "Thermal Grove concealed contact tail 3",
+        "rawSurfaceSamples": 78,
+        "strictInteriorSamples": 172,
+        "rejectedInwardCandidates": 48,
+        "sourceClassificationCounts": {
+          "inside": 172,
+          "outside": 0,
+          "boundary": 48,
+          "uncertain": 0
+        }
+      },
+      {
+        "name": "Thermal Grove folded board leg 3",
+        "rawSurfaceSamples": 78,
+        "strictInteriorSamples": 172,
+        "rejectedInwardCandidates": 48,
+        "sourceClassificationCounts": {
+          "inside": 172,
+          "outside": 0,
+          "boundary": 48,
+          "uncertain": 0
+        }
+      },
+      {
+        "name": "Thermal Grove annular solder pad 3",
+        "rawSurfaceSamples": 3200,
+        "strictInteriorSamples": 5424,
+        "rejectedInwardCandidates": 1024,
+        "sourceClassificationCounts": {
+          "inside": 5424,
+          "outside": 16,
+          "boundary": 999,
+          "uncertain": 25
+        }
+      },
+      {
+        "name": "Thermal Grove annular solder fillet 3",
+        "rawSurfaceSamples": 1700,
+        "strictInteriorSamples": 2904,
+        "rejectedInwardCandidates": 544,
+        "sourceClassificationCounts": {
+          "inside": 2904,
+          "outside": 16,
+          "boundary": 528,
+          "uncertain": 16
+        }
+      },
+      {
+        "name": "Thermal Grove concealed contact tail 4",
+        "rawSurfaceSamples": 78,
+        "strictInteriorSamples": 172,
+        "rejectedInwardCandidates": 48,
+        "sourceClassificationCounts": {
+          "inside": 172,
+          "outside": 0,
+          "boundary": 48,
+          "uncertain": 0
+        }
+      },
+      {
+        "name": "Thermal Grove folded board leg 4",
+        "rawSurfaceSamples": 78,
+        "strictInteriorSamples": 172,
+        "rejectedInwardCandidates": 48,
+        "sourceClassificationCounts": {
+          "inside": 172,
+          "outside": 0,
+          "boundary": 48,
+          "uncertain": 0
+        }
+      },
+      {
+        "name": "Thermal Grove annular solder pad 4",
+        "rawSurfaceSamples": 3200,
+        "strictInteriorSamples": 5424,
+        "rejectedInwardCandidates": 1024,
+        "sourceClassificationCounts": {
+          "inside": 5424,
+          "outside": 16,
+          "boundary": 999,
+          "uncertain": 25
+        }
+      },
+      {
+        "name": "Thermal Grove annular solder fillet 4",
+        "rawSurfaceSamples": 1700,
+        "strictInteriorSamples": 2904,
+        "rejectedInwardCandidates": 544,
+        "sourceClassificationCounts": {
+          "inside": 2904,
+          "outside": 16,
+          "boundary": 528,
+          "uncertain": 16
+        }
+      },
+      {
+        "name": "Official independent front shell",
+        "rawSurfaceSamples": 10867,
+        "strictInteriorSamples": 20474,
+        "rejectedInwardCandidates": 909,
+        "sourceClassificationCounts": {
+          "inside": 20825,
+          "outside": 487,
+          "boundary": 485,
+          "uncertain": 1
+        }
+      },
+      {
+        "name": "Official independent rear shell",
+        "rawSurfaceSamples": 10859,
+        "strictInteriorSamples": 20489,
+        "rejectedInwardCandidates": 977,
+        "sourceClassificationCounts": {
+          "inside": 20761,
+          "outside": 309,
+          "boundary": 712,
+          "uncertain": 0
+        }
+      }
+    ],
+    "totalPairsWithOverlappingBroadPhaseBounds": 189,
+    "strictInteriorTargetChecks": 415471,
+    "volumeGridCandidates": 20625,
+    "globalProbeStats": {
+      "queries": 1030516,
+      "cacheHits": 40419,
+      "rayCasts": 2968866,
+      "broadPhaseOutside": 475,
+      "inside": 306830,
+      "outside": 632858,
+      "boundary": 48773,
+      "uncertain": 1161,
+      "disagreedDirections": 23143,
+      "nonBoundaryDisagreedDirections": 1161,
+      "boundaryDirectionDisagreement": 21982,
+      "meshes": 53,
+      "epsilon": 0.00001,
+      "directions": [
+        [
+          0.7332020249906619,
+          0.31208599153763505,
+          0.6041664707972166
+        ],
+        [
+          -0.3810102874166423,
+          0.8520230049317039,
+          0.35900969339258415
+        ],
+        [
+          0.2129545390583486,
+          -0.5268875215199518,
+          0.8228243457512718
+        ]
+      ],
+      "method": "Three oblique orientation-independent geometric crossing parities must all be odd. Near-zero actual hits classify boundary; bounding boxes only reject points outside. Signed balances are diagnostic because procedural hole wall winding can differ from cap winding."
+    },
+    "meshesWithoutPositiveInteriorSample": [],
+    "meshesWithBoundaryOrNonManifoldAtNumericalGrid": []
+  },
+  "sourcePairObservations": {
+    "attemptedProductToSourcePairs": 102,
+    "broadPhaseOverlappingPairs": 87,
+    "confirmedStrictOverlapPairs": 0,
+    "confirmedStrictOverlapSamples": 0,
+    "interiorSampleTargetsOriginalShell": {
+      "inside": 0,
+      "outside": 322102,
+      "boundary": 0,
+      "uncertain": 0
+    },
+    "interiorSampleTargetsAddedMaterial": {
+      "inside": 0,
+      "outside": 3643,
+      "boundary": 0,
+      "uncertain": 0
+    },
+    "overlapGridUncertainQueriesOriginalShell": 0,
+    "overlapGridUncertainQueriesAddedMaterial": 0,
+    "unoffsetSurfaceTargetClassificationCountsBothDirections": {
+      "inside": 0,
+      "outside": 202456,
+      "boundary": 0,
+      "uncertain": 0
+    },
+    "unoffsetSurfaceInsideTargetPairs": [],
+    "unoffsetSurfaceProbeUncertainQueriesBothDirections": 0,
+    "uncertainExamples": [],
+    "claim": "No strict product/original-shell material overlap was observed at the finite confirmed-interior samples. This is not proof of complete non-intersection; any reported uncertain query remains unresolved."
+  },
+  "internalJoins": {
+    "confirmedStrictOverlapPairs": 37,
+    "confirmedStrictOverlapSamples": 22262,
+    "categories": [
+      {
+        "category": "continuous Grove molded-plastic submeshes",
+        "pairs": 8,
+        "strictOverlapSamples": 1546,
+        "entries": [
+          {
+            "a": "Thermal Grove side rail left",
+            "b": "Thermal Grove mouth ear left",
+            "strictOverlapSamples": 211,
+            "example": {
+              "from": "Thermal Grove side rail left",
+              "point": [
+                -4.86,
+                -15.6498,
+                2.95999994
+              ]
+            }
+          },
+          {
+            "a": "Thermal Grove side rail right",
+            "b": "Thermal Grove mouth ear right",
+            "strictOverlapSamples": 211,
+            "example": {
+              "from": "Thermal Grove side rail right",
+              "point": [
+                4.44,
+                -15.6498,
+                2.95999994
+              ]
+            }
+          },
+          {
+            "a": "Thermal Grove upper lip left",
+            "b": "Thermal Grove rear wall",
+            "strictOverlapSamples": 143,
+            "example": {
+              "from": "Thermal Grove upper lip left",
+              "point": [
+                -3.7,
+                -9.1502,
+                3.73333334
+              ]
+            }
+          },
+          {
+            "a": "Thermal Grove upper lip right",
+            "b": "Thermal Grove rear wall",
+            "strictOverlapSamples": 143,
+            "example": {
+              "from": "Thermal Grove upper lip right",
+              "point": [
+                4,
+                -9.1502,
+                3.73333334
+              ]
+            }
+          },
+          {
+            "a": "Thermal Grove floor",
+            "b": "Thermal Grove rear wall",
+            "strictOverlapSamples": 161,
+            "example": {
+              "from": "Thermal Grove floor",
+              "point": [
+                1.4333334,
+                -9.1502,
+                -0.73333334
+              ]
+            }
+          },
+          {
+            "a": "Thermal Grove floor",
+            "b": "Thermal Grove recessed contact support",
+            "strictOverlapSamples": 301,
+            "example": {
+              "from": "Thermal Grove floor",
+              "point": [
+                4.29980019,
+                -13.48333333,
+                -0.73333334
+              ]
+            }
+          },
+          {
+            "a": "Thermal Grove rear wall",
+            "b": "Thermal Grove recessed contact support",
+            "strictOverlapSamples": 233,
+            "example": {
+              "from": "Thermal Grove rear wall",
+              "point": [
+                4.29980019,
+                -9.63000001,
+                0.88000002
+              ]
+            }
+          },
+          {
+            "a": "Thermal Grove rear wall",
+            "b": "Thermal Grove short locking tongue",
+            "strictOverlapSamples": 143,
+            "example": {
+              "from": "Thermal Grove short locking tongue",
+              "point": [
+                0.56666668,
+                -9.2002,
+                2.70833333
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "category": "Grove conductors embedded through molded support and rear wall",
+        "pairs": 8,
+        "strictOverlapSamples": 1744,
+        "entries": [
+          {
+            "a": "Thermal Grove rear wall",
+            "b": "Thermal Grove concealed contact tail 1",
+            "strictOverlapSamples": 157,
+            "example": {
+              "from": "Thermal Grove concealed contact tail 1",
+              "point": [
+                -2.8402,
+                -9.47999997,
+                1.346
+              ]
+            }
+          },
+          {
+            "a": "Thermal Grove rear wall",
+            "b": "Thermal Grove concealed contact tail 2",
+            "strictOverlapSamples": 157,
+            "example": {
+              "from": "Thermal Grove concealed contact tail 2",
+              "point": [
+                -0.8402,
+                -9.47999997,
+                1.346
+              ]
+            }
+          },
+          {
+            "a": "Thermal Grove rear wall",
+            "b": "Thermal Grove concealed contact tail 3",
+            "strictOverlapSamples": 157,
+            "example": {
+              "from": "Thermal Grove concealed contact tail 3",
+              "point": [
+                1.1598,
+                -9.47999997,
+                1.346
+              ]
+            }
+          },
+          {
+            "a": "Thermal Grove rear wall",
+            "b": "Thermal Grove concealed contact tail 4",
+            "strictOverlapSamples": 157,
+            "example": {
+              "from": "Thermal Grove concealed contact tail 4",
+              "point": [
+                3.1598,
+                -9.47999997,
+                1.346
+              ]
+            }
+          },
+          {
+            "a": "Thermal Grove recessed contact support",
+            "b": "Thermal Grove concealed contact tail 1",
+            "strictOverlapSamples": 279,
+            "example": {
+              "from": "Thermal Grove concealed contact tail 1",
+              "point": [
+                -2.8402,
+                -10.19999998,
+                1.30333333
+              ]
+            }
+          },
+          {
+            "a": "Thermal Grove recessed contact support",
+            "b": "Thermal Grove concealed contact tail 2",
+            "strictOverlapSamples": 279,
+            "example": {
+              "from": "Thermal Grove concealed contact tail 2",
+              "point": [
+                -0.8402,
+                -10.19999998,
+                1.30333333
+              ]
+            }
+          },
+          {
+            "a": "Thermal Grove recessed contact support",
+            "b": "Thermal Grove concealed contact tail 3",
+            "strictOverlapSamples": 279,
+            "example": {
+              "from": "Thermal Grove concealed contact tail 3",
+              "point": [
+                1.1598,
+                -10.19999998,
+                1.30333333
+              ]
+            }
+          },
+          {
+            "a": "Thermal Grove recessed contact support",
+            "b": "Thermal Grove concealed contact tail 4",
+            "strictOverlapSamples": 279,
+            "example": {
+              "from": "Thermal Grove concealed contact tail 4",
+              "point": [
+                3.1598,
+                -10.19999998,
+                1.30333333
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "category": "nominally coincident optical-window and body polygon seams",
+        "pairs": 1,
+        "strictOverlapSamples": 128,
+        "entries": [
+          {
+            "a": "Thermal MLX90640 black body with recessed cone",
+            "b": "Thermal closed recessed optical window",
+            "strictOverlapSamples": 128,
+            "example": {
+              "from": "Thermal closed recessed optical window",
+              "point": [
+                0.08501752,
+                6.70298324,
+                3.42
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "category": "nominally coincident round-lead and feedthrough polygon seams",
+        "pairs": 4,
+        "strictOverlapSamples": 512,
+        "entries": [
+          {
+            "a": "Thermal SCL insulating feedthrough",
+            "b": "Thermal SCL clipped TO39 lead",
+            "strictOverlapSamples": 128,
+            "example": {
+              "from": "Thermal SCL insulating feedthrough",
+              "point": [
+                1.34198532,
+                10.68448611,
+                -0.93
+              ]
+            }
+          },
+          {
+            "a": "Thermal SDA insulating feedthrough",
+            "b": "Thermal SDA clipped TO39 lead",
+            "strictOverlapSamples": 128,
+            "example": {
+              "from": "Thermal SDA insulating feedthrough",
+              "point": [
+                -0.89288593,
+                10.68448611,
+                -0.93
+              ]
+            }
+          },
+          {
+            "a": "Thermal GND insulating feedthrough",
+            "b": "Thermal GND clipped TO39 lead",
+            "strictOverlapSamples": 128,
+            "example": {
+              "from": "Thermal GND insulating feedthrough",
+              "point": [
+                1.34198532,
+                5.28902964,
+                -0.93
+              ]
+            }
+          },
+          {
+            "a": "Thermal VDD insulating feedthrough",
+            "b": "Thermal VDD clipped TO39 lead",
+            "strictOverlapSamples": 128,
+            "example": {
+              "from": "Thermal VDD insulating feedthrough",
+              "point": [
+                -0.89288593,
+                5.28902964,
+                -0.93
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "category": "nominally coincident round-lead and solder polygon seams",
+        "pairs": 4,
+        "strictOverlapSamples": 1344,
+        "entries": [
+          {
+            "a": "Thermal SCL clipped TO39 lead",
+            "b": "Thermal SCL annular solder fillet",
+            "strictOverlapSamples": 336,
+            "example": {
+              "from": "Thermal SCL annular solder fillet",
+              "point": [
+                1.132128,
+                10.47356586,
+                -2.15015614
+              ]
+            }
+          },
+          {
+            "a": "Thermal SDA clipped TO39 lead",
+            "b": "Thermal SDA annular solder fillet",
+            "strictOverlapSamples": 336,
+            "example": {
+              "from": "Thermal SDA annular solder fillet",
+              "point": [
+                -1.10274324,
+                10.47356586,
+                -2.15015614
+              ]
+            }
+          },
+          {
+            "a": "Thermal GND clipped TO39 lead",
+            "b": "Thermal GND annular solder fillet",
+            "strictOverlapSamples": 336,
+            "example": {
+              "from": "Thermal GND annular solder fillet",
+              "point": [
+                1.132128,
+                5.07810939,
+                -2.15015614
+              ]
+            }
+          },
+          {
+            "a": "Thermal VDD clipped TO39 lead",
+            "b": "Thermal VDD annular solder fillet",
+            "strictOverlapSamples": 336,
+            "example": {
+              "from": "Thermal VDD annular solder fillet",
+              "point": [
+                -1.10274324,
+                5.07810939,
+                -2.15015614
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "category": "sensor solder pad and solder joint union",
+        "pairs": 4,
+        "strictOverlapSamples": 9584,
+        "entries": [
+          {
+            "a": "Thermal SCL annular solder pad",
+            "b": "Thermal SCL annular solder fillet",
+            "strictOverlapSamples": 2396,
+            "example": {
+              "from": "Thermal SCL annular solder pad",
+              "point": [
+                0.67799741,
+                10.70916357,
+                -1.9598
+              ]
+            }
+          },
+          {
+            "a": "Thermal SDA annular solder pad",
+            "b": "Thermal SDA annular solder fillet",
+            "strictOverlapSamples": 2396,
+            "example": {
+              "from": "Thermal SDA annular solder pad",
+              "point": [
+                -1.55687384,
+                10.70916357,
+                -1.9598
+              ]
+            }
+          },
+          {
+            "a": "Thermal GND annular solder pad",
+            "b": "Thermal GND annular solder fillet",
+            "strictOverlapSamples": 2396,
+            "example": {
+              "from": "Thermal GND annular solder pad",
+              "point": [
+                0.67799741,
+                5.3137071,
+                -1.9598
+              ]
+            }
+          },
+          {
+            "a": "Thermal VDD annular solder pad",
+            "b": "Thermal VDD annular solder fillet",
+            "strictOverlapSamples": 2396,
+            "example": {
+              "from": "Thermal VDD annular solder pad",
+              "point": [
+                -1.55687384,
+                5.3137071,
+                -1.9598
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "category": "continuous folded Grove metal conductor",
+        "pairs": 4,
+        "strictOverlapSamples": 564,
+        "entries": [
+          {
+            "a": "Thermal Grove concealed contact tail 1",
+            "b": "Thermal Grove folded board leg 1",
+            "strictOverlapSamples": 141,
+            "example": {
+              "from": "Thermal Grove concealed contact tail 1",
+              "point": [
+                -3.05333333,
+                -8.40019995,
+                1.19666667
+              ]
+            }
+          },
+          {
+            "a": "Thermal Grove concealed contact tail 2",
+            "b": "Thermal Grove folded board leg 2",
+            "strictOverlapSamples": 141,
+            "example": {
+              "from": "Thermal Grove concealed contact tail 2",
+              "point": [
+                -1.05333333,
+                -8.40019995,
+                1.19666667
+              ]
+            }
+          },
+          {
+            "a": "Thermal Grove concealed contact tail 3",
+            "b": "Thermal Grove folded board leg 3",
+            "strictOverlapSamples": 141,
+            "example": {
+              "from": "Thermal Grove concealed contact tail 3",
+              "point": [
+                0.94666667,
+                -8.40019995,
+                1.19666667
+              ]
+            }
+          },
+          {
+            "a": "Thermal Grove concealed contact tail 4",
+            "b": "Thermal Grove folded board leg 4",
+            "strictOverlapSamples": 141,
+            "example": {
+              "from": "Thermal Grove concealed contact tail 4",
+              "point": [
+                2.94666667,
+                -8.40019995,
+                1.19666667
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "category": "Grove solder pad and solder joint union",
+        "pairs": 4,
+        "strictOverlapSamples": 6840,
+        "entries": [
+          {
+            "a": "Thermal Grove annular solder pad 1",
+            "b": "Thermal Grove annular solder fillet 1",
+            "strictOverlapSamples": 1710,
+            "example": {
+              "from": "Thermal Grove annular solder pad 1",
+              "point": [
+                -3.3728518,
+                -8.39019829,
+                -1.9598
+              ]
+            }
+          },
+          {
+            "a": "Thermal Grove annular solder pad 2",
+            "b": "Thermal Grove annular solder fillet 2",
+            "strictOverlapSamples": 1710,
+            "example": {
+              "from": "Thermal Grove annular solder pad 2",
+              "point": [
+                -1.3728518,
+                -8.39019829,
+                -1.9598
+              ]
+            }
+          },
+          {
+            "a": "Thermal Grove annular solder pad 3",
+            "b": "Thermal Grove annular solder fillet 3",
+            "strictOverlapSamples": 1710,
+            "example": {
+              "from": "Thermal Grove annular solder pad 3",
+              "point": [
+                0.6271482,
+                -8.39019829,
+                -1.9598
+              ]
+            }
+          },
+          {
+            "a": "Thermal Grove annular solder pad 4",
+            "b": "Thermal Grove annular solder fillet 4",
+            "strictOverlapSamples": 1710,
+            "example": {
+              "from": "Thermal Grove annular solder pad 4",
+              "point": [
+                2.6271482,
+                -8.39019829,
+                -1.9598
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "unclassifiedStrictPairs": [],
+    "policy": "Counts are retained. Molded-plastic unions, embedded conductors, folded metal and solder-pad connections are appearance assembly joins. Nominal-radius polygon seam interference and air separation are separately measured rather than erased or reclassified as zero.",
+    "actualSharedSurfaceSamplesAcrossAllPairs": 19577
+  },
+  "nominalRadiusSeams": {
+    "pairs": 9,
+    "anglesPerPair": 720,
+    "rays": 12960,
+    "maximumObservedRadialInterferenceMm": 0.0004718506917037457,
+    "maximumObservedRadialAirSeparationMm": 0.0006693775537496283,
+    "seams": [
+      {
+        "inner": "Thermal closed recessed optical window",
+        "outer": "Thermal MLX90640 black body with recessed cone",
+        "z": 3.42,
+        "nominalCoincidentRadiusMm": 1.3,
+        "centreXY": [
+          0,
+          8
+        ],
+        "minimumGapSample": {
+          "angleDeg": 63.673,
+          "innerExitMm": 1.299943988577051,
+          "outerEntranceMm": 1.2996387961768858,
+          "innerExitPoint": [
+            0.5765168404500731,
+            9.165110598233094,
+            3.42
+          ],
+          "outerEntrancePoint": [
+            0.5763814895735594,
+            9.164837061139913,
+            3.42
+          ],
+          "gapMm": -0.00030519240016513294
+        },
+        "maximumGapSample": {
+          "angleDeg": 73.173,
+          "innerExitMm": 1.2993043963905924,
+          "outerEntranceMm": 1.299973773944342,
+          "innerExitPoint": [
+            0.3761263929831603,
+            9.243672324602183,
+            3.42
+          ],
+          "outerEntrancePoint": [
+            0.3763201663326042,
+            9.244313041543203,
+            3.42
+          ],
+          "gapMm": 0.0006693775537496283
+        },
+        "minimumGapMm": -0.00030519240016513294,
+        "maximumGapMm": 0.0006693775537496283
+      },
+      {
+        "inner": "Thermal SCL clipped TO39 lead",
+        "outer": "Thermal SCL insulating feedthrough",
+        "z": -0.7,
+        "nominalCoincidentRadiusMm": 0.225,
+        "centreXY": [
+          1.117435622506062,
+          10.697728234932956
+        ],
+        "minimumGapSample": {
+          "angleDeg": 183.673,
+          "innerExitMm": 0.22499030138257295,
+          "outerEntranceMm": 0.2247543205481999,
+          "innerExitPoint": [
+            0.8929074697409939,
+            10.683314896245225,
+            -0.7
+          ],
+          "outerEntrancePoint": [
+            0.893142965851289,
+            10.683330013659926,
+            -0.7
+          ],
+          "gapMm": -0.00023598083437303963
+        },
+        "maximumGapSample": {
+          "angleDeg": 230.673,
+          "innerExitMm": 0.22487960840922044,
+          "outerEntranceMm": 0.2249908204498548,
+          "innerExitPoint": [
+            0.9749191903043553,
+            10.523774491567714,
+            -0.7
+          ],
+          "outerEntrancePoint": [
+            0.9748487101778502,
+            10.523688464422289,
+            -0.7
+          ],
+          "gapMm": 0.00011121204063435641
+        },
+        "minimumGapMm": -0.00023598083437303963,
+        "maximumGapMm": 0.00011121204063435641
+      },
+      {
+        "inner": "Thermal SDA clipped TO39 lead",
+        "outer": "Thermal SDA insulating feedthrough",
+        "z": -0.7,
+        "nominalCoincidentRadiusMm": 0.225,
+        "centreXY": [
+          -1.1174356225060622,
+          10.697728234932956
+        ],
+        "minimumGapSample": {
+          "angleDeg": 3.673,
+          "innerExitMm": 0.22499030138257284,
+          "outerEntranceMm": 0.2247543205481998,
+          "innerExitPoint": [
+            -0.8929074697409942,
+            10.712141573620688,
+            -0.7
+          ],
+          "outerEntrancePoint": [
+            -0.8931429658512895,
+            10.712126456205986,
+            -0.7
+          ],
+          "gapMm": -0.00023598083437303963
+        },
+        "maximumGapSample": {
+          "angleDeg": 50.673,
+          "innerExitMm": 0.22487960840922044,
+          "outerEntranceMm": 0.2249908204498548,
+          "innerExitPoint": [
+            -0.9749191903043555,
+            10.871681978298199,
+            -0.7
+          ],
+          "outerEntrancePoint": [
+            -0.9748487101778505,
+            10.871768005443624,
+            -0.7
+          ],
+          "gapMm": 0.00011121204063435641
+        },
+        "minimumGapMm": -0.00023598083437303963,
+        "maximumGapMm": 0.00011121204063435641
+      },
+      {
+        "inner": "Thermal GND clipped TO39 lead",
+        "outer": "Thermal GND insulating feedthrough",
+        "z": -0.7,
+        "nominalCoincidentRadiusMm": 0.225,
+        "centreXY": [
+          1.1174356225060613,
+          5.302271765067042
+        ],
+        "minimumGapSample": {
+          "angleDeg": 273.673,
+          "innerExitMm": 0.22499030138257328,
+          "outerEntranceMm": 0.2247543205481995,
+          "innerExitPoint": [
+            1.1318489611937925,
+            5.0777436123019735,
+            -0.7
+          ],
+          "outerEntrancePoint": [
+            1.1318338437790918,
+            5.077979108412269,
+            -0.7
+          ],
+          "gapMm": -0.00023598083437378903
+        },
+        "maximumGapSample": {
+          "angleDeg": 140.673,
+          "innerExitMm": 0.22487960840922083,
+          "outerEntranceMm": 0.2249908204498544,
+          "innerExitPoint": [
+            0.9434818791408186,
+            5.444788197268749,
+            -0.7
+          ],
+          "outerEntrancePoint": [
+            0.9433958519953947,
+            5.444858677395254,
+            -0.7
+          ],
+          "gapMm": 0.00011121204063357926
+        },
+        "minimumGapMm": -0.00023598083437378903,
+        "maximumGapMm": 0.00011121204063357926
+      },
+      {
+        "inner": "Thermal VDD clipped TO39 lead",
+        "outer": "Thermal VDD insulating feedthrough",
+        "z": -0.7,
+        "nominalCoincidentRadiusMm": 0.225,
+        "centreXY": [
+          -1.1174356225060629,
+          5.302271765067044
+        ],
+        "minimumGapSample": {
+          "angleDeg": 273.673,
+          "innerExitMm": 0.22499030138257328,
+          "outerEntranceMm": 0.2247543205481995,
+          "innerExitPoint": [
+            -1.1030222838183317,
+            5.077743612301975,
+            -0.7
+          ],
+          "outerEntrancePoint": [
+            -1.1030374012330324,
+            5.077979108412271,
+            -0.7
+          ],
+          "gapMm": -0.00023598083437378903
+        },
+        "maximumGapSample": {
+          "angleDeg": 320.673,
+          "innerExitMm": 0.22487960840922092,
+          "outerEntranceMm": 0.22499082044985447,
+          "innerExitPoint": [
+            -0.94348187914082,
+            5.159755332865337,
+            -0.7
+          ],
+          "outerEntrancePoint": [
+            -0.9433958519953961,
+            5.159684852738832,
+            -0.7
+          ],
+          "gapMm": 0.0001112120406335515
+        },
+        "minimumGapMm": -0.00023598083437378903,
+        "maximumGapMm": 0.0001112120406335515
+      },
+      {
+        "inner": "Thermal SCL clipped TO39 lead",
+        "outer": "Thermal SCL annular solder fillet",
+        "z": -2.17,
+        "nominalCoincidentRadiusMm": 0.225,
+        "centreXY": [
+          1.117435622506062,
+          10.697728234932956
+        ],
+        "minimumGapSample": {
+          "angleDeg": 326.173,
+          "innerExitMm": 0.22499031084613827,
+          "outerEntranceMm": 0.22451846015443513,
+          "innerExitPoint": [
+            1.3043400750095735,
+            10.572479020927421,
+            -2.17
+          ],
+          "outerEntrancePoint": [
+            1.3039480981512612,
+            10.572741694142287,
+            -2.17
+          ],
+          "gapMm": -0.0004718506917031351
+        },
+        "maximumGapSample": {
+          "angleDeg": 37.673,
+          "innerExitMm": 0.22497878566280774,
+          "outerEntranceMm": 0.22495650449910162,
+          "innerExitPoint": [
+            1.29550894570917,
+            10.835224946027123,
+            -2.17
+          ],
+          "outerEntrancePoint": [
+            1.2954913099091798,
+            10.835211328802194,
+            -2.17
+          ],
+          "gapMm": -0.000022281163706117102
+        },
+        "minimumGapMm": -0.0004718506917031351,
+        "maximumGapMm": -0.000022281163706117102
+      },
+      {
+        "inner": "Thermal SDA clipped TO39 lead",
+        "outer": "Thermal SDA annular solder fillet",
+        "z": -2.17,
+        "nominalCoincidentRadiusMm": 0.225,
+        "centreXY": [
+          -1.1174356225060622,
+          10.697728234932956
+        ],
+        "minimumGapSample": {
+          "angleDeg": 326.173,
+          "innerExitMm": 0.22499031084613827,
+          "outerEntranceMm": 0.22451846015443513,
+          "innerExitPoint": [
+            -0.9305311700025506,
+            10.572479020927421,
+            -2.17
+          ],
+          "outerEntrancePoint": [
+            -0.9309231468608629,
+            10.572741694142287,
+            -2.17
+          ],
+          "gapMm": -0.0004718506917031351
+        },
+        "maximumGapSample": {
+          "angleDeg": 217.673,
+          "innerExitMm": 0.22497878566280774,
+          "outerEntranceMm": 0.22495650449910162,
+          "innerExitPoint": [
+            -1.2955089457091702,
+            10.56023152383879,
+            -2.17
+          ],
+          "outerEntrancePoint": [
+            -1.29549130990918,
+            10.560245141063719,
+            -2.17
+          ],
+          "gapMm": -0.000022281163706117102
+        },
+        "minimumGapMm": -0.0004718506917031351,
+        "maximumGapMm": -0.000022281163706117102
+      },
+      {
+        "inner": "Thermal GND clipped TO39 lead",
+        "outer": "Thermal GND annular solder fillet",
+        "z": -2.17,
+        "nominalCoincidentRadiusMm": 0.225,
+        "centreXY": [
+          1.1174356225060613,
+          5.302271765067042
+        ],
+        "minimumGapSample": {
+          "angleDeg": 56.173,
+          "innerExitMm": 0.22499031084613882,
+          "outerEntranceMm": 0.22451846015443508,
+          "innerExitPoint": [
+            1.2426848365115974,
+            5.489176217570554,
+            -2.17
+          ],
+          "outerEntrancePoint": [
+            1.2424221632967305,
+            5.488784240712241,
+            -2.17
+          ],
+          "gapMm": -0.0004718506917037457
+        },
+        "maximumGapSample": {
+          "angleDeg": 307.673,
+          "innerExitMm": 0.2249787856628081,
+          "outerEntranceMm": 0.2249565044991018,
+          "innerExitPoint": [
+            1.2549323336002292,
+            5.124198441863934,
+            -2.17
+          ],
+          "outerEntrancePoint": [
+            1.2549187163752986,
+            5.124216077663924,
+            -2.17
+          ],
+          "gapMm": -0.00002228116370631139
+        },
+        "minimumGapMm": -0.0004718506917037457,
+        "maximumGapMm": -0.00002228116370631139
+      },
+      {
+        "inner": "Thermal VDD clipped TO39 lead",
+        "outer": "Thermal VDD annular solder fillet",
+        "z": -2.17,
+        "nominalCoincidentRadiusMm": 0.225,
+        "centreXY": [
+          -1.1174356225060629,
+          5.302271765067044
+        ],
+        "minimumGapSample": {
+          "angleDeg": 56.173,
+          "innerExitMm": 0.22499031084613882,
+          "outerEntranceMm": 0.22451846015443508,
+          "innerExitPoint": [
+            -0.9921864085005269,
+            5.489176217570556,
+            -2.17
+          ],
+          "outerEntrancePoint": [
+            -0.9924490817153937,
+            5.488784240712243,
+            -2.17
+          ],
+          "gapMm": -0.0004718506917037457
+        },
+        "maximumGapSample": {
+          "angleDeg": 307.673,
+          "innerExitMm": 0.2249787856628081,
+          "outerEntranceMm": 0.22495650449910173,
+          "innerExitPoint": [
+            -0.979938911411895,
+            5.1241984418639355,
+            -2.17
+          ],
+          "outerEntrancePoint": [
+            -0.9799525286368256,
+            5.124216077663926,
+            -2.17
+          ],
+          "gapMm": -0.000022281163706366902
+        },
+        "minimumGapMm": -0.0004718506917037457,
+        "maximumGapMm": -0.000022281163706366902
+      }
+    ],
+    "scope": "Finite actual radial triangle intersections at stated sections. These are observed extrema over 720 offset angles, not global Euclidean penetration depths or manufacturing tolerances."
+  },
+  "trueHoleChecks": {
+    "mountingRays": 10,
+    "mountingRaysWithMaterialHits": 0,
+    "pcbGroveBoreRays": 20,
+    "pcbGroveBoreRaysWithMaterialHits": 0,
+    "allEightActualPcbBoresNegativeMaterialControls": 192,
+    "adjacentPcbMaterialPositiveControls": 24,
+    "conductorMaterialPositiveControls": 24
+  },
+  "groveSolderContact": {
+    "rays": 768,
+    "radialSections": 384,
+    "contactWithin1eMinus5Mm": 384,
+    "positiveAirGapSamples": 0,
+    "strictRadialOverlapSamples": 0,
+    "minimumGapMm": -8.326672684688674e-17,
+    "maximumGapMm": 0,
+    "change": "The former radius0.23 circular bore left a minimum observed gap0.003725845mm around the0.32 square leg. The final solder geometry uses an actual0.32 square bore; all384 tested section/angle contacts close without radial interpenetration."
+  },
+  "classifierCorrection": {
+    "supersededSignedMethodUsableForAcceptance": false,
+    "initialFixtureCount": 16,
+    "finalFixtureCount": 19,
+    "finalFixturesStatus": "pass",
+    "bug": "Signed normal balances mislabeled points in real PCB drill holes as material when procedural sidewall winding differed from cap winding. Two geometric crossings gave signed balance2. The initial wide-hole-centre fixtures did not expose this.",
+    "repro": {
+      "pointMm": [
+        1.12037222,
+        10.47302448,
+        -1.48
+      ],
+      "legacyObliqueSignedBalances": [
+        2,
+        2,
+        2
+      ],
+      "geometricCrossingCounts": [
+        2,
+        2,
+        2
+      ],
+      "positiveAndNegativeZBoardHits": 0
+    },
+    "correction": "Final classification uses orientation-independent crossing parity on closed-eligible meshes, adds near-bore-wall and globally reversed-winding fixtures, and explicitly records non-boundary disagreement as uncertain. Actual multi-hole PCB controls also pass."
+  },
+  "limitations": [
+    "Finite mesh samples and volume grids do not establish exhaustive intersection exclusion, exact CSG union, complete watertightness or manufacturing fit.",
+    "Original native assembly retains touching non-manifold edges and numerical merge seams; only independent original closed shell copies serve as interior targets.",
+    "Positive material classification requires agreement in three directions. Non-boundary directional disagreement is uncertain and is not evidence of empty material.",
+    "Triangle normal offsets, finite angular sections and finite volume grids can miss narrower or unsampled interference. Procedural inward candidates rejected or uncertain by actual-mesh classification remain counted.",
+    "Nominally coincident circular surfaces use different polygon segment counts; the retained measured sub-micron overlaps and air separations are numerical appearance joins, not a fabrication-fit certificate.",
+    "PCB outline, seat, hidden package steps, clipped leads, solder, package yaw and optical recess remain appearance inferences identified in product metadata.",
+    "The audit covers passive geometry only. It does not validate optical response, sensing, firmware, device execution, electrical behaviour, labels or browser appearance."
+  ]
+}

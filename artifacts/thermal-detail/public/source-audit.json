@@ -1,0 +1,198 @@
+{
+  "checkedAt": "2026-10-26T01:08:11.752632+00:00",
+  "status": "pass-with-recorded-limits",
+  "auditMethod": "Exact complete immutable public846b08f baseline preservation outside the narrow Thermal plan; current source/runtime/served-request/log/media and generated-report semantic checks.",
+  "sourceCommit": "daf0618100aa287df27af05740d68cefadc6db5b",
+  "privateBaseline": "a6f1fc421cd4af6fb8aea08b1a549d28ddc75b42",
+  "publicBaseline": "846b08f79d50484200243c1474951f876f6ac203",
+  "planSha256": "b37ff91ca81e18ec70d827d3a5fdc6cb29db783cb55cfcec52f1ffd0c4d67063",
+  "toolHashes": {
+    "audit.py": "a8c79d22ed7c141b4249f5254e0951cb1dab54949ce5af525e37b068d8fc82ab",
+    "common.py": "6d9b61e6e3b13ca780dcf2dd9e3c4d2014d42b882b7b80cdf6ba2c9b071954a0",
+    "freeze-public.py": "cd0f8d836b539d0c17c34db7ad2c0217c91d636266929bcfe0df604d5c598d75",
+    "publish.py": "e07b73155e7724e1e94ff3832a555637d6f722710357a8b0cd07a0a46176a7c6"
+  },
+  "baselineManifestSha256": "fb1c9a7bd1617408517c8bd76108e36ef3f39934de66da1833ab6998adc2e7d0",
+  "privateReviewSha256": "8586d60c0e1dc368b0ff1d579c9ce1c8780494f1349875480dfccfe268aabeb7",
+  "publicReviewSha256": "b7afbaa26fbb6033fd05910a6f8defc94fe9b597a5376f2e23a0970dca8e2e2e",
+  "files": 1214,
+  "baselineFiles": 1171,
+  "unchangedBaselineFiles": 1151,
+  "changedPaths": [
+    "README.md",
+    "artifacts/detail-check.json",
+    "artifacts/dynamics-check.json",
+    "artifacts/geometry-check.json",
+    "artifacts/grove-cable-check.json",
+    "artifacts/host-grove-assembly-check.json",
+    "artifacts/thermal-detail/public/browser-review.json",
+    "artifacts/thermal-detail/public/commands.json",
+    "artifacts/thermal-detail/public/final-build.log",
+    "artifacts/thermal-detail/public/final-check.log",
+    "artifacts/thermal-detail/public/final-status.log",
+    "artifacts/thermal-detail/public/independent-summary.json",
+    "artifacts/thermal-detail/public/review.json",
+    "artifacts/thermal-detail/public/source-audit.json",
+    "artifacts/thermal-detail/public/views/sticks3-hub-thermal-default.png",
+    "artifacts/thermal-detail/public/views/sticks3-hub-thermal-detached.png",
+    "artifacts/thermal-detail/public/views/sticks3-hub-thermal-posed.png",
+    "artifacts/thermal-detail/public/views/thermal-back.png",
+    "artifacts/thermal-detail/public/views/thermal-bottom-close.png",
+    "artifacts/thermal-detail/public/views/thermal-bottom.png",
+    "artifacts/thermal-detail/public/views/thermal-front-after-wait.png",
+    "artifacts/thermal-detail/public/views/thermal-front-close.png",
+    "artifacts/thermal-detail/public/views/thermal-front-stable.png",
+    "artifacts/thermal-detail/public/views/thermal-front.png",
+    "artifacts/thermal-detail/public/views/thermal-iso-close.png",
+    "artifacts/thermal-detail/public/views/thermal-iso.png",
+    "artifacts/thermal-detail/public/views/thermal-left.png",
+    "artifacts/thermal-detail/public/views/thermal-right.png",
+    "artifacts/thermal-detail/public/views/thermal-top.png",
+    "artifacts/thermal-detail/public/visual-review.json",
+    "artifacts/thermal-detail/views/sticks3-hub-thermal-default.png",
+    "artifacts/thermal-detail/views/sticks3-hub-thermal-detached.png",
+    "artifacts/thermal-detail/views/sticks3-hub-thermal-posed.png",
+    "artifacts/thermal-detail/views/thermal-back.png",
+    "artifacts/thermal-detail/views/thermal-bottom-close.png",
+    "artifacts/thermal-detail/views/thermal-bottom.png",
+    "artifacts/thermal-detail/views/thermal-front-after-wait.png",
+    "artifacts/thermal-detail/views/thermal-front-close.png",
+    "artifacts/thermal-detail/views/thermal-front-stable.png",
+    "artifacts/thermal-detail/views/thermal-front.png",
+    "artifacts/thermal-detail/views/thermal-iso-close.png",
+    "artifacts/thermal-detail/views/thermal-iso.png",
+    "artifacts/thermal-detail/views/thermal-left.png",
+    "artifacts/thermal-detail/views/thermal-right.png",
+    "artifacts/thermal-detail/views/thermal-top.png",
+    "catalog/products.json",
+    "docs/AGENT-INTEGRATION.md",
+    "docs/STATUS.md",
+    "docs/THERMAL-MODEL-NOTES.md",
+    "docs/THERMAL-SOURCES.json",
+    "docs/research/buzzer/geometry-check.json",
+    "docs/research/fan/geometry-check.json",
+    "docs/research/hub/geometry-check.json",
+    "docs/research/ir/geometry-check.json",
+    "docs/research/limit/geometry-check.json",
+    "docs/research/rfid2/geometry-check.json",
+    "docs/research/rs485/geometry-check.json",
+    "scripts/check-details.mjs",
+    "scripts/check-thermal-assembly.mjs",
+    "src/units/shared/open-top-grove.js",
+    "src/units/thermal/assembly.js",
+    "src/units/thermal/dimensions.js",
+    "src/units/thermal/index.js"
+  ],
+  "newRawReferenceByteCopies": 0,
+  "rawReferenceFingerprints": 1072,
+  "strictNewPngs": 30,
+  "rgbIdenticalPairs": 15,
+  "media": [
+    {
+      "path": "artifacts/thermal-detail/views/sticks3-hub-thermal-default.png",
+      "sha256": "f2c4d504917e90d61d6a74b537b9651da76b3c694bb9d5697038b488094a10ad",
+      "independentSha256": "f2c4d504917e90d61d6a74b537b9651da76b3c694bb9d5697038b488094a10ad",
+      "rgbIdentical": true
+    },
+    {
+      "path": "artifacts/thermal-detail/views/sticks3-hub-thermal-detached.png",
+      "sha256": "0328186b32eee048e690c6116e8fd7618686e0eb346a64405d5817ce4850ed6b",
+      "independentSha256": "0328186b32eee048e690c6116e8fd7618686e0eb346a64405d5817ce4850ed6b",
+      "rgbIdentical": true
+    },
+    {
+      "path": "artifacts/thermal-detail/views/sticks3-hub-thermal-posed.png",
+      "sha256": "8c913015484188dc4dd4768a8e196f95b7b36049b63cff6f3d3b2e17d72700d5",
+      "independentSha256": "8c913015484188dc4dd4768a8e196f95b7b36049b63cff6f3d3b2e17d72700d5",
+      "rgbIdentical": true
+    },
+    {
+      "path": "artifacts/thermal-detail/views/thermal-back.png",
+      "sha256": "a9a1cd5f56d9eca205402d8a1dd9092d5689258e8046a194f0e7c0c3420185f4",
+      "independentSha256": "a9a1cd5f56d9eca205402d8a1dd9092d5689258e8046a194f0e7c0c3420185f4",
+      "rgbIdentical": true
+    },
+    {
+      "path": "artifacts/thermal-detail/views/thermal-bottom-close.png",
+      "sha256": "8c78ea68d38dda297d4f7f160766a3803f370fed3b92847d8f557c046d2eab53",
+      "independentSha256": "8c78ea68d38dda297d4f7f160766a3803f370fed3b92847d8f557c046d2eab53",
+      "rgbIdentical": true
+    },
+    {
+      "path": "artifacts/thermal-detail/views/thermal-bottom.png",
+      "sha256": "edf6bea173700c6c98dfe8cb5f26a8e8244e701e4a847779eb3559339bf08231",
+      "independentSha256": "edf6bea173700c6c98dfe8cb5f26a8e8244e701e4a847779eb3559339bf08231",
+      "rgbIdentical": true
+    },
+    {
+      "path": "artifacts/thermal-detail/views/thermal-front-after-wait.png",
+      "sha256": "028f8b3062b37f8673bfb41ee30fa2bdf579b5e25b07b04bf59426e1ef31c8f2",
+      "independentSha256": "028f8b3062b37f8673bfb41ee30fa2bdf579b5e25b07b04bf59426e1ef31c8f2",
+      "rgbIdentical": true
+    },
+    {
+      "path": "artifacts/thermal-detail/views/thermal-front-close.png",
+      "sha256": "18a55bdcf7d6762e38982f43bcd2ef55a5f61b302b95fd98e0088b7ce3ccb6ba",
+      "independentSha256": "18a55bdcf7d6762e38982f43bcd2ef55a5f61b302b95fd98e0088b7ce3ccb6ba",
+      "rgbIdentical": true
+    },
+    {
+      "path": "artifacts/thermal-detail/views/thermal-front-stable.png",
+      "sha256": "028f8b3062b37f8673bfb41ee30fa2bdf579b5e25b07b04bf59426e1ef31c8f2",
+      "independentSha256": "028f8b3062b37f8673bfb41ee30fa2bdf579b5e25b07b04bf59426e1ef31c8f2",
+      "rgbIdentical": true
+    },
+    {
+      "path": "artifacts/thermal-detail/views/thermal-front.png",
+      "sha256": "028f8b3062b37f8673bfb41ee30fa2bdf579b5e25b07b04bf59426e1ef31c8f2",
+      "independentSha256": "028f8b3062b37f8673bfb41ee30fa2bdf579b5e25b07b04bf59426e1ef31c8f2",
+      "rgbIdentical": true
+    },
+    {
+      "path": "artifacts/thermal-detail/views/thermal-iso-close.png",
+      "sha256": "60d1a0f1adef2ef882c13dbd88e7cf72e55b376ed0cdf539972bad200f0613ec",
+      "independentSha256": "60d1a0f1adef2ef882c13dbd88e7cf72e55b376ed0cdf539972bad200f0613ec",
+      "rgbIdentical": true
+    },
+    {
+      "path": "artifacts/thermal-detail/views/thermal-iso.png",
+      "sha256": "b046bf77ce27d53e254c2c6225757ba85a45ed4f105cc7de0bb287f8ebcbd4ff",
+      "independentSha256": "b046bf77ce27d53e254c2c6225757ba85a45ed4f105cc7de0bb287f8ebcbd4ff",
+      "rgbIdentical": true
+    },
+    {
+      "path": "artifacts/thermal-detail/views/thermal-left.png",
+      "sha256": "147766febd5fc87624eac08249b727ffb145dd215fef980ab685a1518fe9d2be",
+      "independentSha256": "147766febd5fc87624eac08249b727ffb145dd215fef980ab685a1518fe9d2be",
+      "rgbIdentical": true
+    },
+    {
+      "path": "artifacts/thermal-detail/views/thermal-right.png",
+      "sha256": "36b34d096fca8eb6cfbb56b23b1b7be193e0cef54c6cc92b9dd364b0c3257e99",
+      "independentSha256": "36b34d096fca8eb6cfbb56b23b1b7be193e0cef54c6cc92b9dd364b0c3257e99",
+      "rgbIdentical": true
+    },
+    {
+      "path": "artifacts/thermal-detail/views/thermal-top.png",
+      "sha256": "e7faed5a24aa35b104b8762463bb0ed6b4c488922e9c9406e5fc0f24497ddea9",
+      "independentSha256": "e7faed5a24aa35b104b8762463bb0ed6b4c488922e9c9406e5fc0f24497ddea9",
+      "rgbIdentical": true
+    }
+  ],
+  "inheritedAngleSourceAuditSha256": "99273238426850361270e7adc9ea5ae97304d20b32ed4bb7ed4599c6fcf4991e",
+  "inheritedEncoderSourceAuditSha256": "196e924a823de79677e31036dda64042c466919bcbf5dea5665a694d1f309ff8",
+  "inheritedGroveSourceAuditSha256": "46488589560fc1210175482449b872dcbe4b33b9071c59bb4a63cd9c98071c93",
+  "historicalPolicy": "All 162 exact JPEG-in-PNG tuples, three exact raw license/metadata/report tuples, upstream notices, provenance and historical audits remain byte-identical to public846b08f. Seven historical geometry reports permit valid root checkedAt changes only; RS485 stays42. No new media-format or raw-copy exception.",
+  "issues": [],
+  "limits": [
+    "Cone recess depth/mouth, header step split, PCB shape/thickness/Z, mounted yaw, clipped leads and solder are appearance inferences, separated from manufacturer dimensions.",
+    "Original selected shell retains its numerical/nonmanifold topology; independently closed original STL copies have measured mapping residual below0.0001mm.",
+    "Finite sections/rays/material samples and native WebGL images are digital evidence, not exhaustive manufacturing fit, real optics or hardware execution.",
+    "Independent summary retains directional uncertainty and microscopic nominal-radius polygon seam overlaps/air separations; zero strict sampled source overlap is not an exhaustive clearance claim.",
+    "All43 remain modeled/zero verified; stickers deferred. Existing Heart PCB-edge and StackChan concealed-fit/production-datum limitations remain.",
+    "Finite source mapping and material sampling do not prove exhaustive manufacturing fit or physical optics.",
+    "Heart pre-existing PCB-edge and StackChan concealed-fit/production-datum limitations remain.",
+    "The private original-CAD sampling summary is copied as hash-bound evidence and is not physical manufacturing validation.",
+    "All43 remain modeled/zero verified; stickers deferred."
+  ]
+}

@@ -1800,7 +1800,7 @@
       "export": "Model",
       "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/THERMAL/img-92fc4d7d-3b52-4ee6-b483-80d7209289e3.webp",
       "officialDocs": "https://docs.m5stack.com/en/unit/thermal",
-      "research": "source-manifest.json",
+      "research": "docs/THERMAL-MODEL-NOTES.md",
       "integration": {
         "moduleExport": "GroveModule",
         "externalRuntime": "m5agent/m5stack-esp-emulator"
@@ -1820,10 +1820,13 @@
         ]
       ],
       "limitations": [
-        "官方 CAD 装配壳体；局部器件、旋钮、按键表面依据官方照片构造，尚待逐面视觉检查",
-        "这里只提供视觉几何和接口，不实现电气、传感器数据或协议行为"
+        "110°原厂黑包体5.70 mm总高、Ø2.60小窗；r4.60位于Ø9.30±0.15公差内以避让原22边孔，原CAD不变",
+        "凹面深度/大口径、header分层、装配yaw、PCB形状/高度及裁短焊脚为外观推导；没有PCB装配STEP/内部实拍",
+        "Grove口由Z0改Z1.4，10×5.2来自自身图纸；默认模块按当前口对齐，显式unitPose仍为装配原点",
+        "只提供实体外观、既有sensor视觉anchor及Grove线缆，不提供温度、热图、IR可见光、电气或固件行为",
+        "局部有限采样/渲染不证明制造或实物；贴纸延期，stage仍modeled"
       ],
-      "nextAction": "优先逐面检查装配闭合与真实开口；贴纸等待用户原文件"
+      "nextAction": "本批数字证据见artifacts/thermal-detail/public/review.json；隐藏板形/包体yaw/装配细节仍待更精确依据，贴纸等用户原文件"
     },
     {
       "id": "tvoc",

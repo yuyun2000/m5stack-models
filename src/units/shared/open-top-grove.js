@@ -2,7 +2,8 @@ import * as THREE from 'three';
 import {materials} from '../../core/index.js';
 import {mesh} from '../../modeling/parts.js';
 
-// Explicitly opted in by U029/U034/U135/U005. U005 uses the own CAD bay
+// Explicitly opted in by U029/U034/U135/U005/U016. U016's own drawing
+// labels the 10 × 5.2 mm envelope. U005 uses the own CAD bay
 // floor -1.2 to front +4 as an inferred 5.2 mm engineering envelope; this
 // is not a labelled U005 connector dimension. The prior mouth height and Heart
 // 10 mm width follow the official drawings; the open contour follows photos.
@@ -15,7 +16,7 @@ export const OPEN_TOP_GROVE=Object.freeze({
 });
 
 export function refineOpenTopGrove(host,product){
- if(!['heart','rs485','encoder','angle'].includes(product))throw new Error('Open-top Grove requires an explicit U029/U034/U135/U005 product');
+ if(!['heart','rs485','encoder','angle','thermal'].includes(product))throw new Error('Open-top Grove requires an explicit U029/U034/U135/U005/U016 product');
  const sockets=host.body.children.filter(o=>o.name==='HY2.0-4P');
  if(sockets.length!==1)throw new Error('Expected the original single Grove socket');
  const group=sockets[0],port=host.port('grove'),old=group.children;
@@ -25,7 +26,7 @@ export function refineOpenTopGrove(host,product){
  // The retired generic meshes share materials. Dispose each retired resource
  // once; new physical meshes each own their material under ComponentHost.
  for(const geometry of geometries)geometry.dispose();for(const material of mats)material.dispose();
- const d=OPEN_TOP_GROVE,label={heart:'Heart',rs485:'RS485',encoder:'Encoder',angle:'Angle'}[product],parts={};
+ const d=OPEN_TOP_GROVE,label={heart:'Heart',rs485:'RS485',encoder:'Encoder',angle:'Angle',thermal:'Thermal'}[product],parts={};
  const box=(key,size,position,metal=false)=>{
   const material=metal?materials.metal(0xbaad83,{roughness:.42}):materials.plastic(color,{roughness:.58});
   const object=mesh(group,new THREE.BoxGeometry(...size),material,position,`${label} Grove ${key}`);parts[key]=object;return object;

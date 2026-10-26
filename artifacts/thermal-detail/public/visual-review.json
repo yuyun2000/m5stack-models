@@ -1,0 +1,98 @@
+{
+  "checkedAt": "2026-10-26T01:05:00.642Z",
+  "status": "pass-with-recorded-limits",
+  "privateVisualReviewSha256": "dcc19695b7c4a32674bd138bc5e176ce7f9ef5c8111f26f5781111f4ffae5130",
+  "sourceCommit": "daf0618100aa287df27af05740d68cefadc6db5b",
+  "publicNativeRgbPairs": [
+    {
+      "original": "artifacts/thermal-detail/views/sticks3-hub-thermal-default.png",
+      "independent": "artifacts/thermal-detail/public/views/sticks3-hub-thermal-default.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/thermal-detail/views/sticks3-hub-thermal-detached.png",
+      "independent": "artifacts/thermal-detail/public/views/sticks3-hub-thermal-detached.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/thermal-detail/views/sticks3-hub-thermal-posed.png",
+      "independent": "artifacts/thermal-detail/public/views/sticks3-hub-thermal-posed.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/thermal-detail/views/thermal-back.png",
+      "independent": "artifacts/thermal-detail/public/views/thermal-back.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/thermal-detail/views/thermal-bottom-close.png",
+      "independent": "artifacts/thermal-detail/public/views/thermal-bottom-close.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/thermal-detail/views/thermal-bottom.png",
+      "independent": "artifacts/thermal-detail/public/views/thermal-bottom.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/thermal-detail/views/thermal-front-after-wait.png",
+      "independent": "artifacts/thermal-detail/public/views/thermal-front-after-wait.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/thermal-detail/views/thermal-front-close.png",
+      "independent": "artifacts/thermal-detail/public/views/thermal-front-close.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/thermal-detail/views/thermal-front-stable.png",
+      "independent": "artifacts/thermal-detail/public/views/thermal-front-stable.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/thermal-detail/views/thermal-front.png",
+      "independent": "artifacts/thermal-detail/public/views/thermal-front.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/thermal-detail/views/thermal-iso-close.png",
+      "independent": "artifacts/thermal-detail/public/views/thermal-iso-close.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/thermal-detail/views/thermal-iso.png",
+      "independent": "artifacts/thermal-detail/public/views/thermal-iso.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/thermal-detail/views/thermal-left.png",
+      "independent": "artifacts/thermal-detail/public/views/thermal-left.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/thermal-detail/views/thermal-right.png",
+      "independent": "artifacts/thermal-detail/public/views/thermal-right.png",
+      "rgbIdentical": true
+    },
+    {
+      "original": "artifacts/thermal-detail/views/thermal-top.png",
+      "independent": "artifacts/thermal-detail/public/views/thermal-top.png",
+      "rgbIdentical": true
+    }
+  ],
+  "observations": [
+    "Seven neutral native views inspected in a contact sheet, with full native front/iso/bottom close views opened separately against the official gallery and Fig29.",
+    "The short black body, physical cone and small optical window replace the former silver wafer/large flat lens; no photographic sticker closes the opening. The rear and all shell surfaces stay original.",
+    "Front close intentionally focuses optics; the complete seven neutral views show the full unit. Real mounting holes and open Grove channel remain, with short contacts, side rails and locking tongue.",
+    "Static front wait returns exact neutral RGB. StickS3/HUB/Thermal default and posed scenes contain physical four-core cables; published target position/orientation/slack change and detach positively retains all three HUB outlets and StickS3 controls.",
+    "PCB/header support and concealed joints are checked by actual geometry probes; they are not claimed to be visually exposed in the assembled browser frames."
+  ],
+  "scope": "The 15 independent actual public WebGL frames are RGB-identical to the individually inspected frozen private originals. DOM controls, source/build fingerprints and served responses are preserved in browser-review.json.",
+  "limits": [
+    "Cone recess depth/mouth, header step split, PCB shape/thickness/Z, mounted yaw, clipped leads and solder are appearance inferences, separated from manufacturer dimensions.",
+    "Original selected shell retains its numerical/nonmanifold topology; independently closed original STL copies have measured mapping residual below0.0001mm.",
+    "Finite sections/rays/material samples and native WebGL images are digital evidence, not exhaustive manufacturing fit, real optics or hardware execution.",
+    "Independent summary retains directional uncertainty and microscopic nominal-radius polygon seam overlaps/air separations; zero strict sampled source overlap is not an exhaustive clearance claim.",
+    "All43 remain modeled/zero verified; stickers deferred. Existing Heart PCB-edge and StackChan concealed-fit/production-datum limitations remain."
+  ]
+}
