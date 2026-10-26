@@ -1,0 +1,48 @@
+{
+  "sku": "U020",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/b4d8875bd504fed30242df78a1370703742941fb/Products/U020_Unit_3.96/Structures/Unit_3.96.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/28a3f3af4bca78df00ff45d69baf158b9021ecae",
+  "commit": "b4d8875bd504fed30242df78a1370703742941fb",
+  "gitBlob": "28a3f3af4bca78df00ff45d69baf158b9021ecae",
+  "sha256": "ea899d2990f0fed24a21d96c1914de163477f0b5e0ffe6e9a5aeab5484d0db72",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/b4d8875bd504fed30242df78a1370703742941fb/LICENSE",
+  "origin": [
+    -529.268798828125,
+    225.22348022460938,
+    4
+  ],
+  "axes": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 0,
+      "name": "Unit 3.96 complete native assembled front and rear shell",
+      "material": "shell",
+      "triangles": 3216
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 3216,
+  "localModification": null,
+  "notes": "Exact own U020 path-specific commit and expected Git blob verified. Component0 is the complete3216-triangle assembled front/rear shell,24×32×8mm. Components1/2 are displaced duplicate shell halves. Full assembled part retained unscaled/unmodified with a common translation and180degree Y rotation so the native orange-header opening faces+Z and closed rear label/M5 face-Z;no native faces removed,patched,filled or independently repositioned. Own drawing distinguishes8mm native casing and10.2mm including front-projecting fixed connector;no native shell resizing."
+}

@@ -1,0 +1,262 @@
+{
+  "id": "zigbee",
+  "sku": "U110",
+  "officialDocs": "https://docs.m5stack.com/en/unit/zigbee",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "queries": [
+      "Unit Zigbee U110 尺寸 结构文件 天线 外部接口 开关 PCB CC2630",
+      "Unit ZigBee U110 S1 KEY 按键 位置 指示灯 D1 外壳 SMA 金属窗口"
+    ],
+    "rawResponseDistributed": false,
+    "result": "Own U110 product71.5×24×8mm,CC2630F128/DRF1609H,external SMA antenna,UART Grove;own schematic S1 KEY,D1 green0603 and SPX3819M5-L-3-3.Own native casing24×64×8mm;SMA-inclusive dimensional split remains inferred.Linked module guidep19–21 confirms32×16mm DRF1609H,ten pins,2.54mm pitch.Own straight and90degree package photos support limited antenna visual hinge,not measured stops.S1/D1 exterior accessibility remains unconfirmed."
+  },
+  "feedback": {
+    "category": "missing_documentation",
+    "feedback_id": "d2b33b1826c44698be8ec73d5fd89789",
+    "accepted": true,
+    "topic": "Exact U110 S1/D1 location/accessibility,fine-slot installation and native64mm casing versus product71.5mm SMA-inclusive dimension split."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/zigbee/zigbee_06.webp",
+    "sha256": "723114afcd7d26955295ffb3c6d411b732b444acc801dbe81ac598f3af672ed1"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3/Products/U110_Unit_ZigBee/Structures/Unit_ZigBee.stl",
+      "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/cd451d15e2d03f37e80e7db05bf7f82fa56a78ba",
+      "commit": "c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3",
+      "gitBlob": "cd451d15e2d03f37e80e7db05bf7f82fa56a78ba",
+      "sha256": "6d93ea1962caf38864027accc041acb990a61e3360581aad16edf30ec294b17f",
+      "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3/Products/U110_Unit_ZigBee/Structures/Unit_ZigBee.stl",
+      "sha256": "6d93ea1962caf38864027accc041acb990a61e3360581aad16edf30ec294b17f"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/zigbee/zigbee_01.webp",
+      "sha256": "de69a021d3e5e6002ab453c59e947a063b03d10212d3481963261720f95ce677"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/zigbee/zigbee_02.webp",
+      "sha256": "fcff0e0f3809fc7bb1c164e1566e9067c141a9189da4f2f1b107ab5394028b06"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/zigbee/zigbee_03.webp",
+      "sha256": "4abb64acfa67ffad6e7bd77936347ca315dcb25e7fd7d1df73a1b685d4c6bf63"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/zigbee/zigbee_05.webp",
+      "sha256": "3fd757e2b914856fe295222461e1e73cde7c29fa35f1152dea8012c96d32151e"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/zigbee/zigbee_06.webp",
+      "sha256": "723114afcd7d26955295ffb3c6d411b732b444acc801dbe81ac598f3af672ed1"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/zigbee/zigbee_sch_01.webp",
+      "sha256": "38688ae749cceb8974a0bf2432c7a112d5990f897a0720ced4708fd3da14377e"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/module/Zigbee_CC2630/cc2630_datasheet.pdf",
+      "sha256": "2e39a20fc2bae11b2f819bf2889baef4b36b59ed5a67e86188cd432a91151cf7"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/module/Zigbee_CC2630/Zigbee_Module_Guide.pdf",
+      "sha256": "97fb8e75b2cf2e82d335d0281f71a9db2df5c9bd88342bed1add29aa81eaaa5c"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "originalAssemblyTriangles": 6592,
+    "outputTriangles": 6592,
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      0,
+      32,
+      -4
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "localModification": null,
+    "notes": "Exact own U110 path-specific commit and expected Git blob verified. Component0 is the complete6592-triangle assembled front/rear shell,24×64×8mm. Components1/2 are displaced duplicate shell halves. Full assembled part retained unscaled/unmodified with one common translation;no native faces removed,patched,filled or repositioned. Product nominal length71.5mm is reproduced by an inferred7.5mm SMA projection;unmodified native casing alone is64mm long.The body/SMA dimensional split is appearance reconstruction,not a measured assembly datum."
+  },
+  "dimensions": {
+    "nominalMm": [
+      71.5,
+      24,
+      8
+    ],
+    "vendorDimensionOrderMm": [
+      71.5,
+      24,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      64,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24,
+      71.50000019073487,
+      8
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -20
+      ],
+      [
+        8,
+        -20
+      ]
+    ],
+    "mountingHoleDiameterMm": 4.85,
+    "grovePositionMm": [
+      0,
+      -31.65,
+      0.6
+    ],
+    "smaPositionMm": [
+      0,
+      39.5,
+      0
+    ],
+    "bodySmaSplitInferred": true,
+    "radioModuleBoardMm": [
+      16,
+      32,
+      0.7
+    ],
+    "radioModuleThicknessInferred": true,
+    "antennaEstimatedLengthMm": 100,
+    "antennaLengthInferred": true,
+    "dimensionEvidence": "Exact native shell is24×64×8mm,unscaled. Published71.5×24×8mm reproduced with inferred7.5mm metal SMA projection;not a production assembly datum.Module guidep21 specifies32×16mm DRF1609H PCB and2.54mm pitch;thickness/installation inferred.Antenna100mm straight envelope is photo reconstruction,not a published length."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 2,
+    "sourceDetails": "docs/research/zigbee/artwork.json",
+    "originalsDistributed": false
+  },
+  "antenna": {
+    "physicalConnector": "sma-male",
+    "acceptingPortFamily": "sma-female",
+    "defaultInstalled": false,
+    "joint": "tilt",
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "pivotMm": [
+      0,
+      13,
+      0
+    ],
+    "rangeDeg": [
+      0,
+      90
+    ],
+    "continuous": false,
+    "rangeSources": [
+      {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/zigbee/zigbee_01.webp",
+        "sha256": "de69a021d3e5e6002ab453c59e947a063b03d10212d3481963261720f95ce677"
+      },
+      {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/zigbee/zigbee_03.webp",
+        "sha256": "4abb64acfa67ffad6e7bd77936347ca315dcb25e7fd7d1df73a1b685d4c6bf63"
+      }
+    ],
+    "rangeEvidence": "Own exact U110 straight/90degree packaged reference poses;visual reconstruction interval only,not measured production stops.",
+    "estimatedLengthMm": 100,
+    "dimensionsInferred": true,
+    "productionStopsVerified": false
+  },
+  "scope": "Complete own native shell,PCB/true carrier bore/32×16 DRF1609H with ten castellation openings/plated lands/shield,regulator/hidden fixed S1/nonemissive D1/six capacitors/two resistors,actual hollow SMA with gold body behind native fine slots,coax envelope,four-contact Grove,screws/two real films and detachable hinged supplied antenna.Appearance/external pose only;no radio/electrical/internal behavior.",
+  "inferred": [
+    "Carrier PCB outline/plane,DRF module/shield/hidden-component package installation",
+    "SMA connector/contact/thread,metal hex body registration in original front/back slots,coax route and miniature termination type",
+    "Published71.5mm total versus64mm native casing dimensional split",
+    "Antenna estimated100mm length,rod/neck/coupling curves,hinge axis/pivot and visual0–90interval;no measured stops",
+    "Grove latch/contact/carrier/tails and screw installation",
+    "Adhesive dimensions/thickness,typeface/symbol curves/colors/print registration"
+  ],
+  "notes": [
+    "All6592 own selected native triangles retained,scale1;only displaced duplicate shell halves excluded.",
+    "Native casing24×64×8mm and inferred SMA-inclusive visual envelope24×71.5×8mm recorded separately.",
+    "S1/D1 included as concealed fixed physical packages;no invented exterior actuator or light path.",
+    "Antenna folds only at the real single radome hinge;fixed SMA coupling,Unit,Grove and cable endpoints remain unchanged.",
+    "Two physical films touch native closed label walls and remain without artwork.",
+    "All physical attributes/index/matrixWorld invariant under artwork:false in both entry types and antenna0/90configurations.",
+    "Two exact U110 final ordinary reference-redraw PNGs;raw photos,vectors,generators and private mappings excluded."
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/zigbee/Antenna.js",
+      "sha256": "3ce7a84c7882dfda8c72cb3e6d6d8923261729788c2f199f53f121858241576e"
+    },
+    {
+      "path": "src/units/zigbee/assembly.js",
+      "sha256": "5dd20a72783c964ffff0957efa913e287be5c1764f37b1aac7eedddf84518e8d"
+    },
+    {
+      "path": "src/units/zigbee/cad-map.json",
+      "sha256": "81d3c82a7dc872731f288e9424049fca670f98d45227abd61ce5bedba2d56c26"
+    },
+    {
+      "path": "src/units/zigbee/connectors.js",
+      "sha256": "73de18036f9991971bf0b787c2595d48fb893745ba459887c5ae45f568a12b8b"
+    },
+    {
+      "path": "src/units/zigbee/dimensions.js",
+      "sha256": "8628b98ab7ad000dfbb2dab8844b6c2cc000e91a3115b6bca0fe2f336724e5a6"
+    },
+    {
+      "path": "src/units/zigbee/geometry-data.js",
+      "sha256": "b647cd5894a97ed27fcae3a5f2ccbfa0addb15fc36f3e40ca7dc71d02d2d2d05"
+    },
+    {
+      "path": "src/units/zigbee/index.js",
+      "sha256": "20e2288ee39a2189b4058f9c9bedd236835fc423d3a09ffb0a67aa733412e37f"
+    },
+    {
+      "path": "src/units/zigbee/reference-redraw-back.png",
+      "sha256": "3133315d418b42d0e784ab4c4e46c7b80d920bd6d756ae23742910e84059c180"
+    },
+    {
+      "path": "src/units/zigbee/reference-redraw-front.png",
+      "sha256": "86be7e2cbbe3e0dc21de73e938f1d38b3d320ac8ce15ae27bbbef33d751a144a"
+    },
+    {
+      "path": "src/units/zigbee/stickers.js",
+      "sha256": "4fd37da952434c85c97c0030d9820728cf741c53670aee363beb9e9d53605e69"
+    }
+  ]
+}

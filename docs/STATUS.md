@@ -2,9 +2,9 @@
 
 由 npm run catalog 生成；catalog/products.json 为权威状态。
 
-范围：精细外观建模，行为由下游模拟器负责。主机 14 款，Unit 113 款。
+范围：精细外观建模，行为由下游模拟器负责。主机 14 款，Unit 137 款。
 
-状态计数：{"modeled":127}。modeled 表示已有实现，不表示已完成视觉验收。
+状态计数：{"modeled":151}。modeled 表示已有实现，不表示已完成视觉验收。
 
 | 类别 | 产品 | 阶段 | 名义尺寸 X × Y × Z / mm | 下一步 |
 | --- | --- | --- | --- | --- |
@@ -135,3 +135,27 @@
 | Unit | Unit ID | modeled | 24 × 24 × 8 | Continue exact Unit expansion with matching artwork;use authoritative production electronics assembly if later available to refine inferred hidden installation. |
 | Unit | Unit RF433R | modeled | 48 × 24 × 8 | Continue exact Unit expansion with matching artwork;refine inferred concealed installation if authoritative U113 production PCB/BOM becomes available. |
 | Unit | Unit RF433T | modeled | 24 × 48 × 8 | Continue exact Unit expansion with corresponding artwork;refine hidden installation/copper layout only if authoritative exact production assembly evidence appears. |
+| Unit | Unit ZigBee | modeled | 71.5 × 24 × 8 | Continue exact Unit expansion with matching artwork;refine U110 S1/D1 and antenna/SMA installation if authoritative production assembly evidence becomes available. |
+| Unit | Unit CO2L | modeled | 48 × 24 × 16 | Continue exact Unit expansion with matching artwork;refine inferred side apertures/hidden installation if corrected own production CAD becomes available. |
+| Unit | Unit INA226-1A | modeled | 24 × 58 × 10.2 | Continue exact Unit expansion with matching artwork;refine installation only when official own1A assembly/PCB/mating data appear. |
+| Unit | Unit Finger | modeled | 48 × 24 × 8 | Continue exact Unit expansion with matching artwork;use own production assembly/BOM if later available to refine hidden module installation. |
+| Unit | Unit 3.96 | modeled | 32 × 24 × 10.2 | Continue exact Unit expansion with matching artwork;refine inferred plug/PCB installation if authoritative U020 production assembly becomes available. |
+| Unit | Unit Scales | modeled | 56 × 40 × 41 | Continue exact Unit expansion with matching artwork;refine U108 hidden assembly and redraw only when production own assembly/label data appear. |
+| Unit | Unit C6L | modeled | 62 × 24 × 8 | Continue exact Unit expansion with artwork;refine hidden assembly or supplied-antenna articulation only when exact own BOM/production drawing or bent-pose reference becomes available. |
+| Unit | Unit Gateway H2 | modeled | 48 × 24 × 8 | Continue exact Unit expansion with matching artwork;refine U195 package installation/optional LED population if authoritative production assembly or BOM becomes available. |
+| Unit | Unit ChainBus | modeled | 24 × 29.8 × 8 | Continue exact Unit expansion with matching artwork;refine U212 hidden installation/mating and resolve official UART numbering when production evidence arrives. |
+| Unit | Unit Glass2 | modeled | 53 × 42 × 6 | Continue exact Unit expansion with artwork;refine independent outline/hidden installation or unused-row mapping only when exact production CAD or authoritative panel mapping becomes available. |
+| Unit | Unit TypeC to Grove | modeled | 32 × 24 × 10.8 | Continue exact Unit expansion with corresponding artwork;refine U151 hidden installation and input-ground source conflict when authoritative assembly/current PCB evidence becomes available. |
+| Unit | Unit DoF10 | modeled | 24 × 24 × 8 | Continue exact Unit expansion with matching artwork;refine hidden U230 installation/fit when production assembly or PCB evidence arrives. |
+| Unit | Unit PoE-P4 | modeled | 64 × 24 × 20.2 | Continue actual Unit expansion with synchronous matching body labels;refine inferred assembly details if corrected own production CAD becomes available. |
+| Unit | Unit Cat1-CN | modeled | 71.4 × 24 × 8 | Continue exact Unit expansion with corresponding artwork;refine hidden module/SIM installation and D1 optical path when authoritative assembly/BOM becomes available. |
+| Unit | Unit Grove to Grove | modeled | 24 × 32 × 8.1 | Continue exact Unit expansion with corresponding artwork;refine U148 hiddenassembly/fit and reference-redraw registration when production sources arrive. |
+| Unit | UnitV2 | modeled | 48 × 18.5 × 24 | Continue own Unit expansion and corresponding labels;refine inferred installation details when exact production assembly/BOM becomes public. |
+| Unit | Unit LoRaWAN-CN470 | modeled | 71.4 × 24 × 8 | Continue exact Unit expansion with corresponding artwork;refine installed PCB/RF termination/current option BOM and195mm antenna profile/stops when authoritative assembly sources arrive. |
+| Unit | Unit Proto | modeled | 24 × 48 × 8 | Continue exactUnit expansion andmatchingprint;refine U022 hiddenPCB thickness/seating/P1 physicalassignment andfrontmicrolegend when productionPCB/assemblyorreadableprintsource arrives. |
+| Unit | Unit Weight | modeled | 24 × 32 × 10.2 | Continue Unit expansion withmatchinglabels;refine ownU030 hiddenPCB/plug mechanical dimensions andprint registration when productionassembly ororiginal artwork becomes available. |
+| Unit | Unit SSR | modeled | 56 × 24 × 10.2 | Continue exact Unit expansion with corresponding artwork;refine concealed U122 PCB/terminal installation and D1 optical path only when authoritative assembly sources arrive. |
+| Unit | Unit PoE CAM-W v1.1 | modeled | 64 × 24 × 18 | Continue own Unit expansion with matching labels;refine inferred population/optical/installation data when exact production references become public. |
+| Unit | Unit NBIoT2 | modeled | 71.5 × 24 × 8 | Continue exact Unit expansion with corresponding artwork;refine own installed PCB/NanoSIM/SMA/D1 optical path and supplied antenna mechanics when authoritative sources arrive. |
+| Unit | Unit NBIoT-CN | modeled | 24 × 71.5 × 8 | ContinueUnitexpansion withmatchinglabels;refineexactU112populatedcarrier/SIMholder/antennamechanics andprintregistration whenproductionassembly/originalsourcesbecomeavailable. |
+| Unit | Unit Mini Proto | modeled | 24 × 32 × 8 | Continue exactUnit expansion withmatchinglabels.RefineU064 bore/PCBplating/seating andmicrolegends when production mechanical/print data isavailable. |

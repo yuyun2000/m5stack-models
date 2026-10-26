@@ -1,0 +1,2170 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-10-26T16:54:17.761Z",
+  "sku": "U030",
+  "scope": "Necessary bounded exact-own-CAD,actual connector/backing,mount and constructed bore FrontSide/directed material checks,four external screw-head angle/interpolation/override/roundtrip/noecho,fixedparts,5 artwork configurations,transformed four-core/peer/selective/whole-Unit detach/reattach andresource disposal. No browser,GPU,physical device ormanufacturing-fit acceptance.",
+  "nativeTriangles": 3216,
+  "frontNativeTriangles": 1532,
+  "rearNativeTriangles": 1684,
+  "sourceTopology": {
+    "sourceSha256": "258895767cd805c4860265ba219fece24399a3b7e3aa1e76eb8863c54ce98d48",
+    "matchedTriangles": 3216,
+    "unmatchedAssembledTriangles": 0,
+    "directedCyclicVertexCorrespondenceOnly": true,
+    "maxSourceVertexDeviationMm": 6.103515625e-05,
+    "partitions": {
+      "front": 1532,
+      "rear": 1684
+    },
+    "sourceInspection": {
+      "sourceFaceCount": 6432,
+      "weldPrecision": 0.0001,
+      "method": "Shared-vertex connected components; source coordinates, no geometry changes",
+      "sourceBox": {
+        "min": [
+          -618.4364013671875,
+          209.22348022460938,
+          -1.6689310200490581e-07
+        ],
+        "max": [
+          -517.268798828125,
+          241.22348022460938,
+          8
+        ]
+      },
+      "parts": [
+        {
+          "component": 0,
+          "triangles": 3216,
+          "min": [
+            -541.268798828125,
+            209.22348022460938,
+            -1.6689310200490581e-07
+          ],
+          "max": [
+            -517.268798828125,
+            241.22348022460938,
+            8
+          ],
+          "size": [
+            24,
+            32,
+            8.000000166893102
+          ]
+        },
+        {
+          "component": 1,
+          "triangles": 1684,
+          "min": [
+            -579.7094116210938,
+            209.22348022460938,
+            4.399999618530273
+          ],
+          "max": [
+            -555.7094116210938,
+            241.22348022460938,
+            8
+          ],
+          "size": [
+            24,
+            32,
+            3.6000003814697266
+          ]
+        },
+        {
+          "component": 2,
+          "triangles": 1532,
+          "min": [
+            -618.4364013671875,
+            209.22348022460938,
+            -1.6689310200490581e-07
+          ],
+          "max": [
+            -594.4364013671875,
+            241.22348022460938,
+            6
+          ],
+          "size": [
+            24,
+            32,
+            6.000000166893102
+          ]
+        }
+      ],
+      "duplicateCheck": {
+        "method": "Normalize X min per shared-vertex component, match triangle centroids and unordered vertices against assembled component within 0.0001 mm. No geometry changes.",
+        "parts": [
+          {
+            "part": 1,
+            "faces": 1684,
+            "triangleMatches": 1684,
+            "maxVertexDeviationMm": 6.103515625e-05,
+            "missed": []
+          },
+          {
+            "part": 2,
+            "faces": 1532,
+            "triangleMatches": 1532,
+            "maxVertexDeviationMm": 6.103515625e-05,
+            "missed": []
+          }
+        ],
+        "totalExplodedFaces": 3216,
+        "totalMatchedFaces": 3216
+      },
+      "topology": {
+        "method": "Read-only source triangle edge weld at 0.0001 mm; native shells are not repaired or remeshed.",
+        "parts": [
+          {
+            "part": 0,
+            "faceCount": 3216,
+            "edgeMultiplicities": {
+              "2": 4804,
+              "4": 10
+            },
+            "unbalancedEdges": 0,
+            "quantizedDegenerateFaces": 0,
+            "signedVolumeMm3": 2086.3655523996317
+          },
+          {
+            "part": 1,
+            "faceCount": 1684,
+            "edgeMultiplicities": {
+              "2": 2526
+            },
+            "unbalancedEdges": 0,
+            "quantizedDegenerateFaces": 0,
+            "signedVolumeMm3": 979.4144291840344
+          },
+          {
+            "part": 2,
+            "faceCount": 1532,
+            "edgeMultiplicities": {
+              "2": 2298
+            },
+            "unbalancedEdges": 0,
+            "quantizedDegenerateFaces": 0,
+            "signedVolumeMm3": 1106.9521708062205
+          }
+        ]
+      }
+    }
+  },
+  "nativeEnvelopeMm": [
+    24,
+    32,
+    8
+  ],
+  "defaultEnvelopeMm": [
+    24,
+    32.000000190734866,
+    10.199999998658896
+  ],
+  "plugEnvelopeMm": [
+    16.4,
+    18.200000095367432,
+    7.200000071525573
+  ],
+  "attachedEnvelopeMm": [
+    24,
+    42.80000009536744,
+    10.54999997615814
+  ],
+  "defaultPhysicalMeshes": 138,
+  "plugPhysicalMeshes": 50,
+  "uniqueDirectedGeometries": 188,
+  "directedChecks": [
+    {
+      "name": "Weight complete native front housing",
+      "edges": 2298,
+      "coordinateWeldMm": 0.0001,
+      "bad": 0,
+      "volumeMm3": 1106.9484755302285
+    },
+    {
+      "name": "Weight complete native rear housing",
+      "edges": 2526,
+      "coordinateWeldMm": 0.0001,
+      "bad": 0,
+      "volumeMm3": 979.417044508049
+    },
+    {
+      "name": "Weight inferred own U030 PCB with actual mount reliefs and fixing bore",
+      "edges": 2724,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 325.29567640927525
+    },
+    {
+      "name": "Weight U1 HX711 sole ADC physical SOIC16 package",
+      "edges": 2994,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 52.05122399238106
+    },
+    {
+      "name": "Weight HX711 actual gull-wing foot",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.04816000172376636
+    },
+    {
+      "name": "Weight HX711 actual gull-wing bend",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.03491599972474573
+    },
+    {
+      "name": "Weight HX711 package lead",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.033110001409351844
+    },
+    {
+      "name": "Weight HX711 actual gull-wing foot",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.04816000172376636
+    },
+    {
+      "name": "Weight HX711 actual gull-wing bend",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.03491599972474573
+    },
+    {
+      "name": "Weight HX711 package lead",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.033110001409351844
+    },
+    {
+      "name": "Weight HX711 actual gull-wing foot",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.04816000172376636
+    },
+    {
+      "name": "Weight HX711 actual gull-wing bend",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.03491599972474573
+    },
+    {
+      "name": "Weight HX711 package lead",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.033110001409351844
+    },
+    {
+      "name": "Weight HX711 actual gull-wing foot",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.04816000172376636
+    },
+    {
+      "name": "Weight HX711 actual gull-wing bend",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.03491599972474573
+    },
+    {
+      "name": "Weight HX711 package lead",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.033110001409351844
+    },
+    {
+      "name": "Weight HX711 actual gull-wing foot",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.04816000172376636
+    },
+    {
+      "name": "Weight HX711 actual gull-wing bend",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.03491599972474573
+    },
+    {
+      "name": "Weight HX711 package lead",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.033110001409351844
+    },
+    {
+      "name": "Weight HX711 actual gull-wing foot",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.04816000172376636
+    },
+    {
+      "name": "Weight HX711 actual gull-wing bend",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.03491599972474573
+    },
+    {
+      "name": "Weight HX711 package lead",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.033110001409351844
+    },
+    {
+      "name": "Weight HX711 actual gull-wing foot",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.04816000172376636
+    },
+    {
+      "name": "Weight HX711 actual gull-wing bend",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.03491599972474573
+    },
+    {
+      "name": "Weight HX711 package lead",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.033110001409351844
+    },
+    {
+      "name": "Weight HX711 actual gull-wing foot",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.04816000172376636
+    },
+    {
+      "name": "Weight HX711 actual gull-wing bend",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.03491599972474573
+    },
+    {
+      "name": "Weight HX711 package lead",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.033110001409351844
+    },
+    {
+      "name": "Weight HX711 actual gull-wing foot",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.04816000172376636
+    },
+    {
+      "name": "Weight HX711 actual gull-wing bend",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.03491599972474573
+    },
+    {
+      "name": "Weight HX711 package lead",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.033110001409351844
+    },
+    {
+      "name": "Weight HX711 actual gull-wing foot",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.04816000172376636
+    },
+    {
+      "name": "Weight HX711 actual gull-wing bend",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.03491599972474573
+    },
+    {
+      "name": "Weight HX711 package lead",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.033110001409351844
+    },
+    {
+      "name": "Weight HX711 actual gull-wing foot",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.04816000172376636
+    },
+    {
+      "name": "Weight HX711 actual gull-wing bend",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.03491599972474573
+    },
+    {
+      "name": "Weight HX711 package lead",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.033110001409351844
+    },
+    {
+      "name": "Weight HX711 actual gull-wing foot",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.04816000172376636
+    },
+    {
+      "name": "Weight HX711 actual gull-wing bend",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.03491599972474573
+    },
+    {
+      "name": "Weight HX711 package lead",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.033110001409351844
+    },
+    {
+      "name": "Weight HX711 actual gull-wing foot",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.04816000172376636
+    },
+    {
+      "name": "Weight HX711 actual gull-wing bend",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.03491599972474573
+    },
+    {
+      "name": "Weight HX711 package lead",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.033110001409351844
+    },
+    {
+      "name": "Weight HX711 actual gull-wing foot",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.04816000172376636
+    },
+    {
+      "name": "Weight HX711 actual gull-wing bend",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.03491599972474573
+    },
+    {
+      "name": "Weight HX711 package lead",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.033110001409351844
+    },
+    {
+      "name": "Weight HX711 actual gull-wing foot",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.04816000172376636
+    },
+    {
+      "name": "Weight HX711 actual gull-wing bend",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.03491599972474573
+    },
+    {
+      "name": "Weight HX711 package lead",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.033110001409351844
+    },
+    {
+      "name": "Weight HX711 actual gull-wing foot",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.04816000172376636
+    },
+    {
+      "name": "Weight HX711 actual gull-wing bend",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.03491599972474573
+    },
+    {
+      "name": "Weight HX711 package lead",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.033110001409351844
+    },
+    {
+      "name": "Weight Q1 SS8550 Y2 SOT23 regulator transistor",
+      "edges": 2994,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 3.1141117584281712
+    },
+    {
+      "name": "Weight SS8550 physical lead",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.047249999821186
+    },
+    {
+      "name": "Weight SS8550 physical lead",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.047249999821186
+    },
+    {
+      "name": "Weight SS8550 physical lead",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.047249999821186
+    },
+    {
+      "name": "Weight schematic R1 physical passive,position inferred",
+      "edges": 2994,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.6561513992708256
+    },
+    {
+      "name": "Weight R1 metal termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.12958399371576315
+    },
+    {
+      "name": "Weight R1 metal termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.12958399371576315
+    },
+    {
+      "name": "Weight schematic R2 physical passive,position inferred",
+      "edges": 2994,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.6561513992708256
+    },
+    {
+      "name": "Weight R2 metal termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.12958399371576315
+    },
+    {
+      "name": "Weight R2 metal termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.12958399371576315
+    },
+    {
+      "name": "Weight schematic R3 physical passive,position inferred",
+      "edges": 2994,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.6561513992708256
+    },
+    {
+      "name": "Weight R3 metal termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.12958399371576315
+    },
+    {
+      "name": "Weight R3 metal termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.12958399371576315
+    },
+    {
+      "name": "Weight schematic R4 physical passive,position inferred",
+      "edges": 2994,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.6561513992708256
+    },
+    {
+      "name": "Weight R4 metal termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.12958399371576315
+    },
+    {
+      "name": "Weight R4 metal termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.12958399371576315
+    },
+    {
+      "name": "Weight schematic R5 physical passive,position inferred",
+      "edges": 2994,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.6561513992708256
+    },
+    {
+      "name": "Weight R5 metal termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.12958399371576315
+    },
+    {
+      "name": "Weight R5 metal termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.12958399371576315
+    },
+    {
+      "name": "Weight schematic C1 physical passive,position inferred",
+      "edges": 2994,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.6561513992708256
+    },
+    {
+      "name": "Weight C1 metal termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.12958399371576315
+    },
+    {
+      "name": "Weight C1 metal termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.12958399371576315
+    },
+    {
+      "name": "Weight schematic C2 physical passive,position inferred",
+      "edges": 2994,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.6561513992708256
+    },
+    {
+      "name": "Weight C2 metal termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.12958399371576315
+    },
+    {
+      "name": "Weight C2 metal termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.12958399371576315
+    },
+    {
+      "name": "Weight schematic C3 physical passive,position inferred",
+      "edges": 2994,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.6561513992708256
+    },
+    {
+      "name": "Weight C3 metal termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.12958399371576315
+    },
+    {
+      "name": "Weight C3 metal termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.12958399371576315
+    },
+    {
+      "name": "Weight schematic C4 physical passive,position inferred",
+      "edges": 2994,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.6561513992708256
+    },
+    {
+      "name": "Weight C4 metal termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.12958399371576315
+    },
+    {
+      "name": "Weight C4 metal termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.12958399371576315
+    },
+    {
+      "name": "Weight schematic C5 physical passive,position inferred",
+      "edges": 2994,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.6561513992708256
+    },
+    {
+      "name": "Weight C5 metal termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.12958399371576315
+    },
+    {
+      "name": "Weight C5 metal termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.12958399371576315
+    },
+    {
+      "name": "Weight Grove real solder pad 1",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.03609999828711154
+    },
+    {
+      "name": "Weight Grove real solder pad 2",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.03609999828711154
+    },
+    {
+      "name": "Weight Grove real solder pad 3",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.03609999828711154
+    },
+    {
+      "name": "Weight Grove real solder pad 4",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.03609999828711154
+    },
+    {
+      "name": "Weight terminal real PCB solder pad",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.04409999500885623
+    },
+    {
+      "name": "Weight terminal real PCB solder pad",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.04409999500885623
+    },
+    {
+      "name": "Weight terminal real PCB solder pad",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.04409999500885623
+    },
+    {
+      "name": "Weight terminal real PCB solder pad",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.04409999500885623
+    },
+    {
+      "name": "Weight Grove full side wall",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 19.60399920654295
+    },
+    {
+      "name": "Weight Grove front retaining rail",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 4.147000074148172
+    },
+    {
+      "name": "Weight Grove locking shoulder",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.5880000033378596
+    },
+    {
+      "name": "Weight Grove full side wall",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 19.60399920654295
+    },
+    {
+      "name": "Weight Grove front retaining rail",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 4.147000074148172
+    },
+    {
+      "name": "Weight Grove locking shoulder",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.5880000033378596
+    },
+    {
+      "name": "Weight Grove actual socket floor",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 32.798999156475034
+    },
+    {
+      "name": "Weight Grove recessed dielectric rear",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 25.730249570727306
+    },
+    {
+      "name": "Weight Grove short real locking bridge",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 1.6199999141693129
+    },
+    {
+      "name": "Weight Grove recessed metal contact 1",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.740879920091632
+    },
+    {
+      "name": "Weight Grove actual board termination 1",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.45158396170806986
+    },
+    {
+      "name": "Weight Grove recessed metal contact 2",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.740879920091632
+    },
+    {
+      "name": "Weight Grove actual board termination 2",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.45158396170806986
+    },
+    {
+      "name": "Weight Grove recessed metal contact 3",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.740879920091632
+    },
+    {
+      "name": "Weight Grove actual board termination 3",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.45158396170806986
+    },
+    {
+      "name": "Weight Grove recessed metal contact 4",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.740879920091632
+    },
+    {
+      "name": "Weight Grove actual board termination 4",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.45158396170806986
+    },
+    {
+      "name": "Weight terminal real fixed floor",
+      "edges": 2994,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 85.11387787446758
+    },
+    {
+      "name": "Weight terminal fixed side wall",
+      "edges": 2994,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 42.10675547530074
+    },
+    {
+      "name": "Weight terminal fixed side wall",
+      "edges": 2994,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 42.10675547530074
+    },
+    {
+      "name": "Weight terminal recessed rear dielectric wall",
+      "edges": 2994,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 61.907055444947574
+    },
+    {
+      "name": "Weight fixed terminal actual roof with four through inspection windows",
+      "edges": 3018,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 90.7872955905433
+    },
+    {
+      "name": "Weight terminal low channel separator",
+      "edges": 2994,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 1.224587402124611
+    },
+    {
+      "name": "Weight terminal low channel separator",
+      "edges": 2994,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 1.224587402124611
+    },
+    {
+      "name": "Weight terminal low channel separator",
+      "edges": 2994,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 1.224587402124611
+    },
+    {
+      "name": "Weight terminal actual 3.96mm pitch male pin",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 3.4406396899414156
+    },
+    {
+      "name": "Weight terminal contact bent return",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.7167999679565434
+    },
+    {
+      "name": "Weight terminal actual board termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 1.0649599133300804
+    },
+    {
+      "name": "Weight terminal actual 3.96mm pitch male pin",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 3.4406396899414156
+    },
+    {
+      "name": "Weight terminal contact bent return",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.7167999679565434
+    },
+    {
+      "name": "Weight terminal actual board termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 1.0649599133300804
+    },
+    {
+      "name": "Weight terminal actual 3.96mm pitch male pin",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 3.4406396899414156
+    },
+    {
+      "name": "Weight terminal contact bent return",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.7167999679565434
+    },
+    {
+      "name": "Weight terminal actual board termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 1.0649599133300804
+    },
+    {
+      "name": "Weight terminal actual 3.96mm pitch male pin",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 3.4406396899414156
+    },
+    {
+      "name": "Weight terminal contact bent return",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.7167999679565434
+    },
+    {
+      "name": "Weight terminal actual board termination",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 1.0649599133300804
+    },
+    {
+      "name": "Weight fixed terminal real retention ear",
+      "edges": 2994,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.08299736409264395
+    },
+    {
+      "name": "Weight fixed terminal real retention ear",
+      "edges": 2994,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.08299736409264395
+    },
+    {
+      "name": "Weight real single rear hex-socket fixing screw",
+      "edges": 420,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 3.05725497732874
+    },
+    {
+      "name": "Weight fixing screw recessed hex floor",
+      "edges": 36,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.12013504977429293
+    },
+    {
+      "name": "Weight retained actual centre fixing shaft",
+      "edges": 192,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 11.165284598530377
+    },
+    {
+      "name": "Weight actual independent four-colour front terminal label silver film",
+      "edges": 594,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 4.0654708008530624
+    },
+    {
+      "name": "Weight actual independent rear silver WEIGHT adhesive film",
+      "edges": 594,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 7.457431354086945
+    },
+    {
+      "name": "Weight plug mating tongue with four true pin bores",
+      "edges": 3018,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 487.3384205446042
+    },
+    {
+      "name": "Weight plug rear shoulder with four true pin bores",
+      "edges": 3018,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 80.94123430786351
+    },
+    {
+      "name": "Weight plug actual channel floor",
+      "edges": 594,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 82.9686615169667
+    },
+    {
+      "name": "Weight plug actual four through screw-access deck",
+      "edges": 2922,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 83.7239109724443
+    },
+    {
+      "name": "Weight plug real separating wall",
+      "edges": 594,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 27.57469648986563
+    },
+    {
+      "name": "Weight plug real separating wall",
+      "edges": 594,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 23.158695867280954
+    },
+    {
+      "name": "Weight plug real separating wall",
+      "edges": 594,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 23.158695867280954
+    },
+    {
+      "name": "Weight plug real separating wall",
+      "edges": 594,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 23.158695867280954
+    },
+    {
+      "name": "Weight plug real separating wall",
+      "edges": 594,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 27.57469648986563
+    },
+    {
+      "name": "Weight plug front face with four true wire-entry bores",
+      "edges": 2922,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 61.51806653227016
+    },
+    {
+      "name": "Weight plug recessed actual mating spring",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.7425599468517309
+    },
+    {
+      "name": "Weight plug recessed actual mating spring",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.7425599468517309
+    },
+    {
+      "name": "Weight plug fixed clamp rear web",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 2.3375000348314643
+    },
+    {
+      "name": "Weight plug fixed lower clamp plate",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 4.152500166781247
+    },
+    {
+      "name": "Weight plug fixed clamp cage side",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 4.813125312849884
+    },
+    {
+      "name": "Weight plug fixed clamp cage side",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 4.813125312849884
+    },
+    {
+      "name": "Weight plug fixed pressure plate,no simulated clamping",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 3.5699999864399428
+    },
+    {
+      "name": "Weight plug retained fixed screw shank",
+      "edges": 192,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.8240615041195135
+    },
+    {
+      "name": "Weight plug actual recessed screw slot floor",
+      "edges": 288,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.41444674424741273
+    },
+    {
+      "name": "Weight plug real slotted screw head rim",
+      "edges": 1944,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.9799081771334808
+    },
+    {
+      "name": "Weight plug recessed actual mating spring",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.7425599468517309
+    },
+    {
+      "name": "Weight plug recessed actual mating spring",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.7425599468517309
+    },
+    {
+      "name": "Weight plug fixed clamp rear web",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 2.3375000348314643
+    },
+    {
+      "name": "Weight plug fixed lower clamp plate",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 4.152500166781247
+    },
+    {
+      "name": "Weight plug fixed clamp cage side",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 4.813125312849884
+    },
+    {
+      "name": "Weight plug fixed clamp cage side",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 4.813125312849884
+    },
+    {
+      "name": "Weight plug fixed pressure plate,no simulated clamping",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 3.5699999864399428
+    },
+    {
+      "name": "Weight plug retained fixed screw shank",
+      "edges": 192,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.8240615041195135
+    },
+    {
+      "name": "Weight plug actual recessed screw slot floor",
+      "edges": 288,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.41444674424741273
+    },
+    {
+      "name": "Weight plug real slotted screw head rim",
+      "edges": 1944,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.9799081771334808
+    },
+    {
+      "name": "Weight plug recessed actual mating spring",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.7425599468517309
+    },
+    {
+      "name": "Weight plug recessed actual mating spring",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.7425599468517309
+    },
+    {
+      "name": "Weight plug fixed clamp rear web",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 2.3375000348314643
+    },
+    {
+      "name": "Weight plug fixed lower clamp plate",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 4.152500166781247
+    },
+    {
+      "name": "Weight plug fixed clamp cage side",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 4.813125312849884
+    },
+    {
+      "name": "Weight plug fixed clamp cage side",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 4.813125312849884
+    },
+    {
+      "name": "Weight plug fixed pressure plate,no simulated clamping",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 3.5699999864399428
+    },
+    {
+      "name": "Weight plug retained fixed screw shank",
+      "edges": 192,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.8240615041195135
+    },
+    {
+      "name": "Weight plug actual recessed screw slot floor",
+      "edges": 288,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.41444674424741273
+    },
+    {
+      "name": "Weight plug real slotted screw head rim",
+      "edges": 1944,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.9799081771334808
+    },
+    {
+      "name": "Weight plug recessed actual mating spring",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.7425599468517309
+    },
+    {
+      "name": "Weight plug recessed actual mating spring",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.7425599468517309
+    },
+    {
+      "name": "Weight plug fixed clamp rear web",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 2.3375000348314643
+    },
+    {
+      "name": "Weight plug fixed lower clamp plate",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 4.152500166781247
+    },
+    {
+      "name": "Weight plug fixed clamp cage side",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 4.813125312849884
+    },
+    {
+      "name": "Weight plug fixed clamp cage side",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 4.813125312849884
+    },
+    {
+      "name": "Weight plug fixed pressure plate,no simulated clamping",
+      "edges": 18,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 3.5699999864399428
+    },
+    {
+      "name": "Weight plug retained fixed screw shank",
+      "edges": 192,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.8240615041195135
+    },
+    {
+      "name": "Weight plug actual recessed screw slot floor",
+      "edges": 288,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.41444674424741273
+    },
+    {
+      "name": "Weight plug real slotted screw head rim",
+      "edges": 1944,
+      "coordinateWeldMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.9799081771334808
+    }
+  ],
+  "mountAxes": 10,
+  "mountWalls": 40,
+  "mountProfiles": [
+    {
+      "origin": [
+        -8,
+        -4,
+        -3
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 2.5
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        -3
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 2.5
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        -3
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 2.4376439897393363
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        -3
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 2.4376521527559856
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        -1.5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 2.5
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        -1.5
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 2.5
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        -1.5
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 2.438065869659758
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        -1.5
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 2.438079785367388
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        0
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 3.229064945565672
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        0
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 3.2290039104215484
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 3.2290254947137362
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        0
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 3.2290134009488156
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        1.5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 2.469803658628912
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        1.5
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 2.4381527608397917
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        1.5
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 2.5
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        1.5
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 2.5
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        3
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 2.4396073124582456
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        3
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 2.4376314763025047
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        3
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 2.5
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        3
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 2.5
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        -3
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 2.499998272086895
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        -3
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 2.499998272086895
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        -3
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 2.4376369577796106
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        -3
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 2.4376521527559856
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        -1.5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 2.499998272086895
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        -1.5
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 2.499998272086895
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        -1.5
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 2.438064462765638
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        -1.5
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 2.438079785367388
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        0
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 3.2290649455656713
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        0
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 3.2290039104215484
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 3.228998143960086
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        0
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 3.2289981421621547
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        1.5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 2.469818493243178
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        1.5
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 2.4381527608397917
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        1.5
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 2.5
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        1.5
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 2.5000152587890625
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        3
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 2.4396369816891337
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        3
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 2.4376314763025047
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        3
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 2.5
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        3
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 2.5000152587890625
+    }
+  ],
+  "fixingPCBWallRays": 4,
+  "fixedWindowAxes": 4,
+  "fixedWindowWalls": 16,
+  "closureRays": 40,
+  "plugAxisRays": 16,
+  "plugWallRays": 64,
+  "positiveMaterial": {
+    "tongueOuterSideMm": 0.4349999999999996,
+    "tongueLowerMm": 0.7749999999999999,
+    "pinBoreInterwebMm": 2.71,
+    "deckOuterSideMm": 0.9349999999999989,
+    "deckInterwebMm": 1.31,
+    "wireOuterSideMm": 0.7099999999999989,
+    "wireLowerMm": 0.5999999999999999,
+    "wireInterwebMm": 0.8599999999999999,
+    "screwSlitRimMm": 0.17500000000000004,
+    "pinAxisGapMm": 0.305,
+    "springPinGapMm": 0.11499999999999999,
+    "springBoreGapMm": 0.06,
+    "fixedSideGapMm": 0.20000000000000018,
+    "tongueRoofGapMm": 0.4500000000000002,
+    "tongueFloorGapMm": 0.5500000000000002,
+    "lowRibGapMm": 0.15000000000000013,
+    "PCBMountBossGapMm": 0.23999999999999977,
+    "PCBFixingBossGapMm": 0.27,
+    "PCBBridgeMm": 1.2000000000000002,
+    "PCBRearGapMm": 0.7999999999999998,
+    "PCBRearLocatingPostGapMm": 0.1299999999999999,
+    "perforatedBevelMm": 0
+  },
+  "pcbClearance": {
+    "status": "pass",
+    "candidatePairs": 2,
+    "surfaceProbes": 3914,
+    "interiorGridProbes": 54,
+    "directions": 3,
+    "scope": "Bidirectional vertex/triangle-centre samples and finite-volume overlap grids against actual fixed geometry plus added metal/plastic; no manufacturing fit or exhaustive CSG proof"
+  },
+  "clearance": {
+    "status": "pass",
+    "candidatePairs": 41,
+    "surfaceProbes": 7332,
+    "interiorGridProbes": 1107,
+    "directions": 3,
+    "scope": "Bidirectional vertex/triangle-centre samples and finite-volume overlap grids against actual fixed geometry plus added metal/plastic; no manufacturing fit or exhaustive CSG proof"
+  },
+  "screwPoses": 20,
+  "headInterpolationAndOverride": true,
+  "headNoInputEcho": true,
+  "fixedPartInvariance": true,
+  "physicalGeometryInvariant": true,
+  "artworkConfigurations": 5,
+  "transformedParentFourCore": true,
+  "independentPeer": true,
+  "selectiveAccessoryDetach": true,
+  "wholeUnitRoundtrip": true,
+  "disposedResources": 629,
+  "publicAPI": {
+    "exports": [
+      "Model",
+      "GroveModule",
+      "TerminalPlug",
+      "spec"
+    ],
+    "bodyComponentOrder": [
+      "grove",
+      "terminal"
+    ],
+    "ports": [
+      "grove",
+      "terminal"
+    ],
+    "canonicalCableInput": "grove",
+    "controls": [],
+    "leds": [],
+    "anchors": [],
+    "displays": [],
+    "sensors": [],
+    "bodyJoints": [],
+    "accessories": {
+      "terminal": {
+        "export": "TerminalPlug",
+        "connector": "ht3.96-4p",
+        "componentOrder": [
+          "screw-1",
+          "screw-2",
+          "screw-3",
+          "screw-4"
+        ],
+        "joints": [
+          "screw-1",
+          "screw-2",
+          "screw-3",
+          "screw-4"
+        ],
+        "externalHeadAngleOnly": true
+      }
+    },
+    "defaults": {
+      "terminalPlug": false
+    },
+    "configurations": [
+      {
+        "id": "unit",
+        "name": "Unit with open receiving terminal",
+        "options": {
+          "terminalPlug": false
+        }
+      },
+      {
+        "id": "terminal-plug",
+        "name": "Supplied four-screw terminal installed",
+        "options": {
+          "terminalPlug": true
+        }
+      }
+    ],
+    "configurationSchema": {
+      "terminalPlug": {
+        "type": "boolean",
+        "default": false,
+        "scope": "Include only the real supplied detachable terminal,not a load cell orscale platform."
+      }
+    },
+    "moduleExport": "GroveModule",
+    "groveModuleExtraComponents": [
+      "unitFrame",
+      "cable"
+    ],
+    "assemblyProperty": "weightAssembly",
+    "noElectricalBehavior": true,
+    "joints": [],
+    "attachedJointPaths": [
+      "terminal/screw-1",
+      "terminal/screw-2",
+      "terminal/screw-3",
+      "terminal/screw-4"
+    ],
+    "groveAttachedJointPaths": [
+      "unit/terminal/screw-1",
+      "unit/terminal/screw-2",
+      "unit/terminal/screw-3",
+      "unit/terminal/screw-4"
+    ]
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "panels": 2,
+    "physicalFilmIndependent": true,
+    "originalsDistributed": false
+  },
+  "sourceLimitations": "Hidden PCB outline/installed plane/thickness and component placement,connector inner walls,metal contacts/termination,plug dimensions/clamp details,adhesive film thickness,redraw font/letter registration. No manufacturing-fit,thread pitch,clamp travel/force,electrical,protocol,firmware,calibration or sensor values."
+}

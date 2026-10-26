@@ -1,0 +1,75 @@
+{
+  "id": "glass2",
+  "sku": "U158-B",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Readable exact U158-B fixed front cover GLASS2/power-block diagram/actual pin andaddress marks,and rear PCB M5STACK/GLASS2/PortA/arrows/corner silkscreen redrawn in code to ordinary high-resolution RGBA PNGs.No photograph pixels,crops,borrowed oldGlass artwork or invented screen content.",
+  "sources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Glass2 Unit/img-66b4380b-f0dd-4f5f-a8d3-87952228597c.webp",
+      "sha256": "5529340b24aeae57c3322f79e89cc8d9dd398a68d704a383766f62bb5d14b53b"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Glass2 Unit/img-b54af17c-414a-41d1-92ea-cbf59d9f9955.webp",
+      "sha256": "b02f2bbf0b009ac33425d59e552f28b102fb95745a21febe0db22d34a1e94a97"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Glass2 Unit/img-8ed5b80e-0ebe-4fd1-988a-749ecb959759.webp",
+      "sha256": "1a9ffe1efdbe85cdc2ed5a7da99f86bd8cf3e45921d2d37d03d1ccf34f6c0bb5"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/glass2/reference-redraw-front.png",
+      "sha256": "06433687000369c421f564342cd59591fea7fbe6f0258a44bb679c001d835e79",
+      "pixels": [
+        4200,
+        1400
+      ],
+      "sizeMm": [
+        42,
+        14
+      ],
+      "positionMm": [
+        0,
+        -9,
+        3.175
+      ],
+      "face": "front",
+      "kind": "reference-redraw",
+      "method": "printedArtwork projected only onto existing physical film/PCB triangles;actual holes and window remain open"
+    },
+    {
+      "path": "src/units/glass2/reference-redraw-back.png",
+      "sha256": "e955f7ab7f75eb315d5e8689f79a9df3d58c408ce37dabb621c258aee62925f9",
+      "pixels": [
+        4200,
+        4700
+      ],
+      "sizeMm": [
+        42,
+        47
+      ],
+      "positionMm": [
+        0,
+        0,
+        -3.175
+      ],
+      "face": "back",
+      "kind": "reference-redraw",
+      "method": "printedArtwork projected only onto existing physical film/PCB triangles;actual holes and window remain open"
+    }
+  ],
+  "limitations": [
+    "Front ink belongs to a physical fixed label film on a real removable-for-service cover;this service disassembly is not exposed as a normal-use hinge or animation.",
+    "Rear artwork is transparent-background silkscreen projected onto the actual PCB;it does not create a false opaque sheet across the display window.",
+    "No artwork or fake image fills the transparent screen;the glass remains a real1.25mm translucent body and pixels are externally supplied emission.",
+    "Typeface,diagram routing,colors and registration are reference-derived;unreadable tiny panel/FPC codes are omitted.",
+    "artwork:false removes only front/rear ink;every physical attribute,index and world transform,including glass,FPC,cover,posts and both Grove sockets,stays identical.",
+    "Private table,links,mappings,vectors,official photos/PDFs,generators and conversion/intermediate files are excluded from Git."
+  ],
+  "rights": "Original product names,printed designs and trademarks retain their respective rights."
+}

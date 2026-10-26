@@ -1,0 +1,56 @@
+{
+  "sku": "U122",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/07d8765bd52f32cc2705fc542ea608169a6c3c8c/Products/U122_Unit_SSR/Structures/Unit_SSR.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/48c31aab5f9d02b4e3f9a3cc133af8908c2291cf",
+  "commit": "07d8765bd52f32cc2705fc542ea608169a6c3c8c",
+  "gitBlob": "48c31aab5f9d02b4e3f9a3cc133af8908c2291cf",
+  "sha256": "e2c7f06ff031e701e52d872a4305a9f3ce0bced27f3231ca58eafd3e5209f976",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/07d8765bd52f32cc2705fc542ea608169a6c3c8c/LICENSE",
+  "origin": [
+    0,
+    28,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 0,
+      "name": "SSR exact own native rear casing half",
+      "assemblySubset": "rear",
+      "material": "shell",
+      "triangles": 3032
+    },
+    {
+      "component": 2,
+      "name": "SSR exact own native front casing half",
+      "assemblySubset": "front",
+      "material": "shell",
+      "triangles": 2598
+    }
+  ],
+  "excludedComponents": [
+    1,
+    3
+  ],
+  "originalAssemblyTriangles": 5630,
+  "localModification": null,
+  "notes": "Exact U122 own Structures path with pinned commit/validated Git blob.Component0rear3032+component2front2598 form original same-location assembled casing.Components1/3 are displaced duplicate halves.Original vertices/faces retained at scale1,identity axes and one common translation;no native repairs,cutting,patching,face removal or independent moves.Native24×56×8mm casing is not stretched to10.2mm connector-inclusive depth."
+}

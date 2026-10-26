@@ -1,0 +1,255 @@
+{
+  "checkedAt": "2026-10-26T13:56:04.991Z",
+  "status": "pass",
+  "scope": "Necessary local own U104 shell with documented six real side-slot amendment;source13396/output19742 triangles,unchanged envelope,no open/directed edges,native shared seams separately tracked,true PCB bores/reliefs,hollow tapered SCD41/notched physical membrane/20perimeter+4central ground lands,real LLP-4 LDO,11small components,deep four-contact Grove,retaining screw/rear film/front ink,both entry artwork all attributes/index/world invariance,nested four-core pose/independent detach/disposal.No exhaustive browser,production fit,gasflow,CO2/RH/T,calibration,electrical,firmware or hardware validation.",
+  "meshes": 97,
+  "triangles": 31028,
+  "sourceAssemblyTriangles": 13396,
+  "outputShellTriangles": 19742,
+  "nominalMm": [
+    48,
+    24,
+    16
+  ],
+  "dimensionDrawingMm": [
+    24,
+    48,
+    16
+  ],
+  "cadEnvelopeMm": [
+    24,
+    48,
+    16
+  ],
+  "visualEnvelopeMm": [
+    24,
+    48,
+    16
+  ],
+  "shellTopology": {
+    "edges": 29593,
+    "unpairedOrDirectedEdges": 0,
+    "sharedNativeSeamEdges": 20,
+    "signedVolumeMm3": 4085.187069625102
+  },
+  "pcbTopology": {
+    "edges": 3492,
+    "unpairedOrDirectedEdges": 0,
+    "sharedNativeSeamEdges": 0,
+    "signedVolumeMm3": 566.530229902552
+  },
+  "canTopology": {
+    "edges": 3888,
+    "unpairedOrDirectedEdges": 0,
+    "sharedNativeSeamEdges": 0,
+    "signedVolumeMm3": 240.70061492210993
+  },
+  "mountingAxialRays": 10,
+  "mountingWallRays": 16,
+  "pcbWallRays": 20,
+  "sideSlotAxialRays": 27,
+  "sideSlotWallRays": 24,
+  "sideWallThicknessMm": [
+    1.2007682914319986,
+    1.2007402489953485,
+    1.2010933057335915,
+    1.2007335668230272,
+    1.200885905627759,
+    1.2007360458374023
+  ],
+  "materialWebsMm": {
+    "betweenSlotRows": 1.8,
+    "betweenShortSlots": 4.3
+  },
+  "sensorPackageMm": [
+    10.100000381469727,
+    10.100000381469727,
+    6.29999999576807
+  ],
+  "regulatorPackageMm": [
+    1.2000000476837158,
+    1.600000023841858,
+    0.5500000059604644
+  ],
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        8,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 18,
+      "purpose": "Real native front grille shows physical SCD41 white membrane,not sky"
+    },
+    {
+      "origin": [
+        0,
+        7.2,
+        -20
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 13,
+      "purpose": "Physical rear adhesive film directly backed by native closed recess"
+    },
+    {
+      "origin": [
+        0,
+        -30,
+        -2.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 14,
+      "purpose": "Grove open mouth has recessed dielectric rear carrier"
+    },
+    {
+      "origin": [
+        -3,
+        -30,
+        -2.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 9,
+      "purpose": "Physical Grove contact1"
+    },
+    {
+      "origin": [
+        -1,
+        -30,
+        -2.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 9,
+      "purpose": "Physical Grove contact2"
+    },
+    {
+      "origin": [
+        1,
+        -30,
+        -2.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 9,
+      "purpose": "Physical Grove contact3"
+    },
+    {
+      "origin": [
+        3,
+        -30,
+        -2.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 9,
+      "purpose": "Physical Grove contact4"
+    },
+    {
+      "origin": [
+        0,
+        -12,
+        -20
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 13,
+      "purpose": "Native retaining recess has a real fixed screw"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Real native front grille shows physical SCD41 white membrane,not sky",
+      "hit": "CO2L SCD41 physical notched white protection membrane",
+      "distanceMm": 17.500000001788138
+    },
+    {
+      "purpose": "Physical rear adhesive film directly backed by native closed recess",
+      "hit": "CO2L physical rear adhesive film seated on native recessed back",
+      "distanceMm": 12.16
+    },
+    {
+      "purpose": "Grove open mouth has recessed dielectric rear carrier",
+      "hit": "CO2L Grove deep dielectric rear wall",
+      "distanceMm": 11.800000011920929
+    },
+    {
+      "purpose": "Physical Grove contact1",
+      "hit": "CO2L Grove real contact 1",
+      "distanceMm": 7.69999990463257
+    },
+    {
+      "purpose": "Physical Grove contact2",
+      "hit": "CO2L Grove real contact 2",
+      "distanceMm": 7.69999990463257
+    },
+    {
+      "purpose": "Physical Grove contact3",
+      "hit": "CO2L Grove real contact 3",
+      "distanceMm": 7.69999990463257
+    },
+    {
+      "purpose": "Physical Grove contact4",
+      "hit": "CO2L Grove real contact 4",
+      "distanceMm": 7.69999990463257
+    },
+    {
+      "purpose": "Native retaining recess has a real fixed screw",
+      "hit": "CO2L recessed screw drive",
+      "distanceMm": 12.14
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove"
+    ],
+    "anchors": [
+      "sensor"
+    ],
+    "controls": [],
+    "leds": [],
+    "joints": [],
+    "scope": "Passive fixed SCD41 package anchor only;no sensor values or internal commands"
+  },
+  "artwork": {
+    "panels": 2,
+    "kind": "reference-redraw",
+    "front": "Transparent readable gray ink on native shell;no physical front label invented",
+    "back": "Printed on physical rear adhesive film",
+    "configurationChecks": 2,
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "noEcho": "pass",
+  "disposedResources": 142,
+  "feedbackId": "39fe0d8f32f54e4ca6b6434fc792efa8"
+}

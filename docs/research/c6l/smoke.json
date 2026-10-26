@@ -1,0 +1,401 @@
+{
+  "checkedAt": "2026-10-26T14:44:39.842Z",
+  "status": "pass",
+  "scope": "Necessary own U202 construction/API only; no exhaustive browser,production fit,real antenna hinge/limits,RF,USB,buzzer/audio,firmware,electrical or hardware validation.",
+  "meshes": 144,
+  "triangles": 48600,
+  "sourceAssemblyTriangles": 6698,
+  "sourceShellTriangles": 6442,
+  "sourceGuideTriangles": 256,
+  "cadEnvelopeMm": [
+    23.986031532287598,
+    55.98603057861328,
+    8
+  ],
+  "bareEnvelope": {
+    "min": [
+      -11.993016242980957,
+      -27.99301528930664,
+      -4
+    ],
+    "max": [
+      11.99301528930664,
+      34.000000005960466,
+      4.00000009536743
+    ],
+    "size": [
+      23.986031532287598,
+      61.99301529526711,
+      8.00000009536743
+    ]
+  },
+  "antennaEnvelope": {
+    "min": [
+      -11.993016242980957,
+      -27.99301528930664,
+      -5.144999997615814
+    ],
+    "max": [
+      11.99301528930664,
+      136.00000004768373,
+      4.00000009536743
+    ],
+    "size": [
+      23.986031532287598,
+      163.99301533699037,
+      9.145000092983246
+    ]
+  },
+  "nominalMm": [
+    62,
+    24,
+    8
+  ],
+  "dimensionDrawingMm": [
+    24,
+    62,
+    8
+  ],
+  "pcbTopology": {
+    "edges": 4722,
+    "unpairedOrDirectedEdges": 0,
+    "signedVolumeMm3": 750.5786850347685
+  },
+  "usbTopology": {
+    "edges": 4632,
+    "unpairedOrDirectedEdges": 0,
+    "signedVolumeMm3": 33.948621974019595
+  },
+  "buzzerFaceTopology": {
+    "edges": 1152,
+    "unpairedOrDirectedEdges": 0,
+    "signedVolumeMm3": 11.633254464515746
+  },
+  "retainingTopologies": [
+    {
+      "edges": 612,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 2.181362787555294
+    },
+    {
+      "edges": 612,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 2.181362787555294
+    }
+  ],
+  "socketTopologies": [
+    {
+      "edges": 1152,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 77.48324395740708
+    },
+    {
+      "edges": 1152,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 30.92809284621954
+    },
+    {
+      "edges": 612,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 66.26390405444913
+    },
+    {
+      "edges": 1152,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 77.48324395740708
+    },
+    {
+      "edges": 1152,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 30.92809284621954
+    },
+    {
+      "edges": 612,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 66.26390405444913
+    }
+  ],
+  "mountingAxialRays": 10,
+  "mountingWallRays": 16,
+  "pcbBoreWallRays": 24,
+  "nativeButtonVertices": {
+    "user": 176,
+    "reset": 50
+  },
+  "buttonMultiSourceReleaseCancel": "pass; neutral coordinates/normals exact,unselected native/fixed parts unchanged",
+  "leds": "independent materials,off defaults,no control association",
+  "screen": "64×48external framebuffer;sourceRGB preserved,luminance shader,real volume/backing",
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        5.75,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 17,
+      "purpose": "External64×48 framebuffer and solid glass close real OLED aperture"
+    },
+    {
+      "origin": [
+        0,
+        -6.9,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 17,
+      "purpose": "Fixed RGB diffuser and actual2020 package back native user-key slot"
+    },
+    {
+      "origin": [
+        8.2,
+        -25.8,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 17,
+      "purpose": "Original256-triangle status light guide closes its native opening"
+    },
+    {
+      "origin": [
+        0,
+        10,
+        -20
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 17,
+      "purpose": "Physical rear film backed by real acoustic carrier independently of print"
+    },
+    {
+      "origin": [
+        0,
+        -32,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Open Grove has deep molded rear wall"
+    },
+    {
+      "origin": [
+        -3,
+        -32,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 8,
+      "purpose": "Grove actual metal contact 1"
+    },
+    {
+      "origin": [
+        -1,
+        -32,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 8,
+      "purpose": "Grove actual metal contact 2"
+    },
+    {
+      "origin": [
+        1,
+        -32,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 8,
+      "purpose": "Grove actual metal contact 3"
+    },
+    {
+      "origin": [
+        3,
+        -32,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 8,
+      "purpose": "Grove actual metal contact 4"
+    },
+    {
+      "origin": [
+        16,
+        -8.2,
+        0.35
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "maxDistance": 6,
+      "purpose": "USB-C actual retained tongue behind true metal cavity"
+    },
+    {
+      "origin": [
+        0,
+        -16,
+        -20
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 17,
+      "purpose": "Native rear retaining recess contains fixed screw"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "External64×48 framebuffer and solid glass close real OLED aperture",
+      "hit": "display-panel",
+      "distanceMm": 16.595
+    },
+    {
+      "purpose": "Fixed RGB diffuser and actual2020 package back native user-key slot",
+      "hit": "C6L fixed opal RGB diffuser behind real native slot",
+      "distanceMm": 16.680000002384187
+    },
+    {
+      "purpose": "Original256-triangle status light guide closes its native opening",
+      "hit": "C6L native status light guide",
+      "distanceMm": 16.049999952316284
+    },
+    {
+      "purpose": "Physical rear film backed by real acoustic carrier independently of print",
+      "hit": "C6L physical rear adhesive film backed by native shell and acoustic carrier",
+      "distanceMm": 16.15
+    },
+    {
+      "purpose": "Open Grove has deep molded rear wall",
+      "hit": "C6L Grove deep rear wall",
+      "distanceMm": 10.150000011920927
+    },
+    {
+      "purpose": "Grove actual metal contact 1",
+      "hit": "C6L Grove contact 1",
+      "distanceMm": 5.55000009536743
+    },
+    {
+      "purpose": "Grove actual metal contact 2",
+      "hit": "C6L Grove contact 2",
+      "distanceMm": 5.55000009536743
+    },
+    {
+      "purpose": "Grove actual metal contact 3",
+      "hit": "C6L Grove contact 3",
+      "distanceMm": 5.55000009536743
+    },
+    {
+      "purpose": "Grove actual metal contact 4",
+      "hit": "C6L Grove contact 4",
+      "distanceMm": 5.55000009536743
+    },
+    {
+      "purpose": "USB-C actual retained tongue behind true metal cavity",
+      "hit": "C6L USB-C retained insulating tongue",
+      "distanceMm": 5.049999976158141
+    },
+    {
+      "purpose": "Native rear retaining recess contains fixed screw",
+      "hit": "C6L retaining screw deep blind hex floor",
+      "distanceMm": 16.40999999985099
+    }
+  ],
+  "publicAPI": {
+    "exports": [
+      "Model",
+      "GroveModule",
+      "LoraAntenna",
+      "WifiAntenna",
+      "spec"
+    ],
+    "ports": [
+      "grove",
+      "usb",
+      "lora-antenna",
+      "wifi-antenna"
+    ],
+    "controls": [
+      "user",
+      "reset"
+    ],
+    "leds": [
+      "rgb",
+      "status"
+    ],
+    "displays": [
+      "screen"
+    ],
+    "anchors": [],
+    "joints": [],
+    "options": {
+      "antennas": "boolean,false default",
+      "artwork": "false disables print only"
+    }
+  },
+  "artwork": {
+    "pngCount": 4,
+    "kind": "source-vector-raster-and-reference-redraw",
+    "bodyPanels": 2,
+    "antennaBands": 2,
+    "configurationChecks": 6,
+    "physicalGeometryInvariant": true,
+    "frontFilmOutsideButton": true
+  },
+  "antennaChecks": [
+    {
+      "type": "LoraAntenna",
+      "lengthMm": 108.00000004768371,
+      "centre": "socket",
+      "thread": "internal",
+      "joints": 0
+    },
+    {
+      "type": "WifiAntenna",
+      "lengthMm": 84.00000004768371,
+      "centre": "socket",
+      "thread": "internal",
+      "joints": 0
+    }
+  ],
+  "nestedGroveAttachPoseDetach": "pass",
+  "noEcho": "pass",
+  "disposedResources": 361
+}

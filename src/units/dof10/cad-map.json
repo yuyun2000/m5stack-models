@@ -1,0 +1,61 @@
+{
+  "sku": "U230",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U230_Unit_DoF10/Structures/Unit_DoF10.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/cbb28004b34a94fbabaebe05148fa4e74c7cb65d",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "path": "Products/U230_Unit_DoF10/Structures/Unit_DoF10.stl",
+  "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U230_Unit_DoF10/Structures/Unit_DoF10.stl",
+  "sha256": "eb0ac3380c22da14add40ea3cec458f6b2827bb3edd8a25b9a1999b0c4f6d1dd",
+  "gitBlob": "cbb28004b34a94fbabaebe05148fa4e74c7cb65d",
+  "bytes": 418884,
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/LICENSE",
+  "origin": [
+    122.52239990234375,
+    12,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 0,
+      "name": "DoF10 complete native assembled front and rear housing",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 4188,
+  "localModification": null,
+  "notes": "Exact ownU230 immutable path and source bytes verified.Native0 is the complete4188-triangle24×24×8mm front/rear housing assembly;native1/2 are separately laid-out rear/front duplicates.All original faces and indices retained atscale1 under one common translation,without fills,patches,removed faces or independent reposition.SW1 top slot is an actual open source contour and remains open;separate fixed switch body/moving cream actuator,three exact sensor packages,PCB,Grove,retaining screw and independent films are own-reference reconstruction.Hidden installation and switch travel inferred;no sensor/address/electrical/physics behavior. Original combined front/rear mating coincidence is retained:raw source12 versus runtime14 four-face/balance0 edges at0.0001mm quantization;all other edges are two-face/balance0.Independent original rear/front shells are strictly closed with positive volume;do not describe the combined assembly as a single manifold.",
+  "lastChangedCommit": "681b2cbd645bb27a3ff23f877c17b5804cf45444",
+  "assemblyTopology": {
+    "sourceCoordinateQuantizationMm": 0.0001,
+    "sourceFourFaceMatingEdges": 12,
+    "runtimeCoordinateQuantizationMm": 0.0001,
+    "runtimeFourFaceMatingEdges": 14,
+    "directedImbalances": 0,
+    "openBoundaries": 0,
+    "separateSourceShellsClosed": true,
+    "note": "Native assembled front/rear coincident mating edges at Z=-1.2 are preserved. Raw-source and runtime Float32/merge quantization yield different coincidence counts. Independent original rear/front duplicate shells each have strictly two-face directed closed edges and positive volume. All4188 source assembly triangles correspond to these original closed shells;no repair or source geometry change. Combined assembly is not claimed to be a single manifold."
+  }
+}

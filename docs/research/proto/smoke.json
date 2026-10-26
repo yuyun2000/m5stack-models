@@ -1,0 +1,984 @@
+{
+  "checkedAt": "2026-10-26T16:13:48.029Z",
+  "status": "pass",
+  "scope": "Necessary exact U022 complete source0/front-rear correspondence,77physical throughbores/metal barrels/two annuli andpositive substrate/actual Grove/seatedfeet,closed rear backing,service-only rear cover/label/single screw removal,4 print configurations,transformed4core/peer anddispose only.No browser,GPU,usercircuit,voltage/current/protocol/electrical/firmware orproduction-fit acceptance.",
+  "nativeTriangles": 3498,
+  "frontNativeTriangles": 1626,
+  "rearNativeTriangles": 1872,
+  "sourceTopology": {
+    "sourceSha256": "f816bc934dff072ca4a986cad7766fcf1e536642273837f310992f4faf5e5011",
+    "coordinateWeldMm": 0.0001,
+    "triangleCorrespondenceToleranceMm": 0.0001,
+    "assembledComponent": 0,
+    "assembled": {
+      "triangles": 3498,
+      "edges": 5222,
+      "openOrDirectedBad": 0,
+      "twoFaceEdges": 5197,
+      "fourFaceCoincidentMatingEdges": 25,
+      "otherMultiplicity": 0,
+      "volumeMm3": 2736.1262969752725
+    },
+    "laidOutClosedShells": [
+      {
+        "component": 1,
+        "role": "rear",
+        "triangles": 1872,
+        "edges": 2808,
+        "openOrDirectedBad": 0,
+        "twoFaceEdges": 2808,
+        "fourFaceCoincidentMatingEdges": 0,
+        "otherMultiplicity": 0,
+        "volumeMm3": 1423.8471751754696
+      },
+      {
+        "component": 2,
+        "role": "front",
+        "triangles": 1626,
+        "edges": 2439,
+        "openOrDirectedBad": 0,
+        "twoFaceEdges": 2439,
+        "fourFaceCoincidentMatingEdges": 0,
+        "otherMultiplicity": 0,
+        "volumeMm3": 1312.2796057915602
+      }
+    ],
+    "matchedTriangles": 3498,
+    "unmatchedAssembledTriangles": 0,
+    "maxVertexDistanceMm": 0.000003933906555175781,
+    "directedCyclicVertexCorrespondenceOnly": true,
+    "partitions": {
+      "rear": 1872,
+      "front": 1626
+    },
+    "note": "All3498 original assembled source0 triangles correspond to the source own laid-out closed rear/front components1/2.The assembled shell preserves coincident front/rear mating edges at their original mating planes;the runtime quantization count is recorded separately in smoke;no open boundary or directed edge imbalance.No source geometry repaired,patched,removed,flattened or repositioned in runtime."
+  },
+  "nativeEnvelopeMm": [
+    24,
+    48,
+    7.999999761581421
+  ],
+  "visualEnvelopeMm": [
+    24,
+    48.00000004768371,
+    8.000000047683717
+  ],
+  "physicalMeshCount": 259,
+  "uniqueDirectedGeometries": 30,
+  "directedChecks": [
+    {
+      "name": "Proto complete native front window frame",
+      "edges": 2439,
+      "coordinateQuantizationMm": 0.0001,
+      "bad": 0,
+      "volumeMm3": 1312.2795788834273
+    },
+    {
+      "name": "Proto complete native rear housing",
+      "edges": 2808,
+      "coordinateQuantizationMm": 0.0001,
+      "bad": 0,
+      "volumeMm3": 1423.8467118910849
+    },
+    {
+      "name": "Proto true1mm thick yellow prototype substrate with77 actual bores,real mount reliefs and fixing bore",
+      "edges": 31242,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 782.5680108360182
+    },
+    {
+      "name": "Proto plated through-hole barrel 1",
+      "edges": 768,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 0.09691934719760735
+    },
+    {
+      "name": "Proto front metal annulus 1",
+      "edges": 768,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 0.03058134904249136
+    },
+    {
+      "name": "Proto actual Grove fixed PCB solder pad 1",
+      "edges": 18,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 0.018062501282431215
+    },
+    {
+      "name": "Proto actual Grove fixed PCB solder pad 2",
+      "edges": 18,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 0.018062501282431215
+    },
+    {
+      "name": "Proto actual Grove fixed PCB solder pad 3",
+      "edges": 18,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 0.018062501282431215
+    },
+    {
+      "name": "Proto actual Grove fixed PCB solder pad 4",
+      "edges": 18,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 0.018062501282431215
+    },
+    {
+      "name": "Proto Grove actual full side rail",
+      "edges": 18,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 16.874000019550305
+    },
+    {
+      "name": "Proto Grove actual top retaining rail",
+      "edges": 18,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 4.218500004887576
+    },
+    {
+      "name": "Proto Grove locking shoulder",
+      "edges": 18,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 0.5880000033378596
+    },
+    {
+      "name": "Proto Grove actual full side rail",
+      "edges": 18,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 16.874000019550305
+    },
+    {
+      "name": "Proto Grove actual top retaining rail",
+      "edges": 18,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 4.218500004887576
+    },
+    {
+      "name": "Proto Grove locking shoulder",
+      "edges": 18,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 0.5880000033378596
+    },
+    {
+      "name": "Proto Grove physical socket floor",
+      "edges": 18,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 33.364498584032056
+    },
+    {
+      "name": "Proto Grove actual recessed dielectric rear",
+      "edges": 18,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 21.206248757243173
+    },
+    {
+      "name": "Proto Grove actual retaining bridge",
+      "edges": 18,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 2.1600000286102277
+    },
+    {
+      "name": "Proto Grove real recessed male contact 1",
+      "edges": 18,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 0.7232399380159397
+    },
+    {
+      "name": "Proto Grove retained PCB terminal 1",
+      "edges": 18,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 0.2557799924397466
+    },
+    {
+      "name": "Proto Grove real recessed male contact 2",
+      "edges": 18,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 0.7232399380159397
+    },
+    {
+      "name": "Proto Grove retained PCB terminal 2",
+      "edges": 18,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 0.2557799924397466
+    },
+    {
+      "name": "Proto Grove real recessed male contact 3",
+      "edges": 18,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 0.7232399380159397
+    },
+    {
+      "name": "Proto Grove retained PCB terminal 3",
+      "edges": 18,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 0.2557799924397466
+    },
+    {
+      "name": "Proto Grove real recessed male contact 4",
+      "edges": 18,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 0.7232399380159397
+    },
+    {
+      "name": "Proto Grove retained PCB terminal 4",
+      "edges": 18,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 0.2557799924397466
+    },
+    {
+      "name": "Proto real single fixed rear hex-socket screw head",
+      "edges": 420,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 3.1846406725663576
+    },
+    {
+      "name": "Proto recessed physical screw hex floor",
+      "edges": 36,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 0.12013504977429293
+    },
+    {
+      "name": "Proto retained central fixing shaft",
+      "edges": 192,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 10.094753931123066
+    },
+    {
+      "name": "Proto independent real silver rear PROTO adhesive film",
+      "edges": 594,
+      "coordinateQuantizationMm": 0.00001,
+      "bad": 0,
+      "volumeMm3": 17.569255082047768
+    }
+  ],
+  "prototypeField": {
+    "columns": 7,
+    "rows": 11,
+    "count": 77,
+    "freeBoreDiameterMm": 1,
+    "pitchMm": 2.54,
+    "substrateThicknessMm": 1,
+    "installationThicknessInferred": true,
+    "prototypeAxisRays": 385,
+    "metalBoreWallRays": 924,
+    "substrateBoreWallRays": 312,
+    "positiveMaterial": {
+      "holePitchPadGapMm": 0.94,
+      "barrelWallMm": 0.03,
+      "FR4InterBoreMm": 1.48,
+      "fieldWindowXClearanceMm": 1.58,
+      "fieldWindowYClearanceMm": 0.5,
+      "pcbMountReliefVsSampledNativeMm": 0.16999999999999993,
+      "pcbFixingBridgeMm": 3.4499999999999997,
+      "closestFieldToMountReliefMm": 1.113605179160378,
+      "hexHeadWallMm": 0.88,
+      "perforatedBevelMm": 0
+    }
+  },
+  "mountingAxisRays": 10,
+  "mountingBoreWallRays": 36,
+  "nativeMountProfiles": [
+    {
+      "origin": [
+        -8,
+        -12,
+        -3.5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 3.1133098800790204,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        -8,
+        -12,
+        -3.5
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": null,
+      "expected": "Original outward mouth outlet"
+    },
+    {
+      "origin": [
+        -8,
+        -12,
+        -3.5
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 3.1139742551867364,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        -8,
+        -12,
+        -3.5
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 3.1139742551867364,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        -8,
+        -12,
+        -2
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 2.4999999055295845,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        -8,
+        -12,
+        -2
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 2.5000075349241158,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        -8,
+        -12,
+        -2
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 2.4998157111616486,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        -8,
+        -12,
+        -2
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 2.4998161174466222,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        -8,
+        -12,
+        0
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 3.2290569355229506,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        -8,
+        -12,
+        0
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 3.2290494945776853,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        -8,
+        -12,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 3.2282867972782334,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        -8,
+        -12,
+        0
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 3.2282829825809074,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        -8,
+        -12,
+        2
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 2.49937558278362,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        -8,
+        -12,
+        2
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 2.4997192459637585,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        -8,
+        -12,
+        2
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 2.4999965689602845,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        -8,
+        -12,
+        2
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 2.499997336890985,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        -8,
+        -12,
+        3.5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 3.1135165384041166,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        -8,
+        -12,
+        3.5
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": null,
+      "expected": "Original outward mouth outlet"
+    },
+    {
+      "origin": [
+        -8,
+        -12,
+        3.5
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 3.113974263512402,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        -8,
+        -12,
+        3.5
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 3.113974263512402,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        8,
+        -12,
+        -3.5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": null,
+      "expected": "Original outward mouth outlet"
+    },
+    {
+      "origin": [
+        8,
+        -12,
+        -3.5
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 3.1137939493684312,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        8,
+        -12,
+        -3.5
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 3.1139742551867364,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        8,
+        -12,
+        -3.5
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 3.1139742551867364,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        8,
+        -12,
+        -2
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 2.499991709312564,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        8,
+        -12,
+        -2
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 2.4999993387070942,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        8,
+        -12,
+        -2
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 2.499806516548384,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        8,
+        -12,
+        -2
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 2.4998189129299924,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        8,
+        -12,
+        0
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 3.229041296875387,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        8,
+        -12,
+        0
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 3.229056935099921,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        8,
+        -12,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 3.228282434514753,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        8,
+        -12,
+        0
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 3.2282778096740703,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        8,
+        -12,
+        2
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 2.4993839638961326,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        8,
+        -12,
+        2
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 2.4997184960018863,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        8,
+        -12,
+        2
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 2.499998476313449,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        8,
+        -12,
+        2
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 2.500006873634149,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        8,
+        -12,
+        3.5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": null,
+      "expected": "Original outward mouth outlet"
+    },
+    {
+      "origin": [
+        8,
+        -12,
+        3.5
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 3.066211198281188,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        8,
+        -12,
+        3.5
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 3.113974263512402,
+      "expected": "NativeFrontSide bore wall"
+    },
+    {
+      "origin": [
+        8,
+        -12,
+        3.5
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 3.113974263512402,
+      "expected": "NativeFrontSide bore wall"
+    }
+  ],
+  "socket": {
+    "contacts": 4,
+    "terminalCount": 4,
+    "recessedRearDistanceMm": 13.15000001192093,
+    "contactDistancesMm": [
+      8.800000047683717,
+      8.800000047683717,
+      8.800000047683717,
+      8.800000047683717
+    ],
+    "truePCBMaterialUnderFeet": true,
+    "noRaisedP1Header": true
+  },
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        7,
+        -12
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 9,
+      "purpose": "Real silver rear adhesive film seated in actual native recess"
+    },
+    {
+      "origin": [
+        0,
+        -12,
+        -10
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 7,
+      "purpose": "Actual single retaining hex has recessed physicalfloor"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Real silver rear adhesive film seated in actual native recess",
+      "name": "Proto independent real silver rear PROTO adhesive film",
+      "distanceMm": 8.16
+    },
+    {
+      "purpose": "Actual single retaining hex has recessed physicalfloor",
+      "name": "Proto recessed physical screw hex floor",
+      "distanceMm": 6.529999999254942
+    }
+  ],
+  "artworkConfigurations": 4,
+  "publicAPI": {
+    "exports": [
+      "Model",
+      "GroveModule",
+      "spec"
+    ],
+    "bodyComponentOrder": [
+      "grove"
+    ],
+    "ports": [
+      "grove"
+    ],
+    "canonicalCableInput": "grove",
+    "controls": [],
+    "leds": [],
+    "anchors": [],
+    "displays": [],
+    "joints": [],
+    "sensors": [],
+    "defaultRearCover": true,
+    "configurations": [
+      {
+        "options": {
+          "rearCover": true
+        },
+        "nativeTriangles": 3498,
+        "printPanels": 1
+      },
+      {
+        "options": {
+          "rearCover": false
+        },
+        "nativeTriangles": 1626,
+        "printPanels": 0,
+        "removes": [
+          "native rear cover",
+          "rear physical film/ink",
+          "one centre screw"
+        ],
+        "retains": [
+          "native front window frame",
+          "77-holePCB/plating",
+          "Grove/contacts/pads"
+        ]
+      }
+    ],
+    "serviceConfigSameComponentIDs": true,
+    "noUserAddedCircuit": true,
+    "noElectricalBehavior": true
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "panels": 1,
+    "physicalGeometryInvariant": true,
+    "frontHasNoAdhesiveLabel": true
+  },
+  "transformedParentFourCore": true,
+  "independentPeer": true,
+  "detachedReattachedPose": true,
+  "disposedResources": 200
+}

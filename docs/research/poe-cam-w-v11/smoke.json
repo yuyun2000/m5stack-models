@@ -1,0 +1,657 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-10-26T17:07:36.618Z",
+  "scope": "Necessary bounded own-product construction/API checks only;no GPU/browser,production-fit/rated stop,electrical,firmware,network,PoE or physical-device acceptance.",
+  "meshes": 279,
+  "triangles": 31292,
+  "sourceTriangles": 23068,
+  "retainedBodyTriangles": 4892,
+  "retainedStandTriangles": 5080,
+  "retainedBrickTriangles": 3348,
+  "totalRetainedNativeTriangles": 13320,
+  "excludedDisplayTriangles": 9748,
+  "nativeBoundsMm": [
+    24.04170036315918,
+    64.01396560668945,
+    18
+  ],
+  "nativeSourceFaceRetention": [
+    {
+      "name": "PoE CAM-W v1.1 complete native front enclosure and side user tongue",
+      "sourceStart": 4604,
+      "sourceCount": 2366,
+      "retainedByteExactFaces": 2366
+    },
+    {
+      "name": "PoE CAM-W v1.1 complete native rear enclosure and real service slots",
+      "sourceStart": 744,
+      "sourceCount": 1930,
+      "retainedByteExactFaces": 1930
+    },
+    {
+      "name": "PoE CAM-W v1.1 complete native internal camera retention bracket",
+      "sourceStart": 0,
+      "sourceCount": 372,
+      "retainedByteExactFaces": 372
+    },
+    {
+      "name": "PoE CAM-W v1.1 complete native fixed OV3660 lens package",
+      "sourceStart": 9336,
+      "sourceCount": 224,
+      "retainedByteExactFaces": 224
+    },
+    {
+      "name": "PoE CAM-W v1.1 native fixed Stand clamp",
+      "sourceStart": 12392,
+      "sourceCount": 2832,
+      "retainedByteExactFaces": 2832
+    },
+    {
+      "name": "PoE CAM-W v1.1 native moving Stand leg and foot",
+      "sourceStart": 18572,
+      "sourceCount": 2248,
+      "retainedByteExactFaces": 2248
+    },
+    {
+      "name": "PoE CAM-W v1.1 native complete five-bore Back-Brick",
+      "sourceStart": 15224,
+      "sourceCount": 3348,
+      "retainedByteExactFaces": 3348
+    }
+  ],
+  "topologies": {
+    "front": {
+      "edges": 3549,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 4601.948520182849
+    },
+    "back": {
+      "edges": 2895,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 3357.836554839065
+    },
+    "retainer": {
+      "edges": 558,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 237.55772635672358
+    },
+    "camera": {
+      "edges": 336,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 293.32041179592943
+    },
+    "PCB": {
+      "edges": 2478,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 500.110674632618
+    },
+    "powerPCB": {
+      "edges": 1938,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 178.1153400312652
+    },
+    "jackFace": {
+      "edges": 2016,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 25.25059116046989
+    },
+    "jackCarrier": {
+      "edges": 2016,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 1605.216076707601
+    },
+    "download-p2": {
+      "edges": 7788,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 113.73287934035022
+    },
+    "download-p3": {
+      "edges": 7788,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 113.73287934035022
+    },
+    "film-front": {
+      "edges": 1938,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 0.7364238532664906
+    },
+    "film-rear": {
+      "edges": 1938,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 29.93832521938184
+    },
+    "PoE CAM-W v1.1 native fixed Stand clamp": {
+      "edges": 4248,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 3230.6863387817452
+    },
+    "PoE CAM-W v1.1 native moving Stand leg and foot": {
+      "edges": 3372,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 2966.05902739802
+    },
+    "PoE CAM-W v1.1 native complete five-bore Back-Brick": {
+      "edges": 5022,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 2141.8534769080647
+    }
+  },
+  "closureChecks": [
+    {
+      "label": "Grove original aperture actual deep backstop",
+      "localOrigin": [
+        0,
+        0,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W Grove actual deep backstop",
+      "distanceMm": 20.75000001192093
+    },
+    {
+      "label": "Grove actual pin 0",
+      "localOrigin": [
+        -3,
+        0.15,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W Grove real contact 1",
+      "distanceMm": 16.300000047683717
+    },
+    {
+      "label": "Grove actual pin 1",
+      "localOrigin": [
+        -1,
+        0.15,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W Grove real contact 2",
+      "distanceMm": 16.300000047683717
+    },
+    {
+      "label": "Grove actual pin 2",
+      "localOrigin": [
+        1,
+        0.15,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W Grove real contact 3",
+      "distanceMm": 16.300000047683717
+    },
+    {
+      "label": "Grove actual pin 3",
+      "localOrigin": [
+        3,
+        0.15,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W Grove real contact 4",
+      "distanceMm": 16.300000047683717
+    },
+    {
+      "label": "RJ45 original aperture true deep insertion stop",
+      "localOrigin": [
+        0,
+        1,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W RJ45 deep insertion stop",
+      "distanceMm": 32.57499999403954
+    },
+    {
+      "label": "RJ45 actual spring 0",
+      "localOrigin": [
+        -3.556,
+        3.65,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W RJ45 spring contact 1",
+      "distanceMm": 16.99117996938604
+    },
+    {
+      "label": "RJ45 actual spring 1",
+      "localOrigin": [
+        -2.54,
+        3.65,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W RJ45 spring contact 2",
+      "distanceMm": 16.99117996938604
+    },
+    {
+      "label": "RJ45 actual spring 2",
+      "localOrigin": [
+        -1.524,
+        3.65,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W RJ45 spring contact 3",
+      "distanceMm": 16.99117996938604
+    },
+    {
+      "label": "RJ45 actual spring 3",
+      "localOrigin": [
+        -0.508,
+        3.65,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W RJ45 spring contact 4",
+      "distanceMm": 16.99117996938604
+    },
+    {
+      "label": "RJ45 actual spring 4",
+      "localOrigin": [
+        0.508,
+        3.65,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W RJ45 spring contact 5",
+      "distanceMm": 16.99117996938604
+    },
+    {
+      "label": "RJ45 actual spring 5",
+      "localOrigin": [
+        1.524,
+        3.65,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W RJ45 spring contact 6",
+      "distanceMm": 16.991179969386042
+    },
+    {
+      "label": "RJ45 actual spring 6",
+      "localOrigin": [
+        2.54,
+        3.65,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W RJ45 spring contact 7",
+      "distanceMm": 16.99117996938604
+    },
+    {
+      "label": "RJ45 actual spring 7",
+      "localOrigin": [
+        3.556,
+        3.65,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W RJ45 spring contact 8",
+      "distanceMm": 16.99117996938604
+    },
+    {
+      "label": "download-p2 true square service bore",
+      "localOrigin": [
+        0,
+        -2.54,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W download-p2 recessed socket floor",
+      "distanceMm": 19.685000002384186
+    },
+    {
+      "label": "download-p2 actual recessed spring",
+      "localOrigin": [
+        0.47,
+        -2.54,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W download-p2 real recessed spring",
+      "distanceMm": 16.50000002384186
+    },
+    {
+      "label": "download-p2 true square service bore",
+      "localOrigin": [
+        0,
+        0,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W download-p2 recessed socket floor",
+      "distanceMm": 19.685000002384186
+    },
+    {
+      "label": "download-p2 actual recessed spring",
+      "localOrigin": [
+        0.47,
+        0,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W download-p2 real recessed spring",
+      "distanceMm": 16.50000002384186
+    },
+    {
+      "label": "download-p2 true square service bore",
+      "localOrigin": [
+        0,
+        2.54,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W download-p2 recessed socket floor",
+      "distanceMm": 19.685000002384186
+    },
+    {
+      "label": "download-p2 actual recessed spring",
+      "localOrigin": [
+        0.47,
+        2.54,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W download-p2 real recessed spring",
+      "distanceMm": 16.50000002384186
+    },
+    {
+      "label": "download-p3 true square service bore",
+      "localOrigin": [
+        0,
+        -2.54,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W download-p3 recessed socket floor",
+      "distanceMm": 19.685000002384186
+    },
+    {
+      "label": "download-p3 actual recessed spring",
+      "localOrigin": [
+        0.47,
+        -2.54,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W download-p3 real recessed spring",
+      "distanceMm": 16.50000002384186
+    },
+    {
+      "label": "download-p3 true square service bore",
+      "localOrigin": [
+        0,
+        0,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W download-p3 recessed socket floor",
+      "distanceMm": 19.685000002384186
+    },
+    {
+      "label": "download-p3 actual recessed spring",
+      "localOrigin": [
+        0.47,
+        0,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W download-p3 real recessed spring",
+      "distanceMm": 16.50000002384186
+    },
+    {
+      "label": "download-p3 true square service bore",
+      "localOrigin": [
+        0,
+        2.54,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W download-p3 recessed socket floor",
+      "distanceMm": 19.685000002384186
+    },
+    {
+      "label": "download-p3 actual recessed spring",
+      "localOrigin": [
+        0.47,
+        2.54,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W download-p3 real recessed spring",
+      "distanceMm": 16.50000002384186
+    },
+    {
+      "label": "Recessed reset through original rear service slot",
+      "localOrigin": [
+        0,
+        0,
+        15
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ],
+      "hit": "PoE CAM-W actual recessed RST plunger",
+      "distanceMm": 14.82500000298023
+    }
+  ],
+  "indicatorPaths": [
+    {
+      "id": "blue",
+      "origin": [
+        6.8,
+        49.5,
+        -3.7999999999999954
+      ],
+      "direction": [
+        0,
+        -1,
+        -2.220446049250313e-16
+      ],
+      "first": "PoE CAM-W v1.1 complete native rear enclosure and real service slots",
+      "lensVisible": false
+    },
+    {
+      "id": "link-led",
+      "origin": [
+        9.9,
+        -24.4,
+        -28.55
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "first": "PoE CAM-W D2 W5500 yellow link0603 actual lens",
+      "lensVisible": true
+    },
+    {
+      "id": "activity-led",
+      "origin": [
+        -9.9,
+        -24.4,
+        -28.55
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "first": "PoE CAM-W D1 W5500 green activity0603 actual lens",
+      "lensVisible": true
+    }
+  ],
+  "controls": {
+    "user": {
+      "surface": "right",
+      "nativeVertices": 217,
+      "travelMm": 0.3,
+      "follower": "X-depth×0.65"
+    },
+    "reset": {
+      "surface": "back original service slot",
+      "kind": "real recessed cap",
+      "travelMm": 0.25
+    },
+    "multiSourceCancelExactRest": true,
+    "noAutomaticResetOrFirmware": true
+  },
+  "stand": {
+    "axis": [
+      0.9999967377,
+      -0.0025543413,
+      8.3046e-7
+    ],
+    "rangeDeg": [
+      -20,
+      40
+    ],
+    "nativeOnlyLegMoves": true,
+    "groundOrHostWorldSolver": false,
+    "rangeMeaning": "Conservative appearance interval,not mechanical stops"
+  },
+  "accessories": {
+    "Stand": {
+      "nativeTriangles": 5080
+    },
+    "BackBrick": {
+      "nativeTriangles": 3348,
+      "bores": 5
+    }
+  },
+  "artwork": {
+    "pngCount": 2,
+    "kind": "official-photo-code-redraw",
+    "allPhysicalAttributesIndexWorldInvariant": true,
+    "entryConfigurations": 6,
+    "filmsRetained": true
+  },
+  "nestedGrove": "Four real cores,two mating plugs,nested reset/Stand access,transformed parent/pose,peer isolation,noecho,detach/dispose pass",
+  "disposedResources": 438,
+  "assetResolution": {
+    "status": "pass",
+    "checkedAt": "2026-10-26T17:07:36.333Z",
+    "method": "Two explicit static new URL literals;both entry classes dispatch both actual panel URLs;ink-off dispatches no raster",
+    "staticPanels": [
+      "front",
+      "rear"
+    ],
+    "entryChecks": 2,
+    "textureLoadRequests": 4,
+    "unchangedOtherRuntimeFiles": 10,
+    "pngHashes": {
+      "front.png": "04d782421e39e865309749abb411d868895ce13233b7edb9ee9ed8208841d574",
+      "rear.png": "8c53ec563aed0a1093572fb4908c1a7ab87c3bfe7e7c93e1190332ab929f7719"
+    },
+    "scope": "Node loader routing and source static paths only;no build/dist,GPU,browser or physical acceptance claimed"
+  }
+}

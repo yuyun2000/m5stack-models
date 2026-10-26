@@ -1,0 +1,266 @@
+{
+  "checkedAt": "2026-10-26T14:14:29.350Z",
+  "status": "pass",
+  "scope": "Necessary exact U108 native assembly/holes/physical support/PCB/Grove/guide/film,native tare flexure multi-source press/release/cancel/exact buffer restoration,fixed non-flexure/platform/cover,independent RGB defaultoff/nohalo/material-only/noecho,two-entry artwork invariance and nested four-core pose/independent branch/disposal.No browser,force,load deformation,weight,zeroing,calibration,electrical,firmware or production-fit acceptance.",
+  "nativeTriangles": 16694,
+  "visualEnvelopeMm": [
+    56,
+    40,
+    41
+  ],
+  "cadEnvelopeMm": [
+    56,
+    40,
+    41
+  ],
+  "mountingRays": 30,
+  "boreWalls": 48,
+  "directedEdgeChecks": [
+    {
+      "name": "Scales shaped PCB with real mounting scallops and Grove notch",
+      "edges": 2346,
+      "bad": 0
+    },
+    {
+      "name": "Scales actual fixed metal load-cell support envelope",
+      "edges": 576,
+      "bad": 0
+    },
+    {
+      "name": "Scales actual recessed RGB light-guide strip",
+      "edges": 2994,
+      "bad": 0
+    },
+    {
+      "name": "Scales independent physical rear adhesive label film",
+      "edges": 594,
+      "bad": 0
+    }
+  ],
+  "closureChecks": [
+    {
+      "origin": [
+        36,
+        0,
+        -15.1
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "maxDistance": 16,
+      "purpose": "Real Grove rear dielectric carrier"
+    },
+    {
+      "origin": [
+        36,
+        -3,
+        -14.9
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Actual recessed Grove metal contact1"
+    },
+    {
+      "origin": [
+        36,
+        -1,
+        -14.9
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Actual recessed Grove metal contact2"
+    },
+    {
+      "origin": [
+        36,
+        1,
+        -14.9
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Actual recessed Grove metal contact3"
+    },
+    {
+      "origin": [
+        36,
+        3,
+        -14.9
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Actual recessed Grove metal contact4"
+    },
+    {
+      "origin": [
+        -21,
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 15,
+      "purpose": "Actual RGB guide backs the native long light slot"
+    },
+    {
+      "origin": [
+        0,
+        0,
+        -30
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Rear label film backed by native base"
+    },
+    {
+      "origin": [
+        20,
+        -8,
+        7
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Real metal load-cell support envelope"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Real Grove rear dielectric carrier",
+      "hit": "Scales Grove recessed dielectric rear wall",
+      "distanceMm": 13.950000011920928
+    },
+    {
+      "purpose": "Actual recessed Grove metal contact1",
+      "hit": "Scales Grove real contact 1",
+      "distanceMm": 9.650000000000002
+    },
+    {
+      "purpose": "Actual recessed Grove metal contact2",
+      "hit": "Scales Grove real contact 2",
+      "distanceMm": 9.650000000000002
+    },
+    {
+      "purpose": "Actual recessed Grove metal contact3",
+      "hit": "Scales Grove real contact 3",
+      "distanceMm": 9.650000000000002
+    },
+    {
+      "purpose": "Actual recessed Grove metal contact4",
+      "hit": "Scales Grove real contact 4",
+      "distanceMm": 9.650000000000002
+    },
+    {
+      "purpose": "Actual RGB guide backs the native long light slot",
+      "hit": "Scales actual recessed RGB light-guide strip",
+      "distanceMm": 12.550000023841857
+    },
+    {
+      "purpose": "Rear label film backed by native base",
+      "hit": "Scales independent physical rear adhesive label film",
+      "distanceMm": 9.649999999999999
+    },
+    {
+      "purpose": "Real metal load-cell support envelope",
+      "hit": "Scales actual fixed metal load-cell support envelope",
+      "distanceMm": 8.94887554296293
+    }
+  ],
+  "flexureMovedVertices": 228,
+  "selectedFlexureBoundsMm": {
+    "min": [
+      -18.500001907348633,
+      -17.319833755493164,
+      -15.100000381469727
+    ],
+    "max": [
+      -13.5,
+      -9.499999046325684,
+      -11.699999809265137
+    ]
+  },
+  "artworkConfigurations": 2,
+  "publicAPI": {
+    "ports": [
+      "grove"
+    ],
+    "anchors": [
+      "sensor"
+    ],
+    "controls": [
+      "tare"
+    ],
+    "leds": [
+      "rgb"
+    ],
+    "joints": [],
+    "tare": {
+      "kind": "native-flexure",
+      "shellProperty": "scalesAssembly.shell",
+      "buttonProperties": [
+        "shell",
+        "weights",
+        "restPositions",
+        "restNormals",
+        "normalVertices",
+        "normalMask"
+      ],
+      "travelMm": 0.2,
+      "actions": [
+        "press",
+        "release",
+        "cancel"
+      ],
+      "fixedNativeVertices": true,
+      "platformAndCoverFixed": true,
+      "exactPositionNormalReset": true
+    },
+    "rgb": {
+      "kind": "led",
+      "defaultOff": true,
+      "color": true,
+      "brightness": true,
+      "noHalo": true,
+      "noAutomaticStatus": true
+    },
+    "grovePins": [
+      "GND",
+      "5V",
+      "SDA",
+      "SCL"
+    ]
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "panels": 1,
+    "physicalGeometryInvariant": true
+  },
+  "disposedResources": 190
+}

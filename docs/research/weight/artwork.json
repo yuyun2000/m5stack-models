@@ -1,0 +1,83 @@
+{
+  "id": "weight",
+  "sku": "U030",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Two code redraws of clearly readable own U030 official photographs. Front reproduces A+ green,A− unprinted silver,E− black,E+ red; rear WEIGHT,GPIO A/B/C,arrows,HX711 andDAT/CLK/5V/GND. The silver adhesive substrates are independent physical geometry;PNG unprinted regions are transparent. No photographic crop,borrowed U180 print,packaging or invented microtext.",
+  "assets": [
+    {
+      "path": "src/units/weight/reference-redraw-front.png",
+      "sha256": "4a5e6862bc9cafbabd9ff5d0256b0deaead624831344230da8b90c852e942e97",
+      "pixels": [
+        1540,
+        440
+      ],
+      "sizeMm": [
+        15.4,
+        4.4
+      ],
+      "positionMm": [
+        0,
+        11.1,
+        6.2
+      ],
+      "face": "front",
+      "kind": "reference-redraw",
+      "method": "printedArtwork",
+      "target": "Weight actual independent four-colour front terminal label silver film",
+      "referenceCorrespondence": [
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/WEIGHT/img-1d8b985f-2c03-476e-8c26-d63496137652.webp",
+          "sha256": "c9a57c442e5f98f4008f86543b515eb5a9954c5d44ed5da464dbd1386e2392fc"
+        },
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/WEIGHT/img-d34002f1-5687-4a48-a4cf-5662135b35e3.webp",
+          "sha256": "07318434d6af47e0bc4ec412d80b05fa660db242ae65427671c07c08a7c75cfa"
+        }
+      ],
+      "metadata": {
+        "dpi": 2540
+      }
+    },
+    {
+      "path": "src/units/weight/reference-redraw-back.png",
+      "sha256": "a6f65fee21e1441291495fa7f2cecb91e8096264984b1d51fc071eb95e58e0e8",
+      "pixels": [
+        1580,
+        1180
+      ],
+      "sizeMm": [
+        15.8,
+        11.8
+      ],
+      "positionMm": [
+        0,
+        7.2,
+        -3.84
+      ],
+      "face": "back",
+      "kind": "reference-redraw",
+      "method": "printedArtwork",
+      "target": "Weight actual independent rear silver WEIGHT adhesive film",
+      "referenceCorrespondence": [
+        {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/WEIGHT/img-1ab21298-f9e9-4de9-9f1e-806cdf9d3baf.webp",
+          "sha256": "0ed3b0caf5d9588d9d1b04c6f039b16a18eb2a3731cae44de46509071c448bd7"
+        }
+      ],
+      "metadata": {
+        "dpi": 2540
+      }
+    }
+  ],
+  "limitations": [
+    "Original print-master font andproduction color values are unavailable;glyph choice andregistration remain declared appearance estimates.",
+    "Physical silver film thickness0.06mm front/0.04mm rear andmetallic appearance are inferred. Front film stays on the actual fixed socket roof,away from4inspection windows;rear film stays in native recess.",
+    "artwork:false disables ink only andpreserves every physical attribute,index andworld matrix across Model/GroveModule withandwithout the supplied plug,andstandalone TerminalPlug.",
+    "Only final ordinaryPNG distributed. Private table,mappings,URLs,names,vectors,raw officialCAD/photos/PDF/MCP,SVG generators/proofs/intermediates excluded."
+  ],
+  "rights": "New model code MIT. Product names,printed design andtrademarks retain respective rights;only approved final ordinaryraster artwork is distributed."
+}

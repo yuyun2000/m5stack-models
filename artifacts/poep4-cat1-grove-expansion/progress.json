@@ -1,0 +1,427 @@
+{
+  "savedAt": "2026-10-26T15:58:02.750084+00:00",
+  "stage": "modeled",
+  "scope": "New PoEP4/Cat1-CN/Grove-to-Grove complete physical assemblies, synchronous corresponding print mapping, actual three-branch Grove/API fixture and builds; no browser or whole-catalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 128,
+    "modeled": 142,
+    "verified": 0
+  },
+  "localHead": "3681a6482aff96501d44659ba5a1603246f1fe1f",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "poe-p4",
+      "status": "pass",
+      "report": "docs/research/poe-p4/smoke.json",
+      "meshes": 619,
+      "triangles": 100116
+    },
+    {
+      "id": "cat1-cn",
+      "status": "pass",
+      "report": "docs/research/cat1-cn/smoke.json",
+      "meshes": 263,
+      "triangles": 116390
+    },
+    {
+      "id": "grove-to-grove",
+      "status": "pass",
+      "report": "docs/research/grove-to-grove/smoke.json",
+      "meshes": null,
+      "triangles": null
+    }
+  ],
+  "pngCount": 8,
+  "rasters": [
+    {
+      "path": "src/units/poe-p4/source-vector-back.png",
+      "pixels": [
+        2081,
+        5336
+      ],
+      "sha256": "0103b0184670fca03aae709381b44d43a7b3e8cf83ce3fc29ea7c6751562ca2c"
+    },
+    {
+      "path": "src/units/poe-p4/source-vector-front.png",
+      "pixels": [
+        2037,
+        5067
+      ],
+      "sha256": "643fbc5e0a51f83d171ed3c2b073db070ee91e953920f423681be3376e39cb4a"
+    },
+    {
+      "path": "src/units/poe-p4/source-vector-hat.png",
+      "pixels": [
+        1685,
+        794
+      ],
+      "sha256": "0ba7513b83376e5eb09235179559e8e80690fe69d85babba9d05ca9d4507cbf2"
+    },
+    {
+      "path": "src/units/poe-p4/source-vector-side.png",
+      "pixels": [
+        388,
+        1014
+      ],
+      "sha256": "f27e8d5865401d32d0d561352668d4f1e37d4490b5c893fbdace187132e624d2"
+    },
+    {
+      "path": "src/units/cat1-cn/source-vector-back.png",
+      "pixels": [
+        1605,
+        3603
+      ],
+      "sha256": "78dfba5212fa8e2eacbd7249a1f925e9d17048c0a34e1b47fa44c5d602b5a77d"
+    },
+    {
+      "path": "src/units/cat1-cn/source-vector-front.png",
+      "pixels": [
+        1583,
+        3612
+      ],
+      "sha256": "b2f7b9f8745ebe6c341fd6e7ac6c38eaafb85b872df15fb069b01ea9c0792fff"
+    },
+    {
+      "path": "src/units/grove-to-grove/reference-redraw-back.png",
+      "pixels": [
+        4160,
+        2500
+      ],
+      "sha256": "5f942e9a01db13afbb50a69fb589d2d8d5c2b0a7e169647099cd1c5699560742"
+    },
+    {
+      "path": "src/units/grove-to-grove/reference-redraw-front.png",
+      "pixels": [
+        900,
+        2280
+      ],
+      "sha256": "cdc695573a985ba7e37fc51b2079729579d501d762aa82503fe9cf80b932bb3c"
+    }
+  ],
+  "fixture": {
+    "status": "pass",
+    "artwork": [
+      {
+        "id": "poe-p4",
+        "panels": 4,
+        "kinds": [
+          "source-vector-raster"
+        ]
+      },
+      {
+        "id": "cat1-cn",
+        "panels": 2,
+        "kinds": [
+          "source-vector-raster"
+        ]
+      },
+      {
+        "id": "grove-to-grove",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw"
+        ]
+      }
+    ],
+    "cases": [
+      "three-real-four-core-input-branches",
+      "PoE-P4-nine-real-ports-native-user-flexure-multiple-sources-release-cancel-and-fixed-parts",
+      "PoE-P4-three-independent-external-lights-and-no-inputecho",
+      "Cat1-own108mm-ordinary-SMA-antenna-finite-elbow-and-fixed-coupling-rejects-RP-SMA",
+      "Cat1-closed-no-SIM-click-through-and-real-rear-cover-service-view",
+      "Grove-to-Grove-three-real-sockets-no-directplug-entry-and-independent-four-core-peers",
+      "two-entries-all-real-configurations-artwork-preserves-physical-attributes-indices-world-matrices",
+      "external-pose-cable-independent-detach-and-host-framebuffer-preserved"
+    ],
+    "scope": "Current three actual assemblies and external visuals only;Node canvas stub,no GPU/browser,network,USB,PoE,cellular,SIM,electrical,protocol,physical or whole-catalog acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "artwork": [
+      {
+        "id": "poe-p4",
+        "panels": 4,
+        "kinds": [
+          "source-vector-raster"
+        ]
+      },
+      {
+        "id": "cat1-cn",
+        "panels": 2,
+        "kinds": [
+          "source-vector-raster"
+        ]
+      },
+      {
+        "id": "grove-to-grove",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw"
+        ]
+      }
+    ],
+    "cases": [
+      "three-real-four-core-input-branches",
+      "PoE-P4-nine-real-ports-native-user-flexure-multiple-sources-release-cancel-and-fixed-parts",
+      "PoE-P4-three-independent-external-lights-and-no-inputecho",
+      "Cat1-own108mm-ordinary-SMA-antenna-finite-elbow-and-fixed-coupling-rejects-RP-SMA",
+      "Cat1-closed-no-SIM-click-through-and-real-rear-cover-service-view",
+      "Grove-to-Grove-three-real-sockets-no-directplug-entry-and-independent-four-core-peers",
+      "two-entries-all-real-configurations-artwork-preserves-physical-attributes-indices-world-matrices",
+      "external-pose-cable-independent-detach-and-host-framebuffer-preserved"
+    ],
+    "scope": "Current three actual assemblies and external visuals only;Node canvas stub,no GPU/browser,network,USB,PoE,cellular,SIM,electrical,protocol,physical or whole-catalog acceptance"
+  },
+  "checks": {
+    "localProductSmoke": "all three pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "poe-p4",
+        "status": "frozen",
+        "checkedFiles": 16
+      },
+      {
+        "id": "cat1-cn",
+        "status": "frozen",
+        "checkedFiles": 14
+      },
+      {
+        "id": "grove-to-grove",
+        "status": "frozen",
+        "checkedFiles": 12
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "physical geometry attributes/index/poses identical with artwork:false, covered by saved local fixture",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "60f0480db384a2bf73aa62b4297f063e709afe84cc2b27b4875297ec9f718f12",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "24da05c8f239a60a56073790c356a111db8ede4b18800b3499df5c3c32f99e7a",
+      "logDistributed": false
+    },
+    "livePreview": "142-product catalog, three runtime chunks and all corresponding sticker PNGs byte-identical to public dist",
+    "newSourcePrivacy": "Final JS/JSON/Markdown/PNG and six added catalog/manifest records checked; no private URLs/table/vectors/raw sources/intermediates; PNG metadata limited to safe numeric DPI",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "Only new products/catalog entries/exports/guide/plan",
+    "existingPublicUnitFilesUnchanged": 1027,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [
+    {
+      "product": "poe-p4",
+      "record": "docs/research/poe-p4/sources.json",
+      "feedback_id": "ff53d83247364aad8238f7b54e2fd318",
+      "accepted": true
+    },
+    {
+      "product": "cat1-cn",
+      "record": "docs/research/cat1-cn/sources.json",
+      "feedback_id": "55e19c0de225443a9927fed0b253c8ab",
+      "accepted": true
+    }
+  ],
+  "previewAssets": [
+    {
+      "id": "poe-p4",
+      "file": "assets/poe-p4-UQBXv-ua.js",
+      "sha256": "f61c44b78aab909b5449345c7aa4fe834161d192a8b5c2bcf767c750c2736046"
+    },
+    {
+      "id": "cat1-cn",
+      "file": "assets/cat1-cn-B0BOHGWJ.js",
+      "sha256": "f2ac4712c5f820ca15408cec64443dfff29b59bf159a55d554d611f2c5454df9"
+    },
+    {
+      "id": "grove-to-grove",
+      "file": "assets/grove-to-grove-DDKGyf4k.js",
+      "sha256": "3deeddb91c2c04f0cee37c91fad22c80826355a4c87efdc9bf7613ae1d15f4ac"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/poe-p4/NativeButton.js",
+      "sha256": "32c94e5e18664ced1e30c0581b8aec489cd9f858991ab04106c0752111a5f7b5"
+    },
+    {
+      "path": "src/units/poe-p4/assembly.js",
+      "sha256": "963e3199a778cefc01185d9de968dceb77dde0e13f06dc6eda201b6abe74d8ad"
+    },
+    {
+      "path": "src/units/poe-p4/cad-map.json",
+      "sha256": "240ee0d23869c398822a418ae0f408eb8a7a752b00d98523b1acfc643be4ee34"
+    },
+    {
+      "path": "src/units/poe-p4/dimensions.js",
+      "sha256": "a8329e5caf73a9c82e167e6ee495375eeaccae2560efbf01ad89a9b8642cf795"
+    },
+    {
+      "path": "src/units/poe-p4/film-outlines.js",
+      "sha256": "46022218ff5575a734dcaacef27e13ed9da64d6dedf495010a1cf35ec3b94656"
+    },
+    {
+      "path": "src/units/poe-p4/geometry-data.js",
+      "sha256": "a9bcae085934e18e34c055ad6cf42b45487bffa276c97ce3629213b9e6e5507b"
+    },
+    {
+      "path": "src/units/poe-p4/index.js",
+      "sha256": "e08400298acf50dcf3bbe2c01a3cee2db789eab650e3fb0ce795456df162310a"
+    },
+    {
+      "path": "src/units/poe-p4/source-vector-back.png",
+      "sha256": "0103b0184670fca03aae709381b44d43a7b3e8cf83ce3fc29ea7c6751562ca2c"
+    },
+    {
+      "path": "src/units/poe-p4/source-vector-front.png",
+      "sha256": "643fbc5e0a51f83d171ed3c2b073db070ee91e953920f423681be3376e39cb4a"
+    },
+    {
+      "path": "src/units/poe-p4/source-vector-hat.png",
+      "sha256": "0ba7513b83376e5eb09235179559e8e80690fe69d85babba9d05ca9d4507cbf2"
+    },
+    {
+      "path": "src/units/poe-p4/source-vector-side.png",
+      "sha256": "f27e8d5865401d32d0d561352668d4f1e37d4490b5c893fbdace187132e624d2"
+    },
+    {
+      "path": "src/units/poe-p4/stickers.js",
+      "sha256": "206444f994166e6fd1998ed3be67787cced824230057174dbce0e5df51ba6887"
+    },
+    {
+      "path": "docs/research/poe-p4/artwork.json",
+      "sha256": "b74847a71a01586d8d66084277a748d4b43e43b3166608a7c0a082613b099459"
+    },
+    {
+      "path": "docs/research/poe-p4/modeling.md",
+      "sha256": "3d7c69ce231cc8120ae16ee12dfb8daee222639d6c88465ef822a2c2192b0af1"
+    },
+    {
+      "path": "docs/research/poe-p4/smoke.json",
+      "sha256": "2fa8a5a8668628b3e6c151b4103fe1373c134d3274f40f21599943229368dbea"
+    },
+    {
+      "path": "docs/research/poe-p4/sources.json",
+      "sha256": "b6850a99ba9f02c2a6a1171bde4ecb0c8d6a5060c864431b409873f3b563a6de"
+    },
+    {
+      "path": "src/units/cat1-cn/Antenna.js",
+      "sha256": "7c6e4ae630df4edcb3a91054188ff752ef313a81647e5ae1ca7ef8caf45bee32"
+    },
+    {
+      "path": "src/units/cat1-cn/assembly.js",
+      "sha256": "63dfac56adf6987cf8c68e856b4baad498b7fa9ca237da6d7b656fe64c185492"
+    },
+    {
+      "path": "src/units/cat1-cn/cad-map.json",
+      "sha256": "7178a150e7bf7a198bad8f1a4eb2c23bc925b9556f01c28e5cd20a8abcd8f262"
+    },
+    {
+      "path": "src/units/cat1-cn/connectors.js",
+      "sha256": "fe1e42801d1b9bba828c630b4d60a8b6368f4a68473f2857f0816147f6765909"
+    },
+    {
+      "path": "src/units/cat1-cn/dimensions.js",
+      "sha256": "9228f4827f8c9439e59c7c7e33151e2d21fb5b9db80e23db50b4390d964fa8d3"
+    },
+    {
+      "path": "src/units/cat1-cn/geometry-data.js",
+      "sha256": "f2b86e5401bf6bf2a408b8a98985ed72c49131949c59204027ed61a30f565397"
+    },
+    {
+      "path": "src/units/cat1-cn/index.js",
+      "sha256": "79fc6d6bc5f6afc323d8a39469ad92c9962c57120102e4110d4512f1331e53a4"
+    },
+    {
+      "path": "src/units/cat1-cn/source-vector-back.png",
+      "sha256": "78dfba5212fa8e2eacbd7249a1f925e9d17048c0a34e1b47fa44c5d602b5a77d"
+    },
+    {
+      "path": "src/units/cat1-cn/source-vector-front.png",
+      "sha256": "b2f7b9f8745ebe6c341fd6e7ac6c38eaafb85b872df15fb069b01ea9c0792fff"
+    },
+    {
+      "path": "src/units/cat1-cn/stickers.js",
+      "sha256": "7fd4bf2efc3f0a7802688291eef3ac5c54307198fb4e7c04aea84df228aef67a"
+    },
+    {
+      "path": "docs/research/cat1-cn/artwork.json",
+      "sha256": "e08afb5f7b1a6310510a29a8fe5e6dfc6fe23fc8065efa0a4355c72b6c4caf56"
+    },
+    {
+      "path": "docs/research/cat1-cn/modeling.md",
+      "sha256": "f3ca9711a62defd0b739ae8a64a2b61568e9588bc534ebd99e4eff92000980b4"
+    },
+    {
+      "path": "docs/research/cat1-cn/smoke.json",
+      "sha256": "95b27505bf3b5a1421e302577c78cb15ee251c076842a542077599df52276d86"
+    },
+    {
+      "path": "docs/research/cat1-cn/sources.json",
+      "sha256": "bc43a4db070a80330d6a179c93ad9f8867ee5049676dd4b2e8f18c83e4730331"
+    },
+    {
+      "path": "src/units/grove-to-grove/assembly.js",
+      "sha256": "e53e47e860a6e74bf546008cdbf3cd46682c9cab16d6468513dbd8e6e45d2acb"
+    },
+    {
+      "path": "src/units/grove-to-grove/cad-map.json",
+      "sha256": "75bd94c4a03fdccc7696fa11c71c8c6872d1a7f1dabae4479cb829366a3430b8"
+    },
+    {
+      "path": "src/units/grove-to-grove/dimensions.js",
+      "sha256": "99c873c8399c811aaa76d0324cd0ab7962371095f5234812310361160b5f44aa"
+    },
+    {
+      "path": "src/units/grove-to-grove/geometry-data.js",
+      "sha256": "ec058b018dc8a6d937252203c1fce9ff8450976f7b28c1e38a0adedb32f8d2b7"
+    },
+    {
+      "path": "src/units/grove-to-grove/index.js",
+      "sha256": "0a18442f785cc085605aaf3a9fc21be8006edeb3877aa89faad7ad2282ca9f7a"
+    },
+    {
+      "path": "src/units/grove-to-grove/reference-redraw-back.png",
+      "sha256": "5f942e9a01db13afbb50a69fb589d2d8d5c2b0a7e169647099cd1c5699560742"
+    },
+    {
+      "path": "src/units/grove-to-grove/reference-redraw-front.png",
+      "sha256": "cdc695573a985ba7e37fc51b2079729579d501d762aa82503fe9cf80b932bb3c"
+    },
+    {
+      "path": "src/units/grove-to-grove/stickers.js",
+      "sha256": "26da3a20b44273380a3a7ffca8c8b62af84764baa9e0083673307776d9f462a4"
+    },
+    {
+      "path": "docs/research/grove-to-grove/artwork.json",
+      "sha256": "96a7913a953b10c38c54206895f2b6b7dc3a142469194b3f31d4471e75038b1d"
+    },
+    {
+      "path": "docs/research/grove-to-grove/modeling.md",
+      "sha256": "db58e8115ef5be576fef65522bd4924aa03da59ac25ddb46ba537fa24857ca08"
+    },
+    {
+      "path": "docs/research/grove-to-grove/smoke.json",
+      "sha256": "1f3166dcfeca7eb1c7941dbb8996b4a5e3ec121c1a5aea3a729843a8705837d7"
+    },
+    {
+      "path": "docs/research/grove-to-grove/sources.json",
+      "sha256": "6a1c518c02aa110efcd6ebc742f292483dffbb6ee174a5c385216fc10b3c26fe"
+    }
+  ],
+  "limitations": [
+    "Hidden PCB, components, connector interior, installed poses and accessory details retain documented appearance estimates",
+    "PoE-P4 derives its shell from 6158 source triangles, locally opening the documented original closed faces at Host USB-C and Hat2; this is a modified CAD derivative. It retains actual RJ45/dual USB/Grove/FPC/pads/header, user key and independent visible lights; no network, USB, PoE, firmware, infrared beam or electrical behavior",
+    "Cat1-CN uses its own source shell and rear-cover service view,actual internal SIM assembly andordinary SMA108mm suppliedhinged antenna;estimated visual travel is not a proven mechanicalstop.No radio,USBtestpoint port,unconfirmed exteriorLED or electricalbehavior",
+    "Grove-to-Grove uses its own complete shell,threeactual Groveboard sockets andfouractual ICs;no directplug entry,sensor values,power management or automatic electrical/protocol routing",
+    "Synchronous sticker PNGs use exact-model source rasters or documented reference redraws; original CSV, URLs, vectors, mappings, generators and intermediates remain private",
+    "Earlier sticker checkpoints, private Scroll and unresolved StackChan production-fit checkpoint preserved; this local increment follows the user-requested127-model Git sync;current Git state is recorded separately"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "sku": "U158-B",
+  "kind": "independent-own-drawing-reconstruction",
+  "officialCadAvailable": false,
+  "borrowedCad": false,
+  "sourceComponents": null,
+  "sourceTriangles": null,
+  "publicRepositoryChecked": {
+    "repository": "https://github.com/m5stack/M5_Hardware",
+    "currentTree": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "truncated": false,
+    "glass2Paths": [],
+    "glassPaths": [],
+    "checkedAt": "2026-10-26"
+  },
+  "sourceDrawing": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/757/U158BUnitGlass2-model-size.pdf",
+  "nominalMm": [
+    53,
+    42,
+    6
+  ],
+  "drawingCoordinates": {
+    "pcbWidthMm": 42,
+    "pcbRectHeightMm": 40,
+    "pcbThicknessMm": 1,
+    "topToMountCentreMm": 44,
+    "outerMountPitchMm": 32,
+    "outerMountDiameterMm": 3,
+    "innerRetainerPitchMm": 17,
+    "innerRetainerDiameterMm": 2.6,
+    "assembledThicknessMm": 6.35
+  },
+  "derivedOutline": {
+    "earOuterRadiusMm": 3,
+    "completeHeightMm": 47,
+    "statement": "44mm dimension terminates at lower mounting-hole centre. Outer ear radius3mm is scaled from own drawing;complete47mm extent is inferred. No scaling to conflicting product-table53mm."
+  },
+  "panel": {
+    "glassMm": [
+      42.04,
+      27.22,
+      1.25
+    ],
+    "visiblePixels": [
+      128,
+      56
+    ],
+    "activeMm": [
+      35.05,
+      15.32
+    ],
+    "controllerMemory": [
+      128,
+      64
+    ],
+    "unmappedRows": 8,
+    "mappingAsserted": false,
+    "source": "Own linked ZJY-2856KLBAG01.pdf technicalpages1/2 and exact own front photo"
+  },
+  "reconstructionScope": [
+    "Own PCB perimeter and actual display window/two ear bores/two retainer bores/eight Grove solder bores",
+    "Real transparent glass and two-sided lightblue transparent external pixel planes",
+    "Actual black fixed service cover,physicalfrontfilm,two hollow metal standoffs and hex blind-socket screws",
+    "Own exposed I2C/boost/LDO/passive/FPC24-pin components and unbridged address pads",
+    "Two actual white Grove sockets,each with four contacts and independent physical attachment"
+  ],
+  "inferred": [
+    "PCB corner/notch/ear radii",
+    "Glass installation and perimeter-seal dimensions",
+    "Concealed package sizes/placement",
+    "FPC bend/track placement and socket/tail/contact dimensions",
+    "Cover thickness/standoff/thread/screw profile",
+    "Reference-redraw typeface/color/registration"
+  ],
+  "excludedBehavior": [
+    "Button/LED/buzzer/MCU carried over from old U158",
+    "Internal controller64-rowmapping/registers/address selection/I2C/electrical simulation",
+    "Normal-use cover hinge or separate movable accessory not evidenced"
+  ]
+}

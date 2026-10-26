@@ -1,0 +1,262 @@
+{
+  "id": "typec-to-grove",
+  "sku": "U151",
+  "officialDocs": "https://docs.m5stack.com/en/unit/typec2grove",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "queries": [
+      "Unit TypeC to Grove U151 USB-C 结构文件 尺寸 接口 引脚",
+      "Unit TypeC to Grove U151 INPUT CH Black NC CN2 pin4 GND 输入 地线 原理图 表格 冲突"
+    ],
+    "rawResponseDistributed": false,
+    "result": "Exact U151 passive TypeC supply/Grove adapter32×24×10.8mm,one signal input/two outputs,own schematic/drawing/CAD.Only four connectors and two5.1K resistors,no active/control/LED devices.INPUT blackNC table conflicts with own CN2pin4 commonGND schematic and own rear GND print.Unrelated Grove Converter/A140 results excluded."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/typec2grove/typec2grove_07.webp",
+    "sha256": "87e347e1210dcb42062a5610814fd25ddd968b8ec0385266dd025f3f54ed9e47"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/a9ac25ce7325a37b03b3f4457a6f45caf3b058dc/Products/U151_Unit_TypeC_to_Grove/Structures/Unit_TypeC%20to_Grove.stl",
+      "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/869f5a4642334b25657fc6c35ae210b36414c19e",
+      "commit": "a9ac25ce7325a37b03b3f4457a6f45caf3b058dc",
+      "gitBlob": "869f5a4642334b25657fc6c35ae210b36414c19e",
+      "sha256": "884a0fa77bb5b2304425e03050fae30ab3d3a68cbe960efb4b534df7cbe7b0a7",
+      "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/a9ac25ce7325a37b03b3f4457a6f45caf3b058dc/Products/U151_Unit_TypeC_to_Grove/Structures/Unit_TypeC%20to_Grove.stl",
+      "sha256": "884a0fa77bb5b2304425e03050fae30ab3d3a68cbe960efb4b534df7cbe7b0a7"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/605/UNIT-TypeC2Grove_sch_sch_01.png",
+      "sha256": "35f784d7f629f505add1f9d2281910cc2ab08d52a00ed298e0d34d3990d551fb"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/798/U151_Model_Size_sch_01.png",
+      "sha256": "881d6202ca120ff399cabe2b571d425d99613fca3bb3e93c2f2d8234bbb6f182"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/typec2grove/typec2grove_01.webp",
+      "sha256": "a08cab3b016183808f8f9d837fd4037161b909f840cd0a5f5c1d12c73adb1fbd"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/typec2grove/typec2grove_09.webp",
+      "sha256": "78d7654ac1c58e0f0734adb8e98d23625634b6227c7039cf99efe6dbb8c6c9f4"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/typec2grove/typec2grove_03.webp",
+      "sha256": "4f3697a6bcc8d695e846a67d062aaaee616debaf524fdb0ff805498d399a5e4c"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/typec2grove/typec2grove_04.webp",
+      "sha256": "3944d9a4e5fb6daaedf727ad7eac49a5be60724ba887a31e5d1071aa28000b72"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/typec2grove/typec2grove_05.webp",
+      "sha256": "bb0f4655c1090847c0b45d402b2b54520d07b5664ba51419681fc817643aa33c"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/typec2grove/typec2grove_06.webp",
+      "sha256": "258f0cb0fba61c007cc8dbb43fe1b4318dcd6c167a886df3c63bd53d5808d92f"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/typec2grove/typec2grove_07.webp",
+      "sha256": "87e347e1210dcb42062a5610814fd25ddd968b8ec0385266dd025f3f54ed9e47"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/typec2grove/typec2grove_08.webp",
+      "sha256": "bfd5f238395c31793db2beb130fa0cbe2d9497fcf7193c47f015c1b1dca3bd58"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/typec2grove/typec2grove_10.webp",
+      "sha256": "e955ea183ca425e062c3f6bed22f3df13f3dac67a1460db84c7f4fdab1053ec9"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "originalAssemblyTriangles": 3250,
+    "outputTriangles": 3250,
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      265.2688293457031,
+      269.2234802246094,
+      2.000001
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "localModification": null,
+    "notes": "Exact own U151 path-specific commit and Git blob verified.Component0 complete3250-triangle assembled24×32×8mm shell retained intact.Components1/2 displaced1660/1590-triangle duplicate halves excluded.One common translation,identity axes,scale1,no native triangles removed,filled,patched,scaled or independently repositioned.Three actual front-facing Grove sockets provide2.8mm projection to own drawing10.8mm total depth."
+  },
+  "dimensions": {
+    "nominalMm": [
+      32,
+      24,
+      10.8
+    ],
+    "vendorDimensionOrderMm": [
+      32,
+      24,
+      10.8
+    ],
+    "dimensionDrawingMm": [
+      24,
+      32,
+      10.8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      32,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24,
+      32,
+      10.799999904632568
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -4
+      ],
+      [
+        8,
+        -4
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "grovePositionsMm": [
+      [
+        -7.5,
+        5.5,
+        6.8
+      ],
+      [
+        0,
+        5.5,
+        6.8
+      ],
+      [
+        7.5,
+        5.5,
+        6.8
+      ]
+    ],
+    "groveFace": "front",
+    "grovePitchMm": 7.5,
+    "groveLengthMm": 10,
+    "groveWidthMm": 5.2,
+    "groveWidthInferred": true,
+    "groveHeightMm": 5.2,
+    "usbPositionMm": [
+      0,
+      -15.8,
+      0.4
+    ],
+    "dimensionEvidence": "Exact U151 own drawing24×32×8 casing and10.8 total including projecting Grove bodies;10mm length,5.2mm height,7.5mm jack pitch;5.2mm rendered jack width is inferred,Ø5mounts16mm apart/12mm from bottom.Connector depth/contact/solder/PCB installation remains appearance reconstruction."
+  },
+  "pinLabelConflict": {
+    "productTable": "INPUT BlackNC/RedNC/YellowS2/WhiteS1",
+    "schematic": "CN2pin4GND common with CN3/CN4/USB;CN2pin3VDDNC",
+    "actualRearPrint": "InputGND black cell and common ground arrows;only input red supply cell crossed out",
+    "resolution": "Unconfirmed current-board ground continuity;preserve source conflict,do not assert electrical behavior.",
+    "officialFeedbackId": "a76adbcaf39a4038ae3bdd319b2f6e26"
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 3,
+    "sourceDetails": "docs/research/typec-to-grove/artwork.json",
+    "originalsDistributed": false
+  },
+  "officialDocumentationFeedback": {
+    "feedback_id": "a76adbcaf39a4038ae3bdd319b2f6e26",
+    "accepted": true,
+    "category": "incorrect_information",
+    "severity": "low",
+    "issue": "INPUT blackNC product table conflicts with original CN2pin4GND schematic and assembled rear-stickerGND;request current PCB continuity/revision correction."
+  },
+  "scope": "Complete own native assembled shell,three actual front-facing upright four-contact sockets,passive shaped PCB/twelve solder bores/plated lands/twoCC resistors,bottom power-only USB-C/retaining blind-hex screw and three supported real adhesive films.Appearance,physical attachment and externally requested pose only;no internal electrical behavior.",
+  "inferred": [
+    "PCB outline/plane,connector/solder installation and twelve drill/pad sizes",
+    "Grove cavity/latch/tip/contact/tail dimensions around own10mm length/5.2mm height drawing datums;5.2mm transverse width inferred",
+    "USB annular mouth/carrier/tongue/six power-contact appearance;exact mechanical BOM unconfirmed",
+    "Fixed retaining head/hex/shank dimensions,no screw motion or tightening",
+    "Three film dimensions/typeface/colors/registration and arrow spacing"
+  ],
+  "notes": [
+    "Complete3250 exact own selected native triangles retained scale1/identity axes/common translation.",
+    "Three actual uprightGrove mouths face+Z,contact row−Y and latch−X;correct explicit Port basis,not generic bottom horizontal socket.",
+    "Canonical grove uses only actual left INPUT;out-1/out-2 remain independent actual output sockets.",
+    "Own8mm casing versus10.8mm total socket projection recorded separately.",
+    "Exact source images support real PCB/connectors/three films;no print substitutes for hardware or fills apertures.",
+    "Input-GND label conflict retained and officially reported;no electrical continuity,voltage,current or3A certification claim.",
+    "No MCU,regulator,arbitrary protection,LED,button,sensor,display,joint or custom attachment invented.",
+    "Model/GroveModule every physical attribute/index/world pose invariant without artwork.",
+    "Three final exact-model ordinary reference-redraw PNGs only;source vectors/generator/raw images/private intake excluded."
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/typec-to-grove/assembly.js",
+      "sha256": "14f1d3e800b220ce4b20c0d5a6c5bfe002d0be6ef101e25080c1d6f33c7092e6"
+    },
+    {
+      "path": "src/units/typec-to-grove/cad-map.json",
+      "sha256": "e55f7ce27dba8070d1bcc1f7e7c7189393d3906d58824a20011057cac0ed70d4"
+    },
+    {
+      "path": "src/units/typec-to-grove/connectors.js",
+      "sha256": "c17578d4cd98f5b4259e1a31682fc038c2630d6faa0aa524a4ea7dbbcae4cd42"
+    },
+    {
+      "path": "src/units/typec-to-grove/dimensions.js",
+      "sha256": "8cc2421d8222ca873862c910902d2153528f286a9d031ba98da9219c75ab867e"
+    },
+    {
+      "path": "src/units/typec-to-grove/geometry-data.js",
+      "sha256": "826b9f7405a7ed29afcfc634ed9be3d44437c294580f6f0deaeac086f007c925"
+    },
+    {
+      "path": "src/units/typec-to-grove/index.js",
+      "sha256": "49e2c0e7a9e38124a75741b0da2350c5f39e2cedf704b4c7046e129d7ba9677c"
+    },
+    {
+      "path": "src/units/typec-to-grove/reference-redraw-back.png",
+      "sha256": "44ca3eaf84e4917835d3ff440b29e43b7372922d56b4f73b58b56f3dd8ad26cc"
+    },
+    {
+      "path": "src/units/typec-to-grove/reference-redraw-banner.png",
+      "sha256": "c000a80b5bebf859c5db4324a6afae6d011fa23ed41284f5be1806042d4f0b2c"
+    },
+    {
+      "path": "src/units/typec-to-grove/reference-redraw-power.png",
+      "sha256": "7a7a31a06da6ef6694029c004bd677d59914d92e7511cbf889056b898180fed9"
+    },
+    {
+      "path": "src/units/typec-to-grove/stickers.js",
+      "sha256": "bdb5c105192ef03bc971be2555557f1c35c23dfd1444b86b0376f57fa7aefb7b"
+    }
+  ]
+}

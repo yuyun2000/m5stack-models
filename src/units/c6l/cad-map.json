@@ -1,0 +1,56 @@
+{
+  "sku": "U202",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/2a547f4cb53263c7c263c2fdc7c80f54cfb93fdc/Products/U202_Unit_C6L/Structures/Unit_C6L.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/5d9b8f363cde41c692bf2fe4c6dde15b1f64a25e",
+  "commit": "2a547f4cb53263c7c263c2fdc7c80f54cfb93fdc",
+  "gitBlob": "5d9b8f363cde41c692bf2fe4c6dde15b1f64a25e",
+  "sha256": "7cf2c6368ae681ad1c0c237dc023279e11e010facdeb81b665d79690e08629b5",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/2a547f4cb53263c7c263c2fdc7c80f54cfb93fdc/LICENSE",
+  "origin": [
+    12,
+    28,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 0,
+      "name": "C6L complete native assembled front rear shell and integral buttons",
+      "material": "shell",
+      "triangles": 6442
+    },
+    {
+      "component": 4,
+      "name": "C6L native status light guide",
+      "material": "lightGuide",
+      "triangles": 256
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2,
+    3
+  ],
+  "originalAssemblyTriangles": 6698,
+  "originalShellTriangles": 6442,
+  "localModification": null,
+  "notes": "Exact own U202 path-specific commit/Git blob checked. Component0 is complete6442-triangle assembled front/rear shell with original front user U-cut/RGB slot,side reset tongue,screen,back buzzer/antenna-retainer apertures,mounting bores and seam. Component4 is the assembled256-triangle status light guide,not a keycap. Components1/2/3 are displaced duplicate halves/guide. One common translation only,scale1,no source face removed,filled or patched. Runtime deformation affects only original integral tongues;all neutral coordinates remain original. Shell envelope24×56×8mm;drawing62×24×8mm includes6mm antenna receptacle extension,not supplied84/108mm radomes."
+}

@@ -1,0 +1,133 @@
+{
+  "sku": "U104",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/78baf68c49d623a7c8a9277c45d97c8e4ffbb80d/Products/U104_Unit_CO2L/Structures/Unit_CO2L.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/7c2829ed80aed79770d05479ad6519f04d346b8e",
+  "commit": "78baf68c49d623a7c8a9277c45d97c8e4ffbb80d",
+  "gitBlob": "7c2829ed80aed79770d05479ad6519f04d346b8e",
+  "sha256": "c91de459d790ec6f85ae96321928c97983bce5d532b132a74136767c59bdbc80",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/78baf68c49d623a7c8a9277c45d97c8e4ffbb80d/LICENSE",
+  "origin": [
+    -240,
+    0,
+    5.2
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 0,
+      "name": "CO2L native assembled shell with six reconstructed real side vents",
+      "material": "shell",
+      "triangles": 19742
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 13396,
+  "outputTriangles": 19742,
+  "localModification": {
+    "kind": "six-real-side-vent-slots",
+    "reason": "Own U104 official STL lacks side slots explicitly present in own product photos and dimension drawing",
+    "sourceInputSHA256": "c91de459d790ec6f85ae96321928c97983bce5d532b132a74136767c59bdbc80",
+    "outputGeometryJSONSHA256": "176e0c70a0651be11ee2e8fceb91f5dc6af21b9ebb76433ecc9e2c18a4adc887",
+    "feedbackId": "39fe0d8f32f54e4ca6b6434fc792efa8",
+    "sourceAssemblyTriangles": 13396,
+    "unclippedSourceTriangles": 13385,
+    "cutSourceTriangles": 11,
+    "removedSourceTriangles": 0,
+    "outputTriangles": 19742,
+    "newSlotWallTriangles": 1632,
+    "wallIntervals": 408,
+    "subdividedBoundaryVertices": 1204,
+    "before": {
+      "triangles": 13396,
+      "edges": 20091,
+      "unpairedOrDirectedEdges": 0,
+      "sharedNativeSeamEdges": 3,
+      "signedVolumeMm3": 4188.708494727888
+    },
+    "after": {
+      "triangles": 19742,
+      "edges": 29593,
+      "unpairedOrDirectedEdges": 0,
+      "sharedNativeSeamEdges": 20,
+      "signedVolumeMm3": 4085.187129032616
+    },
+    "sidePlanes": [
+      {
+        "sign": -1,
+        "face": "outer",
+        "m": 0.03492001131408484,
+        "c": -11.818412127583729
+      },
+      {
+        "sign": -1,
+        "face": "inner",
+        "m": 0.03483984023564535,
+        "c": -10.61725435225295
+      },
+      {
+        "sign": 1,
+        "face": "outer",
+        "m": -0.03492027727329283,
+        "c": 11.818414556444058
+      },
+      {
+        "sign": 1,
+        "face": "inner",
+        "m": -0.03493881775891339,
+        "c": 10.617698089421117
+      }
+    ],
+    "slots": [
+      {
+        "id": "long",
+        "centerYZ": [
+          8.45,
+          4.1
+        ],
+        "lengthMm": 20.5,
+        "heightMm": 1.2
+      },
+      {
+        "id": "short-lower-y",
+        "centerYZ": [
+          2.25,
+          1.1
+        ],
+        "lengthMm": 8.1,
+        "heightMm": 1.2
+      },
+      {
+        "id": "short-upper-y",
+        "centerYZ": [
+          14.65,
+          1.1
+        ],
+        "lengthMm": 8.1,
+        "heightMm": 1.2
+      }
+    ],
+    "scope": "Only side-wall aperture regions clipped/retriangulated and new bore walls built;all other native surfaces retained in place at scale1.No global shell scaling,independent part shifts or photographic fake slots.Slot dimensions/registration are exact-model reference inference,not manufacturing tolerances."
+  },
+  "notes": "Own U104 complete assembled component0 is the input baseline;components1/2 are displaced duplicate halves.The source13396 triangles are not falsely claimed unchanged:side slots required a documented local appearance amendment.Input/output hashes,triangle counts,exact source-wall ray intersections and directed closure are recorded."
+}

@@ -1,8 +1,8 @@
 # 本地 Unit 扩展批次
 
-2026-10-26。本页整理当前公开工作副本中的本地增量，便于其他Agent接入、查阅各批证据和续作。
+2026-10-27。本页整理当前公开工作副本中的本地增量，便于其他Agent接入、查阅各批证据和续作。
 
-当前catalog为14款主机、113款Unit，共127款；阶段计数`{"modeled": 127}`。生成本页时的提交基线为`32c95e05ded1bb7f1ff6437f5bce0db9bf91eefd`，该基线catalog有112款。此页描述当前源码快照；当前提交和远端状态以Git日志及GitHub main为准。各历史progress中的未提交/未推送字样只描述各自保存时点。 本次[127款源码同步](GIT-SYNC-127-2026-10-26.md)包含这15款增量、28张PNG及三旧端子闭合修复。
+当前catalog为14款主机、137款Unit，共151款；阶段计数`{"modeled": 151}`。生成本页时的提交基线为`3681a6482aff96501d44659ba5a1603246f1fe1f`，该基线catalog有127款。此页描述当前源码快照；当前提交和远端状态以Git日志及GitHub main为准。各历史progress中的未提交/未推送字样只描述各自保存时点。[本次151款同步](GIT-SYNC-151-2026-10-27.md)包含批29–36的24款Unit与48张PNG，后续新增另行记录。
 
 | 批次 | 产品ID | 检查点 |
 | --- | --- | --- |
@@ -36,12 +36,28 @@
 | Mini PDM / Mini BPS v1.1 / MIC | mini-pdm / mini-bps-v11 / mic | [本地进度](../artifacts/audio-pressure-expansion/progress.json) |
 | Accel / OP90 / OP180 | accel / op90 / op180 | [本地进度](../artifacts/accel-op90-op180-expansion/progress.json) |
 | Unit ID / RF433R / RF433T | unit-id / rf433r / rf433t | [本地进度](../artifacts/id-rf433-expansion/progress.json) |
+| ZigBee / CO2L / INA226-1A | zigbee / co2l / ina226-1a | [本地进度](../artifacts/zigbee-co2l-ina226-1a-expansion/progress.json) |
+| Finger / 3.96 / Scales | finger / unit-396 / scales | [本地进度](../artifacts/finger-396-scales-expansion/progress.json) |
+| C6L / Gateway H2 / ChainBus | c6l / gateway-h2 / chainbus | [本地进度](../artifacts/c6l-gateway-chainbus-expansion/progress.json) |
+| Glass2 / TypeC-to-Grove / DoF10 | glass2 / typec-to-grove / dof10 | [本地进度](../artifacts/glass-typec-dof10-expansion/progress.json) |
+| PoE-P4 / Cat1-CN / Grove-to-Grove | poe-p4 / cat1-cn / grove-to-grove | [本地进度](../artifacts/poep4-cat1-grove-expansion/progress.json) |
+| UnitV2 / LoRaWAN-CN470 / Proto | unitv2 / lorawan-cn470 / proto | [本地进度](../artifacts/unitv2-lorawan-proto-expansion/progress.json) |
+| Weight / SSR / PoE CAM-W v1.1 | weight / ssr / poe-cam-w-v11 | [本地进度](../artifacts/weight-ssr-poecam-expansion/progress.json) |
+| NBIoT2 / NBIoT-CN / Mini Proto | nbiot2 / nbiot-cn / mini-proto | [本地进度](../artifacts/nbiot-mini-proto-expansion/progress.json) |
 
 各进度记录绑定相应批次的源码/检查范围。近期新增只执行必要局部结构、动作/API、接线夹具及构建；没有逐面浏览器复核或全量验收。`modeled`表示已有实现，不能视为完成视觉或实物配合验收。
 
 ## 接入入口
 
 - [Agent总指南](AGENT-INTEGRATION.md)：按需loader、输入/外驱状态、层级地址与生命周期。
+- [NBIoT2/NBIoT-CN/Mini Proto](NBIOT-MINI-PROTO-UNITS.md)：各自蜂窝模组/卡座/SMA与可拆天线、真实后盖服务和本款48孔洞板及同步印刷。
+- [Weight/SSR/PoE CAM-W v1.1](WEIGHT-SSR-POECAM-UNITS.md)：原款HX711/小型SSR的真实端子与外驱螺钉、OV3660/网口/实际控件和自身支架附件及同步印刷。
+- [UnitV2/LoRaWAN-CN470/Proto](UNITV2-LORAWAN-PROTO-UNITS.md)：本款摄像Unit实体/风扇与附属装配、CN470可拆天线及真实洞板与同步贴纸。
+- [PoE-P4/Cat1-CN/Grove-to-Grove](POEP4-CAT1-GROVE-UNITS.md)：本款PoE/双USB/真实控件灯、普通SMA可动天线/后盖服务及三socket物理转接与同步贴纸。
+- [Glass2/TypeC-to-Grove/DoF10](GLASS-TYPEC-DOF10-UNITS.md)：透明OLED外部framebuffer、实际USB-C/三Grove适配与真实地址拨杆/同步贴纸。
+- [C6L/GatewayH2/ChainBus](C6L-GATEWAY-CHAINBUS-UNITS.md)：外部OLED/真实控件/RP-SMA、闭壳与裸板及真实EXT直接插接和同步贴纸。
+- [Finger/3.96/Scales](FINGER-396-SCALES-UNITS.md)：真实电容采集面、可拆端子和秤台/键帽/独立灯及同步贴纸。
+- [ZigBee/CO2L/INA226-1A](ZIGBEE-CO2L-INA226-1A-UNITS.md)：真实RF模组/SMA天线、SCD41与1A专属测量实体和同步贴纸。
 - [Unit ID/RF433R/RF433T](ID-RF433-UNITS.md)：真实加密IC与接收/发射封装、固定PCB天线和同步贴纸。
 - [Accel/OP90/OP180](ACCEL-OP90-OP180-UNITS.md)：真实加速度封装、两种固定光电叉与检测空气槽及同步贴纸。
 - [Mini PDM/Mini BPS v1.1/MIC](AUDIO-PRESSURE-UNITS.md)：真实声学/气压封装、声孔与可调头及同步贴纸。

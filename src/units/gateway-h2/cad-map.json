@@ -1,0 +1,48 @@
+{
+  "sku": "U195",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/784c926812716110e9b76041bfa876514017f81a/Products/U195_Unit_Gateway_H2/Structures/Unit_Gateway_H2.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/30b057378d5ee35b8377f7db70d08b570cb0e55d",
+  "commit": "784c926812716110e9b76041bfa876514017f81a",
+  "gitBlob": "30b057378d5ee35b8377f7db70d08b570cb0e55d",
+  "sha256": "46b3ffb2d11136533898fdcac71875e7141e3d5ddda3eb83c34b2dfdb5c7d3ca",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/784c926812716110e9b76041bfa876514017f81a/LICENSE",
+  "origin": [
+    0,
+    0,
+    1.2
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 0,
+      "name": "Gateway H2 complete native assembled front and rear shell",
+      "material": "shell",
+      "triangles": 3580
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 3580,
+  "localModification": null,
+  "notes": "Exact own U195 path-specific commit and expected Git blob verified. Component0 is the complete3580-triangle assembled front/rear shell,24×48×8mm. Components1/2 are displaced duplicate shell halves. Full assembled part retained unscaled/unmodified with one common translation;no native faces removed,patched,filled or repositioned. Product table48×24×8mm is the same envelope in vendor length/width order."
+}

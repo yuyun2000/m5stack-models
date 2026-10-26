@@ -1,0 +1,450 @@
+{
+  "id": "nbiot-cn",
+  "sku": "U112",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_NBIoT-CN",
+  "retrievedAt": "2026-10-27",
+  "officialMCP": {
+    "queries": [
+      "Unit NBIoT-CN U112 SIM7020C 自款 SMA 天线 外形 长度 转轴 NanoSIM 后盖 三颗螺钉 Grove 结构装配",
+      "SIM7020C 模组 机械尺寸 厚度 LCC 封装 引脚数量"
+    ],
+    "responseSha256": "95188706a3eea99f099462fe2630254f9b44c99d86f5304d9634b6b904609fac",
+    "packageResponseSha256": "cf9bd2eaa622da8fe7aba82ae19fb974dbbb37951f2a845eb939282a6c23903b",
+    "rawResponseDistributed": false,
+    "result": "Exact own U112:SIM7020C,71.5×24×8mm,internalNanoSIM,ordinarySMA,blueGrove;packageUnit/antenna/hexwrench/20cmGrove cable,notSIMcard. ExactSIM7020C footprint17.6×15.7mm confirmed;2.3mm shieldheight/installation remains a series-based visualestimate."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/nbiot_cn/nbiot_cn_06.webp",
+    "sha256": "009d1c505a351fb901fe00ddf5824005610988c1c119751e6f0aab5e89f0b94b"
+  },
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/nbiot_cn/nbiot_cn_01.webp",
+      "sha256": "86e064be54bf86ccfc9b705849de5b28654dda93ca1e94398ad8ebc2e06a2127"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/nbiot_cn/nbiot_cn_02.webp",
+      "sha256": "a948c230494c3e554ca99a891d633c6c371282d3fd51a8c70cfb04987ff7a764"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/nbiot_cn/nbiot_cn_03.webp",
+      "sha256": "5c50b04b381352f16b6b95b408e372f35fd0c2574e98eabd61c968ed9c6cd825"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/nbiot_cn/nbiot_cn_04.webp",
+      "sha256": "c808ed6f7e4ebf05d17677c15f4f774050a800b0efb66f0694fb3c78b2643475"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/nbiot_cn/nbiot_cn_05.webp",
+      "sha256": "4b7a14ca6a58e11826253e83d7cd3a979a48fe701a777837348f34c7efd3394b"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/nbiot_cn/nbiot_cn_06.webp",
+      "sha256": "009d1c505a351fb901fe00ddf5824005610988c1c119751e6f0aab5e89f0b94b"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/nbiot_global/nbiot_global_sch_01.webp",
+      "sha256": "674520ab1fc99396cd26a53d743d037424bb1d228dbbd4fe7aa78aacf62b7f9b"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/nbiot_global/nbiot_global_sch_02.webp",
+      "sha256": "b53ff3ed62accdb8f8b109383f9d030b20b89e047e4514a76c7d475af61c2d42"
+    }
+  ],
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3/Products/U112_Unit_NBIoT-CN/Structures/Unit_NBIoT-CN.stl",
+      "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/cd451d15e2d03f37e80e7db05bf7f82fa56a78ba",
+      "commit": "c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3",
+      "lastChangedCommit": "c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3",
+      "lastChangedAt": "2026-08-13T10:40:16Z",
+      "gitBlob": "cd451d15e2d03f37e80e7db05bf7f82fa56a78ba",
+      "sha256": "6d93ea1962caf38864027accc041acb990a61e3360581aad16edf30ec294b17f",
+      "license": "MIT;preserve licenses/M5_Hardware-MIT.txt",
+      "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3/LICENSE",
+      "licenseSha256": "44611d917bece311f5c8eeffce83d8bf9e9ca3f815d262f694ff4a7996af50ea"
+    }
+  ],
+  "selectedAssembly": {
+    "sourceAssemblyComponents": [
+      0
+    ],
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "originalAssemblyTriangles": 6592,
+    "outputTriangles": 6592,
+    "parts": [
+      {
+        "component": 0,
+        "correspondingLaidOutComponent": 2,
+        "role": "front",
+        "name": "NBIoT-CN complete native front housing",
+        "material": "shell",
+        "triangles": 2734
+      },
+      {
+        "component": 0,
+        "correspondingLaidOutComponent": 1,
+        "role": "rear",
+        "name": "NBIoT-CN complete native rear housing",
+        "material": "shell",
+        "triangles": 3858
+      }
+    ],
+    "origin": [
+      0,
+      32,
+      -4
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "localModification": null,
+    "notes": "Exact own U112 source0 full6592 triangles retained under one common proper rotation/translation, scale1. Source0 faces partitioned only by directed cyclic correspondence to laid-out duplicates2(front2734)/1(rear3858), maximum deviation 0.000004827976226806641mm; no face repair/removal/fill, borrowed shell or independently repositioned native parts. Laid-out duplicate copies excluded. Original assembled mating coincidences remain; independent material topology is checked in smoke. Not a manufacturing single-manifold assembly."
+  },
+  "sourceTopology": {
+    "sourceSha256": "6d93ea1962caf38864027accc041acb990a61e3360581aad16edf30ec294b17f",
+    "matchedTriangles": 6592,
+    "unmatchedAssembledTriangles": 0,
+    "directedCyclicVertexCorrespondenceOnly": true,
+    "maxSourceVertexDeviationMm": 4.827976226806641e-06,
+    "partitions": {
+      "front": 2734,
+      "rear": 3858
+    }
+  },
+  "runtimeTopology": {
+    "all180PhysicalMeshesDirectedCountTwo": true,
+    "allPositiveVolume": true,
+    "ownOriginalAssemblyFacesRetained": 6592,
+    "nativeFrontFaces": 2734,
+    "nativeRearFaces": 3858,
+    "note": "Independent original front/rear parts are closed withpositivevolume. Assembled source mating surfaces remain;no source repair/removal/independent native-part repositioning or manufacturing single-manifold claim."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      71.5,
+      8
+    ],
+    "vendorDimensionOrderMm": [
+      71.5,
+      24,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      64,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24,
+      71.5000002861023,
+      8
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -20
+      ],
+      [
+        8,
+        -20
+      ]
+    ],
+    "mountingHoleDiameterMm": 4.85,
+    "fixedSMAEndY": 39.5,
+    "ownAntennaEstimatedEnvelopeMm": [
+      10,
+      102.00000009536743,
+      10
+    ],
+    "antennaDimensionsAreInferred": true,
+    "frontLabelRecessMm": [
+      16,
+      36.3
+    ],
+    "rearLabelRecessMm": [
+      16.2,
+      36.2
+    ],
+    "evidence": "Exact ownsource0case24×64×8mm andnative boresØ4.85/16mm pitch/12mmfrombottom. Official71.5mmlengthincludesSMA;not antenna. Own photo-derived10×102×10mm antenna estimate is separately labeled."
+  },
+  "hardware": {
+    "module": "SIM7020C17.6×15.7mm footprint withmoduleboard/shield/perimeterlandappearance;heightandinstalledposeinferred. No SIM7028/globalG replacement.",
+    "carrier": "Own inferredgreenFR4carrier0.8mm,topZ−0.5,real native-mount/postreliefs,fixingbore,Groveclearance,4actualplatedbarrels and8annularlands. Own native locating features explicitly avoided.",
+    "schematicBoundary": "The exact U112 product page links nbiot_global_sch_01/02 showing SIM7020G/SIM7020C and23pinHCore. These support a module/SIM/UART/IPEX/power functional reference,not exact populated Unit carrier/BOM. Secondaryprotection,transistor/regulator/passive/internalD1 envelopes andall placements are explicitly inferred fromthat context. No physical23pinHCore connector orcompleteproductionBOM is claimed.",
+    "Grove": "ActualblueHY2.0-4P sides/rails/floor/rear/tongue,4metal contacts,molded-inreturns androundPCBtailsthrough realplatedbores. DocumentaryTXD/RXD/5V/GND only.",
+    "SMA": "OrdinaryfemaleSMA withactualhollowshaft/PTFE/hollowfemalecontact,closedvisualhelicalthread,goldroundinstallationbody/foot behindbothnativeyellow-goldwindows. No exteriorlight,button,RP-SMA orRFbehavior.",
+    "SIM": "InternalfixedNanoSIMholderwithdielectricbase,6contactenvelopes,realmetalretainerwindow andfixedguides/retentionbarrels. Holder/installation inferred;no defaultcard,trayaccessory,hingejoint orcarddata. PassiveSIManchorregisteredonlywithoutrearcover.",
+    "fixings": "Threeactualrearhexsocketheads,recessedfloors andretainedshafts at(±8,26)/(0,−20).",
+    "feedline": "FixedIPEXreceptacle/retainedcap andclosedblackcoaxappearance endingatSMA installation;routeinferred,nosimulation."
+  },
+  "antenna": {
+    "export": "Antenna",
+    "connector": "sma-female",
+    "physicalConnector": "sma-male",
+    "estimatedEnvelopeMm": [
+      10,
+      102.00000009536743,
+      10
+    ],
+    "scope": "Own U112 hero showsroundtransverseaxis-cap andpackageviewbentbasalstructure. AxisX,pivotY12.6,0…90visualrange,102mmoverall estimate andallshape details are inferred,not borrowed U111-B/U204 dimensions orratedstops.",
+    "fixed": [
+      "openboredmalecoupling",
+      "metal lip/internalthread",
+      "dielectric/solidmalecentrepin",
+      "neck",
+      "boredforkcheeks",
+      "retainedaxle"
+    ],
+    "moving": [
+      "boredknuckle",
+      "taperedshoulder",
+      "rubberrod",
+      "closedroundedtip",
+      "moldedband"
+    ],
+    "noSmaNutSpinOrRF": true,
+    "hingeClearance": [
+      {
+        "angleDeg": 0,
+        "status": "pass",
+        "candidatePairs": 3,
+        "surfaceProbes": 288,
+        "interiorGridProbes": 81,
+        "directions": 3,
+        "scope": "Bidirectional vertex/triangle-centre samples and finite-volume overlap grids against actual fixed geometry plus added metal/plastic; no manufacturing fit or exhaustive CSG proof"
+      },
+      {
+        "angleDeg": 45,
+        "status": "pass",
+        "candidatePairs": 5,
+        "surfaceProbes": 973,
+        "interiorGridProbes": 135,
+        "directions": 3,
+        "scope": "Bidirectional vertex/triangle-centre samples and finite-volume overlap grids against actual fixed geometry plus added metal/plastic; no manufacturing fit or exhaustive CSG proof"
+      },
+      {
+        "angleDeg": 90,
+        "status": "pass",
+        "candidatePairs": 4,
+        "surfaceProbes": 289,
+        "interiorGridProbes": 108,
+        "directions": 3,
+        "scope": "Bidirectional vertex/triangle-centre samples and finite-volume overlap grids against actual fixed geometry plus added metal/plastic; no manufacturing fit or exhaustive CSG proof"
+      }
+    ]
+  },
+  "publicAPI": {
+    "exports": [
+      "Model",
+      "GroveModule",
+      "Antenna",
+      "spec"
+    ],
+    "bodyComponentOrder": [
+      "grove",
+      "antenna"
+    ],
+    "serviceComponentOrder": [
+      "grove",
+      "antenna",
+      "sim"
+    ],
+    "ports": [
+      "grove",
+      "antenna"
+    ],
+    "canonicalCableInput": "grove",
+    "controls": [],
+    "leds": [],
+    "displays": [],
+    "sensors": [],
+    "bodyJoints": [],
+    "joints": [],
+    "anchors": [],
+    "serviceAnchors": [
+      "sim"
+    ],
+    "accessories": {
+      "antenna": {
+        "export": "Antenna",
+        "connector": "sma-female",
+        "physicalConnector": "sma-male",
+        "componentOrder": [
+          "tilt"
+        ],
+        "joints": [
+          "tilt"
+        ],
+        "limitsDeg": [
+          0,
+          90
+        ],
+        "externallyDriven": true,
+        "inferredAxisAndLimits": true
+      }
+    },
+    "defaults": {
+      "rearCover": true,
+      "antenna": false,
+      "antennaAngleDeg": 0
+    },
+    "configurations": [
+      {
+        "id": "body",
+        "name": "Closed body without antenna",
+        "options": {
+          "rearCover": true,
+          "antenna": false
+        }
+      },
+      {
+        "id": "antenna",
+        "name": "Closed body with supplied antenna",
+        "options": {
+          "rearCover": true,
+          "antenna": true,
+          "antennaAngleDeg": 0
+        }
+      },
+      {
+        "id": "sim-service",
+        "name": "Rear cover removed for internal NanoSIM holder",
+        "options": {
+          "rearCover": false,
+          "antenna": false
+        }
+      },
+      {
+        "id": "sim-service-antenna",
+        "name": "Rear service with antenna folded45degrees",
+        "options": {
+          "rearCover": false,
+          "antenna": true,
+          "antennaAngleDeg": 45
+        }
+      }
+    ],
+    "configurationSchema": {
+      "rearCover": {
+        "type": "boolean",
+        "default": true
+      },
+      "antenna": {
+        "type": "boolean",
+        "default": false
+      },
+      "antennaAngleDeg": {
+        "type": "number",
+        "default": 0,
+        "range": [
+          0,
+          90
+        ]
+      }
+    },
+    "assemblyProperty": "nbiotCnAssembly",
+    "moduleExport": "GroveModule",
+    "groveModuleExtraComponents": [
+      "unitFrame",
+      "cable"
+    ],
+    "noSuppliedSIMCard": true,
+    "noExternalLEDOrButton": true,
+    "noRFOrNetworkBehavior": true
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 2,
+    "servicePngCount": 1,
+    "sourceDetails": "docs/research/nbiot-cn/artwork.json",
+    "originalsDistributed": false
+  },
+  "inferred": [
+    "Carrieroutline/installedplane/thickness,hiddenSIM7020C moduleheight/shield/lands/secondarypackagepositions",
+    "LinkedglobalHCore-to-ownGrovecarrier assemblymapping;notexactpopulatedBOM",
+    "InternalNanoSIMholderdimensions/metalretainer/contactlayout/nohingemotion",
+    "SMAinstallation/ordinarythread/contactdimensions andIPEX/coaxroute",
+    "OwnU112 suppliedantenna10×102×10mm estimate,hinge/fork/axis/range/knurl/profile",
+    "Adhesivefilmthickness,reference-redrawfont/color/registration"
+  ],
+  "notes": [
+    "BothpublishedU112/U111-B shells happen to bebyteidentical;this model citesownU112path/commit/blob. That doesnot establishsharedmodules,carrier,SIMinstallation,labels orantennadimensions.",
+    "NoexternalLED/buttoniscreatedfromyellow-goldwindowcolour;actualgoldSMAbackingcheckedfrombothfaces. LinkedcoreD1isfixednonemissivegeometryonly.",
+    "rearCover:false removessource3858/backfilm/threefixings whileallfront/PCB/Grove/SMA/SIM/feedlinegeometry staysfixed;onlythenregister passiveSIManchor.",
+    "No suppliedSIMcard,cardstate,network/RF/AT/UARTtiming,power/electrical orfirmwarebehavior.",
+    "Allphysicalbores/materialwalls remainreal;PNGinkcannotfillmissingassembly.",
+    "Necessaryboundedgeometry/APIchecks only,no browser/GPU/physicaldevice/productionfit acceptance.",
+    "Only finalPNG,derivedowngeometry/code andsafeprovenance distributed;allprivate/raw/vector/generator/proof/intermediate materialexcluded."
+  ],
+  "feedback": {
+    "feedback_id": "8835048c2d544bc19516a233746ee788",
+    "status": "received-for-official-review",
+    "issue": "ExactpopulatedU112carrier/NanoSIMholder/IPEX-to-SMAassembly,globalHCoremapping,D1exteriorlightpath andsuppliedantennadimensions remainundocumented aftertargetedofficialpreflight;secondarydetailsinferred."
+  },
+  "runtimeFiles": [
+    {
+      "path": "src/units/nbiot-cn/Antenna.js",
+      "sha256": "bd81c950430d67607043ca31e9a7b7289b99389a00d754e659daaaf1e1b40c22"
+    },
+    {
+      "path": "src/units/nbiot-cn/artwork/back.png",
+      "sha256": "cae96908e4d38cf9b32c09b31eee1548e3bfb760b04ccf17121b2d51565d4d25"
+    },
+    {
+      "path": "src/units/nbiot-cn/artwork/front.png",
+      "sha256": "ccff981b4907a20a5557394905d6de232dcc04b518422d00a06a6be9e35943ce"
+    },
+    {
+      "path": "src/units/nbiot-cn/assembly.js",
+      "sha256": "e6a0737126aa5f9757bd23136b69944e0509479f42c01f03190e5c7030f3e09e"
+    },
+    {
+      "path": "src/units/nbiot-cn/cad-map.json",
+      "sha256": "7db35c81b3fbfc5d773fd4f5f33cff98a524745b5faf321569c0150b310176a7"
+    },
+    {
+      "path": "src/units/nbiot-cn/connectors.js",
+      "sha256": "fe4590a8650d8afc77ef2fb702c1072d715f5bd9d50d415c0a525049e81174af"
+    },
+    {
+      "path": "src/units/nbiot-cn/dimensions.js",
+      "sha256": "3e946f0c9a68832601ff744e104f37c2e01551a7d5c9b8c0f32a947ccb53ef11"
+    },
+    {
+      "path": "src/units/nbiot-cn/geometry-data.js",
+      "sha256": "57cd38be8cc7372da49c8a11ea55f18809cb854f3e22474b4e55c688b824edb8"
+    },
+    {
+      "path": "src/units/nbiot-cn/geometry.js",
+      "sha256": "34879ce3bd8fe268f1fbc943e92aa248d16927398a7acbd05db5117aa21b84c4"
+    },
+    {
+      "path": "src/units/nbiot-cn/index.js",
+      "sha256": "c61640cae43a7829f41f01165420c84661936a988bbb19a6e2528b6f3c33b451"
+    },
+    {
+      "path": "src/units/nbiot-cn/stickers.js",
+      "sha256": "b8ad6063d7b1cbb672b9fc8bb4752edf13458e6d8a2854916cfca5ac7df028df"
+    }
+  ]
+}

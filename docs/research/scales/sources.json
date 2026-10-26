@@ -1,0 +1,313 @@
+{
+  "id": "scales",
+  "sku": "U108",
+  "officialDocs": "https://docs.m5stack.com/en/unit/UNIT%20Scales",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "queries": [
+      "Unit Scales U108 产品 尺寸 结构图 端口 按键 指示灯 称重板"
+    ],
+    "responseSha256": "f4f039ef5dbe84bffdfd6dbaf605715b8ae6c60ccadd50973a0043b6386aef41",
+    "rawResponseDistributed": false,
+    "result": "Exact U10856×40×41mm,STM32F030F4P6,HX711,HT7333,S8550,oneSK6812 PA7,SW1 PA2,red GroveGND/5V/SDA/SCL and documentaryI2C0x26.Own sources show rigid load platform,integral U-slot tare pad,long RGB guide and fixed metal load-cell/gland/black cable."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT Scales/img-22f5b336-4142-40f9-90ad-a99eaefeea09.webp",
+    "sha256": "644fe398955ad8492efbd7151de76ec85751858afa902c2f8550b24e54b9be2b"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/dbc93013098189c8c0995e7678347b75a369a366/Products/U108_Unit_Scales/Structures/Unit_Scales.stl",
+      "commit": "dbc93013098189c8c0995e7678347b75a369a366",
+      "gitBlob": "e4e205144b5eaf607ca5f37ac52cbff8b2b0ea5a",
+      "sha256": "c7c8eee64e9238e66e1ded057c442f4b09754dea2a27240f7aab843c17d30bc3",
+      "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT Scales/img-94426368-7f2e-43ae-a514-9d38ee161b46.webp",
+      "sha256": "f9cbbe165990c75e2bdd53c343d82e439b01b7cbbebd477c6dc95440ab552dd2"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT Scales/img-22f5b336-4142-40f9-90ad-a99eaefeea09.webp",
+      "sha256": "644fe398955ad8492efbd7151de76ec85751858afa902c2f8550b24e54b9be2b"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT Scales/img-de642cd3-5584-4489-8f12-7ebaa35bec9a.webp",
+      "sha256": "2fd8fedaa8463eb9fc870674e373cdaa11dbac34deccf27ca62d003f35542b2c"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT Scales/img-04fe2bea-5437-453c-bce9-06ec5e719062.webp",
+      "sha256": "fddba2d962ab4756a71daa369475829274ee430d8b7a407e2c3c52c107d695fd"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT Scales/img-dabbf3ee-2751-4110-baf5-f5be99f4cb39.webp",
+      "sha256": "8589652e316199935e3b72f9a462cea9ce5e2e9d1afd918453c21e6a2000b081"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/705/U108-weight.jpg",
+      "sha256": "f9a2ad457c18c363d28a0f865c58ca6c76909f9843af283df8e492278f487c36"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/592/Sch_UNIT-Scales_sch_01.png",
+      "sha256": "ad6ae5355bea90eed10b704b0877f2a79d7fd914ad34fd9358d758c8b8976c15"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT Scales/img-18e45241-a9b7-4d70-ab63-ba93b7473f18.png",
+      "sha256": "88d15726550eb8b1219b7cdfa7a14521c329f68abdfc92ac55b899c379dfc130"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0,
+      3,
+      5
+    ],
+    "originalAssemblyTriangles": 16694,
+    "outputTriangles": 16694,
+    "excludedComponents": [
+      1,
+      2,
+      4,
+      6
+    ],
+    "origin": [
+      0,
+      0,
+      16.5
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "localModification": null,
+    "notes": "Own U108 immutable path and bytes verified.Components0/3/5 form the complete16694-triangle56×40×41mm assembly;components1/2/4/6 are displaced duplicates.All original faces and indices retained atscale1 under one common translation.The actual native U-slot tare flexure is deformed only during external input and restores all original position/normal bytes atrest;no cap partition,deleted triangle or platform movement.Metal load-cell,wire/gland,PCB/electronics,Grove,lens and film are separate appearance reconstruction;hidden dimensions/fit unconfirmed."
+  },
+  "dimensions": {
+    "nominalMm": [
+      56,
+      40,
+      41
+    ],
+    "vendorDimensionOrderMm": [
+      56,
+      40,
+      41
+    ],
+    "cadEnvelopeMm": [
+      56,
+      40,
+      41
+    ],
+    "visualEnvelopeMm": [
+      56,
+      40,
+      41
+    ],
+    "mountingHolesMm": [
+      [
+        -24,
+        -16
+      ],
+      [
+        -24,
+        16
+      ],
+      [
+        24,
+        -16
+      ],
+      [
+        24,
+        16
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "platformHolesMm": [
+      [
+        -24,
+        -16
+      ],
+      [
+        -24,
+        -8
+      ],
+      [
+        -24,
+        0
+      ],
+      [
+        -24,
+        8
+      ],
+      [
+        -24,
+        16
+      ],
+      [
+        24,
+        -16
+      ],
+      [
+        24,
+        -8
+      ],
+      [
+        24,
+        0
+      ],
+      [
+        24,
+        8
+      ],
+      [
+        24,
+        16
+      ]
+    ],
+    "grovePositionMm": [
+      27.7,
+      0,
+      -15.1
+    ],
+    "dimensionEvidence": "Own U108 table,drawing and complete native0/3/5 agree56×40×41mm atscale1."
+  },
+  "packageEvidence": {
+    "mcu": "STM32F030F4P6 TSSOP20 (schematic also annotated XM1008F6P6)",
+    "adc": "HX711 SOP16",
+    "regulator": "HT7333",
+    "transistor": "S8550",
+    "rgb": "oneSK6812",
+    "button": "SW1 PA2",
+    "resistors": 8,
+    "capacitors": 7,
+    "debugPads": 5,
+    "installationInferred": true
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 1,
+    "sourceDetails": "docs/research/scales/artwork.json",
+    "originalsDistributed": false
+  },
+  "publicAPI": {
+    "ports": [
+      "grove"
+    ],
+    "anchors": [
+      "sensor"
+    ],
+    "controls": [
+      "tare"
+    ],
+    "leds": [
+      "rgb"
+    ],
+    "joints": [],
+    "tare": {
+      "kind": "native-flexure",
+      "shellProperty": "scalesAssembly.shell",
+      "buttonProperties": [
+        "shell",
+        "weights",
+        "restPositions",
+        "restNormals",
+        "normalVertices",
+        "normalMask"
+      ],
+      "travelMm": 0.2,
+      "actions": [
+        "press",
+        "release",
+        "cancel"
+      ],
+      "fixedNativeVertices": true,
+      "platformAndCoverFixed": true,
+      "exactPositionNormalReset": true
+    },
+    "rgb": {
+      "kind": "led",
+      "defaultOff": true,
+      "color": true,
+      "brightness": true,
+      "noHalo": true,
+      "noAutomaticStatus": true
+    },
+    "grovePins": [
+      "GND",
+      "5V",
+      "SDA",
+      "SCL"
+    ]
+  },
+  "scope": "Complete own U108 native base/pedestal,platform and embossed round cover;fixed metal support,gland/cable,PCB/electronics,red Grove,physical RGB guide and independent rear film.Single native tare flexure with external input and independent RGB material appearance only.No platform deformation,weight,force,zeroing,calibration,electrical,I2C or firmware simulation.",
+  "inferred": [
+    "Metal load-cell external dimensions,hidden support and mounting fit",
+    "PCB plane/outline and concealed package/passive layout",
+    "Gland/cable path and hidden sensor terminations",
+    "Guide coupling and tactile switch installation",
+    "0.20mm native-flexure visual travel,not material physics or rated switch travel",
+    "Label thickness,reference-redraw typography/colors/registration"
+  ],
+  "notes": [
+    "Exact ownU108 source only;Mini ScalesU177 excluded.",
+    "All16694 original triangles/index retained atscale1;only displaced duplicates excluded.",
+    "Native tongue228 weighted vertices stays in actual local bounds;fixed shell/platform/cover do not move.",
+    "Real gaps/ports/mounting holes remain open.",
+    "Both entries preserve every physical attribute/index/world matrix with artwork:false.",
+    "Only1 final ordinary reference-redraw PNG distributed;private materials and raw originals excluded."
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/scales/NativeFlexureButton.js",
+      "sha256": "c0bbf20bae09908b90e7a8f6a7ab88c6883a7cd1b3d91fa73ceb1d18688a0be0"
+    },
+    {
+      "path": "src/units/scales/RgbAppearance.js",
+      "sha256": "928320a1cc7ad12d7b14e92df4010ae213d8e60537c0ac4cf669bdf2cf4d420c"
+    },
+    {
+      "path": "src/units/scales/assembly.js",
+      "sha256": "dfa5a38c597008b0657a2ac1585884da20829e5ae192e7c669b213c43e0bc65b"
+    },
+    {
+      "path": "src/units/scales/cad-map.json",
+      "sha256": "d5542a86db1d7873c3526a843c107758ee67960d2ff0977b3d725c3ebc648ff0"
+    },
+    {
+      "path": "src/units/scales/dimensions.js",
+      "sha256": "2e7c0daabd6d8ccc4bbf2da2eccac2bb3881163c85f57539034b9f6619c54e70"
+    },
+    {
+      "path": "src/units/scales/geometry-data.js",
+      "sha256": "3903c54d1d19c3ce2feb60eb2755e481a1de0b715f917562352ec5c454cbfbc2"
+    },
+    {
+      "path": "src/units/scales/index.js",
+      "sha256": "812565d398ae5939094772177cb7152dee4a951a4839e85ebab99a8a5cd1b565"
+    },
+    {
+      "path": "src/units/scales/reference-redraw-back.png",
+      "sha256": "79296445da43c71b2659a2af26f5c92decff5c31d087ea06b505281ed32e1c0b"
+    },
+    {
+      "path": "src/units/scales/stickers.js",
+      "sha256": "4e93a6f878075495feb7e3e41855d05af624b9c90792bba26157320b537e1323"
+    }
+  ]
+}

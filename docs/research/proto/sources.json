@@ -1,0 +1,383 @@
+{
+  "id": "proto",
+  "sku": "U022",
+  "officialDocs": "https://docs.m5stack.com/en/unit/proto",
+  "retrievedAt": "2026-10-27",
+  "officialMCP": {
+    "queries": [
+      "Unit Proto U022 产品 尺寸 可拆电路板 洞洞板 结构文件 Grove 接口",
+      "Unit Proto U022 PCB board thickness prototype 77 holes P1 Header 4 layout assembly"
+    ],
+    "responseSha256": "2d7a6e0ca00e968cfa2ac748b4f51be800884f9d28599b5891d453422872b24d",
+    "recheckSha256": "8b719a4252bda7995f36493e62b188f431baafeb97e9618b35e3705654d058fc",
+    "rawResponseDistributed": false,
+    "result": "Exact U022,48×24×8mm vendororder,77holes nominalØ1mm and2.54mm pitch,twoLEGO-compatible mountingholes;passiveP1 Header4/J1Grove I/O/VCC/GND only.No IC,sensor,LED,button,display orjoint.No VCC rating orphysical P1-to-field assignment confirmed."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/proto/proto_05.webp",
+    "sha256": "f45b9ac5f194ba1f7a063666eb88e73e5ec6012d6ad1ee730d60f2bccbe272d6"
+  },
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/proto/proto_01.webp",
+      "sha256": "8060dc6aaf670480c7bd25e5153cbfb4b106abcf14bc5ba8b23f8e3a07dcc613"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/proto/proto_02.webp",
+      "sha256": "37ebde09fa9e026cf6594666b93216ff5cc35f24fe34a72110a716bf0f48c31c"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/proto/proto_05.webp",
+      "sha256": "f45b9ac5f194ba1f7a063666eb88e73e5ec6012d6ad1ee730d60f2bccbe272d6"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/proto/proto_06.webp",
+      "sha256": "346eee6e84746ae1e6f00f495df067d13f899eeb473023657ee84669b55651f6"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/809/U022_SCHE.jpg",
+      "sha256": "30fc13708a2c9f3a84b43d870bd0ea57f976928fc58e6917a9a9c5f47be8aceb"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/809/U022_UNIT-Proto_page_01.png",
+      "sha256": "26bcc54db6d789429dfd9fa8aee21e40b6290c88222a7e46e89d7fed31ee15f0"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/809/U022_UNIT-Proto.pdf",
+      "sha256": "f4097f5d47a7b15c97825c711275c70d7e2778e289056719bd5e78922375d12c"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/809/U022_UNIT_PROTO_SCHE.pdf",
+      "sha256": "a1296cd2cdd6d99b30f51035ee04a467ba6c22e1c1663443a2ad36ebf3ed1431"
+    }
+  ],
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/66720a863658da9bab58a208d4ebf8a040c2d42c/Products/U022_Unit_Proto/Structures/Unit_Proto.stl",
+      "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/2e8d4e9bbc03d9fc6c30f330b67bb7ddc469a51c",
+      "commit": "66720a863658da9bab58a208d4ebf8a040c2d42c",
+      "lastChangedCommit": "66720a863658da9bab58a208d4ebf8a040c2d42c",
+      "gitBlob": "2e8d4e9bbc03d9fc6c30f330b67bb7ddc469a51c",
+      "sha256": "f816bc934dff072ca4a986cad7766fcf1e536642273837f310992f4faf5e5011",
+      "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "originalAssemblyTriangles": 3498,
+    "outputTriangles": 3498,
+    "partitions": {
+      "front": 1626,
+      "rear": 1872
+    },
+    "excludedDisplacedDuplicates": [
+      1,
+      2
+    ],
+    "comparisonOnlyRearDuplicate": 1,
+    "comparisonOnlyFrontDuplicate": 2,
+    "origin": [
+      -80,
+      0,
+      1.2
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "localModification": null,
+    "notes": "Exact own U022 complete assembled source0=3498triangles retained atscale1 under one common translation.No patch,fill,face removal,scaling or independently repositioned native face.Source0 faces are only partitioned into front1626/rear1872 by directed cyclic correspondence with original laid-out duplicates2/1;every runtime face remains at original assembled coordinates,maxsourcecorrespondence0.000003934mm.Each partition has its original closed material surfaces.Source1/2 are comparison-only displaced duplicates,not copied into runtime.Default complete assembly24×48×8mm;rearCover:false excludes only rear1872,actual rearlabel film andone fixing screw,retaining complete frontframe/PCB/Grove.Original source combined mating coincidences are separated by physicalpart,not removed/repaired."
+  },
+  "sourceTopology": {
+    "sourceSha256": "f816bc934dff072ca4a986cad7766fcf1e536642273837f310992f4faf5e5011",
+    "coordinateWeldMm": 0.0001,
+    "triangleCorrespondenceToleranceMm": 0.0001,
+    "assembledComponent": 0,
+    "assembled": {
+      "triangles": 3498,
+      "edges": 5222,
+      "openOrDirectedBad": 0,
+      "twoFaceEdges": 5197,
+      "fourFaceCoincidentMatingEdges": 25,
+      "otherMultiplicity": 0,
+      "volumeMm3": 2736.1262969752725
+    },
+    "laidOutClosedShells": [
+      {
+        "component": 1,
+        "role": "rear",
+        "triangles": 1872,
+        "edges": 2808,
+        "openOrDirectedBad": 0,
+        "twoFaceEdges": 2808,
+        "fourFaceCoincidentMatingEdges": 0,
+        "otherMultiplicity": 0,
+        "volumeMm3": 1423.8471751754696
+      },
+      {
+        "component": 2,
+        "role": "front",
+        "triangles": 1626,
+        "edges": 2439,
+        "openOrDirectedBad": 0,
+        "twoFaceEdges": 2439,
+        "fourFaceCoincidentMatingEdges": 0,
+        "otherMultiplicity": 0,
+        "volumeMm3": 1312.2796057915602
+      }
+    ],
+    "matchedTriangles": 3498,
+    "unmatchedAssembledTriangles": 0,
+    "maxVertexDistanceMm": 3.933906555175781e-06,
+    "directedCyclicVertexCorrespondenceOnly": true,
+    "partitions": {
+      "rear": 1872,
+      "front": 1626
+    },
+    "note": "All3498 original assembled source0 triangles correspond to the source own laid-out closed rear/front components1/2.The assembled shell preserves coincident front/rear mating edges at their original mating planes;the runtime quantization count is recorded separately in smoke;no open boundary or directed edge imbalance.No source geometry repaired,patched,removed,flattened or repositioned in runtime."
+  },
+  "runtimeTopology": {
+    "nativePartsStrictlyDirectedClosed": true,
+    "originalFacesPreserved": 3498,
+    "physicalMeshes": 259,
+    "uniqueDirectedGeometries": 30,
+    "allPositiveVolume": true,
+    "note": "Original combined source0 has25count4/balance0 mating coincidences at0.0001mm quantization.All source0 triangles are only partitioned by original physical front/rear part;both runtime parts independently havecount2/balance0.No source repair orface deletion;do not describe the combined overlapping assembly as one manufactured manifold."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      48,
+      8
+    ],
+    "vendorDimensionOrderMm": [
+      48,
+      24,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      48,
+      7.999999761581421
+    ],
+    "visualEnvelopeMm": [
+      24,
+      48.00000004768371,
+      8.000000047683717
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -12
+      ],
+      [
+        8,
+        -12
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "prototypeWindowMm": [
+      20,
+      28
+    ],
+    "prototypeWindowCenterMm": [
+      0,
+      6
+    ],
+    "prototypeGrid": {
+      "columns": 7,
+      "rows": 11,
+      "count": 77,
+      "freeBoreDiameterMm": 1,
+      "pitchMm": 2.54,
+      "substrateThicknessMm": 1,
+      "installationThicknessInferred": true,
+      "prototypeAxisRays": 385,
+      "metalBoreWallRays": 924,
+      "substrateBoreWallRays": 312,
+      "positiveMaterial": {
+        "holePitchPadGapMm": 0.94,
+        "barrelWallMm": 0.03,
+        "FR4InterBoreMm": 1.48,
+        "fieldWindowXClearanceMm": 1.58,
+        "fieldWindowYClearanceMm": 0.5,
+        "pcbMountReliefVsSampledNativeMm": 0.16999999999999993,
+        "pcbFixingBridgeMm": 3.4499999999999997,
+        "closestFieldToMountReliefMm": 1.113605179160378,
+        "hexHeadWallMm": 0.88,
+        "perforatedBevelMm": 0
+      }
+    },
+    "grovePositionMm": [
+      0,
+      -23.9,
+      1.4
+    ],
+    "dimensionEvidence": "Exact U022 dimension drawing:24×48×8mm housing,20×28front window,4mm fromtop,twoØ5 mountingbores16mm pitch12mm frombottom,10×5.2Grove opening.Own front photos/drawing show7columns×11rows;product text gives77/1mm/2.54mm."
+  },
+  "hardware": {
+    "pcb": "Unpopulated yellow prototype substrate with77true open holes,metal barrel andfront/back annuli perhole,real mount reliefs/fixing bore andfour actual Grove factory solder pads",
+    "J1": "Actual black receivingHY2.0-4P boardsocket withfourmetalpins andfactoryterminals",
+    "P1": "Schematic logicalHeader4 only;physical pad allocation/raisedconnector not confirmed.No extra stand-up header fabricated.",
+    "activeICs": [],
+    "userAddedComponents": [],
+    "userAddedWires": [],
+    "pinsDocumentaryOnly": [
+      {
+        "n": 1,
+        "name": "I"
+      },
+      {
+        "n": 2,
+        "name": "O"
+      },
+      {
+        "n": 3,
+        "name": "VCC"
+      },
+      {
+        "n": 4,
+        "name": "GND"
+      }
+    ],
+    "noAllowedVccRatingClaim": true
+  },
+  "publicAPI": {
+    "exports": [
+      "Model",
+      "GroveModule",
+      "spec"
+    ],
+    "bodyComponentOrder": [
+      "grove"
+    ],
+    "ports": [
+      "grove"
+    ],
+    "canonicalCableInput": "grove",
+    "controls": [],
+    "leds": [],
+    "anchors": [],
+    "displays": [],
+    "joints": [],
+    "sensors": [],
+    "defaultRearCover": true,
+    "configurations": [
+      {
+        "options": {
+          "rearCover": true
+        },
+        "nativeTriangles": 3498,
+        "printPanels": 1
+      },
+      {
+        "options": {
+          "rearCover": false
+        },
+        "nativeTriangles": 1626,
+        "printPanels": 0,
+        "removes": [
+          "native rear cover",
+          "rear physical film/ink",
+          "one centre screw"
+        ],
+        "retains": [
+          "native front window frame",
+          "77-holePCB/plating",
+          "Grove/contacts/pads"
+        ]
+      }
+    ],
+    "serviceConfigSameComponentIDs": true,
+    "noUserAddedCircuit": true,
+    "noElectricalBehavior": true,
+    "assemblyProperty": "protoAssembly",
+    "moduleExport": "GroveModule",
+    "groveModuleExtraComponents": [
+      "unitFrame",
+      "cable"
+    ],
+    "defaults": {
+      "rearCover": true
+    },
+    "noDirectModule": true,
+    "noHingeOrBoardPullAnimation": true
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 1,
+    "sourceDetails": "docs/research/proto/artwork.json",
+    "originalsDistributed": false
+  },
+  "scope": "Complete exact3498source0 housing faces,real exposed77hole7×11prototypePCB with1mm visualfreebore/2.54pitch,true1mmthick substrate,77metalbarrels and154annuli,four Grovepins/recessedcarrier/factorypads andsinglefixingscrew/rear physicalsilverfilm.Defaultrearcoverclosed;service rearCover:false only removesrear1872/film/screw while keepingfront1626/PCB/Grove.No controls,anchors,lights,ICs,usercircuit/wires,hinge,pulledboardanimation,sensorvalues,voltage/current/protocol/electrical routing orfirmware.",
+  "inferred": [
+    "1mm substrate thickness andinstalledPCB topZ−0.45;complete hiddenPCB extent/seating",
+    "0.03mm barrel thickness,0.025mm annulus thickness and1.6mm pad diameter;nominal1mm freebore retained without a manufacturing stack-up claim",
+    "Grove internal contact/termination installation andmating fit",
+    "Fixing installation,0.04mm rearfilm andprintregistration",
+    "Reference-redraw glyphs/colors andsilvermaterial;unreadable frontmicrolegends omitted"
+  ],
+  "notes": [
+    "Exact U022,not MiniProtoU064 orModuleProto.",
+    "All3498 assembledsource0 triangles retain original coordinates under one common proper translation,only grouped into actual front1626/rear1872 by directed cyclic duplicatecorrespondence.Maxvertexdifference0.000003934mm,0unmatched/0reversed.",
+    "Original combined source0 matingcoincidences remain at the same coordinates;runtime physicalparts individually closed withpositivevolume.No shell cut/patch/filledfrontwindow.",
+    "Closedrearhousing is real backing behind all77openboard bores;service view removes it without plugging orpaintingthe bores.",
+    "Original near-face mountmouths open outward atZ±3.5;mid-depth layeredwall samples retained.Sourceholesare not capped for a test.",
+    "77field axes,barrelwalls,front/back annuluswalls andFR4walls independently checkedFrontSide withpositive material allowances.No blackdots orplanes substitute holes.",
+    "Each Grove foot has real PCBmaterial andmetalpad directly below,not empty clearance notch.",
+    "P1 is only confirmed as a schematic4netheader;no unproven raisedheader,fieldassignment,pad connectivity orVCCvoltage behavior inferred.",
+    "Only one physical rearlabel;no front sticker covers prototypeboard orholes.Faint unconfirmed frontmicrolegends are omitted rather than invented.",
+    "Only finalPNG andderivedgeometry/code/safeprovenance distributed.RawCAD,officialphotos/PDFs/MCP,private table/URLs/names/mapping,SVG/generator/proofs/intermediates excluded."
+  ],
+  "feedback": {
+    "feedback_id": "9fe56810cf9f4563a2caf8cdc95db1cb",
+    "status": "received-for-official-review",
+    "issue": "ExactU022 publicmechanical evidence lacksPCB thickness/installedplane/plating stack andP1physical pad mapping;these remain inferred after officialMCP recheck."
+  },
+  "runtimeFiles": [
+    {
+      "path": "src/units/proto/assembly.js",
+      "sha256": "aa7136462e9179f394bd42d833792036f1f16d8fb387f4e7825627476c00005e"
+    },
+    {
+      "path": "src/units/proto/cad-map.json",
+      "sha256": "508225fee72b142a573aca061c8b2a3654a0b0da36be10c1327ebf24bb6ac383"
+    },
+    {
+      "path": "src/units/proto/dimensions.js",
+      "sha256": "6cbbace00bb3b26b11c52148c1b20e924e060ce131513ccdde05d99d3072e278"
+    },
+    {
+      "path": "src/units/proto/geometry-data.js",
+      "sha256": "333fef1184208be6f960f4c1f0f98fe3a6b643cec9dcbeeac300de9b40553a73"
+    },
+    {
+      "path": "src/units/proto/index.js",
+      "sha256": "9e215f39908d8e427574391eef7bee4974c66f82c11964d7cf6b214b99408df2"
+    },
+    {
+      "path": "src/units/proto/reference-redraw-back.png",
+      "sha256": "9e3f02d6094db95ea7c697e0dacbc3429c8c8295338efa81d22060e55bc943cf"
+    },
+    {
+      "path": "src/units/proto/stickers.js",
+      "sha256": "a4de0fd678ff99f598eafcc6118d2997397f075b13e3c5f0a1fd0bb397279808"
+    }
+  ]
+}

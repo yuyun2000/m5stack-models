@@ -1,0 +1,413 @@
+{
+  "savedAt": "2026-10-26T15:17:15.417988+00:00",
+  "stage": "modeled",
+  "scope": "New Glass2/TypeC-to-Grove/DoF10 complete physical assemblies, synchronous corresponding print mapping, actual three-branch Grove/API fixture and builds; no browser or whole-catalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 125,
+    "modeled": 139,
+    "verified": 0
+  },
+  "localHead": "3681a6482aff96501d44659ba5a1603246f1fe1f",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "glass2",
+      "status": "pass",
+      "report": "docs/research/glass2/smoke.json",
+      "meshes": 167,
+      "triangles": 25772
+    },
+    {
+      "id": "typec-to-grove",
+      "status": "pass",
+      "report": "docs/research/typec-to-grove/smoke.json",
+      "meshes": 112,
+      "triangles": 43778
+    },
+    {
+      "id": "dof10",
+      "status": "pass",
+      "report": "docs/research/dof10/smoke.json",
+      "meshes": null,
+      "triangles": null
+    }
+  ],
+  "pngCount": 8,
+  "rasters": [
+    {
+      "path": "src/units/glass2/reference-redraw-back.png",
+      "pixels": [
+        4200,
+        4700
+      ],
+      "sha256": "e955f7ab7f75eb315d5e8689f79a9df3d58c408ce37dabb621c258aee62925f9"
+    },
+    {
+      "path": "src/units/glass2/reference-redraw-front.png",
+      "pixels": [
+        4200,
+        1400
+      ],
+      "sha256": "06433687000369c421f564342cd59591fea7fbe6f0258a44bb679c001d835e79"
+    },
+    {
+      "path": "src/units/typec-to-grove/reference-redraw-back.png",
+      "pixels": [
+        1600,
+        1230
+      ],
+      "sha256": "44ca3eaf84e4917835d3ff440b29e43b7372922d56b4f73b58b56f3dd8ad26cc"
+    },
+    {
+      "path": "src/units/typec-to-grove/reference-redraw-banner.png",
+      "pixels": [
+        2140,
+        500
+      ],
+      "sha256": "c000a80b5bebf859c5db4324a6afae6d011fa23ed41284f5be1806042d4f0b2c"
+    },
+    {
+      "path": "src/units/typec-to-grove/reference-redraw-power.png",
+      "pixels": [
+        780,
+        870
+      ],
+      "sha256": "7a7a31a06da6ef6694029c004bd677d59914d92e7511cbf889056b898180fed9"
+    },
+    {
+      "path": "src/units/dof10/source-vector-axis.png",
+      "pixels": [
+        626,
+        626
+      ],
+      "sha256": "1386dc6fbaff4d3bded9bc0b4cf931f7476e026b211c34467a420b6614bcdce7"
+    },
+    {
+      "path": "src/units/dof10/source-vector-back.png",
+      "pixels": [
+        1605,
+        401
+      ],
+      "sha256": "e74c0ca5d50a1d037428c5a5bcd511c57ac168de3636f8a58e2ce9a3451d942b"
+    },
+    {
+      "path": "src/units/dof10/source-vector-front.png",
+      "pixels": [
+        1782,
+        370
+      ],
+      "sha256": "9bf0cbf363c61dc66450005378afe6766eb24b161688629ce386cd73d9ccdc34"
+    }
+  ],
+  "fixture": {
+    "status": "pass",
+    "artwork": [
+      {
+        "id": "glass2",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "typec-to-grove",
+        "panels": 3,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "dof10",
+        "panels": 3,
+        "kinds": [
+          "source-vector-raster"
+        ]
+      }
+    ],
+    "cases": [
+      "three-real-four-core-input-branches",
+      "Glass2-visible128x56-external-framebuffer-transparent-material-and-fixed-physical-assembly",
+      "actual-two-Grove-display-and-three-Grove-USB-C-adapter-independent-four-core-outputs",
+      "USB-rejects-Grove-plug-and-preserves-installed-peers",
+      "DoF10-actual-stable-switch-detents-multiple-sources-cancel-retains-detent-external-position-noecho-and-fixed-parts",
+      "two-entries-all-real-configurations-artwork-preserves-all-physical-attributes-indices-world-matrices",
+      "external-pose-cable-independent-detach-and-host-framebuffer-preserved"
+    ],
+    "scope": "Current three visual assemblies and external controls only;Node canvas stub,no GPU/browser,controller mapping,USB,power,protocol,sensor values,electrical,physical or whole-catalog acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "artwork": [
+      {
+        "id": "glass2",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "typec-to-grove",
+        "panels": 3,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "dof10",
+        "panels": 3,
+        "kinds": [
+          "source-vector-raster"
+        ]
+      }
+    ],
+    "cases": [
+      "three-real-four-core-input-branches",
+      "Glass2-visible128x56-external-framebuffer-transparent-material-and-fixed-physical-assembly",
+      "actual-two-Grove-display-and-three-Grove-USB-C-adapter-independent-four-core-outputs",
+      "USB-rejects-Grove-plug-and-preserves-installed-peers",
+      "DoF10-actual-stable-switch-detents-multiple-sources-cancel-retains-detent-external-position-noecho-and-fixed-parts",
+      "two-entries-all-real-configurations-artwork-preserves-all-physical-attributes-indices-world-matrices",
+      "external-pose-cable-independent-detach-and-host-framebuffer-preserved"
+    ],
+    "scope": "Current three visual assemblies and external controls only;Node canvas stub,no GPU/browser,controller mapping,USB,power,protocol,sensor values,electrical,physical or whole-catalog acceptance"
+  },
+  "checks": {
+    "localProductSmoke": "all three pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "glass2",
+        "status": "frozen",
+        "checkedFiles": 12
+      },
+      {
+        "id": "typec-to-grove",
+        "status": "frozen",
+        "checkedFiles": 14
+      },
+      {
+        "id": "dof10",
+        "status": "frozen",
+        "checkedFiles": 13
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "physical geometry attributes/index/poses identical with artwork:false, covered by saved local fixture",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "b45f07ed466c4df4c49ba022c0d4829636f1d9cdd954070289d018330c8e0138",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "e9f6dcda8ddf1d02ed0942c49f373bec56f3c34122e7f3db3d9de17cb2804bac",
+      "logDistributed": false
+    },
+    "livePreview": "139-product catalog, three runtime chunks and all corresponding sticker PNGs byte-identical to public dist",
+    "newSourcePrivacy": "Final JS/JSON/Markdown/PNG and six added catalog/manifest records checked; no private URLs/table/vectors/raw sources/intermediates; PNG metadata limited to safe numeric DPI",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "Only new products/catalog entries/exports/guide/plan",
+    "existingPublicUnitFilesUnchanged": 1000,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [
+    {
+      "product": "glass2",
+      "record": "docs/research/glass2/sources.json",
+      "feedback_id": "72332e4dea8048c791e322df97c5c0a7",
+      "accepted": true
+    },
+    {
+      "product": "typec-to-grove",
+      "record": "docs/research/typec-to-grove/sources.json",
+      "feedback_id": "a76adbcaf39a4038ae3bdd319b2f6e26",
+      "accepted": true
+    }
+  ],
+  "previewAssets": [
+    {
+      "id": "glass2",
+      "file": "assets/glass2-CyT9-1ab.js",
+      "sha256": "46fa35b3e64cd97604d39a445cf21e2218419eb6dec5806cf7a4e53e50984fb3"
+    },
+    {
+      "id": "typec-to-grove",
+      "file": "assets/typec-to-grove-CrrSoV6B.js",
+      "sha256": "4e180ab99a698e085d3ac9df59d740a3c132bf482bb9804bed6c09aa36278cf9"
+    },
+    {
+      "id": "dof10",
+      "file": "assets/dof10-8XgV3mxc.js",
+      "sha256": "6d731a4b40acac2eae5927b223e037b5caed80ee23e50c70c7fa2ee38c8b60f5"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/glass2/TransparentOled.js",
+      "sha256": "91fbe522148915b3d26c856cac27799eb4978138f6e316835edbbb27f6bca33b"
+    },
+    {
+      "path": "src/units/glass2/assembly.js",
+      "sha256": "478804d9971650ccdf6d23fab5ca86b0fa61af72b9a6587b5ee7ade1fe0dc5b6"
+    },
+    {
+      "path": "src/units/glass2/construction-map.json",
+      "sha256": "8817643f786b5631233901747fa1b7eb0f0ea55b719f71990d0bf93251d7f1f3"
+    },
+    {
+      "path": "src/units/glass2/dimensions.js",
+      "sha256": "ef9548b6f6e97171f1f508d74b2a183d693ddd623285208e58dac15e5376b835"
+    },
+    {
+      "path": "src/units/glass2/index.js",
+      "sha256": "31cfe006fb840c2881300b50aa281d7b59297fec63d3c2b8f8173a6791f0965e"
+    },
+    {
+      "path": "src/units/glass2/reference-redraw-back.png",
+      "sha256": "e955f7ab7f75eb315d5e8689f79a9df3d58c408ce37dabb621c258aee62925f9"
+    },
+    {
+      "path": "src/units/glass2/reference-redraw-front.png",
+      "sha256": "06433687000369c421f564342cd59591fea7fbe6f0258a44bb679c001d835e79"
+    },
+    {
+      "path": "src/units/glass2/stickers.js",
+      "sha256": "cf1098471cd0c1ee4f9ead1eed1495e7a7cc701ed951e288680581555baa0b83"
+    },
+    {
+      "path": "docs/research/glass2/artwork.json",
+      "sha256": "d6bb9339a94c5ca3310b52d5965ec86e4eb9100968a4051fb918fd67429a3642"
+    },
+    {
+      "path": "docs/research/glass2/modeling.md",
+      "sha256": "ec83f64273d87b6a43c466f56b7f093e67289fb2fb644e691abfc68ecb715075"
+    },
+    {
+      "path": "docs/research/glass2/smoke.json",
+      "sha256": "02b57cefa4ea6e0f769f8134db864badaed3ff8fc3959d9e896c34f5f3cb343f"
+    },
+    {
+      "path": "docs/research/glass2/sources.json",
+      "sha256": "8fbbbb524551e86def39ea82cb011dd9113df94946d88d40a167898b701cc44b"
+    },
+    {
+      "path": "src/units/typec-to-grove/assembly.js",
+      "sha256": "14f1d3e800b220ce4b20c0d5a6c5bfe002d0be6ef101e25080c1d6f33c7092e6"
+    },
+    {
+      "path": "src/units/typec-to-grove/cad-map.json",
+      "sha256": "e55f7ce27dba8070d1bcc1f7e7c7189393d3906d58824a20011057cac0ed70d4"
+    },
+    {
+      "path": "src/units/typec-to-grove/connectors.js",
+      "sha256": "c17578d4cd98f5b4259e1a31682fc038c2630d6faa0aa524a4ea7dbbcae4cd42"
+    },
+    {
+      "path": "src/units/typec-to-grove/dimensions.js",
+      "sha256": "8cc2421d8222ca873862c910902d2153528f286a9d031ba98da9219c75ab867e"
+    },
+    {
+      "path": "src/units/typec-to-grove/geometry-data.js",
+      "sha256": "826b9f7405a7ed29afcfc634ed9be3d44437c294580f6f0deaeac086f007c925"
+    },
+    {
+      "path": "src/units/typec-to-grove/index.js",
+      "sha256": "49e2c0e7a9e38124a75741b0da2350c5f39e2cedf704b4c7046e129d7ba9677c"
+    },
+    {
+      "path": "src/units/typec-to-grove/reference-redraw-back.png",
+      "sha256": "44ca3eaf84e4917835d3ff440b29e43b7372922d56b4f73b58b56f3dd8ad26cc"
+    },
+    {
+      "path": "src/units/typec-to-grove/reference-redraw-banner.png",
+      "sha256": "c000a80b5bebf859c5db4324a6afae6d011fa23ed41284f5be1806042d4f0b2c"
+    },
+    {
+      "path": "src/units/typec-to-grove/reference-redraw-power.png",
+      "sha256": "7a7a31a06da6ef6694029c004bd677d59914d92e7511cbf889056b898180fed9"
+    },
+    {
+      "path": "src/units/typec-to-grove/stickers.js",
+      "sha256": "bdb5c105192ef03bc971be2555557f1c35c23dfd1444b86b0376f57fa7aefb7b"
+    },
+    {
+      "path": "docs/research/typec-to-grove/artwork.json",
+      "sha256": "7c944a8c11d91a76664fcf1adb04e6454c2d0f9997e06fda93917aca903e66df"
+    },
+    {
+      "path": "docs/research/typec-to-grove/modeling.md",
+      "sha256": "b556e7914a674f9cdf41c648b91999c231a25f05a82fcddea7085c6138102d1a"
+    },
+    {
+      "path": "docs/research/typec-to-grove/smoke.json",
+      "sha256": "b0de4896d083aa1f18e51bec54936be078380e9243f63897088bac36277f90a1"
+    },
+    {
+      "path": "docs/research/typec-to-grove/sources.json",
+      "sha256": "5a25c6fee81a7ec3115ddd62cda41a7b43defd91478add53be9b020d1e6f5425"
+    },
+    {
+      "path": "src/units/dof10/assembly.js",
+      "sha256": "0a531ce5d310987d0816e31b805834d04a6217e4eb55c8695f230f813a03f3c3"
+    },
+    {
+      "path": "src/units/dof10/cad-map.json",
+      "sha256": "f7b4b1a63e2a94a318f07a95ab878ac95c82445589bda291a84536315556266a"
+    },
+    {
+      "path": "src/units/dof10/dimensions.js",
+      "sha256": "b2b6f1dd306ce913b0642784d49c635be245d813604bb30ca9134817c1791e3d"
+    },
+    {
+      "path": "src/units/dof10/geometry-data.js",
+      "sha256": "9487dfbb58eae0ad01a62dcfd61086fc1d3a84600fade82c1129666397ae36b8"
+    },
+    {
+      "path": "src/units/dof10/index.js",
+      "sha256": "e0e0d8321d82b8c47675a50ce42ab91fb9c1178366460cdd9e40cdc75a7f4b80"
+    },
+    {
+      "path": "src/units/dof10/source-vector-axis.png",
+      "sha256": "1386dc6fbaff4d3bded9bc0b4cf931f7476e026b211c34467a420b6614bcdce7"
+    },
+    {
+      "path": "src/units/dof10/source-vector-back.png",
+      "sha256": "e74c0ca5d50a1d037428c5a5bcd511c57ac168de3636f8a58e2ce9a3451d942b"
+    },
+    {
+      "path": "src/units/dof10/source-vector-front.png",
+      "sha256": "9bf0cbf363c61dc66450005378afe6766eb24b161688629ce386cd73d9ccdc34"
+    },
+    {
+      "path": "src/units/dof10/stickers.js",
+      "sha256": "80f640731951769321d39ae06b8b8a746e58244c2518358b462d63a98d0683db"
+    },
+    {
+      "path": "docs/research/dof10/artwork.json",
+      "sha256": "bb5b852cd8c4147c032f714e6544784297f75bee668f0a0fd72219aa9ac6ea13"
+    },
+    {
+      "path": "docs/research/dof10/modeling.md",
+      "sha256": "c35e575e73b28269a49e5bbf6cc618c5d060825aeb6981384bdc68114e625928"
+    },
+    {
+      "path": "docs/research/dof10/smoke.json",
+      "sha256": "3acbf799a53ceaa809851a64d1680503d6623689cf3425b8c9d81b9573f0b7bb"
+    },
+    {
+      "path": "docs/research/dof10/sources.json",
+      "sha256": "bc2ae788d082b823f9bc18f87cf2e4fd8c30bc2d5be3dd0964be15ffbc7ef659"
+    }
+  ],
+  "limitations": [
+    "Hidden PCB, components, connector interior, installed poses and accessory details retain documented appearance estimates",
+    "Glass2 uses its own dimension drawing and disassembled photo reconstruction,transparent128x56visible OLED,physical glass/FPC/PCB,twoGrove;logical128x64 differs and no SSD1309firmware or unconfirmed8row mapping",
+    "TypeC-to-Grove owns its exact full shell,USB-C andthreeactualGrove sockets;no active electronics,power distribution or electrical routing",
+    "DoF10 preserves4188native triangles;balanced four-face assembly seams are12in original assembly and14in runtime at the documented weld tolerance.Separate source front/rear shells are closed.New physical parts are checked independently.No single-manifold claim.IMU/pressure/magnetic values,protocol andautomatic pose stay external.",
+    "Synchronous sticker PNGs use exact-model source rasters or documented reference redraws; original CSV, URLs, vectors, mappings, generators and intermediates remain private",
+    "Earlier sticker checkpoints, private Scroll and unresolved StackChan production-fit checkpoint preserved; this local increment follows the user-requested127-model Git sync;current Git state is recorded separately"
+  ]
+}

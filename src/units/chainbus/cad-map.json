@@ -1,0 +1,61 @@
+{
+  "sku": "U212",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U212_Unit_ChainBus/Structures/Unit_ChainBus.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/0f25873ad6e1103b715cd3931d06c399a7e9dcaf",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "path": "Products/U212_Unit_ChainBus/Structures/Unit_ChainBus.stl",
+  "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U212_Unit_ChainBus/Structures/Unit_ChainBus.stl",
+  "sha256": "1990fa8181b64d5b021891634fac4cd24e4871c09f75155fcdcb2d0d7d781ef0",
+  "gitBlob": "0f25873ad6e1103b715cd3931d06c399a7e9dcaf",
+  "bytes": 415684,
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/LICENSE",
+  "origin": [
+    20,
+    -22,
+    -9.290332794189453
+  ],
+  "axes": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 1,
+      "name": "ChainBus complete native rear housing",
+      "material": "shell"
+    },
+    {
+      "component": 3,
+      "name": "ChainBus complete native front housing and integral EXT latch",
+      "material": "shell"
+    },
+    {
+      "component": 4,
+      "name": "ChainBus complete native RGB light guide",
+      "material": "guide"
+    }
+  ],
+  "excludedComponents": [
+    0,
+    2,
+    5
+  ],
+  "originalAssemblyTriangles": 4156,
+  "localModification": null,
+  "notes": "Exact own U212 immutable source bytes verified.Native1/3/4 are complete rear housing,front housing with integral EXT latch,and RGB guide;native0/2/5 are displaced duplicates.All4156 original triangles/index retained under one proper rigid rotation/translation atscale1,without fills,patches,removed faces or independent reposition.Native24×26.679523×8mm includes EXT latch but lacks full white four-chamber plug;separate true fixed plug extends appearance to24×29.8×8mm.Cyan IN/OUT sockets,contacts,PCB/electronics,fixing and physical label films reconstructed from own photos;hidden installation/fit inferred."
+}

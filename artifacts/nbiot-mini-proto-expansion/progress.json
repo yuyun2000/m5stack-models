@@ -1,0 +1,508 @@
+{
+  "savedAt": "2026-10-26T17:32:11.306045+00:00",
+  "stage": "modeled",
+  "scope": "Own exact-SKU cellular/Proto Unit physical assemblies and actual external visual controls/accessories, corresponding print and real three-branch four-core API fixture/builds; no browser or whole-catalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 137,
+    "modeled": 151,
+    "verified": 0
+  },
+  "localHead": "3681a6482aff96501d44659ba5a1603246f1fe1f",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "nbiot2",
+      "status": "pass",
+      "report": "docs/research/nbiot2/smoke.json",
+      "meshes": 279,
+      "triangles": 169620
+    },
+    {
+      "id": "nbiot-cn",
+      "status": "pass",
+      "report": "docs/research/nbiot-cn/smoke.json",
+      "meshes": null,
+      "triangles": null
+    },
+    {
+      "id": "mini-proto",
+      "status": "pass",
+      "report": "docs/research/mini-proto/smoke.json",
+      "meshes": null,
+      "triangles": null
+    }
+  ],
+  "pngCount": 5,
+  "rasters": [
+    {
+      "path": "src/units/nbiot2/reference-redraw-back.png",
+      "pixels": [
+        1600,
+        3600
+      ],
+      "sha256": "f748e5795ee925b9625b897f57caf4226ee24120a84ae0738b21d86b4b89214f"
+    },
+    {
+      "path": "src/units/nbiot2/reference-redraw-front.png",
+      "pixels": [
+        1580,
+        3610
+      ],
+      "sha256": "b86445242f81a67413eb82788ff057dfd29bf2af11518ee9da0a78a7b2490c8a"
+    },
+    {
+      "path": "src/units/nbiot-cn/artwork/back.png",
+      "pixels": [
+        1600,
+        3600
+      ],
+      "sha256": "cae96908e4d38cf9b32c09b31eee1548e3bfb760b04ccf17121b2d51565d4d25"
+    },
+    {
+      "path": "src/units/nbiot-cn/artwork/front.png",
+      "pixels": [
+        1580,
+        3610
+      ],
+      "sha256": "ccff981b4907a20a5557394905d6de232dcc04b518422d00a06a6be9e35943ce"
+    },
+    {
+      "path": "src/units/mini-proto/artwork/back.png",
+      "pixels": [
+        1580,
+        1180
+      ],
+      "sha256": "0164e7bb7ec9a4e2a128285f057076a92b662478f34a20e5ee63f59e27709e2d"
+    }
+  ],
+  "fixture": {
+    "status": "pass",
+    "artwork": [
+      {
+        "id": "nbiot2",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "nbiot-cn",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "mini-proto",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ]
+      }
+    ],
+    "cases": [
+      "three-real-four-core-input-branches",
+      "two-own-cellular-SKUs-ordinary-SMA-antenna-finite-elbow-motion-with-fixed-coupling-body-and-ports",
+      "two-SMA-ports-reject-RP-SMA-and-Grove-preserving-occupied-antenna",
+      "native-rear-cover-service-removes-only-cover-fasteners-and-rear-film-retaining-other-material-and-frames",
+      "internal-empty-NanoSIM-holder-passive-anchor-only-accessible-after-own-real-cover-removal",
+      "Mini-Proto-own-48-hole-board-without-U022-borrowed-hole-grid-or-user-circuit",
+      "both-entries-all-real-configurations-artwork-preserves-every-physical-attribute-index-and-world-matrix",
+      "external-pose-cable-no-inputecho-independent-detach-and-host-framebuffer-preserved"
+    ],
+    "scope": "Three current exact-SKU assemblies and external visual motion; Node canvas stub; no browser/GPU,cellular/RF/AT/UART,SIM or network state,electrical/power,firmware,measured stops,production fit,physical hardware or whole-catalog acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "artwork": [
+      {
+        "id": "nbiot2",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "nbiot-cn",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "mini-proto",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ]
+      }
+    ],
+    "cases": [
+      "three-real-four-core-input-branches",
+      "two-own-cellular-SKUs-ordinary-SMA-antenna-finite-elbow-motion-with-fixed-coupling-body-and-ports",
+      "two-SMA-ports-reject-RP-SMA-and-Grove-preserving-occupied-antenna",
+      "native-rear-cover-service-removes-only-cover-fasteners-and-rear-film-retaining-other-material-and-frames",
+      "internal-empty-NanoSIM-holder-passive-anchor-only-accessible-after-own-real-cover-removal",
+      "Mini-Proto-own-48-hole-board-without-U022-borrowed-hole-grid-or-user-circuit",
+      "both-entries-all-real-configurations-artwork-preserves-every-physical-attribute-index-and-world-matrix",
+      "external-pose-cable-no-inputecho-independent-detach-and-host-framebuffer-preserved"
+    ],
+    "scope": "Three current exact-SKU assemblies and external visual motion; Node canvas stub; no browser/GPU,cellular/RF/AT/UART,SIM or network state,electrical/power,firmware,measured stops,production fit,physical hardware or whole-catalog acceptance"
+  },
+  "checks": {
+    "localProductSmoke": "all current batch products pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "nbiot2",
+        "status": "frozen",
+        "checkedFiles": 14
+      },
+      {
+        "id": "nbiot-cn",
+        "status": "frozen",
+        "checkedFiles": 15
+      },
+      {
+        "id": "mini-proto",
+        "status": "frozen",
+        "checkedFiles": 11
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "All physical attributes/index/world matrices preserved across actual entries/configurations",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "5687276665ea1cbdbe282318ca99fe525e14fc665a4466b4d3319c1d47dc8995",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "b9dbad3d0fd33f49e89568f325a80a29d8403420745ab31862482971b36f301d",
+      "logDistributed": false
+    },
+    "exportCount": 8,
+    "catalogConfigurations": {
+      "status": "pass",
+      "products": [
+        {
+          "id": "nbiot2",
+          "presets": [
+            {
+              "id": "assembled",
+              "name": "Assembled casing",
+              "options": {
+                "rearCover": true,
+                "antenna": false,
+                "antennaAngleDeg": 0
+              }
+            },
+            {
+              "id": "assembled-antenna",
+              "name": "Assembled with own estimated round antenna",
+              "options": {
+                "rearCover": true,
+                "antenna": true,
+                "antennaAngleDeg": 0
+              }
+            },
+            {
+              "id": "rear-service",
+              "name": "Rear cover removed;internal NanoSIM socket",
+              "options": {
+                "rearCover": false,
+                "antenna": false,
+                "antennaAngleDeg": 0
+              }
+            },
+            {
+              "id": "rear-service-antenna",
+              "name": "Rear cover removed with own estimated round antenna",
+              "options": {
+                "rearCover": false,
+                "antenna": true,
+                "antennaAngleDeg": 0
+              }
+            }
+          ],
+          "defaults": {
+            "rearCover": true,
+            "antenna": false,
+            "antennaAngleDeg": 0
+          }
+        },
+        {
+          "id": "nbiot-cn",
+          "presets": [
+            {
+              "id": "body",
+              "name": "Closed body without antenna",
+              "options": {
+                "rearCover": true,
+                "antenna": false
+              }
+            },
+            {
+              "id": "antenna",
+              "name": "Closed body with supplied antenna",
+              "options": {
+                "rearCover": true,
+                "antenna": true,
+                "antennaAngleDeg": 0
+              }
+            },
+            {
+              "id": "sim-service",
+              "name": "Rear cover removed for internal NanoSIM holder",
+              "options": {
+                "rearCover": false,
+                "antenna": false
+              }
+            },
+            {
+              "id": "sim-service-antenna",
+              "name": "Rear service with antenna folded45degrees",
+              "options": {
+                "rearCover": false,
+                "antenna": true,
+                "antennaAngleDeg": 45
+              }
+            }
+          ],
+          "defaults": {
+            "rearCover": true,
+            "antenna": false,
+            "antennaAngleDeg": 0
+          }
+        },
+        {
+          "id": "mini-proto",
+          "presets": [
+            {
+              "id": "closed",
+              "name": "完整后壳",
+              "options": {
+                "rearCover": true
+              }
+            },
+            {
+              "id": "rear-service",
+              "name": "移除后壳查看实体洞板",
+              "options": {
+                "rearCover": false
+              }
+            }
+          ],
+          "defaults": {
+            "rearCover": true
+          }
+        }
+      ],
+      "scope": "Three current frozen named configuration arrays, constructor defaults and existing demo preset contract"
+    },
+    "livePreview": "151-product catalog, 3 own runtime chunks and all corresponding source PNG bytes verified in live dist (ordinary or inlined assets)",
+    "newSourcePrivacy": "New JS/JSON/Markdown/PNG and all current added catalog/manifest records checked; private table/URLs/vectors/original names/mappings/raw material/intermediates excluded",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "Only new products/catalog entries/exports/guide/plan; protected old private/public bytes retained",
+    "existingPublicUnitFilesUnchanged": 1114,
+    "existingPrivateUnitFilesUnchanged": 1075,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [
+    {
+      "product": "mini-proto",
+      "record": "docs/research/mini-proto/sources.json",
+      "feedback_id": "0a4076b0084d46d8856ad4b32f35f0cb",
+      "accepted": true
+    }
+  ],
+  "previewAssets": [
+    {
+      "id": "nbiot2",
+      "file": "assets/nbiot2-B8LquE1m.js",
+      "sha256": "f0f3e085b08ad32b97cf923aa535c847c94a59767a66e35c9ce4ca1a618c06f8"
+    },
+    {
+      "id": "nbiot-cn",
+      "file": "assets/nbiot-cn-DXJUKjXG.js",
+      "sha256": "eb3a6d61e76ca5b1f16429a855df3f8ee35fd677806b7eabcf330bd0ffd57767"
+    },
+    {
+      "id": "mini-proto",
+      "file": "assets/mini-proto-BK9F2zzy.js",
+      "sha256": "a5b66129a30080c3877323626a2bd819270105c124e50524516321213344fec7"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/nbiot2/Antenna.js",
+      "sha256": "a97d0542bed5bcfd390efb754fda53938afdfabb273e55cf167de344b33f78bd"
+    },
+    {
+      "path": "src/units/nbiot2/assembly.js",
+      "sha256": "a2b2f3b00305683d9a8a358e7263d8c7addf58f54bbbc1107e94ab8b2e944e68"
+    },
+    {
+      "path": "src/units/nbiot2/cad-map.json",
+      "sha256": "1b926eb5f99ef48ed1c21435ab75a9914dd9f8d7f17a6c5b3d648fab208e87d3"
+    },
+    {
+      "path": "src/units/nbiot2/connectors.js",
+      "sha256": "b2f891754c9ddb434494cc6aae0519b22a6748dce8a86846a51d2f224c347ff0"
+    },
+    {
+      "path": "src/units/nbiot2/dimensions.js",
+      "sha256": "899d5a14bc3483b3dd56761949eee9ea7f5d341794fbe657dddc901aa6972dd6"
+    },
+    {
+      "path": "src/units/nbiot2/geometry-data.js",
+      "sha256": "17a44c20b5ca85a2db81a41c5f4f09c7b7960ffda643b93a10e86beb9947e0f3"
+    },
+    {
+      "path": "src/units/nbiot2/index.js",
+      "sha256": "55dc6591f0c69479dbc7b5f7cff7b18d1dbf3030c482a554c575be4694cd45c1"
+    },
+    {
+      "path": "src/units/nbiot2/reference-redraw-back.png",
+      "sha256": "f748e5795ee925b9625b897f57caf4226ee24120a84ae0738b21d86b4b89214f"
+    },
+    {
+      "path": "src/units/nbiot2/reference-redraw-front.png",
+      "sha256": "b86445242f81a67413eb82788ff057dfd29bf2af11518ee9da0a78a7b2490c8a"
+    },
+    {
+      "path": "src/units/nbiot2/stickers.js",
+      "sha256": "a17ab9f001e7943c8b69a8ef10fc505deff658e1308929fb9e340568b44b61c5"
+    },
+    {
+      "path": "docs/research/nbiot2/artwork.json",
+      "sha256": "1abd332baf224e4700696ad36d1c808f28b8d977875d87e92883648f478e8592"
+    },
+    {
+      "path": "docs/research/nbiot2/modeling.md",
+      "sha256": "7672d0966a62688730a0c563a41372f7d9a3434b129ce6b52d1b86655fe5e40b"
+    },
+    {
+      "path": "docs/research/nbiot2/smoke.json",
+      "sha256": "92598cdba37a2018119a8f51e0d08da501504f85d062e136e2b241eb34a2c452"
+    },
+    {
+      "path": "docs/research/nbiot2/sources.json",
+      "sha256": "2eade0dd85f180924172cd2f59d914a4a77896ecd87b9436f29d2c3686024afe"
+    },
+    {
+      "path": "src/units/nbiot-cn/Antenna.js",
+      "sha256": "bd81c950430d67607043ca31e9a7b7289b99389a00d754e659daaaf1e1b40c22"
+    },
+    {
+      "path": "src/units/nbiot-cn/artwork/back.png",
+      "sha256": "cae96908e4d38cf9b32c09b31eee1548e3bfb760b04ccf17121b2d51565d4d25"
+    },
+    {
+      "path": "src/units/nbiot-cn/artwork/front.png",
+      "sha256": "ccff981b4907a20a5557394905d6de232dcc04b518422d00a06a6be9e35943ce"
+    },
+    {
+      "path": "src/units/nbiot-cn/assembly.js",
+      "sha256": "e6a0737126aa5f9757bd23136b69944e0509479f42c01f03190e5c7030f3e09e"
+    },
+    {
+      "path": "src/units/nbiot-cn/cad-map.json",
+      "sha256": "7db35c81b3fbfc5d773fd4f5f33cff98a524745b5faf321569c0150b310176a7"
+    },
+    {
+      "path": "src/units/nbiot-cn/connectors.js",
+      "sha256": "fe4590a8650d8afc77ef2fb702c1072d715f5bd9d50d415c0a525049e81174af"
+    },
+    {
+      "path": "src/units/nbiot-cn/dimensions.js",
+      "sha256": "3e946f0c9a68832601ff744e104f37c2e01551a7d5c9b8c0f32a947ccb53ef11"
+    },
+    {
+      "path": "src/units/nbiot-cn/geometry-data.js",
+      "sha256": "57cd38be8cc7372da49c8a11ea55f18809cb854f3e22474b4e55c688b824edb8"
+    },
+    {
+      "path": "src/units/nbiot-cn/geometry.js",
+      "sha256": "34879ce3bd8fe268f1fbc943e92aa248d16927398a7acbd05db5117aa21b84c4"
+    },
+    {
+      "path": "src/units/nbiot-cn/index.js",
+      "sha256": "c61640cae43a7829f41f01165420c84661936a988bbb19a6e2528b6f3c33b451"
+    },
+    {
+      "path": "src/units/nbiot-cn/stickers.js",
+      "sha256": "b8ad6063d7b1cbb672b9fc8bb4752edf13458e6d8a2854916cfca5ac7df028df"
+    },
+    {
+      "path": "docs/research/nbiot-cn/artwork.json",
+      "sha256": "dab8bf0a3dea1c1f6e198849e559b7c2fae6c52c8c0907eee97ad5a8c2239ebb"
+    },
+    {
+      "path": "docs/research/nbiot-cn/modeling.md",
+      "sha256": "6399dc287ad31eab8d846df4e6ef825d9ebe7baaf75efc670d9568ecacdbc943"
+    },
+    {
+      "path": "docs/research/nbiot-cn/smoke.json",
+      "sha256": "a5116083f21f65b30d066d1c415d5264d0e21ff6caa5c831a3e3406a03cc7316"
+    },
+    {
+      "path": "docs/research/nbiot-cn/sources.json",
+      "sha256": "0092a9fad722f928fa32821c774d26613ad22c4803022392047434f74c4fd8b2"
+    },
+    {
+      "path": "src/units/mini-proto/artwork/back.png",
+      "sha256": "0164e7bb7ec9a4e2a128285f057076a92b662478f34a20e5ee63f59e27709e2d"
+    },
+    {
+      "path": "src/units/mini-proto/assembly.js",
+      "sha256": "77c5ffe9360f91027438dd6c65674da50145b91bd899096042034d4c2bf871ed"
+    },
+    {
+      "path": "src/units/mini-proto/cad-map.json",
+      "sha256": "bfbc38356274b8deee838dce268eab3e571249139289e7b09f6fe0a8559d5d3c"
+    },
+    {
+      "path": "src/units/mini-proto/dimensions.js",
+      "sha256": "22bb839dad295f90a2703f25f85d8cf140505dcb23cea956800c4c3d0827de72"
+    },
+    {
+      "path": "src/units/mini-proto/geometry-data.js",
+      "sha256": "8d7ca4f5b0f345a5b4be907b7e17b7edadc58ab7ddf1d2b36c30489499214b7b"
+    },
+    {
+      "path": "src/units/mini-proto/index.js",
+      "sha256": "792d56f1085bf7b6fc3f392e56ad879393e923a89fc71ee4360578ec4eb3ec0d"
+    },
+    {
+      "path": "src/units/mini-proto/stickers.js",
+      "sha256": "4b8e3a554c1fc07bcc443bdec9ef2dbfe1b0ef927116dce9b0bbc567da78aee0"
+    },
+    {
+      "path": "docs/research/mini-proto/artwork.json",
+      "sha256": "252ff1250acd3fd35de4725ca4ffce53566355a5b82c2ca68415e3abcd9a9452"
+    },
+    {
+      "path": "docs/research/mini-proto/modeling.md",
+      "sha256": "9a1131b630e8dd77c4739a829b9793207ba4efd62eb1dbe97847abd5a8c45fee"
+    },
+    {
+      "path": "docs/research/mini-proto/smoke.json",
+      "sha256": "feceaa0c6266196193d1f49d30fc348a24653d6c16a85775ff9566e5be703038"
+    },
+    {
+      "path": "docs/research/mini-proto/sources.json",
+      "sha256": "fa7787c8b7f0037d82f6d7e80622f25d45bbfed78c9d5e1861ef833046cbb6c7"
+    }
+  ],
+  "limitations": [
+    "Exact own-SKU public CAD/photo/drawing sources,hidden assembly positions,connector registration and accessory travel retain the recorded appearance inferences;not manufacturing,measured mechanical-stop or production-fit acceptance",
+    "Cellular variants use their own module,PCB/cardholder/SMA/Grove/antenna and actual service cover;published shell-byte equality does not prove common internal assembly,print,antenna or exterior LED path",
+    "Only proven externally driven physical controls,joints and lamp carriers are exposed;no cellular/network/RF/AT/UART,electrical/power,firmware or invented internal values",
+    "Final ordinary PNGs are exact-model source rasters or attributed own-reference redraws;private table,originals,URLs,mappings,generators and intermediates remain outside distribution",
+    "Earlier sticker checkpoints,private Scroll and unresolved StackChan production fit/Puzzle Bridge mating remain preserved;overall goal active"
+  ]
+}

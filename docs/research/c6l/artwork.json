@@ -1,0 +1,118 @@
+{
+  "id": "c6l",
+  "sku": "U202",
+  "kind": "source-vector-raster-and-reference-redraw",
+  "status": "source-vector-raster-and-reference-redraw",
+  "pngCount": 4,
+  "bodyPanels": 2,
+  "antennaBands": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "sources": [
+    {
+      "kind": "private-exact-model-original",
+      "distributed": false,
+      "scope": "Exact U202 body labels;private table,source filename,URL,vectors and flat proof excluded"
+    },
+    {
+      "kind": "official-own-product-front-reference",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1185/U202-Unit-C6L_07.webp",
+      "sha256": "509e7d1cb26b532b46b2f6f7b0f83c4c48e2451bbc3d05648cfed3f494c1fd59"
+    },
+    {
+      "kind": "official-own-product-rear-reference",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1185/U202-Unit-C6L_08.webp",
+      "sha256": "f61d7090cc3f515588e919f52044d8b1fd99694d36947d76be1ba97f9a1f0877"
+    },
+    {
+      "kind": "official-own-accessory-reference",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1185/U202-Unit-C6L_10.webp",
+      "sha256": "67c1b739bbdef8916250e537044ce36f86826be95f1a86b5315c83b670a3379b"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/c6l/source-amended-front.png",
+      "sha256": "e92eb0dde87bbcc5a17a86df90345905f9975a05ae29db926b588b030123cfd1",
+      "pixels": [
+        1980,
+        1204
+      ],
+      "kind": "source-vector-raster-and-reference-redraw",
+      "face": "front",
+      "sizeMm": [
+        19.8,
+        12
+      ],
+      "positionMm": [
+        0,
+        19.5,
+        3.85
+      ],
+      "method": "printedArtwork on fixed physical film"
+    },
+    {
+      "path": "src/units/c6l/source-vector-back.png",
+      "sha256": "767956bca0de2cb9bdafea5313330a1eb59711985313b1fc473f7da717fdb7a6",
+      "pixels": [
+        1780,
+        2976
+      ],
+      "kind": "source-vector-raster",
+      "face": "back",
+      "sizeMm": [
+        17.8,
+        29.8
+      ],
+      "positionMm": [
+        0,
+        3.3,
+        -3.85
+      ],
+      "method": "printedArtwork on fixed physical film"
+    },
+    {
+      "path": "src/units/c6l/reference-redraw-lora-band.png",
+      "sha256": "27ca24d52a2b39524500a4abce97b3275ae6feefd143a3c1dd876b7b202e49ae",
+      "pixels": [
+        2400,
+        400
+      ],
+      "kind": "reference-redraw",
+      "face": "LoRa collar",
+      "sizeMm": [
+        24,
+        4
+      ],
+      "positionMm": null,
+      "method": "optional ordinary-raster texture on physical adhesive collar;identical geometry with artwork:false"
+    },
+    {
+      "path": "src/units/c6l/reference-redraw-wifi-band.png",
+      "sha256": "2857879270e477178c78773d49c6f7a2f01b0ebd1f2edd46108a593679250cdf",
+      "pixels": [
+        2400,
+        400
+      ],
+      "kind": "reference-redraw",
+      "face": "Wi-Fi collar",
+      "sizeMm": [
+        24,
+        4
+      ],
+      "positionMm": null,
+      "method": "optional ordinary-raster texture on physical adhesive collar;identical geometry with artwork:false"
+    }
+  ],
+  "method": "Exact own rear source vectors bounded to the label contour and rasterized with physical white-film background. Front source lettering and marks retained;frequency band amended from the current exact U202 official front reference. Converter-only front regulatory-mark color and overlapping-numeral fill repaired against the exact flat proof. Own LoRa and Wi-Fi collar text/colors redrawn to ordinary PNGs from readable supplied-accessory photographs. No photograph pixels/crops or source vectors distributed.",
+  "limitations": [
+    "A candidate source revision differs from the current exact-product front reference;the frequency band follows the current official868–923 print,and is explicitly an amendment rather than an untouched original.",
+    "Other-SKU module candidates and packaging artwork are excluded.",
+    "Front film Y13.5–25.5mm is above OLED and disjoint from front user tongueY-9.7–-2.6mm/side reset;no static ink lies over a moving cap. Rear film belongs to fixed rear housing.",
+    "Body films touch actual native recesses;OLED glass,RGB diffuser,original status guide and real acoustic carrier close apertures independently of ink.",
+    "The antenna collar is physical geometry with an optional texture;artwork:false removes print including collar color/letters but preserves all attributes,index and world matrices.",
+    "Antenna typography/registration,front amended typeface and film installation are appearance reconstructions.",
+    "Private table,URLs,mappings,original vectors,photos,flat proof,conversion tools and intermediates remain outside Git."
+  ],
+  "rights": "Product names,printed designs,marks and trademarks retain their respective rights."
+}

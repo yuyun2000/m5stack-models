@@ -1,0 +1,1748 @@
+{
+  "checkedAt": "2026-10-26T15:53:24.880Z",
+  "status": "pass",
+  "scope": "Necessary own U213 construction/API checks only;no browser,GPU,production fit,key stop,network,USB,PoE,electrical,firmware or hardware validation.",
+  "meshes": 619,
+  "triangles": 100116,
+  "nativeSourceTriangles": 12316,
+  "selectedNativeTriangles": 6158,
+  "outputDerivedTriangles": 11728,
+  "nativeBoundsMm": [
+    24,
+    64.00000381469727,
+    20.199999809265137
+  ],
+  "visualBounds": {
+    "min": [
+      -12,
+      -32.024999988079074,
+      -10.100000381469727
+    ],
+    "max": [
+      12.025000000149012,
+      32.025000000149014,
+      10.09999942779541
+    ],
+    "size": [
+      24.025000000149014,
+      64.04999998822808,
+      20.199999809265137
+    ]
+  },
+  "topologies": {
+    "shell": {
+      "edges": 7659,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 4692.3547704376715
+    },
+    "frontCover": {
+      "edges": 9933,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 2503.1594231941635
+    },
+    "mainPCB": {
+      "edges": 11172,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 1001.0658115114512
+    },
+    "powerPCB": {
+      "edges": 1938,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 814.3708656542685
+    },
+    "hostUSB": {
+      "edges": 3864,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 32.77771398952215
+    },
+    "otgUSB": {
+      "edges": 3864,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 32.77771398952215
+    },
+    "jackFace": {
+      "edges": 5916,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 22.932985056009215
+    },
+    "jackCarrier": {
+      "edges": 5916,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 1724.560406225986
+    },
+    "sdio": {
+      "edges": 19488,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 242.75680104549255
+    },
+    "isp": {
+      "edges": 13638,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 162.51584688855908
+    },
+    "hat2": {
+      "edges": 33138,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 416.1173032178867
+    },
+    "front": {
+      "edges": 120,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 31.39047230979226
+    },
+    "back": {
+      "edges": 48,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 38.773160032338545
+    },
+    "hat": {
+      "edges": 108,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 4.458622717681786
+    },
+    "side": {
+      "edges": 60,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 1.3376374237350819
+    }
+  },
+  "nativeSourceFaceRetention": [
+    {
+      "component": 0,
+      "sourceTriangles": 4050,
+      "runtimeTriangles": 5106,
+      "retainedByteExactSourceFaces": 4023,
+      "recordedModifiedFaces": 27
+    },
+    {
+      "component": 2,
+      "sourceTriangles": 2108,
+      "runtimeTriangles": 6622,
+      "retainedByteExactSourceFaces": 1952,
+      "recordedModifiedFaces": 156
+    }
+  ],
+  "closureChecks": [
+    {
+      "purpose": "PoE-P4 usb-host independent USB-C16P socket actual tongue",
+      "localOrigin": [
+        0,
+        0,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "PoE-P4 usb-host independent USB-C16P socket actual deep rear",
+      "localOrigin": [
+        0,
+        0.8,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "PoE-P4 usb-otg independent USB-C16P socket actual tongue",
+      "localOrigin": [
+        0,
+        0,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "PoE-P4 usb-otg independent USB-C16P socket actual deep rear",
+      "localOrigin": [
+        0,
+        0.8,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "RJ45 actual deep insertion stop",
+      "localOrigin": [
+        0,
+        1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "Grove actual deep rear",
+      "localOrigin": [
+        0,
+        0,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "sdio true socket axis",
+      "localOrigin": [
+        0,
+        -10.16,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "sdio true socket axis",
+      "localOrigin": [
+        0,
+        -7.62,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "sdio true socket axis",
+      "localOrigin": [
+        0,
+        -5.08,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "sdio true socket axis",
+      "localOrigin": [
+        0,
+        -2.54,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "sdio true socket axis",
+      "localOrigin": [
+        0,
+        0,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "sdio true socket axis",
+      "localOrigin": [
+        0,
+        2.54,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "sdio true socket axis",
+      "localOrigin": [
+        0,
+        5.08,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "sdio true socket axis",
+      "localOrigin": [
+        0,
+        7.62,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "sdio true socket axis",
+      "localOrigin": [
+        0,
+        10.16,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "isp true socket axis",
+      "localOrigin": [
+        0,
+        -6.35,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "isp true socket axis",
+      "localOrigin": [
+        0,
+        -3.81,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "isp true socket axis",
+      "localOrigin": [
+        0,
+        -1.27,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "isp true socket axis",
+      "localOrigin": [
+        0,
+        1.27,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "isp true socket axis",
+      "localOrigin": [
+        0,
+        3.81,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "isp true socket axis",
+      "localOrigin": [
+        0,
+        6.35,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "localOrigin": [
+        -8.89,
+        -1.27,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "localOrigin": [
+        -6.35,
+        -1.27,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "localOrigin": [
+        -3.81,
+        -1.27,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "localOrigin": [
+        -1.27,
+        -1.27,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "localOrigin": [
+        1.27,
+        -1.27,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "localOrigin": [
+        3.81,
+        -1.27,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "localOrigin": [
+        6.35,
+        -1.27,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "localOrigin": [
+        8.89,
+        -1.27,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "localOrigin": [
+        -8.89,
+        1.27,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "localOrigin": [
+        -6.35,
+        1.27,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "localOrigin": [
+        -3.81,
+        1.27,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "localOrigin": [
+        -1.27,
+        1.27,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "localOrigin": [
+        1.27,
+        1.27,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "localOrigin": [
+        3.81,
+        1.27,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "localOrigin": [
+        6.35,
+        1.27,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "localOrigin": [
+        8.89,
+        1.27,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 1",
+      "localOrigin": [
+        -5.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 2",
+      "localOrigin": [
+        -5.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 3",
+      "localOrigin": [
+        -4.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 4",
+      "localOrigin": [
+        -4.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 5",
+      "localOrigin": [
+        -3.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 6",
+      "localOrigin": [
+        -3.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 7",
+      "localOrigin": [
+        -2.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 8",
+      "localOrigin": [
+        -2.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 9",
+      "localOrigin": [
+        -1.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 10",
+      "localOrigin": [
+        -1.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 11",
+      "localOrigin": [
+        -0.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 12",
+      "localOrigin": [
+        -0.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 13",
+      "localOrigin": [
+        0.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 14",
+      "localOrigin": [
+        0.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 15",
+      "localOrigin": [
+        1.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 16",
+      "localOrigin": [
+        1.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 17",
+      "localOrigin": [
+        2.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 18",
+      "localOrigin": [
+        2.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 19",
+      "localOrigin": [
+        3.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 20",
+      "localOrigin": [
+        3.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 21",
+      "localOrigin": [
+        4.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 22",
+      "localOrigin": [
+        4.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 23",
+      "localOrigin": [
+        5.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "csi real contact 24",
+      "localOrigin": [
+        5.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 1",
+      "localOrigin": [
+        -5.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 2",
+      "localOrigin": [
+        -5.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 3",
+      "localOrigin": [
+        -4.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 4",
+      "localOrigin": [
+        -4.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 5",
+      "localOrigin": [
+        -3.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 6",
+      "localOrigin": [
+        -3.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 7",
+      "localOrigin": [
+        -2.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 8",
+      "localOrigin": [
+        -2.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 9",
+      "localOrigin": [
+        -1.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 10",
+      "localOrigin": [
+        -1.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 11",
+      "localOrigin": [
+        -0.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 12",
+      "localOrigin": [
+        -0.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 13",
+      "localOrigin": [
+        0.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 14",
+      "localOrigin": [
+        0.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 15",
+      "localOrigin": [
+        1.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 16",
+      "localOrigin": [
+        1.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 17",
+      "localOrigin": [
+        2.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 18",
+      "localOrigin": [
+        2.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 19",
+      "localOrigin": [
+        3.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 20",
+      "localOrigin": [
+        3.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 21",
+      "localOrigin": [
+        4.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 22",
+      "localOrigin": [
+        4.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 23",
+      "localOrigin": [
+        5.25,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "dsi real contact 24",
+      "localOrigin": [
+        5.75,
+        0.1,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "RGB through actual native slit",
+      "localOrigin": [
+        0,
+        0,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "purpose": "IR actual dark lens through native recess",
+      "localOrigin": [
+        0,
+        0,
+        20
+      ],
+      "localDirection": [
+        0,
+        0,
+        -1
+      ]
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "PoE-P4 usb-host independent USB-C16P socket actual tongue",
+      "hit": "PoE-P4 usb-host actual insulating tongue",
+      "distanceMm": 21.000000047683717
+    },
+    {
+      "purpose": "PoE-P4 usb-host independent USB-C16P socket actual deep rear",
+      "hit": "PoE-P4 usb-host deep rear dielectric",
+      "distanceMm": 25.024999994039536
+    },
+    {
+      "purpose": "PoE-P4 usb-otg independent USB-C16P socket actual tongue",
+      "hit": "PoE-P4 usb-otg actual insulating tongue",
+      "distanceMm": 21.000000047683717
+    },
+    {
+      "purpose": "PoE-P4 usb-otg independent USB-C16P socket actual deep rear",
+      "hit": "PoE-P4 usb-otg deep rear dielectric",
+      "distanceMm": 25.024999994039536
+    },
+    {
+      "purpose": "RJ45 actual deep insertion stop",
+      "hit": "PoE-P4 RJ45 deep insertion stop",
+      "distanceMm": 38.474999994039536
+    },
+    {
+      "purpose": "Grove actual deep rear",
+      "hit": "PoE-P4 Grove deep rear",
+      "distanceMm": 25.85000001192092
+    },
+    {
+      "purpose": "sdio true socket axis",
+      "hit": "PoE-P4 sdio deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "sdio true socket axis",
+      "hit": "PoE-P4 sdio deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "sdio true socket axis",
+      "hit": "PoE-P4 sdio deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "sdio true socket axis",
+      "hit": "PoE-P4 sdio deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "sdio true socket axis",
+      "hit": "PoE-P4 sdio deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "sdio true socket axis",
+      "hit": "PoE-P4 sdio deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "sdio true socket axis",
+      "hit": "PoE-P4 sdio deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "sdio true socket axis",
+      "hit": "PoE-P4 sdio deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "sdio true socket axis",
+      "hit": "PoE-P4 sdio deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "isp true socket axis",
+      "hit": "PoE-P4 isp deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "isp true socket axis",
+      "hit": "PoE-P4 isp deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "isp true socket axis",
+      "hit": "PoE-P4 isp deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "isp true socket axis",
+      "hit": "PoE-P4 isp deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "isp true socket axis",
+      "hit": "PoE-P4 isp deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "isp true socket axis",
+      "hit": "PoE-P4 isp deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "hit": "PoE-P4 hat2 deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "hit": "PoE-P4 hat2 deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "hit": "PoE-P4 hat2 deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "hit": "PoE-P4 hat2 deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "hit": "PoE-P4 hat2 deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "hit": "PoE-P4 hat2 deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "hit": "PoE-P4 hat2 deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "hit": "PoE-P4 hat2 deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "hit": "PoE-P4 hat2 deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "hit": "PoE-P4 hat2 deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "hit": "PoE-P4 hat2 deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "hit": "PoE-P4 hat2 deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "hit": "PoE-P4 hat2 deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "hit": "PoE-P4 hat2 deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "hit": "PoE-P4 hat2 deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "hat2 true socket axis",
+      "hit": "PoE-P4 hat2 deep socket floor",
+      "distanceMm": 24.840000001341103
+    },
+    {
+      "purpose": "csi real contact 1",
+      "hit": "PoE-P4 csi actual FPC contact 1",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 2",
+      "hit": "PoE-P4 csi actual FPC contact 2",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 3",
+      "hit": "PoE-P4 csi actual FPC contact 3",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 4",
+      "hit": "PoE-P4 csi actual FPC contact 4",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 5",
+      "hit": "PoE-P4 csi actual FPC contact 5",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 6",
+      "hit": "PoE-P4 csi actual FPC contact 6",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 7",
+      "hit": "PoE-P4 csi actual FPC contact 7",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 8",
+      "hit": "PoE-P4 csi actual FPC contact 8",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 9",
+      "hit": "PoE-P4 csi actual FPC contact 9",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 10",
+      "hit": "PoE-P4 csi actual FPC contact 10",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 11",
+      "hit": "PoE-P4 csi actual FPC contact 11",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 12",
+      "hit": "PoE-P4 csi actual FPC contact 12",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 13",
+      "hit": "PoE-P4 csi actual FPC contact 13",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 14",
+      "hit": "PoE-P4 csi actual FPC contact 14",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 15",
+      "hit": "PoE-P4 csi actual FPC contact 15",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 16",
+      "hit": "PoE-P4 csi actual FPC contact 16",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 17",
+      "hit": "PoE-P4 csi actual FPC contact 17",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 18",
+      "hit": "PoE-P4 csi actual FPC contact 18",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 19",
+      "hit": "PoE-P4 csi actual FPC contact 19",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 20",
+      "hit": "PoE-P4 csi actual FPC contact 20",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 21",
+      "hit": "PoE-P4 csi actual FPC contact 21",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 22",
+      "hit": "PoE-P4 csi actual FPC contact 22",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 23",
+      "hit": "PoE-P4 csi actual FPC contact 23",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "csi real contact 24",
+      "hit": "PoE-P4 csi actual FPC contact 24",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 1",
+      "hit": "PoE-P4 dsi actual FPC contact 1",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 2",
+      "hit": "PoE-P4 dsi actual FPC contact 2",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 3",
+      "hit": "PoE-P4 dsi actual FPC contact 3",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 4",
+      "hit": "PoE-P4 dsi actual FPC contact 4",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 5",
+      "hit": "PoE-P4 dsi actual FPC contact 5",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 6",
+      "hit": "PoE-P4 dsi actual FPC contact 6",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 7",
+      "hit": "PoE-P4 dsi actual FPC contact 7",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 8",
+      "hit": "PoE-P4 dsi actual FPC contact 8",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 9",
+      "hit": "PoE-P4 dsi actual FPC contact 9",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 10",
+      "hit": "PoE-P4 dsi actual FPC contact 10",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 11",
+      "hit": "PoE-P4 dsi actual FPC contact 11",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 12",
+      "hit": "PoE-P4 dsi actual FPC contact 12",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 13",
+      "hit": "PoE-P4 dsi actual FPC contact 13",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 14",
+      "hit": "PoE-P4 dsi actual FPC contact 14",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 15",
+      "hit": "PoE-P4 dsi actual FPC contact 15",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 16",
+      "hit": "PoE-P4 dsi actual FPC contact 16",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 17",
+      "hit": "PoE-P4 dsi actual FPC contact 17",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 18",
+      "hit": "PoE-P4 dsi actual FPC contact 18",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 19",
+      "hit": "PoE-P4 dsi actual FPC contact 19",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 20",
+      "hit": "PoE-P4 dsi actual FPC contact 20",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 21",
+      "hit": "PoE-P4 dsi actual FPC contact 21",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 22",
+      "hit": "PoE-P4 dsi actual FPC contact 22",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 23",
+      "hit": "PoE-P4 dsi actual FPC contact 23",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "dsi real contact 24",
+      "hit": "PoE-P4 dsi actual FPC contact 24",
+      "distanceMm": 20.694999998211863
+    },
+    {
+      "purpose": "RGB through actual native slit",
+      "hit": "PoE-P4 actual opal RGB lens behind native slit",
+      "distanceMm": 19.925000005960463
+    },
+    {
+      "purpose": "IR actual dark lens through native recess",
+      "hit": "PoE-P4 actual dark IR lens, no visible emission",
+      "distanceMm": 19.349999999999994
+    }
+  ],
+  "amendedBoreWallRays": 68,
+  "headerBoreRays": 62,
+  "headerContactRays": 31,
+  "usbContactRays": 16,
+  "jackContactRays": 8,
+  "fpcContactRays": 48,
+  "pcbWallRays": 15,
+  "nativeButtonVertices": 110,
+  "button": "multi-source hold/release/cancel;neutral attributes/normals exact;unselected native vertices,fixed packages/boards/ports unchanged;normal click after cancellation works",
+  "leds": "three independent materials;off default;fixed yellow/green network lenses;no automatic control associations",
+  "publicAPI": {
+    "exports": [
+      "Model",
+      "GroveModule",
+      "spec"
+    ],
+    "ports": [
+      "grove",
+      "usb-host",
+      "usb-otg",
+      "ethernet",
+      "csi",
+      "dsi",
+      "sdio",
+      "isp",
+      "hat2"
+    ],
+    "controls": [
+      "user"
+    ],
+    "leds": [
+      "rgb",
+      "link-led",
+      "activity-led"
+    ],
+    "displays": [],
+    "sensors": [],
+    "joints": [],
+    "ir": "physical dark emitter only;no beam or visible light API",
+    "options": {
+      "artwork": "false disables print only"
+    }
+  },
+  "artwork": {
+    "pngCount": 4,
+    "kind": "source-vector-raster",
+    "configurationChecks": 2,
+    "physicalGeometryInvariant": true,
+    "physicalFilmsRemain": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "noEcho": "pass",
+  "disposedResources": 992
+}

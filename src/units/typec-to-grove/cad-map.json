@@ -1,0 +1,48 @@
+{
+  "sku": "U151",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/a9ac25ce7325a37b03b3f4457a6f45caf3b058dc/Products/U151_Unit_TypeC_to_Grove/Structures/Unit_TypeC%20to_Grove.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/869f5a4642334b25657fc6c35ae210b36414c19e",
+  "commit": "a9ac25ce7325a37b03b3f4457a6f45caf3b058dc",
+  "gitBlob": "869f5a4642334b25657fc6c35ae210b36414c19e",
+  "sha256": "884a0fa77bb5b2304425e03050fae30ab3d3a68cbe960efb4b534df7cbe7b0a7",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/a9ac25ce7325a37b03b3f4457a6f45caf3b058dc/LICENSE",
+  "origin": [
+    265.2688293457031,
+    269.2234802246094,
+    2.000001
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 0,
+      "name": "TypeC to Grove complete native assembled shell",
+      "material": "shell",
+      "triangles": 3250
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 3250,
+  "localModification": null,
+  "notes": "Exact own U151 path-specific commit and Git blob verified.Component0 complete3250-triangle assembled24×32×8mm shell retained intact.Components1/2 displaced1660/1590-triangle duplicate halves excluded.One common translation,identity axes,scale1,no native triangles removed,filled,patched,scaled or independently repositioned.Three actual front-facing Grove sockets provide2.8mm projection to own drawing10.8mm total depth."
+}

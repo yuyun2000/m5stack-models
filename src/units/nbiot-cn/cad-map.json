@@ -1,0 +1,67 @@
+{
+  "sku": "U112",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3/Products/U112_Unit_NBIoT-CN/Structures/Unit_NBIoT-CN.stl",
+  "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3/Products/U112_Unit_NBIoT-CN/Structures/Unit_NBIoT-CN.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/cd451d15e2d03f37e80e7db05bf7f82fa56a78ba",
+  "path": "Products/U112_Unit_NBIoT-CN/Structures/Unit_NBIoT-CN.stl",
+  "commit": "c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3",
+  "lastChangedCommit": "c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3",
+  "lastChangedAt": "2026-08-13T10:40:16Z",
+  "gitBlob": "cd451d15e2d03f37e80e7db05bf7f82fa56a78ba",
+  "sha256": "6d93ea1962caf38864027accc041acb990a61e3360581aad16edf30ec294b17f",
+  "bytes": 659284,
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3/LICENSE",
+  "origin": [
+    0,
+    32,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "sourceAssemblyComponents": [
+    0
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 6592,
+  "outputTriangles": 6592,
+  "localModification": null,
+  "parts": [
+    {
+      "component": 0,
+      "correspondingLaidOutComponent": 2,
+      "role": "front",
+      "name": "NBIoT-CN complete native front housing",
+      "material": "shell",
+      "triangles": 2734
+    },
+    {
+      "component": 0,
+      "correspondingLaidOutComponent": 1,
+      "role": "rear",
+      "name": "NBIoT-CN complete native rear housing",
+      "material": "shell",
+      "triangles": 3858
+    }
+  ],
+  "notes": "Exact own U112 source0 full6592 triangles retained under one common proper rotation/translation, scale1. Source0 faces partitioned only by directed cyclic correspondence to laid-out duplicates2(front2734)/1(rear3858), maximum deviation 0.000004827976226806641mm; no face repair/removal/fill, borrowed shell or independently repositioned native parts. Laid-out duplicate copies excluded. Original assembled mating coincidences remain; independent material topology is checked in smoke. Not a manufacturing single-manifold assembly."
+}

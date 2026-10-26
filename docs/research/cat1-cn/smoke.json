@@ -1,0 +1,481 @@
+{
+  "checkedAt": "2026-10-26T15:43:02.478Z",
+  "status": "pass",
+  "scope": "Necessary own U204 original6562 native faces partitioned2714front/3848rear by exact winding-preserving source correspondence;default complete shell and rear-only service removal;true PCB/SIM/SMA/Grove/retaining features,ordinary female center bore/male pin and capped helix terminals,own108×10 supplied antenna with finite externally driven elbow;all physical artwork invariance,nested4core pose/peer/detach/disposal.No browser review,production fit,measured hinge stops,cellular,SIMdata,AT,UART,RF,USB,electrical,firmware or physical hardware acceptance.",
+  "meshes": 263,
+  "triangles": 116390,
+  "nativeTriangles": 6562,
+  "openNativeTriangles": 2714,
+  "nativeSeparation": {
+    "method": "One-to-one original component0 triangle matching to displaced duplicate halves after rigid X translation;centroid buckets plus cyclic winding-preserving full-vertex audit,tolerance2e-5mm",
+    "missingTriangles": 0,
+    "ambiguousTriangles": 0,
+    "maximumCorrespondenceVertexErrorMm": 0.000005740206688642502,
+    "coverageTriangles": 6562,
+    "subsets": [
+      {
+        "assemblyComponent": 0,
+        "subset": "rear",
+        "triangles": 3848,
+        "duplicateComponent": 1,
+        "duplicateToAssemblyTranslationMm": [
+          -42.232147216796875,
+          0,
+          0
+        ],
+        "sourceFaceOrderSha256": "61f44b7eeb8a371d5975348fec860651d828ac53b36cef95b909121877ff3f78"
+      },
+      {
+        "assemblyComponent": 0,
+        "subset": "front",
+        "triangles": 2714,
+        "duplicateComponent": 2,
+        "duplicateToAssemblyTranslationMm": [
+          -80.47122192382812,
+          0,
+          0
+        ],
+        "sourceFaceOrderSha256": "1231362c8462798b9b10c15b1250be27ebe43d858b7eb4b1a08f76683bf1cdc6"
+      }
+    ],
+    "scope": "Disjoint complete original component0 faces classified by one-to-one original-vertex/winding correspondence to displaced duplicate halves.Output uses component0 coordinates,not duplicate geometry.No native face cut,removed,repaired or independently moved.Closed config preserves all6562;rearCover:false omits only proven3848 rear faces."
+  },
+  "nativeTopologies": {
+    "front": {
+      "edges": 4071,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 2591.103063272449
+    },
+    "rear": {
+      "edges": 5772,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 1969.8315485847186
+    }
+  },
+  "nominalMm": [
+    71.4,
+    24,
+    8
+  ],
+  "cadEnvelopeMm": [
+    24,
+    64,
+    8
+  ],
+  "visualEnvelopeMm": [
+    24,
+    71.4,
+    8.00000009536743
+  ],
+  "standaloneAntennaEnvelopeMm": [
+    10,
+    108.00000009536743,
+    10
+  ],
+  "suppliedAntennaEnvelopeMm": [
+    24,
+    174.60000009536742,
+    10
+  ],
+  "boreRays": 19,
+  "boreWalls": 54,
+  "pcbTopology": {
+    "edges": 4140,
+    "invalidEdges": 0,
+    "signedVolumeMm3": 754.9335108722647
+  },
+  "solderTopologies": [
+    {
+      "barrel": {
+        "edges": 1152,
+        "invalidEdges": 0,
+        "signedVolumeMm3": 0.3116746915754141
+      },
+      "land": {
+        "edges": 1152,
+        "invalidEdges": 0,
+        "signedVolumeMm3": 0.07752939041753092
+      }
+    },
+    {
+      "barrel": {
+        "edges": 1152,
+        "invalidEdges": 0,
+        "signedVolumeMm3": 0.3116746915754141
+      },
+      "land": {
+        "edges": 1152,
+        "invalidEdges": 0,
+        "signedVolumeMm3": 0.07752939041753092
+      }
+    },
+    {
+      "barrel": {
+        "edges": 1152,
+        "invalidEdges": 0,
+        "signedVolumeMm3": 0.3116746915754141
+      },
+      "land": {
+        "edges": 1152,
+        "invalidEdges": 0,
+        "signedVolumeMm3": 0.07752939041753092
+      }
+    },
+    {
+      "barrel": {
+        "edges": 1152,
+        "invalidEdges": 0,
+        "signedVolumeMm3": 0.3116746915754141
+      },
+      "land": {
+        "edges": 1152,
+        "invalidEdges": 0,
+        "signedVolumeMm3": 0.07752939041753092
+      }
+    }
+  ],
+  "simTopology": {
+    "edges": 6390,
+    "invalidEdges": 0,
+    "signedVolumeMm3": 27.1251950988452
+  },
+  "simMaterialClearanceMm": 2,
+  "smaTopologies": {
+    "shell": {
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 57.60314709660903
+    },
+    "dielectric": {
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 29.9745153266247
+    },
+    "contact": {
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 1.337363207053407
+    },
+    "internalHex": {
+      "edges": 612,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 127.2622778580353
+    },
+    "externalHex": {
+      "edges": 612,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 37.88673696109009
+    },
+    "thread": {
+      "edges": 8082,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 1.5289662125645054
+    }
+  },
+  "ipexTopology": {
+    "edges": 1152,
+    "invalidEdges": 0,
+    "signedVolumeMm3": 1.2753609997400357
+  },
+  "screwTopologies": [
+    {
+      "edges": 612,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 2.944614677663522
+    },
+    {
+      "edges": 612,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 2.944614677663522
+    },
+    {
+      "edges": 612,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 2.944614677663522
+    }
+  ],
+  "antennaTopologies": {
+    "nut": {
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 243.29963749442837
+    },
+    "lip": {
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 6.441162037069745
+    },
+    "carrier": {
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 32.83245520387438
+    },
+    "thread": {
+      "edges": 6930,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 1.3313134471280768
+    }
+  },
+  "filmSupportChecks": [
+    {
+      "face": "front",
+      "nativeSupportZ": 3.799999952316284
+    },
+    {
+      "face": "back",
+      "nativeSupportZ": -3.8000001907348633
+    }
+  ],
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        27.4,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 11.1,
+      "purpose": "Actual SMA installation gold hex behind native front window"
+    },
+    {
+      "origin": [
+        0,
+        27.4,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 11.1,
+      "purpose": "Actual SMA installation gold hex behind native rear window"
+    },
+    {
+      "origin": [
+        0,
+        60,
+        0
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 27,
+      "purpose": "Actual hollow ordinary SMA female contact blind end"
+    },
+    {
+      "origin": [
+        0,
+        -43,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 18,
+      "purpose": "Actual open Grove deeply recessed dielectric rear wall"
+    },
+    {
+      "origin": [
+        -8,
+        26,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Actual rear retaining screw 1 blind hex floor"
+    },
+    {
+      "origin": [
+        8,
+        26,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Actual rear retaining screw 2 blind hex floor"
+    },
+    {
+      "origin": [
+        0,
+        -20,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Actual rear retaining screw 3 blind hex floor"
+    },
+    {
+      "origin": [
+        0,
+        2.95,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Actual front film supported by unchanged native wall"
+    },
+    {
+      "origin": [
+        0,
+        3,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Actual back film supported by unchanged native wall"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Actual SMA installation gold hex behind native front window",
+      "hit": "Cat1-CN real gold internal SMA hex body behind paired native windows",
+      "distanceMm": 11.000001907348633
+    },
+    {
+      "purpose": "Actual SMA installation gold hex behind native rear window",
+      "hit": "Cat1-CN real gold internal SMA hex body behind paired native windows",
+      "distanceMm": 11.000001907348633
+    },
+    {
+      "purpose": "Actual hollow ordinary SMA female contact blind end",
+      "hit": "Cat1-CN SMA actual center contact blind end",
+      "distanceMm": 26.20000000134111
+    },
+    {
+      "purpose": "Actual open Grove deeply recessed dielectric rear wall",
+      "hit": "Cat1-CN Grove deep dielectric rear wall",
+      "distanceMm": 16.850000011920926
+    },
+    {
+      "purpose": "Actual rear retaining screw 1 blind hex floor",
+      "hit": "Cat1-CN actual rear screw blind hex floor",
+      "distanceMm": 11.500000001341105
+    },
+    {
+      "purpose": "Actual rear retaining screw 2 blind hex floor",
+      "hit": "Cat1-CN actual rear screw blind hex floor",
+      "distanceMm": 11.500000001341105
+    },
+    {
+      "purpose": "Actual rear retaining screw 3 blind hex floor",
+      "hit": "Cat1-CN actual rear screw blind hex floor",
+      "distanceMm": 11.500000001341105
+    },
+    {
+      "purpose": "Actual front film supported by unchanged native wall",
+      "hit": "Cat1-CN real front body adhesive film",
+      "distanceMm": 11.119999994337558
+    },
+    {
+      "purpose": "Actual back film supported by unchanged native wall",
+      "hit": "Cat1-CN real back body adhesive film",
+      "distanceMm": 11.120000000111759
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove",
+      "sma"
+    ],
+    "anchors": [],
+    "controls": [],
+    "joints": [],
+    "leds": [],
+    "accessoryExports": [
+      "Antenna"
+    ],
+    "accessoryComponents": [
+      "sma/tilt"
+    ],
+    "accessoryJoints": [
+      "tilt"
+    ],
+    "options": {
+      "rearCover": true,
+      "antenna": false,
+      "antennaAngleDeg": 0
+    },
+    "service": {
+      "options": {
+        "rearCover": false
+      },
+      "anchors": [
+        "sim"
+      ],
+      "omitNativeRearTriangles": 3848,
+      "retainedNativeFrontTriangles": 2714,
+      "omitFilms": [
+        "back"
+      ],
+      "omitScrews": 3,
+      "scope": "Passive SIM anchor only.Fixed internal holder,no card/tray accessory or guessed cover motion."
+    },
+    "tilt": {
+      "command": {
+        "type": "joint",
+        "target": "sma/tilt",
+        "angleDeg": 90,
+        "durationMs": 500
+      },
+      "rangeDeg": [
+        0,
+        90
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivotMm": [
+        0,
+        11.8,
+        0
+      ],
+      "continuous": false,
+      "rangeEvidence": "Own U204 supplied elbow antenna shown in actual hero/package at90degree;straight/90 visual contract reconstructs its own coupling/fork/rod.Axis and range are appearance estimates,not measured mechanical stops or RF behavior.",
+      "productionStopsVerified": false
+    }
+  },
+  "artwork": {
+    "pngCount": 2,
+    "bodyPanels": 2,
+    "servicePanels": 1,
+    "kind": "source-vector-raster",
+    "configurationChecks": 12,
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "externalAntennaHinge": "pass",
+  "noEcho": "pass",
+  "disposedResources": 373
+}

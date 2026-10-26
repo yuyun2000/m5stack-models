@@ -1,0 +1,72 @@
+{
+  "id": "gateway-h2",
+  "sku": "U195",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Exact own assembled U195 photographs:front2.4G,blue arcs,black triangular symbol,Gateway/H2;rear Gateway/H2,red ESP32-H2-/MINI-1-N2 label,blue PORT.C.UART and white/yellow/red/black TXD/RXD/5V/GND strip.Rasterized code reconstruction,no photo crop or photographic pixels.No matching exact body-label original was established.",
+  "sources": [
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1128/U195_07.webp",
+      "sha256": "b0c3cda6cb758f6fc6098126fc05fc61e1ea6d703e4759339b8aa1c9143e1c00"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1128/U195_02.webp",
+      "sha256": "2d33a5294c1b8903a51ec3c6cab54aaa266ebc86b425cb4a09e930536cd186e1"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/gateway-h2/reference-redraw-front.png",
+      "sha256": "422d1d38572ed904207df2823c2edcebc8a3bda8adc83f3b3fd05de3837b6a9a",
+      "pixels": [
+        1760,
+        2740
+      ],
+      "sizeMm": [
+        17.6,
+        27.4
+      ],
+      "positionMm": [
+        0,
+        7.65,
+        3.8
+      ],
+      "face": "front",
+      "target": "Gateway H2 actual front adhesive film",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/gateway-h2/reference-redraw-back.png",
+      "sha256": "8fdec63aeb34ee0602b9e15859a74a34785d8837df92c47de716bfc2d9cf0fcc",
+      "pixels": [
+        1600,
+        2800
+      ],
+      "sizeMm": [
+        16,
+        28
+      ],
+      "positionMm": [
+        0,
+        8,
+        -3.88
+      ],
+      "face": "back",
+      "target": "Gateway H2 actual back adhesive film",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    }
+  ],
+  "readabilityCheck": "Final two ordinary PNGs opened once for necessary readable lettering and bounded text;no full browser visual acceptance.",
+  "limitations": [
+    "Typeface,colors,film dimensions and registration reconstructed from own assembled photographs;no unreadable fine print invented.",
+    "Real two films sit directly on original native closed label-support walls;neither fills invented shell geometry.",
+    "shell:false has no casing,films or print.Artwork:false removes ink only and preserves every physical attribute,index and world transform within either configuration.",
+    "Only final ordinary PNGs distributed;raw photos,vectors,generators,private table,mappings and intake links excluded."
+  ],
+  "rights": "Product names,original printed designs and trademarks retain their respective rights."
+}

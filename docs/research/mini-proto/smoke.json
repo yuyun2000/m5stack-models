@@ -1,0 +1,978 @@
+{
+  "checkedAt": "2026-10-26T17:20:18.245Z",
+  "status": "pass",
+  "scope": "Necessary exact U064 whole-source correspondence,closed material,48real plated bores/96annuli,real Grove/backing/servicecover,all4print configurations,transformed4core/peer/noecho/disposal.No browser,GPU,production-fit,usercircuit,electrical orfirmware acceptance.",
+  "nativeTriangles": 3222,
+  "frontNativeTriangles": 1526,
+  "rearNativeTriangles": 1696,
+  "sourceTopology": {
+    "sourceSha256": "6134ca8952c9ef1ac33f89bc366c7442705d712bd2c80568da41679b36125b9a",
+    "coordinateWeldMm": 0.0001,
+    "triangleCorrespondenceToleranceMm": 0.0001,
+    "assembledComponent": 0,
+    "assembled": {
+      "triangles": 3222,
+      "edges": 4821,
+      "openOrDirectedBad": 0,
+      "twoFaceEdges": 4809,
+      "fourFaceCoincidentMatingEdges": 12,
+      "otherMultiplicity": 0,
+      "volumeMm3": 2016.2250550256765
+    },
+    "laidOutClosedShells": [
+      {
+        "component": 1,
+        "role": "rear",
+        "triangles": 1696,
+        "edges": 2544,
+        "openOrDirectedBad": 0,
+        "twoFaceEdges": 2544,
+        "fourFaceCoincidentMatingEdges": 0,
+        "otherMultiplicity": 0,
+        "volumeMm3": 979.7554500586642
+      },
+      {
+        "component": 2,
+        "role": "front",
+        "triangles": 1526,
+        "edges": 2289,
+        "openOrDirectedBad": 0,
+        "twoFaceEdges": 2289,
+        "fourFaceCoincidentMatingEdges": 0,
+        "otherMultiplicity": 0,
+        "volumeMm3": 1036.4686958977877
+      }
+    ],
+    "matchedTriangles": 3222,
+    "unmatchedAssembledTriangles": 0,
+    "maxVertexDistanceMm": 3.0517578125e-05,
+    "directedCyclicVertexCorrespondenceOnly": true,
+    "partitions": {
+      "rear": 1696,
+      "front": 1526
+    },
+    "note": "Retain all original source0 faces at exact assembled coordinates under one common translation;front/rear merely grouped by cyclic directed vertex correspondence to own laid-out duplicates1/2.No patch,stretch,face deletion or independent shell repositioning."
+  },
+  "nativeEnvelopeMm": [
+    24,
+    32,
+    8
+  ],
+  "visualEnvelopeMm": [
+    24,
+    32.00000004768371,
+    8.000000047683717
+  ],
+  "physicalMeshes": 172,
+  "uniqueDirectedGeometries": 30,
+  "directedChecks": [
+    {
+      "name": "Mini Proto complete native front window frame",
+      "edges": 2289,
+      "coordinateQuantizationMm": 0.0001,
+      "bad": 0,
+      "volumeMm3": 1036.4686682248393
+    },
+    {
+      "name": "Mini Proto complete native rear housing",
+      "edges": 2544,
+      "coordinateQuantizationMm": 0.0001,
+      "bad": 0,
+      "volumeMm3": 979.7564088549397
+    },
+    {
+      "name": "Mini Proto own yellow prototype substrate with48 actual bores,mount reliefs and true fixing bore",
+      "edges": 19932,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 468.91859649350477
+    },
+    {
+      "name": "Mini Proto plated through-hole barrel 1",
+      "edges": 768,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.09691934719760735
+    },
+    {
+      "name": "Mini Proto front metal annulus 1",
+      "edges": 768,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.03058134904249136
+    },
+    {
+      "name": "Mini Proto actual Grove PCB solder pad 1",
+      "edges": 18,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.018062501282431215
+    },
+    {
+      "name": "Mini Proto actual Grove PCB solder pad 2",
+      "edges": 18,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.018062501282431215
+    },
+    {
+      "name": "Mini Proto actual Grove PCB solder pad 3",
+      "edges": 18,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.018062501282431215
+    },
+    {
+      "name": "Mini Proto actual Grove PCB solder pad 4",
+      "edges": 18,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.018062501282431215
+    },
+    {
+      "name": "Mini Proto Grove actual full side rail",
+      "edges": 18,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 16.874000019550305
+    },
+    {
+      "name": "Mini Proto Grove actual top retaining rail",
+      "edges": 18,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 4.218500004887576
+    },
+    {
+      "name": "Mini Proto Grove locking shoulder",
+      "edges": 18,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.5880000033378596
+    },
+    {
+      "name": "Mini Proto Grove actual full side rail",
+      "edges": 18,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 16.874000019550305
+    },
+    {
+      "name": "Mini Proto Grove actual top retaining rail",
+      "edges": 18,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 4.218500004887576
+    },
+    {
+      "name": "Mini Proto Grove locking shoulder",
+      "edges": 18,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.5880000033378596
+    },
+    {
+      "name": "Mini Proto Grove physical socket floor",
+      "edges": 18,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 33.364498584032056
+    },
+    {
+      "name": "Mini Proto Grove actual recessed dielectric rear",
+      "edges": 18,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 21.206248757243173
+    },
+    {
+      "name": "Mini Proto Grove actual retaining bridge",
+      "edges": 18,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 2.1600000286102277
+    },
+    {
+      "name": "Mini Proto Grove real recessed male contact 1",
+      "edges": 18,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.7232399380159397
+    },
+    {
+      "name": "Mini Proto Grove retained PCB terminal 1",
+      "edges": 18,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.2557799924397466
+    },
+    {
+      "name": "Mini Proto Grove real recessed male contact 2",
+      "edges": 18,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.7232399380159397
+    },
+    {
+      "name": "Mini Proto Grove retained PCB terminal 2",
+      "edges": 18,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.2557799924397466
+    },
+    {
+      "name": "Mini Proto Grove real recessed male contact 3",
+      "edges": 18,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.7232399380159397
+    },
+    {
+      "name": "Mini Proto Grove retained PCB terminal 3",
+      "edges": 18,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.2557799924397466
+    },
+    {
+      "name": "Mini Proto Grove real recessed male contact 4",
+      "edges": 18,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.7232399380159397
+    },
+    {
+      "name": "Mini Proto Grove retained PCB terminal 4",
+      "edges": 18,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.2557799924397466
+    },
+    {
+      "name": "Mini Proto real fixed rear hex-socket screw head",
+      "edges": 420,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 3.1846406725663576
+    },
+    {
+      "name": "Mini Proto recessed physical screw hex floor",
+      "edges": 36,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 0.12013504977429293
+    },
+    {
+      "name": "Mini Proto retained central fixing shaft",
+      "edges": 192,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 9.635901910673969
+    },
+    {
+      "name": "Mini Proto real rear MINI PROTO adhesive substrate",
+      "edges": 594,
+      "coordinateQuantizationMm": 1e-05,
+      "bad": 0,
+      "volumeMm3": 7.457255779825831
+    }
+  ],
+  "prototypeField": {
+    "columns": 8,
+    "rows": 6,
+    "count": 48,
+    "pitchMm": 2.54,
+    "freeBoreDiameterMm": 1,
+    "boreDiameterAndInstallationInferred": true,
+    "prototypeAxisRays": 240,
+    "metalBoreWallRays": 576,
+    "substrateBoreWallRays": 196,
+    "rearBackingRays": 48,
+    "originalRimOcclusions": 0,
+    "positiveMaterial": {
+      "holePitchPadGapMm": 0.94,
+      "barrelWallMm": 0.03,
+      "FR4InterBoreMm": 1.48,
+      "boardTopToLastSubstrateBoreMm": 0.3200000000000003,
+      "boardTopToLastPadMm": 0.049999999999998934,
+      "boardSideToLastPadMm": 0.9099999999999984,
+      "pcbMountReliefVsSampledNativeMm": 0.16999999999999993,
+      "closestFieldToMountReliefMm": 0.5344059817468125,
+      "pcbFixingBridgeMm": 3.4499999999999997,
+      "hexHeadWallMm": 0.88
+    }
+  },
+  "mountingAxisRays": 10,
+  "mountingBoreWallRays": 36,
+  "nativeMountProfiles": [
+    {
+      "origin": [
+        -8,
+        -4,
+        -3.5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 3.113736737720007,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        -3.5
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": null,
+      "expected": "Original outward mouth outlet"
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        -3.5
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 3.1139763744632756,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        -3.5
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 3.113973001237742,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        -2
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 2.5,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        -2
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 2.500030517578125,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        -2
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 2.4380645104905665,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        -2
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 2.438094996163226,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        0
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 2.4999694824218714,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        0
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 2.4376095783307417,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 2.4999939221571834,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        0
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 2.4999939231296366,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        2
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 2.459717596235669,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        2
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 2.4380299175455935,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        2
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 2.4999939221571834,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        2
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 2.4999930294326376,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        3.5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 3.104924115264698,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        3.5
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": null,
+      "expected": "Original outward mouth outlet"
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        3.5
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 3.1139763744632756,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        -8,
+        -4,
+        3.5
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 3.1139763744632756,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        -3.5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": null,
+      "expected": "Original outward mouth outlet"
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        -3.5
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 3.1137672333604307,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        -3.5
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 3.1139763744632756,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        -3.5
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 3.1139763744632756,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        -2
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 2.5,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        -2
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 2.5,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        -2
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 2.4380645104905665,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        -2
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 2.438094996163226,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        0
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 2.4999999999999964,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        0
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 2.4376095783307417,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 2.5,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        0
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 2.500030517578125,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        2
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": 2.4597284250531075,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        2
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 2.4380299175455935,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        2
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 2.5,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        2
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 2.500030517578125,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        3.5
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "distanceMm": null,
+      "expected": "Original outward mouth outlet"
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        3.5
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "distanceMm": 3.0976557547002326,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        3.5
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "distanceMm": 3.1139763744632756,
+      "expected": "FrontSide native wall"
+    },
+    {
+      "origin": [
+        8,
+        -4,
+        3.5
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "distanceMm": 3.1139763744632756,
+      "expected": "FrontSide native wall"
+    }
+  ],
+  "socket": {
+    "contacts": 4,
+    "tails": 4,
+    "deepRearDistanceMm": 13.150000011920927,
+    "contactDistancesMm": [
+      8.800000047683714,
+      8.800000047683714,
+      8.800000047683714,
+      8.800000047683714
+    ],
+    "truePCBMaterialUnderTerminals": true,
+    "noRaisedLogicalP1Header": true
+  },
+  "closure": {
+    "rearFilmDistanceMm": 8.16,
+    "hexFloorDistanceMm": 6.529999999254942
+  },
+  "artworkConfigurations": 4,
+  "publicAPI": {
+    "exports": [
+      "Model",
+      "GroveModule",
+      "spec"
+    ],
+    "bodyComponentOrder": [
+      "grove"
+    ],
+    "ports": [
+      "grove"
+    ],
+    "canonicalCableInput": "grove",
+    "controls": [],
+    "leds": [],
+    "anchors": [],
+    "displays": [],
+    "joints": [],
+    "sensors": [],
+    "defaultRearCover": true,
+    "configurations": [
+      {
+        "options": {
+          "rearCover": true
+        },
+        "nativeTriangles": 3222,
+        "printPanels": 1
+      },
+      {
+        "options": {
+          "rearCover": false
+        },
+        "nativeTriangles": 1526,
+        "printPanels": 0,
+        "removes": [
+          "native rear cover",
+          "real rear adhesive substrate/ink",
+          "single rear fixing"
+        ],
+        "retains": [
+          "native front frame",
+          "48-holePCB/plating",
+          "Grove/contacts/pads"
+        ]
+      }
+    ],
+    "noUserAddedCircuit": true,
+    "noElectricalBehavior": true
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "panels": 1,
+    "frontIsBarePhysicalField": true,
+    "physicalGeometryInvariant": true
+  },
+  "transformedParentFourCore": true,
+  "independentPeer": true,
+  "detachedReattachedPose": true,
+  "noecho": true,
+  "disposedResources": 200,
+  "assetDispatch": {
+    "status": "pass",
+    "runtimeEntries": 2,
+    "actualImageDispatches": 2,
+    "configurations": 4,
+    "staticLiteralBinding": true,
+    "artworkFalseNoImageRequest": true,
+    "rearCoverFalseNoImageRequest": true,
+    "png": {
+      "size": [
+        1580,
+        1180
+      ],
+      "allowedChunks": [
+        "IHDR",
+        "pHYs",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IEND"
+      ]
+    },
+    "scope": "Node DOM/TextureLoader dispatch only;actual Vite emitted asset reachability is a root integration check."
+  }
+}

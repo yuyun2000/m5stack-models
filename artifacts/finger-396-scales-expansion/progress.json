@@ -1,0 +1,358 @@
+{
+  "savedAt": "2026-10-26T14:17:33.800017+00:00",
+  "stage": "modeled",
+  "scope": "New Finger/3.96/Scales complete physical assemblies, synchronous corresponding print mapping, actual three-branch Grove/API fixture and builds; no browser or whole-catalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 119,
+    "modeled": 133,
+    "verified": 0
+  },
+  "localHead": "3681a6482aff96501d44659ba5a1603246f1fe1f",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "finger",
+      "status": "pass",
+      "report": "docs/research/finger/smoke.json",
+      "meshes": 134,
+      "triangles": 16146
+    },
+    {
+      "id": "unit-396",
+      "status": "pass",
+      "report": "docs/research/unit-396/smoke.json",
+      "meshes": 46,
+      "triangles": 15034
+    },
+    {
+      "id": "scales",
+      "status": "pass",
+      "report": "docs/research/scales/smoke.json",
+      "meshes": null,
+      "triangles": null
+    }
+  ],
+  "pngCount": 3,
+  "rasters": [
+    {
+      "path": "src/units/finger/reference-redraw-back.png",
+      "pixels": [
+        1600,
+        2800
+      ],
+      "sha256": "565f0f8cfe38539733df372a52b6648f52da7fa1ca8b80f34b7e98af84807834"
+    },
+    {
+      "path": "src/units/unit-396/reference-redraw-back.png",
+      "pixels": [
+        1600,
+        1230
+      ],
+      "sha256": "034b401d032cef422d85a43bf0d1821befe6a1781cc4f6bfb1aaade06363f32a"
+    },
+    {
+      "path": "src/units/scales/reference-redraw-back.png",
+      "pixels": [
+        1600,
+        2400
+      ],
+      "sha256": "79296445da43c71b2659a2af26f5c92decff5c31d087ea06b505281ed32e1c0b"
+    }
+  ],
+  "fixture": {
+    "status": "pass",
+    "artwork": [
+      {
+        "id": "finger",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "unit-396",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "scales",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ]
+      }
+    ],
+    "cases": [
+      "three-real-four-wire-Grove-branches",
+      "own-FPC1020A-capacitive-surface-no-invented-touchwake-button-or-light",
+      "own-U020-fixed-terminal-and-detachable-four-screw-plug",
+      "four-independent-head-angles-tweens-exact-return-finite-input-no-RPM",
+      "own-U108-fixed-load-cell-platform-supports-and-native-hinged-tongue",
+      "native-flexure-multi-source-press-release-cancel-exact-position-normal-return",
+      "externally-owned-RGB-independent-from-tare-and-passive-sensor",
+      "both-entries-all-configurations-artwork-preserves-all-physical-attributes-indices-world-matrices",
+      "non-Grove-types-and-internal-functions-rejected",
+      "external-pose-cable-independent-detach-host-framebuffer-preserved"
+    ],
+    "scope": "New actual assemblies and externally driven appearance only;Node canvas stub,no browser,fingerprint,touchwake,identification,weight,mass,force,calibration,UART,I2C,electrical,firmware,manufacturing,physical or whole-catalog acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "artwork": [
+      {
+        "id": "finger",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "unit-396",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "scales",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ]
+      }
+    ],
+    "cases": [
+      "three-real-four-wire-Grove-branches",
+      "own-FPC1020A-capacitive-surface-no-invented-touchwake-button-or-light",
+      "own-U020-fixed-terminal-and-detachable-four-screw-plug",
+      "four-independent-head-angles-tweens-exact-return-finite-input-no-RPM",
+      "own-U108-fixed-load-cell-platform-supports-and-native-hinged-tongue",
+      "native-flexure-multi-source-press-release-cancel-exact-position-normal-return",
+      "externally-owned-RGB-independent-from-tare-and-passive-sensor",
+      "both-entries-all-configurations-artwork-preserves-all-physical-attributes-indices-world-matrices",
+      "non-Grove-types-and-internal-functions-rejected",
+      "external-pose-cable-independent-detach-host-framebuffer-preserved"
+    ],
+    "scope": "New actual assemblies and externally driven appearance only;Node canvas stub,no browser,fingerprint,touchwake,identification,weight,mass,force,calibration,UART,I2C,electrical,firmware,manufacturing,physical or whole-catalog acceptance"
+  },
+  "checks": {
+    "localProductSmoke": "all three pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "finger",
+        "status": "frozen",
+        "checkedFiles": 11
+      },
+      {
+        "id": "unit-396",
+        "status": "frozen",
+        "checkedFiles": 13
+      },
+      {
+        "id": "scales",
+        "status": "frozen",
+        "checkedFiles": 13
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "physical geometry attributes/index/poses identical with artwork:false, covered by saved local fixture",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "f01174ae654b4f8d38c5133d214fc0e33ff7080d0ae85bbfb9ad12b98115e7c4",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "bbfce40d056860e0b0b83b6ce262afb1ce75ab3293a81146f56521c457aa7324",
+      "logDistributed": false
+    },
+    "livePreview": "133-product catalog, three runtime chunks and all corresponding sticker PNGs byte-identical to public dist",
+    "newSourcePrivacy": "Final JS/JSON/Markdown/PNG and six added catalog/manifest records checked; no private URLs/table/vectors/raw sources/intermediates; PNG metadata limited to safe numeric DPI",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "Only new products/catalog entries/exports/guide/plan",
+    "existingPublicUnitFilesUnchanged": 945,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [],
+  "previewAssets": [
+    {
+      "id": "finger",
+      "file": "assets/finger-Clp8SZlp.js",
+      "sha256": "8f039ea561ab27f3f4a0cee6c4ef6ba156ee33300ec11b363bbecff383c2a879"
+    },
+    {
+      "id": "unit-396",
+      "file": "assets/unit-396-B4Hz-4QR.js",
+      "sha256": "ee9a58c2e43989440fc66ad273a333cc1a9c57e734bef8c1e54212954fd7791b"
+    },
+    {
+      "id": "scales",
+      "file": "assets/scales-DtFQoaDx.js",
+      "sha256": "2c2f1de6f4d3678d665512dc6878981505120e4548a744a653a776f2794905f9"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/finger/assembly.js",
+      "sha256": "305e0170766bd66d39c81dcbf4d5c38c2323b43135d8ae1420d1111afb66d718"
+    },
+    {
+      "path": "src/units/finger/cad-map.json",
+      "sha256": "49d6811be518bdd160fb382b7916720ae56d53c64cd61ebbf462023dac690b44"
+    },
+    {
+      "path": "src/units/finger/dimensions.js",
+      "sha256": "a779316f96c398d3aa5522aea2e2c28df5c3d5e4582ed7f777916b30908f8a20"
+    },
+    {
+      "path": "src/units/finger/geometry-data.js",
+      "sha256": "6e8394293a00fdf15a6b25d7aabbf9d390b9d9ff6233e46cd184947809349340"
+    },
+    {
+      "path": "src/units/finger/index.js",
+      "sha256": "cf6825186e0cb54d34fcfb6e0993df49eee32ed724ef2611185b68793d97bc12"
+    },
+    {
+      "path": "src/units/finger/reference-redraw-back.png",
+      "sha256": "565f0f8cfe38539733df372a52b6648f52da7fa1ca8b80f34b7e98af84807834"
+    },
+    {
+      "path": "src/units/finger/stickers.js",
+      "sha256": "2d85e3ca019dba573dcad309cfd7380e7631eb33b6eca4aa444cbcdd839a4dfe"
+    },
+    {
+      "path": "docs/research/finger/artwork.json",
+      "sha256": "8f6978daa4aed9f19cf4cb25241d0bfe484d7ee050751b6af79730a8da0b4d45"
+    },
+    {
+      "path": "docs/research/finger/modeling.md",
+      "sha256": "fb21086f449f6c9b4a2cd6d03bf4450c687e60af42d0b78016c7b1a75ad8a4ec"
+    },
+    {
+      "path": "docs/research/finger/smoke.json",
+      "sha256": "a4285d84c3fa09883baf654d7117d5ee83fc8f0f8d54e6e20b01a13ead1cc2cb"
+    },
+    {
+      "path": "docs/research/finger/sources.json",
+      "sha256": "f69cc44c2d2d57be3d0255681a2f92d393e2cdc768a1d63338902816e7d92d99"
+    },
+    {
+      "path": "src/units/unit-396/TerminalPlug.js",
+      "sha256": "b4225204467803789f1d94de113331379b9c794bc9eef3d186488ab51c321acf"
+    },
+    {
+      "path": "src/units/unit-396/assembly.js",
+      "sha256": "4d8baad2d28a3798b805dfe9f7cf0793edad12fb29839d818822e2f5e9938e73"
+    },
+    {
+      "path": "src/units/unit-396/cad-map.json",
+      "sha256": "8bbc9fb6df0d78c03806e91f80d17f6658e0816075874b698878859d9d03a685"
+    },
+    {
+      "path": "src/units/unit-396/connectors.js",
+      "sha256": "67800c9bd36214d34da64ba275976dc8490410dde484b01b4be317f29b9787af"
+    },
+    {
+      "path": "src/units/unit-396/dimensions.js",
+      "sha256": "bd487348e19560d974db02be9afa097df481af3d126d2b9cc45d0dbdd1dc405b"
+    },
+    {
+      "path": "src/units/unit-396/geometry-data.js",
+      "sha256": "1e2427ece543a1c1d12cf25def78fa205099de7809e6873ef1a85ac011288c5a"
+    },
+    {
+      "path": "src/units/unit-396/index.js",
+      "sha256": "648340303ca06542bba495cec855a386fcc5a47842595dcf093585098ec3f93c"
+    },
+    {
+      "path": "src/units/unit-396/reference-redraw-back.png",
+      "sha256": "034b401d032cef422d85a43bf0d1821befe6a1781cc4f6bfb1aaade06363f32a"
+    },
+    {
+      "path": "src/units/unit-396/stickers.js",
+      "sha256": "02d5d9b2974413f526af1dbb11ecbbaab80faf3104d92f92d39f2e02acac3293"
+    },
+    {
+      "path": "docs/research/unit-396/artwork.json",
+      "sha256": "883deb8c63d77eec59c218e89aa5b06d469cbb35464a083865328b101a9617f7"
+    },
+    {
+      "path": "docs/research/unit-396/modeling.md",
+      "sha256": "dbada7a763f8b7a849cc7554ad81fca2049b2087f3c8952e7d98853d9b04ce2a"
+    },
+    {
+      "path": "docs/research/unit-396/smoke.json",
+      "sha256": "2d3092e3e8473b5587154d2a79bae4d1459caf500747d3bc9588147aa7282740"
+    },
+    {
+      "path": "docs/research/unit-396/sources.json",
+      "sha256": "703de0985c89e4c314161f28343cdf0a709b7c6ab8dc3af10b857100503f2263"
+    },
+    {
+      "path": "src/units/scales/NativeFlexureButton.js",
+      "sha256": "c0bbf20bae09908b90e7a8f6a7ab88c6883a7cd1b3d91fa73ceb1d18688a0be0"
+    },
+    {
+      "path": "src/units/scales/RgbAppearance.js",
+      "sha256": "928320a1cc7ad12d7b14e92df4010ae213d8e60537c0ac4cf669bdf2cf4d420c"
+    },
+    {
+      "path": "src/units/scales/assembly.js",
+      "sha256": "dfa5a38c597008b0657a2ac1585884da20829e5ae192e7c669b213c43e0bc65b"
+    },
+    {
+      "path": "src/units/scales/cad-map.json",
+      "sha256": "d5542a86db1d7873c3526a843c107758ee67960d2ff0977b3d725c3ebc648ff0"
+    },
+    {
+      "path": "src/units/scales/dimensions.js",
+      "sha256": "2e7c0daabd6d8ccc4bbf2da2eccac2bb3881163c85f57539034b9f6619c54e70"
+    },
+    {
+      "path": "src/units/scales/geometry-data.js",
+      "sha256": "3903c54d1d19c3ce2feb60eb2755e481a1de0b715f917562352ec5c454cbfbc2"
+    },
+    {
+      "path": "src/units/scales/index.js",
+      "sha256": "812565d398ae5939094772177cb7152dee4a951a4839e85ebab99a8a5cd1b565"
+    },
+    {
+      "path": "src/units/scales/reference-redraw-back.png",
+      "sha256": "79296445da43c71b2659a2af26f5c92decff5c31d087ea06b505281ed32e1c0b"
+    },
+    {
+      "path": "src/units/scales/stickers.js",
+      "sha256": "4e93a6f878075495feb7e3e41855d05af624b9c90792bba26157320b537e1323"
+    },
+    {
+      "path": "docs/research/scales/artwork.json",
+      "sha256": "569503a7bc55746ba8930ab420d5c739ad4bab2399c457396c3e6155d2a60cf7"
+    },
+    {
+      "path": "docs/research/scales/modeling.md",
+      "sha256": "66eb532ff79d1b77fe544a0ba2cb597812c705d4544653becd4f768403d8bf33"
+    },
+    {
+      "path": "docs/research/scales/smoke.json",
+      "sha256": "fba4ebfbc60756c2461e1a02dca4e7d4c87c043b3818b1bb5d5513d656b82be5"
+    },
+    {
+      "path": "docs/research/scales/sources.json",
+      "sha256": "2194ff9448d0155a20272c23e17be0335a4fd1f37e456a7e0fcc5989dbfdd856"
+    }
+  ],
+  "limitations": [
+    "Hidden PCB, components, connector interior, installed poses and accessory details retain documented appearance estimates",
+    "Finger owns its exact FPC1020A capacitive acquisition assembly,metal frame,PCB andGrove;no fingerprint,touch-wake,identification,UART or electrical behavior",
+    "Unit3.96 owns its own four-pole fixed socket,passive PCB/Grove and detachable four-screw plug;no automatic wiring,electrical or terminal-force behavior",
+    "Scales owns its exact load-cell/platform/supports,PCB,Grove,real input and externally driven LED;no weight,mass,force,calibration,I2C or electrical behavior",
+    "Synchronous sticker PNGs use exact-model source rasters or documented reference redraws; original CSV, URLs, vectors, mappings, generators and intermediates remain private",
+    "Earlier sticker checkpoints, private Scroll and unresolved StackChan production-fit checkpoint preserved; this local increment follows the user-requested127-model Git sync;current Git state is recorded separately"
+  ]
+}

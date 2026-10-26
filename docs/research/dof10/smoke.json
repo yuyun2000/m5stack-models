@@ -1,0 +1,992 @@
+{
+  "checkedAt": "2026-10-26T15:15:45.976Z",
+  "status": "pass",
+  "scope": "Necessary exact U230 native assembly,real mounting/retaining/pressure bores andSW1 slot,fixed three source-sized sensor packages and seated contacts,stable two-detent thumb/cancel/exact0 reset,two-entry artwork invariance and transformed four-core pose/peer/disposal only.No browser,measurement,address routing,I2C,automaticpose,production fit,electrical or firmware acceptance.",
+  "nativeTriangles": 4188,
+  "cadEnvelopeMm": [
+    24,
+    24,
+    8
+  ],
+  "visualEnvelopeMm": [
+    24,
+    24,
+    8.03999999910593
+  ],
+  "directedChecks": [
+    {
+      "name": "DoF10 complete native assembled front and rear housing",
+      "edges": 6268,
+      "bad": 0,
+      "coordinateQuantizationMm": 0.0001,
+      "twoFaceEdges": 6254,
+      "originalFourFaceMatingSeams": 14,
+      "volumeMm3": 1782.2032062035335
+    },
+    {
+      "name": "DoF10 shaped PCB with actual retaining bore,open mounting reliefs and Grove notch",
+      "edges": 1788,
+      "bad": 0,
+      "coordinateQuantizationMm": 0.00001,
+      "twoFaceEdges": 1788,
+      "originalFourFaceMatingSeams": 0,
+      "volumeMm3": 261.0291548701766
+    },
+    {
+      "name": "DoF10 SPA06-003 metal lid with real pressure access orifice",
+      "edges": 2904,
+      "bad": 0,
+      "coordinateQuantizationMm": 0.00001,
+      "twoFaceEdges": 2904,
+      "originalFourFaceMatingSeams": 0,
+      "volumeMm3": 0.9751410932278336
+    },
+    {
+      "name": "DoF10 SW1 actual fixed open metal retainer",
+      "edges": 3120,
+      "bad": 0,
+      "coordinateQuantizationMm": 0.00001,
+      "twoFaceEdges": 3120,
+      "originalFourFaceMatingSeams": 0,
+      "volumeMm3": 12.867855106644422
+    },
+    {
+      "name": "DoF10 actual fixed hex-socket retaining head",
+      "edges": 612,
+      "bad": 0,
+      "coordinateQuantizationMm": 0.00001,
+      "twoFaceEdges": 612,
+      "originalFourFaceMatingSeams": 0,
+      "volumeMm3": 3.43523003269392
+    },
+    {
+      "name": "DoF10 independent real front title adhesive film",
+      "edges": 594,
+      "bad": 0,
+      "coordinateQuantizationMm": 0.00001,
+      "twoFaceEdges": 594,
+      "originalFourFaceMatingSeams": 0,
+      "volumeMm3": 2.6293762957091698
+    },
+    {
+      "name": "DoF10 independent real circular XYZ adhesive film",
+      "edges": 570,
+      "bad": 0,
+      "coordinateQuantizationMm": 0.00001,
+      "twoFaceEdges": 570,
+      "originalFourFaceMatingSeams": 0,
+      "volumeMm3": 1.2310516327985876
+    },
+    {
+      "name": "DoF10 independent real rear PORT.A adhesive film",
+      "edges": 594,
+      "bad": 0,
+      "coordinateQuantizationMm": 0.00001,
+      "twoFaceEdges": 594,
+      "originalFourFaceMatingSeams": 0,
+      "volumeMm3": 2.576596208531774
+    }
+  ],
+  "nativeSourceTopology": {
+    "sourceSha256": "eb0ac3380c22da14add40ea3cec458f6b2827bb3edd8a25b9a1999b0c4f6d1dd",
+    "coordinateWeldMm": 0.0001,
+    "triangleCorrespondenceToleranceMm": 0.0001,
+    "assembledComponent": 0,
+    "assembled": {
+      "triangles": 4188,
+      "edges": 6270,
+      "openOrDirectedBad": 0,
+      "twoFaceEdges": 6258,
+      "fourFaceCoincidentMatingEdges": 12,
+      "otherMultiplicity": 0,
+      "volumeMm3": 1782.203332778777
+    },
+    "laidOutClosedShells": [
+      {
+        "component": 1,
+        "role": "rear",
+        "triangles": 2664,
+        "edges": 3996,
+        "openOrDirectedBad": 0,
+        "twoFaceEdges": 3996,
+        "fourFaceCoincidentMatingEdges": 0,
+        "otherMultiplicity": 0,
+        "volumeMm3": 763.3848206550902
+      },
+      {
+        "component": 2,
+        "role": "front",
+        "triangles": 1524,
+        "edges": 2286,
+        "openOrDirectedBad": 0,
+        "twoFaceEdges": 2286,
+        "fourFaceCoincidentMatingEdges": 0,
+        "otherMultiplicity": 0,
+        "volumeMm3": 1018.8189339921231
+      }
+    ],
+    "matchedTriangles": 4188,
+    "unmatchedAssembledTriangles": 0,
+    "maxVertexDistanceMm": 0.00000762939453125,
+    "note": "All4188 original assembled source0 triangles correspond to the source own laid-out closed rear/front components1/2.The assembled shell preserves coincident front/rear mating edges atZ-1.2;the runtime quantization count is recorded separately in smoke;no open boundary or directed edge imbalance.No source geometry repaired,patched,removed,flattened or repositioned in runtime."
+  },
+  "mountingRays": 10,
+  "boreWallRays": 44,
+  "nativeBoreProfiles": [
+    {
+      "origin": [
+        -8,
+        0,
+        -3.6
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 3.108725654494152
+    },
+    {
+      "origin": [
+        -8,
+        0,
+        -3.6
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "expected": "Original front/rear chamfer mouth joins outside edge",
+      "distanceMm": null
+    },
+    {
+      "origin": [
+        -8,
+        0,
+        -3.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 3.108727561842785
+    },
+    {
+      "origin": [
+        -8,
+        0,
+        -3.6
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 3.1087275618427848
+    },
+    {
+      "origin": [
+        -8,
+        0,
+        -3
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.5
+    },
+    {
+      "origin": [
+        -8,
+        0,
+        -3
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.5
+    },
+    {
+      "origin": [
+        -8,
+        0,
+        -3
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.4377378068810844
+    },
+    {
+      "origin": [
+        -8,
+        0,
+        -3
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.437737808624162
+    },
+    {
+      "origin": [
+        -8,
+        0,
+        0
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.5
+    },
+    {
+      "origin": [
+        -8,
+        0,
+        0
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.5
+    },
+    {
+      "origin": [
+        -8,
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.437718094192499
+    },
+    {
+      "origin": [
+        -8,
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.437718094192499
+    },
+    {
+      "origin": [
+        -8,
+        0,
+        3
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.5
+    },
+    {
+      "origin": [
+        -8,
+        0,
+        3
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.5
+    },
+    {
+      "origin": [
+        -8,
+        0,
+        3
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.4377368176731635
+    },
+    {
+      "origin": [
+        -8,
+        0,
+        3
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.4377368176731635
+    },
+    {
+      "origin": [
+        -8,
+        0,
+        3.6
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 3.108725654494152
+    },
+    {
+      "origin": [
+        -8,
+        0,
+        3.6
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "expected": "Original front/rear chamfer mouth joins outside edge",
+      "distanceMm": null
+    },
+    {
+      "origin": [
+        -8,
+        0,
+        3.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 3.108727561842785
+    },
+    {
+      "origin": [
+        -8,
+        0,
+        3.6
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 3.108727561842785
+    },
+    {
+      "origin": [
+        8,
+        0,
+        -3.6
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "expected": "Original front/rear chamfer mouth joins outside edge",
+      "distanceMm": null
+    },
+    {
+      "origin": [
+        8,
+        0,
+        -3.6
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 3.108725654494152
+    },
+    {
+      "origin": [
+        8,
+        0,
+        -3.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 3.108727561842785
+    },
+    {
+      "origin": [
+        8,
+        0,
+        -3.6
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 3.108727561842785
+    },
+    {
+      "origin": [
+        8,
+        0,
+        -3
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.5
+    },
+    {
+      "origin": [
+        8,
+        0,
+        -3
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.5
+    },
+    {
+      "origin": [
+        8,
+        0,
+        -3
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.4377378086315655
+    },
+    {
+      "origin": [
+        8,
+        0,
+        -3
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.4377378086315655
+    },
+    {
+      "origin": [
+        8,
+        0,
+        0
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.5
+    },
+    {
+      "origin": [
+        8,
+        0,
+        0
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.5
+    },
+    {
+      "origin": [
+        8,
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.437718094192499
+    },
+    {
+      "origin": [
+        8,
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.437718094192499
+    },
+    {
+      "origin": [
+        8,
+        0,
+        3
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.5
+    },
+    {
+      "origin": [
+        8,
+        0,
+        3
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.5
+    },
+    {
+      "origin": [
+        8,
+        0,
+        3
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.4377368176731635
+    },
+    {
+      "origin": [
+        8,
+        0,
+        3
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 2.4377368176731635
+    },
+    {
+      "origin": [
+        8,
+        0,
+        3.6
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "expected": "Original front/rear chamfer mouth joins outside edge",
+      "distanceMm": null
+    },
+    {
+      "origin": [
+        8,
+        0,
+        3.6
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 3.108725654494152
+    },
+    {
+      "origin": [
+        8,
+        0,
+        3.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 3.108727561842785
+    },
+    {
+      "origin": [
+        8,
+        0,
+        3.6
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "expected": "Original FrontSide material bore wall",
+      "distanceMm": 3.108727561842785
+    }
+  ],
+  "packageSeating": [
+    {
+      "part": "BMI270",
+      "footBottomZ": -0.9999999991059303,
+      "bodyBottomZ": -0.9199999997764826,
+      "topZ": -0.17000000000000004,
+      "totalHeightMm": 0.8299999991059303
+    },
+    {
+      "part": "BMM350",
+      "footBottomZ": -0.9999999954104424,
+      "bodyBottomZ": -0.8059999998882413,
+      "topZ": -0.500000005722046,
+      "totalHeightMm": 0.49999998968839643
+    },
+    {
+      "part": "SPA06-003",
+      "footBottomZ": -0.9999999991059303,
+      "bodyBottomZ": -0.9199999998882413,
+      "topZ": -0.04999999701976776,
+      "totalHeightMm": 0.9500000020861625
+    }
+  ],
+  "positiveMaterial": {
+    "pcbMountReliefMm": 0.8999999999999999,
+    "pcbRetainingBoreSideMm": 3.4999999999999996,
+    "switchHorizontalAllowanceMm": 0.9249999999999998,
+    "switchVerticalAllowanceMm": 0.050000000000000044,
+    "pressureCapHoleWallMm": 0.5499999999999999,
+    "bevelAtPerforatedPartsMm": 0
+  },
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        -20,
+        1.1
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Red Grove recessed dielectric rear"
+    },
+    {
+      "origin": [
+        -3,
+        -20,
+        1.3
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Red Grove real contact 1"
+    },
+    {
+      "origin": [
+        -1,
+        -20,
+        1.3
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Red Grove real contact 2"
+    },
+    {
+      "origin": [
+        1,
+        -20,
+        1.3
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Red Grove real contact 3"
+    },
+    {
+      "origin": [
+        3,
+        -20,
+        1.3
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "Red Grove real contact 4"
+    },
+    {
+      "origin": [
+        0,
+        20,
+        0.1
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 12,
+      "purpose": "SW1 fixed body backs actual native top slot"
+    },
+    {
+      "origin": [
+        -0.9,
+        20,
+        0.1
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 9,
+      "purpose": "Actual exposed SW1 thumb at stable0"
+    },
+    {
+      "origin": [
+        0,
+        7.3,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Front title physical film seated on native recess"
+    },
+    {
+      "origin": [
+        0,
+        7.3,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Rear pin-label film seated on native recess"
+    },
+    {
+      "origin": [
+        0,
+        0,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Independent circular XYZ adhesive film on complete native face"
+    },
+    {
+      "origin": [
+        0,
+        0,
+        -10
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 7,
+      "purpose": "Real fixed hex-socket retaining floor"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Red Grove recessed dielectric rear",
+      "hit": "DoF10 Grove real recessed dielectric rear",
+      "distanceMm": 13.750000011920928
+    },
+    {
+      "purpose": "Red Grove real contact 1",
+      "hit": "DoF10 Grove real contact 1",
+      "distanceMm": 9.450000000000001
+    },
+    {
+      "purpose": "Red Grove real contact 2",
+      "hit": "DoF10 Grove real contact 2",
+      "distanceMm": 9.450000000000001
+    },
+    {
+      "purpose": "Red Grove real contact 3",
+      "hit": "DoF10 Grove real contact 3",
+      "distanceMm": 9.450000000000001
+    },
+    {
+      "purpose": "Red Grove real contact 4",
+      "hit": "DoF10 Grove real contact 4",
+      "distanceMm": 9.450000000000001
+    },
+    {
+      "purpose": "SW1 fixed body backs actual native top slot",
+      "hit": "DoF10 SW1 actual fixed switch body behind native slot",
+      "distanceMm": 10.275
+    },
+    {
+      "purpose": "Actual exposed SW1 thumb at stable0",
+      "hit": "DoF10 actual exposed cream SW1 thumb",
+      "distanceMm": 8.149999976158142
+    },
+    {
+      "purpose": "Front title physical film seated on native recess",
+      "hit": "DoF10 independent real front title adhesive film",
+      "distanceMm": 11.160000000894069
+    },
+    {
+      "purpose": "Rear pin-label film seated on native recess",
+      "hit": "DoF10 independent real rear PORT.A adhesive film",
+      "distanceMm": 11.16
+    },
+    {
+      "purpose": "Independent circular XYZ adhesive film on complete native face",
+      "hit": "DoF10 independent real circular XYZ adhesive film",
+      "distanceMm": 10.96000000089407
+    },
+    {
+      "purpose": "Real fixed hex-socket retaining floor",
+      "hit": "DoF10 retaining screw recessed hex floor",
+      "distanceMm": 6.529999999254942
+    }
+  ],
+  "artworkConfigurations": 2,
+  "publicAPI": {
+    "ports": [
+      "grove"
+    ],
+    "anchors": [
+      "sensor"
+    ],
+    "controls": [
+      "address"
+    ],
+    "leds": [],
+    "joints": [],
+    "address": {
+      "kind": "button",
+      "latching": true,
+      "stablePositions": [
+        0,
+        1
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "travelMm": 1.8,
+      "travelInferred": true,
+      "methods": [
+        "press",
+        "release",
+        "cancel",
+        "setPosition"
+      ],
+      "command": {
+        "type": "position",
+        "position": "0|1",
+        "immediate": true
+      },
+      "cancelRetainsDetent": true,
+      "neutralReset": "setPosition(0,{immediate:true})",
+      "actualExposedTopSlot": true,
+      "fixedParts": true,
+      "noAddressBehavior": true
+    }
+  },
+  "artwork": {
+    "kind": "source-vector-raster",
+    "panels": 3,
+    "physicalGeometryInvariant": true
+  },
+  "disposedResources": 488
+}

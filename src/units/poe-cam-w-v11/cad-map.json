@@ -1,0 +1,145 @@
+{
+  "sku": "U121-B-V11",
+  "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/2a547f4cb53263c7c263c2fdc7c80f54cfb93fdc/Products/U121-B-V11_Unit_PoE_CAM-W_v1.1/Structures/Unit_PoE_CAM-W_v1.1.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/6c066284f408b7948796a4b63d51f3f432ba8a7d",
+  "path": "Products/U121-B-V11_Unit_PoE_CAM-W_v1.1/Structures/Unit_PoE_CAM-W_v1.1.stl",
+  "commit": "2a547f4cb53263c7c263c2fdc7c80f54cfb93fdc",
+  "commitDate": "2026-08-12T10:23:08Z",
+  "gitBlob": "6c066284f408b7948796a4b63d51f3f432ba8a7d",
+  "bytes": 1153484,
+  "sha256": "9d03d1a9354e6001efc06e82cc47c78c2ea75e7177d73e9bf14f4ea335219f57",
+  "license": "MIT",
+  "sourceTriangleCount": 23068,
+  "sourceTriangles": 23068,
+  "retainedBodyTriangles": 4892,
+  "retainedStandTriangles": 5080,
+  "retainedBrickTriangles": 3348,
+  "totalRetainedNativeTriangles": 13320,
+  "body": {
+    "origin": [
+      32,
+      12,
+      -9
+    ],
+    "axes": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "components": [
+      {
+        "component": 3,
+        "name": "PoE CAM-W v1.1 complete native front enclosure and side user tongue",
+        "triangles": 2366
+      },
+      {
+        "component": 7,
+        "name": "PoE CAM-W v1.1 complete native rear enclosure and real service slots",
+        "triangles": 1930
+      },
+      {
+        "component": 9,
+        "name": "PoE CAM-W v1.1 complete native internal camera retention bracket",
+        "triangles": 372
+      },
+      {
+        "component": 11,
+        "name": "PoE CAM-W v1.1 complete native fixed OV3660 lens package",
+        "triangles": 224
+      }
+    ]
+  },
+  "stand": {
+    "origin": [
+      23.559326171875,
+      58.69451904296875,
+      -16.908863830566407
+    ],
+    "axes": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "scale": 1,
+    "components": [
+      {
+        "component": 2,
+        "name": "PoE CAM-W v1.1 native fixed Stand clamp",
+        "triangles": 2832
+      },
+      {
+        "component": 5,
+        "name": "PoE CAM-W v1.1 native moving Stand leg and foot",
+        "triangles": 2248
+      }
+    ],
+    "installation": "Native assembled Stand pair retained with one common rigid transform into own accessory frame;installed pose derived separately from exact body slots/own photographs."
+  },
+  "brick": {
+    "origin": [
+      23.794198513031006,
+      -33.20266056060791,
+      -3.2341564178466795
+    ],
+    "axes": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "scale": 1,
+    "components": [
+      {
+        "component": 0,
+        "name": "PoE CAM-W v1.1 native complete five-bore Back-Brick",
+        "triangles": 3348
+      }
+    ],
+    "installation": "Own complete native Brick,one rigid transform;installed pose derived separately."
+  },
+  "excludedDisplayComponents": [
+    1,
+    4,
+    6,
+    8,
+    10
+  ],
+  "excludedTriangles": 9748,
+  "notes": "Native complete body/camera/retainer and own Stand/Brick retained without scaling,deleting or filling source faces. Raw source includes displaced/duplicated display pieces;not a populated PCB assembly. Native accessory neutral source pose and installed pose are distinct."
+}

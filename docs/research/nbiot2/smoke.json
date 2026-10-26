@@ -1,0 +1,2388 @@
+{
+  "checkedAt": "2026-10-26T17:18:49.759Z",
+  "status": "pass",
+  "scope": "Necessary exact U111-B complete6592 original faces mapped to own3858rear/2734front;actual SIM7028 body42LCC and own schematic carrier/SIM/SMA/Grove/threefixings/physical films;service rearCover:false no card/closed-shell anchor;own round antenna estimated105mm and inferred finite elbow only.No browser/productionfit/network/RF/electrical/firmware/hardware acceptance.",
+  "meshes": 279,
+  "triangles": 169620,
+  "nativeTriangles": 6592,
+  "nativeSeparation": {
+    "method": "One-to-one original component0 triangle matching to displaced duplicate halves after rigid X translation;centroid buckets plus cyclic winding-preserving full-vertex audit,tolerance2e-5mm",
+    "missingTriangles": 0,
+    "ambiguousTriangles": 0,
+    "coverageTriangles": 6592,
+    "maximumCorrespondenceVertexErrorMm": 0.000004827976226806641,
+    "subsets": [
+      {
+        "subset": "rear",
+        "triangles": 3858,
+        "duplicateComponent": 1,
+        "duplicateToAssemblyTranslationMm": [
+          -43.99538803100586,
+          0,
+          0
+        ],
+        "sourceFaceOrderSha256": "23a9254b80e99552f05aee653497e79b6047e72593960d151195e8f600f1598c"
+      },
+      {
+        "subset": "front",
+        "triangles": 2734,
+        "duplicateComponent": 2,
+        "duplicateToAssemblyTranslationMm": [
+          -86.60041046142578,
+          0,
+          0
+        ],
+        "sourceFaceOrderSha256": "c492810dd94d08ea0c0a1dedf3b024173d032be7aeb5f1c164906704ff2d423d"
+      }
+    ],
+    "scope": "Every original component0 face classified one-to-one by cyclic winding-preserving vertex match to displaced own halves.Output uses original component0 vertices and retains both complete halves.Default assembled retains both halves;rearCover:false intentionally omits complete rear subset as service configuration.No source repairs or independent moves."
+  },
+  "nominalMm": [
+    71.5,
+    24,
+    8
+  ],
+  "cadEnvelopeMm": [
+    24,
+    64,
+    8
+  ],
+  "visualEnvelopeMm": [
+    24,
+    71.5,
+    8.00000009536743
+  ],
+  "moduleBodyEnvelopeMm": [
+    17.600000381469727,
+    15.699999809265137,
+    2.29999999910593
+  ],
+  "standaloneAntennaEnvelopeMm": [
+    9.439999997317791,
+    105,
+    9.439999997317791
+  ],
+  "withAntennaEnvelopeMm": [
+    24,
+    171.5,
+    9.439999997317791
+  ],
+  "antennaDimensionsInferred": true,
+  "boreRays": 18,
+  "boreWalls": 156,
+  "castellationChecks": 42,
+  "castellationSideCount": {
+    "left": 9,
+    "right": 9,
+    "top": 12,
+    "bottom": 12
+  },
+  "closedPositivePhysicalSolids": 328,
+  "physicalTopology": [
+    {
+      "name": "NBIoT2 exact own native rear casing half",
+      "edges": 5787,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 1969.8310406378923
+    },
+    {
+      "name": "NBIoT2 exact own native front casing half",
+      "edges": 4101,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 2591.3248723838647
+    },
+    {
+      "name": "NBIoT2 own inferred populated carrier PCB with true retaining and Grove solder bores",
+      "edges": 4140,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 754.6532296445112
+    },
+    {
+      "name": "NBIoT2 actual annular Grove solder land",
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.07052236079506143
+    },
+    {
+      "name": "NBIoT2 actual plated Grove solder barrel",
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.2883179167612753
+    },
+    {
+      "name": "NBIoT2 actual annular Grove solder land",
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.07052236079506143
+    },
+    {
+      "name": "NBIoT2 actual plated Grove solder barrel",
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.2883179167612753
+    },
+    {
+      "name": "NBIoT2 actual annular Grove solder land",
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.07052236079506143
+    },
+    {
+      "name": "NBIoT2 actual plated Grove solder barrel",
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.2883179167612753
+    },
+    {
+      "name": "NBIoT2 actual annular Grove solder land",
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.07052236079506143
+    },
+    {
+      "name": "NBIoT2 actual plated Grove solder barrel",
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.2883179167612753
+    },
+    {
+      "name": "NBIoT2 actual42LCC SIM7028 substrate with true edge half-holes",
+      "edges": 24462,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 164.20892790296884
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 1",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 1",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473312
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 1",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 2",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 2",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473312
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 2",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 3",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 3",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473312
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 3",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 4",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 4",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473312
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 4",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 5",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 5",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473312
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 5",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 6",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 6",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473312
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 6",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 7",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 7",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473312
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 7",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 8",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 8",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473312
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 8",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 9",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 9",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473312
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 9",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 10",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.0070359116631354855
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 10",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473305
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 10",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 11",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.0070359116631354855
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 11",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473305
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 11",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 12",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.0070359116631354855
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 12",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473305
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 12",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 13",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.0070359116631354855
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 13",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473305
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 13",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 14",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.0070359116631354855
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 14",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473305
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 14",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 15",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.0070359116631354855
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 15",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473305
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 15",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 16",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.0070359116631354855
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 16",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473305
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 16",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 17",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.0070359116631354855
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 17",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473305
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 17",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 18",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.0070359116631354855
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 18",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473305
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 18",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 19",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 19",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473305
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 19",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 20",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 20",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473305
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 20",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 21",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 21",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473305
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 21",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 22",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 22",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473305
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 22",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 23",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 23",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473305
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 23",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 24",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 24",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473305
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 24",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 25",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 25",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473305
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 25",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 26",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 26",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473305
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 26",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 27",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 27",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473305
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 27",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 28",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 28",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473305
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 28",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 29",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 29",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473305
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 29",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 30",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 30",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473305
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 30",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 31",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 31",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473312
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 31",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 32",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 32",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473312
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 32",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 33",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 33",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473312
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 33",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 34",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 34",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473312
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 34",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 35",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 35",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473312
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 35",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 36",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 36",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473312
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 36",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 37",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 37",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473312
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 37",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 38",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 38",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473312
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 38",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 39",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 39",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473312
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 39",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 40",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 40",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473312
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 40",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 41",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 41",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473312
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 41",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual upper gold land 42",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.007035911663135483
+    },
+    {
+      "name": "NBIoT2 SIM7028 actual plated half-hole barrel 42",
+      "edges": 1158,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.031001986236473312
+    },
+    {
+      "name": "NBIoT2 actual module carrier solder toe 42",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.025200000008940678
+    },
+    {
+      "name": "NBIoT2 actual SIM7028 metal shield envelope,profile inferred",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 389.6043007462088
+    },
+    {
+      "name": "NBIoT2 actual SIM7028 factory label substrate,no invented serial/IMEI/QR ink",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 8.540346044472175
+    },
+    {
+      "name": "NBIoT2 U1 actual SY8003ADFC buck converter envelope",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 7.192563236756661
+    },
+    {
+      "name": "NBIoT2 actual converter perimeter solder terminal",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.01848000006616115
+    },
+    {
+      "name": "NBIoT2 actual converter perimeter solder terminal",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.01848000006616115
+    },
+    {
+      "name": "NBIoT2 actual converter perimeter solder terminal",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.01848000006616115
+    },
+    {
+      "name": "NBIoT2 actual converter perimeter solder terminal",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.01848000006616115
+    },
+    {
+      "name": "NBIoT2 actual converter perimeter solder terminal",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.01848000006616115
+    },
+    {
+      "name": "NBIoT2 actual converter perimeter solder terminal",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.01848000006616115
+    },
+    {
+      "name": "NBIoT2 actual converter perimeter solder terminal",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.01848000006616115
+    },
+    {
+      "name": "NBIoT2 actual converter perimeter solder terminal",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.01848000006616115
+    },
+    {
+      "name": "NBIoT2 actual converter exposed thermal-pad envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.128000005722046
+    },
+    {
+      "name": "NBIoT2 L1 actual WPN3012H2R2MT inductor",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 10.784580491137602
+    },
+    {
+      "name": "NBIoT2 U2 actual SMF05CT1G SIM ESD array",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 4.167843655093048
+    },
+    {
+      "name": "NBIoT2 actual six-terminal SIM protection lead",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.02339999954849478
+    },
+    {
+      "name": "NBIoT2 actual six-terminal SIM protection lead",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.02339999954849478
+    },
+    {
+      "name": "NBIoT2 actual six-terminal SIM protection lead",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.02339999954849478
+    },
+    {
+      "name": "NBIoT2 actual six-terminal SIM protection lead",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.02339999954849478
+    },
+    {
+      "name": "NBIoT2 actual six-terminal SIM protection lead",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.02339999954849478
+    },
+    {
+      "name": "NBIoT2 actual six-terminal SIM protection lead",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.02339999954849478
+    },
+    {
+      "name": "NBIoT2 Q1 actual SS8050 NETLIGHT driver,nonfunctional",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 4.630983470839541
+    },
+    {
+      "name": "NBIoT2 actual SS8050 terminal",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.02880000092983243
+    },
+    {
+      "name": "NBIoT2 actual SS8050 terminal",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.02880000092983243
+    },
+    {
+      "name": "NBIoT2 actual SS8050 terminal",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.02880000092983243
+    },
+    {
+      "name": "NBIoT2 actual internal D1 NETLIGHT0603,nonemissive;no exterior lightpath established",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.7030220697492141
+    },
+    {
+      "name": "NBIoT2 actual fixed C1 package,installed pose inferred",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.6390908382112005
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.014400000464916215
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.014400000464916215
+    },
+    {
+      "name": "NBIoT2 actual fixed C2 package,installed pose inferred",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.2991659146151684
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual fixed C3 package,installed pose inferred",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.6390908382112005
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.014400000464916215
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.014400000464916215
+    },
+    {
+      "name": "NBIoT2 actual fixed C4 package,installed pose inferred",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.6390908382112005
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.014400000464916215
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.014400000464916215
+    },
+    {
+      "name": "NBIoT2 actual fixed C5 package,installed pose inferred",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.6390908382112005
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.014400000464916215
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.014400000464916215
+    },
+    {
+      "name": "NBIoT2 actual fixed C6 package,installed pose inferred",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.2991659146151684
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual fixed C7 package,installed pose inferred",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.2991659146151684
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual fixed C8 package,installed pose inferred",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.2991659146151684
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual fixed R1 package,installed pose inferred",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.2991659146151684
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual fixed R2 package,installed pose inferred",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.2991659146151684
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual fixed R3 package,installed pose inferred",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.2991659146151684
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual fixed R4 package,installed pose inferred",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.2991659146151684
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual fixed R5 package,installed pose inferred",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.2991659146151684
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual fixed R7 package,installed pose inferred",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.2991659146151684
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual fixed R8 package,installed pose inferred",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.2991659146151684
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual fixed R9 package,installed pose inferred",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.2991659146151684
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual passive solder end",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.010800000616908072
+    },
+    {
+      "name": "NBIoT2 actual JP1 fixed debug/test land,not exterior UART port",
+      "edges": 144,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.020925519179832486
+    },
+    {
+      "name": "NBIoT2 actual JP2 fixed debug/test land,not exterior UART port",
+      "edges": 144,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.020925519179832486
+    },
+    {
+      "name": "NBIoT2 actual JP3 fixed debug/test land,not exterior UART port",
+      "edges": 144,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.020925519179832486
+    },
+    {
+      "name": "NBIoT2 actual JP4 fixed debug/test land,not exterior UART port",
+      "edges": 144,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.020925519179832486
+    },
+    {
+      "name": "NBIoT2 NanoSIM actual dielectric carrier",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 67.16660139449964
+    },
+    {
+      "name": "NBIoT2 NanoSIM actual fixed side-guide envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 6.037499725818634
+    },
+    {
+      "name": "NBIoT2 NanoSIM actual fixed side-guide envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 6.037499725818634
+    },
+    {
+      "name": "NBIoT2 NanoSIM actual fixed rear stop",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 5.459999833405014
+    },
+    {
+      "name": "NBIoT2 NanoSIM actual fixed gold leaf-contact envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.39600000399351093
+    },
+    {
+      "name": "NBIoT2 NanoSIM actual fixed gold leaf-contact envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.39600000399351093
+    },
+    {
+      "name": "NBIoT2 NanoSIM actual fixed gold leaf-contact envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.39600000399351093
+    },
+    {
+      "name": "NBIoT2 NanoSIM actual fixed gold leaf-contact envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.39600000399351093
+    },
+    {
+      "name": "NBIoT2 NanoSIM actual fixed gold leaf-contact envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.39600000399351093
+    },
+    {
+      "name": "NBIoT2 NanoSIM actual fixed gold leaf-contact envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.39600000399351093
+    },
+    {
+      "name": "NBIoT2 NanoSIM actual fixed protective lid,no claimed hinge or card included",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 32.182142487432166
+    },
+    {
+      "name": "NBIoT2 NanoSIM actual fixed solder toe envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.05760000185966486
+    },
+    {
+      "name": "NBIoT2 NanoSIM actual fixed solder toe envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.05760000185966486
+    },
+    {
+      "name": "NBIoT2 NanoSIM actual fixed solder toe envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.05760000185966486
+    },
+    {
+      "name": "NBIoT2 NanoSIM actual fixed solder toe envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.05760000185966486
+    },
+    {
+      "name": "NBIoT2 NanoSIM actual fixed solder toe envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.05760000185966486
+    },
+    {
+      "name": "NBIoT2 NanoSIM actual fixed solder toe envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.05760000185966486
+    },
+    {
+      "name": "NBIoT2 E1 actual IPEX dielectric carrier",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 1.9550311329670649
+    },
+    {
+      "name": "NBIoT2 E1 actual IPEX annular receptacle",
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 1.0171494400665866
+    },
+    {
+      "name": "NBIoT2 actual fixed cable plug cap,installation inferred",
+      "edges": 192,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.9859864612168585
+    },
+    {
+      "name": "NBIoT2 actual IPEX-to-SMA feedline envelope,route inferred",
+      "edges": 1458,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 6.714618627956274
+    },
+    {
+      "name": "NBIoT2 Grove side wall",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 21.293999082565286
+    },
+    {
+      "name": "NBIoT2 Grove guide rail",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 1.3440000505447378
+    },
+    {
+      "name": "NBIoT2 Grove latch shoulder",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.3240000171661376
+    },
+    {
+      "name": "NBIoT2 Grove side wall",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 21.293999082565286
+    },
+    {
+      "name": "NBIoT2 Grove guide rail",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 1.3440000505447378
+    },
+    {
+      "name": "NBIoT2 Grove latch shoulder",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.3240000171661376
+    },
+    {
+      "name": "NBIoT2 Grove floor",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 35.62649899077412
+    },
+    {
+      "name": "NBIoT2 Grove deep dielectric rear wall",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 25.730249570727306
+    },
+    {
+      "name": "NBIoT2 Grove locking bridge",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 4.967999962806695
+    },
+    {
+      "name": "NBIoT2 Grove actual contact 1",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.7937999504327781
+    },
+    {
+      "name": "NBIoT2 Grove rearward solder leg",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.35279997797012363
+    },
+    {
+      "name": "NBIoT2 Grove actual plated-through solder tail",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.28223998658180244
+    },
+    {
+      "name": "NBIoT2 Grove actual contact 2",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.7937999504327781
+    },
+    {
+      "name": "NBIoT2 Grove rearward solder leg",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.35279997797012363
+    },
+    {
+      "name": "NBIoT2 Grove actual plated-through solder tail",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.28223998658180244
+    },
+    {
+      "name": "NBIoT2 Grove actual contact 3",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.7937999504327781
+    },
+    {
+      "name": "NBIoT2 Grove rearward solder leg",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.35279997797012363
+    },
+    {
+      "name": "NBIoT2 Grove actual plated-through solder tail",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.28223998658180244
+    },
+    {
+      "name": "NBIoT2 Grove actual contact 4",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.7937999504327781
+    },
+    {
+      "name": "NBIoT2 Grove rearward solder leg",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.35279997797012363
+    },
+    {
+      "name": "NBIoT2 Grove actual plated-through solder tail",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.28223998658180244
+    },
+    {
+      "name": "NBIoT2 SMA female open threaded shell",
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 57.60314709660903
+    },
+    {
+      "name": "NBIoT2 SMA female physical dielectric and center bore",
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 29.9745153266247
+    },
+    {
+      "name": "NBIoT2 SMA actual hollow female center contact",
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 1.337363207053407
+    },
+    {
+      "name": "NBIoT2 SMA actual center contact blind end",
+      "edges": 192,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.06925862563093442
+    },
+    {
+      "name": "NBIoT2 SMA bulkhead barrel",
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 179.53943687851574
+    },
+    {
+      "name": "NBIoT2 real gold internal SMA hex body behind paired native windows",
+      "edges": 612,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 127.2622778580353
+    },
+    {
+      "name": "NBIoT2 actual external SMA hex mounting nut",
+      "edges": 612,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 37.88673696109009
+    },
+    {
+      "name": "NBIoT2 SMA mounting washer",
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 6.677789708070129
+    },
+    {
+      "name": "NBIoT2 actual coax termination crimp",
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 16.599313794957734
+    },
+    {
+      "name": "NBIoT2 fixed black coax heatshrink",
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 4.106740938793635
+    },
+    {
+      "name": "NBIoT2 real SMA external helical thread",
+      "edges": 8082,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 1.5289662125645054
+    },
+    {
+      "name": "NBIoT2 actual fixed rear screw annular hex head",
+      "edges": 612,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 2.5738566901536437
+    },
+    {
+      "name": "NBIoT2 actual fixed rear screw blind hex floor",
+      "edges": 36,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.11223689226721277
+    },
+    {
+      "name": "NBIoT2 actual fixed rear screw shank",
+      "edges": 144,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 5.015043630873197
+    },
+    {
+      "name": "NBIoT2 actual fixed rear screw annular hex head",
+      "edges": 612,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 2.5738566901536437
+    },
+    {
+      "name": "NBIoT2 actual fixed rear screw blind hex floor",
+      "edges": 36,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.11223689226721277
+    },
+    {
+      "name": "NBIoT2 actual fixed rear screw shank",
+      "edges": 144,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 5.015043630873197
+    },
+    {
+      "name": "NBIoT2 actual fixed rear screw annular hex head",
+      "edges": 612,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 2.5738566901536437
+    },
+    {
+      "name": "NBIoT2 actual fixed rear screw blind hex floor",
+      "edges": 36,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.11223689226721277
+    },
+    {
+      "name": "NBIoT2 actual fixed rear screw shank",
+      "edges": 144,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 5.015043630873197
+    },
+    {
+      "name": "NBIoT2 actual front body adhesive film",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 45.627638520473255
+    },
+    {
+      "name": "NBIoT2 actual back body adhesive film",
+      "edges": 2994,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 46.077237192998915
+    }
+  ],
+  "antennaTopology": [
+    {
+      "name": "NBIoT2 own antenna open ordinary SMA male coupling",
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 307.60529111177885
+    },
+    {
+      "name": "NBIoT2 own antenna true annular mating lip",
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 5.574897600268984
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna real coupling knurl envelope",
+      "edges": 18,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.10223999405622493
+    },
+    {
+      "name": "NBIoT2 own antenna internal closed-ended helical thread",
+      "edges": 6930,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 1.3313554602685358
+    },
+    {
+      "name": "NBIoT2 own antenna male dielectric carrier",
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 32.83245520387438
+    },
+    {
+      "name": "NBIoT2 own antenna real exposed ordinary SMA male center pin",
+      "edges": 192,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.7012014446579132
+    },
+    {
+      "name": "NBIoT2 own antenna center pin tip",
+      "edges": 96,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 0.02097611072217692
+    },
+    {
+      "name": "NBIoT2 own antenna fixed molded neck",
+      "edges": 288,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 296.5816130658557
+    },
+    {
+      "name": "NBIoT2 own antenna fixed coupling collar",
+      "edges": 288,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 44.207654366587455
+    },
+    {
+      "name": "NBIoT2 own antenna fixed fork cheek,profile inferred",
+      "edges": 288,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 22.554925845970867
+    },
+    {
+      "name": "NBIoT2 own antenna fixed fork cheek,profile inferred",
+      "edges": 288,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 22.554925845970867
+    },
+    {
+      "name": "NBIoT2 own antenna retained side-axis appearance,inferred datum",
+      "edges": 192,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 15.582254502271395
+    },
+    {
+      "name": "NBIoT2 own antenna moving elbow barrel,shape inferred",
+      "edges": 288,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 139.30485964613945
+    },
+    {
+      "name": "NBIoT2 own estimated105mm round tapered solid radome,no borrowed flattened profile",
+      "edges": 1152,
+      "invalidEdges": 0,
+      "signedVolumeMm3": 2718.735141101812
+    }
+  ],
+  "filmSupportChecks": [
+    {
+      "face": "front",
+      "nativeSupportZ": 3.799999952316286
+    },
+    {
+      "face": "front",
+      "nativeSupportZ": 3.799999952316284
+    },
+    {
+      "face": "front",
+      "nativeSupportZ": 3.799999952316284
+    },
+    {
+      "face": "front",
+      "nativeSupportZ": 3.799999952316284
+    },
+    {
+      "face": "front",
+      "nativeSupportZ": 3.799999952316284
+    },
+    {
+      "face": "front",
+      "nativeSupportZ": 3.799999952316284
+    },
+    {
+      "face": "front",
+      "nativeSupportZ": 3.799999952316284
+    },
+    {
+      "face": "front",
+      "nativeSupportZ": 3.799999952316284
+    },
+    {
+      "face": "front",
+      "nativeSupportZ": 3.799999952316284
+    },
+    {
+      "face": "back",
+      "nativeSupportZ": -3.800000190734865
+    },
+    {
+      "face": "back",
+      "nativeSupportZ": -3.8000001907348633
+    },
+    {
+      "face": "back",
+      "nativeSupportZ": -3.800000190734865
+    },
+    {
+      "face": "back",
+      "nativeSupportZ": -3.800000190734865
+    },
+    {
+      "face": "back",
+      "nativeSupportZ": -3.8000001907348633
+    },
+    {
+      "face": "back",
+      "nativeSupportZ": -3.8000001907348633
+    },
+    {
+      "face": "back",
+      "nativeSupportZ": -3.800000190734865
+    },
+    {
+      "face": "back",
+      "nativeSupportZ": -3.800000190734865
+    },
+    {
+      "face": "back",
+      "nativeSupportZ": -3.800000190734865
+    }
+  ],
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        27.5,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 11.1,
+      "purpose": "Actual SMA gold installation behind native front window"
+    },
+    {
+      "origin": [
+        0,
+        27.5,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 11.1,
+      "purpose": "Actual SMA gold installation behind native rear window"
+    },
+    {
+      "origin": [
+        0,
+        60,
+        0
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 27,
+      "purpose": "Actual SMA hollow female contact blind end"
+    },
+    {
+      "origin": [
+        0,
+        -43,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 19,
+      "purpose": "Actual Grove receiving-socket deep rear wall"
+    },
+    {
+      "origin": [
+        -8,
+        26,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Actual fixed retaining screw blind hex floor"
+    },
+    {
+      "origin": [
+        8,
+        26,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Actual fixed retaining screw blind hex floor"
+    },
+    {
+      "origin": [
+        0,
+        -20,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Actual fixed retaining screw blind hex floor"
+    },
+    {
+      "origin": [
+        0,
+        2.95,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Actual front body film on closed native support"
+    },
+    {
+      "origin": [
+        0,
+        3,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Actual back body film on closed native support"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Actual SMA gold installation behind native front window",
+      "hit": "NBIoT2 real gold internal SMA hex body behind paired native windows",
+      "distanceMm": 11.000001907348633
+    },
+    {
+      "purpose": "Actual SMA gold installation behind native rear window",
+      "hit": "NBIoT2 real gold internal SMA hex body behind paired native windows",
+      "distanceMm": 11.000001907348633
+    },
+    {
+      "purpose": "Actual SMA hollow female contact blind end",
+      "hit": "NBIoT2 SMA actual center contact blind end",
+      "distanceMm": 26.1000000013411
+    },
+    {
+      "purpose": "Actual Grove receiving-socket deep rear wall",
+      "hit": "NBIoT2 Grove deep dielectric rear wall",
+      "distanceMm": 16.850000011920926
+    },
+    {
+      "purpose": "Actual fixed retaining screw blind hex floor",
+      "hit": "NBIoT2 actual fixed rear screw blind hex floor",
+      "distanceMm": 11.470000001341104
+    },
+    {
+      "purpose": "Actual fixed retaining screw blind hex floor",
+      "hit": "NBIoT2 actual fixed rear screw blind hex floor",
+      "distanceMm": 11.470000001341104
+    },
+    {
+      "purpose": "Actual fixed retaining screw blind hex floor",
+      "hit": "NBIoT2 actual fixed rear screw blind hex floor",
+      "distanceMm": 11.470000001341104
+    },
+    {
+      "purpose": "Actual front body film on closed native support",
+      "hit": "NBIoT2 actual front body adhesive film",
+      "distanceMm": 11.119999994337558
+    },
+    {
+      "purpose": "Actual back body film on closed native support",
+      "hit": "NBIoT2 actual back body adhesive film",
+      "distanceMm": 11.120000000111759
+    }
+  ],
+  "publicAPI": {
+    "exports": [
+      "Model",
+      "GroveModule",
+      "Antenna",
+      "spec"
+    ],
+    "ports": [
+      "grove",
+      "sma"
+    ],
+    "anchors": [],
+    "serviceAnchors": [
+      "sim"
+    ],
+    "controls": [],
+    "joints": [],
+    "leds": [],
+    "accessoryExports": [
+      "Antenna"
+    ],
+    "accessoryComponents": [
+      "sma/tilt"
+    ],
+    "accessoryJoints": [
+      "tilt"
+    ],
+    "assemblyProperty": "nbiot2Assembly",
+    "options": {
+      "rearCover": true,
+      "antenna": false,
+      "antennaAngleDeg": 0
+    },
+    "service": {
+      "option": {
+        "rearCover": false
+      },
+      "originalFrontTriangles": 2734,
+      "removedRearTriangles": 3858,
+      "removedRearFixings": 3,
+      "anchors": [
+        "sim"
+      ],
+      "artworkPanels": 1,
+      "simCardIncluded": false
+    },
+    "tilt": {
+      "command": {
+        "type": "joint",
+        "target": "sma/tilt",
+        "angleDeg": 90,
+        "durationMs": 500
+      },
+      "rangeDeg": [
+        0,
+        90
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivotMm": [
+        0,
+        12,
+        0
+      ],
+      "continuous": false,
+      "rangeEvidence": "Own U111-B hero shows side-axis dimple and neck/fork segmentation;axis/profile and0–90viewer range inferred,not measured stops or proof of a bent production pose.Estimated105mm own-hero projection ratio,not anotherSKU antenna.",
+      "productionStopsVerified": false
+    }
+  },
+  "artwork": {
+    "pngCount": 2,
+    "bodyPanels": 2,
+    "kind": "reference-redraw",
+    "configurationChecks": 12,
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "nestedGroveAttachPoseDetach": "pass",
+  "transformedParentCableSource": "pass",
+  "serviceOnlySimAnchor": "pass",
+  "externalAntennaElbow": "pass",
+  "noEcho": "pass",
+  "disposedResources": 375
+}

@@ -1,0 +1,90 @@
+{
+  "sku": "U204",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/2a547f4cb53263c7c263c2fdc7c80f54cfb93fdc/Products/U204_Unit_Cat1-CN/Structures/Unit_Cat1-CN.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/9ff6f6a0e938660892800403ae0bf13bee344e6b",
+  "commit": "2a547f4cb53263c7c263c2fdc7c80f54cfb93fdc",
+  "gitBlob": "9ff6f6a0e938660892800403ae0bf13bee344e6b",
+  "sha256": "207428df11215e3a43e1021d8b9592ef4c272ccd0da3a57fef66acc8a0245524",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/2a547f4cb53263c7c263c2fdc7c80f54cfb93fdc/LICENSE",
+  "origin": [
+    0,
+    32,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 0,
+      "assemblySubset": "front",
+      "name": "Cat1-CN exact native front casing half",
+      "material": "shell",
+      "triangles": 2714
+    },
+    {
+      "component": 0,
+      "assemblySubset": "rear",
+      "name": "Cat1-CN exact native rear casing half",
+      "material": "shell",
+      "triangles": 3848
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 6562,
+  "localModification": null,
+  "nativeSeparation": {
+    "method": "One-to-one original component0 triangle matching to displaced duplicate halves after rigid X translation;centroid buckets plus cyclic winding-preserving full-vertex audit,tolerance2e-5mm",
+    "missingTriangles": 0,
+    "ambiguousTriangles": 0,
+    "maximumCorrespondenceVertexErrorMm": 0.000005740206688642502,
+    "coverageTriangles": 6562,
+    "subsets": [
+      {
+        "assemblyComponent": 0,
+        "subset": "rear",
+        "triangles": 3848,
+        "duplicateComponent": 1,
+        "duplicateToAssemblyTranslationMm": [
+          -42.232147216796875,
+          0,
+          0
+        ],
+        "sourceFaceOrderSha256": "61f44b7eeb8a371d5975348fec860651d828ac53b36cef95b909121877ff3f78"
+      },
+      {
+        "assemblyComponent": 0,
+        "subset": "front",
+        "triangles": 2714,
+        "duplicateComponent": 2,
+        "duplicateToAssemblyTranslationMm": [
+          -80.47122192382812,
+          0,
+          0
+        ],
+        "sourceFaceOrderSha256": "1231362c8462798b9b10c15b1250be27ebe43d858b7eb4b1a08f76683bf1cdc6"
+      }
+    ],
+    "scope": "Disjoint complete original component0 faces classified by one-to-one original-vertex/winding correspondence to displaced duplicate halves.Output uses component0 coordinates,not duplicate geometry.No native face cut,removed,repaired or independently moved.Closed config preserves all6562;rearCover:false omits only proven3848 rear faces."
+  },
+  "notes": "Exact own U204 path-specific commit/blob/source SHA.Native original component0 contains both assembled halves.One common translation only,identity axes,scale1.Full24×64×8 casing plus7.4mm actual ordinarySMA projection matches own71.4mm drawing.Rear service config retains actual2714-triangle front casing,omits only complete3848-triangle rear cover and its actual film/three screws."
+}

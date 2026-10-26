@@ -1,0 +1,48 @@
+{
+  "sku": "U110",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3/Products/U110_Unit_ZigBee/Structures/Unit_ZigBee.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/cd451d15e2d03f37e80e7db05bf7f82fa56a78ba",
+  "commit": "c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3",
+  "gitBlob": "cd451d15e2d03f37e80e7db05bf7f82fa56a78ba",
+  "sha256": "6d93ea1962caf38864027accc041acb990a61e3360581aad16edf30ec294b17f",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3/LICENSE",
+  "origin": [
+    0,
+    32,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 0,
+      "name": "ZigBee complete native assembled front and rear shell",
+      "material": "shell",
+      "triangles": 6592
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 6592,
+  "localModification": null,
+  "notes": "Exact own U110 path-specific commit and expected Git blob verified. Component0 is the complete6592-triangle assembled front/rear shell,24×64×8mm. Components1/2 are displaced duplicate shell halves. Full assembled part retained unscaled/unmodified with one common translation;no native faces removed,patched,filled or repositioned. Product nominal length71.5mm is reproduced by an inferred7.5mm SMA projection;unmodified native casing alone is64mm long.The body/SMA dimensional split is appearance reconstruction,not a measured assembly datum."
+}

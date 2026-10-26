@@ -1,0 +1,422 @@
+{
+  "savedAt": "2026-10-26T16:33:17.319212+00:00",
+  "stage": "modeled",
+  "scope": "Own UnitV2/LoRaWAN-CN470/Proto physical assemblies and actual external visual controls/accessories, corresponding print and real three-branch four-core API fixture/builds; no browser or whole-catalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 131,
+    "modeled": 145,
+    "verified": 0
+  },
+  "localHead": "3681a6482aff96501d44659ba5a1603246f1fe1f",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "unitv2",
+      "status": "pass",
+      "report": "docs/research/unitv2/smoke.json",
+      "meshes": 214,
+      "triangles": 27958
+    },
+    {
+      "id": "lorawan-cn470",
+      "status": "pass",
+      "report": "docs/research/lorawan-cn470/smoke.json",
+      "meshes": 235,
+      "triangles": 138704
+    },
+    {
+      "id": "proto",
+      "status": "pass",
+      "report": "docs/research/proto/smoke.json",
+      "meshes": null,
+      "triangles": null
+    }
+  ],
+  "pngCount": 4,
+  "rasters": [
+    {
+      "path": "src/units/unitv2/artwork/rear.png",
+      "pixels": [
+        1608,
+        2104
+      ],
+      "sha256": "72272097590fabd58e4079300236dcb7306b61987fb7f5baf04ed7bbc84d3a2d"
+    },
+    {
+      "path": "src/units/lorawan-cn470/reference-redraw-back.png",
+      "pixels": [
+        1600,
+        3600
+      ],
+      "sha256": "893b9686f8a5d76c364fe5681af03e07016a97ad1fec86e96751646673a0578a"
+    },
+    {
+      "path": "src/units/lorawan-cn470/reference-redraw-front.png",
+      "pixels": [
+        1580,
+        3610
+      ],
+      "sha256": "3c4c2427b8a04328900acb77e2a8a7821af4e711d45a9021e00367f4022c972f"
+    },
+    {
+      "path": "src/units/proto/reference-redraw-back.png",
+      "pixels": [
+        1580,
+        2780
+      ],
+      "sha256": "9e3f02d6094db95ea7c697e0dacbc3429c8c8295338efa81d22060e55bc943cf"
+    }
+  ],
+  "fixture": {
+    "status": "pass",
+    "artwork": [
+      {
+        "id": "unitv2",
+        "panels": 1,
+        "kinds": [
+          "official-photo-code-redraw"
+        ]
+      },
+      {
+        "id": "lorawan-cn470",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw-raster"
+        ]
+      },
+      {
+        "id": "proto",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ]
+      }
+    ],
+    "cases": [
+      "three-real-four-core-input-branches",
+      "UnitV2-top-native-flexure-multiple-sources-release-cancel-original-normals-fixed-parts",
+      "UnitV2-independent-red-white-lamps-camera-microphone-passive-and-no-inputecho",
+      "UnitV2-actual-fan-impeller-only-external-rpm-and-exact-return",
+      "UnitV2-supplied-card-USB-cable-stand-relative-singleaxis-and-backbrick-independent-attachment",
+      "LoRaWAN-CN470-own195mm-ordinary-SMA-antenna-finite-elbow-fixed-coupling-and-RP-SMA-rejection",
+      "Proto-real-rear-cover-service-perforated-board-no-invented-controls-values-or-user-circuit",
+      "two-entries-all-real-configurations-artwork-preserves-every-physical-attribute-index-world-matrix",
+      "external-pose-cable-independent-detach-and-host-framebuffer-preserved"
+    ],
+    "scope": "Current three actual assemblies and external visuals only; Node canvas stub; no GPU/browser, AI/video, radio/network, USB, electrical, firmware, measured stops, production fit, hardware or whole-catalog acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "artwork": [
+      {
+        "id": "unitv2",
+        "panels": 1,
+        "kinds": [
+          "official-photo-code-redraw"
+        ]
+      },
+      {
+        "id": "lorawan-cn470",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw-raster"
+        ]
+      },
+      {
+        "id": "proto",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ]
+      }
+    ],
+    "cases": [
+      "three-real-four-core-input-branches",
+      "UnitV2-top-native-flexure-multiple-sources-release-cancel-original-normals-fixed-parts",
+      "UnitV2-independent-red-white-lamps-camera-microphone-passive-and-no-inputecho",
+      "UnitV2-actual-fan-impeller-only-external-rpm-and-exact-return",
+      "UnitV2-supplied-card-USB-cable-stand-relative-singleaxis-and-backbrick-independent-attachment",
+      "LoRaWAN-CN470-own195mm-ordinary-SMA-antenna-finite-elbow-fixed-coupling-and-RP-SMA-rejection",
+      "Proto-real-rear-cover-service-perforated-board-no-invented-controls-values-or-user-circuit",
+      "two-entries-all-real-configurations-artwork-preserves-every-physical-attribute-index-world-matrix",
+      "external-pose-cable-independent-detach-and-host-framebuffer-preserved"
+    ],
+    "scope": "Current three actual assemblies and external visuals only; Node canvas stub; no GPU/browser, AI/video, radio/network, USB, electrical, firmware, measured stops, production fit, hardware or whole-catalog acceptance"
+  },
+  "checks": {
+    "localProductSmoke": "all three pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "unitv2",
+        "status": "frozen",
+        "checkedFiles": 14
+      },
+      {
+        "id": "lorawan-cn470",
+        "status": "frozen",
+        "checkedFiles": 14
+      },
+      {
+        "id": "proto",
+        "status": "frozen",
+        "checkedFiles": 11
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "All physical attributes/index/world matrices preserved across actual entries/configurations",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "10670833d7345054dd87db62f816b4f741edf814edfe77f990c74f825e1b8cfd",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "03d1ce7c5c8338c2b9e7a3f937a9bf79de0e7be94eb055ad5e0c6744a3ce169e",
+      "logDistributed": false
+    },
+    "exportCount": 11,
+    "catalogConfigurations": {
+      "status": "pass",
+      "scope": "Current three catalog records using existing demo find/map configuration contract;constructor geometry/options are covered by the saved Grove fixture",
+      "products": [
+        {
+          "id": "unitv2",
+          "presets": 12,
+          "defaultOptions": {
+            "card": true,
+            "usbCable": false,
+            "mount": "none"
+          }
+        },
+        {
+          "id": "lorawan-cn470",
+          "presets": 2,
+          "defaultOptions": {
+            "antenna": false
+          }
+        },
+        {
+          "id": "proto",
+          "presets": 2,
+          "defaultOptions": {
+            "rearCover": true
+          }
+        }
+      ]
+    },
+    "livePreview": "145-product catalog, three own runtime chunks and all corresponding source PNG bytes verified in live dist (ordinary or inlined assets)",
+    "newSourcePrivacy": "New JS/JSON/Markdown/PNG and six added catalog/manifest records checked; private table/URLs/vectors/original names/mappings/raw material/intermediates excluded",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "Only new products/catalog entries/exports/guide/plan; protected old private/public bytes retained",
+    "existingPublicUnitFilesUnchanged": 1057,
+    "existingPrivateUnitFilesUnchanged": 1018,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [
+    {
+      "product": "unitv2",
+      "record": "docs/research/unitv2/sources.json",
+      "feedback_id": "c6b5a679e19d49edbe673381dd9ca122",
+      "accepted": true
+    },
+    {
+      "product": "lorawan-cn470",
+      "record": "docs/research/lorawan-cn470/sources.json",
+      "feedback_id": "5ffa182f2f4b47ae88169e0da68f1275",
+      "accepted": true
+    },
+    {
+      "product": "proto",
+      "record": "docs/research/proto/sources.json",
+      "feedback_id": "9fe56810cf9f4563a2caf8cdc95db1cb",
+      "accepted": true
+    }
+  ],
+  "previewAssets": [
+    {
+      "id": "unitv2",
+      "file": "assets/unitv2-DWgwRCoQ.js",
+      "sha256": "8ea07b0918efeffa8d8322431591dd548163a7f01663202518f6698cf072651d"
+    },
+    {
+      "id": "lorawan-cn470",
+      "file": "assets/lorawan-cn470-LBe7LQ-S.js",
+      "sha256": "9b40e84185e53dda00952a9687e2da241656a20339b8a7c706a1a55a0d738f27"
+    },
+    {
+      "id": "proto",
+      "file": "assets/proto-DnZba6G8.js",
+      "sha256": "8bffde4aedfb88cc4a6e79cef7b5c6cc7da0f286202b26d3d8d7ab44029ef87a"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/unitv2/NativeButton.js",
+      "sha256": "f075568985fea38a3eda9ebabc7325c38ea9bf158551d606956f56fea7df8215"
+    },
+    {
+      "path": "src/units/unitv2/accessories.js",
+      "sha256": "2592f80d044e36eeb08eec76a3c2a0872d341a7dc2e78382be847f7a1d33a404"
+    },
+    {
+      "path": "src/units/unitv2/artwork/rear.png",
+      "sha256": "72272097590fabd58e4079300236dcb7306b61987fb7f5baf04ed7bbc84d3a2d"
+    },
+    {
+      "path": "src/units/unitv2/assembly.js",
+      "sha256": "d4c275ea90d7708da6669cd3e401357055d8678fbb6fe9bada378a53027a0e19"
+    },
+    {
+      "path": "src/units/unitv2/cad-map.json",
+      "sha256": "984981037c15e037185b4724e8537f147e704aac280879168ec218fbd8591c95"
+    },
+    {
+      "path": "src/units/unitv2/connectors.js",
+      "sha256": "f8f09e1450d67229fd333e9be7a6b6bee0fa1494a5029334cbfbd29a83463083"
+    },
+    {
+      "path": "src/units/unitv2/dimensions.js",
+      "sha256": "6b2f5642b36cdde007402e404e9051b06d52f12a5379e9e9c561abf4b56b76ed"
+    },
+    {
+      "path": "src/units/unitv2/geometry-data.js",
+      "sha256": "616a4c55d7e3bd1bd61eca3a49dfaf633f398812efe8c79e4d603720b31cd6d3"
+    },
+    {
+      "path": "src/units/unitv2/geometry.js",
+      "sha256": "76c0550f4814109512244a3ac8a78216c73f08bfeb188657c1efedc77f7ab066"
+    },
+    {
+      "path": "src/units/unitv2/index.js",
+      "sha256": "908c8bea7d2fdba1264346f64f16bde4b674ae7fdadb6313bfffe4fd1649e19d"
+    },
+    {
+      "path": "docs/research/unitv2/artwork.json",
+      "sha256": "93ed26c7a64da8b07d0081578209d86c074c501c3232702514723b10554320ee"
+    },
+    {
+      "path": "docs/research/unitv2/modeling.md",
+      "sha256": "0a71fbd5ea271452fcc4a3352b27ee1d1e540e35b3580d603eaf3143e5eb3f43"
+    },
+    {
+      "path": "docs/research/unitv2/smoke.json",
+      "sha256": "4fb964ac9e513715fd6c832a188cea99df0332d64d4690074e8f9dce75ca8134"
+    },
+    {
+      "path": "docs/research/unitv2/sources.json",
+      "sha256": "14dbc24a9295559093c8d413539cb562d44fccd337a5de59aa4cf32aac784586"
+    },
+    {
+      "path": "src/units/lorawan-cn470/Antenna.js",
+      "sha256": "a0bf0bdb11ce807fc29f76e103c92e6adafb3b17834c7d88f8e0dae80789abea"
+    },
+    {
+      "path": "src/units/lorawan-cn470/assembly.js",
+      "sha256": "a7635dbcd43028f5bec2ff84891489775705cd3ccb5033074edb9b7c56e4a2fb"
+    },
+    {
+      "path": "src/units/lorawan-cn470/cad-map.json",
+      "sha256": "520fe9f453ef672c44c5e0f81c9327111579fb18dcc9ce8e5233d5387e4935f6"
+    },
+    {
+      "path": "src/units/lorawan-cn470/connectors.js",
+      "sha256": "15adebd9af00a3709c913d8887e734ef5d22d489937279c22eee188e24956fb9"
+    },
+    {
+      "path": "src/units/lorawan-cn470/dimensions.js",
+      "sha256": "787760b81a99543a99d06686a181c767c68a79c86e5430e675800edd9d48b5b4"
+    },
+    {
+      "path": "src/units/lorawan-cn470/geometry-data.js",
+      "sha256": "9c4d96915611b007ec35701d42d428dd2ec42d6c9adbf25b12c3210349583d4e"
+    },
+    {
+      "path": "src/units/lorawan-cn470/index.js",
+      "sha256": "f9d52d126e520742c38c8c2d0a7d0a1c0b45601a8d5c73b0b8dd2f5c7b864026"
+    },
+    {
+      "path": "src/units/lorawan-cn470/reference-redraw-back.png",
+      "sha256": "893b9686f8a5d76c364fe5681af03e07016a97ad1fec86e96751646673a0578a"
+    },
+    {
+      "path": "src/units/lorawan-cn470/reference-redraw-front.png",
+      "sha256": "3c4c2427b8a04328900acb77e2a8a7821af4e711d45a9021e00367f4022c972f"
+    },
+    {
+      "path": "src/units/lorawan-cn470/stickers.js",
+      "sha256": "1c003270c67aa6b434aafe3503cd7233bd693ff1e2aeebf0c63b21fb6669a7bb"
+    },
+    {
+      "path": "docs/research/lorawan-cn470/artwork.json",
+      "sha256": "80bfef717e46eaf5fda7af513d434b5d808a25107ec35d9938f8bdd2c514c730"
+    },
+    {
+      "path": "docs/research/lorawan-cn470/modeling.md",
+      "sha256": "746b2377beea90cd6eacdb710839dee8122b119212856fc5c0c8ac191436fc28"
+    },
+    {
+      "path": "docs/research/lorawan-cn470/smoke.json",
+      "sha256": "5c60ffe3b6f980bb0b8e6ae1881e370c67fb9eb23ed7f601a851f94132ef05d6"
+    },
+    {
+      "path": "docs/research/lorawan-cn470/sources.json",
+      "sha256": "2efa0687926631ed3620676ff2460c7ce601f18864fd50e2b735bf85d3a608bc"
+    },
+    {
+      "path": "src/units/proto/assembly.js",
+      "sha256": "aa7136462e9179f394bd42d833792036f1f16d8fb387f4e7825627476c00005e"
+    },
+    {
+      "path": "src/units/proto/cad-map.json",
+      "sha256": "508225fee72b142a573aca061c8b2a3654a0b0da36be10c1327ebf24bb6ac383"
+    },
+    {
+      "path": "src/units/proto/dimensions.js",
+      "sha256": "6cbbace00bb3b26b11c52148c1b20e924e060ce131513ccdde05d99d3072e278"
+    },
+    {
+      "path": "src/units/proto/geometry-data.js",
+      "sha256": "333fef1184208be6f960f4c1f0f98fe3a6b643cec9dcbeeac300de9b40553a73"
+    },
+    {
+      "path": "src/units/proto/index.js",
+      "sha256": "9e215f39908d8e427574391eef7bee4974c66f82c11964d7cf6b214b99408df2"
+    },
+    {
+      "path": "src/units/proto/reference-redraw-back.png",
+      "sha256": "9e3f02d6094db95ea7c697e0dacbc3429c8c8295338efa81d22060e55bc943cf"
+    },
+    {
+      "path": "src/units/proto/stickers.js",
+      "sha256": "a4de0fd678ff99f598eafcc6118d2997397f075b13e3c5f0a1fd0bb397279808"
+    },
+    {
+      "path": "docs/research/proto/artwork.json",
+      "sha256": "23958543f9cc4a2a864611f0824bce28b557fee3c7736a975d445536d6261949"
+    },
+    {
+      "path": "docs/research/proto/modeling.md",
+      "sha256": "48ee4e2c85c5d05b0bdc13c9a38ae6a83d20f9bb1847288e24f10d10d7a4e554"
+    },
+    {
+      "path": "docs/research/proto/smoke.json",
+      "sha256": "bf49681b702094155d73cb0a99c45e42dee4b588bc9706564d16c6d6b6880265"
+    },
+    {
+      "path": "docs/research/proto/sources.json",
+      "sha256": "38d683636a4404f6ad0ee635b8a072de4a008342a3b040672e44b4deed889c15"
+    }
+  ],
+  "limitations": [
+    "Hidden assembly, material details, connector registration and accessory travel retain the own-product appearance inferences recorded in research sources; not manufacturing or measured mechanical-stop acceptance",
+    "UnitV2 U078-D retains actual camera/microphone, user input, actual internal red/white LED carriers with unconfirmed exterior visibility, fan impeller and supplied accessories only; no camera framebuffer, AI/video/network/USB/firmware/electrical behavior",
+    "LoRaWAN-CN470 is its own RAK3172 product and supplied ordinary-SMA antenna, not another region or cellular Unit; no RF/network/protocol behavior",
+    "Proto has actual bare perforated substrate and plated holes/Grove, no invented user circuit, controls, sensor values or powered state",
+    "Final ordinary PNGs are exact-model source rasters or attributed reference redraws; private originals, table, URLs, mappings, generators and intermediates stay outside distribution",
+    "Earlier sticker checkpoints, private Scroll and unresolved StackChan production fit/Puzzle Bridge mating remain preserved; overall goal active"
+  ]
+}

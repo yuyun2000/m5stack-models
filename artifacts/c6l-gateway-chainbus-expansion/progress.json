@@ -1,0 +1,435 @@
+{
+  "savedAt": "2026-10-26T14:48:09.930141+00:00",
+  "stage": "modeled",
+  "scope": "New C6L/GatewayH2/ChainBus complete physical assemblies, synchronous corresponding print mapping, actual three-branch Grove/API fixture and builds; no browser or whole-catalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 122,
+    "modeled": 136,
+    "verified": 0
+  },
+  "localHead": "3681a6482aff96501d44659ba5a1603246f1fe1f",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "c6l",
+      "status": "pass",
+      "report": "docs/research/c6l/smoke.json",
+      "meshes": 144,
+      "triangles": 48600
+    },
+    {
+      "id": "gateway-h2",
+      "status": "pass",
+      "report": "docs/research/gateway-h2/smoke.json",
+      "meshes": 215,
+      "triangles": 86386
+    },
+    {
+      "id": "chainbus",
+      "status": "pass",
+      "report": "docs/research/chainbus/smoke.json",
+      "meshes": null,
+      "triangles": null
+    }
+  ],
+  "pngCount": 8,
+  "rasters": [
+    {
+      "path": "src/units/c6l/reference-redraw-lora-band.png",
+      "pixels": [
+        2400,
+        400
+      ],
+      "sha256": "27ca24d52a2b39524500a4abce97b3275ae6feefd143a3c1dd876b7b202e49ae"
+    },
+    {
+      "path": "src/units/c6l/reference-redraw-wifi-band.png",
+      "pixels": [
+        2400,
+        400
+      ],
+      "sha256": "2857879270e477178c78773d49c6f7a2f01b0ebd1f2edd46108a593679250cdf"
+    },
+    {
+      "path": "src/units/c6l/source-amended-front.png",
+      "pixels": [
+        1980,
+        1204
+      ],
+      "sha256": "e92eb0dde87bbcc5a17a86df90345905f9975a05ae29db926b588b030123cfd1"
+    },
+    {
+      "path": "src/units/c6l/source-vector-back.png",
+      "pixels": [
+        1780,
+        2976
+      ],
+      "sha256": "767956bca0de2cb9bdafea5313330a1eb59711985313b1fc473f7da717fdb7a6"
+    },
+    {
+      "path": "src/units/gateway-h2/reference-redraw-back.png",
+      "pixels": [
+        1600,
+        2800
+      ],
+      "sha256": "8fdec63aeb34ee0602b9e15859a74a34785d8837df92c47de716bfc2d9cf0fcc"
+    },
+    {
+      "path": "src/units/gateway-h2/reference-redraw-front.png",
+      "pixels": [
+        1760,
+        2740
+      ],
+      "sha256": "422d1d38572ed904207df2823c2edcebc8a3bda8adc83f3b3fd05de3837b6a9a"
+    },
+    {
+      "path": "src/units/chainbus/source-vector-back.png",
+      "pixels": [
+        2086,
+        1433
+      ],
+      "sha256": "c4135f27816e1f58d0234e160309c97964330a8766bd8803a4090eb60858b289"
+    },
+    {
+      "path": "src/units/chainbus/source-vector-front.png",
+      "pixels": [
+        723,
+        1005
+      ],
+      "sha256": "55fa2e31b37201fcea2ebe03de997952f0e2a87beab0534a3457fa40c071c546"
+    }
+  ],
+  "fixture": {
+    "status": "pass",
+    "artwork": [
+      {
+        "id": "c6l",
+        "panels": 2,
+        "kinds": [
+          "source-vector-raster-and-reference-redraw",
+          "source-vector-raster"
+        ]
+      },
+      {
+        "id": "gateway-h2",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "chainbus",
+        "panels": 2,
+        "kinds": [
+          "source-vector-raster"
+        ]
+      }
+    ],
+    "cases": [
+      "three-real-four-core-IN-branches",
+      "C6L64x48-external-framebuffer-user-reset-multi-source-release-cancel-and-independent-RGB-status",
+      "two-real-RP-SMA-antennas-reject-ordinary-SMA-roundtrip",
+      "GatewayH2-closed-only-Grove-no-click-through-and-explicit-bare-PCB-boot-USB-six-pad-anchor",
+      "ChainBus-IN-OUT-four-core-cascade-and-direct-EXT-entry-without-extra-white-plug-or-cable",
+      "EXT-plug-rejects-ordinary-GroveModule-plug-to-plug",
+      "three-entries-where-applicable-all-configured-artwork-preserves-physical-attributes-indices-world-matrices",
+      "external-pose-cable-independent-detach-and-two-host-framebuffers-preserved"
+    ],
+    "scope": "Current three actual assemblies and external visuals only;Node canvas stub,no browser,boot/reset firmware,radio,USB,UART,I2C,ChainBus routing,electrical,audio,physical or whole-catalog acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "artwork": [
+      {
+        "id": "c6l",
+        "panels": 2,
+        "kinds": [
+          "source-vector-raster-and-reference-redraw",
+          "source-vector-raster"
+        ]
+      },
+      {
+        "id": "gateway-h2",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "chainbus",
+        "panels": 2,
+        "kinds": [
+          "source-vector-raster"
+        ]
+      }
+    ],
+    "cases": [
+      "three-real-four-core-IN-branches",
+      "C6L64x48-external-framebuffer-user-reset-multi-source-release-cancel-and-independent-RGB-status",
+      "two-real-RP-SMA-antennas-reject-ordinary-SMA-roundtrip",
+      "GatewayH2-closed-only-Grove-no-click-through-and-explicit-bare-PCB-boot-USB-six-pad-anchor",
+      "ChainBus-IN-OUT-four-core-cascade-and-direct-EXT-entry-without-extra-white-plug-or-cable",
+      "EXT-plug-rejects-ordinary-GroveModule-plug-to-plug",
+      "three-entries-where-applicable-all-configured-artwork-preserves-physical-attributes-indices-world-matrices",
+      "external-pose-cable-independent-detach-and-two-host-framebuffers-preserved"
+    ],
+    "scope": "Current three actual assemblies and external visuals only;Node canvas stub,no browser,boot/reset firmware,radio,USB,UART,I2C,ChainBus routing,electrical,audio,physical or whole-catalog acceptance"
+  },
+  "checks": {
+    "localProductSmoke": "all three pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "c6l",
+        "status": "frozen",
+        "checkedFiles": 16
+      },
+      {
+        "id": "gateway-h2",
+        "status": "frozen",
+        "checkedFiles": 13
+      },
+      {
+        "id": "chainbus",
+        "status": "frozen",
+        "checkedFiles": 13
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "physical geometry attributes/index/poses identical with artwork:false, covered by saved local fixture",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "9ea45861dcc95790b4138db0008822aebf3eeea6c787bd500a631f027872aee1",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "63dfe91d36f8bb92123d6902632273cc62a05693176a4a863bcdfd7260e363bd",
+      "logDistributed": false
+    },
+    "livePreview": "136-product catalog, three runtime chunks and all corresponding sticker PNGs byte-identical to public dist",
+    "newSourcePrivacy": "Final JS/JSON/Markdown/PNG and six added catalog/manifest records checked; no private URLs/table/vectors/raw sources/intermediates; PNG metadata limited to safe numeric DPI",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "Only new products/catalog entries/exports/guide/plan",
+    "existingPublicUnitFilesUnchanged": 970,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [
+    {
+      "product": "c6l",
+      "record": "docs/research/c6l/sources.json",
+      "feedback_id": "99c3b6fefdc542d2b59a4c805e4c5765",
+      "accepted": true
+    },
+    {
+      "product": "gateway-h2",
+      "record": "docs/research/gateway-h2/sources.json",
+      "feedback_id": "8b19aa0e25cb43c5b85c283abd8d9421",
+      "accepted": true
+    },
+    {
+      "product": "chainbus",
+      "record": "docs/research/chainbus/sources.json",
+      "feedback_id": "edca641cfca844a2a21fe0aa326d25de",
+      "accepted": true
+    }
+  ],
+  "previewAssets": [
+    {
+      "id": "c6l",
+      "file": "assets/c6l-DYfnNnjZ.js",
+      "sha256": "b8abb3b735b96ace728b876ade4b270bfd3104c1452f77df503534a22ef78cc7"
+    },
+    {
+      "id": "gateway-h2",
+      "file": "assets/gateway-h2-CUo9KrhE.js",
+      "sha256": "bebb6679ea639d947d3ff9e9b835ad2238819a9387ba0eb178c241cf45e70adf"
+    },
+    {
+      "id": "chainbus",
+      "file": "assets/chainbus-BT8eA_6T.js",
+      "sha256": "65a48297168a4577c2ea242f92de8210893bdcf5f460e6ee05f4d1f765127391"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/c6l/Antennas.js",
+      "sha256": "3eb767aa5f4f1dd3b285aa1a4a03d465bbcbde6f510a83eb8c9fd229e2dc506d"
+    },
+    {
+      "path": "src/units/c6l/NativeButton.js",
+      "sha256": "d2a8ddc3d9321e5f8a074042597b747d8df522dec54d1ed54c9834b772758e64"
+    },
+    {
+      "path": "src/units/c6l/assembly.js",
+      "sha256": "5ba5b3ae4bbfe1a2de9085ec26bb69e8a7b866af5845121047447904dfbcc455"
+    },
+    {
+      "path": "src/units/c6l/cad-map.json",
+      "sha256": "9660f623ee4566c9da128c9a9f9f0f76abdd180a9de57d5abc0b440142106309"
+    },
+    {
+      "path": "src/units/c6l/dimensions.js",
+      "sha256": "f322b21ad64586b6f340c19f35ef0ee5968cd6815889fb70912248b9ae96db50"
+    },
+    {
+      "path": "src/units/c6l/geometry-data.js",
+      "sha256": "35c05f5e550b78ad07f1a03c4d6289b865dae812f0920153247a454b00268eed"
+    },
+    {
+      "path": "src/units/c6l/index.js",
+      "sha256": "d78375d174e25bc1408e361b725bb9adacb518a6c2683510ce9968a0a2b7b550"
+    },
+    {
+      "path": "src/units/c6l/reference-redraw-lora-band.png",
+      "sha256": "27ca24d52a2b39524500a4abce97b3275ae6feefd143a3c1dd876b7b202e49ae"
+    },
+    {
+      "path": "src/units/c6l/reference-redraw-wifi-band.png",
+      "sha256": "2857879270e477178c78773d49c6f7a2f01b0ebd1f2edd46108a593679250cdf"
+    },
+    {
+      "path": "src/units/c6l/source-amended-front.png",
+      "sha256": "e92eb0dde87bbcc5a17a86df90345905f9975a05ae29db926b588b030123cfd1"
+    },
+    {
+      "path": "src/units/c6l/source-vector-back.png",
+      "sha256": "767956bca0de2cb9bdafea5313330a1eb59711985313b1fc473f7da717fdb7a6"
+    },
+    {
+      "path": "src/units/c6l/stickers.js",
+      "sha256": "6b6760cb7c6c20e7870b1e6ad7897c06c2e8969883d3b7aca77ee8995f5e6a96"
+    },
+    {
+      "path": "docs/research/c6l/artwork.json",
+      "sha256": "eb5887febd5d2e426ba08c02c9bdd4aee5d02355e133563ca057ab848a8de809"
+    },
+    {
+      "path": "docs/research/c6l/modeling.md",
+      "sha256": "e557c88fd2312dd38d90c0d18c365a98283f97f074ddfbe6c731ed729fc19be6"
+    },
+    {
+      "path": "docs/research/c6l/smoke.json",
+      "sha256": "98b978c17dc3ec00d7c78cddf7340a3944fd0eea1ca2574ca5b5b94c652da61c"
+    },
+    {
+      "path": "docs/research/c6l/sources.json",
+      "sha256": "cbb7cd47164fc569a72d40f23971b9697a780622925a66f83ca5405ab016ab66"
+    },
+    {
+      "path": "src/units/gateway-h2/assembly.js",
+      "sha256": "6cfaf5504d959db74bcac8ac7ccc018a8a4370d314218bcd846e800ca880c204"
+    },
+    {
+      "path": "src/units/gateway-h2/cad-map.json",
+      "sha256": "92064b69eff63b47cd5d2a08527d39da610ebe2de5de31be6a4a8fb293250422"
+    },
+    {
+      "path": "src/units/gateway-h2/connectors.js",
+      "sha256": "1398261d6852502dd67444bb47541b3ac599cb6b6b9a5bb4f83d2ae3d7f3cf31"
+    },
+    {
+      "path": "src/units/gateway-h2/dimensions.js",
+      "sha256": "3957808eb9f4d961e5f6636891270b564bfcfab53393a2d5517bc201b590467f"
+    },
+    {
+      "path": "src/units/gateway-h2/geometry-data.js",
+      "sha256": "3f2060c422bd24e8f03e66c2df10d5dba2cc11cb95d0d9f6e306a30edddbb790"
+    },
+    {
+      "path": "src/units/gateway-h2/index.js",
+      "sha256": "654661ad05b9a36a755be4501d78f90fbf8c04aa900aa898823ecb3bae9700b1"
+    },
+    {
+      "path": "src/units/gateway-h2/reference-redraw-back.png",
+      "sha256": "8fdec63aeb34ee0602b9e15859a74a34785d8837df92c47de716bfc2d9cf0fcc"
+    },
+    {
+      "path": "src/units/gateway-h2/reference-redraw-front.png",
+      "sha256": "422d1d38572ed904207df2823c2edcebc8a3bda8adc83f3b3fd05de3837b6a9a"
+    },
+    {
+      "path": "src/units/gateway-h2/stickers.js",
+      "sha256": "912f03148179a1da419c817b58950239c7fae3b1248f5dbc12ec6b4e1fd6ce5f"
+    },
+    {
+      "path": "docs/research/gateway-h2/artwork.json",
+      "sha256": "f8a00d170a5ffde66197abd80bf719481826e30c4a80e3e3cd458270e038a02f"
+    },
+    {
+      "path": "docs/research/gateway-h2/modeling.md",
+      "sha256": "aae4b375f10c85360acdf3c1c2e45c06b56f529907f78e74287ec418bdcb63a1"
+    },
+    {
+      "path": "docs/research/gateway-h2/smoke.json",
+      "sha256": "9020cabee88ff75f4d4bd1e23daa09e60b720f2220d49861b9491baea08e2a03"
+    },
+    {
+      "path": "docs/research/gateway-h2/sources.json",
+      "sha256": "36a34eba8753ac59b319c3f3c94b3a9a3bb0e4806b457306fc9926f22562f835"
+    },
+    {
+      "path": "src/units/chainbus/RgbAppearance.js",
+      "sha256": "1c8d11ddde01ad482be3e96f9636f66da286242e9e46cd46a51bbe3d25fd0796"
+    },
+    {
+      "path": "src/units/chainbus/assembly.js",
+      "sha256": "e7065a5f59ecb36377b65a1c54c641b7b19f9a2327b9719d4f0fd23aa86e1e2e"
+    },
+    {
+      "path": "src/units/chainbus/cad-map.json",
+      "sha256": "55bbeaee4fc171aaee0c1fd4022406ad053fda92de7bc6f15a9d009403ec0b4f"
+    },
+    {
+      "path": "src/units/chainbus/dimensions.js",
+      "sha256": "7026263ec423b36027a2741441c8293982885f297e1e2547db3894618cb45dd5"
+    },
+    {
+      "path": "src/units/chainbus/geometry-data.js",
+      "sha256": "ceae050981b3bff54fbab7ff2687cdb860248f5d550aa0d83268429f15edbdc9"
+    },
+    {
+      "path": "src/units/chainbus/index.js",
+      "sha256": "c165b13e380f1adfc9546222971fa4fe07fb8f1c2a1a1d5603d2dc6b3f9e8729"
+    },
+    {
+      "path": "src/units/chainbus/source-vector-back.png",
+      "sha256": "c4135f27816e1f58d0234e160309c97964330a8766bd8803a4090eb60858b289"
+    },
+    {
+      "path": "src/units/chainbus/source-vector-front.png",
+      "sha256": "55fa2e31b37201fcea2ebe03de997952f0e2a87beab0534a3457fa40c071c546"
+    },
+    {
+      "path": "src/units/chainbus/stickers.js",
+      "sha256": "4c541974d6ab4526ac0828ffe00c6c1e04317e4926a013f8fd09021d423219d2"
+    },
+    {
+      "path": "docs/research/chainbus/artwork.json",
+      "sha256": "434d3fb6bba86711497d392fc7d283a10f6c300274c8b429b256944536b14d7b"
+    },
+    {
+      "path": "docs/research/chainbus/modeling.md",
+      "sha256": "38c7728c856e27ab64388788ceeeb0e9f57094423cf5591df586eff7c905399f"
+    },
+    {
+      "path": "docs/research/chainbus/smoke.json",
+      "sha256": "c7e934426b2eb3471b47e2223c0bc66bc47a10259139edd1c688aeaa22fef58d"
+    },
+    {
+      "path": "docs/research/chainbus/sources.json",
+      "sha256": "4322b6f78dab911f1ebbaf022b4522dfe365abd05e1d6bc21c023577c1e50ac8"
+    }
+  ],
+  "limitations": [
+    "Hidden PCB, components, connector interior, installed poses and accessory details retain documented appearance estimates",
+    "C6L owns its actual OLED64x48,user/reset keys,external RGB/status,RP-SMA andsupplied antennas;no radio,boot/reset firmware,USB or electrical behavior",
+    "GatewayH2 owns its exact closed-shell/Grove and explicit bare-PCB boot/USB/download-pad assembly;no click-through controls,RF,USB,UART or electrical behavior",
+    "ChainBus owns its actual blue IN/OUT sockets,white direct EXT plug,RGB andcable/direct entry;no plug-to-plug cable,automatic bus routing,UART,I2C or electrical behavior",
+    "Synchronous sticker PNGs use exact-model source rasters or documented reference redraws; original CSV, URLs, vectors, mappings, generators and intermediates remain private",
+    "Earlier sticker checkpoints, private Scroll and unresolved StackChan production-fit checkpoint preserved; this local increment follows the user-requested127-model Git sync;current Git state is recorded separately"
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "id": "ssr",
+  "sku": "U122",
+  "officialDocs": "https://docs.m5stack.com/en/unit/ssr",
+  "retrievedAt": "2026-10-27",
+  "officialMCP": {
+    "queries": [
+      "Unit SSR U122 structure dimensions pinout MOC3043M BT136S",
+      "Unit SSR U122 D1 indicator exterior optical path terminal HT3.96 VH3.96"
+    ],
+    "rawResponseDistributed": false,
+    "result": "Exact U122 Unit SSR56×24×10.2mm,MOC3043M/BT136S/SS8050,fuse/clamp/passives,blackGrove and orange4P receiving terminal with loose4screw plug.D1 external path unconfirmed;largerACSSR/DCSSR kit content excluded."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ssr/ssr_01.webp",
+    "sha256": "6becc8f5d15ca60d88676a2aec9d0eccc86c2065cfada4e37e57926dfb04fa53"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/07d8765bd52f32cc2705fc542ea608169a6c3c8c/Products/U122_Unit_SSR/Structures/Unit_SSR.stl",
+      "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/48c31aab5f9d02b4e3f9a3cc133af8908c2291cf",
+      "commit": "07d8765bd52f32cc2705fc542ea608169a6c3c8c",
+      "gitBlob": "48c31aab5f9d02b4e3f9a3cc133af8908c2291cf",
+      "sha256": "e2c7f06ff031e701e52d872a4305a9f3ce0bced27f3231ca58eafd3e5209f976",
+      "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/785/U122-01.webp",
+      "sha256": "ac73453ead5ecf3d992411d0470a8941de889585306061a0d477f2a2f4ff3b17"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/ssr/C23427_BT136S.PDF",
+      "sha256": "44ef16ded38adbeeb7477de5f000777ab87d3bcf018b64386806ae8b2e70dd6c"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/ssr/C41809_MOC3043SR2M_2015-01-24.PDF",
+      "sha256": "0c1b5d34c3ad4e78c7934bba0e08e7266e61b6293a8476e03b8baaa7a5310ab4"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/ssr/model%20size.png",
+      "sha256": "3363d4e48e0abdca8cfaf69466483ed4b48af61003de82e6a215cb250ba7bab1"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ssr/ssr_01.webp",
+      "sha256": "6becc8f5d15ca60d88676a2aec9d0eccc86c2065cfada4e37e57926dfb04fa53"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ssr/ssr_02.webp",
+      "sha256": "047a9e78cd012ee09cfddc3eae3f79fd2393a4dca9bdc453deffbdf66f5c1833"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ssr/ssr_05.webp",
+      "sha256": "4c8139d623b7cb70d9d4aaacbcfd877fa0ed06a92a0c18a939aa890d68278b7a"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ssr/ssr_06.webp",
+      "sha256": "17cdc41e81e3a343a4e1386c9ed9f99c36036bc2c03fc9f52dad5ce099d465cc"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ssr/ssr_sch_01.webp",
+      "sha256": "cd9b5f3009af2e12eaa585d5bc4b0c4ce9de1f7f0483b56c08620553dd5f5dd0"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0,
+      2
+    ],
+    "originalAssemblyTriangles": 5630,
+    "outputTriangles": 5630,
+    "frontTriangles": 2598,
+    "rearTriangles": 3032,
+    "excludedComponents": [
+      1,
+      3
+    ],
+    "origin": [
+      0,
+      28,
+      -4
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "localModification": null,
+    "notes": "Exact U122 own Structures path with pinned commit/validated Git blob.Component0rear3032+component2front2598 form original same-location assembled casing.Components1/3 are displaced duplicate halves.Original vertices/faces retained at scale1,identity axes and one common translation;no native repairs,cutting,patching,face removal or independent moves.Native24×56×8mm casing is not stretched to10.2mm connector-inclusive depth."
+  },
+  "dimensions": {
+    "nominalMm": [
+      56,
+      24,
+      10.2
+    ],
+    "vendorDimensionOrderMm": [
+      56,
+      24,
+      10.2
+    ],
+    "dimensionDrawingMm": [
+      24,
+      56,
+      10.2
+    ],
+    "cadEnvelopeMm": [
+      24.000062942504883,
+      56.00003242492676,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24.000062942504883,
+      56.00003242492676,
+      10.20000001192093
+    ],
+    "withTerminalPlugEnvelopeMm": [
+      24.000062942504883,
+      67.10003242529928,
+      10.400000035762787
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -16
+      ],
+      [
+        8,
+        -16
+      ]
+    ],
+    "mountingHoleDiameterMm": 4.85,
+    "grovePositionMm": [
+      0,
+      -27.9,
+      1.4
+    ],
+    "terminalPositionMm": [
+      0,
+      27.9,
+      2
+    ]
+  },
+  "terminal": {
+    "pitchMm": 3.96,
+    "poles": 4,
+    "mechanicalFamily": "ht3.96-4p",
+    "namingConflict": "Own pageHT3.96-4P and own heroVH3.96-4P;no electrical compatibility asserted",
+    "labels": [
+      "IN",
+      "COM",
+      "COM",
+      "OUT"
+    ],
+    "headsOnly": true,
+    "rangeDeg": null,
+    "visualRangeDeg": [
+      -180,
+      180
+    ],
+    "continuous": false,
+    "productionStopsVerified": false
+  },
+  "artwork": {
+    "kind": "source-vector-raster-and-reference-redraw",
+    "kinds": {
+      "front": "source-vector-raster-and-reference-redraw",
+      "back": "source-vector-raster"
+    },
+    "pngCount": 2,
+    "sourceDetails": "docs/research/ssr/artwork.json",
+    "originalsDistributed": false
+  },
+  "officialDocumentationFeedback": {
+    "feedback_id": "839829333c77479291949aab78233293",
+    "accepted": true,
+    "category": "missing_documentation",
+    "severity": "low",
+    "issue": "Request exact current U122 populated PCB/terminal installation and exterior D1 optical path,if any.Hidden layout/visible rear-tab finish and accessory fit remain inferred;no exterior LED or SSR behavior asserted."
+  },
+  "scope": "Exact complete native casing,own populated-carrier appearance,actual blackGrove/orange4P socket and removable4entry/4head plug,two supported films/original rear-window tabs/fixed screw.Appearance,physical attachment and externally requested head angle only.",
+  "inferred": [
+    "Hidden populated carrier pose,layout,package envelopes and solder/contact/drill dimensions",
+    "Fixed terminal/header and removable plug dimensions,clearances,clamp/plate/shank hidden poses",
+    "Grey rear-tab finish/material and concealed linkage unconfirmed;original native tabs and carrier retained without added cover",
+    "Physical film corner radius,production colorimetry and registration;front production-style restoration",
+    "Screw head neutral slots and display range;no measured mechanical stops or thread pitch"
+  ],
+  "notes": [
+    "Own U122 exactpath,complete components0rear3032+2front2598;no sourceface changes,stretch or independent moves.",
+    "Native case24×56×8mm and terminal-inclusive24×56×10.2mm are recorded separately.",
+    "InternalD1 remains fixed/nonemissive because exterior lightpath is not established.",
+    "No button/RGB/sensor/screen/USB/RS485/mechanical armature/bodyjoint orcover-removal API.",
+    "Four actual heads rotate independently;all clamps/plates/shanks/socket/PCB/otherheads fixed.",
+    "Two final ordinary bodyPNGs with original outlined paths;front scoped production-style reference restoration identified separately.",
+    "No private sources,raw evidence,generators or intermediates distributed.No SSR/electrical/zero-cross/clamp/axial/firmware behavior."
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/ssr/TerminalPlug.js",
+      "sha256": "2041f115831b00dc8e06ae03ef4dc53af3dc8e16973021106a140e229d8ad817"
+    },
+    {
+      "path": "src/units/ssr/assembly.js",
+      "sha256": "6cbeb8fee900692a28957469f0e168d1ed89b2c291d91bc73988359e6f5ff0af"
+    },
+    {
+      "path": "src/units/ssr/cad-map.json",
+      "sha256": "2c209a4655b23e07ee439c971ffe0d85f27c00ebafa744c619775c0f02efb94b"
+    },
+    {
+      "path": "src/units/ssr/connectors.js",
+      "sha256": "0fa33e11025c4e0b72b47d2b88701899bf46c6d0ffeff580886903f998607366"
+    },
+    {
+      "path": "src/units/ssr/dimensions.js",
+      "sha256": "b642b77b8fb1d209872f7f2eb5e22d126ebe8a0d888cd84a6e31ecae2264523f"
+    },
+    {
+      "path": "src/units/ssr/geometry-data.js",
+      "sha256": "6fb28a6c649587a60d8071d47ef61019bc8d293bb9416c1adbedf5c17b86245c"
+    },
+    {
+      "path": "src/units/ssr/index.js",
+      "sha256": "6a03580db121b386f7b19853ac76d7e657c6672f729b526b056268f335143b8d"
+    },
+    {
+      "path": "src/units/ssr/source-vector-back.png",
+      "sha256": "b450cd59d9ef97b56aa1850f68da700923e046953e8195556022f71227cbeb1c"
+    },
+    {
+      "path": "src/units/ssr/source-vector-front.png",
+      "sha256": "2f1373ccd2446f68951494b12d700d7c06262ac5985c0e4818b304754a81c64f"
+    },
+    {
+      "path": "src/units/ssr/stickers.js",
+      "sha256": "9d938c662bb30d061c0c4aced7522f69eafa2f988f0bffd25c79c1b15c0d686e"
+    }
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "savedAt": "2026-10-26T13:57:47.166163+00:00",
+  "stage": "modeled",
+  "scope": "New ZigBee/CO2L/INA226-1A complete physical assemblies, synchronous corresponding print mapping, actual three-branch Grove/API fixture and builds; no browser or whole-catalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 116,
+    "modeled": 130,
+    "verified": 0
+  },
+  "localHead": "3681a6482aff96501d44659ba5a1603246f1fe1f",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "zigbee",
+      "status": "pass",
+      "report": "docs/research/zigbee/smoke.json",
+      "meshes": 90,
+      "triangles": 67894
+    },
+    {
+      "id": "co2l",
+      "status": "pass",
+      "report": "docs/research/co2l/smoke.json",
+      "meshes": 97,
+      "triangles": 31028
+    },
+    {
+      "id": "ina226-1a",
+      "status": "pass",
+      "report": "docs/research/ina226-1a/smoke.json",
+      "meshes": 181,
+      "triangles": 23728
+    }
+  ],
+  "pngCount": 6,
+  "rasters": [
+    {
+      "path": "src/units/zigbee/reference-redraw-back.png",
+      "pixels": [
+        1600,
+        3600
+      ],
+      "sha256": "3133315d418b42d0e784ab4c4e46c7b80d920bd6d756ae23742910e84059c180"
+    },
+    {
+      "path": "src/units/zigbee/reference-redraw-front.png",
+      "pixels": [
+        1600,
+        3600
+      ],
+      "sha256": "86be7e2cbbe3e0dc21de73e938f1d38b3d320ac8ce15ae27bbbef33d751a144a"
+    },
+    {
+      "path": "src/units/co2l/reference-redraw-back.png",
+      "pixels": [
+        1600,
+        2800
+      ],
+      "sha256": "924c737e622b237b930b5639b39a6950f976ecb3fb19b0d1276118d65010a044"
+    },
+    {
+      "path": "src/units/co2l/reference-redraw-front.png",
+      "pixels": [
+        1020,
+        360
+      ],
+      "sha256": "c014967d34d0301865164a312efdff80ef818d94250df26ac4d83189df988509"
+    },
+    {
+      "path": "src/units/ina226-1a/source-vector-back.png",
+      "pixels": [
+        1600,
+        3600
+      ],
+      "sha256": "3a0f28b2a755804b98ad2d7c149bb2325c168e6a4a03c3027d05a17386fe6d3b"
+    },
+    {
+      "path": "src/units/ina226-1a/source-vector-front.png",
+      "pixels": [
+        1580,
+        2690
+      ],
+      "sha256": "bbeee09b32f54fd3b07f61cc73cf4b4eea22c28ca245efbe7efbcd40979b6c91"
+    }
+  ],
+  "fixture": {
+    "status": "pass",
+    "artwork": [
+      {
+        "id": "zigbee",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "co2l",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "ina226-1a",
+        "panels": 2,
+        "kinds": [
+          "source-vector-raster"
+        ]
+      }
+    ],
+    "cases": [
+      "three-real-four-wire-Grove-branches",
+      "own-ZigBee-SMA-and-removable-hinged-antenna",
+      "finite-antenna-pose-interpolation-and-fixed-body-coupling-ownership",
+      "exact-CO2L-SCD41-passive-anchor-rejects-internal-values",
+      "own-INA226-1A-80mR-fuse-and-removable-four-screw-plug",
+      "independent-screw-head-angle-tweens-exact-return-no-RPM",
+      "both-entries-all-configurations-artwork-preserves-all-physical-attributes-indices-world-matrices",
+      "actual-non-Grove-types-and-internal-functions-rejected",
+      "external-pose-cable-independent-selective-detach-host-framebuffer-preserved"
+    ],
+    "scope": "New actual assemblies and externally driven appearance only;Node canvas stub,no browser,RF,UART,pairing,CO2,temperature,humidity,current,voltage,power,I2C,isolation,electrical,firmware,manufacturing,physical or whole-catalog acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "artwork": [
+      {
+        "id": "zigbee",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "co2l",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "ina226-1a",
+        "panels": 2,
+        "kinds": [
+          "source-vector-raster"
+        ]
+      }
+    ],
+    "cases": [
+      "three-real-four-wire-Grove-branches",
+      "own-ZigBee-SMA-and-removable-hinged-antenna",
+      "finite-antenna-pose-interpolation-and-fixed-body-coupling-ownership",
+      "exact-CO2L-SCD41-passive-anchor-rejects-internal-values",
+      "own-INA226-1A-80mR-fuse-and-removable-four-screw-plug",
+      "independent-screw-head-angle-tweens-exact-return-no-RPM",
+      "both-entries-all-configurations-artwork-preserves-all-physical-attributes-indices-world-matrices",
+      "actual-non-Grove-types-and-internal-functions-rejected",
+      "external-pose-cable-independent-selective-detach-host-framebuffer-preserved"
+    ],
+    "scope": "New actual assemblies and externally driven appearance only;Node canvas stub,no browser,RF,UART,pairing,CO2,temperature,humidity,current,voltage,power,I2C,isolation,electrical,firmware,manufacturing,physical or whole-catalog acceptance"
+  },
+  "checks": {
+    "localProductSmoke": "all three pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "zigbee",
+        "status": "frozen",
+        "checkedFiles": 14
+      },
+      {
+        "id": "co2l",
+        "status": "frozen",
+        "checkedFiles": 12
+      },
+      {
+        "id": "ina226-1a",
+        "status": "frozen",
+        "checkedFiles": 14
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "physical geometry attributes/index/poses identical with artwork:false, covered by saved local fixture",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "d03fa79339cb4f12cfbd2f5d1b07e68dc1d9d0fdc1db4f5d2e83695fa14fc525",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "faeee5032acb2d2dab0fae98cfc52487442588f0917783edcf3c29003295f0f6",
+      "logDistributed": false
+    },
+    "livePreview": "130-product catalog, three runtime chunks and all corresponding sticker PNGs byte-identical to public dist",
+    "newSourcePrivacy": "Final JS/JSON/Markdown/PNG and six added catalog/manifest records checked; no private URLs/table/vectors/raw sources/intermediates; PNG metadata limited to safe numeric DPI",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "Only new products/catalog entries/exports/guide/plan",
+    "existingPublicUnitFilesUnchanged": 917,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [
+    {
+      "product": "zigbee",
+      "record": "docs/research/zigbee/sources.json",
+      "feedback_id": "d2b33b1826c44698be8ec73d5fd89789",
+      "accepted": true
+    },
+    {
+      "product": "co2l",
+      "record": "docs/research/co2l/sources.json",
+      "feedback_id": "39fe0d8f32f54e4ca6b6434fc792efa8",
+      "accepted": true
+    },
+    {
+      "product": "ina226-1a",
+      "record": "docs/research/ina226-1a/sources.json",
+      "feedback_id": "8dc9976c83db4b2f9643586636cbc4c9",
+      "accepted": true
+    }
+  ],
+  "previewAssets": [
+    {
+      "id": "zigbee",
+      "file": "assets/zigbee-CFWvX1AP.js",
+      "sha256": "8e2b9e7ad64a8eb6487cd15557f665dd4445f378b86250e79d056928c059c878"
+    },
+    {
+      "id": "co2l",
+      "file": "assets/co2l-Y_7LZOWu.js",
+      "sha256": "7e27a96f16298b7ad4dfa670fadb5b310acb60c206ee1e1a8f9518ea1582215c"
+    },
+    {
+      "id": "ina226-1a",
+      "file": "assets/ina226-1a-CUfsOirA.js",
+      "sha256": "0ebad3072ff14d26a0ceb4cf27a7fa01ee6ccfb06dc14be35a76ee502636f7b1"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/zigbee/Antenna.js",
+      "sha256": "3ce7a84c7882dfda8c72cb3e6d6d8923261729788c2f199f53f121858241576e"
+    },
+    {
+      "path": "src/units/zigbee/assembly.js",
+      "sha256": "5dd20a72783c964ffff0957efa913e287be5c1764f37b1aac7eedddf84518e8d"
+    },
+    {
+      "path": "src/units/zigbee/cad-map.json",
+      "sha256": "81d3c82a7dc872731f288e9424049fca670f98d45227abd61ce5bedba2d56c26"
+    },
+    {
+      "path": "src/units/zigbee/connectors.js",
+      "sha256": "73de18036f9991971bf0b787c2595d48fb893745ba459887c5ae45f568a12b8b"
+    },
+    {
+      "path": "src/units/zigbee/dimensions.js",
+      "sha256": "8628b98ab7ad000dfbb2dab8844b6c2cc000e91a3115b6bca0fe2f336724e5a6"
+    },
+    {
+      "path": "src/units/zigbee/geometry-data.js",
+      "sha256": "b647cd5894a97ed27fcae3a5f2ccbfa0addb15fc36f3e40ca7dc71d02d2d2d05"
+    },
+    {
+      "path": "src/units/zigbee/index.js",
+      "sha256": "20e2288ee39a2189b4058f9c9bedd236835fc423d3a09ffb0a67aa733412e37f"
+    },
+    {
+      "path": "src/units/zigbee/reference-redraw-back.png",
+      "sha256": "3133315d418b42d0e784ab4c4e46c7b80d920bd6d756ae23742910e84059c180"
+    },
+    {
+      "path": "src/units/zigbee/reference-redraw-front.png",
+      "sha256": "86be7e2cbbe3e0dc21de73e938f1d38b3d320ac8ce15ae27bbbef33d751a144a"
+    },
+    {
+      "path": "src/units/zigbee/stickers.js",
+      "sha256": "4fd37da952434c85c97c0030d9820728cf741c53670aee363beb9e9d53605e69"
+    },
+    {
+      "path": "docs/research/zigbee/artwork.json",
+      "sha256": "ceaf6ae03a57cb7286933033399f55f2587efc290798bf98025d07d6365fe56d"
+    },
+    {
+      "path": "docs/research/zigbee/modeling.md",
+      "sha256": "83a99be5b8d38e1199267dc28fe4fbe7c11f356226ab7914aface650d17ccb02"
+    },
+    {
+      "path": "docs/research/zigbee/smoke.json",
+      "sha256": "4a4ec0299f8896e202eb83ad3c0c974d7b99b1640ac617c074777872f7e89be0"
+    },
+    {
+      "path": "docs/research/zigbee/sources.json",
+      "sha256": "36c53708a67d165f91ef71dafec90898f72286bd69f54f27ff403cdc8db4540f"
+    },
+    {
+      "path": "src/units/co2l/assembly.js",
+      "sha256": "a1f1702dee8d425044b15156e652d3a98ec5c17dd21c8a459c5563e815916dbf"
+    },
+    {
+      "path": "src/units/co2l/cad-map.json",
+      "sha256": "e95d217780daf8952b451e170962e165dd5911d936b71110affc7dcb02d84226"
+    },
+    {
+      "path": "src/units/co2l/dimensions.js",
+      "sha256": "3233cdceef9ec2850e67a8c17f98f56708b768cdd271a28ff842d019657b2af8"
+    },
+    {
+      "path": "src/units/co2l/geometry-data.js",
+      "sha256": "a90e4e217a6d29933e983d760a879f125fa2129ab226a58e905e2c72aecb6b20"
+    },
+    {
+      "path": "src/units/co2l/index.js",
+      "sha256": "f68a36aef6988e7a988259827238657309b7e1f1809dfb969b4fa0dfa0ab12ba"
+    },
+    {
+      "path": "src/units/co2l/reference-redraw-back.png",
+      "sha256": "924c737e622b237b930b5639b39a6950f976ecb3fb19b0d1276118d65010a044"
+    },
+    {
+      "path": "src/units/co2l/reference-redraw-front.png",
+      "sha256": "c014967d34d0301865164a312efdff80ef818d94250df26ac4d83189df988509"
+    },
+    {
+      "path": "src/units/co2l/stickers.js",
+      "sha256": "a9b2e44e6784becd46ddfae03eb3bf32612c8d227e29b1ebd1ef97545a5e3fa3"
+    },
+    {
+      "path": "docs/research/co2l/artwork.json",
+      "sha256": "ef9cd5f8fbf3989690a2d8e2843de44c183a5d37a7bd2651b8981645665805bf"
+    },
+    {
+      "path": "docs/research/co2l/modeling.md",
+      "sha256": "5c8a0eda26e6b8758a8d1369855d1b564dae518084d9bbc93078396341b8edac"
+    },
+    {
+      "path": "docs/research/co2l/smoke.json",
+      "sha256": "5f35f724bca8acd62e6357415e5ca99492275e33a910a4b6cb6e45d09fe5f7f5"
+    },
+    {
+      "path": "docs/research/co2l/sources.json",
+      "sha256": "87df10c9bf06a04a992c7c56e2080a4b10b9b5e8ae724d8a34acc086a8f64eac"
+    },
+    {
+      "path": "src/units/ina226-1a/TerminalPlug.js",
+      "sha256": "ddb8aff6ae3ac82666da69f76b985dc896f9d5fedb2ccdb82a5525d9c44b0f7d"
+    },
+    {
+      "path": "src/units/ina226-1a/assembly.js",
+      "sha256": "ed83361b88ef45792053edf0b2f0f13e2f9a6c67e03daeba9e2682fa2201ca6c"
+    },
+    {
+      "path": "src/units/ina226-1a/cad-map.json",
+      "sha256": "7fa5cc079c0c7e0e45efa629cd669d9d4ab130a7062b6b42b681cc2f7bf55550"
+    },
+    {
+      "path": "src/units/ina226-1a/connectors.js",
+      "sha256": "a984eff7b3e97c6c4c0a23132cc957f172bd995c703b645f6e85d7bfd9b5d891"
+    },
+    {
+      "path": "src/units/ina226-1a/dimensions.js",
+      "sha256": "82636c118e65cdfd8b795fd9f8fc84a4820e6c63c150e8dffdedc40eab8d2997"
+    },
+    {
+      "path": "src/units/ina226-1a/geometry-data.js",
+      "sha256": "49cfadb38869f58bd3ff374403a696d9be9bcdf7426557ef0cb95db5f6430e7b"
+    },
+    {
+      "path": "src/units/ina226-1a/index.js",
+      "sha256": "9ac07ce6920dd1d4994d1ef2cac4ba744870b6536d53876defd13878f0ac99d1"
+    },
+    {
+      "path": "src/units/ina226-1a/source-vector-back.png",
+      "sha256": "3a0f28b2a755804b98ad2d7c149bb2325c168e6a4a03c3027d05a17386fe6d3b"
+    },
+    {
+      "path": "src/units/ina226-1a/source-vector-front.png",
+      "sha256": "bbeee09b32f54fd3b07f61cc73cf4b4eea22c28ca245efbe7efbcd40979b6c91"
+    },
+    {
+      "path": "src/units/ina226-1a/stickers.js",
+      "sha256": "ef070705a0656dce4359f13ffc5f27b3df577a7fcea0dab51074c5816841c88e"
+    },
+    {
+      "path": "docs/research/ina226-1a/artwork.json",
+      "sha256": "6bcd1e8e8ef74f9f43aa873b73aa1a6d932012d568b0589522fdc88efa349a1e"
+    },
+    {
+      "path": "docs/research/ina226-1a/modeling.md",
+      "sha256": "7b1ee488e3358b96d5e22d00154911d2ae9546d84a8375b05cfbc396dbbc5e6e"
+    },
+    {
+      "path": "docs/research/ina226-1a/smoke.json",
+      "sha256": "98be0478a0c2ae8a663de9265548a6ac1bde05ea1440f2bcba33df43d62247d6"
+    },
+    {
+      "path": "docs/research/ina226-1a/sources.json",
+      "sha256": "a1a5c020abc9634eccc21c9aee16cd5578cbbd870e3541506cd21f2914ec183c"
+    }
+  ],
+  "limitations": [
+    "Hidden PCB, components, connector interior, installed poses and accessory details retain documented appearance estimates",
+    "ZigBee owns its actual fixed DRF1609H module, PCB/SMA and optional tilting antenna; no RF, UART, pairing or electrical behavior",
+    "CO2L owns its actual SCD41/VRH3301NLX, passive sensor anchor, PCB and connector; no CO2, temperature, humidity, I2C or electrical behavior",
+    "INA226-1A owns its exact80mR/fuse/package assembly,fixed terminal and detachable four-screw plug; no current,voltage,power,I2C,isolation or electrical behavior",
+    "Synchronous sticker PNGs use exact-model source rasters or documented reference redraws; original CSV, URLs, vectors, mappings, generators and intermediates remain private",
+    "Earlier sticker checkpoints, private Scroll and unresolved StackChan production-fit checkpoint preserved; this local increment follows the user-requested127-model Git sync;current Git state is recorded separately"
+  ]
+}

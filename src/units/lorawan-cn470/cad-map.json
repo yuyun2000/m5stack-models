@@ -1,0 +1,92 @@
+{
+  "sku": "U184-CN470",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/2a547f4cb53263c7c263c2fdc7c80f54cfb93fdc/Products/U184-CN470_Unit_LoRaWAN-CN470/Structures/Unit_LoRaWAN-CN470.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/cd451d15e2d03f37e80e7db05bf7f82fa56a78ba",
+  "commit": "2a547f4cb53263c7c263c2fdc7c80f54cfb93fdc",
+  "gitBlob": "cd451d15e2d03f37e80e7db05bf7f82fa56a78ba",
+  "sha256": "6d93ea1962caf38864027accc041acb990a61e3360581aad16edf30ec294b17f",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/2a547f4cb53263c7c263c2fdc7c80f54cfb93fdc/LICENSE",
+  "origin": [
+    0,
+    32,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 0,
+      "assemblySubset": "rear",
+      "name": "LoRaWAN-CN470 exact own native rear casing half",
+      "material": "shell",
+      "triangles": 3858
+    },
+    {
+      "component": 0,
+      "assemblySubset": "front",
+      "name": "LoRaWAN-CN470 exact own native front casing half",
+      "material": "shell",
+      "triangles": 2734
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "displacedDuplicateTriangles": [
+    3858,
+    2734
+  ],
+  "originalAssemblyTriangles": 6592,
+  "localModification": null,
+  "nativeSeparation": {
+    "method": "One-to-one original component0 triangle matching to displaced duplicate halves after rigid X translation;centroid buckets plus cyclic winding-preserving full-vertex audit,tolerance2e-5mm",
+    "missingTriangles": 0,
+    "ambiguousTriangles": 0,
+    "coverageTriangles": 6592,
+    "maximumCorrespondenceVertexErrorMm": 0.000004827976226806641,
+    "subsets": [
+      {
+        "subset": "rear",
+        "triangles": 3858,
+        "duplicateComponent": 1,
+        "duplicateToAssemblyTranslationMm": [
+          -43.99538803100586,
+          0,
+          0
+        ],
+        "sourceFaceOrderSha256": "23a9254b80e99552f05aee653497e79b6047e72593960d151195e8f600f1598c"
+      },
+      {
+        "subset": "front",
+        "triangles": 2734,
+        "duplicateComponent": 2,
+        "duplicateToAssemblyTranslationMm": [
+          -86.60041046142578,
+          0,
+          0
+        ],
+        "sourceFaceOrderSha256": "c492810dd94d08ea0c0a1dedf3b024173d032be7aeb5f1c164906704ff2d423d"
+      }
+    ],
+    "scope": "Every original component0 face classified one-to-one by cyclic winding-preserving vertex match to displaced own halves.Output uses original component0 vertices and retains both complete halves.No cover-removal option,no source repairs or independent moves."
+  },
+  "notes": "Exact U184-CN470 own official Structures path pinned to own path-specific commit and validated Git blob.Original component0 complete6592-triangle casing24×64×8 retained scale1/identity axes/common translation only.Components1/2 are displaced duplicate halves.Shared source bytes do not establish shared PCB,module,antenna,printing or behavior;runtime uses own RAK3172 and own195mm antenna evidence."
+}

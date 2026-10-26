@@ -1,0 +1,67 @@
+{
+  "sku": "U022",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/66720a863658da9bab58a208d4ebf8a040c2d42c/Products/U022_Unit_Proto/Structures/Unit_Proto.stl",
+  "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/66720a863658da9bab58a208d4ebf8a040c2d42c/Products/U022_Unit_Proto/Structures/Unit_Proto.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/2e8d4e9bbc03d9fc6c30f330b67bb7ddc469a51c",
+  "commit": "66720a863658da9bab58a208d4ebf8a040c2d42c",
+  "lastChangedCommit": "66720a863658da9bab58a208d4ebf8a040c2d42c",
+  "lastChangedAt": "2026-08-14T09:43:02Z",
+  "path": "Products/U022_Unit_Proto/Structures/Unit_Proto.stl",
+  "gitBlob": "2e8d4e9bbc03d9fc6c30f330b67bb7ddc469a51c",
+  "sha256": "f816bc934dff072ca4a986cad7766fcf1e536642273837f310992f4faf5e5011",
+  "bytes": 349884,
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/66720a863658da9bab58a208d4ebf8a040c2d42c/LICENSE",
+  "origin": [
+    -80,
+    0,
+    1.2
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "sourceAssemblyComponents": [
+    0
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "correspondingLaidOutComponent": 2,
+      "role": "front",
+      "name": "Proto complete native front window frame",
+      "material": "shell",
+      "triangles": 1626
+    },
+    {
+      "component": 0,
+      "correspondingLaidOutComponent": 1,
+      "role": "rear",
+      "name": "Proto complete native rear housing",
+      "material": "shell",
+      "triangles": 1872
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 3498,
+  "outputTriangles": 3498,
+  "localModification": null,
+  "notes": "Exact own U022 complete assembled source0=3498triangles retained atscale1 under one common translation.No patch,fill,face removal,scaling or independently repositioned native face.Source0 faces are only partitioned into front1626/rear1872 by directed cyclic correspondence with original laid-out duplicates2/1;every runtime face remains at original assembled coordinates,maxsourcecorrespondence0.000003934mm.Each partition has its original closed material surfaces.Source1/2 are comparison-only displaced duplicates,not copied into runtime.Default complete assembly24×48×8mm;rearCover:false excludes only rear1872,actual rearlabel film andone fixing screw,retaining complete frontframe/PCB/Grove.Original source combined mating coincidences are separated by physicalpart,not removed/repaired."
+}

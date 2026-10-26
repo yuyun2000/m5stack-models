@@ -1,0 +1,348 @@
+{
+  "checkedAt": "2026-10-26T14:35:07.002Z",
+  "status": "pass",
+  "scope": "Necessary exact U212 native shell/latch/guide,real mounting/chamber/bore/cavity construction and independent RGB,three-entry artwork invariance,nested IN/OUT four-core pose/cable and actual-EXT fixed DirectModule attachment/rejection/disposal only.No browser,production fit,protocol,I2C/UART,GPIO/ADC/NVIC,electrical or firmware acceptance.",
+  "nativeTriangles": 4156,
+  "cadEnvelopeMm": [
+    24,
+    26.679523468017578,
+    8
+  ],
+  "visualEnvelopeMm": [
+    24.000000095367433,
+    29.8,
+    8.000000047683717
+  ],
+  "mountingRays": 10,
+  "boreWallRays": 28,
+  "directedChecks": [
+    {
+      "name": "ChainBus complete native rear housing",
+      "edges": 3513,
+      "bad": 0,
+      "volumeMm3": 923.269963464573
+    },
+    {
+      "name": "ChainBus complete native front housing and integral EXT latch",
+      "edges": 2343,
+      "bad": 0,
+      "volumeMm3": 955.2358166474313
+    },
+    {
+      "name": "ChainBus complete native RGB light guide",
+      "edges": 378,
+      "bad": 0,
+      "volumeMm3": 21.898510410180492
+    },
+    {
+      "name": "ChainBus shaped PCB with actual retaining bore and mounting reliefs",
+      "edges": 636,
+      "bad": 0,
+      "volumeMm3": 293.1674750275048
+    },
+    {
+      "name": "ChainBus actual fixed white EXT four-chamber plug housing",
+      "edges": 5898,
+      "bad": 0,
+      "volumeMm3": 142.18211678560175
+    },
+    {
+      "name": "ChainBus independent physical front pin-strip adhesive film",
+      "edges": 408,
+      "bad": 0,
+      "volumeMm3": 2.904697668797926
+    },
+    {
+      "name": "ChainBus independent physical rear die-cut adhesive film",
+      "edges": 1752,
+      "bad": 0,
+      "volumeMm3": 11.309042134526265
+    },
+    {
+      "name": "ChainBus actual fixed rear hex-socket retaining head",
+      "edges": 612,
+      "bad": 0,
+      "volumeMm3": 3.1880061905455945
+    }
+  ],
+  "positiveMaterial": {
+    "extOuterSideMm": 0.8000000000000003,
+    "extBetweenChambersMm": 1.2,
+    "extAboveBelowMm": 1.15,
+    "pcbMountReliefMm": 1.0750000000000002,
+    "pcbRetainingBoreSideMm": 3.3,
+    "bevelMm": 0
+  },
+  "chamberWallRays": 16,
+  "chamberEmptyAxes": 4,
+  "extensionContactHits": [
+    {
+      "contact": 1,
+      "hit": "ChainBus EXT retained contact rear",
+      "position": [
+        -3,
+        15.025000002980232,
+        0.8
+      ]
+    },
+    {
+      "contact": 2,
+      "hit": "ChainBus EXT retained contact rear",
+      "position": [
+        -1,
+        15.025000002980232,
+        0.8
+      ]
+    },
+    {
+      "contact": 3,
+      "hit": "ChainBus EXT retained contact rear",
+      "position": [
+        1,
+        15.025000002980232,
+        0.8
+      ]
+    },
+    {
+      "contact": 4,
+      "hit": "ChainBus EXT retained contact rear",
+      "position": [
+        3,
+        15.025000002980232,
+        0.8
+      ]
+    }
+  ],
+  "socketContactHits": [
+    {
+      "port": "grove",
+      "y": -6,
+      "hit": "ChainBus grove real recessed contact 1",
+      "distanceMm": 8.900000047683715
+    },
+    {
+      "port": "grove",
+      "y": -4,
+      "hit": "ChainBus grove real recessed contact 2",
+      "distanceMm": 8.900000047683715
+    },
+    {
+      "port": "grove",
+      "y": -2,
+      "hit": "ChainBus grove real recessed contact 3",
+      "distanceMm": 8.900000047683715
+    },
+    {
+      "port": "grove",
+      "y": 0,
+      "hit": "ChainBus grove real recessed contact 4",
+      "distanceMm": 8.900000047683715
+    },
+    {
+      "port": "out",
+      "y": -6,
+      "hit": "ChainBus out real recessed contact 4",
+      "distanceMm": 8.900000047683715
+    },
+    {
+      "port": "out",
+      "y": -4,
+      "hit": "ChainBus out real recessed contact 3",
+      "distanceMm": 8.900000047683715
+    },
+    {
+      "port": "out",
+      "y": -2,
+      "hit": "ChainBus out real recessed contact 2",
+      "distanceMm": 8.900000047683715
+    },
+    {
+      "port": "out",
+      "y": 0,
+      "hit": "ChainBus out real recessed contact 1",
+      "distanceMm": 8.900000047683715
+    }
+  ],
+  "closureChecks": [
+    {
+      "origin": [
+        -20,
+        -3,
+        1.4
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "IN actual rear dielectric carrier"
+    },
+    {
+      "origin": [
+        20,
+        -3,
+        1.4
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "OUT actual rear dielectric carrier"
+    },
+    {
+      "origin": [
+        0,
+        -3,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Independent physical front film on intact native web"
+    },
+    {
+      "origin": [
+        0,
+        -3,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Independent physical back film on intact native rear"
+    },
+    {
+      "origin": [
+        0,
+        -10,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Actual native RGB light guide in original opening"
+    },
+    {
+      "origin": [
+        0,
+        4,
+        -10
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 7,
+      "purpose": "Real retaining hex-socket recess has physical floor"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "IN actual rear dielectric carrier",
+      "hit": "ChainBus grove recessed dielectric rear carrier",
+      "distanceMm": 13.250000011920928
+    },
+    {
+      "purpose": "OUT actual rear dielectric carrier",
+      "hit": "ChainBus out recessed dielectric rear carrier",
+      "distanceMm": 13.250000011920928
+    },
+    {
+      "purpose": "Independent physical front film on intact native web",
+      "hit": "ChainBus independent physical front pin-strip adhesive film",
+      "distanceMm": 11.14000000089407
+    },
+    {
+      "purpose": "Independent physical back film on intact native rear",
+      "hit": "ChainBus independent physical rear die-cut adhesive film",
+      "distanceMm": 11.14
+    },
+    {
+      "purpose": "Actual native RGB light guide in original opening",
+      "hit": "ChainBus complete native RGB light guide",
+      "distanceMm": 11.049999713897705
+    },
+    {
+      "purpose": "Real retaining hex-socket recess has physical floor",
+      "hit": "ChainBus real recessed hex-socket floor",
+      "distanceMm": 6.500000001341105
+    }
+  ],
+  "artworkConfigurations": 3,
+  "direct": {
+    "components": [
+      "grove",
+      "out",
+      "ext",
+      "rgb"
+    ],
+    "connector": "grove",
+    "inputPort": "ext",
+    "extPortConnector": "hy2.0-4p-plug",
+    "actualPlugTipInHostMm": [
+      -2.1798713024822887e-15,
+      -1.1999999999999993,
+      0
+    ],
+    "insertionMm": 1.2,
+    "insertionInferred": true,
+    "extraCablePlugGroups": 0,
+    "hasCable": false,
+    "hasUnitFrame": false,
+    "fixedAssembly": true,
+    "ordinaryCableModuleRejectedAtExt": true
+  },
+  "cascade": {
+    "canonicalInput": "grove",
+    "output": "out",
+    "unitWireCount": 4,
+    "childWireCount": 4,
+    "transformedParent": true,
+    "independentPeer": true
+  },
+  "publicAPI": {
+    "ports": [
+      "grove",
+      "out",
+      "ext"
+    ],
+    "anchors": [],
+    "controls": [],
+    "leds": [
+      "rgb"
+    ],
+    "joints": [],
+    "moduleExport": "GroveModule",
+    "directModuleExport": "DirectModule",
+    "directFrameProperty": "directAssemblyFrame",
+    "canonicalCableInput": "grove",
+    "extConnector": "hy2.0-4p-plug",
+    "rgb": {
+      "kind": "led",
+      "defaultOff": true,
+      "color": true,
+      "brightness": true,
+      "noHalo": true,
+      "noAutomaticStatus": true
+    }
+  },
+  "artwork": {
+    "kind": "source-vector-raster",
+    "panels": 2,
+    "physicalGeometryInvariant": true
+  },
+  "disposedResources": 1060
+}

@@ -1,0 +1,74 @@
+{
+  "id": "cat1-cn",
+  "sku": "U204",
+  "kind": "source-vector-raster",
+  "status": "source-vector-raster",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Two exact supplied U204 outlined body-label originals rasterized at high resolution with independently measured panel bounds;original paths and text retained.One front title compound-path conversion fill-rule corrected locally to preserve complete source glyphs;no retyping or photographic pixels.",
+  "sources": [
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1189/U204_CAT1-CN_main_pictures_07.webp",
+      "sha256": "11da16bce0a2b1ed782dcfdb5e82c460d206ff517c09889899a9060d074eaba8"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1189/U204_CAT1-CN_main_pictures_08.webp",
+      "sha256": "bc60d83dd8a35544260c43dde3026ff6be3fe06b5e367d232fb1580090bf4330"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/cat1-cn/source-vector-front.png",
+      "sha256": "b2f7b9f8745ebe6c341fd6e7ac6c38eaafb85b872df15fb069b01ea9c0792fff",
+      "pixels": [
+        1583,
+        3612
+      ],
+      "sizeMm": [
+        15.8,
+        36.1
+      ],
+      "positionMm": [
+        0,
+        2.95,
+        3.8
+      ],
+      "face": "front",
+      "target": "Unit Cat1-CN actual front adhesive film",
+      "kind": "source-vector-raster",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/cat1-cn/source-vector-back.png",
+      "sha256": "78dfba5212fa8e2eacbd7249a1f925e9d17048c0a34e1b47fa44c5d602b5a77d",
+      "pixels": [
+        1605,
+        3603
+      ],
+      "sizeMm": [
+        16,
+        36
+      ],
+      "positionMm": [
+        0,
+        3,
+        -3.88
+      ],
+      "face": "back",
+      "target": "Unit Cat1-CN actual back adhesive film",
+      "kind": "source-vector-raster",
+      "method": "printedArtwork"
+    }
+  ],
+  "readabilityCheck": "Both final ordinary PNGs opened for necessary text/layout inspection;front title conversion defect corrected and final front re-opened.No exhaustive browser visual acceptance.",
+  "limitations": [
+    "Only actual U204 front/back body artwork selected;packaging artwork and photographs not used as label originals.",
+    "Film dimensions and registration are appearance reconstruction around native recesses.",
+    "rearCover:false removes only rear physical film/ink with the actual rear cover;front film stays.",
+    "artwork:false removes ink only.All physical attributes/index/world matrices stay invariant for all twelve Model/GroveModule/cover/antenna-angle combinations.",
+    "No antenna printing is established;the supplied antenna has no invented label.",
+    "Only final ordinary PNGs distributed;table,original vectors,source mappings,generators,raw photographs and intermediates excluded."
+  ],
+  "rights": "Original printed designs,product names and trademarks retain their respective rights.Only approved ordinary raster derivatives are distributed."
+}

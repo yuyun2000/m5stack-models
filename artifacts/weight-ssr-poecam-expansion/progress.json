@@ -1,0 +1,505 @@
+{
+  "savedAt": "2026-10-26T17:08:45.117564+00:00",
+  "stage": "modeled",
+  "scope": "Own Weight/SSR/PoE CAM-W v1.1 physical assemblies and actual external visual controls/accessories, corresponding print and real three-branch four-core API fixture/builds; no browser or whole-catalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 134,
+    "modeled": 148,
+    "verified": 0
+  },
+  "localHead": "3681a6482aff96501d44659ba5a1603246f1fe1f",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "weight",
+      "status": "pass",
+      "report": "docs/research/weight/smoke.json",
+      "meshes": null,
+      "triangles": null
+    },
+    {
+      "id": "ssr",
+      "status": "pass",
+      "report": "docs/research/ssr/smoke.json",
+      "meshes": 125,
+      "triangles": 53038
+    },
+    {
+      "id": "poe-cam-w-v11",
+      "status": "pass",
+      "report": "docs/research/poe-cam-w-v11/smoke.json",
+      "meshes": 279,
+      "triangles": 31292
+    }
+  ],
+  "pngCount": 6,
+  "rasters": [
+    {
+      "path": "src/units/weight/reference-redraw-back.png",
+      "pixels": [
+        1580,
+        1180
+      ],
+      "sha256": "a6f65fee21e1441291495fa7f2cecb91e8096264984b1d51fc071eb95e58e0e8"
+    },
+    {
+      "path": "src/units/weight/reference-redraw-front.png",
+      "pixels": [
+        1540,
+        440
+      ],
+      "sha256": "4a5e6862bc9cafbabd9ff5d0256b0deaead624831344230da8b90c852e942e97"
+    },
+    {
+      "path": "src/units/ssr/source-vector-back.png",
+      "pixels": [
+        1623,
+        3620
+      ],
+      "sha256": "b450cd59d9ef97b56aa1850f68da700923e046953e8195556022f71227cbeb1c"
+    },
+    {
+      "path": "src/units/ssr/source-vector-front.png",
+      "pixels": [
+        1605,
+        2708
+      ],
+      "sha256": "2f1373ccd2446f68951494b12d700d7c06262ac5985c0e4818b304754a81c64f"
+    },
+    {
+      "path": "src/units/poe-cam-w-v11/artwork/front.png",
+      "pixels": [
+        648,
+        208
+      ],
+      "sha256": "04d782421e39e865309749abb411d868895ce13233b7edb9ee9ed8208841d574"
+    },
+    {
+      "path": "src/units/poe-cam-w-v11/artwork/rear.png",
+      "pixels": [
+        1456,
+        3760
+      ],
+      "sha256": "8c53ec563aed0a1093572fb4908c1a7ab87c3bfe7e7c93e1190332ab929f7719"
+    }
+  ],
+  "fixture": {
+    "status": "pass",
+    "artwork": [
+      {
+        "id": "weight",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "ssr",
+        "panels": 2,
+        "kinds": [
+          "source-vector-raster-and-reference-redraw",
+          "source-vector-raster"
+        ]
+      },
+      {
+        "id": "poe-cam-w-v11",
+        "panels": 2,
+        "kinds": [
+          "official-photo-code-redraw"
+        ]
+      }
+    ],
+    "cases": [
+      "three-real-four-core-input-branches",
+      "own-U030-HX711-without-fabricated-loadcell-platform-values-or-I2C",
+      "own-U122-SSR-without-ACSSR-DCSSR-controller-invented-light-or-switching-state",
+      "two-own-removable-4P-plugs-eight-independent-screwhead-tweens-exact-return-and-fixed-material",
+      "PoE-CAM-W-v11-actual-user-native-tongue-and-reset-cap-multiple-source-release-cancel-original-normals",
+      "own-OV3660-fixed-camera-passive-anchor-independent-real-lamp-carriers-no-inputecho",
+      "own-native-Stand-singleaxis-relative-motion-fixed-clamp-and-BackBrick-independent-attachment",
+      "both-entries-all-real-configurations-artwork-preserves-every-physical-attribute-index-world-matrix",
+      "real-connectors-reject-Grove-wrong-family-preserving-occupied-accessories",
+      "external-pose-cable-independent-detach-and-host-framebuffer-preserved"
+    ],
+    "scope": "Current three own physical assemblies/external visuals only; Node canvas stub; no GPU/browser, weighing/SSR/AI/video/network/PoE/USB/electrical/firmware behavior, measured stops, production fit, physical hardware or whole-catalog acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "artwork": [
+      {
+        "id": "weight",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw"
+        ]
+      },
+      {
+        "id": "ssr",
+        "panels": 2,
+        "kinds": [
+          "source-vector-raster-and-reference-redraw",
+          "source-vector-raster"
+        ]
+      },
+      {
+        "id": "poe-cam-w-v11",
+        "panels": 2,
+        "kinds": [
+          "official-photo-code-redraw"
+        ]
+      }
+    ],
+    "cases": [
+      "three-real-four-core-input-branches",
+      "own-U030-HX711-without-fabricated-loadcell-platform-values-or-I2C",
+      "own-U122-SSR-without-ACSSR-DCSSR-controller-invented-light-or-switching-state",
+      "two-own-removable-4P-plugs-eight-independent-screwhead-tweens-exact-return-and-fixed-material",
+      "PoE-CAM-W-v11-actual-user-native-tongue-and-reset-cap-multiple-source-release-cancel-original-normals",
+      "own-OV3660-fixed-camera-passive-anchor-independent-real-lamp-carriers-no-inputecho",
+      "own-native-Stand-singleaxis-relative-motion-fixed-clamp-and-BackBrick-independent-attachment",
+      "both-entries-all-real-configurations-artwork-preserves-every-physical-attribute-index-world-matrix",
+      "real-connectors-reject-Grove-wrong-family-preserving-occupied-accessories",
+      "external-pose-cable-independent-detach-and-host-framebuffer-preserved"
+    ],
+    "scope": "Current three own physical assemblies/external visuals only; Node canvas stub; no GPU/browser, weighing/SSR/AI/video/network/PoE/USB/electrical/firmware behavior, measured stops, production fit, physical hardware or whole-catalog acceptance"
+  },
+  "checks": {
+    "localProductSmoke": "all three pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "weight",
+        "status": "frozen",
+        "checkedFiles": 13
+      },
+      {
+        "id": "ssr",
+        "status": "frozen",
+        "checkedFiles": 14
+      },
+      {
+        "id": "poe-cam-w-v11",
+        "status": "frozen",
+        "checkedFiles": 15
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "All physical attributes/index/world matrices preserved across actual entries/configurations",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "7d6ada9fb94c5edfb3e6ed6b6a5f6af2f5a94e7cc0172bcedaa97a24ac5536f8",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "c13e4684b2f6b70e092b11cd3b2849299ba70539a3a15126d1ec6662869f15fe",
+      "logDistributed": false
+    },
+    "exportCount": 10,
+    "catalogConfigurations": {
+      "status": "pass",
+      "products": [
+        {
+          "id": "weight",
+          "presets": [
+            {
+              "id": "unit",
+              "name": "Unit with open receiving terminal",
+              "options": {
+                "terminalPlug": false
+              }
+            },
+            {
+              "id": "terminal-plug",
+              "name": "Supplied four-screw terminal installed",
+              "options": {
+                "terminalPlug": true
+              }
+            }
+          ],
+          "defaults": {
+            "terminalPlug": false
+          }
+        },
+        {
+          "id": "ssr",
+          "presets": [
+            {
+              "id": "assembled",
+              "name": "Assembled receiving sockets",
+              "options": {
+                "terminalPlug": false
+              }
+            },
+            {
+              "id": "with-terminal",
+              "name": "Assembled with supplied four-screw terminal plug",
+              "options": {
+                "terminalPlug": true
+              }
+            }
+          ],
+          "defaults": {
+            "terminalPlug": false
+          }
+        },
+        {
+          "id": "poe-cam-w-v11",
+          "presets": [
+            {
+              "id": "none",
+              "name": "Body (default)",
+              "options": {
+                "mount": "none"
+              }
+            },
+            {
+              "id": "stand",
+              "name": "With native Stand",
+              "options": {
+                "mount": "stand"
+              }
+            },
+            {
+              "id": "brick",
+              "name": "With native Back-Brick",
+              "options": {
+                "mount": "brick"
+              }
+            }
+          ],
+          "defaults": {
+            "mount": "none",
+            "artwork": true
+          }
+        }
+      ],
+      "scope": "Three current frozen named configuration arrays, constructor defaults and existing demo preset contract"
+    },
+    "livePreview": "148-product catalog, three own runtime chunks and all corresponding source PNG bytes verified in live dist (ordinary or inlined assets)",
+    "newSourcePrivacy": "New JS/JSON/Markdown/PNG and six added catalog/manifest records checked; private table/URLs/vectors/original names/mappings/raw material/intermediates excluded",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "Only new products/catalog entries/exports/guide/plan; protected old private/public bytes retained",
+    "existingPublicUnitFilesUnchanged": 1084,
+    "existingPrivateUnitFilesUnchanged": 1045,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [
+    {
+      "product": "weight",
+      "record": "docs/research/weight/sources.json",
+      "feedback_id": "da5b3aa5ebea4f2d9ae31ff88308ef17",
+      "accepted": true
+    },
+    {
+      "product": "ssr",
+      "record": "docs/research/ssr/sources.json",
+      "feedback_id": "839829333c77479291949aab78233293",
+      "accepted": true
+    },
+    {
+      "product": "poe-cam-w-v11",
+      "record": "docs/research/poe-cam-w-v11/sources.json",
+      "feedback_id": "39e5e272835f47fd9e0c477eb58b564c",
+      "accepted": true
+    }
+  ],
+  "previewAssets": [
+    {
+      "id": "weight",
+      "file": "assets/weight-DC_luFMM.js",
+      "sha256": "5665ea30ba1c93f46c697301e012bb83c84e0e45cfc1cc59dc791ee10254e224"
+    },
+    {
+      "id": "ssr",
+      "file": "assets/ssr-e95macoj.js",
+      "sha256": "4bf2a868b546593633d4335fcb78b690a8c0c91c42835743593da7ec36f04732"
+    },
+    {
+      "id": "poe-cam-w-v11",
+      "file": "assets/poe-cam-w-v11-CF6NhOBh.js",
+      "sha256": "6d657f72b5624093b4fc09b735024875a8d6ce6d446771d1c05942959b1a6433"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/weight/TerminalPlug.js",
+      "sha256": "992be20847dd312522e98b3a26c01970ae2031899bd3e3ec469347d1b9486e83"
+    },
+    {
+      "path": "src/units/weight/assembly.js",
+      "sha256": "c2b791b1d2bb3ca505b1ecc25909293aeb9e743ff39a423719807826d62319c8"
+    },
+    {
+      "path": "src/units/weight/cad-map.json",
+      "sha256": "58c2eec41c675b5d5bbf9f0157e58dc45933bbef93e95966bb45af976043c930"
+    },
+    {
+      "path": "src/units/weight/dimensions.js",
+      "sha256": "e811093db892215f79dce2a28168350f28eb8c7d858142bde648dfc4d216edf5"
+    },
+    {
+      "path": "src/units/weight/geometry-data.js",
+      "sha256": "3be1395169ee9c4c35020bc35624957fd59e1d45941e7aa1b57252e432dc93e6"
+    },
+    {
+      "path": "src/units/weight/index.js",
+      "sha256": "f0a11f9c4b3ec8173a71ba1ba905f60ea21c5fb599a4c5f03fc4d6f2ce9ec823"
+    },
+    {
+      "path": "src/units/weight/reference-redraw-back.png",
+      "sha256": "a6f65fee21e1441291495fa7f2cecb91e8096264984b1d51fc071eb95e58e0e8"
+    },
+    {
+      "path": "src/units/weight/reference-redraw-front.png",
+      "sha256": "4a5e6862bc9cafbabd9ff5d0256b0deaead624831344230da8b90c852e942e97"
+    },
+    {
+      "path": "src/units/weight/stickers.js",
+      "sha256": "06e2421849f587d17ab27775393dcd9fa8c5d5a0dbc01b9d3c69b6db0c652b64"
+    },
+    {
+      "path": "docs/research/weight/artwork.json",
+      "sha256": "723871466c333baf693bb9a30df416bd0a47eac3b79b6d380e067d7803dfd773"
+    },
+    {
+      "path": "docs/research/weight/modeling.md",
+      "sha256": "276677537f6df1a5bbce1e82cb8fbf2eebcd05960c3f25a32b832410ebed2a00"
+    },
+    {
+      "path": "docs/research/weight/smoke.json",
+      "sha256": "e02ddf034a5f0d417e87e5077ee5f1a004827e16776dd15ba634b2685f4f3058"
+    },
+    {
+      "path": "docs/research/weight/sources.json",
+      "sha256": "5539be0ff3e2351887bdd122e0dc43a2632475a93a019a5769d6f908898e937f"
+    },
+    {
+      "path": "src/units/ssr/TerminalPlug.js",
+      "sha256": "2041f115831b00dc8e06ae03ef4dc53af3dc8e16973021106a140e229d8ad817"
+    },
+    {
+      "path": "src/units/ssr/assembly.js",
+      "sha256": "6cbeb8fee900692a28957469f0e168d1ed89b2c291d91bc73988359e6f5ff0af"
+    },
+    {
+      "path": "src/units/ssr/cad-map.json",
+      "sha256": "2c209a4655b23e07ee439c971ffe0d85f27c00ebafa744c619775c0f02efb94b"
+    },
+    {
+      "path": "src/units/ssr/connectors.js",
+      "sha256": "0fa33e11025c4e0b72b47d2b88701899bf46c6d0ffeff580886903f998607366"
+    },
+    {
+      "path": "src/units/ssr/dimensions.js",
+      "sha256": "b642b77b8fb1d209872f7f2eb5e22d126ebe8a0d888cd84a6e31ecae2264523f"
+    },
+    {
+      "path": "src/units/ssr/geometry-data.js",
+      "sha256": "6fb28a6c649587a60d8071d47ef61019bc8d293bb9416c1adbedf5c17b86245c"
+    },
+    {
+      "path": "src/units/ssr/index.js",
+      "sha256": "6a03580db121b386f7b19853ac76d7e657c6672f729b526b056268f335143b8d"
+    },
+    {
+      "path": "src/units/ssr/source-vector-back.png",
+      "sha256": "b450cd59d9ef97b56aa1850f68da700923e046953e8195556022f71227cbeb1c"
+    },
+    {
+      "path": "src/units/ssr/source-vector-front.png",
+      "sha256": "2f1373ccd2446f68951494b12d700d7c06262ac5985c0e4818b304754a81c64f"
+    },
+    {
+      "path": "src/units/ssr/stickers.js",
+      "sha256": "9d938c662bb30d061c0c4aced7522f69eafa2f988f0bffd25c79c1b15c0d686e"
+    },
+    {
+      "path": "docs/research/ssr/artwork.json",
+      "sha256": "ed8b23ad76e0a77dea8dd149ad3a4083cd4a08d47928177e741448671dd5253b"
+    },
+    {
+      "path": "docs/research/ssr/modeling.md",
+      "sha256": "53e2b67926bde570d66cc16f2568ce80fb6400505d75d4a62a19281d663f6240"
+    },
+    {
+      "path": "docs/research/ssr/smoke.json",
+      "sha256": "6d63a1ee5b675dd746b53172bbdbe3c8c42f52825fdb558fd7d19a5cf5047dba"
+    },
+    {
+      "path": "docs/research/ssr/sources.json",
+      "sha256": "ba7c9689f23b6639a8dc49989c6005816385c67a9883ef066cdac49666424b7d"
+    },
+    {
+      "path": "src/units/poe-cam-w-v11/NativeButton.js",
+      "sha256": "081703d760d92e6128d944d79dc017bf3f0a2dec51a1ef76b6fd34a3e2e18c08"
+    },
+    {
+      "path": "src/units/poe-cam-w-v11/accessories.js",
+      "sha256": "7887a91e42e1e331755d428a4a3284f1e935b7ec19b42bf743bc78109dab8459"
+    },
+    {
+      "path": "src/units/poe-cam-w-v11/artwork/front.png",
+      "sha256": "04d782421e39e865309749abb411d868895ce13233b7edb9ee9ed8208841d574"
+    },
+    {
+      "path": "src/units/poe-cam-w-v11/artwork/rear.png",
+      "sha256": "8c53ec563aed0a1093572fb4908c1a7ab87c3bfe7e7c93e1190332ab929f7719"
+    },
+    {
+      "path": "src/units/poe-cam-w-v11/assembly.js",
+      "sha256": "e1301f082931eaf67838fcab464d5dc8931ef902b4d9212cd4f0b109d50d5228"
+    },
+    {
+      "path": "src/units/poe-cam-w-v11/cad-map.json",
+      "sha256": "376195b89ecb001bade01456f8758f40f9cceb8a24287650149f911544757ea5"
+    },
+    {
+      "path": "src/units/poe-cam-w-v11/connectors.js",
+      "sha256": "adeeaab7d0c701784fd49dd5925c5efcee36a8ea4de8563763a8b9fe08ed8e9f"
+    },
+    {
+      "path": "src/units/poe-cam-w-v11/dimensions.js",
+      "sha256": "6d8dfe02033ff90df45f8cd09c60d063d386962bb575da27e62c7876b1c93246"
+    },
+    {
+      "path": "src/units/poe-cam-w-v11/geometry-data.js",
+      "sha256": "53f62f5d3e359438e27a84ec78fa1a841a9b7e3f1c47dc04704034504e349d45"
+    },
+    {
+      "path": "src/units/poe-cam-w-v11/geometry.js",
+      "sha256": "8efb6520ad81cf938aa8ecd84fd6c81ea368a7522d295255e7ffc48c35c9ea36"
+    },
+    {
+      "path": "src/units/poe-cam-w-v11/index.js",
+      "sha256": "349166892127b4eaff26453017f06c2b4ebcd8c40e7cd05d116f3d6584f1dcff"
+    },
+    {
+      "path": "docs/research/poe-cam-w-v11/artwork.json",
+      "sha256": "15dbcc4a36b13e3e583865027d23435427f9347421e49aa82fa216b93d0e03e2"
+    },
+    {
+      "path": "docs/research/poe-cam-w-v11/modeling.md",
+      "sha256": "0b90ec0b4ac2cb26716422e35583f2ebb375c7e8dd061e883942976698ae4057"
+    },
+    {
+      "path": "docs/research/poe-cam-w-v11/smoke.json",
+      "sha256": "6faacee69879ae2d0adf031298103781ce09ae8e463f15130b4a2581e4716572"
+    },
+    {
+      "path": "docs/research/poe-cam-w-v11/sources.json",
+      "sha256": "d39fddedc8dadbe130e36a1b15791a70231746210e0e3577f78839d4bb801e3f"
+    }
+  ],
+  "limitations": [
+    "Hidden assembly, material details, connector registration and accessory travel retain the own-product appearance inferences recorded in research sources; not manufacturing or measured mechanical-stop acceptance",
+    "Weight U030 retains its own HX711/PCB, actual Grove/4P header and detachable screw plug; no weighing platform, load cell, sensor values, MCU, I2C or invented controls/electrical behavior",
+    "SSR U122 retains its own MOC3043M/BT136S assembly and actual detachable 4P screw plug; no ACSSR/DCSSR controller, RGB/button, unconfirmed exterior D1 light path, relay-state or electrical behavior",
+    "PoE CAM-W v1.1 uses its own OV3660, actual shell/holder, RJ45/Grove and native Stand/Brick; controls and lights reflect actual accessible structure and documented visibility; no USB, guessed RGB, camera framebuffer, network, PoE/electrical or firmware behavior",
+    "Final ordinary PNGs are exact-model source rasters or attributed reference redraws; private originals, table, URLs, mappings, generators and intermediates stay outside distribution",
+    "Earlier sticker checkpoints, private Scroll and unresolved StackChan production fit/Puzzle Bridge mating remain preserved; overall goal active"
+  ]
+}

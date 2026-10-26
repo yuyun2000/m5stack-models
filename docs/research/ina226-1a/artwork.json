@@ -1,0 +1,71 @@
+{
+  "id": "ina226-1a",
+  "sku": "U200-1A",
+  "kind": "source-vector-raster",
+  "status": "source-vector-raster",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Two exact U200-1A original outlined body labels independently recovered and rasterized:front1A and rear80mR/1%.Original palette,letterforms and layout retained;compound-path fill winding normalized to recover glyph counters.Exact own-label alpha bands independently measured;no source filename,mapping,private URL,vector,generator or intermediate distributed.",
+  "recoveryScope": "Own1A device-label outline bounds and compound-path glyph winding normalization only;no retyped text,palette recolor,preview enlargement,photographic crop or10A label substitution.",
+  "referenceCorrespondence": [
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1172/Unit_INA226-1A_06.webp",
+      "sha256": "74198ca3fd45e2e29edcac4904c1596309b5d0cbfb5ba125e1febefb2a5a9dbc"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1172/Unit_INA226-1A_07.webp",
+      "sha256": "51984e2dc930174a15cfbbfa66be4f3dda38276a636e1844d6df0a55372dfc27"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/ina226-1a/source-vector-front.png",
+      "sha256": "bbeee09b32f54fd3b07f61cc73cf4b4eea22c28ca245efbe7efbcd40979b6c91",
+      "pixels": [
+        1580,
+        2690
+      ],
+      "sizeMm": [
+        15.8,
+        26.9
+      ],
+      "positionMm": [
+        0,
+        2.75,
+        3.855
+      ],
+      "face": "front",
+      "target": "INA226-1A physical front adhesive label substrate over native printed recess",
+      "kind": "source-vector-raster",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/ina226-1a/source-vector-back.png",
+      "sha256": "3a0f28b2a755804b98ad2d7c149bb2325c168e6a4a03c3027d05a17386fe6d3b",
+      "pixels": [
+        1600,
+        3600
+      ],
+      "sizeMm": [
+        16,
+        36
+      ],
+      "positionMm": [
+        0,
+        6,
+        -3.855
+      ],
+      "face": "back",
+      "target": "INA226-1A physical back adhesive label substrate over native printed recess",
+      "kind": "source-vector-raster",
+      "method": "printedArtwork"
+    }
+  ],
+  "limitations": [
+    "Adhesive thickness and print registration are own-photo appearance reconstruction.",
+    "Complete physical adhesive substrates,native shell,PCB and package geometry remain with artwork:false.",
+    "Only exact1A/80mR body labels used;packaging/product photos and10A/5mR variant excluded."
+  ],
+  "rights": "Product names,original printed designs and trademarks retain respective rights.Only approved final ordinary rasters distributed."
+}

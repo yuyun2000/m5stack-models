@@ -1,0 +1,681 @@
+{
+  "id": "poe-p4",
+  "sku": "U213",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_PoE-P4",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "queries": [
+      "Unit PoE-P4 U213 dimensions interfaces buttons LEDs USB Ethernet"
+    ],
+    "rawResponseDistributed": false,
+    "result": "Exact U213 ESP32-P4 Unit identity64×24×20.2mm,twoUSB-C,RC01835RJ45,two24P FPC,9P/6P/16Pheaders,oneuserkey,RGB/IR and own shell/drawing/photos/schematics confirmed;distinct fromU138.",
+    "feedbackId": "ff53d83247364aad8238f7b54e2fd318",
+    "feedbackOutcome": "accepted for human evaluation;no corrected CAD or production-fit certification",
+    "additionalAssemblyFeedbackId": "44116ac4eb804827a240975e23ff558b"
+  },
+  "reference": {
+    "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1217/U213_unit_poe-p4_main_pictures_02.webp",
+    "sha256": "3a763806b9ccb6209978240b5450c38c1d990173a0b57b610341b19087bde83b"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/66720a863658da9bab58a208d4ebf8a040c2d42c/Products/U213_Unit_PoE_P4/Structures/Unit_PoE-P4.stl",
+      "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/94e225b90e02f25b1ea59182ea27db495bb9fe98",
+      "commit": "66720a863658da9bab58a208d4ebf8a040c2d42c",
+      "gitBlob": "94e225b90e02f25b1ea59182ea27db495bb9fe98",
+      "sha256": "992c5634f97a2c570bb38f442488fb5123f19afb05052712d7de3411b6a7f397",
+      "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1217/U213_unit_poe-p4_main_pictures_01.webp",
+      "sha256": "96800ca5790360d369accd447504a1acdbd9f4d12870484055f6098bccc22d0f"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1217/U213_unit_poe-p4_main_pictures_02.webp",
+      "sha256": "3a763806b9ccb6209978240b5450c38c1d990173a0b57b610341b19087bde83b"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1217/U213_unit_poe-p4_main_pictures_03.webp",
+      "sha256": "6d438a3b9a63b7520bf25969304a72d8b8d152cb9318263347470961e470a7cf"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1217/U213_unit_poe-p4_main_pictures_04.webp",
+      "sha256": "b4ca2b0f0cf7f3ccc4074144059cfad20c48ba87c02931c142936048d472027b"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1217/U213_unit_poe-p4_main_pictures_05.webp",
+      "sha256": "4429c5a6b63decdad57218770cef6741fee7b946c5cd9b423a217c777b79d11a"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1217/U213_unit_poe-p4_main_pictures_06.webp",
+      "sha256": "f08b84e7d68f8c8fc7e830ec09e0cf35d3aebfa2db0f31b20a901d0fee863628"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1217/U213_unit_poe-p4_main_pictures_07.webp",
+      "sha256": "f558d3f26282203e2247c5ef8277b97001a6825c9977e958ab814ebefa4cced2"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1217/U213_unit_poe-p4_main_pictures_08.webp",
+      "sha256": "5f63d0f1d720cd54de6765e197f6377cb77ccaa529e008874e578572e76588de"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1217/U213_unit_poe-p4_main_pictures_09.webp",
+      "sha256": "4f05a3f4b295099ab4bd7afe83ab9a0bfa475a0c9cb506ac1f87245c77b76f35"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1217/U213_unit_poe-p4_main_pictures_10.webp",
+      "sha256": "33da3ae246dc8c00cc893e95453c6e48ca3145ed0f47d31dce627a0ba14ff7d4"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1217/U213_unit_poe-p4_main_pictures_11.webp",
+      "sha256": "1e6126b162d02a8f5182e153f92bf868dbabb8f904361fd81db45924a6f038a3"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1217/U213_unit_poe-p4_main_pictures_12.webp",
+      "sha256": "dc06febd911ba42d6208e3e4dfd065aee4872065b4b1a0db89461162bcf01f6d"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1217/U213-unit-poe-p4-model-size_page_01.png",
+      "sha256": "eaa4f71aae2fa6a215ccb3ce1ac351152810fee09ddfeecb025c80e11b5b5dcc"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1217/U213-unit-poe-p4-model-size.pdf",
+      "sha256": "87f2514ebc77226d441547335c0773fc58c9c4b77d9a95e0480f6b58aa92d9b6"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1217/SCH_StickPoE_SCH_Main_V0.2_20250829_2026_02_02_17_17_04_page_01.png",
+      "sha256": "c0b2494a0a7527bfb3254d7d85ae4f7c34d80df9db4b3c107e492147382ade91"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1217/SCH_StickPoE_SCH_Main_V0.2_20250829_2026_02_02_17_17_04_page_03.png",
+      "sha256": "5b4b45cd6f88b3919e644003403593c13e23133967534e9db37a2c8a79c46fea"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1217/SCH_StickPoE_SCH_Main_V0.2_20250829_2026_02_02_17_17_04_page_04.png",
+      "sha256": "20002ec75f4a5d2fd30e1d52873b8e4db86855958e2cd1bbad1d9a78cdf936d1"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1217/SCH_StickPoE_SCH_POWER_V0.2_20250731_2026_02_02_17_17_39_page_01.png",
+      "sha256": "daf839941913ae6ec5b66ed8bd042d7e3fc139b27a095eddc1eb875f9f8dbe64"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1217/SCH_StickPoE_SCH_Hat_V0.2_20250801_2026_02_02_17_16_35_page_01.png",
+      "sha256": "d77c58a08024fca692565d635f2b431b4418f1e9e90195bf77899f5af172397d"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0,
+      2
+    ],
+    "excludedComponents": [
+      1,
+      3
+    ],
+    "originalSourceTriangles": 12316,
+    "originalAssemblyTriangles": 6158,
+    "outputTriangles": 11728,
+    "origin": [
+      31.3000946,
+      12.7499791,
+      -3.14
+    ],
+    "axes": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "scale": 1,
+    "localModification": {
+      "kind": "two-evidenced-connector-web-openings",
+      "reason": "Own official photo10 USB Host and photo12 Hat2 are open connectors;linked own STL has closed placeholder membranes at their actual socket axes.",
+      "sourceAssemblyTriangles": 6158,
+      "outputAssemblyTriangles": 11728,
+      "geometryJSONSha256": "40001a0e1a028c646bcae87187f9f046bf6b6213bfef1227a1183b9258318490",
+      "regions": [
+        {
+          "id": "host-usb-open-aperture",
+          "component": 0,
+          "inputTriangles": 4050,
+          "outputTriangles": 5106,
+          "retainedSourceTriangles": 4023,
+          "modifiedSourceTriangleIndices": [
+            3,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            111,
+            935,
+            937,
+            941,
+            944,
+            945,
+            969,
+            971,
+            1121,
+            1134,
+            1138,
+            3233,
+            3234,
+            3235,
+            3236,
+            3237,
+            3238
+          ],
+          "newBoreWallTriangles": 264,
+          "finiteCavityCapTriangles": 0,
+          "cavityEndCoordinateMm": 9.5,
+          "subdividedBoundaryVertices": 216,
+          "profiles": [
+            {
+              "center": [
+                -6,
+                -3.55
+              ],
+              "size": [
+                8.7,
+                3
+              ]
+            }
+          ],
+          "axis": "x",
+          "sourceBlockingEvidence": {
+            "nativeFirstHit": "closed source solid before connector contacts/floor",
+            "referencePhotoUrl": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1217/U213_unit_poe-p4_main_pictures_10.webp",
+            "correction": "Host8.7x3mmcapsule or16Hat2square1.3mmbores;realborewallsandfiniteendcapsclosed",
+            "measurementNote": "Host outer recess is0.2mm;remaining source solid~1.58-1.63mm.Hat interval zero only marks a boundary wedge endpoint,not an open edge or zero-thickness claim."
+          },
+          "referencePhoto": 10,
+          "before": {
+            "triangles": 4050,
+            "edges": 6075,
+            "invalidEdges": 0,
+            "signedVolumeMm3": 4731.1519904152165
+          },
+          "after": {
+            "triangles": 5106,
+            "edges": 7659,
+            "invalidEdges": 0,
+            "signedVolumeMm3": 4692.354782548386
+          },
+          "removedSolidAxisIntervalMm": {
+            "min": 1.5804322948258651,
+            "max": 1.6327978742773368
+          }
+        },
+        {
+          "id": "hat2-sixteen-real-socket-bores",
+          "component": 2,
+          "inputTriangles": 2108,
+          "outputTriangles": 6622,
+          "retainedSourceTriangles": 1952,
+          "modifiedSourceTriangleIndices": [
+            9133,
+            9134,
+            9136,
+            9138,
+            9139,
+            9141,
+            9142,
+            9147,
+            9149,
+            9150,
+            9152,
+            9154,
+            9155,
+            9156,
+            9157,
+            9159,
+            9160,
+            9162,
+            9165,
+            9167,
+            9224,
+            9247,
+            9248,
+            9249,
+            9250,
+            9252,
+            9253,
+            9254,
+            9255,
+            9340,
+            9342,
+            9343,
+            9344,
+            9345,
+            9347,
+            9353,
+            9354,
+            9370,
+            9395,
+            9396,
+            9398,
+            9399,
+            9400,
+            9401,
+            9402,
+            9403,
+            9404,
+            9405,
+            9486,
+            9495,
+            9496,
+            9497,
+            9498,
+            9499,
+            9500,
+            9501,
+            9502,
+            9512,
+            9520,
+            9521,
+            9526,
+            9527,
+            9528,
+            9529,
+            9537,
+            9543,
+            9545,
+            9547,
+            9551,
+            9553,
+            9555,
+            9568,
+            9569,
+            9571,
+            9572,
+            9573,
+            9574,
+            9577,
+            9583,
+            9584,
+            9638,
+            9685,
+            10062,
+            10063,
+            10064,
+            10065,
+            10066,
+            10067,
+            10068,
+            10069,
+            10070,
+            10071,
+            10072,
+            10073,
+            10074,
+            10076,
+            10077,
+            10078,
+            10079,
+            10080,
+            10081,
+            10082,
+            10083,
+            10084,
+            10086,
+            10087,
+            10088,
+            10089,
+            10090,
+            10091,
+            10092,
+            10093,
+            10094,
+            10095,
+            10096,
+            10097,
+            10098,
+            10099,
+            10100,
+            10101,
+            10102,
+            10103,
+            10104,
+            10105,
+            10106,
+            10107,
+            10108,
+            10109,
+            10110,
+            10111,
+            10112,
+            10113,
+            10114,
+            10115,
+            10116,
+            10118,
+            10119,
+            10120,
+            10121,
+            10123,
+            10124,
+            10125,
+            10127,
+            10128,
+            10129,
+            10130,
+            10131,
+            10133,
+            10137,
+            10138,
+            10139,
+            10147,
+            10182,
+            10184,
+            10185,
+            10203
+          ],
+          "newBoreWallTriangles": 2206,
+          "finiteCavityCapTriangles": 31,
+          "cavityEndCoordinateMm": 27,
+          "subdividedBoundaryVertices": 922,
+          "profiles": [
+            {
+              "center": [
+                -8.89,
+                5.93
+              ],
+              "size": [
+                1.3,
+                1.3
+              ]
+            },
+            {
+              "center": [
+                -6.35,
+                5.93
+              ],
+              "size": [
+                1.3,
+                1.3
+              ]
+            },
+            {
+              "center": [
+                -3.81,
+                5.93
+              ],
+              "size": [
+                1.3,
+                1.3
+              ]
+            },
+            {
+              "center": [
+                -1.27,
+                5.93
+              ],
+              "size": [
+                1.3,
+                1.3
+              ]
+            },
+            {
+              "center": [
+                1.27,
+                5.93
+              ],
+              "size": [
+                1.3,
+                1.3
+              ]
+            },
+            {
+              "center": [
+                3.81,
+                5.93
+              ],
+              "size": [
+                1.3,
+                1.3
+              ]
+            },
+            {
+              "center": [
+                6.35,
+                5.93
+              ],
+              "size": [
+                1.3,
+                1.3
+              ]
+            },
+            {
+              "center": [
+                8.89,
+                5.93
+              ],
+              "size": [
+                1.3,
+                1.3
+              ]
+            },
+            {
+              "center": [
+                -8.89,
+                8.47
+              ],
+              "size": [
+                1.3,
+                1.3
+              ]
+            },
+            {
+              "center": [
+                -6.35,
+                8.47
+              ],
+              "size": [
+                1.3,
+                1.3
+              ]
+            },
+            {
+              "center": [
+                -3.81,
+                8.47
+              ],
+              "size": [
+                1.3,
+                1.3
+              ]
+            },
+            {
+              "center": [
+                -1.27,
+                8.47
+              ],
+              "size": [
+                1.3,
+                1.3
+              ]
+            },
+            {
+              "center": [
+                1.27,
+                8.47
+              ],
+              "size": [
+                1.3,
+                1.3
+              ]
+            },
+            {
+              "center": [
+                3.81,
+                8.47
+              ],
+              "size": [
+                1.3,
+                1.3
+              ]
+            },
+            {
+              "center": [
+                6.35,
+                8.47
+              ],
+              "size": [
+                1.3,
+                1.3
+              ]
+            },
+            {
+              "center": [
+                8.89,
+                8.47
+              ],
+              "size": [
+                1.3,
+                1.3
+              ]
+            }
+          ],
+          "axis": "y",
+          "sourceBlockingEvidence": {
+            "nativeFirstHit": "closed source solid before connector contacts/floor",
+            "referencePhotoUrl": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1217/U213_unit_poe-p4_main_pictures_12.webp",
+            "correction": "Host8.7x3mmcapsule or16Hat2square1.3mmbores;realborewallsandfiniteendcapsclosed",
+            "measurementNote": "Host outer recess is0.2mm;remaining source solid~1.58-1.63mm.Hat interval zero only marks a boundary wedge endpoint,not an open edge or zero-thickness claim."
+          },
+          "referencePhoto": 12,
+          "before": {
+            "triangles": 2108,
+            "edges": 3162,
+            "invalidEdges": 0,
+            "signedVolumeMm3": 2550.7332384480937
+          },
+          "after": {
+            "triangles": 6622,
+            "edges": 9933,
+            "invalidEdges": 0,
+            "signedVolumeMm3": 2503.159415810619
+          },
+          "removedSolidAxisIntervalMm": {
+            "min": 0,
+            "max": 3.247107543945315
+          }
+        }
+      ],
+      "scope": "Only the actual HostUSB8.7x3mm aperture and16Hat2square1.3mm socket axes reconstructed;native surrounding profiles,otherports,key,retainers and outer envelope retained.No shell scaling,wrong-model geometry or photograph masks.",
+      "feedbackId": "ff53d83247364aad8238f7b54e2fd318"
+    },
+    "notes": "Own U213 source same-position components0/2 are6158 input triangles,components1/3 excluded display duplicates.Source remains private unchanged;runtime is explicitly a locally amended derivative with closed bore walls,not falsely unmodified CAD.Other native triangles preserved byte-for-byte after common rigid transform except recorded local clipping/boundary subdivision."
+  },
+  "dimensions": {
+    "nominalVendorMm": [
+      64,
+      24,
+      20.2
+    ],
+    "modelXYZMm": [
+      24,
+      64,
+      20.2
+    ],
+    "cadEnvelopeMm": [
+      24,
+      64.00000381469727,
+      20.199999809265137
+    ],
+    "visualEnvelopeMm": [
+      24.025000000149014,
+      64.04999998822808,
+      20.199999809265137
+    ]
+  },
+  "artwork": {
+    "kind": "source-vector-raster",
+    "pngCount": 4,
+    "sourceDetails": "docs/research/poe-p4/artwork.json",
+    "originalsDistributed": false
+  },
+  "scope": "Own native enclosure baseline with two evidenced locally closed connector-bore amendments;physically populated main/power/Hat boards,real9connector interfaces,one native tongue,independent RGB/two RJ45 lamps,dark IR package and4matching body labels.Only external input/appearance/mechanical attachment.",
+  "inferred": [
+    "Host8.7×3mm andHat16×1.3mm aperture registration and finite insertion depth from same-model photos/native cavity;not manufacturing tolerances",
+    "Hidden PCB outlines,heights,components,package installation and internalHat ribbon;no populated assembly STEP",
+    "Hat board upper clearance behindCSI;female header cavity/contact/tail details",
+    "RGB optical path,FPC mating-frame direction and native flexure travel/actuator follower",
+    "Die-cut film thickness and sticker registration"
+  ],
+  "notes": [
+    "Input6158/output11728 are explicitly distinguished;not a claim of unmodified CAD.",
+    "5975native faces preserved byte-exact;183recorded modified source faces plus local bore walls/end caps.",
+    "All new aperture geometry is closed/directed/positive at unchanged native envelope.",
+    "User is on-X,USBHost/Grove on+X when+Z is expansionface,+YHat.",
+    "No automatic network,USB,PoE,power,firmware,boot,reset,electrical,camera ordisplay behavior.",
+    "Original rawCAD/photos/PDF/MCP/table/vector/mapping/generator/intermediates excluded;only ordinary finalPNG/derivedgeometry/safe source metadata distributed."
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/poe-p4/NativeButton.js",
+      "sha256": "32c94e5e18664ced1e30c0581b8aec489cd9f858991ab04106c0752111a5f7b5"
+    },
+    {
+      "path": "src/units/poe-p4/assembly.js",
+      "sha256": "963e3199a778cefc01185d9de968dceb77dde0e13f06dc6eda201b6abe74d8ad"
+    },
+    {
+      "path": "src/units/poe-p4/cad-map.json",
+      "sha256": "240ee0d23869c398822a418ae0f408eb8a7a752b00d98523b1acfc643be4ee34"
+    },
+    {
+      "path": "src/units/poe-p4/dimensions.js",
+      "sha256": "a8329e5caf73a9c82e167e6ee495375eeaccae2560efbf01ad89a9b8642cf795"
+    },
+    {
+      "path": "src/units/poe-p4/film-outlines.js",
+      "sha256": "46022218ff5575a734dcaacef27e13ed9da64d6dedf495010a1cf35ec3b94656"
+    },
+    {
+      "path": "src/units/poe-p4/geometry-data.js",
+      "sha256": "a9bcae085934e18e34c055ad6cf42b45487bffa276c97ce3629213b9e6e5507b"
+    },
+    {
+      "path": "src/units/poe-p4/index.js",
+      "sha256": "e08400298acf50dcf3bbe2c01a3cee2db789eab650e3fb0ce795456df162310a"
+    },
+    {
+      "path": "src/units/poe-p4/source-vector-back.png",
+      "sha256": "0103b0184670fca03aae709381b44d43a7b3e8cf83ce3fc29ea7c6751562ca2c"
+    },
+    {
+      "path": "src/units/poe-p4/source-vector-front.png",
+      "sha256": "643fbc5e0a51f83d171ed3c2b073db070ee91e953920f423681be3376e39cb4a"
+    },
+    {
+      "path": "src/units/poe-p4/source-vector-hat.png",
+      "sha256": "0ba7513b83376e5eb09235179559e8e80690fe69d85babba9d05ca9d4507cbf2"
+    },
+    {
+      "path": "src/units/poe-p4/source-vector-side.png",
+      "sha256": "f27e8d5865401d32d0d561352668d4f1e37d4490b5c893fbdace187132e624d2"
+    },
+    {
+      "path": "src/units/poe-p4/stickers.js",
+      "sha256": "206444f994166e6fd1998ed3be67787cced824230057174dbce0e5df51ba6887"
+    }
+  ]
+}

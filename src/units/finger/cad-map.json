@@ -1,0 +1,48 @@
+{
+  "sku": "U008",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/802d26343594f6b8e3b8a9f111cb867613c93882/Products/U008_Unit_Finger/Structures/Unit_Finger.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/ae89b9ca4c75b18f083b0996f1773e9f95f47bd1",
+  "commit": "802d26343594f6b8e3b8a9f111cb867613c93882",
+  "gitBlob": "ae89b9ca4c75b18f083b0996f1773e9f95f47bd1",
+  "sha256": "c389fb387945925f155e7ce2cf9afc6589afdd539d4519821bb919249727bc19",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/802d26343594f6b8e3b8a9f111cb867613c93882/LICENSE",
+  "origin": [
+    -0.001588821411133,
+    12.001625061035156,
+    -26
+  ],
+  "axes": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ]
+  ],
+  "scale": 1,
+  "parts": [
+    {
+      "component": 0,
+      "name": "Finger complete native assembled front and rear shell",
+      "material": "shell",
+      "triangles": 3956
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 3956,
+  "localModification": null,
+  "notes": "Exact own U008 path-specific commit and expected Git blob verified. Component0 is the complete3956-triangle assembled front/rear shell,24×48×8mm. Components1/2 are displaced duplicate shell halves. Full assembled part retained unscaled/unmodified with one common translation and180-degree Y rotation;no native faces removed,patched,filled or repositioned. Own product table48×24×8mm is vendor length/width order;own drawing/native model X/Y/Z is24×48×8mm."
+}

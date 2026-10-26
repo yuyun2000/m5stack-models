@@ -1,0 +1,71 @@
+{
+  "id": "co2l",
+  "sku": "U104",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Exact-model official gray front CO2L shell marking and readable rear CO2L/SCD41/(SINGLE SHOT)/Humidity/Temperature/PORT.A.I2C/SCL/SDA/5V/GND recreated in code,rasterized to final ordinary high-resolution PNGs.No photo crops,extracted photographic pixels,borrowed variants or unreadable lot/microtext.",
+  "sources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/CO2L/img-e356ce5a-d24c-4277-9b78-1a3f58c9dbe9.webp",
+      "sha256": "7c8de1751cf6ecc61ba6e3e86a4949d6ab14b168411f28f1a240b726acc8e6f8"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/CO2L/img-db400d57-6ac3-4d71-ad3d-e62e70a562b1.webp",
+      "sha256": "cf876becf9c41280a4cdd60eeae3dfcd06b92f48af691df64949c383335f9529"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/co2l/reference-redraw-front.png",
+      "sha256": "c014967d34d0301865164a312efdff80ef818d94250df26ac4d83189df988509",
+      "pixels": [
+        1020,
+        360
+      ],
+      "sizeMm": [
+        8.5,
+        3
+      ],
+      "positionMm": [
+        0,
+        -12,
+        0
+      ],
+      "face": "front",
+      "target": "Native front shell ink",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/co2l/reference-redraw-back.png",
+      "sha256": "924c737e622b237b930b5639b39a6950f976ecb3fb19b0d1276118d65010a044",
+      "pixels": [
+        1600,
+        2800
+      ],
+      "sizeMm": [
+        16,
+        28
+      ],
+      "positionMm": [
+        0,
+        7.2,
+        -7.84
+      ],
+      "face": "back",
+      "target": "Physical rear adhesive film",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    }
+  ],
+  "limitations": [
+    "Typeface,colors,icons,substrate dimensions and print registration are reconstructed from exact U104 photographs.",
+    "Front PNG is transparent lettering on the existing native shell;no invented front adhesive film.Back PNG prints on a physical film directly seated on native closed rear recess.",
+    "artwork:false removes only ink,retaining every physical shell,vent,PCB,package,protection membrane,connector and rear film.",
+    "Only final ordinary PNGs are distributed;source photos,vectors,generators,private table,private mappings and private links are excluded."
+  ],
+  "rights": "Product names,original printed designs and trademarks retain their respective rights."
+}

@@ -1,0 +1,76 @@
+{
+  "id": "chainbus",
+  "sku": "U212",
+  "kind": "source-vector-raster",
+  "status": "source-vector-raster",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Two exact own U212 outlined original body-label groups recovered and rasterized independently:front IN/OUT pin strips and rear ChainBus/EXT/IN/OUT diagram.Original outlined glyphs,palette,layout and cutouts retained;independent alpha-band bounds measured at576dpi.No retyping,photo pixels,preview enlargement,packaging or other-variant substitution.",
+  "recoveryScope": "Own U212 label-group alpha bounds and raster export only;no font replacement,palette changes or compound-path normalization required.",
+  "referenceCorrespondence": [
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1201/U212_main_pictures_06.webp",
+      "sha256": "a1f5dc135ab5dc3e54c44599b294647c8118660a58fa64fe2c2a0104c847614a"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1201/U212_main_pictures_07.webp",
+      "sha256": "7a62881502fdea9bd32d77fa4d3ccb5dc5e1032ce6cd52c8e4f12e6dbdb3eb42"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1201/U212_main_pictures_11.webp",
+      "sha256": "1048a4a2fc40083d3f35e09636611cf48e161e70db1511e15ce1eab99bad904e"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/chainbus/source-vector-front.png",
+      "sha256": "55fa2e31b37201fcea2ebe03de997952f0e2a87beab0534a3457fa40c071c546",
+      "pixels": [
+        723,
+        1005
+      ],
+      "sizeMm": [
+        7.232255469690606,
+        10.054343416975996
+      ],
+      "positionMm": [
+        0,
+        -3,
+        3.86
+      ],
+      "face": "front",
+      "target": "ChainBus independent physical front adhesive film on complete native housing",
+      "kind": "source-vector-raster",
+      "method": "printedArtwork"
+    },
+    {
+      "path": "src/units/chainbus/source-vector-back.png",
+      "sha256": "c4135f27816e1f58d0234e160309c97964330a8766bd8803a4090eb60858b289",
+      "pixels": [
+        2086,
+        1433
+      ],
+      "sizeMm": [
+        20.858883153436935,
+        14.331849168935081
+      ],
+      "positionMm": [
+        0,
+        -3.45,
+        -3.86
+      ],
+      "face": "back",
+      "target": "ChainBus independent physical back adhesive film on complete native housing",
+      "kind": "source-vector-raster",
+      "method": "printedArtwork"
+    }
+  ],
+  "limitations": [
+    "Adhesive thickness and print registration are own-photo appearance estimates.",
+    "Complete independent die-cut physical films and all housing/connector/PCB geometry remain with artwork:false in all three entry types.",
+    "Literal printed UART1/UART2 labels are preserved;the formal schematic reverses MCU UART/net numbering,which remains unresolved electrical documentation.",
+    "No source filenames,table/private mapping,URLs,vectors,generators or intermediates distributed."
+  ],
+  "rights": "Product names,original printed designs and trademarks retain respective rights.Only approved final ordinary rasters distributed."
+}

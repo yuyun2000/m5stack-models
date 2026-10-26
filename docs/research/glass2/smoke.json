@@ -1,0 +1,450 @@
+{
+  "checkedAt": "2026-10-26T15:04:46.613Z",
+  "status": "pass",
+  "scope": "Necessary local own U158-B drawing reconstruction/API only;no exact CAD,exhaustive browser,manufacturing fit,calibrated optics,controller64-rowmapping,I2C,address,supply,firmware or physical hardware proof.",
+  "meshes": 167,
+  "triangles": 25772,
+  "officialCadAvailable": false,
+  "sourceAssemblyTriangles": null,
+  "nominalMm": [
+    53,
+    42,
+    6
+  ],
+  "drawingReconstructionMm": [
+    42.04,
+    47,
+    6.35
+  ],
+  "visualEnvelope": {
+    "min": [
+      -21.020000457763672,
+      -23.5,
+      -3.182
+    ],
+    "max": [
+      21.020000457763672,
+      23.5,
+      3.175000000745058
+    ],
+    "size": [
+      42.040000915527344,
+      47,
+      6.357000000745058
+    ]
+  },
+  "glassMm": [
+    42.040000915527344,
+    27.219999313354492,
+    1.2499999999999998
+  ],
+  "visiblePixels": [
+    128,
+    56
+  ],
+  "visibleActiveMm": [
+    35.05,
+    15.32
+  ],
+  "controllerMemory": [
+    128,
+    64
+  ],
+  "unmappedRows": 8,
+  "pcbTopology": {
+    "edges": 14028,
+    "unpairedOrDirectedEdges": 0,
+    "signedVolumeMm3": 1011.5545008427886
+  },
+  "glassTopology": {
+    "edges": 18,
+    "unpairedOrDirectedEdges": 0,
+    "signedVolumeMm3": 1430.4109950675956
+  },
+  "coverTopology": {
+    "edges": 4638,
+    "unpairedOrDirectedEdges": 0,
+    "signedVolumeMm3": 309.5704623463434
+  },
+  "filmTopology": {
+    "edges": 4638,
+    "unpairedOrDirectedEdges": 0,
+    "signedVolumeMm3": 28.142769113594724
+  },
+  "foldTopology": {
+    "edges": 42,
+    "unpairedOrDirectedEdges": 0,
+    "signedVolumeMm3": 12.02159967007041
+  },
+  "returnFoldTopology": {
+    "edges": 1158,
+    "unpairedOrDirectedEdges": 0,
+    "signedVolumeMm3": 3.3923147460661753
+  },
+  "columnTopologies": [
+    {
+      "edges": 1536,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 44.63784469011287
+    },
+    {
+      "edges": 1536,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 44.63784469011287
+    }
+  ],
+  "screwHeadTopologies": [
+    {
+      "edges": 804,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 5.468012277145704
+    },
+    {
+      "edges": 804,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 5.468012277145704
+    }
+  ],
+  "padTopologies": [
+    {
+      "edges": 1536,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 0.10842558898662535
+    },
+    {
+      "edges": 1536,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 0.10842558898662535
+    },
+    {
+      "edges": 1536,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 0.10842558898662535
+    },
+    {
+      "edges": 1536,
+      "unpairedOrDirectedEdges": 0,
+      "signedVolumeMm3": 0.10842558898662535
+    }
+  ],
+  "mountingAxialRays": 10,
+  "mountingWallRays": 8,
+  "contactBoreWallRays": 32,
+  "windowWallRays": 4,
+  "minimumEarMaterialMm": 1.5,
+  "minimumWindowFrameMm": 2.5,
+  "transparentDisplayChecks": {
+    "glassVolume": true,
+    "glassTranslucent": true,
+    "offPixelAlpha": 0,
+    "onPixelAlpha": 1,
+    "lightBlueEmission": true,
+    "bothFrontSidePlanes": true,
+    "sharedExternalTexture": true,
+    "sourceBufferPreserved": true,
+    "opaqueBlackFallback": false,
+    "sourceRgbaAlphaHonored": true,
+    "noAutomaticContent": true,
+    "physicalGeometryUnchanged": true
+  },
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        11.5,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 16,
+      "purpose": "Real transparent glass volume fills the own board window;blank pixels retain see-through appearance"
+    },
+    {
+      "origin": [
+        18.3,
+        11.5,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 16,
+      "purpose": "Physical glass reaches the real window perimeter"
+    },
+    {
+      "origin": [
+        0,
+        11.5,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 13,
+      "purpose": "Rear view meets actual transparent glass,not an empty cutout or opaque printed sheet"
+    },
+    {
+      "origin": [
+        0,
+        -9,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Physical label film is seated on real fixed service cover"
+    },
+    {
+      "origin": [
+        -27,
+        -7.699999999999999,
+        0.625
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "maxDistance": 8,
+      "purpose": "Left actual Grove contact 1"
+    },
+    {
+      "origin": [
+        -27,
+        -9.7,
+        0.625
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "maxDistance": 8,
+      "purpose": "Left actual Grove contact 2"
+    },
+    {
+      "origin": [
+        -27,
+        -11.7,
+        0.625
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "maxDistance": 8,
+      "purpose": "Left actual Grove contact 3"
+    },
+    {
+      "origin": [
+        -27,
+        -13.7,
+        0.625
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "maxDistance": 8,
+      "purpose": "Left actual Grove contact 4"
+    },
+    {
+      "origin": [
+        27,
+        -13.7,
+        0.625
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "maxDistance": 8,
+      "purpose": "Right actual Grove contact 1"
+    },
+    {
+      "origin": [
+        27,
+        -11.7,
+        0.625
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "maxDistance": 8,
+      "purpose": "Right actual Grove contact 2"
+    },
+    {
+      "origin": [
+        27,
+        -9.7,
+        0.625
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "maxDistance": 8,
+      "purpose": "Right actual Grove contact 3"
+    },
+    {
+      "origin": [
+        27,
+        -7.699999999999999,
+        0.625
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "maxDistance": 8,
+      "purpose": "Right actual Grove contact 4"
+    },
+    {
+      "origin": [
+        -27,
+        -10.7,
+        0.425
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "maxDistance": 13,
+      "purpose": "Left open socket deep rear dielectric"
+    },
+    {
+      "origin": [
+        27,
+        -10.7,
+        0.425
+      ],
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "maxDistance": 13,
+      "purpose": "Right open socket deep rear dielectric"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Real transparent glass volume fills the own board window;blank pixels retain see-through appearance",
+      "hit": "Glass2 real42.04×27.22×1.25 transparent glass volume",
+      "distanceMm": 15.924999999999999
+    },
+    {
+      "purpose": "Physical glass reaches the real window perimeter",
+      "hit": "Glass2 real42.04×27.22×1.25 transparent glass volume",
+      "distanceMm": 15.924999999999999
+    },
+    {
+      "purpose": "Rear view meets actual transparent glass,not an empty cutout or opaque printed sheet",
+      "hit": "Glass2 real42.04×27.22×1.25 transparent glass volume",
+      "distanceMm": 12.825
+    },
+    {
+      "purpose": "Physical label film is seated on real fixed service cover",
+      "hit": "Glass2 physical front label film seated on service cover",
+      "distanceMm": 11.824999999254944
+    },
+    {
+      "purpose": "Left actual Grove contact 1",
+      "hit": "Glass2 grove actual metal contact 1",
+      "distanceMm": 7.350000095367431
+    },
+    {
+      "purpose": "Left actual Grove contact 2",
+      "hit": "Glass2 grove actual metal contact 2",
+      "distanceMm": 7.350000095367431
+    },
+    {
+      "purpose": "Left actual Grove contact 3",
+      "hit": "Glass2 grove actual metal contact 3",
+      "distanceMm": 7.350000095367431
+    },
+    {
+      "purpose": "Left actual Grove contact 4",
+      "hit": "Glass2 grove actual metal contact 4",
+      "distanceMm": 7.350000095367431
+    },
+    {
+      "purpose": "Right actual Grove contact 1",
+      "hit": "Glass2 grove-right actual metal contact 1",
+      "distanceMm": 7.350000095367431
+    },
+    {
+      "purpose": "Right actual Grove contact 2",
+      "hit": "Glass2 grove-right actual metal contact 2",
+      "distanceMm": 7.350000095367431
+    },
+    {
+      "purpose": "Right actual Grove contact 3",
+      "hit": "Glass2 grove-right actual metal contact 3",
+      "distanceMm": 7.350000095367431
+    },
+    {
+      "purpose": "Right actual Grove contact 4",
+      "hit": "Glass2 grove-right actual metal contact 4",
+      "distanceMm": 7.350000095367431
+    },
+    {
+      "purpose": "Left open socket deep rear dielectric",
+      "hit": "Glass2 grove deep rear wall",
+      "distanceMm": 11.950000011920928
+    },
+    {
+      "purpose": "Right open socket deep rear dielectric",
+      "hit": "Glass2 grove-right deep rear wall",
+      "distanceMm": 11.950000011920928
+    }
+  ],
+  "publicAPI": {
+    "exports": [
+      "Model",
+      "GroveModule",
+      "spec"
+    ],
+    "ports": [
+      "grove",
+      "grove-right"
+    ],
+    "displays": [
+      "screen"
+    ],
+    "controls": [],
+    "leds": [],
+    "joints": [],
+    "anchors": [],
+    "scope": "Visible128×56externalframebuffer and two independent mechanical ports only"
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 2,
+    "bodyPanels": 2,
+    "configurationChecks": 2,
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true
+  },
+  "nestedDualGrovePoseAttachDetach": "pass",
+  "noElectricalOrFramebufferEcho": "pass",
+  "disposedResources": 291
+}

@@ -1,0 +1,81 @@
+{
+  "sku": "U064",
+  "path": "Products/U064_Unit_Mini_Proto/Structures/Unit_Mini_Proto.stl",
+  "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/a240115c94b19ecf647f229c47fa9a8ce46ccdc4/Products/U064_Unit_Mini_Proto/Structures/Unit_Mini_Proto.stl",
+  "commit": "a240115c94b19ecf647f229c47fa9a8ce46ccdc4",
+  "gitBlob": "2bcae55eda7a55425f12f8e70304acff4ca770d5",
+  "sha256": "6134ca8952c9ef1ac33f89bc366c7442705d712bd2c80568da41679b36125b9a",
+  "bytes": 322284,
+  "triangles": 6444,
+  "min": [
+    385.2688293457031,
+    297.2234802246094,
+    -8
+  ],
+  "max": [
+    472.77886962890625,
+    329.2234802246094,
+    3.0964814046186007e-13
+  ],
+  "span": [
+    87.51004028320312,
+    32,
+    8.000000000000309
+  ],
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/a240115c94b19ecf647f229c47fa9a8ce46ccdc4/Products/U064_Unit_Mini_Proto/Structures/Unit_Mini_Proto.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/2bcae55eda7a55425f12f8e70304acff4ca770d5",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/a240115c94b19ecf647f229c47fa9a8ce46ccdc4/LICENSE",
+  "origin": [
+    397.2688293457031,
+    313.2234802246094,
+    -3.999999999999845
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "sourceAssemblyComponents": [
+    0
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "correspondingLaidOutComponent": 2,
+      "role": "front",
+      "name": "Mini Proto complete native front window frame",
+      "material": "shell",
+      "triangles": 1526
+    },
+    {
+      "component": 0,
+      "correspondingLaidOutComponent": 1,
+      "role": "rear",
+      "name": "Mini Proto complete native rear housing",
+      "material": "shell",
+      "triangles": 1696
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 3222,
+  "outputTriangles": 3222,
+  "localModification": null,
+  "notes": "Retain all original source0 faces at exact assembled coordinates under one common translation;front/rear merely grouped by cyclic directed vertex correspondence to own laid-out duplicates1/2.No patch,stretch,face deletion or independent shell repositioning."
+}

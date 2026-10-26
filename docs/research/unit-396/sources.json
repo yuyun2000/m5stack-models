@@ -1,0 +1,241 @@
+{
+  "id": "unit-396",
+  "sku": "U020",
+  "officialDocs": "https://docs.m5stack.com/en/unit/396port",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "queries": [
+      "Unit 3.96 U020 连接器 端子 PCB Grove 尺寸 配件 原理图 结构文件",
+      "Unit 3.96 U020 396port 原理图 引脚顺序 PCB HT3.96 母头 固定座"
+    ],
+    "rawResponseDistributed": false,
+    "result": "Own U020 product32×24×10.2mm,4pole3.96mm horizontal connector,HT3.96 female accessory and20cm Grove cable.Own drawing distinguishes24×32×8mm shell,total10.2mm and15.8mm fixed connector width.Own photos distinguish fixed shrouded male header from removable four-screw female plug;only rear sticker is evidenced.No own schematic returned;unrelated product schematics excluded."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/396port/396port_06.webp",
+    "sha256": "768f9d64c05c82fd92b4df68fc502219cd5b2685271d3be5e9ef1a261cbd057d"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/b4d8875bd504fed30242df78a1370703742941fb/Products/U020_Unit_3.96/Structures/Unit_3.96.stl",
+      "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/28a3f3af4bca78df00ff45d69baf158b9021ecae",
+      "commit": "b4d8875bd504fed30242df78a1370703742941fb",
+      "gitBlob": "28a3f3af4bca78df00ff45d69baf158b9021ecae",
+      "sha256": "ea899d2990f0fed24a21d96c1914de163477f0b5e0ffe6e9a5aeab5484d0db72",
+      "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/b4d8875bd504fed30242df78a1370703742941fb/Products/U020_Unit_3.96/Structures/Unit_3.96.stl",
+      "sha256": "ea899d2990f0fed24a21d96c1914de163477f0b5e0ffe6e9a5aeab5484d0db72"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/396port/396port_01.webp",
+      "sha256": "3aff7a8e34fb11d32a887a08efa789cca1ccdae152388d884d1213e98de292a7"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/396port/396port_02.webp",
+      "sha256": "74a663c9161817740d79c0a0a39e247c62f0ae00008d24221426be33068aa805"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/396port/396port_05.webp",
+      "sha256": "29a83e72fd794f274301544f33d33348fb79978a5531c27747e6dd641b520b08"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/396port/396port_06.webp",
+      "sha256": "768f9d64c05c82fd92b4df68fc502219cd5b2685271d3be5e9ef1a261cbd057d"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/797/U020-package.jpg",
+      "sha256": "b8ae938399355c5b680be7a3b234ed8c533a33b774840f6f03cc57e000d54bcb"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/797/U020_Model_Size.png",
+      "sha256": "8df10079b8eb0e13ac672facbc1d969b0630373a9af1d8dd8fb298b97e0caf9b"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "originalAssemblyTriangles": 3216,
+    "outputTriangles": 3216,
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      -529.268798828125,
+      225.22348022460938,
+      4
+    ],
+    "axes": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "scale": 1,
+    "localModification": null,
+    "notes": "Exact own U020 path-specific commit and expected Git blob verified. Component0 is the complete3216-triangle assembled front/rear shell,24×32×8mm. Components1/2 are displaced duplicate shell halves. Full assembled part retained unscaled/unmodified with a common translation and180degree Y rotation so the native orange-header opening faces+Z and closed rear label/M5 face-Z;no native faces removed,patched,filled or independently repositioned. Own drawing distinguishes8mm native casing and10.2mm including front-projecting fixed connector;no native shell resizing."
+  },
+  "dimensions": {
+    "nominalMm": [
+      32,
+      24,
+      10.2
+    ],
+    "vendorDimensionOrderMm": [
+      32,
+      24,
+      10.2
+    ],
+    "dimensionDrawingMm": [
+      24,
+      32,
+      10.2
+    ],
+    "cadEnvelopeMm": [
+      24,
+      32,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24,
+      32.000000190734866,
+      10.200000002980232
+    ],
+    "mountingHolesMm": [
+      [
+        -8,
+        -4
+      ],
+      [
+        8,
+        -4
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "grovePositionMm": [
+      0,
+      -15.8,
+      1.4
+    ],
+    "terminalPositionMm": [
+      0,
+      16,
+      3.6
+    ],
+    "fixedHeaderWidthMm": 15.8,
+    "terminalPitchMm": 3.96,
+    "suppliedPlugEstimatedEnvelopeMm": [
+      15.800000190734863,
+      17.349999904185534,
+      7.1999998688697815
+    ],
+    "plugDimensionsInferred": true,
+    "dimensionEvidence": "Own U020 drawing24×32mm,8mm casing,10.2mm total fixed-header depth,15.8mm connector width,Ø5 bores/16mm pitch;3.96mm pitch in official product table.Whole native assembly rigidly translated and180Y rotated,never scaled.Plug dimensions/insertion are own-photo reconstruction."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 1,
+    "sourceDetails": "docs/research/unit-396/artwork.json",
+    "originalsDistributed": false
+  },
+  "terminalPlug": {
+    "acceptingPortFamily": "ht3.96-4p",
+    "physicalConnector": "ht3.96-4p-female",
+    "defaultInstalled": false,
+    "joints": [
+      "screw-1",
+      "screw-2",
+      "screw-3",
+      "screw-4"
+    ],
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "continuous": false,
+    "limitsDeg": null,
+    "uiRangeDeg": [
+      -180,
+      180
+    ],
+    "source": {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/396port/396port_01.webp",
+      "sha256": "3aff7a8e34fb11d32a887a08efa789cca1ccdae152388d884d1213e98de292a7"
+    },
+    "scope": "Four independently externally driven screw-head angles only;UI preview is not mechanical stops.No axial tightening,clamp displacement,force,electrical routing or protocol behavior."
+  },
+  "scope": "Complete own native shell,passive PCB/retaining through-bore/clear mounting reliefs/four solder lands,actual deep Grove and separate fixed shrouded male four-pin header,retaining screw/one actual rear film and independently detachable own female screw plug with four actual head-angle joints.Appearance/external pose only;no internal electrical behavior.",
+  "inferred": [
+    "Passive PCB outline/plane and solder installation;no schematic-based routing claim",
+    "Header contact/cavity/latch/tail dimensions around own width/pitch/depth datum",
+    "Supplied female plug tongue,shoulder,wire entries,clamp cages and mating depths from own photos;not production fit",
+    "Screw-head envelope,rest angles and UI preview range;no mechanical tightening model",
+    "Grove contact/latch/carrier/tail and retaining screw installation",
+    "Rear adhesive dimensions/thickness,typeface/colors/print registration"
+  ],
+  "notes": [
+    "All3216 own selected native triangles retained,scale1,only displaced duplicates excluded.",
+    "Common180Y rotation aligns own source header/Grove openings+Z and closed rear/M5-Z;no local shell face changes.",
+    "Own8mm native casing and10.2mm fixed-header-inclusive envelope recorded separately.",
+    "Fixed male header and removable four-screw female plug remain distinct parts.",
+    "No exposed sensor,button,LED,display or active IC invented;numeric pin labels only.",
+    "One rear physical film touches closed native wall;no invented front print.",
+    "All physical attributes/index/matrixWorld invariant under artwork:false for both entry types with optional plug and head-angle configurations.",
+    "One exact U020 ordinary final reference-redraw PNG;raw photos,vectors,generators and private mappings excluded."
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/unit-396/TerminalPlug.js",
+      "sha256": "b4225204467803789f1d94de113331379b9c794bc9eef3d186488ab51c321acf"
+    },
+    {
+      "path": "src/units/unit-396/assembly.js",
+      "sha256": "4d8baad2d28a3798b805dfe9f7cf0793edad12fb29839d818822e2f5e9938e73"
+    },
+    {
+      "path": "src/units/unit-396/cad-map.json",
+      "sha256": "8bbc9fb6df0d78c03806e91f80d17f6658e0816075874b698878859d9d03a685"
+    },
+    {
+      "path": "src/units/unit-396/connectors.js",
+      "sha256": "67800c9bd36214d34da64ba275976dc8490410dde484b01b4be317f29b9787af"
+    },
+    {
+      "path": "src/units/unit-396/dimensions.js",
+      "sha256": "bd487348e19560d974db02be9afa097df481af3d126d2b9cc45d0dbdd1dc405b"
+    },
+    {
+      "path": "src/units/unit-396/geometry-data.js",
+      "sha256": "1e2427ece543a1c1d12cf25def78fa205099de7809e6873ef1a85ac011288c5a"
+    },
+    {
+      "path": "src/units/unit-396/index.js",
+      "sha256": "648340303ca06542bba495cec855a386fcc5a47842595dcf093585098ec3f93c"
+    },
+    {
+      "path": "src/units/unit-396/reference-redraw-back.png",
+      "sha256": "034b401d032cef422d85a43bf0d1821befe6a1781cc4f6bfb1aaade06363f32a"
+    },
+    {
+      "path": "src/units/unit-396/stickers.js",
+      "sha256": "02d5d9b2974413f526af1dbb11ecbbaab80faf3104d92f92d39f2e02acac3293"
+    }
+  ]
+}

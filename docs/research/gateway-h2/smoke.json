@@ -1,0 +1,347 @@
+{
+  "checkedAt": "2026-10-26T14:37:07.344Z",
+  "status": "pass",
+  "scope": "Necessary own U195 full3580 native triangles,source blob/commit/unscaled rigid translation,closed native shell/film seating versus explicit bare-PCB service configuration,true PCB and six plated through-bores/FrontSide/directed closure,annular USB cavity/real carrier/tongue,exact ESP32-H2-MINI-1 package and fixed PCB antenna,real Boot multi-source/cancel/cap-only0.15mm travel and exact return,all artwork attributes/index/world invariance,two configurations of nested four-core Grove pose/independent peer/resource disposal.No browser,USB/UART/download/boot-state/RF/network/electrical/firmware or production-fit acceptance.",
+  "meshes": 215,
+  "triangles": 86386,
+  "nativeTriangles": 3580,
+  "sourceAssemblyTriangles": 3580,
+  "nominalMm": [
+    48,
+    24,
+    8
+  ],
+  "dimensionDrawingMm": [
+    24,
+    48,
+    8
+  ],
+  "cadEnvelopeMm": [
+    24,
+    48,
+    7.999999761581421
+  ],
+  "visualEnvelopeMm": [
+    24,
+    48,
+    8.00000009536743
+  ],
+  "bareServiceEnvelopeMm": [
+    19.200000762939453,
+    43.6000002861023,
+    6.000000083446503
+  ],
+  "boreRays": 16,
+  "boreWalls": 48,
+  "pcbTopology": {
+    "edges": 5304,
+    "invalidEdges": 0,
+    "signedVolumeMm3": 490.4878066101423
+  },
+  "downloadTopologies": [
+    {
+      "barrel": {
+        "edges": 1152,
+        "invalidEdges": 0,
+        "signedVolumeMm3": 0.18484493877240213
+      },
+      "land": {
+        "edges": 1152,
+        "invalidEdges": 0,
+        "signedVolumeMm3": 0.08732416366405525
+      }
+    },
+    {
+      "barrel": {
+        "edges": 1152,
+        "invalidEdges": 0,
+        "signedVolumeMm3": 0.18484493877240213
+      },
+      "land": {
+        "edges": 1152,
+        "invalidEdges": 0,
+        "signedVolumeMm3": 0.08732416366405525
+      }
+    },
+    {
+      "barrel": {
+        "edges": 1152,
+        "invalidEdges": 0,
+        "signedVolumeMm3": 0.18484493877240213
+      },
+      "land": {
+        "edges": 1152,
+        "invalidEdges": 0,
+        "signedVolumeMm3": 0.08732416366405525
+      }
+    },
+    {
+      "barrel": {
+        "edges": 1152,
+        "invalidEdges": 0,
+        "signedVolumeMm3": 0.18484493877240213
+      },
+      "land": {
+        "edges": 1152,
+        "invalidEdges": 0,
+        "signedVolumeMm3": 0.08732416366405525
+      }
+    },
+    {
+      "barrel": {
+        "edges": 1152,
+        "invalidEdges": 0,
+        "signedVolumeMm3": 0.18484493877240213
+      },
+      "land": {
+        "edges": 1152,
+        "invalidEdges": 0,
+        "signedVolumeMm3": 0.08732416366405525
+      }
+    },
+    {
+      "barrel": {
+        "edges": 1152,
+        "invalidEdges": 0,
+        "signedVolumeMm3": 0.18484493877240213
+      },
+      "land": {
+        "edges": 1152,
+        "invalidEdges": 0,
+        "signedVolumeMm3": 0.08732416366405525
+      }
+    }
+  ],
+  "usbTopology": {
+    "edges": 4632,
+    "invalidEdges": 0,
+    "signedVolumeMm3": 50.39008827262497
+  },
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        7.65,
+        15
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 12,
+      "purpose": "Real front film directly seats on native closed label support"
+    },
+    {
+      "origin": [
+        0,
+        8,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Real back film directly seats on native closed rear label support"
+    },
+    {
+      "origin": [
+        0,
+        -34,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 18,
+      "purpose": "Grove deep recessed dielectric rear carrier"
+    },
+    {
+      "origin": [
+        -3,
+        -34,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Grove actual metal contact 1"
+    },
+    {
+      "origin": [
+        -1,
+        -34,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Grove actual metal contact 2"
+    },
+    {
+      "origin": [
+        1,
+        -34,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Grove actual metal contact 3"
+    },
+    {
+      "origin": [
+        3,
+        -34,
+        1.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Grove actual metal contact 4"
+    },
+    {
+      "origin": [
+        0,
+        -12,
+        -15
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 12,
+      "purpose": "Rear retaining recess includes actual shell screw head"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Real front film directly seats on native closed label support",
+      "hit": "Gateway H2 real front adhesive film on native label support",
+      "distanceMm": 11.119999994337558
+    },
+    {
+      "purpose": "Real back film directly seats on native closed rear label support",
+      "hit": "Gateway H2 real back adhesive film on native label support",
+      "distanceMm": 11.120000000111759
+    },
+    {
+      "purpose": "Grove deep recessed dielectric rear carrier",
+      "hit": "Gateway H2 Grove rear wall",
+      "distanceMm": 15.850000011920926
+    },
+    {
+      "purpose": "Grove actual metal contact 1",
+      "hit": "Gateway H2 Grove contact 1",
+      "distanceMm": 11.549999999999997
+    },
+    {
+      "purpose": "Grove actual metal contact 2",
+      "hit": "Gateway H2 Grove contact 2",
+      "distanceMm": 11.549999999999997
+    },
+    {
+      "purpose": "Grove actual metal contact 3",
+      "hit": "Gateway H2 Grove contact 3",
+      "distanceMm": 11.549999999999997
+    },
+    {
+      "purpose": "Grove actual metal contact 4",
+      "hit": "Gateway H2 Grove contact 4",
+      "distanceMm": 11.549999999999997
+    },
+    {
+      "purpose": "Rear retaining recess includes actual shell screw head",
+      "hit": "",
+      "distanceMm": 11
+    }
+  ],
+  "serviceChecks": [
+    {
+      "purpose": "USB actual central insulating tongue",
+      "hit": "Gateway H2 USB-C retained real insulating tongue",
+      "distanceMm": 1.599999952316285
+    },
+    {
+      "purpose": "USB deep dielectric rear carrier",
+      "hit": "Gateway H2 USB-C recessed dielectric rear carrier",
+      "distanceMm": 6.800000000000001
+    },
+    {
+      "purpose": "Bare-board actual accessible Boot actuator",
+      "hit": "Gateway H2 Boot physical round actuator",
+      "distanceMm": 14.799999997019768
+    }
+  ],
+  "publicAPI": {
+    "ports": [
+      "grove"
+    ],
+    "anchors": [],
+    "controls": [],
+    "leds": [],
+    "joints": [],
+    "accessoryExports": [],
+    "options": {
+      "shell": true
+    },
+    "service": {
+      "options": {
+        "shell": false
+      },
+      "ports": [
+        "grove",
+        "usb"
+      ],
+      "anchors": [
+        "download"
+      ],
+      "controls": [
+        "boot"
+      ],
+      "leds": [],
+      "joints": [],
+      "printed": 0,
+      "scope": "Explicit bare-PCB service appearance only,no casing/films/shell screws.Real Boot input intent,physical USB attachment,passive six-hole download anchor.No boot mode,reset,enumeration,programming,GPIO,RF,network,electrical or firmware behavior."
+    }
+  },
+  "artwork": {
+    "pngCount": 2,
+    "bodyPanels": 2,
+    "kind": "reference-redraw",
+    "configurationChecks": 4,
+    "physicalGeometryInvariant": true,
+    "disabledWithFalse": true,
+    "bareServicePrinted": 0
+  },
+  "bootMultiSourceReleaseCancel": "pass",
+  "nestedGroveAttachPoseDetach": "pass",
+  "poseNoEcho": "pass",
+  "disposal": [
+    {
+      "shell": true,
+      "resources": 277
+    },
+    {
+      "shell": false,
+      "resources": 264
+    }
+  ]
+}

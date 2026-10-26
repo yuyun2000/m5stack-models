@@ -1,0 +1,65 @@
+{
+  "id": "poe-cam-w-v11",
+  "sku": "U121-B-V11",
+  "kind": "official-photo-code-redraw",
+  "pngCount": 2,
+  "originalsDistributed": false,
+  "method": "Code redraw of readable exact-product photo07 front OV3660 badge and photo08 rear full information/pin label. No photo pixels/crops,packaging or wrong revision artwork. Lettering/typeface,logos/icons,registration,color and35µm film thickness are appearance estimates.",
+  "panels": [
+    {
+      "variant": "front",
+      "file": "src/units/poe-cam-w-v11/artwork/front.png",
+      "sha256": "04d782421e39e865309749abb411d868895ce13233b7edb9ee9ed8208841d574",
+      "pixels": [
+        648,
+        208
+      ],
+      "sizeMm": [
+        8.1,
+        2.6
+      ],
+      "densityDpi": 2032,
+      "surface": "Physical top-front OV3660 badge",
+      "kind": "official-photo-code-redraw"
+    },
+    {
+      "variant": "rear",
+      "file": "src/units/poe-cam-w-v11/artwork/rear.png",
+      "sha256": "8c53ec563aed0a1093572fb4908c1a7ab87c3bfe7e7c93e1190332ab929f7719",
+      "pixels": [
+        1456,
+        3760
+      ],
+      "sizeMm": [
+        18.2,
+        47
+      ],
+      "densityDpi": 2032,
+      "surface": "Physical rear information film below original3pin service slots",
+      "kind": "official-photo-code-redraw"
+    }
+  ],
+  "references": [
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/M5PoECAM-W%20V1.1/7.webp",
+      "sha256": "97685aed18c0be9f8b3eedddbbbb1be50811acd87b62a4a44d53fbf5b8861dc3"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/M5PoECAM-W%20V1.1/8.webp",
+      "sha256": "42153b796bbb404f085f937faa10c16ed6505870b97cbffce4258c8535862450"
+    }
+  ],
+  "geometry": "Two closed physical film supports remain with artwork:false. Rear film does not bridge header/RST/indicator service slots. Native M5 relief remains original CAD.",
+  "accessories": "No readable separate Stand/Brick artwork in own exact-product references;native geometry retained.",
+  "verification": "Final PNGs parsed/opened;metadata only safe numeric density. All physical attributes,index and matrixWorld match across2entries×3mount configurations without ink. No GPU/browser or production print-color acceptance.",
+  "runtimeAssetResolution": {
+    "method": "Explicit static per-panel new URL map for Vite asset analysis",
+    "panels": [
+      "front",
+      "rear"
+    ],
+    "sourcePngBytesUnchanged": true,
+    "verification": "Node dispatch of both panel URLs plus static literal paths checked;built asset emission is checked separately during integration."
+  },
+  "privacy": "Only final ordinary PNGs and safe public-source metadata;no originals,source vectors,tables,mapping,generators or intermediates distributed."
+}

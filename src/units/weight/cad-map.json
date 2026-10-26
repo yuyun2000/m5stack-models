@@ -1,0 +1,67 @@
+{
+  "sku": "U030",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/dbc93013098189c8c0995e7678347b75a369a366/Products/U030_Unit_Weight/Structures/Unit_Weight.stl",
+  "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/dbc93013098189c8c0995e7678347b75a369a366/Products/U030_Unit_Weight/Structures/Unit_Weight.stl",
+  "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/c02795519805df4ed432dd045eeac657b410f6dc",
+  "path": "Products/U030_Unit_Weight/Structures/Unit_Weight.stl",
+  "commit": "dbc93013098189c8c0995e7678347b75a369a366",
+  "lastChangedCommit": "dbc93013098189c8c0995e7678347b75a369a366",
+  "lastChangedAt": "2026-07-28T01:54:42Z",
+  "gitBlob": "c02795519805df4ed432dd045eeac657b410f6dc",
+  "sha256": "258895767cd805c4860265ba219fece24399a3b7e3aa1e76eb8863c54ce98d48",
+  "bytes": 321684,
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/dbc93013098189c8c0995e7678347b75a369a366/LICENSE",
+  "origin": [
+    -529.268798828125,
+    225.22348022460938,
+    4
+  ],
+  "axes": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ]
+  ],
+  "scale": 1,
+  "sourceAssemblyComponents": [
+    0
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "originalAssemblyTriangles": 3216,
+  "outputTriangles": 3216,
+  "localModification": null,
+  "parts": [
+    {
+      "component": 0,
+      "correspondingLaidOutComponent": 2,
+      "role": "front",
+      "name": "Weight complete native front housing",
+      "material": "shell",
+      "triangles": 1532
+    },
+    {
+      "component": 0,
+      "correspondingLaidOutComponent": 1,
+      "role": "rear",
+      "name": "Weight complete native rear housing",
+      "material": "shell",
+      "triangles": 1684
+    }
+  ],
+  "notes": "Exact own U030 source0 full3216 triangles retained under one common proper rotation/translation, scale1. Source0 faces partitioned only by directed cyclic correspondence to laid-out duplicates2(front1532)/1(rear1684), maximum deviation 0.00006103515625mm; no face repair/removal/fill, borrowed shell or independently repositioned native parts. Laid-out duplicate copies excluded. Source combined assembly has10 direction-balanced count4 mating edges; independent original front/rear material parts are closed count2, positive-volume shells. Not a manufacturing single-manifold assembly."
+}

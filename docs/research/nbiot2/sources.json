@@ -1,0 +1,329 @@
+{
+  "id": "nbiot2",
+  "sku": "U111-B",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_NBIoT2",
+  "retrievedAt": "2026-10-27",
+  "officialMCP": {
+    "query": "Unit NBIoT2 U111-B SIM7028 产品 尺寸 结构文件 按钮 指示灯 天线 Nano SIM 管脚",
+    "rawResponseSha256": "fce65abe682dfc5f7e8f6f97ceee260dcb628a3e8cd01604c9732bc0c8bc1048",
+    "rawResponseDistributed": false,
+    "result": "Exact U111-B SIM7028,NanoSIM,SMA and UARTGrove,71.5×24×8mm;own schematic packages/SIM7028 module sheet;no proven exterior button/LED path.Other NB-IoT variants excluded."
+  },
+  "reference": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20NB-IoT2%20(SIM7028)/6.webp",
+    "sha256": "4a176b3df1dd7f6bc7dfe64069a3621aaa6ac123c67affeaea9ba3ea594a5b20"
+  },
+  "referenceSources": [
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20NB-IoT2%20(SIM7028)/4.webp",
+      "sha256": "efcb400e54dcf76f1470b51a02a23be222c5fa77e1e91b242b1e38f2212b871a"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20NB-IoT2%20(SIM7028)/3.webp",
+      "sha256": "9348f8e58ec8785ae693c9373367b41df6eddff4d0378174eb69963a10e8441a"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/827/U111-B-package.jpg",
+      "sha256": "995a1bb321fbff1c755e7afeb1f5dbe6c21d30acc4b6e5dc6992fb10779d33db"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20NB-IoT2%20(SIM7028)/6.webp",
+      "sha256": "4a176b3df1dd7f6bc7dfe64069a3621aaa6ac123c67affeaea9ba3ea594a5b20"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20NB-IoT2%20(SIM7028)/7.webp",
+      "sha256": "88fb7ace2c56fa8c1194e57639f8fa3d7de07468af8fae03d4a1ca06975dfa5d"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20NB-IoT2%20(SIM7028)/9.webp",
+      "sha256": "ad078920c14cea897c9d4fd1368d7536f25a4dd4254d7bb0e297863042cde60c"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/593/Sch_UNIT-NB-IoT2_sch_01.png",
+      "sha256": "8b5fe2f09400cd887deb74ef15b6496aa5d868abe787fe3563ff4e69b860595e"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20NB-IoT2%20(SIM7028)/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+      "sha256": "55bcdffe8860434bd903595563dc2bacb98af3c54700bb1145fd916f4f196bd3"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20NB-IoT2%20(SIM7028)/SIM7028_%E4%BA%A7%E5%93%81%E8%A7%84%E6%A0%BC%E4%B9%A6_20211215.pdf",
+      "sha256": "2c2b2e43be7976593b212cc842f303ef40623913fdc39dcd962d2353d439a83c"
+    }
+  ],
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3/Products/U111-B_Unit_NBIoT2/Structures/Unit_NBIoT2.stl",
+      "recoveryUrl": "https://api.github.com/repos/m5stack/M5_Hardware/git/blobs/cd451d15e2d03f37e80e7db05bf7f82fa56a78ba",
+      "commit": "c6bf30a9848f1a8b4e4dd7537cceec5b147cafb3",
+      "gitBlob": "cd451d15e2d03f37e80e7db05bf7f82fa56a78ba",
+      "sha256": "6d93ea1962caf38864027accc041acb990a61e3360581aad16edf30ec294b17f",
+      "license": "MIT;preserve licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "originalAssemblyTriangles": 6592,
+    "outputTriangles": 6592,
+    "rearTriangles": 3858,
+    "frontTriangles": 2734,
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      0,
+      32,
+      -4
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1,
+    "localModification": null,
+    "nativeSeparation": {
+      "method": "One-to-one original component0 triangle matching to displaced duplicate halves after rigid X translation;centroid buckets plus cyclic winding-preserving full-vertex audit,tolerance2e-5mm",
+      "missingTriangles": 0,
+      "ambiguousTriangles": 0,
+      "coverageTriangles": 6592,
+      "maximumCorrespondenceVertexErrorMm": 4.827976226806641e-06,
+      "subsets": [
+        {
+          "subset": "rear",
+          "triangles": 3858,
+          "duplicateComponent": 1,
+          "duplicateToAssemblyTranslationMm": [
+            -43.99538803100586,
+            0,
+            0
+          ],
+          "sourceFaceOrderSha256": "23a9254b80e99552f05aee653497e79b6047e72593960d151195e8f600f1598c"
+        },
+        {
+          "subset": "front",
+          "triangles": 2734,
+          "duplicateComponent": 2,
+          "duplicateToAssemblyTranslationMm": [
+            -86.60041046142578,
+            0,
+            0
+          ],
+          "sourceFaceOrderSha256": "c492810dd94d08ea0c0a1dedf3b024173d032be7aeb5f1c164906704ff2d423d"
+        }
+      ],
+      "scope": "Every original component0 face classified one-to-one by cyclic winding-preserving vertex match to displaced own halves.Output uses original component0 vertices and retains both complete halves.Default assembled retains both halves;rearCover:false intentionally omits complete rear subset as service configuration.No source repairs or independent moves."
+    },
+    "notes": "Exact U111-B own official Structures path pinned to own path-specific commit and validated Git blob.Original component0 complete6592-triangle casing24×64×8 retained scale1/identity axes/common translation only.Components1/2 are displaced duplicate halves.Shared source bytes do not establish shared PCB,module,antenna,printing or behavior;runtime uses own SIM7028 and own supplied-antenna reconstruction."
+  },
+  "dimensions": {
+    "nominalMm": [
+      71.5,
+      24,
+      8
+    ],
+    "vendorDimensionOrderMm": [
+      71.5,
+      24,
+      8
+    ],
+    "dimensionDrawingMm": [
+      24,
+      71.5,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      64,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24,
+      71.5,
+      8.00000009536743
+    ],
+    "moduleBodyEnvelopeMm": [
+      17.600000381469727,
+      15.699999809265137,
+      2.29999999910593
+    ],
+    "standaloneAntennaEnvelopeMm": [
+      9.439999997317791,
+      105,
+      9.439999997317791
+    ],
+    "withAntennaEnvelopeMm": [
+      24,
+      171.5,
+      9.439999997317791
+    ],
+    "antennaDimensionsInferred": true,
+    "mountingHolesMm": [
+      [
+        -8,
+        -20
+      ],
+      [
+        8,
+        -20
+      ]
+    ],
+    "mountingHoleDiameterMm": 4.85,
+    "grovePositionMm": [
+      0,
+      -31.8,
+      1.4
+    ],
+    "smaPositionMm": [
+      0,
+      39.5,
+      0
+    ],
+    "drawingThreadedProjectionMm": 6.5,
+    "drawingProjectionNote": "Own partial threaded dimension distinguished from installed completeSMA nominal-length datum."
+  },
+  "module": {
+    "part": "SIM7028",
+    "bodyMm": [
+      17.6,
+      15.7,
+      2.3
+    ],
+    "castellations": 42,
+    "sides": {
+      "left": 9,
+      "right": 9,
+      "top": 12,
+      "bottom": 12
+    },
+    "pitchInferredMm": 1.1,
+    "substrateThicknessInferredMm": 0.6,
+    "evidence": "Product-linked SIM7028 brochure exact body and front/back module photograph;42physical edge terminals in12/12/9/9 pattern.Pitch/drill/plating/installed pose inferred;no electrical pin map."
+  },
+  "service": {
+    "defaultRearCover": true,
+    "option": {
+      "rearCover": false
+    },
+    "retainedFrontFaces": 2734,
+    "removedRearFaces": 3858,
+    "removedFixings": 3,
+    "anchor": "sim",
+    "socketOnly": true,
+    "simCardIncluded": false,
+    "holderPartUnconfirmed": true
+  },
+  "antenna": {
+    "estimatedOverallLengthMm": 105,
+    "estimatedCrossSectionMm": [
+      9.44,
+      9.44
+    ],
+    "mechanicalConnector": "sma-male",
+    "mate": "sma-female",
+    "pivotMm": [
+      0,
+      12,
+      0
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "visualRangeDeg": [
+      0,
+      90
+    ],
+    "productionStopsVerified": false,
+    "dimensionsInferred": true,
+    "evidence": "Exact own U111-B hero round rod,side-axis dimple/fork segmentation and approximate parallel-axis size comparison;no production dimension/stop/bent-pose claim."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "pngCount": 2,
+    "sourceDetails": "docs/research/nbiot2/artwork.json",
+    "originalsDistributed": false
+  },
+  "officialDocumentationFeedback": {
+    "feedback_id": "8835048c2d544bc19516a233746ee788",
+    "accepted": true,
+    "category": "missing_documentation",
+    "severity": "low",
+    "issue": "Exact U111-B installed populated PCB/NanoSIM/SMA/D1 exterior optical path and own supplied antenna mechanical drawing;hidden installation and antenna envelope/axis/range remain inferred."
+  },
+  "scope": "Own complete native case,exact SIM7028 module body/42physicalLCC terminals,reconstructed populated carrier/internal NanoSIM/SMA/Grove/threefixings/twofilms,service-only passiveSIM anchor and detachable own approximate roundantenna.Externally driven pose/finite elbow only.",
+  "inferred": [
+    "Hidden carrier/component/SIM/E1/coax/SMA installation and package/slot/contact/plating dimensions",
+    "LCC pitch and hole/land/substrate/shield geometry,exact installed orientation",
+    "NanoSIM socket part/retaining mechanism and service access;no card included",
+    "Own antenna approx105mm/coupling/round profile/fork/side-axis/0–90visual range,not rated dimensions/stops",
+    "Photo-redrawn fonts/colors/line work/film dimensions/registration"
+  ],
+  "notes": [
+    "Exact own pinned path/commit/blob;all6592 originalsourcefaces retained in proven3858rear/2734front groups,one common transform.",
+    "Service intentionally omits complete actualrear subset/3fixings/backfilm;no closed-shell sim anchor.",
+    "SIM7028 own brochure17.6×15.7×2.3 and42LCC;no other radio/module or SIMcard borrowed.",
+    "Top small windows expose actual goldSMA hardware;D1 only internal fixed/nonemissive.No userbutton/exteriorLED/sensor/display/bodyjoint.",
+    "Own round antenna dimensions and visual motion explicitly inferred;no borrowed otherSKU length/profile.",
+    "Two final exact-model own-photo code-redrawPNG;staticURL literals,all private/raw/intermediate sources excluded.",
+    "No cellular/AT/Uart/SIMdata/USB/RF/network/power/electrical/firmware behavior."
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/nbiot2/Antenna.js",
+      "sha256": "a97d0542bed5bcfd390efb754fda53938afdfabb273e55cf167de344b33f78bd"
+    },
+    {
+      "path": "src/units/nbiot2/assembly.js",
+      "sha256": "a2b2f3b00305683d9a8a358e7263d8c7addf58f54bbbc1107e94ab8b2e944e68"
+    },
+    {
+      "path": "src/units/nbiot2/cad-map.json",
+      "sha256": "1b926eb5f99ef48ed1c21435ab75a9914dd9f8d7f17a6c5b3d648fab208e87d3"
+    },
+    {
+      "path": "src/units/nbiot2/connectors.js",
+      "sha256": "b2f891754c9ddb434494cc6aae0519b22a6748dce8a86846a51d2f224c347ff0"
+    },
+    {
+      "path": "src/units/nbiot2/dimensions.js",
+      "sha256": "899d5a14bc3483b3dd56761949eee9ea7f5d341794fbe657dddc901aa6972dd6"
+    },
+    {
+      "path": "src/units/nbiot2/geometry-data.js",
+      "sha256": "17a44c20b5ca85a2db81a41c5f4f09c7b7960ffda643b93a10e86beb9947e0f3"
+    },
+    {
+      "path": "src/units/nbiot2/index.js",
+      "sha256": "55dc6591f0c69479dbc7b5f7cff7b18d1dbf3030c482a554c575be4694cd45c1"
+    },
+    {
+      "path": "src/units/nbiot2/reference-redraw-back.png",
+      "sha256": "f748e5795ee925b9625b897f57caf4226ee24120a84ae0738b21d86b4b89214f"
+    },
+    {
+      "path": "src/units/nbiot2/reference-redraw-front.png",
+      "sha256": "b86445242f81a67413eb82788ff057dfd29bf2af11518ee9da0a78a7b2490c8a"
+    },
+    {
+      "path": "src/units/nbiot2/stickers.js",
+      "sha256": "a17ab9f001e7943c8b69a8ef10fc505deff658e1308929fb9e340568b44b61c5"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "finger",
+  "sku": "U008",
+  "kind": "reference-redraw",
+  "status": "reference-redraw",
+  "pngCount": 1,
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Readable exact U008 rear FINGER/generic printed fingerprint icon/FPC1020A/PORT.C.UART/TXD/RXD/5V/GND reconstructed in code,rasterized to final ordinary high-resolution PNG.No photo crop,photographic pixels,borrowed labels or unreadable microtext.",
+  "sources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/finger/finger_02.webp",
+      "sha256": "3712a2967515940d2124e64a29ce9869638e1e54876ed4d1c239c5bac7370947"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/finger/reference-redraw-back.png",
+      "sha256": "565f0f8cfe38539733df372a52b6648f52da7fa1ca8b80f34b7e98af84807834",
+      "pixels": [
+        1600,
+        2800
+      ],
+      "sizeMm": [
+        16,
+        28
+      ],
+      "positionMm": [
+        0,
+        7.2,
+        -3.84
+      ],
+      "face": "back",
+      "target": "Finger physical rear adhesive film",
+      "kind": "reference-redraw",
+      "method": "printedArtwork"
+    }
+  ],
+  "limitations": [
+    "The generic ink fingerprint icon is a reconstruction of the physical product label;it contains no user biometric image,template or identity.",
+    "Typeface,ridge curves,colors,film dimensions and registration are reference-derived.",
+    "No front label invented;the front acquisition plate and metal bezel are physical geometry.",
+    "artwork:false removes rear ink only;physical film,case,capacitive face,PCB,package and connector remain identical.",
+    "Only final ordinary PNG is distributed;private table,links,mappings,source vectors,photos,generator and intermediates remain outside Git."
+  ],
+  "rights": "Product names,original printed designs and trademarks retain their respective rights."
+}
