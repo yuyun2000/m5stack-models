@@ -1,0 +1,107 @@
+{
+  "checkedAt": "2026-10-26T09:14:48.860Z",
+  "status": "pass",
+  "scope": "Necessary local finite geometry, complete source shell, native/PCB bores with FrontSide walls, real ten-pin bent male IO and visible STM32/PCB behind top mouth, open Grove backing, passive anchor/no invented LED or control, typed IO rejecting Grove, four-wire nested pose/attach/detach/disposal, rear print projection and artwork:false physical invariance only; no browser/full historical/production-fit/electrical or hardware validation.",
+  "meshes": 151,
+  "triangles": 15258,
+  "nativeTriangleCount": 3500,
+  "nominalMm": [
+    24,
+    32,
+    10.2
+  ],
+  "cadEnvelopeMm": [
+    24,
+    32,
+    10.199999809265137
+  ],
+  "visualEnvelopeMm": [
+    24,
+    32,
+    10.199999809265137
+  ],
+  "mountingRays": 10,
+  "frontSideWalls": 68,
+  "ioBoreRays": 10,
+  "closureChecks": [
+    {
+      "origin": [
+        1.1,
+        30,
+        -0.55
+      ],
+      "direction": [
+        0,
+        -1,
+        0.015
+      ],
+      "maxDistance": 25,
+      "purpose": "Native top IO opening has real STM32/PCB visible below pin carrier, not a dark face"
+    },
+    {
+      "origin": [
+        0,
+        30,
+        2.31
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 22,
+      "purpose": "Native top opening backed by 10-pin molded carrier behind contacts"
+    },
+    {
+      "origin": [
+        0,
+        -30,
+        0.3
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 23,
+      "purpose": "Open Grove ends at actual rear wall/contact backing"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Native top IO opening has real STM32/PCB visible below pin carrier, not a dark face",
+      "hit": "STM32F030F4P6 TSSOP20 molded body",
+      "distanceMm": 23.752671724723935
+    },
+    {
+      "purpose": "Native top opening backed by 10-pin molded carrier behind contacts",
+      "hit": "P2 complete 2×5 molded pin carrier",
+      "distanceMm": 17.999999952316283
+    },
+    {
+      "purpose": "Open Grove ends at actual rear wall/contact backing",
+      "hit": "Grove rear wall",
+      "distanceMm": 19.950000011920928
+    }
+  ],
+  "ports": [
+    "grove: grove",
+    "io: header-2x5-2.54mm-male"
+  ],
+  "externalLeds": [],
+  "controls": [],
+  "sensor": "Passive geometry anchor only",
+  "groveAttachPoseNestedDetach": "pass",
+  "disposedResources": 198,
+  "disposeEvents": 344,
+  "artwork": {
+    "panels": 1,
+    "kind": "reference-redraw",
+    "disable": "artwork:false",
+    "physicalGeometryUnchanged": true,
+    "files": [
+      "reference-redraw-back.png: 3130×2342"
+    ],
+    "source": "Exact U011-B official extio2_05.webp; front is plain white and has no sticker"
+  }
+}

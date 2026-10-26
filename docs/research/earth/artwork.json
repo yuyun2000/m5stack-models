@@ -1,0 +1,75 @@
+{
+  "id": "earth",
+  "sku": "U019",
+  "kind": "source-vector-raster",
+  "originalsDistributed": false,
+  "pngCount": 2,
+  "defaultPanels": 1,
+  "variants": [
+    "standard",
+    "education-cn"
+  ],
+  "method": "Exact supplied vector glyph/shape contours rasterized at high resolution; converter lost all fill paints and visibility, restored using official exact-model standard photo and supplied Chinese preview. Both title paths already exist in supplied vector. No product-photo crop or raster-preview upscaling.",
+  "standardReference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/earth/earth_02.webp",
+    "sha256": "3ed457d5fdea8622f33bc324298b592caac3eb653ec431d672372a7ebb3e4612"
+  },
+  "assets": [
+    {
+      "path": "src/units/earth/source-vector-back.png",
+      "sha256": "9d0173efc4a515981e521f7537612352a0f6e310e5475b0e4cb657b477d5b725",
+      "pixels": [
+        2400,
+        1800
+      ],
+      "kind": "source-vector-raster",
+      "variant": "standard",
+      "default": true,
+      "sizeMm": [
+        16,
+        12
+      ],
+      "positionMm": [
+        0,
+        -8.15,
+        -4
+      ],
+      "face": "back",
+      "method": "printedArtwork",
+      "target": "Earth complete native assembled shell"
+    },
+    {
+      "path": "src/units/earth/education-cn-back.png",
+      "sha256": "8233710041a4e755b23f6b94aba2c8da3cbb20c565c9982de6a6b87a948ad02e",
+      "pixels": [
+        2400,
+        1800
+      ],
+      "kind": "source-vector-raster",
+      "variant": "education-cn",
+      "default": false,
+      "sizeMm": [
+        16,
+        12
+      ],
+      "positionMm": [
+        0,
+        -8.15,
+        -4
+      ],
+      "face": "back",
+      "method": "printedArtwork",
+      "target": "Earth complete native assembled shell"
+    }
+  ],
+  "unprintedSurfaces": [
+    "front white shell",
+    "blue adjustment body/head",
+    "exposed twin-tine electrode PCB"
+  ],
+  "limits": [
+    "Paint colors and selected visible title restored from matching references, not a byte-identical unmodified source export.",
+    "Physical registration uses the unchanged native rear recess; no exhaustive browser pixel acceptance."
+  ],
+  "rights": "Original M5Stack printed designs, product names and marks retain respective rights."
+}

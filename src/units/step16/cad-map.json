@@ -1,0 +1,60 @@
+{
+  "sku": "U198",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U198_Unit_Step16/Structures/Unit_Step16.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "93269e6139be39823bafb4c4098d6c030bdba299",
+  "sha256": "12003d0b0e6270a5b6efadc314caae921e53f4676ed7eea241e8a7b9dcbe5b3c",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/LICENSE",
+  "origin": [
+    11.013000875711441,
+    14.01300024986267,
+    -2.799999952316284
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 1,
+      "name": "Step16 complete native rear shell",
+      "material": "shell"
+    },
+    {
+      "component": 2,
+      "name": "Step16 complete native front shell",
+      "material": "shell"
+    },
+    {
+      "component": 4,
+      "name": "Step16 complete native moving rotary cap",
+      "material": "cap"
+    },
+    {
+      "component": 6,
+      "name": "Step16 complete native RGB light guide",
+      "material": "lens"
+    }
+  ],
+  "excludedComponents": [
+    0,
+    3,
+    5,
+    7
+  ],
+  "notes": "Same assembled coordinates for rear, front, cap and RGB light guide; one common rigid translation, scale 1. Other four components are displaced duplicates. No source shell cuts, hole fills or independently registered parts. Cap alone is adopted by external rotation joint about its native circular base centre."
+}

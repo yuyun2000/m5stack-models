@@ -1,0 +1,83 @@
+{
+  "checkedAt": "2026-10-26T08:25:24.172Z",
+  "status": "pass",
+  "scope": "Necessary local finite assembly, original-shell retention, clear mounting bores and FrontSide walls, PCB contact/fastener-hole walls, aperture backing, built-in generic cell/metal support presence, passive anchor, Grove four-wire pose/detach/disposal smoke. No browser, hardware, battery BOM, replaceability, production fit, time/calendar or electrical behavior verification.",
+  "meshes": 88,
+  "triangles": 8406,
+  "nominalMm": [
+    24,
+    48,
+    8
+  ],
+  "visualEnvelopeMm": [
+    24,
+    48,
+    8.000000095367431
+  ],
+  "cadEnvelopeMm": [
+    24,
+    48,
+    8
+  ],
+  "mountingRays": 10,
+  "frontSideWalls": 20,
+  "cell": {
+    "model": null,
+    "removable": false,
+    "inferredDiameterMm": 12.5,
+    "inferredThicknessMm": 2,
+    "metalSupportSolids": 4
+  },
+  "leds": 0,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        -40,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 22.1,
+      "purpose": "Grove mouth ends at real recessed connector rear wall"
+    },
+    {
+      "origin": [
+        7,
+        30,
+        0
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 9.1,
+      "purpose": "Original shell-release opening remains open with actual recessed PCB behind it"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Grove mouth ends at real recessed connector rear wall",
+      "hit": "Grove rear wall",
+      "distanceMm": 21.95000001192093
+    },
+    {
+      "purpose": "Original shell-release opening remains open with actual recessed PCB behind it",
+      "hit": "RTC physical PCB with open mounting and Grove relief",
+      "distanceMm": 8.200000357627864
+    }
+  ],
+  "grovePins": [
+    "GND",
+    "5V",
+    "SDA",
+    "SCL"
+  ],
+  "groveAttachPoseNestedDetach": "pass",
+  "disposedResources": 131,
+  "disposeEvents": 214
+}

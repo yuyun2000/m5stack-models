@@ -1,0 +1,92 @@
+{
+  "id": "mini-imu",
+  "sku": "U095",
+  "retrievedAt": "2026-10-26",
+  "kind": "reference-redraw",
+  "originalsDistributed": false,
+  "method": "New text and shapes drawn from exact official U095 product photographs; no photographic pixels, private vector or production original distributed.",
+  "sources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/imu/imu_02.webp",
+      "sha256": "676ba02828fac1fc2681641718fdff7a8d08560b82ecc3bf029fd6ad35a623fc"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/imu/imu_08.webp",
+      "sha256": "c08f1adbef3a9efa86c3b3e5eff639db682e5023e8c73798e17183cff48db8df"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/imu/imu_09.webp",
+      "sha256": "75acf0ae5d20e1ce24e0240d2297ab6a3a10823f1b6e8e0a21e16702250393e3"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/mini-imu/reference-redraw-front.png",
+      "sha256": "0358b4be273734133513c12211374a03f804aebdff56662834f13d1ae291b23a",
+      "pixels": [
+        2160,
+        480
+      ],
+      "sizeMm": [
+        18,
+        4
+      ],
+      "positionMm": [
+        0,
+        7.1,
+        3.8
+      ],
+      "face": "front",
+      "method": "printedArtwork",
+      "target": "Mini IMU complete native assembled shell"
+    },
+    {
+      "path": "src/units/mini-imu/reference-redraw-axes.png",
+      "sha256": "782b63744f03fc0c4ee586032d63bd24f2c89be970cce4b480a4548fed40b727",
+      "pixels": [
+        720,
+        720
+      ],
+      "sizeMm": [
+        6,
+        6
+      ],
+      "positionMm": [
+        0,
+        0,
+        4
+      ],
+      "face": "front",
+      "method": "printedArtwork",
+      "target": "Mini IMU complete native assembled shell"
+    },
+    {
+      "path": "src/units/mini-imu/reference-redraw-back.png",
+      "sha256": "20fcb984f0241bdcae2c0ec38a5c071279c1c28c819d8c210fe7d58f19f8a701",
+      "pixels": [
+        1968,
+        540
+      ],
+      "sizeMm": [
+        16.4,
+        4.5
+      ],
+      "positionMm": [
+        0,
+        7.1,
+        -3.8
+      ],
+      "face": "back",
+      "method": "printedArtwork",
+      "target": "Mini IMU complete native assembled shell"
+    }
+  ],
+  "coverage": "Front IMU/MPU6886 label, front XYZ axis circle and rear PORT.A/I2C SCL/SDA/5V/GND label.",
+  "remainingKnownPrintedFaces": [],
+  "limits": [
+    "Colour, typography and registration are photo/native-recess estimates, not production-print measurements.",
+    "Molded maker mark remains original shell geometry. No concealed package stamp or unknown legend invented.",
+    "No exhaustive browser pixel verification."
+  ],
+  "rights": "M5Stack original printed designs and product marks retain their respective rights."
+}

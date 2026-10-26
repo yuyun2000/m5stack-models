@@ -1,0 +1,153 @@
+{
+  "product": "Unit ACSSR",
+  "sku": "U139",
+  "retrievedAt": "2026-10-26",
+  "officialDocs": "https://docs.m5stack.com/en/unit/acssr",
+  "officialMCP": {
+    "queries": [
+      "Unit ACSSR U139 尺寸 接口 按键 LED 外观",
+      "Unit ACSSR U139 电源 PWR LED LED1 LED2 SK6812 指示灯",
+      "Unit ACSSR U139 DELIXI CDG1-1DA 机械尺寸 SSR 本体 装配 CAD 按键 行程"
+    ],
+    "rawResponseDistributed": false,
+    "confirmed": [
+      "Kit nominal 80×45×31 mm; controller drawing 45×18.7×11.5 mm.",
+      "S1 button, LED1 SK6812, D4 red 0603 power LED, red SSR indicator, Grove I2C and parallel 4P RS485PWR.",
+      "Bundled SSR is semiconductor solid-state; no mechanical armature."
+    ],
+    "feedback": {
+      "feedback_id": "f18f5b11d40847f78e7e950a583a548e",
+      "category": "missing_documentation",
+      "scope": "Full U139 kit/SSR installed production assembly dimensions and actual tongue travel absent; controller-only STL preserved without scaling."
+    }
+  },
+  "officialCad": {
+    "sku": "U139",
+    "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U139_Unit_ACSSR/Structures/Unit_ACSSR.stl",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "gitBlob": "31f129577fba098c07f6f2b1c5d550ae0f546b51",
+    "sha256": "7f1ddd4aca945b9f7088e40dff520884e70299f138f63b43e679dac4886b3d36",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/LICENSE",
+    "origin": [
+      8.93600082397461,
+      0,
+      9.600000381469727
+    ],
+    "axes": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "parts": [
+      {
+        "component": 0,
+        "name": "ACSSR complete native controller shell with integral button tongue",
+        "material": "shell"
+      }
+    ],
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "notes": "Component 0 is the assembled complete controller enclosure (2654 triangles = displaced components 1+2). One rigid -90 degree Z rotation and translation; no scaling/cuts/fills. Source covers only the controller (44.94 x 18.74 x 11.5 mm), not the 80 x 45 x 31 mm kit. SSR body and installed controller-to-SSR transform are photo/dimension-constrained reconstructions. Original integral tongue flexes only during external button actuation; exact rest vertices and normals restored."
+  },
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/acssr/acssr_01.webp",
+      "sha256": "ae8acf1c06a7455ab27b4066439663f27c5d84f5b07a0c03b6cf2b01f8d3c2f2"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/acssr/acssr_02.webp",
+      "sha256": "d937828f08861c5d379366519e4f79a89841166b7b2897fc6e9a01ef57db5eea"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/acssr/acssr_03.webp",
+      "sha256": "196ab036ca459cd850726908f5aa5f650fd56d1ab10b31f91fe534b81aad3fda"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/acssr/acssr_04.webp",
+      "sha256": "5d0d3fccf781348bc3c582c8576f8f27f6d6b4485aba60cc3cf9398ceab7bf35"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/acssr/acssr_05.webp",
+      "sha256": "250a6c13bf847169684bf3e473163dba62468e5ac90f9b10d2a7fb002cec0897"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/acssr/acssr_06.webp",
+      "sha256": "e9cc0f8bd61ebe5f6ccfc1eec986c81c5fcadff17a4c5137deeeccdf2cf68494"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/acssr/acssr_07.webp",
+      "sha256": "ef43d8b496b1c318f66bdc9c871f8c127695f34e48e5d88dfcc85ae5dff82433"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/acssr/acssr_08.webp",
+      "sha256": "51b0daafc860d51cda4a21ead9a820a1dc7b3535f43b519e0b27de42d5f7c309"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/acssr/acssr_09.webp",
+      "sha256": "b806c18929928e506341262b7970a70cbd58058893abc3434171cc91381c469a"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/786/U139_Model_Size.png",
+      "sha256": "73c94732b217e29d79280cc83eda480def5f822602a28b55839dcfffa3600a63"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/598/Sch_UNIT_ACSSR.pdf",
+      "sha256": "964a8b6149a2b559bbfa001c10a8001c14f1b62ad95ca27820ed51f862632f11"
+    }
+  ],
+  "inferences": [
+    "SSR body, thermal base, four clamp cages/guards/terminal wells and installed controller/SSR datum reconstructed against exact U139 photographs and nominal kit dimensions.",
+    "PCB outline/components, switch installed package, fork lugs, internal download socket and recessed 4P fixed/plug envelopes are inferred appearance dimensions.",
+    "Native integral tongue free-end travel 0.22 mm is inferred; original neutral vertices and normals are exactly restored.",
+    "Controller rear PWR optical guide placement is inferred; original CAD shell is not drilled or cut.",
+    "Two exact-model reference PNG redraws: small SSR QR/serial omitted; logo/certification/bulb outlines approximated."
+  ],
+  "artwork": {
+    "kind": "reference-redraw",
+    "tableExactMatch": false,
+    "originalsDistributed": false,
+    "sourcePhotos": [
+      {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/acssr/acssr_04.webp",
+        "sha256": "5d0d3fccf781348bc3c582c8576f8f27f6d6b4485aba60cc3cf9398ceab7bf35"
+      },
+      {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/acssr/acssr_05.webp",
+        "sha256": "250a6c13bf847169684bf3e473163dba62468e5ac90f9b10d2a7fb002cec0897"
+      },
+      {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/acssr/acssr_07.webp",
+        "sha256": "ef43d8b496b1c318f66bdc9c871f8c127695f34e48e5d88dfcc85ae5dff82433"
+      }
+    ],
+    "finalPngs": [
+      {
+        "path": "src/units/acssr/reference-redraw-controller-back.png",
+        "sha256": "d7aa89f3294b5cc204d48f242689d9da1828adf7958842666ca0b790bc018bff"
+      },
+      {
+        "path": "src/units/acssr/reference-redraw-ssr.png",
+        "sha256": "33abafdc87b5a15d0e32cfc973db0476e37d49887e9b980b5f2b28a9b32715a7"
+      }
+    ],
+    "unresolved": [
+      "SSR QR/serial unreadable and omitted; logo/certification/bulb outlines approximated."
+    ],
+    "physicalInvariant": "artwork:false changes no physical geometry"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U024-V2_Unit_Joystick2/Structures/Unit_Joystick2.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "429ac18dcc4e6f4a41e1ed6ad55a51562b872804",
+  "sha256": "5c234a2cfb178d27e541abc9085c8d62d850e0de0c87d73e197155fcfd36783c",
+  "origin": [
+    20.71292781829834,
+    20.965023070573807,
+    -19.950000762939453
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "Joystick2 native rear shell",
+      "material": "shell"
+    },
+    {
+      "component": 3,
+      "name": "Joystick2 native front shell",
+      "material": "shell"
+    },
+    {
+      "component": 4,
+      "name": "Joystick2 native moving thumb cap",
+      "material": "cap"
+    },
+    {
+      "component": 6,
+      "name": "Joystick2 native RGB light pipe",
+      "material": "diffuser"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2,
+    5,
+    7
+  ],
+  "notes": "Retain native assembled rear/front, cap and light-pipe pair with one shared translation. The other four components are laterally displaced duplicates. No shell scaling, cuts or independent re-alignment. Native body envelope is 13 mm deep, compared with 12 mm body in drawing; full cap-to-rear envelope is 23.87865 mm versus nominal 23.9 mm. Keep source geometry unchanged."
+}

@@ -1,0 +1,59 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U177_Unit_Mini_Scales/Structures/Unit_Mini_Scales.stl",
+  "gitBlob": "46d1d5e70d7f6e8350e29ebc16d45444cac5c03a",
+  "origin": [
+    0,
+    0,
+    9
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "Mini Scales native weighing platform",
+      "material": "shell",
+      "offsetX": 0
+    },
+    {
+      "component": 3,
+      "name": "Mini Scales native lower housing",
+      "material": "shell",
+      "offsetX": 0
+    },
+    {
+      "component": 5,
+      "name": "Mini Scales native inner carrier and button",
+      "material": "shell",
+      "offsetX": 72.2637767791748
+    },
+    {
+      "component": 6,
+      "name": "Mini Scales stainless U load cell",
+      "material": "metal",
+      "offsetX": 104.9271240234375
+    },
+    {
+      "component": 6,
+      "name": "Mini Scales load-cell bonded strain cover",
+      "material": "strain",
+      "offsetX": 104.9271240234375
+    }
+  ],
+  "notes": "The native assembly is components 0/3/4. Component 4 is the welded union of the separately laid-out carrier (5) and load cell (6); reconstruct these two in their exact assembly coordinates so stainless steel and the strain cover receive independent materials. Components 1 and 2 are displaced duplicate plastic parts. No part is uniformly rescaled. +Y is the button end; Grove points -Y; +Z is the weighing platform."
+}

@@ -1,0 +1,132 @@
+{
+  "id": "pahub-v21",
+  "product": "PaHUB v2.1",
+  "sku": "U040-B-V21",
+  "retrievedAt": "2026-10-26",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit-PaHub%20v2.1",
+  "officialMcp": "knowledge_search: Unit PaHUB v2.1 U040-B-V21 dimensions I2C connector pinout",
+  "dimensions": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-PaHub2.1/module%20size.jpg",
+    "sha256": "5720fa4591ea8a2acbd2a82beeebe2c04d8b28ebb5419aa20d9f0423a37ea0bd",
+    "normalizedMm": [
+      24,
+      48,
+      10.8
+    ],
+    "mountingHoleDiameterMm": 5,
+    "mountingHoleCentersMm": [
+      [
+        -8,
+        -12
+      ],
+      [
+        8,
+        -12
+      ]
+    ],
+    "groveFaceMm": [
+      10,
+      5.2
+    ]
+  },
+  "officialCad": {
+    "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U040-B-V21_Unit_PaHub_v2.1/Structures/Unit_PaHub_v2.1.stl",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "gitBlob": "6207e09668335761cb1f265daa8349f20c6f69d1",
+    "sha256": "b10f9d582a6b12e22e7b51b6059517028cb96c1d1c73330460cd184c50499982",
+    "license": "MIT",
+    "selectedComponent": 0,
+    "selectedTriangles": 3498,
+    "excludedDisplacedDuplicateComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      -80,
+      0,
+      1.2
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "appearance": [
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-PaHub2.1/4.webp",
+      "sha256": "d8147d35caf2bb26f73620c013753f5d50f63514d33d34609da9931aa97f6eda",
+      "role": "Exact-version appearance reference; source image not redistributed"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-PaHub2.1/5.webp",
+      "sha256": "6842954270b16072a96df0333b1f473aa8a4fac9922787a4fdf8da036c803c03",
+      "role": "Exact-version appearance reference; source image not redistributed"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-PaHub2.1/6.webp",
+      "sha256": "2590fb8d8a70d2ac3aafa84db08464c203cbff30ce475bc216c0e6cb44e6dcfd",
+      "role": "Exact-version appearance reference; source image not redistributed"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-PaHub2.1/7.webp",
+      "sha256": "5f745c9805d6534569140432b0f11eec04ea047005d26953654b331c26430bef",
+      "role": "Exact-version appearance reference; source image not redistributed"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-PaHub2.1/8.webp",
+      "sha256": "a160a0262f3d932e5e8a84afc69efc44fa9f8f117b3d44aac7d360de1906ebb1",
+      "role": "Exact-version appearance reference; source image not redistributed"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-PaHub2.1/9.webp",
+      "sha256": "8972f7710568dffad5d0a5db747b8256eea3aaa3e1b4c44e993cfc65d740096f",
+      "role": "Exact-version appearance reference; source image not redistributed"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-PaHub2.1/10.webp",
+      "sha256": "bcfa510503f5f4ae0e7485f5ec8fd0f1a2fda53feb81dd76f25853fde3de8065",
+      "role": "Exact-version appearance reference; source image not redistributed"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/pahub-v21/assembly.js",
+      "sha256": "39edd4d0ec8753f0ec6fc58f226dff06123618417b1b132b5c51839355697388"
+    },
+    {
+      "path": "src/units/pahub-v21/cad-map.json",
+      "sha256": "e2975a73e82bcd52adb955446ced3b39378231ab041d4ac2d81bdfde5e88f903"
+    },
+    {
+      "path": "src/units/pahub-v21/dimensions.js",
+      "sha256": "8ce26690448349d4d8b551f18cbae8b7b324e8686deadefa58b7d5708c1768c7"
+    },
+    {
+      "path": "src/units/pahub-v21/geometry-data.js",
+      "sha256": "dcec065389f82b462cc1800be91966b17a755e196fe41ad330504fe296e96fc0"
+    },
+    {
+      "path": "src/units/pahub-v21/index.js",
+      "sha256": "b5dda58d703554154f964f99fd2bc53840287b22b7d959c81777da4248df5fa5"
+    }
+  ],
+  "limitations": [
+    "Connector internals, component envelopes, socket centres and DIP travel are photo-derived appearance estimates.",
+    "PCB traces, silkscreen, rear label and exact hidden components are deferred.",
+    "No I2C switching, address calculation, firmware or electrical behavior.",
+    "Browser review intentionally deferred; bounded construction smoke only."
+  ]
+}

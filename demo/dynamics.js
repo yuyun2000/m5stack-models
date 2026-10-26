@@ -31,7 +31,7 @@ export class DynamicsPanel {
           <p id="connection-note" class="control-note"></p>
         </section>
         <section><h4>按键与开关</h4><p class="control-note">按住查看行程，松开回弹；滑动开关保持档位。也可直接点击模型。</p><div id="button-controls" class="button-controls"></div><div id="button-inspection" class="button-inspection"><label>定格检查<select id="inspect-button"></select></label><div><button id="hold-button">保持按下</button><button id="release-button">弹起</button><button id="focus-button">近看</button></div><output id="button-travel"></output></div></section>
-        <section id="joint-section" hidden><h4>可动部件</h4><p class="control-note">角度与转速由外部给定；这里的演示范围不代表硬件额定范围。</p><div id="joint-controls"></div></section>
+        <section id="joint-section" hidden><h4>可动部件</h4><p class="control-note">位置、角度与转速由外部给定；有滑块的型号也可直接拖动。演示范围不代表硬件额定范围。</p><div id="joint-controls"></div></section>
         <section id="led-section" hidden><h4>灯光外观</h4><p class="control-note">外部指定颜色和亮度，不与按键或设备状态自动联动。</p><div class="led-selects"><label>灯位<select id="led-target"></select></label><label>颜色<input id="led-color" type="color" aria-label="灯光颜色"></label></div><div id="led-brightness-control"></div><button id="led-off">熄灭</button><output id="led-state" class="led-state"></output></section>
         <section class="input-events"><h4>输入意图</h4><p class="control-note">点击模型后可用键盘；切换到表单会释放按键。</p><output id="input-events" aria-live="polite">等待操作…</output><details><summary>当前几何状态</summary><pre id="dynamic-state"></pre></details></section>
       </div>`;
@@ -298,7 +298,8 @@ export class DynamicsPanel {
     this.$('#inspect-button').replaceChildren(...inspectButtons.map(b => new Option(`${b.label} / ${b.path}`, b.path)));
     if (inspectButtons.some(button => button.path === previousInspection)) this.$('#inspect-button').value = previousInspection;
     const allJoints = this.model.list('joint');
-    this.$('#joint-section').hidden = !allJoints.length;
+    const allSlides = this.model.list('slider');
+    this.$('#joint-section').hidden = !allJoints.length && !allSlides.length;
     for (const joint of allJoints) {
       const state = joint.getState();
       const group = node('div', null, 'joint-control');
@@ -324,6 +325,21 @@ export class DynamicsPanel {
         status.dataset.state = JSON.stringify(s);
       });
       group.append(reset, status); joints.append(group);
+    }
+    for (const slide of allSlides) {
+      const state = slide.getState(), group = node('div', null, 'joint-control');
+      group.dataset.slider = slide.path;group.append(node('strong', slide.label));
+      const id = `slide-${slide.path.replaceAll('/', '-')}-position`;
+      this.range(group, {id, label:'位置', min:state.rangeMm[0], max:state.rangeMm[1], step:.1, value:state.positionMm, unit:' mm', oninput:positionMm=>slide.set({positionMm})});
+      const reset = node('button', '回到中位');
+      reset.onclick = ()=>slide.set({positionMm:Math.max(state.rangeMm[0],Math.min(state.rangeMm[1],0)),durationMs:200});
+      const status = node('output', '', 'joint-status');
+      this.readouts.push(()=>{
+        const current=slide.getState(),input=group.querySelector(`#${id}`);
+        if(input){input.value=current.positionMm;input.nextElementSibling.textContent=`${current.positionMm.toFixed(2)} mm`;}
+        status.textContent=`${current.positionMm.toFixed(2)} mm`;status.dataset.state=JSON.stringify(current);
+      });
+      group.append(reset,status);joints.append(group);
     }
     const leds = this.model.list('led').filter(led => !led.invisible);
     this.$('#led-section').hidden = !leds.length;
@@ -389,6 +405,7 @@ export class DynamicsPanel {
     const state = {
       buttons: Object.fromEntries(this.model.list('button').map(b => [b.path, b.getState()])),
       joints: Object.fromEntries(this.model.list('joint').map(j => [j.path, j.getState()])),
+      sliders: Object.fromEntries(this.model.list('slider').map(s => [s.path, s.getState()])),
       leds: Object.fromEntries(this.model.list('led').map(led => [led.path, led.getState()])),
       ...(module ? {cable: module.get('cable').getState()} : {}),
     };

@@ -1,0 +1,41 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U154_Unit_8Angle/Structures/Unit_8Angle.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "bb6adeb0533ed0034d227fe85afaafff4605fe4a",
+  "sha256": "5b45475396b14f6def172c2b3cf20ed42471a4a8c049ec3c0316a8f89e25ef09",
+  "origin": [
+    83.68719482421875,
+    5.649110704660416,
+    -61.183289647102356
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "parts": [
+    {
+      "component": 1,
+      "name": "8Angle back shell",
+      "material": "shell"
+    },
+    {
+      "component": 2,
+      "name": "8Angle front shell",
+      "material": "shell"
+    }
+  ],
+  "notes": "The actual assembled shell pair only; components 0 and 3 are displaced duplicates. The U154 and U153 paths resolve to the same official Git blob. Preserve native bores, rear service window, perimeter seam, snap features and eight shaft / nine light / switch apertures. The nominal 8 mm perimeter housing has a raised front platform: selected shell depth is 10 mm."
+}

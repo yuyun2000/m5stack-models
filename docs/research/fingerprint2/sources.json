@@ -1,0 +1,173 @@
+{
+  "id": "fingerprint2",
+  "sku": "U203",
+  "retrievedAt": "2026-10-26",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_Fingerprint2",
+  "sourceStructure": {
+    "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U203_Unit_Fingerprint2/Structures/Unit_Fingerprint2.stl",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "gitBlob": "67b918a35c3930adb268cbf56b102fe57e545d53",
+    "sha256": "2ce972ca88f8a7795ea2488c13df91e5cd157644471a0267e86a1c05373b87b5",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/LICENSE"
+  },
+  "selectedAssembly": {
+    "origin": [
+      124.79236602783203,
+      18.01300048828125,
+      -2.8000000715255737
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "parts": [
+      {
+        "component": 0,
+        "name": "Fingerprint2 native back shell",
+        "material": "shell"
+      },
+      {
+        "component": 2,
+        "name": "Fingerprint2 native front shell",
+        "material": "shell"
+      },
+      {
+        "component": 4,
+        "name": "Fingerprint2 native blue power light guide",
+        "material": "lens"
+      }
+    ],
+    "excludedComponents": [
+      1,
+      3,
+      5
+    ],
+    "notes": "Preserve every triangle of the native assembled front/back pair and power light guide, all in one rigid transform. Other components are displaced duplicate copies. No clipping, independent alignment, scaling, sticker or photographic closure."
+  },
+  "referenceSources": [
+    {
+      "file": "photo-1.webp",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1186/U203-mainpictures_01.webp",
+      "sha256": "8a92eeb55f05e201343922ce8035127ce9723587a33ab327741571e2382b182e",
+      "usage": "reference only; not distributed"
+    },
+    {
+      "file": "photo-10.webp",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1186/U203-mainpictures_10.webp",
+      "sha256": "0602c6f668815a926cad2ee14c0d3a4bf18680fc545057ac54787486a9b5cbca",
+      "usage": "reference only; not distributed"
+    },
+    {
+      "file": "photo-3.webp",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1186/U203-mainpictures_03.webp",
+      "sha256": "c09039aee1e59ccf456d0fa78976ab3acc666545496cb5c9b3e60db1bdddc960",
+      "usage": "reference only; not distributed"
+    },
+    {
+      "file": "photo-5.webp",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1186/U203-mainpictures_05.webp",
+      "sha256": "d83b47ebb5b0fd8f4c11f2d1ebd7462d8051a9f4007c64dc8734d2199c6890e0",
+      "usage": "reference only; not distributed"
+    },
+    {
+      "file": "photo-6.webp",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1186/U203-mainpictures_06.webp",
+      "sha256": "13f93247f3ba50d017fcf847c60cc5d59b8b7befd67ebc734f6c99e0ca0bf341",
+      "usage": "reference only; not distributed"
+    },
+    {
+      "file": "photo-7.webp",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1186/U203-mainpictures_07.webp",
+      "sha256": "4e6b1a5950703d086a8af1b1cdf41cede8c574005e2a67403beaa7d3500a3405",
+      "usage": "reference only; not distributed"
+    },
+    {
+      "file": "photo-8.webp",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1186/U203-mainpictures_08.webp",
+      "sha256": "863186452b792f51497a061e01f3449a6e0b375fd4100bf4368254e4a2c8f3a5",
+      "usage": "reference only; not distributed"
+    },
+    {
+      "file": "photo-9.webp",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1186/U203-mainpictures_09.webp",
+      "sha256": "844a912b9cde7b71639966015c164f0b7c3e53a3bf088874562a3c7884eee53d",
+      "usage": "reference only; not distributed"
+    },
+    {
+      "file": "drawing.png",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1186/U203-MODEL-SIZE-unit-2sma_page_01.png",
+      "sha256": "6df4ed5e63c580a660278da2731de90a1268bc73df6381fa45ce670061b631f7",
+      "usage": "reference only; not distributed"
+    }
+  ],
+  "apiSources": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5Unit-Fingerprint2/e09e709ed5ef8b20a06b43534c6a2cc9ec8b16e1/src/M5UnitFingerprint2_defs.hpp",
+      "sha256": "0310e5ac3d43c4cbba52953c45cda9fb9ab976d20cfae0486a7314fdf8275b5b",
+      "usage": "API identity and seven-color ring enum only; no driver code copied"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5Unit-Fingerprint2/e09e709ed5ef8b20a06b43534c6a2cc9ec8b16e1/src/M5UnitFingerprint2.hpp",
+      "sha256": "fb6a793ca58733d228aeecee8e774c35e2c387058569020a56c0726fc3111d7d",
+      "usage": "API identity and seven-color ring enum only; no driver code copied"
+    }
+  ],
+  "mcp": {
+    "tool": "knowledge_search",
+    "query": "M5Stack Unit Fingerprint2 U203 指纹传感器 电容触摸 RGB 尺寸",
+    "filter_type": "product",
+    "localResponseSha256": "2636e7fd127a50c4a7b606cae9a9363063a4df9f7f77f0009f9cfd0bef38efcb",
+    "result": "U203, STM32G031G8U6, A-K323CP capacitive semiconductor, RGB ring, BLUE power LED, 40×24×8 mm"
+  },
+  "inferences": [
+    "Concealed PCB outline, thickness and installed Z, mounting-boss/Grove reliefs",
+    "A-K323CP installed volumetric module and substrate envelope, face radius/Z and diffuser section; no package mechanical drawing",
+    "Concealed MCU/regulator/passives/J2 placements and LED package envelope",
+    "Grove interiors, fastening screw and shank"
+  ],
+  "boundaries": [
+    "sensor is a passive visual anchor; no independent touch API confirmed",
+    "ring-led external RGB appearance only; power-led externally driven fixed blue",
+    "No biometric data, capture, registration, database, recognition, UART protocol or electrical behavior",
+    "No private sticker table/vector source/photo crops; no browser review"
+  ],
+  "artwork": {
+    "status": "applied-local-smoke",
+    "originalsDistributed": false,
+    "privateSourceUrlsDistributed": false,
+    "source": "User-supplied exact product flat artwork; final raster distribution authorized by user, original artwork rights retained by M5Stack.",
+    "registration": "The rear label text/color bands are exact vector contours converted to PNG. The original fingerprint icon is a 200×200 embedded black bitmap with an independent 8-bit opacity plane; its exact native pixels are decoded and distributed separately with no resize. The two images are registered to the same original back recess using their source-layout offset. The 200×200 symbol is not represented as a high-resolution redraw.",
+    "files": [
+      {
+        "path": "src/units/fingerprint2/official-back-vector.png",
+        "sha256": "05a2b85bb1f906f358ead5004531fda274d2adcb8ff430c64a04b56ef9206a6a",
+        "pixels": [
+          1680,
+          1800
+        ]
+      },
+      {
+        "path": "src/units/fingerprint2/official-fingerprint-native.png",
+        "sha256": "e5bda8d76c7e54f1f9ea8b316a5b143f379123fec22355cd91dde16e0d4b2302",
+        "pixels": [
+          200,
+          200
+        ]
+      }
+    ]
+  }
+}

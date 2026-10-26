@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-26T08:13:23.857Z",
+  "status": "pass",
+  "sku": "U188",
+  "meshes": 89,
+  "triangles": 38380,
+  "visualEnvelopeMm": [
+    41,
+    40,
+    41
+  ],
+  "apertureRays": 43,
+  "checks": [
+    "exact own official CAD blob",
+    "finite geometry/normals",
+    "real fixed/top mounting paths",
+    "PCB relief FrontSide walls",
+    "Grove/CAN actual cavity and OLED aperture backing",
+    "native tongue vertices flex/restore with source normals",
+    "white monochrome external framebuffer",
+    "continuous angle and RPM, fixed-vs-moving interface frames",
+    "independent fixed RGB and red top indicator",
+    "rotating downstream Key/four-wire source plug matches same tick",
+    "nested API, pose, attach/detach and resource disposal"
+  ],
+  "scope": "Necessary structural/API smoke only; no browser, physical fit, electrical bus, encoder values, firmware or motor physics validation"
+}

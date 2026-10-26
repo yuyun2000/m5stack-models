@@ -1,0 +1,129 @@
+{
+  "checkedAt": "2026-10-26T07:15:10.101Z",
+  "status": "pass",
+  "scope": "Necessary finite construction, aperture/package, connector, attachment/pose/detach/disposal smoke; no browser, hardware, I2C or hand-gesture verification",
+  "meshes": 40,
+  "triangles": 7156,
+  "visualEnvelopeMm": [
+    24.0006103515625,
+    32,
+    8.000000095367431
+  ],
+  "cadEnvelopeMm": [
+    24.0006103515625,
+    32,
+    8
+  ],
+  "mountingRays": 10,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        8,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 18,
+      "purpose": "Front optical opening contains the full PAJ7620U2 enclosure"
+    },
+    {
+      "origin": [
+        -1.31,
+        8,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 18,
+      "purpose": "IR emitter recess has real emitter and solid floor"
+    },
+    {
+      "origin": [
+        1.12,
+        8,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 18,
+      "purpose": "Receiver recess contains a physical lens and solid floor"
+    },
+    {
+      "origin": [
+        4.8,
+        8,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 20,
+      "purpose": "Optical capsule around the small package ends at the solid PCB"
+    },
+    {
+      "origin": [
+        0,
+        -40,
+        0.5
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 33,
+      "purpose": "Open Grove mouth ends at the connector rear housing"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Front optical opening contains the full PAJ7620U2 enclosure",
+      "hit": "Gesture PAJ7620U2 molded optical enclosure",
+      "distanceMm": 17.300000004768375
+    },
+    {
+      "purpose": "IR emitter recess has real emitter and solid floor",
+      "hit": "Gesture IR emitter optical centre",
+      "distanceMm": 17.49999999985099
+    },
+    {
+      "purpose": "Receiver recess contains a physical lens and solid floor",
+      "hit": "Gesture recessed receiver lens",
+      "distanceMm": 17.529999999701978
+    },
+    {
+      "purpose": "Optical capsule around the small package ends at the solid PCB",
+      "hit": "Gesture PCB with open boss and Grove relief",
+      "distanceMm": 19.49999998807907
+    },
+    {
+      "purpose": "Open Grove mouth ends at the connector rear housing",
+      "hit": "Grove rear wall",
+      "distanceMm": 29.950000011920928
+    }
+  ],
+  "opticalPackage": "two recessed optical regions with physical components and floors",
+  "grovePins": [
+    "GND",
+    "5V",
+    "SDA",
+    "SCL"
+  ],
+  "visualAnchor": "sensor",
+  "controls": 0,
+  "groveAttachPoseNestedDetach": "pass",
+  "disposedResources": 92,
+  "disposeEvents": 118
+}

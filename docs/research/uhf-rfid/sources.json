@@ -1,0 +1,214 @@
+{
+  "id": "uhf-rfid",
+  "sku": "U107",
+  "officialDocs": "https://docs.m5stack.com/en/unit/uhf_rfid",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "query": "Unit UHF RFID U107 产品尺寸 接口 天线 外壳 按键 LED",
+    "rawResponseDistributed": false,
+    "result": "Confirms 56 × 48 × 11.5 mm vendor order, JRD-4035, built-in ceramic antenna and UART Grove. Current schematic summary correctly stops at P1/J1; contradictory older summary was checked against original diagram."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uhf_rfid/uhf_rfid_05.webp",
+    "sha256": "8c2d2c05efeb92b38ee78a1956af2f4b17728d080a9183b2213cf51afbc81d23"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U107_Unit_UHF-RFID/Structures/Unit_UHF-RFID.stl",
+      "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+      "gitBlob": "ae2c64d6d0b7eaa62d670d828da1f15f81585cbe",
+      "sha256": "e6da1d76915851c97eb5f20358b81ca4a3c9a34e62657bf953b3fe9425df08d1",
+      "license": "MIT; retain licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uhf_rfid/uhf_rfid_01.webp",
+      "sha256": "392a5249681e66d37cd01a49a7a2c2b7a3eaeb7bed411d65b6565ea73fa57eda"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uhf_rfid/uhf_rfid_02.webp",
+      "sha256": "cd802100d84476c177eb2fad8c4909bb17e4ad951b970720f9d009851194411a"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uhf_rfid/uhf_rfid_05.webp",
+      "sha256": "8c2d2c05efeb92b38ee78a1956af2f4b17728d080a9183b2213cf51afbc81d23"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uhf_rfid/uhf_rfid_06.webp",
+      "sha256": "81d3c6fe881afc51c6eaa0f8fb7e019ab5aedf4c5377d477cf40a8627ec83b04"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uhf_rfid/uhf_rfid_sch_01.webp",
+      "sha256": "1ab6b15636fa568a56d6457d30203e14aeb3ec7629af0dd0c5666a72a8da5110"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      0,
+      28,
+      5.75
+    ],
+    "axes": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "method": "One common rigid 180-degree Z rotation and translation, scale 1; no shell cuts, fills or per-part alignment",
+    "reason": "Complete original component 0 retained with one common rigid 180 degree Z rotation and translation, scale 1. Components 1 and 2 are displaced individual shell copies (3704 + 2400 = assembled component 6104 triangles). No cuts, fills, independent repositioning or manufacturing-fit claim."
+  },
+  "dimensions": {
+    "nominalMm": [
+      48,
+      56,
+      11.5
+    ],
+    "vendorDimensionOrderMm": [
+      56,
+      48,
+      11.5
+    ],
+    "cadEnvelopeMm": [
+      48.00001335144043,
+      55.98902130126953,
+      11.5
+    ],
+    "visualEnvelopeMm": [
+      48.00001335144043,
+      55.98902130126953,
+      11.507999897003174
+    ],
+    "mountingHoleCentersMm": [
+      [
+        -16,
+        24
+      ],
+      [
+        16,
+        24
+      ],
+      [
+        -16,
+        -24
+      ],
+      [
+        16,
+        -24
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "nativeBoreNote": "Native faceted wall cardinal radii approx 2.442–2.443 mm at mid-depth; nominal 5 mm inferred from source envelope, not a manufacturing tolerance."
+  },
+  "artwork": {
+    "kind": "mixed-official-vector-raster-and-reference-redraw",
+    "sources": "docs/research/uhf-rfid/artwork.json",
+    "originalsDistributed": false,
+    "files": [
+      {
+        "path": "src/units/uhf-rfid/reference-redraw-front.png",
+        "sha256": "bb6ba2599411837286868844ad6d62939faacf3358d0a4ae1d0bada7af587d9f",
+        "pixels": [
+          3300,
+          2200
+        ],
+        "sizeMm": [
+          33,
+          22
+        ],
+        "positionMm": [
+          0,
+          -2,
+          5.75
+        ],
+        "face": "front",
+        "kind": "reference-redraw",
+        "method": "printedArtwork",
+        "target": "UHF RFID complete native assembled shell"
+      },
+      {
+        "path": "src/units/uhf-rfid/official-back.png",
+        "sha256": "da75a923d4419af4205250021375b4dba84d0f7b4f268787873169294d52f834",
+        "pixels": [
+          2400,
+          2400
+        ],
+        "sizeMm": [
+          30,
+          30
+        ],
+        "positionMm": [
+          0,
+          0,
+          -5.55
+        ],
+        "face": "back",
+        "kind": "official-vector-raster",
+        "method": "printedArtwork",
+        "target": "UHF RFID complete native assembled shell"
+      }
+    ]
+  },
+  "runtimeFiles": [
+    {
+      "path": "src/units/uhf-rfid/assembly.js",
+      "sha256": "6a4f717bd3f9d3a3ce65f1603ed19a8c4a5ce3a59888f9705be682e889ba8535"
+    },
+    {
+      "path": "src/units/uhf-rfid/cad-map.json",
+      "sha256": "5745726b1112e91c1e289dbf9302c80b453fd40935c2c5b09566adfc5d6dbe54"
+    },
+    {
+      "path": "src/units/uhf-rfid/dimensions.js",
+      "sha256": "cf15e71041c5a2e639e5f5aa17eadff13a44805e7b4ea861497b9dc8a1195b67"
+    },
+    {
+      "path": "src/units/uhf-rfid/geometry-data.js",
+      "sha256": "36ecf8faaf97878e3874c0a9a328ada7fe8e55749175d44ce8f4789f13e45fc9"
+    },
+    {
+      "path": "src/units/uhf-rfid/index.js",
+      "sha256": "e33b4fd6a303b77e1c405a04448a708efea5d5956dd425f74643a8bc1ae76ad5"
+    },
+    {
+      "path": "src/units/uhf-rfid/official-back.png",
+      "sha256": "da75a923d4419af4205250021375b4dba84d0f7b4f268787873169294d52f834"
+    },
+    {
+      "path": "src/units/uhf-rfid/reference-redraw-front.png",
+      "sha256": "bb6ba2599411837286868844ad6d62939faacf3358d0a4ae1d0bada7af587d9f"
+    },
+    {
+      "path": "src/units/uhf-rfid/stickers.js",
+      "sha256": "bd4d26fcf69330d40f85ad62a94449f3b97e96ab399d8fdb1c001b619e978f92"
+    }
+  ],
+  "inferences": [
+    "Concealed carrier/module PCB profiles, stack, unmarked shield, ceramic antenna dimensions/electrode/feedthrough, passive package envelopes/XYZ and connector interior depths are inferred visual reconstructions. No populated assembly STEP, RF topology or production-fit claim.",
+    "Passive antenna/module anchor only. No RF field, tag identity, scan, read/write, EPC, RSSI, UART/AT, electrical or firmware behavior."
+  ],
+  "feedback": {
+    "id": "6ce62148ba3442c3b9bf6a3aa103c70e",
+    "category": "incorrect_information",
+    "status": "accepted",
+    "summary": "Older schematic summary invents LDO/UART series resistors/RF internals absent from the exact public P1/J1 interface diagram; do not use it as PCB evidence."
+  }
+}

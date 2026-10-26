@@ -1,12 +1,40 @@
-# 正式栅格贴纸覆盖与限制
+# 贴纸与外壳印刷覆盖
 
 更新日期：2026-10-26。
 
-本批以 `catalog/products.json` 的 43 款现有模型为范围：17 款接入标准版正式栅格贴纸，7 款提供必须显式选择的中文教育版贴纸，19 款仍等待精确型号来源。这里的“接入”指素材已绑定到当前模型的指定实体面，已复核本批贴纸的浏览器显示，不代表每款产品的全部贴纸面或整体几何验收均已完成。全部产品继续保持 `modeled`，不因贴纸接入自动升为 `verified`。
+本表范围是新增 GPS v1.1、Weight-I2C、8Servos 之前的43款模型，这43款默认外观均至少接入一处贴纸或印刷层：14款只使用原稿栅格，3款同时使用原稿栅格与参考重绘，26款使用参考重绘。7款另保留必须显式选择的中文教育版。接入指定印刷面不表示每款的所有印刷面或整体几何验收均已完成；全部产品继续保持 `modeled`。
+
+用户于2026-10-26要求停止耗时复核、继续其他Unit，因此本批50张参考重绘PNG保留为待复核检查点，不宣称完整check或逐面浏览器验收完成。后续新增型号的贴纸进度由各自产品记录单独说明，不并入以上历史统计。
+
+2026-10-26 用户明确授权缺原稿处按同型号官方照片重绘高清 PNG，并标明来源。重绘层标记 `reference-redraw`，原稿栅格仍标记 `official-raster` / `official-raster-film`。可辨文字和图形重新绘制，不复制产品照片像素；字体、字距、颜色与物理配准存在照片推导误差。高像素不代表厂商矢量或电气引脚验证。
 
 清单依据：`catalog/products.json`、下表所列公开源码，以及 `src/modeling/artwork.js`。原表行、原始下载地址、原素材文件名、矢量及私有素材索引不在本文中记录。
 
-## 17 款标准版已接入范围
+## Laser TX / Laser RX / MIDI 同步印刷
+
+2026-10-26新增三款同步接入6张正背 `reference-redraw` PNG，各款2张，独立计数。所提供表格未检索到对应精确型号原稿，按用户已授权的同型号官方图代码重绘方式补齐；不裁产品照片，不分发原图或矢量。TX自身650nm/OUT、RX的IN及MIDI的接口/模式印字作为外观保留；不据此执行光学、GPIO、MIDI路由或音频行为。不可辨文字及配准推导见各款记录。
+
+真实接收/发射实体、MIDI稳定滑块/固定绿灯、DIN/TRS机械类型和四芯线层级用法见[Laser/MIDI](LASER-MIDI-UNITS.md)。`artwork:false` 逐实例关闭本批贴层，物理壳体、原孔、PCB、光学件、插座与光导保持。本批来源和进度不并入下列历史43款、此前30款回补、36款或39款新增快照，不据此宣称构建、在线资源、逐面浏览器或全量验收通过。私有表、下载链接、矢量、生成器及中间件继续留在仓库外，仅最终普通PNG和配准/来源说明进入可公开素材。
+
+## Earth / Hall / QRCode 同步印刷
+
+2026-10-26新增三款同时接入7张PNG，单独计数：Earth默认英文背标和显式 `stickerVariant:'education-cn'` 中文教育版共2张；Hall正背 `reference-redraw` 2张；QRCode正背和侧面 UART/I2C 标共3张精确原稿 `official-raster`，包装素材排除。Earth两版标记 `source-vector-raster`，原稿轮廓/填色及可见层依对应预览和标准官图恢复，并非未修改原稿直接导出。Earth的可选教育版不加入下列历史7款统计。
+
+本批贴层与模型同步，真实活动件、固定折射头配置、四芯线和 API 边界见[Earth/Hall/QRCode](EARTH-HALL-QRCODE-UNITS.md)；来源/配准与剩余限制按各产品记录。原表、下载链接、矢量及生成中间件继续留在仓库外。这里不合并历史43款、此前30款回补或前36款新增记录，不据此宣称新一轮浏览器、构建或在线验收通过。
+
+## Step16 / ASR / UHF-RFID 同步印刷
+
+2026-10-26新增三款时同步接入5张PNG：Step16背贴、ASR正背贴、UHF-RFID正背标。UHF-RFID背贴为精确型号原稿轮廓直接栅格化，标记`official-vector-raster`；其余4张为同型号官方照片参考重绘。原稿、表格、私有链接与生成中间件留在仓库外。真实面与组件边界见[本批指南](STEP-ASR-UHF-UNITS.md)，本批不并入历史43款或此前30款贴纸统计。
+
+## Mini IMU / EXT.IO2 / ACSSR 同步印刷
+
+2026-10-26继续新增三款时同步接入各自对应印刷，仍按精确型号原稿优先/缺源官方照片参考重绘的政策。真实面、API与边界见[本批指南](IMU-EXTIO-ACSSR-UNITS.md)及单品研究记录；不并入下列历史43款或此前30款贴纸统计。
+
+## 近期新增 Unit 同步补贴纸
+
+2026-10-26按用户补充要求，新增Unit同时接入贴纸，并回补近期30款的缺印刷。具体产品、来源类型、面与遗留见[新增Unit贴纸](UNIT-STICKER-ADDITIONS.md)。只执行新增贴图与物理基线/构建必要检查，未恢复耗时逐面浏览器复核；以下43款为原历史范围。
+
+## 17 款原稿栅格已接入范围
 
 省略 `stickerVariant` 或选择 `standard` 时，以下正式栅格层默认启用；`artwork: false` 可关闭本批正式栅格层。
 
@@ -17,8 +45,8 @@
 | StopWatch | C152 | 背面电路标 | `src/devices/stopwatch/index.js` |
 | Cardputer-ADV | K132-Adv | 前面四条固定键盘底板标；前机名标；StampS3A 电路覆膜；背面电路标；顶侧控制/接口标；Grove 侧面标 | `src/devices/cardputer-adv/stickers.js`；Stamp 覆膜保留独立螺丝/RGB 孔，键盘底板标不随键帽按压 |
 | CardputerZero | C154 | 前面四条固定键盘底板标；前机名标；固定电源/USB 区标；独立移动电源帽印刷；背面电路标；右侧 DISPLAY/AUDIO/Grove 标；左侧 USB/BOOT/LAN 标；顶部 GPIO 和 microSD 标 | `src/devices/cardputer-zero/index.js`、`stickers.js`；外围端口及实体开孔的左右方向同步校正，位置迁移见接入文档 |
-| PaperMono | C153 | 背面上部电路标 | `src/devices/papermono/index.js`；下部 NFC 标未接入 |
-| Core2 v1.1 | K010-V11 | 背面电路覆膜；上侧认证标 | `src/devices/core2/stickers.js`；EXT 标未接入，不能视为全部外壳贴纸完成 |
+| PaperMono | C153 | 背面上部电路标 | `src/devices/papermono/index.js`；下部NFC另使用参考重绘 |
+| Core2 v1.1 | K010-V11 | 背面电路覆膜；上侧认证标 | `src/devices/core2/stickers.js`；EXT盖标另使用参考重绘，仍不代表全部印刷面完成 |
 | PaperColor | C151 | 背面上、下两片电路标；底侧徽标 | `src/devices/papercolor/index.js` |
 | StackChan | K151/K151-R | 头部左、右侧面标；头部认证标；固定底座底面标 | `src/devices/stackchan/index.js`；头部贴层随所属实体/关节，底座贴层保持固定；内部复用 CoreS3 的标准贴纸停用 |
 | Tab5 | C145/K145 | 背面 ST7123 电路标；电池仓内 BATTERY/M-BUS 标；后机名标；左侧 USB-A、USB-C、耳机、Port A 标；底侧 GPIO 和认证标 | `src/devices/tab5/index.js`；电池仓贴纸位于机械电池盖之下，不贴到盖外面 |
@@ -31,6 +59,27 @@
 | RFID2 | U031-B | 前面天线面标；背面标 | `src/units/rfid2/stickers.js` |
 
 其中 11 款为主机，6 款为 Unit。表中面的方向使用当前模型的产品坐标，不能据此推断电气连接、传感器行为或制造配合已验证。
+
+## 官方照片参考重绘范围
+
+| 型号 | 已接入面及边界 |
+| --- | --- |
+| ENV III、PIR、Angle、Light、Thermal、Fan、Scroll | 标准版背贴；默认使用重绘，教育版另行选择 |
+| Color、ToF、NCIR、Heart、Relay、Joystick v1.1、RS485 | 精确型号背贴；Joystick 使用 U024-C / MEGA8A 背图 |
+| TVOC | 背面接口条、正面 TVOC/eCO2 与 SGP30 条；替换旧简化文字 |
+| Button、Buzzer、Encoder、Limit | 背标；Encoder 的工厂连续膜跨服务口，孔后保留原PCB，安装孔不封堵 |
+| Key | 真实后壳凹台内背贴 |
+| 8Encoder | 背贴、CH1–CH8、SW、0/1；固定印刷不随旋钮/拨杆移动 |
+| CardKB v1.1 | 裸PCB上的主键字与经官方表格/固件核对的副符号；背面图案和极小丝印仍缺 |
+| Roller485 | OLED面 PORT.A 与 PWR485 标；侧面 debug/ISP 细条无法逐字确认，保留缺项 |
+| NanoC6 | 背标、两侧认证标；图形与尺寸为照片外观重绘 |
+| Nesso N1 | 背标、顶部天线/IR、QWIIC、收纳天线内侧频段标；保留实际 IR 口和所属零件关系 |
+| StamPLC | 正面主标、IN 1–8、RELAY 1–4、提示条；端子侧标缺匹配白色承载壳条，不悬空补膜；密集侧面/Stamp图仍缺 |
+| Core2 v1.1 | EXT盖 CORE2名牌，保留双孔，不套用v1.0；原稿背标/认证保持 |
+| PaperMono | 真实下盖上的 NFC字样与弧线；原稿上部电路标保持 |
+| CoreS3 + DinBase | 后盖下方PCB的可读品牌、表格与部分供电文字；不贴到外盖，密集细字仍为部分覆盖 |
+
+各款 `docs/research/<型号>/artwork-redraw.md` 和目录字段 `artwork.redrawSources` 记录精确公开参考、转录、PNG摘要和未还原项。8Encoder 照片上的 PA14/PA15、PA12/PA13 与原理图 PB 编号不一致；重绘只还原印刷，不能作为接线依据。新贴层不改变壳体、PCB、接口或控件实体几何。
 
 ## 7 款可选中文教育版
 
@@ -48,26 +97,26 @@
 
 这一批教育版仅有约 340 像素宽的原生位图，Scroll 为 367 像素宽。它们可用于展示对应变体，但放大观察时细字和线条存在分辨率上限；纹理采样或放大导出不能恢复原图没有的细节。它们不是高分辨率矢量转图结果，后续有更清晰的同型号素材时再替换。
 
-## 19 款仍无精确来源
+## 19 款原始设计文件仍缺
 
-以下产品的目录状态为 `awaiting-exact-source`，当前未接入本批正式栅格贴纸。不使用近似型号、不同代际、不同引脚版本或不同认证版本代替。
+以下产品仍没有取得精确型号的原始贴纸设计文件，目前已依据同型号官方照片接入参考重绘。原稿缺失不再表示默认外观没有贴纸；不使用近似型号、不同代际、不同引脚版本或不同认证版本代替。
 
 | 类型 | 型号 / SKU |
 | --- | --- |
 | 主机（3） | NanoC6 / C125；Arduino Nesso N1 / DK001；StamPLC / K141 |
 | Unit（16） | Color / U009；ToF / U010；Relay / U023；Joystick v1.1 / U024-C；Button / U027；NCIR / U028；Heart Rate / U029；Encoder / U135；Mini TVOC/eCO2 / U088；RS485 / U034；Buzzer / U132；Unit Limit / U145；CardKB v1.1 / U035-B；Unit Key / U144；Unit 8Encoder / U153；Unit Roller485 / U182 |
 
-精确型号来源缺失只描述本批正式贴纸状态；不代表这些模型没有现有实体细节、旧生成标记或其他历史外观内容。
+本表记录原稿来源缺口，不表示当前没有印刷层。
 
 ## 已知缺面和暂缓项
 
 | 型号 | 当前缺项 | 处理边界 |
 | --- | --- | --- |
-| Core2 v1.1 | EXT 标尚无正式来源 | 保留缺项，不凭相近版本补字或复刻引脚标；当前仅计背标和认证标接入 |
-| PaperMono | NFC 图文尚无正式来源 | 当前保留 NFC 实体盖，正式 NFC 图文继续等待同型号来源 |
-| CoreS3 + DinBase | 后部 PCB 丝印尚无正式来源 | 保留真实后盖及结构，不把独立主机背标贴到 DinBase 外盖 |
-| 上述 7 款可选教育版 Unit | 标准版正式贴纸缺精确来源；教育版原生位图较小 | 不默认启用教育版，不承诺近景细字质量与高分辨率原稿一致 |
-| 上述 19 款 | 精确型号正式来源未取得 | 保留等待状态，不把“已有模型”或“构建成功”改写为贴纸完成 |
+| Core2 v1.1 | EXT原稿仍缺 | 已按精确v1.1照片重绘盖标，不增加推测引脚表 |
+| PaperMono | NFC原稿仍缺 | 已参考同型号照片重绘在真实NFC下盖 |
+| CoreS3 + DinBase | 密集PCB丝印未全还原 | 只补可读内部印刷，不把独立主机背标贴到外盖 |
+| 上述7款教育版Unit | 教育版原生位图较小 | 标准版已参考重绘；教育版不默认启用，近景受原生像素限制 |
+| 上述19款 | 精确型号原稿未取得 | 已加入参考重绘，未还原面和细字见上表 |
 
 ## 构造选项与 Grove 模块
 
@@ -113,7 +162,7 @@ const envWithoutRaster = await loadGroveModule('env-iii', {
 
 ## 素材分发与许可
 
-本批只分发用于模型展示的普通 PNG 栅格贴图和配准代码。用户提供的原表、原表映射、原始下载链接、矢量原稿及矢量转换中间材料均不随公开仓库、构建产物或验证附件分发。旧产品照片裁切贴纸继续停用。
+本批只分发用于模型展示的普通PNG、配准代码及公开参考来源说明。用户提供的原表、原表映射、原始下载链接、矢量原稿、重绘生成器、字体文件及转换/重绘中间材料均不随公开仓库、构建产物或验证附件分发。旧产品照片裁切贴纸继续停用。
 
 独立分发构建目录时，同包携带当前 `LICENSE`、`THIRD_PARTY_NOTICES.md` 和 `licenses/`；Vite 构建自动加入这些文件。
 

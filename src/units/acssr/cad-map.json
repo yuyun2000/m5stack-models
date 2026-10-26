@@ -1,0 +1,43 @@
+{
+  "sku": "U139",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U139_Unit_ACSSR/Structures/Unit_ACSSR.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "31f129577fba098c07f6f2b1c5d550ae0f546b51",
+  "sha256": "7f1ddd4aca945b9f7088e40dff520884e70299f138f63b43e679dac4886b3d36",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/LICENSE",
+  "origin": [
+    8.93600082397461,
+    0,
+    9.600000381469727
+  ],
+  "axes": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "ACSSR complete native controller shell with integral button tongue",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "notes": "Component 0 is the assembled complete controller enclosure (2654 triangles = displaced components 1+2). One rigid -90 degree Z rotation and translation; no scaling/cuts/fills. Source covers only the controller (44.94 x 18.74 x 11.5 mm), not the 80 x 45 x 31 mm kit. SSR body and installed controller-to-SSR transform are photo/dimension-constrained reconstructions. Original integral tongue flexes only during external button actuation; exact rest vertices and normals restored."
+}

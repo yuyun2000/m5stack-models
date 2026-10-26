@@ -1,0 +1,176 @@
+{
+  "id": "pahub-v21",
+  "stage": "modeled",
+  "checks": [
+    "finite geometry",
+    "official envelope",
+    "seven actual connector assemblies with outward frames and four recessed metal contacts each",
+    "pin metadata agrees with actual metal row",
+    "open mating mouths backed by physical support",
+    "native shell and PCB mounting bores plus FrontSide bore wall",
+    "three stable externally driven DIP sliders",
+    "two attached output Modules and generated four-wire geometry",
+    "recursive Grove paths",
+    "independent detach",
+    "standalone and cabled PaHUB outputs",
+    "all owned geometry/material receive disposal"
+  ],
+  "bounds": {
+    "min": [
+      -12,
+      -24,
+      -4
+    ],
+    "max": [
+      12,
+      24,
+      6.800000011920929
+    ]
+  },
+  "vertices": 85204,
+  "triangles": 31380,
+  "ports": [
+    {
+      "id": "grove",
+      "outward": [
+        -1.2246467991473532e-16,
+        -1,
+        0
+      ],
+      "position": [
+        0,
+        -23.65,
+        1.4
+      ],
+      "pins": [
+        "GND",
+        "5V",
+        "SDA",
+        "SCL"
+      ]
+    },
+    {
+      "id": "grove-0",
+      "outward": [
+        -2.220446049250313e-16,
+        0,
+        1
+      ],
+      "position": [
+        7.3,
+        -1.6,
+        6.5
+      ],
+      "pins": [
+        "GND",
+        "5V",
+        "SD0",
+        "SC0"
+      ]
+    },
+    {
+      "id": "grove-1",
+      "outward": [
+        -2.220446049250313e-16,
+        0,
+        1
+      ],
+      "position": [
+        7.3,
+        8.3,
+        6.5
+      ],
+      "pins": [
+        "GND",
+        "5V",
+        "SD1",
+        "SC1"
+      ]
+    },
+    {
+      "id": "grove-2",
+      "outward": [
+        -2.465190328815662e-32,
+        -2.220446049250313e-16,
+        1
+      ],
+      "position": [
+        5.2,
+        17,
+        6.5
+      ],
+      "pins": [
+        "GND",
+        "5V",
+        "SD2",
+        "SC2"
+      ]
+    },
+    {
+      "id": "grove-3",
+      "outward": [
+        -2.465190328815662e-32,
+        -2.220446049250313e-16,
+        1
+      ],
+      "position": [
+        -5.2,
+        17,
+        6.5
+      ],
+      "pins": [
+        "GND",
+        "5V",
+        "SD3",
+        "SC3"
+      ]
+    },
+    {
+      "id": "grove-4",
+      "outward": [
+        2.220446049250313e-16,
+        0,
+        1
+      ],
+      "position": [
+        -7.3,
+        8.3,
+        6.5
+      ],
+      "pins": [
+        "GND",
+        "5V",
+        "SD4",
+        "SC4"
+      ]
+    },
+    {
+      "id": "grove-5",
+      "outward": [
+        2.220446049250313e-16,
+        0,
+        1
+      ],
+      "position": [
+        -7.3,
+        -1.6,
+        6.5
+      ],
+      "pins": [
+        "GND",
+        "5V",
+        "SD5",
+        "SC5"
+      ]
+    }
+  ],
+  "dips": [
+    "dip-1",
+    "dip-2",
+    "dip-3"
+  ],
+  "disposedResources": 863,
+  "totalResources": 863,
+  "browserReview": null,
+  "scope": "Small construction and API smoke only. No electrical or I2C behavior; no exhaustive visual validation."
+}

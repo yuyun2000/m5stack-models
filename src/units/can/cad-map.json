@@ -1,0 +1,45 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U085_Unit_CAN/Structures/Unit_CAN.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "0eb07f39b2b571c6fbd37703f2bd778108dda048",
+  "sha256": "c61de23c40f45b9b2699a12d0fe1456b461d4fe1def9bfb9393486a0f2c81c62",
+  "origin": [
+    0,
+    28,
+    -4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "CAN native rear shell",
+      "material": "shell"
+    },
+    {
+      "component": 2,
+      "name": "CAN native front shell",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    3
+  ],
+  "notes": "Keep complete coincident assembled shell components 0 and 2, including LEGO bosses, terminal/Grove apertures, LED slot and molded ribs. Components 1 and 3 are exploded duplicates. One common translation X=rawX,Y=rawY-28,Z=rawZ+4; no scaling, cutting, filling or independent shell transforms."
+}

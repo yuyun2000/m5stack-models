@@ -1,0 +1,9 @@
+# Unit OLED — U119
+
+Official U119 is the SH1107 1.3-inch black/white OLED Unit. The listing gives 56 × 24 × 8 mm; this model uses portrait +X right, +Y toward the display end, +Z out of the screen, so its nominal size is **24 × 56 × 8 mm**.
+
+The official native rear/front shell pair is retained as one assembly. Only the shared origin is translated; two laterally displaced duplicate shells are excluded. The native front window is filled by real display carrier and black glass volumes plus the externally driven active panel. Both mounting bores and the Grove socket mouth remain actual openings. PCB, electronic packages, magnetic fixings, display stack thickness and installed coordinates are concealed appearance reconstructions. Exact immutable URLs, hashes and the shared transform are in `sources.json` and the product `cad-map.json`. Preserve `licenses/M5_Hardware-MIT.txt`.
+
+The factory resolution is 128 × 64. In this portrait orientation, `lcd` exposes **64 × 128** with top-left pixel (0,0). The real active area is 14.7 × 29.42 mm inside the 16.4 × 31.9 mm official opening. Standard `Display` fill/RGBA/RGB888/RGB565 methods and nested Grove paths work. The OLED renderer maps luminance through a 0.5 threshold to black/white; input buffers retain their supplied values. The panel has no touch input, register state, I2C behavior or autonomous content.
+
+`smoke.json` records finite geometry/envelope checks, 10 clear mounting rays, FrontSide PCB bore normals, 25 unobstructed active-area samples, solid display border, framebuffer writes, nested Grove writes, four-wire cable posing, detach and disposal. Stage remains `modeled`; no browser or hardware verification was performed. Reference-redrawn permanent artwork is integrated ([sticker update](./stickers.md)); no private sticker table, vector original or photographic crop is distributed.

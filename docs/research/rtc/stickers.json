@@ -1,0 +1,86 @@
+{
+  "id": "rtc",
+  "sku": "U126",
+  "status": "reference-redraw-integrated",
+  "updatedAt": "2026-10-26",
+  "artworkKind": "reference-redraw",
+  "coverage": "Front and rear product labels.",
+  "transcription": [
+    "RTC",
+    "Built-in battery",
+    "RTC8563",
+    "PORT. A. I2C",
+    "SCL / SDA / 5V / GND",
+    "Front icon: BUILT-IN / BATTERY"
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT RTC/img-71b289e0-e14a-4a18-8745-a8a3c380d61d.webp",
+      "sha256": "6b0fd9c2e13822b1713337d95d5820c051a1f828bbde8d2ef228657f913f2fe8",
+      "role": "Exact-SKU official product photograph; visual transcription reference only; no photo pixels redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT RTC/img-4924d29a-8a3c-431c-9148-2a4b220a6375.webp",
+      "sha256": "4b1ecb11d30b1eb94c5ba8429512739ce92386ced4d2c8b89d1873dc501e97d6",
+      "role": "Exact-SKU official product photograph; visual transcription reference only; no photo pixels redistributed"
+    }
+  ],
+  "rasters": [
+    {
+      "path": "src/units/rtc/reference-back.png",
+      "sha256": "ec8d087e5b569d0279914a5bb1aeb64470b1faa4e94e64fae77df8275bc2c873",
+      "sizePx": [
+        1024,
+        1792
+      ],
+      "artworkKind": "reference-redraw"
+    },
+    {
+      "path": "src/units/rtc/reference-front.png",
+      "sha256": "578e2a076ebac051669d0b980dd7df207aec92b4e0894c00b537f6fda976aeeb",
+      "sizePx": [
+        1024,
+        1792
+      ],
+      "artworkKind": "reference-redraw"
+    }
+  ],
+  "surfaces": [
+    {
+      "face": "back",
+      "size": [
+        16,
+        28
+      ],
+      "position": [
+        0,
+        7.2,
+        -3.8
+      ],
+      "target": "RTC complete native double shell",
+      "method": "Projection onto existing physical triangles only"
+    },
+    {
+      "face": "front",
+      "size": [
+        16,
+        28
+      ],
+      "position": [
+        0,
+        7.2,
+        3.8
+      ],
+      "target": "RTC complete native double shell",
+      "method": "Projection onto existing physical triangles only"
+    }
+  ],
+  "privateSourceVectorsDistributed": false,
+  "photographicPixelsUsed": false,
+  "photoCropsUsed": false,
+  "limitations": [
+    "Packaging artwork is outside the device model.",
+    "Fonts, colors and icon curves are visual reference reconstructions; not the original manufacturing artwork.",
+    "No browser or exhaustive face inspection; 3D placement remains an unverified visual registration."
+  ]
+}

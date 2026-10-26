@@ -1,0 +1,268 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U192_Unit_ByteButton/Structures/Unit_ByteButton.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "adaf2ea82be6a9d91124edaf4d793be2001ac6cd",
+  "sha256": "b9e0ddde7b7c831fab7420910915a702e676ac085b8f68c525ccb9a9bcfd29f6",
+  "origin": [
+    44,
+    12,
+    3.2
+  ],
+  "axes": [
+    [
+      0,
+      -1,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "selectedComponents": [
+    0,
+    3,
+    4,
+    7
+  ],
+  "excludedComponents": [
+    1,
+    2,
+    5,
+    6
+  ],
+  "parts": [
+    {
+      "name": "ByteButton native front shell",
+      "component": 0,
+      "material": "shell",
+      "triangles": 6400,
+      "bounds": {
+        "min": [
+          -12,
+          -44,
+          -4
+        ],
+        "max": [
+          12,
+          44,
+          6
+        ]
+      }
+    },
+    {
+      "name": "ByteButton native rear shell",
+      "component": 3,
+      "material": "shell",
+      "triangles": 4540,
+      "bounds": {
+        "min": [
+          -11.974985122680664,
+          -43.97498321533203,
+          -6
+        ],
+        "max": [
+          11.974985122680664,
+          43.97498321533203,
+          -2.700000047683716
+        ]
+      }
+    },
+    {
+      "name": "ByteButton native eight-way lightpipe below emitting faces",
+      "component": 4,
+      "material": "lightpipe",
+      "triangles": 2232,
+      "bounds": {
+        "min": [
+          5.68649435043335,
+          -24.799999237060547,
+          -3.1500000953674316
+        ],
+        "max": [
+          11.699567794799805,
+          24.800003051757812,
+          6
+        ]
+      }
+    },
+    {
+      "name": "ByteButton native end RGB lightpipe",
+      "component": 7,
+      "material": "lightpipe",
+      "triangles": 256,
+      "bounds": {
+        "min": [
+          -9.699962615966797,
+          36.41559600830078,
+          -1.7000000476837158
+        ],
+        "max": [
+          -6.100038528442383,
+          43.79998016357422,
+          1.9500000476837158
+        ]
+      }
+    },
+    {
+      "name": "ByteButton CH0 native RGB exit face",
+      "component": 4,
+      "material": "lightpipe",
+      "led": 1,
+      "triangles": 10,
+      "bounds": {
+        "min": [
+          8.020946502685547,
+          -24.32993507385254,
+          6
+        ],
+        "max": [
+          11.187728881835938,
+          -23.270065307617188,
+          6
+        ]
+      }
+    },
+    {
+      "name": "ByteButton CH1 native RGB exit face",
+      "component": 4,
+      "material": "lightpipe",
+      "led": 2,
+      "triangles": 10,
+      "bounds": {
+        "min": [
+          8.020946502685547,
+          -17.52993392944336,
+          6
+        ],
+        "max": [
+          11.187728881835938,
+          -16.47006607055664,
+          6
+        ]
+      }
+    },
+    {
+      "name": "ByteButton CH2 native RGB exit face",
+      "component": 4,
+      "material": "lightpipe",
+      "led": 3,
+      "triangles": 10,
+      "bounds": {
+        "min": [
+          8.020946502685547,
+          -10.729934692382812,
+          6
+        ],
+        "max": [
+          11.187728881835938,
+          -9.670066833496094,
+          6
+        ]
+      }
+    },
+    {
+      "name": "ByteButton CH3 native RGB exit face",
+      "component": 4,
+      "material": "lightpipe",
+      "led": 4,
+      "triangles": 10,
+      "bounds": {
+        "min": [
+          8.020946502685547,
+          -3.9299354553222656,
+          6
+        ],
+        "max": [
+          11.187728881835938,
+          -2.870067596435547,
+          6
+        ]
+      }
+    },
+    {
+      "name": "ByteButton CH4 native RGB exit face",
+      "component": 4,
+      "material": "lightpipe",
+      "led": 5,
+      "triangles": 10,
+      "bounds": {
+        "min": [
+          8.020946502685547,
+          2.870067596435547,
+          6
+        ],
+        "max": [
+          11.187728881835938,
+          3.9299354553222656,
+          6
+        ]
+      }
+    },
+    {
+      "name": "ByteButton CH5 native RGB exit face",
+      "component": 4,
+      "material": "lightpipe",
+      "led": 6,
+      "triangles": 10,
+      "bounds": {
+        "min": [
+          8.020946502685547,
+          9.670066833496094,
+          6
+        ],
+        "max": [
+          11.187728881835938,
+          10.729934692382812,
+          6
+        ]
+      }
+    },
+    {
+      "name": "ByteButton CH6 native RGB exit face",
+      "component": 4,
+      "material": "lightpipe",
+      "led": 7,
+      "triangles": 10,
+      "bounds": {
+        "min": [
+          8.020946502685547,
+          16.47006607055664,
+          6
+        ],
+        "max": [
+          11.187728881835938,
+          17.52993392944336,
+          6
+        ]
+      }
+    },
+    {
+      "name": "ByteButton CH7 native RGB exit face",
+      "component": 4,
+      "material": "lightpipe",
+      "led": 8,
+      "triangles": 10,
+      "bounds": {
+        "min": [
+          8.020946502685547,
+          23.270065307617188,
+          6
+        ],
+        "max": [
+          11.187728881835938,
+          24.329933166503906,
+          6
+        ]
+      }
+    }
+  ],
+  "notes": "One rigid canonical transform applied to native assembled front/rear shells and two lightpipes. Displaced copies omitted. Eight native comb exit planes at raw Z=9.2 are partitioned into independent LED materials, without moving, duplicating or changing any native triangle. Original shells and lightpipes have no scaling, cuts or independent alignment. Buttons and PCB are reconstructed separately.",
+  "license": "MIT"
+}

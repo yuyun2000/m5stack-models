@@ -15,7 +15,7 @@ for(const id of ['ir','hub','rfid2']){
   for(const value of o.geometry.attributes.position?.array??[])assert.ok(Number.isFinite(value),`${id}: finite geometry`);
   if(o.material?.opacity!==0)visible.expandByObject(o);
   if(o.userData.source==='official-structure')cad.expandByObject(o);
-  assert.ok(!o.material?.map||['official-raster','official-raster-film'].includes(o.userData.artworkKind),`${id}: texture must be official raster artwork`);
+  assert.ok(!o.material?.map||['official-raster','official-raster-film','reference-redraw'].includes(o.userData.artworkKind),`${id}: texture must be source raster artwork or an identified reference redraw`);
  });
  assert.ok(meshes>12,`${id}: physical shell, board and connector assembly`);
  const size=visible.getSize(new THREE.Vector3()),cadSize=cad.getSize(new THREE.Vector3());

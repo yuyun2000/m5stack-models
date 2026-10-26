@@ -1,0 +1,51 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U187_Unit_MIDI/Structures/cad.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "3de0e0640783ed57315b7d0cd8d2ceb04811f013",
+  "sha256": "ea51b4afd53ae777a6f718b1bdb0467041e7e554f6974b169f34162144bea956",
+  "origin": [
+    71.57657623291016,
+    30.0256450176239,
+    -19.479179620742798
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "MIDI native assembled rear shell",
+      "material": "shell"
+    },
+    {
+      "component": 2,
+      "name": "MIDI native assembled front shell",
+      "material": "shell"
+    },
+    {
+      "component": 4,
+      "name": "MIDI native green power light guide",
+      "material": "lens"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    3,
+    5
+  ],
+  "notes": "Original assembled rear/front shell components 0 and 2 and light guide component 4 retained with one common translation. No scaling, cuts, fills or per-part realignment. Components 1, 3 and 5 are displaced individual copies."
+}

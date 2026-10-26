@@ -1,0 +1,59 @@
+{
+  "id": "lcd",
+  "sku": "U120",
+  "status": "reference-redraw-integrated",
+  "updatedAt": "2026-10-26",
+  "artworkKind": "reference-redraw",
+  "coverage": "Rear product label. The visible operating front has no permanent product label in the exact references.",
+  "transcription": [
+    "COLOR LCD",
+    "135*240 Pixels",
+    "1.14 inch LCD",
+    "ST7789V2",
+    "PICO(4M)",
+    "PORT. A. I2C",
+    "SCL / SDA / 5V / GND"
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/lcd/lcd_02.webp",
+      "sha256": "7bc47763724fa65fc4cc884fd1c23f5fbc85c06a4f2f68faa9fc44944fae1075",
+      "role": "Exact-SKU official product photograph; visual transcription reference only; no photo pixels redistributed"
+    }
+  ],
+  "rasters": [
+    {
+      "path": "src/units/lcd/reference-back.png",
+      "sha256": "c3b6da96e2257fa0e05e4e0aee470e6a2c4be6f166663a51eb31991b3fdc2142",
+      "sizePx": [
+        1000,
+        1430
+      ],
+      "artworkKind": "reference-redraw"
+    }
+  ],
+  "surfaces": [
+    {
+      "face": "back",
+      "size": [
+        20,
+        28.6
+      ],
+      "position": [
+        0,
+        8,
+        -3.8
+      ],
+      "target": "LCD native rear shell",
+      "method": "Projection onto existing physical triangles only"
+    }
+  ],
+  "privateSourceVectorsDistributed": false,
+  "photographicPixelsUsed": false,
+  "photoCropsUsed": false,
+  "limitations": [
+    "The removable screen shipping/protective film with size arrows and the package label are omitted from the default operating model so the external framebuffer remains unobstructed.",
+    "Fonts, colors and icon curves are visual reference reconstructions; not the original manufacturing artwork.",
+    "No browser or exhaustive face inspection; 3D placement remains an unverified visual registration."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "sku": "U127",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U127_Unit_Gesture/Structures/Unit_Gesture.stl",
+  "gitBlob": "2c35765e4a7a5fb47e8f2c048fc197ed0cc02796",
+  "sha256": "7d0537e1ae32d6536779c42485440db72a94f53c917fd87ff78415706cd8bf12",
+  "license": "MIT",
+  "selectedComponents": [
+    {
+      "index": 0,
+      "name": "Gesture native front shell",
+      "triangles": 1790
+    },
+    {
+      "index": 2,
+      "name": "Gesture native rear shell",
+      "triangles": 1632
+    }
+  ],
+  "excludedComponents": [
+    1,
+    3
+  ],
+  "excludedReason": "Displaced duplicates of the front and rear shells",
+  "transform": {
+    "subtractOriginMm": [
+      397.2685241699219,
+      269.2234802246094,
+      2.0000010251999356
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1
+  },
+  "nativeAssemblyNote": "The two shell X centres differ by approximately 0.00061 mm in the source; no independent shell alignment or scaling applied."
+}

@@ -1,0 +1,180 @@
+{
+  "product": "CO2",
+  "sku": "U103",
+  "sensor": "SCD40",
+  "retrievedAt": "2026-10-26",
+  "officialDocs": "https://docs.m5stack.com/en/unit/co2",
+  "officialMCP": {
+    "query": "M5Stack CO2 Unit SCD40 U103 dimensions 3D STEP STL",
+    "rawResponseDistributed": false,
+    "result": "Confirmed SKU U103, SCD40, 48×24×16 mm, Grove I2C, two LEGO-compatible mounting holes and official structure link"
+  },
+  "officialCad": {
+    "sku": "U103",
+    "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U103_Unit_CO2/Structures/Unit_CO2.stl",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "gitBlob": "172fa25ac471ca99e35eface52892fcdb226fcc4",
+    "sha256": "954c2f157272e08de4bbac9081666ba64272e298190259c772abce93f27d666a",
+    "license": "MIT",
+    "selectedComponents": [
+      {
+        "index": 0,
+        "name": "CO2 native assembled double shell",
+        "triangles": 13396
+      }
+    ],
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "excludedReason": "Displaced duplicate front and rear shells; assembled component retains both native shells, all vents, mounts, seam and molding.",
+    "transform": {
+      "subtractOriginMm": [
+        -240,
+        0,
+        5.2
+      ],
+      "axes": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "scale": 1
+    }
+  },
+  "dimensions": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/co2/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+    "sha256": "63652c3d0252415cfe2dfef7e8c5c957bde89302b44897239266858596199cef",
+    "normalizedMm": [
+      24,
+      48,
+      16
+    ],
+    "mountingHoleDiameterMm": 5,
+    "mountingHoleCentersMm": [
+      [
+        -8,
+        -12
+      ],
+      [
+        8,
+        -12
+      ]
+    ],
+    "groveFaceMm": [
+      10,
+      5.2
+    ]
+  },
+  "sensorPackage": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/co2/SCD40.pdf",
+    "sha256": "8dbb0ea9df113ee4d952e940f79668fa1ce555f5b7033e441d60ac7cd3f6bf47",
+    "document": "Sensirion SCD4x datasheet version 1.2, May 2022, section 4.1 page 20",
+    "substrateFootprintMm": [
+      10.1,
+      10.1
+    ],
+    "substrateHeightMm": 0.8,
+    "canHeightMm": 5.5,
+    "canWidthsMm": [
+      8.5,
+      7.8
+    ],
+    "inferred": "Installed XYZ, can corner/transition, protection membrane outline, pad details and physical PCB are appearance reconstruction.",
+    "notRedistributed": true
+  },
+  "appearance": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/co2/co2_01.webp",
+      "sha256": "272d56c63c8fe35245c20279af1b9ec9f71a1c3d25fc530e79185b52a188f5cd",
+      "role": "Same-SKU exterior reference; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/co2/co2_02.webp",
+      "sha256": "a9c1e0ac359cf2f7cee6994cd7ea54b9a6b02fe4b0e3ec835a5914a2cfa91d36",
+      "role": "Same-SKU exterior reference; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/co2/co2_04.webp",
+      "sha256": "8e5ce57ce33fe44b6320111abd41409e92bc7de68c4db6247e68227670d171b3",
+      "role": "Same-SKU exterior reference; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/co2/co2_05.webp",
+      "sha256": "66377d8a029495fc00b1aea6d7c5ed93b5b45c482ad44ad145c0bc9a105c88d4",
+      "role": "Same-SKU exterior reference; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/co2/co2_06.webp",
+      "sha256": "8f92084662cac78d735cc16ad72c0b236304e5d0ec660c5062c8835f39a8e1da",
+      "role": "Same-SKU exterior reference; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/co2/co2_07.webp",
+      "sha256": "dee6eba7d00ad744e9addb62aafd0e32d8a524bf1c3fd47ff53baad06ea68a86",
+      "role": "Same-SKU exterior reference; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/co2/co2_08.webp",
+      "sha256": "295accff42c800d70947beafef085a4c38617ddd5b32bd3b1dfaaa4c7dc8789e",
+      "role": "Same-SKU exterior reference; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/co2/co2_09.webp",
+      "sha256": "a9801a747f679f8821a9ad2720847443e6b41a09b3f275c9e65e55555fa1564f",
+      "role": "Same-SKU exterior reference; not redistributed"
+    }
+  ],
+  "schematic": {
+    "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/590/SCH_UNIT_CO2.pdf",
+    "sha256": "e18dfc6f4260cbd42bbf67e893a8557f08350f264c9879039becdd201ff6386c",
+    "role": "Confirms SCD40 and buck regulator/inductor/passive population; no LED shown; not redistributed"
+  },
+  "runtimeSha256": {
+    "src/units/co2/assembly.js": "e3afe28b070d8f23753f7197965995901e3896a583ce7813481f935b24ea4d5a",
+    "src/units/co2/cad-map.json": "c30521d2b6138fa43af28dd77b92a71a32e8ae16217c9ae24644e803ff57d874",
+    "src/units/co2/dimensions.js": "05e143cfdf169e9bbe6226b5f959f8041f7614480701e2ae3ec786c738bc192e",
+    "src/units/co2/geometry-data.js": "c437f55c0b687d75562077fe42fee6b40e955824f28426e75bf5e6ba84f47c8d",
+    "src/units/co2/index.js": "0776d4fd39cfb3503592f110291bbe1f448ec7b6e6f5c7ee59d9d9a07821ca71",
+    "src/units/co2/reference-back.png": "57d3b7a0f42b6374b60f56b8c68639bf7e85bb4aeb39c95b76fa9ce0dd5ea451",
+    "src/units/co2/stickers.js": "ee134ec4624f6cd3d60a810e5b65267a1dd7fbdb34ce17e6443c9ec1ed046c4e"
+  },
+  "artwork": {
+    "status": "reference-redraw-integrated",
+    "kind": "reference-redraw",
+    "sourcePhotographs": [
+      {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/co2/co2_09.webp",
+        "sha256": "a9801a747f679f8821a9ad2720847443e6b41a09b3f275c9e65e55555fa1564f",
+        "role": "Exact-SKU official product photograph; visual transcription reference only; no photo pixels redistributed"
+      }
+    ],
+    "finalRasters": [
+      {
+        "path": "src/units/co2/reference-back.png",
+        "sha256": "57d3b7a0f42b6374b60f56b8c68639bf7e85bb4aeb39c95b76fa9ce0dd5ea451",
+        "sizePx": [
+          1024,
+          1792
+        ],
+        "artworkKind": "reference-redraw"
+      }
+    ],
+    "privateSourcesUsed": false,
+    "photosRedistributed": false,
+    "visualVerification": null
+  },
+  "stickerVerification": "docs/research/co2/sticker-check.json"
+}

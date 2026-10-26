@@ -1,0 +1,226 @@
+{
+  "id": "asr",
+  "sku": "U194",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit-ASR",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "query": "Unit ASR U194 产品尺寸 接口 按键 麦克风 扬声器 LED",
+    "rawResponseDistributed": false,
+    "result": "Exact U194 subset confirms 48×24×16 mm, CI-03T module, analog GM16027P-2C320DB microphone, internal cavity speaker, Grove UART GND/5V/RXD/TXD and red D4. Unrelated Module ASR M147 entries were excluded."
+  },
+  "reference": {
+    "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/635/U194_02.webp",
+    "sha256": "3bc8371d85bf00b9ca5251f4efb718752ff854c10ef42a956da3f7f1c06ff140"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U194_Unit_ASR/Structures/Unit_ASR.stl",
+      "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+      "gitBlob": "1c8567bf87f51910d7e037eb8a0627189deec4dd",
+      "sha256": "60389af4caa20d3eac0789117951aa9dac53f74ae3d4c0afa7e7c6f29f0617b4",
+      "license": "MIT; retain licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/635/U914_01.webp",
+      "sha256": "bb4c1e682822948fe79ddf4bc8cdaef13cfdafb5cb665d756f35dc945babeba4"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/635/U194_02.webp",
+      "sha256": "3bc8371d85bf00b9ca5251f4efb718752ff854c10ef42a956da3f7f1c06ff140"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/635/U194_03.webp",
+      "sha256": "92694001dba03f69cbf34a6676a7b7fbeb73b7de8f42e0bbf7384be5b8d441e5"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/635/U914_04.webp",
+      "sha256": "49fede2cd876190a6561a5d4cd1406553264c81d61adbe6b5f0636c01cee5e8d"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/635/U914_05.webp",
+      "sha256": "023a4aac5c09749ac78ab6694c36646a8a2ac3112b5bcf963d7372509544cdcc"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/635/U914_06.webp",
+      "sha256": "01ace8bb74c87151e4f720e99cd908ab1a39a5a35d5b022d391d784f475b386c"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/635/U914_07.webp",
+      "sha256": "6905e95b7e2b2804e79df84ab78f3ddf484e514fd2af6e138ac5a1e8dd370590"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/635/U914_08.webp",
+      "sha256": "5937f1af5f618459f0ecdf16c42ee18fe166dbf19489f1a2fce23b9d6f51b133"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/635/SCH_UNIT_ASR_V1.0_sch_01.png",
+      "sha256": "2eb72cde9a1db252b92a19b91e67fa2e2f7e14c0ae5ae308575066d2cd3cddae"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      -240,
+      0,
+      5.199999928474426
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "triangles": 13362,
+    "method": "One rigid translation, no scaling/cuts/filling/per-part realignment. Entire original assembled source shell retained; components 1 and 2 are displaced individual half duplicates."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      48,
+      16
+    ],
+    "cadEnvelopeMm": [
+      24,
+      48,
+      16
+    ],
+    "visualEnvelopeMm": [
+      24,
+      48,
+      16.012
+    ],
+    "mountingHoleCentersMm": [
+      [
+        -8,
+        -12
+      ],
+      [
+        8,
+        -12
+      ]
+    ],
+    "mountingHoleDiameterMm": 5
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "sources": "docs/research/asr/artwork.json",
+    "originalsDistributed": false,
+    "files": [
+      {
+        "path": "src/units/asr/reference-redraw-front.png",
+        "sha256": "ddd1b4911cc50289df98529bb3b4e5f05cf75ec710e80b0019a0c33300f4fba7",
+        "pixels": [
+          756,
+          3456
+        ],
+        "sizeMm": [
+          6.3,
+          28.8
+        ],
+        "positionMm": [
+          0,
+          9,
+          8.012
+        ],
+        "face": "front",
+        "method": "printedFilm",
+        "artworkKind": "reference-redraw",
+        "target": "physical adhesive film over native grille",
+        "reference": {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/635/U194_02.webp",
+          "sha256": "3bc8371d85bf00b9ca5251f4efb718752ff854c10ef42a956da3f7f1c06ff140"
+        }
+      },
+      {
+        "path": "src/units/asr/reference-redraw-back.png",
+        "sha256": "bc9aaa27a71f88d2093fa4acef6e8f3f94d75b083693aefdf895c3dc7863a330",
+        "pixels": [
+          1968,
+          3480
+        ],
+        "sizeMm": [
+          16.4,
+          29
+        ],
+        "positionMm": [
+          0,
+          7.1,
+          -7.8
+        ],
+        "face": "back",
+        "method": "printedArtwork",
+        "artworkKind": "reference-redraw",
+        "target": "ASR complete native assembled shell",
+        "reference": {
+          "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/635/U914_07.webp",
+          "sha256": "6905e95b7e2b2804e79df84ab78f3ddf484e514fd2af6e138ac5a1e8dd370590"
+        }
+      }
+    ]
+  },
+  "runtimeFiles": [
+    {
+      "path": "src/units/asr/assembly.js",
+      "sha256": "e38521645c91c73c78fa8def7b1c512b3a30afbe954648418557b8eee9073be1"
+    },
+    {
+      "path": "src/units/asr/cad-map.json",
+      "sha256": "4c9647a81c9950d9f30db4d3d4a470893ba1f449d562be2ba99351b28a2d96f5"
+    },
+    {
+      "path": "src/units/asr/dimensions.js",
+      "sha256": "1975cafc2710ff5bb5c4519807732bb1abd05e679478371649d3af6a4b65e8e0"
+    },
+    {
+      "path": "src/units/asr/geometry-data.js",
+      "sha256": "fa67f7fdababf554bb22305af76e9bfdc089b02d7484c0dcd5cfbff674b54e6e"
+    },
+    {
+      "path": "src/units/asr/index.js",
+      "sha256": "10c3b597327ab27e92814f2ae2264c84a89539b817a0dda9ea530865b2cf71ae"
+    },
+    {
+      "path": "src/units/asr/reference-redraw-back.png",
+      "sha256": "bc9aaa27a71f88d2093fa4acef6e8f3f94d75b083693aefdf895c3dc7863a330"
+    },
+    {
+      "path": "src/units/asr/reference-redraw-front.png",
+      "sha256": "ddd1b4911cc50289df98529bb3b4e5f05cf75ec710e80b0019a0c33300f4fba7"
+    },
+    {
+      "path": "src/units/asr/stickers.js",
+      "sha256": "e591d2925179f4ff8af0fa56cd3414d8d40416f18f43772cdab35bbde4ac2c02"
+    }
+  ],
+  "inferences": [
+    "PCB outline/thickness/Z, concealed carrier/module/package envelopes and positions, speaker frame/cone/basket/magnet dimensions, P1 connector pitch/position and fixed wire routing, microphone can/gasket/acoustic-bore/mesh installation are inferred visual reconstruction; no production assembled STEP or manufacturing-fit claim.",
+    "Exact exterior images show a small frontal MIC inlet. The complete native shell is unmodified; the installed acoustic gasket/duct and hidden package behind its shoulder seam are reconstructed, not production acoustic geometry.",
+    "D4 is schematic RED LED; exact exterior photographs do not establish an exposed lens/light path. Concealed fixed red package only, no Led API. The printed blue bulb is artwork.",
+    "Exact rear artwork prints 8Ω@1W while product body specifies 8Ω@0.8W; no electrical/speaker-rating determination.",
+    "No button, USB, synthetic microphone capture, voice/wake recognition, sound/audio playback or moving diaphragm API. Sensor is a passive visual anchor."
+  ],
+  "officialFeedback": {
+    "id": "6bd4721d4c394947a8bf872de266f1cd",
+    "result": "Accepted and queued for human evaluation",
+    "scope": "U194 body speaker 0.8W vs rear print 1W; missing production assembly datums and D4 optical-path evidence."
+  }
+}

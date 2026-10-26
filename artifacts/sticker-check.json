@@ -20,7 +20,7 @@
     {
       "product": "cores3",
       "configuration": "din",
-      "layers": 6,
+      "layers": 7,
       "groveLayers": null,
       "movingLabels": 0,
       "status": "pass"
@@ -52,7 +52,7 @@
     {
       "product": "papermono",
       "configuration": "default",
-      "layers": 1,
+      "layers": 2,
       "groveLayers": null,
       "movingLabels": 0,
       "status": "pass"
@@ -60,7 +60,7 @@
     {
       "product": "core2",
       "configuration": "default",
-      "layers": 2,
+      "layers": 3,
       "groveLayers": null,
       "movingLabels": 0,
       "status": "pass"
@@ -69,6 +69,14 @@
       "product": "papercolor",
       "configuration": "default",
       "layers": 4,
+      "groveLayers": null,
+      "movingLabels": 0,
+      "status": "pass"
+    },
+    {
+      "product": "nanoc6",
+      "configuration": "default",
+      "layers": 3,
       "groveLayers": null,
       "movingLabels": 0,
       "status": "pass"
@@ -98,10 +106,26 @@
       "status": "pass"
     },
     {
+      "product": "nesso-n1",
+      "configuration": "default",
+      "layers": 4,
+      "groveLayers": null,
+      "movingLabels": 0,
+      "status": "pass"
+    },
+    {
+      "product": "stamplc",
+      "configuration": "default",
+      "layers": 4,
+      "groveLayers": null,
+      "movingLabels": 0,
+      "status": "pass"
+    },
+    {
       "product": "env-iii",
       "configuration": "standard",
-      "layers": 0,
-      "groveLayers": 0,
+      "layers": 1,
+      "groveLayers": 1,
       "movingLabels": 0,
       "status": "pass"
     },
@@ -116,8 +140,8 @@
     {
       "product": "pir",
       "configuration": "standard",
-      "layers": 0,
-      "groveLayers": 0,
+      "layers": 1,
+      "groveLayers": 1,
       "movingLabels": 0,
       "status": "pass"
     },
@@ -148,8 +172,8 @@
     {
       "product": "angle",
       "configuration": "standard",
-      "layers": 0,
-      "groveLayers": 0,
+      "layers": 1,
+      "groveLayers": 1,
       "movingLabels": 0,
       "status": "pass"
     },
@@ -162,16 +186,56 @@
       "status": "pass"
     },
     {
+      "product": "color",
+      "configuration": "default",
+      "layers": 1,
+      "groveLayers": 1,
+      "movingLabels": 0,
+      "status": "pass"
+    },
+    {
+      "product": "tof",
+      "configuration": "default",
+      "layers": 1,
+      "groveLayers": 1,
+      "movingLabels": 0,
+      "status": "pass"
+    },
+    {
       "product": "light",
       "configuration": "standard",
-      "layers": 0,
-      "groveLayers": 0,
+      "layers": 1,
+      "groveLayers": 1,
       "movingLabels": 0,
       "status": "pass"
     },
     {
       "product": "light",
       "configuration": "education-cn",
+      "layers": 1,
+      "groveLayers": 1,
+      "movingLabels": 0,
+      "status": "pass"
+    },
+    {
+      "product": "relay",
+      "configuration": "socket",
+      "layers": 1,
+      "groveLayers": 1,
+      "movingLabels": 0,
+      "status": "pass"
+    },
+    {
+      "product": "relay",
+      "configuration": "plug",
+      "layers": 1,
+      "groveLayers": 1,
+      "movingLabels": 0,
+      "status": "pass"
+    },
+    {
+      "product": "joystick-v11",
+      "configuration": "default",
       "layers": 1,
       "groveLayers": 1,
       "movingLabels": 0,
@@ -186,10 +250,42 @@
       "status": "pass"
     },
     {
+      "product": "button",
+      "configuration": "default",
+      "layers": 1,
+      "groveLayers": 1,
+      "movingLabels": 0,
+      "status": "pass"
+    },
+    {
+      "product": "ncir",
+      "configuration": "default",
+      "layers": 1,
+      "groveLayers": 1,
+      "movingLabels": 0,
+      "status": "pass"
+    },
+    {
+      "product": "heart",
+      "configuration": "default",
+      "layers": 1,
+      "groveLayers": 1,
+      "movingLabels": 0,
+      "status": "pass"
+    },
+    {
+      "product": "encoder",
+      "configuration": "default",
+      "layers": 1,
+      "groveLayers": 1,
+      "movingLabels": 0,
+      "status": "pass"
+    },
+    {
       "product": "thermal",
       "configuration": "standard",
-      "layers": 0,
-      "groveLayers": 0,
+      "layers": 1,
+      "groveLayers": 1,
       "movingLabels": 0,
       "status": "pass"
     },
@@ -198,6 +294,14 @@
       "configuration": "education-cn",
       "layers": 1,
       "groveLayers": 1,
+      "movingLabels": 0,
+      "status": "pass"
+    },
+    {
+      "product": "tvoc",
+      "configuration": "default",
+      "layers": 2,
+      "groveLayers": 2,
       "movingLabels": 0,
       "status": "pass"
     },
@@ -226,18 +330,42 @@
       "status": "pass"
     },
     {
+      "product": "rs485",
+      "configuration": "socket",
+      "layers": 1,
+      "groveLayers": 1,
+      "movingLabels": 0,
+      "status": "pass"
+    },
+    {
+      "product": "rs485",
+      "configuration": "plug",
+      "layers": 1,
+      "groveLayers": 1,
+      "movingLabels": 0,
+      "status": "pass"
+    },
+    {
+      "product": "buzzer",
+      "configuration": "default",
+      "layers": 1,
+      "groveLayers": 1,
+      "movingLabels": 0,
+      "status": "pass"
+    },
+    {
       "product": "fan",
       "configuration": "bare",
-      "layers": 0,
-      "groveLayers": 0,
+      "layers": 1,
+      "groveLayers": 1,
       "movingLabels": 0,
       "status": "pass"
     },
     {
       "product": "fan",
       "configuration": "propeller",
-      "layers": 0,
-      "groveLayers": 0,
+      "layers": 1,
+      "groveLayers": 1,
       "movingLabels": 0,
       "status": "pass"
     },
@@ -258,10 +386,42 @@
       "status": "pass"
     },
     {
+      "product": "limit",
+      "configuration": "default",
+      "layers": 1,
+      "groveLayers": 1,
+      "movingLabels": 0,
+      "status": "pass"
+    },
+    {
+      "product": "cardkb",
+      "configuration": "default",
+      "layers": 1,
+      "groveLayers": 1,
+      "movingLabels": 0,
+      "status": "pass"
+    },
+    {
+      "product": "key",
+      "configuration": "default",
+      "layers": 1,
+      "groveLayers": 1,
+      "movingLabels": 0,
+      "status": "pass"
+    },
+    {
+      "product": "8encoder",
+      "configuration": "default",
+      "layers": 12,
+      "groveLayers": 12,
+      "movingLabels": 0,
+      "status": "pass"
+    },
+    {
       "product": "scroll",
       "configuration": "standard",
-      "layers": 0,
-      "groveLayers": 0,
+      "layers": 1,
+      "groveLayers": 1,
       "movingLabels": 0,
       "status": "pass"
     },
@@ -270,6 +430,14 @@
       "configuration": "education-cn",
       "layers": 1,
       "groveLayers": 1,
+      "movingLabels": 0,
+      "status": "pass"
+    },
+    {
+      "product": "roller485",
+      "configuration": "default",
+      "layers": 2,
+      "groveLayers": 2,
       "movingLabels": 0,
       "status": "pass"
     }

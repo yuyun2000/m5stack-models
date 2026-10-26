@@ -1,0 +1,43 @@
+{
+  "sku": "U019",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U019_Unit_Earth/Structures/Unit_Earth.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "64badfe5b929e66d70ae8b3b4b8d46a7a0a04e79",
+  "sha256": "3126cd06080bf548940af61c8c2ec487770c9283de94dd87e78ac3efce485686",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/LICENSE",
+  "origin": [
+    175.9984130859375,
+    36.151625299453734,
+    -26
+  ],
+  "axes": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "Earth complete native assembled shell",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "notes": "Complete assembled component 0 retained with all 8436 triangles. One common rigid Y-axis half turn and translation, scale 1; no hole fill, shell cut, per-part alignment or artificial closure. Components 1/2 are displaced shell copies. Original structure omits exposed probe/electronics; these are separate solid reconstructions constrained by official dimensions/photos."
+}

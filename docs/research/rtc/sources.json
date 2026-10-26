@@ -1,0 +1,220 @@
+{
+  "product": "Unit RTC",
+  "sku": "U126",
+  "retrievedAt": "2026-10-26",
+  "officialDocs": "https://docs.m5stack.com/en/unit/UNIT%20RTC",
+  "officialMCP": {
+    "queries": [
+      "Unit RTC U126 BM8563 CR1220 dimensions battery replaceable",
+      "Unit RTC U126 电池 型号 CR1220 可更换 拆开 PCB"
+    ],
+    "rawResponseDistributed": false,
+    "result": "Confirms HYM8563, 32.768 kHz oscillator, built-in button battery, 48 × 24 × 8 mm, Grove I2C pin labels and official sources. Search terms are not specifications; no BM8563/CR1220 claim is made.",
+    "feedback": {
+      "category": "missing_documentation",
+      "feedbackId": "6de3c2f2791a41c0a792a7e99457f992",
+      "issue": "Exact U126 battery model, installation/holder type, populated internal assembly and replaceability not documented in checked official sources."
+    }
+  },
+  "officialCad": {
+    "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U126_Unit_RTC/Structures/Unit_RTC.stl",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "gitBlob": "7c515dbc2c57924389427fd3c248a9c3eacea63b",
+    "sha256": "2155756c18f66b8f2092803407edbf681d1405557ee937f4a6e4c830c1cdab8a",
+    "license": "MIT",
+    "selectedComponents": [
+      {
+        "index": 0,
+        "name": "RTC complete native double shell",
+        "triangles": 3580
+      }
+    ],
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "excludedReason": "Laterally displaced separate upper and lower shell copies; island 0 is complete assembled housing",
+    "transform": {
+      "subtractOriginMm": [
+        0,
+        0,
+        1.1999999284744263
+      ],
+      "axes": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "scale": 1
+    },
+    "nativeAssemblyNote": "Retain native complete assembled double shell island 0 using one Z-centering translation. Islands 1 and 2 are laterally displaced individual shells. All mount bores, side release recess, Grove aperture, seams and molded details retained; no independent alignment, scaling, filling or shell cuts."
+  },
+  "dimensions": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/UNIT%20RTC/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+    "sha256": "fdbc801b874ed401d6ce2f3b5d377a6b15dea13c99a685ec0bc787bb91136797",
+    "officialListingMm": [
+      48,
+      24,
+      8
+    ],
+    "normalizedNominalMm": [
+      24,
+      48,
+      8
+    ],
+    "nativeHousingEnvelopeMm": [
+      24,
+      48,
+      8
+    ],
+    "defaultVisualEnvelopeMm": [
+      24,
+      48,
+      8.000000095367431
+    ],
+    "mountingHoleDiameterMm": 5,
+    "mountingHoleCentersMm": [
+      [
+        -8,
+        -12
+      ],
+      [
+        8,
+        -12
+      ]
+    ],
+    "groveFaceMm": [
+      10,
+      5.2
+    ]
+  },
+  "schematic": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT RTC/img-6f0baa97-c15f-4c85-be56-12078e7a7dd2.webp",
+    "sha256": "d88f469e0cc373dd00ec32c8ff38051a4dc450ddd471b70f829a47e141fc63a8",
+    "note": "RTC8563 U1/U2 alternative 8-pin footprints, Y1 32.768 kHz, HT7533, BAV74 and generic BT1 Battery are shown. No battery model or holder geometry is specified; simultaneous population is not asserted."
+  },
+  "datasheet": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/rtc/HYM8563_Datasheet_V2.2_cn.pdf",
+    "sha256": "e23b8d30e3252e8e527cfe7a101e6b20aed57fd4a2722e8f3069ef5670423de6",
+    "note": "HYM8563 v2.2 p1 specifies SOP8/MSOP8 variants; p17 outlines both. Selection of a concealed SOP8 visual body is inferred rather than a production BOM claim."
+  },
+  "store": {
+    "url": "https://shop.m5stack.com/products/real-time-clock-rtc-unit-hym8563",
+    "sha256": "5e773b04e736c67faef6de07311e26334620939a6ef6498f88aba34db951dada",
+    "note": "Current product gallery repeats the closed exterior photographs. Older HTML meta-description mentions a supplied 38 mAh coin cell; current visible description only confirms built-in button battery. Neither establishes its part number, shape, tabs or replaceability. No capacity is simulated."
+  },
+  "appearance": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT RTC/img-1d24e2f2-7e72-48df-91a3-db5d837ea3d7.webp",
+      "sha256": "dfa13d9f8fc5688ea65befc3ce05aa9b1825d8ef60c6bcecf2b5e46003f4fecc",
+      "role": "Exact U126 official product photograph; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT RTC/img-71b289e0-e14a-4a18-8745-a8a3c380d61d.webp",
+      "sha256": "6b0fd9c2e13822b1713337d95d5820c051a1f828bbde8d2ef228657f913f2fe8",
+      "role": "Exact U126 official product photograph; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT RTC/img-26e6b42d-6d00-43b8-9f61-b16130333c90.webp",
+      "sha256": "6faff18c8ba62ecb3ffe34c4eca7c916d5e47be0834894b069e9c33b227d0480",
+      "role": "Exact U126 official product photograph; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT RTC/img-8db586cc-d573-4381-8628-44cfebed3fc3.webp",
+      "sha256": "0fa68f82ade235255ae9c46b2b611e79d54749b346c8440a310599ed7cf037de",
+      "role": "Exact U126 official product photograph; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT RTC/img-462bbb0c-4bf5-412d-9110-563c9298f367.webp",
+      "sha256": "9fd869a59ed866299b4b7c00c9ce6728d0a8af0e68af6c7eaf9dc83c138b3dce",
+      "role": "Exact U126 official product photograph; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT RTC/img-4924d29a-8a3c-431c-9148-2a4b220a6375.webp",
+      "sha256": "4b1ecb11d30b1eb94c5ba8429512739ce92386ced4d2c8b89d1873dc501e97d6",
+      "role": "Exact U126 official product photograph; not redistributed"
+    }
+  ],
+  "inferred": [
+    "PCB outline, open mounting-boss scallops, Grove notch, thickness and installed plane",
+    "Choice of one populated HYM8563 SOP8 visual package, installed XYZ and package height; official schematic also shows an alternative RTC8563 footprint, not verified dual population",
+    "Crystal envelope and placement; regulator, BAV74 and concealed passive package envelopes/placement",
+    "Concealed unmarked coin-cell diameter 12.5 mm, thickness 2 mm and XYZ; fixed insulating support and metal contact tab geometry are estimates, not battery model/BOM or replaceable-holder claims",
+    "Grove internal wall, contact, latch and solder-tail geometry; fastening screw and shank"
+  ],
+  "components": {
+    "grove": "Physical HY2.0-4P port and shared four-wire cable; static pin labels only",
+    "sensor": "Passive HYM8563 package anchor only, no commands/measurements",
+    "battery": "Fixed concealed visual geometry, no Port, removable module or battery state",
+    "leds": 0,
+    "motion": "No physical moving feature verified; no invented time/calendar animation or autonomous behavior"
+  },
+  "artwork": {
+    "status": "reference-redraw-integrated",
+    "kind": "reference-redraw",
+    "sourcePhotographs": [
+      {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT RTC/img-71b289e0-e14a-4a18-8745-a8a3c380d61d.webp",
+        "sha256": "6b0fd9c2e13822b1713337d95d5820c051a1f828bbde8d2ef228657f913f2fe8",
+        "role": "Exact-SKU official product photograph; visual transcription reference only; no photo pixels redistributed"
+      },
+      {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/UNIT RTC/img-4924d29a-8a3c-431c-9148-2a4b220a6375.webp",
+        "sha256": "4b1ecb11d30b1eb94c5ba8429512739ce92386ced4d2c8b89d1873dc501e97d6",
+        "role": "Exact-SKU official product photograph; visual transcription reference only; no photo pixels redistributed"
+      }
+    ],
+    "finalRasters": [
+      {
+        "path": "src/units/rtc/reference-back.png",
+        "sha256": "ec8d087e5b569d0279914a5bb1aeb64470b1faa4e94e64fae77df8275bc2c873",
+        "sizePx": [
+          1024,
+          1792
+        ],
+        "artworkKind": "reference-redraw"
+      },
+      {
+        "path": "src/units/rtc/reference-front.png",
+        "sha256": "578e2a076ebac051669d0b980dd7df207aec92b4e0894c00b537f6fda976aeeb",
+        "sizePx": [
+          1024,
+          1792
+        ],
+        "artworkKind": "reference-redraw"
+      }
+    ],
+    "privateSourcesUsed": false,
+    "photosRedistributed": false,
+    "visualVerification": null
+  },
+  "runtimeSha256": {
+    "src/units/rtc/assembly.js": "e66385a8110ebb78b12a7a38df080687fa3dfc0aad7778b1cb6b1020ad959902",
+    "src/units/rtc/cad-map.json": "8c6ccea886e07cef006c0a10cb9863d01c611d34da97fb06cf763b8b4525caae",
+    "src/units/rtc/dimensions.js": "c2eb217cbd181f6b905c42577839a5843c83d0540d79c09fc66ce4ad9eb388ce",
+    "src/units/rtc/geometry-data.js": "22e364d016fac4e8137fb42c98adf5d23942df82dc1a8cff1d153c073516047e",
+    "src/units/rtc/index.js": "bebdd8bf22fc86c41994cb89c2ac7bee40144443ff67136a9b8f0576ab4b1009",
+    "src/units/rtc/reference-back.png": "ec8d087e5b569d0279914a5bb1aeb64470b1faa4e94e64fae77df8275bc2c873",
+    "src/units/rtc/reference-front.png": "578e2a076ebac051669d0b980dd7df207aec92b4e0894c00b537f6fda976aeeb",
+    "src/units/rtc/stickers.js": "9933f03e9c6b748198bf2874a29ccc726dc300c82de8ee614d7d72be4c010eea"
+  },
+  "verification": {
+    "geometry": "docs/research/rtc/smoke.json",
+    "visual": null,
+    "stage": "modeled",
+    "limitations": "Necessary construction/API smoke only; no browser acceptance, hardware, production fit, battery BOM/replaceability or time/electrical verification."
+  },
+  "stickerVerification": "docs/research/rtc/sticker-check.json"
+}

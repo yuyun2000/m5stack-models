@@ -1,0 +1,58 @@
+{
+  "id": "co2",
+  "sku": "U103",
+  "status": "reference-redraw-integrated",
+  "updatedAt": "2026-10-26",
+  "artworkKind": "reference-redraw",
+  "coverage": "Rear product label. The visible operating front has no permanent product label in the exact references.",
+  "transcription": [
+    "CO2",
+    "SCD40",
+    "Humidity",
+    "Temperature",
+    "PORT. A. I2C",
+    "SCL / SDA / 5V / GND"
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/co2/co2_09.webp",
+      "sha256": "a9801a747f679f8821a9ad2720847443e6b41a09b3f275c9e65e55555fa1564f",
+      "role": "Exact-SKU official product photograph; visual transcription reference only; no photo pixels redistributed"
+    }
+  ],
+  "rasters": [
+    {
+      "path": "src/units/co2/reference-back.png",
+      "sha256": "57d3b7a0f42b6374b60f56b8c68639bf7e85bb4aeb39c95b76fa9ce0dd5ea451",
+      "sizePx": [
+        1024,
+        1792
+      ],
+      "artworkKind": "reference-redraw"
+    }
+  ],
+  "surfaces": [
+    {
+      "face": "back",
+      "size": [
+        16,
+        28
+      ],
+      "position": [
+        0,
+        7.2,
+        -7.8
+      ],
+      "target": "CO2 native assembled double shell",
+      "method": "Projection onto existing physical triangles only"
+    }
+  ],
+  "privateSourceVectorsDistributed": false,
+  "photographicPixelsUsed": false,
+  "photoCropsUsed": false,
+  "limitations": [
+    "Packaging artwork is outside the device model.",
+    "Fonts, colors and icon curves are visual reference reconstructions; not the original manufacturing artwork.",
+    "No browser or exhaustive face inspection; 3D placement remains an unverified visual registration."
+  ]
+}

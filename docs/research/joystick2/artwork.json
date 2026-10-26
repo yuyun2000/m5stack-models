@@ -1,0 +1,60 @@
+{
+  "id": "joystick2",
+  "sku": "U024-V2",
+  "retrievedAt": "2026-10-26",
+  "kind": "reference-redraw",
+  "originalsDistributed": false,
+  "method": "New text and shapes code-drawn from exact official product photographs. No photographic pixels, crop, private original or vector source distributed.",
+  "sources": [
+    {
+      "face": "back",
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-JoyStick2/5.webp",
+      "sha256": "37765aa7eca4e1c4ac1598d907c1d6fde276c385acb9cbc9f1e35028b5385841"
+    },
+    {
+      "face": "unprinted cap/front",
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-JoyStick2/11.webp",
+      "sha256": "5a0850d6211d633972ea87b3659f0f9d4ea8c2299064a8d3798d74e95839cf6c"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/joystick2/reference-redraw-back.png",
+      "sha256": "8793a06b65467b92080fe3f9e0571e70ced3e64128f5ce24df8c98fcc53ce0a5",
+      "pixels": [
+        2328,
+        2592
+      ],
+      "sizeMm": [
+        19.4,
+        21.6
+      ]
+    }
+  ],
+  "registration": [
+    {
+      "face": "back",
+      "sizeMm": [
+        19.4,
+        21.6
+      ],
+      "positionMm": [
+        0,
+        7.4,
+        -3.812
+      ],
+      "method": "printedFilm",
+      "target": "Joystick2 native rear shell",
+      "note": "Continuous exact-product rear adhesive spans native service openings. Red thumb cap is unprinted."
+    }
+  ],
+  "coverage": "Rear Hall axis/button/RGB/controller/address/protocol diagram. Clear actual front photo shows an unprinted red cap and operating shell.",
+  "remainingKnownPrintedFaces": [],
+  "limits": [
+    "Raster colours, typography, line shapes and physical label sizes/positions are photo/native-recess estimates, not production-print measurements.",
+    "Continuous adhesive film is used only where the exact photograph shows the real label crossing native service openings; all original physical geometry remains intact and available with artwork:false.",
+    "Molded lettering is retained as existing geometry; no unreadable package stamps or unknown legends are invented.",
+    "No exhaustive browser pixel inspection; necessary registration, exact original physical/control/terminal-variant and Grove checks only."
+  ],
+  "rights": "M5Stack product marks and original printed designs retain their respective rights; these reference reconstructions are not production source artwork."
+}

@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {pathToFileURL} from 'node:url';
 import {DynamicsPanel} from '../demo/dynamics.js';
-import {Device,Module,Port} from '../src/core/index.js';
+import {Device,Module,Port,VisualSlide} from '../src/core/index.js';
 import {loadModel,loadGroveModule} from '../src/loaders.js';
 import {DEVICE_BUTTON_COUNTS} from './check-device-actuators.mjs';
 
@@ -101,7 +101,7 @@ async function checkNestedGroveDemo(){
  const settle=()=>{for(let i=0;i<80;i++)host.update(1/60);};
  try{
   host=await loadModel('sticks3');host.on('input',event=>events.push(event));
-  panel=new DynamicsPanel(container,{catalog:{products:['hub','key','fan'].map(id=>({id,name:id,category:'unit',entry:true}))},viewer:{on:()=>()=>{},fit:noop,focus:(path,options)=>focusCalls.push({path,options}),requestRender:noop},onGeometryChange:noop});
+  panel=new DynamicsPanel(container,{catalog:{products:['hub','key','fan','pahub-v21','pbhub-v11'].map(id=>({id,name:id,category:'unit',entry:true}))},viewer:{on:()=>()=>{},fit:noop,focus:(path,options)=>focusCalls.push({path,options}),requestRender:noop},onGeometryChange:noop});
   panel.bind(host,{id:'sticks3'});assert.deepEqual(options('#grove-port'),['grove']);
   assert.equal(host.led('irTx').invisible,true);assert.ok(!options('#led-target').includes('irTx'),'Invisible IR stays addressable but is absent from visible-light controls');assert.equal(ui['#led-section'].hidden,true,'An IR-only host has no visible-light panel');cases.push('invisible-host-emitter-excluded-from-visible-light-controls');
   choose('#grove-unit','hub');await ui['#grove-connect'].onclick();
@@ -145,7 +145,30 @@ async function checkNestedGroveDemo(){
   }
   panel.unbind();host.dispose();host=await loadModel('fan');panel.bind(host,{id:'fan'});assert.deepEqual(options('#inspect-button'),[]);assert.equal(ui['#button-inspection'].hidden,true);for(const id of ['#hold-button','#release-button','#focus-button'])assert.equal(ui[id].disabled,true);const focusCount=focusCalls.length;ui['#focus-button'].onclick();assert.equal(focusCalls.length,focusCount,'An empty inspection cannot focus a stale control');assert.equal(ui['#button-travel'].textContent,'');assert.deepEqual(ui['#button-travel'].dataset,{},'Removing the final control clears stale inspection state');
   cases.push('all-host-controls-including-stable-sliders-and-zero-travel-touch-selectable-and-focusable','stable-slider-inspection-disabled-while-independent-click-preserves-detents','capacitive-inspection-hold-release-with-zero-physical-travel','empty-inspection-disables-actions-and-clears-stale-readout');
-  return {status:'pass',cases,inspection,rootOptions:['grove'],nestedKeyPath:'grove/grove-1/press',nestedFanPath:'grove/grove-2/rotor',deepestPortPath:'grove/grove-3/grove-1',scope:'Real controller configurations, StickS3/HUB/Key/Fan assemblies and panel; light DOM/renderer fixture only'};
+  panel.unbind();host.dispose();host=new Device();const slide=host.add(new VisualSlide({id:'slider',rangeMm:[-17.5,17.5]})),slideEvents=[];host.on('input',event=>slideEvents.push(event));panel.bind(host,{id:'slider-fixture'});
+  assert.equal(ui['#joint-section'].hidden,false,'a slider without rotary joints still exposes position controls');
+  const slideGroup=ui['#joint-controls'].children.find(element=>element.dataset.slider==='slider'),slideInput=slideGroup.querySelector('#slide-slider-position');
+  assert.equal(Number(slideInput.min),-17.5);assert.equal(Number(slideInput.max),17.5);slideInput.value='12.3';slideInput.oninput();assert.equal(slide.positionMm,12.3);assert.equal(slideEvents.length,0,'panel pose demonstrations do not masquerade as hardware/user intent');
+  slide.set({positionMm:-9.5});panel.refreshState();assert.equal(Number(slideInput.value),-9.5,'pointer/external state refreshes the range control');
+  slideGroup.children.find(element=>element.tagName==='BUTTON').onclick();host.update(.2);panel.refreshState();assert.equal(slide.positionMm,0);assert.equal(Number(slideInput.value),0);assert.ok(JSON.parse(ui['#dynamic-state'].textContent).sliders.slider);
+  cases.push('millimetre-slider-only-panel-exposes-stops-reflects-external-state-and-resets-to-centre');
+  panel.loadModule=loadGroveModule; // Restore the real factory after stale-request fault injection above.
+  for(const id of ['pahub-v21','pbhub-v11']){
+   panel.unbind();host.dispose();host=await loadModel('sticks3');panel.bind(host,{id:'sticks3'});
+   choose('#grove-unit',id);await ui['#grove-connect'].onclick();
+   const expected=['grove',...Array.from({length:6},(_,i)=>`grove/grove-${i}`)];
+   assert.deepEqual(options('#grove-port').slice().sort(),expected.sort(),`${id}: all six outputs remain available while its cable-occupied input is excluded`);
+   choose('#grove-port','grove/grove-0');choose('#grove-unit','key');await ui['#grove-connect'].onclick();
+   choose('#grove-port','grove/grove-5');choose('#grove-unit','fan');await ui['#grove-connect'].onclick();
+   const key=host.get('grove/grove-0').module,fan=host.get('grove/grove-5').module;
+   assert.equal(key.get('cable').getState().wireCount,4);assert.equal(fan.get('cable').getState().wireCount,4);
+   assert.ok(ui['#button-controls'].children.some(element=>element.dataset.button==='grove/grove-0/press'));
+   assert.ok(ui['#joint-controls'].children.some(element=>element.dataset.joint==='grove/grove-5/rotor'));
+   choose('#grove-port','grove/grove-0');ui['#grove-disconnect'].onclick();
+   assert.equal(host.get('grove/grove-0').module,null);assert.ok(host.get('grove/grove-5').module===fan,'removing one branch retains the sibling Unit and its four-wire cable');
+   cases.push(`${id}-six-output-menu-nested-controls-and-independent-branch-detach`);
+  }
+  return {status:'pass',cases,inspection,rootOptions:['grove'],nestedKeyPath:'grove/grove-1/press',nestedFanPath:'grove/grove-2/rotor',deepestPortPath:'grove/grove-3/grove-1',scope:'Real controller configurations, StickS3/HUB/Key/Fan assemblies, millimetre slider and panel; light DOM/renderer fixture only'};
  }finally{
   panel?.dispose();host?.dispose();
   for(const [key,value]of Object.entries(previous)){if(value===undefined)delete globalThis[key];else globalThis[key]=value;}

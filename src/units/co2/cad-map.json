@@ -1,0 +1,45 @@
+{
+  "sku": "U103",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U103_Unit_CO2/Structures/Unit_CO2.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "172fa25ac471ca99e35eface52892fcdb226fcc4",
+  "sha256": "954c2f157272e08de4bbac9081666ba64272e298190259c772abce93f27d666a",
+  "license": "MIT",
+  "selectedComponents": [
+    {
+      "index": 0,
+      "name": "CO2 native assembled double shell",
+      "triangles": 13396
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "excludedReason": "Displaced duplicate front and rear shells; assembled component retains both native shells, all vents, mounts, seam and molding.",
+  "transform": {
+    "subtractOriginMm": [
+      -240,
+      0,
+      5.2
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1
+  }
+}

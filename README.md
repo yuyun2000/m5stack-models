@@ -1,8 +1,16 @@
 # m5stack-models.js
 
-当前优先完善现有外壳的正式贴纸：17款标准版已接入，7款提供可选官方中文教学版，19款缺精确来源；少量缺面与分辨率限制见[贴纸覆盖记录](docs/STICKER-COVERAGE.md)。其他结构推进暂缓。
+本库提供 M5Stack 主机与 Unit 的毫米尺度交互模型，支持实体按键压放、旋钮/推子/稳定开关、外驱灯光、屏幕 framebuffer 和 Grove 多级接线。最新增加 Laser TX、Laser RX 与 MIDI，并同步6张正背参考重绘贴纸。TX 的固定红色 `emitter` 只改变真实发射孔外观；RX 保留非发光接收头；MIDI 提供稳定 `mode` 滑块、独立固定绿 `power-led`、双 DIN 与三个 TRS 机械接口。接入、四芯线和职责见[Laser/MIDI](docs/LASER-MIDI-UNITS.md)。前批[Earth/Hall/QRCode](docs/EARTH-HALL-QRCODE-UNITS.md)、[Step16/ASR/UHF](docs/STEP-ASR-UHF-UNITS.md)与[Mini IMU/EXT.IO2/ACSSR](docs/IMU-EXTIO-ACSSR-UNITS.md)继续保留。各款保持 `modeled`，检查范围以对应报告为准。
 
-基于 Three.js 与 sticks3.js 建模方法的 M5Stack 毫米尺度交互模型库。目前包含 **14款主机、29款Unit，共43款模型**，全部保持 `modeled`，`verified` 为0，逐款精细外观验收继续进行。
+[本地增量批次索引](docs/LOCAL-EXPANSION.md)汇总当前工作区的模型、API与检查点，供查阅模型、API和各批检查范围。
+
+[2026-10-26源码同步范围](docs/GIT-SYNC-2026-10-26.md)说明本次85款增量、素材边界与尚未完成的视觉/装配验收。
+
+Weight-I2C 与8Servos现可选择随附的可拔插4P螺钉端子，四个螺钉角度独立外驱；默认空座、固定几何与Grove连接保留。用法见[可拆端子接入](docs/UNIT-TERMINALS.md)。
+
+此前43款的贴纸批次保留：每款默认外观至少有一处印刷，部分面仍缺；50张参考重绘PNG尚未完成全批复核。原稿栅格、参考重绘和7款可选中文教学版的准确范围见[贴纸覆盖记录](docs/STICKER-COVERAGE.md)。
+
+基于 Three.js 与 sticks3.js 建模方法的 M5Stack 毫米尺度交互模型库。目前包含 **14款主机、71款Unit，共85款模型**，全部保持 `modeled`，`verified` 为0。此前各批验收记录均对应各自源码快照。
 
 近期校正 **Thermal／Angle／Encoder PCB孔内壁**：保留原孔位与实体曲面，修正默认FrontSide下不可见的内壁；旋转、按压回弹及Grove接线接口保持。新的回归覆盖真实孔内壁法线与定向闭合，历史单品验收仍对应各自源码快照。
 
@@ -58,7 +66,7 @@
 
 Encoder自身Grove接口中心Z从0迁移至−0.6mm，默认GroveModule自动对齐；显式unitPose仍表示装配原点。Port挂接回调、父子装配和已有接口保持兼容，调用约束见Agent接入文档。
 
-**正式贴纸按[覆盖清单](docs/STICKER-COVERAGE.md)逐款接入，缺源型号继续保留待补状态。** 隐藏PCB与封装尺寸、折腿、0.35mm行程和漫透效果仍含外观推导，左右灯的视觉地址不代表原理图LED编号。有限几何采样与浏览器渲染不证明制造配合、固件行为、正交脉冲、电气或光学性能。StackChan生产基准与隐藏交叠、Heart既有PCB边缘交叠继续记录为待解决项。
+**贴纸与参考重绘按[覆盖清单](docs/STICKER-COVERAGE.md)逐款接入，未还原面继续明确保留缺项。** 隐藏PCB与封装尺寸、折腿、0.35mm行程和漫透效果仍含外观推导，左右灯的视觉地址不代表原理图LED编号。有限几何采样与浏览器渲染不证明制造配合、固件行为、正交脉冲、电气或光学性能。StackChan生产基准与隐藏交叠、Heart既有PCB边缘交叠继续记录为待解决项。
 
 ## 本地运行
 
@@ -71,7 +79,7 @@ npm run build
 ./manage.sh start
 ```
 
-打开 http://127.0.0.1:5188 。使用 `./manage.sh status|logs|stop|help` 管理预览，或运行 `npm run dev` 开发。检查覆盖实体压放、关节、全部当前 Unit 的线缆装配，以及真实主机接口上的线管表面采样；通过数见生成的 `artifacts/` 报告。浏览器视觉检查与实物配合分别记录，不以构建成功替代外观验收。
+打开 http://127.0.0.1:5188 。使用 `./manage.sh status|logs|stop|help` 管理预览，或运行 `npm run dev` 开发。各批检查覆盖实体压放、关节、Unit线缆装配及主机接口；实际产品范围与通过数以相应 `artifacts/` 报告的源码快照和产品列表为准。浏览器视觉检查与实物配合分别记录，不以构建成功替代外观验收。
 
 ## 使用与分发
 

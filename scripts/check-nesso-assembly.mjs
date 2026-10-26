@@ -6,11 +6,14 @@ export function checkNessoAssembly(model){
  model.root.updateMatrixWorld(true);
  assert.ok(!model.parts['side-expansion'],'Nesso: a second pose of the same antenna must not be installed');
  const antenna=model.parts['stowed-lora-antenna'];assert.ok(antenna,'Nesso: single stored LoRa antenna');
- const cad=new THREE.Box3(),casing=new THREE.Box3();model.root.traverse(o=>{if(o.userData.source==='official-structure')cad.expandByObject(o);});
- for(const name of ['upper-housing','back-cover'])casing.expandByObject(model.parts[name]);
+ // Measure each CAD mesh itself. Legitimate printed films are children of the
+ // physical part, but must not alter the original selected-CAD dimension test.
+ const ownBox=part=>{part.geometry.computeBoundingBox();return part.geometry.boundingBox.clone().applyMatrix4(part.matrixWorld);};
+ const cad=new THREE.Box3(),casing=new THREE.Box3();model.root.traverse(o=>{if(o.isMesh&&o.userData.source==='official-structure')cad.union(ownBox(o));});
+ for(const name of ['upper-housing','back-cover'])casing.union(ownBox(model.parts[name]));
  for(const [i,size]of [24,48,22].entries())assert.ok(Math.abs(cad.getSize(new THREE.Vector3()).getComponent(i)-size)<.01,`Nesso: selected CAD assembly axis ${i}`);
  assert.ok(Math.abs(casing.getSize(new THREE.Vector3()).z-21.1)<.01,'Nesso: casing depth excludes the 0.9 mm raised key');
- const antennaSize=new THREE.Box3().setFromObject(antenna).getSize(new THREE.Vector3());for(const [i,n]of [10.8,45.5,6].entries())assert.ok(Math.abs(antennaSize.getComponent(i)-n)<.01,'Nesso: stored antenna envelope includes connector/latch projections');
+ const antennaSize=ownBox(antenna).getSize(new THREE.Vector3());for(const [i,n]of [10.8,45.5,6].entries())assert.ok(Math.abs(antennaSize.getComponent(i)-n)<.01,'Nesso: stored antenna envelope includes connector/latch projections');
  const hits=(origin,direction)=>new THREE.Raycaster(origin,direction).intersectObject(model.root,true).filter(h=>h.object.isMesh&&h.object.material?.opacity!==0);
  const localHit=(group,origin,direction)=>hits(group.localToWorld(new THREE.Vector3(...origin)),new THREE.Vector3(...direction).transformDirection(group.matrixWorld))[0];
  const usb=model.root.getObjectByName('Nesso USB-C assembly');

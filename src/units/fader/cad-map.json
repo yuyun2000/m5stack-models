@@ -1,0 +1,15 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U123_Unit_Fader/Structures/Unit_Fader.stl",
+  "sourceSha256": "6859914ddca192c00e8771eb60a930118278ef9e78b88e5e3d57682c97509b29",
+  "gitBlob": "a5357ae8843c40478666ccbf03eb86bf47245aa0",
+  "license": "MIT; preserve licenses/M5_Hardware-MIT.txt",
+  "origin": [0, 20, 5.2],
+  "axes": [[1,0,0],[0,1,0],[0,0,1]],
+  "parts": [
+    {"component":0,"name":"Fader native front shell","material":"shell"},
+    {"component":2,"name":"Fader native rear shell","material":"shell"},
+    {"component":4,"name":"Fader native left light guide","material":"guide"},
+    {"component":7,"name":"Fader native right light guide","material":"guide"}
+  ],
+  "notes": "Select the assembled pair and light guides at native X=0; exclude displaced components 1,3,5,6. No source faces are deleted or capped. The source omits the PCB, sliding potentiometer, cap and Grove connector; these are reconstructed as solid assemblies from the own U123 drawing and photographs. Mechanical travel is the officially documented 35 mm, with the origin at the centre of the native front slot. Concealed details are appearance estimates."
+}

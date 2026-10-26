@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-26T05:20:40.399Z",
+  "checkedAt": "2026-10-26T07:18:50.135Z",
   "scope": "model geometry/API only; not hardware or external emulator proof",
   "products": [
     {
@@ -15,7 +15,7 @@
       "configurations": [
         {
           "id": "dinBase",
-          "meshes": 98,
+          "meshes": 99,
           "closureRays": 19,
           "status": "pass"
         }
@@ -42,13 +42,13 @@
     },
     {
       "id": "papermono",
-      "meshes": 58,
+      "meshes": 59,
       "closureRays": 0,
       "status": "pass"
     },
     {
       "id": "core2",
-      "meshes": 107,
+      "meshes": 108,
       "closureRays": 2,
       "status": "pass"
     },
@@ -60,7 +60,7 @@
     },
     {
       "id": "nanoc6",
-      "meshes": 72,
+      "meshes": 74,
       "closureRays": 3,
       "status": "pass"
     },
@@ -84,13 +84,13 @@
     },
     {
       "id": "nesso-n1",
-      "meshes": 134,
+      "meshes": 138,
       "closureRays": 2,
       "status": "pass"
     },
     {
       "id": "stamplc",
-      "meshes": 336,
+      "meshes": 340,
       "closureRays": 1,
       "status": "pass"
     },
@@ -120,37 +120,37 @@
     },
     {
       "id": "angle",
-      "meshes": 61,
+      "meshes": 62,
       "closureRays": 0,
       "status": "pass"
     },
     {
       "id": "color",
-      "meshes": 21,
-      "closureRays": 0,
-      "status": "pass"
-    },
-    {
-      "id": "tof",
-      "meshes": 21,
-      "closureRays": 0,
-      "status": "pass"
-    },
-    {
-      "id": "light",
       "meshes": 22,
       "closureRays": 0,
       "status": "pass"
     },
     {
+      "id": "tof",
+      "meshes": 22,
+      "closureRays": 0,
+      "status": "pass"
+    },
+    {
+      "id": "light",
+      "meshes": 23,
+      "closureRays": 0,
+      "status": "pass"
+    },
+    {
       "id": "relay",
-      "meshes": 41,
+      "meshes": 42,
       "closureRays": 0,
       "status": "pass"
     },
     {
       "id": "joystick-v11",
-      "meshes": 20,
+      "meshes": 21,
       "closureRays": 0,
       "status": "pass"
     },
@@ -162,37 +162,37 @@
     },
     {
       "id": "button",
-      "meshes": 21,
+      "meshes": 22,
       "closureRays": 0,
       "status": "pass"
     },
     {
       "id": "ncir",
-      "meshes": 54,
-      "closureRays": 0,
-      "status": "pass"
-    },
-    {
-      "id": "heart",
-      "meshes": 26,
-      "closureRays": 0,
-      "status": "pass"
-    },
-    {
-      "id": "encoder",
-      "meshes": 71,
-      "closureRays": 0,
-      "status": "pass"
-    },
-    {
-      "id": "thermal",
       "meshes": 55,
       "closureRays": 0,
       "status": "pass"
     },
     {
+      "id": "heart",
+      "meshes": 27,
+      "closureRays": 0,
+      "status": "pass"
+    },
+    {
+      "id": "encoder",
+      "meshes": 72,
+      "closureRays": 0,
+      "status": "pass"
+    },
+    {
+      "id": "thermal",
+      "meshes": 56,
+      "closureRays": 0,
+      "status": "pass"
+    },
+    {
       "id": "tvoc",
-      "meshes": 18,
+      "meshes": 19,
       "closureRays": 0,
       "status": "pass"
     },
@@ -216,56 +216,110 @@
     },
     {
       "id": "rs485",
-      "meshes": 42,
+      "meshes": 43,
       "closureRays": 4,
       "status": "pass"
     },
     {
       "id": "buzzer",
-      "meshes": 21,
+      "meshes": 22,
       "closureRays": 5,
       "status": "pass"
     },
     {
       "id": "fan",
-      "meshes": 20,
+      "meshes": 21,
       "closureRays": 2,
       "status": "pass"
     },
     {
       "id": "limit",
-      "meshes": 32,
+      "meshes": 33,
       "closureRays": 2,
       "status": "pass"
     },
     {
       "id": "cardkb",
-      "meshes": 689,
+      "meshes": 690,
       "closureRays": 10,
       "status": "pass"
     },
     {
       "id": "key",
-      "meshes": 44,
+      "meshes": 45,
       "closureRays": 1,
       "status": "pass"
     },
     {
       "id": "8encoder",
-      "meshes": 245,
+      "meshes": 257,
       "closureRays": 2,
       "status": "pass"
     },
     {
       "id": "scroll",
-      "meshes": 31,
+      "meshes": 32,
       "closureRays": 0,
       "status": "pass"
     },
     {
       "id": "roller485",
-      "meshes": 85,
+      "meshes": 87,
       "closureRays": 0,
+      "status": "pass"
+    },
+    {
+      "id": "gps-v11",
+      "meshes": 25,
+      "closureRays": 0,
+      "status": "pass"
+    },
+    {
+      "id": "weight-i2c",
+      "meshes": 44,
+      "closureRays": 0,
+      "status": "pass"
+    },
+    {
+      "id": "8servos",
+      "meshes": 106,
+      "closureRays": 4,
+      "status": "pass"
+    },
+    {
+      "id": "fader",
+      "meshes": 74,
+      "closureRays": 3,
+      "status": "pass"
+    },
+    {
+      "id": "8angle",
+      "meshes": 243,
+      "closureRays": 2,
+      "status": "pass"
+    },
+    {
+      "id": "mini-scales",
+      "meshes": 31,
+      "closureRays": 0,
+      "status": "pass"
+    },
+    {
+      "id": "pahub-v21",
+      "meshes": 163,
+      "closureRays": 1,
+      "status": "pass"
+    },
+    {
+      "id": "pbhub-v11",
+      "meshes": 166,
+      "closureRays": 0,
+      "status": "pass"
+    },
+    {
+      "id": "gesture",
+      "meshes": 41,
+      "closureRays": 5,
       "status": "pass"
     }
   ]

@@ -1,0 +1,154 @@
+{
+  "checkedAt": "2026-10-26T07:44:57.307Z",
+  "status": "pass",
+  "scope": "Necessary finite construction, native shell/lightpipe retention, mounting bores/walls, eight stable hinged toggles, nine independent RGB, dual Grove chain/pose/detach/disposal smoke only; no browser, hardware, electrical, protocol or production assembly verification",
+  "meshes": 164,
+  "triangles": 81224,
+  "visualDetentEnvelopeMm": [
+    24,
+    88,
+    19.59476875002852
+  ],
+  "cadEnvelopeMm": [
+    24,
+    88,
+    12
+  ],
+  "mountingRays": 20,
+  "switches": [
+    {
+      "id": "switch-1",
+      "physicalChannel": 0,
+      "detentsDeg": [
+        -22.5,
+        22.5
+      ],
+      "retainedOnRelease": true,
+      "rigidPivot": true
+    },
+    {
+      "id": "switch-2",
+      "physicalChannel": 1,
+      "detentsDeg": [
+        -22.5,
+        22.5
+      ],
+      "retainedOnRelease": true,
+      "rigidPivot": true
+    },
+    {
+      "id": "switch-3",
+      "physicalChannel": 2,
+      "detentsDeg": [
+        -22.5,
+        22.5
+      ],
+      "retainedOnRelease": true,
+      "rigidPivot": true
+    },
+    {
+      "id": "switch-4",
+      "physicalChannel": 3,
+      "detentsDeg": [
+        -22.5,
+        22.5
+      ],
+      "retainedOnRelease": true,
+      "rigidPivot": true
+    },
+    {
+      "id": "switch-5",
+      "physicalChannel": 4,
+      "detentsDeg": [
+        -22.5,
+        22.5
+      ],
+      "retainedOnRelease": true,
+      "rigidPivot": true
+    },
+    {
+      "id": "switch-6",
+      "physicalChannel": 5,
+      "detentsDeg": [
+        -22.5,
+        22.5
+      ],
+      "retainedOnRelease": true,
+      "rigidPivot": true
+    },
+    {
+      "id": "switch-7",
+      "physicalChannel": 6,
+      "detentsDeg": [
+        -22.5,
+        22.5
+      ],
+      "retainedOnRelease": true,
+      "rigidPivot": true
+    },
+    {
+      "id": "switch-8",
+      "physicalChannel": 7,
+      "detentsDeg": [
+        -22.5,
+        22.5
+      ],
+      "retainedOnRelease": true,
+      "rigidPivot": true
+    }
+  ],
+  "rgb": {
+    "count": 9,
+    "independentMaterials": true,
+    "nativeFaces": true
+  },
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        -55,
+        -0.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 19,
+      "purpose": "Input Grove mouth ends in physical rear wall"
+    },
+    {
+      "origin": [
+        0,
+        55,
+        -0.6
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 19,
+      "purpose": "Cascade Grove mouth ends in physical rear wall"
+    }
+  ],
+  "grovePins": [
+    "GND",
+    "5V",
+    "SDA",
+    "SCL"
+  ],
+  "groveCascadeAttachPoseNestedDetach": "pass",
+  "inputEvents": 24,
+  "inputPaths": [
+    "switch-1",
+    "switch-2",
+    "switch-3",
+    "switch-4",
+    "switch-5",
+    "switch-6",
+    "switch-7",
+    "switch-8"
+  ],
+  "disposedResources": 241
+}

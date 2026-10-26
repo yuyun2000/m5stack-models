@@ -1,0 +1,148 @@
+{
+  "id": "synth",
+  "sku": "U178",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit-Synth",
+  "retrievedAt": "2026-10-26",
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Synth/img-980d32fe-96a2-41d2-86ba-9909bb5bfba4.webp",
+    "sha256": "ee1fcba66f4626962cb68c8dad4e5d6017d3c4cf860098416753ab145aea0096"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U178_Unit_Synth/Structures/Unit_Synth.stl",
+      "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+      "gitBlob": "cac27b1141466011b3def323158b1c13ff4e40f9",
+      "sha256": "f8cf707dc5a34aea47e8457990560d3bbe3d24468290527629ab0357fb497542",
+      "license": "MIT; retain licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Synth/img-980d32fe-96a2-41d2-86ba-9909bb5bfba4.webp",
+      "sha256": "ee1fcba66f4626962cb68c8dad4e5d6017d3c4cf860098416753ab145aea0096"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Synth/img-b3b857cf-d615-4404-8aa5-d7f3b52609a7.webp",
+      "sha256": "4e232ceaa70b824ace10c046a4f329c3306a2e95c8ef82a18030f67c0c1dd4a3"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Synth/img-b23048d9-aa74-46ae-bc5f-5183340a8e31.webp",
+      "sha256": "bf07ae5c23ced123041ff4d173938c068592025429184491f033f97b4a9dd31f"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Synth/img-fe511f44-85db-4d2c-aabb-189ba2d24de7.webp",
+      "sha256": "2662aaa1f4acce632efd77079b256b486d733005ecf6f868edc5efa38bdcf64a"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Synth/img-2aa61223-8769-4734-be2d-578c18ddb2b6.webp",
+      "sha256": "31fc4ac29f909372b0663432b8c293b089f2e88e67038c6813e140a53af67cbb"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Synth/img-e24d0d40-7beb-41eb-b767-b6478c3ba23f.webp",
+      "sha256": "9ef75fff270c716b402c28d4e96f0aa85d8005c33aa7bcc491ff64ff9beafdab"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Synth/img-642ddcd8-20df-4fcf-bdfe-14cfb4991268.jpg",
+      "sha256": "63652c3d0252415cfe2dfef7e8c5c957bde89302b44897239266858596199cef"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/630/Sch_Unit_Synth_V1.1_sch_01.png",
+      "sha256": "dcc7377f05d2d6eed3a1d62edb831b0d45281d2bff0699b969252150fa903ada"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      -240,
+      0,
+      5.199999928474426
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "method": "Single common rigid translation; no shell cuts, hole filling, per-part alignment or scaling",
+    "reason": "Complete assembled source shell. Source islands 1 and 2 are laterally displaced duplicate individual shell halves. One common rigid translation; speaker grille, Grove mouth, mounting bores and fastening relief retained unchanged."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "sources": "docs/research/synth/artwork.md",
+    "originalsDistributed": false,
+    "files": [
+      {
+        "path": "src/units/synth/reference-redraw-front.png",
+        "sha256": "365d345d3d991df2612fd4f311dcf2a4e7116db0ebe998168b0a48cc9fef6533",
+        "pixels": [
+          1008,
+          4608
+        ]
+      },
+      {
+        "path": "src/units/synth/reference-redraw-back.png",
+        "sha256": "25a5320710a04d4637ac5fdba9ec9957a37648be1baa31a6e081ae6d8f8a58f3",
+        "pixels": [
+          2624,
+          4640
+        ]
+      }
+    ]
+  },
+  "runtimeFiles": [
+    {
+      "path": "src/units/synth/assembly.js",
+      "sha256": "26a08b9e360124e75f0dd65e4cee05662d9cadde5c068d819701e2cb678b6545"
+    },
+    {
+      "path": "src/units/synth/cad-map.json",
+      "sha256": "e2fd9346ef70c79b164a084ce8f350b6e7bd6aed52078ce3626670beb174de27"
+    },
+    {
+      "path": "src/units/synth/dimensions.js",
+      "sha256": "14432742a60eac4784f41baaccfc6d7a809a05c04a5c245e651ef9fe27c8fee9"
+    },
+    {
+      "path": "src/units/synth/geometry-data.js",
+      "sha256": "669c8d32c9f1cbf5ed359880a0ac06bf07a8d9fe628a0be9487b9b7dde560b0a"
+    },
+    {
+      "path": "src/units/synth/index.js",
+      "sha256": "2b946b2e1f786e055dd2c79a310472e3d26963afe626cc88a13708526a4e91e4"
+    },
+    {
+      "path": "src/units/synth/reference-redraw-back.png",
+      "sha256": "25a5320710a04d4637ac5fdba9ec9957a37648be1baa31a6e081ae6d8f8a58f3"
+    },
+    {
+      "path": "src/units/synth/reference-redraw-front.png",
+      "sha256": "365d345d3d991df2612fd4f311dcf2a4e7116db0ebe998168b0a48cc9fef6533"
+    },
+    {
+      "path": "src/units/synth/stickers.js",
+      "sha256": "fe8ea32702e010e91b867384c75098e3513c339ac25f59582ec457a992384467"
+    }
+  ],
+  "inferences": [
+    "PCB outline/thickness/Z, concealed package envelopes/locations, speaker chassis/cone/basket/magnet dimensions and installed datums, internal J2 placement/orientation/contact geometry and fixed speaker wire routing are visual reconstructions; no complete production PCB/speaker assembly STEP or manufacturing-fit claim.",
+    "Only Grove is an exposed mating Port. Internal J2 1.25 mm 2P is fixed concealed geometry. The official DIN image is an external wiring diagram; no external DIN, 3.5 mm or USB socket is invented.",
+    "Speaker is a fixed physical assembly with no displacement API; concealed LED2/LED3 packages remain unlit with no external Led component. No MIDI, note, synthesis, sound, audio, firmware, sensor-value, acoustic or electrical simulation."
+  ]
+}

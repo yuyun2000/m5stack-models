@@ -1,0 +1,78 @@
+{
+  "checkedAt": "2026-10-26T06:43:01.270Z",
+  "scope": "Finite local geometry/API smoke only; no browser or hardware verification",
+  "meshes": 96,
+  "triangles": 33640,
+  "visualEnvelopeMm": [
+    24,
+    55.00000009536743,
+    11.535
+  ],
+  "cadEnvelopeMm": [
+    24,
+    55,
+    8
+  ],
+  "mountingRays": 10,
+  "ports": 10,
+  "groveAttachDetach": "pass",
+  "closureChecks": [
+    {
+      "origin": [
+        6,
+        0,
+        50
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 52,
+      "purpose": "Header window has the real PCB behind open pin spaces"
+    },
+    {
+      "origin": [
+        0,
+        7,
+        -50
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 47,
+      "purpose": "Native rear shell closes the assembled back"
+    },
+    {
+      "origin": [
+        -4,
+        30,
+        0
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 13,
+      "purpose": "Power mouth ends at the recessed physical socket rear wall"
+    },
+    {
+      "origin": [
+        0,
+        -31,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Grove mouth has a recessed physical connector back"
+    }
+  ],
+  "status": "pass"
+}

@@ -1,0 +1,107 @@
+{
+  "checkedAt": "2026-10-26T08:25:29.025Z",
+  "status": "pass",
+  "scope": "Necessary finite geometry, native triangles, real bore FrontSide walls, aperture backing, independent RGB/fixed-blue light, stationary capacitive face, no recognition/touch/button, four-wire Grove nested pose/detach/disposal smoke. No browser/hardware/production-fit verification.",
+  "meshes": 46,
+  "triangles": 13786,
+  "nativeTriangleCount": 5468,
+  "cadEnvelopeMm": [
+    23.99999237060547,
+    40,
+    8
+  ],
+  "visualEnvelopeMm": [
+    23.99999237060547,
+    40,
+    8.000000095367431
+  ],
+  "mountingRays": 10,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        8,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 16.2,
+      "purpose": "Solid capacitive sensing face fills native circular aperture"
+    },
+    {
+      "origin": [
+        9.2,
+        8,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 16.2,
+      "purpose": "Physical annular diffuser fills native outer ring aperture"
+    },
+    {
+      "origin": [
+        0,
+        8,
+        -20
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 19.1,
+      "purpose": "Main PCB/module backs rear access aperture without photographic fill"
+    },
+    {
+      "origin": [
+        0,
+        -30,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 18,
+      "purpose": "Grove mouth has a recessed real rear wall"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Solid capacitive sensing face fills native circular aperture",
+      "hit": "A-K323CP solid matte capacitive sensing surface",
+      "distanceMm": 16.070000005364417
+    },
+    {
+      "purpose": "Physical annular diffuser fills native outer ring aperture",
+      "hit": "A-K323CP solid annular RGB diffuser",
+      "distanceMm": 16.09999998807907
+    },
+    {
+      "purpose": "Main PCB/module backs rear access aperture without photographic fill",
+      "hit": "Fingerprint2 physical main PCB with open boss and Grove relief",
+      "distanceMm": 18.999999999999996
+    },
+    {
+      "purpose": "Grove mouth has a recessed real rear wall",
+      "hit": "Grove rear wall",
+      "distanceMm": 15.950000011920931
+    }
+  ],
+  "leds": [
+    "ring-led: RGB",
+    "power-led: fixed blue"
+  ],
+  "sensor": "Passive visual anchor; no commands/data",
+  "groveAttachPoseNestedDetach": "pass",
+  "disposedResources": 102,
+  "disposeEvents": 136
+}

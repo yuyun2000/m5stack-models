@@ -1,0 +1,57 @@
+{
+  "id": "vibrator",
+  "sku": "U059",
+  "status": "reference-redraw-integrated",
+  "updatedAt": "2026-10-26",
+  "artworkKind": "reference-redraw",
+  "coverage": "Rear DC MOTOR label. Exact operating front has no printed label; eccentric remains a moving physical solid.",
+  "transcription": [
+    "DC MOTOR",
+    "N20",
+    "PORT.B.I/O",
+    "OUT / 5V / GND"
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/vibrator/vibrator_02.webp",
+      "sha256": "eacd98a22437876757930a6b1aadc481a4d6dbfd2970fe8da3b35c565cb12b13",
+      "role": "Exact-SKU official photo; reference transcription only, no photo pixels redistributed"
+    }
+  ],
+  "rasters": [
+    {
+      "path": "src/units/vibrator/reference-back.png",
+      "sha256": "db892d47296ccdfd0e5da60effa3f5db4720e73ddc1a6c2f27521dcc273bd2ef",
+      "sizePx": [
+        1024,
+        768
+      ],
+      "artworkKind": "reference-redraw"
+    }
+  ],
+  "surfaces": [
+    {
+      "raster": "reference-back.png",
+      "face": "back",
+      "sizeMm": [
+        16,
+        12
+      ],
+      "positionMm": [
+        0,
+        7.1,
+        -3.8
+      ],
+      "method": "Project onto existing native rear triangles"
+    }
+  ],
+  "privateSourceVectorsDistributed": false,
+  "photographicPixelsUsed": false,
+  "photoCropsUsed": false,
+  "limitations": [
+    "Font shapes, colors, small icon outlines and sticker XYZ are reconstructed from exact official photos; no manufacturing-artwork or production-fit claim.",
+    "Packaging, private originals, mappings, source links from the table, vectors, generators and intermediates are excluded.",
+    "No browser, exhaustive face inspection or full suite; original modeled stage retained.",
+    "The visible legacy OUT legend is copied verbatim. Existing DIN/NC connector metadata and visual rotor API remain unchanged; the label does not implement or reinterpret electrical behavior."
+  ]
+}

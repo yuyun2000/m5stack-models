@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-10-26T08:58:40.861Z",
+  "status": "pass",
+  "scope": "Necessary new sticker support, finite registration, exact original non-art physical buffers/materials/transforms/state/component parity, fixed-part control/terminal-variant invariance and Grove four-wire attach/pose/detach smoke only. No browser, full suite or historical finalizer.",
+  "id": "8servos",
+  "originalPhysicalSignature": "8625c119ffe4f89da0d2963c6a8c4ac1e0aa66079f32eb9a09f4a52322fccf71",
+  "unchangedExistingProductFiles": [
+    "src/units/8servos/TerminalPlug.js",
+    "src/units/8servos/cad-map.json",
+    "src/units/8servos/dimensions.js",
+    "src/units/8servos/geometry-data.js"
+  ],
+  "panels": [
+    {
+      "name": "8Servos back schematic label (reference redraw)",
+      "parent": "8Servos rear shell",
+      "vertices": 63,
+      "bounds": [
+        15.800000190734863,
+        35.000000953674316,
+        0
+      ]
+    },
+    {
+      "name": "8Servos front channel print (reference redraw)",
+      "parent": "8Servos front shell",
+      "vertices": 159,
+      "bounds": [
+        10.300344407558441,
+        27,
+        0.19999980926513672
+      ]
+    },
+    {
+      "name": "8Servos fixed terminal HV/G/G/5V print (reference redraw)",
+      "parent": "8Servos power socket roof with four real inspection windows",
+      "vertices": 696,
+      "bounds": [
+        15,
+        3.2000008523464203,
+        0
+      ]
+    }
+  ],
+  "artworkFalse": "pass",
+  "originalStateAndComponents": "unchanged",
+  "fixedControlBehavior": "unchanged",
+  "variants": [
+    "terminalPlug:true"
+  ],
+  "groveFourWirePoseDetach": "pass"
+}

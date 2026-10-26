@@ -1,0 +1,180 @@
+{
+  "id": "rollercan",
+  "sku": "U188",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit-RollerCAN",
+  "retrievedAt": "2026-10-26",
+  "reference": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-RollerCAN/4.webp",
+    "sha256": "642df8c4a01f37d4543c4cceabc828fe87620b452a45c10da5ca460ce8278166"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U188_Unit_RollerCAN/Structures/Unit_RollerCAN.stl",
+      "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+      "gitBlob": "95ded1c6181d99b05db66fc45320b1932af7dc30",
+      "sha256": "39ea7e2b356fea865bb33ca2a6c99486baac972f2a165611b1193d25c6a6d135",
+      "license": "MIT"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-RollerCAN/3.webp",
+      "sha256": "d19a08ced9c487e3a9b7b39f9286f6120a62929ac32b3f814acde89cc483ead7"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-RollerCAN/4.webp",
+      "sha256": "642df8c4a01f37d4543c4cceabc828fe87620b452a45c10da5ca460ce8278166"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-RollerCAN/7.webp",
+      "sha256": "a6979a8407d8932ae5793bfa06f28359d2dab4221cc5597782b1317ce7794e52"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-RollerCAN/8.webp",
+      "sha256": "bc4c8266d8a190c48d02e60d176fd822c8f61aa8935781b8663d7ee9399c83ea"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-RollerCAN/13.webp",
+      "sha256": "f4ab343ff6de9ff5080e571f4c315bb968f8a12fbf1a510e9d8d5de7cc5bba61"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/779/sch_Unit-RollerCAN_V1.0_page_01.png",
+      "sha256": "930210237083c8f1754136113800c39b332c601db47644194b4ae6b8c4d5817c"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/779/modelsize_01.png",
+      "sha256": "e3f8ee409fc06d487e4ae316b9270aeb7252c9c15a32a3a341f1d9552c5a22d6"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      1,
+      2,
+      4,
+      6,
+      9
+    ],
+    "excludedComponents": [
+      0,
+      3,
+      5,
+      7,
+      8
+    ],
+    "origin": [
+      -1.0872135162353516,
+      0,
+      -22.25
+    ],
+    "axes": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "reason": "Retain all assembled U188 native plastic/lens triangles; other source islands are displaced duplicate copies."
+  },
+  "runtimeFiles": [
+    {
+      "path": "src/units/rollercan/cad-map.json",
+      "sha256": "83e30fdcc1ce32e65e4e64e0d9336ef0d61a131db04c08d8212d6e3a1dcad82f"
+    },
+    {
+      "path": "src/units/rollercan/dimensions.js",
+      "sha256": "5e34c16b66699b9aff744e8f65fcf0c9a635e951cf5b3dc2a27d8508d745a577"
+    },
+    {
+      "path": "src/units/rollercan/geometry-data.js",
+      "sha256": "db1aae83d466b8ad87770a3676fc8aba8bd7997cf23d68c8b7f25b0dea2dfb5e"
+    },
+    {
+      "path": "src/units/rollercan/index.js",
+      "sha256": "2e01e4939b1ac7c002c7dcd3752add4cd9b469d290d7e6e45bcc8b96c3803f87"
+    },
+    {
+      "path": "src/units/rollercan/stickers.js",
+      "sha256": "a0431d845a8ccacfc0f45aaea4e4be05a53fa9d9330414dc3028524fbf619b17"
+    },
+    {
+      "path": "src/units/rollercan/reference-redraw-debug.png",
+      "sha256": "5e9c224b964ca1584f760965f56f3e37e184e7a71cb55c487726b35a7c21b59d"
+    },
+    {
+      "path": "src/units/rollercan/reference-redraw-port-a.png",
+      "sha256": "765376d01c6e7b278035b8d3e7a548c49410d7bc50616e7d0007a36ac3bfd971"
+    },
+    {
+      "path": "src/units/rollercan/reference-redraw-pwrcan.png",
+      "sha256": "d40ce77e093cb74bebbfe0366ce7d346e38aab74cda0bd146471dede99001bab"
+    }
+  ],
+  "inferences": [
+    "Fixed PCB outline/thickness, CAN connector edge notch and hidden packages; no manufacturing PCB layout",
+    "Installed OLED depths; active dimensions calculated from 0.66 inch diagonal and 64:48 ratio",
+    "XT30 connector rows, envelope and inner contact positions from own U188 native shell opening and official photos; no physical numbered pin order claim",
+    "Motor bell profile/bearing installed Y; motor drawing supplies diameter and central bore/boss nominal sizes",
+    "Native tongue 0.25 mm free-end visual flexure travel, not rated tactile switch travel",
+    "Grove and debug connector inner walls/contact thickness, screw appearance and top PCB outline"
+  ],
+  "officialFeedbackId": "72ad6db8104f414c939b963dcd2db271",
+  "artwork": {
+    "status": "applied-local-smoke",
+    "kind": "reference-redraw",
+    "sourceKind": "Same exact SKU official assembled product photographs",
+    "originalsDistributed": false,
+    "sourcePhotographsDistributed": false,
+    "referenceSources": [
+      {
+        "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-RollerCAN/7.webp",
+        "sha256": "a6979a8407d8932ae5793bfa06f28359d2dab4221cc5597782b1317ce7794e52"
+      },
+      {
+        "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-RollerCAN/4.webp",
+        "sha256": "642df8c4a01f37d4543c4cceabc828fe87620b452a45c10da5ca460ce8278166"
+      }
+    ],
+    "files": [
+      {
+        "path": "src/units/rollercan/reference-redraw-debug.png",
+        "sha256": "5e9c224b964ca1584f760965f56f3e37e184e7a71cb55c487726b35a7c21b59d",
+        "pixels": [
+          1600,
+          580
+        ]
+      },
+      {
+        "path": "src/units/rollercan/reference-redraw-port-a.png",
+        "sha256": "765376d01c6e7b278035b8d3e7a548c49410d7bc50616e7d0007a36ac3bfd971",
+        "pixels": [
+          720,
+          920
+        ]
+      },
+      {
+        "path": "src/units/rollercan/reference-redraw-pwrcan.png",
+        "sha256": "d40ce77e093cb74bebbfe0366ce7d346e38aab74cda0bd146471dede99001bab",
+        "pixels": [
+          1600,
+          920
+        ]
+      }
+    ],
+    "limitations": [
+      "Manual reconstruction of legible product text, color bands and diagrams; not exact original vector artwork.",
+      "Fonts, small diagram spacing and photo-derived registration are approximate; unreadable fine marks are omitted rather than invented.",
+      "Appearance only; printed diagrams and ratings do not change connector mapping, electrical behavior or firmware.",
+      "No browser face review or full-regression acceptance in this checkpoint."
+    ]
+  }
+}

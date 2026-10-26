@@ -1,0 +1,81 @@
+{
+  "checkedAt": "2026-10-26T08:13:56.232Z",
+  "status": "pass",
+  "scope": "Necessary local finite assembly, mounting/shaft bore FrontSide walls, original housing retention, aperture backing, external eccentric-only kinematics, Grove nested four-wire pose/detach/disposal smoke. No browser, hardware, PWM, GPIO, vibration-force or production fit verification.",
+  "meshes": 41,
+  "triangles": 12010,
+  "nominalMm": [
+    24,
+    32,
+    8
+  ],
+  "visualEnvelopeMm": [
+    24.000015258789062,
+    37,
+    12.199999809265137
+  ],
+  "cadEnvelopeMm": [
+    24.000015258789062,
+    32,
+    12.199999809265137
+  ],
+  "mountingRays": 10,
+  "eccentricMm": [
+    7.000000238418579,
+    5,
+    7.000000000000001
+  ],
+  "rotor": "12 RPM × 0.25 s = 18 degrees; only eccentric/shaft move; fixed can/shell/Grove; exact reset; no input events",
+  "leds": 0,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        -30,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 21,
+      "purpose": "Grove mouth ends at real recessed connector rear wall"
+    },
+    {
+      "origin": [
+        1.6,
+        30,
+        2.2
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 16,
+      "purpose": "Exposed brass mass and fixed front bearing complete motor aperture"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Grove mouth ends at real recessed connector rear wall",
+      "hit": "Grove rear wall",
+      "distanceMm": 19.950000011920935
+    },
+    {
+      "purpose": "Exposed brass mass and fixed front bearing complete motor aperture",
+      "hit": "Vibrator bored brass eccentric mass",
+      "distanceMm": 9
+    }
+  ],
+  "grovePins": [
+    "GND",
+    "5V",
+    "DIN",
+    "NC"
+  ],
+  "groveAttachPoseNestedDetach": "pass",
+  "disposedResources": 83,
+  "disposeEvents": 120
+}

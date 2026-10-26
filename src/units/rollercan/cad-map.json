@@ -1,0 +1,57 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U188_Unit_RollerCAN/Structures/Unit_RollerCAN.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "95ded1c6181d99b05db66fc45320b1932af7dc30",
+  "sha256": "39ea7e2b356fea865bb33ca2a6c99486baac972f2a165611b1193d25c6a6d135",
+  "origin": [
+    -1.0872135162353516,
+    0,
+    -22.25
+  ],
+  "axes": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ],
+  "parts": [
+    {
+      "component": 1,
+      "name": "RollerCAN native rotating expansion plate",
+      "material": "shell"
+    },
+    {
+      "component": 2,
+      "name": "RollerCAN native fixed OLED face shell",
+      "material": "shell"
+    },
+    {
+      "component": 4,
+      "name": "RollerCAN native fixed motor seat shell",
+      "material": "shell"
+    },
+    {
+      "component": 6,
+      "name": "RollerCAN native rotating power light guide",
+      "material": "lens"
+    },
+    {
+      "component": 9,
+      "name": "RollerCAN native fixed RGB diffuser",
+      "material": "lens"
+    }
+  ],
+  "coordinateConvention": "Millimetres; +Y physical rotating top, fixed Grove faces +Z; OLED faces bottom (-Y)",
+  "notes": "Only the assembled standard U188 slip-ring version; displaced duplicate copies 0,3,5,7,8 excluded. All triangles of selected parts retained. No U182 geometry imported."
+}

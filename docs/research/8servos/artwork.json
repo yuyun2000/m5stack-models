@@ -1,0 +1,113 @@
+{
+  "id": "8servos",
+  "sku": "U165",
+  "retrievedAt": "2026-10-26",
+  "kind": "reference-redraw",
+  "originalsDistributed": false,
+  "method": "New text and shapes code-drawn from exact official product photographs. No photographic pixels, crop, private original or vector source distributed.",
+  "sources": [
+    {
+      "face": "front/terminal",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/8Servos%20Unit/img-609b7c35-e340-46c3-9eb8-3d2f3e4d3cb7.webp",
+      "sha256": "748a0a6cd822e88f6090907991f3e59bd3303e89454d5f5229fa66d8df526b51"
+    },
+    {
+      "face": "back",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/8Servos%20Unit/img-26c85ded-7753-46e5-9e68-5fe9eec7565c.webp",
+      "sha256": "2b253ee0aadd1cc30969a64287dce155b9ce8417a30537edd076944ea43c31bf"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/8servos/reference-redraw-front.png",
+      "sha256": "d0aecf6ad446b828141c7f0d60ee5985af489fb5292f685ad07908aee9ce86d7",
+      "pixels": [
+        1236,
+        3240
+      ],
+      "sizeMm": [
+        10.3,
+        27.0
+      ]
+    },
+    {
+      "path": "src/units/8servos/reference-redraw-terminal.png",
+      "sha256": "610f5dbf1e1a6deabca89d7587bd25b605832b514cc4e3e66945ac91c199eac9",
+      "pixels": [
+        1800,
+        384
+      ],
+      "sizeMm": [
+        15,
+        3.2
+      ]
+    },
+    {
+      "path": "src/units/8servos/reference-redraw-back.png",
+      "sha256": "9ed466fdc500c629aa3b1392e283588fa220685ead4342245826be58298242a9",
+      "pixels": [
+        1968,
+        4260
+      ],
+      "sizeMm": [
+        16.4,
+        35.5
+      ]
+    }
+  ],
+  "registration": [
+    {
+      "face": "front",
+      "sizeMm": [
+        10.3,
+        27
+      ],
+      "positionMm": [
+        -4.2,
+        3,
+        3.9
+      ],
+      "depthMm": 0.5,
+      "method": "printedArtwork",
+      "target": "8Servos front shell",
+      "note": "Source native printed area crosses 3.8 mm recess and 4.0 mm outer face; both retained."
+    },
+    {
+      "face": "back",
+      "sizeMm": [
+        15.8,
+        35
+      ],
+      "positionMm": [
+        0,
+        6.95,
+        -3.8
+      ],
+      "method": "printedArtwork",
+      "target": "8Servos rear shell"
+    },
+    {
+      "face": "terminal",
+      "sizeMm": [
+        15,
+        3.2
+      ],
+      "positionMm": [
+        0,
+        24.4,
+        6.45
+      ],
+      "method": "printedArtwork",
+      "target": "8Servos power socket roof with four real inspection windows"
+    }
+  ],
+  "coverage": "Front title/version/channel legend, fixed terminal HV/8-24V/G/G/5V colour strip and rear power/controller schematic.",
+  "remainingKnownPrintedFaces": [],
+  "limits": [
+    "Raster colours, typography, line shapes and physical label sizes/positions are photo/native-recess estimates, not production-print measurements.",
+    "Continuous adhesive film is used only where the exact photograph shows the real label crossing native service openings; all original physical geometry remains intact and available with artwork:false.",
+    "Molded lettering is retained as existing geometry; no unreadable package stamps or unknown legends are invented.",
+    "No exhaustive browser pixel inspection; necessary registration, exact original physical/control/terminal-variant and Grove checks only."
+  ],
+  "rights": "M5Stack product marks and original printed designs retain their respective rights; these reference reconstructions are not production source artwork."
+}

@@ -1,0 +1,125 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-10-26T09:47:50.314Z",
+  "scope": "Necessary local original-shell/solid probe/physical holes and FrontSide walls, access backing, real externally driven slotted trim head with stationary body, absent false controls/LEDs/sensor logic, four-wire nested Grove pose/attach/detach/disposal, standard/education PNG registration and artwork:false complete physical buffers/matrix invariance. No browser or historical/full-suite, firmware/electrical/real hardware/manufacturing-fit verification.",
+  "meshes": 114,
+  "triangles": 74554,
+  "nativeTriangles": 8436,
+  "nominalMm": [
+    24,
+    64.3,
+    8
+  ],
+  "cadEnvelopeMm": [
+    24,
+    32.00000128149986,
+    8
+  ],
+  "visualEnvelopeMm": [
+    24,
+    64.30000305175781,
+    8.007999992370605
+  ],
+  "mountingRays": 10,
+  "electrodeHoles": 38,
+  "electrodeThroughRays": 76,
+  "frontSideWalls": 160,
+  "trimBackingSamples": 25,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        -45,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 20,
+      "purpose": "Open Grove mouth backs onto actual socket rear/contact geometry"
+    },
+    {
+      "origin": [
+        0,
+        -8.4485,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 16.6,
+      "purpose": "Original square front access opening has real recessed cross-slot floor"
+    },
+    {
+      "origin": [
+        2.5,
+        -8.4485,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 16.4,
+      "purpose": "Original adjustment opening includes real fixed blue trimmer housing"
+    },
+    {
+      "origin": [
+        4,
+        -1.6,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 18,
+      "purpose": "Probe exit contains real one-millimetre twin-electrode PCB"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Open Grove mouth backs onto actual socket rear/contact geometry",
+      "hit": "Grove rear wall",
+      "distanceMm": 18.80000001192093
+    },
+    {
+      "purpose": "Original square front access opening has real recessed cross-slot floor",
+      "hit": "Earth recessed solid floor of cross-slot head",
+      "distanceMm": 16.40000000178814
+    },
+    {
+      "purpose": "Original adjustment opening includes real fixed blue trimmer housing",
+      "hit": "Earth fixed blue R3 10K trimmer housing with true rotor bore",
+      "distanceMm": 16.219999952316286
+    },
+    {
+      "purpose": "Probe exit contains real one-millimetre twin-electrode PCB",
+      "hit": "Earth complete native assembled shell",
+      "distanceMm": 16
+    }
+  ],
+  "controls": [
+    "trim"
+  ],
+  "externalLeds": [],
+  "buttonCount": 0,
+  "groveAttachPoseNestedDetachDispose": "pass",
+  "artwork": {
+    "panels": 1,
+    "pngCount": 2,
+    "kind": "source-vector-raster",
+    "variants": [
+      "standard",
+      "education-cn"
+    ],
+    "disable": "artwork:false",
+    "physicalBuffersAndMatricesUnchanged": true
+  }
+}

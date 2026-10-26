@@ -1,0 +1,74 @@
+{
+  "id": "uhf-rfid",
+  "sku": "U107",
+  "retrievedAt": "2026-10-26",
+  "kind": "mixed-official-vector-raster-and-reference-redraw",
+  "originalsDistributed": false,
+  "privateSourcesDistributed": false,
+  "method": "Latest user-supplied exact U107 production contours directly rasterized to high-resolution final PNG; original glyph winding restored to nonzero. Front mark newly drawn from exact-product official photograph. No photo crops or enlarged preview pixels.",
+  "sources": [
+    {
+      "kind": "user-supplied-exact-product-artwork",
+      "revision": "2026-04-30",
+      "sourceRetainedPrivately": true,
+      "note": "Current UP TO 1M back label with black heading and M5Stack mark. Original vectors, source URL, table and mapping are not distributed."
+    },
+    {
+      "kind": "official-photo-reference",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/uhf_rfid/uhf_rfid_05.webp",
+      "sha256": "8c2d2c05efeb92b38ee78a1956af2f4b17728d080a9183b2213cf51afbc81d23"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/uhf-rfid/reference-redraw-front.png",
+      "sha256": "bb6ba2599411837286868844ad6d62939faacf3358d0a4ae1d0bada7af587d9f",
+      "pixels": [
+        3300,
+        2200
+      ],
+      "sizeMm": [
+        33,
+        22
+      ],
+      "positionMm": [
+        0,
+        -2,
+        5.75
+      ],
+      "face": "front",
+      "kind": "reference-redraw",
+      "method": "printedArtwork",
+      "target": "UHF RFID complete native assembled shell"
+    },
+    {
+      "path": "src/units/uhf-rfid/official-back.png",
+      "sha256": "da75a923d4419af4205250021375b4dba84d0f7b4f268787873169294d52f834",
+      "pixels": [
+        2400,
+        2400
+      ],
+      "sizeMm": [
+        30,
+        30
+      ],
+      "positionMm": [
+        0,
+        0,
+        -5.55
+      ],
+      "face": "back",
+      "kind": "official-vector-raster",
+      "method": "printedArtwork",
+      "target": "UHF RFID complete native assembled shell"
+    }
+  ],
+  "coverage": "Front antenna/tag mark and current complete rear product/UART pin label.",
+  "remainingKnownPrintedFaces": [],
+  "limits": [
+    "Latest supplied 1M back label differs from historic public 2M/blue-heading photos; the current supplied original is used as requested.",
+    "Front mark stroke/size/placement are photo-derived; neither label registration is a production-print tolerance claim.",
+    "No concealed package labels or unknown legends invented. No exhaustive browser pixel verification."
+  ],
+  "rights": "M5Stack printed designs and product marks retain their respective rights."
+}

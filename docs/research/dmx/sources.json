@@ -1,0 +1,175 @@
+{
+  "id": "dmx",
+  "sku": "U183",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit-DMX",
+  "retrievedAt": "2026-10-26",
+  "reference": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-DMX/3.webp",
+    "sha256": "6b20171cf9b3ab7ca3e0d0bbbc779706f9e46f143077c9a9adf2ef89d142892a"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U183_Unit_DMX/Structures/Unit_DMX.stl",
+      "gitBlob": "3cdb147378d03c94de4c01f2531c6c7e83602ce2",
+      "sha256": "8776ddb12691a2d4f0a436ec5b767fd5302526da1a7e0df11c7030524d652139"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-DMX/4.webp",
+      "sha256": "87563ea0c0a57114fd230672bea1f3a70452a6eb0b25bcae4a389367ad8fcc11"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-DMX/9.webp",
+      "sha256": "61579f71a9fee7f5adb6c181da762762edb5e50592873cbb2ce86833395339a4"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-DMX/12.webp",
+      "sha256": "cc796a526f8021f32657793ad99836117ef8b74b4f99ad2ff539a38abfad9408"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-DMX/3.webp",
+      "sha256": "6b20171cf9b3ab7ca3e0d0bbbc779706f9e46f143077c9a9adf2ef89d142892a"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-DMX/10.webp",
+      "sha256": "9e1cbd7354c740140ab9e00f7a0b58aac796f8aa3f463034f9164b977da6a512"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-DMX/11.webp",
+      "sha256": "cb32527d56ed831118a4082cb83d0ce85b5f66682cfdb5d923ffbbee4db355fb"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-DMX/6.webp",
+      "sha256": "5e0771f566c74c4e679bd9bdf4cae02bef58aeaf1c90ef1b05dc1e059741bff4"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-DMX/7.webp",
+      "sha256": "b4207a62d7e247ae1a3099c2a31dcc666cf51b7e9f68c46c06cfb1b4b080e51f"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-DMX/8.webp",
+      "sha256": "a7239df890a8b90566362dcc80a495f4df6005fa7ec512d18dcca6982ae345f7"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-DMX/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+      "sha256": "72e687319738cb387c504e7545f5a32cf0d17efde7b4ceff175fcbe2fabcb755"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      1,
+      2
+    ],
+    "origin": [
+      19.426621913909912,
+      24,
+      -27.97917938232422
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "excludedComponents": [
+      0,
+      3
+    ],
+    "reason": "Native assembled shell pair islands 1 and 2 share raw X center 19.42662; 0 and 3 are spatially displaced duplicates. Preserve entire shell pair using one translation only; no scaling, cuts, independent alignment or source geometry repair."
+  },
+  "runtimeFiles": [
+    {
+      "path": "src/units/dmx/assembly.js",
+      "sha256": "05f65943ab9aef2ce6377c7dca70f3a053691f9d788feae876c0afa9073a7a01"
+    },
+    {
+      "path": "src/units/dmx/cad-map.json",
+      "sha256": "2b575e1b197d216a87e84b799b884114852c14ef0649548ede8f285ba7368c3e"
+    },
+    {
+      "path": "src/units/dmx/dimensions.js",
+      "sha256": "d5d5d28b2ca045141c7efe08a27551be814a4a0f60fa3acab9e87dd9a945fe05"
+    },
+    {
+      "path": "src/units/dmx/geometry-data.js",
+      "sha256": "40e3afee3f5ed09be6ee24bca2d60761b1402b85cc0a451708f7316c86906ad5"
+    },
+    {
+      "path": "src/units/dmx/index.js",
+      "sha256": "ce546632c536e0d3c02cfbdd6221435c26b505035229c0fc33b3dbf814e6d638"
+    },
+    {
+      "path": "src/units/dmx/stickers.js",
+      "sha256": "a5c2ec8ef81fa4099a18c8fb9a2353f546153656751fd61181ae7d6660dae0b6"
+    },
+    {
+      "path": "src/units/dmx/reference-redraw-back.png",
+      "sha256": "29bbf65d859dedbed0af7dc0638696912b6d7f8d480a56f3e0b81013b4c78179"
+    },
+    {
+      "path": "src/units/dmx/reference-redraw-front.png",
+      "sha256": "fa182113ed222085ba19e2dc020cc16ef155f0cc2e89142dd070c0ab466b62fc"
+    }
+  ],
+  "inferences": "PCB geometry/installed plane, concealed electronics, XLR barrel/rib/insert/ear/contact profile, termination cap and 1.8 mm visual slide, PUSH linkage and 1 mm inward axial visual travel, indicator guide. Complete native shell pair preserved by one translation. No production PCB/XLR assembly STEP, connector fit, or measured switch/latch travel.",
+  "sourceConflict": {
+    "subject": "indicator type",
+    "marketing": "Hero image says RGB LED",
+    "schematic": "D4 RED LED and R8 2K to 3V3/GND; no RGB channels",
+    "implementation": "Fixed-red externally driven power-led",
+    "officialFeedbackId": "66724e13e6234c4a9547fb39e08b066f"
+  },
+  "artwork": {
+    "status": "applied-local-smoke",
+    "kind": "reference-redraw",
+    "sourceKind": "Same exact SKU official assembled product photographs",
+    "originalsDistributed": false,
+    "sourcePhotographsDistributed": false,
+    "referenceSources": [
+      {
+        "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-DMX/9.webp",
+        "sha256": "61579f71a9fee7f5adb6c181da762762edb5e50592873cbb2ce86833395339a4"
+      },
+      {
+        "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-DMX/10.webp",
+        "sha256": "9e1cbd7354c740140ab9e00f7a0b58aac796f8aa3f463034f9164b977da6a512"
+      }
+    ],
+    "files": [
+      {
+        "path": "src/units/dmx/reference-redraw-back.png",
+        "sha256": "29bbf65d859dedbed0af7dc0638696912b6d7f8d480a56f3e0b81013b4c78179",
+        "pixels": [
+          900,
+          1430
+        ]
+      },
+      {
+        "path": "src/units/dmx/reference-redraw-front.png",
+        "sha256": "fa182113ed222085ba19e2dc020cc16ef155f0cc2e89142dd070c0ab466b62fc",
+        "pixels": [
+          1600,
+          830
+        ]
+      }
+    ],
+    "limitations": [
+      "Manual reconstruction of legible product text, color bands and diagrams; not exact original vector artwork.",
+      "Fonts, small diagram spacing and photo-derived registration are approximate; unreadable fine marks are omitted rather than invented.",
+      "Appearance only; printed diagrams and ratings do not change connector mapping, electrical behavior or firmware.",
+      "No browser face review or full-regression acceptance in this checkpoint."
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "sku": "U120",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/U120_Unit_LCD/Structures/Unit_LCD.stl",
+  "gitBlob": "8fc349139eb922bc7385c4a15f21a15d202597b3",
+  "sha256": "0c3036bf36afe591a742836f57629f94080fc8f0467b3405df7602460280dd1d",
+  "license": "MIT",
+  "selectedComponents": [
+    {
+      "index": 1,
+      "name": "LCD native rear shell",
+      "triangles": 3408
+    },
+    {
+      "index": 2,
+      "name": "LCD native front shell",
+      "triangles": 1980
+    }
+  ],
+  "excludedComponents": [
+    0,
+    3
+  ],
+  "excludedReason": "Displaced duplicates of each native shell",
+  "transform": {
+    "subtractOriginMm": [
+      -30.763001441955566,
+      23.518330112099648,
+      -4
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1
+  },
+  "nativeAssemblyNote": "The selected front and rear shells share the native assembly position. Native front extends 0.028 mm beyond nominal width and 0.0175 mm beyond nominal length; no individual alignment or scaling applied."
+}

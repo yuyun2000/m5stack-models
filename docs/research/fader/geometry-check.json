@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-10-26T06:53:30.167Z",
+  "scope": "Finite construction, aperture, movement and Grove attach/dispose smoke only; no browser or hardware verification",
+  "status": "pass",
+  "meshes": 73,
+  "triangles": 58682,
+  "visualEnvelopeMm": [
+    24.00002098083496,
+    64.00000762939453,
+    22.82999931335449
+  ],
+  "cadEnvelopeMm": [
+    24.00002098083496,
+    64.00000762939453,
+    10.399999618530273
+  ],
+  "mountingRays": 10,
+  "sliderTravelMm": 35,
+  "poses": 5,
+  "externalInputEvents": 0,
+  "independentLedCells": 14,
+  "groveAttachDetach": "pass",
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        -5,
+        50
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 49,
+      "purpose": "The real central aperture ends at the fixed solid potentiometer interior"
+    },
+    {
+      "origin": [
+        0,
+        6.5,
+        -50
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 49,
+      "purpose": "Rear service opening contains the real solid PCB"
+    },
+    {
+      "origin": [
+        0,
+        -40,
+        0.2
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 16,
+      "purpose": "Grove mouth has a physical connector back"
+    }
+  ]
+}

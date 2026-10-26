@@ -78,7 +78,7 @@ export function checkAtomS3RClosure(model){
  }
  const lcdBody=model.root.getObjectByName('LCD module body');assert.ok(lcdBody,'AtomS3R: physical LCD module exists');
  assert.ok(new THREE.Box3().setFromObject(lcdBody).getSize(new THREE.Vector3()).z>2.9,'AtomS3R: LCD has assembly depth rather than a lone framebuffer plane');
- let photographicPanels=0;model.root.traverse(o=>{if(o.userData.role==='printed-artwork'&&!['official-raster','official-raster-film'].includes(o.userData.artworkKind))photographicPanels++;});
+ let photographicPanels=0;model.root.traverse(o=>{if(o.userData.role==='printed-artwork'&&!['official-raster','official-raster-film','reference-redraw'].includes(o.userData.artworkKind))photographicPanels++;});
  assert.equal(photographicPanels,0,'AtomS3R: no photographic plane substitutes for missing assembly');
  return {status:'pass',rearRays,grovePlasticRays:plasticRays,detailRays,irEmitterRays,irSurfaceSamples,irShellContainmentDirections,rearFirstZMm:[rearMinZ,rearMaxZ],scope:'assembled surfaces; real port, mounting and IR cavities retained; finite IR/native-shell containment sampling; IR package/support dimensions inferred; not fabrication, optical or hardware validation'};
 }

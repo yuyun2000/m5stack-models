@@ -1,0 +1,45 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U183_Unit_DMX/Structures/Unit_DMX.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "3cdb147378d03c94de4c01f2531c6c7e83602ce2",
+  "sha256": "8776ddb12691a2d4f0a436ec5b767fd5302526da1a7e0df11c7030524d652139",
+  "origin": [
+    19.426621913909912,
+    24,
+    -27.97917938232422
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 1,
+      "name": "DMX native rear shell",
+      "material": "shell"
+    },
+    {
+      "component": 2,
+      "name": "DMX native front shell and XLR cradle",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    0,
+    3
+  ],
+  "notes": "Native assembled shell pair islands 1 and 2 share raw X center 19.42662; 0 and 3 are spatially displaced duplicates. Preserve entire shell pair using one translation only; no scaling, cuts, independent alignment or source geometry repair."
+}

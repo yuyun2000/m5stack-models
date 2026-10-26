@@ -1,0 +1,66 @@
+{
+  "id": "asr",
+  "sku": "U194",
+  "status": "reference-redraw",
+  "retrievedAt": "2026-10-26",
+  "originalsDistributed": false,
+  "finalPngs": [
+    {
+      "path": "src/units/asr/reference-redraw-front.png",
+      "sha256": "ddd1b4911cc50289df98529bb3b4e5f05cf75ec710e80b0019a0c33300f4fba7",
+      "pixels": [
+        756,
+        3456
+      ],
+      "sizeMm": [
+        6.3,
+        28.8
+      ],
+      "positionMm": [
+        0,
+        9,
+        8.012
+      ],
+      "face": "front",
+      "method": "printedFilm",
+      "artworkKind": "reference-redraw",
+      "target": "physical adhesive film over native grille",
+      "reference": {
+        "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/635/U194_02.webp",
+        "sha256": "3bc8371d85bf00b9ca5251f4efb718752ff854c10ef42a956da3f7f1c06ff140"
+      }
+    },
+    {
+      "path": "src/units/asr/reference-redraw-back.png",
+      "sha256": "bc9aaa27a71f88d2093fa4acef6e8f3f94d75b083693aefdf895c3dc7863a330",
+      "pixels": [
+        1968,
+        3480
+      ],
+      "sizeMm": [
+        16.4,
+        29
+      ],
+      "positionMm": [
+        0,
+        7.1,
+        -7.8
+      ],
+      "face": "back",
+      "method": "printedArtwork",
+      "artworkKind": "reference-redraw",
+      "target": "ASR complete native assembled shell",
+      "reference": {
+        "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/635/U914_07.webp",
+        "sha256": "6905e95b7e2b2804e79df84ab78f3ddf484e514fd2af6e138ac5a1e8dd370590"
+      }
+    }
+  ],
+  "method": "New code-drawn raster from exact U194 official product photos; no photographic pixels/crops, supplied table, vector originals, private mapping or generator distributed.",
+  "limitations": [
+    "Colours, glyph geometry, label dimensions and registration are photo-derived; no production-print accuracy claim.",
+    "Rear label faithfully prints 8Ω@1W as in exact U194 photo; product body specifies 8Ω@0.8W. The raster print is not an electrical-rating assertion.",
+    "Front label is physical adhesive film spanning native central apertures as in exact product photo. All actual native grille apertures retain physical speaker backing with artwork:false.",
+    "No browser pixel inspection; necessary PNG decode/registration and physical-invariance checks only."
+  ]
+}

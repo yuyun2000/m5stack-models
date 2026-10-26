@@ -1,0 +1,45 @@
+{
+  "sku": "U097",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U097_Unit_4Relay/Structures/Unit_4Relay.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "a1f2d73b5f1063fc611a6de88c70c4340f84d601",
+  "sha256": "b9e43e7f819745deacf74feffd5ba38a89b1004cccc964c33e30e6a890fa411f",
+  "license": "MIT",
+  "selectedComponents": [
+    {
+      "index": 0,
+      "name": "4Relay native assembled shell pair",
+      "triangles": 7522
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "excludedReason": "Displaced duplicate front/rear shells. Component0 retains full native assembled shell pair.",
+  "transform": {
+    "subtractOriginMm": [
+      0,
+      44,
+      4
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1
+  }
+}

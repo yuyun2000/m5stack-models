@@ -1,0 +1,156 @@
+{
+  "product": "Unit 2Relay",
+  "sku": "U131",
+  "retrievedAt": "2026-10-26",
+  "officialDocs": "https://docs.m5stack.com/en/unit/2relay",
+  "officialMCP": {
+    "query": "M5Stack Unit 2Relay U131 dimensions relay terminals LED",
+    "rawResponseDistributed": false,
+    "result": "Confirms U131, 56×24×19 mm, GPIO HY2.0-4P, two independent blue 0603 status LEDs, two supplied HT3.96-4P accessories, schematic C/A/B/C terminals and official CAD link"
+  },
+  "officialCad": {
+    "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U131_Unit_2Relay/Structures/Unit_2Relay.stl",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "gitBlob": "7b100bf4667d3861833aa8d26d97567713af8c37",
+    "sha256": "c62e1c3cb1632d9a5d386ecc92108e2c843f58f66148d7de6097fd6ca0ecfc79",
+    "origin": [
+      0,
+      16,
+      4
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "parts": [
+      {
+        "component": 0,
+        "name": "2Relay native front shell",
+        "material": "shell"
+      },
+      {
+        "component": 2,
+        "name": "2Relay native rear shell",
+        "material": "shell"
+      }
+    ],
+    "excludedComponents": [
+      1,
+      3
+    ],
+    "notes": "Keep complete coincident assembled front/rear native shells 0 and 2, including LEGO bosses, LED passages, package/terminal windows and Grove opening. Components 1 and 3 are exploded duplicates. Apply one common translation X=rawX,Y=rawY-16,Z=rawZ-4; no scale, cuts, fills, or independent transforms."
+  },
+  "dimensions": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/2relay/model%20size.png",
+    "sha256": "f80df2a33652551fbd762e3fee031206c69c3bad4044029406b73972f47b5b2e",
+    "normalizedMm": [
+      24,
+      56,
+      19
+    ],
+    "mountingHoleDiameterMm": 4.85,
+    "mountingHoleCentersMm": [
+      [
+        -8,
+        -16
+      ],
+      [
+        8,
+        -16
+      ]
+    ]
+  },
+  "appearance": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/2relay/2relay_01.webp",
+      "sha256": "00f15aac868347880eef9fb116e1e14b6c858386fcea0f5492c2498a55a6f4be",
+      "role": "Exact U131 package/exterior/PCB photograph used for appearance reconstruction; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/2relay/2relay_02.webp",
+      "sha256": "b2d1076ea11ef139ea3179784352d2a76fbc0f58004ca31f0051fadd38134d71",
+      "role": "Exact U131 package/exterior/PCB photograph used for appearance reconstruction; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/2relay/2relay_03.webp",
+      "sha256": "bcecbf92a57f37d68e85c7d7b7eaf50766f5a2aa78c64a91623da15e6943c738",
+      "role": "Exact U131 package/exterior/PCB photograph used for appearance reconstruction; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/2relay/2relay_04.webp",
+      "sha256": "252e8ae582fda5f050458d23ba92814cb60fbf228c8a95ac054a113218522fda",
+      "role": "Exact U131 package/exterior/PCB photograph used for appearance reconstruction; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/2relay/2relay_05.webp",
+      "sha256": "ce7a2af3a9d945d044de6e63369f82a73cfdfb90d3563166089a5daec2417f14",
+      "role": "Exact U131 package/exterior/PCB photograph used for appearance reconstruction; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/2relay/2relay_07.webp",
+      "sha256": "a2e754e663f27e96b3a32f99be5627b7dc636cd435d8cd11df19b87710386499",
+      "role": "Exact U131 package/exterior/PCB photograph used for appearance reconstruction; not redistributed"
+    }
+  ],
+  "terminalAccessory": {
+    "packagePhoto": "https://static-cdn.m5stack.com/resource/docs/products/unit/2relay/2relay_01.webp",
+    "quantity": 2,
+    "photoLabel": "VH3.96-4P",
+    "productListLabel": "HT3.96-4P",
+    "appearanceOnly": true
+  },
+  "runtimeSha256": {
+    "src/units/2relay/TerminalPlug.js": "9169c5ce7942c80dde21bd34cf8480352094e8973ca3df925164d5d5e61568cb",
+    "src/units/2relay/assembly.js": "32537b88671f49dba727a7e2986f5051b17b1afb8e926746184d6eed25ed2fdb",
+    "src/units/2relay/cad-map.json": "13e72bc2b4a68152f7cbf822819143753e7f11879b23e4e3643e72cd7d91c2b9",
+    "src/units/2relay/dimensions.js": "2cae8f26dcab88017594505e9402f6f54417867fc3b88c6d69ec853d2eccba57",
+    "src/units/2relay/geometry-data.js": "78d5f6b1ac53c2b57f9bb558f2e07333e23c2ee2fe111e87efd41003cc925fae",
+    "src/units/2relay/index.js": "fdd6f7b2880d3c0a71590b03261f6aa8372a6138b6f317b5035647606785a614"
+  },
+  "artwork": {
+    "status": "applied-local-smoke",
+    "originalsDistributed": false,
+    "privateSourceUrlsDistributed": false,
+    "source": "User-supplied exact product flat artwork; final raster distribution authorized by user, original artwork rights retained by M5Stack.",
+    "registration": "Two sealed-package top labels and rear specification label are exact vector artwork converted to PNG with original glyph contours and terminal symbols. Targeted projection follows the existing solid relay-package tops and original rear recess. The separate small front Grove marking visible in product photos is outside these three supplied flat originals and remains an outstanding detail.",
+    "files": [
+      {
+        "path": "src/units/2relay/official-relay-1.png",
+        "sha256": "760cb483fa481347a39707f4d6c87fe315bfb5d3cf9453b08ac3ee46c8f4f646",
+        "pixels": [
+          3298,
+          1800
+        ]
+      },
+      {
+        "path": "src/units/2relay/official-relay-2.png",
+        "sha256": "a9f677916cb098e7bd4b487f6e531948a0072553796370d96d748a83a58a4a92",
+        "pixels": [
+          3298,
+          1800
+        ]
+      },
+      {
+        "path": "src/units/2relay/official-back.png",
+        "sha256": "d3f0b67ca06ec771f9046d7e5bff23dd0317381ad0079466b585152a6534cb19",
+        "pixels": [
+          784,
+          1800
+        ]
+      }
+    ]
+  }
+}

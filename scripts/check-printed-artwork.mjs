@@ -25,7 +25,9 @@ export function checkPrintedArtwork(){
  const scaled=printedArtwork(host,{target:part,url:'unused',size:[8,8],position:[0,0,1],depth:.2})[0];host.root.updateMatrixWorld(true);
  assert.ok(Math.abs(ray(6,0,scaled)[0].uv.x-.875)<1e-5,'projection retains model-space scale when an ancestor is scaled');
  const thin=slab(host.body,6,6,.1,.2,[0,0,3],new THREE.MeshStandardMaterial(),[],.01);
- const thinLabel=printedArtwork(host,{target:thin,url:'unused',size:[4,4],position:[0,0,3.05],depth:.3})[0];
+ const thinLabel=printedArtwork(host,{target:thin,url:'unused',size:[4,4],position:[0,0,3.05],depth:.3,artworkKind:'reference-redraw'})[0];
+ assert.equal(label.userData.artworkKind,'official-raster','existing source artwork retains its provenance');
+ assert.equal(thinLabel.userData.artworkKind,'reference-redraw','a reference redraw is not labelled an original');
  assert.ok([...thinLabel.geometry.attributes.normal.array].filter((_,i)=>i%3===2).every(z=>z>0),'a thin part receives print on its outward face only');
  const disabled=new Device({artwork:false}),surface=new THREE.Mesh(new THREE.PlaneGeometry(2,2),new THREE.MeshStandardMaterial());disabled.body.add(surface);
  assert.equal(printedArtwork(disabled,{target:surface,url:'unused',size:[2,2],position:[0,0,0]}),null);

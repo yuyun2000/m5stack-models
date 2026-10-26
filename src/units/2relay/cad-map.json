@@ -1,0 +1,45 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U131_Unit_2Relay/Structures/Unit_2Relay.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "7b100bf4667d3861833aa8d26d97567713af8c37",
+  "sha256": "c62e1c3cb1632d9a5d386ecc92108e2c843f58f66148d7de6097fd6ca0ecfc79",
+  "origin": [
+    0,
+    16,
+    4
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "2Relay native front shell",
+      "material": "shell"
+    },
+    {
+      "component": 2,
+      "name": "2Relay native rear shell",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    3
+  ],
+  "notes": "Keep complete coincident assembled front/rear native shells 0 and 2, including LEGO bosses, LED passages, package/terminal windows and Grove opening. Components 1 and 3 are exploded duplicates. Apply one common translation X=rawX,Y=rawY-16,Z=rawZ-4; no scale, cuts, fills, or independent transforms."
+}

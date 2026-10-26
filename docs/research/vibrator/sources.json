@@ -1,0 +1,193 @@
+{
+  "product": "Unit Vibrator",
+  "sku": "U059",
+  "retrievedAt": "2026-10-26",
+  "officialDocs": "https://docs.m5stack.com/en/unit/vibrator",
+  "officialMCP": {
+    "query": "Unit Vibrator U059 vibration motor dimensions structure",
+    "rawResponseDistributed": false,
+    "result": "Confirmed N20 DC motor + exposed metal eccentric, Grove HY2.0-4P, DIN/NC, listed 32×24×8 mm, official photos, dimensions and CAD. No hardware control or motor parameters are simulated."
+  },
+  "officialCad": {
+    "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U059_Unit_Vibrator/Structures/Unit_Vibrator.stl",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "gitBlob": "6135c2c1b1a0b0b002703b8106a3244e5cdf4eaf",
+    "sha256": "73a8c523f1d9afcc443cfb577a37e550716d15e575437f82a9dccbfcea66b75d",
+    "license": "MIT",
+    "selectedComponents": [
+      {
+        "index": 0,
+        "name": "Vibrator complete native double shell",
+        "triangles": 3756
+      }
+    ],
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "excludedReason": "Laterally displaced separate copies of native upper and lower shells; island 0 is complete assembled housing",
+    "transform": {
+      "subtractOriginMm": [
+        265.2688217163086,
+        313.2234802246094,
+        -19
+      ],
+      "axes": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "scale": 1
+    },
+    "nativeAssemblyNote": "Retain native complete assembled double shell island 0 using one translation. Islands 1 and 2 are laterally displaced duplicates. Motor cover and shaft aperture, mount bores, seams and molded detail retained; no independent alignment, scaling, filling or shell cuts."
+  },
+  "dimensions": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/vibrator/model%20size.png",
+    "sha256": "f16a2927e7e504cfbbf420a19fe0c50dbdf65bac66ee4eda073f3356defd107d",
+    "officialListingMm": [
+      32,
+      24,
+      8
+    ],
+    "normalizedBaseNominalMm": [
+      24,
+      32,
+      8
+    ],
+    "nativeHousingEnvelopeMm": [
+      24.000015258789062,
+      32,
+      12.199999809265137
+    ],
+    "defaultVisualEnvelopeMm": [
+      24.000015258789062,
+      37,
+      12.199999809265137
+    ],
+    "mountingHoleDiameterMm": 5,
+    "mountingHoleCentersMm": [
+      [
+        -8,
+        -4
+      ],
+      [
+        8,
+        -4
+      ]
+    ],
+    "exposedEccentricDiameterMm": 7,
+    "exposedEccentricLengthMm": 5,
+    "groveFaceMm": [
+      10,
+      5.2
+    ],
+    "note": "The 8 mm official figure describes the base; native raised motor cover reaches 12.2 mm total depth. External eccentric adds 5 mm beyond the 32 mm housing height."
+  },
+  "appearance": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/vibrator/vibrator_01.webp",
+      "sha256": "b4e942f37754d859c49fc387e12a2c7b2073b7acc69a4ca52c9aa1b2fe5d7bde",
+      "role": "Exact U059 official product photograph; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/vibrator/vibrator_02.webp",
+      "sha256": "eacd98a22437876757930a6b1aadc481a4d6dbfd2970fe8da3b35c565cb12b13",
+      "role": "Exact U059 official product photograph; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/vibrator/vibrator_05.webp",
+      "sha256": "f1f8ae9b48bbfcb1723658b5540e5cc0f1bdd10c2938b08e0c488f1cbcd7f3fc",
+      "role": "Exact U059 official product photograph; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/vibrator/vibrator_06.webp",
+      "sha256": "2923d6a26cc74d9af92133fef55ddeb25d2a213f7dc9ca204753f65cb6cee87a",
+      "role": "Exact U059 official product photograph; not redistributed"
+    }
+  ],
+  "inferred": [
+    "N20 flattened metal can cross-section/length and installed XYZ, fixed brush cap and front bearing cross-section",
+    "PCB outline, open motor clearance, thickness, installed XYZ and concealed drive/protection component placement",
+    "Shaft diameter/installed axis XYZ, brass mass off-axis shaft-bore offset, radial retaining screw geometry and placement",
+    "Grove internal wall, contact, latch and solder-tail geometry; fastening screw and shank"
+  ],
+  "motion": {
+    "component": "rotor",
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "centreMm": [
+      0,
+      15.65,
+      2.2
+    ],
+    "defaultRpm": 0,
+    "movingGeometry": [
+      "Output shaft",
+      "Off-axis bored brass mass",
+      "Radial retaining screw and slot"
+    ],
+    "fixedGeometry": [
+      "Original complete shell",
+      "N20 can/brush end cap/front bearing",
+      "PCB",
+      "Grove socket and port frame"
+    ],
+    "scope": "Pure externally driven visual angle/RPM. No autonomous housing shake, motor physics, vibration force, PWM-to-RPM mapping, GPIO or electrical behavior. The demo 240 RPM slider ceiling is a visual demonstration choice, not a motor specification."
+  },
+  "artwork": {
+    "status": "reference-redraw-integrated",
+    "kind": "reference-redraw",
+    "sourcePhotographs": [
+      {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/vibrator/vibrator_02.webp",
+        "sha256": "eacd98a22437876757930a6b1aadc481a4d6dbfd2970fe8da3b35c565cb12b13",
+        "role": "Exact-SKU official photo; reference transcription only, no photo pixels redistributed"
+      }
+    ],
+    "finalRasters": [
+      {
+        "path": "src/units/vibrator/reference-back.png",
+        "sha256": "db892d47296ccdfd0e5da60effa3f5db4720e73ddc1a6c2f27521dcc273bd2ef",
+        "sizePx": [
+          1024,
+          768
+        ],
+        "artworkKind": "reference-redraw"
+      }
+    ],
+    "privateSourcesUsed": false,
+    "photosRedistributed": false,
+    "visualVerification": null
+  },
+  "runtimeSha256": {
+    "src/units/vibrator/assembly.js": "f8d8224989f23cd8ee20b9d8028f464d675ed7a40e2b2b2ef1fcad95611ca22d",
+    "src/units/vibrator/cad-map.json": "6c7e5d8f3bf8e119e1b69846a9f117c7873741534acd906e5de6c79df8f23ca0",
+    "src/units/vibrator/dimensions.js": "c0b2e3a716d892e0f5c8cda103a9f69b882015cc20c4feb564bb1bd13a825955",
+    "src/units/vibrator/geometry-data.js": "2ec3670a7508c9e475fd922fbc89519d85d4577140990039b106ed1e7939461b",
+    "src/units/vibrator/index.js": "fc2e24b43cc8809eb95d0d36415adf16a1596c3df3ee4691eccc8a3eea4a2f11",
+    "src/units/vibrator/reference-back.png": "db892d47296ccdfd0e5da60effa3f5db4720e73ddc1a6c2f27521dcc273bd2ef",
+    "src/units/vibrator/stickers.js": "de8e930a3b6f89ab417b881d17db9731bc569ee57bff7a3195b5965afb94a1a1"
+  },
+  "verification": {
+    "geometry": "docs/research/vibrator/smoke.json",
+    "visual": null,
+    "stage": "modeled",
+    "limitations": "Necessary construction/API smoke only; no browser acceptance, physical hardware, production assembly fit, electrical/firmware or motor performance verification."
+  },
+  "stickerVerification": "docs/research/vibrator/sticker-check.json"
+}

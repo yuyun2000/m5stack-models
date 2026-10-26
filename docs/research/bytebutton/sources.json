@@ -1,0 +1,138 @@
+{
+  "product": "Unit ByteButton",
+  "sku": "U192",
+  "retrievedAt": "2026-10-26",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit%20ByteButton",
+  "officialCad": {
+    "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U192_Unit_ByteButton/Structures/Unit_ByteButton.stl",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "gitBlob": "adaf2ea82be6a9d91124edaf4d793be2001ac6cd",
+    "sha256": "b9e0ddde7b7c831fab7420910915a702e676ac085b8f68c525ccb9a9bcfd29f6",
+    "license": "MIT",
+    "selectedComponents": [
+      0,
+      3,
+      4,
+      7
+    ],
+    "excludedComponents": [
+      1,
+      2,
+      5,
+      6
+    ],
+    "origin": [
+      44,
+      12,
+      3.2
+    ],
+    "axes": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "note": "One rigid canonical transform applied to native assembled front/rear shells and two lightpipes. Displaced copies omitted. Eight native comb exit planes at raw Z=9.2 are partitioned into independent LED materials, without moving, duplicating or changing any native triangle. Original shells and lightpipes have no scaling, cuts or independent alignment. Buttons and PCB are reconstructed separately."
+  },
+  "dimensions": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20ByteButton/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+    "sha256": "726d4c1e93a92d1ab904163f6af147a486be628adaf0c992e5160e1febb1d3e8",
+    "officialListingMm": [
+      88,
+      24,
+      12
+    ],
+    "normalizedHousingMm": [
+      24,
+      88,
+      12
+    ],
+    "fullCapEnvelopeMm": [
+      24,
+      88,
+      14
+    ],
+    "mountingHoleCentersMm": [
+      [
+        -8,
+        -32
+      ],
+      [
+        8,
+        -32
+      ],
+      [
+        -8,
+        32
+      ],
+      [
+        8,
+        32
+      ]
+    ],
+    "mountingHoleDiameterMm": 4.85,
+    "capProjectionMm": 2,
+    "buttonApertureDiameterMm": 4.4,
+    "buttonPitchMm": 6.8,
+    "groveFaceMm": [
+      10,
+      5.2
+    ]
+  },
+  "controls": {
+    "buttons": 8,
+    "rgbLeds": 9,
+    "grovePorts": 2,
+    "tactilePackageMm": [
+      3,
+      4,
+      2.5
+    ],
+    "rgbPackage": "WS2812C-2020",
+    "channelMapping": "Native raised digits prove rawX20.2=CH0, increasing by6.8 mm through rawX67.8=CH7. With chosen +Y transform CH0 is lower; press-1/rgb-1=CH0 and press-8/rgb-8=CH7. RGB ids identify physical location, not U1–U9 serial chain order.",
+    "travelMm": 0.2,
+    "travelEvidence": "Visual stroke estimate, not specified by manufacturer."
+  },
+  "appearance": [
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20ByteButton/4.webp",
+      "sha256": "99e1aa15c9ee71451e2b7731de88f59be710797da8cdef2184522aff20a4f224",
+      "role": "Same-SKU official appearance reference; source image not redistributed"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20ByteButton/6.webp",
+      "sha256": "8244c0205efe5734ec894dde706830c5472f6389679e86a0703657172348c31c",
+      "role": "Same-SKU official appearance reference; source image not redistributed"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20ByteButton/8.webp",
+      "sha256": "0fc9e36165abbcd708fd3d7dae7c2e15d3193a85c1eb986e147c7e6819fbdd37",
+      "role": "Same-SKU official appearance reference; source image not redistributed"
+    }
+  ],
+  "inferred": [
+    "Reconstructed PCB outer profile, thickness, installed Z, screw and lightpipe retention bores",
+    "Black cap diameter and underside, concealed actuator stem and 0.2mm visual travel",
+    "3×4×2.5mm tactile package installed positions and metal cover aperture",
+    "Concealed electronics and WS2812 package installed positions",
+    "Grove internal walls, latch and contact insertion dimensions"
+  ],
+  "rights": {
+    "cad": "M5_Hardware MIT; preserve licenses/M5_Hardware-MIT.txt",
+    "newCode": "MIT",
+    "photos": "Official M5Stack appearance sources, not relicensed or bundled",
+    "privateAssets": "No private sticker table, mappings, vector files, conversion assets or photographic crops are used or distributed."
+  },
+  "verification": "Only necessary construction/API smoke; no browser or hardware verification."
+}

@@ -1,0 +1,81 @@
+{
+  "checkedAt": "2026-10-26T09:11:06.638Z",
+  "status": "pass",
+  "scope": "Necessary finite geometry, full original assembled shell, real bores and FrontSide walls, top release/connector physical backing, passive API, Grove four-wire pose/detach/disposal and three PNG registrations. No browser/full historical checks, inertial, firmware, electrical, hardware or production-fit verification.",
+  "meshes": 91,
+  "triangles": 10309,
+  "visualEnvelopeMm": [
+    24,
+    24,
+    8.007999897003174
+  ],
+  "cadEnvelopeMm": [
+    24,
+    24,
+    8
+  ],
+  "mountingRays": 10,
+  "mountingWalls": 8,
+  "pcbHoleWalls": 10,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        20,
+        0
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 11,
+      "purpose": "Native top release slot has recessed physical PCB edge behind it"
+    },
+    {
+      "origin": [
+        0,
+        -20,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 15,
+      "purpose": "Open Grove mouth has recessed physical rear wall/contact backing"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Native top release slot has recessed physical PCB edge behind it",
+      "hit": "Mini IMU physical scalloped PCB with true mounting and solder holes",
+      "distanceMm": 9.600000381469727
+    },
+    {
+      "purpose": "Open Grove mouth has recessed physical rear wall/contact backing",
+      "hit": "Grove rear wall",
+      "distanceMm": 13.95000001192093
+    }
+  ],
+  "artwork": {
+    "panels": 3,
+    "kind": "reference-redraw",
+    "disabledWithFalse": true,
+    "physicalGeometryInvariant": true
+  },
+  "externalComponents": [
+    "grove",
+    "sensor"
+  ],
+  "grovePins": [
+    "GND",
+    "5V",
+    "SDA",
+    "SCL"
+  ],
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 134,
+  "disposeEvents": 220
+}

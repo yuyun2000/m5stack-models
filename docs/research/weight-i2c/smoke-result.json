@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "date": "2026-10-26",
+  "scope": "Finite geometry/API smoke only; no browser acceptance or full-suite claim",
+  "cadEnvelopeMm": [
+    24,
+    32,
+    8
+  ],
+  "sourceTriangles": 9102,
+  "physicalMeshes": 42,
+  "checks": [
+    "finite coordinates",
+    "native CAD envelope",
+    "two clear axial installation bores",
+    "FrontSide PCB bore walls",
+    "four empty terminal roof windows",
+    "terminal geometry in native aperture",
+    "exact documented port metadata",
+    "Grove module attach, pose, detach and disposal"
+  ],
+  "deferred": [
+    "printed front/back labels",
+    "supplied removable terminal accessory",
+    "browser acceptance"
+  ]
+}

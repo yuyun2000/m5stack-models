@@ -1,0 +1,60 @@
+{
+  "id": "fader",
+  "sku": "U123",
+  "retrievedAt": "2026-10-26",
+  "kind": "reference-redraw",
+  "originalsDistributed": false,
+  "method": "New text and shapes code-drawn from exact official product photographs. No photographic pixels, crop, private original or vector source distributed.",
+  "sources": [
+    {
+      "face": "back",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/fader/fader_02.webp",
+      "sha256": "88dae225dd6d20a6ebb007c43b28786d74c6534c67c97bfebc12b2afe14fe0f8"
+    },
+    {
+      "face": "unprinted operating side",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/fader/fader_03.webp",
+      "sha256": "dcc55bbd84d819f1a92ece4884d69964b625581b6118578c0a8bd42784eb7182"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/fader/reference-redraw-back.png",
+      "sha256": "5b2a4796113e29ad2962fa8bfb22ec3b165fa68245c7e3f11ff480feb7ba9d86",
+      "pixels": [
+        2016,
+        5328
+      ],
+      "sizeMm": [
+        16.8,
+        44.4
+      ]
+    }
+  ],
+  "registration": [
+    {
+      "face": "back",
+      "sizeMm": [
+        16.8,
+        44.4
+      ],
+      "positionMm": [
+        0,
+        7.5,
+        -5.012
+      ],
+      "method": "printedFilm",
+      "target": "Fader native rear shell",
+      "note": "Continuous exact-product adhesive label spans native rear service aperture; PCB/potentiometer remain behind it."
+    }
+  ],
+  "coverage": "Rear potentiometer/LED-number/ANALOG/SK6812/PORT.B/pin diagram. Clear actual operating-side photo is unprinted; marketing 0V/3.3V callouts are not added as front ink.",
+  "remainingKnownPrintedFaces": [],
+  "limits": [
+    "Raster colours, typography, line shapes and physical label sizes/positions are photo/native-recess estimates, not production-print measurements.",
+    "Continuous adhesive film is used only where the exact photograph shows the real label crossing native service openings; all original physical geometry remains intact and available with artwork:false.",
+    "Molded lettering is retained as existing geometry; no unreadable package stamps or unknown legends are invented.",
+    "No exhaustive browser pixel inspection; necessary registration, exact original physical/control/terminal-variant and Grove checks only."
+  ],
+  "rights": "M5Stack product marks and original printed designs retain their respective rights; these reference reconstructions are not production source artwork."
+}

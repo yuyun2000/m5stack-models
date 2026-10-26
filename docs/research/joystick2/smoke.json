@@ -1,0 +1,125 @@
+{
+  "checkedAt": "2026-10-26T07:43:25.226Z",
+  "status": "pass",
+  "scope": "Necessary finite geometry, envelope, mounting rays/normals, closure, tilt interpolation/reset, real cap press/release/cancel, LED external state, nested Grove attachment/pose/detach/disposal smoke; no browser, hardware, Hall sensing, ADC, firmware or I2C verification",
+  "meshes": 34,
+  "triangles": 12500,
+  "visualEnvelopeMm": [
+    24.000001907348633,
+    40,
+    23.87864875793457
+  ],
+  "cadEnvelopeMm": [
+    24.000001907348633,
+    40,
+    23.87864875793457
+  ],
+  "mountingRays": 10,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        8,
+        30
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 11,
+      "purpose": "Native cap closes stick top"
+    },
+    {
+      "origin": [
+        0,
+        8,
+        10.8
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 2,
+      "purpose": "Gimbal and shaft occupy real shell opening below cap"
+    },
+    {
+      "origin": [
+        0,
+        -32,
+        1.8
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 19,
+      "purpose": "Grove mouth ends in physical rear wall"
+    },
+    {
+      "origin": [
+        7.9,
+        -18.8,
+        12
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 8.2,
+      "purpose": "Native light pipe closes RGB slot"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Native cap closes stick top",
+      "hit": "Joystick2 native moving thumb cap",
+      "distanceMm": 10.12377205039298
+    },
+    {
+      "purpose": "Gimbal and shaft occupy real shell opening below cap",
+      "hit": "Joystick2 visible ball gimbal",
+      "distanceMm": 1.40158223024482
+    },
+    {
+      "purpose": "Grove mouth ends in physical rear wall",
+      "hit": "Grove rear wall",
+      "distanceMm": 17.950000011920935
+    },
+    {
+      "purpose": "Native light pipe closes RGB slot",
+      "hit": "Joystick2 native RGB light pipe",
+      "distanceMm": 8.05000114440918
+    }
+  ],
+  "motion": {
+    "joints": [
+      "tilt-x",
+      "tilt-y"
+    ],
+    "visualRangeDeg": [
+      -18,
+      18
+    ],
+    "hardwareRangeKnown": false,
+    "press": "press",
+    "pressTravelMm": 0.4,
+    "pressTravelKnown": false,
+    "realNativeCap": "pass",
+    "fixedPackageAndGrove": "pass",
+    "interpolationReset": "pass",
+    "inputIntentOnly": "pass",
+    "led": "rgb"
+  },
+  "grovePins": [
+    "GND",
+    "5V",
+    "SDA",
+    "SCL"
+  ],
+  "groveAttachPoseNestedDetach": "pass",
+  "disposedResources": 82
+}

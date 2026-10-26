@@ -1,0 +1,293 @@
+{
+  "checkedAt": "2026-10-26T10:10:06.640425+00:00",
+  "scope": "85-model source synchronization requested by user; staged source is checked again before commit",
+  "sourceBaseline": "48667b728736fbfd4365a06575473ce538d3c972",
+  "counts": {
+    "controllers": 14,
+    "units": 71,
+    "modeled": 85,
+    "verified": 0
+  },
+  "source": {
+    "catalogAndManifestProducts": 85,
+    "newUnits": 42,
+    "runtimeFilesChecked": 340,
+    "runtimeHashMismatches": 0,
+    "existingPhysicalFilesChecked": 136,
+    "existingGeometryUnchanged": true,
+    "privateScrollStructuralWorkExcluded": true,
+    "catalogSha256": "26b2ae76e29d555c94bc25a8bbdd50f78e2dfc321745995bd24c7748830b4e9b",
+    "manifestSha256": "7bc0e3d555571e665456af6974474dc32f596e02c015383210a7d601f9efe51e"
+  },
+  "privacy": {
+    "status": "pass",
+    "auditedCandidateFilesBeforeCompactSyncMetadata": 786,
+    "utf8TextFiles": 651,
+    "pngDecoded": 135,
+    "pngWithoutTextOrExifMetadata": 135,
+    "blockingFindings": 0,
+    "privateOriginalsDistributed": false,
+    "privateCsvUrlsOrOriginalNamesDistributed": false,
+    "compactSyncMetadata": "Contains only this public summary and retained public publication history; checked separately before staging"
+  },
+  "targetedSharedChecks": {
+    "slide": {
+      "status": "pass",
+      "scope": "Physical translation, rotated/scaled parent, transition endpoints, external-command/input separation, off-cap ray drag, pointer ownership/cancellation and disposal; no browser pixels or hardware proof",
+      "checks": 13
+    },
+    "artwork": {
+      "status": "pass",
+      "projectedHole": true,
+      "filmHole": true,
+      "capTravelMm": 0.25,
+      "release": true,
+      "ancestorScale": true,
+      "outwardFacesOnly": true,
+      "explicitDisable": true,
+      "scope": "geometry and ownership; raster decoding and visual fit require browser review"
+    },
+    "viewer": {
+      "checkedAt": "2026-10-26T10:06:33.211Z",
+      "status": "pass",
+      "checks": [
+        "same Viewer mount idempotence",
+        "nested held key plus pointer cancels at old path before detach",
+        "unrelated host key and sibling pointer remain held",
+        "reuse after nested cancellation",
+        "window blur and hidden document cancel owned sources",
+        "external input source remains owned by its caller",
+        "cross Viewer transfer cancels old owned input and removes subscriptions",
+        "one update owner for continuous rpm",
+        "unmount pauses and remount resumes existing rpm",
+        "synchronous cancelled-up consumer can safely transfer or remount a device",
+        "third Viewer chosen during cancellation wins over the stale outer mount",
+        "cross host module transfer routes cancellation only through old host",
+        "disposing Viewer cannot be revived by cancelled-up and disposal is idempotent",
+        "actual CardKB AltLeft Sym keyboard stroke and exact release",
+        "standalone mapped Alt requires focused canvas and a real button",
+        "modifier chords and editable/unfocused targets preserve browser defaults",
+        "Alt hold cancels without click on blur or unmount",
+        "actual ray-picked slider follows captured pointer beyond cap and cancels on blur without springing back"
+      ],
+      "ownedResources": 20,
+      "rendererInstances": 10,
+      "oldNestedCancellationPath": "left/next/press",
+      "singleTickDegreesPer100msAt60Rpm": 36,
+      "cardkbKeyboard": {
+        "sku": "U035-B",
+        "positiveShortcuts": [
+          {
+            "code": "AltLeft",
+            "target": "key-sym",
+            "travelMm": 0.2,
+            "exactReturn": true
+          },
+          {
+            "code": "KeyQ",
+            "target": "key-q",
+            "travelMm": 0.2,
+            "exactReturn": true
+          },
+          {
+            "code": "F1",
+            "target": "key-fn",
+            "travelMm": 0.2,
+            "exactReturn": true
+          },
+          {
+            "code": "ShiftLeft",
+            "target": "key-shift",
+            "travelMm": 0.2,
+            "exactReturn": true
+          }
+        ],
+        "blockedCases": [
+          "unmapped standalone AltLeft",
+          "AltLeft mapped to a non-button",
+          "unmapped standalone AltRight",
+          "Alt+Q chord",
+          "Meta+Q chord",
+          "Ctrl+Q chord",
+          "Meta+AltLeft chord",
+          "Ctrl+AltLeft chord",
+          "AltLeft in INPUT",
+          "AltLeft in TEXTAREA",
+          "AltLeft in SELECT",
+          "AltLeft in contenteditable",
+          "AltLeft outside focused canvas",
+          "Q outside focused canvas",
+          "unheld AltLeft keyup",
+          "AltLeft with unfocused global-keyboard viewer"
+        ],
+        "cancelActions": {
+          "blur": [
+            {
+              "id": "key-sym",
+              "action": "down",
+              "cancelled": false
+            },
+            {
+              "id": "key-sym",
+              "action": "up",
+              "cancelled": true
+            }
+          ],
+          "unmount": [
+            {
+              "id": "key-sym",
+              "action": "down",
+              "cancelled": false
+            },
+            {
+              "id": "key-sym",
+              "action": "up",
+              "cancelled": true
+            }
+          ]
+        }
+      },
+      "scope": "Actual DeviceViewer lifecycle/input/RAF code and CardKB shortcuts with an isolated no-GPU renderer and DOM fixture; no browser pixels, private research, network, firmware or hardware simulation"
+    },
+    "demo": {
+      "status": "pass",
+      "cases": [
+        "port-selection",
+        "unit-selection",
+        "model-switch",
+        "stale-error",
+        "failed-attachment-disposal",
+        "successful-ownership",
+        "reentrant-hold-cancellation"
+      ],
+      "nested": {
+        "status": "pass",
+        "cases": [
+          "invisible-host-emitter-excluded-from-visible-light-controls",
+          "recursive-HUB-outputs-without-upstream-input",
+          "nested-Key-button-LED-and-Fan-rpm-controls",
+          "two-level-paths-ancestor-fallback-and-pending-result-disposal",
+          "nested-selection-invalidates-async-load",
+          "nested-target-detach-cancels-old-path-without-stale-controls",
+          "ancestor-detach-prunes-menu-and-keeps-unrelated-host-hold",
+          "all-host-controls-including-stable-sliders-and-zero-travel-touch-selectable-and-focusable",
+          "stable-slider-inspection-disabled-while-independent-click-preserves-detents",
+          "capacitive-inspection-hold-release-with-zero-physical-travel",
+          "empty-inspection-disables-actions-and-clears-stale-readout",
+          "millimetre-slider-only-panel-exposes-stops-reflects-external-state-and-resets-to-centre",
+          "pahub-v21-six-output-menu-nested-controls-and-independent-branch-detach",
+          "pbhub-v11-six-output-menu-nested-controls-and-independent-branch-detach"
+        ],
+        "inspection": [
+          {
+            "id": "sticks3",
+            "buttons": 3,
+            "latching": 0,
+            "capacitive": 0
+          },
+          {
+            "id": "cores3",
+            "buttons": 2,
+            "latching": 0,
+            "capacitive": 0
+          },
+          {
+            "id": "stopwatch",
+            "buttons": 3,
+            "latching": 0,
+            "capacitive": 0
+          },
+          {
+            "id": "cardputer-adv",
+            "buttons": 60,
+            "latching": 2,
+            "capacitive": 0
+          },
+          {
+            "id": "cardputer-zero",
+            "buttons": 48,
+            "latching": 1,
+            "capacitive": 0
+          },
+          {
+            "id": "papermono",
+            "buttons": 3,
+            "latching": 0,
+            "capacitive": 0
+          },
+          {
+            "id": "core2",
+            "buttons": 5,
+            "latching": 0,
+            "capacitive": 3
+          },
+          {
+            "id": "papercolor",
+            "buttons": 4,
+            "latching": 0,
+            "capacitive": 0
+          },
+          {
+            "id": "nanoc6",
+            "buttons": 1,
+            "latching": 0,
+            "capacitive": 0
+          },
+          {
+            "id": "stackchan",
+            "buttons": 5,
+            "latching": 0,
+            "capacitive": 3
+          },
+          {
+            "id": "tab5",
+            "buttons": 2,
+            "latching": 0,
+            "capacitive": 0
+          },
+          {
+            "id": "atoms3r",
+            "buttons": 2,
+            "latching": 0,
+            "capacitive": 0
+          },
+          {
+            "id": "nesso-n1",
+            "buttons": 2,
+            "latching": 0,
+            "capacitive": 0
+          },
+          {
+            "id": "stamplc",
+            "buttons": 4,
+            "latching": 0,
+            "capacitive": 0
+          },
+          {
+            "id": "cores3-din",
+            "buttons": 3,
+            "latching": 1,
+            "capacitive": 0
+          }
+        ],
+        "rootOptions": [
+          "grove"
+        ],
+        "nestedKeyPath": "grove/grove-1/press",
+        "nestedFanPath": "grove/grove-2/rotor",
+        "deepestPortPath": "grove/grove-3/grove-1",
+        "scope": "Real controller configurations, StickS3/HUB/Key/Fan assemblies, millimetre slider and panel; light DOM/renderer fixture only"
+      },
+      "scope": "Actual demo async controller, recursive connection menu and dynamic controls with real host/HUB/Key/Fan; renderer and DOM boundary are fixtures, browser pixels and focus remain separately verified"
+    }
+  },
+  "latestUnitBatch": "artifacts/laser-midi-expansion/progress.json",
+  "builds": "Public/private builds and latest three-Unit branch fixture pass; live85 catalog/three chunks/six PNG match public dist",
+  "limits": [
+    "All products remain modeled, zero verified",
+    "No whole-catalog check, new exhaustive browser review, hardware, manufacturing fit, firmware or electrical acceptance",
+    "Earlier50 reference-redraw PNGs retain deferred full-batch visual review",
+    "StackChan production assembly and private Scroll checkpoint remain unresolved and excluded",
+    "No npm release or production deployment; Git history/remote main records the actual source synchronization result"
+  ]
+}

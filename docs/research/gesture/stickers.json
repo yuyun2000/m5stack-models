@@ -1,0 +1,57 @@
+{
+  "id": "gesture",
+  "sku": "U127",
+  "status": "reference-redraw-integrated",
+  "updatedAt": "2026-10-26",
+  "artworkKind": "reference-redraw",
+  "coverage": "Rear product label. The visible operating front has no permanent product label in the exact references.",
+  "transcription": [
+    "GESTURE",
+    "SENSOR",
+    "PORT. A. I2C",
+    "PAJ7620U2",
+    "SCL / SDA / 5V / GND"
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Gesture/img-0a7e858d-ca7b-4ebe-bf00-d669d4aa4c27.webp",
+      "sha256": "24952aa0366fb2e6d23399c2b0cb2fffea8bf9bb185c5ed66693a0648a88b31e",
+      "role": "Exact-SKU official product photograph; visual transcription reference only; no photo pixels redistributed"
+    }
+  ],
+  "rasters": [
+    {
+      "path": "src/units/gesture/reference-back.png",
+      "sha256": "be933d4274625abf9adaed93953ee189c4887e25983e40f1497819fc01ee5d0f",
+      "sizePx": [
+        1024,
+        768
+      ],
+      "artworkKind": "reference-redraw"
+    }
+  ],
+  "surfaces": [
+    {
+      "face": "back",
+      "size": [
+        16,
+        12
+      ],
+      "position": [
+        0,
+        7,
+        -3.8
+      ],
+      "target": "Gesture native rear shell",
+      "method": "Projection onto existing physical triangles only"
+    }
+  ],
+  "privateSourceVectorsDistributed": false,
+  "photographicPixelsUsed": false,
+  "photoCropsUsed": false,
+  "limitations": [
+    "Packaging artwork is outside the device model.",
+    "Fonts, colors and icon curves are visual reference reconstructions; not the original manufacturing artwork.",
+    "No browser or exhaustive face inspection; 3D placement remains an unverified visual registration."
+  ]
+}

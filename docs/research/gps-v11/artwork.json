@@ -1,0 +1,85 @@
+{
+  "id": "gps-v11",
+  "sku": "U032-V11",
+  "retrievedAt": "2026-10-26",
+  "kind": "reference-redraw",
+  "originalsDistributed": false,
+  "method": "New text and shapes code-drawn from exact official product photographs. No photographic pixels, crop, private original or vector source distributed.",
+  "sources": [
+    {
+      "face": "front",
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-GPS%20v1.1/4.webp",
+      "sha256": "f4dac0a1e0d2d439e8a9fabd70fe99697de812091efd4fc33b4b9409ce493fda"
+    },
+    {
+      "face": "back",
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-GPS%20v1.1/8.webp",
+      "sha256": "f3a15d342121bd6b29688568d399b65de45b2e4c962a1421402e30ef4f5e7f5c"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/gps-v11/reference-redraw-front.png",
+      "sha256": "1b7977ac30c016c313164488fc9d907b95c4385167e5cf9331e6cc4d9e8bfb3e",
+      "pixels": [
+        1920,
+        3432
+      ],
+      "sizeMm": [
+        16,
+        28.6
+      ]
+    },
+    {
+      "path": "src/units/gps-v11/reference-redraw-back.png",
+      "sha256": "1de94b71d41afa09cb04928663971614bf54ce3a2f9f1d5502a47188c2229742",
+      "pixels": [
+        1920,
+        3432
+      ],
+      "sizeMm": [
+        16,
+        28.6
+      ]
+    }
+  ],
+  "registration": [
+    {
+      "face": "front",
+      "sizeMm": [
+        15.8,
+        27.5
+      ],
+      "positionMm": [
+        0,
+        7.25,
+        3.8
+      ],
+      "method": "printedArtwork",
+      "target": "housing"
+    },
+    {
+      "face": "back",
+      "sizeMm": [
+        15.8,
+        27.5
+      ],
+      "positionMm": [
+        0,
+        7.25,
+        -3.8
+      ],
+      "method": "printedArtwork",
+      "target": "housing"
+    }
+  ],
+  "coverage": "Front GPS/location/V1.1 panel and rear chipset/protocol/pin panel.",
+  "remainingKnownPrintedFaces": [],
+  "limits": [
+    "Raster colours, typography, line shapes and physical label sizes/positions are photo/native-recess estimates, not production-print measurements.",
+    "Continuous adhesive film is used only where the exact photograph shows the real label crossing native service openings; all original physical geometry remains intact and available with artwork:false.",
+    "Molded lettering is retained as existing geometry; no unreadable package stamps or unknown legends are invented.",
+    "No exhaustive browser pixel inspection; necessary registration, exact original physical/control/terminal-variant and Grove checks only."
+  ],
+  "rights": "M5Stack product marks and original printed designs retain their respective rights; these reference reconstructions are not production source artwork."
+}

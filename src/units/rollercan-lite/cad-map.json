@@ -1,0 +1,51 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U188-Lite_Unit_RollerCAN-Lite/Structures/Unit_RollerCAN-Lite.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "6484387244c7ec1418910a03f286d4c4c26bed2a",
+  "sha256": "fcbfaa9800feed24908a74c915d4f3b8669ae00430231f7aace27be10f587185",
+  "origin": [
+    -1.0872135162353516,
+    0,
+    -22.25
+  ],
+  "axes": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "RollerCAN-Lite native fixed OLED face shell",
+      "material": "shell"
+    },
+    {
+      "component": 2,
+      "name": "RollerCAN-Lite native fixed motor seat shell",
+      "material": "shell"
+    },
+    {
+      "component": 5,
+      "name": "RollerCAN-Lite native fixed RGB diffuser",
+      "material": "lens"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    3,
+    4
+  ],
+  "notes": "Complete assembled Lite shell pair and diffuser. Other components are displaced duplicate copies. Common rigid transform only; original tongue, mounting bores, screen opening, dual CAN and Grove/debug apertures retained. No top expansion shell, slip-ring board or rotating Grove in Lite."
+}

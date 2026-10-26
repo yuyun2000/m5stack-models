@@ -1,0 +1,74 @@
+{
+  "id": "pbhub-v11",
+  "sku": "U041-B",
+  "sourceRepository": "https://github.com/m5stack/M5_Hardware",
+  "sourceCommit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "sourcePath": "Products/U041-B_Unit_PbHub_v1.1/Structures/Unit_PbHub_v1.1.stl",
+  "sourceUrl": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U041-B_Unit_PbHub_v1.1/Structures/Unit_PbHub_v1.1.stl",
+  "sourceGitBlob": "6207e09668335761cb1f265daa8349f20c6f69d1",
+  "sourceSha256": "b10f9d582a6b12e22e7b51b6059517028cb96c1d1c73330460cd184c50499982",
+  "sourceLicense": "MIT",
+  "selectedComponents": [
+    {
+      "component": 0,
+      "triangles": 3498,
+      "name": "PbHUB v1.1 assembled front and rear shell",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    {
+      "component": 1,
+      "reason": "Displaced duplicate rear half"
+    },
+    {
+      "component": 2,
+      "reason": "Displaced duplicate front half"
+    }
+  ],
+  "transform": {
+    "scale": 1,
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "translationMm": [
+      80,
+      0,
+      -1.2
+    ],
+    "formula": "[sourceX + 80, sourceY, sourceZ - 1.2]"
+  },
+  "nativeBoundsMm": {
+    "min": [
+      -92,
+      -24,
+      -2.799999952316284
+    ],
+    "max": [
+      -68,
+      24,
+      5.199999809265137
+    ]
+  },
+  "cadEnvelopeMm": [
+    24,
+    48,
+    7.999999761581421
+  ],
+  "localAxes": "+X right; +Y top; +Z front",
+  "supplementalGeometry": "Photo-derived PCB, package bodies/leads, regulator, passive bodies, Grove housings/contact tips and rear screw; labels deferred."
+}

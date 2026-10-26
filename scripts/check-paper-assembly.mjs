@@ -28,7 +28,7 @@ function common(model,{usb,sd,display,buttons}){
  for(const nx of [-.499,0,.499])for(const ny of [-.499,0,.499]){const p=[display.cx+nx*lcd.size[0],display.cy+ny*lcd.size[1],20],h=cast(p,[0,0,-1]);assert.equal(h?.object,lcd.panel,`${model.meta.name}: front cover obstructs active paper at ${p}`);displayRays++;}
  const panel=model.root.getObjectByName('EPD module body');assert.ok(panel&&new THREE.Box3().setFromObject(panel).getSize(new THREE.Vector3()).z>.8,'Physical EPD module has depth');
  for(const [id,axis]of buttons){const b=model.get(id);assert.ok(b);b.press('assembly-check');b.update(1);assert.ok(b.cap.position.distanceTo(new THREE.Vector3(...axis).multiplyScalar(b.travel))<1e-6,`${model.meta.name}: ${id} moves into its own case`);b.release('assembly-check');b.update(1);assert.ok(b.cap.position.length()<1e-6);}
- let photos=0;model.root.traverse(o=>{if(o.userData.role==='printed-artwork'&&!['official-raster','official-raster-film'].includes(o.userData.artworkKind))photos++;if(o.isMesh){for(const n of o.geometry.attributes.position.array)assert.ok(Number.isFinite(n),'Finite assembly vertex');}});assert.equal(photos,0,'Deferred photographic artwork does not hide assembly openings');
+ let photos=0;model.root.traverse(o=>{if(o.userData.role==='printed-artwork'&&!['official-raster','official-raster-film','reference-redraw'].includes(o.userData.artworkKind))photos++;if(o.isMesh){for(const n of o.geometry.attributes.position.array)assert.ok(Number.isFinite(n),'Finite assembly vertex');}});assert.equal(photos,0,'Unclassified photographic artwork does not hide assembly openings');
  return {displayRays,portFreePathRays:5,contactRays:2,buttonDirections:buttons.length};
 }
 

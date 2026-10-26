@@ -1,0 +1,86 @@
+{
+  "id": "8angle",
+  "sku": "U154",
+  "officialDocs": "https://docs.m5stack.com/en/unit/8Angle",
+  "retrievedAt": "2026-10-26",
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/8Angle/img-90a7a546-2472-4f0a-8d8a-8e895963bbc3.webp",
+    "sha256": "44d4f6a991ddcc47e0ddf09a08bd19caac0ecfe2aa2cc70596f2ed6b706f50cb"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U154_Unit_8Angle/Structures/Unit_8Angle.stl",
+      "gitBlob": "bb6adeb0533ed0034d227fe85afaafff4605fe4a",
+      "sha256": "5b45475396b14f6def172c2b3cf20ed42471a4a8c049ec3c0316a8f89e25ef09"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/8Angle/img-b698604d-29dd-4506-b662-4752e1f03a28.webp",
+      "sha256": "632739de35330b0b03c88d58c9b59d262bad60a3299124f083d8f7850ec0a287"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/8Angle/img-90a7a546-2472-4f0a-8d8a-8e895963bbc3.webp",
+      "sha256": "44d4f6a991ddcc47e0ddf09a08bd19caac0ecfe2aa2cc70596f2ed6b706f50cb"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/8Angle/img-0a5654d0-27e6-4412-863a-c93bbb6b565f.webp",
+      "sha256": "23d6f0284d8bfa6477862ad75baa2e9ba09826dbaaa0e304d05297f1e0ac3e3e"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/8Angle/img-4b39398e-5590-43b9-8dfe-84eb4aec5312.png",
+      "sha256": "71a87e3d887632dc42c7390a37b841afb194f984aa9c7db2b56bbdb3eb671e2d"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      1,
+      2
+    ],
+    "origin": [
+      83.68719482421875,
+      5.649110704660416,
+      -61.183289647102356
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "excludedComponents": [
+      0,
+      3
+    ],
+    "reason": "Displaced duplicate shells"
+  },
+  "runtimeFiles": [
+    {
+      "path": "src/units/8angle/cad-map.json",
+      "sha256": "b806c0a62b1c36f3fa4d58c8d7447c45b62b570059ede39122d33416924d1e96"
+    },
+    {
+      "path": "src/units/8angle/dimensions.js",
+      "sha256": "2925dd5d25dd9c6850854e2761be2e0e4fddae09b15ea529a5952b76d27f1a49"
+    },
+    {
+      "path": "src/units/8angle/geometry-data.js",
+      "sha256": "2cbcb70228d42056a0e2e8943ea3e04a291e36a8c6dd1b147020f86996ffa1ae"
+    },
+    {
+      "path": "src/units/8angle/index.js",
+      "sha256": "c4de39df65a2b58d84d30ecad76a32dbb0087e965144c360376719030b764fa6"
+    }
+  ]
+}

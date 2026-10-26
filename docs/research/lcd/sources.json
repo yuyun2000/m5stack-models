@@ -1,0 +1,189 @@
+{
+  "product": "Unit LCD",
+  "sku": "U120",
+  "retrievedAt": "2026-10-26",
+  "officialDocs": "https://docs.m5stack.com/en/unit/lcd",
+  "officialCad": {
+    "sku": "U120",
+    "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/U120_Unit_LCD/Structures/Unit_LCD.stl",
+    "gitBlob": "8fc349139eb922bc7385c4a15f21a15d202597b3",
+    "sha256": "0c3036bf36afe591a742836f57629f94080fc8f0467b3405df7602460280dd1d",
+    "license": "MIT",
+    "selectedComponents": [
+      {
+        "index": 1,
+        "name": "LCD native rear shell",
+        "triangles": 3408
+      },
+      {
+        "index": 2,
+        "name": "LCD native front shell",
+        "triangles": 1980
+      }
+    ],
+    "excludedComponents": [
+      0,
+      3
+    ],
+    "excludedReason": "Displaced duplicates of each native shell",
+    "transform": {
+      "subtractOriginMm": [
+        -30.763001441955566,
+        23.518330112099648,
+        -4
+      ],
+      "axes": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "scale": 1
+    },
+    "nativeAssemblyNote": "The selected front and rear shells share the native assembly position. Native front extends 0.028 mm beyond nominal width and 0.0175 mm beyond nominal length; no individual alignment or scaling applied."
+  },
+  "dimensions": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/lcd/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+    "sha256": "a404c5023c2da8465b515cc546bb229fcdb488b864f8a9015abd65cec296dadd",
+    "normalizedMm": [
+      24,
+      48,
+      8
+    ],
+    "screenApertureMm": [
+      14.8,
+      24.8
+    ],
+    "screenCentreMm": [
+      0,
+      8.7
+    ],
+    "mountingHoleDiameterMm": 4.85,
+    "mountingHoleCentersMm": [
+      [
+        -8,
+        -12
+      ],
+      [
+        8,
+        -12
+      ]
+    ],
+    "groveFaceMm": [
+      10,
+      5.2
+    ]
+  },
+  "display": {
+    "resolution": [
+      135,
+      240
+    ],
+    "driver": "ST7789V2",
+    "pixelPitchMm": [
+      0.1101,
+      0.1038
+    ],
+    "activeAreaMm": [
+      14.8635,
+      24.912
+    ],
+    "activeAreaDerivation": "Official pitch multiplied by resolution; tiny margin clips behind official aperture",
+    "screenZMm": 3.68,
+    "scope": "External framebuffer and backlight. No touch sensor, onboard firmware or I2C/electrical protocol."
+  },
+  "appearance": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/lcd/lcd_01.webp",
+      "sha256": "d300e8155accb74acb24ae7a480907b9cb11642461b4bb4fef716c0ae0af322f",
+      "role": "Same-SKU official reference; source image not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/lcd/lcd_02.webp",
+      "sha256": "7bc47763724fa65fc4cc884fd1c23f5fbc85c06a4f2f68faa9fc44944fae1075",
+      "role": "Same-SKU official reference; source image not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/lcd/lcd_03.webp",
+      "sha256": "2e86ad66598ab30fe7746e78b0ac089099986e0634c7ecfadf571c4dc6024f0c",
+      "role": "Same-SKU official reference; source image not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/lcd/lcd_04.webp",
+      "sha256": "976bb956c3cfdebc6725f829b225136f2c80d6a161795a3536bec16100781295",
+      "role": "Same-SKU official reference; source image not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/lcd/lcd_05.webp",
+      "sha256": "8d882b04dd5ca82931acdd603ff25a4e4c110b4838ea6a43c4ab5809476ab216",
+      "role": "Same-SKU official reference; source image not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/lcd/lcd_06.webp",
+      "sha256": "fa8aedc8f41177aa37d640ca4496fde92a2d726f556dee3b47ef0fbce278f1ca",
+      "role": "Same-SKU official reference; source image not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/lcd/lcd_07.webp",
+      "sha256": "a522ac8bf365f15edeed87cf00182be36d172c1e78fff1bc3da798ccb80b8b2b",
+      "role": "Same-SKU official reference; source image not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/lcd/lcd_08.webp",
+      "sha256": "2e86ad66598ab30fe7746e78b0ac089099986e0634c7ecfadf571c4dc6024f0c",
+      "role": "Same-SKU official reference; source image not redistributed"
+    }
+  ],
+  "inferred": [
+    "PCB outline, installed Z, layout and small circuit packages are appearance reconstructions informed by official schematic summary.",
+    "Screen substrate, backing, FPC and hidden connector dimensions/depth are appearance approximations.",
+    "Rear bar magnets follow the documented magnetic mounting feature and source shell retainer locations; magnet depth is inferred.",
+    "Red open-top Grove internal walls, contacts and insertion geometry reuse existing appearance geometry, not connector manufacturing dimensions."
+  ],
+  "runtimeSha256": {
+    "src/units/lcd/assembly.js": "499c18c814d77bfe0684591e00a334b47367b64fa36fed0af323b7523eb32612",
+    "src/units/lcd/cad-map.json": "7490849f4e6adae6c3988625f14f9ac7006c114e667be309f661e5ddb2090fdd",
+    "src/units/lcd/dimensions.js": "a8e133944bb8c3804f4116451bf32394fb54df0e380092781fb59b7a1ce23483",
+    "src/units/lcd/geometry-data.js": "2cbe2c39830ad880db868d00aa7c65846f0dfdf6ee627fa00d5a4771873b350b",
+    "src/units/lcd/index.js": "3abdb9f26f294b67cd93a40f292558dc270d2809f3a5833d33f24ba77da14225",
+    "src/units/lcd/reference-back.png": "c3b6da96e2257fa0e05e4e0aee470e6a2c4be6f166663a51eb31991b3fdc2142",
+    "src/units/lcd/stickers.js": "8354a795492a70be2b3fa7b2c1ac875d5ff7118ef2c5c37ecfc9b50adb64ce68"
+  },
+  "artwork": {
+    "status": "reference-redraw-integrated",
+    "kind": "reference-redraw",
+    "sourcePhotographs": [
+      {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/lcd/lcd_02.webp",
+        "sha256": "7bc47763724fa65fc4cc884fd1c23f5fbc85c06a4f2f68faa9fc44944fae1075",
+        "role": "Exact-SKU official product photograph; visual transcription reference only; no photo pixels redistributed"
+      }
+    ],
+    "finalRasters": [
+      {
+        "path": "src/units/lcd/reference-back.png",
+        "sha256": "c3b6da96e2257fa0e05e4e0aee470e6a2c4be6f166663a51eb31991b3fdc2142",
+        "sizePx": [
+          1000,
+          1430
+        ],
+        "artworkKind": "reference-redraw"
+      }
+    ],
+    "privateSourcesUsed": false,
+    "photosRedistributed": false,
+    "visualVerification": null
+  },
+  "stickerVerification": "docs/research/lcd/sticker-check.json"
+}

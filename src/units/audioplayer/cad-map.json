@@ -1,0 +1,51 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U197_Unit_AudioPlayer/Structures/Unit_AudioPlayer.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "8f6688ef360744d9dc7dd99dc434469eaf07c3ab",
+  "sha256": "80dd870483abce7138a4c12b5b6ffdf895f09760c9ca6c36437605cd655a3a37",
+  "origin": [
+    47.41017150878906,
+    22.01300024986267,
+    -2.8000000715255737
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "AudioPlayer complete native back shell",
+      "material": "shell"
+    },
+    {
+      "component": 2,
+      "name": "AudioPlayer complete native front shell",
+      "material": "shell"
+    },
+    {
+      "component": 5,
+      "name": "AudioPlayer native BUSY light guide",
+      "material": "lens"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    3,
+    4
+  ],
+  "notes": "Complete assembled source shell pair and BUSY light guide. Other components are laterally displaced duplicate copies. One common translation only; native jack, microSD, Grove, screw and mounting openings remain unchanged."
+}

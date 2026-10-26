@@ -1,0 +1,52 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/66720a863658da9bab58a208d4ebf8a040c2d42c/Products/U173_Unit_QRCode/Structures/Unit_QRCode.stl",
+  "commit": "66720a863658da9bab58a208d4ebf8a040c2d42c",
+  "gitBlob": "7887ac786562fb31a17dbe01b81bc417d026aaad",
+  "sha256": "6e743554b774f3ee5379c5d6f58ac9c9d1bb6cba94c1604a8554b01eb2235050",
+  "origin": [
+    0,
+    12,
+    8
+  ],
+  "axes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "QRCode complete native assembled shell",
+      "material": "shell"
+    },
+    {
+      "component": 3,
+      "name": "QRCode native independent TRIG button",
+      "material": "shell"
+    },
+    {
+      "component": 5,
+      "name": "QRCode native removable fixed refractor frame",
+      "material": "shell"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2,
+    4,
+    6
+  ],
+  "notes": "Complete assembled native shell, independent native TRIG cap and native removable fixed refractor frame. Source islands 1/2/4/6 are displaced duplicate shells/cap/frame. One common rigid translation, no scales, clipping or source-triangle removal."
+}

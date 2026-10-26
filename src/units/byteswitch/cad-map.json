@@ -1,0 +1,57 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U191_Unit_ByteSwitch/Structures/Unit_ByteSwitch.stl",
+  "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "gitBlob": "adaf2ea82be6a9d91124edaf4d793be2001ac6cd",
+  "sha256": "b9e0ddde7b7c831fab7420910915a702e676ac085b8f68c525ccb9a9bcfd29f6",
+  "origin": [
+    44,
+    12,
+    3.2
+  ],
+  "axes": [
+    [
+      0,
+      -1,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "parts": [
+    {
+      "component": 0,
+      "name": "ByteSwitch native front shell",
+      "material": "shell"
+    },
+    {
+      "component": 3,
+      "name": "ByteSwitch native rear shell",
+      "material": "shell"
+    },
+    {
+      "component": 4,
+      "name": "ByteSwitch native connected eight-way RGB lightpipe comb",
+      "material": "diffuser"
+    },
+    {
+      "component": 7,
+      "name": "ByteSwitch native end RGB lightpipe",
+      "material": "diffuser"
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2,
+    5,
+    6
+  ],
+  "notes": "Retain complete native assembled shell pair and lightpipes 0,3,4,7; other islands are displaced duplicates. One shared rigid transform X=12-rawY,Y=rawX-44,Z=rawZ-3.2. No scaling, cuts or independent alignment applied to native CAD."
+}

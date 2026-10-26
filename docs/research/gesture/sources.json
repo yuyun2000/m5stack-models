@@ -1,0 +1,163 @@
+{
+  "product": "Gesture",
+  "sku": "U127",
+  "retrievedAt": "2026-10-26",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Gesture",
+  "officialCad": {
+    "sku": "U127",
+    "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U127_Unit_Gesture/Structures/Unit_Gesture.stl",
+    "gitBlob": "2c35765e4a7a5fb47e8f2c048fc197ed0cc02796",
+    "sha256": "7d0537e1ae32d6536779c42485440db72a94f53c917fd87ff78415706cd8bf12",
+    "license": "MIT",
+    "selectedComponents": [
+      {
+        "index": 0,
+        "name": "Gesture native front shell",
+        "triangles": 1790
+      },
+      {
+        "index": 2,
+        "name": "Gesture native rear shell",
+        "triangles": 1632
+      }
+    ],
+    "excludedComponents": [
+      1,
+      3
+    ],
+    "excludedReason": "Displaced duplicates of the front and rear shells",
+    "transform": {
+      "subtractOriginMm": [
+        397.2685241699219,
+        269.2234802246094,
+        2.0000010251999356
+      ],
+      "axes": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "scale": 1
+    },
+    "nativeAssemblyNote": "The two shell X centres differ by approximately 0.00061 mm in the source; no independent shell alignment or scaling applied."
+  },
+  "dimensions": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/gesture/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+    "sha256": "a6683ef64ebca6c9a4190258517ad54dbf09fc2dadb7545970ceec9e5c0ab686",
+    "normalizedMm": [
+      24,
+      32,
+      8
+    ],
+    "opticalOpeningMm": [
+      12,
+      6
+    ],
+    "opticalCentreMm": [
+      0,
+      8
+    ],
+    "mountingHoleDiameterMm": 5,
+    "mountingHoleCentersMm": [
+      [
+        -8,
+        -4
+      ],
+      [
+        8,
+        -4
+      ]
+    ],
+    "groveFaceMm": [
+      10,
+      5.2
+    ]
+  },
+  "sensorPackage": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/unit/gesture/paj7620u2_datasheet.pdf",
+    "sha256": "743c998246a70fc0c84253e7dd40d8723b77d76c05f27b51108bb2370f9a4089",
+    "document": "PixArt PAJ7620U2 datasheet v1.2, 29 Feb 2016, page 9 figure 3",
+    "footprintMm": [
+      5.2,
+      3
+    ],
+    "bodyHeightMm": 1.88,
+    "substrateHeightMm": 0.32,
+    "notRedistributed": true,
+    "inferred": "Installed Z, shallow optical recess sizes, receiver lens and emitter appearance, contact geometry and concealed PCB are visual reconstruction."
+  },
+  "appearance": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Gesture/img-9e68c6c6-41f6-4c6c-837b-78d15785399b.webp",
+      "sha256": "a974b1c960ecfdb2bca705d8b4530c93433599d7f2a7fba55722497fac9f0f7c",
+      "role": "Same-SKU exterior reference; source image not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Gesture/img-0a7e858d-ca7b-4ebe-bf00-d669d4aa4c27.webp",
+      "sha256": "24952aa0366fb2e6d23399c2b0cb2fffea8bf9bb185c5ed66693a0648a88b31e",
+      "role": "Same-SKU exterior reference; source image not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Gesture/img-b7f9f0d1-68b3-470a-8072-f942cd6ce13e.webp",
+      "sha256": "c7ea0d4c4cf4442dfa08a4ee087ac85fab63722c9967a2bc229a44f7a35d7c4e",
+      "role": "Same-SKU exterior reference; source image not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Gesture/img-441d6677-53f0-4a56-98a1-8c63fb988678.webp",
+      "sha256": "2673bbfe5eb8e7c14238236d1fabb0bb755b9482c4ff3830fccaa3ce3a230a41",
+      "role": "Same-SKU exterior reference; source image not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Gesture/img-c330684a-d6ec-485e-b392-f8e22b14dfd0.webp",
+      "sha256": "9af381da1ee7c08b7d06b1a2134e87a58d4ef22d3d5c0f0f5053327c8b273107",
+      "role": "Same-SKU exterior reference; source image not redistributed"
+    }
+  ],
+  "runtimeSha256": {
+    "src/units/gesture/assembly.js": "60f3898ca2fc89124eb6b68a82b9a28ec1c7993b987d68538780cdbf765b47f2",
+    "src/units/gesture/cad-map.json": "eab36933005e767631d0b2338fc3df41292b51ae03a8505fd3c563e593b7ae7c",
+    "src/units/gesture/dimensions.js": "1cf8f9c35a4c12b787d66e2e8b68de08b8816a5125ddad9e9efe2b1a4ea7baa5",
+    "src/units/gesture/geometry-data.js": "9a495b4ce3b8695255232eb2c67895e0dc9977d2efd2aa286896e8143d3ce6cb",
+    "src/units/gesture/index.js": "00423a86e56a75a3a8c5245c30f5b61cf995d2e4eefcc12e733521f681d4d765",
+    "src/units/gesture/reference-back.png": "be933d4274625abf9adaed93953ee189c4887e25983e40f1497819fc01ee5d0f",
+    "src/units/gesture/stickers.js": "10ee99f2daaee9848c904dccbfc6cfc140a89e37ecd6bc2a95d0c91ed5da4d01"
+  },
+  "artwork": {
+    "status": "reference-redraw-integrated",
+    "kind": "reference-redraw",
+    "sourcePhotographs": [
+      {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Gesture/img-0a7e858d-ca7b-4ebe-bf00-d669d4aa4c27.webp",
+        "sha256": "24952aa0366fb2e6d23399c2b0cb2fffea8bf9bb185c5ed66693a0648a88b31e",
+        "role": "Exact-SKU official product photograph; visual transcription reference only; no photo pixels redistributed"
+      }
+    ],
+    "finalRasters": [
+      {
+        "path": "src/units/gesture/reference-back.png",
+        "sha256": "be933d4274625abf9adaed93953ee189c4887e25983e40f1497819fc01ee5d0f",
+        "sizePx": [
+          1024,
+          768
+        ],
+        "artworkKind": "reference-redraw"
+      }
+    ],
+    "privateSourcesUsed": false,
+    "photosRedistributed": false,
+    "visualVerification": null
+  },
+  "stickerVerification": "docs/research/gesture/sticker-check.json"
+}

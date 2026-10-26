@@ -1,0 +1,89 @@
+{
+  "product": "GPS v1.1",
+  "sku": "U032-V11",
+  "retrievedAt": "2026-10-26",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_GPS_v1.1",
+  "dimensions": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-GPS%20v1.1/module_size.jpg",
+    "sha256": "807c99afe25bd183b39a698b6f54cc4b6f3611f0d7a4357bdc57b04faac9efb9",
+    "normalizedMm": [
+      24,
+      48,
+      8
+    ],
+    "mountingHoleDiameterMm": 5,
+    "mountingHoleCentersMm": [
+      [
+        -8,
+        -12
+      ],
+      [
+        8,
+        -12
+      ]
+    ],
+    "groveFaceMm": [
+      10,
+      5.2
+    ]
+  },
+  "officialCad": {
+    "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U032_V11_Unit_GPS_v1_1/Structures/Unit_GPS_v1.1.stl",
+    "sha256": "cfb75ed7e65c36ab005d88beb4a81c293a2f07edffd2a9dd13ec14ce8b1a9b0b",
+    "gitBlob": "2552b5edb9c913e1fc9d33454696ef2e510f3f98",
+    "license": "MIT",
+    "selectedComponent": 0,
+    "selectedTriangles": 3580,
+    "excludedDisplacedDuplicateComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      -40,
+      0,
+      1.2
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "appearance": [
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-GPS%20v1.1/4.webp",
+      "sha256": "f4dac0a1e0d2d439e8a9fabd70fe99697de812091efd4fc33b4b9409ce493fda",
+      "role": "Exact-version exterior reference; source image not redistributed"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-GPS%20v1.1/5.webp",
+      "sha256": "0085fac6f7d4ba727ca9eb8f5b9fbbcd9f7e73481fda0d698853f2bbf5297abb",
+      "role": "Exact-version exterior reference; source image not redistributed"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-GPS%20v1.1/8.webp",
+      "sha256": "f3a15d342121bd6b29688568d399b65de45b2e4c962a1421402e30ef4f5e7f5c",
+      "role": "Exact-version exterior reference; source image not redistributed"
+    }
+  ],
+  "runtimeSha256": {
+    "src/units/gps-v11/assembly.js": "18cb5f575b0cbdbb0505b64b5f094c4f25bd2a3da1c64b39e3957101d3e823f4",
+    "src/units/gps-v11/cad-map.json": "e0f3991e122f361101c73e7505810ccc4196095c463fb6a0bb3538811224f072",
+    "src/units/gps-v11/dimensions.js": "0062674c2696db13dc69c1a45ab5c0eb011a07a1fb62bdd4f1f3b7ffe48f8b81",
+    "src/units/gps-v11/geometry-data.js": "e6b4742218d7a28ca37a005fd6c412834a80dfbdd6caa109631631a1e637098c",
+    "src/units/gps-v11/index.js": "04e647b237311f3d40d0e1b1b081777f8c2a6ae581f28e744e6e29ab64d3995c"
+  },
+  "knownSourceConflict": "Product page specifies ATGM336H-6N / AT6668, while linked schematic is labelled UNIT-GPS V1.0 / GP-02. Hidden circuit layout is not inferred from that old schematic."
+}

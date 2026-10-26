@@ -1,0 +1,178 @@
+{
+  "product": "Unit OLED",
+  "sku": "U119",
+  "retrievedAt": "2026-10-26",
+  "officialDocs": "https://docs.m5stack.com/en/unit/oled",
+  "officialCad": {
+    "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U119_Unit_OLED/Structures/Unit_OLED.stl",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "gitBlob": "2bda7a98d6fb9e335bb13f633b6312fb50cd5bc1",
+    "sha256": "a218cdb4004e3332ad4c95fb51e27f4730f13a961b3ae021b4935717e06fcb95",
+    "license": "MIT",
+    "selectedComponents": [
+      {
+        "index": 0,
+        "name": "OLED native rear shell",
+        "triangles": 3432
+      },
+      {
+        "index": 2,
+        "name": "OLED native front shell",
+        "triangles": 2328
+      }
+    ],
+    "excludedComponents": [
+      1,
+      3
+    ],
+    "excludedReason": "Laterally displaced duplicate front/rear shells",
+    "transform": {
+      "subtractOriginMm": [
+        -30.763001441955566,
+        27.518330112099648,
+        -4
+      ],
+      "axes": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "scale": 1
+    },
+    "nativeAssemblyNote": "Retain the native assembled rear/front pair 0 and 2 with one shared translation. Components 1 and 3 are laterally displaced shell duplicates. No independent alignment, scaling, cuts or gap-hiding surface reconstruction applied to official shells. CAD front shell has 0.00705 mm tessellation envelope excess over nominal 24×56mm."
+  },
+  "dimensions": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/oled/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+    "sha256": "9726f63756b63a6330cccbdb1628e3eaac8ccd97a9735790d2e9dec407642eff",
+    "officialListingMm": [
+      56,
+      24,
+      8
+    ],
+    "normalizedPortraitMm": [
+      24,
+      56,
+      8
+    ],
+    "windowMm": [
+      16.4,
+      31.9
+    ],
+    "activeAreaPortraitMm": [
+      14.7,
+      29.42
+    ],
+    "mountingHoleDiameterMm": 4.85,
+    "mountingHoleCentersMm": [
+      [
+        -8,
+        -16
+      ],
+      [
+        8,
+        -16
+      ]
+    ],
+    "groveFaceMm": [
+      10,
+      5.2
+    ]
+  },
+  "display": {
+    "controller": "SH1107",
+    "officialResolution": [
+      128,
+      64
+    ],
+    "externalFramebufferResolution": [
+      64,
+      128
+    ],
+    "orientation": "Portrait shell; factory landscape dimensions rotated 90 degrees",
+    "color": "Black/white",
+    "api": "Existing Display component id=lcd; external fill/RGBA/RGB888/RGB565; no touch",
+    "monochromeMapping": "Render-time luminance threshold 0.5; source buffer preserved",
+    "scope": "Appearance and externally driven pixels only; no registers, protocol, firmware or device behavior"
+  },
+  "appearance": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/oled/oled_01.webp",
+      "sha256": "76eb778626eb1572dcdcb81721cf7fd907e0f77e26d6906dbe78babc0f35ba8b",
+      "role": "Same-SKU official appearance reference; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/oled/oled_03.webp",
+      "sha256": "158ff6218495e90a3438a70efd6c8a8eaac9da5997d31891a6f5a0478feace62",
+      "role": "Same-SKU official appearance reference; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/oled/oled_05.webp",
+      "sha256": "6f957a634497071d95b730eb1f46d5ed8cf50202c6a016a0df85c34acf11298a",
+      "role": "Same-SKU official appearance reference; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/oled/oled_06.webp",
+      "sha256": "c1836c4994b52f0a48122c741354a69f936bad3e0593b1cd7015ec8f317b4546",
+      "role": "Same-SKU official appearance reference; not redistributed"
+    }
+  ],
+  "inferred": [
+    "PCB outline/thickness/installed position, open mounting scallops and retaining-post clearances",
+    "Display carrier/glass thickness, installed Z and active-area centring within official aperture",
+    "Concealed flexible tail, power/driver packages, magnetic fixings and screw shank",
+    "Grove internal walls, pin thickness, retention detail and solder tails"
+  ],
+  "artwork": {
+    "status": "reference-redraw-integrated",
+    "kind": "reference-redraw",
+    "sourcePhotographs": [
+      {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/oled/oled_02.webp",
+        "sha256": "d0b12cd5aa83cd63da27203a713c18b7f4da974bf41d26db89b8f46d05a82424",
+        "role": "Exact-SKU official product photograph; visual transcription reference only; no photo pixels redistributed"
+      }
+    ],
+    "finalRasters": [
+      {
+        "path": "src/units/oled/reference-back.png",
+        "sha256": "cfd852f872b263bf64fe8b379cf718cf1a51e769076ce7baf749d69f145566da",
+        "sizePx": [
+          1000,
+          1900
+        ],
+        "artworkKind": "reference-redraw"
+      }
+    ],
+    "privateSourcesUsed": false,
+    "photosRedistributed": false,
+    "visualVerification": null
+  },
+  "runtimeSha256": {
+    "src/units/oled/assembly.js": "d934b70aa75ee78b5e05caf948f22ed79bcc889d8cc2c2ad38feb139447e1310",
+    "src/units/oled/cad-map.json": "7419bf0892ad45f03f02d03e857503f826a7542ba38c3dc54da72e2d691a520d",
+    "src/units/oled/dimensions.js": "504e67d3bff2e97585c1e71130aaf2190646df4fa839ce9101b31c2ab2dcef33",
+    "src/units/oled/geometry-data.js": "b0835df8534738101ff8c8e3bd97a1821df49db99e77f2fc644719eb4bbae9fc",
+    "src/units/oled/index.js": "c9cbf64626c47a0f5f43e28909dfe53451825aa20bbfcaa321bee797a7170b72",
+    "src/units/oled/reference-back.png": "cfd852f872b263bf64fe8b379cf718cf1a51e769076ce7baf749d69f145566da",
+    "src/units/oled/stickers.js": "ab1e35062f115cd7608d3709368fcfeccece38fafb55d8eca711bcabef87085a"
+  },
+  "verification": {
+    "smoke": "docs/research/oled/smoke.json",
+    "visual": null,
+    "stage": "modeled",
+    "limitations": "Necessary local smoke only; no browser acceptance, electrical validation, hardware or production assembly fit."
+  },
+  "stickerVerification": "docs/research/oled/sticker-check.json"
+}

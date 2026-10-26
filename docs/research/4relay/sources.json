@@ -1,0 +1,187 @@
+{
+  "id": "4relay",
+  "sku": "U097",
+  "retrievedAt": "2026-10-26",
+  "officialDocs": "https://docs.m5stack.com/en/unit/4relay",
+  "mcpQuery": "Unit 4Relay U097 dimensions relay terminal Grove",
+  "sources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/4relay/4relay_01.webp",
+      "sha256": "d357ff6add05f4c70ce5d609d7616724916f88657a72ab12abfe1a47bdf42f48",
+      "role": "visual reference only; not distributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/4relay/4relay_02.webp",
+      "sha256": "d7307c447c826292efabcd6b311e3ca6d5bcbd25c76c4f8d1b5b948a5388a422",
+      "role": "visual reference only; not distributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/4relay/4relay_03.webp",
+      "sha256": "2fa259fb82c2b935ee917f3d6b245fe96caf5e4625e6feb6dcbc298fcbcdcce0",
+      "role": "visual reference only; not distributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/4relay/4relay_04.webp",
+      "sha256": "9124046255972180d8249ac8b9959ae73546686ab1e9ee1e85adc70b49fcacc4",
+      "role": "visual reference only; not distributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/4relay/4relay_05.webp",
+      "sha256": "62b6b45fb8755142088d229ca04066833f1b52c4eb57227d0cba1b31b7a30120",
+      "role": "visual reference only; not distributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/4relay/4relay_06.webp",
+      "sha256": "c012eb3872922f0cd25a940639164c8e7a0700fa3329b87a4029b6444cf029c5",
+      "role": "visual reference only; not distributed"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/4relay/model%20size.png",
+      "sha256": "3432bf885d49a5ae90007605c6819be5bad54eeb379dd4ccaedd03004edfae54",
+      "role": "visual reference only; not distributed"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/master/Products/U097_Unit_4Relay/Structures/Unit_4Relay.stl",
+      "sha256": "b9e43e7f819745deacf74feffd5ba38a89b1004cccc964c33e30e6a890fa411f",
+      "role": "unchanged source CAD"
+    }
+  ],
+  "nativeStructure": {
+    "sku": "U097",
+    "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U097_Unit_4Relay/Structures/Unit_4Relay.stl",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "gitBlob": "a1f2d73b5f1063fc611a6de88c70c4340f84d601",
+    "sha256": "b9e43e7f819745deacf74feffd5ba38a89b1004cccc964c33e30e6a890fa411f",
+    "license": "MIT",
+    "selectedComponents": [
+      {
+        "index": 0,
+        "name": "4Relay native assembled shell pair",
+        "triangles": 7522
+      }
+    ],
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "excludedReason": "Displaced duplicate front/rear shells. Component0 retains full native assembled shell pair.",
+    "transform": {
+      "subtractOriginMm": [
+        0,
+        44,
+        4
+      ],
+      "axes": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "scale": 1
+    }
+  },
+  "dimensionDecision": {
+    "modelNominalMm": [
+      24,
+      112,
+      18.4
+    ],
+    "officialTableMm": [
+      112,
+      23,
+      18
+    ],
+    "nativeShellMm": [
+      24,
+      112,
+      8
+    ],
+    "evidence": "The linked mechanical drawing dimensions 24 x 112 x 18.4 mm assembled, 8 mm shell and four Ø4.85 bores; the unchanged native CAD independently confirms 24 x 112 x 8 mm. The prose has conflicting width/depth and says only two LEGO holes.",
+    "officialFeedbackId": "c652a5b1396f4b56bbb28b97efc62911"
+  },
+  "inferences": [
+    "PCB outline/thickness and installed Z, concealed SMT packages and leads.",
+    "Four sealed relay boxes: package outline follows native apertures and photos, not internal relay mechanics; no motion or control state exposed.",
+    "Orange upright fixed sockets and removable 4P accessories: photo-derived walls, channel separation, contacts, insertion depth and front (+Z) mating origin. Connector name does not certify cross-product tolerances.",
+    "Sixteen slotted screw heads rotate only, with no axial travel, thread, clamp, torque or electrical response.",
+    "Four fixed-green LED lens details and independent brightness. No automatic LED/relay/power response; LED ids number bottom to top as photographed.",
+    "Terminal physical contacts are labeled by number only; COM/NO/NC and repeated-contact pinout are not inferred.",
+    "No source vectors, private CSV, artwork intermediates, photograph sticker crops or new sticker sheets are included."
+  ],
+  "artwork": {
+    "status": "applied-local-smoke",
+    "kind": "reference-redraw",
+    "sourceKind": "Same exact SKU official assembled product photographs",
+    "originalsDistributed": false,
+    "sourcePhotographsDistributed": false,
+    "referenceSources": [
+      {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/4relay/4relay_06.webp",
+        "sha256": "c012eb3872922f0cd25a940639164c8e7a0700fa3329b87a4029b6444cf029c5"
+      },
+      {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/4relay/4relay_05.webp",
+        "sha256": "62b6b45fb8755142088d229ca04066833f1b52c4eb57227d0cba1b31b7a30120"
+      }
+    ],
+    "files": [
+      {
+        "path": "src/units/4relay/reference-redraw-front.png",
+        "sha256": "86679c08c590d56d40a6f508350423347f18bc8a453f0dc039ed21528fc54b13",
+        "pixels": [
+          2000,
+          800
+        ]
+      },
+      {
+        "path": "src/units/4relay/reference-redraw-relay-1.png",
+        "sha256": "20b62b1b846d418f76cc746086c5e5507c7f73e0a906d7b30a0446d766774477",
+        "pixels": [
+          1800,
+          960
+        ]
+      },
+      {
+        "path": "src/units/4relay/reference-redraw-relay-2.png",
+        "sha256": "cf33c8199277370bd9178390d8dc3fc6add8b6d499a78ea2a4d2e6c56af62fdd",
+        "pixels": [
+          1800,
+          960
+        ]
+      },
+      {
+        "path": "src/units/4relay/reference-redraw-relay-3.png",
+        "sha256": "7f6afd36fa05ecb8c4e8f8acbd46f2db34830c9c02d0e7003da635a0a7e01506",
+        "pixels": [
+          1800,
+          960
+        ]
+      },
+      {
+        "path": "src/units/4relay/reference-redraw-relay-4.png",
+        "sha256": "cb736a2e8f608e094f9b7dff65ff1691360454d14a7805ea6fc3c21bb2ef2ef1",
+        "pixels": [
+          1800,
+          960
+        ]
+      }
+    ],
+    "limitations": [
+      "Manual reconstruction of legible product text, color bands and diagrams; not exact original vector artwork.",
+      "Fonts, small diagram spacing and photo-derived registration are approximate; unreadable fine marks are omitted rather than invented.",
+      "Appearance only; printed diagrams and ratings do not change connector mapping, electrical behavior or firmware.",
+      "No browser face review or full-regression acceptance in this checkpoint."
+    ]
+  }
+}

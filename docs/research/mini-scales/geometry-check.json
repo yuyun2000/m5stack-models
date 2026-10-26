@@ -1,0 +1,30 @@
+{
+  "id": "mini-scales",
+  "stage": "modeled",
+  "checks": [
+    "finite geometry",
+    "nominal envelope",
+    "physical cap press and release",
+    "platform fixed across button actuation",
+    "externally driven RGB",
+    "four open corner mounting bores",
+    "Grove module attach, pose, nested API and detach",
+    "all geometry/material resources receive disposal (shared materials use existing repeated-disposal helper)"
+  ],
+  "bounds": {
+    "min": [
+      -11.988061904907227,
+      -19.988061904907227,
+      -9
+    ],
+    "max": [
+      11.988061904907227,
+      19.988061904907227,
+      9
+    ]
+  },
+  "meshes": 31,
+  "triangles": 16184,
+  "disposedResources": 77,
+  "browserReview": null
+}

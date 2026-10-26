@@ -1,0 +1,96 @@
+{
+  "id": "audioplayer",
+  "sku": "U197",
+  "status": "reference-redraw-integrated",
+  "updatedAt": "2026-10-26",
+  "artworkKind": "reference-redraw",
+  "coverage": "Front audio/music/speaker label and rear microSD/3.5mm/UART diagram label.",
+  "transcription": [
+    "AUDIO",
+    "3.5mm",
+    "MP3",
+    "WAV",
+    "Audio Player",
+    "microSD",
+    "FAT16/FAT32",
+    "Max@32GB",
+    "SPI",
+    "Sleeve / Ring / Tip",
+    "N9301",
+    "BUSY",
+    "Play L:",
+    "PORT. C. UART",
+    "TXD / RXD / 5V / GND"
+  ],
+  "referenceSources": [
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1155/U197-04.webp",
+      "sha256": "9b50221301f3cb788044f8d2ef5dbbbf7fb272cd7a0bccef7536b1389f7746ef",
+      "role": "Exact-SKU official photo; reference transcription only, no photo pixels redistributed"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1155/U197-05.webp",
+      "sha256": "b23c40f04d12328751417691bc31c3c42d7d5c8ed3fbf20c5dd7a379cd5582cc",
+      "role": "Exact-SKU official photo; reference transcription only, no photo pixels redistributed"
+    }
+  ],
+  "rasters": [
+    {
+      "path": "src/units/audioplayer/reference-back.png",
+      "sha256": "e89b4698e56fc58947fa23c4b7eaf13c036509b3a7c6e05970f2471fb73e27ac",
+      "sizePx": [
+        1024,
+        1440
+      ],
+      "artworkKind": "reference-redraw"
+    },
+    {
+      "path": "src/units/audioplayer/reference-front.png",
+      "sha256": "d43010d90f995b681d8e5a5517db8a6923eef59e209c4cd16ecb696e05fe4274",
+      "sizePx": [
+        1024,
+        1648
+      ],
+      "artworkKind": "reference-redraw"
+    }
+  ],
+  "surfaces": [
+    {
+      "raster": "reference-front.png",
+      "face": "front",
+      "sizeMm": [
+        18.4,
+        29.6
+      ],
+      "positionMm": [
+        0,
+        8,
+        3.94
+      ],
+      "method": "Actual adhesive-film bridge over native front jack recess; physical PJ-342 behind it"
+    },
+    {
+      "raster": "reference-back.png",
+      "face": "back",
+      "sizeMm": [
+        20.3,
+        28.4
+      ],
+      "positionMm": [
+        0,
+        7.2,
+        -4.015
+      ],
+      "method": "Actual adhesive-film bridge over native card recess; metal roof/carrier/contacts behind it"
+    }
+  ],
+  "privateSourceVectorsDistributed": false,
+  "photographicPixelsUsed": false,
+  "photoCropsUsed": false,
+  "limitations": [
+    "Font shapes, colors, small icon outlines and sticker XYZ are reconstructed from exact official photos; no manufacturing-artwork or production-fit claim.",
+    "Packaging, private originals, mappings, source links from the table, vectors, generators and intermediates are excluded.",
+    "No browser, exhaustive face inspection or full suite; original modeled stage retained.",
+    "Film prints reproduce the actual continuous adhesive labels. They do not fill the jack/card/Grove insertion mouths or hide missing packages; physical jack and card backing remains explicit. No file, card, playback or BUSY logic is added."
+  ]
+}

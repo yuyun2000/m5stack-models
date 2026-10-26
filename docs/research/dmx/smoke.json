@@ -1,0 +1,83 @@
+{
+  "checkedAt": "2026-10-26T07:54:37.147Z",
+  "status": "pass",
+  "scope": "Necessary finite construction, complete native shell pair, mounting/PCB/XLR bores and FrontSide walls, actual stable termination cap and returning XLR release, externally driven fixed red LED, Grove four-wire attach/pose/nested access/detach/disposal only; no browser, hardware, electrical, protocol or measured connector/latch-fit verification",
+  "meshes": 74,
+  "triangles": 25222,
+  "visualEnvelopeMm": [
+    23.98603057861328,
+    51.59301529526711,
+    32
+  ],
+  "cadEnvelopeMm": [
+    23.98603057861328,
+    47.98603057861328,
+    18.999999046325684
+  ],
+  "mountingRays": 10,
+  "termination": {
+    "retainedOnRelease": true,
+    "travelMm": 1.8
+  },
+  "xlrRelease": {
+    "returnsOnCancel": true,
+    "travelMm": 1
+  },
+  "indicator": {
+    "fixedColor": "#ff2820",
+    "noElectricalCoupling": true
+  },
+  "xlr": {
+    "femaleBores": 3,
+    "innerWalls": true,
+    "mountingEarBore": true,
+    "rejectsGrove": true
+  },
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        -36,
+        0.6
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 20,
+      "purpose": "Grove mouth ends in real recessed rear wall"
+    },
+    {
+      "origin": [
+        0,
+        34,
+        11.7
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 16,
+      "purpose": "XLR insert cavity ends in physical connector assembly"
+    },
+    {
+      "origin": [
+        8.6,
+        34,
+        11.7
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "maxDistance": 31,
+      "purpose": "XLR annular cavity ends in molded rear support"
+    }
+  ],
+  "groveAttachPoseNestedDetach": "pass",
+  "inputEvents": 5,
+  "disposedResources": 121
+}

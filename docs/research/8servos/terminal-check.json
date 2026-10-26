@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-10-26T07:04:29.728Z",
+  "status": "pass",
+  "sku": "U165",
+  "defaultTerminalPlug": false,
+  "pinOrder": [
+    "HPWR",
+    "GND",
+    "GND",
+    "5V"
+  ],
+  "pinPitchMm": 3.96,
+  "matingOriginMm": [
+    0,
+    27.54,
+    2.65
+  ],
+  "pinCentreLocalZMm": -1.1,
+  "plugVisibleEnvelopeMm": [
+    16.3,
+    18.799999905005095,
+    7.000000035911798
+  ],
+  "plugWorldBoundsMm": {
+    "min": [
+      -8.15,
+      19.94000009536743,
+      0.34999999985098806
+    ],
+    "max": [
+      8.15,
+      38.740000000372525,
+      7.350000035762786
+    ]
+  },
+  "meshes": 42,
+  "rays": 12,
+  "screwPoses": 20,
+  "fixedMeshesUnchanged": 96,
+  "clearance": {
+    "status": "pass",
+    "candidatePairs": 50,
+    "surfaceProbes": 16509,
+    "interiorGridProbes": 1350,
+    "directions": 3,
+    "scope": "Bidirectional vertex/triangle-centre samples and finite-volume overlap grids against actual fixed geometry plus added metal/plastic; no manufacturing fit or exhaustive CSG proof"
+  },
+  "sources": [
+    {
+      "path": "src/units/8servos/index.js",
+      "sha256": "e4d53fa5790d49ee499221bc2178f10974f9ccf308e7f36b17b148c835ce3800"
+    },
+    {
+      "path": "src/units/8servos/TerminalPlug.js",
+      "sha256": "ba3872a746b75264bf5b3e280666ff24967ae3c86aa82046492bacff510f5df9"
+    },
+    {
+      "path": "src/units/8servos/dimensions.js",
+      "sha256": "ea32fd34401689e19aecffef6dedb71f6dde22ad21f865217de6069e4adc2711"
+    },
+    {
+      "path": "src/units/8servos/geometry-data.js",
+      "sha256": "cd929599b9eb4d3871f83de8484c7b3e4fd41a2a95c0c01878b0d18cad440dd5"
+    }
+  ],
+  "scope": "Finite local physical meshes / public standalone and Grove nested API only. No browser, manufacturing fit, tightening, clamp mechanics, wiring, electrical or hardware verification.",
+  "officialReferences": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/8Servos%20Unit/img-353a21be-5d6e-4323-912c-5b9df887b513.webp",
+      "sha256": "99399bfefae1838110bb7b480614a2cef3e873012a6a8d61b691b15d4891f284"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/8Servos%20Unit/img-5b0a720e-2518-42d4-84a7-08ab14aed759.webp",
+      "sha256": "0e872d6a157c907b0de00bcbdfddb9b57d1cf370061abb7a3751fbddc06c88e0"
+    }
+  ],
+  "researchDate": "2026-10-26",
+  "runtime": "Node v22.22.2; Three.js from existing repository dependency"
+}

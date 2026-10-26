@@ -1,0 +1,108 @@
+{
+  "checkedAt": "2026-10-26T07:34:30.975Z",
+  "status": "pass",
+  "scope": "Necessary finite construction, active-area visibility, mounting bores/normals, framebuffer, connector, attachment/pose/detach/disposal smoke; no browser, hardware, I2C or SH1107 verification",
+  "meshes": 34,
+  "triangles": 10354,
+  "visualEnvelopeMm": [
+    24.007047653198242,
+    56.00704765319824,
+    8.000000095367431
+  ],
+  "cadEnvelopeMm": [
+    24.007047653198242,
+    56.00704765319824,
+    8
+  ],
+  "mountingRays": 10,
+  "activeAreaRays": 25,
+  "framebuffer": {
+    "id": "lcd",
+    "resolution": [
+      64,
+      128
+    ],
+    "factoryResolution": [
+      128,
+      64
+    ],
+    "monochrome": true,
+    "touch": false,
+    "writes": [
+      "fill",
+      "rgb565",
+      "rgba"
+    ],
+    "nestedWrite": "pass"
+  },
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        8.15,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 17,
+      "purpose": "Display window is closed by framebuffer over physical black glass and carrier"
+    },
+    {
+      "origin": [
+        8.05,
+        8.15,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 17.1,
+      "purpose": "Inactive window border is closed by solid glass"
+    },
+    {
+      "origin": [
+        0,
+        -40,
+        0.5
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 22,
+      "purpose": "Grove mouth ends in physical connector rear wall"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Display window is closed by framebuffer over physical black glass and carrier",
+      "hit": "display-panel",
+      "distanceMm": 16.96
+    },
+    {
+      "purpose": "Inactive window border is closed by solid glass",
+      "hit": "OLED physical black glass and inactive border",
+      "distanceMm": 16.97500001192093
+    },
+    {
+      "purpose": "Grove mouth ends in physical connector rear wall",
+      "hit": "Grove rear wall",
+      "distanceMm": 17.950000011920928
+    }
+  ],
+  "grovePins": [
+    "GND",
+    "5V",
+    "SDA",
+    "SCL"
+  ],
+  "groveAttachPoseNestedDetach": "pass",
+  "disposedResources": 81,
+  "disposeEvents": 107
+}

@@ -1,0 +1,85 @@
+{
+  "checkedAt": "2026-10-26T08:16:03.455Z",
+  "status": "pass",
+  "scope": "Necessary finite geometry/native shell/mounting paths/bore FrontSide walls/OLED and connector backing/real native flexure/rotor fixed versus moving frames/independent external RGB and monochrome framebuffer/Grove four-wire nested pose detach disposal. No browser, hardware, CAN, firmware, motor physics or production fit validation.",
+  "meshes": 72,
+  "triangles": 40550,
+  "visualEnvelopeMm": [
+    41,
+    30.000000000000004,
+    41
+  ],
+  "cadEnvelopeMm": [
+    40,
+    15.200000762939453,
+    40.024444580078125
+  ],
+  "mountingRays": 20,
+  "m3CapBores": 4,
+  "actualFlexedVertices": 343,
+  "stableNativeVertices": 5272,
+  "rotorAxis": [
+    0,
+    1,
+    0
+  ],
+  "fixedFrameCount": 10,
+  "movingGroupCount": 4,
+  "externalInputCountBeforeButton": 0,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        -30,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 13,
+      "purpose": "OLED aperture backed by active display and full-depth glass carrier"
+    },
+    {
+      "origin": [
+        0,
+        -15.15,
+        30
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 18,
+      "purpose": "Grove mouth backed by recessed physical socket rear wall"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "OLED aperture backed by active display and full-depth glass carrier",
+      "hit": "display-panel",
+      "distanceMm": 10.8
+    },
+    {
+      "purpose": "Grove mouth backed by recessed physical socket rear wall",
+      "hit": "",
+      "distanceMm": 16.18
+    }
+  ],
+  "components": [
+    "rotor",
+    "press",
+    "lcd",
+    "rgb-1",
+    "rgb-2",
+    "grove",
+    "can-1",
+    "can-2",
+    "debug",
+    "sensor"
+  ],
+  "groveAttachPoseNestedDetach": "pass",
+  "disposedResources": 150
+}

@@ -1,0 +1,227 @@
+{
+  "id": "hall",
+  "sku": "U084",
+  "officialDocs": "https://docs.m5stack.com/en/unit/hall",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "query": "Unit Hall U084 外壳尺寸 芯片 LED Grove 结构",
+    "rawResponseDistributed": false,
+    "result": "Exact U084 subset confirms product dimension order 32×24×8 mm, 3×A3144E, 74HC08D, HT7533, D1 red 0603 and Grove GND/5V/NC/Digital Output; exact official photos, schematic, dimension drawing and structure links."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/hall/hall_07.webp",
+    "sha256": "f2d3934d0d26278f179e9bbe4fc9ae33513b7b9fa4cd814af9d174102a1da4e7"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U084_Unit_Hall/Structures/Unit_Hall.stl",
+      "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+      "gitBlob": "797957d89384146a8b5fc9e32a74647997663adc",
+      "sha256": "3145f6c75ca00e6aacbbd3618d0b2213b4efa6e7ee27ff1c6cf06af9ccbbe55c",
+      "license": "MIT; retain licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/hall/hall_01.webp",
+      "sha256": "db32c92d489c6c5d29a29721d8645fabafbfe42eed401c30755ca8d29a491223"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/hall/hall_02.webp",
+      "sha256": "a281057fdece329d9b7d58b2aaadb0b32a5369d5c409e9912d8201445b767732"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/hall/hall_03.webp",
+      "sha256": "9d39629df8476b4c07fb320198967e9ae1eb992ef2b7e5945b310cfd74c47fa3"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/hall/hall_05.webp",
+      "sha256": "e39eeb87c3dc2b2be8dae8f2501675a37b9b246a7ed3c265b1df107c80e873b1"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/hall/hall_06.webp",
+      "sha256": "1fdb98c15def7967b0eb7a63fa08590b4fb9f162162c9a1876d1fa213bd76c4c"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/hall/module_size.jpg",
+      "sha256": "e749d4158272a2c050a2ead49ed72402b301bf7f259353fbbc39c81c3033a6be"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/hall/hall_sch_01.webp",
+      "sha256": "772ba2dc08da6b7c31fe5c7686c43d04a329caa4b636faceac91c25951a5056b"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/hall/hall_04.webp",
+      "sha256": "fab0e3d0e594fbfab89fc4930ca5554baa426b3a458835b716d999294bf0f740"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/hall/hall_07.webp",
+      "sha256": "f2d3934d0d26278f179e9bbe4fc9ae33513b7b9fa4cd814af9d174102a1da4e7"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      309.2688293457031,
+      313.2234802246094,
+      -4
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "triangles": 3252,
+    "method": "One common rigid translation, scale 1; no shell cuts, hole filling or per-part alignment",
+    "reason": "Original complete assembled shell component 0 retained using one translation, without scaling, cuts, fills or independently aligning subparts. Components 1 and 2 are displaced individual copies; triangles 1668 + 1584 = full component 3252."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      32,
+      8
+    ],
+    "vendorDimensionOrderMm": [
+      32,
+      24,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      32,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24,
+      32,
+      8.000000095367431
+    ],
+    "mountingHoleCentersMm": [
+      [
+        -8,
+        -4
+      ],
+      [
+        8,
+        -4
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "nativeBoreFacetingNote": "Original source triangles retained; cardinal FrontSide bore-wall distances tested at native rear bore sections, without synthetic replacement."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "sources": "docs/research/hall/artwork.json",
+    "originalsDistributed": false,
+    "files": [
+      {
+        "path": "src/units/hall/reference-redraw-front.png",
+        "sha256": "65afd822b525f79ef83fd7ef20a61e88829fdce3c3480f8e9d5f05e3d27458a4",
+        "pixels": [
+          2400,
+          1680
+        ],
+        "sizeMm": [
+          20,
+          14
+        ],
+        "positionMm": [
+          0,
+          7,
+          3.8
+        ],
+        "face": "front",
+        "method": "printedArtwork",
+        "artworkKind": "reference-redraw",
+        "target": "Hall complete native assembled shell",
+        "reference": {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/hall/hall_07.webp",
+          "sha256": "f2d3934d0d26278f179e9bbe4fc9ae33513b7b9fa4cd814af9d174102a1da4e7"
+        }
+      },
+      {
+        "path": "src/units/hall/reference-redraw-back.png",
+        "sha256": "5b07c4bff51023731ac9fdae64e0db5ba46b06858f1261e34c6275ee3f856c7d",
+        "pixels": [
+          1944,
+          1464
+        ],
+        "sizeMm": [
+          16.2,
+          12.2
+        ],
+        "positionMm": [
+          0,
+          7,
+          -3.8
+        ],
+        "face": "back",
+        "method": "printedArtwork",
+        "artworkKind": "reference-redraw",
+        "target": "Hall complete native assembled shell",
+        "reference": {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/hall/hall_02.webp",
+          "sha256": "a281057fdece329d9b7d58b2aaadb0b32a5369d5c409e9912d8201445b767732"
+        }
+      }
+    ]
+  },
+  "runtimeFiles": [
+    {
+      "path": "src/units/hall/assembly.js",
+      "sha256": "3e92e62369da6ae649718448dbc37186f05549b23c511381ac82751c258ed1f1"
+    },
+    {
+      "path": "src/units/hall/cad-map.json",
+      "sha256": "f4d869377e864d4e5c25034306d94bac3ea5a8b0f5daa1cf0a88ec36fae994de"
+    },
+    {
+      "path": "src/units/hall/dimensions.js",
+      "sha256": "efe9408298dfa0eea871a972d33eb1db1bf4b4e9178b06ececba9309a90de757"
+    },
+    {
+      "path": "src/units/hall/geometry-data.js",
+      "sha256": "da51cd682fa49d65776a2d5b6a0bf01feb5edf5d1dad9f801d86e2adeb25aef7"
+    },
+    {
+      "path": "src/units/hall/index.js",
+      "sha256": "3bfbdd1cfb6dc524968e2243093b9fe0517def84c91efda21d2edba3a55ef796"
+    },
+    {
+      "path": "src/units/hall/reference-redraw-back.png",
+      "sha256": "5b07c4bff51023731ac9fdae64e0db5ba46b06858f1261e34c6275ee3f856c7d"
+    },
+    {
+      "path": "src/units/hall/reference-redraw-front.png",
+      "sha256": "65afd822b525f79ef83fd7ef20a61e88829fdce3c3480f8e9d5f05e3d27458a4"
+    },
+    {
+      "path": "src/units/hall/stickers.js",
+      "sha256": "c385b8559edc9617248392c4784448aeb23bc9651738b6979101e76ac028847a"
+    }
+  ],
+  "inferences": [
+    "PCB outline/thickness/Z, concealed package envelopes/XYZ, passive placement, solder detail, screw shank and Grove interior depth/contact geometry are visual reconstruction. No production PCB/assembly STEP or manufacturing-fit claim.",
+    "D1 red 0603 is confirmed by the original schematic and internal LED by product description. Exact exterior photos and native shell do not establish a separate lens/opening or visible optical path. Concealed fixed red package only, no exterior Led API.",
+    "Sensor is a passive visual anchor. No magnetic field, pole/threshold model, sensor acquisition, digital output, logic gating, LED linkage, GPIO, firmware or electrical simulation. No buttons or moving joints.",
+    "Packaged magnet is photographed but has no documented measured dimensions in the retrieved sources; no fabricated-size magnet accessory is included."
+  ]
+}

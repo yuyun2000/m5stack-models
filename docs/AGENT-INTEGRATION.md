@@ -1,6 +1,46 @@
 # 动态外壳接入：给下游 Agent
 
+`laser-tx`（U066）提供独立固定红色 `emitter`，默认关闭，只表现自身650nm印字对应的发射孔/透镜外观；`laser-rx`（U065）仅有 `grove` 和被动 `sensor`，深色接收头不注册为灯。两款没有按钮、关节、光束、光斑、通信或TX/RX状态联动。`midi`（U187）提供稳定 `mode`（0=左Bypass，1=右Separate）、独立固定绿 `power-led`（默认关闭）、`grove` 与被动 `sensor`。型号、命令、三分支四芯线和边界见[Laser/MIDI](LASER-MIDI-UNITS.md)。
+
+MIDI 的 `midi-in-din` / `midi-out-din` 使用 `din-5pin-female`；`midi-in-trs` / `midi-out-trs` / `audio` 共享 `audio-3.5mm-trs` 机械配对类型，各自 `meta` 保留输入、输出和音频用途。机械配对不证明引脚、电平、光学或MIDI/音频电气兼容，改档不路由信号或产生声音。模型轴40×48×25 mm，厂商尺寸顺序48×40×25 mm。
+
+三款同步6张正背 `reference-redraw` PNG，按同型号官方图代码重绘，未裁产品照片。原稿来源缺口和不可辨细字保留在单品记录中；原表、私有链接、矢量、生成器及中间件不分发。每个独立模型或模块分别传 `artwork:false`；接线仅表示机械装配/层级寻址，不建立TX/RX光学链路或HUB协议转换。
+
+`earth`（U019）的 `trim` 是仅定位的真实调节头关节，无灯或按钮；`hall`（U084）只有 `grove` 和被动 `sensor`，D1 保留隐藏红色封装，没有无依据的可见 LED API。`qrcode`（U173）提供瞬时 `button`、稳定 `mode`、独立固定白光 `illumination` 与红光 `aiming`；默认 `{refractor:true}` 装固定折射头，`{refractor:false}` 显示直视扫描头，独立和 Grove 模块均可选择。具体命令、四芯线层级寻址及职责见[Earth/Hall/QRCode](EARTH-HALL-QRCODE-UNITS.md)。
+
+三款同步7张PNG：Earth默认英文与显式 `stickerVariant:'education-cn'` 中文版共2张，均为 `source-vector-raster`（原稿轮廓/填色及可见层依对应预览和标准官图恢复，并非未修改原稿）；Hall两面为 `reference-redraw`；QRCode三个机身面为精确原稿 `official-raster`，不使用包装图。模型不实现湿度、阈值、磁场、扫码、电气或固件行为；各实例分别传 `artwork:false` 可关闭本批贴层。
+
+`step16`（U198）提供真实16定位旋钮、八个独立暖黄显示段与独立RGB；`asr`（U194）提供固定喇叭/模拟麦克风，`uhf-rfid`（U107）提供实体陶瓷天线/板堆。三款同时带五张贴纸，UHF背贴使用所提供准确原稿栅格，其他面按官图重绘；API、机械分支示例、来源类型和各模块分别传 `artwork:false` 的方式见[Step16/ASR/UHF](STEP-ASR-UHF-UNITS.md)。
+
+`mini-imu`（U095）提供完整MPU6886实体与纯视觉锚点，`extio2`（U011-B）提供真实10针弯针接口，`acssr`（U139）提供SSR/控制板套件、原生按键、三路独立外驱灯及两只可拆4P端子。三款同时带对应贴纸，姿态、输入/外驱状态和接线例子见[IMU/扩展IO/ACSSR](IMU-EXTIO-ACSSR-UNITS.md)。
+
+此前补贴纸批的30款Unit已同步补对应印刷，精确原稿优先，缺源才按官方照片重绘；统一开关、Grove配置和来源/局部检查范围见[新增Unit贴纸](UNIT-STICKER-ADDITIONS.md)。
+
+`poesp32`（U138）补双板/PoE/RJ45八触点，`cams3-5mp`（U174-B）补PY260固定镜头/卡槽/两组1×3母座，`synth`（U178）补内置喇叭与格栅后实体。真实插座类型、三枚独立固定色灯及三分支接线见[网络/摄像/合成Unit](NETWORK-CAMERA-SYNTH-UNITS.md)。新增同时补对应贴纸，源表与矢量仅本地保留。
+
+`rtc`（U126）保留封闭电池/时钟器件外观，`fingerprint2`（U203）有真实电容采集面和独立灯环，`audioplayer`（U197）有真实卡槽/音频座和独立BUSY灯。三款只提供外观/锚点，接线与灯光寻址见[RTC/指纹/音频Unit](RTC-FINGERPRINT-AUDIO-UNITS.md)。
+
+`rollercan` / `rollercan-lite` 和 `vibrator` 均通过 `rotor` 外驱真实旋转件。标准版的 `grove-top` 带动下级Unit与四芯线，Lite无顶部Grove；两款底部OLED和真实弹舌保持固定。组件路径、外部画面与转速示例见[旋转Unit](ROTATING-UNITS.md)。
+
+`can`（U085）支持可拆4P端子、四个螺钉头和固定白色指示灯；`env-pro`（U169/BME688）与 `tof4m`（U172/VL53L1X）提供完整通风/光学实体与纯视觉锚点。独立模型、三分支Grove接线和职责见[CAN与环境/测距Unit](CAN-ENV-TOF-UNITS.md)。
+
+`2relay` / `4relay` 支持随附4P端子独立装卸，插头内各有四个外驱螺钉；`dmx` 有稳定终端滑块、XLR释放片与固定红灯。Relay指示灯保持实际蓝/绿色，均不自动联动电气。配置、组件地址和职责见[Relay与DMX](RELAY-DMX-UNITS.md)。
+
+`joystick2` 有 `tilt-x` / `tilt-y`、瞬时 `press` 和 `rgb`；`byteswitch` 有八枚保持档位的钮子杆，`bytebutton` 有八枚压放按钮，两款各九RGB及可继续级联的 `grove-out`。独立/多级接线、组件地址和输入边界见[可动输入Unit](INTERACTIVE-INPUT-UNITS.md)。
+
 本库负责毫米尺度的外观、键帽行程、视觉关节、线缆和输入意图。下游负责固件、电气、总线、传感器值、设备状态及舵机/电机物理模型。默认模型静止；设置 `rpm` 只要求渲染器旋转，不表示给硬件通电。
+
+`oled`（U119）与 `lcd`（U120）支持独立和 Grove 模块中的 `lcd` framebuffer，多屏可经 HUB 分别寻址。立式分辨率为 64×128 / 135×240，屏幕选择与 Unit 姿态不覆盖其他画面。`co2`（U103）提供完整实体与传感器视觉锚点；接入示例和职责见[显示 Unit](DISPLAY-UNITS.md)。
+
+`pahub-v21`、`pbhub-v11` 各有输入 `grove` 和输出 `grove-0`…`grove-5`，六个输出均可挂接下级Unit及四芯线；层级路径和独立分支装卸见[多接口接线](MULTIPORT-UNITS.md)。`gesture`提供真实光学实体和Grove接口，不在模型内识别手势。
+
+Weight-I2C 与8Servos可通过 `{terminalPlug:true}` 安装各自随附的四芯螺钉端子，也可对 `terminal` 手动装卸。`terminal/screw-1`…`screw-4` 是外驱头部角度，卸下插头不影响Unit或Grove线。示例、层级地址和职责见[可拆端子接入](UNIT-TERMINALS.md)。
+
+新增 Unit 可用 `loadModel('gps-v11' | 'weight-i2c' | '8servos')` 独立展示，也可用相同ID的 `loadGroveModule()` 挂接主机。GPS定位、称重值、HX711采样、I2C通信和舵机PWM均由外部实现；模型内的接口和封装只描述可见实体。三款当前仅做必要结构/API检查与构建，未做逐面浏览器验收。
+
+`fader` 的 `slider` 是独立的毫米位置控件（`kind: 'slider'`）：中位0、范围−17.5～17.5 mm，向+Y为正。使用 `model.get('slider').set({positionMm: 12, durationMs: 200})`，或 `model.handle({type:'slider', target:'slider', positionMm:12})`；挂接后路径为 `grove/slider`。读取 `getState()` 的 `positionMm`、`targetPositionMm`、`rangeMm`、`transitioning`、`dragging`。外驱设置越界会抛错；直接鼠标拖动限制在实体止点，松手保持位置，取消拖动也不弹回。`start`、`position`、`end` 输入仅表示用户拖动意图，`end.cancelled` 标记失焦/卸载取消；外驱 `set()` 不回送输入。导出的 `VisualSlide` 可供其他直线控件复用，`mesh` 应按零位在组件本地坐标建模；固定轨道不放入移动 `cap`。
+
+`8angle` 提供 `rotation-1`…`rotation-8`，每个只接受−140～140°的绝对 `angleDeg`，不接受非零rpm；这对应官方280°总转角，中位为视觉基准，不代表ADC零点。`switch` 是保持档位的滑动开关，`rgb-1`…`rgb-9` 分别设置灯光。Fader的灯为 `rgb-1`…`rgb-14`。`mini-scales` 的实体功能键为 `button`，RGB为 `rgb`；秤台保持固定，不将重量、校准或传力形变作为可视状态。这三款同样支持 `loadGroveModule()`，所有组件路径随挂接层级前缀变化。
 
 ## 先使用公开 API
 
@@ -352,4 +392,6 @@ demo 的异步 Unit 加载在切换模型、接口或 Unit 后会作废旧请求
 
 ## 正式栅格贴纸
 
-正式贴纸默认启用，`artwork: false`关闭本批栅格层。七款Unit另提供显式`stickerVariant: 'education-cn'`；独立模型与Grove模块分别传选项，父主机选项不自动传播。贴图固定于真实壳体、盖、帽或关节，外部框架无需逐帧重设贴纸坐标。覆盖、缺面、位图精度和许可边界见[贴纸记录](STICKER-COVERAGE.md)。旧照片裁切保持关闭。
+2026-10-26 起，缺原稿的可读印刷面按用户授权加入官方照片参考重绘。运行时 `userData.artworkKind === 'reference-redraw'`，与原稿栅格的 `official-raster` / `official-raster-film` 分开标记；各产品的 `artwork-redraw.md` 记录精确参考和未还原项。重绘的高像素不代表厂商矢量或电气引脚证据。既有原稿层和显式教育版保留，`artwork:false` 同样关闭参考重绘层。
+
+正式贴纸默认启用，`artwork: false`关闭本批栅格层。历史七款Unit与新增Earth另提供显式`stickerVariant: 'education-cn'`，Earth的两版原稿恢复边界见[本批指南](EARTH-HALL-QRCODE-UNITS.md)；独立模型与Grove模块分别传选项，父主机选项不自动传播。贴图固定于真实壳体、盖、帽或关节，外部框架无需逐帧重设贴纸坐标。覆盖、缺面、位图精度和许可边界见[贴纸记录](STICKER-COVERAGE.md)。旧照片裁切保持关闭。

@@ -1,0 +1,85 @@
+{
+  "id": "weight-i2c",
+  "sku": "U180",
+  "retrievedAt": "2026-10-26",
+  "kind": "reference-redraw",
+  "originalsDistributed": false,
+  "method": "New text and shapes code-drawn from exact official product photographs. No photographic pixels, crop, private original or vector source distributed.",
+  "sources": [
+    {
+      "face": "front",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Weight%20I2C/img-a4d8bc9a-3926-4265-b108-6501b25fcf3d.webp",
+      "sha256": "c24f29e68e57338a14b6f5c806ae8677bcea23acdf3606a19fafc5dbfd276faa"
+    },
+    {
+      "face": "back",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Weight%20I2C/img-da7c0ae5-b2ca-4371-9d0a-1b7e06b262f5.webp",
+      "sha256": "b7ba9e1bef7b9b0f9d29ed443c454c97ed47269446ea4811e974b7edce2679bf"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/weight-i2c/reference-redraw-front.png",
+      "sha256": "6228ebc5bcde9e504aa0881d0928056b3c2fe25f062155b872a1789ac6becdd0",
+      "pixels": [
+        1968,
+        1824
+      ],
+      "sizeMm": [
+        16.4,
+        15.2
+      ]
+    },
+    {
+      "path": "src/units/weight-i2c/reference-redraw-back.png",
+      "sha256": "2413cb288369425f08ef8468dae7870f480e2ab1c9add53270ea5c87ba060736",
+      "pixels": [
+        1968,
+        1464
+      ],
+      "sizeMm": [
+        16.4,
+        12.2
+      ]
+    }
+  ],
+  "registration": [
+    {
+      "face": "front",
+      "sizeMm": [
+        16.4,
+        15.2
+      ],
+      "positionMm": [
+        0,
+        -1.6,
+        4
+      ],
+      "method": "printedArtwork",
+      "target": "Weight-I2C assembled housing"
+    },
+    {
+      "face": "back",
+      "sizeMm": [
+        16,
+        11.4
+      ],
+      "positionMm": [
+        0,
+        7.3,
+        -3.8
+      ],
+      "method": "printedArtwork",
+      "target": "Weight-I2C assembled housing"
+    }
+  ],
+  "coverage": "Front bridge-terminal colour labels, WEIGHT/I2C title and G/V/D/C strip; rear bridge/ADC/protocol/pin label.",
+  "remainingKnownPrintedFaces": [],
+  "limits": [
+    "Raster colours, typography, line shapes and physical label sizes/positions are photo/native-recess estimates, not production-print measurements.",
+    "Continuous adhesive film is used only where the exact photograph shows the real label crossing native service openings; all original physical geometry remains intact and available with artwork:false.",
+    "Molded lettering is retained as existing geometry; no unreadable package stamps or unknown legends are invented.",
+    "No exhaustive browser pixel inspection; necessary registration, exact original physical/control/terminal-variant and Grove checks only."
+  ],
+  "rights": "M5Stack product marks and original printed designs retain their respective rights; these reference reconstructions are not production source artwork."
+}

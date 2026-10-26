@@ -1,0 +1,229 @@
+{
+  "id": "mini-imu",
+  "sku": "U095",
+  "officialDocs": "https://docs.m5stack.com/en/unit/imu",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "query": "Unit Mini IMU U095 尺寸 外壳 接口 按键 LED 原理图",
+    "rawResponseDistributed": false,
+    "result": "Confirms 24 × 24 × 8 mm, MPU6886, HT7533, BSS138, I2C Grove GND/5V/SDA/SCL and exact official photo/drawing/structure links."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/imu/imu_08.webp",
+    "sha256": "c08f1adbef3a9efa86c3b3e5eff639db682e5023e8c73798e17183cff48db8df"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U095_Unit_Mini_IMU/Structures/Unit_Mini_IMU.stl",
+      "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+      "gitBlob": "2dbedc50fbf88e556b0d15171d316f0b220029d2",
+      "sha256": "56f309d901d5f071efb3dafbbfdbc2bcaa6c4430455fd3be5a41dc581a04d027",
+      "license": "MIT; retain licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/imu/imu_01.webp",
+      "sha256": "32820ca24941687fbba5a00c3e8e204a5386a38b33449a491c5d6b52bcee5a7b"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/imu/imu_02.webp",
+      "sha256": "676ba02828fac1fc2681641718fdff7a8d08560b82ecc3bf029fd6ad35a623fc"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/imu/imu_04.webp",
+      "sha256": "5b7fa6898d92d775be18c0a7a3707db8b542ee15e474b4289527c50481439661"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/imu/imu_07.webp",
+      "sha256": "477b59d19a1ab0d14d9192b368e9ffb48e829654953e42d734fea89d66f2579b"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/imu/imu_08.webp",
+      "sha256": "c08f1adbef3a9efa86c3b3e5eff639db682e5023e8c73798e17183cff48db8df"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/imu/imu_09.webp",
+      "sha256": "75acf0ae5d20e1ce24e0240d2297ab6a3a10823f1b6e8e0a21e16702250393e3"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/imu/imu_sch_01.webp",
+      "sha256": "26acfd387f3b35736bcbbb7a8bba7a53941bd0ae7103a014be5becb5885cc69b"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/imu/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+      "sha256": "31b0ad365228504643b4378124707848a1ea0f38df3f58736c0cb262b2d9ec07"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      122.52239990234375,
+      12,
+      -4
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "method": "One common rigid translation, scale 1; no shell cuts, hole filling or per-part alignment",
+    "reason": "Original complete assembled shell component 0 retained using one translation, without scaling, cuts, fills or independently aligning subparts. Components 1 and 2 are displaced individual copies; triangles 2656 + 1522 = full component 4178."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      24,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      24,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24,
+      24,
+      8.007999897003174
+    ],
+    "mountingHoleCentersMm": [
+      [
+        -8,
+        0
+      ],
+      [
+        8,
+        0
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "nativeBoreFacetingNote": "Source triangles preserved; cardinal FrontSide wall distances approximately 2.438–2.5 mm, within nominal 5 mm diameter."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "sources": "docs/research/mini-imu/artwork.json",
+    "originalsDistributed": false,
+    "files": [
+      {
+        "path": "src/units/mini-imu/reference-redraw-front.png",
+        "sha256": "0358b4be273734133513c12211374a03f804aebdff56662834f13d1ae291b23a",
+        "pixels": [
+          2160,
+          480
+        ],
+        "sizeMm": [
+          18,
+          4
+        ],
+        "positionMm": [
+          0,
+          7.1,
+          3.8
+        ],
+        "face": "front",
+        "method": "printedArtwork",
+        "target": "Mini IMU complete native assembled shell"
+      },
+      {
+        "path": "src/units/mini-imu/reference-redraw-axes.png",
+        "sha256": "782b63744f03fc0c4ee586032d63bd24f2c89be970cce4b480a4548fed40b727",
+        "pixels": [
+          720,
+          720
+        ],
+        "sizeMm": [
+          6,
+          6
+        ],
+        "positionMm": [
+          0,
+          0,
+          4
+        ],
+        "face": "front",
+        "method": "printedArtwork",
+        "target": "Mini IMU complete native assembled shell"
+      },
+      {
+        "path": "src/units/mini-imu/reference-redraw-back.png",
+        "sha256": "20fcb984f0241bdcae2c0ec38a5c071279c1c28c819d8c210fe7d58f19f8a701",
+        "pixels": [
+          1968,
+          540
+        ],
+        "sizeMm": [
+          16.4,
+          4.5
+        ],
+        "positionMm": [
+          0,
+          7.1,
+          -3.8
+        ],
+        "face": "back",
+        "method": "printedArtwork",
+        "target": "Mini IMU complete native assembled shell"
+      }
+    ]
+  },
+  "runtimeFiles": [
+    {
+      "path": "src/units/mini-imu/assembly.js",
+      "sha256": "5bd77c5b3754ccc0d0ee138d37c07eb9cc43b2fe46bc30288f83d39791e93c51"
+    },
+    {
+      "path": "src/units/mini-imu/cad-map.json",
+      "sha256": "51683832f22d652579007e8ae6cd23678806ed6b5f0f5f2025b4b2ab1c12076f"
+    },
+    {
+      "path": "src/units/mini-imu/dimensions.js",
+      "sha256": "d5cb39a0f9cdba519e54711a03c3f505f11af1d032d70a7eccbc5ecf97dc227c"
+    },
+    {
+      "path": "src/units/mini-imu/geometry-data.js",
+      "sha256": "f25d79d7ebe0585360cef8c013b7e909f029b7e2931dd303e620fe47680a866e"
+    },
+    {
+      "path": "src/units/mini-imu/index.js",
+      "sha256": "45ce769bd8ab8688ea912d696377c7397e3e5535a9c3124b620ed0db37ca2fd8"
+    },
+    {
+      "path": "src/units/mini-imu/reference-redraw-axes.png",
+      "sha256": "782b63744f03fc0c4ee586032d63bd24f2c89be970cce4b480a4548fed40b727"
+    },
+    {
+      "path": "src/units/mini-imu/reference-redraw-back.png",
+      "sha256": "20fcb984f0241bdcae2c0ec38a5c071279c1c28c819d8c210fe7d58f19f8a701"
+    },
+    {
+      "path": "src/units/mini-imu/reference-redraw-front.png",
+      "sha256": "0358b4be273734133513c12211374a03f804aebdff56662834f13d1ae291b23a"
+    },
+    {
+      "path": "src/units/mini-imu/stickers.js",
+      "sha256": "04ac8c0e4860abe70324c9a31ca0789cf4e9af25d26443075dfc81cb5f1cc020"
+    }
+  ],
+  "inferences": [
+    "PCB outline follows exact official rear photograph; thickness/Z, concealed package envelopes/XYZ, solder details, screw shank and Grove interior depth/contact geometry are visual reconstructions. No production PCB/assembly STEP or manufacturing-fit claim.",
+    "Sensor is a passive visual anchor. No inertial values, acceleration, gyroscope, temperature, fusion, calibration, tilt, I2C, firmware or electrical simulation."
+  ]
+}

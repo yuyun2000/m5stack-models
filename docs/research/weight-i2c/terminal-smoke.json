@@ -1,0 +1,103 @@
+{
+  "status": "pass",
+  "sku": "U180",
+  "defaultTerminalPlug": false,
+  "defaultVisibleEnvelopeMm": [
+    24,
+    32.00000009536743,
+    11.340000095367431
+  ],
+  "plugVisibleEnvelopeMm": [
+    16.3,
+    18.799999905005098,
+    7.0000000359118
+  ],
+  "estimatedPlugBoundsMm": {
+    "min": [
+      -8.15,
+      8.44000009536743,
+      1.199999999850988
+    ],
+    "max": [
+      8.15,
+      27.24000000037253,
+      8.200000035762788
+    ]
+  },
+  "pinPitchMm": 3.96,
+  "pinOrder": [
+    "A+",
+    "A-",
+    "E-",
+    "E+"
+  ],
+  "pinNumbers": [
+    4,
+    3,
+    2,
+    1
+  ],
+  "rays": 18,
+  "boreWallRays": 48,
+  "screwPoses": 20,
+  "fixedSocketMeshes": 22,
+  "clearance": {
+    "status": "pass",
+    "candidatePairs": 41,
+    "surfaceProbes": 10943,
+    "interiorGridProbes": 1107,
+    "directions": 3,
+    "scope": "Bidirectional vertex/triangle-centre samples and finite-volume overlap grids against actual fixed geometry plus added metal/plastic; no manufacturing fit or exhaustive CSG proof"
+  },
+  "scope": "Actual standalone / nested Module API and physical mesh checks only; accessory local dimensions inferred from official photographs, no excitation, load-cell, I2C, supply, wiring, calibration, thread pitch, clamp mechanics, firmware, hardware or browser proof",
+  "date": "2026-10-26T07:05:44.740Z",
+  "checks": [
+    "default socket stays empty",
+    "native CAD buffer identity",
+    "fixed socket vertices and matrices unchanged",
+    "18 physical aperture / contact / mounting rays",
+    "48 FrontSide pin / wire / tool bore wall rays",
+    "closed finite plug meshes",
+    "20 independent screw poses and exact neutral returns",
+    "no screw RPM / clamp displacement",
+    "finite geometry clearance samples against actual assembly",
+    "constructor option on Model and GroveModule",
+    "nested Grove joint path",
+    "selective terminal detach preserves Unit and four Grove wires"
+  ],
+  "sourceSha256": {
+    "src/units/weight-i2c/TerminalPlug.js": "483b8268092e7e0990aee94a7a3fb5c1a5ba7f76460f97c8c65e53eaf335d6a8",
+    "src/units/weight-i2c/index.js": "b41d4055af59bce20b8f4472eb1387e0eb161624652f02353aa5ec2abdf2dc82",
+    "src/units/weight-i2c/assembly.js": "a5f361dffa0735b2190d2a5206ddb9a917824addcb4102f5982d976d24b6e41f",
+    "src/units/weight-i2c/dimensions.js": "4146702860ed1f62877eaa2cd52520d9c62187021a85b4d5eaa33aaa387338e7",
+    "src/units/weight-i2c/geometry-data.js": "15ab3b04c240aef5be4b1711755f2afbe61c7b792d3900b4b6679971032be37d"
+  },
+  "runtime": {
+    "node": "v22.22.2",
+    "three": "0.186.1",
+    "sha256": {
+      "src/core/ComponentHost.js": "019f32dd28489a4fe7cb60263285b358662ba65dab7ba7c7d2767a01a98f7e40",
+      "src/core/Module.js": "20fbae04c35e0693fe3dd688807a7f9bae2754d5d7b914c8aeb958ec26795203",
+      "src/core/components/Port.js": "9b888b81e43b7397ac5eee82cb25e7b1abfd5c9f30d29a8ba967f8f5080208dc",
+      "src/core/components/VisualJoint.js": "654fe92b14931824362b5c6f7fb24be509c7e1be1ff4a77d6903bcc51581e84c",
+      "src/core/geometry.js": "2bb560fe5cb934e3ad18f5ac8370e57ace42aa28bf4421d62e8fa132c906b94e",
+      "src/modeling/parts.js": "387cddaf0ab614a783a024ad4e38918cd47ad8a887041bd22b12908064564fd3",
+      "src/modeling/cad.js": "83e8e600aa182b5a94bbccfcd26f0ab35d569c5828ee8ce7f11bc54d964a88fd",
+      "src/modeling/grove-cable.js": "854e33e5e00545c0c907df1b166d27fdc1480b4b3c02fbd4cda04caee6f5e649"
+    }
+  },
+  "officialSources": [
+    {
+      "type": "exact-product-package-photograph",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Weight%20I2C/img-0634712b-2a27-48cf-894f-d6708a771d47.webp",
+      "sha256": "d2a64387d3f62c3f2dcd4074a77f516e42504b3da60a0ca2aed332639bb2085c"
+    },
+    {
+      "type": "official-mcp-knowledge-search",
+      "query": "Unit Weight-I2C U180 included HT3.96-4P connector accessory",
+      "snapshotSha256": "c642a8f629d5322d80cecb3a178b246c65ffd28e94c6d1ed7e55070dbb8f5d89",
+      "confirmed": "Exact U180 package includes 1 x HT3.96-4P"
+    }
+  ],
+  "checkScriptSha256": "d45fb18ff61397404ac5e4b9f1e268d7dfa5740ed0a8c2142ba5204acfcdb757"
+}

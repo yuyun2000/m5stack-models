@@ -1,0 +1,179 @@
+{
+  "product": "Unit ToF4M",
+  "sku": "U172",
+  "retrievedAt": "2026-10-26",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_ToF4M",
+  "officialMcp": {
+    "query": "Unit ToF4M U172 VL53L1CX dimensions Grove",
+    "confirmed": [
+      "SKU U172",
+      "VL53L1CXV0FY/1 sensor",
+      "32 × 24 × 8 mm vendor dimension order",
+      "Grove PORT.A I2C with GND / 5V / SDA / SCL"
+    ],
+    "rawResponseDistributed": false
+  },
+  "officialCad": {
+    "sku": "U172",
+    "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U172_Unit_ToF4M/Structures/Unit_ToF4M.stl",
+    "gitBlob": "e0847551ad8f3b2f9bc662a08e2b67ebfc2dc81a",
+    "sha256": "f2097c4c2b68b7890c77bc416e788a5adf6185ecb2a06e89fcca1bb48c50baac",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/LICENSE",
+    "selectedComponents": [
+      {
+        "index": 0,
+        "name": "ToF4M native assembled front and rear shells",
+        "triangles": 4534
+      }
+    ],
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "excludedReason": "Exploded duplicate shell pieces, 2412 + 2122 triangles, accompanying the complete assembled 4534-triangle component. The assembled component is retained in full.",
+    "transform": {
+      "subtractOriginMm": [
+        0.013002872467041016,
+        4.013002872467041,
+        1.1999999284744263
+      ],
+      "axes": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "scale": 1
+    },
+    "nativeAssemblyNote": "No shell cut, independent shell alignment or scaling; the assembly bounding-box centre is the single origin."
+  },
+  "dimensions": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-ToF4M/img-0c360975-630d-412d-a109-8f9f7e672f85.jpg",
+    "sha256": "61a719ce9529adc62ffb00e9551688d5913f2deef37b0b4f518b46e7e065a2b4",
+    "normalizedMm": [
+      24,
+      32,
+      8
+    ],
+    "vendorOrderMm": [
+      32,
+      24,
+      8
+    ],
+    "mountingHoleCentersMm": [
+      [
+        -8,
+        -4
+      ],
+      [
+        8,
+        -4
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "groveFaceMm": [
+      10,
+      5.2
+    ]
+  },
+  "sensorPackage": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-ToF4M/VL53L1CXV0FY.PDF",
+    "sha256": "9b8aa178415b41422b9f3129656e59a93a8789f24d8abb4f6f3d0c4055ab7857",
+    "document": "ST VL53L1X DocID031281 Rev 2, February 2018, pages 1, 4 and 25, figure 18",
+    "envelopeMm": [
+      4.9,
+      2.5,
+      1.56
+    ],
+    "receiverLensDiameterMm": 0.85,
+    "emitterApertureDiameterMm": 0.7,
+    "invisibleEmitterNm": 940,
+    "notRedistributed": true,
+    "inferred": "Installed Z, shallow filter wells, visible filter color and pane thickness, lens/emitter depths and physical contacts are appearance reconstructions."
+  },
+  "schematic": {
+    "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/626/UNIT-ToF4M.pdf",
+    "sha256": "97aa841d6ccba1ed4b58621d11e7d3bbb52e5c9fc6de76b4736971532817663a",
+    "confirmed": "U1 VL53L1CXV0FY/1; U2 HT7533; R1-R4 pullups; C1-C4 bypass capacitors; J1 Grove I2C",
+    "notRedistributed": true
+  },
+  "appearance": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-ToF4M/img-b393dca4-9143-4409-8753-0a776b8fe2a2.webp",
+      "sha256": "4c424f8b6bb93fa658008ff93153a458f2a277afdaaa4a03a414d458102f1686",
+      "role": "Exact-SKU exterior reference; original not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-ToF4M/img-bb6247a0-82d1-4060-8725-b230c2affcae.webp",
+      "sha256": "892bc76fa4c54c647384855670bfd7bb872048d98578d8aef0ea537050fe25ee",
+      "role": "Exact-SKU exterior reference; original not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-ToF4M/img-71b71b77-67c9-4627-bc97-49017d1f4542.webp",
+      "sha256": "6b5e110122333ebc703d81fec4b5eefe37184a7d1052bdec21e048787ef8f9c4",
+      "role": "Exact-SKU exterior reference; original not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-ToF4M/img-06538272-4432-4bff-8a33-d06e7c7cbb6b.webp",
+      "sha256": "649dea09d78186ba227a2329ab8e4ea3a03c66162f28e764bd1d85e3b002940a",
+      "role": "Exact-SKU exterior reference; original not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-ToF4M/img-a19a8345-fd99-44d1-8fb5-3af26261688a.webp",
+      "sha256": "7ac292182d3ffda6014bd74aca5b2fb939a339271aa9ef8ec7c39265188f45bf",
+      "role": "Exact-SKU exterior reference; original not redistributed"
+    }
+  ],
+  "inferred": [
+    "Concealed PCB outline, thickness and installed Z; component placement; not production assembly CAD.",
+    "Filter well dimensions/color, physical passive emitter and receiver depth.",
+    "Grove internal walls, contacts and tails; screw shank."
+  ],
+  "runtimeSha256": {
+    "src/units/tof4m/assembly.js": "8c782c649fd95fd9790173a872d9ac61caaf27b7740953445a8966aeba3163cd",
+    "src/units/tof4m/cad-map.json": "ad785b94cc76cf7ea94eff4882875d5f1df0f31c3e0f39f5aeae46ba01cd7fd1",
+    "src/units/tof4m/dimensions.js": "d2d22dbc2f78a7317b40bff7a4d2ecf43562d7cd47689b1ab06edac197721b72",
+    "src/units/tof4m/geometry-data.js": "a95001e8e0289d3393089f5edc5046134910ae564b7d698a87794e8f024d6b67",
+    "src/units/tof4m/index.js": "7427bb71fc81e801853bbda77fb64ba5297d30f594bbaed4810a9fbcb9256ad6",
+    "src/units/tof4m/reference-back.png": "e89fc122d5a609093d7ad9ce7d2704e5acbd2a8ce3348e5e8ef7db342906862b",
+    "src/units/tof4m/stickers.js": "18c21cad04ba5db8c60924bda79ed486f2b91d40be3fa5674f8903df079fd46e"
+  },
+  "artwork": {
+    "status": "reference-redraw-integrated",
+    "kind": "reference-redraw",
+    "sourcePhotographs": [
+      {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-ToF4M/img-bb6247a0-82d1-4060-8725-b230c2affcae.webp",
+        "sha256": "892bc76fa4c54c647384855670bfd7bb872048d98578d8aef0ea537050fe25ee",
+        "role": "Exact-SKU official product photograph; visual transcription reference only; no photo pixels redistributed"
+      }
+    ],
+    "finalRasters": [
+      {
+        "path": "src/units/tof4m/reference-back.png",
+        "sha256": "e89fc122d5a609093d7ad9ce7d2704e5acbd2a8ce3348e5e8ef7db342906862b",
+        "sizePx": [
+          1024,
+          768
+        ],
+        "artworkKind": "reference-redraw"
+      }
+    ],
+    "privateSourcesUsed": false,
+    "photosRedistributed": false,
+    "visualVerification": null
+  },
+  "stickerVerification": "docs/research/tof4m/sticker-check.json"
+}

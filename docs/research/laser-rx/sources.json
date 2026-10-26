@@ -1,0 +1,219 @@
+{
+  "id": "laser-rx",
+  "sku": "U065",
+  "officialDocs": "https://docs.m5stack.com/en/unit/laser-rx",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "query": "Unit Laser RX U065 接收 外壳尺寸 接收头 LED Grove 原理图 结构",
+    "rawResponseDistributed": false,
+    "result": "Exact U065 subset gives 32×24×8 mm vendor order, ISO103, GND/5V/NC/DOUT Grove, matching photos, dimension drawing, schematic and structure. Schematic directly inspected: P1 Header3, R1 10K, R2 20K, C2 100nF and J1 GROVE_IO; no independent indicator LED."
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/laser-rx/laser-rx_06.webp",
+    "sha256": "a7a46c3388dc1f89c7862ead6720deabce9c42ac2d77cbe38c0c330ea319d173"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U084_Unit_Laser_RX/Structures/Unit_Laser_RX.stl",
+      "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+      "gitBlob": "d586986d364941c4fd66ca5f85645fdfed2b4f72",
+      "sha256": "8813adc77f4b54b93dc3d961357c4f807ae26a50e6a02b0fab39f1c21ed5d9b0",
+      "license": "MIT; retain licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/laser-rx/laser-rx_01.webp",
+      "sha256": "69154bb687de5454c73cb4c7f66f1d67ac1010f8e81c8d28c6f63b4de827cf51"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/laser-rx/laser-rx_02.webp",
+      "sha256": "df1c7dbef2243f986283836fdca172edb5feb8c07394a75653e72d1e50984631"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/843/U065-01.webp",
+      "sha256": "4863bab1b8cf3151e5c62887e988ac5bd553ba093f376209de0fd23aae3475b4"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/laser-rx/laser-rx_05.webp",
+      "sha256": "3f3e961f466de5fdc75d6a2e0a34b4cf0ff728055d66e945f43fe2af306c96ad"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/laser-rx/laser-rx_06.webp",
+      "sha256": "a7a46c3388dc1f89c7862ead6720deabce9c42ac2d77cbe38c0c330ea319d173"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/laser-rx/laser-rx_sch_01.webp",
+      "sha256": "35fefbbab46ae4201891214daa527d56e3fdbacbaa6d567e9b13bbd2215d48d9"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/843/U065_Model_Size_sch_01.png",
+      "sha256": "87cf777e0b52ed3831f71f07fb35192ba1a3867a63c765f041c3445cbd1fb9cf"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      441.2688293457031,
+      313.2234802246094,
+      -19
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "triangles": 3556,
+    "method": "One common rigid translation, scale 1; no shell cuts, hole filling or per-part alignment",
+    "reason": "Original complete assembled shell component 0 retained using one translation, without scaling, cuts, fills or independently aligning subparts. Components 1 and 2 are displaced individual copies; triangles 1810 + 1746 = full component 3556."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      32,
+      8
+    ],
+    "vendorDimensionOrderMm": [
+      32,
+      24,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      32,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24,
+      32,
+      8.000000095367431
+    ],
+    "mountingHoleCentersMm": [
+      [
+        -8,
+        -4
+      ],
+      [
+        8,
+        -4
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "receiverApertureDiameterMm": 3,
+    "nativeBoreFacetingNote": "Original triangles retained and FrontSide walls sampled at native rear mounting and top receiver bore sections; no synthetic replacement."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "sources": "docs/research/laser-rx/artwork.json",
+    "originalsDistributed": false,
+    "files": [
+      {
+        "path": "src/units/laser-rx/reference-redraw-front.png",
+        "sha256": "7b133c1bbf31cfe26db9a9bd1fd2af55ac0a70cc4b3dd4bf2445666bd8f0b869",
+        "pixels": [
+          2400,
+          1680
+        ],
+        "sizeMm": [
+          20,
+          14
+        ],
+        "positionMm": [
+          0,
+          7,
+          3.8
+        ],
+        "face": "front",
+        "method": "printedArtwork",
+        "artworkKind": "reference-redraw",
+        "target": "Laser RX complete native assembled shell",
+        "reference": {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/laser-rx/laser-rx_06.webp",
+          "sha256": "a7a46c3388dc1f89c7862ead6720deabce9c42ac2d77cbe38c0c330ea319d173"
+        }
+      },
+      {
+        "path": "src/units/laser-rx/reference-redraw-back.png",
+        "sha256": "6e3aa0c144abdb14270a9b73dbd13a8632f28a0a99e0d74f44cb59e5bf45e248",
+        "pixels": [
+          1944,
+          1464
+        ],
+        "sizeMm": [
+          16.2,
+          12.2
+        ],
+        "positionMm": [
+          0,
+          7,
+          -3.8
+        ],
+        "face": "back",
+        "method": "printedArtwork",
+        "artworkKind": "reference-redraw",
+        "target": "Laser RX complete native assembled shell",
+        "reference": {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/laser-rx/laser-rx_02.webp",
+          "sha256": "df1c7dbef2243f986283836fdca172edb5feb8c07394a75653e72d1e50984631"
+        }
+      }
+    ]
+  },
+  "runtimeFiles": [
+    {
+      "path": "src/units/laser-rx/assembly.js",
+      "sha256": "372889b55a0fd74a6c7c96682fa312a4fd49b5f7863ec0340fc9c7c3ce82062b"
+    },
+    {
+      "path": "src/units/laser-rx/cad-map.json",
+      "sha256": "c5342366db2a4c78d56f34bfaa96b8e8c98bfcdee05b72203103e523b5813790"
+    },
+    {
+      "path": "src/units/laser-rx/dimensions.js",
+      "sha256": "3457ff9c3af89efe3cabb256dd0035d84328885525dfcf927d5d2ca5c393bdab"
+    },
+    {
+      "path": "src/units/laser-rx/geometry-data.js",
+      "sha256": "37f43ff81fb33b6839f826974a1dca2cd6c8fdf64e251d25c49c41c6ebb06434"
+    },
+    {
+      "path": "src/units/laser-rx/index.js",
+      "sha256": "9faf0f297a0ea346b79e463e1f6aac9f192be795d62a2bff77d52c7e82c1c8cc"
+    },
+    {
+      "path": "src/units/laser-rx/reference-redraw-back.png",
+      "sha256": "6e3aa0c144abdb14270a9b73dbd13a8632f28a0a99e0d74f44cb59e5bf45e248"
+    },
+    {
+      "path": "src/units/laser-rx/reference-redraw-front.png",
+      "sha256": "7b133c1bbf31cfe26db9a9bd1fd2af55ac0a70cc4b3dd4bf2445666bd8f0b869"
+    },
+    {
+      "path": "src/units/laser-rx/stickers.js",
+      "sha256": "7d4fbfc16751e82e2db22ac2e2a357811f9286d51132ab748f0a4566aae51764"
+    }
+  ],
+  "inferences": [
+    "PCB outline/thickness/plane, concealed ISO103 package profile/depth/tint, lead bends, passive XYZ, screw shank and Grove interior depth/contact geometry are visual reconstruction. No populated production assembly or manufacturing-fit claim.",
+    "ISO103 is identified by exact U065 product documentation; original schematic represents it as P1 Header3. The receiving surface is physical dark geometry and never emits light. No visible indicator LED or optical emitter is fabricated.",
+    "Sensor is a passive visual anchor. No light, laser, beam, reception, illumination, optical coupling, sampling, communication, waveform, digital output, GPIO, firmware or electrical simulation. No buttons or moving joints."
+  ]
+}

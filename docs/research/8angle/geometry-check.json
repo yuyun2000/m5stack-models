@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-10-26T06:51:55.359Z",
+  "status": "pass",
+  "scope": "Limited local construction/API/motion smoke; no browser, hardware or exhaustive physical fit verification",
+  "sku": "U154",
+  "meshCount": 242,
+  "rays": 23,
+  "visualEnvelopeMm": [
+    24,
+    128,
+    23.000000011920932
+  ],
+  "channels": 8,
+  "finiteRangeDeg": [
+    -140,
+    140
+  ],
+  "latchingSwitches": 1,
+  "externalRgb": 9,
+  "geometryResourcesDisposedOnce": 243,
+  "checks": [
+    "finite assembled geometry and nominal envelope",
+    "native mounting bores plus PCB clearances",
+    "FrontSide central PCB bore wall",
+    "recessed physical Grove cavity and PCB service aperture",
+    "nine physical recessed light pipes",
+    "eight independent limited rotary joints without fictitious push controls",
+    "fixed shell/PCB/potentiometer packages remain stationary",
+    "stable two-position switch",
+    "external RGB command only",
+    "nested Grove attach/pose/cable/rotary/detach",
+    "owned geometry disposal once"
+  ]
+}

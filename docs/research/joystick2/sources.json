@@ -1,0 +1,193 @@
+{
+  "product": "Unit Joystick2",
+  "sku": "U024-V2",
+  "retrievedAt": "2026-10-26",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_Joystick2",
+  "officialCad": {
+    "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U024-V2_Unit_Joystick2/Structures/Unit_Joystick2.stl",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "gitBlob": "429ac18dcc4e6f4a41e1ed6ad55a51562b872804",
+    "sha256": "5c234a2cfb178d27e541abc9085c8d62d850e0de0c87d73e197155fcfd36783c",
+    "license": "MIT",
+    "selectedComponents": [
+      {
+        "index": 0,
+        "name": "Joystick2 native rear shell"
+      },
+      {
+        "index": 3,
+        "name": "Joystick2 native front shell"
+      },
+      {
+        "index": 4,
+        "name": "Joystick2 native moving thumb cap"
+      },
+      {
+        "index": 6,
+        "name": "Joystick2 native RGB light pipe"
+      }
+    ],
+    "excludedComponents": [
+      1,
+      2,
+      5,
+      7
+    ],
+    "excludedReason": "Laterally displaced duplicate rear/front shells, thumb cap and light pipe",
+    "transform": {
+      "subtractOriginMm": [
+        20.71292781829834,
+        20.965023070573807,
+        -19.950000762939453
+      ],
+      "axes": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "scale": 1
+    },
+    "nativeAssemblyNote": "Retain native assembled rear/front, cap and light-pipe pair with one shared translation. The other four components are laterally displaced duplicates. No shell scaling, cuts or independent re-alignment. Native body envelope is 13 mm deep, compared with 12 mm body in drawing; full cap-to-rear envelope is 23.87865 mm versus nominal 23.9 mm. Keep source geometry unchanged."
+  },
+  "dimensions": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-JoyStick2/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+    "sha256": "2acf99dafc31548996cd62313aa34252a006be1559ef7209b4be5af29997ce2b",
+    "officialListingMm": [
+      40,
+      24,
+      23.9
+    ],
+    "normalizedPortraitMm": [
+      24,
+      40,
+      23.9
+    ],
+    "nativeShellBodyDepthMm": 13,
+    "drawingShellBodyDepthMm": 12,
+    "nativeFullEnvelopeMm": [
+      24.000001907348633,
+      40,
+      23.87864875793457
+    ],
+    "mountingHoleDiameterMm": 4.85,
+    "mountingHoleCentersMm": [
+      [
+        -8,
+        -8
+      ],
+      [
+        8,
+        -8
+      ]
+    ],
+    "capDiameterMm": 20,
+    "groveFaceMm": [
+      10,
+      5.2
+    ]
+  },
+  "controls": {
+    "official": "Hall electromagnetic JH16 X/Y stick tilt, Z press, one WS2812C RGB LED",
+    "joints": [
+      {
+        "id": "tilt-x",
+        "axis": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "tilt-y",
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      }
+    ],
+    "visualRangeDeg": [
+      -18,
+      18
+    ],
+    "pivotMm": [
+      -0.013002395629882812,
+      7.986999481916428,
+      5.5
+    ],
+    "button": {
+      "id": "press",
+      "travelMm": 0.4,
+      "axis": [
+        0,
+        0,
+        -1
+      ]
+    },
+    "led": "rgb",
+    "evidenceBoundary": "Official photos and product establish real controls; rotation axes are model axes, not ADC mapping. Tilt limits, installed pivot and travel are appearance approximations, not measured manufacturing dimensions or hardware calibration. Cap, shaft and visible gimbal move; package, PCB, Grove and native RGB light pipe stay fixed. No Hall sensing, ADC, registers, GPIO, firmware, electrical behavior or I2C model."
+  },
+  "appearance": [
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-JoyStick2/4.webp",
+      "sha256": "f673341474ab151c0542219b5609e47457133f8971d6d681556821254a676df5",
+      "role": "Same-SKU official appearance reference; not redistributed"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-JoyStick2/5.webp",
+      "sha256": "37765aa7eca4e1c4ac1598d907c1d6fde276c385acb9cbc9f1e35028b5385841",
+      "role": "Same-SKU official appearance reference; not redistributed"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-JoyStick2/6.webp",
+      "sha256": "0e7dd6f14d3799ac6d42f2eeaa3b2660b3ce8e7fa73d95e4b11256fb0842706b",
+      "role": "Same-SKU official appearance reference; not redistributed"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-JoyStick2/8.webp",
+      "sha256": "95b1e1a4a40c8556093ecedbb29a1e223c7aef04d92d761c811c81505e66f6ea",
+      "role": "Same-SKU official appearance reference; not redistributed"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-JoyStick2/11.webp",
+      "sha256": "5a0850d6211d633972ea87b3659f0f9d4ea8c2299064a8d3798d74e95839cf6c",
+      "role": "Same-SKU official appearance reference; not redistributed"
+    }
+  ],
+  "inferred": [
+    "PCB outline/thickness/installed Z, mounting-boss open relief, screw and solder clearance",
+    "Concealed JH16 Hall joystick fixed package, metal base, ball gimbal, shaft, motion pivot and viewer-only range/travel",
+    "Concealed STM32, WS2812C body, passives, screw shank",
+    "Grove internal walls, contacts, latch and tails"
+  ],
+  "artwork": {
+    "status": "deferred",
+    "privateSourcesUsed": false,
+    "photosRedistributed": false
+  },
+  "runtimeSha256": {
+    "src/units/joystick2/assembly.js": "f50a7ac86e68e97bc16a31a17366fe769f342aad2bd887c34913dece0e7be9f3",
+    "src/units/joystick2/cad-map.json": "2c8821aaa6e100516f13a68237fa03005bc21da30060f0cc3951abc1bae1d639",
+    "src/units/joystick2/dimensions.js": "c84fbb20fad5421e7a92ef75331312d7d69607ad04faea23372a53f076728bab",
+    "src/units/joystick2/geometry-data.js": "ec29e9ea6ad11bf98a7a1f35bc876bcc9314528d1f92fc674ad2cb59b032c9b3",
+    "src/units/joystick2/index.js": "3c9a62f8ebf3bec17ae82bf37c7ed22811bf70b49c0004c50868d8cc0c5853a9"
+  },
+  "verification": {
+    "smoke": "docs/research/joystick2/smoke.json",
+    "visual": null,
+    "stage": "modeled",
+    "limitations": "Necessary local smoke only; no browser acceptance, real-device testing, calibrated joint limits or production assembly fit."
+  }
+}

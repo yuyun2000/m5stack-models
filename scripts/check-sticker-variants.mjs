@@ -4,7 +4,7 @@ import * as THREE from 'three';
 import {loadModel,loadGroveModule} from '../src/loaders.js';
 import {Device,Port} from '../src/core/index.js';
 
-const prints=model=>{const out=[];model.root.traverse(o=>{if(o.userData.artworkKind?.startsWith('official-raster'))out.push(o);});return out;};
+const prints=model=>{const out=[];model.root.traverse(o=>{if(o.userData.role==='printed-artwork'&&(o.userData.artworkKind?.startsWith('official-raster')||o.userData.artworkKind==='reference-redraw'))out.push(o);});return out;};
 const api=model=>model.list().map(c=>[c.id,c.kind]).sort((a,b)=>a[0].localeCompare(b[0]));
 
 export async function checkStickerVariants(){
@@ -14,7 +14,7 @@ export async function checkStickerVariants(){
  const catalog=JSON.parse(await fs.readFile(new URL('../catalog/products.json',import.meta.url),'utf8')),cases=[];
  for(const product of catalog.products.filter(p=>p.artwork?.variants)){
   for(const configuration of product.configurations??[{id:'default',options:{}}]){
-   const options=configuration.options??{},enabled=product.artwork.status==='official-raster-integrated'||options.stickerVariant==='education-cn';
+   const options=configuration.options??{},enabled=['official-raster-integrated','reference-redraw-integrated','mixed-raster-integrated'].includes(product.artwork.status)||options.stickerVariant==='education-cn';
    const model=await loadModel(product.id,options),without=await loadModel(product.id,{...options,artwork:false});
    try{
     model.root.updateMatrixWorld(true);without.root.updateMatrixWorld(true);

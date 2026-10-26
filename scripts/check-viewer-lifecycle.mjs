@@ -20,6 +20,7 @@ async function fixture(){
  const {Button}=await import('../src/core/components/Button.js');
  const {Port}=await import('../src/core/components/Port.js');
  const {VisualJoint}=await import('../src/core/components/VisualJoint.js');
+ const {VisualSlide}=await import('../src/core/components/VisualSlide.js');
  let clock=0,sequence=0;const frames=new Map(),observers=[],renderers=[];
  class Target{
   constructor(){this.listeners=new Map();this.style={};this.tagName='DIV';}
@@ -142,6 +143,17 @@ async function fixture(){
  // standalone Alt shortcut unless this viewer's canvas is actually focused.
  const globalViewer=new DeviceViewer({clientWidth:500,clientHeight:400,appendChild(){}},{environment:false,shadows:false,ground:false,keyboard:true});globalViewer.mount(card,{fit:false});document.activeElement=new Target();blocked('AltLeft with unfocused global-keyboard viewer','AltLeft',{altKey:true,target:document.activeElement});globalViewer.dispose();card.dispose();
  checks.push('actual CardKB AltLeft Sym keyboard stroke and exact release','standalone mapped Alt requires focused canvas and a real button','modifier chords and editable/unfocused targets preserve browser defaults','Alt hold cancels without click on blur or unmount');
+ // Real picking must pass the current world ray even after the captured
+ // pointer leaves the moving cap; otherwise a physical fader sticks in place.
+ const slideHost=new Device(),slide=slideHost.add(new VisualSlide({id:'slider',mesh:mesh(),rangeMm:[-17.5,17.5]})),slideViewer=makeViewer(),slideEvents=[];
+ slideHost.on('input',event=>slideEvents.push(event));slideViewer.mount(slideHost,{fit:false});
+ slideHost.root.rotation.set(0,0,0);slideHost.root.updateMatrixWorld(true);
+ slideViewer.camera.position.set(0,0,80);slideViewer.camera.lookAt(0,0,0);slideViewer.camera.updateMatrixWorld(true);slideViewer.camera.updateProjectionMatrix();
+ const screen=(y)=>{const p=new THREE.Vector3(0,y,.5).project(slideViewer.camera);return {clientX:(p.x+1)*250,clientY:(1-p.y)*200};};
+ slideViewer.renderer.domElement.dispatch('pointerdown',{pointerId:31,button:0,...screen(0)});assert.equal(slide.getState().dragging,true);
+ slideViewer.renderer.domElement.dispatch('pointermove',{pointerId:31,...screen(12)});assert.ok(Math.abs(slide.positionMm-12)<1e-6,'actual Viewer ray reaches the slide after the pointer leaves its cap');
+ window.dispatch('blur');assert.equal(slide.getState().dragging,false);assert.ok(slideEvents.at(-1).cancelled);assert.ok(Math.abs(slide.positionMm-12)<1e-6,'blur leaves the physical slider at its stable position');
+ slideViewer.dispose();slideHost.dispose();checks.push('actual ray-picked slider follows captured pointer beyond cap and cancels on blur without springing back');
  assert.ok([...owned.values()].every(count=>count===1),'all fixture-owned geometry/material released exactly once');assert.ok(renderers.every(r=>r.disposals===1&&r.domElement.removed&&r.domElement.listenerCount()===0),'all renderer/canvas/listener lifetimes end exactly once');assert.ok(observers.every(o=>o.disconnected));assert.equal(window.listenerCount(),0);assert.equal(document.listenerCount(),0);assert.equal(frames.size,0,'all Viewer RAF callbacks cancelled');
  return {checkedAt:new Date().toISOString(),status:'pass',checks,ownedResources:owned.size,rendererInstances:renderers.length,oldNestedCancellationPath:'left/next/press',singleTickDegreesPer100msAt60Rpm:36,cardkbKeyboard:keyboard,scope:'Actual DeviceViewer lifecycle/input/RAF code and CardKB shortcuts with an isolated no-GPU renderer and DOM fixture; no browser pixels, private research, network, firmware or hardware simulation'};
 }

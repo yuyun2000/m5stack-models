@@ -1,0 +1,91 @@
+{
+  "checkedAt": "2026-10-26T07:34:28.264Z",
+  "status": "pass",
+  "scope": "Necessary finite construction, ventilation/package, connector, attachment/pose/detach/disposal smoke; no browser, hardware, I2C or gas/temperature/humidity verification",
+  "meshes": 69,
+  "triangles": 18248,
+  "visualEnvelopeMm": [
+    24,
+    48,
+    16
+  ],
+  "cadEnvelopeMm": [
+    24,
+    48,
+    16
+  ],
+  "mountingRays": 10,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        8,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 20,
+      "purpose": "Central ventilation aperture has physical SCD40 membrane behind it"
+    },
+    {
+      "origin": [
+        8,
+        8,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 26,
+      "purpose": "Off-centre ventilation opening ends at real PCB or shell interior"
+    },
+    {
+      "origin": [
+        0,
+        -40,
+        -2.9
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 24,
+      "purpose": "Grove mouth ends at connector contact or rear wall"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Central ventilation aperture has physical SCD40 membrane behind it",
+      "hit": "SCD40 physical white protection membrane",
+      "distanceMm": 17.480000001788138
+    },
+    {
+      "purpose": "Off-centre ventilation opening ends at real PCB or shell interior",
+      "hit": "CO2 native assembled double shell",
+      "distanceMm": 12
+    },
+    {
+      "purpose": "Grove mouth ends at connector contact or rear wall",
+      "hit": "Grove rear wall",
+      "distanceMm": 21.950000011920928
+    }
+  ],
+  "sensorPackage": "physical substrate, rounded metal can, white membrane and perimeter contacts",
+  "grovePins": [
+    "GND",
+    "5V",
+    "SDA",
+    "SCL"
+  ],
+  "visualAnchor": "sensor",
+  "controls": 0,
+  "groveAttachPoseNestedDetach": "pass",
+  "disposedResources": 111,
+  "disposeEvents": 176
+}

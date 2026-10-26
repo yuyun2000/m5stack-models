@@ -1,0 +1,113 @@
+{
+  "checkedAt": "2026-10-26T08:28:01.074Z",
+  "status": "pass",
+  "scope": "Necessary finite geometry, complete source shell selection, mounting/PCB bore walls, actual jack/card/Grove recesses and backing, passive API and fixed-blue output, Grove attachment/four-wire pose/detach/disposal smoke. No browser, hardware, audio, firmware, card/filesystem, electrical or production-fit verification.",
+  "meshes": 89,
+  "triangles": 11322,
+  "visualEnvelopeMm": [
+    24,
+    48.40000001192092,
+    8.000000096857548
+  ],
+  "cadEnvelopeMm": [
+    24,
+    48,
+    8
+  ],
+  "mountingRays": 10,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        16,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 20,
+      "purpose": "Native front jack recess backed by real PJ-342 package"
+    },
+    {
+      "origin": [
+        5,
+        12,
+        -20
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 20,
+      "purpose": "Native back card-seat window backed by real folded metal roof"
+    },
+    {
+      "origin": [
+        0,
+        -30,
+        1.4
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 21,
+      "purpose": "Grove mouth has real recessed contacts and socket rear wall"
+    },
+    {
+      "origin": [
+        5.5,
+        22.5,
+        -20
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 20,
+      "purpose": "Native upper shell assembly relief retains inner wall with nearby PCB"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Native front jack recess backed by real PJ-342 package",
+      "hit": "PJ-342 body and true 3.5mm bore",
+      "distanceMm": 16.1
+    },
+    {
+      "purpose": "Native back card-seat window backed by real folded metal roof",
+      "hit": "microSD folded metal roof",
+      "distanceMm": 15.999999998509885
+    },
+    {
+      "purpose": "Grove mouth has real recessed contacts and socket rear wall",
+      "hit": "Grove rear wall",
+      "distanceMm": 11.950000011920928
+    },
+    {
+      "purpose": "Native upper shell assembly relief retains inner wall with nearby PCB",
+      "hit": "AudioPlayer complete native front shell",
+      "distanceMm": 18.80000007152557
+    }
+  ],
+  "audioSpringContacts": 3,
+  "sdSpringContacts": 8,
+  "buttonCount": 0,
+  "leds": [
+    "busy-led"
+  ],
+  "grovePins": [
+    "GND",
+    "5V",
+    "UART_RX",
+    "UART_TX"
+  ],
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 140,
+  "disposeEvents": 223
+}

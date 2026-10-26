@@ -1,0 +1,118 @@
+{
+  "id": "mini-scales",
+  "sku": "U177",
+  "retrievedAt": "2026-10-26",
+  "kind": "reference-redraw",
+  "originalsDistributed": false,
+  "method": "New text and shapes code-drawn from exact official product photographs. No photographic pixels, crop, private original or vector source distributed.",
+  "sources": [
+    {
+      "face": "front",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Mini%20Scales/img-d8315796-ac9f-413f-98ee-b9f7ea74eaf3.webp",
+      "sha256": "b37cb12eb214b5b2921b8bfa0a3833b0660114a9bdfc831480c097f2edcf5bc4"
+    },
+    {
+      "face": "back",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Mini%20Scales/img-7291873c-48bf-413f-a218-156c069e2141.webp",
+      "sha256": "549b3ded2d337ee8833e150660e7a7eb321e5d9e8ed3468591f774c3e05ae3f7"
+    },
+    {
+      "face": "end-arrow",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-Mini%20Scales/img-b9cc6e44-bd3c-4256-bd72-5fb45423483c.webp",
+      "sha256": "5b29c0cdd67719164896225d4261425e86ddac9a028e9ba0ddb717234eac90e6"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/mini-scales/reference-redraw-front.png",
+      "sha256": "8256d1b3ffd950d58d3262689044c379ed4c3190ff8e8b538fdf2f5146ff471e",
+      "pixels": [
+        1224,
+        2184
+      ],
+      "sizeMm": [
+        10.2,
+        18.2
+      ]
+    },
+    {
+      "path": "src/units/mini-scales/reference-redraw-back.png",
+      "sha256": "c038a4338951842b43d278186481753d1c2500f87338d10e735d5868d3469315",
+      "pixels": [
+        2544,
+        3540
+      ],
+      "sizeMm": [
+        21.2,
+        29.5
+      ]
+    },
+    {
+      "path": "src/units/mini-scales/reference-redraw-end.png",
+      "sha256": "a5c869e1d194770c097fc93c1398769f8a51c2c6987b4db18584add814416c37",
+      "pixels": [
+        744,
+        384
+      ],
+      "sizeMm": [
+        6.2,
+        3.2
+      ]
+    }
+  ],
+  "registration": [
+    {
+      "face": "front",
+      "sizeMm": [
+        10.2,
+        18.2
+      ],
+      "positionMm": [
+        0,
+        -3.6,
+        8.812
+      ],
+      "method": "printedFilm",
+      "target": "Mini Scales native weighing platform",
+      "note": "Continuous MAX5KG label spans existing native platform service openings."
+    },
+    {
+      "face": "back",
+      "sizeMm": [
+        21.2,
+        29.5
+      ],
+      "positionMm": [
+        0,
+        1.75,
+        -8.812
+      ],
+      "method": "printedFilm",
+      "target": "Mini Scales native lower housing",
+      "note": "Continuous T-shaped label has transparent die-cut exterior and spans the native short-neck recess."
+    },
+    {
+      "face": "bottom/end",
+      "sizeMm": [
+        6.2,
+        3.2
+      ],
+      "positionMm": [
+        0,
+        -19.72,
+        5.6
+      ],
+      "method": "printedArtwork",
+      "target": "Mini Scales native weighing platform"
+    }
+  ],
+  "coverage": "Weighing-platform MAX5KG label, rear RGB/BTN/ADC/controller/protocol diagram and actual Grove-end blue-arrow label.",
+  "remainingKnownPrintedFaces": [],
+  "limits": [
+    "Raster colours, typography, line shapes and physical label sizes/positions are photo/native-recess estimates, not production-print measurements.",
+    "Continuous adhesive film is used only where the exact photograph shows the real label crossing native service openings; all original physical geometry remains intact and available with artwork:false.",
+    "Molded lettering is retained as existing geometry; no unreadable package stamps or unknown legends are invented.",
+    "No exhaustive browser pixel inspection; necessary registration, exact original physical/control/terminal-variant and Grove checks only."
+  ],
+  "rights": "M5Stack product marks and original printed designs retain their respective rights; these reference reconstructions are not production source artwork."
+}

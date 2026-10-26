@@ -1,0 +1,123 @@
+{
+  "checkedAt": "2026-10-26T09:34:03.317Z",
+  "status": "pass",
+  "scope": "Necessary finite geometry, unchanged full original assembled shell, real bores/strap opening/FrontSide PCB hole walls, recessed latch and Grove backing, fixed ceramic/module assembly, passive API, four-wire cable pose/detach/disposal and two PNG registrations. No browser or historical full checks, RF, scan, tag, UART, electrical, hardware or production-fit verification.",
+  "meshes": 60,
+  "triangles": 20935,
+  "visualEnvelopeMm": [
+    48.00001335144043,
+    55.98902130126953,
+    11.507999897003174
+  ],
+  "cadEnvelopeMm": [
+    48.00001335144043,
+    55.98902130126953,
+    11.5
+  ],
+  "mountingRays": 20,
+  "mountingWalls": 16,
+  "strapRays": 15,
+  "pcbHoleWalls": 28,
+  "closureChecks": [
+    {
+      "origin": [
+        -22,
+        -9,
+        -20
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 17,
+      "purpose": "Rear side latch window has recessed carrier PCB backing"
+    },
+    {
+      "origin": [
+        22,
+        -9,
+        -20
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 17,
+      "purpose": "Rear side latch window has recessed carrier PCB backing"
+    },
+    {
+      "origin": [
+        0,
+        21,
+        -20
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "maxDistance": 17,
+      "purpose": "Rear top latch window has recessed carrier PCB backing"
+    },
+    {
+      "origin": [
+        0,
+        -40,
+        -0.75
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 19,
+      "purpose": "Grove mouth has real recessed connector rear wall"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Rear side latch window has recessed carrier PCB backing",
+      "hit": "UHF RFID physical carrier PCB with open mounting relief and true solder bores",
+      "distanceMm": 16.2
+    },
+    {
+      "purpose": "Rear side latch window has recessed carrier PCB backing",
+      "hit": "UHF RFID physical carrier PCB with open mounting relief and true solder bores",
+      "distanceMm": 16.2
+    },
+    {
+      "purpose": "Rear top latch window has recessed carrier PCB backing",
+      "hit": "UHF RFID physical carrier PCB with open mounting relief and true solder bores",
+      "distanceMm": 16.2
+    },
+    {
+      "purpose": "Grove mouth has real recessed connector rear wall",
+      "hit": "Grove rear wall",
+      "distanceMm": 17.950000011920928
+    }
+  ],
+  "artwork": {
+    "panels": 2,
+    "kinds": [
+      "official-vector-raster",
+      "reference-redraw"
+    ],
+    "disabledWithFalse": true,
+    "physicalGeometryInvariant": true
+  },
+  "externalComponents": [
+    "grove",
+    "sensor"
+  ],
+  "grovePins": [
+    "GND",
+    "5V",
+    "RXD",
+    "TXD"
+  ],
+  "nestedGroveAttachPoseDetach": "pass",
+  "disposedResources": 106,
+  "disposeEvents": 158
+}

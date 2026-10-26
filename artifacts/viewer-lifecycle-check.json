@@ -1,0 +1,102 @@
+{
+  "checkedAt": "2026-10-26T10:06:33.211Z",
+  "status": "pass",
+  "checks": [
+    "same Viewer mount idempotence",
+    "nested held key plus pointer cancels at old path before detach",
+    "unrelated host key and sibling pointer remain held",
+    "reuse after nested cancellation",
+    "window blur and hidden document cancel owned sources",
+    "external input source remains owned by its caller",
+    "cross Viewer transfer cancels old owned input and removes subscriptions",
+    "one update owner for continuous rpm",
+    "unmount pauses and remount resumes existing rpm",
+    "synchronous cancelled-up consumer can safely transfer or remount a device",
+    "third Viewer chosen during cancellation wins over the stale outer mount",
+    "cross host module transfer routes cancellation only through old host",
+    "disposing Viewer cannot be revived by cancelled-up and disposal is idempotent",
+    "actual CardKB AltLeft Sym keyboard stroke and exact release",
+    "standalone mapped Alt requires focused canvas and a real button",
+    "modifier chords and editable/unfocused targets preserve browser defaults",
+    "Alt hold cancels without click on blur or unmount",
+    "actual ray-picked slider follows captured pointer beyond cap and cancels on blur without springing back"
+  ],
+  "ownedResources": 20,
+  "rendererInstances": 10,
+  "oldNestedCancellationPath": "left/next/press",
+  "singleTickDegreesPer100msAt60Rpm": 36,
+  "cardkbKeyboard": {
+    "sku": "U035-B",
+    "positiveShortcuts": [
+      {
+        "code": "AltLeft",
+        "target": "key-sym",
+        "travelMm": 0.2,
+        "exactReturn": true
+      },
+      {
+        "code": "KeyQ",
+        "target": "key-q",
+        "travelMm": 0.2,
+        "exactReturn": true
+      },
+      {
+        "code": "F1",
+        "target": "key-fn",
+        "travelMm": 0.2,
+        "exactReturn": true
+      },
+      {
+        "code": "ShiftLeft",
+        "target": "key-shift",
+        "travelMm": 0.2,
+        "exactReturn": true
+      }
+    ],
+    "blockedCases": [
+      "unmapped standalone AltLeft",
+      "AltLeft mapped to a non-button",
+      "unmapped standalone AltRight",
+      "Alt+Q chord",
+      "Meta+Q chord",
+      "Ctrl+Q chord",
+      "Meta+AltLeft chord",
+      "Ctrl+AltLeft chord",
+      "AltLeft in INPUT",
+      "AltLeft in TEXTAREA",
+      "AltLeft in SELECT",
+      "AltLeft in contenteditable",
+      "AltLeft outside focused canvas",
+      "Q outside focused canvas",
+      "unheld AltLeft keyup",
+      "AltLeft with unfocused global-keyboard viewer"
+    ],
+    "cancelActions": {
+      "blur": [
+        {
+          "id": "key-sym",
+          "action": "down",
+          "cancelled": false
+        },
+        {
+          "id": "key-sym",
+          "action": "up",
+          "cancelled": true
+        }
+      ],
+      "unmount": [
+        {
+          "id": "key-sym",
+          "action": "down",
+          "cancelled": false
+        },
+        {
+          "id": "key-sym",
+          "action": "up",
+          "cancelled": true
+        }
+      ]
+    }
+  },
+  "scope": "Actual DeviceViewer lifecycle/input/RAF code and CardKB shortcuts with an isolated no-GPU renderer and DOM fixture; no browser pixels, private research, network, firmware or hardware simulation"
+}

@@ -1,0 +1,46 @@
+{
+  "sku": "U172",
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U172_Unit_ToF4M/Structures/Unit_ToF4M.stl",
+  "gitBlob": "e0847551ad8f3b2f9bc662a08e2b67ebfc2dc81a",
+  "sha256": "f2097c4c2b68b7890c77bc416e788a5adf6185ecb2a06e89fcca1bb48c50baac",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/m5stack/M5_Hardware/blob/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/LICENSE",
+  "selectedComponents": [
+    {
+      "index": 0,
+      "name": "ToF4M native assembled front and rear shells",
+      "triangles": 4534
+    }
+  ],
+  "excludedComponents": [
+    1,
+    2
+  ],
+  "excludedReason": "Exploded duplicate shell pieces, 2412 + 2122 triangles, accompanying the complete assembled 4534-triangle component. The assembled component is retained in full.",
+  "transform": {
+    "subtractOriginMm": [
+      0.013002872467041016,
+      4.013002872467041,
+      1.1999999284744263
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": 1
+  },
+  "nativeAssemblyNote": "No shell cut, independent shell alignment or scaling; the assembly bounding-box centre is the single origin."
+}

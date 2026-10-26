@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-10-26T07:56:43.452Z",
+  "status": "pass",
+  "scope": "Necessary finite construction, unchanged native shells, mounting/screw bores and FrontSide walls, physical package/contact closure, fixed-blue independent LED, optional two removable terminal plugs with eight turning screw heads, nested Grove attachment/four-wire pose/independent detach/resource release only. No browser, electrical, relay switching, production fit, hardware or artwork verification.",
+  "meshes": 84,
+  "triangles": 35292,
+  "cadEnvelopeMm": [
+    24.00001621246338,
+    56.00000762939453,
+    8
+  ],
+  "visualEnvelopeMm": [
+    24.00001621246338,
+    56.00000762939453,
+    19.045000762939452
+  ],
+  "mountingRays": 10,
+  "screwHeads": 8,
+  "closureChecks": [
+    {
+      "purpose": "Channel 1 relay and terminal apertures backed by physical assembly",
+      "relayTopMm": 15,
+      "terminalMouthMm": 10.5,
+      "ledSeatMm": 2.15
+    },
+    {
+      "purpose": "Channel 2 relay and terminal apertures backed by physical assembly",
+      "relayTopMm": 15,
+      "terminalMouthMm": 10.5,
+      "ledSeatMm": 2.15
+    }
+  ],
+  "grovePins": [
+    "GND",
+    "5V",
+    "RELAY-2",
+    "RELAY-1"
+  ],
+  "leds": {
+    "ids": [
+      "led-1",
+      "led-2"
+    ],
+    "color": "#247cff",
+    "fixedColor": true,
+    "independent": true,
+    "defaultOff": true
+  },
+  "optionalTerminalPlugs": 2,
+  "nestedGroveFourWirePoseDetach": "pass",
+  "disposedResources": 205
+}

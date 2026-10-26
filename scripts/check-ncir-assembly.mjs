@@ -88,7 +88,9 @@ export async function checkNCIRAssembly(){
   const model=build(Model),peer=build(Model);native(model);native(peer);
   assert.equal(model.meta.sku,'U028');assert.deepEqual(model.meta.size,[24,32,8.6]);
   assert.equal(model.get('sensor').meta.scope,'no-sensor-behavior');assert.equal(model.list('led').length,0);assert.equal(model.list('joint').length,0);assert.equal(model.update(1/60),false,'NCIR has no autonomous measurement or invented output');
-  model.root.traverse(o=>assert.notEqual(o.userData?.role,'printed-artwork','Artwork is disabled pending original files'));
+  model.root.traverse(o=>{
+   if(o.userData?.role==='printed-artwork')assert.ok(['official-raster','official-raster-film','reference-redraw'].includes(o.userData.artworkKind),'NCIR artwork must be source raster artwork or an identified reference redraw; unclassified photographic patches remain disabled');
+  });
   const a=model.ncirAssembly,b=peer.ncirAssembly;assert.ok(a?.board&&a.window&&a.header&&a.body);
   assert.equal(a.board,model.parts.pcb);assert.equal(a.grovePort,model.port('grove'));assert.equal(a.grove,model.groveSocketAssembly.group);
   const physical=[a.board,a.body,a.window,a.header,...a.leads,...a.insulators,...a.pads,...a.fillets,...a.groveTails,...a.grovePads,...a.groveFillets,...Object.values(model.groveSocketAssembly.parts)];

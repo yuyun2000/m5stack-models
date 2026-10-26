@@ -1,0 +1,85 @@
+{
+  "id": "bytebutton",
+  "sku": "U192",
+  "retrievedAt": "2026-10-26",
+  "kind": "reference-redraw",
+  "originalsDistributed": false,
+  "method": "Fresh code-drawn text/shapes based on exact official-product photographs. No product photograph pixels, crop or vector original used.",
+  "sources": [
+    {
+      "face": "front",
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20ByteButton/8.webp",
+      "sha256": "0fc9e36165abbcd708fd3d7dae7c2e15d3193a85c1eb986e147c7e6819fbdd37"
+    },
+    {
+      "face": "back",
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20ByteButton/9.webp",
+      "sha256": "1a25b7d8ee873ed798295a2dcd11b3dc7089aca03eb4eb9cc98ae399b09033b2"
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/units/bytebutton/reference-redraw-front.png",
+      "sha256": "31571c68392cf67212f0e441eed37a34cfe696f28bf38e45899c8dcd3c344e32",
+      "pixels": [
+        6384,
+        792
+      ],
+      "sizeMm": [
+        53.2,
+        6.6
+      ]
+    },
+    {
+      "path": "src/units/bytebutton/reference-redraw-back.png",
+      "sha256": "1f145955a04d2ce2b093c912f4dc601cff9238e114268f09d7c0416a43ab81c3",
+      "pixels": [
+        2496,
+        6480
+      ],
+      "sizeMm": [
+        20.8,
+        54
+      ]
+    }
+  ],
+  "registration": [
+    {
+      "face": "front",
+      "target": "ByteButton native front shell",
+      "sizeMm": [
+        53.2,
+        6.6
+      ],
+      "positionMm": [
+        -7.05,
+        0,
+        5.85
+      ],
+      "rotationRad": -1.5707963267948966,
+      "depthMm": 0.08
+    },
+    {
+      "face": "back",
+      "target": "ByteButton native rear shell",
+      "sizeMm": [
+        20.8,
+        54
+      ],
+      "positionMm": [
+        0,
+        0,
+        -5.85
+      ],
+      "rotationRad": 0,
+      "depthMm": 0.08
+    }
+  ],
+  "scope": "Printed labels on fixed native shell only. No geometry, control, LED, cable, Port or component API changes.",
+  "limits": [
+    "Colours, typography, dimensions and alignment are reconstructed from product photographs and native label recesses, not production-print data.",
+    "Printed channel 0 is at bottom CH0 (API control 1), and printed 7 at top CH7 (API control 8). Rear table repeats official printed schematic annotations and is not a firmware or wiring implementation.",
+    "No exhaustive browser pixel inspection; necessary support/geometry/control/Grove smoke only."
+  ],
+  "rights": "Product marks and original printed designs retain their respective rights. These are reference reconstructions, not official production artwork."
+}

@@ -1,0 +1,191 @@
+{
+  "product": "Unit CAN",
+  "sku": "U085",
+  "retrievedAt": "2026-10-26",
+  "officialDocs": "https://docs.m5stack.com/en/unit/can",
+  "officialMCP": {
+    "query": "Unit CAN U085 dimensions terminal connector MCP2515",
+    "rawResponseDistributed": false,
+    "result": "Confirms exact U085 CA-IS3050G isolated CAN transceiver (not MCP2515), 56×24×10.2 mm, white power LED, four-pole JP1 H/L/NC/SHIELD, supplied HT3.96-4P screw plug and separate 120R resistor, Grove CAN_TX/CAN_RX, official CAD and dimensional drawing."
+  },
+  "officialCad": {
+    "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U085_Unit_CAN/Structures/Unit_CAN.stl",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "gitBlob": "0eb07f39b2b571c6fbd37703f2bd778108dda048",
+    "sha256": "c61de23c40f45b9b2699a12d0fe1456b461d4fe1def9bfb9393486a0f2c81c62",
+    "origin": [
+      0,
+      28,
+      -4
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "parts": [
+      {
+        "component": 0,
+        "name": "CAN native rear shell",
+        "material": "shell"
+      },
+      {
+        "component": 2,
+        "name": "CAN native front shell",
+        "material": "shell"
+      }
+    ],
+    "excludedComponents": [
+      1,
+      3
+    ],
+    "notes": "Keep complete coincident assembled shell components 0 and 2, including LEGO bosses, terminal/Grove apertures, LED slot and molded ribs. Components 1 and 3 are exploded duplicates. One common translation X=rawX,Y=rawY-28,Z=rawZ+4; no scaling, cutting, filling or independent shell transforms."
+  },
+  "dimensions": {
+    "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/839/U085_Model_Size.jpg",
+    "sha256": "9a9f09918d22d8ea79572ddc396b9fb4d3c6d6a4d4b0acc5fa64ea3cf9d06993",
+    "normalizedMm": [
+      24,
+      56,
+      10.2
+    ],
+    "mountingHoleDiameterMm": 4.85,
+    "mountingHoleCentersMm": [
+      [
+        -8,
+        -16
+      ],
+      [
+        8,
+        -16
+      ]
+    ]
+  },
+  "appearance": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/can/can_01.webp",
+      "sha256": "d3665f5ca38191c809e33872270486fa235227037cd8ff518bfca75f86fd16fe",
+      "role": "Exact-SKU official source for reconstruction; source images not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/can/can_02.webp",
+      "sha256": "1d07510008af418ce1880f59504d8f1483e2bf53bc944cb589413972e763c24d",
+      "role": "Exact-SKU official source for reconstruction; source images not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/can/can_05.webp",
+      "sha256": "7c7faf07e4368183bb532ceafd7922e30c9ca1073d2d74b1309d7cca089a10e3",
+      "role": "Exact-SKU official source for reconstruction; source images not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/can/can_06.webp",
+      "sha256": "d786a2729f6a53d08c302f5f292a4d551ae91662bc1ac6464f5f3f0d933785ab",
+      "role": "Exact-SKU official source for reconstruction; source images not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/can/can_07.webp",
+      "sha256": "ba23377364f213f6334d0ec3d618b9abc283d9217bd730cc482fb34f72a3743b",
+      "role": "Exact-SKU official source for reconstruction; source images not redistributed"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/839/U085_Model_Size.jpg",
+      "sha256": "9a9f09918d22d8ea79572ddc396b9fb4d3c6d6a4d4b0acc5fa64ea3cf9d06993",
+      "role": "Exact-SKU official source for reconstruction; source images not redistributed"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/839/U085-package.jpg",
+      "sha256": "452af0b70209b9115cfad73667321d73255d009b89c6b6b2a83dfb5c15845e96",
+      "role": "Exact-SKU official source for reconstruction; source images not redistributed"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/586/SCH_UNIT_ISOCAN_v1.1_sch_01.png",
+      "sha256": "50d1f5c9439941d97c41061b94ea12996470e1694e1439395a987ff928838bf4",
+      "role": "Exact-SKU official source for reconstruction; source images not redistributed"
+    }
+  ],
+  "terminalAccessory": {
+    "quantity": 1,
+    "photoLabel": "VH3.96-4P",
+    "productListLabel": "HT3.96-4P",
+    "terminalFrontOrder": [
+      "CAN_H",
+      "CAN_L",
+      "NC",
+      "SHIELD"
+    ],
+    "schematicJP1Numbers": [
+      4,
+      3,
+      2,
+      1
+    ],
+    "portPinN": "Physical positions left-to-right, not schematic pin numbering",
+    "appearanceOnly": true
+  },
+  "scope": "No separate 120R resistor, CAN protocol/transceiver, register, isolation, supply or firmware simulation",
+  "inferences": "PCB profile/thickness/Z and concealed package placements, fixed terminal/socket/contact and removable plug dimensions/fit, screw-head recesses, Grove internals, white indicator light-guide depth. Complete official shell pair retained with a common rigid translation; no production assembly tolerances, electrical, CAN, fit, hardware or browser claim.",
+  "runtimeSha256": {
+    "src/units/can/TerminalPlug.js": "1913b63ee9d2fc379f287c6bb8ae1f122460272a0d4382734e265546d3b9ebce",
+    "src/units/can/assembly.js": "ccea9312e4d57615efcb770ccff4c42dcd649e49e5dfdfcf5374e3cccf81ba53",
+    "src/units/can/cad-map.json": "26025373ffdffa60def9133a0512f094b60a3be2764c3f51eb5999aacd53aefe",
+    "src/units/can/dimensions.js": "282eca1c71f2b99b854f613974e217f60f0ba12513c26443faff783dff9f9322",
+    "src/units/can/geometry-data.js": "d0b958304a6e14c4298cd82cd11a76cf8a565bbf44ed651b0241d6e03eb91070",
+    "src/units/can/index.js": "3b6c5d319e836c48d2d5a927d325329135d0f351efb9a7ea138850aa4700c422",
+    "src/units/can/stickers.js": "7a929fbd2107088f1c40c2932ff4cd270d1193c4bd2b9f10adf3a2edb57a0150",
+    "src/units/can/reference-redraw-back.png": "414aada2eadb011d6b9caa32161bb29b0d33c72a541e54575ab0231e3e8af7d4",
+    "src/units/can/reference-redraw-front.png": "baaa95ea6ea07355246ca5d1b51156fab82ce53b4942c1c9a6dacc31efedaaf8"
+  },
+  "artwork": {
+    "status": "applied-local-smoke",
+    "kind": "reference-redraw",
+    "sourceKind": "Same exact SKU official assembled product photographs",
+    "originalsDistributed": false,
+    "sourcePhotographsDistributed": false,
+    "referenceSources": [
+      {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/can/can_02.webp",
+        "sha256": "1d07510008af418ce1880f59504d8f1483e2bf53bc944cb589413972e763c24d"
+      },
+      {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/can/can_06.webp",
+        "sha256": "d786a2729f6a53d08c302f5f292a4d551ae91662bc1ac6464f5f3f0d933785ab"
+      }
+    ],
+    "files": [
+      {
+        "path": "src/units/can/reference-redraw-back.png",
+        "sha256": "414aada2eadb011d6b9caa32161bb29b0d33c72a541e54575ab0231e3e8af7d4",
+        "pixels": [
+          800,
+          1800
+        ]
+      },
+      {
+        "path": "src/units/can/reference-redraw-front.png",
+        "sha256": "baaa95ea6ea07355246ca5d1b51156fab82ce53b4942c1c9a6dacc31efedaaf8",
+        "pixels": [
+          800,
+          1350
+        ]
+      }
+    ],
+    "limitations": [
+      "Manual reconstruction of legible product text, color bands and diagrams; not exact original vector artwork.",
+      "Fonts, small diagram spacing and photo-derived registration are approximate; unreadable fine marks are omitted rather than invented.",
+      "Appearance only; printed diagrams and ratings do not change connector mapping, electrical behavior or firmware.",
+      "No browser face review or full-regression acceptance in this checkpoint."
+    ]
+  }
+}

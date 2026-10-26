@@ -1,0 +1,132 @@
+{
+  "id": "extio2",
+  "sku": "U011-B",
+  "officialDocs": "https://docs.m5stack.com/en/unit/extio2",
+  "retrievedAt": "2026-10-26",
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/extio2/extio2_01.webp",
+    "sha256": "47ce2b13d7210310c4271c061b858a4608dbf777bd2b6e9f9aa6b5d5599b1996"
+  },
+  "structures": [
+    {
+      "url": "https://github.com/m5stack/M5_Hardware/blob/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U011-B_Unit_EXT.IO2/Structures/Unit_EXT.IO2.stl",
+      "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+      "gitBlob": "045410881bf91896f3b102c89014c28a4ba2e039",
+      "sha256": "f3be342c70b1148ca156f290eabe248718d5a52cc08396ef2f9fe9f75e146fc4",
+      "license": "MIT; retain licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/extio2/extio2_02.webp",
+      "sha256": "a74f9ddfb24ed9ec6b247791fd45e040e4be80df909144c4752c08a292456d4c"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/extio2/extio2_05.webp",
+      "sha256": "d2cc178321296520ac4f0eb5c6bcd57cff51a28d93ecd2f64bf1a27074578bb8"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/extio2/extio2_04.webp",
+      "sha256": "d47ae3a48764e7510681d0960d5c30fdd103c672f196a13e73475c3636984aac"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/extio2/extio2_03.webp",
+      "sha256": "5147413b25e1a9b59769474a58dede996a21a4aac9b84be2041da60b56805391"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/extio2/extio2_01.webp",
+      "sha256": "47ce2b13d7210310c4271c061b858a4608dbf777bd2b6e9f9aa6b5d5599b1996"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/574/Sch_UNIT-EXTIO2_sch_01.png",
+      "sha256": "2eae3ff7db8745c434d716ed794315afddf14865e3ded7d04415153f5655703c"
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/extio2/3ad33fb83c15cac23cfb9ae5dccf684.png",
+      "sha256": "76903042ad050e0c49e43bd7c1c4101d05caa0352332e87a73772d755b7d6f42"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      -173.26882934570312,
+      217.22348022460938,
+      2.899999976158142
+    ],
+    "axes": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "method": "Common rigid translation and 180-degree rotation about Y; no scale, hole filling, individual shell alignment or cuts",
+    "reason": "Complete assembled shell island retained. Other islands are displaced spare individual shell halves. One common rigid translation and 180-degree rotation about Y makes the raised blank front +Z, rear label -Z, Grove bottom -Y and male 2x5 top +Y. No scale, individual shell alignment, hole filling or shell cuts."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "sources": "docs/research/extio2/artwork.md",
+    "originalsDistributed": false,
+    "files": [
+      {
+        "path": "src/units/extio2/reference-redraw-back.png",
+        "sha256": "5e8f50a6f6bbd15848e554508240b8fde198e05a66c206e941a7b9c653e93372",
+        "pixels": [
+          3130,
+          2342
+        ]
+      }
+    ]
+  },
+  "runtimeFiles": [
+    {
+      "path": "src/units/extio2/assembly.js",
+      "sha256": "47fe058f5f9ed60102ef170825c84868a0cd180e4c96bd209728c097d8f70fcb"
+    },
+    {
+      "path": "src/units/extio2/cad-map.json",
+      "sha256": "f8f1a7388e35a44da1430b62e2544fab91ce442e1ff778b67248679d6e9e419d"
+    },
+    {
+      "path": "src/units/extio2/dimensions.js",
+      "sha256": "370e673c4e3abe7ec6ee5e0af39ce3a82f459e46bbc982545c7703e23d8e90af"
+    },
+    {
+      "path": "src/units/extio2/geometry-data.js",
+      "sha256": "3d7c152aa9094a16309ddbd5cde771e2f0a65a238391a88bd94225dd9dea8fdb"
+    },
+    {
+      "path": "src/units/extio2/index.js",
+      "sha256": "a27d951b8a054455e12871e7463a987351a83a797875dbba335dac9d10903021"
+    },
+    {
+      "path": "src/units/extio2/reference-redraw-back.png",
+      "sha256": "5e8f50a6f6bbd15848e554508240b8fde198e05a66c206e941a7b9c653e93372"
+    },
+    {
+      "path": "src/units/extio2/stickers.js",
+      "sha256": "fccb70468ed3b56ca756c20a06a83d81256c91b30ca39e5fc6c4f09b953a8067"
+    }
+  ],
+  "inferences": [
+    "PCB outline/plane/thickness, package datums/envelopes, P2 carrier/pin bends/solder installation, concealed SWD connection pad population/placement, passive packages, Grove internals, screw shank and label registration are appearance reconstructions, not production assembly STEP or manufacturing-fit claims.",
+    "Only Grove and the true top ten-pin male P2 are external Ports. P1 SWD connection is a concealed fixed pad representation; exact photos do not establish an exposed populated socket. The io connector rejects Grove.",
+    "No GPIO, ADC, servo, PWM, RGB, bus, registers, firmware or electrical simulation. Advertised external RGB/servo-control capabilities do not imply built-in LEDs/servos. sensor remains a passive visual anchor."
+  ]
+}

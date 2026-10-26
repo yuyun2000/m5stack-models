@@ -1,0 +1,56 @@
+{
+  "id": "tof4m",
+  "sku": "U172",
+  "status": "reference-redraw-integrated",
+  "updatedAt": "2026-10-26",
+  "artworkKind": "reference-redraw",
+  "coverage": "Rear product label. The visible operating front has no permanent product label in the exact references.",
+  "transcription": [
+    "ToF4M",
+    "4~400cm",
+    "PORT. A. I2C",
+    "SCL / SDA / 5V / GND"
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/Unit-ToF4M/img-bb6247a0-82d1-4060-8725-b230c2affcae.webp",
+      "sha256": "892bc76fa4c54c647384855670bfd7bb872048d98578d8aef0ea537050fe25ee",
+      "role": "Exact-SKU official product photograph; visual transcription reference only; no photo pixels redistributed"
+    }
+  ],
+  "rasters": [
+    {
+      "path": "src/units/tof4m/reference-back.png",
+      "sha256": "e89fc122d5a609093d7ad9ce7d2704e5acbd2a8ce3348e5e8ef7db342906862b",
+      "sizePx": [
+        1024,
+        768
+      ],
+      "artworkKind": "reference-redraw"
+    }
+  ],
+  "surfaces": [
+    {
+      "face": "back",
+      "size": [
+        16,
+        12
+      ],
+      "position": [
+        0,
+        7,
+        -3.8
+      ],
+      "target": "ToF4M native assembled front and rear shells",
+      "method": "Projection onto existing physical triangles only"
+    }
+  ],
+  "privateSourceVectorsDistributed": false,
+  "photographicPixelsUsed": false,
+  "photoCropsUsed": false,
+  "limitations": [
+    "Packaging artwork is outside the device model.",
+    "Fonts, colors and icon curves are visual reference reconstructions; not the original manufacturing artwork.",
+    "No browser or exhaustive face inspection; 3D placement remains an unverified visual registration."
+  ]
+}

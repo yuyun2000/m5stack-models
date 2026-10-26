@@ -1,0 +1,175 @@
+{
+  "checkedAt": "2026-10-26T07:16:44.382Z",
+  "status": "pass",
+  "scope": "Necessary geometry and API construction smoke only; no browser, image decoding or electrical validation",
+  "physicalMeshes": 159,
+  "cadEnvelopeMm": [
+    24,
+    48,
+    7.999999761581421
+  ],
+  "visualEnvelopeMm": [
+    24,
+    48,
+    10.845000011920929
+  ],
+  "mountingRays": 10,
+  "pcbBoreWallRays": 8,
+  "ports": [
+    {
+      "id": "grove",
+      "positionMm": [
+        0,
+        -23.65,
+        1.4
+      ],
+      "outward": [
+        0,
+        -1,
+        0
+      ],
+      "pins": [
+        "SCL",
+        "SDA",
+        "5V",
+        "GND"
+      ]
+    },
+    {
+      "id": "grove-0",
+      "positionMm": [
+        7.5,
+        -1.8,
+        6.5
+      ],
+      "outward": [
+        0,
+        0,
+        1
+      ],
+      "pins": [
+        "IN0",
+        "OUT0",
+        "5V",
+        "GND"
+      ]
+    },
+    {
+      "id": "grove-1",
+      "positionMm": [
+        7.5,
+        8.8,
+        6.5
+      ],
+      "outward": [
+        0,
+        0,
+        1
+      ],
+      "pins": [
+        "IN1",
+        "OUT1",
+        "5V",
+        "GND"
+      ]
+    },
+    {
+      "id": "grove-2",
+      "positionMm": [
+        5,
+        17.2,
+        6.5
+      ],
+      "outward": [
+        0,
+        0,
+        1
+      ],
+      "pins": [
+        "IN2",
+        "OUT2",
+        "5V",
+        "GND"
+      ]
+    },
+    {
+      "id": "grove-3",
+      "positionMm": [
+        -5,
+        17.2,
+        6.5
+      ],
+      "outward": [
+        0,
+        0,
+        1
+      ],
+      "pins": [
+        "IN3",
+        "OUT3",
+        "5V",
+        "GND"
+      ]
+    },
+    {
+      "id": "grove-4",
+      "positionMm": [
+        -7.5,
+        8.8,
+        6.5
+      ],
+      "outward": [
+        0,
+        0,
+        1
+      ],
+      "pins": [
+        "IN4",
+        "OUT4",
+        "5V",
+        "GND"
+      ]
+    },
+    {
+      "id": "grove-5",
+      "positionMm": [
+        -7.5,
+        -1.8,
+        6.5
+      ],
+      "outward": [
+        0,
+        0,
+        1
+      ],
+      "pins": [
+        "IN5",
+        "OUT5",
+        "5V",
+        "GND"
+      ]
+    }
+  ],
+  "checks": [
+    "official assembled CAD envelope",
+    "two axial installation bores",
+    "FrontSide PCB bore walls",
+    "all seven mating directions",
+    "28 physical contact rays and exact pin-grid numbering",
+    "seven recessed real socket mouths",
+    "native rear closure and real front packages",
+    "standalone and GroveModule six-output API",
+    "two actual Unit modules with two independent four-wire cables",
+    "nested component paths and posed cable",
+    "detach one output while preserving the other",
+    "parent Grove cable retained",
+    "all tracked new resources disposed exactly once",
+    "no sensor/GPIO/ADC/PWM runtime"
+  ],
+  "trackedResources": 664,
+  "deferred": [
+    "sticker artwork",
+    "browser visual acceptance",
+    "production connector tolerances"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U165_Unit_8Servos/Structures/Unit_8Servos.stl",
+  "sourceSha256": "63fc0740b6b147986986ab849615274dd6281f781a7aabeb8180b43e27752153",
+  "license": "MIT; preserve licenses/M5_Hardware-MIT.txt",
+  "origin": [0, 15.8, 1],
+  "axes": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+  "parts": [
+    {"component": 1, "name": "8Servos rear shell", "material": "shell"},
+    {"component": 2, "name": "8Servos front shell", "material": "shell"}
+  ],
+  "notes": "Use the assembled shell pair at native X=0. Components 0 and 3 are displaced duplicates. No native faces are deleted, filled or flattened. The source omits the PCB and connectors; their complete solid appearance is reconstructed from the U165 mechanical drawing and official product photographs."
+}

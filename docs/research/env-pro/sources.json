@@ -1,0 +1,169 @@
+{
+  "product": "Unit ENV-Pro",
+  "sku": "U169",
+  "retrievedAt": "2026-10-26",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_ENV-Pro",
+  "officialMCP": {
+    "query": "ENV Pro U169 BME688 尺寸 传感器 LED",
+    "rawResponseDistributed": false,
+    "result": "Confirmed U169, BME688, 32×24×8 mm, Grove I2C, official structure, photos and dimension drawing",
+    "correction": "Original schematic ties SDO pin5 to +3.3V, consistent with documented 0x77. MCP falsely summarizes SDO=GND and a conflict. Original PDF and its embedded netlist were checked; no bus behavior is implemented.",
+    "feedbackId": "677ac2a8e9e1441591989de9eaabda08"
+  },
+  "officialCad": {
+    "source": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U169_Unit_ENV-Pro/Structures/Unit_ENV-Pro.stl",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "gitBlob": "0dbaad62c8d3f327f6dbbef455acdbc2963275eb",
+    "sha256": "fb223a23791d6d30e35c35b47972224dde33c58eb3c7d299b859c9494f38075f",
+    "license": "MIT",
+    "selectedComponents": [
+      {
+        "index": 0,
+        "name": "ENV Pro complete native double shell",
+        "triangles": 5430
+      }
+    ],
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "excludedReason": "Laterally displaced individual shell copies; island 0 retains complete native assembled shell, all 40 air slots, mounting bores, seam and molded detail",
+    "transform": {
+      "subtractOriginMm": [
+        441.2688293457031,
+        269.2234802246094,
+        2.000001013278961
+      ],
+      "axes": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "scale": 1
+    },
+    "nativeAssemblyNote": "Retain native complete assembled double shell island 0 using one translation. Islands 1 and 2 are laterally displaced duplicates. All ventilation, mount bores, seams and molded detail retained; no independent alignment, scaling, filling or shell cuts."
+  },
+  "dimensions": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ENV%20Pro%20Unit/img-c3e64d4b-35aa-4a1c-9473-cc743ad0c5ef.jpg",
+    "sha256": "1fa43efb58c27cc402921d332a5a9002e8b977b9bfa4570db9124643aab8b2ea",
+    "officialListingMm": [
+      32,
+      24,
+      8
+    ],
+    "normalizedPortraitMm": [
+      24,
+      32,
+      8
+    ],
+    "mountingHoleDiameterMm": 5,
+    "mountingHoleCentersMm": [
+      [
+        -8,
+        -4
+      ],
+      [
+        8,
+        -4
+      ]
+    ],
+    "groveFaceMm": [
+      10,
+      5.2
+    ]
+  },
+  "sensorPackage": {
+    "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/ENV%20Pro%20Unit/bst-bme688-ds000.pdf",
+    "sha256": "a039ca3b0ee1e7b8d6836b9de6113de3afe4b867053128a6b7905629853a1e67",
+    "document": "Bosch BST-BME688-DS000-01 revision 1.1 July 2022, page 53 picture 16",
+    "packageMm": [
+      3,
+      3,
+      0.93
+    ],
+    "lidWidthMm": 2.8,
+    "ventDiameterMm": 0.35,
+    "ventOffsetFromLowerAndRightEdgesMm": 0.9,
+    "notRedistributed": true
+  },
+  "schematic": {
+    "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/622/Sch_UNIT-ENV_Pro.pdf",
+    "sha256": "c1a57927a09d342df39a4696149e2b1828db65a05ad5145770086848b624fe98",
+    "role": "Confirms BME688, VRH3301NLX, fuse, capacitors, resistor and protection population; no LED. Original PDF retained outside repo."
+  },
+  "appearance": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ENV%20Pro%20Unit/img-2ba12134-9756-471a-b1a5-ba803a875e8f.webp",
+      "sha256": "a676c88f10545c3336a672f1a74928531a2f12de153c6b08bdb3300ef7b23318",
+      "role": "Exact U169 official photo; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ENV%20Pro%20Unit/img-0619fb0d-481f-4208-a862-461f0f5a4aeb.webp",
+      "sha256": "b9e3c70c9b3394bbfeb80dfb6a390bdbcfbb6ddac62b131b0fb39625f4ca78a3",
+      "role": "Exact U169 official photo; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ENV%20Pro%20Unit/img-f8fc52d8-90dc-451b-9d7b-0f6abc445920.webp",
+      "sha256": "212d390fc69e43d4708dbaa496a13d92a0a2a7682c61c9ab465ee12055b2f1d5",
+      "role": "Exact U169 official photo; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ENV%20Pro%20Unit/img-d86edc21-2e66-4da3-b875-f974a9b12557.webp",
+      "sha256": "bd60d22314dfcfb2162ccd5b5ab8d07924a39264179a50d369633775dfe6171e",
+      "role": "Exact U169 official photo; not redistributed"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/ENV%20Pro%20Unit/img-7d6d9630-f684-4f16-87ba-3e48b83ab90b.webp",
+      "sha256": "e66224e7f5bce734013af847b763dd0c5ae26a7ea551b618a119aa01a7de0043",
+      "role": "Exact U169 official photo; not redistributed"
+    }
+  ],
+  "inferred": [
+    "PCB outline and C-shaped thermal-isolation cutout around supported BME688 island, thickness and installed XYZ",
+    "Sensor installed XYZ/orientation, metal-lid stepped cross-section and recessed vent floor; nominal package and vent dimensions from Bosch drawing",
+    "Concealed regulator/passives/protection dimensions and locations, no exact PCB manufacturing file",
+    "Grove internal walls/contact thickness/locking bridge and solder tails; fastening screw and shank"
+  ],
+  "artwork": {
+    "status": "applied-local-smoke",
+    "originalsDistributed": false,
+    "privateSourceUrlsDistributed": false,
+    "source": "User-supplied exact product flat artwork; final raster distribution authorized by user, original artwork rights retained by M5Stack.",
+    "registration": "Exact supplied vector rear label converted to PNG with original glyph contours, BME688 name, unit list and I2C color bands. Registered to the original rear 16×12 mm recessed label surface; ventilation stays unprinted.",
+    "files": [
+      {
+        "path": "src/units/env-pro/official-back.png",
+        "sha256": "2d0ab427ea9798cb4c575ef64f12262cc4997ef9dde5be8dda32766fb04bca79",
+        "pixels": [
+          2415,
+          1800
+        ]
+      }
+    ]
+  },
+  "runtimeSha256": {
+    "src/units/env-pro/assembly.js": "e200297e03487992cac919afafd6e176a0f9639e03fcd7e1584587cd45463e3a",
+    "src/units/env-pro/cad-map.json": "70012175e7e86cca9dbb83a25c21895a5c9ede94c9cabcaefde13342e6e6786e",
+    "src/units/env-pro/dimensions.js": "fc1592ebbf769fc44148db1e43e9bacf7b0fda00d5a1f13dcbf07254394004d3",
+    "src/units/env-pro/geometry-data.js": "e97de04743bafde3fd6d040fc518a35ee68294f4a5050940ac9edf14051f7716",
+    "src/units/env-pro/index.js": "4974f475cc5a33fd8d7db966f19d1185a816c52851ef2df8b449421cd6a67a7a"
+  },
+  "verification": {
+    "geometry": "docs/research/env-pro/smoke.json",
+    "visual": null,
+    "stage": "modeled",
+    "limitations": "Necessary local construction/API smoke only; no browser acceptance, physical hardware, sensor behavior, electrical simulation or production assembly fit verification."
+  }
+}

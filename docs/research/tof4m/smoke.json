@@ -1,0 +1,134 @@
+{
+  "checkedAt": "2026-10-26T08:03:28.053Z",
+  "status": "pass",
+  "scope": "Necessary finite construction, aperture/package, connector, attachment/pose/detach/disposal smoke; no browser, hardware, I2C or distance verification",
+  "meshes": 59,
+  "triangles": 8200,
+  "visualEnvelopeMm": [
+    24.000011444091797,
+    32.00000762939453,
+    8.000000095367431
+  ],
+  "cadEnvelopeMm": [
+    24.000011444091797,
+    32.00000762939453,
+    8
+  ],
+  "mountingRays": 10,
+  "closureChecks": [
+    {
+      "origin": [
+        0,
+        8,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 18.1,
+      "purpose": "Front optical opening contains the full VL53L1CXV0FY/1 enclosure"
+    },
+    {
+      "origin": [
+        -1.48,
+        8,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 18.1,
+      "purpose": "Receiver filter well has physical pane and solid backing"
+    },
+    {
+      "origin": [
+        1.52,
+        8,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 18.1,
+      "purpose": "VCSEL filter well has physical pane and solid backing"
+    },
+    {
+      "origin": [
+        2.6,
+        8,
+        20
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "maxDistance": 20,
+      "purpose": "Optical capsule around the small package ends at the solid PCB"
+    },
+    {
+      "origin": [
+        0,
+        -40,
+        0.5
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "maxDistance": 33,
+      "purpose": "Open Grove mouth ends at the connector rear housing"
+    }
+  ],
+  "closureHits": [
+    {
+      "purpose": "Front optical opening contains the full VL53L1CXV0FY/1 enclosure",
+      "hit": "VL53L1X molded optical enclosure with two real filter wells",
+      "distanceMm": 17.939999985694886
+    },
+    {
+      "purpose": "Receiver filter well has physical pane and solid backing",
+      "hit": "VL53L1X solid infrared filter glass",
+      "distanceMm": 18.039999999254942
+    },
+    {
+      "purpose": "VCSEL filter well has physical pane and solid backing",
+      "hit": "VL53L1X solid infrared filter glass",
+      "distanceMm": 18.039999999254942
+    },
+    {
+      "purpose": "Optical capsule around the small package ends at the solid PCB",
+      "hit": "ToF4M PCB with open boss and Grove relief",
+      "distanceMm": 19.49999998807907
+    },
+    {
+      "purpose": "Open Grove mouth ends at the connector rear housing",
+      "hit": "Grove rear wall",
+      "distanceMm": 29.950000011920928
+    }
+  ],
+  "sensorPackageMm": [
+    4.900000095367432,
+    2.5,
+    1.560000015795231
+  ],
+  "opticalPackage": "two solid filter panes with underlying physical receiver lens, VCSEL and well floors",
+  "grovePins": [
+    "GND",
+    "5V",
+    "SDA",
+    "SCL"
+  ],
+  "visualAnchor": "sensor",
+  "controls": 0,
+  "groveAttachPoseNestedDetach": "pass",
+  "disposedResources": 114,
+  "disposeEvents": 156
+}

@@ -1,0 +1,221 @@
+{
+  "id": "laser-tx",
+  "sku": "U066",
+  "officialDocs": "https://docs.m5stack.com/en/unit/laser-tx",
+  "retrievedAt": "2026-10-26",
+  "officialMCP": {
+    "query": "Unit Laser TX U066 发射 外壳尺寸 激光头 LED Grove 原理图 结构",
+    "rawResponseDistributed": false,
+    "result": "Exact U066 product confirms nominal 32×24×8mm, GND/5V/DIN/NC Grove, Laser/AO3400A/R1R2/C1C2 schematic, exact photographs and official structure. Original images reviewed independently; 650nm/5mW is printed on exact U066 official hero/rear label.",
+    "feedback": {
+      "feedback_id": "b27af2e5d7b74fbbb1fc919b44cc8ac1",
+      "outcome": "success",
+      "subject": "Same-page U066 official photographs print 650nm/5mW omitted by schematic-derived summary; OUT rear print versus DIN interface naming."
+    }
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/laser-tx/laser-tx_06.webp",
+    "sha256": "180f0fb4ae7dc0feb53942ad22d5974f4f37c2384d7ff5055b87e79eef4f7043"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U066_Unit_Laser_TX/Structures/Unit_Laser_TX.stl",
+      "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+      "gitBlob": "d586986d364941c4fd66ca5f85645fdfed2b4f72",
+      "sha256": "8813adc77f4b54b93dc3d961357c4f807ae26a50e6a02b0fab39f1c21ed5d9b0",
+      "license": "MIT; retain licenses/M5_Hardware-MIT.txt"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/laser-tx/laser-tx_sch_01.webp",
+      "sha256": "a2a1ef4141450840929d166ca32d336be0b9995dce1df353c64d5e776320c2c6"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/843/U065_Model_Size_sch_01.png",
+      "sha256": "87cf777e0b52ed3831f71f07fb35192ba1a3867a63c765f041c3445cbd1fb9cf"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/laser-tx/laser-tx_01.webp",
+      "sha256": "4a680e5b7cc58466faf900b04edc6a53aa6cec50cb4c2182e97e0733f22198a7"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/laser-tx/laser-tx_02.webp",
+      "sha256": "9e0f70c27b2d4f7fca52ec142b4451092bd020c33418a6e5a9329e325db30661"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/laser-tx/laser-tx_05.webp",
+      "sha256": "af522e448d87f8f95b88413820ae07218192c390e3d3712db46a54da3c45d48c"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/laser-tx/laser-tx_06.webp",
+      "sha256": "180f0fb4ae7dc0feb53942ad22d5974f4f37c2384d7ff5055b87e79eef4f7043"
+    }
+  ],
+  "selectedAssembly": {
+    "components": [
+      0
+    ],
+    "excludedComponents": [
+      1,
+      2
+    ],
+    "origin": [
+      441.2688293457031,
+      313.2234802246094,
+      -19
+    ],
+    "axes": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "triangles": 3556,
+    "method": "One common rigid translation, scale 1; no shell cuts, hole filling or per-part alignment",
+    "reason": "Original complete assembled shell component 0 retained using one translation, without scaling, cuts, fills or independently aligning subparts. Components 1 and 2 are displaced individual copies; triangles 1810 + 1746 = full component 3556.",
+    "crossProductCaution": "U065 RX shares this shell blob. No RX internal parts or receive behaviour used in the TX model."
+  },
+  "dimensions": {
+    "nominalMm": [
+      24,
+      32,
+      8
+    ],
+    "vendorDimensionOrderMm": [
+      32,
+      24,
+      8
+    ],
+    "cadEnvelopeMm": [
+      24,
+      32,
+      8
+    ],
+    "visualEnvelopeMm": [
+      24,
+      32,
+      8.000000095367431
+    ],
+    "mountingHoleCentersMm": [
+      [
+        -8,
+        -4
+      ],
+      [
+        8,
+        -4
+      ]
+    ],
+    "mountingHoleDiameterMm": 5,
+    "nativeBoreFacetingNote": "Original source triangles retained; FrontSide bore-wall rays tested at native rear bore sections, without synthetic replacement."
+  },
+  "artwork": {
+    "kind": "reference-redraw",
+    "sources": "docs/research/laser-tx/artwork.json",
+    "originalsDistributed": false,
+    "files": [
+      {
+        "path": "src/units/laser-tx/reference-redraw-front.png",
+        "sha256": "f387fb617a9b73d695f27583ac8cf084aab2ba581a10d7e8b7fd8bf43488454f",
+        "pixels": [
+          2400,
+          1680
+        ],
+        "sizeMm": [
+          20,
+          14
+        ],
+        "positionMm": [
+          0,
+          7,
+          3.8
+        ],
+        "face": "front",
+        "method": "printedArtwork",
+        "artworkKind": "reference-redraw",
+        "target": "Laser TX complete native assembled shell",
+        "reference": {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/laser-tx/laser-tx_06.webp",
+          "sha256": "180f0fb4ae7dc0feb53942ad22d5974f4f37c2384d7ff5055b87e79eef4f7043"
+        }
+      },
+      {
+        "path": "src/units/laser-tx/reference-redraw-back.png",
+        "sha256": "f1cba8f1019cc2a818c649c8a42b6675652b6c0d80251c4fc1b7faf233c8fc3e",
+        "pixels": [
+          1944,
+          1464
+        ],
+        "sizeMm": [
+          16.2,
+          12.2
+        ],
+        "positionMm": [
+          0,
+          7,
+          -3.8
+        ],
+        "face": "back",
+        "method": "printedArtwork",
+        "artworkKind": "reference-redraw",
+        "target": "Laser TX complete native assembled shell",
+        "reference": {
+          "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/laser-tx/laser-tx_02.webp",
+          "sha256": "9e0f70c27b2d4f7fca52ec142b4451092bd020c33418a6e5a9329e325db30661"
+        }
+      }
+    ]
+  },
+  "runtimeFiles": [
+    {
+      "path": "src/units/laser-tx/assembly.js",
+      "sha256": "72484eab1e95b8f052a1b252e81e80bcecd57b4546508db223c9e542c7580508"
+    },
+    {
+      "path": "src/units/laser-tx/cad-map.json",
+      "sha256": "73eeb65db910015eebff59aad0b56ccf67d399fe969cc53dd2b6ac516d2b3e32"
+    },
+    {
+      "path": "src/units/laser-tx/dimensions.js",
+      "sha256": "cc02764c32b1172dba6221cf15e7a3a69ba45d96f866bb5d0316087e979565cc"
+    },
+    {
+      "path": "src/units/laser-tx/geometry-data.js",
+      "sha256": "116eaec0cd3f846a98f6764a8cf9f79ae61bde23f2e3c9736f4ce3f363d47dfb"
+    },
+    {
+      "path": "src/units/laser-tx/index.js",
+      "sha256": "dff67890e36391843e9bbd8296e877ff7b9168e9d19d7e34650a2e8775ef98a8"
+    },
+    {
+      "path": "src/units/laser-tx/reference-redraw-back.png",
+      "sha256": "f1cba8f1019cc2a818c649c8a42b6675652b6c0d80251c4fc1b7faf233c8fc3e"
+    },
+    {
+      "path": "src/units/laser-tx/reference-redraw-front.png",
+      "sha256": "f387fb617a9b73d695f27583ac8cf084aab2ba581a10d7e8b7fd8bf43488454f"
+    },
+    {
+      "path": "src/units/laser-tx/stickers.js",
+      "sha256": "e6d3ae3ffb2f514ae5a64ee8f14f8905c033f35d3bff16568be5294a41c0ca42"
+    }
+  ],
+  "inferences": [
+    "PCB outline/thickness/Z, concealed component packages/XYZ, laser barrel/diode can/collimator/nose/lens profiles and installation, two internal leads, solder and Grove interior are visual reconstruction. No production populated STEP, BOM placement or manufacturing-fit claim.",
+    "Fixed red emitter appearance is supported by exact U066 WL:650NM print. Printed PWR:5mW is a label claim, not measured optical output or laser classification. Only local lens material brightness is external; no beam, spot, light transport, modulation, communication or RX coupling.",
+    "No buttons, moving joints or fabricated exterior indicator LEDs. Sensor is a passive visual anchor, with no readings, GPIO, firmware or electrical simulation.",
+    "Rear artwork says OUT; Grove metadata follows official DIN/NC table and host-to-Q1 gate direction, with no electrical behaviour inferred."
+  ]
+}
