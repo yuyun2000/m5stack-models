@@ -4,7 +4,17 @@ import {pathToFileURL} from 'node:url';
 import * as THREE from 'three';
 import {loadModel,loadGroveModule} from '../src/loaders.js';
 
-const EXPECTED_PORTS={sticks3:['grove'],cores3:['grove'],stopwatch:['grove'],'cardputer-adv':['grove'],'cardputer-zero':['grove'],papermono:[],core2:['grove'],papercolor:['grove'],nanoc6:['grove'],stackchan:['grove','port-b','port-c'],tab5:['grove'],atoms3r:['grove'],'nesso-n1':['grove'],stamplc:['port-a','port-c']};
+// Explicit interface expectations, checked against every catalog controller and
+// named configuration before loading the real exported models. A new catalog
+// host/configuration must be accounted for here rather than silently skipped.
+const EXPECTED_PORTS={
+ sticks3:{default:['grove']},cores3:{module:['grove'],din:['grove','grove-b','grove-c']},
+ stopwatch:{default:['grove']},'cardputer-adv':{default:['grove']},'cardputer-zero':{default:['grove']},
+ papermono:{default:[]},core2:{default:['grove']},papercolor:{default:['grove']},nanoc6:{default:['grove']},
+ stackchan:{default:['grove','port-b','port-c']},tab5:{default:['grove']},atoms3r:{default:['grove']},
+ 'nesso-n1':{default:['grove']},stamplc:{default:['port-a','port-c']},
+ 'atom-lite':{complete:['grove']},'atom-matrix':{complete:['grove']},'atoms3-lite':{complete:['grove']},
+};
 const visible=object=>object.isMesh&&(Array.isArray(object.material)?object.material:[object.material]).some(material=>material.opacity!==0);
 const within=(object,parent)=>{for(let o=object;o;o=o.parent)if(o===parent)return true;return false;};
 const near=(a,b,why)=>assert.ok(a.distanceTo(b)<2e-5,`${why}: ${a.toArray()} vs ${b.toArray()}`);
@@ -13,12 +23,29 @@ const Y=new THREE.Vector3(0,1,0),vertex=(mesh,ring,row)=>mesh.localToWorld(new T
 /** Real enclosure and actual tube-surface rails, beyond synthetic port tests. */
 export async function checkHostGroveAssembly(){
  const cases=[];let railSegments=0,sourcePorts=0,matingChecks=0;
- const rows=[...Object.entries(EXPECTED_PORTS).map(([id,ports])=>({id,ports,options:{}})),{id:'cores3',label:'cores3-din',ports:['grove','grove-b','grove-c'],options:{dinBase:true}}];
+ const catalog=JSON.parse(await fs.readFile(new URL('../catalog/products.json',import.meta.url),'utf8'));
+ const controllers=catalog.products.filter(product=>product.category==='controller'&&product.entry);
+ const controllerIds=controllers.map(product=>product.id);
+ assert.equal(new Set(controllerIds).size,controllerIds.length,'Catalog controller IDs must be unique');
+ assert.deepEqual(Object.keys(EXPECTED_PORTS).toSorted(),controllerIds.toSorted(),'Grove coverage must include exactly the implemented catalog controllers');
+ const rows=controllers.flatMap(product=>{
+  const configurations=product.configurations?.length?product.configurations:[{id:'default',options:{}}];
+  const ids=configurations.map(configuration=>configuration.id);
+  assert.equal(new Set(ids).size,ids.length,`${product.id}: catalog configuration IDs must be unique`);
+  assert.deepEqual(Object.keys(EXPECTED_PORTS[product.id]).toSorted(),ids.toSorted(),`${product.id}: Grove coverage must include exactly the catalog configurations`);
+  return configurations.map(configuration=>({
+   id:product.id,configuration:configuration.id,
+   label:configurations.length===1||configuration.id==='module'?product.id:`${product.id}-${configuration.id}`,
+   ports:EXPECTED_PORTS[product.id][configuration.id],options:configuration.options??{},
+  }));
+ });
+ const covered=[];
  for(const row of rows){
   const host=await loadModel(row.id,row.options),label=row.label??row.id;
   try{
    const actual=host.list('port').filter(port=>port.connector==='grove').map(port=>port.id);
    assert.deepEqual(actual.toSorted(),row.ports.toSorted(),`${label}: all actual Grove interfaces, including declared absence`);
+   covered.push({id:row.id,configuration:row.configuration,ports:actual});
    sourcePorts+=actual.length;
    for(const portId of actual){
     const port=host.port(portId),unit=await loadGroveModule('env-iii',{cableLength:85,cable:{slack:16}});
@@ -57,10 +84,16 @@ export async function checkHostGroveAssembly(){
    }
   }finally{host.dispose();}
  }
- return {status:'pass',sourcePorts,hostConfigurations:rows.length,cases,matingChecks,railSegments,scope:'All actual host Grove interfaces with a real compact Unit; sampled rendered tube-surface rails and mating transforms, including StackChan poses. Not an arbitrary-pose collision solver or hardware fit proof.'};
+ assert.equal(covered.length,rows.length,'Every catalog host configuration completed its actual-port check');
+ return {status:'pass',controllers:controllerIds.length,sourcePorts,hostConfigurations:covered.length,coverage:covered,cases,matingChecks,railSegments,scope:'Every implemented catalog controller and named configuration; actual Grove interfaces with a real compact Unit, sampled rendered tube-surface rails and mating transforms, including StackChan poses. Not every target Unit or an arbitrary-pose collision solver.'};
 }
 
 if(process.argv[1]&&pathToFileURL(process.argv[1]).href===import.meta.url){
+ const args=process.argv.slice(2);
+ if(args.length&&!(args.length===2&&args[0]==='--report'&&args[1].endsWith('.json')))throw new Error('Usage: node scripts/check-host-grove-assembly.mjs [--report new-report.json]');
  const noop=()=>{},ctx=new Proxy({measureText:()=>({width:20}),createRadialGradient:()=>({addColorStop:noop}),createLinearGradient:()=>({addColorStop:noop})},{get:(o,k)=>o[k]??noop});globalThis.document={createElement:()=>({getContext:()=>ctx})};
- const report=await checkHostGroveAssembly();await fs.writeFile(new URL('../artifacts/host-grove-assembly-check.json',import.meta.url),JSON.stringify({checkedAt:new Date().toISOString(),...report},null,2)+'\n');console.log('PASS real host Grove assembly:',JSON.stringify({sourcePorts:report.sourcePorts,cases:report.cases.length,matingChecks:report.matingChecks,railSegments:report.railSegments}));
+ const report={checkedAt:new Date().toISOString(),...await checkHostGroveAssembly()};
+ // Saving is opt-in and exclusive: historical snapshots cannot be overwritten.
+ if(args.length)await fs.writeFile(args[1],JSON.stringify(report,null,2)+'\n',{flag:'wx'});
+ console.log('PASS real host Grove assembly:',JSON.stringify({checkedAt:report.checkedAt,controllers:report.controllers,hostConfigurations:report.hostConfigurations,sourcePorts:report.sourcePorts,cases:report.cases.length,matingChecks:report.matingChecks,railSegments:report.railSegments,scope:report.scope}));
 }

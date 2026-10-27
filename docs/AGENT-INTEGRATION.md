@@ -364,9 +364,11 @@ demo 的异步 Unit 加载在切换模型、接口或 Unit 后会作废旧请求
 
 ## 修改后验证
 
-从仓库根目录运行 `npm run check`、`npm run build`、`./manage.sh status`。专项测试覆盖真实帽位移/方向/回位、固定根部弯曲、刚性杠杆、多键与多旋钮、稳定档位、多来源取消、关节父子装配、静止与终帧、目录内Unit线缆端点与默认姿态穿壳。另检查所有真实主机Grove口、CoreS3 DinBase及StackChan组合姿态中的插头坐标与渲染线管表面轨迹；覆盖数以当前生成报告为准。
+从仓库根目录按改动运行 `npm run check:demo`、`npm run check:controllers`、`npm run check:connections`；构建或在线资源改变时再运行 `npm run build`、`./manage.sh status`。主机专项将当前目录的全部主机/配置逐项登记，检查真实帽的partial/full/回位、稳定档位、固定实体与多来源取消；连接专项检查实际主机Grove口、CoreS3 DinBase及StackChan组合姿态中的插头坐标与渲染线管表面轨迹。两入口默认只输出当前结果，不改历史报告。Unit特有的弯曲、杠杆、摇杆、关节与特殊转接仍按对应产品指南检查，不能用主机单一ENV III目标覆盖来代表全部Unit。
 
-生命周期专项为 `scripts/check-port-lifecycle.mjs`、`scripts/check-viewer-lifecycle.mjs`、`scripts/check-demo-lifecycle.mjs`，已接入正常检查。Viewer 专项运行真实查看器与输入路由，以无 GPU renderer 和 DOM 边界替身检查所有权和取消顺序；这些替身不提供浏览器视觉证据。
+旧 `npm run check` 和 `check-grove-cable.mjs` 包含历史 `sensor`/标准四芯路径假设及旧报告写入，尚未迁移到当前目录，不作为当前全库验收入口。各专项的覆盖数以当前实际输出为准，历史报告只支持其保存时点的结论。
+
+生命周期专项为 `scripts/check-port-lifecycle.mjs`、`scripts/check-viewer-lifecycle.mjs`、`scripts/check-demo-lifecycle.mjs`；按需调用各自guarded export，避免用旧全量脚本重写快照。Viewer 专项运行真实查看器与输入路由，以无 GPU renderer 和 DOM 边界替身检查所有权和取消顺序；这些替身不提供浏览器视觉证据。
 
 还需打开 demo，实际操作按键按住/回弹、模型快捷键与表单焦点、连接/断开、端点旋转、风叶转动、摇杆倾斜与按压、StackChan 组合姿态。Node 几何测试不能替代浏览器画面，也不能证明下游模拟器、真实硬件、机械配合或硬件限位正确。
 

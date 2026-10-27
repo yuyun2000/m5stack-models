@@ -1,6 +1,8 @@
 # Grove cable and Unit pose API
 
-The same connection interface works with every implemented Grove Unit in `catalog/products.json`. It adds appearance geometry and pose controls: two fitted HY2.0-4P cable plugs and four black/red/yellow/white wires. It does not add voltage, bus traffic, sensor readings or firmware behavior.
+Use `catalog/products.json` → `integration.moduleExport` to find implemented module entries, then inspect the product's actual Ports, component paths and guide. A Grove module name does not guarantee a `grove` input socket, a root `cable`, four wires or a `sensor` component. Standard four-core socket assemblies use two fitted HY2.0-4P plugs, black/red/yellow/white wires and the pose API below. Connections add appearance and pose controls; they do not add voltage, bus traffic, sensor readings or firmware behavior.
+
+A093 `rgb-led-strip-50cm` uses its supplied four-position Grove plug and three-wire adapter. Its cable is `input/cable`, not a root `cable`, and its strip-side `input` has a different connector family; it has no `grove` receiving socket or `sensor` component. Read its actual `getState()` and [product guide](M5CAMERA-ESP32CAM-RGBSTRIP50-UNITS.md) for adapter commands, distance limits and removal. Other products, such as ENV II and GPS, also omit the legacy `sensor` visual anchor. Resolve paths from each real instance rather than requiring that anchor.
 
 Roller485 U182 uses its fixed front-facing `grove` mouth as the Module input. Its separate `grove-top` belongs to the rotating output assembly; nested paths such as `grove/grove-top/sensor` remain valid as `grove/rotor` moves. Attached poses are relative to that moving port, and cable endpoints follow its actual transform. PWR485 and debug connectors are separate visual connector families and are excluded from the Grove menu. This geometry does not transmit power, I2C or RS485 signals through a slip ring.
 
@@ -24,7 +26,7 @@ frame.setPose({position: [20, 110, 0], rotation: [0.1, -0.2, 0.3]});
 cable.setOptions({slack: 20, bend: [0, 0, -1]});
 ```
 
-`cableLength` preserves the previous option's placement meaning: the initial mouth-to-mouth distance in millimetres, minimum 12. The default is 35. The default pose is solved from the Unit's actual `grove` Port, including its offset in Z, so both ends meet their sockets. It does not infer the endpoint from nominal shell length.
+For the standard four-core assembly above, `cableLength` preserves the previous option's placement meaning: the initial mouth-to-mouth distance in millimetres, minimum 12. The default is 35. The default pose is solved from the Unit's actual `grove` Port, including its offset in Z, so both ends meet their sockets. It does not infer the endpoint from nominal shell length. Special adapters use their own documented pose and length rules.
 
 Coordinates are in the host Port's local frame: +Y points out of the host, +Z points towards its front. `unitPose.position` is the Unit assembly origin in this frame; it is not the input socket position. `rotation` is an XYZ Euler rotation in radians; `quaternion` is `[x,y,z,w]` and takes precedence. Construction also accepts these fields in `unitPose`.
 
@@ -45,7 +47,7 @@ host.handle({type: 'pose', target: 'grove/unitFrame', rotation: [0, 0.2, 0.3]});
 host.handle({type: 'cable', target: 'grove/cable', slack: 12, bend: [0, 0, -1]});
 ```
 
-Setters synchronize immediately and request a render. External frameworks can instead write `unit.get('unitFrame').object3d.position/quaternion` and call their usual `host.update(dt,time)`; the cable detects endpoint changes. Its source inherits the attached host Port, so nested modules and rotated hosts retain correct mating frames. The original `sensor`, control, display and output-Port IDs are unchanged, including input-event bubbling, for example `grove/grove-1/sensor` through a HUB.
+Setters synchronize immediately and request a render. External frameworks can instead write `unit.get('unitFrame').object3d.position/quaternion` and call their usual `host.update(dt,time)`; the cable detects endpoint changes. Its source inherits the attached host Port, so nested modules and rotated hosts retain correct mating frames. Each product's implemented controls, displays and output Ports retain their IDs and input-event bubbling. For example, an ENV III on a HUB output exposes `grove/grove-1/sensor`; that path is not a requirement for other products.
 
 The cable follows endpoint poses and uses `slack` as an appearance control. It does not enforce a fixed material length or solve collisions with arbitrary scene objects. The initial arrangement and checked motion poses keep wires outside both enclosures; frameworks should choose outward-facing, separated poses and adjust `bend` to route around other objects. Mouths closer than 12 mm are rejected. Pose changes through `setPose` roll back on invalid separation.
 
@@ -62,10 +64,11 @@ The white plug has a controlled 1.2 mm mating nose, four open contact chambers, 
 ## Check
 
 ```sh
-node scripts/check-grove-cable.mjs
 node scripts/check-host-grove-assembly.mjs
 ```
 
-The first script enumerates every implemented Grove Unit and checks rendered-wire endpoint rings, both plug frames, four-wire bend clearance, Unit pose/host rotation, insertion bounds, real AtomS3R and Cardputer-ADV enclosures, nested rotated HUB attachment, preserved IDs/events, detach/reuse and cable-buffer disposal. Counts and results are saved in `artifacts/grove-cable-check.json`; its shell rays sample wire centerline segments.
+This current check compares its explicit coverage with every implemented controller and named configuration in the catalog, including the three Atom hosts and CoreS3+DinBase. It then checks every actual Grove source Port, including declared absence. Each connected case uses a real compact ENV III assembly; StackChan is checked at neutral, combined 35-degree and pitch 90-degree poses. It samples eight rails on each rendered tube surface every two rings, prunes unrelated meshes with world-space boxes, then casts against actual mesh triangles in both directions. Counts are derived from the catalog and completed checks, not fixed totals.
 
-The second checks all actual source Grove interfaces on the requested hosts and CoreS3+DinBase, including StackChan at neutral, combined35-degree and pitch90-degree poses. Each case uses a real compact ENV III assembly. It samples eight rails on each rendered tube surface every two rings, prunes unrelated meshes with world-space boxes, then casts against actual mesh triangles in both directions. Its mating frames and sampled surface results are in `artifacts/host-grove-assembly-check.json`. This broadens real-enclosure coverage; it does not prove every target or arbitrary scene pose collision-free. Browser appearance and hardware fit remain separate checks.
+The command prints a compact current report and writes no file by default. To retain full coverage and case details, pass `--report artifacts/new-host-grove-check.json` with an existing parent directory and a new filename; existing files are rejected. Importing the guarded `checkHostGroveAssembly()` export also writes no file. `artifacts/host-grove-assembly-check.json` and `artifacts/grove-cable-check.json` remain historical snapshots of their recorded runs. The old `check-grove-cable.mjs` assumes legacy `sensor` and standard four-core paths, so it is not a current all-Unit acceptance entry point.
+
+This check covers the host enclosures with the stated target and poses. It does not establish every Unit's adapter, nested dynamics or arbitrary scene collision clearance; use the corresponding product/API checks for those behaviors. Browser appearance remains a separate check.

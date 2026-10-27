@@ -31,7 +31,7 @@
 ## 检查与证据
 
 - 按改动运行相关产品专项和必要共享检查；共享输入、装配、生命周期改变时再扩大范围。专项检查真实导出与实例，不以替身或“没有抛错”冒称通过。
-- 目录或入口修改运行 `npm run catalog`；网页修改运行 `npm run check:demo` 并检查真实 DOM/指针/键盘、取消、失焦、卸载和控制台；runtime、资源或打包修改运行 `npm run build`。根据影响补 `npm run check` 及对应产品专项。
+- 目录或入口修改运行 `npm run catalog`；网页修改运行 `npm run check:demo` 并检查真实 DOM/指针/键盘、取消、失焦、卸载和控制台；主机按键与Grove装配分别使用 `npm run check:controllers`、`npm run check:connections`。runtime、资源或打包修改运行 `npm run build`；Unit特有结构使用对应产品专项。旧 `npm run check` 尚含历史目录假设及旧报告写入，不作为当前全库验收入口。
 - [manage.sh](manage.sh) 服务生产 `dist`。需要验证在线结果时，核对实际构建及 HTML、入口、目标 lazy chunk 和图像字节，区分开发服务、生产资源与真实设备证据。
 - `modeled` 只表示已有实现；`verified` 需要目录要求的实际几何、视觉报告和多视图证据，不能由 Node 检查或 build 自动提升。
 - 不重跑历史 finalizer、freeze 或 progress 脚本，不改旧成功记录来代表当前代码。缺陷保留历史证据，新增独立 amendment 并运行当前必要检查。

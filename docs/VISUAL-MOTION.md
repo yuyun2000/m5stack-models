@@ -135,6 +135,8 @@ joint.adopt(capGroup); // mount之后，将中性姿态实体归到轴下；保�
 
 ## 依据与验证
 
+当前主机配置的按放/取消及Grove源口统一入口为 `npm run check:controllers`、`npm run check:connections`。它们将显式覆盖与实时目录逐项核对，默认不写历史报告；当前范围与残余见[已有模型动态检查](plans/existing-dynamics-audit.md)。
+
 StackChan轴线/分组、原孔盖座和舵机轮廓/输出轴事实见 `source-manifest.json` 的 `motionStructures` 与 StackChan 产品的 `movingAssembly`、`coverSeatReview`、`servoOutlineReview`；原始变换记录见 `src/devices/stackchan/cad-map-motion.json`。Angle/Joystick/Light的精确机械限位和硬件零位仍未确认。
 
 ```sh
@@ -143,5 +145,7 @@ node scripts/check-stackchan-assembly.mjs
 ```
 
 检查覆盖按需渲染终帧、显式转速/停止、转轴层级、固定底座、真实帽压放、倾斜后的局部压轴、部件与端口刚性跟随、Module嵌套调用和销毁。浏览器动态视图、实物机械限位和实机行为须分别验证；本层只提供几何。
+
+StackChan耳座/输出连接可单独运行 `node scripts/check-stackchan-servo-mount.mjs`；加 `--strict` 时当前未闭合关系退出2。它从真实孔边界及面提取当前几何，明确保留原孔用途的假设，不把投影进入量或相近同轴当作完整安装通过。
 
 StackChan 隐藏舵机配合另用 `node scripts/check-stackchan-servo-fit.mjs` 输出数值诊断。当前结果为 `fit-unresolved`，加 `--strict` 时以2退出；正常运动检查通过不代表该机械配合通过。运行装配已按两组原STL孔轴将白盖、灰盖相对cradle注册，并采用官方顶视支持的不等半径齿轮盖轮廓；小半径、深度、隐藏台阶、Adapter板形和线束路线仍含推导。`--candidate-xy` 现在只临时对已注册盖座施加先前被拒绝的独立PDF XY偏移，结束后恢复运行变换；该扰动破坏原孔同轴关系，不是当前已合入的盖座修正。全局cradle/head定位及right fixture轴向座位仍是未合入候选，隐藏电机/板件安装继续待确认；未缩小电机、切削原壳或移动关节轴来掩盖干涉。数值结果见 `artifacts/stackchan-servo-fit-check.json`，该诊断不作制造配合验收。

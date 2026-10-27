@@ -1,0 +1,1227 @@
+{
+  "status": "partial-verified",
+  "date": "2026-10-27",
+  "runtimeCommit": "1dc68c7c80c7ee66099524f7d5f317cd4b0b9789",
+  "runtimeUnchanged": true,
+  "runtimeTree": "8d14bcad9d7a01346fe11f23b0ed65e1d4ebd198",
+  "catalogProducts": 201,
+  "bothWorkingCopiesPassed": [
+    "npm run check:controllers",
+    "npm run check:connections"
+  ],
+  "currentChecks": {
+    "public": {
+      "controllers": {
+        "status": "pass",
+        "controllers": 17,
+        "configurations": 18,
+        "controlsAcrossConfigurations": 153,
+        "perModel": {
+          "sticks3": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 3,
+                "momentary": 3,
+                "latching": 0,
+                "capacitive": 0,
+                "visibleSurfaceRays": 6,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 3,
+                  "capMeshes": 3,
+                  "fixedMeshChecks": 498,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "cores3": {
+            "configurations": [
+              {
+                "id": "module",
+                "controls": 2,
+                "momentary": 2,
+                "latching": 0,
+                "capacitive": 0,
+                "visibleSurfaceRays": 4,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 2,
+                  "capMeshes": 2,
+                  "fixedMeshChecks": 402,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              },
+              {
+                "id": "din",
+                "controls": 3,
+                "momentary": 2,
+                "latching": 1,
+                "capacitive": 0,
+                "visibleSurfaceRays": 6,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 3,
+                  "capMeshes": 8,
+                  "fixedMeshChecks": 253,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "stopwatch": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 3,
+                "momentary": 3,
+                "latching": 0,
+                "capacitive": 0,
+                "visibleSurfaceRays": 6,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 3,
+                  "capMeshes": 3,
+                  "fixedMeshChecks": 294,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "cardputer-adv": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 60,
+                "momentary": 58,
+                "latching": 2,
+                "capacitive": 0,
+                "visibleSurfaceRays": 120,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 60,
+                  "capMeshes": 60,
+                  "fixedMeshChecks": 15120,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "cardputer-zero": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 48,
+                "momentary": 47,
+                "latching": 1,
+                "capacitive": 0,
+                "visibleSurfaceRays": 96,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 48,
+                  "capMeshes": 94,
+                  "fixedMeshChecks": 19298,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "papermono": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 3,
+                "momentary": 3,
+                "latching": 0,
+                "capacitive": 0,
+                "visibleSurfaceRays": 6,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 3,
+                  "capMeshes": 3,
+                  "fixedMeshChecks": 162,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "core2": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 5,
+                "momentary": 2,
+                "latching": 0,
+                "capacitive": 3,
+                "visibleSurfaceRays": 4,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 5,
+                  "capMeshes": 2,
+                  "fixedMeshChecks": 493,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "papercolor": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 4,
+                "momentary": 4,
+                "latching": 0,
+                "capacitive": 0,
+                "visibleSurfaceRays": 8,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 4,
+                  "capMeshes": 4,
+                  "fixedMeshChecks": 308,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "nanoc6": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 1,
+                "momentary": 1,
+                "latching": 0,
+                "capacitive": 0,
+                "visibleSurfaceRays": 2,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 1,
+                  "capMeshes": 1,
+                  "fixedMeshChecks": 68,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "stackchan": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 5,
+                "momentary": 2,
+                "latching": 0,
+                "capacitive": 3,
+                "visibleSurfaceRays": 4,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 5,
+                  "capMeshes": 2,
+                  "fixedMeshChecks": 2308,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "tab5": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 2,
+                "momentary": 2,
+                "latching": 0,
+                "capacitive": 0,
+                "visibleSurfaceRays": 4,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 2,
+                  "capMeshes": 2,
+                  "fixedMeshChecks": 610,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "atoms3r": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 2,
+                "momentary": 2,
+                "latching": 0,
+                "capacitive": 0,
+                "visibleSurfaceRays": 4,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 2,
+                  "capMeshes": 5,
+                  "fixedMeshChecks": 211,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "nesso-n1": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 2,
+                "momentary": 2,
+                "latching": 0,
+                "capacitive": 0,
+                "visibleSurfaceRays": 4,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 2,
+                  "capMeshes": 2,
+                  "fixedMeshChecks": 258,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "stamplc": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 4,
+                "momentary": 4,
+                "latching": 0,
+                "capacitive": 0,
+                "visibleSurfaceRays": 8,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 4,
+                  "capMeshes": 4,
+                  "fixedMeshChecks": 1324,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "atom-lite": {
+            "configurations": [
+              {
+                "id": "complete",
+                "controls": 2,
+                "status": "pass",
+                "ownCurrentNativeFixture": true,
+                "partialFullActualGeometry": true,
+                "fixedGeometryAndExactReturn": true,
+                "multiSourceCancelNoClick": true
+              }
+            ]
+          },
+          "atom-matrix": {
+            "configurations": [
+              {
+                "id": "complete",
+                "controls": 2,
+                "status": "pass",
+                "ownCurrentNativeFixture": true,
+                "partialFullActualGeometry": true,
+                "fixedGeometryAndExactReturn": true,
+                "multiSourceCancelNoClick": true,
+                "rigidMainLens": {
+                  "status": "pass",
+                  "controls": 1,
+                  "capMeshes": 2,
+                  "fixedMeshChecks": 248,
+                  "visibleSurfaceRays": 5,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "atoms3-lite": {
+            "configurations": [
+              {
+                "id": "complete",
+                "controls": 2,
+                "status": "pass",
+                "ownCurrentNativeFixture": true,
+                "partialFullActualGeometry": true,
+                "fixedGeometryAndExactReturn": true,
+                "multiSourceCancelNoClick": true,
+                "nativeSurfaceRaysPerState": 83
+              }
+            ]
+          }
+        },
+        "scope": "Current explicit catalog controller/configuration coverage;actual physical press/release/partial/full and fixed geometry,source cancellation and rest/stable detents. Canvas drawing is stubbed. CPU visual-dynamics evidence only;no browser pixels,manufacturing tolerance,electrical,firmware or physical-device acceptance."
+      },
+      "connections": {
+        "checkedAt": "2026-10-27T02:17:21.119Z",
+        "controllers": 17,
+        "hostConfigurations": 18,
+        "sourcePorts": 22,
+        "cases": 28,
+        "matingChecks": 112,
+        "railSegments": 43008,
+        "scope": "Every implemented catalog controller and named configuration; actual Grove interfaces with a real compact Unit, sampled rendered tube-surface rails and mating transforms, including StackChan poses. Not every target Unit or an arbitrary-pose collision solver."
+      }
+    },
+    "private": {
+      "controllers": {
+        "status": "pass",
+        "controllers": 17,
+        "configurations": 18,
+        "controlsAcrossConfigurations": 153,
+        "perModel": {
+          "sticks3": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 3,
+                "momentary": 3,
+                "latching": 0,
+                "capacitive": 0,
+                "visibleSurfaceRays": 6,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 3,
+                  "capMeshes": 3,
+                  "fixedMeshChecks": 498,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "cores3": {
+            "configurations": [
+              {
+                "id": "module",
+                "controls": 2,
+                "momentary": 2,
+                "latching": 0,
+                "capacitive": 0,
+                "visibleSurfaceRays": 4,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 2,
+                  "capMeshes": 2,
+                  "fixedMeshChecks": 402,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              },
+              {
+                "id": "din",
+                "controls": 3,
+                "momentary": 2,
+                "latching": 1,
+                "capacitive": 0,
+                "visibleSurfaceRays": 6,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 3,
+                  "capMeshes": 8,
+                  "fixedMeshChecks": 253,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "stopwatch": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 3,
+                "momentary": 3,
+                "latching": 0,
+                "capacitive": 0,
+                "visibleSurfaceRays": 6,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 3,
+                  "capMeshes": 3,
+                  "fixedMeshChecks": 294,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "cardputer-adv": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 60,
+                "momentary": 58,
+                "latching": 2,
+                "capacitive": 0,
+                "visibleSurfaceRays": 120,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 60,
+                  "capMeshes": 60,
+                  "fixedMeshChecks": 15120,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "cardputer-zero": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 48,
+                "momentary": 47,
+                "latching": 1,
+                "capacitive": 0,
+                "visibleSurfaceRays": 96,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 48,
+                  "capMeshes": 94,
+                  "fixedMeshChecks": 19298,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "papermono": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 3,
+                "momentary": 3,
+                "latching": 0,
+                "capacitive": 0,
+                "visibleSurfaceRays": 6,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 3,
+                  "capMeshes": 3,
+                  "fixedMeshChecks": 162,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "core2": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 5,
+                "momentary": 2,
+                "latching": 0,
+                "capacitive": 3,
+                "visibleSurfaceRays": 4,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 5,
+                  "capMeshes": 2,
+                  "fixedMeshChecks": 493,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "papercolor": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 4,
+                "momentary": 4,
+                "latching": 0,
+                "capacitive": 0,
+                "visibleSurfaceRays": 8,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 4,
+                  "capMeshes": 4,
+                  "fixedMeshChecks": 308,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "nanoc6": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 1,
+                "momentary": 1,
+                "latching": 0,
+                "capacitive": 0,
+                "visibleSurfaceRays": 2,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 1,
+                  "capMeshes": 1,
+                  "fixedMeshChecks": 69,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "stackchan": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 5,
+                "momentary": 2,
+                "latching": 0,
+                "capacitive": 3,
+                "visibleSurfaceRays": 4,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 5,
+                  "capMeshes": 2,
+                  "fixedMeshChecks": 2308,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "tab5": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 2,
+                "momentary": 2,
+                "latching": 0,
+                "capacitive": 0,
+                "visibleSurfaceRays": 4,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 2,
+                  "capMeshes": 2,
+                  "fixedMeshChecks": 610,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "atoms3r": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 2,
+                "momentary": 2,
+                "latching": 0,
+                "capacitive": 0,
+                "visibleSurfaceRays": 4,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 2,
+                  "capMeshes": 5,
+                  "fixedMeshChecks": 211,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "nesso-n1": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 2,
+                "momentary": 2,
+                "latching": 0,
+                "capacitive": 0,
+                "visibleSurfaceRays": 4,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 2,
+                  "capMeshes": 2,
+                  "fixedMeshChecks": 258,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "stamplc": {
+            "configurations": [
+              {
+                "id": "default",
+                "controls": 4,
+                "momentary": 4,
+                "latching": 0,
+                "capacitive": 0,
+                "visibleSurfaceRays": 8,
+                "cancellation": {
+                  "status": "pass",
+                  "controls": 4,
+                  "capMeshes": 4,
+                  "fixedMeshChecks": 1324,
+                  "visibleSurfaceRays": 0,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "atom-lite": {
+            "configurations": [
+              {
+                "id": "complete",
+                "controls": 2,
+                "status": "pass",
+                "ownCurrentNativeFixture": true,
+                "partialFullActualGeometry": true,
+                "fixedGeometryAndExactReturn": true,
+                "multiSourceCancelNoClick": true
+              }
+            ]
+          },
+          "atom-matrix": {
+            "configurations": [
+              {
+                "id": "complete",
+                "controls": 2,
+                "status": "pass",
+                "ownCurrentNativeFixture": true,
+                "partialFullActualGeometry": true,
+                "fixedGeometryAndExactReturn": true,
+                "multiSourceCancelNoClick": true,
+                "rigidMainLens": {
+                  "status": "pass",
+                  "controls": 1,
+                  "capMeshes": 2,
+                  "fixedMeshChecks": 248,
+                  "visibleSurfaceRays": 5,
+                  "partialFullActualGeometry": true,
+                  "allFixedPhysicalAttributesIndexWorld": true,
+                  "pointerCancelWhileOtherSourceHolds": true,
+                  "cancelledFinalReleaseNoClick": true,
+                  "exactRestOrStableDetent": true
+                }
+              }
+            ]
+          },
+          "atoms3-lite": {
+            "configurations": [
+              {
+                "id": "complete",
+                "controls": 2,
+                "status": "pass",
+                "ownCurrentNativeFixture": true,
+                "partialFullActualGeometry": true,
+                "fixedGeometryAndExactReturn": true,
+                "multiSourceCancelNoClick": true,
+                "nativeSurfaceRaysPerState": 83
+              }
+            ]
+          }
+        },
+        "scope": "Current explicit catalog controller/configuration coverage;actual physical press/release/partial/full and fixed geometry,source cancellation and rest/stable detents. Canvas drawing is stubbed. CPU visual-dynamics evidence only;no browser pixels,manufacturing tolerance,electrical,firmware or physical-device acceptance."
+      },
+      "connections": {
+        "checkedAt": "2026-10-27T02:17:21.079Z",
+        "controllers": 17,
+        "hostConfigurations": 18,
+        "sourcePorts": 22,
+        "cases": 28,
+        "matingChecks": 112,
+        "railSegments": 43008,
+        "scope": "Every implemented catalog controller and named configuration; actual Grove interfaces with a real compact Unit, sampled rendered tube-surface rails and mating transforms, including StackChan poses. Not every target Unit or an arbitrary-pose collision solver."
+      }
+    }
+  },
+  "stackchanMount": {
+    "schemaVersion": 1,
+    "id": "stackchan",
+    "status": "mount-unresolved",
+    "runtimeChanged": false,
+    "sourceHoleToEarCorrespondence": "Assumed from the matching two-hole spacing and nearby Y/Z axes; not established as the actual production fixing scheme",
+    "mounts": [
+      {
+        "side": "front",
+        "earRims": [
+          {
+            "centerMm": [
+              -11.150000023841857,
+              6.65,
+              6.549999991819518
+            ],
+            "axis": [
+              -1,
+              0,
+              2.220446049250313e-16
+            ],
+            "radiusMm": 0.9999999935797385,
+            "vertices": 96,
+            "maxCircleErrorMm": 5.3581040382333356e-08
+          },
+          {
+            "centerMm": [
+              -9.55000000067055,
+              6.65,
+              6.549999991819518
+            ],
+            "axis": [
+              -1,
+              0,
+              2.220446049250313e-16
+            ],
+            "radiusMm": 0.9999999935797385,
+            "vertices": 96,
+            "maxCircleErrorMm": 5.3581040382333356e-08
+          }
+        ],
+        "whiteCoverRims": [
+          {
+            "centerMm": [
+              10.350787162780762,
+              6.6500008106609245,
+              6.600001006033899
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "radiusMm": 1.0999327618864128,
+            "vertices": 50,
+            "maxCircleErrorMm": 0.0001106893088804739
+          },
+          {
+            "centerMm": [
+              11.350787162780762,
+              6.649998867253366,
+              6.6000009073360575
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "radiusMm": 1.0999327618863148,
+            "vertices": 50,
+            "maxCircleErrorMm": 0.00011026397061275617
+          }
+        ],
+        "cradleRims": [
+          {
+            "centerMm": [
+              6.350787162780762,
+              6.65000070095013,
+              6.600005908508825
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "radiusMm": 0.9153766504126909,
+            "vertices": 42,
+            "maxCircleErrorMm": 0.000240115516260464
+          },
+          {
+            "centerMm": [
+              10.350787162780762,
+              6.6499992483623025,
+              6.600005927344493
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "radiusMm": 0.9153766504126832,
+            "vertices": 42,
+            "maxCircleErrorMm": 0.00024006005731780355
+          }
+        ],
+        "actualEarWorldXFaceRangeMm": [
+          -11.150000023841857,
+          -9.55000000067055
+        ],
+        "whiteCoverWorldXFaceRangeMm": [
+          10.350787162780762,
+          11.350787162780762
+        ],
+        "cradleWorldXFaceRangeMm": [
+          6.350787162780762,
+          10.350787162780762
+        ],
+        "earMinusCoverYZMm": [
+          1.6104285549545239e-07,
+          -0.05000096486546024
+        ],
+        "earToCoverAxisErrorMm": 0.05000096486571958,
+        "earToCradleAxisErrorMm": 0.05000592610714725,
+        "earToNearestCoverFaceGapMm": 19.900787163451312,
+        "earToNearestCradleFaceGapMm": 15.900787163451312,
+        "requiredPositiveXShiftToNearCradleFaceMm": 15.900787163451312,
+        "earAxisDistanceFromOutputAxisMm": 8.54999999181952,
+        "coverAxisDistanceFromOutputAxisMm": 8.600000956684987
+      },
+      {
+        "side": "rear",
+        "earRims": [
+          {
+            "centerMm": [
+              -11.150000023841862,
+              6.65,
+              -21.94999999956371
+            ],
+            "axis": [
+              -1,
+              0,
+              2.220446049250313e-16
+            ],
+            "radiusMm": 0.9999999939775712,
+            "vertices": 96,
+            "maxCircleErrorMm": 4.8456330281609894e-08
+          },
+          {
+            "centerMm": [
+              -9.550000000670556,
+              6.65,
+              -21.94999999956371
+            ],
+            "axis": [
+              -1,
+              0,
+              2.220446049250313e-16
+            ],
+            "radiusMm": 0.9999999939775712,
+            "vertices": 96,
+            "maxCircleErrorMm": 4.8456330281609894e-08
+          }
+        ],
+        "whiteCoverRims": [
+          {
+            "centerMm": [
+              10.350787162780762,
+              6.650000522064657,
+              -21.899998986633697
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "radiusMm": 1.0499354146675126,
+            "vertices": 50,
+            "maxCircleErrorMm": 0.0001221482485012082
+          },
+          {
+            "centerMm": [
+              11.350787162780762,
+              6.649999306307885,
+              -21.899998979583486
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "radiusMm": 1.0499354146674875,
+            "vertices": 50,
+            "maxCircleErrorMm": 0.00012227604370962375
+          }
+        ],
+        "cradleRims": [
+          {
+            "centerMm": [
+              6.300784111022949,
+              6.650000913872437,
+              -21.899987713615555
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "radiusMm": 0.8500059139437632,
+            "vertices": 17,
+            "maxCircleErrorMm": 1.2203708168345706e-05
+          },
+          {
+            "centerMm": [
+              10.250781059265137,
+              6.6500009674486344,
+              -21.899994298414065
+            ],
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "radiusMm": 0.8498859618540364,
+            "vertices": 42,
+            "maxCircleErrorMm": 0.00021411564005680006
+          }
+        ],
+        "actualEarWorldXFaceRangeMm": [
+          -11.150000023841862,
+          -9.550000000670556
+        ],
+        "whiteCoverWorldXFaceRangeMm": [
+          10.350787162780762,
+          11.350787162780762
+        ],
+        "cradleWorldXFaceRangeMm": [
+          6.300784111022949,
+          10.250781059265137
+        ],
+        "earMinusCoverYZMm": [
+          8.58137294557082e-08,
+          -0.05000101645511634
+        ],
+        "earToCoverAxisErrorMm": 0.05000101645518997,
+        "earToCradleAxisErrorMm": 0.05000899355774692,
+        "earToNearestCoverFaceGapMm": 19.90078716345132,
+        "earToNearestCradleFaceGapMm": 15.850784111693505,
+        "requiredPositiveXShiftToNearCradleFaceMm": 15.850784111693505,
+        "earAxisDistanceFromOutputAxisMm": 19.94999999956371,
+        "coverAxisDistanceFromOutputAxisMm": 19.899998983108585
+      }
+    ],
+    "outputReceiver": {
+      "originMm": [
+        -18,
+        6.649999999999999,
+        -2
+      ],
+      "axis": [
+        -1,
+        0,
+        2.220446049250313e-16
+      ],
+      "shaftWorldXRangeMm": [
+        -21.200000047683716,
+        -18
+      ],
+      "actualShaftProjectionMm": [
+        -4.365918565361188e-16,
+        3.2000000476837163
+      ],
+      "actualMaximumShaftRadiusMm": 1.9750000544152853,
+      "receivingRim": {
+        "centerMm": [
+          -20.70001983642578,
+          6.649999465224385,
+          -1.9999968000466888
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "radiusMm": 2.0999592627427273,
+        "vertices": 66,
+        "maxCircleErrorMm": 8.179613873515734e-05
+      },
+      "receivingPlaneProjectionMm": 2.7000198364257812,
+      "tipBeyondReceivingPlaneMm": 0.499980211257935,
+      "scope": "Actual shaft vertices and native arm circular entry plane; projected entry only, not tooth engagement, contact pressure or manufacturing fit"
+    },
+    "rigidConstraints": {
+      "axialTranslationPreservesTransverseAxisErrors": true,
+      "minimumPositiveXShiftToAssumedCradleSeatMm": 15.850784111693505,
+      "projectedEntryAfterThatWholeServoShiftMm": -15.35080390043557,
+      "wholeServoAxialShiftWouldLoseCurrentArmEntry": true,
+      "rollCannotExactlyMatchBothCurrentSourceAxes": true,
+      "reason": "Axial motion cannot correct Y/Z offsets. Roll preserves each ear axis distance from the output line. Moving the complete current package to the assumed ear seat also translates its output away from the retained left-arm entry."
+    },
+    "sourceNote": {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1205/SCS0009.pdf",
+      "page": 6,
+      "scope": "Official linked standalone SCS0009 drawing, not a K151 assembly transform",
+      "earBackDatumMm": [
+        16.8,
+        18.4
+      ],
+      "outputFaceToBackMm": 25.25,
+      "correspondingLocalEarZMm": [
+        -8.45,
+        -6.85
+      ],
+      "review": "The page-6 dimensions agree with the implemented ear depth; this diagnostic does not attribute the discrepancy to a misread ear depth or substitute a different servo variant."
+    },
+    "limits": [
+      "Measured mesh/rim geometry only; no source CAD, joint axis, servo size or pose is changed.",
+      "The assumed source-hole mating assignment and production servo variant remain unconfirmed; no manufacturing fit or tolerance conclusion.",
+      "Projected shaft entry is not proof of spline contact or a load-bearing attachment.",
+      "No voxel rerun, full collision proof, material/cable physics, electrical behavior or hardware validation. A non-unresolved status would still describe sampled correspondence only."
+    ]
+  },
+  "stackchanDynamicAudit": {
+    "status": "pass",
+    "combinedPoses": 95,
+    "actualHarnessEndpoints": 1330,
+    "harnessLengthMaximumErrorMm": 0.000102,
+    "mouthAndContactRays": 1710,
+    "pcbClearanceRays": 1710,
+    "physicalClearanceSamples": 326952,
+    "servoWireSamples": 6390,
+    "fixedBaseAndHeadComponentOwnership": true,
+    "actualPowerResetPressAndReleaseMm": 0.18,
+    "scope": "Current guarded exports and actual component geometry;does not include hidden servo packaging fit"
+  },
+  "stackchanPackaging": {
+    "status": "fit-unresolved",
+    "servoVoxelSamples": 6234,
+    "overlapGroups": 7,
+    "perPartOccupiedSamples": 387,
+    "isUnionVolume": false,
+    "adapterCoverSamples": 1500,
+    "adapterCoverOccupiedSamples": 0,
+    "scope": "Current default neutral geometry;estimated servo outline and source plastic overlap persist,not manufacturing proof"
+  },
+  "limits": [
+    "Overall dynamic goal remains incomplete because actual StackChan packaging is unresolved",
+    "CPU geometry and API checks do not replace current per-product browser or physical acceptance",
+    "Legacy npm check entry retains historical sensor/four-core assumptions and report writes;not a current full-catalog acceptance gate"
+  ],
+  "fileSha256": {
+    "scripts/check-controller-dynamics.mjs": "79609af6365d4d540677acf1f92e23ba0245b08bee5900c3f195d0686a353ad9",
+    "scripts/check-host-grove-assembly.mjs": "c2003543f1f4638debddfe9f216617669a1260d1465ce49c49745d5932aeafad",
+    "scripts/check-stackchan-servo-mount.mjs": "e94747449d6117ab27789ba650fd6cb4e5edd8df80581ddbb1e6b1a8fe36de2d",
+    "package.json": "47d8492f100f88f87ec6c16cd797ae72a43cb10afb9007daaf5679b066a8b6a0"
+  }
+}
