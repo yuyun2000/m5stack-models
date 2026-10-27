@@ -1,0 +1,273 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-10-27T00:27:27.831836+00:00",
+  "amendment": "us915-sma-2026-10-27",
+  "id": "lorawan-us915",
+  "catalogCount": 198,
+  "stage": "modeled",
+  "verified": 0,
+  "visibleSource": {
+    "source_url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20LoRaWAN-US915/10.webp",
+    "final_url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20LoRaWAN-US915/10.webp",
+    "http_status": 200,
+    "bytes": 17246,
+    "sha256": "0ca652d373ab43778f500f3b5b2f598104f60fcdb52fb46fe8039da7b822b721",
+    "file": "us915-own-10.webp",
+    "visuallyInspected": true,
+    "fact": "Own US915 visible solid body centre pin; prior body hollow-contact inference contradicted",
+    "unconfirmed": "Exact dimensions/SMA or RP-SMA polarity/part number/thread/manufacturing mating; accessory inside remains inferred"
+  },
+  "geometry": {
+    "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+    "physicalMeshes": 236,
+    "physicalBodyMeshes": 236,
+    "triangles": 39412,
+    "nativeTriangles": 6592,
+    "nativeRawTriangles": 13184,
+    "duplicatePreviewFaces": 6592,
+    "allNativeAttributesIndexSourceFaceIdRetained": true,
+    "allClosedPositiveDirectedTwoEdges": true,
+    "frontSide": true,
+    "nativeShellMm": [
+      24,
+      64,
+      8
+    ],
+    "actualPhysicalEnvelopeMm": [
+      24,
+      71.39999980931363,
+      8.00000000000061
+    ],
+    "documentBodyMm": [
+      24,
+      71.4,
+      8
+    ],
+    "nativeBoreWallRays": 16,
+    "actualNativeTubeToPcbReliefMm": [
+      0.5453857426036848,
+      0.5453834537852345
+    ],
+    "realNativeRecessFilmBackingRays": 6,
+    "physicalFilms": 2,
+    "actualSmaMetalWindows": 2,
+    "smaAmendment": {
+      "ownVisibleSource": "US915 official 10.webp",
+      "bodyCentre": "solid-visible-pin",
+      "actualPinRadiusMm": 0.31,
+      "actualPinY": [
+        35.4,
+        38.9
+      ],
+      "actualRecessedDielectricY": [
+        35.3,
+        37.399999904632566
+      ],
+      "pinExposedFromDielectricMm": 1.500000095367433,
+      "pinInsideBarrelRimMm": 0.499999809265141,
+      "pinBaseAxialRetentionMm": 0.05000000298023366,
+      "accessory": {
+        "receivingContact": "real hollow ring with deep stop; unseen inner design inferred",
+        "legacyPinAliasPreserved": true,
+        "actualReceiverY": [
+          38,
+          41.799999952316284
+        ],
+        "actualStopY": [
+          41.8,
+          42.05
+        ],
+        "actualReceiverInnerWallRaysMm": [
+          0.3700000047683716,
+          0.3700000047683715,
+          0.3700000047683719,
+          0.37000000476837125
+        ],
+        "actualPinEngagementMm": 0.8999999999999986,
+        "actualPositiveRadialClearanceRaysMm": [
+          0.06006948766799445,
+          0.0600694876679945,
+          0.060069487667994394,
+          0.060069487667994276
+        ],
+        "receiverToBodyDielectricAxialGapMm": 0.6000000953674345,
+        "pinTipToReceiverStopAxialGapMm": 2.8999999999999986,
+        "dielectricRetainedIntoCouplingBackMm": 0.2500001907348661,
+        "actualStopTouchesReceiverEnd": true
+      },
+      "inferred": "Exact sizes/contact polarity/thread/mating fit; ownphoto confirms only visible body pin shape"
+    },
+    "groveWallRays": 4,
+    "actualGroveContacts": 4,
+    "actualPlatedBores": 4,
+    "moduleRetainedTerminals": 32,
+    "realRecessedScrews": 3,
+    "accessoryPresent": true,
+    "accessoryMeshes": 48,
+    "accessoryTriangles": 5588,
+    "ownLedButtonJointApiCount": 0,
+    "antennaVendorLengthMm": 195,
+    "antennaDocumentaryGainDbi": 2.3,
+    "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+  },
+  "currentSmoke": "docs/research/lorawan-us915/sma-amendment-2026-10-27-smoke.json",
+  "currentChecker": "scripts/check-lorawan-us915-sma-amendment.mjs",
+  "actualChecks": {
+    "public": {
+      "status": "pass",
+      "configurationCases": 6,
+      "transformedHubCases": 1,
+      "sourceLoaderUsed": false,
+      "sha256": "df5c9d2b6d680ddf18a09bedf8c102566a1f878151310bc9f8b981ef83225252"
+    },
+    "private": {
+      "status": "pass",
+      "configurationCases": 6,
+      "transformedHubCases": 1,
+      "sourceLoaderUsed": false,
+      "sha256": "df5c9d2b6d680ddf18a09bedf8c102566a1f878151310bc9f8b981ef83225252"
+    }
+  },
+  "builds": {
+    "public": {
+      "status": "pass",
+      "logSha256": "347ab57be8bad9516b767def4864c08367126c04b5ef0d5384d3946c26fcaf98"
+    },
+    "private": {
+      "status": "pass",
+      "logSha256": "178706e836ba1c801e7175a58399365928178f7501812f8d9c9f4bd0b9e11868"
+    }
+  },
+  "liveAssets": {
+    "catalog": 198,
+    "ownRuntimeChunk": "lorawan-us915-t4POYiYY.js",
+    "chunkSha256": "a5f87e0491efe9e2bd4d945febd7a94ccf975760b217059101cfc49d1c38717f",
+    "unchangedPngs": 2
+  },
+  "runtimeChanges": [
+    {
+      "target": "src/units/lorawan-us915/assembly.js",
+      "proposed": "proposed/src/units/lorawan-us915/assembly.js",
+      "oldSha256": "4ba69126d8b070553f4868384fbe0b50a9fc3fe43bac6f6b5c6ee35973cc343c",
+      "newSha256": "e384c40ed6bef5688615836009db859dc3e8210f4268baeee1c41b2e0882d7f8"
+    },
+    {
+      "target": "src/units/lorawan-us915/Antenna.js",
+      "proposed": "proposed/src/units/lorawan-us915/Antenna.js",
+      "oldSha256": "5213dba1210bf87091474454aaf6c381c26f74ff6c65912ee9202898c7252da6",
+      "newSha256": "ddeedd3ee121504132fa7e584bde46c1f558c5c55ae72026603b5495c1db39e3"
+    }
+  ],
+  "protectedFilesUnchanged": {
+    "public": 2431,
+    "private": 3096
+  },
+  "historicalFilesUnchanged": 168,
+  "historicalBatch51And52SnapshotsPreserved": true,
+  "oldSmoke": {
+    "path": "docs/research/lorawan-us915/smoke.json",
+    "sha256": "8004799b36bb787a3205a3453b9612f86ee40a1b14dbb8d1560956efeb2ac822",
+    "status": "historical; superseded for SMA centre-contact detail"
+  },
+  "changedFiles": {
+    "public": {
+      "README.md": "37e2768cac8e40749dfc004490def13fea8d0abec3584ef26b66105f64153ebe",
+      "catalog/products.json": "775f8f05c3c15848eaf1ee4a5fb88bdb3fbe1de4dfa79323ed94220ba58b576c",
+      "docs/AGENT-INTEGRATION.md": "80f5b2ff8fe41ebff80d5ac057aa0c39666dd7adcb2df5a1940c7bacef095331",
+      "docs/CARDKBORIGINAL-POECAMORIGINAL-LORAWANUS915-UNITS.md": "095c7eb3e60e958309b7e41e6a779d22fc44416374e1f273c23972ae0735ceba",
+      "docs/LOCAL-EXPANSION.md": "01814f7cfe786eff27115a739a85e453dbe45fa3b61ddbbd999056a4c7c66717",
+      "docs/US915-SMA-AMENDMENT-2026-10-27.md": "748ddaa9c1939647f9c584359e41fed9e888f9db512edb41f4ceb772e60af5b6",
+      "docs/research/lorawan-us915/modeling.md": "d0745c440b746695e32cce97c45e06e382f5aab075fe9914fa9a6b94bb357b70",
+      "docs/research/lorawan-us915/sma-amendment-2026-10-27-smoke.json": "df5c9d2b6d680ddf18a09bedf8c102566a1f878151310bc9f8b981ef83225252",
+      "docs/research/lorawan-us915/sources.json": "3dc43a18d09988f5d227b9d28fa4dcd41a3cfc03892ead1edefa4e2d80f6b22a",
+      "scripts/check-cardkboriginal-poecamoriginal-lorawanus915-units.mjs": "535466a958c3e6710d6508ffebfda50796608e851316d026634c8ae1e94794ac",
+      "scripts/check-lorawan-us915-sma-amendment.mjs": "3df5bb4d53d8376addafac5b58a7e6767d9acc2b8e2b61622ed86963266cb96e",
+      "source-manifest.json": "b10e98fa41ed39b35bb7942e846409c9eb0c57f086001a26ea7544890adaf607",
+      "src/units/lorawan-us915/Antenna.js": "ddeedd3ee121504132fa7e584bde46c1f558c5c55ae72026603b5495c1db39e3",
+      "src/units/lorawan-us915/assembly.js": "e384c40ed6bef5688615836009db859dc3e8210f4268baeee1c41b2e0882d7f8"
+    },
+    "private": {
+      "README.md": "14f44d78f8fd07e00701e64551527148f9d6bce383a88c12694e20b8b177743a",
+      "catalog/products.json": "db1650f486fa809204cc6abddd3bfedcd5cc09232ce466901f98225d092b2be4",
+      "docs/AGENT-INTEGRATION.md": "fc1f62d456f195dcbd0f274a77b98f6de47b4f488f138c50ace856a5f3883298",
+      "docs/CARDKBORIGINAL-POECAMORIGINAL-LORAWANUS915-UNITS.md": "c3c90d63ee546ab77fcea4aca41b93a71ddbd3cfe5f7af97b55a3364f6bc28eb",
+      "docs/RESUME.md": "92953364dfa86b351d9c03a10dacc06971aecd75bf27730de08496d0a01237c1",
+      "docs/US915-SMA-AMENDMENT-2026-10-27.md": "6312bc5c61991c1ea477b6eeca636321016724c56aa6f330f43145b021c7e1fa",
+      "docs/plans/active.md": "0e5e6fb46782e9937627e9f941e01b48f856653e9b0dababe0293ec6291968c3",
+      "docs/research/lorawan-us915/modeling.md": "d0745c440b746695e32cce97c45e06e382f5aab075fe9914fa9a6b94bb357b70",
+      "docs/research/lorawan-us915/sma-amendment-2026-10-27-smoke.json": "df5c9d2b6d680ddf18a09bedf8c102566a1f878151310bc9f8b981ef83225252",
+      "docs/research/lorawan-us915/sources.json": "3dc43a18d09988f5d227b9d28fa4dcd41a3cfc03892ead1edefa4e2d80f6b22a",
+      "scripts/check-cardkboriginal-poecamoriginal-lorawanus915-units.mjs": "535466a958c3e6710d6508ffebfda50796608e851316d026634c8ae1e94794ac",
+      "scripts/check-lorawan-us915-sma-amendment.mjs": "3df5bb4d53d8376addafac5b58a7e6767d9acc2b8e2b61622ed86963266cb96e",
+      "src/units/lorawan-us915/Antenna.js": "ddeedd3ee121504132fa7e584bde46c1f558c5c55ae72026603b5495c1db39e3",
+      "src/units/lorawan-us915/assembly.js": "e384c40ed6bef5688615836009db859dc3e8210f4268baeee1c41b2e0882d7f8"
+    }
+  },
+  "localLinksChecked": 682,
+  "preexistingMissingLinksPreserved": [
+    {
+      "repository": "private",
+      "file": "README.md",
+      "target": "artifacts/id-rf433-expansion/progress.json",
+      "unchangedFromCapturedInput": true
+    },
+    {
+      "repository": "private",
+      "file": "docs/AGENT-INTEGRATION.md",
+      "target": "../artifacts/id-rf433-expansion/progress.json",
+      "unchangedFromCapturedInput": true
+    },
+    {
+      "repository": "private",
+      "file": "docs/AGENT-INTEGRATION.md",
+      "target": "../artifacts/accel-op90-op180-expansion/progress.json",
+      "unchangedFromCapturedInput": true
+    },
+    {
+      "repository": "private",
+      "file": "docs/AGENT-INTEGRATION.md",
+      "target": "../artifacts/audio-pressure-expansion/progress.json",
+      "unchangedFromCapturedInput": true
+    },
+    {
+      "repository": "private",
+      "file": "docs/AGENT-INTEGRATION.md",
+      "target": "../artifacts/roller-mini-can-ina226-expansion/progress.json",
+      "unchangedFromCapturedInput": true
+    },
+    {
+      "repository": "private",
+      "file": "docs/AGENT-INTEGRATION.md",
+      "target": "../artifacts/ranging-presence-expansion/progress.json",
+      "unchangedFromCapturedInput": true
+    },
+    {
+      "repository": "private",
+      "file": "docs/AGENT-INTEGRATION.md",
+      "target": "THERMAL-MODEL-NOTES.md",
+      "unchangedFromCapturedInput": true
+    },
+    {
+      "repository": "private",
+      "file": "docs/AGENT-INTEGRATION.md",
+      "target": "ANGLE-MODEL-NOTES.md",
+      "unchangedFromCapturedInput": true
+    },
+    {
+      "repository": "private",
+      "file": "docs/AGENT-INTEGRATION.md",
+      "target": "../source-manifest.json",
+      "unchangedFromCapturedInput": true
+    },
+    {
+      "repository": "private",
+      "file": "docs/AGENT-INTEGRATION.md",
+      "target": "NCIR-MODEL-NOTES.md",
+      "unchangedFromCapturedInput": true
+    }
+  ],
+  "gitHead": "296128b6173562d51976073dfa50a5b0ec945030",
+  "publication": "Local amendment only; no additional commit or push",
+  "privacyScope": "All current changed public files and new product metadata checked in full; private append-only shared notes retain their captured prefix and only the newly appended text is scanned",
+  "scope": "Own US915 contact correction, current applied no-loader checks, exact narrow sync, builds, live assets and privacy; no historical suite, browser/GPU or manufacturing/electrical/RF acceptance"
+}

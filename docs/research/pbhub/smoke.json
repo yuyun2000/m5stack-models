@@ -1,0 +1,258 @@
+{
+  "status": "pass",
+  "id": "pbhub",
+  "route": "own-original-U041-photo-parametric",
+  "physical": {
+    "route": "own-original-U041-photo-parametric",
+    "nativeFaces": 0,
+    "physicalMeshes": 281,
+    "triangles": 44924,
+    "envelopeMm": [
+      24,
+      48.00000011920929,
+      10.8
+    ],
+    "currentNominalMm": [
+      24,
+      48,
+      10.8
+    ],
+    "historicalNominalMm": [
+      24,
+      48,
+      12
+    ],
+    "trueMountAxes": 2,
+    "frontSideMountBoreWallRays": 40,
+    "openWindowBackedRays": 3,
+    "PCBDrills": 28,
+    "PCBDrillWallRays": 112,
+    "physicalPorts": 7,
+    "retainedContacts": 28,
+    "actualReceivingWallRays": 14,
+    "visiblePackageLeads": 32,
+    "physicalRearFilms": 1,
+    "ordinaryPngs": 2,
+    "scope": "Appearance reconstruction;hidden installation/fit inferred,no productionBOM/electrical/GPU/manufacturing acceptance"
+  },
+  "transformedPhysical": {
+    "route": "own-original-U041-photo-parametric",
+    "nativeFaces": 0,
+    "physicalMeshes": 281,
+    "triangles": 44924,
+    "envelopeMm": [
+      24,
+      48.000000119209275,
+      10.800000000000011
+    ],
+    "currentNominalMm": [
+      24,
+      48,
+      10.8
+    ],
+    "historicalNominalMm": [
+      24,
+      48,
+      12
+    ],
+    "trueMountAxes": 2,
+    "frontSideMountBoreWallRays": 40,
+    "openWindowBackedRays": 3,
+    "PCBDrills": 28,
+    "PCBDrillWallRays": 112,
+    "physicalPorts": 7,
+    "retainedContacts": 28,
+    "actualReceivingWallRays": 14,
+    "visiblePackageLeads": 32,
+    "physicalRearFilms": 1,
+    "ordinaryPngs": 2,
+    "scope": "Appearance reconstruction;hidden installation/fit inferred,no productionBOM/electrical/GPU/manufacturing acceptance"
+  },
+  "directRuntime": {
+    "staticNoProtocolCommandTypes": 16,
+    "rejectedPortCommands": 112,
+    "physicalPorts": 7,
+    "downstreamBranches": 6,
+    "downstreamConstructor": "Actual current GroveModule synchronously constructed;no stub/historical unit",
+    "fourWireEndpointChecks": 48,
+    "hierarchicalAddressing": true,
+    "eachBranchPoseDetachReattachIndependent": true,
+    "peerFramebufferAndNoEchoInvariant": true,
+    "disposedDownstreamResources": [
+      350,
+      350,
+      350,
+      350,
+      350,
+      350
+    ],
+    "scope": "Mechanical branch ownership/cable only,no GPIO/ADC/PWM/RGB/I2C/address simulation"
+  },
+  "transformedRuntime": {
+    "staticNoProtocolCommandTypes": 16,
+    "rejectedPortCommands": 112,
+    "physicalPorts": 7,
+    "downstreamBranches": 6,
+    "downstreamConstructor": "Actual current GroveModule synchronously constructed;no stub/historical unit",
+    "fourWireEndpointChecks": 48,
+    "hierarchicalAddressing": true,
+    "eachBranchPoseDetachReattachIndependent": true,
+    "peerFramebufferAndNoEchoInvariant": true,
+    "disposedDownstreamResources": [
+      350,
+      350,
+      350,
+      350,
+      350,
+      350
+    ],
+    "scope": "Mechanical branch ownership/cable only,no GPIO/ADC/PWM/RGB/I2C/address simulation"
+  },
+  "artworkCases": [
+    {
+      "entry": "Model",
+      "configuration": "complete",
+      "physicalAttributesIndexWorldInvariant": true,
+      "panelCount": 2
+    },
+    {
+      "entry": "GroveModule",
+      "configuration": "complete",
+      "physicalAttributesIndexWorldInvariant": true,
+      "panelCount": 2
+    }
+  ],
+  "api": {
+    "body": [
+      "grove",
+      "grove-0",
+      "grove-1",
+      "grove-2",
+      "grove-3",
+      "grove-4",
+      "grove-5"
+    ],
+    "module": [
+      "grove",
+      "grove-0",
+      "grove-1",
+      "grove-2",
+      "grove-3",
+      "grove-4",
+      "grove-5",
+      "unitFrame",
+      "cable"
+    ],
+    "ports": [
+      "grove",
+      "grove-0",
+      "grove-1",
+      "grove-2",
+      "grove-3",
+      "grove-4",
+      "grove-5"
+    ],
+    "defaults": {},
+    "configurations": [
+      {
+        "id": "complete",
+        "name": "原版 PbHub · 六路 GPIO 扩展外观",
+        "options": {}
+      }
+    ],
+    "configurationSchema": {}
+  },
+  "actualParentChange": "StickS3 direct -> HUB route2 -> transformed StickS3/HUB/UnitFrame",
+  "peerAndFramebuffer": true,
+  "noNonPortEcho": true,
+  "disposedResources": 1044,
+  "scope": "Current exact U041 CPU geometry/API/readback only;no browser/GPU/hardware/manufacturing/electrical/firmware validation",
+  "topology": {
+    "closedPositiveSolids": 281,
+    "triangles": 44924,
+    "directedInvalidEdges": 0,
+    "degenerateTriangles": 0,
+    "allMaterialsFrontSide": true
+  },
+  "artworkReadback": [
+    {
+      "id": "rear",
+      "path": "src/units/pbhub/artwork/rear.png",
+      "kind": "reference-redraw",
+      "pixels": [
+        1620,
+        2840
+      ],
+      "sha256": "51c90d56cfac7971e07af11c4a53ef85249897a6ab6774037db6fce85047f2fb",
+      "source": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pbhub/pbhub_02.webp",
+        "sha256": "5c3e98dc324605b30f8720624c44d187cc33285286cc51ad1eb3ffa87e96197d"
+      },
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "rgbaReadback": true,
+      "visuallyInspected": true,
+      "physicalCarrier": "Actual rear0.08mm adhesive film",
+      "method": "Independent literal text/color/number code redraw;no source photograph pixels",
+      "actualText": [
+        "Pb.HUB",
+        "MEGA",
+        "328",
+        "ADDR 0X61~0X68",
+        "PORT.A.I2C",
+        "SCL",
+        "SDA",
+        "5V",
+        "GND"
+      ],
+      "omitted": [
+        "old0x40~0x47",
+        "QC",
+        "unknownmicrotext",
+        "individualcodes",
+        "packaging"
+      ],
+      "registrationInferred": true
+    },
+    {
+      "id": "pcb",
+      "path": "src/units/pbhub/artwork/pcb.png",
+      "kind": "reference-redraw",
+      "pixels": [
+        2020,
+        3020
+      ],
+      "sha256": "1b8ae244a12dca5417b222b4b27eb8d3f399827b28d30c96244ba4aa59e99675",
+      "source": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pbhub/pbhub_06.webp",
+        "sha256": "f7f2e9adc02a5ce736978f55536d51ceff4a621da0070d7335b358383d9f4ebb"
+      },
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "rgbaReadback": true,
+      "visuallyInspected": true,
+      "physicalCarrier": "Actual black PCB front,not adhesivefilm",
+      "method": "Independent literal text/color/number code redraw;no source photograph pixels",
+      "actualText": [
+        "3",
+        "2",
+        "4",
+        "1",
+        "5",
+        "0"
+      ],
+      "omitted": [
+        "old0x40~0x47",
+        "QC",
+        "unknownmicrotext",
+        "individualcodes",
+        "packaging"
+      ],
+      "registrationInferred": true
+    }
+  ]
+}

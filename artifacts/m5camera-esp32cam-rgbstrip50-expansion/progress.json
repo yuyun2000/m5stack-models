@@ -1,0 +1,2605 @@
+{
+  "savedAt": "2026-10-26T23:32:27.798922+00:00",
+  "stage": "modeled",
+  "scope": "Own original U017/U007 camera assemblies and A093500mm30LED5050coatedstrip,actual cap appearance/passive opticalframes/threewireadapter and externally driven pixel/flex shape with matching ordinaryPNG;no browser or wholecatalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 179,
+    "modeled": 193,
+    "verified": 0
+  },
+  "localHead": "296128b6173562d51976073dfa50a5b0ec945030",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "m5camera",
+      "status": "pass",
+      "report": "docs/research/m5camera/smoke.json",
+      "physicalReceipt": "physical",
+      "meshes": 491,
+      "triangles": 40608
+    },
+    {
+      "id": "esp32cam",
+      "status": "pass",
+      "report": "docs/research/esp32cam/smoke.json",
+      "physicalReceipt": "entryReports[entry=Model].geometry",
+      "meshes": 601,
+      "triangles": 19908
+    },
+    {
+      "id": "rgb-led-strip-50cm",
+      "status": "pass",
+      "report": "docs/research/rgb-led-strip-50cm/smoke.json",
+      "physicalReceipt": "configurations[id=complete,entry=Model].physical",
+      "meshes": 747,
+      "triangles": 77672
+    }
+  ],
+  "pngCount": 2,
+  "rasters": [
+    {
+      "path": "src/units/m5camera/reference-redraw-back.png",
+      "pixels": [
+        2100,
+        3800
+      ],
+      "sha256": "2a1098ef845d4a97c1928c826018f8bb4b7be661b40eca336a63339d6bb6491c"
+    },
+    {
+      "path": "src/units/rgb-led-strip-50cm/artwork/plus5v.png",
+      "pixels": [
+        1024,
+        512
+      ],
+      "sha256": "86def3685a178e1665e33082dc20dc482d7159949acdfa07529534e4dbc82b83"
+    }
+  ],
+  "frozenPublicAPI": {
+    "m5camera": {
+      "exports": [
+        "GroveModule",
+        "Model",
+        "configurationSchema",
+        "configurations",
+        "defaults",
+        "spec"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [
+        "reset"
+      ],
+      "leds": [],
+      "joysticks": [],
+      "manualInputs": [],
+      "displays": [],
+      "ports": [
+        "grove",
+        "usb"
+      ],
+      "joints": [],
+      "anchors": [
+        "camera"
+      ],
+      "accessoryExports": [],
+      "defaults": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整原版 M5Camera U017",
+          "options": {}
+        }
+      ],
+      "pngCount": 1,
+      "visualCommands": {
+        "reset": {
+          "type": "button",
+          "actions": [
+            "press",
+            "release",
+            "cancel",
+            "click",
+            "state"
+          ],
+          "travelMm": 0.22,
+          "axis": [
+            -1,
+            0,
+            0
+          ],
+          "state": {
+            "pressed": "boolean"
+          },
+          "scope": "Only cap/stem physical motion and inputintent;no ESP/reset/power/WiFi/camera firmware"
+        },
+        "camera": {
+          "kind": "component",
+          "interactive": false,
+          "state": {},
+          "sensor": "OV2640",
+          "documentaryFovDeg": 65,
+          "commands": [],
+          "scope": "Passive inferred optical frame,no focal calibration/video/AI/focusjoint"
+        },
+        "unitFrame": {
+          "type": "pose",
+          "fields": [
+            "position",
+            "rotation",
+            "quaternion",
+            "distance"
+          ]
+        },
+        "cable": {
+          "type": "cable",
+          "fields": [
+            "slack",
+            "bend"
+          ]
+        }
+      }
+    },
+    "esp32cam": {
+      "exports": [
+        "GroveModule",
+        "Model",
+        "configurationSchema",
+        "configurations",
+        "defaults",
+        "spec"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [
+        "key"
+      ],
+      "leds": [],
+      "joysticks": [],
+      "manualInputs": [],
+      "displays": [],
+      "ports": [
+        "grove",
+        "usb"
+      ],
+      "joints": [],
+      "anchors": [
+        "camera"
+      ],
+      "accessoryExports": [],
+      "defaults": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "原版 ESP32CAM U007 裸板",
+          "options": {}
+        }
+      ],
+      "pngCount": 0,
+      "visualCommands": {
+        "key": {
+          "type": "button",
+          "target": "key",
+          "actions": [
+            "press",
+            "release",
+            "cancel",
+            "click",
+            "state"
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "longPressMs": 0
+        },
+        "camera": "Passive component;commands unsupported",
+        "ports": {
+          "types": [
+            "attach",
+            "detach"
+          ],
+          "targets": [
+            "grove",
+            "usb"
+          ],
+          "scope": "Mechanical only"
+        },
+        "unitFrame": {
+          "type": "pose",
+          "target": "unitFrame",
+          "fields": [
+            "position",
+            "rotation",
+            "quaternion",
+            "distance"
+          ]
+        },
+        "cable": {
+          "type": "cable",
+          "target": "cable",
+          "fields": [
+            "slack",
+            "bend"
+          ]
+        }
+      }
+    },
+    "rgb-led-strip-50cm": {
+      "exports": [
+        "GroveModule",
+        "InputAdapter",
+        "Model",
+        "configurationSchema",
+        "configurations",
+        "defaults",
+        "spec"
+      ],
+      "canonicalCableInput": "input",
+      "controls": [],
+      "leds": [
+        "pixel-0",
+        "pixel-1",
+        "pixel-2",
+        "pixel-3",
+        "pixel-4",
+        "pixel-5",
+        "pixel-6",
+        "pixel-7",
+        "pixel-8",
+        "pixel-9",
+        "pixel-10",
+        "pixel-11",
+        "pixel-12",
+        "pixel-13",
+        "pixel-14",
+        "pixel-15",
+        "pixel-16",
+        "pixel-17",
+        "pixel-18",
+        "pixel-19",
+        "pixel-20",
+        "pixel-21",
+        "pixel-22",
+        "pixel-23",
+        "pixel-24",
+        "pixel-25",
+        "pixel-26",
+        "pixel-27",
+        "pixel-28",
+        "pixel-29"
+      ],
+      "joysticks": [],
+      "manualInputs": [],
+      "displays": [],
+      "ports": [
+        "input",
+        "output"
+      ],
+      "joints": [],
+      "anchors": [],
+      "accessoryExports": [
+        "InputAdapter"
+      ],
+      "defaults": {
+        "bendDeg": 0,
+        "adapter": true
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "A093 0.5米30灯完整直条与三线转接",
+          "options": {}
+        },
+        {
+          "id": "arc",
+          "name": "A093 连续90度展示弯曲",
+          "options": {
+            "bendDeg": 90
+          }
+        },
+        {
+          "id": "reverse",
+          "name": "A093 反向60度展示弯曲",
+          "options": {
+            "bendDeg": -60
+          }
+        }
+      ],
+      "pngCount": 1,
+      "visualCommands": {
+        "flex": {
+          "type": "flex",
+          "target": "flex",
+          "fields": [
+            "bendDeg",
+            "durationMs"
+          ],
+          "rangeDeg": [
+            -120,
+            120
+          ],
+          "scope": "Externally driven circular-arc display only;input anchored,not material/rated bend"
+        },
+        "pixels": {
+          "type": "led",
+          "targets": [
+            "pixel-0",
+            "pixel-1",
+            "pixel-2",
+            "pixel-3",
+            "pixel-4",
+            "pixel-5",
+            "pixel-6",
+            "pixel-7",
+            "pixel-8",
+            "pixel-9",
+            "pixel-10",
+            "pixel-11",
+            "pixel-12",
+            "pixel-13",
+            "pixel-14",
+            "pixel-15",
+            "pixel-16",
+            "pixel-17",
+            "pixel-18",
+            "pixel-19",
+            "pixel-20",
+            "pixel-21",
+            "pixel-22",
+            "pixel-23",
+            "pixel-24",
+            "pixel-25",
+            "pixel-26",
+            "pixel-27",
+            "pixel-28",
+            "pixel-29"
+          ],
+          "fields": [
+            "on",
+            "color",
+            "brightness"
+          ],
+          "scope": "30 independent external colors/brightness;no automatic rainbow/data/power/protocol"
+        },
+        "ports": {
+          "types": [
+            "attach",
+            "detach"
+          ],
+          "targets": [
+            "input",
+            "output"
+          ],
+          "scope": "Own complementary3P families;no strip-body Grove receiver/electrical routing"
+        },
+        "unitFrame": {
+          "type": "pose",
+          "target": "unitFrame",
+          "fields": [
+            "position",
+            "rotation",
+            "quaternion",
+            "distance"
+          ],
+          "entry": "GroveModule only",
+          "distanceRangeMm": [
+            45,
+            112
+          ],
+          "scope": "Pose validation retains nominal100mm adapter;unsupported stretch/endpoint direction rejects and rolls back"
+        },
+        "cable": {
+          "type": "cable",
+          "target": "input/cable",
+          "fields": [
+            "bend"
+          ],
+          "scope": "Transverse route vector only;3 wires,100mm centerline,real sourceGrove plug and targetblack3P plug"
+        },
+        "state": {
+          "type": "state",
+          "targets": [
+            "flex",
+            "unitFrame",
+            "input/cable"
+          ]
+        }
+      }
+    }
+  },
+  "fixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "m5camera",
+        "body": [
+          "camera",
+          "grove",
+          "usb",
+          "reset"
+        ],
+        "ports": [
+          "grove",
+          "usb"
+        ],
+        "controls": [
+          "reset"
+        ],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 491,
+          "triangles": 40608,
+          "allClosedPositiveDirectedEdges": true,
+          "actualEnvelopeMm": [
+            39.99999980926515,
+            48.00000004768373,
+            10.999999999105931
+          ],
+          "nominalMm": [
+            40,
+            48,
+            11
+          ],
+          "mainCaseOnlyWidthMm": 24,
+          "trueEarAxes": 2,
+          "earFrontSideWallRays": 24,
+          "actualFrontSlots": 6,
+          "slotFrontSideWallRays": 24,
+          "realPCBBackedSlots": 6,
+          "closureRays": 8,
+          "rearPhysicalLabelSubstrate": true,
+          "noInventedRigidRearCover": true,
+          "rearPCBShieldBackingRays": 9,
+          "WROVEREdgeLeads": 38,
+          "PCBSupportPosts": 4,
+          "PCBDrillWallRays": 16,
+          "PCBReceiverClearanceMm": 0.15,
+          "verticalTailToPlatedBoreClearanceMm": 0.013015151901650035,
+          "grove": {
+            "contacts": 4,
+            "bends": 4,
+            "feet": 4,
+            "squareVerticalThroughPCBTails": 4,
+            "platedBores": 4,
+            "annuli": 8
+          },
+          "usb": {
+            "ownTypeC": true,
+            "actualHollowShieldTongueAndStop": true,
+            "standardStyleInferredContacts": 24
+          },
+          "camera": {
+            "sensor": "OV2640",
+            "documentaryFovDeg": 65,
+            "passiveFrame": true,
+            "realBackedOpticalWindow": true,
+            "opticalFrontSideWallRays": 8
+          },
+          "fpc": {
+            "realFlexAndReceivingSlot": true,
+            "contacts": 24,
+            "returns": 24,
+            "solderTails": 24
+          },
+          "actualResetMovingMeshes": 2,
+          "resetTravelMm": 0.22,
+          "resetAxis": [
+            -1,
+            0,
+            0
+          ],
+          "physicalFilms": 1,
+          "actualM5Material": true,
+          "ledAPIs": 0,
+          "unfittedSensorComponents": 0,
+          "scope": "Own original U017;all hidden assembly/film/optics/contacts/travel inferred,no sibling/native/BOM/focal/hardware/manufacturing acceptance"
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 491,
+          "triangles": 40608,
+          "allClosedPositiveDirectedEdges": true,
+          "actualEnvelopeMm": [
+            39.999999809265134,
+            48.0000000476837,
+            10.999999999105931
+          ],
+          "nominalMm": [
+            40,
+            48,
+            11
+          ],
+          "mainCaseOnlyWidthMm": 24,
+          "trueEarAxes": 2,
+          "earFrontSideWallRays": 24,
+          "actualFrontSlots": 6,
+          "slotFrontSideWallRays": 24,
+          "realPCBBackedSlots": 6,
+          "closureRays": 8,
+          "rearPhysicalLabelSubstrate": true,
+          "noInventedRigidRearCover": true,
+          "rearPCBShieldBackingRays": 9,
+          "WROVEREdgeLeads": 38,
+          "PCBSupportPosts": 4,
+          "PCBDrillWallRays": 16,
+          "PCBReceiverClearanceMm": 0.15,
+          "verticalTailToPlatedBoreClearanceMm": 0.013015151901650035,
+          "grove": {
+            "contacts": 4,
+            "bends": 4,
+            "feet": 4,
+            "squareVerticalThroughPCBTails": 4,
+            "platedBores": 4,
+            "annuli": 8
+          },
+          "usb": {
+            "ownTypeC": true,
+            "actualHollowShieldTongueAndStop": true,
+            "standardStyleInferredContacts": 24
+          },
+          "camera": {
+            "sensor": "OV2640",
+            "documentaryFovDeg": 65,
+            "passiveFrame": true,
+            "realBackedOpticalWindow": true,
+            "opticalFrontSideWallRays": 8
+          },
+          "fpc": {
+            "realFlexAndReceivingSlot": true,
+            "contacts": 24,
+            "returns": 24,
+            "solderTails": 24
+          },
+          "actualResetMovingMeshes": 2,
+          "resetTravelMm": 0.22,
+          "resetAxis": [
+            -1,
+            0,
+            0
+          ],
+          "physicalFilms": 1,
+          "actualM5Material": true,
+          "ledAPIs": 0,
+          "unfittedSensorComponents": 0,
+          "scope": "Own original U017;all hidden assembly/film/optics/contacts/travel inferred,no sibling/native/BOM/focal/hardware/manufacturing acceptance"
+        }
+      },
+      {
+        "id": "esp32cam",
+        "body": [
+          "grove",
+          "usb",
+          "camera",
+          "key"
+        ],
+        "ports": [
+          "grove",
+          "usb"
+        ],
+        "controls": [
+          "key"
+        ],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-photo-parametric",
+          "nativeFaces": 0,
+          "provisionalOldExactNominalMm": [
+            20.5,
+            46.5,
+            11.5
+          ],
+          "currentConflictingVendorMm": [
+            54,
+            54,
+            26.6
+          ],
+          "actualPhysicalEnvelopeMm": [
+            20.5,
+            46.500000095367426,
+            11.500000047683717
+          ],
+          "physicalMeshes": 601,
+          "triangles": 19908,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "boreWalls": 8,
+          "cavityWallRays": 8,
+          "actualGroveContacts": 4,
+          "actualUsbTongueContacts": 24,
+          "actualEmptyBatteryContacts": 2,
+          "fpcReceiverContacts": 24,
+          "fpcTailLands": 24,
+          "antennaRetainedFeet": 4,
+          "cameraCarrierFlexAndOpticsSupported": true,
+          "optionalSensorsFitted": 0,
+          "ownLedApi": false,
+          "physicalFilms": 0,
+          "pngCount": 0
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-photo-parametric",
+          "nativeFaces": 0,
+          "provisionalOldExactNominalMm": [
+            20.5,
+            46.5,
+            11.5
+          ],
+          "currentConflictingVendorMm": [
+            54,
+            54,
+            26.6
+          ],
+          "actualPhysicalEnvelopeMm": [
+            20.5,
+            46.500000095367454,
+            11.50000004768372
+          ],
+          "physicalMeshes": 601,
+          "triangles": 19908,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "boreWalls": 8,
+          "cavityWallRays": 8,
+          "actualGroveContacts": 4,
+          "actualUsbTongueContacts": 24,
+          "actualEmptyBatteryContacts": 2,
+          "fpcReceiverContacts": 24,
+          "fpcTailLands": 24,
+          "antennaRetainedFeet": 4,
+          "cameraCarrierFlexAndOpticsSupported": true,
+          "optionalSensorsFitted": 0,
+          "ownLedApi": false,
+          "physicalFilms": 0,
+          "pngCount": 0
+        }
+      },
+      {
+        "id": "rgb-led-strip-50cm",
+        "body": [
+          "flex",
+          "pixel-0",
+          "pixel-1",
+          "pixel-2",
+          "pixel-3",
+          "pixel-4",
+          "pixel-5",
+          "pixel-6",
+          "pixel-7",
+          "pixel-8",
+          "pixel-9",
+          "pixel-10",
+          "pixel-11",
+          "pixel-12",
+          "pixel-13",
+          "pixel-14",
+          "pixel-15",
+          "pixel-16",
+          "pixel-17",
+          "pixel-18",
+          "pixel-19",
+          "pixel-20",
+          "pixel-21",
+          "pixel-22",
+          "pixel-23",
+          "pixel-24",
+          "pixel-25",
+          "pixel-26",
+          "pixel-27",
+          "pixel-28",
+          "pixel-29",
+          "input",
+          "output"
+        ],
+        "ports": [
+          "input",
+          "output"
+        ],
+        "controls": [],
+        "leds": [
+          "pixel-0",
+          "pixel-1",
+          "pixel-2",
+          "pixel-3",
+          "pixel-4",
+          "pixel-5",
+          "pixel-6",
+          "pixel-7",
+          "pixel-8",
+          "pixel-9",
+          "pixel-10",
+          "pixel-11",
+          "pixel-12",
+          "pixel-13",
+          "pixel-14",
+          "pixel-15",
+          "pixel-16",
+          "pixel-17",
+          "pixel-18",
+          "pixel-19",
+          "pixel-20",
+          "pixel-21",
+          "pixel-22",
+          "pixel-23",
+          "pixel-24",
+          "pixel-25",
+          "pixel-26",
+          "pixel-27",
+          "pixel-28",
+          "pixel-29"
+        ],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-A093-photo-dimensional-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 747,
+          "triangles": 77672,
+          "closedDirectedPositiveFrontSide": true,
+          "nominalFlexibleMm": [
+            500,
+            10
+          ],
+          "individualRigid5050": 30,
+          "visiblePassives": 30,
+          "physicalCopperPads": 213,
+          "actualSolderBridges": 180,
+          "endPigtails": 6,
+          "continuousFPCAdhesiveDropcoat": true,
+          "rigidPackagesOnLocalTangents": true,
+          "true3PCavitiesWithRetainedContacts": true,
+          "ownPorts": [
+            "input",
+            "output"
+          ],
+          "adapter": {
+            "wireCount": 3,
+            "plugCount": 2,
+            "nominalLengthMm": 100,
+            "displayCenterlineMm": 100.00000015070128,
+            "faceDistanceMm": 90,
+            "bend": [
+              0,
+              0,
+              -1
+            ],
+            "source": {
+              "position": [
+                0,
+                90,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                1,
+                0
+              ]
+            },
+            "target": {
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ]
+            },
+            "space": "adapter-local",
+            "grovePositions": 4,
+            "groveContacts": 3,
+            "emptyNCPosition": 4,
+            "scope": "Appearance wire length/route only,no electrical mapping or physical rated bend"
+          },
+          "scope": "Appearance geometry and bounded display bend;hidden dimensions/contacts/assembly inferred,no manufacturing/electrical/protocol/waterproof claim"
+        },
+        "runtimeDrivenStructure": {
+          "constructionRoute": "own-A093-photo-dimensional-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 747,
+          "triangles": 77672,
+          "closedDirectedPositiveFrontSide": true,
+          "nominalFlexibleMm": [
+            500,
+            10
+          ],
+          "individualRigid5050": 30,
+          "visiblePassives": 30,
+          "physicalCopperPads": 213,
+          "actualSolderBridges": 180,
+          "endPigtails": 6,
+          "continuousFPCAdhesiveDropcoat": true,
+          "rigidPackagesOnLocalTangents": true,
+          "true3PCavitiesWithRetainedContacts": true,
+          "ownPorts": [
+            "input",
+            "output"
+          ],
+          "adapter": {
+            "wireCount": 3,
+            "plugCount": 2,
+            "nominalLengthMm": 100,
+            "displayCenterlineMm": 100.00000015070128,
+            "faceDistanceMm": 90,
+            "bend": [
+              0,
+              0,
+              -1
+            ],
+            "source": {
+              "position": [
+                0,
+                90,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                1,
+                0
+              ]
+            },
+            "target": {
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ]
+            },
+            "space": "adapter-local",
+            "grovePositions": 4,
+            "groveContacts": 3,
+            "emptyNCPosition": 4,
+            "scope": "Appearance wire length/route only,no electrical mapping or physical rated bend"
+          },
+          "scope": "Appearance geometry and bounded display bend;hidden dimensions/contacts/assembly inferred,no manufacturing/electrical/protocol/waterproof claim"
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "m5camera",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "reset"
+        ],
+        "actualFlexMotion": null,
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 491,
+          "triangles": 40608,
+          "allClosedPositiveDirectedEdges": true,
+          "actualEnvelopeMm": [
+            39.999999809265134,
+            48.00000004768371,
+            10.999999999105931
+          ],
+          "nominalMm": [
+            40,
+            48,
+            11
+          ],
+          "mainCaseOnlyWidthMm": 24,
+          "trueEarAxes": 2,
+          "earFrontSideWallRays": 24,
+          "actualFrontSlots": 6,
+          "slotFrontSideWallRays": 24,
+          "realPCBBackedSlots": 6,
+          "closureRays": 8,
+          "rearPhysicalLabelSubstrate": true,
+          "noInventedRigidRearCover": true,
+          "rearPCBShieldBackingRays": 9,
+          "WROVEREdgeLeads": 38,
+          "PCBSupportPosts": 4,
+          "PCBDrillWallRays": 16,
+          "PCBReceiverClearanceMm": 0.15,
+          "verticalTailToPlatedBoreClearanceMm": 0.013015151901650035,
+          "grove": {
+            "contacts": 4,
+            "bends": 4,
+            "feet": 4,
+            "squareVerticalThroughPCBTails": 4,
+            "platedBores": 4,
+            "annuli": 8
+          },
+          "usb": {
+            "ownTypeC": true,
+            "actualHollowShieldTongueAndStop": true,
+            "standardStyleInferredContacts": 24
+          },
+          "camera": {
+            "sensor": "OV2640",
+            "documentaryFovDeg": 65,
+            "passiveFrame": true,
+            "realBackedOpticalWindow": true,
+            "opticalFrontSideWallRays": 8
+          },
+          "fpc": {
+            "realFlexAndReceivingSlot": true,
+            "contacts": 24,
+            "returns": 24,
+            "solderTails": 24
+          },
+          "actualResetMovingMeshes": 2,
+          "resetTravelMm": 0.22,
+          "resetAxis": [
+            -1,
+            0,
+            0
+          ],
+          "physicalFilms": 1,
+          "actualM5Material": true,
+          "ledAPIs": 0,
+          "unfittedSensorComponents": 0,
+          "scope": "Own original U017;all hidden assembly/film/optics/contacts/travel inferred,no sibling/native/BOM/focal/hardware/manufacturing acceptance"
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "esp32cam",
+        "panels": 0,
+        "kinds": [],
+        "actualPartialMotionIds": [
+          "key"
+        ],
+        "actualFlexMotion": null,
+        "physicalStructure": {
+          "constructionRoute": "own-photo-parametric",
+          "nativeFaces": 0,
+          "provisionalOldExactNominalMm": [
+            20.5,
+            46.5,
+            11.5
+          ],
+          "currentConflictingVendorMm": [
+            54,
+            54,
+            26.6
+          ],
+          "actualPhysicalEnvelopeMm": [
+            20.5,
+            46.50000009536743,
+            11.500000047683717
+          ],
+          "physicalMeshes": 601,
+          "triangles": 19908,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "boreWalls": 8,
+          "cavityWallRays": 8,
+          "actualGroveContacts": 4,
+          "actualUsbTongueContacts": 24,
+          "actualEmptyBatteryContacts": 2,
+          "fpcReceiverContacts": 24,
+          "fpcTailLands": 24,
+          "antennaRetainedFeet": 4,
+          "cameraCarrierFlexAndOpticsSupported": true,
+          "optionalSensorsFitted": 0,
+          "ownLedApi": false,
+          "physicalFilms": 0,
+          "pngCount": 0
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "rgb-led-strip-50cm",
+        "panels": 29,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "actualFlexMotion": {
+          "printedPanels": 29,
+          "uniqueOrdinaryPNG": 1,
+          "inkOnActualFPC": true,
+          "partialContinuousFlex": true,
+          "attrsIndexAndWorldIdenticalWithoutInk": true,
+          "solderBridgesRemainAttached": true
+        },
+        "physicalStructure": {
+          "constructionRoute": "own-A093-photo-dimensional-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 747,
+          "triangles": 77672,
+          "closedDirectedPositiveFrontSide": true,
+          "nominalFlexibleMm": [
+            500,
+            10
+          ],
+          "individualRigid5050": 30,
+          "visiblePassives": 30,
+          "physicalCopperPads": 213,
+          "actualSolderBridges": 180,
+          "endPigtails": 6,
+          "continuousFPCAdhesiveDropcoat": true,
+          "rigidPackagesOnLocalTangents": true,
+          "true3PCavitiesWithRetainedContacts": true,
+          "ownPorts": [
+            "input",
+            "output"
+          ],
+          "adapter": {
+            "wireCount": 3,
+            "plugCount": 2,
+            "nominalLengthMm": 100,
+            "displayCenterlineMm": 100.00000004784388,
+            "faceDistanceMm": 110,
+            "bend": [
+              0,
+              0,
+              -1
+            ],
+            "source": {
+              "position": [
+                0,
+                110,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                1,
+                0
+              ]
+            },
+            "target": {
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ]
+            },
+            "space": "adapter-local",
+            "grovePositions": 4,
+            "groveContacts": 3,
+            "emptyNCPosition": 4,
+            "scope": "Appearance wire length/route only,no electrical mapping or physical rated bend"
+          },
+          "scope": "Appearance geometry and bounded display bend;hidden dimensions/contacts/assembly inferred,no manufacturing/electrical/protocol/waterproof claim"
+        },
+        "staticMounting": []
+      }
+    ],
+    "configurations": [
+      {
+        "id": "m5camera",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "esp32cam",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "rgb-led-strip-50cm",
+        "optionCases": 3,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      }
+    ],
+    "behaviors": [
+      {
+        "id": "m5camera",
+        "controls": [
+          {
+            "id": "reset",
+            "travelMm": 0.22,
+            "axis": [
+              -1,
+              0,
+              0
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          }
+        ],
+        "partialPressAndCancelledSpringReturn": true,
+        "onlyActualResetCapAndStemMove": true,
+        "fixedCaseFramesContactsPCBShieldPortsCameraAndPeersInvariant": true,
+        "multipleSourcesLastReleaseCancel": true,
+        "cancelSuppressesClick": true,
+        "noInventedLEDsOrUnfittedSensors": true,
+        "noCameraVideoAIFocusPowerResetFirmwareBehavior": true,
+        "stateAndPoseQueriesNoEcho": true,
+        "allPhysicalAttributesIndexWorldRestored": true
+      },
+      {
+        "id": "esp32cam",
+        "partialRealCapTravel": true,
+        "button": [
+          {
+            "id": "key",
+            "travelMm": 0.18,
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "actualMovingMeshes": 1,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          }
+        ],
+        "multipleSourcesAndCancelledClickSuppression": true,
+        "passiveCameraFovDeg": 65,
+        "noCameraLedOptionalSensorsBatteryOrFirmwareSimulation": true,
+        "externalUnsupportedCommandsNoEcho": true,
+        "fixedPhysicalAttributesIndicesWorldAndPortsRetained": true
+      },
+      {
+        "id": "rgb-led-strip-50cm",
+        "lights": {
+          "count": 30,
+          "externalNoEcho": true,
+          "independentRealMaterials": true,
+          "physicalAndPortsUnchanged": true
+        },
+        "partialFlexAndRestore": true,
+        "solderAndPigtailContinuity": true,
+        "adapterDetachWithoutDisposeAndReattach": true,
+        "actualThreeConductorTwoPlugFixedLength": true,
+        "externalCommandsNoEcho": true,
+        "noAutonomousAnimation": true,
+        "peersInvariant": true,
+        "integrationPoseExample": {
+          "type": "pose",
+          "distance": 82,
+          "rotation": [
+            0,
+            0.1,
+            1.5707963267948966
+          ]
+        },
+        "integrationCableExample": {
+          "type": "cable",
+          "bend": [
+            1,
+            0,
+            -1
+          ]
+        },
+        "cablePose": {
+          "wireCount": 3,
+          "plugCount": 2,
+          "nominalLengthMm": 100,
+          "displayCenterlineMm": 100.0000000339912,
+          "faceDistanceMm": 90,
+          "bend": [
+            0.7071067811865475,
+            0,
+            -0.7071067811865475
+          ],
+          "source": {
+            "position": [
+              0,
+              90,
+              0
+            ],
+            "quaternion": [
+              0,
+              0,
+              1,
+              0
+            ]
+          },
+          "target": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "space": "adapter-local",
+          "grovePositions": 4,
+          "groveContacts": 3,
+          "emptyNCPosition": 4,
+          "scope": "Appearance wire length/route only,no electrical mapping or physical rated bend"
+        },
+        "scope": "Node appearance/runtime;no signal transport/firmware/electrical/material simulation"
+      }
+    ],
+    "accessories": [
+      {
+        "id": "m5camera",
+        "mounting": []
+      },
+      {
+        "id": "esp32cam",
+        "mounting": []
+      },
+      {
+        "id": "rgb-led-strip-50cm",
+        "mounting": []
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "m5camera",
+        "passiveAnchors": [
+          "camera"
+        ],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "esp32cam",
+        "passiveAnchors": [
+          "camera"
+        ],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "rgb-led-strip-50cm",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      }
+    ],
+    "disposedResources": 3029,
+    "cases": [
+      "three-real-Grove-branches-with-own-conductor-counts",
+      "own-camera-and500mm5050strip-assemblies",
+      "camera-own-PCB-shield-optics-supported-receivers",
+      "true-threewire-black3P-Groveplug-adapter",
+      "actual-cap-input-and30pixel-flex-appearance",
+      "own-legible-print-only-no-unsupported-glyphs",
+      "both-entries-actual-presets-and-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-peer-isolation",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own U017/U007/A093 physical assemblies,actual legible ordinary print,real caps/ports and actual threewire adapter/30pixel/flex appearance;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/protocol-camera-values/electrical/firmware/whole-history acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "m5camera",
+        "body": [
+          "camera",
+          "grove",
+          "usb",
+          "reset"
+        ],
+        "ports": [
+          "grove",
+          "usb"
+        ],
+        "controls": [
+          "reset"
+        ],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 491,
+          "triangles": 40608,
+          "allClosedPositiveDirectedEdges": true,
+          "actualEnvelopeMm": [
+            39.99999980926515,
+            48.00000004768373,
+            10.999999999105931
+          ],
+          "nominalMm": [
+            40,
+            48,
+            11
+          ],
+          "mainCaseOnlyWidthMm": 24,
+          "trueEarAxes": 2,
+          "earFrontSideWallRays": 24,
+          "actualFrontSlots": 6,
+          "slotFrontSideWallRays": 24,
+          "realPCBBackedSlots": 6,
+          "closureRays": 8,
+          "rearPhysicalLabelSubstrate": true,
+          "noInventedRigidRearCover": true,
+          "rearPCBShieldBackingRays": 9,
+          "WROVEREdgeLeads": 38,
+          "PCBSupportPosts": 4,
+          "PCBDrillWallRays": 16,
+          "PCBReceiverClearanceMm": 0.15,
+          "verticalTailToPlatedBoreClearanceMm": 0.013015151901650035,
+          "grove": {
+            "contacts": 4,
+            "bends": 4,
+            "feet": 4,
+            "squareVerticalThroughPCBTails": 4,
+            "platedBores": 4,
+            "annuli": 8
+          },
+          "usb": {
+            "ownTypeC": true,
+            "actualHollowShieldTongueAndStop": true,
+            "standardStyleInferredContacts": 24
+          },
+          "camera": {
+            "sensor": "OV2640",
+            "documentaryFovDeg": 65,
+            "passiveFrame": true,
+            "realBackedOpticalWindow": true,
+            "opticalFrontSideWallRays": 8
+          },
+          "fpc": {
+            "realFlexAndReceivingSlot": true,
+            "contacts": 24,
+            "returns": 24,
+            "solderTails": 24
+          },
+          "actualResetMovingMeshes": 2,
+          "resetTravelMm": 0.22,
+          "resetAxis": [
+            -1,
+            0,
+            0
+          ],
+          "physicalFilms": 1,
+          "actualM5Material": true,
+          "ledAPIs": 0,
+          "unfittedSensorComponents": 0,
+          "scope": "Own original U017;all hidden assembly/film/optics/contacts/travel inferred,no sibling/native/BOM/focal/hardware/manufacturing acceptance"
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 491,
+          "triangles": 40608,
+          "allClosedPositiveDirectedEdges": true,
+          "actualEnvelopeMm": [
+            39.999999809265134,
+            48.0000000476837,
+            10.999999999105931
+          ],
+          "nominalMm": [
+            40,
+            48,
+            11
+          ],
+          "mainCaseOnlyWidthMm": 24,
+          "trueEarAxes": 2,
+          "earFrontSideWallRays": 24,
+          "actualFrontSlots": 6,
+          "slotFrontSideWallRays": 24,
+          "realPCBBackedSlots": 6,
+          "closureRays": 8,
+          "rearPhysicalLabelSubstrate": true,
+          "noInventedRigidRearCover": true,
+          "rearPCBShieldBackingRays": 9,
+          "WROVEREdgeLeads": 38,
+          "PCBSupportPosts": 4,
+          "PCBDrillWallRays": 16,
+          "PCBReceiverClearanceMm": 0.15,
+          "verticalTailToPlatedBoreClearanceMm": 0.013015151901650035,
+          "grove": {
+            "contacts": 4,
+            "bends": 4,
+            "feet": 4,
+            "squareVerticalThroughPCBTails": 4,
+            "platedBores": 4,
+            "annuli": 8
+          },
+          "usb": {
+            "ownTypeC": true,
+            "actualHollowShieldTongueAndStop": true,
+            "standardStyleInferredContacts": 24
+          },
+          "camera": {
+            "sensor": "OV2640",
+            "documentaryFovDeg": 65,
+            "passiveFrame": true,
+            "realBackedOpticalWindow": true,
+            "opticalFrontSideWallRays": 8
+          },
+          "fpc": {
+            "realFlexAndReceivingSlot": true,
+            "contacts": 24,
+            "returns": 24,
+            "solderTails": 24
+          },
+          "actualResetMovingMeshes": 2,
+          "resetTravelMm": 0.22,
+          "resetAxis": [
+            -1,
+            0,
+            0
+          ],
+          "physicalFilms": 1,
+          "actualM5Material": true,
+          "ledAPIs": 0,
+          "unfittedSensorComponents": 0,
+          "scope": "Own original U017;all hidden assembly/film/optics/contacts/travel inferred,no sibling/native/BOM/focal/hardware/manufacturing acceptance"
+        }
+      },
+      {
+        "id": "esp32cam",
+        "body": [
+          "grove",
+          "usb",
+          "camera",
+          "key"
+        ],
+        "ports": [
+          "grove",
+          "usb"
+        ],
+        "controls": [
+          "key"
+        ],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-photo-parametric",
+          "nativeFaces": 0,
+          "provisionalOldExactNominalMm": [
+            20.5,
+            46.5,
+            11.5
+          ],
+          "currentConflictingVendorMm": [
+            54,
+            54,
+            26.6
+          ],
+          "actualPhysicalEnvelopeMm": [
+            20.5,
+            46.500000095367426,
+            11.500000047683717
+          ],
+          "physicalMeshes": 601,
+          "triangles": 19908,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "boreWalls": 8,
+          "cavityWallRays": 8,
+          "actualGroveContacts": 4,
+          "actualUsbTongueContacts": 24,
+          "actualEmptyBatteryContacts": 2,
+          "fpcReceiverContacts": 24,
+          "fpcTailLands": 24,
+          "antennaRetainedFeet": 4,
+          "cameraCarrierFlexAndOpticsSupported": true,
+          "optionalSensorsFitted": 0,
+          "ownLedApi": false,
+          "physicalFilms": 0,
+          "pngCount": 0
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-photo-parametric",
+          "nativeFaces": 0,
+          "provisionalOldExactNominalMm": [
+            20.5,
+            46.5,
+            11.5
+          ],
+          "currentConflictingVendorMm": [
+            54,
+            54,
+            26.6
+          ],
+          "actualPhysicalEnvelopeMm": [
+            20.5,
+            46.500000095367454,
+            11.50000004768372
+          ],
+          "physicalMeshes": 601,
+          "triangles": 19908,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "boreWalls": 8,
+          "cavityWallRays": 8,
+          "actualGroveContacts": 4,
+          "actualUsbTongueContacts": 24,
+          "actualEmptyBatteryContacts": 2,
+          "fpcReceiverContacts": 24,
+          "fpcTailLands": 24,
+          "antennaRetainedFeet": 4,
+          "cameraCarrierFlexAndOpticsSupported": true,
+          "optionalSensorsFitted": 0,
+          "ownLedApi": false,
+          "physicalFilms": 0,
+          "pngCount": 0
+        }
+      },
+      {
+        "id": "rgb-led-strip-50cm",
+        "body": [
+          "flex",
+          "pixel-0",
+          "pixel-1",
+          "pixel-2",
+          "pixel-3",
+          "pixel-4",
+          "pixel-5",
+          "pixel-6",
+          "pixel-7",
+          "pixel-8",
+          "pixel-9",
+          "pixel-10",
+          "pixel-11",
+          "pixel-12",
+          "pixel-13",
+          "pixel-14",
+          "pixel-15",
+          "pixel-16",
+          "pixel-17",
+          "pixel-18",
+          "pixel-19",
+          "pixel-20",
+          "pixel-21",
+          "pixel-22",
+          "pixel-23",
+          "pixel-24",
+          "pixel-25",
+          "pixel-26",
+          "pixel-27",
+          "pixel-28",
+          "pixel-29",
+          "input",
+          "output"
+        ],
+        "ports": [
+          "input",
+          "output"
+        ],
+        "controls": [],
+        "leds": [
+          "pixel-0",
+          "pixel-1",
+          "pixel-2",
+          "pixel-3",
+          "pixel-4",
+          "pixel-5",
+          "pixel-6",
+          "pixel-7",
+          "pixel-8",
+          "pixel-9",
+          "pixel-10",
+          "pixel-11",
+          "pixel-12",
+          "pixel-13",
+          "pixel-14",
+          "pixel-15",
+          "pixel-16",
+          "pixel-17",
+          "pixel-18",
+          "pixel-19",
+          "pixel-20",
+          "pixel-21",
+          "pixel-22",
+          "pixel-23",
+          "pixel-24",
+          "pixel-25",
+          "pixel-26",
+          "pixel-27",
+          "pixel-28",
+          "pixel-29"
+        ],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-A093-photo-dimensional-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 747,
+          "triangles": 77672,
+          "closedDirectedPositiveFrontSide": true,
+          "nominalFlexibleMm": [
+            500,
+            10
+          ],
+          "individualRigid5050": 30,
+          "visiblePassives": 30,
+          "physicalCopperPads": 213,
+          "actualSolderBridges": 180,
+          "endPigtails": 6,
+          "continuousFPCAdhesiveDropcoat": true,
+          "rigidPackagesOnLocalTangents": true,
+          "true3PCavitiesWithRetainedContacts": true,
+          "ownPorts": [
+            "input",
+            "output"
+          ],
+          "adapter": {
+            "wireCount": 3,
+            "plugCount": 2,
+            "nominalLengthMm": 100,
+            "displayCenterlineMm": 100.00000015070128,
+            "faceDistanceMm": 90,
+            "bend": [
+              0,
+              0,
+              -1
+            ],
+            "source": {
+              "position": [
+                0,
+                90,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                1,
+                0
+              ]
+            },
+            "target": {
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ]
+            },
+            "space": "adapter-local",
+            "grovePositions": 4,
+            "groveContacts": 3,
+            "emptyNCPosition": 4,
+            "scope": "Appearance wire length/route only,no electrical mapping or physical rated bend"
+          },
+          "scope": "Appearance geometry and bounded display bend;hidden dimensions/contacts/assembly inferred,no manufacturing/electrical/protocol/waterproof claim"
+        },
+        "runtimeDrivenStructure": {
+          "constructionRoute": "own-A093-photo-dimensional-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 747,
+          "triangles": 77672,
+          "closedDirectedPositiveFrontSide": true,
+          "nominalFlexibleMm": [
+            500,
+            10
+          ],
+          "individualRigid5050": 30,
+          "visiblePassives": 30,
+          "physicalCopperPads": 213,
+          "actualSolderBridges": 180,
+          "endPigtails": 6,
+          "continuousFPCAdhesiveDropcoat": true,
+          "rigidPackagesOnLocalTangents": true,
+          "true3PCavitiesWithRetainedContacts": true,
+          "ownPorts": [
+            "input",
+            "output"
+          ],
+          "adapter": {
+            "wireCount": 3,
+            "plugCount": 2,
+            "nominalLengthMm": 100,
+            "displayCenterlineMm": 100.00000015070128,
+            "faceDistanceMm": 90,
+            "bend": [
+              0,
+              0,
+              -1
+            ],
+            "source": {
+              "position": [
+                0,
+                90,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                1,
+                0
+              ]
+            },
+            "target": {
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ]
+            },
+            "space": "adapter-local",
+            "grovePositions": 4,
+            "groveContacts": 3,
+            "emptyNCPosition": 4,
+            "scope": "Appearance wire length/route only,no electrical mapping or physical rated bend"
+          },
+          "scope": "Appearance geometry and bounded display bend;hidden dimensions/contacts/assembly inferred,no manufacturing/electrical/protocol/waterproof claim"
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "m5camera",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "reset"
+        ],
+        "actualFlexMotion": null,
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 491,
+          "triangles": 40608,
+          "allClosedPositiveDirectedEdges": true,
+          "actualEnvelopeMm": [
+            39.999999809265134,
+            48.00000004768371,
+            10.999999999105931
+          ],
+          "nominalMm": [
+            40,
+            48,
+            11
+          ],
+          "mainCaseOnlyWidthMm": 24,
+          "trueEarAxes": 2,
+          "earFrontSideWallRays": 24,
+          "actualFrontSlots": 6,
+          "slotFrontSideWallRays": 24,
+          "realPCBBackedSlots": 6,
+          "closureRays": 8,
+          "rearPhysicalLabelSubstrate": true,
+          "noInventedRigidRearCover": true,
+          "rearPCBShieldBackingRays": 9,
+          "WROVEREdgeLeads": 38,
+          "PCBSupportPosts": 4,
+          "PCBDrillWallRays": 16,
+          "PCBReceiverClearanceMm": 0.15,
+          "verticalTailToPlatedBoreClearanceMm": 0.013015151901650035,
+          "grove": {
+            "contacts": 4,
+            "bends": 4,
+            "feet": 4,
+            "squareVerticalThroughPCBTails": 4,
+            "platedBores": 4,
+            "annuli": 8
+          },
+          "usb": {
+            "ownTypeC": true,
+            "actualHollowShieldTongueAndStop": true,
+            "standardStyleInferredContacts": 24
+          },
+          "camera": {
+            "sensor": "OV2640",
+            "documentaryFovDeg": 65,
+            "passiveFrame": true,
+            "realBackedOpticalWindow": true,
+            "opticalFrontSideWallRays": 8
+          },
+          "fpc": {
+            "realFlexAndReceivingSlot": true,
+            "contacts": 24,
+            "returns": 24,
+            "solderTails": 24
+          },
+          "actualResetMovingMeshes": 2,
+          "resetTravelMm": 0.22,
+          "resetAxis": [
+            -1,
+            0,
+            0
+          ],
+          "physicalFilms": 1,
+          "actualM5Material": true,
+          "ledAPIs": 0,
+          "unfittedSensorComponents": 0,
+          "scope": "Own original U017;all hidden assembly/film/optics/contacts/travel inferred,no sibling/native/BOM/focal/hardware/manufacturing acceptance"
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "esp32cam",
+        "panels": 0,
+        "kinds": [],
+        "actualPartialMotionIds": [
+          "key"
+        ],
+        "actualFlexMotion": null,
+        "physicalStructure": {
+          "constructionRoute": "own-photo-parametric",
+          "nativeFaces": 0,
+          "provisionalOldExactNominalMm": [
+            20.5,
+            46.5,
+            11.5
+          ],
+          "currentConflictingVendorMm": [
+            54,
+            54,
+            26.6
+          ],
+          "actualPhysicalEnvelopeMm": [
+            20.5,
+            46.50000009536743,
+            11.500000047683717
+          ],
+          "physicalMeshes": 601,
+          "triangles": 19908,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "boreWalls": 8,
+          "cavityWallRays": 8,
+          "actualGroveContacts": 4,
+          "actualUsbTongueContacts": 24,
+          "actualEmptyBatteryContacts": 2,
+          "fpcReceiverContacts": 24,
+          "fpcTailLands": 24,
+          "antennaRetainedFeet": 4,
+          "cameraCarrierFlexAndOpticsSupported": true,
+          "optionalSensorsFitted": 0,
+          "ownLedApi": false,
+          "physicalFilms": 0,
+          "pngCount": 0
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "rgb-led-strip-50cm",
+        "panels": 29,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "actualFlexMotion": {
+          "printedPanels": 29,
+          "uniqueOrdinaryPNG": 1,
+          "inkOnActualFPC": true,
+          "partialContinuousFlex": true,
+          "attrsIndexAndWorldIdenticalWithoutInk": true,
+          "solderBridgesRemainAttached": true
+        },
+        "physicalStructure": {
+          "constructionRoute": "own-A093-photo-dimensional-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 747,
+          "triangles": 77672,
+          "closedDirectedPositiveFrontSide": true,
+          "nominalFlexibleMm": [
+            500,
+            10
+          ],
+          "individualRigid5050": 30,
+          "visiblePassives": 30,
+          "physicalCopperPads": 213,
+          "actualSolderBridges": 180,
+          "endPigtails": 6,
+          "continuousFPCAdhesiveDropcoat": true,
+          "rigidPackagesOnLocalTangents": true,
+          "true3PCavitiesWithRetainedContacts": true,
+          "ownPorts": [
+            "input",
+            "output"
+          ],
+          "adapter": {
+            "wireCount": 3,
+            "plugCount": 2,
+            "nominalLengthMm": 100,
+            "displayCenterlineMm": 100.00000004784388,
+            "faceDistanceMm": 110,
+            "bend": [
+              0,
+              0,
+              -1
+            ],
+            "source": {
+              "position": [
+                0,
+                110,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                1,
+                0
+              ]
+            },
+            "target": {
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ]
+            },
+            "space": "adapter-local",
+            "grovePositions": 4,
+            "groveContacts": 3,
+            "emptyNCPosition": 4,
+            "scope": "Appearance wire length/route only,no electrical mapping or physical rated bend"
+          },
+          "scope": "Appearance geometry and bounded display bend;hidden dimensions/contacts/assembly inferred,no manufacturing/electrical/protocol/waterproof claim"
+        },
+        "staticMounting": []
+      }
+    ],
+    "configurations": [
+      {
+        "id": "m5camera",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "esp32cam",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "rgb-led-strip-50cm",
+        "optionCases": 3,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      }
+    ],
+    "behaviors": [
+      {
+        "id": "m5camera",
+        "controls": [
+          {
+            "id": "reset",
+            "travelMm": 0.22,
+            "axis": [
+              -1,
+              0,
+              0
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          }
+        ],
+        "partialPressAndCancelledSpringReturn": true,
+        "onlyActualResetCapAndStemMove": true,
+        "fixedCaseFramesContactsPCBShieldPortsCameraAndPeersInvariant": true,
+        "multipleSourcesLastReleaseCancel": true,
+        "cancelSuppressesClick": true,
+        "noInventedLEDsOrUnfittedSensors": true,
+        "noCameraVideoAIFocusPowerResetFirmwareBehavior": true,
+        "stateAndPoseQueriesNoEcho": true,
+        "allPhysicalAttributesIndexWorldRestored": true
+      },
+      {
+        "id": "esp32cam",
+        "partialRealCapTravel": true,
+        "button": [
+          {
+            "id": "key",
+            "travelMm": 0.18,
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "actualMovingMeshes": 1,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          }
+        ],
+        "multipleSourcesAndCancelledClickSuppression": true,
+        "passiveCameraFovDeg": 65,
+        "noCameraLedOptionalSensorsBatteryOrFirmwareSimulation": true,
+        "externalUnsupportedCommandsNoEcho": true,
+        "fixedPhysicalAttributesIndicesWorldAndPortsRetained": true
+      },
+      {
+        "id": "rgb-led-strip-50cm",
+        "lights": {
+          "count": 30,
+          "externalNoEcho": true,
+          "independentRealMaterials": true,
+          "physicalAndPortsUnchanged": true
+        },
+        "partialFlexAndRestore": true,
+        "solderAndPigtailContinuity": true,
+        "adapterDetachWithoutDisposeAndReattach": true,
+        "actualThreeConductorTwoPlugFixedLength": true,
+        "externalCommandsNoEcho": true,
+        "noAutonomousAnimation": true,
+        "peersInvariant": true,
+        "integrationPoseExample": {
+          "type": "pose",
+          "distance": 82,
+          "rotation": [
+            0,
+            0.1,
+            1.5707963267948966
+          ]
+        },
+        "integrationCableExample": {
+          "type": "cable",
+          "bend": [
+            1,
+            0,
+            -1
+          ]
+        },
+        "cablePose": {
+          "wireCount": 3,
+          "plugCount": 2,
+          "nominalLengthMm": 100,
+          "displayCenterlineMm": 100.0000000339912,
+          "faceDistanceMm": 90,
+          "bend": [
+            0.7071067811865475,
+            0,
+            -0.7071067811865475
+          ],
+          "source": {
+            "position": [
+              0,
+              90,
+              0
+            ],
+            "quaternion": [
+              0,
+              0,
+              1,
+              0
+            ]
+          },
+          "target": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "space": "adapter-local",
+          "grovePositions": 4,
+          "groveContacts": 3,
+          "emptyNCPosition": 4,
+          "scope": "Appearance wire length/route only,no electrical mapping or physical rated bend"
+        },
+        "scope": "Node appearance/runtime;no signal transport/firmware/electrical/material simulation"
+      }
+    ],
+    "accessories": [
+      {
+        "id": "m5camera",
+        "mounting": []
+      },
+      {
+        "id": "esp32cam",
+        "mounting": []
+      },
+      {
+        "id": "rgb-led-strip-50cm",
+        "mounting": []
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "m5camera",
+        "passiveAnchors": [
+          "camera"
+        ],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "esp32cam",
+        "passiveAnchors": [
+          "camera"
+        ],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "rgb-led-strip-50cm",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      }
+    ],
+    "disposedResources": 3029,
+    "cases": [
+      "three-real-Grove-branches-with-own-conductor-counts",
+      "own-camera-and500mm5050strip-assemblies",
+      "camera-own-PCB-shield-optics-supported-receivers",
+      "true-threewire-black3P-Groveplug-adapter",
+      "actual-cap-input-and30pixel-flex-appearance",
+      "own-legible-print-only-no-unsupported-glyphs",
+      "both-entries-actual-presets-and-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-peer-isolation",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own U017/U007/A093 physical assemblies,actual legible ordinary print,real caps/ports and actual threewire adapter/30pixel/flex appearance;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/protocol-camera-values/electrical/firmware/whole-history acceptance"
+  },
+  "sharedAmendments": {
+    "publicSharedProtected": {
+      "demo/dynamics.js": {
+        "baselineSha256": "07de108f446c9c0d91ddd2125e49f2a960ec4a7884061ea77c0b29468cdbb2ab",
+        "sha256": "4c5d599dd42014509b134bc4c5c3e80addb7b2eb822b6ba717d5d14c62041625",
+        "reason": "Resolve actual input/adapter cable paths and commands;show true wire counts and supported flex controls;retain standard fourcore behavior",
+        "evidence": "work/new-units-50/demo-connection-check.json"
+      }
+    },
+    "privateSharedProtected": {
+      "demo/dynamics.js": {
+        "baselineSha256": "07de108f446c9c0d91ddd2125e49f2a960ec4a7884061ea77c0b29468cdbb2ab",
+        "sha256": "4c5d599dd42014509b134bc4c5c3e80addb7b2eb822b6ba717d5d14c62041625",
+        "reason": "Resolve actual input/adapter cable paths and commands;show true wire counts and supported flex controls;retain standard fourcore behavior",
+        "evidence": "work/new-units-50/demo-connection-check.json"
+      }
+    }
+  },
+  "demoPanelCheck": {
+    "status": "pass",
+    "scope": "CPU DOM/Canvas/renderer boundary fixture only;real panel constructor/bind/connect/refreshConnection/refreshState/refreshComponents/range callbacks and actual modules. Not browser/GPU/pixels/focus/hardware acceptance.",
+    "panelSourceSha256": "4c5d599dd42014509b134bc4c5c3e80addb7b2eb822b6ba717d5d14c62041625",
+    "cases": [
+      {
+        "case": "actual-A093-third-HUB-branch-without-root-grove-or-cable",
+        "wireCount": 3,
+        "plugCount": 2,
+        "inputPath": "grove/grove-3/input",
+        "cablePath": "grove/grove-3/input/cable",
+        "noSyntheticSlack": true,
+        "distanceRangeMm": [
+          45,
+          112
+        ]
+      },
+      {
+        "case": "A093-actual-pose-handle-and-range-error-rollback",
+        "validFaceDistanceMm": 80.09993757800315,
+        "invalidDistance": 999,
+        "frameAndCableRestored": true,
+        "noInputEcho": true
+      },
+      {
+        "case": "A093-visual-flex-panel-and-external30LED",
+        "flexPath": "grove/grove-3/flex",
+        "panelBendDeg": 28,
+        "externalBendDeg": -36,
+        "ledCount": 30,
+        "independentEndPixels": true,
+        "noInputEcho": true
+      },
+      {
+        "case": "A093-actual-adapter-detach-refresh-and-reconnect",
+        "noMissingRootCrash": true,
+        "missingAdapterNotice": true,
+        "controlsRestored": true
+      },
+      {
+        "case": "standard-frozen-U007-four-wire-root-cable-and-standard-pose",
+        "input": "grove/grove-1/grove",
+        "cable": "grove/grove-1/cable",
+        "wireCount": 4,
+        "slack": 18,
+        "noInputEcho": true
+      },
+      {
+        "case": "old-A035-flexible-strip-and-root-four-core-controls-retained",
+        "flexKind": "flexible-strip",
+        "panelBendDeg": 35,
+        "externalBendDeg": -20,
+        "wireCount": 4,
+        "A093PeerBendRetained": true
+      }
+    ],
+    "calls": {
+      "render": 7,
+      "fit": 3,
+      "geometry": 8
+    },
+    "realPanelMethodsReplaced": [],
+    "boundariesReplaced": [
+      "DOM elements/Option",
+      "Canvas2D context",
+      "renderer callbacks"
+    ],
+    "finalStop": true
+  },
+  "sharedAmendmentEvidence": {
+    "probe": "work/new-units-50/demo-connection-check.json",
+    "probeSha256": "9c3913d47438fca6896812c77197a15917593eea7c90629964529eb2d2dedc20",
+    "script": "work/new-units-50/demo-connection-probe.mjs",
+    "scriptSha256": "c81183ddd99db452540c0fc760193e8d1334b9cf224cfe845f8bce1af91b068e"
+  },
+  "rootFixtureSamplingAdjustment": {
+    "scope": "Only the assembled fixture second optical-window hit sample moves off a cap fan vertex; centered aperture-air, window identity and supporting geometry assertions retained",
+    "windowHitSampleMm": [
+      0.005,
+      11.005,
+      20
+    ],
+    "centeredAirSampleMm": [
+      0,
+      11,
+      20
+    ],
+    "frozenHelperChanged": false,
+    "productGeometryChanged": false,
+    "evidenceRecord": "work/new-units-50/optical-probe-amendment.json",
+    "evidenceSha256": "5b02c01c0c0743e19e07e61f295d58ecb23132c8f2f2c6448b0c30cdc443ad2c",
+    "frozenHelperSha256": "f3909302e77a71706c4d9a86f8dac0ccf770f7fcf3d113929d6871cb9df27a42",
+    "assembledFixtureSha256": "a4e58d04a8afa27d695f91413dfc3783d27aff3494bee5660ccc1a076ed56b03"
+  },
+  "checks": {
+    "localProductSmoke": "all current batch products pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "m5camera",
+        "status": "frozen",
+        "checkedFiles": 11
+      },
+      {
+        "id": "esp32cam",
+        "status": "frozen",
+        "checkedFiles": 8
+      },
+      {
+        "id": "rgb-led-strip-50cm",
+        "status": "frozen",
+        "checkedFiles": 13
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "All physical attributes/index/world matrices preserved across actual entries/configurations",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "32657dd22b099fcab2c50e66da7836b0a9b21f5d31a7f9cb71c053df624141d6",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "91392029f5f8ff4c525390b622184d12383da1d1702c72b335caded240a94331",
+      "logDistributed": false
+    },
+    "exportCount": 7,
+    "catalogConfigurations": {
+      "status": "pass",
+      "products": [
+        {
+          "id": "m5camera",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "完整原版 M5Camera U017",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        },
+        {
+          "id": "esp32cam",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "原版 ESP32CAM U007 裸板",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        },
+        {
+          "id": "rgb-led-strip-50cm",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "A093 0.5米30灯完整直条与三线转接",
+              "options": {}
+            },
+            {
+              "id": "arc",
+              "name": "A093 连续90度展示弯曲",
+              "options": {
+                "bendDeg": 90
+              }
+            },
+            {
+              "id": "reverse",
+              "name": "A093 反向60度展示弯曲",
+              "options": {
+                "bendDeg": -60
+              }
+            }
+          ],
+          "defaults": {
+            "bendDeg": 0,
+            "adapter": true
+          }
+        }
+      ],
+      "scope": "Batch 50: current frozen named presets, constructor defaults and existing demo contract"
+    },
+    "livePreview": "193-product catalog, 3 own runtime chunks and all corresponding source PNG bytes verified in live dist (ordinary or inlined assets)",
+    "newSourcePrivacy": "New JS/JSON/Markdown/PNG and all current added catalog/manifest records checked; private table/URLs/vectors/original names/mappings/raw material/intermediates excluded",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "New products/catalog entries/exports/guide/plan plus each repository explicit demo/dynamics.js amendment; original baseline SHA retained, six real panel cases pass; prior Unit/core/Scroll/rotary-panel bytes retained",
+    "existingPublicUnitFilesUnchanged": 1469,
+    "existingPrivateUnitFilesUnchanged": 1430,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "publicSharedProtectedFilesUnchanged": 1,
+    "privateSharedProtectedFilesUnchanged": 1,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [
+    {
+      "product": "m5camera",
+      "record": "docs/research/m5camera/sources.json",
+      "feedback_id": "37479fad3d554b61b57fb5e09e4e4fb8",
+      "accepted": true
+    },
+    {
+      "product": "esp32cam",
+      "record": "docs/research/esp32cam/sources.json",
+      "feedback_id": "6a0815243e6c4db08789109122c16be0",
+      "accepted": true
+    }
+  ],
+  "previewAssets": [
+    {
+      "id": "m5camera",
+      "file": "assets/m5camera-COk1QgNO.js",
+      "sha256": "5365c29734adc4de5c8d9d302a0b6ec0f38ccd817661080d650c6a79fdf90e88"
+    },
+    {
+      "id": "esp32cam",
+      "file": "assets/esp32cam-B-VstrwW.js",
+      "sha256": "5df637bb4f85bd733c3d7df5f81e21c007bbe0a918a16fe2ac30a62743a2b6bf"
+    },
+    {
+      "id": "rgb-led-strip-50cm",
+      "file": "assets/rgb-led-strip-50cm-B1_iCw44.js",
+      "sha256": "c6807988886ce073f54e9e3e86b6dbe94a984d0300b26bbde8b7824361ed5645"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/m5camera/assembly.js",
+      "sha256": "a9068082c4b3aa91d5581646ba76422831ca339287d88a6ee6b1d98012a9b945"
+    },
+    {
+      "path": "src/units/m5camera/connectors.js",
+      "sha256": "b0888b7cbaaa2b3fb048c22801bb628963172e1b908337529465871c027c06d7"
+    },
+    {
+      "path": "src/units/m5camera/dimensions.js",
+      "sha256": "42c3a78d1dd0ee8407125bc70a271f5168a76fc9c8160d61457ac9986f2eb81f"
+    },
+    {
+      "path": "src/units/m5camera/geometry.js",
+      "sha256": "26b7ca77db273f547de7c89e57c880a759dbff6e891df0664bdb98125dfc3f2b"
+    },
+    {
+      "path": "src/units/m5camera/index.js",
+      "sha256": "1a42c595d3b9f2043b243679892de048c4f1a761ce1bf5b39da1122a0935a046"
+    },
+    {
+      "path": "src/units/m5camera/reference-redraw-back.png",
+      "sha256": "2a1098ef845d4a97c1928c826018f8bb4b7be661b40eca336a63339d6bb6491c"
+    },
+    {
+      "path": "src/units/m5camera/stickers.js",
+      "sha256": "388bbb870958acef98391d40f38b8763e9b9093651e11d378540786f2746b8a5"
+    },
+    {
+      "path": "docs/research/m5camera/artwork.json",
+      "sha256": "f814a31517691d24074cee29641cfb4a23302997f5a8f92674a4cb5d126e1dea"
+    },
+    {
+      "path": "docs/research/m5camera/modeling.md",
+      "sha256": "095727a60f678b42a7d4eb606f90152eff1fbc72b25fa690180a4c428fffa182"
+    },
+    {
+      "path": "docs/research/m5camera/smoke.json",
+      "sha256": "af6504a0b63457c53dcce4175e726e93077feaf4744e4f72a56798dadfb55410"
+    },
+    {
+      "path": "docs/research/m5camera/sources.json",
+      "sha256": "87c17bafd43dfa82fea0850e7a51b1255fc6c01d0aa0f83de0a316b997092e88"
+    },
+    {
+      "path": "src/units/esp32cam/assembly.js",
+      "sha256": "e26e4970c8653f3a649da98140ed91086e01a7d22cd6bc2fb8c2a0d83991b817"
+    },
+    {
+      "path": "src/units/esp32cam/dimensions.js",
+      "sha256": "2d68618549e5cddb2dd999714acbfe00cc8d67253dd0d9facd0295c71f8e352c"
+    },
+    {
+      "path": "src/units/esp32cam/geometry.js",
+      "sha256": "a144c12da36fcf278322cceb7b950d787f2e8242792a7df05a9acf0df23570f7"
+    },
+    {
+      "path": "src/units/esp32cam/index.js",
+      "sha256": "3f98e6ed752992d916179f2c3184a9bb1588ba49ca78a0cb7c0c222fb782c826"
+    },
+    {
+      "path": "docs/research/esp32cam/artwork.json",
+      "sha256": "81ba3743f0c969caf2ac6e0ba0acd1e971125abe684f0427a898e9494496a2a2"
+    },
+    {
+      "path": "docs/research/esp32cam/modeling.md",
+      "sha256": "ac813f9c03cb4495e0641412bf976f1ca7703fae806689cb5547af02456dbea8"
+    },
+    {
+      "path": "docs/research/esp32cam/smoke.json",
+      "sha256": "016784524c2b2262a46b53d3aa93bc62ab3b83d940a3a3d1ef92b5c693aeba8c"
+    },
+    {
+      "path": "docs/research/esp32cam/sources.json",
+      "sha256": "205efc8fa207734e0b4bf5d03f0c4386415a60125cd378a211c0dfeddc63a118"
+    },
+    {
+      "path": "src/units/rgb-led-strip-50cm/Adapter.js",
+      "sha256": "f174988b1af51c7ef364b5ed3ea583b468ba197e1963bbf36f1cdfab515d0d08"
+    },
+    {
+      "path": "src/units/rgb-led-strip-50cm/AssemblyPose.js",
+      "sha256": "0b760d0efb16bbecce226723c31fec390716bacab156f13d912ea32921a7d953"
+    },
+    {
+      "path": "src/units/rgb-led-strip-50cm/Flex.js",
+      "sha256": "d59bb799f706d0e89f08f2e601bcc5fac2e760b93909f23316c30c1d825ac1f5"
+    },
+    {
+      "path": "src/units/rgb-led-strip-50cm/artwork/plus5v.png",
+      "sha256": "86def3685a178e1665e33082dc20dc482d7159949acdfa07529534e4dbc82b83"
+    },
+    {
+      "path": "src/units/rgb-led-strip-50cm/assembly.js",
+      "sha256": "260eaaae94d6a9f1db53f2a2776a23ede19cef7ecf4c9bbfc48ac5761eeb5eb6"
+    },
+    {
+      "path": "src/units/rgb-led-strip-50cm/connectors.js",
+      "sha256": "2c7e559652db4cb2198f793371903beb5f32d8b41522f3b41215cdc6df90bec0"
+    },
+    {
+      "path": "src/units/rgb-led-strip-50cm/dimensions.js",
+      "sha256": "1ffc7a53d751fe46b7a44fbf7ef528f1095bbb71df638c0231c92983f99518e5"
+    },
+    {
+      "path": "src/units/rgb-led-strip-50cm/geometry.js",
+      "sha256": "10be36b94287bdc28a236240f63e3ab17d53792a2e7d62f2a758cb919e634177"
+    },
+    {
+      "path": "src/units/rgb-led-strip-50cm/index.js",
+      "sha256": "0ea9cca72c6bd91531d25b6328b9a5555eda549cd59d11bf70d82f08646e2148"
+    },
+    {
+      "path": "docs/research/rgb-led-strip-50cm/artwork.json",
+      "sha256": "9b8553ab253e2fa051cfc90e9c77f96f1f87a5441f8268d5cc31075a14720afa"
+    },
+    {
+      "path": "docs/research/rgb-led-strip-50cm/modeling.md",
+      "sha256": "1bef9b82f38ddc0efcad90356a5896718a53e2310f9793631402738fc574c3bc"
+    },
+    {
+      "path": "docs/research/rgb-led-strip-50cm/smoke.json",
+      "sha256": "e3510f5597282674c72329627943b807d7812abd47b1af33631a463690b7eab4"
+    },
+    {
+      "path": "docs/research/rgb-led-strip-50cm/sources.json",
+      "sha256": "3161506f1dd00d5d048e9f997df5fd1ce0d6a9523af38a09a6365da3ac21a018"
+    }
+  ],
+  "limitations": [
+    "Allthree exactSKU ownphoto-dimensional-parametric;no ownnative or borrowing/rescaling siblingcase,A0353535 or arbitrary packaging",
+    "OriginalU017 nominal40x48x11 includes lateralears,not40mmmainbox;ownrearprinted carrier and actualPCB/shield/backing,RESET and opticalframe;LED visibility unresolved unless author supplies own evidence",
+    "OriginalU007 slenderbareboard uses immutable20.5x46.5x11.5 as provisional visualreference;current54x54x26.6 conflict retained,not accepted as matching mechanicaldatum",
+    "Camera photographedUSB-C versus legacyMicro symbols/versioned pin text retained;visible cap motion only,no electricalreset,power,images,AI orfirmware",
+    "A093 exact500x10mm30x5050 flexiblecoatedstrip is distinct from A035100mm15x3535;totalZ/hiddenretention/leadlengths/dropcoat properties and bendlimits are explicit inference",
+    "A093 actualblack3Pstripends/threeconductorleads and included4positionGroveplug conversioncable are separate from ordinary fourcoreUnitcable;no fake bodyGrove receiver or invented fourth stripwire",
+    "External per-pixel RGB and explicit flex appearance only;no automaticrainbow/SK6812bitstream/power/current/firmware/materialphysics/waterprooffit claims",
+    "Readable own-version film/PCB ordinaryPNG redraw only;retain physicalcarriers/PCB/adhesive/dropcoat when inkoff;omit unknown microtext,individualcodes and unsupported3Mbackprint",
+    "Hidden supports/contacts/optical/kinematicinstall are inferred,not fullBOM/manufacturing/hardware acceptance;privateCSV/URL/names/mappings/vectors/rawsources/generators remain outside distribution",
+    "Old50PNG/Scroll/StackChanproductionfit/PuzzleBridge/Catch and earlier deferrals retained;overallgoalactive"
+  ]
+}

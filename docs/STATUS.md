@@ -2,9 +2,9 @@
 
 由 npm run catalog 生成；catalog/products.json 为权威状态。
 
-范围：精细外观建模，行为由下游模拟器负责。主机 14 款，Unit 173 款。
+范围：精细外观建模，行为由下游模拟器负责。主机 17 款，Unit 184 款。
 
-状态计数：{"modeled":187}。modeled 表示已有实现，不表示已完成视觉验收。
+状态计数：{"modeled":201}。modeled 表示已有实现，不表示已完成视觉验收。
 
 | 类别 | 产品 | 阶段 | 名义尺寸 X × Y × Z / mm | 下一步 |
 | --- | --- | --- | --- | --- |
@@ -195,3 +195,17 @@
 | Unit | Unit ENV-II | modeled | 24 × 32 × 8 | Root frozenAPI/current-batch integration;modeled,0verified;not GPU/manufacturing acceptance |
 | Unit | Unit Joystick (MEGA328P original) | modeled | 24 × 48 × 32 | Root exact frozen API integration,including joystick kind and explicit caller host keyboard mapping;not GPU/hardware/manufacturing acceptance |
 | Unit | Unit GPS (AT6558 + MAX2659) | modeled | 24 × 48 × 8 | Root exact frozen API integration;not GPU/manufacturing acceptance |
+| Unit | Unit PaHub v2.0 | modeled | 24 × 48 × 10.8 | Root exact frozen API integration;not GPU/manufacturing acceptance |
+| Unit | Unit PbHub | modeled | 24 × 48 × 10.8 | Root frozenAPI/current-batch integration;modeled,not GPU or manufacturing acceptance |
+| Unit | TimerCamera (bare board) | modeled | 20 × 45 × 12 | Root integrate exact frozen API/fixed-blue indicator/passive camera;not hardware/GPU/manufacturing acceptance |
+| Unit | M5Camera (original U017) | modeled | 40 × 48 × 11 | Rootintegrate exactfrozenAPI;retain versionconflicts and ownrear film/PCBshield support,noGPU/manufacturingclaim |
+| Unit | ESP32CAM (original U007) | modeled | 20.5 × 46.5 × 11.5 | Root frozen API integration;no GPU/manufacturing acceptance |
+| Unit | Unit RGB LED Strip 0.5m / 30LED | modeled | 待确认 | Root frozen actual-API integration;no GPU/manufacturing/hardware acceptance |
+| Unit | Unit CardKB (original MEGA328P U035) | modeled | 88 × 54 × 5 | Root frozen API integration;no GPU/manufacturing/hardware acceptance |
+| Unit | Unit PoE CAM-W (original OV2640 U121-B) | modeled | 64 × 24 × 18 | RootintegratefrozenAPI;retainallhiddeninstall/fituncertainty,noGPU/physical/manufacturingclaim |
+| Unit | Unit LoRaWAN-US915 | modeled | 24 × 71.4 × 8 | Rootactualfrozen APIintegration;noGPU/manufacturing/electrical/RFacceptance |
+| Unit | Unit LoRaWAN-AS923 | modeled | 24 × 71.4 × 8 | Root exactfrozenAPIintegration,no GPU/manufacturing/physicalradioacceptance |
+| Unit | Unit LoRaWAN-EU868 | modeled | 24 × 71.4 × 8 | Rootactualfrozen APIintegration;noGPU/manufacturing/electrical/RFacceptance |
+| 主机 | Atom Lite | modeled | 24 × 24 × 9.5 | Continueotherproducts;ownnominal/native/hiddenBOM/flexure/fitandartworkapproximationsremain;noGPUorphysicalverificationclaim |
+| 主机 | Atom Matrix original | modeled | 待确认 | undefined |
+| 主机 | AtomS3 Lite | modeled | 24 × 24 × 9.5 | Review visible appearance when requested;retain modeled until actual visual acceptance. |

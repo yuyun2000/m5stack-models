@@ -1,0 +1,109 @@
+{
+  "id": "atoms3-lite",
+  "sku": "C124",
+  "status": "modeled",
+  "officialDocs": "https://docs.m5stack.com/en/core/AtomS3%20Lite",
+  "identityBoundary": "Own ESP32-S3FN8 white C124;not LCD AtomS3 or AtomS3R/C126. Shared shell bytes with C008 do not prove electronics/artwork equivalence.",
+  "officialMCP": {
+    "exactProduct": "AtomS3-Lite",
+    "sku": "C124",
+    "cachedExactSectionCount": 12,
+    "cachedExactSha256": "d2c7fd3f1578966c346a421c9a120100c47b36e0c011d182f6ab2395f51a81a7",
+    "retrievalBoundary": "Reused frozen own official evidence;no further MCP/tree/download queries."
+  },
+  "nativeSource": {
+    "path": "atoms3-lite/native.stl",
+    "sourcePath": "Products/C124_AtomS3-Lite/Structures/AtomS3-Lite.stl",
+    "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/C124_AtomS3-Lite/Structures/AtomS3-Lite.stl",
+    "repo": "m5stack/M5_Hardware",
+    "immutableCommit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "expectedGitBlob": "61a7357a74af5f4e01f8fd30d00ae2cbfd0b2470",
+    "actualGitBlob": "61a7357a74af5f4e01f8fd30d00ae2cbfd0b2470",
+    "bytes": 292684,
+    "sha256": "deafc7f31cbfcea58d142d4fa0dc70a293292c3044111b1208730f8069639432",
+    "httpStatus": 200,
+    "scope": "Source only;not distributable runtime"
+  },
+  "license": {
+    "spdx": "MIT",
+    "copyright": "Copyright (c) 2021 M5Stack",
+    "completeText": "src/devices/atoms3-lite/LICENSE-M5-Hardware.txt",
+    "sha256": "44611d917bece311f5c8eeffce83d8bf9e9ca3f815d262f694ff4a7996af50ea",
+    "gitBlob": "2bd55bead006ae4d137f62e95c3de4645cb4bb18"
+  },
+  "nativeByteVerification": {
+    "status": "pass",
+    "ownRawSourceSha256": "deafc7f31cbfcea58d142d4fa0dc70a293292c3044111b1208730f8069639432",
+    "rawSourceFaces": 5852,
+    "actualFaces": 2926,
+    "previewFaces": 2926,
+    "allRawFacesAccounted": true,
+    "originalArrayBytesVerified": [
+      {
+        "part": "upper-shell",
+        "faces": 1538,
+        "originalPositionBytes": true,
+        "originalNormalBytes": true,
+        "originalAttributeWords": true,
+        "sourceFaceIndices": true,
+        "identityTriangleIndex": true
+      },
+      {
+        "part": "lower-shell",
+        "faces": 1388,
+        "originalPositionBytes": true,
+        "originalNormalBytes": true,
+        "originalAttributeWords": true,
+        "sourceFaceIndices": true,
+        "identityTriangleIndex": true
+      }
+    ],
+    "previewPairsRevalidated": 2926,
+    "maxPreviewPositionDifferenceMm": 4.76837158203125e-06,
+    "previewNormalBytesDifferFaces": 129,
+    "maxPreviewNormalNumericDifference": 6.293967083625951e-13,
+    "previewAttributeWordsExact": true,
+    "nativeLicenseBlobVerified": true,
+    "scope": "Independent own raw binary STL to public derived arrays to complete duplicate-preview ledger. Preview normals are not claimed byte-identical:129 tiny source-normal numeric differences are retained and recorded."
+  },
+  "referenceSources": [
+    {
+      "role": "Fresh exact-SKU official MCP-linked reference",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/AtomS3 Lite/img-dc6432b6-fd9b-4066-9a4d-49786503d1a3.webp",
+      "sha256": "9873284a3403b425cf957ffcf0656e4270c19f9c9be36935b24c922a9434878e"
+    },
+    {
+      "role": "Fresh exact-SKU official MCP-linked reference",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/AtomS3 Lite/img-65ad4dde-eada-4edc-a442-8d31c61b1ccf.webp",
+      "sha256": "20da218f199a8b706a0cbdbf209c8560c3d09e7f8e16d11fee00564ef67701db"
+    },
+    {
+      "role": "Fresh exact-SKU official MCP-linked reference",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/471/C124_PinMap_01.jpg",
+      "sha256": "e5e70596d5d0f760c1f0c178c4424a030c3e37e38fe90523c6600828581cd610"
+    },
+    {
+      "role": "Fresh exact-SKU official MCP-linked reference",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/AtomS3 Lite/img-1ff0758c-2ca5-4cb8-adb8-b52d55af34a8.png",
+      "sha256": "14ba69107f17e22e6f5ca0ffae45c6d6b6e455bacf549a1af1b67a9a7f5c3a80"
+    }
+  ],
+  "nominalMm": [
+    24,
+    24,
+    9.5
+  ],
+  "nativeMm": [
+    24,
+    24,
+    9.50714111328125
+  ],
+  "actualPhysicalEnvelopeMm": [
+    24.000003814697266,
+    24.16999997615814,
+    9.50714111328125
+  ],
+  "pinEvidence": "Own C124 pin map: userG41/RGB35/IR4;Grove GND,5V,G2,G1;5-pin3V3,G5,G6,G7,G8 and4-pinG39,G38,5V,GND,observed from back with X mirrored into engineering front frame.",
+  "schematicBoundary": "Linked AtomS3 drawing includes LCD branches and is not evidence that Lite has a screen. Download green-light instruction is not a second visible emitter or automatic firmware behavior.",
+  "artworkBoundary": "Only2approved ordinary images copied;private table/vector/names/URLs/mapping kept outside public files."
+}

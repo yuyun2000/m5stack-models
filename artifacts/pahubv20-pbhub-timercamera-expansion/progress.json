@@ -1,0 +1,2718 @@
+{
+  "savedAt": "2026-10-26T22:52:34.165768+00:00",
+  "stage": "modeled",
+  "scope": "Exact U040-B native half-shells plus own7port PCB assembly,original U041 PbHub and bare U082 TimerCamera appearance,actual mechanical downstream connections/cap motion/fixedblue output and matching ordinaryPNG;no browser or whole-catalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 176,
+    "modeled": 190,
+    "verified": 0
+  },
+  "localHead": "296128b6173562d51976073dfa50a5b0ec945030",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "pahub-v20",
+      "status": "pass",
+      "report": "docs/research/pahub-v20/smoke.json",
+      "meshes": null,
+      "triangles": null
+    },
+    {
+      "id": "pbhub",
+      "status": "pass",
+      "report": "docs/research/pbhub/smoke.json",
+      "meshes": null,
+      "triangles": null
+    },
+    {
+      "id": "timercamera",
+      "status": "pass",
+      "report": "docs/research/timercamera/smoke.json",
+      "meshes": null,
+      "triangles": null
+    }
+  ],
+  "pngCount": 5,
+  "rasters": [
+    {
+      "path": "src/units/pahub-v20/artwork/back.png",
+      "pixels": [
+        1600,
+        2800
+      ],
+      "sha256": "3341baec127667e37418d4c7c7f9a0db5a58153b35406422ef8fe5670f36dd7d"
+    },
+    {
+      "path": "src/units/pahub-v20/artwork/pcb.png",
+      "pixels": [
+        1040,
+        940
+      ],
+      "sha256": "b4580c50ba34a58611b28e9260e9632b0bdc358ab479de2050b3de85cef59d0f"
+    },
+    {
+      "path": "src/units/pbhub/artwork/pcb.png",
+      "pixels": [
+        2020,
+        3020
+      ],
+      "sha256": "1b8ae244a12dca5417b222b4b27eb8d3f399827b28d30c96244ba4aa59e99675"
+    },
+    {
+      "path": "src/units/pbhub/artwork/rear.png",
+      "pixels": [
+        1620,
+        2840
+      ],
+      "sha256": "51c90d56cfac7971e07af11c4a53ef85249897a6ab6774037db6fce85047f2fb"
+    },
+    {
+      "path": "src/units/timercamera/reference-redraw-front.png",
+      "pixels": [
+        2000,
+        4500
+      ],
+      "sha256": "60b25a334a14252504f252bb454a39afdf53c4031fd7b677cfa8e04560039dca"
+    }
+  ],
+  "frozenPublicAPI": {
+    "pahub-v20": {
+      "exports": [
+        "GroveModule",
+        "Model",
+        "configurationSchema",
+        "configurations",
+        "defaults",
+        "spec"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [],
+      "leds": [],
+      "joysticks": [],
+      "manualInputs": [],
+      "displays": [],
+      "ports": [
+        "grove",
+        "grove-0",
+        "grove-1",
+        "grove-2",
+        "grove-3",
+        "grove-4",
+        "grove-5"
+      ],
+      "joints": [],
+      "anchors": [],
+      "accessoryExports": [],
+      "defaults": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整 PaHub v2.0 U040-B",
+          "options": {}
+        }
+      ],
+      "pngCount": 2,
+      "visualCommands": {
+        "ports": {
+          "types": [
+            "attach",
+            "detach"
+          ],
+          "targets": [
+            "grove",
+            "grove-0",
+            "grove-1",
+            "grove-2",
+            "grove-3",
+            "grove-4",
+            "grove-5"
+          ],
+          "scope": "Standard independent mechanical mating only"
+        },
+        "unitFrame": {
+          "type": "pose",
+          "target": "unitFrame",
+          "fields": [
+            "position",
+            "rotation",
+            "quaternion",
+            "distance"
+          ]
+        },
+        "cable": {
+          "type": "cable",
+          "target": "cable",
+          "fields": [
+            "slack",
+            "bend"
+          ]
+        }
+      }
+    },
+    "pbhub": {
+      "exports": [
+        "Model",
+        "GroveModule",
+        "spec",
+        "defaults",
+        "configurations",
+        "configurationSchema"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [],
+      "leds": [],
+      "joysticks": [],
+      "manualInputs": [],
+      "displays": [],
+      "ports": [
+        "grove",
+        "grove-0",
+        "grove-1",
+        "grove-2",
+        "grove-3",
+        "grove-4",
+        "grove-5"
+      ],
+      "joints": [],
+      "anchors": [],
+      "accessoryExports": [],
+      "defaults": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "原版 PbHub · 六路 GPIO 扩展外观",
+          "options": {}
+        }
+      ],
+      "pngCount": 2,
+      "visualCommands": {
+        "grove": {
+          "types": [
+            "attach",
+            "detach"
+          ],
+          "scope": "Passive mechanical family/ownership only"
+        },
+        "grove-0": {
+          "types": [
+            "attach",
+            "detach"
+          ],
+          "scope": "Passive mechanical family/ownership only"
+        },
+        "grove-1": {
+          "types": [
+            "attach",
+            "detach"
+          ],
+          "scope": "Passive mechanical family/ownership only"
+        },
+        "grove-2": {
+          "types": [
+            "attach",
+            "detach"
+          ],
+          "scope": "Passive mechanical family/ownership only"
+        },
+        "grove-3": {
+          "types": [
+            "attach",
+            "detach"
+          ],
+          "scope": "Passive mechanical family/ownership only"
+        },
+        "grove-4": {
+          "types": [
+            "attach",
+            "detach"
+          ],
+          "scope": "Passive mechanical family/ownership only"
+        },
+        "grove-5": {
+          "types": [
+            "attach",
+            "detach"
+          ],
+          "scope": "Passive mechanical family/ownership only"
+        },
+        "unitFrame": {
+          "type": "pose",
+          "fields": [
+            "position",
+            "rotation",
+            "quaternion",
+            "distance"
+          ]
+        },
+        "cable": {
+          "type": "cable",
+          "fields": [
+            "slack",
+            "bend"
+          ]
+        }
+      }
+    },
+    "timercamera": {
+      "exports": [
+        "GroveModule",
+        "Model",
+        "configurationSchema",
+        "configurations",
+        "defaults",
+        "spec"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [
+        "reset",
+        "power"
+      ],
+      "leds": [
+        "status"
+      ],
+      "joysticks": [],
+      "manualInputs": [],
+      "displays": [],
+      "ports": [
+        "grove",
+        "usb"
+      ],
+      "joints": [],
+      "anchors": [
+        "camera"
+      ],
+      "accessoryExports": [],
+      "defaults": {},
+      "configurations": [
+        {
+          "id": "bare",
+          "name": "裸板 TimerCamera U082",
+          "options": {}
+        }
+      ],
+      "pngCount": 1,
+      "visualCommands": {
+        "reset": {
+          "type": "button",
+          "actions": [
+            "press",
+            "release",
+            "cancel",
+            "click",
+            "state"
+          ],
+          "travelMm": 0.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ]
+        },
+        "power": {
+          "type": "button",
+          "actions": [
+            "press",
+            "release",
+            "cancel",
+            "click",
+            "state"
+          ],
+          "travelMm": 0.22,
+          "axis": [
+            1,
+            0,
+            0
+          ]
+        },
+        "status": {
+          "type": "led",
+          "fields": [
+            "on",
+            "brightness"
+          ],
+          "colorMode": "fixed-blue",
+          "fixedColor": "#247cff",
+          "colorCommandPolicy": "always coerced to fixed blue",
+          "default": {
+            "color": "#247cff",
+            "brightness": 0
+          },
+          "externalNoEcho": true
+        },
+        "camera": {
+          "kind": "component",
+          "interactive": false,
+          "state": {},
+          "sensor": "OV3660",
+          "documentaryFovDeg": 66.5,
+          "commands": [],
+          "scope": "Passive inferred optical frame,no focal calibration/video/AI/focusjoint"
+        },
+        "unitFrame": {
+          "type": "pose",
+          "fields": [
+            "position",
+            "rotation",
+            "quaternion",
+            "distance"
+          ]
+        },
+        "cable": {
+          "type": "cable",
+          "fields": [
+            "slack",
+            "bend"
+          ]
+        }
+      }
+    }
+  },
+  "fixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "pahub-v20",
+        "body": [
+          "grove",
+          "grove-0",
+          "grove-1",
+          "grove-2",
+          "grove-3",
+          "grove-4",
+          "grove-5"
+        ],
+        "ports": [
+          "grove",
+          "grove-0",
+          "grove-1",
+          "grove-2",
+          "grove-3",
+          "grove-4",
+          "grove-5"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "official-native-shell-plus-own-visible-assembly",
+          "sourceNativeParts": [
+            {
+              "id": "rear",
+              "triangles": 1872,
+              "exactSourceAttributesAndFaceMapping": true
+            },
+            {
+              "id": "front",
+              "triangles": 1626,
+              "exactSourceAttributesAndFaceMapping": true
+            }
+          ],
+          "nativeTriangles": 3498,
+          "excludedDuplicatePreviewTriangles": 3498,
+          "nativeShellEnvelopeMm": [
+            24,
+            48,
+            7.999999761581421
+          ],
+          "nominalMm": [
+            24,
+            48,
+            10.8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            48,
+            10.799999940395356
+          ],
+          "physicalMeshes": 348,
+          "triangles": 72578,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "mountWallRays": 16,
+          "pcbTubeReliefMm": [
+            0.32556244447062,
+            0.36184755259809265
+          ],
+          "pcbCentralNativeBossClearanceMm": 0.8999958770666012,
+          "actualExposedWindowBacking": [
+            "PaHub actual fixed resistor strap/passive;not a user switch",
+            "PaHub v2.0 actual exposed red PCB;outline/installation inferred around native retention",
+            "PaHub v2.0 actual exposed red PCB;outline/installation inferred around native retention"
+          ],
+          "actualPcbPosts": 4,
+          "visibleMuxLegs": 24,
+          "sourceModelConflict": "PCA9548AP/TCA9548A unresolved;package appearance only",
+          "outputs": [
+            {
+              "id": "grove-0",
+              "channel": 0,
+              "positionMm": [
+                7.4,
+                -2.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-1",
+              "channel": 1,
+              "positionMm": [
+                7.4,
+                7.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-2",
+              "channel": 2,
+              "positionMm": [
+                5.1,
+                17.7,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-3",
+              "channel": 3,
+              "positionMm": [
+                -5.1,
+                17.7,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-4",
+              "channel": 4,
+              "positionMm": [
+                -7.4,
+                7.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-5",
+              "channel": 5,
+              "positionMm": [
+                -7.4,
+                -2.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            }
+          ],
+          "socketWallRays": 28,
+          "totalPhysicalGroveSockets": 7,
+          "totalRetainedContacts": 28,
+          "inputRightAngleReturns": 4,
+          "outputStraightStems": 24,
+          "platedPcbBores": 28,
+          "annularPads": 56,
+          "physicalFilms": 1,
+          "ordinaryArtworkRegions": 2,
+          "realNativeM5Retained": true,
+          "hiddenInstallationAndFit": "Explicit own-photo reconstruction,not completeBOM or manufacturing datums",
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        },
+        "transformedStructure": {
+          "constructionRoute": "official-native-shell-plus-own-visible-assembly",
+          "sourceNativeParts": [
+            {
+              "id": "rear",
+              "triangles": 1872,
+              "exactSourceAttributesAndFaceMapping": true
+            },
+            {
+              "id": "front",
+              "triangles": 1626,
+              "exactSourceAttributesAndFaceMapping": true
+            }
+          ],
+          "nativeTriangles": 3498,
+          "excludedDuplicatePreviewTriangles": 3498,
+          "nativeShellEnvelopeMm": [
+            24,
+            48.00000000000004,
+            7.999999761581419
+          ],
+          "nominalMm": [
+            24,
+            48,
+            10.8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            48.00000000000004,
+            10.799999940395365
+          ],
+          "physicalMeshes": 348,
+          "triangles": 72578,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "mountWallRays": 16,
+          "pcbTubeReliefMm": [
+            0.32556244447062,
+            0.36184755259807844
+          ],
+          "pcbCentralNativeBossClearanceMm": 0.8999958770666012,
+          "actualExposedWindowBacking": [
+            "PaHub actual fixed resistor strap/passive;not a user switch",
+            "PaHub v2.0 actual exposed red PCB;outline/installation inferred around native retention",
+            "PaHub v2.0 actual exposed red PCB;outline/installation inferred around native retention"
+          ],
+          "actualPcbPosts": 4,
+          "visibleMuxLegs": 24,
+          "sourceModelConflict": "PCA9548AP/TCA9548A unresolved;package appearance only",
+          "outputs": [
+            {
+              "id": "grove-0",
+              "channel": 0,
+              "positionMm": [
+                7.4,
+                -2.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-1",
+              "channel": 1,
+              "positionMm": [
+                7.4,
+                7.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-2",
+              "channel": 2,
+              "positionMm": [
+                5.1,
+                17.7,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-3",
+              "channel": 3,
+              "positionMm": [
+                -5.1,
+                17.7,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-4",
+              "channel": 4,
+              "positionMm": [
+                -7.4,
+                7.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-5",
+              "channel": 5,
+              "positionMm": [
+                -7.4,
+                -2.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            }
+          ],
+          "socketWallRays": 28,
+          "totalPhysicalGroveSockets": 7,
+          "totalRetainedContacts": 28,
+          "inputRightAngleReturns": 4,
+          "outputStraightStems": 24,
+          "platedPcbBores": 28,
+          "annularPads": 56,
+          "physicalFilms": 1,
+          "ordinaryArtworkRegions": 2,
+          "realNativeM5Retained": true,
+          "hiddenInstallationAndFit": "Explicit own-photo reconstruction,not completeBOM or manufacturing datums",
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        }
+      },
+      {
+        "id": "pbhub",
+        "body": [
+          "grove",
+          "grove-0",
+          "grove-1",
+          "grove-2",
+          "grove-3",
+          "grove-4",
+          "grove-5"
+        ],
+        "ports": [
+          "grove",
+          "grove-0",
+          "grove-1",
+          "grove-2",
+          "grove-3",
+          "grove-4",
+          "grove-5"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "route": "own-original-U041-photo-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 281,
+          "triangles": 44924,
+          "envelopeMm": [
+            24,
+            48.00000011920929,
+            10.800000000000002
+          ],
+          "currentNominalMm": [
+            24,
+            48,
+            10.8
+          ],
+          "historicalNominalMm": [
+            24,
+            48,
+            12
+          ],
+          "trueMountAxes": 2,
+          "frontSideMountBoreWallRays": 40,
+          "openWindowBackedRays": 3,
+          "PCBDrills": 28,
+          "PCBDrillWallRays": 112,
+          "physicalPorts": 7,
+          "retainedContacts": 28,
+          "actualReceivingWallRays": 14,
+          "visiblePackageLeads": 32,
+          "physicalRearFilms": 1,
+          "ordinaryPngs": 2,
+          "scope": "Appearance reconstruction;hidden installation/fit inferred,no productionBOM/electrical/GPU/manufacturing acceptance"
+        },
+        "transformedStructure": {
+          "route": "own-original-U041-photo-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 281,
+          "triangles": 44924,
+          "envelopeMm": [
+            24.00000000000003,
+            48.000000119209346,
+            10.800000000000004
+          ],
+          "currentNominalMm": [
+            24,
+            48,
+            10.8
+          ],
+          "historicalNominalMm": [
+            24,
+            48,
+            12
+          ],
+          "trueMountAxes": 2,
+          "frontSideMountBoreWallRays": 40,
+          "openWindowBackedRays": 3,
+          "PCBDrills": 28,
+          "PCBDrillWallRays": 112,
+          "physicalPorts": 7,
+          "retainedContacts": 28,
+          "actualReceivingWallRays": 14,
+          "visiblePackageLeads": 32,
+          "physicalRearFilms": 1,
+          "ordinaryPngs": 2,
+          "scope": "Appearance reconstruction;hidden installation/fit inferred,no productionBOM/electrical/GPU/manufacturing acceptance"
+        }
+      },
+      {
+        "id": "timercamera",
+        "body": [
+          "camera",
+          "grove",
+          "usb",
+          "reset",
+          "power",
+          "status"
+        ],
+        "ports": [
+          "grove",
+          "usb"
+        ],
+        "controls": [
+          "reset",
+          "power"
+        ],
+        "leds": [
+          "status"
+        ],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 646,
+          "triangles": 33644,
+          "allClosedPositiveDirectedEdges": true,
+          "actualEnvelopeMm": [
+            19.999999979138366,
+            45,
+            12.000000023841856
+          ],
+          "nominalMm": [
+            20,
+            45,
+            12
+          ],
+          "realMountingAxes": 2,
+          "mountingFrontSideWallRays": 16,
+          "trueGrovePCBDrills": 4,
+          "pcbFrontSideWallRays": 16,
+          "rectangularTailToPlatedBoreClearanceMm": 0.013015151901650035,
+          "twoPopulatedPCBfaces": true,
+          "ownVisiblePassiveEnvelopes": 82,
+          "realMetalSolderLeads": 276,
+          "grove": {
+            "contacts": 4,
+            "returns": 4,
+            "throughPCBTails": 4,
+            "platedBores": 4,
+            "annuli": 8
+          },
+          "usb": {
+            "realHollowShield": true,
+            "retainedTongue": true,
+            "contacts": 24,
+            "returns": 24,
+            "tails": 24
+          },
+          "camera": {
+            "ordinaryOV3660": true,
+            "recessedRealWindow": true,
+            "opticalFrontSideWallRays": 8,
+            "passiveFrame": "camera",
+            "documentaryFovDeg": 66.5,
+            "focusJoint": false,
+            "videoDisplay": false
+          },
+          "fpc": {
+            "realOrangeFlex": true,
+            "physicalCopperTraces": 24,
+            "trueReceivingSlot": true,
+            "contacts": 24,
+            "returns": 24,
+            "tails": 24
+          },
+          "emptyBatterySocket": {
+            "contacts": 2,
+            "unsupportedPortClassCreated": false,
+            "suppliedBattery": false
+          },
+          "buttons": {
+            "reset": {
+              "travelMm": 0.25,
+              "axis": [
+                0,
+                0,
+                -1
+              ]
+            },
+            "power": {
+              "travelMm": 0.22,
+              "axis": [
+                1,
+                0,
+                0
+              ]
+            }
+          },
+          "fixedBlueLed": true,
+          "physicalAdhesiveFilms": 0,
+          "scope": "Own bare U082 all undimensioned geometry/installation/optical/connector/lead/travel data reconstructed;not production BOM/focal datum/hardware fit"
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 646,
+          "triangles": 33644,
+          "allClosedPositiveDirectedEdges": true,
+          "actualEnvelopeMm": [
+            19.99999997913838,
+            45.00000000000001,
+            12.000000023841856
+          ],
+          "nominalMm": [
+            20,
+            45,
+            12
+          ],
+          "realMountingAxes": 2,
+          "mountingFrontSideWallRays": 16,
+          "trueGrovePCBDrills": 4,
+          "pcbFrontSideWallRays": 16,
+          "rectangularTailToPlatedBoreClearanceMm": 0.013015151901650035,
+          "twoPopulatedPCBfaces": true,
+          "ownVisiblePassiveEnvelopes": 82,
+          "realMetalSolderLeads": 276,
+          "grove": {
+            "contacts": 4,
+            "returns": 4,
+            "throughPCBTails": 4,
+            "platedBores": 4,
+            "annuli": 8
+          },
+          "usb": {
+            "realHollowShield": true,
+            "retainedTongue": true,
+            "contacts": 24,
+            "returns": 24,
+            "tails": 24
+          },
+          "camera": {
+            "ordinaryOV3660": true,
+            "recessedRealWindow": true,
+            "opticalFrontSideWallRays": 8,
+            "passiveFrame": "camera",
+            "documentaryFovDeg": 66.5,
+            "focusJoint": false,
+            "videoDisplay": false
+          },
+          "fpc": {
+            "realOrangeFlex": true,
+            "physicalCopperTraces": 24,
+            "trueReceivingSlot": true,
+            "contacts": 24,
+            "returns": 24,
+            "tails": 24
+          },
+          "emptyBatterySocket": {
+            "contacts": 2,
+            "unsupportedPortClassCreated": false,
+            "suppliedBattery": false
+          },
+          "buttons": {
+            "reset": {
+              "travelMm": 0.25,
+              "axis": [
+                0,
+                0,
+                -1
+              ]
+            },
+            "power": {
+              "travelMm": 0.22,
+              "axis": [
+                1,
+                0,
+                0
+              ]
+            }
+          },
+          "fixedBlueLed": true,
+          "physicalAdhesiveFilms": 0,
+          "scope": "Own bare U082 all undimensioned geometry/installation/optical/connector/lead/travel data reconstructed;not production BOM/focal datum/hardware fit"
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "pahub-v20",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "physicalStructure": {
+          "constructionRoute": "official-native-shell-plus-own-visible-assembly",
+          "sourceNativeParts": [
+            {
+              "id": "rear",
+              "triangles": 1872,
+              "exactSourceAttributesAndFaceMapping": true
+            },
+            {
+              "id": "front",
+              "triangles": 1626,
+              "exactSourceAttributesAndFaceMapping": true
+            }
+          ],
+          "nativeTriangles": 3498,
+          "excludedDuplicatePreviewTriangles": 3498,
+          "nativeShellEnvelopeMm": [
+            24,
+            48,
+            7.999999761581421
+          ],
+          "nominalMm": [
+            24,
+            48,
+            10.8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            48,
+            10.799999940395356
+          ],
+          "physicalMeshes": 348,
+          "triangles": 72578,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "mountWallRays": 16,
+          "pcbTubeReliefMm": [
+            0.3255624444706138,
+            0.3618475525980971
+          ],
+          "pcbCentralNativeBossClearanceMm": 0.8999958770665959,
+          "actualExposedWindowBacking": [
+            "PaHub actual fixed resistor strap/passive;not a user switch",
+            "PaHub v2.0 actual exposed red PCB;outline/installation inferred around native retention",
+            "PaHub v2.0 actual exposed red PCB;outline/installation inferred around native retention"
+          ],
+          "actualPcbPosts": 4,
+          "visibleMuxLegs": 24,
+          "sourceModelConflict": "PCA9548AP/TCA9548A unresolved;package appearance only",
+          "outputs": [
+            {
+              "id": "grove-0",
+              "channel": 0,
+              "positionMm": [
+                7.4,
+                -2.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-1",
+              "channel": 1,
+              "positionMm": [
+                7.4,
+                7.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-2",
+              "channel": 2,
+              "positionMm": [
+                5.1,
+                17.7,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-3",
+              "channel": 3,
+              "positionMm": [
+                -5.1,
+                17.7,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-4",
+              "channel": 4,
+              "positionMm": [
+                -7.4,
+                7.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-5",
+              "channel": 5,
+              "positionMm": [
+                -7.4,
+                -2.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            }
+          ],
+          "socketWallRays": 28,
+          "totalPhysicalGroveSockets": 7,
+          "totalRetainedContacts": 28,
+          "inputRightAngleReturns": 4,
+          "outputStraightStems": 24,
+          "platedPcbBores": 28,
+          "annularPads": 56,
+          "physicalFilms": 1,
+          "ordinaryArtworkRegions": 2,
+          "realNativeM5Retained": true,
+          "hiddenInstallationAndFit": "Explicit own-photo reconstruction,not completeBOM or manufacturing datums",
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "pbhub",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "physicalStructure": {
+          "route": "own-original-U041-photo-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 281,
+          "triangles": 44924,
+          "envelopeMm": [
+            24,
+            48.00000011920929,
+            10.8
+          ],
+          "currentNominalMm": [
+            24,
+            48,
+            10.8
+          ],
+          "historicalNominalMm": [
+            24,
+            48,
+            12
+          ],
+          "trueMountAxes": 2,
+          "frontSideMountBoreWallRays": 40,
+          "openWindowBackedRays": 3,
+          "PCBDrills": 28,
+          "PCBDrillWallRays": 112,
+          "physicalPorts": 7,
+          "retainedContacts": 28,
+          "actualReceivingWallRays": 14,
+          "visiblePackageLeads": 32,
+          "physicalRearFilms": 1,
+          "ordinaryPngs": 2,
+          "scope": "Appearance reconstruction;hidden installation/fit inferred,no productionBOM/electrical/GPU/manufacturing acceptance"
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "timercamera",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "reset",
+          "power"
+        ],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 646,
+          "triangles": 33644,
+          "allClosedPositiveDirectedEdges": true,
+          "actualEnvelopeMm": [
+            19.999999979138373,
+            45,
+            12.000000023841858
+          ],
+          "nominalMm": [
+            20,
+            45,
+            12
+          ],
+          "realMountingAxes": 2,
+          "mountingFrontSideWallRays": 16,
+          "trueGrovePCBDrills": 4,
+          "pcbFrontSideWallRays": 16,
+          "rectangularTailToPlatedBoreClearanceMm": 0.013015151901650035,
+          "twoPopulatedPCBfaces": true,
+          "ownVisiblePassiveEnvelopes": 82,
+          "realMetalSolderLeads": 276,
+          "grove": {
+            "contacts": 4,
+            "returns": 4,
+            "throughPCBTails": 4,
+            "platedBores": 4,
+            "annuli": 8
+          },
+          "usb": {
+            "realHollowShield": true,
+            "retainedTongue": true,
+            "contacts": 24,
+            "returns": 24,
+            "tails": 24
+          },
+          "camera": {
+            "ordinaryOV3660": true,
+            "recessedRealWindow": true,
+            "opticalFrontSideWallRays": 8,
+            "passiveFrame": "camera",
+            "documentaryFovDeg": 66.5,
+            "focusJoint": false,
+            "videoDisplay": false
+          },
+          "fpc": {
+            "realOrangeFlex": true,
+            "physicalCopperTraces": 24,
+            "trueReceivingSlot": true,
+            "contacts": 24,
+            "returns": 24,
+            "tails": 24
+          },
+          "emptyBatterySocket": {
+            "contacts": 2,
+            "unsupportedPortClassCreated": false,
+            "suppliedBattery": false
+          },
+          "buttons": {
+            "reset": {
+              "travelMm": 0.25,
+              "axis": [
+                0,
+                0,
+                -1
+              ]
+            },
+            "power": {
+              "travelMm": 0.22,
+              "axis": [
+                1,
+                0,
+                0
+              ]
+            }
+          },
+          "fixedBlueLed": true,
+          "physicalAdhesiveFilms": 0,
+          "scope": "Own bare U082 all undimensioned geometry/installation/optical/connector/lead/travel data reconstructed;not production BOM/focal datum/hardware fit"
+        },
+        "staticMounting": []
+      }
+    ],
+    "configurations": [
+      {
+        "id": "pahub-v20",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "pbhub",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "timercamera",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      }
+    ],
+    "behaviors": [
+      {
+        "id": "pahub-v20",
+        "staticNativeShellPcbMuxSevenActualPorts": true,
+        "noDipLedButtonJointSensorAnchor": true,
+        "noAddressChannelI2cPowerFirmwareOrAutomaticEcho": true,
+        "actualDownstreamPorts": [
+          "grove-0",
+          "grove-1",
+          "grove-2",
+          "grove-3",
+          "grove-4",
+          "grove-5"
+        ],
+        "actualFourCoreChildrenChecked": 6,
+        "independentHierarchicalAddressAndDetach": true,
+        "allPeerPhysicalAttributesIndicesWorldRetained": true,
+        "actualDownstreamDetachRestoreExact": true,
+        "createdDownstreamResourcesDisposed": 4164,
+        "existingOccupantsRetained": 0,
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0
+      },
+      {
+        "id": "pbhub",
+        "staticNoProtocolCommandTypes": 16,
+        "rejectedPortCommands": 112,
+        "physicalPorts": 7,
+        "downstreamBranches": 6,
+        "downstreamConstructor": "Actual current GroveModule synchronously constructed;no stub/historical unit",
+        "fourWireEndpointChecks": 48,
+        "hierarchicalAddressing": true,
+        "eachBranchPoseDetachReattachIndependent": true,
+        "peerFramebufferAndNoEchoInvariant": true,
+        "disposedDownstreamResources": [
+          350,
+          350,
+          350,
+          350,
+          350,
+          350
+        ],
+        "scope": "Mechanical branch ownership/cable only,no GPIO/ADC/PWM/RGB/I2C/address simulation"
+      },
+      {
+        "id": "timercamera",
+        "controls": [
+          {
+            "id": "reset",
+            "travelMm": 0.25,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "power",
+            "travelMm": 0.22,
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          }
+        ],
+        "simultaneous": {
+          "controls": 2,
+          "allHeldAndOneCancelled": "independent peers",
+          "completeNeutralPhysicalRestored": true
+        },
+        "partialPressAndCancelledSpringReturn": [
+          "reset",
+          "power"
+        ],
+        "onlyRealCapsAndStemsMove": true,
+        "fixedFramesTerminalsPCBPortsCameraAndPeersInvariant": true,
+        "externalFixedBlueNoEcho": true,
+        "noAutomaticPowerResetRtcCameraLedLinkage": true,
+        "noVideoFramebufferAIFocusOrFirmware": true,
+        "passiveCameraFrame": {
+          "sensor": "OV3660",
+          "documentaryFovDeg": 66.5
+        },
+        "allPhysicalAttributesIndexWorldRestored": true
+      }
+    ],
+    "accessories": [
+      {
+        "id": "pahub-v20",
+        "mounting": []
+      },
+      {
+        "id": "pbhub",
+        "mounting": []
+      },
+      {
+        "id": "timercamera",
+        "mounting": []
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "pahub-v20",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "pbhub",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "timercamera",
+        "passiveAnchors": [
+          "camera"
+        ],
+        "noFirmwareOrProtocolBehavior": true
+      }
+    ],
+    "disposedResources": 2113,
+    "cases": [
+      "three-real-four-core-branches",
+      "own-native-halves-plus-own-exact-SKU-assemblies",
+      "real-seven-receiver-PCB-support-and28contacts",
+      "real-six-branch-downstream-fourcore-addressing",
+      "real-barecamera-two-cap-fixedblue-physical-invariance",
+      "own-readable-PCB-front-and-rear-print",
+      "both-entries-actual-presets-and-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-peer-isolation",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own three physical assemblies and actual matching ordinary print,actual evidenced physical interfaces and actual downstream mechanical ports,two-cap shapes and fixedblue indicator;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/I2Crouting-GPIO-camera-values/electrical/firmware/whole-history acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "pahub-v20",
+        "body": [
+          "grove",
+          "grove-0",
+          "grove-1",
+          "grove-2",
+          "grove-3",
+          "grove-4",
+          "grove-5"
+        ],
+        "ports": [
+          "grove",
+          "grove-0",
+          "grove-1",
+          "grove-2",
+          "grove-3",
+          "grove-4",
+          "grove-5"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "official-native-shell-plus-own-visible-assembly",
+          "sourceNativeParts": [
+            {
+              "id": "rear",
+              "triangles": 1872,
+              "exactSourceAttributesAndFaceMapping": true
+            },
+            {
+              "id": "front",
+              "triangles": 1626,
+              "exactSourceAttributesAndFaceMapping": true
+            }
+          ],
+          "nativeTriangles": 3498,
+          "excludedDuplicatePreviewTriangles": 3498,
+          "nativeShellEnvelopeMm": [
+            24,
+            48,
+            7.999999761581421
+          ],
+          "nominalMm": [
+            24,
+            48,
+            10.8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            48,
+            10.799999940395356
+          ],
+          "physicalMeshes": 348,
+          "triangles": 72578,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "mountWallRays": 16,
+          "pcbTubeReliefMm": [
+            0.32556244447062,
+            0.36184755259809265
+          ],
+          "pcbCentralNativeBossClearanceMm": 0.8999958770666012,
+          "actualExposedWindowBacking": [
+            "PaHub actual fixed resistor strap/passive;not a user switch",
+            "PaHub v2.0 actual exposed red PCB;outline/installation inferred around native retention",
+            "PaHub v2.0 actual exposed red PCB;outline/installation inferred around native retention"
+          ],
+          "actualPcbPosts": 4,
+          "visibleMuxLegs": 24,
+          "sourceModelConflict": "PCA9548AP/TCA9548A unresolved;package appearance only",
+          "outputs": [
+            {
+              "id": "grove-0",
+              "channel": 0,
+              "positionMm": [
+                7.4,
+                -2.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-1",
+              "channel": 1,
+              "positionMm": [
+                7.4,
+                7.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-2",
+              "channel": 2,
+              "positionMm": [
+                5.1,
+                17.7,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-3",
+              "channel": 3,
+              "positionMm": [
+                -5.1,
+                17.7,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-4",
+              "channel": 4,
+              "positionMm": [
+                -7.4,
+                7.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-5",
+              "channel": 5,
+              "positionMm": [
+                -7.4,
+                -2.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            }
+          ],
+          "socketWallRays": 28,
+          "totalPhysicalGroveSockets": 7,
+          "totalRetainedContacts": 28,
+          "inputRightAngleReturns": 4,
+          "outputStraightStems": 24,
+          "platedPcbBores": 28,
+          "annularPads": 56,
+          "physicalFilms": 1,
+          "ordinaryArtworkRegions": 2,
+          "realNativeM5Retained": true,
+          "hiddenInstallationAndFit": "Explicit own-photo reconstruction,not completeBOM or manufacturing datums",
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        },
+        "transformedStructure": {
+          "constructionRoute": "official-native-shell-plus-own-visible-assembly",
+          "sourceNativeParts": [
+            {
+              "id": "rear",
+              "triangles": 1872,
+              "exactSourceAttributesAndFaceMapping": true
+            },
+            {
+              "id": "front",
+              "triangles": 1626,
+              "exactSourceAttributesAndFaceMapping": true
+            }
+          ],
+          "nativeTriangles": 3498,
+          "excludedDuplicatePreviewTriangles": 3498,
+          "nativeShellEnvelopeMm": [
+            24,
+            48.00000000000004,
+            7.999999761581419
+          ],
+          "nominalMm": [
+            24,
+            48,
+            10.8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            48.00000000000004,
+            10.799999940395365
+          ],
+          "physicalMeshes": 348,
+          "triangles": 72578,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "mountWallRays": 16,
+          "pcbTubeReliefMm": [
+            0.32556244447062,
+            0.36184755259807844
+          ],
+          "pcbCentralNativeBossClearanceMm": 0.8999958770666012,
+          "actualExposedWindowBacking": [
+            "PaHub actual fixed resistor strap/passive;not a user switch",
+            "PaHub v2.0 actual exposed red PCB;outline/installation inferred around native retention",
+            "PaHub v2.0 actual exposed red PCB;outline/installation inferred around native retention"
+          ],
+          "actualPcbPosts": 4,
+          "visibleMuxLegs": 24,
+          "sourceModelConflict": "PCA9548AP/TCA9548A unresolved;package appearance only",
+          "outputs": [
+            {
+              "id": "grove-0",
+              "channel": 0,
+              "positionMm": [
+                7.4,
+                -2.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-1",
+              "channel": 1,
+              "positionMm": [
+                7.4,
+                7.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-2",
+              "channel": 2,
+              "positionMm": [
+                5.1,
+                17.7,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-3",
+              "channel": 3,
+              "positionMm": [
+                -5.1,
+                17.7,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-4",
+              "channel": 4,
+              "positionMm": [
+                -7.4,
+                7.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-5",
+              "channel": 5,
+              "positionMm": [
+                -7.4,
+                -2.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            }
+          ],
+          "socketWallRays": 28,
+          "totalPhysicalGroveSockets": 7,
+          "totalRetainedContacts": 28,
+          "inputRightAngleReturns": 4,
+          "outputStraightStems": 24,
+          "platedPcbBores": 28,
+          "annularPads": 56,
+          "physicalFilms": 1,
+          "ordinaryArtworkRegions": 2,
+          "realNativeM5Retained": true,
+          "hiddenInstallationAndFit": "Explicit own-photo reconstruction,not completeBOM or manufacturing datums",
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        }
+      },
+      {
+        "id": "pbhub",
+        "body": [
+          "grove",
+          "grove-0",
+          "grove-1",
+          "grove-2",
+          "grove-3",
+          "grove-4",
+          "grove-5"
+        ],
+        "ports": [
+          "grove",
+          "grove-0",
+          "grove-1",
+          "grove-2",
+          "grove-3",
+          "grove-4",
+          "grove-5"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "route": "own-original-U041-photo-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 281,
+          "triangles": 44924,
+          "envelopeMm": [
+            24,
+            48.00000011920929,
+            10.800000000000002
+          ],
+          "currentNominalMm": [
+            24,
+            48,
+            10.8
+          ],
+          "historicalNominalMm": [
+            24,
+            48,
+            12
+          ],
+          "trueMountAxes": 2,
+          "frontSideMountBoreWallRays": 40,
+          "openWindowBackedRays": 3,
+          "PCBDrills": 28,
+          "PCBDrillWallRays": 112,
+          "physicalPorts": 7,
+          "retainedContacts": 28,
+          "actualReceivingWallRays": 14,
+          "visiblePackageLeads": 32,
+          "physicalRearFilms": 1,
+          "ordinaryPngs": 2,
+          "scope": "Appearance reconstruction;hidden installation/fit inferred,no productionBOM/electrical/GPU/manufacturing acceptance"
+        },
+        "transformedStructure": {
+          "route": "own-original-U041-photo-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 281,
+          "triangles": 44924,
+          "envelopeMm": [
+            24.00000000000003,
+            48.000000119209346,
+            10.800000000000004
+          ],
+          "currentNominalMm": [
+            24,
+            48,
+            10.8
+          ],
+          "historicalNominalMm": [
+            24,
+            48,
+            12
+          ],
+          "trueMountAxes": 2,
+          "frontSideMountBoreWallRays": 40,
+          "openWindowBackedRays": 3,
+          "PCBDrills": 28,
+          "PCBDrillWallRays": 112,
+          "physicalPorts": 7,
+          "retainedContacts": 28,
+          "actualReceivingWallRays": 14,
+          "visiblePackageLeads": 32,
+          "physicalRearFilms": 1,
+          "ordinaryPngs": 2,
+          "scope": "Appearance reconstruction;hidden installation/fit inferred,no productionBOM/electrical/GPU/manufacturing acceptance"
+        }
+      },
+      {
+        "id": "timercamera",
+        "body": [
+          "camera",
+          "grove",
+          "usb",
+          "reset",
+          "power",
+          "status"
+        ],
+        "ports": [
+          "grove",
+          "usb"
+        ],
+        "controls": [
+          "reset",
+          "power"
+        ],
+        "leds": [
+          "status"
+        ],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 646,
+          "triangles": 33644,
+          "allClosedPositiveDirectedEdges": true,
+          "actualEnvelopeMm": [
+            19.999999979138366,
+            45,
+            12.000000023841856
+          ],
+          "nominalMm": [
+            20,
+            45,
+            12
+          ],
+          "realMountingAxes": 2,
+          "mountingFrontSideWallRays": 16,
+          "trueGrovePCBDrills": 4,
+          "pcbFrontSideWallRays": 16,
+          "rectangularTailToPlatedBoreClearanceMm": 0.013015151901650035,
+          "twoPopulatedPCBfaces": true,
+          "ownVisiblePassiveEnvelopes": 82,
+          "realMetalSolderLeads": 276,
+          "grove": {
+            "contacts": 4,
+            "returns": 4,
+            "throughPCBTails": 4,
+            "platedBores": 4,
+            "annuli": 8
+          },
+          "usb": {
+            "realHollowShield": true,
+            "retainedTongue": true,
+            "contacts": 24,
+            "returns": 24,
+            "tails": 24
+          },
+          "camera": {
+            "ordinaryOV3660": true,
+            "recessedRealWindow": true,
+            "opticalFrontSideWallRays": 8,
+            "passiveFrame": "camera",
+            "documentaryFovDeg": 66.5,
+            "focusJoint": false,
+            "videoDisplay": false
+          },
+          "fpc": {
+            "realOrangeFlex": true,
+            "physicalCopperTraces": 24,
+            "trueReceivingSlot": true,
+            "contacts": 24,
+            "returns": 24,
+            "tails": 24
+          },
+          "emptyBatterySocket": {
+            "contacts": 2,
+            "unsupportedPortClassCreated": false,
+            "suppliedBattery": false
+          },
+          "buttons": {
+            "reset": {
+              "travelMm": 0.25,
+              "axis": [
+                0,
+                0,
+                -1
+              ]
+            },
+            "power": {
+              "travelMm": 0.22,
+              "axis": [
+                1,
+                0,
+                0
+              ]
+            }
+          },
+          "fixedBlueLed": true,
+          "physicalAdhesiveFilms": 0,
+          "scope": "Own bare U082 all undimensioned geometry/installation/optical/connector/lead/travel data reconstructed;not production BOM/focal datum/hardware fit"
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 646,
+          "triangles": 33644,
+          "allClosedPositiveDirectedEdges": true,
+          "actualEnvelopeMm": [
+            19.99999997913838,
+            45.00000000000001,
+            12.000000023841856
+          ],
+          "nominalMm": [
+            20,
+            45,
+            12
+          ],
+          "realMountingAxes": 2,
+          "mountingFrontSideWallRays": 16,
+          "trueGrovePCBDrills": 4,
+          "pcbFrontSideWallRays": 16,
+          "rectangularTailToPlatedBoreClearanceMm": 0.013015151901650035,
+          "twoPopulatedPCBfaces": true,
+          "ownVisiblePassiveEnvelopes": 82,
+          "realMetalSolderLeads": 276,
+          "grove": {
+            "contacts": 4,
+            "returns": 4,
+            "throughPCBTails": 4,
+            "platedBores": 4,
+            "annuli": 8
+          },
+          "usb": {
+            "realHollowShield": true,
+            "retainedTongue": true,
+            "contacts": 24,
+            "returns": 24,
+            "tails": 24
+          },
+          "camera": {
+            "ordinaryOV3660": true,
+            "recessedRealWindow": true,
+            "opticalFrontSideWallRays": 8,
+            "passiveFrame": "camera",
+            "documentaryFovDeg": 66.5,
+            "focusJoint": false,
+            "videoDisplay": false
+          },
+          "fpc": {
+            "realOrangeFlex": true,
+            "physicalCopperTraces": 24,
+            "trueReceivingSlot": true,
+            "contacts": 24,
+            "returns": 24,
+            "tails": 24
+          },
+          "emptyBatterySocket": {
+            "contacts": 2,
+            "unsupportedPortClassCreated": false,
+            "suppliedBattery": false
+          },
+          "buttons": {
+            "reset": {
+              "travelMm": 0.25,
+              "axis": [
+                0,
+                0,
+                -1
+              ]
+            },
+            "power": {
+              "travelMm": 0.22,
+              "axis": [
+                1,
+                0,
+                0
+              ]
+            }
+          },
+          "fixedBlueLed": true,
+          "physicalAdhesiveFilms": 0,
+          "scope": "Own bare U082 all undimensioned geometry/installation/optical/connector/lead/travel data reconstructed;not production BOM/focal datum/hardware fit"
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "pahub-v20",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "physicalStructure": {
+          "constructionRoute": "official-native-shell-plus-own-visible-assembly",
+          "sourceNativeParts": [
+            {
+              "id": "rear",
+              "triangles": 1872,
+              "exactSourceAttributesAndFaceMapping": true
+            },
+            {
+              "id": "front",
+              "triangles": 1626,
+              "exactSourceAttributesAndFaceMapping": true
+            }
+          ],
+          "nativeTriangles": 3498,
+          "excludedDuplicatePreviewTriangles": 3498,
+          "nativeShellEnvelopeMm": [
+            24,
+            48,
+            7.999999761581421
+          ],
+          "nominalMm": [
+            24,
+            48,
+            10.8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            48,
+            10.799999940395356
+          ],
+          "physicalMeshes": 348,
+          "triangles": 72578,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "mountWallRays": 16,
+          "pcbTubeReliefMm": [
+            0.3255624444706138,
+            0.3618475525980971
+          ],
+          "pcbCentralNativeBossClearanceMm": 0.8999958770665959,
+          "actualExposedWindowBacking": [
+            "PaHub actual fixed resistor strap/passive;not a user switch",
+            "PaHub v2.0 actual exposed red PCB;outline/installation inferred around native retention",
+            "PaHub v2.0 actual exposed red PCB;outline/installation inferred around native retention"
+          ],
+          "actualPcbPosts": 4,
+          "visibleMuxLegs": 24,
+          "sourceModelConflict": "PCA9548AP/TCA9548A unresolved;package appearance only",
+          "outputs": [
+            {
+              "id": "grove-0",
+              "channel": 0,
+              "positionMm": [
+                7.4,
+                -2.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-1",
+              "channel": 1,
+              "positionMm": [
+                7.4,
+                7.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-2",
+              "channel": 2,
+              "positionMm": [
+                5.1,
+                17.7,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-3",
+              "channel": 3,
+              "positionMm": [
+                -5.1,
+                17.7,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-4",
+              "channel": 4,
+              "positionMm": [
+                -7.4,
+                7.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            },
+            {
+              "id": "grove-5",
+              "channel": 5,
+              "positionMm": [
+                -7.4,
+                -2.8,
+                6.8
+              ],
+              "actualContacts": 4,
+              "straightThroughPcbStems": 4,
+              "upwardMouth": true
+            }
+          ],
+          "socketWallRays": 28,
+          "totalPhysicalGroveSockets": 7,
+          "totalRetainedContacts": 28,
+          "inputRightAngleReturns": 4,
+          "outputStraightStems": 24,
+          "platedPcbBores": 28,
+          "annularPads": 56,
+          "physicalFilms": 1,
+          "ordinaryArtworkRegions": 2,
+          "realNativeM5Retained": true,
+          "hiddenInstallationAndFit": "Explicit own-photo reconstruction,not completeBOM or manufacturing datums",
+          "controls": 0,
+          "leds": 0,
+          "joints": 0,
+          "sensorReadings": 0
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "pbhub",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [],
+        "physicalStructure": {
+          "route": "own-original-U041-photo-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 281,
+          "triangles": 44924,
+          "envelopeMm": [
+            24,
+            48.00000011920929,
+            10.8
+          ],
+          "currentNominalMm": [
+            24,
+            48,
+            10.8
+          ],
+          "historicalNominalMm": [
+            24,
+            48,
+            12
+          ],
+          "trueMountAxes": 2,
+          "frontSideMountBoreWallRays": 40,
+          "openWindowBackedRays": 3,
+          "PCBDrills": 28,
+          "PCBDrillWallRays": 112,
+          "physicalPorts": 7,
+          "retainedContacts": 28,
+          "actualReceivingWallRays": 14,
+          "visiblePackageLeads": 32,
+          "physicalRearFilms": 1,
+          "ordinaryPngs": 2,
+          "scope": "Appearance reconstruction;hidden installation/fit inferred,no productionBOM/electrical/GPU/manufacturing acceptance"
+        },
+        "staticMounting": []
+      },
+      {
+        "id": "timercamera",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "reset",
+          "power"
+        ],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalBodyMeshes": 646,
+          "triangles": 33644,
+          "allClosedPositiveDirectedEdges": true,
+          "actualEnvelopeMm": [
+            19.999999979138373,
+            45,
+            12.000000023841858
+          ],
+          "nominalMm": [
+            20,
+            45,
+            12
+          ],
+          "realMountingAxes": 2,
+          "mountingFrontSideWallRays": 16,
+          "trueGrovePCBDrills": 4,
+          "pcbFrontSideWallRays": 16,
+          "rectangularTailToPlatedBoreClearanceMm": 0.013015151901650035,
+          "twoPopulatedPCBfaces": true,
+          "ownVisiblePassiveEnvelopes": 82,
+          "realMetalSolderLeads": 276,
+          "grove": {
+            "contacts": 4,
+            "returns": 4,
+            "throughPCBTails": 4,
+            "platedBores": 4,
+            "annuli": 8
+          },
+          "usb": {
+            "realHollowShield": true,
+            "retainedTongue": true,
+            "contacts": 24,
+            "returns": 24,
+            "tails": 24
+          },
+          "camera": {
+            "ordinaryOV3660": true,
+            "recessedRealWindow": true,
+            "opticalFrontSideWallRays": 8,
+            "passiveFrame": "camera",
+            "documentaryFovDeg": 66.5,
+            "focusJoint": false,
+            "videoDisplay": false
+          },
+          "fpc": {
+            "realOrangeFlex": true,
+            "physicalCopperTraces": 24,
+            "trueReceivingSlot": true,
+            "contacts": 24,
+            "returns": 24,
+            "tails": 24
+          },
+          "emptyBatterySocket": {
+            "contacts": 2,
+            "unsupportedPortClassCreated": false,
+            "suppliedBattery": false
+          },
+          "buttons": {
+            "reset": {
+              "travelMm": 0.25,
+              "axis": [
+                0,
+                0,
+                -1
+              ]
+            },
+            "power": {
+              "travelMm": 0.22,
+              "axis": [
+                1,
+                0,
+                0
+              ]
+            }
+          },
+          "fixedBlueLed": true,
+          "physicalAdhesiveFilms": 0,
+          "scope": "Own bare U082 all undimensioned geometry/installation/optical/connector/lead/travel data reconstructed;not production BOM/focal datum/hardware fit"
+        },
+        "staticMounting": []
+      }
+    ],
+    "configurations": [
+      {
+        "id": "pahub-v20",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "pbhub",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "timercamera",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      }
+    ],
+    "behaviors": [
+      {
+        "id": "pahub-v20",
+        "staticNativeShellPcbMuxSevenActualPorts": true,
+        "noDipLedButtonJointSensorAnchor": true,
+        "noAddressChannelI2cPowerFirmwareOrAutomaticEcho": true,
+        "actualDownstreamPorts": [
+          "grove-0",
+          "grove-1",
+          "grove-2",
+          "grove-3",
+          "grove-4",
+          "grove-5"
+        ],
+        "actualFourCoreChildrenChecked": 6,
+        "independentHierarchicalAddressAndDetach": true,
+        "allPeerPhysicalAttributesIndicesWorldRetained": true,
+        "actualDownstreamDetachRestoreExact": true,
+        "createdDownstreamResourcesDisposed": 4164,
+        "existingOccupantsRetained": 0,
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0
+      },
+      {
+        "id": "pbhub",
+        "staticNoProtocolCommandTypes": 16,
+        "rejectedPortCommands": 112,
+        "physicalPorts": 7,
+        "downstreamBranches": 6,
+        "downstreamConstructor": "Actual current GroveModule synchronously constructed;no stub/historical unit",
+        "fourWireEndpointChecks": 48,
+        "hierarchicalAddressing": true,
+        "eachBranchPoseDetachReattachIndependent": true,
+        "peerFramebufferAndNoEchoInvariant": true,
+        "disposedDownstreamResources": [
+          350,
+          350,
+          350,
+          350,
+          350,
+          350
+        ],
+        "scope": "Mechanical branch ownership/cable only,no GPIO/ADC/PWM/RGB/I2C/address simulation"
+      },
+      {
+        "id": "timercamera",
+        "controls": [
+          {
+            "id": "reset",
+            "travelMm": 0.25,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "power",
+            "travelMm": 0.22,
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          }
+        ],
+        "simultaneous": {
+          "controls": 2,
+          "allHeldAndOneCancelled": "independent peers",
+          "completeNeutralPhysicalRestored": true
+        },
+        "partialPressAndCancelledSpringReturn": [
+          "reset",
+          "power"
+        ],
+        "onlyRealCapsAndStemsMove": true,
+        "fixedFramesTerminalsPCBPortsCameraAndPeersInvariant": true,
+        "externalFixedBlueNoEcho": true,
+        "noAutomaticPowerResetRtcCameraLedLinkage": true,
+        "noVideoFramebufferAIFocusOrFirmware": true,
+        "passiveCameraFrame": {
+          "sensor": "OV3660",
+          "documentaryFovDeg": 66.5
+        },
+        "allPhysicalAttributesIndexWorldRestored": true
+      }
+    ],
+    "accessories": [
+      {
+        "id": "pahub-v20",
+        "mounting": []
+      },
+      {
+        "id": "pbhub",
+        "mounting": []
+      },
+      {
+        "id": "timercamera",
+        "mounting": []
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "pahub-v20",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "pbhub",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "timercamera",
+        "passiveAnchors": [
+          "camera"
+        ],
+        "noFirmwareOrProtocolBehavior": true
+      }
+    ],
+    "disposedResources": 2113,
+    "cases": [
+      "three-real-four-core-branches",
+      "own-native-halves-plus-own-exact-SKU-assemblies",
+      "real-seven-receiver-PCB-support-and28contacts",
+      "real-six-branch-downstream-fourcore-addressing",
+      "real-barecamera-two-cap-fixedblue-physical-invariance",
+      "own-readable-PCB-front-and-rear-print",
+      "both-entries-actual-presets-and-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-peer-isolation",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own three physical assemblies and actual matching ordinary print,actual evidenced physical interfaces and actual downstream mechanical ports,two-cap shapes and fixedblue indicator;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/I2Crouting-GPIO-camera-values/electrical/firmware/whole-history acceptance"
+  },
+  "checks": {
+    "localProductSmoke": "all current batch products pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "pahub-v20",
+        "status": "frozen",
+        "checkedFiles": 12
+      },
+      {
+        "id": "pbhub",
+        "status": "frozen",
+        "checkedFiles": 13
+      },
+      {
+        "id": "timercamera",
+        "status": "frozen",
+        "checkedFiles": 12
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "All physical attributes/index/world matrices preserved across actual entries/configurations",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "eb1c68736faefa3c0d6b18f8c896ce91c544f57953ca1845e283f2649f70c1ce",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "4dfd17dfba6e8a92e27c39627fa2a709e7ccbaf6c47d8bde4939599d3e8a1d33",
+      "logDistributed": false
+    },
+    "exportCount": 6,
+    "catalogConfigurations": {
+      "status": "pass",
+      "products": [
+        {
+          "id": "pahub-v20",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "完整 PaHub v2.0 U040-B",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        },
+        {
+          "id": "pbhub",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "原版 PbHub · 六路 GPIO 扩展外观",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        },
+        {
+          "id": "timercamera",
+          "presets": [
+            {
+              "id": "bare",
+              "name": "裸板 TimerCamera U082",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        }
+      ],
+      "scope": "Batch 49: current frozen named presets, constructor defaults and existing demo contract"
+    },
+    "livePreview": "190-product catalog, 3 own runtime chunks and all corresponding source PNG bytes verified in live dist (ordinary or inlined assets)",
+    "newSourcePrivacy": "New JS/JSON/Markdown/PNG and all current added catalog/manifest records checked; private table/URLs/vectors/original names/mappings/raw material/intermediates excluded",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "Only new products/catalog entries/exports/guide/plan; protected old private/public bytes retained",
+    "existingPublicUnitFilesUnchanged": 1444,
+    "existingPrivateUnitFilesUnchanged": 1405,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "publicSharedProtectedFilesUnchanged": 2,
+    "privateSharedProtectedFilesUnchanged": 2,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [
+    {
+      "product": "pahub-v20",
+      "record": "docs/research/pahub-v20/sources.json",
+      "feedback_id": "b13646d233ba48d6971937ccd290bbad",
+      "accepted": true
+    },
+    {
+      "product": "pbhub",
+      "record": "docs/research/pbhub/sources.json",
+      "feedback_id": "d1563a5d43244eb4ba20aebb7ef67fbc",
+      "accepted": true
+    }
+  ],
+  "previewAssets": [
+    {
+      "id": "pahub-v20",
+      "file": "assets/pahub-v20-BsKDmgEM.js",
+      "sha256": "eebe0e4a6061cd933c72f0643b094ad93257f28086053b25ed33636b59dd9fc5"
+    },
+    {
+      "id": "pbhub",
+      "file": "assets/pbhub-BYq8I7Ez.js",
+      "sha256": "9b487d54253996f49e1825447ec756723a2fbd68b834dfce7d2d477b64ce63e9"
+    },
+    {
+      "id": "timercamera",
+      "file": "assets/timercamera-7c7Jw9yj.js",
+      "sha256": "085f93443fa612706b680cabe9930516802a59fbec1306da0289a3df8d4f1edf"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/pahub-v20/artwork/back.png",
+      "sha256": "3341baec127667e37418d4c7c7f9a0db5a58153b35406422ef8fe5670f36dd7d"
+    },
+    {
+      "path": "src/units/pahub-v20/artwork/pcb.png",
+      "sha256": "b4580c50ba34a58611b28e9260e9632b0bdc358ab479de2050b3de85cef59d0f"
+    },
+    {
+      "path": "src/units/pahub-v20/assembly.js",
+      "sha256": "3644e4db1a9d79dddf9dfd713fad86f8327066404ec0f3d8acbf4ca6c964c10b"
+    },
+    {
+      "path": "src/units/pahub-v20/dimensions.js",
+      "sha256": "c596ae7283b73ba175ffb1346b0d95415889d9c26a5594ac35894282b5f8d5f9"
+    },
+    {
+      "path": "src/units/pahub-v20/geometry.js",
+      "sha256": "3824de7dd5c7afae86263fae65e9ee7c75b549cf3280e0da88295557655ffdb1"
+    },
+    {
+      "path": "src/units/pahub-v20/index.js",
+      "sha256": "c033900e29fd462e0b141a262baab8460c1b1b10841d6e859a210bfb3995275b"
+    },
+    {
+      "path": "src/units/pahub-v20/native-data.js",
+      "sha256": "4e5a78d8d4e8f722253f25d382856358f85f15fd50f1d73b4cac7463dfdceb6d"
+    },
+    {
+      "path": "src/units/pahub-v20/stickers.js",
+      "sha256": "ed737da888f1c07dfae77ff8d8d32b1e26a555e1c4329dd6c65686b01f65186b"
+    },
+    {
+      "path": "docs/research/pahub-v20/artwork.json",
+      "sha256": "2b637c33d4266fae2c763b6feb19be0a29240dd8d0f11ea026090eb02a247100"
+    },
+    {
+      "path": "docs/research/pahub-v20/modeling.md",
+      "sha256": "26933f577c9c68c6a628a5ae4df82caecae4733e43603ffc128cc6791fc42871"
+    },
+    {
+      "path": "docs/research/pahub-v20/smoke.json",
+      "sha256": "3556c6b75af522a03ed688f2f41114e1b11ec4eaeaea59bcf0aba2e30382ded4"
+    },
+    {
+      "path": "docs/research/pahub-v20/sources.json",
+      "sha256": "a4695c53ede5bdc637a907451d144925b60ba7a4947fe57f18cd5e0a72a2a2b9"
+    },
+    {
+      "path": "src/units/pbhub/artwork/pcb.png",
+      "sha256": "1b8ae244a12dca5417b222b4b27eb8d3f399827b28d30c96244ba4aa59e99675"
+    },
+    {
+      "path": "src/units/pbhub/artwork/rear.png",
+      "sha256": "51c90d56cfac7971e07af11c4a53ef85249897a6ab6774037db6fce85047f2fb"
+    },
+    {
+      "path": "src/units/pbhub/assembly.js",
+      "sha256": "53ccdbc4eb1390f212b755b01d7fb72f028c42062603162d1d50f8ece1d15452"
+    },
+    {
+      "path": "src/units/pbhub/connectors.js",
+      "sha256": "74b12b6f330f7bc896f384140062017c6922b639d796c7f129fb5235b873c534"
+    },
+    {
+      "path": "src/units/pbhub/dimensions.js",
+      "sha256": "dfa38fc71f2aaf0b085eb11aa64e32bd742b361f3da4d8dfd046eaeb9aa30310"
+    },
+    {
+      "path": "src/units/pbhub/electronics.js",
+      "sha256": "29dd3acc9cfa4aed88a2fabee6795fff9ec24b85531d5971bbb9a7b2b3d309d4"
+    },
+    {
+      "path": "src/units/pbhub/geometry.js",
+      "sha256": "55c6839b94f20ba0274fcf683b0fe3f9f0b54239e434c2a809f35deceb1321ef"
+    },
+    {
+      "path": "src/units/pbhub/index.js",
+      "sha256": "963f394beefdebb217be6f86609e2e6f35a0e607b16a5f0b231e34df2aa9187f"
+    },
+    {
+      "path": "src/units/pbhub/shell.js",
+      "sha256": "33e7d2f1c901de0f8bbefae6d0d3b46c49eb6ff16d0554b67f07adc681a770f3"
+    },
+    {
+      "path": "docs/research/pbhub/artwork.json",
+      "sha256": "569a5d8c917a781003d031ddd2fea08548cf3aba98d1c06a2249a841677a6952"
+    },
+    {
+      "path": "docs/research/pbhub/modeling.md",
+      "sha256": "af7c44671c69c5f935d033a2b4f3b34138d47c0c086b83b5c24c1aae1ee88471"
+    },
+    {
+      "path": "docs/research/pbhub/smoke.json",
+      "sha256": "b8f9418991412d48c4477a787f72db3dae6657a639cd0e7d486814d83d75315a"
+    },
+    {
+      "path": "docs/research/pbhub/sources.json",
+      "sha256": "d4c54a2f598591a1597d471406419c9a26a1e6b05d6fbd9db1b1172e7be04168"
+    },
+    {
+      "path": "src/units/timercamera/FixedBlue.js",
+      "sha256": "fb648f99d006a2ea3c28b0246c75a574b3b9e44147cb2cdc90601896c7d21f32"
+    },
+    {
+      "path": "src/units/timercamera/assembly.js",
+      "sha256": "1034d6c567e3cacc547c1632fdd68665d19396fd9a2c725078fc3d6f6e385b01"
+    },
+    {
+      "path": "src/units/timercamera/connectors.js",
+      "sha256": "ddaf9897b9a05a19f6c1b3b424efc180ea6c3b042c498b846158541963b43451"
+    },
+    {
+      "path": "src/units/timercamera/dimensions.js",
+      "sha256": "c9d9dfb9a75f93c5831db4a4d1fd915707e54450e407196fa629dfb78aba03f0"
+    },
+    {
+      "path": "src/units/timercamera/geometry.js",
+      "sha256": "679bcb41e5b6217d26f85f79ddd9ba2cdb884dfe02cdaff9435f749a47aaf736"
+    },
+    {
+      "path": "src/units/timercamera/index.js",
+      "sha256": "e77c536cfd809982b1bdf665ce8e6e173e62b30988fce0f680de50136f66b1a1"
+    },
+    {
+      "path": "src/units/timercamera/reference-redraw-front.png",
+      "sha256": "60b25a334a14252504f252bb454a39afdf53c4031fd7b677cfa8e04560039dca"
+    },
+    {
+      "path": "src/units/timercamera/stickers.js",
+      "sha256": "0f98dbbb31f32084e7d68f6636a13ab0165f1dc9fccaa231bfc8bd47bbd1d2ff"
+    },
+    {
+      "path": "docs/research/timercamera/artwork.json",
+      "sha256": "9183cb870bdc866fd7e9f98dd8e8d14836419e3f3ad5efa4c31eb274c29dd560"
+    },
+    {
+      "path": "docs/research/timercamera/modeling.md",
+      "sha256": "88664177b9384afd7885f00b42c0cacb7c7e8a505d1fc57786ac9adfec4522ce"
+    },
+    {
+      "path": "docs/research/timercamera/smoke.json",
+      "sha256": "3ea50e536e1d6ba6f458d972ce019adb177c829a4fbe874216851f5195cbfb19"
+    },
+    {
+      "path": "docs/research/timercamera/sources.json",
+      "sha256": "4b2eb2d656353c4617646666ad284c1f8182ad8d02cabb8080e8345276a4059f"
+    }
+  ],
+  "limitations": [
+    "PaHubv2.0 uses exactown native closed half-shells under rigid registration;duplicated whole assembled preview excluded;source-face mapping/notice retained,no borrowedv2.1 geometry",
+    "Own PaHub native8mm shell and official10.8mm completeport envelope distinct;actual exposedredPCB/7receivers/28contacts/supports reconstructed,not an invented opaque front lid",
+    "OriginalPbHub U041 has no ownCAD;own blackPCB/QFP32/crystal/7receivers reconstructed;MEGA328 versusSTM32,current10.8 versusold12mm and rear-label revision conflicts retained",
+    "PbHub currentown02 rearfilm0x61to0x68/noQC never blended withold0x40to0x47/QC;no assertion of confirmed productionMCUBOM",
+    "BareTimerCamera U082 has no ownnative;own populatedtwofacePCB/ordinaryOV3660/flex/receivers and emptybatteryconnector reconstructed;noF/Xshell,battery,clip ormount",
+    "Real power/reset cap motion is inputintent only;fixedblueLED accepts externalvisualoutput,passivecamera frame is not videoDisplay,AI,focusjoint orfirmware",
+    "Seven-port Hub connections are passive visible mechanics/ownership only;no I2C/channelrouting,address,GPIO,ADC,PWM,RGB,servo,power orfirmware simulation",
+    "HiddenPCB/socket/metal/contact/solder/film/optical/kinematic fit is explicit inference,not fullBOM/manufacturing/hardware validation",
+    "Accurate own-version ordinaryPNG silk/film redraw retains actualPCB/substrates and native relief;no sourcephoto crops,wrongversion,unknownmicrotext orindividualcode",
+    "PrivateCSV/URL/names/mappings/vectors/rawsources/generators/intermediates excluded;U082two exactcandidate packaging rows rejected,0approved/0download;old50PNG/Scroll/StackChan/Puzzle/Catch retained;overallgoalactive"
+  ]
+}

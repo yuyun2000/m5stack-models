@@ -1,0 +1,1181 @@
+{
+  "id": "lorawan-us915",
+  "amendment": "us915-sma-2026-10-27",
+  "candidateSourceOverlay": false,
+  "sourceLoaderUsed": false,
+  "historicalBatch51Preserved": true,
+  "status": "pass",
+  "entryReports": [
+    {
+      "entry": "GroveModule",
+      "parent": "Real transformed StickS3 -> HUB grove-3",
+      "physical": {
+        "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+        "physicalMeshes": 236,
+        "physicalBodyMeshes": 236,
+        "triangles": 39412,
+        "nativeTriangles": 6592,
+        "nativeRawTriangles": 13184,
+        "duplicatePreviewFaces": 6592,
+        "allNativeAttributesIndexSourceFaceIdRetained": true,
+        "allClosedPositiveDirectedTwoEdges": true,
+        "frontSide": true,
+        "nativeShellMm": [
+          24,
+          64,
+          8
+        ],
+        "actualPhysicalEnvelopeMm": [
+          24.000000000000014,
+          71.39999980931361,
+          8.000000000000611
+        ],
+        "documentBodyMm": [
+          24,
+          71.4,
+          8
+        ],
+        "nativeBoreWallRays": 16,
+        "actualNativeTubeToPcbReliefMm": [
+          0.545385742603699,
+          0.5453834537852202
+        ],
+        "realNativeRecessFilmBackingRays": 6,
+        "physicalFilms": 2,
+        "actualSmaMetalWindows": 2,
+        "smaAmendment": {
+          "ownVisibleSource": "US915 official 10.webp",
+          "bodyCentre": "solid-visible-pin",
+          "actualPinRadiusMm": 0.31,
+          "actualPinY": [
+            35.39999999999998,
+            38.89999999999998
+          ],
+          "actualRecessedDielectricY": [
+            35.30000000000001,
+            37.39999990463258
+          ],
+          "pinExposedFromDielectricMm": 1.5000000953673975,
+          "pinInsideBarrelRimMm": 0.4999998092651481,
+          "pinBaseAxialRetentionMm": 0.0500000029802834,
+          "accessory": {
+            "receivingContact": "real hollow ring with deep stop; unseen inner design inferred",
+            "legacyPinAliasPreserved": true,
+            "actualReceiverY": [
+              38,
+              41.799999952316284
+            ],
+            "actualStopY": [
+              41.80000000000001,
+              42.05000000000001
+            ],
+            "actualReceiverInnerWallRaysMm": [
+              0.3700000047683858,
+              0.37000000476835737,
+              0.37000000476838935,
+              0.3700000047683609
+            ],
+            "actualPinEngagementMm": 0.8999999999999773,
+            "actualPositiveRadialClearanceRaysMm": [
+              0.06006948766799855,
+              0.06006948766799947,
+              0.060069487667983534,
+              0.06006948766800467
+            ],
+            "receiverToBodyDielectricAxialGapMm": 0.6000000953674203,
+            "pinTipToReceiverStopAxialGapMm": 2.900000000000034,
+            "dielectricRetainedIntoCouplingBackMm": 0.25000019073490876,
+            "actualStopTouchesReceiverEnd": true
+          },
+          "inferred": "Exact sizes/contact polarity/thread/mating fit; ownphoto confirms only visible body pin shape"
+        },
+        "groveWallRays": 4,
+        "actualGroveContacts": 4,
+        "actualPlatedBores": 4,
+        "moduleRetainedTerminals": 32,
+        "realRecessedScrews": 3,
+        "accessoryPresent": true,
+        "accessoryMeshes": 48,
+        "accessoryTriangles": 5588,
+        "ownLedButtonJointApiCount": 0,
+        "antennaVendorLengthMm": 195,
+        "antennaDocumentaryGainDbi": 2.3,
+        "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+      },
+      "runtime": {
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0,
+        "accessoryJoint": "antenna/fold",
+        "actualPartialFold": true,
+        "inferredDisplayRangeDeg": [
+          0,
+          90
+        ],
+        "onlyRealHubArmBladeMove": true,
+        "fixedCouplingSmaNativePcbFilmPortsAndPeersRetained": true,
+        "externalJointNoEcho": true,
+        "noContinuousRpmOrAutomaticRFBehavior": true,
+        "allPhysicalAttributesIndexWorldRestored": true,
+        "realSmaAccessoryDetachRestore": true,
+        "initialAccessory": true,
+        "createdProbeAccessoryDisposed": false
+      },
+      "relocatedGeometry": {
+        "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+        "physicalMeshes": 236,
+        "physicalBodyMeshes": 236,
+        "triangles": 39412,
+        "nativeTriangles": 6592,
+        "nativeRawTriangles": 13184,
+        "duplicatePreviewFaces": 6592,
+        "allNativeAttributesIndexSourceFaceIdRetained": true,
+        "allClosedPositiveDirectedTwoEdges": true,
+        "frontSide": true,
+        "nativeShellMm": [
+          24,
+          64,
+          8
+        ],
+        "actualPhysicalEnvelopeMm": [
+          24.000000000000007,
+          71.39999980931364,
+          8.000000000000622
+        ],
+        "documentBodyMm": [
+          24,
+          71.4,
+          8
+        ],
+        "nativeBoreWallRays": 16,
+        "actualNativeTubeToPcbReliefMm": [
+          0.545385742603699,
+          0.5453834537852345
+        ],
+        "realNativeRecessFilmBackingRays": 6,
+        "physicalFilms": 2,
+        "actualSmaMetalWindows": 2,
+        "smaAmendment": {
+          "ownVisibleSource": "US915 official 10.webp",
+          "bodyCentre": "solid-visible-pin",
+          "actualPinRadiusMm": 0.31,
+          "actualPinY": [
+            35.4,
+            38.9
+          ],
+          "actualRecessedDielectricY": [
+            35.30000000000002,
+            37.39999990463259
+          ],
+          "pinExposedFromDielectricMm": 1.5000000953674117,
+          "pinInsideBarrelRimMm": 0.4999998092651481,
+          "pinBaseAxialRetentionMm": 0.050000002980226554,
+          "accessory": {
+            "receivingContact": "real hollow ring with deep stop; unseen inner design inferred",
+            "legacyPinAliasPreserved": true,
+            "actualReceiverY": [
+              37.99999999999999,
+              41.79999995231628
+            ],
+            "actualStopY": [
+              41.799999999999976,
+              42.049999999999976
+            ],
+            "actualReceiverInnerWallRaysMm": [
+              0.37000000476837164,
+              0.3700000047683574,
+              0.37000000476837164,
+              0.37000000476837164
+            ],
+            "actualPinEngagementMm": 0.9000000000000057,
+            "actualPositiveRadialClearanceRaysMm": [
+              0.06006948766801172,
+              0.06006948766800132,
+              0.06006948766799763,
+              0.060069487667988745
+            ],
+            "receiverToBodyDielectricAxialGapMm": 0.6000000953674061,
+            "pinTipToReceiverStopAxialGapMm": 2.8999999999999773,
+            "dielectricRetainedIntoCouplingBackMm": 0.2500001907348519,
+            "actualStopTouchesReceiverEnd": true
+          },
+          "inferred": "Exact sizes/contact polarity/thread/mating fit; ownphoto confirms only visible body pin shape"
+        },
+        "groveWallRays": 4,
+        "actualGroveContacts": 4,
+        "actualPlatedBores": 4,
+        "moduleRetainedTerminals": 32,
+        "realRecessedScrews": 3,
+        "accessoryPresent": true,
+        "accessoryMeshes": 48,
+        "accessoryTriangles": 5588,
+        "ownLedButtonJointApiCount": 0,
+        "antennaVendorLengthMm": 195,
+        "antennaDocumentaryGainDbi": 2.3,
+        "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+      },
+      "runtimeAfterPose": {
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0,
+        "accessoryJoint": "antenna/fold",
+        "actualPartialFold": true,
+        "inferredDisplayRangeDeg": [
+          0,
+          90
+        ],
+        "onlyRealHubArmBladeMove": true,
+        "fixedCouplingSmaNativePcbFilmPortsAndPeersRetained": true,
+        "externalJointNoEcho": true,
+        "noContinuousRpmOrAutomaticRFBehavior": true,
+        "allPhysicalAttributesIndexWorldRestored": true,
+        "realSmaAccessoryDetachRestore": true,
+        "initialAccessory": true,
+        "createdProbeAccessoryDisposed": false
+      },
+      "cable": {
+        "slack": 14,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 91.00000000000001,
+        "curveLengthMm": 88.22937547413392,
+        "source": {
+          "position": [
+            -1.4210854715202004e-14,
+            -1.7763568394002505e-15,
+            -3.552713678800501e-15
+          ],
+          "quaternion": [
+            1.3877787807814454e-17,
+            -4.336808689942018e-18,
+            1.7347234759768067e-18,
+            1
+          ],
+          "outward": [
+            -3.4694469519536134e-18,
+            1,
+            2.7755575615628907e-17
+          ]
+        },
+        "target": {
+          "position": [
+            0,
+            91.00000000000001,
+            -7.105427357601002e-15
+          ],
+          "quaternion": [
+            -0.08533963382342766,
+            -0.05150981125908018,
+            0.9905155081717711,
+            -0.09456698321377854
+          ],
+          "outward": [
+            0.19613178373086196,
+            -0.9768076500597974,
+            -0.08590191031173947
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      },
+      "fullPath": "grove/grove-3/antenna/fold",
+      "independentPeerPhysicalAttrsIndexWorld": true,
+      "hostFramebufferUnchanged": true,
+      "actualFourCore": true,
+      "realBodySmaDetachAndReattachRestore": true,
+      "disposedResources": 530
+    }
+  ],
+  "configurationReports": [
+    {
+      "entry": "Model",
+      "configuration": "complete",
+      "options": {},
+      "physical": {
+        "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+        "physicalMeshes": 236,
+        "physicalBodyMeshes": 236,
+        "triangles": 39412,
+        "nativeTriangles": 6592,
+        "nativeRawTriangles": 13184,
+        "duplicatePreviewFaces": 6592,
+        "allNativeAttributesIndexSourceFaceIdRetained": true,
+        "allClosedPositiveDirectedTwoEdges": true,
+        "frontSide": true,
+        "nativeShellMm": [
+          24,
+          64,
+          8
+        ],
+        "actualPhysicalEnvelopeMm": [
+          24,
+          71.39999980931363,
+          8.00000000000061
+        ],
+        "documentBodyMm": [
+          24,
+          71.4,
+          8
+        ],
+        "nativeBoreWallRays": 16,
+        "actualNativeTubeToPcbReliefMm": [
+          0.5453857426036848,
+          0.5453834537852345
+        ],
+        "realNativeRecessFilmBackingRays": 6,
+        "physicalFilms": 2,
+        "actualSmaMetalWindows": 2,
+        "smaAmendment": {
+          "ownVisibleSource": "US915 official 10.webp",
+          "bodyCentre": "solid-visible-pin",
+          "actualPinRadiusMm": 0.31,
+          "actualPinY": [
+            35.4,
+            38.9
+          ],
+          "actualRecessedDielectricY": [
+            35.3,
+            37.399999904632566
+          ],
+          "pinExposedFromDielectricMm": 1.500000095367433,
+          "pinInsideBarrelRimMm": 0.499999809265141,
+          "pinBaseAxialRetentionMm": 0.05000000298023366,
+          "accessory": {
+            "receivingContact": "real hollow ring with deep stop; unseen inner design inferred",
+            "legacyPinAliasPreserved": true,
+            "actualReceiverY": [
+              38,
+              41.799999952316284
+            ],
+            "actualStopY": [
+              41.8,
+              42.05
+            ],
+            "actualReceiverInnerWallRaysMm": [
+              0.3700000047683716,
+              0.3700000047683715,
+              0.3700000047683719,
+              0.37000000476837125
+            ],
+            "actualPinEngagementMm": 0.8999999999999986,
+            "actualPositiveRadialClearanceRaysMm": [
+              0.06006948766799445,
+              0.0600694876679945,
+              0.060069487667994394,
+              0.060069487667994276
+            ],
+            "receiverToBodyDielectricAxialGapMm": 0.6000000953674345,
+            "pinTipToReceiverStopAxialGapMm": 2.8999999999999986,
+            "dielectricRetainedIntoCouplingBackMm": 0.2500001907348661,
+            "actualStopTouchesReceiverEnd": true
+          },
+          "inferred": "Exact sizes/contact polarity/thread/mating fit; ownphoto confirms only visible body pin shape"
+        },
+        "groveWallRays": 4,
+        "actualGroveContacts": 4,
+        "actualPlatedBores": 4,
+        "moduleRetainedTerminals": 32,
+        "realRecessedScrews": 3,
+        "accessoryPresent": true,
+        "accessoryMeshes": 48,
+        "accessoryTriangles": 5588,
+        "ownLedButtonJointApiCount": 0,
+        "antennaVendorLengthMm": 195,
+        "antennaDocumentaryGainDbi": 2.3,
+        "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+      },
+      "runtime": {
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0,
+        "accessoryJoint": "antenna/fold",
+        "actualPartialFold": true,
+        "inferredDisplayRangeDeg": [
+          0,
+          90
+        ],
+        "onlyRealHubArmBladeMove": true,
+        "fixedCouplingSmaNativePcbFilmPortsAndPeersRetained": true,
+        "externalJointNoEcho": true,
+        "noContinuousRpmOrAutomaticRFBehavior": true,
+        "allPhysicalAttributesIndexWorldRestored": true,
+        "realSmaAccessoryDetachRestore": true,
+        "initialAccessory": true,
+        "createdProbeAccessoryDisposed": false
+      },
+      "ordinaryPanels": 2,
+      "inkOffEveryPhysicalAttributeIndexWorldIdentical": true,
+      "realHingePartialInkInvariant": true
+    },
+    {
+      "entry": "Model",
+      "configuration": "straight-antenna",
+      "options": {
+        "antennaFoldDeg": 0
+      },
+      "physical": {
+        "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+        "physicalMeshes": 236,
+        "physicalBodyMeshes": 236,
+        "triangles": 39412,
+        "nativeTriangles": 6592,
+        "nativeRawTriangles": 13184,
+        "duplicatePreviewFaces": 6592,
+        "allNativeAttributesIndexSourceFaceIdRetained": true,
+        "allClosedPositiveDirectedTwoEdges": true,
+        "frontSide": true,
+        "nativeShellMm": [
+          24,
+          64,
+          8
+        ],
+        "actualPhysicalEnvelopeMm": [
+          24,
+          71.39999980931363,
+          8.00000000000061
+        ],
+        "documentBodyMm": [
+          24,
+          71.4,
+          8
+        ],
+        "nativeBoreWallRays": 16,
+        "actualNativeTubeToPcbReliefMm": [
+          0.5453857426036848,
+          0.5453834537852345
+        ],
+        "realNativeRecessFilmBackingRays": 6,
+        "physicalFilms": 2,
+        "actualSmaMetalWindows": 2,
+        "smaAmendment": {
+          "ownVisibleSource": "US915 official 10.webp",
+          "bodyCentre": "solid-visible-pin",
+          "actualPinRadiusMm": 0.31,
+          "actualPinY": [
+            35.4,
+            38.9
+          ],
+          "actualRecessedDielectricY": [
+            35.3,
+            37.399999904632566
+          ],
+          "pinExposedFromDielectricMm": 1.500000095367433,
+          "pinInsideBarrelRimMm": 0.499999809265141,
+          "pinBaseAxialRetentionMm": 0.05000000298023366,
+          "accessory": {
+            "receivingContact": "real hollow ring with deep stop; unseen inner design inferred",
+            "legacyPinAliasPreserved": true,
+            "actualReceiverY": [
+              38,
+              41.799999952316284
+            ],
+            "actualStopY": [
+              41.8,
+              42.05
+            ],
+            "actualReceiverInnerWallRaysMm": [
+              0.3700000047683716,
+              0.3700000047683715,
+              0.3700000047683719,
+              0.37000000476837125
+            ],
+            "actualPinEngagementMm": 0.8999999999999986,
+            "actualPositiveRadialClearanceRaysMm": [
+              0.06006948766799445,
+              0.0600694876679945,
+              0.060069487667994394,
+              0.060069487667994276
+            ],
+            "receiverToBodyDielectricAxialGapMm": 0.6000000953674345,
+            "pinTipToReceiverStopAxialGapMm": 2.8999999999999986,
+            "dielectricRetainedIntoCouplingBackMm": 0.2500001907348661,
+            "actualStopTouchesReceiverEnd": true
+          },
+          "inferred": "Exact sizes/contact polarity/thread/mating fit; ownphoto confirms only visible body pin shape"
+        },
+        "groveWallRays": 4,
+        "actualGroveContacts": 4,
+        "actualPlatedBores": 4,
+        "moduleRetainedTerminals": 32,
+        "realRecessedScrews": 3,
+        "accessoryPresent": true,
+        "accessoryMeshes": 48,
+        "accessoryTriangles": 5588,
+        "ownLedButtonJointApiCount": 0,
+        "antennaVendorLengthMm": 195,
+        "antennaDocumentaryGainDbi": 2.3,
+        "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+      },
+      "runtime": {
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0,
+        "accessoryJoint": "antenna/fold",
+        "actualPartialFold": true,
+        "inferredDisplayRangeDeg": [
+          0,
+          90
+        ],
+        "onlyRealHubArmBladeMove": true,
+        "fixedCouplingSmaNativePcbFilmPortsAndPeersRetained": true,
+        "externalJointNoEcho": true,
+        "noContinuousRpmOrAutomaticRFBehavior": true,
+        "allPhysicalAttributesIndexWorldRestored": true,
+        "realSmaAccessoryDetachRestore": true,
+        "initialAccessory": true,
+        "createdProbeAccessoryDisposed": false
+      },
+      "ordinaryPanels": 2,
+      "inkOffEveryPhysicalAttributeIndexWorldIdentical": true,
+      "realHingePartialInkInvariant": true
+    },
+    {
+      "entry": "Model",
+      "configuration": "without-antenna",
+      "options": {
+        "antenna": false
+      },
+      "physical": {
+        "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+        "physicalMeshes": 236,
+        "physicalBodyMeshes": 236,
+        "triangles": 39412,
+        "nativeTriangles": 6592,
+        "nativeRawTriangles": 13184,
+        "duplicatePreviewFaces": 6592,
+        "allNativeAttributesIndexSourceFaceIdRetained": true,
+        "allClosedPositiveDirectedTwoEdges": true,
+        "frontSide": true,
+        "nativeShellMm": [
+          24,
+          64,
+          8
+        ],
+        "actualPhysicalEnvelopeMm": [
+          24,
+          71.39999980931363,
+          8.00000000000061
+        ],
+        "documentBodyMm": [
+          24,
+          71.4,
+          8
+        ],
+        "nativeBoreWallRays": 16,
+        "actualNativeTubeToPcbReliefMm": [
+          0.5453857426036848,
+          0.5453834537852345
+        ],
+        "realNativeRecessFilmBackingRays": 6,
+        "physicalFilms": 2,
+        "actualSmaMetalWindows": 2,
+        "smaAmendment": {
+          "ownVisibleSource": "US915 official 10.webp",
+          "bodyCentre": "solid-visible-pin",
+          "actualPinRadiusMm": 0.31,
+          "actualPinY": [
+            35.4,
+            38.9
+          ],
+          "actualRecessedDielectricY": [
+            35.3,
+            37.399999904632566
+          ],
+          "pinExposedFromDielectricMm": 1.500000095367433,
+          "pinInsideBarrelRimMm": 0.499999809265141,
+          "pinBaseAxialRetentionMm": 0.05000000298023366,
+          "accessory": null,
+          "inferred": "Exact sizes/contact polarity/thread/mating fit; ownphoto confirms only visible body pin shape"
+        },
+        "groveWallRays": 4,
+        "actualGroveContacts": 4,
+        "actualPlatedBores": 4,
+        "moduleRetainedTerminals": 32,
+        "realRecessedScrews": 3,
+        "accessoryPresent": false,
+        "accessoryMeshes": 0,
+        "accessoryTriangles": 0,
+        "ownLedButtonJointApiCount": 0,
+        "antennaVendorLengthMm": 195,
+        "antennaDocumentaryGainDbi": 2.3,
+        "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+      },
+      "runtime": {
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0,
+        "accessoryJoint": "antenna/fold",
+        "actualPartialFold": true,
+        "inferredDisplayRangeDeg": [
+          0,
+          90
+        ],
+        "onlyRealHubArmBladeMove": true,
+        "fixedCouplingSmaNativePcbFilmPortsAndPeersRetained": true,
+        "externalJointNoEcho": true,
+        "noContinuousRpmOrAutomaticRFBehavior": true,
+        "allPhysicalAttributesIndexWorldRestored": true,
+        "realSmaAccessoryDetachRestore": true,
+        "initialAccessory": false,
+        "createdProbeAccessoryDisposed": true
+      },
+      "ordinaryPanels": 2,
+      "inkOffEveryPhysicalAttributeIndexWorldIdentical": true,
+      "realHingePartialInkInvariant": false
+    },
+    {
+      "entry": "GroveModule",
+      "configuration": "complete",
+      "options": {},
+      "physical": {
+        "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+        "physicalMeshes": 236,
+        "physicalBodyMeshes": 236,
+        "triangles": 39412,
+        "nativeTriangles": 6592,
+        "nativeRawTriangles": 13184,
+        "duplicatePreviewFaces": 6592,
+        "allNativeAttributesIndexSourceFaceIdRetained": true,
+        "allClosedPositiveDirectedTwoEdges": true,
+        "frontSide": true,
+        "nativeShellMm": [
+          24,
+          64,
+          8
+        ],
+        "actualPhysicalEnvelopeMm": [
+          24,
+          71.39999980931363,
+          8.00000000000061
+        ],
+        "documentBodyMm": [
+          24,
+          71.4,
+          8
+        ],
+        "nativeBoreWallRays": 16,
+        "actualNativeTubeToPcbReliefMm": [
+          0.5453857426036848,
+          0.5453834537852345
+        ],
+        "realNativeRecessFilmBackingRays": 6,
+        "physicalFilms": 2,
+        "actualSmaMetalWindows": 2,
+        "smaAmendment": {
+          "ownVisibleSource": "US915 official 10.webp",
+          "bodyCentre": "solid-visible-pin",
+          "actualPinRadiusMm": 0.31,
+          "actualPinY": [
+            35.400000000000006,
+            38.900000000000006
+          ],
+          "actualRecessedDielectricY": [
+            35.3,
+            37.399999904632566
+          ],
+          "pinExposedFromDielectricMm": 1.5000000953674402,
+          "pinInsideBarrelRimMm": 0.4999998092651339,
+          "pinBaseAxialRetentionMm": 0.050000002980226554,
+          "accessory": {
+            "receivingContact": "real hollow ring with deep stop; unseen inner design inferred",
+            "legacyPinAliasPreserved": true,
+            "actualReceiverY": [
+              38,
+              41.799999952316284
+            ],
+            "actualStopY": [
+              41.80000000000001,
+              42.05000000000001
+            ],
+            "actualReceiverInnerWallRaysMm": [
+              0.3700000047683715,
+              0.3700000047683715,
+              0.370000004768372,
+              0.37000000476837136
+            ],
+            "actualPinEngagementMm": 0.9000000000000057,
+            "actualPositiveRadialClearanceRaysMm": [
+              0.0600694876679944,
+              0.06006948766799456,
+              0.06006948766799437,
+              0.060069487667994116
+            ],
+            "receiverToBodyDielectricAxialGapMm": 0.6000000953674345,
+            "pinTipToReceiverStopAxialGapMm": 2.9000000000000057,
+            "dielectricRetainedIntoCouplingBackMm": 0.2500001907348661,
+            "actualStopTouchesReceiverEnd": true
+          },
+          "inferred": "Exact sizes/contact polarity/thread/mating fit; ownphoto confirms only visible body pin shape"
+        },
+        "groveWallRays": 4,
+        "actualGroveContacts": 4,
+        "actualPlatedBores": 4,
+        "moduleRetainedTerminals": 32,
+        "realRecessedScrews": 3,
+        "accessoryPresent": true,
+        "accessoryMeshes": 48,
+        "accessoryTriangles": 5588,
+        "ownLedButtonJointApiCount": 0,
+        "antennaVendorLengthMm": 195,
+        "antennaDocumentaryGainDbi": 2.3,
+        "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+      },
+      "runtime": {
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0,
+        "accessoryJoint": "antenna/fold",
+        "actualPartialFold": true,
+        "inferredDisplayRangeDeg": [
+          0,
+          90
+        ],
+        "onlyRealHubArmBladeMove": true,
+        "fixedCouplingSmaNativePcbFilmPortsAndPeersRetained": true,
+        "externalJointNoEcho": true,
+        "noContinuousRpmOrAutomaticRFBehavior": true,
+        "allPhysicalAttributesIndexWorldRestored": true,
+        "realSmaAccessoryDetachRestore": true,
+        "initialAccessory": true,
+        "createdProbeAccessoryDisposed": false
+      },
+      "ordinaryPanels": 2,
+      "inkOffEveryPhysicalAttributeIndexWorldIdentical": true,
+      "realHingePartialInkInvariant": true
+    },
+    {
+      "entry": "GroveModule",
+      "configuration": "straight-antenna",
+      "options": {
+        "antennaFoldDeg": 0
+      },
+      "physical": {
+        "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+        "physicalMeshes": 236,
+        "physicalBodyMeshes": 236,
+        "triangles": 39412,
+        "nativeTriangles": 6592,
+        "nativeRawTriangles": 13184,
+        "duplicatePreviewFaces": 6592,
+        "allNativeAttributesIndexSourceFaceIdRetained": true,
+        "allClosedPositiveDirectedTwoEdges": true,
+        "frontSide": true,
+        "nativeShellMm": [
+          24,
+          64,
+          8
+        ],
+        "actualPhysicalEnvelopeMm": [
+          24,
+          71.39999980931363,
+          8.00000000000061
+        ],
+        "documentBodyMm": [
+          24,
+          71.4,
+          8
+        ],
+        "nativeBoreWallRays": 16,
+        "actualNativeTubeToPcbReliefMm": [
+          0.5453857426036848,
+          0.5453834537852345
+        ],
+        "realNativeRecessFilmBackingRays": 6,
+        "physicalFilms": 2,
+        "actualSmaMetalWindows": 2,
+        "smaAmendment": {
+          "ownVisibleSource": "US915 official 10.webp",
+          "bodyCentre": "solid-visible-pin",
+          "actualPinRadiusMm": 0.31,
+          "actualPinY": [
+            35.400000000000006,
+            38.900000000000006
+          ],
+          "actualRecessedDielectricY": [
+            35.3,
+            37.399999904632566
+          ],
+          "pinExposedFromDielectricMm": 1.5000000953674402,
+          "pinInsideBarrelRimMm": 0.4999998092651339,
+          "pinBaseAxialRetentionMm": 0.050000002980226554,
+          "accessory": {
+            "receivingContact": "real hollow ring with deep stop; unseen inner design inferred",
+            "legacyPinAliasPreserved": true,
+            "actualReceiverY": [
+              38,
+              41.799999952316284
+            ],
+            "actualStopY": [
+              41.80000000000001,
+              42.05000000000001
+            ],
+            "actualReceiverInnerWallRaysMm": [
+              0.3700000047683715,
+              0.3700000047683715,
+              0.370000004768372,
+              0.37000000476837136
+            ],
+            "actualPinEngagementMm": 0.9000000000000057,
+            "actualPositiveRadialClearanceRaysMm": [
+              0.0600694876679944,
+              0.06006948766799456,
+              0.06006948766799437,
+              0.060069487667994116
+            ],
+            "receiverToBodyDielectricAxialGapMm": 0.6000000953674345,
+            "pinTipToReceiverStopAxialGapMm": 2.9000000000000057,
+            "dielectricRetainedIntoCouplingBackMm": 0.2500001907348661,
+            "actualStopTouchesReceiverEnd": true
+          },
+          "inferred": "Exact sizes/contact polarity/thread/mating fit; ownphoto confirms only visible body pin shape"
+        },
+        "groveWallRays": 4,
+        "actualGroveContacts": 4,
+        "actualPlatedBores": 4,
+        "moduleRetainedTerminals": 32,
+        "realRecessedScrews": 3,
+        "accessoryPresent": true,
+        "accessoryMeshes": 48,
+        "accessoryTriangles": 5588,
+        "ownLedButtonJointApiCount": 0,
+        "antennaVendorLengthMm": 195,
+        "antennaDocumentaryGainDbi": 2.3,
+        "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+      },
+      "runtime": {
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0,
+        "accessoryJoint": "antenna/fold",
+        "actualPartialFold": true,
+        "inferredDisplayRangeDeg": [
+          0,
+          90
+        ],
+        "onlyRealHubArmBladeMove": true,
+        "fixedCouplingSmaNativePcbFilmPortsAndPeersRetained": true,
+        "externalJointNoEcho": true,
+        "noContinuousRpmOrAutomaticRFBehavior": true,
+        "allPhysicalAttributesIndexWorldRestored": true,
+        "realSmaAccessoryDetachRestore": true,
+        "initialAccessory": true,
+        "createdProbeAccessoryDisposed": false
+      },
+      "ordinaryPanels": 2,
+      "inkOffEveryPhysicalAttributeIndexWorldIdentical": true,
+      "realHingePartialInkInvariant": true
+    },
+    {
+      "entry": "GroveModule",
+      "configuration": "without-antenna",
+      "options": {
+        "antenna": false
+      },
+      "physical": {
+        "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+        "physicalMeshes": 236,
+        "physicalBodyMeshes": 236,
+        "triangles": 39412,
+        "nativeTriangles": 6592,
+        "nativeRawTriangles": 13184,
+        "duplicatePreviewFaces": 6592,
+        "allNativeAttributesIndexSourceFaceIdRetained": true,
+        "allClosedPositiveDirectedTwoEdges": true,
+        "frontSide": true,
+        "nativeShellMm": [
+          24,
+          64,
+          8
+        ],
+        "actualPhysicalEnvelopeMm": [
+          24,
+          71.39999980931363,
+          8.00000000000061
+        ],
+        "documentBodyMm": [
+          24,
+          71.4,
+          8
+        ],
+        "nativeBoreWallRays": 16,
+        "actualNativeTubeToPcbReliefMm": [
+          0.5453857426036848,
+          0.5453834537852345
+        ],
+        "realNativeRecessFilmBackingRays": 6,
+        "physicalFilms": 2,
+        "actualSmaMetalWindows": 2,
+        "smaAmendment": {
+          "ownVisibleSource": "US915 official 10.webp",
+          "bodyCentre": "solid-visible-pin",
+          "actualPinRadiusMm": 0.31,
+          "actualPinY": [
+            35.400000000000006,
+            38.900000000000006
+          ],
+          "actualRecessedDielectricY": [
+            35.3,
+            37.399999904632566
+          ],
+          "pinExposedFromDielectricMm": 1.5000000953674402,
+          "pinInsideBarrelRimMm": 0.4999998092651339,
+          "pinBaseAxialRetentionMm": 0.050000002980226554,
+          "accessory": null,
+          "inferred": "Exact sizes/contact polarity/thread/mating fit; ownphoto confirms only visible body pin shape"
+        },
+        "groveWallRays": 4,
+        "actualGroveContacts": 4,
+        "actualPlatedBores": 4,
+        "moduleRetainedTerminals": 32,
+        "realRecessedScrews": 3,
+        "accessoryPresent": false,
+        "accessoryMeshes": 0,
+        "accessoryTriangles": 0,
+        "ownLedButtonJointApiCount": 0,
+        "antennaVendorLengthMm": 195,
+        "antennaDocumentaryGainDbi": 2.3,
+        "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+      },
+      "runtime": {
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0,
+        "accessoryJoint": "antenna/fold",
+        "actualPartialFold": true,
+        "inferredDisplayRangeDeg": [
+          0,
+          90
+        ],
+        "onlyRealHubArmBladeMove": true,
+        "fixedCouplingSmaNativePcbFilmPortsAndPeersRetained": true,
+        "externalJointNoEcho": true,
+        "noContinuousRpmOrAutomaticRFBehavior": true,
+        "allPhysicalAttributesIndexWorldRestored": true,
+        "realSmaAccessoryDetachRestore": true,
+        "initialAccessory": false,
+        "createdProbeAccessoryDisposed": true
+      },
+      "ordinaryPanels": 2,
+      "inkOffEveryPhysicalAttributeIndexWorldIdentical": true,
+      "realHingePartialInkInvariant": false
+    }
+  ],
+  "scope": "Necessary actual CPU source geometry/runtime/DOM boundary only;no browser/GPU/manufacturing/electrical/RF/hardware acceptance",
+  "physical": {
+    "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+    "physicalMeshes": 236,
+    "physicalBodyMeshes": 236,
+    "triangles": 39412,
+    "nativeTriangles": 6592,
+    "nativeRawTriangles": 13184,
+    "duplicatePreviewFaces": 6592,
+    "allNativeAttributesIndexSourceFaceIdRetained": true,
+    "allClosedPositiveDirectedTwoEdges": true,
+    "frontSide": true,
+    "nativeShellMm": [
+      24,
+      64,
+      8
+    ],
+    "actualPhysicalEnvelopeMm": [
+      24,
+      71.39999980931363,
+      8.00000000000061
+    ],
+    "documentBodyMm": [
+      24,
+      71.4,
+      8
+    ],
+    "nativeBoreWallRays": 16,
+    "actualNativeTubeToPcbReliefMm": [
+      0.5453857426036848,
+      0.5453834537852345
+    ],
+    "realNativeRecessFilmBackingRays": 6,
+    "physicalFilms": 2,
+    "actualSmaMetalWindows": 2,
+    "smaAmendment": {
+      "ownVisibleSource": "US915 official 10.webp",
+      "bodyCentre": "solid-visible-pin",
+      "actualPinRadiusMm": 0.31,
+      "actualPinY": [
+        35.4,
+        38.9
+      ],
+      "actualRecessedDielectricY": [
+        35.3,
+        37.399999904632566
+      ],
+      "pinExposedFromDielectricMm": 1.500000095367433,
+      "pinInsideBarrelRimMm": 0.499999809265141,
+      "pinBaseAxialRetentionMm": 0.05000000298023366,
+      "accessory": {
+        "receivingContact": "real hollow ring with deep stop; unseen inner design inferred",
+        "legacyPinAliasPreserved": true,
+        "actualReceiverY": [
+          38,
+          41.799999952316284
+        ],
+        "actualStopY": [
+          41.8,
+          42.05
+        ],
+        "actualReceiverInnerWallRaysMm": [
+          0.3700000047683716,
+          0.3700000047683715,
+          0.3700000047683719,
+          0.37000000476837125
+        ],
+        "actualPinEngagementMm": 0.8999999999999986,
+        "actualPositiveRadialClearanceRaysMm": [
+          0.06006948766799445,
+          0.0600694876679945,
+          0.060069487667994394,
+          0.060069487667994276
+        ],
+        "receiverToBodyDielectricAxialGapMm": 0.6000000953674345,
+        "pinTipToReceiverStopAxialGapMm": 2.8999999999999986,
+        "dielectricRetainedIntoCouplingBackMm": 0.2500001907348661,
+        "actualStopTouchesReceiverEnd": true
+      },
+      "inferred": "Exact sizes/contact polarity/thread/mating fit; ownphoto confirms only visible body pin shape"
+    },
+    "groveWallRays": 4,
+    "actualGroveContacts": 4,
+    "actualPlatedBores": 4,
+    "moduleRetainedTerminals": 32,
+    "realRecessedScrews": 3,
+    "accessoryPresent": true,
+    "accessoryMeshes": 48,
+    "accessoryTriangles": 5588,
+    "ownLedButtonJointApiCount": 0,
+    "antennaVendorLengthMm": 195,
+    "antennaDocumentaryGainDbi": 2.3,
+    "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+  },
+  "api": {
+    "exports": [
+      "Antenna",
+      "GroveModule",
+      "Model",
+      "configurationSchema",
+      "configurations",
+      "defaults",
+      "spec"
+    ],
+    "bodyComponentOrder": [
+      "grove",
+      "antenna"
+    ],
+    "moduleComponentOrder": [
+      "grove",
+      "antenna",
+      "unitFrame",
+      "cable"
+    ],
+    "bodyKinds": {
+      "grove": "port",
+      "antenna": "port"
+    },
+    "accessoryComponentOrder": [
+      "fold"
+    ],
+    "accessoryComponentKinds": {
+      "fold": "joint"
+    },
+    "recursiveJoint": "antenna/fold",
+    "ownJoints": [],
+    "defaults": {
+      "antenna": true,
+      "antennaFoldDeg": 90
+    },
+    "configurationSchema": {
+      "antenna": {
+        "type": "boolean",
+        "default": true,
+        "meaning": "Actual supplied own195mmUS915 rubberduck accessory with externallydriven realhinge;mechanical detach only"
+      },
+      "antennaFoldDeg": {
+        "type": "number",
+        "min": 0,
+        "max": 90,
+        "default": 90,
+        "meaning": "Ownphysicalhinge externallyprescribed displaypose;axis/pivot/0..90range inferred,not rated limits"
+      },
+      "artwork": {
+        "type": "boolean",
+        "default": true,
+        "meaning": "Ink only;retain both actualfilms,nativefloor/metalwindow/PCB/module/ports and every physicalattribute/index/world"
+      }
+    },
+    "configurations": [
+      {
+        "id": "complete",
+        "name": "US915 含原装胶棒天线",
+        "options": {}
+      },
+      {
+        "id": "straight-antenna",
+        "name": "US915 天线直立展示",
+        "options": {
+          "antennaFoldDeg": 0
+        }
+      },
+      {
+        "id": "without-antenna",
+        "name": "US915 本体及实际空SMA座",
+        "options": {
+          "antenna": false
+        }
+      }
+    ]
+  },
+  "ordinaryPngCount": 2,
+  "physicalFilms": 2,
+  "nativeSourceFaces": 6592,
+  "finalStop": true,
+  "appliedRuntimeFiles": [
+    {
+      "path": "src/units/lorawan-us915/Antenna.js",
+      "sha256": "ddeedd3ee121504132fa7e584bde46c1f558c5c55ae72026603b5495c1db39e3"
+    },
+    {
+      "path": "src/units/lorawan-us915/artwork/back.png",
+      "sha256": "6c033f0506147acb0dbc129b4677a21fe57c0bdaa55d24c186246116ae1996ee"
+    },
+    {
+      "path": "src/units/lorawan-us915/artwork/front.png",
+      "sha256": "096195de6f17515b0b55f98d80d935dc4ba2d2f3e8bd0fecd13b64814ddc05c1"
+    },
+    {
+      "path": "src/units/lorawan-us915/assembly.js",
+      "sha256": "e384c40ed6bef5688615836009db859dc3e8210f4268baeee1c41b2e0882d7f8"
+    },
+    {
+      "path": "src/units/lorawan-us915/dimensions.js",
+      "sha256": "6f57bdc272296bbb7673b9e0ab09e96a83a776e5daef84d2d6b1e60637ce812c"
+    },
+    {
+      "path": "src/units/lorawan-us915/geometry.js",
+      "sha256": "add0fee1342808bb68b17c65ad08fb40280a60c5b93b6ae5074a5588c5825161"
+    },
+    {
+      "path": "src/units/lorawan-us915/index.js",
+      "sha256": "3754577afa9a4b997613a690d5ed2fe40462e6f131b35c311e3a99497657a2f2"
+    },
+    {
+      "path": "src/units/lorawan-us915/native-data.js",
+      "sha256": "33e9a971993e43f1f1c0cc807f70eb19220e17b5c7a4e31fe1c2ddfd94728558"
+    },
+    {
+      "path": "src/units/lorawan-us915/stickers.js",
+      "sha256": "1d84a3b448c40a1a71f5b547f92ec822fcc404a5a373a80137d39082e458e019"
+    }
+  ],
+  "currentFixtureSha256": "535466a958c3e6710d6508ffebfda50796608e851316d026634c8ae1e94794ac"
+}

@@ -1,0 +1,391 @@
+{
+  "id": "lorawan-us915",
+  "sku": "U184-US915",
+  "legacyHardwareDirectorySku": "U184",
+  "name": "Unit LoRaWAN-US915",
+  "retrievedAt": "2026-10-27",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_LoRaWAN-US915",
+  "versionBoundary": "Current ownpage and exactMCP useU184-US915;official native productdirectory retainsU184. Parent dedup must consider both strings. This is not oldUnitLoRaWAN915MHz/Ra-07H or CN470/AS923/EU868.",
+  "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+  "nativeGeometryAvailable": true,
+  "nativeSource": {
+    "repository": "m5stack/M5_Hardware",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "path": "Products/U184_Unit_LoRaWAN-US915/Structures/Unit_LoRaWAN-US915.stl",
+    "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U184_Unit_LoRaWAN-US915/Structures/Unit_LoRaWAN-US915.stl",
+    "bytes": 659284,
+    "sha256": "6d93ea1962caf38864027accc041acb990a61e3360581aad16edf30ec294b17f",
+    "gitBlob": "cd451d15e2d03f37e80e7db05bf7f82fa56a78ba",
+    "immutableBlobVerifiedAgainstBytes": true,
+    "cachedTree": "work/new-units-32/imu-pro/hardware-current-tree.json",
+    "fullTreeRefetched": false,
+    "license": {
+      "spdx": "MIT",
+      "copyright": "Copyright (c) 2021 M5Stack",
+      "licenseUrl": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/LICENSE",
+      "sha256": "44611d917bece311f5c8eeffce83d8bf9e9ca3f815d262f694ff4a7996af50ea",
+      "gitBlob": "2bd55bead006ae4d137f62e95c3de4645cb4bb18",
+      "immutableBlobVerified": true,
+      "exactLicenseTextRetained": true
+    }
+  },
+  "nativeFaces": {
+    "rawTriangles": 13184,
+    "separateClosedShellTriangles": 6592,
+    "rearTriangles": 3858,
+    "frontTriangles": 2734,
+    "assembledPreviewDuplicateTriangles": 6592,
+    "rawAllFacesRetainedInWork": true,
+    "all6592PreviewFacesPairedOneToOneToSourceHalves": true,
+    "mappingFile": "lorawan-us915/native-face-map.json",
+    "mappingSha256": "8d72eed1e121725096adeaa06e294b35ecedbc4233734e5ee82d165c015bd6ea",
+    "maxCorrespondingVertexDifferenceMm": 4.827976226806641e-06,
+    "rearRigidTranslationToAssembled": [
+      -43.99538803100586,
+      0,
+      0
+    ],
+    "frontRigidTranslationToAssembled": [
+      -86.60041046142578,
+      0,
+      0
+    ],
+    "bothHalvesClosedDirectedDegree2AndPositiveVolume": true,
+    "previewDegree4Seams": 10,
+    "laterModelPolicy": "Preserve both actualownsource halves originalposition/normal/index/sourcefaceIDs with rigid translations only. Account for6592duplicatepreviewfaces with thismapping;do not install a thirdshell,repair/remesh/stretch or silentlyloseunique material. This source-only task instantiates zero productfaces.",
+    "rawNativeAnalysisSha256": "fc96e9f331bd1ee6c301d676dfef166eeffea63478cdb6fe980c94dfcbc72d9d"
+  },
+  "sourceReferences": [
+    {
+      "file": "official-page.html",
+      "url": "https://docs.m5stack.com/en/unit/Unit%20LoRaWAN-US915",
+      "finalUrl": "https://docs.m5stack.com/en/unit/Unit_LoRaWAN-US915",
+      "status": 200,
+      "bytes": 134874,
+      "sha256": "127dab7588d76222aa38cb93d1275fe44b1a8258e6fa8b764bf3f5706a3dc9bc"
+    },
+    {
+      "file": "native.stl",
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U184_Unit_LoRaWAN-US915/Structures/Unit_LoRaWAN-US915.stl",
+      "finalUrl": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U184_Unit_LoRaWAN-US915/Structures/Unit_LoRaWAN-US915.stl",
+      "status": 200,
+      "bytes": 659284,
+      "sha256": "6d93ea1962caf38864027accc041acb990a61e3360581aad16edf30ec294b17f"
+    },
+    {
+      "file": "native-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/LICENSE",
+      "finalUrl": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/LICENSE",
+      "status": 200,
+      "bytes": 1063,
+      "sha256": "44611d917bece311f5c8eeffce83d8bf9e9ca3f815d262f694ff4a7996af50ea"
+    },
+    {
+      "file": "own-4.webp",
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20LoRaWAN-US915/4.webp",
+      "finalUrl": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20LoRaWAN-US915/4.webp",
+      "status": 200,
+      "bytes": 58430,
+      "sha256": "5bfa92598ef1be30646322c301985284330ae8c7fd9246792c742a4550739699",
+      "role": "own-US915-official-photo",
+      "visuallyInspected": true,
+      "visualFinding": "Own US915 family cover explicitly showsfront US915 print,gray enclosure,cyan4P Grove,exposed threaded SMA,and one separate rubberduck antenna withfolding elbow/knurled coupling plus separate fourcore Grove cable. Promotional banner/PORT.C map outside product are not body artwork."
+    },
+    {
+      "file": "own-8.webp",
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20LoRaWAN-US915/8.webp",
+      "finalUrl": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20LoRaWAN-US915/8.webp",
+      "status": 200,
+      "bytes": 16126,
+      "sha256": "d96484b08813f74b4321669b1cb0898878373797cbe5ac534524b0061a039fe8",
+      "role": "own-US915-official-photo",
+      "visuallyInspected": true,
+      "visualFinding": "Own straightfront image:front pale realprint region with US915/radio icon/LoRaWAN/US915,actual cyan4P Grove,2clear mounting holes,SMA male-threaded board connector. Small gold rectangular top window exposes metalSMA retention/nut,not LED or key."
+    },
+    {
+      "file": "own-11.webp",
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20LoRaWAN-US915/11.webp",
+      "finalUrl": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20LoRaWAN-US915/11.webp",
+      "status": 200,
+      "bytes": 19024,
+      "sha256": "f03af1a706ede2fc1390792cc0a5b0926e287d7f20f62f0808c1ec67058641b2",
+      "role": "own-US915-official-photo",
+      "visuallyInspected": true,
+      "visualFinding": "Own packaged view supports one longblackrubberduck antenna andGrove lead as included accessories. Packaging graphics/bag are not modeled bodyprint or artwork source."
+    },
+    {
+      "file": "own-5.webp",
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20LoRaWAN-US915/5.webp",
+      "finalUrl": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20LoRaWAN-US915/5.webp",
+      "status": 200,
+      "bytes": 25386,
+      "sha256": "f39c16ae2f041410c546d95e3e695846faec49f5a5cf131a71ef4c8b1d8975a4",
+      "role": "own-US915-official-photo",
+      "visuallyInspected": true,
+      "visualFinding": "Own rear view:realback printLoRaWAN US915,RAK3172(H),PORT.C.UART,TXD RXD5V GND;3actual retained screwheads,2mountbores,native M5 relief and small topmetal retention window. No button/LED established."
+    },
+    {
+      "file": "linked-schematic.png",
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20LoRaWAN-CN470/schematic.png",
+      "finalUrl": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20LoRaWAN-CN470/schematic.png",
+      "status": 200,
+      "bytes": 110223,
+      "sha256": "6def63d71dca037aa67dff4bd11dd51418f453e8fa9a1cc794867509b3166570",
+      "role": "US915-page-shared-link-under-CN470-path",
+      "visuallyInspected": true,
+      "visualFinding": "Exact US915page shared link underCN470 URL. RAK3172module,VRH3301NLX regulator,J1HY2.0_UART RX/TX/VCC/GND,RFmatching/ANT_E1NC,debugpads andregionpopulationR1..R4;noLED/button/display/sensor/battery. Individual915fittedpopulation andhiddenassemblynotshown."
+    },
+    {
+      "file": "linked-model-size.jpg",
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20LoRaWAN-CN470/model%20size.jpg",
+      "finalUrl": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20LoRaWAN-CN470/model%20size.jpg",
+      "status": 200,
+      "bytes": 566978,
+      "sha256": "5e049c898baa3a1aa7c758a8128244518edee0ed8aab43e966e532a8747fee3d",
+      "role": "US915-page-shared-link-under-CN470-path",
+      "visuallyInspected": true,
+      "visualFinding": "Exact US915page shared link underCN470 URL. Drawing distinguishes24x64x8shell from71.4overall withSMA;Ø4.85mountbores16pitch,12abovebottom;10x5.2Grove opening,R4/R1 andtopM6detail. This is not an antenna drawing or proof ofSMA manufacturingthread."
+    },
+    {
+      "file": "linked-schematic.pdf",
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20LoRaWAN-CN470/Sch_UNIT-LoRaWAN-RAK.pdf",
+      "finalUrl": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20LoRaWAN-CN470/Sch_UNIT-LoRaWAN-RAK.pdf",
+      "status": 200,
+      "bytes": 216929,
+      "sha256": "d773ed2e0740b6ff8cc350d55a298647e15d2b3d69767802519fe48bc3d05137",
+      "role": "US915-page-shared-link-under-CN470-path",
+      "visuallyInspected": false,
+      "visualFinding": "PDFreference only;PNGpage visually inspected"
+    },
+    {
+      "file": "own-10.webp",
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20LoRaWAN-US915/10.webp",
+      "finalUrl": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20LoRaWAN-US915/10.webp",
+      "status": 200,
+      "bytes": 17246,
+      "sha256": "0ca652d373ab43778f500f3b5b2f598104f60fcdb52fb46fe8039da7b822b721",
+      "role": "own-US915-official-photo",
+      "visuallyInspected": true,
+      "visualFinding": "Own US915 exposed threaded barrel clearly contains a protruding solid gold centre pin in front of recessed pale dielectric. This corrects the previous inferred hollow body contact. Accessory interior is not visible; its complementary receiving contact/stop, all dimensions, polarity and fit remain inferred."
+    }
+  ],
+  "sourceOnlyPreflightSha256": "24d24c01e66885d8cc1dcb4a5af00eb8bedb82d4591a5b94eac8da17fb6fe24c",
+  "officialMCP": {
+    "cachedSourceChecked": "work/new-units-34/lorawan-cn470/official-mcp.txt",
+    "cachedSourceSha256": "112eb85e67092bdee69ff48bd415a3250208aaaa3ac78c337b8b38c4d0918bf2",
+    "astParsedInfoUS915Occurrences": 0,
+    "reasonForNewExactQuery": "Specified cache contained onlyCN470/legacy470,0US915;one exact own query authorized.",
+    "newSearchQueries": 1,
+    "query": "Unit LoRaWAN-US915 U184 尺寸 24 71.4 SMA 天线 原理图 引脚 LED 按键",
+    "status": "success",
+    "rawResponseSha256": "b612d070806baa7020011812e242ee6b812263513f24eb81d0f3b59618a58cb3",
+    "exactOwnSections": 14,
+    "exactOwnExtractSha256": "d2405e657e365913bfb6c8d0bb214faa2a46851c527c9778a4f6fd4550949254",
+    "scope": "Exact currentU184-US915 product and schematicsections only;CN470/legacyRa-07H mixed hits excluded",
+    "newQueriesDuringModeling": 0,
+    "newFeedbackDuringModeling": 0
+  },
+  "nominalMm": {
+    "bodyIncludingSMA": [
+      24,
+      71.4,
+      8
+    ],
+    "ownNativeShell": [
+      24,
+      64,
+      8
+    ],
+    "treatment": "Original shell remains64long. AuthoredSMA extends7.4beyondtop32to39.4;no native scaling. Separate suppliedantenna not included in body nominal."
+  },
+  "privateAggregate": {
+    "source": "Parent safe result,no private accessby author",
+    "exactSkuMatches": 0,
+    "strictNameMatches": 0,
+    "approvedOriginals": 0,
+    "downloads": 0
+  },
+  "nativeByteTreatment": "Rear3858/front2734 exact original positions/normals and sourcefaceIDs preserved;sequentialSTLindices retained in native-data attribute hashes. Meshes receive only rigidtranslation[-cx,-32,+4]. All6592duplicatepreviewfaces accounted one-to-one by preflightmapping with max4.827976e-6mm;no thirdshell/remesh/repair/stretch. FullMITnotice retained in native-data source.license.text.",
+  "nativeRecessFinding": "Source-native rays show original closedfront floorz~3.8/rear floorz~-3.8. Both actual0.04mmfilms are supported on these floors;no speculative hardcovers or imagesclosingair. Small topopenings are backed by actual SMAmetalnut;noLED/button.",
+  "ownAntenna": {
+    "export": "Antenna",
+    "metaId": "m5stack.unit.lorawan-us915.antenna",
+    "connector": "m5.u184-us915.sma",
+    "acceptedAtBodyPort": "antenna",
+    "defaultAttachedInModel": true,
+    "defaultAttachedInGroveModule": true,
+    "presenceOption": "antenna",
+    "parentFoldOption": "antennaFoldDeg",
+    "constructorDefaults": {
+      "foldDeg": 90
+    },
+    "constructorConfiguration": {
+      "foldDeg": {
+        "type": "number",
+        "min": 0,
+        "max": 90,
+        "default": 90,
+        "scope": "Externaldisplaybound,notratedlimits"
+      }
+    },
+    "componentOrder": [
+      "fold"
+    ],
+    "componentKinds": {
+      "fold": "joint"
+    },
+    "controls": [],
+    "leds": [],
+    "ports": [],
+    "joints": [
+      "fold"
+    ],
+    "passiveAnchors": [],
+    "paths": {
+      "standalone": "antenna/fold",
+      "module": "<upstream-port>/antenna/fold",
+      "stickS3HubThirdBranch": "grove/grove-3/antenna/fold"
+    },
+    "fold": {
+      "kind": "joint",
+      "continuous": false,
+      "rpmAllowed": false,
+      "defaultAngleDeg": 90,
+      "rangeDeg": [
+        0,
+        90
+      ],
+      "pivotMmInAccessoryPortFrame": [
+        0,
+        16.5,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "neutralEulerRad": [
+        0,
+        0,
+        1.5707963267948966
+      ],
+      "poseMeaning": "0 straight+Y,90 ownphoto folded+X",
+      "commands": {
+        "type": "joint",
+        "target": "antenna/fold",
+        "fields": [
+          "angleDeg",
+          "durationMs"
+        ],
+        "example": {
+          "type": "joint",
+          "target": "antenna/fold",
+          "angleDeg": 45,
+          "durationMs": 200
+        },
+        "stateCommand": {
+          "type": "state",
+          "target": "antenna/fold"
+        }
+      },
+      "movingPhysicalParts": [
+        "movingHub real1.05mm axle bore",
+        "movingNeck",
+        "own tapered rubber blade"
+      ],
+      "fixedPhysicalParts": [
+        "knurled coupling",
+        "inner metal liner",
+        "retaining rear stop",
+        "Inferred hollow receiving contact with real deep stop and retained supporting dielectric; legacy internal .pin aliases receiver",
+        "neck/fixedBase",
+        "two retaining cheeks",
+        "1mm axle andcaps"
+      ],
+      "radialAxleClearanceMm": 0.05,
+      "cheekToMovingHubAxialClearanceMm": 0.025,
+      "sourceEvidence": "Own4 visible foldingelbow/seam/sideaxlecap;own11 samefolded packagingpose",
+      "inferred": "Exact pivot/axis/0..90displaylimits/section/retention/fit;no secondmeasuredangle or ratedmechanics. No servo/automatic/RF behavior."
+    },
+    "physicalSupport": "Inferred receiving contact is surrounded by dielectric retained into the coupling back; real receiver bore/deep stop accepts the own10 visible body pin with inferred positive clearance. Knurled shell/liner/stop support neck/fixed yoke; real bored moving hub carried by fixed axle/cheeks; moving arm supports blade.",
+    "vendorLengthMm": 195,
+    "reconstructedCentrelineMm": 195,
+    "centrelineBasis": "22mm from lowercouplingnose(-5.5) to hinge(+16.5),plus173mm blade-axis run to tip;sections/pivot/installedfit inferred,not measurement",
+    "documentaryGainDbi": 2.3,
+    "documentaryImpedanceOhm": 50,
+    "commandsNoInputEcho": true,
+    "noAutomaticMotion": true,
+    "detachCommand": {
+      "type": "detach",
+      "target": "antenna"
+    },
+    "detachLifecycle": "Port ownsdisposal unless detach({dispose:false});reattach retainedAntenna restores foldstate and exact geometry/pose",
+    "otherComponents": []
+  },
+  "inferred": [
+    "OwnPCBoutline/thickness/installation/posts and4.5mm sidereliefs aroundunchanged native mounttubes;actual clearance about0.54538mm measuredCPU,not tolerancefit",
+    "Hidden module/shield32terminalenvelopes,regulator/passives/testpads andSMAretention/RFtail/solderdimensions do notsettlecompleteproductionBOM or915jumperpopulation",
+    "Own US91510 visibly supports a solid body centre pin and recessed pale dielectric. Exact dimensions, support/installation, thread and polarity remain inferred. Accessory inner receiving contact/deep stop/clearance is unseen complementary reconstruction, not production mating CAD.",
+    "Grove walls/floor/4contacts/returns/throughPCBholes andsupportregistration not manufacturingCAD",
+    "Film thickness/registration,font/spacing/color andiconpath reconstructed from clearown8/own5",
+    "OwnUS915antenna195mm documentary centreline;crosssection/knurl/pivot/clearance/foldaxis and0..90displaylimits inferred from ownfoldimage,not ratedlimits. NoCN470 shape/art reused"
+  ],
+  "sourceUncertainties": [
+    {
+      "kind": "sku-label",
+      "currentOwnPageAndMcp": "U184-US915",
+      "ownHardwarePath": "U184_Unit_LoRaWAN-US915",
+      "treatment": "Keeplegacyaliasfordedup/provenance,currentcanonicalSKUfromexactpage;notconflatewithCN470/old915."
+    },
+    {
+      "kind": "shared-size-schematic-URLs",
+      "fact": "ExactUS915page itself linksCN470-pathsizeimage/schematicPDF/PNG. Own US915native Gitblobalso identicalacrossregionalofficialdirectories.",
+      "treatment": "RecordexplicitsharedsourceidentitywithoutclaimingUS915uniquePCBpopulationorborrowingexistingCN470model/artwork/antenna. Nominals/photos/nativeownpathareconsistent."
+    },
+    {
+      "kind": "shell-vs-overall",
+      "fact": "Ownnative24x64x8 excludesSMA projection;vendor71.4x24x8 includesit.",
+      "treatment": "No dimensionsconflict afterreadingdraw64/71.4;nofeedbackneededforthis distinction."
+    },
+    {
+      "kind": "antenna",
+      "fact": "Owntext2.3dBi/195mm/SMAmale;schematicE1NCdoesnotdimensionantennaorbindingfit.",
+      "treatment": "Documentaryaccessory/shapeonly;exactmechanicalfitandRFclaimremainunverified."
+    },
+    {
+      "kind": "visible-centre-contact-vs-vendor-wording",
+      "fact": "Own US91510 clearly shows a solid body centre pin; vendor describes supplied antenna as SMA male. These are separate observations.",
+      "treatment": "Model visible body pin; do not certify SMA/RP-SMA polarity or production mating fit. Accessory receiving interior and all numerical dimensions are inferred. Preserve historical batch51 hollow-contact snapshot as superseded for this detail."
+    }
+  ],
+  "license": {
+    "newAuthoredCode": "MIT",
+    "nativeSource": "MIT Copyright(c)2021M5Stack with complete notice",
+    "officialPhotosDocs": "Referenceonly;no blanketMIT/rawredistribution",
+    "ordinaryPngs": "Userauthorized exactreadable ownreference redraw,marksretain respective rights",
+    "privateCsvVector": "Notaccessed ordistributed"
+  },
+  "validationBoundary": {
+    "necessaryCpuProbe": "pass",
+    "browserGpu": false,
+    "manufacturingFit": false,
+    "electricalRadioFirmwareHardware": false
+  },
+  "smaVisibleContactAmendment": {
+    "id": "us915-sma-2026-10-27",
+    "reviewedAt": "2026-10-27",
+    "sourceUrl": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20LoRaWAN-US915/10.webp",
+    "sourceSha256": "0ca652d373ab43778f500f3b5b2f598104f60fcdb52fb46fe8039da7b822b721",
+    "previousInference": "Hollow body centre contact and solid accessory pin",
+    "correctedVisibleBody": "Solid body centre pin backed by recessed dielectric",
+    "accessoryInnerReconstruction": "Hollow receiving contact, real deep stop and retained dielectric; inferred unseen shape",
+    "history": "Independent amendment; batch51 and batch52 historical freezes/helpers/probes/progress remain unchanged",
+    "validation": "Actual current public/private no-source-loader CPU geometry/runtime/DOM checks passed; build and final evidence are recorded separately in current amendment progress. No browser/GPU/manufacturing/electrical/RF acceptance.",
+    "currentReceipt": "docs/research/lorawan-us915/sma-amendment-2026-10-27-smoke.json",
+    "historicalReceipt": "docs/research/lorawan-us915/smoke.json",
+    "actualPublicReceiptSha256": "df5c9d2b6d680ddf18a09bedf8c102566a1f878151310bc9f8b981ef83225252",
+    "currentCommand": "node scripts/check-lorawan-us915-sma-amendment.mjs",
+    "currentProgress": "artifacts/us915-sma-amendment-2026-10-27/progress.json"
+  }
+}

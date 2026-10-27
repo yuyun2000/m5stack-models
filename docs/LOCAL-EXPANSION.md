@@ -1,8 +1,10 @@
-# 本地 Unit 扩展批次
+# 本地设备扩展批次
 
 2026-10-27。本页整理当前公开工作副本中的本地增量，便于其他Agent接入、查阅各批证据和续作。
 
-当前catalog为14款主机、173款Unit，共187款；全部modeled、0verified。本次Git同步收录批41–48共24款新增Unit及40PNG，详见[187款同步记录](GIT-SYNC-187-2026-10-27.md)。历史progress只描述各自保存时点；当前提交与远端状态以Git日志及GitHub main为准。
+当前catalog为201款（17款主机、184款Unit）；阶段计数`{"modeled": 201}`，verified为0。第49–53批累计14款（3款主机、11款Unit）与21张普通PNG纳入本次Git同步范围。预览点击修复、方法论整理以及提交/推送结果统一见[本次发布记录](releases/2026-10-27-preview-stability.md)。
+
+用户已停止继续新增Unit；第54批三款尚未接入的工作不纳入本次201款发布。当前优先完成demo点击响应修复、整理建模方法与Git同步。下方各历史progress、批次计数和Git字样均表示记录保存时点，不代表最新发布状态。
 
 | 批次 | 产品ID | 检查点 |
 | --- | --- | --- |
@@ -56,12 +58,22 @@
 | M5Bit / Mini BPS / HEX | m5-bit / bps / hex | [本地进度](../artifacts/m5bit-bps-hex-expansion/progress.json) |
 | RGB LED 10cm / RFID / ENV | rgb-led-10cm / rfid / env | [本地进度](../artifacts/rgbled-rfid-env-expansion/progress.json) |
 | ENV II / Joystick / GPS | env-ii / joystick / gps | [本地进度](../artifacts/envii-joystick-gps-expansion/progress.json) |
+| PaHub v2.0 / PbHub / TimerCamera | pahub-v20 / pbhub / timercamera | [本地进度](../artifacts/pahubv20-pbhub-timercamera-expansion/progress.json) |
+| M5Camera / ESP32CAM / RGB LED Strip 50cm | m5camera / esp32cam / rgb-led-strip-50cm | [本地进度](../artifacts/m5camera-esp32cam-rgbstrip50-expansion/progress.json) |
+| CardKB original / PoE CAM-W original / LoRaWAN US915 | cardkb-original / poe-cam-w / lorawan-us915 | [本地进度](../artifacts/cardkboriginal-poecamoriginal-lorawanus915-expansion/progress.json) |
+| LoRaWAN AS923 / EU868 | lorawan-as923 / lorawan-eu868 | [本地进度](../artifacts/lorawan-as923-eu868-expansion/progress.json) |
+| Atom Lite / 原 Atom Matrix / AtomS3 Lite（三款controller） | atom-lite / atom-matrix / atoms3-lite | [本地进度](../artifacts/atomlite-atommatrix-atoms3lite-expansion/progress.json) |
 
 各进度记录绑定相应批次的源码/检查范围。近期新增只执行必要局部结构、动作/API、接线夹具及构建；没有逐面浏览器复核或全量验收。`modeled`表示已有实现，不能视为完成视觉或实物配合验收。
 
 ## 接入入口
 
+- [Atom三主机](ATOMLITE-ATOMMATRIX-ATOMS3LITE-CONTROLLERS.md)：原Atom Lite、原Atom Matrix与AtomS3 Lite，真实键、灯、接口及同步贴纸。
+- [LoRaWAN AS923/EU868](LORAWAN-AS923-EU868-UNITS.md)：两款自身native完整壳、各自天线/真实接口及同步前后印刷。
+- [原CardKB/原PoE CAM-W/US915](CARDKBORIGINAL-POECAMORIGINAL-LORAWANUS915-UNITS.md)：50键实际按放/单RGB、原摄像头双键与独立灯、原生US915完整壳/接口及同步印刷。
 - [Agent总指南](AGENT-INTEGRATION.md)：按需loader、输入/外驱状态、层级地址与生命周期。
+- [原M5Camera/ESP32CAM/50cm灯条](M5CAMERA-ESP32CAM-RGBSTRIP50-UNITS.md)：自身相机结构/真实帽、500mm30灯实际包覆/三线转接与外驱形状及同步印刷。
+- [PaHub v2.0/原PbHub/裸TimerCamera](PAHUBV20-PBHUB-TIMERCAMERA-UNITS.md)：七口真实接合/下游四芯与层级地址、裸板双帽/固定蓝灯和被动光学frame及同步印刷。
 - [原ENV II/Joystick/GPS](ENVII-JOYSTICK-GPS-UNITS.md)：SHT30/BMP280真实通气壳、XY倾斜与Z按压回弹、原GPS完整接口及同步印刷。
 - [RGB LED 10cm/RFID/ENV原版](RGBLED-RFID-ENV-UNITS.md)：15灯外驱/真实柔性带形、原RFID实体与银膜、原ENV40交错通气槽/双封装及同步印刷。
 - [M5Bit/Mini BPS/HEX原版](M5BIT-BPS-HEX-UNITS.md)：真实卡槽/IO、BMP280双通气槽、37颗SK6812外驱与本款印刷；只外观与实际物理接口。
@@ -100,7 +112,7 @@
 - [Earth/Hall/QRCode](EARTH-HALL-QRCODE-UNITS.md)：土壤探针、固定磁感实体、真实触发键/通讯滑块与独立灯。
 - [Step16/ASR/UHF](STEP-ASR-UHF-UNITS.md)：旋钮、原生七段/RGB外驱、固定声学与RF实体。
 - [IMU/扩展IO/ACSSR](IMU-EXTIO-ACSSR-UNITS.md)：纯实体锚点、真实排针、按键/螺钉与独立外驱灯。
-- [近期Unit贴纸](UNIT-STICKER-ADDITIONS.md)：144款新增Unit的原稿栅格/官方平面栅格/参考重绘、来源、开关与必要局部检查。
+- [近期设备贴纸](UNIT-STICKER-ADDITIONS.md)：158款设备（含本批3款controller）的实际PNG、来源、开关与必要局部检查。
 - [网络/摄像/合成Unit](NETWORK-CAMERA-SYNTH-UNITS.md)：真实网口、固定镜头、内置喇叭与同步贴纸。
 - [旋转Unit](ROTATING-UNITS.md)：转子、真实弹舌和移动Grove输出。
 - [显示Unit](DISPLAY-UNITS.md)：独立与嵌套framebuffer。
@@ -118,3 +130,7 @@ AC Measure/AIN4-20mA/BLDC Driver插舌已补孔下壁；当前SHA/局部证据�
 旧50张参考重绘PNG保留为未完成全批复核的检查点；私有实现尚未整批同步这些重绘。私有Scroll结构WIP与公开新增Unit分开保留，禁止整树覆盖或夹带发布。StackChan生产装配基准及隐藏配合仍未闭合，整体goal保持active。
 
 本地预览为<http://127.0.0.1:5188/>。`npm run catalog`生成loader、服务catalog与STATUS；各批专项命令见对应指南。后续新增时应按本页批次和当前实际diff保留依赖，保留公开基线已有的素材净化规则。
+
+<!-- us915-sma-amendment-2026-10-27 -->
+
+2026-10-27 US915 SMA独立更正：[当前更正说明](US915-SMA-AMENDMENT-2026-10-27.md)依据US915自身近照将本体改为实心中心针，附件受针腔/止挡、尺寸/极性/配合仍明记推导；[当前实际无loader专项receipt](research/lorawan-us915/sma-amendment-2026-10-27-smoke.json)对应 `node scripts/check-lorawan-us915-sma-amendment.mjs`。构建与最终证据见[当前progress](../artifacts/us915-sma-amendment-2026-10-27/progress.json)；[51批progress](../artifacts/cardkboriginal-poecamoriginal-lorawanus915-expansion/progress.json)仅为历史快照。原native、两PNG、framework/API、51/52旧helper/freeze/progress及基线保持，未重跑历史套件。

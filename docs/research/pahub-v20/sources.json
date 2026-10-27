@@ -1,0 +1,781 @@
+{
+  "id": "pahub-v20",
+  "sku": "U040-B",
+  "name": "Unit PaHub v2.0",
+  "chipDocumentary": "PCA9548AP;linked schematic TCA9548A conflict unresolved",
+  "retrievedAt": "2026-10-27",
+  "officialDocs": "https://docs.m5stack.com/en/unit/pahub2",
+  "constructionRoute": "official-native-shell-plus-own-visible-assembly",
+  "nativeGeometryAvailable": true,
+  "nativeTriangles": 3498,
+  "nativeRawTriangles": 6996,
+  "nativePreviewExcludedTriangles": 3498,
+  "nativeSource": {
+    "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/U040-B_Unit_PaHub_v2.0/Structures/Unit_PaHub_v2.0.stl",
+    "bytes": 349884,
+    "sha256": "b10f9d582a6b12e22e7b51b6059517028cb96c1d1c73330460cd184c50499982",
+    "gitBlob": "6207e09668335761cb1f265daa8349f20c6f69d1",
+    "repository": "m5stack/M5_Hardware",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "path": "Products/U040-B_Unit_PaHub_v2.0/Structures/Unit_PaHub_v2.0.stl",
+    "cachedIndexBlobVerified": true,
+    "license": "MIT",
+    "copyright": "Copyright (c) 2021 M5Stack"
+  },
+  "nativeFaceMapping": {
+    "runtimeSource": "src/units/pahub-v20/native-data.js",
+    "originalFaceIndexAttribute": "sourceFaceIndex",
+    "selectedParts": [
+      {
+        "id": "rear",
+        "name": "Original U040-B native rear half-shell",
+        "triangles": 1872,
+        "translation": [
+          40.20377731323242,
+          0,
+          -1.2
+        ],
+        "attributeSha256": {
+          "position": "5c13640e67023cecd4e22272134a31fb4073b1d22daf69cd9805fde8bf69fc23",
+          "normal": "ff703c97ff195621c434dcf91089f0eebaecf5ace1ee9db9466a5f4ae3c371e3",
+          "index": "452d1aca5a1941f21e8d89821dbd76c178e0c7a790f2c69c01be43a449b0c39b"
+        }
+      },
+      {
+        "id": "front",
+        "name": "Original U040-B native open front half-shell",
+        "triangles": 1626,
+        "translation": [
+          0.1146097183227539,
+          0,
+          -1.2
+        ],
+        "attributeSha256": {
+          "position": "39b4c674c70b95b6e1644709876ad9cb22af58d7ddce6dbecb05fa41bc3facaf",
+          "normal": "da65feb150a18af0dc67fc2485ecfc086f3847d5539dd5f97623a70c7927c9d3",
+          "index": "d5835d073b030374158bb43916f9c57a7acc60a6a8d9d351101f005d4e48d36d"
+        }
+      }
+    ],
+    "fullMappingLocation": "native-data.js nativeParts.faceIds and each instantiated geometry.sourceFaceIndex;no source face lost/remeshed",
+    "workMappingSha256": "dbee448fa8ba938932127f081bdb50c53b572c2fb24081869e40af5c487d971d",
+    "nativeRawSha256": "b10f9d582a6b12e22e7b51b6059517028cb96c1d1c73330460cd184c50499982"
+  },
+  "nativeLicense": {
+    "spdx": "MIT",
+    "copyright": "Copyright (c) 2021 M5Stack",
+    "exactUpstreamLicenseText": "MIT License\n\nCopyright (c) 2021 M5Stack\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+    "sourceLicenseSha256": "44611d917bece311f5c8eeffce83d8bf9e9ca3f815d262f694ff4a7996af50ea",
+    "retainedInRuntime": "native-data.js source.license plus Copyright2021 header"
+  },
+  "officialMCP": {
+    "status": "success",
+    "queryRepeated": false,
+    "rawResponseSha256": "60818e575d53000b2c031e0e9116216c214fb3877feaf35bde47a0f4da23ad4e",
+    "decodedInfoSha256": "7cec38321e4801cac89bec282d5e80560d1b43cced843f9b8a22cc43e6108ce0",
+    "scope": "Use exact U040-B product/schematic segments only;U040 and U040-B-V21 mixed hits excluded",
+    "rawDistributed": false
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pahub2/pahub2_06.webp",
+    "bytes": 81226,
+    "sha256": "c4391e9993ebadc456cd34a8b74bf72b63463ebfbe9fb65f38dec116fe536358",
+    "role": "own-clear-exposed-PCB-front"
+  },
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pahub2/pahub2_01.webp",
+      "bytes": 132206,
+      "sha256": "6dd042e0b3eeb071a2a29170bde4346211cb569ad7e99f893eed95a6450cc397",
+      "role": "own-promotional-assembled-channel-orientation"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pahub2/pahub2_02.webp",
+      "bytes": 43126,
+      "sha256": "244a19ab4df8304f0bd296091cb2d018ed5d38937fae77a58aa605a6d42ace5e",
+      "role": "own-readable-rear-film-and-fixing"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pahub2/pahub2_03.webp",
+      "bytes": 28860,
+      "sha256": "cf450eb34c96a4ad128fb68027df8b2fba03027c8959788c6b96be28558caa18",
+      "role": "excluded-packaging"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pahub2/pahub2_05.webp",
+      "bytes": 63256,
+      "sha256": "7a316a80bc681f3ec08f5e36f8d75a52ed18b9246b426f5dc9cece939b82da88",
+      "role": "own-clear-exposed-PCB-isometric"
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pahub2/pahub2_06.webp",
+      "bytes": 81226,
+      "sha256": "c4391e9993ebadc456cd34a8b74bf72b63463ebfbe9fb65f38dec116fe536358",
+      "role": "own-clear-exposed-PCB-front"
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/793/U040-B_Module_Size_sch_01.png",
+      "bytes": 347128,
+      "sha256": "78d6ddcc2ec86ec7d7f4d6302976c3cee28eee25aa3ae4fa4b9a63647f7bacb3",
+      "role": "own-dimensioned-multiview"
+    }
+  ],
+  "nominalMm": [
+    24,
+    48,
+    10.8
+  ],
+  "nativeShellEnvelopeMm": [
+    24,
+    48,
+    8
+  ],
+  "dimensionBasis": {
+    "ownCurrentVendorOrderMm": [
+      48,
+      24,
+      10.8
+    ],
+    "modelXYZMm": [
+      24,
+      48,
+      10.8
+    ],
+    "ownDimensionedFacts": {
+      "shellThicknessMm": 8,
+      "completePortProtrusionEnvelopeThicknessMm": 10.8,
+      "planCornerRadiusMm": 4,
+      "sideEdgeRadiusMm": 1,
+      "mountingBores": 2,
+      "mountingDiameterMm": 5,
+      "mountingPitchMm": 16,
+      "boreCentresAboveBottomMm": 12,
+      "canonicalBoreCentresMm": [
+        [
+          -8,
+          -12
+        ],
+        [
+          8,
+          -12
+        ]
+      ],
+      "bottomGroveMouthMm": [
+        10,
+        5.2
+      ]
+    },
+    "nativeOriginalAssembledZMms": [
+      -2.799999952316284,
+      5.199999809265137
+    ],
+    "nativeShellFrontToOutputMouthAdditionalMm": 2.8,
+    "scope": "Own STL defines shell faces/bores,own drawing defines nominal complete envelope;PCB/socket installation,metal/contact-tail shapes,film thickness/registration and hidden fit remain explicit estimates."
+  },
+  "actualPhysicalEnvelopeMm": [
+    24,
+    48,
+    10.799999940395356
+  ],
+  "parentInitializedPriorCatalogCount": 187,
+  "inferred": [
+    "Exact U040-B only. Selected native rear1872/front1626 triangles are unchanged source attributes under rigid translations;sourceFaceIndex retains original binarySTL triangleIDs. Raw6996faces include3498duplicate assembledpreview with3nonmanifold sharededges;excluded preview is not an installed thirdshell and was not repaired/remeshed. Preflight paired3498preview faces to selectedhalves within4.30e-6mm.",
+    "Native shell24×48×8 remains separate from complete24×48×10.8 envelope withsix upright outputs extending2.8mm above originalfront. Own drawingR4/R1/twoØ5bores16pitch/12abovebottom and10×5.2bottommouth retained without stretching.",
+    "Own05/06 show exposedredPCB,24leg mux envelope,resistorarrays/visiblefixedpassives andsixuprightredoutputs. Native is shell-only;PCB outline/thickness/installation/supports,sourcebossclearance,retainedcontact/return/tail geometry and unseenbackside are explicitly reconstructed,not preciseBOM/manufacturingfit. Actual native mounting-tube exterior required ownPCB4.3mm side-relief radius;measured lateral clearances0.32556/0.36185mm and nativecentralbossclearance0.899996mm remain positive. No nativefaces changed to make own assemblyfit.",
+    "InferredPCB spansz−0.2..0.6 on4physicalposts from originalnativefloorz−2.9. Own input PCBedge notch avoids the horizontal dielectricfloor,which has2actualsupportposts. Twenty-four perimeterlegs and retainedlands support actual visiblemux package;3arrays/6fixedstrap-passives/4otherpassives follow own visibleappearance. This is not a source-verified completeBOM or fittedIC identity.",
+    "Seven genuine4contact sockets:horizontalbottominput−Y has4right-angle returns/4throughPCBtails,while6uprightoutputs+Z have24straightretainedstems through actualplatedPCBbores. Each has realreceivingcavity,walls,floor/stop/guides,retainedcontacts/lands;total28contacts/28platedbores/56annularlands. Sixoutputphysicalposition/channel order follows ownfront CH3/2top,CH4/1middle,CH5/0bottom;back-film map is mirrored as actuallyprinted.",
+    "Own02 rearfilmPa.HUB/PCA9548AP/portmap/ADDR/PORT.A.I2C/SCL SDA5V GND and own06 six-numberPCB3 2/4 1/5 0 are accurately code-redrawn ordinaryPNG. Exactly1actualrear adhesivefilm and1directPCBsilk region,not twofakefilms. Font/spacing/colors andfilmthickness reconstructed;no sourcephotopixels,packaging,unreadablemicrotext orindividualcode. Inkoff retains realfilm/PCB/nativeM5 and allphysicalattributes/index/world.",
+    "PCA9548AP inbodytext/rearfilm versusTCA9548A in linkedsource schematic remains unresolved;batch42_chain accepted feedbackb13646d233ba48d6971937ccd290bbad. Model only reproduces physicalvisiblepackage/print,not a settled fittedvendorpart. Originalv2.0 has solderstraps,no evidenceforv2.1DIP/button/LED/joint/sensoranchor.",
+    "Appearance only:no I2C/address/channel-selection/polling/routing/electrical/firmware/automaticbehavior. NecessaryModel plus transformedStickS3-HUBbranch1 and6real fourcore downstreams perentry prove independenthierarchicaladdressing/detach/peer/framebuffer/disposal/noecho. No extra downstreampose/TubeGeometryphase stress or sharedengine change was needed;inkoff exact attrs/index/world remains separatelyproved. CPU proof is not browser/GPU/hardware/manufacturing acceptance."
+  ],
+  "sourceConflict": {
+    "documentAndBackFilm": "PCA9548AP",
+    "linkedSchematicAndExactMcpSchematicU1": "TCA9548A",
+    "assembledChipMarkLegibility": "Not used to settle conflict from tiny photo text",
+    "impact": "Do not assert both as one confirmed fitted part;appearance only,no I2C/address/electrical route",
+    "feedbackSubmittedByThisAgent": false,
+    "feedbackOwner": "/root/batch42_chain",
+    "status": "parent-reported-accepted",
+    "feedbackId": "b13646d233ba48d6971937ccd290bbad",
+    "feedbackReceiptReportedBy": "/root/batch42_chain",
+    "feedbackIndependentlyResubmitted": false
+  },
+  "privateAggregate": {
+    "source": "root safe aggregate,no private table access in this subtask",
+    "sku": "U040-B",
+    "exactSkuRows": 0,
+    "strictNameOnlyRows": 0,
+    "originalDownloads": 0
+  },
+  "license": {
+    "newAuthoredCode": "MIT",
+    "nativeHalfShells": "M5Stack MIT Copyright2021 with exact notice preserved",
+    "officialDocsPhotosDrawing": "Reference only;not blanket MIT,raw bytes not distributed",
+    "ordinaryPng": "User-authorized exact-model code redraw;product marks retain respective rights"
+  },
+  "assetPolicy": {
+    "pngCount": 2,
+    "privateSourcesDistributed": false,
+    "rawOfficialPhotosDocsOrStlDistributed": false,
+    "vectorsGeneratorsDistributed": false,
+    "selectedNativeFacesInCodeUnderMit": true
+  },
+  "publicAPI": {
+    "exports": [
+      "GroveModule",
+      "Model",
+      "configurationSchema",
+      "configurations",
+      "defaults",
+      "spec"
+    ],
+    "defaultExport": "Model",
+    "bodyComponentOrder": [
+      "grove",
+      "grove-0",
+      "grove-1",
+      "grove-2",
+      "grove-3",
+      "grove-4",
+      "grove-5"
+    ],
+    "bodyComponentKinds": {
+      "grove": "port",
+      "grove-0": "port",
+      "grove-1": "port",
+      "grove-2": "port",
+      "grove-3": "port",
+      "grove-4": "port",
+      "grove-5": "port"
+    },
+    "portMetadata": [
+      {
+        "id": "grove",
+        "kind": "port",
+        "connector": "grove",
+        "position": [
+          0,
+          -24,
+          1.4
+        ],
+        "quaternion": [
+          0,
+          0,
+          1,
+          6.123233995736766e-17
+        ],
+        "pins": [
+          {
+            "n": 1,
+            "name": "GND"
+          },
+          {
+            "n": 2,
+            "name": "5V"
+          },
+          {
+            "n": 3,
+            "name": "SDA"
+          },
+          {
+            "n": 4,
+            "name": "SCL"
+          }
+        ],
+        "pinGrid": {
+          "cols": 4,
+          "rows": 1,
+          "pitch": 2,
+          "center": [
+            0,
+            -0.2
+          ],
+          "order": [
+            4,
+            3,
+            2,
+            1
+          ]
+        },
+        "meta": {
+          "face": "bottom",
+          "role": "visual-connector",
+          "scope": "Mechanical input only;no I2C/address/routing/electrical/firmware"
+        }
+      },
+      {
+        "id": "grove-0",
+        "kind": "port",
+        "connector": "grove",
+        "position": [
+          7.4,
+          -2.8,
+          6.8
+        ],
+        "quaternion": [
+          0.5,
+          -0.4999999999999999,
+          -0.5,
+          0.5000000000000001
+        ],
+        "pins": [
+          {
+            "n": 1,
+            "name": "GND"
+          },
+          {
+            "n": 2,
+            "name": "5V"
+          },
+          {
+            "n": 3,
+            "name": "SDA"
+          },
+          {
+            "n": 4,
+            "name": "SCL"
+          }
+        ],
+        "pinGrid": {
+          "cols": 4,
+          "rows": 1,
+          "pitch": 2,
+          "center": [
+            0,
+            0.2
+          ],
+          "order": [
+            4,
+            3,
+            2,
+            1
+          ]
+        },
+        "meta": {
+          "face": "front",
+          "role": "visual-connector",
+          "printedChannel": 0,
+          "scope": "Independent mechanical connector only;no selection/address/polling/routing/electrical/firmware"
+        }
+      },
+      {
+        "id": "grove-1",
+        "kind": "port",
+        "connector": "grove",
+        "position": [
+          7.4,
+          7.8,
+          6.8
+        ],
+        "quaternion": [
+          0.5,
+          -0.4999999999999999,
+          -0.5,
+          0.5000000000000001
+        ],
+        "pins": [
+          {
+            "n": 1,
+            "name": "GND"
+          },
+          {
+            "n": 2,
+            "name": "5V"
+          },
+          {
+            "n": 3,
+            "name": "SDA"
+          },
+          {
+            "n": 4,
+            "name": "SCL"
+          }
+        ],
+        "pinGrid": {
+          "cols": 4,
+          "rows": 1,
+          "pitch": 2,
+          "center": [
+            0,
+            0.2
+          ],
+          "order": [
+            4,
+            3,
+            2,
+            1
+          ]
+        },
+        "meta": {
+          "face": "front",
+          "role": "visual-connector",
+          "printedChannel": 1,
+          "scope": "Independent mechanical connector only;no selection/address/polling/routing/electrical/firmware"
+        }
+      },
+      {
+        "id": "grove-2",
+        "kind": "port",
+        "connector": "grove",
+        "position": [
+          5.1,
+          17.7,
+          6.8
+        ],
+        "quaternion": [
+          0.7071067811865475,
+          0,
+          0,
+          0.7071067811865476
+        ],
+        "pins": [
+          {
+            "n": 1,
+            "name": "GND"
+          },
+          {
+            "n": 2,
+            "name": "5V"
+          },
+          {
+            "n": 3,
+            "name": "SDA"
+          },
+          {
+            "n": 4,
+            "name": "SCL"
+          }
+        ],
+        "pinGrid": {
+          "cols": 4,
+          "rows": 1,
+          "pitch": 2,
+          "center": [
+            0,
+            0.2
+          ],
+          "order": [
+            4,
+            3,
+            2,
+            1
+          ]
+        },
+        "meta": {
+          "face": "front",
+          "role": "visual-connector",
+          "printedChannel": 2,
+          "scope": "Independent mechanical connector only;no selection/address/polling/routing/electrical/firmware"
+        }
+      },
+      {
+        "id": "grove-3",
+        "kind": "port",
+        "connector": "grove",
+        "position": [
+          -5.1,
+          17.7,
+          6.8
+        ],
+        "quaternion": [
+          0.7071067811865475,
+          0,
+          0,
+          0.7071067811865476
+        ],
+        "pins": [
+          {
+            "n": 1,
+            "name": "GND"
+          },
+          {
+            "n": 2,
+            "name": "5V"
+          },
+          {
+            "n": 3,
+            "name": "SDA"
+          },
+          {
+            "n": 4,
+            "name": "SCL"
+          }
+        ],
+        "pinGrid": {
+          "cols": 4,
+          "rows": 1,
+          "pitch": 2,
+          "center": [
+            0,
+            0.2
+          ],
+          "order": [
+            4,
+            3,
+            2,
+            1
+          ]
+        },
+        "meta": {
+          "face": "front",
+          "role": "visual-connector",
+          "printedChannel": 3,
+          "scope": "Independent mechanical connector only;no selection/address/polling/routing/electrical/firmware"
+        }
+      },
+      {
+        "id": "grove-4",
+        "kind": "port",
+        "connector": "grove",
+        "position": [
+          -7.4,
+          7.8,
+          6.8
+        ],
+        "quaternion": [
+          0.5,
+          0.4999999999999999,
+          0.5,
+          0.5000000000000001
+        ],
+        "pins": [
+          {
+            "n": 1,
+            "name": "GND"
+          },
+          {
+            "n": 2,
+            "name": "5V"
+          },
+          {
+            "n": 3,
+            "name": "SDA"
+          },
+          {
+            "n": 4,
+            "name": "SCL"
+          }
+        ],
+        "pinGrid": {
+          "cols": 4,
+          "rows": 1,
+          "pitch": 2,
+          "center": [
+            0,
+            0.2
+          ],
+          "order": [
+            4,
+            3,
+            2,
+            1
+          ]
+        },
+        "meta": {
+          "face": "front",
+          "role": "visual-connector",
+          "printedChannel": 4,
+          "scope": "Independent mechanical connector only;no selection/address/polling/routing/electrical/firmware"
+        }
+      },
+      {
+        "id": "grove-5",
+        "kind": "port",
+        "connector": "grove",
+        "position": [
+          -7.4,
+          -2.8,
+          6.8
+        ],
+        "quaternion": [
+          0.5,
+          0.4999999999999999,
+          0.5,
+          0.5000000000000001
+        ],
+        "pins": [
+          {
+            "n": 1,
+            "name": "GND"
+          },
+          {
+            "n": 2,
+            "name": "5V"
+          },
+          {
+            "n": 3,
+            "name": "SDA"
+          },
+          {
+            "n": 4,
+            "name": "SCL"
+          }
+        ],
+        "pinGrid": {
+          "cols": 4,
+          "rows": 1,
+          "pitch": 2,
+          "center": [
+            0,
+            0.2
+          ],
+          "order": [
+            4,
+            3,
+            2,
+            1
+          ]
+        },
+        "meta": {
+          "face": "front",
+          "role": "visual-connector",
+          "printedChannel": 5,
+          "scope": "Independent mechanical connector only;no selection/address/polling/routing/electrical/firmware"
+        }
+      }
+    ],
+    "keymap": {},
+    "defaults": {},
+    "configurationSchema": {
+      "artwork": {
+        "type": "boolean",
+        "default": true,
+        "meaning": "Remove ink only;retain real rear film,exposed red PCB,native shell and all7receivers/contacts"
+      }
+    },
+    "configurations": [
+      {
+        "id": "complete",
+        "name": "完整 PaHub v2.0 U040-B",
+        "options": {}
+      }
+    ],
+    "moduleComponentOrder": [
+      "grove",
+      "grove-0",
+      "grove-1",
+      "grove-2",
+      "grove-3",
+      "grove-4",
+      "grove-5",
+      "unitFrame",
+      "cable"
+    ],
+    "moduleComponentKinds": {
+      "grove": "port",
+      "grove-0": "port",
+      "grove-1": "port",
+      "grove-2": "port",
+      "grove-3": "port",
+      "grove-4": "port",
+      "grove-5": "port",
+      "unitFrame": "unit-frame",
+      "cable": "cable"
+    },
+    "assemblyProperty": "pahubV20Assembly",
+    "moduleAdditionalComponents": [
+      "unitFrame",
+      "cable"
+    ],
+    "canonicalCableInput": "grove",
+    "ports": [
+      "grove",
+      "grove-0",
+      "grove-1",
+      "grove-2",
+      "grove-3",
+      "grove-4",
+      "grove-5"
+    ],
+    "outputs": [
+      "grove-0",
+      "grove-1",
+      "grove-2",
+      "grove-3",
+      "grove-4",
+      "grove-5"
+    ],
+    "controls": [],
+    "leds": [],
+    "displays": [],
+    "speakers": [],
+    "sensors": [],
+    "joints": [],
+    "anchors": [],
+    "passiveAnchors": [],
+    "aliases": [],
+    "options": {
+      "artwork": "boolean"
+    },
+    "configurationCases": [
+      {
+        "options": {},
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "artworkKinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "pngCount": 2
+      }
+    ],
+    "accessoryExports": [],
+    "accessories": {},
+    "commands": {
+      "ports": {
+        "types": [
+          "attach",
+          "detach"
+        ],
+        "targets": [
+          "grove",
+          "grove-0",
+          "grove-1",
+          "grove-2",
+          "grove-3",
+          "grove-4",
+          "grove-5"
+        ],
+        "scope": "Standard independent mechanical mating only"
+      },
+      "unitFrame": {
+        "type": "pose",
+        "target": "unitFrame",
+        "fields": [
+          "position",
+          "rotation",
+          "quaternion",
+          "distance"
+        ]
+      },
+      "cable": {
+        "type": "cable",
+        "target": "cable",
+        "fields": [
+          "slack",
+          "bend"
+        ]
+      }
+    },
+    "inputEvents": {
+      "ports": [
+        "attach",
+        "detach"
+      ]
+    },
+    "artworkPngCount": 2,
+    "artworkSourceKind": "reference-redraw",
+    "physicalAdhesiveFilms": 1,
+    "directPcbSilkRegions": 1,
+    "allArtworkPhysicalAttributesIndexWorldInvariant": true,
+    "physicalMuxDictionary": "pahubV20Assembly.mux holds fixed visible package/24legs/pads only;no Component,address,channel or electrical behavior",
+    "nativePartKeys": [
+      "rear",
+      "front"
+    ],
+    "nativeFaceCount": 3498,
+    "noAccessoriesOrRemovableCovers": true
+  }
+}

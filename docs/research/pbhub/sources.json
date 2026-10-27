@@ -1,0 +1,439 @@
+{
+  "id": "pbhub",
+  "sku": "U041",
+  "name": "Unit PbHub original/EOL",
+  "retrievedAt": "2026-10-27",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_PbHub",
+  "lifecycle": "Original exact U041 is EOL;historical useful coverage,no current popularity/sales claim",
+  "constructionRoute": "own-original-U041-photo-parametric",
+  "nativeGeometryAvailable": false,
+  "nativeFaceCount": 0,
+  "nativeSearch": {
+    "cachedTree": "work/new-units-32/imu-pro/hardware-current-tree.json",
+    "indexCommit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "exactSkuStructures": [],
+    "noBorrowedSiblingGeometry": true,
+    "noNewTreeQuery": true
+  },
+  "immutableDocumentationSource": {
+    "url": "https://raw.githubusercontent.com/m5stack/m5-docs/e5354c5dcc61d16fdc1dff9d92c2c760728d0b60/docs/en/unit/pbhub.md",
+    "sha256": "8dbcc52591cc48e769dc9f3c51b879e60ad2db1875e2a122055c5589a7c81ea4",
+    "bytes": 7486,
+    "commit": "e5354c5dcc61d16fdc1dff9d92c2c760728d0b60",
+    "gitBlob": "5e24f8b1763766e006716044c72eb2868c26a9ba",
+    "gitBlobVerifiedAgainstBytes": true,
+    "path": "docs/en/unit/pbhub.md",
+    "repository": "m5stack/m5-docs",
+    "notRuntimeSource": true
+  },
+  "officialMCP": {
+    "rawResponseSha256": "152bb8253942cb9319f29d2ba2dba6af08d3f3776d51f6b9e093e819a0bb29bb",
+    "decodedInfoSha256": "ac43bd9d0ba39a8b63715aa610b7e562c23dbdffe6e3cafacc444e05e44871ab",
+    "status": "success",
+    "rawDistributed": false,
+    "scope": "Only original U041 product/schematic sections;U041-B v1.1 mixed hits excluded;no repeat query."
+  },
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pbhub/pbhub_01.webp",
+      "sha256": "d622d33478ebd21d2b3c4f199b6557e0141ff903cd8d54443b0257046d27680b",
+      "bytes": 133318,
+      "role": "own-promotional-current-assembly",
+      "useBoundary": "Actual original body/port labels only;no banner/arrows/cable-as-decal."
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pbhub/pbhub_02.webp",
+      "sha256": "5c3e98dc324605b30f8720624c44d187cc33285286cc51ad1eb3ffa87e96197d",
+      "bytes": 51786,
+      "role": "own-current-rear-film-fixing",
+      "useBoundary": "Current MEGA328/ADDR0x61~0x68;visible screw,noQC;target artwork revision."
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pbhub/pbhub_05.webp",
+      "sha256": "47074240efacbd3dfb783a48708ba2ba0b3917df9f8f5c980ffcf4dca9d7fc17",
+      "bytes": 47918,
+      "role": "own-visible-PCB-isometric",
+      "useBoundary": "Black populated original board,visible32-pin package/crystal/passives,sixblackfrontsockets/redinput."
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pbhub/pbhub_06.webp",
+      "sha256": "f7f2e9adc02a5ce736978f55536d51ceff4a621da0070d7335b358383d9f4ebb",
+      "bytes": 56570,
+      "role": "own-visible-PCB-second-view",
+      "useBoundary": "Original channel orientation and legible PCB digits;no other version geometry."
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pbhub/pbhub_sch_01.webp",
+      "sha256": "7bd7bcb1837980d1e5812935dc8f929b2a6ded1208b0e3faa4cc1fb4c1ca21fb",
+      "bytes": 77026,
+      "role": "own-original-schematic",
+      "useBoundary": "ATMEGA328/J7 I2C/J1-6GPIO/J8 ISP/8MHz;documentary,not production3DBOM."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/m5-docs/e5354c5dcc61d16fdc1dff9d92c2c760728d0b60/docs/assets/img/product_pics/unit/pbhub/pbhub_p2.webp",
+      "sha256": "6b6faa25ebf99dbae29b5baad1fc2443933d463958efdb3dc711e5bab8e38f20",
+      "bytes": 29264,
+      "commit": "e5354c5dcc61d16fdc1dff9d92c2c760728d0b60",
+      "gitBlob": "81118610499a66f786ff2b078e821e49a2ea635d",
+      "gitBlobVerifiedAgainstBytes": true,
+      "role": "old-exact-SKU-label-conflict-only",
+      "useBoundary": "MEGA328/0x40~0x47/QC distinct old label;never merged into current film."
+    }
+  ],
+  "nominalMm": [
+    24,
+    48,
+    10.8
+  ],
+  "vendorTableOrderMm": [
+    48,
+    24,
+    10.8
+  ],
+  "historicalNominalMm": [
+    24,
+    48,
+    12
+  ],
+  "actualPhysicalEnvelopeMm": [
+    24,
+    48.00000011920929,
+    10.8
+  ],
+  "dimensionBasis": {
+    "current": "Current own U041 table48x24x10.8,targetXYZ24x48x10.8.",
+    "historical": "Immutable original table48x24x12 retained separately.",
+    "inferredCasingDepthMm": 7.92,
+    "inferredCompletePortEnvelopeDepthMm": 10.8,
+    "basis": "No originalCAD/dimensioned internal datum. Allradius/walls/borediameter/pitch,PCB/tongue/posts/packages/contactinstallation are explicit own-photo estimates."
+  },
+  "sourceConflicts": [
+    {
+      "kind": "MCU",
+      "currentDescriptionAndRear": "MEGA328",
+      "currentTable": "STM32F030F4P6",
+      "originalSchematic": "ATMEGA328",
+      "modeled": "Visible32-pin QFP-shaped body/32physicalleads,not asserted maker-specific fitted BOM."
+    },
+    {
+      "kind": "nominal-thickness",
+      "currentMm": 10.8,
+      "oldMm": 12
+    },
+    {
+      "kind": "rear-film-revision",
+      "current": "own02 ADDR0x61~0x68,noQC,visible screw",
+      "old": "immutable exactU041 ADDR0x40~0x47,QC",
+      "modeled": "Current own02 only"
+    }
+  ],
+  "existingFeedback": {
+    "id": "d1563a5d43244eb4ba20aebb7ef67fbc",
+    "accepted": true,
+    "receiptSha256": "b4b47797cce49be4f60d06f0370dc8247d82456981a32e78d775375c06d16df5",
+    "correctedProductionOrMechanicalDataReceived": false,
+    "repeatedByAuthor": false
+  },
+  "feedbackRepeatedByAuthor": false,
+  "inferred": [
+    "No originalU041 native;no U041-B shell/PCB/package/label reused. Core and cable mechanics follow existing public library patterns only.",
+    "Whitefrontframe large opening,continuousrear,sidewalls/real2bores/centralblindfastenerboss/M5relief are photo-derived volume with inferredthickness/radii/pitch.",
+    "Actualblackboard has an inferred hiddenlowerinputtongue and central screwclearance,4rear-toPCB supports,28truecontactdrills andfront/rearannularlands. These do not certifyproductionlayout.",
+    "OriginalvisibleQFP32 envelope/32leads,metalcrystal/2feet and8visiblepassives/16ends are appearance estimates from ownphotos;identityconflict remains open.",
+    "Seven receivingassemblies each have real sidewalls/floor/deepstop/latch/rails/carrier and4contacts;6frontoutputs have retainedverticalstems,redinput hasright-angle returns/feet/longthroughPCB tails. All exactcentres/depths/fit inferred.",
+    "Currentrearfilm is actual0.08mm substrate touchingrear skin;ordinaryPNG independently redrawn fromown02. PCBnumerals use transparent ordinaryPNG atactualboardface. No photo pixels,QC,individualcodes orunknownmicrotext.",
+    "No controls/LEDs/joints/sensors,readings,address routing,GPIO/ADC/PWM/RGB/servo/I2C/MCU/power/firmware. Seven ports andeach cablebranch documentmechanicalownership only."
+  ],
+  "privateAggregate": {
+    "id": "pbhub",
+    "sku": "U041",
+    "exactSkuRows": 0,
+    "strictNameOnlyRows": 0,
+    "originalDownloads": 0
+  },
+  "licenseBoundary": {
+    "newAuthoredCode": "MIT per user decision",
+    "nativeImported": false,
+    "officialDocsPhotos": "Reference only;raw bytes not public or blanket MIT",
+    "ordinaryRasters": "User-authorized accurate same-version ordinary PNG redraw with attribution;marks retain respective rights",
+    "privateOriginals": "CSV/vectors/URLs/mapping/generators remain private;0 original download"
+  },
+  "rawReferencesDistributed": false,
+  "generatorsDistributed": false,
+  "runtimeFiles": [
+    {
+      "path": "src/units/pbhub/artwork/pcb.png",
+      "sha256": "1b8ae244a12dca5417b222b4b27eb8d3f399827b28d30c96244ba4aa59e99675"
+    },
+    {
+      "path": "src/units/pbhub/artwork/rear.png",
+      "sha256": "51c90d56cfac7971e07af11c4a53ef85249897a6ab6774037db6fce85047f2fb"
+    },
+    {
+      "path": "src/units/pbhub/assembly.js",
+      "sha256": "53ccdbc4eb1390f212b755b01d7fb72f028c42062603162d1d50f8ece1d15452"
+    },
+    {
+      "path": "src/units/pbhub/connectors.js",
+      "sha256": "74b12b6f330f7bc896f384140062017c6922b639d796c7f129fb5235b873c534"
+    },
+    {
+      "path": "src/units/pbhub/dimensions.js",
+      "sha256": "dfa38fc71f2aaf0b085eb11aa64e32bd742b361f3da4d8dfd046eaeb9aa30310"
+    },
+    {
+      "path": "src/units/pbhub/electronics.js",
+      "sha256": "29dd3acc9cfa4aed88a2fabee6795fff9ec24b85531d5971bbb9a7b2b3d309d4"
+    },
+    {
+      "path": "src/units/pbhub/geometry.js",
+      "sha256": "55c6839b94f20ba0274fcf683b0fe3f9f0b54239e434c2a809f35deceb1321ef"
+    },
+    {
+      "path": "src/units/pbhub/index.js",
+      "sha256": "963f394beefdebb217be6f86609e2e6f35a0e607b16a5f0b231e34df2aa9187f"
+    },
+    {
+      "path": "src/units/pbhub/shell.js",
+      "sha256": "33e7d2f1c901de0f8bbefae6d0d3b46c49eb6ff16d0554b67f07adc681a770f3"
+    }
+  ],
+  "publicAPI": {
+    "exports": [
+      "Model",
+      "GroveModule",
+      "spec",
+      "defaults",
+      "configurations",
+      "configurationSchema"
+    ],
+    "assemblyProperty": "pbhubAssembly",
+    "bodyComponentOrder": [
+      "grove",
+      "grove-0",
+      "grove-1",
+      "grove-2",
+      "grove-3",
+      "grove-4",
+      "grove-5"
+    ],
+    "moduleComponentOrder": [
+      "grove",
+      "grove-0",
+      "grove-1",
+      "grove-2",
+      "grove-3",
+      "grove-4",
+      "grove-5",
+      "unitFrame",
+      "cable"
+    ],
+    "bodyKinds": [
+      "port",
+      "port",
+      "port",
+      "port",
+      "port",
+      "port",
+      "port"
+    ],
+    "moduleKinds": [
+      "port",
+      "port",
+      "port",
+      "port",
+      "port",
+      "port",
+      "port",
+      "unit-frame",
+      "cable"
+    ],
+    "componentKinds": {
+      "grove": "port",
+      "grove-0": "port",
+      "grove-1": "port",
+      "grove-2": "port",
+      "grove-3": "port",
+      "grove-4": "port",
+      "grove-5": "port",
+      "unitFrame": "unit-frame",
+      "cable": "cable"
+    },
+    "moduleAdditionalComponents": [
+      "unitFrame",
+      "cable"
+    ],
+    "canonicalCableInput": "grove",
+    "ports": [
+      "grove",
+      "grove-0",
+      "grove-1",
+      "grove-2",
+      "grove-3",
+      "grove-4",
+      "grove-5"
+    ],
+    "controls": [],
+    "leds": [],
+    "displays": [],
+    "speakers": [],
+    "sensors": [],
+    "joints": [],
+    "anchors": [],
+    "passiveAnchors": [],
+    "keymap": {},
+    "accessories": {},
+    "accessoryExports": [],
+    "defaults": {},
+    "options": {
+      "artwork": "boolean;two ink panels only. Actual rear film,black PCB,all shell/bores/connector/contact/support/fastener geometry retained."
+    },
+    "configurationSchema": {},
+    "configurations": [
+      {
+        "id": "complete",
+        "name": "原版 PbHub · 六路 GPIO 扩展外观",
+        "options": {}
+      }
+    ],
+    "configurationCases": [
+      {
+        "id": "complete",
+        "options": {},
+        "panelCount": 2,
+        "pngCount": 2,
+        "panels": [
+          "rear",
+          "pcb"
+        ],
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "artworkKinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ]
+      }
+    ],
+    "artworkPngCount": 2,
+    "artworkSourceKind": "reference-redraw",
+    "physicalAdhesiveFilms": 1,
+    "allArtworkPhysicalAttributesIndexWorldInvariant": true,
+    "noQCFilm": true,
+    "noServiceCovers": true,
+    "onlyRemovablePhysicalFields": [],
+    "portPins": {
+      "grove": [
+        "SCL",
+        "SDA",
+        "5V",
+        "GND"
+      ],
+      "grove-0": [
+        "IN0",
+        "OUT0",
+        "5V",
+        "GND"
+      ],
+      "grove-1": [
+        "IN1",
+        "OUT1",
+        "5V",
+        "GND"
+      ],
+      "grove-2": [
+        "IN2",
+        "OUT2",
+        "5V",
+        "GND"
+      ],
+      "grove-3": [
+        "IN3",
+        "OUT3",
+        "5V",
+        "GND"
+      ],
+      "grove-4": [
+        "IN4",
+        "OUT4",
+        "5V",
+        "GND"
+      ],
+      "grove-5": [
+        "IN5",
+        "OUT5",
+        "5V",
+        "GND"
+      ]
+    },
+    "commands": {
+      "grove": {
+        "types": [
+          "attach",
+          "detach"
+        ],
+        "scope": "Passive mechanical family/ownership only"
+      },
+      "grove-0": {
+        "types": [
+          "attach",
+          "detach"
+        ],
+        "scope": "Passive mechanical family/ownership only"
+      },
+      "grove-1": {
+        "types": [
+          "attach",
+          "detach"
+        ],
+        "scope": "Passive mechanical family/ownership only"
+      },
+      "grove-2": {
+        "types": [
+          "attach",
+          "detach"
+        ],
+        "scope": "Passive mechanical family/ownership only"
+      },
+      "grove-3": {
+        "types": [
+          "attach",
+          "detach"
+        ],
+        "scope": "Passive mechanical family/ownership only"
+      },
+      "grove-4": {
+        "types": [
+          "attach",
+          "detach"
+        ],
+        "scope": "Passive mechanical family/ownership only"
+      },
+      "grove-5": {
+        "types": [
+          "attach",
+          "detach"
+        ],
+        "scope": "Passive mechanical family/ownership only"
+      },
+      "unitFrame": {
+        "type": "pose",
+        "fields": [
+          "position",
+          "rotation",
+          "quaternion",
+          "distance"
+        ]
+      },
+      "cable": {
+        "type": "cable",
+        "fields": [
+          "slack",
+          "bend"
+        ]
+      }
+    },
+    "behaviorBoundary": "Original U041 static assembly and seven independent physical cable branches only. No address/GPIO/ADC/PWM/RGB/servo/I2C/MCU/power/firmware behavior or invented sensor/LED/button/joint."
+  }
+}

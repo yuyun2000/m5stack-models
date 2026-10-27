@@ -1,0 +1,4247 @@
+{
+  "status": "pass",
+  "scope": "One bounded bare U082 Model and actual transformed StickS3-HUB branch3,real four-core cable and own physical controls,not browser/GPU/manufacturing/full history",
+  "physical": {
+    "constructionRoute": "own-dimensional-parametric",
+    "importedNativeFaces": 0,
+    "physicalBodyMeshes": 646,
+    "triangles": 33644,
+    "allClosedPositiveDirectedEdges": true,
+    "actualEnvelopeMm": [
+      19.999999979138373,
+      45,
+      12.000000023841858
+    ],
+    "nominalMm": [
+      20,
+      45,
+      12
+    ],
+    "realMountingAxes": 2,
+    "mountingFrontSideWallRays": 16,
+    "trueGrovePCBDrills": 4,
+    "pcbFrontSideWallRays": 16,
+    "rectangularTailToPlatedBoreClearanceMm": 0.013015151901650035,
+    "twoPopulatedPCBfaces": true,
+    "ownVisiblePassiveEnvelopes": 82,
+    "realMetalSolderLeads": 276,
+    "grove": {
+      "contacts": 4,
+      "returns": 4,
+      "throughPCBTails": 4,
+      "platedBores": 4,
+      "annuli": 8
+    },
+    "usb": {
+      "realHollowShield": true,
+      "retainedTongue": true,
+      "contacts": 24,
+      "returns": 24,
+      "tails": 24
+    },
+    "camera": {
+      "ordinaryOV3660": true,
+      "recessedRealWindow": true,
+      "opticalFrontSideWallRays": 8,
+      "passiveFrame": "camera",
+      "documentaryFovDeg": 66.5,
+      "focusJoint": false,
+      "videoDisplay": false
+    },
+    "fpc": {
+      "realOrangeFlex": true,
+      "physicalCopperTraces": 24,
+      "trueReceivingSlot": true,
+      "contacts": 24,
+      "returns": 24,
+      "tails": 24
+    },
+    "emptyBatterySocket": {
+      "contacts": 2,
+      "unsupportedPortClassCreated": false,
+      "suppliedBattery": false
+    },
+    "buttons": {
+      "reset": {
+        "travelMm": 0.25,
+        "axis": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "power": {
+        "travelMm": 0.22,
+        "axis": [
+          1,
+          0,
+          0
+        ]
+      }
+    },
+    "fixedBlueLed": true,
+    "physicalAdhesiveFilms": 0,
+    "scope": "Own bare U082 all undimensioned geometry/installation/optical/connector/lead/travel data reconstructed;not production BOM/focal datum/hardware fit"
+  },
+  "modelRuntime": {
+    "controls": [
+      {
+        "id": "reset",
+        "travelMm": 0.25,
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "actualMovingMeshes": 2,
+        "multiSourceReleaseCancel": "last source;cancel suppresses click",
+        "rigidCapAndAllFixedMaterial": "pass"
+      },
+      {
+        "id": "power",
+        "travelMm": 0.22,
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "actualMovingMeshes": 2,
+        "multiSourceReleaseCancel": "last source;cancel suppresses click",
+        "rigidCapAndAllFixedMaterial": "pass"
+      }
+    ],
+    "simultaneous": {
+      "controls": 2,
+      "allHeldAndOneCancelled": "independent peers",
+      "completeNeutralPhysicalRestored": true
+    },
+    "partialPressAndCancelledSpringReturn": [
+      "reset",
+      "power"
+    ],
+    "onlyRealCapsAndStemsMove": true,
+    "fixedFramesTerminalsPCBPortsCameraAndPeersInvariant": true,
+    "externalFixedBlueNoEcho": true,
+    "noAutomaticPowerResetRtcCameraLedLinkage": true,
+    "noVideoFramebufferAIFocusOrFirmware": true,
+    "passiveCameraFrame": {
+      "sensor": "OV3660",
+      "documentaryFovDeg": 66.5
+    },
+    "allPhysicalAttributesIndexWorldRestored": true
+  },
+  "modelPeerInvariant": true,
+  "topology": {
+    "meshes": 646,
+    "triangles": 33644,
+    "envelopeMm": [
+      19.999999979138373,
+      45,
+      12.000000023841858
+    ],
+    "topologies": [
+      {
+        "name": "U082 actual stepped notched bare PCB,true drill axes",
+        "edges": 2478,
+        "invalidEdges": 0,
+        "volumeMm3": 993.9881271447437
+      },
+      {
+        "name": "U082 actual mounting plated barrel",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 1.5525916754970703
+      },
+      {
+        "name": "U082 mounting annulus",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.1295394518497318
+      },
+      {
+        "name": "U082 mounting annulus",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.1295394518497318
+      },
+      {
+        "name": "U082 actual mounting plated barrel",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 1.5525916754970703
+      },
+      {
+        "name": "U082 mounting annulus",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.1295394518497318
+      },
+      {
+        "name": "U082 mounting annulus",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.1295394518497318
+      },
+      {
+        "name": "U082 Grove actual plated PCB barrel",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.24051055160622714
+      },
+      {
+        "name": "U082 Grove actual annular solder land",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.040950774735608035
+      },
+      {
+        "name": "U082 Grove actual annular solder land",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.040950774735608035
+      },
+      {
+        "name": "U082 Grove actual plated PCB barrel",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.24051055160622714
+      },
+      {
+        "name": "U082 Grove actual annular solder land",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.040950774735608035
+      },
+      {
+        "name": "U082 Grove actual annular solder land",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.040950774735608035
+      },
+      {
+        "name": "U082 Grove actual plated PCB barrel",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.24051055160622714
+      },
+      {
+        "name": "U082 Grove actual annular solder land",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.040950774735608035
+      },
+      {
+        "name": "U082 Grove actual annular solder land",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.040950774735608035
+      },
+      {
+        "name": "U082 Grove actual plated PCB barrel",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.24051055160622714
+      },
+      {
+        "name": "U082 Grove actual annular solder land",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.040950774735608035
+      },
+      {
+        "name": "U082 Grove actual annular solder land",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.040950774735608035
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity fixed photo envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 36.86400012207029
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 ESP32 QFN48 documentary identity retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U082 PSRAM photographic fixed package fixed photo envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 22.440000066757193
+      },
+      {
+        "name": "U082 PSRAM photographic fixed package retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 PSRAM photographic fixed package retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 PSRAM photographic fixed package retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 PSRAM photographic fixed package retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 PSRAM photographic fixed package retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 PSRAM photographic fixed package retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 PSRAM photographic fixed package retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 PSRAM photographic fixed package retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 flash photographic fixed package fixed photo envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 22.440000066757193
+      },
+      {
+        "name": "U082 flash photographic fixed package retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 flash photographic fixed package retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 flash photographic fixed package retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 flash photographic fixed package retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 flash photographic fixed package retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 flash photographic fixed package retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 flash photographic fixed package retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 flash photographic fixed package retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 RTC/support photographic envelope fixed photo envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 7.124999910593033
+      },
+      {
+        "name": "U082 RTC/support photographic envelope retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 RTC/support photographic envelope retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 RTC/support photographic envelope retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 RTC/support photographic envelope retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 RTC/support photographic envelope retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 RTC/support photographic envelope retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 RTC/support photographic envelope retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 RTC/support photographic envelope retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding fixed photo envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 29.326001034259757
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 USB bridge photographed legacy envelope_no marking or BOM binding retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 fixed power-inductor envelope fixed photo envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 8.648999238729498
+      },
+      {
+        "name": "U082 front power support envelope fixed photo envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 2.49600004482269
+      },
+      {
+        "name": "U082 front power support envelope retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 front power support envelope retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 front power support envelope retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 front power support envelope retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 front power support envelope retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 front power support envelope retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 front regulator support envelope fixed photo envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 3.8219996211528895
+      },
+      {
+        "name": "U082 front regulator support envelope retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 front regulator support envelope retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 front regulator support envelope retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 front regulator support envelope retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 front regulator support envelope retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 front regulator support envelope retained solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03510000063031907
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 front own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21037500488758068
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 rear own visible passive,placement inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.29700001037120793
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual passive solder termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.016445000051558
+      },
+      {
+        "name": "U082 actual fixed test pad",
+        "edges": 288,
+        "invalidEdges": 0,
+        "volumeMm3": 0.023168921490750085
+      },
+      {
+        "name": "U082 actual fixed test pad",
+        "edges": 288,
+        "invalidEdges": 0,
+        "volumeMm3": 0.023168921490750085
+      },
+      {
+        "name": "U082 actual fixed test pad",
+        "edges": 288,
+        "invalidEdges": 0,
+        "volumeMm3": 0.023168921490750085
+      },
+      {
+        "name": "U082 actual fixed test pad",
+        "edges": 288,
+        "invalidEdges": 0,
+        "volumeMm3": 0.023168921490750085
+      },
+      {
+        "name": "U082 actual fixed test pad",
+        "edges": 288,
+        "invalidEdges": 0,
+        "volumeMm3": 0.023168921490750085
+      },
+      {
+        "name": "U082 actual fixed test pad",
+        "edges": 288,
+        "invalidEdges": 0,
+        "volumeMm3": 0.023168921490750085
+      },
+      {
+        "name": "U082 actual fixed test pad",
+        "edges": 288,
+        "invalidEdges": 0,
+        "volumeMm3": 0.023168921490750085
+      },
+      {
+        "name": "U082 actual fixed test pad",
+        "edges": 288,
+        "invalidEdges": 0,
+        "volumeMm3": 0.023168921490750085
+      },
+      {
+        "name": "U082 actual fixed test pad",
+        "edges": 288,
+        "invalidEdges": 0,
+        "volumeMm3": 0.023168921490750085
+      },
+      {
+        "name": "U082 actual fixed test pad",
+        "edges": 288,
+        "invalidEdges": 0,
+        "volumeMm3": 0.023168921490750085
+      },
+      {
+        "name": "U082 actual fixed test pad",
+        "edges": 288,
+        "invalidEdges": 0,
+        "volumeMm3": 0.023168921490750085
+      },
+      {
+        "name": "U082 actual fixed test pad",
+        "edges": 288,
+        "invalidEdges": 0,
+        "volumeMm3": 0.023168921490750085
+      },
+      {
+        "name": "U082 actual square camera carrier",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 59.904002563476496
+      },
+      {
+        "name": "U082 actual concealed camera sensor backing",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 23.232001930236873
+      },
+      {
+        "name": "U082 camera retained carrier foot",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.454999975562096
+      },
+      {
+        "name": "U082 camera retained carrier foot",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.454999975562096
+      },
+      {
+        "name": "U082 camera retained carrier foot",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.454999975562096
+      },
+      {
+        "name": "U082 camera retained carrier foot",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.454999975562096
+      },
+      {
+        "name": "U082 ordinary OV3660 hollow lens barrel",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 36.73525620837173
+      },
+      {
+        "name": "U082 ordinary OV3660 hollow lens barrel",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 110.45982397808793
+      },
+      {
+        "name": "U082 ordinary OV3660 hollow lens barrel",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 66.74574997478244
+      },
+      {
+        "name": "U082 actual lens barrel external retaining ridge",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4567441389688104
+      },
+      {
+        "name": "U082 actual lens barrel external retaining ridge",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4567441389688104
+      },
+      {
+        "name": "U082 actual lens barrel external retaining ridge",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4567441389688104
+      },
+      {
+        "name": "U082 actual lens barrel external retaining ridge",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4567441389688104
+      },
+      {
+        "name": "U082 actual lens barrel external retaining ridge",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4567441389688104
+      },
+      {
+        "name": "U082 actual lens barrel external retaining ridge",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4567441389688104
+      },
+      {
+        "name": "U082 actual recessed optical window",
+        "edges": 288,
+        "invalidEdges": 0,
+        "volumeMm3": 1.0376519334071994
+      },
+      {
+        "name": "U082 actual fixed sensor optical backing",
+        "edges": 288,
+        "invalidEdges": 0,
+        "volumeMm3": 2.12116558017793
+      },
+      {
+        "name": "U082 actual orange FPC fanout,not image or missing cover",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 18.240001171827334
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017955001201180595
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017955001201180706
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.01795500120118065
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017955001201180706
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017955003132373824
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017955003132373824
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017955003132373824
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017955003132373863
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017955002166777284
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.01795500216677727
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017955002649575544
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017954997392445878
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017954997392445885
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017955002649575547
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.01795500216677726
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017955002166777284
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.01795500313237386
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.01795500313237383
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017955003132373824
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017955003132373824
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017955001201180706
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017955001201180706
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017955001201180706
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC copper trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017955001201180595
+      },
+      {
+        "name": "U082 actual FPC receiver contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06991999882817264
+      },
+      {
+        "name": "U082 actual FPC retained conductor bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030360001592636122
+      },
+      {
+        "name": "U082 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U082 actual FPC receiver endwall",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 5.52000010490417
+      },
+      {
+        "name": "U082 actual FPC receiver endwall",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 5.52000010490417
+      },
+      {
+        "name": "U082 actual white FPC receiving floor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 15.199999809265137
+      },
+      {
+        "name": "U082 actual white FPC receiver upper retainer",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 24.320000057220454
+      },
+      {
+        "name": "U082 actual FPC deep stop",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 6.155999596595774
+      },
+      {
+        "name": "U082 actual fixed black FPC locking bar",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 3.234000076323747
+      },
+      {
+        "name": "U082 rear actual antenna dielectric carrier",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 30.336002023696945
+      },
+      {
+        "name": "U082 rear stamped metal antenna with actual slot",
+        "edges": 3120,
+        "invalidEdges": 0,
+        "volumeMm3": 17.8826949187181
+      },
+      {
+        "name": "U082 actual antenna solder/retaining foot",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.9300000071525574
+      },
+      {
+        "name": "U082 actual antenna solder/retaining foot",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.9300000071525574
+      },
+      {
+        "name": "U082 Grove sidewall",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 20.475000151991836
+      },
+      {
+        "name": "U082 Grove actual latch rail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.5362499919533725
+      },
+      {
+        "name": "U082 Grove sidewall",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 20.475000151991836
+      },
+      {
+        "name": "U082 Grove actual latch rail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.5362499919533725
+      },
+      {
+        "name": "U082 Grove actual floor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 42.299999964237145
+      },
+      {
+        "name": "U082 Grove actual insertion stop",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 21.7139984352589
+      },
+      {
+        "name": "U082 Grove retained roof bridge",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 4.950000107288361
+      },
+      {
+        "name": "U082 Grove retained contact 1",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.1289599463272095
+      },
+      {
+        "name": "U082 Grove real bent conductor 1",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.3527999779701237
+      },
+      {
+        "name": "U082 Grove actual through-PCB tail 1",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.8819999574422841
+      },
+      {
+        "name": "U082 Grove retained contact 2",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.1289599463272095
+      },
+      {
+        "name": "U082 Grove real bent conductor 2",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.3527999779701237
+      },
+      {
+        "name": "U082 Grove actual through-PCB tail 2",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.8819999574422841
+      },
+      {
+        "name": "U082 Grove retained contact 3",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.1289599463272095
+      },
+      {
+        "name": "U082 Grove real bent conductor 3",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.3527999779701237
+      },
+      {
+        "name": "U082 Grove actual through-PCB tail 3",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.8819999574422841
+      },
+      {
+        "name": "U082 Grove retained contact 4",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.1289599463272095
+      },
+      {
+        "name": "U082 Grove real bent conductor 4",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.3527999779701237
+      },
+      {
+        "name": "U082 Grove actual through-PCB tail 4",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.8819999574422841
+      },
+      {
+        "name": "U082 Grove physical PCB seat",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.44000011444092
+      },
+      {
+        "name": "U082 Grove physical PCB seat",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.44000011444092
+      },
+      {
+        "name": "U082 real hollow USB-C shield",
+        "edges": 3096,
+        "invalidEdges": 0,
+        "volumeMm3": 44.73296611836984
+      },
+      {
+        "name": "U082 USB-C actual dielectric stop",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 10.82400041294097
+      },
+      {
+        "name": "U082 USB-C retained tongue",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 23.516998883247368
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C actual tongue contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U082 USB-C concealed retained conductor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.09199999603629117
+      },
+      {
+        "name": "U082 USB-C surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.021119999513626087
+      },
+      {
+        "name": "U082 USB-C real shield PCB retention foot",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.5940000207424159
+      },
+      {
+        "name": "U082 USB-C real shield PCB retention foot",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.5940000207424159
+      },
+      {
+        "name": "U082 empty battery sidewall",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 4.124999940395354
+      },
+      {
+        "name": "U082 empty battery sidewall",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 4.124999940395354
+      },
+      {
+        "name": "U082 empty battery top/floor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 5.774999916553496
+      },
+      {
+        "name": "U082 empty battery top/floor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 5.774999916553496
+      },
+      {
+        "name": "U082 empty battery actual stop",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 2.625
+      },
+      {
+        "name": "U082 empty battery retained contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.140625
+      },
+      {
+        "name": "U082 battery solder retention",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13649999809265115
+      },
+      {
+        "name": "U082 empty battery retained contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.140625
+      },
+      {
+        "name": "U082 battery solder retention",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13649999809265115
+      },
+      {
+        "name": "U082 RESET actual fixed stop substrate",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 3.779999978542321
+      },
+      {
+        "name": "U082 RESET real fixed frame with actuator bore",
+        "edges": 1944,
+        "invalidEdges": 0,
+        "volumeMm3": 13.032559717500607
+      },
+      {
+        "name": "U082 RESET actual fixed solder foot",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06999999985098837
+      },
+      {
+        "name": "U082 RESET actual fixed solder foot",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06999999985098837
+      },
+      {
+        "name": "U082 RESET actual fixed solder foot",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06999999985098837
+      },
+      {
+        "name": "U082 RESET actual fixed solder foot",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.06999999985098837
+      },
+      {
+        "name": "U082 RESET actual moving cap",
+        "edges": 288,
+        "invalidEdges": 0,
+        "volumeMm3": 1.1435347850494197
+      },
+      {
+        "name": "U082 RESET actual moving stem",
+        "edges": 288,
+        "invalidEdges": 0,
+        "volumeMm3": 0.6977930443455388
+      },
+      {
+        "name": "U082 PWR actual fixed receiving frame",
+        "edges": 3120,
+        "invalidEdges": 0,
+        "volumeMm3": 5.060871081690998
+      },
+      {
+        "name": "U082 PWR actual deep stop",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.125
+      },
+      {
+        "name": "U082 PWR actual fixed solder foot",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.25874998778104796
+      },
+      {
+        "name": "U082 PWR actual fixed solder foot",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.25874998778104796
+      },
+      {
+        "name": "U082 PWR actual moving side cap",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.1439999998807895
+      },
+      {
+        "name": "U082 PWR actual moving stem",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.8400000190734859
+      },
+      {
+        "name": "U082 LED1 actual fixed package",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.0450000095367429
+      },
+      {
+        "name": "U082 LED1 actual solder terminal",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.050049998396635036
+      },
+      {
+        "name": "U082 LED1 actual solder terminal",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.050049998396635036
+      },
+      {
+        "name": "U082 LED1 actual fixed blue encapsulant",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2520000157356263
+      }
+    ]
+  },
+  "artworkCases": [
+    {
+      "entry": "Model",
+      "preset": "bare",
+      "options": {},
+      "onPngCount": 1,
+      "offPngCount": 0,
+      "bothActualControlsPartialPressAndCancelledReturn": true,
+      "allPhysicalAttributesIndexWorldInvariant": true,
+      "physicalAdhesiveFilms": 0
+    },
+    {
+      "entry": "GroveModule",
+      "preset": "bare",
+      "options": {},
+      "onPngCount": 1,
+      "offPngCount": 0,
+      "bothActualControlsPartialPressAndCancelledReturn": true,
+      "allPhysicalAttributesIndexWorldInvariant": true,
+      "physicalAdhesiveFilms": 0
+    }
+  ],
+  "transformedPhysical": {
+    "constructionRoute": "own-dimensional-parametric",
+    "importedNativeFaces": 0,
+    "physicalBodyMeshes": 646,
+    "triangles": 33644,
+    "allClosedPositiveDirectedEdges": true,
+    "actualEnvelopeMm": [
+      19.99999997913841,
+      45,
+      12.00000002384185
+    ],
+    "nominalMm": [
+      20,
+      45,
+      12
+    ],
+    "realMountingAxes": 2,
+    "mountingFrontSideWallRays": 16,
+    "trueGrovePCBDrills": 4,
+    "pcbFrontSideWallRays": 16,
+    "rectangularTailToPlatedBoreClearanceMm": 0.013015151901650035,
+    "twoPopulatedPCBfaces": true,
+    "ownVisiblePassiveEnvelopes": 82,
+    "realMetalSolderLeads": 276,
+    "grove": {
+      "contacts": 4,
+      "returns": 4,
+      "throughPCBTails": 4,
+      "platedBores": 4,
+      "annuli": 8
+    },
+    "usb": {
+      "realHollowShield": true,
+      "retainedTongue": true,
+      "contacts": 24,
+      "returns": 24,
+      "tails": 24
+    },
+    "camera": {
+      "ordinaryOV3660": true,
+      "recessedRealWindow": true,
+      "opticalFrontSideWallRays": 8,
+      "passiveFrame": "camera",
+      "documentaryFovDeg": 66.5,
+      "focusJoint": false,
+      "videoDisplay": false
+    },
+    "fpc": {
+      "realOrangeFlex": true,
+      "physicalCopperTraces": 24,
+      "trueReceivingSlot": true,
+      "contacts": 24,
+      "returns": 24,
+      "tails": 24
+    },
+    "emptyBatterySocket": {
+      "contacts": 2,
+      "unsupportedPortClassCreated": false,
+      "suppliedBattery": false
+    },
+    "buttons": {
+      "reset": {
+        "travelMm": 0.25,
+        "axis": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "power": {
+        "travelMm": 0.22,
+        "axis": [
+          1,
+          0,
+          0
+        ]
+      }
+    },
+    "fixedBlueLed": true,
+    "physicalAdhesiveFilms": 0,
+    "scope": "Own bare U082 all undimensioned geometry/installation/optical/connector/lead/travel data reconstructed;not production BOM/focal datum/hardware fit"
+  },
+  "moduleRuntime": {
+    "controls": [
+      {
+        "id": "reset",
+        "travelMm": 0.25,
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "actualMovingMeshes": 2,
+        "multiSourceReleaseCancel": "last source;cancel suppresses click",
+        "rigidCapAndAllFixedMaterial": "pass"
+      },
+      {
+        "id": "power",
+        "travelMm": 0.22,
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "actualMovingMeshes": 2,
+        "multiSourceReleaseCancel": "last source;cancel suppresses click",
+        "rigidCapAndAllFixedMaterial": "pass"
+      }
+    ],
+    "simultaneous": {
+      "controls": 2,
+      "allHeldAndOneCancelled": "independent peers",
+      "completeNeutralPhysicalRestored": true
+    },
+    "partialPressAndCancelledSpringReturn": [
+      "reset",
+      "power"
+    ],
+    "onlyRealCapsAndStemsMove": true,
+    "fixedFramesTerminalsPCBPortsCameraAndPeersInvariant": true,
+    "externalFixedBlueNoEcho": true,
+    "noAutomaticPowerResetRtcCameraLedLinkage": true,
+    "noVideoFramebufferAIFocusOrFirmware": true,
+    "passiveCameraFrame": {
+      "sensor": "OV3660",
+      "documentaryFovDeg": 66.5
+    },
+    "allPhysicalAttributesIndexWorldRestored": true
+  },
+  "modulePeerInvariant": true,
+  "framebufferInvariant": true,
+  "realFourCoreCables": {
+    "testedPath": 2,
+    "peer": 1
+  },
+  "actualBranchDetachReattach": true,
+  "nontrivialAncestorAndModulePose": true,
+  "actualAPI": {
+    "exports": [
+      "GroveModule",
+      "Model",
+      "configurationSchema",
+      "configurations",
+      "defaults",
+      "spec"
+    ],
+    "defaultExport": "Model",
+    "bodyComponentOrder": [
+      "camera",
+      "grove",
+      "usb",
+      "reset",
+      "power",
+      "status"
+    ],
+    "bodyComponentKinds": {
+      "camera": "component",
+      "grove": "port",
+      "usb": "port",
+      "reset": "button",
+      "power": "button",
+      "status": "led"
+    },
+    "moduleComponentOrder": [
+      "camera",
+      "grove",
+      "usb",
+      "reset",
+      "power",
+      "status",
+      "unitFrame",
+      "cable"
+    ],
+    "moduleComponentKinds": {
+      "camera": "component",
+      "grove": "port",
+      "usb": "port",
+      "reset": "button",
+      "power": "button",
+      "status": "led",
+      "unitFrame": "unit-frame",
+      "cable": "cable"
+    },
+    "keymap": {
+      "KeyR": "reset",
+      "KeyP": "power"
+    },
+    "defaults": {},
+    "configurationSchema": {
+      "artwork": {
+        "type": "boolean",
+        "default": true,
+        "meaning": "PCB ink only;retain both populated board faces and optics,no adhesive film exists"
+      }
+    },
+    "configurations": [
+      {
+        "id": "bare",
+        "name": "裸板 TimerCamera U082",
+        "options": {}
+      }
+    ]
+  },
+  "disposedResources": 1780
+}

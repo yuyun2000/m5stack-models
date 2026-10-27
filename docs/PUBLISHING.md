@@ -12,4 +12,6 @@
 
 ## 发布记录
 
+2026-10-27：[201款同步、预览选择修复与仓库整理](releases/2026-10-27-preview-stability.md)。该记录说明本次范围与验证；确切提交和远端状态由Git历史确认。下方为初次公开时的历史记录。
+
 2026-10-25T13:41:09.161118+00:00：已创建并推送 [yuyun2000/m5stack-models](https://github.com/yuyun2000/m5stack-models)，GitHub确认为PUBLIC并识别MIT。初始公开提交 `ca4f561ee0493e0161bc0151827930f2afe71ae5`，来源研究检查点 `8aa90ed`。实际证据见 `artifacts/publication.json`。未发布npm包或部署公网模拟器。

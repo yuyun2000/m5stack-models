@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-27",
+  "status": "pass",
+  "catalog": {
+    "total": 201,
+    "controllers": 17,
+    "units": 184,
+    "modeled": 201,
+    "verified": 0
+  },
+  "bug": {
+    "cause": "Optional limitations field rendered with map outside selection error boundary",
+    "affectedRecords": 31,
+    "fixed": "Optional metadata fallback,selection failure recovery,successful-only cache,stale error guard,configuration label fallback"
+  },
+  "checks": {
+    "bothWorkingCopies": [
+      "npm run check:demo",
+      "npm run build"
+    ],
+    "detailRecords": 201,
+    "selectionFixtureCases": [
+      "31 missing-limitations products",
+      "configuration label fallback",
+      "lazy build failure and retry",
+      "stale import error",
+      "successful model cache"
+    ],
+    "fixtureBoundary": "Actual main controller with DOM,viewer and import boundary fixtures;existing dynamic connection and framebuffer fixtures also pass"
+  },
+  "browser": {
+    "status": "pass",
+    "activation": "Actual keyboard activation and native select events in existing production page",
+    "readyModelIds": [
+      "atom-matrix",
+      "neohex",
+      "lorawan-eu868",
+      "button",
+      "qrcode"
+    ],
+    "configuration": {
+      "modelId": "qrcode",
+      "selected": "direct",
+      "labels": [
+        "安装固定折射头",
+        "直视扫描头"
+      ]
+    },
+    "errorLogs": [],
+    "limitation": "Host panel had zero viewport dimensions;mouse coordinate activation and screenshots were unavailable. No per-product visual acceptance claimed."
+  },
+  "production": {
+    "status": "pass",
+    "scope": "Existing production preview HTML,entry asset SHA and catalog;no server restart",
+    "catalogRecords": 201,
+    "htmlSha256": "742419f745c4eec4b2a8a35386dd60fafa7d028b552560ea6ca55c59ed539a69",
+    "entry": "./assets/index-CWDeX0bm.js",
+    "entrySha256": "675895307373a5ee110cb83d31bd4b90c2a41dd7e932b76affb8a3d6a8e68665",
+    "cacheControl": "no-store",
+    "pausedProductsAbsent": true
+  },
+  "existingBatchAudit": {
+    "addedModels": 14,
+    "addedPng": 21,
+    "frozenRuntimeAndResearchFilesMatched": 171,
+    "pngChunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ],
+    "oldCatalogObjectsUnchanged": 187
+  },
+  "fileSha256": {
+    "demo/main.js": "81d61aa85e6cab97f3021cc81c20aded05410ca9e1dad8e732818787eb20b805",
+    "demo/product-details.js": "65057bf8bf5f933eb31a7b7c900604e886eed3abcebe885cf45e1745e9d111f4",
+    "scripts/check-demo-product-details.mjs": "ded645bd0e70551159c9aa85cab6f9675cd30f19dcb3c5d0a850aa7671d675a5",
+    "scripts/check-demo-selection.mjs": "89e56bb33431378433241ff029805a1e62584437149c37dc2bf969e89ad3561e",
+    "package.json": "2414af043e64bd2c243d372ffd8550ca4571b77bc610d95abe3a43ba487ee95c"
+  },
+  "limits": [
+    "No historical finalizers or full historical geometry rerun",
+    "No physical-device,manufacturing-fit or full visual acceptance",
+    "Build retains large geometry chunk warnings"
+  ]
+}

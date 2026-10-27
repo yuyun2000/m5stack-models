@@ -1,0 +1,122 @@
+{
+  "id": "pbhub",
+  "sku": "U041",
+  "kind": "reference-redraw",
+  "pngCount": 2,
+  "assets": [
+    {
+      "id": "rear",
+      "path": "src/units/pbhub/artwork/rear.png",
+      "kind": "reference-redraw",
+      "pixels": [
+        1620,
+        2840
+      ],
+      "sha256": "51c90d56cfac7971e07af11c4a53ef85249897a6ab6774037db6fce85047f2fb",
+      "source": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pbhub/pbhub_02.webp",
+        "sha256": "5c3e98dc324605b30f8720624c44d187cc33285286cc51ad1eb3ffa87e96197d"
+      },
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "rgbaReadback": true,
+      "visuallyInspected": true,
+      "physicalCarrier": "Actual rear0.08mm adhesive film",
+      "method": "Independent literal text/color/number code redraw;no source photograph pixels",
+      "actualText": [
+        "Pb.HUB",
+        "MEGA",
+        "328",
+        "ADDR 0X61~0X68",
+        "PORT.A.I2C",
+        "SCL",
+        "SDA",
+        "5V",
+        "GND"
+      ],
+      "omitted": [
+        "old0x40~0x47",
+        "QC",
+        "unknownmicrotext",
+        "individualcodes",
+        "packaging"
+      ],
+      "registrationInferred": true
+    },
+    {
+      "id": "pcb",
+      "path": "src/units/pbhub/artwork/pcb.png",
+      "kind": "reference-redraw",
+      "pixels": [
+        2020,
+        3020
+      ],
+      "sha256": "1b8ae244a12dca5417b222b4b27eb8d3f399827b28d30c96244ba4aa59e99675",
+      "source": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pbhub/pbhub_06.webp",
+        "sha256": "f7f2e9adc02a5ce736978f55536d51ceff4a621da0070d7335b358383d9f4ebb"
+      },
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "rgbaReadback": true,
+      "visuallyInspected": true,
+      "physicalCarrier": "Actual black PCB front,not adhesivefilm",
+      "method": "Independent literal text/color/number code redraw;no source photograph pixels",
+      "actualText": [
+        "3",
+        "2",
+        "4",
+        "1",
+        "5",
+        "0"
+      ],
+      "omitted": [
+        "old0x40~0x47",
+        "QC",
+        "unknownmicrotext",
+        "individualcodes",
+        "packaging"
+      ],
+      "registrationInferred": true
+    }
+  ],
+  "configurationCases": [
+    {
+      "id": "complete",
+      "options": {},
+      "panelCount": 2,
+      "pngCount": 2,
+      "panels": [
+        "rear",
+        "pcb"
+      ],
+      "kinds": [
+        "reference-redraw",
+        "reference-redraw"
+      ],
+      "artworkKinds": [
+        "reference-redraw",
+        "reference-redraw"
+      ]
+    }
+  ],
+  "physicalFilms": 1,
+  "noQCFilm": true,
+  "artworkFalse": "Only both ink panels absent. Realrearfilm/PCB/M5 andallphysicalattributes,index,worldmatrices remain identical inModel andGroveModule.",
+  "privateAggregate": {
+    "id": "pbhub",
+    "sku": "U041",
+    "exactSkuRows": 0,
+    "strictNameOnlyRows": 0,
+    "originalDownloads": 0
+  },
+  "photographPixelsUsed": false,
+  "sourcePhotosDistributed": false,
+  "vectorOriginalsDistributed": false,
+  "generatorsDistributed": false,
+  "rights": "Authorized matching ordinary PNG redraw with source attribution;official sources/productmarks retain respective rights"
+}

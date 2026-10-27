@@ -131,6 +131,17 @@ export class DynamicsPanel {
   port() { return this.model?.find(this.$('#grove-port').value, 'port'); }
   led() { return this.model?.find(this.$('#led-target').value, 'led'); }
 
+  connectionParts(module = this.port()?.module) {
+    const frame = module?.find('unitFrame', 'unit-frame');
+    const input = frame?.inputPort ?? frame?.input ?? module?.find('grove', 'port');
+    const cable = module?.find('cable', 'cable') ?? input?.module?.find('cable', 'cable');
+    return {module, frame, input, cable};
+  }
+
+  flexComponents() {
+    return ['visual-flex', 'flexible-strip'].flatMap(kind => this.model?.list(kind) ?? []);
+  }
+
   refreshPorts({preserveSelection = true} = {}) {
     const select = this.$('#grove-port'), previous = preserveSelection ? select.value : '';
     const ports = this.model?.list('port').filter(port => {
@@ -152,7 +163,7 @@ export class DynamicsPanel {
     this.$('#grove-unit').disabled = !ports.length;
     this.$('#grove-connect').disabled = !selected;
     this.$('#connection-note').textContent = ports.length
-      ? '四芯线与两端插头跟随接口位置；HUB 输出可继续挂接 Unit。连接仅表示外观装配。'
+      ? '按本款实际线束与接头装配；HUB 输出可继续挂接 Unit。连接仅表示外观装配。'
       : '此模型没有可供本演示挂接的 Grove 接口。';
   }
 
@@ -223,25 +234,41 @@ export class DynamicsPanel {
     controls.replaceChildren();
     controls.hidden = !module;
     if (!module) return;
-    const frame = module.get('unitFrame'), cable = module.get('cable');
+    const {frame, input, cable} = this.connectionParts(module);
+    if (!frame || !input || !cable) {
+      controls.append(node('output', '未安装连接线或转接线', 'control-note'));
+      return;
+    }
     const state = cable.getState();
-    const rotation = new THREE.Euler().setFromQuaternion(new THREE.Quaternion(...frame.getState().quaternion));
+    const frameState = frame.getState();
+    const rotation = new THREE.Euler().setFromQuaternion(new THREE.Quaternion(...frameState.quaternion));
     const degrees = value => value * 180 / Math.PI;
-    const values = {distance: state.target.position[1], x: state.target.position[0], z: state.target.position[2], turn: degrees(rotation.z), tilt: degrees(rotation.x), slack: state.slack};
-    const inputLocal = frame.object3d.worldToLocal(module.port('grove').object3d.getWorldPosition(new THREE.Vector3()));
+    module.root.updateWorldMatrix(true, true);
+    const endpoint = module.root.worldToLocal(input.object3d.getWorldPosition(new THREE.Vector3()));
+    const values = {distance: endpoint.y, x: endpoint.x, z: endpoint.z, turn: degrees(rotation.z), tilt: degrees(rotation.x), slack: state.slack};
+    const inputLocal = frame.object3d.worldToLocal(input.object3d.getWorldPosition(new THREE.Vector3()));
     const applyPose = () => {
       const quaternion = new THREE.Quaternion().setFromEuler(new THREE.Euler(rad(values.tilt), rotation.y, rad(values.turn)));
       const position = new THREE.Vector3(values.x, values.distance, values.z).sub(inputLocal.clone().applyQuaternion(quaternion));
-      frame.setPose({position: position.toArray(), quaternion: quaternion.toArray()});
+      frame.handle({type: 'pose', position: position.toArray(), quaternion: quaternion.toArray()});
       this.viewer.requestRender();
     };
+    const distanceRange = frameState.distanceRangeMm ?? [35, 180];
+    controls.append(node('output', `${state.wireCount} 根导线 · ${state.plugCount} 个线端插头`, 'control-note'));
     for (const [key, label, min, max, step] of [
-      ['distance', '沿口轴距离', 35, 180, 1], ['x', '横向偏移', -70, 70, 1],
+      ['distance', '沿口轴距离', ...distanceRange, 1], ['x', '横向偏移', -70, 70, 1],
       ['z', '前后偏移', -50, 50, 1], ['turn', '末端转向', -180, 180, 1],
       ['tilt', '末端俯仰', -60, 60, 1], ['slack', '线缆弯曲', 0, 60, 1],
-    ]) this.range(controls, {id: `cable-${key}`, label, min, max, step, value: values[key], unit: key === 'turn' || key === 'tilt' ? '°' : ' mm', oninput: value => {
+    ].filter(([key]) => key !== 'slack' || Number.isFinite(values.slack))) this.range(controls, {id: `cable-${key}`, label, min, max, step, value: values[key], unit: key === 'turn' || key === 'tilt' ? '°' : ' mm', oninput: value => {
+      const previous = values[key];
       values[key] = value;
-      if (key === 'slack') cable.setOptions({slack: value}); else applyPose();
+      try {
+        if (key === 'slack') cable.setOptions({slack: value}); else applyPose();
+      } catch (error) {
+        values[key] = previous;
+        this.$(`#cable-${key}`).value = previous;
+        throw error;
+      }
       this.refreshState();
     }});
     const fit = node('button', '适应画面');
@@ -300,7 +327,8 @@ export class DynamicsPanel {
     const allJoints = this.model.list('joint');
     const allSlides = this.model.list('slider');
     const allRotaries = this.model.list('rotary-selector');
-    this.$('#joint-section').hidden = !allJoints.length && !allSlides.length && !allRotaries.length;
+    const allFlexes = this.flexComponents();
+    this.$('#joint-section').hidden = !allJoints.length && !allSlides.length && !allRotaries.length && !allFlexes.length;
     for (const joint of allJoints) {
       const state = joint.getState();
       const group = node('div', null, 'joint-control');
@@ -354,6 +382,22 @@ export class DynamicsPanel {
         status.textContent=`档位 ${label}`;status.dataset.state=JSON.stringify(current);
       });
       group.append(status);joints.append(group);
+    }
+    for (const flex of allFlexes) {
+      const state = flex.getState(), group = node('div', null, 'joint-control');
+      group.dataset.flex = flex.path;
+      group.append(node('strong', flex.label));
+      this.range(group, {id: `flex-${flex.path.replaceAll('/', '-')}-bend`, label: '弯曲角度', min: state.rangeDeg[0], max: state.rangeDeg[1], step: 1, value: state.bendDeg, unit: '°', oninput: bendDeg => {
+        flex.set({bendDeg, durationMs: 160});
+        this.viewer.requestRender();
+      }});
+      const status = node('output', '', 'joint-status');
+      this.readouts.push(() => {
+        const current = flex.getState();
+        status.textContent = `${current.bendDeg.toFixed(1)}° · 条带长度 ${current.neutralAxisLengthMm} mm`;
+        status.dataset.state = JSON.stringify(current);
+      });
+      group.append(status); joints.append(group);
     }
     const leds = this.model.list('led').filter(led => !led.invisible);
     this.$('#led-section').hidden = !leds.length;
@@ -421,8 +465,9 @@ export class DynamicsPanel {
       joints: Object.fromEntries(this.model.list('joint').map(j => [j.path, j.getState()])),
       sliders: Object.fromEntries(this.model.list('slider').map(s => [s.path, s.getState()])),
       rotarySelectors: Object.fromEntries(this.model.list('rotary-selector').map(s => [s.path, s.getState()])),
+      flexes: Object.fromEntries(this.flexComponents().map(flex => [flex.path, flex.getState()])),
       leds: Object.fromEntries(this.model.list('led').map(led => [led.path, led.getState()])),
-      ...(module ? {cable: module.get('cable').getState()} : {}),
+      ...(this.connectionParts(module).cable ? {cable: this.connectionParts(module).cable.getState()} : {}),
     };
     this.$('#dynamic-state').textContent = JSON.stringify(state, null, 2);
   }

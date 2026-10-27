@@ -1,0 +1,74 @@
+{
+  "id": "timercamera",
+  "sku": "U082",
+  "kind": "reference-redraw",
+  "pngCount": 1,
+  "privateSourcesDistributed": false,
+  "photoCropPixels": 0,
+  "vectorSourcesDistributed": false,
+  "generatorsDistributed": false,
+  "rawOfficialSourcesDistributed": false,
+  "physicalAdhesiveFilms": 0,
+  "privateCandidateDecision": "Both exact candidates packaging-only,0bodyoriginals/0downloads,never applied to PCB",
+  "assets": [
+    {
+      "path": "src/units/timercamera/reference-redraw-front.png",
+      "sha256": "60b25a334a14252504f252bb454a39afdf53c4031fd7b677cfa8e04560039dca",
+      "size": [
+        2000,
+        4500
+      ],
+      "mode": "RGBA",
+      "transparent": true,
+      "kind": "reference-redraw",
+      "sourceKind": "reference-redraw",
+      "source": {
+        "id": "timercamera",
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/timercam/timercam_02.webp",
+        "status": 200,
+        "bytes": 77258,
+        "sha256": "c43e2909db1d44e243ecaebb557c79b409fda61d2dc1b5ee7a6d5270b7e6e4ae"
+      },
+      "physicalTarget": "timerCameraAssembly.board.pcb",
+      "sizeMm": [
+        20,
+        45
+      ],
+      "printedContent": [
+        "M5STACK",
+        "ESP32 TimerCam",
+        "G0",
+        "TXD",
+        "VSYS",
+        "1V2",
+        "2V8",
+        "3V3",
+        "VBAT",
+        "clear PCB component outlines"
+      ],
+      "decodedVisualInspection": "2026-10-27:PNG decoded and viewed,readable unclipped text,no label-outline overlap",
+      "limitations": "Reconstructed font/color/spacing/registration;unreadable rear/flex/chip microtext and individual codes omitted",
+      "permission": "User-approved accurate redraw as ordinary PNG;marks retain respective rights"
+    }
+  ],
+  "physicalInkOff": {
+    "actualPCBRetained": true,
+    "noFakeFilm": true,
+    "bothPopulatedFacesRetained": true,
+    "bothEntriesActualPreset": true,
+    "bothButtonsPartialPressAndCancelledReturn": true,
+    "allPhysicalAttributesIndexWorldInvariant": true
+  },
+  "configurationCases": [
+    {
+      "options": {},
+      "kinds": [
+        "reference-redraw"
+      ],
+      "artworkKinds": [
+        "reference-redraw"
+      ],
+      "pngCount": 1
+    }
+  ]
+}

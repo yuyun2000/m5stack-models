@@ -1,8 +1,62 @@
 # 贴纸与外壳印刷覆盖
 
-## 最新本地增量：ENV II / Joystick / GPS
+当前201款范围及本次21张PNG同步见[发布记录](releases/2026-10-27-preview-stability.md)。下方批次数量、Git字样与核验结果保留各自保存时点，当前提交以Git历史为准。
 
-当前本地187款（14主机、173Unit），全部 `modeled`、`verified` 为0。本批新增原ENV-II U001-B、原Joystick U024、原GPS U032及4张本款普通PNG。本次Git同步收录全部187款及批41–48新增的24款/40PNG，见[187款同步记录](GIT-SYNC-187-2026-10-27.md)。历史检查点中的Git状态保留其保存时点；当前提交与远端状态以Git日志及GitHub main为准。实际结构/API见[本批指南](ENVII-JOYSTICK-GPS-UNITS.md)，50批范围见[增量索引](LOCAL-EXPANSION.md)。
+## 最新本地增量：Atom Lite / 原 Atom Matrix / AtomS3 Lite（第53批三主机）
+
+当前本地201款（17主机、184Unit），全部 `modeled`、`verified` 为0。本批新增3款controller主机和6张普通PNG；既有pending11Unit/15PNG保留。Git187 / `296128b` 同步基线保持，未再次提交推送。实际API与边界见[本批指南](ATOMLITE-ATOMMATRIX-ATOMS3LITE-CONTROLLERS.md)。
+
+atom-lite C008：2键[button,reset]、灯1[rgb]、4接口[grove,usb,ext-5p,ext-4p]、PNG2；atom-matrix C008-B：2键[button,reset]、灯25[led0…led24（25个独立地址）]、4接口[grove,usb,ext-5p,ext-4p]、PNG2；atoms3-lite C124：2键[button,reset]、灯1[rgb]、4接口[usb,grove,ext-5p,ext-4p]、PNG2。三款无主机Display/传感器模拟；原壳、真实接口、PCB/接点/承托和按键动作保留，隐藏BOM、行程与配合推导另记。
+
+本批双仓实际专项、导出/alias/lazy loader及双build通过，记录见[公开本批进度](../artifacts/atomlite-atommatrix-atoms3lite-expansion/progress.json)。贴纸与模型同步；私表、原始链接/文件名、矢量和映射留在分发树外。未逐面浏览器/GPU、制造或实物验收；既有延期边界保留。
+
+## 前批检查点：LoRaWAN AS923 / EU868
+
+该批保存时本地198款（14主机、184Unit），全部 `modeled`、`verified` 为0。本批两款与4张普通PNG同步新增。GitHub `main`的187款已同步于 `296128b`，见[187款同步记录](GIT-SYNC-187-2026-10-27.md)；随后批49/50/51/52共11款/15PNG仍为本地增量，未再次提交推送。实际结构/API见[本批指南](LORAWAN-AS923-EU868-UNITS.md)，54批范围见[增量索引](LOCAL-EXPANSION.md)。
+
+AS923/EU868分别保留自身MIT native前后两半的全部源面与preview逐面对映；24×64×8壳和71.4含SMA包络分记。AS923自身195mm/2.3dBi天线与EU868自身195mm/2.8dBi天线独立记录，本款前后标签分别重绘，不借US915/CN470标签。实际本体/附件API和PNG：lorawan-as923 控件0[无]、XY摇杆[无]、灯0[无]、显示0[无]、本体关节[无]、附件导出[Antenna]、端口[grove,antenna]、PNG2；lorawan-eu868 控件0[无]、XY摇杆[无]、灯0[无]、显示0[无]、本体关节[无]、附件导出[Antenna]、端口[grove,antenna]、PNG2；附件关节详见冻结API与专项夹具。隐藏承托/接点/轴/行程/天线内部及配合均明记推导；RF/UART/AT/电气/固件由外部实现。
+
+本批同步印刷：Unit LoRaWAN-AS923 2张参考重绘；Unit LoRaWAN-EU868 2张参考重绘。本款清楚PCB/标签准确重绘普通PNG，真实基材/PCB与全部物理及运动在去墨后保留；不裁照片、不借错款、不猜微字/个体码、不用图遮缺件。本批0批准本体原稿；EU868严格同名8条为5包装/3错Module，既有3下载全拒用，新增下载0。私表/URL/原名/映射/矢量/原图/生成器/中间件不分发。新代码MIT，自身native保原MIT，源图文/商标各保其权利。
+
+两入口/实际配置去墨、实际附件装卸/递归关节部分动作、真实四芯线束和层级寻址、StickS3→HUB两分支、变父/peer/noecho/framebuffer/释放、6导出/双build和在线PNG已保存[本批进度](../artifacts/lorawan-as923-eu868-expansion/progress.json)。既有Unit/core/Scroll/demo/rotary-panel当前基线保持。未逐面浏览器/GPU、历史全量或实物验收；旧50PNG、私Scroll、StackChan量产fit-unresolved、Puzzle Bridge、Catch及既有延期保持，整体goal active。
+
+
+## 前批检查点：CardKB original / PoE CAM-W original / LoRaWAN US915
+
+该批保存时本地196款（14主机、182Unit），全部 `modeled`、`verified` 为0。本批三款与4张普通PNG同步新增。GitHub `main`的187款已同步于 `296128b`，见[187款同步记录](GIT-SYNC-187-2026-10-27.md)；随后批49/50/51共9款/11PNG仍为本地增量，未再次提交推送。实际结构/API见[本批指南](CARDKBORIGINAL-POECAMORIGINAL-LORAWANUS915-UNITS.md)，53批范围见[增量索引](LOCAL-EXPANSION.md)。
+
+原CardKB U035按本款MEGA328P白板/50真实帽/方开关保持和单RGB重建，88×54×5表与84×54图注冲突仍以暂定外观依据分列；原PoE CAM-W U121-B按自身64×24×18壳、OV2640光学/PCB/PoE/接口/双键和蓝绿黄灯重建，不借v1.1或造未证外RGB。US915保留自身MIT native两半全部源面及重复preview配对，分记64mm壳与71.4含SMA和自身195mm天线；不借CN470。实际API/PNG：cardkb-original 控件50[key-esc,key-1,key-2,key-3,key-4,key-5,key-6,key-7,key-8,key-9,key-0,key-backspace,key-tab,key-q,key-w,key-e,key-r,key-t,key-y,key-u,key-i,key-o,key-p,key-fn,key-shift,key-a,key-s,key-d,key-f,key-g,key-h,key-j,key-k,key-l,key-enter,key-sym,key-z,key-x,key-c,key-v,key-b,key-n,key-m,key-comma,key-period,key-space,key-up,key-left,key-right,key-down]、XY摇杆[无]、灯1[rgb]、显示0[无]、本体关节[无]、附件导出[无]、端口[grove]、PNG1；poe-cam-w 控件2[user,reset]、XY摇杆[无]、灯3[g0,link,activity]、显示0[无]、本体关节[无]、附件导出[无]、端口[grove,ethernet,download-en,download-uart]、PNG1；lorawan-us915 控件0[无]、XY摇杆[无]、灯0[无]、显示0[无]、本体关节[无]、附件导出[Antenna]、端口[grove,antenna]、PNG2。隐藏安装/接点/行程/光学与配合均明记推导；通信/图像/AI/电气/固件由外部实现。
+
+本批同步印刷：Unit CardKB (original MEGA328P U035) 1张参考重绘；Unit PoE CAM-W (original OV2640 U121-B) 1张参考重绘；Unit LoRaWAN-US915 2张参考重绘。本款清楚PCB/标签准确重绘普通PNG，真实基材/PCB与全部物理及运动在去墨后保留；不裁照片、不借错款、不猜微字/个体码、不用图遮缺件。私表未取得本批精确本体原稿；私表/URL/原名/映射/矢量/原图/生成器/中间件不分发。新代码MIT，自身native保原MIT，源图文/商标各保其权利。
+
+两入口/实际配置去墨、真实帽按放/取消与外驱灯、真实四芯线束和层级寻址、StickS3→HUB三分支、变父/peer/noecho/framebuffer/释放、7导出/双build和在线PNG已保存[本批进度](../artifacts/cardkboriginal-poecamoriginal-lorawanus915-expansion/progress.json)。既有Unit/core/Scroll/demo/rotary-panel当前基线保持。未逐面浏览器/GPU、历史全量或实物验收；旧50PNG、私Scroll、StackChan量产fit-unresolved、Puzzle Bridge、Catch及既有延期保持，整体goal active。
+
+
+## 前批检查点：M5Camera / ESP32CAM / RGB LED Strip 50cm
+
+该批保存时本地193款（14主机、179Unit），全部 `modeled`、`verified` 为0。本批新增原M5Camera U017、裸板ESP32CAM U007、RGB LED Strip 50cm A093及2张本款普通PNG。GitHub `main`的187款已同步于 `296128b`，见[187款同步记录](GIT-SYNC-187-2026-10-27.md)；随后批49/50共6款/7PNG仍为本地增量，未再次提交推送。实际结构/API见[本批指南](M5CAMERA-ESP32CAM-RGBSTRIP50-UNITS.md)，52批范围见[增量索引](LOCAL-EXPANSION.md)。
+
+三款均按自身官方资料/多视图程序重建，无本款native，不借相近型号。M5Camera含耳名义40×48×11，黑壳后标有真实基材及自身PCB/WROVER背衬，实际RESET与被动OV2640光学；ESP32CAM按细长双面裸板/光学FPC/真实USB-C/Grove与可见侧帽，旧20.5×46.5×11.5作为暂定外观参考，当前54×54×26.6与接口/引脚版本冲突另存。A093为500mm30颗5050、真实柔性包覆/背胶、黑3P/三导线和随附Grove插头转接，不拉伸A035或造4P本体接收座。实际API/PNG：m5camera 控件1[reset]、XY摇杆[无]、灯0[无]、显示0[无]、关节[无]、端口[grove,usb]、PNG1；esp32cam 控件1[key]、XY摇杆[无]、灯0[无]、显示0[无]、关节[无]、端口[grove,usb]、PNG0；rgb-led-strip-50cm 控件0[无]、XY摇杆[无]、灯30[pixel-0,pixel-1,pixel-2,pixel-3,pixel-4,pixel-5,pixel-6,pixel-7,pixel-8,pixel-9,pixel-10,pixel-11,pixel-12,pixel-13,pixel-14,pixel-15,pixel-16,pixel-17,pixel-18,pixel-19,pixel-20,pixel-21,pixel-22,pixel-23,pixel-24,pixel-25,pixel-26,pixel-27,pixel-28,pixel-29]、显示0[无]、关节[无]、端口[input,output]、PNG1。隐藏装配、厚度、接点、行程和弯曲限制明确推导；通信/图像/AI/电气/固件由外部实现。
+
+本批同步印刷：M5Camera (original U017) 1张参考重绘；ESP32CAM (original U007)无PNG，保真实无色原生压纹；Unit RGB LED Strip 0.5m / 30LED 1张参考重绘。仅从本款清楚后标/PCB字样准确代码重绘普通PNG，去墨保基材/PCB/壳/胶层和全部物理；不裁照片、不借错款、不猜微字/个体码/未见3M背印、不用图遮缺件。私表匹配未取得这三款精确本体原稿，原资料/URL/原名/映射/矢量/生成器/中间件不分发。新代码MIT，源图文和商标各保其权利。
+
+两入口/实际配置去墨、实际帽按放/取消与外驱逐灯/弯曲、真实端头/线束接合与层级地址、StickS3→HUB三分支、变父/peer/无echo、framebuffer/资源释放、7导出/双build和在线PNG已保存[本批进度](../artifacts/m5camera-esp32cam-rgbstrip50-expansion/progress.json)。未逐面浏览器/GPU、历史全量或实物验收；旧50PNG、私Scroll、StackChan量产fit-unresolved、Puzzle Bridge、Catch及既有延期保持，整体goal active。
+
+
+## 前批检查点：PaHub v2.0 / PbHub / TimerCamera
+
+该批保存时本地190款（14主机、176Unit），全部 `modeled`、`verified` 为0。本批新增PaHub v2.0 U040-B、原PbHub U041、裸板TimerCamera U082及5张本款普通PNG。GitHub `main`的187款已同步于 `296128b`，见[187款同步记录](GIT-SYNC-187-2026-10-27.md)；随后批49共3款/5PNG仍为本地增量，未再次提交推送。实际结构/API见[本批指南](PAHUBV20-PBHUB-TIMERCAMERA-UNITS.md)，51批范围见[增量索引](LOCAL-EXPANSION.md)。
+
+PaHub使用本款原生闭合后壳/开窗前框，排重复整装预览，原生8mm壳与10.8mm整机口包络分记；真实红PCB/可见芯片腿/七4P座/承托补齐，大开窗按实物保留。原PbHub按自身多视图参数化黑PCB/QFP32/晶体/七座与完整壳，当前10.8与旧12厚、MEGA/STM型号及后膜地址版本冲突保留。TimerCamera按原款双面裸板/光学FPC/USB-C/Grove/空电池座重建，只有真实双帽动作、固定蓝灯外驱和被动camera frame，不添F/X壳或电池。实际API/PNG：pahub-v20 控件0[无]、XY摇杆[无]、灯0[无]、显示0[无]、关节[无]、端口[grove,grove-0,grove-1,grove-2,grove-3,grove-4,grove-5]、PNG2；pbhub 控件0[无]、XY摇杆[无]、灯0[无]、显示0[无]、关节[无]、端口[grove,grove-0,grove-1,grove-2,grove-3,grove-4,grove-5]、PNG2；timercamera 控件2[reset,power]、XY摇杆[无]、灯1[status]、显示0[无]、关节[无]、端口[grove,usb]、PNG1。隐藏装配/行程/接点和配合推导另记，无完整BOM/制造或实物验收声明，无内部通信/采样/电气/固件。
+
+本批印刷同步：Unit PaHub v2.0 2张参考重绘；Unit PbHub 2张参考重绘；TimerCamera (bare board) 1张参考重绘。本款清楚后膜/PCB数字与板丝印代码准确重绘普通PNG，真实膜/PCB/native压纹去墨保留；不裁照片/借错款/猜微字或个体码，不以图遮缺件。TimerCamera两项私候选是包装，已拒绝且0原稿下载。私表/URL/原名/映射/矢量/原始资料/生成器/中间件留分发树外。新代码MIT；native保上游MIT/Copyright声明，官方照片和商标各保其权利。
+
+两入口/实际配置及partial帽动作去墨、两个Hub各六输出真实下游四芯/层级寻址、StickS3→HUB三分支、变父/peer/外驱无echo、framebuffer/资源释放、6导出/双build及在线PNG已保存[本批进度](../artifacts/pahubv20-pbhub-timercamera-expansion/progress.json)。未逐面浏览器/GPU、历史全量或硬件验收；旧50PNG、私Scroll、StackChan量产fit-unresolved、Puzzle Bridge、Catch及既有延期保持，整体goal active。
+
+
+## 前批检查点：ENV II / Joystick / GPS
+
+该批保存时本地187款（14主机、173Unit），全部 `modeled`、`verified` 为0。本批新增原ENV-II U001-B、原Joystick U024、原GPS U032及4张本款普通PNG。本次Git同步收录全部187款及批41–48新增的24款/40PNG，见[187款同步记录](GIT-SYNC-187-2026-10-27.md)。历史检查点中的Git状态保留其保存时点；当前提交与远端状态以Git日志及GitHub main为准。实际结构/API见[本批指南](ENVII-JOYSTICK-GPS-UNITS.md)，50批范围见[增量索引](LOCAL-EXPANSION.md)。
 
 三款按自身官方尺寸/多视图参数化，无本款CAD，不借后代。ENV-II保SHT30/BMP280、40真槽/承托，当前24×32×8与旧24.2×32.2×8.1分记；Joystick保原MEGA328P、帽/轴/杯/金属载体及实际XY倾斜/Z瞬时按放与回弹，名义24×48×32和帽体完整包络分记，J3未实装不造座；GPS保24×48×8自身维图/2孔/蓝Grove/两膜，小缺口用途未证不造灯。实际API/PNG：env-ii 控件0[无]、XY摇杆[无]、灯0[无]、显示0[无]、关节[无]、端口[grove]、PNG1；joystick 控件1[press]、XY摇杆[stick]、灯0[无]、显示0[无]、关节[无]、端口[grove]、PNG1；gps 控件0[无]、XY摇杆[无]、灯0[无]、显示0[无]、关节[无]、端口[grove]、PNG2。隐藏内部/配合、摇杆pivot/travel/limits明确推导，不称完整BOM或制造实测；读数、ADC、通信、电气和固件由外部实现。
 

@@ -1,0 +1,86 @@
+{
+  "id": "poe-cam-w",
+  "sku": "U121-B",
+  "kind": "reference-redraw",
+  "pngCount": 1,
+  "privateSourcesDistributed": false,
+  "photoCropPixels": 0,
+  "vectorSourcesDistributed": false,
+  "generatorsDistributed": false,
+  "rawOfficialSourcesDistributed": false,
+  "physicalAdhesiveFilms": 1,
+  "assets": [
+    {
+      "path": "src/units/poe-cam-w/reference-redraw-back.png",
+      "sha256": "48a793ab0b8b8095827459fb103a7e654e2680f1561579b6d40867678dec4e82",
+      "size": [
+        2200,
+        4550
+      ],
+      "mode": "RGBA",
+      "kind": "reference-redraw",
+      "sourceKind": "reference-redraw",
+      "source": {
+        "id": "poe-cam-w",
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/PoECAM-W/img-35c1d0e2-7c00-45ab-809e-96c0bc0e0e1f.webp",
+        "status": 200,
+        "bytes": 38764,
+        "sha256": "d7701f07c76fcfad5d9feecd6f23e2177d0519f8e9097c7ce07280740571ee0b",
+        "visuallyInspected": true,
+        "rawSourceDistributed": false
+      },
+      "physicalTarget": "poecamOriginalAssembly.film",
+      "sizeMm": [
+        22,
+        45.5
+      ],
+      "printedContent": [
+        "PoECAM-W",
+        "OV2640",
+        "2M Pixels",
+        "DFOV65degree",
+        "ESP32",
+        "PoE6W",
+        "WiFi",
+        "W5500",
+        "MOSI:G13",
+        "MISO:G38",
+        "SCK:G23",
+        "CS:G4",
+        "RST",
+        "RJ45",
+        "Link",
+        "Active",
+        "readablebrandlayout"
+      ],
+      "decodedVisualInspection": "2026-10-27:PNGdecoded/viewed,legible labels,no clipping or caption overlap;real hardwarecutouts clear",
+      "limitations": "Font/marks/colour/layout reconstructed;unknown certificationmicrotext/individualcodes omitted",
+      "permission": "Userauthorized accurate ownmodel redraw as ordinaryPNG;marks retain respective rights"
+    }
+  ],
+  "physicalInkOff": {
+    "filmAndFullRearSkinPCBPoESupportRetained": true,
+    "actualM5Retained": true,
+    "realHardwareCutoutsRetained": true,
+    "bothEntriesActualCompletePreset": true,
+    "bothActualControlsPartialPressCancelledReturn": true,
+    "allPhysicalAttributesIndexWorldInvariant": true
+  },
+  "configurationCases": [
+    {
+      "options": {},
+      "id": "complete",
+      "kinds": [
+        "reference-redraw"
+      ],
+      "artworkKinds": [
+        "reference-redraw"
+      ],
+      "panelKinds": [
+        "reference-redraw"
+      ],
+      "panelCount": 1,
+      "pngCount": 1
+    }
+  ]
+}

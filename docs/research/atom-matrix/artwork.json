@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "atom-matrix",
+  "sku": "C008-B",
+  "kind": "reference-redraw",
+  "source": "Readable original C008-B official rear/side photographs;no photo cropping",
+  "sourceReferences": [
+    {
+      "name": "own-01.webp",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/ATOM Matrix/img-bc9c8013-4f56-43ff-9dc5-0f6b8558790c.webp",
+      "sha256": "29cf6ad504ddecb7231088cfe4653c21894ee1744ea0943e88fdc5a542acad8f",
+      "sourceKind": "Fresh exact-SKU official MCP-linked reference"
+    },
+    {
+      "name": "own-02.webp",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/ATOM Matrix/img-00b551c1-39bd-4ff5-bf92-9488afb74efc.webp",
+      "sha256": "498517bd6a933f9571c116a0f024c961cadab362610eb40510151ba9207259c0",
+      "sourceKind": "Fresh exact-SKU official MCP-linked reference"
+    }
+  ],
+  "panels": [
+    {
+      "file": "src/devices/atom-matrix/artwork/rear.png",
+      "sha256": "e605b10db38874727fe42a40f0e97285513cbaaa1cfe5f913c7a1f10034beb48",
+      "pixels": [
+        1440,
+        1800
+      ],
+      "surface": "Rear physical label carrier clipped to its genuine M2 aperture"
+    },
+    {
+      "file": "src/devices/atom-matrix/artwork/compliance.png",
+      "sha256": "753400d885ee1b4aca284204a8203eacff6dfebfe22ffde65225749e931411a0",
+      "pixels": [
+        1680,
+        480
+      ],
+      "surface": "Offset +Y native recessed physical film carrier;IR opening remains uncovered"
+    }
+  ],
+  "omitted": [
+    "Unreadable individual FCC ID,microprint and serial codes",
+    "Private V1.1 artwork of a different product revision"
+  ],
+  "physicalCarrierAlwaysPresent": true,
+  "artworkFalse": "Only printed meshes are removed;all native surfaces,receivers,contacts,PCB,packages,supports and moving geometry are identical at rest,partial/full motion and with real connected Units.",
+  "visualCheck": {
+    "pngOpened": true,
+    "modelBrowserRender": false,
+    "note": "Author inspected both exported PNGs against exact-SKU sources;root integration owns viewer acceptance."
+  },
+  "privateSourceFilesPublic": 0,
+  "vectorFilesPublic": 0,
+  "tableFilesPublic": 0,
+  "photoCropsPublic": 0
+}

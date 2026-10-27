@@ -1,0 +1,1802 @@
+{
+  "savedAt": "2026-10-27T00:18:32.878020+00:00",
+  "stage": "modeled",
+  "scope": "Own U184-AS923/EU868 complete native physical assemblies,actual body/accessory APIs and matching ordinaryPNG;no browser or wholecatalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 184,
+    "modeled": 198,
+    "verified": 0
+  },
+  "localHead": "296128b6173562d51976073dfa50a5b0ec945030",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "lorawan-as923",
+      "status": "pass",
+      "report": "docs/research/lorawan-as923/smoke.json",
+      "physicalReceipt": "physical",
+      "meshes": 236,
+      "triangles": 39412
+    },
+    {
+      "id": "lorawan-eu868",
+      "status": "pass",
+      "report": "docs/research/lorawan-eu868/smoke.json",
+      "physicalReceipt": "physical",
+      "meshes": 238,
+      "triangles": 39828
+    }
+  ],
+  "pngCount": 4,
+  "rasters": [
+    {
+      "path": "src/units/lorawan-as923/artwork/back.png",
+      "pixels": [
+        790,
+        1800
+      ],
+      "sha256": "1bfb0ad97e59ebfcb2ed4463f12884c0a44ec1e9e5ebf9d20e4faa8540235358"
+    },
+    {
+      "path": "src/units/lorawan-as923/artwork/front.png",
+      "pixels": [
+        790,
+        1800
+      ],
+      "sha256": "f51e1f0d59812bc3099f921541ecb9464e849990c05bd57de8d52b920cd00339"
+    },
+    {
+      "path": "src/units/lorawan-eu868/artwork/back.png",
+      "pixels": [
+        790,
+        1800
+      ],
+      "sha256": "f7b2da09ec61b49dadd4f7bd79bf2864c0fff713b89b7f54e29ceb303cda99ea"
+    },
+    {
+      "path": "src/units/lorawan-eu868/artwork/front.png",
+      "pixels": [
+        790,
+        1800
+      ],
+      "sha256": "9eafda1ec3846ea53bb9019e61344096bedbd4740f05072e9fcf742f15263768"
+    }
+  ],
+  "frozenPublicAPI": {
+    "lorawan-as923": {
+      "exports": [
+        "Antenna",
+        "GroveModule",
+        "Model",
+        "configurationSchema",
+        "configurations",
+        "defaults",
+        "spec"
+      ],
+      "canonicalCableInput": "grove",
+      "bodyComponentOrder": [
+        "grove",
+        "antenna"
+      ],
+      "bodyKinds": [
+        "port",
+        "port"
+      ],
+      "controls": [],
+      "leds": [],
+      "joysticks": [],
+      "manualInputs": [],
+      "displays": [],
+      "ports": [
+        "grove",
+        "antenna"
+      ],
+      "joints": [],
+      "anchors": [],
+      "accessoryExports": [
+        "Antenna"
+      ],
+      "defaults": {
+        "antenna": true,
+        "antennaFoldDeg": 90
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "AS923 含原装胶棒天线",
+          "options": {}
+        },
+        {
+          "id": "straight-antenna",
+          "name": "AS923 天线直立展示",
+          "options": {
+            "antennaFoldDeg": 0
+          }
+        },
+        {
+          "id": "without-antenna",
+          "name": "AS923 本体及实际空SMA座",
+          "options": {
+            "antenna": false
+          }
+        }
+      ],
+      "pngCount": 2,
+      "visualCommands": {
+        "ports": {
+          "types": [
+            "attach",
+            "detach"
+          ],
+          "targets": [
+            "grove",
+            "antenna"
+          ],
+          "scope": "Mechanicalonly"
+        },
+        "unitFrame": {
+          "type": "pose",
+          "target": "unitFrame",
+          "fields": [
+            "position",
+            "rotation",
+            "quaternion",
+            "distance"
+          ]
+        },
+        "cable": {
+          "type": "cable",
+          "target": "cable",
+          "fields": [
+            "slack",
+            "bend"
+          ]
+        },
+        "accessoryFold": {
+          "type": "joint",
+          "target": "antenna/fold",
+          "fields": [
+            "angleDeg",
+            "durationMs"
+          ],
+          "example": {
+            "type": "joint",
+            "target": "antenna/fold",
+            "angleDeg": 45,
+            "durationMs": 200
+          },
+          "stateCommand": {
+            "type": "state",
+            "target": "antenna/fold"
+          }
+        }
+      },
+      "accessories": {
+        "antenna": {
+          "port": "antenna",
+          "export": "Antenna",
+          "family": "m5.u184-as923.sma",
+          "defaultAttached": true,
+          "option": "antenna",
+          "joints": [
+            "fold"
+          ],
+          "fullJointPath": "antenna/fold"
+        }
+      },
+      "accessoryAPIs": {
+        "Antenna": {
+          "export": "Antenna",
+          "metaId": "m5stack.unit.lorawan-as923.antenna",
+          "connector": "m5.u184-as923.sma",
+          "acceptedAtBodyPort": "antenna",
+          "defaultAttachedInModel": true,
+          "defaultAttachedInGroveModule": true,
+          "presenceOption": "antenna",
+          "parentFoldOption": "antennaFoldDeg",
+          "constructorDefaults": {
+            "foldDeg": 90
+          },
+          "constructorConfiguration": {
+            "foldDeg": {
+              "type": "number",
+              "min": 0,
+              "max": 90,
+              "default": 90,
+              "scope": "Externallyprescribed displaylimits,not ratedmechanics"
+            }
+          },
+          "componentOrder": [
+            "fold"
+          ],
+          "componentKinds": {
+            "fold": "joint"
+          },
+          "controls": [],
+          "leds": [],
+          "ports": [],
+          "joints": [
+            "fold"
+          ],
+          "passiveAnchors": [],
+          "paths": {
+            "standalone": "antenna/fold",
+            "module": "<upstream-port>/antenna/fold",
+            "stickS3HubFirstBranch": "grove/grove-1/antenna/fold"
+          },
+          "fold": {
+            "kind": "joint",
+            "continuous": false,
+            "rpmAllowed": false,
+            "defaultAngleDeg": 90,
+            "rangeDeg": [
+              0,
+              90
+            ],
+            "pivotMmInAccessoryPortFrame": [
+              0,
+              16.5,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "neutralEulerRad": [
+              0,
+              0,
+              1.5707963267948966
+            ],
+            "poseMeaning": "0straight+Y,90ownphotofolded+X",
+            "commands": {
+              "type": "joint",
+              "target": "antenna/fold",
+              "fields": [
+                "angleDeg",
+                "durationMs"
+              ],
+              "example": {
+                "type": "joint",
+                "target": "antenna/fold",
+                "angleDeg": 45,
+                "durationMs": 200
+              },
+              "stateCommand": {
+                "type": "state",
+                "target": "antenna/fold"
+              }
+            },
+            "movingPhysicalParts": [
+              "movingHub withreal1.05mm axle bore",
+              "movingNeck",
+              "taperedownrubberblade"
+            ],
+            "fixedPhysicalParts": [
+              "knurledcoupling",
+              "metal threadliner",
+              "retainedbackstop",
+              "hollowreceivingcentrecontact anddeepstop",
+              "supportingdielectric",
+              "neck/fixedBase",
+              "tworetainingcheeks",
+              "1mmfixedaxle/endcaps"
+            ],
+            "radialAxleClearanceMm": 0.05,
+            "cheekToMovingHubAxialClearanceMm": 0.025,
+            "sourceEvidence": "OwnAS9234visibleelbow/seam/axlecap,own11samefoldedpose",
+            "inferred": "Axis/pivot/0..90displaylimits/sections/retention/fit,nottwo measuredangles orratedstops;noRF/servo/automatic behavior"
+          },
+          "contactConstruction": {
+            "ownBodyPhoto": "own-10.webp",
+            "body": "Visible projecting metalcentrecontact supported bydielectric/rearstop withinthreadedrim",
+            "accessory": "Inferred complementaryhollow receivingcentrecontact withdielectric/deepstop",
+            "bodyPinRadiusMm": 0.32,
+            "receivingBoreRadiusMm": 0.38,
+            "inferredRadialClearanceMm": 0.06,
+            "bodyDielectricFaceY": 37.5,
+            "bodyContactTipY": 39,
+            "bodyOuterRimY": 39.4,
+            "accessorySocketLocalY": [
+              -1.5,
+              2.5
+            ],
+            "note": "Ownphotoappearanceinference differs from51emptyfemale-contact reconstruction;certifiedgender/polarity/threadfit unresolved. No51model changed."
+          },
+          "physicalSupport": "Pinrearstop/insulator andmatingreceiverretention are actualmaterial;hollowcoupling/liner/backstop supportfixedneck/yoke;realaxle/boredhub supportonlymovingarm/blade",
+          "vendorLengthMm": 195,
+          "reconstructedCentrelineMm": 195,
+          "centrelineBasis": "22mm fromcouplingnose−5.5tohinge16.5 plus173mmradiatoraxisrun;appearance dimensionalreconstruction,notmeasurement",
+          "documentaryGainDbi": 2.3,
+          "documentaryImpedanceOhm": 50,
+          "commandsNoInputEcho": true,
+          "noAutomaticMotion": true,
+          "detachCommand": {
+            "type": "detach",
+            "target": "antenna"
+          },
+          "detachLifecycle": "Port ownsdisposal unlessdetach({dispose:false});sameinstance reattachrestoresfoldstate andphysicalattrs/index/world",
+          "otherComponents": []
+        }
+      }
+    },
+    "lorawan-eu868": {
+      "exports": [
+        "Antenna",
+        "GroveModule",
+        "Model",
+        "configurationSchema",
+        "configurations",
+        "defaults",
+        "spec"
+      ],
+      "canonicalCableInput": "grove",
+      "bodyComponentOrder": [
+        "grove",
+        "antenna"
+      ],
+      "bodyKinds": [
+        "port",
+        "port"
+      ],
+      "controls": [],
+      "leds": [],
+      "joysticks": [],
+      "manualInputs": [],
+      "displays": [],
+      "ports": [
+        "grove",
+        "antenna"
+      ],
+      "joints": [],
+      "anchors": [],
+      "accessoryExports": [
+        "Antenna"
+      ],
+      "defaults": {
+        "antenna": true,
+        "antennaFoldDeg": 90
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "EU868 含原装胶棒天线",
+          "options": {}
+        },
+        {
+          "id": "straight-antenna",
+          "name": "EU868 天线直立展示",
+          "options": {
+            "antennaFoldDeg": 0
+          }
+        },
+        {
+          "id": "without-antenna",
+          "name": "EU868 本体及实际空SMA座",
+          "options": {
+            "antenna": false
+          }
+        }
+      ],
+      "pngCount": 2,
+      "visualCommands": {
+        "ports": {
+          "types": [
+            "attach",
+            "detach"
+          ],
+          "targets": [
+            "grove",
+            "antenna"
+          ],
+          "scope": "Mechanicalonly"
+        },
+        "unitFrame": {
+          "type": "pose",
+          "target": "unitFrame",
+          "fields": [
+            "position",
+            "rotation",
+            "quaternion",
+            "distance"
+          ]
+        },
+        "cable": {
+          "type": "cable",
+          "target": "cable",
+          "fields": [
+            "slack",
+            "bend"
+          ]
+        },
+        "accessoryFold": {
+          "type": "joint",
+          "target": "antenna/fold",
+          "fields": [
+            "angleDeg",
+            "durationMs"
+          ],
+          "example": {
+            "type": "joint",
+            "target": "antenna/fold",
+            "angleDeg": 45,
+            "durationMs": 200
+          },
+          "stateCommand": {
+            "type": "state",
+            "target": "antenna/fold"
+          }
+        }
+      },
+      "accessories": {
+        "antenna": {
+          "port": "antenna",
+          "export": "Antenna",
+          "family": "m5.u184-eu868.sma",
+          "defaultAttached": true,
+          "option": "antenna",
+          "joints": [
+            "fold"
+          ],
+          "fullJointPath": "antenna/fold"
+        }
+      },
+      "accessoryAPIs": {
+        "Antenna": {
+          "export": "Antenna",
+          "metaId": "m5stack.unit.lorawan-eu868.antenna",
+          "connector": "m5.u184-eu868.sma",
+          "acceptedAtBodyPort": "antenna",
+          "defaultAttachedInModel": true,
+          "defaultAttachedInGroveModule": true,
+          "presenceOption": "antenna",
+          "parentFoldOption": "antennaFoldDeg",
+          "constructorDefaults": {
+            "foldDeg": 90
+          },
+          "constructorConfiguration": {
+            "foldDeg": {
+              "type": "number",
+              "min": 0,
+              "max": 90,
+              "default": 90,
+              "scope": "Externaldisplaybound,notratedlimits"
+            }
+          },
+          "componentOrder": [
+            "fold"
+          ],
+          "componentKinds": {
+            "fold": "joint"
+          },
+          "controls": [],
+          "leds": [],
+          "ports": [],
+          "joints": [
+            "fold"
+          ],
+          "passiveAnchors": [],
+          "paths": {
+            "standalone": "antenna/fold",
+            "module": "<upstream-port>/antenna/fold",
+            "stickS3HubSecondBranch": "grove/grove-2/antenna/fold"
+          },
+          "fold": {
+            "kind": "joint",
+            "continuous": false,
+            "rpmAllowed": false,
+            "defaultAngleDeg": 90,
+            "rangeDeg": [
+              0,
+              90
+            ],
+            "pivotMmInAccessoryPortFrame": [
+              0,
+              16.5,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "neutralEulerRad": [
+              0,
+              0,
+              1.5707963267948966
+            ],
+            "poseMeaning": "0 straight+Y,90 ownphoto folded+X",
+            "commands": {
+              "type": "joint",
+              "target": "antenna/fold",
+              "fields": [
+                "angleDeg",
+                "durationMs"
+              ],
+              "example": {
+                "type": "joint",
+                "target": "antenna/fold",
+                "angleDeg": 45,
+                "durationMs": 200
+              },
+              "stateCommand": {
+                "type": "state",
+                "target": "antenna/fold"
+              }
+            },
+            "movingPhysicalParts": [
+              "movingHub real1.05mm axle bore",
+              "movingNeck",
+              "own tapered rubber blade"
+            ],
+            "fixedPhysicalParts": [
+              "knurled coupling",
+              "inner metal liner",
+              "retaining rear stop",
+              "hollow centre receiver/deepstop and supporting dielectric",
+              "neck/fixedBase",
+              "two retaining cheeks",
+              "1mm axle andcaps"
+            ],
+            "radialAxleClearanceMm": 0.05,
+            "cheekToMovingHubAxialClearanceMm": 0.025,
+            "sourceEvidence": "Own4 visible foldingelbow/seam/sideaxlecap;own11 samefolded packagingpose",
+            "inferred": "Exact pivot/axis/0..90displaylimits/section/retention/fit;no secondmeasuredangle or ratedmechanics. No servo/automatic/RF behavior."
+          },
+          "physicalSupport": "Coupling hollow receiver is retained in dielectric;deepstop backs real centre air and accepts own10 body pin with inferred0.06radial clearance;knurled shell/liner/stop support neck/fixedyoke;realbored movinghub carried by fixedaxle/cheeks;movingarm supports blade",
+          "vendorLengthMm": 195,
+          "reconstructedCentrelineMm": 195,
+          "centrelineBasis": "22mm from lowercouplingnose(-5.5) to hinge(+16.5),plus173mm blade-axis run to tip;sections/pivot/installedfit inferred,not measurement",
+          "documentaryGainDbi": 2.8,
+          "documentaryImpedanceOhm": 50,
+          "commandsNoInputEcho": true,
+          "noAutomaticMotion": true,
+          "detachCommand": {
+            "type": "detach",
+            "target": "antenna"
+          },
+          "detachLifecycle": "Port ownsdisposal unless detach({dispose:false});reattach retainedAntenna restores foldstate and exact geometry/pose",
+          "otherComponents": []
+        }
+      }
+    }
+  },
+  "fixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "lorawan-as923",
+        "body": [
+          "grove",
+          "antenna"
+        ],
+        "ports": [
+          "grove",
+          "antenna"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+          "physicalMeshes": 236,
+          "physicalBodyMeshes": 236,
+          "triangles": 39412,
+          "nativeTriangles": 6592,
+          "nativeRawTriangles": 13184,
+          "duplicatePreviewFaces": 6592,
+          "allNativeAttributesIndexSourceFaceIdRetained": true,
+          "allSourceAttributeWordsRetained": true,
+          "own10ProjectingCentreContact": true,
+          "accessoryReceivingBoreInferred": true,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nativeShellMm": [
+            24,
+            64,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            71.39999980931361,
+            8.00000000000061
+          ],
+          "documentBodyMm": [
+            24,
+            71.4,
+            8
+          ],
+          "nativeBoreWallRays": 16,
+          "actualNativeTubeToPcbReliefMm": [
+            0.5453857426036848,
+            0.5453834537852345
+          ],
+          "realNativeRecessFilmBackingRays": 6,
+          "physicalFilms": 2,
+          "actualSmaMetalWindows": 2,
+          "groveWallRays": 4,
+          "actualGroveContacts": 4,
+          "actualPlatedBores": 4,
+          "moduleRetainedTerminals": 32,
+          "realRecessedScrews": 3,
+          "accessoryPresent": true,
+          "accessoryMeshes": 48,
+          "accessoryTriangles": 5588,
+          "ownLedButtonJointApiCount": 0,
+          "antennaVendorLengthMm": 195,
+          "antennaDocumentaryGainDbi": 2.3,
+          "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+        },
+        "transformedStructure": {
+          "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+          "physicalMeshes": 236,
+          "physicalBodyMeshes": 236,
+          "triangles": 39412,
+          "nativeTriangles": 6592,
+          "nativeRawTriangles": 13184,
+          "duplicatePreviewFaces": 6592,
+          "allNativeAttributesIndexSourceFaceIdRetained": true,
+          "allSourceAttributeWordsRetained": true,
+          "own10ProjectingCentreContact": true,
+          "accessoryReceivingBoreInferred": true,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nativeShellMm": [
+            24,
+            64,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24.000000000000014,
+            71.39999980931361,
+            8.000000000000611
+          ],
+          "documentBodyMm": [
+            24,
+            71.4,
+            8
+          ],
+          "nativeBoreWallRays": 16,
+          "actualNativeTubeToPcbReliefMm": [
+            0.5453857426036848,
+            0.5453834537852345
+          ],
+          "realNativeRecessFilmBackingRays": 6,
+          "physicalFilms": 2,
+          "actualSmaMetalWindows": 2,
+          "groveWallRays": 4,
+          "actualGroveContacts": 4,
+          "actualPlatedBores": 4,
+          "moduleRetainedTerminals": 32,
+          "realRecessedScrews": 3,
+          "accessoryPresent": true,
+          "accessoryMeshes": 48,
+          "accessoryTriangles": 5588,
+          "ownLedButtonJointApiCount": 0,
+          "antennaVendorLengthMm": 195,
+          "antennaDocumentaryGainDbi": 2.3,
+          "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+        }
+      },
+      {
+        "id": "lorawan-eu868",
+        "body": [
+          "grove",
+          "antenna"
+        ],
+        "ports": [
+          "grove",
+          "antenna"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+          "physicalMeshes": 238,
+          "physicalBodyMeshes": 238,
+          "triangles": 39828,
+          "nativeTriangles": 6592,
+          "nativeRawTriangles": 13184,
+          "duplicatePreviewFaces": 6592,
+          "allNativeAttributesIndexSourceFaceIdRetained": true,
+          "originalStlAttributeWordRetained": true,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nativeShellMm": [
+            24,
+            64,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            71.39999980931361,
+            8.00000000000061
+          ],
+          "documentBodyMm": [
+            24,
+            71.4,
+            8
+          ],
+          "nativeBoreWallRays": 16,
+          "actualNativeTubeToPcbReliefMm": [
+            0.5453857426036848,
+            0.5453834537852345
+          ],
+          "realNativeRecessFilmBackingRays": 6,
+          "physicalFilms": 2,
+          "actualSmaMetalWindows": 2,
+          "groveWallRays": 4,
+          "actualGroveContacts": 4,
+          "actualPlatedBores": 4,
+          "moduleRetainedTerminals": 32,
+          "realRecessedScrews": 3,
+          "accessoryPresent": true,
+          "accessoryMeshes": 48,
+          "accessoryTriangles": 5588,
+          "ownLedButtonJointApiCount": 0,
+          "antennaVendorLengthMm": 195,
+          "antennaDocumentaryGainDbi": 2.8,
+          "smaBodyOwn10ProtrudingPin": true,
+          "complementaryAccessoryHollowReceiver": true,
+          "visualPinRadialClearanceMm": 0.06,
+          "connectorPolarityAndManufacturingFitUnresolved": true,
+          "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+        },
+        "transformedStructure": {
+          "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+          "physicalMeshes": 238,
+          "physicalBodyMeshes": 238,
+          "triangles": 39828,
+          "nativeTriangles": 6592,
+          "nativeRawTriangles": 13184,
+          "duplicatePreviewFaces": 6592,
+          "allNativeAttributesIndexSourceFaceIdRetained": true,
+          "originalStlAttributeWordRetained": true,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nativeShellMm": [
+            24,
+            64,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24.000000000000014,
+            71.39999980931361,
+            8.000000000000608
+          ],
+          "documentBodyMm": [
+            24,
+            71.4,
+            8
+          ],
+          "nativeBoreWallRays": 16,
+          "actualNativeTubeToPcbReliefMm": [
+            0.5453857426037132,
+            0.545383453785206
+          ],
+          "realNativeRecessFilmBackingRays": 6,
+          "physicalFilms": 2,
+          "actualSmaMetalWindows": 2,
+          "groveWallRays": 4,
+          "actualGroveContacts": 4,
+          "actualPlatedBores": 4,
+          "moduleRetainedTerminals": 32,
+          "realRecessedScrews": 3,
+          "accessoryPresent": true,
+          "accessoryMeshes": 48,
+          "accessoryTriangles": 5588,
+          "ownLedButtonJointApiCount": 0,
+          "antennaVendorLengthMm": 195,
+          "antennaDocumentaryGainDbi": 2.8,
+          "smaBodyOwn10ProtrudingPin": true,
+          "complementaryAccessoryHollowReceiver": true,
+          "visualPinRadialClearanceMm": 0.06,
+          "connectorPolarityAndManufacturingFitUnresolved": true,
+          "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "lorawan-as923",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "antenna/fold"
+        ],
+        "physicalStructure": {
+          "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+          "physicalMeshes": 236,
+          "physicalBodyMeshes": 236,
+          "triangles": 39412,
+          "nativeTriangles": 6592,
+          "nativeRawTriangles": 13184,
+          "duplicatePreviewFaces": 6592,
+          "allNativeAttributesIndexSourceFaceIdRetained": true,
+          "allSourceAttributeWordsRetained": true,
+          "own10ProjectingCentreContact": true,
+          "accessoryReceivingBoreInferred": true,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nativeShellMm": [
+            24,
+            64,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            71.39999980931363,
+            8.00000000000061
+          ],
+          "documentBodyMm": [
+            24,
+            71.4,
+            8
+          ],
+          "nativeBoreWallRays": 16,
+          "actualNativeTubeToPcbReliefMm": [
+            0.5453857426036848,
+            0.5453834537852345
+          ],
+          "realNativeRecessFilmBackingRays": 6,
+          "physicalFilms": 2,
+          "actualSmaMetalWindows": 2,
+          "groveWallRays": 4,
+          "actualGroveContacts": 4,
+          "actualPlatedBores": 4,
+          "moduleRetainedTerminals": 32,
+          "realRecessedScrews": 3,
+          "accessoryPresent": true,
+          "accessoryMeshes": 48,
+          "accessoryTriangles": 5588,
+          "ownLedButtonJointApiCount": 0,
+          "antennaVendorLengthMm": 195,
+          "antennaDocumentaryGainDbi": 2.3,
+          "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+        },
+        "accessoryMounting": [
+          {
+            "port": "antenna",
+            "connector": "m5.u184-as923.sma",
+            "accessory": "Antenna",
+            "ownPorts": [],
+            "ownJoints": [
+              "fold"
+            ],
+            "detachReattach": "pass"
+          }
+        ]
+      },
+      {
+        "id": "lorawan-eu868",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "antenna/fold"
+        ],
+        "physicalStructure": {
+          "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+          "physicalMeshes": 238,
+          "physicalBodyMeshes": 238,
+          "triangles": 39828,
+          "nativeTriangles": 6592,
+          "nativeRawTriangles": 13184,
+          "duplicatePreviewFaces": 6592,
+          "allNativeAttributesIndexSourceFaceIdRetained": true,
+          "originalStlAttributeWordRetained": true,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nativeShellMm": [
+            24,
+            64,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            71.39999980931363,
+            8.00000000000061
+          ],
+          "documentBodyMm": [
+            24,
+            71.4,
+            8
+          ],
+          "nativeBoreWallRays": 16,
+          "actualNativeTubeToPcbReliefMm": [
+            0.5453857426036848,
+            0.5453834537852345
+          ],
+          "realNativeRecessFilmBackingRays": 6,
+          "physicalFilms": 2,
+          "actualSmaMetalWindows": 2,
+          "groveWallRays": 4,
+          "actualGroveContacts": 4,
+          "actualPlatedBores": 4,
+          "moduleRetainedTerminals": 32,
+          "realRecessedScrews": 3,
+          "accessoryPresent": true,
+          "accessoryMeshes": 48,
+          "accessoryTriangles": 5588,
+          "ownLedButtonJointApiCount": 0,
+          "antennaVendorLengthMm": 195,
+          "antennaDocumentaryGainDbi": 2.8,
+          "smaBodyOwn10ProtrudingPin": true,
+          "complementaryAccessoryHollowReceiver": true,
+          "visualPinRadialClearanceMm": 0.06,
+          "connectorPolarityAndManufacturingFitUnresolved": true,
+          "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+        },
+        "accessoryMounting": [
+          {
+            "port": "antenna",
+            "connector": "m5.u184-eu868.sma",
+            "accessory": "Antenna",
+            "ownPorts": [],
+            "ownJoints": [
+              "fold"
+            ],
+            "detachReattach": "pass"
+          }
+        ]
+      }
+    ],
+    "configurations": [
+      {
+        "id": "lorawan-as923",
+        "optionCases": 3,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "lorawan-eu868",
+        "optionCases": 3,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      }
+    ],
+    "behaviors": [
+      {
+        "id": "lorawan-as923",
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0,
+        "accessoryJoint": "antenna/fold",
+        "actualPartialFold": true,
+        "inferredDisplayRangeDeg": [
+          0,
+          90
+        ],
+        "onlyRealHubArmBladeMove": true,
+        "fixedCouplingSmaNativePcbFilmPortsAndPeersRetained": true,
+        "externalJointNoEcho": true,
+        "noContinuousRpmOrAutomaticRFBehavior": true,
+        "allPhysicalAttributesIndexWorldRestored": true,
+        "realSmaAccessoryDetachRestore": true,
+        "initialAccessory": true,
+        "createdProbeAccessoryDisposed": false
+      },
+      {
+        "id": "lorawan-eu868",
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0,
+        "accessoryJoint": "antenna/fold",
+        "actualPartialFold": true,
+        "inferredDisplayRangeDeg": [
+          0,
+          90
+        ],
+        "onlyRealHubArmBladeMove": true,
+        "fixedCouplingSmaNativePcbFilmPortsAndPeersRetained": true,
+        "externalJointNoEcho": true,
+        "noContinuousRpmOrAutomaticRFBehavior": true,
+        "allPhysicalAttributesIndexWorldRestored": true,
+        "realSmaAccessoryDetachRestore": true,
+        "initialAccessory": true,
+        "createdProbeAccessoryDisposed": false
+      }
+    ],
+    "accessories": [
+      {
+        "id": "lorawan-as923",
+        "mounting": [
+          {
+            "port": "antenna",
+            "connector": "m5.u184-as923.sma",
+            "accessory": "Antenna",
+            "ownPorts": [],
+            "ownJoints": [
+              "fold"
+            ],
+            "detachReattach": "pass"
+          }
+        ]
+      },
+      {
+        "id": "lorawan-eu868",
+        "mounting": [
+          {
+            "port": "antenna",
+            "connector": "m5.u184-eu868.sma",
+            "accessory": "Antenna",
+            "ownPorts": [],
+            "ownJoints": [
+              "fold"
+            ],
+            "detachReattach": "pass"
+          }
+        ]
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "lorawan-as923",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "lorawan-eu868",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      }
+    ],
+    "disposedResources": 1402,
+    "cases": [
+      "two-real-fourcore-Grove-branches",
+      "AS923-EU868-own-native-halves-and-retained-interiors",
+      "own-SMA-Grove-and-detachable-source-supported-antennas",
+      "actual-body-and-accessory-APIs",
+      "recursive-attached-joint-partial-motion-ink-invariance",
+      "own-legible-print-only-no-unsupported-glyphs",
+      "both-entries-actual-presets-and-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-peer-isolation",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own AS923/EU868 native physical assemblies,actual frozen body/accessory APIs and corresponding readable ordinary print;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/RF-UART-AT/electrical/firmware/whole-history acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "lorawan-as923",
+        "body": [
+          "grove",
+          "antenna"
+        ],
+        "ports": [
+          "grove",
+          "antenna"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+          "physicalMeshes": 236,
+          "physicalBodyMeshes": 236,
+          "triangles": 39412,
+          "nativeTriangles": 6592,
+          "nativeRawTriangles": 13184,
+          "duplicatePreviewFaces": 6592,
+          "allNativeAttributesIndexSourceFaceIdRetained": true,
+          "allSourceAttributeWordsRetained": true,
+          "own10ProjectingCentreContact": true,
+          "accessoryReceivingBoreInferred": true,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nativeShellMm": [
+            24,
+            64,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            71.39999980931361,
+            8.00000000000061
+          ],
+          "documentBodyMm": [
+            24,
+            71.4,
+            8
+          ],
+          "nativeBoreWallRays": 16,
+          "actualNativeTubeToPcbReliefMm": [
+            0.5453857426036848,
+            0.5453834537852345
+          ],
+          "realNativeRecessFilmBackingRays": 6,
+          "physicalFilms": 2,
+          "actualSmaMetalWindows": 2,
+          "groveWallRays": 4,
+          "actualGroveContacts": 4,
+          "actualPlatedBores": 4,
+          "moduleRetainedTerminals": 32,
+          "realRecessedScrews": 3,
+          "accessoryPresent": true,
+          "accessoryMeshes": 48,
+          "accessoryTriangles": 5588,
+          "ownLedButtonJointApiCount": 0,
+          "antennaVendorLengthMm": 195,
+          "antennaDocumentaryGainDbi": 2.3,
+          "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+        },
+        "transformedStructure": {
+          "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+          "physicalMeshes": 236,
+          "physicalBodyMeshes": 236,
+          "triangles": 39412,
+          "nativeTriangles": 6592,
+          "nativeRawTriangles": 13184,
+          "duplicatePreviewFaces": 6592,
+          "allNativeAttributesIndexSourceFaceIdRetained": true,
+          "allSourceAttributeWordsRetained": true,
+          "own10ProjectingCentreContact": true,
+          "accessoryReceivingBoreInferred": true,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nativeShellMm": [
+            24,
+            64,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24.000000000000014,
+            71.39999980931361,
+            8.000000000000611
+          ],
+          "documentBodyMm": [
+            24,
+            71.4,
+            8
+          ],
+          "nativeBoreWallRays": 16,
+          "actualNativeTubeToPcbReliefMm": [
+            0.5453857426036848,
+            0.5453834537852345
+          ],
+          "realNativeRecessFilmBackingRays": 6,
+          "physicalFilms": 2,
+          "actualSmaMetalWindows": 2,
+          "groveWallRays": 4,
+          "actualGroveContacts": 4,
+          "actualPlatedBores": 4,
+          "moduleRetainedTerminals": 32,
+          "realRecessedScrews": 3,
+          "accessoryPresent": true,
+          "accessoryMeshes": 48,
+          "accessoryTriangles": 5588,
+          "ownLedButtonJointApiCount": 0,
+          "antennaVendorLengthMm": 195,
+          "antennaDocumentaryGainDbi": 2.3,
+          "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+        }
+      },
+      {
+        "id": "lorawan-eu868",
+        "body": [
+          "grove",
+          "antenna"
+        ],
+        "ports": [
+          "grove",
+          "antenna"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+          "physicalMeshes": 238,
+          "physicalBodyMeshes": 238,
+          "triangles": 39828,
+          "nativeTriangles": 6592,
+          "nativeRawTriangles": 13184,
+          "duplicatePreviewFaces": 6592,
+          "allNativeAttributesIndexSourceFaceIdRetained": true,
+          "originalStlAttributeWordRetained": true,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nativeShellMm": [
+            24,
+            64,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            71.39999980931361,
+            8.00000000000061
+          ],
+          "documentBodyMm": [
+            24,
+            71.4,
+            8
+          ],
+          "nativeBoreWallRays": 16,
+          "actualNativeTubeToPcbReliefMm": [
+            0.5453857426036848,
+            0.5453834537852345
+          ],
+          "realNativeRecessFilmBackingRays": 6,
+          "physicalFilms": 2,
+          "actualSmaMetalWindows": 2,
+          "groveWallRays": 4,
+          "actualGroveContacts": 4,
+          "actualPlatedBores": 4,
+          "moduleRetainedTerminals": 32,
+          "realRecessedScrews": 3,
+          "accessoryPresent": true,
+          "accessoryMeshes": 48,
+          "accessoryTriangles": 5588,
+          "ownLedButtonJointApiCount": 0,
+          "antennaVendorLengthMm": 195,
+          "antennaDocumentaryGainDbi": 2.8,
+          "smaBodyOwn10ProtrudingPin": true,
+          "complementaryAccessoryHollowReceiver": true,
+          "visualPinRadialClearanceMm": 0.06,
+          "connectorPolarityAndManufacturingFitUnresolved": true,
+          "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+        },
+        "transformedStructure": {
+          "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+          "physicalMeshes": 238,
+          "physicalBodyMeshes": 238,
+          "triangles": 39828,
+          "nativeTriangles": 6592,
+          "nativeRawTriangles": 13184,
+          "duplicatePreviewFaces": 6592,
+          "allNativeAttributesIndexSourceFaceIdRetained": true,
+          "originalStlAttributeWordRetained": true,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nativeShellMm": [
+            24,
+            64,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24.000000000000014,
+            71.39999980931361,
+            8.000000000000608
+          ],
+          "documentBodyMm": [
+            24,
+            71.4,
+            8
+          ],
+          "nativeBoreWallRays": 16,
+          "actualNativeTubeToPcbReliefMm": [
+            0.5453857426037132,
+            0.545383453785206
+          ],
+          "realNativeRecessFilmBackingRays": 6,
+          "physicalFilms": 2,
+          "actualSmaMetalWindows": 2,
+          "groveWallRays": 4,
+          "actualGroveContacts": 4,
+          "actualPlatedBores": 4,
+          "moduleRetainedTerminals": 32,
+          "realRecessedScrews": 3,
+          "accessoryPresent": true,
+          "accessoryMeshes": 48,
+          "accessoryTriangles": 5588,
+          "ownLedButtonJointApiCount": 0,
+          "antennaVendorLengthMm": 195,
+          "antennaDocumentaryGainDbi": 2.8,
+          "smaBodyOwn10ProtrudingPin": true,
+          "complementaryAccessoryHollowReceiver": true,
+          "visualPinRadialClearanceMm": 0.06,
+          "connectorPolarityAndManufacturingFitUnresolved": true,
+          "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "lorawan-as923",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "antenna/fold"
+        ],
+        "physicalStructure": {
+          "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+          "physicalMeshes": 236,
+          "physicalBodyMeshes": 236,
+          "triangles": 39412,
+          "nativeTriangles": 6592,
+          "nativeRawTriangles": 13184,
+          "duplicatePreviewFaces": 6592,
+          "allNativeAttributesIndexSourceFaceIdRetained": true,
+          "allSourceAttributeWordsRetained": true,
+          "own10ProjectingCentreContact": true,
+          "accessoryReceivingBoreInferred": true,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nativeShellMm": [
+            24,
+            64,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            71.39999980931363,
+            8.00000000000061
+          ],
+          "documentBodyMm": [
+            24,
+            71.4,
+            8
+          ],
+          "nativeBoreWallRays": 16,
+          "actualNativeTubeToPcbReliefMm": [
+            0.5453857426036848,
+            0.5453834537852345
+          ],
+          "realNativeRecessFilmBackingRays": 6,
+          "physicalFilms": 2,
+          "actualSmaMetalWindows": 2,
+          "groveWallRays": 4,
+          "actualGroveContacts": 4,
+          "actualPlatedBores": 4,
+          "moduleRetainedTerminals": 32,
+          "realRecessedScrews": 3,
+          "accessoryPresent": true,
+          "accessoryMeshes": 48,
+          "accessoryTriangles": 5588,
+          "ownLedButtonJointApiCount": 0,
+          "antennaVendorLengthMm": 195,
+          "antennaDocumentaryGainDbi": 2.3,
+          "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+        },
+        "accessoryMounting": [
+          {
+            "port": "antenna",
+            "connector": "m5.u184-as923.sma",
+            "accessory": "Antenna",
+            "ownPorts": [],
+            "ownJoints": [
+              "fold"
+            ],
+            "detachReattach": "pass"
+          }
+        ]
+      },
+      {
+        "id": "lorawan-eu868",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "antenna/fold"
+        ],
+        "physicalStructure": {
+          "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+          "physicalMeshes": 238,
+          "physicalBodyMeshes": 238,
+          "triangles": 39828,
+          "nativeTriangles": 6592,
+          "nativeRawTriangles": 13184,
+          "duplicatePreviewFaces": 6592,
+          "allNativeAttributesIndexSourceFaceIdRetained": true,
+          "originalStlAttributeWordRetained": true,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nativeShellMm": [
+            24,
+            64,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            71.39999980931363,
+            8.00000000000061
+          ],
+          "documentBodyMm": [
+            24,
+            71.4,
+            8
+          ],
+          "nativeBoreWallRays": 16,
+          "actualNativeTubeToPcbReliefMm": [
+            0.5453857426036848,
+            0.5453834537852345
+          ],
+          "realNativeRecessFilmBackingRays": 6,
+          "physicalFilms": 2,
+          "actualSmaMetalWindows": 2,
+          "groveWallRays": 4,
+          "actualGroveContacts": 4,
+          "actualPlatedBores": 4,
+          "moduleRetainedTerminals": 32,
+          "realRecessedScrews": 3,
+          "accessoryPresent": true,
+          "accessoryMeshes": 48,
+          "accessoryTriangles": 5588,
+          "ownLedButtonJointApiCount": 0,
+          "antennaVendorLengthMm": 195,
+          "antennaDocumentaryGainDbi": 2.8,
+          "smaBodyOwn10ProtrudingPin": true,
+          "complementaryAccessoryHollowReceiver": true,
+          "visualPinRadialClearanceMm": 0.06,
+          "connectorPolarityAndManufacturingFitUnresolved": true,
+          "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+        },
+        "accessoryMounting": [
+          {
+            "port": "antenna",
+            "connector": "m5.u184-eu868.sma",
+            "accessory": "Antenna",
+            "ownPorts": [],
+            "ownJoints": [
+              "fold"
+            ],
+            "detachReattach": "pass"
+          }
+        ]
+      }
+    ],
+    "configurations": [
+      {
+        "id": "lorawan-as923",
+        "optionCases": 3,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "lorawan-eu868",
+        "optionCases": 3,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      }
+    ],
+    "behaviors": [
+      {
+        "id": "lorawan-as923",
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0,
+        "accessoryJoint": "antenna/fold",
+        "actualPartialFold": true,
+        "inferredDisplayRangeDeg": [
+          0,
+          90
+        ],
+        "onlyRealHubArmBladeMove": true,
+        "fixedCouplingSmaNativePcbFilmPortsAndPeersRetained": true,
+        "externalJointNoEcho": true,
+        "noContinuousRpmOrAutomaticRFBehavior": true,
+        "allPhysicalAttributesIndexWorldRestored": true,
+        "realSmaAccessoryDetachRestore": true,
+        "initialAccessory": true,
+        "createdProbeAccessoryDisposed": false
+      },
+      {
+        "id": "lorawan-eu868",
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0,
+        "accessoryJoint": "antenna/fold",
+        "actualPartialFold": true,
+        "inferredDisplayRangeDeg": [
+          0,
+          90
+        ],
+        "onlyRealHubArmBladeMove": true,
+        "fixedCouplingSmaNativePcbFilmPortsAndPeersRetained": true,
+        "externalJointNoEcho": true,
+        "noContinuousRpmOrAutomaticRFBehavior": true,
+        "allPhysicalAttributesIndexWorldRestored": true,
+        "realSmaAccessoryDetachRestore": true,
+        "initialAccessory": true,
+        "createdProbeAccessoryDisposed": false
+      }
+    ],
+    "accessories": [
+      {
+        "id": "lorawan-as923",
+        "mounting": [
+          {
+            "port": "antenna",
+            "connector": "m5.u184-as923.sma",
+            "accessory": "Antenna",
+            "ownPorts": [],
+            "ownJoints": [
+              "fold"
+            ],
+            "detachReattach": "pass"
+          }
+        ]
+      },
+      {
+        "id": "lorawan-eu868",
+        "mounting": [
+          {
+            "port": "antenna",
+            "connector": "m5.u184-eu868.sma",
+            "accessory": "Antenna",
+            "ownPorts": [],
+            "ownJoints": [
+              "fold"
+            ],
+            "detachReattach": "pass"
+          }
+        ]
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "lorawan-as923",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "lorawan-eu868",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      }
+    ],
+    "disposedResources": 1402,
+    "cases": [
+      "two-real-fourcore-Grove-branches",
+      "AS923-EU868-own-native-halves-and-retained-interiors",
+      "own-SMA-Grove-and-detachable-source-supported-antennas",
+      "actual-body-and-accessory-APIs",
+      "recursive-attached-joint-partial-motion-ink-invariance",
+      "own-legible-print-only-no-unsupported-glyphs",
+      "both-entries-actual-presets-and-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-peer-isolation",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own AS923/EU868 native physical assemblies,actual frozen body/accessory APIs and corresponding readable ordinary print;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/RF-UART-AT/electrical/firmware/whole-history acceptance"
+  },
+  "sharedAmendments": {},
+  "sharedAmendmentEvidence": {},
+  "checks": {
+    "localProductSmoke": "all current batch products pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "lorawan-as923",
+        "status": "frozen",
+        "checkedFiles": 13
+      },
+      {
+        "id": "lorawan-eu868",
+        "status": "frozen",
+        "checkedFiles": 13
+      }
+    ],
+    "realTwoBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "All physical attributes/index/world matrices preserved across actual entries/configurations",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "8ea1ea0c42861e2aa17b0e804c05d01cf44e25fcf0365214e2efe8345e4c154e",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "df80d4939abe395b51c687577b836e0e030fb084904037a5816b827e0acef123",
+      "logDistributed": false
+    },
+    "exportCount": 6,
+    "catalogConfigurations": {
+      "status": "pass",
+      "products": [
+        {
+          "id": "lorawan-as923",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "AS923 含原装胶棒天线",
+              "options": {}
+            },
+            {
+              "id": "straight-antenna",
+              "name": "AS923 天线直立展示",
+              "options": {
+                "antennaFoldDeg": 0
+              }
+            },
+            {
+              "id": "without-antenna",
+              "name": "AS923 本体及实际空SMA座",
+              "options": {
+                "antenna": false
+              }
+            }
+          ],
+          "defaults": {
+            "antenna": true,
+            "antennaFoldDeg": 90
+          }
+        },
+        {
+          "id": "lorawan-eu868",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "EU868 含原装胶棒天线",
+              "options": {}
+            },
+            {
+              "id": "straight-antenna",
+              "name": "EU868 天线直立展示",
+              "options": {
+                "antennaFoldDeg": 0
+              }
+            },
+            {
+              "id": "without-antenna",
+              "name": "EU868 本体及实际空SMA座",
+              "options": {
+                "antenna": false
+              }
+            }
+          ],
+          "defaults": {
+            "antenna": true,
+            "antennaFoldDeg": 90
+          }
+        }
+      ],
+      "scope": "Batch 52: current frozen named presets, constructor defaults and existing demo contract"
+    },
+    "livePreview": "198-product catalog, 2 own runtime chunks and all corresponding source PNG bytes verified in live dist (ordinary or inlined assets)",
+    "newSourcePrivacy": "New JS/JSON/Markdown/PNG and all current added catalog/manifest records checked; private table/URLs/vectors/original names/mappings/raw material/intermediates excluded",
+    "catalogAndManifestPrivacyRecordsChecked": 4,
+    "narrowSync": "New products/catalog entries/exports/guide/plan only;all prior Unit/core/Scroll/demo/rotary-panel current baseline bytes retained",
+    "existingPublicUnitFilesUnchanged": 1509,
+    "existingPrivateUnitFilesUnchanged": 1470,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "publicSharedProtectedFilesUnchanged": 2,
+    "privateSharedProtectedFilesUnchanged": 2,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [],
+  "previewAssets": [
+    {
+      "id": "lorawan-as923",
+      "file": "assets/lorawan-as923-ukyLGBio.js",
+      "sha256": "c6bceba0833f02f27f719c413f2f8afc35d95229e0c401c21875480699c0ec84"
+    },
+    {
+      "id": "lorawan-eu868",
+      "file": "assets/lorawan-eu868-Cgj-nPPU.js",
+      "sha256": "797263a463e02fee7f0058a4b758684ea2c6e0dda699fe425e8d7373c1e86309"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/lorawan-as923/Antenna.js",
+      "sha256": "a64d7f1d805f4ce035154bd8529776ff1722f1f1236cf99078db85af42330365"
+    },
+    {
+      "path": "src/units/lorawan-as923/artwork/back.png",
+      "sha256": "1bfb0ad97e59ebfcb2ed4463f12884c0a44ec1e9e5ebf9d20e4faa8540235358"
+    },
+    {
+      "path": "src/units/lorawan-as923/artwork/front.png",
+      "sha256": "f51e1f0d59812bc3099f921541ecb9464e849990c05bd57de8d52b920cd00339"
+    },
+    {
+      "path": "src/units/lorawan-as923/assembly.js",
+      "sha256": "8fd24539cf033cae5a8d193be5f77c18af7d2f9532a09b7bb32d7ff1cb54b6e9"
+    },
+    {
+      "path": "src/units/lorawan-as923/dimensions.js",
+      "sha256": "4ae74dbba7a97cecc6a55a6f1ddc42b25477d24c9026bf4ebe3ff9f8269938e2"
+    },
+    {
+      "path": "src/units/lorawan-as923/geometry.js",
+      "sha256": "add0fee1342808bb68b17c65ad08fb40280a60c5b93b6ae5074a5588c5825161"
+    },
+    {
+      "path": "src/units/lorawan-as923/index.js",
+      "sha256": "08fde9acfbb9b72f59ff37b3296261f6615405155c7b6a35b8e729b0f1d1de88"
+    },
+    {
+      "path": "src/units/lorawan-as923/native-data.js",
+      "sha256": "475ff3a7bddbe30dc22fc0a4dc3297712d22bb2116f74500f3da6dfc6210549a"
+    },
+    {
+      "path": "src/units/lorawan-as923/stickers.js",
+      "sha256": "b8994f9d1d5dc0a9981b1bf42c19973d834a7466214a1a682f0d83eddba42cef"
+    },
+    {
+      "path": "docs/research/lorawan-as923/artwork.json",
+      "sha256": "35b3d5af451b1cdba6f0f2a93c3722cb518d5e7999ccec5e08982f0d4e7d3bfc"
+    },
+    {
+      "path": "docs/research/lorawan-as923/modeling.md",
+      "sha256": "1797aef8bccf50bf40c2079e42864c34c09bd4c3171cbc293c89cdcb5b8813ff"
+    },
+    {
+      "path": "docs/research/lorawan-as923/smoke.json",
+      "sha256": "51104fdede7bdb2a960dad2dcb508e1df9b9d05a87873e0fe29ca5ce8747093d"
+    },
+    {
+      "path": "docs/research/lorawan-as923/sources.json",
+      "sha256": "44b166d2b92bcbec392a11feff6d784b3bb6e7e04b6c889d8cf92427c0cd20d1"
+    },
+    {
+      "path": "src/units/lorawan-eu868/Antenna.js",
+      "sha256": "3e13c53ad7ba95107308408d806afd575df4b330c445dabfaf10b6ea1118b940"
+    },
+    {
+      "path": "src/units/lorawan-eu868/artwork/back.png",
+      "sha256": "f7b2da09ec61b49dadd4f7bd79bf2864c0fff713b89b7f54e29ceb303cda99ea"
+    },
+    {
+      "path": "src/units/lorawan-eu868/artwork/front.png",
+      "sha256": "9eafda1ec3846ea53bb9019e61344096bedbd4740f05072e9fcf742f15263768"
+    },
+    {
+      "path": "src/units/lorawan-eu868/assembly.js",
+      "sha256": "324b2e931145c4127952781749ce67d673117957c9f378ff4ebb8e74ecb1fbb6"
+    },
+    {
+      "path": "src/units/lorawan-eu868/dimensions.js",
+      "sha256": "6a4e853c95dd49754862576d53b947783c0827b52d1dd7cb386b6b4081dbc57d"
+    },
+    {
+      "path": "src/units/lorawan-eu868/geometry.js",
+      "sha256": "fce46994163b28be2bb1b53cce737458bdd84d89d6713ce1f433e627444ee440"
+    },
+    {
+      "path": "src/units/lorawan-eu868/index.js",
+      "sha256": "be46a7b21eb1f6ce3e67e208edf6afa042b0cc2d1a80b2090d9b456ca92abcda"
+    },
+    {
+      "path": "src/units/lorawan-eu868/native-data.js",
+      "sha256": "317533ad2879dd169699f7dc9263376f4710ae579029c0dd160d0e7feb5c66f3"
+    },
+    {
+      "path": "src/units/lorawan-eu868/stickers.js",
+      "sha256": "980073a6d7ebb1c21324a724b0d4f7333ab0e5b34a9614e210b29f67a96c090a"
+    },
+    {
+      "path": "docs/research/lorawan-eu868/artwork.json",
+      "sha256": "5ba42ee3e400c55f5b9c9b97d08109634483212eb6876d703ee0d86aa3ce3ab4"
+    },
+    {
+      "path": "docs/research/lorawan-eu868/modeling.md",
+      "sha256": "aba78dfa4c7fda522f86619e767fc157b83ca2521fb476b5dac322630ee97727"
+    },
+    {
+      "path": "docs/research/lorawan-eu868/smoke.json",
+      "sha256": "32911ed8a183122aef4bb9162655914cb008f8aafcb56a0fa155e3c207db37df"
+    },
+    {
+      "path": "docs/research/lorawan-eu868/sources.json",
+      "sha256": "d4c09501444d6edb8b5f22c0863a9336f26a59b0e9955ca82405602a8b2ed4b8"
+    }
+  ],
+  "limitations": [
+    "Exact U184-AS923 and U184-EU868 own native paths and complete source halves preserved with explicit one-to-one duplicate preview mapping;no stretched source geometry or legacy U184/US915/CN470 substitution",
+    "Each own shell24x64x8 versus71.4 SMA-inclusive length remains separated;AS923 own195mm2.3dBi antenna and EU868 own195mm2.8dBi antenna are not interchanged",
+    "All hidden PCB supports/contacts/pivots/travel/antenna internals and assembly fit remain inferred appearance geometry,no fullBOM/manufacturing/hardware acceptance",
+    "Actual controls/lights/body joints and accessory joints follow each final frozen API only;RF/UART/AT/radio/electrical/firmware behavior is not simulated",
+    "Own readable ordinaryPNG reference redraws only;physical carriers/PCB remain without ink;no photo crops/wrong model/packaging/unknown microtext/individual codes",
+    "Private source intake:0 approved Unit body originals;EU868 strict-name8 are5packaging and3wrong-Module candidates;3 previous downloads all rejected,0 new downloads;no rejected source is reused",
+    "Private CSV/URLs/names/mapping/vector/raw material/generators/intermediates excluded;ordinaryPNG approved,new code MIT and each own official native MIT retained",
+    "Old50PNG/Scroll/StackChan production-fit/PuzzleBridge/Catch and earlier documented deferrals retained;overall goal active"
+  ]
+}

@@ -40690,6 +40690,3908 @@
         "source": "docs/research/gps/artwork.json"
       },
       "nextAction": "Root exact frozen API integration;not GPU/manufacturing acceptance"
+    },
+    {
+      "id": "pahub-v20",
+      "category": "unit",
+      "name": "Unit PaHub v2.0",
+      "sku": "U040-B",
+      "chipDocumentary": "PCA9548AP;linked schematic TCA9548A conflict unresolved",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        48,
+        10.8
+      ],
+      "vendorDimensionOrderMm": [
+        48,
+        24,
+        10.8
+      ],
+      "cadEnvelopeMm": [
+        24,
+        48,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        48,
+        10.8
+      ],
+      "stage": "modeled",
+      "entry": "src/units/pahub-v20/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/pahub2/pahub2_06.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/pahub2",
+      "research": "docs/research/pahub-v20/modeling.md",
+      "constructionRoute": "official-native-shell-plus-own-visible-assembly",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/pahub-v20/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -24,
+            1.4
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            {
+              "n": 1,
+              "name": "GND"
+            },
+            {
+              "n": 2,
+              "name": "5V"
+            },
+            {
+              "n": 3,
+              "name": "SDA"
+            },
+            {
+              "n": 4,
+              "name": "SCL"
+            }
+          ],
+          "scope": "Independent mechanical four-core appearance only"
+        },
+        {
+          "id": "grove-0",
+          "connector": "grove",
+          "face": "front",
+          "positionMm": [
+            7.4,
+            -2.8,
+            6.8
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            {
+              "n": 1,
+              "name": "GND"
+            },
+            {
+              "n": 2,
+              "name": "5V"
+            },
+            {
+              "n": 3,
+              "name": "SDA"
+            },
+            {
+              "n": 4,
+              "name": "SCL"
+            }
+          ],
+          "scope": "Independent mechanical four-core appearance only"
+        },
+        {
+          "id": "grove-1",
+          "connector": "grove",
+          "face": "front",
+          "positionMm": [
+            7.4,
+            7.8,
+            6.8
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            {
+              "n": 1,
+              "name": "GND"
+            },
+            {
+              "n": 2,
+              "name": "5V"
+            },
+            {
+              "n": 3,
+              "name": "SDA"
+            },
+            {
+              "n": 4,
+              "name": "SCL"
+            }
+          ],
+          "scope": "Independent mechanical four-core appearance only"
+        },
+        {
+          "id": "grove-2",
+          "connector": "grove",
+          "face": "front",
+          "positionMm": [
+            5.1,
+            17.7,
+            6.8
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            {
+              "n": 1,
+              "name": "GND"
+            },
+            {
+              "n": 2,
+              "name": "5V"
+            },
+            {
+              "n": 3,
+              "name": "SDA"
+            },
+            {
+              "n": 4,
+              "name": "SCL"
+            }
+          ],
+          "scope": "Independent mechanical four-core appearance only"
+        },
+        {
+          "id": "grove-3",
+          "connector": "grove",
+          "face": "front",
+          "positionMm": [
+            -5.1,
+            17.7,
+            6.8
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            {
+              "n": 1,
+              "name": "GND"
+            },
+            {
+              "n": 2,
+              "name": "5V"
+            },
+            {
+              "n": 3,
+              "name": "SDA"
+            },
+            {
+              "n": 4,
+              "name": "SCL"
+            }
+          ],
+          "scope": "Independent mechanical four-core appearance only"
+        },
+        {
+          "id": "grove-4",
+          "connector": "grove",
+          "face": "front",
+          "positionMm": [
+            -7.4,
+            7.8,
+            6.8
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            {
+              "n": 1,
+              "name": "GND"
+            },
+            {
+              "n": 2,
+              "name": "5V"
+            },
+            {
+              "n": 3,
+              "name": "SDA"
+            },
+            {
+              "n": 4,
+              "name": "SCL"
+            }
+          ],
+          "scope": "Independent mechanical four-core appearance only"
+        },
+        {
+          "id": "grove-5",
+          "connector": "grove",
+          "face": "front",
+          "positionMm": [
+            -7.4,
+            -2.8,
+            6.8
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            {
+              "n": 1,
+              "name": "GND"
+            },
+            {
+              "n": 2,
+              "name": "5V"
+            },
+            {
+              "n": 3,
+              "name": "SDA"
+            },
+            {
+              "n": 4,
+              "name": "SCL"
+            }
+          ],
+          "scope": "Independent mechanical four-core appearance only"
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "displays": [],
+      "joints": [],
+      "visualAnchors": [],
+      "accessories": {},
+      "defaults": {},
+      "defaultOptions": {},
+      "canonicalCableInput": "grove",
+      "configurationSchema": {
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Remove ink only;retain real rear film,exposed red PCB,native shell and all7receivers/contacts"
+        }
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整 PaHub v2.0 U040-B",
+          "options": {}
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "source": "docs/research/pahub-v20/artwork.json"
+      },
+      "nextAction": "Root exact frozen API integration;not GPU/manufacturing acceptance"
+    },
+    {
+      "id": "pbhub",
+      "category": "unit",
+      "name": "Unit PbHub",
+      "sku": "U041",
+      "scope": "visual-only",
+      "lifecycle": "Original exact U041 is EOL;historical useful coverage,no current popularity/sales claim",
+      "stage": "modeled",
+      "nominalMm": [
+        24,
+        48,
+        10.8
+      ],
+      "vendorDimensionOrderMm": [
+        48,
+        24,
+        10.8
+      ],
+      "historicalNominalMm": [
+        24,
+        48,
+        12
+      ],
+      "visualEnvelopeMm": [
+        24,
+        48,
+        10.8
+      ],
+      "sourceRoute": "own-original-U041-photo-parametric",
+      "entry": "src/units/pbhub/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_PbHub",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/pbhub/pbhub_06.webp",
+      "research": "docs/research/pbhub/modeling.md",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/pbhub/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -24,
+            1.2
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            "SCL",
+            "SDA",
+            "5V",
+            "GND"
+          ],
+          "scope": "Actual original receiver/cable mechanics;documentary pins only,no electrical routing"
+        },
+        {
+          "id": "grove-0",
+          "connector": "grove",
+          "face": "front",
+          "positionMm": [
+            7.5,
+            -1.7,
+            6.8
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            "IN0",
+            "OUT0",
+            "5V",
+            "GND"
+          ],
+          "scope": "Actual original receiver/cable mechanics;documentary pins only,no electrical routing"
+        },
+        {
+          "id": "grove-1",
+          "connector": "grove",
+          "face": "front",
+          "positionMm": [
+            7.5,
+            8.7,
+            6.8
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            "IN1",
+            "OUT1",
+            "5V",
+            "GND"
+          ],
+          "scope": "Actual original receiver/cable mechanics;documentary pins only,no electrical routing"
+        },
+        {
+          "id": "grove-2",
+          "connector": "grove",
+          "face": "front",
+          "positionMm": [
+            5,
+            18.2,
+            6.8
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            "IN2",
+            "OUT2",
+            "5V",
+            "GND"
+          ],
+          "scope": "Actual original receiver/cable mechanics;documentary pins only,no electrical routing"
+        },
+        {
+          "id": "grove-3",
+          "connector": "grove",
+          "face": "front",
+          "positionMm": [
+            -5,
+            18.2,
+            6.8
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            "IN3",
+            "OUT3",
+            "5V",
+            "GND"
+          ],
+          "scope": "Actual original receiver/cable mechanics;documentary pins only,no electrical routing"
+        },
+        {
+          "id": "grove-4",
+          "connector": "grove",
+          "face": "front",
+          "positionMm": [
+            -7.5,
+            8.7,
+            6.8
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            "IN4",
+            "OUT4",
+            "5V",
+            "GND"
+          ],
+          "scope": "Actual original receiver/cable mechanics;documentary pins only,no electrical routing"
+        },
+        {
+          "id": "grove-5",
+          "connector": "grove",
+          "face": "front",
+          "positionMm": [
+            -7.5,
+            -1.7,
+            6.8
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            "IN5",
+            "OUT5",
+            "5V",
+            "GND"
+          ],
+          "scope": "Actual original receiver/cable mechanics;documentary pins only,no electrical routing"
+        }
+      ],
+      "controls": [],
+      "joints": [],
+      "visualAnchors": [],
+      "externalLeds": [],
+      "displays": [],
+      "accessories": {},
+      "defaults": {},
+      "defaultOptions": {},
+      "canonicalCableInput": "grove",
+      "configurationSchema": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "原版 PbHub · 六路 GPIO 扩展外观",
+          "options": {}
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "physicalFilms": 1,
+        "source": "docs/research/pbhub/artwork.json"
+      },
+      "limitations": [
+        "No originalU041CAD;all hiddenwall/board/support/contactinstallation andfit inferred.",
+        "Current10.8mm andold12mm thickness retained separately.",
+        "CurrentMCUtableSTM32 conflicts withoriginalMEGA328 description/schematic/rear;visibleQFP32only,not confirmedproductionBOM.",
+        "TwoordinaryPNG currentrear0x61~0x68 andPCBdigits;nooldaddress/QC/rawphotos/privateoriginals/generator.",
+        "CPUgeometry/APIonly,noGPU/physical/manufacturing/electrical/firmwareacceptance."
+      ],
+      "nextAction": "Root frozenAPI/current-batch integration;modeled,not GPU or manufacturing acceptance"
+    },
+    {
+      "id": "timercamera",
+      "category": "unit",
+      "name": "TimerCamera (bare board)",
+      "sku": "U082",
+      "chips": [
+        "ESP32",
+        "OV3660",
+        "BM8563"
+      ],
+      "scope": "visual-only",
+      "nominalMm": [
+        20,
+        45,
+        12
+      ],
+      "vendorDimensionOrderMm": [
+        45,
+        20,
+        12
+      ],
+      "cadEnvelopeMm": null,
+      "visualEnvelopeMm": [
+        20,
+        45,
+        12
+      ],
+      "stage": "modeled",
+      "entry": "src/units/timercamera/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/timercam/timercam_06.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/TimerCamera",
+      "research": "docs/research/timercamera/modeling.md",
+      "constructionRoute": "own-dimensional-parametric",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/timercamera/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -22.5,
+            -2.65
+          ],
+          "physicalContacts": 4,
+          "scope": "Mechanical four-core appearance only"
+        },
+        {
+          "id": "usb",
+          "connector": "usb-c",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -22.5,
+            2.4
+          ],
+          "scope": "Mechanical receiving appearance only"
+        }
+      ],
+      "controls": [
+        {
+          "id": "reset",
+          "kind": "button",
+          "travelMm": 0.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "id": "power",
+          "kind": "button",
+          "travelMm": 0.22,
+          "axis": [
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "externalLeds": [
+        {
+          "id": "status",
+          "colorMode": "fixed-blue",
+          "color": "#247cff",
+          "defaultBrightness": 0,
+          "scope": "External on/brightness only,no automatic status linkage"
+        }
+      ],
+      "displays": [],
+      "joints": [],
+      "visualAnchors": [
+        {
+          "id": "camera",
+          "kind": "component",
+          "role": "passive-optical-frame",
+          "sensor": "OV3660",
+          "documentaryFovDeg": 66.5
+        }
+      ],
+      "accessories": {},
+      "defaults": {},
+      "defaultOptions": {},
+      "keymap": {
+        "KeyR": "reset",
+        "KeyP": "power"
+      },
+      "canonicalCableInput": "grove",
+      "configurationSchema": {
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "PCB ink only;retain both populated board faces and optics,no adhesive film exists"
+        }
+      },
+      "configurations": [
+        {
+          "id": "bare",
+          "name": "裸板 TimerCamera U082",
+          "options": {}
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 1,
+        "source": "docs/research/timercamera/artwork.json"
+      },
+      "nextAction": "Root integrate exact frozen API/fixed-blue indicator/passive camera;not hardware/GPU/manufacturing acceptance"
+    },
+    {
+      "id": "m5camera",
+      "category": "unit",
+      "name": "M5Camera (original U017)",
+      "sku": "U017",
+      "chips": [
+        "ESP32-WROVER",
+        "OV2640",
+        "CP2104"
+      ],
+      "scope": "visual-only",
+      "lifecycle": "Cached exact officialMCP marks EOL;original historical coverage,no live popularity/sales claim",
+      "nominalMm": [
+        40,
+        48,
+        11
+      ],
+      "vendorDimensionOrderMm": [
+        40,
+        48,
+        11
+      ],
+      "cadEnvelopeMm": null,
+      "visualEnvelopeMm": [
+        40,
+        48,
+        11
+      ],
+      "stage": "modeled",
+      "entry": "src/units/m5camera/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/m5camera/m5camera_02.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/M5Camera",
+      "research": "docs/research/m5camera/modeling.md",
+      "constructionRoute": "own-dimensional-parametric",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/m5camera/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -24,
+            -2.05
+          ],
+          "physicalContacts": 4,
+          "scope": "Mechanical four-core appearance only"
+        },
+        {
+          "id": "usb",
+          "connector": "usb-c",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -24,
+            1.3
+          ],
+          "scope": "OwnphotoType-C appearance only;schematicUSBvariant conflict recorded"
+        }
+      ],
+      "controls": [
+        {
+          "id": "reset",
+          "kind": "button",
+          "travelMm": 0.22,
+          "axis": [
+            -1,
+            0,
+            0
+          ]
+        }
+      ],
+      "externalLeds": [],
+      "displays": [],
+      "joints": [],
+      "visualAnchors": [
+        {
+          "id": "camera",
+          "kind": "component",
+          "role": "passive-optical-frame",
+          "sensor": "OV2640",
+          "documentaryFovDeg": 65
+        }
+      ],
+      "accessories": {},
+      "defaults": {},
+      "defaultOptions": {},
+      "keymap": {
+        "KeyR": "reset"
+      },
+      "canonicalCableInput": "grove",
+      "configurationSchema": {
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Rear ink only;retain physical label substrate,case/ears,PCB/WROVERshield and complete support"
+        }
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整原版 M5Camera U017",
+          "options": {}
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 1,
+        "source": "docs/research/m5camera/artwork.json"
+      },
+      "nextAction": "Rootintegrate exactfrozenAPI;retain versionconflicts and ownrear film/PCBshield support,noGPU/manufacturingclaim"
+    },
+    {
+      "id": "esp32cam",
+      "category": "unit",
+      "name": "ESP32CAM (original U007)",
+      "sku": "U007",
+      "scope": "visual-only",
+      "nominalMm": [
+        20.5,
+        46.5,
+        11.5
+      ],
+      "nominalStatus": "provisional-old-exact-document-appearance-basis",
+      "currentConflictingVendorMm": [
+        54,
+        54,
+        26.6
+      ],
+      "visualEnvelopeMm": [
+        20.5,
+        46.50000009536743,
+        11.500000047683717
+      ],
+      "stage": "modeled",
+      "entry": "src/units/esp32cam/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/esp32cam/esp32cam_02.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/esp32cam",
+      "research": "docs/research/esp32cam/modeling.md",
+      "constructionRoute": "own-photo-parametric",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/esp32cam/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -23.25,
+            -2.5
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            {
+              "n": 1,
+              "name": "GND"
+            },
+            {
+              "n": 2,
+              "name": "5V"
+            },
+            {
+              "n": 3,
+              "name": "SDA G13"
+            },
+            {
+              "n": 4,
+              "name": "SCL G4"
+            }
+          ],
+          "scope": "Mechanical only;pin names documentary,not certified schematic routing"
+        },
+        {
+          "id": "usb",
+          "connector": "usb-c",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -23.25,
+            2
+          ],
+          "physicalContacts": 24,
+          "scope": "Mechanical USB-C only;no power/UART/USB/reset simulation"
+        }
+      ],
+      "controls": [
+        {
+          "id": "key",
+          "kind": "button",
+          "physical": "Actual yellow side cap only",
+          "travelMm": 0.18,
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "key": "KeyK",
+          "longPressMs": 0
+        }
+      ],
+      "externalLeds": [],
+      "displays": [],
+      "joints": [],
+      "visualAnchors": [
+        {
+          "id": "camera",
+          "kind": "component",
+          "role": "optical-frame",
+          "sensor": "OV2640",
+          "documentaryFovDeg": 65,
+          "positionMm": [
+            0,
+            9,
+            6.8
+          ],
+          "scope": "Passive only"
+        }
+      ],
+      "accessories": {},
+      "defaults": {},
+      "defaultOptions": {},
+      "canonicalCableInput": "grove",
+      "configurationSchema": {
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "No safely readable own PNG or real body film;toggle preserves all physical attributes,index and worlds"
+        }
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "原版 ESP32CAM U007 裸板",
+          "options": {}
+        }
+      ],
+      "artwork": {
+        "kind": "no-readable-own-artwork",
+        "pngCount": 0,
+        "source": "docs/research/esp32cam/artwork.json"
+      },
+      "nextAction": "Root frozen API integration;no GPU/manufacturing acceptance"
+    },
+    {
+      "id": "rgb-led-strip-50cm",
+      "category": "unit",
+      "name": "Unit RGB LED Strip 0.5m / 30LED",
+      "sku": "A093",
+      "scope": "visual-only",
+      "nominalMm": null,
+      "nominalStripMm": [
+        500,
+        10
+      ],
+      "visualEnvelopeMm": [
+        698.4499999284744,
+        11.10000038146973,
+        22.735762417316437
+      ],
+      "stage": "modeled",
+      "entry": "src/units/rgb-led-strip-50cm/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "reference": "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/4_486f158b-d75e-47b4-b570-79b68c103f89.jpg?v=1753763307",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_RGB_LED_Strip",
+      "research": "docs/research/rgb-led-strip-50cm/modeling.md",
+      "constructionRoute": "own-A093-photo-dimensional-parametric",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [
+          "InputAdapter"
+        ],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/rgb-led-strip-50cm/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "input",
+          "connector": "m5.a093.3p-input",
+          "positionMm": [
+            -42,
+            0,
+            1.1
+          ],
+          "quaternion": [
+            0,
+            0,
+            0.7071067811865475,
+            0.7071067811865476
+          ],
+          "physicalContacts": 3,
+          "pins": [
+            {
+              "n": 1,
+              "name": "3P contact1"
+            },
+            {
+              "n": 2,
+              "name": "3P contact2"
+            },
+            {
+              "n": 3,
+              "name": "3P contact3"
+            }
+          ],
+          "scope": "Own A093 mechanical family;not a Grove receptacle,not a generic JST/electrical mapping"
+        },
+        {
+          "id": "output",
+          "connector": "m5.a093.3p-output",
+          "positionMm": [
+            42,
+            0,
+            1.1
+          ],
+          "quaternion": [
+            0,
+            0,
+            -0.7071067811865475,
+            0.7071067811865476
+          ],
+          "physicalContacts": 3,
+          "pins": [
+            {
+              "n": 1,
+              "name": "3P contact1"
+            },
+            {
+              "n": 2,
+              "name": "3P contact2"
+            },
+            {
+              "n": 3,
+              "name": "3P contact3"
+            }
+          ],
+          "scope": "Own A093 mechanical family;not a Grove receptacle,not a generic JST/electrical mapping"
+        }
+      ],
+      "controls": [],
+      "externalLeds": [
+        {
+          "id": "pixel-0",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-1",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-2",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-3",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-4",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-5",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-6",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-7",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-8",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-9",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-10",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-11",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-12",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-13",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-14",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-15",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-16",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-17",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-18",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-19",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-20",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-21",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-22",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-23",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-24",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-25",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-26",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-27",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-28",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        },
+        {
+          "id": "pixel-29",
+          "kind": "RGB",
+          "scope": "Externally driven appearance only"
+        }
+      ],
+      "displays": [],
+      "joints": [],
+      "visualAnchors": [],
+      "accessories": {
+        "InputAdapter": {
+          "connector": "m5.a093.3p-input",
+          "defaultPort": "input",
+          "defaultAttached": true,
+          "components": [
+            {
+              "id": "cable",
+              "kind": "cable",
+              "fullPath": "input/cable"
+            }
+          ],
+          "physicalGrovePositions": 4,
+          "physicalGroveContacts": 3,
+          "emptyNCPosition": 4,
+          "actualConductorCount": 3,
+          "plugCount": 2,
+          "vendorNominalLengthMm": 100,
+          "displayCenterlineMm": 100
+        }
+      },
+      "defaults": {
+        "bendDeg": 0,
+        "adapter": true
+      },
+      "defaultOptions": {},
+      "canonicalCableInput": "input",
+      "canonicalConnector": "m5.a093.3p-input",
+      "visualCablePath": "input/cable",
+      "visualCableWireCount": 3,
+      "visualCablePlugCount": 2,
+      "configurationSchema": {
+        "adapter": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Supplied detachable100mm Grove-plug/black3P three-wire adapter;no body Grove receptacle"
+        },
+        "bendDeg": {
+          "type": "number",
+          "min": -120,
+          "max": 120,
+          "default": 0,
+          "meaning": "External circular-arc display angle,not a material/minimum-radius limit"
+        },
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Only safe PCB ink;all substrates/coating/pads/packages/terminals remain"
+        }
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "A093 0.5米30灯完整直条与三线转接",
+          "options": {}
+        },
+        {
+          "id": "arc",
+          "name": "A093 连续90度展示弯曲",
+          "options": {
+            "bendDeg": 90
+          }
+        },
+        {
+          "id": "reverse",
+          "name": "A093 反向60度展示弯曲",
+          "options": {
+            "bendDeg": -60
+          }
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 1,
+        "panelCount": 29,
+        "source": "docs/research/rgb-led-strip-50cm/artwork.json"
+      },
+      "nextAction": "Root frozen actual-API integration;no GPU/manufacturing/hardware acceptance"
+    },
+    {
+      "id": "cardkb-original",
+      "category": "unit",
+      "name": "Unit CardKB (original MEGA328P U035)",
+      "sku": "U035",
+      "scope": "visual-only",
+      "nominalMm": [
+        88,
+        54,
+        5
+      ],
+      "nominalStatus": "provisional-table-appearance-basis;photo84conflict-unresolved",
+      "photoCaptionMm": [
+        84,
+        54
+      ],
+      "visualEnvelopeMm": [
+        88,
+        54,
+        5.150000023841858
+      ],
+      "stage": "modeled",
+      "entry": "src/units/cardkb-original/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/cardkb/cardkb_01.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_CardKB",
+      "research": "docs/research/cardkb-original/modeling.md",
+      "constructionRoute": "own-original-MEGA328P-U035-photo-parametric",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/cardkb-original/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "positionMm": [
+            -44,
+            13,
+            0.5
+          ],
+          "quaternion": [
+            0,
+            0,
+            0.7071067811865475,
+            0.7071067811865476
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            {
+              "n": 1,
+              "name": "GND"
+            },
+            {
+              "n": 2,
+              "name": "5V"
+            },
+            {
+              "n": 3,
+              "name": "SDA"
+            },
+            {
+              "n": 4,
+              "name": "SCL"
+            }
+          ],
+          "scope": "Mechanical4P only;original GPIO mapping not inferred from mixed v1.1 PinMap"
+        }
+      ],
+      "controls": [
+        {
+          "id": "key-esc",
+          "kind": "button",
+          "label": "Esc",
+          "row": 0,
+          "column": 0,
+          "positionMm": [
+            -28,
+            15,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-1",
+          "kind": "button",
+          "label": "1",
+          "row": 0,
+          "column": 1,
+          "positionMm": [
+            -22,
+            15,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-2",
+          "kind": "button",
+          "label": "2",
+          "row": 0,
+          "column": 2,
+          "positionMm": [
+            -16,
+            15,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-3",
+          "kind": "button",
+          "label": "3",
+          "row": 0,
+          "column": 3,
+          "positionMm": [
+            -10,
+            15,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-4",
+          "kind": "button",
+          "label": "4",
+          "row": 0,
+          "column": 4,
+          "positionMm": [
+            -4,
+            15,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-5",
+          "kind": "button",
+          "label": "5",
+          "row": 0,
+          "column": 5,
+          "positionMm": [
+            2,
+            15,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-6",
+          "kind": "button",
+          "label": "6",
+          "row": 0,
+          "column": 6,
+          "positionMm": [
+            8,
+            15,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-7",
+          "kind": "button",
+          "label": "7",
+          "row": 0,
+          "column": 7,
+          "positionMm": [
+            14,
+            15,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-8",
+          "kind": "button",
+          "label": "8",
+          "row": 0,
+          "column": 8,
+          "positionMm": [
+            20,
+            15,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-9",
+          "kind": "button",
+          "label": "9",
+          "row": 0,
+          "column": 9,
+          "positionMm": [
+            26,
+            15,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-0",
+          "kind": "button",
+          "label": "0",
+          "row": 0,
+          "column": 10,
+          "positionMm": [
+            32,
+            15,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-backspace",
+          "kind": "button",
+          "label": "Backspace",
+          "row": 0,
+          "column": 11,
+          "positionMm": [
+            38,
+            15,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-tab",
+          "kind": "button",
+          "label": "Tab",
+          "row": 1,
+          "column": 0,
+          "positionMm": [
+            -28,
+            3.3,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-q",
+          "kind": "button",
+          "label": "Q",
+          "row": 1,
+          "column": 1,
+          "positionMm": [
+            -22,
+            3.3,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-w",
+          "kind": "button",
+          "label": "W",
+          "row": 1,
+          "column": 2,
+          "positionMm": [
+            -16,
+            3.3,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-e",
+          "kind": "button",
+          "label": "E",
+          "row": 1,
+          "column": 3,
+          "positionMm": [
+            -10,
+            3.3,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-r",
+          "kind": "button",
+          "label": "R",
+          "row": 1,
+          "column": 4,
+          "positionMm": [
+            -4,
+            3.3,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-t",
+          "kind": "button",
+          "label": "T",
+          "row": 1,
+          "column": 5,
+          "positionMm": [
+            2,
+            3.3,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-y",
+          "kind": "button",
+          "label": "Y",
+          "row": 1,
+          "column": 6,
+          "positionMm": [
+            8,
+            3.3,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-u",
+          "kind": "button",
+          "label": "U",
+          "row": 1,
+          "column": 7,
+          "positionMm": [
+            14,
+            3.3,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-i",
+          "kind": "button",
+          "label": "I",
+          "row": 1,
+          "column": 8,
+          "positionMm": [
+            20,
+            3.3,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-o",
+          "kind": "button",
+          "label": "O",
+          "row": 1,
+          "column": 9,
+          "positionMm": [
+            26,
+            3.3,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-p",
+          "kind": "button",
+          "label": "P",
+          "row": 1,
+          "column": 10,
+          "positionMm": [
+            32,
+            3.3,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-fn",
+          "kind": "button",
+          "label": "Fn",
+          "row": 1,
+          "column": 11,
+          "positionMm": [
+            38,
+            3.3,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-shift",
+          "kind": "button",
+          "label": "Shift",
+          "row": 2,
+          "column": 0,
+          "positionMm": [
+            -22,
+            -8.4,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-a",
+          "kind": "button",
+          "label": "A",
+          "row": 2,
+          "column": 1,
+          "positionMm": [
+            -16,
+            -8.4,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-s",
+          "kind": "button",
+          "label": "S",
+          "row": 2,
+          "column": 2,
+          "positionMm": [
+            -10,
+            -8.4,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-d",
+          "kind": "button",
+          "label": "D",
+          "row": 2,
+          "column": 3,
+          "positionMm": [
+            -4,
+            -8.4,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-f",
+          "kind": "button",
+          "label": "F",
+          "row": 2,
+          "column": 4,
+          "positionMm": [
+            2,
+            -8.4,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-g",
+          "kind": "button",
+          "label": "G",
+          "row": 2,
+          "column": 5,
+          "positionMm": [
+            8,
+            -8.4,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-h",
+          "kind": "button",
+          "label": "H",
+          "row": 2,
+          "column": 6,
+          "positionMm": [
+            14,
+            -8.4,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-j",
+          "kind": "button",
+          "label": "J",
+          "row": 2,
+          "column": 7,
+          "positionMm": [
+            20,
+            -8.4,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-k",
+          "kind": "button",
+          "label": "K",
+          "row": 2,
+          "column": 8,
+          "positionMm": [
+            26,
+            -8.4,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-l",
+          "kind": "button",
+          "label": "L",
+          "row": 2,
+          "column": 9,
+          "positionMm": [
+            32,
+            -8.4,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-enter",
+          "kind": "button",
+          "label": "Enter",
+          "row": 2,
+          "column": 10,
+          "positionMm": [
+            38,
+            -8.4,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-sym",
+          "kind": "button",
+          "label": "Sym",
+          "row": 3,
+          "column": 0,
+          "positionMm": [
+            -22,
+            -20.1,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-z",
+          "kind": "button",
+          "label": "Z",
+          "row": 3,
+          "column": 1,
+          "positionMm": [
+            -16,
+            -20.1,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-x",
+          "kind": "button",
+          "label": "X",
+          "row": 3,
+          "column": 2,
+          "positionMm": [
+            -10,
+            -20.1,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-c",
+          "kind": "button",
+          "label": "C",
+          "row": 3,
+          "column": 3,
+          "positionMm": [
+            -4,
+            -20.1,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-v",
+          "kind": "button",
+          "label": "V",
+          "row": 3,
+          "column": 4,
+          "positionMm": [
+            2,
+            -20.1,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-b",
+          "kind": "button",
+          "label": "B",
+          "row": 3,
+          "column": 5,
+          "positionMm": [
+            8,
+            -20.1,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-n",
+          "kind": "button",
+          "label": "N",
+          "row": 3,
+          "column": 6,
+          "positionMm": [
+            14,
+            -20.1,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-m",
+          "kind": "button",
+          "label": "M",
+          "row": 3,
+          "column": 7,
+          "positionMm": [
+            20,
+            -20.1,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-comma",
+          "kind": "button",
+          "label": ",",
+          "row": 3,
+          "column": 8,
+          "positionMm": [
+            26,
+            -20.1,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-period",
+          "kind": "button",
+          "label": ".",
+          "row": 3,
+          "column": 9,
+          "positionMm": [
+            32,
+            -20.1,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-space",
+          "kind": "button",
+          "label": "Space",
+          "row": 3,
+          "column": 10,
+          "positionMm": [
+            38,
+            -20.1,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-up",
+          "kind": "button",
+          "label": "Up",
+          "row": 4,
+          "column": 0,
+          "positionMm": [
+            -34,
+            -9.5,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-left",
+          "kind": "button",
+          "label": "Left",
+          "row": 4,
+          "column": 1,
+          "positionMm": [
+            -40,
+            -15.5,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-right",
+          "kind": "button",
+          "label": "Right",
+          "row": 4,
+          "column": 2,
+          "positionMm": [
+            -28,
+            -15.5,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        },
+        {
+          "id": "key-down",
+          "kind": "button",
+          "label": "Down",
+          "row": 4,
+          "column": 3,
+          "positionMm": [
+            -34,
+            -21.5,
+            0
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0
+        }
+      ],
+      "externalLeds": [
+        {
+          "id": "rgb",
+          "kind": "RGB",
+          "documentaryPin": "IO13",
+          "scope": "Externally driven only,no modifier/key feedback"
+        }
+      ],
+      "displays": [],
+      "joints": [],
+      "visualAnchors": [],
+      "accessories": {},
+      "defaults": {},
+      "defaultOptions": {},
+      "canonicalCableInput": "grove",
+      "canonicalConnector": "grove",
+      "visualCablePath": "cable",
+      "visualCableWireCount": 4,
+      "visualCablePlugCount": 2,
+      "configurationSchema": {
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Only safely readable own PCB ink;retain all physical keys,board,contacts and apertures"
+        }
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "原版 MEGA328P U035 完整裸板键盘",
+          "options": {}
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 1,
+        "panelCount": 1,
+        "source": "docs/research/cardkb-original/artwork.json"
+      },
+      "actualLocatedMountingHoles": 1,
+      "unresolvedOldTwoLegoClaim": true,
+      "nextAction": "Root frozen API integration;no GPU/manufacturing/hardware acceptance"
+    },
+    {
+      "id": "poe-cam-w",
+      "category": "unit",
+      "name": "Unit PoE CAM-W (original OV2640 U121-B)",
+      "sku": "U121-B",
+      "chips": [
+        "ESP32-D0WDQ6-V3",
+        "W5500",
+        "OV2640"
+      ],
+      "scope": "visual-only",
+      "lifecycle": "Cached exact officialMCP marks EOL;historical original coverage,no live popularity/sales claim",
+      "nominalMm": [
+        64,
+        24,
+        18
+      ],
+      "vendorDimensionOrderMm": [
+        64,
+        24,
+        18
+      ],
+      "cadEnvelopeMm": null,
+      "visualEnvelopeMm": [
+        24,
+        64,
+        18
+      ],
+      "stage": "modeled",
+      "entry": "src/units/poe-cam-w/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/unit/PoECAM-W/img-0e65978b-b66f-41ea-a94f-e0be885ce076.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_PoE_CAM-W",
+      "research": "docs/research/poe-cam-w/modeling.md",
+      "constructionRoute": "own-dimensional-parametric",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/poe-cam-w/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "top",
+          "positionMm": [
+            0,
+            32,
+            -2.3
+          ],
+          "physicalContacts": 4,
+          "scope": "Own actual four-core EXT_PORT,no electricalbus"
+        },
+        {
+          "id": "ethernet",
+          "connector": "rj45",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -32,
+            -1.9
+          ],
+          "physicalContacts": 8,
+          "scope": "Actual RJ45 mechanical cavity,no Ethernet/PoE/power"
+        },
+        {
+          "id": "download-en",
+          "connector": "poecam-service-3p",
+          "face": "back",
+          "positionMm": [
+            -8.5,
+            24.9,
+            -8.9
+          ],
+          "physicalContacts": 3,
+          "scope": "ActualGND/G0/ENfemale3P,noreset/boot/electrical"
+        },
+        {
+          "id": "download-uart",
+          "connector": "poecam-service-3p",
+          "face": "back",
+          "positionMm": [
+            8.5,
+            24.9,
+            -8.9
+          ],
+          "physicalContacts": 3,
+          "scope": "Actual3V3/TX/RXfemale3P,noUART/download/electrical"
+        }
+      ],
+      "controls": [
+        {
+          "id": "user",
+          "kind": "button",
+          "travelMm": 0.25,
+          "axis": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "reset",
+          "kind": "button",
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "externalLeds": [
+        {
+          "id": "g0",
+          "kind": "led",
+          "color": "#267be8",
+          "fixedColour": true,
+          "scope": "Externalon/brightnessonly"
+        },
+        {
+          "id": "link",
+          "kind": "led",
+          "color": "#e0bd35",
+          "fixedColour": true,
+          "scope": "Externalon/brightnessonly"
+        },
+        {
+          "id": "activity",
+          "kind": "led",
+          "color": "#2eae61",
+          "fixedColour": true,
+          "scope": "Externalon/brightnessonly"
+        }
+      ],
+      "displays": [],
+      "joints": [],
+      "visualAnchors": [
+        {
+          "id": "camera",
+          "kind": "component",
+          "role": "passive-optical-frame",
+          "sensor": "OV2640",
+          "documentaryFovDeg": 65
+        }
+      ],
+      "accessories": {},
+      "defaults": {},
+      "defaultOptions": {},
+      "keymap": {
+        "Space": "user",
+        "KeyR": "reset"
+      },
+      "canonicalCableInput": "grove",
+      "configurationSchema": {
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Rear ink only;retain physical die-cut film,original shell,PCB/PoE/lens/contact supports and uncoloured M5"
+        }
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整原版 PoE CAM-W U121-B",
+          "options": {}
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 1,
+        "source": "docs/research/poe-cam-w/artwork.json"
+      },
+      "nextAction": "RootintegratefrozenAPI;retainallhiddeninstall/fituncertainty,noGPU/physical/manufacturingclaim"
+    },
+    {
+      "id": "lorawan-us915",
+      "category": "unit",
+      "name": "Unit LoRaWAN-US915",
+      "sku": "U184-US915",
+      "legacyHardwareSku": "U184",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        71.4,
+        8
+      ],
+      "vendorDimensionOrderMm": [
+        71.4,
+        24,
+        8
+      ],
+      "cadEnvelopeMm": [
+        24,
+        64,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        71.39999980931363,
+        8.00000000000061
+      ],
+      "nominalExcludesSuppliedAntenna": true,
+      "stage": "modeled",
+      "entry": "src/units/lorawan-us915/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "reference": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20LoRaWAN-US915/8.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_LoRaWAN-US915",
+      "research": "docs/research/lorawan-us915/modeling.md",
+      "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [
+          "Antenna"
+        ],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/lorawan-us915/sma-amendment-2026-10-27-smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -32,
+            1.4
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            {
+              "n": 1,
+              "name": "GND"
+            },
+            {
+              "n": 2,
+              "name": "5V"
+            },
+            {
+              "n": 3,
+              "name": "UART_RX"
+            },
+            {
+              "n": 4,
+              "name": "UART_TX"
+            }
+          ],
+          "pinGrid": {
+            "cols": 4,
+            "rows": 1,
+            "pitch": 2,
+            "center": [
+              0,
+              -0.2
+            ],
+            "columnOrder": [
+              4,
+              3,
+              2,
+              1
+            ]
+          },
+          "scope": "Fourcore mechanical only,noUART/AT/radio/electrical simulation"
+        },
+        {
+          "id": "antenna",
+          "connector": "m5.u184-us915.sma",
+          "face": "top",
+          "positionMm": [
+            0,
+            39.4,
+            0
+          ],
+          "pins": [],
+          "scope": "Real externally threaded mechanical SMA body with own-US91510 visible solid centre pin and recessed dielectric; exact dimensions/polarity/thread/mating fit inferred; no RF simulation"
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "displays": [],
+      "joints": [],
+      "recursiveAccessoryJoints": [
+        "antenna/fold"
+      ],
+      "visualAnchors": [],
+      "accessories": {
+        "antenna": {
+          "port": "antenna",
+          "export": "Antenna",
+          "family": "m5.u184-us915.sma",
+          "defaultAttached": true,
+          "option": "antenna",
+          "joints": [
+            "fold"
+          ],
+          "fullJointPath": "antenna/fold"
+        }
+      },
+      "accessoryAPIs": {
+        "Antenna": {
+          "export": "Antenna",
+          "metaId": "m5stack.unit.lorawan-us915.antenna",
+          "connector": "m5.u184-us915.sma",
+          "acceptedAtBodyPort": "antenna",
+          "defaultAttachedInModel": true,
+          "defaultAttachedInGroveModule": true,
+          "presenceOption": "antenna",
+          "parentFoldOption": "antennaFoldDeg",
+          "constructorDefaults": {
+            "foldDeg": 90
+          },
+          "constructorConfiguration": {
+            "foldDeg": {
+              "type": "number",
+              "min": 0,
+              "max": 90,
+              "default": 90,
+              "scope": "Externaldisplaybound,notratedlimits"
+            }
+          },
+          "componentOrder": [
+            "fold"
+          ],
+          "componentKinds": {
+            "fold": "joint"
+          },
+          "controls": [],
+          "leds": [],
+          "ports": [],
+          "joints": [
+            "fold"
+          ],
+          "passiveAnchors": [],
+          "paths": {
+            "standalone": "antenna/fold",
+            "module": "<upstream-port>/antenna/fold",
+            "stickS3HubThirdBranch": "grove/grove-3/antenna/fold"
+          },
+          "fold": {
+            "kind": "joint",
+            "continuous": false,
+            "rpmAllowed": false,
+            "defaultAngleDeg": 90,
+            "rangeDeg": [
+              0,
+              90
+            ],
+            "pivotMmInAccessoryPortFrame": [
+              0,
+              16.5,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "neutralEulerRad": [
+              0,
+              0,
+              1.5707963267948966
+            ],
+            "poseMeaning": "0 straight+Y,90 ownphoto folded+X",
+            "commands": {
+              "type": "joint",
+              "target": "antenna/fold",
+              "fields": [
+                "angleDeg",
+                "durationMs"
+              ],
+              "example": {
+                "type": "joint",
+                "target": "antenna/fold",
+                "angleDeg": 45,
+                "durationMs": 200
+              },
+              "stateCommand": {
+                "type": "state",
+                "target": "antenna/fold"
+              }
+            },
+            "movingPhysicalParts": [
+              "movingHub real1.05mm axle bore",
+              "movingNeck",
+              "own tapered rubber blade"
+            ],
+            "fixedPhysicalParts": [
+              "knurled coupling",
+              "inner metal liner",
+              "retaining rear stop",
+              "Inferred hollow receiving contact with real deep stop and retained supporting dielectric; legacy internal .pin aliases receiver",
+              "neck/fixedBase",
+              "two retaining cheeks",
+              "1mm axle andcaps"
+            ],
+            "radialAxleClearanceMm": 0.05,
+            "cheekToMovingHubAxialClearanceMm": 0.025,
+            "sourceEvidence": "Own4 visible foldingelbow/seam/sideaxlecap;own11 samefolded packagingpose",
+            "inferred": "Exact pivot/axis/0..90displaylimits/section/retention/fit;no secondmeasuredangle or ratedmechanics. No servo/automatic/RF behavior."
+          },
+          "physicalSupport": "Inferred receiving contact is surrounded by dielectric retained into the coupling back; real receiver bore/deep stop accepts the own10 visible body pin with inferred positive clearance. Knurled shell/liner/stop support neck/fixed yoke; real bored moving hub carried by fixed axle/cheeks; moving arm supports blade.",
+          "vendorLengthMm": 195,
+          "reconstructedCentrelineMm": 195,
+          "centrelineBasis": "22mm from lowercouplingnose(-5.5) to hinge(+16.5),plus173mm blade-axis run to tip;sections/pivot/installedfit inferred,not measurement",
+          "documentaryGainDbi": 2.3,
+          "documentaryImpedanceOhm": 50,
+          "commandsNoInputEcho": true,
+          "noAutomaticMotion": true,
+          "detachCommand": {
+            "type": "detach",
+            "target": "antenna"
+          },
+          "detachLifecycle": "Port ownsdisposal unless detach({dispose:false});reattach retainedAntenna restores foldstate and exact geometry/pose",
+          "otherComponents": []
+        }
+      },
+      "defaults": {
+        "antenna": true,
+        "antennaFoldDeg": 90
+      },
+      "defaultOptions": {
+        "antenna": true,
+        "antennaFoldDeg": 90
+      },
+      "canonicalCableInput": "grove",
+      "configurationSchema": {
+        "antenna": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Actual supplied own195mmUS915 rubberduck accessory with externallydriven realhinge;mechanical detach only"
+        },
+        "antennaFoldDeg": {
+          "type": "number",
+          "min": 0,
+          "max": 90,
+          "default": 90,
+          "meaning": "Ownphysicalhinge externallyprescribed displaypose;axis/pivot/0..90range inferred,not rated limits"
+        },
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Ink only;retain both actualfilms,nativefloor/metalwindow/PCB/module/ports and every physicalattribute/index/world"
+        }
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "US915 含原装胶棒天线",
+          "options": {}
+        },
+        {
+          "id": "straight-antenna",
+          "name": "US915 天线直立展示",
+          "options": {
+            "antennaFoldDeg": 0
+          }
+        },
+        {
+          "id": "without-antenna",
+          "name": "US915 本体及实际空SMA座",
+          "options": {
+            "antenna": false
+          }
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "source": "docs/research/lorawan-us915/artwork.json"
+      },
+      "nextAction": "Rootactualfrozen APIintegration;noGPU/manufacturing/electrical/RFacceptance"
+    },
+    {
+      "id": "lorawan-as923",
+      "category": "unit",
+      "name": "Unit LoRaWAN-AS923",
+      "sku": "U184-AS923",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        71.4,
+        8
+      ],
+      "vendorDimensionOrderMm": [
+        71.4,
+        24,
+        8
+      ],
+      "cadEnvelopeMm": [
+        24,
+        64,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        71.39999980931363,
+        8.00000000000061
+      ],
+      "nominalExcludesSuppliedAntenna": true,
+      "documentaryBandMHz": [
+        923,
+        925
+      ],
+      "stage": "modeled",
+      "entry": "src/units/lorawan-as923/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "reference": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20LoRaWAN-AS923/8.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_LoRaWAN-AS923",
+      "research": "docs/research/lorawan-as923/modeling.md",
+      "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [
+          "Antenna"
+        ],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/lorawan-as923/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -32,
+            1.4
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            {
+              "n": 1,
+              "name": "GND"
+            },
+            {
+              "n": 2,
+              "name": "5V"
+            },
+            {
+              "n": 3,
+              "name": "UART_RX"
+            },
+            {
+              "n": 4,
+              "name": "UART_TX"
+            }
+          ],
+          "pinGrid": {
+            "cols": 4,
+            "rows": 1,
+            "pitch": 2,
+            "center": [
+              0,
+              -0.2
+            ],
+            "columnOrder": [
+              4,
+              3,
+              2,
+              1
+            ]
+          },
+          "scope": "Fourcore mechanicalonly,noUART/AT/radio/electrical simulation"
+        },
+        {
+          "id": "antenna",
+          "connector": "m5.u184-as923.sma",
+          "face": "top",
+          "positionMm": [
+            0,
+            39.4,
+            0
+          ],
+          "pins": [],
+          "scope": "Actualown10 threadedSMAhousing,dielectric andprojectingcentrecontact;certifiedSMA/RP-SMApolarity/threadfit unresolved"
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "displays": [],
+      "joints": [],
+      "recursiveAccessoryJoints": [
+        "antenna/fold"
+      ],
+      "visualAnchors": [],
+      "accessories": {
+        "antenna": {
+          "port": "antenna",
+          "export": "Antenna",
+          "family": "m5.u184-as923.sma",
+          "defaultAttached": true,
+          "option": "antenna",
+          "joints": [
+            "fold"
+          ],
+          "fullJointPath": "antenna/fold"
+        }
+      },
+      "accessoryAPIs": {
+        "Antenna": {
+          "export": "Antenna",
+          "metaId": "m5stack.unit.lorawan-as923.antenna",
+          "connector": "m5.u184-as923.sma",
+          "acceptedAtBodyPort": "antenna",
+          "defaultAttachedInModel": true,
+          "defaultAttachedInGroveModule": true,
+          "presenceOption": "antenna",
+          "parentFoldOption": "antennaFoldDeg",
+          "constructorDefaults": {
+            "foldDeg": 90
+          },
+          "constructorConfiguration": {
+            "foldDeg": {
+              "type": "number",
+              "min": 0,
+              "max": 90,
+              "default": 90,
+              "scope": "Externallyprescribed displaylimits,not ratedmechanics"
+            }
+          },
+          "componentOrder": [
+            "fold"
+          ],
+          "componentKinds": {
+            "fold": "joint"
+          },
+          "controls": [],
+          "leds": [],
+          "ports": [],
+          "joints": [
+            "fold"
+          ],
+          "passiveAnchors": [],
+          "paths": {
+            "standalone": "antenna/fold",
+            "module": "<upstream-port>/antenna/fold",
+            "stickS3HubFirstBranch": "grove/grove-1/antenna/fold"
+          },
+          "fold": {
+            "kind": "joint",
+            "continuous": false,
+            "rpmAllowed": false,
+            "defaultAngleDeg": 90,
+            "rangeDeg": [
+              0,
+              90
+            ],
+            "pivotMmInAccessoryPortFrame": [
+              0,
+              16.5,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "neutralEulerRad": [
+              0,
+              0,
+              1.5707963267948966
+            ],
+            "poseMeaning": "0straight+Y,90ownphotofolded+X",
+            "commands": {
+              "type": "joint",
+              "target": "antenna/fold",
+              "fields": [
+                "angleDeg",
+                "durationMs"
+              ],
+              "example": {
+                "type": "joint",
+                "target": "antenna/fold",
+                "angleDeg": 45,
+                "durationMs": 200
+              },
+              "stateCommand": {
+                "type": "state",
+                "target": "antenna/fold"
+              }
+            },
+            "movingPhysicalParts": [
+              "movingHub withreal1.05mm axle bore",
+              "movingNeck",
+              "taperedownrubberblade"
+            ],
+            "fixedPhysicalParts": [
+              "knurledcoupling",
+              "metal threadliner",
+              "retainedbackstop",
+              "hollowreceivingcentrecontact anddeepstop",
+              "supportingdielectric",
+              "neck/fixedBase",
+              "tworetainingcheeks",
+              "1mmfixedaxle/endcaps"
+            ],
+            "radialAxleClearanceMm": 0.05,
+            "cheekToMovingHubAxialClearanceMm": 0.025,
+            "sourceEvidence": "OwnAS9234visibleelbow/seam/axlecap,own11samefoldedpose",
+            "inferred": "Axis/pivot/0..90displaylimits/sections/retention/fit,nottwo measuredangles orratedstops;noRF/servo/automatic behavior"
+          },
+          "contactConstruction": {
+            "ownBodyPhoto": "own-10.webp",
+            "body": "Visible projecting metalcentrecontact supported bydielectric/rearstop withinthreadedrim",
+            "accessory": "Inferred complementaryhollow receivingcentrecontact withdielectric/deepstop",
+            "bodyPinRadiusMm": 0.32,
+            "receivingBoreRadiusMm": 0.38,
+            "inferredRadialClearanceMm": 0.06,
+            "bodyDielectricFaceY": 37.5,
+            "bodyContactTipY": 39,
+            "bodyOuterRimY": 39.4,
+            "accessorySocketLocalY": [
+              -1.5,
+              2.5
+            ],
+            "note": "Ownphotoappearanceinference differs from51emptyfemale-contact reconstruction;certifiedgender/polarity/threadfit unresolved. No51model changed."
+          },
+          "physicalSupport": "Pinrearstop/insulator andmatingreceiverretention are actualmaterial;hollowcoupling/liner/backstop supportfixedneck/yoke;realaxle/boredhub supportonlymovingarm/blade",
+          "vendorLengthMm": 195,
+          "reconstructedCentrelineMm": 195,
+          "centrelineBasis": "22mm fromcouplingnose−5.5tohinge16.5 plus173mmradiatoraxisrun;appearance dimensionalreconstruction,notmeasurement",
+          "documentaryGainDbi": 2.3,
+          "documentaryImpedanceOhm": 50,
+          "commandsNoInputEcho": true,
+          "noAutomaticMotion": true,
+          "detachCommand": {
+            "type": "detach",
+            "target": "antenna"
+          },
+          "detachLifecycle": "Port ownsdisposal unlessdetach({dispose:false});sameinstance reattachrestoresfoldstate andphysicalattrs/index/world",
+          "otherComponents": []
+        }
+      },
+      "defaults": {
+        "antenna": true,
+        "antennaFoldDeg": 90
+      },
+      "defaultOptions": {
+        "antenna": true,
+        "antennaFoldDeg": 90
+      },
+      "canonicalCableInput": "grove",
+      "configurationSchema": {
+        "antenna": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Actual supplied own195mmAS923 rubberduck accessory with externallydriven realhinge;mechanical detach only"
+        },
+        "antennaFoldDeg": {
+          "type": "number",
+          "min": 0,
+          "max": 90,
+          "default": 90,
+          "meaning": "Ownphysicalhinge externallyprescribed displaypose;axis/pivot/0..90range inferred,not rated limits"
+        },
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Ink only;retain both actualfilms,nativefloor/metalwindow/PCB/module/ports and every physicalattribute/index/world"
+        }
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "AS923 含原装胶棒天线",
+          "options": {}
+        },
+        {
+          "id": "straight-antenna",
+          "name": "AS923 天线直立展示",
+          "options": {
+            "antennaFoldDeg": 0
+          }
+        },
+        {
+          "id": "without-antenna",
+          "name": "AS923 本体及实际空SMA座",
+          "options": {
+            "antenna": false
+          }
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "source": "docs/research/lorawan-as923/artwork.json"
+      },
+      "nextAction": "Root exactfrozenAPIintegration,no GPU/manufacturing/physicalradioacceptance"
+    },
+    {
+      "id": "lorawan-eu868",
+      "category": "unit",
+      "name": "Unit LoRaWAN-EU868",
+      "sku": "U184-EU868",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        71.4,
+        8
+      ],
+      "vendorDimensionOrderMm": [
+        71.4,
+        24,
+        8
+      ],
+      "cadEnvelopeMm": [
+        24,
+        64,
+        8
+      ],
+      "visualEnvelopeMm": [
+        24,
+        71.39999980931363,
+        8.00000000000061
+      ],
+      "nominalExcludesSuppliedAntenna": true,
+      "stage": "modeled",
+      "entry": "src/units/lorawan-eu868/index.js",
+      "export": "Model",
+      "moduleExport": "GroveModule",
+      "reference": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit%20LoRaWAN-EU868/8.webp",
+      "officialDocs": "https://docs.m5stack.com/en/unit/Unit_LoRaWAN-EU868",
+      "research": "docs/research/lorawan-eu868/modeling.md",
+      "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+      "integration": {
+        "moduleExport": "GroveModule",
+        "accessoryExports": [
+          "Antenna"
+        ],
+        "externalRuntime": "m5agent/m5stack-esp-emulator"
+      },
+      "verification": {
+        "geometry": "docs/research/lorawan-eu868/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "face": "bottom",
+          "positionMm": [
+            0,
+            -32,
+            1.4
+          ],
+          "physicalContacts": 4,
+          "pins": [
+            {
+              "n": 1,
+              "name": "GND"
+            },
+            {
+              "n": 2,
+              "name": "5V"
+            },
+            {
+              "n": 3,
+              "name": "UART_RX"
+            },
+            {
+              "n": 4,
+              "name": "UART_TX"
+            }
+          ],
+          "pinGrid": {
+            "cols": 4,
+            "rows": 1,
+            "pitch": 2,
+            "center": [
+              0,
+              -0.2
+            ],
+            "columnOrder": [
+              4,
+              3,
+              2,
+              1
+            ]
+          },
+          "scope": "Fourcore mechanical only,noUART/AT/radio/electrical simulation"
+        },
+        {
+          "id": "antenna",
+          "connector": "m5.u184-eu868.sma",
+          "face": "top",
+          "positionMm": [
+            0,
+            39.4,
+            0
+          ],
+          "pins": [],
+          "scope": "Real threadedSMAmechanical bodywith own10 protruding solid centrepin/dielectric/retention;standardpolarity/threadfit unresolved,noRFsimulation"
+        }
+      ],
+      "controls": [],
+      "externalLeds": [],
+      "displays": [],
+      "joints": [],
+      "recursiveAccessoryJoints": [
+        "antenna/fold"
+      ],
+      "visualAnchors": [],
+      "accessories": {
+        "antenna": {
+          "port": "antenna",
+          "export": "Antenna",
+          "family": "m5.u184-eu868.sma",
+          "defaultAttached": true,
+          "option": "antenna",
+          "joints": [
+            "fold"
+          ],
+          "fullJointPath": "antenna/fold"
+        }
+      },
+      "accessoryAPIs": {
+        "Antenna": {
+          "export": "Antenna",
+          "metaId": "m5stack.unit.lorawan-eu868.antenna",
+          "connector": "m5.u184-eu868.sma",
+          "acceptedAtBodyPort": "antenna",
+          "defaultAttachedInModel": true,
+          "defaultAttachedInGroveModule": true,
+          "presenceOption": "antenna",
+          "parentFoldOption": "antennaFoldDeg",
+          "constructorDefaults": {
+            "foldDeg": 90
+          },
+          "constructorConfiguration": {
+            "foldDeg": {
+              "type": "number",
+              "min": 0,
+              "max": 90,
+              "default": 90,
+              "scope": "Externaldisplaybound,notratedlimits"
+            }
+          },
+          "componentOrder": [
+            "fold"
+          ],
+          "componentKinds": {
+            "fold": "joint"
+          },
+          "controls": [],
+          "leds": [],
+          "ports": [],
+          "joints": [
+            "fold"
+          ],
+          "passiveAnchors": [],
+          "paths": {
+            "standalone": "antenna/fold",
+            "module": "<upstream-port>/antenna/fold",
+            "stickS3HubSecondBranch": "grove/grove-2/antenna/fold"
+          },
+          "fold": {
+            "kind": "joint",
+            "continuous": false,
+            "rpmAllowed": false,
+            "defaultAngleDeg": 90,
+            "rangeDeg": [
+              0,
+              90
+            ],
+            "pivotMmInAccessoryPortFrame": [
+              0,
+              16.5,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "neutralEulerRad": [
+              0,
+              0,
+              1.5707963267948966
+            ],
+            "poseMeaning": "0 straight+Y,90 ownphoto folded+X",
+            "commands": {
+              "type": "joint",
+              "target": "antenna/fold",
+              "fields": [
+                "angleDeg",
+                "durationMs"
+              ],
+              "example": {
+                "type": "joint",
+                "target": "antenna/fold",
+                "angleDeg": 45,
+                "durationMs": 200
+              },
+              "stateCommand": {
+                "type": "state",
+                "target": "antenna/fold"
+              }
+            },
+            "movingPhysicalParts": [
+              "movingHub real1.05mm axle bore",
+              "movingNeck",
+              "own tapered rubber blade"
+            ],
+            "fixedPhysicalParts": [
+              "knurled coupling",
+              "inner metal liner",
+              "retaining rear stop",
+              "hollow centre receiver/deepstop and supporting dielectric",
+              "neck/fixedBase",
+              "two retaining cheeks",
+              "1mm axle andcaps"
+            ],
+            "radialAxleClearanceMm": 0.05,
+            "cheekToMovingHubAxialClearanceMm": 0.025,
+            "sourceEvidence": "Own4 visible foldingelbow/seam/sideaxlecap;own11 samefolded packagingpose",
+            "inferred": "Exact pivot/axis/0..90displaylimits/section/retention/fit;no secondmeasuredangle or ratedmechanics. No servo/automatic/RF behavior."
+          },
+          "physicalSupport": "Coupling hollow receiver is retained in dielectric;deepstop backs real centre air and accepts own10 body pin with inferred0.06radial clearance;knurled shell/liner/stop support neck/fixedyoke;realbored movinghub carried by fixedaxle/cheeks;movingarm supports blade",
+          "vendorLengthMm": 195,
+          "reconstructedCentrelineMm": 195,
+          "centrelineBasis": "22mm from lowercouplingnose(-5.5) to hinge(+16.5),plus173mm blade-axis run to tip;sections/pivot/installedfit inferred,not measurement",
+          "documentaryGainDbi": 2.8,
+          "documentaryImpedanceOhm": 50,
+          "commandsNoInputEcho": true,
+          "noAutomaticMotion": true,
+          "detachCommand": {
+            "type": "detach",
+            "target": "antenna"
+          },
+          "detachLifecycle": "Port ownsdisposal unless detach({dispose:false});reattach retainedAntenna restores foldstate and exact geometry/pose",
+          "otherComponents": []
+        }
+      },
+      "defaults": {
+        "antenna": true,
+        "antennaFoldDeg": 90
+      },
+      "defaultOptions": {
+        "antenna": true,
+        "antennaFoldDeg": 90
+      },
+      "canonicalCableInput": "grove",
+      "configurationSchema": {
+        "antenna": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Actual supplied own195mmEU868 rubberduck accessory with externallydriven realhinge;mechanical detach only"
+        },
+        "antennaFoldDeg": {
+          "type": "number",
+          "min": 0,
+          "max": 90,
+          "default": 90,
+          "meaning": "Ownphysicalhinge externallyprescribed displaypose;axis/pivot/0..90range inferred,not rated limits"
+        },
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Ink only;retain both actualfilms,nativefloor/metalwindow/PCB/module/ports and every physicalattribute/index/world"
+        }
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "EU868 含原装胶棒天线",
+          "options": {}
+        },
+        {
+          "id": "straight-antenna",
+          "name": "EU868 天线直立展示",
+          "options": {
+            "antennaFoldDeg": 0
+          }
+        },
+        {
+          "id": "without-antenna",
+          "name": "EU868 本体及实际空SMA座",
+          "options": {
+            "antenna": false
+          }
+        }
+      ],
+      "artwork": {
+        "kind": "reference-redraw",
+        "pngCount": 2,
+        "source": "docs/research/lorawan-eu868/artwork.json"
+      },
+      "nextAction": "Rootactualfrozen APIintegration;noGPU/manufacturing/electrical/RFacceptance"
+    },
+    {
+      "id": "atom-lite",
+      "category": "controller",
+      "name": "Atom Lite",
+      "sku": "C008",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        24,
+        9.5
+      ],
+      "historicalMm": [
+        24,
+        24,
+        10
+      ],
+      "cadEnvelopeMm": [
+        24.000003814697266,
+        24,
+        9.50714111328125
+      ],
+      "stage": "modeled",
+      "entry": "src/devices/atom-lite/index.js",
+      "export": "Model",
+      "reference": "https://raw.githubusercontent.com/m5stack/m5-docs/e5354c5dcc61d16fdc1dff9d92c2c760728d0b60/docs/assets/img/product_pics/core/minicore/atom/atom_lite_01.webp",
+      "officialDocs": "https://docs.m5stack.com/en/core/atom_lite",
+      "research": "docs/research/atom-lite/sources.json",
+      "constructionRoute": "own-original-C008-native-halves-plus-supported-visible-assembly",
+      "verification": {
+        "geometry": "docs/research/atom-lite/smoke.json",
+        "visual": null
+      },
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "position": [
+            0,
+            -12,
+            -2.15
+          ],
+          "pins": [
+            "GND",
+            "5V",
+            "G26",
+            "G32"
+          ]
+        },
+        {
+          "id": "usb",
+          "connector": "usb-c",
+          "position": [
+            0,
+            -12,
+            2.65
+          ]
+        },
+        {
+          "id": "ext-5p",
+          "connector": "m5.atom.ext-5p",
+          "position": [
+            7.62,
+            -2.54,
+            -4.75
+          ],
+          "pins": [
+            "3V3",
+            "G22",
+            "G19",
+            "G23",
+            "G33"
+          ]
+        },
+        {
+          "id": "ext-4p",
+          "connector": "m5.atom.ext-4p",
+          "position": [
+            -7.62,
+            -3.81,
+            -4.75
+          ],
+          "pins": [
+            "G21",
+            "G25",
+            "5V",
+            "GND"
+          ]
+        }
+      ],
+      "controls": [
+        "button",
+        "reset"
+      ],
+      "externalLeds": [
+        "rgb"
+      ],
+      "displays": [],
+      "joints": [],
+      "sensors": [],
+      "visualAnchors": [],
+      "defaults": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "Atom Lite C008 完整主机",
+          "options": {}
+        }
+      ],
+      "configurationSchema": {
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Ink only;retain both physical carriers,all native/source attrs/index,PCB/connectors/contacts/optics/support and both real cap motions"
+        }
+      },
+      "exports": [
+        "Model",
+        "spec",
+        "defaults",
+        "configurations",
+        "configurationSchema"
+      ],
+      "defaultExport": "Model",
+      "artwork": {
+        "id": "atom-lite",
+        "sku": "C008",
+        "ordinaryPngCount": 2,
+        "actualPanelCount": 2,
+        "physicalFilms": 2,
+        "panels": [
+          {
+            "id": "bottom",
+            "path": "src/devices/atom-lite/artwork/bottom.png",
+            "sha256": "3f95fcdb3e2d4f048418b2264ad8514f5af624ad216f1a2e3b112d8f6a5b86f5",
+            "pixelSize": [
+              1180,
+              1480
+            ],
+            "kind": "reference-redraw",
+            "sourceUrl": "https://raw.githubusercontent.com/m5stack/m5-docs/e5354c5dcc61d16fdc1dff9d92c2c760728d0b60/docs/assets/img/product_pics/core/minicore/atom/atom_lite_02.webp",
+            "sourceSha256": "f09f7d33fcbc8210a456c0d97f6d6299d9dca420c83bc750cb78400db857292e",
+            "readableText": [
+              "ATOM LITE",
+              "ESP32 PICO",
+              "Neo=G27",
+              "Btn=G39",
+              "M2 HOLE",
+              "PH2.0-4P",
+              "3V3 G22 G19 G23 G33",
+              "IR G12 RST G21 G25 5V G",
+              "BPS1200~115.2K/250K/500K/750K/1.5M",
+              "G 5V G26 G32"
+            ],
+            "method": "Independent text/block/symbol drawing from clear own PH2.0-4P photograph;no photo pixels/crop/private HY source;Arial and positions approximated;M2 guide adapted to actual opening",
+            "physicalSizeMm": [
+              11.8,
+              14.8
+            ],
+            "actualM2ApertureRadiusMm": 1.78,
+            "layoutBoundary": "Adapted placement and yellow M2 guide around real native bore;no text clipped by hole,not pixel-exact original vector"
+          },
+          {
+            "id": "compliance",
+            "path": "src/devices/atom-lite/artwork/compliance.png",
+            "sha256": "3a7661a742eeebb012e5be6f7276c0255cdd7875042d0da916abc3fca87c734a",
+            "pixelSize": [
+              470,
+              164
+            ],
+            "kind": "official-raster",
+            "method": "Approved supplied-flat ordinary470x164 raster copied byte-for-byte;native aspect preserved,not described as high-resolution vector rendering",
+            "physicalSizeMm": [
+              14.1,
+              4.92
+            ],
+            "aspectPreserved": true,
+            "metadataEmpty": true
+          }
+        ],
+        "physicalInvariant": "Rest,each partial key,bothheld/cancelled/returned and connected transformedHUB/Button/OLED:all actual physical attrs/index/world equal withinkoff;carriers/nativefloors/deepreceivers/contacts/PCB/support/lens retained",
+        "omitted": "Unreadablemicrotext/individualcodes/privateHYprintrevision/photo pixels/crops/privatevector/generator/intermediates",
+        "privacy": "OnlyordinaryapprovedPNGandreference-redrawPNGdistributed;privateCSV/sourceURL/originalfilename/rowmapping/vector/raworiginal/generatornotdistributed"
+      },
+      "nextAction": "Continueotherproducts;ownnominal/native/hiddenBOM/flexure/fitandartworkapproximationsremain;noGPUorphysicalverificationclaim"
+    },
+    {
+      "id": "atom-matrix",
+      "name": "Atom Matrix original",
+      "sku": "C008-B",
+      "vendor": "M5Stack",
+      "category": "controller",
+      "stage": "modeled",
+      "scope": "visual-only",
+      "entry": "src/devices/atom-matrix/index.js",
+      "export": "Model",
+      "size": [
+        24,
+        24,
+        13.8
+      ],
+      "defaults": {
+        "artwork": true
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "原 Atom Matrix C008-B",
+          "options": {}
+        }
+      ],
+      "configurationSchema": {
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Printed ink only;all physical native shell,PCB,receiver,contacts,lenses and support remain"
+        }
+      },
+      "namedExports": [
+        "Model",
+        "spec",
+        "defaults",
+        "configurations",
+        "configurationSchema"
+      ],
+      "defaultExport": "Model",
+      "components": [
+        {
+          "id": "led0",
+          "kind": "led"
+        },
+        {
+          "id": "led1",
+          "kind": "led"
+        },
+        {
+          "id": "led2",
+          "kind": "led"
+        },
+        {
+          "id": "led3",
+          "kind": "led"
+        },
+        {
+          "id": "led4",
+          "kind": "led"
+        },
+        {
+          "id": "led5",
+          "kind": "led"
+        },
+        {
+          "id": "led6",
+          "kind": "led"
+        },
+        {
+          "id": "led7",
+          "kind": "led"
+        },
+        {
+          "id": "led8",
+          "kind": "led"
+        },
+        {
+          "id": "led9",
+          "kind": "led"
+        },
+        {
+          "id": "led10",
+          "kind": "led"
+        },
+        {
+          "id": "led11",
+          "kind": "led"
+        },
+        {
+          "id": "led12",
+          "kind": "led"
+        },
+        {
+          "id": "led13",
+          "kind": "led"
+        },
+        {
+          "id": "led14",
+          "kind": "led"
+        },
+        {
+          "id": "led15",
+          "kind": "led"
+        },
+        {
+          "id": "led16",
+          "kind": "led"
+        },
+        {
+          "id": "led17",
+          "kind": "led"
+        },
+        {
+          "id": "led18",
+          "kind": "led"
+        },
+        {
+          "id": "led19",
+          "kind": "led"
+        },
+        {
+          "id": "led20",
+          "kind": "led"
+        },
+        {
+          "id": "led21",
+          "kind": "led"
+        },
+        {
+          "id": "led22",
+          "kind": "led"
+        },
+        {
+          "id": "led23",
+          "kind": "led"
+        },
+        {
+          "id": "led24",
+          "kind": "led"
+        },
+        {
+          "id": "button",
+          "kind": "button"
+        },
+        {
+          "id": "reset",
+          "kind": "button"
+        },
+        {
+          "id": "ext-5p",
+          "kind": "port"
+        },
+        {
+          "id": "ext-4p",
+          "kind": "port"
+        },
+        {
+          "id": "grove",
+          "kind": "port"
+        },
+        {
+          "id": "usb",
+          "kind": "port"
+        }
+      ],
+      "controls": [
+        {
+          "id": "button",
+          "kind": "button",
+          "travelMm": 0.14,
+          "longPressMs": 0,
+          "latching": false,
+          "scope": "input-intent-only"
+        },
+        {
+          "id": "reset",
+          "kind": "button",
+          "travelMm": 0.14,
+          "longPressMs": 0,
+          "latching": false,
+          "scope": "input-intent-only"
+        }
+      ],
+      "ports": [
+        {
+          "id": "grove",
+          "connector": "grove",
+          "pins": [
+            "GND",
+            "5V",
+            "G26",
+            "G32"
+          ]
+        },
+        {
+          "id": "usb",
+          "connector": "usb-c",
+          "pins": []
+        },
+        {
+          "id": "ext-5p",
+          "connector": "m5.atom.ext-5p",
+          "pins": [
+            "G33",
+            "G23",
+            "G19",
+            "G22",
+            "3V3"
+          ]
+        },
+        {
+          "id": "ext-4p",
+          "connector": "m5.atom.ext-4p",
+          "pins": [
+            "GND",
+            "5V",
+            "G25",
+            "G21"
+          ]
+        }
+      ],
+      "artwork": {
+        "pngCount": 2,
+        "kind": "reference-redraw"
+      },
+      "verification": {
+        "geometry": "docs/research/atom-matrix/reset-amendment.json",
+        "visual": null,
+        "historicalGeometry": "docs/research/atom-matrix/smoke.json"
+      },
+      "research": "docs/research/atom-matrix/"
+    },
+    {
+      "id": "atoms3-lite",
+      "category": "controller",
+      "name": "AtomS3 Lite",
+      "sku": "C124",
+      "scope": "visual-only",
+      "nominalMm": [
+        24,
+        24,
+        9.5
+      ],
+      "cadEnvelopeMm": [
+        24,
+        24,
+        9.50714111328125
+      ],
+      "visualEnvelopeMm": [
+        24.000003814697266,
+        24.16999997615814,
+        9.50714111328125
+      ],
+      "stage": "modeled",
+      "entry": "src/devices/atoms3-lite/index.js",
+      "export": "Model",
+      "officialDocs": "https://docs.m5stack.com/en/core/AtomS3%20Lite",
+      "research": "docs/research/atoms3-lite/sources.json",
+      "display": null,
+      "integration": {
+        "externalRuntime": "m5agent/m5stack-esp-emulator",
+        "moduleExport": null,
+        "controlMap": {
+          "button": "button",
+          "reset": "reset"
+        },
+        "displayTarget": null
+      },
+      "ports": [
+        "usb",
+        "grove",
+        "ext-5p",
+        "ext-4p"
+      ],
+      "controls": [
+        "button",
+        "reset"
+      ],
+      "externalLeds": [
+        "rgb"
+      ],
+      "displays": [],
+      "joints": [],
+      "defaults": {
+        "artwork": true
+      },
+      "configurationSchema": {
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Only the two ink panels toggle;physical carriers,all native faces,contacts,optics and actuation remain."
+        }
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整本体与贴纸",
+          "options": {}
+        }
+      ],
+      "verification": {
+        "geometry": "docs/research/atoms3-lite/smoke.json",
+        "visual": null
+      },
+      "artwork": {
+        "pngCount": 2,
+        "panelCount": 2,
+        "kind": "official-raster",
+        "physicalCarriersRetainedWithoutInk": true
+      },
+      "limitations": [
+        "C124 own white ESP32-S3FN8 model;no LCD/IR visible glow/second download lamp/firmware behavior.",
+        "Concealed components,supports,contact/optical dimensions and key travel inferred;no manufacturing/electrical/GPU/physical-device verification.",
+        "Conformity image retains native402x146 resolution;private source metadata and vectors are not included."
+      ],
+      "nextAction": "Review visible appearance when requested;retain modeled until actual visual acceptance."
     }
   ],
   "artworkPolicy": "Only reviewed raster stickers are distributed. CSV, private source mappings, vector originals and vector intermediates remain outside the repository. Photographic sticker crops remain disabled. Official physical adhesive films may span factory recesses; artwork must not substitute for missing assembly geometry."

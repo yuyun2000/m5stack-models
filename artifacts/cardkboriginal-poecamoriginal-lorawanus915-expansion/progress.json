@@ -1,0 +1,3816 @@
+{
+  "savedAt": "2026-10-26T23:53:25.255447+00:00",
+  "stage": "modeled",
+  "scope": "Own original U035/U121-B parametric and U184-US915 native physical assemblies,actual cap input/externally driven light appearance and matching ordinaryPNG;no browser or wholecatalog acceptance",
+  "counts": {
+    "controller": 14,
+    "unit": 182,
+    "modeled": 196,
+    "verified": 0
+  },
+  "localHead": "296128b6173562d51976073dfa50a5b0ec945030",
+  "publication": "Local working-tree increment only; no commit or push",
+  "products": [
+    {
+      "id": "cardkb-original",
+      "status": "pass",
+      "report": "docs/research/cardkb-original/smoke.json",
+      "physicalReceipt": "physical",
+      "meshes": 870,
+      "triangles": 75880
+    },
+    {
+      "id": "poe-cam-w",
+      "status": "pass",
+      "report": "docs/research/poe-cam-w/smoke.json",
+      "physicalReceipt": "physical",
+      "meshes": 532,
+      "triangles": 62288
+    },
+    {
+      "id": "lorawan-us915",
+      "status": "pass",
+      "report": "docs/research/lorawan-us915/smoke.json",
+      "physicalReceipt": "physical",
+      "meshes": 236,
+      "triangles": 39796
+    }
+  ],
+  "pngCount": 4,
+  "rasters": [
+    {
+      "path": "src/units/cardkb-original/artwork/front-pcb.png",
+      "pixels": [
+        2816,
+        1728
+      ],
+      "sha256": "ede4197555824229f0ebad996426caa58dbd4163f93cddf2a0e5ab73d1223c18"
+    },
+    {
+      "path": "src/units/poe-cam-w/reference-redraw-back.png",
+      "pixels": [
+        2200,
+        4550
+      ],
+      "sha256": "48a793ab0b8b8095827459fb103a7e654e2680f1561579b6d40867678dec4e82"
+    },
+    {
+      "path": "src/units/lorawan-us915/artwork/back.png",
+      "pixels": [
+        790,
+        1800
+      ],
+      "sha256": "6c033f0506147acb0dbc129b4677a21fe57c0bdaa55d24c186246116ae1996ee"
+    },
+    {
+      "path": "src/units/lorawan-us915/artwork/front.png",
+      "pixels": [
+        790,
+        1800
+      ],
+      "sha256": "096195de6f17515b0b55f98d80d935dc4ba2d2f3e8bd0fecd13b64814ddc05c1"
+    }
+  ],
+  "frozenPublicAPI": {
+    "cardkb-original": {
+      "exports": [
+        "GroveModule",
+        "KEYMAP",
+        "KEYS",
+        "Model",
+        "configurationSchema",
+        "configurations",
+        "defaults",
+        "spec"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [
+        "key-esc",
+        "key-1",
+        "key-2",
+        "key-3",
+        "key-4",
+        "key-5",
+        "key-6",
+        "key-7",
+        "key-8",
+        "key-9",
+        "key-0",
+        "key-backspace",
+        "key-tab",
+        "key-q",
+        "key-w",
+        "key-e",
+        "key-r",
+        "key-t",
+        "key-y",
+        "key-u",
+        "key-i",
+        "key-o",
+        "key-p",
+        "key-fn",
+        "key-shift",
+        "key-a",
+        "key-s",
+        "key-d",
+        "key-f",
+        "key-g",
+        "key-h",
+        "key-j",
+        "key-k",
+        "key-l",
+        "key-enter",
+        "key-sym",
+        "key-z",
+        "key-x",
+        "key-c",
+        "key-v",
+        "key-b",
+        "key-n",
+        "key-m",
+        "key-comma",
+        "key-period",
+        "key-space",
+        "key-up",
+        "key-left",
+        "key-right",
+        "key-down"
+      ],
+      "leds": [
+        "rgb"
+      ],
+      "joysticks": [],
+      "manualInputs": [],
+      "displays": [],
+      "ports": [
+        "grove"
+      ],
+      "joints": [],
+      "anchors": [],
+      "accessoryExports": [],
+      "defaults": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "原版 MEGA328P U035 完整裸板键盘",
+          "options": {}
+        }
+      ],
+      "pngCount": 1,
+      "visualCommands": {
+        "keys": {
+          "type": "button",
+          "targets": [
+            "key-esc",
+            "key-1",
+            "key-2",
+            "key-3",
+            "key-4",
+            "key-5",
+            "key-6",
+            "key-7",
+            "key-8",
+            "key-9",
+            "key-0",
+            "key-backspace",
+            "key-tab",
+            "key-q",
+            "key-w",
+            "key-e",
+            "key-r",
+            "key-t",
+            "key-y",
+            "key-u",
+            "key-i",
+            "key-o",
+            "key-p",
+            "key-fn",
+            "key-shift",
+            "key-a",
+            "key-s",
+            "key-d",
+            "key-f",
+            "key-g",
+            "key-h",
+            "key-j",
+            "key-k",
+            "key-l",
+            "key-enter",
+            "key-sym",
+            "key-z",
+            "key-x",
+            "key-c",
+            "key-v",
+            "key-b",
+            "key-n",
+            "key-m",
+            "key-comma",
+            "key-period",
+            "key-space",
+            "key-up",
+            "key-left",
+            "key-right",
+            "key-down"
+          ],
+          "actions": [
+            "press",
+            "release",
+            "cancel",
+            "click",
+            "state"
+          ],
+          "travelMm": 0.18,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "longPressMs": 0,
+          "sourcePolicy": "Momentary multiple sources,last source release;cancel suppresses click"
+        },
+        "rgb": {
+          "type": "led",
+          "target": "rgb",
+          "fields": [
+            "on",
+            "color",
+            "brightness"
+          ],
+          "default": {
+            "color": "#ffffff",
+            "brightness": 0
+          },
+          "externalNoEcho": true
+        },
+        "ports": {
+          "types": [
+            "attach",
+            "detach"
+          ],
+          "targets": [
+            "grove"
+          ],
+          "scope": "Mechanical Grove only;no firmware/I2C or reset behavior"
+        },
+        "unitFrame": {
+          "type": "pose",
+          "target": "unitFrame",
+          "fields": [
+            "position",
+            "rotation",
+            "quaternion",
+            "distance"
+          ],
+          "entry": "GroveModule only"
+        },
+        "cable": {
+          "type": "cable",
+          "target": "cable",
+          "fields": [
+            "slack",
+            "bend"
+          ],
+          "entry": "GroveModule only",
+          "wireCount": 4,
+          "plugCount": 2
+        }
+      },
+      "accessories": {},
+      "accessoryAPIs": {}
+    },
+    "poe-cam-w": {
+      "exports": [
+        "GroveModule",
+        "Model",
+        "configurationSchema",
+        "configurations",
+        "defaults",
+        "spec"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [
+        "user",
+        "reset"
+      ],
+      "leds": [
+        "g0",
+        "link",
+        "activity"
+      ],
+      "joysticks": [],
+      "manualInputs": [],
+      "displays": [],
+      "ports": [
+        "grove",
+        "ethernet",
+        "download-en",
+        "download-uart"
+      ],
+      "joints": [],
+      "anchors": [
+        "camera"
+      ],
+      "accessoryExports": [],
+      "defaults": {},
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整原版 PoE CAM-W U121-B",
+          "options": {}
+        }
+      ],
+      "pngCount": 1,
+      "visualCommands": {
+        "user": {
+          "type": "button",
+          "actions": [
+            "press",
+            "release",
+            "cancel",
+            "click",
+            "state"
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "travelMm": 0.25,
+          "scope": "Actual G37 cap/follower motion and input intent only,no GPIO/firmware"
+        },
+        "reset": {
+          "type": "button",
+          "actions": [
+            "press",
+            "release",
+            "cancel",
+            "click",
+            "state"
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "travelMm": 0.18,
+          "scope": "Actual recessed cap/stem motion and input intent only,no reset/power/boot/firmware"
+        },
+        "g0": {
+          "type": "led",
+          "fields": [
+            "on",
+            "brightness"
+          ],
+          "fixedColor": "#267be8",
+          "defaultBrightness": 0,
+          "colorRequest": "ignored"
+        },
+        "link": {
+          "type": "led",
+          "fields": [
+            "on",
+            "brightness"
+          ],
+          "fixedColor": "#e0bd35",
+          "defaultBrightness": 0,
+          "colorRequest": "ignored"
+        },
+        "activity": {
+          "type": "led",
+          "fields": [
+            "on",
+            "brightness"
+          ],
+          "fixedColor": "#2eae61",
+          "defaultBrightness": 0,
+          "colorRequest": "ignored"
+        },
+        "camera": {
+          "kind": "component",
+          "interactive": false,
+          "state": {},
+          "sensor": "OV2640",
+          "documentaryFovDeg": 65,
+          "commands": [],
+          "scope": "Passive inferred optical frame,no calibrated focal plane/video/framebuffer/focus/AI"
+        },
+        "unitFrame": {
+          "type": "pose",
+          "fields": [
+            "position",
+            "rotation",
+            "quaternion",
+            "distance"
+          ]
+        },
+        "cable": {
+          "type": "cable",
+          "fields": [
+            "slack",
+            "bend"
+          ]
+        }
+      },
+      "accessories": {},
+      "accessoryAPIs": {}
+    },
+    "lorawan-us915": {
+      "exports": [
+        "Antenna",
+        "GroveModule",
+        "Model",
+        "configurationSchema",
+        "configurations",
+        "defaults",
+        "spec"
+      ],
+      "canonicalCableInput": "grove",
+      "controls": [],
+      "leds": [],
+      "joysticks": [],
+      "manualInputs": [],
+      "displays": [],
+      "ports": [
+        "grove",
+        "antenna"
+      ],
+      "joints": [],
+      "anchors": [],
+      "accessoryExports": [
+        "Antenna"
+      ],
+      "defaults": {
+        "antenna": true,
+        "antennaFoldDeg": 90
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "US915 含原装胶棒天线",
+          "options": {}
+        },
+        {
+          "id": "straight-antenna",
+          "name": "US915 天线直立展示",
+          "options": {
+            "antennaFoldDeg": 0
+          }
+        },
+        {
+          "id": "without-antenna",
+          "name": "US915 本体及实际空SMA座",
+          "options": {
+            "antenna": false
+          }
+        }
+      ],
+      "pngCount": 2,
+      "visualCommands": {
+        "ports": {
+          "types": [
+            "attach",
+            "detach"
+          ],
+          "targets": [
+            "grove",
+            "antenna"
+          ],
+          "scope": "Mechanicalonly"
+        },
+        "unitFrame": {
+          "type": "pose",
+          "target": "unitFrame",
+          "fields": [
+            "position",
+            "rotation",
+            "quaternion",
+            "distance"
+          ]
+        },
+        "cable": {
+          "type": "cable",
+          "target": "cable",
+          "fields": [
+            "slack",
+            "bend"
+          ]
+        },
+        "accessoryFold": {
+          "type": "joint",
+          "target": "antenna/fold",
+          "fields": [
+            "angleDeg",
+            "durationMs"
+          ],
+          "example": {
+            "type": "joint",
+            "target": "antenna/fold",
+            "angleDeg": 45,
+            "durationMs": 200
+          },
+          "stateCommand": {
+            "type": "state",
+            "target": "antenna/fold"
+          }
+        }
+      },
+      "accessories": {
+        "antenna": {
+          "port": "antenna",
+          "export": "Antenna",
+          "family": "m5.u184-us915.sma",
+          "defaultAttached": true,
+          "option": "antenna",
+          "joints": [
+            "fold"
+          ],
+          "fullJointPath": "antenna/fold"
+        }
+      },
+      "accessoryAPIs": {
+        "Antenna": {
+          "export": "Antenna",
+          "metaId": "m5stack.unit.lorawan-us915.antenna",
+          "connector": "m5.u184-us915.sma",
+          "acceptedAtBodyPort": "antenna",
+          "defaultAttachedInModel": true,
+          "defaultAttachedInGroveModule": true,
+          "presenceOption": "antenna",
+          "parentFoldOption": "antennaFoldDeg",
+          "constructorDefaults": {
+            "foldDeg": 90
+          },
+          "constructorConfiguration": {
+            "foldDeg": {
+              "type": "number",
+              "min": 0,
+              "max": 90,
+              "default": 90,
+              "scope": "Externaldisplaybound,notratedlimits"
+            }
+          },
+          "componentOrder": [
+            "fold"
+          ],
+          "componentKinds": {
+            "fold": "joint"
+          },
+          "controls": [],
+          "leds": [],
+          "ports": [],
+          "joints": [
+            "fold"
+          ],
+          "passiveAnchors": [],
+          "paths": {
+            "standalone": "antenna/fold",
+            "module": "<upstream-port>/antenna/fold",
+            "stickS3HubThirdBranch": "grove/grove-3/antenna/fold"
+          },
+          "fold": {
+            "kind": "joint",
+            "continuous": false,
+            "rpmAllowed": false,
+            "defaultAngleDeg": 90,
+            "rangeDeg": [
+              0,
+              90
+            ],
+            "pivotMmInAccessoryPortFrame": [
+              0,
+              16.5,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "neutralEulerRad": [
+              0,
+              0,
+              1.5707963267948966
+            ],
+            "poseMeaning": "0 straight+Y,90 ownphoto folded+X",
+            "commands": {
+              "type": "joint",
+              "target": "antenna/fold",
+              "fields": [
+                "angleDeg",
+                "durationMs"
+              ],
+              "example": {
+                "type": "joint",
+                "target": "antenna/fold",
+                "angleDeg": 45,
+                "durationMs": 200
+              },
+              "stateCommand": {
+                "type": "state",
+                "target": "antenna/fold"
+              }
+            },
+            "movingPhysicalParts": [
+              "movingHub real1.05mm axle bore",
+              "movingNeck",
+              "own tapered rubber blade"
+            ],
+            "fixedPhysicalParts": [
+              "knurled coupling",
+              "inner metal liner",
+              "retaining rear stop",
+              "male SMApin and supporting dielectric",
+              "neck/fixedBase",
+              "two retaining cheeks",
+              "1mm axle andcaps"
+            ],
+            "radialAxleClearanceMm": 0.05,
+            "cheekToMovingHubAxialClearanceMm": 0.025,
+            "sourceEvidence": "Own4 visible foldingelbow/seam/sideaxlecap;own11 samefolded packagingpose",
+            "inferred": "Exact pivot/axis/0..90displaylimits/section/retention/fit;no secondmeasuredangle or ratedmechanics. No servo/automatic/RF behavior."
+          },
+          "physicalSupport": "Coupling male pin is retained in dielectric;knurled shell/liner/stop support neck/fixedyoke;realbored movinghub carried by fixedaxle/cheeks;movingarm supports blade",
+          "vendorLengthMm": 195,
+          "reconstructedCentrelineMm": 195,
+          "centrelineBasis": "22mm from lowercouplingnose(-5.5) to hinge(+16.5),plus173mm blade-axis run to tip;sections/pivot/installedfit inferred,not measurement",
+          "documentaryGainDbi": 2.3,
+          "documentaryImpedanceOhm": 50,
+          "commandsNoInputEcho": true,
+          "noAutomaticMotion": true,
+          "detachCommand": {
+            "type": "detach",
+            "target": "antenna"
+          },
+          "detachLifecycle": "Port ownsdisposal unless detach({dispose:false});reattach retainedAntenna restores foldstate and exact geometry/pose",
+          "otherComponents": []
+        }
+      }
+    }
+  },
+  "fixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "cardkb-original",
+        "body": [
+          "key-esc",
+          "key-1",
+          "key-2",
+          "key-3",
+          "key-4",
+          "key-5",
+          "key-6",
+          "key-7",
+          "key-8",
+          "key-9",
+          "key-0",
+          "key-backspace",
+          "key-tab",
+          "key-q",
+          "key-w",
+          "key-e",
+          "key-r",
+          "key-t",
+          "key-y",
+          "key-u",
+          "key-i",
+          "key-o",
+          "key-p",
+          "key-fn",
+          "key-shift",
+          "key-a",
+          "key-s",
+          "key-d",
+          "key-f",
+          "key-g",
+          "key-h",
+          "key-j",
+          "key-k",
+          "key-l",
+          "key-enter",
+          "key-sym",
+          "key-z",
+          "key-x",
+          "key-c",
+          "key-v",
+          "key-b",
+          "key-n",
+          "key-m",
+          "key-comma",
+          "key-period",
+          "key-space",
+          "key-up",
+          "key-left",
+          "key-right",
+          "key-down",
+          "rgb",
+          "grove"
+        ],
+        "ports": [
+          "grove"
+        ],
+        "controls": [
+          "key-esc",
+          "key-1",
+          "key-2",
+          "key-3",
+          "key-4",
+          "key-5",
+          "key-6",
+          "key-7",
+          "key-8",
+          "key-9",
+          "key-0",
+          "key-backspace",
+          "key-tab",
+          "key-q",
+          "key-w",
+          "key-e",
+          "key-r",
+          "key-t",
+          "key-y",
+          "key-u",
+          "key-i",
+          "key-o",
+          "key-p",
+          "key-fn",
+          "key-shift",
+          "key-a",
+          "key-s",
+          "key-d",
+          "key-f",
+          "key-g",
+          "key-h",
+          "key-j",
+          "key-k",
+          "key-l",
+          "key-enter",
+          "key-sym",
+          "key-z",
+          "key-x",
+          "key-c",
+          "key-v",
+          "key-b",
+          "key-n",
+          "key-m",
+          "key-comma",
+          "key-period",
+          "key-space",
+          "key-up",
+          "key-left",
+          "key-right",
+          "key-down"
+        ],
+        "leds": [
+          "rgb"
+        ],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-original-MEGA328P-U035-photo-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 870,
+          "triangles": 75880,
+          "closedDirectedPositiveFrontSide": true,
+          "actualEnvelopeMm": [
+            88,
+            54,
+            5.150000023841859
+          ],
+          "provisionalNominalMm": [
+            88,
+            54,
+            5
+          ],
+          "conflictingPhotoCaptionMm": [
+            84,
+            54
+          ],
+          "actualLocatedMountingHoles": 1,
+          "unresolvedOldTwoLegoClaim": true,
+          "ispPlatedHoles": 6,
+          "drilledWallRays": 28,
+          "individualMomentaryActuators": 50,
+          "movingMeshesPerKey": 2,
+          "inferredTravelMm": 0.18,
+          "actualMCULeads": 32,
+          "groveContacts": 4,
+          "groveRetainedReturns": 4,
+          "groveVerticalTails": 4,
+          "grovePlatedBores": 4,
+          "groveAnnuli": 8,
+          "externalRGB": 1,
+          "physicalFilms": 0,
+          "scope": "Own original U035 only;provisional dimensions,pitches,hidden supports/contacts and travel inferred,no manufacturing/electrical/firmware/combination/HID acceptance"
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-original-MEGA328P-U035-photo-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 870,
+          "triangles": 75880,
+          "closedDirectedPositiveFrontSide": true,
+          "actualEnvelopeMm": [
+            88,
+            54.000000000000014,
+            5.150000023841855
+          ],
+          "provisionalNominalMm": [
+            88,
+            54,
+            5
+          ],
+          "conflictingPhotoCaptionMm": [
+            84,
+            54
+          ],
+          "actualLocatedMountingHoles": 1,
+          "unresolvedOldTwoLegoClaim": true,
+          "ispPlatedHoles": 6,
+          "drilledWallRays": 28,
+          "individualMomentaryActuators": 50,
+          "movingMeshesPerKey": 2,
+          "inferredTravelMm": 0.18,
+          "actualMCULeads": 32,
+          "groveContacts": 4,
+          "groveRetainedReturns": 4,
+          "groveVerticalTails": 4,
+          "grovePlatedBores": 4,
+          "groveAnnuli": 8,
+          "externalRGB": 1,
+          "physicalFilms": 0,
+          "scope": "Own original U035 only;provisional dimensions,pitches,hidden supports/contacts and travel inferred,no manufacturing/electrical/firmware/combination/HID acceptance"
+        }
+      },
+      {
+        "id": "poe-cam-w",
+        "body": [
+          "camera",
+          "grove",
+          "ethernet",
+          "download-en",
+          "download-uart",
+          "user",
+          "reset",
+          "g0",
+          "link",
+          "activity"
+        ],
+        "ports": [
+          "grove",
+          "ethernet",
+          "download-en",
+          "download-uart"
+        ],
+        "controls": [
+          "user",
+          "reset"
+        ],
+        "leds": [
+          "g0",
+          "link",
+          "activity"
+        ],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalMeshes": 532,
+          "physicalBodyMeshes": 532,
+          "triangles": 62288,
+          "allClosedPositiveDirectedEdges": true,
+          "actualEnvelopeMm": [
+            24.000000095367426,
+            64.00000042915345,
+            18.000000002980237
+          ],
+          "nominalModelAxesMm": [
+            24,
+            64,
+            18
+          ],
+          "rearClosureAndPCBPoEBackingRays": 9,
+          "realRearFilm": 1,
+          "actualUncolouredM5": true,
+          "clipSlots": 4,
+          "clipFrontSideWallRays": 16,
+          "hangingKeyhole": true,
+          "keyholeFrontSideWallRays": 3,
+          "optical": {
+            "sensor": "OV2640",
+            "documentaryFovDeg": 65,
+            "passiveFrame": true,
+            "glassFirst": true,
+            "wallRays": 8,
+            "retainedFPCContacts": 24
+          },
+          "groveContacts": 4,
+          "rj45Contacts": 8,
+          "rj45RealDeepCavity": true,
+          "serviceSockets": 2,
+          "servicePhysicalPins": 6,
+          "serviceBoreWallRays": 12,
+          "pcbDrills": 20,
+          "pcbFrontSideWallRays": 80,
+          "platedBores": 20,
+          "annularLands": 40,
+          "realMovingMeshes": {
+            "user": 2,
+            "reset": 2
+          },
+          "externallyDrivenFixedLeds": [
+            "g0-blue",
+            "link-yellow",
+            "activity-green"
+          ],
+          "externallyVisibleEmitterRays": 3,
+          "noExteriorSK6812": true,
+          "standBrickOmitted": true,
+          "scope": "Exact original U121-B;hidden wall/PCB/PoE/contact/optical/lightpath/BOM/travel/fit inferred,no sibling native,network/electrical/firmware/GPU/hardware/manufacturing acceptance"
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalMeshes": 532,
+          "physicalBodyMeshes": 532,
+          "triangles": 62288,
+          "allClosedPositiveDirectedEdges": true,
+          "actualEnvelopeMm": [
+            24.000000095367454,
+            64.0000004291534,
+            18.000000002980244
+          ],
+          "nominalModelAxesMm": [
+            24,
+            64,
+            18
+          ],
+          "rearClosureAndPCBPoEBackingRays": 9,
+          "realRearFilm": 1,
+          "actualUncolouredM5": true,
+          "clipSlots": 4,
+          "clipFrontSideWallRays": 16,
+          "hangingKeyhole": true,
+          "keyholeFrontSideWallRays": 3,
+          "optical": {
+            "sensor": "OV2640",
+            "documentaryFovDeg": 65,
+            "passiveFrame": true,
+            "glassFirst": true,
+            "wallRays": 8,
+            "retainedFPCContacts": 24
+          },
+          "groveContacts": 4,
+          "rj45Contacts": 8,
+          "rj45RealDeepCavity": true,
+          "serviceSockets": 2,
+          "servicePhysicalPins": 6,
+          "serviceBoreWallRays": 12,
+          "pcbDrills": 20,
+          "pcbFrontSideWallRays": 80,
+          "platedBores": 20,
+          "annularLands": 40,
+          "realMovingMeshes": {
+            "user": 2,
+            "reset": 2
+          },
+          "externallyDrivenFixedLeds": [
+            "g0-blue",
+            "link-yellow",
+            "activity-green"
+          ],
+          "externallyVisibleEmitterRays": 3,
+          "noExteriorSK6812": true,
+          "standBrickOmitted": true,
+          "scope": "Exact original U121-B;hidden wall/PCB/PoE/contact/optical/lightpath/BOM/travel/fit inferred,no sibling native,network/electrical/firmware/GPU/hardware/manufacturing acceptance"
+        }
+      },
+      {
+        "id": "lorawan-us915",
+        "body": [
+          "grove",
+          "antenna"
+        ],
+        "ports": [
+          "grove",
+          "antenna"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+          "physicalMeshes": 236,
+          "physicalBodyMeshes": 236,
+          "triangles": 39796,
+          "nativeTriangles": 6592,
+          "nativeRawTriangles": 13184,
+          "duplicatePreviewFaces": 6592,
+          "allNativeAttributesIndexSourceFaceIdRetained": true,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nativeShellMm": [
+            24,
+            64,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            71.39999980931361,
+            8.000000000000608
+          ],
+          "documentBodyMm": [
+            24,
+            71.4,
+            8
+          ],
+          "nativeBoreWallRays": 16,
+          "actualNativeTubeToPcbReliefMm": [
+            0.5453857426036848,
+            0.5453834537852345
+          ],
+          "realNativeRecessFilmBackingRays": 6,
+          "physicalFilms": 2,
+          "actualSmaMetalWindows": 2,
+          "groveWallRays": 4,
+          "actualGroveContacts": 4,
+          "actualPlatedBores": 4,
+          "moduleRetainedTerminals": 32,
+          "realRecessedScrews": 3,
+          "accessoryPresent": true,
+          "accessoryMeshes": 47,
+          "accessoryTriangles": 4948,
+          "ownLedButtonJointApiCount": 0,
+          "antennaVendorLengthMm": 195,
+          "antennaDocumentaryGainDbi": 2.3,
+          "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+        },
+        "transformedStructure": {
+          "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+          "physicalMeshes": 236,
+          "physicalBodyMeshes": 236,
+          "triangles": 39796,
+          "nativeTriangles": 6592,
+          "nativeRawTriangles": 13184,
+          "duplicatePreviewFaces": 6592,
+          "allNativeAttributesIndexSourceFaceIdRetained": true,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nativeShellMm": [
+            24,
+            64,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            71.39999980931361,
+            8.000000000000608
+          ],
+          "documentBodyMm": [
+            24,
+            71.4,
+            8
+          ],
+          "nativeBoreWallRays": 16,
+          "actualNativeTubeToPcbReliefMm": [
+            0.5453857426037132,
+            0.545383453785206
+          ],
+          "realNativeRecessFilmBackingRays": 6,
+          "physicalFilms": 2,
+          "actualSmaMetalWindows": 2,
+          "groveWallRays": 4,
+          "actualGroveContacts": 4,
+          "actualPlatedBores": 4,
+          "moduleRetainedTerminals": 32,
+          "realRecessedScrews": 3,
+          "accessoryPresent": true,
+          "accessoryMeshes": 47,
+          "accessoryTriangles": 4948,
+          "ownLedButtonJointApiCount": 0,
+          "antennaVendorLengthMm": 195,
+          "antennaDocumentaryGainDbi": 2.3,
+          "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "cardkb-original",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "key-esc",
+          "key-1",
+          "key-2",
+          "key-3",
+          "key-4",
+          "key-5",
+          "key-6",
+          "key-7",
+          "key-8",
+          "key-9",
+          "key-0",
+          "key-backspace",
+          "key-tab",
+          "key-q",
+          "key-w",
+          "key-e",
+          "key-r",
+          "key-t",
+          "key-y",
+          "key-u",
+          "key-i",
+          "key-o",
+          "key-p",
+          "key-fn",
+          "key-shift",
+          "key-a",
+          "key-s",
+          "key-d",
+          "key-f",
+          "key-g",
+          "key-h",
+          "key-j",
+          "key-k",
+          "key-l",
+          "key-enter",
+          "key-sym",
+          "key-z",
+          "key-x",
+          "key-c",
+          "key-v",
+          "key-b",
+          "key-n",
+          "key-m",
+          "key-comma",
+          "key-period",
+          "key-space",
+          "key-up",
+          "key-left",
+          "key-right",
+          "key-down"
+        ],
+        "physicalStructure": {
+          "constructionRoute": "own-original-MEGA328P-U035-photo-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 870,
+          "triangles": 75880,
+          "closedDirectedPositiveFrontSide": true,
+          "actualEnvelopeMm": [
+            88,
+            54,
+            5.150000023841858
+          ],
+          "provisionalNominalMm": [
+            88,
+            54,
+            5
+          ],
+          "conflictingPhotoCaptionMm": [
+            84,
+            54
+          ],
+          "actualLocatedMountingHoles": 1,
+          "unresolvedOldTwoLegoClaim": true,
+          "ispPlatedHoles": 6,
+          "drilledWallRays": 28,
+          "individualMomentaryActuators": 50,
+          "movingMeshesPerKey": 2,
+          "inferredTravelMm": 0.18,
+          "actualMCULeads": 32,
+          "groveContacts": 4,
+          "groveRetainedReturns": 4,
+          "groveVerticalTails": 4,
+          "grovePlatedBores": 4,
+          "groveAnnuli": 8,
+          "externalRGB": 1,
+          "physicalFilms": 0,
+          "scope": "Own original U035 only;provisional dimensions,pitches,hidden supports/contacts and travel inferred,no manufacturing/electrical/firmware/combination/HID acceptance"
+        },
+        "accessoryMounting": []
+      },
+      {
+        "id": "poe-cam-w",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "user",
+          "reset"
+        ],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalMeshes": 532,
+          "physicalBodyMeshes": 532,
+          "triangles": 62288,
+          "allClosedPositiveDirectedEdges": true,
+          "actualEnvelopeMm": [
+            24.000000095367433,
+            64.00000042915345,
+            18.000000002980233
+          ],
+          "nominalModelAxesMm": [
+            24,
+            64,
+            18
+          ],
+          "rearClosureAndPCBPoEBackingRays": 9,
+          "realRearFilm": 1,
+          "actualUncolouredM5": true,
+          "clipSlots": 4,
+          "clipFrontSideWallRays": 16,
+          "hangingKeyhole": true,
+          "keyholeFrontSideWallRays": 3,
+          "optical": {
+            "sensor": "OV2640",
+            "documentaryFovDeg": 65,
+            "passiveFrame": true,
+            "glassFirst": true,
+            "wallRays": 8,
+            "retainedFPCContacts": 24
+          },
+          "groveContacts": 4,
+          "rj45Contacts": 8,
+          "rj45RealDeepCavity": true,
+          "serviceSockets": 2,
+          "servicePhysicalPins": 6,
+          "serviceBoreWallRays": 12,
+          "pcbDrills": 20,
+          "pcbFrontSideWallRays": 80,
+          "platedBores": 20,
+          "annularLands": 40,
+          "realMovingMeshes": {
+            "user": 2,
+            "reset": 2
+          },
+          "externallyDrivenFixedLeds": [
+            "g0-blue",
+            "link-yellow",
+            "activity-green"
+          ],
+          "externallyVisibleEmitterRays": 3,
+          "noExteriorSK6812": true,
+          "standBrickOmitted": true,
+          "scope": "Exact original U121-B;hidden wall/PCB/PoE/contact/optical/lightpath/BOM/travel/fit inferred,no sibling native,network/electrical/firmware/GPU/hardware/manufacturing acceptance"
+        },
+        "accessoryMounting": []
+      },
+      {
+        "id": "lorawan-us915",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "antenna/fold"
+        ],
+        "physicalStructure": {
+          "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+          "physicalMeshes": 236,
+          "physicalBodyMeshes": 236,
+          "triangles": 39796,
+          "nativeTriangles": 6592,
+          "nativeRawTriangles": 13184,
+          "duplicatePreviewFaces": 6592,
+          "allNativeAttributesIndexSourceFaceIdRetained": true,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nativeShellMm": [
+            24,
+            64,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            71.39999980931363,
+            8.00000000000061
+          ],
+          "documentBodyMm": [
+            24,
+            71.4,
+            8
+          ],
+          "nativeBoreWallRays": 16,
+          "actualNativeTubeToPcbReliefMm": [
+            0.5453857426036848,
+            0.5453834537852345
+          ],
+          "realNativeRecessFilmBackingRays": 6,
+          "physicalFilms": 2,
+          "actualSmaMetalWindows": 2,
+          "groveWallRays": 4,
+          "actualGroveContacts": 4,
+          "actualPlatedBores": 4,
+          "moduleRetainedTerminals": 32,
+          "realRecessedScrews": 3,
+          "accessoryPresent": true,
+          "accessoryMeshes": 47,
+          "accessoryTriangles": 4948,
+          "ownLedButtonJointApiCount": 0,
+          "antennaVendorLengthMm": 195,
+          "antennaDocumentaryGainDbi": 2.3,
+          "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+        },
+        "accessoryMounting": [
+          {
+            "port": "antenna",
+            "connector": "m5.u184-us915.sma",
+            "accessory": "Antenna",
+            "ownPorts": [],
+            "ownJoints": [
+              "fold"
+            ],
+            "detachReattach": "pass"
+          }
+        ]
+      }
+    ],
+    "configurations": [
+      {
+        "id": "cardkb-original",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "poe-cam-w",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "lorawan-us915",
+        "optionCases": 3,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      }
+    ],
+    "behaviors": [
+      {
+        "id": "cardkb-original",
+        "controls": [
+          {
+            "id": "key-esc",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-1",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-2",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-3",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-4",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-5",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-6",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-7",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-8",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-9",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-0",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-backspace",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-tab",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-q",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-w",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-e",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-r",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-t",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-y",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-u",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-i",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-o",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-p",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-fn",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-shift",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-a",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-s",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-d",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-f",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-g",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-h",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-j",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-k",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-l",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-enter",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-sym",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-z",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-x",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-c",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-v",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-b",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-n",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-m",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-comma",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-period",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-space",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-up",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-left",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-right",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-down",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          }
+        ],
+        "simultaneous": {
+          "controls": 50,
+          "allHeldAndOneCancelled": "independent peers",
+          "completeNeutralPhysicalRestored": true
+        },
+        "lights": {
+          "count": 1,
+          "externalNoEcho": true,
+          "independentRealMaterials": true,
+          "physicalAndPortsUnchanged": true
+        },
+        "partialPressAndCancelSpringReturn": true,
+        "all50IndependentMetalCaps": true,
+        "fixedPCBFramesContactsAndPeersInvariant": true,
+        "stateAndOutputNoEcho": true,
+        "noScanHIDASCIIComboOrModifierAlgorithm": true,
+        "noAutomaticRGBResponse": true
+      },
+      {
+        "id": "poe-cam-w",
+        "controls": [
+          {
+            "id": "user",
+            "travelMm": 0.25,
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "reset",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          }
+        ],
+        "simultaneous": {
+          "controls": 2,
+          "allHeldAndOneCancelled": "independent peers",
+          "completeNeutralPhysicalRestored": true
+        },
+        "partialPressCancelledSpringReturn": true,
+        "onlyActualCapStemMove": true,
+        "fixedFramesPCBPoEContactsPortsCameraAndPeersInvariant": true,
+        "realFixedColourIndicatorsIndependentExternalNoEcho": true,
+        "noAutomaticNetworkPoEPowerResetCameraOrFirmware": true,
+        "stateAndPoseQueriesNoEcho": true,
+        "allPhysicalAttributesIndexWorldRestored": true
+      },
+      {
+        "id": "lorawan-us915",
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0,
+        "accessoryJoint": "antenna/fold",
+        "actualPartialFold": true,
+        "inferredDisplayRangeDeg": [
+          0,
+          90
+        ],
+        "onlyRealHubArmBladeMove": true,
+        "fixedCouplingSmaNativePcbFilmPortsAndPeersRetained": true,
+        "externalJointNoEcho": true,
+        "noContinuousRpmOrAutomaticRFBehavior": true,
+        "allPhysicalAttributesIndexWorldRestored": true,
+        "realSmaAccessoryDetachRestore": true,
+        "initialAccessory": true,
+        "createdProbeAccessoryDisposed": false
+      }
+    ],
+    "accessories": [
+      {
+        "id": "cardkb-original",
+        "mounting": []
+      },
+      {
+        "id": "poe-cam-w",
+        "mounting": []
+      },
+      {
+        "id": "lorawan-us915",
+        "mounting": [
+          {
+            "port": "antenna",
+            "connector": "m5.u184-us915.sma",
+            "accessory": "Antenna",
+            "ownPorts": [],
+            "ownJoints": [
+              "fold"
+            ],
+            "detachReattach": "pass"
+          }
+        ]
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "cardkb-original",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "poe-cam-w",
+        "passiveAnchors": [
+          "camera"
+        ],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "lorawan-us915",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      }
+    ],
+    "disposedResources": 2383,
+    "cases": [
+      "three-real-fourcore-Grove-branches",
+      "own-original50key-board-and-original-PoE-camera",
+      "US915-own-native-halves-and-real-retained-interiors",
+      "actual-camera-optics-and-receivers",
+      "actual-cap-input-and-independent-external-light-appearance",
+      "own-legible-print-only-no-unsupported-glyphs",
+      "both-entries-actual-presets-and-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-peer-isolation",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own original U035/U121-B and U184-US915 physical assemblies,actual legible ordinary print,real caps/ports and independent external light appearance;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/protocol-camera-values/electrical/firmware/whole-history acceptance"
+  },
+  "privateFixture": {
+    "status": "pass",
+    "components": [
+      {
+        "id": "cardkb-original",
+        "body": [
+          "key-esc",
+          "key-1",
+          "key-2",
+          "key-3",
+          "key-4",
+          "key-5",
+          "key-6",
+          "key-7",
+          "key-8",
+          "key-9",
+          "key-0",
+          "key-backspace",
+          "key-tab",
+          "key-q",
+          "key-w",
+          "key-e",
+          "key-r",
+          "key-t",
+          "key-y",
+          "key-u",
+          "key-i",
+          "key-o",
+          "key-p",
+          "key-fn",
+          "key-shift",
+          "key-a",
+          "key-s",
+          "key-d",
+          "key-f",
+          "key-g",
+          "key-h",
+          "key-j",
+          "key-k",
+          "key-l",
+          "key-enter",
+          "key-sym",
+          "key-z",
+          "key-x",
+          "key-c",
+          "key-v",
+          "key-b",
+          "key-n",
+          "key-m",
+          "key-comma",
+          "key-period",
+          "key-space",
+          "key-up",
+          "key-left",
+          "key-right",
+          "key-down",
+          "rgb",
+          "grove"
+        ],
+        "ports": [
+          "grove"
+        ],
+        "controls": [
+          "key-esc",
+          "key-1",
+          "key-2",
+          "key-3",
+          "key-4",
+          "key-5",
+          "key-6",
+          "key-7",
+          "key-8",
+          "key-9",
+          "key-0",
+          "key-backspace",
+          "key-tab",
+          "key-q",
+          "key-w",
+          "key-e",
+          "key-r",
+          "key-t",
+          "key-y",
+          "key-u",
+          "key-i",
+          "key-o",
+          "key-p",
+          "key-fn",
+          "key-shift",
+          "key-a",
+          "key-s",
+          "key-d",
+          "key-f",
+          "key-g",
+          "key-h",
+          "key-j",
+          "key-k",
+          "key-l",
+          "key-enter",
+          "key-sym",
+          "key-z",
+          "key-x",
+          "key-c",
+          "key-v",
+          "key-b",
+          "key-n",
+          "key-m",
+          "key-comma",
+          "key-period",
+          "key-space",
+          "key-up",
+          "key-left",
+          "key-right",
+          "key-down"
+        ],
+        "leds": [
+          "rgb"
+        ],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-original-MEGA328P-U035-photo-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 870,
+          "triangles": 75880,
+          "closedDirectedPositiveFrontSide": true,
+          "actualEnvelopeMm": [
+            88,
+            54,
+            5.150000023841859
+          ],
+          "provisionalNominalMm": [
+            88,
+            54,
+            5
+          ],
+          "conflictingPhotoCaptionMm": [
+            84,
+            54
+          ],
+          "actualLocatedMountingHoles": 1,
+          "unresolvedOldTwoLegoClaim": true,
+          "ispPlatedHoles": 6,
+          "drilledWallRays": 28,
+          "individualMomentaryActuators": 50,
+          "movingMeshesPerKey": 2,
+          "inferredTravelMm": 0.18,
+          "actualMCULeads": 32,
+          "groveContacts": 4,
+          "groveRetainedReturns": 4,
+          "groveVerticalTails": 4,
+          "grovePlatedBores": 4,
+          "groveAnnuli": 8,
+          "externalRGB": 1,
+          "physicalFilms": 0,
+          "scope": "Own original U035 only;provisional dimensions,pitches,hidden supports/contacts and travel inferred,no manufacturing/electrical/firmware/combination/HID acceptance"
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-original-MEGA328P-U035-photo-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 870,
+          "triangles": 75880,
+          "closedDirectedPositiveFrontSide": true,
+          "actualEnvelopeMm": [
+            88,
+            54.000000000000014,
+            5.150000023841855
+          ],
+          "provisionalNominalMm": [
+            88,
+            54,
+            5
+          ],
+          "conflictingPhotoCaptionMm": [
+            84,
+            54
+          ],
+          "actualLocatedMountingHoles": 1,
+          "unresolvedOldTwoLegoClaim": true,
+          "ispPlatedHoles": 6,
+          "drilledWallRays": 28,
+          "individualMomentaryActuators": 50,
+          "movingMeshesPerKey": 2,
+          "inferredTravelMm": 0.18,
+          "actualMCULeads": 32,
+          "groveContacts": 4,
+          "groveRetainedReturns": 4,
+          "groveVerticalTails": 4,
+          "grovePlatedBores": 4,
+          "groveAnnuli": 8,
+          "externalRGB": 1,
+          "physicalFilms": 0,
+          "scope": "Own original U035 only;provisional dimensions,pitches,hidden supports/contacts and travel inferred,no manufacturing/electrical/firmware/combination/HID acceptance"
+        }
+      },
+      {
+        "id": "poe-cam-w",
+        "body": [
+          "camera",
+          "grove",
+          "ethernet",
+          "download-en",
+          "download-uart",
+          "user",
+          "reset",
+          "g0",
+          "link",
+          "activity"
+        ],
+        "ports": [
+          "grove",
+          "ethernet",
+          "download-en",
+          "download-uart"
+        ],
+        "controls": [
+          "user",
+          "reset"
+        ],
+        "leds": [
+          "g0",
+          "link",
+          "activity"
+        ],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalMeshes": 532,
+          "physicalBodyMeshes": 532,
+          "triangles": 62288,
+          "allClosedPositiveDirectedEdges": true,
+          "actualEnvelopeMm": [
+            24.000000095367426,
+            64.00000042915345,
+            18.000000002980237
+          ],
+          "nominalModelAxesMm": [
+            24,
+            64,
+            18
+          ],
+          "rearClosureAndPCBPoEBackingRays": 9,
+          "realRearFilm": 1,
+          "actualUncolouredM5": true,
+          "clipSlots": 4,
+          "clipFrontSideWallRays": 16,
+          "hangingKeyhole": true,
+          "keyholeFrontSideWallRays": 3,
+          "optical": {
+            "sensor": "OV2640",
+            "documentaryFovDeg": 65,
+            "passiveFrame": true,
+            "glassFirst": true,
+            "wallRays": 8,
+            "retainedFPCContacts": 24
+          },
+          "groveContacts": 4,
+          "rj45Contacts": 8,
+          "rj45RealDeepCavity": true,
+          "serviceSockets": 2,
+          "servicePhysicalPins": 6,
+          "serviceBoreWallRays": 12,
+          "pcbDrills": 20,
+          "pcbFrontSideWallRays": 80,
+          "platedBores": 20,
+          "annularLands": 40,
+          "realMovingMeshes": {
+            "user": 2,
+            "reset": 2
+          },
+          "externallyDrivenFixedLeds": [
+            "g0-blue",
+            "link-yellow",
+            "activity-green"
+          ],
+          "externallyVisibleEmitterRays": 3,
+          "noExteriorSK6812": true,
+          "standBrickOmitted": true,
+          "scope": "Exact original U121-B;hidden wall/PCB/PoE/contact/optical/lightpath/BOM/travel/fit inferred,no sibling native,network/electrical/firmware/GPU/hardware/manufacturing acceptance"
+        },
+        "transformedStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalMeshes": 532,
+          "physicalBodyMeshes": 532,
+          "triangles": 62288,
+          "allClosedPositiveDirectedEdges": true,
+          "actualEnvelopeMm": [
+            24.000000095367454,
+            64.0000004291534,
+            18.000000002980244
+          ],
+          "nominalModelAxesMm": [
+            24,
+            64,
+            18
+          ],
+          "rearClosureAndPCBPoEBackingRays": 9,
+          "realRearFilm": 1,
+          "actualUncolouredM5": true,
+          "clipSlots": 4,
+          "clipFrontSideWallRays": 16,
+          "hangingKeyhole": true,
+          "keyholeFrontSideWallRays": 3,
+          "optical": {
+            "sensor": "OV2640",
+            "documentaryFovDeg": 65,
+            "passiveFrame": true,
+            "glassFirst": true,
+            "wallRays": 8,
+            "retainedFPCContacts": 24
+          },
+          "groveContacts": 4,
+          "rj45Contacts": 8,
+          "rj45RealDeepCavity": true,
+          "serviceSockets": 2,
+          "servicePhysicalPins": 6,
+          "serviceBoreWallRays": 12,
+          "pcbDrills": 20,
+          "pcbFrontSideWallRays": 80,
+          "platedBores": 20,
+          "annularLands": 40,
+          "realMovingMeshes": {
+            "user": 2,
+            "reset": 2
+          },
+          "externallyDrivenFixedLeds": [
+            "g0-blue",
+            "link-yellow",
+            "activity-green"
+          ],
+          "externallyVisibleEmitterRays": 3,
+          "noExteriorSK6812": true,
+          "standBrickOmitted": true,
+          "scope": "Exact original U121-B;hidden wall/PCB/PoE/contact/optical/lightpath/BOM/travel/fit inferred,no sibling native,network/electrical/firmware/GPU/hardware/manufacturing acceptance"
+        }
+      },
+      {
+        "id": "lorawan-us915",
+        "body": [
+          "grove",
+          "antenna"
+        ],
+        "ports": [
+          "grove",
+          "antenna"
+        ],
+        "controls": [],
+        "leds": [],
+        "displays": [],
+        "joints": [],
+        "physicalStructure": {
+          "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+          "physicalMeshes": 236,
+          "physicalBodyMeshes": 236,
+          "triangles": 39796,
+          "nativeTriangles": 6592,
+          "nativeRawTriangles": 13184,
+          "duplicatePreviewFaces": 6592,
+          "allNativeAttributesIndexSourceFaceIdRetained": true,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nativeShellMm": [
+            24,
+            64,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            71.39999980931361,
+            8.000000000000608
+          ],
+          "documentBodyMm": [
+            24,
+            71.4,
+            8
+          ],
+          "nativeBoreWallRays": 16,
+          "actualNativeTubeToPcbReliefMm": [
+            0.5453857426036848,
+            0.5453834537852345
+          ],
+          "realNativeRecessFilmBackingRays": 6,
+          "physicalFilms": 2,
+          "actualSmaMetalWindows": 2,
+          "groveWallRays": 4,
+          "actualGroveContacts": 4,
+          "actualPlatedBores": 4,
+          "moduleRetainedTerminals": 32,
+          "realRecessedScrews": 3,
+          "accessoryPresent": true,
+          "accessoryMeshes": 47,
+          "accessoryTriangles": 4948,
+          "ownLedButtonJointApiCount": 0,
+          "antennaVendorLengthMm": 195,
+          "antennaDocumentaryGainDbi": 2.3,
+          "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+        },
+        "transformedStructure": {
+          "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+          "physicalMeshes": 236,
+          "physicalBodyMeshes": 236,
+          "triangles": 39796,
+          "nativeTriangles": 6592,
+          "nativeRawTriangles": 13184,
+          "duplicatePreviewFaces": 6592,
+          "allNativeAttributesIndexSourceFaceIdRetained": true,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nativeShellMm": [
+            24,
+            64,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            71.39999980931361,
+            8.000000000000608
+          ],
+          "documentBodyMm": [
+            24,
+            71.4,
+            8
+          ],
+          "nativeBoreWallRays": 16,
+          "actualNativeTubeToPcbReliefMm": [
+            0.5453857426037132,
+            0.545383453785206
+          ],
+          "realNativeRecessFilmBackingRays": 6,
+          "physicalFilms": 2,
+          "actualSmaMetalWindows": 2,
+          "groveWallRays": 4,
+          "actualGroveContacts": 4,
+          "actualPlatedBores": 4,
+          "moduleRetainedTerminals": 32,
+          "realRecessedScrews": 3,
+          "accessoryPresent": true,
+          "accessoryMeshes": 47,
+          "accessoryTriangles": 4948,
+          "ownLedButtonJointApiCount": 0,
+          "antennaVendorLengthMm": 195,
+          "antennaDocumentaryGainDbi": 2.3,
+          "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+        }
+      }
+    ],
+    "artwork": [
+      {
+        "id": "cardkb-original",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "key-esc",
+          "key-1",
+          "key-2",
+          "key-3",
+          "key-4",
+          "key-5",
+          "key-6",
+          "key-7",
+          "key-8",
+          "key-9",
+          "key-0",
+          "key-backspace",
+          "key-tab",
+          "key-q",
+          "key-w",
+          "key-e",
+          "key-r",
+          "key-t",
+          "key-y",
+          "key-u",
+          "key-i",
+          "key-o",
+          "key-p",
+          "key-fn",
+          "key-shift",
+          "key-a",
+          "key-s",
+          "key-d",
+          "key-f",
+          "key-g",
+          "key-h",
+          "key-j",
+          "key-k",
+          "key-l",
+          "key-enter",
+          "key-sym",
+          "key-z",
+          "key-x",
+          "key-c",
+          "key-v",
+          "key-b",
+          "key-n",
+          "key-m",
+          "key-comma",
+          "key-period",
+          "key-space",
+          "key-up",
+          "key-left",
+          "key-right",
+          "key-down"
+        ],
+        "physicalStructure": {
+          "constructionRoute": "own-original-MEGA328P-U035-photo-parametric",
+          "nativeFaces": 0,
+          "physicalMeshes": 870,
+          "triangles": 75880,
+          "closedDirectedPositiveFrontSide": true,
+          "actualEnvelopeMm": [
+            88,
+            54,
+            5.150000023841858
+          ],
+          "provisionalNominalMm": [
+            88,
+            54,
+            5
+          ],
+          "conflictingPhotoCaptionMm": [
+            84,
+            54
+          ],
+          "actualLocatedMountingHoles": 1,
+          "unresolvedOldTwoLegoClaim": true,
+          "ispPlatedHoles": 6,
+          "drilledWallRays": 28,
+          "individualMomentaryActuators": 50,
+          "movingMeshesPerKey": 2,
+          "inferredTravelMm": 0.18,
+          "actualMCULeads": 32,
+          "groveContacts": 4,
+          "groveRetainedReturns": 4,
+          "groveVerticalTails": 4,
+          "grovePlatedBores": 4,
+          "groveAnnuli": 8,
+          "externalRGB": 1,
+          "physicalFilms": 0,
+          "scope": "Own original U035 only;provisional dimensions,pitches,hidden supports/contacts and travel inferred,no manufacturing/electrical/firmware/combination/HID acceptance"
+        },
+        "accessoryMounting": []
+      },
+      {
+        "id": "poe-cam-w",
+        "panels": 1,
+        "kinds": [
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "user",
+          "reset"
+        ],
+        "physicalStructure": {
+          "constructionRoute": "own-dimensional-parametric",
+          "importedNativeFaces": 0,
+          "physicalMeshes": 532,
+          "physicalBodyMeshes": 532,
+          "triangles": 62288,
+          "allClosedPositiveDirectedEdges": true,
+          "actualEnvelopeMm": [
+            24.000000095367433,
+            64.00000042915345,
+            18.000000002980233
+          ],
+          "nominalModelAxesMm": [
+            24,
+            64,
+            18
+          ],
+          "rearClosureAndPCBPoEBackingRays": 9,
+          "realRearFilm": 1,
+          "actualUncolouredM5": true,
+          "clipSlots": 4,
+          "clipFrontSideWallRays": 16,
+          "hangingKeyhole": true,
+          "keyholeFrontSideWallRays": 3,
+          "optical": {
+            "sensor": "OV2640",
+            "documentaryFovDeg": 65,
+            "passiveFrame": true,
+            "glassFirst": true,
+            "wallRays": 8,
+            "retainedFPCContacts": 24
+          },
+          "groveContacts": 4,
+          "rj45Contacts": 8,
+          "rj45RealDeepCavity": true,
+          "serviceSockets": 2,
+          "servicePhysicalPins": 6,
+          "serviceBoreWallRays": 12,
+          "pcbDrills": 20,
+          "pcbFrontSideWallRays": 80,
+          "platedBores": 20,
+          "annularLands": 40,
+          "realMovingMeshes": {
+            "user": 2,
+            "reset": 2
+          },
+          "externallyDrivenFixedLeds": [
+            "g0-blue",
+            "link-yellow",
+            "activity-green"
+          ],
+          "externallyVisibleEmitterRays": 3,
+          "noExteriorSK6812": true,
+          "standBrickOmitted": true,
+          "scope": "Exact original U121-B;hidden wall/PCB/PoE/contact/optical/lightpath/BOM/travel/fit inferred,no sibling native,network/electrical/firmware/GPU/hardware/manufacturing acceptance"
+        },
+        "accessoryMounting": []
+      },
+      {
+        "id": "lorawan-us915",
+        "panels": 2,
+        "kinds": [
+          "reference-redraw",
+          "reference-redraw"
+        ],
+        "actualPartialMotionIds": [
+          "antenna/fold"
+        ],
+        "physicalStructure": {
+          "constructionRoute": "official-own-native-shell-plus-visible-assembly",
+          "physicalMeshes": 236,
+          "physicalBodyMeshes": 236,
+          "triangles": 39796,
+          "nativeTriangles": 6592,
+          "nativeRawTriangles": 13184,
+          "duplicatePreviewFaces": 6592,
+          "allNativeAttributesIndexSourceFaceIdRetained": true,
+          "allClosedPositiveDirectedTwoEdges": true,
+          "frontSide": true,
+          "nativeShellMm": [
+            24,
+            64,
+            8
+          ],
+          "actualPhysicalEnvelopeMm": [
+            24,
+            71.39999980931363,
+            8.00000000000061
+          ],
+          "documentBodyMm": [
+            24,
+            71.4,
+            8
+          ],
+          "nativeBoreWallRays": 16,
+          "actualNativeTubeToPcbReliefMm": [
+            0.5453857426036848,
+            0.5453834537852345
+          ],
+          "realNativeRecessFilmBackingRays": 6,
+          "physicalFilms": 2,
+          "actualSmaMetalWindows": 2,
+          "groveWallRays": 4,
+          "actualGroveContacts": 4,
+          "actualPlatedBores": 4,
+          "moduleRetainedTerminals": 32,
+          "realRecessedScrews": 3,
+          "accessoryPresent": true,
+          "accessoryMeshes": 47,
+          "accessoryTriangles": 4948,
+          "ownLedButtonJointApiCount": 0,
+          "antennaVendorLengthMm": 195,
+          "antennaDocumentaryGainDbi": 2.3,
+          "antennaFoldStructure": "Ownphoto supports real hinge/seam/axlecap;axis/pivot/0..90 displaylimits inferred,no ratedmechanicalfit"
+        },
+        "accessoryMounting": [
+          {
+            "port": "antenna",
+            "connector": "m5.u184-us915.sma",
+            "accessory": "Antenna",
+            "ownPorts": [],
+            "ownJoints": [
+              "fold"
+            ],
+            "detachReattach": "pass"
+          }
+        ]
+      }
+    ],
+    "configurations": [
+      {
+        "id": "cardkb-original",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "poe-cam-w",
+        "optionCases": 1,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      },
+      {
+        "id": "lorawan-us915",
+        "optionCases": 3,
+        "entries": 2,
+        "physicalAttributesIndexWorld": "identical with ink off,including actual evidenced mechanical configuration"
+      }
+    ],
+    "behaviors": [
+      {
+        "id": "cardkb-original",
+        "controls": [
+          {
+            "id": "key-esc",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-1",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-2",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-3",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-4",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-5",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-6",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-7",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-8",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-9",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-0",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-backspace",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-tab",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-q",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-w",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-e",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-r",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-t",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-y",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-u",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-i",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-o",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-p",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-fn",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-shift",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-a",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-s",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-d",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-f",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-g",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-h",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-j",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-k",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-l",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-enter",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-sym",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-z",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-x",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-c",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-v",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-b",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-n",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-m",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-comma",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-period",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-space",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-up",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-left",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-right",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "key-down",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              -1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          }
+        ],
+        "simultaneous": {
+          "controls": 50,
+          "allHeldAndOneCancelled": "independent peers",
+          "completeNeutralPhysicalRestored": true
+        },
+        "lights": {
+          "count": 1,
+          "externalNoEcho": true,
+          "independentRealMaterials": true,
+          "physicalAndPortsUnchanged": true
+        },
+        "partialPressAndCancelSpringReturn": true,
+        "all50IndependentMetalCaps": true,
+        "fixedPCBFramesContactsAndPeersInvariant": true,
+        "stateAndOutputNoEcho": true,
+        "noScanHIDASCIIComboOrModifierAlgorithm": true,
+        "noAutomaticRGBResponse": true
+      },
+      {
+        "id": "poe-cam-w",
+        "controls": [
+          {
+            "id": "user",
+            "travelMm": 0.25,
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          },
+          {
+            "id": "reset",
+            "travelMm": 0.18,
+            "axis": [
+              0,
+              0,
+              1
+            ],
+            "actualMovingMeshes": 2,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          }
+        ],
+        "simultaneous": {
+          "controls": 2,
+          "allHeldAndOneCancelled": "independent peers",
+          "completeNeutralPhysicalRestored": true
+        },
+        "partialPressCancelledSpringReturn": true,
+        "onlyActualCapStemMove": true,
+        "fixedFramesPCBPoEContactsPortsCameraAndPeersInvariant": true,
+        "realFixedColourIndicatorsIndependentExternalNoEcho": true,
+        "noAutomaticNetworkPoEPowerResetCameraOrFirmware": true,
+        "stateAndPoseQueriesNoEcho": true,
+        "allPhysicalAttributesIndexWorldRestored": true
+      },
+      {
+        "id": "lorawan-us915",
+        "ownControls": 0,
+        "ownLeds": 0,
+        "ownJoints": 0,
+        "accessoryJoint": "antenna/fold",
+        "actualPartialFold": true,
+        "inferredDisplayRangeDeg": [
+          0,
+          90
+        ],
+        "onlyRealHubArmBladeMove": true,
+        "fixedCouplingSmaNativePcbFilmPortsAndPeersRetained": true,
+        "externalJointNoEcho": true,
+        "noContinuousRpmOrAutomaticRFBehavior": true,
+        "allPhysicalAttributesIndexWorldRestored": true,
+        "realSmaAccessoryDetachRestore": true,
+        "initialAccessory": true,
+        "createdProbeAccessoryDisposed": false
+      }
+    ],
+    "accessories": [
+      {
+        "id": "cardkb-original",
+        "mounting": []
+      },
+      {
+        "id": "poe-cam-w",
+        "mounting": []
+      },
+      {
+        "id": "lorawan-us915",
+        "mounting": [
+          {
+            "port": "antenna",
+            "connector": "m5.u184-us915.sma",
+            "accessory": "Antenna",
+            "ownPorts": [],
+            "ownJoints": [
+              "fold"
+            ],
+            "detachReattach": "pass"
+          }
+        ]
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "cardkb-original",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "poe-cam-w",
+        "passiveAnchors": [
+          "camera"
+        ],
+        "noFirmwareOrProtocolBehavior": true
+      },
+      {
+        "id": "lorawan-us915",
+        "passiveAnchors": [],
+        "noFirmwareOrProtocolBehavior": true
+      }
+    ],
+    "disposedResources": 2383,
+    "cases": [
+      "three-real-fourcore-Grove-branches",
+      "own-original50key-board-and-original-PoE-camera",
+      "US915-own-native-halves-and-real-retained-interiors",
+      "actual-camera-optics-and-receivers",
+      "actual-cap-input-and-independent-external-light-appearance",
+      "own-legible-print-only-no-unsupported-glyphs",
+      "both-entries-actual-presets-and-ink-physical-invariance",
+      "transformed-parent-physical-structure-ports-peer-isolation",
+      "host-framebuffer-and-observed-resource-disposal"
+    ],
+    "scope": "Own original U035/U121-B and U184-US915 physical assemblies,actual legible ordinary print,real caps/ports and independent external light appearance;Node DOM/canvas boundary fixture;no browser/GPU/manufacturing/productionfit/hardware/protocol-camera-values/electrical/firmware/whole-history acceptance"
+  },
+  "sharedAmendments": {},
+  "sharedAmendmentEvidence": {},
+  "checks": {
+    "localProductSmoke": "all current batch products pass",
+    "frozenRuntimeAndResearch": [
+      {
+        "id": "cardkb-original",
+        "status": "frozen",
+        "checkedFiles": 9
+      },
+      {
+        "id": "poe-cam-w",
+        "status": "frozen",
+        "checkedFiles": 10
+      },
+      {
+        "id": "lorawan-us915",
+        "status": "frozen",
+        "checkedFiles": 13
+      }
+    ],
+    "realThreeBranchGroveFixture": "pass in public and private workspaces",
+    "artworkToggle": "All physical attributes/index/world matrices preserved across actual entries/configurations",
+    "publicBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "ed85a8a1da4aee52fd1d9a10c5dc46c9f7d7ee3e10367f320e334126bff5349b",
+      "logDistributed": false
+    },
+    "privateBuild": {
+      "status": "completion-marker-present",
+      "logSha256": "9aee0e363cca867ba60018ecbc82e35fa5ebca405507fab8c9276d6fbdd9056c",
+      "logDistributed": false
+    },
+    "exportCount": 7,
+    "catalogConfigurations": {
+      "status": "pass",
+      "products": [
+        {
+          "id": "cardkb-original",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "原版 MEGA328P U035 完整裸板键盘",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        },
+        {
+          "id": "poe-cam-w",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "完整原版 PoE CAM-W U121-B",
+              "options": {}
+            }
+          ],
+          "defaults": {}
+        },
+        {
+          "id": "lorawan-us915",
+          "presets": [
+            {
+              "id": "complete",
+              "name": "US915 含原装胶棒天线",
+              "options": {}
+            },
+            {
+              "id": "straight-antenna",
+              "name": "US915 天线直立展示",
+              "options": {
+                "antennaFoldDeg": 0
+              }
+            },
+            {
+              "id": "without-antenna",
+              "name": "US915 本体及实际空SMA座",
+              "options": {
+                "antenna": false
+              }
+            }
+          ],
+          "defaults": {
+            "antenna": true,
+            "antennaFoldDeg": 90
+          }
+        }
+      ],
+      "scope": "Batch 51: current frozen named presets, constructor defaults and existing demo contract"
+    },
+    "livePreview": "196-product catalog, 3 own runtime chunks and all corresponding source PNG bytes verified in live dist (ordinary or inlined assets)",
+    "newSourcePrivacy": "New JS/JSON/Markdown/PNG and all current added catalog/manifest records checked; private table/URLs/vectors/original names/mappings/raw material/intermediates excluded",
+    "catalogAndManifestPrivacyRecordsChecked": 6,
+    "narrowSync": "New products/catalog entries/exports/guide/plan only;all prior Unit/core/Scroll/demo/rotary-panel current baseline bytes retained",
+    "existingPublicUnitFilesUnchanged": 1489,
+    "existingPrivateUnitFilesUnchanged": 1450,
+    "publicCoreFilesUnchanged": 19,
+    "privateProtectedFilesUnchanged": 7,
+    "publicSharedProtectedFilesUnchanged": 2,
+    "privateSharedProtectedFilesUnchanged": 2,
+    "browserReview": "not run",
+    "fullCheck": "not run"
+  },
+  "officialDocumentationFeedback": [
+    {
+      "product": "cardkb-original",
+      "record": "docs/research/cardkb-original/sources.json",
+      "feedback_id": "8c2bf1ebc5834156af28996b642bfdab",
+      "accepted": true
+    }
+  ],
+  "previewAssets": [
+    {
+      "id": "cardkb-original",
+      "file": "assets/cardkb-original-CUunf5ZT.js",
+      "sha256": "6038725c785fa2948487a00013ffb62c08cb12982376168132fa4fc7c1c467cd"
+    },
+    {
+      "id": "poe-cam-w",
+      "file": "assets/poe-cam-w-CxauwuGj.js",
+      "sha256": "023e2fd4899d482611f2a4b879e8ed10d11836a6374956910b7874d532be31b0"
+    },
+    {
+      "id": "lorawan-us915",
+      "file": "assets/lorawan-us915-BR7CpFjL.js",
+      "sha256": "b4037be036891e4423e2bea77df8256c27b77c2d2e948a676602cf31c0ca1230"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "src/units/cardkb-original/artwork/front-pcb.png",
+      "sha256": "ede4197555824229f0ebad996426caa58dbd4163f93cddf2a0e5ab73d1223c18"
+    },
+    {
+      "path": "src/units/cardkb-original/assembly.js",
+      "sha256": "ed8483a909f4e0d958ad4050343332e1902b7f971d03f725080fb47440b177eb"
+    },
+    {
+      "path": "src/units/cardkb-original/dimensions.js",
+      "sha256": "7d22214808598e7655a87ce66602a59180a75356a07107cbf0a903a25b7f4134"
+    },
+    {
+      "path": "src/units/cardkb-original/geometry.js",
+      "sha256": "e2fd49d721aaf331a0cc180a7e104fb61646f49a6fd8d5be1cd75e9cc6acc3dc"
+    },
+    {
+      "path": "src/units/cardkb-original/index.js",
+      "sha256": "6f565381e940fed9cc18f8ad876fbbf6ffcc55a41ebeed031132927a0143b911"
+    },
+    {
+      "path": "docs/research/cardkb-original/artwork.json",
+      "sha256": "bb90ac2bf300a5846c4cc91ebba807b42b9464aff37a17b29b9f28505e9512e0"
+    },
+    {
+      "path": "docs/research/cardkb-original/modeling.md",
+      "sha256": "3ddd5cdad79d858130cd7dc2625da4739ae0156d6dc95b8c1b308bef0526d2bf"
+    },
+    {
+      "path": "docs/research/cardkb-original/smoke.json",
+      "sha256": "d90297f520bdf328b2f3c33974d944c334498fb9a415d790012173beb802b2d1"
+    },
+    {
+      "path": "docs/research/cardkb-original/sources.json",
+      "sha256": "6792041900c1c2502672ae30e5cdf08a282c114f52ef344b68d0058080d21be0"
+    },
+    {
+      "path": "src/units/poe-cam-w/assembly.js",
+      "sha256": "e1fbca6db1386d57c1fc9bc62412c12bed8c23fa9775c44e1ad8efb9fa763d47"
+    },
+    {
+      "path": "src/units/poe-cam-w/connectors.js",
+      "sha256": "c1aba681319bcc95d28525666345acd927286f0bd943cc4eb425ca6ef6ee86b4"
+    },
+    {
+      "path": "src/units/poe-cam-w/dimensions.js",
+      "sha256": "b128e0ef37f70d3e63608d6e16e465b4fdbed08a0dfea7a8368d9c00a33f3a63"
+    },
+    {
+      "path": "src/units/poe-cam-w/geometry.js",
+      "sha256": "7d0fe8e36dfdbd0d8199f18aac7568c82e6ee402d6f161e79ed52455455e5ed6"
+    },
+    {
+      "path": "src/units/poe-cam-w/index.js",
+      "sha256": "af24a03301b0f0bb8c0b4fbe0c2bccb6c8b4b3e1fc866730bf6237b17c584c77"
+    },
+    {
+      "path": "src/units/poe-cam-w/reference-redraw-back.png",
+      "sha256": "48a793ab0b8b8095827459fb103a7e654e2680f1561579b6d40867678dec4e82"
+    },
+    {
+      "path": "docs/research/poe-cam-w/artwork.json",
+      "sha256": "f93eb1475a6e308712023352ed86c8f97d3ac420c7b34b5ed9c181ec541ef671"
+    },
+    {
+      "path": "docs/research/poe-cam-w/modeling.md",
+      "sha256": "33f65b95beae9b94a5d41c6b9a2f936082bf38597b8d9e4b0bb734a824bd4ac7"
+    },
+    {
+      "path": "docs/research/poe-cam-w/smoke.json",
+      "sha256": "a1c89723f49336b982a482b452278020aa6a13aa07ebf78a161c8c4fcb20083d"
+    },
+    {
+      "path": "docs/research/poe-cam-w/sources.json",
+      "sha256": "c6c702b140c454e5d3a768b1bc055626b3d105eddbc4c0f0dfad6bbeb0b0f341"
+    },
+    {
+      "path": "src/units/lorawan-us915/Antenna.js",
+      "sha256": "5213dba1210bf87091474454aaf6c381c26f74ff6c65912ee9202898c7252da6"
+    },
+    {
+      "path": "src/units/lorawan-us915/artwork/back.png",
+      "sha256": "6c033f0506147acb0dbc129b4677a21fe57c0bdaa55d24c186246116ae1996ee"
+    },
+    {
+      "path": "src/units/lorawan-us915/artwork/front.png",
+      "sha256": "096195de6f17515b0b55f98d80d935dc4ba2d2f3e8bd0fecd13b64814ddc05c1"
+    },
+    {
+      "path": "src/units/lorawan-us915/assembly.js",
+      "sha256": "4ba69126d8b070553f4868384fbe0b50a9fc3fe43bac6f6b5c6ee35973cc343c"
+    },
+    {
+      "path": "src/units/lorawan-us915/dimensions.js",
+      "sha256": "6f57bdc272296bbb7673b9e0ab09e96a83a776e5daef84d2d6b1e60637ce812c"
+    },
+    {
+      "path": "src/units/lorawan-us915/geometry.js",
+      "sha256": "add0fee1342808bb68b17c65ad08fb40280a60c5b93b6ae5074a5588c5825161"
+    },
+    {
+      "path": "src/units/lorawan-us915/index.js",
+      "sha256": "3754577afa9a4b997613a690d5ed2fe40462e6f131b35c311e3a99497657a2f2"
+    },
+    {
+      "path": "src/units/lorawan-us915/native-data.js",
+      "sha256": "33e9a971993e43f1f1c0cc807f70eb19220e17b5c7a4e31fe1c2ddfd94728558"
+    },
+    {
+      "path": "src/units/lorawan-us915/stickers.js",
+      "sha256": "1d84a3b448c40a1a71f5b547f92ec822fcc404a5a373a80137d39082e458e019"
+    },
+    {
+      "path": "docs/research/lorawan-us915/artwork.json",
+      "sha256": "b35dc54066ce3e9c5f9057258dc7abe622f13e6cb3b15486851b9f7c17a310bb"
+    },
+    {
+      "path": "docs/research/lorawan-us915/modeling.md",
+      "sha256": "2b55576811bc8a7f7d2a93a6d87fca9410522d10dc1049aa3255f478f00a3d5c"
+    },
+    {
+      "path": "docs/research/lorawan-us915/smoke.json",
+      "sha256": "8004799b36bb787a3205a3453b9612f86ee40a1b14dbb8d1560956efeb2ac822"
+    },
+    {
+      "path": "docs/research/lorawan-us915/sources.json",
+      "sha256": "dc9140025b4d1b1cb6ba1023447f08c85086f4ec8475f4abb6c292b53424851a"
+    }
+  ],
+  "limitations": [
+    "OriginalU035 own-photo parametric:88x54x5 table versus84x54 caption remains an explicit provisional appearance dimension conflict;not accepted as PCB versus envelope explanation or manufacturing fit",
+    "OriginalU035 MEGA328P identity retained;50 caps independent input intent and RGB only externally driven,no I2C/HID/key-combination mapping or firmware",
+    "OriginalU121-B OV2640 own64x24x18 parametric shell and supported optics/PCB/PoE/receivers;not borrowed U121-B-V11",
+    "PoE schematic/visible blue G0/green ACT/yellow LINK separated from unresolved SK6812 fit/lightpath;no invented external RGB,PoE/power/network/camera/firmware behavior",
+    "US915 exact U184-US915 SKU with old native directory alias U184;own native source halves and source-face mapping preserved without stretching;duplicate assembly preview explicitly recorded",
+    "US915 shell24x64x8 versus71.4 SMA-inclusive length and own195mm2.3dBi antenna separated;no CN470 labels/antenna/actual915resistor-population assertion",
+    "All hidden supports/optics/contacts/pivots/travel/assembly dimensions are inferred,no fullBOM/manufacturing/hardware acceptance",
+    "Own readable ordinaryPNG reference redraws only;physical carriers/PCB remain without ink;no photo crops/wrong model/packaging/unknown microtext/individual codes",
+    "Private CSV/URLs/names/mapping/vector/raw material/generators/intermediates excluded;ordinaryPNG approved,new code MIT and official native MIT retained",
+    "Old50PNG/Scroll/StackChan production-fit/PuzzleBridge/Catch and earlier documented deferrals retained;overall goal active"
+  ]
+}

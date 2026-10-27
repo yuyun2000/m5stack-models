@@ -190,3 +190,17 @@ export {Model as ENVUnit,GroveModule as ENVUnitModule} from './units/env/index.j
 export {Model as ENVIIUnit,GroveModule as ENVIIUnitModule} from './units/env-ii/index.js';
 export {Model as JoystickOriginalUnit,GroveModule as JoystickOriginalUnitModule} from './units/joystick/index.js';
 export {Model as GPSOriginalUnit,GroveModule as GPSOriginalUnitModule} from './units/gps/index.js';
+export {Model as PaHubV20Unit,GroveModule as PaHubV20UnitModule} from './units/pahub-v20/index.js';
+export {Model as PbHubOriginalUnit,GroveModule as PbHubOriginalUnitModule} from './units/pbhub/index.js';
+export {Model as TimerCameraUnit,GroveModule as TimerCameraUnitModule} from './units/timercamera/index.js';
+export {Model as M5CameraOriginalUnit,GroveModule as M5CameraOriginalUnitModule} from './units/m5camera/index.js';
+export {Model as ESP32CAMOriginalUnit,GroveModule as ESP32CAMOriginalUnitModule} from './units/esp32cam/index.js';
+export {Model as RGBLEDStrip50cmUnit,GroveModule as RGBLEDStrip50cmUnitModule,InputAdapter as RGBLEDStrip50cmUnitInputAdapter} from './units/rgb-led-strip-50cm/index.js';
+export {Model as CardKBOriginalUnit,GroveModule as CardKBOriginalUnitModule} from './units/cardkb-original/index.js';
+export {Model as PoECAMWOriginalUnit,GroveModule as PoECAMWOriginalUnitModule} from './units/poe-cam-w/index.js';
+export {Model as LoRaWANUS915Unit,GroveModule as LoRaWANUS915UnitModule,Antenna as LoRaWANUS915UnitAntenna} from './units/lorawan-us915/index.js';
+export {Model as LoRaWANAS923Unit,GroveModule as LoRaWANAS923UnitModule,Antenna as LoRaWANAS923UnitAntenna} from './units/lorawan-as923/index.js';
+export {Model as LoRaWANEU868Unit,GroveModule as LoRaWANEU868UnitModule,Antenna as LoRaWANEU868UnitAntenna} from './units/lorawan-eu868/index.js';
+export {Model as AtomLite} from './devices/atom-lite/index.js';
+export {Model as AtomMatrix} from './devices/atom-matrix/index.js';
+export {Model as AtomS3Lite} from './devices/atoms3-lite/index.js';

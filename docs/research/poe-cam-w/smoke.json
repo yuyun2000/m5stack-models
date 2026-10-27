@@ -1,0 +1,319 @@
+{
+  "status": "pass",
+  "scope": "Bounded exact own original U121-B Model/transformed StickS3-HUB2,not GPU/hardware/manufacturing/fullhistory",
+  "physical": {
+    "constructionRoute": "own-dimensional-parametric",
+    "importedNativeFaces": 0,
+    "physicalMeshes": 532,
+    "physicalBodyMeshes": 532,
+    "triangles": 62288,
+    "allClosedPositiveDirectedEdges": true,
+    "actualEnvelopeMm": [
+      24.000000095367433,
+      64.00000042915345,
+      18.000000002980233
+    ],
+    "nominalModelAxesMm": [
+      24,
+      64,
+      18
+    ],
+    "rearClosureAndPCBPoEBackingRays": 9,
+    "realRearFilm": 1,
+    "actualUncolouredM5": true,
+    "clipSlots": 4,
+    "clipFrontSideWallRays": 16,
+    "hangingKeyhole": true,
+    "keyholeFrontSideWallRays": 3,
+    "optical": {
+      "sensor": "OV2640",
+      "documentaryFovDeg": 65,
+      "passiveFrame": true,
+      "glassFirst": true,
+      "wallRays": 8,
+      "retainedFPCContacts": 24
+    },
+    "groveContacts": 4,
+    "rj45Contacts": 8,
+    "rj45RealDeepCavity": true,
+    "serviceSockets": 2,
+    "servicePhysicalPins": 6,
+    "serviceBoreWallRays": 12,
+    "pcbDrills": 20,
+    "pcbFrontSideWallRays": 80,
+    "platedBores": 20,
+    "annularLands": 40,
+    "realMovingMeshes": {
+      "user": 2,
+      "reset": 2
+    },
+    "externallyDrivenFixedLeds": [
+      "g0-blue",
+      "link-yellow",
+      "activity-green"
+    ],
+    "externallyVisibleEmitterRays": 3,
+    "noExteriorSK6812": true,
+    "standBrickOmitted": true,
+    "scope": "Exact original U121-B;hidden wall/PCB/PoE/contact/optical/lightpath/BOM/travel/fit inferred,no sibling native,network/electrical/firmware/GPU/hardware/manufacturing acceptance"
+  },
+  "modelRuntime": {
+    "controls": [
+      {
+        "id": "user",
+        "travelMm": 0.25,
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "actualMovingMeshes": 2,
+        "multiSourceReleaseCancel": "last source;cancel suppresses click",
+        "rigidCapAndAllFixedMaterial": "pass"
+      },
+      {
+        "id": "reset",
+        "travelMm": 0.18,
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "actualMovingMeshes": 2,
+        "multiSourceReleaseCancel": "last source;cancel suppresses click",
+        "rigidCapAndAllFixedMaterial": "pass"
+      }
+    ],
+    "simultaneous": {
+      "controls": 2,
+      "allHeldAndOneCancelled": "independent peers",
+      "completeNeutralPhysicalRestored": true
+    },
+    "partialPressCancelledSpringReturn": true,
+    "onlyActualCapStemMove": true,
+    "fixedFramesPCBPoEContactsPortsCameraAndPeersInvariant": true,
+    "realFixedColourIndicatorsIndependentExternalNoEcho": true,
+    "noAutomaticNetworkPoEPowerResetCameraOrFirmware": true,
+    "stateAndPoseQueriesNoEcho": true,
+    "allPhysicalAttributesIndexWorldRestored": true
+  },
+  "modelPeerInvariant": true,
+  "artworkCases": [
+    {
+      "entry": "Model",
+      "preset": "complete",
+      "options": {},
+      "onPngCount": 1,
+      "offPngCount": 0,
+      "artworkKinds": [
+        "reference-redraw"
+      ],
+      "panelCount": 1,
+      "bothActualControlsPartialPressCancelledReturn": true,
+      "allPhysicalAttributesIndexWorldInvariant": true,
+      "physicalRearFilmPCBPoEAndM5Retained": true
+    },
+    {
+      "entry": "GroveModule",
+      "preset": "complete",
+      "options": {},
+      "onPngCount": 1,
+      "offPngCount": 0,
+      "artworkKinds": [
+        "reference-redraw"
+      ],
+      "panelCount": 1,
+      "bothActualControlsPartialPressCancelledReturn": true,
+      "allPhysicalAttributesIndexWorldInvariant": true,
+      "physicalRearFilmPCBPoEAndM5Retained": true
+    }
+  ],
+  "externalPoseCableNoEcho": true,
+  "transformedPhysical": {
+    "constructionRoute": "own-dimensional-parametric",
+    "importedNativeFaces": 0,
+    "physicalMeshes": 532,
+    "physicalBodyMeshes": 532,
+    "triangles": 62288,
+    "allClosedPositiveDirectedEdges": true,
+    "actualEnvelopeMm": [
+      24.000000095367426,
+      64.00000042915346,
+      18.00000000298023
+    ],
+    "nominalModelAxesMm": [
+      24,
+      64,
+      18
+    ],
+    "rearClosureAndPCBPoEBackingRays": 9,
+    "realRearFilm": 1,
+    "actualUncolouredM5": true,
+    "clipSlots": 4,
+    "clipFrontSideWallRays": 16,
+    "hangingKeyhole": true,
+    "keyholeFrontSideWallRays": 3,
+    "optical": {
+      "sensor": "OV2640",
+      "documentaryFovDeg": 65,
+      "passiveFrame": true,
+      "glassFirst": true,
+      "wallRays": 8,
+      "retainedFPCContacts": 24
+    },
+    "groveContacts": 4,
+    "rj45Contacts": 8,
+    "rj45RealDeepCavity": true,
+    "serviceSockets": 2,
+    "servicePhysicalPins": 6,
+    "serviceBoreWallRays": 12,
+    "pcbDrills": 20,
+    "pcbFrontSideWallRays": 80,
+    "platedBores": 20,
+    "annularLands": 40,
+    "realMovingMeshes": {
+      "user": 2,
+      "reset": 2
+    },
+    "externallyDrivenFixedLeds": [
+      "g0-blue",
+      "link-yellow",
+      "activity-green"
+    ],
+    "externallyVisibleEmitterRays": 3,
+    "noExteriorSK6812": true,
+    "standBrickOmitted": true,
+    "scope": "Exact original U121-B;hidden wall/PCB/PoE/contact/optical/lightpath/BOM/travel/fit inferred,no sibling native,network/electrical/firmware/GPU/hardware/manufacturing acceptance"
+  },
+  "moduleRuntime": {
+    "controls": [
+      {
+        "id": "user",
+        "travelMm": 0.25,
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "actualMovingMeshes": 2,
+        "multiSourceReleaseCancel": "last source;cancel suppresses click",
+        "rigidCapAndAllFixedMaterial": "pass"
+      },
+      {
+        "id": "reset",
+        "travelMm": 0.18,
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "actualMovingMeshes": 2,
+        "multiSourceReleaseCancel": "last source;cancel suppresses click",
+        "rigidCapAndAllFixedMaterial": "pass"
+      }
+    ],
+    "simultaneous": {
+      "controls": 2,
+      "allHeldAndOneCancelled": "independent peers",
+      "completeNeutralPhysicalRestored": true
+    },
+    "partialPressCancelledSpringReturn": true,
+    "onlyActualCapStemMove": true,
+    "fixedFramesPCBPoEContactsPortsCameraAndPeersInvariant": true,
+    "realFixedColourIndicatorsIndependentExternalNoEcho": true,
+    "noAutomaticNetworkPoEPowerResetCameraOrFirmware": true,
+    "stateAndPoseQueriesNoEcho": true,
+    "allPhysicalAttributesIndexWorldRestored": true
+  },
+  "modulePeerInvariant": true,
+  "framebufferInvariant": true,
+  "realFourCoreCables": {
+    "testedPath": 2,
+    "peer": 1
+  },
+  "actualBranchDetachReattach": true,
+  "nontrivialAncestorAndModulePose": true,
+  "actualAPI": {
+    "exports": [
+      "GroveModule",
+      "Model",
+      "configurationSchema",
+      "configurations",
+      "defaults",
+      "spec"
+    ],
+    "defaultExport": "Model",
+    "bodyComponentOrder": [
+      "camera",
+      "grove",
+      "ethernet",
+      "download-en",
+      "download-uart",
+      "user",
+      "reset",
+      "g0",
+      "link",
+      "activity"
+    ],
+    "bodyComponentKinds": {
+      "camera": "component",
+      "grove": "port",
+      "ethernet": "port",
+      "download-en": "port",
+      "download-uart": "port",
+      "user": "button",
+      "reset": "button",
+      "g0": "led",
+      "link": "led",
+      "activity": "led"
+    },
+    "moduleComponentOrder": [
+      "camera",
+      "grove",
+      "ethernet",
+      "download-en",
+      "download-uart",
+      "user",
+      "reset",
+      "g0",
+      "link",
+      "activity",
+      "unitFrame",
+      "cable"
+    ],
+    "moduleComponentKinds": {
+      "camera": "component",
+      "grove": "port",
+      "ethernet": "port",
+      "download-en": "port",
+      "download-uart": "port",
+      "user": "button",
+      "reset": "button",
+      "g0": "led",
+      "link": "led",
+      "activity": "led",
+      "unitFrame": "unit-frame",
+      "cable": "cable"
+    },
+    "keymap": {
+      "Space": "user",
+      "KeyR": "reset"
+    },
+    "defaults": {},
+    "configurationSchema": {
+      "artwork": {
+        "type": "boolean",
+        "default": true,
+        "meaning": "Rear ink only;retain physical die-cut film,original shell,PCB/PoE/lens/contact supports and uncoloured M5"
+      }
+    },
+    "configurations": [
+      {
+        "id": "complete",
+        "name": "完整原版 PoE CAM-W U121-B",
+        "options": {}
+      }
+    ]
+  },
+  "disposedResources": 1542
+}

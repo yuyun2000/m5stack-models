@@ -1,0 +1,81 @@
+{
+  "id": "pahub-v20",
+  "sku": "U040-B",
+  "kind": "reference-redraw",
+  "assets": [
+    {
+      "path": "src/units/pahub-v20/artwork/back.png",
+      "sha256": "3341baec127667e37418d4c7c7f9a0db5a58153b35406422ef8fe5670f36dd7d",
+      "kind": "reference-redraw",
+      "width": 1600,
+      "height": 2800,
+      "carrier": "pahubV20Assembly.shell.film",
+      "source": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pahub2/pahub2_02.webp",
+        "bytes": 43126,
+        "sha256": "244a19ab4df8304f0bd296091cb2d018ed5d38937fae77a58aa605a6d42ace5e",
+        "role": "own-readable-rear-film-and-fixing"
+      },
+      "method": "Accurate own readable source code redraw;no source photo pixels",
+      "limitations": "Typography/spacing/colors andfilmthickness inferred;printedchip/address text doesnot settle fittedpart or implement addressbehavior"
+    },
+    {
+      "path": "src/units/pahub-v20/artwork/pcb.png",
+      "sha256": "b4580c50ba34a58611b28e9260e9632b0bdc358ab479de2050b3de85cef59d0f",
+      "kind": "reference-redraw",
+      "width": 1040,
+      "height": 940,
+      "carrier": "pahubV20Assembly.board.pcb direct silk",
+      "source": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/pahub2/pahub2_06.webp",
+        "bytes": 81226,
+        "sha256": "c4391e9993ebadc456cd34a8b74bf72b63463ebfbe9fb65f38dec116fe536358",
+        "role": "own-clear-exposed-PCB-front"
+      },
+      "method": "Accurate own readable source code redraw;no source photo pixels",
+      "limitations": "Typography/spacing/colors andfilmthickness inferred;printedchip/address text doesnot settle fittedpart or implement addressbehavior"
+    }
+  ],
+  "pngCount": 2,
+  "physicalFilmCarriers": 1,
+  "directPcbSilkRegions": 1,
+  "configurationCases": [
+    {
+      "options": {},
+      "kinds": [
+        "reference-redraw",
+        "reference-redraw"
+      ]
+    }
+  ],
+  "texts": {
+    "back": [
+      "Pa.HUB",
+      "PCA",
+      "9548AP",
+      "2/3/1/4/0/5 port map withG/5/D/C",
+      "ADDR 0X70~0X77",
+      "PORT.A.I2C",
+      "SCL",
+      "SDA",
+      "5V",
+      "GND"
+    ],
+    "pcb": [
+      "3 2",
+      "4 1",
+      "5 0"
+    ]
+  },
+  "carrierPolicy": "artwork:false removes ink only;rearphysicalfilm/redPCB/nativeM5 and complete7portassembly retained",
+  "noFrontCoverFilm": "Port-side largeopening remains exposedPCB;do not invent opaque frontlabelcover",
+  "excluded": [
+    "photographic crops",
+    "packaging/banner/arrows/cable/coin",
+    "v2.1DIP-label",
+    "unknownmicrotext orchipmark",
+    "individualidentity"
+  ],
+  "privateOriginalDownloads": 0,
+  "rawSourcesVectorsGeneratorsDistributed": false
+}

@@ -1,0 +1,425 @@
+{
+  "id": "m5camera",
+  "sku": "U017",
+  "name": "M5Camera (original U017)",
+  "chips": [
+    "ESP32-WROVER",
+    "OV2640",
+    "CP2104"
+  ],
+  "retrievedAt": "2026-10-27",
+  "officialDocs": "https://docs.m5stack.com/en/unit/M5Camera",
+  "lifecycle": "Cached exact officialMCP marks EOL;original historical coverage,no live popularity/sales claim",
+  "constructionRoute": "own-dimensional-parametric",
+  "nativeGeometryAvailable": false,
+  "nativeTriangles": null,
+  "currentPage": {
+    "url": "https://docs.m5stack.com/en/unit/m5camera",
+    "status": 200,
+    "bytes": 132875,
+    "sha256": "bccd8f644e9b03d3f1f12ffd193e651f69e6cb755c0a7634edb7071b23702cb7",
+    "role": "current exact U017 product page",
+    "visuallyInspected": false,
+    "rawSourceDistributed": false
+  },
+  "immutableDocumentationSource": {
+    "id": "m5camera",
+    "url": "https://raw.githubusercontent.com/m5stack/m5-docs/e5354c5dcc61d16fdc1dff9d92c2c760728d0b60/docs/en/unit/m5camera.md",
+    "status": 200,
+    "bytes": 8666,
+    "sha256": "79b8aa6108395164990b264ddc91f72ef8dc422a7e5ba070abf5d8c4fc6d5b8f",
+    "commit": "e5354c5dcc61d16fdc1dff9d92c2c760728d0b60",
+    "gitBlob": "526713a7fe37e583d078662120032045246979e0",
+    "verified": true,
+    "sku": [
+      "U017"
+    ],
+    "headline": "# M5Camera"
+  },
+  "officialMCP": {
+    "exactOriginalReused": true,
+    "newCalls": 0,
+    "exactExtractSha256": "99c4cd5e8071e1a9d017aba77c77125622a56d9c776ae809ca8b8be007d1ae31",
+    "rawSourcesDistributed": false,
+    "newCallsDuringConstruction": 0
+  },
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/m5camera/m5camera_02.webp",
+    "status": 200,
+    "bytes": 17034,
+    "sha256": "c3b2753772c991f90414efab20bba0dddf20e61f92bd01d92ba7c02a2a2f9e0d",
+    "role": "Own isolated front case/uncolored M5/lens/6upper slots/stacked bottomUSB-C+Grove;shownENVunit/cableexcluded",
+    "visuallyInspected": true,
+    "rawSourceDistributed": false
+  },
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/m5camera/m5camera_01.webp",
+      "status": 200,
+      "bytes": 36550,
+      "sha256": "d9655a4d06bce875aea3b583db787c5104a5de7c1e5c3c59577d719eab8eee7f",
+      "role": "Own complete black housing/front lens/mount ears and packaging,packaging excluded from model",
+      "visuallyInspected": true,
+      "rawSourceDistributed": false
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/m5camera/m5camera_02.webp",
+      "status": 200,
+      "bytes": 17034,
+      "sha256": "c3b2753772c991f90414efab20bba0dddf20e61f92bd01d92ba7c02a2a2f9e0d",
+      "role": "Own isolated front case/uncolored M5/lens/6upper slots/stacked bottomUSB-C+Grove;shownENVunit/cableexcluded",
+      "visuallyInspected": true,
+      "rawSourceDistributed": false
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/m5camera/m5camera_03.webp",
+      "status": 200,
+      "bytes": 38754,
+      "sha256": "ba43213d6ffa75c4f85667d42c7fc63452c7207437fae1e6ce40258c7bb233e7",
+      "role": "Own assembled rear readable label/reset location plus own populated front/rearPCB/open assembly;contains camera identity and USB-C arrows",
+      "visuallyInspected": true,
+      "rawSourceDistributed": false
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/m5camera/m5camera_04.webp",
+      "status": 200,
+      "bytes": 45372,
+      "sha256": "38ab5cf09193ce372b2d0f40bae5226a955b1aa9dee57d15a329beaea4cb415a",
+      "role": "Own unscaled quickstart/illustrated schematic card,not mechanical drawing or bodylabel;pin-version conflict",
+      "visuallyInspected": true,
+      "rawSourceDistributed": false
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/image/m5-docs_schematic/unit/m5camera_sch_01.webp",
+      "status": 200,
+      "bytes": 38672,
+      "sha256": "46c05cd332c8c7e51b5650844de2a7bceb43307c6e40f703f728119ac8562180",
+      "role": "Own linked power schematic,LED1 RED charging documentary identity",
+      "visuallyInspected": true,
+      "rawSourceDistributed": false
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/image/m5-docs_schematic/unit/m5camera_sch_02.webp",
+      "status": 200,
+      "bytes": 67596,
+      "sha256": "794cbb7a3c5418d5d9ff7d5d33747368cd8abb6d109ea2d2c1f15f8c4992c8da",
+      "role": "Own linked WROVER/FPC24/red-blueGPIO14,MPU/BME/MIC NotInstalled Optional",
+      "visuallyInspected": true,
+      "rawSourceDistributed": false
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/image/m5-docs_schematic/unit/m5camera_sch_03.webp",
+      "status": 200,
+      "bytes": 36026,
+      "sha256": "e5ccaeec1a54e3359ebda4eef57a310709c03edeca5872b60e1ed6128bc12b6e",
+      "role": "Own linked CP2104/S1 RESET and USB_Micro-vs-Type-C version conflict",
+      "visuallyInspected": true,
+      "rawSourceDistributed": false
+    }
+  ],
+  "immutablePhotoBinding": {
+    "own01And02CurrentEqualsImmutable": true,
+    "own03CurrentEqualsImmutableGitBlob": {
+      "path": "docs/assets/img/product_pics/unit/m5camera/unit_m5camera_03.webp",
+      "commit": "e5354c5dcc61d16fdc1dff9d92c2c760728d0b60",
+      "gitBlob": "27012ec6e34dfb3715958c69d4854ea012055ebc",
+      "verified": true
+    }
+  },
+  "nominalMm": [
+    40,
+    48,
+    11
+  ],
+  "vendorDimensionOrderMm": [
+    40,
+    48,
+    11
+  ],
+  "mainBodyPhotoDerivedMm": [
+    24,
+    48,
+    7.92
+  ],
+  "actualPhysicalEnvelopeMm": [
+    39.999999809265134,
+    48.00000004768371,
+    10.999999999105931
+  ],
+  "acceptedFinalPreflightBaseline": {
+    "publicCatalog": {
+      "path": "outputs/m5stack-models-public/catalog/products.json",
+      "count": 190,
+      "sha256": "3a9253446ff34398710debdb1da3ee766e8be9774793f6c758f48d1b36f86337",
+      "kind": "actual-source-bytes-not-reordered-snapshot"
+    },
+    "publicSourceManifest": {
+      "path": "outputs/m5stack-models-public/source-manifest.json",
+      "count": 190,
+      "sha256": "33f673d6ad6c6447ac394fa1ee741f29d2fa1e5ee1d0f1053efbf7462456ac11",
+      "kind": "actual-source-bytes-not-reordered-snapshot"
+    },
+    "privateCatalog": {
+      "path": "outputs/m5stack-models.js/catalog/products.json",
+      "count": 190,
+      "sha256": "d4aa2314ebcd48f96338ed98a21aff300899863873f20398fca99b417c7901c5",
+      "kind": "actual-source-bytes-not-reordered-snapshot"
+    }
+  },
+  "versionBoundary": "Exact wide-ear black original U017 only,not U038 M5Camera-X or U037 M5Camera-F;no stripping sibling shell/native geometry. No current popularity/sales claim;cached exactMCP marks EOL.",
+  "nativeBoundary": {
+    "exactU017NativePaths": [],
+    "cachedTreeSha256": "9a8fe9c1d6076acf532869d1f157d28f246ae27590e873c6f6e89411872d7a3c",
+    "onlyNearby": [
+      "A068_M5Camera-Battery",
+      "U038_M5Camera-X"
+    ],
+    "noBorrowing": true
+  },
+  "rearOpeningClosure": {
+    "observed": "Own03 assembledrear has large whiteprinted panel/label inside black perimeter;it is not a bare empty window. The same official composite exposes own rear WROVERshield/PCB and own front populatedPCB.",
+    "mustModel": "Build physical thin label/substrate with real casing rim/retainers plus populatedPCB/WROVERshield/support behind any exposed edge. All visible rear opening rays must encounter actual film/retainer/PCB/shield depth,not a black face or artwork filling missing geometry.",
+    "uncertain": "No own exploded mechanical drawing proves a separate rigid rear cover under label or exact adhesive bridging/PCB datum. Do not invent a precise rear hardcover or leave source window as missing assembly."
+  },
+  "versionConflicts": [
+    {
+      "id": "usb-symbol",
+      "evidence": "Own03/current&immutableincludesUSB-C but schematic3U9 labelsUSB_Micro with disconnected CC1/CC2 pull-down nets",
+      "resolution": "Use explicit photographedTypeC mechanical variant;no electrical routing orproductionrevision binding. Feedback delegated to parent."
+    },
+    {
+      "id": "grove-pin",
+      "evidence": "OwncurrentandimmutabletableSDAIO4 vs own04quickcard GroveG12",
+      "resolution": "KeepdocumentarymetadataIO4 andrecordprintcardconflict;never inferbusbehavior."
+    },
+    {
+      "id": "camera-pin",
+      "evidence": "Owncurrent/immutabletableSIODG22/VSYNCG25;own04quickcardSIODG25/VSYNCG22",
+      "resolution": "Recordmixedcardversion;passiveopticalframe only,nofirmwarepinrouting."
+    },
+    {
+      "id": "rear-substrate",
+      "evidence": "Own03white rearprinted panel but no exploded datum",
+      "resolution": "Realphysicalfilm/substrate andownPCBshieldbacking;do not assert precisionhardcover ormanufacturing fit."
+    }
+  ],
+  "officialFeedback": {
+    "id": "m5camera",
+    "receipt": "37479fad3d554b61b57fb5e09e4e4fb8",
+    "accepted": true,
+    "sha256": "5e1cafb407803e4c714d15d8375db6e1db403b0e23505aa00f500fb76616070f",
+    "correctedProductionDataReceived": false,
+    "waitingForCorrection": false
+  },
+  "ownBothPCBfacesAvailable": true,
+  "dimensionedMechanicalDrawingAvailable": false,
+  "inferred": [
+    "Exact original wide-ear black U017 only;current/immutable own40×48×11mm nominal agrees. Model complete assembly is40×48×11;24mm maincasewidth,ears±15.9mm/4.1outer/2.5bore are own-photo proportion estimates,not U038geometry or manufacturerdimensionaldrawing. No originalnativeCAD,assembledBOM,existingF/Xshell,stripped sibling,battery,LEGObracket,ENVunit or USBlead imported.",
+    "Own black two-halfsurface/perimeter and sixactual frontthroughslots,real round lensaperture,2lateralcontinuousbores anduncoloredM5relief are real volumes. Casebody24×48×7.92,walls1.2,cornersR4/seamlevels/earfilletshapes/slotpositions andsubstrate shape are own-photo reconstructions,not precise injectionmould/fit datums.",
+    "Own03assembled rear haswhiteprintedpanel;ownsamecomposite gives realPCBfront/rear andWROVERshield. Rear opening is physically closed by0.08mmphoto-inferred labelsubstrate seated againstrearperimeter,andall rearwindow raysreachactual ownPCB/module/shield depth. No unsupported rigid rearhardcover,blackplane or artwork maskingmissing assembly. Film thickness/edge overlap/substrate rigidity and exactadhesiveinstall remain inferred.",
+    "PCB20.6×44.2×0.8mm notchedoutline,2retainingreceiverreliefs,4Grove true drills/platedbarrels/annuli,4realfrontposts andclosedreceivingbosses are own-photo inferred. Actualownrear WROVERmodule substrate/large metalshield/PCBantenna traceenvelopes and38edgeleads retain visible support;exact package/leadfit/metallization/routing not manufacturerproductionBOM.",
+    "Ownfront OV2640 squarecarrier/4solderfeet,orangeFPC/24traceenvelopes andactual white24Preceiverfloor/walls/roof/slot/deepstop,24contacts/bends/tails are physical. Opticalbarrel/retainingflange/window/backing andcamera frame[0,11,6.4]mm are appearance estimates,not calibrated opticalstack/focalplane. Documentary65°FOV only;no fisheyeF/X,videoDisplay,image/AI/camera simulation/focusjoint.",
+    "Own03Type-C arrow/mouth andcurrent/immutableincludesTypeCcable bind actualUSB-C mechanicalappearance,despite oldschematicUSB_Micro+unconnectedCCnets. Hollowmetalshield/actualtongue/stop/PCBseat/feet and24standard-stylehiddencontacts/returns/tails are reconstruction,not provedconnectorproductionvariant or electrical pin availability. NoUSB/UART/power/firmware effect.",
+    "RearwhiteGroveactual deepreceivingfloor/walls/stop/bridge and4contacts/bends/feet/verticalsquarethroughPCBtails are physical;only0.42×0.42squaretails penetrate0.31innerplatedbores withpositive0.013mmvisualradialmargin. Position/clearance/bends are inferred manufacturingfit notaccepted. G13SCL/G4SDA/5V/GND arecurrent+immutabledocumentarymetadata,not quickcardG12orI2Celectrical simulation.",
+    "RESETactualsidecap/stem only moves0.22mm on[-1,0,0],fixedframe/deepstop/terminals/PCB remain. Travel/axis/install are ownphotoViewerinference,not ratedswitchtravel. Multiplesources,lastsource release/cancel springreturn andlongpress areinputintentonly;noESPreset,power,WiFi,camera/firmware. ModelKeyR mapsreset;module requirescallerhostkeymappath.",
+    "SchematicLED1/LED2/LED3 fixed package envelopes are concealed,inferred positions,withnoemission/exteriorlens/API. Unconfirmedlightpaths mustnot turn6actualslots intolamps. SchematicMPU60X0/BME280/SPM1423areNotInstalled Optional,so noNCsensor/mic componentsorvalues. cameraComponentempty/noninteractive only;noDisplay/joint/automaticoutput.",
+    "Own03readable rearM5CAMERA,ESP32/WROVER,4MBFLASH/PSRAM,OV2640,OPTIONAL andbrandmarklayout accurately code-redrawn as1ordinary2100×3800RGBA. Font/color/spacing/marks reconstructed;unreadable optionalpart/pinmicrotext/individualcodes omitted,not guessed. No photographic pixels,marketing/quickstart/overheatbanner appliedtobody,privateCSV/URLs/mappings/vectors/generator/rawsources distributed. Exact/privatebodyoriginals0,downloads0.",
+    "Officialfeedback37479fad3d554b61b57fb5e09e4e4fb8accepted forUSB/quickcardGroveG12vsG4/SIOD-VSYNC mixedversions;no correctedproductiondatums received. Keepown photographedmechanicalvariant andpassiveopticalframe;no firmwarepinrouting inferred.",
+    "NecessaryCPUown Model andactual transformedStickS3→HUBbranch1 pass491closedpositiveFrontSidesolids/40608triangles,ear/slot/PCB/opticalwalls andactualrear/supportstructure,partialRESET/multisourcecancel,twoentries/completepresetinkoff fullattrs/index/world,real4core/peer/framebuffer/externalposecable noecho/detachreattach/disposal. No browser/GPU/hardware/manufacturing/fullhistory acceptance;stage remainsmodeled."
+  ],
+  "privateAggregate": {
+    "id": "m5camera",
+    "sku": "U017",
+    "exactSkuRows": 0,
+    "strictNameOnlyRows": 0,
+    "approvedBodyOriginals": 0,
+    "originalDownloads": 0,
+    "decision": "no-exact-or-strict-candidates"
+  },
+  "license": {
+    "newAuthoredCode": "MIT",
+    "importedNativeGeometry": false,
+    "officialReferences": "Referenceonly;rawphotos/docs/schematic notdistributed,noblanketMIT",
+    "ordinaryPng": "Userauthorized accurate ownmodel rasterredraw;marks retain respective rights"
+  },
+  "assetPolicy": {
+    "pngCount": 1,
+    "privateSourcesDistributed": false,
+    "rawSourcesDistributed": false,
+    "vectorsGeneratorsDistributed": false
+  },
+  "publicAPI": {
+    "exports": [
+      "GroveModule",
+      "Model",
+      "configurationSchema",
+      "configurations",
+      "defaults",
+      "spec"
+    ],
+    "defaultExport": "Model",
+    "bodyComponentOrder": [
+      "camera",
+      "grove",
+      "usb",
+      "reset"
+    ],
+    "bodyComponentKinds": {
+      "camera": "component",
+      "grove": "port",
+      "usb": "port",
+      "reset": "button"
+    },
+    "moduleComponentOrder": [
+      "camera",
+      "grove",
+      "usb",
+      "reset",
+      "unitFrame",
+      "cable"
+    ],
+    "moduleComponentKinds": {
+      "camera": "component",
+      "grove": "port",
+      "usb": "port",
+      "reset": "button",
+      "unitFrame": "unit-frame",
+      "cable": "cable"
+    },
+    "keymap": {
+      "KeyR": "reset"
+    },
+    "defaults": {},
+    "configurationSchema": {
+      "artwork": {
+        "type": "boolean",
+        "default": true,
+        "meaning": "Rear ink only;retain physical label substrate,case/ears,PCB/WROVERshield and complete support"
+      }
+    },
+    "configurations": [
+      {
+        "id": "complete",
+        "name": "完整原版 M5Camera U017",
+        "options": {}
+      }
+    ],
+    "assemblyProperty": "m5cameraAssembly",
+    "canonicalCableInput": "grove",
+    "ports": [
+      "grove",
+      "usb"
+    ],
+    "controls": [
+      "reset"
+    ],
+    "leds": [],
+    "outputs": [],
+    "displays": [],
+    "speakers": [],
+    "sensors": [],
+    "joints": [],
+    "anchors": [
+      "camera"
+    ],
+    "passiveAnchors": [
+      "camera"
+    ],
+    "aliases": [],
+    "moduleAdditionalComponents": [
+      "unitFrame",
+      "cable"
+    ],
+    "accessoryExports": [],
+    "accessories": {},
+    "options": {
+      "artwork": "boolean"
+    },
+    "configurationCases": [
+      {
+        "options": {},
+        "kinds": [
+          "reference-redraw"
+        ],
+        "artworkKinds": [
+          "reference-redraw"
+        ],
+        "pngCount": 1
+      }
+    ],
+    "commands": {
+      "reset": {
+        "type": "button",
+        "actions": [
+          "press",
+          "release",
+          "cancel",
+          "click",
+          "state"
+        ],
+        "travelMm": 0.22,
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "state": {
+          "pressed": "boolean"
+        },
+        "scope": "Only cap/stem physical motion and inputintent;no ESP/reset/power/WiFi/camera firmware"
+      },
+      "camera": {
+        "kind": "component",
+        "interactive": false,
+        "state": {},
+        "sensor": "OV2640",
+        "documentaryFovDeg": 65,
+        "commands": [],
+        "scope": "Passive inferred optical frame,no focal calibration/video/AI/focusjoint"
+      },
+      "unitFrame": {
+        "type": "pose",
+        "fields": [
+          "position",
+          "rotation",
+          "quaternion",
+          "distance"
+        ]
+      },
+      "cable": {
+        "type": "cable",
+        "fields": [
+          "slack",
+          "bend"
+        ]
+      }
+    },
+    "inputEvents": {
+      "reset": [
+        "down",
+        "up",
+        "click",
+        "longpress"
+      ],
+      "ports": [
+        "attach",
+        "detach"
+      ]
+    },
+    "keyboard": {
+      "Model": {
+        "KeyR": "reset"
+      },
+      "GroveModuleOnHost": "caller explicitly maps top-level host.keymap to grove/grove-1/reset;no automatic module mapping"
+    },
+    "physicalMovingMeshes": {
+      "reset": 2
+    },
+    "artworkPngCount": 1,
+    "artworkSourceKind": "reference-redraw",
+    "physicalAdhesiveFilms": 1,
+    "allArtworkPhysicalAttributesIndexWorldInvariant": true,
+    "noInventedRearHardcover": true,
+    "noAccessoriesOrRemovableCovers": true
+  }
+}

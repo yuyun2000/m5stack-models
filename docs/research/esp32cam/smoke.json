@@ -1,0 +1,217 @@
+{
+  "id": "esp32cam",
+  "status": "pass",
+  "entryReports": [
+    {
+      "entry": "Model",
+      "geometry": {
+        "constructionRoute": "own-photo-parametric",
+        "nativeFaces": 0,
+        "provisionalOldExactNominalMm": [
+          20.5,
+          46.5,
+          11.5
+        ],
+        "currentConflictingVendorMm": [
+          54,
+          54,
+          26.6
+        ],
+        "actualPhysicalEnvelopeMm": [
+          20.5,
+          46.50000009536743,
+          11.500000047683717
+        ],
+        "physicalMeshes": 601,
+        "triangles": 19908,
+        "allClosedPositiveDirectedTwoEdges": true,
+        "frontSide": true,
+        "boreWalls": 8,
+        "cavityWallRays": 8,
+        "actualGroveContacts": 4,
+        "actualUsbTongueContacts": 24,
+        "actualEmptyBatteryContacts": 2,
+        "fpcReceiverContacts": 24,
+        "fpcTailLands": 24,
+        "antennaRetainedFeet": 4,
+        "cameraCarrierFlexAndOpticsSupported": true,
+        "optionalSensorsFitted": 0,
+        "ownLedApi": false,
+        "physicalFilms": 0,
+        "pngCount": 0
+      },
+      "runtime": {
+        "partialRealCapTravel": true,
+        "button": [
+          {
+            "id": "key",
+            "travelMm": 0.18,
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "actualMovingMeshes": 1,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          }
+        ],
+        "multipleSourcesAndCancelledClickSuppression": true,
+        "passiveCameraFovDeg": 65,
+        "noCameraLedOptionalSensorsBatteryOrFirmwareSimulation": true,
+        "externalUnsupportedCommandsNoEcho": true,
+        "fixedPhysicalAttributesIndicesWorldAndPortsRetained": true
+      },
+      "wrongFamily": [
+        "grove",
+        "usb"
+      ],
+      "disposedResources": 1192
+    },
+    {
+      "entry": "GroveModule",
+      "geometry": {
+        "constructionRoute": "own-photo-parametric",
+        "nativeFaces": 0,
+        "provisionalOldExactNominalMm": [
+          20.5,
+          46.5,
+          11.5
+        ],
+        "currentConflictingVendorMm": [
+          54,
+          54,
+          26.6
+        ],
+        "actualPhysicalEnvelopeMm": [
+          20.5,
+          46.50000009536744,
+          11.50000004768372
+        ],
+        "physicalMeshes": 601,
+        "triangles": 19908,
+        "allClosedPositiveDirectedTwoEdges": true,
+        "frontSide": true,
+        "boreWalls": 8,
+        "cavityWallRays": 8,
+        "actualGroveContacts": 4,
+        "actualUsbTongueContacts": 24,
+        "actualEmptyBatteryContacts": 2,
+        "fpcReceiverContacts": 24,
+        "fpcTailLands": 24,
+        "antennaRetainedFeet": 4,
+        "cameraCarrierFlexAndOpticsSupported": true,
+        "optionalSensorsFitted": 0,
+        "ownLedApi": false,
+        "physicalFilms": 0,
+        "pngCount": 0
+      },
+      "runtime": {
+        "partialRealCapTravel": true,
+        "button": [
+          {
+            "id": "key",
+            "travelMm": 0.18,
+            "axis": [
+              1,
+              0,
+              0
+            ],
+            "actualMovingMeshes": 1,
+            "multiSourceReleaseCancel": "last source;cancel suppresses click",
+            "rigidCapAndAllFixedMaterial": "pass"
+          }
+        ],
+        "multipleSourcesAndCancelledClickSuppression": true,
+        "passiveCameraFovDeg": 65,
+        "noCameraLedOptionalSensorsBatteryOrFirmwareSimulation": true,
+        "externalUnsupportedCommandsNoEcho": true,
+        "fixedPhysicalAttributesIndicesWorldAndPortsRetained": true
+      },
+      "parent": "transformed StickS3 -> real HUB grove-2",
+      "canonicalInput": "grove",
+      "cable": {
+        "slack": 10,
+        "bend": [
+          0,
+          0,
+          -1
+        ],
+        "faceDistanceMm": 87.00000000000001,
+        "curveLengthMm": 81.89631565347817,
+        "source": {
+          "position": [
+            1.4210854715202004e-14,
+            0,
+            0
+          ],
+          "quaternion": [
+            0,
+            -2.6020852139652106e-18,
+            0,
+            1
+          ],
+          "outward": [
+            0,
+            1,
+            0
+          ]
+        },
+        "target": {
+          "position": [
+            1.4210854715202004e-14,
+            87.00000000000001,
+            -7.105427357601002e-15
+          ],
+          "quaternion": [
+            0.11407610716500864,
+            0.06720904187123164,
+            0.9896031053688111,
+            -0.056171881838106216
+          ],
+          "outward": [
+            0.12650962912872002,
+            -0.9846553287630337,
+            0.12020481386481857
+          ]
+        },
+        "wireCount": 4,
+        "plugCount": 2,
+        "space": "module-port"
+      },
+      "independentPeer": true,
+      "framebufferUnchanged": true,
+      "detachRestoreAllAttributesIndexWorld": true,
+      "disposedResources": 1218,
+      "peerDisposedResources": 1218
+    }
+  ],
+  "pngCount": 0,
+  "physicalFilms": 0,
+  "exports": [
+    "GroveModule",
+    "Model",
+    "configurationSchema",
+    "configurations",
+    "defaults",
+    "spec"
+  ],
+  "bodyComponentOrder": [
+    "grove",
+    "usb",
+    "camera",
+    "key"
+  ],
+  "moduleComponentOrder": [
+    "grove",
+    "usb",
+    "camera",
+    "key",
+    "unitFrame",
+    "cable"
+  ],
+  "keymap": {
+    "KeyK": "key"
+  },
+  "inkToggleAllPhysicalAttrsIndexWorldInvariant": true
+}

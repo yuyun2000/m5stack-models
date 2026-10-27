@@ -1,0 +1,63 @@
+{
+  "id": "rgb-led-strip-50cm",
+  "sku": "A093",
+  "kind": "reference-redraw",
+  "pngCount": 1,
+  "printedPanelCount": 29,
+  "physicalFilms": 0,
+  "directPcbSilkRegions": 29,
+  "assets": [
+    {
+      "file": "src/units/rgb-led-strip-50cm/artwork/plus5v.png",
+      "kind": "reference-redraw",
+      "sha256": "86def3685a178e1665e33082dc20dc482d7159949acdfa07529534e4dbc82b83",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "characters": "+5V",
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "transparentPixels": 457439,
+        "opaquePixels": 54286,
+        "antialiasedPixels": 12563,
+        "inkBoundingBoxPx": [
+          81,
+          88,
+          885,
+          436
+        ]
+      },
+      "sourceURL": "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/4_486f158b-d75e-47b4-b570-79b68c103f89.jpg?v=1753763307",
+      "sourceReferenceSha256": "5278233f7eead4c38fe9d8ac72697421188f83ded5aef25052c1f29a372e48f3",
+      "projection": {
+        "target": "real white FPC top",
+        "tileMm": [
+          3.1,
+          1.55
+        ],
+        "positions": "29 internal cut-pad rows,x=row*500/30+2.8,y=-3.45,z=.3;row1..29",
+        "repeatRegistration": "Arithmetic display registration inferred from repeated visible family circuit layout,not measured original vector",
+        "motion": "Geometry vertices registered to the actual continuous strip flex"
+      }
+    }
+  ],
+  "sourceRole": "Official shop family closeup of the A093 product family;not a dedicated isolated30pixel variant measurement",
+  "method": "Code-drawn typographic paths on transparent canvas,4x supersampled and downsampled. No source image pixels,crops,photo extraction,OCR output or private vector used.",
+  "fontApproximation": "Simple monoline sans lettering;glyph shape,stroke,width/color and spacing approximated from low-resolution official reference,not manufacturer vector or measured typeface.",
+  "omitted": [
+    "DIN/DO and unknown microtext",
+    "direction arrows not safely established by this draft",
+    "3M rear print",
+    "individual codes",
+    "copper pads,solder joints,components and substrate pixels"
+  ],
+  "sourcePixelsUsed": false,
+  "ordinaryPngAllowedByUser": true,
+  "rawPhotoVectorGeneratorDistributed": false,
+  "privateSourceAccessDuringModeling": false,
+  "artworkFalse": "Only transparent printed ink removed;every physical FPC/adhesive/dropcoat/pad/package/passive/contact/boot/wire and port remains identical,including partial flex attrs/index/world",
+  "license": "Authored ordinary raster under repository MIT;official photograph is reference only,product marks retain their respective rights"
+}

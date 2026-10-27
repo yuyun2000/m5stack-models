@@ -1,0 +1,146 @@
+{
+  "id": "cardkb-original",
+  "sku": "U035",
+  "name": "Unit CardKB (original MEGA328P U035)",
+  "retrievedAt": "2026-10-27",
+  "officialDocs": "https://docs.m5stack.com/en/unit/Unit_CardKB",
+  "versionBoundary": "Exact original U035 with own MEGA328P photo and firmware_328p link;not covered U035-B/v1.1 ATMega8A,CardKB2 or CardKB-HAT. Cached exact MCP marks EOL;no popularity/sales claim.",
+  "constructionRoute": "own-original-MEGA328P-U035-photo-parametric",
+  "nativeGeometryAvailable": false,
+  "importedNativeFaces": 0,
+  "currentPage": {
+    "id": "cardkb-original",
+    "file": "page.html",
+    "url": "https://docs.m5stack.com/en/unit/cardkb",
+    "finalUrl": "https://docs.m5stack.com/en/unit/Unit_CardKB",
+    "status": 200,
+    "sha256": "9ac81d5d73b89fbcacf492a1d9016f5b7f4a9446e2d711ac0acd5f173fe40d77",
+    "bytes": 129786
+  },
+  "immutableDocumentationSource": {
+    "id": "cardkb-original",
+    "url": "https://raw.githubusercontent.com/m5stack/m5-docs/e5354c5dcc61d16fdc1dff9d92c2c760728d0b60/docs/en/unit/cardkb.md",
+    "sha256": "c918df1cce856a293f78cefaec417784a1335e54c4def0094b1434b8eb7b10aa",
+    "bytes": 5484,
+    "commit": "e5354c5dcc61d16fdc1dff9d92c2c760728d0b60",
+    "gitBlob": "2454fd4a4a11bd23c17d3baa0926ba1557d3dfa4",
+    "expectedGitBlob": "2454fd4a4a11bd23c17d3baa0926ba1557d3dfa4",
+    "verified": true
+  },
+  "referenceSources": [
+    {
+      "id": "cardkb-original",
+      "file": "own-01.webp",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/cardkb/cardkb_01.webp",
+      "status": 200,
+      "bytes": 146000,
+      "sha256": "61179e5469918dd503a41d9d03c9106cccae8b1d636765fd48ae337faea8505d",
+      "visuallyInspected": true,
+      "rawSourceDistributed": false
+    },
+    {
+      "id": "cardkb-original",
+      "file": "own-02.webp",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/cardkb/cardkb_02.webp",
+      "status": 200,
+      "bytes": 90064,
+      "sha256": "dd27e55abe84667ff71534b50c138f4f4ba6abe3a8cce0b80243a8fc84b1755b",
+      "visuallyInspected": true,
+      "rawSourceDistributed": false
+    }
+  ],
+  "officialMCP": {
+    "newCalls": 1,
+    "file": "cardkb-original/official-mcp.json",
+    "rawSha256": "dc29c70b32196c73d556729ee4949f5637f74414a794c67d5052291075326fd2",
+    "exactExtract": "cardkb-original/exact-own-mcp.txt",
+    "exactExtractSha256": "eb863a37e5b1fe8ed6b28ac8732ccba148303109490eff40b3117592d3814b19",
+    "scope": "Only exact product name/SKU U035 sections;U035-B/2 excluded. Safe Python-literal info-envelope decode.",
+    "callsDuringModeling": 0
+  },
+  "sourceCandidateSha256": "43d2302e057cf67126f0005a6d2636d5f51425b33ed80f91f15fc9c44d44c127",
+  "nominalMm": {
+    "currentAndImmutableTable": [
+      88,
+      54,
+      5
+    ],
+    "ownPhotoCaption": [
+      84,
+      54
+    ],
+    "proposedAuthorBasis": "Table 88x54x5 as explicitly provisional whole-product appearance envelope;retain photo84 conflict. PCB-vs-envelope explanation is unconfirmed and must not be asserted. Author must disclose chosen basis.",
+    "dimensionedMechanicalDrawingAvailable": false,
+    "manufacturingFit": false
+  },
+  "versionConflicts": [
+    {
+      "id": "width",
+      "evidence": "Both exact old/current U035 tables88x54x5;own product photo84mmx54mm",
+      "resolution": "Explicitly provisional dimensions;no asserted PCB/envelope relationship or manufacturing fit",
+      "feedbackId": "8c2bf1ebc5834156af28996b642bfdab"
+    },
+    {
+      "id": "isp-version",
+      "evidence": "Current exactU035 page labels PinMap UnitCardKBv1.1/ATMega8A,but own MEGA328P photo/firmware_328p and immutable Mega328ISP identify originalU035",
+      "resolution": "Do not import v1.1 package/ISP diagram or electrical routing",
+      "feedbackId": "8c2bf1ebc5834156af28996b642bfdab"
+    },
+    {
+      "id": "mounting-hole-location",
+      "oldImmutableFeature": "Two Lego compatible holes",
+      "own01Finding": "Only left upper mounting aperture can be located. The far right black backspace icon and Space marks are PCB ink,not a second mounting hole.",
+      "treatment": "Model the one own-photo-confirmed large aperture plus six ISP plated holes;do not invent a symmetric second large hole. The old two-hole statement remains unresolved.",
+      "newFeedbackSubmitted": false
+    }
+  ],
+  "actualChosenGeometry": "88x54 PCB appearance within provisional table-based whole-product scale. This is an inferred registration choice,not proof explaining photo84 versus table88. Actual retained tails yield88x54x5.15 appearance envelope.",
+  "actualLocatedMountingHoles": 1,
+  "ispPlatedHoles": 6,
+  "inferred": [
+    "Exact PCB width/envelope source conflict,thickness,corner radius and hole/key pitches",
+    "Bottom copper/solder/component population and switch attachment details absent own rear photo",
+    "Actual switch plunger travel/footprint,LED package optical recess and exact conductor/install geometry",
+    "Own-photo key/MCU/Grove/RGB locations and exact pitches/gullwing shapes",
+    "All hidden support/retention and solder pad thickness;unseen rear circuit population not fabricated"
+  ],
+  "documentaryOnly": {
+    "mcu": "MEGA328P original;currentv1.1ATMega8A PinMap not applied",
+    "I2CAddress": "0x5F",
+    "RGBPin": "IO13",
+    "firmware": "firmware_328p link identifies version only;no code/protocol/combination copied"
+  },
+  "feedback": {
+    "id": "8c2bf1ebc5834156af28996b642bfdab",
+    "accepted": true,
+    "reusedSourcePreflightReceipt": true,
+    "newFeedbackDuringModeling": 0,
+    "correctedMechanicalOrBOMReceived": false
+  },
+  "privateAggregate": {
+    "id": "cardkb-original",
+    "sku": "U035",
+    "exactSkuRows": 0,
+    "strictNameOnlyRows": 0,
+    "candidateBodyRows": 0,
+    "packagingRejectedRows": 0,
+    "unclassifiedRejectedRows": 0,
+    "approvedBodyOriginals": 0,
+    "originalDownloads": 0,
+    "decision": "no-approved-source-original-at-source-only-preflight",
+    "authorPrivateReads": 0
+  },
+  "license": {
+    "newAuthoredCode": "MIT",
+    "ordinaryPng": "User-authorized readable original-version redraw with attribution",
+    "rawOfficialDocsPhotos": "Reference only;not redistributed/blanketMIT",
+    "privateInputs": "NoCSV/vector/privateURL/originalname/mapping/generator distributed"
+  },
+  "validationBoundary": {
+    "cpuOnly": true,
+    "browserGPU": false,
+    "manufacturingFit": false,
+    "hardwareExecution": false,
+    "fullHistory": false
+  }
+}

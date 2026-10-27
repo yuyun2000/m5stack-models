@@ -1,0 +1,3241 @@
+{
+  "status": "pass",
+  "scope": "Bounded own original U017 Model and actual transformed StickS3-HUB branch1,real four-core cable/partial RESET/complete assembly,not GPU/hardware/manufacturing/full history",
+  "physical": {
+    "constructionRoute": "own-dimensional-parametric",
+    "importedNativeFaces": 0,
+    "physicalBodyMeshes": 491,
+    "triangles": 40608,
+    "allClosedPositiveDirectedEdges": true,
+    "actualEnvelopeMm": [
+      39.999999809265134,
+      48.00000004768371,
+      10.999999999105931
+    ],
+    "nominalMm": [
+      40,
+      48,
+      11
+    ],
+    "mainCaseOnlyWidthMm": 24,
+    "trueEarAxes": 2,
+    "earFrontSideWallRays": 24,
+    "actualFrontSlots": 6,
+    "slotFrontSideWallRays": 24,
+    "realPCBBackedSlots": 6,
+    "closureRays": 8,
+    "rearPhysicalLabelSubstrate": true,
+    "noInventedRigidRearCover": true,
+    "rearPCBShieldBackingRays": 9,
+    "WROVEREdgeLeads": 38,
+    "PCBSupportPosts": 4,
+    "PCBDrillWallRays": 16,
+    "PCBReceiverClearanceMm": 0.15,
+    "verticalTailToPlatedBoreClearanceMm": 0.013015151901650035,
+    "grove": {
+      "contacts": 4,
+      "bends": 4,
+      "feet": 4,
+      "squareVerticalThroughPCBTails": 4,
+      "platedBores": 4,
+      "annuli": 8
+    },
+    "usb": {
+      "ownTypeC": true,
+      "actualHollowShieldTongueAndStop": true,
+      "standardStyleInferredContacts": 24
+    },
+    "camera": {
+      "sensor": "OV2640",
+      "documentaryFovDeg": 65,
+      "passiveFrame": true,
+      "realBackedOpticalWindow": true,
+      "opticalFrontSideWallRays": 8
+    },
+    "fpc": {
+      "realFlexAndReceivingSlot": true,
+      "contacts": 24,
+      "returns": 24,
+      "solderTails": 24
+    },
+    "actualResetMovingMeshes": 2,
+    "resetTravelMm": 0.22,
+    "resetAxis": [
+      -1,
+      0,
+      0
+    ],
+    "physicalFilms": 1,
+    "actualM5Material": true,
+    "ledAPIs": 0,
+    "unfittedSensorComponents": 0,
+    "scope": "Own original U017;all hidden assembly/film/optics/contacts/travel inferred,no sibling/native/BOM/focal/hardware/manufacturing acceptance"
+  },
+  "modelRuntime": {
+    "controls": [
+      {
+        "id": "reset",
+        "travelMm": 0.22,
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "actualMovingMeshes": 2,
+        "multiSourceReleaseCancel": "last source;cancel suppresses click",
+        "rigidCapAndAllFixedMaterial": "pass"
+      }
+    ],
+    "partialPressAndCancelledSpringReturn": true,
+    "onlyActualResetCapAndStemMove": true,
+    "fixedCaseFramesContactsPCBShieldPortsCameraAndPeersInvariant": true,
+    "multipleSourcesLastReleaseCancel": true,
+    "cancelSuppressesClick": true,
+    "noInventedLEDsOrUnfittedSensors": true,
+    "noCameraVideoAIFocusPowerResetFirmwareBehavior": true,
+    "stateAndPoseQueriesNoEcho": true,
+    "allPhysicalAttributesIndexWorldRestored": true
+  },
+  "modelPeerInvariant": true,
+  "topology": {
+    "meshes": 491,
+    "triangles": 40608,
+    "envelopeMm": [
+      39.999999809265134,
+      48.00000004768371,
+      10.999999999105931
+    ],
+    "topologies": [
+      {
+        "name": "U017 real front camera aperture and six throughslots",
+        "edges": 11268,
+        "invalidEdges": 0,
+        "volumeMm3": 1088.404980348993
+      },
+      {
+        "name": "U017 actual rear perimeter and deep label seat,no invented hardcover",
+        "edges": 3924,
+        "invalidEdges": 0,
+        "volumeMm3": 306.2919786989657
+      },
+      {
+        "name": "U017 actual left perimeter",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 288.0000114440918
+      },
+      {
+        "name": "U017 actual right upper perimeter",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 259.9199993419643
+      },
+      {
+        "name": "U017 actual right lower perimeter",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 5.040000114440915
+      },
+      {
+        "name": "U017 RESET actual lower aperture wall",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 10.752000404357902
+      },
+      {
+        "name": "U017 RESET actual upper aperture wall",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 4.608000434875501
+      },
+      {
+        "name": "U017 actual top perimeter",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 115.20000457763672
+      },
+      {
+        "name": "U017 actual bottom outer receiving wall",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 18.000000715255737
+      },
+      {
+        "name": "U017 actual bottom outer receiving wall",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 18.000000715255737
+      },
+      {
+        "name": "U017 real closed quarter annular corner wall",
+        "edges": 774,
+        "invalidEdges": 0,
+        "volumeMm3": 38.44923317755614
+      },
+      {
+        "name": "U017 real closed quarter annular corner wall",
+        "edges": 774,
+        "invalidEdges": 0,
+        "volumeMm3": 38.449233177556096
+      },
+      {
+        "name": "U017 real closed quarter annular corner wall",
+        "edges": 774,
+        "invalidEdges": 0,
+        "volumeMm3": 38.449233177556124
+      },
+      {
+        "name": "U017 real closed quarter annular corner wall",
+        "edges": 774,
+        "invalidEdges": 0,
+        "volumeMm3": 38.449233177556096
+      },
+      {
+        "name": "U017 actual web between stacked USB and Grove",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 2.640000144243242
+      },
+      {
+        "name": "U017 actual rear receiving lower lip",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 4.224000073432918
+      },
+      {
+        "name": "U017 actual USB upper lip",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.320000072121621
+      },
+      {
+        "name": "U017 actual USB receiving side shoulder",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 3.6720001516342147
+      },
+      {
+        "name": "U017 actual USB receiving side shoulder",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 3.6720001516342147
+      },
+      {
+        "name": "U017 actual lateral LEGO mounting ear with true bore",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 132.48780944016457
+      },
+      {
+        "name": "U017 actual lateral LEGO mounting ear with true bore",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 132.48780944016457
+      },
+      {
+        "name": "U017 actual PCB post meets front skin",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 4.46400021743774
+      },
+      {
+        "name": "U017 actual PCB post meets front skin",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 4.46400021743774
+      },
+      {
+        "name": "U017 actual PCB post meets front skin",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 4.46400021743774
+      },
+      {
+        "name": "U017 actual PCB post meets front skin",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 4.46400021743774
+      },
+      {
+        "name": "U017 own populated physical PCB,Grove notch and real drill clearance",
+        "edges": 3918,
+        "invalidEdges": 0,
+        "volumeMm3": 654.6350711865011
+      },
+      {
+        "name": "U017 actual plated Grove drill",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.1603403637553878
+      },
+      {
+        "name": "U017 actual Grove annular solder land",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.040950774735608035
+      },
+      {
+        "name": "U017 actual Grove annular solder land",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.040950774735608035
+      },
+      {
+        "name": "U017 actual plated Grove drill",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.1603403637553878
+      },
+      {
+        "name": "U017 actual Grove annular solder land",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.040950774735608035
+      },
+      {
+        "name": "U017 actual Grove annular solder land",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.040950774735608035
+      },
+      {
+        "name": "U017 actual plated Grove drill",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.1603403637553878
+      },
+      {
+        "name": "U017 actual Grove annular solder land",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.040950774735608035
+      },
+      {
+        "name": "U017 actual Grove annular solder land",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.040950774735608035
+      },
+      {
+        "name": "U017 actual plated Grove drill",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.1603403637553878
+      },
+      {
+        "name": "U017 actual Grove annular solder land",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.040950774735608035
+      },
+      {
+        "name": "U017 actual Grove annular solder land",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.040950774735608035
+      },
+      {
+        "name": "U017 own ESP32-WROVER physical module substrate",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 297
+      },
+      {
+        "name": "U017 own ESP32-WROVER actual metal shield",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 473.75999731063763
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained edge solder envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.36399998587369914
+      },
+      {
+        "name": "U017 own WROVER retained PCB antenna trace envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.028000000357627855
+      },
+      {
+        "name": "U017 own WROVER retained PCB antenna trace envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03000000089406968
+      },
+      {
+        "name": "U017 own WROVER retained PCB antenna trace envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0320000014305115
+      },
+      {
+        "name": "U017 own WROVER retained PCB antenna trace envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03000000089406968
+      },
+      {
+        "name": "U017 own WROVER retained PCB antenna trace envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0320000014305115
+      },
+      {
+        "name": "U017 own WROVER retained PCB antenna trace envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03000000089406968
+      },
+      {
+        "name": "U017 own WROVER retained PCB antenna trace envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0320000014305115
+      },
+      {
+        "name": "U017 own WROVER retained PCB antenna trace envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03500000104308129
+      },
+      {
+        "name": "U017 own WROVER retained PCB antenna trace envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0320000014305115
+      },
+      {
+        "name": "U017 own CP2104 fixed appearance envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 18.432001739502002
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 CP2104 actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 own power regulator fixed appearance envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 5.424999740719798
+      },
+      {
+        "name": "U017 power regulator actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 power regulator actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 power regulator actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 power regulator actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 power regulator actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 power regulator actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 power regulator actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 power regulator actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 own camera support regulator fixed appearance envelope",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 4.311999946594235
+      },
+      {
+        "name": "U017 camera support regulator actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 camera support regulator actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 camera support regulator actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 camera support regulator actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 camera support regulator actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 camera support regulator actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 camera support regulator actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 camera support regulator actual solder lead",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03600000339746485
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.33750000447034806
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.33750000447034806
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.33750000447034806
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.33750000447034806
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.33750000447034806
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.33750000447034806
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.33750000447034806
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.33750000447034806
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.33750000447034806
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.33750000447034806
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.33750000447034806
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.33750000447034806
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 own visible fixed passive,installation inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2160000060796736
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 actual passive metal termination",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.017940000380277606
+      },
+      {
+        "name": "U017 concealed documentary LED package,inferred no exterior lens or API",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4480000057220457
+      },
+      {
+        "name": "U017 hidden LED physical terminal",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U017 hidden LED physical terminal",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U017 concealed documentary LED package,inferred no exterior lens or API",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4480000057220457
+      },
+      {
+        "name": "U017 hidden LED physical terminal",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U017 hidden LED physical terminal",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U017 concealed documentary LED package,inferred no exterior lens or API",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.4480000057220457
+      },
+      {
+        "name": "U017 hidden LED physical terminal",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U017 hidden LED physical terminal",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030000001639127746
+      },
+      {
+        "name": "U017 own OV2640 square carrier",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 82.9440043945312
+      },
+      {
+        "name": "U017 actual camera carrier solder foot",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.10399999928474417
+      },
+      {
+        "name": "U017 actual camera carrier solder foot",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.10399999928474417
+      },
+      {
+        "name": "U017 actual camera carrier solder foot",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.10399999928474417
+      },
+      {
+        "name": "U017 actual camera carrier solder foot",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.10399999928474417
+      },
+      {
+        "name": "U017 own ordinary hollow camera barrel",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 146.7904693240473
+      },
+      {
+        "name": "U017 actual ordinary lens front lip",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 29.201267250479162
+      },
+      {
+        "name": "U017 lens retaining flange meets actual frontskin",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 4.234340751859565
+      },
+      {
+        "name": "U017 camera external barrel ridge",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2657284343024222
+      },
+      {
+        "name": "U017 camera external barrel ridge",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2657284343024222
+      },
+      {
+        "name": "U017 camera external barrel ridge",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2657284343024222
+      },
+      {
+        "name": "U017 camera external barrel ridge",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2657284343024222
+      },
+      {
+        "name": "U017 camera external barrel ridge",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2657284343024222
+      },
+      {
+        "name": "U017 actual recessed OV2640 optical window",
+        "edges": 288,
+        "invalidEdges": 0,
+        "volumeMm3": 0.7237625031522983
+      },
+      {
+        "name": "U017 actual backed optical stack",
+        "edges": 288,
+        "invalidEdges": 0,
+        "volumeMm3": 1.7894201334464281
+      },
+      {
+        "name": "U017 actual orange camera FPC",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 18.780001028776176
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.018332998747319564
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.018332998747319647
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.01833299874731959
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.018332998747319654
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.018333003897159646
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.018333003897159722
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.018333003897159708
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0183330038971597
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.018333001322239657
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.01833300132223964
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.01833300260969966
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.018332996977061165
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.018332996977061165
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.01833300260969966
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.01833300132223966
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.01833300132223966
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.018333003897159687
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.018333003897159708
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.018333003897159708
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.018333003897159646
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.018332998747319675
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.01833299874731962
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.018332998747319633
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual FPC trace envelope",
+        "edges": 42,
+        "invalidEdges": 0,
+        "volumeMm3": 0.01833299874731959
+      },
+      {
+        "name": "U017 actual retained FPC contact",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07543999792754646
+      },
+      {
+        "name": "U017 actual FPC metal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.02530000032186508
+      },
+      {
+        "name": "U017 actual FPC PCB solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03588000076055521
+      },
+      {
+        "name": "U017 actual white FPC endwall",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 5.52000010490417
+      },
+      {
+        "name": "U017 actual white FPC endwall",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 5.52000010490417
+      },
+      {
+        "name": "U017 actual FPC floor on PCB",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 13.983999742984766
+      },
+      {
+        "name": "U017 actual FPC upper retainer",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 20.976000135421728
+      },
+      {
+        "name": "U017 actual FPC insertion stop",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 7.599999904632568
+      },
+      {
+        "name": "U017 actual black fixed FPC lock",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 2.205000059008597
+      },
+      {
+        "name": "U017 Grove real sidewall",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 16.491999004840874
+      },
+      {
+        "name": "U017 Grove real mouth latch",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.377999998569488
+      },
+      {
+        "name": "U017 Grove real sidewall",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 16.491999004840874
+      },
+      {
+        "name": "U017 Grove real mouth latch",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.377999998569488
+      },
+      {
+        "name": "U017 Grove real receiving floor",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 42.863999425888004
+      },
+      {
+        "name": "U017 Grove actual deep stop",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 15.274998819828056
+      },
+      {
+        "name": "U017 Grove physical rearPCB clearance bridge",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 4.5
+      },
+      {
+        "name": "U017 Grove retained contact 1",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.111319964251517
+      },
+      {
+        "name": "U017 Grove actual metal bend 1",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2469599803733831
+      },
+      {
+        "name": "U017 Grove actual solder foot 1",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2645999834775927
+      },
+      {
+        "name": "U017 Grove actual vertical throughPCB tail 1",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2469599803733831
+      },
+      {
+        "name": "U017 Grove retained contact 2",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.111319964251517
+      },
+      {
+        "name": "U017 Grove actual metal bend 2",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2469599803733831
+      },
+      {
+        "name": "U017 Grove actual solder foot 2",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2645999834775927
+      },
+      {
+        "name": "U017 Grove actual vertical throughPCB tail 2",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2469599803733831
+      },
+      {
+        "name": "U017 Grove retained contact 3",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.111319964251517
+      },
+      {
+        "name": "U017 Grove actual metal bend 3",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2469599803733831
+      },
+      {
+        "name": "U017 Grove actual solder foot 3",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2645999834775927
+      },
+      {
+        "name": "U017 Grove actual vertical throughPCB tail 3",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2469599803733831
+      },
+      {
+        "name": "U017 Grove retained contact 4",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.111319964251517
+      },
+      {
+        "name": "U017 Grove actual metal bend 4",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2469599803733831
+      },
+      {
+        "name": "U017 Grove actual solder foot 4",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2645999834775927
+      },
+      {
+        "name": "U017 Grove actual vertical throughPCB tail 4",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.2469599803733831
+      },
+      {
+        "name": "U017 real hollow USB-C metal shield",
+        "edges": 3096,
+        "invalidEdges": 0,
+        "volumeMm3": 44.73296611836984
+      },
+      {
+        "name": "U017 USB-C retained dielectric stop",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 10.82400041294097
+      },
+      {
+        "name": "U017 USB-C actual dielectric tongue",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 23.516998883247368
+      },
+      {
+        "name": "U017 USB-C actual dielectric carrier seats PCB",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 3.8400002098083514
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C standard-style retained contact,hidden variant inferred",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.07912000317633146
+      },
+      {
+        "name": "U017 USB-C retained internal bend",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.13439999289512633
+      },
+      {
+        "name": "U017 USB-C actual surface solder tail",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.0319999997615814
+      },
+      {
+        "name": "U017 USB-C actual shield retention to PCB",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.320000081062318
+      },
+      {
+        "name": "U017 USB-C actual shield retention to PCB",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.320000081062318
+      },
+      {
+        "name": "U017 actual rear retaining receiver",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 15.330664610289082
+      },
+      {
+        "name": "U017 actual front screw receiver meets closed skin",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 16.408069073212843
+      },
+      {
+        "name": "U017 actual fixed retaining shank",
+        "edges": 288,
+        "invalidEdges": 0,
+        "volumeMm3": 7.755918602248811
+      },
+      {
+        "name": "U017 actual recessed head with open drive",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 1.5934669517562372
+      },
+      {
+        "name": "U017 actual recessed driver stop",
+        "edges": 288,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030085764764569835
+      },
+      {
+        "name": "U017 actual rear retaining receiver",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 15.330664610289082
+      },
+      {
+        "name": "U017 actual front screw receiver meets closed skin",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 16.408069073212843
+      },
+      {
+        "name": "U017 actual fixed retaining shank",
+        "edges": 288,
+        "invalidEdges": 0,
+        "volumeMm3": 7.755918602248811
+      },
+      {
+        "name": "U017 actual recessed head with open drive",
+        "edges": 768,
+        "invalidEdges": 0,
+        "volumeMm3": 1.5934669517562372
+      },
+      {
+        "name": "U017 actual recessed driver stop",
+        "edges": 288,
+        "invalidEdges": 0,
+        "volumeMm3": 0.030085764764569835
+      },
+      {
+        "name": "U017 actual fixed RESET receiver with real side bore",
+        "edges": 3120,
+        "invalidEdges": 0,
+        "volumeMm3": 5.064871302308294
+      },
+      {
+        "name": "U017 actual RESET deep fixed stop",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.9600000286102297
+      },
+      {
+        "name": "U017 actual RESET fixed PCB solder foot",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.24749999880790696
+      },
+      {
+        "name": "U017 actual RESET fixed PCB solder foot",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.24749999880790696
+      },
+      {
+        "name": "U017 actual moving RESET cap",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 0.9660000019073477
+      },
+      {
+        "name": "U017 actual moving RESET stem",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 1.2674999070167559
+      },
+      {
+        "name": "U017 own actual rear label substrate,not invented rigid hardcover",
+        "edges": 18,
+        "invalidEdges": 0,
+        "volumeMm3": 63.839998573064804
+      },
+      {
+        "name": "U017 physical uncolored M5 stroke",
+        "edges": 72,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21167999929914905
+      },
+      {
+        "name": "U017 physical uncolored M5 stroke",
+        "edges": 72,
+        "invalidEdges": 0,
+        "volumeMm3": 0.1582146248298382
+      },
+      {
+        "name": "U017 physical uncolored M5 stroke",
+        "edges": 72,
+        "invalidEdges": 0,
+        "volumeMm3": 0.1582146248298382
+      },
+      {
+        "name": "U017 physical uncolored M5 stroke",
+        "edges": 72,
+        "invalidEdges": 0,
+        "volumeMm3": 0.21167999929914905
+      },
+      {
+        "name": "U017 physical uncolored M5 stroke",
+        "edges": 72,
+        "invalidEdges": 0,
+        "volumeMm3": 0.15287999793616178
+      },
+      {
+        "name": "U017 physical uncolored M5 stroke",
+        "edges": 72,
+        "invalidEdges": 0,
+        "volumeMm3": 0.10583999964957452
+      },
+      {
+        "name": "U017 physical uncolored M5 stroke",
+        "edges": 72,
+        "invalidEdges": 0,
+        "volumeMm3": 0.12936000580237444
+      },
+      {
+        "name": "U017 physical uncolored M5 stroke",
+        "edges": 72,
+        "invalidEdges": 0,
+        "volumeMm3": 0.03765037194741417
+      },
+      {
+        "name": "U017 physical uncolored M5 stroke",
+        "edges": 72,
+        "invalidEdges": 0,
+        "volumeMm3": 0.04704000179134044
+      },
+      {
+        "name": "U017 physical uncolored M5 stroke",
+        "edges": 72,
+        "invalidEdges": 0,
+        "volumeMm3": 0.04157787898597141
+      },
+      {
+        "name": "U017 physical uncolored M5 stroke",
+        "edges": 72,
+        "invalidEdges": 0,
+        "volumeMm3": 0.1352400003310681
+      }
+    ]
+  },
+  "artworkCases": [
+    {
+      "entry": "Model",
+      "preset": "complete",
+      "options": {},
+      "onPngCount": 1,
+      "offPngCount": 0,
+      "actualControlPartialPressAndCancelledReturn": true,
+      "allPhysicalAttributesIndexWorldInvariant": true,
+      "physicalRearFilmAndM5Retained": true
+    },
+    {
+      "entry": "GroveModule",
+      "preset": "complete",
+      "options": {},
+      "onPngCount": 1,
+      "offPngCount": 0,
+      "actualControlPartialPressAndCancelledReturn": true,
+      "allPhysicalAttributesIndexWorldInvariant": true,
+      "physicalRearFilmAndM5Retained": true
+    }
+  ],
+  "externalPoseCableNoEcho": true,
+  "transformedPhysical": {
+    "constructionRoute": "own-dimensional-parametric",
+    "importedNativeFaces": 0,
+    "physicalBodyMeshes": 491,
+    "triangles": 40608,
+    "allClosedPositiveDirectedEdges": true,
+    "actualEnvelopeMm": [
+      39.99999980926515,
+      48.00000004768373,
+      10.99999999910594
+    ],
+    "nominalMm": [
+      40,
+      48,
+      11
+    ],
+    "mainCaseOnlyWidthMm": 24,
+    "trueEarAxes": 2,
+    "earFrontSideWallRays": 24,
+    "actualFrontSlots": 6,
+    "slotFrontSideWallRays": 24,
+    "realPCBBackedSlots": 6,
+    "closureRays": 8,
+    "rearPhysicalLabelSubstrate": true,
+    "noInventedRigidRearCover": true,
+    "rearPCBShieldBackingRays": 9,
+    "WROVEREdgeLeads": 38,
+    "PCBSupportPosts": 4,
+    "PCBDrillWallRays": 16,
+    "PCBReceiverClearanceMm": 0.15,
+    "verticalTailToPlatedBoreClearanceMm": 0.013015151901650035,
+    "grove": {
+      "contacts": 4,
+      "bends": 4,
+      "feet": 4,
+      "squareVerticalThroughPCBTails": 4,
+      "platedBores": 4,
+      "annuli": 8
+    },
+    "usb": {
+      "ownTypeC": true,
+      "actualHollowShieldTongueAndStop": true,
+      "standardStyleInferredContacts": 24
+    },
+    "camera": {
+      "sensor": "OV2640",
+      "documentaryFovDeg": 65,
+      "passiveFrame": true,
+      "realBackedOpticalWindow": true,
+      "opticalFrontSideWallRays": 8
+    },
+    "fpc": {
+      "realFlexAndReceivingSlot": true,
+      "contacts": 24,
+      "returns": 24,
+      "solderTails": 24
+    },
+    "actualResetMovingMeshes": 2,
+    "resetTravelMm": 0.22,
+    "resetAxis": [
+      -1,
+      0,
+      0
+    ],
+    "physicalFilms": 1,
+    "actualM5Material": true,
+    "ledAPIs": 0,
+    "unfittedSensorComponents": 0,
+    "scope": "Own original U017;all hidden assembly/film/optics/contacts/travel inferred,no sibling/native/BOM/focal/hardware/manufacturing acceptance"
+  },
+  "moduleRuntime": {
+    "controls": [
+      {
+        "id": "reset",
+        "travelMm": 0.22,
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "actualMovingMeshes": 2,
+        "multiSourceReleaseCancel": "last source;cancel suppresses click",
+        "rigidCapAndAllFixedMaterial": "pass"
+      }
+    ],
+    "partialPressAndCancelledSpringReturn": true,
+    "onlyActualResetCapAndStemMove": true,
+    "fixedCaseFramesContactsPCBShieldPortsCameraAndPeersInvariant": true,
+    "multipleSourcesLastReleaseCancel": true,
+    "cancelSuppressesClick": true,
+    "noInventedLEDsOrUnfittedSensors": true,
+    "noCameraVideoAIFocusPowerResetFirmwareBehavior": true,
+    "stateAndPoseQueriesNoEcho": true,
+    "allPhysicalAttributesIndexWorldRestored": true
+  },
+  "modulePeerInvariant": true,
+  "framebufferInvariant": true,
+  "realFourCoreCables": {
+    "testedPath": 2,
+    "peer": 1
+  },
+  "actualBranchDetachReattach": true,
+  "nontrivialAncestorAndModulePose": true,
+  "actualAPI": {
+    "exports": [
+      "GroveModule",
+      "Model",
+      "configurationSchema",
+      "configurations",
+      "defaults",
+      "spec"
+    ],
+    "defaultExport": "Model",
+    "bodyComponentOrder": [
+      "camera",
+      "grove",
+      "usb",
+      "reset"
+    ],
+    "bodyComponentKinds": {
+      "camera": "component",
+      "grove": "port",
+      "usb": "port",
+      "reset": "button"
+    },
+    "moduleComponentOrder": [
+      "camera",
+      "grove",
+      "usb",
+      "reset",
+      "unitFrame",
+      "cable"
+    ],
+    "moduleComponentKinds": {
+      "camera": "component",
+      "grove": "port",
+      "usb": "port",
+      "reset": "button",
+      "unitFrame": "unit-frame",
+      "cable": "cable"
+    },
+    "keymap": {
+      "KeyR": "reset"
+    },
+    "defaults": {},
+    "configurationSchema": {
+      "artwork": {
+        "type": "boolean",
+        "default": true,
+        "meaning": "Rear ink only;retain physical label substrate,case/ears,PCB/WROVERshield and complete support"
+      }
+    },
+    "configurations": [
+      {
+        "id": "complete",
+        "name": "完整原版 M5Camera U017",
+        "options": {}
+      }
+    ]
+  },
+  "disposedResources": 1434
+}

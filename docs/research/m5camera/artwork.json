@@ -1,0 +1,72 @@
+{
+  "id": "m5camera",
+  "sku": "U017",
+  "kind": "reference-redraw",
+  "pngCount": 1,
+  "privateSourcesDistributed": false,
+  "photoCropPixels": 0,
+  "vectorSourcesDistributed": false,
+  "generatorsDistributed": false,
+  "rawOfficialSourcesDistributed": false,
+  "physicalAdhesiveFilms": 1,
+  "assets": [
+    {
+      "path": "src/units/m5camera/reference-redraw-back.png",
+      "sha256": "2a1098ef845d4a97c1928c826018f8bb4b7be661b40eca336a63339d6bb6491c",
+      "size": [
+        2100,
+        3800
+      ],
+      "mode": "RGBA",
+      "kind": "reference-redraw",
+      "sourceKind": "reference-redraw",
+      "source": {
+        "url": "https://static-cdn.m5stack.com/resource/docs/products/unit/m5camera/m5camera_03.webp",
+        "status": 200,
+        "bytes": 38754,
+        "sha256": "ba43213d6ffa75c4f85667d42c7fc63452c7207437fae1e6ce40258c7bb233e7",
+        "role": "Own assembled rear readable label/reset location plus own populated front/rearPCB/open assembly;contains camera identity and USB-C arrows",
+        "visuallyInspected": true,
+        "rawSourceDistributed": false
+      },
+      "physicalTarget": "m5cameraAssembly.film",
+      "sizeMm": [
+        21,
+        38
+      ],
+      "printedContent": [
+        "M5CAMERA",
+        "ESP32",
+        "WROVER",
+        "4MB FLASH",
+        "4MB PSRAM",
+        "OV2640",
+        "OPTIONAL",
+        "readable brandmark layout"
+      ],
+      "decodedVisualInspection": "2026-10-27:PNGdecoded/viewed,legible labels,no clipping or overlap",
+      "limitations": "Font/color/spacing/marks reconstructed;unknown optionalpart/pinmicrotext and individualcodes omitted",
+      "permission": "Userauthorized accurate redraw as ordinaryPNG;marks retain respective rights"
+    }
+  ],
+  "physicalInkOff": {
+    "actualLabelSubstrateRetained": true,
+    "actualRearRimPCBShieldSupportRetained": true,
+    "actualM5Retained": true,
+    "bothEntriesActualPreset": true,
+    "actualResetPartialPressAndCancelledReturn": true,
+    "allPhysicalAttributesIndexWorldInvariant": true
+  },
+  "configurationCases": [
+    {
+      "options": {},
+      "kinds": [
+        "reference-redraw"
+      ],
+      "artworkKinds": [
+        "reference-redraw"
+      ],
+      "pngCount": 1
+    }
+  ]
+}

@@ -1,0 +1,1746 @@
+{
+  "status": "pass",
+  "id": "atoms3-lite",
+  "sku": "C124",
+  "entry": "src/devices/atoms3-lite/index.js",
+  "sourceLoaderUsed": false,
+  "native": {
+    "actualFaces": 2926,
+    "uniqueOriginalFaces": 2926,
+    "attributes": [
+      "position",
+      "normal",
+      "index",
+      "sourceFaceIndex",
+      "sourceAttributeWord"
+    ],
+    "restBytesExact": true
+  },
+  "geometry": {
+    "closedPhysicalEntities": 179,
+    "physicalFaces": 37542,
+    "rearFirstSurfaceRays": 1681,
+    "headerWells": 9,
+    "headerInnerWalls": {
+      "status": "pass",
+      "side": "FrontSide",
+      "wells": 9,
+      "wallFirstHitRays": 36,
+      "localDepthMm": -0.25,
+      "expectedCentreToWallMm": 0.51,
+      "allHitOwnCorrespondingBoredHousing": true,
+      "rays": [
+        {
+          "bank": "ext-5p",
+          "pin": 1,
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "originMm": [
+            7.62,
+            2.38,
+            -4.27
+          ],
+          "firstHitMm": [
+            7.110000009536743,
+            2.38,
+            -4.27
+          ],
+          "localHitMm": [
+            0.5099999904632568,
+            5.08,
+            -0.25
+          ],
+          "distanceMm": 0.5099999904632568,
+          "mesh": "C124 ext-5p bored closed molded housing",
+          "faceIndex": 3053
+        },
+        {
+          "bank": "ext-5p",
+          "pin": 1,
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "originMm": [
+            7.62,
+            2.38,
+            -4.27
+          ],
+          "firstHitMm": [
+            8.129999990463258,
+            2.38,
+            -4.27
+          ],
+          "localHitMm": [
+            -0.5099999904632577,
+            5.08,
+            -0.25
+          ],
+          "distanceMm": 0.5099999904632577,
+          "mesh": "C124 ext-5p bored closed molded housing",
+          "faceIndex": 2857
+        },
+        {
+          "bank": "ext-5p",
+          "pin": 1,
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "originMm": [
+            7.62,
+            2.38,
+            -4.27
+          ],
+          "firstHitMm": [
+            7.62,
+            2.8900001525878904,
+            -4.27
+          ],
+          "localHitMm": [
+            0,
+            5.590000152587891,
+            -0.25
+          ],
+          "distanceMm": 0.5100001525878906,
+          "mesh": "C124 ext-5p bored closed molded housing",
+          "faceIndex": 2955
+        },
+        {
+          "bank": "ext-5p",
+          "pin": 1,
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "originMm": [
+            7.62,
+            2.38,
+            -4.27
+          ],
+          "firstHitMm": [
+            7.62,
+            1.8700001716613768,
+            -4.27
+          ],
+          "localHitMm": [
+            0,
+            4.570000171661377,
+            -0.25
+          ],
+          "distanceMm": 0.5099998283386231,
+          "mesh": "C124 ext-5p bored closed molded housing",
+          "faceIndex": 3151
+        },
+        {
+          "bank": "ext-5p",
+          "pin": 2,
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "originMm": [
+            7.62,
+            -0.16000000000000014,
+            -4.27
+          ],
+          "firstHitMm": [
+            7.110000009536743,
+            -0.16000000000000014,
+            -4.27
+          ],
+          "localHitMm": [
+            0.5099999904632568,
+            2.54,
+            -0.25
+          ],
+          "distanceMm": 0.5099999904632568,
+          "mesh": "C124 ext-5p bored closed molded housing",
+          "faceIndex": 3445
+        },
+        {
+          "bank": "ext-5p",
+          "pin": 2,
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "originMm": [
+            7.62,
+            -0.16000000000000014,
+            -4.27
+          ],
+          "firstHitMm": [
+            8.129999990463258,
+            -0.16000000000000014,
+            -4.27
+          ],
+          "localHitMm": [
+            -0.5099999904632577,
+            2.54,
+            -0.25
+          ],
+          "distanceMm": 0.5099999904632577,
+          "mesh": "C124 ext-5p bored closed molded housing",
+          "faceIndex": 3249
+        },
+        {
+          "bank": "ext-5p",
+          "pin": 2,
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "originMm": [
+            7.62,
+            -0.16000000000000014,
+            -4.27
+          ],
+          "firstHitMm": [
+            7.62,
+            0.349999952316284,
+            -4.27
+          ],
+          "localHitMm": [
+            0,
+            3.049999952316284,
+            -0.25
+          ],
+          "distanceMm": 0.5099999523162841,
+          "mesh": "C124 ext-5p bored closed molded housing",
+          "faceIndex": 3347
+        },
+        {
+          "bank": "ext-5p",
+          "pin": 2,
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "originMm": [
+            7.62,
+            -0.16000000000000014,
+            -4.27
+          ],
+          "firstHitMm": [
+            7.62,
+            -0.6700000286102297,
+            -4.27
+          ],
+          "localHitMm": [
+            0,
+            2.0299999713897705,
+            -0.25
+          ],
+          "distanceMm": 0.5100000286102295,
+          "mesh": "C124 ext-5p bored closed molded housing",
+          "faceIndex": 3543
+        },
+        {
+          "bank": "ext-5p",
+          "pin": 3,
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "originMm": [
+            7.62,
+            -2.7,
+            -4.27
+          ],
+          "firstHitMm": [
+            7.110000009536743,
+            -2.7,
+            -4.27
+          ],
+          "localHitMm": [
+            0.5099999904632568,
+            0,
+            -0.25
+          ],
+          "distanceMm": 0.5099999904632568,
+          "mesh": "C124 ext-5p bored closed molded housing",
+          "faceIndex": 3837
+        },
+        {
+          "bank": "ext-5p",
+          "pin": 3,
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "originMm": [
+            7.62,
+            -2.7,
+            -4.27
+          ],
+          "firstHitMm": [
+            8.129999990463258,
+            -2.7,
+            -4.27
+          ],
+          "localHitMm": [
+            -0.5099999904632577,
+            0,
+            -0.25
+          ],
+          "distanceMm": 0.5099999904632577,
+          "mesh": "C124 ext-5p bored closed molded housing",
+          "faceIndex": 3641
+        },
+        {
+          "bank": "ext-5p",
+          "pin": 3,
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "originMm": [
+            7.62,
+            -2.7,
+            -4.27
+          ],
+          "firstHitMm": [
+            7.62,
+            -2.1900000095367433,
+            -4.27
+          ],
+          "localHitMm": [
+            0,
+            0.5099999904632568,
+            -0.25
+          ],
+          "distanceMm": 0.5099999904632568,
+          "mesh": "C124 ext-5p bored closed molded housing",
+          "faceIndex": 3739
+        },
+        {
+          "bank": "ext-5p",
+          "pin": 3,
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "originMm": [
+            7.62,
+            -2.7,
+            -4.27
+          ],
+          "firstHitMm": [
+            7.62,
+            -3.209999990463257,
+            -4.27
+          ],
+          "localHitMm": [
+            0,
+            -0.5099999904632568,
+            -0.25
+          ],
+          "distanceMm": 0.5099999904632568,
+          "mesh": "C124 ext-5p bored closed molded housing",
+          "faceIndex": 3935
+        },
+        {
+          "bank": "ext-5p",
+          "pin": 4,
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "originMm": [
+            7.62,
+            -5.24,
+            -4.27
+          ],
+          "firstHitMm": [
+            7.110000009536743,
+            -5.24,
+            -4.27
+          ],
+          "localHitMm": [
+            0.5099999904632568,
+            -2.54,
+            -0.25
+          ],
+          "distanceMm": 0.5099999904632568,
+          "mesh": "C124 ext-5p bored closed molded housing",
+          "faceIndex": 4229
+        },
+        {
+          "bank": "ext-5p",
+          "pin": 4,
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "originMm": [
+            7.62,
+            -5.24,
+            -4.27
+          ],
+          "firstHitMm": [
+            8.129999990463258,
+            -5.24,
+            -4.27
+          ],
+          "localHitMm": [
+            -0.5099999904632577,
+            -2.54,
+            -0.25
+          ],
+          "distanceMm": 0.5099999904632577,
+          "mesh": "C124 ext-5p bored closed molded housing",
+          "faceIndex": 4033
+        },
+        {
+          "bank": "ext-5p",
+          "pin": 4,
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "originMm": [
+            7.62,
+            -5.24,
+            -4.27
+          ],
+          "firstHitMm": [
+            7.62,
+            -4.729999971389771,
+            -4.27
+          ],
+          "localHitMm": [
+            0,
+            -2.0299999713897705,
+            -0.25
+          ],
+          "distanceMm": 0.5100000286102295,
+          "mesh": "C124 ext-5p bored closed molded housing",
+          "faceIndex": 4131
+        },
+        {
+          "bank": "ext-5p",
+          "pin": 4,
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "originMm": [
+            7.62,
+            -5.24,
+            -4.27
+          ],
+          "firstHitMm": [
+            7.62,
+            -5.749999952316284,
+            -4.27
+          ],
+          "localHitMm": [
+            0,
+            -3.049999952316284,
+            -0.25
+          ],
+          "distanceMm": 0.5099999523162841,
+          "mesh": "C124 ext-5p bored closed molded housing",
+          "faceIndex": 4327
+        },
+        {
+          "bank": "ext-5p",
+          "pin": 5,
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "originMm": [
+            7.62,
+            -7.78,
+            -4.27
+          ],
+          "firstHitMm": [
+            7.110000009536743,
+            -7.78,
+            -4.27
+          ],
+          "localHitMm": [
+            0.5099999904632568,
+            -5.08,
+            -0.25
+          ],
+          "distanceMm": 0.5099999904632568,
+          "mesh": "C124 ext-5p bored closed molded housing",
+          "faceIndex": 4621
+        },
+        {
+          "bank": "ext-5p",
+          "pin": 5,
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "originMm": [
+            7.62,
+            -7.78,
+            -4.27
+          ],
+          "firstHitMm": [
+            8.129999990463258,
+            -7.78,
+            -4.27
+          ],
+          "localHitMm": [
+            -0.5099999904632577,
+            -5.08,
+            -0.25
+          ],
+          "distanceMm": 0.5099999904632577,
+          "mesh": "C124 ext-5p bored closed molded housing",
+          "faceIndex": 4425
+        },
+        {
+          "bank": "ext-5p",
+          "pin": 5,
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "originMm": [
+            7.62,
+            -7.78,
+            -4.27
+          ],
+          "firstHitMm": [
+            7.62,
+            -7.270000171661377,
+            -4.27
+          ],
+          "localHitMm": [
+            0,
+            -4.570000171661377,
+            -0.25
+          ],
+          "distanceMm": 0.5099998283386231,
+          "mesh": "C124 ext-5p bored closed molded housing",
+          "faceIndex": 4523
+        },
+        {
+          "bank": "ext-5p",
+          "pin": 5,
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "originMm": [
+            7.62,
+            -7.78,
+            -4.27
+          ],
+          "firstHitMm": [
+            7.62,
+            -8.29000015258789,
+            -4.27
+          ],
+          "localHitMm": [
+            0,
+            -5.59000015258789,
+            -0.25
+          ],
+          "distanceMm": 0.5100001525878897,
+          "mesh": "C124 ext-5p bored closed molded housing",
+          "faceIndex": 4719
+        },
+        {
+          "bank": "ext-4p",
+          "pin": 1,
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "originMm": [
+            -7.62,
+            -0.16000000000000014,
+            -4.27
+          ],
+          "firstHitMm": [
+            -8.129999990463258,
+            -0.16000000000000014,
+            -4.27
+          ],
+          "localHitMm": [
+            0.5099999904632577,
+            3.81,
+            -0.25
+          ],
+          "distanceMm": 0.5099999904632577,
+          "mesh": "C124 ext-4p bored closed molded housing",
+          "faceIndex": 2657
+        },
+        {
+          "bank": "ext-4p",
+          "pin": 1,
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "originMm": [
+            -7.62,
+            -0.16000000000000014,
+            -4.27
+          ],
+          "firstHitMm": [
+            -7.110000009536743,
+            -0.16000000000000014,
+            -4.27
+          ],
+          "localHitMm": [
+            -0.5099999904632568,
+            3.81,
+            -0.25
+          ],
+          "distanceMm": 0.5099999904632568,
+          "mesh": "C124 ext-4p bored closed molded housing",
+          "faceIndex": 2461
+        },
+        {
+          "bank": "ext-4p",
+          "pin": 1,
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "originMm": [
+            -7.62,
+            -0.16000000000000014,
+            -4.27
+          ],
+          "firstHitMm": [
+            -7.62,
+            0.35000017166137676,
+            -4.27
+          ],
+          "localHitMm": [
+            0,
+            4.320000171661377,
+            -0.25
+          ],
+          "distanceMm": 0.5100001716613769,
+          "mesh": "C124 ext-4p bored closed molded housing",
+          "faceIndex": 2559
+        },
+        {
+          "bank": "ext-4p",
+          "pin": 1,
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "originMm": [
+            -7.62,
+            -0.16000000000000014,
+            -4.27
+          ],
+          "firstHitMm": [
+            -7.62,
+            -0.670000047683716,
+            -4.27
+          ],
+          "localHitMm": [
+            0,
+            3.299999952316284,
+            -0.25
+          ],
+          "distanceMm": 0.5100000476837159,
+          "mesh": "C124 ext-4p bored closed molded housing",
+          "faceIndex": 2755
+        },
+        {
+          "bank": "ext-4p",
+          "pin": 2,
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "originMm": [
+            -7.62,
+            -2.7,
+            -4.27
+          ],
+          "firstHitMm": [
+            -8.129999990463258,
+            -2.7,
+            -4.27
+          ],
+          "localHitMm": [
+            0.5099999904632577,
+            1.27,
+            -0.25
+          ],
+          "distanceMm": 0.5099999904632577,
+          "mesh": "C124 ext-4p bored closed molded housing",
+          "faceIndex": 3049
+        },
+        {
+          "bank": "ext-4p",
+          "pin": 2,
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "originMm": [
+            -7.62,
+            -2.7,
+            -4.27
+          ],
+          "firstHitMm": [
+            -7.110000009536743,
+            -2.7,
+            -4.27
+          ],
+          "localHitMm": [
+            -0.5099999904632568,
+            1.27,
+            -0.25
+          ],
+          "distanceMm": 0.5099999904632568,
+          "mesh": "C124 ext-4p bored closed molded housing",
+          "faceIndex": 2853
+        },
+        {
+          "bank": "ext-4p",
+          "pin": 2,
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "originMm": [
+            -7.62,
+            -2.7,
+            -4.27
+          ],
+          "firstHitMm": [
+            -7.62,
+            -2.1900000286102297,
+            -4.27
+          ],
+          "localHitMm": [
+            0,
+            1.7799999713897705,
+            -0.25
+          ],
+          "distanceMm": 0.5099999713897705,
+          "mesh": "C124 ext-4p bored closed molded housing",
+          "faceIndex": 2951
+        },
+        {
+          "bank": "ext-4p",
+          "pin": 2,
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "originMm": [
+            -7.62,
+            -2.7,
+            -4.27
+          ],
+          "firstHitMm": [
+            -7.62,
+            -3.2100000095367434,
+            -4.27
+          ],
+          "localHitMm": [
+            0,
+            0.7599999904632568,
+            -0.25
+          ],
+          "distanceMm": 0.5100000095367432,
+          "mesh": "C124 ext-4p bored closed molded housing",
+          "faceIndex": 3147
+        },
+        {
+          "bank": "ext-4p",
+          "pin": 3,
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "originMm": [
+            -7.62,
+            -5.24,
+            -4.27
+          ],
+          "firstHitMm": [
+            -8.129999990463258,
+            -5.24,
+            -4.27
+          ],
+          "localHitMm": [
+            0.5099999904632577,
+            -1.27,
+            -0.25
+          ],
+          "distanceMm": 0.5099999904632577,
+          "mesh": "C124 ext-4p bored closed molded housing",
+          "faceIndex": 3441
+        },
+        {
+          "bank": "ext-4p",
+          "pin": 3,
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "originMm": [
+            -7.62,
+            -5.24,
+            -4.27
+          ],
+          "firstHitMm": [
+            -7.110000009536743,
+            -5.24,
+            -4.27
+          ],
+          "localHitMm": [
+            -0.5099999904632568,
+            -1.27,
+            -0.25
+          ],
+          "distanceMm": 0.5099999904632568,
+          "mesh": "C124 ext-4p bored closed molded housing",
+          "faceIndex": 3245
+        },
+        {
+          "bank": "ext-4p",
+          "pin": 3,
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "originMm": [
+            -7.62,
+            -5.24,
+            -4.27
+          ],
+          "firstHitMm": [
+            -7.62,
+            -4.7299999904632575,
+            -4.27
+          ],
+          "localHitMm": [
+            0,
+            -0.7599999904632573,
+            -0.25
+          ],
+          "distanceMm": 0.5100000095367427,
+          "mesh": "C124 ext-4p bored closed molded housing",
+          "faceIndex": 3343
+        },
+        {
+          "bank": "ext-4p",
+          "pin": 3,
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "originMm": [
+            -7.62,
+            -5.24,
+            -4.27
+          ],
+          "firstHitMm": [
+            -7.62,
+            -5.749999971389771,
+            -4.27
+          ],
+          "localHitMm": [
+            0,
+            -1.779999971389771,
+            -0.25
+          ],
+          "distanceMm": 0.5099999713897709,
+          "mesh": "C124 ext-4p bored closed molded housing",
+          "faceIndex": 3539
+        },
+        {
+          "bank": "ext-4p",
+          "pin": 4,
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "originMm": [
+            -7.62,
+            -7.78,
+            -4.27
+          ],
+          "firstHitMm": [
+            -8.129999990463258,
+            -7.78,
+            -4.27
+          ],
+          "localHitMm": [
+            0.5099999904632577,
+            -3.81,
+            -0.25
+          ],
+          "distanceMm": 0.5099999904632577,
+          "mesh": "C124 ext-4p bored closed molded housing",
+          "faceIndex": 3833
+        },
+        {
+          "bank": "ext-4p",
+          "pin": 4,
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "originMm": [
+            -7.62,
+            -7.78,
+            -4.27
+          ],
+          "firstHitMm": [
+            -7.110000009536743,
+            -7.78,
+            -4.27
+          ],
+          "localHitMm": [
+            -0.5099999904632568,
+            -3.81,
+            -0.25
+          ],
+          "distanceMm": 0.5099999904632568,
+          "mesh": "C124 ext-4p bored closed molded housing",
+          "faceIndex": 3637
+        },
+        {
+          "bank": "ext-4p",
+          "pin": 4,
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "originMm": [
+            -7.62,
+            -7.78,
+            -4.27
+          ],
+          "firstHitMm": [
+            -7.62,
+            -7.269999952316285,
+            -4.27
+          ],
+          "localHitMm": [
+            0,
+            -3.2999999523162846,
+            -0.25
+          ],
+          "distanceMm": 0.5100000476837154,
+          "mesh": "C124 ext-4p bored closed molded housing",
+          "faceIndex": 3735
+        },
+        {
+          "bank": "ext-4p",
+          "pin": 4,
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "originMm": [
+            -7.62,
+            -7.78,
+            -4.27
+          ],
+          "firstHitMm": [
+            -7.62,
+            -8.290000171661378,
+            -4.27
+          ],
+          "localHitMm": [
+            0,
+            -4.320000171661377,
+            -0.25
+          ],
+          "distanceMm": 0.5100001716613773,
+          "mesh": "C124 ext-4p bored closed molded housing",
+          "faceIndex": 3931
+        }
+      ]
+    },
+    "groveContacts": 4,
+    "insertContainmentSamples": 5312,
+    "physicalEnvelopeMm": [
+      24.000003814697266,
+      24.16999997615814,
+      9.50714111328125
+    ],
+    "scope": "Finite CPU surface/containment checks;not manufacturing/fit/GPU acceptance"
+  },
+  "actuation": {
+    "controls": [
+      "button",
+      "reset"
+    ],
+    "partial": true,
+    "full": true,
+    "multiSource": true,
+    "cancelWithoutClick": true,
+    "fixedAssemblyStable": true,
+    "zeroRestored": true,
+    "nativeSurfaceRays": {
+      "status": "pass",
+      "method": "Actual own unchanged-index native meshes only;FrontSide first-hit rays in fixed model coordinates,not transparent targets or depth-only inference",
+      "states": [
+        "rest",
+        "partial",
+        "full",
+        "returned-rest"
+      ],
+      "raysPerState": 83,
+      "centreRays": [
+        {
+          "id": "main-centre-outer",
+          "part": "upper-shell",
+          "originMm": [
+            0,
+            1.1,
+            20
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "group": "centre",
+          "rest": {
+            "pointMm": [
+              0,
+              1.1,
+              4.746429443359375
+            ],
+            "nativeFaceIndex": 610,
+            "sourceFaceIndex": 2148
+          },
+          "partial": {
+            "pointMm": [
+              0,
+              1.1,
+              4.718511298715796
+            ],
+            "nativeFaceIndex": 610,
+            "sourceFaceIndex": 2148
+          },
+          "full": {
+            "pointMm": [
+              0,
+              1.1,
+              4.644482856005766
+            ],
+            "nativeFaceIndex": 610,
+            "sourceFaceIndex": 2148
+          },
+          "returnedRest": {
+            "pointMm": [
+              0,
+              1.1,
+              4.746429443359375
+            ],
+            "nativeFaceIndex": 610,
+            "sourceFaceIndex": 2148
+          },
+          "partialInwardMm": 0.027918144643578557,
+          "fullInwardMm": 0.10194658735360917
+        },
+        {
+          "id": "main-centre-inner",
+          "part": "upper-shell",
+          "originMm": [
+            0,
+            1.1,
+            2
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "group": "centre",
+          "rest": {
+            "pointMm": [
+              0,
+              1.1,
+              3.446430206298828
+            ],
+            "nativeFaceIndex": 340,
+            "sourceFaceIndex": 1878
+          },
+          "partial": {
+            "pointMm": [
+              0,
+              1.1,
+              3.4196042832431104
+            ],
+            "nativeFaceIndex": 340,
+            "sourceFaceIndex": 1878
+          },
+          "full": {
+            "pointMm": [
+              0,
+              1.1,
+              3.348474341310098
+            ],
+            "nativeFaceIndex": 340,
+            "sourceFaceIndex": 1878
+          },
+          "returnedRest": {
+            "pointMm": [
+              0,
+              1.1,
+              3.446430206298828
+            ],
+            "nativeFaceIndex": 340,
+            "sourceFaceIndex": 1878
+          },
+          "partialInwardMm": 0.026825923055717737,
+          "fullInwardMm": 0.09795586498873021
+        },
+        {
+          "id": "main-switch-outer",
+          "part": "upper-shell",
+          "originMm": [
+            0,
+            -2,
+            20
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "group": "centre",
+          "rest": {
+            "pointMm": [
+              0,
+              -2,
+              4.746429443359375
+            ],
+            "nativeFaceIndex": 499,
+            "sourceFaceIndex": 2037
+          },
+          "partial": {
+            "pointMm": [
+              0,
+              -2,
+              4.705077555280905
+            ],
+            "nativeFaceIndex": 499,
+            "sourceFaceIndex": 2037
+          },
+          "full": {
+            "pointMm": [
+              0,
+              -2,
+              4.5954270487538835
+            ],
+            "nativeFaceIndex": 499,
+            "sourceFaceIndex": 2037
+          },
+          "returnedRest": {
+            "pointMm": [
+              0,
+              -2,
+              4.746429443359375
+            ],
+            "nativeFaceIndex": 499,
+            "sourceFaceIndex": 2037
+          },
+          "partialInwardMm": 0.04135188807847001,
+          "fullInwardMm": 0.15100239460549147
+        },
+        {
+          "id": "main-switch-inner",
+          "part": "upper-shell",
+          "originMm": [
+            0,
+            -2,
+            2
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "group": "centre",
+          "rest": {
+            "pointMm": [
+              0,
+              -2,
+              3.446430206298828
+            ],
+            "nativeFaceIndex": 92,
+            "sourceFaceIndex": 1630
+          },
+          "partial": {
+            "pointMm": [
+              0,
+              -2,
+              3.4041021353288023
+            ],
+            "nativeFaceIndex": 92,
+            "sourceFaceIndex": 1630
+          },
+          "full": {
+            "pointMm": [
+              0,
+              -2,
+              3.2918653979098664
+            ],
+            "nativeFaceIndex": 92,
+            "sourceFaceIndex": 1630
+          },
+          "returnedRest": {
+            "pointMm": [
+              0,
+              -2,
+              3.446430206298828
+            ],
+            "nativeFaceIndex": 92,
+            "sourceFaceIndex": 1630
+          },
+          "partialInwardMm": 0.04232807097002578,
+          "fullInwardMm": 0.1545648083889617
+        },
+        {
+          "id": "reset-centre-outer",
+          "part": "lower-shell",
+          "originMm": [
+            -20,
+            4.5,
+            -0.1
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "group": "centre",
+          "rest": {
+            "pointMm": [
+              -11,
+              4.5,
+              -0.10000000000000142
+            ],
+            "nativeFaceIndex": 1245,
+            "sourceFaceIndex": 4321
+          },
+          "partial": {
+            "pointMm": [
+              -10.984460418084879,
+              4.5,
+              -0.10000000000000142
+            ],
+            "nativeFaceIndex": 1245,
+            "sourceFaceIndex": 4321
+          },
+          "full": {
+            "pointMm": [
+              -10.943252660699038,
+              4.5,
+              -0.10000000000000142
+            ],
+            "nativeFaceIndex": 1245,
+            "sourceFaceIndex": 4321
+          },
+          "returnedRest": {
+            "pointMm": [
+              -11,
+              4.5,
+              -0.10000000000000142
+            ],
+            "nativeFaceIndex": 1245,
+            "sourceFaceIndex": 4321
+          },
+          "partialInwardMm": 0.015539581915120948,
+          "fullInwardMm": 0.056747339300962096
+        },
+        {
+          "id": "reset-centre-inner",
+          "part": "lower-shell",
+          "originMm": [
+            -8,
+            4.5,
+            -0.1
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "group": "centre",
+          "rest": {
+            "pointMm": [
+              -10.160281444947962,
+              4.5,
+              -0.10000000000000142
+            ],
+            "nativeFaceIndex": 768,
+            "sourceFaceIndex": 3844
+          },
+          "partial": {
+            "pointMm": [
+              -10.144740723278307,
+              4.5,
+              -0.10000000000000142
+            ],
+            "nativeFaceIndex": 768,
+            "sourceFaceIndex": 3844
+          },
+          "full": {
+            "pointMm": [
+              -10.10353365629079,
+              4.5,
+              -0.10000000000000142
+            ],
+            "nativeFaceIndex": 768,
+            "sourceFaceIndex": 3844
+          },
+          "returnedRest": {
+            "pointMm": [
+              -10.160281444947962,
+              4.5,
+              -0.10000000000000142
+            ],
+            "nativeFaceIndex": 768,
+            "sourceFaceIndex": 3844
+          },
+          "partialInwardMm": 0.015540721669655255,
+          "fullInwardMm": 0.056747788657173004
+        },
+        {
+          "id": "reset-switch-outer",
+          "part": "lower-shell",
+          "originMm": [
+            -20,
+            4.5,
+            0.2
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "group": "centre",
+          "rest": {
+            "pointMm": [
+              -11,
+              4.5,
+              0.1999999999999993
+            ],
+            "nativeFaceIndex": 1245,
+            "sourceFaceIndex": 4321
+          },
+          "partial": {
+            "pointMm": [
+              -10.982881939474616,
+              4.5,
+              0.1999999999999993
+            ],
+            "nativeFaceIndex": 1245,
+            "sourceFaceIndex": 4321
+          },
+          "full": {
+            "pointMm": [
+              -10.937488678741694,
+              4.5,
+              0.1999999999999993
+            ],
+            "nativeFaceIndex": 1245,
+            "sourceFaceIndex": 4321
+          },
+          "returnedRest": {
+            "pointMm": [
+              -11,
+              4.5,
+              0.1999999999999993
+            ],
+            "nativeFaceIndex": 1245,
+            "sourceFaceIndex": 4321
+          },
+          "partialInwardMm": 0.017118060525383783,
+          "fullInwardMm": 0.06251132125830594
+        },
+        {
+          "id": "reset-switch-inner",
+          "part": "lower-shell",
+          "originMm": [
+            -8,
+            4.5,
+            0.2
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "group": "centre",
+          "rest": {
+            "pointMm": [
+              -10.16551798382303,
+              4.5,
+              0.1999999999999993
+            ],
+            "nativeFaceIndex": 768,
+            "sourceFaceIndex": 3844
+          },
+          "partial": {
+            "pointMm": [
+              -10.148398759925037,
+              4.5,
+              0.1999999999999993
+            ],
+            "nativeFaceIndex": 768,
+            "sourceFaceIndex": 3844
+          },
+          "full": {
+            "pointMm": [
+              -10.103006208605098,
+              4.5,
+              0.1999999999999993
+            ],
+            "nativeFaceIndex": 768,
+            "sourceFaceIndex": 3844
+          },
+          "returnedRest": {
+            "pointMm": [
+              -10.16551798382303,
+              4.5,
+              0.1999999999999993
+            ],
+            "nativeFaceIndex": 768,
+            "sourceFaceIndex": 3844
+          },
+          "partialInwardMm": 0.017119223897992697,
+          "fullInwardMm": 0.06251177521793139
+        }
+      ],
+      "mainInnerOuterWall": {
+        "rays": 30,
+        "partialInwardRangeMm": [
+          0.004973069027393251,
+          0.04636957841052336
+        ],
+        "fullInwardRangeMm": [
+          0.018159604323209066,
+          0.1693237681972235
+        ],
+        "allPartialBetweenRestAndFull": true,
+        "allExactlyReturnedToRest": true,
+        "xMm": [
+          -3.5,
+          0,
+          3.5
+        ],
+        "yMm": [
+          -3,
+          -2,
+          1.1,
+          3.5,
+          5
+        ]
+      },
+      "resetInnerOuterWall": {
+        "rays": 42,
+        "partialInwardRangeMm": [
+          0.002912703842987696,
+          0.03763969731357264
+        ],
+        "fullInwardRangeMm": [
+          0.010635896171116599,
+          0.13744357833689236
+        ],
+        "allPartialBetweenRestAndFull": true,
+        "allExactlyReturnedToRest": true,
+        "yMm": [
+          2.8,
+          4.5,
+          6.2
+        ],
+        "zMm": [
+          -2.5,
+          -1.5,
+          -0.1,
+          0.2,
+          1.5,
+          3,
+          4.1
+        ],
+        "maxInnerOuterFullDisplacementDifferenceMm": 1.3321227569917937e-06,
+        "ownUSlotRootZMm": -3.053569793701172,
+        "ownUSlotFreeTipZMm": 4.753570556640625,
+        "upperSegmentMoves": true
+      },
+      "fixedRays": [
+        {
+          "id": "main-fixed-case",
+          "part": "upper-shell",
+          "originMm": [
+            8,
+            1.1,
+            20
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "group": "fixed",
+          "rest": {
+            "pointMm": [
+              8,
+              1.1,
+              4.746429443359375
+            ],
+            "nativeFaceIndex": 570,
+            "sourceFaceIndex": 2108
+          },
+          "partial": {
+            "pointMm": [
+              8,
+              1.1,
+              4.746429443359375
+            ],
+            "nativeFaceIndex": 570,
+            "sourceFaceIndex": 2108
+          },
+          "full": {
+            "pointMm": [
+              8,
+              1.1,
+              4.746429443359375
+            ],
+            "nativeFaceIndex": 570,
+            "sourceFaceIndex": 2108
+          },
+          "returnedRest": {
+            "pointMm": [
+              8,
+              1.1,
+              4.746429443359375
+            ],
+            "nativeFaceIndex": 570,
+            "sourceFaceIndex": 2108
+          },
+          "partialInwardMm": 0,
+          "fullInwardMm": 0
+        },
+        {
+          "id": "reset-fixed-base-outer",
+          "part": "lower-shell",
+          "originMm": [
+            -20,
+            4.5,
+            -3.2
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "group": "fixed",
+          "rest": {
+            "pointMm": [
+              -12,
+              4.5,
+              -3.1999999999999993
+            ],
+            "nativeFaceIndex": 852,
+            "sourceFaceIndex": 3928
+          },
+          "partial": {
+            "pointMm": [
+              -12,
+              4.5,
+              -3.1999999999999993
+            ],
+            "nativeFaceIndex": 852,
+            "sourceFaceIndex": 3928
+          },
+          "full": {
+            "pointMm": [
+              -12,
+              4.5,
+              -3.1999999999999993
+            ],
+            "nativeFaceIndex": 852,
+            "sourceFaceIndex": 3928
+          },
+          "returnedRest": {
+            "pointMm": [
+              -12,
+              4.5,
+              -3.1999999999999993
+            ],
+            "nativeFaceIndex": 852,
+            "sourceFaceIndex": 3928
+          },
+          "partialInwardMm": 0,
+          "fullInwardMm": 0
+        },
+        {
+          "id": "reset-fixed-base-inner",
+          "part": "lower-shell",
+          "originMm": [
+            -8,
+            4.5,
+            -3.2
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "group": "fixed",
+          "rest": {
+            "pointMm": [
+              -10.106170966362697,
+              4.5,
+              -3.1999999999999993
+            ],
+            "nativeFaceIndex": 375,
+            "sourceFaceIndex": 3451
+          },
+          "partial": {
+            "pointMm": [
+              -10.106170966362697,
+              4.5,
+              -3.1999999999999993
+            ],
+            "nativeFaceIndex": 375,
+            "sourceFaceIndex": 3451
+          },
+          "full": {
+            "pointMm": [
+              -10.106170966362697,
+              4.5,
+              -3.1999999999999993
+            ],
+            "nativeFaceIndex": 375,
+            "sourceFaceIndex": 3451
+          },
+          "returnedRest": {
+            "pointMm": [
+              -10.106170966362697,
+              4.5,
+              -3.1999999999999993
+            ],
+            "nativeFaceIndex": 375,
+            "sourceFaceIndex": 3451
+          },
+          "partialInwardMm": 0,
+          "fullInwardMm": 0
+        }
+      ],
+      "immutableIndexAndSourceAttributes": true,
+      "restNativeBytesExact": true
+    },
+    "minCapEmitterClearanceMm": 0.17365315470537457
+  },
+  "rgb": {
+    "count": 1,
+    "gpio": "G35",
+    "defaultOff": true,
+    "externallyDriven": true,
+    "noAutomaticResetEffect": true,
+    "noecho": true
+  },
+  "ir": {
+    "gpio": "G4",
+    "passiveGeometryOnly": true
+  },
+  "artwork": {
+    "pngCount": 2,
+    "panelCount": 2,
+    "inkStates": [
+      "rest",
+      "partial",
+      "full",
+      "connected-partial"
+    ],
+    "physicalInvariant": true,
+    "source": "Cleaned supplied flat artwork only;conformity native402x146,bottom3277x4096;both true-bored rear carrier and original M2 aperture retained"
+  },
+  "hierarchy": {
+    "hub": true,
+    "button": true,
+    "lcdFramebuffer": true,
+    "reparent": true,
+    "inputPath": "grove/grove-1/press",
+    "wireEndpointsChecked": 48,
+    "peerIsolated": true,
+    "noecho": true,
+    "detachCancelled": true
+  },
+  "resources": {
+    "realTimerClickRelease": true,
+    "realTimerClickHandlesCancelled": true,
+    "remainingTimers": 0,
+    "disposedGeometry": 179,
+    "disposedMaterials": 54
+  },
+  "capabilities": {
+    "controls": [
+      "button",
+      "reset"
+    ],
+    "leds": [
+      "rgb"
+    ],
+    "ports": [
+      "usb",
+      "grove",
+      "ext-5p",
+      "ext-4p"
+    ],
+    "displays": [],
+    "sensors": [],
+    "joints": []
+  },
+  "scope": "Actual own C124 file imports and CPU geometry/input/output/assembly/resource checks. No loader substitution,GPIO/USB/Grove bus,firmware,GPU/browser,manufacturing or physical-device acceptance."
+}

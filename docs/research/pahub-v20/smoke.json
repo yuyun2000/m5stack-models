@@ -1,0 +1,833 @@
+{
+  "status": "pass",
+  "scope": "Own original U040-B necessary CPU geometry/API/ordinary raster readback and one bounded real Model/transformed StickS3-HUB probe;not browser/GPU/build/hardware/manufacturing acceptance",
+  "modelPhysical": {
+    "constructionRoute": "official-native-shell-plus-own-visible-assembly",
+    "sourceNativeParts": [
+      {
+        "id": "rear",
+        "triangles": 1872,
+        "exactSourceAttributesAndFaceMapping": true
+      },
+      {
+        "id": "front",
+        "triangles": 1626,
+        "exactSourceAttributesAndFaceMapping": true
+      }
+    ],
+    "nativeTriangles": 3498,
+    "excludedDuplicatePreviewTriangles": 3498,
+    "nativeShellEnvelopeMm": [
+      24,
+      48,
+      7.999999761581421
+    ],
+    "nominalMm": [
+      24,
+      48,
+      10.8
+    ],
+    "actualPhysicalEnvelopeMm": [
+      24,
+      48,
+      10.799999940395356
+    ],
+    "physicalMeshes": 348,
+    "triangles": 72578,
+    "allClosedPositiveDirectedTwoEdges": true,
+    "frontSide": true,
+    "mountWallRays": 16,
+    "pcbTubeReliefMm": [
+      0.3255624444706138,
+      0.3618475525980971
+    ],
+    "pcbCentralNativeBossClearanceMm": 0.8999958770665959,
+    "actualExposedWindowBacking": [
+      "PaHub actual fixed resistor strap/passive;not a user switch",
+      "PaHub v2.0 actual exposed red PCB;outline/installation inferred around native retention",
+      "PaHub v2.0 actual exposed red PCB;outline/installation inferred around native retention"
+    ],
+    "actualPcbPosts": 4,
+    "visibleMuxLegs": 24,
+    "sourceModelConflict": "PCA9548AP/TCA9548A unresolved;package appearance only",
+    "outputs": [
+      {
+        "id": "grove-0",
+        "channel": 0,
+        "positionMm": [
+          7.4,
+          -2.8,
+          6.8
+        ],
+        "actualContacts": 4,
+        "straightThroughPcbStems": 4,
+        "upwardMouth": true
+      },
+      {
+        "id": "grove-1",
+        "channel": 1,
+        "positionMm": [
+          7.4,
+          7.8,
+          6.8
+        ],
+        "actualContacts": 4,
+        "straightThroughPcbStems": 4,
+        "upwardMouth": true
+      },
+      {
+        "id": "grove-2",
+        "channel": 2,
+        "positionMm": [
+          5.1,
+          17.7,
+          6.8
+        ],
+        "actualContacts": 4,
+        "straightThroughPcbStems": 4,
+        "upwardMouth": true
+      },
+      {
+        "id": "grove-3",
+        "channel": 3,
+        "positionMm": [
+          -5.1,
+          17.7,
+          6.8
+        ],
+        "actualContacts": 4,
+        "straightThroughPcbStems": 4,
+        "upwardMouth": true
+      },
+      {
+        "id": "grove-4",
+        "channel": 4,
+        "positionMm": [
+          -7.4,
+          7.8,
+          6.8
+        ],
+        "actualContacts": 4,
+        "straightThroughPcbStems": 4,
+        "upwardMouth": true
+      },
+      {
+        "id": "grove-5",
+        "channel": 5,
+        "positionMm": [
+          -7.4,
+          -2.8,
+          6.8
+        ],
+        "actualContacts": 4,
+        "straightThroughPcbStems": 4,
+        "upwardMouth": true
+      }
+    ],
+    "socketWallRays": 28,
+    "totalPhysicalGroveSockets": 7,
+    "totalRetainedContacts": 28,
+    "inputRightAngleReturns": 4,
+    "outputStraightStems": 24,
+    "platedPcbBores": 28,
+    "annularPads": 56,
+    "physicalFilms": 1,
+    "ordinaryArtworkRegions": 2,
+    "realNativeM5Retained": true,
+    "hiddenInstallationAndFit": "Explicit own-photo reconstruction,not completeBOM or manufacturing datums",
+    "controls": 0,
+    "leds": 0,
+    "joints": 0,
+    "sensorReadings": 0
+  },
+  "modelRuntime": {
+    "staticNativeShellPcbMuxSevenActualPorts": true,
+    "noDipLedButtonJointSensorAnchor": true,
+    "noAddressChannelI2cPowerFirmwareOrAutomaticEcho": true,
+    "actualDownstreamPorts": [
+      "grove-0",
+      "grove-1",
+      "grove-2",
+      "grove-3",
+      "grove-4",
+      "grove-5"
+    ],
+    "actualFourCoreChildrenChecked": 6,
+    "independentHierarchicalAddressAndDetach": true,
+    "allPeerPhysicalAttributesIndicesWorldRetained": true,
+    "actualDownstreamDetachRestoreExact": true,
+    "createdDownstreamResourcesDisposed": 4164,
+    "existingOccupantsRetained": 0,
+    "ownControls": 0,
+    "ownLeds": 0,
+    "ownJoints": 0
+  },
+  "modelPeerInvariant": true,
+  "actualAPI": {
+    "exports": [
+      "GroveModule",
+      "Model",
+      "configurationSchema",
+      "configurations",
+      "defaults",
+      "spec"
+    ],
+    "defaultExport": "Model",
+    "bodyComponentOrder": [
+      "grove",
+      "grove-0",
+      "grove-1",
+      "grove-2",
+      "grove-3",
+      "grove-4",
+      "grove-5"
+    ],
+    "bodyComponentKinds": {
+      "grove": "port",
+      "grove-0": "port",
+      "grove-1": "port",
+      "grove-2": "port",
+      "grove-3": "port",
+      "grove-4": "port",
+      "grove-5": "port"
+    },
+    "portMetadata": [
+      {
+        "id": "grove",
+        "kind": "port",
+        "connector": "grove",
+        "position": [
+          0,
+          -24,
+          1.4
+        ],
+        "quaternion": [
+          0,
+          0,
+          1,
+          6.123233995736766e-17
+        ],
+        "pins": [
+          {
+            "n": 1,
+            "name": "GND"
+          },
+          {
+            "n": 2,
+            "name": "5V"
+          },
+          {
+            "n": 3,
+            "name": "SDA"
+          },
+          {
+            "n": 4,
+            "name": "SCL"
+          }
+        ],
+        "pinGrid": {
+          "cols": 4,
+          "rows": 1,
+          "pitch": 2,
+          "center": [
+            0,
+            -0.2
+          ],
+          "order": [
+            4,
+            3,
+            2,
+            1
+          ]
+        },
+        "meta": {
+          "face": "bottom",
+          "role": "visual-connector",
+          "scope": "Mechanical input only;no I2C/address/routing/electrical/firmware"
+        }
+      },
+      {
+        "id": "grove-0",
+        "kind": "port",
+        "connector": "grove",
+        "position": [
+          7.4,
+          -2.8,
+          6.8
+        ],
+        "quaternion": [
+          0.5,
+          -0.4999999999999999,
+          -0.5,
+          0.5000000000000001
+        ],
+        "pins": [
+          {
+            "n": 1,
+            "name": "GND"
+          },
+          {
+            "n": 2,
+            "name": "5V"
+          },
+          {
+            "n": 3,
+            "name": "SDA"
+          },
+          {
+            "n": 4,
+            "name": "SCL"
+          }
+        ],
+        "pinGrid": {
+          "cols": 4,
+          "rows": 1,
+          "pitch": 2,
+          "center": [
+            0,
+            0.2
+          ],
+          "order": [
+            4,
+            3,
+            2,
+            1
+          ]
+        },
+        "meta": {
+          "face": "front",
+          "role": "visual-connector",
+          "printedChannel": 0,
+          "scope": "Independent mechanical connector only;no selection/address/polling/routing/electrical/firmware"
+        }
+      },
+      {
+        "id": "grove-1",
+        "kind": "port",
+        "connector": "grove",
+        "position": [
+          7.4,
+          7.8,
+          6.8
+        ],
+        "quaternion": [
+          0.5,
+          -0.4999999999999999,
+          -0.5,
+          0.5000000000000001
+        ],
+        "pins": [
+          {
+            "n": 1,
+            "name": "GND"
+          },
+          {
+            "n": 2,
+            "name": "5V"
+          },
+          {
+            "n": 3,
+            "name": "SDA"
+          },
+          {
+            "n": 4,
+            "name": "SCL"
+          }
+        ],
+        "pinGrid": {
+          "cols": 4,
+          "rows": 1,
+          "pitch": 2,
+          "center": [
+            0,
+            0.2
+          ],
+          "order": [
+            4,
+            3,
+            2,
+            1
+          ]
+        },
+        "meta": {
+          "face": "front",
+          "role": "visual-connector",
+          "printedChannel": 1,
+          "scope": "Independent mechanical connector only;no selection/address/polling/routing/electrical/firmware"
+        }
+      },
+      {
+        "id": "grove-2",
+        "kind": "port",
+        "connector": "grove",
+        "position": [
+          5.1,
+          17.7,
+          6.8
+        ],
+        "quaternion": [
+          0.7071067811865475,
+          0,
+          0,
+          0.7071067811865476
+        ],
+        "pins": [
+          {
+            "n": 1,
+            "name": "GND"
+          },
+          {
+            "n": 2,
+            "name": "5V"
+          },
+          {
+            "n": 3,
+            "name": "SDA"
+          },
+          {
+            "n": 4,
+            "name": "SCL"
+          }
+        ],
+        "pinGrid": {
+          "cols": 4,
+          "rows": 1,
+          "pitch": 2,
+          "center": [
+            0,
+            0.2
+          ],
+          "order": [
+            4,
+            3,
+            2,
+            1
+          ]
+        },
+        "meta": {
+          "face": "front",
+          "role": "visual-connector",
+          "printedChannel": 2,
+          "scope": "Independent mechanical connector only;no selection/address/polling/routing/electrical/firmware"
+        }
+      },
+      {
+        "id": "grove-3",
+        "kind": "port",
+        "connector": "grove",
+        "position": [
+          -5.1,
+          17.7,
+          6.8
+        ],
+        "quaternion": [
+          0.7071067811865475,
+          0,
+          0,
+          0.7071067811865476
+        ],
+        "pins": [
+          {
+            "n": 1,
+            "name": "GND"
+          },
+          {
+            "n": 2,
+            "name": "5V"
+          },
+          {
+            "n": 3,
+            "name": "SDA"
+          },
+          {
+            "n": 4,
+            "name": "SCL"
+          }
+        ],
+        "pinGrid": {
+          "cols": 4,
+          "rows": 1,
+          "pitch": 2,
+          "center": [
+            0,
+            0.2
+          ],
+          "order": [
+            4,
+            3,
+            2,
+            1
+          ]
+        },
+        "meta": {
+          "face": "front",
+          "role": "visual-connector",
+          "printedChannel": 3,
+          "scope": "Independent mechanical connector only;no selection/address/polling/routing/electrical/firmware"
+        }
+      },
+      {
+        "id": "grove-4",
+        "kind": "port",
+        "connector": "grove",
+        "position": [
+          -7.4,
+          7.8,
+          6.8
+        ],
+        "quaternion": [
+          0.5,
+          0.4999999999999999,
+          0.5,
+          0.5000000000000001
+        ],
+        "pins": [
+          {
+            "n": 1,
+            "name": "GND"
+          },
+          {
+            "n": 2,
+            "name": "5V"
+          },
+          {
+            "n": 3,
+            "name": "SDA"
+          },
+          {
+            "n": 4,
+            "name": "SCL"
+          }
+        ],
+        "pinGrid": {
+          "cols": 4,
+          "rows": 1,
+          "pitch": 2,
+          "center": [
+            0,
+            0.2
+          ],
+          "order": [
+            4,
+            3,
+            2,
+            1
+          ]
+        },
+        "meta": {
+          "face": "front",
+          "role": "visual-connector",
+          "printedChannel": 4,
+          "scope": "Independent mechanical connector only;no selection/address/polling/routing/electrical/firmware"
+        }
+      },
+      {
+        "id": "grove-5",
+        "kind": "port",
+        "connector": "grove",
+        "position": [
+          -7.4,
+          -2.8,
+          6.8
+        ],
+        "quaternion": [
+          0.5,
+          0.4999999999999999,
+          0.5,
+          0.5000000000000001
+        ],
+        "pins": [
+          {
+            "n": 1,
+            "name": "GND"
+          },
+          {
+            "n": 2,
+            "name": "5V"
+          },
+          {
+            "n": 3,
+            "name": "SDA"
+          },
+          {
+            "n": 4,
+            "name": "SCL"
+          }
+        ],
+        "pinGrid": {
+          "cols": 4,
+          "rows": 1,
+          "pitch": 2,
+          "center": [
+            0,
+            0.2
+          ],
+          "order": [
+            4,
+            3,
+            2,
+            1
+          ]
+        },
+        "meta": {
+          "face": "front",
+          "role": "visual-connector",
+          "printedChannel": 5,
+          "scope": "Independent mechanical connector only;no selection/address/polling/routing/electrical/firmware"
+        }
+      }
+    ],
+    "keymap": {},
+    "defaults": {},
+    "configurationSchema": {
+      "artwork": {
+        "type": "boolean",
+        "default": true,
+        "meaning": "Remove ink only;retain real rear film,exposed red PCB,native shell and all7receivers/contacts"
+      }
+    },
+    "configurations": [
+      {
+        "id": "complete",
+        "name": "完整 PaHub v2.0 U040-B",
+        "options": {}
+      }
+    ],
+    "moduleComponentOrder": [
+      "grove",
+      "grove-0",
+      "grove-1",
+      "grove-2",
+      "grove-3",
+      "grove-4",
+      "grove-5",
+      "unitFrame",
+      "cable"
+    ],
+    "moduleComponentKinds": {
+      "grove": "port",
+      "grove-0": "port",
+      "grove-1": "port",
+      "grove-2": "port",
+      "grove-3": "port",
+      "grove-4": "port",
+      "grove-5": "port",
+      "unitFrame": "unit-frame",
+      "cable": "cable"
+    }
+  },
+  "modelDisposedResources": 672,
+  "modulePhysical": {
+    "constructionRoute": "official-native-shell-plus-own-visible-assembly",
+    "sourceNativeParts": [
+      {
+        "id": "rear",
+        "triangles": 1872,
+        "exactSourceAttributesAndFaceMapping": true
+      },
+      {
+        "id": "front",
+        "triangles": 1626,
+        "exactSourceAttributesAndFaceMapping": true
+      }
+    ],
+    "nativeTriangles": 3498,
+    "excludedDuplicatePreviewTriangles": 3498,
+    "nativeShellEnvelopeMm": [
+      24.00000000000002,
+      48,
+      7.999999761581421
+    ],
+    "nominalMm": [
+      24,
+      48,
+      10.8
+    ],
+    "actualPhysicalEnvelopeMm": [
+      24.00000000000002,
+      48,
+      10.799999940395367
+    ],
+    "physicalMeshes": 348,
+    "triangles": 72578,
+    "allClosedPositiveDirectedTwoEdges": true,
+    "frontSide": true,
+    "mountWallRays": 16,
+    "pcbTubeReliefMm": [
+      0.32556244447062,
+      0.3618475525981353
+    ],
+    "pcbCentralNativeBossClearanceMm": 0.8999958770665728,
+    "actualExposedWindowBacking": [
+      "PaHub actual fixed resistor strap/passive;not a user switch",
+      "PaHub v2.0 actual exposed red PCB;outline/installation inferred around native retention",
+      "PaHub v2.0 actual exposed red PCB;outline/installation inferred around native retention"
+    ],
+    "actualPcbPosts": 4,
+    "visibleMuxLegs": 24,
+    "sourceModelConflict": "PCA9548AP/TCA9548A unresolved;package appearance only",
+    "outputs": [
+      {
+        "id": "grove-0",
+        "channel": 0,
+        "positionMm": [
+          7.4,
+          -2.8,
+          6.8
+        ],
+        "actualContacts": 4,
+        "straightThroughPcbStems": 4,
+        "upwardMouth": true
+      },
+      {
+        "id": "grove-1",
+        "channel": 1,
+        "positionMm": [
+          7.4,
+          7.8,
+          6.8
+        ],
+        "actualContacts": 4,
+        "straightThroughPcbStems": 4,
+        "upwardMouth": true
+      },
+      {
+        "id": "grove-2",
+        "channel": 2,
+        "positionMm": [
+          5.1,
+          17.7,
+          6.8
+        ],
+        "actualContacts": 4,
+        "straightThroughPcbStems": 4,
+        "upwardMouth": true
+      },
+      {
+        "id": "grove-3",
+        "channel": 3,
+        "positionMm": [
+          -5.1,
+          17.7,
+          6.8
+        ],
+        "actualContacts": 4,
+        "straightThroughPcbStems": 4,
+        "upwardMouth": true
+      },
+      {
+        "id": "grove-4",
+        "channel": 4,
+        "positionMm": [
+          -7.4,
+          7.8,
+          6.8
+        ],
+        "actualContacts": 4,
+        "straightThroughPcbStems": 4,
+        "upwardMouth": true
+      },
+      {
+        "id": "grove-5",
+        "channel": 5,
+        "positionMm": [
+          -7.4,
+          -2.8,
+          6.8
+        ],
+        "actualContacts": 4,
+        "straightThroughPcbStems": 4,
+        "upwardMouth": true
+      }
+    ],
+    "socketWallRays": 28,
+    "totalPhysicalGroveSockets": 7,
+    "totalRetainedContacts": 28,
+    "inputRightAngleReturns": 4,
+    "outputStraightStems": 24,
+    "platedPcbBores": 28,
+    "annularPads": 56,
+    "physicalFilms": 1,
+    "ordinaryArtworkRegions": 2,
+    "realNativeM5Retained": true,
+    "hiddenInstallationAndFit": "Explicit own-photo reconstruction,not completeBOM or manufacturing datums",
+    "controls": 0,
+    "leds": 0,
+    "joints": 0,
+    "sensorReadings": 0
+  },
+  "moduleRuntime": {
+    "staticNativeShellPcbMuxSevenActualPorts": true,
+    "noDipLedButtonJointSensorAnchor": true,
+    "noAddressChannelI2cPowerFirmwareOrAutomaticEcho": true,
+    "actualDownstreamPorts": [
+      "grove-0",
+      "grove-1",
+      "grove-2",
+      "grove-3",
+      "grove-4",
+      "grove-5"
+    ],
+    "actualFourCoreChildrenChecked": 6,
+    "independentHierarchicalAddressAndDetach": true,
+    "allPeerPhysicalAttributesIndicesWorldRetained": true,
+    "actualDownstreamDetachRestoreExact": true,
+    "createdDownstreamResourcesDisposed": 4164,
+    "existingOccupantsRetained": 0,
+    "ownControls": 0,
+    "ownLeds": 0,
+    "ownJoints": 0
+  },
+  "modulePeerInvariant": true,
+  "disposedResources": 1732,
+  "configurations": [
+    {
+      "entry": "Model",
+      "options": {},
+      "panels": [
+        "reference-redraw",
+        "reference-redraw"
+      ],
+      "physicalMeshes": 348,
+      "gpselopeMm": [
+        24,
+        48,
+        10.799999940395356
+      ]
+    },
+    {
+      "entry": "GroveModule",
+      "options": {},
+      "panels": [
+        "reference-redraw",
+        "reference-redraw"
+      ],
+      "physicalMeshes": 348,
+      "gpselopeMm": [
+        24,
+        48,
+        10.799999940395354
+      ]
+    }
+  ],
+  "allEntriesAndPresetsPhysicalAttributesIndexWorldInvariant": true,
+  "actualFourCoreCables": 2,
+  "realAncestorAndUnitPoses": true,
+  "branch": "grove/grove-1",
+  "rasters": [
+    {
+      "name": "back",
+      "width": 1600,
+      "height": 2800,
+      "sha256": "3341baec127667e37418d4c7c7f9a0db5a58153b35406422ef8fe5670f36dd7d",
+      "decodedNonempty": true
+    },
+    {
+      "name": "pcb",
+      "width": 1040,
+      "height": 940,
+      "sha256": "b4580c50ba34a58611b28e9260e9632b0bdc358ab479de2050b3de85cef59d0f",
+      "decodedNonempty": true
+    }
+  ]
+}

@@ -1,0 +1,389 @@
+{
+  "schemaVersion": 1,
+  "batch": 53,
+  "status": "pass",
+  "stage": "modeled",
+  "verified": 0,
+  "catalogCount": 201,
+  "controllers": 17,
+  "units": 184,
+  "newControllers": 3,
+  "newControllerPngCount": 6,
+  "priorGit": {
+    "catalogCount": 187,
+    "shortCommit": "296128b"
+  },
+  "priorPending": {
+    "units": 11,
+    "pngs": 15,
+    "batches": [
+      49,
+      50,
+      51,
+      52
+    ]
+  },
+  "products": [
+    {
+      "id": "atom-lite",
+      "sku": "C008",
+      "freezeSha256": "658d0bc57dc7036698dae076e2b79fecc8d21ef3017d3c64fa84589cf37f7342",
+      "helperSha256": "d509ce72521a363568c6e69e7f0559f70ee9690872407292b165ce4bff2d2577",
+      "entry": "src/devices/atom-lite/index.js",
+      "export": "Model",
+      "topLevelAlias": "AtomLite",
+      "namedExports": [
+        "Model",
+        "spec",
+        "defaults",
+        "configurations",
+        "configurationSchema"
+      ],
+      "defaultExport": "Model",
+      "controls": [
+        "button",
+        "reset"
+      ],
+      "leds": [
+        "rgb"
+      ],
+      "ports": [
+        "grove",
+        "usb",
+        "ext-5p",
+        "ext-4p"
+      ],
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "Atom Lite C008 完整主机"
+        }
+      ],
+      "pngCount": 2,
+      "runtimeFiles": 9,
+      "researchFiles": 4,
+      "geometry": {
+        "status": "pass",
+        "meshes": 225,
+        "faces": 40358
+      }
+    },
+    {
+      "id": "atom-matrix",
+      "sku": "C008-B",
+      "freezeSha256": "a862b48e339b5824e0d29d4e7fae18f98f85223b706033352217fb96d1ecb276",
+      "helperSha256": "560b5f3e7dfb20178e256e8c5ae8e106be243397ef982056ee426c4865b9ac43",
+      "entry": "src/devices/atom-matrix/index.js",
+      "export": "Model",
+      "topLevelAlias": "AtomMatrix",
+      "namedExports": [
+        "Model",
+        "spec",
+        "defaults",
+        "configurations",
+        "configurationSchema"
+      ],
+      "defaultExport": "Model",
+      "controls": [
+        "button",
+        "reset"
+      ],
+      "leds": [
+        "led0",
+        "led1",
+        "led2",
+        "led3",
+        "led4",
+        "led5",
+        "led6",
+        "led7",
+        "led8",
+        "led9",
+        "led10",
+        "led11",
+        "led12",
+        "led13",
+        "led14",
+        "led15",
+        "led16",
+        "led17",
+        "led18",
+        "led19",
+        "led20",
+        "led21",
+        "led22",
+        "led23",
+        "led24"
+      ],
+      "ports": [
+        "grove",
+        "usb",
+        "ext-5p",
+        "ext-4p"
+      ],
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "原 Atom Matrix C008-B"
+        }
+      ],
+      "pngCount": 2,
+      "runtimeFiles": 10,
+      "researchFiles": 5,
+      "geometry": {
+        "status": "pass",
+        "meshes": 250,
+        "faces": 20514
+      }
+    },
+    {
+      "id": "atoms3-lite",
+      "sku": "C124",
+      "freezeSha256": "a8f047d6dc1c4e356aa3fd6d9c158571923002a60c44efb87c98c6a6d72f704e",
+      "helperSha256": "78ebd70516b80fb6d556f293b38f6b8ffad2a952884387a9859730b3c224895f",
+      "entry": "src/devices/atoms3-lite/index.js",
+      "export": "Model",
+      "topLevelAlias": "AtomS3Lite",
+      "namedExports": [
+        "Model",
+        "spec",
+        "defaults",
+        "configurations",
+        "configurationSchema"
+      ],
+      "defaultExport": "Model",
+      "controls": [
+        "button",
+        "reset"
+      ],
+      "leds": [
+        "rgb"
+      ],
+      "ports": [
+        "usb",
+        "grove",
+        "ext-5p",
+        "ext-4p"
+      ],
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "完整本体与贴纸"
+        }
+      ],
+      "pngCount": 2,
+      "runtimeFiles": 10,
+      "researchFiles": 5,
+      "geometry": {
+        "status": "pass",
+        "meshes": 179,
+        "faces": 37542
+      }
+    }
+  ],
+  "checks": {
+    "publicExports": {
+      "status": "pass",
+      "sha256": "f5d6ecf7b340f2d346609cf6579a47b63221f8d91ab790116955016912701d36"
+    },
+    "privateExports": {
+      "status": "pass",
+      "sha256": "f5d6ecf7b340f2d346609cf6579a47b63221f8d91ab790116955016912701d36"
+    },
+    "publicFixture": {
+      "status": "pass",
+      "sha256": "781473871d2df35c9caca0bbf6d5552cbe8bdf36c28de8d98a74466b972fbaa0"
+    },
+    "privateFixture": {
+      "status": "pass",
+      "sha256": "781473871d2df35c9caca0bbf6d5552cbe8bdf36c28de8d98a74466b972fbaa0"
+    }
+  },
+  "builds": {
+    "public": {
+      "status": "pass",
+      "logSha256": "3dcf0763e0bd0c3aa7e60c49701ab8ed5b8828a9f7af5c1d6cd07a3d139a0105"
+    },
+    "private": {
+      "status": "pass",
+      "logSha256": "242280fd0a3a14cfe66cc8eed3b4c2df83779e1c574a574cfa63d96f95553470"
+    }
+  },
+  "live": {
+    "status": "pass",
+    "mode": "existing-production-dist",
+    "catalogCount": 201,
+    "ownChunks": 3,
+    "entrySha256": "29b798fa989456c11a3ecffa78699aaedb49568f96e3994682ad6bf56f6e1ed2",
+    "products": [
+      {
+        "id": "atom-lite",
+        "metaId": "m5stack.atom-lite",
+        "status": "pass",
+        "chunk": "assets/atom-lite-BPPj5fxF.js",
+        "chunkSha256": "7f74fd143a410464009bd30dd9ee784f75a42f903f9bc7a6f7f2dfb166414fa0",
+        "pngs": [
+          {
+            "path": "src/devices/atom-lite/artwork/bottom.png",
+            "servedPath": "/assets/bottom-C0DfiOLN.png",
+            "sha256": "3f95fcdb3e2d4f048418b2264ad8514f5af624ad216f1a2e3b112d8f6a5b86f5",
+            "pixels": [
+              1180,
+              1480
+            ],
+            "chunks": [
+              "IDAT",
+              "IEND",
+              "IHDR"
+            ],
+            "metadataEmpty": true
+          },
+          {
+            "path": "src/devices/atom-lite/artwork/compliance.png",
+            "servedPath": "/assets/compliance-CeQqmZO4.png",
+            "sha256": "3a7661a742eeebb012e5be6f7276c0255cdd7875042d0da916abc3fca87c734a",
+            "pixels": [
+              470,
+              164
+            ],
+            "chunks": [
+              "IDAT",
+              "IEND",
+              "IHDR"
+            ],
+            "metadataEmpty": true
+          }
+        ]
+      },
+      {
+        "id": "atom-matrix",
+        "metaId": "m5stack.atom-matrix",
+        "status": "pass",
+        "chunk": "assets/atom-matrix-C41TLJEd.js",
+        "chunkSha256": "a0922cb2dad6c44e916708ee262428655b7dbe661274f06434ba3d2fa97482fc",
+        "pngs": [
+          {
+            "path": "src/devices/atom-matrix/artwork/compliance.png",
+            "servedPath": "/assets/compliance-BDPq0wBP.png",
+            "sha256": "753400d885ee1b4aca284204a8203eacff6dfebfe22ffde65225749e931411a0",
+            "pixels": [
+              1680,
+              480
+            ],
+            "chunks": [
+              "IDAT",
+              "IEND",
+              "IHDR"
+            ],
+            "metadataEmpty": true
+          },
+          {
+            "path": "src/devices/atom-matrix/artwork/rear.png",
+            "servedPath": "/assets/rear-Db1KTCew.png",
+            "sha256": "e605b10db38874727fe42a40f0e97285513cbaaa1cfe5f913c7a1f10034beb48",
+            "pixels": [
+              1440,
+              1800
+            ],
+            "chunks": [
+              "IDAT",
+              "IEND",
+              "IHDR"
+            ],
+            "metadataEmpty": true
+          }
+        ]
+      },
+      {
+        "id": "atoms3-lite",
+        "metaId": "m5stack.atoms3-lite",
+        "status": "pass",
+        "chunk": "assets/atoms3-lite-BwdN1mOc.js",
+        "chunkSha256": "2bd415fc65ea0b809b11baf11a15201feb5d8ce020c0131c93085cea0f9bfeda",
+        "pngs": [
+          {
+            "path": "src/devices/atoms3-lite/artwork/bottom.png",
+            "servedPath": "/assets/bottom-CD1NnVhf.png",
+            "sha256": "e75498e292397fc4f4a141dde6db3ec23c572407d5a32005fc3e9a6307204ca3",
+            "pixels": [
+              3277,
+              4096
+            ],
+            "chunks": [
+              "IDAT",
+              "IEND",
+              "IHDR"
+            ],
+            "metadataEmpty": true
+          },
+          {
+            "path": "src/devices/atoms3-lite/artwork/compliance.png",
+            "servedPath": "/assets/compliance-C3b3TnTQ.png",
+            "sha256": "271e0911cf7f079259b3310f603f5898277d7d22474574e7daf0611e88995ba3",
+            "pixels": [
+              402,
+              146
+            ],
+            "chunks": [
+              "IDAT",
+              "IEND",
+              "IHDR"
+            ],
+            "metadataEmpty": true
+          }
+        ]
+      }
+    ]
+  },
+  "protection": {
+    "publicExistingDevices": 151,
+    "publicExistingUnits": 1527,
+    "publicCore": 19,
+    "publicModeling": 9,
+    "publicDemo": 5,
+    "privateExistingDevices": 160,
+    "privateExistingUnits": 1488,
+    "privateCore": 19,
+    "privateModeling": 9,
+    "privateDemo": 5,
+    "privateProtected": 7,
+    "publicSharedProtected": 2,
+    "privateSharedProtected": 2,
+    "historyAndAmendment": 229,
+    "sourceFreeze": 96
+  },
+  "priorCatalogObjects": {
+    "publicCatalog": {
+      "status": "pass",
+      "count": 201,
+      "prior198Preserved": true
+    },
+    "privateCatalog": {
+      "status": "pass",
+      "count": 201,
+      "prior198Preserved": true
+    },
+    "publicManifest": {
+      "status": "pass",
+      "count": 201,
+      "prior198Preserved": true
+    }
+  },
+  "privacy": {
+    "status": "pass",
+    "newTextFiles": 43,
+    "privateTermsPrinted": false,
+    "metadataEmpty": true
+  },
+  "documentation": {
+    "status": "pass",
+    "files": 11,
+    "newLinks": 40,
+    "historicalTailPreserved": true
+  },
+  "limits": [
+    "Hidden BOM,motion/travel and fit remain visual inferences",
+    "No browser whole-model,GPU,manufacturing or physical-device acceptance",
+    "No new commit/push;existing pending11Unit/15PNG preserved"
+  ]
+}

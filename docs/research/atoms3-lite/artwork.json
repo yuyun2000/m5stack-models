@@ -1,0 +1,70 @@
+{
+  "status": "modeled",
+  "kind": "official-raster",
+  "pngCount": 2,
+  "defaultPanelCount": 2,
+  "assets": [
+    {
+      "path": "src/devices/atoms3-lite/artwork/bottom.png",
+      "role": "bottom",
+      "kind": "official-raster",
+      "sourceKind": "provided-artwork-raster",
+      "sha256": "e75498e292397fc4f4a141dde6db3ec23c572407d5a32005fc3e9a6307204ca3",
+      "pixels": [
+        3277,
+        4096
+      ],
+      "metadataEmpty": true,
+      "source": "Approved ordinary PNG from exact offline all-path original artwork conversion",
+      "rights": "M5Stack artwork/trademarks retain their own rights;ordinary raster distribution authorized by user. Private source names,URLs,vectors and table are not distributed."
+    },
+    {
+      "path": "src/devices/atoms3-lite/artwork/compliance.png",
+      "role": "compliance",
+      "kind": "official-raster",
+      "sourceKind": "provided-artwork-raster",
+      "sha256": "271e0911cf7f079259b3310f603f5898277d7d22474574e7daf0611e88995ba3",
+      "pixels": [
+        402,
+        146
+      ],
+      "metadataEmpty": true,
+      "source": "Approved native flat raster decoded and metadata-cleaned;native resolution retained",
+      "rights": "M5Stack artwork/trademarks retain their own rights;ordinary raster distribution authorized by user. Private source names,URLs,vectors and table are not distributed."
+    }
+  ],
+  "panels": [
+    {
+      "asset": "bottom",
+      "sizeMm": [
+        12,
+        15
+      ],
+      "centreMm": [
+        -0.001830943,
+        2.797851562,
+        -4.56857
+      ],
+      "face": "back",
+      "substrate": "Closed .04mm physical film with actual1.13mm-radius open mounting bore;both ink/substrate align to own native M2 axis",
+      "holeMasked": true
+    },
+    {
+      "asset": "compliance",
+      "sizeMm": [
+        13.5,
+        4.902985074626866
+      ],
+      "centreMm": [
+        0.9,
+        11.808,
+        -0.05
+      ],
+      "face": "top",
+      "substrate": "Closed .028mm physical film registered within own recessed case land",
+      "nativeResolution": "402x146;not a high-resolution vector claim"
+    }
+  ],
+  "artworkFalse": "Only ink panels omitted;native shell,PCB,opaque carriers,all receivers/contacts/optics/supports and motion unchanged. Checked rest/partial/full/connected-partial attrs,index,world.",
+  "scope": "No product-photo crops,AI redraw,public vectors,private source metadata or generator."
+}
