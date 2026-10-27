@@ -1,0 +1,160 @@
+{
+  "date": "2026-10-27",
+  "status": "browser-scenes-pass-packaging-unresolved",
+  "baselineCommit": "15cbc18e0a1a2e6957ab8d60370b1c68ce6984e8",
+  "scope": "Existing production preview, actual visible browser UI and native screenshots; no runtime, geometry, artwork or product-stage change. No synthetic page input or hidden scene-object inspection.",
+  "catalog": {
+    "models": 201,
+    "controllers": 17,
+    "units": 184,
+    "verified": 0
+  },
+  "viewportCssPx": [
+    847,
+    765
+  ],
+  "operations": [
+    {
+      "action": "select current StackChan via product search",
+      "status": "ready"
+    },
+    {
+      "action": "attach Fan at moving head port-c",
+      "connectionStatus": "port-c → Fan",
+      "wires": 4,
+      "plugs": 2
+    },
+    {
+      "action": "pitch angle slider",
+      "observedAnglesDeg": [
+        0,
+        45,
+        90,
+        0
+      ],
+      "result": "Head exterior visibly changes pose; native open rear and separate boards remain visible in the neutral back view"
+    },
+    {
+      "action": "yaw angle slider while pitch remains45",
+      "observedAngleDeg": 90,
+      "result": "Head and attached port/plug/cable/Fan follow the yaw orientation"
+    },
+    {
+      "action": "continuous yaw and Fan from actual controls",
+      "rpm": {
+        "yaw": 2,
+        "port-c/rotor": 240
+      },
+      "successiveVisibleReadouts": [
+        [
+          "766.7° / 240 rpm",
+          "45.0°",
+          "95.4° / 2 rpm"
+        ],
+        [
+          "12178.9° / 240 rpm",
+          "45.0°",
+          "190.5° / 2 rpm"
+        ]
+      ]
+    },
+    {
+      "action": "stop yaw and Fan using each reset/stop control",
+      "settledReadouts": [
+        "0.0° / 0 rpm",
+        "45.0°",
+        "0.0° / 0 rpm"
+      ]
+    },
+    {
+      "action": "detach Fan",
+      "connectionStatus": "尚未连接"
+    },
+    {
+      "action": "return pitch to0, inspect back; then reconnect and leave posed",
+      "final": {
+        "connection": "port-c → Fan",
+        "pitchDeg": 35,
+        "yawDeg": 30,
+        "yawRpm": 0,
+        "fanRpm": 0
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "screenshots": [
+    {
+      "path": "stackchan-connected.jpg",
+      "sha256": "c32f8a98bb230aadef8e6efe29d4dca155c289763de3bc2902f62a853d34fa2c",
+      "format": "JPEG",
+      "exifOrXmp": false
+    },
+    {
+      "path": "pitch45-yaw90-connected.jpg",
+      "sha256": "b1c746476d18768d04200e056395dc762fed9be1839393e6887905acc1913244",
+      "format": "JPEG",
+      "exifOrXmp": false
+    },
+    {
+      "path": "back-neutral.jpg",
+      "sha256": "848ea48d639b808feb9bbbfbe016dca506845bdabae756c65b1db616c6f47aab",
+      "format": "JPEG",
+      "exifOrXmp": false
+    }
+  ],
+  "servedCurrentDist": [
+    {
+      "path": "index.html",
+      "sha256": "31ecd431f5729aa458c1f1299fed4602071ec2ade2b77b569b0ed5503259196e",
+      "bytes": 3415
+    },
+    {
+      "path": "data/catalog.json",
+      "sha256": "ca862b6e37024130ddc5f5816029a57f6e50159012679154aaee91694401d41e",
+      "bytes": 1156786
+    },
+    {
+      "path": "assets/index-DmEsXSrS.js",
+      "sha256": "d0b3a08e5e7f00a865b71350c343ab15652e5b89cc5f07e46b533cfb60febe6f",
+      "bytes": 678848
+    },
+    {
+      "path": "assets/stackchan-BOOqJKzj.js",
+      "sha256": "e52083fc96b14d0524708a4ace0612691162fd775e4983af1a1b9f59f89f25fd",
+      "bytes": 2519669
+    },
+    {
+      "path": "assets/fan-D4wDqGnE.js",
+      "sha256": "9bf050749e913ae646448d64f69ca8b714af593fafdfc04e9fa71311b211096c",
+      "bytes": 184030
+    }
+  ],
+  "runtimeFilesUnchanged": {
+    "src/devices/stackchan/PitchHarness.js": "cd76bcd959268284fde600a665f1ce62fd3656697658bcf9085ad8bb3fb6a826",
+    "src/devices/stackchan/dimensions.js": "a6583eea8ceb18cf74a33d22260b8297e999dcebf730b73c6364a678625012fd",
+    "src/devices/stackchan/index.js": "b66aab09d768fe1404da65133accaae0b616b11ac22b8f4043dea7085d7ab2fa",
+    "src/devices/stackchan/rear-assembly.js": "76e32f0af1885cd332430657b649a29a4201d3535a1c0f63d9039d494cbae0cd",
+    "src/devices/stackchan/motion-mechanics.js": "6fda87a9472758728817752ffe4def9c567ece7fc661fd1a754f6abe1168a466",
+    "src/devices/stackchan/servo-packages.js": "bb005356f53d826dcd8cd9a77a25b51a0b0c401ecd691cd396bfc36c3849b0d3",
+    "src/devices/stackchan/cad-map.json": "62fdbc9a410396126216de8c38ab259bd99da361580a74beefdcf2e8e6b78f7a",
+    "src/devices/stackchan/cad-map-motion.json": "a2a45ed6e1e05008899fd8c277843be6cb0a8f093c0fabcb1ce4783a4219d17e",
+    "src/devices/stackchan/touch-led.js": "4aa634af4d85c6154efd03ecef3adde84749324bc88e4112c829bce1aec5be0d",
+    "src/devices/stackchan/geometry-data.js": "af43e3820a01f8c038f85b21621d6560bb172df55ab53d04361f2135f70d51ae",
+    "src/devices/stackchan/geometry-data-motion.js": "938358b1fddc1a9defc59e1a299c7f2ad2be6db41fbc4eecb3ab18a63747e195",
+    "src/devices/stackchan/artwork/side.png": "1ddee7a66b1c6bbe9385013b49f07c3176914b23e2d52cbe3d5972b50e72cd17",
+    "src/devices/stackchan/artwork/bottom.png": "0deafe45a2d1b4d7ee704e91386bad17e388fec103cbb5db0294f3745fac0a29",
+    "src/devices/stackchan/artwork/certification.png": "a3ac70830eed4e5a018889519b67ee7d8c48b231de546c9b41fb38d6fc544635"
+  },
+  "limits": [
+    "Browser samples are a few selected poses, not all95 CPU combinations or all201 models.",
+    "Seven-wire ring endpoints and fixed/moving ownership retain the earlier CPU evidence; these screenshots do not individually measure every wire endpoint or contact.",
+    "Known seven servo-to-shell packaging intersection pairs remain unresolved. Visible operation is not a physical collision, manufacturing, firmware or hardware acceptance result."
+  ],
+  "remaining": "Need trustworthy local production mounting/seat evidence to correct actual servo package intersections, then repeat affected checks and visible scenes. No new products authorized.",
+  "unresolvedAudit": {
+    "mountDiagnosticStatus": "mount-unresolved",
+    "strictExitCode": 2,
+    "sourceHoleToEarCorrespondence": "Assumed from the matching two-hole spacing and nearby Y/Z axes; not established as the actual production fixing scheme",
+    "doesNotReplaceExistingSevenPairContainmentEvidence": true
+  }
+}

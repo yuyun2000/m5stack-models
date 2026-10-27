@@ -36,11 +36,14 @@ node scripts/check-stackchan-servo-mount.mjs --strict
 
 同日新发现的[官方预售爆炸图](../research/stackchan-motion-contract/exploded-view-followup.md)已与原生零件轮廓对照：它澄清了 U 件、长板、小片及独立圆环的身份，但未提供量产止挡或耳部紧固尺寸，不能直接用于改位。独立五方向包含复核仍得到一致的七组实体穿插；当前未闭合状态保持。
 
+同日补齐当前生产页的[StackChan 可见动作记录](../../artifacts/stackchan-browser-dynamics-2026-10-27/checks.json)：实际 UI 操作覆盖 pitch 0°/45°/90°、pitch 45° 下 yaw 90°、yaw 2rpm 与头部 port-c 所接 Fan 240rpm 同时转动、停止回零及断开/重连。头部连接器、四芯 Grove 线和 Fan 随接口改变姿态；中立背视可见开放结构与独立板件，控制台无 error。最终停在 pitch35°/yaw30°、Fan 已接且转速为0的展示姿态。截图只证明所列场景的可见效果，七线端点精度及固定件归属仍引用此前 CPU 检查；不解除实体包装冲突，也不提升 `verified`。
+
 ## 继续工作的条件
 
 - [x] 补齐主机动态与宿主连接的当前目录覆盖。
 - [x] 修正Grove接口文档中的过度泛化，保留旧检查点。
 - [x] 将StackChan已通过的关节/按键/接线与未通过的包装分别量化。
+- [x] 通过实际生产网页补充StackChan现状的关节、头部Grove连接、风扇与停止/拆接画面。
 - [ ] 依据可信局部装配关系修复StackChan耳座/输出连接与实际穿插，再运行当前诊断和受影响运动检查。
 - [ ] 对发生外观改变的实际网页进行必要渲染检查；CPU检查不替代画面。
 
