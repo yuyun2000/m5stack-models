@@ -2,6 +2,7 @@
 import {Button} from '../../core/index.js';
 import {THREE,FACE} from './geometry.js';
 import {spec} from './dimensions.js';
+import {weightedInputHit} from '../../modeling/weighted-input.js';
 export class NativeButton extends Button{
  constructor(kind,shell,followers=[]){
   const main=kind==='button',target=new THREE.Mesh(new THREE.PlaneGeometry(main?10.8:3.5,main?9.7:2.7),new THREE.MeshBasicMaterial({transparent:true,opacity:0,depthWrite:false}));target.name='C008 '+kind+' actual cap input target';
@@ -13,6 +14,7 @@ export class NativeButton extends Button{
    this.weights[i]=t*t*(3-2*t);this.slopes[i]=6*t*(1-t)/span;
   }
   this.meta.deformedNativeVertices=this.weights.filter(w=>w>0).length;
+  this.hit(shell,intersection=>weightedInputHit(this,shell,intersection));
  }
  update(dt){const changed=super.update(dt),depth=this.getActuationState().depthMm;if(depth===this.lastDepth)return changed;const p=this.shell.geometry.attributes.position,n=this.shell.geometry.attributes.normal;
   for(let i=0;i<this.weights.length;i++){if(!this.weights[i])continue;const k=i*3;let x=this.rest[k],y=this.rest[k+1],z=this.rest[k+2],nx=this.norm[k],ny=this.norm[k+1],nz=this.norm[k+2];if(depth){if(this.main){z-=depth*this.weights[i];ny+=depth*this.slopes[i]*nz;}else{x+=depth*this.weights[i];nz-=depth*this.slopes[i]*nx;}const length=Math.hypot(nx,ny,nz);nx/=length;ny/=length;nz/=length;}p.setXYZ(i,x,y,z);n.setXYZ(i,nx,ny,nz);}

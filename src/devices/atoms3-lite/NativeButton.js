@@ -1,6 +1,7 @@
 // MIT. C124 native U-tongues deform locally. Original face/index/attribute arrays are never partitioned.
 import {Button} from '../../core/index.js';
 import {THREE,FACE} from './geometry.js';
+import {weightedInputHit} from '../../modeling/weighted-input.js';
 const smooth=t=>{t=THREE.MathUtils.clamp(t,0,1);return t*t*(3-2*t);};
 // The own C124 side U-slot opens upward; its continuous root is the -3.05357mm ledge.
 // A linear hinge field keeps each coarse native inner/outer cross-section together.
@@ -14,6 +15,7 @@ export class NativeButton extends Button{
   const shift=shell.position;
   for(let i=0;i<this.weights.length;i++){const x=this.rest[i*3]+shift.x,y=this.rest[i*3+1]+shift.y,z=this.rest[i*3+2]+shift.z;let w=0;if(id==='button'&&Math.abs(x)<5.8&&y>-4.8&&y<7.3&&z>3.25)w=smooth((7.3-y)/11.7);if(id==='reset'&&x<-9.35&&x>-12.01&&y>2.15&&y<6.85&&z>resetRoot&&z<=resetTip)w=resetWeight(z);this.weights[i]=w;}
   this.meta.movingNativeVertices=this.weights.filter(w=>w>0).length;
+  this.hit(shell,intersection=>weightedInputHit(this,shell,intersection));
  }
  follow(object,axis,weight){this.followers.push({object,axis:new THREE.Vector3(...axis),rest:object.position.clone(),weight});return object;}
  weightAt(y,z){return this.id==='button'?smooth((7.3-y)/11.7):resetWeight(z);}

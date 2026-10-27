@@ -364,6 +364,8 @@ demo 的异步 Unit 加载在切换模型、接口或 Unit 后会作废旧请求
 
 ## 修改后验证
 
+输入拾取使用 `npm run check:input-picking`：`Component.hit(mesh, filter)`允许真实共享壳面的局部命中筛选；拒绝区域仍遮挡后方，组件销毁会释放自身在外部物件上的登记。具体绑定、原生权重与兼容边界见[点击修订](NATIVE-INPUT-PICKING-AMENDMENT-2026-10-27.md)。外部运行时继续按原组件ID处理输入。
+
 从仓库根目录按改动运行 `npm run check:demo`、`npm run check:controllers`、`npm run check:connections`；构建或在线资源改变时再运行 `npm run build`、`./manage.sh status`。主机专项将当前目录的全部主机/配置逐项登记，检查真实帽的partial/full/回位、稳定档位、固定实体与多来源取消；连接专项检查实际主机Grove口、CoreS3 DinBase及StackChan组合姿态中的插头坐标与渲染线管表面轨迹。两入口默认只输出当前结果，不改历史报告。Unit特有的弯曲、杠杆、摇杆、关节与特殊转接仍按对应产品指南检查，不能用主机单一ENV III目标覆盖来代表全部Unit。
 
 旧 `npm run check` 和 `check-grove-cable.mjs` 包含历史 `sensor`/标准四芯路径假设及旧报告写入，尚未迁移到当前目录，不作为当前全库验收入口。各专项的覆盖数以当前实际输出为准，历史报告只支持其保存时点的结论。

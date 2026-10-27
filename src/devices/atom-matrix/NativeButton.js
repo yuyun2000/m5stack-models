@@ -2,6 +2,7 @@
 import {Button} from '../../core/index.js';
 import {THREE,FACE} from './geometry.js';
 import {spec} from './dimensions.js';
+import {weightedInputHit} from '../../modeling/weighted-input.js';
 export class NativeReset extends Button{
  constructor(shell){
   const hit=new THREE.Mesh(new THREE.PlaneGeometry(3.9,3.3),new THREE.MeshBasicMaterial({transparent:true,opacity:0,depthWrite:false}));hit.name='Original Matrix reset-only input proxy;native tongue is physical';
@@ -16,6 +17,7 @@ export class NativeReset extends Button{
   const seed=Array.from(source.array).findIndex(face=>face===2701),seen=new Set(),queue=[keys[seed]],span=spec.reset.sourceFreeZ-spec.reset.sourceHingeZ;
   for(let j=0;j<queue.length;j++){const key=queue[j];if(seen.has(key))continue;seen.add(key);const node=nodes.get(key),t=THREE.MathUtils.clamp((node.z-spec.reset.sourceHingeZ)/span,0,1);for(const i of node.indices){this.weights[i]=t*t*(3-2*t);this.slopes[i]=6*t*(1-t)/span;}queue.push(...node.near);}
   this.meta.movingNativeVertices=this.weights.filter(x=>x>0).length;this.meta.connectedTongueUniqueVertices=seen.size;this.meta.fixedRootRawZ=spec.reset.sourceHingeZ;
+  this.hit(shell,intersection=>weightedInputHit(this,shell,intersection));
  }
  bindFollower(follower){
   // Interpolate the actual own inner-wall source triangle at the follower height.

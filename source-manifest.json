@@ -55949,7 +55949,7 @@
       "runtimeFiles": [
         {
           "path": "src/devices/atom-lite/NativeButton.js",
-          "sha256": "0e343bd7e0891679b08476232c190dfa2a18cc0b7843072713af48df4458cc98"
+          "sha256": "291e7284b8bd391f21c45ed826c4869bfbf7d2f1062d3af5e724438981139a6f"
         },
         {
           "path": "src/devices/atom-lite/artwork/bottom.png",
@@ -55983,7 +55983,36 @@
           "path": "src/devices/atom-lite/stickers.js",
           "sha256": "26a4ca1cc583f93703adb0fab9a338c8e4c93b9b39375d32e2b1216a5be4415b"
         }
-      ]
+      ],
+      "inputPickingAmendment": {
+        "date": "2026-10-27",
+        "scope": "Actual moving native surface input routing;no geometry,motion,source CAD or artwork change",
+        "runtimeBefore": {
+          "path": "src/devices/atom-lite/NativeButton.js",
+          "sha256": "0e343bd7e0891679b08476232c190dfa2a18cc0b7843072713af48df4458cc98"
+        },
+        "runtimeAfter": {
+          "path": "src/devices/atom-lite/NativeButton.js",
+          "sha256": "291e7284b8bd391f21c45ed826c4869bfbf7d2f1062d3af5e724438981139a6f"
+        },
+        "sharedRuntimeFiles": [
+          {
+            "path": "src/core/Component.js",
+            "sha256": "53594a8a84af020abb64d0a4549f4fced3a0595e0208c31948e78f6cceed3bc5"
+          },
+          {
+            "path": "src/core/DeviceViewer.js",
+            "sha256": "caeca5ec44edce9e0da9b388127243f047e3e74ac8bfdd76bcac3b30b63d6530"
+          },
+          {
+            "path": "src/modeling/weighted-input.js",
+            "sha256": "6a46f0d8bc5764ee2152939d656b362b8d71510dd85032ce5c9a85b2d0ddfbf2"
+          }
+        ],
+        "guide": "docs/NATIVE-INPUT-PICKING-AMENDMENT-2026-10-27.md",
+        "checks": "artifacts/native-input-picking-2026-10-27/checks.json",
+        "historicalSmokeAndFreezeRetained": true
+      }
     },
     {
       "id": "atom-matrix",
@@ -55997,7 +56026,7 @@
       "runtimeFiles": [
         {
           "path": "src/devices/atom-matrix/NativeButton.js",
-          "sha256": "3306e62bf6eb02ff7c20f77d0dd1ffebb20e7bd7653f8f35d3eaebbedb0f52ca"
+          "sha256": "2220a6e7e4328281f0be2c8cc2026580396483754a4edb4c316b3b812743ef12"
         },
         {
           "path": "src/devices/atom-matrix/artwork/compliance.png",
@@ -57883,6 +57912,35 @@
         "appliedToOutputs": true,
         "receipt": "docs/research/atom-matrix/reset-amendment.json",
         "sha256": "dcdadb8d5ae806d4e97411ed66be758f6d71c02bdb1534daf7bdb072dec350b0"
+      },
+      "inputPickingAmendment": {
+        "date": "2026-10-27",
+        "scope": "Actual moving native surface input routing;no geometry,motion,source CAD or artwork change",
+        "runtimeBefore": {
+          "path": "src/devices/atom-matrix/NativeButton.js",
+          "sha256": "3306e62bf6eb02ff7c20f77d0dd1ffebb20e7bd7653f8f35d3eaebbedb0f52ca"
+        },
+        "runtimeAfter": {
+          "path": "src/devices/atom-matrix/NativeButton.js",
+          "sha256": "2220a6e7e4328281f0be2c8cc2026580396483754a4edb4c316b3b812743ef12"
+        },
+        "sharedRuntimeFiles": [
+          {
+            "path": "src/core/Component.js",
+            "sha256": "53594a8a84af020abb64d0a4549f4fced3a0595e0208c31948e78f6cceed3bc5"
+          },
+          {
+            "path": "src/core/DeviceViewer.js",
+            "sha256": "caeca5ec44edce9e0da9b388127243f047e3e74ac8bfdd76bcac3b30b63d6530"
+          },
+          {
+            "path": "src/modeling/weighted-input.js",
+            "sha256": "6a46f0d8bc5764ee2152939d656b362b8d71510dd85032ce5c9a85b2d0ddfbf2"
+          }
+        ],
+        "guide": "docs/NATIVE-INPUT-PICKING-AMENDMENT-2026-10-27.md",
+        "checks": "artifacts/native-input-picking-2026-10-27/checks.json",
+        "historicalSmokeAndFreezeRetained": true
       }
     },
     {
@@ -59112,7 +59170,7 @@
         },
         {
           "path": "src/devices/atoms3-lite/NativeButton.js",
-          "sha256": "4e36bdf5e93ba90f660bfc0ded2ee8d86783f4e7f218d35dfc907285cf42eea8"
+          "sha256": "34dc1ee9323b1eb5d4a755c89c89cd6e74a814e0427262fcabf71cbdabb0ddfb"
         },
         {
           "path": "src/devices/atoms3-lite/artwork/bottom.png",
@@ -59175,6 +59233,35 @@
         "completeText": "src/devices/atoms3-lite/LICENSE-M5-Hardware.txt",
         "sha256": "44611d917bece311f5c8eeffce83d8bf9e9ca3f815d262f694ff4a7996af50ea",
         "gitBlob": "2bd55bead006ae4d137f62e95c3de4645cb4bb18"
+      },
+      "inputPickingAmendment": {
+        "date": "2026-10-27",
+        "scope": "Actual moving native surface input routing;no geometry,motion,source CAD or artwork change",
+        "runtimeBefore": {
+          "path": "src/devices/atoms3-lite/NativeButton.js",
+          "sha256": "4e36bdf5e93ba90f660bfc0ded2ee8d86783f4e7f218d35dfc907285cf42eea8"
+        },
+        "runtimeAfter": {
+          "path": "src/devices/atoms3-lite/NativeButton.js",
+          "sha256": "34dc1ee9323b1eb5d4a755c89c89cd6e74a814e0427262fcabf71cbdabb0ddfb"
+        },
+        "sharedRuntimeFiles": [
+          {
+            "path": "src/core/Component.js",
+            "sha256": "53594a8a84af020abb64d0a4549f4fced3a0595e0208c31948e78f6cceed3bc5"
+          },
+          {
+            "path": "src/core/DeviceViewer.js",
+            "sha256": "caeca5ec44edce9e0da9b388127243f047e3e74ac8bfdd76bcac3b30b63d6530"
+          },
+          {
+            "path": "src/modeling/weighted-input.js",
+            "sha256": "6a46f0d8bc5764ee2152939d656b362b8d71510dd85032ce5c9a85b2d0ddfbf2"
+          }
+        ],
+        "guide": "docs/NATIVE-INPUT-PICKING-AMENDMENT-2026-10-27.md",
+        "checks": "artifacts/native-input-picking-2026-10-27/checks.json",
+        "historicalSmokeAndFreezeRetained": true
       }
     }
   ],
@@ -59216,6 +59303,6 @@
       }
     ]
   },
-  "updatedAt": "2026-10-27T01:10:34.874Z",
+  "updatedAt": "2026-10-27T02:34:24.295514+00:00",
   "syncedAt": "2026-10-25T14:15:24.398Z"
 }

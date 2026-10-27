@@ -29,11 +29,14 @@ npm run build
 npm run check:demo
 npm run check:controllers
 npm run check:connections
+npm run check:input-picking
 ```
 
 `check:demo` 检查产品详情、选择失败后的恢复与缓存、DynamicsPanel 异步连接/控制生命周期和 framebuffer 路由清理。选择、连接和帧缓冲检查使用 DOM/viewer/import 或 renderer fixture，不等价于真实浏览器视觉检查或全部产品验收。构建成功也不替代浏览器或实物证据。
 
 `check:controllers` 将当前目录中的主机和配置与显式按键专项逐项核对，检查真实实体按放、固定件及多来源取消；`check:connections` 核当前全部主机配置的 Grove 端口、实际插头配合与线管表面。两者默认只输出结果，不改写历史报告。当前动态范围与未闭合项见[已有模型动态检查](docs/plans/existing-dynamics-audit.md)。
+
+`check:input-picking` 检查真实拾取、原生弹舌活动面与固定邻区的路由和释放；修复范围见[Atom原生面点击修订](docs/NATIVE-INPUT-PICKING-AMENDMENT-2026-10-27.md)。
 
 旧 `npm run check` 仍包含 `sensor`、标准四芯路径等历史目录假设，并会写入旧报告；它尚未迁移到当前目录，不能作为201款总验收入口。产品几何/API按对应指南选择当前专项，保留旧报告为历史快照。
 

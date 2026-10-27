@@ -1,0 +1,513 @@
+{
+  "date": "2026-10-27",
+  "baselineCommit": "8324228c8fd8702da32623ebd62af4b3bb4d0cbd",
+  "status": "pass-with-existing-limitations",
+  "catalog": {
+    "total": 201,
+    "controllers": 17,
+    "units": 184,
+    "verified": 0,
+    "unchanged": true
+  },
+  "affectedControls": {
+    "atom-lite": [
+      "button",
+      "reset"
+    ],
+    "atom-matrix": [
+      "reset"
+    ],
+    "atoms3-lite": [
+      "button",
+      "reset"
+    ]
+  },
+  "before": {
+    "regionChecks": 256,
+    "regionFailures": 132,
+    "browser": {
+      "status": "bug-reproduced",
+      "model": "atom-lite",
+      "view": "front",
+      "viewport": [
+        847,
+        765
+      ],
+      "edgeClickCssPx": [
+        606,
+        443
+      ],
+      "edgeInputText": "等待操作…",
+      "centreClickCssPx": [
+        534,
+        443
+      ],
+      "centreActions": [
+        "down",
+        "up",
+        "click"
+      ],
+      "source": "Actual native mouse click in visible production browser,unchanged published runtime;not synthetic dispatch"
+    }
+  },
+  "after": {
+    "regionChecks": 280,
+    "activeRegionChecks": 168,
+    "fixedRegionChecks": 88,
+    "removedResetChecks": 24,
+    "failures": 0,
+    "pointerRoutes": 42,
+    "foreignInkFaceIndicesRejected": true
+  },
+  "nativeStateFingerprints": {
+    "atom-lite": {
+      "rest": {
+        "allAttributesAndIndexUnchanged": true,
+        "fingerprintSha256": "85a7848878789071f39d1a31b274e931754753060c4091a017d3fb75c5e5d830"
+      },
+      "partial": {
+        "allAttributesAndIndexUnchanged": true,
+        "fingerprintSha256": "6eebc784eff78afb28dc4e6aacdb0993240c413a6a9418a4e9549a3496c2ea87"
+      },
+      "full": {
+        "allAttributesAndIndexUnchanged": true,
+        "fingerprintSha256": "9e629d2701222c0b8d2ec73fd74c76a59e0a2d053f232495a7d62646f866f2d8"
+      },
+      "returned-rest": {
+        "allAttributesAndIndexUnchanged": true,
+        "fingerprintSha256": "85a7848878789071f39d1a31b274e931754753060c4091a017d3fb75c5e5d830"
+      }
+    },
+    "atom-matrix": {
+      "rest": {
+        "allAttributesAndIndexUnchanged": true,
+        "fingerprintSha256": "4080370914133c1d994d6d9cfb751855b02341229cfc83e331161fad5dce6acc"
+      },
+      "partial": {
+        "allAttributesAndIndexUnchanged": true,
+        "fingerprintSha256": "97bd74cb3ae6330a75fa66576f3ffb6eb7b66caf3c00611bd6c2978a99bc7e6a"
+      },
+      "full": {
+        "allAttributesAndIndexUnchanged": true,
+        "fingerprintSha256": "d5c3087238e0687e44499916d97383b03cc35b5aeea1f67ea212f493c507af16"
+      },
+      "returned-rest": {
+        "allAttributesAndIndexUnchanged": true,
+        "fingerprintSha256": "4080370914133c1d994d6d9cfb751855b02341229cfc83e331161fad5dce6acc"
+      }
+    },
+    "atoms3-lite": {
+      "rest": {
+        "allAttributesAndIndexUnchanged": true,
+        "fingerprintSha256": "aea5e2fda44983a8cb46525fcd89dc4b624a1726c42da5449a60257fe233f7d1"
+      },
+      "partial": {
+        "allAttributesAndIndexUnchanged": true,
+        "fingerprintSha256": "b753fd6a0c6bed5c1a760e9361be7ec9edbc1b78e87b708e8c92d39119812e38"
+      },
+      "full": {
+        "allAttributesAndIndexUnchanged": true,
+        "fingerprintSha256": "aa2f6fd615ba50a50badd8548d51ccec73e17c355028023eb250114f74127a0c"
+      },
+      "returned-rest": {
+        "allAttributesAndIndexUnchanged": true,
+        "fingerprintSha256": "aea5e2fda44983a8cb46525fcd89dc4b624a1726c42da5449a60257fe233f7d1"
+      }
+    }
+  },
+  "runtimeFiles": [
+    {
+      "path": "src/core/Component.js",
+      "sha256": "53594a8a84af020abb64d0a4549f4fced3a0595e0208c31948e78f6cceed3bc5"
+    },
+    {
+      "path": "src/core/DeviceViewer.js",
+      "sha256": "caeca5ec44edce9e0da9b388127243f047e3e74ac8bfdd76bcac3b30b63d6530"
+    },
+    {
+      "path": "src/modeling/weighted-input.js",
+      "sha256": "6a46f0d8bc5764ee2152939d656b362b8d71510dd85032ce5c9a85b2d0ddfbf2"
+    },
+    {
+      "path": "src/devices/atom-lite/NativeButton.js",
+      "sha256": "291e7284b8bd391f21c45ed826c4869bfbf7d2f1062d3af5e724438981139a6f"
+    },
+    {
+      "path": "src/devices/atom-matrix/NativeButton.js",
+      "sha256": "2220a6e7e4328281f0be2c8cc2026580396483754a4edb4c316b3b812743ef12"
+    },
+    {
+      "path": "src/devices/atoms3-lite/NativeButton.js",
+      "sha256": "34dc1ee9323b1eb5d4a755c89c89cd6e74a814e0427262fcabf71cbdabb0ddfb"
+    }
+  ],
+  "automated": {
+    "public": {
+      "status": "pass",
+      "commands": [
+        "npm run check:input-picking",
+        "node scripts/check-viewer-lifecycle.mjs",
+        "npm run check:controllers",
+        "npm run check:demo",
+        "npm run build"
+      ],
+      "exitCodes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "logSha256": {
+        "picking": "c579b874cdea302966b38f71b735b6cf926e43fd80a1058f7e187c07a19ee249",
+        "viewer-lifecycle": "97e2e04e7b87db21698b78ec86ef274671a86cdb087dc369aa481fd2c91e84f6",
+        "controllers": "33a1fffd0cb128cc756f53fb1b7c85f5a915864c601f515369c8c698b87d7a6f",
+        "demo": "a50a421d899ba1b7a2ad0d73a41c0cfb30ac2d2b04443b6eb08972632850558c",
+        "build": "b5d74645f10127ba8e8c26b9b2c7cad70b0368e4f13ea5ab606ce965d2dcae62"
+      },
+      "hitFilters": {
+        "status": "pass",
+        "checks": [
+          "legacy unfiltered target uses the actual first ray intersection",
+          "predicate receives the real object/face/point and selects only its accepted region",
+          "rejected child and intermediate filters fall back to an accepting ancestor on the same intersection",
+          "a rejected visible shell still occludes a real button behind it",
+          "unfiltered ancestor fallback and re-registration retain legacy behavior",
+          "invalid registration is atomic; predicate errors propagate; legacy owner replacement ignores stale filters",
+          "removing an external-surface component clears its input binding while retaining the occluding physical shell",
+          "new owner registration survives old owner disposal and both component/Viewer unmount-reattach"
+        ],
+        "ownedResources": 10,
+        "scope": "Real Component.hit and DeviceViewer.pick with actual ray/triangle intersections; isolated DOM and no-GPU renderer boundary only, no browser pixel evidence"
+      },
+      "nativePicking": {
+        "status": "pass",
+        "controllers": 3,
+        "states": [
+          "rest",
+          "partial",
+          "full",
+          "returned-rest"
+        ],
+        "poses": [
+          "identity",
+          "rotated"
+        ],
+        "checks": 280,
+        "pointerRoutes": 42
+      },
+      "viewerLifecycle": {
+        "checks": [
+          "same Viewer mount idempotence",
+          "nested held key plus pointer cancels at old path before detach",
+          "unrelated host key and sibling pointer remain held",
+          "reuse after nested cancellation",
+          "window blur and hidden document cancel owned sources",
+          "external input source remains owned by its caller",
+          "cross Viewer transfer cancels old owned input and removes subscriptions",
+          "one update owner for continuous rpm",
+          "unmount pauses and remount resumes existing rpm",
+          "synchronous cancelled-up consumer can safely transfer or remount a device",
+          "third Viewer chosen during cancellation wins over the stale outer mount",
+          "cross host module transfer routes cancellation only through old host",
+          "disposing Viewer cannot be revived by cancelled-up and disposal is idempotent",
+          "actual CardKB AltLeft Sym keyboard stroke and exact release",
+          "standalone mapped Alt requires focused canvas and a real button",
+          "modifier chords and editable/unfocused targets preserve browser defaults",
+          "Alt hold cancels without click on blur or unmount",
+          "actual ray-picked slider follows captured pointer beyond cap and cancels on blur without springing back"
+        ],
+        "ownedResources": 20,
+        "rendererInstances": 10
+      },
+      "controllers": {
+        "controllers": 17,
+        "configurations": 18,
+        "controlsAcrossConfigurations": 153
+      },
+      "demo": {
+        "catalogRecords": 201,
+        "optionalLimitationsRecords": 31,
+        "selectionCases": [
+          "all-31-products-without-limitations-reach-ready",
+          "configuration-label-fallback",
+          "lazy-build-failure-visible-and-retry-creates-new-model",
+          "stale-import-error-cannot-overwrite-new-selection",
+          "successful-selection-cache-reuse"
+        ],
+        "framebufferCases": 7
+      },
+      "build": {
+        "status": "pass",
+        "warning": "Existing chunks larger than 500 kB remain; no build error"
+      }
+    },
+    "private": {
+      "status": "pass",
+      "commands": [
+        "npm run check:input-picking",
+        "node scripts/check-viewer-lifecycle.mjs",
+        "npm run check:controllers",
+        "npm run check:demo",
+        "npm run build"
+      ],
+      "exitCodes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "logSha256": {
+        "picking": "c579b874cdea302966b38f71b735b6cf926e43fd80a1058f7e187c07a19ee249",
+        "viewer-lifecycle": "20ecdf1d30d1feb8584041902dd5d087c8659a7e08a6a77187e3f0b8fb05c51b",
+        "controllers": "13c5faf78d08ae082735826862478e32ffbed2d4c53e6b761ecd6e48eb3514be",
+        "demo": "a50a421d899ba1b7a2ad0d73a41c0cfb30ac2d2b04443b6eb08972632850558c",
+        "build": "71bfbc874cc3dfd0b4935e5ff9d1f0b3db604dba46325ffc2c5fa12c3e3fee94"
+      },
+      "hitFilters": {
+        "status": "pass",
+        "checks": [
+          "legacy unfiltered target uses the actual first ray intersection",
+          "predicate receives the real object/face/point and selects only its accepted region",
+          "rejected child and intermediate filters fall back to an accepting ancestor on the same intersection",
+          "a rejected visible shell still occludes a real button behind it",
+          "unfiltered ancestor fallback and re-registration retain legacy behavior",
+          "invalid registration is atomic; predicate errors propagate; legacy owner replacement ignores stale filters",
+          "removing an external-surface component clears its input binding while retaining the occluding physical shell",
+          "new owner registration survives old owner disposal and both component/Viewer unmount-reattach"
+        ],
+        "ownedResources": 10,
+        "scope": "Real Component.hit and DeviceViewer.pick with actual ray/triangle intersections; isolated DOM and no-GPU renderer boundary only, no browser pixel evidence"
+      },
+      "nativePicking": {
+        "status": "pass",
+        "controllers": 3,
+        "states": [
+          "rest",
+          "partial",
+          "full",
+          "returned-rest"
+        ],
+        "poses": [
+          "identity",
+          "rotated"
+        ],
+        "checks": 280,
+        "pointerRoutes": 42
+      },
+      "viewerLifecycle": {
+        "checks": [
+          "same Viewer mount idempotence",
+          "nested held key plus pointer cancels at old path before detach",
+          "unrelated host key and sibling pointer remain held",
+          "reuse after nested cancellation",
+          "window blur and hidden document cancel owned sources",
+          "external input source remains owned by its caller",
+          "cross Viewer transfer cancels old owned input and removes subscriptions",
+          "one update owner for continuous rpm",
+          "unmount pauses and remount resumes existing rpm",
+          "synchronous cancelled-up consumer can safely transfer or remount a device",
+          "third Viewer chosen during cancellation wins over the stale outer mount",
+          "cross host module transfer routes cancellation only through old host",
+          "disposing Viewer cannot be revived by cancelled-up and disposal is idempotent",
+          "actual CardKB AltLeft Sym keyboard stroke and exact release",
+          "standalone mapped Alt requires focused canvas and a real button",
+          "modifier chords and editable/unfocused targets preserve browser defaults",
+          "Alt hold cancels without click on blur or unmount",
+          "actual ray-picked slider follows captured pointer beyond cap and cancels on blur without springing back"
+        ],
+        "ownedResources": 20,
+        "rendererInstances": 10
+      },
+      "controllers": {
+        "controllers": 17,
+        "configurations": 18,
+        "controlsAcrossConfigurations": 153
+      },
+      "demo": {
+        "catalogRecords": 201,
+        "optionalLimitationsRecords": 31,
+        "selectionCases": [
+          "all-31-products-without-limitations-reach-ready",
+          "configuration-label-fallback",
+          "lazy-build-failure-visible-and-retry-creates-new-model",
+          "stale-import-error-cannot-overwrite-new-selection",
+          "successful-selection-cache-reuse"
+        ],
+        "framebufferCases": 7
+      },
+      "build": {
+        "status": "pass",
+        "warning": "Existing chunks larger than 500 kB remain; no build error"
+      }
+    }
+  },
+  "browser": {
+    "surface": "Visible production preview, actual native mouse and UI controls; no synthetic DOM input",
+    "viewportCssPx": [
+      847,
+      765
+    ],
+    "fixedNeighbourNoButtonInput": true,
+    "edgeAndResetClicks": [
+      {
+        "model": "atom-lite",
+        "view": "front",
+        "point": [
+          606,
+          443
+        ],
+        "input": [
+          "down",
+          "up",
+          "click"
+        ]
+      },
+      {
+        "model": "atom-lite",
+        "view": "left",
+        "point": [
+          548,
+          402
+        ],
+        "target": "reset",
+        "input": [
+          "down",
+          "up",
+          "click"
+        ]
+      },
+      {
+        "model": "atoms3-lite",
+        "view": "front",
+        "point": [
+          606,
+          455
+        ],
+        "input": [
+          "down",
+          "up",
+          "click"
+        ]
+      },
+      {
+        "model": "atoms3-lite",
+        "view": "left",
+        "point": [
+          577,
+          408
+        ],
+        "target": "reset",
+        "input": [
+          "down",
+          "up",
+          "click"
+        ]
+      },
+      {
+        "model": "atom-matrix",
+        "view": "left",
+        "point": [
+          548,
+          408
+        ],
+        "target": "reset",
+        "input": [
+          "down",
+          "up",
+          "click"
+        ]
+      }
+    ],
+    "atomLiteHoldRelease": {
+      "pressedMm": 0.18,
+      "releasedMm": 0
+    },
+    "groveFan": {
+      "host": "atom-matrix",
+      "unit": "fan",
+      "wiresAndTwoPlugsVisible": true,
+      "runningRpm": 240,
+      "successiveAnglesDeg": [
+        49571.9,
+        49643.6,
+        49655.8
+      ],
+      "stopSettledAngleDeg": 0,
+      "stopRpm": 0,
+      "detachStatus": "尚未连接",
+      "reattachStatus": "grove → Fan",
+      "reattachRpm": 0
+    },
+    "consoleErrors": []
+  },
+  "screenshots": [
+    {
+      "path": "grove-fan-running.jpg",
+      "sha256": "d6278ac9f6f18d0c5544c1f59534d55a9a3562269230f7b2ce43e0dc1044ea4b",
+      "format": "JPEG",
+      "exifOrXmp": false
+    },
+    {
+      "path": "grove-fan-running-frame2.jpg",
+      "sha256": "def1f6302f2bdc1300320f23c5ee9c8bff791969962fd3f4f83bc2ead4c6380e",
+      "format": "JPEG",
+      "exifOrXmp": false
+    },
+    {
+      "path": "grove-fan-stopped.jpg",
+      "sha256": "8cf804b56fbb59abc361fb6d3c341b93c009fbbe004ab4c5748bd7fe3786863b",
+      "format": "JPEG",
+      "exifOrXmp": false
+    }
+  ],
+  "preserved": {
+    "allOther198SourceObjects": true,
+    "threeNativeImplementationsOnlyAddInputBinding": true,
+    "sourceCadGeometryWeightsTravelAndArtwork": true,
+    "historicalSmokeAndFreeze": true,
+    "productStages": true
+  },
+  "limitations": [
+    "CPU tests isolate GPU and DOM boundaries; browser evidence covers only the listed scenes, not every product face.",
+    "StackChan servo packaging/mount relationship remains unresolved; see docs/plans/existing-dynamics-audit.md.",
+    "No manufacturing, electrical, firmware or physical-device acceptance."
+  ],
+  "productionPreview": {
+    "status": "pass",
+    "servedAssetsEqualCurrentPublicDist": [
+      {
+        "path": "index.html",
+        "bytes": 3415,
+        "sha256": "31ecd431f5729aa458c1f1299fed4602071ec2ade2b77b569b0ed5503259196e"
+      },
+      {
+        "path": "data/catalog.json",
+        "bytes": 1156786,
+        "sha256": "ca862b6e37024130ddc5f5816029a57f6e50159012679154aaee91694401d41e"
+      },
+      {
+        "path": "assets/index-DmEsXSrS.js",
+        "bytes": 678848,
+        "sha256": "d0b3a08e5e7f00a865b71350c343ab15652e5b89cc5f07e46b533cfb60febe6f"
+      },
+      {
+        "path": "assets/atom-lite-DGT8pOzf.js",
+        "bytes": 998678,
+        "sha256": "4fd6601cdc393ce12e240eb17d0296cc2645e1aeda91a081fc1269565c00321e"
+      },
+      {
+        "path": "assets/atom-matrix-gOFHKOH2.js",
+        "bytes": 394524,
+        "sha256": "d536ace32207e825345c16f446557dc5a8bcda7dbe9b5e549c36f701a13f4333"
+      },
+      {
+        "path": "assets/atoms3-lite-Bhz4ChXf.js",
+        "bytes": 414131,
+        "sha256": "89c8886e5a2c3393146dff0c732caa949f68782a94e56c5c11f4d0f621e734c5"
+      }
+    ],
+    "serviceRestarted": false
+  }
+}
