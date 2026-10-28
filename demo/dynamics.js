@@ -350,6 +350,10 @@ export class DynamicsPanel {
       const status = node('output', '', 'joint-status');
       this.readouts.push(() => {
         const s = joint.getState();
+        for (const input of group.querySelectorAll('input')) {
+          if (input.id.endsWith('-angle')) { input.value = s.angleDeg; input.nextElementSibling.textContent = `${s.angleDeg.toFixed(1)}°`; }
+          if (input.id.endsWith('-rpm')) { input.value = s.rpm; input.nextElementSibling.textContent = `${s.rpm} rpm`; }
+        }
         status.textContent = `${s.angleDeg.toFixed(1)}°${s.continuous ? ` / ${s.rpm} rpm` : ''}`;
         status.dataset.state = JSON.stringify(s);
       });

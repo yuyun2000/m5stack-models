@@ -1,0 +1,352 @@
+{
+  "id": "atom-echo",
+  "sku": "C008-C",
+  "name": "Atom Voice (Atom Echo)",
+  "checkedAt": "2026-10-28",
+  "officialDocs": "https://docs.m5stack.com/en/atom/Atom_Voice",
+  "constructionRoute": "Own exact-SKU immutable complete native shell plus supported original internal/audio/connector reconstruction and approved flat PNG labels",
+  "native": {
+    "repository": "https://github.com/m5stack/M5_Hardware",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "path": "Products/C008-C_Atom_Voice/Structures/Atom_Voice.stl",
+    "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/C008-C_Atom_Voice/Structures/Atom_Voice.stl",
+    "blob": "e3456fc357a7f59bed988b3220b3266c72bb42f1",
+    "sha256": "3db4d3fbf54121f74eaacb2f7c85cc4611a98f39a55927f07ed625b4b5e2c51b",
+    "rawTriangles": 11284,
+    "retainedTriangles": 5642,
+    "duplicatePreviewTriangles": 5642,
+    "scale": 1,
+    "frameTranslationZ": -8.4,
+    "license": "MIT;M5_Hardware license preserved in THIRD_PARTY_NOTICES.md",
+    "sharedCad": "C008-C and C126-ECHO own official files are byte-identical;this does not establish electronics equivalence."
+  },
+  "nativeLedger": "source-face-ledger.json",
+  "duplicatePreviewLedger": "duplicate-preview-map.json",
+  "sharedCadBoundary": "The C008-C and C126-ECHO official product files share the same blob;electronics/pins/color/audio/printing are independently sourced per exact SKU.",
+  "referenceSources": [
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/676/C008-C_01.jpg",
+      "sha256": "ea500b8be5327a8fef38f829f9556e84529dcc27d5a633bfb97ba491ffaa2a5d",
+      "redistributed": false
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/676/C008-C_02.webp",
+      "sha256": "44ef26abb9e2e547ade913020ca5a0ec8d4bf6637361f1a780b2a628e4f2d95d",
+      "redistributed": false
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/676/C008-C_03.webp",
+      "sha256": "0d0747ba3bd93e6705a9f6ad91b0bf652d73e41fe0c36e65333201545a06016a",
+      "redistributed": false
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/676/C008-C_04.webp",
+      "sha256": "4707799c21e076b83b4da7d560c103b980bfe22da71669f6db6fa8a62b06b5a8",
+      "redistributed": false
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/676/C008-C_05.webp",
+      "sha256": "47771e386fd3d59a8f3a6e03ac40124db9b1cc57a700e4035dda906838b761e8",
+      "redistributed": false
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/676/C008-C_06.webp",
+      "sha256": "8be52a2a18235dffb0b3c6390a4f0034344bd0842fbf2deeac5a21b01824c498",
+      "redistributed": false
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/676/C008-C_07.webp",
+      "sha256": "7f460035df4afe824c4763c30b48431c570b7f9176a7cfd3391ee7dae38b071b",
+      "redistributed": false
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/676/C008-C.webp",
+      "sha256": "0ad0c6e88a75cf956c40553a46c8ab9153c3ac37a550460f931fa51cc2839c5e",
+      "redistributed": false
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/atom/atomecho/atomecho_sch_01.webp",
+      "sha256": "8b8748788a42bdc25777f83e7e7b1f47b91cbb9e6a1944c2f5fdf97a61b1ddd7",
+      "redistributed": false
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/atom/atomecho/module%20size.jpg",
+      "sha256": "7c0eaa4f33fd1b5718a41c1e1e3f442e9b8a1250ce9061c3288c0a38472985a7",
+      "redistributed": false
+    }
+  ],
+  "publicAPI": {
+    "spec": {
+      "id": "atom-echo",
+      "name": "Atom Voice (Atom Echo)",
+      "sku": "C008-C",
+      "size": [
+        24,
+        24,
+        16.8
+      ],
+      "frame": "+X right,+Y top,+Z front",
+      "soc": "ESP32-PICO-D4",
+      "flashMB": 4,
+      "psramMB": 0,
+      "audio": {
+        "amplifier": "NS4168",
+        "microphone": "SPM1423",
+        "speaker": "8ohm 0.5W",
+        "scope": "Passive physical package and true sound passage only;no audio recording/playback/firmware emulation"
+      },
+      "rgb": true,
+      "button": {
+        "position": [
+          0,
+          4,
+          8.4
+        ],
+        "travelMm": 0.14,
+        "gpio": 39,
+        "sourceHingeY": 10,
+        "sourceFreeY": -1
+      },
+      "reset": {
+        "position": [
+          -11,
+          4.5,
+          -4.2
+        ],
+        "travelMm": 0.14,
+        "sourceHingeZ": 1.7,
+        "sourceFreeZ": 9.507142066955566
+      },
+      "irGpio": 12,
+      "grove": {
+        "position": [
+          0,
+          -12,
+          -5.5
+        ],
+        "pins": [
+          "GND",
+          "5V",
+          "G26",
+          "G32"
+        ]
+      },
+      "usb": {
+        "position": [
+          0,
+          -12,
+          -0.65
+        ]
+      },
+      "headers": [
+        {
+          "id": "ext-5p",
+          "family": "m5.atom.ext-5p",
+          "x": 7.57,
+          "y": -2.635,
+          "count": 5,
+          "pins": [
+            "G33",
+            "G23",
+            "G19",
+            "G22",
+            "3V3"
+          ]
+        },
+        {
+          "id": "ext-4p",
+          "family": "m5.atom.ext-4p",
+          "x": -7.57,
+          "y": -3.905,
+          "count": 4,
+          "pins": [
+            "GND",
+            "5V",
+            "G25",
+            "G21"
+          ]
+        }
+      ],
+      "limitations": [
+        "Exact C008-C own official CAD used;C008-C and C126-ECHO have the same shell blob but different electronics and graphics.",
+        "24x24x16.8mm native/table reference retained without scale;legacy Echo hero rounds depth to17mm.",
+        "Both native closed halves kept. Internal audio/PCB/fasteners/supports and key travel are visual reconstructions from own official multi-view;no manufacturing validation.",
+        "Native U-slot key and side Reset deform only their own connected tongues;no automatic LED/audio/boot/reset/electrical behavior.",
+        "G19/G22/G23/G33 physically exist on the 5-pin bank but are occupied by onboard audio;no electrical reuse is promised.",
+        "Only approved ordinary raster labels are public;private table/vector/names/URLs remain external."
+      ],
+      "defaults": {
+        "artwork": true,
+        "labelPierced": false
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "Atom Voice (Atom Echo)",
+          "options": {}
+        },
+        {
+          "id": "mount-open",
+          "name": "M2安装贴膜已穿透",
+          "options": {
+            "labelPierced": true
+          }
+        }
+      ],
+      "configurationSchema": {
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Ink only;all physical structure/motion/carriers remain"
+        },
+        "labelPierced": {
+          "type": "boolean",
+          "default": false,
+          "meaning": "Physical M2 film preparation only;independent of ink"
+        }
+      }
+    },
+    "defaults": {
+      "artwork": true,
+      "labelPierced": false
+    },
+    "configurations": [
+      {
+        "id": "complete",
+        "name": "Atom Voice (Atom Echo)",
+        "options": {}
+      },
+      {
+        "id": "mount-open",
+        "name": "M2安装贴膜已穿透",
+        "options": {
+          "labelPierced": true
+        }
+      }
+    ],
+    "configurationSchema": {
+      "artwork": {
+        "type": "boolean",
+        "default": true,
+        "meaning": "Ink only;all physical structure/motion/carriers remain"
+      },
+      "labelPierced": {
+        "type": "boolean",
+        "default": false,
+        "meaning": "Physical M2 film preparation only;independent of ink"
+      }
+    },
+    "exports": [
+      "Model",
+      "configurationSchema",
+      "configurations",
+      "default",
+      "defaults",
+      "spec"
+    ],
+    "defaultExport": "Model",
+    "assemblyProperty": "atomEchoAssembly",
+    "cases": [
+      {
+        "id": "complete",
+        "options": {},
+        "bodyComponentOrder": [
+          "button",
+          "reset",
+          "led",
+          "ext-5p",
+          "ext-4p",
+          "grove",
+          "usb"
+        ],
+        "bodyComponentKinds": {
+          "button": "button",
+          "reset": "button",
+          "led": "led",
+          "ext-5p": "port",
+          "ext-4p": "port",
+          "grove": "port",
+          "usb": "port"
+        },
+        "panelCount": 2
+      },
+      {
+        "id": "mount-open",
+        "options": {
+          "labelPierced": true
+        },
+        "bodyComponentOrder": [
+          "button",
+          "reset",
+          "led",
+          "ext-5p",
+          "ext-4p",
+          "grove",
+          "usb"
+        ],
+        "bodyComponentKinds": {
+          "button": "button",
+          "reset": "button",
+          "led": "led",
+          "ext-5p": "port",
+          "ext-4p": "port",
+          "grove": "port",
+          "usb": "port"
+        },
+        "panelCount": 2
+      }
+    ]
+  },
+  "geometry": {
+    "status": "pass",
+    "meshes": 159,
+    "faces": 25926,
+    "allClosedOrientedDegree2": true,
+    "allPositiveVolume": true,
+    "allFrontSide": true
+  },
+  "artwork": [
+    {
+      "asset": "src/devices/atom-echo/artwork/rear.png",
+      "kind": "official-raster",
+      "source": "User approved flat ordinary raster;private originals/table/vector/name/URL excluded",
+      "sizePx": [
+        364,
+        454
+      ],
+      "sha256": "046bb3eceb8b6f046e7f1540feb98726540ae46b348a337a5f19a1d54cd1699b",
+      "placement": "rear physical film;full label without layout arrows/titles",
+      "licenseScope": "User expressly permits distribution of ordinary raster images;not covered by code MIT"
+    },
+    {
+      "asset": "src/devices/atom-echo/artwork/compliance.png",
+      "kind": "official-raster",
+      "source": "User approved flat ordinary raster;private originals/table/vector/name/URL excluded",
+      "sizePx": [
+        428,
+        186
+      ],
+      "sha256": "e065c851da4496ef789cad6e56e2f69fd6dd8d1be858994a08ba016fca31ffcf",
+      "placement": "compliance physical film;full label without layout arrows/titles",
+      "licenseScope": "User expressly permits distribution of ordinary raster images;not covered by code MIT"
+    }
+  ],
+  "physicalInference": [
+    "Hidden PCB/support/receiver/contact placement and travel are original visual estimates.",
+    "Individual mic/optical package placement behind the real open grille is inferred from own visible features and package function;not teardown/manufacturing proof.",
+    "Real speaker cavity floor/walls/diaphragm and mic tube modeled;no audio DSP,recording/playback,firmware or electrical execution."
+  ],
+  "mountingFilm": "Own clear rear photograph shows intact yellow M2 label;default actual thin film covers native bore,labelPierced opens only film for installation,artwork:false only removes ink.",
+  "license": {
+    "code": "Repository MIT",
+    "nativeCAD": "M5_Hardware MIT;licenses/M5_Hardware-MIT.txt",
+    "artwork": "User-approved ordinary raster redistribution;marks and image rights remain their owners;not a certification claim"
+  },
+  "validation": {
+    "script": "scripts/check-atom-echo-controller.mjs",
+    "report": "docs/research/atom-echo/smoke.json",
+    "status": "modeled",
+    "visual": null,
+    "boundary": "CPU actual Model/source bytes/current native-face picking/geometry/outputs/real connection/resource evidence only;browser GPU acceptance remains separate"
+  }
+}

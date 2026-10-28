@@ -2,6 +2,7 @@
 
 本页说明稳定公开 API、组件寻址、装配和输入职责。产品能力、构造选项和具名配置以 [产品目录](../catalog/products.json)、对应产品指南及实际组件状态为准。
 
+- 本次新增 AtomS3、Dial、Plus2、Basic v2.7：[四系列主机接入](HOST-FAMILY-EXPANSION-2026-10-28.md)。
 - 接入具体产品、查找增量指南：见 [本地增量索引](LOCAL-EXPANSION.md)。
 - 新建或修改模型、贴纸与网页交互：见 [建模方法](MODELING-METHODOLOGY.md)。
 - 追溯已完成批次：见 [历史检查点](history/AGENT-INTEGRATION-CHECKPOINTS-2026-10-27.md)。其中的数量、Git 状态和验证结果保留各批保存时的记录；当前状态应重新读取目录、构建产物与仓库。
@@ -383,3 +384,9 @@ demo 的异步 Unit 加载在切换模型、接口或 Unit 后会作废旧请求
 <!-- us915-sma-amendment-2026-10-27 -->
 
 2026-10-27 US915 SMA独立更正：[当前更正说明](US915-SMA-AMENDMENT-2026-10-27.md)依据US915自身近照将本体改为实心中心针，附件受针腔/止挡、尺寸/极性/配合仍明记推导；[当前实际无loader专项receipt](research/lorawan-us915/sma-amendment-2026-10-27-smoke.json)对应 `node scripts/check-lorawan-us915-sma-amendment.mjs`。构建与最终证据见[当前progress](../artifacts/us915-sma-amendment-2026-10-27/progress.json)；[51批progress](../artifacts/cardkboriginal-poecamoriginal-lorawanus915-expansion/progress.json)仅为历史快照。原native、两PNG、framework/API、51/52旧helper/freeze/progress及基线保持，未重跑历史套件。
+
+
+当前Atom/Stick完整系列入口与配置见[24条覆盖矩阵](ATOM-STICK-SERIES-2026-10-28.md)。下游依catalog加载实际精确SKU；摄像头/语音型号没有的屏幕、RGB或前键不能从近款推定。套装保留自身额外底座和主机实际能力。接入后运行 `npm run check:series`，再分别核所用交互和外部运行时。
+
+
+兼容性：既有StickS3的 `controlMap` 保留“模型ID→运行时别名”方向（btnA/btnB/btnPWR→a/b/power），调用模型时仍使用btnA等实际组件ID。当前各款实际组件以实例 `list()` 与单品指南为准；系列覆盖记录显式标出该历史方向，检查不会借改名破坏旧API。

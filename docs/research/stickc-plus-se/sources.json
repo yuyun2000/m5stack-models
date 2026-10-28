@@ -1,0 +1,180 @@
+{
+  "id": "stickc-plus-se",
+  "sku": "K016-P-SE",
+  "name": "M5StickC Plus SE",
+  "retrievedAt": "2026-10-28",
+  "officialDocs": "https://docs.m5stack.com/en/core/StickC-Plus_SE",
+  "documentSha256": "de2cb87f85f070521a6370f8a65b9e1afffbcea07b0498447a9c21aa000c2831",
+  "constructionRoute": "original-parametric-own-SE-mechanical-drawing-and-multiview-reconstruction",
+  "nativeCadUsed": false,
+  "hardwareRepositoryInspection": {
+    "repository": "m5stack/M5_Hardware",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "dedicatedK016PSEDirectoryFound": false,
+    "otherModelMeshesNotBorrowed": true
+  },
+  "nominalMm": [
+    24,
+    48,
+    13.52
+  ],
+  "tableNominalMm": [
+    24,
+    48,
+    8.4
+  ],
+  "mechanicalDrawingMm": {
+    "body": [
+      24,
+      48,
+      13.52
+    ],
+    "frontInnerWindow": [
+      14.8,
+      24.86
+    ]
+  },
+  "facts": {
+    "soc": "ESP32-PICO-D4",
+    "batteryMah": 120,
+    "pmic": "AXP192",
+    "display": {
+      "diagonalInches": 1.14,
+      "pixels": [
+        135,
+        240
+      ],
+      "driver": "ST7789V2",
+      "touch": false
+    },
+    "imu": null,
+    "removedBuiltinImu": true,
+    "buttons": {
+      "a": "G37",
+      "b": "G39",
+      "power": "AXP192 PWR_KEY"
+    },
+    "redLed": "G10",
+    "ir": "G9",
+    "buzzer": "passive G2",
+    "microphone": "SPM1423",
+    "rtc": "BM8563",
+    "shell": "translucent orange",
+    "grovePins": [
+      "GND",
+      "5V",
+      "G32",
+      "G33"
+    ]
+  },
+  "conflictsAndBoundaries": [
+    "Own SE mechanical drawing dimension13.52mm conflicts with prose8.4mm;runtime follows drawing,table is retained separately.",
+    "No native SE CAD linked;original analytic enclosure follows its own six views,without borrowing Plus/Plus2 meshes.",
+    "Hidden PCB/BOM positions,material opacity,wall thickness,contacts andnormalized keytravel remain photo-derived or connector-family estimates."
+  ],
+  "sourceReferences": [
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1234/K016-P-SE-StickC-Plus_SE_main_pictures_01.webp",
+      "sha256": "1fe82aea2ad08b0c97065a26fde76e346bbe9f4db5cfb245b552aa6c601ec0d6",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1234/K016-P-SE-StickC-Plus_SE_main_pictures_02.webp",
+      "sha256": "35d85664b6b3071e0f2a655697528f651ae8e19778b59fc90ed089e7344a8a56",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1234/K016-P-SE-StickC-Plus_SE_main_pictures_03.webp",
+      "sha256": "b5a51819ad4d65e6accd4d6e583ffad2390448f979aa40576c25d575f76c9760",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1234/K016-P-SE-StickC-Plus_SE_main_pictures_04.webp",
+      "sha256": "e02c58d15ff9683e9403d6f97b7a9c4c6cd11bdeebcb28a77616e508d0964fb8",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1234/K016-P-SE-StickC-Plus_SE_main_pictures_05.webp",
+      "sha256": "b112d9b62671c8a01bf3736fe8ff1bfce0589a026835d2f483b8c4249bc82942",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1234/K016-P-SE-StickC-Plus_SE_main_pictures_06.webp",
+      "sha256": "65e6ba272533569c291f8a657d7a148937ed819035fe1932acfe4cbe82d12721",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1234/K016-P-SE-StickC-Plus_SE_main_pictures_07.webp",
+      "sha256": "1bd83617b51fd08d5e7241e4c745abadbc46edc7272ed325830c71a29d5fa7f6",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1234/K016-P-SE-StickC-Plus_SE_main_pictures_08.webp",
+      "sha256": "a649cf31bb09b599828207adb7ac019c69c516a8e6640cecd848f58368a2e0bc",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1234/K016-P-SE-StickC-Plus_SE_main_pictures_09.webp",
+      "sha256": "76a4aedda0f7deaa96284f570a75e0df5c8862b0bcda8227ddbaa879e0adc950",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1234/K016-P-SE-StickC-Plus_SE_main_pictures_10.webp",
+      "sha256": "19fcc1dc066e8f20d0894eec8ef302279f2f801bfa7ecc96a380096ce8b0abd1",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1234/K016-P-SE-StickC-Plus_SE_main_pictures_11.webp",
+      "sha256": "f0078cfb775d04836db393cf99c7bacb69b0794232dd47d4b8f16693add53050",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1234/K016-P-SE-StickC-Plus_SE_main_pictures_12.png",
+      "sha256": "771b31350851ea9098fd67ef2c68e5e71cec7092342f4646a6ca37f260f6bacc",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1234/K016-P-SE-StickC-Plus_SE_main_pictures_weight.jpg",
+      "sha256": "3635c2981e58f62d60482161c65a051427e0f4af16e35c51405308bdf5ff43ae",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1234/K016-P-SE-model-size_page_01.png",
+      "sha256": "7206c92ed69e75c8da54378ad04cd67b78d3edfacd73e3b174e7cf256759ac1f",
+      "sourceOnlyNotDistributed": true
+    }
+  ],
+  "ordinaryRasters": [
+    {
+      "path": "src/devices/stickc-plus-se/artwork/rear.png",
+      "sha256": "4e35e91fd8366af4fc3d0ac2e217b252974743d804361f485f93cf96839d6d2b",
+      "pixels": [
+        318,
+        569
+      ],
+      "mode": "RGB",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ],
+      "crcValid": true,
+      "ancillaryMetadata": false,
+      "kind": "approved-ordinary-raster",
+      "panels": 1,
+      "sourceRole": "User-approved ordinary flat product label;only label body registered;no product photograph crop",
+      "privateOriginalDistributed": false,
+      "vectorDistributed": false,
+      "privateMappingOrUrlDistributed": false
+    }
+  ],
+  "distribution": {
+    "newCodeLicense": "MIT",
+    "nativeGeometryImported": false,
+    "officialPhotosAndRawDocsDistributed": false,
+    "referenceImageLicenseAssumedMIT": false,
+    "rawVectorOrPrivateSourceDistributed": false,
+    "onlyUserApprovedOrdinaryPngDistributed": true
+  },
+  "scope": "Visual geometry,input intent,external pixels/LEDs and cable pose only;no sensors,firmware,power/electrical,audio or physical-fit acceptance."
+}

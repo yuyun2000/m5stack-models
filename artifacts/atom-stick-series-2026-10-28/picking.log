@@ -1,0 +1,430 @@
+
+> m5stack-models.js@0.1.0 check:input-picking
+> node scripts/check-viewer-hit-filters.mjs && node scripts/check-native-controller-picking.mjs
+
+PASS Viewer hit filters: {"status":"pass","checks":["legacy unfiltered target uses the actual first ray intersection","predicate receives the real object/face/point and selects only its accepted region","rejected child and intermediate filters fall back to an accepting ancestor on the same intersection","a rejected visible shell still occludes a real button behind it","unfiltered ancestor fallback and re-registration retain legacy behavior","invalid registration is atomic; predicate errors propagate; legacy owner replacement ignores stale filters","removing an external-surface component clears its input binding while retaining the occluding physical shell","new owner registration survives old owner disposal and both component/Viewer unmount-reattach","hidden-panel model fit defers until a real viewport;later ordinary resize preserves user zoom"],"ownedResources":10,"scope":"Real Component.hit and DeviceViewer.pick with actual ray/triangle intersections; isolated DOM and no-GPU renderer boundary only, no browser pixel evidence"}
+{
+  "status": "pass",
+  "controllers": 3,
+  "states": [
+    "rest",
+    "partial",
+    "full",
+    "returned-rest"
+  ],
+  "poses": [
+    "identity",
+    "rotated"
+  ],
+  "checks": 280,
+  "pointerRoutes": 42,
+  "failures": [],
+  "perModel": {
+    "atom-lite": {
+      "states": {
+        "rest": {
+          "nativeGeometry": {
+            "C008 own native front complete half": {
+              "attributes": {
+                "position": "bf852b44802f219651ff2bf9ef7eceaa0060830e701f12e717c5f094fb242f39",
+                "normal": "e01faf4c9ae1ad1be14471a6cbdbdf0b7690163da4d11a254093fa191f85aac3",
+                "sourceFaceIndex": "c194d9ed3c676309da841a344a0ee4024ec7daab34faca74e6cda0e1ff035e07",
+                "sourceAttributeWord": "0371dc0ec0966c621d9ec8461c621dcb0ef389cb0fef6b13ff40708846a695ed"
+              },
+              "index": "cf6f68bfda3544e2822b9ae8dbb1214c7ba914b5d854bd61d6579339c0a1fca9"
+            },
+            "C008 own native rear complete half": {
+              "attributes": {
+                "position": "43393b6cd516431fafec4f199c33a5ddaeb57841c5302cdcd119099460493e70",
+                "normal": "597b3685ecb0c0e69162c27b8786e776eb1624aef18fed10e56fb407da9f782a",
+                "sourceFaceIndex": "4ca64ee02e892a64dcbe7d08e10e6e0609360fff65f60fa3c0369c6f18062bad",
+                "sourceAttributeWord": "15ac6aff90154c65cf4d4f71cc7c70bc0f8f4b235a329965e51e95869bd3c588"
+              },
+              "index": "f015d51a0617510f11a9104d7d77f384740f332fdb3b2b5ac99014c74e41e237"
+            }
+          },
+          "poses": {
+            "identity": {
+              "samples": 12,
+              "passed": 12
+            },
+            "rotated": {
+              "samples": 12,
+              "passed": 12
+            }
+          }
+        },
+        "partial": {
+          "nativeGeometry": {
+            "C008 own native front complete half": {
+              "attributes": {
+                "position": "9a42a80fe97dfdda48e40a0d67d8df15139b2c151f54cd284842cde26b038ff1",
+                "normal": "85ade6333cb816b33810c83135ff53443aa8de13725c88797bfba5074b63d86d",
+                "sourceFaceIndex": "c194d9ed3c676309da841a344a0ee4024ec7daab34faca74e6cda0e1ff035e07",
+                "sourceAttributeWord": "0371dc0ec0966c621d9ec8461c621dcb0ef389cb0fef6b13ff40708846a695ed"
+              },
+              "index": "cf6f68bfda3544e2822b9ae8dbb1214c7ba914b5d854bd61d6579339c0a1fca9"
+            },
+            "C008 own native rear complete half": {
+              "attributes": {
+                "position": "4d41dbb95e2fe8f3de35c238b1e92e2561563ca0e8e77a93bb258831b8ea3ab4",
+                "normal": "017b48d19f0bfc1da021b36732dfc50f9ca30ad518019d7c116756851f18fc94",
+                "sourceFaceIndex": "4ca64ee02e892a64dcbe7d08e10e6e0609360fff65f60fa3c0369c6f18062bad",
+                "sourceAttributeWord": "15ac6aff90154c65cf4d4f71cc7c70bc0f8f4b235a329965e51e95869bd3c588"
+              },
+              "index": "f015d51a0617510f11a9104d7d77f384740f332fdb3b2b5ac99014c74e41e237"
+            }
+          },
+          "poses": {
+            "identity": {
+              "samples": 12,
+              "passed": 12
+            },
+            "rotated": {
+              "samples": 12,
+              "passed": 12
+            }
+          }
+        },
+        "full": {
+          "nativeGeometry": {
+            "C008 own native front complete half": {
+              "attributes": {
+                "position": "d9e35d684ffb21d9e10b60482f74827242e3b5a11b40b35a54f93759f9f08b31",
+                "normal": "924c96720bcf8c5dc0d07616f251646dacba187959ff60c2a06302a6af7b5b5c",
+                "sourceFaceIndex": "c194d9ed3c676309da841a344a0ee4024ec7daab34faca74e6cda0e1ff035e07",
+                "sourceAttributeWord": "0371dc0ec0966c621d9ec8461c621dcb0ef389cb0fef6b13ff40708846a695ed"
+              },
+              "index": "cf6f68bfda3544e2822b9ae8dbb1214c7ba914b5d854bd61d6579339c0a1fca9"
+            },
+            "C008 own native rear complete half": {
+              "attributes": {
+                "position": "2c542c28d588be7eff30158c5adc4637a3733cf3bd3a884708bc286321e4016f",
+                "normal": "0eb6552ddc095e503f578ebc452b6a1fd2829725dc1ab5fde28e54e29cf12185",
+                "sourceFaceIndex": "4ca64ee02e892a64dcbe7d08e10e6e0609360fff65f60fa3c0369c6f18062bad",
+                "sourceAttributeWord": "15ac6aff90154c65cf4d4f71cc7c70bc0f8f4b235a329965e51e95869bd3c588"
+              },
+              "index": "f015d51a0617510f11a9104d7d77f384740f332fdb3b2b5ac99014c74e41e237"
+            }
+          },
+          "poses": {
+            "identity": {
+              "samples": 12,
+              "passed": 12
+            },
+            "rotated": {
+              "samples": 12,
+              "passed": 12
+            }
+          }
+        },
+        "returned-rest": {
+          "nativeGeometry": {
+            "C008 own native front complete half": {
+              "attributes": {
+                "position": "bf852b44802f219651ff2bf9ef7eceaa0060830e701f12e717c5f094fb242f39",
+                "normal": "e01faf4c9ae1ad1be14471a6cbdbdf0b7690163da4d11a254093fa191f85aac3",
+                "sourceFaceIndex": "c194d9ed3c676309da841a344a0ee4024ec7daab34faca74e6cda0e1ff035e07",
+                "sourceAttributeWord": "0371dc0ec0966c621d9ec8461c621dcb0ef389cb0fef6b13ff40708846a695ed"
+              },
+              "index": "cf6f68bfda3544e2822b9ae8dbb1214c7ba914b5d854bd61d6579339c0a1fca9"
+            },
+            "C008 own native rear complete half": {
+              "attributes": {
+                "position": "43393b6cd516431fafec4f199c33a5ddaeb57841c5302cdcd119099460493e70",
+                "normal": "597b3685ecb0c0e69162c27b8786e776eb1624aef18fed10e56fb407da9f782a",
+                "sourceFaceIndex": "4ca64ee02e892a64dcbe7d08e10e6e0609360fff65f60fa3c0369c6f18062bad",
+                "sourceAttributeWord": "15ac6aff90154c65cf4d4f71cc7c70bc0f8f4b235a329965e51e95869bd3c588"
+              },
+              "index": "f015d51a0617510f11a9104d7d77f384740f332fdb3b2b5ac99014c74e41e237"
+            }
+          },
+          "poses": {
+            "identity": {
+              "samples": 12,
+              "passed": 12
+            },
+            "rotated": {
+              "samples": 12,
+              "passed": 12
+            }
+          }
+        }
+      },
+      "samplesPerPose": 12,
+      "pointerRoutes": 16,
+      "foreignInkFaceIndicesRejected": true,
+      "removedReset": {
+        "poses": {
+          "identity": {
+            "samples": 4,
+            "passed": 4
+          },
+          "rotated": {
+            "samples": 4,
+            "passed": 4
+          }
+        }
+      }
+    },
+    "atom-matrix": {
+      "states": {
+        "rest": {
+          "nativeGeometry": {
+            "Original Atom Matrix complete native rear shell": {
+              "attributes": {
+                "position": "37c7c54bc6016f4ba048fc883970bc5d2097bce47a236871a45f178203248d9f",
+                "normal": "0e3877792f64227edbd53967ce672e6081a15c7a796b4288639b0609f7ec2c48",
+                "sourceFaceIndex": "7fe68fdcce7ab0d7aa68c9b4e6a471d975a3616b57c6b24dd3cd80e193744cea",
+                "sourceAttributeWord": "8d2230968bb2dbe1a7b9a4e594a7c4ac1dc07cafa8733d85a55e2d7630ee3b80"
+              },
+              "index": "0df1d202f920419192bfdbfa49282ec998063bc392f457eae034f1cf2ec42b6f"
+            }
+          },
+          "poses": {
+            "identity": {
+              "samples": 7,
+              "passed": 7
+            },
+            "rotated": {
+              "samples": 7,
+              "passed": 7
+            }
+          }
+        },
+        "partial": {
+          "nativeGeometry": {
+            "Original Atom Matrix complete native rear shell": {
+              "attributes": {
+                "position": "6d37a2fd56f9991a542b9de6439ae9dbf517ca32892bb605a56c648eba870246",
+                "normal": "e4a5ef8cb8dd97b01de71c38319249a2f8f075cddc71c9cbbd4ab66b91e5ee13",
+                "sourceFaceIndex": "7fe68fdcce7ab0d7aa68c9b4e6a471d975a3616b57c6b24dd3cd80e193744cea",
+                "sourceAttributeWord": "8d2230968bb2dbe1a7b9a4e594a7c4ac1dc07cafa8733d85a55e2d7630ee3b80"
+              },
+              "index": "0df1d202f920419192bfdbfa49282ec998063bc392f457eae034f1cf2ec42b6f"
+            }
+          },
+          "poses": {
+            "identity": {
+              "samples": 7,
+              "passed": 7
+            },
+            "rotated": {
+              "samples": 7,
+              "passed": 7
+            }
+          }
+        },
+        "full": {
+          "nativeGeometry": {
+            "Original Atom Matrix complete native rear shell": {
+              "attributes": {
+                "position": "00a1419cf7a5947c410ec9602ddcd161729843c8232032bcad414e36f0fb81a0",
+                "normal": "9d6702101c1dea11588c66f6be0150b5eb1b6e866eec33ccbaa795229b970a82",
+                "sourceFaceIndex": "7fe68fdcce7ab0d7aa68c9b4e6a471d975a3616b57c6b24dd3cd80e193744cea",
+                "sourceAttributeWord": "8d2230968bb2dbe1a7b9a4e594a7c4ac1dc07cafa8733d85a55e2d7630ee3b80"
+              },
+              "index": "0df1d202f920419192bfdbfa49282ec998063bc392f457eae034f1cf2ec42b6f"
+            }
+          },
+          "poses": {
+            "identity": {
+              "samples": 7,
+              "passed": 7
+            },
+            "rotated": {
+              "samples": 7,
+              "passed": 7
+            }
+          }
+        },
+        "returned-rest": {
+          "nativeGeometry": {
+            "Original Atom Matrix complete native rear shell": {
+              "attributes": {
+                "position": "37c7c54bc6016f4ba048fc883970bc5d2097bce47a236871a45f178203248d9f",
+                "normal": "0e3877792f64227edbd53967ce672e6081a15c7a796b4288639b0609f7ec2c48",
+                "sourceFaceIndex": "7fe68fdcce7ab0d7aa68c9b4e6a471d975a3616b57c6b24dd3cd80e193744cea",
+                "sourceAttributeWord": "8d2230968bb2dbe1a7b9a4e594a7c4ac1dc07cafa8733d85a55e2d7630ee3b80"
+              },
+              "index": "0df1d202f920419192bfdbfa49282ec998063bc392f457eae034f1cf2ec42b6f"
+            }
+          },
+          "poses": {
+            "identity": {
+              "samples": 7,
+              "passed": 7
+            },
+            "rotated": {
+              "samples": 7,
+              "passed": 7
+            }
+          }
+        }
+      },
+      "samplesPerPose": 7,
+      "pointerRoutes": 8,
+      "foreignInkFaceIndicesRejected": true,
+      "removedReset": {
+        "poses": {
+          "identity": {
+            "samples": 3,
+            "passed": 3
+          },
+          "rotated": {
+            "samples": 3,
+            "passed": 3
+          }
+        }
+      }
+    },
+    "atoms3-lite": {
+      "states": {
+        "rest": {
+          "nativeGeometry": {
+            "C124 native upper-shell": {
+              "attributes": {
+                "position": "bf852b44802f219651ff2bf9ef7eceaa0060830e701f12e717c5f094fb242f39",
+                "normal": "e01faf4c9ae1ad1be14471a6cbdbdf0b7690163da4d11a254093fa191f85aac3",
+                "sourceFaceIndex": "c194d9ed3c676309da841a344a0ee4024ec7daab34faca74e6cda0e1ff035e07",
+                "sourceAttributeWord": "0371dc0ec0966c621d9ec8461c621dcb0ef389cb0fef6b13ff40708846a695ed"
+              },
+              "index": "95c07f671b9899664341b2fc91a3fd11cc41e69ca5133888590f5ea4938bbeeb"
+            },
+            "C124 native lower-shell": {
+              "attributes": {
+                "position": "43393b6cd516431fafec4f199c33a5ddaeb57841c5302cdcd119099460493e70",
+                "normal": "597b3685ecb0c0e69162c27b8786e776eb1624aef18fed10e56fb407da9f782a",
+                "sourceFaceIndex": "4ca64ee02e892a64dcbe7d08e10e6e0609360fff65f60fa3c0369c6f18062bad",
+                "sourceAttributeWord": "15ac6aff90154c65cf4d4f71cc7c70bc0f8f4b235a329965e51e95869bd3c588"
+              },
+              "index": "7a5c45e2ee26e387193cb06228e2109b598ac8c4705b7a4ab2a6af85e84c231c"
+            }
+          },
+          "poses": {
+            "identity": {
+              "samples": 13,
+              "passed": 13
+            },
+            "rotated": {
+              "samples": 13,
+              "passed": 13
+            }
+          }
+        },
+        "partial": {
+          "nativeGeometry": {
+            "C124 native upper-shell": {
+              "attributes": {
+                "position": "0c1a1e2796a6bda5695e7e085053654fd20c347b2df0a3e12ef2514ce371f3cd",
+                "normal": "f5fe7bf99344779f4189e212058373f0e0a35722fb42faa0e57e45510a0b26f7",
+                "sourceFaceIndex": "c194d9ed3c676309da841a344a0ee4024ec7daab34faca74e6cda0e1ff035e07",
+                "sourceAttributeWord": "0371dc0ec0966c621d9ec8461c621dcb0ef389cb0fef6b13ff40708846a695ed"
+              },
+              "index": "95c07f671b9899664341b2fc91a3fd11cc41e69ca5133888590f5ea4938bbeeb"
+            },
+            "C124 native lower-shell": {
+              "attributes": {
+                "position": "c513271e6e75bda40ef1a04a6b06b20ae9c7bb958d52180277ab2f1095c537b6",
+                "normal": "9642a45aa90ac06a9cebb3d11b4a9f43f2ec3c133896ff94f5190c9ab20f90d0",
+                "sourceFaceIndex": "4ca64ee02e892a64dcbe7d08e10e6e0609360fff65f60fa3c0369c6f18062bad",
+                "sourceAttributeWord": "15ac6aff90154c65cf4d4f71cc7c70bc0f8f4b235a329965e51e95869bd3c588"
+              },
+              "index": "7a5c45e2ee26e387193cb06228e2109b598ac8c4705b7a4ab2a6af85e84c231c"
+            }
+          },
+          "poses": {
+            "identity": {
+              "samples": 13,
+              "passed": 13
+            },
+            "rotated": {
+              "samples": 13,
+              "passed": 13
+            }
+          }
+        },
+        "full": {
+          "nativeGeometry": {
+            "C124 native upper-shell": {
+              "attributes": {
+                "position": "a4ab3a0e40d6fe7d8a1d984b504494abc1380b53ba3e351a8c36d0781295223b",
+                "normal": "482b3115cb18d9b448f172f3d41b5e00579333edab27d93b5ec436cc976dc558",
+                "sourceFaceIndex": "c194d9ed3c676309da841a344a0ee4024ec7daab34faca74e6cda0e1ff035e07",
+                "sourceAttributeWord": "0371dc0ec0966c621d9ec8461c621dcb0ef389cb0fef6b13ff40708846a695ed"
+              },
+              "index": "95c07f671b9899664341b2fc91a3fd11cc41e69ca5133888590f5ea4938bbeeb"
+            },
+            "C124 native lower-shell": {
+              "attributes": {
+                "position": "90aab4e636764da11dd07c4d38933c83cd2bb11d2044edcf8996ffde179e2e1a",
+                "normal": "41b3addd79ae2d962e7d99458da0f148df03fb076488db03228660be4114b260",
+                "sourceFaceIndex": "4ca64ee02e892a64dcbe7d08e10e6e0609360fff65f60fa3c0369c6f18062bad",
+                "sourceAttributeWord": "15ac6aff90154c65cf4d4f71cc7c70bc0f8f4b235a329965e51e95869bd3c588"
+              },
+              "index": "7a5c45e2ee26e387193cb06228e2109b598ac8c4705b7a4ab2a6af85e84c231c"
+            }
+          },
+          "poses": {
+            "identity": {
+              "samples": 13,
+              "passed": 13
+            },
+            "rotated": {
+              "samples": 13,
+              "passed": 13
+            }
+          }
+        },
+        "returned-rest": {
+          "nativeGeometry": {
+            "C124 native upper-shell": {
+              "attributes": {
+                "position": "bf852b44802f219651ff2bf9ef7eceaa0060830e701f12e717c5f094fb242f39",
+                "normal": "e01faf4c9ae1ad1be14471a6cbdbdf0b7690163da4d11a254093fa191f85aac3",
+                "sourceFaceIndex": "c194d9ed3c676309da841a344a0ee4024ec7daab34faca74e6cda0e1ff035e07",
+                "sourceAttributeWord": "0371dc0ec0966c621d9ec8461c621dcb0ef389cb0fef6b13ff40708846a695ed"
+              },
+              "index": "95c07f671b9899664341b2fc91a3fd11cc41e69ca5133888590f5ea4938bbeeb"
+            },
+            "C124 native lower-shell": {
+              "attributes": {
+                "position": "43393b6cd516431fafec4f199c33a5ddaeb57841c5302cdcd119099460493e70",
+                "normal": "597b3685ecb0c0e69162c27b8786e776eb1624aef18fed10e56fb407da9f782a",
+                "sourceFaceIndex": "4ca64ee02e892a64dcbe7d08e10e6e0609360fff65f60fa3c0369c6f18062bad",
+                "sourceAttributeWord": "15ac6aff90154c65cf4d4f71cc7c70bc0f8f4b235a329965e51e95869bd3c588"
+              },
+              "index": "7a5c45e2ee26e387193cb06228e2109b598ac8c4705b7a4ab2a6af85e84c231c"
+            }
+          },
+          "poses": {
+            "identity": {
+              "samples": 13,
+              "passed": 13
+            },
+            "rotated": {
+              "samples": 13,
+              "passed": 13
+            }
+          }
+        }
+      },
+      "samplesPerPose": 13,
+      "pointerRoutes": 18,
+      "foreignInkFaceIndicesRejected": true,
+      "removedReset": {
+        "poses": {
+          "identity": {
+            "samples": 5,
+            "passed": 5
+          },
+          "rotated": {
+            "samples": 5,
+            "passed": 5
+          }
+        }
+      }
+    }
+  },
+  "scope": "Actual current native models and real DeviceViewer.pick/pointer dispatch. GPU renderer and DOM boundaries are fixtures;no replacement pick,source geometry edits,artifact writes,browser pixels or hardware acceptance."
+}

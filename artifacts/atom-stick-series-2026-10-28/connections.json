@@ -1,0 +1,687 @@
+{
+  "checkedAt": "2026-10-28T07:59:00.295Z",
+  "status": "pass",
+  "controllers": 38,
+  "sourcePorts": 50,
+  "hostConfigurations": 45,
+  "coverage": [
+    {
+      "id": "sticks3",
+      "configuration": "default",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "cores3",
+      "configuration": "module",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "cores3",
+      "configuration": "din",
+      "ports": [
+        "grove",
+        "grove-c",
+        "grove-b"
+      ]
+    },
+    {
+      "id": "stopwatch",
+      "configuration": "default",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "cardputer-adv",
+      "configuration": "default",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "cardputer-zero",
+      "configuration": "default",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "papermono",
+      "configuration": "default",
+      "ports": []
+    },
+    {
+      "id": "core2",
+      "configuration": "default",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "papercolor",
+      "configuration": "default",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "nanoc6",
+      "configuration": "default",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "stackchan",
+      "configuration": "default",
+      "ports": [
+        "grove",
+        "port-b",
+        "port-c"
+      ]
+    },
+    {
+      "id": "tab5",
+      "configuration": "default",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "atoms3r",
+      "configuration": "default",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "nesso-n1",
+      "configuration": "default",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "stamplc",
+      "configuration": "default",
+      "ports": [
+        "port-a",
+        "port-c"
+      ]
+    },
+    {
+      "id": "atom-lite",
+      "configuration": "complete",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "atom-matrix",
+      "configuration": "complete",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "atoms3-lite",
+      "configuration": "complete",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "dial",
+      "configuration": "complete",
+      "ports": [
+        "port-a",
+        "port-b"
+      ]
+    },
+    {
+      "id": "stickc-plus2",
+      "configuration": "complete",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "atoms3",
+      "configuration": "complete",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "basic-v27",
+      "configuration": "complete",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "basic-v27",
+      "configuration": "base-removed",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "atom-matrix-v11",
+      "configuration": "complete",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "atom-matrix-v11",
+      "configuration": "mount-open",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "m5stick",
+      "configuration": "gray",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "m5stick",
+      "configuration": "white",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "stickv",
+      "configuration": "blue-pcb",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "stickv",
+      "configuration": "black-pcb",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "atoms3r-ai-chatbot",
+      "configuration": "complete",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "atoms3r-cam",
+      "configuration": "complete",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "atoms3r-cam-ai-chatbot",
+      "configuration": "complete",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "atoms3r-m12",
+      "configuration": "complete",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "atoms3r-m12-volcengine-kit",
+      "configuration": "complete",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "stickc",
+      "configuration": "complete",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "stickc-plus",
+      "configuration": "complete",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "atoms3r-ext",
+      "configuration": "complete",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "stickc-plus-se",
+      "configuration": "complete",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "atom-echo",
+      "configuration": "complete",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "atom-echo",
+      "configuration": "mount-open",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "atom-echos3r",
+      "configuration": "complete",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "atom-echos3r",
+      "configuration": "mount-open",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "atoms3u",
+      "configuration": "complete",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "stickt2",
+      "configuration": "complete",
+      "ports": [
+        "grove"
+      ]
+    },
+    {
+      "id": "atomu",
+      "configuration": "complete",
+      "ports": [
+        "grove"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "host": "sticks3",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "cores3",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "cores3-din",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "cores3-din",
+      "port": "grove-c",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "cores3-din",
+      "port": "grove-b",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "stopwatch",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "cardputer-adv",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "cardputer-zero",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "core2",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "papercolor",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "nanoc6",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "stackchan",
+      "port": "grove",
+      "unit": "env-iii",
+      "yaw": 0,
+      "pitch": 0,
+      "status": "pass"
+    },
+    {
+      "host": "stackchan",
+      "port": "grove",
+      "unit": "env-iii",
+      "yaw": 35,
+      "pitch": 35,
+      "status": "pass"
+    },
+    {
+      "host": "stackchan",
+      "port": "grove",
+      "unit": "env-iii",
+      "yaw": 180,
+      "pitch": 90,
+      "status": "pass"
+    },
+    {
+      "host": "stackchan",
+      "port": "port-b",
+      "unit": "env-iii",
+      "yaw": 0,
+      "pitch": 0,
+      "status": "pass"
+    },
+    {
+      "host": "stackchan",
+      "port": "port-b",
+      "unit": "env-iii",
+      "yaw": 35,
+      "pitch": 35,
+      "status": "pass"
+    },
+    {
+      "host": "stackchan",
+      "port": "port-b",
+      "unit": "env-iii",
+      "yaw": 180,
+      "pitch": 90,
+      "status": "pass"
+    },
+    {
+      "host": "stackchan",
+      "port": "port-c",
+      "unit": "env-iii",
+      "yaw": 0,
+      "pitch": 0,
+      "status": "pass"
+    },
+    {
+      "host": "stackchan",
+      "port": "port-c",
+      "unit": "env-iii",
+      "yaw": 35,
+      "pitch": 35,
+      "status": "pass"
+    },
+    {
+      "host": "stackchan",
+      "port": "port-c",
+      "unit": "env-iii",
+      "yaw": 180,
+      "pitch": 90,
+      "status": "pass"
+    },
+    {
+      "host": "tab5",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "atoms3r",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "nesso-n1",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "stamplc",
+      "port": "port-a",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "stamplc",
+      "port": "port-c",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "atom-lite",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "atom-matrix",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "atoms3-lite",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "dial",
+      "port": "port-a",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "dial",
+      "port": "port-b",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "stickc-plus2",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "atoms3",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "basic-v27-complete",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "basic-v27-base-removed",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "atom-matrix-v11-complete",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "atom-matrix-v11-mount-open",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "m5stick-gray",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "m5stick-white",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "stickv-blue-pcb",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "stickv-black-pcb",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "atoms3r-ai-chatbot",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "atoms3r-cam",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "atoms3r-cam-ai-chatbot",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "atoms3r-m12",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "atoms3r-m12-volcengine-kit",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "stickc",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "stickc-plus",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "atoms3r-ext",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "stickc-plus-se",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "atom-echo-complete",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "atom-echo-mount-open",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "atom-echos3r-complete",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "atom-echos3r-mount-open",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "atoms3u",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "stickt2",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    },
+    {
+      "host": "atomu",
+      "port": "grove",
+      "unit": "env-iii",
+      "status": "pass"
+    }
+  ],
+  "matingChecks": 224,
+  "railSegments": 86016,
+  "scope": "Every implemented catalog controller and named configuration; actual Grove interfaces with a real compact Unit, sampled rendered tube-surface rails and mating transforms, including StackChan poses. Not every target Unit or an arbitrary-pose collision solver."
+}

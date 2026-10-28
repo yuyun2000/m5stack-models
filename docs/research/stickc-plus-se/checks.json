@@ -1,0 +1,100 @@
+{
+  "status": "pass",
+  "id": "stickc-plus-se",
+  "sku": "K016-P-SE",
+  "nominalMm": [
+    24,
+    48,
+    13.52
+  ],
+  "geometry": {
+    "kind": "original-parametric-reconstruction",
+    "closedPositiveFrontSideSolids": 155,
+    "triangles": 127052
+  },
+  "ports": {
+    "connectorWallRays": 40,
+    "visibleContacts": 44,
+    "usbContacts": 24,
+    "groveContacts": 4,
+    "hatWells": 8,
+    "hatContacts": 16,
+    "rearClosureSamples": 3
+  },
+  "runtime": {
+    "perButton": {
+      "a": {
+        "travelMm": 0.25,
+        "partialMm": 0.06846274073157727,
+        "partialFullActualSurfaces": true,
+        "innerAndOuterPhysical": true,
+        "fixedMeshesExact": true,
+        "cancelWithoutClick": true,
+        "exactReturn": true
+      },
+      "b": {
+        "travelMm": 0.18,
+        "partialMm": 0.04929317332673563,
+        "partialFullActualSurfaces": true,
+        "innerAndOuterPhysical": true,
+        "fixedMeshesExact": true,
+        "cancelWithoutClick": true,
+        "exactReturn": true
+      },
+      "power": {
+        "travelMm": 0.18,
+        "partialMm": 0.04929317332673563,
+        "partialFullActualSurfaces": true,
+        "innerAndOuterPhysical": true,
+        "fixedMeshesExact": true,
+        "cancelWithoutClick": true,
+        "exactReturn": true
+      }
+    },
+    "actualSurfaceRays": 36,
+    "external135x240Framebuffer": true,
+    "rgb565AndFill": true,
+    "redLedExternalNoEcho": true,
+    "realTimerClick": true,
+    "inkOffAllPhysicalAttributesIndexWorld": true
+  },
+  "connection": {
+    "transformedHost": true,
+    "hierarchicalInputPath": "grove/press",
+    "sourceToActualGroveFrame": true,
+    "cable": {
+      "wireCount": 4,
+      "plugCount": 2,
+      "faceDistanceMm": 70
+    },
+    "unitPoseAndHostTransfer": true,
+    "realDetachReattach": true,
+    "resourcesReleased": 62
+  },
+  "connectedInk": {
+    "restPartialFullReturnedAllPhysicalAttributesIndexWorld": true,
+    "allThreeHostKeysAndChildHeld": true,
+    "actualFourCoreAndBothPlugs": true
+  },
+  "picking": {
+    "status": "pass",
+    "states": [
+      "rest",
+      "partial",
+      "full",
+      "returned"
+    ],
+    "poses": 2,
+    "samplesPerPose": 13,
+    "actualViewerPicks": 104,
+    "actualDomPointerCancelRoutes": 18,
+    "scope": "Real Viewer/camera/raycaster/private pointer route; GPU and DOM boundary fixture only, no browser pixel claim"
+  },
+  "scope": "Actual product CPU geometry/API/cable/timer only; no browser pixels, physical fit, hidden BOM accuracy, firmware/electrical or certification acceptance.",
+  "disposedResources": [
+    214,
+    212
+  ],
+  "pendingClickResources": 212,
+  "pendingRealClickTimersCancelled": true
+}

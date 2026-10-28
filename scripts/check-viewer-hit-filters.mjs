@@ -104,6 +104,12 @@ async function fixture(){
   current.unmount();assert.equal(external.userData.componentHit,currentRegistration);current.mount(host);assert.equal(pick(0).component,current,'component unmount/reattach retains the registered target');
   viewer.unmount(host);viewer.mount(host,{fit:false});assert.equal(pick(0).component,current,'Viewer unmount/reattach retains component input registrations');
   checks.push('new owner registration survives old owner disposal and both component/Viewer unmount-reattach');
+  viewer.fit({padding:1.6});const visibleDistance=viewer.distance,visibleTarget=viewer.target.toArray();
+  viewer.container.clientWidth=0;viewer.resize();viewer.distance=visibleDistance*.75;
+  viewer.fit({padding:1.6});assert.equal(viewer.distance,visibleDistance*.75,'hidden model fit waits without changing user camera');
+  viewer.container.clientWidth=500;viewer.resize();assert.equal(viewer.distance,visibleDistance,'first visible resize performs the deferred fit with its padding');assert.deepEqual(viewer.target.toArray(),visibleTarget);
+  viewer.distance=visibleDistance*.65;viewer.resize();assert.equal(viewer.distance,visibleDistance*.65,'ordinary later resize preserves user zoom');
+  checks.push('hidden-panel model fit defers until a real viewport;later ordinary resize preserves user zoom');
  }finally{viewer.dispose();host.dispose();}
  assert.ok([...owned.values()].every(count=>count===1),'fixture geometry and materials are released exactly once');assert.equal(viewer.renderer.disposals,1);assert.ok(viewer.renderer.domElement.removed);assert.equal(viewer.renderer.domElement.listenerCount(),0);assert.equal(window.listenerCount(),0);assert.equal(document.listenerCount(),0);assert.ok(observers.every(observer=>observer.disconnected));assert.equal(frames.size,0);
  return {status:'pass',checks,ownedResources:owned.size,scope:'Real Component.hit and DeviceViewer.pick with actual ray/triangle intersections; isolated DOM and no-GPU renderer boundary only, no browser pixel evidence'};

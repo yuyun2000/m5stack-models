@@ -3,7 +3,7 @@ import {pathToFileURL} from 'node:url';
 import {DynamicsPanel} from '../demo/dynamics.js';
 import {Device,Module,Port,VisualSlide} from '../src/core/index.js';
 import {loadModel,loadGroveModule} from '../src/loaders.js';
-import {DEVICE_BUTTON_COUNTS} from './check-device-actuators.mjs';
+import {readFile} from 'node:fs/promises';
 
 class TestUnit extends Module {
  static meta={id:'lifecycle-unit',name:'Lifecycle Unit',connector:'grove'};
@@ -116,6 +116,7 @@ async function checkNestedGroveDemo(){
   choose('#grove-port','grove/grove-2');choose('#grove-unit','fan');await ui['#grove-connect'].onclick();
   const fan=host.get('grove/grove-2').module;assert.equal(fan.meta.id,'m5stack.unit.fan.grove');assert.equal(key.button('press').pressed,true,'attaching sibling Fan preserves Key inspection hold');assert.equal(selected('#led-target'),'grove/grove-1/rgb');assert.equal(selected('#inspect-button'),'grove/grove-1/press');
   const rpm=container.querySelector('#joint-grove-grove-2-rotor-rpm');assert.ok(rpm,'nested Fan has a live rpm control');rpm.value=60;rpm.oninput();const before=fan.get('rotor').angleDeg;host.update(.1);assert.ok(Math.abs(fan.get('rotor').angleDeg-before-36)<1e-6,'nested Fan is updated once through the real host');
+  const beforeReadback=events.length;panel.refreshState();const angle=container.querySelector('#joint-grove-grove-2-rotor-angle');assert.ok(angle);assert.ok(Math.abs(Number(angle.value)-fan.get('rotor').angleDeg)<1e-6,'actual external joint motion reflects into angle slider');assert.equal(angle.nextElementSibling.textContent,`${fan.get('rotor').angleDeg.toFixed(1)}°`);assert.equal(Number(rpm.value),60);assert.equal(events.length,beforeReadback,'joint control readback does not create input');
   assert.equal(key.button('press').pressed,true);cases.push('nested-Key-button-LED-and-Fan-rpm-controls');
   choose('#grove-port','grove/grove-3');choose('#grove-unit','hub');await ui['#grove-connect'].onclick();
   assert.ok(options('#grove-port').includes('grove/grove-3/grove-1'),'second HUB level exposes full unique paths');assert.ok(!options('#grove-port').includes('grove/grove-3/grove'));
@@ -128,15 +129,17 @@ async function checkNestedGroveDemo(){
   assert.ok(cancelled?.cancelled,'Key is released through its full old path before detach');assert.ok(detached.indexOf(cancelled)<detached.findIndex(event=>event.id==='grove/grove-1'&&event.action==='detach'));assert.ok(!detached.some(event=>event.action==='click'));assert.equal(panel.held.size,0);assert.ok(!options('#inspect-button').includes('grove/grove-1/press'));assert.ok(!options('#led-target').includes('grove/grove-1/rgb'));assert.equal(fan.get('rotor').rpm,60,'unrelated Fan rpm survives targeted Key detach');cases.push('nested-target-detach-cancels-old-path-without-stale-controls');
   hold('btnA');choose('#grove-port','grove');ui['#grove-disconnect'].onclick();assert.deepEqual(options('#grove-port'),['grove']);assert.equal(host.button('btnA').pressed,true,'removing whole HUB subtree does not release a host inspection hold');settle();ui['#release-button'].onclick();settle();assert.equal(host.button('btnA').pressed,false);cases.push('ancestor-detach-prunes-menu-and-keeps-unrelated-host-hold');
   const inspection=[];
-  for(const [id,configuration]of [...Object.keys(DEVICE_BUTTON_COUNTS).map(id=>[id,{}]),['cores3',{dinBase:true}]]){
+  const catalog=JSON.parse(await readFile(new URL('../catalog/products.json',import.meta.url),'utf8'));
+  const controllerCases=catalog.products.filter(p=>p.category==='controller'&&p.entry).flatMap(p=>(p.configurations?.length?p.configurations:[{id:'default',options:{}}]).map(c=>[p.id,c.options??{}]));
+  for(const [id,configuration]of controllerCases){
    panel.unbind();host.dispose();host=await loadModel(id,configuration);panel.bind(host,{id});
    const buttons=host.list('button');assert.deepEqual(options('#inspect-button'),buttons.map(button=>button.path),`${id}: every real Button is selectable for inspection`);assert.equal(ui['#button-inspection'].hidden,false);
    for(const button of buttons){
     choose('#inspect-button',button.path);assert.equal(ui['#hold-button'].disabled,button.latching);assert.equal(ui['#release-button'].disabled,button.latching);assert.equal(ui['#focus-button'].disabled,false);ui['#focus-button'].onclick();assert.equal(focusCalls.at(-1).path,button.path,'All real controls, including sliders/touches, have a working focus route');assert.equal(focusCalls.at(-1).options.distance,50);
     const output=ui['#button-travel'];
     if(button.latching){
-     const before=button.getState();ui['#hold-button'].onclick();ui['#release-button'].onclick();assert.deepEqual(button.getState(),before,'Disabled inspection callbacks cannot accidentally toggle or hold a slider');assert.equal(panel.held.size,0);assert.equal(output.dataset.actuation,'latching');assert.equal(output.dataset.position,'0');assert.match(output.textContent,/稳定档位 0.*松开保持档位/);
-     ui['#button-controls'].children.find(element=>element.dataset.button===button.path).onclick();settle();panel.refreshState();assert.equal(button.position,1);assert.equal(button.pressed,false);assert.equal(output.dataset.position,'1');assert.equal(output.dataset.settled,'true');assert.match(output.textContent,/稳定档位 1/);assert.equal(button.getActuationState().depthMm,button.travel,'Original independent switch click reaches the second stable detent');button.setPosition(0,{immediate:true});panel.refreshState();
+     const before=button.getState(),initialPosition=before.position,nextPosition=1-initialPosition;ui['#hold-button'].onclick();ui['#release-button'].onclick();assert.deepEqual(button.getState(),before,'Disabled inspection callbacks cannot accidentally toggle or hold a slider');assert.equal(panel.held.size,0);assert.equal(output.dataset.actuation,'latching');assert.equal(output.dataset.position,String(initialPosition));assert.match(output.textContent,new RegExp(`稳定档位 ${initialPosition}.*松开保持档位`));
+     ui['#button-controls'].children.find(element=>element.dataset.button===button.path).onclick();settle();panel.refreshState();assert.equal(button.position,nextPosition);assert.equal(button.pressed,false);assert.equal(output.dataset.position,String(nextPosition));assert.equal(output.dataset.settled,'true');assert.match(output.textContent,new RegExp(`稳定档位 ${nextPosition}`));assert.equal(button.getActuationState().depthMm,button.travel*nextPosition,'Independent switch click reaches the other stable detent');button.setPosition(initialPosition,{immediate:true});panel.refreshState();
     }else if(button.travel===0){
      assert.equal(output.dataset.actuation,'capacitive');assert.equal(output.dataset.position,undefined,'A previous stable detent cannot leak into touch readout');assert.match(output.textContent,/电容触摸.*已松开.*机械行程 0 mm/);ui['#hold-button'].onclick();settle();panel.refreshState();assert.equal(button.pressed,true);assert.equal(button.getActuationState().depthMm,0);assert.equal(output.dataset.pressed,'true');assert.match(output.textContent,/电容触摸.*已按下.*机械行程 0 mm/);assert.ok(panel.held.get(`inspect:${button.path}`)===button,'Zero-travel inspection preserves the normal hold owner');ui['#release-button'].onclick();settle();panel.refreshState();assert.equal(button.pressed,false);assert.equal(button.cap.position.length(),0);assert.equal(output.dataset.pressed,'false');assert.equal(panel.held.size,0);
     }else{assert.equal(output.dataset.actuation,'momentary');assert.equal(output.dataset.position,undefined);assert.match(output.textContent,/行程/);}

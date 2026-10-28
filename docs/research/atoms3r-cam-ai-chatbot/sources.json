@@ -1,0 +1,52 @@
+{
+  "id": "atoms3r-cam-ai-chatbot",
+  "sku": "K147-CAM",
+  "officialDocs": "https://docs.m5stack.com/en/core/AtomS3R-CAM_AI_Chatbot",
+  "parentExactModel": "atoms3r-cam",
+  "baseSku": "A149",
+  "method": "Own-kit native base geometry and independently documented exact controller implementation;fully mated named assembly",
+  "nativeSource": {
+    "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/K147-CAM_AtomS3R-CAM_AI_Chatbot/Structures/AtomS3R-CAM_AI_Chatbot.stl",
+    "file": "AtomS3R-CAM_AI_Chatbot.stl",
+    "bytes": 779484,
+    "sha256": "c1de1ec2778ad1d34d4a63be812783596847a2a9a91d8cea1fa0cfd4cbbc8ea1",
+    "gitBlob": "93482268f034fe8f4dd3a14d5a8b1040ff411f09"
+  },
+  "hardwareSnapshot": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+  "nativeLedger": "docs/research/atoms3r-cam-ai-chatbot/native-map.json",
+  "baseDrawing": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/atom/Atomic%20Echo%20Base/model%20size.jpg",
+  "referenceSources": [
+    "https://docs.m5stack.com/en/core/AtomS3R-CAM_AI_Chatbot",
+    "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1148/K147-CAM_04.webp",
+    "https://docs.m5stack.com/en/atom/Atomic%20Voice%20Base"
+  ],
+  "artworkRegister": "docs/research/atoms3r-cam-ai-chatbot/artwork.json",
+  "license": {
+    "spdx": "MIT",
+    "notice": "licenses/M5_Hardware-MIT.txt"
+  },
+  "fixture": {
+    "path": "scripts/check-atoms3r-cam-ai-chatbot-controller.mjs",
+    "export": "checkAtomS3RCAMAIChatbotController"
+  },
+  "limitations": [
+    "Exact named controller plus Atomic Voice Base A149;not a standalone host alias. Each exact kit contributes its own native base geometry.",
+    "Official base drawing:24×24×14.14mm including4.14mm mating pins;10mm enclosure adds10mm to the parent assembled depth. Rigid source translation only,no scaling/remeshing.",
+    "Contact tips and hidden PCB/speaker/codec envelopes are visual assembly estimates,not manufacturing tolerances or an electrical bus model.",
+    "Approved user-supplied ordinary PNGs use current Voice Base wording;older own kit photographs say Echo Base. This print revision difference is explicit.",
+    "Visible camera/speaker/microphone are passive physical parts;no camera/audio,AI,cloud,firmware or sensor simulation."
+  ],
+  "assembledMating": {
+    "documentedUnmatedPinProjectionMm": 4.14,
+    "metalBodyLengthMm": 4.14,
+    "visualAssembledInsertionMm": 2,
+    "sampledMinimumTipToActualHostStopGapMm": 0.2,
+    "hiddenDimensions": "appearance inference constrained by current real socket stops;not manufacturing tolerance",
+    "speakerFrontFrameMm": [
+      20,
+      14
+    ],
+    "baseExposedFivePinPitchMm": 2,
+    "baseExposedFivePinPitchBasis": "own native window and own photographs inferred;not rated connector data"
+  }
+}

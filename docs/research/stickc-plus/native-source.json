@@ -1,0 +1,106 @@
+{
+  "source": {
+    "id": "stickc-plus",
+    "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/K016-P_StickC-Plus/Structures/StickC-Plus.stl",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "gitBlob": "34ca1eb16724fab265eeb6dc9a004e547ddb408c",
+    "sha256": "56dcfd382032d177ea049f890f59db965a56c161a8db588e80dd45e66576685a",
+    "bytes": 616284,
+    "rawFaces": 12324,
+    "actualFaces": 6162,
+    "excludedDuplicatePreviewFaces": 6162,
+    "allSourceFacesAccounted": true,
+    "duplicateComponentPairs": [
+      [
+        0,
+        1
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "duplicateCorrespondence": [
+      {
+        "actualComponent": 0,
+        "duplicateComponent": 1,
+        "duplicateToActualTranslationMm": [
+          80.02777099609375,
+          0.0,
+          0.0
+        ],
+        "facePairCount": 3362,
+        "sourceFacePairOffset": 3362,
+        "pairingOrder": "Corresponding sourceFaceIndex arrays in original component order",
+        "pairSha256": "ef0812d9ebbcd2cf785a081ed6e5edc144aa8c72111d5f4451d77db59de0b3a5",
+        "maximumVertexResidualMm": 7.62939453125e-06,
+        "maximumSourceNormalResidual": 4.648490996967368e-13,
+        "attributeWordsIdentical": true
+      },
+      {
+        "actualComponent": 3,
+        "duplicateComponent": 2,
+        "duplicateToActualTranslationMm": [
+          41.37929916381836,
+          0.0,
+          0.0
+        ],
+        "facePairCount": 2800,
+        "sourceFacePairOffset": -2800,
+        "pairingOrder": "Corresponding sourceFaceIndex arrays in original component order",
+        "pairSha256": "340cad147ab932f26def46afb2007cee77000858934b87bedf909e98c3d5657a",
+        "maximumVertexResidualMm": 3.0994415283203125e-06,
+        "maximumSourceNormalResidual": 0,
+        "attributeWordsIdentical": true
+      }
+    ],
+    "nativeScale": [
+      1,
+      1,
+      1
+    ],
+    "sourceTopologyBoundary": "Two selected closed positive shell components; two translated duplicate previews excluded.",
+    "license": {
+      "spdx": "MIT",
+      "text": "MIT License\n\nCopyright (c) 2021 M5Stack\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE."
+    }
+  },
+  "parts": [
+    {
+      "id": "front-shell",
+      "sourceComponent": 0,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "triangles": 3362,
+      "attributeSha256": {
+        "position": "85465f289b2d9c4bc38d1689ebb01af3ee3dcd84fb938e86d4dc89c2a13dee66",
+        "normal": "f63f42b43bbf0c782349f30f0ae6e8470e02097edd0d092a8278541f85ae405d",
+        "index": "20aad084fc7bbc5b1b92d38a17e2ec617609903272d9064c0cf698f193823858",
+        "sourceFaceIndex": "0c66cc97668dbacc2abcee2dff59c515f17f1ec486afdc589531ab75c641b352",
+        "sourceAttributeWord": "e5576210b28b8ef08431543bd35410d670787dcc76b52e10102b6aad8f280ec4"
+      },
+      "sourceClosedDirectedTwoEdges": true
+    },
+    {
+      "id": "rear-shell",
+      "sourceComponent": 3,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "triangles": 2800,
+      "attributeSha256": {
+        "position": "91098f79ce84346ce6d2fdc35f8b15418a7d7c9c364fef7eca2a9711b19177be",
+        "normal": "ed61b13926ff0211e3c706b9c27a58ad2b911b7d151cfd542885d071aee202e5",
+        "index": "4734e85bdbcc4d64007bf843be2861b2bff9d54dc84f9da3f296209d2c72101e",
+        "sourceFaceIndex": "08b2d4d833a91b4c7125924aea33f613f571f5b9f28ddf51af115893282b5bde",
+        "sourceAttributeWord": "efda51d6a2cb7308d88483cbdd30d47fc2d522b943017c725eb4c0cdaa1f58fe"
+      },
+      "sourceClosedDirectedTwoEdges": true
+    }
+  ]
+}

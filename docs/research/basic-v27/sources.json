@@ -1,0 +1,470 @@
+{
+  "id": "basic-v27",
+  "sku": "K001-V27",
+  "name": "Basic v2.7",
+  "checkedAt": "2026-10-28",
+  "officialDocs": "https://docs.m5stack.com/en/core/basic_v2.7",
+  "officialKnowledge": "Official M5Stack knowledge_search via configured m5stack-assistant script;raw response retained privately outside distribution.",
+  "constructionRoute": "Own immutable K001-V27 Middle Frame and four button instances plus original revised rear base/glass/supported physical assembly reconstruction",
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/K001-V27_Basic_v2.7/Structures/Basic_v2.7_Bottom_Shell.obj",
+      "repository": "m5stack/M5_Hardware",
+      "immutableCommit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+      "gitBlob": "f612c6f4778062eaecfa1dd5e45ff2fd7717987a",
+      "sha256": "6e7919097e4ddca1c5f73eb033c80187626d811d9fc007b348e8e23affe31ea0",
+      "license": "MIT",
+      "runtimeTreatment": "reference-only original reconstruction;17639 raw faces;0 retained faces"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/K001-V27_Basic_v2.7/Structures/Basic_v2.7_Button.stl",
+      "repository": "m5stack/M5_Hardware",
+      "immutableCommit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+      "gitBlob": "70e23dc7245ef23f1c1e3bd74ad8992e32fbfc1c",
+      "sha256": "e7d55181225da4bf3af20132d382a93b92abce4e2a49a7cf35b394801e272da2",
+      "license": "MIT",
+      "runtimeTreatment": "unchanged source arrays;rigid placement and actuation only"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/K001-V27_Basic_v2.7/Structures/Basic_v2.7_Middle_Frame.stl",
+      "repository": "m5stack/M5_Hardware",
+      "immutableCommit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+      "gitBlob": "1a6d021bba8d7ef5c5c07bb90ddfb4c724c8b664",
+      "sha256": "4715a1058de9fdaf740f097f2d7d514322e5a63599dc400c257a96c75cfa6612",
+      "license": "MIT",
+      "runtimeTreatment": "unchanged source arrays;rigid placement and actuation only"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/K001-V27_Basic_v2.7/Structures/Basic_v2.7_Side_Button.stl",
+      "repository": "m5stack/M5_Hardware",
+      "immutableCommit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+      "gitBlob": "2945c3d68ca688b4571ca1486c3a82ee3845e943",
+      "sha256": "4a4cf09bd8ec95490fa9b4922584414aec757ec22532f05f991156195dd78c4b",
+      "license": "MIT",
+      "runtimeTreatment": "unchanged source arrays;rigid placement and actuation only"
+    }
+  ],
+  "nativeLedger": "native-map.json",
+  "nativeSourceAccounting": {
+    "middleRawFaces": 10810,
+    "frontButtonRawFaces": 2484,
+    "frontButtonInstances": 3,
+    "sideButtonRawFaces": 2372,
+    "sideButtonInstances": 1,
+    "uniqueRetainedFaces": 15666,
+    "retainedInstanceFaces": 20634,
+    "bottomReferenceRawFaces": 17639,
+    "bottomRetainedFaces": 0,
+    "bottomSourceSingleEdges": 537,
+    "bottomReason": "Own supplied OBJ lacks photographed bottom slide aperture and has open embossed-text details;original reconstruction explicitly replaces it."
+  },
+  "coordinateMap": "Source (x,y,z) -> (x,-z,y+0.2) mm;rigid positive rotation about X;no scale",
+  "dimensions": {
+    "nominalMm": [
+      54,
+      54,
+      17
+    ],
+    "ownNativeAssemblyReferenceEnvelopeMm": [
+      54.1925106048584,
+      54.000003814697266,
+      17.000000190734863
+    ],
+    "conflicts": [
+      "Hero photograph caption 54x54x18",
+      "Packaging photograph 54x54x17.5",
+      "Current specification table 54x54x17"
+    ],
+    "resolution": "Retain exact own native scale;do not uniformly rescale to a conflicting caption",
+    "completeVisualPhysicalEnvelopeMm": [
+      54.29999998807907,
+      54.04000190734864,
+      17.27000000357628
+    ]
+  },
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/basic_v2.7/basic_v2.7_01.webp",
+      "sha256": "f60e6627a00ba37d9a9fa53ddc68c202a1f6cb66f819a9ef1d2dace60ad862f0",
+      "use": "product identity and visible physical features",
+      "redistributed": false
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/basic_v2.7/basic_v2.7_02.webp",
+      "sha256": "e11d9bcd43563f56518bfe726718fa0bdb850d8b9c20a8b5e1971c1d11f93599",
+      "use": "bottom switch and four feet",
+      "redistributed": false
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/654/K001-V27_01.webp",
+      "sha256": "870e77c5c71e7a74f79e9653aad019d94f3dd7f3533905e78fd6f9b415c45500",
+      "use": "exact K001-V27 packaging",
+      "redistributed": false
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/basic_v2.7/basic_v2.7_03.webp",
+      "sha256": "a445c2e95959719cbaffde33af9a80b5113ef696780ec7990aefd93146d67465",
+      "use": "native-aperture-supported reconstruction",
+      "redistributed": false
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/654/K001-V27_02.webp",
+      "sha256": "1c4e653ac8295aa4f113ccba701d8285e53e4148c8a934d4a8c7a091e55eb936",
+      "use": "dimension conflict",
+      "redistributed": false
+    }
+  ],
+  "license": {
+    "code": "Repository MIT",
+    "nativeCad": "M5_Hardware MIT",
+    "file": "licenses/M5_Hardware-MIT.txt",
+    "sha256": "44611d917bece311f5c8eeffce83d8bf9e9ca3f815d262f694ff4a7996af50ea",
+    "copyright": "Copyright (c) 2021 M5Stack",
+    "artwork": "User-approved ordinary rasters;M5Stack marks/images retain their respective rights;private sources are not distributed."
+  },
+  "facts": {
+    "soc": "ESP32-D0WDQ6-V3",
+    "flashMB": 16,
+    "display": "2.0-inch ILI9342C 320x240,non-touch",
+    "usbBridge": "CH9102F",
+    "keys": "3 front physical buttons + side Power/Reset + rear stable switch",
+    "battery": "110mAh 3.7V",
+    "grove": "Red Port A I2C"
+  },
+  "schematicCaution": "Product links a 2017 M5-Core schematic with different ESP32/Flash/USB-UART revisions;not treated as a verified K001-V27 hidden BOM.",
+  "inferences": [
+    "Cover-glass placement,thickness and key aperture registration",
+    "40.64x30.48 active display from nominal two-inch 4:3 diagonal",
+    "PCB/supports,fasteners,passive packages,connector depths and mating contacts",
+    "Reconstructed rear base wall thickness,foot seating,battery package and backside switch placement",
+    "0.30mm front/0.25mm side key stroke and 2.8mm rear switch stroke",
+    "Molded brand relief geometric approximation from readable same-model photo"
+  ],
+  "artwork": "artwork.json",
+  "validation": {
+    "script": "scripts/check-basic-v27-controller.mjs",
+    "report": "docs/research/basic-v27/smoke.json",
+    "visual": null,
+    "status": "modeled",
+    "boundary": "CPU direct-file geometry/input/output/connection/resource proof only;no GPU/browser,manufacturing,electrical/firmware or physical-device verification"
+  },
+  "publicAPI": {
+    "spec": {
+      "id": "basic-v27",
+      "name": "Basic v2.7",
+      "sku": "K001-V27",
+      "revision": "v2.7",
+      "category": "controller",
+      "size": [
+        54,
+        54,
+        17
+      ],
+      "soc": "ESP32-D0WDQ6-V3",
+      "flashMB": 16,
+      "frame": "+X right,+Y top,+Z screen;native CAD (x,y,z) maps to (x,-z,y+0.2) mm",
+      "nativeReferenceEnvelopeMm": [
+        54.1925106048584,
+        54.000003814697266,
+        17.000000190734863
+      ],
+      "dimensionsConflict": "Official table 54x54x17;hero photo caption18;packaging photo17.5. No uniform scaling is used.",
+      "display": {
+        "resolution": [
+          320,
+          240
+        ],
+        "size": [
+          40.64,
+          30.48
+        ],
+        "position": [
+          0,
+          2.8,
+          8.49
+        ],
+        "touch": false,
+        "source": "2-inch 4:3 diagonal-derived active area;registration from exact K001-V27 photographs"
+      },
+      "buttons": [
+        {
+          "id": "a",
+          "label": "A · G39",
+          "center": [
+            -12,
+            -21,
+            8.5
+          ],
+          "sourceTranslationX": 0,
+          "pin": "G39",
+          "travelMm": 0.3
+        },
+        {
+          "id": "b",
+          "label": "B · G38",
+          "center": [
+            0,
+            -21,
+            8.5
+          ],
+          "sourceTranslationX": 12,
+          "pin": "G38",
+          "travelMm": 0.3
+        },
+        {
+          "id": "c",
+          "label": "C · G37",
+          "center": [
+            12,
+            -21,
+            8.5
+          ],
+          "sourceTranslationX": 24,
+          "pin": "G37",
+          "travelMm": 0.3
+        }
+      ],
+      "power": {
+        "position": [
+          -27.1925106048584,
+          13,
+          1.1
+        ],
+        "travelMm": 0.25
+      },
+      "grove": {
+        "position": [
+          -27,
+          -14,
+          -0.3
+        ],
+        "pins": [
+          "GND",
+          "5V",
+          "G21",
+          "G22"
+        ]
+      },
+      "usb": {
+        "position": [
+          -27,
+          0,
+          0.75
+        ]
+      },
+      "microSD": {
+        "position": [
+          -6.5,
+          -27,
+          0.7
+        ]
+      },
+      "switch": {
+        "position": [
+          -10.5,
+          9,
+          -8.5
+        ],
+        "slot": [
+          3.2,
+          6.8
+        ],
+        "travelMm": 2.8
+      },
+      "mbus": {
+        "position": [
+          21,
+          0,
+          -4.35
+        ],
+        "rows": 15,
+        "cols": 2,
+        "pitch": 2.54,
+        "pins": [
+          "GND",
+          "G35",
+          "GND",
+          "G36",
+          "GND",
+          "EN",
+          "G23",
+          "G25",
+          "G19",
+          "G26",
+          "G18",
+          "3V3",
+          "G3",
+          "G1",
+          "G16",
+          "G17",
+          "G21",
+          "G22",
+          "G2",
+          "G5",
+          "G12",
+          "G13",
+          "G15",
+          "G0",
+          "HPWR",
+          "G34",
+          "HPWR",
+          "5V",
+          "HPWR",
+          "BAT"
+        ]
+      },
+      "limitations": [
+        "Rear base is an original K001-V27 photo/CAD-reference reconstruction:its supplied OBJ omits the photographed bottom switch and has open embossed-text edges;it is not relabeled old-Core geometry.",
+        "Native Middle Frame and four native button instances retain source position,stored normals,face IDs,attribute words and identity index;B/C are rigidly translated copies of the exact supplied front-button part.",
+        "Glass registration,LCD active area,hidden PCB/supports,connector internals,rear-shell wall thickness and button travel are appearance estimates;not manufacturing dimensions.",
+        "M-Bus and side-access contacts are visual mechanical geometry;protocol/electrical compatibility,firmware,power/reset,battery,audio and storage behavior are external.",
+        "Supplied compliance/care PNGs are available but not placed on an unconfirmed housing land."
+      ]
+    },
+    "defaults": {
+      "artwork": true,
+      "base": "installed"
+    },
+    "configurations": [
+      {
+        "id": "complete",
+        "name": "Basic v2.7 · 完整电池底座",
+        "options": {}
+      },
+      {
+        "id": "base-removed",
+        "name": "Basic v2.7 · 底座拆下",
+        "options": {
+          "base": "removed"
+        }
+      }
+    ],
+    "configurationSchema": {
+      "artwork": {
+        "type": "boolean",
+        "default": true,
+        "meaning": "Ink only;physical substrates,glass,native source arrays,switch,ports and motion remain"
+      },
+      "base": {
+        "type": "enum",
+        "values": [
+          "installed",
+          "removed"
+        ],
+        "default": "installed",
+        "meaning": "Default complete battery base;removed exposes the actual host M-Bus and rear PCB. Separate battery base is omitted,not an electrically simulated module."
+      }
+    },
+    "cases": [
+      {
+        "id": "complete",
+        "options": {},
+        "bodyComponentOrder": [
+          "a",
+          "b",
+          "c",
+          "power",
+          "lcd",
+          "usb",
+          "grove",
+          "micro-sd",
+          "mbus",
+          "power-switch"
+        ],
+        "bodyComponentKinds": {
+          "a": "button",
+          "b": "button",
+          "c": "button",
+          "power": "button",
+          "lcd": "display",
+          "usb": "port",
+          "grove": "port",
+          "micro-sd": "port",
+          "mbus": "port",
+          "power-switch": "button"
+        },
+        "buttons": [
+          "a",
+          "b",
+          "c",
+          "power",
+          "power-switch"
+        ],
+        "ports": [
+          "usb",
+          "grove",
+          "micro-sd",
+          "mbus"
+        ],
+        "displays": [
+          "lcd"
+        ],
+        "panelCount": 5,
+        "physicalEnvelopeMm": [
+          54.29999998807907,
+          54.04000190734864,
+          17.27000000357628
+        ]
+      },
+      {
+        "id": "base-removed",
+        "options": {
+          "base": "removed"
+        },
+        "bodyComponentOrder": [
+          "a",
+          "b",
+          "c",
+          "power",
+          "lcd",
+          "usb",
+          "grove",
+          "micro-sd",
+          "mbus"
+        ],
+        "bodyComponentKinds": {
+          "a": "button",
+          "b": "button",
+          "c": "button",
+          "power": "button",
+          "lcd": "display",
+          "usb": "port",
+          "grove": "port",
+          "micro-sd": "port",
+          "mbus": "port"
+        },
+        "buttons": [
+          "a",
+          "b",
+          "c",
+          "power"
+        ],
+        "ports": [
+          "usb",
+          "grove",
+          "micro-sd",
+          "mbus"
+        ],
+        "displays": [
+          "lcd"
+        ],
+        "panelCount": 1,
+        "physicalEnvelopeMm": [
+          54.29999998807907,
+          54.04000190734864,
+          12.859999952316283
+        ]
+      }
+    ],
+    "publicExports": [
+      "Model",
+      "configurationSchema",
+      "configurations",
+      "default",
+      "defaults",
+      "spec"
+    ],
+    "defaultExport": "Model",
+    "assemblyProperty": "basicV27Assembly"
+  }
+}

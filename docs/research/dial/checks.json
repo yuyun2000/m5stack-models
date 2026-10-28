@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "sku": "K130",
+  "topologyMeshes": 101,
+  "native": {
+    "parts": 9,
+    "actualFaces": 29240,
+    "duplicateFaces": 29240,
+    "exactOriginalAttributes": true
+  },
+  "controls": {
+    "momentary": 3,
+    "partialFullSurfaceRays": true,
+    "fixedParts": true,
+    "cancelNoClick": true,
+    "exactNativeReturn": true,
+    "ringDragAcrossWrap": true,
+    "externalOutputNoEcho": true
+  },
+  "framebuffer": {
+    "width": 240,
+    "height": 240,
+    "shape": "circle",
+    "rgb565RGBA": true,
+    "touchCancel": true
+  },
+  "grove": {
+    "ports": 2,
+    "realCables": true,
+    "detachReuse": true,
+    "plugFitRays": 64,
+    "plugMinGapMm": 0.20999988913535805
+  },
+  "artworkPhysicalInvariant": true,
+  "scope": "Actual K130 model CPU geometry/input/framebuffer/connection; browser pixels,manufacturing tolerances,electrical/RFID/RTC/firmware and physical-device acceptance separate"
+}

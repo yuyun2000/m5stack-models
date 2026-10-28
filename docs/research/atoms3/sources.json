@@ -1,0 +1,154 @@
+{
+  "id": "atoms3",
+  "sku": "C123",
+  "retrievedAt": "2026-10-28",
+  "officialDocs": "https://docs.m5stack.com/en/core/AtomS3",
+  "officialKnowledge": {
+    "status": "success",
+    "method": "m5stack-assistant knowledge_search wrapper",
+    "scope": "Exact C123 product specifications,pins,LCD,buttons and own photo links;raw response excluded"
+  },
+  "identity": {
+    "name": "AtomS3",
+    "soc": "ESP32-S3FN8",
+    "display": "0.85-inch 128x128 IPS;GC9107 documented",
+    "buttons": [
+      "G41 LCD key",
+      "side Reset"
+    ],
+    "actualSizeMm": [
+      24.000019073486328,
+      24.00000008393355,
+      12.899999856948853
+    ]
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/C123_AtomS3/Structures/AtomS3.stl",
+      "repository": "https://github.com/m5stack/M5_Hardware",
+      "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+      "gitBlob": "1ab203db30109f57494648c1ebe64e7ebb7f1859",
+      "sha256": "079245a667a8edf5dd7b609c3c963f7eb47caa61910ae70640d047264f2ca9d1",
+      "bytes": 416084,
+      "license": "MIT",
+      "licenseFile": "src/devices/atoms3/LICENSE-M5-Hardware.txt",
+      "use": "Own native C123 dual shell;all original actual face arrays retained,duplicate preview independently paired"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3/4.webp",
+      "sha256": "bccd74964fd849bfe36e28c05f12769c1d80d3c10bb9b430aa9b0541b4ede497",
+      "purpose": [
+        "own-product identity",
+        "own multi-view geometry/print registration"
+      ]
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3/5.webp",
+      "sha256": "48cdcfab5b131b1da5114eb0a8aa47466150266cb1607a006ce945f01faead0f",
+      "purpose": [
+        "own-product identity",
+        "own multi-view geometry/print registration"
+      ]
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3/6.webp",
+      "sha256": "c77b532fad9ace7936a0bdfab9f817bed68011bcd4aae2e1c6078075449e18d7",
+      "purpose": [
+        "own-product identity",
+        "own multi-view geometry/print registration"
+      ]
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3/7.webp",
+      "sha256": "239d16cf0790bde935a286fa4c753bac56bb4ca0635ceb140c3f9bf9e60384d4",
+      "purpose": [
+        "own-product identity",
+        "own multi-view geometry/print registration"
+      ]
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3/8.webp",
+      "sha256": "c05d43310020b2a75e2fee1ab2ec47803274fe64b35384c11fef16daa68d941d",
+      "purpose": [
+        "own-product identity",
+        "own multi-view geometry/print registration"
+      ]
+    }
+  ],
+  "nativeAccounting": {
+    "rawTriangles": 8320,
+    "actualTriangles": 4160,
+    "duplicatePreviewTriangles": 4160,
+    "allOriginalAttributesRetainedAtRest": true,
+    "faceMap": "docs/research/atoms3/source-face-map.json",
+    "maxRigidMatchErrorMm": 6.689690053462982e-06
+  },
+  "inferred": [
+    "Hidden PCB/support/package dimensions and retention",
+    "Connector wall/depth/contact fit",
+    "LCD active square from documented diagonal",
+    "0.18 mm LCD-key and 0.15 mm Reset visual travel",
+    "Native Reset deformation field and follower mapping",
+    "Folded LCD insulating carrier from own photograph"
+  ],
+  "conflicts": [
+    "Official paragraph 13.0mm,specification 12.9mm,own promotional picture12.8mm;own native12.9mm retained without scaling",
+    "Supplied old ST7735 rear artwork differs from current own C123 GC9107 photo;current-photo reference redraw used"
+  ],
+  "artwork": {
+    "pngCount": 3,
+    "panelCount": 3,
+    "kind": "reference-redraw",
+    "assets": [
+      {
+        "file": "src/devices/atoms3/artwork/compliance.png",
+        "sha256": "015882d3cc887941d1d9cf7f67baa0f99d38883239a5e80ee3544312b1e15ac6",
+        "pixelSize": [
+          4096,
+          2673
+        ],
+        "origin": "reference-redraw",
+        "metadataEmpty": true,
+        "crcValid": true,
+        "sourceReference": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3/5.webp"
+      },
+      {
+        "file": "src/devices/atoms3/artwork/lcd-flex.png",
+        "sha256": "9d96b3b3de0068e491491cf428f30504763ff7e9eea43789bd5ee99576270817",
+        "pixelSize": [
+          4096,
+          240
+        ],
+        "origin": "reference-redraw",
+        "metadataEmpty": true,
+        "crcValid": true,
+        "sourceReference": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3/7.webp"
+      },
+      {
+        "file": "src/devices/atoms3/artwork/rear.png",
+        "sha256": "a18bb78ef6562276e30fbf9e7dcda26eafb203b467094305e30e79c5fc1172d5",
+        "pixelSize": [
+          3277,
+          4096
+        ],
+        "origin": "reference-redraw",
+        "metadataEmpty": true,
+        "crcValid": true,
+        "sourceReference": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/AtomS3/8.webp"
+      }
+    ],
+    "scope": "Approved final ordinary raster only;no source vector/table/original name/URL mapping or photograph crop distributed;graphic rights remain M5Stack"
+  },
+  "runtimeBoundary": [
+    "No firmware,reboot/download/electrical/bus/sensing emulation",
+    "No automatic boot framebuffer or reset output effect",
+    "No touch/LED/IMU/sensor/speaker/joint component registered"
+  ],
+  "verification": {
+    "geometry": "docs/research/atoms3/smoke.json",
+    "visual": null,
+    "stage": "modeled"
+  }
+}

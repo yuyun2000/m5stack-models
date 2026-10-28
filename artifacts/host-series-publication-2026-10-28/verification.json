@@ -1,0 +1,321 @@
+{
+  "status": "pass",
+  "date": "2026-10-28",
+  "checks": [
+    "clean npm ci --ignore-scripts",
+    "check:series",
+    "check:controllers",
+    "check:connections",
+    "check:demo",
+    "check:input-picking",
+    "production build",
+    "check-atom-stick-artwork-build"
+  ],
+  "cleanStagedExportFilesMatched": 383,
+  "catalog": {
+    "products": 222,
+    "controllers": 38,
+    "units": 184,
+    "newControllers": 21,
+    "allModeled": true
+  },
+  "sourceManifestSha256": "c4439711c582007ccfbe418a57f914e1c8aff8565a2644fcf1ba1a0d2f408a83",
+  "catalogSha256": "bcfcc6592b6609dc6460ac1f477284877999193414383fa620443dbf3d6ab4d5",
+  "http": {
+    "url": "http://127.0.0.1:5188",
+    "newControllerLazyChunks": 21,
+    "files": [
+      {
+        "path": "assets/atom-echo-DbPsrEcf.js",
+        "bytes": 695572,
+        "sha256": "1209fb36768faf155b21911c7928370d75735623e20f20e1fe72f25705199921",
+        "status": 200
+      },
+      {
+        "path": "assets/atom-echos3r-C5yg496L.js",
+        "bytes": 695396,
+        "sha256": "beabd1e6d5426297077f48549df0eac1c315d97929bc7a782f5438a6d16fcc7a",
+        "status": 200
+      },
+      {
+        "path": "assets/atom-matrix-v11-BtEYyFQ_.js",
+        "bytes": 395901,
+        "sha256": "90eeb730b7f7ce7aaf1f19199382884cb54c45d30e93c74788b30e740a859c52",
+        "status": 200
+      },
+      {
+        "path": "assets/atoms3-B4QsMLFD.js",
+        "bytes": 583851,
+        "sha256": "28f8ea6c38915cfae17cda0e7ac242e99c82f966b692a86f30b1963ef5957244",
+        "status": 200
+      },
+      {
+        "path": "assets/atoms3r-ai-chatbot-BHubGild.js",
+        "bytes": 320435,
+        "sha256": "aef362cd4ac6c5ca165b35233d93eab7f527d0f13c7210cdea3fbf9585678d1e",
+        "status": 200
+      },
+      {
+        "path": "assets/atoms3r-cam-B_KbbNYF.js",
+        "bytes": 465308,
+        "sha256": "b47b88c38483c037463318eedc02941421968e3753c8c4593ba00efc0558bf23",
+        "status": 200
+      },
+      {
+        "path": "assets/atoms3r-cam-ai-chatbot-BbYtWCUB.js",
+        "bytes": 433743,
+        "sha256": "030e316b8348f31649ab759300b6f8aece0efb66f5b4a1eaff519d208103b3f5",
+        "status": 200
+      },
+      {
+        "path": "assets/atoms3r-ext-QkdjV4Sf.js",
+        "bytes": 407589,
+        "sha256": "c35d1f8e7c6f4698eba1de2a8086d89d11a611cf89776b1c2da192e76c7bd5b6",
+        "status": 200
+      },
+      {
+        "path": "assets/atoms3r-m12-B902Ruqd.js",
+        "bytes": 795473,
+        "sha256": "53296be660f0bfc1903c614a6e6d8d684c25b6c785ffc3801443a3eecf420b6a",
+        "status": 200
+      },
+      {
+        "path": "assets/atoms3r-m12-volcengine-kit-DbzWNJ4c.js",
+        "bytes": 219211,
+        "sha256": "4764cb78f8907904f21ed33b011a06913f039aa25248ff123a12bf2864b172ba",
+        "status": 200
+      },
+      {
+        "path": "assets/atoms3u-WJusrYUW.js",
+        "bytes": 650088,
+        "sha256": "47a5043dad18a71347e5121ac029bfcd379aa7e1b0e7a40a9fd61c4255977d6d",
+        "status": 200
+      },
+      {
+        "path": "assets/atomu-WpJp_W0D.js",
+        "bytes": 17599,
+        "sha256": "42aa6f14d356ca3c0ed8c02924def5cc21a760aa7c2b1ad087e6cfc6ddb9f386",
+        "status": 200
+      },
+      {
+        "path": "assets/base-bottom-CEhD0yPG.png",
+        "bytes": 44288,
+        "sha256": "98d08ebfd31da46dea0ad568a263a3e9149f09f9b651dd33aca0c9c235c87d4f",
+        "status": 200
+      },
+      {
+        "path": "assets/base-front-DAdHQLPR.png",
+        "bytes": 10175,
+        "sha256": "7e3dab4ca7512bb7b9cc165390c4a2beaa1640405795e6cb6e8d6e61558674f8",
+        "status": 200
+      },
+      {
+        "path": "assets/base-mic-NmSJMvbS.png",
+        "bytes": 6171,
+        "sha256": "4be8ad8f1c60a5e51001081629f91e554ee7637b4fa179725cddce8ae61eafce",
+        "status": 200
+      },
+      {
+        "path": "assets/basic-v27-DyHACe04.js",
+        "bytes": 2149165,
+        "sha256": "ea0e564de8d8ab264c43044d40a0f66add1533bc2d033d2b9b719168f42c23fa",
+        "status": 200
+      },
+      {
+        "path": "assets/camera-CSbFmXmA.png",
+        "bytes": 107967,
+        "sha256": "ccef95d89402f1fd4c5391e628dff16720157f7905a26219d438059c7c0fb049",
+        "status": 200
+      },
+      {
+        "path": "assets/compliance-Bw_d46X0.png",
+        "bytes": 58586,
+        "sha256": "5c8aad0cb8abad5066592b9263f12d1dd2d783943b8bf68fc51fc8925f348aba",
+        "status": 200
+      },
+      {
+        "path": "assets/compliance-C-watSb9.png",
+        "bytes": 61344,
+        "sha256": "367c665e8f431bbe568b7385f29705dc8d9d38d2cd31d759ee3369c8514d5ceb",
+        "status": 200
+      },
+      {
+        "path": "assets/compliance-CMPhfgRE.png",
+        "bytes": 60632,
+        "sha256": "16ee6368326da6a1a72f1e637901b42d87c393c82a35fddf91ce37e57bc92e27",
+        "status": 200
+      },
+      {
+        "path": "assets/compliance-DQHjLpx9.png",
+        "bytes": 25258,
+        "sha256": "e065c851da4496ef789cad6e56e2f69fd6dd8d1be858994a08ba016fca31ffcf",
+        "status": 200
+      },
+      {
+        "path": "assets/compliance-UIn46B9j.png",
+        "bytes": 49023,
+        "sha256": "707a79a7c5a196688a851212974c9bccb20ba3d2a67ee5537b562fe7e93c8886",
+        "status": 200
+      },
+      {
+        "path": "assets/compliance-nLDZ1hAg.png",
+        "bytes": 35004,
+        "sha256": "7fed7bde77281d09ccab2f957f1e38db4aaae2319eaf3077e47ff78bd09e3598",
+        "status": 200
+      },
+      {
+        "path": "assets/dial-BKIkry_Z.js",
+        "bytes": 9901643,
+        "sha256": "bb1a72a13ebc447ef7ef21eaa084b0ed68cbffaa941184f1d58c94bc9bb965e0",
+        "status": 200
+      },
+      {
+        "path": "assets/index-CJncTZKT.js",
+        "bytes": 683144,
+        "sha256": "79fa71059c750c6c516cc7acac5ee7c46c6a27c627d7297980b935930a168bd8",
+        "status": 200
+      },
+      {
+        "path": "assets/index-DUfIhopB.css",
+        "bytes": 17151,
+        "sha256": "60ba438373a62e53f96fc2321990239236fc203cea8b3a8d305a78dc7fff29e5",
+        "status": 200
+      },
+      {
+        "path": "assets/m5stick-DhQtXgSG.js",
+        "bytes": 6595,
+        "sha256": "4525075a89d79c2de0ec0c066f62d2ad6e14ccba2aeb0beed2c6d8026cfffe9d",
+        "status": 200
+      },
+      {
+        "path": "assets/prototype-DfZ_5R_6.png",
+        "bytes": 45066,
+        "sha256": "c00353796de37f9e5434c8470c6a2906781b21cb9cfaca2bcf259cad7a1c0c46",
+        "status": 200
+      },
+      {
+        "path": "assets/rear-B4pX0f3z.png",
+        "bytes": 116323,
+        "sha256": "ac788ead6873d3a92825fcecc0c3609736d36eb1dcdc89cb4f7c5a2d2b8f3a3a",
+        "status": 200
+      },
+      {
+        "path": "assets/rear-BqiSaXmD.png",
+        "bytes": 91687,
+        "sha256": "046bb3eceb8b6f046e7f1540feb98726540ae46b348a337a5f19a1d54cd1699b",
+        "status": 200
+      },
+      {
+        "path": "assets/rear-CJYpx2s_.png",
+        "bytes": 251242,
+        "sha256": "203e6fcb7414cd041a43298f088ba8759ffcf50785536e5caed61471a623db2d",
+        "status": 200
+      },
+      {
+        "path": "assets/rear-CZy3zWju.png",
+        "bytes": 129049,
+        "sha256": "00b9ab901fabdd49a2fafd6bc5831eccbf6fed7abd97a384acc778dc7d4a6634",
+        "status": 200
+      },
+      {
+        "path": "assets/rear-DFyXlJlP.png",
+        "bytes": 121399,
+        "sha256": "bf0bf751cac84b5ec3287efb83cd3ab606419420b8574216acb6c4a5dca4ea92",
+        "status": 200
+      },
+      {
+        "path": "assets/rear-DQNlUtAs.png",
+        "bytes": 130671,
+        "sha256": "934f223edcceeb953888fd303edaab10fd5bb30d23f5787c1d69b008c8299f7c",
+        "status": 200
+      },
+      {
+        "path": "assets/rear-DU8kL3Vf.png",
+        "bytes": 125242,
+        "sha256": "6bf6c7e2b6675b2163791cb9bbc2e12db1ddd81f7b736e4b3f2fa489e89d8778",
+        "status": 200
+      },
+      {
+        "path": "assets/rear-gray-NiQjX5hN.png",
+        "bytes": 45711,
+        "sha256": "ef0cef7be23f53cb9a14ad32ec8ce98e0d2a4d02813d686f80cf7ffcf7447a30",
+        "status": 200
+      },
+      {
+        "path": "assets/rear-reference-redraw-DyWK9522.png",
+        "bytes": 136607,
+        "sha256": "3061c0e1580edbd1060dfa2539651bc4ba2ebc2f9b4eeb8652c54d6e4ae99d7f",
+        "status": 200
+      },
+      {
+        "path": "assets/rear-reference-redraw-kF02zXeH.png",
+        "bytes": 149970,
+        "sha256": "41029bc91e6d508863223bc67884bf7b59cf833290b8bfc31a9d3192ccf334ad",
+        "status": 200
+      },
+      {
+        "path": "assets/rear-tdilwusX.png",
+        "bytes": 276800,
+        "sha256": "4e35e91fd8366af4fc3d0ac2e217b252974743d804361f485f93cf96839d6d2b",
+        "status": 200
+      },
+      {
+        "path": "assets/rear-white-D0-4U8BO.png",
+        "bytes": 41156,
+        "sha256": "60ef5670fe76b0325e914582366c1fabb8daac0d3128ecefe5173a0a3e765a8f",
+        "status": 200
+      },
+      {
+        "path": "assets/rear-xFdX_PyV.png",
+        "bytes": 77951,
+        "sha256": "9225a657a5b1d44248cb064ababf327390e07d696bf701abc851ba3f11ca4a4b",
+        "status": 200
+      },
+      {
+        "path": "assets/stickc-3PRrqbsu.js",
+        "bytes": 6366994,
+        "sha256": "40b60246c2325f26f2c7b6e99dfff7da525ea3cfbee6db55ce0cc2ccceed7ac2",
+        "status": 200
+      },
+      {
+        "path": "assets/stickc-plus-CTqBEGmE.js",
+        "bytes": 2029294,
+        "sha256": "6b7a88df0f0d7d4675d68abb780a69e507bad259d9d56f55dfc10dbbc5a322d3",
+        "status": 200
+      },
+      {
+        "path": "assets/stickc-plus-se-A678Dxfy.js",
+        "bytes": 15257,
+        "sha256": "a00d3b92a7a4ca5ab3ca56ff0dc3caf3106f5c4b1e58291ccfd21c663b9dc8e1",
+        "status": 200
+      },
+      {
+        "path": "assets/stickc-plus2-CggZ8Oia.js",
+        "bytes": 15234,
+        "sha256": "3def28c0a7db0a45596445f26bccc8f5c9a3679449b963c738bfe9e7313892f9",
+        "status": 200
+      },
+      {
+        "path": "assets/stickt2-CawsKvVP.js",
+        "bytes": 2485248,
+        "sha256": "1e10ed185f3659955a17e39839a0c46b286ff9d69edfdc2788fd895fbe67e2c6",
+        "status": 200
+      },
+      {
+        "path": "assets/stickv-Dgbu7uE-.js",
+        "bytes": 8234,
+        "sha256": "0e072c0698b3bb62f5e1ee6f2b9436016b64422ffe7e3801396413a0d1001f2c",
+        "status": 200
+      },
+      {
+        "path": "index.html",
+        "bytes": 3415,
+        "sha256": "191bfb267f692c7f8bbd15fc78682fbe1c3f11ffca1d89cc20d45702cabf141d",
+        "status": 200
+      }
+    ],
+    "allByteExactToCleanProductionBuild": true
+  },
+  "seriesOrdinaryPngBytesVerified": 30,
+  "scope": "Fresh dependency install and checks on exact staged source export;served resources equal clean production output. Prior browser screenshots and reports remain dated historical evidence. Publication report is added after checks;it changes no runtime source."
+}

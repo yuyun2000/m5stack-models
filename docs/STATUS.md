@@ -2,9 +2,9 @@
 
 由 npm run catalog 生成；catalog/products.json 为权威状态。
 
-范围：精细外观建模，行为由下游模拟器负责。主机 17 款，Unit 184 款。
+范围：精细外观建模，行为由下游模拟器负责。主机 38 款，Unit 184 款。
 
-状态计数：{"modeled":201}。modeled 表示已有实现，不表示已完成视觉验收。
+状态计数：{"modeled":222}。modeled 表示已有实现，不表示已完成视觉验收。
 
 | 类别 | 产品 | 阶段 | 名义尺寸 X × Y × Z / mm | 下一步 |
 | --- | --- | --- | --- | --- |
@@ -209,3 +209,24 @@
 | 主机 | Atom Lite | modeled | 24 × 24 × 9.5 | Continueotherproducts;ownnominal/native/hiddenBOM/flexure/fitandartworkapproximationsremain;noGPUorphysicalverificationclaim |
 | 主机 | Atom Matrix original | modeled | 待确认 | undefined |
 | 主机 | AtomS3 Lite | modeled | 24 × 24 × 9.5 | Review visible appearance when requested;retain modeled until actual visual acceptance. |
+| 主机 | Dial | modeled | 51 × 51 × 32.3 | 已接入目录并检查网页选择、显示、实体按键/旋钮及Grove连接；继续逐面外观与隐藏尺寸精修，保持modeled。 |
+| 主机 | M5StickC Plus2 | modeled | 24 × 48 × 13.5 | 已接入目录并检查网页选择、显示、实体按键/旋钮及Grove连接；继续逐面外观与隐藏尺寸精修，保持modeled。 |
+| 主机 | AtomS3 | modeled | 24 × 24 × 12.9 | 已接入目录并检查网页选择、显示、实体按键/旋钮及Grove连接；继续逐面外观与隐藏尺寸精修，保持modeled。 |
+| 主机 | Basic v2.7 | modeled | 54 × 54 × 17 | 已接入目录并检查网页选择、显示、实体按键/旋钮及Grove连接；继续逐面外观与隐藏尺寸精修，保持modeled。 |
+| 主机 | Atom Matrix v1.1 | modeled | 24 × 24 × 13.9 | 已完成目录接入、专项/共享检查及网页加载；继续逐面视觉验收和推导尺寸核实，保持modeled。 |
+| 主机 | M5Stick | modeled | 25.5 × 48.2 × 13.7 | 已完成目录接入、专项/共享检查及网页加载；继续逐面视觉验收和推导尺寸核实，保持modeled。 |
+| 主机 | M5StickV | modeled | 24 × 48 × 22 | 已完成目录接入、专项/共享检查及网页加载；继续逐面视觉验收和推导尺寸核实，保持modeled。 |
+| 主机 | AtomS3R-AI Chatbot | modeled | 24 × 24 × 22.9 | 已完成目录接入、专项/共享检查及网页加载；继续逐面视觉验收和推导尺寸核实，保持modeled。 |
+| 主机 | AtomS3R-CAM | modeled | 24 × 24 × 13.5 | 已完成目录接入、专项/共享检查及网页加载；继续逐面视觉验收和推导尺寸核实，保持modeled。 |
+| 主机 | AtomS3R-CAM AI Chatbot | modeled | 24 × 24 × 23.5 | 已完成目录接入、专项/共享检查及网页加载；继续逐面视觉验收和推导尺寸核实，保持modeled。 |
+| 主机 | AtomS3R-M12 | modeled | 26.4 × 24 × 22.5 | 已完成目录接入、专项/共享检查及网页加载；继续逐面视觉验收和推导尺寸核实，保持modeled。 |
+| 主机 | AtomS3R-M12 Volcengine Kit | modeled | 26.4 × 24 × 32.5 | 已完成目录接入、专项/共享检查及网页加载；继续逐面视觉验收和推导尺寸核实，保持modeled。 |
+| 主机 | M5StickC | modeled | 25.5 × 48.2 × 13.7 | 已完成目录接入、专项/共享检查及网页加载；继续逐面视觉验收和推导尺寸核实，保持modeled。 |
+| 主机 | M5StickC Plus | modeled | 24 × 48 × 13.5 | 已完成目录接入、专项/共享检查及网页加载；继续逐面视觉验收和推导尺寸核实，保持modeled。 |
+| 主机 | AtomS3R-Ext | modeled | 24 × 24 × 12 | 已完成目录接入、专项/共享检查及网页加载；继续逐面视觉验收和推导尺寸核实，保持modeled。 |
+| 主机 | M5StickC Plus SE | modeled | 24 × 48 × 13.52 | 已完成目录接入、专项/共享检查及网页加载；继续逐面视觉验收和推导尺寸核实，保持modeled。 |
+| 主机 | Atom Voice (Atom Echo) | modeled | 24 × 24 × 16.8 | 已完成目录接入、专项/共享检查及网页加载；继续逐面视觉验收和推导尺寸核实，保持modeled。 |
+| 主机 | Atom VoiceS3R (Atom EchoS3R) | modeled | 24 × 24 × 16.8 | 已完成目录接入、专项/共享检查及网页加载；继续逐面视觉验收和推导尺寸核实，保持modeled。 |
+| 主机 | AtomS3U | modeled | 20 × 53 × 10.3 | 已完成目录接入、专项/共享检查及网页加载；继续逐面视觉验收和推导尺寸核实，保持modeled。 |
+| 主机 | M5StickT2 | modeled | 24 × 48 × 24 | 已完成目录接入、专项/共享检查及网页加载；继续逐面视觉验收和推导尺寸核实，保持modeled。 |
+| 主机 | AtomU | modeled | 20 × 53 × 10.3 | 已完成目录接入、专项/共享检查及网页加载；继续逐面视觉验收和推导尺寸核实，保持modeled。 |

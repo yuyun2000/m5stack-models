@@ -1,0 +1,116 @@
+{
+  "source": {
+    "id": "stickt2",
+    "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/K016-T2_StickT2/Structures/StickT2.stl",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "gitBlob": "02d628266bc29ab7c59e31ff8456fa1ea5b6c0af",
+    "sha256": "60acbd17048b1bdc3e6ce535338e17869826e4ad715e96cedd710b0d547fcef3",
+    "bytes": 765084,
+    "rawFaces": 15300,
+    "actualFaces": 7650,
+    "excludedDuplicatePreviewFaces": 7650,
+    "allSourceFacesAccounted": true,
+    "duplicateCorrespondence": [
+      {
+        "id": "rear-shell",
+        "sourceFaceRange": [
+          0,
+          3129
+        ],
+        "duplicatePreviewFaceOffset": 3130,
+        "facePairCount": 3130,
+        "actualToPreviewTranslationMm": [
+          48.61556816101074,
+          0,
+          0
+        ],
+        "maximumVertexResidualMm": 2.86102294921875e-06,
+        "maximumSourceNormalResidual": 0.0,
+        "attributeWordsIdentical": true,
+        "pairSha256": "f3228d75050a82b30bc0d108bc5018b0a8f2e5a11d8abdcef367af25cf99d929"
+      },
+      {
+        "id": "front-shell",
+        "sourceFaceRange": [
+          6260,
+          10779
+        ],
+        "duplicatePreviewFaceOffset": 4520,
+        "facePairCount": 4520,
+        "actualToPreviewTranslationMm": [
+          94.84688377380371,
+          0,
+          0
+        ],
+        "maximumVertexResidualMm": 4.76837158203125e-06,
+        "maximumSourceNormalResidual": 0.0,
+        "attributeWordsIdentical": true,
+        "pairSha256": "3e3ba2fc713d200d606e312e1ead4fa84918df490903711bdc0c9bab3fed8f24"
+      }
+    ],
+    "nativeScale": [
+      1,
+      1,
+      1
+    ],
+    "rootRigidTransform": {
+      "rotationYRadians": 3.141592653589793,
+      "translationMm": [
+        0.012601852416992188,
+        22.01580047607422,
+        -0.45
+      ]
+    },
+    "sourceTopologyBoundary": "Rear positive closed component;front positive closed shell plus two inherited closed negative-volume interior boundaries. Preserve all 7650 own faces;all7650 preview faces paired and excluded.",
+    "license": {
+      "spdx": "MIT",
+      "text": "MIT License\n\nCopyright (c) 2021 M5Stack\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE."
+    }
+  },
+  "parts": [
+    {
+      "id": "rear-shell",
+      "sourceComponents": [
+        0
+      ],
+      "position": [
+        48.61556816101074,
+        0,
+        0
+      ],
+      "triangles": 3130,
+      "attributeSha256": {
+        "position": "a295e7699542313e34ba8200a45f78cd2fd0cda135dd488bec4b43d960efac86",
+        "normal": "14c794e672ba9c0f4379e3d57f6f58a9430613f50d70fddabde6b4cc57162479",
+        "index": "eb25a7b44f73e96778831a6c09ef825d30d3c611b7812c408a1e82f4141c9275",
+        "sourceFaceIndex": "3ed729ce1ae5981f141e2ce52dbbe6d761f6d0092f358ad30115ecd6440d2701",
+        "sourceAttributeWord": "344651ad0d3adf2f114d05a174909e98fe95a7c71789a8f630a44a3e0d622af6"
+      },
+      "sourceClosedDirectedTwoEdges": true,
+      "boundary": "Own closed positive rear source"
+    },
+    {
+      "id": "front-shell",
+      "sourceComponents": [
+        2,
+        3,
+        4
+      ],
+      "position": [
+        94.84688377380371,
+        0,
+        0
+      ],
+      "triangles": 4520,
+      "attributeSha256": {
+        "position": "497b029dacfc225deb0bd874929d2d305154d1767e10745d84656442a09fbdce",
+        "normal": "fad85676f27deb2f6b906086bec4fe9cc1f7527931feb1932fb90ad6a57279f1",
+        "index": "7d9e2cb083002aa4860b5ddda01d9ae43514cbd878b4629c2641c40bf2d30e79",
+        "sourceFaceIndex": "eceec85c81d735a1e057079e524ce30a60c12b6612c734f986633386bafda0dd",
+        "sourceAttributeWord": "4b2e41bcc5fb5c4458aeb938d6f1a696b611c63760a65985cf64364b20286310"
+      },
+      "sourceClosedDirectedTwoEdges": true,
+      "boundary": "Front includes two inherited closed negative-volume internal source boundaries;no array reversal or repair."
+    }
+  ]
+}

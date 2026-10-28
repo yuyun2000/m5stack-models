@@ -1,0 +1,33 @@
+{
+  "id": "dial",
+  "sku": "K130",
+  "officialDocs": "https://docs.m5stack.com/en/core/M5Dial",
+  "reference": {
+    "url": "https://static-cdn.m5stack.com/resource/docs/products/core/M5Dial/img-d99f4115-0a49-4a2e-8637-2c2214830959.webp",
+    "sha256": "ed0b0c3e89280e5d131574cdb1c6c5526b5b1e34f2847fb11c78c27b79535db7"
+  },
+  "structures": [
+    {
+      "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/K130_Dial/Structures/Dial.stl",
+      "gitBlob": "31459b686c483817a31ceb237811b7dae2c29422",
+      "sha256": "8032668cd4d31b9dc5b7ce7f900eb0cb0cc96863ff32fe4ddfeb36761db44fcc"
+    }
+  ],
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/M5Dial/img-d99f4115-0a49-4a2e-8637-2c2214830959.webp",
+      "sha256": "ed0b0c3e89280e5d131574cdb1c6c5526b5b1e34f2847fb11c78c27b79535db7"
+    }
+  ],
+  "method": {
+    "native": "Own K130 Dial.stl, fixed source commit;9 actual parts29240 faces and9 duplicate parts29240 face pairs;rest position/normal/index/sourceFace/sourceWord exact;rigid axis transform, no scale/re-mesh/repair.",
+    "reconstruction": "Own official photos and stated dimensions;round display, PCB,EC30 stator and moving sleeve,StampS3,USB-C,two Grove and2P supply,battery receiver,supports/contacts and screws. Hidden dimensions/travel inferred.",
+    "actuation": "Only gray native outer ring+supported encoder sleeve rotate;independent orange front/display carrier press;separate native rear reset tongue and GPIO0 cap. Pointer ring rotation emits angle intent, external commands noecho.",
+    "artwork": "One996x1332 reference-redraw PNG from clear initial K130 rear photograph;StampS3A and S3Mini supplied rasters rejected as different versions;unreadable certification IDs and tiny text omitted. Physical label carrier and GPIO0 aperture preserved without ink."
+  },
+  "limitations": [
+    "Official nominal51x51x32.3 versus own native50.817x50.817x30.32: do not scale source. Screw envelope and hidden hardware inferred.",
+    "No electrical encoder pulses,RFID,RTC,buzzer,power hold,wake reset/bootloader,firmware or physical manufacturing acceptance.",
+    "Native default geometry is preserved;travel and rear tongue flexure are inferred visual fields,not rated mechanical specifications."
+  ]
+}

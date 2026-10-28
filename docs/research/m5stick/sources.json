@@ -1,0 +1,23 @@
+{
+  "id": "m5stick",
+  "sku": "K016",
+  "officialDocs": "https://docs.m5stack.com/en/core/M5Stick",
+  "method": "original own-product photo and nominal-dimension reconstruction",
+  "cad": "No own-model native shell source was found in the fixed official Hardware tree;no neighbouring model substituted.",
+  "referenceSources": [
+    "https://docs.m5stack.com/en/core/M5Stick",
+    "https://static-cdn.m5stack.com/resource/docs/static/assets/img/product_pics/core/minicore/m5stick/m5stick_03.webp"
+  ],
+  "modelEntry": "src/devices/m5stick/index.js",
+  "fixture": {
+    "path": "scripts/check-m5stick-controller.mjs",
+    "export": "checkM5StickController"
+  },
+  "limitations": [
+    "Official page dimensions48.2×25.5×13.7 are reordered to X25.5,Y48.2,Z13.7;source axes documented.",
+    "Own photographs and dimensions,original reconstruction;not later StickC CAD. Hidden stack,button travel and apertures photo-inferred.",
+    "Gray MPU9250 and no-IMU white own-photo revisions separated;page calls no-IMU variant black while own photo says white. White full rear print not independently resolved;optional IMU block omitted.",
+    "Own gray rear-photo readable large blocks reference-redrawn;unreadable microprint omitted. No audio,IR,IMU,electrical or firmware emulation."
+  ],
+  "sourceRights": "Original MIT code;official photos only factual references,not redistributed. Ordinary approved PNG/reference redraw artwork rights separate from code."
+}

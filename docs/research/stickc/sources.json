@@ -1,0 +1,153 @@
+{
+  "id": "stickc",
+  "sku": "K016-C",
+  "name": "M5StickC",
+  "retrievedAt": "2026-10-28",
+  "officialDocs": "https://docs.m5stack.com/en/core/StickC",
+  "documentSha256": "ed1b2ef907dadfd89d70a3601bfe3a073cf657eba47048ff4800985c9cc1798a",
+  "constructionRoute": "own-native-shells-original-supported-internals",
+  "nativeCadUsed": true,
+  "nominalMm": [
+    25.5,
+    48.2,
+    13.7
+  ],
+  "nativeEnvelopeMm": [
+    24,
+    48,
+    13.5
+  ],
+  "nativeSource": {
+    "id": "stickc",
+    "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/K016-C_StickC/Structures/StickC.stl",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "gitBlob": "db6829a637c83c4d720570027085868b67d49a72",
+    "sha256": "41c879a8c8ef7d2a0cfac8ef7d412c19213c18aa627e4f5e4ee5cd43235b2c00",
+    "bytes": 923484,
+    "rawFaces": 18468,
+    "actualFaces": 18468,
+    "excludedDuplicatePreviewFaces": 0,
+    "allSourceFacesAccounted": true,
+    "duplicateComponentPairs": [],
+    "nativeScale": [
+      1,
+      1,
+      1
+    ],
+    "sourceTopologyBoundary": "StickC has 12 inherited four-way edges, no degree-1 boundary edges; source arrays are retained without repair.",
+    "license": {
+      "spdx": "MIT",
+      "text": "MIT License\n\nCopyright (c) 2021 M5Stack\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE."
+    }
+  },
+  "facts": {
+    "soc": "ESP32-PICO-D4",
+    "batteryMah": 95,
+    "display": {
+      "pixels": [
+        80,
+        160
+      ],
+      "driver": "ST7735SV / ST7735S",
+      "touch": false,
+      "diagonalInches": 0.96
+    },
+    "buttons": {
+      "a": "G37",
+      "b": "G39",
+      "power": "AXP192 PWR_KEY"
+    },
+    "redLed": "G10",
+    "ir": "G9",
+    "grovePins": [
+      "GND",
+      "5V",
+      "G32",
+      "G33"
+    ],
+    "hatPins": [
+      "GND",
+      "5V OUT",
+      "G26",
+      "G36",
+      "G0",
+      "BAT",
+      "3V3",
+      "5V IN"
+    ],
+    "buzzer": false,
+    "imu": "MPU6886",
+    "pmic": "AXP192",
+    "rtc": "BM8563"
+  },
+  "conflictsAndBoundaries": [
+    "Official current table says 48.2x25.5x13.7mm, own CAD unscaled shells assemble to24x48x13.5mm;nominal and runtime envelope retained separately.",
+    "Official prose names ST7735SV;pinmap names ST7735S;both retained.",
+    "Native source has twelve four-way edges, no degree-1 boundary;all source arrays retained, without claiming strict two-edge manifold."
+  ],
+  "inferred": [
+    "Hidden PCB and battery/package installation and board-support details",
+    "LCD active rectangle derived from own photo aperture and nominal diagonal",
+    "Connector hidden contacts/depths and switch backing",
+    "A0.22/B0.16/power0.15mm normalized visual travel,not rated material or switch deformation",
+    "Rear label and optical substrate thickness"
+  ],
+  "sourceReferences": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/m5stickc/m5stickc_01.webp",
+      "sha256": "c46e3ecb129f0fb8b60118d3aaaf1df1e719ed7019ee795008bbd705e342d6a6",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/m5stickc/m5stickc_02.webp",
+      "sha256": "9aef19c4f7e48c94a719a707cc1766f6c7f91ffd26cc34b8966aeee405c7e6dc",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/m5stickc/m5stickc_03.webp",
+      "sha256": "819b05cdedb6cc0f6e076d922e4df22e67d05c821594a0f236a029be139e2ffa",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/m5stickc/m5stickc_04.webp",
+      "sha256": "6b63be17565bb9bb9fe937fd29a98dfa496ea834a9beb3334b0322aa1aa3a2b4",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/m5stickc/m5stickc_05.webp",
+      "sha256": "082caba5b06cdb32bfeaacf1a82b53ddd74b42656d5bea874d376e3728fea5d1",
+      "sourceOnlyNotDistributed": true
+    }
+  ],
+  "ordinaryRasters": [
+    {
+      "path": "src/devices/stickc/artwork/rear-reference-redraw.png",
+      "sha256": "3061c0e1580edbd1060dfa2539651bc4ba2ebc2f9b4eeb8652c54d6e4ae99d7f",
+      "pixels": [
+        1008,
+        1776
+      ],
+      "mode": "RGB",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ],
+      "crcValid": true,
+      "ancillaryMetadata": false,
+      "kind": "reference-redraw",
+      "panels": 1,
+      "reference": "https://static-cdn.m5stack.com/resource/docs/products/core/m5stickc/m5stickc_04.webp",
+      "originalPhotographDistributed": false,
+      "vectorDistributed": false
+    }
+  ],
+  "distribution": {
+    "newCodeLicense": "MIT",
+    "nativeGeometryLicense": "MIT;retained notice",
+    "officialPhotosAndRawDocsDistributed": false,
+    "referenceImageLicenseAssumedMIT": false,
+    "rawVectorOrPrivateSourceDistributed": false
+  },
+  "scope": "Visual geometry,input intent and external pixels/LED only;no firmware,electrical,bus,sensors,audio or physical-fit acceptance."
+}

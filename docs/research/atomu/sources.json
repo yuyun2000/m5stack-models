@@ -1,0 +1,306 @@
+{
+  "id": "atomu",
+  "sku": "K117",
+  "name": "AtomU",
+  "checkedAt": "2026-10-28",
+  "officialDocs": "https://docs.m5stack.com/en/core/AtomU",
+  "constructionRoute": "Own dimension drawing and multi-view/bare-board photo constrained original complete physical reconstruction;no own native CAD",
+  "native": null,
+  "nativeSearch": {
+    "repository": "https://github.com/m5stack/M5_Hardware",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "result": "No own K117/AtomU mechanical CAD found in this pinned public full tree;no other Atom source borrowed as native evidence"
+  },
+  "referenceSources": [
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/ATOM U/img-70ca8b36-bd91-4760-af0b-ae247bbb30b7.webp",
+      "sha256": "11536a5fb43ebf0cb83178c3c99f187b59bc1506f97d8ba31f6c81fc454e438d",
+      "redistributed": false
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/ATOM U/img-382faa2f-1b7c-4a41-a9a9-b046d13f8869.webp",
+      "sha256": "edf0f21a0979e2155de37632ba48b00c95ab18bbe630fe6979f9f8fee1c34431",
+      "redistributed": false
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/ATOM U/img-e6df25ab-3845-45bf-bb2c-d9fe13332494.webp",
+      "sha256": "bac0bdea9ced8724f6c2839e131c1db082cca5867a9e6ba53a7a7c62c483ec57",
+      "redistributed": false
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/ATOM U/img-944b662c-3dfb-4f98-8fb7-dd7b9f571809.webp",
+      "sha256": "0e5e3f815f9759a0e670f1e65415de813d98f95772bea9a7b7d3c6479e205a2c",
+      "redistributed": false
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/ATOM U/img-45e173cb-bac8-41b1-acc5-bcf1a63b7e43.webp",
+      "sha256": "b0abf1812db502d7a5fcca37d291e530114d32139025ce1063a1aafb4828dfc1",
+      "redistributed": false
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/ATOM U/img-9989012c-fc1b-4df3-91ec-9eba3ce0f281.webp",
+      "sha256": "d073dda6453f4f951de4ceb9620884b6243e872f0208cce79a1d6f624a885e99",
+      "redistributed": false
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/675/Sch_AtomU_01.jpg",
+      "sha256": "6f5407ad47401787b16012ffa56fef40c645c22bdd08c803a0f9ac64e118ddbf",
+      "redistributed": false
+    },
+    {
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/675/K117_PinMap_01.jpg",
+      "sha256": "c7db861a6847f743e1a4c4e4a0ac912e34c70ed16a4b4ccee1c89aef9750025c",
+      "redistributed": false
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/ATOM%20U/module%20size.jpg",
+      "sha256": "e13d53c4f1e78d4be962b1d70d640a3362bbf9baca742d0d8f0a2cc947e5690f",
+      "redistributed": false
+    }
+  ],
+  "dimensionAuthority": {
+    "drawingUrl": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/ATOM%20U/module%20size.jpg",
+    "nominalOrderLengthWidthDepthMm": [
+      53,
+      20,
+      10.3
+    ],
+    "runtimeFrameWidthLengthDepthMm": [
+      20,
+      53,
+      10.3
+    ],
+    "bodyLengthMm": 40,
+    "usbExposedMm": 13,
+    "bodyRadiusMm": 3,
+    "conflict": "Legacy hero rounds to52x20x10mm;own mechanical drawing and current table state53x20x10.3;no silent scaling"
+  },
+  "publicAPI": {
+    "spec": {
+      "id": "atomu",
+      "name": "AtomU",
+      "sku": "K117",
+      "status": "EOL in own current official docs",
+      "size": [
+        20,
+        53,
+        10.3
+      ],
+      "officialDimensionOrder": [
+        53,
+        20,
+        10.3
+      ],
+      "frame": "+X right,+Y toward Grove,+Z front;overall envelope centered,body centerY6.5",
+      "body": {
+        "size": [
+          20,
+          40,
+          10.3
+        ],
+        "center": [
+          0,
+          6.5,
+          0
+        ],
+        "radius": 3
+      },
+      "usb": {
+        "position": [
+          0,
+          -26.5,
+          -0.2
+        ],
+        "exposedMm": 13
+      },
+      "grove": {
+        "position": [
+          0,
+          26.5,
+          1.6
+        ],
+        "pins": [
+          "GND",
+          "5V",
+          "G26",
+          "G32"
+        ]
+      },
+      "header": {
+        "position": [
+          0,
+          26.5,
+          -2.7
+        ],
+        "pins": [
+          "G21",
+          "G22",
+          "G33",
+          "G25",
+          "5V",
+          "GND"
+        ]
+      },
+      "button": {
+        "position": [
+          0,
+          -0.8,
+          5.15
+        ],
+        "rootY": -5.8,
+        "freeY": 4.1,
+        "travelMm": 0.14,
+        "gpio": 39
+      },
+      "reset": {
+        "position": [
+          -9.7,
+          11.5,
+          1.2
+        ],
+        "travelMm": 0.14
+      },
+      "led": {
+        "position": [
+          0,
+          -1.4,
+          3.8
+        ],
+        "gpio": 27
+      },
+      "mic": {
+        "position": [
+          5.7,
+          -3,
+          2.9
+        ],
+        "gpioClock": 5,
+        "gpioData": 19
+      },
+      "ir": {
+        "position": [
+          -7.2,
+          25,
+          3.9
+        ],
+        "gpio": 12
+      },
+      "soc": "ESP32-PICO-D4",
+      "flashMB": 4,
+      "limitations": [
+        "Exact K117 original reconstruction from its own official dimension drawing,multi-view and bare-board photos;no own Hardware CAD found in pinned public tree.",
+        "Mechanical drawing/table53x20x10.3mm controls body40+USB13 andR3;legacy hero52x20x10 conflicts and is not silently scaled.",
+        "Hidden supports,wall thickness,USB assembly detail,key flexure and travel are visual estimates;not manufacturing/electrical/firmware proof.",
+        "One externally commanded RGB and two independent physical input intents;no automatic audio/reset/boot/IR behavior or invented sensor readings.",
+        "Own clear official rear label is redrawn as full ordinary PNG;unreadable microtext omitted,not guessed;no source photograph cropped as texture."
+      ],
+      "defaults": {
+        "artwork": true
+      },
+      "configurations": [
+        {
+          "id": "complete",
+          "name": "AtomU K117 · USB-A",
+          "options": {}
+        }
+      ],
+      "configurationSchema": {
+        "artwork": {
+          "type": "boolean",
+          "default": true,
+          "meaning": "Ink only;full physical label carrier,geometry,contacts and dynamics remain"
+        }
+      }
+    },
+    "defaults": {
+      "artwork": true
+    },
+    "configurations": [
+      {
+        "id": "complete",
+        "name": "AtomU K117 · USB-A",
+        "options": {}
+      }
+    ],
+    "configurationSchema": {
+      "artwork": {
+        "type": "boolean",
+        "default": true,
+        "meaning": "Ink only;full physical label carrier,geometry,contacts and dynamics remain"
+      }
+    },
+    "exports": [
+      "Model",
+      "configurationSchema",
+      "configurations",
+      "default",
+      "defaults",
+      "spec"
+    ],
+    "defaultExport": "Model",
+    "assemblyProperty": "atomUAssembly",
+    "cases": [
+      {
+        "id": "complete",
+        "options": {},
+        "bodyComponentOrder": [
+          "button",
+          "reset",
+          "led",
+          "grove",
+          "ext-6p",
+          "usb"
+        ],
+        "bodyComponentKinds": {
+          "button": "button",
+          "reset": "button",
+          "led": "led",
+          "grove": "port",
+          "ext-6p": "port",
+          "usb": "port"
+        },
+        "panelCount": 1
+      }
+    ]
+  },
+  "geometry": {
+    "status": "pass",
+    "meshes": 114,
+    "faces": 17400,
+    "allClosedOrientedDegree2": true,
+    "allPositiveVolume": true,
+    "allFrontSide": true
+  },
+  "artwork": [
+    {
+      "asset": "src/devices/atomu/artwork/rear.png",
+      "kind": "reference-redraw",
+      "sizePx": [
+        880,
+        1760
+      ],
+      "sha256": "ac788ead6873d3a92825fcecc0c3609736d36eb1dcdc89cb4f7c5a2d2b8f3a3a",
+      "sourceUrl": "https://static-cdn.m5stack.com/resource/docs/products/core/ATOM U/img-944b662c-3dfb-4f98-8fb7-dd7b9f571809.webp",
+      "method": "Fresh complete flat raster redrawing from own clear official rear photograph;visible text/pin colors and block layout recreated;unreadable microtext omitted;no photo crop/no original vector/table/name/URL mapping distributed",
+      "licenseScope": "User authorized ordinary raster publication;marks and source image rights remain their respective owners;not an actual product certification claim"
+    }
+  ],
+  "physicalInference": [
+    "Body wall/floor thickness,hidden supports,switch receivers and travel are original visual estimates constrained by own dimension/multi-view.",
+    "Main key is an original integral continuous U-slot top plate;only connected cap flexes,with inner-wall-barycentric integral actuator.",
+    "USB-A metal upper/lower sheets decomposed into exactly abutting closed tiles,6p bank into exactly abutting closed cells to avoid earcut coplanar T junctions;not six separable real connector products.",
+    "Microphone actual pickup is behind open cap side slot;IR package behind its own real upper aperture;both passive,no fake numerical readings."
+  ],
+  "license": {
+    "code": "Repository MIT",
+    "geometry": "Original reconstruction;no third-party CAD payload",
+    "artwork": "User-approved ordinary raster reference redraw;rights/marks remain owners"
+  },
+  "validation": {
+    "script": "scripts/check-atomu-controller.mjs",
+    "report": "docs/research/atomu/smoke.json",
+    "status": "modeled",
+    "visual": null,
+    "boundary": "Actual CPU Model/closed FrontSide geometry/own-source-free reconstruction/native-style actual-face flex picking/actuation/output/Grove resources only;GPU/browser acceptance and electrical/firmware/physical-device proof separate"
+  }
+}

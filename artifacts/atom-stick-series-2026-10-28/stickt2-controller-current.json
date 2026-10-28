@@ -1,0 +1,75 @@
+{
+  "status": "pass",
+  "id": "stickt2",
+  "sku": "K016-T2",
+  "native": {
+    "actualFaces": 7650,
+    "rawFaces": 15300,
+    "duplicatePreviewFaces": 7650,
+    "allOriginalPositionNormalIndexFaceIdAttributeWord": true,
+    "topologyBoundary": "Rear positive closed component;front positive closed shell plus two inherited closed negative-volume interior boundaries. Preserve all 7650 own faces;all7650 preview faces paired and excluded."
+  },
+  "buttons": {
+    "a": {
+      "partialFullActualSourceFaces": true,
+      "fixedSourceVerticesAndOtherParts": true,
+      "exactReturnAllAttrsIndexWorld": true,
+      "cancelMultiSourceNoClick": true
+    },
+    "b": {
+      "partialFullActualSourceFaces": true,
+      "fixedSourceVerticesAndOtherParts": true,
+      "exactReturnAllAttrsIndexWorld": true,
+      "cancelMultiSourceNoClick": true
+    },
+    "power": {
+      "partialFullActualSourceFaces": true,
+      "fixedSourceVerticesAndOtherParts": true,
+      "exactReturnAllAttrsIndexWorld": true,
+      "cancelMultiSourceNoClick": true
+    }
+  },
+  "closedAddedSolids": 104,
+  "outputs": {
+    "actualFramebuffer": true,
+    "noInputEcho": true,
+    "noThermalGeneration": true
+  },
+  "ports": {
+    "wallRays": 8,
+    "actualContacts": 28,
+    "backedCameraAndRearFirstMaterial": true,
+    "realMountBores": 2,
+    "nativeRearM5Groove": true
+  },
+  "encoder": {
+    "actualCenterPressPartialFullReturned": true,
+    "ownRimRotatesRealGeometry": true,
+    "continuousSignedPointerAngle": true,
+    "externalJointHasNoInputEcho": true,
+    "noDetentPulseOrThermalSimulation": true
+  },
+  "cable": {
+    "wireCount": 4,
+    "plugs": 2,
+    "faceDistanceMm": 74
+  },
+  "unitResourcesReleased": 62,
+  "connectedInkAllPhysicalInvariant": true,
+  "resourcesReleased": [
+    154,
+    154
+  ],
+  "pendingClickTimersClean": true,
+  "picking": {
+    "status": "pass",
+    "checks": 144,
+    "pointerCancelRoutes": 24,
+    "actualViewerWheelDragRoutes": 2,
+    "states": 4,
+    "poses": 2,
+    "realViewerCameraRaycasterAndPrivatePointerRoute": true,
+    "gpuDomBoundaryOnly": true
+  },
+  "scope": "Actual own model CPU source/geometry/input/framebuffer/cable and real Viewer route with GPU/DOM boundaries;no browser pixels,manufacturing/electrical/firmware acceptance."
+}

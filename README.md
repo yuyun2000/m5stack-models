@@ -2,7 +2,7 @@
 
 基于 Three.js 与 [sticks3.js](https://github.com/MarsTechHAN/sticks3.js) 的 M5Stack 主机和 Unit 外观模型库，提供实体结构、真实按键输入意图、外部驱动的灯光/像素/可见运动及 Grove 装配。电气、总线、传感数值、固件和 AI 由外部运行时负责。
 
-当前[产品目录](catalog/products.json)收录 **201 款：17 款主机、184 款 Unit**，全部为 `modeled`，`verified` 为 **0**。已有实现不代表逐款浏览器或实物验收完成。当前暂停新增型号，优先修复预览稳定性并整理建模与接入方法。
+当前[产品目录](catalog/products.json)收录 **222 款：38 款主机、184 款 Unit**，全部为 `modeled`，`verified` 为 **0**。已有实现不代表逐款浏览器或实物验收完成。Atom / Stick 完整系列现覆盖 **24 个精确产品条目**（Atom16、Stick8），本轮新增17款，包含旧款、硬件修订及语音底座整机套装；见[完整覆盖矩阵](docs/ATOM-STICK-SERIES-2026-10-28.md)。此前四款主机见[历史接入批](docs/HOST-FAMILY-EXPANSION-2026-10-28.md)。
 
 ## 本地运行
 
@@ -27,6 +27,7 @@ npm run build
 
 ```sh
 npm run check:demo
+npm run check:series
 npm run check:controllers
 npm run check:connections
 npm run check:input-picking
@@ -38,7 +39,7 @@ npm run check:input-picking
 
 `check:input-picking` 检查真实拾取、原生弹舌活动面与固定邻区的路由和释放；修复范围见[Atom原生面点击修订](docs/NATIVE-INPUT-PICKING-AMENDMENT-2026-10-27.md)。
 
-旧 `npm run check` 仍包含 `sensor`、标准四芯路径等历史目录假设，并会写入旧报告；它尚未迁移到当前目录，不能作为201款总验收入口。产品几何/API按对应指南选择当前专项，保留旧报告为历史快照。
+旧 `npm run check` 仍包含 `sensor`、标准四芯路径等历史目录假设，并会写入旧报告；它尚未迁移到当前目录，不能作为当前全目录的总验收入口。产品几何/API按对应指南选择当前专项，保留旧报告为历史快照。
 
 ## 最小加载示例
 

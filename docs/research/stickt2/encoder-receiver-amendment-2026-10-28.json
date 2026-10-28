@@ -1,0 +1,181 @@
+{
+  "status": "pass",
+  "id": "stickt2",
+  "amendment": "encoder-receiver-2026-10-28",
+  "historicalCheckPreserved": {
+    "path": "docs/research/stickt2/checks.json",
+    "sha256": "add588fd58a2528aaa58b6b42b95c455d38de564fa913e38d2d6d5fea0a6d7af",
+    "authorFreezeSha256": "885b74cc6d9883dc7c2dea3f69d2d9e04563ab8fcd133d19cd16462ef5789d12"
+  },
+  "before": {
+    "sampleCount": 24,
+    "firstMaterialCounts": [
+      {
+        "material": "StickT2 300mAh supported battery envelope",
+        "samples": 18
+      },
+      {
+        "material": "StickT2 own native rear-shell",
+        "samples": 3
+      },
+      {
+        "material": null,
+        "samples": 3
+      }
+    ],
+    "representativeRays": [
+      {
+        "bodyOrigin": [
+          30,
+          -3,
+          -5.6
+        ],
+        "bodyDirection": [
+          -1,
+          0,
+          0
+        ],
+        "firstMaterial": "StickT2 300mAh supported battery envelope",
+        "firstPoint": [
+          8.249999999999996,
+          -3,
+          -5.6
+        ]
+      },
+      {
+        "bodyOrigin": [
+          30,
+          -12.5,
+          -4.1
+        ],
+        "bodyDirection": [
+          -1,
+          0,
+          0
+        ],
+        "firstMaterial": null,
+        "firstPoint": null
+      }
+    ],
+    "scope": "Own runtime CPU ray reproduction following a root browser screenshot;no claim of verified white production encoder parts."
+  },
+  "afterReceiver": {
+    "status": "pass",
+    "id": "stickt2",
+    "amendment": "encoder-receiver-2026-10-28",
+    "formerWindowSamples": 24,
+    "firstMaterialRays": 576,
+    "poses": 2,
+    "states": [
+      "rest",
+      "partial",
+      "full",
+      "returned"
+    ],
+    "anglesDeg": [
+      0,
+      90,
+      233
+    ],
+    "formerBatteryAndBackgroundNowActualReceiver": true,
+    "receiverIsClosedThicknessAndFrontSide": true,
+    "shaftBorePhysicalWalls": 4,
+    "shaftDeepStop": true,
+    "minimumShaftRadialClearanceMm": 0.17000001020797706,
+    "minimumFullPressToStopMm": 0.840000001788141,
+    "batteryClearanceMm": 0.0900000017881375,
+    "mainBoardClearanceMm": 0.10000000000000037,
+    "receiverFixedAllAttributesIndexWorld": true,
+    "ownNativeRestArraysUnchanged": true,
+    "scope": "Own digital assembly;concealed receiver dimensions remain visual inferences,not production mounting,material or physical-device certification."
+  },
+  "afterFullController": {
+    "status": "pass",
+    "id": "stickt2",
+    "sku": "K016-T2",
+    "native": {
+      "actualFaces": 7650,
+      "rawFaces": 15300,
+      "duplicatePreviewFaces": 7650,
+      "allOriginalPositionNormalIndexFaceIdAttributeWord": true,
+      "topologyBoundary": "Rear positive closed component;front positive closed shell plus two inherited closed negative-volume interior boundaries. Preserve all 7650 own faces;all7650 preview faces paired and excluded."
+    },
+    "buttons": {
+      "a": {
+        "partialFullActualSourceFaces": true,
+        "fixedSourceVerticesAndOtherParts": true,
+        "exactReturnAllAttrsIndexWorld": true,
+        "cancelMultiSourceNoClick": true
+      },
+      "b": {
+        "partialFullActualSourceFaces": true,
+        "fixedSourceVerticesAndOtherParts": true,
+        "exactReturnAllAttrsIndexWorld": true,
+        "cancelMultiSourceNoClick": true
+      },
+      "power": {
+        "partialFullActualSourceFaces": true,
+        "fixedSourceVerticesAndOtherParts": true,
+        "exactReturnAllAttrsIndexWorld": true,
+        "cancelMultiSourceNoClick": true
+      }
+    },
+    "closedAddedSolids": 104,
+    "outputs": {
+      "actualFramebuffer": true,
+      "noInputEcho": true,
+      "noThermalGeneration": true
+    },
+    "ports": {
+      "wallRays": 8,
+      "actualContacts": 28,
+      "backedCameraAndRearFirstMaterial": true,
+      "realMountBores": 2,
+      "nativeRearM5Groove": true
+    },
+    "encoder": {
+      "actualCenterPressPartialFullReturned": true,
+      "ownRimRotatesRealGeometry": true,
+      "continuousSignedPointerAngle": true,
+      "externalJointHasNoInputEcho": true,
+      "noDetentPulseOrThermalSimulation": true
+    },
+    "cable": {
+      "wireCount": 4,
+      "plugs": 2,
+      "faceDistanceMm": 74
+    },
+    "unitResourcesReleased": 62,
+    "connectedInkAllPhysicalInvariant": true,
+    "resourcesReleased": [
+      154,
+      154
+    ],
+    "pendingClickTimersClean": true,
+    "picking": {
+      "status": "pass",
+      "checks": 144,
+      "pointerCancelRoutes": 24,
+      "actualViewerWheelDragRoutes": 2,
+      "states": 4,
+      "poses": 2,
+      "realViewerCameraRaycasterAndPrivatePointerRoute": true,
+      "gpuDomBoundaryOnly": true
+    },
+    "scope": "Actual own model CPU source/geometry/input/framebuffer/cable and real Viewer route with GPU/DOM boundaries;no browser pixels,manufacturing/electrical/firmware acceptance."
+  },
+  "constructionBoundary": {
+    "ownNativeArraysAndMotionPartsUnchanged": true,
+    "newReceiverMm": [
+      14.4,
+      9.5,
+      1.3
+    ],
+    "shaftBoreRadiusMm": 1.32,
+    "deepStopThicknessMm": 0.16,
+    "materialRole": "Closed opaque black physical receiver with actual shaft hole and deep stop",
+    "inference": "Hidden receiver/BOM dimensions inferred from own exact-model native window and photographs;not production mounting certification.",
+    "physicalTestsOrFirmware": false,
+    "browserAfterEvidence": "Root integration must rebuild and inspect the current right-side rendering separately."
+  }
+}

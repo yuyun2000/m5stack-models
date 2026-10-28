@@ -1,0 +1,157 @@
+{
+  "status": "pass",
+  "id": "basic-v27",
+  "sku": "K001-V27",
+  "native": {
+    "instances": 5,
+    "sourcePartKinds": 3,
+    "sourceInstanceFaces": 20634,
+    "uniqueSourceFaces": 15666,
+    "allSourcePositionStoredNormalIdentityIndexFaceIdsAttributeWords": true,
+    "discardedBottomReferenceFaces": 17639,
+    "bottomRetainedFaces": 0
+  },
+  "geometry": {
+    "closedSolids": 221,
+    "triangles": 68066,
+    "allFinite": true,
+    "allActualMaterialFrontSideClosedPositiveDirected": true,
+    "mbusWells": 30,
+    "mbusWallRays": 120,
+    "mbusContacts": 60,
+    "usbContacts": 24,
+    "sdContacts": 8,
+    "groveContacts": 4,
+    "actualNativeApertureInsertAlignment": true
+  },
+  "geometryInstalled": {
+    "closedSolids": 441,
+    "triangles": 135706,
+    "allFinite": true,
+    "allActualMaterialFrontSideClosedPositiveDirected": true,
+    "mbusWells": 30,
+    "mbusWallRays": 120,
+    "mbusContacts": 60,
+    "usbContacts": 24,
+    "sdContacts": 8,
+    "groveContacts": 4,
+    "actualNativeApertureInsertAlignment": true
+  },
+  "rear": {
+    "edgeWells": 46,
+    "edgeWallRays": 184,
+    "trueRearSwitchHole": true,
+    "trueFootPockets": 4,
+    "trueSteppedFastenerWells": 2,
+    "retainedDeepScrews": 2,
+    "moldedBrandPhysical": true
+  },
+  "motion": {
+    "controls": [
+      {
+        "id": "a",
+        "partialDepthMm": 0.08215528887789271,
+        "fullDepthMm": 0.3,
+        "firstNativeSurface": true,
+        "unchangedNativeArrays": true,
+        "exactReturnedRest": true
+      },
+      {
+        "id": "b",
+        "partialDepthMm": 0.08215528887789271,
+        "fullDepthMm": 0.3,
+        "firstNativeSurface": true,
+        "unchangedNativeArrays": true,
+        "exactReturnedRest": true
+      },
+      {
+        "id": "c",
+        "partialDepthMm": 0.08215528887789271,
+        "fullDepthMm": 0.3,
+        "firstNativeSurface": true,
+        "unchangedNativeArrays": true,
+        "exactReturnedRest": true
+      },
+      {
+        "id": "power",
+        "partialDepthMm": 0.06846274073157727,
+        "fullDepthMm": 0.25,
+        "firstNativeSurface": true,
+        "unchangedNativeArrays": true,
+        "exactReturnedRest": true
+      }
+    ],
+    "simultaneous": true,
+    "multiSourceHeldUntilLastRelease": true,
+    "cancelWithoutClick": true,
+    "wholeFixedAssemblyStable": true,
+    "actualInnerNativeFullPressClearance": true,
+    "nativeSurfaceRays": {
+      "raysPerState": 72,
+      "fixedNeighborRaysPerState": 2,
+      "states": [
+        "rest",
+        "partial",
+        "full",
+        "returned"
+      ],
+      "outerFirstVisibleNativeGrid": true,
+      "innerFullSectionGrid": true,
+      "allMovedByExactActuationDistance": true,
+      "fixedNeighborsUnchanged": true,
+      "exactReturnedNativeCoordinates": true
+    }
+  },
+  "switch": {
+    "twoStableDetents": true,
+    "travelMm": 2.8,
+    "default": 1,
+    "partialFullStable": true,
+    "fixedPartsStable": true,
+    "noPowerSimulation": true
+  },
+  "display": {
+    "resolution": [
+      320,
+      240
+    ],
+    "rgb565": true,
+    "externalRGBAFramebuffer": true,
+    "noAutomaticPowerEffects": true,
+    "noecho": true,
+    "peerIsolated": true,
+    "touch": false
+  },
+  "artwork": {
+    "pngFiles": 7,
+    "placedPanelsInstalled": 5,
+    "placedPanelsRemoved": 1,
+    "unplacedKnownRasters": 2,
+    "physicalInvariantStates": [
+      "installed/rest",
+      "installed/partial",
+      "installed/full",
+      "installed/returned",
+      "removed/rest",
+      "removed/partial",
+      "removed/full",
+      "removed/returned",
+      "installed/connected-transformed-partial"
+    ]
+  },
+  "hierarchy": {
+    "hierarchy": "grove/grove-1/press",
+    "actualFanRotation": true,
+    "externalOutputNoecho": true,
+    "reparentPeerIsolation": true,
+    "detachCancel": true,
+    "wireEndpoints": 56,
+    "realThreeCablesFourWiresTwoPlugs": true
+  },
+  "resources": {
+    "realClickTimerReleased": true,
+    "disposeWithLiveClickTimers": true,
+    "actualResourcesReleasedExactlyOnce": 905
+  },
+  "scope": "Actual direct Model,physical FrontSide geometry/native source arrays/actuation/output/real Grove hierarchy/resource checks. No source overlay,certification,GPU/browser acceptance,manufacturing/electrical/firmware or physical-device proof."
+}

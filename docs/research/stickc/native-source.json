@@ -1,0 +1,63 @@
+{
+  "source": {
+    "id": "stickc",
+    "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/K016-C_StickC/Structures/StickC.stl",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "gitBlob": "db6829a637c83c4d720570027085868b67d49a72",
+    "sha256": "41c879a8c8ef7d2a0cfac8ef7d412c19213c18aa627e4f5e4ee5cd43235b2c00",
+    "bytes": 923484,
+    "rawFaces": 18468,
+    "actualFaces": 18468,
+    "excludedDuplicatePreviewFaces": 0,
+    "allSourceFacesAccounted": true,
+    "duplicateComponentPairs": [],
+    "nativeScale": [
+      1,
+      1,
+      1
+    ],
+    "sourceTopologyBoundary": "StickC has 12 inherited four-way edges, no degree-1 boundary edges; source arrays are retained without repair.",
+    "license": {
+      "spdx": "MIT",
+      "text": "MIT License\n\nCopyright (c) 2021 M5Stack\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE."
+    }
+  },
+  "parts": [
+    {
+      "id": "front-shell",
+      "sourceComponent": 0,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "triangles": 9588,
+      "attributeSha256": {
+        "position": "3965221940912ec641dc02d2f44eb0f05a5605eb1363b5deda631d02a81a2d56",
+        "normal": "3a39924391fbfa20dec7ed75bd87c8c685a2452f568d10e4e357665964211c20",
+        "index": "d7198a4a42cb3fd79a6220893d808608bb0d83c1c625223985b105555df3ef3d",
+        "sourceFaceIndex": "1d3f343547290a2903a001422d014be18743e6d2ad9540392be9bdbdcac0ff7a",
+        "sourceAttributeWord": "a261d56a79756a8a0afae4cf766161db24bb73555424c097d61ac5f26a26a1f5"
+      },
+      "sourceClosedDirectedTwoEdges": false
+    },
+    {
+      "id": "rear-shell",
+      "sourceComponent": 1,
+      "position": [
+        0,
+        0,
+        -12.693760871887207
+      ],
+      "triangles": 8880,
+      "attributeSha256": {
+        "position": "b0b639406a9ee03b4a72465b2ccdd5b60d80cf262e1e9d697ab50ce00226c55c",
+        "normal": "0750802963bba146e2e885e6f116380695f6b91a2e022dfbf2929d2164fd1fb7",
+        "index": "c46e81314305a0670c7e5ace3fbf5c7bbe2faf2f3405dfc881cfddf000c0baff",
+        "sourceFaceIndex": "ea1da1122cbf122bfb7b1fa4f3a70b7d95b8ffe6237a386e21c3ff05348c112f",
+        "sourceAttributeWord": "27239e0627aa4c9957b29d65ceb164eb49e131b58fcc0e87565efd5b13ecddb3"
+      },
+      "sourceClosedDirectedTwoEdges": false
+    }
+  ]
+}

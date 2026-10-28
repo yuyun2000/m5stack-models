@@ -1,0 +1,121 @@
+{
+  "status": "pass",
+  "id": "atoms3",
+  "sku": "C123",
+  "sourceLoaderUsed": false,
+  "native": {
+    "raw": 8320,
+    "actual": 4160,
+    "preview": 4160,
+    "fullAccounting": true,
+    "maxRigidMatchErrorMm": 6.689690053462982e-06,
+    "actualFaces": 4160,
+    "uniqueSourceFaces": 4160,
+    "exactRestArrays": true
+  },
+  "geometry": {
+    "closedPhysicalMeshes": 157,
+    "faces": 44704,
+    "allFrontSide": true,
+    "restContainmentSamples": 4832,
+    "wallChecks": {
+      "headerWallFirstHits": 36,
+      "headerDeepFloors": 9,
+      "actualContactFirstHits": 13,
+      "groveRearWall": true,
+      "usbTongue": true,
+      "irOwnNotch": true,
+      "m2DeepStop": true,
+      "frontFirstHits": 1681,
+      "rearFirstHits": 1681
+    }
+  },
+  "motion": {
+    "states": [
+      "rest",
+      "partial",
+      "full",
+      "returned-rest"
+    ],
+    "actualFrontSideRaysPerState": 53,
+    "resetInnerOuterMaximumDisplacementDifferenceMm": 3.005886270557312e-06,
+    "fixedAssemblyStable": true,
+    "immutableNativeSourceAttributes": true,
+    "exactRestArraysRestored": true,
+    "multiSource": true,
+    "cancelWithoutClick": true,
+    "fullPressContainmentSamples": 4832,
+    "lcdPlungerGapMm": 0.46999997615814193,
+    "resetPlungerGapMm": 0.16172106374965622
+  },
+  "artwork": {
+    "pngCount": 3,
+    "panelCount": 3,
+    "physicalInvariant": true,
+    "states": [
+      "rest",
+      "partial",
+      "full",
+      "returned-rest",
+      "connected-partial"
+    ],
+    "origin": "reference-redraw;own current C123 GC9107 photo and flattened approved artwork;no photography crop"
+  },
+  "hierarchy": {
+    "fourWires": true,
+    "twoPlugs": true,
+    "actualEndpointChecks": 48,
+    "nestedInputPath": "grove/grove-1/press",
+    "peerIsolation": true,
+    "reparent": true,
+    "detachCancel": true,
+    "framebufferNoecho": true,
+    "fanExternallyDrivenShaftAndBlade": true
+  },
+  "resources": {
+    "geometries": 165,
+    "materials": 165,
+    "framebufferTextures": 1,
+    "eachDisposedOnce": true,
+    "clickTimersCancelled": true,
+    "realTimerRelease": true,
+    "removedResetRetainsExactRestPhysicalShell": true
+  },
+  "picking": {
+    "status": "pass",
+    "samples": 264,
+    "actualPointerCancelRoutes": 60,
+    "keyboardBlur": true,
+    "unmountReusable": true,
+    "states": [
+      "rest",
+      "partial",
+      "full",
+      "returned-rest"
+    ],
+    "poses": [
+      "identity",
+      "rotated"
+    ],
+    "scope": "Actual DeviceViewer camera/raycaster/filter and DOM event handlers with renderer/DOM fixture;not browser pixels"
+  },
+  "capabilities": {
+    "controls": [
+      "button",
+      "reset"
+    ],
+    "ports": [
+      "usb",
+      "grove",
+      "ext-5p",
+      "ext-4p"
+    ],
+    "displays": [
+      "lcd"
+    ],
+    "leds": [],
+    "sensors": [],
+    "joints": []
+  },
+  "scope": "Actual C123 Model export and real CPU geometry/API/Viewer dispatch. GPU boundary is a fixture;no browser pixel,firmware,electrical,manufacturing or real-device acceptance."
+}

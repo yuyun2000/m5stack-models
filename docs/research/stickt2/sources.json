@@ -1,0 +1,196 @@
+{
+  "id": "stickt2",
+  "sku": "K016-T2",
+  "name": "M5StickT2",
+  "retrievedAt": "2026-10-28",
+  "officialDocs": "https://docs.m5stack.com/en/core/StickT2",
+  "documentSha256": "06c5941c4a8c25f761f89168ad84b7f96c5b3bba7785b0fab949137c29d63306",
+  "constructionRoute": "own-native-shell-and-original-supported-thermal-imager-assembly",
+  "nativeCadUsed": true,
+  "nativeSource": {
+    "id": "stickt2",
+    "url": "https://raw.githubusercontent.com/m5stack/M5_Hardware/e29c139cbc7c80b5ccc5557e5ab8025a7a19a109/Products/K016-T2_StickT2/Structures/StickT2.stl",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "gitBlob": "02d628266bc29ab7c59e31ff8456fa1ea5b6c0af",
+    "sha256": "60acbd17048b1bdc3e6ce535338e17869826e4ad715e96cedd710b0d547fcef3",
+    "bytes": 765084,
+    "rawFaces": 15300,
+    "actualFaces": 7650,
+    "excludedDuplicatePreviewFaces": 7650,
+    "allSourceFacesAccounted": true,
+    "duplicateCorrespondence": [
+      {
+        "id": "rear-shell",
+        "sourceFaceRange": [
+          0,
+          3129
+        ],
+        "duplicatePreviewFaceOffset": 3130,
+        "facePairCount": 3130,
+        "actualToPreviewTranslationMm": [
+          48.61556816101074,
+          0,
+          0
+        ],
+        "maximumVertexResidualMm": 2.86102294921875e-06,
+        "maximumSourceNormalResidual": 0.0,
+        "attributeWordsIdentical": true,
+        "pairSha256": "f3228d75050a82b30bc0d108bc5018b0a8f2e5a11d8abdcef367af25cf99d929"
+      },
+      {
+        "id": "front-shell",
+        "sourceFaceRange": [
+          6260,
+          10779
+        ],
+        "duplicatePreviewFaceOffset": 4520,
+        "facePairCount": 4520,
+        "actualToPreviewTranslationMm": [
+          94.84688377380371,
+          0,
+          0
+        ],
+        "maximumVertexResidualMm": 4.76837158203125e-06,
+        "maximumSourceNormalResidual": 0.0,
+        "attributeWordsIdentical": true,
+        "pairSha256": "3e3ba2fc713d200d606e312e1ead4fa84918df490903711bdc0c9bab3fed8f24"
+      }
+    ],
+    "nativeScale": [
+      1,
+      1,
+      1
+    ],
+    "rootRigidTransform": {
+      "rotationYRadians": 3.141592653589793,
+      "translationMm": [
+        0.012601852416992188,
+        22.01580047607422,
+        -0.45
+      ]
+    },
+    "sourceTopologyBoundary": "Rear positive closed component;front positive closed shell plus two inherited closed negative-volume interior boundaries. Preserve all 7650 own faces;all7650 preview faces paired and excluded.",
+    "license": {
+      "spdx": "MIT",
+      "text": "MIT License\n\nCopyright (c) 2021 M5Stack\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE."
+    }
+  },
+  "nominalMm": [
+    24,
+    48,
+    24
+  ],
+  "nativeEnvelopeWithEarsMm": [
+    30.4,
+    48,
+    23.9
+  ],
+  "facts": {
+    "soc": "ESP32-PICO-D4",
+    "batteryMah": 300,
+    "pmic": "AXP192",
+    "display": {
+      "pixels": [
+        135,
+        240
+      ],
+      "driver": "ST7789",
+      "diagonalInches": 1.14,
+      "touch": false
+    },
+    "buttons": {
+      "a": "G37",
+      "b": "G39",
+      "power": "AXP192 PWR_KEY"
+    },
+    "encoderPinMapNames": {
+      "press": "PA2 SW",
+      "enB": "PA3 EN_B",
+      "enA": "PA4 EN_A"
+    },
+    "camera": {
+      "model": "Lepton3.0",
+      "pixels": [
+        160,
+        120
+      ],
+      "modelScope": "passive supported optical geometry;no temperature or thermal data generation"
+    },
+    "passiveOnly": [
+      "SPM1423",
+      "MPU6886"
+    ],
+    "shell": "black 3D-printed nylon",
+    "mounting": [
+      "M3",
+      "1/4-inch"
+    ],
+    "grovePins": [
+      "GND",
+      "5V",
+      "G32",
+      "G33"
+    ]
+  },
+  "conflictsAndBoundaries": [
+    "Official24mm width excludes own CAD30.4mm ear envelope;raw native depth23.9mm and nominal24mm retained separately.",
+    "Native front shell contains two closed inward negative-volume interior boundaries;source arrays retained without reversal or repair.",
+    "Own raw source does not identify the2021 smaller-wheel hardware revision;wheel and concealed mechanism are exact-product photo/source-opening inferences,not measured production CAD.",
+    "No encoder detent count,pulse synthesis,thermal acquisition,temperature conversion,power/electrical or firmware behavior inferred."
+  ],
+  "inferred": [
+    "Concealed PCB/package/battery/camera module installation and supporting ribs",
+    "LCD effective rectangle14.8x24.86mm derived from own nominal diagonal and aperture ratio;not a certified panel drawing",
+    "Connector depths,hidden contacts/tails and bore stops",
+    "Normalized A0.22/B0.16/power0.15mm native material field and0.18mm encoder shaft travel",
+    "Encoder radius3.45mm fitted to own source opening and own reduced-wheel photo;not rated travel,detents or mounting tolerance"
+  ],
+  "sourceReferences": [
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/m5stickt/model%20size.jpg",
+      "sha256": "b35e8bd7164b716a9b9a72a463fff58d617ef697e7b92efc1c8532af9d651203",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/m5stickt/m5stickt_01.webp",
+      "sha256": "de0361cc6036326ac5db714dde30321184180b6b403ef2a9c45b39d084e52ff8",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/m5stickt/m5stickt_02.webp",
+      "sha256": "a84c85fb51feb1e5870f321dc3586cb07d87d3c9432e45c589d1f0e5ef56cebf",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/m5stickt/m5stickt_03.webp",
+      "sha256": "86d481875604eb979d8c7697bca000ac8c8451dc598f831a965e11b6c94f1846",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/m5stickt/m5stickt_04.webp",
+      "sha256": "978c85a3b243fcc01edbfefc3807476b3839150ea4650294c606dd16831e7d9c",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/m5stickt/m5stickt_05.webp",
+      "sha256": "7f7aa117a8fb664ef98e6f68170845ca56b2fe33977b4a572d24877d1afdce6c",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/m5stickt/m5stickt_06.webp",
+      "sha256": "df003f6d67a9762e2bc2cc439d623424f7e2bb64532bc270fab1a81560ec6887",
+      "sourceOnlyNotDistributed": true
+    }
+  ],
+  "ordinaryRasters": [],
+  "artworkBoundary": "Own front grip grooves and rear M5 mark are actual native shell geometry,including recessed floors;own product photos show no adhesive label,so no photographic sticker or sibling label introduced.",
+  "distribution": {
+    "newCodeLicense": "MIT",
+    "nativeGeometryLicense": "MIT;retained notice",
+    "officialPhotosAndRawDocsDistributed": false,
+    "referenceImageLicenseAssumedMIT": false,
+    "rawVectorOrPrivateSourceDistributed": false,
+    "ordinaryRastersDistributed": 0
+  },
+  "scope": "Visual geometry,input intent,external framebuffer and encoder angle only;physical fit,temperature,electrical,firmware and bus validation external."
+}

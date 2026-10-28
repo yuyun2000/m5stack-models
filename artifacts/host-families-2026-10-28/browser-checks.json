@@ -1,0 +1,58 @@
+{
+  "status": "pass",
+  "testedModels": [
+    "atoms3",
+    "dial",
+    "stickc-plus2",
+    "basic-v27"
+  ],
+  "actions": {
+    "atoms3": [
+      "catalog selection",
+      "128x128 calibration",
+      "physical LCD-button click",
+      "physical reset click",
+      "Grove Fan four-core and two plugs",
+      "240rpm actual angle readback and rendered rotor",
+      "stop and detach"
+    ],
+    "dial": [
+      "catalog selection",
+      "round240x240 calibration",
+      "gray ring pointer drag90.112892deg",
+      "LCD start/end touch",
+      "orange WAKE click",
+      "rear GPIO0 click",
+      "native rear RST click",
+      "PORT.A Button connection",
+      "PORT.B Button connection",
+      "stop-neutral and detach"
+    ],
+    "stickc-plus2": [
+      "catalog selection",
+      "135x240 calibration",
+      "physical front A click",
+      "physical right B click",
+      "physical left C click",
+      "Grove Button connection",
+      "front/back PNG registration"
+    ],
+    "basic-v27": [
+      "catalog selection",
+      "320x240 calibration",
+      "physical a/b/c/power click",
+      "rear actual slide cap1->0->1",
+      "complete/base-removed selection",
+      "rear PCB and headers",
+      "Grove Button connection",
+      "detach"
+    ]
+  },
+  "consoleErrors": 0,
+  "viewport": {
+    "width": 1100,
+    "height": 850,
+    "reason": "Default hidden preview reported0x0;explicit validation viewport,reset after capture"
+  },
+  "scope": "Actual rendered browser controls and native pointers. Latest loaded production page had no console errors. No electrical,firmware or physical-device acceptance."
+}

@@ -8,11 +8,29 @@ import {loadModel,loadGroveModule} from '../src/loaders.js';
 // named configuration before loading the real exported models. A new catalog
 // host/configuration must be accounted for here rather than silently skipped.
 const EXPECTED_PORTS={
+ "atomu":{"complete":["grove"]},
+ "stickt2":{"complete":["grove"]},
+ "atoms3u":{"complete":["grove"]},
+ "atom-echos3r":{"complete":["grove"],"mount-open":["grove"]},
+ "atom-echo":{"complete":["grove"],"mount-open":["grove"]},
+ "stickc-plus-se":{"complete":["grove"]},
+ "atoms3r-ext":{"complete":["grove"]},
+ "stickc-plus":{"complete":["grove"]},
+ "stickc":{"complete":["grove"]},
+ "atoms3r-m12-volcengine-kit":{"complete":["grove"]},
+ "atoms3r-m12":{"complete":["grove"]},
+ "atoms3r-cam-ai-chatbot":{"complete":["grove"]},
+ "atoms3r-cam":{"complete":["grove"]},
+ "atoms3r-ai-chatbot":{"complete":["grove"]},
+ "stickv":{"blue-pcb":["grove"],"black-pcb":["grove"]},
+ "m5stick":{"gray":["grove"],"white":["grove"]},
+ "atom-matrix-v11":{"complete":["grove"],"mount-open":["grove"]},
  sticks3:{default:['grove']},cores3:{module:['grove'],din:['grove','grove-b','grove-c']},
  stopwatch:{default:['grove']},'cardputer-adv':{default:['grove']},'cardputer-zero':{default:['grove']},
  papermono:{default:[]},core2:{default:['grove']},papercolor:{default:['grove']},nanoc6:{default:['grove']},
  stackchan:{default:['grove','port-b','port-c']},tab5:{default:['grove']},atoms3r:{default:['grove']},
  'nesso-n1':{default:['grove']},stamplc:{default:['port-a','port-c']},
+ atoms3:{complete:['grove']},dial:{complete:['port-a','port-b']},'stickc-plus2':{complete:['grove']},'basic-v27':{complete:['grove'],'base-removed':['grove']},
  'atom-lite':{complete:['grove']},'atom-matrix':{complete:['grove']},'atoms3-lite':{complete:['grove']},
 };
 const visible=object=>object.isMesh&&(Array.isArray(object.material)?object.material:[object.material]).some(material=>material.opacity!==0);

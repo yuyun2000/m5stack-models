@@ -1,0 +1,1289 @@
+{
+  "status": "pass",
+  "date": "2026-10-28",
+  "browser": "ChatGPT in-app browser",
+  "server": "http://127.0.0.1:5188",
+  "products": 24,
+  "configurations": 29,
+  "productSelections": [
+    {
+      "id": "m5stick",
+      "calibration": "false",
+      "configuration": "gray",
+      "controls": [
+        "a",
+        "power"
+      ],
+      "error": null,
+      "tag": "M5Stick / K016",
+      "held": {
+        "events": "a · down · inspect:a",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          }
+        ],
+        "travel": "位移 0.000, 0.000, -0.200 mm · 名义行程 0.2 mm"
+      },
+      "released": {
+        "events": "a · click · inspect:a\na · up · inspect:a\na · down · inspect:a",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "m5stick.jpg"
+    },
+    {
+      "id": "stickv",
+      "calibration": "true",
+      "configuration": "blue-pcb",
+      "controls": [
+        "a",
+        "b",
+        "power"
+      ],
+      "error": null,
+      "tag": "M5StickV / K027",
+      "held": {
+        "events": "a · down · inspect:a",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ],
+        "travel": "视觉行程 0.200 / 0.2 mm · 外壳弯曲"
+      },
+      "released": {
+        "events": "a · click · inspect:a\na · up · inspect:a\na · down · inspect:a",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "stickv.jpg"
+    },
+    {
+      "id": "atoms3r-ai-chatbot",
+      "calibration": "true",
+      "configuration": "complete",
+      "controls": [
+        "button",
+        "reset"
+      ],
+      "error": null,
+      "tag": "AtomS3R-AI Chatbot / K147",
+      "held": {
+        "events": "button · down · inspect:button",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          }
+        ],
+        "travel": "位移 0.000, 0.000, -0.180 mm · 名义行程 0.18 mm"
+      },
+      "released": {
+        "events": "button · click · inspect:button\nbutton · up · inspect:button\nbutton · down · inspect:button",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "atoms3r-ai-chatbot.jpg"
+    },
+    {
+      "id": "atoms3r-cam-ai-chatbot",
+      "calibration": "false",
+      "configuration": "complete",
+      "controls": [
+        "reset"
+      ],
+      "error": null,
+      "tag": "AtomS3R-CAM AI Chatbot / K147-CAM",
+      "held": {
+        "events": "reset · down · inspect:reset",
+        "states": [
+          {
+            "pressed": true
+          }
+        ],
+        "travel": "位移 0.000, 0.000, -0.150 mm · 名义行程 0.15 mm"
+      },
+      "released": {
+        "events": "reset · click · inspect:reset\nreset · up · inspect:reset\nreset · down · inspect:reset",
+        "states": [
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "atoms3r-cam-ai-chatbot.jpg"
+    },
+    {
+      "id": "atoms3r-m12-volcengine-kit",
+      "calibration": "false",
+      "configuration": "complete",
+      "controls": [
+        "reset"
+      ],
+      "error": null,
+      "tag": "AtomS3R-M12 Volcengine Kit / D062-M12",
+      "held": {
+        "events": "reset · down · inspect:reset",
+        "states": [
+          {
+            "pressed": true
+          }
+        ],
+        "travel": "位移 0.000, 0.000, -0.150 mm · 名义行程 0.15 mm"
+      },
+      "released": {
+        "events": "reset · click · inspect:reset\nreset · up · inspect:reset\nreset · down · inspect:reset",
+        "states": [
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "atoms3r-m12-volcengine-kit.jpg"
+    },
+    {
+      "id": "atom-matrix-v11",
+      "calibration": "false",
+      "configuration": "complete",
+      "controls": [
+        "button",
+        "reset"
+      ],
+      "error": null,
+      "tag": "Atom Matrix v1.1 / C008-B-V11",
+      "held": {
+        "events": "button · down · inspect:button",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          }
+        ],
+        "travel": "位移 0.000, 0.000, -0.140 mm · 名义行程 0.14 mm"
+      },
+      "released": {
+        "events": "button · click · inspect:button\nbutton · up · inspect:button\nbutton · down · inspect:button",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "atom-matrix-v11.jpg"
+    },
+    {
+      "id": "atom-echo",
+      "calibration": "false",
+      "configuration": "complete",
+      "controls": [
+        "button",
+        "reset"
+      ],
+      "error": null,
+      "tag": "Atom Voice (Atom Echo) / C008-C",
+      "held": {
+        "events": "button · down · inspect:button",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          }
+        ],
+        "travel": "视觉行程 0.140 / 0.14 mm · 按压"
+      },
+      "released": {
+        "events": "button · click · inspect:button\nbutton · up · inspect:button\nbutton · down · inspect:button",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "atom-echo.jpg"
+    },
+    {
+      "id": "atom-echos3r",
+      "calibration": "false",
+      "configuration": "complete",
+      "controls": [
+        "button",
+        "reset"
+      ],
+      "error": null,
+      "tag": "Atom VoiceS3R (Atom EchoS3R) / C126-ECHO",
+      "held": {
+        "events": "button · down · inspect:button",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          }
+        ],
+        "travel": "视觉行程 0.140 / 0.14 mm · 按压"
+      },
+      "released": {
+        "events": "button · click · inspect:button\nbutton · up · inspect:button\nbutton · down · inspect:button",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "atom-echos3r.jpg"
+    },
+    {
+      "id": "atomu",
+      "calibration": "false",
+      "configuration": "complete",
+      "controls": [
+        "button",
+        "reset"
+      ],
+      "error": null,
+      "tag": "AtomU / K117",
+      "held": {
+        "events": "button · down · inspect:button",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          }
+        ],
+        "travel": "位移 0.000, 0.000, -0.140 mm · 名义行程 0.14 mm"
+      },
+      "released": {
+        "events": "button · click · inspect:button\nbutton · up · inspect:button\nbutton · down · inspect:button",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "atomu.jpg"
+    },
+    {
+      "id": "atoms3u",
+      "calibration": "false",
+      "configuration": "complete",
+      "controls": [
+        "button",
+        "reset"
+      ],
+      "error": null,
+      "tag": "AtomS3U / K125",
+      "held": {
+        "events": "button · down · inspect:button",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          }
+        ],
+        "travel": "位移 0.000, 0.000, -0.160 mm · 名义行程 0.16 mm"
+      },
+      "released": {
+        "events": "button · click · inspect:button\nbutton · up · inspect:button\nbutton · down · inspect:button",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "atoms3u.jpg"
+    },
+    {
+      "id": "atoms3r-cam",
+      "calibration": "false",
+      "configuration": "complete",
+      "controls": [
+        "reset"
+      ],
+      "error": null,
+      "tag": "AtomS3R-CAM / C126-CAM",
+      "held": {
+        "events": "reset · down · inspect:reset",
+        "states": [
+          {
+            "pressed": true
+          }
+        ],
+        "travel": "位移 0.000, 0.000, -0.150 mm · 名义行程 0.15 mm"
+      },
+      "released": {
+        "events": "reset · click · inspect:reset\nreset · up · inspect:reset\nreset · down · inspect:reset",
+        "states": [
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "atoms3r-cam.jpg"
+    },
+    {
+      "id": "atoms3r-ext",
+      "calibration": "false",
+      "configuration": "complete",
+      "controls": [
+        "reset"
+      ],
+      "error": null,
+      "tag": "AtomS3R-Ext / C126-Ext",
+      "held": {
+        "events": "reset · down · inspect:reset",
+        "states": [
+          {
+            "pressed": true
+          }
+        ],
+        "travel": "位移 0.000, 0.000, -0.150 mm · 名义行程 0.15 mm"
+      },
+      "released": {
+        "events": "reset · click · inspect:reset\nreset · up · inspect:reset\nreset · down · inspect:reset",
+        "states": [
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "atoms3r-ext.jpg"
+    },
+    {
+      "id": "atoms3r-m12",
+      "calibration": "false",
+      "configuration": "complete",
+      "controls": [
+        "reset"
+      ],
+      "error": null,
+      "tag": "AtomS3R-M12 / C126-M12",
+      "held": {
+        "events": "reset · down · inspect:reset",
+        "states": [
+          {
+            "pressed": true
+          }
+        ],
+        "travel": "位移 0.000, 0.000, -0.150 mm · 名义行程 0.15 mm"
+      },
+      "released": {
+        "events": "reset · click · inspect:reset\nreset · up · inspect:reset\nreset · down · inspect:reset",
+        "states": [
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "atoms3r-m12.jpg"
+    },
+    {
+      "id": "stickc",
+      "calibration": "true",
+      "configuration": "complete",
+      "controls": [
+        "a",
+        "b",
+        "power"
+      ],
+      "error": null,
+      "tag": "M5StickC / K016-C",
+      "held": {
+        "events": "a · down · inspect:a",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ],
+        "travel": "位移 0.000, 0.000, -0.220 mm · 名义行程 0.22 mm"
+      },
+      "released": {
+        "events": "a · click · inspect:a\na · up · inspect:a\na · down · inspect:a",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "stickc.jpg"
+    },
+    {
+      "id": "stickc-plus",
+      "calibration": "true",
+      "configuration": "complete",
+      "controls": [
+        "a",
+        "b",
+        "power"
+      ],
+      "error": null,
+      "tag": "M5StickC Plus / K016-P",
+      "held": {
+        "events": "a · down · inspect:a",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ],
+        "travel": "位移 0.000, 0.000, -0.220 mm · 名义行程 0.22 mm"
+      },
+      "released": {
+        "events": "a · click · inspect:a\na · up · inspect:a\na · down · inspect:a",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "stickc-plus.jpg"
+    },
+    {
+      "id": "stickc-plus-se",
+      "calibration": "true",
+      "configuration": "complete",
+      "controls": [
+        "a",
+        "b",
+        "power"
+      ],
+      "error": null,
+      "tag": "M5StickC Plus SE / K016-P-SE",
+      "held": {
+        "events": "a · down · inspect:a",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ],
+        "travel": "视觉行程 0.250 / 0.25 mm · 外壳弯曲"
+      },
+      "released": {
+        "events": "a · click · inspect:a\na · up · inspect:a\na · down · inspect:a",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "stickc-plus-se.jpg"
+    },
+    {
+      "id": "stickt2",
+      "calibration": "true",
+      "configuration": "complete",
+      "controls": [
+        "a",
+        "b",
+        "power",
+        "press"
+      ],
+      "error": null,
+      "tag": "M5StickT2 / K016-T2",
+      "held": {
+        "events": "a · down · inspect:a",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ],
+        "travel": "位移 0.000, 0.000, -0.220 mm · 名义行程 0.22 mm"
+      },
+      "released": {
+        "events": "a · click · inspect:a\na · up · inspect:a\na · down · inspect:a",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "stickt2.jpg"
+    },
+    {
+      "id": "atom-lite",
+      "calibration": "false",
+      "configuration": "complete",
+      "controls": [
+        "button",
+        "reset"
+      ],
+      "error": null,
+      "tag": "Atom Lite / C008",
+      "held": {
+        "events": "button · down · inspect:button",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          }
+        ],
+        "travel": "视觉行程 0.180 / 0.18 mm · 按压"
+      },
+      "released": {
+        "events": "button · click · inspect:button\nbutton · up · inspect:button\nbutton · down · inspect:button",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "atom-lite.jpg"
+    },
+    {
+      "id": "atom-matrix",
+      "calibration": "false",
+      "configuration": "complete",
+      "controls": [
+        "button",
+        "reset"
+      ],
+      "error": null,
+      "tag": "Atom Matrix original / C008-B",
+      "held": {
+        "events": "button · down · inspect:button",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          }
+        ],
+        "travel": "位移 0.000, 0.000, -0.140 mm · 名义行程 0.14 mm"
+      },
+      "released": {
+        "events": "button · click · inspect:button\nbutton · up · inspect:button\nbutton · down · inspect:button",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "atom-matrix.jpg"
+    },
+    {
+      "id": "atoms3",
+      "calibration": "true",
+      "configuration": "complete",
+      "controls": [
+        "button",
+        "reset"
+      ],
+      "error": null,
+      "tag": "AtomS3 / C123",
+      "held": {
+        "events": "button · down · inspect:button",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          }
+        ],
+        "travel": "位移 0.000, 0.000, -0.180 mm · 名义行程 0.18 mm"
+      },
+      "released": {
+        "events": "button · click · inspect:button\nbutton · up · inspect:button\nbutton · down · inspect:button",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "atoms3.jpg"
+    },
+    {
+      "id": "atoms3-lite",
+      "calibration": "false",
+      "configuration": "complete",
+      "controls": [
+        "button",
+        "reset"
+      ],
+      "error": null,
+      "tag": "AtomS3 Lite / C124",
+      "held": {
+        "events": "button · down · inspect:button",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          }
+        ],
+        "travel": "位移 0.000, 0.000, -0.180 mm · 名义行程 0.18 mm"
+      },
+      "released": {
+        "events": "button · click · inspect:button\nbutton · up · inspect:button\nbutton · down · inspect:button",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "atoms3-lite.jpg"
+    },
+    {
+      "id": "atoms3r",
+      "calibration": "true",
+      "configuration": "",
+      "controls": [
+        "button",
+        "reset"
+      ],
+      "error": null,
+      "tag": "AtomS3R / C126",
+      "held": {
+        "events": "button · down · inspect:button",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          }
+        ],
+        "travel": "位移 0.000, 0.000, -0.180 mm · 名义行程 0.18 mm"
+      },
+      "released": {
+        "events": "button · click · inspect:button\nbutton · up · inspect:button\nbutton · down · inspect:button",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "atoms3r.jpg"
+    },
+    {
+      "id": "sticks3",
+      "calibration": "true",
+      "configuration": "",
+      "controls": [
+        "btnA",
+        "btnB",
+        "btnPWR"
+      ],
+      "error": null,
+      "tag": "StickS3 / K150",
+      "held": {
+        "events": "btnA · down · inspect:btnA",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ],
+        "travel": "位移 0.000, 0.000, -0.350 mm · 名义行程 0.35 mm"
+      },
+      "released": {
+        "events": "btnA · click · inspect:btnA\nbtnA · up · inspect:btnA\nbtnA · down · inspect:btnA",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "sticks3.jpg"
+    },
+    {
+      "id": "stickc-plus2",
+      "calibration": "true",
+      "configuration": "complete",
+      "controls": [
+        "a",
+        "b",
+        "power"
+      ],
+      "error": null,
+      "tag": "M5StickC Plus2 / K016-P2",
+      "held": {
+        "events": "a · down · inspect:a",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ],
+        "travel": "视觉行程 0.250 / 0.25 mm · 外壳弯曲"
+      },
+      "released": {
+        "events": "a · click · inspect:a\na · up · inspect:a\na · down · inspect:a",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "stickc-plus2.jpg"
+    }
+  ],
+  "additionalConfigurations": [
+    {
+      "id": "m5stick",
+      "configuration": "white",
+      "held": {
+        "configuration": "white",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "released": {
+        "error": null,
+        "events": "a · click · inspect:a\na · up · inspect:a\na · down · inspect:a",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "m5stick-white.jpg"
+    },
+    {
+      "id": "stickv",
+      "configuration": "black-pcb",
+      "held": {
+        "configuration": "black-pcb",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "released": {
+        "error": null,
+        "events": "a · click · inspect:a\na · up · inspect:a\na · down · inspect:a",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "stickv-black-pcb.jpg"
+    },
+    {
+      "id": "atom-matrix-v11",
+      "configuration": "mount-open",
+      "held": {
+        "configuration": "mount-open",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "released": {
+        "error": null,
+        "events": "button · click · inspect:button\nbutton · up · inspect:button\nbutton · down · inspect:button",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "atom-matrix-v11-mount-open.jpg"
+    },
+    {
+      "id": "atom-echo",
+      "configuration": "mount-open",
+      "held": {
+        "configuration": "mount-open",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "released": {
+        "error": null,
+        "events": "button · click · inspect:button\nbutton · up · inspect:button\nbutton · down · inspect:button",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "atom-echo-mount-open.jpg"
+    },
+    {
+      "id": "atom-echos3r",
+      "configuration": "mount-open",
+      "held": {
+        "configuration": "mount-open",
+        "states": [
+          {
+            "pressed": true
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "released": {
+        "error": null,
+        "events": "button · click · inspect:button\nbutton · up · inspect:button\nbutton · down · inspect:button",
+        "states": [
+          {
+            "pressed": false
+          },
+          {
+            "pressed": false
+          }
+        ]
+      },
+      "screenshot": "atom-echos3r-mount-open.jpg"
+    }
+  ],
+  "pointerChecks": [
+    {
+      "id": "atom-matrix-v11",
+      "action": "actual canvas center press/release",
+      "point": [
+        660,
+        474
+      ],
+      "events": "button · click · pointer:1\nbutton · up · pointer:1\nbutton · down · pointer:1",
+      "states": [
+        {
+          "id": "button",
+          "state": {
+            "pressed": false
+          }
+        },
+        {
+          "id": "reset",
+          "state": {
+            "pressed": false
+          }
+        }
+      ],
+      "travel": "位移 0.000, 0.000, -0.051 mm · 名义行程 0.14 mm"
+    },
+    {
+      "id": "stickv",
+      "action": "actual canvas U-tab press/release",
+      "point": [
+        660,
+        581
+      ],
+      "events": "a · click · pointer:1\na · up · pointer:1\na · down · pointer:1",
+      "states": [
+        {
+          "id": "a",
+          "state": {
+            "pressed": false
+          }
+        },
+        {
+          "id": "b",
+          "state": {
+            "pressed": false
+          }
+        },
+        {
+          "id": "power",
+          "state": {
+            "pressed": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "stickt2",
+      "action": "actual canvas rim drag and separate center press",
+      "drag": [
+        [
+          716,
+          533
+        ],
+        [
+          690,
+          507
+        ]
+      ],
+      "click": [
+        690,
+        533
+      ],
+      "rotated": {
+        "events": "press · click · pointer:1\npress · up · pointer:1\npress · down · pointer:1",
+        "joint": "Encoder rim · drag to rotate\n角度\n0°\n演示转速\n0 rpm\n回到中位 / 停止0.0° / 0 rpm"
+      },
+      "pressed": {
+        "events": "press · click · pointer:1\npress · up · pointer:1\npress · down · pointer:1\npress · click · pointer:1\npress · up · pointer:1",
+        "states": [
+          {
+            "id": "a",
+            "state": {
+              "pressed": false
+            }
+          },
+          {
+            "id": "b",
+            "state": {
+              "pressed": false
+            }
+          },
+          {
+            "id": "power",
+            "state": {
+              "pressed": false
+            }
+          },
+          {
+            "id": "press",
+            "state": {
+              "pressed": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "stickt2",
+      "action": "actual canvas outer rim drag",
+      "from": [
+        721,
+        534
+      ],
+      "to": [
+        691,
+        505
+      ],
+      "events": "rotation · rotate · pointer\nrotation · rotate · pointer\nrotation · rotate · pointer\nrotation · rotate · pointer\nrotation · rotate · pointer",
+      "joint": "Encoder rim · drag to rotate\n角度\n0°\n演示转速\n0 rpm\n回到中位 / 停止94.1° / 0 rpm"
+    },
+    {
+      "id": "stickt2",
+      "action": "amended build actual canvas rim drag with UI readback",
+      "from": [
+        721,
+        534
+      ],
+      "to": [
+        691,
+        505
+      ],
+      "result": {
+        "angleInput": "94",
+        "jointText": "Encoder rim · drag to rotate角度94.1°演示转速0 rpm回到中位 / 停止94.1° / 0 rpm",
+        "state": {
+          "buttons": {
+            "a": {
+              "pressed": false
+            },
+            "b": {
+              "pressed": false
+            },
+            "power": {
+              "pressed": false
+            },
+            "press": {
+              "pressed": false
+            }
+          },
+          "flexes": {},
+          "joints": {
+            "rotation": {
+              "angleDeg": 94.1463348900988,
+              "continuous": true,
+              "demoRpmMax": 40,
+              "mode": "continuous",
+              "rangeDeg": null,
+              "rpm": 0,
+              "targetAngleDeg": 94.1463348900988,
+              "transitioning": false,
+              "visualRangeDeg": null
+            }
+          },
+          "leds": {},
+          "rotarySelectors": {},
+          "sliders": {}
+        }
+      }
+    },
+    {
+      "id": "stickt2",
+      "action": "amended build separate actual canvas center click",
+      "point": [
+        690,
+        533
+      ],
+      "events": "press · click · pointer:1\npress · up · pointer:1\npress · down · pointer:1\nrotation · rotate · pointer\nrotation · rotate · pointer",
+      "state": {
+        "buttons": {
+          "a": {
+            "pressed": false
+          },
+          "b": {
+            "pressed": false
+          },
+          "power": {
+            "pressed": false
+          },
+          "press": {
+            "pressed": false
+          }
+        },
+        "joints": {
+          "rotation": {
+            "angleDeg": 94.1463348900988,
+            "targetAngleDeg": 94.1463348900988,
+            "rpm": 0,
+            "transitioning": false,
+            "mode": "continuous",
+            "continuous": true,
+            "rangeDeg": null,
+            "visualRangeDeg": null,
+            "demoRpmMax": 40
+          }
+        },
+        "sliders": {},
+        "rotarySelectors": {},
+        "flexes": {},
+        "leds": {}
+      }
+    },
+    {
+      "id": "stickt2",
+      "action": "amended build return to neutral",
+      "result": {
+        "buttons": {
+          "a": {
+            "pressed": false
+          },
+          "b": {
+            "pressed": false
+          },
+          "power": {
+            "pressed": false
+          },
+          "press": {
+            "pressed": false
+          }
+        },
+        "joints": {
+          "rotation": {
+            "angleDeg": 0,
+            "targetAngleDeg": 0,
+            "rpm": 0,
+            "transitioning": false,
+            "mode": "continuous",
+            "continuous": true,
+            "rangeDeg": null,
+            "visualRangeDeg": null,
+            "demoRpmMax": 40
+          }
+        },
+        "sliders": {},
+        "rotarySelectors": {},
+        "flexes": {},
+        "leds": {}
+      }
+    }
+  ],
+  "console": [],
+  "amendment": {
+    "id": "stickt2",
+    "rightView": "stickt2-right-amended.jpg",
+    "opaqueReceiverVisualConfirmed": true,
+    "rimDragAngleDeg": 94.1463348900988,
+    "angleInputRounded": 94,
+    "centerClickAndRelease": true
+  },
+  "hiddenViewportRecovery": {
+    "size": [
+      0,
+      0
+    ],
+    "load": "stickv",
+    "restored": [
+      1100,
+      850
+    ],
+    "fitRestoredWithoutManualReset": true
+  },
+  "scope": "All24products/29configurations selected through actual UI;one primary button per configuration held/released via Inspector,not every button on canvas.Canvas Matrixv1.1/StickV andT2 interactions separately recorded;first T2 attempted drag hit center and is retained as failed-attempt evidence;corrected rim drag and amended-build UI readback passed.No hardware/firmware/manufacturing certification."
+}

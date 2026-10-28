@@ -1,0 +1,65 @@
+{
+  "status": "pass",
+  "id": "stickc",
+  "sku": "K016-C",
+  "native": {
+    "actualFaces": 18468,
+    "rawFaces": 18468,
+    "duplicatePreviewFaces": 0,
+    "allOriginalPositionNormalIndexFaceIdAttributeWord": true,
+    "topologyBoundary": "StickC has 12 inherited four-way edges, no degree-1 boundary edges; source arrays are retained without repair."
+  },
+  "buttons": {
+    "a": {
+      "partialFullActualSourceFaces": true,
+      "fixedSourceVerticesAndOtherParts": true,
+      "exactReturnAllAttrsIndexWorld": true,
+      "cancelMultiSourceNoClick": true
+    },
+    "b": {
+      "partialFullActualSourceFaces": true,
+      "fixedSourceVerticesAndOtherParts": true,
+      "exactReturnAllAttrsIndexWorld": true,
+      "cancelMultiSourceNoClick": true
+    },
+    "power": {
+      "partialFullActualSourceFaces": true,
+      "fixedSourceVerticesAndOtherParts": true,
+      "exactReturnAllAttrsIndexWorld": true,
+      "cancelMultiSourceNoClick": true
+    }
+  },
+  "outputs": {
+    "actualFramebuffer": true,
+    "redLedExternal": true,
+    "noInputEcho": true
+  },
+  "ports": {
+    "wallRays": 40,
+    "actualContacts": 44,
+    "hatWells": 8,
+    "rearFirstMaterial": true
+  },
+  "cable": {
+    "wireCount": 4,
+    "plugs": 2,
+    "faceDistanceMm": 74
+  },
+  "unitResourcesReleased": 62,
+  "connectedInkAllPhysicalInvariant": true,
+  "resourcesReleased": [
+    158,
+    156
+  ],
+  "pendingClickTimersClean": true,
+  "picking": {
+    "status": "pass",
+    "checks": 104,
+    "pointerCancelRoutes": 18,
+    "states": 4,
+    "poses": 2,
+    "realViewerCameraRaycasterAndPrivatePointerRoute": true,
+    "gpuDomBoundaryOnly": true
+  },
+  "scope": "Actual own model CPU source/geometry/input/framebuffer/cable and real Viewer route with GPU/DOM boundaries;no browser pixels,manufacturing/electrical/firmware acceptance."
+}

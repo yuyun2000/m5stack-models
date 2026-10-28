@@ -1,0 +1,23 @@
+{
+  "id": "stickv",
+  "sku": "K027",
+  "officialDocs": "https://docs.m5stack.com/en/core/StickV",
+  "method": "original own-product photo and nominal-dimension reconstruction",
+  "cad": "No own-model native shell source was found in the fixed official Hardware tree;no neighbouring model substituted.",
+  "referenceSources": [
+    "https://docs.m5stack.com/en/core/StickV",
+    "https://static-cdn.m5stack.com/resource/docs/products/core/m5stickv/m5stickv_03.webp"
+  ],
+  "modelEntry": "src/devices/stickv/index.js",
+  "fixture": {
+    "path": "scripts/check-stickv-controller.mjs",
+    "export": "checkStickVController"
+  },
+  "limitations": [
+    "Own K027 photographs and stated48×24×22mm,original reconstruction;not StickC geometry and not ESP32.",
+    "Two PCB revisions exposed as visual configurations;official BOM/MPU6886/SH200Q and flash references vary historically,not collapsed into fabricated runtime capability.",
+    "Camera,RGBW physical optic,speaker,USB-C,Grove,microSD and keys included. Camera/audio/SD/IMU are passive visible structure;no emulated sensor or firmware.",
+    "Own photos show a plain blue molded case and physical key ribs,not a rear pinout sticker;no photo crop or invented sticker added."
+  ],
+  "sourceRights": "Original MIT code;official photos only factual references,not redistributed. Ordinary approved PNG/reference redraw artwork rights separate from code."
+}

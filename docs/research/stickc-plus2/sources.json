@@ -1,0 +1,145 @@
+{
+  "id": "stickc-plus2",
+  "sku": "K016-P2",
+  "name": "M5StickC Plus2",
+  "retrievedAt": "2026-10-28",
+  "officialDocs": "https://docs.m5stack.com/en/core/StickC-Plus2",
+  "documentSha256": "252864dee5095160a3831ed5dee5b23477b435293541dbfc306a18d4d8d1a4b4",
+  "constructionRoute": "original-parametric-exact-model-photo-and-explicitly-linked-dimension-reconstruction",
+  "nativeCadUsed": false,
+  "hardwareRepositoryInspection": {
+    "repository": "m5stack/M5_Hardware",
+    "commit": "e29c139cbc7c80b5ccc5557e5ab8025a7a19a109",
+    "dedicatedK016P2DirectoryFound": false,
+    "nearbyK016PNotBorrowed": true
+  },
+  "nominalMm": [
+    24,
+    48,
+    13.5
+  ],
+  "facts": {
+    "soc": "ESP32-PICO-V3-02",
+    "batteryMah": 200,
+    "display": {
+      "diagonalInches": 1.14,
+      "pixels": [
+        135,
+        240
+      ],
+      "driver": "ST7789V2",
+      "touch": false
+    },
+    "buttons": {
+      "a": "G37",
+      "b": "G39",
+      "power": "G35"
+    },
+    "redLedAndIrShared": "G19",
+    "greenSleepLed": "nonprogrammable",
+    "grovePins": [
+      "GND",
+      "5V",
+      "G32",
+      "G33"
+    ],
+    "headerCount": 8,
+    "headerPitchMm": 2.54
+  },
+  "mechanicalDrawingBoundary": "The exact Plus2 page explicitly links a K016-P/Plus drawing. Only its 24x48x13.5 mm envelope, R3 front profile and mount layout are reused as drawing evidence; no Plus mesh, PMIC, battery or artwork is borrowed.",
+  "inferred": [
+    "1.1 mm enclosure walls and hidden board supports",
+    "LCD active rectangle 14.75x24.95 mm derived from own front-photo aperture aspect and nominal diagonal",
+    "concealed PCB/battery/chip envelopes and positions",
+    "connector depths, hidden solder tails and spring contacts",
+    "A normalized 0.25 mm flex travel; B/C 0.18 mm rigid travel",
+    "rear label substrate thickness and optical cover layers"
+  ],
+  "sourceReferences": [
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/M5StickC%20PLUS2/10.webp",
+      "sha256": "01fc5cfd891552a012dceb2baaa2a718024a9c9aa7c789d4b81efedfa52daacd",
+      "role": "own top HAT and paired apertures",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/M5StickC%20PLUS2/11.webp",
+      "sha256": "eb0fb2c4adb067d791c9d0bed8d30c0d6986d35e95abf6f2122e6df950fcc35e",
+      "role": "own side C button and aperture positions",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/M5StickC%20PLUS2/4.webp",
+      "sha256": "b4b5f9feb80c201840bb0d9cd66e4504329c29fcc8d4289d4cc4326a0d085623",
+      "role": "own component placement diagram",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/M5StickC%20PLUS2/5.webp",
+      "sha256": "492a32ca016beba3e73ab344380964434c05bab480e450ff3ff5dca3bec2d38f",
+      "role": "own rear assembled view",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/M5StickC%20PLUS2/6.webp",
+      "sha256": "93b322d71ec17147c33eb30b021180e56c5a90c91338fd2b9403347e1bd71c1b",
+      "role": "own front window and M5 pad",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/M5StickC%20PLUS2/7.webp",
+      "sha256": "1defd1a479b06446d6708d077c8520330c1847dbbd84b590a503f2ef9e55e869",
+      "role": "own rear label and mounting hardware",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/M5StickC%20PLUS2/8.webp",
+      "sha256": "e2fa95cbb50dce36e6534a2709ab1c01cc380fd24acbdafae988adfe9eb9f43c",
+      "role": "own stacked USB/Grove bottom",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/M5StickC%20PLUS2/9.webp",
+      "sha256": "f13cc9e41e166027ff50a2a699afc0ca6fc68f4addce784452334070ee4b4c82",
+      "role": "own opposite B button and apertures",
+      "sourceOnlyNotDistributed": true
+    },
+    {
+      "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/m5stickc_plus/%E5%B0%BA%E5%AF%B8%E5%9B%BE.jpg",
+      "sha256": "7eb4cb986c051267dee781ed17ccad21ff6d523891875ad89a1e377331f6f07f",
+      "role": "shared dimension drawing explicitly linked by exact Plus2 page",
+      "sourceOnlyNotDistributed": true
+    }
+  ],
+  "ordinaryRasters": [
+    {
+      "path": "src/devices/stickc-plus2/artwork/rear-reference-redraw.png",
+      "sha256": "eea414ebf0de2d0aa4abbb255c711cc42b4c109e1b01839a6b76ef6714cbc2de",
+      "pixels": [
+        840,
+        1480
+      ],
+      "mode": "RGB",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ],
+      "crcValid": true,
+      "ancillaryMetadata": false,
+      "kind": "reference-redraw",
+      "panels": 1,
+      "reference": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/M5StickC%20PLUS2/7.webp",
+      "originalPhotographDistributed": false,
+      "vectorDistributed": false
+    }
+  ],
+  "distribution": {
+    "newCodeLicense": "MIT",
+    "nativeGeometryImported": false,
+    "officialPhotosAndRawDocsDistributed": false,
+    "referenceImageLicenseAssumedMIT": false,
+    "rawVectorOrPrivateSourceDistributed": false
+  },
+  "scope": "External appearance, input intent, external pixels and visible movement only. No firmware/electrical/bus/IMU/audio/physical-fit certification."
+}

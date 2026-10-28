@@ -127,10 +127,185 @@ AC Measure/AIN4-20mA/BLDC Driver插舌已补孔下壁；当前SHA/局部证据�
 
 提供给公开分发的新增代码使用MIT，第三方CAD/标识/图片保留各自权利。CSV、矢量原稿、私有映射、生成器和中间材料继续在仓库外；只分发已授权的普通PNG和配准代码。原始官方STL、照片/PDF和MCP长篇原文不加入公开包。
 
-旧50张参考重绘PNG保留为未完成全批复核的检查点；私有实现尚未整批同步这些重绘。私有Scroll结构WIP与公开新增Unit分开保留，禁止整树覆盖或夹带发布。StackChan生产装配基准及隐藏配合仍未闭合，整体goal保持active。
+旧50张参考重绘PNG保留为未完成全批复核的检查点；私有实现尚未整批同步这些重绘。私有Scroll结构WIP与公开新增Unit分开保留，禁止整树覆盖或夹带发布。StackChan生产装配基准及隐藏配合仍未闭合；该机械缺项与当前明确恢复的主机扩展独立保留。
 
 本地预览为<http://127.0.0.1:5188/>。`npm run catalog`生成loader、服务catalog与STATUS；各批专项命令见对应指南。后续新增时应按本页批次和当前实际diff保留依赖，保留公开基线已有的素材净化规则。
 
 <!-- us915-sma-amendment-2026-10-27 -->
 
 2026-10-27 US915 SMA独立更正：[当前更正说明](US915-SMA-AMENDMENT-2026-10-27.md)依据US915自身近照将本体改为实心中心针，附件受针腔/止挡、尺寸/极性/配合仍明记推导；[当前实际无loader专项receipt](research/lorawan-us915/sma-amendment-2026-10-27-smoke.json)对应 `node scripts/check-lorawan-us915-sma-amendment.mjs`。构建与最终证据见[当前progress](../artifacts/us915-sma-amendment-2026-10-27/progress.json)；[51批progress](../artifacts/cardkboriginal-poecamoriginal-lorawanus915-expansion/progress.json)仅为历史快照。原native、两PNG、framework/API、51/52旧helper/freeze/progress及基线保持，未重跑历史套件。
+
+## 2026-10-28 主机四系列
+
+[AtomS3 / Dial / Plus2 / Basic v2.7](HOST-FAMILY-EXPANSION-2026-10-28.md)新增四款、五种配置；含真实输入、外驱显示、Grove与同步贴纸。当前目录21主机、184 Unit，均保持modeled。
+
+<!-- series-atom-matrix-v11 -->
+# Atom Matrix v1.1 接入
+
+```js
+import MatrixV11 from './src/devices/atom-matrix-v11/index.js';
+const host = new MatrixV11();
+const off = host.on('input', event => bridge.acceptInput(event));
+host.button('button').press('external');
+host.button('button').cancel('external');
+host.led('led12').set({color:'#20a0ff',brightness:0.3});
+```
+
+默认导出与 `Model` 是相同构造器，另有 `spec/defaults/configurations/configurationSchema`。真实组件顺序：`led0` 到 `led24`、`button`、`reset`、`ext-5p`、`ext-4p`、`grove`、`usb`。`ledN` 是视觉行优先索引，不能当作未经核实的电气串接编号。按键不自动点灯、Reset 不重启固件。
+
+`complete` 配置为 `{}`，`mount-open` 为 `{labelPierced:true}`。默认黄色 M2 标记有实体薄膜覆盖；后一个配置只物理穿透薄膜以开放膜后的原生安装孔。`artwork:false` 仅关闭墨层，仍保留物理膜和所有动作。
+
+Grove 使用既有 Port/UnitFrame/GroveCable，可挂实际 Unit 或 HUB；输入用完整层级路径 `grove/grove-1/press`。外部 RGB 命令不回送 input。自建循环以秒调用 `host.update(dt,time)`，Viewer 已处理更新循环。最终取消自己持有的来源、调用 `off()`，再卸载并 dispose 模型和 Viewer。GPIO/IMU/IR/总线、音频与固件逻辑由下游实现。
+
+
+<!-- series-m5stick -->
+
+- [M5Stick / K016](research/m5stick/modeling.md)：自身照片原创结构；OLED、两键、蓝灯、Grove。
+
+
+<!-- series-stickv -->
+
+- [M5StickV / K027](research/stickv/modeling.md)：自身照片原创结构；K210、LCD、三键、RGBW、被动相机与Grove。
+
+
+<!-- series-atoms3r-ai-chatbot -->
+- [AtomS3R-AI Chatbot / K147](research/atoms3r-ai-chatbot/modeling.md)：atoms3r完整控制器与A149语音底座，三张批准PNG；音频/AI为下游能力。
+
+
+<!-- series-atoms3r-cam -->
+## AtomS3R-CAM · C126-CAM
+
+精确本款自身原生结构，完整默认装配与普通PNG贴纸，阶段 `modeled`。入口 `src/devices/atoms3r-cam/index.js` 导出 `Model`、`spec`、`defaults`、`configurations`、`configurationSchema`；默认配置 `complete`（`{}`）。
+
+```js
+import {Model} from 'm5stack-models/src/devices/atoms3r-cam/index.js';
+const host = new Model({artwork: true});
+host.ensureBuilt();
+host.on('input', event => console.log(event));
+host.button('reset').press('pointer');
+host.button('reset').cancel('pointer');
+host.handle({type:'led',target:'camera-led',color:'#ffffff',brightness:.6});
+host.port('grove').attach(unit); // 真实Grove视觉装配与下游路径
+// 动画循环内 host.update(dt, elapsed)，移除时 host.dispose()
+```
+
+控制：`reset`；端口：`usb`, `grove`, `ext-5p`, `ext-4p`；外驱LED：`camera-led`。无模拟摄像头数据、传感器、固件或总线。`artwork:false` 保留所有实体和动作。模型原点/尺寸、推导、冲突与限制见 `docs/research/atoms3r-cam/sources.json`；运行 `node scripts/check-atoms3r-cam-controller.mjs`。
+
+
+<!-- series-atoms3r-cam-ai-chatbot -->
+- [AtomS3R-CAM AI Chatbot / K147-CAM](research/atoms3r-cam-ai-chatbot/modeling.md)：atoms3r-cam完整控制器与A149语音底座，三张批准PNG；音频/AI为下游能力。
+
+
+<!-- series-atoms3r-m12 -->
+## AtomS3R-M12 · C126-M12
+
+精确本款自身原生结构，完整默认装配与普通PNG贴纸，阶段 `modeled`。入口 `src/devices/atoms3r-m12/index.js` 导出 `Model`、`spec`、`defaults`、`configurations`、`configurationSchema`；默认配置 `complete`（`{}`）。
+
+```js
+import {Model} from 'm5stack-models/src/devices/atoms3r-m12/index.js';
+const host = new Model({artwork: true});
+host.ensureBuilt();
+host.on('input', event => console.log(event));
+host.button('reset').press('pointer');
+host.button('reset').cancel('pointer');
+host.handle({type:'led',target:'camera-led',color:'#ffffff',brightness:.6});
+host.port('grove').attach(unit); // 真实Grove视觉装配与下游路径
+// 动画循环内 host.update(dt, elapsed)，移除时 host.dispose()
+```
+
+控制：`reset`；端口：`usb`, `grove`, `ext-5p`, `ext-4p`；外驱LED：`camera-led`。无模拟摄像头数据、传感器、固件或总线。`artwork:false` 保留所有实体和动作。模型原点/尺寸、推导、冲突与限制见 `docs/research/atoms3r-m12/sources.json`；运行 `node scripts/check-atoms3r-m12-controller.mjs`。
+
+
+<!-- series-atoms3r-m12-volcengine-kit -->
+- [AtomS3R-M12 Volcengine Kit / D062-M12](research/atoms3r-m12-volcengine-kit/modeling.md)：atoms3r-m12完整控制器与A149语音底座，三张批准PNG；音频/AI为下游能力。
+
+
+<!-- series-stickc -->
+### M5StickC · K016-C
+
+`stickc` 保留本款官方原生壳体与原始属性/面编号；原生源有12条四向边、没有degree-1边界；不修补、不删面，不冒称严格每边双面的流形。新增完整背衬/PCB/电池/LCD、三键本款壳面运动、USB/Grove/HAT厚壁孔与接点，以及后标签普通PNG。名义与CAD尺寸冲突在本款来源中保留，不缩放原生源。
+
+组件顺序 `a,b,power,usb,grove,hat,red,lcd`，配置 `complete / {}`，三键为按钮意图、`lcd`为80×160外驱非触摸屏、`red`外驱；Grove四芯/双插头和`grove/press`复用共享API。持续调用`update(dt,time)`；输入来源成对release/cancel。不注册固件/传感数值/音频。
+
+[建模与API](research/stickc/modeling.md)，[安全来源](research/stickc/sources.json)，[CPU专项](research/stickc/checks.json)。`node scripts/check-stickc-controller.mjs`验证真实几何/多点运动、去墨、framebuffer、接口、Grove和释放；实际Viewer夹具104拾取/18取消不代替网页像素，仍为`modeled`。
+
+
+<!-- series-stickc-plus -->
+### M5StickC Plus · K016-P
+
+`stickc-plus` 保留本款官方原生壳体与原始属性/面编号；两件原生壳体严格闭合正体积；另两件为重复平移预览，逐面配对后排除。新增完整背衬/PCB/电池/LCD、三键本款壳面运动、USB/Grove/HAT厚壁孔与接点，以及后标签普通PNG。名义与CAD尺寸冲突在本款来源中保留，不缩放原生源。
+
+组件顺序 `a,b,power,usb,grove,hat,red,lcd`，配置 `complete / {}`，三键为按钮意图、`lcd`为135×240外驱非触摸屏、`red`外驱；Grove四芯/双插头和`grove/press`复用共享API。持续调用`update(dt,time)`；输入来源成对release/cancel。不注册固件/传感数值/音频。
+
+[建模与API](research/stickc-plus/modeling.md)，[安全来源](research/stickc-plus/sources.json)，[CPU专项](research/stickc-plus/checks.json)。`node scripts/check-stickc-plus-controller.mjs`验证真实几何/多点运动、去墨、framebuffer、接口、Grove和释放；实际Viewer夹具104拾取/18取消不代替网页像素，仍为`modeled`。
+
+
+<!-- series-atoms3r-ext -->
+## AtomS3R-Ext · C126-Ext
+
+精确本款自身原生结构，完整默认装配与普通PNG贴纸，阶段 `modeled`。入口 `src/devices/atoms3r-ext/index.js` 导出 `Model`、`spec`、`defaults`、`configurations`、`configurationSchema`；默认配置 `complete`（`{}`）。
+
+```js
+import {Model} from 'm5stack-models/src/devices/atoms3r-ext/index.js';
+const host = new Model({artwork: true});
+host.ensureBuilt();
+host.on('input', event => console.log(event));
+host.button('reset').press('pointer');
+host.button('reset').cancel('pointer');
+host.port('grove').attach(unit); // 真实Grove视觉装配与下游路径
+// 动画循环内 host.update(dt, elapsed)，移除时 host.dispose()
+```
+
+控制：`reset`；端口：`usb`, `grove`, `ext-5p`, `ext-4p`；外驱LED：``。无模拟摄像头数据、传感器、固件或总线。`artwork:false` 保留所有实体和动作。模型原点/尺寸、推导、冲突与限制见 `docs/research/atoms3r-ext/sources.json`；运行 `node scripts/check-atoms3r-ext-controller.mjs`。
+
+
+<!-- series-stickc-plus-se -->
+### M5StickC Plus SE · K016-P-SE
+
+`stickc-plus-se` 按自身机械图/多视图原创重建，透明橙壳、前M5闭合活动舌、左右按键、120mAh/AXP192/无IMU、本款普通PNG独立提供。机械图13.52mm与正文8.4mm冲突保留，模型按自身机械图；不借Plus/Plus2网格、不声称原生CAD。
+
+导出`Model`/`StickCPlusSE`、`spec,DIM,defaults,configurations,configurationSchema,HAT_PINS,GROVE_PINS`；配置`complete/{}`，组件`a,b,power,usb,grove,hat,red,lcd`，135×240非触摸屏及red外驱。Grove四芯/双插头、`grove/press`复用共享API，持续`update(dt,time)`，来源成对取消或释放。输入不执行电源/固件。
+
+[建模/API](research/stickc-plus-se/modeling.md)、[安全来源](research/stickc-plus-se/sources.json)、[CPU专项](research/stickc-plus-se/checks.json)。`node scripts/check-stickc-plus-se-controller.mjs`通过155闭合实体、三键实际表面运动、104 Viewer拾取/18取消、去墨、framebuffer、Grove与释放；网页像素另验收，保持modeled。
+
+
+<!-- series-atom-echo -->
+- [Atom Voice (Atom Echo) / C008-C](research/atom-echo/usage.md)：自身完整native两壳、U舌主键/Reset、单RGB外驱、厚壁接口/九井、真实音腔和麦克风通道，两张完整普通PNG。入口`src/devices/atom-echo/index.js`，专项`node scripts/check-atom-echo-controller.mjs`；`modeled`，visual空。
+
+
+<!-- series-atom-echos3r -->
+- [Atom VoiceS3R (Atom EchoS3R) / C126-ECHO](research/atom-echos3r/usage.md)：自身完整native两壳、U舌主键/Reset、无RGB、厚壁接口/九井、真实音腔和麦克风通道，两张完整普通PNG。入口`src/devices/atom-echos3r/index.js`，专项`node scripts/check-atom-echos3r-controller.mjs`；`modeled`，visual空。
+
+
+<!-- series-atoms3u -->
+## AtomS3U · K125
+
+精确本款自身原生结构，完整默认装配与普通PNG贴纸，阶段 `modeled`。入口 `src/devices/atoms3u/index.js` 导出 `Model`、`spec`、`defaults`、`configurations`、`configurationSchema`；默认配置 `complete`（`{}`）。
+
+```js
+import {Model} from 'm5stack-models/src/devices/atoms3u/index.js';
+const host = new Model({artwork: true});
+host.ensureBuilt();
+host.on('input', event => console.log(event));
+host.button('reset').press('pointer');
+host.button('reset').cancel('pointer');
+host.handle({type:'led',target:'rgb',color:'#ffffff',brightness:.6});
+host.port('grove').attach(unit); // 真实Grove视觉装配与下游路径
+// 动画循环内 host.update(dt, elapsed)，移除时 host.dispose()
+```
+
+控制：`button`, `reset`；端口：`usb`, `grove`, `ext-6p`；外驱LED：`rgb`。无模拟摄像头数据、传感器、固件或总线。`artwork:false` 保留所有实体和动作。模型原点/尺寸、推导、冲突与限制见 `docs/research/atoms3u/sources.json`；运行 `node scripts/check-atoms3u-controller.mjs`。
+
+
+<!-- series-stickt2 -->
+### M5StickT2 · K016-T2
+
+`stickt2`是自身原生黑尼龙热成像主机：7650实际面保留、7650组装预览逐面配对排除、两组继承负体积内边界原样保留。独特耳位/安装口、前条纹舌、原生后M5凹字、300mAh承托/PCB/LCD/厚壁接口/被动Lepton镜组独立提供。名义24×48×24与含耳CAD30.4×48×23.9mm分别记录。
+
+导出`Model`/`StickT2`、`spec,DIM,defaults,configurations,configurationSchema,GROVE_PINS`，配置`complete/{}`；组件`a,b,power,usb,grove,press,rotation,lcd`。三键/编码器中心按压、真实轮圈拖转、外驱135×240画面及Grove四芯/双插头复用共享API。没有HAT/LED/传感数据/热图自动生成。持续`update(dt,time)`，取消按钮回位、取消转动结束捕获并保留角度。该款官图没有独立胶贴，M5为实际原生字槽，无虚构贴纸。
+
+[建模/API](research/stickt2/modeling.md)、[安全来源](research/stickt2/sources.json)、[CPU专项](research/stickt2/checks.json)。`node scripts/check-stickt2-controller.mjs`通过103新增闭合实体、144真实Viewer拾取/24取消、两姿态轮圈拖转、实际按放/转压、framebuffer、Grove与释放；网页像素/实物/电气/固件/测温另验收，保持modeled。
+
+
+<!-- series-atomu -->
+- [AtomU / K117](research/atomu/usage.md)：自身机械图/裸板多视图原创完整壳，53×20×10.3总长与13mm USB-A公头、真实U舌主键/Reset、单外驱RGB、6p厚壁井、拾音/IR真口、完整官图参考重绘PNG。入口`src/devices/atomu/index.js`，专项`node scripts/check-atomu-controller.mjs`；`modeled`，visual空。

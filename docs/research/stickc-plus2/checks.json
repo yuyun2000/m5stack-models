@@ -1,0 +1,143 @@
+{
+  "status": "pass",
+  "id": "stickc-plus2",
+  "sku": "K016-P2",
+  "nominalMm": [
+    24,
+    48,
+    13.5
+  ],
+  "geometry": {
+    "kind": "original-parametric-reconstruction",
+    "closedPositiveFrontSideSolids": 157,
+    "triangles": 132620
+  },
+  "ports": {
+    "connectorWallRays": 40,
+    "visibleContacts": 44,
+    "usbContacts": 24,
+    "groveContacts": 4,
+    "hatWells": 8,
+    "hatContacts": 16,
+    "rearClosureSamples": 3
+  },
+  "runtime": {
+    "perButton": {
+      "a": {
+        "travelMm": 0.25,
+        "partialMm": 0.06846274073157727,
+        "partialFullActualSurfaces": true,
+        "innerAndOuterPhysical": true,
+        "fixedMeshesExact": true,
+        "cancelWithoutClick": true,
+        "exactReturn": true
+      },
+      "b": {
+        "travelMm": 0.18,
+        "partialMm": 0.04929317332673563,
+        "partialFullActualSurfaces": true,
+        "innerAndOuterPhysical": true,
+        "fixedMeshesExact": true,
+        "cancelWithoutClick": true,
+        "exactReturn": true
+      },
+      "power": {
+        "travelMm": 0.18,
+        "partialMm": 0.04929317332673563,
+        "partialFullActualSurfaces": true,
+        "innerAndOuterPhysical": true,
+        "fixedMeshesExact": true,
+        "cancelWithoutClick": true,
+        "exactReturn": true
+      }
+    },
+    "actualSurfaceRays": 36,
+    "external135x240Framebuffer": true,
+    "rgb565AndFill": true,
+    "redLedExternalNoEcho": true,
+    "realTimerClick": true,
+    "inkOffAllPhysicalAttributesIndexWorld": true
+  },
+  "connection": {
+    "transformedHost": true,
+    "hierarchicalInputPath": "grove/press",
+    "sourceToActualGroveFrame": true,
+    "cable": {
+      "wireCount": 4,
+      "plugCount": 2,
+      "faceDistanceMm": 70
+    },
+    "unitPoseAndHostTransfer": true,
+    "realDetachReattach": true,
+    "resourcesReleased": 62
+  },
+  "connectedInk": {
+    "restPartialFullReturnedAllPhysicalAttributesIndexWorld": true,
+    "allThreeHostKeysAndChildHeld": true,
+    "actualFourCoreAndBothPlugs": true
+  },
+  "picking": {
+    "status": "pass",
+    "states": [
+      "rest",
+      "partial",
+      "full",
+      "returned"
+    ],
+    "poses": 2,
+    "samplesPerPose": 13,
+    "actualViewerPicks": 104,
+    "actualDomPointerCancelRoutes": 18,
+    "scope": "Real Viewer/camera/raycaster/private pointer route; GPU and DOM boundary fixture only, no browser pixel claim"
+  },
+  "scope": "Actual product CPU geometry/API/cable/timer only; no browser pixels, physical fit, hidden BOM accuracy, firmware/electrical or certification acceptance.",
+  "disposedResources": [
+    216,
+    214
+  ],
+  "pendingClickResources": 214,
+  "pendingRealClickTimersCancelled": true,
+  "ordinaryPng": {
+    "path": "src/devices/stickc-plus2/artwork/rear-reference-redraw.png",
+    "sha256": "eea414ebf0de2d0aa4abbb255c711cc42b4c109e1b01839a6b76ef6714cbc2de",
+    "pixels": [
+      840,
+      1480
+    ],
+    "mode": "RGB",
+    "pngChunks": [
+      "IDAT",
+      "IEND",
+      "IHDR"
+    ],
+    "crcValid": true,
+    "ancillaryMetadata": false,
+    "kind": "reference-redraw",
+    "panels": 1,
+    "reference": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/core/M5StickC%20PLUS2/7.webp",
+    "originalPhotographDistributed": false,
+    "vectorDistributed": false
+  },
+  "runtimeFiles": [
+    {
+      "path": "src/devices/stickc-plus2/FlexButton.js",
+      "sha256": "de5e88a3e9997f6803c6d3358e4e96ac286344d593867da5553a066c731f0ab6"
+    },
+    {
+      "path": "src/devices/stickc-plus2/artwork/rear-reference-redraw.png",
+      "sha256": "eea414ebf0de2d0aa4abbb255c711cc42b4c109e1b01839a6b76ef6714cbc2de"
+    },
+    {
+      "path": "src/devices/stickc-plus2/construction.js",
+      "sha256": "6c63be01f8f7a642937016a14519093122a6a3322acfd45c6e5210d2c124e3c3"
+    },
+    {
+      "path": "src/devices/stickc-plus2/dimensions.js",
+      "sha256": "4ceca9af67d8ec095131cd656c1d4a95943121ec090abf9ca07912fc07441a14"
+    },
+    {
+      "path": "src/devices/stickc-plus2/index.js",
+      "sha256": "23ebfd7e9a87f4458444ce9e3067bb5484553cc11373283f13fafa8d7c2fd6bf"
+    }
+  ]
+}

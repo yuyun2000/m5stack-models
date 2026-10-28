@@ -1,0 +1,346 @@
+{
+  "date": "2026-10-28",
+  "status": "implemented-browser-checked",
+  "stage": "modeled",
+  "verified": 0,
+  "products": 205,
+  "controllers": 21,
+  "units": 184,
+  "newModels": [
+    "atoms3",
+    "dial",
+    "stickc-plus2",
+    "basic-v27"
+  ],
+  "newConfigurations": 5,
+  "checks": {
+    "controllers": {
+      "status": "pass",
+      "controllers": 21,
+      "configurations": 23,
+      "controlsAcrossConfigurations": 170
+    },
+    "connections": {
+      "controllers": 21,
+      "hostConfigurations": 23,
+      "sourcePorts": 28,
+      "railSegments": 52224,
+      "matingChecks": 136
+    },
+    "demo": "pass",
+    "inputPickingRegression": "pass",
+    "publicBuild": "pass",
+    "privateControllersDemoConnectionsBuild": "pass",
+    "topLevelAliasIdentity": "pass",
+    "productionByteResources": 17,
+    "browser": "browser-checks.json"
+  },
+  "privacy": {
+    "textFiles": 64,
+    "pngFiles": 12,
+    "pngMetadata": "OnlyIHDR/IDAT/IEND;allCRCpass",
+    "privateSourcesDistributed": false,
+    "independentAudit": "four model runtime/artwork/source and final Basic docs passed private-name/URL matching scan"
+  },
+  "protection": {
+    "trackedBaselineFiles": 3881,
+    "unrelatedChanged": 0,
+    "allowedTrackedEdits": [
+      "AGENTS.md",
+      "README.md",
+      "THIRD_PARTY_NOTICES.md",
+      "catalog/products.json",
+      "docs/AGENT-INTEGRATION.md",
+      "docs/LOCAL-EXPANSION.md",
+      "docs/STATUS.md",
+      "scripts/check-controller-dynamics.mjs",
+      "scripts/check-demo-lifecycle.mjs",
+      "scripts/check-host-grove-assembly.mjs",
+      "source-manifest.json",
+      "src/index.js",
+      "src/loaders.js"
+    ]
+  },
+  "screenshots": [
+    {
+      "file": "artifacts/host-families-2026-10-28/atoms3-back.jpg",
+      "sha256": "8f41a45b67c4cec81840eeb2f5e2c2b322d5ce37265f958ebe2089e17e3273dd",
+      "size": [
+        1100,
+        850
+      ]
+    },
+    {
+      "file": "artifacts/host-families-2026-10-28/atoms3-fan-running.jpg",
+      "sha256": "b65827b74459dc81d78b95dcfc4389020a7c25c87ae500efd748b095642aaf18",
+      "size": [
+        1100,
+        850
+      ]
+    },
+    {
+      "file": "artifacts/host-families-2026-10-28/atoms3.jpg",
+      "sha256": "6e71b0300dc0637ee3db59237cbe5e2c0b7db81ccd8ecbfa6e0de36622302fd7",
+      "size": [
+        1100,
+        850
+      ]
+    },
+    {
+      "file": "artifacts/host-families-2026-10-28/basic-v27-back.jpg",
+      "sha256": "9ac6313bf363060bcc19a139f81b4cfd8c93b6b129e8c0683e6ae26e42401632",
+      "size": [
+        1100,
+        850
+      ]
+    },
+    {
+      "file": "artifacts/host-families-2026-10-28/basic-v27-base-removed.jpg",
+      "sha256": "42fbc66fc3ec1ddd6f2dc5f0d50c247f55f42c3ee3edb850b75e387e935eb80e",
+      "size": [
+        1100,
+        850
+      ]
+    },
+    {
+      "file": "artifacts/host-families-2026-10-28/basic-v27-connected.jpg",
+      "sha256": "a093dc3b65f45fa89b84c55d522e2fb11842ae8fb04eb5454013ba496ef4bf65",
+      "size": [
+        1100,
+        850
+      ]
+    },
+    {
+      "file": "artifacts/host-families-2026-10-28/basic-v27.jpg",
+      "sha256": "20985088749226303881c0395d82754a1bc76c38ceb65fc204edddf86a5555e8",
+      "size": [
+        1100,
+        850
+      ]
+    },
+    {
+      "file": "artifacts/host-families-2026-10-28/dial-back.jpg",
+      "sha256": "8c08db6ce2557cbb552a5a6e976cddc9660e8f0bb231988e4430b3cd35f7f9a4",
+      "size": [
+        1100,
+        850
+      ]
+    },
+    {
+      "file": "artifacts/host-families-2026-10-28/dial-front.jpg",
+      "sha256": "fe7493027cf1ead2383b45c8ef1e411ce80a40166dc7ea2c49afa3313eae6249",
+      "size": [
+        1100,
+        850
+      ]
+    },
+    {
+      "file": "artifacts/host-families-2026-10-28/dial-port-a.jpg",
+      "sha256": "d32b2515f4d4d4cfa61c7980af8deb4afc547d489fdca65ae2a2a7bab5473578",
+      "size": [
+        1100,
+        850
+      ]
+    },
+    {
+      "file": "artifacts/host-families-2026-10-28/dial-port-b.jpg",
+      "sha256": "b131f69eea281da2c867ba8498fe6f9b3990745646e24928b68004db130a1691",
+      "size": [
+        1100,
+        850
+      ]
+    },
+    {
+      "file": "artifacts/host-families-2026-10-28/dial.jpg",
+      "sha256": "d2162a7a2b6d63775301ecb816b0ef1dcbb4901986c878011b0160db5fce76ff",
+      "size": [
+        1100,
+        850
+      ]
+    },
+    {
+      "file": "artifacts/host-families-2026-10-28/stickc-plus2-back.jpg",
+      "sha256": "ba1c530bf91d13f8bc0f9c458fa79309f9abd85403d46ce5bb7a858e8f94c920",
+      "size": [
+        1100,
+        850
+      ]
+    },
+    {
+      "file": "artifacts/host-families-2026-10-28/stickc-plus2.jpg",
+      "sha256": "76b4ca5c19358b83ba6fa25f83e90bd7f0b1a08ac9df34cbf4d0f6e4647c1f76",
+      "size": [
+        1100,
+        850
+      ]
+    }
+  ],
+  "artwork": [
+    {
+      "file": "src/devices/atoms3/artwork/compliance.png",
+      "sha256": "015882d3cc887941d1d9cf7f67baa0f99d38883239a5e80ee3544312b1e15ac6",
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ],
+      "size": [
+        4096,
+        2673
+      ]
+    },
+    {
+      "file": "src/devices/atoms3/artwork/rear.png",
+      "sha256": "a18bb78ef6562276e30fbf9e7dcda26eafb203b467094305e30e79c5fc1172d5",
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ],
+      "size": [
+        3277,
+        4096
+      ]
+    },
+    {
+      "file": "src/devices/atoms3/artwork/lcd-flex.png",
+      "sha256": "9d96b3b3de0068e491491cf428f30504763ff7e9eea43789bd5ee99576270817",
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ],
+      "size": [
+        4096,
+        240
+      ]
+    },
+    {
+      "file": "src/devices/dial/artwork/stamp-label.png",
+      "sha256": "212c32eef6f17d2e15d8a4e063751e4c4e85b871780b237283548fbf13059274",
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ],
+      "size": [
+        996,
+        1332
+      ]
+    },
+    {
+      "file": "src/devices/stickc-plus2/artwork/rear-reference-redraw.png",
+      "sha256": "eea414ebf0de2d0aa4abbb255c711cc42b4c109e1b01839a6b76ef6714cbc2de",
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ],
+      "size": [
+        840,
+        1480
+      ]
+    },
+    {
+      "file": "src/devices/basic-v27/artwork/care.png",
+      "sha256": "15b4094abf62c85e711ed02ef71e320ef109126dad7e529e24a82136eadba35d",
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ],
+      "size": [
+        541,
+        136
+      ]
+    },
+    {
+      "file": "src/devices/basic-v27/artwork/compliance.png",
+      "sha256": "7efa3a35c6eac5e211137687ab770b92ba8b4e6598aba3d495ee5bc9fe0dbcfd",
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ],
+      "size": [
+        410,
+        235
+      ]
+    },
+    {
+      "file": "src/devices/basic-v27/artwork/pcb.png",
+      "sha256": "4796431e86b8a83fb26658f704684452a8b102cccfb9a37005f741f0e5ec625b",
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ],
+      "size": [
+        323,
+        413
+      ]
+    },
+    {
+      "file": "src/devices/basic-v27/artwork/rear-left.png",
+      "sha256": "4dc63dea6d9a231d43f9d6997f8790c60d6a51fa47b71ab8af329c777464f2c8",
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ],
+      "size": [
+        27,
+        345
+      ]
+    },
+    {
+      "file": "src/devices/basic-v27/artwork/rear-bottom.png",
+      "sha256": "4ea21063b8bcfdf0ee61e9adf1eb0e6d45348c8b128d7c5d2464819dacf7c087",
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ],
+      "size": [
+        190,
+        27
+      ]
+    },
+    {
+      "file": "src/devices/basic-v27/artwork/rear-top.png",
+      "sha256": "183e75126f95bec836ee56ae2524db39ad5973ab5f29013f56d0274f2e7c88a8",
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ],
+      "size": [
+        190,
+        26
+      ]
+    },
+    {
+      "file": "src/devices/basic-v27/artwork/rear-right.png",
+      "sha256": "fbdc5577a9d51e92d19d978343011eff2d76cbaea637df8c18201b62138a74bc",
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ],
+      "size": [
+        27,
+        345
+      ]
+    }
+  ],
+  "remote": {
+    "head": "c48940c3aad3f2e8e9b8906b82071a88f2a3de1e",
+    "newBatchPushed": false
+  },
+  "limitations": [
+    "All current models remain modeled,verified0;not manufacturing or physical-device acceptance.",
+    "Concealed package/fit/travel dimensions are inferred and described per product.",
+    "Basic care/compliance PNG registration remains unconfirmed and is not placed.",
+    "Existing StackChan mechanical mounting issue remains independent and unresolved."
+  ]
+}

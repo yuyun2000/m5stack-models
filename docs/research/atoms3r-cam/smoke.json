@@ -1,0 +1,111 @@
+{
+  "status": "pass",
+  "id": "atoms3r-cam",
+  "sku": "C126-CAM",
+  "native": {
+    "raw": 6580,
+    "actual": 3290,
+    "preview": 3290,
+    "fullAccounting": true,
+    "maxRigidMatchErrorMm": 4.76837158203125e-06,
+    "actualFaces": 3290,
+    "uniqueSourceFaces": 3290,
+    "exactRestArrays": true
+  },
+  "geometry": {
+    "closedPhysicalMeshes": 157,
+    "faces": 40578,
+    "allFrontSide": true,
+    "restContainmentSamples": 4877,
+    "wallChecks": {
+      "headerBoreFirstHits": 36,
+      "headerDeepFloors": 9,
+      "actualContactFirstHits": 13,
+      "groveRearWall": true,
+      "usbTongue": true,
+      "irOwnNotch": true,
+      "m2DeepStop": true,
+      "frontAssemblyRays": 1681,
+      "rearAssemblyRays": 1681
+    }
+  },
+  "motion": {
+    "states": [
+      "rest",
+      "partial",
+      "full",
+      "returned-rest"
+    ],
+    "actualFrontSideRaysPerState": 44,
+    "innerOuterMaxDifferenceMm": 1.0471121356658841e-06,
+    "exactRestArraysRestored": true,
+    "fixedAssemblyStable": true,
+    "multiSource": true,
+    "cancelWithoutClick": true,
+    "fullContainmentSamples": 4877
+  },
+  "artwork": {
+    "pngCount": 3,
+    "physicalInvariant": true,
+    "states": [
+      "rest",
+      "partial",
+      "full",
+      "returned-rest"
+    ],
+    "origin": "reference-redraw;own official photographs;no photo crops"
+  },
+  "hierarchy": {
+    "fourWires": true,
+    "twoPlugs": true,
+    "actualEndpointChecks": 48,
+    "nestedInput": true,
+    "reparent": true,
+    "detachCancel": true,
+    "externalLedNoecho": true,
+    "peerIsolated": true,
+    "actualWorldFanMotion": true
+  },
+  "resources": {
+    "geometries": 157,
+    "materials": 157,
+    "eachDisposedOnce": true,
+    "clickTimersCancelled": true
+  },
+  "picking": {
+    "status": "pass",
+    "samples": 144,
+    "actualPointerCancelRoutes": 30,
+    "keyboardAbsent": true,
+    "unmountReusable": true,
+    "states": [
+      "rest",
+      "partial",
+      "full",
+      "returned-rest"
+    ],
+    "poses": [
+      "identity",
+      "rotated"
+    ],
+    "scope": "Actual DeviceViewer camera/raycaster/filter and DOM event handlers with renderer/DOM fixture;not browser pixels"
+  },
+  "capabilities": {
+    "controls": [
+      "reset"
+    ],
+    "ports": [
+      "usb",
+      "grove",
+      "ext-5p",
+      "ext-4p"
+    ],
+    "leds": [
+      "camera-led"
+    ],
+    "displays": [],
+    "sensors": [],
+    "joints": []
+  },
+  "scope": "Actual Model and actual geometry/API/Viewer dispatch. GPU fixture distinct from browser evidence;no firmware,camera stream,electrical,manufacturing or hardware acceptance."
+}

@@ -8,6 +8,44 @@ import {DEVICE_BUTTON_COUNTS,checkDeviceActuators} from './check-device-actuator
 import {checkAtomLiteController} from './check-atom-lite-controller.mjs';
 import {checkAtomMatrixController} from './check-atom-matrix-controller.mjs';
 import {checkAtomS3LiteController} from './check-atoms3-lite-controller.mjs';
+import {checkAtomS3Controller} from './check-atoms3-controller.mjs';
+import {checkDialController} from './check-dial-controller.mjs';
+import {checkStickCPlus2Controller} from './check-stickc-plus2-controller.mjs';
+import {checkBasicV27Controller} from './check-basic-v27-controller.mjs';
+
+import {checkAtomMatrixV11Controller} from './check-atom-matrix-v11-controller.mjs';
+
+import {checkM5StickController} from './check-m5stick-controller.mjs';
+
+import {checkStickVController} from './check-stickv-controller.mjs';
+
+import {checkAtomS3RAIChatbotController} from './check-atoms3r-ai-chatbot-controller.mjs';
+
+import {checkAtomS3RCamController} from './check-atoms3r-cam-controller.mjs';
+
+import {checkAtomS3RCAMAIChatbotController} from './check-atoms3r-cam-ai-chatbot-controller.mjs';
+
+import {checkAtomS3RM12Controller} from './check-atoms3r-m12-controller.mjs';
+
+import {checkAtomS3RM12VolcengineKitController} from './check-atoms3r-m12-volcengine-kit-controller.mjs';
+
+import {checkStickCController} from './check-stickc-controller.mjs';
+
+import {checkStickCPlusController} from './check-stickc-plus-controller.mjs';
+
+import {checkAtomS3RExtController} from './check-atoms3r-ext-controller.mjs';
+
+import {checkStickCPlusSEController} from './check-stickc-plus-se-controller.mjs';
+
+import {checkAtomEchoController} from './check-atom-echo-controller.mjs';
+
+import {checkAtomEchoS3RController} from './check-atom-echos3r-controller.mjs';
+
+import {checkAtomS3UController} from './check-atoms3u-controller.mjs';
+
+import {checkStickT2Controller} from './check-stickt2-controller.mjs';
+
+import {checkAtomUController} from './check-atomu-controller.mjs';
 
 // Explicit coverage is intentional: a new controller/configuration must fail
 // this aggregate until its real dynamics fixture is deliberately selected.
@@ -22,6 +60,35 @@ const nativeCases=[
  ['atom-lite','complete',{},checkAtomLiteController],
  ['atom-matrix','complete',{},checkAtomMatrixController],
  ['atoms3-lite','complete',{},checkAtomS3LiteController],
+];
+const newCases=[
+ ['atomu','complete',{},checkAtomUController],
+ ['stickt2','complete',{},checkStickT2Controller],
+ ['atoms3u','complete',{},checkAtomS3UController],
+ ['atom-echos3r','mount-open',{"labelPierced":true},checkAtomEchoS3RController],
+ ['atom-echos3r','complete',{},checkAtomEchoS3RController],
+ ['atom-echo','mount-open',{"labelPierced":true},checkAtomEchoController],
+ ['atom-echo','complete',{},checkAtomEchoController],
+ ['stickc-plus-se','complete',{},checkStickCPlusSEController],
+ ['atoms3r-ext','complete',{},checkAtomS3RExtController],
+ ['stickc-plus','complete',{},checkStickCPlusController],
+ ['stickc','complete',{},checkStickCController],
+ ['atoms3r-m12-volcengine-kit','complete',{},checkAtomS3RM12VolcengineKitController],
+ ['atoms3r-m12','complete',{},checkAtomS3RM12Controller],
+ ['atoms3r-cam-ai-chatbot','complete',{},checkAtomS3RCAMAIChatbotController],
+ ['atoms3r-cam','complete',{},checkAtomS3RCamController],
+ ['atoms3r-ai-chatbot','complete',{},checkAtomS3RAIChatbotController],
+ ['stickv','black-pcb',{"pcb":"black"},checkStickVController],
+ ['stickv','blue-pcb',{"pcb":"blue"},checkStickVController],
+ ['m5stick','white',{"version":"white"},checkM5StickController],
+ ['m5stick','gray',{"version":"gray"},checkM5StickController],
+ ['atom-matrix-v11','mount-open',{"labelPierced":true},checkAtomMatrixV11Controller],
+ ['atom-matrix-v11','complete',{},checkAtomMatrixV11Controller],
+ ['atoms3','complete',{},checkAtomS3Controller],
+ ['dial','complete',{},checkDialController],
+ ['stickc-plus2','complete',{},checkStickCPlus2Controller],
+ ['basic-v27','complete',{},checkBasicV27Controller],
+ ['basic-v27','base-removed',{base:'removed'},checkBasicV27Controller],
 ];
 const key=([id,configuration])=>`${id}/${configuration}`;
 const settle=model=>{for(let i=0;i<80;i++)model.update(1/60);model.root.updateMatrixWorld(true);};
@@ -108,7 +175,7 @@ export async function checkControllerDynamics(){
  const catalog=JSON.parse(await readFile(new URL('../catalog/products.json',import.meta.url),'utf8'));
  const controllers=catalog.products.filter(product=>product.category==='controller');
  const actual=controllers.flatMap(product=>(product.configurations?.length?product.configurations:[{id:'default',options:{}}]).map(configuration=>[product.id,configuration.id,configuration.options??{}]));
- const expected=[...legacyCases,...nativeCases.map(row=>row.slice(0,3))];
+ const expected=[...legacyCases,...nativeCases.map(row=>row.slice(0,3)),...newCases.map(row=>row.slice(0,3))];
  assert.equal(new Set(actual.map(key)).size,actual.length,'Catalog controller/configuration identities are unique');
  assert.deepEqual(actual.map(key).sort(),expected.map(key).sort(),'Every current catalog controller/configuration needs explicit dynamics coverage');
  assert.deepEqual([...new Set(legacyCases.map(([id])=>id))].sort(),Object.keys(DEVICE_BUTTON_COUNTS).sort(),'Legacy fixture coverage must match the selected controller identities');
@@ -142,6 +209,11 @@ export async function checkControllerDynamics(){
    }else if(id==='atom-lite')assert.equal(result.runtime.independentTwoKeysMultiSourceCancelAndSimultaneous,true);
    else{assert.equal(result.actuation.cancelWithoutClick,true);entry.nativeSurfaceRaysPerState=result.actuation.nativeSurfaceRays.raysPerState;}
    perModel[id]={configurations:[entry]};
+  }
+  for(const [id,configuration,options,check]of newCases){
+   const result=await check();assert.equal(result?.status,'pass',`${id}: own current fixture must explicitly pass`);
+   const model=await loadModel(id,options);
+   try{const controls=model.list('button').length;assert.ok(controls>0);(perModel[id]??={configurations:[]}).configurations.push({id:configuration,controls,status:'pass',ownCurrentModelFixture:true,result});}finally{model.dispose();}
   }
  }finally{if(!previousDocument)delete globalThis.document;}
  return {status:'pass',controllers:controllers.length,configurations:actual.length,controlsAcrossConfigurations:Object.values(perModel).reduce((sum,model)=>sum+model.configurations.reduce((n,c)=>n+c.controls,0),0),perModel,scope:'Current explicit catalog controller/configuration coverage;actual physical press/release/partial/full and fixed geometry,source cancellation and rest/stable detents. Canvas drawing is stubbed. CPU visual-dynamics evidence only;no browser pixels,manufacturing tolerance,electrical,firmware or physical-device acceptance.'};

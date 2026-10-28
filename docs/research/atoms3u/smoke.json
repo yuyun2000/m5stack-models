@@ -1,0 +1,117 @@
+{
+  "status": "pass",
+  "id": "atoms3u",
+  "sku": "K125",
+  "native": {
+    "raw": 9340,
+    "actual": 4670,
+    "preview": 4670,
+    "fullAccounting": true,
+    "maxRigidMatchErrorMm": 4.5299530029296875e-06,
+    "actualFaces": 4670,
+    "uniqueSourceFaces": 4670,
+    "exactRestArrays": true
+  },
+  "geometry": {
+    "closedPhysicalMeshes": 92,
+    "faces": 25274,
+    "allFrontSide": true,
+    "restContainmentSamples": 2647,
+    "wallChecks": {
+      "headerBoreWallFirstHits": 24,
+      "headerDeepFloors": 6,
+      "actualContactFirstHits": 14,
+      "groveDeepWall": true,
+      "usbMaleFourWalls": true,
+      "usbTopLatchingBores": 2,
+      "usbPhysicalTongue": true,
+      "microphoneAndRgbBehindTrueSlit": true,
+      "passiveIr": true,
+      "frontAssemblyRays": 2211,
+      "rearAssemblyRays": 2211
+    }
+  },
+  "motion": {
+    "states": [
+      "rest",
+      "partial",
+      "full",
+      "returned-rest"
+    ],
+    "actualFrontSideRaysPerState": 45,
+    "frontTongueInnerOuterMaxDifferenceMm": 9.591983118895087e-08,
+    "fixedNeighborsStable": true,
+    "independentActualNativeControls": true,
+    "sourceAttributesUnchanged": true,
+    "exactRestArraysRestored": true,
+    "multiSource": true,
+    "cancelWithoutClick": true,
+    "fullContainmentSamples": 2647
+  },
+  "artwork": {
+    "pngCount": 1,
+    "physicalInvariant": true,
+    "states": [
+      "rest",
+      "partial",
+      "full",
+      "returned-rest"
+    ],
+    "origin": "approved-ordinary-raster;final PNG only;no private originals or mappings"
+  },
+  "hierarchy": {
+    "fourWires": true,
+    "twoPlugs": true,
+    "actualEndpointChecks": 48,
+    "nestedInput": true,
+    "reparent": true,
+    "detachCancel": true,
+    "externalLedNoecho": true,
+    "peerIsolated": true,
+    "actualWorldFanMotion": true
+  },
+  "resources": {
+    "geometries": 92,
+    "materials": 92,
+    "eachDisposedOnce": true,
+    "clickTimersCancelled": true,
+    "realTimerRelease": true,
+    "independentRemoveRestoration": true
+  },
+  "picking": {
+    "status": "pass",
+    "samples": 296,
+    "actualPointerCancelRoutes": 68,
+    "keyboardBlur": true,
+    "unmountReusable": true,
+    "states": [
+      "rest",
+      "partial",
+      "full",
+      "returned-rest"
+    ],
+    "poses": [
+      "identity",
+      "rotated"
+    ],
+    "scope": "Actual DeviceViewer camera/raycaster/filter and DOM event handlers with renderer/DOM fixture;not browser pixels"
+  },
+  "capabilities": {
+    "controls": [
+      "button",
+      "reset"
+    ],
+    "ports": [
+      "usb",
+      "grove",
+      "ext-6p"
+    ],
+    "leds": [
+      "rgb"
+    ],
+    "displays": [],
+    "sensors": [],
+    "joints": []
+  },
+  "scope": "Actual Model and actual geometry/API/Viewer dispatch. GPU fixture distinct from browser evidence;no firmware,camera stream,electrical,manufacturing or hardware acceptance."
+}
