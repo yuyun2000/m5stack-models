@@ -4,6 +4,8 @@
 
 当前[产品目录](catalog/products.json)收录 **222 款：38 款主机、184 款 Unit**，全部为 `modeled`，`verified` 为 **0**。已有实现不代表逐款浏览器或实物验收完成。Atom / Stick 完整系列现覆盖 **24 个精确产品条目**（Atom16、Stick8），本轮新增17款，包含旧款、硬件修订及语音底座整机套装；见[完整覆盖矩阵](docs/ATOM-STICK-SERIES-2026-10-28.md)。此前四款主机见[历史接入批](docs/HOST-FAMILY-EXPANSION-2026-10-28.md)。
 
+[在线查看3D模型](https://yuyun2000.github.io/m5stack-models/) · [直接打开Dial](https://yuyun2000.github.io/m5stack-models/?model=dial&configuration=complete)。无需安装，支持选择型号、旋转缩放及模型已实现的输入和显示。网站由GitHub Pages托管，`main`推送后自动构建部署，见[托管说明](docs/GITHUB-PAGES.md)。
+
 ## 本地运行
 
 需要 Node.js 22.12+。静态预览管理脚本使用 zsh、Python 3、curl 和 rg。

@@ -77,4 +77,18 @@ assert.equal(query('#stage').dataset.state,'ready');
 cases.push('successful-selection-cache-reuse');
 assert.deepEqual(errors,['build probe failed']);
 for(const model of models)if(!model.disposed)model.dispose();
+
+// Boot the real controller at both hosting roots. A project site must request
+// its own catalog and preserve the shared model/configuration query on selection.
+for(const href of ['http://127.0.0.1:5188/?model=dial&configuration=complete','https://yuyun2000.github.io/m5stack-models/?model=dial&configuration=complete','https://yuyun2000.github.io/m5stack-models/index.html?model=dial&configuration=complete']){
+ const nodes=new Map(),requests=[],urls=[],location={href};
+ const get=s=>{if(!nodes.has(s))nodes.set(s,element());return nodes.get(s);};
+ const expected=new URL(href).pathname.startsWith('/m5stack-models/')?'/m5stack-models/data/catalog.json':'/data/catalog.json';
+ const boot=vm.createContext({document:{querySelector:get,querySelectorAll:()=>[],createElement:element},URL,location,console,history:{replaceState:(_a,_b,url)=>{location.href=new URL(url,location.href).href;urls.push(location.href);}},fetch:async url=>{const resolved=new URL(url,href);requests.push(resolved.href);return{ok:resolved.pathname===expected,json:async()=>catalog};},renderProductDetails,loadModelClass:async()=>Model,DeviceViewer:class{constructor(){return viewer;}},DynamicsPanel:class{constructor(){return panel;}},FramebufferPanel:class{constructor(){return panel;}}});
+ vm.runInContext(controller,boot,{filename:'demo/main.js'});await vm.runInContext('init()',boot);
+ assert.equal(requests.length,1);assert.equal(new URL(requests[0]).pathname,expected);
+ assert.equal(get('#stage').dataset.state,'ready');assert.equal(get('#stage').dataset.model,'dial');
+ const final=new URL(urls.at(-1));assert.equal(final.pathname,new URL(href).pathname);assert.equal(final.searchParams.get('model'),'dial');assert.equal(final.searchParams.get('configuration'),'complete');
+}
+cases.push('root-and-github-pages-project-path-boot-with-shared-model-query');
 console.log(JSON.stringify({status:'pass',cases,scope:'Actual demo/main.js controller with DOM,viewer and import boundary fixtures;no geometry or browser pixel acceptance'},null,2));

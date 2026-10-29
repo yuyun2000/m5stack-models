@@ -12,6 +12,8 @@
 
 ## 发布记录
 
+2026-10-29：用户授权公开托管现有预览，GitHub Pages入口为[在线3D模型](https://yuyun2000.github.io/m5stack-models/)，配置与核验流程见[托管说明](GITHUB-PAGES.md)。此部署只发布公开源码构建的dist，不改变私源或产品验收边界。实际部署状态以GitHub Actions、Pages和线上验证为准。
+
 2026-10-28：[主机与Atom/Stick完整系列统一发布](releases/2026-10-28-host-series.md)。用户明确授权推送当前全部已完成公开改动，包含前四款与完整系列17款；具体提交和远端状态以Git记录确认。
 
 2026-10-27：[201款同步、预览选择修复与仓库整理](releases/2026-10-27-preview-stability.md)。该记录说明本次范围与验证；确切提交和远端状态由Git历史确认。下方为初次公开时的历史记录。
