@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-31",
+  "status": "pass",
+  "scope": "StackChan K151 local display centering correction",
+  "sourceUrls": [
+    "https://docs.m5stack.com/en/StackChan",
+    "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1205/Model_Size.png"
+  ],
+  "before": {
+    "offsetYmm": 5.8,
+    "topMarginMm": 5.96,
+    "bottomMarginMm": 17.56
+  },
+  "after": {
+    "offsetYmm": 0,
+    "topMarginMm": 11.76,
+    "bottomMarginMm": 11.76
+  },
+  "geometry": [
+    {
+      "repo": "m5stack-models.js",
+      "neutralCenter": [
+        0,
+        8.249999999999998,
+        30.81
+      ],
+      "headFaceCenterY": 1.9073486328125e-06,
+      "lcdOffsetMm": -1.9073486328125e-06,
+      "topMarginMm": 11.76,
+      "bottomMarginMm": 11.76,
+      "poseCount": 15,
+      "rayCount": 135,
+      "touchCount": 135,
+      "standalone": [
+        {
+          "dinBase": false,
+          "lcdY": 5.8
+        },
+        {
+          "dinBase": true,
+          "lcdY": 5.8
+        }
+      ]
+    },
+    {
+      "repo": "m5stack-models-public",
+      "neutralCenter": [
+        0,
+        8.249999999999998,
+        30.81
+      ],
+      "headFaceCenterY": 1.9073486328125e-06,
+      "lcdOffsetMm": -1.9073486328125e-06,
+      "topMarginMm": 11.76,
+      "bottomMarginMm": 11.76,
+      "poseCount": 15,
+      "rayCount": 135,
+      "touchCount": 135,
+      "standalone": [
+        {
+          "dinBase": false,
+          "lcdY": 5.8
+        },
+        {
+          "dinBase": true,
+          "lcdY": 5.8
+        }
+      ]
+    }
+  ],
+  "existingAssemblyCheck": {
+    "bothCopies": "pass",
+    "posesPerCopy": 95,
+    "tubeRingEndpointsPerCopy": 1330,
+    "groveCavityContactRaysPerCopy": 1710,
+    "boardClearanceRaysPerCopy": 1710
+  },
+  "build": {
+    "bothCopies": "pass"
+  },
+  "browser": {
+    "server": "http://127.0.0.1:5188/",
+    "model": "stackchan",
+    "state": "ready",
+    "neutralFront": "visually-inspected",
+    "calibrationFront": "visually-inspected",
+    "pitch45Yaw35Iso": "visually-inspected",
+    "realPointerClick": {
+      "screenCenterViewport": [
+        884,
+        474
+      ],
+      "observedEvents": [
+        "lcd start",
+        "lcd end"
+      ]
+    },
+    "consoleErrors": [],
+    "consoleWarnings": []
+  },
+  "publication": {
+    "committed": false,
+    "pushed": false,
+    "deployed": false
+  },
+  "limits": [
+    "Center alignment is derived from the official front view, not an independently dimensioned panel datum.",
+    "Existing servo mounting and shell interference limitations remain outside this correction."
+  ],
+  "images": {
+    "front-comparison.png": "0e84eb644760cac175f1f222ef5290a2b19a5af03f3c4d6515ff7ccf4603668b",
+    "after-calibration.png": "556d8397648e7183d4f26d63d887ffa35dd6912a9188905b655e479a27aa5bad",
+    "after-pitch45-yaw35.png": "3c63178676a171596a5d553ac8e014670b864f9658cde29b44301a7723e12a97"
+  },
+  "snapshotPhase": "local-validation-before-git-sync"
+}
