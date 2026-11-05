@@ -2,9 +2,18 @@
 
 基于 Three.js 与 [sticks3.js](https://github.com/MarsTechHAN/sticks3.js) 的 M5Stack 主机和 Unit 外观模型库，提供实体结构、真实按键输入意图、外部驱动的灯光/像素/可见运动及 Grove 装配。电气、总线、传感数值、固件和 AI 由外部运行时负责。
 
-当前[产品目录](catalog/products.json)收录 **222 款：38 款主机、184 款 Unit**，全部为 `modeled`，`verified` 为 **0**。已有实现不代表逐款浏览器或实物验收完成。Atom / Stick 完整系列现覆盖 **24 个精确产品条目**（Atom16、Stick8），本轮新增17款，包含旧款、硬件修订及语音底座整机套装；见[完整覆盖矩阵](docs/ATOM-STICK-SERIES-2026-10-28.md)。此前四款主机见[历史接入批](docs/HOST-FAMILY-EXPANSION-2026-10-28.md)。
+## 在线预览
 
-[在线查看3D模型](https://yuyun2000.github.io/m5stack-models/) · [直接打开Dial](https://yuyun2000.github.io/m5stack-models/?model=dial&configuration=complete)。无需安装，支持选择型号、旋转缩放及模型已实现的输入和显示。网站由GitHub Pages托管，`main`推送后自动构建部署，见[托管说明](docs/GITHUB-PAGES.md)。
+**GitHub Pages 已部署：[打开 M5Stack 3D 模型库](https://yuyun2000.github.io/m5stack-models/)**。无需克隆仓库或安装依赖，即可在浏览器中查看模型。
+
+- 左侧可选择“全部 / 主机 / Unit”，并按产品名或 SKU 搜索。
+- 画布支持拖动旋转、滚轮缩放、`Shift + 拖动` 平移，并提供立体、正背面、左右侧、顶部和底部视角。
+- 详情区可切换配置、参考图和线框，并操作模型已实现的按键、开关、关节、灯光与 Grove 连接。
+- 型号和配置会写入 URL，可直接分享，例如 [Dial 完整模型](https://yuyun2000.github.io/m5stack-models/?model=dial&configuration=complete)。
+
+网站由 GitHub Pages 托管，`main` 分支的页面或模型相关更新会自动构建部署；仅修改 README 或 `docs/` 不会重复部署。构建流程、权限和上线检查见[托管说明](docs/GITHUB-PAGES.md)。
+
+当前[产品目录](catalog/products.json)收录 **222 款：38 款主机、184 款 Unit**，全部为 `modeled`，`verified` 为 **0**。已有实现不代表逐款浏览器或实物验收完成。Atom / Stick 完整系列现覆盖 **24 个精确产品条目**（Atom16、Stick8），本轮新增17款，包含旧款、硬件修订及语音底座整机套装；见[完整覆盖矩阵](docs/ATOM-STICK-SERIES-2026-10-28.md)。此前四款主机见[历史接入批](docs/HOST-FAMILY-EXPANSION-2026-10-28.md)。
 
 ## 本地运行
 
