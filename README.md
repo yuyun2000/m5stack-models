@@ -13,7 +13,9 @@
 
 网站由 GitHub Pages 托管，`main` 分支的页面或模型相关更新会自动构建部署；仅修改 README 或 `docs/` 不会重复部署。构建流程、权限和上线检查见[托管说明](docs/GITHUB-PAGES.md)。
 
-当前[产品目录](catalog/products.json)收录 **222 款：38 款主机、184 款 Unit**，全部为 `modeled`，`verified` 为 **0**。已有实现不代表逐款浏览器或实物验收完成。Atom / Stick 完整系列现覆盖 **24 个精确产品条目**（Atom16、Stick8），本轮新增17款，包含旧款、硬件修订及语音底座整机套装；见[完整覆盖矩阵](docs/ATOM-STICK-SERIES-2026-10-28.md)。此前四款主机见[历史接入批](docs/HOST-FAMILY-EXPANSION-2026-10-28.md)。
+当前[产品目录](catalog/products.json)收录 **226 款：42 款主机、184 款 Unit**，全部为 `modeled`，`verified` 为 **0**。已有实现不代表逐款浏览器或实物验收完成。Atom / Stick 完整系列现覆盖 **24 个精确产品条目**（Atom16、Stick8），该批新增17款，包含旧款、硬件修订及语音底座整机套装；见[完整覆盖矩阵](docs/ATOM-STICK-SERIES-2026-10-28.md)。此前四款主机见[历史接入批](docs/HOST-FAMILY-EXPANSION-2026-10-28.md)。
+
+本轮新增 [PaperDIY](https://yuyun2000.github.io/m5stack-models/?model=paperdiy)、[PaperS3](https://yuyun2000.github.io/m5stack-models/?model=papers3)、[初代 Cardputer](https://yuyun2000.github.io/m5stack-models/?model=cardputer) 和 [CoreMatrix](https://yuyun2000.github.io/m5stack-models/?model=corematrix)。显示、触控、键盘和点阵契约见[模拟器接入说明](docs/PRIORITY-CONTROLLERS-2026-11-09.md)。
 
 ## 本地运行
 

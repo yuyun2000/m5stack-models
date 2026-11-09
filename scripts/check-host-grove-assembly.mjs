@@ -32,6 +32,7 @@ const EXPECTED_PORTS={
  'nesso-n1':{default:['grove']},stamplc:{default:['port-a','port-c']},
  atoms3:{complete:['grove']},dial:{complete:['port-a','port-b']},'stickc-plus2':{complete:['grove']},'basic-v27':{complete:['grove'],'base-removed':['grove']},
  'atom-lite':{complete:['grove']},'atom-matrix':{complete:['grove']},'atoms3-lite':{complete:['grove']},
+ paperdiy:{default:[]},papers3:{default:[]},cardputer:{default:['grove']},corematrix:{default:['grove']},
 };
 const visible=object=>object.isMesh&&(Array.isArray(object.material)?object.material:[object.material]).some(material=>material.opacity!==0);
 const within=(object,parent)=>{for(let o=object;o;o=o.parent)if(o===parent)return true;return false;};

@@ -2,7 +2,8 @@
 
 本页说明稳定公开 API、组件寻址、装配和输入职责。产品能力、构造选项和具名配置以 [产品目录](../catalog/products.json)、对应产品指南及实际组件状态为准。
 
-- 本次新增 AtomS3、Dial、Plus2、Basic v2.7：[四系列主机接入](HOST-FAMILY-EXPANSION-2026-10-28.md)。
+- PaperDIY、PaperS3、初代 Cardputer、CoreMatrix 的[模型与模拟器接入](PRIORITY-CONTROLLERS-2026-11-09.md)。
+- 此前新增 AtomS3、Dial、Plus2、Basic v2.7：[四系列主机接入](HOST-FAMILY-EXPANSION-2026-10-28.md)。
 - 接入具体产品、查找增量指南：见 [本地增量索引](LOCAL-EXPANSION.md)。
 - 新建或修改模型、贴纸与网页交互：见 [建模方法](MODELING-METHODOLOGY.md)。
 - 追溯已完成批次：见 [历史检查点](history/AGENT-INTEGRATION-CHECKPOINTS-2026-10-27.md)。其中的数量、Git 状态和验证结果保留各批保存时的记录；当前状态应重新读取目录、构建产物与仓库。

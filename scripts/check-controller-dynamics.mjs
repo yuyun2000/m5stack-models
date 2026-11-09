@@ -12,6 +12,7 @@ import {checkAtomS3Controller} from './check-atoms3-controller.mjs';
 import {checkDialController} from './check-dial-controller.mjs';
 import {checkStickCPlus2Controller} from './check-stickc-plus2-controller.mjs';
 import {checkBasicV27Controller} from './check-basic-v27-controller.mjs';
+import {checkCoreMatrixController} from './check-corematrix-controller.mjs';
 
 import {checkAtomMatrixV11Controller} from './check-atom-matrix-v11-controller.mjs';
 
@@ -55,6 +56,7 @@ const legacyCases=[
  ['papermono','default',{}],['core2','default',{}],['papercolor','default',{}],
  ['nanoc6','default',{}],['stackchan','default',{}],['tab5','default',{}],
  ['atoms3r','default',{}],['nesso-n1','default',{}],['stamplc','default',{}],
+ ['paperdiy','default',{}],['papers3','default',{}],['cardputer','default',{}],
 ];
 const nativeCases=[
  ['atom-lite','complete',{},checkAtomLiteController],
@@ -62,6 +64,7 @@ const nativeCases=[
  ['atoms3-lite','complete',{},checkAtomS3LiteController],
 ];
 const newCases=[
+ ['corematrix','default',{},checkCoreMatrixController],
  ['atomu','complete',{},checkAtomUController],
  ['stickt2','complete',{},checkStickT2Controller],
  ['atoms3u','complete',{},checkAtomS3UController],

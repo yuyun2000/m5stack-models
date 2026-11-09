@@ -30,6 +30,8 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Check page selection and lifecycle
         run: npm run check:demo
+      - name: Check PaperDIY, PaperS3, Cardputer and CoreMatrix model contracts
+        run: node scripts/check-priority-hosts.mjs
       - name: Build static model viewer
         run: npm run build
       - name: Check actual bundled sticker bytes

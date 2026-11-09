@@ -1,0 +1,251 @@
+{
+  "source": "https://github.com/m5stack/M5_Hardware/blob/ec351c516644b44defc145728cc029ced77381ff/Products/K132_Cardputer/Structures/Cardputer.stl",
+  "gitBlob": "2f9f89ae9fa3637bd5c59ea2de43b3b26e70a423",
+  "sha256": "723c44d415832bc77aa52376c5b8a549855d3fd316b073e4cfa1d8135e7a306d",
+  "units": "millimetres",
+  "axes": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "origin": [
+    0,
+    0,
+    0.83785
+  ],
+  "sourceFacets": 144244,
+  "assemblyFacets": 72122,
+  "parts": [
+    {
+      "name": "keyboard-membrane",
+      "assemblyComponent": 1,
+      "duplicateComponent": 0,
+      "faces": 39180,
+      "sourceRanges": [
+        [
+          102486,
+          141665
+        ]
+      ],
+      "sourceAttributes": "all zero",
+      "modelBounds": [
+        [
+          -40.15636,
+          -24.20636,
+          1.71215
+        ],
+        [
+          40.15636,
+          1.70636,
+          7.16215
+        ]
+      ],
+      "duplicateSourceRanges": [
+        [
+          2840,
+          42019
+        ]
+      ]
+    },
+    {
+      "name": "upper-housing",
+      "assemblyComponent": 3,
+      "duplicateComponent": 2,
+      "faces": 17958,
+      "sourceRanges": [
+        [
+          64408,
+          82365
+        ]
+      ],
+      "sourceAttributes": "all zero",
+      "modelBounds": [
+        [
+          -42.0,
+          -27.0,
+          -1.83785
+        ],
+        [
+          42.0,
+          27.0,
+          9.76215
+        ]
+      ],
+      "duplicateSourceRanges": [
+        [
+          42020,
+          59977
+        ]
+      ]
+    },
+    {
+      "name": "battery-base",
+      "assemblyComponent": 5,
+      "duplicateComponent": 4,
+      "faces": 7976,
+      "sourceRanges": [
+        [
+          82366,
+          90341
+        ]
+      ],
+      "sourceAttributes": "all zero",
+      "modelBounds": [
+        [
+          -42.0,
+          -27.0,
+          -9.83794
+        ],
+        [
+          42.0,
+          27.0,
+          -0.83785
+        ]
+      ],
+      "duplicateSourceRanges": [
+        [
+          94510,
+          102485
+        ]
+      ]
+    },
+    {
+      "name": "stamp-frame",
+      "assemblyComponent": 7,
+      "duplicateComponent": 6,
+      "faces": 4168,
+      "sourceRanges": [
+        [
+          90342,
+          94509
+        ]
+      ],
+      "sourceAttributes": "all zero",
+      "modelBounds": [
+        [
+          15.79999,
+          7.47001,
+          5.13795
+        ],
+        [
+          39.8,
+          25.46998,
+          9.83795
+        ]
+      ],
+      "duplicateSourceRanges": [
+        [
+          59978,
+          64145
+        ]
+      ]
+    },
+    {
+      "name": "power-slide",
+      "assemblyComponent": 11,
+      "duplicateComponent": 10,
+      "faces": 588,
+      "sourceRanges": [
+        [
+          141666,
+          142253
+        ]
+      ],
+      "sourceAttributes": "all zero",
+      "modelBounds": [
+        [
+          5.7,
+          18.0,
+          0.16215
+        ],
+        [
+          14.5,
+          27.0,
+          4.86215
+        ]
+      ],
+      "duplicateSourceRanges": [
+        [
+          0,
+          587
+        ]
+      ]
+    },
+    {
+      "name": "mount-rail",
+      "assemblyComponent": 9,
+      "duplicateComponent": 8,
+      "faces": 1990,
+      "sourceRanges": [
+        [
+          142254,
+          144243
+        ]
+      ],
+      "sourceAttributes": "all zero",
+      "modelBounds": [
+        [
+          -38.4,
+          11.1,
+          -5.83785
+        ],
+        [
+          38.4,
+          18.9,
+          -0.93785
+        ]
+      ],
+      "duplicateSourceRanges": [
+        [
+          588,
+          2577
+        ]
+      ]
+    },
+    {
+      "name": "display-frame",
+      "assemblyComponent": 13,
+      "duplicateComponent": 12,
+      "faces": 262,
+      "sourceRanges": [
+        [
+          64146,
+          64407
+        ]
+      ],
+      "sourceAttributes": "all zero",
+      "modelBounds": [
+        [
+          -24.35,
+          7.47,
+          5.36215
+        ],
+        [
+          6.72,
+          26.63,
+          8.26215
+        ]
+      ],
+      "duplicateSourceRanges": [
+        [
+          2578,
+          2839
+        ]
+      ]
+    }
+  ],
+  "coordinateConvention": "+X right, +Y top, +Z front",
+  "runtimeNotes": "Selected STL facet winding and facet normals are retained in the source asset. Runtime partitions the keyboard membrane and two upper-housing flex buttons into moving and fixed surfaces."
+}
