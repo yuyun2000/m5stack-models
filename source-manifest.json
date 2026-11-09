@@ -40,7 +40,15 @@
           "notice": "licenses/M5_Hardware-MIT.txt"
         }
       ],
-      "modeling": "docs/research/paperdiy/modeling.md"
+      "modeling": "docs/research/paperdiy/modeling.md",
+      "artwork": {
+        "status": "official-photo-raster",
+        "files": [
+          "src/devices/paperdiy/artwork/rear-official.png"
+        ],
+        "source": "K159-B official rear product view",
+        "note": "Monochrome-normalized visible rear-cover print. Private source names, URLs and mappings remain outside distribution."
+      }
     },
     {
       "id": "papers3",
@@ -59,7 +67,15 @@
           "notice": "licenses/M5_Hardware-MIT.txt"
         }
       ],
-      "modeling": "docs/research/papers3/modeling.md"
+      "modeling": "docs/research/papers3/modeling.md",
+      "artwork": {
+        "status": "official-production-raster",
+        "files": [
+          "src/devices/papers3/artwork/rear-official.png"
+        ],
+        "source": "C139 product sticker V1.2 production artwork",
+        "note": "Transparent production print with original die-cut and openings. Private vector source and mappings remain outside distribution."
+      }
     },
     {
       "id": "cardputer",
@@ -78,7 +94,25 @@
           "notice": "licenses/M5_Hardware-MIT.txt"
         }
       ],
-      "modeling": "docs/research/cardputer/modeling.md"
+      "modeling": "docs/research/cardputer/modeling.md",
+      "artwork": {
+        "status": "official-photo-raster",
+        "files": [
+          "src/devices/cardputer/artwork/front-name.png",
+          "src/devices/cardputer/artwork/m5-logo.png",
+          "src/devices/cardputer/artwork/keyboard-1.png",
+          "src/devices/cardputer/artwork/keyboard-2.png",
+          "src/devices/cardputer/artwork/keyboard-3.png",
+          "src/devices/cardputer/artwork/keyboard-4.png",
+          "src/devices/cardputer/artwork/stamp.png",
+          "src/devices/cardputer/artwork/top-edge.png",
+          "src/devices/cardputer/artwork/grove-side.png",
+          "src/devices/cardputer/artwork/rear.png",
+          "src/devices/cardputer/artwork/rear-rail.png"
+        ],
+        "source": "K132 official front, top-edge, side and rear product views",
+        "note": "Actual readable print regions cut from official views; source resolution limits unreadable microtext."
+      }
     },
     {
       "id": "corematrix",
@@ -97,7 +131,16 @@
           "notice": "licenses/M5_Hardware-MIT.txt"
         }
       ],
-      "modeling": "docs/research/corematrix/modeling.md"
+      "modeling": "docs/research/corematrix/modeling.md",
+      "artwork": {
+        "status": "official-production-raster",
+        "files": [
+          "src/devices/corematrix/artwork/rear-official.png",
+          "src/devices/corematrix/artwork/side-official.png"
+        ],
+        "source": "C158 product sticker production artwork",
+        "note": "Official rear schematic and right-side name mark. Private vector source and mappings remain outside distribution."
+      }
     },
     {
       "id": "sticks3",

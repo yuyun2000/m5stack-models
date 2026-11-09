@@ -76,6 +76,28 @@ for (const [id, sku, exportName, target, width, height, touch] of cases) {
       assert.equal(model.button('power').latching, true);
     }
     unsubscribe();
+
+    const artworkModel = await loadModel(id);
+    try {
+      const prints = [];
+      artworkModel.root.traverse(object => {
+        if (object.userData?.role === 'printed-artwork') prints.push(object);
+      });
+      assert.equal(prints.length, {
+        paperdiy: 1, papers3: 1, cardputer: 11, corematrix: 2,
+      }[id], `${id}: expected official print layers`);
+      assert.ok(prints.every(panel => !panel.userData.artworkKind.includes('reference-redraw')),
+        `${id}: production layers must not use reference redraws`);
+      const names = new Set(prints.map(panel => panel.name));
+      for (const expected of {
+        paperdiy: ['PaperDIY official rear print'],
+        papers3: ['PaperS3 official rear production print'],
+        cardputer: ['Cardputer M5 wordmark', 'Stamp-S3 circuit cover print', 'Cardputer rear pin legend print'],
+        corematrix: ['CoreMatrix official rear production print', 'CoreMatrix official side name print'],
+      }[id]) assert.ok(names.has(expected), `${id}: missing ${expected}`);
+    } finally {
+      artworkModel.dispose();
+    }
     console.log(`PASS ${id} ${sku}: ${width}×${height} ${target}, envelope ${size.map(mm => mm.toFixed(2)).join('×')} mm`);
   } finally {
     model.dispose();

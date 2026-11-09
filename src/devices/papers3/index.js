@@ -43,7 +43,7 @@ function addRearAssembly(host) {
   for (const x of [-30.5, 30.5]) {
     slab(body, 2.2, 2.2, 1.5, 1.1, [x, 57.75, -3.73], gold, [{w: 1.45, h: 1.45}], 0.035).name = 'Rear M2 brass insert';
   }
-  if (host.options.artwork !== false) addRearArtwork(body, rearHoles);
+  if (host.options.artwork !== false) addRearArtwork(host);
 
   const portBody = new THREE.Group();
   portBody.name = 'HC1.25-4PLT expansion receptacle';

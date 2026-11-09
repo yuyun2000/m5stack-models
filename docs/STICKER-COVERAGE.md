@@ -2,6 +2,11 @@
 
 当前201款范围及本次21张PNG同步见[发布记录](releases/2026-10-27-preview-stability.md)。下方批次数量、Git字样与核验结果保留各自保存时点，当前提交以Git历史为准。
 
+
+## 2026-11-09 四款优先控制器正式贴纸校正
+
+PaperS3 C139 使用正式产品贴纸 V1.2 透明生产稿；CoreMatrix C158 使用正式背面原理图贴纸和右侧名标生产稿；Cardputer K132 使用官方正/顶/侧/背视图的实际印刷区；PaperDIY K159-B 使用官方背视图中的后盖功能印刷并归一化为单色。四款均保留独立壳体、接口、紧固件和可动件，私有矢量、源文件名、URL 与映射不进入公开树。浏览器已核对正面、背面及可读侧标；整体仍为 `modeled`，不宣称实物或量产验收。
+
 ## 最新本地增量：Atom Lite / 原 Atom Matrix / AtomS3 Lite（第53批三主机）
 
 当前本地201款（17主机、184Unit），全部 `modeled`、`verified` 为0。本批新增3款controller主机和6张普通PNG；既有pending11Unit/15PNG保留。Git187 / `296128b` 同步基线保持，未再次提交推送。实际API与边界见[本批指南](ATOMLITE-ATOMMATRIX-ATOMS3LITE-CONTROLLERS.md)。

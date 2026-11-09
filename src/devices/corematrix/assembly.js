@@ -77,18 +77,18 @@ function enclosure(host) {
   const cover = slab(host.body, 51.2, 51.2, .65, 3.7, [0, 0, -5.64], charcoal(), holes, .11);
   cover.name = 'Rear carrier with M3 and connector cutouts';
   for (const x of [-22, 22]) for (const y of [-22, 22]) fastener(host, x, y);
-  // The original graphic is a rear reference only. The film has an original
-  // schematic-style redraw and the physical carrier remains without ink.
+  // C158 production print from the released sticker artwork. The physical
+  // carrier, fasteners, rear connectors and LED cover remain separate parts.
   const rearInk = printedFilm(host, {
-    url: new URL('./artwork/rear-reference-redraw.png', import.meta.url).href,
+    url: new URL('./artwork/rear-official.png', import.meta.url).href,
     size: [48.15, 48.15], position: [0, 0, -5.651], face: 'back',
-    name: 'CoreMatrix rear reference redraw', artworkKind: 'reference-redraw',
+    name: 'CoreMatrix official rear production print', artworkKind: 'official-production-raster',
   });
   if (rearInk) rearInk.raycast = () => {};
   printedFilm(host, {
-    url: new URL('./artwork/side-reference-redraw.png', import.meta.url).href,
-    size: [30.45, 8.55], position: [27.01, 6.45, .19], face: 'right',
-    name: 'CoreMatrix side name reference redraw', artworkKind: 'reference-redraw',
+    url: new URL('./artwork/side-official.png', import.meta.url).href,
+    size: [30.45, 5.52], position: [27.01, 6.45, .19], face: 'right',
+    name: 'CoreMatrix official side name print', artworkKind: 'official-production-raster',
   });
 }
 

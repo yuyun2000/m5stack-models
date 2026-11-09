@@ -43,3 +43,15 @@ Cardputer 每个按键的 `meta.matrix` 为实体位置 `[row,column]`，`meta.s
 - [PaperS3](research/papers3/modeling.md)
 - [初代 Cardputer](research/cardputer/modeling.md)
 - [CoreMatrix](research/corematrix/modeling.md)
+
+
+## 贴纸修正（2026-11-09）
+
+四款模型的贴纸已从“参考重绘”切换为正式印刷来源：
+
+- PaperS3 C139：正式产品贴纸 V1.2 透明生产稿，保留全部可辨印刷和开孔。
+- CoreMatrix C158：正式背面原理图贴纸与右侧名标生产稿。
+- Cardputer K132：官方正视、顶边、侧视和背视图中的实际印刷区，补齐 M5 字标并校正键位条纹比例。
+- PaperDIY K159-B：官方正视背面图中的后盖功能印刷，做单色归一化，避免重新猜字。
+
+逐面浏览器检查见本次修正记录；模型整体仍保持 `modeled`，不代表量产装配或实物验收完成。

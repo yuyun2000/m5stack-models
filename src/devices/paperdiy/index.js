@@ -5,6 +5,7 @@ import {addCadParts} from '../../modeling/cad.js';
 import {microSD, usbC} from '../../modeling/connectors.js';
 import {FACE, mesh, slab} from '../../modeling/parts.js';
 import {PaperDisplay} from '../../modeling/PaperDisplay.js';
+import {printedFilm} from '../../modeling/artwork.js';
 import geometry from './geometry-data.js';
 
 const displaySize = [58.32, 103.68];
@@ -61,6 +62,16 @@ export class PaperDIY extends Device {
     }
 
     addInternalAssembly(this.body);
+    const rearPrint = printedFilm(this, {
+      url: new URL('./artwork/rear-official.png', import.meta.url).href,
+      size: [60.2, 107.0],
+      position: [0, 6, -3.171],
+      face: 'back',
+      name: 'PaperDIY official rear print',
+      artworkKind: 'official-photo-raster',
+      roughness: 0.86,
+    });
+    if (rearPrint) rearPrint.raycast = () => {};
     const substrate = materials.plastic(0xb6b5ab, {roughness: 0.87});
     const pressurePlate = materials.plastic(0xd0cdc2, {roughness: 0.55, clearcoat: 0.16});
     slab(this.body, 62.1, 115.2, 0.68, 0.26, [0, 0.2, 1.75], substrate, [], 0.045).name = 'ET047TC1 panel substrate';
